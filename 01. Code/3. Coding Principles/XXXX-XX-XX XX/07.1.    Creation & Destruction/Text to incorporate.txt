@@ -1,0 +1,6 @@
+The principle of creation and destruction adds the following system members:
+
+    -  Create
+    -  Destroy
+    -  Created  .  Get
+    -  Created  .  Set
