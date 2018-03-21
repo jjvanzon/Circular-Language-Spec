@@ -1,0 +1,2 @@
+Some concepts are in the Inheritance section,
+because they are in the area of specialization.
