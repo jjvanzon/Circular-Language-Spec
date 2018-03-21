@@ -1,0 +1,1 @@
+Subdividing the commands from different site into different interfaces of an object, is a separate issue to address.
