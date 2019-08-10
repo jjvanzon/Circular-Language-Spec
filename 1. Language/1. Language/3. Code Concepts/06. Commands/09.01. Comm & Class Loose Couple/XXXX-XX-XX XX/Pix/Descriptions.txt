@@ -1,6 +1,0 @@
-Pic1.png:
-    Class 2 method interf. from different sites.png
-Pic2.png:
-    Class data & class methods target definitions.png
-Pic3.png:
-    Class data & class methods target defs 2.png
