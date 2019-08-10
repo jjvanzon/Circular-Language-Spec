@@ -1,7 +1,0 @@
-2009-07-23,
-
-This article group has covered system aspects
-for object references, but objects themselves
-also have system aspects, and not exactly the same set as an object reference can have.
-I have not covered those and it is not clear yet how those system aspects are defined
-or accessed.
