@@ -1,2 +1,0 @@
-2008-10-10 Old Idea out of 2002 or something:
-Variables declared inside a parent block in a procedure are accessible directly by the child blocks. Variables declared inside a child block are inaccessible to a parent block.
