@@ -8,11 +8,11 @@ This article attempts to give a more or less formal overview of elements that mi
 
 The diagrams might involve set of basic elements, that may include the following:
 
-> ![](Basic%20Diagram%20Elements.001.png) ![](Basic%20Diagram%20Elements.002.png) ![](Basic%20Diagram%20Elements.003.png) ![](Basic%20Diagram%20Elements.004.png) ![](Basic%20Diagram%20Elements.005.png) ![](Basic%20Diagram%20Elements.006.png)
+> ![](images/Basic%20Diagram%20Elements.001.png) ![](images/Basic%20Diagram%20Elements.002.png) ![](images/Basic%20Diagram%20Elements.003.png) ![](images/Basic%20Diagram%20Elements.004.png) ![](images/Basic%20Diagram%20Elements.005.png) ![](images/Basic%20Diagram%20Elements.006.png)
 >
-> ![](Basic%20Diagram%20Elements.007.png) ![](Basic%20Diagram%20Elements.008.png) ![](Basic%20Diagram%20Elements.009.png) ![](Basic%20Diagram%20Elements.010.png) ![](Basic%20Diagram%20Elements.011.png)
+> ![](images/Basic%20Diagram%20Elements.007.png) ![](images/Basic%20Diagram%20Elements.008.png) ![](images/Basic%20Diagram%20Elements.009.png) ![](images/Basic%20Diagram%20Elements.010.png) ![](images/Basic%20Diagram%20Elements.011.png)
 >
-> ![](Basic%20Diagram%20Elements.012.png) ![](Basic%20Diagram%20Elements.013.png) ![](Basic%20Diagram%20Elements.014.png)
+> ![](images/Basic%20Diagram%20Elements.012.png) ![](images/Basic%20Diagram%20Elements.013.png) ![](images/Basic%20Diagram%20Elements.014.png)
 
 ### Text
 
@@ -44,7 +44,7 @@ Perhaps some of the code might not be visualized graphically, but just displayed
 
 ### Circles & Triangles
 
-> ![](Basic%20Diagram%20Elements.001.png) ![](Basic%20Diagram%20Elements.002.png)
+> ![](images/Basic%20Diagram%20Elements.001.png) ![](images/Basic%20Diagram%20Elements.002.png)
 
 Circles and triangles may represent objects, classes or interfaces. An object might serve as the class or prototype of another object. An object could perhaps also describe the interface for another object. A choice was made to have objects, classes and interfaces be depicted by similar shapes.
 
@@ -52,20 +52,20 @@ A circle might be the usual symbol for an object. A triangle might have a partic
 
 ### Squares & Diamonds
 
-> ![](Basic%20Diagram%20Elements.003.png) ![](Basic%20Diagram%20Elements.004.png)
+> ![](images/Basic%20Diagram%20Elements.003.png) ![](images/Basic%20Diagram%20Elements.004.png)
 
 
 Squares and diamonds may stand for *commands*. A square may denote an *inactive* command, that might not run. Such a square might be use as a *definition* for other commands. A diamond might depict *execution*. A diamond might execute, while a square may not.
 
 ### Pentagons
 
-> ![](Basic%20Diagram%20Elements.005.png)
+> ![](images/Basic%20Diagram%20Elements.005.png)
 
 A pentagon could represent a *module*. A module is like a little world in which objects and commands live. A module may be a site, a computer program, a library or any other kind of module. A pentagon could be considered an object just like circles and triangles, but a pentagon may have special purposes and behavior.
 
 ### Nonagon
 
-> ![](Basic%20Diagram%20Elements.006.png)
+> ![](images/Basic%20Diagram%20Elements.006.png)
 
 A nonagon may stand for a collection or a list of things. Objects might be placed inside the nonagon, to group them together perhaps. Maybe nonagons might not be drawn with precisely nine corners.
 
@@ -73,43 +73,43 @@ A nonagon may stand for a collection or a list of things. Objects might be place
 
 Circles, triangles, pentagons and nonagons could be called *object symbols*.
 
-> ![](Basic%20Diagram%20Elements.001.png) ![](Basic%20Diagram%20Elements.002.png) ![](Basic%20Diagram%20Elements.005.png) ![](Basic%20Diagram%20Elements.006.png) 
+> ![](images/Basic%20Diagram%20Elements.001.png) ![](images/Basic%20Diagram%20Elements.002.png) ![](images/Basic%20Diagram%20Elements.005.png) ![](images/Basic%20Diagram%20Elements.006.png) 
 
 ### Command Symbols
 
 Squares and diamonds could be called *command symbols*, since they appeared to represent commands.
 
-> ![](Basic%20Diagram%20Elements.003.png) ![](Basic%20Diagram%20Elements.004.png) 
+> ![](images/Basic%20Diagram%20Elements.003.png) ![](images/Basic%20Diagram%20Elements.004.png) 
 
 ### Lines
 
 The idea is that, when symbols would be connected with lines, those symbols would have something in common.
 
-> ![](Basic%20Diagram%20Elements.015.png)
+> ![](images/Basic%20Diagram%20Elements.015.png)
 
 Now follows an attempt to summarize how that might work.
 
 ### Solid Line
 
-> ![](Basic%20Diagram%20Elements.007.png)
+> ![](images/Basic%20Diagram%20Elements.007.png)
 
 A solid line may point out an *object*. Symbols connected by a solid line might symbolize the same object. Other names for this line might be an object line or a reference line.
 
 ### Dashed Line
 
-> ![](Basic%20Diagram%20Elements.008.png)
+> ![](images/Basic%20Diagram%20Elements.008.png)
 
 A dashed line could point out a *class* or *definition*. Symbols connected by dashed lines could be thought of as having the same class. These symbols may share similar behavior, while they might still be living as individual objects. Other names for this line might be a class line or a definition line.
 
 ### Dotted Line
 
-> ![](Basic%20Diagram%20Elements.009.png)
+> ![](images/Basic%20Diagram%20Elements.009.png)
 
 A dotted line might point out an *interface*. Shapes connected by dotted lines might give them the same interface. The idea behind that is that they may look the same from the outside, but might behave differently on the inside. Another name for this line might be an interface line.
 
 ### Wavy Line
 
-> ![](Basic%20Diagram%20Elements.016.png)
+> ![](images/Basic%20Diagram%20Elements.016.png)
 
 A wavy line could represent the concept of *values*. When shapes are connected with a wavy line, it might mean, they have the same value or perhaps soon will get the same value. Another name for this line might be a *value line*.
 
@@ -117,21 +117,21 @@ A wavy line could represent the concept of *values*. When shapes are connected w
 
 A cross might be placed inside a symbol to indicate, that an symbol is *nothing / null*: it might not reference any object: it is empty.
 
-> ![](Basic%20Diagram%20Elements.017.png)
+> ![](images/Basic%20Diagram%20Elements.017.png)
 
 ### Relations Between Symbols
 
 Relations between symbols might be expressed by *containment:*
 
-> ![](Basic%20Diagram%20Elements.018.png)
+> ![](images/Basic%20Diagram%20Elements.018.png)
 
 and then possibly by connecting them with *lines:*
 
-> ![](Basic%20Diagram%20Elements.018.png)
+> ![](images/Basic%20Diagram%20Elements.018.png)
 
 #### Object Reference
 
-> ![](Basic%20Diagram%20Elements.019.png)
+> ![](images/Basic%20Diagram%20Elements.019.png)
 
 This object reference notation may be seen as that the bigger object on the left would contain a reference to the bigger object on the right. It is almost as if the left object contains the other object, but instead of containing it directly it would be pointing out to something on the outside.
 
@@ -143,7 +143,7 @@ Object symbols could be connected by different types of lines.
 
 When two object symbols would be connected by a solid line, it might mean that both symbols represent the same object.
 
-> ![](Basic%20Diagram%20Elements.020.png)
+> ![](images/Basic%20Diagram%20Elements.020.png)
 
 One symbol might be considered to represent the actual object while the other symbol might represent an *object reference*. An object line may point out which object an object symbol would point to. The solid line might be called an *object line* in this case, because it may point out the object.
 
@@ -151,7 +151,7 @@ One symbol might be considered to represent the actual object while the other sy
 
 When two object symbols would be connected by a dashed line, it might mean that both symbols may share the same class, which could mean they may have the same behavior, while they might not represent the same individual object.
 
-> ![](Basic%20Diagram%20Elements.020.png)
+> ![](images/Basic%20Diagram%20Elements.020.png)
 
 A class line may point out, what class an object might have.
 
@@ -159,7 +159,7 @@ A class line may point out, what class an object might have.
 
 If two object symbols would be connected by a dotted line, this might depict that the symbols would have the same interface, which may mean they could look the same from the outside, but might be different on the inside.
 
-> ![](Basic%20Diagram%20Elements.020.png)
+> ![](images/Basic%20Diagram%20Elements.020.png)
 
 The two symbols might be two separate individual objects, they may also have a different class, so could behave differently, but since they seem to have the same interface, this might mean that from the outside they might look the same.
 
@@ -167,7 +167,7 @@ The two symbols might be two separate individual objects, they may also have a d
 
 When two object symbols would be connected with a wavy line, it might mean the objects would get the same value.
 
-> ![](Basic%20Diagram%20Elements.021.png)
+> ![](images/Basic%20Diagram%20Elements.021.png)
 
 This could express that the values of the two objects are the same. It might also mean transferring a value from one object to the next.
 
@@ -179,7 +179,7 @@ Connecting command symbols could be something parallel to connections between ob
 
 When two command symbols would be connected by a solid line, it might mean that they would represent the same command object.
 
-> ![](Basic%20Diagram%20Elements.022.png)
+> ![](images/Basic%20Diagram%20Elements.022.png)
 
 The object line might point out which command object the other command symbol would represent. A square connected with an object line might depict a *command reference:* a reference to a command definition. A diamond might also get an object line, that may point to another location, where the actual executable object may reside.
 
@@ -187,7 +187,7 @@ The object line might point out which command object the other command symbol wo
 
 Command symbols might be connected by a dashed line. This may be used to indicate that both commands would have the same class (or *definition*) which may mean that they would get the same behavior, but might not be the same individual object.
 
-> ![](Basic%20Diagram%20Elements.023.png)
+> ![](images/Basic%20Diagram%20Elements.023.png)
 
 This definition line might point out, what definition a command object would have. The diamond might be a replica of the definition, but it could be that it would be its own individual object: an individual execution of the command. It is not limited to diamonds and squares this way. Dashed lines might be used to connect any two command symbols to each other, to indicate mutuality of definition.
 
@@ -195,13 +195,13 @@ This definition line might point out, what definition a command object would hav
 
 Two commands could have the same interface, which might mean that a command has parameters similar to the other command. Command symbols that would have the same interface might be connected using dotted lines:
 
-> ![](Basic%20Diagram%20Elements.024.png)
+> ![](images/Basic%20Diagram%20Elements.024.png)
 
 A dotted line could be called an interface line.
 
 ### Straight Mark
 
-> ![](Basic%20Diagram%20Elements.025.png)
+> ![](images/Basic%20Diagram%20Elements.025.png)
 
 (It is supposed to be about the smaller line, that appears to dissect the longer line.)
 
@@ -209,7 +209,7 @@ A straight mark might be used to indicate that a symbol would be __Public__, or 
 
 The straight mark might be connected to a symbol as follows:
 
-> ![](Basic%20Diagram%20Elements.026.png)
+> ![](images/Basic%20Diagram%20Elements.026.png)
 
 It might be used to indicate direction as well.
 
@@ -217,13 +217,13 @@ It might be used to indicate direction as well.
 
 A cross mark:
 
-> ![](Basic%20Diagram%20Elements.013.png)
+> ![](images/Basic%20Diagram%20Elements.013.png)
 
 might be used to indicate, that a symbol would be not accessible from the outside, or __Private__.
 
 Here is how it might look when connected to a symbol:
 
-> ![](Basic%20Diagram%20Elements.027.png)
+> ![](images/Basic%20Diagram%20Elements.027.png)
 
 A cross mark might be left out, if the choice is made that the absence of a straight mark might imply it would be __Private__ already, but there could be different ideas about that.
 
@@ -231,13 +231,13 @@ A cross mark might be left out, if the choice is made that the absence of a stra
 
 A triangular mark:
 
-> ![](Basic%20Diagram%20Elements.014.png)
+> ![](images/Basic%20Diagram%20Elements.014.png)
 
 may be used to indicate that a symbol that might own the line would be __Protected__. Protected is something that can play a role in the concept of inheritance. In the Circle language it might mean that a symbol might only be accessible if it is placed inside a triangle.
 
 Here is how that might look if it is connected to a symbol:
 
-> ![](Basic%20Diagram%20Elements.028.png)
+> ![](images/Basic%20Diagram%20Elements.028.png)
 
 A triangular mark would not represent an arrow. It might be confusing that a triangular mark looks like an arrow, but isn't, and a different notation for protected might be appropriate and introduced some time.
 
@@ -245,7 +245,7 @@ A triangular mark would not represent an arrow. It might be confusing that a tri
 
 A line might have direction. The direction of a line could be expressed with an access mark:
 
-> ![](Basic%20Diagram%20Elements.029.png)
+> ![](images/Basic%20Diagram%20Elements.029.png)
 
 à
 
@@ -259,7 +259,7 @@ But access marks might not always be displayed to indicate line direction. Some 
 
 The first suggestion for line direction is that a line might usually point outwards.
 
-> ![](Basic%20Diagram%20Elements.030.png)
+> ![](images/Basic%20Diagram%20Elements.030.png)
 
 à
 
@@ -267,7 +267,7 @@ Symbol __A__ has a line that might be pointing to Symbol __C__, because lines mi
 
 If the direction would not be outwards, it might be denoted with an access mark.
 
-> ![](Basic%20Diagram%20Elements.031.png)
+> ![](images/Basic%20Diagram%20Elements.031.png)
 
 ß
 
@@ -277,7 +277,7 @@ Now symbol __C__ would then be like a pointer to symbol __A__.
 
 The second suggestion for line direction might be that a diamond might be more likely to redirect to the command definition, than it would be for a command reference to redirect to a diamond.
 
-> ![](Basic%20Diagram%20Elements.032.jpeg)
+> ![](images/Basic%20Diagram%20Elements.032.jpeg)
 
 à
 
@@ -285,7 +285,7 @@ The diamond would point to the square.
 
 If the direction would be the other way around, it might be denoted with the use of an access symbol:
 
-> ![](Basic%20Diagram%20Elements.033.jpeg)
+> ![](images/Basic%20Diagram%20Elements.033.jpeg)
 
 ß
 
@@ -293,7 +293,7 @@ If the direction would be the other way around, it might be denoted with the use
 
 When a line crosses symbols’ borders, it might first exit borders and then enter borders.
 
-> ![](Basic%20Diagram%20Elements.034.png)
+> ![](images/Basic%20Diagram%20Elements.034.png)
 
 *First come the exits a and b, and then come the entrances c, d and e.*
 
@@ -301,11 +301,11 @@ An idea is to put the access mark in the section between the exits and entrances
 
 If the part of the line between exits and entrances would go out of view then perhaps the access mark might be placed where still visible. It could be placed in front of the last border in view that might be entered or exited:
 
-> ![](Basic%20Diagram%20Elements.035.png)
+> ![](images/Basic%20Diagram%20Elements.035.png)
 
 It may be a problem to draw it like this:
 
-> ![](Basic%20Diagram%20Elements.036.png)
+> ![](images/Basic%20Diagram%20Elements.036.png)
 
 This might suggest that the rightmost border would be entered, instead of exited.
 
@@ -313,7 +313,7 @@ This might suggest that the rightmost border would be entered, instead of exited
 
 Perhaps depending on how these diagrams might be applied, a symbol could only have one object line, one class line and one interface line. A symbol's lines may point *away* from the symbol. They could denote which other symbol may be its object, which other symbol may be its class and which other symbol may be its interface. Other lines connected to symbol could be considered to point *at* the symbol, instead of *away* from the symbol.
 
-> ![](Basic%20Diagram%20Elements.037.png)
+> ![](images/Basic%20Diagram%20Elements.037.png)
 
 It might work similarly for commands. A command might have just one reference line, one definition line and one interface line.
 
@@ -323,21 +323,21 @@ There is an idea for drawing the shapes with different line types, for example: 
 
 One idea is that an object symbol only used as an object (*not* as a class or an interface) might be drawn with a *solid* line.
 
-> ![](Basic%20Diagram%20Elements.001.png) ![](Basic%20Diagram%20Elements.002.png) ![](Basic%20Diagram%20Elements.005.png) ![](Basic%20Diagram%20Elements.006.png) 
+> ![](images/Basic%20Diagram%20Elements.001.png) ![](images/Basic%20Diagram%20Elements.002.png) ![](images/Basic%20Diagram%20Elements.005.png) ![](images/Basic%20Diagram%20Elements.006.png) 
 
 If an object symbol might only used as a class, it might be drawn out with a *dashed* line. 
 
-> ![](Basic%20Diagram%20Elements.038.png) ![](Basic%20Diagram%20Elements.039.png) ![](Basic%20Diagram%20Elements.040.png) ![](Basic%20Diagram%20Elements.041.png) 
+> ![](images/Basic%20Diagram%20Elements.038.png) ![](images/Basic%20Diagram%20Elements.039.png) ![](images/Basic%20Diagram%20Elements.040.png) ![](images/Basic%20Diagram%20Elements.041.png) 
 
 An idea is also that if an object symbol may only be used as an interface, it could be traced out with a *dotted* line.
 
-> ![](Basic%20Diagram%20Elements.011.png) ![](Basic%20Diagram%20Elements.042.png) ![](Basic%20Diagram%20Elements.043.png) ![](Basic%20Diagram%20Elements.044.png) 
+> ![](images/Basic%20Diagram%20Elements.011.png) ![](images/Basic%20Diagram%20Elements.042.png) ![](images/Basic%20Diagram%20Elements.043.png) ![](images/Basic%20Diagram%20Elements.044.png) 
 
 There may be different ideas, for when it could be appropriate to draw shapes with different types of lines.
 
 Perhaps if object symbols would be used in several ways, for instance as an object, as well as another object’s class, the symbol might be given multiple borders. Here might be an object symbol that could serve as both an object and a class:
 
-> ![](Basic%20Diagram%20Elements.045.png)
+> ![](images/Basic%20Diagram%20Elements.045.png)
 
 That way an object symbol could also have three borders at the same time or maybe more.
 
@@ -349,23 +349,23 @@ The idea for symbols drawn with different line types might also be applied to *c
 
 A diamond, which might represent a command call, may regularly be an instance of a square, that could represent a command definition. When the diamond is an instantiation, it might be seen as somewhat of an *object*. But a diamond might sometimes be used as a definition, more like a *class*. When a diamond is used as a definition, it might be seen as both an object and a class, so it might be given both a solid border as well as a dashed border, indicating that it might be both an instance, and a definition.
 
-> ![](Basic%20Diagram%20Elements.046.png)
+> ![](images/Basic%20Diagram%20Elements.046.png)
 
 If a diamond would not used as a definition, it might only get a solid border.
 
-> ![](Basic%20Diagram%20Elements.047.png)
+> ![](images/Basic%20Diagram%20Elements.047.png)
 
 It might be that a diamond would regularly be considered an instance, so it might often have just a solid border. It may become uncommon for it to be drawn with just a dashed line:
 
-> ![](Basic%20Diagram%20Elements.048.png)
+> ![](images/Basic%20Diagram%20Elements.048.png)
 
 A square may be used often as a definition. The idea was proposed that if something may be used as a definition, it might be drawn with a dashed line:
 
-> ![](Basic%20Diagram%20Elements.049.png) 
+> ![](images/Basic%20Diagram%20Elements.049.png) 
 
 A choice could be to not do this, because otherwise you might mostly see dashed squares.
 
-> ![](Basic%20Diagram%20Elements.050.png)
+> ![](images/Basic%20Diagram%20Elements.050.png)
 
 It depends the choices of how to use this notation of borders with different line styles.
 
@@ -373,15 +373,15 @@ There may be a particular case where you might draw a square with a dashed line,
 
 Both command calls and command definitions may function as the interface for another command symbol. In that case the idea is that the command symbol may get an extra dotted border.
 
-> ![](Basic%20Diagram%20Elements.051.png)
+> ![](images/Basic%20Diagram%20Elements.051.png)
 
 It could be an idea that if a square functions solely as an interface for a command, the square might be drawn with just a dotted border:
 
-> ![](Basic%20Diagram%20Elements.052.png)
+> ![](images/Basic%20Diagram%20Elements.052.png)
 
 It is suggested here, that a diamond might so often be thought of as an instance, that you might choose to always show the solid line and not draw it with just a dotted border, so not like this:
 
-> ![](Basic%20Diagram%20Elements.053.png)
+> ![](images/Basic%20Diagram%20Elements.053.png)
 
 But it may depend on specific notation choices.
 
@@ -393,7 +393,7 @@ Previous text tried to show that command symbols might scarcely be drawn with da
 
 However, in a certain case it might be drawn with a dashed line. When drawing out the diagrams, the class structure inside a module could be drawn out with dashed lines. To also draw out the command structure with dashed lines, the *target definitions* of commands might be drawn out with a dashed line. Later text may show what a target definition might be.
 
-> ![](Basic%20Diagram%20Elements.054.png)
+> ![](images/Basic%20Diagram%20Elements.054.png)
 
 Lines that connect commands to classes might be drawn with a dashed line.
 
@@ -409,7 +409,7 @@ However, there might be different ideas of how to apply dashed lines, for instan
 
 An oval shape or ring might be drawn through two lines:
 
-> ![](Basic%20Diagram%20Elements.055.png)
+> ![](images/Basic%20Diagram%20Elements.055.png)
 
 It would mean, that the symbols have a special relationship to eachother. How this might be applied might come to light in other articles. It could be applied to the concept of *automatically synchronized bidirectional relationships*.
 
@@ -421,11 +421,11 @@ A suggestion is made here that sometimes two lines might be merged together to f
 
 The lines in the following diagram might be very closely related:
 
-> ![](Basic%20Diagram%20Elements.056.png)
+> ![](images/Basic%20Diagram%20Elements.056.png)
 
 They may merge together to one line:
 
-> ![](Basic%20Diagram%20Elements.057.png)
+> ![](images/Basic%20Diagram%20Elements.057.png)
 
 Lines might merge together under different circumstances, that may come to light in other articles.
 
@@ -435,11 +435,11 @@ There may be some reservations about using this notation, because it seem to int
 
 A symbol merge would be closely related to a line merge. In the following diagram:
 
-> ![](Basic%20Diagram%20Elements.058.png)
+> ![](images/Basic%20Diagram%20Elements.058.png)
 
 Some lines and circles might merge together:
 
-> ![](Basic%20Diagram%20Elements.059.png)
+> ![](images/Basic%20Diagram%20Elements.059.png)
 
 The idea of circles merging together might be called a symbol merge. How this might be applied might come to light in other articles. It could be applied to the concept of *automatically synchronized bidirectional relationships*. But the *relational ring* notation described earlier above might become the preferred alternative. The symbol merge notation may still be used here and there even though it might be deprecated.
 
@@ -471,7 +471,7 @@ Relations Between Symbols,
 
 There might be more occurrences where connections are left out, since implied by the class:
 
-> ![](Basic%20Diagram%20Elements.060.png)
+> ![](images/Basic%20Diagram%20Elements.060.png)
 
 Object's members a and be might be class-connected to Related Class 1 and Related Class 2. But a notational choice was made to leave those out, since they seem implied. Perhaps it might not even be wordt to point out. But perhaps at one point one could desire an exactness in notational choices like that, and awareness that there are these notational choices, might help. But it could also be regarded up to the reader's imagination what he or she might do with it or not. It does not seem essential for the general idea.
 
