@@ -5,23 +5,23 @@ In object oriented programming, an *object* might be considered the most basic e
 
 An object in a diagram might be represented by a circle:
 
-![](Objects.001.png)
+![](images/Objects.001.png)
 ### **Sub-Objects**
 One thing might be composed of other things. For that, an object might contain a number of *sub-objects*. This might be drawn out in a diagram as circles inside another circle.
 
-![](Objects.002.png)
+![](images/Objects.002.png)
 ### **Object Reference**
 Another possibility is that a sub-object would point to another object, that might resides elsewhere in the system. That way an existing object might serve as another object’s sub-object. In that case that sub-object might be considered a link or reference, that could redirect to another object. Such an object reference might also be called a *pointer*.
 
 The following picture may show a sub-object that would depict an object reference. It may be pointing to an object elsewhere.
 
-![](Objects.003.png)
+![](images/Objects.003.png)
 
 That sub-object's symbol would be given a line here, connected to the symbol that may represent the actual object, which may reside outside the parent object. Sub-object **A** would be a reference to object **B**. It would be a notational choice, that the direction would point outwards.
 ### **Nothing**
 Sometimes nothing would yet be filled in for a related object. To display that in the diagram a cross might be placed inside the shape:
 
-![](Objects.004.png)
+![](images/Objects.004.png)
 
 An object reference would then be *Nothing* or *null*. Shapes other than circles may also be given a cross drawn inside it, to indicate it is empty.
 ### **Multiplicity**
@@ -31,15 +31,15 @@ A single related object might hold a reference to one object. But the reference 
 
 In case of a single item this might be displayed in a diagram as a circle:
 
-![](Objects.005.png)
+![](images/Objects.005.png)
 
 In case of a *list* this might be displayed in a diagram as a nonagon:
 
-![](Objects.006.png)
+![](images/Objects.006.png)
 
 List items might be placed inside the nonagon again:
 
-![](Objects.007.png)
+![](images/Objects.007.png)
 
 It could be that the list is given a name, while its individual items would remain nameless.
 ### **Values**
@@ -52,7 +52,7 @@ Attributes might not be something intrinsic to Circle language, but more of a co
 
 In one interpretation an attribute might be thought of as an object with specific characteristics. If an attribute would be an object, it might be represented by a circle drawn with a solid line.
 
-![](Objects.008.png)
+![](images/Objects.008.png)
 
 What might an attribute be compared to other objects?
 #### *Values*
@@ -60,11 +60,11 @@ An attribute might be an object of a simple nature, for instance a number, a Boo
 
 The value might be textually expressed. An object’s literal value might be shown inside a circle, possibly in the center of it:
 
-![](Objects.009.png)
+![](images/Objects.009.png)
 
 Or perhaps closer to the top if other symbols would be shown inside the attribute.
 
-![](Objects.010.png)
+![](images/Objects.010.png)
 
 An attribute might be an object that has binary data stored inside it. Storage of binary data alone might not turn an object into an attribute.
 #### *Fixed Logical Residence*
