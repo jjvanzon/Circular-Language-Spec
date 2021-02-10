@@ -143,7 +143,7 @@ Object symbols could be connected by different types of lines.
 
 When two object symbols would be connected by a solid line, it might mean that both symbols represent the same object.
 
-> ![](images/Basic%20Diagram%20Elements.020.png)
+> ![](images/Basic%20Diagram%20Elements.020a.png)
 
 One symbol might be considered to represent the actual object while the other symbol might represent an *object reference*. An object line may point out which object an object symbol would point to. The solid line might be called an *object line* in this case, because it may point out the object.
 
@@ -151,7 +151,7 @@ One symbol might be considered to represent the actual object while the other sy
 
 When two object symbols would be connected by a dashed line, it might mean that both symbols may share the same class, which could mean they may have the same behavior, while they might not represent the same individual object.
 
-> ![](images/Basic%20Diagram%20Elements.020.png)
+> ![](images/Basic%20Diagram%20Elements.020b.png)
 
 A class line may point out, what class an object might have.
 
@@ -159,7 +159,7 @@ A class line may point out, what class an object might have.
 
 If two object symbols would be connected by a dotted line, this might depict that the symbols would have the same interface, which may mean they could look the same from the outside, but might be different on the inside.
 
-> ![](images/Basic%20Diagram%20Elements.020.png)
+> ![](images/Basic%20Diagram%20Elements.020c.png)
 
 The two symbols might be two separate individual objects, they may also have a different class, so could behave differently, but since they seem to have the same interface, this might mean that from the outside they might look the same.
 
@@ -246,8 +246,8 @@ A triangular mark would not represent an arrow. It might be confusing that a tri
 A line might have direction. The direction of a line could be expressed with an access mark:
 
 > ![](images/Basic%20Diagram%20Elements.029.png)
-
-à
+>
+> --->
 
 The direction would go from symbol __A__ to symbol __B__. The access mark might be placed before the object, that would be accessed.
 
@@ -260,16 +260,16 @@ But access marks might not always be displayed to indicate line direction. Some 
 The first suggestion for line direction is that a line might usually point outwards.
 
 > ![](images/Basic%20Diagram%20Elements.030.png)
-
-à
+>
+> --->
 
 Symbol __A__ has a line that might be pointing to Symbol __C__, because lines might tend to point outwards.
 
 If the direction would not be outwards, it might be denoted with an access mark.
 
 > ![](images/Basic%20Diagram%20Elements.031.png)
-
-ß
+>
+> <---
 
 Now symbol __C__ would then be like a pointer to symbol __A__.
 
@@ -278,16 +278,17 @@ Now symbol __C__ would then be like a pointer to symbol __A__.
 The second suggestion for line direction might be that a diamond might be more likely to redirect to the command definition, than it would be for a command reference to redirect to a diamond.
 
 > ![](images/Basic%20Diagram%20Elements.032.jpeg)
-
-à
+>
+> --->
 
 The diamond would point to the square.
 
 If the direction would be the other way around, it might be denoted with the use of an access symbol:
 
 > ![](images/Basic%20Diagram%20Elements.033.jpeg)
+>
+> <---
 
-ß
 
 #### Access Mark Placement
 
@@ -452,12 +453,9 @@ Classes,
 
 If you can see object usage, you can not see class-sub-object usage.
 
-You'd have to look at the usage of the sub-objects of the objects of that class,
-to see the class's sub-object usage. Indirectly you will be able to see the dependency on a class's sub-object.
+You'd have to look at the usage of the sub-objects of the objects of that class, to see the class's sub-object usage. Indirectly you will be able to see the dependency on a class's sub-object.
 
-Doesn't a sub-object have a reference to the class's sub-object or does the parent
-
-object only have a reference to the class?
+Doesn't a sub-object have a reference to the class's sub-object or does the parent object only have a reference to the class?
 
 \> 2020-06-13: I now think, that a sub-object of an object does not have a reference to the sub-object of a class. I guess the relationship is implied by form/shape/name/aspect correspondence. I get how that might be bothersome. Then there might be relationships in the diagram that are expressed with neither lines nor containment. Maybe it is something to not be bothered by. Maybe it is something to mention as another type of relationship between symbols. There might be a spot for it in Basic Diagram Elements for that, next to the other types of relationships between symbols that might be named there. Maybe 'it is just a notation' might be the way to think about it. There might not be a precise mathematical definition of why shapes are used and the choice of containment vs association is also left as an arbitrary design choice so why would this not be ok as something arbitrary about the notation? If it turns out to be bothersome, maybe a different kind of line to express a different kind of correspondence could be used. But that may be something not to make part of the initial release of Circle language spec.
 
