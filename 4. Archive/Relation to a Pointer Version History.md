@@ -1,5 +1,5 @@
-﻿## ***Relation to a Pointer articles versions***
-
+﻿Relation to a Pointer articles versions
+=======================================
 
 |**Version**|**Description**|
 | :- | :- |

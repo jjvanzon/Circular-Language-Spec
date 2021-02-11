@@ -1,5 +1,5 @@
-﻿## ***Dual & Unary articles versions***
-
+﻿Dual & Unary articles versions
+==============================
 
 |**Version**|**Description**|
 | :- | :- |

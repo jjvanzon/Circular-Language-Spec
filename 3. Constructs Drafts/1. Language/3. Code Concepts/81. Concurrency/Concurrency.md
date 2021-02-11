@@ -1,5 +1,6 @@
-﻿|<h1>***Circle Documentation***</h1>|
-| :- |
+﻿Circle Documentation
+====================
+
 ## **Concurrency**
 …
 

@@ -1,4 +1,5 @@
-﻿|<h1>***Circle Language Spec***</h1>|
+﻿Circle Language Spec
+====================
 | :- |
 ## **Commands and Classes Loosely Coupled**
 ### **Concept**

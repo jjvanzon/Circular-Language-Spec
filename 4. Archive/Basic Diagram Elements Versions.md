@@ -1,4 +1,5 @@
-﻿## ***Basic Diagram Elements article versions***
+﻿Basic Diagram Elements article versions
+=======================================
 
 
 |**Version**|**Name**|**Description**|

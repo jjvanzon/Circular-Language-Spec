@@ -1,4 +1,6 @@
-﻿### **Quick & Dirty Related Classes**
+﻿Quick & Dirty Related Classes
+=============================
+
 *Read slowly.*
 
 For cItem to adapt itself to a cClass, it among other things traverses the cClass’s Related Classes. C Creator automatically maintains cClass . Related Classes as G Creator specifies its Relations.

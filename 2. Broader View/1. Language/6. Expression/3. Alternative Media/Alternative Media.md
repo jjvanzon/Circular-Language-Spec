@@ -1,5 +1,6 @@
-﻿|<h1>***Computer Language Expression***</h1>|
-| :- |
+﻿Computer Language Expression
+============================
+
 ## **Alternative Media**
 < Article text >
 

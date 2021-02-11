@@ -1,5 +1,5 @@
-﻿## ***Black Box Article Group Versions***
-
+﻿Black Box Article Group Versions
+================================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

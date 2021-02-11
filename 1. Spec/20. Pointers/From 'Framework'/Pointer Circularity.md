@@ -1,5 +1,6 @@
-﻿|<h1>***Computer Language Coding Concepts***</h1>|
-| :- |
+﻿Computer Language Coding Concepts
+=================================
+
 ## **Pointer Circularity**
 < Article text >
 

@@ -1,5 +1,5 @@
-﻿## ***Relations article versions***
-
+﻿Relations article versions
+===========================
 
 |**Version**|**Description**|
 | :- | :- |

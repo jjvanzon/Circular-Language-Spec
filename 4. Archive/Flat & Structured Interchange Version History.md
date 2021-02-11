@@ -1,5 +1,5 @@
-﻿## ***Flat & Structured Interchange article versions***
-
+﻿Flat & Structured Interchange article versions
+=============================================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

@@ -1,4 +1,6 @@
-﻿#### ***Symbol: Generiek sluit daarbij aan***
+﻿Symbol: Generiek sluit daarbij aan
+==================================
+
 Het type van de items is nu wel heel generiek. Dat sluit aan bij generiekheid in Symbol. Mooi.
 #### ***Ideas***
 Computer Language,

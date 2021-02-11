@@ -1,5 +1,6 @@
-﻿|<h1>***Circle Language Spec: Object Order***</h1>|
-| :- |
+﻿Circle Language Spec: Object Order
+==================================
+
 ## **Object Order**
 **[Preliminary documentation]**
 

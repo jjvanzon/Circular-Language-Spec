@@ -1,5 +1,5 @@
-﻿## ***Classes in a Diagram article versions***
-
+﻿Classes in a Diagram article versions
+=====================================
 
 |**Version**|**Description**|
 | :- | :- |

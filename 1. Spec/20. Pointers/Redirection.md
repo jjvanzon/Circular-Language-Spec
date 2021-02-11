@@ -1,5 +1,6 @@
-﻿|<h1>***Circle Language Spec***</h1>|
-| :- |
+﻿Circle Language Spec
+====================
+
 ## **Redirection**
 The text below comes out of the old Symbol documentation. I could not place it in any of the documentation sections, because it speaks about redirection mixing object, class and interface redirection, and I only gradually introduce those in different documentation sections, so I could not place a joint explanation or redirection in any of the documentation sections yet.
 ## **Out of the old Symbol documentation**

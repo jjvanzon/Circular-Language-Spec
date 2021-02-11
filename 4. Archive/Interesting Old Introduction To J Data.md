@@ -1,5 +1,5 @@
-﻿# ***Interesting Old Introduction To J Data***
-**-**
+﻿Interesting Old Introduction To J Data
+======================================
 
 *Author: Jan-Joost van Zon*
 

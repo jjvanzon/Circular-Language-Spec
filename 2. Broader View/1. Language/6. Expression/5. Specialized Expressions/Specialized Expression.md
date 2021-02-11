@@ -1,5 +1,6 @@
-﻿|<h1>***Computer Language Expression***</h1>|
-| :- |
+﻿Computer Language Expression
+============================
+
 ## **Specialized Expression**
 < Article text >
 ### **< Section title >**

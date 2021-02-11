@@ -1,5 +1,5 @@
-﻿## ***Related Classes in a Diagram article versions***
-
+﻿Related Classes in a Diagram article versions
+=============================================
 
 |**Version**|**Description**|
 | :- | :- |

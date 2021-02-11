@@ -1,5 +1,5 @@
-﻿## ***Concepts article group versions***
-
+﻿Concepts article group versions
+===============================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

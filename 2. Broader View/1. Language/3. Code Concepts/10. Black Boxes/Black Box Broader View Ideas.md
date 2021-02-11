@@ -1,5 +1,6 @@
-﻿|<h1>***Circle Language Spec: Black Boxes***</h1>|
-| :- |
+﻿Circle Language Spec: Black Boxes
+=================================
+
 ## **Black Boxes Broader View Ideas**
 ### ***Side-Issues***
 In previous projects the main articles about black boxing were finished, but other subjects were left unfinished. This article contains the unfinished material of some of these topics.

@@ -1,5 +1,5 @@
-﻿## ***Hyperlinks = Referential Structure article versions***
-
+﻿Hyperlinks = Referential Structure article versions
+==================================================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

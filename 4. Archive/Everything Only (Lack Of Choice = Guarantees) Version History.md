@@ -1,5 +1,5 @@
-﻿## ***Everything Only ( Lack Of Choice = Guarantees ) article versions***
-
+﻿Everything Only ( Lack Of Choice = Guarantees ) article versions
+===============================================================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

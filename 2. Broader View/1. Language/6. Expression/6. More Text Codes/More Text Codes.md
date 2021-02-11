@@ -1,5 +1,6 @@
-﻿|<h1>***Computer Language***</h1>|
-| :- |
+﻿Computer Language
+=================
+
 ## **More Text Codes**
 *More Text Codes* actually encapsulates a large number of sub-modules. It wraps together everything regarding other text codes. They are wrapped together, to not overshadow the other sub-modules of *Code*.
 

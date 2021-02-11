@@ -1,5 +1,5 @@
-﻿## ***Execution Control article group versions***
-
+﻿Execution Control article group versions
+========================================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

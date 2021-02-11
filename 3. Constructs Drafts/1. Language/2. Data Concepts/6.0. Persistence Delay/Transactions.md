@@ -1,4 +1,6 @@
-﻿### ***Transactions***
+﻿Transactions
+=============
+
 *Author: Jan-Joost van Zon*
 
 *Location: Oosterhout, The Netherlands*

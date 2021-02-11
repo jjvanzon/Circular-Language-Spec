@@ -1,5 +1,5 @@
-﻿## ***Inheritance Chapter Versions***
-
+﻿Inheritance Chapter Versions
+============================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

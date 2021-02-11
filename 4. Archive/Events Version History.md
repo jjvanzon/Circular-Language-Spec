@@ -1,5 +1,5 @@
-﻿## ***Events Article Group Versions***
-
+﻿Events Article Group Versions
+=============================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

@@ -1,5 +1,5 @@
-﻿## ***Globality article group versions***
-
+﻿Globality article group versions
+================================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

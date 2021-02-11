@@ -1,4 +1,6 @@
-﻿## **Command As A Concept Brainstorm Texts**
+﻿Command As A Concept Brainstorm Texts
+=====================================
+
 *Author: Jan-Joost van Zon*
 
 *Location: Oosterhout, The Netherlands*

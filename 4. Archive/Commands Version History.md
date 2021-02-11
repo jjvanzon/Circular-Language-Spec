@@ -1,5 +1,5 @@
-﻿## ***Commands article group versions***
-
+﻿Commands article group versions
+===============================
 
 |**Version**|**Description**|
 | :- | :- |

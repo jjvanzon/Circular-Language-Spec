@@ -1,4 +1,5 @@
-﻿# ***Computer Language, Old Ideas***
+﻿Computer Language, Old Ideas
+============================
 
 ## ***Development Notes***
 ### **Symbol Development Notes**

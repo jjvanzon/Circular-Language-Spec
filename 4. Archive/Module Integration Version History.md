@@ -1,5 +1,5 @@
-﻿## ***Module Integration article versions***
-
+﻿Module Integration article versions
+===================================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

@@ -1,5 +1,6 @@
-﻿|<h1>***Circle Language Spec***</h1>|
-| :- |
+﻿Circle Language Spec
+====================
+
 ## **Summaries of Other Languages**
 This document contains summaries of other languages, mainly C and C++, in the form of bulleted lists. They were made around the year 2004 during an analysis of the grammar of C and C++ to compare them to the new computer language.
 ### **C**

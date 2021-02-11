@@ -1,5 +1,6 @@
-﻿|<h1>***Circle Broader View***</h1>|
-| :- |
+﻿Circle Broader View
+===================
+
 ## **Relationships Broader View**
 ### ***Relationship Direction***
 When\* all relationships are bidirectional, a side-effect might be that everything might end up at the\* same level hierarchically, since all the\* relationships are mutual.

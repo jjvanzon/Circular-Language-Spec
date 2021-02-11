@@ -1,5 +1,5 @@
-﻿## ***Class Reference articles versions***
-
+﻿Class Reference articles versions
+=================================
 
 |**Version**|**Description**|
 | :- | :- |

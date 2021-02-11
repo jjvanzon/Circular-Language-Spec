@@ -1,5 +1,5 @@
-﻿## ***Classes article versions***
-
+﻿Classes article versions
+========================
 
 |**Version**|**Description**|
 | :- | :- |

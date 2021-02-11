@@ -1,5 +1,5 @@
-﻿## ***Parameters documentation section versions***
-
+﻿Parameters documentation section versions
+=========================================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

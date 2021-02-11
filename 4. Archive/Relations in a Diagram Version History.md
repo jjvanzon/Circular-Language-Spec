@@ -1,5 +1,5 @@
-﻿## ***Relations in a Diagram article versions***
-
+﻿Relations in a Diagram article versions
+=======================================
 
 |**Version**|**Description**|
 | :- | :- |

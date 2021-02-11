@@ -1,5 +1,5 @@
-﻿## ***Reflection article versions***
-
+﻿Reflection article versions
+===========================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

@@ -1,5 +1,5 @@
-﻿# ***Computer Language Fundamental Principles***
-**-**
+﻿Computer Language Fundamental Principles
+========================================
 
 *Author: Jan-Joost van Zon*
 

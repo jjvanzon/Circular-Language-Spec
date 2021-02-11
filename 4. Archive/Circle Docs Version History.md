@@ -1,4 +1,6 @@
-﻿## ***Circle Documentation Version History***
+﻿Circle Documentation Version History
+====================================
+
 For the best-organized version, take the latest version (one folder up) and do not look at the others.
 
 

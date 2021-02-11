@@ -1,5 +1,5 @@
-﻿## ***Symbol = Creator article versions***
-
+﻿Symbol = Creator article versions
+=================================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

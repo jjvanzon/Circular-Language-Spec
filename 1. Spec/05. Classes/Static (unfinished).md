@@ -1,10 +1,15 @@
-﻿|<h1>***Circle Language Spec: Classes***</h1>|
-| :- |
-## **Static**
+﻿Circle Language Spec: Classes
+=============================
+
+Static
+------
+
 **[Preliminary documentation]**
 
 This is unfinished documentation of lower quality. It only has an unfinished description of the general idea.
-### **Preliminary Design**
+
+### Preliminary Design
+
 *This brainstorm was written in the context of efforts to program a prototype app 'Circle 3'.*
 
 The new version of the new computer language will work with the basics of objects, classes and interfaces. The distinction between objects, classes and interfaces is so loose in the new language and the distinction really leans on the concepts of public / private and the concept of static. These determine the difference between objects, classes and interfaces.
@@ -51,10 +56,13 @@ And you can make a system command accessible or inaccessible for instances (but 
 Usable phrase:
 
 Formerly it was fixed which types of construct were static and which were not, but now you can choose.
-### **Interface-Like Static**
+
+### Interface-Like Static
+
 Is anything defined inside an interface static? I don’t know. Interfaces will be excluded from the first version.
 
-### **Important Brainstorm**
+### Important Brainstorm
+
 2010-05-07
 
 \> The Relation concept now is worked out under the assumption that a class determines which other classes it is related to. But it is possible for a class to define which class it relates to and that an object of that class to change the related class.
@@ -68,7 +76,8 @@ The thing is: in most object oriented languages it is fixed and unchangeable ins
 I am mixing up the concepts of Static and Private here: both have to do with fixing something, limiting access to something, but I fail to understand which is which. That is because I have not worked out the concept of Static yet.
 
 \> One assumption specifically is wrong: that the class always defines certain constructs, that an object can not change. This also counts for interfaces, which are basically the same as classes but only for the public part of an object.
-## **Loose Ideas**
+
+## Loose Ideas
 
 Fixed logical residence (in automatic containemtn) gives you a clue about static members of classes. That is also a special form of access, like global access. 
 
@@ -165,7 +174,9 @@ Static,
 There are two forms of static: static parts of a class, that will become part of all objects of that class and static parts of a class, that can not be called through the objects, but only directly by referencing the class.
 
 JJ
-### **Out of the original Symbol documentation**
+
+### Out of the original Symbol documentation
+
 < I need a story about where the code resides and that the code isn’t really part of module instances, types, objects or procedures. Those entities only complete the code with a copy of data. >
 
 his formulation may not be entirely true, but maybe wording like that could be used in the 'Static' explanation? For instance the idea that types could be changed live, and the contents of objects would simultaneously change:

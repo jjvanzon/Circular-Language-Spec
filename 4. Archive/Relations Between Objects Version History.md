@@ -1,5 +1,5 @@
-﻿## ***Relations Between Objects articles versions***
-
+﻿Relations Between Objects articles versions
+============================================
 
 |**Version**|**Description**|
 | :- | :- |

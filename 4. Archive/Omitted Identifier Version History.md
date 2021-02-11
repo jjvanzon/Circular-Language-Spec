@@ -1,5 +1,5 @@
-﻿## ***Identifiers articles versions***
-
+﻿Identifiers articles versions
+=============================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

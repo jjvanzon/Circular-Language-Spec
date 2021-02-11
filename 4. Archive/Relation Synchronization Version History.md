@@ -1,5 +1,5 @@
-﻿## ***Relation Synchronization article versions***
-
+﻿Relation Synchronization article versions
+=========================================
 
 |**Version**|**Description**|
 | :- | :- |

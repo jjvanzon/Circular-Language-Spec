@@ -1,5 +1,5 @@
-﻿## ***Class Commands articles versions***
-
+﻿Class Commands articles versions
+================================
 
 |**Version**|**Description**|
 | :- | :- |

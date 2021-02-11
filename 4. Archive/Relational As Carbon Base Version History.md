@@ -1,5 +1,5 @@
-﻿## ***Relational As Carbon Base article versions***
-
+﻿Relational As Carbon Base article versions
+==========================================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

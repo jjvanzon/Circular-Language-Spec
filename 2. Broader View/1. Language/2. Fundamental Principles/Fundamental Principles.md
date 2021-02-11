@@ -1,5 +1,6 @@
-﻿|<h1>***Computer Language***</h1>|
-| :- |
+﻿Computer Language
+=================
+
 ## **Fundamental Principles**
 This documentation describes the fundamental principles, upon which the new computer language is based. It covers the *reasons*, the *aims*  and the *way*  to realize the new computer language. Perhaps the most important goal of the new computer language, is to melt together all computer technology disciplines, providing one clear language, that can express anything, and that everybody can understand. The *Fundamental Principles* folder makes a lot of promises about the new language, but the *Coding Concepts* folder shows you how those promises are upheld.
 
@@ -646,7 +647,8 @@ A user-defined order number of a user-defined sorting,
 
 and the use of aliases prevents dead links .
 
-(you could also do a kind of automatic aliasing: when a link is not found, the history of that link would be stored inside the container of the leaf, and 
+(you could also do a kind of automatic aliasing: when a link is not found, the history of that link would be stored inside the container of the leaf, and 
+
 
 this could be used to offer a suggested new linkage, when the dead link was attempted to be accessed.
 

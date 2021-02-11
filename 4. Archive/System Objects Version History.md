@@ -1,5 +1,5 @@
-﻿## ***System Objects article group versions***
-
+﻿System Objects article group versions
+=====================================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

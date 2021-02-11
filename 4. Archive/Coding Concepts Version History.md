@@ -1,5 +1,5 @@
-﻿## ***Coding Concepts article versions***
-
+﻿Coding Concepts article versions
+================================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

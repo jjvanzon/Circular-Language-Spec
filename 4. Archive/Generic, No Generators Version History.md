@@ -1,5 +1,5 @@
-﻿## ***Generic, No Generators article versions***
-
+﻿Generic, No Generators article versions
+=======================================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

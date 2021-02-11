@@ -1,5 +1,5 @@
-﻿## ***Small Base Code Article Versions***
-
+﻿Small Base Code Article Versions
+================================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

@@ -1,5 +1,5 @@
-﻿## ***Relation Synchronization in a Diagram article versions***
-
+﻿Relation Synchronization in a Diagram article versions
+======================================================
 
 |**Version**|**Description**|
 | :- | :- |

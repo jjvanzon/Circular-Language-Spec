@@ -1,5 +1,6 @@
-﻿|<h1>***Computer Language***</h1>|
-| :- |
+﻿Computer Language
+=================
+
 ## **Coding Concepts**
 This documentation section covers all the coding concepts and principles of the new computer language.
 

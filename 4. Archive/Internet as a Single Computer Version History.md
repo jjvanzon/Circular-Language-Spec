@@ -1,5 +1,5 @@
-﻿## ***Internet as a Single Computer article versions***
-
+﻿Internet as a Single Computer article versions
+==============================================
 
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |

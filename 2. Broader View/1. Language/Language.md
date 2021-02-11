@@ -1,5 +1,6 @@
-﻿|<h1>***Circle Broader View***</h1>|
-| :- |
+﻿Circle Broader View
+===================
+
 ## **Overview**
 This documentation folder describes the new computer programming language. This is the most important part of the documentation.
 
@@ -134,7 +135,8 @@ JJ
 
 Computer Language,
 
-Ik wil gewoon dat workflow en methods die elkaar aanroepen gewoon hetzelfde concept zijn. Method stappen kunnen parallel lopen en seriele punten hebben en vertragingen en gezette tijden hebben.
+Ik wil gewoon dat workflow en methods die elkaar aanroepen gewoon hetzelfde concept zijn. 
+Method stappen kunnen parallel lopen en seriele punten hebben en vertragingen en gezette tijden hebben.
 
 JJ
 

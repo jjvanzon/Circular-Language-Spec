@@ -1,7 +1,8 @@
-﻿## **Ideas**
+﻿Locking
+=======
 
+## **Ideas**
 
-######## *Locking*
 I have not taken into account in Sy, that
 
 some objects need to be locked, to keep the situation snap-shotted. Locking is not covered yet in J Code

@@ -1,5 +1,5 @@
-﻿## ***Automatic Containment Article Versions***
-
+﻿Automatic Containment Article Versions
+======================================
 
 |**Version**|**Description**|
 | :- | :- |
