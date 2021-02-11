@@ -1,5 +1,5 @@
-﻿## ***Objects article group versions***
-
+﻿Objects article group versions
+==============================
 
 |**Version**|**Description**|
 | :- | :- |

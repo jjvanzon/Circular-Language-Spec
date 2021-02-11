@@ -1,5 +1,5 @@
-﻿# ***Access Control Ideas***
-
+﻿Access Control Ideas
+====================
 
 *Author: Jan-Joost van Zon*
 
@@ -191,7 +191,11 @@ Class contains the following name properties:
 When you don’t separately specify names for the **Item Control** or **Item Window** for instance, these names are derived from more general names, like **Class.Name** and **Class.NamePlural**.
 
 For more information see the *Names* section.
-## **Ideas**
+
+
+Ideas
+-----
+
 ##### ***Access Control***
 Misschien moet elke access modifier / access control specifier wel altijd per object een eigen interface creeeren. Je kunt interfaces toch laten overlappen. 
 
@@ -202,7 +206,11 @@ Function failure due to security restrictions are things on which a function can
 Public for sub components, but private for super components.
 
 The problem is, that the idea was to implement it as a concept, but it’s important to make the access control not easily breachable, and I’m not sure how I will do that.
-## **Automatic Containment And Access Control**
+
+
+Automatic Containment And Access Control
+----------------------------------------
+
 Automatic encapsulation structure does impose a problem in Access Control. An access modifier is related to the position in the encapsulation. The base of the system has only a referential structure. Everything is basically accessible at any level. Anything is potentially global. But when you convert it to an encapsulation structure, not everything is global.
 
 When you see the encapsulation structure, you can impose an access restriction based on the position in the encapsulation structure, but if you change the underlying referential structure, the symbol gets a different position in the hierarchy, perhaps a higher one, making it all of a sudden accessible on a higher level. On one hand this is required: higher objects make use of the object. But that means everything is basically public, because you can use anything. As soon as you want to use it, it is placed on a higher level in the hierarchy. There are no restrictions there. What you might be able to do in Access Control is actually fix the relative encapsulation position, so it can’t be made any higher, and then impose an access modifier based on hierarchical position.
@@ -422,7 +430,11 @@ The following is unclear. A View is something with which you view something, but
 I can't call it editor, because that suggests that it is a user interface...
 
 JJ
-## **More Ideas**
+
+
+More Ideas
+----------
+
 Access Control,
 
 2008-09-09
@@ -456,10 +468,13 @@ No dual relations allowed WITH objects with type command.
 
 JJ
 
-## **From the original Symbol documentation**
+
+From the original Symbol documentation
+--------------------------------------
+
 Assumptions about access controllers, for instance:
 
-![](Access%20Control%20Ideas.001.png "Private Notation that Won't Do 1")
+![](images/Access%20Control%20Ideas.001.png "Private Notation that Won't Do 1")
 
 This for some reason implies that it’s ONLY accessible from the inside. Formally, the access symbol denotes that it’s simply accessible and that this access controller is imposed by the square.
 
@@ -482,7 +497,11 @@ perhaps change the symbol.
 de lijnen van aparte public symbols aan elkaar plakken en line naar object naar samengesmolten public symbol doen wijzen
 
 JJ
-## **More Ideas**
+
+
+More Ideas
+----------
+
 Security may be an extension to Symbol access control. But then with users. I guess a specific symbol that the user owns gets friend privileges…
 ### ***Brainstorm***
 Bij een absolute integratie van programmatische access modifiers en user access control, moet je een user-under-user principe toepassen, waarbij elke sub-user de access verder kan beperkt. Elke class en procedure is daarbij ook een user. De access kan ingesteld worden voor alle users (object/gebruiker) (public, private) en users met bepaalde eigenschappen of verhoudingen tot deze 'user' (friend, protected). Dus toegang wordt daarbij verleend voor bepaalde users tot bepaalde users. Een gebruiker wordt daardoor ook een object. Dit user object heeft dus bepaalde eigenschappen, waardoor hij tot bepaalde andere users/objecten wel of geen toegang krijgt. De rights van een user worden nooit door hemzelf bepaald. De toegang tot zijn eigen dingen wordt wel bepaald door hemzelf, en door containers of referrers, maar dan alleen de toegang tot deze objecten via de container. Alle andere toegangswegen zijn open, tenzij ze dus weer door een hoger object worden geblockt. Dus als je toegang regelt op het object boven het hoogst containende object, dan is het afgeblockt. Het hoogst containende object is eigenlijk altijd de owner.
@@ -499,7 +518,10 @@ why the hell do you have to login everywhere,
 why can’t you be a single user on the internet, and you’ve got access rights.
 
 The access rights to a certain site are just added to your rights.
-## **Ideas**
+
+
+Ideas
+-----
 
 Security & Safety
 

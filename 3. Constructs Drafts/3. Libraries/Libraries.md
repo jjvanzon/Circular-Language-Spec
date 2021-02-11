@@ -1,6 +1,10 @@
-﻿|<h1>***Circle Documentation***</h1>|
-| :- |
-## **Libraries**
+﻿Circle Construct Drafts
+=======================
+
+
+Libraries
+---------
+
 This folder is to contain documentation about some basic libraries needed for the new computer language to run more or less autonomously. It should cover libraries for basic math operations and assembly language, or machine instructions.
 
 Most documentation is not written yet.

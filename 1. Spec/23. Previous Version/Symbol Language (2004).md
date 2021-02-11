@@ -1,37 +1,37 @@
-﻿***Symbol Language
-Basic***
-==================
-
+﻿Symbol Language Basic
+=====================
 
 The New Computer Language
 
 
-## ***Introduction***
+Introduction
+------------
+
 This first chapter explains the basics of programming. It should introduce you to programming whether you’ve programmed before or not.
 ### **Idea Subdivision**
 Contemporary programming is all about splitting up a large idea into smaller ideas.
 
-![](Symbol%20Language%20(2004).001.png)
+![](images/Symbol%20Language%20(2004).001.png)
 
 Here you see the idea of *the computer*, split up into four sub ideas: the monitor, keyboard, mouse and printer.
 
 In Symbol, the main symbol for an idea is a *circle*:
 
-![](Symbol%20Language%20(2004).002.png)
+![](images/Symbol%20Language%20(2004).002.png)
 
 Each sub idea works independently of the other ideas. **Monitor** does its bit, **Keyboard** does its bit, etcetera. It’s the *super* idea that ties the sub ideas together. That means that the computer makes the links between monitor, keyboard, mouse and printer. The super idea combines the sub ideas and manages the communication between the sub ideas.
 
 Ideas, so both super ideas and sub ideas, are called objects. Each object is responsible for its own bit of the system.
 
-![](Symbol%20Language%20(2004).003.png)
+![](images/Symbol%20Language%20(2004).003.png)
 
 Each sub idea can be split up in sub ideas itself and you can go on and on splitting up ideas.
 
-![](Symbol%20Language%20(2004).004.png)
+![](images/Symbol%20Language%20(2004).004.png)
 
 But to see the general point of the system, you only need to see the top layers of the split up.
 
-![](Symbol%20Language%20(2004).003.png)
+![](images/Symbol%20Language%20(2004).003.png)
 
 This makes object programming an excellent way to keep overview over the system as its complexity builds up. The understandability of the design is dependent on how outspoken and clear the split up into ideas is, especially the top layers. I think that the subdivision in objects is the most important thing in your software. So splitting up an idea into sub ideas, something that even non-programmers can do, is the most important thing about programming.
 ### **Reusing Ideas**
@@ -40,7 +40,7 @@ Well design in grouping ideas leads to the *reusability* of ideas. For instance:
 Any place you use a button in your system, there is a separate object:
 
 
-|![](Symbol%20Language%20(2004).005.png)|![](Symbol%20Language%20(2004).006.png)|
+|![](images/Symbol%20Language%20(2004).005.png)|![](images/Symbol%20Language%20(2004).006.png)|
 | :-: | :-: |
 
 A button object in general is a *type* of object. All the button objects are objects of the same *type*. The separate buttons are so called *instances* of the type. Many times the word *object* is used instead of the word *type*. For instance, you can speak of *the* button *object*, while you’re talking about the button *type*. It’s like by saying ‘panda’ you can refer to an individual panda (object), but also to the panda as a kind of animal (type).
@@ -51,7 +51,7 @@ The more experience you gain in splitting up large ideas into smaller parts, the
 ### **Programming is Never Easy**
 Some texts explaining programming environments try to sell it to you that software programming is easy. That is never true. Those texts are written to *sell* the programming environment, not to tell the truth. Those texts claim that the programming environment will do most of the work *for* you, while in real life, what the programming environment does *for* you, is just run existing programs, not program new software. The text will say you’ve programmed something, while you’ve really just run something that was already programmed. Only if you want to take *no* decisions on how the software is going to work, programming is easy. But then it’s not really programming. If you want to make decisions about how you want your software to be, software programming is *not* easy. In programming, you have to give everything a place *yourself*. If you reuse someone else’s object, you have to be aware of what the object will do for you. Worse, many times you encounter problems with someone else’s object that you can’t fix, because you can’t change the inner workings of the object. This can lead to wanting to program everything yourself and if you’re stubborn enough, or fed up enough, you become *me,* and actually try to start to program everything yourself. Learn to work with other people’s objects. I’m working on that too. *And* I’m trying to make *the* **Button** for which no one wants a replacement. Or if they do want a replacement, they’ll still want to use the base of my button as a foundation.
 
-![](Symbol%20Language%20(2004).007.png)
+![](images/Symbol%20Language%20(2004).007.png)
 ### **Ancestry**
 The containment structure or encapsulation (structure) of ideas is also called the *ancestry*. Terms for containment are analogous to the terms for *ancestry*.
 
@@ -79,11 +79,11 @@ Ancestry can also be called *object structure* in a lot of cases. But object str
 
 Other terms of family ties can be used just as well. Words such as cousins, siblings or uncle are allowed. Sibbling would be objects directly in the same parent.
 
-![](Symbol%20Language%20(2004).008.png)
+![](images/Symbol%20Language%20(2004).008.png)
 
 Cousins are objects whose parents are sibblings.
 
-![](Symbol%20Language%20(2004).009.png)
+![](images/Symbol%20Language%20(2004).009.png)
 #### ***Terms***
 Here’s a list of basic terms:
 
@@ -139,17 +139,17 @@ The same name can be used for different symbols. Which of the *Johns* you’re t
 ### **Procedures**
 Apart from a collection of sub objects, an object contains *procedures*.
 
-![](Symbol%20Language%20(2004).010.png)
+![](images/Symbol%20Language%20(2004).010.png)
 
 Sub objects again contain procedures.
 
-![](Symbol%20Language%20(2004).011.png)
+![](images/Symbol%20Language%20(2004).011.png)
 
 Software can’t execute without procedures. When you run a procedure, an object *does something*.
 
 A button could have a **Set Text** procedure for instance, which sets the text displayed on the button.
 
-![](Symbol%20Language%20(2004).012.png)
+![](images/Symbol%20Language%20(2004).012.png)
 
 Procedures are denoted by *squares*.
 
@@ -159,21 +159,21 @@ Other objects could also have a **Set Text** procedure, therefore to identify th
 
 A procedure itself consists of sub procedures: the separate steps of the procedures.
 
-![](Symbol%20Language%20(2004).013.jpeg)
+![](images/Symbol%20Language%20(2004).013.jpeg)
 
 Sub procedures are usually not embedded inside other procedures. They are defined separately:
 
-![](Symbol%20Language%20(2004).014.jpeg)
+![](images/Symbol%20Language%20(2004).014.jpeg)
 
 And the sub procedures are *called* from the super procedure:
 
-![](Symbol%20Language%20(2004).015.jpeg)
+![](images/Symbol%20Language%20(2004).015.jpeg)
 
 Calling a procedure has almost the same effect as inserting the called procedure there where you call it.
 
 The **Redraw Button** procedure is rather complex. In this procedure lines of the button are drawn, the text is drawn and whatever else makes up the display of the button. The steps of this redrawing are delegated by yet again calling other procedures. **Redraw Button** could for instance call the **Draw Line** procedure a number of times. So sub procedures of the **Set Text** procedure are themselves composed of sub procedures.
 
-![](Symbol%20Language%20(2004).016.jpeg)
+![](images/Symbol%20Language%20(2004).016.jpeg)
 
 You can also see here that separately defining a procedure can lead to the *reuse* of procedures. The **Draw Line** procedure is reused three times in the example above. There are many procedures already defined, that you will use one way or another. Most of these procedures are encapsulated in a type. There’s for instance a **File** type that contains procedures with which to control a single computer file.
 
@@ -183,7 +183,7 @@ That way there can develop a big procedure call tree-out, which makes a single p
 
 Justs like with the kitchen example: you don’t necessarily need to see the details of the procedure in order to understand what the effect **Button . Set Text** is.
 
-![](Symbol%20Language%20(2004).017.jpeg)
+![](images/Symbol%20Language%20(2004).017.jpeg)
 
 Procedures can also be called *operations*, *functions* or *routines* and there are even more synonyms. But I will usually stick to the term *procedure*.
 ### **Many Don’t Get It**
@@ -199,15 +199,15 @@ Procedures can have *parameters*: instructions passed along with the procedure t
 
 Text is an *idea*. It is an *object*. It is *objects* that serve as parameters.
 
-![](Symbol%20Language%20(2004).018.jpeg)
+![](images/Symbol%20Language%20(2004).018.jpeg)
 
 The procedure can do whatever it wants with the parameters passed to it. All it really can do with it is again pass the parameter to another procedure *or* call procedures of the parameter.
 
-![](Symbol%20Language%20(2004).019.jpeg)
+![](images/Symbol%20Language%20(2004).019.jpeg)
 
 *Pass the Text parameter on to the next procedure (Format Text).*
 
-![](Symbol%20Language%20(2004).020.jpeg)
+![](images/Symbol%20Language%20(2004).020.jpeg)
 
 *Call the a procedure of the Text parameter.*
 
@@ -225,7 +225,7 @@ Objects have the same ability. A type of object can have separate interfaces. In
 
 Interfaces are distinguished by triangles.
 
-![](Symbol%20Language%20(2004).021.jpeg)
+![](images/Symbol%20Language%20(2004).021.jpeg)
 
 The employee is an advisor to the customer and to another employee a coworker.
 
@@ -246,10 +246,13 @@ A computer program is described in a *programming language*. Formerly all progra
 Symbol Language comes in two main variations: text code and diagram code. Both variations can fully express a system. Sometimes a system looks clearer in a diagram and in other cases it looks clearer in text. The *Sigma Data Language* is also integrated into Symbol Language, as well as others.
 
 One great aspect of diagram code is that apart from expressing a system in full, you can also have an abstract view on the system, leaving out details or hightlighting specific details. This way the code itself can function as the analysis of it.
-## ***Object Basics***
+
+Object Basics
+-------------
+
 ### **Notation Elements**
 
-![](Symbol%20Language%20(2004).022.png)
+![](images/Symbol%20Language%20(2004).022.png)
 
 Circles and triangles represent objects. For that they are called *object symbols*.
 
@@ -259,13 +262,13 @@ When I say *symbol* in this section, I’m often talking about object symbols.
 
 Relations between symbols are expressed by *containment*:
 
-![](Symbol%20Language%20(2004).023.png)
+![](images/Symbol%20Language%20(2004).023.png)
 
 and by connecting them with *lines*, also called *lines:*
 
-![](Symbol%20Language%20(2004).023.png)
+![](images/Symbol%20Language%20(2004).023.png)
 
-![](Symbol%20Language%20(2004).024.png)
+![](images/Symbol%20Language%20(2004).024.png)
 
 Dotted lines, dashed lines and solid lines.
 ### **Object Relations**
@@ -277,21 +280,21 @@ A type has one interface by default: the default interface, which is formed by e
 ### **Objects**
 Each symbol represents an object:
 
-![](Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025.png)
 
 You can make two symbols represent the same object by connecting them with a line:
 
-![](Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025.png)
 
 A solid line in this case is also called an *object line*, because it denotes which symbols are the same object.
 ### **Types**
 Each symbol is a type:
 
-![](Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025.png)
 
 You can make two symbols be of the same type by connecting them with a dashed line:
 
-![](Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025.png)
 
 Both symbols are of the same type, but they are separate objects.
 
@@ -307,7 +310,7 @@ So a symbol always has an interface: its public members.
 
 To make two symbols have the same interface you connect them with a dotted line:
 
-![](Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025.png)
 
 This dotted kind of line is also called an *interface line*, because it denotes which symbols have the same interface. The public members of both symbols are the same, but each symbol has its own *implementation*. The symbols are not necessarily the same type nor the same object.
 
@@ -319,7 +322,7 @@ You also have the ability to give a symbol two separate interfaces. For this, th
 
 The following is the basic notation for a symbol that implements two separate interfaces:
 
-![](Symbol%20Language%20(2004).026.png)
+![](images/Symbol%20Language%20(2004).026.png)
 
 A triangle represents *the implementation of an interface*. Triangles *are*, however,* often called *interfaces* of the object. Don’t start to think that *only triangles* are interfaces. Any symbol can function as an interface. A triangle is the *implementation* of an interface. 
 #### ***Triangle Versus Circle***
@@ -330,18 +333,18 @@ A triangle, just like the circle, is a:
 - Interface source
 - Creatable (explained soon)
 
-![](Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025.png)
 
 Using a triangle instead of a circle:
 
-![](Symbol%20Language%20(2004).027.png)
+![](images/Symbol%20Language%20(2004).027.png)
 
 Sees to it that:
 
 - **B**’s members are accessed as if they were **A**’s own members
 - You can refer to type **A** as if it were of type **B**
 
-![](Symbol%20Language%20(2004).028.png)
+![](images/Symbol%20Language%20(2004).028.png)
 
 So a triangle is a sub object of the container, but its members are like part of the container and the container can be referred to as if it has the type of the triangle.
 #### ***Inheritance***
@@ -349,7 +352,7 @@ You can accomplish simple inheritance by using a triangle.
 
 To give a symbol a base type you put a triangle in it and connect it to its type. This type is then the base type:
 
-![](Symbol%20Language%20(2004).029.png)
+![](images/Symbol%20Language%20(2004).029.png)
 
 **B** is the base type, **A** is the derived type, because it now includes **B**’s interface with **B**’s implementation.
 
@@ -357,19 +360,19 @@ Inheritance in Symbol is actually more refined than in the C++ programming langu
 
 So you can make the base object an object that already existed:
 
-![](Symbol%20Language%20(2004).029.png)
+![](images/Symbol%20Language%20(2004).029.png)
 
 **B** is the base *object* of **A**. And you can still refer to **A** as if it was of type **B**.
 
 Or you can make one object serve as multiple symbols’ base object:
 
-![](Symbol%20Language%20(2004).030.png)
+![](images/Symbol%20Language%20(2004).030.png)
 
 **A** is the base *object* of all the other circles, not only the base *type*.
 
 Conversely, using a triangle giving a symbol an interface is *like* using inheritance, but defining the base type right inside the derived type.
 
-![](Symbol%20Language%20(2004).031.png)
+![](images/Symbol%20Language%20(2004).031.png)
 
 **A** and **B** are the base types of **C**, but **C** defines these base types itself.
 #### ***Member Grouping***
@@ -383,44 +386,44 @@ Since a triangle represents an interface implementation and a circle contains bu
 
 A circle:
 
-![](Symbol%20Language%20(2004).028.png)
+![](images/Symbol%20Language%20(2004).028.png)
 
 is *not* shorthand for:
 
-![](Symbol%20Language%20(2004).028.png)
+![](images/Symbol%20Language%20(2004).028.png)
 
 because the triangle is its own object. The first diagram shows one object and the second diagram shows two.
 ### **Same Object, Same Type**
 #### ***Same Object, Same Type***
 If you make two symbols the same object:
 
-![](Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025.png)
 
 They automatically are the same type, sort of like this:
 
-![](Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025.png)
 #### ***Same Type, Same Interfaces***
 When you make two symbols the same type:
 
-![](Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025.png)
 
 They (by default) automatically get the same interfaces, sort of like this:
 
-![](Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025.png)
 #### ***Same Object, Same Type, Same Interfaces***
 If you make two symbols the same object:
 
-![](Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025.png)
 
 They automaticaly have the same type with (by default) the same interfaces, sort of like this:
 
-![](Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025.png)
 #### ***Not Shorthand***
 However, you can’t call it *shorthand*. The following two are not precisely the same thing:
 
-![](Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025.png)
 
-![](Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025.png)
 
 The lack or presence of a type line *does* make a difference, as will be explained in a later chapter.
 ### **Creation**
@@ -428,54 +431,58 @@ An object takes up memory. When an object is not used, you might not want it to 
 
 After a symbol is created, it is drawn differently. For instance by filling it:
 
-![](Symbol%20Language%20(2004).032.png)
+![](images/Symbol%20Language%20(2004).032.png)
 
 Or by drawing it with thicker lines:
 
-![](Symbol%20Language%20(2004).033.png)
+![](images/Symbol%20Language%20(2004).033.png)
 
 Or by drawing it with an alternate color:
 
-![](Symbol%20Language%20(2004).028.png)
+![](images/Symbol%20Language%20(2004).028.png)
 
 When objects are tied together with object lines, they represent the same object, but this object does not neccesarily have to be created. But when it *is* created, the connected symbols will represent the same object. In the C++(\* programming language, this is not possible.
 
 When you create a symbol the ‘normal’ way, you create it having its own type.
 
 
-|<p>*Before creation*</p><p>![](Symbol%20Language%20(2004).034.png)</p>|<p>*After creation*</p><p>![](Symbol%20Language%20(2004).035.png)</p>|
+|<p>*Before creation*</p><p>![](images/Symbol%20Language%20(2004).034.png)</p>|<p>*After creation*</p><p>![](images/Symbol%20Language%20(2004).035.png)</p>|
 | :-: | :-: |
 
 You can also specify an alternate type on creation.
 
 
-|<p>*Before creation*</p><p>![](Symbol%20Language%20(2004).034.png)</p>|<p>*After creation*</p><p>![](Symbol%20Language%20(2004).036.png)</p>|
+|<p>*Before creation*</p><p>![](images/Symbol%20Language%20(2004).034.png)</p>|<p>*After creation*</p><p>![](images/Symbol%20Language%20(2004).036.png)</p>|
 | :-: | :-: |
 
 The alternative type, however *must* support the same interface. It may have completely the same interface:
 
 
-|<p>*Before creation*</p><p>![](Symbol%20Language%20(2004).037.png)</p>|<p>*After creation*</p><p>![](Symbol%20Language%20(2004).038.png)</p>|
+|<p>*Before creation*</p><p>![](images/Symbol%20Language%20(2004).037.png)</p>|<p>*After creation*</p><p>![](images/Symbol%20Language%20(2004).038.png)</p>|
 | :-: | :-: |
 
 But the new type may also only *support* the interface of the type it had before the creation:
 
-![](Symbol%20Language%20(2004).039.png)
+![](images/Symbol%20Language%20(2004).039.png)
 
 *After Creation*
 
 What you see is that when you create an object giving it a different type, the diagram is actually changed at run time. If you use an alternate type when the symbol is created, its type line is changed. If the symbol did not yet have a type line, then it gets one.
 
 
-|<p>*Before creation*</p><p>![](Symbol%20Language%20(2004).040.png)</p>|<p>*After creation (specifying a type)*</p><p>![](Symbol%20Language%20(2004).041.png)</p>|
+|<p>*Before creation*</p><p>![](images/Symbol%20Language%20(2004).040.png)</p>|<p>*After creation (specifying a type)*</p><p>![](images/Symbol%20Language%20(2004).041.png)</p>|
 | :-: | :-: |
 ### **Referencing a Parent**
 You can also reference a parent or descendant:
 
-![](Symbol%20Language%20(2004).042.png)
+![](images/Symbol%20Language%20(2004).042.png)
 
 I mention this separately here, because you won’t see this notation very often, but it’s possible all the same.
-## ***Procedure Basics***
+
+
+Procedure Basics
+----------------
+
 < a diamond is also notated pointier than a square. So this is be a diamond too:
 
 [Picture with a pointy square]
@@ -484,67 +491,67 @@ I mention this separately here, because you won’t see this notation very often
 ### **Notation Elements**
 *Squares* and *diamonds* are procedure symbols. They represent elements of the procedure structure.
 
-![](Symbol%20Language%20(2004).043.jpeg)
+![](images/Symbol%20Language%20(2004).043.jpeg)
 
 The square is the usual symbol for a procedure. The diamond is a special symbol, as I will show lateron.
 
 Relations between procedures are expressed by *containment*:
 
-![](Symbol%20Language%20(2004).044.jpeg)
+![](images/Symbol%20Language%20(2004).044.jpeg)
 
 And by connecting them with lines, or *lines:*
 
-![](Symbol%20Language%20(2004).045.jpeg)
+![](images/Symbol%20Language%20(2004).045.jpeg)
 
 There can only be solid or dotted lines between procedure symbols.
 ### **Procedures**
 Procedures are denoted with squares:
 
-![](Symbol%20Language%20(2004).046.png)
+![](images/Symbol%20Language%20(2004).046.png)
 
 To make two squares be the same procedure you connect them with a line:
 
-![](Symbol%20Language%20(2004).047.png)
+![](images/Symbol%20Language%20(2004).047.png)
 
 A call to either square is a call to the same procedure.
 ### **Procedure Call**
 To make one procedure call another procedure, you put a diamond in the calling procedure and you connect it to the procedure to call.
 
-![](Symbol%20Language%20(2004).048.jpeg)
+![](images/Symbol%20Language%20(2004).048.jpeg)
 
 You can say **A** calls **B**, or **B** is called from **A**. You could say that the line is directed outwards: the call line first exists a square, to next find its target procedure. The connected symbols here represent the same procedure. The side effect of a diamond though, is that it *executes*. **C** is now part of procedure **A** and it will execute when **A** executes. It’s like the code of **B** is inserted right into procedure **A**. Considering that, it seems that the direction of the line doesn’t really matter: both symbols simply represent the same procedure. But a procedure does have a definition in one place while the other symbols are calls or references to it. The topic of direction is looked at closer in the *Lines* chapter, but I’ll tell you now that the direction of a line is usually outwards.
 
 If one square is called, its contained squares are called too.
 
-![](Symbol%20Language%20(2004).049.jpeg)
+![](images/Symbol%20Language%20(2004).049.jpeg)
 
 When **A** is called, **B** is called. When **B** is called, **C**, **D** and **E** are called.
 ### **Procedure Reference**
 A diamond connected to another procedure is a call. A square connected to another procedure is a mere *reference* to the procedure.
 
-![](Symbol%20Language%20(2004).050.jpeg)
+![](images/Symbol%20Language%20(2004).050.jpeg)
 
 A call to any square that represents the same procedure is a call to the same procedure. A reference to either of the procedure references is a reference to the same procedure.
 
 Therefore, when you call a procedure reference, the referenced procedure is called:
 
-![](Symbol%20Language%20(2004).051.jpeg)
+![](images/Symbol%20Language%20(2004).051.jpeg)
 
 When **A** calls **B**, it’s actually calling **C**.
 
 When a procedure is called, the contained procedure *references* are *not* called.
 
-![](Symbol%20Language%20(2004).052.jpeg)
+![](images/Symbol%20Language%20(2004).052.jpeg)
 
 When **A** is called, **B** and **D** are called, but not **C**.
 ### **Procedure Clause**
 A diamond without a line:
 
-![](Symbol%20Language%20(2004).053.jpeg)
+![](images/Symbol%20Language%20(2004).053.jpeg)
 
 Also executes, when its parent procedure executes, but it doesn’t delegate to another procedure, like a call does:
 
-![](Symbol%20Language%20(2004).054.jpeg)
+![](images/Symbol%20Language%20(2004).054.jpeg)
 
 It is an undelegated part of a procedure, called a *clause*.
 
@@ -552,17 +559,17 @@ Because a diamond doesn’t have to be a call, it is also called an *execution* 
 
 An undelegated square inside a procedure is also considered a clause.
 
-![](Symbol%20Language%20(2004).055.jpeg)
+![](images/Symbol%20Language%20(2004).055.jpeg)
 
 but it doesn’t execute, unless you call it.
 
-![](Symbol%20Language%20(2004).056.jpeg)
+![](images/Symbol%20Language%20(2004).056.jpeg)
 
 A splineless diamond is also called an *active clause*, while a splineless square is also called an *inactive clause*.
 ### **Procedure Contents**
 A procedure can contain anything an object can. Anything you can declare inside a type can also be declared in a procedure.
 
-![](Symbol%20Language%20(2004).057.jpeg)
+![](images/Symbol%20Language%20(2004).057.jpeg)
 
 That way procedures are like types, but procedures have special characteristics that I’ll lay out later.
 
@@ -591,7 +598,7 @@ In diagram code, optional parameters are denoted by displaying the word **Option
 ### **Procedure Interface**
 A procedure has an interface too, consisting of all public contents of the procedure: public objects (in, out or thru) and public procedures (clauses, calls and references). A procedure can have an interface line. The target of this interface line must be a procedure, in case of which both procedures get the same parameters.
 
-![](Symbol%20Language%20(2004).058.png)
+![](images/Symbol%20Language%20(2004).058.png)
 
 *Procedure with an external interface*
 
@@ -601,19 +608,23 @@ For the time being, triangles can reside in a procedure, but only for the purpos
 ### **Same Procedure, Same Interface**
 When you make two symbols the same procedure:
 
-![](Symbol%20Language%20(2004).059.jpeg)
+![](images/Symbol%20Language%20(2004).059.jpeg)
 
 They also get the same interface, sort of like this:
 
-![](Symbol%20Language%20(2004).060.jpeg)
+![](images/Symbol%20Language%20(2004).060.jpeg)
 
 However, the lack or presence of an interface line *does* make a difference, as will be explained later.
-## ***Lines***
+
+
+Lines
+-----
+
 < Must explain how the children inside parents that are the same object have the same line targets. Or the children inside diamonds that are the same execution. >
 ### **Direction**
 Lines tie symbols together, saying that they share a certain aspect.
 
-![](Symbol%20Language%20(2004).061.png)
+![](images/Symbol%20Language%20(2004).061.png)
 
 *A, B, C and D share an aspect: they represent the same object. E represents another object.*
 
@@ -622,7 +633,7 @@ In that sense the lines have no particular direction. However, the direction of 
 A *line dissector*, also called an *access symbol*, can determine the direction of a line. It sort of denotes which symbol is pointed at:
 
 
-|<p>![](Symbol%20Language%20(2004).062.png)</p><p>*B is pointed to.*</p><p>*The direction goes to the right à.*</p><p>*In this case A points to B.*</p>|<p>![](Symbol%20Language%20(2004).062.png)</p><p>*A is pointed to.*</p><p>*The direction goes to the left ß.*</p><p>*In this case B points to A.*</p>|
+|<p>![](images/Symbol%20Language%20(2004).062.png)</p><p>*B is pointed to.*</p><p>*The direction goes to the right à.*</p><p>*In this case A points to B.*</p>|<p>![](images/Symbol%20Language%20(2004).062.png)</p><p>*A is pointed to.*</p><p>*The direction goes to the left ß.*</p><p>*In this case B points to A.*</p>|
 | :-: | :-: |
 
 You can see the line dissector as the door that lets you access a symbol. Therefore in the first example, **B** is accessed: **B** is pointed to by **A**, and in the second example **A** is accessed: **A** is pointed to by **B**.
@@ -630,20 +641,20 @@ You can see the line dissector as the door that lets you access a symbol. Theref
 In another situation the access symbol is placed as follows:
 
 
-|<p></p><p>![](Symbol%20Language%20(2004).062.png)</p><p>*The direction goes to the right à.*</p><p>*A points to B.*</p>|<p></p><p>![](Symbol%20Language%20(2004).063.png)</p><p>*The direction goes to the left ß.*</p><p>*B points to A.*</p>|
+|<p></p><p>![](images/Symbol%20Language%20(2004).062.png)</p><p>*The direction goes to the right à.*</p><p>*A points to B.*</p>|<p></p><p>![](images/Symbol%20Language%20(2004).063.png)</p><p>*The direction goes to the left ß.*</p><p>*B points to A.*</p>|
 | :-: | :-: |
 
 In the last picture, the access symbol isn’t placed near **A**, but closer to the border of **C**. Why this is so is explained later. For now you can see the line dissector as the *door* to **C** that lets you access **A**.
 
 The access symbol can also be put at both ends:
 
-![](Symbol%20Language%20(2004).062.png)
+![](images/Symbol%20Language%20(2004).062.png)
 
 In that case the direction goes both ways. Actually, there’s two lines: one going one way and the other going the other way.
 
 When an access symbol is left out:
 
-![](Symbol%20Language%20(2004).064.png)
+![](images/Symbol%20Language%20(2004).064.png)
 
 Three things can be the matter:
 
@@ -669,7 +680,7 @@ This rule applies when the access symbol rule doesn’t override it. If the acce
 
 *Direction is Usually Outwards*
 
-![](Symbol%20Language%20(2004).065.png)
+![](images/Symbol%20Language%20(2004).065.png)
 
 *A points to B, because the direction is outwards.*
 
@@ -681,13 +692,13 @@ The rule that follows only applies if the direction isn’t determined by the tw
 
 It happens more often that a procedure has a pointer to an object:
 
-![](Symbol%20Language%20(2004).066.png)
+![](images/Symbol%20Language%20(2004).066.png)
 
 à
 
 than for an object to directly reference a procedure parameter:
 
-![](Symbol%20Language%20(2004).067.png)
+![](images/Symbol%20Language%20(2004).067.png)
 
 ß
 
@@ -695,17 +706,17 @@ That is actually highly uncommon. It’s *not* uncommon to reference a procedure
 
 It is very *common* for a procedure to have a reference another object’s procedure:
 
-![](Symbol%20Language%20(2004).068.png)
+![](images/Symbol%20Language%20(2004).068.png)
 
 à
 
 Especially when it’s a diamond:
 
-![](Symbol%20Language%20(2004).069.jpeg)
+![](images/Symbol%20Language%20(2004).069.jpeg)
 
 And it is very *uncommon* to reference a procedure clause from an object:
 
-![](Symbol%20Language%20(2004).070.png)
+![](images/Symbol%20Language%20(2004).070.png)
 
 ß
 
@@ -713,13 +724,13 @@ Altogether it is more common for a procedure to point to something in an object,
 ##### **You Sooner Reference an Interface than Redirect It**
 Or: you sooner point *to* a triangle than *from* a triangle. This rule only applies if the rules above don’t determine the direction: access symbol, outward, sooner exit a procedure than an object.
 
-![](Symbol%20Language%20(2004).071.png)
+![](images/Symbol%20Language%20(2004).071.png)
 
 à
 
 The direction goes to the right à. It’s more common for a circle to redirect to an interface implementation in another circle. The other direction is less common: it’s less common to redirect an interface implementation to some far away object.
 
-![](Symbol%20Language%20(2004).072.png)
+![](images/Symbol%20Language%20(2004).072.png)
 
 ß
 
@@ -727,13 +738,13 @@ In this example the direction *is* to the left ß. You *do* sooner reference an 
 ##### **You Sooner Redirect a Diamond than Reference It**
 A diamond is usually a call, so it’s most common that the diamond points at something:
 
-![](Symbol%20Language%20(2004).073.jpeg)
+![](images/Symbol%20Language%20(2004).073.jpeg)
 
 à
 
 You can point *to* a diamond:
 
-![](Symbol%20Language%20(2004).074.jpeg)
+![](images/Symbol%20Language%20(2004).074.jpeg)
 
 ß
 
@@ -745,7 +756,7 @@ This rule is derived from the outwards rule. What they have in common is:
 
 The outwards rule says that you exit a border rather than enter it. The exit the most borders rule says you exit more borders than you enter.
 
-![](Symbol%20Language%20(2004).075.png)
+![](images/Symbol%20Language%20(2004).075.png)
 
 *A points to B becase because you exit more than you enter.*
 
@@ -766,46 +777,46 @@ So not looking at the precedence of rules, the rules can be viewed as follows:
 If *no rule* determines direction then the direction is either not expressed in the diagram or the direction goes both ways.
 
 
-|![](Symbol%20Language%20(2004).076.png)|<p>![](Symbol%20Language%20(2004).077.png)</p><p></p>|
+|![](images/Symbol%20Language%20(2004).076.png)|<p>![](images/Symbol%20Language%20(2004).077.png)</p><p></p>|
 | :-: | :-: |
-|![](Symbol%20Language%20(2004).078.png)|![](Symbol%20Language%20(2004).079.png)|
+|![](images/Symbol%20Language%20(2004).078.png)|![](images/Symbol%20Language%20(2004).079.png)|
 
 The direction *certainly* goes both ways if both ends have an access symbol:
 
 
-|![](Symbol%20Language%20(2004).080.png)|![](Symbol%20Language%20(2004).081.png)|![](Symbol%20Language%20(2004).080.png)|
+|![](images/Symbol%20Language%20(2004).080.png)|![](images/Symbol%20Language%20(2004).081.png)|![](images/Symbol%20Language%20(2004).080.png)|
 | :-: | :-: | :-: |
 
 A line going both ways is called a *bidirection*. Formally there are actually two lines: one for each direction, but only one line is shown.
 #### ***Access Symbol Placement***
 When a line crosses symbol borders, it first exits borders and then enters borders. It’s impossible to mix exits and entrances.
 
-![](Symbol%20Language%20(2004).082.png)
+![](images/Symbol%20Language%20(2004).082.png)
 
 *First come the exits a and b, and then come the entrances c, d and e.*
 
 If an access symbol is drawn to denote direction, it is by default put in the section between the exits and entrances. So not neccessarily close to the eventual symbol pointed at. In other words: the access symbol is usually put in front of the border that is first entered.
 
-![](Symbol%20Language%20(2004).083.png)
+![](images/Symbol%20Language%20(2004).083.png)
 
 If the part of the line between exits and entrances goes out of view then the access symbol can be placed where it’s still visible. It is placed in front of the last border in view that is entered or exited:
 
-![](Symbol%20Language%20(2004).084.png)
+![](images/Symbol%20Language%20(2004).084.png)
 
 Don’t draw it like this:
 
-![](Symbol%20Language%20(2004).085.png)
+![](images/Symbol%20Language%20(2004).085.png)
 
 because then you’re suggesting the other direction. Place it *in front* of the *last border in view* that is entered or exited.
 ### **Line Ownership**
 #### ***Object Symbol Lines***
 Direction is important in understanding that one object symbol can have only one line of each type.
 
-![](Symbol%20Language%20(2004).086.png)
+![](images/Symbol%20Language%20(2004).086.png)
 
 An object symbol can only have one object line, one type line and one interface line. The lines point *away* from the symbol. They denote which other symbol is their object, which other symbol is their type and which other symbol is their interface. Any other lines connected to an object symbol point *at* the symbol, not *away* from the symbol.
 
-![](Symbol%20Language%20(2004).087.png)
+![](images/Symbol%20Language%20(2004).087.png)
 
 **a** points *away* from **A**. This is **A**’s line. The other lines: **c** and **d**, point *to* **A**. In other words: **C** and **D** are pointers to **A**. **A** is a pointer to **B**. 
 #### ***Procedure Lines***
@@ -813,19 +824,19 @@ It works the same for procedures, except that procedures have reference and inte
 ### **Procedures to Procedures, Objects to Object**
 Procedures can be tied only to procedures.
 
-![](Symbol%20Language%20(2004).088.png)
+![](images/Symbol%20Language%20(2004).088.png)
 
 Objects can be tied only to objects.
 
-![](Symbol%20Language%20(2004).064.png)
+![](images/Symbol%20Language%20(2004).064.png)
 
 Formally, there can be no lines connecting objects and procedures:
 
-![](Symbol%20Language%20(2004).089.jpeg)
+![](images/Symbol%20Language%20(2004).089.jpeg)
 
 However, the above *is* a valid notation. It actually denotes the object being a pointer to the *return value* of the procedure. It’s an *implicit* notation (covered later), that actually standard for something else:
 
-![](Symbol%20Language%20(2004).090.jpeg)
+![](images/Symbol%20Language%20(2004).090.jpeg)
 
 So then object symbols point only to object symbols and procedure symbols only to procedure symbols.
 
@@ -837,21 +848,21 @@ However, apart from relations made by lines, symbols can also relate through con
 
 Objects relate to procedures primarily by containment.
 
-![](Symbol%20Language%20(2004).091.jpeg)
+![](images/Symbol%20Language%20(2004).091.jpeg)
 
-![](Symbol%20Language%20(2004).092.jpeg)
+![](images/Symbol%20Language%20(2004).092.jpeg)
 
 But if you redirect an object’s procedure, the object gets a relation to the procedure redirected to.
 
-![](Symbol%20Language%20(2004).093.jpeg)
+![](images/Symbol%20Language%20(2004).093.jpeg)
 
 But only by containing a procedure related to another or being contained *in* a procedure with related to another.
 
-![](Symbol%20Language%20(2004).092.jpeg)
+![](images/Symbol%20Language%20(2004).092.jpeg)
 
 That way symbols can relate to one another by not being tied together nor by one being contained in the other, but sherely by the relations that their ancestors or descendants have:
 
-![](Symbol%20Language%20(2004).094.jpeg)
+![](images/Symbol%20Language%20(2004).094.jpeg)
 
 *Object* **A** *is related to object* **B***.*
 ### **Target Symbols**
@@ -860,11 +871,11 @@ Lines redirect a *system aspect* of a symbol to another symbol.
 
 For instance: an object symbol can serve as its own object:
 
-![](Symbol%20Language%20(2004).028.png)
+![](images/Symbol%20Language%20(2004).028.png)
 
 But if it has an object line, it is no more than a pointer to an object, rather than the object itself, while te target of the line is regarded the real object. 
 
-![](Symbol%20Language%20(2004).095.png)
+![](images/Symbol%20Language%20(2004).095.png)
 
 *A is a pointer, B is the object.*
 
@@ -872,41 +883,41 @@ The object symbol *redirects* its *object* system aspect to another symbol. Line
 
 An object symbol can also serve as its own type:
 
-![](Symbol%20Language%20(2004).028.png)
+![](images/Symbol%20Language%20(2004).028.png)
 
 Then it is an object that defines its own type. But if it has a type line, it redirects its type to another symbol. Then it is no longer its own type, but a mere object from an existing type, also called an instance of a type. The target of the type line is regarded the type itself.
 
-![](Symbol%20Language%20(2004).096.png)
+![](images/Symbol%20Language%20(2004).096.png)
 
 *A is an instance, B is the type.*
 
 Similarly, an object symbol can control its own interface:
 
-![](Symbol%20Language%20(2004).028.png)
+![](images/Symbol%20Language%20(2004).028.png)
 
 But if it has an interface line, its interface is bound to that of its interface line target. The symbol is regarded an interface implementation, while the target interface serves as the interface.
 
-![](Symbol%20Language%20(2004).097.png)
+![](images/Symbol%20Language%20(2004).097.png)
 
 *B is the interface, A is an implementation of it.*
 
 A procedure symbol can define its own procedure:
 
-![](Symbol%20Language%20(2004).032.png)
+![](images/Symbol%20Language%20(2004).032.png)
 
 But if it has a reference line it is regarded no more than a reference or call to a procedure. The target of the line is considered the procedure itself or the *definition* of the procedure.
 
-![](Symbol%20Language%20(2004).098.jpeg)
+![](images/Symbol%20Language%20(2004).098.jpeg)
 
 *A is the reference, B is the definition.*
 
-![](Symbol%20Language%20(2004).099.jpeg)
+![](images/Symbol%20Language%20(2004).099.jpeg)
 
 *A is the procedure reference, B is the definition.*
 #### ***Multiple Redirection and Final Targets***
 If an object symbol has an object line to a symbol that again has an object line, there is redirected until a symbol without an object line is encountered: the *target object*.
 
-![](Symbol%20Language%20(2004).100.png)
+![](images/Symbol%20Language%20(2004).100.png)
 
 *C is the target object of A and B.*
 
@@ -927,7 +938,7 @@ When there’s no interface line and the type line is followed, then the type’
 
 The reason that the object line is preferred over the type line is that if there is no interface line, the *object* can determine *which* interface of the type* is used.
 
-![](Symbol%20Language%20(2004).101.png)
+![](images/Symbol%20Language%20(2004).101.png)
 
 *This picture shows any combination of lines an object symbol can have and which of the lines to follow in the interface trace.*
 
@@ -937,7 +948,7 @@ You’ll use type and object lines to trace the type. Follow the type line if it
 
 When there is no type line, the object determines the type.
 
-![](Symbol%20Language%20(2004).102.jpeg)
+![](images/Symbol%20Language%20(2004).102.jpeg)
 
 Interface lines are not followed. Note that the target type doesn’t have to be pointed to by a type line. 
 ###### ***Object Trace***
@@ -945,17 +956,17 @@ To find the target object, you’d expect to only follow object lines. However, 
 
 If a type line points to a symbol with an object line, the type is a single object.
 
-![](Symbol%20Language%20(2004).103.jpeg)
+![](images/Symbol%20Language%20(2004).103.jpeg)
 
 Each instance of the type is actually the same object. 
 
-![](Symbol%20Language%20(2004).104.png)
+![](images/Symbol%20Language%20(2004).104.png)
 
 Therefore, a type line can redirect the object of the symbol. Therefore, type lines need to be followed to find the object.
 
 The last symbol pointed to by an object line is the object.
 
-![](Symbol%20Language%20(2004).105.jpeg)
+![](images/Symbol%20Language%20(2004).105.jpeg)
 
 This kind of redirectioning is called an *object trace*.
 
@@ -963,25 +974,25 @@ Delegating the object aspect is the main type of object redirection.
 ###### ***Object-Type Trace***
 The last symbol in the object trace altogether:
 
-![](Symbol%20Language%20(2004).106.jpeg)
+![](images/Symbol%20Language%20(2004).106.jpeg)
 
 is the target type.
 
 Therefore, *object* trace can also point out to the target *type*. The difference with a *type trace* is that a type trace prefers to follow type lines over object lines and an object trace prefers to follow object lines over type lines. However, both redirections lead to the exact same symbol.
 
-![](Symbol%20Language%20(2004).107.jpeg)
+![](images/Symbol%20Language%20(2004).107.jpeg)
 
 It happens a lot that you want to find out the object and the type in one blow. So you may as well use the redirection of the object trace for the benefit of finding the object and type in one blow. The trace is then called a *object-type trace*.
 
-![](Symbol%20Language%20(2004).108.png)
+![](images/Symbol%20Language%20(2004).108.png)
 
 The last symbol in the redirection altogether is the target type (**C**). The last symbol pointed to by an object line is the object (**O**). Note that the target type may be pointed out by an object line.
 
-![](Symbol%20Language%20(2004).103.jpeg)
+![](images/Symbol%20Language%20(2004).103.jpeg)
 
 When you only want to find out the type, it is better to use a type trace than it is to use an object-type trace. Type trace prefers type lines over object lines. Type lines generally follow less redirections before reaching the target type than object lines do.
 
-![](Symbol%20Language%20(2004).109.jpeg)
+![](images/Symbol%20Language%20(2004).109.jpeg)
 ###### ***Object-Type-Interface Trace***
 It happens frequently that you need a symbol’s target object, type and interface in one blow. That requires two traces: an object-type trace and an interface trace. The full operation is an *object-type-interface trace*. It deserves a separate name for it’s a very common operation.
 ##### **Tracing Procedure Aspects**
@@ -995,11 +1006,11 @@ A definition is a lot like the type of the procedure, while an execution is an i
 ###### ***Definition Trace***
 The definition trace is quite easy: follow reference lines until you bump into a symbol without a reference line. That symbol’s the definition
 
-![](Symbol%20Language%20(2004).110.jpeg)
+![](images/Symbol%20Language%20(2004).110.jpeg)
 ###### ***Procedure Interface Trace***
 In the *procedure interface trace* you follow both line types, but you prefer following an interface line over a reference line.
 
-![](Symbol%20Language%20(2004).111.jpeg)
+![](images/Symbol%20Language%20(2004).111.jpeg)
 
 The last symbol of the trace is the interface.
 
@@ -1007,7 +1018,7 @@ Following any of the two line types will eventually lead to the same symbol. In 
 ###### ***Execution Trace***
 To find the execution you do the following.
 
-![](Symbol%20Language%20(2004).112.jpeg)
+![](images/Symbol%20Language%20(2004).112.jpeg)
 
 What you do is that you follow reference lines until you encounter a symbol without a reference line. The last symbol in the trace to be a *diamond* is the target execution.
 
@@ -1019,29 +1030,29 @@ It happens frequently that you need target execution, definition and interface i
 ###### ***Redirecting to an Execution***
 A lot of times you will redirect an execution, but you won’t redirect *to* an execution.
 
-![](Symbol%20Language%20(2004).113.jpeg)
+![](images/Symbol%20Language%20(2004).113.jpeg)
 
 By redirecting to an execution, it is possible for multiple symbols to represent the same single execution.
 
-![](Symbol%20Language%20(2004).114.jpeg)
+![](images/Symbol%20Language%20(2004).114.jpeg)
 
 Also note that when redirecting to an execution, the definition is always the same execution.
 ##### **Tracing is Not Always Hard**
 If an object symbol has no object line or type line, then finding the target object and type is much simpler, because no redirectioning at all takes place. The symbol is its own object and type.
 
-![](Symbol%20Language%20(2004).028.png)
+![](images/Symbol%20Language%20(2004).028.png)
 
 Traces usually don’t require as many steps as in the examples above.
 #### ***Circularity***
 Circularity is the case when the redirection eventually leads to a symbol already encountered. 
 
-![](Symbol%20Language%20(2004).115.png)
+![](images/Symbol%20Language%20(2004).115.png)
 
 **A** is a pointer to **B**, which is a pointer to **C**, which is a pointer to **A** again and so on. Redirection is ended, though, when the target symbol is found to be the source symbol or intermediate symbol. In this case it can’t be said that a single symbol represents the actual object, while other symbols are regarded object references. In this case **A**, **B** and **C** are *all* primary representations of the object.
 
 There’s also a question of circularity when somewhere in the redirection a bidirection is encountered.
 
-![](Symbol%20Language%20(2004).116.png)
+![](images/Symbol%20Language%20(2004).116.png)
 
 This is because a bidirection can also be regarded to be two lines, one for each direction. The line between **B** and **C** can be regarded two lines: one pointing from **B** to **C** and one pointing from **C** to **B**. Therefore, the line(s) between **B** and **C** cause a circularity: **B** is a pointer to **C**, which is a pointer to **B**, which is a pointer to **C** and so on. Thus, **B** and **C** both represent the target object. **A** however, is a pointer *to* this *circularity*. It’s not part of the circularity.
 
@@ -1049,7 +1060,7 @@ A circularity can only be the end point of redirection, because you can’t esca
 ##### **Circularity in Tracing**
 Tracing final targets requires following multiple line types to find a single system aspect.
 
-![](Symbol%20Language%20(2004).117.jpeg)
+![](images/Symbol%20Language%20(2004).117.jpeg)
 
 In a trace, multiple line types can occur in a single circularity. The following sub sections cover the details of circularity in each type of trace.
 ##### **Circularity in a Object-Type Trace**
@@ -1057,33 +1068,33 @@ In object-type tracing, both kinds of line can close a circularity.
 
 If the closed circle *contains* an object line
 
-![](Symbol%20Language%20(2004).118.jpeg)
+![](images/Symbol%20Language%20(2004).118.jpeg)
 
 or *is pointed to* by an object line,
 
-![](Symbol%20Language%20(2004).119.jpeg)
+![](images/Symbol%20Language%20(2004).119.jpeg)
 
 the whole circularity represents both object and type.
 
 If the closed circle consists of only type lines and is pointed to by only a type line, the circularity only represents the type.
 
-![](Symbol%20Language%20(2004).120.jpeg)
+![](images/Symbol%20Language%20(2004).120.jpeg)
 
 An object trace is the same procedure. The examples above should also clarify circularity in a type trace.
 ##### **Circularity in a Interface Trace**
 All three kinds of object symbol lines can close a circularity in an interface trace. If a circularity is encountered when tracing the interface, the whole circularity represents the interface.
 
-![](Symbol%20Language%20(2004).121.jpeg)
+![](images/Symbol%20Language%20(2004).121.jpeg)
 ##### **Circularity in a Definition Trace**
 In a definition trace, only one line type is followed, so a circularity there looks the same as earlier explained.
 
-![](Symbol%20Language%20(2004).122.jpeg)
+![](images/Symbol%20Language%20(2004).122.jpeg)
 
 The whole circularity represents the definition.
 ##### **Circularity in a Procedure Interface Trace**
 Both kinds of procedure symbol lines can close a circularity in a procedure interface trace. If a circularity in encountered when tracing the procedure interface, the whole circularity represents the procedure interface.
 
-![](Symbol%20Language%20(2004).123.jpeg)
+![](images/Symbol%20Language%20(2004).123.jpeg)
 ##### **Circularity in an Execution-Definition Trace**
 The execution-definition trace is the same process as the execution trace, so this section explains circularity in both of them.
 
@@ -1091,14 +1102,14 @@ In execution-definition tracing you follow reference lines.
 
 If the closed circle contains a diamond
 
-![](Symbol%20Language%20(2004).124.jpeg)
+![](images/Symbol%20Language%20(2004).124.jpeg)
 
 
 then the whole circularity represents both execution and definition.
 
 If the closed circle consists of only squares, the circularity only represents the definition.
 
-![](Symbol%20Language%20(2004).125.jpeg)
+![](images/Symbol%20Language%20(2004).125.jpeg)
 #### ***Terms***
 There’s a lot to be said about the terminoligy around target symbols. I’ve put all this in this section. I kept these discussions out of the original text of ‘Target Symbols’, because it would obscure the main point.
 ##### **Target Symbol**
@@ -1106,13 +1117,13 @@ The target of a line, the *line target*, is also called a *target symbol*, while
 ##### **Source**
 Be careful with the term *source* in this context, though. You can speak of the source of a line:
 
-![](Symbol%20Language%20(2004).126.jpeg)
+![](images/Symbol%20Language%20(2004).126.jpeg)
 
 **A** is considered the line’s source. **B** is the opposite party: the *target*. *Source* in this context expresses a party of a line. 
 
 When you use the term *source* to denote a *relation between symbols*, it actually means *the same* as the term target. The terms are not opposites, they’re equivalents.
 
-![](Symbol%20Language%20(2004).127.jpeg)
+![](images/Symbol%20Language%20(2004).127.jpeg)
 
 **Type** can be considered **Object**’s type target, because **Object**’s type line points to it. **Type** can also be considered **Object**’s type source, because **Type** serves as the type of **Object**.
 ##### **‘Target’**
@@ -1148,11 +1159,11 @@ This section covers the all forms of genericity for object symbols.
 ##### **Original and Delegated Object**
 The first concept I will explain is quite simple.
 
-![](Symbol%20Language%20(2004).128.jpeg)
+![](images/Symbol%20Language%20(2004).128.jpeg)
 
 If a symbol has an object line then it adopts the object of the line target. **A** delegates to **B**. You can also say that **A**’s object aspect is *delegated* or that **A** has a *delegated object*.
 
-![](Symbol%20Language%20(2004).129.jpeg)
+![](images/Symbol%20Language%20(2004).129.jpeg)
 
 If a symbol doesn’t have an object line, though, it represents its own object. The symbol is an *original object*.
 
@@ -1168,19 +1179,19 @@ The redirection of the object aspect is the main type of redirection. Therefore 
 It works almost the same for the type aspect. However, the type aspect can be delegated by both a type line as well as an object line. If a symbol has a type line or object line, then it is said to have a *delegated type*.
 
 
-|<p>![](Symbol%20Language%20(2004).130.jpeg)</p><p>*Type delegated by object line*</p>|<p>![](Symbol%20Language%20(2004).131.jpeg)</p><p>*Type delegated by type line*</p>|
+|<p>![](images/Symbol%20Language%20(2004).130.jpeg)</p><p>*Type delegated by object line*</p>|<p>![](images/Symbol%20Language%20(2004).131.jpeg)</p><p>*Type delegated by type line*</p>|
 | :-: | :-: |
 
 If the symbol has type nor object line, it represents its own type. The symbol is said to have its *original type*.
 
-![](Symbol%20Language%20(2004).129.jpeg)
+![](images/Symbol%20Language%20(2004).129.jpeg)
 
 The type determines the symbolic contents of a symbol. If a symbol has a delegated type, it has the same symbolic contents as its target type. If it has its own original type, then it determines the contents itself.
 
 During execution of a system a symbol can change from having a delegated type to original type and back.
 
 
-|<p>![](Symbol%20Language%20(2004).132.jpeg)</p><p>*Delegated type*</p>|<p>![](Symbol%20Language%20(2004).133.jpeg)</p><p>*Line removed, original type reappears*</p>|
+|<p>![](images/Symbol%20Language%20(2004).132.jpeg)</p><p>*Delegated type*</p>|<p>![](images/Symbol%20Language%20(2004).133.jpeg)</p><p>*Line removed, original type reappears*</p>|
 | :-: | :-: |
 
 When you remove a type line, the symbol’s  original contents reappear. So the original type definition of a symbol isn’t lost as soon as you delegate the type line. You just temporarily can’t see the original type contents. The original type systematics reappear when the type is no longer delegated. When a type is delegated, usually nothing is defined as the original type. So not every object symbol needs to store its own original systematics.
@@ -1193,15 +1204,15 @@ When you remove a type line, the symbol’s  original contents reappear. So the 
 This is the genericity already explained in the introduction to genericity. When a type is undetermined by a type line, the symbol adopts the type of its object target, whatever type this object may be of.
 
 
-|![](Symbol%20Language%20(2004).134.jpeg)|![](Symbol%20Language%20(2004).135.jpeg)|![](Symbol%20Language%20(2004).136.jpeg)|
+|![](images/Symbol%20Language%20(2004).134.jpeg)|![](images/Symbol%20Language%20(2004).135.jpeg)|![](images/Symbol%20Language%20(2004).136.jpeg)|
 | :-: | :-: | :-: |
 
 The type is *generic* in this case. If the type line is set, however, the object can only be of a single type.
 
 
-|![](Symbol%20Language%20(2004).137.jpeg)|<p>![](Symbol%20Language%20(2004).138.jpeg)</p><p></p>|
+|![](images/Symbol%20Language%20(2004).137.jpeg)|<p>![](images/Symbol%20Language%20(2004).138.jpeg)</p><p></p>|
 | :-: | :-: |
-|![](Symbol%20Language%20(2004).139.jpeg)|![](Symbol%20Language%20(2004).140.jpeg)|
+|![](images/Symbol%20Language%20(2004).139.jpeg)|![](images/Symbol%20Language%20(2004).140.jpeg)|
 
 The type is *explicit* in that case. You can also say that the type is *set*.
 
@@ -1214,7 +1225,7 @@ If the type is determined by no line at all then it has an *original type*. You 
 ##### **Original and Delegated Interface**
 The interface can be determined by the target of the interface line, type line or object line, but the interface line is most determinant. If any of those line are set, the interface is diverted to the interface target, object target or type target. It is said to be *delegated*. If an object symbol has no interface line, it has its *original interface*.
 
-![](Symbol%20Language%20(2004).141.jpeg)
+![](images/Symbol%20Language%20(2004).141.jpeg)
 
 
 |Original interface|<p>Interface determined by no line</p><p>(interface, type nor object line)</p>|
@@ -1228,16 +1239,16 @@ The use of delegation of the interface is to fix the interface and to use an alr
 As the type can be explicitly set, the interface can also be explicitly set. It’s only about the interface set by an interface line; the other line types don’t explicitly set the interface. If the interface is set, then the type or object can only be a symbol whose type at least supports the interface.
 
 
-|<p>![](Symbol%20Language%20(2004).142.jpeg)</p><p></p>|<p>*A*</p><p>![](Symbol%20Language%20(2004).143.jpeg)</p>|
+|<p>![](images/Symbol%20Language%20(2004).142.jpeg)</p><p></p>|<p>*A*</p><p>![](images/Symbol%20Language%20(2004).143.jpeg)</p>|
 | :-: | :-: |
-|<p>*B*</p><p>![](Symbol%20Language%20(2004).144.jpeg)</p>|<p>*C*</p><p>![](Symbol%20Language%20(2004).145.jpeg)</p>|
+|<p>*B*</p><p>![](images/Symbol%20Language%20(2004).144.jpeg)</p>|<p>*C*</p><p>![](images/Symbol%20Language%20(2004).145.jpeg)</p>|
 
 *The top object can point to the left object (picture A) and to the right object (picture B). The left object has the full interface, while the right object supports the interface. Picture C is illegal, because the object target doesn’t support the interface.*
 
 If a symbol has no interface line, the interface is said to be *generic*. It adopts the full interface of any type the interface might have, due to type delegation by either a type line or object line. 
 
 
-|![](Symbol%20Language%20(2004).146.jpeg)|![](Symbol%20Language%20(2004).147.jpeg)|
+|![](images/Symbol%20Language%20(2004).146.jpeg)|![](images/Symbol%20Language%20(2004).147.jpeg)|
 | :-: | :-: |
 
 
@@ -1251,7 +1262,7 @@ This section covers the genericity concepts around procedure symbols.
 ##### **Original and Delegated Definition**
 When a procedure symbol has a reference line, it adopts the procedure definition of its line target. The symbol has a delegated definition. If the symbol has no reference line, it defines the procedure itself. It has its original definition.
 
-![](Symbol%20Language%20(2004).148.jpeg)
+![](images/Symbol%20Language%20(2004).148.jpeg)
 
 The definition of the procedure symbol determines its symbolic contents. As a system runs, the definition can go from original to delegated and back. When you remove a reference line, the symbol regains its original contents. So the original definition of a symbol is not lost once you delegate the definition. You just temporarily can’t see the original definition. When a definition is delegated, usually nothing is defined as the original definition. So not every procedure symbol needs to store its own original systematics. 
 
@@ -1264,7 +1275,7 @@ You can also speak of *original procedure* and *delegated procedure* or *the del
 ##### **Original and Delegated Execution**
 When there’s a diamond somewhere the reference line redirection,
 
-![](Symbol%20Language%20(2004).149.jpeg)
+![](images/Symbol%20Language%20(2004).149.jpeg)
 
 the source symbol of the redirection doesn’t represent its own execution. Its execution is delegated to the other diamond.
 
@@ -1276,23 +1287,23 @@ the source symbol of the redirection doesn’t represent its own execution. Its 
 
 Logically, only a diamond can represent its own original execution.
 
-![](Symbol%20Language%20(2004).150.jpeg)
+![](images/Symbol%20Language%20(2004).150.jpeg)
 
 You don’t usually talk about *squares* having an *original execution*, however when a square delegates to a diamond, 
 
-![](Symbol%20Language%20(2004).151.jpeg)
+![](images/Symbol%20Language%20(2004).151.jpeg)
 
 the square *is* said to have a *delegated execution*.
 ##### **Original and Delegated Procedure Interface**
 The interface of a procedure can be delegated to its definition target, but it can also be delegated by an interface line. 
 
 
-|![](Symbol%20Language%20(2004).152.jpeg)|![](Symbol%20Language%20(2004).153.jpeg)|
+|![](images/Symbol%20Language%20(2004).152.jpeg)|![](images/Symbol%20Language%20(2004).153.jpeg)|
 | :-: | :-: |
 
 In both cases the interface is delegated. If a procedure symbol has no line at all, it has an original interface.
 
-![](Symbol%20Language%20(2004).154.jpeg)
+![](images/Symbol%20Language%20(2004).154.jpeg)
 
 During execution the interface can change from being delegated to original and back. The original interface isn’t lost as soon as you delegate the interface. When you annull the delegation, then the original interface reappears. It was only temporarily hidden. Most procedure symbols don’t define an original interface, so most symbols don’t holds original interface systematics.
 
@@ -1306,13 +1317,13 @@ The *use* of delegation of the interface is to fix the interface of a procedure 
 If a procedure symbol has an interface line then its definition can only be one that has that particular interface. The interface is explicit.
 
 
-|![](Symbol%20Language%20(2004).155.jpeg)|![](Symbol%20Language%20(2004).156.jpeg)|![](Symbol%20Language%20(2004).157.jpeg)|
+|![](images/Symbol%20Language%20(2004).155.jpeg)|![](images/Symbol%20Language%20(2004).156.jpeg)|![](images/Symbol%20Language%20(2004).157.jpeg)|
 | :-: | :-: | :-: |
 
 If the interface line of a procedure symbol isn’t set then it adopts the interface of the target definition.
 
 
-|![](Symbol%20Language%20(2004).158.jpeg)|![](Symbol%20Language%20(2004).159.jpeg)|
+|![](images/Symbol%20Language%20(2004).158.jpeg)|![](images/Symbol%20Language%20(2004).159.jpeg)|
 | :-: | :-: |
 
 
@@ -1325,28 +1336,28 @@ A special form of genericity is very important and it’s crucial for the use of
 ###### ***Using Interface Extends Type Line***
 When you set the interface of a symbol then it can only point to definitions that have the interface or support the interface. I will now describe how using a supported interface works.
 
-![](Symbol%20Language%20(2004).160.jpeg)
+![](images/Symbol%20Language%20(2004).160.jpeg)
 
 Here **Object A** has **Type B**. It uses **Interface A** of **Type B**.
 
 One one hand you can a see using the supported interface as a silent extension of the type line to the triangle with the right interface:
 
-![](Symbol%20Language%20(2004).161.jpeg)
+![](images/Symbol%20Language%20(2004).161.jpeg)
 
 But on the other hand it’s not like that, because that would mean that **Object A** gets **Type B**. It still has **Type A** however. When **Object A** is created, an object of **Type A** is is created, not **Type B**. But **Object A** can only call upon the members of **Interface A**.
 ###### ***Object Shows Only Used Interface Implementation***
 The source object only shows the implementation of the interface it has:
 
-![](Symbol%20Language%20(2004).162.jpeg)
+![](images/Symbol%20Language%20(2004).162.jpeg)
 
 Not the contents of the whole type:
 
-![](Symbol%20Language%20(2004).163.jpeg)
+![](images/Symbol%20Language%20(2004).163.jpeg)
 
 ###### ***Create Symbol: Create Object of the Whole Type***
 However, when you *create* the symbol, an object of the *full type* is created. This is useful: other symbols may be pointers to the same object, but may use a different interface.
 
-![](Symbol%20Language%20(2004).164.jpeg)
+![](images/Symbol%20Language%20(2004).164.jpeg)
 
 *Symbol A is of Type A, but only uses Interface A. Symbol A only shows the systematics of that one interface: a circle. However, it’s an object of the **whole type**. This is important. The importance is pointed out by Symbol B. Symbol B is a pointer to Symbol A, only it uses a different interface. So it shows different systematics.*
 
@@ -1358,7 +1369,7 @@ If there is no interface line, the *object* determines *which* interface of the 
 
 
 
-|![](Symbol%20Language%20(2004).165.jpeg)|![](Symbol%20Language%20(2004).166.jpeg)|
+|![](images/Symbol%20Language%20(2004).165.jpeg)|![](images/Symbol%20Language%20(2004).166.jpeg)|
 | :-: | :-: |
 
 **Symbol A** redirects the type to **Type A**. In the first picture **Symbol A** redirects to **Object A**, in the second picture **Symbol A** redirects to **Object B**. **Symbol A**, **Object A** and **Object B** are all of the same type. However, **Object A** uses **Interface A** and **Object B** uses **Interface B**.
@@ -1367,7 +1378,7 @@ This means that the object line determines the interface sooner than the type li
 ##### **Interface Type Generiticy**
 Another very important use of the separation between types and interfaces is that you can choose any *object* that supports the interface, not worrying about its type.
 
-![](Symbol%20Language%20(2004).167.jpeg)
+![](images/Symbol%20Language%20(2004).167.jpeg)
 
 *D, E and F all have different types, while they all support interface A. G also supports interface A. G could point to D, E or F without problems, while D, E and F all have different types. However, G can only call the members of their joint interface. Specialized features of the types D, E and F are unavailable.*
 
@@ -1386,11 +1397,11 @@ When a symbol has an explicit type, it’s object can only be of that type. Havi
 ##### **Same Object, Same Type**
 Earlier on, in the section *Object Basics : Same Object, Same Type* I said that if you make two symbols the same object:
 
-![](Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025.png)
 
 they automatically are the same type, sort of like this:
 
-![](Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025.png)
 
 The topics of genericity show that these two pictures aren’t synonyms. In the second picture the type is explicit, while in the first picture the type is generic. The same goes for the other comparisons in that section.
 #### ***Delegated to Original in a Circularity***
@@ -1398,11 +1409,11 @@ When you annull a symbol’s type line, it usually regains its original type. Al
 
 In a circularity it’s different. When you delegate the type to a circularity, the whole circularity represents the type.
 
-![](Symbol%20Language%20(2004).168.jpeg)
+![](images/Symbol%20Language%20(2004).168.jpeg)
 
 When you break one of the lines in the circularity, you might think that the one loosing the line regains its original type. The reality is different: no symbols of the former circularity regains its original type.
 
-![](Symbol%20Language%20(2004).169.jpeg)
+![](images/Symbol%20Language%20(2004).169.jpeg)
 
 If you break one of the lines in the circularity, the one loosing the line comes to represent the type and the other members of the former circularity now delegate their type to it.
 #### ***Overview***
@@ -1441,7 +1452,7 @@ If you break one of the lines in the circularity, the one loosing the line comes
 ### **Peels**
 An additional notation technique exists to express information about lines. It’s called the peel notation.
 
-![](Symbol%20Language%20(2004).170.png)
+![](images/Symbol%20Language%20(2004).170.png)
 
 This symbol has three peels, which express information about a symbol’s lines. 
 
@@ -1466,65 +1477,65 @@ Alternative borders for shapes can tell something about the lines of the symbol.
 ##### **Extra Borders**
 The basic method used is to add extra borders to a shape:
 
-![](Symbol%20Language%20(2004).171.png)
+![](images/Symbol%20Language%20(2004).171.png)
 
-![](Symbol%20Language%20(2004).172.png)
+![](images/Symbol%20Language%20(2004).172.png)
 
 Each *peel* of the symbol represents a border that a lines *crosses*.
 
 The double circle (circle drawn with a double line) suggests that the circle has a line that crosses two borders. For instance:
 
-![](Symbol%20Language%20(2004).173.png)
+![](images/Symbol%20Language%20(2004).173.png)
 
 The triple circle suggests that three borders are crossed, for instance:
 
-![](Symbol%20Language%20(2004).174.png)
+![](images/Symbol%20Language%20(2004).174.png)
 
 or:
 
-![](Symbol%20Language%20(2004).175.png)
+![](images/Symbol%20Language%20(2004).175.png)
 
 or:
 
-![](Symbol%20Language%20(2004).176.png)
+![](images/Symbol%20Language%20(2004).176.png)
 
 So multiple peels of a symbol’s border don’t say all about the ‘travelings’ of a line. They only say how many borders are crossed.
 
 One *peel* represents one border crossed by a line. It can be any kind of border crossing, so a triple circle may mean:
 
 
-|<p></p><p></p><p>![](Symbol%20Language%20(2004).177.png)</p>|<p></p><p></p><p></p><p>=</p>|![](Symbol%20Language%20(2004).175.png)|
+|<p></p><p></p><p>![](images/Symbol%20Language%20(2004).177.png)</p>|<p></p><p></p><p></p><p>=</p>|![](images/Symbol%20Language%20(2004).175.png)|
 | - | - | - |
 
 just as well as:
 
 
-|<p></p><p></p><p>![](Symbol%20Language%20(2004).177.png)</p>|<p></p><p></p><p>=</p>|![](Symbol%20Language%20(2004).176.png)|
+|<p></p><p></p><p>![](images/Symbol%20Language%20(2004).177.png)</p>|<p></p><p></p><p>=</p>|![](images/Symbol%20Language%20(2004).176.png)|
 | - | - | - |
 
 You can do more with a symbol’s border, so that you can express more about its lines than just how many borders are crossed.
 ##### **Exits and Entrance Separation**
 The exits and entrances of a line are separated by additional lines:
 
-![](Symbol%20Language%20(2004).178.png)
+![](images/Symbol%20Language%20(2004).178.png)
 
 They are called *exit-enter* marks. The inner peels are exits and the outer peels are entrances. So in the example above there are two exits and then one entrance. The exit-enter mark is reminiscent of where you put an access symbol to denote direction: between the exits and entrances. First are the exits, so the inner peels represent exits. The outer peels represent entrances.
 
 With the exit-enter marks the symbol above could still mean:
 
 
-|<p></p><p>![](Symbol%20Language%20(2004).179.png)</p>|<p></p><p></p><p>=</p>|![](Symbol%20Language%20(2004).180.png)|
+|<p></p><p>![](images/Symbol%20Language%20(2004).179.png)</p>|<p></p><p></p><p>=</p>|![](images/Symbol%20Language%20(2004).180.png)|
 | - | - | - |
 
 but no longer: 
 
 
-|<p></p><p></p><p>![](Symbol%20Language%20(2004).179.png)</p>|<p></p><p></p><p>≠</p>|![](Symbol%20Language%20(2004).181.png)|
+|<p></p><p></p><p>![](images/Symbol%20Language%20(2004).179.png)</p>|<p></p><p></p><p>≠</p>|![](images/Symbol%20Language%20(2004).181.png)|
 | - | - | - |
 ##### **Line Type**
 Solid peels are used to express information about the *object line*. For type lines you use dashed peels and for interface lines you use dotted peels. For instance:
 
-![](Symbol%20Language%20(2004).170.png)
+![](images/Symbol%20Language%20(2004).170.png)
 
 This border expresses that the symbol’s object line crosses one border and that the type line crosses two.
 
@@ -1532,11 +1543,11 @@ The different looking peels are called *peel types*, analogous to the term *line
 
 I’ll continue with another example:
 
-![](Symbol%20Language%20(2004).182.png)
+![](images/Symbol%20Language%20(2004).182.png)
 
 This border suggests that the type line crosses two borders and the object line crosses three. It could for instance mean the following:
 
-![](Symbol%20Language%20(2004).183.png)
+![](images/Symbol%20Language%20(2004).183.png)
 
 *The blue symbol could be drawn having the peels in the previous picture.*
 
@@ -1544,66 +1555,66 @@ The object line exits one border, after which it enters two before it reaches it
 
 You can also draw exit-enter marks in a border with multiple peel types:
 
-![](Symbol%20Language%20(2004).184.png)
+![](images/Symbol%20Language%20(2004).184.png)
 
 When you express exit-enter distinction, you can put the object peels and type peels apart with some space or it might be hard to tell them apart:
 
-![](Symbol%20Language%20(2004).185.png)
+![](images/Symbol%20Language%20(2004).185.png)
 
 Not keeping space between the peel types when showing exit-enter marks can *not* cause ambiguity *if* you show the exit enter-marks for all peel types. But if you don’t show the exit-enter marks for all peel types, ambiguity could occur if an exit-enter mark is exactly in between peel types. The presence of another exit-enter mark annuls this ambiguity. When there is undoubted ambiguity, then it is obligatory to put space between peel types. In the other cases it’s not, but for readability it can be advised to put spacing in between peel types anyway, but if you don’t want to, you don’t have to.
 
 In another example:
 
-![](Symbol%20Language%20(2004).186.png)
+![](images/Symbol%20Language%20(2004).186.png)
 
 You draw out the peel notation with exit-enter marks as follows:
 
-![](Symbol%20Language%20(2004).187.png)
+![](images/Symbol%20Language%20(2004).187.png)
 
 The object line exits one borders and the type line exits two.
 
 Keeping space between the different peel types can also cause ambiguity, though, because in small symbols they could suggest that there are two symbols:
 
-![](Symbol%20Language%20(2004).187.png)
+![](images/Symbol%20Language%20(2004).187.png)
 
 In larger symbols you will see the difference more easily, though:
 
-![](Symbol%20Language%20(2004).188.png)
+![](images/Symbol%20Language%20(2004).188.png)
 ##### **Type of Crossed Border: Studs**
 To express the shapes of the symbols that are crossed, you can draw little shapes through the peel:
 
-![](Symbol%20Language%20(2004).189.jpeg)
+![](images/Symbol%20Language%20(2004).189.jpeg)
 
 You can repeat the shapes multiple times if you want:
 
-![](Symbol%20Language%20(2004).190.jpeg)
+![](images/Symbol%20Language%20(2004).190.jpeg)
 ##### **Name of Symbol Crossed**
 To express what symbol is entered or exited, you can put names with peels as follows:
 
-![](Symbol%20Language%20(2004).191.jpeg)
+![](images/Symbol%20Language%20(2004).191.jpeg)
 ##### **Exceptionals**
 ###### ***Single Solid Border***
 A single solid border:
 
-![](Symbol%20Language%20(2004).192.png)
+![](images/Symbol%20Language%20(2004).192.png)
 
 can suggest that its object line crosses one border. It could also just be an object symbol.
 
 To denote explicitly that the line crosses one border, you have to include an exit-enter mark so that you can see that it’s a border expressing line information:
 
 
-|<p>![](Symbol%20Language%20(2004).193.png)</p><p>*Enter one border*</p>|<p>![](Symbol%20Language%20(2004).194.png)</p><p>*Exit one border*</p>|
+|<p>![](images/Symbol%20Language%20(2004).193.png)</p><p>*Enter one border*</p>|<p>![](images/Symbol%20Language%20(2004).194.png)</p><p>*Exit one border*</p>|
 | :-: | :-: |
 
 So in that case you are forced to draw out if it’s an exit or entrance. If you draw peels different from borders, thinner for instance, you may ignore this rule.
 ###### ***No Crossings***
 To express that an object symbol has a line that enters nor exits any border you use the following notation:
 
-![](Symbol%20Language%20(2004).195.png)
+![](images/Symbol%20Language%20(2004).195.png)
 
 Which can represent any of the symbols of:
 
-![](Symbol%20Language%20(2004).196.png)
+![](images/Symbol%20Language%20(2004).196.png)
 
 Which is, by the way, not used a lot.
 ##### **Peels for Other Symbols.**
@@ -1628,32 +1639,32 @@ A border with peels can also express more abstract facts. Here are some of such 
 With a simple alternative shape border you can express that a symbol has a line of a certain type.
 
 
-|<p>![](Symbol%20Language%20(2004).197.png)</p><p>*Double solid object symbol:*</p><p>*object symbol  with an object line*</p>|<p>![](Symbol%20Language%20(2004).198.png)</p><p>*Dashed object symbol:*</p><p>*object symbol with a type line*</p>|<p>![](Symbol%20Language%20(2004).199.png)</p><p>*Dotted object symbol:*</p><p>*object symbol with an interface line*</p>|
+|<p>![](images/Symbol%20Language%20(2004).197.png)</p><p>*Double solid object symbol:*</p><p>*object symbol  with an object line*</p>|<p>![](images/Symbol%20Language%20(2004).198.png)</p><p>*Dashed object symbol:*</p><p>*object symbol with a type line*</p>|<p>![](images/Symbol%20Language%20(2004).199.png)</p><p>*Dotted object symbol:*</p><p>*object symbol with an interface line*</p>|
 | :-: | :-: | :-: |
-|<p></p><p></p>|<p>![](Symbol%20Language%20(2004).200.png)</p><p>*Double procedure symbol:*</p><p>*procedure symbol with a reference line*</p>|<p>![](Symbol%20Language%20(2004).201.png)</p><p></p><p>*Dotted procedure symbol:<br>procedure symbol with an interface line*</p>||
+|<p></p><p></p>|<p>![](images/Symbol%20Language%20(2004).200.png)</p><p>*Double procedure symbol:*</p><p>*procedure symbol with a reference line*</p>|<p>![](images/Symbol%20Language%20(2004).201.png)</p><p></p><p>*Dotted procedure symbol:<br>procedure symbol with an interface line*</p>||
 
 The solid border needs to be doubled, because otherwise you don’t see that information about the line is expressed. When you denote that a symbol has both an object line as well as a type line, you can use a single solid peel, because then it’s clear that you’re expressing line information. 
 
-![](Symbol%20Language%20(2004).202.png)
+![](images/Symbol%20Language%20(2004).202.png)
 
 When denoting the mere existance of a line, the destination of the line is undetermined, but it’s is usually just outside the parent. This assumption is analogous to the first line direction rule: the outwards rule. A line simply most commonly points outwards and most commonly only crosses a single border.
 ###### ***Symbol’s Line Crosses Many Borders***
 To denote that many borders are crossed, usually three peels are used. So three peels come in the place of where otherwise an exact amount of peels is put. A line that crosses many borders is also said to have a far away line target.
 
 
-|<p>![](Symbol%20Language%20(2004).203.png)</p><p>*Triple solid object symbol:*</p><p>*object symbol  with a far away object line target*</p>|<p>![](Symbol%20Language%20(2004).203.png)</p><p>*Triple dashed object symbol:*</p><p>*object symbol with a far away  type line target*</p>|<p>![](Symbol%20Language%20(2004).202.png)</p><p>*Triple dotted object symbol:*</p><p>*object symbol with a far away  interface line target*</p>|
+|<p>![](images/Symbol%20Language%20(2004).203.png)</p><p>*Triple solid object symbol:*</p><p>*object symbol  with a far away object line target*</p>|<p>![](images/Symbol%20Language%20(2004).203.png)</p><p>*Triple dashed object symbol:*</p><p>*object symbol with a far away  type line target*</p>|<p>![](images/Symbol%20Language%20(2004).202.png)</p><p>*Triple dotted object symbol:*</p><p>*object symbol with a far away  interface line target*</p>|
 | :-: | :-: | :-: |
-|<p></p><p></p>|<p>![](Symbol%20Language%20(2004).204.png)</p><p>*Triple square:*</p><p>*procedure symbol with a far away reference line target*</p>|<p>![](Symbol%20Language%20(2004).205.png)</p><p></p><p>*Triple dotted square:<br>procedure symbol with a far away interface line target*</p>||
+|<p></p><p></p>|<p>![](images/Symbol%20Language%20(2004).204.png)</p><p>*Triple square:*</p><p>*procedure symbol with a far away reference line target*</p>|<p>![](images/Symbol%20Language%20(2004).205.png)</p><p></p><p>*Triple dotted square:<br>procedure symbol with a far away interface line target*</p>||
 ###### ***Other Abstract Meanings***
 I will simply give a sum up of the other abstract meanings I’ve mentioned and give the peel notation for them.
 
 
-|<p>![](Symbol%20Language%20(2004).194.png)</p><p>*Line exits borders.*</p>|<p>![](Symbol%20Language%20(2004).193.png)</p><p>*Line enters borders.*</p>|
+|<p>![](images/Symbol%20Language%20(2004).194.png)</p><p>*Line exits borders.*</p>|<p>![](images/Symbol%20Language%20(2004).193.png)</p><p>*Line enters borders.*</p>|
 | :-: | :-: |
-|<p></p><p>![](Symbol%20Language%20(2004).206.png)</p><p>*Line exits many borders.*</p>|<p></p><p>![](Symbol%20Language%20(2004).207.png)</p><p>*Line enters many borders.*</p>|
-|<p></p><p>![](Symbol%20Language%20(2004).208.png)</p><p>*Line exits and enters borders.*</p>|<p></p><p>![](Symbol%20Language%20(2004).209.png)</p><p>*Line exits many borders and enters many borders.*</p>|
-|<p></p><p>![](Symbol%20Language%20(2004).207.png)</p><p>*Line exits many borders and enters borders.*</p>|<p></p><p>![](Symbol%20Language%20(2004).207.png)</p><p>*Line exits borders and enters many borders.*</p>|
-|<p></p><p>![](Symbol%20Language%20(2004).210.jpeg)</p><p>*Line exits a triangle.*</p>|<p></p><p>![](Symbol%20Language%20(2004).211.jpeg)</p><p>*Line enters a triangle.*</p>|
+|<p></p><p>![](images/Symbol%20Language%20(2004).206.png)</p><p>*Line exits many borders.*</p>|<p></p><p>![](images/Symbol%20Language%20(2004).207.png)</p><p>*Line enters many borders.*</p>|
+|<p></p><p>![](images/Symbol%20Language%20(2004).208.png)</p><p>*Line exits and enters borders.*</p>|<p></p><p>![](images/Symbol%20Language%20(2004).209.png)</p><p>*Line exits many borders and enters many borders.*</p>|
+|<p></p><p>![](images/Symbol%20Language%20(2004).207.png)</p><p>*Line exits many borders and enters borders.*</p>|<p></p><p>![](images/Symbol%20Language%20(2004).207.png)</p><p>*Line exits borders and enters many borders.*</p>|
+|<p></p><p>![](images/Symbol%20Language%20(2004).210.jpeg)</p><p>*Line exits a triangle.*</p>|<p></p><p>![](images/Symbol%20Language%20(2004).211.jpeg)</p><p>*Line enters a triangle.*</p>|
 
 You can come up with other abstract meanings for peel notations using your imagination.
 ##### **Expressable in the Symbol Border**
@@ -1690,19 +1701,19 @@ So don’t use shape peels… unless the reasons above weigh out. <zwaarder wege
 #### ***Line Peels***
 Peel notation can be applied to lines just as well. For example: a double line suggests that the line crosses two borders.
 
-![](Symbol%20Language%20(2004).212.png)
+![](images/Symbol%20Language%20(2004).212.png)
 
 You can use line peels when a line’s destination is out of view or if it’s not easy to find due to complexity of the diagram.
 
 When you use line peels, shape peels are usually not used, but no rule stops you from using both.
 
-![](Symbol%20Language%20(2004).213.png)
+![](images/Symbol%20Language%20(2004).213.png)
 
 Don’t put an exit enter mark through a line, or it will seem to be an access symbol: one of the exit-enter marks is left out in the diagram above for this purpose.
 
 In the peels of a *line* you can’t express exit-enter separation or the type of symbol crossed. You can however express that a line with a single peel expresses the amount of crossed borders, by using an extra mark:
 
-![](Symbol%20Language%20(2004).214.png)
+![](images/Symbol%20Language%20(2004).214.png)
 
 The little blue mark with the type line denotes that the line expresses the amount of borders crossed: one. If the line has more than one peel then this *crossing mark* is not required anymore. The crossing mark is analogous to the exit-enter mark you are required to add to a symbol with a single peel in order to say that the line crosses one border. If you draw line peels different from normal lines, thinner for instance, you can leave out the crossing mark.
 #### ***Ambiguity In Peels***
@@ -1712,7 +1723,11 @@ Here is a list of a few ambiguity risks when using peels:
 - Line peels may suggest the existance of multiple lines.
 
 Ambiguity risks will be widely covered in the ‘Diagram Metrics’ in the book ‘Symbol Language Advanced’.
-## ***Executions & Parameters***
+
+
+Executions & Parameters
+-----------------------
+
 This section discusses all issues around executing procedures and using parameters.
 ### **Terms**
 Here I introduce basic terms in the area of executions and parameters. Here’s a quick reference list.
@@ -1734,35 +1749,35 @@ Here I introduce basic terms in the area of executions and parameters. Here’s 
 #### ***Reference***
 The following are procedure references:
 
-![](Symbol%20Language%20(2004).215.png)
+![](images/Symbol%20Language%20(2004).215.png)
 
 It’s a square that is redirected. It’s always a *square* with a *reference line*. It is a procedure that redirects, but *does not* execute. It can point either to a square or a diamond.
 #### ***Call***
 The following are calls:
 
-![](Symbol%20Language%20(2004).216.png)
+![](images/Symbol%20Language%20(2004).216.png)
 
 It’s a diamond that is redirected. It’s always a *diamond* with a *reference line*. It executes a procedure defined elsewhere. Therefore it is a call. It can point either to a square or a diamond.
 #### ***Definition***
 A definition is a procedure symbol with no reference line at all.
 
-![](Symbol%20Language%20(2004).217.png)
+![](images/Symbol%20Language%20(2004).217.png)
 
 The reference line should not exist at all, not just not be shown. It’s a definition, because the contents of the procedure aren’t defined elsewhere, but defined in the symbol itself.
 #### ***Clause***
 A procedure symbol inside another procedure symbol:
 
-![](Symbol%20Language%20(2004).218.jpeg)
+![](images/Symbol%20Language%20(2004).218.jpeg)
 
 without a reference line is called a clause.
 
 A clause is a definition contained in a procedure:
 
-![](Symbol%20Language%20(2004).219.png)
+![](images/Symbol%20Language%20(2004).219.png)
 
 This type of definition is usually not called a definition. The clause must be directly contained by a procedure. So this is not a clause:
 
-![](Symbol%20Language%20(2004).220.png)
+![](images/Symbol%20Language%20(2004).220.png)
 
 The clause can be a diamond or a square. Its container can also be a diamond as well as a square. A clause does not have a reference line, or it would have been a reference or a call, not a clause.
 #### ***Active and Inactive***
@@ -1771,7 +1786,7 @@ A diamond executes, a square does not. A diamond is said to be active, while a s
 A clause that is a diamond, is called an active clause:
 
 
-|![](Symbol%20Language%20(2004).221.png)|![](Symbol%20Language%20(2004).222.png)|
+|![](images/Symbol%20Language%20(2004).221.png)|![](images/Symbol%20Language%20(2004).222.png)|
 | :-: | :-: |
 
 It’s called active, because it executes.
@@ -1779,28 +1794,28 @@ It’s called active, because it executes.
 An inactive clause is a clause that doesn’t execute. So it’s a clause that is a square:
 
 
-|![](Symbol%20Language%20(2004).223.png)|![](Symbol%20Language%20(2004).224.png)|
+|![](images/Symbol%20Language%20(2004).223.png)|![](images/Symbol%20Language%20(2004).224.png)|
 | :-: | :-: |
 
 It won’t execute unless you call it.
 #### ***Sub Clause***
 A sub clause is a clause inside a clause. So it’s a procedure symbol without a reference line in a procedure symbol without a reference line in a procedure symbol, for instance:
 
-![](Symbol%20Language%20(2004).225.png)
+![](images/Symbol%20Language%20(2004).225.png)
 
 It doesn’t matter whether any of the symbols is a square or a diamond.
 #### ***Sub Procedure***
 A sub procedure is any procedure symbol inside another procedure symbol.
 
-![](Symbol%20Language%20(2004).226.png)
+![](images/Symbol%20Language%20(2004).226.png)
 
 But usually it’s only the diamonds that are referred to as sub procedures. That’s because the execution of a procedure is made up of the execution of it’s contained diamonds combined.
 
-![](Symbol%20Language%20(2004).227.png)
+![](images/Symbol%20Language%20(2004).227.png)
 #### ***Parameter and Argument***
 Parameters and arguments are the *public* members of a procedure. In a square they’re called parameters. In a diamond they’re called arguments.
 
-![](Symbol%20Language%20(2004).228.png)
+![](images/Symbol%20Language%20(2004).228.png)
 
 A parameter is never created. An argument is an object that exists when the diamond executes. Therefore, an argument is a real created object, while a parameter is only a blue-print for it.
 
@@ -1830,7 +1845,7 @@ The value of **B** is copied to **A**. The state assignment does not make **A** 
 
 To make **A** and **B** represent the same *object*, you have to do a *line assignment*:
 
-**A ![](Symbol%20Language%20(2004).229.png) B**   
+**A ![](images/Symbol%20Language%20(2004).229.png) B**   
 
 *Pronounce: A’s object is B*
 
@@ -1838,46 +1853,46 @@ To make **A** and **B** represent the same *object*, you have to do a *line assi
 
 This is an *object* line assignment. The object line of **A** is set to symbol **B**. The result is that **A** points to **B**.
 
-The operator **=** is not reserved for state assignment. Instead, the operator for state assignment is commonly: ![](Symbol%20Language%20(2004).230.png).
+The operator **=** is not reserved for state assignment. Instead, the operator for state assignment is commonly: ![](images/Symbol%20Language%20(2004).230.png).
 
 A simple diagram notation of an assignment is as follows:
 
 
-|<p>![](Symbol%20Language%20(2004).231.jpeg)</p><p>*State assigment*</p>|<p>![](Symbol%20Language%20(2004).232.jpeg)</p><p>*Object assignment*</p>|
+|<p>![](images/Symbol%20Language%20(2004).231.jpeg)</p><p>*State assigment*</p>|<p>![](images/Symbol%20Language%20(2004).232.jpeg)</p><p>*Object assignment*</p>|
 | :-: | :-: |
 
 Or:
 
 
-|<p>![](Symbol%20Language%20(2004).233.jpeg)</p><p>*State assigment*</p>|<p>![](Symbol%20Language%20(2004).234.jpeg)</p><p>*Object assignment*</p>|
+|<p>![](images/Symbol%20Language%20(2004).233.jpeg)</p><p>*State assigment*</p>|<p>![](images/Symbol%20Language%20(2004).234.jpeg)</p><p>*Object assignment*</p>|
 | :-: | :-: |
 
 The result of object assignment:
 
-![](Symbol%20Language%20(2004).235.jpeg)
+![](images/Symbol%20Language%20(2004).235.jpeg)
 
 is:
 
-![](Symbol%20Language%20(2004).236.jpeg)
+![](images/Symbol%20Language%20(2004).236.jpeg)
 
 But you can also view it the other way around. The following:
 
-![](Symbol%20Language%20(2004).237.jpeg)
+![](images/Symbol%20Language%20(2004).237.jpeg)
 
 Is the result of an object assignment:
 
-![](Symbol%20Language%20(2004).235.jpeg)
+![](images/Symbol%20Language%20(2004).235.jpeg)
 
 This is an important way of viewing it, because most of the times you’ll only see the result of an assignment and not the assignment operation itself. The assignment operation *is there*, however. Therefore an even simpler notation of assignment is not to show the assignment at all.
 
 Unfortunately, the result of *state* assignment is not visible in diagram code as a line, so you have to display the explicit assignment.
 
-![](Symbol%20Language%20(2004).238.jpeg)
+![](images/Symbol%20Language%20(2004).238.jpeg)
 
 A shorthand, quick notation of an assignment is the following:
 
 
-|![](Symbol%20Language%20(2004).239.png)|<p></p><p>*=*</p>|![](Symbol%20Language%20(2004).240.png)|
+|![](images/Symbol%20Language%20(2004).239.png)|<p></p><p>*=*</p>|![](images/Symbol%20Language%20(2004).240.png)|
 | :-: | :-: | :-: |
 
 There are more ways to draw out an assignment, but the ones here are by far the simplest and most easy to understand. Other notations are covered in another chapter.
@@ -1902,7 +1917,7 @@ Argument assignment takes place in the *prolog*. But *setting* the argument also
 
 An assignment call:
 
-![](Symbol%20Language%20(2004).241.jpeg)
+![](images/Symbol%20Language%20(2004).241.jpeg)
 
 *consults* the argument to *write*: *reads* the argument to *write*.
 
@@ -1916,16 +1931,16 @@ An assignment as such, requires you to get a value from one place and set the ar
 #### ***Reading Arguments***
 Reading arguments after execution requires storing the values of the arguments in other objects. This is because after execution, the executor will destroy and the arguments will no longer exist. Therefore, to retain the values of the arguments, you must copy the information to other objects. The information of a read argument can be the state of the argument. In that case, to retain it, you need to copy the state of the argument to another object. 
 
-![](Symbol%20Language%20(2004).242.jpeg)
+![](images/Symbol%20Language%20(2004).242.jpeg)
 
 The information of a read argument can also be the line target of the argument, but this is hardly ever done.
 
-![](Symbol%20Language%20(2004).243.jpeg)
+![](images/Symbol%20Language%20(2004).243.jpeg)
 
 If you do do it, then you’d better copy the final target of the argument to some place. I can give a notation of the effect of this assignment:
 
 
-|<p>![](Symbol%20Language%20(2004).244.jpeg)</p><p>*Argument points to A*</p>|<p>![](Symbol%20Language%20(2004).245.jpeg)</p><p>*Line target copied*</p>|<p>![](Symbol%20Language%20(2004).245.jpeg)</p><p>*Diamond destroys. Argument’s line is annulled. Line target information is preserved.*</p>|
+|<p>![](images/Symbol%20Language%20(2004).244.jpeg)</p><p>*Argument points to A*</p>|<p>![](images/Symbol%20Language%20(2004).245.jpeg)</p><p>*Line target copied*</p>|<p>![](images/Symbol%20Language%20(2004).245.jpeg)</p><p>*Diamond destroys. Argument’s line is annulled. Line target information is preserved.*</p>|
 | :-: | :-: | :-: |
 
 A detailed notation of this assignment is beyond the scope of this chapter. This method for procedure output is hardly ever used. Other means are adopted to have procedure output.
@@ -1938,7 +1953,7 @@ The procedure output method above is hardly used ever used. That’s because you
 
 This, however requires you to *write* the line of an argument.
 
-![](Symbol%20Language%20(2004).246.jpeg)
+![](images/Symbol%20Language%20(2004).246.jpeg)
 
 Nothing is *read* in the epilog in this case. Even though the argument functions as *output*, it’s still a *write* argument.
 
@@ -1979,17 +1994,17 @@ That way, the object seems to be the argument itself, even though you’re actua
 
 In diagram code, the declaration of the object, its creation and its being passed to the procedure, looks like this: 
 
-![](Symbol%20Language%20(2004).247.jpeg)
+![](images/Symbol%20Language%20(2004).247.jpeg)
 
 You can let the separate object seem to be the argument itself, by using a peel notation:
 
-![](Symbol%20Language%20(2004).248.jpeg)
+![](images/Symbol%20Language%20(2004).248.jpeg)
 
 The creation will still be visible, but you’ve excluded the line, without loosing the information that it’s really an external object. 
 
 Ofcourse you don’t have to show the implicit creation.
 
-![](Symbol%20Language%20(2004).249.jpeg)
+![](images/Symbol%20Language%20(2004).249.jpeg)
 
 Then you just see that the object is created, and you will be satisfied knowing only *that* it is created, not where and when. This is just about exactly the effect of:
 
@@ -2015,11 +2030,11 @@ Apart from writing in the prolog and reading in the epilog, there’s a third pe
 
 The diagrammatic effect of this is the following. A member can be accessed by the diamond that contains it, and by all its sub diamonds:
 
-![](Symbol%20Language%20(2004).250.png)
+![](images/Symbol%20Language%20(2004).250.png)
 
 I said that procedures called by a procedure can access its arguments. That suggests that the procedure that accesses the member can be somewhere else than inside the member’s diamond:
 
-![](Symbol%20Language%20(2004).251.png)
+![](images/Symbol%20Language%20(2004).251.png)
 
 Note, however, that it’s not the definition that’s accessing member **m**. It’s the call that’s accessing member **m**, and the call is contained inside the diamond that contains member **m**.
 
@@ -2027,30 +2042,30 @@ More rules on that are covered in the *Execution Basics* section.
 #### ***Distinguishing Assignment Source and Target***
 There’s one more ambiguity in argument access that I will resolve here. In an assignment call in diagram as follows:
 
-![](Symbol%20Language%20(2004).252.png)
+![](images/Symbol%20Language%20(2004).252.png)
 
-there isn’t anything that tells which is the source of the assignment and which is the target: is it **Procedure . B ![](Symbol%20Language%20(2004).229.png) A** or is it **A ![](Symbol%20Language%20(2004).229.png) Procedure . B** ? You could name the arguments of the ![](Symbol%20Language%20(2004).229.png) (*object is*) call: name them **Get** and **Set** to make out the difference, but usually another method is adopted.
+there isn’t anything that tells which is the source of the assignment and which is the target: is it **Procedure . B ![](images/Symbol%20Language%20(2004).229.png) A** or is it **A ![](images/Symbol%20Language%20(2004).229.png) Procedure . B** ? You could name the arguments of the ![](images/Symbol%20Language%20(2004).229.png) (*object is*) call: name them **Get** and **Set** to make out the difference, but usually another method is adopted.
 
-Assuming the assignment is really **Procedure . B ![](Symbol%20Language%20(2004).229.png) A**, the effect of the assignment is:
+Assuming the assignment is really **Procedure . B ![](images/Symbol%20Language%20(2004).229.png) A**, the effect of the assignment is:
 
-![](Symbol%20Language%20(2004).253.png)
+![](images/Symbol%20Language%20(2004).253.png)
 
 To show the ‘direction’ of the assignment, the access symbol of the resulting line is shown in the assignment call:
 
-![](Symbol%20Language%20(2004).254.png)
+![](images/Symbol%20Language%20(2004).254.png)
 
-In this case, the access symbol is about the *effect* of the assignment, not about the direction of ![](Symbol%20Language%20(2004).229.png)’s **Set** argument.
+In this case, the access symbol is about the *effect* of the assignment, not about the direction of ![](images/Symbol%20Language%20(2004).229.png)’s **Set** argument.
 
 In the case of state assignment, the result is not a line, so logically the state assignment call can’t ‘borrow’ the access symbol from the resultant line. However, in line assignment, the target of the line, the source of the assignment (!), gets the access symbol. Conversely, the source of the state assignment gets an access symbol:
 
-![](Symbol%20Language%20(2004).255.png)
+![](images/Symbol%20Language%20(2004).255.png)
 
 The rule is: the source of the assignment gets the access symbol. An oddity is that the *source* of a line assignment is the *target* of the resultant line.
 
 Direction can be determined by assumption of the most common situation. Therefore, the access symbol can be left out it the resultant line is outwards.
 
 
-|![](Symbol%20Language%20(2004).256.png)|![](Symbol%20Language%20(2004).257.png)|
+|![](images/Symbol%20Language%20(2004).256.png)|![](images/Symbol%20Language%20(2004).257.png)|
 | :-: | :-: |
 
 For state assignments it’s adised to always show the access symbol. 
@@ -2064,11 +2079,11 @@ This section covers some basic execution situations. Each situation has certain 
 
 <Deze inleiding is te denigrerend over de sectie>
 #### ***Squares and Diamonds***
-![](Symbol%20Language%20(2004).258.jpeg)
+![](images/Symbol%20Language%20(2004).258.jpeg)
 
 A square doesn’t execute. Well, they only execute when you call it.
 
-![](Symbol%20Language%20(2004).259.jpeg)
+![](images/Symbol%20Language%20(2004).259.jpeg)
 
 *A is a call to B.*
 
@@ -2076,34 +2091,34 @@ But then again: A is the one that’s executing, not B. So diamonds execute, and
 #### ***Diamonds Execute When Direct Parent Executes***
 A diamond doesn’t execute automatically. It only executes when the parent symbol executes.
 
-![](Symbol%20Language%20(2004).260.jpeg)
+![](images/Symbol%20Language%20(2004).260.jpeg)
 
 *A executes only as B executes.*
 
 So diamonds inside squares don’t really execute.
 
-![](Symbol%20Language%20(2004).261.jpeg)
+![](images/Symbol%20Language%20(2004).261.jpeg)
 
 But if you call B, then you get the following:
 
-![](Symbol%20Language%20(2004).262.jpeg)
+![](images/Symbol%20Language%20(2004).262.jpeg)
 
 Actually, The letters distinguish the different symbols. If you only use letters to distinguish which procedure definition it’s about, you get the following:
 
-![](Symbol%20Language%20(2004).263.jpeg)
+![](images/Symbol%20Language%20(2004).263.jpeg)
 
 So in that sense, diamond A does execute. But not the definition executes, only the call executes.
 #### ***Diamonds Can only be Directly Inside a Procedure Symbol, Diamonds Can’t be Directly Inside an Object Symbol***
 Because execution can only take place in a procedure, a diamond can’t be directly inside an object Symbol
 
-![](Symbol%20Language%20(2004).264.jpeg)
+![](images/Symbol%20Language%20(2004).264.jpeg)
 
 #### ***You Can Only Access Members of a Diamond***
 You can (usually) only access members of a diamond, because a square is never created, just like you can’t access members of a non created object.
 
-![](Symbol%20Language%20(2004).265.jpeg)
+![](images/Symbol%20Language%20(2004).265.jpeg)
 
-![](Symbol%20Language%20(2004).266.jpeg)
+![](images/Symbol%20Language%20(2004).266.jpeg)
 #### ***You can Only Access Members of a Diamond, while the Diamond is executing***
 Because a diamond is only created when it’s executing, you can only access members when the diamond is in execution.
 
@@ -2119,13 +2134,13 @@ In fact the diamond executor will only write members just before the call and wi
 #### ***Accessing a Diamond Member During a Call***
 So how will you access a diamond member *during* a call? Well, usually only procedures called by the executing diamond can access the call parent.
 
-![](Symbol%20Language%20(2004).267.jpeg)
+![](images/Symbol%20Language%20(2004).267.jpeg)
 
 Diamond A executes, then diamond B executes and accesses a member of diamond A. It’s not the procedure definition, the square, that accesses a member of diamond A, but it’s the specific call to the procedure that access diamond A. So usually you’ll only see child diamonds accessing parent diamonds, on top of the more common situation of write access before a call and read access after.
 
 Multi-threading, which is …, can also make you able to access a diamond in execution, but this is usually not a good idea. Restrictions should be opposed to multi-threading to avoid such situations.
 
-![](Symbol%20Language%20(2004).268.jpeg)
+![](images/Symbol%20Language%20(2004).268.jpeg)
 
 Two sibling procedures are executing at the same time, in different threads, which makes it possible for one executing procedure to access the other. Thread control makes it possible to avoid such volatile situations.
 
@@ -2135,7 +2150,7 @@ Two sibling procedures are executing at the same time, in different threads, whi
 
 <consider the example of diamond reference to diamond in the main argument reference example >
 #### ***Passing an object reference to a procedure***
-![](Symbol%20Language%20(2004).269.jpeg)
+![](images/Symbol%20Language%20(2004).269.jpeg)
 
 When you pass an object reference to a procedure, the procedure can access the object.
 
@@ -2153,7 +2168,7 @@ It’s important that the procedure itself sets lines, because the line targets 
 #### ***Clause Access***
 Clauses have special access privileges compared to delegated procedure symbols.
 
-![](Symbol%20Language%20(2004).270.jpeg)
+![](images/Symbol%20Language%20(2004).270.jpeg)
 
 <Bad explanation following>
 
@@ -2165,13 +2180,13 @@ Squares formally can’t have outward lines, except for static members. There ar
 #### ***Passing a procedure reference***
 When you pass a procedure referece to a child procedure:
 
-![](Symbol%20Language%20(2004).271.jpeg)
+![](images/Symbol%20Language%20(2004).271.jpeg)
 
 The child can call the referenced procedure at will.
 #### ***The If example***
 A great application of that is the If procedure.
 
-![](Symbol%20Language%20(2004).272.jpeg)
+![](images/Symbol%20Language%20(2004).272.jpeg)
 
 Procedure A passes Clause A and Clause B to Procedure B, along with an object that serves as the condition. Depending on the state of the condition, Clause A is executed or Clause B. So Procedure B gets to decide which clause executes.
 
@@ -2198,7 +2213,7 @@ A diamond pointing to another diamond: it’s a call to a call. both diamonds re
 ##### **3**
 If eventually the original caller is called again, with one of its calls in progress... hmm... can you call upon a call on hold, because it is waiting for one of its calls to finish? Its public objects, maybe, but you can’t execute anything in it. 
 
-![](Symbol%20Language%20(2004).273.png)
+![](images/Symbol%20Language%20(2004).273.png)
 ##### **4**
 (*Implicit* embedded procedure reference causes a separate implicit call)
 ##### **5**
@@ -2210,15 +2225,15 @@ If eventually the original caller is called again, with one of its calls in prog
 
 A procedure symbol can ony have a call line if it’s directly inside another procedure. Usually the call line first exits the procedure that contains the call. In other words: a call line usually directly exits a square.
 
-![](Symbol%20Language%20(2004).274.png)
+![](images/Symbol%20Language%20(2004).274.png)
 
 Only when you call a clause or an embedded procedure reference, the line doesn’t exit the procedure first:
 
-![](Symbol%20Language%20(2004).275.jpeg)
+![](images/Symbol%20Language%20(2004).275.jpeg)
 
 *Call to clause*
 
-![](Symbol%20Language%20(2004).276.jpeg)
+![](images/Symbol%20Language%20(2004).276.jpeg)
 
 *Call an internal procedure reference*
 
@@ -2233,15 +2248,15 @@ Only when you call a clause or an embedded procedure reference, the line doesn�
 ###### ***Referencing Square Members: Implicit Call***
 It is really only allowed to reference members of diamonds:
 
-![](Symbol%20Language%20(2004).277.jpeg)
+![](images/Symbol%20Language%20(2004).277.jpeg)
 
 When you do reference a square’s member:
 
-![](Symbol%20Language%20(2004).278.jpeg)
+![](images/Symbol%20Language%20(2004).278.jpeg)
 
 You’re actually seeing only part of the diagram. The reference to a square member actually creates a sibling diamond which is a call to the square:
 
-![](Symbol%20Language%20(2004).277.jpeg)
+![](images/Symbol%20Language%20(2004).277.jpeg)
 
 The diamond missing when referencing the square member is called the implicit call to the square.
 
@@ -2249,27 +2264,27 @@ Even though the Symbol code *really* *defines* a reference to a square member, w
 
 The implied diamond always becomes the sibbling of the reference to a member. In a more encapsulative situation, this:
 
-![](Symbol%20Language%20(2004).279.jpeg)
+![](images/Symbol%20Language%20(2004).279.jpeg)
 
 Is the implicit notation of this:
 
-![](Symbol%20Language%20(2004).280.jpeg)
+![](images/Symbol%20Language%20(2004).280.jpeg)
 
 The reference to a square member implicitly creates a call to the square right next to it.
 
 Whenever you reference a square member, an implicit call is made.
 
-![](Symbol%20Language%20(2004).281.jpeg)
+![](images/Symbol%20Language%20(2004).281.jpeg)
 
 \=
 
-![](Symbol%20Language%20(2004).282.jpeg)
+![](images/Symbol%20Language%20(2004).282.jpeg)
 
 <Add some access symbols>
 
 If you want to access members of a procedure using only one call, you have to explicitly notate the diamond that is the call.
 
-![](Symbol%20Language%20(2004).283.jpeg)
+![](images/Symbol%20Language%20(2004).283.jpeg)
 
 <Add some access symbols>
 
@@ -2277,36 +2292,36 @@ But the accesses can only only take place just before the call and just after.
 
 But as I said: child diamonds can access their parent diamond’s members if the parent diamonds allows it.
 
-![](Symbol%20Language%20(2004).284.jpeg)
+![](images/Symbol%20Language%20(2004).284.jpeg)
 
 ###### ***An object symbol as a pointer to a procedure symbol: Implicit return value reference.***
 You can also let an object symbol point to a procedure symbol.
 
-![](Symbol%20Language%20(2004).285.jpeg)
+![](images/Symbol%20Language%20(2004).285.jpeg)
 
 In that case you’re actually implicitly referencing the return value.
 
-![](Symbol%20Language%20(2004).286.jpeg)
+![](images/Symbol%20Language%20(2004).286.jpeg)
 ###### ***Implicit Call and Implicit Return Value Reference***
 If an object symbol is a reference to a square, it’s both an implicit call and an implicit return value reference.
 
-![](Symbol%20Language%20(2004).287.jpeg)
+![](images/Symbol%20Language%20(2004).287.jpeg)
 
-![](Symbol%20Language%20(2004).288.jpeg)
+![](images/Symbol%20Language%20(2004).288.jpeg)
 
-![](Symbol%20Language%20(2004).289.jpeg)
+![](images/Symbol%20Language%20(2004).289.jpeg)
 
 in the second picture you see the explicit call. The third picture adds the explicit return value reference. You don’t first do the explicit call and then the explicit return value reference. That order is totally arbitrary, you can also see it like this:
 
-![](Symbol%20Language%20(2004).287.jpeg)
+![](images/Symbol%20Language%20(2004).287.jpeg)
 
-![](Symbol%20Language%20(2004).290.jpeg)
+![](images/Symbol%20Language%20(2004).290.jpeg)
 
-![](Symbol%20Language%20(2004).289.jpeg)
+![](images/Symbol%20Language%20(2004).289.jpeg)
 ###### ***Reference to Other Out Parameters***
 An object reference to a procedure can only be a reference to the procedure’s return value. If you want to reference other out paramters, you have to reference them explicitly.
 
-![](Symbol%20Language%20(2004).291.jpeg)
+![](images/Symbol%20Language%20(2004).291.jpeg)
 
 <o = out, r = return>
 
@@ -2329,7 +2344,7 @@ The steps of this process can be described as follows:
 
 The out parameter of **Get** is called **Out** and the in parameter of **Set** is called **In**. In diagram code, that is:
 
-![](Symbol%20Language%20(2004).292.png)
+![](images/Symbol%20Language%20(2004).292.png)
 
 *Excplicit calls*
 
@@ -2341,7 +2356,7 @@ In text code you can write the two calls in a single code line:
 
 **Get . Out** is assigned to the parameter of **Set**. You’re referencing a parameter of **Get** without displaying the call. To read the **Out** parameter of **Get** requires a call and this call is implicitly made. In the text code line above you don’t see that **Get** is called. **Get . Out** is simply referenced. You can apply the same to diagram code:
 
-![](Symbol%20Language%20(2004).293.png)
+![](images/Symbol%20Language%20(2004).293.png)
 
 *Implicit call*
 
@@ -2355,7 +2370,7 @@ You can see that the **Out** parameter of the **Get** procedure *definition* is 
 
 **Get**’s symbolizing its return value can also be applied to diagram code:
 
-![](Symbol%20Language%20(2004).294.png)
+![](images/Symbol%20Language%20(2004).294.png)
 
 *Implicit return value reference, implicit call*
 
@@ -2366,7 +2381,7 @@ The diagram above looks far simpler than the first diagram. So does the text cod
 
 In the diagram above, the return value is implicitly referenced by pointing to the procedure definition. You can also implicitly reference the return value by pointing to a procedure call square. That way, the call is explicit, but the return value reference is implicit.
 
-![](Symbol%20Language%20(2004).295.png)
+![](images/Symbol%20Language%20(2004).295.png)
 
 *Explicit cal, implicit return value reference*
 
@@ -2374,13 +2389,13 @@ In the diagram above, the return value is implicitly referenced by pointing to t
 ######## ***Implicit Return Value Reference***
 Implicit return value reference is only a way to reference the *return value*, not to the other out parameters. The other out parameters must be explicitly referenced. 
 
-![](Symbol%20Language%20(2004).296.png)
+![](images/Symbol%20Language%20(2004).296.png)
 
 *Implicit return value reference, explicit out parameter reference*
 ######## ***Implicit Calls***
 When you reference output parameters of a procedure multiple times, each reference causes its own call to be made. 
 
-![](Symbol%20Language%20(2004).297.png)
+![](images/Symbol%20Language%20(2004).297.png)
 
 *Two references to a parameter of the definition: two implicit calls*
 
@@ -2390,7 +2405,7 @@ If the diagram above is an abstract view on the system, there might only be made
 
 If you want to reference multiple output parameters of a single call, you have to expliclity display the call and reference the objects that are inside the call symbol. By referencing the parameters of the call, you only use one call.
 
-![](Symbol%20Language%20(2004).298.png)
+![](images/Symbol%20Language%20(2004).298.png)
 
 <Call in blue>
 
@@ -2399,7 +2414,7 @@ If you want to reference multiple output parameters of a single call, you have t
 ###### ***? Referencing a Procedure Member***
 Referencing a diamond’s members is like reading a procedure member.
 
-![](Symbol%20Language%20(2004).269.jpeg)
+![](images/Symbol%20Language%20(2004).269.jpeg)
 
 <20040418: this is interesting. It has to do with implicit call and I have to explore in which situation this is useful. I think that when you call a member of the top circle, then the diamond executes. It’s like calling member of the bottom circle…>
 
@@ -2429,12 +2444,12 @@ Implicit calls when referencing square contents (and their explicit diagram repr
 There are three ways to use arguments: state read, state write and passing by reference:
 
 
-|<p></p><p>![](Symbol%20Language%20(2004).299.png)</p><p>*State read*</p>|<p>![](Symbol%20Language%20(2004).300.png)</p><p>*State write*</p>|<p></p><p></p><p>![](Symbol%20Language%20(2004).301.png)</p><p>*Pass by reference*</p>|
+|<p></p><p>![](images/Symbol%20Language%20(2004).299.png)</p><p>*State read*</p>|<p>![](images/Symbol%20Language%20(2004).300.png)</p><p>*State write*</p>|<p></p><p></p><p>![](images/Symbol%20Language%20(2004).301.png)</p><p>*Pass by reference*</p>|
 | :-: | :-: | :-: |
 
 There seems to be one more: *argument reference*.
 
-![](Symbol%20Language%20(2004).302.png)
+![](images/Symbol%20Language%20(2004).302.png)
 
 *Argument reference*
 
@@ -2442,19 +2457,19 @@ This is however not possible, because the argument destroys after execution, so 
 
 Argument reference is actually a fictive concept.
 
-![](Symbol%20Language%20(2004).302.png)
+![](images/Symbol%20Language%20(2004).302.png)
 
 It is actually an implicit notation for a *reference argument*:
 
-![](Symbol%20Language%20(2004).301.png)
+![](images/Symbol%20Language%20(2004).301.png)
 
 There’s more to getting the explicit notation of argument reference than just inversion of direction. Consider this diagram:
 
-![](Symbol%20Language%20(2004).303.png)
+![](images/Symbol%20Language%20(2004).303.png)
 
 This diagram has two argument references in it. If you would simply invert the direction you’d get the following:
 
-![](Symbol%20Language%20(2004).304.png)
+![](images/Symbol%20Language%20(2004).304.png)
 
 *(Note that the last access symbol didn’t change, because that line isn’t an argument reference)*
 
@@ -2462,7 +2477,7 @@ It still has a argument reference in it.
 
 The explicit notation that solves this is the following:
 
-![](Symbol%20Language%20(2004).305.png)
+![](images/Symbol%20Language%20(2004).305.png)
 
 The child diamond is inserted as a substitute for the higher diamond it refers to. This offers a solution because the parent of the child diamond will exist when the child exists. {This might be an issue for multiple execution of a diamond. It also raises the question what happens when you consult something of the righter diamond. Is the bigger diamond executed first? What?} That’s rule two for getting to the explicit notation of parameter reference.
 
@@ -2470,23 +2485,23 @@ The child diamond is inserted as a substitute for the higher diamond it refers t
 
 There’s one more problem. The explicit notation introduced so fat has a flaw: the object has two line targets! If a situation as such occurs, the directions of all flawful non-argument references are inverted:
 
-![](Symbol%20Language%20(2004).306.png)
+![](images/Symbol%20Language%20(2004).306.png)
 
 Which gives is rule three of the explicit notation of argument reference.
 
 If a reference argument targets the argument of a parent diamond, it is not considered an argument reference.
 
-![](Symbol%20Language%20(2004).307.png)
+![](images/Symbol%20Language%20(2004).307.png)
 
 Argument reference is only the case where you *enter* a diamond.
 #### ***Summary***
 So the implicit argument reference notation:
 
-![](Symbol%20Language%20(2004).308.png)
+![](images/Symbol%20Language%20(2004).308.png)
 
 Has the following explicit notation: < I know it is wrong, I should investigate later >
 
-![](Symbol%20Language%20(2004).309.png)
+![](images/Symbol%20Language%20(2004).309.png)
 
 Rule 1:
 
@@ -2502,39 +2517,39 @@ Rule 3:
 
 You go from implicit to explicit notation in the following steps:
 
-![](Symbol%20Language%20(2004).303.png)
+![](images/Symbol%20Language%20(2004).303.png)
 
 Reverse direction of argument references
 
-![](Symbol%20Language%20(2004).304.png)
+![](images/Symbol%20Language%20(2004).304.png)
 
 Create child diamonds where the inversion doesn’t work
 
-![](Symbol%20Language%20(2004).305.png)
+![](images/Symbol%20Language%20(2004).305.png)
 
 Invert the direction of other lines that became faulty
 
-![](Symbol%20Language%20(2004).309.png)
+![](images/Symbol%20Language%20(2004).309.png)
 ### **Execution Order**
 Execution order is (part) determined by dependency: a procedure that renders a result used in another procedure is executed first.
 
 Using the dependency rules, argument reference notation (the implicit one) suggests the following execution order:
 
-![](Symbol%20Language%20(2004).310.png)
+![](images/Symbol%20Language%20(2004).310.png)
 
 However, translating it to the explicit reference argument notation:
 
-![](Symbol%20Language%20(2004).311.png)
+![](images/Symbol%20Language%20(2004).311.png)
 
 The dependency looks must different. After the translation to this, execution order is determined fully by parent-child relations: parents execute first, then children.
 
-![](Symbol%20Language%20(2004).312.png)
+![](images/Symbol%20Language%20(2004).312.png)
 
 In this implicit notation **A** *seems* to be dependent of **B**, but in fact **B** is dependent of **A**, because it uses it as a reference argument.
 #### ***Custom Order***
 Apart from execution order imposed by dependency, the programmer can set a custom execution order, which may not conflict with dependency (parent-child) order, but should only be applied where execution order is undetermined by dependency. Actual parent child relations impose execution order. Only the execution order of *actual* siblings can be custom set (not siblings in implicit or abstract notations). The order is denoted with numerical ordinals.
 
-![](Symbol%20Language%20(2004).313.png)
+![](images/Symbol%20Language%20(2004).313.png)
 
 Custom execution can be significant for instance for value transformations to happen in the right order.
 #### ***Brainstorm***
@@ -2559,40 +2574,40 @@ So diamonds represent executions and calls, but not necessarily indivual executi
 
 Argument reference notation (an implicit one):
 
-![](Symbol%20Language%20(2004).314.png)
+![](images/Symbol%20Language%20(2004).314.png)
 
 is saying that the actual reference argument:
 
-![](Symbol%20Language%20(2004).315.png)
+![](images/Symbol%20Language%20(2004).315.png)
 
 Is used as out and *not* as in.
 
-![](Symbol%20Language%20(2004).316.png)
+![](images/Symbol%20Language%20(2004).316.png)
 
 The explicit notation:
 
-![](Symbol%20Language%20(2004).315.png)
+![](images/Symbol%20Language%20(2004).315.png)
 
 can be in, thru or out. But the access symbol is usually not notated in case of outward direction:
 
-![](Symbol%20Language%20(2004).317.png)
+![](images/Symbol%20Language%20(2004).317.png)
 
 Therefore this outward notation with an access symbol suggests that it’s an in argument.
 
-![](Symbol%20Language%20(2004).318.png)
+![](images/Symbol%20Language%20(2004).318.png)
 
 Thru can be notated as:
 
-![](Symbol%20Language%20(2004).319.png)
+![](images/Symbol%20Language%20(2004).319.png)
 
 Which is not a real bidirection, because the line can’t *really* go inward anyway. It’s an implicit notation.
 
 As such, there are six explicit argument purposes:
 
 
-|<p>![](Symbol%20Language%20(2004).320.png)</p><p>*State in*</p><p></p>|<p></p><p>![](Symbol%20Language%20(2004).321.png)</p><p>*State out*</p>|<p>![](Symbol%20Language%20(2004).322.png)</p><p>*State thru*</p>|
+|<p>![](images/Symbol%20Language%20(2004).320.png)</p><p>*State in*</p><p></p>|<p></p><p>![](images/Symbol%20Language%20(2004).321.png)</p><p>*State out*</p>|<p>![](images/Symbol%20Language%20(2004).322.png)</p><p>*State thru*</p>|
 | :-: | :-: | :-: |
-|<p>![](Symbol%20Language%20(2004).323.png)</p><p>*Reference in*</p>|<p>![](Symbol%20Language%20(2004).324.png)</p><p>*Reference out*</p>|<p></p><p>![](Symbol%20Language%20(2004).325.png)</p><p>*Reference thru*</p>|
+|<p>![](images/Symbol%20Language%20(2004).323.png)</p><p>*Reference in*</p>|<p>![](images/Symbol%20Language%20(2004).324.png)</p><p>*Reference out*</p>|<p></p><p>![](images/Symbol%20Language%20(2004).325.png)</p><p>*Reference thru*</p>|
 #### ***Execution Order In Text Code***
 The resulting sequence of code lines corresponds to the execution order required for dependency. As you change the diagram, the order of the text code can change. You can freely more around text lines of sibbling symbols.
 
@@ -2774,22 +2789,22 @@ The problems proposed in this text have to do with:
   - Implicit calls are not made for diamond contents reference <>
 
 ###### ***Old***
-![](Symbol%20Language%20(2004).326.jpeg)
+![](images/Symbol%20Language%20(2004).326.jpeg)
 
 In implicit argument assignment, there is no way to express state assignment.
 
-![](Symbol%20Language%20(2004).327.jpeg)
+![](images/Symbol%20Language%20(2004).327.jpeg)
 
 If it were to become a connection between symbols, like implicit line assignments, it would definitely not behave the same as a line.
 
 
-![](Symbol%20Language%20(2004).328.jpeg)
+![](images/Symbol%20Language%20(2004).328.jpeg)
 
 *Implicit assignments*
 
 De assignment calls gedragen zich niet normaal, want consult van de argumenten van **A** veroorzaken geen executie. Een soort passieve parameter consult vind plaats door de assignment calls, in het proloog van **A**. Bedenk wel: het zijn systeeem procedures: niet normaal.
 
-![](Symbol%20Language%20(2004).328.jpeg)![](Symbol%20Language%20(2004).329.jpeg)
+![](images/Symbol%20Language%20(2004).328.jpeg)![](images/Symbol%20Language%20(2004).329.jpeg)
 
 De calls naar system procedures gedragen zich anders dan gewone calls. Ze vinden namelijk hier plaats in het proloog van de executie. Je ziet dit wèl in de text code, maar hoe zie je in diagram code of een systeem procedure apart wordt aangeroepen of in de context van een andere functie aanroep?
 
@@ -2797,14 +2812,14 @@ Hypothese: als je bij systeem procedure aanroep een parameter betrekt in een die
 
 Niet het een executor, anders verwar je het met een aparte executie! Een system procedure triggert geen executor:
 
-![](Symbol%20Language%20(2004).330.jpeg)
+![](images/Symbol%20Language%20(2004).330.jpeg)
 
 \* dit zou A triggeren als het niet een line van een system procedure call was.
 
 Assignmet procedures = system procedure, eerste argument is het **This** argument.
 
 
-![](Symbol%20Language%20(2004).331.jpeg)
+![](images/Symbol%20Language%20(2004).331.jpeg)
 
 \* 2 consults, 1 execution. 1 executor zou er eigenlijk moeten zijn om 1 keer uitgevoerd te worden per … definitie aanroep (afgezien van jumps) (? Hoe zit het daar dan precies mee)
 
@@ -2812,9 +2827,9 @@ Dus implicit call moet niet bestaan bij het referen naar diamond members. Dus da
 
 Oh jawel! Consult vind gewoonlijk altijd plaats in epiloog, maar bij assignment van argumenten consulteerd system procedure de argument in *proloog*.
 
-![](Symbol%20Language%20(2004).332.jpeg)
+![](images/Symbol%20Language%20(2004).332.jpeg)
 
-![](Symbol%20Language%20(2004).333.jpeg)
+![](images/Symbol%20Language%20(2004).333.jpeg)
 
 The last picture is an acceptable substitute for implicit state assignment. It is actually explicit state assignment, but it looks like a real connection between A and B. A rule though: state assignment takes two arguments: destination = source. In the notation on the left you have to follow the direciton of the line you’d get between A and B if you ignore the call thing in between to find out which is the first argumetn and which is the second. In text code it goed from  lieft to right. In the diagram It goes from …<>. B is destination A is source. I mean B is the one that gets the line. B is source of line, Asbut destination of assignment. 
 #### ***Argument Access Summary***
@@ -2847,7 +2862,7 @@ The last picture is an acceptable substitute for implicit state assignment. It i
 Creation and state read and write only apply to object parameters, not to parameters that are procedures.
 
 #### ***Other: Explore This Situation Another Time***
-![](Symbol%20Language%20(2004).334.jpeg)
+![](images/Symbol%20Language%20(2004).334.jpeg)
 
 The situation above can only exist right after a call. If you want to 
 
@@ -2865,7 +2880,7 @@ But this still doesn’t cover the situation above
 Nothing active can reside directly in an object.
 
 
-|![](Symbol%20Language%20(2004).335.jpeg)|<p>**Unconditional jump = Call to sibling active clause**</p><p></p><p>If you are familiar with the term *unconditional jump*, them this is the equivalent of that in Symbol.</p><p>Can only take place directly inside a procedure.</p><p></p>|
+|![](images/Symbol%20Language%20(2004).335.jpeg)|<p>**Unconditional jump = Call to sibling active clause**</p><p></p><p>If you are familiar with the term *unconditional jump*, them this is the equivalent of that in Symbol.</p><p>Can only take place directly inside a procedure.</p><p></p>|
 | - | - |
 #### ***Other: Explore Later***
 ***Moet ik het ook vanuit deze invalshoek uitleggen?***
@@ -2922,13 +2937,17 @@ The problem with events was that there are two ways: overriding and assigning an
 There *are* techniques for a child to communicate with its parent. There are two similar ways: a child contains a reference to the parent’s procedure, a child contains a reference to the parent’s object. The child then has to define the interface of the object or procedure to reference. The child must also accept that the object reference might not point to an existing object. These techniques will be covered again lateron.
 
 
-|<p>![](Symbol%20Language%20(2004).336.png)</p><p>*Reference to parent procedure with an interface defined by the child.*</p>|<p>![](Symbol%20Language%20(2004).337.png)</p><p>*Calling procedures of a reference to a parent object with an interface that the child defines.*</p>|
+|<p>![](images/Symbol%20Language%20(2004).336.png)</p><p>*Reference to parent procedure with an interface defined by the child.*</p>|<p>![](images/Symbol%20Language%20(2004).337.png)</p><p>*Calling procedures of a reference to a parent object with an interface that the child defines.*</p>|
 | :-: | :-: |
 |<p></p><p>*The dashed reference lines in these pictures could also have been notated solid.*</p>|
 
 #### ***Nog***
 Er is naast referentie naar procedure en referentie naar object nog een manier voor Events. Je moet namelijk ‘multi-cast’ events mogelijk maken en daar vereist een collection van event sinks die allemaal simulataan aangeroepen worden.. work it out
-## ***Execution Control***
+
+
+Execution Control
+-----------------
+
 <A procedure’s calling one of its own clauses, is an unconditional jump>
 
 < Cover text code entirely, right inside the story. Oh, yeah, should I? Or should I cover it in the Text Code chapter? >
@@ -3083,13 +3102,13 @@ The method is that where appropriate an = sign is put between the Select clause 
 
 In diagram notation, the Selection procedure with all its clauses looks like this:
 
-![](Symbol%20Language%20(2004).338.png)
+![](images/Symbol%20Language%20(2004).338.png)
 
 The amount of If groups can vary. I’ve notated three of them in the diagram above.
 
 All clauses are procedure references provided to the selection procedure as parameters when you call it. For that, the diagram for a call to the Selection procedure would look like this:
 
-![](Symbol%20Language%20(2004).339.png)
+![](images/Symbol%20Language%20(2004).339.png)
 
 In text code:
 
@@ -3111,12 +3130,12 @@ The outer squares are the clauses. The squares in the larger square are the refe
 
 Execution control is so common and the notation above is rather complex. The notation above should even require grouping triangles around the If groups. I already left those out, but I will do more to make it look clearer. A simplified notation for a call to the Selection procedure is regularly used instead:
 
-![](Symbol%20Language%20(2004).340.png)
+![](images/Symbol%20Language%20(2004).340.png)
 
 This has the same meaning as the other notation. A square drawn with dashed lines is shorthand for a square with a reference line to outside. The dashed squares are filled in with the contents of the referenced procedure.
 
 
-|![](Symbol%20Language%20(2004).341.png)|<p></p><p>=</p>|![](Symbol%20Language%20(2004).342.png)|
+|![](images/Symbol%20Language%20(2004).341.png)|<p></p><p>=</p>|![](images/Symbol%20Language%20(2004).342.png)|
 | - | - | - |
 
 
@@ -3125,15 +3144,15 @@ Even more is done to simplify the notation. Clauses that are not filled in can b
 << Use those rules from this point onward >>
 
 
-|<p></p><p>If X Then A:</p><p></p><p>![](Symbol%20Language%20(2004).343.png)</p>|<p></p><p>If X Then A Else B:</p><p></p><p>![](Symbol%20Language%20(2004).344.png)</p>|
+|<p></p><p>If X Then A:</p><p></p><p>![](images/Symbol%20Language%20(2004).343.png)</p>|<p></p><p>If X Then A Else B:</p><p></p><p>![](images/Symbol%20Language%20(2004).344.png)</p>|
 | :-: | :-: |
-|<p></p><p>If X Then A Else If Y Then B:</p><p></p><p>![](Symbol%20Language%20(2004).345.png)</p>|<p></p><p>If X Then A Else If Y Then B Else C:</p><p></p><p>![](Symbol%20Language%20(2004).346.png)</p>|
-|<p></p><p>`				`Select X</p><p>`					`Case 0: A</p><p>`					`Case 1: B</p><p>`				`End Select</p><p></p><p>:</p><p></p><p>![](Symbol%20Language%20(2004).347.png)</p>|<p></p><p>`				`Select X</p><p>`					`Case 0: A</p><p>`					`Case 1: B</p><p>`					`Case Else: C</p><p>`				`End Select</p><p></p><p>:</p><p></p><p>![](Symbol%20Language%20(2004).348.png)</p>|
+|<p></p><p>If X Then A Else If Y Then B:</p><p></p><p>![](images/Symbol%20Language%20(2004).345.png)</p>|<p></p><p>If X Then A Else If Y Then B Else C:</p><p></p><p>![](images/Symbol%20Language%20(2004).346.png)</p>|
+|<p></p><p>`				`Select X</p><p>`					`Case 0: A</p><p>`					`Case 1: B</p><p>`				`End Select</p><p></p><p>:</p><p></p><p>![](images/Symbol%20Language%20(2004).347.png)</p>|<p></p><p>`				`Select X</p><p>`					`Case 0: A</p><p>`					`Case 1: B</p><p>`					`Case Else: C</p><p>`				`End Select</p><p></p><p>:</p><p></p><p>![](images/Symbol%20Language%20(2004).348.png)</p>|
 
 You can nest Selection statements as deep as you want.
 
 
-|<p></p><p>![](Symbol%20Language%20(2004).349.png)</p>|<p></p><p></p><p>`	`Select X</p><p>`		`Case 0</p><p>`			`Select Y</p><p>`				`Case 0: A</p><p>`				`Case 1: B</p><p>`				`Case 2: C</p><p>`			`End Select</p><p>`		`Case 1</p><p>`			`B</p><p>`		`Case Else</p><p>`			`If Y = 2 Then D</p><p>`	`End Select</p>|
+|<p></p><p>![](images/Symbol%20Language%20(2004).349.png)</p>|<p></p><p></p><p>`	`Select X</p><p>`		`Case 0</p><p>`			`Select Y</p><p>`				`Case 0: A</p><p>`				`Case 1: B</p><p>`				`Case 2: C</p><p>`			`End Select</p><p>`		`Case 1</p><p>`			`B</p><p>`		`Case Else</p><p>`			`If Y = 2 Then D</p><p>`	`End Select</p>|
 | - | - |
 
 
@@ -3666,7 +3685,10 @@ But… if you pass a clause reference to an execution control procedure the exec
 
 Execution control procedures must call clauses in the context of a *specific call* to the clause’s procedure definition.
 
-## ***Access Ways***
+
+Access Ways
+-----------
+
 < Do neighbor access and child access protect the independence of types? As a substitute for the old, false rule: ‘Can’t call upward in the ancestry’? >
 
 There’s several ways to access a procedure. The most common way is for procedure’s of the same object to call upon eachother. The second most common way is for a parent to access a child’s procedures. A global object is accessible from anywhere within the globality and there are more ways. I will discuss these different ways of access one by one in this section.
@@ -3675,7 +3697,7 @@ There’s several ways to access a procedure. The most common way is for procedu
 ### **Child Access**
 The normal way of accessing an object is *child access*: an object can only access its what’s inside of it: its ancestors.
 
-![](Symbol%20Language%20(2004).350.png)
+![](images/Symbol%20Language%20(2004).350.png)
 
 <Shit. This is bullshit, I need to make a call from a procedure. The line above is a reference line.>
 
@@ -3683,7 +3705,7 @@ An access always takes place in a procedure call. In this picture Parent is acce
 
 You can’t all anything higher in the encapsulation hierarchy, so an object can’t access anything outside the object. If it is to access anything outside the object, it needs to contain a reference to something outside the object.i
 
-![](Symbol%20Language%20(2004).351.png)
+![](images/Symbol%20Language%20(2004).351.png)
 
 The object is then accessing this *reference*, which is inside the object. The reference just happens to resolve in something outside the object, but the parent is still accessing something inside itself.
 ### **Global Access**
@@ -3697,11 +3719,11 @@ There’s also a way to make objects accessible not only to parents, but accessi
 
 A special symbol is used: a pentagon.
 
-![](Symbol%20Language%20(2004).352.png)
+![](images/Symbol%20Language%20(2004).352.png)
 
 Anything directly inside the pentagon is accessible from *anywhere*. So the (public) direct children of the pentagon are global:
 
-![](Symbol%20Language%20(2004).353.png)
+![](images/Symbol%20Language%20(2004).353.png)
 
 *The blue symbols are accessible from anywhere inside the pentagon.*
 
@@ -3709,24 +3731,24 @@ A pentagon and all its contents are also called a *globality*.
 
 It’s like any object inside a globality has a reference to the globality object:
 
-![](Symbol%20Language%20(2004).354.png)
+![](images/Symbol%20Language%20(2004).354.png)
 
 These references don’t really exist, though. Everything global is just reachable inside every object inside a globality.
 
-![](Symbol%20Language%20(2004).355.png)
+![](images/Symbol%20Language%20(2004).355.png)
 
 In this the solid line *can* be a call, because it’s a reference to something global.
 
 A globality can also be viewed as being a module, or software component. It is a way to order code into components. Globalities can be embedded just like as objects:
 
-![](Symbol%20Language%20(2004).356.png)
+![](images/Symbol%20Language%20(2004).356.png)
 
 In fact, a globality symbol is an object symbol too. It works as a triangle: you can access things in the globality directly, but also by qualifying it with the globality identifier, but it has the special side effect that anything it directly contains can be directly accessed from anywhere.
 
 
 When you want one globality to use another, you make a reference to the other globality:
 
-![](Symbol%20Language%20(2004).357.png)
+![](images/Symbol%20Language%20(2004).357.png)
 
 The child globality can then be accessed like a circle or a triangle, but refers to an existing instance of the globality (software component). Since the globality is a direct child of another globality, anything in the contained globality is just as global as anything in the parent globality. However, if you make the child globality private, it’s not accessible outside the parent globality. It is accessible as global inside the parent globality, though.
 
@@ -3742,7 +3764,7 @@ There are two common ways to extra denote that you’re referencing something gl
 
 Put a multiply peeled pentagon around the call:
 
-![](Symbol%20Language%20(2004).358.png)*
+![](images/Symbol%20Language%20(2004).358.png)*
 
 
 This pentagon reference doesn’t really exist, though.
@@ -3750,24 +3772,24 @@ This pentagon reference doesn’t really exist, though.
 
 You can also put a multiply peeled pentagon in the direct parent object and reference this multiply peeled pentagon, rather than the global symbol directly:
 
-![](Symbol%20Language%20(2004).359.png)
+![](images/Symbol%20Language%20(2004).359.png)
 
 This multiply peeled pentagon doesn’t exist either.
 ### **Interface Access**
 The separate interfaces of an object:
 
-![](Symbol%20Language%20(2004).360.png)
+![](images/Symbol%20Language%20(2004).360.png)
 
 can be accessed through a reference to the triangle, just like you would access a circle:
 
-![](Symbol%20Language%20(2004).361.png)
+![](images/Symbol%20Language%20(2004).361.png)
 
 The special thing about a triangle, though is that its members are also directly accessible through its parent. When referencing the circle, you can access the triangle’s members as if the triangle capsules weren’t even there.
 
 You can’t see in the picture above if the called square is referenced through the circle or through the triangle. If you want to indicate that it’s accessed through the circle, you can put an access symbol with the circle. If you want to indicate that it’s accessed through the triangle, you put an access symbol with the triangle, or with both the circle and the triangle.
 
 
-|<p>![](Symbol%20Language%20(2004).362.png)</p><p></p><p>*Accessed through the Circle:*</p><p></p><p>***Circle . Procedure***</p>|<p>![](Symbol%20Language%20(2004).363.png)</p><p></p><p>*Accessed through <br>the Circle and the Triangle:*</p><p></p><p>***Circle . Triangle . Procedure***</p>|<p>![](Symbol%20Language%20(2004).364.png)</p><p></p><p>*Also accessed through <br>the Circle and the Triangle:*</p><p></p><p>***Circle . Triangle . Procedure***</p>|
+|<p>![](images/Symbol%20Language%20(2004).362.png)</p><p></p><p>*Accessed through the Circle:*</p><p></p><p>***Circle . Procedure***</p>|<p>![](images/Symbol%20Language%20(2004).363.png)</p><p></p><p>*Accessed through <br>the Circle and the Triangle:*</p><p></p><p>***Circle . Triangle . Procedure***</p>|<p>![](images/Symbol%20Language%20(2004).364.png)</p><p></p><p>*Also accessed through <br>the Circle and the Triangle:*</p><p></p><p>***Circle . Triangle . Procedure***</p>|
 | :-: | :-: | :-: |
 
 In text code you can see the difference all the more. I’ve put the text code under the diagrams above.
@@ -3786,19 +3808,19 @@ Only is that true?
 
 Clauses are embedded procedures. In a diagram these are squares contained in other squares that have no lines. Beware that a diagram may not be showing the line, even when it exist.
 
-![](Symbol%20Language%20(2004).365.png)
+![](images/Symbol%20Language%20(2004).365.png)
 
 Clauses have access to the contents of all their descendant clauses and the procedure definition they’re in. This means that a clause can directly access its containing definition’s members:
 
-![](Symbol%20Language%20(2004).366.png)
+![](images/Symbol%20Language%20(2004).366.png)
 
 and all its encapsulating clauses:
 
-![](Symbol%20Language%20(2004).367.png)
+![](images/Symbol%20Language%20(2004).367.png)
 
 But a clause doe not have access to a clause that doesn’t encapsulate it.
 
-![](Symbol%20Language%20(2004).368.png)
+![](images/Symbol%20Language%20(2004).368.png)
 
 So its like the borders of clauses can be ignored in outward access.
 ### **Globalities, Interfaces and Clauses**
@@ -3811,7 +3833,10 @@ The public ancestors of a globality are accessible from anywhere within the glob
 #### ***àAccess Ways***
 Clause members can  access the members of its ancestor procedure symbols. 
 
-## ***Procedure Resolution***
+
+Procedure Resolution
+--------------------
+
 The following methods let a parent mess with the procedures of a child:
 
 - Overriding
@@ -3826,17 +3851,17 @@ Overriding and exclusion are techniques equally useful in both diagram code and 
 ### **Overriding**
 Overriding means that a parent can replace a procedure of its child by another. A child decides whether a procedure of his is overridable or not.
 
-![](Symbol%20Language%20(2004).369.png)
+![](images/Symbol%20Language%20(2004).369.png)
 
 This is a type with an overridable procedure B, called by the child. The access symbol on the right means that the Procedure Reference Set is public. Therefore you can make B redirect to a procedure that the parent defines.
 
-![](Symbol%20Language%20(2004).370.png)
+![](images/Symbol%20Language%20(2004).370.png)
 
 The parent overrode the overridable procedure B. A call to B will resolve to a call to C instead. You can see that overriding means that the parent gives a child’s procedure a reference line to one of its own procedures.
 
 In the replacement procedure, you can still call the base procedure. That way you can both override procedures of the child or extend them.
 
-![](Symbol%20Language%20(2004).370.png)
+![](images/Symbol%20Language%20(2004).370.png)
 
 
 Overridden procedures are called by the child and that way they’re a means for a child to call a procedure of the parent.
@@ -3883,17 +3908,17 @@ End Object
 
 The following would be the diagram code without mentioning the types of objects nor procedure calls:
 
-![](Symbol%20Language%20(2004).371.png)
+![](images/Symbol%20Language%20(2004).371.png)
 
 The outer circle is Type 1. It declars the three basic object X, Y and Z. It also contains the procedure Procedure 1, in which are performed two plus operations to which references to the basic objects are passed.
 
 However, when you do mention the types of objects and procedure calls, you see that two different procedures are called.
 
-![](Symbol%20Language%20(2004).372.png)
+![](images/Symbol%20Language%20(2004).372.png)
 
 When you display the called procedures the subtlety is gone, but in this abstraction of the diagram you’ve simply *chosen* to see the difference:
 
-![](Symbol%20Language%20(2004).373.png)
+![](images/Symbol%20Language%20(2004).373.png)
 
 All three diagrams above describe the same code, only in one diagram some parts are left out and some are visible while in another diagram other things are left out or visible. Abstract Symbol is covered in detail in another chapter <>.
 
@@ -3913,17 +3938,17 @@ When you change a parameter to an object of a different type, then the call line
 
 Shadowing is handy when you use a triangle: a base type or an extra interface implementation.
 
-![](Symbol%20Language%20(2004).374.png)
+![](images/Symbol%20Language%20(2004).374.png)
 
 The two lines are calls to the triangle’s members.
 
 When you want to use a name that’s already used by the base type, you can shadow it and calls will be made to the shadowing member instead:
 
-![](Symbol%20Language%20(2004).375.png)
+![](images/Symbol%20Language%20(2004).375.png)
 
 The difference with overriding is that the base type still calls its own member, not the shadowing member.
 
-![](Symbol%20Language%20(2004).376.png)
+![](images/Symbol%20Language%20(2004).376.png)
 
 *I* still calls its own A, while P and anyone else calls P’s A.
 
@@ -3932,11 +3957,11 @@ A parent can still call the shadowed member, but this would require qualificatio
 
 A
 
-![](Symbol%20Language%20(2004).377.png)
+![](images/Symbol%20Language%20(2004).377.png)
 
 I.A
 
-![](Symbol%20Language%20(2004).378.png)
+![](images/Symbol%20Language%20(2004).378.png)
 
 I.A is inaccessible outside the parent, for the parent has chosen to shadow it.
 
@@ -3944,7 +3969,7 @@ A member is automatically shadowed if the parent of a triangle defines a procedu
 ### **Merging**
 When a procedure has the same name and configuration of public members then in text code there is no way to distinguish calls to either procedure. What happens automatically is that the ‘*nearest’* member *shadows* the member *further* away.
 
-![](Symbol%20Language%20(2004).379.png)
+![](images/Symbol%20Language%20(2004).379.png)
 
 A second option when you can’t distinct a call to one procedure from a call to the other is simply for *both* procedures to be called. This is called merging the two procedures and in that case the call will resolve in calling *both* procedures. If you want to address a specific procedure, you could qualify the call with the name of the container of the procedure, if that would make a difference. In diagram code you can see the two procedures as separate squares and you *can* see the difference between a call to procedure A and a call to procedure B.
 
@@ -3963,13 +3988,21 @@ When the merging procedures reside in *exactly the same container*, they can not
 That ensures that diagram code and text code are exchangable and can be mutually used.
 
 < Merging should be a technique, not embedded in the language. When it’s about calling both procedures of the triangles, you have to shadow those procedures with a procedure that calls both. >
-## ***Data & Math***
+
+
+Data & Math
+-----------
+
 Data and math in Symbol are actually not part of the language. Data and math are modules written in Symbol Language that provide types and procedures to work with data and math. These modules are described in separate books. At present, it would not be convincing if the full description of a programming language should contain nothing about *strings*, *arrays*, *simple data types* and *mathematical operations*.
 
 Therefore, in this chapter, I give a functional description of basics of the Data and Math modules.
 
 <>
-## ***System Aspects***
+
+
+System Aspects
+--------------
+
 < I must denote somewhere that lines can be connected so very complexly if sources and targets are reachable from a high ancestor. Say that lines can look orderly, but can also be very complex all the same.>
 
 *System aspects* are always seen as related to a single symbol. Because of that, the term *symbol aspect* can also be used.
@@ -4152,14 +4185,14 @@ Procedure system procedures:
 The system procedures of a symbol together form the *system interface* of a symbol. It is notated as follows:
 
 
-|<p>![](Symbol%20Language%20(2004).380.jpeg)</p><p>*Object System Interface*</p>|<p>![](Symbol%20Language%20(2004).381.jpeg)</p><p>*Procedure System Interface*</p>|
+|<p>![](images/Symbol%20Language%20(2004).380.jpeg)</p><p>*Object System Interface*</p>|<p>![](images/Symbol%20Language%20(2004).381.jpeg)</p><p>*Procedure System Interface*</p>|
 | :-: | :-: |
 
 I’ve left out the system procedures I haven’t yet introduced.
 
 In fact, most of the times you’ll only see part of the system interface: only the procedures that are of interest in the view on the diagram, or only the procedures with which something special is going on, while the other ones behave in a standard way. How they can be special and how they can be standard will be discussed later. So a lot of times the system interface might be shown as follows:
 
-![](Symbol%20Language%20(2004).382.jpeg)
+![](images/Symbol%20Language%20(2004).382.jpeg)
 
 The system interface is displayed sort of like an interface, but tied to the edge of the symbol, rather than being contained by the symbol. This is to denote that this interface is *not* *inferior* to the symbol.
 
@@ -4168,12 +4201,12 @@ The notation of the system interface also looks like you’ve opened up the syst
 Notation of the system interface can go together with the regular contents of the symbol.
 
 
-|<p>![](Symbol%20Language%20(2004).383.png)</p><p>*Object Notation Only*</p>|<p>![](Symbol%20Language%20(2004).384.png)</p><p>*Simultaneous system interface and object members*</p>|
+|<p>![](images/Symbol%20Language%20(2004).383.png)</p><p>*Object Notation Only*</p>|<p>![](images/Symbol%20Language%20(2004).384.png)</p><p>*Simultaneous system interface and object members*</p>|
 | :-: | :-: |
 
 Calls to system procedures and object members are intermixed, so you have to be able to see both the system interface and the object members at the same time.
 
-![](Symbol%20Language%20(2004).385.png)
+![](images/Symbol%20Language%20(2004).385.png)
 
 *Calls to system interface and to object members*
 
@@ -4658,7 +4691,7 @@ The usual representation of an object symbol is one that shows the members of it
 
 An alternate look on the object symbol is as a set of system procedures, each granting a different type of access to the object:
 
-![](Symbol%20Language%20(2004).386.png)
+![](images/Symbol%20Language%20(2004).386.png)
 
 This representation is called the *system representation* of the symbol. Each procedure in the system representation does what’s discussed in the previous section.
 
@@ -4672,25 +4705,25 @@ The system representation of a symbol has no lines.  The lines of the *type repr
 
 Procedure symbols also have an system representation:
 
-![](Symbol%20Language%20(2004).387.png)
+![](images/Symbol%20Language%20(2004).387.png)
 ##### **Simultaneous System Representation and Type Representation**
 You can also view the system representation along with the normal representation. System procedures are called, just like other procedures are called and their being called is mixed with calls to regulare procedures, so you have to be able to see both the system procedures and type procedures at the same time.
 
 The following notation is used for this:
 
 
-|<p></p><p>*Type Representation Only ![](Symbol%20Language%20(2004).388.png)*</p>|*Simultaneous System and Type Representation ![](Symbol%20Language%20(2004).389.png)*|
+|<p></p><p>*Type Representation Only ![](images/Symbol%20Language%20(2004).388.png)*</p>|*Simultaneous System and Type Representation ![](images/Symbol%20Language%20(2004).389.png)*|
 | :-: | :-: |
 
 The system representation is displayed sort of like an implementation of an extra interface, but tied to the edge of the symbol, rather than being contained by the symbol, denoting that this interface isn’t inferior to the symbol. The system representation is in this case also called the system interface. In simultaneous display it is very apparent that it’s system procedures that you’re seeing. It may be preferred to always view system procedures in simultaneous view, even when you don’t display the type contents:
 
-![](Symbol%20Language%20(2004).390.png)
+![](images/Symbol%20Language%20(2004).390.png)
 
 This way it even *looks* like you’ve opened up the symbol maching in order to change its setup.
 
 Not always the whole system representation is shown. You might only want to show the part that you can see is called
 
-![](Symbol%20Language%20(2004).391.png)
+![](images/Symbol%20Language%20(2004).391.png)
 #### ***Call Example***
 < Not finished, but it takes too much time to write this section for now >
 
@@ -4698,7 +4731,7 @@ Not always the whole system representation is shown. You might only want to show
 
 I will now discuss the same complex call as before, but now denoting which system procedures are called for which purpose. This call only involves getting values, not setting them.
 
-![](Symbol%20Language%20(2004).392.png)
+![](images/Symbol%20Language%20(2004).392.png)
 
 We start at *a*, the procedure which contains a call, located near the center of the diagram. It calls b, but before that it first acceses c and then i.
 
@@ -4733,7 +4766,7 @@ This means that setting a line even at design time, requires calling the Set pro
 The line between two symbols is set up by another symbol: the *mutual descendant* of the source and target symbols.
 
 
-|![](Symbol%20Language%20(2004).393.png)|![](Symbol%20Language%20(2004).394.png)|
+|![](images/Symbol%20Language%20(2004).393.png)|![](images/Symbol%20Language%20(2004).394.png)|
 | :-: | :-: |
 
 Going upward in the encapsulation for both source and target, eventually you encounter a symbol that they’re both (indirectly) contained in. This is the *closest mutual descendant*. The closest mutual descendant makes the connection between those two symbols. Even when the line is hard coded, the line is set by another symbol. The closest mutual descendant is the closest symbol that can reach both source and target symbol.
@@ -4750,7 +4783,7 @@ Lines set at design time are set at run time on creation of the mutual descendan
 
 `	`A flaw:
 
-![](Symbol%20Language%20(2004).395.png)
+![](images/Symbol%20Language%20(2004).395.png)
 
 If an object circularity is created and you break an object line in it, then a target object will stand up.
 
@@ -4773,7 +4806,7 @@ Oops. At runtime you can set references to an object, while it isn’t even crea
 ##### **The Create and Destroy Procedures**
 A subject looked at less closely till now is creation and destruction of objects. The Create and Destroy procedures are actually two system procedures that I haven’t mentioned yet. They only apply to object symbols:
 
-![](Symbol%20Language%20(2004).396.png)
+![](images/Symbol%20Language%20(2004).396.png)
 
 Like the other system procedures, their access controllers can be adapted. There can be separate access controllers for design time and run time, just like Copy Get and Set.
 
@@ -4783,15 +4816,15 @@ A symbol can have a line to a non created symbol. So you can reference an object
 ##### **Breaking the Chain**
 When you break the chain of symbols pointing to a created target object, only certain objects will still refer to a created object:
 
-![](Symbol%20Language%20(2004).397.png)
+![](images/Symbol%20Language%20(2004).397.png)
 
-![](Symbol%20Language%20(2004).397.png)
+![](images/Symbol%20Language%20(2004).397.png)
 
 Only the ones still pointing to this target object still point to a created object. The ones before the break refer to a newly formed uncreated target object. Here you see the concept of direction playing a big role.
 ##### **Breaking a Bidirection**
 What if you break the line between the two symbols of a created bidirection? Which symbol remains created and which becomes nothing? The solution is that a bidirection can never be broken in one blow. One direction must be broken first before the other one is broken. Then, when both directions are broken it is clear what symbol remains created and what symbol becomes uncreated.
 
-![](Symbol%20Language%20(2004).398.png)
+![](images/Symbol%20Language%20(2004).398.png)
 ##### **No Lines Inside Uncreated Symbols**
 Lines are set at run time. Design time lines are actually set in the Create procedure of the mutual descendant. However, in design time nothing is created. So there actually are *no lines at design time* at all.
 
@@ -4814,7 +4847,7 @@ Symbol’s **Destroy** is actually like Visual Basic’s **= Nothing**. It is lo
 However, if a target object symbol is destroyed, other references will not point to a created object anymore. In a symbol diagram this makes sense. 
 
 
-|<p></p><p></p><p>![](Symbol%20Language%20(2004).399.png)</p>|<p></p><p></p><p></p><p>à</p>|<p></p><p>![](Symbol%20Language%20(2004).400.png)</p>|<p></p><p></p><p></p><p>à</p>|<p></p><p></p><p>![](Symbol%20Language%20(2004).401.png)</p>|
+|<p></p><p></p><p>![](images/Symbol%20Language%20(2004).399.png)</p>|<p></p><p></p><p></p><p>à</p>|<p></p><p>![](images/Symbol%20Language%20(2004).400.png)</p>|<p></p><p></p><p></p><p>à</p>|<p></p><p></p><p>![](images/Symbol%20Language%20(2004).401.png)</p>|
 | :-: | :-: | :- | :-: | :-: |
 
 In Com, the object remains as long as there are referrers. Symbol just has a more refined methodology.
@@ -4836,7 +4869,7 @@ Here I give the diagrams of how system procedures are called to set a line at de
 
 When you set lines at design time, you’re actually putting code into the Create procedure of the mutual descendant.
 
-![](Symbol%20Language%20(2004).402.png)
+![](images/Symbol%20Language%20(2004).402.png)
 
 The Create procedure calls Target (. Symbol Get) and then Parent . Source . Object Set passing the result of Target . Symbol Get to it. The text code line would be:
 
@@ -4846,7 +4879,7 @@ This is a design time set line. You don’t need to display the symbols above al
 
 After the Create procedure has executed, the diagram can be displayed as:
 
-![](Symbol%20Language%20(2004).403.png)
+![](images/Symbol%20Language%20(2004).403.png)
 
 The differences are that the access interfaces have collapsed and a line is now between Source and Target. The other diagram showed the procedure of instantiation of the line.
 
@@ -4854,25 +4887,25 @@ When debugging at any moment a line is changed, you’ll see the source and targ
 
 *Before change:*
 
-![](Symbol%20Language%20(2004).404.png)
+![](images/Symbol%20Language%20(2004).404.png)
 
 *The change:*
 
-![](Symbol%20Language%20(2004).405.png)
+![](images/Symbol%20Language%20(2004).405.png)
 
 *After change:*
 
-![](Symbol%20Language%20(2004).406.png)
+![](images/Symbol%20Language%20(2004).406.png)
 
 You can also take away the object line completely by assigning Nothing as the symbol’s object, or *anulling* the line:
 
 *Change:*
 
-![](Symbol%20Language%20(2004).407.png)
+![](images/Symbol%20Language%20(2004).407.png)
 
 *Result:*
 
-![](Symbol%20Language%20(2004).408.png)
+![](images/Symbol%20Language%20(2004).408.png)
 #### ***State***
 State is special and returns a copy of the object as it were, which is a copy of all the data the object stores. This state must be immediately assigned to another object, which is usually of the same type.
 
@@ -5131,7 +5164,7 @@ Static bij procedure members.
 A call line makes the square a call. A reference line makes it a reference. No line at all indicates that it’s a procedure definition or a clause. Lines can also be left out for abstraction reasons.
 
 
-|<p></p><p>![](Symbol%20Language%20(2004).409.png)</p><p>*Definition*</p>|<p></p><p>![](Symbol%20Language%20(2004).409.png)</p><p>*Clause*</p>|<p></p><p>![](Symbol%20Language%20(2004).410.png)</p><p>*Call*</p>|<p>![](Symbol%20Language%20(2004).411.png)</p><p>![](Symbol%20Language%20(2004).412.png)</p><p>*Reference*</p>|<p>![](Symbol%20Language%20(2004).413.png)</p><p>*Illegal: a square can’t be both a call and a reference*</p>|
+|<p></p><p>![](images/Symbol%20Language%20(2004).409.png)</p><p>*Definition*</p>|<p></p><p>![](images/Symbol%20Language%20(2004).409.png)</p><p>*Clause*</p>|<p></p><p>![](images/Symbol%20Language%20(2004).410.png)</p><p>*Call*</p>|<p>![](images/Symbol%20Language%20(2004).411.png)</p><p>![](images/Symbol%20Language%20(2004).412.png)</p><p>*Reference*</p>|<p>![](images/Symbol%20Language%20(2004).413.png)</p><p>*Illegal: a square can’t be both a call and a reference*</p>|
 | - | - | - | :-: | :-: |
 
 < Not true: a call doesn’t have to directly exit a square if it calls a procedure reference embedded in the same procedure or a clause of the procedure>
@@ -5141,7 +5174,7 @@ Note here that the access symbol of a solid procedure reference line is also dra
 Here is a list of possible reference targets and call targets:
 
 
-|<p>![](Symbol%20Language%20(2004).414.png)</p><p>*Reference to definition*</p><p></p><p>![](Symbol%20Language%20(2004).415.png)</p><p>*Reference to clause*</p><p></p><p>![](Symbol%20Language%20(2004).416.png)</p><p>*Reference to reference*</p>|<p>![](Symbol%20Language%20(2004).417.png)</p><p>*Call to definition*</p><p></p><p>![](Symbol%20Language%20(2004).418.png)</p><p>*Call to clause*</p><p></p><p>![](Symbol%20Language%20(2004).419.png)</p><p>*Call to reference <br>(A call to a reference calls the referenced procedure)*</p>|
+|<p>![](images/Symbol%20Language%20(2004).414.png)</p><p>*Reference to definition*</p><p></p><p>![](images/Symbol%20Language%20(2004).415.png)</p><p>*Reference to clause*</p><p></p><p>![](images/Symbol%20Language%20(2004).416.png)</p><p>*Reference to reference*</p>|<p>![](images/Symbol%20Language%20(2004).417.png)</p><p>*Call to definition*</p><p></p><p>![](images/Symbol%20Language%20(2004).418.png)</p><p>*Call to clause*</p><p></p><p>![](images/Symbol%20Language%20(2004).419.png)</p><p>*Call to reference <br>(A call to a reference calls the referenced procedure)*</p>|
 | :-: | :-: |
 #### ***Accesses***
 **< This section explains too much on traces that has already been explained in Lines. I also think that which traces are involved in an access is not for now. You might have to know what’s considered an access, so that you understand aspect procedure call purposes, but that’s all >**
@@ -5156,13 +5189,13 @@ So access only takes place in the line of execution when one procedure calls ano
 
 In my further explanations I’ll take the following form of call as a base:
 
-![](Symbol%20Language%20(2004).420.png)
+![](images/Symbol%20Language%20(2004).420.png)
 
 A call to a child’s procedure.
 
 In our basic call, you access one symbol:
 
-![](Symbol%20Language%20(2004).420.png)
+![](images/Symbol%20Language%20(2004).420.png)
 
 Accessing the object requires an object-type-interface trace.
 
@@ -5170,7 +5203,7 @@ Each of those steps is called a *redirection* and they are part of the same acce
 ##### **Accesses**
 Any access (*a call line’s entering an object symbol*)  involves such redirectioning, in order to know which type to call, to operate on which object. If you access multiple symbols on one call, each access includes its own object-type-interface trace.
 
-![](Symbol%20Language%20(2004).421.png)
+![](images/Symbol%20Language%20(2004).421.png)
 
 *Great grandchild access requires three accesses.*
 
@@ -5188,7 +5221,7 @@ A reference line’s entering a symbol is not another access, just like any othe
 
 Every step in finding the procedure reference target involves tracking down a type and object. The reference lines must be followed until you find the target procedure and then that’s the procedure to call.
 
-![](Symbol%20Language%20(2004).422.png)
+![](images/Symbol%20Language%20(2004).422.png)
 
 This is a call to a child’s procedure. After reaching the child’s procedure, the redirectioning isn’t done, because the child’s procedure has reference line (*r*), which is to be followed. Eventually b is called.
 
@@ -5196,7 +5229,7 @@ When the target procedure is found, it needs to be called. In order to do so, ob
 ###### ***A Complex Call Example***
 Here follows an example of one call with a ridiculously large amount of redirections of all sorts. We’re going to follow it in detail.
 
-![](Symbol%20Language%20(2004).392.png)
+![](images/Symbol%20Language%20(2004).392.png)
 
 We start at *a*, the procedure which contains a call, located near the center of the diagram. It calls b, thereby first accessing c. c Redirects to d with an object line. The entering of another object symbol there, is *not* another access. c And d are tightly bound together and go beyond any exits or entrances. There are restrictions as to how such a tight bind is established, but those issues are covered later. d Redirects to e with an object line. Again, the exit of an object symbol and the entrance of another one is not relevant in the process we’re discussing. Then e is bound to f with a type line, making ‘e’ a potential candidate for target object, but only if no other object lines will present itself in the redirection. f Redirects to g with a type line. g Redirects to h with an object line, upon which e looses its candidateship for target object. h Is the end of the redirection so h is both c’s object as well as its type, we give h the alternative names: Oc (object of c) and Cc (type of c). Now we know c’s object and type, we roll back to the access of c, and we continue the journey of our call line. Only one access has just taken place. The other steps were redirections followed for the access.
 
@@ -5472,10 +5505,10 @@ Procedure ( Parameter . Reference = … )
 #### ***àSystem Aspects***
 *Exclusive Establishment*
 
-|<p>![](Symbol%20Language%20(2004).423.jpeg)</p><p></p>|<p>**Reference to sibling inactive clause, in a square**</p><p></p><p>Only possible for static procedure members or exclusive establishment.</p><p></p>|
+|<p>![](images/Symbol%20Language%20(2004).423.jpeg)</p><p></p>|<p>**Reference to sibling inactive clause, in a square**</p><p></p><p>Only possible for static procedure members or exclusive establishment.</p><p></p>|
 | - | - |
-|<p>![](Symbol%20Language%20(2004).424.jpeg)</p><p></p>|<p>**Reference to sibling active clause, in a square**</p><p></p><p>Only possible for static procedure members or exclusive establishment.</p><p></p>|
-|<p>![](Symbol%20Language%20(2004).425.jpeg)</p><p></p>|<p>**Call to sibling inactive clause, in a square**</p><p></p><p>This is like a jump to a clause, that would otherwise not execute.</p><p></p><p>Only possible for static procedure members or exclusive establishment.</p><p></p>|
+|<p>![](images/Symbol%20Language%20(2004).424.jpeg)</p><p></p>|<p>**Reference to sibling active clause, in a square**</p><p></p><p>Only possible for static procedure members or exclusive establishment.</p><p></p>|
+|<p>![](images/Symbol%20Language%20(2004).425.jpeg)</p><p></p>|<p>**Call to sibling inactive clause, in a square**</p><p></p><p>This is like a jump to a clause, that would otherwise not execute.</p><p></p><p>Only possible for static procedure members or exclusive establishment.</p><p></p>|
 ||<p>A diamond can be executing. Only during the execution of the diamond, lines between its non static children can be real. If the diamond isn’t executing, or it’s not a diamond, but a square, lines between the non static children are suggestive. Only lines between static members in such cases, can be real.</p><p></p>|
 #### ***àSystem Aspects***
 *Exclusive Establishment*
@@ -5507,7 +5540,11 @@ The following rule isn’t true:
 An object should act independent of its surroudings. Unless it *chooses* to be dependent on its surroundings.
 
 < You can make a call to the outside if the type allows you to set a diamonds reference line. Then the container must decide whereto the call leads>
-## ***Access Control***
+
+
+Access Control
+--------------
+
 <Apart from system aspects, access control is one of the hardest concepts to understand for beginning programmers (Not a good formulation, right?)
 
 System aspects is the hardest concept to understand of Symbol Language. Access control, I think, is the second hardest. Not to experienced programmers, but more to beginning programmers. Especially its usefulness may be a blur to beginning programmers: access control makes you able to limit the possibilities. <>
@@ -5552,7 +5589,7 @@ Only procedures get access controllers, not objects. Access to an object is cont
 The two basic access controllers are *Accessible* and *Inaccessible*. Their diagram notations are as follows:
 
 
-|<p>![](Symbol%20Language%20(2004).426.png)</p><p>*Accessible*</p>|<p>![](Symbol%20Language%20(2004).427.png)</p><p>*Inaccessible*</p>|
+|<p>![](images/Symbol%20Language%20(2004).426.png)</p><p>*Accessible*</p>|<p>![](images/Symbol%20Language%20(2004).427.png)</p><p>*Inaccessible*</p>|
 | :-: | :-: |
 
 The meaning of them is as can be expected: the Accessible square is accessible, while the Inaccessible square is inaccessible This basic notation does not show which parties get access and which do not.
@@ -5578,13 +5615,13 @@ Exclusion access controllers are also called *access* *modifiers*, because they 
 Public and Private are notated as follows:
 
 
-|<p>![](Symbol%20Language%20(2004).428.png)</p><p>*Public*</p>|<p>![](Symbol%20Language%20(2004).429.png)</p><p>*Private*</p>|
+|<p>![](images/Symbol%20Language%20(2004).428.png)</p><p>*Public*</p>|<p>![](images/Symbol%20Language%20(2004).429.png)</p><p>*Private*</p>|
 | :-: | :-: |
 
 The reason that the following notation won’t do:
 
 
-|<p>![](Symbol%20Language%20(2004).430.png)</p><p>*Not Public*</p>|<p>![](Symbol%20Language%20(2004).431.png)</p><p>*Not Private*</p>|
+|<p>![](images/Symbol%20Language%20(2004).430.png)</p><p>*Not Public*</p>|<p>![](images/Symbol%20Language%20(2004).431.png)</p><p>*Not Private*</p>|
 | :-: | :-: |
 
 is that this access modifier is imposed by the procedure itself, not by its parent.
@@ -5592,7 +5629,7 @@ is that this access modifier is imposed by the procedure itself, not by its pare
 The reason that the following notation won’t do:
 
 
-|<p>![](Symbol%20Language%20(2004).432.png)</p><p>*Not Public*</p>|<p>![](Symbol%20Language%20(2004).433.png)</p><p>*Not Private*</p>|
+|<p>![](images/Symbol%20Language%20(2004).432.png)</p><p>*Not Public*</p>|<p>![](images/Symbol%20Language%20(2004).433.png)</p><p>*Not Private*</p>|
 | :-: | :-: |
 
 is that the access symbols in these diagrams are about access to the object, not access to the procedure of the object.
@@ -5600,14 +5637,14 @@ is that the access symbols in these diagrams are about access to the object, not
 
 Each descendant that has access to the procedure can impose its own access modifier upon it.
 
-![](Symbol%20Language%20(2004).434.png)
+![](images/Symbol%20Language%20(2004).434.png)
 
 In this example A privatises P. The marks and the access controller are called an access controller list. The whole access controller list can be interpreted as a single symbol, which can be called the access symbol. An access controller can be placed on each mark. Each position in the access controller list represents the access modification of a deeper laid symbol. All access modifications are imposed by A. The first position modifies access to A itself, the second position modifies access to B, the third position modifies access to C, thus the fourth position modifies access to P. The marks are called *access marks*, not to be confused with the term ‘access symbols’.
 
 Very deep exclusion is uncommon, so you usually won’t interprent more than one or two access marks.
 
 
-![](Symbol%20Language%20(2004).435.png)
+![](images/Symbol%20Language%20(2004).435.png)
 
 *Privatisation is the last access modification*. Once an descendant has excluded the member, higher descendants can’t exclude the member again, because they can’t access the member.
 
@@ -5617,42 +5654,42 @@ B has excluded P, so A can’t exclude P again. Both access symbols above are ab
 Let’s cover how to interpret the examples I’ve already mentioned.
 
 
-|![](Symbol%20Language%20(2004).430.png)|![](Symbol%20Language%20(2004).431.png)|
+|![](images/Symbol%20Language%20(2004).430.png)|![](images/Symbol%20Language%20(2004).431.png)|
 | :-: | :-: |
 
 With *these* access modifiers, the *procedure* is making itself accessible or inaccessible.
 
 
 
-|![](Symbol%20Language%20(2004).432.png)|![](Symbol%20Language%20(2004).433.png)|
+|![](images/Symbol%20Language%20(2004).432.png)|![](images/Symbol%20Language%20(2004).433.png)|
 | :-: | :-: |
 
 With these access modifiers, the *object* is making *itself* accessible or inaccessible.
 
 
-![](Symbol%20Language%20(2004).428.png)
+![](images/Symbol%20Language%20(2004).428.png)
 
 This shows the access symbol for Public. The object is making the procedure accessible to the outside.
 
-![](Symbol%20Language%20(2004).436.png)
+![](images/Symbol%20Language%20(2004).436.png)
 
 This shows the access symbol for Private. The object is making the procedure inaccessible to the outside. The procedure *is* accessible *in*side the object. You could denote this:
 
-![](Symbol%20Language%20(2004).437.png)
+![](images/Symbol%20Language%20(2004).437.png)
 
 The extra access symbol denotes that the procedure makes itself accessible. The access symbol of the object makes the procedure inaccessible to the outside. Procedures are usually accessible to the object symbol they are directly contained in, so the extra access symbol is not really required.
 
 A parent can’t make a child procedure inaccessible to the parent. The effect of this rejected concept is basically identical to giving the child its own abstract type: a derived type that excludes members of its base:
 
-![](Symbol%20Language%20(2004).438.png)
+![](images/Symbol%20Language%20(2004).438.png)
 
 The parent contains a child object. The type of the child is defined right inside the parent: **Abstract Type**. The type is based on the complete type. The abstract type simply excludes a few members. You don’t always need to show the excluded members. In some views you will only see the published members:
 
-![](Symbol%20Language%20(2004).439.png)
+![](images/Symbol%20Language%20(2004).439.png)
 ##### **A Procedure’s Set of Access Controllers**
 Exclusion adds a whole set of access modifiers to a single procedure.
 
-![](Symbol%20Language%20(2004).440.png)
+![](images/Symbol%20Language%20(2004).440.png)
 
 The access symbols in blue are the procedure’s access controllers. The dark grey access symbols are also the procedure’s access controllers, but these were already defined in type A. You can see that in any other type that uses an object of type A, a new set of access modifiers can be imposed. You see that each access controller of the single procedure is shown at a different symbol. The access modifier for a procedure is shown close to the type that imposes the modifier.
 ##### **Changing Access Modifiers at Run Time**
@@ -5687,7 +5724,7 @@ So examples of interesting applications of exclusion are:
 ##### **Protected**
 There is another basic access controller in addition to Accessible and Inaccessible: *Protected*.
 
-![](Symbol%20Language%20(2004).441.png)
+![](images/Symbol%20Language%20(2004).441.png)
 
 *Protected*
 
@@ -5696,15 +5733,15 @@ There is another basic access controller in addition to Accessible and Inaccessi
 When a procedure is *Protected*, it means that it’s inaccessible if contained in a circle, but accessible if contained in a triangle. 
 
 
-|![](Symbol%20Language%20(2004).442.png)|<p></p><p>≈</p>|![](Symbol%20Language%20(2004).443.png)|
+|![](images/Symbol%20Language%20(2004).442.png)|<p></p><p>≈</p>|![](images/Symbol%20Language%20(2004).443.png)|
 | - | :-: | - |
-|![](Symbol%20Language%20(2004).444.png)|<p></p><p>≈</p>|![](Symbol%20Language%20(2004).445.png)|
+|![](images/Symbol%20Language%20(2004).444.png)|<p></p><p>≈</p>|![](images/Symbol%20Language%20(2004).445.png)|
 
 
 A circular descendant automatically privatises a Protected member:
 
 
-|![](Symbol%20Language%20(2004).446.png)|<p></p><p></p><p></p><p>≈</p>|![](Symbol%20Language%20(2004).447.png)|
+|![](images/Symbol%20Language%20(2004).446.png)|<p></p><p></p><p></p><p>≈</p>|![](images/Symbol%20Language%20(2004).447.png)|
 | :- | - | :-: |
 
 The member isn’t accessible to any higher symbols than the first circular descendant.
@@ -5728,9 +5765,9 @@ A procedure with this access modifier is accessible but two levels up the ancest
 
 |*No object level limitation: Public*|
 | :-: |
-|<p>![](Symbol%20Language%20(2004).448.png)</p><p></p>|<p></p><p></p><p>≈</p>|![](Symbol%20Language%20(2004).449.png)|
+|<p>![](images/Symbol%20Language%20(2004).448.png)</p><p></p>|<p></p><p></p><p>≈</p>|![](images/Symbol%20Language%20(2004).449.png)|
 |*Object Level Limitation: Public Up 2*|
-|![](Symbol%20Language%20(2004).450.png)|<p></p><p></p><p>≈</p>|![](Symbol%20Language%20(2004).451.png)|
+|![](images/Symbol%20Language%20(2004).450.png)|<p></p><p></p><p>≈</p>|![](images/Symbol%20Language%20(2004).451.png)|
 
 Level limitation works the same for the Protected access modifier, but gets the additional restriction that comes with that access modifier:
 
@@ -5741,11 +5778,11 @@ A procedure with this access modifier is accessible two levels up the ancestry, 
 
 |*Protected Up 2, contained in three triangles*|
 | :-: |
-|<p>![](Symbol%20Language%20(2004).452.png)</p><p></p>|<p></p><p></p><p></p><p>≈</p>|![](Symbol%20Language%20(2004).453.png)|
+|<p>![](images/Symbol%20Language%20(2004).452.png)</p><p></p>|<p></p><p></p><p></p><p>≈</p>|![](images/Symbol%20Language%20(2004).453.png)|
 |*Protected Up 2, contained in a triangle contained in two circles*|
-|<p>![](Symbol%20Language%20(2004).454.png)</p><p></p>|<p></p><p></p><p>≈</p>|![](Symbol%20Language%20(2004).455.png)|
+|<p>![](images/Symbol%20Language%20(2004).454.png)</p><p></p>|<p></p><p></p><p>≈</p>|![](images/Symbol%20Language%20(2004).455.png)|
 |*Protected Up 2, contained in three circles*|
-|![](Symbol%20Language%20(2004).456.png)|<p></p><p></p><p>≈</p>|![](Symbol%20Language%20(2004).457.png)|
+|![](images/Symbol%20Language%20(2004).456.png)|<p></p><p></p><p>≈</p>|![](images/Symbol%20Language%20(2004).457.png)|
 
 
 Level limitation can also be applied to deeper exclusion than Public and Protected. So a parent can impose level limitation on a child procedure.
@@ -5753,14 +5790,14 @@ Level limitation can also be applied to deeper exclusion than Public and Protect
 
 |*Level limitation on deeper exclusion*|
 | :-: |
-|![](Symbol%20Language%20(2004).458.png)|<p></p><p></p><p></p><p></p><p>≈</p>|![](Symbol%20Language%20(2004).459.png)|
+|![](images/Symbol%20Language%20(2004).458.png)|<p></p><p></p><p></p><p></p><p>≈</p>|![](images/Symbol%20Language%20(2004).459.png)|
 
 You can also apply level limitation for on symbols shalower than the target procedure.
 
 
 |*Level limitation on deeper exclusion*|
 | :-: |
-|![](Symbol%20Language%20(2004).460.png)|<p></p><p></p><p></p><p></p><p>≈</p>|![](Symbol%20Language%20(2004).461.png)|
+|![](images/Symbol%20Language%20(2004).460.png)|<p></p><p></p><p></p><p></p><p>≈</p>|![](images/Symbol%20Language%20(2004).461.png)|
 
 Level limitation is defined there where it doesn’t have effect yet. It only has effect higher in the ancestry. Basic exclusion is always defined there where it has effect. So level limitation automatically excludes members at *n* levels up the ancestry.
 
@@ -5777,11 +5814,11 @@ When an access modifier is paired with a globality level limitation, the access 
 
 |*Public*|
 | :-: |
-|<p>![](Symbol%20Language%20(2004).462.png)</p><p></p>|<p></p><p></p><p>≈</p>|![](Symbol%20Language%20(2004).463.png)|
+|<p>![](images/Symbol%20Language%20(2004).462.png)</p><p></p>|<p></p><p></p><p>≈</p>|![](images/Symbol%20Language%20(2004).463.png)|
 |*Public Globality Up 1*|
-|<p>![](Symbol%20Language%20(2004).464.png)</p><p></p>|<p></p><p></p><p>≈</p>|`  `![](Symbol%20Language%20(2004).465.png)|
+|<p>![](images/Symbol%20Language%20(2004).464.png)</p><p></p>|<p></p><p></p><p>≈</p>|`  `![](images/Symbol%20Language%20(2004).465.png)|
 |*Public Globality Up 2*|
-|![](Symbol%20Language%20(2004).466.png)|<p></p><p></p><p>≈</p>|![](Symbol%20Language%20(2004).467.png)|
+|![](images/Symbol%20Language%20(2004).466.png)|<p></p><p></p><p>≈</p>|![](images/Symbol%20Language%20(2004).467.png)|
 
 Protected Globality Up N works the same as Public, but adds the extra restriction that comes with protected.
 
@@ -5798,7 +5835,7 @@ Access modifiers in Globalities:
 To understand what happens when procedures inside globalities are given access controllers you need to view the globality as an object, that is referenced from any of its ancestor objects:
 
 
-|![](Symbol%20Language%20(2004).468.png)|<p></p><p></p><p></p><p>≈</p>|<p></p><p>![](Symbol%20Language%20(2004).469.png)</p>|
+|![](images/Symbol%20Language%20(2004).468.png)|<p></p><p></p><p></p><p>≈</p>|<p></p><p>![](images/Symbol%20Language%20(2004).469.png)</p>|
 | - | :-: | - |
 
 If a global procedure is Inaccessible, it’s just not accessible at all (*‘outcommented’*), so not really global either. If a global procedure is Private, it’s not really global either, only accessible by the globality object itself, just like something private of a circle object. If a global procedure is Public, then it *is* global. It is then accessible from any ancestor within the globality. 
@@ -5887,7 +5924,7 @@ Shit. What if you want to group members that are excluded. Then the parent adds 
 
 I can use this notation:
 
-![](Symbol%20Language%20(2004).470.png)
+![](images/Symbol%20Language%20(2004).470.png)
 ###### ***Comparison to Other Languages***
 ####### **Visual Basic Friend Members**
 << I have to note the application of the Visual Basic Friend access modifier. The basic access controller Friend isn’t required (Public Friend and Protected Friend). Friend Basic Access Controller means that you make a procedure’s own globality a Friend globality.
@@ -6062,7 +6099,7 @@ If a symbol already has a type line it has to have that type. If it doesn’t ha
 ##### **Interface <>**
 Something like this should be possible:
 
-![](Symbol%20Language%20(2004).471.png)
+![](images/Symbol%20Language%20(2004).471.png)
 
 The point is in the lines of the child of the top symbol. It’s type line points to the center symbol, but it’s interface line points to the interface of ONE of its types interface implementations, not to the joint interface implementation of the type. You have to be able to do this.
 
@@ -6130,8 +6167,13 @@ Procedures
 Previous explanations were required before I could go into the more advanced topics about procedures.
 ##### **Brainstorm**
 Er moet access control zijn voor het stellen van lines, bijvoorbeeld naar de inhoud van een parent.
-## ***Text Code***
-## ***Brainstorm***
+
+
+Text Code
+---------
+
+Brainstorm
+----------
 I need changed events to exist automatically
 
 Perhaps include some appendices that now ended up in Advanced Symbol Language.
@@ -6687,7 +6729,7 @@ After the fixed parameter list, a procedure can allow a variable amount of param
 Variable amount of arguments is a purely textual notation. The diagram notation shows working with the Array object. However, an Array parameter needs to be tagged and in the diagram code this is simply shown by displaying the words ‘Arguments’ with the Array object. < Maybe it has something to do with Language integration. >
 #### ***Text Code***
 ##### **Objects**
-![](Symbol%20Language%20(2004).472.png)
+![](images/Symbol%20Language%20(2004).472.png)
 
 Lines are set in the create procedure.
 ###### ***Lines Shown in Create Procedure***
@@ -6980,7 +7022,7 @@ Symbol can be used to describe a system in full, so to program a system. You can
 
 Assumptions about access controllers, for instance:
 
-![](Symbol%20Language%20(2004).473.png)
+![](images/Symbol%20Language%20(2004).473.png)
 
 This for some reason implies that it’s ONLY accessible from the inside. Formally, the access symbol denotes that it’s simply accessible and that this access controller is imposed by the square.
 
@@ -8109,7 +8151,8 @@ J Code Access Controllers and Interfaces.
 I mentioned friend and public here, but access controllers are more complex in J Code due to embedded globalities. There is basically an infinite amount of access controllers. For that they aren't primarily named anymore, they are systemized. You might have an access controller that ensures that. Maybe what I put in a triangle previously, is actually something that just has special access. Maybe the triangle shouldn't be used there then, but just a special access controller. The triangle can then be used as an interfaces mark. The triangle previously marked all symbols inside the triangle as having this special access. If I don't use the  triangle there anymore then I'd have to change each of those symbols' access controllers. For that... You should be able to group symbols inside a special symbol that controls the access for all the directly contained symbols. So to see the triangle as a special access controller and for that not use the triangle for it anymore, but an actual access controller, I'd have to use access controller symbols (line and line 'terminators) for all the containing symbols, which would drastically make the diagram more difficult. An  idea is to make a special symbol to control the access for all the directly contained symbols. What pops into my head now is: since the triangle would then stand for interface, each member with the same access controller could belong to the same interface. Therefore, an interface symbol (triangle) could be used to group these symbols and the interface symbol gets the access controller instead, which applies it to all directly contained symbols.
 
 
-Groeperingssymbool op basis van wat een client object gebruikt. De interface indeling is op die manier een beetje automatisch. Als je geen interface indeling hebt, dan kun je toch zien 
+Groeperingssymbool op basis van wat een client object gebruikt. De interface indeling is op die manier een beetje automatisch. Als je geen interface indeling hebt, dan kun je toch zien 
+
 
 wat de verschillende clients gebruiken en misschien voor het overzicht toch een interface indeling gebruiken.
 
@@ -8573,7 +8616,7 @@ This documentation does not explain object oriented programming. Perhaps I shoul
 ##### **Hierarchies**
 Another way to see the type/object structure is by coloring the symbols. It can be used to graphically fully expose the inheritance structure.
 
-![](Symbol%20Language%20(2004).474.png)
+![](images/Symbol%20Language%20(2004).474.png)
 
 The above shows all smaller circles in blue. That means that all three have the same type. The darker blue circle is the type of the lighter blue ones. Color depth can express the depth of the type/object hierarchy, like the depth of encapsulation is expressed by the size and residence of the circles. There is a standard complex way of doing this coloring. I will elaborate on this later. 
 
@@ -10603,7 +10646,11 @@ You can express the final database structure in Symbol code and in information l
 Ja, het begint zich een beetje in elkaar te schuiven. Information is niet meer dan een Symbol dialect, met een speciale toepassing. Als je in Symbol een flat object, arrow notatie invoert dan heb je information language al bijna. Hmmm… interessant.
 #### ***UML***
 \- Symbol depicts the technical object oriented organization. I suspect UML does provide some practical points of view, that Symbol does not. Can Symbol somehow serve as an intermediate language which translates to UML and back? Or should something UML-like still be used to express systems in a practical way.
-## ***Notes***
+
+
+Notes
+-----
+
 Maybe I should abolish the word type completely. It’s just the word that is ‘Soort’ in dutch. I think the word Type does much better. A ‘type of object’ is understandable for normal people too, while a ‘type of object’ will make them stop listeningen.
 
 - Use ‘Type’ where you use ‘Type’
