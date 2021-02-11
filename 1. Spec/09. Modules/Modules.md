@@ -16,11 +16,11 @@ The principle of module is explained in the article *Module*. This article demon
 
 A module is displayed as a pentagon shape
 
-![](Modules.001.png)
+![](images/Modules.001.png)
 
 Objects and commands can be placed inside the pentagon.
 
-![](Modules.002.png)
+![](images/Modules.002.png)
 
 Access to global members happens in the diagram in the following way.
 
@@ -28,17 +28,17 @@ Definitions anywhere within the module can access anything declared global. To m
 
 The module itself might not be in sight, when you are zoomed in on *part* of the module. The solution is, that an imaginary reference to the module is always displayed at the highest visible level of containment.
 
-![](Modules.003.png)
+![](images/Modules.003.png)
 
 The imaginary reference to the module displays all the global members of the module. You can point to the global things you see inside this imaginary reference.
 
-![](Modules.004.png)
+![](images/Modules.004.png)
 
 The imaginary references to module are displayed as pentagons, that’s how you recognize it is global things you are accessing.
 
 Here is a module with a reference to another module:
 
-![](Modules.005.png)
+![](images/Modules.005.png)
 
 This makes all the global members of module A, globally accessible from inside module B.
 ## **Ideas**

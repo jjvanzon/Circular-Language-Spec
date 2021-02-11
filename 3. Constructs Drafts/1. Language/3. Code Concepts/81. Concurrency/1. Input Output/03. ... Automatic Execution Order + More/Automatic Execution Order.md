@@ -106,7 +106,7 @@ It can be determined, that part of the sub-commands can run independently. If th
 ##### ***Apart from direct connection between parameters***
 Next to making sub-command directly dependent on eachother by directly tying them together, input output can also be between a sub-commands parameter and a sub-object of the parent command. This does not create a direct dependency between sub-commands, but it does create an indirect dependency.
 
-![](Automatic%20Execution%20Order.001.png)
+![](images/Automatic%20Execution%20Order.001.png)
 
 The parameter of command **A** is a **Value Out** parameter that writes to object **O**. The parameter of command **B** is a **Reference Out** parameter that connects to object **O**. The parameters of command **A** and command **B** are not directly tied to eachother, but they do indirectly related to eachother. This will be further elaborated in *Automatic Execution Order*.
 
@@ -165,7 +165,8 @@ Perhaps that way, multiple threads running at the
 
 same time, can be interweaved, by tying all
 
-the object relations (including relations between procedure calls) together, and figuring out which things 
+the object relations (including relations between procedure calls) together, and figuring out which things 
+
 
 can go simultaneous and which things have to be done one by one.
 
@@ -202,13 +203,15 @@ sequentiality is required, and points at which some things can run in parallel.
 
 I think I can do the same thing the other way around:
 
-some things intended to run in parallel, can be converted into points that require sequality, and points at 
+some things intended to run in parallel, can be converted into points that require sequality, and points at 
+
 
 which parallel execution is allowed.
 
 I just don't know how that's going to look yet.
 
-I have to have a clear view on the atoms of work there are, independant of the earthly meaning of the 
+I have to have a clear view on the atoms of work there are, independant of the earthly meaning of the 
+
 
 work.
 
@@ -220,25 +223,32 @@ It's all just hunches for now.
 
 If methods are tied to the same data...
 
-a relational database doesn't know about that. It can be statements specified in a procedural programming 
+a relational database doesn't know about that. It can be statements specified in a procedural programming 
+
 
 environment, that the database is not aware of at all.
 
-It just gets confronted with multiple methods that want to run when they want to run. My own system 
+It just gets confronted with multiple methods that want to run when they want to run. My own system 
 
-might know they can be in eachother's way, because the system sees both the data and the methods, and 
 
-the way they are tied together. The data is aware of the methods that influence them, the methods and 
+might know they can be in eachother's way, because the system sees both the data and the methods, and 
 
-the data form a single construction of things refering to one another. A single diagram in symbol. Automatic 
+
+the way they are tied together. The data is aware of the methods that influence them, the methods and 
+
+
+the data form a single construction of things refering to one another. A single diagram in symbol. Automatic 
+
 
 execution order may determine which things have to go sequentially and which things need to go parallely.
 
 I just have to list out all the different possibilities for things getting in eachother's way.
 
-I just think that blending the procedures and objects into a single construction just gives you an opportunity 
+I just think that blending the procedures and objects into a single construction just gives you an opportunity 
 
-to mathematically solve the equation and automatically determine what can execute concurrently and what 
+
+to mathematically solve the equation and automatically determine what can execute concurrently and what 
+
 
 can not, and for how long, or up until which point.
 
@@ -286,13 +296,16 @@ The four problems, I can look at and just say: 'this problem only happens, when.
 or: 'this only becomes a problem, when...'
 
 
-Execution order is fixed in normal programming languages, because it is text, in which an order is a fact you 
+Execution order is fixed in normal programming languages, because it is text, in which an order is a fact you 
 
-cannot go around. A diagram does not have a specific order, so the order may be determined based on the 
+
+cannot go around. A diagram does not have a specific order, so the order may be determined based on the 
+
 
 non-sequential correlation between individual elements.
 
-Perhaps this can prevent locking and waiting, and just make a single sequence out of it instead of one thing 
+Perhaps this can prevent locking and waiting, and just make a single sequence out of it instead of one thing 
+
 
 waiting on another.
 
@@ -303,21 +316,21 @@ Execution order is (part) determined by dependency: a procedure that renders a r
 
 Using the dependency rules, argument reference notation (the implicit one) suggests the following execution order:
 
-![](Automatic%20Execution%20Order.002.png)
+![](images/Automatic%20Execution%20Order.002.png)
 
 However, translating it to the explicit reference argument notation:
 
-![](Automatic%20Execution%20Order.003.png)
+![](images/Automatic%20Execution%20Order.003.png)
 
 The dependency looks must different. After the translation to this, execution order is determined fully by parent-child relations: parents execute first, then children.
 
-![](Automatic%20Execution%20Order.004.png)
+![](images/Automatic%20Execution%20Order.004.png)
 
 In this implicit notation **A** *seems* to be dependent of **B**, but in fact **B** is dependent of **A**, because it uses it as a reference argument.
 ###### **Custom Order**
 Apart from execution order imposed by dependency, the programmer can set a custom execution order, which may not conflict with dependency (parent-child) order, but should only be applied where execution order is undetermined by dependency. Actual parent child relations impose execution order. Only the execution order of *actual* siblings can be custom set (not siblings in implicit or abstract notations). The order is denoted with numerical ordinals.
 
-![](Automatic%20Execution%20Order.005.png)
+![](images/Automatic%20Execution%20Order.005.png)
 
 Custom execution can be significant for instance for value transformations to happen in the right order.
 ###### **Brainstorm**

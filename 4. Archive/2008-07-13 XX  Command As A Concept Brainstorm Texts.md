@@ -147,15 +147,15 @@ In that case the parameters are passed *by value*: the value of one object is *c
 
 **Value In**:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.001.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.001.png)
 
 **Value Out**:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.002.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.002.png)
 
 **Value Thru**:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.003.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.003.png)
 
 A read of an output parameter is always accompanied by a write to another object. A write to an input parameter is always preceded by a read from another object. A read operation is always accompanied by a write operation. A value is read from one object, only to be written to another object.
 
@@ -163,25 +163,25 @@ Next to passing a parameter by *value*, you can also pass a parameter by referen
 
 Reference parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.004.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.004.png)
 
 The called command can then read out of the object, that it was given a reference to. In that case it is called a **Reference In** parameter.
 
 **Reference In** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.005.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.005.png)
 
 When a command is passed a reference to an object, and the command writes to the parameter, it is called a **Reference Out** parameter.
 
 **Reference Out** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.006.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.006.png)
 
 Next to **Reference In** and **Reference Out**, there is also **Reference Thru**, which means, that the command both reads and writes to the object passed to it.
 
 **Reference Thru** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.007.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.007.png)
 
 When a command call has an outward reference to an object, this *does* make the object a parameter, but this *does not* determine yet whether it is input, output or throughput. The *in* and *out* in this case refer to whether values are written or read to the object reference. A reference parameter is always sort of like input, though: the parent command passes the object to the sub-command, so the parent inputs something into the sub command. Therefore it can also be called **Reference Outward, Value In** and **Reference Outward, Value Out** But those names are too long. The distinction between **Reference In** and **Reference Out** is about whether values are read or written to the object passed to the sub-command.
 
@@ -189,29 +189,29 @@ The other way around is also possible: the sub-command passes a reference to an 
 
 **Reference Inward** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.008.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.008.png)
 
 This is a **Reference Inward** parameter, as opposed to a **Reference Outward** parameter. The sub-command writes to the output object. The long name of this type of parameter passing is **Reference Inward, Value Out**.
 
 **Reference Inward, Value Out**:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.009.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.009.png)
 
 The sub-command can also read from the output object, but this doesn’t have anything to do with the parameter passing between parent- and sub-commands.
 
 **Reference Inward, Value In**:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.010.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.010.png)
 
 **Reference Inward, Value Thru**:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.011.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.011.png)
 
 Because **Reference Inward, Value Out** is only relevant for the parent’s reading values from an output object, it is shortened to **Object Out**.
 
 **Object Out**:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.008.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.008.png)
 
 The assignments, that come with parameter passing are always done by the parent command. Whether it is **Reference Inward**, **Reference Outward**, or *values*, the assignments that come with parameter passing are always done by the parent command.
 
@@ -249,31 +249,31 @@ Here is a list of the parameter passings, with their short names, and their diag
 
 \- **Value In**
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.001.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.001.png)
 
 \- **Value Out**
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.002.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.002.png)
 
 \- **Value Thru**
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.003.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.003.png)
 
 \- **Reference In**
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.005.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.005.png)
 
 \- **Reference Out**
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.006.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.006.png)
 
 \- **Reference Thru**
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.007.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.007.png)
 
 \- **Object Out**
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.008.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.008.png)
 
 The reason why it is important to keep understanding the three aspects of parameter passing, is that **Rerefence** parameters, even though they can be **In**, **Out** or **Thru**, are always *input* in a way, because it is a reference passed from the parent command to the sub-command.
 
@@ -294,17 +294,17 @@ Perhaps for that reason, no references to original objects will be cloned for by
 
 In parameter passing by value, the parameter object and the object, that is passed the value to or from, are not referring to eachother at all.
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.012.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.012.png)
 
 A value assignment performs a yield over of value.
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.013.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.013.png)
 
 A value assignment *does* have an invisible reference to the parameter, but you won’t see it in the diagram, because an assignment is something so basic, that the notation of it is kept very basic.
 
 The complicated notation:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.014.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.014.png)
 
 (the arrows are pointing to the references invisible earlier)
 
@@ -314,7 +314,7 @@ Next to passing a parameter by *value*, you can also pass a parameter by referen
 
 Reference parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.004.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.004.png)
 
 When a command call has an outward reference to an object, this *does* make the object a parameter, but this *does not* determine yet whether it is input, output or throughput. The *in* and *out* in this case refer to whether *values* are written or read to the object reference. A reference parameter is always sort of like input, though: the parent command passes the object to the sub-command, so the parent inputs something into the sub command. 
 
@@ -336,19 +336,19 @@ A **Value In** parameter works best for a simple object, that stores a single va
 
 A diagram of a command call with a **Value In** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.015.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.015.png)
 
 Or:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.016.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.016.png)
 
 A diagram of a command definition with a **Value In** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.017.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.017.png)
 
 Or:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.018.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.018.png)
 ###### *Value Out*
 A **Value Out** is a value produced by a command, that is yielded over to another object after the call is done. A **Value Out** output parameter is an object inside the command call, that is created right before the command is invoked. The parameter is written to by the command or by one of its sub-commands. The value of the output parameter is copied right after the call, assigning the value to another object.
 
@@ -358,19 +358,19 @@ A **Value Out** parameter works best for a simple object, that stores a single v
 
 Command call with a **Value Out** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.019.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.019.png)
 
 Or:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.020.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.020.png)
 
 A command definition with a **Value Out** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.021.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.021.png)
 
 Or:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.022.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.022.png)
 ###### *Value Thru*
 Throughput by value is when a by value parameter is first written to, then changed by the command, and then the value of the parameter is read from again, and assigned to the original object.
 
@@ -378,21 +378,21 @@ A **Value Thru** parameter works best for a simple object, that stores a single 
 
 Command call with a **Value Thru** parameter.
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.023.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.023.png)
 
 Or:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.024.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.024.png)
 
 In theory, the value could first come from one object, and after the call be written to another object. But that’s not regularly what a **Value Thru** parameter is used for.
 
 Command definition with a **Value Thru** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.025.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.025.png)
 
 Or:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.026.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.026.png)
 ###### *Reference In*
 A **Reference In** parameter can be used to assign a reference to a complex object as the input of the command.
 
@@ -400,19 +400,19 @@ Because a **Reference In** parameter is input, the called command can only *read
 
 Command call with a **Reference In** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.027.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.027.png)
 
 Or:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.028.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.028.png)
 
 Command definition with a **Reference In** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.029.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.029.png)
 
 Or:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.030.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.030.png)
 ###### *Reference Out*
 A **Reference Out** parameter can be used to assign a reference to a complex object to which a command writes output.
 
@@ -420,19 +420,19 @@ Because a **Reference Out** parameter is output, the called command can only *wr
 
 Command call with a **Reference Out** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.031.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.031.png)
 
 Or:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.032.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.032.png)
 
 Command definition with a **Reference Out** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.033.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.033.png)
 
 Or:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.034.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.034.png)
 
 In a sense, a **Reference *Out*** parameter is actually *through*put.
 
@@ -446,19 +446,19 @@ A **Reference Thru** parameter is a pointer to something outside the command. Th
 
 Command call with a **Reference Thru** parameter.
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.035.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.035.png)
 
 Or
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.036.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.036.png)
 
 Command definition with a **Reference Thru** parameter.
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.037.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.037.png)
 
 Or:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.038.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.038.png)
 ###### *Object Out*
 An **Object Out** parameter is an object that resides inside the command. The **Object Out** may be a new object, or redirect to an existing object. Anyway, the command determines which object will be output. The produced object will be referenced from outside the command.
 
@@ -466,13 +466,13 @@ Unlike parameters passed by reference, an **Object Out** parameter is *referred 
 
 A diagram of a command call with an **Object Out** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.039.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.039.png)
 
 A diagram of a command definition with an **Object Out** parameter:
 
 
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.040.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.040.png)
 
 Unlike **By Reference** and **By Value** parameters, there are no three variations for parameters referred *to*. The reason ‘**Object**’ parameter passing does not have three variations, like the **Value** and **Reference** parameter passings, is that the command’s reading and writing values to the object is irrelevant to the *parameter passing*. **Object Out** does not have anything to do with whether the command call reads or writes from the object it outputs. That is irrelevant to the parameter *passing*.
 
@@ -481,11 +481,11 @@ A reference to an **Object Out** parameter causes an implicit run of the command
 ###### *Parameter Passing Notations Are Implicit*
 A reference parameter is assigned an object.
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.041.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.041.png)
 
 The assignment of an object can also be replaced with the *redirection* of an object.
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.042.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.042.png)
 
 The target symbol is not the object itself, but an *object reference*. The parameter is a *reference* to an object reference. This makes the parameter a pointer to a pointer.
 
@@ -497,7 +497,7 @@ A reference to an **Object Out** parameter is also an implicit notation for an o
 
 The notations of value transmission for Reference parameters is also just an abstract expression:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.027.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.027.png)
 
 It does not display which specific values are read or what the read value is copied to. It does however express the type of parameter passing.
 
@@ -511,11 +511,11 @@ If a parameter is for instance **Reference Thru**, it can only point *to* someth
 
 The caller can not redirect the **Object Out** parameter. The call itself may be able to redirect the **Object Out** parameter, but not to something outside the call, because the call is only aware of what’s reachable *inside* the call. This actually counts for objects as well. So the following situation is not possible:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.043.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.043.png)
 
 If the caller wants all the object symbols to represent the same object, it should do it for instance like this:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.044.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.044.png)
 ###### *Transfer of indirect values*
 Something is input, output or throughput when values are read from it or written to it. But it does not need to be the value of one object being written to another object. It can also be values of sub-objects that are yielded over from one object to another. In that case, the parent object is considered input or output parameters, even though only the values of its sub-objects are used.
 
@@ -527,13 +527,13 @@ For an **Object Out** parameter, the type of value transfer does not matter, so 
 
 When it is direct value transfer, an assignment call is shown in the diagram. 
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.045.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.045.png)
 
 The above displays a **Reference In** parameter inside the call, whose direct value is used.
 
 If it is indirect value transfers, then the diagram does not show an assignment call.
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.046.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.046.png)
 
 The above displays a command that uses values from the sub-objects of the **Reference In** parameter.
 
@@ -567,67 +567,67 @@ One parameter type can only be tied to a parameter with specific other parameter
 
 A **Value In** parameter can be only be tied to a **Value Out** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.047.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.047.png)
 
 A **Value Out** parameter can only be tied to a **Value In** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.048.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.048.png)
 
 A **Value Thru** parameter can not be tied to another parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.049.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.049.png)
 
 This is because it creates a circularity in which one parameter writes its values to the other, and the other parameter writes its value to the first parameter. It is just an unlogical circular situation.
 
 A **Reference In** parameter can only be tied to an **Object Out** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.050.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.050.png)
 
 A **Reference Out** parameter can only be tied to an **Object Out** parameter.
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.051.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.051.png)
 
 A **Reference Thru** parameter can only be tied to an **Object Out** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.052.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.052.png)
 
 An **Object Out** parameter can be tied to a **Reference In**, **Reference Out** or **Reference Thru** parameter. In short an **Object Out** parameter can only be tied to a **Reference** parameter:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.053.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.053.png)
 
 So to summarize it:
 
 Only **Value In** parameters and **Value Out** parameters can be tied together:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.048.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.048.png)
 
 Only **Object Out** and **Reference** parameters can be tied together:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.054.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.054.png)
 
 However, these direct connections between parameters is an implicit notation of reads and writes executed by the parent.
 
 A direct value transfer:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.055.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.055.png)
 
 Is indeed already the explicit notation of it: the value of one parameter is assigned as the value of the other parameter.
 
 An *in*direct value transfer:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.056.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.056.png)
 
 is in fact an implicit notation of a cloning operation performed by the parent. For indirect value transfers between **By Value** parameters, you might indicate the cloning depth:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.057.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.057.png)
 
 The explicit notation of the **Clone** call:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.058.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.058.png)
 
 The command definitions with an indirect by value parameter, with a cloning depth indicated might look like this:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.059.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.059.png)
 
 Looking at the explicit notation of the **Clone** call above, because the **By Value** parameters are referenced by the **Clone** operation, this sort of makes the by value parameters:
 
@@ -639,11 +639,11 @@ However, this is not the way you want to look at it when programming. This is ju
 
 For object transfers between **Object Out** parameters and **Reference** parameters, the implicit notation is:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.060.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.060.png)
 
 However, this direct connection between parameters is an implicit notation of an object assignment executed by the parent:
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.061.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.061.png)
 
 So the connection from the **By Reference** parameter to the **Object Out** parameter isn’t really a reference to a reference; it is an object assignment.
 
@@ -667,7 +667,7 @@ Next to making sub-command directly dependent on eachother like that,
 
 input output can also be between a sub-commands parameter and a sub-object of the parent command. This does not create a direct dependency between sub-commands, but it does create an indirect dependency.
 
-![](2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.062.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.062.png)
 
 The parameter of command **A** is a **Value Out** parameter that writes to object **O**. The parameter of command **B** is a **Reference Out** parameter that connects to object **O**. The parameters of command **A** and command **B** are not directly tied to eachother, but they do indirectly related to eachother. This will be further elaborated in *Automatic Execution Order*.
 ##### **Further parameter passing stereotyping**

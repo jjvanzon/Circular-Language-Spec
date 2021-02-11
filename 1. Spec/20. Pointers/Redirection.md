@@ -10,11 +10,11 @@ Lines redirect a *system aspect* of a symbol to another symbol.
 
 For instance: an object symbol can serve as its own object:
 
-![](Redirection.001.png)
+![](images/Redirection.001.png)
 
 But if it has an object line, it is no more than a pointer to an object, rather than the object itself, while te target of the line is regarded the real object. 
 
-![](Redirection.002.png)
+![](images/Redirection.002.png)
 
 *A is a pointer, B is the object.*
 
@@ -26,13 +26,13 @@ The target of a line, the *line target*, is also called a *target symbol*, while
 ##### ***Source***
 Be careful with the term *source* in this context, though. You can speak of the source of a line:
 
-![](Redirection.003.jpeg)
+![](images/Redirection.003.jpeg)
 
 **A** is considered the line’s source. **B** is the opposite party: the *target*. *Source* in this context expresses a party of a line. 
 
 When you use the term *source* to denote a *relation between symbols*, it actually means *the same* as the term target. The terms are not opposites, they’re equivalents.
 
-![](Redirection.004.jpeg)
+![](images/Redirection.004.jpeg)
 
 **Type** can be considered **Object**’s type target, because **Object**’s type line points to it. **Type** can also be considered **Object**’s type source, because **Type** serves as the type of **Object**.
 ##### ***‘Target’***

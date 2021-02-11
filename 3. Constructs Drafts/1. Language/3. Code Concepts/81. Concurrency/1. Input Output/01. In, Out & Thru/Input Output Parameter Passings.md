@@ -41,7 +41,7 @@ JJ
 ### **By Value in a Diagram**
 The diagram below represents a By Value parameter tied to the value source or target:
 
-![](Input%20Output%20Parameter%20Passings.001.png)
+![](images/Input%20Output%20Parameter%20Passings.001.png)
 
 The diamond is the command. The circle inside it is the parameter. The circle outside the command is the value source or target. And the wavy line indicates value transmission between the parameter and the other object.
 
@@ -49,13 +49,13 @@ It is actually a value assignment, that performs a yield over of value.
 
 Here is a diagram showing such a value assignment:
 
-![](Input%20Output%20Parameter%20Passings.002.png)
+![](images/Input%20Output%20Parameter%20Passings.002.png)
 
 A value assignment *does* have an invisible reference to the parameter, but you won’t see it in the diagram, because an assignment is something so basic, that the notation of it is kept very basic.
 
 The complicated notation:
 
-![](Input%20Output%20Parameter%20Passings.003.png)
+![](images/Input%20Output%20Parameter%20Passings.003.png)
 
 (the arrows are pointing to the references invisible earlier)
 
@@ -63,7 +63,7 @@ But this still does not tie the source and target symbols directly together.
 
 The notation of a By Value cloning operation looks as follows:
 
-![](Input%20Output%20Parameter%20Passings.004.png)
+![](images/Input%20Output%20Parameter%20Passings.004.png)
 
 The number 2 stands for the cloning depth.
 
@@ -73,7 +73,7 @@ Next to passing a parameter by *value*, you can also pass a parameter by referen
 
 Reference parameter:
 
-![](Input%20Output%20Parameter%20Passings.005.png)
+![](images/Input%20Output%20Parameter%20Passings.005.png)
 
 Therefore it can also be called Reference Outward, Value In and Reference Outward, Value Out But those names are too long. The distinction between Reference In and Reference Out is about whether values are read or written to the object passed to the sub-command.
 
@@ -89,37 +89,37 @@ A Value In parameter works best simple objects, that stores a single value, but 
 ### **Value In in a Diagram**
 A diagram of an executable command with a Value In parameter:
 
-![](Input%20Output%20Parameter%20Passings.006.png)
+![](images/Input%20Output%20Parameter%20Passings.006.png)
 
 Here is a diagram of an unfilled-in Value In parameter of an executable command:
 
-![](Input%20Output%20Parameter%20Passings.007.png)
+![](images/Input%20Output%20Parameter%20Passings.007.png)
 
 A Value In parameter can also have an indication of a cloning depth, which is displayed as follows:
 
-![](Input%20Output%20Parameter%20Passings.008.png)
+![](images/Input%20Output%20Parameter%20Passings.008.png)
 
 Or for an unfilled-in Value In parameter:
 
-![](Input%20Output%20Parameter%20Passings.009.png)
+![](images/Input%20Output%20Parameter%20Passings.009.png)
 
 The pictures above display a cloning depth of 2, but any cloning depth can be used.
 
 A command definition or other inactive command displays Value In parameters the exact same way. The Value In parameter of a command definition is usually not filled in:
 
-![](Input%20Output%20Parameter%20Passings.010.png)
+![](images/Input%20Output%20Parameter%20Passings.010.png)
 
 But the Value In parameter of an inactive command could be filled in just as well:
 
-![](Input%20Output%20Parameter%20Passings.011.png)
+![](images/Input%20Output%20Parameter%20Passings.011.png)
 
 The fact, that it is an inactive command, means that it will not run, but for the rest it is the same as any other command object, so it basically has the same possibilities.
 
 Here is the expression of cloning depth for Value In parameters of inactive commands, which is the same notation as for active commands:
 
-![](Input%20Output%20Parameter%20Passings.012.png)
+![](images/Input%20Output%20Parameter%20Passings.012.png)
 
-![](Input%20Output%20Parameter%20Passings.013.png)
+![](images/Input%20Output%20Parameter%20Passings.013.png)
 ### **Value Out**
 A Value Out parameter is a value produced by a command, that can be yielded over to another object after the command is done. A Value Out parameter is an object inside the command call, that is written to by the command or by one of its sub-commands. After execution of the command the value of the output parameter can be copied, by assigning the value to another object.
 
@@ -127,37 +127,37 @@ As said in the article By Value, the parameter is either a copy of a single valu
 ### **Value Out in a Diagram**
 A diagram of an executable command with a Value Out parameter looks as follows:
 
-![](Input%20Output%20Parameter%20Passings.014.png)
+![](images/Input%20Output%20Parameter%20Passings.014.png)
 
 The following diagram shows the Value Out parameter with an assignment target indicated to which the output value will be transferred:
 
-![](Input%20Output%20Parameter%20Passings.015.png)
+![](images/Input%20Output%20Parameter%20Passings.015.png)
 
 A Value Out parameter can also have an indication of a cloning depth, which is displayed as follows:
 
-![](Input%20Output%20Parameter%20Passings.016.png)
+![](images/Input%20Output%20Parameter%20Passings.016.png)
 
 Or with the target of the output filled in:
 
-![](Input%20Output%20Parameter%20Passings.017.png)
+![](images/Input%20Output%20Parameter%20Passings.017.png)
 
 The pictures above display a cloning depth of 2, but any cloning depth can be used.
 
 A command definition or other inactive command displays Value Out parameters the exact same way. The Value Out parameter of a command definition will look like this:
 
-![](Input%20Output%20Parameter%20Passings.018.png)
+![](images/Input%20Output%20Parameter%20Passings.018.png)
 
 The Value Out parameter of an inactive command can also be read and written to a target object, like this:
 
-![](Input%20Output%20Parameter%20Passings.019.png)
+![](images/Input%20Output%20Parameter%20Passings.019.png)
 
 The fact, that it is an inactive command, means that it will not run, but for the rest it is the same as any other command object, so it basically has the same possibilities, even reading and writing its parameters.
 
 Here is the expression of cloning depth for Value Out parameters of inactive commands, which is the same notation as for active commands:
 
-![](Input%20Output%20Parameter%20Passings.020.png)
+![](images/Input%20Output%20Parameter%20Passings.020.png)
 
-![](Input%20Output%20Parameter%20Passings.021.png)
+![](images/Input%20Output%20Parameter%20Passings.021.png)
 ### **Value Thru**
 Throughput by value is when a by value parameter is first written to, then changed by the command, and then the value of the parameter is read from again, and assigned to the original object. 
 
@@ -169,55 +169,55 @@ In theory the value could first come from one object, and after the call be writ
 ### **Value Thru in a Diagram**
 A diagram of an executable command with a Value Thru parameter:
 
-![](Input%20Output%20Parameter%20Passings.022.png)
+![](images/Input%20Output%20Parameter%20Passings.022.png)
 
 Here is a diagram of an unfilled-in Value Thru parameter of an executable command:
 
-![](Input%20Output%20Parameter%20Passings.023.png)
+![](images/Input%20Output%20Parameter%20Passings.023.png)
 
 A Value Thru parameter can also have an indication of a cloning depth, which is displayed as follows:
 
-![](Input%20Output%20Parameter%20Passings.024.png)
+![](images/Input%20Output%20Parameter%20Passings.024.png)
 
 Or for an unfilled-in Value Thru parameter:
 
-![](Input%20Output%20Parameter%20Passings.025.png)
+![](images/Input%20Output%20Parameter%20Passings.025.png)
 
 The pictures above display a cloning depth of 2, but any cloning depth can be used.
 
 A command definition or other inactive command displays Value Thru parameters the exact same way. The Value Thru parameter of a command definition is usually not filled in:
 
-![](Input%20Output%20Parameter%20Passings.026.png)
+![](images/Input%20Output%20Parameter%20Passings.026.png)
 
 But the Value Thru parameter of an inactive command could be filled in just as well:
 
-![](Input%20Output%20Parameter%20Passings.027.png)
+![](images/Input%20Output%20Parameter%20Passings.027.png)
 
 The fact, that it is an inactive command, means that it will not run, but for the rest it is the same as any other command object, so it basically has the same possibilities.
 
 Here is the expression of cloning depth for Value Thru parameters of inactive commands, which is the same notation as for active commands:
 
-![](Input%20Output%20Parameter%20Passings.028.png)
+![](images/Input%20Output%20Parameter%20Passings.028.png)
 
-![](Input%20Output%20Parameter%20Passings.029.png)
+![](images/Input%20Output%20Parameter%20Passings.029.png)
 ### **Reference In**
 A Reference In parameter can be used to assign a reference to a complex object as the input of the command. Because a Reference In parameter is input, the called command can only *read* out of the object, that it was given a reference to.
 ### **Reference In in a Diagram**
 A diagram of an executable command with a Reference In parameter looks as follows:
 
-![](Input%20Output%20Parameter%20Passings.030.png)
+![](images/Input%20Output%20Parameter%20Passings.030.png)
 
 When a Reference In parameter does not have a reference target filled in yet, then the diagram looks as follows:
 
-![](Input%20Output%20Parameter%20Passings.031.png)
+![](images/Input%20Output%20Parameter%20Passings.031.png)
 
 An inactive command displays Reference In parameters the exact same way. The fact, that it is an inactive command, means, that it will not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command. The reference target of a Reference In parameter of an inactive command definition is usually not filled in.
 
-![](Input%20Output%20Parameter%20Passings.032.png)
+![](images/Input%20Output%20Parameter%20Passings.032.png)
 
 Here is a picture in which a command definition’s Reference In parameter does have its reference target filled in:
 
-![](Input%20Output%20Parameter%20Passings.033.png)
+![](images/Input%20Output%20Parameter%20Passings.033.png)
 
 Do note, that the expression of read-write direction is not a connector point, like for Value parameters. It is an abstract expression of value direction. You can not connect anything to it. The reference target connector, however, *is* a connector point.
 ### **Reference Out**
@@ -229,21 +229,21 @@ When output is *alteration* of an *existing* object, it could be considered thro
 ### **Reference Out in a Diagram**
 A diagram of an executable command with a Reference In parameter looks as follows:
 
-![](Input%20Output%20Parameter%20Passings.034.png)
+![](images/Input%20Output%20Parameter%20Passings.034.png)
 
 The access mark on the left is a connector point, to which the reference target of the Reference Out parameter can be attached. Here is a diagram in which a reference target is attached to the Reference Out parameter.
 
-![](Input%20Output%20Parameter%20Passings.035.png)
+![](images/Input%20Output%20Parameter%20Passings.035.png)
 
 The fact that the reference goes outwards, does not make it an Out parameter. That just makes it a Reference parameter. The fact, that the command only *writes* to the parameter makes it an Out parameter, so the term Out is about value direction, not reference direction.
 
 An inactive command displays Reference Out parameters the exact same way. The fact, that it is an inactive command, means, that it will not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command. The reference target of a Reference Out parameter of an inactive command definition is usually not filled in:
 
-![](Input%20Output%20Parameter%20Passings.036.png)
+![](images/Input%20Output%20Parameter%20Passings.036.png)
 
 Here is a picture in which a command definition’s Reference Out parameter does have its reference target filled in:
 
-![](Input%20Output%20Parameter%20Passings.037.png)
+![](images/Input%20Output%20Parameter%20Passings.037.png)
 
 Note, that the indication of read-write direction is an abstract expression of the value direction inside the command. You can not connect anything to it.
 ### **Reference Thru**
@@ -251,19 +251,19 @@ Next to Reference In and Reference Out, there is also Reference Thru, which mean
 ### **Reference Thru in a Diagram**
 A diagram of an executable command with a Reference Thru parameter looks as follows:
 
-![](Input%20Output%20Parameter%20Passings.038.png)
+![](images/Input%20Output%20Parameter%20Passings.038.png)
 
 When a Reference Thru parameter does not have a reference target filled in yet, then the diagram looks as follows:
 
-![](Input%20Output%20Parameter%20Passings.039.png)
+![](images/Input%20Output%20Parameter%20Passings.039.png)
 
 An inactive command displays Reference Thru parameters the exact same way. The fact, that it is an inactive command, means, that it will not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command. The reference target of a Reference Thru parameter of an inactive command definition is usually not filled in.
 
-![](Input%20Output%20Parameter%20Passings.040.png)
+![](images/Input%20Output%20Parameter%20Passings.040.png)
 
 Here is a picture in which a command definition’s Reference Thru parameter does have its reference target filled in:
 
-![](Input%20Output%20Parameter%20Passings.041.png)
+![](images/Input%20Output%20Parameter%20Passings.041.png)
 
 Do note, that the expression of read-write direction is not a connector point. It is an abstract expression of value direction. You can not connect anything to it. The reference target connector, however, *is* a connector point.
 ### **Object Out**
@@ -298,19 +298,19 @@ An Object Out parameter can also be an existing command. In that case the Object
 ### **Object Out in a Diagram**
 A diagram of an executable command with an Object Out parameter looks as follows:
 
-![](Input%20Output%20Parameter%20Passings.042.png)
+![](images/Input%20Output%20Parameter%20Passings.042.png)
 
 The outer end of the line is an connection point to which you can connect an object to refer to the Object Out parameter:
 
-![](Input%20Output%20Parameter%20Passings.043.png)
+![](images/Input%20Output%20Parameter%20Passings.043.png)
 
 An inactive command displays Object Out parameters the exact same way. The fact, that it is an inactive command, means, that it will not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command. The object refererring to the Object Out parameter of an inactive command definition is usually not filled in.
 
-![](Input%20Output%20Parameter%20Passings.044.png)
+![](images/Input%20Output%20Parameter%20Passings.044.png)
 
 Here is a picture in which a command definition’s Object Out parameter does have a referrer:
 
-![](Input%20Output%20Parameter%20Passings.045.png)
+![](images/Input%20Output%20Parameter%20Passings.045.png)
 ### **Three Parameter Passing Elements**
 By Value, Reference Outward and Reference Inward are the different reference situations a parameter can have. But this tells us nothing about whether a parameter is input, output or throughput. What determines, whether it is in, out or thru is whether values are written to the parameter or read from the parameter.
 
@@ -350,31 +350,31 @@ Here is a list of the parameter passings, with their short names, and their diag
 
 \- Value In
 
-![](Input%20Output%20Parameter%20Passings.046.png)
+![](images/Input%20Output%20Parameter%20Passings.046.png)
 
 \- Value Out
 
-![](Input%20Output%20Parameter%20Passings.047.png)
+![](images/Input%20Output%20Parameter%20Passings.047.png)
 
 \- Value Thru
 
-![](Input%20Output%20Parameter%20Passings.048.png)
+![](images/Input%20Output%20Parameter%20Passings.048.png)
 
 \- Reference In
 
-![](Input%20Output%20Parameter%20Passings.049.png)
+![](images/Input%20Output%20Parameter%20Passings.049.png)
 
 \- Reference Out
 
-![](Input%20Output%20Parameter%20Passings.050.png)
+![](images/Input%20Output%20Parameter%20Passings.050.png)
 
 \- Reference Thru
 
-![](Input%20Output%20Parameter%20Passings.051.png)
+![](images/Input%20Output%20Parameter%20Passings.051.png)
 
 \- Object Out
 
-![](Input%20Output%20Parameter%20Passings.052.png)
+![](images/Input%20Output%20Parameter%20Passings.052.png)
 
 The reason why it is important to keep understanding the three aspects of parameter passing, is that Rerefence parameters, even though they can be In, Out or Thru, are always *input* in a way, because it is a reference passed from the parent command to the sub-command.
 
@@ -388,29 +388,29 @@ One parameter type can only be tied to a parameter with specific other parameter
 
 Value In parameters and Value Out parameters can only be tied together:
 
-![](Input%20Output%20Parameter%20Passings.053.png)
+![](images/Input%20Output%20Parameter%20Passings.053.png)
 
 Only Object Out and Reference parameters can be tied together:
 
-![](Input%20Output%20Parameter%20Passings.054.png)
+![](images/Input%20Output%20Parameter%20Passings.054.png)
 
 Tying parameters together directly states a direct dependency. No direct reference to the parameter objects are required inside the parent command.
 
 A Value Thru parameter can not be tied to another parameter:
 
-![](Input%20Output%20Parameter%20Passings.055.png)
+![](images/Input%20Output%20Parameter%20Passings.055.png)
 
 This is because it creates a circularity in which one parameter writes its values to the other, and the other parameter writes its value to the first parameter. It is just an unlogical circular situation.
 
 When directly tying together value parameters, cloning depth can be intermixed:
 
-![](Input%20Output%20Parameter%20Passings.056.png)
+![](images/Input%20Output%20Parameter%20Passings.056.png)
 
-![](Input%20Output%20Parameter%20Passings.057.png)
+![](images/Input%20Output%20Parameter%20Passings.057.png)
 
 Effectively, it will be the lowest cloning depth that will be transferred to the input parameter on the right. When the Value In and Value Out parameters have the same cloning depth, it is drawn out as follows:
 
-![](Input%20Output%20Parameter%20Passings.058.png)
+![](images/Input%20Output%20Parameter%20Passings.058.png)
 ### **Strict about parameter passing**
 I really want the programming environment, to not so easily accept, that a parameter is typed throughput, when it is only read from. Because otherwise you rely too much on courtesy of the programmer, to make the whole system function correctly.
 
@@ -796,15 +796,15 @@ Procedures can have *parameters*: instructions passed along with the procedure t
 
 Text is an *idea*. It is an *object*. It is *objects* that serve as parameters.
 
-![](Input%20Output%20Parameter%20Passings.059.jpeg "Text Parameter")
+![](images/Input%20Output%20Parameter%20Passings.059.jpeg "Text Parameter")
 
 The procedure can do whatever it wants with the parameters passed to it. All it really can do with it is again pass the parameter to another procedure *or* call procedures of the parameter.
 
-![](Input%20Output%20Parameter%20Passings.060.jpeg "Pass on Text Parameter")
+![](images/Input%20Output%20Parameter%20Passings.060.jpeg "Pass on Text Parameter")
 
 *Pass the Text parameter on to the next procedure (Format Text).*
 
-![](Input%20Output%20Parameter%20Passings.061.jpeg "Call Text Parameter Members")
+![](images/Input%20Output%20Parameter%20Passings.061.jpeg "Call Text Parameter Members")
 
 *Call the a procedure of the Text parameter.*
 
@@ -825,7 +825,7 @@ The procedure output method above is hardly used ever used. That’s because you
 
 This, however requires you to *write* the line of an argument.
 
-![](Input%20Output%20Parameter%20Passings.062.jpeg "7")
+![](images/Input%20Output%20Parameter%20Passings.062.jpeg "7")
 
 Nothing is *read* in the epilog in this case. Even though the argument functions as *output*, it’s still a *write* argument.
 
@@ -848,11 +848,11 @@ Apart from writing in the prolog and reading in the epilog, there’s a third pe
 
 The diagrammatic effect of this is the following. A member can be accessed by the diamond that contains it, and by all its sub diamonds:
 
-![](Input%20Output%20Parameter%20Passings.063.png)
+![](images/Input%20Output%20Parameter%20Passings.063.png)
 
 I said, that procedures called by a procedure can access its arguments. That suggests that the procedure that accesses the member can be somewhere else than inside the member’s diamond:
 
-![](Input%20Output%20Parameter%20Passings.064.png)
+![](images/Input%20Output%20Parameter%20Passings.064.png)
 
 Note, however, that it’s not the definition that’s accessing member **m**. It’s the call that’s accessing member **m**, and the call is contained inside the diamond that contains member **m**.
 
@@ -868,15 +868,15 @@ More rules on that are covered in the *Execution Basics* section.
 ###### **Referencing Square Members: Implicit Call**
 It is really only allowed to reference members of diamonds:
 
-![](Input%20Output%20Parameter%20Passings.065.jpeg "Picture 12")
+![](images/Input%20Output%20Parameter%20Passings.065.jpeg "Picture 12")
 
 When you do reference a square’s member:
 
-![](Input%20Output%20Parameter%20Passings.066.jpeg "Picture 13")
+![](images/Input%20Output%20Parameter%20Passings.066.jpeg "Picture 13")
 
 You’re actually seeing only part of the diagram. The reference to a square member actually creates a sibling diamond which is a call to the square:
 
-![](Input%20Output%20Parameter%20Passings.065.jpeg "Picture 12")
+![](images/Input%20Output%20Parameter%20Passings.065.jpeg "Picture 12")
 
 The diamond missing when referencing the square member is called the implicit call to the square.
 
@@ -884,27 +884,27 @@ Even though the Symbol code *really* *defines* a reference to a square member, w
 
 The implied diamond always becomes the sibbling of the reference to a member. In a more encapsulative situation, this:
 
-![](Input%20Output%20Parameter%20Passings.067.jpeg "Picture 14")
+![](images/Input%20Output%20Parameter%20Passings.067.jpeg "Picture 14")
 
 Is the implicit notation of this:
 
-![](Input%20Output%20Parameter%20Passings.068.jpeg "Picture 15")
+![](images/Input%20Output%20Parameter%20Passings.068.jpeg "Picture 15")
 
 The reference to a square member implicitly creates a call to the square right next to it.
 
 Whenever you reference a square member, an implicit call is made.
 
-![](Input%20Output%20Parameter%20Passings.069.jpeg "Picture 16")
+![](images/Input%20Output%20Parameter%20Passings.069.jpeg "Picture 16")
 
 \=
 
-![](Input%20Output%20Parameter%20Passings.070.jpeg "Picture 17b")
+![](images/Input%20Output%20Parameter%20Passings.070.jpeg "Picture 17b")
 
 <Add some access symbols>
 
 If you want to access members of a procedure using only one call, you have to explicitly notate the diamond that is the call.
 
-![](Input%20Output%20Parameter%20Passings.071.jpeg "Picture 18")
+![](images/Input%20Output%20Parameter%20Passings.071.jpeg "Picture 18")
 
 <Add some access symbols>
 
@@ -912,36 +912,36 @@ But the accesses can only only take place just before the call and just after.
 
 But as I said: child diamonds can access their parent diamond’s members if the parent diamonds allows it.
 
-![](Input%20Output%20Parameter%20Passings.072.jpeg "Picture 19")
+![](images/Input%20Output%20Parameter%20Passings.072.jpeg "Picture 19")
 
 ###### **An object symbol as a pointer to a procedure symbol: Implicit return value reference.**
 You can also let an object symbol point to a procedure symbol.
 
-![](Input%20Output%20Parameter%20Passings.073.jpeg "Picture 20")
+![](images/Input%20Output%20Parameter%20Passings.073.jpeg "Picture 20")
 
 In that case you’re actually implicitly referencing the return value.
 
-![](Input%20Output%20Parameter%20Passings.074.jpeg "Picture 21")
+![](images/Input%20Output%20Parameter%20Passings.074.jpeg "Picture 21")
 ###### **Implicit Call and Implicit Return Value Reference**
 If an object symbol is a reference to a square, it’s both an implicit call and an implicit return value reference.
 
-![](Input%20Output%20Parameter%20Passings.075.jpeg "Picture 22")
+![](images/Input%20Output%20Parameter%20Passings.075.jpeg "Picture 22")
 
-![](Input%20Output%20Parameter%20Passings.076.jpeg "Picture 23")
+![](images/Input%20Output%20Parameter%20Passings.076.jpeg "Picture 23")
 
-![](Input%20Output%20Parameter%20Passings.077.jpeg "Picture 24")
+![](images/Input%20Output%20Parameter%20Passings.077.jpeg "Picture 24")
 
 in the second picture you see the explicit call. The third picture adds the explicit return value reference. You don’t first do the explicit call and then the explicit return value reference. That order is totally arbitrary, you can also see it like this:
 
-![](Input%20Output%20Parameter%20Passings.075.jpeg "Picture 22")
+![](images/Input%20Output%20Parameter%20Passings.075.jpeg "Picture 22")
 
-![](Input%20Output%20Parameter%20Passings.078.jpeg "Picture 25")
+![](images/Input%20Output%20Parameter%20Passings.078.jpeg "Picture 25")
 
-![](Input%20Output%20Parameter%20Passings.077.jpeg "Picture 24")
+![](images/Input%20Output%20Parameter%20Passings.077.jpeg "Picture 24")
 ###### **Reference to Other Out Parameters**
 An object reference to a procedure can only be a reference to the procedure’s return value. If you want to reference other out paramters, you have to reference them explicitly.
 
-![](Input%20Output%20Parameter%20Passings.079.jpeg "Picture 26")
+![](images/Input%20Output%20Parameter%20Passings.079.jpeg "Picture 26")
 
 <o = out, r = return>
 
@@ -950,12 +950,12 @@ An object reference to a procedure can only be a reference to the procedure’s 
 There are three ways to use arguments: state read, state write and passing by reference:
 
 
-|<p></p><p>![](Input%20Output%20Parameter%20Passings.080.png)</p><p>*State read*</p>|<p>![](Input%20Output%20Parameter%20Passings.081.png)</p><p>*State write*</p>|<p></p><p></p><p>![](Input%20Output%20Parameter%20Passings.082.png)</p><p>*Pass by reference*</p>|
+|<p></p><p>![](images/Input%20Output%20Parameter%20Passings.080.png)</p><p>*State read*</p>|<p>![](images/Input%20Output%20Parameter%20Passings.081.png)</p><p>*State write*</p>|<p></p><p></p><p>![](images/Input%20Output%20Parameter%20Passings.082.png)</p><p>*Pass by reference*</p>|
 | :-: | :-: | :-: |
 
 There seems to be one more: *argument reference*.
 
-![](Input%20Output%20Parameter%20Passings.083.png)
+![](images/Input%20Output%20Parameter%20Passings.083.png)
 
 *Argument reference*
 
@@ -963,19 +963,19 @@ This is however not possible, because the argument destroys after execution, so 
 
 Argument reference is actually a fictive concept.
 
-![](Input%20Output%20Parameter%20Passings.083.png)
+![](images/Input%20Output%20Parameter%20Passings.083.png)
 
 It is actually an implicit notation for a *reference argument*:
 
-![](Input%20Output%20Parameter%20Passings.082.png)
+![](images/Input%20Output%20Parameter%20Passings.082.png)
 
 There’s more to getting the explicit notation of argument reference than just inversion of direction. Consider this diagram:
 
-![](Input%20Output%20Parameter%20Passings.084.png)
+![](images/Input%20Output%20Parameter%20Passings.084.png)
 
 This diagram has two argument references in it. If you would simply invert the direction you’d get the following:
 
-![](Input%20Output%20Parameter%20Passings.085.png)
+![](images/Input%20Output%20Parameter%20Passings.085.png)
 
 *(Note that the last access symbol didn’t change, because that line isn’t an argument reference)*
 
@@ -983,7 +983,7 @@ It still has a argument reference in it.
 
 The explicit notation that solves this is the following:
 
-![](Input%20Output%20Parameter%20Passings.086.png)
+![](images/Input%20Output%20Parameter%20Passings.086.png)
 
 The child diamond is inserted as a substitute for the higher diamond it refers to. This offers a solution because the parent of the child diamond will exist when the child exists. {This might be an issue for multiple execution of a diamond. It also raises the question what happens when you consult something of the righter diamond. Is the bigger diamond executed first? What?} That’s rule two for getting to the explicit notation of parameter reference.
 
@@ -991,23 +991,23 @@ The child diamond is inserted as a substitute for the higher diamond it refers t
 
 There’s one more problem. The explicit notation introduced so fat has a flaw: the object has two line targets! If a situation as such occurs, the directions of all flawful non-argument references are inverted:
 
-![](Input%20Output%20Parameter%20Passings.087.png)
+![](images/Input%20Output%20Parameter%20Passings.087.png)
 
 Which gives is rule three of the explicit notation of argument reference.
 
 If a reference argument targets the argument of a parent diamond, it is not considered an argument reference.
 
-![](Input%20Output%20Parameter%20Passings.088.png)
+![](images/Input%20Output%20Parameter%20Passings.088.png)
 
 Argument reference is only the case where you *enter* a diamond.
 #### ***Summary***
 So the implicit argument reference notation:
 
-![](Input%20Output%20Parameter%20Passings.089.png)
+![](images/Input%20Output%20Parameter%20Passings.089.png)
 
 Has the following explicit notation: < I know it is wrong, I should investigate later >
 
-![](Input%20Output%20Parameter%20Passings.090.png)
+![](images/Input%20Output%20Parameter%20Passings.090.png)
 
 Rule 1:
 
@@ -1023,58 +1023,58 @@ Rule 3:
 
 You go from implicit to explicit notation in the following steps:
 
-![](Input%20Output%20Parameter%20Passings.084.png)
+![](images/Input%20Output%20Parameter%20Passings.084.png)
 
 Reverse direction of argument references
 
-![](Input%20Output%20Parameter%20Passings.085.png)
+![](images/Input%20Output%20Parameter%20Passings.085.png)
 
 Create child diamonds where the inversion doesn’t work
 
-![](Input%20Output%20Parameter%20Passings.086.png)
+![](images/Input%20Output%20Parameter%20Passings.086.png)
 
 Invert the direction of other lines that became faulty
 
-![](Input%20Output%20Parameter%20Passings.090.png)
+![](images/Input%20Output%20Parameter%20Passings.090.png)
 ### **In, Out and Thru Argument Notation**
 < The out parameter access symbol isn’t required, so the notation of it *suggests* that it’s an in parameter reference >
 
 Argument reference notation (an implicit one):
 
-![](Input%20Output%20Parameter%20Passings.091.png)
+![](images/Input%20Output%20Parameter%20Passings.091.png)
 
 is saying that the actual reference argument:
 
-![](Input%20Output%20Parameter%20Passings.092.png)
+![](images/Input%20Output%20Parameter%20Passings.092.png)
 
 Is used as out and *not* as in.
 
-![](Input%20Output%20Parameter%20Passings.093.png)
+![](images/Input%20Output%20Parameter%20Passings.093.png)
 
 The explicit notation:
 
-![](Input%20Output%20Parameter%20Passings.092.png)
+![](images/Input%20Output%20Parameter%20Passings.092.png)
 
 can be in, thru or out. But the access symbol is usually not notated in case of outward direction:
 
-![](Input%20Output%20Parameter%20Passings.094.png)
+![](images/Input%20Output%20Parameter%20Passings.094.png)
 
 Therefore this outward notation with an access symbol suggests that it’s an in argument.
 
-![](Input%20Output%20Parameter%20Passings.095.png)
+![](images/Input%20Output%20Parameter%20Passings.095.png)
 
 Thru can be notated as:
 
-![](Input%20Output%20Parameter%20Passings.096.png)
+![](images/Input%20Output%20Parameter%20Passings.096.png)
 
 Which is not a real bidirection, because the line can’t *really* go inward anyway. It’s an implicit notation.
 
 As such, there are six explicit argument purposes:
 
 
-|<p>![](Input%20Output%20Parameter%20Passings.097.png)</p><p>*State in*</p><p></p>|<p></p><p>![](Input%20Output%20Parameter%20Passings.098.png)</p><p>*State out*</p>|<p>![](Input%20Output%20Parameter%20Passings.099.png)</p><p>*State thru*</p>|
+|<p>![](images/Input%20Output%20Parameter%20Passings.097.png)</p><p>*State in*</p><p></p>|<p></p><p>![](images/Input%20Output%20Parameter%20Passings.098.png)</p><p>*State out*</p>|<p>![](images/Input%20Output%20Parameter%20Passings.099.png)</p><p>*State thru*</p>|
 | :-: | :-: | :-: |
-|<p>![](Input%20Output%20Parameter%20Passings.100.png)</p><p>*Reference in*</p>|<p>![](Input%20Output%20Parameter%20Passings.101.png)</p><p>*Reference out*</p>|<p></p><p>![](Input%20Output%20Parameter%20Passings.102.png)</p><p>*Reference thru*</p>|
+|<p>![](images/Input%20Output%20Parameter%20Passings.100.png)</p><p>*Reference in*</p>|<p>![](images/Input%20Output%20Parameter%20Passings.101.png)</p><p>*Reference out*</p>|<p></p><p>![](images/Input%20Output%20Parameter%20Passings.102.png)</p><p>*Reference thru*</p>|
 #### ***Execution Order In Text Code***
 The resulting sequence of code lines corresponds to the execution order required for dependency. As you change the diagram, the order of the text code can change. You can freely more around text lines of sibbling symbols.
 
@@ -1103,7 +1103,7 @@ The steps of this process can be described as follows:
 
 The out parameter of **Get** is called **Out** and the in parameter of **Set** is called **In**. In diagram code, that is:
 
-![](Input%20Output%20Parameter%20Passings.103.png "Explicit Calls with Blue")
+![](images/Input%20Output%20Parameter%20Passings.103.png "Explicit Calls with Blue")
 
 *Excplicit calls*
 
@@ -1115,7 +1115,7 @@ In text code you can write the two calls in a single code line:
 
 **Get . Out** is assigned to the parameter of **Set**. You’re referencing a parameter of **Get** without displaying the call. To read the **Out** parameter of **Get** requires a call and this call is implicitly made. In the text code line above you don’t see that **Get** is called. **Get . Out** is simply referenced. You can apply the same to diagram code:
 
-![](Input%20Output%20Parameter%20Passings.104.png "Implicit Call")
+![](images/Input%20Output%20Parameter%20Passings.104.png "Implicit Call")
 
 *Implicit call*
 
@@ -1129,7 +1129,7 @@ Set ( Get )
 
 **Get**’s symbolizing its return value can also be applied to diagram code:
 
-![](Input%20Output%20Parameter%20Passings.105.png "Implicit Return Value Reference")
+![](images/Input%20Output%20Parameter%20Passings.105.png "Implicit Return Value Reference")
 
 *Implicit return value reference, implicit call*
 
@@ -1140,7 +1140,7 @@ The diagram above looks far simpler than the first diagram. So does the text cod
 
 In the diagram above, the return value is implicitly referenced by pointing to the procedure definition. You can also implicitly reference the return value by pointing to a procedure call square. That way, the call is explicit, but the return value reference is implicit.
 
-![](Input%20Output%20Parameter%20Passings.106.png "Implicit Return Value Reference, Explicit Call")
+![](images/Input%20Output%20Parameter%20Passings.106.png "Implicit Return Value Reference, Explicit Call")
 
 *Explicit cal, implicit return value reference*
 
@@ -1148,13 +1148,13 @@ In the diagram above, the return value is implicitly referenced by pointing to t
 ######## *Implicit Return Value Reference*
 Implicit return value reference is only a way to reference the *return value*, not to the other out parameters. The other out parameters must be explicitly referenced. 
 
-![](Input%20Output%20Parameter%20Passings.107.png "Implicit Return Value Reference, Explicit Out Parameter Reference")
+![](images/Input%20Output%20Parameter%20Passings.107.png "Implicit Return Value Reference, Explicit Out Parameter Reference")
 
 *Implicit return value reference, explicit out parameter reference*
 ######## *Implicit Calls*
 When you reference output parameters of a procedure multiple times, each reference causes its own call to be made. 
 
-![](Input%20Output%20Parameter%20Passings.108.png "Each Implicit Parameter Reference is a Call")
+![](images/Input%20Output%20Parameter%20Passings.108.png "Each Implicit Parameter Reference is a Call")
 
 *Two references to a parameter of the definition: two implicit calls*
 
@@ -1164,7 +1164,7 @@ If the diagram above is an abstract view on the system, there might only be made
 
 If you want to reference multiple output parameters of a single call, you have to expliclity display the call and reference the objects that are inside the call symbol. By referencing the parameters of the call, you only use one call.
 
-![](Input%20Output%20Parameter%20Passings.109.png "One Call, Two Parameters Referenced, Requires Explicit Call")
+![](images/Input%20Output%20Parameter%20Passings.109.png "One Call, Two Parameters Referenced, Requires Explicit Call")
 
 <Call in blue>
 
@@ -1175,7 +1175,7 @@ If you want to reference multiple output parameters of a single call, you have t
 
 Referencing a diamond’s members is like reading a procedure member.
 
-![](Input%20Output%20Parameter%20Passings.110.jpeg "29")
+![](images/Input%20Output%20Parameter%20Passings.110.jpeg "29")
 
 <20040418: this is interesting. It has to do with implicit call and I have to explore in which situation this is useful. I think that when you call a member of the top circle, then the diamond executes. It’s like calling member of the bottom circle…>
 
@@ -1255,21 +1255,21 @@ Implicit Notations
 ###### **Old**
 < 2008-10-08 This talks about parameter passing, a notation for value assignment and about implicit call. Those three are spread over multiple documentation sections. But do the cross out here. >
 
-![](Input%20Output%20Parameter%20Passings.111.jpeg "1")
+![](images/Input%20Output%20Parameter%20Passings.111.jpeg "1")
 
 In implicit argument assignment, there is no way to express state assignment.
 
-![](Input%20Output%20Parameter%20Passings.112.jpeg "3")
+![](images/Input%20Output%20Parameter%20Passings.112.jpeg "3")
 
 If it were to become a connection between symbols, like implicit line assignments, it would definitely not behave the same as a line.
 
-![](Input%20Output%20Parameter%20Passings.113.jpeg "2")
+![](images/Input%20Output%20Parameter%20Passings.113.jpeg "2")
 
 *Implicit assignments*
 
 De assignment calls gedragen zich niet normaal, want consult van de argumenten van **A** veroorzaken geen executie. Een soort passieve parameter consult vind plaats door de assignment calls, in het proloog van **A**. Bedenk wel: het zijn systeeem procedures: niet normaal.
 
-![](Input%20Output%20Parameter%20Passings.113.jpeg "2")![](Input%20Output%20Parameter%20Passings.114.jpeg "4")
+![](images/Input%20Output%20Parameter%20Passings.113.jpeg "2")![](images/Input%20Output%20Parameter%20Passings.114.jpeg "4")
 
 De calls naar system procedures gedragen zich anders dan gewone calls. Ze vinden namelijk hier plaats in het proloog van de executie. Je ziet dit wèl in de text code, maar hoe zie je in diagram code of een systeem procedure apart wordt aangeroepen of in de context van een andere functie aanroep?
 
@@ -1277,14 +1277,14 @@ Hypothese: als je bij systeem procedure aanroep een parameter betrekt in een die
 
 Niet het een executor, anders verwar je het met een aparte executie! Een system procedure triggert geen executor:
 
-![](Input%20Output%20Parameter%20Passings.115.jpeg "5")
+![](images/Input%20Output%20Parameter%20Passings.115.jpeg "5")
 
 \* dit zou A triggeren als het niet een line van een system procedure call was.
 
 Assignmet procedures = system procedure, eerste argument is het **This** argument.
 
 
-![](Input%20Output%20Parameter%20Passings.116.jpeg "6")
+![](images/Input%20Output%20Parameter%20Passings.116.jpeg "6")
 
 \* 2 consults, 1 execution. 1 executor zou er eigenlijk moeten zijn om 1 keer uitgevoerd te worden per … definitie aanroep (afgezien van jumps) (? Hoe zit het daar dan precies mee)
 
@@ -1292,9 +1292,9 @@ Dus implicit call moet niet bestaan bij het referen naar diamond members. Dus da
 
 Oh jawel! Consult vind gewoonlijk altijd plaats in epiloog, maar bij assignment van argumenten consulteerd system procedure de argument in *proloog*.
 
-![](Input%20Output%20Parameter%20Passings.117.jpeg "7")
+![](images/Input%20Output%20Parameter%20Passings.117.jpeg "7")
 
-![](Input%20Output%20Parameter%20Passings.118.jpeg "8")
+![](images/Input%20Output%20Parameter%20Passings.118.jpeg "8")
 
 The last picture is an acceptable substitute for implicit state assignment. It is actually explicit state assignment, but it looks like a real connection between A and B. A rule though: state assignment takes two arguments: destination = source. In the notation on the left you have to follow the direciton of the line you’d get between A and B if you ignore the call thing in between to find out which is the first argumetn and which is the second. In text code it goed from  lieft to right. In the diagram It goes from …<>. B is destination A is source. I mean B is the one that gets the line. B is source of line, Asbut destination of assignment. 
 #### ***Argument Access Summary***

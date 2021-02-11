@@ -592,11 +592,11 @@ The view supports Zoom and Offset by mouse movement. It Supports a map for an ov
 #### ***Building the Mesh***
 The mesh is built up from the outside inwards. There is always the first single circle: 0. The inner circles need to be laid out over a circle with a radius half the size of the parent.
 
-![](Computer%20Language,%20Old%20Ideas.001.png "Calculation Mesh Line Up Radius")
+![](images/Computer%20Language,%20Old%20Ideas.001.png "Calculation Mesh Line Up Radius")
 
 The the radius of the inner circles depend on the amount of inner circles. If you draw out an n-gon connecting the centers of the inner circles together, then the radii of the inner circles are a third of the length of the n-gon’s sides. (See “Calculations N-Gon”)
 
-![](Computer%20Language,%20Old%20Ideas.002.png "Calculation Mesh Lined Up Children")
+![](images/Computer%20Language,%20Old%20Ideas.002.png "Calculation Mesh Lined Up Children")
 
 The n-gon formula is:
 
@@ -645,19 +645,19 @@ Fortunately I made pictures. Get ready for adult sesame street.
 ##### **Radius to Side Length**
 I need the length
 
-![](Computer%20Language,%20Old%20Ideas.003.png "Calculation N-Gon Radius to Side Length I need the length")
+![](images/Computer%20Language,%20Old%20Ideas.003.png "Calculation N-Gon Radius to Side Length I need the length")
 
 Of the sides of an equal sided n-gon
 
-![](Computer%20Language,%20Old%20Ideas.004.png "Calculation N-Gon Radius to Side Length of any equal sided n-gon")
+![](images/Computer%20Language,%20Old%20Ideas.004.png "Calculation N-Gon Radius to Side Length of any equal sided n-gon")
 
 The describes a circle
 
-![](Computer%20Language,%20Old%20Ideas.005.png "Calculation N-Gon Radius to Side Length that describes a circle")
+![](images/Computer%20Language,%20Old%20Ideas.005.png "Calculation N-Gon Radius to Side Length that describes a circle")
 
 And all I have is the radius
 
-![](Computer%20Language,%20Old%20Ideas.006.png "Calculation N-Gon Radius to Side Length and all I have is the radius")
+![](images/Computer%20Language,%20Old%20Ideas.006.png "Calculation N-Gon Radius to Side Length and all I have is the radius")
 
 
 

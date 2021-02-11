@@ -32,7 +32,7 @@ In C++ you\* had to specify\* in advance\* the\* number of pointer redirections 
 #### **In a Diagram**
 The\* target object is the\* last\* point in a string of object reference redirections.
 
-![](Pointers.001.png)
+![](images/Pointers.001.png)
 
 Symbol **A** is an object reference to symbol **B**. Symbol **B** is an object reference to symbol **C**. Symbol **C** is the\* target object of both\* symbols **A** and **B**.
 
@@ -51,28 +51,28 @@ When you want to find the class of an object, and the object is actually an obje
 
 So to find the target class, you first follow *all* the object redirections, then *one* class redirections, then *all* the object redirections and there it ends.
 
-![](Pointers.002.png)
+![](images/Pointers.002.png)
 
 If the class has a class as well, this does not redirect the original object’s class, because the second class is *another* class object, that the first class is just *based* on. An object redirection is just a much tighter bond, than a class redirection.
 
-![](Pointers.003.png)
+![](images/Pointers.003.png)
 
 The target class of the first object reference is the symbol Class, not the symbol Class’s class. The same counts for the diagram below.
 
-![](Pointers.004.png)
+![](images/Pointers.004.png)
 
 If you wonder what could be that different between Class and Class’s class: they could differ in default values. The main point is: finding the target class is about finding the class object.
 ### ***Multiple Class Redirections***
 Below is an example, with classes getting further redirected.
 
-![](Pointers.005.png)
+![](images/Pointers.005.png)
 ### ***Relation to a Pointer***
 #### **Concept**
 As covered by the\* article *Related Classes*, you\* can\* also establish a unidirectional relation with a *pointer* to another class. This is not\* so common, but\* it is possible all the\* same. This is mostly applied, to allow a class to make a sub-object’s class *adjustable*. It is important to consider, that everything inside a pointer is really part of the\* *target class*, but\* a pointer itself is usable individually, independent from the\* target class. This is well visualized in the\* article *Relation to a Pointer in a Diagram.* To make a relation to a pointer bidirectional, you\* have to give the\* target class a relation back to the\* first class. The\* first class relates to the\* pointer, but\* the\* target class relates back to the\* first class. This automatically gives the\* pointer a relation back to the\* first class. This creates a bidirectional relation between the\* first class and the\* pointer to a class, but\* only a unidirectional backwards relation between the\* target class and the\* first class. This is because\* the\* first class does not\* directly refer to the\* target class, but\* the\* target class does directly refer back to it. You\* should see it in a diagram. That will make it much clearer.
 #### **Diagram Notation**
 You\* can\* also establish a unidirectional relation with a *pointer* to another class. This is not\* so common, but\* it is possible all the\* same.
 
-![](Pointers.006.png)
+![](images/Pointers.006.png)
 
 This is mostly applied, to allow a class to make a sub-object’s class *adjustable*.
 
@@ -82,11 +82,11 @@ To make a relation to a pointer bidirectional, you\* have to give the\* target c
 
 The\* relation back can\* be displayed in both symbols, that represent the\* target class:
 
-![](Pointers.007.png)
+![](images/Pointers.007.png)
 
 The\* two unidirectional relations between **Class** and **Pointer to Class** melt together to a single bidirectional relation. But\* the\* unidirectional relation from the\* **Target Class** to the\* **Class** stays unidirectional, because\* **Class** does not\* directly relate to **Target Class**:
 
-![](Pointers.008.png)
+![](images/Pointers.008.png)
 
 The\* notation for a bidirectional relation was covered by the\* article *Relations in a Diagram*.
 
@@ -100,13 +100,13 @@ So only **Class** and **Pointer to Class** get a bidirectional relation to eacho
 
 The\* connection between **Target Class** and **Class** is already implied by the\* connection between **Pointer to Class** and **Class**. You\*’re allowed to leave out of the\* diagram then\*:
 
-![](Pointers.009.png)
+![](images/Pointers.009.png)
 
 **Target Class** and **Class** are already implicitly related to eachother through the\* pointer to the\* target class.
 
 In all the\* diagrams above, that display the\* backward relation, the\* sub-symbols of **Pointer to Class** and **Target Class** were given a name: **A**. This was done, because\* there was no line in the\* diagram to indicate that they were the\* same sub-object. Officially, when\* symbols share an aspect, in that they are equal in object, class, interface or definition, they should be tied together with a line. Officially an object line should have been connecting both symbols of **A**:
 
-![](Pointers.010.png)
+![](images/Pointers.010.png)
 
 But\* similarity in aspect can\* also be implied by a *name* and the\* *connection between parents*. This kind of implicit connection is explained in the\* article *Automatic Containment*.
 
@@ -116,7 +116,7 @@ The\* only point to implicit connection through parent is to make the\* diagram 
 #### **Pointer-to-Pointer**
 A related item can also wrap yet another related item, contained by another parent object.
 
-![](Pointers.011.png)
+![](images/Pointers.011.png)
 
 In that case it is said to be a *pointer-to-pointer*. The use of pointers to pointers makes you able to let something else determine what is eventually targeted.
 
@@ -125,7 +125,7 @@ You never work with objects directly, so even though the diagram above looks lik
 #### **Reference**
 Sometimes no aspect of a reference is called upon, but there is worked directly with the reference itself. That is not really an aspect, but in that case it is said you are calling upon the **Reference** aspect.
 
-![](Pointers.012.png)
+![](images/Pointers.012.png)
 #### **Summary**
 This would add the following aspect to the list of aspects:
 
@@ -280,7 +280,7 @@ The **Reference** aspect is controlled through only one command:
 
 The **Reference** aspect is placed inside a triangle, that wraps together the members to control the **Reference** aspect:
 
-![](Pointers.013.png)
+![](images/Pointers.013.png)
 ##### *The Object Aspect in the System Interface*
 The **Object** aspect of a **Related Item** is controlled through an additional command:
 
@@ -288,24 +288,24 @@ The **Object** aspect of a **Related Item** is controlled through an additional 
 
 The commands are placed inside a triangle, that wraps together the members of the **Object** aspect:
 
-![](Pointers.014.png)
+![](images/Pointers.014.png)
 
 ##### *The Full System Interface for Related Item*
 The full system interface of a **Related Item** including pointer-to-pointer provisions may look like this:
 
-![](Pointers.015.png)
+![](images/Pointers.015.png)
 ##### *The Reference-Class Aspect in the System Interface*
 **Use Reference As Class**
 
 The commands are placed inside a triangle, that wraps together the members of the **Class** aspect:
 
-![](Pointers.016.png)
+![](images/Pointers.016.png)
 #### **System Interface of a Related List Item**
 An additional aspects, that apply to a **Related List Item** is:
 
 **Reference**
 ##### *The Full System Interface for Related Item*
-![](Pointers.017.png)
+![](images/Pointers.017.png)
 ### ***Design Choices***
 #### **'Use' Command Gets Another Aspect**
 The **Use Reference As Object** command is part of the **Object** aspect but **Gets** the **Reference** aspect. The **Use Reference As Class** command is part of the **Class** aspect, but **Gets** the **Reference** aspect.
@@ -323,13 +323,13 @@ A pointer assignment is displayed with an arrow inside the diamond.
 |**Object Pointer Assignment:**|
 | :-: |
 ||
-|![](Pointers.018.png)|
+|![](images/Pointers.018.png)|
 |<p>Reference Get ß</p><p>Object Set à  (~= Set Object to Other Related Item)</p>|
 ||
-|![](Pointers.019.png)|
+|![](images/Pointers.019.png)|
 |<p>Reference Get ß</p><p>Object Set à  (~= Set Object to Other Related List Item)</p>|
 ||
-|![](Pointers.020.png)|
+|![](images/Pointers.020.png)|
 |<p>Reference Get ß</p><p>Object Set à  (~= Set Object to Other Related List Item)</p>|
 
 Pointer assignment also works for class assignment. You can use a reference as a class, instead using an object itself as the class:
@@ -338,13 +338,13 @@ Pointer assignment also works for class assignment. You can use a reference as a
 |**Class Pointer Assignment:**|
 | :-: |
 ||
-|![](Pointers.021.png)|
+|![](images/Pointers.021.png)|
 |<p>Use Reference As Class ß (~= Reference Get)</p><p>Class Set à  (~= Set Class to Other Related Item)</p>|
 ||
-|![](Pointers.022.png)|
+|![](images/Pointers.022.png)|
 |<p>Use Reference As Class ß (~= Reference Get)</p><p>Class Set à  (~= Set Class to Other Related Item)</p>|
 ||
-|![](Pointers.023.png)|
+|![](images/Pointers.023.png)|
 |<p>Use Reference As Class à (~= Reference Get)</p><p>Class Set à  (~= Set Class to Other Related List Item)</p>|
 ### ***Assignment With Pointer Source***
 If something is already a pointer-to-pointer and it is the source of a conventional assignment, the target also becomes a pointer-to-pointer. Pointer assignments *establish* pointers to pointers, but in this case a pointer-to-pointer is already there.
@@ -355,10 +355,10 @@ So a conventional object assignment can also have the following implementations:
 |**Object Assignment:**|
 | :-: |
 ||
-|![](Pointers.024.png)|
+|![](images/Pointers.024.png)|
 |<p>Object Get ß  (~= Use Reference As Object ~= Reference Get)</p><p>Object Set à  (~= Set Object to Other Related Item)</p>|
 ||
-|![](Pointers.025.png)|
+|![](images/Pointers.025.png)|
 |<p>Object Get ß  (~= Use Reference As Object ~= Reference Get) </p><p>Object Set à  (~= Set Object to Other Related List Item)</p>|
 
 Assignment when source is pointer to pointer also works for the **Class** aspect:
@@ -367,10 +367,10 @@ Assignment when source is pointer to pointer also works for the **Class** aspect
 |**Class Assignment:**|
 | :-: |
 ||
-|![](Pointers.026.png)|
+|![](images/Pointers.026.png)|
 |<p>Use As Class ß  (~= Use Reference As Class)</p><p>Class Set à  (~= Set Class to Other Related Item)</p>|
 ||
-|![](Pointers.027.png)|
+|![](images/Pointers.027.png)|
 |<p>Use As Class ß  (~= Use Reference As Class) </p><p>Class Set à  (~= Set Class to Other Related List Item)</p>|
 ### ***Cross-Aspect Assignment***
 If the source of the assignment is a pointer-to-pointer, then the target also becomes a pointer-to-pointer. So this also gives **Reference Class to Object** assignment the following implementations:
@@ -378,27 +378,27 @@ If the source of the assignment is a pointer-to-pointer, then the target also be
 
 |**Reference-Class to Object Assignment**|
 | :-: |
-|![](Pointers.028.png)|
+|![](images/Pointers.028.png)|
 |<p>Reference-Class Get ß  (~= Other Related Item Class Get)</p><p>Object Set à  (~= Other Related Item Set)</p>|
 |*Result:*|
-|![](Pointers.029.png)|
+|![](images/Pointers.029.png)|
 ||
 |**Reference-Class to Object Assignment**|
-|![](Pointers.030.png)|
+|![](images/Pointers.030.png)|
 |<p>**Reference-Class Get ß  (~= Other Related List Item Class Get)**</p><p>**Object Set à  (~= Other Related List Item Set)**</p>|
 |*Result:*|
-|![](Pointers.031.png)|
+|![](images/Pointers.031.png)|
 ### ***Cross-Aspect Pointer Assignment***
 *Pointer* assignments do not have a cross-aspect variation. Pointer assignments use an the reference aspect as the source of an assignment: not a particular aspect of the object reference, but the reference itself. It does not apply to cross-aspect assignments, because on one end of the assignment no aspect at all is involved.
 ## **System Command Calls and Pointers**
 ### ***System Interface Call***
 **Use Reference As Class**
 
-![](Pointers.032.png)
+![](images/Pointers.032.png)
 
 (has assignment notation)
 ### ***System Interface Call with Argument***
-![](Pointers.033.png)
+![](images/Pointers.033.png)
 
 **Use Reference As Class ß**
 
@@ -429,17 +429,17 @@ To find the\* target object, you\*’d expect to only follow object lines. Howev
 
 If a type line points to a symbol with an object line, the\* type is a single object.
 
-![](Pointers.034.jpeg)
+![](images/Pointers.034.jpeg)
 
 Each instance of the\* type is actually the\* same object. 
 
-![](Pointers.035.png)
+![](images/Pointers.035.png)
 
 Therefore, a type line can redirect the\* object of the\* symbol. Therefore, type lines need to be followed to find the\* object.
 
 The\* last symbol pointed to by an object line is the\* object.
 
-![](Pointers.036.jpeg)
+![](images/Pointers.036.jpeg)
 
 This kind of redirectioning is called an *object trace*.
 
@@ -455,7 +455,7 @@ Als je in C++ een object referenties toewijst aan een object referentie, dan wij
 #### **Multiple Redirection and Final Targets**
 If an object symbol has an object line to a symbol that again has an object line, there is redirected until a symbol without an object line is encountered: the\* *target object*.
 
-![](Pointers.037.png)
+![](images/Pointers.037.png)
 
 *C is the\* target object of A and B.*
 
@@ -473,36 +473,36 @@ You’ll use type and object lines to trace the type. Follow the type line if it
 
 When there is no type line, the object determines the type.
 
-![](Pointers.038.jpeg)
+![](images/Pointers.038.jpeg)
 
 Interface lines are not followed. Note that the target type doesn’t have to be pointed to by a type line. 
 
 ##### *Object-Type Trace*
 The last symbol in the object trace altogether:
 
-![](Pointers.039.jpeg)
+![](images/Pointers.039.jpeg)
 
 is the target type.
 
 Therefore, *object* trace can also point out to the target *type*. The difference with a *type trace* is that a type trace prefers to follow type lines over object lines and an object trace prefers to follow object lines over type lines. However, both redirections lead to the exact same symbol.
 
-![](Pointers.040.jpeg)
+![](images/Pointers.040.jpeg)
 
 It happens a lot that you want to find out the object and the type in one blow. So you may as well use the redirection of the object trace for the benefit of finding the object and type in one blow. The trace is then called a *object-type trace*.
 
-![](Pointers.041.png)
+![](images/Pointers.041.png)
 
 The last symbol in the redirection altogether is the target type (**C**). The last symbol pointed to by an object line is the object (**O**). Note that the target type may be pointed out by an object line.
 
-![](Pointers.034.jpeg)
+![](images/Pointers.034.jpeg)
 
 When you only want to find out the type, it is better to use a type trace than it is to use an object-type trace. Type trace prefers type lines over object lines. Type lines generally follow less redirections before reaching the target type than object lines do.
 
-![](Pointers.042.jpeg)
+![](images/Pointers.042.jpeg)
 ##### *Tracing is Not Always Hard*
 If an object symbol has no object line or type line, then finding the target object and type is much simpler, because no redirectioning at all takes place. The symbol is its own object and type.
 
-![](Pointers.043.png)
+![](images/Pointers.043.png)
 
 Traces usually don’t require as many steps as in the examples above.
 
@@ -531,7 +531,7 @@ Do consider that the target object in a diagram really needs to represents the o
 
 \> 2020-06-13: Might it be an idea to consult the system interface to point to the class of an object symbol? So the system interface might show the class and that bit of the system interface might be shown, and an object reference would point to the class indication in the system interface? Something like that.
 
-![](Pointers.044.png)
+![](images/Pointers.044.png)
 
 JJ
 ### ***Loose Ideas about Relation to a Pointer***

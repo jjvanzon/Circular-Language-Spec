@@ -140,43 +140,43 @@ JJ
 ##### **Same Object, Same Type**
 If you make two symbols the same object:
 
-![](Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
 
 They automatically are the same type, sort of like this:
 
-![](Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
 ##### **Same Type, Same Interfaces**
 When you make two symbols the same type:
 
-![](Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
 
 They (by default) automatically get the same interfaces, sort of like this:
 
-![](Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
 ##### **Same Object, Same Type, Same Interfaces**
 If you make two symbols the same object:
 
-![](Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
 
 They automaticaly have the same type with (by default) the same interfaces, sort of like this:
 
-![](Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
 ##### **Not Shorthand**
 However, you can’t call it *shorthand*. The following two are not precisely the same thing:
 
-![](Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
 
-![](Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
 
 The lack or presence of a type line *does* make a difference, as will be explained in a later chapter.
 #### ***Same Procedure, Same Interface***
 When you make two symbols the same procedure:
 
-![](Type%20Safety,%20Genericity,%20Explicit.002.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.002.jpeg)
 
 They also get the same interface, sort of like this:
 
-![](Type%20Safety,%20Genericity,%20Explicit.003.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.003.jpeg)
 
 However, the lack or presence of an interface line *does* make a difference, as will be explained later.
 ### **Genericity**
@@ -190,11 +190,11 @@ This section covers the all forms of genericity for object symbols.
 ##### **Original and Delegated Object**
 The first concept I will explain is quite simple.
 
-![](Type%20Safety,%20Genericity,%20Explicit.004.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.004.jpeg)
 
 If a symbol has an object line then it adopts the object of the line target. **A** delegates to **B**. You can also say that **A**’s object aspect is *delegated* or that **A** has a *delegated object*.
 
-![](Type%20Safety,%20Genericity,%20Explicit.005.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.005.jpeg)
 
 If a symbol doesn’t have an object line, though, it represents its own object. The symbol is an *original object*.
 
@@ -210,19 +210,19 @@ The redirection of the object aspect is the main type of redirection. Therefore 
 It works almost the same for the type aspect. However, the type aspect can be delegated by both a type line as well as an object line. If a symbol has a type line or object line, then it is said to have a *delegated type*.
 
 
-|<p>![](Type%20Safety,%20Genericity,%20Explicit.006.jpeg)</p><p>*Type delegated by object line*</p>|<p>![](Type%20Safety,%20Genericity,%20Explicit.007.jpeg)</p><p>*Type delegated by type line*</p>|
+|<p>![](images/Type%20Safety,%20Genericity,%20Explicit.006.jpeg)</p><p>*Type delegated by object line*</p>|<p>![](images/Type%20Safety,%20Genericity,%20Explicit.007.jpeg)</p><p>*Type delegated by type line*</p>|
 | :-: | :-: |
 
 If the symbol has type nor object line, it represents its own type. The symbol is said to have its *original type*.
 
-![](Type%20Safety,%20Genericity,%20Explicit.005.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.005.jpeg)
 
 The type determines the symbolic contents of a symbol. If a symbol has a delegated type, it has the same symbolic contents as its target type. If it has its own original type, then it determines the contents itself.
 
 During execution of a system a symbol can change from having a delegated type to original type and back.
 
 
-|<p>![](Type%20Safety,%20Genericity,%20Explicit.008.jpeg)</p><p>*Delegated type*</p>|<p>![](Type%20Safety,%20Genericity,%20Explicit.009.jpeg)</p><p>*Line removed, original type reappears*</p>|
+|<p>![](images/Type%20Safety,%20Genericity,%20Explicit.008.jpeg)</p><p>*Delegated type*</p>|<p>![](images/Type%20Safety,%20Genericity,%20Explicit.009.jpeg)</p><p>*Line removed, original type reappears*</p>|
 | :-: | :-: |
 
 When you remove a type line, the symbol’s  original contents reappear. So the original type definition of a symbol isn’t lost as soon as you delegate the type line. You just temporarily can’t see the original type contents. The original type systematics reappear when the type is no longer delegated. When a type is delegated, usually nothing is defined as the original type. So not every object symbol needs to store its own original systematics.
@@ -235,15 +235,15 @@ When you remove a type line, the symbol’s  original contents reappear. So the 
 This is the genericity already explained in the introduction to genericity. When a type is undetermined by a type line, the symbol adopts the type of its object target, whatever type this object may be of.
 
 
-|![](Type%20Safety,%20Genericity,%20Explicit.010.jpeg)|![](Type%20Safety,%20Genericity,%20Explicit.011.jpeg)|![](Type%20Safety,%20Genericity,%20Explicit.012.jpeg)|
+|![](images/Type%20Safety,%20Genericity,%20Explicit.010.jpeg)|![](images/Type%20Safety,%20Genericity,%20Explicit.011.jpeg)|![](images/Type%20Safety,%20Genericity,%20Explicit.012.jpeg)|
 | :-: | :-: | :-: |
 
 The type is *generic* in this case. If the type line is set, however, the object can only be of a single type.
 
 
-|![](Type%20Safety,%20Genericity,%20Explicit.013.jpeg)|<p>![](Type%20Safety,%20Genericity,%20Explicit.014.jpeg)</p><p></p>|
+|![](images/Type%20Safety,%20Genericity,%20Explicit.013.jpeg)|<p>![](images/Type%20Safety,%20Genericity,%20Explicit.014.jpeg)</p><p></p>|
 | :-: | :-: |
-|![](Type%20Safety,%20Genericity,%20Explicit.015.jpeg)|![](Type%20Safety,%20Genericity,%20Explicit.016.jpeg)|
+|![](images/Type%20Safety,%20Genericity,%20Explicit.015.jpeg)|![](images/Type%20Safety,%20Genericity,%20Explicit.016.jpeg)|
 
 The type is *explicit* in that case. You can also say that the type is *set*.
 
@@ -256,7 +256,7 @@ If the type is determined by no line at all then it has an *original type*. You 
 ##### **Original and Delegated Interface**
 The interface can be determined by the target of the interface line, type line or object line, but the interface line is most determinant. If any of those line are set, the interface is diverted to the interface target, object target or type target. It is said to be *delegated*. If an object symbol has no interface line, it has its *original interface*.
 
-![](Type%20Safety,%20Genericity,%20Explicit.017.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.017.jpeg)
 
 
 |Original interface|<p>Interface determined by no line</p><p>(interface, type nor object line)</p>|
@@ -270,16 +270,16 @@ The use of delegation of the interface is to fix the interface and to use an alr
 As the type can be explicitly set, the interface can also be explicitly set. It’s only about the interface set by an interface line; the other line types don’t explicitly set the interface. If the interface is set, then the type or object can only be a symbol whose type at least supports the interface.
 
 
-|<p>![](Type%20Safety,%20Genericity,%20Explicit.018.jpeg)</p><p></p>|<p>*A*</p><p>![](Type%20Safety,%20Genericity,%20Explicit.019.jpeg)</p>|
+|<p>![](images/Type%20Safety,%20Genericity,%20Explicit.018.jpeg)</p><p></p>|<p>*A*</p><p>![](images/Type%20Safety,%20Genericity,%20Explicit.019.jpeg)</p>|
 | :-: | :-: |
-|<p>*B*</p><p>![](Type%20Safety,%20Genericity,%20Explicit.020.jpeg)</p>|<p>*C*</p><p>![](Type%20Safety,%20Genericity,%20Explicit.021.jpeg)</p>|
+|<p>*B*</p><p>![](images/Type%20Safety,%20Genericity,%20Explicit.020.jpeg)</p>|<p>*C*</p><p>![](images/Type%20Safety,%20Genericity,%20Explicit.021.jpeg)</p>|
 
 *The top object can point to the left object (picture A) and to the right object (picture B). The left object has the full interface, while the right object supports the interface. Picture C is illegal, because the object target doesn’t support the interface.*
 
 If a symbol has no interface line, the interface is said to be *generic*. It adopts the full interface of any type the interface might have, due to type delegation by either a type line or object line. 
 
 
-|![](Type%20Safety,%20Genericity,%20Explicit.022.jpeg)|![](Type%20Safety,%20Genericity,%20Explicit.023.jpeg)|
+|![](images/Type%20Safety,%20Genericity,%20Explicit.022.jpeg)|![](images/Type%20Safety,%20Genericity,%20Explicit.023.jpeg)|
 | :-: | :-: |
 
 
@@ -293,7 +293,7 @@ This section covers the genericity concepts around procedure symbols.
 ##### **Original and Delegated Definition**
 When a procedure symbol has a reference line, it adopts the procedure definition of its line target. The symbol has a delegated definition. If the symbol has no reference line, it defines the procedure itself. It has its original definition.
 
-![](Type%20Safety,%20Genericity,%20Explicit.024.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.024.jpeg)
 
 The definition of the procedure symbol determines its symbolic contents. As a system runs, the definition can go from original to delegated and back. When you remove a reference line, the symbol regains its original contents. So the original definition of a symbol is not lost once you delegate the definition. You just temporarily can’t see the original definition. When a definition is delegated, usually nothing is defined as the original definition. So not every procedure symbol needs to store its own original systematics. 
 
@@ -306,7 +306,7 @@ You can also speak of *original procedure* and *delegated procedure* or *the del
 ##### **Original and Delegated Execution**
 When there’s a diamond somewhere the reference line redirection,
 
-![](Type%20Safety,%20Genericity,%20Explicit.025.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.025.jpeg)
 
 the source symbol of the redirection doesn’t represent its own execution. Its execution is delegated to the other diamond.
 
@@ -318,23 +318,23 @@ the source symbol of the redirection doesn’t represent its own execution. Its 
 
 Logically, only a diamond can represent its own original execution.
 
-![](Type%20Safety,%20Genericity,%20Explicit.026.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.026.jpeg)
 
 You don’t usually talk about *squares* having an *original execution*, however when a square delegates to a diamond, 
 
-![](Type%20Safety,%20Genericity,%20Explicit.027.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.027.jpeg)
 
 the square *is* said to have a *delegated execution*.
 ##### **Original and Delegated Procedure Interface**
 The interface of a procedure can be delegated to its definition target, but it can also be delegated by an interface line. 
 
 
-|![](Type%20Safety,%20Genericity,%20Explicit.028.jpeg)|![](Type%20Safety,%20Genericity,%20Explicit.029.jpeg)|
+|![](images/Type%20Safety,%20Genericity,%20Explicit.028.jpeg)|![](images/Type%20Safety,%20Genericity,%20Explicit.029.jpeg)|
 | :-: | :-: |
 
 In both cases the interface is delegated. If a procedure symbol has no line at all, it has an original interface.
 
-![](Type%20Safety,%20Genericity,%20Explicit.030.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.030.jpeg)
 
 During execution the interface can change from being delegated to original and back. The original interface isn’t lost as soon as you delegate the interface. When you annull the delegation, then the original interface reappears. It was only temporarily hidden. Most procedure symbols don’t define an original interface, so most symbols don’t holds original interface systematics.
 
@@ -348,13 +348,13 @@ The *use* of delegation of the interface is to fix the interface of a procedure 
 If a procedure symbol has an interface line then its definition can only be one that has that particular interface. The interface is explicit.
 
 
-|![](Type%20Safety,%20Genericity,%20Explicit.031.jpeg)|![](Type%20Safety,%20Genericity,%20Explicit.032.jpeg)|![](Type%20Safety,%20Genericity,%20Explicit.033.jpeg)|
+|![](images/Type%20Safety,%20Genericity,%20Explicit.031.jpeg)|![](images/Type%20Safety,%20Genericity,%20Explicit.032.jpeg)|![](images/Type%20Safety,%20Genericity,%20Explicit.033.jpeg)|
 | :-: | :-: | :-: |
 
 If the interface line of a procedure symbol isn’t set then it adopts the interface of the target definition.
 
 
-|![](Type%20Safety,%20Genericity,%20Explicit.034.jpeg)|![](Type%20Safety,%20Genericity,%20Explicit.035.jpeg)|
+|![](images/Type%20Safety,%20Genericity,%20Explicit.034.jpeg)|![](images/Type%20Safety,%20Genericity,%20Explicit.035.jpeg)|
 | :-: | :-: |
 
 
@@ -367,28 +367,28 @@ A special form of genericity is very important and it’s crucial for the use of
 ###### ***Using Interface Extends Type Line***
 When you set the interface of a symbol then it can only point to definitions that have the interface or support the interface. I will now describe how using a supported interface works.
 
-![](Type%20Safety,%20Genericity,%20Explicit.036.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.036.jpeg)
 
 Here **Object A** has **Type B**. It uses **Interface A** of **Type B**.
 
 One one hand you can a see using the supported interface as a silent extension of the type line to the triangle with the right interface:
 
-![](Type%20Safety,%20Genericity,%20Explicit.037.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.037.jpeg)
 
 But on the other hand it’s not like that, because that would mean that **Object A** gets **Type B**. It still has **Type A** however. When **Object A** is created, an object of **Type A** is is created, not **Type B**. But **Object A** can only call upon the members of **Interface A**.
 ###### ***Object Shows Only Used Interface Implementation***
 The source object only shows the implementation of the interface it has:
 
-![](Type%20Safety,%20Genericity,%20Explicit.038.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.038.jpeg)
 
 Not the contents of the whole type:
 
-![](Type%20Safety,%20Genericity,%20Explicit.039.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.039.jpeg)
 
 ###### ***Create Symbol: Create Object of the Whole Type***
 However, when you *create* the symbol, an object of the *full type* is created. This is useful: other symbols may be pointers to the same object, but may use a different interface.
 
-![](Type%20Safety,%20Genericity,%20Explicit.040.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.040.jpeg)
 
 *Symbol A is of Type A, but only uses Interface A. Symbol A only shows the systematics of that one interface: a circle. However, it’s an object of the **whole type**. This is important. The importance is pointed out by Symbol B. Symbol B is a pointer to Symbol A, only it uses a different interface. So it shows different systematics.*
 
@@ -400,7 +400,7 @@ If there is no interface line, the *object* determines *which* interface of the 
 
 
 
-|![](Type%20Safety,%20Genericity,%20Explicit.041.jpeg)|![](Type%20Safety,%20Genericity,%20Explicit.042.jpeg)|
+|![](images/Type%20Safety,%20Genericity,%20Explicit.041.jpeg)|![](images/Type%20Safety,%20Genericity,%20Explicit.042.jpeg)|
 | :-: | :-: |
 
 **Symbol A** redirects the type to **Type A**. In the first picture **Symbol A** redirects to **Object A**, in the second picture **Symbol A** redirects to **Object B**. **Symbol A**, **Object A** and **Object B** are all of the same type. However, **Object A** uses **Interface A** and **Object B** uses **Interface B**.
@@ -409,7 +409,7 @@ This means that the object line determines the interface sooner than the type li
 ##### **Interface Type Generiticy**
 Another very important use of the separation between types and interfaces is that you can choose any *object* that supports the interface, not worrying about its type.
 
-![](Type%20Safety,%20Genericity,%20Explicit.043.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.043.jpeg)
 
 *D, E and F all have different types, while they all support interface A. G also supports interface A. G could point to D, E or F without problems, while D, E and F all have different types. However, G can only call the members of their joint interface. Specialized features of the types D, E and F are unavailable.*
 
@@ -428,11 +428,11 @@ When a symbol has an explicit type, it’s object can only be of that type. Havi
 ##### **Same Object, Same Type**
 Earlier on, in the section *Object Basics : Same Object, Same Type* I said that if you make two symbols the same object:
 
-![](Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
 
 they automatically are the same type, sort of like this:
 
-![](Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
 
 The topics of genericity show that these two pictures aren’t synonyms. In the second picture the type is explicit, while in the first picture the type is generic. The same goes for the other comparisons in that section.
 #### ***Delegated to Original in a Circularity***
@@ -440,11 +440,11 @@ When you annull a symbol’s type line, it usually regains its original type. Al
 
 In a circularity it’s different. When you delegate the type to a circularity, the whole circularity represents the type.
 
-![](Type%20Safety,%20Genericity,%20Explicit.044.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.044.jpeg)
 
 When you break one of the lines in the circularity, you might think that the one loosing the line regains its original type. The reality is different: no symbols of the former circularity regains its original type.
 
-![](Type%20Safety,%20Genericity,%20Explicit.045.jpeg)
+![](images/Type%20Safety,%20Genericity,%20Explicit.045.jpeg)
 
 If you break one of the lines in the circularity, the one loosing the line comes to represent the type and the other members of the former circularity now delegate their type to it.
 #### ***Overview***
@@ -629,7 +629,7 @@ If a symbol already has a type line it has to have that type. If it doesn’t ha
 ##### **Interface <>**
 Something like this should be possible:
 
-![](Type%20Safety,%20Genericity,%20Explicit.046.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.046.png)
 
 The point is in the lines of the child of the top symbol. It’s type line points to the center symbol, but it’s interface line points to the interface of ONE of its types interface implementations, not to the joint interface implementation of the type. You have to be able to do this.
 

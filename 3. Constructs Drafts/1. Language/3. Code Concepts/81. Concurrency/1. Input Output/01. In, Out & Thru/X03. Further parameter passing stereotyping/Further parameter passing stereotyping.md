@@ -169,7 +169,7 @@ Does not make sense. You’d give a parameter an initial value, that does not ge
 \- not always used / affected / produced
 
 
-![](Further%20parameter%20passing%20stereotyping.001.png)
+![](images/Further%20parameter%20passing%20stereotyping.001.png)
 
 See also: *< List of articles >*
 
