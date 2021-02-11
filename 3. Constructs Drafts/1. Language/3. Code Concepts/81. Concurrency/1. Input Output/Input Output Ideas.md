@@ -1,21 +1,5 @@
-﻿|<h1>***< Documentation Section >***</h1>|
-| :- |
-## **Input Output**
-< Article text >
-### **< Section title >**
-< Section text >
-#### *< Subsection >*
-
-See also: *< List of articles >*
-
-
-*Author & Copyright: <Jan-Joost van Zon>        Date: <May 21, 2008> – <May 22, 2008>        Location: <Oosterhout, The Netherlands>        Status: [ Under Construction | Finished | … ]*
-
-
-
-## **Ideas**
-
-
+﻿Input Output | Ideas
+====================
 
 *The texts below are loose ideas yet to be turned into good documentation.*
 

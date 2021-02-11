@@ -1,6 +1,9 @@
-﻿|<h1>***Computer Language Coding Concepts***</h1>|
-| :- |
-## **Input Output Parameter Passings**
+﻿Computer Language Coding Concepts
+=================================
+
+Input Output Parameter Passings
+-------------------------------
+
 These sections were set aside in the project *Work Out Parameter Articles*.
 
 The sections each cover an obsolete parameter passing type.

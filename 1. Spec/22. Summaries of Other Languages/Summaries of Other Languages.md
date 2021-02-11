@@ -1,7 +1,9 @@
 ﻿Circle Language Spec
 ====================
 
-## **Summaries of Other Languages**
+Summaries of Other Languages
+----------------------------
+
 This document contains summaries of other languages, mainly C and C++, in the form of bulleted lists. They were made around the year 2004 during an analysis of the grammar of C and C++ to compare them to the new computer language.
 ### **C**
 *A summary of Msdn Library Visual Studio July 2000: C Language Reference*

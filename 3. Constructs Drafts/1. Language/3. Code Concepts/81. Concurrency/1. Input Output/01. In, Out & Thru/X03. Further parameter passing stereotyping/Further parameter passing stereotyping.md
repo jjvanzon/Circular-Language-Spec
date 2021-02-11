@@ -1,6 +1,9 @@
-﻿|<h1>***Computer Language Coding Concepts***</h1>|
-| :- |
-## **Further Parameter Passing Stereotyping**
+﻿Computer Language Coding Concepts
+=================================
+
+Further Parameter Passing Stereotyping
+--------------------------------------
+
 Comtemplations about further thru parameter passing stereotyping will be postponed.
 
 Throughput could have the following elements:

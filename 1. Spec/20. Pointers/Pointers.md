@@ -1,7 +1,9 @@
 ﻿Circle Language Spec
 ====================
 
-## **Pointers**
+Pointers
+--------
+
 ### ***Brainstorm***
 The 'pointer-to-pointer' issues seemed to be a bit spread over the chapters. When a chapter would be explained, afterwards it seemed to evaluate how things could look in pointer-to-pointer situations. The idea is that all of those pointer-to-pointer situations might be put here in this chapter instead. Topics like objects, classes, interfaces, assignment, seem to able to live without thinking about pointer situations, and pointers just seems a single problem area that might be desirable to cover separately.
 

@@ -1,7 +1,6 @@
 ﻿Basic Diagram Elements article versions
 =======================================
 
-
 |**Version**|**Name**|**Description**|
 | :- | :- | :- |
 |2008-05-20 00  1.0|Basic Diagram Elements|After project *Clarify Automatic Execution Order & Diagram Notation*|

@@ -1,7 +1,9 @@
 ﻿Computer Language Coding Concepts
 =================================
 
-## **Pointer Circularity**
+Pointer Circularity
+-------------------
+
 < Article text >
 
 See also: *< List of articles >*

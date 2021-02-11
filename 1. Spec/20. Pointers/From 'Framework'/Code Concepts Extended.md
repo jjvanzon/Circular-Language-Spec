@@ -1,8 +1,8 @@
 ﻿Circle Documentation
 ====================
 
-## **Code Concepts Extended**
-…
+Code Concepts Extended
+----------------------
 
 ### *Handy Access*
 

@@ -1,17 +1,10 @@
 ﻿Computer Language
 =================
 
-| :- |
-## **New Computer Language Summary**
-< Article text >
-### **< Section title >**
-< Section text >
-
-See also: *< List of articles >*
+New Computer Language Summary
+-----------------------------
 
 
-*Author & Copyright: <Jan-Joost van Zon>        Date: <May 21, 2008> – <May 22, 2008>        Location: <Oosterhout, The Netherlands>        Status: [ Under Construction | Finished | … ]*
-## **Ideas**
 Computer Language,
 
 2008-08-06

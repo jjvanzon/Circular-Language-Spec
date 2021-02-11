@@ -1,5 +1,8 @@
-﻿### ***Automatic Execution Order***
+﻿Automatic Execution Order
+=========================
+
 #### **Newer Concept**
+
 ± 2008-08
 
 The first thought was, that the execution order of sub-commands could be automatically determined, based connection between parameters and objects, and whether parameter is **In**, **Out** or **Thru** and **By Reference**, **By Value** or **Object Out**. But this is not true.

@@ -1,6 +1,9 @@
-﻿|<h1>***Computer Language Coding Concepts***</h1>|
-| :- |
-## **Concurrency**
+﻿Computer Language Coding Concepts
+=================================
+
+Concurrency
+------------
+
 Concurrency problems might be solved with several mechanisms. Which is the best one is yet to be deteremined. In this document you will find a lot of ideas about it.
 
 The current document is under construction.

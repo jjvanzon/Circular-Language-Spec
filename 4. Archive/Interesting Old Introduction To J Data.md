@@ -1,10 +1,6 @@
 ﻿Interesting Old Introduction To J Data
 ======================================
 
-*Author: Jan-Joost van Zon*
-
-*Date: 2005-08-31*
-
 *This story dates from a time when I looked at it from a data perspective, rather than an object perspective. I kept the name J Data in the story, instead of replacing it with Creator, so that it’s clear the story is about an older perspective.*
 
 J Data may be *the* basic software module that makes all computing *so* easy.

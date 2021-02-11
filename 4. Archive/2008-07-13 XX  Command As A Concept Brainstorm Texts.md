@@ -1,13 +1,8 @@
 ﻿Command As A Concept Brainstorm Texts
 =====================================
 
-*Author: Jan-Joost van Zon*
-
-*Location: Oosterhout, The Netherlands*
-
-*June 23, 2008 – July 13, 2008*
-
 #### ***Commands as a concept***
+
 Keep in mind, that in earlier articles it was explained, that a command is a separate entity, as opposed to being part of a specific class.
 
 A command is an *executable object*.

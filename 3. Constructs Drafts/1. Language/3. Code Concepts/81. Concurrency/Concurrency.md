@@ -1,8 +1,8 @@
 ﻿Circle Documentation
 ====================
 
-## **Concurrency**
-…
+Concurrency
+------------
 
 ### *Input Output*
 

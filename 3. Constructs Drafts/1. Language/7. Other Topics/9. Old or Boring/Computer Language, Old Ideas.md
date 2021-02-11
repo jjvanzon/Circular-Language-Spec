@@ -1,16 +1,18 @@
 ﻿Computer Language, Old Ideas
 ============================
 
-## ***Development Notes***
+Development Notes
+-----------------
+
 ### **Symbol Development Notes**
+
 Stepping through a procedure without seeing that you enter a whole tree out of procedures,
 
 should be a standard stepping mode.
-## ***Contents***
-Contents
 
 Introduction
-## ***Introduction***
+------------
+
 J Code is the compiler of the Sigma operating system. It converts one type of code to another.
 
 There is a standard way to describe a programmatic system: the system document, which is a system specification document. You specify a system object orientedly.
@@ -44,7 +46,9 @@ This project involves the following:
 - Symbol View and Interaction
 
 Each subject has its own document. This document only describes the subjects in general.
+
 ## ***Symbol Database***
+
 Symbol language is stored in a J Database.
 ### **Old**
 ### **System Specification**

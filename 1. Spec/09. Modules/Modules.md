@@ -1,7 +1,9 @@
 ﻿Circle Language Spec: Modules
 =============================
 
-## **Modules**
+Modules
+-------
+
 ### **Concept**
 A module is like a little world in which objects and commands live. A module can be a site, a computer program, a library or other kind of module. A module groups together functionality or data.
 

@@ -1,7 +1,9 @@
 ﻿Circle Language Spec: Object Order
 ==================================
 
-## **Object Order**
+Object Order
+------------
+
 **[Preliminary documentation]**
 
 This is unfinished documentation of lower quality. It only has unfinished descriptions and loose ideas.

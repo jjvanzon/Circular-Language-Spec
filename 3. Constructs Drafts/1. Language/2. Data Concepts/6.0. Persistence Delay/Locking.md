@@ -1,7 +1,8 @@
 ﻿Locking
 =======
 
-## **Ideas**
+Ideas
+-----
 
 I have not taken into account in Sy, that
 

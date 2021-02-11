@@ -1,6 +1,9 @@
-﻿|<h1>***Computer Language Coding Concepts***</h1>|
-| :- |
-## **Automatically Determining What’s In Out or Thru**
+﻿Computer Language Coding Concepts
+=================================
+
+Automatically Determining What’s In Out or Thru
+----------------------------------------------
+
 < Under construction >
 
 The terms input, output, throughput and downput were discussed earlier. Here it is discussed how to automatically determine whether a parameter is in, out, through or downput.

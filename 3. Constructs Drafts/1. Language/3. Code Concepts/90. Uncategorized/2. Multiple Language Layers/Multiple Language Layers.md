@@ -1,21 +1,14 @@
 ﻿Multiple Language Layers
 ========================
 
-\- Arithmetic Algebra
-
-\- Comparative Algebra
-
-\- Boolean Algebra
-
-\- Execution Flow
-
-\- Procedural
-
-\- Object Oriented
-
-\- Relational
-
-\- …
+- Arithmetic Algebra
+- Comparative Algebra
+- Boolean Algebra
+- Execution Flow
+- Procedural
+- Object Oriented
+- Relational
+- …
 
 ##### **Procedural Imposed On Algebraic**
 The criteria that are simple types can only be expressed with numbers and all. So simple literals. I accept that.

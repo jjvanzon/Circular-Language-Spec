@@ -1,13 +1,8 @@
 ﻿Computer Language Coding Concepts
 =================================
 
-## **Conversions**
-< Article text >
-
-See also: *< List of articles >*
-
-
-*Author & Copyright: Jan-Joost van Zon        Date: May 14, 2009 – May 14, 2009        Location: Oosterhout, The Netherlands        Status: Under Construction*
+Conversions
+------------
 
 ## **Ideas**
 *The texts below are loose ideas, yet to be turned into good documentation.*
