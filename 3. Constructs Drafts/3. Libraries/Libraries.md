@@ -9,11 +9,11 @@ This folder is to contain documentation about some basic libraries needed for th
 
 Most documentation is not written yet.
 
-### *Math*
+### Math*
 
 The development version of the *Basic Math* documentation is fairly readable and covers implementations of basic math, which are *object*-systems in which numbers and math operation are objects, that link together (called *Math Objects*). *Math Objects* versions were programmed using version 0.9 and 2.0 of the new computer programming language.
 
-### *Assembly*
+### Assembly*
 
 …
 

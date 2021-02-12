@@ -1,9 +1,9 @@
 ﻿Circle Language Spec: Black Boxes
 =================================
 
-## **Black Boxes Broader View Ideas**
+## Black Boxes Broader View Ideas**
 
-### ***Side-Issues***
+### Side-Issues***
 
 In previous projects the main articles about black boxing were finished, but other subjects were left unfinished. This article contains the unfinished material of some of these topics.
 
@@ -19,7 +19,7 @@ Addresses mainly the issue why when something is private, programmers get to cha
 
 As said, the texts about these subjects are not finished yet.
 
-#### **Black Boxing and User Access Control**
+#### Black Boxing and User Access Control**
 
 Access control will be fully managed
 
@@ -95,7 +95,7 @@ or changing (add and delete symbols.)
 
 JJ
 
-#### **Programmers and Users**
+#### Programmers and Users**
 
 …  = user access control
 

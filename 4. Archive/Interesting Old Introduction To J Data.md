@@ -26,7 +26,7 @@ J Data Generator produces a software module with an object structure that matche
 So using J Data is quite easy: you define the *logical* data elements and how they are related. You are returned a module that has the data logic as an interface. All you really need to know is that the better you refine the data logic, the faster it operates.
 
 Even though you can use J Data Structure for all your data, it is still possible to directly use the basic data structures provided by J Lists and Trees.
-##### **Summary**
+##### Summary**
 - Basic Data structures: lists and trees
 - Common interface for lists
 - Common interface for trees

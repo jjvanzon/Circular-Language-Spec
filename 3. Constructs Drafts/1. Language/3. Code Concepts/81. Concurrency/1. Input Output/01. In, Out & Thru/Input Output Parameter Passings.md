@@ -14,7 +14,7 @@ But these articles talk too much about input and output. The terms input and out
 
 Much of the text may not be true anymore.
 
-### **By Value**
+### By Value**
 
 A parameter is By Value, if you can only publically read or write the value of the object or clone the values of an object up until a certain depth. 
 
@@ -44,7 +44,7 @@ Value parameters do not have the interchangability between command parameters an
 
 JJ
 
-### **By Value in a Diagram**
+### By Value in a Diagram**
 
 The diagram below represents a By Value parameter tied to the value source or target:
 
@@ -76,7 +76,7 @@ The number 2 stands for the cloning depth.
 
 A single-value transfer will be the same as a cloning depth of 1, but the number 1 will not be shown then.
 
-### **By Reference**
+### By Reference**
 
 Next to passing a parameter by *value*, you can also pass a parameter by reference. For instance: instead of copying a value to an input parameter, you give the command a reference to an object outside the command.
 
@@ -90,7 +90,7 @@ In earlier programming languages one use of by reference was to be able to pass 
 
 When a command call has an outward reference to an object, this *does* make the object a parameter, but this *does not* determine yet whether it is input, output or throughput. The *in* and *out* in this case refer to whether *values* are written or read to the object reference. A reference parameter is always sort of like input, though: the parent command passes the object to the sub-command, so the parent inputs something into the sub command.
 
-### **Value In**
+### Value In**
 
 A Value In parameter passes a value from an object to the parameter of a command. A Value In parameter is an object inside the command call, that can be written before the command is invoked, by assigning to it a value of an object outside the command call.
 
@@ -98,7 +98,7 @@ The command can manipulate the Value In parameter without affecting the original
 
 A Value In parameter works best simple objects, that stores a single value, but can also work for more complex objects, that will then be cloned up until a certain depth.
 
-### **Value In in a Diagram**
+### Value In in a Diagram**
 
 A diagram of an executable command with a Value In parameter:
 
@@ -134,13 +134,13 @@ Here is the expression of cloning depth for Value In parameters of inactive comm
 
 ![](images/Input%20Output%20Parameter%20Passings.013.png)
 
-### **Value Out**
+### Value Out**
 
 A Value Out parameter is a value produced by a command, that can be yielded over to another object after the command is done. A Value Out parameter is an object inside the command call, that is written to by the command or by one of its sub-commands. After execution of the command the value of the output parameter can be copied, by assigning the value to another object.
 
 As said in the article By Value, the parameter is either a copy of a single value, or a clone up to a certain depth.
 
-### **Value Out in a Diagram**
+### Value Out in a Diagram**
 
 A diagram of an executable command with a Value Out parameter looks as follows:
 
@@ -176,7 +176,7 @@ Here is the expression of cloning depth for Value Out parameters of inactive com
 
 ![](images/Input%20Output%20Parameter%20Passings.021.png)
 
-### **Value Thru**
+### Value Thru**
 
 Throughput by value is when a by value parameter is first written to, then changed by the command, and then the value of the parameter is read from again, and assigned to the original object. 
 
@@ -186,7 +186,7 @@ As said in the article By Value, the parameter is either a copy of a single valu
 
 In theory the value could first come from one object, and after the call be written to another object. But that’s not regularly what a Value Thru parameter is used for. The value will first be copied from one object and assigned to the parameter, and afterwards the value of the parameter is copied to the original object again.
 
-### **Value Thru in a Diagram**
+### Value Thru in a Diagram**
 
 A diagram of an executable command with a Value Thru parameter:
 
@@ -222,11 +222,11 @@ Here is the expression of cloning depth for Value Thru parameters of inactive co
 
 ![](images/Input%20Output%20Parameter%20Passings.029.png)
 
-### **Reference In**
+### Reference In**
 
 A Reference In parameter can be used to assign a reference to a complex object as the input of the command. Because a Reference In parameter is input, the called command can only *read* out of the object, that it was given a reference to.
 
-### **Reference In in a Diagram**
+### Reference In in a Diagram**
 
 A diagram of an executable command with a Reference In parameter looks as follows:
 
@@ -246,7 +246,7 @@ Here is a picture in which a command definition’s Reference In parameter does 
 
 Do note, that the expression of read-write direction is not a connector point, like for Value parameters. It is an abstract expression of value direction. You can not connect anything to it. The reference target connector, however, *is* a connector point.
 
-### **Reference Out**
+### Reference Out**
 
 When a command is passed a reference to an object, and the command writes to the parameter, it is called a Reference Out parameter. Because a Reference Out parameter is output, the called command can only *write* to the object, that it was given a reference to. A Reference Out parameter can be used to assign a reference to a complex object to which a command writes output.
 
@@ -254,7 +254,7 @@ In a sense, a Reference *Out* parameter is actually *through*put.
 
 When output is *alteration* of an *existing* object, it could be considered throughput, even though there is only *written* to the object, and nothing is *read* from the object, it is still an object passed *through* the command. In yet another sense, a Reference Out parameter is input, because you are passing an object *into* a command.
 
-### **Reference Out in a Diagram**
+### Reference Out in a Diagram**
 
 A diagram of an executable command with a Reference In parameter looks as follows:
 
@@ -276,11 +276,11 @@ Here is a picture in which a command definition’s Reference Out parameter does
 
 Note, that the indication of read-write direction is an abstract expression of the value direction inside the command. You can not connect anything to it.
 
-### **Reference Thru**
+### Reference Thru**
 
 Next to Reference In and Reference Out, there is also Reference Thru, which means, that the command both reads and writes to the object passed to it. A Reference Thru parameter is a pointer to something outside the command. The object pointed to both read from and written to. A Reference Thru parameter can be used to assign a reference to a complex object, from which input is read and output is written to. 
 
-### **Reference Thru in a Diagram**
+### Reference Thru in a Diagram**
 
 A diagram of an executable command with a Reference Thru parameter looks as follows:
 
@@ -300,7 +300,7 @@ Here is a picture in which a command definition’s Reference Thru parameter doe
 
 Do note, that the expression of read-write direction is not a connector point. It is an abstract expression of value direction. You can not connect anything to it. The reference target connector, however, *is* a connector point.
 
-### **Object Out**
+### Object Out**
 
 An Object Out parameter is an object, that resides inside the command. The Object Out parameter may be a new object, or redirect to an existing object. Anyway, the *command* determines which object will be output. The produced object can be referenced from outside the command.
 
@@ -326,15 +326,15 @@ An Object Out should really only be accessed *after* the command has run.
 
 < An Object Out parameter can be a regular object, but it can also be a command object. In that case it is a command *produced* by another command. The parent command can return a new command or the parent command can return a reference to an existing command. >
 
-#### ***New command ( / new object )***
+#### New command ( / new object )***
 
 When an Object Out parameter is actually a new command, then the new command is either a preconfigured instance of another command, or it can be a brand new, generated command, any part of which is constructed by its parent command, based on a set of variables.
 
-#### ***Existing command ( / existing object )***
+#### Existing command ( / existing object )***
 
 An Object Out parameter can also be an existing command. In that case the Object Out parameter object-redirects to another command again, so the parent command basicallly picked out a command for you, instead of actually producing a new one.
 
-### **Object Out in a Diagram**
+### Object Out in a Diagram**
 
 A diagram of an executable command with an Object Out parameter looks as follows:
 
@@ -352,7 +352,7 @@ Here is a picture in which a command definition’s Object Out parameter does ha
 
 ![](images/Input%20Output%20Parameter%20Passings.045.png)
 
-### **Three Parameter Passing Elements**
+### Three Parameter Passing Elements**
 
 By Value, Reference Outward and Reference Inward are the different reference situations a parameter can have. But this tells us nothing about whether a parameter is input, output or throughput. What determines, whether it is in, out or thru is whether values are written to the parameter or read from the parameter.
 
@@ -422,7 +422,7 @@ The reason why it is important to keep understanding the three aspects of parame
 
 Value In and Value Out means reading and writing done by de caller. Reference In and Reference Out means reading and writing done by the called command. In both cases In does mean, that the called command *uses* something, and Out means, that the called command returns something.
 
-### **Parameters of calls directly tied together**
+### Parameters of calls directly tied together**
 
 In other programming languages, sub-commands do not directly read or write to eachother’s parameters. Parameters are only read or written by the parent command.
 
@@ -456,13 +456,13 @@ Effectively, it will be the lowest cloning depth that will be transferred to the
 
 ![](images/Input%20Output%20Parameter%20Passings.058.png)
 
-### **Strict about parameter passing**
+### Strict about parameter passing**
 
 I really want the programming environment, to not so easily accept, that a parameter is typed throughput, when it is only read from. Because otherwise you rely too much on courtesy of the programmer, to make the whole system function correctly.
 
 You could define a parameter as throughput, but actually only read from it. In that case the parameter is implicitly degraded to an input parameter. The implicit parameter type counts. The implicit parameter passing is dependant on the way it is declared and the way it is used. A throughput parameter is not only declared as such, but also always used as such. 
 
-### **The class of a parameter**
+### The class of a parameter**
 
 The class of a parameter is usually set by the command, that holds the parameter. In that case, you can only assign objects or values of objects to it, that have the same class as the parameter indicates.
 
@@ -470,7 +470,7 @@ It is also possible, that a parameter does not have a class. In that case any ob
 
 When the class of a parameter is determined from the outside, then it is special. It is a Class Reference parameter. In that case you may not be able to also use it as a normal Reference parameter. < I don’t know yet. >
 
-### **Sub-commands are never output objects**
+### Sub-commands are never output objects**
 
 Sub-commands, so active command objects inside another command, are never referenced so sub-commands can never output objects.
 
@@ -480,7 +480,7 @@ This rule also implies, that sub-commands (active commands inside another comman
 
 A parameter, that is a command reference, can be run, but it can never point to an active command inside another command, so that never lets any parent command loose control over any sub-command’s execution.
 
-### **In, Out & Thru Parameters**
+### In, Out & Thru Parameters**
 
 Parameters can function as input, output and throughput. Input, output and throughput are parameter passing types. They are shortened to In, Out and Thru.
 
@@ -492,7 +492,7 @@ During execution you can not read or write. > 2008-09-24 from the outside
 
 After execution you can only read. > 2008-09-24 from the outside
 
-### **Downput**
+### Downput**
 
 Next to the terms input, output and throughput, the term downput will be introduced. Downput is intermediate data as a helper of a process, that will eventually produce output. Temporary variables, local variables. They are all downput. Actually, in the command-call structure, a command in which output data is disposed, this output has become downput.
 
@@ -502,13 +502,13 @@ The term downput is a good term, because it is only passed *down* into sub-comma
 
 When a command disposes objects after it is done, then those objects are called *downput*. Downput may have been input for sub-commands, or it could have been output of sub-commands. To the parent command, though, it is *downput*. Downput parameters will not be further considered here, because they do not have anything to do with parameter *passing*.
 
-### **Incidental parameter passing**
+### Incidental parameter passing**
 
 One time a command runs, something may only be read. Another time it may be read and written to. This changes the implicit position of the object in relation to to the command for each call to the command. You could stereotype it an input parameter as Not Input and an output as Not Output and a thru parameter as Only Input or Only Output or Not Thruput. But it does not replace the parameter’s In, Out or Thru properties, because they belong to the command definition.
 
 The object command’s on the other end of the relationship, also get additional typing based on the incidental parameter passing, but the passing names are not even determined yet.
 
-### **Indirect Value Transmission**
+### Indirect Value Transmission**
 
 Used in abstract notations, explained later, a value line does not necessarily mean yielding over the value of one object on one end of the line to the other object on the other end of the line. It may be yielding over values between sub-objects. So it’s not synonym to a value assignment in that case.
 
@@ -532,11 +532,11 @@ All in all, non-value transmissions apply to By Reference parameters only.
 
 So for reference parameters, the in-out-thru direction will be an abstract indication of what is going on. It can mean a lot of different things. The exact objects and manipulations a command executes on a reference parameter are indicated by its command IO, covered in the article *Command IO* (possibly still part of the article *Automatic Execution Order*).
 
-### **Wrong approach to the terms In, Out and Thru**
+### Wrong approach to the terms In, Out and Thru**
 
 *2008-09-29*
 
-#### ***In, Out & Thru***
+#### In, Out & Thru***
 
 The terms I would like to see back in access control literals are the terms In, Out and Thru.
 
@@ -572,7 +572,7 @@ Object In, Value Thru, Value Get Private
 
 But I am not sure yet.
 
-#### ***Terms for reading***
+#### Terms for reading***
 
 Reading stuff does not seem to have anything to do with the terms In, Out and Thru. In, Out and Thru only determine the write-direction.
 
@@ -582,7 +582,7 @@ What I see now, is that if I find simpler terms for reading, I will probably be 
 
 Next to an easier expression of Get Private and Get Public, you may also want to invent keywords to express that something is publically written and privately read, or the other way around. So when Value is set on the outside and read on the inside, you get an easier expression for it, than saying Value In, Value Get Private. Do note, that when you set a value on the outside, it does not imply, that you also *read* the value on the inside.
 
-#### ***Consider New In & New Out***
+#### Consider New In & New Out***
 
 2008-09-29
 
@@ -590,7 +590,7 @@ However, New In does mean creation from the outside and New Out does mean creati
 
 JJ
 
-#### ***More***
+#### More***
 
 If an aspect is both In and Out and the two access control elements are right next to eachother, it can be replaced by a single access control element Thru:
 
@@ -604,7 +604,7 @@ Value Thru
 
 Class Thru
 
-### **Brainstorm 2008-09-27**
+### Brainstorm 2008-09-27**
 
 I think the terms input and output should not be about whether something is written from the outside and whether something is written from the inside. That’s what I did earlier. I think the term input should mean: everything that is read on the inside of a command, and the term output should mean: everything that is written on the inside of a command.
 
@@ -624,7 +624,7 @@ I have to clean up the objectives of the current project and create a new plan f
 
 Then I can work my way up to an end point. And in the next project I can just calmly look at the exact complexity of input and output.
 
-### **Brainstorm 2008-09-26**
+### Brainstorm 2008-09-26**
 
 The problem with defining what is input and what is output, is:
 
@@ -767,7 +767,7 @@ So those allowances should go hand in hand: if you can write it from the outside
 
 but WHERE it is then read could be somewhere totally else than directly outside or directly inside. DOES THAT count for SETTING too?
 
-### **More Ideas**
+### More Ideas**
 
 Parameters,
 
@@ -858,9 +858,9 @@ Byrefs have pros and cons in different situations.
 
 
 
-# ***From the original Symbol documentation***
+# From the original Symbol documentation***
 
-## **Procedure Parameters**
+## Procedure Parameters**
 
 Procedures can have *parameters*: instructions passed along with the procedure that make the procedure behave differently. The **Button . Set Text** procedure, for instance, has a **Text** parameter, which indicates what the new text of the button will be.
 
@@ -880,23 +880,23 @@ The procedure can do whatever it wants with the parameters passed to it. All it 
 
 The terms *parameter* and *argument* are often intermixed. For now you can assume that a parameter is a setting of a procedure and an argument is the value that it holds. That’s not the entire truth, though, but I’ll save the exact meaning for later.
 
-### **Input, Output and Throughput Parameters**
+### Input, Output and Throughput Parameters**
 
 Parameters are commonly input (instructions) for a procedure. Parameters can also be output (returned results). They make a procedure return something to the caller. One of the output parameters can be appointed to be *the* return value, which makes it sort of like the main output parameter. Some parameters can be input, and then output again. Then the procedure uses the parameter, transforms it and gives it back in the transformed state. These parameters are called throughput parameters, or in-out parameters. There are also objects in a procedure that are only used locally. Those are not usually called parameters, but sooner called *local objects*.
 
-## **Get and Set are Inseparable**
+## Get and Set are Inseparable**
 
 A state write is always paired with a state read and a state read is always paired with a state write.
 
 When you read a state, the state is meant to be assigned to another object. And from the other perspective, there’s no point in reading the state if you’re not going to assign the state to another object.
 
-## **Executions & Parameters**
+## Executions & Parameters**
 
-### **Argument Access**
+### Argument Access**
 
-#### ***Input, Output and Thoughput***
+#### Input, Output and Thoughput***
 
-##### *Output by Reference*
+##### Output by Reference*
 
 < 2008-10-06 Move to Input Output >
 
@@ -910,11 +910,11 @@ Nothing is *read* in the epilog in this case. Even though the argument functions
 
 Any line going out of a diamond is set just before the diamond executes.
 
-##### *Write, Read ≠ Input, Output*
+##### Write, Read ≠ Input, Output*
 
 As such, *read and write arguments* is not analogous to *input and output arguments*. A write argument can easily serve as an output argument.
 
-##### *Reference Arguments*
+##### Reference Arguments*
 
 Reference arguments can serve as input, output and throughput. State arguments can serve as input, output and throughput too. 
 
@@ -922,13 +922,13 @@ You’ll hardly use a line target as output information. You’ll probably use a
 
 Even though an argument’s line is hardly ever read, an argument’s state *is* commonly read.
 
-#### ***Using Arguments***
+#### Using Arguments***
 
 
 |You’ll mainly use arguments by reading and writing their state or to pass objects by reference.|
 | :- |
 
-#### ***Accessing Arguments During Execution***
+#### Accessing Arguments During Execution***
 
 Apart from writing in the prolog and reading in the epilog, there’s a third period in which you can access an argument: during execution. You can only access the arguments of a diamond *in execution*. The caller of the diamond is frozen, till the execution completes, so the caller doesn’t have any chance of accessing the arguments during execution. However, everything inside the executor is in motion. The executor itself can freely access its arguments, ofcourse, but also anything it calls, could access its arguments, if given a reference. But, as I said, the *caller* of an execution can’t access the arguments during execution.
 
@@ -944,7 +944,7 @@ Note, however, that it’s not the definition that’s accessing member **m**. I
 
 More rules on that are covered in the *Execution Basics* section.
 
-### **Implicit Notations**
+### Implicit Notations**
 
 < you can call an implicit call a parameter reference too. Mention it so you show that there’s a big difference between parameter reference and argument reference >
 
@@ -952,11 +952,11 @@ More rules on that are covered in the *Execution Basics* section.
 - Implicit return value reference
 - Implicit argument assignment
 
-#### ***Previous Texts***
+#### Previous Texts***
 
-##### *A*
+##### A*
 
-###### **Referencing Square Members: Implicit Call**
+###### Referencing Square Members: Implicit Call**
 
 It is really only allowed to reference members of diamonds:
 
@@ -1006,7 +1006,7 @@ But as I said: child diamonds can access their parent diamond’s members if the
 
 ![](images/Input%20Output%20Parameter%20Passings.072.jpeg "Picture 19")
 
-###### **An object symbol as a pointer to a procedure symbol: Implicit return value reference.**
+###### An object symbol as a pointer to a procedure symbol: Implicit return value reference.**
 
 You can also let an object symbol point to a procedure symbol.
 
@@ -1016,7 +1016,7 @@ In that case you’re actually implicitly referencing the return value.
 
 ![](images/Input%20Output%20Parameter%20Passings.074.jpeg "Picture 21")
 
-###### **Implicit Call and Implicit Return Value Reference**
+###### Implicit Call and Implicit Return Value Reference**
 
 If an object symbol is a reference to a square, it’s both an implicit call and an implicit return value reference.
 
@@ -1034,7 +1034,7 @@ in the second picture you see the explicit call. The third picture adds the expl
 
 ![](images/Input%20Output%20Parameter%20Passings.077.jpeg "Picture 24")
 
-###### **Reference to Other Out Parameters**
+###### Reference to Other Out Parameters**
 
 An object reference to a procedure can only be a reference to the procedure’s return value. If you want to reference other out paramters, you have to reference them explicitly.
 
@@ -1044,7 +1044,7 @@ An object reference to a procedure can only be a reference to the procedure’s 
 
 **a** can only be a reference to **r**, the return value. **b** is a reference to **o**, another out parameter.
 
-### **Argument Reference**
+### Argument Reference**
 
 There are three ways to use arguments: state read, state write and passing by reference:
 
@@ -1100,7 +1100,7 @@ If a reference argument targets the argument of a parent diamond, it is not cons
 
 Argument reference is only the case where you *enter* a diamond.
 
-#### ***Summary***
+#### Summary***
 
 So the implicit argument reference notation:
 
@@ -1138,7 +1138,7 @@ Invert the direction of other lines that became faulty
 
 ![](images/Input%20Output%20Parameter%20Passings.090.png)
 
-### **In, Out and Thru Argument Notation**
+### In, Out and Thru Argument Notation**
 
 < The out parameter access symbol isn’t required, so the notation of it *suggests* that it’s an in parameter reference >
 
@@ -1179,7 +1179,7 @@ As such, there are six explicit argument purposes:
 | :-: | :-: | :-: |
 |<p>![](images/Input%20Output%20Parameter%20Passings.100.png)</p><p>*Reference in*</p>|<p>![](images/Input%20Output%20Parameter%20Passings.101.png)</p><p>*Reference out*</p>|<p></p><p>![](images/Input%20Output%20Parameter%20Passings.102.png)</p><p>*Reference thru*</p>|
 
-#### ***Execution Order In Text Code***
+#### Execution Order In Text Code***
 
 The resulting sequence of code lines corresponds to the execution order required for dependency. As you change the diagram, the order of the text code can change. You can freely more around text lines of sibbling symbols.
 
@@ -1187,13 +1187,13 @@ The resulting sequence of code lines corresponds to the execution order required
 
 <Don’t cover exact text code here>
 
-### **Implicit Notations**
+### Implicit Notations**
 
-#### ***Previous Texts***
+#### Previous Texts***
 
-##### *B*
+##### B*
 
-###### **Implicit Calls**
+###### Implicit Calls**
 
 < 2008-10-08 The texts that follow use an old notation for calls: a definition is a square without a reference line, a call is a square with a reference line. >
 
@@ -1262,7 +1262,7 @@ In the diagram above, the return value is implicitly referenced by pointing to t
 
 ####### Multiple Out Parameters
 
-######## *Implicit Return Value Reference*
+######## Implicit Return Value Reference*
 
 Implicit return value reference is only a way to reference the *return value*, not to the other out parameters. The other out parameters must be explicitly referenced. 
 
@@ -1270,7 +1270,7 @@ Implicit return value reference is only a way to reference the *return value*, n
 
 *Implicit return value reference, explicit out parameter reference*
 
-######## *Implicit Calls*
+######## Implicit Calls*
 
 When you reference output parameters of a procedure multiple times, each reference causes its own call to be made. 
 
@@ -1288,9 +1288,9 @@ If you want to reference multiple output parameters of a single call, you have t
 
 <Call in blue>
 
-##### *C*
+##### C*
 
-###### **? Referencing a Procedure Member**
+###### ? Referencing a Procedure Member**
 
 < 2008-10-08 Most of what is said in this section no longer applies, because a more explicit notation is desired, to make things less ambiguous, and some remarks have already been thought through and work differently. >
 
@@ -1308,9 +1308,9 @@ It always happens just after the diamond executes.
 
 <Must denote that the notation above is not an output situation. It’s an implicit call situation>
 
-#### ***Brainstorm Items***
+#### Brainstorm Items***
 
-##### *1*
+##### 1*
 
 Oh, die assignments lijken afzonderlijke referenties, waardoor je implicit calls krijgt? Of is dat alleen bij referenties naar inhoud van squares?
 
@@ -1320,20 +1320,20 @@ Dat is verkeerd
 
 \>
 
-##### *2*
+##### 2*
 
 *Nice wording:*
 
 A reference to something inside a square causes an implicit call to the square, because the procedure is required to execute in order to reference something inside of it.
 
-##### *3*
+##### 3*
 
 Implicit calls when referencing square contents (and their explicit diagram representations)
 
 
-### **Brainstorm**
+### Brainstorm**
 
-#### ***Summary of Old Subdivision***
+#### Summary of Old Subdivision***
 
 - Implicit call and Explicit call
 - Implicit return value reference
@@ -1344,7 +1344,7 @@ Implicit calls when referencing square contents (and their explicit diagram repr
   - Containment in other diamond
   - Consult of a parameter.
 
-#### ***New Subdivision***
+#### New Subdivision***
 
 - Out, In and Thru
   - Using reference parameters for in, out and thru (hard to control whether it’s in out or thru: you just use the object)
@@ -1369,7 +1369,7 @@ Implicit calls when referencing square contents (and their explicit diagram repr
   - Implicit call and Explicit call
   - Implicit return value reference
 
-#### ***New Main Subdivision***
+#### New Main Subdivision***
 
 Out, In and Thru
 
@@ -1379,15 +1379,15 @@ Execution Order
 
 Implicit Notations
 
-#### ***New Brainstorm Texts***
+#### New Brainstorm Texts***
 
-###### **New**
+###### New**
 
 - <>The assignment destination consult is not seens as a consult.<> Consult of a parameter as assignment destination does not require execution of the parameter holder.
 - Executor represents one execution per call on definition.		
   - Implicit calls are not made for diamond contents reference <>
 
-###### **Old**
+###### Old**
 
 < 2008-10-08 This talks about parameter passing, a notation for value assignment and about implicit call. Those three are spread over multiple documentation sections. But do the cross out here. >
 
@@ -1434,9 +1434,9 @@ Oh jawel! Consult vind gewoonlijk altijd plaats in epiloog, maar bij assignment 
 
 The last picture is an acceptable substitute for implicit state assignment. It is actually explicit state assignment, but it looks like a real connection between A and B. A rule though: state assignment takes two arguments: destination = source. In the notation on the left you have to follow the direciton of the line you’d get between A and B if you ignore the call thing in between to find out which is the first argumetn and which is the second. In text code it goed from  lieft to right. In the diagram It goes from …<>. B is destination A is source. I mean B is the one that gets the line. B is source of line, Asbut destination of assignment. 
 
-#### ***Argument Access Summary***
+#### Argument Access Summary***
 
-##### *In, Out and Thru*
+##### In, Out and Thru*
 
 - Using reference parameters for in, out and thru (hard to control whether it’s in out or thru: you just use the object)
 - Using State as In, Out and Thru
@@ -1447,15 +1447,15 @@ The last picture is an acceptable substitute for implicit state assignment. It i
 - Procedure reference too
 - If example
 
-### **Brainstorm**
+### Brainstorm**
 
-#### ***Other***
+#### Other***
 
 ***Different Wording, Not important, though***
 
 In an explicit call you always see the the call displayed as a separate diamond. If the call is made, the call is like a created object. After the call it is destroyed. When the call is created, you can reference its contents from anywhere without causing another call.
 
-## **Other**
+## Other**
 
 There are three types of parameters: in, out and thru. In parameters go in, out parameters go out and thru parameters come in and go out.
 

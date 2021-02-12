@@ -9,35 +9,35 @@ This folder does not contain a lot of documentation. It is the bone-structure fo
 
 There are the following sub-folders:
 
-### *File System Integration*
+### File System Integration*
 
 You can access other file systems from within *Circle*, and you can also access *Circle* as if it *were* a file system. *File System Integration* also covers any other tools regarding files. In the new software system you would apply those to *objects* instead of files. Some file tools have been developed. The documentation folder only contains loose ideas about file functions.
 
-### *Database Integration*
+### Database Integration*
 
 *Database Integration* will allow you to access *Circle* as if it were a relational database, but will also allow you to access relational database systems from within *Circle*. The documentation folder is empty. No software has been developed for this yet.
 
-### *SOAP Integration*
+### SOAP Integration*
 
 *SOAP Integration* will expose *Circle* resources through a SOAP interface, but also allow you to access other SOAP interfaces using *Circle*. The documentation folder is empty. No software has been developed for this yet.
 
-### *ODBC Integration*
+### ODBC Integration*
 
 *ODBC Integration* will make *Circle* support connecting to it through ODBC, but will also allow you to access other relational database resources using ODBC from within Circle. The documentation folder is empty. No software has been developed for this yet.
 
-### *File Types*
+### File Types*
 
 *File Types* will allow you to export or expose *Circle* resources as different commonly used file types, but also allows you to access files of such types from within *Circle*. The documentation folder is empty. No software has been developed for this yet.
 
-### *Module System Integration*
+### Module System Integration*
 
 *Module System Integration* means, that you could for instance use ActiveX resources, Java, COM, .NET and other module systems using *Circle*. Also, *Circle* resources could linked to as if they were for instance COM or any other module systems. The documentation folder is empty. No software has been developed for this yet.
 
-### *Protocols*
+### Protocols*
 
 Also, there will be *Protocols*, which will enable several internet protocols, so that you can access resources that are exposed through those protocols. Protocols such as HTTP, SMTP, POP3, FTP, etcetera. *Protocols* will make sure a *Circle* resource is accessible through those protocols. The documentation folder is empty. No software has been developed for this yet.
 
-### *Legacy API's*
+### Legacy API's*
 
 Furthermore, a lot of software is dependent on API’s. When software is made, and it uses an API, it is dependent on that API. You can not port the software to another system if the same API is not supported. *Module System Integration* might part solve this. You can link to resources from other systems, so you do not necessarily need to port to native *Circle* to integrate with another system. However, you might want to be able to port your system to the new computer language’s native operating system, to make use of new features in it. Porting as such is only possible if the API your program depends on, is either accessible through *Module Systems Integration* or the legacy API is supported in the new computer language as well. That is the part *Legacy API’s* is responsible for. It is undoable to support all existing API’s inside the new *OS*, but if an API is supported, *Legacy API’s* is the part of the system to put it in. The documentation folder is empty. No software has been developed for this yet.
 
@@ -87,7 +87,7 @@ I think it's legal to work with Word and Excel files.
 
 maybe others too
 
-### *Commercially Sellable Due to Integration Modules*
+### Commercially Sellable Due to Integration Modules*
 
 I also strive to integrate with other systems more, just because the internet already provides such a rich set of applications, that I would be happy to have them immediately available under my operating system.
 

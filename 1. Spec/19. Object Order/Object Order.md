@@ -8,7 +8,7 @@ Object Order
 
 This is unfinished documentation of lower quality. It only has unfinished descriptions and loose ideas.
 
-### **Object Order**
+### Object Order**
 
 *This brainstorm was written in the context of efforts to program a prototype app 'Circle 3'.*
 
@@ -18,7 +18,7 @@ Ordering is positioning, so the best way of expressing ordering objects would se
 
 A strategy you could have is to ignore the expression of object order for now, and pick one later when the rest is up and running. You can have to base up and running and ignore the expression of this concept. So the concept is implemented, but the expression is not. Yet another limitation to impose onto the first version of Circle 3.
 
-### **Order Matters**
+### Order Matters**
 
 This is a value you can set to **True** in a à n relation, that should aid in picking the right data structure for the relation. The only thing it was come up for, was to base picking either hole list or linked list on variables that had no techical meaning, but only functional meaning. I assumed that there will be more list structures that can be chosen if **OrderMatters** or **Not**.
 
@@ -28,11 +28,11 @@ The **OrderMatters** properties are not used by J Data Generator.
 
 Apart from **RelationClass**, **Class** also has an **OrderMatters** property intended to set **OrderMatters** for all **RelationClasses** of that **Class**.
 
-### **Class . OrderMatters**
+### Class . OrderMatters**
 
 See the *Order Matters* section.
 
-### **Ideas**
+### Ideas**
 
 Object Order,
 

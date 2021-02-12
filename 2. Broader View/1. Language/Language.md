@@ -1,7 +1,7 @@
 ﻿Circle Broader View
 ===================
 
-## **Overview**
+## Overview**
 
 This documentation folder describes the new computer programming language. This is the most important part of the documentation.
 
@@ -13,15 +13,15 @@ These things are enough to make the Circle language useful for accessing many co
 
 This documentation folder contains the following sub-folders:
 
-### *Diagram Expression*
+### Diagram Expression*
 
 Describes the basics of a diagram notation for visualizing code. Later in the documentation more details about the diagram notation will be covered, but these articles were put at the beginning of the documentation, because they are important original ideas about the diagram notation and important to cover first. The articles are finished up quite well. A start was made at implementing the diagram language, that is to become version 3 of the new computer language.
 
-### *Fundamental Principles*
+### Fundamental Principles*
 
 This documentation describes the fundamental principles, that the new computer language is based on. Perhaps the most important goal of the new computer language is to melt together all computer technology disciplines, providing one clear language, that can express anything, and that everybody can understand. The *Fundamental Principles* folder makes a lot of promises about the new language, but the *Code Concepts* folder shows you how those promises are upheld. If you want to go straight to the definition of the language itself, go to the *Code Concepts* documentation.
 
-### *Expression*
+### Expression*
 
 This folder covers the different kinds of ways you can express systematics. The basic ideas about a diagram notation were already covered at the beginning of the new computer language documentation, because it was important to quickly introduce those. The diagram expression is also explained throughout the code concepts documentation. This part of the documentation will cover the remaining topics about the diagram expression.
 
@@ -29,11 +29,11 @@ The idea behind expression in general is that a program’s systematics are not 
 
 Text code and diagram expression can be complemented by any other form of expression. Displaying data in tabular form is another form of expression. Expressing data and commands in a graphical windows user interface is also an alternative form of expression of systematics. Furthermore, certain objects have specialized expressions. For instance a sound object may be expressed by playing its sound, but not all objects can be expressed by playing it as sound. All expressions are considered alternative expressions of systematics, just like text code and diagram code.
 
-### *Other Topics*
+### Other Topics*
 
 This folder contains topics regarding the new computer language, that are either boring, trivial or just too advanced and go too far for now. All in all: topics, that are not important enough to cover yet.
 
-### *Previous Versions*
+### Previous Versions*
 
 This folder contains previous versions of descriptions of a new computer programming language.
 
@@ -41,7 +41,7 @@ This folder contains previous versions of descriptions of a new computer program
 
 *The texts below are loose ideas, yet to be turned into more polished documentation.*
 
-### *Compared to Other Programming Languages*
+### Compared to Other Programming Languages*
 
 Looking at the 'Subtext' programming language
 
@@ -104,7 +104,7 @@ Ik heb het vermoeden, dat als we alle gegevensverwerkingen via webservices zoude
 
 JJ
 
-### *Other*
+### Other*
 
 Computer Language,
 

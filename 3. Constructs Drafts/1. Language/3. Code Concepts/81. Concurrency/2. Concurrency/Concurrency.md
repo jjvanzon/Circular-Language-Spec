@@ -10,7 +10,7 @@ The current document is under construction.
 
 Look inside the document Internet As A Single Computer for a better description of the problem.
 
-#### **Concurrency resolution**
+#### Concurrency resolution**
 
 In hoeverre lost automatic containment concurrency problemen op?
 
@@ -38,13 +38,13 @@ naast dat de formele in, out en thru configuratie dan waarschijnlijk ook helpt v
 
 In automatic execution order you can see, that when you first assume arbitrary order of sub-commands, that do reads and writes, you have a concurrency situation. If you can solve THAT concurrency situation with automatic execution order, you can solve an arbitrary concurrent data-use situation with automatic execution order too. If everything is programmed, where does arbitrarity of the concurrency situation come from? The arbitrarity comes from users. Somehow a bigger whole, than a command with sub-commands would need to be treated as a single command, and the techniques of automatic execution order should be applied to that. Automatic execution order has not been fully described yet. >
 
-##### ***Concurrency is not considered***
+##### Concurrency is not considered***
 
 Concurrency was not considered in automatic execution order.
 
 On top of that, any connection between objects can change *just like that*, so you are only sure which piece of data will be read the moment you are reading it. The only time you know what data gets accessed concurrently, is *when* the data actually gets accessed concurrently. So you only know what readings and writings to specific data will influence eachother, the moment *they are* influencing eachother. So the *automatic* determination if sub-commands are data-dependent on eachother is not possible. It is only possible as soon as reads and writes *are* accessing the same data, which converts this to a concurrency resolution problem, that is not within the area of subject of automatic execution order anymore. Automatic execution order will not consider any volatile concurrency situation for now.
 
-##### ***Concurrency issues***
+##### Concurrency issues***
 
 2008-07-06 Concurrency
 
@@ -158,7 +158,7 @@ I don’t know.
 
 Actually
 
-##### ***Other Ideas***
+##### Other Ideas***
 
 < Parameters not used in a specific execution: non-put>
 

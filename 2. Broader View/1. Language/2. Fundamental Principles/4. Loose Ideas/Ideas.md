@@ -1,11 +1,11 @@
 ﻿Computer Language Fundamental Principles
 ========================================
 
-## ***Ideas***
+## Ideas***
 
-###### ***General***
+###### General***
 
-####### **Symbol As A Generic View**
+####### Symbol As A Generic View**
 
 More fundamental principles:
 
@@ -13,7 +13,7 @@ Something about Symbol being a generic way to view the computer & the internet
 
 I am quite convinced that Symbol can serve as a view on the contents of your computer just like a file system. I'm sure that Symbol, aside its usual symbolic view on the system, accompanied by tree views, list views, data relational diagrams and UML-like diagrams, can serve as a single, completely integrated view on the contents of a computer system.
 
-####### **Equality Principles**
+####### Equality Principles**
 
 Software System
 
@@ -33,7 +33,7 @@ and OS by a single system.
 
 JJ
 
-####### **Other**
+####### Other**
 
 Space won't have files,
 
@@ -80,7 +80,7 @@ But that may prove itself later.
 
 JJ
 
-###### ***Can’t Organize***
+###### Can’t Organize***
 
 Je moet bedenken dat bepaalde modules van me, geembed raken in de programmeeromgeving. Zo zal security inherent deel gaan uitmaken van de programmeeromgeving. En web objects zal erin geembed raken, voor web functionaliteit.
 
@@ -88,7 +88,7 @@ Waarschijnlijk gaat Graphics erin geëmbed raken om custom user interfaces te on
 
 Er zal dus veel inherent deel uit gaan maken van de programmeeromgeving.
 
-##### **Fundamental Principles**
+##### Fundamental Principles**
 
 But this is what fundamental principles is about: most of them are not an element of the system, but something for which multiple elements of the system must collectively provide a solution. >
 
@@ -250,7 +250,7 @@ om zo een beter systeem te hebben?
 
 JJ
 
-## ***More Ideas***
+## More Ideas***
 
 Computer Language,
 
@@ -379,9 +379,9 @@ kun je dieper navigeren naar hardware niveau en zien wat er allemaal in en uitga
 
 JJ
 
-## ***Out of the original Symbol documentation***
+## Out of the original Symbol documentation***
 
-### **Programming**
+### Programming**
 
 <I have explained all possiblities of the language, but there simply are things you’ll use more than others. In my former explanations for instance it seems that using object lines is just as common as using type and interface lines. However, you’ll find, let’s say 20 times more object lines that you will find type lines. You might even write a whole module without any interface lines at all.
 
