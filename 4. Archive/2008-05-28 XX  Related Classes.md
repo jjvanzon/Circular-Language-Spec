@@ -6,21 +6,21 @@ Funny enough, in this setting, a collection can be set to have multiple classes,
 
 ####### Class . RelatedClasses
 
-This collection of **RelationClasses** contains all the classes related to it. If a **Relation** is not **Dual**, then the class unaware of its relation counterpart will not have its counterpart registered in its **RelationClasses**.
+This collection of __RelationClasses__ contains all the classes related to it. If a __Relation__ is not __Dual__, then the class unaware of its relation counterpart will not have its counterpart registered in its __RelationClasses__.
 
-You can’t add **RelatedClasses** to this collection. You have to define relations in the **Structure.Relations** collection and they will be *reflected* in the **Class.RelatedClasses** collection.
+You can’t add __RelatedClasses__ to this collection. You have to define relations in the __Structure.Relations__ collection and they will be *reflected* in the __Class.RelatedClasses__ collection.
 
 ##### Reflecting Relations in Class.RelatedClasses (not Synchronizing)
 
 After a long think and sleeping on it, I’ve decided the following.
 
-I’ve decided that you only edit relations through the **Relations** collection and not through the **Class.RelatedClasses** collection. You ***can read*** the relations through the **Class.RelatedClasses** collection, but you can’t edit them there.
+I’ve decided that you only edit relations through the __Relations__ collection and not through the __Class.RelatedClasses__ collection. You __*can read__* the relations through the __Class.RelatedClasses__ collection, but you can’t edit them there.
 
-This is done because it would be quite complex to let **Class.RelatedClasses** apply to **Relations** and to let **Relations** apply to **RelatedClasses**. Many aspects make it hard. One of them is that the items of **RelatedClasses** are the same objects as those in **Relation.RelationClass()**, so who’s to apply to who?
+This is done because it would be quite complex to let __Class.RelatedClasses__ apply to __Relations__ and to let __Relations__ apply to __RelatedClasses__. Many aspects make it hard. One of them is that the items of __RelatedClasses__ are the same objects as those in __Relation.RelationClass()__, so who’s to apply to who?
 
-Altogether it was far easier to only make **Relations** apply to **Class.RelatedClasses**.
+Altogether it was far easier to only make __Relations__ apply to __Class.RelatedClasses__.
 
-**RelationClass** has two methods, **RegisterRelationInClass** and **DeregisterRelationInClass**, which registers or deregisters the relation counterpart in the class. Calling these at the right times ensures correct reflection of **Relations** in **Class.RelatedClasses**.
+__RelationClass__ has two methods, __RegisterRelationInClass__ and __DeregisterRelationInClass__, which registers or deregisters the relation counterpart in the class. Calling these at the right times ensures correct reflection of __Relations__ in __Class.RelatedClasses__.
 
 Relations.Relation.RelationClass(0 to 1).Class Set
 

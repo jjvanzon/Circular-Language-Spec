@@ -37,7 +37,7 @@ This folder contains topics regarding the new computer language, that are either
 
 This folder contains previous versions of descriptions of a new computer programming language.
 
-**Loose Ideas**
+__Loose Ideas__
 
 *The texts below are loose ideas, yet to be turned into more polished documentation.*
 

@@ -1,7 +1,7 @@
 ﻿Black Box Article Group Versions
 ================================
 
-|**Version**|**Name**|**Description**|
+|Version|Name|Description|
 | :- | :- | :- |
 |2009-06-26 XX  0.1|Black Box|A ton of ideas dumped into one document.|
 |2009-06-30 XX  0.4|Black Box|Ideas are now organized into an article structure.|

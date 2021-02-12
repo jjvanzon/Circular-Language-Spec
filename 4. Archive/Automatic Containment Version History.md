@@ -1,8 +1,8 @@
 ﻿Automatic Containment Article Versions
 ======================================
 
-|**Version**|**Description**|
-| :- | :- |
+| Version | Description |
+| ------- | ----------- |
 |2008-04-14 XX|No description|
 |2008-04-15 XX|No description|
 |2008-04-16 XX|No description|

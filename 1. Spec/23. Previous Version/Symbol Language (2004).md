@@ -21,7 +21,7 @@ In Symbol, the main symbol for an idea is a *circle*:
 
 ![](images/Symbol%20Language%20(2004).002.png)
 
-Each sub idea works independently of the other ideas. **Monitor** does its bit, **Keyboard** does its bit, etcetera. It’s the *super* idea that ties the sub ideas together. That means that the computer makes the links between monitor, keyboard, mouse and printer. The super idea combines the sub ideas and manages the communication between the sub ideas.
+Each sub idea works independently of the other ideas. __Monitor__ does its bit, __Keyboard__ does its bit, etcetera. It’s the *super* idea that ties the sub ideas together. That means that the computer makes the links between monitor, keyboard, mouse and printer. The super idea combines the sub ideas and manages the communication between the sub ideas.
 
 Ideas, so both super ideas and sub ideas, are called objects. Each object is responsible for its own bit of the system.
 
@@ -49,7 +49,7 @@ Any place you use a button in your system, there is a separate object:
 
 A button object in general is a *type* of object. All the button objects are objects of the same *type*. The separate buttons are so called *instances* of the type. Many times the word *object* is used instead of the word *type*. For instance, you can speak of *the* button *object*, while you’re talking about the button *type*. It’s like by saying ‘panda’ you can refer to an individual panda (object), but also to the panda as a kind of animal (type).
 
-There are many types already defined, that you will be using one way or another. Such as the **Button** type for instance, which you can use to quickly build a simple user interface. Another type, **Integer**, represents one integer number. You can hardly avoid using **Integers**.
+There are many types already defined, that you will be using one way or another. Such as the __Button__ type for instance, which you can use to quickly build a simple user interface. Another type, __Integer__, represents one integer number. You can hardly avoid using __Integers__.
 
 ### Skill comes with Time
 
@@ -57,7 +57,7 @@ The more experience you gain in splitting up large ideas into smaller parts, the
 
 ### Programming is Never Easy
 
-Some texts explaining programming environments try to sell it to you that software programming is easy. That is never true. Those texts are written to *sell* the programming environment, not to tell the truth. Those texts claim that the programming environment will do most of the work *for* you, while in real life, what the programming environment does *for* you, is just run existing programs, not program new software. The text will say you’ve programmed something, while you’ve really just run something that was already programmed. Only if you want to take *no* decisions on how the software is going to work, programming is easy. But then it’s not really programming. If you want to make decisions about how you want your software to be, software programming is *not* easy. In programming, you have to give everything a place *yourself*. If you reuse someone else’s object, you have to be aware of what the object will do for you. Worse, many times you encounter problems with someone else’s object that you can’t fix, because you can’t change the inner workings of the object. This can lead to wanting to program everything yourself and if you’re stubborn enough, or fed up enough, you become *me,* and actually try to start to program everything yourself. Learn to work with other people’s objects. I’m working on that too. *And* I’m trying to make *the* **Button** for which no one wants a replacement. Or if they do want a replacement, they’ll still want to use the base of my button as a foundation.
+Some texts explaining programming environments try to sell it to you that software programming is easy. That is never true. Those texts are written to *sell* the programming environment, not to tell the truth. Those texts claim that the programming environment will do most of the work *for* you, while in real life, what the programming environment does *for* you, is just run existing programs, not program new software. The text will say you’ve programmed something, while you’ve really just run something that was already programmed. Only if you want to take *no* decisions on how the software is going to work, programming is easy. But then it’s not really programming. If you want to make decisions about how you want your software to be, software programming is *not* easy. In programming, you have to give everything a place *yourself*. If you reuse someone else’s object, you have to be aware of what the object will do for you. Worse, many times you encounter problems with someone else’s object that you can’t fix, because you can’t change the inner workings of the object. This can lead to wanting to program everything yourself and if you’re stubborn enough, or fed up enough, you become *me,* and actually try to start to program everything yourself. Learn to work with other people’s objects. I’m working on that too. *And* I’m trying to make *the* __Button__ for which no one wants a replacement. Or if they do want a replacement, they’ll still want to use the base of my button as a foundation.
 
 ![](images/Symbol%20Language%20(2004).007.png)
 
@@ -135,17 +135,17 @@ An identifier is a name for a symbol (for instance for a circle). It can be any 
 
 
 
-`	`**Id**
+`	`__Id__
 
-`	`**Id1**
+`	`__Id1__
 
-`	`**1toNFilters**
+`	`__1toNFilters__
 
-`	`**1 to N Filters**
+`	`__1 to N Filters__
 
-`	`**I’m an identifier**
+`	`__I’m an identifier__
 
-`	`**Object A**
+`	`__Object A__
 
 A type gets an identifier, but also the separate objects get their own identifiers.
 
@@ -163,15 +163,15 @@ Sub objects again contain procedures.
 
 Software can’t execute without procedures. When you run a procedure, an object *does something*.
 
-A button could have a **Set Text** procedure for instance, which sets the text displayed on the button.
+A button could have a __Set Text__ procedure for instance, which sets the text displayed on the button.
 
 ![](images/Symbol%20Language%20(2004).012.png)
 
 Procedures are denoted by *squares*.
 
-Other objects could also have a **Set Text** procedure, therefore to identify the **Set Text** procedure of the ***Button*** object you notate:
+Other objects could also have a __Set Text__ procedure, therefore to identify the __Set Text__ procedure of the __*Button__* object you notate:
 
-**Button . Set Text**
+__Button . Set Text__
 
 A procedure itself consists of sub procedures: the separate steps of the procedures.
 
@@ -187,17 +187,17 @@ And the sub procedures are *called* from the super procedure:
 
 Calling a procedure has almost the same effect as inserting the called procedure there where you call it.
 
-The **Redraw Button** procedure is rather complex. In this procedure lines of the button are drawn, the text is drawn and whatever else makes up the display of the button. The steps of this redrawing are delegated by yet again calling other procedures. **Redraw Button** could for instance call the **Draw Line** procedure a number of times. So sub procedures of the **Set Text** procedure are themselves composed of sub procedures.
+The __Redraw Button__ procedure is rather complex. In this procedure lines of the button are drawn, the text is drawn and whatever else makes up the display of the button. The steps of this redrawing are delegated by yet again calling other procedures. __Redraw Button__ could for instance call the __Draw Line__ procedure a number of times. So sub procedures of the __Set Text__ procedure are themselves composed of sub procedures.
 
 ![](images/Symbol%20Language%20(2004).016.jpeg)
 
-You can also see here that separately defining a procedure can lead to the *reuse* of procedures. The **Draw Line** procedure is reused three times in the example above. There are many procedures already defined, that you will use one way or another. Most of these procedures are encapsulated in a type. There’s for instance a **File** type that contains procedures with which to control a single computer file.
+You can also see here that separately defining a procedure can lead to the *reuse* of procedures. The __Draw Line__ procedure is reused three times in the example above. There are many procedures already defined, that you will use one way or another. Most of these procedures are encapsulated in a type. There’s for instance a __File__ type that contains procedures with which to control a single computer file.
 
 So where does it end? Procedures would continue to delegate to one another and nothing would really actually happen. Well, it ends at a special group of procedures that don’t call other procedures anymore. Each of those procedures executes a so called machine instruction: a basic instruction that is sent to the computer’s central processing unit (CPU) and make the *computer* *do* something. The CPU performs a hardware defined *machine* procedure.
 
 That way there can develop a big procedure call tree-out, which makes a single procedure consist of many, many machine instructions, ranging from tens to thousands of machine instructions or even more.
 
-Justs like with the kitchen example: you don’t necessarily need to see the details of the procedure in order to understand what the effect **Button . Set Text** is.
+Justs like with the kitchen example: you don’t necessarily need to see the details of the procedure in order to understand what the effect __Button . Set Text__ is.
 
 ![](images/Symbol%20Language%20(2004).017.jpeg)
 
@@ -215,7 +215,7 @@ Even when you don’t think a lot, when giving something a name, even then namin
 
 ### Procedure Parameters
 
-Procedures can have *parameters*: instructions passed along with the procedure that make the procedure behave differently. The **Button . Set Text** procedure, for instance, has a **Text** parameter, which indicates what the new text of the button will be.
+Procedures can have *parameters*: instructions passed along with the procedure that make the procedure behave differently. The __Button . Set Text__ procedure, for instance, has a __Text__ parameter, which indicates what the new text of the button will be.
 
 Text is an *idea*. It is an *object*. It is *objects* that serve as parameters.
 
@@ -385,8 +385,8 @@ Using a triangle instead of a circle:
 
 Sees to it that:
 
-- **B**’s members are accessed as if they were **A**’s own members
-- You can refer to type **A** as if it were of type **B**
+- __B__’s members are accessed as if they were __A__’s own members
+- You can refer to type __A__ as if it were of type __B__
 
 ![](images/Symbol%20Language%20(2004).028.png)
 
@@ -400,7 +400,7 @@ To give a symbol a base type you put a triangle in it and connect it to its type
 
 ![](images/Symbol%20Language%20(2004).029.png)
 
-**B** is the base type, **A** is the derived type, because it now includes **B**’s interface with **B**’s implementation.
+__B__ is the base type, __A__ is the derived type, because it now includes __B__’s interface with __B__’s implementation.
 
 Inheritance in Symbol is actually more refined than in the C++ programming language. In Symbol a symbol’s base object can be any object, even an object that already existed or an object that is externally defined. In C++ the derived object always contains its *own* base object.
 
@@ -408,19 +408,19 @@ So you can make the base object an object that already existed:
 
 ![](images/Symbol%20Language%20(2004).029.png)
 
-**B** is the base *object* of **A**. And you can still refer to **A** as if it was of type **B**.
+__B__ is the base *object* of __A__. And you can still refer to __A__ as if it was of type __B__.
 
 Or you can make one object serve as multiple symbols’ base object:
 
 ![](images/Symbol%20Language%20(2004).030.png)
 
-**A** is the base *object* of all the other circles, not only the base *type*.
+__A__ is the base *object* of all the other circles, not only the base *type*.
 
 Conversely, using a triangle giving a symbol an interface is *like* using inheritance, but defining the base type right inside the derived type.
 
 ![](images/Symbol%20Language%20(2004).031.png)
 
-**A** and **B** are the base types of **C**, but **C** defines these base types itself.
+__A__ and __B__ are the base types of __C__, but __C__ defines these base types itself.
 
 #### Member Grouping
 
@@ -588,13 +588,13 @@ To make one procedure call another procedure, you put a diamond in the calling p
 
 ![](images/Symbol%20Language%20(2004).048.jpeg)
 
-You can say **A** calls **B**, or **B** is called from **A**. You could say that the line is directed outwards: the call line first exists a square, to next find its target procedure. The connected symbols here represent the same procedure. The side effect of a diamond though, is that it *executes*. **C** is now part of procedure **A** and it will execute when **A** executes. It’s like the code of **B** is inserted right into procedure **A**. Considering that, it seems that the direction of the line doesn’t really matter: both symbols simply represent the same procedure. But a procedure does have a definition in one place while the other symbols are calls or references to it. The topic of direction is looked at closer in the *Lines* chapter, but I’ll tell you now that the direction of a line is usually outwards.
+You can say __A__ calls __B__, or __B__ is called from __A__. You could say that the line is directed outwards: the call line first exists a square, to next find its target procedure. The connected symbols here represent the same procedure. The side effect of a diamond though, is that it *executes*. __C__ is now part of procedure __A__ and it will execute when __A__ executes. It’s like the code of __B__ is inserted right into procedure __A__. Considering that, it seems that the direction of the line doesn’t really matter: both symbols simply represent the same procedure. But a procedure does have a definition in one place while the other symbols are calls or references to it. The topic of direction is looked at closer in the *Lines* chapter, but I’ll tell you now that the direction of a line is usually outwards.
 
 If one square is called, its contained squares are called too.
 
 ![](images/Symbol%20Language%20(2004).049.jpeg)
 
-When **A** is called, **B** is called. When **B** is called, **C**, **D** and **E** are called.
+When __A__ is called, __B__ is called. When __B__ is called, __C__, __D__ and __E__ are called.
 
 ### Procedure Reference
 
@@ -608,13 +608,13 @@ Therefore, when you call a procedure reference, the referenced procedure is call
 
 ![](images/Symbol%20Language%20(2004).051.jpeg)
 
-When **A** calls **B**, it’s actually calling **C**.
+When __A__ calls __B__, it’s actually calling __C__.
 
 When a procedure is called, the contained procedure *references* are *not* called.
 
 ![](images/Symbol%20Language%20(2004).052.jpeg)
 
-When **A** is called, **B** and **D** are called, but not **C**.
+When __A__ is called, __B__ and __D__ are called, but not __C__.
 
 ### Procedure Clause
 
@@ -656,7 +656,7 @@ The objects inside a procedure can be regarded:
 - Return values
 - Local variables
 
-The input parameters of a procedure are its writable objects. The output values are its readable objects. Objects that are read-write are like in-out or thru parameters. One readable object can be chosen to be the return value, which promotes it to being the main output parameter. This does not give it extra capabilities, only an extra notation in certain places. The return value is denoted in a diagram by putting the term **Return** near one of the parameters. The private objects are the procedure’s local variables. If **A** is an input parameter and **B** is an output parameter, you can also say that the procedure *takes* **A** and *gives* **B**.
+The input parameters of a procedure are its writable objects. The output values are its readable objects. Objects that are read-write are like in-out or thru parameters. One readable object can be chosen to be the return value, which promotes it to being the main output parameter. This does not give it extra capabilities, only an extra notation in certain places. The return value is denoted in a diagram by putting the term __Return__ near one of the parameters. The private objects are the procedure’s local variables. If __A__ is an input parameter and __B__ is an output parameter, you can also say that the procedure *takes* __A__ and *gives* __B__.
 
 Squares inside procedures are non executing clauses or procedure references. Diamonds inside procedures are executing clauses or procedure calls.
 
@@ -673,7 +673,7 @@ Squares inside procedures are non executing clauses or procedure references. Dia
 
 As a procedure is like a type it may seem that you have full freedom regarding which objects you write and which you don’t. However, many parameters of procedures are *required* parameters. This means that you *must* write something to it before the call. Optional parameters are ones that do not necessarily need to be written before the call. Required parameters are there to on one hand ensure a parameter holds a right value. That however, could have been done by the procedure’s initializing the value itself. The main point of required parameters is that a lot of times the function of a procedure just doesn’t make sense unless you write the parameters. The programmer is made extra aware of that by making the parameter required.
 
-In diagram code, optional parameters are denoted by displaying the word **Optional** near the optional parameter. The other parameters are required.
+In diagram code, optional parameters are denoted by displaying the word __Optional__ near the optional parameter. The other parameters are required.
 
 ### Procedure Interface
 
@@ -723,7 +723,7 @@ A *line dissector*, also called an *access symbol*, can determine the direction 
 |<p>![](images/Symbol%20Language%20(2004).062.png)</p><p>*B is pointed to.*</p><p>*The direction goes to the right à.*</p><p>*In this case A points to B.*</p>|<p>![](images/Symbol%20Language%20(2004).062.png)</p><p>*A is pointed to.*</p><p>*The direction goes to the left ß.*</p><p>*In this case B points to A.*</p>|
 | :-: | :-: |
 
-You can see the line dissector as the door that lets you access a symbol. Therefore in the first example, **B** is accessed: **B** is pointed to by **A**, and in the second example **A** is accessed: **A** is pointed to by **B**.
+You can see the line dissector as the door that lets you access a symbol. Therefore in the first example, __B__ is accessed: __B__ is pointed to by __A__, and in the second example __A__ is accessed: __A__ is pointed to by __B__.
 
 In another situation the access symbol is placed as follows:
 
@@ -731,7 +731,7 @@ In another situation the access symbol is placed as follows:
 |<p></p><p>![](images/Symbol%20Language%20(2004).062.png)</p><p>*The direction goes to the right à.*</p><p>*A points to B.*</p>|<p></p><p>![](images/Symbol%20Language%20(2004).063.png)</p><p>*The direction goes to the left ß.*</p><p>*B points to A.*</p>|
 | :-: | :-: |
 
-In the last picture, the access symbol isn’t placed near **A**, but closer to the border of **C**. Why this is so is explained later. For now you can see the line dissector as the *door* to **C** that lets you access **A**.
+In the last picture, the access symbol isn’t placed near __A__, but closer to the border of __C__. Why this is so is explained later. For now you can see the line dissector as the *door* to __C__ that lets you access __A__.
 
 The access symbol can also be put at both ends:
 
@@ -777,7 +777,7 @@ This rule applies when the access symbol rule doesn’t override it. If the acce
 
 *A points to B, because the direction is outwards.*
 
-You can see **A** as being **C**’s *eye* to **B**, so it is logically directed outwards.
+You can see __A__ as being __C__’s *eye* to __B__, so it is logically directed outwards.
 
 ##### You Sooner Exit a Procedure than an Object
 
@@ -928,7 +928,7 @@ An object symbol can only have one object line, one type line and one interface 
 
 ![](images/Symbol%20Language%20(2004).087.png)
 
-**a** points *away* from **A**. This is **A**’s line. The other lines: **c** and **d**, point *to* **A**. In other words: **C** and **D** are pointers to **A**. **A** is a pointer to **B**. 
+__a__ points *away* from __A__. This is __A__’s line. The other lines: __c__ and __d__, point *to* __A__. In other words: __C__ and __D__ are pointers to __A__. __A__ is a pointer to __B__. 
 
 #### Procedure Lines
 
@@ -980,7 +980,7 @@ That way symbols can relate to one another by not being tied together nor by one
 
 ![](images/Symbol%20Language%20(2004).094.jpeg)
 
-*Object* **A** *is related to object* **B***.*
+*Object* __A__ *is related to object* __B__*.*
 
 ### Target Symbols
 
@@ -1118,7 +1118,7 @@ It happens a lot that you want to find out the object and the type in one blow. 
 
 ![](images/Symbol%20Language%20(2004).108.png)
 
-The last symbol in the redirection altogether is the target type (**C**). The last symbol pointed to by an object line is the object (**O**). Note that the target type may be pointed out by an object line.
+The last symbol in the redirection altogether is the target type (__C__). The last symbol pointed to by an object line is the object (__O__). Note that the target type may be pointed out by an object line.
 
 ![](images/Symbol%20Language%20(2004).103.jpeg)
 
@@ -1200,13 +1200,13 @@ Circularity is the case when the redirection eventually leads to a symbol alread
 
 ![](images/Symbol%20Language%20(2004).115.png)
 
-**A** is a pointer to **B**, which is a pointer to **C**, which is a pointer to **A** again and so on. Redirection is ended, though, when the target symbol is found to be the source symbol or intermediate symbol. In this case it can’t be said that a single symbol represents the actual object, while other symbols are regarded object references. In this case **A**, **B** and **C** are *all* primary representations of the object.
+__A__ is a pointer to __B__, which is a pointer to __C__, which is a pointer to __A__ again and so on. Redirection is ended, though, when the target symbol is found to be the source symbol or intermediate symbol. In this case it can’t be said that a single symbol represents the actual object, while other symbols are regarded object references. In this case __A__, __B__ and __C__ are *all* primary representations of the object.
 
 There’s also a question of circularity when somewhere in the redirection a bidirection is encountered.
 
 ![](images/Symbol%20Language%20(2004).116.png)
 
-This is because a bidirection can also be regarded to be two lines, one for each direction. The line between **B** and **C** can be regarded two lines: one pointing from **B** to **C** and one pointing from **C** to **B**. Therefore, the line(s) between **B** and **C** cause a circularity: **B** is a pointer to **C**, which is a pointer to **B**, which is a pointer to **C** and so on. Thus, **B** and **C** both represent the target object. **A** however, is a pointer *to* this *circularity*. It’s not part of the circularity.
+This is because a bidirection can also be regarded to be two lines, one for each direction. The line between __B__ and __C__ can be regarded two lines: one pointing from __B__ to __C__ and one pointing from __C__ to __B__. Therefore, the line(s) between __B__ and __C__ cause a circularity: __B__ is a pointer to __C__, which is a pointer to __B__, which is a pointer to __C__ and so on. Thus, __B__ and __C__ both represent the target object. __A__ however, is a pointer *to* this *circularity*. It’s not part of the circularity.
 
 A circularity can only be the end point of redirection, because you can’t escape from a circularity.
 
@@ -1289,17 +1289,17 @@ Be careful with the term *source* in this context, though. You can speak of the 
 
 ![](images/Symbol%20Language%20(2004).126.jpeg)
 
-**A** is considered the line’s source. **B** is the opposite party: the *target*. *Source* in this context expresses a party of a line. 
+__A__ is considered the line’s source. __B__ is the opposite party: the *target*. *Source* in this context expresses a party of a line. 
 
 When you use the term *source* to denote a *relation between symbols*, it actually means *the same* as the term target. The terms are not opposites, they’re equivalents.
 
 ![](images/Symbol%20Language%20(2004).127.jpeg)
 
-**Type** can be considered **Object**’s type target, because **Object**’s type line points to it. **Type** can also be considered **Object**’s type source, because **Type** serves as the type of **Object**.
+__Type__ can be considered __Object__’s type target, because __Object__’s type line points to it. __Type__ can also be considered __Object__’s type source, because __Type__ serves as the type of __Object__.
 
 ##### ‘Target’
 
-The term *target* is used for both intermediate targets and the final target symbols. To be more exact about what target you’re talking about you can use the terms *direct*, *intermediate* and *final*. The *direct object* of **A** in the picture <there is no picture…> above, for instance, is **B**, while the *final object* is **C**. **B** is also regarded an *intermediate object target*, or *intermediate object*, because it’s not the final target, nor the line source. The unaugmented terms *target object*, *target type*, *target interface* and *target procedure* are by rule reserved for final targets. If you want to denote an intermediate object target, for instance use the term *object target*, instead of *target object*, or say *intermediate target object*,* but don’t use the unaugmented term *target object* for an intermediate symbol. Many times out of the context it can be understood whether there is talked about a direct, intermediate or a final target, so it’s not always extra denoted. The term target *symbol* can be about any redirection step or be about any the final target of any aspect.
+The term *target* is used for both intermediate targets and the final target symbols. To be more exact about what target you’re talking about you can use the terms *direct*, *intermediate* and *final*. The *direct object* of __A__ in the picture <there is no picture…> above, for instance, is __B__, while the *final object* is __C__. __B__ is also regarded an *intermediate object target*, or *intermediate object*, because it’s not the final target, nor the line source. The unaugmented terms *target object*, *target type*, *target interface* and *target procedure* are by rule reserved for final targets. If you want to denote an intermediate object target, for instance use the term *object target*, instead of *target object*, or say *intermediate target object*,* but don’t use the unaugmented term *target object* for an intermediate symbol. Many times out of the context it can be understood whether there is talked about a direct, intermediate or a final target, so it’s not always extra denoted. The term target *symbol* can be about any redirection step or be about any the final target of any aspect.
 
 *Object target* is not the same as *target object*. *Object target* denotes the direct target of an object line. *Target object* denotes the symbol that is regarded to *really* represent the object.
 
@@ -1351,7 +1351,7 @@ The first concept I will explain is quite simple.
 
 ![](images/Symbol%20Language%20(2004).128.jpeg)
 
-If a symbol has an object line then it adopts the object of the line target. **A** delegates to **B**. You can also say that **A**’s object aspect is *delegated* or that **A** has a *delegated object*.
+If a symbol has an object line then it adopts the object of the line target. __A__ delegates to __B__. You can also say that __A__’s object aspect is *delegated* or that __A__ has a *delegated object*.
 
 ![](images/Symbol%20Language%20(2004).129.jpeg)
 
@@ -1551,13 +1551,13 @@ When you set the interface of a symbol then it can only point to definitions tha
 
 ![](images/Symbol%20Language%20(2004).160.jpeg)
 
-Here **Object A** has **Type B**. It uses **Interface A** of **Type B**.
+Here __Object A__ has __Type B__. It uses __Interface A__ of __Type B__.
 
 One one hand you can a see using the supported interface as a silent extension of the type line to the triangle with the right interface:
 
 ![](images/Symbol%20Language%20(2004).161.jpeg)
 
-But on the other hand it’s not like that, because that would mean that **Object A** gets **Type B**. It still has **Type A** however. When **Object A** is created, an object of **Type A** is is created, not **Type B**. But **Object A** can only call upon the members of **Interface A**.
+But on the other hand it’s not like that, because that would mean that __Object A__ gets __Type B__. It still has __Type A__ however. When __Object A__ is created, an object of __Type A__ is is created, not __Type B__. But __Object A__ can only call upon the members of __Interface A__.
 
 ###### Object Shows Only Used Interface Implementation
 
@@ -1575,9 +1575,9 @@ However, when you *create* the symbol, an object of the *full type* is created. 
 
 ![](images/Symbol%20Language%20(2004).164.jpeg)
 
-*Symbol A is of Type A, but only uses Interface A. Symbol A only shows the systematics of that one interface: a circle. However, it’s an object of the **whole type**. This is important. The importance is pointed out by Symbol B. Symbol B is a pointer to Symbol A, only it uses a different interface. So it shows different systematics.*
+*Symbol A is of Type A, but only uses Interface A. Symbol A only shows the systematics of that one interface: a circle. However, it’s an object of the __whole type__. This is important. The importance is pointed out by Symbol B. Symbol B is a pointer to Symbol A, only it uses a different interface. So it shows different systematics.*
 
-So object symbols tied together with object lines don’t have to use the same interface at all. The picture above shows that when you use an object line (**Symbol B** points to **Symbol A**), the target doesn’t have to have the same interface, only the same type.
+So object symbols tied together with object lines don’t have to use the same interface at all. The picture above shows that when you use an object line (__Symbol B__ points to __Symbol A__), the target doesn’t have to have the same interface, only the same type.
 
 ###### Choose From Multiple Types
 
@@ -1592,7 +1592,7 @@ If there is no interface line, the *object* determines *which* interface of the 
 |![](images/Symbol%20Language%20(2004).165.jpeg)|![](images/Symbol%20Language%20(2004).166.jpeg)|
 | :-: | :-: |
 
-**Symbol A** redirects the type to **Type A**. In the first picture **Symbol A** redirects to **Object A**, in the second picture **Symbol A** redirects to **Object B**. **Symbol A**, **Object A** and **Object B** are all of the same type. However, **Object A** uses **Interface A** and **Object B** uses **Interface B**.
+__Symbol A__ redirects the type to __Type A__. In the first picture __Symbol A__ redirects to __Object A__, in the second picture __Symbol A__ redirects to __Object B__. __Symbol A__, __Object A__ and __Object B__ are all of the same type. However, __Object A__ uses __Interface A__ and __Object B__ uses __Interface B__.
 
 This means that the object line determines the interface sooner than the type line. That’s why in the interface trace, the object line is preferred over the type line.
 
@@ -1651,34 +1651,34 @@ If you break one of the lines in the circularity, the one loosing the line comes
 
 #### Overview
 
-|**Object Symbol Genericity**|
+|__Object Symbol Genericity__|
 | :- |
-||**Object**|
+||__Object__|
 |||Original object|<p>Object determined by no line</p><p>(no object line)</p>|
 |||Delegated object|<p>Object determined by a line</p><p>(object line)</p>|
-||**Type**|
+||__Type__|
 |||Original type|<p>Type determined by no line</p><p>(type nor object line)</p>|
 |||Delegated type|<p>Type determined by a line</p><p>(type or object line)</p>|
 |||Explicit type|<p>Type determined by type line</p><p>(limits the possible object to objects of that type)</p>|
 |||Generic type|<p>Type determined by object line</p><p>(symbol adopts any type the object might have) </p>|
-||**Interface**|
+||__Interface__|
 |||Original interface|<p>Interface determined by no line</p><p>(interface, type nor object line)</p>|
 |||Delegated interface|<p>Interface determined by a line</p><p>(interface, type or object line)</p>|
 |||Explicit interface|<p>Interface determined by interface line</p><p>(one specific interface of the type is used)</p><p>(limits the possible types to ones that support the interface)</p>|
 |||Generic interface|<p>Interface determined by type line or object line</p><p>(type’s whole interface used)</p><p>(symbol adopts any interface the type might have)</p>|
-|**Procedure Symbol Genericity**|
-||**Definition**|
+|__Procedure Symbol Genericity__|
+||__Definition__|
 |||Original definition|<p>Definition determined by no line</p><p>(no reference line)</p>|
 |||Delegated definition|<p>Definition determined by a line</p><p>(a reference line)</p>|
-||**Execution**|
+||__Execution__|
 |||Original execution|Delegation doesn’t pass a diamond|
 |||Delegated execution|Delegation passes a diamond|
-||**Interface**|
+||__Interface__|
 |||Original interface|<p>Interface determined by no line</p><p>(interface nor reference line)</p>|
 |||Delegated interface|<p>Interface determined by a line</p><p>(interface or reference line)</p>|
 |||Explicit interface|<p>Interface determined by interface line</p><p>(limits the possible procedures to ones with that interface)</p>|
 |||Generic interface|<p>Interface determined by reference line</p><p>(symbol adopts any interface the procedure might have)</p>|
-|**Interface Doesn’t Determine Type**|
+|__Interface Doesn’t Determine Type__|
 ||Interface type genericity|Fixing the interface doesn’t fix the type|
 ||Type interface genericity|Fixing the type doesn’t fix the interface|
 ||Interface-procedure genericity|Fixing the procedure interface doesn’t fix the procedure|
@@ -2127,29 +2127,29 @@ Before I explain using arguments, I must introduce another basic concept: *assig
 
 *An assignment*:
 
-**A = B**
+__A = B__
 
-consists of two actions: a **Get** and a **Set**. First you **Get** **B.** Then you **Set A**. An assignment always consists of one **Get**, immediately followed by one **Set**.
+consists of two actions: a __Get__ and a __Set__. First you __Get__ __B.__ Then you __Set A__. An assignment always consists of one __Get__, immediately followed by one __Set__.
 
 There are two main types of assignment: *state assignment* and *line assignment*.
 
 State assignment is the most basic, and the easiest to understand. The values of one object are copied to another.
 
-**A = B**
+__A = B__
 
-The value of **B** is copied to **A**. The state assignment does not make **A** and **B** the same object. They are two *separate* objects that contain equal *values*. Change the value of one object and the two objects differ again.
+The value of __B__ is copied to __A__. The state assignment does not make __A__ and __B__ the same object. They are two *separate* objects that contain equal *values*. Change the value of one object and the two objects differ again.
 
-To make **A** and **B** represent the same *object*, you have to do a *line assignment*:
+To make __A__ and __B__ represent the same *object*, you have to do a *line assignment*:
 
-**A ![](images/Symbol%20Language%20(2004).229.png) B**   
+__A ![](images/Symbol%20Language%20(2004).229.png) B__   
 
 *Pronounce: A’s object is B*
 
 *It’s an equals sign with the letter o in it.*
 
-This is an *object* line assignment. The object line of **A** is set to symbol **B**. The result is that **A** points to **B**.
+This is an *object* line assignment. The object line of __A__ is set to symbol __B__. The result is that __A__ points to __B__.
 
-The operator **=** is not reserved for state assignment. Instead, the operator for state assignment is commonly: ![](images/Symbol%20Language%20(2004).230.png).
+The operator __=__ is not reserved for state assignment. Instead, the operator for state assignment is commonly: ![](images/Symbol%20Language%20(2004).230.png).
 
 A simple diagram notation of an assignment is as follows:
 
@@ -2193,7 +2193,7 @@ A shorthand, quick notation of an assignment is the following:
 
 There are more ways to draw out an assignment, but the ones here are by far the simplest and most easy to understand. Other notations are covered in another chapter.
 
-State assignment is the most basic assignment. Line assignment is based on it. A line target is stored in an **Integer** object. So when assigning the line target, you’re actually assigning the **State** of this **Integer** object. Drawing a line assignment as a state assignment is a more difficult, but useful notation. However, in this chapter I will stick to the simpler notations.
+State assignment is the most basic assignment. Line assignment is based on it. A line target is stored in an __Integer__ object. So when assigning the line target, you’re actually assigning the __State__ of this __Integer__ object. Drawing a line assignment as a state assignment is a more difficult, but useful notation. However, in this chapter I will stick to the simpler notations.
 
 You can work with the *type* and *interface* lines the same way: there’s also type assignment and interface assignment. Likewise, you can work with line assignments for *procedure symbols*. However, I’ll mostly talk about state and object assignment.
 
@@ -2233,7 +2233,7 @@ Assignment procedures are fundamental procedures of the Symbol Language and beha
 
 Writing an argument before execution means to set its state or line target.
 
-An assignment as such, requires you to get a value from one place and set the argument to it. So writing an argument actually requires both a **Get** and a **Set**. The fact that it’s the argument that’s **Set** makes it writing *the argument*.
+An assignment as such, requires you to get a value from one place and set the argument to it. So writing an argument actually requires both a __Get__ and a __Set__. The fact that it’s the argument that’s __Set__ makes it writing *the argument*.
 
 #### Reading Arguments
 
@@ -2294,19 +2294,19 @@ There may be more things you want to do with an argument before passing it to a 
 
 There’s a shorthand for creating a brand new object and passing it by reference. In text code this will look like this:
 
-`	`**Procedure ( New Type )**
+`	`__Procedure ( New Type )__
 
 It’s declared directly inside the procedure call. That is: unless the object is used elsewhere too. The above can also be notated as follows:
 
-**Object As Type**			‘Declaration
+__Object As Type__			‘Declaration
 
-**Object = New Type**	‘Creation
+__Object = New Type__	‘Creation
 
-**Procedure ( Object )**	‘Pass to Procedure
+__Procedure ( Object )__	‘Pass to Procedure
 
-But if **Object** isn’t used anywhere else, you can just type: 
+But if __Object__ isn’t used anywhere else, you can just type: 
 
-`	`**Procedure ( New Type )**
+`	`__Procedure ( New Type )__
 
 That way, the object seems to be the argument itself, even though you’re actually passing an object by reference.
 
@@ -2326,7 +2326,7 @@ Ofcourse you don’t have to show the implicit creation.
 
 Then you just see that the object is created, and you will be satisfied knowing only *that* it is created, not where and when. This is just about exactly the effect of:
 
-**Procedure ( New Type )**
+__Procedure ( New Type )__
 
 #### Created Arguments
 
@@ -2342,7 +2342,7 @@ In the epilog, first arguments are read before the created arguments are destroy
 
 *Other things done with parameters*
 
-or keeping a reference to a created parameter or **do the same with members of parameters**… Hmmm…
+or keeping a reference to a created parameter or __do the same with members of parameters__… Hmmm…
 
 Except for passing procedure reference to a procedure.
 
@@ -2360,7 +2360,7 @@ I said that procedures called by a procedure can access its arguments. That sugg
 
 ![](images/Symbol%20Language%20(2004).251.png)
 
-Note, however, that it’s not the definition that’s accessing member **m**. It’s the call that’s accessing member **m**, and the call is contained inside the diamond that contains member **m**.
+Note, however, that it’s not the definition that’s accessing member __m__. It’s the call that’s accessing member __m__, and the call is contained inside the diamond that contains member __m__.
 
 More rules on that are covered in the *Execution Basics* section.
 
@@ -2370,9 +2370,9 @@ There’s one more ambiguity in argument access that I will resolve here. In an 
 
 ![](images/Symbol%20Language%20(2004).252.png)
 
-there isn’t anything that tells which is the source of the assignment and which is the target: is it **Procedure . B ![](images/Symbol%20Language%20(2004).229.png) A** or is it **A ![](images/Symbol%20Language%20(2004).229.png) Procedure . B** ? You could name the arguments of the ![](images/Symbol%20Language%20(2004).229.png) (*object is*) call: name them **Get** and **Set** to make out the difference, but usually another method is adopted.
+there isn’t anything that tells which is the source of the assignment and which is the target: is it __Procedure . B ![](images/Symbol%20Language%20(2004).229.png) A__ or is it __A ![](images/Symbol%20Language%20(2004).229.png) Procedure . B__ ? You could name the arguments of the ![](images/Symbol%20Language%20(2004).229.png) (*object is*) call: name them __Get__ and __Set__ to make out the difference, but usually another method is adopted.
 
-Assuming the assignment is really **Procedure . B ![](images/Symbol%20Language%20(2004).229.png) A**, the effect of the assignment is:
+Assuming the assignment is really __Procedure . B ![](images/Symbol%20Language%20(2004).229.png) A__, the effect of the assignment is:
 
 ![](images/Symbol%20Language%20(2004).253.png)
 
@@ -2380,7 +2380,7 @@ To show the ‘direction’ of the assignment, the access symbol of the resultin
 
 ![](images/Symbol%20Language%20(2004).254.png)
 
-In this case, the access symbol is about the *effect* of the assignment, not about the direction of ![](images/Symbol%20Language%20(2004).229.png)’s **Set** argument.
+In this case, the access symbol is about the *effect* of the assignment, not about the direction of ![](images/Symbol%20Language%20(2004).229.png)’s __Set__ argument.
 
 In the case of state assignment, the result is not a line, so logically the state assignment call can’t ‘borrow’ the access symbol from the resultant line. However, in line assignment, the target of the line, the source of the assignment (!), gets the access symbol. Conversely, the source of the state assignment gets an access symbol:
 
@@ -2542,7 +2542,7 @@ A great application of that is the If procedure.
 
 Procedure A passes Clause A and Clause B to Procedure B, along with an object that serves as the condition. Depending on the state of the condition, Clause A is executed or Clause B. So Procedure B gets to decide which clause executes.
 
-The clauses can freely access anything of **Procedure A**, so **Procedure B** is able to call things that can freely access **Procedure A**’s stuff.
+The clauses can freely access anything of __Procedure A__, so __Procedure B__ is able to call things that can freely access __Procedure A__’s stuff.
 
 #### Brainstorm
 
@@ -2579,7 +2579,7 @@ If eventually the original caller is called again, with one of its calls in prog
 
 ##### 5
 
-***Procedures can only be Called from another Procedure***
+__*Procedures can only be Called from another Procedure__*
 
 *Procedures can only be called directly from another procedure.*
 
@@ -2697,7 +2697,7 @@ An object reference to a procedure can only be a reference to the procedure’s 
 
 <o = out, r = return>
 
-**a** can only be a reference to **r**, the return value. **b** is a reference to **o**, another out parameter.
+__a__ can only be a reference to __r__, the return value. __b__ is a reference to __o__, another out parameter.
 
 ##### B
 
@@ -2707,33 +2707,33 @@ An object reference to a procedure can only be a reference to the procedure’s 
 
 < reference a procedure parameter from an object.>
 
-To explain this concept I use an example where one procedure, called **Get**, returns an object that is then passed to another procedure, called **Set**. This requires two calls: first a call to **Get** and then to **Set**.
+To explain this concept I use an example where one procedure, called __Get__, returns an object that is then passed to another procedure, called __Set__. This requires two calls: first a call to __Get__ and then to __Set__.
 
 ####### Explicit Calls
 
 The steps of this process can be described as follows:
 
-`	`**Get**
+`	`__Get__
 
-`	`**Set . In = Get . Out**
+`	`__Set . In = Get . Out__
 
-`	`**Set**
+`	`__Set__
 
-The out parameter of **Get** is called **Out** and the in parameter of **Set** is called **In**. In diagram code, that is:
+The out parameter of __Get__ is called __Out__ and the in parameter of __Set__ is called __In__. In diagram code, that is:
 
 ![](images/Symbol%20Language%20(2004).292.png)
 
 *Excplicit calls*
 
-Only the blue parts are shown in the piece of text code. You can see that **Get** is called and **Set** is called. Both **Get** and **Set** have a parameter. The parameters are shown in the definition, but also in the call. In the call, the parameters are actually created and the parameters in the calls are worked with. The **Out** of **Get** and the **In** of **Set** are tied together with an object line. You can’t explicitly see the order in which **Get** and **Set** are called, but because the **Set** call references a parameter in the **Get** call, **Set** is dependent of **Get**, therefore **Get** is called first.
+Only the blue parts are shown in the piece of text code. You can see that __Get__ is called and __Set__ is called. Both __Get__ and __Set__ have a parameter. The parameters are shown in the definition, but also in the call. In the call, the parameters are actually created and the parameters in the calls are worked with. The __Out__ of __Get__ and the __In__ of __Set__ are tied together with an object line. You can’t explicitly see the order in which __Get__ and __Set__ are called, but because the __Set__ call references a parameter in the __Get__ call, __Set__ is dependent of __Get__, therefore __Get__ is called first.
 
 ####### Implicit Calls
 
 In text code you can write the two calls in a single code line:
 
-`	`**Set ( In = Get . Out )**
+`	`__Set ( In = Get . Out )__
 
-**Get . Out** is assigned to the parameter of **Set**. You’re referencing a parameter of **Get** without displaying the call. To read the **Out** parameter of **Get** requires a call and this call is implicitly made. In the text code line above you don’t see that **Get** is called. **Get . Out** is simply referenced. You can apply the same to diagram code:
+__Get . Out__ is assigned to the parameter of __Set__. You’re referencing a parameter of __Get__ without displaying the call. To read the __Out__ parameter of __Get__ requires a call and this call is implicitly made. In the text code line above you don’t see that __Get__ is called. __Get . Out__ is simply referenced. You can apply the same to diagram code:
 
 ![](images/Symbol%20Language%20(2004).293.png)
 
@@ -2741,24 +2741,24 @@ In text code you can write the two calls in a single code line:
 
 *Note that the Exit Most Borders rule determines the direction.*
 
-You can see that the **Out** parameter of the **Get** procedure *definition* is referenced. This implicitly causes a call to **Get**. In *explicit calls* you reference the parameters of the procedure *call*, not the procedure *definition*.
+You can see that the __Out__ parameter of the __Get__ procedure *definition* is referenced. This implicitly causes a call to __Get__. In *explicit calls* you reference the parameters of the procedure *call*, not the procedure *definition*.
 
 ####### Implicit Return Value Reference
 
-**Out** is **Get**’s return value. Therefore, the identifier **Get** symbolizes the return value. **In** is a parameter of **Set** and you don’t necessarily need to mention its name in the parameter list. This all makes the text code:
+__Out__ is __Get__’s return value. Therefore, the identifier __Get__ symbolizes the return value. __In__ is a parameter of __Set__ and you don’t necessarily need to mention its name in the parameter list. This all makes the text code:
 
-**Set ( Get )**
+__Set ( Get )__
 
-**Get**’s symbolizing its return value can also be applied to diagram code:
+__Get__’s symbolizing its return value can also be applied to diagram code:
 
 ![](images/Symbol%20Language%20(2004).294.png)
 
 *Implicit return value reference, implicit call*
 
 
-The line to **Get** is not really a line from an object to a procedure. The return value of **Get** is implicitly referenced.
+The line to __Get__ is not really a line from an object to a procedure. The return value of __Get__ is implicitly referenced.
 
-The diagram above looks far simpler than the first diagram. So does the text code. In reality multiple steps are taken: • Call **Get** • Read **Get . Out** • Write **Set . In**, • Call **Set**.
+The diagram above looks far simpler than the first diagram. So does the text code. In reality multiple steps are taken: • Call __Get__ • Read __Get . Out__ • Write __Set . In__, • Call __Set__.
 
 In the diagram above, the return value is implicitly referenced by pointing to the procedure definition. You can also implicitly reference the return value by pointing to a procedure call square. That way, the call is explicit, but the return value reference is implicit.
 
@@ -2944,7 +2944,7 @@ The dependency looks must different. After the translation to this, execution or
 
 ![](images/Symbol%20Language%20(2004).312.png)
 
-In this implicit notation **A** *seems* to be dependent of **B**, but in fact **B** is dependent of **A**, because it uses it as a reference argument.
+In this implicit notation __A__ *seems* to be dependent of __B__, but in fact __B__ is dependent of __A__, because it uses it as a reference argument.
 
 #### Custom Order
 
@@ -3231,7 +3231,7 @@ If it were to become a connection between symbols, like implicit line assignment
 
 *Implicit assignments*
 
-De assignment calls gedragen zich niet normaal, want consult van de argumenten van **A** veroorzaken geen executie. Een soort passieve parameter consult vind plaats door de assignment calls, in het proloog van **A**. Bedenk wel: het zijn systeeem procedures: niet normaal.
+De assignment calls gedragen zich niet normaal, want consult van de argumenten van __A__ veroorzaken geen executie. Een soort passieve parameter consult vind plaats door de assignment calls, in het proloog van __A__. Bedenk wel: het zijn systeeem procedures: niet normaal.
 
 ![](images/Symbol%20Language%20(2004).328.jpeg)![](images/Symbol%20Language%20(2004).329.jpeg)
 
@@ -3245,7 +3245,7 @@ Niet het een executor, anders verwar je het met een aparte executie! Een system 
 
 \* dit zou A triggeren als het niet een line van een system procedure call was.
 
-Assignmet procedures = system procedure, eerste argument is het **This** argument.
+Assignmet procedures = system procedure, eerste argument is het __This__ argument.
 
 
 ![](images/Symbol%20Language%20(2004).331.jpeg)
@@ -3304,7 +3304,7 @@ Creation and state read and write only apply to object parameters, not to parame
 
 The situation above can only exist right after a call. If you want to 
 
-<A problem: you get returned an object reference. You lead a line to it. Then the procedure returns. Line target gone. If you want to link to its object, you might want to link to its **Target Object**. But, shit, in Com, if you link to an object, it stays in memory wether the original reference holder releases or not. In Symbol, when the target object is destroyed (released) then the object is destroyed. That’s because one symbol represents the object for real. If you want a object to destroy when reference count is 0, then you have to emulate it in Symbol by creating an object symbol that represents the object. References represent references to it. The object will destroy itself if all references to it are released. It’s just a different deal in Symbol. It just is. It’s not like it’s any worse. Line methodology has too many advantages in relation to Com, to hate it for not being like Com.> 
+<A problem: you get returned an object reference. You lead a line to it. Then the procedure returns. Line target gone. If you want to link to its object, you might want to link to its __Target Object__. But, shit, in Com, if you link to an object, it stays in memory wether the original reference holder releases or not. In Symbol, when the target object is destroyed (released) then the object is destroyed. That’s because one symbol represents the object for real. If you want a object to destroy when reference count is 0, then you have to emulate it in Symbol by creating an object symbol that represents the object. References represent references to it. The object will destroy itself if all references to it are released. It’s just a different deal in Symbol. It just is. It’s not like it’s any worse. Line methodology has too many advantages in relation to Com, to hate it for not being like Com.> 
 
 So… To do the com way, you DO have to copy the final object target.
 
@@ -3317,17 +3317,17 @@ But this still doesn’t cover the situation above
 
 #### Other: use sentence somewhere in book
 
-**References between siblings is uncommon.**
+__References between siblings is uncommon.__
 
 Nothing active can reside directly in an object.
 
 
-|![](images/Symbol%20Language%20(2004).335.jpeg)|<p>**Unconditional jump = Call to sibling active clause**</p><p></p><p>If you are familiar with the term *unconditional jump*, them this is the equivalent of that in Symbol.</p><p>Can only take place directly inside a procedure.</p><p></p>|
+|![](images/Symbol%20Language%20(2004).335.jpeg)|<p>__Unconditional jump = Call to sibling active clause__</p><p></p><p>If you are familiar with the term *unconditional jump*, them this is the equivalent of that in Symbol.</p><p>Can only take place directly inside a procedure.</p><p></p>|
 | - | - |
 
 #### Other: Explore Later
 
-***Moet ik het ook vanuit deze invalshoek uitleggen?***
+__*Moet ik het ook vanuit deze invalshoek uitleggen?__*
 
 Object symbols may be tied to one another with any line type without restrictions.
 
@@ -3335,13 +3335,13 @@ Procedure lines have more restrictions and only regarding procedure calls. There
 
 #### Other
 
-***Different Wording, Not important, though***
+__*Different Wording, Not important, though__*
 
 In an explicit call you always see the the call displayed as a separate diamond. If the call is made, the call is like a created object. After the call it is destroyed. When the call is created, you can reference its contents from anywhere without causing another call.
 
 #### Other: Might contain a good text for justification of a diamond symbol rather than a call line
 
-**This IS the text that lead me to wanting a diamond symbol instead of a call line.**
+__This IS the text that lead me to wanting a diamond symbol instead of a call line.__
 
 <Why the hell not, actually? Ok, you can’t do it in other languages, but why the hell can’t you do it here. Oh. When you reference a call, it makes the call line function as a reference line rather than a call line. If you want this to be different, a reference to call would become a call, which is not something you want to happen in your system. The reference target would get control over if the source will be a reference or if the source will execute. The source would have no say in that. Unacceptable. So a candidate for an alternative rule for A Call Can’t be Called or Referenced is: if you reference a call, its call line is treated as a reference line.
 
@@ -3353,7 +3353,7 @@ Een call een aparte line maken is net zo iets als een triangle een aparte line m
 
 #### àElsewhere
 
-***Procedure Interface Restrictions***
+__*Procedure Interface Restrictions__*
 
 <>
 
@@ -4135,17 +4135,17 @@ In one compiler optimization technique it is these execution control statements 
 
 `	`For I = 0 to 4
 
-`		`***A(I)***
+`		`__*A(I)__*
 
-`		`***B(I + 1)***
+`		`__*B(I + 1)__*
 
 `		`If I <> 0 Then 
 
-***C***
-\***
+__*C__*
+\__*
 `		`Else
 
-`			`**D**
+`			`__D__
 
 `		`End If
 
@@ -4281,7 +4281,7 @@ The special thing about a triangle, though is that its members are also directly
 You can’t see in the picture above if the called square is referenced through the circle or through the triangle. If you want to indicate that it’s accessed through the circle, you can put an access symbol with the circle. If you want to indicate that it’s accessed through the triangle, you put an access symbol with the triangle, or with both the circle and the triangle.
 
 
-|<p>![](images/Symbol%20Language%20(2004).362.png)</p><p></p><p>*Accessed through the Circle:*</p><p></p><p>***Circle . Procedure***</p>|<p>![](images/Symbol%20Language%20(2004).363.png)</p><p></p><p>*Accessed through <br>the Circle and the Triangle:*</p><p></p><p>***Circle . Triangle . Procedure***</p>|<p>![](images/Symbol%20Language%20(2004).364.png)</p><p></p><p>*Also accessed through <br>the Circle and the Triangle:*</p><p></p><p>***Circle . Triangle . Procedure***</p>|
+|<p>![](images/Symbol%20Language%20(2004).362.png)</p><p></p><p>*Accessed through the Circle:*</p><p></p><p>__*Circle . Procedure__*</p>|<p>![](images/Symbol%20Language%20(2004).363.png)</p><p></p><p>*Accessed through <br>the Circle and the Triangle:*</p><p></p><p>__*Circle . Triangle . Procedure__*</p>|<p>![](images/Symbol%20Language%20(2004).364.png)</p><p></p><p>*Also accessed through <br>the Circle and the Triangle:*</p><p></p><p>__*Circle . Triangle . Procedure__*</p>|
 | :-: | :-: | :-: |
 
 In text code you can see the difference all the more. I’ve put the text code under the diagrams above.
@@ -4518,53 +4518,53 @@ System Aspects
 
 *Line aspects* are some of the most important system aspects. The line aspects of an *object symbol* are:
 
-- **Object**
-- **Type**
-- **Interface**
+- __Object__
+- __Type__
+- __Interface__
 
 And those of a *procedure symbol* are:
 
-- **Definition**
-- **Interface**
+- __Definition__
+- __Interface__
 
-This kind of aspect is redirected by lines. The **Type** aspect of a symbol, for instance, represents the direct target of the type line.
+This kind of aspect is redirected by lines. The __Type__ aspect of a symbol, for instance, represents the direct target of the type line.
 
 Another group of aspects is the *target aspects*. The target aspects of an *object symbol* are:
 
-- **Target Object**
-- **Target Type**
-- **Target Interface**
+- __Target Object__
+- __Target Type__
+- __Target Interface__
 
 And those of a *procedure symbol* are:
 
-- **Target Definition**
-- **Target Execution**
-- **Target Interface**
+- __Target Definition__
+- __Target Execution__
+- __Target Interface__
 
 These are derived from the line aspects. By doing a trace, the target aspects are retrieved.
 
-Another special system aspect is **State**, which stands for the data stored in an object, including the line redirections inside an object, or rather: it’s state. A related system aspect is the **Created** aspect, which points out if the object a symbol represents is created or not.
+Another special system aspect is __State__, which stands for the data stored in an object, including the line redirections inside an object, or rather: it’s state. A related system aspect is the __Created__ aspect, which points out if the object a symbol represents is created or not.
 
-- **State**
-- **Created**
+- __State__
+- __Created__
 
 These are called the *state aspects*. {} The aspects here apply only to object symbols, but there are also state aspects for procedure symbols. {}
 
 There are even more system aspects:
 
-- **Parent**
-- **Children**
+- __Parent__
+- __Children__
 
-- **Parent Object**
-- **Child Objects**
-- **Parent Procedure**
-- **Child Procedures**
+- __Parent Object__
+- __Child Objects__
+- __Parent Procedure__
+- __Child Procedures__
 
-The **Parent** and **Children** system aspects can tell you all about the encapsulation structure. Because these aspects again return symbols, you can recursively track down the whole surrounding encapsulation structure. They are called the *encapsulation aspects* or *ancestry aspects* of a symbol. The **Parent Object** and **Child Objects** system aspects return the object ancestry, kind of like ignoring procedure capsules. The **Parent Procedure** and **Child Procedures** aspects return the encapsulation only looking at procedure capsules.
+The __Parent__ and __Children__ system aspects can tell you all about the encapsulation structure. Because these aspects again return symbols, you can recursively track down the whole surrounding encapsulation structure. They are called the *encapsulation aspects* or *ancestry aspects* of a symbol. The __Parent Object__ and __Child Objects__ system aspects return the object ancestry, kind of like ignoring procedure capsules. The __Parent Procedure__ and __Child Procedures__ aspects return the encapsulation only looking at procedure capsules.
 
-The **Shape** system aspect returns the shape of a symbol.
+The __Shape__ system aspect returns the shape of a symbol.
 
-- **Shape**
+- __Shape__
 
 There are even more system aspects, because system aspects return all information about the symbol, thus all information about the system. I won’t mention the other aspects yet, for they are about concepts not yet explained. Nevertheless, the ones mentioned here are the most important ones.
 
@@ -4572,126 +4572,126 @@ There are even more system aspects, because system aspects return all informatio
 
 *System procedures*, or *system aspect procedures*, are procedures with which you get and set aspects of a symbol. Every symbol has system procedures. The line aspects of an object symbol are represented by the following procedures:
 
-- **Object Get**
-- **Object Set**
-- **Type Get**
-- **Type Set**
-- **Interface Get**
-- **Interface Set**
+- __Object Get__
+- __Object Set__
+- __Type Get__
+- __Type Set__
+- __Interface Get__
+- __Interface Set__
 
 And those of a procedure symbol are:
 
-- **Definition Get**
-- **Definition Set**
-- **Interface Get**
-- **Interface Set**
+- __Definition Get__
+- __Definition Set__
+- __Interface Get__
+- __Interface Set__
 
-With these system procedures you can get and set the line targets of symbols. These system procedures return or take the **Symbol Id** of the line target: a number that uniquely identifies a symbol.
+With these system procedures you can get and set the line targets of symbols. These system procedures return or take the __Symbol Id__ of the line target: a number that uniquely identifies a symbol.
 
-The **Object Get** and **Object Set** procedures together can also be called the **Object** system aspect or the **Object** aspect. The same goes for the other aspect procedures.
+The __Object Get__ and __Object Set__ procedures together can also be called the __Object__ system aspect or the __Object__ aspect. The same goes for the other aspect procedures.
 
 All system aspects are represented by procedures. Some aspects can only be obtained, not set.
 
 The *target aspects* can only be obtained, because they are derived from the lines of symbols. The line aspects of symbols can be controlled, but the target aspects can not be directly controlled. So the target aspect procedures of object symbols are:
 
-- **Target Object**
-- **Target Type**
-- **Target Interface**
+- __Target Object__
+- __Target Type__
+- __Target Interface__
 
 And those of procedure symbols are:
 
-- **Target Definition**
-- **Target Execution**
-- **Target Interface**
+- __Target Definition__
+- __Target Execution__
+- __Target Interface__
 
-The **State** symbol aspect can be obtained and assigned too.
+The __State__ symbol aspect can be obtained and assigned too.
 
-- **State Get**
-- **State Set**
+- __State Get__
+- __State Set__
 
 The state is obtained to be immediately assigned to another object. That way the values and line targets of one object are copied to another object, giving both objects the same state.
 
-The **Created** symbol aspect is primarily only *obtained*, not set. **Created** can be controlled though, by calling te **Create** and **Destroy** system procedures.
+The __Created__ symbol aspect is primarily only *obtained*, not set. __Created__ can be controlled though, by calling te __Create__ and __Destroy__ system procedures.
 
-- **Created Get**
-- **Created Set**
-- **Create**
-- **Destroy**
+- __Created Get__
+- __Created Set__
+- __Create__
+- __Destroy__
 
-You *can* set the **Created** aspect, which is equivalent to calling the **Create** or **Destroy** procedures.
+You *can* set the __Created__ aspect, which is equivalent to calling the __Create__ or __Destroy__ procedures.
 
-**Created = True	   ≡    Create**
+__Created = True	   ≡    Create__
 
-**Created = False	   ≡    Destroy**
+__Created = False	   ≡    Destroy__
 
-But I prefer using **Create** and **Destroy** in most cases.
+But I prefer using __Create__ and __Destroy__ in most cases.
 
 Ancestry aspects can only be obtained, not set. The ancestry structure *can* change, as type and interface targets change, but the ancestry can not be directly set, except at design time. So the ancestry procedures are:
 
-- **Parent**
-- **Children**
+- __Parent__
+- __Children__
 
-- **Parent Object**
-- **Child Object**
-- **Parent Procedure**
-- **Child Procedures**
+- __Parent Object__
+- __Child Object__
+- __Parent Procedure__
+- __Child Procedures__
 
-The **Children** aspect is actually an array that returns multiple symbols. More on arrays later.
+The __Children__ aspect is actually an array that returns multiple symbols. More on arrays later.
 
-The shape of a symbol can only be set at design time, not at run time, so you can only obtain the **Shape** aspect, not set it.
+The shape of a symbol can only be set at design time, not at run time, so you can only obtain the __Shape__ aspect, not set it.
 
-- **Shape**
+- __Shape__
 
-The last one I’ll mention for now is the **Symbol** system procedure. It actually returns the symbol itself. More specifically: its **Symbol Id**. It can be regarded the most primary of all system procedures.
+The last one I’ll mention for now is the __Symbol__ system procedure. It actually returns the symbol itself. More specifically: its __Symbol Id__. It can be regarded the most primary of all system procedures.
 
-- **Symbol**
+- __Symbol__
 
 So the system procedures introduced so far are:
 
 Object system procedures:
 
-- **Object Get**
-- **Object Set**
-- **Type Get**
-- **Type Set**
-- **Interface Get**
-- **Interface Set**
+- __Object Get__
+- __Object Set__
+- __Type Get__
+- __Type Set__
+- __Interface Get__
+- __Interface Set__
 
-- **Target Object**
-- **Target Type**
-- **Target Interface**
+- __Target Object__
+- __Target Type__
+- __Target Interface__
 
-- **State Get**
-- **State Set**
+- __State Get__
+- __State Set__
 
-- **Created Get**
-- **Created Set**
-- **Create**
-- **Destroy**
+- __Created Get__
+- __Created Set__
+- __Create__
+- __Destroy__
 
 Procedure system procedures:
 
-- **Definition Get**
-- **Definition Set**
-- **Interface Get**
-- **Interface Set**
+- __Definition Get__
+- __Definition Set__
+- __Interface Get__
+- __Interface Set__
 
-- **Target Definition**
-- **Target Execution**
-- **Target Interface**
+- __Target Definition__
+- __Target Execution__
+- __Target Interface__
 
 `	`General system procedures:
 
-- **Symbol**
+- __Symbol__
 
-- **Parent**
-- **Children**
-- **Parent Object**
-- **Child Objects**
-- **Parent Procedure**
-- **Child Procedures**
+- __Parent__
+- __Children__
+- __Parent Object__
+- __Child Objects__
+- __Parent Procedure__
+- __Child Procedures__
 
-- **Shape**
+- __Shape__
 
 ##### The System Interface
 
@@ -4729,27 +4729,27 @@ If you see the system interface as an object, though, you can regard the system 
 
 #### Get and Set are Inseparable
 
-**Get** and **Set** always accompany eachother. That is: there’s no point to *getting* something if you aren’t going to *assign* it to something else. Conversely, you can’t *set* something unless you’ve *gotten* something in the first place.
+__Get__ and __Set__ always accompany eachother. That is: there’s no point to *getting* something if you aren’t going to *assign* it to something else. Conversely, you can’t *set* something unless you’ve *gotten* something in the first place.
 
-*Getting* a value is done solely to immediately *assign* it to something else. **Get** and **Set** are stuck together with superglue. There is no intermediate state of a value between the **Get** and the **Set**. There’s no manipulating a *gotten* value before you *set* it to something else.
+*Getting* a value is done solely to immediately *assign* it to something else. __Get__ and __Set__ are stuck together with superglue. There is no intermediate state of a value between the __Get__ and the __Set__. There’s no manipulating a *gotten* value before you *set* it to something else.
 
-There are two things you can do with a value: copy it or transform it. If you transform it you always operate on a value directly. Even when you make a temporary copy of the value to operate on, manipulate it and write it back, you’re still directly manipulating the temporary copy. The whole process would be you first **Get** the original value and immediately **Set** the temporary copy. Then you manipulate the temporary copy, by calling one of its member or by passing it to a procedure that manipulates it. Then you **Get** the temporary copy value and immediately **Set** it to the original object. There *is* no room between **Get** and **Set**.
+There are two things you can do with a value: copy it or transform it. If you transform it you always operate on a value directly. Even when you make a temporary copy of the value to operate on, manipulate it and write it back, you’re still directly manipulating the temporary copy. The whole process would be you first __Get__ the original value and immediately __Set__ the temporary copy. Then you manipulate the temporary copy, by calling one of its member or by passing it to a procedure that manipulates it. Then you __Get__ the temporary copy value and immediately __Set__ it to the original object. There *is* no room between __Get__ and __Set__.
 
-The combination of a **Get** and a **Set** as such is called an *assignment*.
+The combination of a __Get__ and a __Set__ as such is called an *assignment*.
 
 ##### Which Aspects Can be Paired in an Assignment?
 
-So you always need to combine a call to a **Get** with a call to a **Set**. The **Get** and **Set** don’t need to be the same aspect. For instance: you can **Get** the **Target Object** of one symbol and use it as the **Type** for another symbol (**Get** the **Target Object**, **Set** the **Type**).
+So you always need to combine a call to a __Get__ with a call to a __Set__. The __Get__ and __Set__ don’t need to be the same aspect. For instance: you can __Get__ the __Target Object__ of one symbol and use it as the __Type__ for another symbol (__Get__ the __Target Object__, __Set__ the __Type__).
 
-You can always combine aspects that both return a **Symbol Id**. **State** can only be combined with **State**. The **Created** aspect can be treated like any **Boolean** object.
+You can always combine aspects that both return a __Symbol Id__. __State__ can only be combined with __State__. The __Created__ aspect can be treated like any __Boolean__ object.
 
-**Symbol Ids** are stored like an **Integer** number, but they can not be used as **Integer** objects. They can only be used among system procedures. You can’t assign an **Integer** to a aspect returning a symbol and you can’t assign a symbol aspect to an **Integer** number. So you can’t temporarily store a reference to a symbol inside an **Integer**.
+__Symbol Ids__ are stored like an __Integer__ number, but they can not be used as __Integer__ objects. They can only be used among system procedures. You can’t assign an __Integer__ to a aspect returning a symbol and you can’t assign a symbol aspect to an __Integer__ number. So you can’t temporarily store a reference to a symbol inside an __Integer__.
 
 {Is that true? In that case you can’t investigate the surrounding encapsulation and store it anywhere.}
 
-Note that of the aspects introduced, the only ones that can be **Set** are: line targets, **State** and the **Created** aspect.
+Note that of the aspects introduced, the only ones that can be __Set__ are: line targets, __State__ and the __Created__ aspect.
 
-All you can do with the aspects that can only be gotten, not set, is assigned it to a line target, **State** or **Created**, or Get it for a special purpose, called **Access**, described below.
+All you can do with the aspects that can only be gotten, not set, is assigned it to a line target, __State__ or __Created__, or Get it for a special purpose, called __Access__, described below.
 
 ##### Assignment Example
 
@@ -4785,7 +4785,7 @@ But actually all system procedures could be globalized with as parameters the ob
 
 <This is gonna need many pictures. I just don’t draw those system procedure calls very well, yet. I have fear of drawing them>
 
-There can be multiple purposes to Get a value for. You can for instance get one symbol’s **Symbol Id**, to assign to another symbol’s **Type**.
+There can be multiple purposes to Get a value for. You can for instance get one symbol’s __Symbol Id__, to assign to another symbol’s __Type__.
 
 Access, Redirection, Copy
 
@@ -5040,28 +5040,28 @@ Are implicit calls mostly an alternative notation for get set actions?
 
 \-
 
-- **Symbol**
-- **Object**
-- **Type**
-- **Interface**
-- **Target Object**
-- **Target Type**
-- **Target Interface**
-- **State**
+- __Symbol__
+- __Object__
+- __Type__
+- __Interface__
+- __Target Object__
+- __Target Type__
+- __Target Interface__
+- __State__
 
-**Symbol** returns the id of the symbol itself.
+__Symbol__ returns the id of the symbol itself.
 
-**Object** returns (the id of) the target of the object line
+__Object__ returns (the id of) the target of the object line
 
-**Type** returns the target of the type line and
+__Type__ returns the target of the type line and
 
-**Interface** returns the target of the interface line
+__Interface__ returns the target of the interface line
 
-**Target Object**, **Target Type** and **Target Interface** return respectively the id of the previously discussed *target* object, *target* type and *target* interface.
+__Target Object__, __Target Type__ and __Target Interface__ return respectively the id of the previously discussed *target* object, *target* type and *target* interface.
 
-**State** is special and returns a copy of the object as it were, which is a copy of all the data the object stores. This state must be immediately assigned to another object, which is usually of the same type.
+__State__ is special and returns a copy of the object as it were, which is a copy of all the data the object stores. This state must be immediately assigned to another object, which is usually of the same type.
 
-All other system procedures return a symbol id; State returns the data of the object. I will return to **State** lateron.
+All other system procedures return a symbol id; State returns the data of the object. I will return to __State__ lateron.
 
 Similarly even more system procedures could be defined that return more system aspects of a symbol, like:
 
@@ -5071,18 +5071,18 @@ Similarly even more system procedures could be defined that return more system a
 
 Some aspects of a symbol can also be *set*. By doing so you change the system (at run time). The follow aspects can be set:
 
-- **Object**
-- **Type**
-- **Interface**
-- **State**
+- __Object__
+- __Type__
+- __Interface__
+- __State__
 
-By setting a symbol’s **Object**, you change the target of the object line of the symbol. The same way, you change the target of the type line by setting the **Type** and the target of the interface line by setting the **Interface**. The **State*** can also be set. You can also remove a line completely by assigning **Nothing** to the **Object**, **Type** or **Interface**.
+By setting a symbol’s __Object__, you change the target of the object line of the symbol. The same way, you change the target of the type line by setting the __Type__ and the target of the interface line by setting the __Interface__. The __State__* can also be set. You can also remove a line completely by assigning __Nothing__ to the __Object__, __Type__ or __Interface__.
 
-A programmer commands when an **Object**, **Type**, **Interface** or **State** is *set*. *Getting* is not always done on direct command of a programmer. When a programmer wants to call a member of an object, he may *indirectly* cause a lot of **Gets** to be done. <>On each access that the call makes, the target object and target type are figured out in one string of redirectioning<>. On each of those redirections an **Object Get** or **Type Get** is called. When a programmer calls **Target Object Get** or **Target Type Get**, the same string of redirections is executed, causing automatic calls to **Object Get** and **Type Get**.
+A programmer commands when an __Object__, __Type__, __Interface__ or __State__ is *set*. *Getting* is not always done on direct command of a programmer. When a programmer wants to call a member of an object, he may *indirectly* cause a lot of __Gets__ to be done. <>On each access that the call makes, the target object and target type are figured out in one string of redirectioning<>. On each of those redirections an __Object Get__ or __Type Get__ is called. When a programmer calls __Target Object Get__ or __Target Type Get__, the same string of redirections is executed, causing automatic calls to __Object Get__ and __Type Get__.
 
-The programmer can also initiate **Gets*** himself. This is always done paired with storing the gotten value somewhere, for instance in a variable. So a **Get** directly initiated by a programmer is always accompanied with a **Set**.
+The programmer can also initiate __Gets__* himself. This is always done paired with storing the gotten value somewhere, for instance in a variable. So a __Get__ directly initiated by a programmer is always accompanied with a __Set__.
 
-Working with the **State** of an object is for instance useful for **Integer** objects. Their state is the integer value they represent. **State** is special and returns a copy of the object as it were, which is a copy of all the data the object stores. This state must be immediately assigned to another object, which is usually of the same type. If the state isn’t assigned to the same type then a conversion must take place. 
+Working with the __State__ of an object is for instance useful for __Integer__ objects. Their state is the integer value they represent. __State__ is special and returns a copy of the object as it were, which is a copy of all the data the object stores. This state must be immediately assigned to another object, which is usually of the same type. If the state isn’t assigned to the same type then a conversion must take place. 
 
 Symbol
 
@@ -5124,7 +5124,7 @@ Target Interface
 
 Get  : Copy
 
-When executing a **Target Object Get** or **Target Type Get**, automatically are performed **Object Redirection Gets** and **Type Redirection Gets**. <other place>
+When executing a __Target Object Get__ or __Target Type Get__, automatically are performed __Object Redirection Gets__ and __Type Redirection Gets__. <other place>
 
 So Gets can have three purposes: *Copy*, *Access* or *Redirection*. *Copy Get* happens when a programmer stores the gotten value somewhere else using a Set. *Access Get* happens when the programmer accesses a member of an object. This only happens for Target Objects, and sometimes Target Types too for static elements. *Redirection Get* happens when tracing the target object, target type and target interface. Each redirection step in this process requires getting the symbol to which there’s redirected. Redirections are never directly initiated by the programmer, but are done automatically.
 
@@ -5243,7 +5243,7 @@ An alternate look on the object symbol is as a set of system procedures, each gr
 
 This representation is called the *system representation* of the symbol. Each procedure in the system representation does what’s discussed in the previous section.
 
-**Symbol**, **Target Object**, **Target Type** and **Target Interfa**ce only have a **Get** procedure. The word **Get** is simply left out in naming these procedure from now on. The word **Get** can also be left out with **Object**, **Type**, **Interface** and **State** **Gets**.
+__Symbol__, __Target Object__, __Target Type__ and __Target Interfa__ce only have a __Get__ procedure. The word __Get__ is simply left out in naming these procedure from now on. The word __Get__ can also be left out with __Object__, __Type__, __Interface__ and __State__ __Gets__.
 
 Now you can see that the system procedures are actual Symbol procedures (except that they don’t have system procedures themselves). You can do with them the things discussed above: you can change their access controllers. Some of these procedures can get multiple access controllers for different purposes (System procedures are the only procedures that have this capability.). The Object, Type, Interface and State’s Gets and Sets can be redefined by filling the procedures with code.
 
@@ -5295,7 +5295,7 @@ Each call of the three (c . Object, i . Object and b . Target Procedure) is proc
 
 c . Object is called (for the purpose of *Access*). The c . Object procedure returns d . Object. d . Object returns e . Object. e . Object returns itself: e . Symbol. This process is contained in the Object Get procedures of c, d and e. They redirect to one another until e returns itself. So c . Object returns e.
 
-The target object and target type of e are to be found out. Symbol does this by first calling **e . Object Get** for the purpose of Redirection.  This call is not anywhere in the diagram. It is done on Symbol’s discretion. e . Object Redirection returns Nothing, a special value that in this case indicates that there is no object line. Because there is no object line, the type line may need to be followed. Therefore Symbol calls e . Type for the purpose of Redirection. This call returns symbol f. f . Object Redirection is called, which returns Nothing, so them f . Type Redirection is called, which returns g. g . Object is called, which returns h. h . Object is called, which returns Nothing, so h . Type is called, which also returns nothing. During this redirection loop, Symbol has recorded the target object and target type of e. This concludes the access of c.
+The target object and target type of e are to be found out. Symbol does this by first calling __e . Object Get__ for the purpose of Redirection.  This call is not anywhere in the diagram. It is done on Symbol’s discretion. e . Object Redirection returns Nothing, a special value that in this case indicates that there is no object line. Because there is no object line, the type line may need to be followed. Therefore Symbol calls e . Type for the purpose of Redirection. This call returns symbol f. f . Object Redirection is called, which returns Nothing, so them f . Type Redirection is called, which returns g. g . Object is called, which returns h. h . Object is called, which returns Nothing, so h . Type is called, which also returns nothing. During this redirection loop, Symbol has recorded the target object and target type of e. This concludes the access of c.
 
 Now we know c’s object and type we continue the journey of our call line. It appears in the diagram that we have now entered c. Symbol internally is working with another symbol now, though: h, because it is the target object and type of c. 
 
@@ -5353,7 +5353,7 @@ This flaw also occurs when
 
 <
 
-**Destruction**
+__Destruction__
 
 Destruction is not the opposite of creation. It’s a separate thing, because creation is an operator that is invokes, and destruction just happens when the reference count becomes 0.
 
@@ -5414,7 +5414,7 @@ To destroy a symbol, you have to call Destroy on a target object. When you call 
 
 There are differences between methodology in Symbol and former methodologies for destruction and object reference.
 
-Symbol’s **Destroy** is actually like Visual Basic’s **= Nothing**. It is logical that **= Nothing** must be called on the last object reference in order to destroy the object. So you have to call **= Nothing** (**Destroy**) on the target object. So having to call **Destroy** is not proof of a less automatic destruction mechanism. It’s just like calling **= Nothing** on the an object reference.
+Symbol’s __Destroy__ is actually like Visual Basic’s __= Nothing__. It is logical that __= Nothing__ must be called on the last object reference in order to destroy the object. So you have to call __= Nothing__ (__Destroy__) on the target object. So having to call __Destroy__ is not proof of a less automatic destruction mechanism. It’s just like calling __= Nothing__ on the an object reference.
 
 However, if a target object symbol is destroyed, other references will not point to a created object anymore. In a symbol diagram this makes sense. 
 
@@ -5825,7 +5825,7 @@ Here is a list of possible reference targets and call targets:
 
 #### Accesses
 
-**< This section explains too much on traces that has already been explained in Lines. I also think that which traces are involved in an access is not for now. You might have to know what’s considered an access, so that you understand aspect procedure call purposes, but that’s all >**
+__< This section explains too much on traces that has already been explained in Lines. I also think that which traces are involved in an access is not for now. You might have to know what’s considered an access, so that you understand aspect procedure call purposes, but that’s all >__
 
 Before going into detail about system aspects, I have to define a basic concept: an *access*.
 
@@ -6054,7 +6054,7 @@ Vraag 1:
 
 `	`Waar en how worden line targets opgeslagen?
 
-- In een **Line Target** object <geen goede naam>. Deze klasse bevat een **Exits Integer** en een **Entrances Integer Array**. De **Exits Integer** slaat het aantal exits op. De **Entrances** **Integer Array** bevat de ordinalen van de symbolen to enter. Een ordinaal is het symboolnummer binnen zijn parent.
+- In een __Line Target__ object <geen goede naam>. Deze klasse bevat een __Exits Integer__ en een __Entrances Integer Array__. De __Exits Integer__ slaat het aantal exits op. De __Entrances__ __Integer Array__ bevat de ordinalen van de symbolen to enter. Een ordinaal is het symboolnummer binnen zijn parent.
 - Elke line wordt zo opgeslagen binnen het object dat de line bevat.
 - De line source hoeft niets te weten van zijn omgeving en de inhoud van children of cousins om er toch naar te verwijzen
 - Pas als de echte line crossings (hoe heten deze symbolen die gecrossed worden?) moeten worden achterhaald, dan worden er traces uitgevoerd. Dit gebeurt bij opvragen van informatie over een symbool (? Oh ja? Krijg je niet gewoon de Line Target object terug? Of krijg je dan wel unieke symboolnummers terug of zo?), bijvoorbeeld bij het uittekenen van het systeem, of bij een call.
@@ -6078,7 +6078,7 @@ Een line geld voor de hele opslag entiteit van de line source. Als lines naar bu
 
 *[Picture 1]*
 
-Het opslaan van zo’n **Line Target** object heeft dus geen zin.
+Het opslaan van zo’n __Line Target__ object heeft dus geen zin.
 
 Je moet altijd naar een symbool wijzen in een gecreëerde opslag entiteit. Dus een line target is geïdentificeerd met het symbool in de opslag entiteit. De line source zit ook altijd in een gecreëerde opslag entiteit. Als een gecreëerde opslag entiteit al zijn sub symbolen nummert… 
 
@@ -6179,10 +6179,10 @@ Procedure ( Parameter . Reference = … )
 
 *Exclusive Establishment*
 
-|<p>![](images/Symbol%20Language%20(2004).423.jpeg)</p><p></p>|<p>**Reference to sibling inactive clause, in a square**</p><p></p><p>Only possible for static procedure members or exclusive establishment.</p><p></p>|
+|<p>![](images/Symbol%20Language%20(2004).423.jpeg)</p><p></p>|<p>__Reference to sibling inactive clause, in a square__</p><p></p><p>Only possible for static procedure members or exclusive establishment.</p><p></p>|
 | - | - |
-|<p>![](images/Symbol%20Language%20(2004).424.jpeg)</p><p></p>|<p>**Reference to sibling active clause, in a square**</p><p></p><p>Only possible for static procedure members or exclusive establishment.</p><p></p>|
-|<p>![](images/Symbol%20Language%20(2004).425.jpeg)</p><p></p>|<p>**Call to sibling inactive clause, in a square**</p><p></p><p>This is like a jump to a clause, that would otherwise not execute.</p><p></p><p>Only possible for static procedure members or exclusive establishment.</p><p></p>|
+|<p>![](images/Symbol%20Language%20(2004).424.jpeg)</p><p></p>|<p>__Reference to sibling active clause, in a square__</p><p></p><p>Only possible for static procedure members or exclusive establishment.</p><p></p>|
+|<p>![](images/Symbol%20Language%20(2004).425.jpeg)</p><p></p>|<p>__Call to sibling inactive clause, in a square__</p><p></p><p>This is like a jump to a clause, that would otherwise not execute.</p><p></p><p>Only possible for static procedure members or exclusive establishment.</p><p></p>|
 ||<p>A diamond can be executing. Only during the execution of the diamond, lines between its non static children can be real. If the diamond isn’t executing, or it’s not a diamond, but a square, lines between the non static children are suggestive. Only lines between static members in such cases, can be real.</p><p></p>|
 
 #### àSystem Aspects
@@ -6197,7 +6197,7 @@ If a clause can access anything outside then you should be able to have exclusiv
 
 #### àSystem Aspects
 
-***Exclusive Establishment***
+__*Exclusive Establishment__*
 
 Diamonds and squares with lines between internals and to internals, real to and between static members, real non-static members in diamond execution and unreal lines based on establishment exclusion in any situation: statics, non-statics, in execution or not. A square’s normal members never have real lines to the outside, only imaginary. except for static members.
 
@@ -6380,7 +6380,7 @@ A parent can’t make a child procedure inaccessible to the parent. The effect o
 
 ![](images/Symbol%20Language%20(2004).438.png)
 
-The parent contains a child object. The type of the child is defined right inside the parent: **Abstract Type**. The type is based on the complete type. The abstract type simply excludes a few members. You don’t always need to show the excluded members. In some views you will only see the published members:
+The parent contains a child object. The type of the child is defined right inside the parent: __Abstract Type__. The type is based on the complete type. The abstract type simply excludes a few members. You don’t always need to show the excluded members. In some views you will only see the published members:
 
 ![](images/Symbol%20Language%20(2004).439.png)
 
@@ -6398,9 +6398,9 @@ Being able to change access modifiers at run time may be interesting. That way y
 
 
 
-**Access Modifier:**
+__Access Modifier:__
 
-`	`**Get and Set**
+`	`__Get and Set__
 
 The Access Modifier property procedures can be access controlled themselves, so that they can be made inaccessible, for instance when you don’t want to be able to change the access modifier at run time. The access modifiers of the Access Modifier property can’t be changed at run time themselves. In other words: the Access Controller property procedures don’t have an Access Controller property of their own. This complies with the rule: system procedures don’t have system procedures of their own. 
 
@@ -6470,7 +6470,7 @@ Level limitation is paired with the basic access controller.
 
 Pairing object level limitation with the Public access modifier, makes a procedure public only to limited number of levels up the ancestry.
 
-**Public *Up 2***
+__Public *Up 2__*
 
 A procedure with this access modifier is accessible but two levels up the ancestry. Outside those levels, the procedure is inaccessible.
 
@@ -6483,7 +6483,7 @@ A procedure with this access modifier is accessible but two levels up the ancest
 
 Level limitation works the same for the Protected access modifier, but gets the additional restriction that comes with that access modifier:
 
-**Protected *Up 2***
+__Protected *Up 2__*
 
 A procedure with this access modifier is accessible two levels up the ancestry, but inaccessible outside the first circular descendant.
 
@@ -6521,7 +6521,7 @@ Level limitation is defined there where it doesn’t have effect yet. It only ha
 
 Apart from object level limitation there is also globality level limitation.
 
-**Public *Globality Up 1***
+__Public *Globality Up 1__*
 
 When an access modifier is paired with a globality level limitation, the access modifier works normally *n* level up the *globality ancestry*. But for higher globalities the member is inaccessible.
 
@@ -6556,7 +6556,7 @@ To understand what happens when procedures inside globalities are given access c
 
 If a global procedure is Inaccessible, it’s just not accessible at all (*‘outcommented’*), so not really global either. If a global procedure is Private, it’s not really global either, only accessible by the globality object itself, just like something private of a circle object. If a global procedure is Public, then it *is* global. It is then accessible from any ancestor within the globality. 
 
-When a global procedure is Public it is however also accessible *outside* the globality, as a public procedure of the globality object. For a procedure to be global inside the globality, but not accessible outside the globality you use globality level limitation: **Public Globality Up 1**.
+When a global procedure is Public it is however also accessible *outside* the globality, as a public procedure of the globality object. For a procedure to be global inside the globality, but not accessible outside the globality you use globality level limitation: __Public Globality Up 1__.
 
 It is not a permitted to make a global procedure Protected. A pentagon is not exchangable with a triangle, so Global Protected wouldn’t have much meaning.
 
@@ -6958,8 +6958,8 @@ In Symbol kan je de redirection diepte achteraf bepalen
 Als je in C++ een object referenties toewijst aan een object referentie, dan wijs je niet naar de object referentie, maar naar het target object. Symbol heeft meer structurering hier.
 
 Een vergelijking C++ – Symbol is als bijlage misschien wel mooi.
-***Symbol Language
-Advanced***
+__*Symbol Language
+Advanced__*
 
 ==================
 
@@ -6967,11 +6967,11 @@ Advanced***
 
 The topics above are essential. Unfortunately, other parts documentation is also needed to describe essential things to complete the language.
 
-**Language Integration** required for e.g. **Literals** and **Operators**.
+__Language Integration__ required for e.g. __Literals__ and __Operators__.
 
-Part of **Data** is required for e.g. **Arrays** and **Strings**.
+Part of __Data__ is required for e.g. __Arrays__ and __Strings__.
 
-Part of **Sigma Math** is required for **Arithmetic, Comparative and Logical Algebra**
+Part of __Sigma Math__ is required for __Arithmetic, Comparative and Logical Algebra__
 
 Other topics can be considered advanced, because the basic topics contain everything supported by C++. The advanced topics only add to that.
 
@@ -7136,7 +7136,7 @@ I have to have a term for the piece of line in between two crossings: line segme
 
 Do I need to cover proportionality of symbols here. I could. I could upgrade this subject to symbol metrics in general.
 
-**Sometimes symbol proportionality and placement is compromised for the sake of alignment.**
+__Sometimes symbol proportionality and placement is compromised for the sake of alignment.__
 
 1: Line convergence is the metric phenomenon, that lines converge towards mutual targets. As they travel, they move closer and closer to one another.
 
@@ -7355,11 +7355,11 @@ Operators then too.
 
 Some types have special notation formats, such as Integer Number, Floating Point Number or Text:
 
-`	`**415**
+`	`__415__
 
-`	`**1.32352e-1**
+`	`__1.32352e-1__
 
-`	`**“Hello, I am a text literal”**
+`	`__“Hello, I am a text literal”__
 
 The notation as such describes the state of an object and it’s called a literal. The examples above are textual literals. To assign a literal to an Integer object, the literal is put into a Text object and the conversion procedure for Text to Integer is called. So literals are interpreted by using a conversion procedure with Text as the source type.
 
@@ -7538,17 +7538,17 @@ Access Controllers:
 
 In text code parameter assignments before a call are notated something like this:
 
-`	`**Procedure A ( 0 , 4 )**
+`	`__Procedure A ( 0 , 4 )__
 
 Procedure A is the procedure name, the two numbers between brackets are the two arguments. Text code is covered in detail lateron.
 
 The parameters of a procedure are listed in a fixed order. Even the optional parameters have a place in this fixed list and when you don’t want to fill it in you must leve the position open:
 
-`	`**Procedure A ( 0 , 4 ,  , 1 )**
+`	`__Procedure A ( 0 , 4 ,  , 1 )__
 
 After the fixed parameter list, a procedure can allow a variable amount of parameters to follow. This variable amount of parameters is stored in a single special parameter. This parameter is of type Array, a type defined in the Sigma Data module. To support variable amount of arguments, the procedure must have a public Array object that is assigned to be this special parameter.
 
-**Procedure A ( 0 , 4 ,  , 1 , 3 , 7 ,** … **)**
+__Procedure A ( 0 , 4 ,  , 1 , 3 , 7 ,__ … __)__
 
 Variable amount of arguments is a purely textual notation. The diagram notation shows working with the Array object. However, an Array parameter needs to be tagged and in the diagram code this is simply shown by displaying the words ‘Arguments’ with the Array object. < Maybe it has something to do with Language integration. >
 
@@ -7562,112 +7562,112 @@ Lines are set in the create procedure.
 
 ###### Lines Shown in Create Procedure
 
-**Circle System**
+__Circle System__
 
-**Circle Object A**
+__Circle Object A__
 
-**Circle Type A**
+__Circle Type A__
 
-**Circle Interface A**
+__Circle Interface A__
 
-**Circle Type B**
+__Circle Type B__
 
-`		`**Traingle**
+`		`__Traingle__
 
-**End Circle**
+__End Circle__
 
 
-**System Procedures**
+__System Procedures__
 
-**Square Create**
+__Square Create__
 
-`	`**Object A . Type = Type B**
+`	`__Object A . Type = Type B__
 
-`	`**Type B . Triangle . Interface = Interface A**
+`	`__Type B . Triangle . Interface = Interface A__
 
-`	`**Type A . Interface = Interface A**
+`	`__Type A . Interface = Interface A__
 
-`	`**Object A . Create**
+`	`__Object A . Create__
 
-**End Square**
+__End Square__
 
-**End System Procedures**
+__End System Procedures__
 
-**End Circle**
+__End Circle__
 
 ###### Lines Shown at declaration
 
-**Circle System**
+__Circle System__
 
-**Circle Object A : Type = Type B, Create**
+__Circle Object A : Type = Type B, Create__
 
-**Circle Type A : Interface = Interface A**
+__Circle Type A : Interface = Interface A__
 
-**Circle Interface A**
+__Circle Interface A__
 
-**Circle Type B**
+__Circle Type B__
 
-`		`**Traingle : Interface = Interface A**
+`		`__Traingle : Interface = Interface A__
 
-**End Circle**
+__End Circle__
 
-**End Circle**
+__End Circle__
 
 The calls added to the declaration are executed in the Create procedure, though.
 
 ###### No =
 
-**Circle System**
+__Circle System__
 
-**Circle Object A : Type B, Create**
+__Circle Object A : Type B, Create__
 
-**Circle Type A : Interface A**
+__Circle Type A : Interface A__
 
-**Circle Interface A**
+__Circle Interface A__
 
-**Circle Type B**
+__Circle Type B__
 
-`		`**Traingle : Interface A**
+`		`__Traingle : Interface A__
 
-**End Circle**
+__End Circle__
 
-**End Circle**
+__End Circle__
 
 ###### No Circle
 
 Circle is rather general, so maybe I ought to be able to leave it out:
 
-**System**
+__System__
 
-**Object A : Type Type B, Create**
+__Object A : Type Type B, Create__
 
-**Type A : Interface Interface A**
+__Type A : Interface Interface A__
 
-**Interface A**
+__Interface A__
 
-**Type B**
+__Type B__
 
-`		`**Traingle : Interface A**
+`		`__Traingle : Interface A__
 
-**End B**
+__End B__
 
-**End Circle**
+__End Circle__
 
 Slechte voorbeeld namen, dan lijkt het erop dat Type, Object en Interface keywords zijn. Dat zijn het ook, maar niet in de identifiers die ik heb gekozen.
 
 ###### Variations
 
-**Circle System ó Object System ó Circular Object System**
+__Circle System ó Object System ó Circular Object System__
 
-**Triangle B ó Triangular Object B**
+__Triangle B ó Triangular Object B__
 
-**Square A ó Procedure A**
+__Square A ó Procedure A__
 
-**End Circle ó End Object**
+__End Circle ó End Object__
 
-**End Triangle ó End Object**
+__End Triangle ó End Object__
 
-**End Square ó End Procedure**
+__End Square ó End Procedure__
 
 ##### Procedures
 
@@ -7681,7 +7681,7 @@ Slechte voorbeeld namen, dan lijkt het erop dat Type, Object en Interface keywor
 
 There are several ways to notate parameters in text code. First of all, the definition of the procedure in text code must contain a parameter list:
 
-**Procedure Do Something ( Parameter 1 : Type A, Parameter 2 : Type B, Interface A )**
+__Procedure Do Something ( Parameter 1 : Type A, Parameter 2 : Type B, Interface A )__
 
 Several notations for parameter assignments.
 
@@ -7716,79 +7716,79 @@ In text code there are several notations for parameter definitions and assignmen
 
 ###### Textual Notation of Exclusion
 
-**Object A**
+__Object A__
 
-**Exclude B . P1, B . C . P2**
+__Exclude B . P1, B . C . P2__
 
-**Include B . P2**
+__Include B . P2__
 
-**End Object**
-
-Or: 
-
-**Object A**
-
-**Exclude:**
-
-**B . P1**
-
-**B . C . P2**
-
-`	`**End Exclude**
-
-**Include:**
-
-**B . P2**
-
-`	`**End Publish**
-
-**End Object**
+__End Object__
 
 Or: 
 
-**Object A**
+__Object A__
 
-**Exclude B:**
+__Exclude:__
 
-**P1**
+__B . P1__
 
-**C . P2**
+__B . C . P2__
 
-`	`**End Exclude**
+`	`__End Exclude__
 
-**Include:**
+__Include:__
 
-**B . P2**
+__B . P2__
 
-`	`**End Publish**
+`	`__End Publish__
 
-**End Object**
+__End Object__
+
+Or: 
+
+__Object A__
+
+__Exclude B:__
+
+__P1__
+
+__C . P2__
+
+`	`__End Exclude__
+
+__Include:__
+
+__B . P2__
+
+`	`__End Publish__
+
+__End Object__
 
 ###### Textual Notation of Friendship
 
-**Object A**
+__Object A__
 
-`	`**Friends**
+`	`__Friends__
 
-`		`**…**
+`		`__…__
 
-**End Friends**
+__End Friends__
 
-`	`**Exclude B:**
+`	`__Exclude B:__
 
-**P1**
+__P1__
 
-**C . P2**
+__C . P2__
 
-`	`**End Exclude**
+`	`__End Exclude__
 
-**Include:**
+__Include:__
 
-**B . P2**
+__B . P2__
 
-`	`**End Publish**
+`	`__End Publish__
 
-**End Object**
+__End Object__
 
 <Execution Control?>
 
@@ -7796,31 +7796,31 @@ Or:
 
 ##### Dimensional Table notation
 
-|**Object Genericity**|
+|__Object Genericity__|
 | :- |
-||**Object**|
+||__Object__|
 |||Original object|<p>Object determined by no line</p><p>(no object line)</p>|
 |||Delegated object|<p>Object determined by a line</p><p>(object line)</p>|
-||**Type**|
+||__Type__|
 |||Original type|<p>Type determined by no line</p><p>(object nor type line)</p>|
 |||Delegated type|<p>Type determined by a line</p><p>(type or object line)</p>|
 |||Explicit type|<p>Type determined by type line</p><p>(limits the possible object to objects of that type)</p>|
 |||Generic type|<p>Type determined by object line</p><p>(symbol adopts any type the object might have) </p>|
-||**Interface**|
+||__Interface__|
 |||Original interface|<p>Interface determined by no line</p><p>(interface, type nor object line)</p>|
 |||Delegated interface|<p>Interface determined by a line</p><p>(interface, type or object line)</p>|
 |||Explicit interface|<p>Interface determined by interface line</p><p>(one specific interface of the type is used)</p><p>(limits the possible types to ones that support the interface)</p>|
 |||Generic interface|<p>Interface determined by type line or object line</p><p>(type’s whole interface used)</p><p>(symbol adopts any interface the type might have)</p>|
-|**Procedure Genericity**|
-||**Definition**|
+|__Procedure Genericity__|
+||__Definition__|
 |||Original definition|<p>Definition determined by no line</p><p>(no reference line)</p>|
 |||Delegated definition|<p>Definition determined by a line</p><p>(a reference line)</p>|
-||**Interface**|
+||__Interface__|
 |||Original interface|<p>Interface determined by no line</p><p>(interface nor reference line)</p>|
 |||Delegated interface|<p>Interface determined by a line</p><p>(interface or reference line)</p>|
 |||Explicit interface|<p>Interface determined by interface line</p><p>(limits the possible procedure to procedures with that interface)</p>|
 |||Generic interface|<p>Interface determined by reference line</p><p>(symbol adopts any interface the procedure might have)</p>|
-|**Interface Doesn’t Determine Type**|
+|__Interface Doesn’t Determine Type__|
 ||Interface-type genericity|The fact that the interface never fixes the type|
 ||Interface-procedure genericity|The fact that the procedure interface never fixes the  procedure.|
 
@@ -7973,7 +7973,7 @@ Changing input objects means that the result of the procedure will change.
 
 The method is: when you change an input object, the procedure must be run the next time you read an output object. So the procedure would only be run when output is read after input has changed.
 
-This I call apply methodology. The reason I call it that is because When writing an input object a Boolean is set to **False** called **Input Applied to Output**. Whenever you read an output object and **Input Applied to Output = False** then the procedure is run: the procedure that converts input to output. After the procedure is run, all input has been applied to output, thus **Input Applied to Output** is set to **True**.
+This I call apply methodology. The reason I call it that is because When writing an input object a Boolean is set to __False__ called __Input Applied to Output__. Whenever you read an output object and __Input Applied to Output = False__ then the procedure is run: the procedure that converts input to output. After the procedure is run, all input has been applied to output, thus __Input Applied to Output__ is set to __True__.
 
 The benefits from making a type out of a procedure is that you can dynamically write and write input objects and read output objects, without having to run a procedure all the time.
 
@@ -8546,7 +8546,7 @@ Full summary:
 - Identifiers: (the distinction between identifiers and names is probably a flaw in the explanations)
   - Identifier:
 
-**Name of** object, variable, type, structure, enumeration, union, member of type, member of structure, member of union, member of enumeration, function, function, typedef, label, macro, macro parameter
+__Name of__ object, variable, type, structure, enumeration, union, member of type, member of structure, member of union, member of enumeration, function, function, typedef, label, macro, macro parameter
 
 - Name:
 
@@ -9042,7 +9042,7 @@ wat de verschillende clients gebruiken en misschien voor het overzicht toch een 
 
 
 
-|***Programming Concepts’ Diagram Elements***|
+|__*Programming Concepts’ Diagram Elements__*|
 | - |
 |Containment|Shapes contain other shapes|
 |Reference|<p>Line between reference and referee, </p><p>`	`going outward and acces controllers shed light on direction</p>|
@@ -9152,7 +9152,7 @@ Maybe then I can wrap it up to inambiguous. Perhaps I then should combine sectio
 
 ##### Concept à Diagram Element
 
-|<h6>***Programming Concepts’ Diagram Elements***</h6>|
+|<h6>__*Programming Concepts’ Diagram Elements__*</h6>|
 | :- |
 |Containement|Physical containment of shapes|
 |Reference|<p>Line between reference and referee, </p><p>`	`going outward and acces controllers shed light on direction</p>|
@@ -9650,7 +9650,7 @@ These attributes are mostly critical to system design so it is important to expr
 
 \----
 
-**Thought**:
+__Thought__:
 
 I could have :
 
@@ -10024,7 +10024,7 @@ References in Visual Basis and the Object Variables are pointers.
 References in C++ are a mere altered notation of pointers, with a few restrictions (even) put on them.
 
 
-Address (**In:** First Fragment, Fragments, Position, **Thru:** Current Physical Fragment, Current Logical Fragment, **Out:** Address)
+Address (__In:__ First Fragment, Fragments, Position, __Thru:__ Current Physical Fragment, Current Logical Fragment, __Out:__ Address)
 
 
 When only using in and out arguments I could optionally use the ‘normal’ notation:
@@ -11127,13 +11127,13 @@ Line Rules
 
 `	`Main topics:
 
-The ***ownership*** of lines
+The __*ownership__* of lines
 
-The ***restrictions*** on line targets (and sources)
+The __*restrictions__* on line targets (and sources)
 
-The ***roles*** that symbols get when connecting them with lines
+The __*roles__* that symbols get when connecting them with lines
 
-Redirection and ***targets*** (hmmm… which adds more roles)
+Redirection and __*targets__* (hmmm… which adds more roles)
 
 Events (this important subject is in jeopardy of being swallowed by a tree of super sections
 
@@ -11327,13 +11327,13 @@ Access Symbol Placement
 
 ###### Line Rules
 
-`	`Line Ownership (The ***ownership*** of lines)
+`	`Line Ownership (The __*ownership__* of lines)
 
 `	`Object symbol can have object, type and interface line
 
 `	`Procedure symbol can have an interface line and acall *or* reference line
 
-Target Symbols (Redirection and ***targets*** (hmmm… which adds more roles)
+Target Symbols (Redirection and __*targets__* (hmmm… which adds more roles)
 
 Redirection
 
@@ -11353,7 +11353,7 @@ Redirection
 
 `	`Any tracing
 
-Line Restrictions (The ***restrictions*** on line targets (and sources)
+Line Restrictions (The __*restrictions__* on line targets (and sources)
 
 `	`Procedures to Procedures, Objects to Objects
 
@@ -11371,7 +11371,7 @@ Can’t call upward in the ancestry (Basic call forms)
 
 Any solid procedure line that can’t be a call line is a reference line
 
-Symbol Roles (The ***roles*** that symbols get when connecting them with lines)
+Symbol Roles (The __*roles__* that symbols get when connecting them with lines)
 
 Procedure Symbol Roles
 
@@ -11517,53 +11517,53 @@ How to use hand signs to express systematics.
 
 I’ve noticed that with my coding methods in deep structures in Visual Basic 6, I use code like this for instance:
 
-**With aClass**
+__With aClass__
 
-`    `**With .Attributes**
+`    `__With .Attributes__
 
-`        `**For i = 0 To .Count - 1**
+`        `__For i = 0 To .Count - 1__
 
-`            `**With .Item(i)**
+`            `__With .Item(i)__
 
-`                `**L "Private Const " + tPrefix + .CodeName + "Field As Long = " + CStr(aIndex)**
+`                `__L "Private Const " + tPrefix + .CodeName + "Field As Long = " + CStr(aIndex)__
 
-`                `**aIndex = aIndex + 1**
+`                `__aIndex = aIndex + 1__
 
-`            `**End With**
+`            `__End With__
 
-`        `**Next i**
+`        `__Next i__
 
-`    `**End With**
+`    `__End With__
 
-`    `**With .RelatedClasses**
+`    `__With .RelatedClasses__
 
-`        `**For i = 0 To .Count - 1**
+`        `__For i = 0 To .Count - 1__
 
-`            `**If .ItemUsed(i) Then**
+`            `__If .ItemUsed(i) Then__
 
-`                `**With .Item(i)**
+`                `__With .Item(i)__
 
-`                    `**If .AbstractNumber = One Then**
+`                    `__If .AbstractNumber = One Then__
 
-`                        `**If .WhenX.EditMode = ObjectEditValues Then**
+`                        `__If .WhenX.EditMode = ObjectEditValues Then__
 
-`                            `**'Recursion**
+`                            `__'Recursion__
 
-`                                `**AddFieldConstants .Type, aIndex, tQualifier + .CodeNameSingular**
+`                                `__AddFieldConstants .Type, aIndex, tQualifier + .CodeNameSingular__
 
-`                        `**End If**
+`                        `__End If__
 
-`                    `**End If**
+`                    `__End If__
 
-`                `**End With**
+`                `__End With__
 
-`            `**End With**
+`            `__End With__
 
-`        `**Next i**
+`        `__Next i__
 
-`    `**End With**
+`    `__End With__
 
-**End With**
+__End With__
 
 There are actually two loops in this construction. I frequently need those loops and I then copy those constructions.
 
@@ -11571,77 +11571,77 @@ It might be an idea to be able to declare those constructions and reuse them by 
 
 Delcaration of constructions:
 
-**Construction Type Attributes ( aClass )**
+__Construction Type Attributes ( aClass )__
 
-`    `**With aClass**
+`    `__With aClass__
 
-`        `**With . Attributes**
+`        `__With . Attributes__
 
-`            `**For i = 0 To . Count - 1**
+`            `__For i = 0 To . Count - 1__
 
-`                `**With . Item ( i )**
+`                `__With . Item ( i )__
 
-`                    `**…**
+`                    `__…__
 
-`                `**End With**
+`                `__End With__
 
-`            `**Next i**
+`            `__Next i__
 
-`        `**End With**
+`        `__End With__
 
-`    `**End With**
+`    `__End With__
 
-**End Construction**
+__End Construction__
 
-**Construction Related Types With Edit Values ( aClass )**
+__Construction Related Types With Edit Values ( aClass )__
 
-`    `**With aClass**
+`    `__With aClass__
 
-`        `**With . Related Types**
+`        `__With . Related Types__
 
-`            `**For i = 0 To . Count - 1**
+`            `__For i = 0 To . Count - 1__
 
-`                `**If . Item Used ( i ) Then**
+`                `__If . Item Used ( i ) Then__
 
-`                    `**With .Item ( i )**
+`                    `__With .Item ( i )__
 
-`                        `**If . Abstract Number = One Then**
+`                        `__If . Abstract Number = One Then__
 
-`                            `**If . When X . EditMode = Values Then**
+`                            `__If . When X . EditMode = Values Then__
 
-`                                `**…**
+`                                `__…__
 
-`                            `**End If**
+`                            `__End If__
 
-`                        `**End If**
+`                        `__End If__
 
-`                    `**End With**
+`                    `__End With__
 
-`                `**End With**
+`                `__End With__
 
-`            `**Next i**
+`            `__Next i__
 
-`        `**End With**
+`        `__End With__
 
-`    `**End With**
+`    `__End With__
 
-**End Construction**
+__End Construction__
 
 Use of construction:
 
-**For Type Attributes ( aClass )**
+__For Type Attributes ( aClass )__
 
-`    `**L "Private Const " + tPrefix + . Code Name + "Field As Long = " + aIndex**
+`    `__L "Private Const " + tPrefix + . Code Name + "Field As Long = " + aIndex__
 
-`    `**aIndex = aIndex + 1**
+`    `__aIndex = aIndex + 1__
 
-**End For**
+__End For__
 
-**For Related Types With Edit Values ( aClass )**
+__For Related Types With Edit Values ( aClass )__
 
-`    `**Add Field Constants ( . Type , aIndex , tQualifier + . Code Name Singular )**
+`    `__Add Field Constants ( . Type , aIndex , tQualifier + . Code Name Singular )__
 
-**End For**
+__End For__
 
 
 Looking at this, I see that you could do this easily in Symbol, by making your own execution control procedure.

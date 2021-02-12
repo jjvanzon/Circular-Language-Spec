@@ -3,7 +3,7 @@
 
 For the best-organized version, take the latest version (one folder up) and do not look at the others.
 
-|**Version**|**Description**|
+|Version|Description|
 | :- | :- |
 |2007-10-03 XX|Old version|
 |2007-12-08 XX|Before dropping ideas right into the documentation|

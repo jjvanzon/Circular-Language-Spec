@@ -1,7 +1,7 @@
 ﻿Symbol = Creator article versions
 =================================
 
-|**Version**|**Name**|**Description**|
+|Version|Name|Description|
 | :- | :- | :- |
 |2007-11-08 00  0.1|Symbol = Creator|A throw-together of ideas|
 |2008-03-14 00  1.0|Symbol = Creator|After project  2008-03 09  Document Symbol = Creator|

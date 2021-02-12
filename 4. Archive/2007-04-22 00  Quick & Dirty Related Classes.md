@@ -5,7 +5,7 @@
 
 For cItem to adapt itself to a cClass, it among other things traverses the cClass’s Related Classes. C Creator automatically maintains cClass . Related Classes as G Creator specifies its Relations.
 
-*The Related Classes collections that live in the C layer are a reflection of the structure of the **G layer**, not a reflection of the structure of the **C layer**. It is kind of part of the structure description of the G layer, but the C layer maintains it automatically.*
+*The Related Classes collections that live in the C layer are a reflection of the structure of the __G layer__, not a reflection of the structure of the __C layer__. It is kind of part of the structure description of the G layer, but the C layer maintains it automatically.*
 
 For cItem to adapt itself to a *gClass*  (as opposed to a cClass), gClass also needs a Related Classes collection, but gCreator is unable to maintain Class . Related Classes collections automatically as ggCreator specifies Relations with it, because I can’t use Custom Code yet, required to extend the assignment of for instance  gRelation . Relation Class A .
 

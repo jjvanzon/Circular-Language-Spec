@@ -1,7 +1,7 @@
 ﻿System Objects article group versions
 =====================================
 
-|**Version**|**Name**|**Description**|
+|Version|Name|Description|
 | :- | :- | :- |
 |2008-05-26 XX|System Interface|Old, unfinished version|
 |2008-05-27 00  1.0  Assign|Assignment||

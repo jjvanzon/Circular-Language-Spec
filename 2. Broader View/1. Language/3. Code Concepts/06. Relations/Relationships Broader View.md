@@ -27,7 +27,7 @@ Bidirectional relationships were already introduced by the\* article *Relationsh
 
 Only if\* storage of a relationship counterpart results in a ridiculous amount of data, that you\* don't even use, then\* you\* may want to omit the\* backward relationship.
 
-This is the\* case when\* the\* target class of the\* relationship is very generally used. The\* key example for this is a **Number**. A number is used by too many other classes, so it is ridiculous to give a **Number** a related list for every class that uses **Numbers**. To determine if\* a backward relationship is ridiculous to maintain you\* could\* also consider the\* following:
+This is the\* case when\* the\* target class of the\* relationship is very generally used. The\* key example for this is a __Number__. A number is used by too many other classes, so it is ridiculous to give a __Number__ a related list for every class that uses __Numbers__. To determine if\* a backward relationship is ridiculous to maintain you\* could\* also consider the\* following:
 
 \- No functional correspondence with anything particular
 

@@ -4,7 +4,7 @@
 Object Order
 ------------
 
-**[Preliminary documentation]**
+__[Preliminary documentation]__
 
 This is unfinished documentation of lower quality. It only has unfinished descriptions and loose ideas.
 
@@ -20,13 +20,13 @@ A strategy you could have is to ignore the expression of object order for now, a
 
 ### Order Matters
 
-This is a value you can set to **True** in a à n relation, that should aid in picking the right data structure for the relation. The only thing it was come up for, was to base picking either hole list or linked list on variables that had no techical meaning, but only functional meaning. I assumed that there will be more list structures that can be chosen if **OrderMatters** or **Not**.
+This is a value you can set to __True__ in a à n relation, that should aid in picking the right data structure for the relation. The only thing it was come up for, was to base picking either hole list or linked list on variables that had no techical meaning, but only functional meaning. I assumed that there will be more list structures that can be chosen if __OrderMatters__ or __Not__.
 
 That’s all there is to say about it for now.
 
-The **OrderMatters** properties are not used by J Data Generator.
+The __OrderMatters__ properties are not used by J Data Generator.
 
-Apart from **RelationClass**, **Class** also has an **OrderMatters** property intended to set **OrderMatters** for all **RelationClasses** of that **Class**.
+Apart from __RelationClass__, __Class__ also has an __OrderMatters__ property intended to set __OrderMatters__ for all __RelationClasses__ of that __Class__.
 
 ### Class . OrderMatters
 

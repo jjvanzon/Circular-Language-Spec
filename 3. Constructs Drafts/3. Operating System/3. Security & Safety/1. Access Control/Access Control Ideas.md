@@ -75,47 +75,47 @@ Access controlling procedures means that you can give procedures one of the foll
 
 The procedures that can be access controled are:
 
-- **JAttribute.WriteAccess** : 
+- __JAttribute.WriteAccess__ : 
 
 `				`Sets the attribute’s Propety Set procedure acces modifier
 
-- **JAttribute.ChangeByUser** : 
+- __JAttribute.ChangeByUser__ : 
 
 `				`Controls if the user can change the attribute
 
-- **When1.ReadAccess** : 
+- __When1.ReadAccess__ : 
 
 `				`Access controls the à1 related object’s Property Set procedure
 
-- **When1.WriteAccess** : 
+- __When1.WriteAccess__ : 
 
 `				`Access controls the à1 related object’s Property Set procedure
 
-- **WhenN.ReadAccess** :
+- __WhenN.ReadAccess__ :
 
 Access controls List.Item.Get. So if items in a àn relation can be read.
 
-- **WhenN.WriteAccess** :
+- __WhenN.WriteAccess__ :
 
 Access controls List.Item.Set. So if items in a àn relation can be set to another object.
 
-- **WhenN.AddAccess** : 
+- __WhenN.AddAccess__ : 
 
 `				`Access controls a Lists’s Add method
 
-- **WhenN.RemoveAccess** :
+- __WhenN.RemoveAccess__ :
 
 `				`Access controls a Lists’s Remove method
 
-- **WhenX.ReadAccess** :
+- __WhenX.ReadAccess__ :
 
 Access controls the àx related List’s Item.Get procedure. So if items in a àx relation can be read.
 
-- **WhenX.WriteAccess** : 
+- __WhenX.WriteAccess__ : 
 
 Access controls the àx related List’s Item.Set procedure. So if items in a àx relation can be set to another object
 
-And then there’s **JAttribute.HasGet** and **JAttribute.HasSet**, which control the presence altogether of a **Property Get** and **Property Set** for an attribute.
+And then there’s __JAttribute.HasGet__ and __JAttribute.HasSet__, which control the presence altogether of a __Property Get__ and __Property Set__ for an attribute.
 
 Furthermore, you can separately control access by the user for two things:
 
@@ -127,7 +127,7 @@ Furthermore, you can separately control access by the user for two things:
 
 `				`Controls whether a user can Add and Remove items in a related list.
 
-It is the intention for the programmer to be able to access control most procedures that would otherwize be **Public** and also separately control access from the user interface to those procedures. Also, the programmer will be more able to leave out certain procedures altogether, like you can with the attribute **Get** and **Set**. For instance, the **Add**, **Remove** and **Clear** methods in a àn related list, should become separately access controllable as well as separately disincluded.
+It is the intention for the programmer to be able to access control most procedures that would otherwize be __Public__ and also separately control access from the user interface to those procedures. Also, the programmer will be more able to leave out certain procedures altogether, like you can with the attribute __Get__ and __Set__. For instance, the __Add__, __Remove__ and __Clear__ methods in a àn related list, should become separately access controllable as well as separately disincluded.
 
 ###### Read Only
 
@@ -141,35 +141,35 @@ Nothing has been thought of to control access for different users. That’s quit
 
 ###### Public Creatable Classes
 
-A common way of accessing an object structure is by accessing it through one or more global objects and access all other objects from there. You can also allow an application to create object of classes and access a portion of the object structure from there. Internal in the software module that contains a class, the class can already be created. You can’t put a plug in that. Whether or not a class can be created by another software module, you have to specify for each class. Make the **Class.PublicCreatable = True** and the class will be publically creatable. By default classes are not public creatable.
+A common way of accessing an object structure is by accessing it through one or more global objects and access all other objects from there. You can also allow an application to create object of classes and access a portion of the object structure from there. Internal in the software module that contains a class, the class can already be created. You can’t put a plug in that. Whether or not a class can be created by another software module, you have to specify for each class. Make the __Class.PublicCreatable = True__ and the class will be publically creatable. By default classes are not public creatable.
 
 #### Attribute . HasGet
 
-This Boolean property sets or returns whether the attribute will get a **Property Get** procedure at all in the generated programming interface. If **HasGet = False**, then the attribute is also completely write-only anywhere else in the system, including the user interface. It will also be write-only within the class itself, so can not be read at all.
+This Boolean property sets or returns whether the attribute will get a __Property Get__ procedure at all in the generated programming interface. If __HasGet = False__, then the attribute is also completely write-only anywhere else in the system, including the user interface. It will also be write-only within the class itself, so can not be read at all.
 
 For more information, see the *Access Control* section.
 
 #### Attribute . HasSet
 
-This Boolean property sets or returns whether the attribute will get a **Property Set** (or **Let**) procedure at all in the generated programming interface. If **HasSet = False**, then the attribute is also completely read-only anywhere else in the system, including the user interface. It will also be read-only within the class itself, so can not be written at all.
+This Boolean property sets or returns whether the attribute will get a __Property Set__ (or __Let__) procedure at all in the generated programming interface. If __HasSet = False__, then the attribute is also completely read-only anywhere else in the system, including the user interface. It will also be read-only within the class itself, so can not be written at all.
 
 For more information, see the *Access Control* section.
 
 #### Attribute . WriteAccess
 
-This property sets the write access to the attribute property in the programming interface generated by J Data. Setting it to **PublicAccess**, **PrivateAccess** or **FriendAccess** changes the access modifier of the **Property Set** procedure in the programming interface.
+This property sets the write access to the attribute property in the programming interface generated by J Data. Setting it to __PublicAccess__, __PrivateAccess__ or __FriendAccess__ changes the access modifier of the __Property Set__ procedure in the programming interface.
 
 For more information, see the *Access Control* section.
 
 ####### Class . PublicCreatable
 
-Setting **Class.PublicCreatable** will see to it that the **Item Class** will be creatable outside the generated system.
+Setting __Class.PublicCreatable__ will see to it that the __Item Class__ will be creatable outside the generated system.
 
 For more information see then *Public Creatable Classes* section.
 
 ####### Class . Name Properties
 
-**Class** contains a lot of properties to specify the name of the class and to specify for instance the name of the **Item Control**, the **Item Class,** the **Item Window** and file names for the Visual Basic code modules.
+__Class__ contains a lot of properties to specify the name of the class and to specify for instance the name of the __Item Control__, the __Item Class,__ the __Item Window__ and file names for the Visual Basic code modules.
 
 Class contains the following name properties:
 
@@ -196,7 +196,7 @@ Class contains the following name properties:
 - DefaultListDisplayName
 - ItemControlBaseObjectName
 
-When you don’t separately specify names for the **Item Control** or **Item Window** for instance, these names are derived from more general names, like **Class.Name** and **Class.NamePlural**.
+When you don’t separately specify names for the __Item Control__ or __Item Window__ for instance, these names are derived from more general names, like __Class.Name__ and __Class.NamePlural__.
 
 For more information see the *Names* section.
 
@@ -241,7 +241,7 @@ Classes giving methods access to their private contents should be a form of acce
 
 ###### Disincluding Add, Remove or Clear from Programming Interface
 
-You can disinclude the **Add**, **Remove** and **Clear** methods with the **HasAdd**, **HasRemove** and **HasClear** structure settings. You can also merely access control the **Add**, **Remove** and **Clear** methods. That way you can disallow calls to the procedures from outside your library or application, so only your application can **Add**, **Remove** or **Clear**, but any program, that links to your application, can’t. That would be the situation when you give a method **Friend** access. You can also make the method **Private**, in case of which only procedures within the list class itself can access the method. See the *Access Control* section for more on this subject.
+You can disinclude the __Add__, __Remove__ and __Clear__ methods with the __HasAdd__, __HasRemove__ and __HasClear__ structure settings. You can also merely access control the __Add__, __Remove__ and __Clear__ methods. That way you can disallow calls to the procedures from outside your library or application, so only your application can __Add__, __Remove__ or __Clear__, but any program, that links to your application, can’t. That would be the situation when you give a method __Friend__ access. You can also make the method __Private__, in case of which only procedures within the list class itself can access the method. See the *Access Control* section for more on this subject.
 
 Considere access control of the system interface members.
 

@@ -211,7 +211,7 @@ The first concept I will explain is quite simple.
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.004.jpeg)
 
-If a symbol has an object line then it adopts the object of the line target. **A** delegates to **B**. You can also say that **A**’s object aspect is *delegated* or that **A** has a *delegated object*.
+If a symbol has an object line then it adopts the object of the line target. __A__ delegates to __B__. You can also say that __A__’s object aspect is *delegated* or that __A__ has a *delegated object*.
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.005.jpeg)
 
@@ -411,13 +411,13 @@ When you set the interface of a symbol then it can only point to definitions tha
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.036.jpeg)
 
-Here **Object A** has **Type B**. It uses **Interface A** of **Type B**.
+Here __Object A__ has __Type B__. It uses __Interface A__ of __Type B__.
 
 One one hand you can a see using the supported interface as a silent extension of the type line to the triangle with the right interface:
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.037.jpeg)
 
-But on the other hand it’s not like that, because that would mean that **Object A** gets **Type B**. It still has **Type A** however. When **Object A** is created, an object of **Type A** is is created, not **Type B**. But **Object A** can only call upon the members of **Interface A**.
+But on the other hand it’s not like that, because that would mean that __Object A__ gets __Type B__. It still has __Type A__ however. When __Object A__ is created, an object of __Type A__ is is created, not __Type B__. But __Object A__ can only call upon the members of __Interface A__.
 
 ###### Object Shows Only Used Interface Implementation
 
@@ -435,9 +435,9 @@ However, when you *create* the symbol, an object of the *full type* is created. 
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.040.jpeg)
 
-*Symbol A is of Type A, but only uses Interface A. Symbol A only shows the systematics of that one interface: a circle. However, it’s an object of the **whole type**. This is important. The importance is pointed out by Symbol B. Symbol B is a pointer to Symbol A, only it uses a different interface. So it shows different systematics.*
+*Symbol A is of Type A, but only uses Interface A. Symbol A only shows the systematics of that one interface: a circle. However, it’s an object of the __whole type__. This is important. The importance is pointed out by Symbol B. Symbol B is a pointer to Symbol A, only it uses a different interface. So it shows different systematics.*
 
-So object symbols tied together with object lines don’t have to use the same interface at all. The picture above shows that when you use an object line (**Symbol B** points to **Symbol A**), the target doesn’t have to have the same interface, only the same type.
+So object symbols tied together with object lines don’t have to use the same interface at all. The picture above shows that when you use an object line (__Symbol B__ points to __Symbol A__), the target doesn’t have to have the same interface, only the same type.
 
 ###### Choose From Multiple Types
 
@@ -452,7 +452,7 @@ If there is no interface line, the *object* determines *which* interface of the 
 |![](images/Type%20Safety,%20Genericity,%20Explicit.041.jpeg)|![](images/Type%20Safety,%20Genericity,%20Explicit.042.jpeg)|
 | :-: | :-: |
 
-**Symbol A** redirects the type to **Type A**. In the first picture **Symbol A** redirects to **Object A**, in the second picture **Symbol A** redirects to **Object B**. **Symbol A**, **Object A** and **Object B** are all of the same type. However, **Object A** uses **Interface A** and **Object B** uses **Interface B**.
+__Symbol A__ redirects the type to __Type A__. In the first picture __Symbol A__ redirects to __Object A__, in the second picture __Symbol A__ redirects to __Object B__. __Symbol A__, __Object A__ and __Object B__ are all of the same type. However, __Object A__ uses __Interface A__ and __Object B__ uses __Interface B__.
 
 This means that the object line determines the interface sooner than the type line. That’s why in the interface trace, the object line is preferred over the type line.
 
@@ -511,34 +511,34 @@ If you break one of the lines in the circularity, the one loosing the line comes
 
 #### Overview
 
-|**Object Symbol Genericity**|
+|__Object Symbol Genericity__|
 | :- |
-||**Object**|
+||__Object__|
 |||Original object|<p>Object determined by no line</p><p>(no object line)</p>|
 |||Delegated object|<p>Object determined by a line</p><p>(object line)</p>|
-||**Type**|
+||__Type__|
 |||Original type|<p>Type determined by no line</p><p>(type nor object line)</p>|
 |||Delegated type|<p>Type determined by a line</p><p>(type or object line)</p>|
 |||Explicit type|<p>Type determined by type line</p><p>(limits the possible object to objects of that type)</p>|
 |||Generic type|<p>Type determined by object line</p><p>(symbol adopts any type the object might have) </p>|
-||**Interface**|
+||__Interface__|
 |||Original interface|<p>Interface determined by no line</p><p>(interface, type nor object line)</p>|
 |||Delegated interface|<p>Interface determined by a line</p><p>(interface, type or object line)</p>|
 |||Explicit interface|<p>Interface determined by interface line</p><p>(one specific interface of the type is used)</p><p>(limits the possible types to ones that support the interface)</p>|
 |||Generic interface|<p>Interface determined by type line or object line</p><p>(type’s whole interface used)</p><p>(symbol adopts any interface the type might have)</p>|
-|**Procedure Symbol Genericity**|
-||**Definition**|
+|__Procedure Symbol Genericity__|
+||__Definition__|
 |||Original definition|<p>Definition determined by no line</p><p>(no reference line)</p>|
 |||Delegated definition|<p>Definition determined by a line</p><p>(a reference line)</p>|
-||**Execution**|
+||__Execution__|
 |||Original execution|Delegation doesn’t pass a diamond|
 |||Delegated execution|Delegation passes a diamond|
-||**Interface**|
+||__Interface__|
 |||Original interface|<p>Interface determined by no line</p><p>(interface nor reference line)</p>|
 |||Delegated interface|<p>Interface determined by a line</p><p>(interface or reference line)</p>|
 |||Explicit interface|<p>Interface determined by interface line</p><p>(limits the possible procedures to ones with that interface)</p>|
 |||Generic interface|<p>Interface determined by reference line</p><p>(symbol adopts any interface the procedure might have)</p>|
-|**One does not fix the other**|
+|__One does not fix the other__|
 ||Interface type genericity|Fixing the interface doesn’t fix the type|
 ||Type interface genericity|Fixing the type doesn’t fix the interface|
 ||Interface-procedure genericity|Fixing the procedure interface doesn’t fix the procedure|

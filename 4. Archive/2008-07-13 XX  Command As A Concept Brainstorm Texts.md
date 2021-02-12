@@ -31,7 +31,7 @@ A new command object is created on each call to the command. Then the input is s
 
 The parameters are not really a list of objects passed to the call anymore. The call is an object, that has a set of object references in it, that are individually set.
 
-All of this behavior is implemented as the **Command** concept. The **Command** concept can be supported by any object, upon which the object becomes a command.
+All of this behavior is implemented as the __Command__ concept. The __Command__ concept can be supported by any object, upon which the object becomes a command.
 
 The code base, however, in some basic form needs to support an object’s ability to execute.
 
@@ -51,7 +51,7 @@ A command has added behavior, compared to a normal object:
 
 For the rest objects and commands are identical.
 
-The added behavior of commands is implemented as the **Command** concept. When an object supports the **Command** concept, it automatically becomes a command. The code base only needs to support an object’s ability to execute in some basic form. But most of the fuctionality for commands is programmed within the new computer language itself. The code base only supplies the basic need to facilitate it.
+The added behavior of commands is implemented as the __Command__ concept. When an object supports the __Command__ concept, it automatically becomes a command. The code base only needs to support an object’s ability to execute in some basic form. But most of the fuctionality for commands is programmed within the new computer language itself. The code base only supplies the basic need to facilitate it.
 
 For a command to execute, the sub-commands need to execute in the right order. The sub-commands again execute sub-commands. This going by the commands recursively probably needs to be present in the code base. The outer commands are machine instructions, which will also be called by the code base.
 
@@ -145,25 +145,25 @@ It is not clear yet if it is best to also use value direction to indicate additi
 
 Input, output and throughput are parameter passing types.
 
-They are shortened to **In**, **Out** and **Thru**.
+They are shortened to __In__, __Out__ and __Thru__.
 
-When a command’s parameter is **In**, it means that the command reads values from the parameter. When a command’s parameter is **Out**, it means that the command writes values to the parameter. When a command’s parameter is **Thru**, it means, that the command reads values and writes values to the parameter. Throughput functions as both input and output at the same time.
+When a command’s parameter is __In__, it means that the command reads values from the parameter. When a command’s parameter is __Out__, it means that the command writes values to the parameter. When a command’s parameter is __Thru__, it means, that the command reads values and writes values to the parameter. Throughput functions as both input and output at the same time.
 
 When a command disposes objects after it is done, then those objects are called *downput*. Downput may have been input for sub-commands, or it could have been output of sub-commands. To the parent command, though, it is *downput*. Downput parameters will not be further considered here, because they do not have anything to do with parameter *passing*.
 
 Input values are written to the command right before the call. Output values are read right after the call.
 
-In that case the parameters are passed *by value*: the value of one object is *copied* to the parameter of the command to call. And after the call, the values of the output parameters are *copied* to other objects. These kinds of input and output parameters are called **Value In** and **Value Out** and **Value Thru**.
+In that case the parameters are passed *by value*: the value of one object is *copied* to the parameter of the command to call. And after the call, the values of the output parameters are *copied* to other objects. These kinds of input and output parameters are called __Value In__ and __Value Out__ and __Value Thru__.
 
-**Value In**:
+__Value In__:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.001.png)
 
-**Value Out**:
+__Value Out__:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.002.png)
 
-**Value Thru**:
+__Value Thru__:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.003.png)
 
@@ -175,75 +175,75 @@ Reference parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.004.png)
 
-The called command can then read out of the object, that it was given a reference to. In that case it is called a **Reference In** parameter.
+The called command can then read out of the object, that it was given a reference to. In that case it is called a __Reference In__ parameter.
 
-**Reference In** parameter:
+__Reference In__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.005.png)
 
-When a command is passed a reference to an object, and the command writes to the parameter, it is called a **Reference Out** parameter.
+When a command is passed a reference to an object, and the command writes to the parameter, it is called a __Reference Out__ parameter.
 
-**Reference Out** parameter:
+__Reference Out__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.006.png)
 
-Next to **Reference In** and **Reference Out**, there is also **Reference Thru**, which means, that the command both reads and writes to the object passed to it.
+Next to __Reference In__ and __Reference Out__, there is also __Reference Thru__, which means, that the command both reads and writes to the object passed to it.
 
-**Reference Thru** parameter:
+__Reference Thru__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.007.png)
 
-When a command call has an outward reference to an object, this *does* make the object a parameter, but this *does not* determine yet whether it is input, output or throughput. The *in* and *out* in this case refer to whether values are written or read to the object reference. A reference parameter is always sort of like input, though: the parent command passes the object to the sub-command, so the parent inputs something into the sub command. Therefore it can also be called **Reference Outward, Value In** and **Reference Outward, Value Out** But those names are too long. The distinction between **Reference In** and **Reference Out** is about whether values are read or written to the object passed to the sub-command.
+When a command call has an outward reference to an object, this *does* make the object a parameter, but this *does not* determine yet whether it is input, output or throughput. The *in* and *out* in this case refer to whether values are written or read to the object reference. A reference parameter is always sort of like input, though: the parent command passes the object to the sub-command, so the parent inputs something into the sub command. Therefore it can also be called __Reference Outward, Value In__ and __Reference Outward, Value Out__ But those names are too long. The distinction between __Reference In__ and __Reference Out__ is about whether values are read or written to the object passed to the sub-command.
 
 The other way around is also possible: the sub-command passes a reference to an object to the parent command. The parent command refers to an object in the sub-command.
 
-**Reference Inward** parameter:
+__Reference Inward__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.008.png)
 
-This is a **Reference Inward** parameter, as opposed to a **Reference Outward** parameter. The sub-command writes to the output object. The long name of this type of parameter passing is **Reference Inward, Value Out**.
+This is a __Reference Inward__ parameter, as opposed to a __Reference Outward__ parameter. The sub-command writes to the output object. The long name of this type of parameter passing is __Reference Inward, Value Out__.
 
-**Reference Inward, Value Out**:
+__Reference Inward, Value Out__:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.009.png)
 
 The sub-command can also read from the output object, but this doesn’t have anything to do with the parameter passing between parent- and sub-commands.
 
-**Reference Inward, Value In**:
+__Reference Inward, Value In__:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.010.png)
 
-**Reference Inward, Value Thru**:
+__Reference Inward, Value Thru__:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.011.png)
 
-Because **Reference Inward, Value Out** is only relevant for the parent’s reading values from an output object, it is shortened to **Object Out**.
+Because __Reference Inward, Value Out__ is only relevant for the parent’s reading values from an output object, it is shortened to __Object Out__.
 
-**Object Out**:
+__Object Out__:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.008.png)
 
-The assignments, that come with parameter passing are always done by the parent command. Whether it is **Reference Inward**, **Reference Outward**, or *values*, the assignments that come with parameter passing are always done by the parent command.
+The assignments, that come with parameter passing are always done by the parent command. Whether it is __Reference Inward__, __Reference Outward__, or *values*, the assignments that come with parameter passing are always done by the parent command.
 
-**By Value**, **Reference Outward** and **Reference Inward** are the different reference situations a parameter can have. But this tells us nothing about whether a parameter is input, output or throughput. What determines, whether it is in, out or thru is whether values are written to the parameter or read from the parameter.
+__By Value__, __Reference Outward__ and __Reference Inward__ are the different reference situations a parameter can have. But this tells us nothing about whether a parameter is input, output or throughput. What determines, whether it is in, out or thru is whether values are written to the parameter or read from the parameter.
 
 So the long names of the different parameter passing types are:
 
-\- **Value In**
+\- __Value In__
 
-\- **Value Out**
+\- __Value Out__
 
-\- **Value Thru**
+\- __Value Thru__
 
-\- **Reference Outward, Value In**
+\- __Reference Outward, Value In__
 
-\- **Reference Outward, Value Out**
+\- __Reference Outward, Value Out__
 
-\- **Reference Outward, Value Thru**
+\- __Reference Outward, Value Thru__
 
-\- **Reference Inward, Value Out**
+\- __Reference Inward, Value Out__
 
-**Reference Inward, Value In** and **Reference Inward, Value Thru** are not relevant. The **Reference Inward** parameter *can* be *read from* by the sub-command, but that it’s just not relevant to *parameter passing* between a sub-command and a parent command.
+__Reference Inward, Value In__ and __Reference Inward, Value Thru__ are not relevant. The __Reference Inward__ parameter *can* be *read from* by the sub-command, but that it’s just not relevant to *parameter passing* between a sub-command and a parent command.
 
 It is important to keep understanding that there are three elements to parameter passing:
 
@@ -257,37 +257,37 @@ To understand how the different parameter passings came about, it is important t
 
 Here is a list of the parameter passings, with their short names, and their diagram expression:
 
-\- **Value In**
+\- __Value In__
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.001.png)
 
-\- **Value Out**
+\- __Value Out__
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.002.png)
 
-\- **Value Thru**
+\- __Value Thru__
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.003.png)
 
-\- **Reference In**
+\- __Reference In__
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.005.png)
 
-\- **Reference Out**
+\- __Reference Out__
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.006.png)
 
-\- **Reference Thru**
+\- __Reference Thru__
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.007.png)
 
-\- **Object Out**
+\- __Object Out__
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.008.png)
 
-The reason why it is important to keep understanding the three aspects of parameter passing, is that **Rerefence** parameters, even though they can be **In**, **Out** or **Thru**, are always *input* in a way, because it is a reference passed from the parent command to the sub-command.
+The reason why it is important to keep understanding the three aspects of parameter passing, is that __Rerefence__ parameters, even though they can be __In__, __Out__ or __Thru__, are always *input* in a way, because it is a reference passed from the parent command to the sub-command.
 
-**Value In** and **Value Out** means reading and writing done by de caller. **Reference In** and **Reference Out** means reading and writing done by the called command. In both cases **In** does mean, that the called command *uses* something, and **Out** means, that the called command returns something.
+__Value In__ and __Value Out__ means reading and writing done by de caller. __Reference In__ and __Reference Out__ means reading and writing done by the called command. In both cases __In__ does mean, that the called command *uses* something, and __Out__ means, that the called command returns something.
 
 ##### Parameter Passing Type Details
 
@@ -341,17 +341,17 @@ So the parameter points to another pointer. The target pointer determines the ev
 
 The notation of a parameter as a pointer to a pointer, though, may become an implicit expression of just an object assignment.
 
-In earlier programming languages one use of by reference was used to be able to pass large objects to a procedure. Another use was to be able to let the procedure have multiple return values, because in other programming languages a procedure can really only have one return value. In the new computer language, multiple return values is accomplished by having multiple **Object Out** parameters. So you do not need **Reference Out** parameters for that anymore.
+In earlier programming languages one use of by reference was used to be able to pass large objects to a procedure. Another use was to be able to let the procedure have multiple return values, because in other programming languages a procedure can really only have one return value. In the new computer language, multiple return values is accomplished by having multiple __Object Out__ parameters. So you do not need __Reference Out__ parameters for that anymore.
 
 ###### Value In
 
-A **Value In** parameter passes a value from an object to the parameter of a command. A **Value In** parameter is an object inside the command call, that is created right before the command is invoked, and a value from another object is then assigned to the parameter, before the command is run.
+A __Value In__ parameter passes a value from an object to the parameter of a command. A __Value In__ parameter is an object inside the command call, that is created right before the command is invoked, and a value from another object is then assigned to the parameter, before the command is run.
 
-The command can manipulate the **Value In** parameter without affecting the original object.
+The command can manipulate the __Value In__ parameter without affecting the original object.
 
-A **Value In** parameter works best for a simple object, that stores a single value, but might also work for more complex objects, with more than just a single value, but that will require specifying a cloning depth, and comes with all sorts of downsides. See *By Value*.
+A __Value In__ parameter works best for a simple object, that stores a single value, but might also work for more complex objects, with more than just a single value, but that will require specifying a cloning depth, and comes with all sorts of downsides. See *By Value*.
 
-A diagram of a command call with a **Value In** parameter:
+A diagram of a command call with a __Value In__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.015.png)
 
@@ -359,7 +359,7 @@ Or:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.016.png)
 
-A diagram of a command definition with a **Value In** parameter:
+A diagram of a command definition with a __Value In__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.017.png)
 
@@ -369,13 +369,13 @@ Or:
 
 ###### Value Out
 
-A **Value Out** is a value produced by a command, that is yielded over to another object after the call is done. A **Value Out** output parameter is an object inside the command call, that is created right before the command is invoked. The parameter is written to by the command or by one of its sub-commands. The value of the output parameter is copied right after the call, assigning the value to another object.
+A __Value Out__ is a value produced by a command, that is yielded over to another object after the call is done. A __Value Out__ output parameter is an object inside the command call, that is created right before the command is invoked. The parameter is written to by the command or by one of its sub-commands. The value of the output parameter is copied right after the call, assigning the value to another object.
 
 Output values are parameters, that are not assigned before the call, but only read from after the call.
 
-A **Value Out** parameter works best for a simple object, that stores a single value. But it might also work for more complex objects, with more than just a single value, but that will require specifying a cloning depth, and comes with all sorts of downsides. See *By Value*.
+A __Value Out__ parameter works best for a simple object, that stores a single value. But it might also work for more complex objects, with more than just a single value, but that will require specifying a cloning depth, and comes with all sorts of downsides. See *By Value*.
 
-Command call with a **Value Out** parameter:
+Command call with a __Value Out__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.019.png)
 
@@ -383,7 +383,7 @@ Or:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.020.png)
 
-A command definition with a **Value Out** parameter:
+A command definition with a __Value Out__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.021.png)
 
@@ -395,9 +395,9 @@ Or:
 
 Throughput by value is when a by value parameter is first written to, then changed by the command, and then the value of the parameter is read from again, and assigned to the original object.
 
-A **Value Thru** parameter works best for a simple object, that stores a single value, but might also work for more complex objects, with more than just a single value, but that will require specifying a cloning depth, and comes with all sorts of downsides. See *By Value*.
+A __Value Thru__ parameter works best for a simple object, that stores a single value, but might also work for more complex objects, with more than just a single value, but that will require specifying a cloning depth, and comes with all sorts of downsides. See *By Value*.
 
-Command call with a **Value Thru** parameter.
+Command call with a __Value Thru__ parameter.
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.023.png)
 
@@ -405,9 +405,9 @@ Or:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.024.png)
 
-In theory, the value could first come from one object, and after the call be written to another object. But that’s not regularly what a **Value Thru** parameter is used for.
+In theory, the value could first come from one object, and after the call be written to another object. But that’s not regularly what a __Value Thru__ parameter is used for.
 
-Command definition with a **Value Thru** parameter:
+Command definition with a __Value Thru__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.025.png)
 
@@ -417,11 +417,11 @@ Or:
 
 ###### Reference In
 
-A **Reference In** parameter can be used to assign a reference to a complex object as the input of the command.
+A __Reference In__ parameter can be used to assign a reference to a complex object as the input of the command.
 
-Because a **Reference In** parameter is input, the called command can only *read* out of the object, that it was given a reference to.
+Because a __Reference In__ parameter is input, the called command can only *read* out of the object, that it was given a reference to.
 
-Command call with a **Reference In** parameter:
+Command call with a __Reference In__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.027.png)
 
@@ -429,7 +429,7 @@ Or:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.028.png)
 
-Command definition with a **Reference In** parameter:
+Command definition with a __Reference In__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.029.png)
 
@@ -439,11 +439,11 @@ Or:
 
 ###### Reference Out
 
-A **Reference Out** parameter can be used to assign a reference to a complex object to which a command writes output.
+A __Reference Out__ parameter can be used to assign a reference to a complex object to which a command writes output.
 
-Because a **Reference Out** parameter is output, the called command can only *write* to the object, that it was given a reference to.
+Because a __Reference Out__ parameter is output, the called command can only *write* to the object, that it was given a reference to.
 
-Command call with a **Reference Out** parameter:
+Command call with a __Reference Out__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.031.png)
 
@@ -451,7 +451,7 @@ Or:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.032.png)
 
-Command definition with a **Reference Out** parameter:
+Command definition with a __Reference Out__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.033.png)
 
@@ -459,19 +459,19 @@ Or:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.034.png)
 
-In a sense, a **Reference *Out*** parameter is actually *through*put.
+In a sense, a __Reference *Out__* parameter is actually *through*put.
 
 When output is alteration of an existing object, it could be considered throughput, even though there is only *written* to the object, and nothing is *read* from the object, it is still an object passed *through* the command.
 
-A by reference parameter can not change the target object of the parameter or overwrite the target symbol of the reference parameter with a new object. Returning a new object or another existing object is reserved for the **Object Out** parameter.
+A by reference parameter can not change the target object of the parameter or overwrite the target symbol of the reference parameter with a new object. Returning a new object or another existing object is reserved for the __Object Out__ parameter.
 
 ###### Reference Thru
 
-A **Reference Thru** parameter can be used to assign a reference to a complex object, from which input is read and output is written to.
+A __Reference Thru__ parameter can be used to assign a reference to a complex object, from which input is read and output is written to.
 
-A **Reference Thru** parameter is a pointer to something outside the command. The object pointed to both read from and written to. 
+A __Reference Thru__ parameter is a pointer to something outside the command. The object pointed to both read from and written to. 
 
-Command call with a **Reference Thru** parameter.
+Command call with a __Reference Thru__ parameter.
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.035.png)
 
@@ -479,7 +479,7 @@ Or
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.036.png)
 
-Command definition with a **Reference Thru** parameter.
+Command definition with a __Reference Thru__ parameter.
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.037.png)
 
@@ -489,23 +489,23 @@ Or:
 
 ###### Object Out
 
-An **Object Out** parameter is an object that resides inside the command. The **Object Out** may be a new object, or redirect to an existing object. Anyway, the command determines which object will be output. The produced object will be referenced from outside the command.
+An __Object Out__ parameter is an object that resides inside the command. The __Object Out__ may be a new object, or redirect to an existing object. Anyway, the command determines which object will be output. The produced object will be referenced from outside the command.
 
-Unlike parameters passed by reference, an **Object Out** parameter is *referred to*. This is an exclusive aspect of the **Object Out** parameter passing type.
+Unlike parameters passed by reference, an __Object Out__ parameter is *referred to*. This is an exclusive aspect of the __Object Out__ parameter passing type.
 
-A diagram of a command call with an **Object Out** parameter:
+A diagram of a command call with an __Object Out__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.039.png)
 
-A diagram of a command definition with an **Object Out** parameter:
+A diagram of a command definition with an __Object Out__ parameter:
 
 
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.040.png)
 
-Unlike **By Reference** and **By Value** parameters, there are no three variations for parameters referred *to*. The reason ‘**Object**’ parameter passing does not have three variations, like the **Value** and **Reference** parameter passings, is that the command’s reading and writing values to the object is irrelevant to the *parameter passing*. **Object Out** does not have anything to do with whether the command call reads or writes from the object it outputs. That is irrelevant to the parameter *passing*.
+Unlike __By Reference__ and __By Value__ parameters, there are no three variations for parameters referred *to*. The reason ‘__Object__’ parameter passing does not have three variations, like the __Value__ and __Reference__ parameter passings, is that the command’s reading and writing values to the object is irrelevant to the *parameter passing*. __Object Out__ does not have anything to do with whether the command call reads or writes from the object it outputs. That is irrelevant to the parameter *passing*.
 
-A reference to an **Object Out** parameter causes an implicit run of the command, because a command can not return anything unless it is run. A reference to an **Object Out** parameter copies the target object of the parameter. It can’t permanently refer directly to the parameter, because nothing really exists inside the call unless the call is running.
+A reference to an __Object Out__ parameter causes an implicit run of the command, because a command can not return anything unless it is run. A reference to an __Object Out__ parameter copies the target object of the parameter. It can’t permanently refer directly to the parameter, because nothing really exists inside the call unless the call is running.
 
 ##### Issues
 
@@ -525,7 +525,7 @@ An object assignment, and a pointer to a pointer are not completely interchangab
 
 Reference parameters could be made pointers to pointers, like in the notation, but the notation may also just be regarded an implicit notation of an object assignment.
 
-A reference to an **Object Out** parameter is also an implicit notation for an object assignment from the parameter to a referrer. So that would nicely fit the two together: parameter references are also an implicit notation for object assignments.
+A reference to an __Object Out__ parameter is also an implicit notation for an object assignment from the parameter to a referrer. So that would nicely fit the two together: parameter references are also an implicit notation for object assignments.
 
 The notations of value transmission for Reference parameters is also just an abstract expression:
 
@@ -539,11 +539,11 @@ It is an abstract display, not an implicit display.
 
 ###### Can’t reference each parameter
 
-You can’t just reference each parameter. You can only reference a parameter when it is **Object Out**.
+You can’t just reference each parameter. You can only reference a parameter when it is __Object Out__.
 
-If a parameter is for instance **Reference Thru**, it can only point *to* something, but you can’t *refer to* a **Reference Thru** parameter. You can only *give it* a reference.
+If a parameter is for instance __Reference Thru__, it can only point *to* something, but you can’t *refer to* a __Reference Thru__ parameter. You can only *give it* a reference.
 
-The caller can not redirect the **Object Out** parameter. The call itself may be able to redirect the **Object Out** parameter, but not to something outside the call, because the call is only aware of what’s reachable *inside* the call. This actually counts for objects as well. So the following situation is not possible:
+The caller can not redirect the __Object Out__ parameter. The call itself may be able to redirect the __Object Out__ parameter, but not to something outside the call, because the call is only aware of what’s reachable *inside* the call. This actually counts for objects as well. So the following situation is not possible:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.043.png)
 
@@ -555,47 +555,47 @@ If the caller wants all the object symbols to represent the same object, it shou
 
 Something is input, output or throughput when values are read from it or written to it. But it does not need to be the value of one object being written to another object. It can also be values of sub-objects that are yielded over from one object to another. In that case, the parent object is considered input or output parameters, even though only the values of its sub-objects are used.
 
-For **By Value** parameters an indirect value transfer means, that the input or output object is cloned to a certain containment depth, whereas a direct value transfer means, that only the direct value of the input or output object is copied.
+For __By Value__ parameters an indirect value transfer means, that the input or output object is cloned to a certain containment depth, whereas a direct value transfer means, that only the direct value of the input or output object is copied.
 
-For **By Reference** parameters, indirect value transfer means, that values are read and written from sub-objects of the reference parameter. Direct value transfer of **By Reference** parameters means, that only the direct value of the input or output object is read or written.
+For __By Reference__ parameters, indirect value transfer means, that values are read and written from sub-objects of the reference parameter. Direct value transfer of __By Reference__ parameters means, that only the direct value of the input or output object is read or written.
 
-For an **Object Out** parameter, the type of value transfer does not matter, so it also does not matter whether there are direct value transfers or indirect value transfers.
+For an __Object Out__ parameter, the type of value transfer does not matter, so it also does not matter whether there are direct value transfers or indirect value transfers.
 
 When it is direct value transfer, an assignment call is shown in the diagram. 
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.045.png)
 
-The above displays a **Reference In** parameter inside the call, whose direct value is used.
+The above displays a __Reference In__ parameter inside the call, whose direct value is used.
 
 If it is indirect value transfers, then the diagram does not show an assignment call.
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.046.png)
 
-The above displays a command that uses values from the sub-objects of the **Reference In** parameter.
+The above displays a command that uses values from the sub-objects of the __Reference In__ parameter.
 
 Because it is valuable parameter passing information, whether only the direct value of an object is accessed or also values of sub-objects, you can mention this in the name of the parameter passing type, for instance:
 
-\- **Direct Value In**
+\- __Direct Value In__
 
-\- **Indirect Reference Out**
+\- __Indirect Reference Out__
 
 This adds another aspect to the parameter passing types. This gives the parameter passing types thee aspects:
 
-\- **In** / **Out** / **Thru**   (value direction)
+\- __In__ / __Out__ / __Thru__   (value direction)
 
-\- **By Value** / **By Reference** / **Object Out**  (reference situation)
+\- __By Value__ / __By Reference__ / __Object Out__  (reference situation)
 
-\- **Direct** / **Indirect**  (value usage)
+\- __Direct__ / __Indirect__  (value usage)
 
 ###### Input / output not always values
 
-Output is not always the assignment of a value, though. Output can also be the creation of an object, or addition of objects to a list. Output can also be assigning **Nothing** to an object reference, or removing objects from a list. It can also be the assignment of an object to an object reference.
+Output is not always the assignment of a value, though. Output can also be the creation of an object, or addition of objects to a list. Output can also be assigning __Nothing__ to an object reference, or removing objects from a list. It can also be the assignment of an object to an object reference.
 
-Creation, addition, annulment, removal and object assignment are considered *indirect* value transfers. Ofcourse it is not really a *value* transfer, but it *is* output. Creation, addition, annulment, removal and object assignment only applies to output. So creation, addition, annulment, removal and object assignment specifically applies to **Indirect Reference Out** parameters.
+Creation, addition, annulment, removal and object assignment are considered *indirect* value transfers. Ofcourse it is not really a *value* transfer, but it *is* output. Creation, addition, annulment, removal and object assignment only applies to output. So creation, addition, annulment, removal and object assignment specifically applies to __Indirect Reference Out__ parameters.
 
-However, input can also be merely accessing a sub-object to go to the next object. So input is also not always *value* transmission. That non-value transmission applies to **Indirect Reference In** parameters.
+However, input can also be merely accessing a sub-object to go to the next object. So input is also not always *value* transmission. That non-value transmission applies to __Indirect Reference In__ parameters.
 
-All in all, non-value transmissions apply to **By Reference** parameters only.
+All in all, non-value transmissions apply to __By Reference__ parameters only.
 
 ###### Parameters of calls directly tied together
 
@@ -605,43 +605,43 @@ However, in the new computer language, parameters of sub-commands can be tied to
 
 One parameter type can only be tied to a parameter with specific other parameter type.
 
-A **Value In** parameter can be only be tied to a **Value Out** parameter:
+A __Value In__ parameter can be only be tied to a __Value Out__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.047.png)
 
-A **Value Out** parameter can only be tied to a **Value In** parameter:
+A __Value Out__ parameter can only be tied to a __Value In__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.048.png)
 
-A **Value Thru** parameter can not be tied to another parameter:
+A __Value Thru__ parameter can not be tied to another parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.049.png)
 
 This is because it creates a circularity in which one parameter writes its values to the other, and the other parameter writes its value to the first parameter. It is just an unlogical circular situation.
 
-A **Reference In** parameter can only be tied to an **Object Out** parameter:
+A __Reference In__ parameter can only be tied to an __Object Out__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.050.png)
 
-A **Reference Out** parameter can only be tied to an **Object Out** parameter.
+A __Reference Out__ parameter can only be tied to an __Object Out__ parameter.
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.051.png)
 
-A **Reference Thru** parameter can only be tied to an **Object Out** parameter:
+A __Reference Thru__ parameter can only be tied to an __Object Out__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.052.png)
 
-An **Object Out** parameter can be tied to a **Reference In**, **Reference Out** or **Reference Thru** parameter. In short an **Object Out** parameter can only be tied to a **Reference** parameter:
+An __Object Out__ parameter can be tied to a __Reference In__, __Reference Out__ or __Reference Thru__ parameter. In short an __Object Out__ parameter can only be tied to a __Reference__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.053.png)
 
 So to summarize it:
 
-Only **Value In** parameters and **Value Out** parameters can be tied together:
+Only __Value In__ parameters and __Value Out__ parameters can be tied together:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.048.png)
 
-Only **Object Out** and **Reference** parameters can be tied together:
+Only __Object Out__ and __Reference__ parameters can be tied together:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.054.png)
 
@@ -657,11 +657,11 @@ An *in*direct value transfer:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.056.png)
 
-is in fact an implicit notation of a cloning operation performed by the parent. For indirect value transfers between **By Value** parameters, you might indicate the cloning depth:
+is in fact an implicit notation of a cloning operation performed by the parent. For indirect value transfers between __By Value__ parameters, you might indicate the cloning depth:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.057.png)
 
-The explicit notation of the **Clone** call:
+The explicit notation of the __Clone__ call:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.058.png)
 
@@ -669,15 +669,15 @@ The command definitions with an indirect by value parameter, with a cloning dept
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.059.png)
 
-Looking at the explicit notation of the **Clone** call above, because the **By Value** parameters are referenced by the **Clone** operation, this sort of makes the by value parameters:
+Looking at the explicit notation of the __Clone__ call above, because the __By Value__ parameters are referenced by the __Clone__ operation, this sort of makes the by value parameters:
 
-\- **Reference Inward, Value In**
+\- __Reference Inward, Value In__
 
-\- **Reference Inward, Value Out**
+\- __Reference Inward, Value Out__
 
 However, this is not the way you want to look at it when programming. This is just what happens under the surface.
 
-For object transfers between **Object Out** parameters and **Reference** parameters, the implicit notation is:
+For object transfers between __Object Out__ parameters and __Reference__ parameters, the implicit notation is:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.060.png)
 
@@ -685,21 +685,21 @@ However, this direct connection between parameters is an implicit notation of an
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.061.png)
 
-So the connection from the **By Reference** parameter to the **Object Out** parameter isn’t really a reference to a reference; it is an object assignment.
+So the connection from the __By Reference__ parameter to the __Object Out__ parameter isn’t really a reference to a reference; it is an object assignment.
 
-Because the **Reference** and **Object Out** parameters are referenced by the object assignment, this sort of makes the **Reference** and **Object Out** parameters:
+Because the __Reference__ and __Object Out__ parameters are referenced by the object assignment, this sort of makes the __Reference__ and __Object Out__ parameters:
 
-\- **Reference Inward, Object In**
+\- __Reference Inward, Object In__
 
-\- **Reference Inward, Object Out**
+\- __Reference Inward, Object Out__
 
 However, this is not the way you want to look at it when programming. This is just what happens under the surface.
 
 The object assignment does not require the parent command to have a direct reference to the object. The object assignment can just refer to the object symbols. In text code ths may look like this:
 
-**A  (  O  o=  B  (  )  .  O  )**
+__A  (  O  o=  B  (  )  .  O  )__
 
-Command **A** is called, and its **Reference In** parameter **O** is assigned the output **O** of the command **B**. So no temporary variable is needed to first pick up the output of **B** and then assign it as input of command **A**.
+Command __A__ is called, and its __Reference In__ parameter __O__ is assigned the output __O__ of the command __B__. So no temporary variable is needed to first pick up the output of __B__ and then assign it as input of command __A__.
 
 Tying parameters together directly states a direct dependency. No direct reference to the parameter objects are required inside the parent command.
 
@@ -709,7 +709,7 @@ input output can also be between a sub-commands parameter and a sub-object of th
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.062.png)
 
-The parameter of command **A** is a **Value Out** parameter that writes to object **O**. The parameter of command **B** is a **Reference Out** parameter that connects to object **O**. The parameters of command **A** and command **B** are not directly tied to eachother, but they do indirectly related to eachother. This will be further elaborated in *Automatic Execution Order*.
+The parameter of command __A__ is a __Value Out__ parameter that writes to object __O__. The parameter of command __B__ is a __Reference Out__ parameter that connects to object __O__. The parameters of command __A__ and command __B__ are not directly tied to eachother, but they do indirectly related to eachother. This will be further elaborated in *Automatic Execution Order*.
 
 ##### Further parameter passing stereotyping
 
@@ -889,7 +889,7 @@ The rest is all part of automatically determing in-out-thru.
 
 #### Automatic Execution Order
 
-The first thought was, that the execution order of sub-commands could be automatically determined, based connection between parameters and objects, and whether parameter is **In**, **Out** or **Thru** and **By Reference**, **By Value** or **Object Out**. But this is not true.
+The first thought was, that the execution order of sub-commands could be automatically determined, based connection between parameters and objects, and whether parameter is __In__, __Out__ or __Thru__ and __By Reference__, __By Value__ or __Object Out__. But this is not true.
 
 ##### Parameters tied together
 
@@ -943,25 +943,25 @@ Here follows a textual definition of a parameter, and of the input and output; t
 
 Parameter:
 
-**Reference Thru  Document  As  Graphics  .  Document**
+__Reference Thru  Document  As  Graphics  .  Document__
 
 Input:
 
-**Document  .  Points  .  Item  [  \*  ]  .  X**
+__Document  .  Points  .  Item  [  \*  ]  .  X__
 
-**Document  .  Points  .  Item  [  \*  ]  .  Y**
+__Document  .  Points  .  Item  [  \*  ]  .  Y__
 
 Output:
 
-**Document  .  Lines  .  Item  [  0  ..  \*  ]  .  Point A   .  X**
+__Document  .  Lines  .  Item  [  0  ..  \*  ]  .  Point A   .  X__
 
-**Document  .  Lines  .  Item  [  0  ..  \*  ]  .  Point A   .  Y**
+__Document  .  Lines  .  Item  [  0  ..  \*  ]  .  Point A   .  Y__
 
-**Document  .  Lines  .  Item  [  0  ..  \*  ]  .  Point B   .  X**
+__Document  .  Lines  .  Item  [  0  ..  \*  ]  .  Point B   .  X__
 
-**Document  .  Lines  .  Item  [  0  ..  \*  ]  .  Point B   .  Y**
+__Document  .  Lines  .  Item  [  0  ..  \*  ]  .  Point B   .  Y__
 
-There must be a limitation in the expression of what is accessed. Perhaps if only **Document**'s existance is being checked, this might be indicated. But to a certain extend the expression of what exactly is accessed should be limited. Not the entire inner workings of a command are visible from its input and output. For instance, in the input / output expression you will *not* be seeing what *sub-commands* are called.
+There must be a limitation in the expression of what is accessed. Perhaps if only __Document__'s existance is being checked, this might be indicated. But to a certain extend the expression of what exactly is accessed should be limited. Not the entire inner workings of a command are visible from its input and output. For instance, in the input / output expression you will *not* be seeing what *sub-commands* are called.
 
 What is written and read by a command are actually pre- and post-conditions of the command. 
 
@@ -975,7 +975,7 @@ And then you have to look if there is any overlap in what one command writes and
 
 When you don’t consider volatile concurrency, then when sub-commands follow the same structure paths starting at the same object, you are pretty sure, when the same object will be accessed. But in a volatile concurrency situation you are never entirely sure, unless you lock the data. But those are concurrency issues, which are for later.
 
-**Command A** can only be outcome-dependent on **Command B**, when some of **Command B**’s output is **Command A**’s input. Input and output of a command are not the parameters, but what is read or written *from* the parameters. For command *definitions*, this means, that outcome dependency can only be indicated for sub-commands that have any possible overlap in input-output.
+__Command A__ can only be outcome-dependent on __Command B__, when some of __Command B__’s output is __Command A__’s input. Input and output of a command are not the parameters, but what is read or written *from* the parameters. For command *definitions*, this means, that outcome dependency can only be indicated for sub-commands that have any possible overlap in input-output.
 
 Building up the outcome-dependency structure of a command is only done in the design stage of the command. The outcome-dependency does not change once you’ve published, versioned, a command with sub-commands. Once you are done designing, the outcome-dependency configuration will be stored within the command.
 

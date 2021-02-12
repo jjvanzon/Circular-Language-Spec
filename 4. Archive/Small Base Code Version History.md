@@ -1,7 +1,7 @@
 ﻿Small Base Code Article Versions
 ================================
 
-|**Version**|**Name**|**Description**|
+|Version|Name|Description|
 | :- | :- | :- |
 |2008-03-11 01  0.1|Small Base Code||
 |2008-03-11 02  1.0|Small Base Code||

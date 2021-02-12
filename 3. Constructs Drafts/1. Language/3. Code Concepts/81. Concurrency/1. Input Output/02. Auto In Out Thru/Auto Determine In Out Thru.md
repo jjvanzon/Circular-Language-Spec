@@ -34,7 +34,7 @@ A question for versioning is: when will a version of a command be created? On ev
 
 Versioning of commands can prevent huge casts of changes to input, output or throughput configuration, or at least limit it in size. Only when defining a new call, you have to look at the called command to see if this changes the in, out, thru configuration of the currently edited parent command definition.
 
-##### Giving the issues in this section a place***
+##### Giving the issues in this section a place__*
 
 The ideas about versioning need to be moved to the article *Versioning*.
 
@@ -44,6 +44,6 @@ You should only *refer* to those articles, even when the articles are not not fi
 
 The rest is all part of automatically determing in-out-thru.
 
-## Ideas**
+## Ideas__
 
 If anything should change about the Basic Command Topics as soon as you will revise Commands & Classes Loosely Coupled, then you have to redo the Basic Command Topics during a project about Advanced Command Topics.

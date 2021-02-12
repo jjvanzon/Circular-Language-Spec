@@ -1,7 +1,7 @@
 ﻿Relations in a Diagram article versions
 =======================================
 
-|**Version**|**Description**|
+|Version|Description|
 | :- | :- |
 |2008-04-23 XX|No description|
 |2008-05-27 XX  0.9|No description|

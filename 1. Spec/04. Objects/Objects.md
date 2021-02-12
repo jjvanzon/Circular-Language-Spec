@@ -24,7 +24,7 @@ The following picture may show a sub-object that would depict an object referenc
 
 ![](images/Objects.003.png)
 
-That sub-object's symbol would be given a line here, connected to the symbol that may represent the actual object, which may reside outside the parent object. Sub-object **A** would be a reference to object **B**. It would be a notational choice, that the direction would point outwards.
+That sub-object's symbol would be given a line here, connected to the symbol that may represent the actual object, which may reside outside the parent object. Sub-object __A__ would be a reference to object __B__. It would be a notational choice, that the direction would point outwards.
 
 ### Nothing
 

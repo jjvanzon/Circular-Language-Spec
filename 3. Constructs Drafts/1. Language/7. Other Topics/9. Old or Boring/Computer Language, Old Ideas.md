@@ -40,7 +40,7 @@ This project involves the following:
   - C++ to Symbol
   - Symbol to Basic
   - Symbol to C++
-  - ***Optimization***
+  - __*Optimization__*
     - Procedural optimization
     - Machine code optimization
 - Symbol View and Interaction
@@ -404,7 +404,7 @@ In regular programming languages all parameter values are put on the stack. Sigm
 
 ##### Access Optimization
 
-The object oriented structure of the system is retained in the compiled code. This is done *only* to be able to **program** orderly with them. 
+The object oriented structure of the system is retained in the compiled code. This is done *only* to be able to __program__ orderly with them. 
 
 However you don’t have the names of modules, classes and other elements. You need a symbol tables to tie names to the numbers that elements of the system have. This symbol table is only used for software development.
 
@@ -441,8 +441,8 @@ Sometimes code is executed that can be done simpler. You can recognize construct
 If a stretch of code results in nothing other than a configuration of objects and data, then you can store the end result of it in an end state. When that code is normally called, instead, the end state is loaded immediately. That saves a lot of time. This can only be done in cases where the end result of a chunk of code isn’t variable. If it is only a little variable, you could play with this optimization a little and store end states of the invariable things and canculate the variable part *or* store multiple partial end states, one for each variation.
 
 In development, this optimization is not that much wanted, because the code changes there all the time. After compilation the code doesn’t change and therefore such an optimization is useful.
-**Symbol to Symbol: 
-Collapse Object Structure, Reduce to Procedures**
+__Symbol to Symbol: 
+Collapse Object Structure, Reduce to Procedures__
 -------------------------------------------------
 This translation can be explained without knowing the Sigma module structure. This translation is a step in translating Symbol to Sigma, but the rest of Symbol to Sigma translation can only be explained if Sigma module structure is explained.
 

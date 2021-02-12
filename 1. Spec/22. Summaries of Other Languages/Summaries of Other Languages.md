@@ -191,7 +191,7 @@ Full summary:
 - Identifiers: (the distinction between identifiers and names is probably a flaw in the explanations)
   - Identifier:
 
-**Name of** object, variable, type, structure, enumeration, union, member of type, member of structure, member of union, member of enumeration, function, function, typedef, label, macro, macro parameter
+__Name of__ object, variable, type, structure, enumeration, union, member of type, member of structure, member of union, member of enumeration, function, function, typedef, label, macro, macro parameter
 
 - Name:
 

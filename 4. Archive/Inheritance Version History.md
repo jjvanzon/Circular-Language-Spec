@@ -1,7 +1,7 @@
 ﻿Inheritance Chapter Versions
 ============================
 
-|**Version**|**Name**|**Description**|
+|Version|Name|Description|
 | :- | :- | :- |
 |2010-05-18 00  0.2|Inheritance|Version frozen in project Work Out Inheritance Articles 2010-05, before some dramatic changes.|
 |2010-05-31 00  0.4|Inheritance|Version frozen in project Work Out Inheritance Articles 2010-05, before some dramatic changes.|

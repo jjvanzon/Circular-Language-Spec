@@ -46,7 +46,7 @@ The\* target object is the\* last\* point in a string of object reference redire
 
 ![](images/Pointers.001.png)
 
-Symbol **A** is an object reference to symbol **B**. Symbol **B** is an object reference to symbol **C**. Symbol **C** is the\* target object of both\* symbols **A** and **B**.
+Symbol __A__ is an object reference to symbol __B__. Symbol __B__ is an object reference to symbol __C__. Symbol __C__ is the\* target object of both\* symbols __A__ and __B__.
 
 The\* idea of target objects is also\* a way to make a single\* symbol in the\* diagram represent the\* actual object, whereas the\* others are just\* seen as references to the\* object: to have the\* actual\* object only\* represented by a single\* symbol in the\* diagram.
 
@@ -108,27 +108,27 @@ The\* relation back can\* be displayed in both symbols, that represent the\* tar
 
 ![](images/Pointers.007.png)
 
-The\* two unidirectional relations between **Class** and **Pointer to Class** melt together to a single bidirectional relation. But\* the\* unidirectional relation from the\* **Target Class** to the\* **Class** stays unidirectional, because\* **Class** does not\* directly relate to **Target Class**:
+The\* two unidirectional relations between __Class__ and __Pointer to Class__ melt together to a single bidirectional relation. But\* the\* unidirectional relation from the\* __Target Class__ to the\* __Class__ stays unidirectional, because\* __Class__ does not\* directly relate to __Target Class__:
 
 ![](images/Pointers.008.png)
 
 The\* notation for a bidirectional relation was covered by the\* article *Relations in a Diagram*.
 
-So only **Class** and **Pointer to Class** get a bidirectional relation to eachother.
+So only __Class__ and __Pointer to Class__ get a bidirectional relation to eachother.
 
-**Target Class** keeps a unidirectional relation to **Class**. Funny enough, that unidirectional relation is part of the\* bidirectional relation between **Class** and **Pointer to Class**. The\* bidirectional relation actually consists of:
+__Target Class__ keeps a unidirectional relation to __Class__. Funny enough, that unidirectional relation is part of the\* bidirectional relation between __Class__ and __Pointer to Class__. The\* bidirectional relation actually consists of:
 
-\- **Class** relates to **Pointer to Class**
+\- __Class__ relates to __Pointer to Class__
 
-\- **Target Class** relates back to **Class**
+\- __Target Class__ relates back to __Class__
 
-The\* connection between **Target Class** and **Class** is already implied by the\* connection between **Pointer to Class** and **Class**. You\*’re allowed to leave out of the\* diagram then\*:
+The\* connection between __Target Class__ and __Class__ is already implied by the\* connection between __Pointer to Class__ and __Class__. You\*’re allowed to leave out of the\* diagram then\*:
 
 ![](images/Pointers.009.png)
 
-**Target Class** and **Class** are already implicitly related to eachother through the\* pointer to the\* target class.
+__Target Class__ and __Class__ are already implicitly related to eachother through the\* pointer to the\* target class.
 
-In all the\* diagrams above, that display the\* backward relation, the\* sub-symbols of **Pointer to Class** and **Target Class** were given a name: **A**. This was done, because\* there was no line in the\* diagram to indicate that they were the\* same sub-object. Officially, when\* symbols share an aspect, in that they are equal in object, class, interface or definition, they should be tied together with a line. Officially an object line should have been connecting both symbols of **A**:
+In all the\* diagrams above, that display the\* backward relation, the\* sub-symbols of __Pointer to Class__ and __Target Class__ were given a name: __A__. This was done, because\* there was no line in the\* diagram to indicate that they were the\* same sub-object. Officially, when\* symbols share an aspect, in that they are equal in object, class, interface or definition, they should be tied together with a line. Officially an object line should have been connecting both symbols of __A__:
 
 ![](images/Pointers.010.png)
 
@@ -154,7 +154,7 @@ You never work with objects directly, so even though the diagram above looks lik
 
 #### Reference
 
-Sometimes no aspect of a reference is called upon, but there is worked directly with the reference itself. That is not really an aspect, but in that case it is said you are calling upon the **Reference** aspect.
+Sometimes no aspect of a reference is called upon, but there is worked directly with the reference itself. That is not really an aspect, but in that case it is said you are calling upon the __Reference__ aspect.
 
 ![](images/Pointers.012.png)
 
@@ -162,27 +162,27 @@ Sometimes no aspect of a reference is called upon, but there is worked directly 
 
 This would add the following aspect to the list of aspects:
 
-**Reference**
+__Reference__
 
 ### Object-Bound & Reference Bound Aspects
 
 The following aspects are reference-bound (or *sub-object-bound*):
 
-**Reference**
+__Reference__
 
 ### System Commands
 
 #### System Commands for the Reference Aspect
 
-The only system command for the **Reference** aspect is:
+The only system command for the __Reference__ aspect is:
 
-**Reference Get**
+__Reference Get__
 
-A reference can be a **Related Item** or a **Related List Item**. This creates two overloads for **Reference Get**:
+A reference can be a __Related Item__ or a __Related List Item__. This creates two overloads for __Reference Get__:
 
-**Reference Get à Related Item Get**
+__Reference Get à Related Item Get__
 
-**Reference Get à Related List Item Get**
+__Reference Get à Related List Item Get__
 
 The reference aspect is used in pointer operations.
 
@@ -192,37 +192,37 @@ All the standard situations seemed covered previously, but pointer-to-pointer si
 
 ##### Pointer-to-Pointer
 
-In a standard situation **Object Get** and **Object Set** control references to objects. However, a reference can also point to yet again another reference: to a related item contained by another parent object. This makes the other parent object decide which object is eventually pointed at.
+In a standard situation __Object Get__ and __Object Set__ control references to objects. However, a reference can also point to yet again another reference: to a related item contained by another parent object. This makes the other parent object decide which object is eventually pointed at.
 
 As such, pointer-to-pointer functionality introduces extra commands.
 
 ##### Set Object to Reference
 
-To be able to set the object aspect to another related item, **Object Set** has two overloads:
+To be able to set the object aspect to another related item, __Object Set__ has two overloads:
 
-**Object Set** à **Set Object to Other Related Item**
+__Object Set__ à __Set Object to Other Related Item__
 
-**Object Set** à **Set Object to Other Related List Item**
+__Object Set__ à __Set Object to Other Related List Item__
 
-If you want a single name to express both situations, you could call it **Set Object to Reference**.
+If you want a single name to express both situations, you could call it __Set Object to Reference__.
 
 ##### Get Object which is a Reference
 
-Because the object aspect can be another related item, the **Object Get** command gets two overloads:
+Because the object aspect can be another related item, the __Object Get__ command gets two overloads:
 
-**Object Get** à **Get Object which is Another Related Item**
+__Object Get__ à __Get Object which is Another Related Item__
 
-**Object Get** à **Get Object which is Another Related List Item**
+__Object Get__ à __Get Object which is Another Related List Item__
 
-If you want a single name to express both situations, you could also call it **Get Object which is a Reference**. During execution these system commands call **Reference Get** on the other related item.
+If you want a single name to express both situations, you could also call it __Get Object which is a Reference__. During execution these system commands call __Reference Get__ on the other related item.
 
 ##### Use Reference As Object
 
-The reference aspect can be access-controlled for the different ways you can use it. Pointer-to-pointer situations require you to be able to use a reference as an *object*. To be able to access control the different purposes for which you can use a reference, the **Reference Get** command gets the second implementation:
+The reference aspect can be access-controlled for the different ways you can use it. Pointer-to-pointer situations require you to be able to use a reference as an *object*. To be able to access control the different purposes for which you can use a reference, the __Reference Get__ command gets the second implementation:
 
-**Use Reference As Object**
+__Use Reference As Object__
 
-which delegates directly to the **Reference Get** command.
+which delegates directly to the __Reference Get__ command.
 
 ##### The Overloads Recapitulated
 
@@ -230,49 +230,49 @@ Do not wreck your brain over all this delegation and overloading. It is just for
 
 This leaves us with the following command added for pointer-to-pointer situations:
 
-**Use Reference As Object**
+__Use Reference As Object__
 
-Detail: For that last command you might want to overload **Object Get.** But that does not work. You can not overload it, because they will both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
+Detail: For that last command you might want to overload __Object Get.__ But that does not work. You can not overload it, because they will both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
 
 #### System Commands for the Class Aspect
 
 ##### Pointer-to-Pointer Situations
 
-In a standard situation the **Use As Class, Class Set**, **Reference-Class Get** and **ObjectClass Get** commands are about making an object function as another object’s class. However, you can also make something’s class be yet again another reference. That means that another parent object determines the eventual class.
+In a standard situation the __Use As Class, Class Set__, __Reference-Class Get__ and __ObjectClass Get__ commands are about making an object function as another object’s class. However, you can also make something’s class be yet again another reference. That means that another parent object determines the eventual class.
 
 (However, this might create difficulty for the system to maintain a constant class. You might want another parent to determine the initial class, but the class of an object should not change during its lifetime.)
 
 ##### Set Class to Reference
 
-To be able to set the **Class** aspect to another related item, **Class Set** has two overloads:
+To be able to set the __Class__ aspect to another related item, __Class Set__ has two overloads:
 
-**Class Set** à **Set Class to Other Related Item**
+__Class Set__ à __Set Class to Other Related Item__
 
-**Class Set** à **Set Class to Other Related List Item**
+__Class Set__ à __Set Class to Other Related List Item__
 
-If you want a single name to express both situations, you could call it **Set Class to Reference**.
+If you want a single name to express both situations, you could call it __Set Class to Reference__.
 
 ##### Get Class which is a Reference
 
-Because the **Class** aspect can be set to another related item, the **Class Get** command gets extra overloads. Next to that, there are different overloads for the two types of **Class Get**: **Reference-Class Get** and **Object-Class Get**. This creates the following overloads:
+Because the __Class__ aspect can be set to another related item, the __Class Get__ command gets extra overloads. Next to that, there are different overloads for the two types of __Class Get__: __Reference-Class Get__ and __Object-Class Get__. This creates the following overloads:
 
-**Reference-Class Get à Get Reference-Class which is Another Related Item**
+__Reference-Class Get à Get Reference-Class which is Another Related Item__
 
-**Reference-Class Get à Get Reference-Class which is Another Related List Item**
+__Reference-Class Get à Get Reference-Class which is Another Related List Item__
 
-**Object-Class Get à Get Object-Class which is Another Related Item**
+__Object-Class Get à Get Object-Class which is Another Related Item__
 
-**Object-Class Get à Get Object-Class which is Another Related List Item**
+__Object-Class Get à Get Object-Class which is Another Related List Item__
 
-You could also call them **Get Class which is a Reference**.
+You could also call them __Get Class which is a Reference__.
 
 ##### Use Reference As Class
 
-The **Reference** aspect can be access-controlled for different ways you can use it. Pointer-to-pointer situations require you to be able to use a reference as a *class*. To be able to access control the different purposes for which you can use a reference, the **Reference Get** command gets the secondary implementation:
+The __Reference__ aspect can be access-controlled for different ways you can use it. Pointer-to-pointer situations require you to be able to use a reference as a *class*. To be able to access control the different purposes for which you can use a reference, the __Reference Get__ command gets the secondary implementation:
 
-**Use Reference As Class**
+__Use Reference As Class__
 
-which delegates directly to the **Reference Get** command.
+which delegates directly to the __Reference Get__ command.
 
 ##### The Overloads Recapitulated
 
@@ -280,13 +280,13 @@ Do not wreck your brain over all this delegation and overloading. It is just for
 
 This leaves us with the following command added for pointer-to-pointer situations:
 
-**Use Reference As Class**
+__Use Reference As Class__
 
-Detail: For that last command you might want to overload **Object Get.** But that does not work. You can not overload it, because they will both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
+Detail: For that last command you might want to overload __Object Get.__ But that does not work. You can not overload it, because they will both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
 
 #### The Extra Commands & Overloads
 
-The system commands for the **Reference**, **Object** and **Class** aspects introduce accessory commands and overloads. They seem to be making the explanations more complicated, but they actually make things easier to work with. There are reasons for the introduction of the extra commands and overloads:
+The system commands for the __Reference__, __Object__ and __Class__ aspects introduce accessory commands and overloads. They seem to be making the explanations more complicated, but they actually make things easier to work with. There are reasons for the introduction of the extra commands and overloads:
 
 \- Common commands for related items and related list items
 
@@ -296,15 +296,15 @@ Here follows an overview of which reason applies to which command or overload.
 
 ##### Access-Control Usage
 
-**Use Reference As Object**
+__Use Reference As Object__
 
-**Use Reference As Class**
+__Use Reference As Class__
 
 ##### Common Commands for Related Items and Related List Items
 
-**Reference Get à Related Item Ge*t***
+__Reference Get à Related Item Ge*t__*
 
-**Reference Get à Related List Item Get**
+__Reference Get à Related List Item Get__
 
 ##### Both
 
@@ -312,25 +312,25 @@ Here follows an overview of which reason applies to which command or overload.
 
 *- Common commands for direct pointers and pointers-to-pointers*
 
-**Object Set** à **Set Object to Other Related Item**
+__Object Set__ à __Set Object to Other Related Item__
 
-**Object Set à Set Object to Other Related List Item**
+__Object Set à Set Object to Other Related List Item__
 
-**Object Get à Get Object which is Another Related Item**
+__Object Get à Get Object which is Another Related Item__
 
-**Object Get à Get Object which is Another Related List Item**
+__Object Get à Get Object which is Another Related List Item__
 
-**Class Set à Set Class to Other Related Item**
+__Class Set à Set Class to Other Related Item__
 
-**Class Set à Set Class to Other Related List Item**
+__Class Set à Set Class to Other Related List Item__
 
-**Reference-Class Get à Get Reference-Class which is Another Related Item**
+__Reference-Class Get à Get Reference-Class which is Another Related Item__
 
-**Reference-Class Get à Get Reference-Class which is Another Related List Item**
+__Reference-Class Get à Get Reference-Class which is Another Related List Item__
 
-**Object-Class Get à Get Object-Class which is Another Related Item**
+__Object-Class Get à Get Object-Class which is Another Related Item__
 
-**Object-Class Get à Get Object-Class which is Another Related List Item**
+__Object-Class Get à Get Object-Class which is Another Related List Item__
 
 Again: the reasons for extra commands, overloads and delegation are:
 
@@ -342,49 +342,49 @@ Again: the reasons for extra commands, overloads and delegation are:
 
 #### System Interface of a Related Item
 
-An additional aspect, that may apply to a **Related Item** could be:
+An additional aspect, that may apply to a __Related Item__ could be:
 
-**Reference**
+__Reference__
 
 ##### The Reference Aspect in the System Interface
 
-The **Reference** aspect is controlled through only one command:
+The __Reference__ aspect is controlled through only one command:
 
-**Reference Get**
+__Reference Get__
 
-The **Reference** aspect is placed inside a triangle, that wraps together the members to control the **Reference** aspect:
+The __Reference__ aspect is placed inside a triangle, that wraps together the members to control the __Reference__ aspect:
 
 ![](images/Pointers.013.png)
 
 ##### The Object Aspect in the System Interface
 
-The **Object** aspect of a **Related Item** is controlled through an additional command:
+The __Object__ aspect of a __Related Item__ is controlled through an additional command:
 
-**Use Reference As Object** 
+__Use Reference As Object__ 
 
-The commands are placed inside a triangle, that wraps together the members of the **Object** aspect:
+The commands are placed inside a triangle, that wraps together the members of the __Object__ aspect:
 
 ![](images/Pointers.014.png)
 
 ##### The Full System Interface for Related Item
 
-The full system interface of a **Related Item** including pointer-to-pointer provisions may look like this:
+The full system interface of a __Related Item__ including pointer-to-pointer provisions may look like this:
 
 ![](images/Pointers.015.png)
 
 ##### The Reference-Class Aspect in the System Interface
 
-**Use Reference As Class**
+__Use Reference As Class__
 
-The commands are placed inside a triangle, that wraps together the members of the **Class** aspect:
+The commands are placed inside a triangle, that wraps together the members of the __Class__ aspect:
 
 ![](images/Pointers.016.png)
 
 #### System Interface of a Related List Item
 
-An additional aspects, that apply to a **Related List Item** is:
+An additional aspects, that apply to a __Related List Item__ is:
 
-**Reference**
+__Reference__
 
 ##### The Full System Interface for Related Item
 
@@ -394,7 +394,7 @@ An additional aspects, that apply to a **Related List Item** is:
 
 #### 'Use' Command Gets Another Aspect
 
-The **Use Reference As Object** command is part of the **Object** aspect but **Gets** the **Reference** aspect. The **Use Reference As Class** command is part of the **Class** aspect, but **Gets** the **Reference** aspect.
+The __Use Reference As Object__ command is part of the __Object__ aspect but __Gets__ the __Reference__ aspect. The __Use Reference As Class__ command is part of the __Class__ aspect, but __Gets__ the __Reference__ aspect.
 
 ## Pointer Assignment
 
@@ -404,12 +404,12 @@ Next to assigning one object reference’s object to another object reference, y
 
 Pointer assignments establish a pointer-to-pointer. Instead of assigning a target object to the reference, you assign a reference to the reference. This creates a *pointer-to-pointer*, instead of a direct reference to an *object*. This allows another object reference to decide which object is eventually pointed at.
 
-A pointer assignment always has a **Reference** as a source, not its **Object**, not its **Class**, but the **Reference** itself.
+A pointer assignment always has a __Reference__ as a source, not its __Object__, not its __Class__, but the __Reference__ itself.
 
 A pointer assignment is displayed with an arrow inside the diamond.
 
 
-|**Object Pointer Assignment:**|
+|__Object Pointer Assignment:__|
 | :-: |
 ||
 |![](images/Pointers.018.png)|
@@ -424,7 +424,7 @@ A pointer assignment is displayed with an arrow inside the diamond.
 Pointer assignment also works for class assignment. You can use a reference as a class, instead using an object itself as the class:
 
 
-|**Class Pointer Assignment:**|
+|__Class Pointer Assignment:__|
 | :-: |
 ||
 |![](images/Pointers.021.png)|
@@ -443,7 +443,7 @@ If something is already a pointer-to-pointer and it is the source of a conventio
 So a conventional object assignment can also have the following implementations:
 
 
-|**Object Assignment:**|
+|__Object Assignment:__|
 | :-: |
 ||
 |![](images/Pointers.024.png)|
@@ -452,10 +452,10 @@ So a conventional object assignment can also have the following implementations:
 |![](images/Pointers.025.png)|
 |<p>Object Get ß  (~= Use Reference As Object ~= Reference Get) </p><p>Object Set à  (~= Set Object to Other Related List Item)</p>|
 
-Assignment when source is pointer to pointer also works for the **Class** aspect:
+Assignment when source is pointer to pointer also works for the __Class__ aspect:
 
 
-|**Class Assignment:**|
+|__Class Assignment:__|
 | :-: |
 ||
 |![](images/Pointers.026.png)|
@@ -466,19 +466,19 @@ Assignment when source is pointer to pointer also works for the **Class** aspect
 
 ### Cross-Aspect Assignment
 
-If the source of the assignment is a pointer-to-pointer, then the target also becomes a pointer-to-pointer. So this also gives **Reference Class to Object** assignment the following implementations:
+If the source of the assignment is a pointer-to-pointer, then the target also becomes a pointer-to-pointer. So this also gives __Reference Class to Object__ assignment the following implementations:
 
 
-|**Reference-Class to Object Assignment**|
+|__Reference-Class to Object Assignment__|
 | :-: |
 |![](images/Pointers.028.png)|
 |<p>Reference-Class Get ß  (~= Other Related Item Class Get)</p><p>Object Set à  (~= Other Related Item Set)</p>|
 |*Result:*|
 |![](images/Pointers.029.png)|
 ||
-|**Reference-Class to Object Assignment**|
+|__Reference-Class to Object Assignment__|
 |![](images/Pointers.030.png)|
-|<p>**Reference-Class Get ß  (~= Other Related List Item Class Get)**</p><p>**Object Set à  (~= Other Related List Item Set)**</p>|
+|<p>__Reference-Class Get ß  (~= Other Related List Item Class Get)__</p><p>__Object Set à  (~= Other Related List Item Set)__</p>|
 |*Result:*|
 |![](images/Pointers.031.png)|
 
@@ -490,7 +490,7 @@ If the source of the assignment is a pointer-to-pointer, then the target also be
 
 ### System Interface Call
 
-**Use Reference As Class**
+__Use Reference As Class__
 
 ![](images/Pointers.032.png)
 
@@ -500,9 +500,9 @@ If the source of the assignment is a pointer-to-pointer, then the target also be
 
 ![](images/Pointers.033.png)
 
-**Use Reference As Class ß**
+__Use Reference As Class ß__
 
-**(Class Set à)**
+__(Class Set à)__
 
 (has assignment notation)
 
@@ -608,7 +608,7 @@ It happens a lot that you want to find out the object and the type in one blow. 
 
 ![](images/Pointers.041.png)
 
-The last symbol in the redirection altogether is the target type (**C**). The last symbol pointed to by an object line is the object (**O**). Note that the target type may be pointed out by an object line.
+The last symbol in the redirection altogether is the target type (__C__). The last symbol pointed to by an object line is the object (__O__). Note that the target type may be pointed out by an object line.
 
 ![](images/Pointers.034.jpeg)
 

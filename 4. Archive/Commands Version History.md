@@ -1,7 +1,7 @@
 ﻿Commands article group versions
 ===============================
 
-|**Version**|**Description**|
+|Version|Description|
 | :- | :- |
 |2007-09-18 00|Preliminary implementation of methods in Creator 2.0|
 |2007-12-09 XX||
