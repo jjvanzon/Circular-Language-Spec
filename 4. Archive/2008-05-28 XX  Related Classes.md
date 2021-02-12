@@ -4,12 +4,14 @@ Also for later:
 
 Funny enough, in this setting, a collection can be set to have multiple classes, which allows items of all those classes to be added to the collection.
 
-#######
 ####### **Class . RelatedClasses**
+
 This collection of **RelationClasses** contains all the classes related to it. If a **Relation** is not **Dual**, then the class unaware of its relation counterpart will not have its counterpart registered in its **RelationClasses**.
 
 You can’t add **RelatedClasses** to this collection. You have to define relations in the **Structure.Relations** collection and they will be *reflected* in the **Class.RelatedClasses** collection.
+
 ##### ***Reflecting Relations in Class.RelatedClasses (not Synchronizing)***
+
 After a long think and sleeping on it, I’ve decided the following.
 
 I’ve decided that you only edit relations through the **Relations** collection and not through the **Class.RelatedClasses** collection. You ***can read*** the relations through the **Class.RelatedClasses** collection, but you can’t edit them there.
@@ -46,7 +48,9 @@ being dual.
 Add or remove of RelatedClasses are Friend, so a programmer can’t do that.
 
 If you call RelationClass.Class through Class.RelatedClasses, then that should have the same effect as setting it through relations. I can’t really see the effect it would have, but I think it’s not harmful. Dang, my brain isn’t capable of doing complicated things at the moment
+
 ###### **Brainstorm**
+
 - Toch wil ik relaties kunnen specifieren binnen een klasse. Zie het instellen van de relaties van Code . Visual Basic . Module met zijn sub objecten.
   Misschien kan ik een eenvoudige oplossing bedenken om het voor een geval als dat makkelijker te maken.
 

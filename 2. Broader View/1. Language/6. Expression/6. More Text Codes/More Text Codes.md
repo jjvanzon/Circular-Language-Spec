@@ -2,6 +2,7 @@
 =================
 
 ## **More Text Codes**
+
 *More Text Codes* actually encapsulates a large number of sub-modules. It wraps together everything regarding other text codes. They are wrapped together, to not overshadow the other sub-modules of *Code*.
 
 The *More Text Codes* documentation folder is genuinely a throw-together of ideas, put into a structure. It needs a lot of work to become good documentation yet.

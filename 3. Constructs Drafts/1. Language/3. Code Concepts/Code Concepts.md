@@ -1,6 +1,9 @@
-﻿|<h1>***Computer Language***</h1>|
-| :- |
-## **Coding Concepts**
+﻿Computer Language
+=================
+
+Coding Concepts
+---------------
+
 This documentation folder explains how basic coding concepts are implemented inside the new computer programming language: concepts such as input output, conversions and identifiers. Each concept might be explained in the form of a story as well as a diagram notation. About 50% of the concepts are well-described. Most of those made it into the Circle Language Spec. They draw out a good picture of what the language looks like and how the diagram notation is applied. About 50% of the concepts is not adequately described yet or did not make it into the Circle Language Spec. Those are put here in Circle Construct Drafts.
 
 The documentation folder contains the following sub-folders. Each folder covers a main concept.
@@ -30,6 +33,3 @@ This folder contains all the articles, for which a proper place was not found ye
 ### *Summary*
 
 In the future, the *Summary* documentation folder should contain a summary of all the coding concepts introduced. It is supposed to be a quick-reference card of all the concepts, with the textual and diagram notation next to it, without any further explanation. The whole language will be displayed in this overview. The summary is not made yet, and will be created when the design of the new computer language is more complete.
-
-
-*Author & Copyright: Jan-Joost van Zon        Date: May 5, 2009 – June 18, 2009        Location: Oosterhout, The Netherlands        Status: Finished*

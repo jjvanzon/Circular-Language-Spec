@@ -17,6 +17,3 @@ The development version of the *Basic Math* documentation is fairly readable and
 
 …
 
-
-*Author & Copyright: Jan-Joost van Zon        Date: January 8, 2011 –  January 8, 2011        Location: Oosterhout, The Netherlands        Status: Under Construction*
-

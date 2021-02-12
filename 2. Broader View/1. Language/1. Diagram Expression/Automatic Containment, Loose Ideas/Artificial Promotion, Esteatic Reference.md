@@ -1,8 +1,8 @@
 ﻿Ideas
 =====
 
-
 ####### **Artificial Promotion**
+
 Objects automatically put on a lower level, because of deeper usage, can artifically be promoted to a higher level, by creating a reference to it from a higher object, for estaetic reasons, related to it having great significance on a higher level. (this doesn't have to result in an object reference being put on every level in between.)
 
 A compiler could generate a warning about such an unused reference, unless you actively type the reference as being estaetic.

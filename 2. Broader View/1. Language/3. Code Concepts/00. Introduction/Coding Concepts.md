@@ -2,6 +2,7 @@
 =================
 
 ## **Coding Concepts**
+
 This documentation section covers all the coding concepts and principles of the new computer language.
 
 Some of the principles have to be implemented inside the code base. Most of the concepts can be implemented merely as a *concept* construct, using the new computer language itself.
@@ -42,12 +43,9 @@ Many of the coding concepts are just as elementary to computer programming as co
 
 On top of that: when developing the code base, you will determine how much can be banned out of the code base, and only programmed within the new computer language itself. As the concepts are described here functionally, it is not as important to determine which ones have to be part of the code base and which ones can be left out.
 
-*Author & Copyright: Jan-Joost van Zon        Date: July 13, 2008 – October 3, 2008        Location: Oosterhout, The Netherlands        Status: Finished*
-
-
 ### **Ideas**
-*The texts below are loose ideas, yet to be turned into good documentation.*
 
+*The texts below are loose ideas, yet to be turned into good documentation.*
 
 
 Process Control

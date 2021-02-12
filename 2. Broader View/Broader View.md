@@ -25,7 +25,3 @@ Most documentation is not written yet. The development version of the *Basic Mat
 
 
 These things are enough to make the *Circle* language useful for accessing many computer systems. 
-
-
-*Author & Copyright: Jan-Joost van Zon        Date: January 7, 2011 –  January 10, 2011        Location: Oosterhout, The Netherlands        Status: Finished*
-

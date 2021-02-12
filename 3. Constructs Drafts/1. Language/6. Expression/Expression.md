@@ -27,6 +27,3 @@ Traditionally, the systematics of a program are expressed by means of text code.
 The articles in the *Text Code* documentation folder are not finished. They are mostly a throw-together of ideas. The exact way the textual code is going to look is not yet determined, because it was more important to work out the language conceptually along with its diagram notation, than it was to work out the textual notation. The general idea, though, is that each language element’s textual representation is considered its *literal*, that can be read out and assigned. However large the construct, the text code that represents it is still just a literal, be it composed of the literals of its sub-constructs. This is just an idea, but it might be the way to go.
 
 The working version 2.0 of the new computer language has a text code, but is very basic, for version 2.0 was kept very basic: it was just a proof of concept.
-
-
-*Author & Copyright: Jan-Joost van Zon        Date: May 20, 2009 – May 20, 2009        Location: Oosterhout, The Netherlands        Status: Finished*

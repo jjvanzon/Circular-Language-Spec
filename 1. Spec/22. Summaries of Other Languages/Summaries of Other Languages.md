@@ -5,7 +5,9 @@ Summaries of Other Languages
 ----------------------------
 
 This document contains summaries of other languages, mainly C and C++, in the form of bulleted lists. They were made around the year 2004 during an analysis of the grammar of C and C++ to compare them to the new computer language.
+
 ### **C**
+
 *A summary of Msdn Library Visual Studio July 2000: C Language Reference*
 
 - Identifiers
@@ -92,7 +94,9 @@ This document contains summaries of other languages, mainly C and C++, in the fo
     - arguments
     - call with variable number of arguments
     - recursive function
+
 ### **C++**
+
 *A summary of Msdn Library Visual Studio July 2000: C++ Language Reference*
 
 I reorganized the information into the following main topics:
@@ -416,6 +420,7 @@ typedef
   - asm
 
 #### **Unclassified**
+
 - Microsoft specific
 
 allocate3 \_\_inline property
@@ -450,7 +455,9 @@ Other Software System components replace functionality of Standard libraries, bu
 Formal arguments are the variables  inside the function as opposed to the values given in the function call.
 
 Concepts
+
 ### **Other**
+
 I don’t summarize Com, because it doesn’t really add any programming concepts, but mainly only libraries. I don’t summarize Visual Basic, because it doesn’t really add any concepts to… oh, I do need Visual Basic and Com, for the events and stuff… shit. And properties, and all. Many Visual Basic and Com concepts have no place in this programming language, but in other modules.
 
 Com concepts: components, interfaces.

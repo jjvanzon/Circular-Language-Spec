@@ -17,7 +17,3 @@ The hope is, that the input-output dependency, or *outcome dependency*, will off
 ### *Concurrency*
 
 Concurrency occurs when several running processes or users access the same data at the same time. This can result in several problems. There are several candidate mechanisms to solve concurrency problems. Which is the best one is yet to be determined. In this documentation folder you will find a lot of ideas about it, but the documentation is under construction. Look inside the article *Internet As A Single Computer* for a better description of the problem. The *Input Output* concept may offer a method to resolve concurrency issues in the future as well.
-
-
-*Author & Copyright: Jan-Joost van Zon        Date: January 7, 2011 –  January 9, 2011        Location: Oosterhout, The Netherlands        Status: Finished*
-

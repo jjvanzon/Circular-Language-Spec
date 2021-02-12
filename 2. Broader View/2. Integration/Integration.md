@@ -46,9 +46,6 @@ Furthermore, a lot of software is dependent on API’s. When software is made, a
 Perhaps later other types of systems to integrate with will come to light. That is why this folder is put at the end: as a placeholder for possible future folders.
 
 
-*Author & Copyright: Jan-Joost van Zon        Date: April 25, 2009 – January 11, 2011        Location: Oosterhout, The Netherlands        Status: Finished*
-
-
 Ideas
 ------
 

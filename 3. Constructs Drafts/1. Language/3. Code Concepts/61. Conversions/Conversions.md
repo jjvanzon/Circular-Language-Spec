@@ -5,10 +5,11 @@ Conversions
 ------------
 
 ## **Ideas**
+
 *The texts below are loose ideas, yet to be turned into good documentation.*
 
-
 ##### ***Conversions***
+
 If the State isn’t assigned to the same type then a conversion must take place. The target type for the state assignment must define the conversion and this conversion is bound to the state source type; for each state source type, the state target type must define a conversion. If the conversion isn’t defined then it’s not possible to assign a state of that type.
 
 Conversions can also be cast explicitly rather than being automatically performed on state assignment.
@@ -17,9 +18,13 @@ Conversion procedures are considered system procedures as well. One type can def
 
 
 < If you want to convert a number to text then the text object should define the conversion for all this stuff. Hmm… mayve the source object should be able to define the conversion too >
+
 ###### **Conversions Aren’t Create Procedures**
+
 This comment is made because in the C++ programming language, conversion procedures *are* alternative create procedures. A conversion does not involve the creation of an object. A conversion is the assignment of new values to an existing object, values that are based on the values of an object from a different type.
+
 ##### ***More Ideas***
+
 Conversion,
 
 2009-05-12

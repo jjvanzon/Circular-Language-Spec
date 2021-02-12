@@ -64,7 +64,9 @@ For an object to have a reference to a command, you *have to* be able to define 
 If you want to do that, you *have* to implement commands as a concept.
 
 A command itself can also contain related command references, which are then considered parameters of the command.
+
 ##### **Ideas**
+
 Commands,
 
 Zo uit de losse pols verzin ik nu, dat een command een object is, waarvan de procedure in de constructor zit.
@@ -72,7 +74,9 @@ Zo uit de losse pols verzin ik nu, dat een command een object is, waarvan de pro
 
 
 JJ
+
 #### ***Classes & commands loosely coupled as relations between commands and objects***
+
 Parameters are the essential connection between commands and objects. If I can use a line merge in bidirectional relations between classes, does that mean that a line merge between a command parameter’s class line and a class command’s definition line should be considered a bidirectional relation between a class and a command? Should that be viewed more like a relationship, than anything else?
 
 When a command definition gets an object with a class, this creates a relation between the command and the class definition. This means, that the class definition also gets a reference back to the command.
@@ -98,7 +102,9 @@ But command as a concept, as a way to establish interchangability between class 
 How that is established by command as a concept is yet to be determined.
 
 Automatic Containment for Relations is still a problem. Line merges for relations between commands and objects may have the same problem. I didn’t account for that earlier. A good example of this problem is yet to be drawn out.
+
 ##### **Giving the issues in this section a place**
+
 Issues about casts need to be moved to the article Events. Also move changes to classes or commands to the article Events, as a primary example for the application of events.
 
 Classes & commands loosely coupled needs to be adapted.
@@ -110,11 +116,15 @@ An object's references to its commands are not imaginary.
 Subdividing the commands from different site into different interfaces of an object, is a separate issue to address.
 
 Still ignore, that also for relations between objects and commands the diagram notation has discrepancies with the diagram notation of automatic containment.
+
 #### ***Downput***
+
 Next to the terms input, output and throughput, the term downput will be introduced. Downput is intermediate data as a helper of a process, that will eventually produce output. Temporary variables, local variables. They are all downput. Actually, in the method-call structure, a method in which output data is disposed, this output as become downput.
 
 The term downput is good, because it is only passed *down* into sub-commands. And it is dropped after the parent command is done (dropped *down*). It is ‘put down’ / rejected after the execution. Or put down / to put something down, that you had in your hand.
+
 #### ***Read-Write Direction As A Connection***
+
 Formerly, the direction of input and output was indicated with an access mark on a reference line. But this created ambiguity with the indication of *reference targets*. Read-write direction is something so basic in computer language, that it deserves a separate line type. From now on, value direction will be indicated by a *wavy line*.
 
 This is actually a good symbol for it, because it looks like a less direct connection than the other line types and *it is* a less direct connection. In fact, the two symbols *aren’t* connected at all. The wavy line looks like a less direction connection, because the complete length of the line, curves and everything, is much longer than a straight line. A wavy line also indicates *heat*, or activity, more than the other line types. Value direction is an *action*.
@@ -128,8 +138,11 @@ When values are yielded over between sub-objects, then this is drawn out with a 
 Sometimes the command itself does not read or write from a parameter, but the parameter is passed to a sub-command, that reads or writes from the object. This yields over the in-out-thru properties of the parameter. This does give the parameter an indication of value direction, just no assignment is visible in the definition of the command. The assignments are done by a sub-command.
 
 It is not clear yet if it is best to also use value direction to indicate addition, removal, creation and annulment of objects.
+
 #### ***Input, output, throughput, downput***
+
 ##### **Introduction**
+
 Input, output and throughput are parameter passing types.
 
 They are shortened to **In**, **Out** and **Thru**.
@@ -275,8 +288,11 @@ Here is a list of the parameter passings, with their short names, and their diag
 The reason why it is important to keep understanding the three aspects of parameter passing, is that **Rerefence** parameters, even though they can be **In**, **Out** or **Thru**, are always *input* in a way, because it is a reference passed from the parent command to the sub-command.
 
 **Value In** and **Value Out** means reading and writing done by de caller. **Reference In** and **Reference Out** means reading and writing done by the called command. In both cases **In** does mean, that the called command *uses* something, and **Out** means, that the called command returns something.
+
 ##### **Parameter Passing Type Details**
+
 ###### *By Value*
+
 Passing a parameter by value means, that the input or output is *copied* to or from the parameter object.
 
 Parameters passed by value are really only useful for smaller amounts of data, that might be changed, but you don’t want the change to affect the original object. For an object, that only stores one value and that’s it, is is easy to just copy the value. For more complex objects, the question is, to what depth you are going to clone it. The cloning depth may be dependent on the parameter usage inside the command. Please only use passing a parameter by value for simple objects. 
@@ -306,7 +322,9 @@ The complicated notation:
 (the arrows are pointing to the references invisible earlier)
 
 But this still does not tie the source and target symbols together.
+
 ###### *By Reference*
+
 Next to passing a parameter by *value*, you can also pass a parameter by reference. For instance: instead of copying a value to an input parameter, you give the command a reference to an object outside the command.
 
 Reference parameter:
@@ -324,7 +342,9 @@ So the parameter points to another pointer. The target pointer determines the ev
 The notation of a parameter as a pointer to a pointer, though, may become an implicit expression of just an object assignment.
 
 In earlier programming languages one use of by reference was used to be able to pass large objects to a procedure. Another use was to be able to let the procedure have multiple return values, because in other programming languages a procedure can really only have one return value. In the new computer language, multiple return values is accomplished by having multiple **Object Out** parameters. So you do not need **Reference Out** parameters for that anymore.
+
 ###### *Value In*
+
 A **Value In** parameter passes a value from an object to the parameter of a command. A **Value In** parameter is an object inside the command call, that is created right before the command is invoked, and a value from another object is then assigned to the parameter, before the command is run.
 
 The command can manipulate the **Value In** parameter without affecting the original object.
@@ -346,7 +366,9 @@ A diagram of a command definition with a **Value In** parameter:
 Or:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.018.png)
+
 ###### *Value Out*
+
 A **Value Out** is a value produced by a command, that is yielded over to another object after the call is done. A **Value Out** output parameter is an object inside the command call, that is created right before the command is invoked. The parameter is written to by the command or by one of its sub-commands. The value of the output parameter is copied right after the call, assigning the value to another object.
 
 Output values are parameters, that are not assigned before the call, but only read from after the call.
@@ -368,7 +390,9 @@ A command definition with a **Value Out** parameter:
 Or:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.022.png)
+
 ###### *Value Thru*
+
 Throughput by value is when a by value parameter is first written to, then changed by the command, and then the value of the parameter is read from again, and assigned to the original object.
 
 A **Value Thru** parameter works best for a simple object, that stores a single value, but might also work for more complex objects, with more than just a single value, but that will require specifying a cloning depth, and comes with all sorts of downsides. See *By Value*.
@@ -390,7 +414,9 @@ Command definition with a **Value Thru** parameter:
 Or:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.026.png)
+
 ###### *Reference In*
+
 A **Reference In** parameter can be used to assign a reference to a complex object as the input of the command.
 
 Because a **Reference In** parameter is input, the called command can only *read* out of the object, that it was given a reference to.
@@ -410,7 +436,9 @@ Command definition with a **Reference In** parameter:
 Or:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.030.png)
+
 ###### *Reference Out*
+
 A **Reference Out** parameter can be used to assign a reference to a complex object to which a command writes output.
 
 Because a **Reference Out** parameter is output, the called command can only *write* to the object, that it was given a reference to.
@@ -436,7 +464,9 @@ In a sense, a **Reference *Out*** parameter is actually *through*put.
 When output is alteration of an existing object, it could be considered throughput, even though there is only *written* to the object, and nothing is *read* from the object, it is still an object passed *through* the command.
 
 A by reference parameter can not change the target object of the parameter or overwrite the target symbol of the reference parameter with a new object. Returning a new object or another existing object is reserved for the **Object Out** parameter.
+
 ###### *Reference Thru*
+
 A **Reference Thru** parameter can be used to assign a reference to a complex object, from which input is read and output is written to.
 
 A **Reference Thru** parameter is a pointer to something outside the command. The object pointed to both read from and written to. 
@@ -456,7 +486,9 @@ Command definition with a **Reference Thru** parameter.
 Or:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.038.png)
+
 ###### *Object Out*
+
 An **Object Out** parameter is an object that resides inside the command. The **Object Out** may be a new object, or redirect to an existing object. Anyway, the command determines which object will be output. The produced object will be referenced from outside the command.
 
 Unlike parameters passed by reference, an **Object Out** parameter is *referred to*. This is an exclusive aspect of the **Object Out** parameter passing type.
@@ -474,8 +506,11 @@ A diagram of a command definition with an **Object Out** parameter:
 Unlike **By Reference** and **By Value** parameters, there are no three variations for parameters referred *to*. The reason ‘**Object**’ parameter passing does not have three variations, like the **Value** and **Reference** parameter passings, is that the command’s reading and writing values to the object is irrelevant to the *parameter passing*. **Object Out** does not have anything to do with whether the command call reads or writes from the object it outputs. That is irrelevant to the parameter *passing*.
 
 A reference to an **Object Out** parameter causes an implicit run of the command, because a command can not return anything unless it is run. A reference to an **Object Out** parameter copies the target object of the parameter. It can’t permanently refer directly to the parameter, because nothing really exists inside the call unless the call is running.
+
 ##### **Issues**
+
 ###### *Parameter Passing Notations Are Implicit*
+
 A reference parameter is assigned an object.
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.041.png)
@@ -501,7 +536,9 @@ It does not display which specific values are read or what the read value is cop
 It is an abstract display, not an implicit display.
 
 < 2008-07-06 Any connection to or from a parameter is not really a statically present connection; it is an assignment, that is executed by the parent command on demand. >
+
 ###### *Can’t reference each parameter*
+
 You can’t just reference each parameter. You can only reference a parameter when it is **Object Out**.
 
 If a parameter is for instance **Reference Thru**, it can only point *to* something, but you can’t *refer to* a **Reference Thru** parameter. You can only *give it* a reference.
@@ -513,7 +550,9 @@ The caller can not redirect the **Object Out** parameter. The call itself may be
 If the caller wants all the object symbols to represent the same object, it should do it for instance like this:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.044.png)
+
 ###### *Transfer of indirect values*
+
 Something is input, output or throughput when values are read from it or written to it. But it does not need to be the value of one object being written to another object. It can also be values of sub-objects that are yielded over from one object to another. In that case, the parent object is considered input or output parameters, even though only the values of its sub-objects are used.
 
 For **By Value** parameters an indirect value transfer means, that the input or output object is cloned to a certain containment depth, whereas a direct value transfer means, that only the direct value of the input or output object is copied.
@@ -547,7 +586,9 @@ This adds another aspect to the parameter passing types. This gives the paramete
 \- **By Value** / **By Reference** / **Object Out**  (reference situation)
 
 \- **Direct** / **Indirect**  (value usage)
+
 ###### *Input / output not always values*
+
 Output is not always the assignment of a value, though. Output can also be the creation of an object, or addition of objects to a list. Output can also be assigning **Nothing** to an object reference, or removing objects from a list. It can also be the assignment of an object to an object reference.
 
 Creation, addition, annulment, removal and object assignment are considered *indirect* value transfers. Ofcourse it is not really a *value* transfer, but it *is* output. Creation, addition, annulment, removal and object assignment only applies to output. So creation, addition, annulment, removal and object assignment specifically applies to **Indirect Reference Out** parameters.
@@ -555,7 +596,9 @@ Creation, addition, annulment, removal and object assignment are considered *ind
 However, input can also be merely accessing a sub-object to go to the next object. So input is also not always *value* transmission. That non-value transmission applies to **Indirect Reference In** parameters.
 
 All in all, non-value transmissions apply to **By Reference** parameters only.
+
 ###### *Parameters of calls directly tied together*
+
 In other programming languages, sub-commands do not directly read or write to eachother’s parameters. Parameters are only read or written by the parent command.
 
 However, in the new computer language, parameters of sub-commands can be tied together directly.
@@ -667,7 +710,9 @@ input output can also be between a sub-commands parameter and a sub-object of th
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.062.png)
 
 The parameter of command **A** is a **Value Out** parameter that writes to object **O**. The parameter of command **B** is a **Reference Out** parameter that connects to object **O**. The parameters of command **A** and command **B** are not directly tied to eachother, but they do indirectly related to eachother. This will be further elaborated in *Automatic Execution Order*.
+
 ##### **Further parameter passing stereotyping**
+
 Comtemplations about further thru parameter passing stereotyping will be postponed.
 
 The thru parameter passing type can be further split up in *affected*, *used & affected*, *transformed*, *transformed same value*, *used & affected & transformed* and *used & affected & transformed same value*.
@@ -727,7 +772,9 @@ Value Thru, Affected does not make sense. You’d give a parameter an initial va
 \- Reference Thru, Used & Affected & Transformed
 
 < When throughput it is affected and used, values are read and written from it to manipulate or coming out of other objects. When throughput is transformed, the values written to the throughput object were derived from values first read from the throughput object. >
+
 ###### *Brainstorm*
+
 Do I really need to stereotype this many subtile variations? Isn’t the fact that it is thru enough to tie everything together?
 
 This whole section in, out, thru is getting out of hand.
@@ -737,9 +784,13 @@ It was supposed to be simple. It wasn’t even there at first.
 I have to simplify the story, keeping the split up in affected, used, transformed and ‘same value’ a detail
 
 Then I need to work out the subjects under the assumption, that you only need to be concerned with in, out and thru.
+
 ###### *Same Value*
+
 < Perhaps when it is the exact same variable that’s read and written, this should be stereotyped in a different way as well. It is transformed, but then specific values are both used and affected. Transformed where one part of the object is used, to affect another part of the object, is also transformation, but less rigorous, so perhaps you do need some sort of stereotyping for that. >
+
 ###### *Throughput variations*
+
 < combinations:
 
 not affected, not used, not transformed
@@ -791,9 +842,13 @@ used & transformed
 affected & transformed
 
 affected & used & transformed
+
 ###### *Value Thru, affected*
+
 Does not make sense. You’d give a parameter an initial value, that does not get used, but will be overwritten.
+
 #### ***Automatically determining what’s in, out or thru***
+
 The terms input, output, throughput and downput were discussed earlier. Here it is discussed how to automatically determine whether a parameter is in, out, through or downput.
 
 Input, output and throughput has to do with value assignment, but also reference-assignment and other types of assignment, and also other machine instructions that perform a read-write operation.
@@ -821,7 +876,9 @@ Only when programming a new version of a system, you can decide to possibly link
 A question for versioning is: when will a version of a command be created? On every change? Or will there be key moments at which an author publishes the new version of the command. These are issues for Versioning, which falls under the Editing & Authoring concepts.
 
 Versioning of commands can prevent huge casts of changes to input, output or throughput configuration, or at least limit it in size. Only when defining a new call, you have to look at the called command to see if this changes the in, out, thru configuration of the currently edited parent command definition.
+
 ##### **Giving the issues in this section a place**
+
 The ideas about versioning need to be moved to the article *Versioning*.
 
 The ideas about event casts should be moved to the article *Events*. 
@@ -829,13 +886,19 @@ The ideas about event casts should be moved to the article *Events*.
 You should only *refer* to those articles, even when the articles are not not finished.
 
 The rest is all part of automatically determing in-out-thru.
+
 #### ***Automatic Execution Order***
+
 The first thought was, that the execution order of sub-commands could be automatically determined, based connection between parameters and objects, and whether parameter is **In**, **Out** or **Thru** and **By Reference**, **By Value** or **Object Out**. But this is not true.
+
 ##### **Parameters tied together**
+
 When the parameters of two commands are directly tied together, it is not hard to determine the order in which to execute the commands. Parameters can only be directly tied together to eachother in a limited number of ways, so that makes it quite easy. One parameters is output, that is used as input for another command. A consultation of a command requires the command to run. The sub-commands have a direct dependency on eachother and a command requires its dependencies to run first.
 
 < Pictures >
+
 ##### **Parameters tied to objects**
+
 However, parameters can also be tied to sub-objects of the parent command.
 
 < Picture >
@@ -845,13 +908,17 @@ If parameters of different commands are tied to the same object, and they are al
 But if one of them is an output parameter, then it is a question whether the input parameter wants to use the changed value or the original value of the object. So in that case the order should be manually indicated.
 
 < Pictures >
+
 ##### **Outcome dependency**
+
 If a reading sub-command is dependent on the outcome of a writing sub-command, then you have to manually indicate the execution order, so that the writing command runs before the reading command. The indication of execution order in that case is sort of like indicating an *outcome* dependency. If you want the original value, you can indicate the execution order, drawing out, that the reading command should run first, which is like a negative statement of outcome dependency.
 
 *Outcome dependency is exchangable with execution order.*
 
 Multiple things may be dependent on the outcome of a command, which means that the writing command might have multiple next-command indications. That’s right. The dependencies could all run in parallel. From this dependency can be derived, that some things can be run in parallel, and some things have to run in a serial order.
+
 ##### **Accessing parameters’ sub-objects**
+
 An object inside the parent command has sub-objects. From the parameter you can’t tell whether the object itself is written or an object 10 levels deep is written. 
 
 < Picture >
@@ -859,9 +926,13 @@ An object inside the parent command has sub-objects. From the parameter you can�
 With reference parameters, changes and consults can be at any depth. Any object indirectly links to any other object in the world, so passing an object as a parameter makes basically any other object around the world accessible to the command. So basically anything could be changed by a command.
 
 That used to be one argument in the claim, that automatic execution order is impossible, but help is on the way…
+
 ##### **Specific data unknown**
+
 Another argument against automatic execution order is, that from a command *definition*, you still don’t know what specific data will be processed. This is because the parameters of the command are not yet filled in. A command definition does not have any objects assigned to the parameters yet. So it is not clear what exact data will be processed. Command definitions only indicate what *types* of object can be connected to the command, but not what *specific* objects are connected to the command. You only know what specific data is processed when a command has specific object connections. A command only has specific object connections when it actually *runs*. But even though, what a command will change seems pretty volatile, there are possibilities for predictions about what a command will change. Things considering eachother’s changings once a command actually runs, is a concurrency topic, that will be covered in *Concurrency Resolution*, but not in *Automatic Execution Order*.
+
 ##### **Parameters & IO**
+
 Input and output are not the parameters, but what specifically is read or written *from* the parameters. The input and output of a command are not the parameters passed to it, but any piece of data *used* by the command. You just can’t see from the parameter itself exactly what is changed.
 
 In theory there's no telling what a command may read or write, but in practice the amount of things read and written are limited. You can list out what a command reads and changes.
@@ -895,7 +966,9 @@ There must be a limitation in the expression of what is accessed. Perhaps if onl
 What is written and read by a command are actually pre- and post-conditions of the command. 
 
 Only when you are editing a command, the pre- and postconditions of the command have to be determined. The pre- and postcoditions do not change once you’ve published, versioned, the command. Once you are done designing, the input-output configuration will be stored within the command. Remember that the *structural* input and output is different from what a command will actually read and change.
+
 ##### **Compared IO**
+
 In a command definition you only know which *structure elements* a command accesses, and not yet what specific objects. But from the structure elements used by the command, you can already see whether commands *might* be in eachother's way. This opens up possibilities to exclude or confirm, that commands might be in eachother’s way. When parameters of different reading and writing commands are tied to the same object reference and they are accessing the exact same structure elements, you can be pretty sure they will be in eachother’s way. But when you are accessing different object references, you can’t be sure whether accessing *different* object references means accessing *different* objects. The two object references may be referring to the same object all the same. Even though automatic containment of objects would indicate which object references represent the same object, this can not be seen in the diagram expression of a command *definition*, because objects are not filled in yet.
 
 And then you have to look if there is any overlap in what one command writes and the other commands reads. The overlap might prove a possible read-write dependency. The order of the two commands would affect the outcome, so that might prove that you *have to* indicate an outcome dependency or a negative statement of outcome dependency. Or when a *different* object reference of the same class is consulted, that you *might* need to indicate outcome dependency.
@@ -905,31 +978,43 @@ When you don’t consider volatile concurrency, then when sub-commands follow th
 **Command A** can only be outcome-dependent on **Command B**, when some of **Command B**’s output is **Command A**’s input. Input and output of a command are not the parameters, but what is read or written *from* the parameters. For command *definitions*, this means, that outcome dependency can only be indicated for sub-commands that have any possible overlap in input-output.
 
 Building up the outcome-dependency structure of a command is only done in the design stage of the command. The outcome-dependency does not change once you’ve published, versioned, a command with sub-commands. Once you are done designing, the outcome-dependency configuration will be stored within the command.
+
 ##### **IO definition used for security**
+
 This explicit statement of what exactly is accessed, is a great tool for security. A user can actually *see* what a command is changing. In security you have to beware how the command might be faking it.
+
 ##### **Sub-commands**
+
 It is quite easy to see what is directly used by a command, but the command also has sub-commands, that also use certain data. The parent command passes data to the sub-commands.  
 
 What is used by a command is a union of everything directly changed by the command and everything changed by the sub-commands and their sub-commands and so on. And what if the command call structure is recursive? This may impose even more difficulty. It may be a lot of work to gather up everything a command might change, including what their sub-commands might change, and then gather up anything a command might read, and what its sub-command might read.
 
 But the sub-commands already store what exactly they read and write, including what they read and write from *their* sub-commands, so that makes it a lot easier.
+
 ##### **Conclusions**
+
 In the end, automatic execution order is all about manually indicating outcome dependency between commands, instead of *explicitly* defining the execution order. Even connecting parameters together directly is indicating an *outcome dependency*.
 
 Execution order can not be derived, without manually specifying the outcome dependency of sub-commands, because a machine does not know whether you want the altered of unaltered version of an object. But many ideas have been proposed to automate the detection whether commands can be in eachother’s way at all. Outcome dependency can only be indicated for commands, that *could* be in eachother’s way. Commands, that can’t be in eachother’s way can be run in parallel or in an arbitrary order.
 
 That is what automatic execution order is.
+
 ##### **Use later**
+
 Sub-commands indirectly relate to eachother through mutual references to the same object, and what they read or write from that object.
 
 It can be determined, that part of the sub-commands can run independently. If they don’t consult the same data, they can run totally concurrently. Only if things consult the same data, and there is at least one reference that writes to it, then an order must be determined.
+
 ###### *Multiple parameters*
+
 < Things become more complex when commands with multiple parameters start relating to eachother. >
 
 < 2008-07-06 When commands have multiple parameters tied together complexly to other parameters, you have to resolve this in an execution order. >
 
 < By the way: if you use multiple output parameters of a command, how does the consult of the *two* parameters result in a *single* run?> 
+
 #### ***System interface***
+
 There is a paradox.
 
 A command is a special object, that can execute, but an object has system commands. A related item gets system commands. So here I want to replace a real command by an object, that can behave as a command, but an object *must* have system commands in order to function.
@@ -947,7 +1032,9 @@ You have to see fundamental system commands as exceptional.
 It is really not that much of a problem.
 
 Assignments also require calls to system commands. You have to consider that.
+
 #### ***Remaining Ideas***
+
 The implementation of a command is called a procedure.
 
 Parameters,

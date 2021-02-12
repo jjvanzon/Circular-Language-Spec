@@ -33,7 +33,9 @@ Only when programming a new version of a system, you can decide to possibly link
 A question for versioning is: when will a version of a command be created? On every change? Or will there be key moments at which an author publishes the new version of the command. These are issues for Versioning, which falls under the E	diting & Authoring concepts.
 
 Versioning of commands can prevent huge casts of changes to input, output or throughput configuration, or at least limit it in size. Only when defining a new call, you have to look at the called command to see if this changes the in, out, thru configuration of the currently edited parent command definition.
+
 ##### ***Giving the issues in this section a place***
+
 The ideas about versioning need to be moved to the article *Versioning*.
 
 The ideas about event casts should be moved to the article *Events*. 
@@ -42,10 +44,6 @@ You should only *refer* to those articles, even when the articles are not not fi
 
 The rest is all part of automatically determing in-out-thru.
 
-See also: *< List of articles >*
-
-
-*Author & Copyright: <Jan-Joost van Zon>        Date: <May 21, 2008> – <May 22, 2008>        Location: <Oosterhout, The Netherlands>        Status: [ Under Construction | Finished | … ]*
 ## **Ideas**
 
 If anything should change about the Basic Command Topics as soon as you will revise Commands & Classes Loosely Coupled, then you have to redo the Basic Command Topics during a project about Advanced Command Topics.

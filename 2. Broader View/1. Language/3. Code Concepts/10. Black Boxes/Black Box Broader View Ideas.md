@@ -2,7 +2,9 @@
 =================================
 
 ## **Black Boxes Broader View Ideas**
+
 ### ***Side-Issues***
+
 In previous projects the main articles about black boxing were finished, but other subjects were left unfinished. This article contains the unfinished material of some of these topics.
 
 This article contains texts and loose ideas about the following topics:
@@ -16,7 +18,9 @@ Covers how simple black boxing could be made parallel to user access control.
 Addresses mainly the issue why when something is private, programmers get to change everything anyway, no matter how private or inaccessible things are. And why do users not get that privilege and what stops them from getting that privilege.
 
 As said, the texts about these subjects are not finished yet.
+
 #### **Black Boxing and User Access Control**
+
 Access control will be fully managed
 
 by the access control module, even for
@@ -92,6 +96,7 @@ or changing (add and delete symbols.)
 JJ
 
 #### **Programmers and Users**
+
 …  = user access control
 
 privates visible in friends, and in definitions when you have user access to it, so you are a programmer, not a user.

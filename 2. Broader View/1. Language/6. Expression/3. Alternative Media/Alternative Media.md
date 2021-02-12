@@ -2,19 +2,17 @@
 ============================
 
 ## **Alternative Media**
-< Article text >
-
-See also: *< List of articles >*
-
-
-*Author & Copyright: <Jan-Joost van Zon>        Date: 2004 – <May 22, 2008>        Location: <Oosterhout, The Netherlands>        Status: [ Under Construction | Finished | … ]*
 
 ## **Ideas**
+
 # ***Out of the original Symbol documentatoin***
+
 2008-10-09
 
 Consider the different types of literals in Text Code. You can use this literal type subdivision for alternative media too. But the thing is: each concept could get its own type of literal again. Yes, but there are also a few basic ones, the expression of which could facilitate in the expression of anything.
+
 ### **Langauge Integration**
+
 < Chemistry language. Flat or 3D>
 
 < controls are an interactive language>
@@ -46,11 +44,13 @@ When Y = 1 then A is executed
 Maybe I should allow the ‘real language’ text to be used as code too. Eventually.
 
 #### **Brainstorm**
+
 How about … an alternative notation for an object structure… like a simple tree notation.
 
 How about integrating VB and C++?
 
 #### **Other notations**
+
 ##### ***Dimensional Table notation***
 
 |**Object Genericity**|
@@ -80,12 +80,15 @@ How about integrating VB and C++?
 |**Interface Doesn’t Determine Type**|
 ||Interface-type genericity|The fact that the interface never fixes the type|
 ||Interface-procedure genericity|The fact that the procedure interface never fixes the  procedure.|
+
 ##### ***Tree Notation***
+
 You know the kind
 
 But my kind also has convergence… and allows 1/nà1/n distinction or maybe those are other notations yet.
 
 ## **Brainstorm**
+
 Operators:
 
 J Data Information Language is an alternative notation used inside Symbol code. Does it therefore consist of operator functions? And is that then the first operator that is about a more non textual notation a a more graphical one?
@@ -109,10 +112,8 @@ just like the diagrams or text code are a media in which to express
 
 the code and data.
 
-
-
-
 #### **Information Language**
+
 You can express the final database structure in Symbol code and in information language ‘dialects’. Actually it’s no more than a notational choice. Symbol works as a base for information language. Information Language is sort of Symbol with an arrow notation and without multiple encapsulation levels. Information Language as I (part) defined it, totally flattens out the object structure. It hands ideas about flattening out object structure, though.
 
 Ja, het begint zich een beetje in elkaar te schuiven. Information is niet meer dan een Symbol dialect, met een speciale toepassing. Als je in Symbol een flat object, arrow notatie invoert dan heb je information language al bijna. Hmmm… interessant.

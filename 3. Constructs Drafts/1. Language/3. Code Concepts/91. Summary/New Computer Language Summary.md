@@ -4,7 +4,6 @@
 New Computer Language Summary
 -----------------------------
 
-
 Computer Language,
 
 2008-08-06
@@ -14,8 +13,11 @@ In the end, you are going to have to summarize the coding concepts and diagram s
 How about you only give the diagram syntax, if the coding concept actually has its own syntax, not when the diagram expression just functions a clarification of the concept. Then you have all the syntaxes in a list, and you can distinguish derived concepts and uses of a concept from the main concepts, that actually introduce syntax rules.
 
 JJ
+
 ## **Out of the original Symbol documentation**
+
 #### **Summary of Concepts**
+
 <Make this a more extensive topic with a full description of the Symbol language>
 
 <The theory of the Symbol language is a soup of concepts. However, in a book you have to start at one point and gradually explain things one by one, without referring to any unexplained material, even though it’s part of the soup. It was hard to find a point at which to start, and the beginning of the book is definitely not the first part of the book I wrote.
@@ -29,14 +31,18 @@ This summary, though, doesn’t organize Symbol in the order of explaining it an
 Access and Scope are the same subject.
 
 \>>
+
 ##### ***Rough***
+
 - Identifiers
 - Objects
 - Procedures
 - Access
 
 - Generic Code
+
 ##### ***More Detailed***
+
 <<
 
 Overloading can only be part of procedures if you either cannot overload an object or you call a procedure to return an object…
@@ -275,6 +281,7 @@ Generic code:
 Standard Variable Types and Operators are covered in ‘Math’
 
 ##### ***Brainstorm***
+
 Dubious:
 
 pointer to any member of a type (ClassName::\*). Genericity like that.

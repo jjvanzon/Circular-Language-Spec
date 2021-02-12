@@ -1,7 +1,6 @@
 ﻿Circle Construct Drafts
 =======================
 
-
 Object Storage
 --------------
 

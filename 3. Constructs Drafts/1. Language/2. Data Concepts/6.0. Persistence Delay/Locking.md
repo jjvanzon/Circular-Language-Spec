@@ -8,8 +8,8 @@ I have not taken into account in Sy, that
 
 some objects need to be locked, to keep the situation snap-shotted. Locking is not covered yet in J Code
 
-
 ##### ***Locking***
+
 This could create trouble, when a method wasn’t locking all data that was its output. In that case it would be volatile data, that should not be rolled back, because it might have been changed by something else, and that something else would want to keep it changed. You could make it possible to see whether you were the last changer, so you could rollback changes you made yourself. >
 
 < I have a huge problem with locking now. I don’t know how to provide a good locking scheme for now. It is required to let the internet as a single computer function. >

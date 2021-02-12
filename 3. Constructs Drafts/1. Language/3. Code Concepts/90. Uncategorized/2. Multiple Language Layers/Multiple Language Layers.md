@@ -11,6 +11,7 @@
 - …
 
 ##### **Procedural Imposed On Algebraic**
+
 The criteria that are simple types can only be expressed with numbers and all. So simple literals. I accept that.
 
 I already had it clear in my head that the ‘source code’ not only expresses the static structure of the system, but can also hold data in it already.

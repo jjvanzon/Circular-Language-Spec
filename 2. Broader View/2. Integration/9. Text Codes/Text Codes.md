@@ -1,7 +1,6 @@
 ﻿Circle Language Broader View | Integration
 ==========================================
 
-
 Text Codes
 ----------
 
