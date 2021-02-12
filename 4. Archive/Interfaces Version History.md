@@ -8,7 +8,3 @@
 |2010-05-07 XX  0.96|Interfaces|Version far into the project *Work Out Interfaces Articles*, after deleting crossed-out ideas, before splitting up the stories into multiple articles.|
 |2010-05-08 00  1.0|Interfaces|First finished version. Version frozen after the project *Work Out Interfaces Articles*.|
 |XXXX-XX-XX XX  X.X|Interfaces|Development version.|
-
-
-*Author & Copyright: Jan-Joost van Zon        Date: February 17, 2010 – May 8, 2010         Location: Oosterhout, The Netherlands        Status: Finished*
-

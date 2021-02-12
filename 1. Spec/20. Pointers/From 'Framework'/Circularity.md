@@ -27,7 +27,9 @@ The third type of circularity handling is *circularity encountering*. In this me
 The fourth way of circularity handling is called circularity targeting. This adds a method to the involved classes, named **CircularityTarget**. When this method is called in an object part of a circularity, then it will return the circularity target. I have to check the Symbol documentation to see how a target symbol is found.
 
 Ofcourse circularities don’t need to be protected, circularities can be made as soon as somewhere in the relational redirection, an already passed object occurs. This section simply laid out the possibilities in Creator to handle circularities to prevent your program from hanging.
-#### Older Story**
+
+#### Older Story
+
 To completely prevent circularities from forming, though, this procedure only needs to be executed whenever a circularity could be formed: on changing an object reference. To detect a circularity that’s already there, can require a lot of steps, though.
 
 J Sound **Patches** are a good example of objects in which you have to manage circularities. You could say that **Operator** objects may not form circularities. However, just stating what **Classes** can’t form circularities, doesn’t cover it. You have to do with **RelationClasses**. In J Sound **Patches**, when you follow operand relations, you should not eventually encounter the source object. To check if a structure of **Operands** forms a circularity, you have to go by all direct and indirect relations to **Operands** and if you don’t find an object already passed, then no circularity will be formed.
@@ -58,7 +60,9 @@ So there are four types of circularity checking:
 I have to think of better names. Preventing and blocking sound too alike.
 
 Ofcourse circularities don’t need to be protected, circularities can be made as soon as somewhere in the relational redirection, an already passed object occurs. This section simply laid out the possibilities in J Data to handle circularities to prevent your program from hanging.
-## Ideas**
+
+## Ideas
+
 2008-04-26
 
 I would also want to give procedures running over circular object structures, a maximum number of iterations, so that you can let procedures run circularly to a certain extent.

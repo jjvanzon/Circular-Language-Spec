@@ -4,11 +4,11 @@
 Pointer Circularity
 -------------------
 
-## Ideas**
+## Ideas
 
-### Out of the original Symbol documentation**
+### Out of the original Symbol documentation
 
-#### Circularity**
+#### Circularity
 
 Circularity is the case when the redirection eventually leads to a symbol already encountered. 
 
@@ -24,7 +24,7 @@ This is because a bidirection can also be regarded to be two lines, one for each
 
 A circularity can only be the end point of redirection, because you can’t escape from a circularity.
 
-##### Circularity in Tracing***
+##### Circularity in Tracing
 
 Tracing final targets requires following multiple line types to find a single system aspect.
 
@@ -32,7 +32,7 @@ Tracing final targets requires following multiple line types to find a single sy
 
 In a trace, multiple line types can occur in a single circularity. The following sub sections cover the details of circularity in each type of trace.
 
-##### Circularity in a Object-Type Trace***
+##### Circularity in a Object-Type Trace
 
 In object-type tracing, both kinds of line can close a circularity.
 
@@ -52,13 +52,13 @@ If the closed circle consists of only type lines and is pointed to by only a typ
 
 An object trace is the same procedure. The examples above should also clarify circularity in a type trace.
 
-##### Circularity in a Interface Trace***
+##### Circularity in a Interface Trace
 
 All three kinds of object symbol lines can close a circularity in an interface trace. If a circularity is encountered when tracing the interface, the whole circularity represents the interface.
 
 ![](Pointer%20Circularity.007.jpeg "Circularity in Interface Trace")
 
-##### Circularity in a Definition Trace***
+##### Circularity in a Definition Trace
 
 In a definition trace, only one line type is followed, so a circularity there looks the same as earlier explained.
 
@@ -66,13 +66,13 @@ In a definition trace, only one line type is followed, so a circularity there lo
 
 The whole circularity represents the definition.
 
-##### Circularity in a Procedure Interface Trace***
+##### Circularity in a Procedure Interface Trace
 
 Both kinds of procedure symbol lines can close a circularity in a procedure interface trace. If a circularity in encountered when tracing the procedure interface, the whole circularity represents the procedure interface.
 
 ![](Pointer%20Circularity.009.jpeg "31")
 
-##### Circularity in an Execution-Definition Trace***
+##### Circularity in an Execution-Definition Trace
 
 The execution-definition trace is the same process as the execution trace, so this section explains circularity in both of them.
 

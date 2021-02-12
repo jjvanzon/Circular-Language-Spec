@@ -14,9 +14,9 @@ How about you only give the diagram syntax, if the coding concept actually has i
 
 JJ
 
-## Out of the original Symbol documentation**
+## Out of the original Symbol documentation
 
-#### Summary of Concepts**
+#### Summary of Concepts
 
 <Make this a more extensive topic with a full description of the Symbol language>
 
@@ -32,7 +32,7 @@ Access and Scope are the same subject.
 
 \>>
 
-##### Rough***
+##### Rough
 
 - Identifiers
 - Objects
@@ -41,7 +41,7 @@ Access and Scope are the same subject.
 
 - Generic Code
 
-##### More Detailed***
+##### More Detailed
 
 <<
 
@@ -280,7 +280,7 @@ Generic code:
 
 Standard Variable Types and Operators are covered in ‘Math’
 
-##### Brainstorm***
+##### Brainstorm
 
 Dubious:
 

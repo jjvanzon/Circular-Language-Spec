@@ -12,69 +12,69 @@ The Circle language for now is a specification in writing. At the time of this w
 
 The documentation tries to shed light on the following topics:
 
-### Overview*
+### Overview
 
 > This overview, which attempts to summarize each topic. 
 
-### Introduction*
+### Introduction
 
 > Tries to gently introduce this language.
 
-### Basic Diagram Elements*
+### Basic Diagram Elements
 
 > ![](images/Circle%20Language%20Spec%20Overview.001.png)![](images/Circle%20Language%20Spec%20Overview.002.png)![](images/Circle%20Language%20Spec%20Overview.003.png) 
 >
 > Tries to make it a bit more formal with an attempt to give a more or less complete overview over the basic elements that might be seen in the diagrams, like circles, triangles, crosses, squares and lines. This documentation describes what they might mean in the diagrams. Details might follow in later text.
 
-### Objects*
+### Objects
 
 > ![](images/Circle%20Language%20Spec%20Overview.004.png)
 >
 > This documentation aims to describe what objects might be in computer technology and basic concepts about objects. It also tries to shed light on drawing out objects using the Circle diagram notation.
 
-### Classes*
+### Classes
 
 > ![](images/Circle%20Language%20Spec%20Overview.005.png)
 >
 > This documentation attempts to demonstrate the concept of *classes*. A class is sort of like a special object, that aims to describe the characteristics and behavior of other objects. The other objects might select that special object as their class and the idea is that their behavior is then guided by the rules described by that class. The basic ideas may be explained, but the concept of *static* is intended to be worked at a later time.
 
-### Relationships*
+### Relationships
 
 > ![](images/Circle%20Language%20Spec%20Overview.006.png)
 >
 > When an object connects to another object, it is like a relationship between the two is established. This documentation tries to clarify the concept of relationships. Even though objects might relate to an arbitrary set of other objects, the concept might also be about how *classes* set the guidelines for the kinds of relationships objects might have. Relations between classes form a sort of *model* of relationships for objects.
 
-### System Objects*
+### System Objects
 
 > ![](images/Circle%20Language%20Spec%20Overview.007.png)
 >
 > One possible application of how this language might run in practice, is one where systems may be composed of *system objects*. System objects could be the *actual* objects, that a system runs on. Maybe this is a specific use case of the language, but describing it, seems to have allowed more generally usable things fall out. One of the intentions of system objects could be, to manage *relations* between objects. They might also control *system aspects*, such as __Class__, __Interface__, __Execution__ and __Data__. Those aspects could be controlled through *system commands*. The story moves on to assignment commands. The idea is that assignment command copy an aspect from one object to another. The *System Objects* documentation also tries to show connectors, connections and different notational forms to regulate these aspects.
 
-### Commands*
+### Commands
 
 > ![](images/Circle%20Language%20Spec%20Overview.008.png)
 >
 > Commands could be seen as executable objects. Other synonyms for commands might be *methods*, *procedures*, *routines*, *subs* and *functions*. But in the Circle Language Spec those executable objects would be called *commands*. In some programming languages, commands might not be objects, but constructs, that are not exchangeable with objects. But in Circle an attempt is made to see them as objects, that happen to be executable. Commands do seem to have specific behavior. This documentation tries to evaluate this behavior.
 
-### Parameters*
+### Parameters
 
 > ![](images/Circle%20Language%20Spec%20Overview.009.png)
 >
 > Parameters are like instructions passed along with a command that could make the command behave differently. This documentation tries to view parameters as a relationship between commands and objects. It entertains an idea of how *command parameters* and *class methods* might be interchangeable, as if they might be one and the same concept. It is not sure, if this idea will still be in there in the future. Also a diagram notation of commands and parameters is suggested.
 
-### Modules*
+### Modules
 
 > ![](images/Circle%20Language%20Spec%20Overview.010.png)
 >
 > A module would be like a little world in which objects and commands live. A module might be a site, a computer program, a library, a name space or other kind of module. A module may group together functionality or data. A module might be thought of as an object with a special property: something that might be called *global* access to its sub-objects. This is another suggested description of that property: Anything directly inside the module can be directly referenced from anywhere within that module.
 
-### Execution Flow*
+### Execution Flow
 
 > ![](images/Circle%20Language%20Spec%20Overview.011.png)
 >
 > The idea of execution flow statements is that they may regulate the order in which things are executed. Several execution flow statements are proposed. The key examples might be __If__ and __For__ statements. An attempt is made to build up a complete set of execution flow statements, to explore what could be desired from the diagram notation for it.
 
-### Black Boxes*
+### Black Boxes
 
 > ![](images/Circle%20Language%20Spec%20Overview.012.png)
 >
@@ -84,13 +84,13 @@ The documentation tries to shed light on the following topics:
 >
 > In the future, a different black box method might be suggested: more like it is in other programming languages. The friend notation might still be preserved for particular use-cases.
 
-### Interfaces*
+### Interfaces
 
 > ![](images/Circle%20Language%20Spec%20Overview.013.png)
 >
 > This chapter attempts to describe the concept of interfaces along with their diagram notation. Up till now the idea of interfaces was sometimes left out of the stories. This chapter tries to catch up with that. There are also attemps to describe: interface assignment, interface reference and relations that might form through the use of interfaces. As interfaces might be applied to *objects*, interfaces might also be applied to *commands*.
 
-### Events*
+### Events
 
 > ![](images/Circle%20Language%20Spec%20Overview.014.png)
 >
@@ -102,7 +102,7 @@ The documentation tries to shed light on the following topics:
 >
 > The documentation also tries to show, how events look in Circle's diagram notation.
 
-### Inheritance*
+### Inheritance
 
 > ![](images/Circle%20Language%20Spec%20Overview.015.png)
 >
@@ -112,7 +112,7 @@ The documentation tries to shed light on the following topics:
 
 That was the more rounded up documentation. Next an attempt is made to list the documents, that might not be as well polished. The descriptions below, however, might be a rounded reflection on the topics.
 
-### Type Control*
+### Type Control
 
 > ![](images/Circle%20Language%20Spec%20Overview.016.png)
 >
@@ -122,7 +122,7 @@ That was the more rounded up documentation. Next an attempt is made to list the 
 >
 > This documentation folder might have one document, with ideas that are possibly not as well polished, including an original description worked out in a previous version of the design of this diagram notation language.
 
-### Object Resolution*
+### Object Resolution
 
 > ![](images/Circle%20Language%20Spec%20Overview.017.png)
 >
@@ -130,30 +130,30 @@ That was the more rounded up documentation. Next an attempt is made to list the 
 >
 > This documentation might be less smooth. It may contain ideas but partly described, not as refined into polished up text.
 
-### Conditions*
+### Conditions
 
 > ![](images/Circle%20Language%20Spec%20Overview.018.png)
 >
 > An object might set rules for what kind of values may be filled in into it and a command might be given conditions on whether the procedure might be started or not. This might perhaps be done by adding code to a procedure (or for an object, to the __Set__ command). From that code may follow, that depending on certain conditions, the execution of the rest of the procedure is or is not run. That just may have described a low-level way to handle conditions. But conditions could be centric enough in programming, that they might become a construct in the Circle diagram language. A (value) object or command might propose a set of conditions, to evaluate whether the value may be assigned or if the command is allowed to execute. The documentation may be not so rich yet, apart from some loose ideas.
 
-### Object Order*
+### Object Order
 
 > By default, objects inside a collection might be put in an arbitrary order. The *Object Order* concept may allow sorting a list, or putting things in a manually chosen order, and also perhaps a diagram notation for it. This documentation is a collection of ideas, that might be polished up to be made neater.
 
-### Pointers*
+### Pointers
 
 > ![](images/Circle%20Language%20Spec%20Overview.019.jpeg)
 >
 > The intention could be to move pointer-to-pointer related issues from being in more than one place to this chapter. This may or may not have been done yet.
 
-### Misc Diagram Topics*
+### Misc Diagram Topics
 
 > It would be nice if diagrams could be automatically drawn out: if the metrics and positions of the shapes and lines could be automatically done. Suggestions could be found this documentation about aspects of positioning, that might make diagrams look tidier. Also described might be ideas about how colors may be used to express things. This documentation might still be loose ideas from previous versions of descriptions of this Circle programming language.
 
-### Summaries of Other Languages*
+### Summaries of Other Languages
 
 > Attempts to summarize other languages, mainly C and C++, in the form of bulleted lists. They were made around the year 2004 during an analysis of the grammar of C and C++ to compare it to this Circle programming language.
 
-### Previous Version*
+### Previous Version
 
 > The previous version of a description of this programming language.

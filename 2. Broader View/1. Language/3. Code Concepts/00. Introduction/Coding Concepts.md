@@ -1,7 +1,7 @@
 ﻿Computer Language
 =================
 
-## Coding Concepts**
+## Coding Concepts
 
 This documentation section covers all the coding concepts and principles of the new computer language.
 
@@ -43,7 +43,7 @@ Many of the coding concepts are just as elementary to computer programming as co
 
 On top of that: when developing the code base, you will determine how much can be banned out of the code base, and only programmed within the new computer language itself. As the concepts are described here functionally, it is not as important to determine which ones have to be part of the code base and which ones can be left out.
 
-### Ideas**
+### Ideas
 
 *The texts below are loose ideas, yet to be turned into good documentation.*
 

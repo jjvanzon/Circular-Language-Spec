@@ -7,6 +7,3 @@
 |2010-05-14 00  0.9|Events|Totally new story. Version far into the project *Work Out Events Articles 2010-05*, before splitting it up into multiple articles.|
 |2010-05-14 00  1.0|Events|First finished version. Version frozen after the project *Work Out Event Articles 2010-05*.|
 |XXXX-XX-XX XX  X.X|Events|Development version.|
-
-*Author & Copyright: Jan-Joost van Zon        Date: May 10, 2010 – May 15, 2010        Location: Oosterhout, The Netherlands        Status: Finished*
-
