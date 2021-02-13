@@ -40,7 +40,7 @@ This project involves the following:
   - C++ to Symbol
   - Symbol to Basic
   - Symbol to C++
-  - __*Optimization__*
+  - __*Optimization*__
     - Procedural optimization
     - Machine code optimization
 - Symbol View and Interaction

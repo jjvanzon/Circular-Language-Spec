@@ -82,7 +82,7 @@ Value Thru, Affected does not make sense. You’d give a parameter an initial va
 
 < When throughput it is affected and used, values are read and written from it to manipulate or coming out of other objects. When throughput is transformed, the values written to the throughput object were derived from values first read from the throughput object. >
 
-### Brainstorm__
+### Brainstorm
 
 Do I really need to stereotype this many subtile variations? Isn’t the fact that it is thru enough to tie everything together?
 
@@ -94,11 +94,11 @@ I have to simplify the story, keeping the split up in affected, used, transforme
 
 Then I need to work out the subjects under the assumption, that you only need to be concerned with in, out and thru.
 
-### Same Value__
+### Same Value
 
 < Perhaps when it is the exact same variable that’s read and written, this should be stereotyped in a different way as well. It is transformed, but then specific values are both used and affected. Transformed where one part of the object is used, to affect another part of the object, is also transformation, but less rigorous, so perhaps you do need some sort of stereotyping for that. >
 
-### Throughput variations__
+### Throughput variations
 
 < combinations:
 
@@ -152,7 +152,7 @@ affected & transformed
 
 affected & used & transformed
 
-### Value Thru, affected__
+### Value Thru, affected
 
 Does not make sense. You’d give a parameter an initial value, that does not get used, but will be overwritten.
 
@@ -181,9 +181,3 @@ Does not make sense. You’d give a parameter an initial value, that does not ge
 
 
 ![](images/Further%20parameter%20passing%20stereotyping.001.png)
-
-See also: *< List of articles >*
-
-
-*Author & Copyright: Jan-Joost van Zon        Date: July, 2008 – July, 2008        Location: Oosterhout, The Netherlands        Status: On hold*
-

@@ -445,7 +445,7 @@ So one interesting thing about type-interface genericity is that when you’ve s
 
 ###### No Interface Line: Follow Object Line
 
-If there is no interface line, the *object* determines *which* interface of the type* is used, as the pictures below demonstrate.
+If there is no interface line, the *object* determines *which* interface of the type is used, as the pictures below demonstrate.
 
 
 

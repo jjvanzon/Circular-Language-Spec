@@ -225,10 +225,3 @@ The whole idea of a user only ever performing an action by creating an executabl
 So there you have your procedures, that are run volatilily, for which concurrency needs to be managed, and they are now the same as a program. So instant creation of commands, and instant interweaving of command execution order starts here.
 
 JJ
-
-
-See also: *< List of articles >*
-
-
-*Author & Copyright: <Jan-Joost van Zon>        Date: <May 21, 2008> – <May 22, 2008>        Location: <Oosterhout, The Netherlands>        Status: [ Under Construction | Finished | … ]*
-

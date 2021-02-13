@@ -38,6 +38,3 @@ The documentation has not even been begun yet. The folder only contains a text d
 Next to ways to express *any* set of interlinked objects, such as text code, diagrams and tree controls, there are also expressions, that apply to specific *types* of objects. Documents such as pages with text and video files can be opened in the appropriate view. A sound object can be expressed by playing the sound. As such there are user interfaces for specific object types: *Specialized Expressions*.
 
 There is hardly anything inside this documentation folder yet. Specialized expressions have been present inside software forever, but the clear idea of placing it in the context of generally usable expressions and the distinction between generally usable expression and specialized expression is newer.
-
-
-*Author & Copyright: Jan-Joost van Zon        Date: May 20, 2009 – May 20, 2009        Location: Oosterhout, The Netherlands        Status: Finished*

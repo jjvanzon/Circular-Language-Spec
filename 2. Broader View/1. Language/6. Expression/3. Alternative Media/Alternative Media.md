@@ -98,7 +98,7 @@ Operators:
 
 J Data Information Language is an alternative notation used inside Symbol code. Does it therefore consist of operator functions? And is that then the first operator that is about a more non textual notation a a more graphical one?
 
-# Other ideas__*
+# Other ideas
 
 Text, diagram, algebra, data.
 

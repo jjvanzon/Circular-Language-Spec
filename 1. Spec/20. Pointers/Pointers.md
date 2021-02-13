@@ -32,23 +32,23 @@ Another topic that might be covered, is a comparison with other languages (even 
 
 ### Target Objects
 
-An object reference can\* point to another object reference, which\* points to another object reference and so on. The\* first\* object found in this redirection, that does not refer to another object again\*, is called the\* *target object*. Even\* though\* any of the\* object *references* can be used like it is the\* object itself, the\* *target object* is considered the\* real object and not just\* a reference to it.
+An object reference can point to another object reference, which points to another object reference and so on. The first object found in this redirection, that does not refer to another object again, is called the *target object*. Even though any of the object *references* can be used like it is the object itself, the *target object* is considered the real object and not just a reference to it.
 
-The\* term target object is also used to denote the\* direct\* reference target, not necessarily the\* final target. What kind of target is denoted, will be clear from the\* context.
+The term target object is also used to denote the direct reference target, not necessarily the final target. What kind of target is denoted, will be clear from the context.
 
 #### Compared to C++
 
-In C++ you\* had to specify\* in advance\* the\* number of pointer redirections of a variable. In the\* new computer language a symbol can follow any\* amount of indirections, from zero\* to infinity. You\* do not specify\* the\* amount of redirections in advance\*. You\* can just add a redirection by turning\* the\* target object into a pointer.
+In C++ you had to specify in advance the number of pointer redirections of a variable. In the new computer language a symbol can follow any amount of indirections, from zero to infinity. You do not specify the amount of redirections in advance. You can just add a redirection by turning the target object into a pointer.
 
 #### In a Diagram
 
-The\* target object is the\* last\* point in a string of object reference redirections.
+The target object is the last point in a string of object reference redirections.
 
 ![](images/Pointers.001.png)
 
-Symbol __A__ is an object reference to symbol __B__. Symbol __B__ is an object reference to symbol __C__. Symbol __C__ is the\* target object of both\* symbols __A__ and __B__.
+Symbol __A__ is an object reference to symbol __B__. Symbol __B__ is an object reference to symbol __C__. Symbol __C__ is the target object of both symbols __A__ and __B__.
 
-The\* idea of target objects is also\* a way to make a single\* symbol in the\* diagram represent the\* actual object, whereas the\* others are just\* seen as references to the\* object: to have the\* actual\* object only\* represented by a single\* symbol in the\* diagram.
+The idea of target objects is also a way to make a single symbol in the diagram represent the actual object, whereas the others are just seen as references to the object: to have the actual object only represented by a single symbol in the diagram.
 
 ### Target Classes
 
@@ -90,51 +90,51 @@ Below is an example, with classes getting further redirected.
 
 #### Concept
 
-As covered by the\* article *Related Classes*, you\* can\* also establish a unidirectional relation with a *pointer* to another class. This is not\* so common, but\* it is possible all the\* same. This is mostly applied, to allow a class to make a sub-object’s class *adjustable*. It is important to consider, that everything inside a pointer is really part of the\* *target class*, but\* a pointer itself is usable individually, independent from the\* target class. This is well visualized in the\* article *Relation to a Pointer in a Diagram.* To make a relation to a pointer bidirectional, you\* have to give the\* target class a relation back to the\* first class. The\* first class relates to the\* pointer, but\* the\* target class relates back to the\* first class. This automatically gives the\* pointer a relation back to the\* first class. This creates a bidirectional relation between the\* first class and the\* pointer to a class, but\* only a unidirectional backwards relation between the\* target class and the\* first class. This is because\* the\* first class does not\* directly refer to the\* target class, but\* the\* target class does directly refer back to it. You\* should see it in a diagram. That will make it much clearer.
+As covered by the article *Related Classes*, you can also establish a unidirectional relation with a *pointer* to another class. This is not so common, but it is possible all the same. This is mostly applied, to allow a class to make a sub-object’s class *adjustable*. It is important to consider, that everything inside a pointer is really part of the *target class*, but a pointer itself is usable individually, independent from the target class. This is well visualized in the article *Relation to a Pointer in a Diagram.* To make a relation to a pointer bidirectional, you have to give the target class a relation back to the first class. The first class relates to the pointer, but the target class relates back to the first class. This automatically gives the pointer a relation back to the first class. This creates a bidirectional relation between the first class and the pointer to a class, but only a unidirectional backwards relation between the target class and the first class. This is because the first class does not directly refer to the target class, but the target class does directly refer back to it. You should see it in a diagram. That will make it much clearer.
 
 #### Diagram Notation
 
-You\* can\* also establish a unidirectional relation with a *pointer* to another class. This is not\* so common, but\* it is possible all the\* same.
+You can also establish a unidirectional relation with a *pointer* to another class. This is not so common, but it is possible all the same.
 
 ![](images/Pointers.006.png)
 
 This is mostly applied, to allow a class to make a sub-object’s class *adjustable*.
 
-It is important to consider, that everything inside a pointer is really part of the\* *target class*, but\* a pointer itself is usable individually, independent from the\* target class.
+It is important to consider, that everything inside a pointer is really part of the *target class*, but a pointer itself is usable individually, independent from the target class.
 
-To make a relation to a pointer bidirectional, you\* have to give the\* target class a relation back to the\* first class.
+To make a relation to a pointer bidirectional, you have to give the target class a relation back to the first class.
 
-The\* relation back can\* be displayed in both symbols, that represent the\* target class:
+The relation back can be displayed in both symbols, that represent the target class:
 
 ![](images/Pointers.007.png)
 
-The\* two unidirectional relations between __Class__ and __Pointer to Class__ melt together to a single bidirectional relation. But\* the\* unidirectional relation from the\* __Target Class__ to the\* __Class__ stays unidirectional, because\* __Class__ does not\* directly relate to __Target Class__:
+The two unidirectional relations between __Class__ and __Pointer to Class__ melt together to a single bidirectional relation. But the unidirectional relation from the __Target Class__ to the __Class__ stays unidirectional, because __Class__ does not directly relate to __Target Class__:
 
 ![](images/Pointers.008.png)
 
-The\* notation for a bidirectional relation was covered by the\* article *Relations in a Diagram*.
+The notation for a bidirectional relation was covered by the article *Relations in a Diagram*.
 
 So only __Class__ and __Pointer to Class__ get a bidirectional relation to eachother.
 
-__Target Class__ keeps a unidirectional relation to __Class__. Funny enough, that unidirectional relation is part of the\* bidirectional relation between __Class__ and __Pointer to Class__. The\* bidirectional relation actually consists of:
+__Target Class__ keeps a unidirectional relation to __Class__. Funny enough, that unidirectional relation is part of the bidirectional relation between __Class__ and __Pointer to Class__. The bidirectional relation actually consists of:
 
 \- __Class__ relates to __Pointer to Class__
 
 \- __Target Class__ relates back to __Class__
 
-The\* connection between __Target Class__ and __Class__ is already implied by the\* connection between __Pointer to Class__ and __Class__. You\*’re allowed to leave out of the\* diagram then\*:
+The connection between __Target Class__ and __Class__ is already implied by the connection between __Pointer to Class__ and __Class__. You’re allowed to leave out of the diagram then:
 
 ![](images/Pointers.009.png)
 
-__Target Class__ and __Class__ are already implicitly related to eachother through the\* pointer to the\* target class.
+__Target Class__ and __Class__ are already implicitly related to eachother through the pointer to the target class.
 
-In all the\* diagrams above, that display the\* backward relation, the\* sub-symbols of __Pointer to Class__ and __Target Class__ were given a name: __A__. This was done, because\* there was no line in the\* diagram to indicate that they were the\* same sub-object. Officially, when\* symbols share an aspect, in that they are equal in object, class, interface or definition, they should be tied together with a line. Officially an object line should have been connecting both symbols of __A__:
+In all the diagrams above, that display the backward relation, the sub-symbols of __Pointer to Class__ and __Target Class__ were given a name: __A__. This was done, because there was no line in the diagram to indicate that they were the same sub-object. Officially, when symbols share an aspect, in that they are equal in object, class, interface or definition, they should be tied together with a line. Officially an object line should have been connecting both symbols of __A__:
 
 ![](images/Pointers.010.png)
 
-But\* similarity in aspect can\* also be implied by a *name* and the\* *connection between parents*. This kind of implicit connection is explained in the\* article *Automatic Containment*.
+But similarity in aspect can also be implied by a *name* and the *connection between parents*. This kind of implicit connection is explained in the article *Automatic Containment*.
 
-The\* only point to implicit connection through parent is to make the\* diagram clearer.
+The only point to implicit connection through parent is to make the diagram clearer.
 
 ## Pointers and the System Interface
 
@@ -302,7 +302,7 @@ __Use Reference As Class__
 
 ##### Common Commands for Related Items and Related List Items
 
-__Reference Get à Related Item Ge*t__*
+__Reference Get à Related Item Get__
 
 __Reference Get à Related List Item Get__
 
@@ -516,11 +516,11 @@ Target,
 
 2008-07-26
 
-I need to rename the\* term Target Object, Target Class and Target Interface to Final Object Target, Final Class Target and Final Interface Target, because I’m not targeting an object, class or interface, but I’m targeting an object reference representing an object, class or interface.
+I need to rename the term Target Object, Target Class and Target Interface to Final Object Target, Final Class Target and Final Interface Target, because I’m not targeting an object, class or interface, but I’m targeting an object reference representing an object, class or interface.
 
-Also the\* term object target is the\* same as direct object target. That also counts for classes and interfaces.
+Also the term object target is the same as direct object target. That also counts for classes and interfaces.
 
-The\* term Target Object, Target Class and Target Interface have less of a use now. But the\* way they are used now is misleading.
+The term Target Object, Target Class and Target Interface have less of a use now. But the way they are used now is misleading.
 
 JJ
 
@@ -530,25 +530,25 @@ JJ
 
 < 2008-10-06 Probably not right anymore. >
 
-To find the\* target object, you\*’d expect to only follow object lines. However, there’s a pitfall: a situation that does not occur a lot, though.
+To find the target object, you’d expect to only follow object lines. However, there’s a pitfall: a situation that does not occur a lot, though.
 
-If a type line points to a symbol with an object line, the\* type is a single object.
+If a type line points to a symbol with an object line, the type is a single object.
 
 ![](images/Pointers.034.jpeg)
 
-Each instance of the\* type is actually the\* same object. 
+Each instance of the type is actually the same object. 
 
 ![](images/Pointers.035.png)
 
-Therefore, a type line can redirect the\* object of the\* symbol. Therefore, type lines need to be followed to find the\* object.
+Therefore, a type line can redirect the object of the symbol. Therefore, type lines need to be followed to find the object.
 
-The\* last symbol pointed to by an object line is the\* object.
+The last symbol pointed to by an object line is the object.
 
 ![](images/Pointers.036.jpeg)
 
 This kind of redirectioning is called an *object trace*.
 
-Delegating the\* object aspect is the\* main type of object redirection.
+Delegating the object aspect is the main type of object redirection.
 
 #### Idea
 
@@ -562,15 +562,15 @@ Als je in C++ een object referenties toewijst aan een object referentie, dan wij
 
 #### Multiple Redirection and Final Targets
 
-If an object symbol has an object line to a symbol that again has an object line, there is redirected until a symbol without an object line is encountered: the\* *target object*.
+If an object symbol has an object line to a symbol that again has an object line, there is redirected until a symbol without an object line is encountered: the *target object*.
 
 ![](images/Pointers.037.png)
 
-*C is the\* target object of A and B.*
+*C is the target object of A and B.*
 
-The\* target object symbol is regarded to represent the\* object for real. The\* other symbols are references to the\* object.
+The target object symbol is regarded to represent the object for real. The other symbols are references to the object.
 
-The\* same way there are symbols serving as a *target type* or a *target interface*. Also a procedure has an interface target. A procedure also has a call target and reference target. In both those cases reference lines are followed.
+The same way there are symbols serving as a *target type* or a *target interface*. Also a procedure has an interface target. A procedure also has a call target and reference target. In both those cases reference lines are followed.
 
 ### Loose Ideas about Target Classes
 
@@ -665,9 +665,9 @@ Relations to Pointers,
 
 Pointers (references to related objects)
 
-A relation between a *pointer to an object* and a *command*. The\* pointer is a totally different entity, than the\* object itself.
+A relation between a *pointer to an object* and a *command*. The pointer is a totally different entity, than the object itself.
 
-\>  2008-10-01 I’d think, that this will add related objects to the\* system interface, so related objects to a related item system object, instead of related objects to the\* target object of the\* related item system object.
+\>  2008-10-01 I’d think, that this will add related objects to the system interface, so related objects to a related item system object, instead of related objects to the target object of the related item system object.
 This is a relations issue: relations to pointers in particuler.
 
 I will need to look at *System Objects* to see what a pointer actually was: it was a relation to a related item, instead of a relation to an object independent of any other container.

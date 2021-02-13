@@ -34,7 +34,7 @@ A question for versioning is: when will a version of a command be created? On ev
 
 Versioning of commands can prevent huge casts of changes to input, output or throughput configuration, or at least limit it in size. Only when defining a new call, you have to look at the called command to see if this changes the in, out, thru configuration of the currently edited parent command definition.
 
-##### Giving the issues in this section a place__*
+##### Giving the issues in this section a place
 
 The ideas about versioning need to be moved to the article *Versioning*.
 

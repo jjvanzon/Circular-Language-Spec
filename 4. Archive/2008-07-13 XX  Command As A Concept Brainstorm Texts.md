@@ -459,7 +459,7 @@ Or:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.034.png)
 
-In a sense, a __Reference *Out__* parameter is actually *through*put.
+In a sense, a __Reference *Out*__ parameter is actually *through*put.
 
 When output is alteration of an existing object, it could be considered throughput, even though there is only *written* to the object, and nothing is *read* from the object, it is still an object passed *through* the command.
 

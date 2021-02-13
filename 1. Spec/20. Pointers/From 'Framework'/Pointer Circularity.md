@@ -14,13 +14,13 @@ Circularity is the case when the redirection eventually leads to a symbol alread
 
 ![](Pointer%20Circularity.001.png "Circularity by pointing to itself")
 
-**A** is a pointer to **B**, which is a pointer to **C**, which is a pointer to **A** again and so on. Redirection is ended, though, when the target symbol is found to be the source symbol or intermediate symbol. In this case it can’t be said that a single symbol represents the actual object, while other symbols are regarded object references. In this case **A**, **B** and **C** are *all* primary representations of the object.
+__A__ is a pointer to __B__, which is a pointer to __C__, which is a pointer to __A__ again and so on. Redirection is ended, though, when the target symbol is found to be the source symbol or intermediate symbol. In this case it can’t be said that a single symbol represents the actual object, while other symbols are regarded object references. In this case __A__, __B__ and __C__ are *all* primary representations of the object.
 
 There’s also a question of circularity when somewhere in the redirection a bidirection is encountered.
 
 ![](Pointer%20Circularity.002.png "Circularity by Ambiguity")
 
-This is because a bidirection can also be regarded to be two lines, one for each direction. The line between **B** and **C** can be regarded two lines: one pointing from **B** to **C** and one pointing from **C** to **B**. Therefore, the line(s) between **B** and **C** cause a circularity: **B** is a pointer to **C**, which is a pointer to **B**, which is a pointer to **C** and so on. Thus, **B** and **C** both represent the target object. **A** however, is a pointer *to* this *circularity*. It’s not part of the circularity.
+This is because a bidirection can also be regarded to be two lines, one for each direction. The line between __B__ and __C__ can be regarded two lines: one pointing from __B__ to __C__ and one pointing from __C__ to __B__. Therefore, the line(s) between __B__ and __C__ cause a circularity: __B__ is a pointer to __C__, which is a pointer to __B__, which is a pointer to __C__ and so on. Thus, __B__ and __C__ both represent the target object. __A__ however, is a pointer *to* this *circularity*. It’s not part of the circularity.
 
 A circularity can only be the end point of redirection, because you can’t escape from a circularity.
 

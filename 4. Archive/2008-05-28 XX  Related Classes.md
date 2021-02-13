@@ -14,7 +14,7 @@ You can’t add __RelatedClasses__ to this collection. You have to define relati
 
 After a long think and sleeping on it, I’ve decided the following.
 
-I’ve decided that you only edit relations through the __Relations__ collection and not through the __Class.RelatedClasses__ collection. You __*can read__* the relations through the __Class.RelatedClasses__ collection, but you can’t edit them there.
+I’ve decided that you only edit relations through the __Relations__ collection and not through the __Class.RelatedClasses__ collection. You __*can read*__ the relations through the __Class.RelatedClasses__ collection, but you can’t edit them there.
 
 This is done because it would be quite complex to let __Class.RelatedClasses__ apply to __Relations__ and to let __Relations__ apply to __RelatedClasses__. Many aspects make it hard. One of them is that the items of __RelatedClasses__ are the same objects as those in __Relation.RelationClass()__, so who’s to apply to who?
 

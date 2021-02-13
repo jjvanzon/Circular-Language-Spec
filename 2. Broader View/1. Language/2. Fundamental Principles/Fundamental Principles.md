@@ -29,7 +29,7 @@ This article has not been written yet, but it should contain a description about
 
 #### Data = Code
 
-This fundamental principle is about the fact that a program will *not* consist of procedures operating on a database. Your program primarily is* the database. Code is just inserted into the data structure, to become part of it.
+This fundamental principle is about the fact that a program will *not* consist of procedures operating on a database. Your program primarily is the database. Code is just inserted into the data structure, to become part of it.
 
 #### Programming Language = Database
 
@@ -45,7 +45,7 @@ The concept has not been fully realized yet in software, but version 2.0 of the 
 
 #### User = Programmer
 
-There is no distinction between design time and run time anymore. This makes programming software and using software blend together. Perhaps not everything will be easy to understand to every user, but the lines between creating a program and using a program will fade. The language, with which a user operates the computer, will be the same language, with which you* program software. This article further goes into this concept.
+There is no distinction between design time and run time anymore. This makes programming software and using software blend together. Perhaps not everything will be easy to understand to every user, but the lines between creating a program and using a program will fade. The language, with which a user operates the computer, will be the same language, with which you program software. This article further goes into this concept.
 
 #### Clear Cut Coding Principles
 
@@ -171,7 +171,7 @@ This principle is about making the code base of the new computer language as sma
 
 The new computer language makes it easy to program large systems of software. But making the new computer language itself is hard. So the only way to easily make the new computer language, is to program the new computer language within the new computer language itself. This article tries to explain how this is possible. The description is lenghty and hard to understand. It covers too many technical details, instead of giving an easy presentation of the concept.
 
-The concept *Computer Language Programmed Within Itself* has been proven* with version 2.0 of the new computer language. In that version the base of the new language is actually reprogrammed using the new language itself. All other software can be based on that, which from then on is programmed only using the new computer language.
+The concept *Computer Language Programmed Within Itself* has been proven with version 2.0 of the new computer language. In that version the base of the new language is actually reprogrammed using the new language itself. All other software can be based on that, which from then on is programmed only using the new computer language.
 
 #### Everything Only (Lack Of Choice = Guarantees)
 

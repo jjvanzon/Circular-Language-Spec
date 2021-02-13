@@ -169,7 +169,7 @@ A button could have a __Set Text__ procedure for instance, which sets the text d
 
 Procedures are denoted by *squares*.
 
-Other objects could also have a __Set Text__ procedure, therefore to identify the __Set Text__ procedure of the __*Button__* object you notate:
+Other objects could also have a __Set Text__ procedure, therefore to identify the __Set Text__ procedure of the __*Button*__ object you notate:
 
 __Button . Set Text__
 
@@ -366,7 +366,7 @@ The following is the basic notation for a symbol that implements two separate in
 
 ![](images/Symbol%20Language%20(2004).026.png)
 
-A triangle represents *the implementation of an interface*. Triangles *are*, however,* often called *interfaces* of the object. Don’t start to think that *only triangles* are interfaces. Any symbol can function as an interface. A triangle is the *implementation* of an interface. 
+A triangle represents *the implementation of an interface*. Triangles *are*, however, often called *interfaces* of the object. Don’t start to think that *only triangles* are interfaces. Any symbol can function as an interface. A triangle is the *implementation* of an interface. 
 
 #### Triangle Versus Circle
 
@@ -984,7 +984,7 @@ That way symbols can relate to one another by not being tied together nor by one
 
 ### Target Symbols
 
-#### Line Targets*
+#### Line Targets
 
 Lines redirect a *system aspect* of a symbol to another symbol.
 
@@ -1062,7 +1062,7 @@ A special thing about an interface line is that you can select a single interfac
 
 When there’s no interface line and the type line is followed, then the type’s *whole* interface is used.
 
-The reason that the object line is preferred over the type line is that if there is no interface line, the *object* can determine *which* interface of the type* is used.
+The reason that the object line is preferred over the type line is that if there is no interface line, the *object* can determine *which* interface of the type is used.
 
 ![](images/Symbol%20Language%20(2004).101.png)
 
@@ -1172,7 +1172,7 @@ Just as with the object-type trace, the execution trace requires you to find the
 
 ###### Execution-Definition-Interface Trace
 
-It happens frequently that you need target execution, definition and interface in one blow. That requires two traces: an execution-definition trace and an interface trace. The full operation is called an e*xecution-definition-interface trace*. It deserves a separate name for it’s a very common operation.
+It happens frequently that you need target execution, definition and interface in one blow. That requires two traces: an execution-definition trace and an interface trace. The full operation is called an *execution-definition-interface trace*. It deserves a separate name for it’s a very common operation.
 
 ###### Redirecting to an Execution
 
@@ -1299,7 +1299,7 @@ __Type__ can be considered __Object__’s type target, because __Object__’s ty
 
 ##### ‘Target’
 
-The term *target* is used for both intermediate targets and the final target symbols. To be more exact about what target you’re talking about you can use the terms *direct*, *intermediate* and *final*. The *direct object* of __A__ in the picture <there is no picture…> above, for instance, is __B__, while the *final object* is __C__. __B__ is also regarded an *intermediate object target*, or *intermediate object*, because it’s not the final target, nor the line source. The unaugmented terms *target object*, *target type*, *target interface* and *target procedure* are by rule reserved for final targets. If you want to denote an intermediate object target, for instance use the term *object target*, instead of *target object*, or say *intermediate target object*,* but don’t use the unaugmented term *target object* for an intermediate symbol. Many times out of the context it can be understood whether there is talked about a direct, intermediate or a final target, so it’s not always extra denoted. The term target *symbol* can be about any redirection step or be about any the final target of any aspect.
+The term *target* is used for both intermediate targets and the final target symbols. To be more exact about what target you’re talking about you can use the terms *direct*, *intermediate* and *final*. The *direct object* of __A__ in the picture <there is no picture…> above, for instance, is __B__, while the *final object* is __C__. __B__ is also regarded an *intermediate object target*, or *intermediate object*, because it’s not the final target, nor the line source. The unaugmented terms *target object*, *target type*, *target interface* and *target procedure* are by rule reserved for final targets. If you want to denote an intermediate object target, for instance use the term *object target*, instead of *target object*, or say *intermediate target object*, but don’t use the unaugmented term *target object* for an intermediate symbol. Many times out of the context it can be understood whether there is talked about a direct, intermediate or a final target, so it’s not always extra denoted. The term target *symbol* can be about any redirection step or be about any the final target of any aspect.
 
 *Object target* is not the same as *target object*. *Object target* denotes the direct target of an object line. *Target object* denotes the symbol that is regarded to *really* represent the object.
 
@@ -1585,7 +1585,7 @@ So one interesting thing about type-interface genericity is that when you’ve s
 
 ###### No Interface Line: Follow Object Line
 
-If there is no interface line, the *object* determines *which* interface of the type* is used, as the pictures below demonstrate.
+If there is no interface line, the *object* determines *which* interface of the type is used, as the pictures below demonstrate.
 
 
 
@@ -2579,7 +2579,7 @@ If eventually the original caller is called again, with one of its calls in prog
 
 ##### 5
 
-__*Procedures can only be Called from another Procedure__*
+__*Procedures can only be Called from another Procedure*__
 
 *Procedures can only be called directly from another procedure.*
 
@@ -3327,7 +3327,7 @@ Nothing active can reside directly in an object.
 
 #### Other: Explore Later
 
-__*Moet ik het ook vanuit deze invalshoek uitleggen?__*
+__*Moet ik het ook vanuit deze invalshoek uitleggen?*__
 
 Object symbols may be tied to one another with any line type without restrictions.
 
@@ -3335,7 +3335,7 @@ Procedure lines have more restrictions and only regarding procedure calls. There
 
 #### Other
 
-__*Different Wording, Not important, though__*
+__*Different Wording, Not important, though*__
 
 In an explicit call you always see the the call displayed as a separate diamond. If the call is made, the call is like a created object. After the call it is destroyed. When the call is created, you can reference its contents from anywhere without causing another call.
 
@@ -3353,7 +3353,7 @@ Een call een aparte line maken is net zo iets als een triangle een aparte line m
 
 #### àElsewhere
 
-__*Procedure Interface Restrictions__*
+__*Procedure Interface Restrictions*__
 
 <>
 
@@ -4094,7 +4094,7 @@ A comma can be used to separate
 
 Maybe for should be called repeat
 
-### Brainstorm*
+### Brainstorm
 
 Maybe the procedure references of execution control procedures need to have a certain procedure interface.
 
@@ -4133,23 +4133,15 @@ In one compiler optimization technique it is these execution control statements 
 
 ##### Nice Example
 
-`	`For I = 0 to 4
-
-`		`__*A(I)__*
-
-`		`__*B(I + 1)__*
-
-`		`If I <> 0 Then 
-
-__*C__*
-\__*
-`		`Else
-
-`			`__D__
-
-`		`End If
-
-`	`Next
+	For I = 0 to 4
+		__*A(I)*__
+		__*B(I + 1)*__
+		If I <> 0 Then 
+      __*C*__
+		Else
+			__*D*__
+		End If
+	Next
 
 ##### Execution control is call control
 
@@ -4254,7 +4246,7 @@ There are two common ways to extra denote that you’re referencing something gl
 
 Put a multiply peeled pentagon around the call:
 
-![](images/Symbol%20Language%20(2004).358.png)*
+![](images/Symbol%20Language%20(2004).358.png)
 
 
 This pentagon reference doesn’t really exist, though.
@@ -4281,7 +4273,7 @@ The special thing about a triangle, though is that its members are also directly
 You can’t see in the picture above if the called square is referenced through the circle or through the triangle. If you want to indicate that it’s accessed through the circle, you can put an access symbol with the circle. If you want to indicate that it’s accessed through the triangle, you put an access symbol with the triangle, or with both the circle and the triangle.
 
 
-|<p>![](images/Symbol%20Language%20(2004).362.png)</p><p></p><p>*Accessed through the Circle:*</p><p></p><p>__*Circle . Procedure__*</p>|<p>![](images/Symbol%20Language%20(2004).363.png)</p><p></p><p>*Accessed through <br>the Circle and the Triangle:*</p><p></p><p>__*Circle . Triangle . Procedure__*</p>|<p>![](images/Symbol%20Language%20(2004).364.png)</p><p></p><p>*Also accessed through <br>the Circle and the Triangle:*</p><p></p><p>__*Circle . Triangle . Procedure__*</p>|
+|<p>![](images/Symbol%20Language%20(2004).362.png)</p><p></p><p>*Accessed through the Circle:*</p><p></p><p>__*Circle . Procedure*__</p>|<p>![](images/Symbol%20Language%20(2004).363.png)</p><p></p><p>*Accessed through <br>the Circle and the Triangle:*</p><p></p><p>__*Circle . Triangle . Procedure*__</p>|<p>![](images/Symbol%20Language%20(2004).364.png)</p><p></p><p>*Also accessed through <br>the Circle and the Triangle:*</p><p></p><p>__*Circle . Triangle . Procedure*__</p>|
 | :-: | :-: | :-: |
 
 In text code you can see the difference all the more. I’ve put the text code under the diagrams above.
@@ -4476,7 +4468,7 @@ A member is automatically shadowed if the parent of a triangle defines a procedu
 
 ### Merging
 
-When a procedure has the same name and configuration of public members then in text code there is no way to distinguish calls to either procedure. What happens automatically is that the ‘*nearest’* member *shadows* the member *further* away.
+When a procedure has the same name and configuration of public members then in text code there is no way to distinguish calls to either procedure. What happens automatically is that the *‘nearest’* member *shadows* the member *further* away.
 
 ![](images/Symbol%20Language%20(2004).379.png)
 
@@ -5076,11 +5068,11 @@ Some aspects of a symbol can also be *set*. By doing so you change the system (a
 - __Interface__
 - __State__
 
-By setting a symbol’s __Object__, you change the target of the object line of the symbol. The same way, you change the target of the type line by setting the __Type__ and the target of the interface line by setting the __Interface__. The __State__* can also be set. You can also remove a line completely by assigning __Nothing__ to the __Object__, __Type__ or __Interface__.
+By setting a symbol’s __Object__, you change the target of the object line of the symbol. The same way, you change the target of the type line by setting the __Type__ and the target of the interface line by setting the __Interface__. The __State__ can also be set. You can also remove a line completely by assigning __Nothing__ to the __Object__, __Type__ or __Interface__.
 
 A programmer commands when an __Object__, __Type__, __Interface__ or __State__ is *set*. *Getting* is not always done on direct command of a programmer. When a programmer wants to call a member of an object, he may *indirectly* cause a lot of __Gets__ to be done. <>On each access that the call makes, the target object and target type are figured out in one string of redirectioning<>. On each of those redirections an __Object Get__ or __Type Get__ is called. When a programmer calls __Target Object Get__ or __Target Type Get__, the same string of redirections is executed, causing automatic calls to __Object Get__ and __Type Get__.
 
-The programmer can also initiate __Gets__* himself. This is always done paired with storing the gotten value somewhere, for instance in a variable. So a __Get__ directly initiated by a programmer is always accompanied with a __Set__.
+The programmer can also initiate __Gets__ himself. This is always done paired with storing the gotten value somewhere, for instance in a variable. So a __Get__ directly initiated by a programmer is always accompanied with a __Set__.
 
 Working with the __State__ of an object is for instance useful for __Integer__ objects. Their state is the integer value they represent. __State__ is special and returns a copy of the object as it were, which is a copy of all the data the object stores. This state must be immediately assigned to another object, which is usually of the same type. If the state isn’t assigned to the same type then a conversion must take place. 
 
@@ -5262,7 +5254,7 @@ You can also view the system representation along with the normal representation
 The following notation is used for this:
 
 
-|<p></p><p>*Type Representation Only ![](images/Symbol%20Language%20(2004).388.png)*</p>|*Simultaneous System and Type Representation ![](images/Symbol%20Language%20(2004).389.png)*|
+|<p></p><p>*Type Representation Only* ![](images/Symbol%20Language%20(2004).388.png)</p>|*Simultaneous System and Type Representation* ![](images/Symbol%20Language%20(2004).389.png)|
 | :-: | :-: |
 
 The system representation is displayed sort of like an implementation of an extra interface, but tied to the edge of the symbol, rather than being contained by the symbol, denoting that this interface isn’t inferior to the symbol. The system representation is in this case also called the system interface. In simultaneous display it is very apparent that it’s system procedures that you’re seeing. It may be preferred to always view system procedures in simultaneous view, even when you don’t display the type contents:
@@ -6197,7 +6189,7 @@ If a clause can access anything outside then you should be able to have exclusiv
 
 #### àSystem Aspects
 
-__*Exclusive Establishment__*
+__*Exclusive Establishment*__
 
 Diamonds and squares with lines between internals and to internals, real to and between static members, real non-static members in diamond execution and unreal lines based on establishment exclusion in any situation: statics, non-statics, in execution or not. A square’s normal members never have real lines to the outside, only imaginary. except for static members.
 
@@ -6470,7 +6462,7 @@ Level limitation is paired with the basic access controller.
 
 Pairing object level limitation with the Public access modifier, makes a procedure public only to limited number of levels up the ancestry.
 
-__Public *Up 2__*
+__Public *Up 2*__
 
 A procedure with this access modifier is accessible but two levels up the ancestry. Outside those levels, the procedure is inaccessible.
 
@@ -6483,7 +6475,7 @@ A procedure with this access modifier is accessible but two levels up the ancest
 
 Level limitation works the same for the Protected access modifier, but gets the additional restriction that comes with that access modifier:
 
-__Protected *Up 2__*
+__Protected *Up 2*__
 
 A procedure with this access modifier is accessible two levels up the ancestry, but inaccessible outside the first circular descendant.
 
@@ -6521,7 +6513,7 @@ Level limitation is defined there where it doesn’t have effect yet. It only ha
 
 Apart from object level limitation there is also globality level limitation.
 
-__Public *Globality Up 1__*
+__Public *Globality Up 1*__
 
 When an access modifier is paired with a globality level limitation, the access modifier works normally *n* level up the *globality ancestry*. But for higher globalities the member is inaccessible.
 
@@ -8359,7 +8351,7 @@ Afleidbare concepts:
 
 `		`Deze hebben allemaal een vervanging in Symbol:
 
-#### Summaries of Other Languages*
+#### Summaries of Other Languages
 
 #### C
 
@@ -9042,7 +9034,7 @@ wat de verschillende clients gebruiken en misschien voor het overzicht toch een 
 
 
 
-|__*Programming Concepts’ Diagram Elements__*|
+|__*Programming Concepts’ Diagram Elements*__|
 | - |
 |Containment|Shapes contain other shapes|
 |Reference|<p>Line between reference and referee, </p><p>`	`going outward and acces controllers shed light on direction</p>|
@@ -9152,7 +9144,7 @@ Maybe then I can wrap it up to inambiguous. Perhaps I then should combine sectio
 
 ##### Concept à Diagram Element
 
-|<h6>__*Programming Concepts’ Diagram Elements__*</h6>|
+|<h6>__*Programming Concepts’ Diagram Elements*__</h6>|
 | :- |
 |Containement|Physical containment of shapes|
 |Reference|<p>Line between reference and referee, </p><p>`	`going outward and acces controllers shed light on direction</p>|
@@ -10587,49 +10579,49 @@ Procedure Lines
 
 `	`Any solid procedure line that can’t be a call line is a reference line
 
-Procedure Symbol Roles
+  Procedure Symbol Roles
 
-`		`Definition
+    Definition
 
-`	`Clause
+    Clause
 
-`	`Call
+    Call
 
-`	`Reference
+    Reference
 
-`	`Can’t be both a reference and a call
+    Can’t be both a reference and a call
 
-`	`\* Maybe I should add procedure interface roles
+    \* Maybe I should add procedure interface roles
 
-`	`\* Maybe I should discuss object symbol roles (lateron)
+    \* Maybe I should discuss object symbol roles (lateron)
 
-`		`Object reference
+    Object reference
 
-`		`Object
+    Object
 
-`		`Type
+    Type
 
-`		`Interface
+    Interface
 
-`		`Base
+    Base
 
-`	`Reference and Call targets
+  Reference and Call targets
 
-`		`Reference to definition
+    Reference to definition
 
-`		`Reference to clause
+    Reference to clause
 
-`		`Reference to reference
+    Reference to reference
 
-`		`Call to definition
+    Call to definition
 
-`		`Call to clause
+    Call to clause
 
-`		`Call to reference
+    Call to reference
 
-`	`The Object of the Call Target
+    The Object of the Call Target
 
-`		`You can’t call upward in the ancestry (is introduced later too)
+		You can’t call upward in the ancestry (is introduced later too)
 
 `		`Events” Techniques to communicate to the parent (is introduced later too)
 
@@ -11127,13 +11119,13 @@ Line Rules
 
 `	`Main topics:
 
-The __*ownership__* of lines
+The __*ownership*__ of lines
 
-The __*restrictions__* on line targets (and sources)
+The __*restrictions*__ on line targets (and sources)
 
-The __*roles__* that symbols get when connecting them with lines
+The __*roles*__ that symbols get when connecting them with lines
 
-Redirection and __*targets__* (hmmm… which adds more roles)
+Redirection and __*targets*__ (hmmm… which adds more roles)
 
 Events (this important subject is in jeopardy of being swallowed by a tree of super sections
 
@@ -11327,13 +11319,13 @@ Access Symbol Placement
 
 ###### Line Rules
 
-`	`Line Ownership (The __*ownership__* of lines)
+`	`Line Ownership (The __*ownership*__ of lines)
 
 `	`Object symbol can have object, type and interface line
 
 `	`Procedure symbol can have an interface line and acall *or* reference line
 
-Target Symbols (Redirection and __*targets__* (hmmm… which adds more roles)
+Target Symbols (Redirection and __*targets*__ (hmmm… which adds more roles)
 
 Redirection
 
@@ -11353,7 +11345,7 @@ Redirection
 
 `	`Any tracing
 
-Line Restrictions (The __*restrictions__* on line targets (and sources)
+Line Restrictions (The __*restrictions*__ on line targets (and sources)
 
 `	`Procedures to Procedures, Objects to Objects
 
@@ -11371,7 +11363,7 @@ Can’t call upward in the ancestry (Basic call forms)
 
 Any solid procedure line that can’t be a call line is a reference line
 
-Symbol Roles (The __*roles__* that symbols get when connecting them with lines)
+Symbol Roles (The __*roles*__ that symbols get when connecting them with lines)
 
 Procedure Symbol Roles
 

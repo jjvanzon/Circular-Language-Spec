@@ -29,8 +29,3 @@ Text Codes
 *Fortran*
 
 *...*
-
-
-
-*Author & Copyright: Jan-Joost van Zon        Date: May 23, 2009 – May 23, 2009        Location: Oosterhout, The Netherlands        Status: Finished*
-
