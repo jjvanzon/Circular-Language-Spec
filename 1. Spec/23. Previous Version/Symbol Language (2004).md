@@ -2129,7 +2129,7 @@ Before I explain using arguments, I must introduce another basic concept: *assig
 
 __A = B__
 
-consists of two actions: a __Get__ and a __Set__. First you __Get__ __B.__ Then you __Set A__. An assignment always consists of one __Get__, immediately followed by one __Set__.
+consists of two actions: a __Get__ and a __Set__. First you __Get B.__ Then you __Set A__. An assignment always consists of one __Get__, immediately followed by one __Set__.
 
 There are two main types of assignment: *state assignment* and *line assignment*.
 
@@ -5235,7 +5235,7 @@ An alternate look on the object symbol is as a set of system procedures, each gr
 
 This representation is called the *system representation* of the symbol. Each procedure in the system representation does what’s discussed in the previous section.
 
-__Symbol__, __Target Object__, __Target Type__ and __Target Interfa__ce only have a __Get__ procedure. The word __Get__ is simply left out in naming these procedure from now on. The word __Get__ can also be left out with __Object__, __Type__, __Interface__ and __State__ __Gets__.
+__Symbol__, __Target Object__, __Target Type__ and __Target Interface__ only have a __Get__ procedure. The word __Get__ is simply left out in naming these procedure from now on. The word __Get__ can also be left out with __Object__, __Type__, __Interface__ and __State__ __Gets__.
 
 Now you can see that the system procedures are actual Symbol procedures (except that they don’t have system procedures themselves). You can do with them the things discussed above: you can change their access controllers. Some of these procedures can get multiple access controllers for different purposes (System procedures are the only procedures that have this capability.). The Object, Type, Interface and State’s Gets and Sets can be redefined by filling the procedures with code.
 
@@ -6950,10 +6950,9 @@ In Symbol kan je de redirection diepte achteraf bepalen
 Als je in C++ een object referenties toewijst aan een object referentie, dan wijs je niet naar de object referentie, maar naar het target object. Symbol heeft meer structurering hier.
 
 Een vergelijking C++ – Symbol is als bijlage misschien wel mooi.
-__*Symbol Language
-Advanced__*
 
-==================
+Symbol Language Advanced
+========================
 
 ### About These Advanced Topics
 
@@ -7132,7 +7131,7 @@ __Sometimes symbol proportionality and placement is compromised for the sake of 
 
 1: Line convergence is the metric phenomenon, that lines converge towards mutual targets. As they travel, they move closer and closer to one another.
 
-2: When multiple borders are crossed. <a dimensional convergence onstaat >
+2: When multiple borders are crossed. \< a dimensional convergence onstaat \>
 
 3: In the previous example only the target symbols were part of an encapsulation structure (or the souce symbols, if you reverse the direction). When both sources and targets are part of an encapsulation structure, there is both groupage by source as well as targets. Actually there is groupage by any crossing and by eventual source and target symbols>
 
@@ -7540,7 +7539,7 @@ The parameters of a procedure are listed in a fixed order. Even the optional par
 
 After the fixed parameter list, a procedure can allow a variable amount of parameters to follow. This variable amount of parameters is stored in a single special parameter. This parameter is of type Array, a type defined in the Sigma Data module. To support variable amount of arguments, the procedure must have a public Array object that is assigned to be this special parameter.
 
-__Procedure A ( 0 , 4 ,  , 1 , 3 , 7 ,__ … __)__
+__Procedure A ( 0 , 4 ,  , 1 , 3 , 7 , … )__
 
 Variable amount of arguments is a purely textual notation. The diagram notation shows working with the Array object. However, an Array parameter needs to be tagged and in the diagram code this is simply shown by displaying the words ‘Arguments’ with the Array object. < Maybe it has something to do with Language integration. >
 
@@ -7788,7 +7787,7 @@ __End Object__
 
 ##### Dimensional Table notation
 
-|__Object Genericity__|
+|Object Genericity|
 | :- |
 ||__Object__|
 |||Original object|<p>Object determined by no line</p><p>(no object line)</p>|
@@ -9034,8 +9033,8 @@ wat de verschillende clients gebruiken en misschien voor het overzicht toch een 
 
 
 
-|__*Programming Concepts’ Diagram Elements*__|
-| - |
+|Programming Concepts’ Diagram Elements|
+| ------------------------------------ |
 |Containment|Shapes contain other shapes|
 |Reference|<p>Line between reference and referee, </p><p>`	`going outward and acces controllers shed light on direction</p>|
 |Type|<p>Dotted line from object to type</p><p>`	`going outward and acces controllers shed light on direction</p>|
@@ -9144,7 +9143,7 @@ Maybe then I can wrap it up to inambiguous. Perhaps I then should combine sectio
 
 ##### Concept à Diagram Element
 
-|<h6>__*Programming Concepts’ Diagram Elements*__</h6>|
+|Programming Concepts’ Diagram Elements|
 | :- |
 |Containement|Physical containment of shapes|
 |Reference|<p>Line between reference and referee, </p><p>`	`going outward and acces controllers shed light on direction</p>|

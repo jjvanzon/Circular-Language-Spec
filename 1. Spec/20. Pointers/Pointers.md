@@ -409,7 +409,7 @@ A pointer assignment always has a __Reference__ as a source, not its __Object__,
 A pointer assignment is displayed with an arrow inside the diamond.
 
 
-|__Object Pointer Assignment:__|
+|Object Pointer Assignment:|
 | :-: |
 ||
 |![](images/Pointers.018.png)|
@@ -424,7 +424,7 @@ A pointer assignment is displayed with an arrow inside the diamond.
 Pointer assignment also works for class assignment. You can use a reference as a class, instead using an object itself as the class:
 
 
-|__Class Pointer Assignment:__|
+|Class Pointer Assignment:|
 | :-: |
 ||
 |![](images/Pointers.021.png)|
@@ -443,7 +443,7 @@ If something is already a pointer-to-pointer and it is the source of a conventio
 So a conventional object assignment can also have the following implementations:
 
 
-|__Object Assignment:__|
+|Object Assignment:|
 | :-: |
 ||
 |![](images/Pointers.024.png)|
@@ -455,7 +455,7 @@ So a conventional object assignment can also have the following implementations:
 Assignment when source is pointer to pointer also works for the __Class__ aspect:
 
 
-|__Class Assignment:__|
+|Class Assignment:|
 | :-: |
 ||
 |![](images/Pointers.026.png)|
@@ -469,7 +469,7 @@ Assignment when source is pointer to pointer also works for the __Class__ aspect
 If the source of the assignment is a pointer-to-pointer, then the target also becomes a pointer-to-pointer. So this also gives __Reference Class to Object__ assignment the following implementations:
 
 
-|__Reference-Class to Object Assignment__|
+|Reference-Class to Object Assignment|
 | :-: |
 |![](images/Pointers.028.png)|
 |<p>Reference-Class Get ß  (~= Other Related Item Class Get)</p><p>Object Set à  (~= Other Related Item Set)</p>|

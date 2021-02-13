@@ -56,7 +56,7 @@ How about integrating VB and C++?
 
 ##### Dimensional Table notation
 
-|__Object Genericity__|
+|Object Genericity|
 | :- |
 ||__Object__|
 |||Original object|<p>Object determined by no line</p><p>(no object line)</p>|

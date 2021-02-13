@@ -203,7 +203,7 @@ __Static and Creation__
 - Procedure Create
 - Module Type Create
 
-__*Static__*
+__*Static*__
 
 Members usually belong to an object: every object has its own sub objects and procedures. Members of a type that are Static, however, belong to the type rather to individual objects. These members have the same configuration for every instance of the type. A change made to one object of the type changes all objects of the type. The members are considered *static* to the type.
 
@@ -217,7 +217,7 @@ An effect of making type members static is that you can call the members even wh
 
 Procedure static members are like part of their object. They persist for as long as the object is created. Type static members persist for as long as its module instance is created. Note here that each module instance gets its own set of types with static members. Module static members persist for as long as the module type exist. A module type exists when the Sigma module that contains it is in memory.
 
-__*Type Creation__*
+__*Type Creation*__
 
 The Object Create procedure initializes the instance. In it you can create sub objects, set up lines and call members. Type members are initialized in another procedure: Type Create. The Type Create procedure of a symbol is called when the type is created. Types are created when a module instance is created so the Type Create procedure of all types in a module instances are called right after the module’s Object Create procedure.
 
@@ -229,7 +229,7 @@ Members of a procedure that are Type Static are initialized in the type’s Type
 
 A module also have a Type Create procedure. This is called when the module type comes to light. Module types come to light when a Sigma module is loaded. All the Type Creates of module types in a Sigma module are called right after the Sigma module is loaded. The Type Create of the main module of a Sigma module serves as the module initializer. The Object Create of the main module serves as the module instance initializer.
 
-__*Old__*
+__*Old*__
 
 __Static Objects__
 
@@ -305,7 +305,7 @@ Procedure Create is stuck right at the end of the object’s Object Create.
 
 Procedure Static members of a procedure are like part of the object instance, rather than the procedure instance.
 
-__*Question__*
+__*Question*__
 
 Where are type static procedure members initialized?
 
@@ -315,7 +315,7 @@ Type Static members of both the type and its procedures are initialized in the T
 
 Module Static members of both module, its type and procedures are initialized in the module’s Type Create procedure and terminiated in its Type Destroy procedure.
 
-__*Old__*
+__*Old*__
 
 __Type Static__
 
