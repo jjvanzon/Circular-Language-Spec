@@ -64,11 +64,7 @@ What about ‘system wide’ things that can be accessed from anywhere? It can b
 
 But what if it’s less system wide? In that case it seems that a deep module has access to a shallower module… << I’ll figure out later >>
 
-
 If a module is declared public, it becomes a sub module in the Sigma module.
-
-
-
 
 Global is a bad term.
 
@@ -80,11 +76,8 @@ That’s why I call it a *module*. That implies there can be multiple modules. B
 2004,
 
 A pentagon's direct children can all reference eachother and can be
-
 referenced by all ancestors (containmentwise ancestors). Module is
-
 only one function of a pentagon. Actually a pentagon is a lot like
-
 module, where there are multiple levels of module and that exists in today's systems.
 
 JJ

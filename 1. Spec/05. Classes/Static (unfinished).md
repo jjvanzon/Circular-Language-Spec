@@ -83,9 +83,7 @@ Fixed logical residence (in automatic containemtn) gives you a clue about static
 
 In the For loop, the Loop procedure reference parameter has a Variable filled in, that is like static to the procedure definition. How does that work?
 
-
-
-\- Objects set for a command definition or class, that are taken over by all calls or objects. The reference target can not be overwritten by the call or object, but the value can be written or read. It is all about which system members of the object of a definition or class are declared static. The static system members are changeable by the class or definition, but cannot be changed by objects or calls.
+- Objects set for a command definition or class, that are taken over by all calls or objects. The reference target can not be overwritten by the call or object, but the value can be written or read. It is all about which system members of the object of a definition or class are declared static. The static system members are changeable by the class or definition, but cannot be changed by objects or calls.
 
 \> Once again another concept, that required better understanding of the system interface.
 
@@ -98,7 +96,6 @@ JJ
 
 
 Static,
-
 2008-06
 
 A local variable may make the method a static method of a class, instead of a method of an object?
@@ -106,9 +103,7 @@ A local variable may make the method a static method of a class, instead of a me
 JJ
 
 
-
 Classes,
-
 Static
 
 Parameters, class redirections & calls,
@@ -131,10 +126,7 @@ JJ
 
 
 Static,
-
 2008-10-01
-
-
 
 You HAVE TO give class relations different behavior compared to object relations.
 
@@ -168,7 +160,6 @@ JJ
 
 
 Static,
-
 2009-06-17
 
 There are two forms of static: static parts of a class, that will become part of all objects of that class and static parts of a class, that can not be called through the objects, but only directly by referencing the class.

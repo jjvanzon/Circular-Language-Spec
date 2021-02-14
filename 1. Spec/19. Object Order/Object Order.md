@@ -35,17 +35,12 @@ See the *Order Matters* section.
 ### Ideas
 
 Object Order,
-
 2008-09-30
 
 Perhaps anything ordered, be it parameters,
-
 needs to be part of an ordered list, an ordered array,
-
 or otherwise you can't order anything. And perhaps
-
 the display of an ordered array  is the only display of anything ordered,
-
 including the way it would be displayed in text code.
 
 JJ
@@ -56,13 +51,9 @@ Object Order,
 2009-05-15
 
 There are several candidates for a diagram notation for order.
-
 They are out there somewhere among the ideas.
-
 Candidates:
-
-\- order in a circle, starting at the top, going clockwise, and if there are too many, scroll buttons < >, that make you rotate around the items.
-
-\- The items are linked to eachother, like next-command references (look up the idea somewhere.)
+- order in a circle, starting at the top, going clockwise, and if there are too many, scroll buttons < >, that make you rotate around the items.
+- The items are linked to eachother, like next-command references (look up the idea somewhere.)
 
 JJ

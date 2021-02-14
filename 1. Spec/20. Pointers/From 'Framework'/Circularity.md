@@ -69,32 +69,21 @@ I would also want to give procedures running over circular object structures, a 
 
 
 Circular creation,
-
 2008-08-15
 
 Special creation behavior for recursive calls,
-
 prevents a hazard, that is actually also
-
 present in objects: cicular creation:
 
 create an object of a class,
-
 that creates an new object of the same class,
-
 which creates a new object of the same class.
 
 Don't pay too much attention to it now.
-
 Make it an article in the circularity topics.
-
 Also put there, that in the project,
-
 that works out circularity, you have
-
 to see if you can merge the concepts of
-
 circular creation and creation behavior of sub-commands.
 
 JJ
-

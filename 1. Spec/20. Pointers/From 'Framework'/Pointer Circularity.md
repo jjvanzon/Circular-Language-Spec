@@ -82,7 +82,6 @@ If the closed circle contains a diamond
 
 ![](Pointer%20Circularity.010.jpeg "32")
 
-
 then the whole circularity represents both execution and definition.
 
 If the closed circle consists of only squares, the circularity only represents the definition.

@@ -11,20 +11,20 @@ The 'pointer-to-pointer' issues seemed to be a bit spread over the chapters. Whe
 It might be worth highlighting there may be different interpretations of pointers, lines and their direction. They seem to be non-competing. Here is an attempt to summarize some of them:
 
 - Interpretation 1:
-  - Line direction would not matter, only aspect correspondence would matter.
+    - Line direction would not matter, only aspect correspondence would matter.
 - Interpretation 2:
-  - Direction tends to point outwards, if inward, this would be denoted with an access symbol.
-  - The notational choice would be arbitrary and carry no special meaning.
+    - Direction tends to point outwards, if inward, this would be denoted with an access symbol.
+    - The notational choice would be arbitrary and carry no special meaning.
 - Interpretation 3:
-  - Directions tend to point outwards, if inward, this would be denoted with an access symbol, like previously.
-  - Inward directions would actually be more 'active' redirections/accesses: Pointer-to-pointer redirections, getter accesses, calls to procedures returning an object, etc.
-  - Outward directions, would be more passive. They might represent 'simple' pointers, not represent getter calls or anything, more like indications of aspect correspondence.
+    - Directions tend to point outwards, if inward, this would be denoted with an access symbol, like previously.
+    - Inward directions would actually be more 'active' redirections/accesses: Pointer-to-pointer redirections, getter accesses, calls to procedures returning an object, etc.
+    - Outward directions, would be more passive. They might represent 'simple' pointers, not represent getter calls or anything, more like indications of aspect correspondence.
 - Interpretation 4:
-  - All symbols would be pointers, kind of like in some languages objects might be accessed through singly-redirected object references (C# assumably).
+    - All symbols would be pointers, kind of like in some languages objects might be accessed through singly-redirected object references (C# assumably).
 - Interpretation 5:
-  - There would be one symbol in the diagram, that represents the actual object, not a pointer to it.
-  - It might be found by first following all outward redirections, then all the inward ones.
-  - Where it ends, might be the 'target' symbol: The actual target of the redirections that might be said to be represent the actual object, rather than just a reference to it.
+    - There would be one symbol in the diagram, that represents the actual object, not a pointer to it.
+    - It might be found by first following all outward redirections, then all the inward ones.
+    - Where it ends, might be the 'target' symbol: The actual target of the redirections that might be said to be represent the actual object, rather than just a reference to it.
 
 ### Brainstorm Ref-Ness
 
@@ -118,9 +118,8 @@ So only __Class__ and __Pointer to Class__ get a bidirectional relation to eacho
 
 __Target Class__ keeps a unidirectional relation to __Class__. Funny enough, that unidirectional relation is part of the bidirectional relation between __Class__ and __Pointer to Class__. The bidirectional relation actually consists of:
 
-\- __Class__ relates to __Pointer to Class__
-
-\- __Target Class__ relates back to __Class__
+- __Class__ relates to __Pointer to Class__
+- __Target Class__ relates back to __Class__
 
 The connection between __Target Class__ and __Class__ is already implied by the connection between __Pointer to Class__ and __Class__. You’re allowed to leave out of the diagram then:
 
@@ -288,9 +287,8 @@ Detail: For that last command you might want to overload __Object Get.__ But tha
 
 The system commands for the __Reference__, __Object__ and __Class__ aspects introduce accessory commands and overloads. They seem to be making the explanations more complicated, but they actually make things easier to work with. There are reasons for the introduction of the extra commands and overloads:
 
-\- Common commands for related items and related list items
-
-\- Common commands for direct pointers and pointers-to-pointers
+- Common commands for related items and related list items
+- Common commands for direct pointers and pointers-to-pointers
 
 Here follows an overview of which reason applies to which command or overload.
 
@@ -308,9 +306,8 @@ __Reference Get à Related List Item Get__
 
 ##### Both
 
-*- Common commands for related items and related list items and*
-
-*- Common commands for direct pointers and pointers-to-pointers*
+- *Common commands for related items and related list items and*
+- *Common commands for direct pointers and pointers-to-pointers*
 
 __Object Set__ à __Set Object to Other Related Item__
 
@@ -334,9 +331,8 @@ __Object-Class Get à Get Object-Class which is Another Related List Item__
 
 Again: the reasons for extra commands, overloads and delegation are:
 
-\- Common commands for related items and related list items
-
-\- Common commands for direct pointers and pointers-to-pointers
+- Common commands for related items and related list items
+- Common commands for direct pointers and pointers-to-pointers
 
 ### System Interfaces
 
@@ -408,7 +404,6 @@ A pointer assignment always has a __Reference__ as a source, not its __Object__,
 
 A pointer assignment is displayed with an arrow inside the diamond.
 
-
 |Object Pointer Assignment:|
 | :-: |
 ||
@@ -422,7 +417,6 @@ A pointer assignment is displayed with an arrow inside the diamond.
 |<p>Reference Get ß</p><p>Object Set à  (~= Set Object to Other Related List Item)</p>|
 
 Pointer assignment also works for class assignment. You can use a reference as a class, instead using an object itself as the class:
-
 
 |Class Pointer Assignment:|
 | :-: |
@@ -442,7 +436,6 @@ If something is already a pointer-to-pointer and it is the source of a conventio
 
 So a conventional object assignment can also have the following implementations:
 
-
 |Object Assignment:|
 | :-: |
 ||
@@ -453,7 +446,6 @@ So a conventional object assignment can also have the following implementations:
 |<p>Object Get ß  (~= Use Reference As Object ~= Reference Get) </p><p>Object Set à  (~= Set Object to Other Related List Item)</p>|
 
 Assignment when source is pointer to pointer also works for the __Class__ aspect:
-
 
 |Class Assignment:|
 | :-: |
@@ -467,7 +459,6 @@ Assignment when source is pointer to pointer also works for the __Class__ aspect
 ### Cross-Aspect Assignment
 
 If the source of the assignment is a pointer-to-pointer, then the target also becomes a pointer-to-pointer. So this also gives __Reference Class to Object__ assignment the following implementations:
-
 
 |Reference-Class to Object Assignment|
 | :-: |
@@ -626,7 +617,6 @@ Traces usually don’t require as many steps as in the examples above.
 
 
 Targets,
-
 2010-05
 
 \> I do not know how it works yet. Now my mind says: follow all redirections, including multiple interface redirections… but in the Target Class story I stopped doing that. Maybe it is just what you want the term Target Interface to define. Maybe it is not even important. I don’t know.
@@ -660,7 +650,6 @@ JJ
 Relations,
 
 Relations to Pointers,
-
 2008-09-25
 
 Pointers (references to related objects)
@@ -673,4 +662,3 @@ This is a relations issue: relations to pointers in particuler.
 I will need to look at *System Objects* to see what a pointer actually was: it was a relation to a related item, instead of a relation to an object independent of any other container.
 
 JJ
-
