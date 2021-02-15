@@ -9,30 +9,20 @@ Some of the principles have to be implemented inside the code base. Most of the 
 
 The following principles need to be part of the code base:
 
-\- Identifiers
-
-\- Omitted Identifier
-
-\- Objects
-
-\- Sub-Objects
-
-\- Object Reference
-
-\- Related Objects
-
-\- Values
-
-\- Multiplicity
-
-\- Value Assignment
-
-\- Object Assignment
+- Identifiers
+- Omitted Identifier
+- Objects
+- Sub-Objects
+- Object Reference
+- Related Objects
+- Values
+- Multiplicity
+- Value Assignment
+- Object Assignment
 
 It is important to understand, that there are *coding principles*, and there are *coding concepts*. 
 
 Coding *principles* need to be part of the code base.
-
 Coding *concepts* do not.
 
 A Concept is a construct, that can be programmed within the new computer language and a *principle* is something the code base can not do without. A lot of principles can be implemented as a concept, but only *after* you have added it to the code base.
@@ -47,9 +37,7 @@ On top of that: when developing the code base, you will determine how much can b
 
 *The texts below are loose ideas, yet to be turned into good documentation.*
 
-
 Process Control
-
 2009-05-03,
 
 Process Control like main processes and sub processes and the logging of user actions and stopping other processes from running if one process is in error state and a process monitor and notifications when something goes wrong…
@@ -59,15 +47,11 @@ JJ
 
 
 Symbol Roles,
-
 2004
 
-\- base
-
-\- base type
-
-\- base object
-
-\- base interface
+- base
+- base type
+- base object
+- base interface
 
 JJ

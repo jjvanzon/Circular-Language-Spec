@@ -7,12 +7,7 @@ Objects automatically put on a lower level, because of deeper usage, can artific
 
 A compiler could generate a warning about such an unused reference, unless you actively type the reference as being estaetic.
 
-
 Heel algemene dingen komen bij automatische containment in de diepste lagen terecht, terwijl je het misschien wel hoger wil zien. Eigenlijk wil je het dan promoveren naar een hoger niveau. Ik bedenk me nu, dat je dat kan doen door een hoger object een (ongebruikte) referentie te geven naar het algemene object. Dat hoger object zit dan wel 'toevallig', 'vanzelf' hoger op dat moment. Dat is ok.
-
-
-
-
 
 \> Automatische encapsulatie, zet algemene dingen op het diepste niveau
 
@@ -23,6 +18,4 @@ Maar gebruikte componenten zitten ook op een dieper niveau, maar het diepere niv
 Eigenlijk moet ik autocontainment gewoon in de praktijk zien.
 
 JJ
-
-PAGE  2
 

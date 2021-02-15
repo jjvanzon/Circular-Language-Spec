@@ -3,29 +3,19 @@
 
 ( used to be intrinsic principle )
 
-\- Encryption
-
-\- Object = User , User = Object
-
-\- Access Literals
-
-\- Over System Methods
-
-\- From certain object oriented perspectives
-
-\- Parent
-
-\- Interface Parent
-
-\- Etcetera
-
-\- Global
-
-\- Certain levels up
+- Encryption
+- Object = User , User = Object
+- Access Literals
+- Over System Methods
+- From certain object oriented perspectives
+- Parent
+- Interface Parent
+- Etcetera
+- Global
+- Certain levels up
 
 
 Access Control,
-
 2008
 
 A lot of things about the system interface could be access controlled. Access control might only be worked out in the future. You might however mention it in the documentation in multiple places, where access control could be applied. Maybe refer to the access control documentation, but also maybe mention the access control’s physical effect.
@@ -36,8 +26,6 @@ JJ
 
 
 Access Control, Public & Private, 2008-06-08
-
-
 
 Public and private are actually part of access control.
 
@@ -76,64 +64,41 @@ Access controlling procedures means that you can give procedures one of the foll
 The procedures that can be access controled are:
 
 - __JAttribute.WriteAccess__ : 
-
-`				`Sets the attribute’s Propety Set procedure acces modifier
-
+    - Sets the attribute’s Propety Set procedure acces modifier
 - __JAttribute.ChangeByUser__ : 
-
-`				`Controls if the user can change the attribute
-
+    - Controls if the user can change the attribute
 - __When1.ReadAccess__ : 
-
-`				`Access controls the à1 related object’s Property Set procedure
-
+    - Access controls the à1 related object’s Property Set procedure
 - __When1.WriteAccess__ : 
-
-`				`Access controls the à1 related object’s Property Set procedure
-
+    - Access controls the à1 related object’s Property Set procedure
 - __WhenN.ReadAccess__ :
-
-Access controls List.Item.Get. So if items in a àn relation can be read.
-
+    - Access controls List.Item.Get. So if items in a àn relation can be read.
 - __WhenN.WriteAccess__ :
-
-Access controls List.Item.Set. So if items in a àn relation can be set to another object.
-
+    - Access controls List.Item.Set. So if items in a àn relation can be set to another object.
 - __WhenN.AddAccess__ : 
-
-`				`Access controls a Lists’s Add method
-
+    - Access controls a Lists’s Add method
 - __WhenN.RemoveAccess__ :
-
-`				`Access controls a Lists’s Remove method
-
+    - Access controls a Lists’s Remove method
 - __WhenX.ReadAccess__ :
-
-Access controls the àx related List’s Item.Get procedure. So if items in a àx relation can be read.
-
+    - Access controls the àx related List’s Item.Get procedure. So if items in a àx relation can be read.
 - __WhenX.WriteAccess__ : 
-
-Access controls the àx related List’s Item.Set procedure. So if items in a àx relation can be set to another object
+    - Access controls the àx related List’s Item.Set procedure. So if items in a àx relation can be set to another object
 
 And then there’s __JAttribute.HasGet__ and __JAttribute.HasSet__, which control the presence altogether of a __Property Get__ and __Property Set__ for an attribute.
 
 Furthermore, you can separately control access by the user for two things:
 
 - JAttrbute.ChangeByUser
-
-`				`Controls whether a user can change the value of an attribute or not.
-
+    - Controls whether a user can change the value of an attribute or not.
 - WhenN.AddAndRemoveByUser
-
-`				`Controls whether a user can Add and Remove items in a related list.
+    - Controls whether a user can Add and Remove items in a related list.
 
 It is the intention for the programmer to be able to access control most procedures that would otherwize be __Public__ and also separately control access from the user interface to those procedures. Also, the programmer will be more able to leave out certain procedures altogether, like you can with the attribute __Get__ and __Set__. For instance, the __Add__, __Remove__ and __Clear__ methods in a àn related list, should become separately access controllable as well as separately disincluded.
 
 ###### Read Only
 
-`	`- Procedures
-
-`	`- By User
+- Procedures
+- By User
 
 ###### Authorization
 
@@ -226,16 +191,9 @@ When you see the encapsulation structure, you can impose an access restriction b
 
 But access modifiers are for later, but anyway, that was a good idea about it.
 
-
-
-
 With access control you make an object accessible only:
-
-\- *through* a certain other object or
-
-\- *to* certain other objects or users
-
-
+- *through* a certain other object or
+- *to* certain other objects or users
 
 Classes giving methods access to their private contents should be a form of access control.
 
@@ -244,34 +202,27 @@ Classes giving methods access to their private contents should be a form of acce
 You can disinclude the __Add__, __Remove__ and __Clear__ methods with the __HasAdd__, __HasRemove__ and __HasClear__ structure settings. You can also merely access control the __Add__, __Remove__ and __Clear__ methods. That way you can disallow calls to the procedures from outside your library or application, so only your application can __Add__, __Remove__ or __Clear__, but any program, that links to your application, can’t. That would be the situation when you give a method __Friend__ access. You can also make the method __Private__, in case of which only procedures within the list class itself can access the method. See the *Access Control* section for more on this subject.
 
 Considere access control of the system interface members.
-
 Perhaps you just have to talk about access control in the implementation articles of Coding Concepts and all.
 
-
-
 A procedure extension event is not a mult-cast event, like most events. There can be only one implementation of a procedure extension event.
-
 The parent object is the only one that can implement the system command extension event. This is has to be access controlled.
-
 Access control is worked out later in the *Access Control* articles.
 
 
-
-\- Access control
+- Access control
 
 A lot of things about the system interface needs to be access controlled. Access control will only be worked out in the future. You do however have to mention it in the documentation everywhere, where access control has to be applied. Refer to the access control documentation, but also immediately mention the needed access control’s physical effect.
 
 Do put in the preliminary access control documentation, that you need to consider everything about access control in the system interface.
 
 
-
 Access Control,
-
 2008-08-18
 
 The private contents of a call are only visible to users, that are declared friends of the command definition. But that’s a topic for the Access Control articles.
 
 JJ
+
 
 Access Control,
 
@@ -281,30 +232,22 @@ JJ
 
 
 Access Control,
-
 2008-06-16
 
 Usage quota's are essential in security now,
-
 because otherwise a user programming something
-
 could bring a remote module down.
 
 JJ
 
 
 Security,
-
 2008-08-06
 
 Macro beveiliging:
-
-\- Alleen lees-acties toestaan
-
-\- Ook verzend (e-mail, HTTP) acties toestaan
-
-\- Schrijfacties toestaan
-
+- Alleen lees-acties toestaan
+- Ook verzend (e-mail, HTTP) acties toestaan
+- Schrijfacties toestaan
 (= access control want je geeft schrijf toegant tot een bron)
 
 JJ
@@ -321,118 +264,36 @@ But for security it is always important to consider: who's supervising the super
 
 
 Command IO,
-
 Security & Privacy,
-
 2008-07-14
 
-Sometimes an executable object
+Sometimes an executable object does not need to be open about what it reads or writes. It should be able to apply privacy to data, owned by the site, or the user. This to protect the design of the data model. You shouldn't have to expose your data model
 
-does not need to be open about what it reads or writes.
+However, when it is the user or site's OWN data, you have to be completely open about what a command will read or change.
 
-It should be able to apply privacy to data, owned by the site,
+Then the data model stores data, that is the user's OWN data,
+the data model should be completely open, as far as reporting command IO to the user.
 
-or the user.
+You could say: an authoring company does not have to expose the data model of its programs, even when it is the user's own data. But strong security with a user choice based on command IO requires the data model to be open.
 
-This to protect the design of the data model.
+You have to look at the belangen of the user and the author of the software: It is the software author's data model, but it is the user's own data, so why should a software author not be completely open about what it does with the user's data.
 
-You shouldn't have to expose your data model
+It is like a user has to have access to the data of its own file. Compare it to  medical data, and an employee's file. The employee or patient has the right to look into this data.
 
-However, when it is the user or site's OWN
+The software author should not have too much of a choice about what data models it will protect. If it's the user's own data, the software needs to be completely open about a command's IO.
 
-data, you have to be completely open about what
+If a software author can keep any data undisclosed, it takes away the security aspect. Open Command IO shields malicious software, spyware, adware and virusses.
 
-a command will read or change.
+It remains to be exactly determined how the system can even see whether it is a user's own data or for instance another company's private data.
 
-Then the data model stores data,
-
-that is the user's OWN data,
-
-the data model should be completely
-
-open, as far as reporting command IO
-
-to the user.
-
-You could say: an authoring company
-
-does not have to expose the data model
-
-of its programs, even when it is the user's own 
-
-data.
-
-But strong security with a user choice
-
-based on command IO requires the data
-
-model to be open.
-
-You have to look at the belangen of the user
-
-and the author of the software:
-
-It is the software author's data model,
-
-but it is the user's own data, so
-
-why should a software author not
-
-be completely open about what it does with
-
-the user's data.
-
-It is like a user has to have access to the
-
-data of its own file. Compare it to 
-
-medical data, and an employee's
-
-file. The employee or patient has the
-
-right to look into this data.
-
-The software author should not have
-
-too much of a choice about what data
-
-models it will protect.
-
-If it's the user's own data, the software
-
-needs to be completely open about 
-
-a command's IO.
-
-If a software author can keep any data
-
-undisclosed, it takes away the security
-
-aspect. Open Command IO shields
-
-malicious software, spyware, adware and virusses.
-
-It remains to be exactly determined
-
-how the system can even see whether it is
-
-a user's own data or for instance
-
-another company's private data.
-
-All this is for later. It is security and privacy.
-
-It won't be further elaborated in the project
-
-Command As A Concept
+All this is for later. It is security and privacy. It won't be further elaborated in the project Command As A Concept
 
 JJ
 
 
-
 Access Control
 
-<This issue is replaced by access control>
+< This issue is replaced by access control >
 
 The following is unclear. A View is something with which you view something, but can also be an editor. To distinguish view and editor you use the terms view and editor. Now... these terms are about the user interface. You can also have one programming interface be read only, while in another programming interface you can also edit the data. How should I call those? How should I call the editable one?
 
@@ -445,32 +306,15 @@ More Ideas
 ----------
 
 Access Control,
-
 2008-09-09
 
-
-
-In a capsule, everything that goes in and comes out
-
-goes through an encryption,
-
-so that everything in it looks fuzzy on the outside,
-
-when you do not have the key.
-
-You could litterly display the fuzziness,
-
-so the concept of encryption is visualized.
-
-
+In a capsule, everything that goes in and comes out goes through an encryption, so that everything in it looks fuzzy on the outside, when you do not have the key. You could litterly display the fuzziness, so the concept of encryption is visualized.
 
 JJ
 
 
 Access Control,
-
 With Conditions,
-
 2008-09-06
 
 No dual relations allowed WITH objects with type command.
@@ -511,7 +355,7 @@ JJ
 More Ideas
 ----------
 
-Security may be an extension to Symbol access control. But then with users. I guess a specific symbol that the user owns gets friend privileges…
+Security may be an extension to Symbol access control. But then with users. I guess a specific symbol that the user owns gets friend privileges...
 
 ### Brainstorm
 
@@ -523,11 +367,8 @@ Verder moet zo'n access systeem niet alleen mooi georganiseerd zijn, maar ook no
 
 
 Security & users:
-
 why the hell do you have to login everywhere,
-
 why can’t you be a single user on the internet, and you’ve got access rights.
-
 The access rights to a certain site are just added to your rights.
 
 
@@ -547,37 +388,24 @@ Security is now present at the heart of the system. It is intrinsicly part of th
 The Concept Literals feature of code makes it possible to integrate security keywords into the programming language.
 
 
-
-
 Access Control,
-
 2008-06-10
 
 A user is also an object, that has private content,
-
 that it can make public.
 
 Every form of grant to access is given to an
-
 object in the form of a virtual access card or ticket.
-
 Tickets expire sooner than access cards.
-
 The tickets and access cards form the access control
-
 descriptor for what is accessible to an object.
 
 An object describes what kind of options you have to 
-
 have on your card or ticket in order to get access.
 
 Objects have their own security relations.
-
 A user-object is an object with
-
 certain access, but sees the objects' restrictions
-
 to eachother. What's that about? How does that work?
 
 JJ
-

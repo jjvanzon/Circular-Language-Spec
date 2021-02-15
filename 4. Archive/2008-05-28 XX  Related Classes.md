@@ -22,35 +22,21 @@ Altogether it was far easier to only make __Relations__ apply to __Class.Related
 
 __RelationClass__ has two methods, __RegisterRelationInClass__ and __DeregisterRelationInClass__, which registers or deregisters the relation counterpart in the class. Calling these at the right times ensures correct reflection of __Relations__ in __Class.RelatedClasses__.
 
-Relations.Relation.RelationClass(0 to 1).Class Set
-
-`	`The counterpart class is deregistered origal class
-
-And registered in the new class.
-
-If the Relation is not dual then RelationClassB won’t register itself in 
-`	`its counterpart
-
-Relations.Add
-
-Has no effect, because the classes are yet to be filled in after addition of the relation.
-
-Relations.Relation.Dual
-
-`   `Registers or deregisters the counterpart in ClassB.
-
-Relations.Remove
-
-Removes 1 or 2 related classes, depending on the relation's
-
-being dual.
+- Relations.Relation.RelationClass(0 to 1).Class Set
+    - The counterpart class is deregistered origal class
+    - And registered in the new class.
+    - If the Relation is not dual then RelationClassB won’t register itself in its counterpart
+- Relations.Add
+    - Has no effect, because the classes are yet to be filled in after addition of the relation.
+- Relations.Relation.Dual
+    - Registers or deregisters the counterpart in ClassB.
+- Relations.Remove
+    - Removes 1 or 2 related classes, depending on the relation's being dual.
 
 Add or remove of RelatedClasses are Friend, so a programmer can’t do that.
-
 If you call RelationClass.Class through Class.RelatedClasses, then that should have the same effect as setting it through relations. I can’t really see the effect it would have, but I think it’s not harmful. Dang, my brain isn’t capable of doing complicated things at the moment
 
 ###### Brainstorm
 
-- Toch wil ik relaties kunnen specifieren binnen een klasse. Zie het instellen van de relaties van Code . Visual Basic . Module met zijn sub objecten.
-  Misschien kan ik een eenvoudige oplossing bedenken om het voor een geval als dat makkelijker te maken.
+Toch wil ik relaties kunnen specifieren binnen een klasse. Zie het instellen van de relaties van Code . Visual Basic . Module met zijn sub objecten.  Misschien kan ik een eenvoudige oplossing bedenken om het voor een geval als dat makkelijker te maken.
 

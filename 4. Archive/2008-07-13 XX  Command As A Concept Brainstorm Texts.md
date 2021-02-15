@@ -10,7 +10,6 @@ A command is an *executable object*.
 If an object represents a process, then in the new computer language the object is just a command, and no longer an object representing a process. Actually, a *command* will always be an object that represents a process. In the new computer language, a command looks just as structured as an object.
 
 You can use all the capabilities of objects inside a command.
-
 But a command has the special property, that it is *executable*.
 
 But there is more to the behavior of a command, compared to a normal object.
@@ -39,15 +38,11 @@ The order in which the sub-commands execute can be manually set, but the techniq
 
 A command has added behavior, compared to a normal object:
 
-\- It executes
-
-\- It contains a collection of sub-commands to execute
-
-\- A new command-object is created *on each call* to the procedure and the command-object is destroyed soon after the call.
-
-\- Public writable objects are written only right before the call.
-
-\- Public readable objects are read only right after the call.
+- It executes
+- It contains a collection of sub-commands to execute
+- A new command-object is created *on each call* to the procedure and the command-object is destroyed soon after the call.
+- Public writable objects are written only right before the call.
+- Public readable objects are read only right after the call.
 
 For the rest objects and commands are identical.
 
@@ -71,8 +66,6 @@ Commands,
 
 Zo uit de losse pols verzin ik nu, dat een command een object is, waarvan de procedure in de constructor zit.
 
-
-
 JJ
 
 #### Classes & commands loosely coupled as relations between commands and objects
@@ -84,21 +77,14 @@ When a command definition gets an object with a class, this creates a relation b
 It looks like, when you turn a command into an executable object, without any additional effort automatically establishes the interchangability between class commands and command parameters. I didn’t expect that. If two seemingly independent concepts confirm eachother, I must be on the right track.
 
 For objects of the class, this means, that they copy all methods of the class.
-
 If the method changes, this changes the class configuration. The change in class configuration must then be ventilated through to all the objects of the class.
-
 I haven’t accounted for that yet. The same effect is there for just data of objects: if the class configuration changes, the objects should change also.
-
-Gee… you should be versioning. Objects do not change, because they link to a specific version of the class.
-
+Gee... you should be versioning. Objects do not change, because they link to a specific version of the class.
 However when creating a command, and giving it a relation to a class, I guess I do want the command to be ventilated through to the objects? Or will I just forget about that?
-
 Gee, the commands inside an object are no longer imaginary references. They are real ones now.
-
 I guess, that only if you link to the development version, changes are ventilated through from the classes to the objects.
 
 But command as a concept, as a way to establish interchangability between class commands and command parameters, also needs to subdivise the class commands into interfaces: one for each module commands are defined in.
-
 How that is established by command as a concept is yet to be determined.
 
 Automatic Containment for Relations is still a problem. Line merges for relations between commands and objects may have the same problem. I didn’t account for that earlier. A good example of this problem is yet to be drawn out.
@@ -144,9 +130,7 @@ It is not clear yet if it is best to also use value direction to indicate additi
 ##### Introduction
 
 Input, output and throughput are parameter passing types.
-
 They are shortened to __In__, __Out__ and __Thru__.
-
 When a command’s parameter is __In__, it means that the command reads values from the parameter. When a command’s parameter is __Out__, it means that the command writes values to the parameter. When a command’s parameter is __Thru__, it means, that the command reads values and writes values to the parameter. Throughput functions as both input and output at the same time.
 
 When a command disposes objects after it is done, then those objects are called *downput*. Downput may have been input for sub-commands, or it could have been output of sub-commands. To the parent command, though, it is *downput*. Downput parameters will not be further considered here, because they do not have anything to do with parameter *passing*.
@@ -171,7 +155,7 @@ A read of an output parameter is always accompanied by a write to another object
 
 Next to passing a parameter by *value*, you can also pass a parameter by reference. For instance: instead of copying a value to an input parameter, you give the command a reference to an object outside the command.
 
-Reference parameter:
+__Reference__ parameter:
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.004.png)
 
@@ -229,59 +213,51 @@ __By Value__, __Reference Outward__ and __Reference Inward__ are the different r
 
 So the long names of the different parameter passing types are:
 
-\- __Value In__
-
-\- __Value Out__
-
-\- __Value Thru__
-
-\- __Reference Outward, Value In__
-
-\- __Reference Outward, Value Out__
-
-\- __Reference Outward, Value Thru__
-
-\- __Reference Inward, Value Out__
+- __Value In__
+- __Value Out__
+- __Value Thru__
+- __Reference Outward, Value In__
+- __Reference Outward, Value Out__
+- __Reference Outward, Value Thru__
+- __Reference Inward, Value Out__
 
 __Reference Inward, Value In__ and __Reference Inward, Value Thru__ are not relevant. The __Reference Inward__ parameter *can* be *read from* by the sub-command, but that it’s just not relevant to *parameter passing* between a sub-command and a parent command.
 
 It is important to keep understanding that there are three elements to parameter passing:
 
-\- Values read or written
-
-\- Parameter is a reference outward
-
-\- Parameter is referenced from the outside
+- Values read or written
+- Parameter is a reference outward
+- Parameter is referenced from the outside
 
 To understand how the different parameter passings came about, it is important to keep those three aspects in mind.
 
 Here is a list of the parameter passings, with their short names, and their diagram expression:
 
-\- __Value In__
+__Value In__
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.001.png)
 
-\- __Value Out__
+__Value Out__
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.002.png)
 
-\- __Value Thru__
+__Value Thru__
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.003.png)
 
-\- __Reference In__
+__Reference In__
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.005.png)
 
-\- __Reference Out__
+__Reference Out__
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.006.png)
 
-\- __Reference Thru__
+__Reference Thru__
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.007.png)
 
-\- __Object Out__
+__Object Out__
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.008.png)
 
@@ -334,11 +310,8 @@ Reference parameter:
 When a command call has an outward reference to an object, this *does* make the object a parameter, but this *does not* determine yet whether it is input, output or throughput. The *in* and *out* in this case refer to whether *values* are written or read to the object reference. A reference parameter is always sort of like input, though: the parent command passes the object to the sub-command, so the parent inputs something into the sub command. 
 
 An object symbol (a circle) is always a pointer to an object, not a specific object.
-
 So a reference parameter is a pointer to an object *reference*, not a pointer to a specific object.
-
 So the parameter points to another pointer. The target pointer determines the eventual object pointed at.
-
 The notation of a parameter as a pointer to a pointer, though, may become an implicit expression of just an object assignment.
 
 In earlier programming languages one use of by reference was used to be able to pass large objects to a procedure. Another use was to be able to let the procedure have multiple return values, because in other programming languages a procedure can really only have one return value. In the new computer language, multiple return values is accomplished by having multiple __Object Out__ parameters. So you do not need __Reference Out__ parameters for that anymore.
@@ -499,8 +472,6 @@ A diagram of a command call with an __Object Out__ parameter:
 
 A diagram of a command definition with an __Object Out__ parameter:
 
-
-
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.040.png)
 
 Unlike __By Reference__ and __By Value__ parameters, there are no three variations for parameters referred *to*. The reason ‘__Object__’ parameter passing does not have three variations, like the __Value__ and __Reference__ parameter passings, is that the command’s reading and writing values to the object is irrelevant to the *parameter passing*. __Object Out__ does not have anything to do with whether the command call reads or writes from the object it outputs. That is irrelevant to the parameter *passing*.
@@ -575,17 +546,14 @@ The above displays a command that uses values from the sub-objects of the __Refe
 
 Because it is valuable parameter passing information, whether only the direct value of an object is accessed or also values of sub-objects, you can mention this in the name of the parameter passing type, for instance:
 
-\- __Direct Value In__
-
-\- __Indirect Reference Out__
+- __Direct Value In__
+- __Indirect Reference Out__
 
 This adds another aspect to the parameter passing types. This gives the parameter passing types thee aspects:
 
-\- __In__ / __Out__ / __Thru__   (value direction)
-
-\- __By Value__ / __By Reference__ / __Object Out__  (reference situation)
-
-\- __Direct__ / __Indirect__  (value usage)
+- __In__ / __Out__ / __Thru__   (value direction)
+- __By Value__ / __By Reference__ / __Object Out__  (reference situation)
+- __Direct__ / __Indirect__  (value usage)
 
 ###### Input / output not always values
 
@@ -671,9 +639,8 @@ The command definitions with an indirect by value parameter, with a cloning dept
 
 Looking at the explicit notation of the __Clone__ call above, because the __By Value__ parameters are referenced by the __Clone__ operation, this sort of makes the by value parameters:
 
-\- __Reference Inward, Value In__
-
-\- __Reference Inward, Value Out__
+- __Reference Inward, Value In__
+- __Reference Inward, Value Out__
 
 However, this is not the way you want to look at it when programming. This is just what happens under the surface.
 
@@ -689,9 +656,8 @@ So the connection from the __By Reference__ parameter to the __Object Out__ para
 
 Because the __Reference__ and __Object Out__ parameters are referenced by the object assignment, this sort of makes the __Reference__ and __Object Out__ parameters:
 
-\- __Reference Inward, Object In__
-
-\- __Reference Inward, Object Out__
+- __Reference Inward, Object In__
+- __Reference Inward, Object Out__
 
 However, this is not the way you want to look at it when programming. This is just what happens under the surface.
 
@@ -717,59 +683,38 @@ Comtemplations about further thru parameter passing stereotyping will be postpon
 
 The thru parameter passing type can be further split up in *affected*, *used & affected*, *transformed*, *transformed same value*, *used & affected & transformed* and *used & affected & transformed same value*.
 
-<…>
+<...>
 
 Furthermore, thru can be either *affected*, *used & affected* or *transformed* or both. Affected is considered throughput, even though nothing is read from it, because the object is still *passed through* the command.
 
 This gives us the following number of parameter passing situations:
 
-\- Value In
-
-\- Object In
-
-\- Reference In
-
-\- Value Out
-
-\- Object Out
-
-\- Reference Out
-
-\- Value Thru
-
-\- Value Thru, Affected
+- Value In
+- Object In
+- Reference In
+- Value Out
+- Object Out
+- Reference Out
+- Value Thru
+- Value Thru, Affected
 
 Value Thru, Affected does not make sense. You’d give a parameter an initial value, that does not get used, but will be overwritten. Value In is a better choice in that case.
 
-\- Value Thru, Transformed
-
-\- Value Thru, Used & Affected
-
-\- Value Thru, Used & Affected & Transformed
-
-\- Object Thru
-
-\- Object Thru, Affected
-
-\- Object Thru, Transformed
-
+- Value Thru, Transformed
+- Value Thru, Used & Affected
+- Value Thru, Used & Affected & Transformed
+- Object Thru
+- Object Thru, Affected
+- Object Thru, Transformed
 ~ Object Thru, Transformed Same Value
-
-\- Object Thru, Used & Affected
-
-\- Object Thru, Used & Affected & Transformed
-
-\- Reference Thru
-
-\- Reference Thru, Affected
-
-\- Reference Thru, Transformed
-
-~ Reference Thru, Transformed Same Value
-
-\- Reference Thru, Used & Affected
-
-\- Reference Thru, Used & Affected & Transformed
+- Object Thru, Used & Affected
+- Object Thru, Used & Affected & Transformed
+- Reference Thru
+- Reference Thru, Affected
+- Reference Thru, Transformed
+- Reference Thru, Transformed Same Value
+- Reference Thru, Used & Affected
+- Reference Thru, Used & Affected & Transformed
 
 < When throughput it is affected and used, values are read and written from it to manipulate or coming out of other objects. When throughput is transformed, the values written to the throughput object were derived from values first read from the throughput object. >
 
@@ -793,55 +738,33 @@ Then I need to work out the subjects under the assumption, that you only need to
 
 < combinations:
 
-not affected, not used, not transformed
-
-\-
-
-not affected, not used, too transformed
-
-transformed
-
-not affected, too used, not transformed
-
-used
-
-\> in, not thru
-
-not affected, too used, too transformed
-
-used & transformed
-
-too affected, not used, not transformed
-
-affected
-
-too affected, not used, too transformed
-
-affected & transformed
-
-too affected, too used, not transformed
-
-affected & used
-
-too affected, too used, too transformed
-
-affected & used & transformed
+- not affected, not used, not transformed
+    - \-
+- not affected, not used, too transformed
+    - transformed
+- not affected, too used, not transformed used
+    - \> in, not thru
+- not affected, too used, too transformed
+    - used & transformed
+- too affected, not used, not transformed
+    - affected
+- too affected, not used, too transformed
+    - affected & transformed
+- too affected, too used, not transformed
+    - affected & used
+- too affected, too used, too transformed
+    - affected & used & transformed
 
 < only *used* is actually input, not throughput. >
 
 The combinations, that are left, then:
 
-affected
-
-affected & used
-
-transformed
-
-used & transformed
-
-affected & transformed
-
-affected & used & transformed
+- affected
+- affected & used
+- transformed
+- used & transformed
+- affected & transformed
+- affected & used & transformed
 
 ###### Value Thru, affected
 
@@ -925,7 +848,7 @@ An object inside the parent command has sub-objects. From the parameter you can�
 
 With reference parameters, changes and consults can be at any depth. Any object indirectly links to any other object in the world, so passing an object as a parameter makes basically any other object around the world accessible to the command. So basically anything could be changed by a command.
 
-That used to be one argument in the claim, that automatic execution order is impossible, but help is on the way…
+That used to be one argument in the claim, that automatic execution order is impossible, but help is on the way...
 
 ##### Specific data unknown
 
@@ -938,8 +861,6 @@ Input and output are not the parameters, but what specifically is read or writte
 In theory there's no telling what a command may read or write, but in practice the amount of things read and written are limited. You can list out what a command reads and changes.
 
 Here follows a textual definition of a parameter, and of the input and output; three entirely different things.
-
-
 
 Parameter:
 
@@ -1011,7 +932,7 @@ It can be determined, that part of the sub-commands can run independently. If th
 
 < 2008-07-06 When commands have multiple parameters tied together complexly to other parameters, you have to resolve this in an execution order. >
 
-< By the way: if you use multiple output parameters of a command, how does the consult of the *two* parameters result in a *single* run?> 
+< By the way: if you use multiple output parameters of a command, how does the consult of the *two* parameters result in a *single* run? > 
 
 #### System interface
 
@@ -1039,34 +960,23 @@ The implementation of a command is called a procedure.
 
 Parameters,
 
-
-
 Required return value: unable to execute without picking up the return value.
-
-
 
 JJ
 
-And how does it look to express a reference line as the assignment of a reference target?
 
+And how does it look to express a reference line as the assignment of a reference target?
 Are those interchangable notations?
 
 I really want the programming environment,
-
 to not so easily accept, that a parameter
-
 is typed throughput, when it is only read from.
-
 Because otherwise you rely too much on 
-
 courtesy of the programmer, to make
-
 the whole system function correctly.
 
 When you pass a property as a byref argument, and the procedure reads and writes from the byref parameter, you want the property get and set to be called. Does that require a pointer to a pointer to a pointer or what?
 
 You might explain things first as execution order not being automaticaly determined, and in, out and tru not being automatically deteremined,
-
 and then in an article after that, releaving the programmer from it,
-
 because it is done automatically. It is a nice surprise and releave point, and an amaze point, and an excite point.

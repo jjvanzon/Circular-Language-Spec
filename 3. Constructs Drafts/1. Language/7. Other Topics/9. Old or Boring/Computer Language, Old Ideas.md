@@ -26,23 +26,23 @@ J Code and J Core are basically the same project.
 This project involves the following:
 
 - J Core
-  - All of J Core
-  - Sigma module
+    - All of J Core
+    - Sigma module
 - Language Definition
-  - Symbol language
-  - Symbol document
+    - Symbol language
+    - Symbol document
 - Translation
-  - Symbol to Sigma
-  - Parsing
-  - Symbol to Text
-  - Text to Symbol 
-  - Basic to Symbol
-  - C++ to Symbol
-  - Symbol to Basic
-  - Symbol to C++
-  - __*Optimization*__
-    - Procedural optimization
-    - Machine code optimization
+    - Symbol to Sigma
+    - Parsing
+    - Symbol to Text
+    - Text to Symbol 
+    - Basic to Symbol
+    - C++ to Symbol
+    - Symbol to Basic
+    - Symbol to C++
+    - __*Optimization*__
+        - Procedural optimization
+        - Machine code optimization
 - Symbol View and Interaction
 
 Each subject has its own document. This document only describes the subjects in general.
@@ -121,19 +121,13 @@ Main data:
 - To()
 - Of()
 
-Symbols is the number of symbols.
-
-Name contains the names of these symbols.
-
-Public contains whether a symbol is public or not.
-
-Type contains the type of which a symbol is. That can be a circle, a triangle, a square or invalid.
-
-‘In’ contains for each symbol a pointer to the symbol the symbol is inside. Thus this is the main data of the encapsulation structure of a system.
-
-‘To’ contains for each symbol a pointer to the symbol this symbol refers to. Thus this is the main data for the delegance/reference/call structure of a system.
-
-‘Of ‘contains for each symbol a pointer to the symbol that is the descendant class of this symbol. Thus this is the main data of the inheritance structure of a system.
+- Symbols is the number of symbols.
+- Name contains the names of these symbols.
+- Public contains whether a symbol is public or not.
+- Type contains the type of which a symbol is. That can be a circle, a triangle, a square or invalid.
+- ‘In’ contains for each symbol a pointer to the symbol the symbol is inside. Thus this is the main data of the encapsulation structure of a system.
+- ‘To’ contains for each symbol a pointer to the symbol this symbol refers to. Thus this is the main data for the delegance/reference/call structure of a system.
+- ‘Of ‘contains for each symbol a pointer to the symbol that is the descendant class of this symbol. Thus this is the main data of the inheritance structure of a system.
 
 Indexes:
 
@@ -147,21 +141,14 @@ Indexes:
 - SymbolsOfMe()
 - OfMe(,) 
 
-ValidSymbols is the number of valid symbols.
-
-ValidSymbol is an enumeration of pointers to all valid symbols.
-
-SymbolsInMe is the number of contained symbols for each symbol.
-
-InMe is an enumeration of pointers pointing to all contained symbols.
-
-SymbolsToMe is for each symbol the number of symbols refering to that symbol.
-
-ToMe is an enumeration of pointers pointing to all symbols refering to the a symbol.
-
-SymbolsOfMe is the number of decendants for each symbol.
-
-OfMe is an enumeration of the ancestors of a symbol.
+- ValidSymbols is the number of valid symbols.
+- ValidSymbol is an enumeration of pointers to all valid symbols.
+- SymbolsInMe is the number of contained symbols for each symbol.
+- InMe is an enumeration of pointers pointing to all contained symbols.
+- SymbolsToMe is for each symbol the number of symbols refering to that symbol.
+- ToMe is an enumeration of pointers pointing to all symbols refering to the a symbol.
+- SymbolsOfMe is the number of decendants for each symbol.
+- OfMe is an enumeration of the ancestors of a symbol.
 
 Cursors:
 
@@ -170,13 +157,10 @@ Cursors:
 - SymbolToMeCursor()
 - SymbolOfMeCursor()
 
-SymbolCursor returns the symbol currently worked with. That means which symbol in the main data we are taking actions upon.
-
-SymbolInMeCursor returns the position we’re currently at in the enumerion of contained symbols of the symbol at SymbolCursor.
-
-SymbolToMeCursor returns the position we’re currently at in the enumerion of symbols that refer to the symbol at SymbolCursor.
-
-SymbolOfMeCursor returns the position we’re currently at in the enumerion of the ancestors of the symbol at SymbolCursor.
+- SymbolCursor returns the symbol currently worked with. That means which symbol in the main data we are taking actions upon.
+- SymbolInMeCursor returns the position we’re currently at in the enumerion of contained symbols of the symbol at SymbolCursor.
+- SymbolToMeCursor returns the position we’re currently at in the enumerion of symbols that refer to the symbol at SymbolCursor.
+- SymbolOfMeCursor returns the position we’re currently at in the enumerion of the ancestors of the symbol at SymbolCursor.
 
 #### Properties
 
@@ -199,16 +183,16 @@ The symbol language includes a system specification document class. This class w
 #### Boolean Algebraic
 
 Everything should eventually lead to storage.
-
 What is storage?
-
 If you take storage out of the code then do you have like one large boolean expression?
 
 I don’t know.
 
 It just worries me that If is a boolean operator
 
+```
 If x = 43 then 3
+```
 
 #### Procedural
 
@@ -235,14 +219,13 @@ Think over instantiating procedures when calling one. Consider recursive calls..
 
 Arguments can be passed through the stack, but sometimes you can use registers for it. Registers are way faster.
 
-Randel Hyde is whining about making things faster. He speaks of being any good at Assembly partly is about making code as fast as possible. And yet he admits that HLA has been written prioritizing clarity SO that he totally abolishes a technique that makes code faster.
+Randel Hyde is talking about making things faster. He speaks of being any good at Assembly partly is about making code as fast as possible. And yet he admits that HLA has been written prioritizing clarity SO that he totally abolishes a technique that makes code faster.
 
-He should whine.
+So that seems to contradicts.
 
 you explicitly state the order of the instructions in code then if this statement of order is omitted, the assembly generator can choose its optimal combination of logical operation variations.
 
-
-For assembly generating software you could make tables drawing out logically equivalent operations and combinations of operations. some equivalents may generally work fasterthan others. The notation of an equivalent that is slower can be replaced by the equivalent that is faster by the assembly generator.
+For assembly generating software you could make tables drawing out logically equivalent operations and combinations of operations. some equivalents may generally work faster than others. The notation of an equivalent that is slower can be replaced by the equivalent that is faster by the assembly generator.
 
 I talked about sequences of operations that perform a single logical operation.
 
@@ -265,12 +248,9 @@ Another optimization is inlining: avoiding jumps.
 
 I suspect that mr. Randall Hyde thinks of a computer software system as something so arbitrary that it can only be optimized by hand. That he thinks of squences of instructions including jump statements.                  
 
-Sometimes, when input varies arbitrarily (within certain limits), you can't know exactly what will happen in the code in a single case. So there can not be an exact determination of what will happen in case of usage of arbitrary input. There can however be a determination of the ODDS of what will happen. The possible things that will happen
-
-is large. But these possibilities are all embedded into the code. 
+Sometimes, when input varies arbitrarily (within certain limits), you can't know exactly what will happen in the code in a single case. So there can not be an exact determination of what will happen in case of usage of arbitrary input. There can however be a determination of the ODDS of what will happen. The possible things that will happen is large. But these possibilities are all embedded into the code. 
 
 When you have a sequence of instructions that take an arbitrary value and limit it between -1 and 1 then this POTENTIALLY limits the
-
 possible progressions of the code.
 
 
@@ -456,7 +436,7 @@ Sigma requires you to obey a certain groupage. Sigma doesn’t require you to pu
 
 In the future I might change the code organization, but I will now take the following as an example organization:
 
-… (encapsulation diagram of the organization)
+... (encapsulation diagram of the organization)
 
 To get the memory that is the Sigma module you can stack up the organization recursively. You can also stack up the organization level by level. When generating the Sigma module it proves to be easier to stack it up recursively.
 
@@ -482,66 +462,42 @@ Outline compiled modules can be programmed with. However, there are no names for
 
 Onderdeelomschrijvingen opsplitsen in criteria
 
-First you split up the string into sequences of characters of the same
-
-category. A character can belong to multiple categories.
+First you split up the string into sequences of characters of the same category. A character can belong to multiple categories.
 
 Then you use this information to compare it to a specification containing a
 
 sequence of wildcards:
 
-`        `-        Exact string
-
-`        `-        Or wildcard:
-
-`                        `o        Catergory: specific or not specific
-
-`                        `o        Length: specific (?) or not length specific
+- Exact string
+- Or wildcard:
+    - Catergory: specific or not specific
+    - Length: specific (?) or not length specific
 
 (\*), between lengths (? ??? or ?? \*)
-
-`        `-        Not'dom
-
-`        `-        Or'dom
+- Not'dom
+- Or'dom
 
 Then a set of findings can be built up.
 
-
-The findings can be extended with a replacement to correct the format of
-
-things.
-
-
-
+The findings can be extended with a replacement to correct the format of things.
 
 Let's take this nomenclature:
 
 !
 
 =...
-
 =\*...
 
 ?
-
 \*
-
 @
-
 \*@
-
 \#
-
 \*#
-
 a
-
 \*a
-
 .
-
 \*.
-
 \_
 
 ch.12352->
@@ -549,101 +505,52 @@ ch.12352->
 ->Ch.1423452
 
 =\*-
-
 =>
-
 c
-
 h
-
 \*\_
-
 .
-
 \*\_
-
 \*n
 
 
 =\*-    =>    c    h    \*\_    .    \*\_    \*#
 
 ->Ch . 13242
-
 -->cH.1
 
-
-
-
-
-
-
 ~=
-
 ~c~
-
 ~h~
-
 ~\* ~
-
 ~.~
-
 ~\* ~
-
 ~\*n~
-
 ~=\*-~
-
 ~=>~
 
-
-
 Splitting starts with categorizing characters.
-
-
-
-
 
 Categories could be:
 
 numeric
-
 alphabetic
-
 punctuation
 
 Uppercase and accents are approached with characters categories. A a ? â á à
-
 Á À Â å a A Å ? can be seen as the same category so they will all be
-
 interpreted as 'a'.
 
 
 In Symbol, when you use public objects, direction is ambiguous.
-
-Also, an object in ActiveX is actually a property. Why is it a circle in my
-
-case then?
-
-Why isn't a property an object then? oh. No. Getting an object is actually a
-
-procedure,
-
-but you use it as if it's just an object. When you can set it, then that's a
-
-definite procedure
-
-Sh*t. I have to revise Symbol. It's crap this way.
+Also, an object in ActiveX is actually a property. Why is it a circle in my case then?
+Why isn't a property an object then? oh. No. Getting an object is actually a procedure, but you use it as if it's just an object. When you can set it, then that's a definite procedure
+Darn. I have to revise Symbol. It's crap this way.
 
 
 For string manipulations:
 
-When you want to do two manipulations that require you to go through all characters you could
-
-use a single traverse function which you give an array of references to functions so that you
-
-only loop once, yet apply two string transformations. For instance, making the letter case of
-
-names proper and removing every third space.
+When you want to do two manipulations that require you to go through all characters you could use a single traverse function which you give an array of references to functions so that you only loop once, yet apply two string transformations. For instance, making the letter case of names proper and removing every third space.
 
 More details are involved, but that's the general idea
 
@@ -695,13 +602,12 @@ This section covers the calculation of equal sided n-gons’ coordinates, sides 
 
 Without pictures the facts are as follows:
 
-l = 2r \* cos ½ (PI – 2PI / n)
-
+```
+l = 2r * cos ½ (PI – 2PI / n)
 r = l / (2 \* cos ½ (PI – 2PI / n)
-
-x = r \* cos((2PI / n + b) \* I)
-
-y = r \* sin((2PI / n + b) \* I)
+x = r * cos((2PI / n + b) * I)
+y = r * sin((2PI / n + b) * I)
+```
 
 Fortunately I made pictures. Get ready for adult sesame street.
 
@@ -724,33 +630,32 @@ And all I have is the radius
 ![](images/Computer%20Language,%20Old%20Ideas.006.png "Calculation N-Gon Radius to Side Length and all I have is the radius")
 
 
-
 Or rather:
-
-`	`Got r
-
-`	`Need l
-
-
+- Got r
+- Need l
 
 I need the length of the sides of any equal sided n-gon that describes a circle with a defined radius
 
-
+```
 l = 2r  \* Cos ½ (PI – 2PI / n)
+```
 
 ##### Side Length to Radius
 
+```
 r = l / (2 \* Cos ½ (PI – 2PI / n)
+```
 
 ##### N and StartAngle To Coordinates
 
+```
 x = r \* cos((2PI / n + b) \* I)
-
 y = r \* sin((2PI / n + b) \* I)
+```
 
 #### Vibration
 
-Rqew
+...
 
 ## Brainstorm
 
@@ -767,10 +672,9 @@ I will translate each common variable action for you to symbol object structure 
 ##### Brainstorm
 
 Event interfaces
-
 Multiple sink events
 
-### Sh*t
+### Darn
 
 #### Inline
 
@@ -795,16 +699,10 @@ If you choose to compile a module inline then you have a faster module. This cod
 However, the inline module can call another outline module’s procedures. You can’t call an inline module’s procedure, but an inline module can call an outline module’s procedures.
 
 
-
-
-
-
 I’ve gone on about the assembly side of it, now the easier interface.
 
 (((
-
 Even though it seems that all sorts of stuff can happen at the same time and all sorts of objects and code can work together in an unfollowable turn taking. This is not true. One thing happens at a time. One thread runs at a time, one procedure runs at a time, one data structure is used at a time, one module is running at a time, one class is running at a time
-
 )))
 
 The only way you want to work with J Core is to design modules that run under J Core. It is about is designing modules. Module design is programming so it continues in J Code. In J Code you can design modules in a simple matter. They can be compiled to machine code modules that can run under J Core.
@@ -828,7 +726,6 @@ J Code will convert the symbol document into the tables specifying the classes a
 Management of segments, optimizing code for speed, etcetera, are all controlled by J Code and I don’t want programmers, including me, to have anything to do with it, because it is possible to automatically do this. I think real assembly is not worth manually programming with and should be automated.
 
 
-
 Keep believing in Symbol.
 
 Again I am analysing something I wrote for a complex problem (a problem that others made complex for me), and again I wish to know what calls what, how many times something is called and where. When I'd have a symbol view of the code then I'd instantly see everything.
@@ -837,21 +734,15 @@ Again I am analysing something I wrote for a complex problem (a problem that oth
 
 Storage lists in Symbol should be able to be standard arrays.
 
-Shouldn’t I create my own simple array class? Yep, it won’t work under Microsoft, but at least the code is structure in accordance with Sigma… or something.
+Shouldn’t I create my own simple array class? Yep, it won’t work under Microsoft, but at least the code is structure in accordance with Sigma... or something.
 
 Oh, huh? How can I create an array without a base data structure for it? Huh?
 
 Array1 = New Array(Integer)
-
 Array1.Items
-
 Array1(3)
 
-
-
-
 100258621(02:23 AM) : 
-
 Operation is actually a nice synonym for a function, procedure, subroutine, routine, etcetera.
 
 ### J Code
@@ -868,9 +759,9 @@ This is the contemplation for clarity, which is something different from the con
 
 Je moet om properties te groeperen in Vb een hele set klassen maken.
 
-Eigenlijk zou alle logische genetiviteit gegroepeerd moeten worden, zonder dat je er een klasse van hoeft te maken. Maar in Symbol maak je er al gemakkelijk gewoon een klasse van. Het groeperingssymbool doet dat eigenlijk al. Anyway, als je een Button List hebt, dan moet je per button iets instellen Button (aIndex) . Visible bijvoorbeeld. Je kunt een klasse maken van Button Lisst zijn Button. En dan een array van die klassen maken. Maar kan je niet gewoon Button (aIndex) . Visible als property van de Button List declareren? Hmmm… Bij de wee, ik moet naamgeving uitleggen ergens. Ik heb bij de wee iets veranderd aan mijn naamgeving. In Button List, bijvoorbeeld, had ik ooit een Button Visible (aButton As Long) As Boolean, maar ook een Button Width As Double. Maar die laatste was hetzelfde voor alle buttons, dus niet een Button z’n width, maar de Buttons hun width. Buttons Width dus, niet Button Width. Gepuncteerd: 
+Eigenlijk zou alle logische genetiviteit gegroepeerd moeten worden, zonder dat je er een klasse van hoeft te maken. Maar in Symbol maak je er al gemakkelijk gewoon een klasse van. Het groeperingssymbool doet dat eigenlijk al. Anyway, als je een Button List hebt, dan moet je per button iets instellen Button (aIndex) . Visible bijvoorbeeld. Je kunt een klasse maken van Button Lisst zijn Button. En dan een array van die klassen maken. Maar kan je niet gewoon Button (aIndex) . Visible als property van de Button List declareren? Hmmm... Bij de wee, ik moet naamgeving uitleggen ergens. Ik heb bij de wee iets veranderd aan mijn naamgeving. In Button List, bijvoorbeeld, had ik ooit een Button Visible (aButton As Long) As Boolean, maar ook een Button Width As Double. Maar die laatste was hetzelfde voor alle buttons, dus niet een Button z’n width, maar de Buttons hun width. Buttons Width dus, niet Button Width. Gepuncteerd: 
 
-Button (aButton) . Visible  en  Buttons . Width. Dit voorkomt dubbelzinnigheid. Some is het ook zo dat je een opeenvolging van namen als identifier hebt: Group Supplier Type References. In dat geval is het 1 Group Supplier Type’s References, want de laatste naam is het lijdend voorwerp. Als het om een Group Supplier zijn Type References gaat, dan weet ik even nog niet exact de naamgeving, alleen dat het anders moet zijn. Group Supplier Types References? Omdat het om al de Types van een Group Supplier gaat? Maat een Type Reference was in die database 1 entity geworden, dus om nu verstoring in die naam aan te brengen… Het is een Group Supplier’s Type References, maar… hmmm logisch gezien is ‘Types References’ wel goed.
+Button (aButton) . Visible  en  Buttons . Width. Dit voorkomt dubbelzinnigheid. Some is het ook zo dat je een opeenvolging van namen als identifier hebt: Group Supplier Type References. In dat geval is het 1 Group Supplier Type’s References, want de laatste naam is het lijdend voorwerp. Als het om een Group Supplier zijn Type References gaat, dan weet ik even nog niet exact de naamgeving, alleen dat het anders moet zijn. Group Supplier Types References? Omdat het om al de Types van een Group Supplier gaat? Maat een Type Reference was in die database 1 entity geworden, dus om nu verstoring in die naam aan te brengen... Het is een Group Supplier’s Type References, maar... hmmm logisch gezien is ‘Types References’ wel goed.
 
 Meervouden kunnen by de wee dus verzamelingen aangeven, maar ook een aantal.
 
@@ -880,15 +771,13 @@ En ook 0 based tellen, maar wel arithmetische aantallen.
 
 Misschien nog wat over het vermijden van loops.
 
-
 Sometimes there’s a distinction between a class that serves as a simple storage for, let’s say Object Interfaces, and a class that combines other classes ondergeschikt aan Object Interfaces and the storage class I mentioned. In both cases you could use a plural to denote you manage a collection of Object Interfaces. To distinct the storage list from the complexer abstration class you call the storage class Object Interface List class, while the complexer abstraction class you call the Object Interfaces class
 
-If you use constructions like described in the last paragraph, then if a class is an abstract of a basic data structure storage, but the entities involved have no child entities for the storage to be combined with, then the class doesn’t have to be called a list, because it manages everything up until this abstraction level… ((I need a better description for that, man))
+If you use constructions like described in the last paragraph, then if a class is an abstract of a basic data structure storage, but the entities involved have no child entities for the storage to be combined with, then the class doesn’t have to be called a list, because it manages everything up until this abstraction level... ((I need a better description for that, man))
 
+List of objects: Object List. No plural used. It could mean Object’s list, so it should actually be Objects List. Hmmm... It don’t sound too great, but...
 
-List of objects: Object List. No plural used. It could mean Object’s list, so it should actually be Objects List. Hmmm… It don’t sound too great, but…
-
-A data abstracting class should be named after its main dimension / main entities / target entity. <<In an index, the source entity should be mentioned too.>>
+A data abstracting class should be named after its main dimension / main entities / target entity. << In an index, the source entity should be mentioned too. >>
 
 I took back using a plural to identify a collection. I can’t tell amounts and collections apart that way and code became unreadable to me.
 
@@ -910,23 +799,29 @@ structuring is very required. Only then do the interfaces look as what they repr
 
 This way the following:
 
-`    `ModuleInterfaceModuleInterfaceMemberType(4, 2, 3, 21)
+```
+ModuleInterfaceModuleInterfaceMemberType(4, 2, 3, 21)
+```
 
 becomes:
 
-`    `Module(4).InterfaceModule(2).Interface(3).Member(21).Type
+```
+Module(4).InterfaceModule(2).Interface(3).Member(21).Type
+```
 
 or in Symbol:
 
-`    `Module Interface Module Interface MemberType [4, 2, 3, 21]
+```
+Module Interface Module Interface MemberType [4, 2, 3, 21]
+```
 
 Becomes:
 
-`    `Module [4] . Interface Module [2] . Interface [3] . Member [21] . Type
+```
+Module [4] . Interface Module [2] . Interface [3] . Member [21] . Type
+```
 
 A much better representation of actuality, and readable, unlike the original structure.
-
-
 
 Member access isn't only useful in, also to group things. To get member access to the grouped things you actually
 
@@ -952,21 +847,13 @@ them Friend, instead of Public. But inside the module we will still see it as pa
 
 #### Other
 
-\-
-
-
-
-\-
-
 In the Windows API documentation somewhere it is told that delegating specific windows message handling to other functions in the window procedure will prevent the stack from overflowing when using many local variables.
 
 However, if you make it so that the local variables are allocated on the stack imperatively where they are declared, when the declaration code isn’t reached, this allocation doesn’t take place. Ofcourse Microsoft people often advise to put local variable declarations at the beginning of the procedure, the idiots. So it’s a dumb methody that makes the argument for this. It’s bullshit
 
 It’s bullshit regarding the using a function a message. It is however so that variables on the stack aren’t freed until you exit the function, so you can’t free declared stack variables. Maybe I could free it in J Code if it would be required.
 
-\-
-
-\-
+\-----
 
 Windows often stuffs a lot of booleans in a bit field. In the Windows Controls, often styles are used, which are booleans in bit fields that you can switch on or off. You supply the bit field at creation of the control window. You can change the bit field of some bits in the fields by sending window messages to the control.
 
@@ -974,27 +861,19 @@ I would just make them properties most of the times. At most I make them creatio
 
 What is better in the Windows way? If anything, can I embed it into my way, without loosing any benefits of my way?
 
-
 Windows often stuffs multiple values into a single data unit. For instance, a bunch of boolean properties into a single integer as a bit field. That is actually size efficient. Nevertheless if you want to change one value, it requires you to retrieve the original set of values, change one flag and then assign all values at once again while you only wanted to assign one of them. The situation gets worse when not just working with a bit field, but working with a structure that contains many properties that can only combinedly be retrieved and assigned. Then there isn’t really a space efficiency and the amount of data transported is larger and more ifs are involved and more code, because handling each individual value requires its own code anyway. All ‘overhead’ given by using separate values seperately is that you have more callable functions, which is actually more a benefit than an overhead. The code handling the value assignments is there in both situations anyway.
 
 \-
 
 Consider making designers for certain things. If a designer would help.
 
-
-\-
-
 \-
 
 The simplest way to turn a variable into an expression is to enclose it in childheses.
 
-
-
-
 Tip   If you're going to use the value of a property more than once, your code will run faster if you store the value in a variable.
 
 Conversely in symbol when a property returns explicitly a variable, then you compile it to be an access of the value.
-
 
 \-
 
@@ -1006,16 +885,10 @@ Wow another kind of optimization
 
 \-
 
-\-
-
 Nominative: object or member call
-
 Genetive: member access
-
 Dative: parameter
-
 Accusative: assignment
-
 
 \-
 
@@ -1023,16 +896,8 @@ Eventually I want to be able to program microchips. Create code out of which you
 
 I eventually want to be able to program robots, machines, objects, mechanical things. Physical things. Not make microchips to go into them, but program code that describes the mechanical thing and have other machinery create a machine out of it.
 
+- Code
+    - When symbol code is compiled to code executable on Sigma on x8086 machine, extreme optimization is used that is exact and mathematical, making the module fast, small and usable.
 
-
-Code
-
-When symbol code is compiled to code executable on Sigma on x8086 machine, extreme optimization is used that is exact and mathematical, making the module fast, small and usable.
-
-
-Code
-
-Sematical simplification
-
-PAGE  41
-
+- Code
+    - Sematical simplification

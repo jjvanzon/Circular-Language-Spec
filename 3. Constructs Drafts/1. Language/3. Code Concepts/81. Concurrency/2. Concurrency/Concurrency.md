@@ -16,14 +16,9 @@ In hoeverre lost automatic containment concurrency problemen op?
 
 
 Parallel processing,
-
 2008-06-16
 
-
-
 Parallel processing could be applied in a For Each loop.
-
-
 
 JJ
 
@@ -49,91 +44,48 @@ On top of that, any connection between objects can change *just like that*, so y
 2008-07-06 Concurrency
 
 Laten we zo zeggen:
-
 Een plotselinge write, waar de reader niet van op de hoogte is,
-
 is nooit gewenst door de reader.
-
 Dus als er plotseling een reader commando aankomt, moet een
-
 command dat write rollbacken tot het punt waarop het voor het
-
 eerst naar de input van het  andere commando schrijft.
-
 Niet gelet op sub-objecten, gaat het erom: het punt
-
 waarop het commando voor het eerst iets met
-
 de parameter DOET.
-
 Als er allemaal readers aankomen tijdens het runnen van
-
 het writer command, blijft het writer command telkens
-
 de boel rollbacken, totdat er lang genoeg niemand read.
-
 Als de writer zijn command kan afmaken terwijl
-
 er niemand leest, dan is het eindelijk gelukt.
-
 Een reader kan verder zijn afhankelijkheid van een writer
-
 aangeven, als hij juist wil, dat een writer z'n werk doet,
-
 voordat hij leest.
-
 Een reader zou ook kunnen aangeven, dat hij
-
 het niet erg vind als een waarde plots verandert,
-
 dan is dat heel fijn voor de writers.
-
 Je moet voor concurrency resolution eerst
-
 maar eens omschrijven, hoe een command,
-
 die meermaals dezelfde data benadert,
-
 zich vergelijkt met gebruikers, of meerdere
-
 lopende commando's, die dezelfde data benaderen.
-
 Het lijkt wel of daar zich een command manifesteert,
-
 dat er eerder niet was.
-
 Nou eigenlijk draaien er meerdere calls tegelijk.
-
 Dat is concurrency.
-
 Als er meerdere calls tegelijk draaien, die 
-
 precies dezelfde data benaderen, dan worden
-
 die meerdere calls eigenlijk 1 commando,
-
 waarop automatic execution order moet
-
 worden losgelaten.
-
 Dat wil dus wel zeggen, dat readers de writers
-
 on hold zetten, en dus eigenlijk de data locken,
-
 totdat de readers klaar zijn.
-
 Eigenlijk wordt de data niet gelockt, maar wordt de
-
 executievolgorde tussen readers en writers
-
 bepaald.
-
 Maar het zou in timeouts kunnen resulteren.
-
 Het lijkt net, of het er niet veel anders uit komt te zien
-
 als hoe concurrency is opgelost in bestaande
-
 database systemen.
 
 JJ
@@ -162,7 +114,6 @@ Actually
 
 < Parameters not used in a specific execution: non-put>
 
-
 Threads,
 
 Thread convergence.
@@ -174,51 +125,29 @@ JJ
 
 Concurrency & Persistence Delay,
 
-
-
 When you create an SQL command object inside a method,
-
 so recreate a command object every time you call a method,
-
 rather than creating the command object inside a class,
-
 and use the same object every time you call the method,
-
 could give you a problem in a multi-threaded situation,
-
 where you use the same instance of the class to
-
 call a method, that uses the same command object.
-
 If the method creates a new command object every
-
 time you call it, the multi-threaded situation works well again.
-
 this doesn't account for database locks, though.
 
-
-
 But recreating the command call for each call to the method,
-
 is a 'Work on a copy' principle.
-
 A 'Work on a copy' principle can solve concurrency in a multi-threaded situation.
 
 It's also analogus to temporary caching data before you commit it to the database.
 
-
-
-Perhaps this can be considered next time I think about concurrency issues,
-
-and issues regarding 'persistence delay', which part solve concurrency issues.
-
-
+Perhaps this can be considered next time I think about concurrency issues, and issues regarding 'persistence delay', which part solve concurrency issues.
 
 JJ
 
 
 Concurrency resolution,
-
 2008-08-15~
 
 The whole idea of a user only ever performing an action by creating an executable object and running it, visualizes the volatility of command calls, when they are not programmed, but executed arbitrarily, like users make them do. This instantly creates new concurrency situations inside objects and commands that do not have a class or definition (that have arbitrary contents). Compared IO and automatic execution order can be a key to solving concurrency for user-executed commands just as well as command-executed commands.

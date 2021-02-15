@@ -179,272 +179,165 @@ In version 0.9 of the new computer language almost any part of the code, that wa
 
 This article covers the why and where it went wrong before. It is explained why this principle was come up with, but this makes it harder to read, because it is not enough a raw description of the concept. It may give you an impression of: “Why do I need to know all this? Why are you bothering me with all of this background information?”.
 
-#### C++ / C#
+#### C++ / C\#
 
 This principle constitutes the mere fact, that the code base of the new computer language will initially be programmed using C++ or C#. It is called an achievability principle, because originally the new computer language was written in VB6 and this created a great performance barrier. Version 2.0 of the new computer language is based on C++. Version 3 of the new computer language will be based on C# and .NET.
-
 
 ## Ideas
 
 *The texts below are loose ideas yet to be turned into good documentation.*
 
 Fundamental Principles,
-
 2008-10-16
 
-
-
 I am analysing crap code at work now,
-
 and I remember why I ever came up with the diagram notation.
-
 I have to do vast analysing to see what calls upon what,
-
 and what input is transformed and passed on to which parts
-
 of the system.
-
 In the diagrams you get that information basically for free.
-
 So that must be the background of this language:
-
 the code is the analysis, and more specifically put:
-
 you can immediately see which parts are linked to eachother
-
 and make use of eachother, and what input and output
-
 goes where.
-
-
 
 JJ
 
-
 Fundamental Principles,
-
 2008-10-17
 
 I guess I want the new computer language to be as fundamental
-
 as the Von Neumann architecture.
 
 It’s totally different than what was before, but so logical we will not
-
 change it any time soon.
 
 JJ
 
 Fundamental Principles,
-
 2008-11-05
 
-
-
 It may be a fundamental principle, that all references are registered.
-
 It may also be fundamental principle, that possible bad behavior should not compromise your abilities for good behavior.
-
 So the use of your creativity should not be put to a limit by possible bad behavior of others.
-
 If you can make a system that completely work following these principles, than that would be great.
 
-
-
 The Fundamental Principles can be guarantees the system must give and should not be broken.
-
-
 
 JJ
 
 
 Fundamental Principles,
-
 2008-11-05
 
-
-
 The bad behavior principle is why registration of all references
-
 SHOULD be designed for good practice to work, without having to consider the bad behavior.
-
 Deterring bad behavior should be completely separately adressed,
-
 because also in the design of the new computer language,
-
 bad behavior should not have to be considered, because it it may not compomise my creativity
-
 by having to think about all sorts of possible bad behavior as I try to design a language to do good with.
-
 Programming USING the language should be the same: you should only have to separately address
-
 possible bad behavior, not while you are designing a system that works for good behavior.
 
-
-
 JJ
 
 
-
-
 CL,
-
 2008-11-13
 
-
-
 Als allerlei dingen aan elkaar gebonden zijn in een systeem,
-
 waarom zitten we dan allemaal coderegels te bestuderen en niet
-
 gewoon aan elkaar gekoppelde objecten?
-
-
 
 JJ
 
 
-
 CL,
-
 2008-11-30
 
 It happens a lot, that a design pattern already existed
-
 for a long time, but only gets popular, when you make
-
 it an actual language element.
-
 So all good patterns must be present in the programming
-
 language itself, or the whole world of software development
-
 will not use it at all and will lag behind on progress that
-
 already took place.
 
 JJ
 
 
 Computer Language,
-
 2008-12-22
-
-
 
 That Concept construct I want in my programming language seems to have existed forever:
-
 http://www.lucas.lth.se/lucas-dagar/2002/slides2002/hedin.pdf
 
-
-
 It seems, that the problem with good concepts, such as Aspect Oriented Programming and design patterns, is that they are not used, because they do not become part of the programming language. Those ideas could be made part of the programming language, but instead they are introduced as methodology.
-
 If they are made part of the language, then hobbyists will be more likely to use it.
 
-
-
 Many beautiful concepts come up with in the 70's, 80's and 90's are not used, because not enough people know about it.
-
 Many of those concepts could be made part of a programming language itself, so that more people, trying out programming, are tempted to experiment with them. If they don't have it available in the language, many concepts will be forgotten about, and the whole proffession of software programming lags behind on itself.
 
-
-
 That is why I need to get myself educated about all the ideas, that already existed, so that I know how to give them a place in my own programming language.
-
 I need to converge existing ideas, and turn them into new products. That should be my job, rather than just reinventing everything. That would make me more effective in my job. I should be less individualistic. I can do much better work when I use ideas, that already existed before I was born. Those people were not stupid.
 
-
-
 JJ
 
+
 Computer Language,
-
 2008-12-22
-
-
 
 I ask myself if anything original is left to my language,
-
 when I orient myself into existing ideas.
 
-
-
 It is sort of soothing, though, that I am not doing everything by myself,
-
 but are just recombining existing ideas.
 
-
-
 JJ
 
 
 Computer Language,
-
 2008-12-22
 
-
-
 Als hedendaagse programmeertechnieken zo geweldig zijn,
-
 waarom is alles dan nog steeds zo'n haperende troep.
-
 Met name als je aan het programmeren bent.
-
-
 
 JJ
 
 
 Computer Language,
-
 2008-12-23
 
-
-
 Heel veel van die dingen kom je gewoon niet vanzelf tegen.
-
 En dat is jammer. Want zo leren de meesten programmeren:
-
 door dingen vanzelf tegen te komen.
-
 En dat stimuleer je door het in de taal zelf op te nemen.
-
-
 
 JJ
 
 
 Software Development,
-
 2009-01-16
 
-
-
 Dat electronic sheep geeft me echt het gevoel,
-
 dat als software niet afgrijselijk mooi is,
-
 het eigenlijk geen indruk maakt.
-
-
 
 JJ
 
 
-
 New Computer Language,
-
 2009-02-12
 
 You can put a breakpoint on members of specific objects, not just a member of a class.
-
 Just as well you can put a breakpoint on any data member’s get or set procedures or other system procedures.
 
 JJ
 
-New Computer Language,
 
+New Computer Language,
 2009-02-12
 
 ‘Not too much derivation’ could be a Fundamental Principle, for the same reasons as Lack of Choice = Guarantees.
@@ -452,91 +345,60 @@ New Computer Language,
 JJ
 
 Commands / Computer Language,
-
 2009-03-13
 
 What if you can say: I want a command on that object, that calls that program's this and that command.
-
 The reason programming is hard, is because programming languages are too hard.
-
 The user knows what he wants. Why is it any more difficult to realize something on the computer,
-
 than to just tell the computer what it is you want?
 
 JJ
 
 
 Computer Language,
-
 2009-03-13
 
 Folders, containing files and other folders?
-
 Presented in a tree structure without it even actually looking like a tree?
-
 Why is it you are presenting only the IDEA of containment,
-
 and not how containment actually looks?
 
 JJ
 
 Computer Language,
-
 2009-03-13
 
 Icon display and double clicking on them, showing THEIR contents,
-
 is ALMOST what I want to see regarding containment,
-
 except, that you will actually see the zooming in animate.
 
 JJ
 
-Computer Language,
 
+Computer Language,
 2009
 
-
-
 Zodat software ontwikkelaars nog minder weten van wat er op fysiek niveau gebeurt...
-
 Op zich wel mooi om je op conceptueel niveau bezit te houden,
-
 maar het creeert ook meer afstand ten opzichte van wat er fysiek gebeurt.
-
 Dat heb je al met SQL. Dat wordt niet per so nog erger met LINQ, maar
-
 dat houdt het wel in stand. Er zijn al tal van programmeurs, die verrotte queries schrijven
-
 en daarna de database de schuld geven, omdat ze geen flauw benul hebben
-
 van wat er onder water eigenlijk gebeurt. Het beste snap je zowel dingen op conceptueel niveau,
-
 als de fysieke uitvoering ervan.
-
 Ik zie daar wel een voordeel van mijn eigen taal in. Die verbindt die twee en maakt ze even toegankelijk.
-
-
 
 JJ
 
 
 Computer Language,
-
 2009-03-31
 
-
-
 Who is this guy:
-
 http://strlen.com/index.html
 
-
-
 Perhaps that guy built a model
-
 around the OpenGL library.
-
 He's probably just a darn-good programmer too.
 
 JJ
@@ -544,223 +406,133 @@ JJ
 \-----
 
 Computer Language,
-
 Fundamental Principles,
-
 2009-03-31
 
 It is possible to program as simply in assembly
-
 as you do in the new computer language, but
-
 in the new computer language you are more dictated
-
 to work within a certain paradigm.
-
 You can apply the paradigm in assembly language too,
-
 but in assembly you can more easily break those rules.
-
 In the new computer language the rules are more imposed.
-
 Actually, in the new computer language you are also not obliged
-
 to do it that way.
 
 In an object oriented language you can 
-
 still program procedural, but it is just, that objects and classes
-
 are a programming construct of an importance equal to
-
 that of procedures.
 
 In the new computer language it is the same way:
 
 relations and concepts are programming constructs of equal importance, but you do not have to use them.
-
 Nevertheless, they are so present as a programming construct,
-
 that you start to use them anyway.
 
 Actually a lot of programmers took a long time to realize
-
 what they need classes for to program with.
 
 But they have been applying them for years, because they
-
 have been USING classes. They just hadn't been programming classes.
 
 In the new computer language it is the same way:
-
 concepts, relations and objects and commands and everything
-
 are clearly present in the framework libraries.
-
 You will be using them before you start to program them yourself.
 
 In assembly, you could program in an object oriented way
-
 with classes. It is a matter of working in a certain fashion
-
 and yes, the syntax looks much different, but you are still
-
 modeling with classes and objects.
 
 JJ
 
 
-
-
 Computer Language,
-
 2009-04-08
 
-
-
 Just about everything in text code is reference by name.
-
 You do not physically see connections between things.
-
 The correspondence of names creates the connection.
-
 That is what is hard about analysing existing code.
 
-
-
 JJ
+
 
 New Computer Language Functional Design,
-
 2009-04-16
 
-
-
 A user-defined order number of a user-defined sorting,
-
 and the use of aliases prevents dead links .
-
-(you could also do a kind of automatic aliasing: when a link is not found, the history of that link would be stored inside the container of the leaf, and 
-
-
-this could be used to offer a suggested new linkage, when the dead link was attempted to be accessed.
-
-
+(you could also do a kind of automatic aliasing: when a link is not found, the history of that link would be stored inside the container of the leaf, and this could be used to offer a suggested new linkage, when the dead link was attempted to be accessed.
 
 JJ
-
-
 
 
 NCL Fundamental Principles,
-
 2009-04-20
 
-
-
 Connections between system elements in text code are ALWAYS established purely through name correspondence.
-
 That's one of the problems with analysing text code. You have to aquaint yourself with the names,
-
 before you can start to understand the connections between things.
-
 And through those connections, understanding which are main things, which are less important things,
-
 which are big things, which things are unused and what are the first things or prime things,
-
 that a program does.
-
 An understanding of those things is what the result of such analysis is.
-
 Text code alone never reveals such information immediately,
-
 so understanding text code is always accompanied by either explanation through documentation
-
 or by analysing the code.
 
-
-
 In diagrams, the connections and the prominence of things are already visible to the naked eye,
-
 so the connections and hierarchy between things are apparent at a much earlier stage (more or less immediately),
-
 when looking at other people's code.
 
-
-
 One thing, not apparent from text code OR diagrams is: WHY. Diagrams display the workings of a system,
-
 but not what we need those workings for. For that you still need documentation.
-
-
 
 Constructing text code to be totally self-documenting in my view is a total lie.
 
-
-
 JJ
 
 
 NCL Fundamental Principles,
-
 2009-04-20
 
-
-
 Code along with comment can not easily point out things like the following.
-
 Simply: where does the program start?
-
 What are the prime things the program does and where does it do it?
-
 What prime components is the program composed of and how do they relate to eachother?
 
-
-
 WHY is the program structured like this?
-
 What is the program FOR?
 
-
-
 The only way to add this to the code, in my view is to add a txt file, named ReadMe.txt
-
 or something and tell those things there.
-
-
 
 JJ
 
 
 CL Fundamental Principles,
-
 2009-05-14
 
-
-
 The problem with learning to understand how computer works,
-
 by just playing with it, is that what really happens inside the computer
-
 is invisible.
-
-
 
 JJ
 
 
 Computer Language,
-
 2009-06-12
 
 All we are working with is just feedback from what is really going on inside the computer.
-
 We are just tapped in and only tap off some of what's going on inside that thing.
 
 JJ
 
-Computer Language,
 
+Computer Language,
 2009-05-02
 
 I might not have a good spot or good explanation about how assembly seamlessly integrates into the language. This is part of the achievability principles, but also makes use of the Binaral concept and the Value concept too.
@@ -768,142 +540,83 @@ I might not have a good spot or good explanation about how assembly seamlessly i
 JJ
 
 Fundamental Principles,
-
 2009-06-14
 
 Hoeveel van die beloftes worden al waargemaakt in de coding concepts & data concepts?
-
 \> Anders denken ze: "Jij praat poep".
-
 Zou je na het uitwerken van Input / Output NOG een belofte kunnen doen, aangaande concurrency resolution?
 
 JJ
 
 Internet,
-
 2009-08-14
-
-
 
 http://74.125.77.132/search?q=cache:T0M\_SRpZE9gJ:www.bofh.org.uk/2008/04/07/code-is-data-and-it-always-has-been+code+is+data&cd=2&hl=nl&ct=clnk&gl=nl
 
 
-
-
-
 Possible response :
 
-
-
 I think you are putting to much effort into answering this question.
-
 I would put it more bluntly.
-
 'Code = data' is not an idea. It is a fact.
 
-
-
 It is character data or binary data, with a certain format, that can be interpreted by the computer.
-
 It is a description of linkages between program elements.
-
 Not much different from a spread sheet, which is also contains linkages between data and stuff that can be executed.
-
-
 
 Code is merely data, that describes a program.
 
-
-
 You do not need reflection or code generation for that to be a fact. It is what it is: data that describes a program.
-
-
 
 JJ
 
 
-
 Fundamental Principles,
-
 2009-08-18
 
-
-
 Data wordt heen en weer geflipperd,
-
 en procedures delegeren allemaal naar elkaar door.
-
 En soms delegeren en er een beetje veel procedures naar elkaar door,
-
 en flippert er een beetje veel data heen en weer. Complexiteit noemen we dat dan.
-
 En als er te veel complexiteit is ten opzichte van de functionaliteit,
-
 dan noemen we dat spaghetti.
 
 JJ
 
 
 Ideas,
-
 2009-10-28
-
-
 
 The word architecture is something I also do not want to hear.
 
-
-
 JJ
 
 
-
 Fundamental Principles,
-
 2009-12-02
-
-
 
 Of mensen flyers krijgen is afhankelijk van betalingsachterstanden.
-
 Het grappige is, dat als je erover rapporteert en je kent de logische verbanden
-
 van de twee eigenschappen niet, dan kom je er misschien gaandeweg per ongeluk achter,
-
 dat de twee verband houden.
-
 In NCL zie je het verband (makkelijker), omdat je de koppeling tussen de afweging en de velden ziet.
-
 Je ziet dus een indirecte koppeling tussen de twee velden,
-
 omdat je de programma logica ertussen ziet.
-
 Is dit zo? Zie je in de diagrammen ook indirecte verbanden snel? Net zoals je directe verbanden snel ziet?
 
-
-
 JJ
-
 
 
 Fundamental Principles,
-
 2009-12-02
 
-
-
 Als dingen in het programma dicht bij elkaar staan, zie je het misschien wel, 
-
 maar ik zou misschien in de toekomst meer mogelijkheden willen zien om indirecte verbanden zichtbaar te maken.
 
-
-
 JJ
-
 
 
 \> Fundamental Principles,
-
 2010-05-07
 
 If everything starts out freely definable, then you make a system by creating restrictions. So systematics are defined through restrictions. If there are not restrictions, you can program anything programmable. After you create a system of classes, someone else may create a system of objects, in which not everything is programmable, but only very specific things are programmable.
@@ -912,243 +625,155 @@ JJ
 
 
 Fundamental Principles,
-
 2010-04-25 ~
 
 How does Aquima impose rules.
-
 No, back to Circle.
-
 Everything is possible with all the constructs available. But awareness of all the custruct should inspire you to pick the right solution in the right situation.
-
 And now Aquima.
-
 You always have to pick one out of 5 first.
-
 In a way, in Circle, you always have to pick one out of 12 first, or something.
-
 You have to pick a construct…
-
 I am not going to brainstorm more about these fundamental things. I can not get my head around it right now.
 
 JJ
 
 
 Fundamental Principles,
-
 2010-02-17
 
-
-
 To defend the references lines vs. name correspondence
-
 you can say that even small programs consist of tens of thousands
-
 of references. Each operator, function call or variable reference
-
 is a reference. So basically a typical code line consists of between 3 and 20 references.
-
-
 
 JJ
 
 
 Fundamental Principles,
-
 2010-03-25
-
-
 
 Take the following question: There is a function. What other functions use it, and which functions use those functions?
 
 This is a question that often needs to be answered when you analyse existing computer code. And this is a difficult question to answer. In most programming environments answering this question requires extensive analysis of the code, even when you have a tool for searching references. It gets worse if there the involved functions are not only used internally by a program, but also used by yet again other programs.
-
-
-
 The diagram notation of NCL actually makes this otherwise difficult to extract information visible instantly. This is a big benefit of the NCL.
 
 You might have to use coloring to make the information pop out of the diagram, but using the diagram notation it is evident how to easily highlight this.
 
-
-
 JJ
 
 
-
 Fundamental Principles,
-
 2010-03-25
-
-
 
 To prove the usability of the diagram language, the best thing to do is to be able to apply the notation inside existing environments and apply it to existing code and programs. Then it becomes evident where the benefits are.
 
-
-
 JJ
 
 
 Fundamental Principles,
-
 2010-03-19
 
-
-
 Kwaliteit, correctheid en elegantie de eisen waaraan een computerprogramma moet voldoen?
-
 Dat was 50 jaar geleden. Ik ben geen brave volgeling. Ik heb daar een andere visie op. Ik zeg:
-
 Bruikbaarheid, effectiviteit en eenvoud. Dat zijn de eisen waaraan een computerprogramma moet voldoen.
-
-
 
 JJ
 
 
 Fundamental Principles,
-
 Low and high coupling,
-
 2010-04-16
 
-\> Turns out that the definition of low-coupling I use here is not the one
-
-`    `generally used.
+\> Turns out that the definition of low-coupling I use here is not the one generally used.
 
 I have found two definitions of the term low-coupling:
-
 One definition is a system's actually being composed of less connections.
-
 Another definition is connecting systems through interfaces, with limited and defined sets of members.
-
 \> And I found more definitions later.
 
 A combined (mis)conception is that both are the same thing.
 
 The first definition is actually what it should mean in my view: a system's being composed of less connections.
-
 In the story below I try to explain why communication through interfaces does not
-
 necessarily mean that the system is composed of less connections.
 
 What low-coupling tries to solve is limitation of (possible) connections to create clarity about how systems interface with eachother.
 
 In high-coupled situations any system element could potentially be accessing any other system element,
-
 while in low-coupled situations systems only access eachother though defined interfaces: a set of accessible system elements,
-
 while the rest of the system is not accessible.
 
 This is handy for being able to change the way systems connect to eachother,
-
 when for instance a piece of the system is discontinued or replaced,
-
 or to offer an easy way to connect new pieces of system to existing interfaces.
 
 I think the terms loose coupling or high coupling are inaccurate terms.
-
 I think a better way to describe it would be clear coupling or unclear coupling.
 
 The thing with high and low coupling is not necessarily that there
-
 are more or less connection points in either situation,
-
 but that in case of what is called low coupling,
-
 it is clearer to see at what points systems connect
-
 and a limit is imposed onto at what points systems could connect.
 
 There is something most programmers fail to see in case of high-coupling.
-
 The argument against it is: any member could be accessing any other member.
-
 But the thing is: any member is not accessing any other member,
-
 it is just not easy to see which members access which other members.
 
 There is also something most programmers fail to see in case of low-coupling.
-
 Programmers tend to see the number of interfaces as the absolute number of connections.
-
 However, there are many more connections as interfaces also have disparate members,
-
 that can be separately connected to.
 
 Each connection to a member of an interface is a separate connection.
-
 Each method call, call upon a data member, filling in of a parameter,
-
 assignment, indirection, etcetera, is a connection. Those connections are there in either low-coupling or high-coupling situation.
 
 In fact, if you make an interface, but you make it too elaborate, you end up with a highly coupled situation again:
-
 any member of the interface could be connected to and you can not easily see which members are used and which are not.
-
 In an elaborate interface it is still not clear which which members access what other members.
-
 While supposedly there would only be one connection. Yeah right.
 
 In a finished system in either a high-coupling or low-coupling situation,
-
 both situations actually show the same number of connection points between members,
-
 variables, etcetera.
 
 So low coupling does not really mean less connection points,
-
 just clarity and limitation of the possible points of connection.
 
 Low coupling: the interfacing is clear and constrained.
-
 High coupling: the interfacing is not easy to see and 
-
 it is not defined which members are potentially accessed in later sofware developments.
 
 The problem with allowing more possible connections is that potentially more connections are made, but that does not mean that this is necessarily what is happening.
 
 What's forgotten, is that if you connect to a single interface, you do not really
-
 have one connection. There can be many connections to the numerous parts of the interface.
 
 The term low-coupling is even in contradiction with itself.
-
 Given a finished system, the supposedly high-coupled version would actually contain less connections,
-
 than the low-coupled version. The low coupled version would contain more connections,
-
 because on top of the members accessing eachother, they are separeted by interfaces,
-
 creating more indirections between their connections, and these indirections are connections in itself.
-
 You first need to connect to the interface, and then you connect to the member.
 
 Theoretically in a low coupling situation there are actually more connections, because
-
 instead of connecting to a data member directly, first there is connected to an interface,
-
 and then to the data member, and maybe even not directly with the data member,
-
 but with some adapters in between. So actually, in a finished system low coupling
-
 may have more connections than the high coupling variation.
 
 So low-coupling and high-coupling are the illusion of having less connections.
-
 The situation solved by low-coupling is not having less connections, but having more insight and control over those connections.
 
 Insight into the connections in an existing system, and control over the possible connections when a system is changed.
-
 There is another thing that does not work well in low-coupling, while it should actually be the stuff that low-coupling should be solving.
-
 If a low-coupled situation changes, you might end up with a lot of unused interface members, of which you can not easily see that they are not required anymore.
-
 So that is the inverse of not knowing what is used: not knowing what is not used anymore.
-
 So you have a cluttered interface with members that are not used of which you do not know that you could remove them.
-
 When you have an interface, and only 5% of the interface is still used, you still have the same problem as in the highly coupled situation:
-
 you have a ton of members and you do not know which are accessed by what.
 
 Low-coupling is there in order to be able to know how systems interface and to be able to facilitate controlled changes inside those systems.
@@ -1160,33 +785,22 @@ I think the coupling and cohesion are irrational words, because the number of co
 Whether you connect to members directly or group the connections into interfaces: all the connections are still there, actually you have increased the number of connections by first having to connect to the interface.
 
 NCL would solve this for a great part and easily show that the low-coupled (high-interfaced) version actually has more connections than the high coupled (low-interfaced) version.
-
 In NCL the readability of the highly coupled system will be better than in other languages, especially when the lines will be regroup as they go from sources to targets.
-
 I just forgot how valuable that part of the notation could be when it comes to reading how systems interface with eachother.
-
 Each grouping of lines could potentially be replaced by an interface, only then you would end up with too many interfaces again.
-
 NCL with the use of regrouping of lines as they go from sources to targets would make it easier to automatically explicitly define the interfacing points, or make it easier to spot a place in the system in which it looks appropriate to create an interface in between.
-
 But if you create a derived interface for each user of an interface you have actually applied to concept of low-coupling, yet you have created more complexity by creating an insane amount of interfaces.
 
 Clearly defined interfaces are still valuable in NCL, and do not all of a sudden become unnecessary, but they DO create more connections, rather than less if you put more interfaces in between. However proper interfaces can make the system more readable.
 
 (Low-coupling is not the same as encapsulation. But both are solved using interfaces.
-
 Both low-coupling and encapsulation (data-protection) are concepts that are applied using the concept of interfaces, but they attempt to solve different problems,
-
 so they are not the same thing. Low-coupling should be about complexity reduction or complexity tangibility, encapsulation should be about data protection and stability.
-
 So one is about understandability of a system, and the other is about how easily we can thump over a system.)
 
 So the technique of low-coupling does not create less connections. So low-coupling it is not an exact science of creating less connections, because putting an interface in between
-
 actually creates more connections. It is about limitation of complexibility, tangibility of complexity and prevention of complexity. The low-coupling techniques can help in this, but going too far with it actually create more complexity, people just forget to count the actual connections and only count the interfacing points over which multiple connections can be made.
-
 Furthermore, the rules of interfacing are not enforced by the machine, but by human hand.
-
 You will not devise a system that prevents complexity, it will be humans that prevent complexity, by making things more readable for himself, making it less likely for humans to break their own rules, and humans imposing rules onto another humanbeings.
 
 Programmers usually get emotional, irrational and upset, when you state that low-coupling is not an exact science and not necessarily required. They irrationally think it is an exact science, because they are selectively forgetting and imagining connections that are or are not there, because in their head they select a set of connections and forget about connections that are still there.
@@ -1199,115 +813,73 @@ JJ
 
 
 Fundamental Principles,
-
 Low and high coupling,
-
 2010-04-16
 
 Actually designing a system in which one component
-
 uses a very sober set of member of another component,
-
 thus limiting the number of connections in the design.
 
 It is not the interface that solves it, but the fact that you use a sober set of members.
-
 The actual low degree of connections from one module to the other
-
 makes it low coupling regarless of an interface being in between or not.
 
 JJ
 
 
 About coupling,
-
 2010-04-16
 
-
-
 http://martinfowler.com/ieeeSoftware/coupling.pdf
-
-
 
 JJ
 
 
 Coupling,
-
 2010-04-16
-
-
 
 There are more definitions to low coupling:
 
-\- Using a mutual interface for multiple types of objects,
-
-`   `so that the consumer is not bound to the classes, but to the interface.
-
-\- To prevent having to change n things, you let them refer to a bridging 1 thing,
-
-`   `that connects to the targeted resource.
-
-\- You can separate things into layers so that people of different disciplines can 
-
-`   `work on the layer they specialized in.
-
-\- When you want to keep storage separated from presentation,
-
-`   `possibly allowing multiple representations of the same data,
-
-`   `and you want to be able to change the data model.
-
-`   `(At one point the data model changes so much you can not 
-
-`    `prevent the interface of the bridge to change or even the user interface to change,
-
-`    `or you are going to have to keep your data model backwards compatible,
-
-`    `something that you were trying to work around with the bridge.)
+- Using a mutual interface for multiple types of objects,
+  so that the consumer is not bound to the classes, but to the interface.
+- To prevent having to change n things, you let them refer to a bridging 1 thing,
+  that connects to the targeted resource.
+- You can separate things into layers so that people of different disciplines can 
+  work on the layer they specialized in.
+- When you want to keep storage separated from presentation,
+  possibly allowing multiple representations of the same data,
+  and you want to be able to change the data model.
+  (At one point the data model changes so much you can not 
+  prevent the interface of the bridge to change or even the user interface to change,
+  or you are going to have to keep your data model backwards compatible,
+  something that you were trying to work around with the bridge.)
 
 So simply trying to make things that are actually independent on eachother,
-
 sort of independent of changes to the dependency, you build a bridge between them.
-
 It does require additional code, additional connections and wiring, adds complexity.
-
 I would not recommend putting a bridge between any two objects.
-
 That would create incredible complexity. How is that going to help you change the code?
-
 So you have to apply this when it is useful.
 
 I can imagine that an ESB allows you to define interfaces / adapters between any two resources.
-
 Or offer the same interface to multiple programs or the give multiple resources the same interface, or create bridges between systems.
 
 JJ
 
 
 Coupling,
-
 2010-04-16
 
 More brainstorming.
-
 All this bridging has nothing to do with the cohesion they often talk about.
 
 JJ
 
 
 Fundamental Principles,
-
 2010-04-20
 
-
-
 To analyse if something is used anymore by executing a search,
-
 when you an extra data access layer in between you can not easily see if something is no longer used or not.
 
-
-
 JJ
-
-

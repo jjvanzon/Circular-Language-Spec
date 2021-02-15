@@ -34,10 +34,9 @@ If you want to pass more complex objects to a command, you do it by reference, b
 
 In parameter passing by value, the parameter object and the object, that is passed the value to or from, are not referring to eachother at all.
 
+
 Relations between objects,
-
 Value parameters,
-
 2008-09-09
 
 Value parameters do not have the interchangability between command parameters and object commands, because they are not a relationship.
@@ -308,15 +307,13 @@ Unlike parameters passed By Reference, an Object Out parameter is *referred to*.
 
 The long names of parameters passed By Reference were:
 
-\- Reference Outward, Value Inward
-
-\- Reference Outward, Value Outward
-
-\- Reference Outward, Value Thru
+- Reference Outward, Value Inward
+- Reference Outward, Value Outward
+- Reference Outward, Value Thru
 
 The long name of value Object Out is:
 
-\- Reference Inward, Value Out
+- Reference Inward, Value Out
 
 So this is a Reference Inward parameter, as opposed to a Reference Outward parameter. The reference direction goes the other way around. Instead of a parent passing an object to the command, it is like the *command* passes a reference back to container of the command.
 
@@ -358,63 +355,53 @@ By Value, Reference Outward and Reference Inward are the different reference sit
 
 So the long names of the different parameter passing types are:
 
-\- Value In
-
-\- Value Out
-
-\- Value Thru
-
-\- Reference Outward, Value In
-
-\- Reference Outward, Value Out
-
-\- Reference Outward, Value Thru
-
-\- Reference Inward, Value Out
-
-~~- Reference Inward, Value In~~ 
-
-~~- Reference Inward, Value Thru~~ 
+- Value In
+- Value Out
+- Value Thru
+- Reference Outward, Value In
+- Reference Outward, Value Out
+- Reference Outward, Value Thru
+- Reference Inward, Value Out
+- ~~Reference Inward, Value In~~ 
+- ~~Reference Inward, Value Thru~~ 
 
 Reference Inward, Value In and Reference Inward, Value Thru are not relevant, because an reference *inward* only is about an *output* object.
 
 It is important to keep understanding that there are three elements to parameter passing:
 
-\- Values read or written
-
-\- Parameter is a reference outward
-
-\- Parameter is referenced from the outside
+- Values read or written
+- Parameter is a reference outward
+- Parameter is referenced from the outside
 
 To understand how the different parameter passings came about, it is important to keep those three aspects in mind.
 
 Here is a list of the parameter passings, with their short names, and their diagram expression:
 
-\- Value In
+- Value In
 
 ![](images/Input%20Output%20Parameter%20Passings.046.png)
 
-\- Value Out
+- Value Out
 
 ![](images/Input%20Output%20Parameter%20Passings.047.png)
 
-\- Value Thru
+- Value Thru
 
 ![](images/Input%20Output%20Parameter%20Passings.048.png)
 
-\- Reference In
+- Reference In
 
 ![](images/Input%20Output%20Parameter%20Passings.049.png)
 
-\- Reference Out
+- Reference Out
 
 ![](images/Input%20Output%20Parameter%20Passings.050.png)
 
-\- Reference Thru
+- Reference Thru
 
 ![](images/Input%20Output%20Parameter%20Passings.051.png)
 
-\- Object Out
+- Object Out
 
 ![](images/Input%20Output%20Parameter%20Passings.052.png)
 
@@ -586,7 +573,7 @@ Next to an easier expression of Get Private and Get Public, you may also want to
 
 2008-09-29
 
-However, New In does mean creation from the outside and New Out does mean creation on the inside… so … it’s not just the inside then… how does that relate to the rest of the ideas about In, Out and Thru?
+However, New In does mean creation from the outside and New Out does mean creation on the inside... so ... it’s not just the inside then... how does that relate to the rest of the ideas about In, Out and Thru?
 
 JJ
 
@@ -595,13 +582,9 @@ JJ
 If an aspect is both In and Out and the two access control elements are right next to eachother, it can be replaced by a single access control element Thru:
 
 Object Thru
-
 New Thru
-
 Annul Thru
-
 Value Thru
-
 Class Thru
 
 ### Brainstorm 2008-09-27
@@ -628,9 +611,8 @@ Then I can work my way up to an end point. And in the next project I can just ca
 
 The problem with defining what is input and what is output, is:
 
-\- Is input what is written from the outside, or is input what is read from the inside.
-
-\- Is output what is read from the outside, or what is written on the inside?
+- Is input what is written from the outside, or is input what is read from the inside.
+- Is output what is read from the outside, or what is written on the inside?
 
 You might think: both; something that is written from the outside is read on the inside and something that is written on the inside, is read from the outside.
 
@@ -656,46 +638,31 @@ So it seems, that after all input is: written from the outside, read on the insi
 
 But there is one thing wrong here:
 
-\- incidently something that is written from the outside, is not read on the inside
-
-\- and incidently something that is written on the inside, is not read from the outside.
-
-\- Incidently something is not written from the outside at all, but read on the inside all that same, but then a default value is read or an error or something missing is caught. 
-
-\- Incidently something was not written on the inside, but read from the outside all the same, but then a default value is read of an error or missing of something is cought
+- incidently something that is written from the outside, is not read on the inside
+- and incidently something that is written on the inside, is not read from the outside.
+- Incidently something is not written from the outside at all, but read on the inside all that same, but then a default value is read or an error or something missing is caught. 
+- Incidently something was not written on the inside, but read from the outside all the same, but then a default value is read of an error or missing of something is cought
 
 That has to get a name: so it is a missing read or write of input or a missing read or write of output.
 
 But still:
 
-\- input means writing on the outside, reading on the inside.
-
-\- Reading can also be reading for access. Not necessarily reading for assignment
-
-\- Reading for access and reading for assignment need to be separately access controlled and it will change parameter passing.
-
-\- Incidently a read or write of input or output is missing. That will be given a term.
-
-\- When a read or write is done on the outside, the a write or read must be executed on the inside, even though scarcely or incidently not.
+- input means writing on the outside, reading on the inside.
+- Reading can also be reading for access. Not necessarily reading for assignment
+- Reading for access and reading for assignment need to be separately access controlled and it will change parameter passing.
+- Incidently a read or write of input or output is missing. That will be given a term.
+- When a read or write is done on the outside, the a write or read must be executed on the inside, even though scarcely or incidently not.
 If you don’t read input, then you can not call it input: an error or warning is generated.
 
-In For Access
-
-In For Copy
-
-Value In For Redirection > not possible
-
-Value In For Copy
-
-\> is just Value In
-
-Object In For Redirection
-
-Object In For Copy
-
-Class In For Access.
-
-\> How can you access a class? Don’t you only access an object? Yeah, I think you do. So the separaption between for access and for copy only counts for Object access.
+- In For Access
+- In For Copy
+- Value In For Redirection > not possible
+- Value In For Copy
+    - \> is just Value In
+-Object In For Redirection
+-Object In For Copy
+-Class In For Access.
+    - \> How can you access a class? Don’t you only access an object? Yeah, I think you do. So the separaption between for access and for copy only counts for Object access.
 
 So:
 
@@ -705,7 +672,7 @@ Object Set Public, Value Get Private
 
 Object Set Public, Object Get Private For Redirection, Value Get Private
 
-Hmmm… if you get the value of an object, does that mean you first follow redirection? I guess you do..
+Hmmm... if you get the value of an object, does that mean you first follow redirection? I guess you do..
 
 The last bit of the access control literal specifies, you can only follow redirection of the object to get the value or otherwise it would be Data Get Private.
 
@@ -723,7 +690,7 @@ So Value In means you write the value from the outside, not the object, and you 
 
 Actually, it could be: Value Set Public, Object Get Private For Copy.
 
-Value is Set, but not read. Well.. it has to  be read by a sub-command then…
+Value is Set, but not read. Well.. it has to  be read by a sub-command then...
 
 I am still confused. I have brainstorming to do.
 
@@ -731,7 +698,7 @@ But it’s no use writing something, if you don’t read it at some point.
 
 Sub-commands yield over in, out properties to their parent commands. 
 
-You write the value… it needs to be written at some point.
+You write the value... it needs to be written at some point.
 
 When you write the value from the outside, and you can only access the object on the inside, you have to pass the object to a sub-command, that does write the value. But can you really know? Maybe not, but it should be read somewhere on the inside.
 
@@ -770,7 +737,6 @@ but WHERE it is then read could be somewhere totally else than directly outside 
 ### More Ideas
 
 Parameters,
-
 2008-08
 
 The command definition can also contain a set of related objects. Those are the parameters of the command. They are just input, output, throughput or downput. This input, output, throughput and downput is passed on to the sub-commands, that are given outward references to these items.
@@ -779,24 +745,18 @@ JJ
 
 
 Parameter passings,
-
 2008-09-05
 
 If a command parameter is typed with in, out, or though,
-
 then an object command can also be given a title depending
-
 on whether it will be input, output, throughput, etcetera.
-
 input is not an object that something is done to. It can be considered an object doing something to another object. So it is clearly an actor.
-
 It matters whether the object is used (read), affected (written), or produced. This alters the object’s position in relation to to the command.
 
 JJ
 
 
 Parameters,
-
 2008-06
 
 Always something is the input and something is the output: at least one thing is used, and at least one thing is affected. But the affected thing can also be a new thing
@@ -806,42 +766,30 @@ One thing is executed on another. So its data executed on data.
 JJ
 
 
-
 Access Controling System Aspects,
-
 2008-09-21
 
 When you access control the system aspects of a parameter, does this have implications for acces control of the object’s command?
-
 When you show a command inside an object, how will you see, that the command outputs the object or if the command uses the object?
 
 JJ
 
 
-
 2008-09-26
 
 Adapt the access control of system aspects
-
 in the parameter articles to Object Get for access and for copy...
 
 JJ
 
 
 Parameters,
-
 2008-09-11
 
-
-
 Value In parameter used for selection
-
 Value In parameter used for persistance
 
-
-
 JJ
-
 
 
 When a command is called, objects are filled into the parameters of the command. A command will use objects to do its work. The objects filled in as parameters are also called arguments.
@@ -849,14 +797,10 @@ When a command is called, objects are filled into the parameters of the command.
 As commands call eachother, every time different data is passed along to the different commands, that are called.
 
 
-
 Actually, the method will only become part of the classes that it directly uses. When the method uses submembers of the classes, the method does not become part of the classes of the submembers.
 
 
 Byrefs have pros and cons in different situations.
-
-
-
 
 # From the original Symbol documentation
 
@@ -923,7 +867,6 @@ You’ll hardly use a line target as output information. You’ll probably use a
 Even though an argument’s line is hardly ever read, an argument’s state *is* commonly read.
 
 #### Using Arguments
-
 
 |You’ll mainly use arguments by reading and writing their state or to pass objects by reference.|
 | :- |
@@ -1048,7 +991,6 @@ __a__ can only be a reference to __r__, the return value. __b__ is a reference t
 
 There are three ways to use arguments: state read, state write and passing by reference:
 
-
 |<p></p><p>![](images/Input%20Output%20Parameter%20Passings.080.png)</p><p>*State read*</p>|<p>![](images/Input%20Output%20Parameter%20Passings.081.png)</p><p>*State write*</p>|<p></p><p></p><p>![](images/Input%20Output%20Parameter%20Passings.082.png)</p><p>*Pass by reference*</p>|
 | :-: | :-: | :-: |
 
@@ -1120,7 +1062,7 @@ If the line both enters and exists a diamond, then the inversion of direction do
 
 Rule 3:
 
-…
+...
 
 You go from implicit to explicit notation in the following steps:
 
@@ -1174,7 +1116,6 @@ Which is not a real bidirection, because the line can’t *really* go inward any
 
 As such, there are six explicit argument purposes:
 
-
 |<p>![](images/Input%20Output%20Parameter%20Passings.097.png)</p><p>*State in*</p><p></p>|<p></p><p>![](images/Input%20Output%20Parameter%20Passings.098.png)</p><p>*State out*</p>|<p>![](images/Input%20Output%20Parameter%20Passings.099.png)</p><p>*State thru*</p>|
 | :-: | :-: | :-: |
 |<p>![](images/Input%20Output%20Parameter%20Passings.100.png)</p><p>*Reference in*</p>|<p>![](images/Input%20Output%20Parameter%20Passings.101.png)</p><p>*Reference out*</p>|<p></p><p>![](images/Input%20Output%20Parameter%20Passings.102.png)</p><p>*Reference thru*</p>|
@@ -1183,9 +1124,9 @@ As such, there are six explicit argument purposes:
 
 The resulting sequence of code lines corresponds to the execution order required for dependency. As you change the diagram, the order of the text code can change. You can freely more around text lines of sibbling symbols.
 
-<The resulting sequence of code lines and the execution order within code lines. >
+< The resulting sequence of code lines and the execution order within code lines. >
 
-<Don’t cover exact text code here>
+< Don’t cover exact text code here >
 
 ### Implicit Notations
 
@@ -1207,11 +1148,11 @@ To explain this concept I use an example where one procedure, called __Get__, re
 
 The steps of this process can be described as follows:
 
-`	`Get
-
-`	`Set . In = Get . Out
-
-`	`Set
+```
+Get
+Set . In = Get . Out
+Set
+```
 
 The out parameter of __Get__ is called __Out__ and the in parameter of __Set__ is called __In__. In diagram code, that is:
 
@@ -1225,7 +1166,9 @@ Only the blue parts are shown in the piece of text code. You can see that __Get_
 
 In text code you can write the two calls in a single code line:
 
-`	`Set ( In = Get . Out )
+```
+Set ( In = Get . Out )
+```
 
 __Get . Out__ is assigned to the parameter of __Set__. You’re referencing a parameter of __Get__ without displaying the call. To read the __Out__ parameter of __Get__ requires a call and this call is implicitly made. In the text code line above you don’t see that __Get__ is called. __Get . Out__ is simply referenced. You can apply the same to diagram code:
 
@@ -1248,7 +1191,6 @@ __Get__’s symbolizing its return value can also be applied to diagram code:
 ![](images/Input%20Output%20Parameter%20Passings.105.png "Implicit Return Value Reference")
 
 *Implicit return value reference, implicit call*
-
 
 The line to __Get__ is not really a line from an object to a procedure. The return value of __Get__ is implicitly referenced.
 
@@ -1280,13 +1222,13 @@ When you reference output parameters of a procedure multiple times, each referen
 
 If the diagram above is an abstract view on the system, there might only be made a single call, but officially the diagram above is showing *two* implicit calls. The meaning of the diagram above is:
 
-*<P: same system as above, now physically showing the two calls>*
+*< P: same system as above, now physically showing the two calls >*
 
 If you want to reference multiple output parameters of a single call, you have to expliclity display the call and reference the objects that are inside the call symbol. By referencing the parameters of the call, you only use one call.
 
 ![](images/Input%20Output%20Parameter%20Passings.109.png "One Call, Two Parameters Referenced, Requires Explicit Call")
 
-<Call in blue>
+< Call in blue >
 
 ##### C
 
@@ -1298,15 +1240,15 @@ Referencing a diamond’s members is like reading a procedure member.
 
 ![](images/Input%20Output%20Parameter%20Passings.110.jpeg "29")
 
-<20040418: this is interesting. It has to do with implicit call and I have to explore in which situation this is useful. I think that when you call a member of the top circle, then the diamond executes. It’s like calling member of the bottom circle…>
+< 20040418: this is interesting. It has to do with implicit call and I have to explore in which situation this is useful. I think that when you call a member of the top circle, then the diamond executes. It’s like calling member of the bottom circle... >
 
 It always happens just after the diamond executes.
 
-<The parameter objects destroy right after the call. If you use the top circle like above, every consult of the top circle will result in executing the diamond again. To persist the information contained in the argument, without having to call the procedure again, you have to do a State Copy. Another way of using output parameters is to give the execution a reference to an external symbol. Anyway: if you want return information to persist after the call, it has to be stored in external symbol: store the returned state to an object that the caller contains, or pass a reference to the caller’s object to the called procedure>
+< The parameter objects destroy right after the call. If you use the top circle like above, every consult of the top circle will result in executing the diamond again. To persist the information contained in the argument, without having to call the procedure again, you have to do a State Copy. Another way of using output parameters is to give the execution a reference to an external symbol. Anyway: if you want return information to persist after the call, it has to be stored in external symbol: store the returned state to an object that the caller contains, or pass a reference to the caller’s object to the called procedure >
 
-<That’s true what I just said, but there’s nothing wrong with linking directly to the parameter and executing the procedure on each consult. There’s nothing wrong with that. The link would be something like consulting a property procedure in VB, a Get, which returns a reference to an object. Every time you consult the property, the procedure is launched again. That’s normal.>
+< That’s true what I just said, but there’s nothing wrong with linking directly to the parameter and executing the procedure on each consult. There’s nothing wrong with that. The link would be something like consulting a property procedure in VB, a Get, which returns a reference to an object. Every time you consult the property, the procedure is launched again. That’s normal. >
 
-<Must denote that the notation above is not an output situation. It’s an implicit call situation>
+< Must denote that the notation above is not an output situation. It’s an implicit call situation >
 
 #### Brainstorm Items
 
@@ -1317,7 +1259,6 @@ Oh, die assignments lijken afzonderlijke referenties, waardoor je implicit calls
 Oh, nee! Hè! Ik heb ergens in dit hoofdstuk iets staan over een diamond die execute telkens als je een object met een line naar een parameter beraadslaagt. Hoe zit DAT dan?
 
 Dat is verkeerd
-
 \>
 
 ##### 2
@@ -1330,7 +1271,6 @@ A reference to something inside a square causes an implicit call to the square, 
 
 Implicit calls when referencing square contents (and their explicit diagram representations)
 
-
 ### Brainstorm
 
 #### Summary of Old Subdivision
@@ -1338,54 +1278,49 @@ Implicit calls when referencing square contents (and their explicit diagram repr
 - Implicit call and Explicit call
 - Implicit return value reference
 - Out, In and Thru parameter usage
-  - Cover procedure reference too
-  - If example
+    - Cover procedure reference too
+    - If example
 - Initiation of execution:
-  - Containment in other diamond
-  - Consult of a parameter.
+    - Containment in other diamond
+    - Consult of a parameter.
 
 #### New Subdivision
 
 - Out, In and Thru
-  - Using reference parameters for in, out and thru (hard to control whether it’s in out or thru: you just use the object)
-  - Using State as In, Out and Thru
-  - Using a parameter’s line targets as Out
-    - Comparison with Com regarding returning object references.
-      - Persisting object reference (harder, is hardly done anyway. Or is it? Consider passing the returned object to another procedure)
-      - Using the procedure parameter as object reference directly
-  - Procedure reference too
-  - If example
-
-
+    - Using reference parameters for in, out and thru (hard to control whether it’s in out or thru: you just use the object)
+    - Using State as In, Out and Thru
+    - Using a parameter’s line targets as Out
+        - Comparison with Com regarding returning object references.
+            - Persisting object reference (harder, is hardly done anyway. Or is it? Consider passing the returned object to another procedure)
+            - Using the procedure parameter as object reference directly
+    - Procedure reference too
+    - If example
 
 - Execution Order
-  - Seeming randomly referencing diamond members.
-  - Initiation of execution:
-    - Containment in other diamond
-    - Consult of a parameter.
-  - Manual execution order
+    - Seeming randomly referencing diamond members.
+    - Initiation of execution:
+        - Containment in other diamond
+        - Consult of a parameter.
+    - Manual execution order
 
 - Implicit Notations
-  - Implicit call and Explicit call
-  - Implicit return value reference
+    - Implicit call and Explicit call
+    - Implicit return value reference
 
 #### New Main Subdivision
 
 Out, In and Thru
-
 Execution Basics
-
 Execution Order
-
 Implicit Notations
 
 #### New Brainstorm Texts
 
 ###### New
 
-- <>The assignment destination consult is not seens as a consult.<> Consult of a parameter as assignment destination does not require execution of the parameter holder.
-- Executor represents one execution per call on definition.		
-  - Implicit calls are not made for diamond contents reference <>
+- < > The assignment destination consult is not seens as a consult.<> Consult of a parameter as assignment destination does not require execution of the parameter holder.
+- Executor represents one execution per call on definition.
+    - Implicit calls are not made for diamond contents reference < >
 
 ###### Old
 
@@ -1422,7 +1357,7 @@ Assignmet procedures = system procedure, eerste argument is het __This__ argumen
 
 ![](images/Input%20Output%20Parameter%20Passings.116.jpeg "6")
 
-\* 2 consults, 1 execution. 1 executor zou er eigenlijk moeten zijn om 1 keer uitgevoerd te worden per … definitie aanroep (afgezien van jumps) (? Hoe zit het daar dan precies mee)
+\* 2 consults, 1 execution. 1 executor zou er eigenlijk moeten zijn om 1 keer uitgevoerd te worden per ... definitie aanroep (afgezien van jumps) (? Hoe zit het daar dan precies mee)
 
 Dus implicit call moet niet bestaan bij het referen naar diamond members. Dus dan heb je ook niet het probleem dat *assignment calls* speciaal geplaatst moeten worden in het proloog en epiloog: consult van diamond members vind *altijd* plaats in proloog of epiloog!
 
@@ -1432,7 +1367,7 @@ Oh jawel! Consult vind gewoonlijk altijd plaats in epiloog, maar bij assignment 
 
 ![](images/Input%20Output%20Parameter%20Passings.118.jpeg "8")
 
-The last picture is an acceptable substitute for implicit state assignment. It is actually explicit state assignment, but it looks like a real connection between A and B. A rule though: state assignment takes two arguments: destination = source. In the notation on the left you have to follow the direciton of the line you’d get between A and B if you ignore the call thing in between to find out which is the first argumetn and which is the second. In text code it goed from  lieft to right. In the diagram It goes from …<>. B is destination A is source. I mean B is the one that gets the line. B is source of line, Asbut destination of assignment. 
+The last picture is an acceptable substitute for implicit state assignment. It is actually explicit state assignment, but it looks like a real connection between A and B. A rule though: state assignment takes two arguments: destination = source. In the notation on the left you have to follow the direciton of the line you’d get between A and B if you ignore the call thing in between to find out which is the first argumetn and which is the second. In text code it goed from  lieft to right. In the diagram It goes from ...<>. B is destination A is source. I mean B is the one that gets the line. B is source of line, Asbut destination of assignment. 
 
 #### Argument Access Summary
 
@@ -1441,9 +1376,9 @@ The last picture is an acceptable substitute for implicit state assignment. It i
 - Using reference parameters for in, out and thru (hard to control whether it’s in out or thru: you just use the object)
 - Using State as In, Out and Thru
 - Using a parameter’s line targets as Out
-  - Comparison with Com regarding returning object references.
-    - Persisting object reference (harder, is hardly done anyway. Or is it? Consider passing the returned object to another procedure)
-    - Using the procedure parameter as object reference directly
+    - Comparison with Com regarding returning object references.
+        - Persisting object reference (harder, is hardly done anyway. Or is it? Consider passing the returned object to another procedure)
+        - Using the procedure parameter as object reference directly
 - Procedure reference too
 - If example
 
@@ -1458,4 +1393,3 @@ In an explicit call you always see the the call displayed as a separate diamond.
 ## Other
 
 There are three types of parameters: in, out and thru. In parameters go in, out parameters go out and thru parameters come in and go out.
-

@@ -34,6 +34,3 @@ So officially GGG should fill the Related Classes of the Creator Text Code autom
 What would work is, that in parsing a Relation, I automatically add the Related Class to GGG layer. That would take care of it.
 
 Then a Creator Text Code Creator would result in the same thing as the current gggCreator.
-
-PAGE  4
-

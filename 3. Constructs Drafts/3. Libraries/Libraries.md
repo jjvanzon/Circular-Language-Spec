@@ -15,5 +15,4 @@ The development version of the *Basic Math* documentation is fairly readable and
 
 ### Assembly
 
-…
-
+...

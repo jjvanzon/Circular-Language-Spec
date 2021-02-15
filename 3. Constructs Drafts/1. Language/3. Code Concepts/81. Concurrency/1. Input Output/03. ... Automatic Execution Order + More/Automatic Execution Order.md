@@ -57,27 +57,27 @@ In theory there's no telling what a command may read or write, but in practice t
 
 Here follows a textual definition of a parameter, and of the input and output; three entirely different things.
 
-
-
 Parameter:
 
-__Reference Thru  Document  As  Graphics  .  Document__
+```
+Reference Thru  Document  As  Graphics  .  Document
+```
 
 Input:
 
-__Document  .  Points  .  Item  [  \*  ]  .  X__
-
-__Document  .  Points  .  Item  [  \*  ]  .  Y__
+```
+Document  .  Points  .  Item  [  \*  ]  .  X
+Document  .  Points  .  Item  [  \*  ]  .  Y
+```
 
 Output:
 
-__Document  .  Lines  .  Item  [  0  ..  \*  ]  .  Point A   .  X__
-
-__Document  .  Lines  .  Item  [  0  ..  \*  ]  .  Point A   .  Y__
-
-__Document  .  Lines  .  Item  [  0  ..  \*  ]  .  Point B   .  X__
-
-__Document  .  Lines  .  Item  [  0  ..  \*  ]  .  Point B   .  Y__
+```
+Document  .  Lines  .  Item  [  0  ..  \*  ]  .  Point A   .  X
+Document  .  Lines  .  Item  [  0  ..  \*  ]  .  Point A   .  Y
+Document  .  Lines  .  Item  [  0  ..  \*  ]  .  Point B   .  X
+Document  .  Lines  .  Item  [  0  ..  \*  ]  .  Point B   .  Y
+```
 
 There must be a limitation in the expression of what is accessed. Perhaps if only __Document__'s existance is being checked, this might be indicated. But to a certain extend the expression of what exactly is accessed should be limited. Not the entire inner workings of a command are visible from its input and output. For instance, in the input / output expression you will *not* be seeing what *sub-commands* are called.
 
@@ -139,7 +139,6 @@ Next to making sub-command directly dependent on eachother by directly tying the
 
 The parameter of command __A__ is a __Value Out__ parameter that writes to object __O__. The parameter of command __B__ is a __Reference Out__ parameter that connects to object __O__. The parameters of command __A__ and command __B__ are not directly tied to eachother, but they do indirectly related to eachother. This will be further elaborated in *Automatic Execution Order*.
 
-
 ##### Other Ideas
 
 The cloning depth may be dependent on the parameter usage inside the command. 
@@ -174,177 +173,70 @@ Here follows a bunch of brainstorm texts, made when trying to solve concurrency 
 
 \-----
 
-\- Maybe there's a mathematically defined point at which you can be sure things are logically correct...
-
+Maybe there's a mathematically defined point at which you can be sure things are logically correct...
 Maybe there a way a system can determine,
-
 what needs to be done in a single blow...
-
 maybe you can mathematically determine,
-
-that two parts of a procedure are independent
-
-of eachother, so could not be in eachother's way.
-
-Perhaps not, because everything is a big method, in a way. What tells me, that something
-
-read in one part of the method,
-
+that two parts of a procedure are independent of eachother, so could not be in eachother's way.
+Perhaps not, because everything is a big method, in a way. What tells me, that something read in one part of the method,
 is not expected to be exactly the same half an hour later in the method?
 
 Perhaps in automatic execution order you can
-
 see which things have to go parallel,
-
 and which things have to go serially.
-
-Perhaps that way, multiple threads running at the
-
-same time, can be interweaved, by tying all
-
-the object relations (including relations between procedure calls) together, and figuring out which things 
-
-
+Perhaps that way, multiple threads running at the same time, can be interweaved, by tying all the object relations (including relations between procedure calls) together, and figuring out which things 
 can go simultaneous and which things have to be done one by one.
-
 I'm not sure. I should know more about automatic execution order for that.
 
+The locking and transaction thing assumes that you need to understand the earthly logic behind what you are trying to do,
+in order to know what locking scheme you need to apply, and what should become a separate transaction.
+My gut feeling says, that you can mathematically derive what locking scheme should be applied, and what should become a separate transaction. And my gut feeling says, that this can be done by means of symbol diagrams, in which execution order is automatically determined.
 
-The locking and transaction thing
-
-assumes that you need to understand the 
-
-earthly logic behind what you are trying to do,
-
-in order to know what locking scheme you need
-
-to apply, and what should become a
-
-separate transaction.
-
-My gut feeling says, that you can mathematically
-
-derive what locking scheme should be applied,
-
-and what should become a separate transaction.
-
-And my gut feeling says, that this can be
-
-done by means of symbol diagrams,
-
-in which execution order is automatically determined.
-
-In automatic execution order, something intended to run sequentially can be turned into points a which
-
-sequentiality is required, and points at which some things can run in parallel. 
+In automatic execution order, something intended to run sequentially can be turned into points a which sequentiality is required, and points at which some things can run in parallel. 
 
 I think I can do the same thing the other way around:
 
-some things intended to run in parallel, can be converted into points that require sequality, and points at 
+some things intended to run in parallel, can be converted into points that require sequality, and points at which parallel execution is allowed. I just don't know how that's going to look yet.
 
-
-which parallel execution is allowed.
-
-I just don't know how that's going to look yet.
-
-I have to have a clear view on the atoms of work there are, independant of the earthly meaning of the 
-
-
-work.
-
-And how those atoms of work can influence eachother, independant of the early meaning
-
+I have to have a clear view on the atoms of work there are, independant of the earthly meaning of the work. And how those atoms of work can influence eachother, independant of the early meaning
 of them.
 
 It's all just hunches for now.
 
 If methods are tied to the same data...
+a relational database doesn't know about that. It can be statements specified in a procedural programming environment, that the database is not aware of at all.
 
-a relational database doesn't know about that. It can be statements specified in a procedural programming 
-
-
-environment, that the database is not aware of at all.
-
-It just gets confronted with multiple methods that want to run when they want to run. My own system 
-
-
-might know they can be in eachother's way, because the system sees both the data and the methods, and 
-
-
-the way they are tied together. The data is aware of the methods that influence them, the methods and 
-
-
-the data form a single construction of things refering to one another. A single diagram in symbol. Automatic 
-
-
-execution order may determine which things have to go sequentially and which things need to go parallely.
-
+It just gets confronted with multiple methods that want to run when they want to run. My own system might know they can be in eachother's way, because the system sees both the data and the methods, and the way they are tied together. The data is aware of the methods that influence them, the methods and the data form a single construction of things refering to one another. A single diagram in symbol. Automatic execution order may determine which things have to go sequentially and which things need to go parallely.
 I just have to list out all the different possibilities for things getting in eachother's way.
-
-I just think that blending the procedures and objects into a single construction just gives you an opportunity 
-
-
-to mathematically solve the equation and automatically determine what can execute concurrently and what 
-
-
-can not, and for how long, or up until which point.
-
+I just think that blending the procedures and objects into a single construction just gives you an opportunity to mathematically solve the equation and automatically determine what can execute concurrently and what  can not, and for how long, or up until which point.
 
 \-----
 
-Perhaps methods only interweave at points at which a resource is accessed
-
-by multiple things at the same time. The methods' diagram contents may
-
-be thrown in one method, automatic execution order applied,
-
-and the combined method is executed, where some things can be done
+Perhaps methods only interweave at points at which a resource is accessed by multiple things at the same time. The methods' diagram contents may be thrown in one method, automatic execution order applied, and the combined method is executed, where some things can be done
 
 in parallel and some things must be executed serial.
 
-Perhaps, everything's one big method in a way, you can flatten it out,
-
-and restructure it with automatic execution order... or something.
+Perhaps, everything's one big method in a way, you can flatten it out, and restructure it with automatic execution order... or something.
 
 \-----
 
-Perhaps seriality is expressed by one step calling the next,
-
-only then you get too much of a recursive structure.
-
+Perhaps seriality is expressed by one step calling the next, only then you get too much of a recursive structure.
 Perhaps there should be a kind of call, that doesn't return,
-
 but abandons the caller.
-
 Perhaps when you do automatic execution order, you should consider the four
 
 problems with concurrency identified by the SQL Server 2000 documentation.
-
 And if they are solved by automatic execution order.
 
 Perhaps in the SQL Server 2005 documentation they spotted more problems.
-
 Perhaps in the SQL Server 2008 documentation they spotted even more problems.
-
 Perhaps they didn't spot more problems, perhaps these are just it.
 
 The four problems, I can look at and just say: 'this problem only happens, when...'
-
 or: 'this only becomes a problem, when...'
 
-
-Execution order is fixed in normal programming languages, because it is text, in which an order is a fact you 
-
-
-cannot go around. A diagram does not have a specific order, so the order may be determined based on the 
-
-
-non-sequential correlation between individual elements.
-
-Perhaps this can prevent locking and waiting, and just make a single sequence out of it instead of one thing 
-
-
-waiting on another.
+Execution order is fixed in normal programming languages, because it is text, in which an order is a fact you cannot go around. A diagram does not have a specific order, so the order may be determined based on the non-sequential correlation between individual elements.
+Perhaps this can prevent locking and waiting, and just make a single sequence out of it instead of one thing waiting on another.
 
 #### Look at the article Parameter Order…
 
@@ -407,9 +299,7 @@ So diamonds represent executions and calls, but not necessarily indivual executi
 ###### Execution order
 
 clockwise starting at the top one or 
-
 like reading: left to right, top to bottom or 
-
 tied together, except for the first and last ones
 
 Sometimes it doesn’t matter in which order something takes place, in case of which both symbols get the same execution order ordinal. Symbols are tied together parallelly instead of serially then or positioned ‘parallely’ over the clock’s arrow.
@@ -420,6 +310,3 @@ Sometimes it doesn’t matter in which order something takes place, in case of w
 In case of equal ordinals the symbols ARE executed but the order of execution is irrelevant. Even when the order of execution is irrelevant the ordinal is the only pure way to control the positioning of the symbols.
 
 JJ
-
-PAGE  3
-

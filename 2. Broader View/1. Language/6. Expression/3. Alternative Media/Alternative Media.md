@@ -8,7 +8,7 @@ Ideas
 -----
 
 Out of the original Symbol documentation
-=======================================
+---------------------------------------
 
 2008-10-09
 
@@ -17,9 +17,7 @@ Consider the different types of literals in Text Code. You can use this literal 
 ### Langauge Integration
 
 < Chemistry language. Flat or 3D>
-
 < controls are an interactive language>
-
 < an interactive language is a language that doesn’t only allow expression of things, but allows at least two parties to exchange information and respond to given information. > 
 
 You can translate parts of a system to text, but you can just as well translate it to a more graphical language. 
@@ -28,20 +26,20 @@ The Information Language, part of the J Data technology, is a diagram language d
 
 #### Real Language
 
+```vb
 If X Then A
+```
 
 If X is true then A will be executed.
 
-`	`Select X
-
-`		`Case 0: A
-
-`		`Case 1: B
-
-`	`End Select
+```vb
+Select X
+    Case 0: A
+    Case 1: B
+End Select
+```
 
 When X = 0, A is executed
-
 When Y = 1 then A is executed
 
 Maybe I should allow the ‘real language’ text to be used as code too. Eventually.
@@ -87,9 +85,7 @@ How about integrating VB and C++?
 ##### Tree Notation
 
 You know the kind
-
 But my kind also has convergence… and allows 1/nà1/n distinction or maybe those are other notations yet.
-
 
 Brainstorm
 ----------
@@ -106,15 +102,11 @@ Literals in alternative media
 
 
 Also: tree view
-
 controls are alternative media.
 
 So control concepts are basically an alternative expression media
-
 in which to express code and data,
-
 just like the diagrams or text code are a media in which to express
-
 the code and data.
 
 #### Information Language
@@ -124,9 +116,7 @@ You can express the final database structure in Symbol code and in information l
 Ja, het begint zich een beetje in elkaar te schuiven. Information is niet meer dan een Symbol dialect, met een speciale toepassing. Als je in Symbol een flat object, arrow notatie invoert dan heb je information language al bijna. Hmmm… interessant.
 
 
-
 Tree like diagram with convergences should be part of Symbol I guess.
 
 
 Maybe by giving symbol aspects to it, I can refine the tree like diagram language
-

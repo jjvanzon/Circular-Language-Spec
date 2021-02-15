@@ -20,29 +20,18 @@ No articles have been written about them yet. No version of the new computer lan
 
 *Legacy Text Codes* covers text codes non-standard to the new computer language. The new computer language has its own text code syntax + math syntax and assembly language syntax. But other types of text code may be supported as legacy text codes. Each legacy text code has a separate module. Here is a list of text codes, that might be supported. More languages may be added in the future, but there may also be languages in the list, that will never be supported at all:
 
-*XML*
-
-*SQL*
-
-*Visual Basic*
-
-*C++*
-
-*C*
-
-*HTML*
-
-*Javascript*
-
-*VB Script*
-
-*Basic*
-
-*Cobol*
-
-*Fortran*
-
-*...*
+- *XML*
+- *SQL*
+- *Visual Basic*
+- *C++*
+- *C*
+- *HTML*
+- *Javascript*
+- *VB Script*
+- *Basic*
+- *Cobol*
+- *Fortran*
+- *...*
 
 Hardly any documentation has been written about legacy text codes yet. No legacy text code modules have been implemented in any of the version of the new computer language yet.
 

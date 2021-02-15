@@ -8,7 +8,7 @@
 - Procedural
 - Object Oriented
 - Relational
-- …
+- ...
 
 ##### Procedural Imposed On Algebraic
 
@@ -21,15 +21,11 @@ I accept the incorporation of a number notation.
 You can actually recognize how another language is incorporated in procedural: algebraic, being mainly numeric algebra, comparison algebra and logical algebra.
 
 That way you can see multiple paradigms imposed on eachother:
-\- Relational
 
-\- Object oriented
-
-\- Procedural
-
-\- Algebraic
-
-\- Names
+- Relational
+- Object oriented
+- Procedural
+- Algebraic
+- Names
 
 This is not adequate to provide a Symbol notation that incorporates Creator relations.
-

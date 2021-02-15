@@ -41,7 +41,7 @@ Also, there will be *Protocols*, which will enable several internet protocols, s
 
 Furthermore, a lot of software is dependent on API’s. When software is made, and it uses an API, it is dependent on that API. You can not port the software to another system if the same API is not supported. *Module System Integration* might part solve this. You can link to resources from other systems, so you do not necessarily need to port to native *Circle* to integrate with another system. However, you might want to be able to port your system to the new computer language’s native operating system, to make use of new features in it. Porting as such is only possible if the API your program depends on, is either accessible through *Module Systems Integration* or the legacy API is supported in the new computer language as well. That is the part *Legacy API’s* is responsible for. It is undoable to support all existing API’s inside the new *OS*, but if an API is supported, *Legacy API’s* is the part of the system to put it in. The documentation folder is empty. No software has been developed for this yet.
 
-### ‘…’
+### ‘...’
 
 Perhaps later other types of systems to integrate with will come to light. That is why this folder is put at the end: as a placeholder for possible future folders.
 
@@ -51,29 +51,18 @@ Ideas
 
 *The texts below are loose ideas, yet to be turned into good documentation.*
 
-
-
 2007-12-09
 
-The integration with other systems and protocols, file systems, network protocols, formats… etcetera.
-
+The integration with other systems and protocols, file systems, network protocols, formats... etcetera.
 Ideas
 
-
 standaarden ondersteunen is een belangrijk punt,
-
 maar niet voor de fase waar ik nu in zit.
-
 Dat zou onderdeel van J Integration worden,
-
 omdat als je binnen m'n systeem blijft werken,
-
 deze modules eigenlijk niet nodig zijn,
-
 maar om met de rest van de wereld samen te
-
 werken wel.
-
 En J Integration zal (als soort protest) misschien wel de meeste modules bevatten. Daarin zit dan de boodschap: J Integration zou eigenlijk niet nodig zijn, maar de wereld zoals die nu is zorgt er wel even voor dat het aantal nodige modules met 92% wordt vermeerderd, terwijl ze functioneel eigenlijk niets toevoegen. J Integration zou worden gezien als modules die functioneel niets toevoegen, maar alleen verzorgen dat op oude zooi wordt aangesloten. Desalnietemin, is m'n eigen zooi niet commercieel viable, zonder J Integration. Er zijn gewoon dingen, die ik vroeger als totaal onbelangrijk zag, waar m'n systeem in de toekomst keihard op stuk zou lopen.
 
 Gewoon vanuit commercieel oogpunt.
@@ -98,13 +87,7 @@ There are only a couple of main technologies you’d have to integrate with, the
 
 Integration,
 
-
-
 E-mail Integration.
-
 Do I have plans to integrate with e-mail systems?
 
-
-
 JJ
-

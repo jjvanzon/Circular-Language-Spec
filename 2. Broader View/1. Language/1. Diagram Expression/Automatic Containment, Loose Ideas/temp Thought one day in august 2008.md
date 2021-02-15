@@ -21,7 +21,6 @@ It would so much simplify the usage of the language.
 If you have to consider any symbol a reference, 
 then it will be totally inaccessible to children, for instance.
 
-
 -----
 
 These contemplations have everything to do with
