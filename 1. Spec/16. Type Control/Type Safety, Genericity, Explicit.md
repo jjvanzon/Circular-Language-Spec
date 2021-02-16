@@ -490,31 +490,49 @@ If you break one of the lines in the circularity, the one loosing the line comes
 
 | __Object Symbol Genericity__ | | | |
 | :- |-|-|-|
-| | __Object__ |
-| | | Original object | <p>Object determined by no line</p><p>(no object line)</p> |
-| | | Delegated object | <p>Object determined by a line</p><p>(object line)</p> |
-| | __Type__ |
-| | | Original type | <p>Type determined by no line</p><p>(type nor object line)</p> |
-| | | Delegated type | <p>Type determined by a line</p><p>(type or object line)</p> |
-| | | Explicit type | <p>Type determined by type line</p><p>(limits the possible object to objects of that type)</p> |
-| | | Generic type | <p>Type determined by object line</p><p>(symbol adopts any type the object might have) </p> |
-| | __Interface__ |
-| | | Original interface | <p>Interface determined by no line</p><p>(interface, type nor object line)</p> |
-| | | Delegated interface | <p>Interface determined by a line</p><p>(interface, type or object line)</p> |
-| | | Explicit interface | <p>Interface determined by interface line</p><p>(one specific interface of the type is used)</p><p>(limits the possible types to ones that support the interface)</p> |
-| | | Generic interface | <p>Interface determined by type line or object line</p><p>(type’s whole interface used)</p><p>(symbol adopts any interface the type might have)</p> |
+| | __Object__         |
+| | | Original object  | Object determined by no line |
+| | |                  | (no object line) |
+| | | Delegated object | Object determined by a line |
+| | |                  | (object line) |
+| | __Type__         |
+| | | Original type  | Type determined by no line |
+| | |                | (type nor object line) |
+| | | Delegated type | Type determined by a line 
+| | |                | (type or object line) |
+| | | Explicit type  | Type determined by type line |
+| | |                | (limits the possible object to objects of that type) |
+| | | Generic type   | Type determined by object line |
+| | |                | (symbol adopts any type the object might have) |
+| | __Interface__         |
+| | | Original interface  | Interface determined by no line |
+| | |                     | (interface, type nor object line) |
+| | | Delegated interface | Interface determined by a line |
+| | |                     | (interface, type or object line) |
+| | | Explicit interface  | Interface determined by interface line |
+| | |                     | (one specific interface of the type is used) |
+| | |                     | (limits the possible types to ones that support the interface) |
+| | | Generic interface   | Interface determined by type line or object line |
+| | |                     | (type’s whole interface used) |
+| | |                     | (symbol adopts any interface the type might have) |
 | __Procedure Symbol Genericity__ |
-| | __Definition__ |
-| | | Original definition | <p>Definition determined by no line</p><p>(no reference line)</p> |
-| | | Delegated definition | <p>Definition determined by a line</p><p>(a reference line)</p> |
-| | __Execution__ |
-| | | Original execution | Delegation doesn’t pass a diamond |
+| | __Definition__         |
+| | | Original definition  | Definition determined by no line |
+| | |                      | (no reference line) |
+| | | Delegated definition | Definition determined by a line |
+| | |                      | (a reference line) |
+| | __Execution__         |
+| | | Original execution  | Delegation doesn’t pass a diamond |
 | | | Delegated execution | Delegation passes a diamond |
-| | __Interface__ |
-| | | Original interface | <p>Interface determined by no line</p><p>(interface nor reference line)</p> |
-| | | Delegated interface | <p>Interface determined by a line</p><p>(interface or reference line)</p> |
-| | | Explicit interface | <p>Interface determined by interface line</p><p>(limits the possible procedures to ones with that interface)</p> |
-| | | Generic interface | <p>Interface determined by reference line</p><p>(symbol adopts any interface the procedure might have)</p> |
+| | __Interface__         |
+| | | Original interface  | Interface determined by no line |
+| | |                     | (interface nor reference line) |
+| | | Delegated interface | Interface determined by a line |
+| | |                     | (interface or reference line) |
+| | | Explicit interface  | Interface determined by interface line |
+| | |                     | (limits the possible procedures to ones with that interface) |
+| | | Generic interface   | Interface determined by reference line |
+| | |                     | (symbol adopts any interface the procedure might have) |
 | __One does not fix the other__ |
 | | Interface type genericity | Fixing the interface doesn’t fix the type |
 | | Type interface genericity | Fixing the type doesn’t fix the interface |
