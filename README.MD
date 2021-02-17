@@ -18,6 +18,6 @@ You may find the following folders here:
 
 The material may still be a bit rough. Both in content and writing style.
 
-It might be made better step by step. The current goal (as of February, 2021) would be converting the Word documents to MarkDown.
+It might be made better step by step. The current goal would be converting the Word documents to MarkDown.
 
 Would anyone be interested. Another repository would describe the plans, notes and TODO's around this project. Here it is: [Circle-Language-Spec-Plans](https://github.com/jjvanzon/Circle-Language-Spec-Plans)
