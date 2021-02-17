@@ -44,7 +44,7 @@ Well design in grouping ideas leads to the *reusability* of ideas. For instance:
 Any place you use a button in your system, there is a separate object:
 
 | ![](images/Symbol%20Language%20(2004).005.png) | ![](images/Symbol%20Language%20(2004).006.png) |
-|---|---|
+|------------------------------------------------|------------------------------------------------|
 
 A button object in general is a *type* of object. All the button objects are objects of the same *type*. The separate buttons are so called *instances* of the type. Many times the word *object* is used instead of the word *type*. For instance, you can speak of *the* button *object*, while you’re talking about the button *type*. It’s like by saying ‘panda’ you can refer to an individual panda (object), but also to the panda as a kind of animal (type).
 
@@ -1398,7 +1398,7 @@ This is the genericity already explained in the introduction to genericity. When
 The type is *generic* in this case. If the type line is set, however, the object can only be of a single type.
 
 | ![](images/Symbol%20Language%20(2004).137.jpeg) | ![](images/Symbol%20Language%20(2004).138.jpeg) |
-|-----|-----|
+|-------------------------------------------------|-------------------------------------------------|
 | ![](images/Symbol%20Language%20(2004).139.jpeg) | ![](images/Symbol%20Language%20(2004).140.jpeg) |
 
 The type is *explicit* in that case. You can also say that the type is *set*.
@@ -1433,10 +1433,10 @@ The use of delegation of the interface is to fix the interface and to use an alr
 
 As the type can be explicitly set, the interface can also be explicitly set. It’s only about the interface set by an interface line; the other line types don’t explicitly set the interface. If the interface is set, then the type or object can only be a symbol whose type at least supports the interface.
 
-|       | __A__ |
-|:-----:|:-----:|
+|                                                 |                      __A__                      |
+|:-----------------------------------------------:|:-----------------------------------------------:|
 | ![](images/Symbol%20Language%20(2004).142.jpeg) | ![](images/Symbol%20Language%20(2004).143.jpeg) |
-| __B__ | __C__ |
+|                      __B__                      |                      __C__                      |
 | ![](images/Symbol%20Language%20(2004).144.jpeg) | ![](images/Symbol%20Language%20(2004).145.jpeg) |
 
 *The top object can point to the left object (picture A) and to the right object (picture B). The left object has the full interface, while the right object supports the interface. Picture C is illegal, because the object target doesn’t support the interface.*
@@ -1444,7 +1444,7 @@ As the type can be explicitly set, the interface can also be explicitly set. It�
 If a symbol has no interface line, the interface is said to be *generic*. It adopts the full interface of any type the interface might have, due to type delegation by either a type line or object line. 
 
 | ![](images/Symbol%20Language%20(2004).146.jpeg) | ![](images/Symbol%20Language%20(2004).147.jpeg) |
-|-----|-----|
+|-------------------------------------------------|-------------------------------------------------|
 
 |                        |                                                                |
 |------------------------|----------------------------------------------------------------|
@@ -1506,7 +1506,7 @@ the square *is* said to have a *delegated execution*.
 The interface of a procedure can be delegated to its definition target, but it can also be delegated by an interface line. 
 
 | ![](images/Symbol%20Language%20(2004).152.jpeg) | ![](images/Symbol%20Language%20(2004).153.jpeg) |
-|-----|-----|
+|-------------------------------------------------|-------------------------------------------------|
 
 In both cases the interface is delegated. If a procedure symbol has no line at all, it has an original interface.
 
@@ -1533,7 +1533,7 @@ If a procedure symbol has an interface line then its definition can only be one 
 If the interface line of a procedure symbol isn’t set then it adopts the interface of the target definition.
 
 | ![](images/Symbol%20Language%20(2004).158.jpeg) | ![](images/Symbol%20Language%20(2004).159.jpeg) |
-|-----|-----|
+|-------------------------------------------------|-------------------------------------------------|
 
 |                        |                                        |
 |------------------------|----------------------------------------|
@@ -1593,7 +1593,7 @@ So one interesting thing about type-interface genericity is that when you’ve s
 If there is no interface line, the *object* determines *which* interface of the type is used, as the pictures below demonstrate.
 
 | ![](images/Symbol%20Language%20(2004).165.jpeg) | ![](images/Symbol%20Language%20(2004).166.jpeg) |
-|-----|-----|
+|-------------------------------------------------|-------------------------------------------------|
 
 __Symbol A__ redirects the type to __Type A__. In the first picture __Symbol A__ redirects to __Object A__, in the second picture __Symbol A__ redirects to __Object B__. __Symbol A__, __Object A__ and __Object B__ are all of the same type. However, __Object A__ uses __Interface A__ and __Object B__ uses __Interface B__.
 
@@ -1779,7 +1779,7 @@ With the exit-enter marks the symbol above could still mean:
 
 but no longer: 
 
-|![](images/Symbol%20Language%20(2004).179.png) | ≠ | ![](images/Symbol%20Language%20(2004).181.png) |
+| ![](images/Symbol%20Language%20(2004).179.png) | ≠ | ![](images/Symbol%20Language%20(2004).181.png) |
 |-----|-----|-----|
 
 ##### Line Type
@@ -1940,7 +1940,6 @@ To denote that many borders are crossed, usually three peels are used. So three 
 
 I will simply give a sum up of the other abstract meanings I’ve mentioned and give the peel notation for them.
 
-
 |                                                 |                                                   |
 |:-----------------------------------------------:|:-------------------------------------------------:|
 | ![](images/Symbol%20Language%20(2004).194.png)  |  ![](images/Symbol%20Language%20(2004).193.png)   |
@@ -2100,7 +2099,7 @@ A diamond executes, a square does not. A diamond is said to be active, while a s
 A clause that is a diamond, is called an active clause:
 
 | ![](images/Symbol%20Language%20(2004).221.png) | ![](images/Symbol%20Language%20(2004).222.png) |
-|:---:|:---:|
+|------------------------------------------------|------------------------------------------------|
 
 It’s called active, because it executes.
 
@@ -2109,7 +2108,7 @@ It’s called active, because it executes.
 An inactive clause is a clause that doesn’t execute. So it’s a clause that is a square:
 
 | ![](images/Symbol%20Language%20(2004).223.png) | ![](images/Symbol%20Language%20(2004).224.png) |
-|:---:|:---:|
+|------------------------------------------------|------------------------------------------------|
 
 It won’t execute unless you call it.
 
@@ -3415,9 +3414,13 @@ The problem with events was that there are two ways: overriding and assigning an
 
 There *are* techniques for a child to communicate with its parent. There are two similar ways: a child contains a reference to the parent’s procedure, a child contains a reference to the parent’s object. The child then has to define the interface of the object or procedure to reference. The child must also accept that the object reference might not point to an existing object. These techniques will be covered again lateron.
 
-| ![](images/Symbol%20Language%20(2004).336.png) *Reference to parent procedure with an interface defined by the child.* | ![](images/Symbol%20Language%20(2004).337.png) *Calling procedures of a reference to a parent object with an interface that the child defines.* |
-| :-: | :-: |
-| ![](images/Symbol%20Language%20(2004).336.png) Reference to parent procedure with an interface defined by the child.* | ![](images/Symbol%20Language%20(2004).337.png) *Calling procedures of a reference to a parent object with an interface that the child defines.* |
+|                                                |                                                |
+|:----------------------------------------------:|:----------------------------------------------:|
+| ![](images/Symbol%20Language%20(2004).336.png) | ![](images/Symbol%20Language%20(2004).337.png) |
+| Reference to parent procedure with an interface defined by the child. | Calling procedures of a reference to a parent object with an interface that the child defines. |
+|                                                |                                                |
+| ![](images/Symbol%20Language%20(2004).336.png) | ![](images/Symbol%20Language%20(2004).337.png) |
+| Reference to parent procedure with an interface defined by the child. | Calling procedures of a reference to a parent object with an interface that the child defines. |
 
 *The dashed reference lines in these pictures could also have been notated solid.*
 
@@ -3606,21 +3609,72 @@ Execution control is so common and the notation above is rather complex. The not
 This has the same meaning as the other notation. A square drawn with dashed lines is shorthand for a square with a reference line to outside. The dashed squares are filled in with the contents of the referenced procedure.
 
 | ![](images/Symbol%20Language%20(2004).341.png) | = | ![](images/Symbol%20Language%20(2004).342.png) |
-| - | - | - |
+|-----|-----|-----|
 
 Even more is done to simplify the notation. Clauses that are not filled in can be hidden. The procedure name ‘Selection’ is also left out. Squares are allowed to be drawn as rectangles. When the Select clause is filled in, alternate clause names are used as explained earlier.
 
 << Use those rules from this point onward >>
 
-| If X Then A:<br>![](images/Symbol%20Language%20(2004).343.png) | If X Then A Else B:<br>![](images/Symbol%20Language%20(2004).344.png) |
-| :-: | :-: |
-| If X Then A Else If Y Then B:<br>![](images/Symbol%20Language%20(2004).345.png) | If X Then A Else If Y Then B Else C:<br>[](images/Symbol%20Language%20(2004).346.png) |
-|                 Select X<br>                    Case 0: A<br>                    Case 1: B<br>                End Select<br>:<br>![](images/Symbol%20Language%20(2004).347.png) |                 Select X<br>                    Case 0: A<br>                    Case 1: B<br>                    Case Else: C<br>                End Select<br>:<br>![](images/Symbol%20Language%20(2004).348.png) |
+```vb
+If X Then A:
+```
+
+> ![](images/6.%20Execution%20Control%20Ideas.006.png)
+
+```vb
+If X Then A Else B:
+```
+
+> ![](images/6.%20Execution%20Control%20Ideas.007.png) 
+
+```vb
+If X Then A Else If Y Then B:
+```
+
+> ![](images/6.%20Execution%20Control%20Ideas.008.png) 
+
+```vb
+If X Then A Else If Y Then B Else C:
+```
+
+> ![](images/6.%20Execution%20Control%20Ideas.009.png) 
+
+```vb
+Select X 
+    Case 0 : A 
+    Case 1 : B 
+End Select:
+```
+
+> ![](images/6.%20Execution%20Control%20Ideas.010.png) 
+
+```vb
+Select X
+    Case 0 : A
+    Case 1 : B
+    Case Else : C
+End Select:
+```
+
+![](images/6.%20Execution%20Control%20Ideas.011.png) 
 
 You can nest Selection statements as deep as you want.
 
-| ![](images/Symbol%20Language%20(2004).349.png) |     Select X<br>        Case 0<br>            Select Y<br>                Case 0: A<br>                Case 1: B<br>                Case 2: C<br>            End Select<br>        Case 1<br>            B<br>        Case Else<br>            If Y = 2 Then D<br>    End Select |
-| - | - |
+```vb
+Select X
+    Case 0:
+        Select Y
+            Case 0 : A
+            Case 1 : B
+            Case 2 : C 
+        End Select
+    Case 1 : B
+    Case Else
+        If Y = 2 Then D
+End Select:
+```
+
+![](images/6.%20Execution%20Control%20Ideas.012.png)
 
 Math language (as well as text code) integrates into Symbol. When using execution selection this is very handy. Let’s take the following text code example:
 
@@ -4199,8 +4253,12 @@ The special thing about a triangle, though is that its members are also directly
 
 You can’t see in the picture above if the called square is referenced through the circle or through the triangle. If you want to indicate that it’s accessed through the circle, you can put an access symbol with the circle. If you want to indicate that it’s accessed through the triangle, you put an access symbol with the triangle, or with both the circle and the triangle.
 
-| ![](images/Symbol%20Language%20(2004).362.png)<br>*Accessed through the Circle:*<br>__*Circle . Procedure*__ | ![](images/Symbol%20Language%20(2004).363.png)<br>*Accessed through <br>the Circle and the Triangle:*<br>__*Circle . Triangle . Procedure*__ | ![](images/Symbol%20Language%20(2004).364.png)<br>*Also accessed through <br>the Circle and the Triangle:*<br>__*Circle . Triangle . Procedure*__ |
-| :-: | :-: | :-: |
+|                                |                                   |                                   |
+|:------------------------------:|:---------------------------------:|:---------------------------------:|
+| ![](images/Symbol%20Language%20(2004).362.png) | ![](images/Symbol%20Language%20(2004).363.png) | ![](images/Symbol%20Language%20(2004).364.png) |
+| *Accessed through the Circle:* |         Accessed through          |       Also accessed through       |
+|                                |   the Circle and the Triangle:    |   the Circle and the Triangle:    |
+|     __Circle . Procedure__     | __Circle . Triangle . Procedure__ | __Circle . Triangle . Procedure__ |
 
 In text code you can see the difference all the more. I’ve put the text code under the diagrams above.
 
@@ -4600,8 +4658,9 @@ General system procedures:
 
 The system procedures of a symbol together form the *system interface* of a symbol. It is notated as follows:
 
-| ![](images/Symbol%20Language%20(2004).380.jpeg)<br>*Object System Interface* | ![](images/Symbol%20Language%20(2004).381.jpeg)<br>*Procedure System Interface* |
-| :-: | :-: |
+| ![](images/Symbol%20Language%20(2004).380.jpeg) | ![](images/Symbol%20Language%20(2004).381.jpeg) |
+|:-----------------------------------------------:|:-----------------------------------------------:|
+|            Object System Interface              |            Procedure System Interface           |
 
 I’ve left out the system procedures I haven’t yet introduced.
 
@@ -4615,8 +4674,9 @@ The notation of the system interface also looks like you’ve opened up the syst
 
 Notation of the system interface can go together with the regular contents of the symbol.
 
-| ![](images/Symbol%20Language%20(2004).383.png)<br>*Object Notation Only* | ![](images/Symbol%20Language%20(2004).384.png)<br>*Simultaneous system interface and object members* |
-| :-: | :-: |
+| ![](images/Symbol%20Language%20(2004).383.png) |  ![](images/Symbol%20Language%20(2004).384.png)  |
+|:----------------------------------------------:|:------------------------------------------------:|
+|             Object Notation Only               | Simultaneous system interface and object members |
 
 Calls to system procedures and object members are intermixed, so you have to be able to see both the system interface and the object members at the same time.
 
@@ -5014,8 +5074,9 @@ You can also view the system representation along with the normal representation
 
 The following notation is used for this:
 
-| *Type Representation Only* ![](images/Symbol%20Language%20(2004).388.png) | *Simultaneous System and Type Representation* ![](images/Symbol%20Language%20(2004).389.png) |
-| :-: | :-: |
+|            Type Representation Only            |  Simultaneous System and Type Representation   |
+|:----------------------------------------------:|:----------------------------------------------:|
+| ![](images/Symbol%20Language%20(2004).388.png) | ![](images/Symbol%20Language%20(2004).389.png) |
 
 The system representation is displayed sort of like an implementation of an extra interface, but tied to the edge of the symbol, rather than being contained by the symbol, denoting that this interface isn’t inferior to the symbol. The system representation is in this case also called the system interface. In simultaneous display it is very apparent that it’s system procedures that you’re seeing. It may be preferred to always view system procedures in simultaneous view, even when you don’t display the type contents:
 
@@ -5074,7 +5135,7 @@ This means that setting a line even at design time, requires calling the Set pro
 The line between two symbols is set up by another symbol: the *mutual descendant* of the source and target symbols.
 
 | ![](images/Symbol%20Language%20(2004).393.png) | ![](images/Symbol%20Language%20(2004).394.png) |
-| :-: | :-: |
+|------------------------------------------------|------------------------------------------------|
 
 Going upward in the encapsulation for both source and target, eventually you encounter a symbol that they’re both (indirectly) contained in. This is the *closest mutual descendant*. The closest mutual descendant makes the connection between those two symbols. Even when the line is hard coded, the line is set by another symbol. The closest mutual descendant is the closest symbol that can reach both source and target symbol.
 
@@ -5165,7 +5226,7 @@ Symbol’s __Destroy__ is actually like Visual Basic’s __= Nothing__. It is lo
 However, if a target object symbol is destroyed, other references will not point to a created object anymore. In a symbol diagram this makes sense. 
 
 | ![](images/Symbol%20Language%20(2004).399.png) | à | ![](images/Symbol%20Language%20(2004).400.png) | à | ![](images/Symbol%20Language%20(2004).401.png) |
-| :-: | :-: | :- | :-: | :-: |
+|:---:|:---:|:---:|:---:|:---:|
 
 In Com, the object remains as long as there are referrers. Symbol just has a more refined methodology.
 
@@ -5541,8 +5602,9 @@ Static bij procedure members.
 
 A call line makes the square a call. A reference line makes it a reference. No line at all indicates that it’s a procedure definition or a clause. Lines can also be left out for abstraction reasons.
 
-| ![](images/Symbol%20Language%20(2004).409.png)<br>*Definition* | ![](images/Symbol%20Language%20(2004).409.png)<br>*Clause* | ![](images/Symbol%20Language%20(2004).410.png)<br>*Call* | ![](images/Symbol%20Language%20(2004).411.png)<br>![](images/Symbol%20Language%20(2004).412.png)<br>*Reference* | ![](images/Symbol%20Language%20(2004).413.png)<br>*Illegal: a square can’t be both a call and a reference* |
-| - | - | - | :-: | :-: |
+| ![](images/Symbol%20Language%20(2004).409.png) | ![](images/Symbol%20Language%20(2004).409.png) | ![](images/Symbol%20Language%20(2004).410.png) | ![](images/Symbol%20Language%20(2004).411.png) <br> ![](images/Symbol%20Language%20(2004).412.png) | ![](images/Symbol%20Language%20(2004).413.png) |
+|:----------:|:------:|:----:|:---------:|:------------------------------------------------------:|
+| Definition | Clause | Call | Reference | Illegal: a square can’t be both a call and a reference |
 
 < Not true: a call doesn’t have to directly exit a square if it calls a procedure reference embedded in the same procedure or a clause of the procedure >
 
@@ -5552,8 +5614,18 @@ Note here that the access symbol of a solid procedure reference line is also dra
 
 Here is a list of possible reference targets and call targets:
 
-| ![](images/Symbol%20Language%20(2004).414.png)<br>*Reference to definition*<br>![](images/Symbol%20Language%20(2004).415.png)<br>*Reference to clause*<br>![](images/Symbol%20Language%20(2004).416.png)<br>*Reference to reference* | ![](images/Symbol%20Language%20(2004).417.png)<br>*Call to definition*<br>![](images/Symbol%20Language%20(2004).418.png)<br>*Call to clause*<br>![](images/Symbol%20Language%20(2004).419.png)<br>*Call to reference <br>(A call to a reference calls the referenced procedure)* |
-| :-: | :-: |
+|                                                |                                                |
+|:----------------------------------------------:|:----------------------------------------------:|
+| ![](images/Symbol%20Language%20(2004).414.png) | ![](images/Symbol%20Language%20(2004).417.png) |
+|            Reference to definition             |               Call to definition               |
+|                                                |                                                |
+| ![](images/Symbol%20Language%20(2004).415.png) | ![](images/Symbol%20Language%20(2004).418.png) |
+|              Reference to clause               |                 Call to clause                 |
+|                                                |                                                |
+| ![](images/Symbol%20Language%20(2004).416.png) | ![](images/Symbol%20Language%20(2004).419.png) |
+|            Reference to reference              |                Call to reference               |
+|                                                |             (A call to a reference             |
+|                                                |         calls the referenced procedure)        |
 
 #### Accesses
 
@@ -5855,11 +5927,18 @@ Procedure ( Parameter . Reference = ... )
 
 *Exclusive Establishment*
 
-| ![](images/Symbol%20Language%20(2004).423.jpeg) | __Reference to sibling inactive clause, in a square__<br>Only possible for static procedure members or exclusive establishment. |
-| - | - |
-| ![](images/Symbol%20Language%20(2004).424.jpeg) | __Reference to sibling active clause, in a square__<br>Only possible for static procedure members or exclusive establishment. |
-| ![](images/Symbol%20Language%20(2004).425.jpeg) | __Call to sibling inactive clause, in a square__<br>This is like a jump to a clause, that would otherwise not execute.<br>Only possible for static procedure members or exclusive establishment. |
-| | A diamond can be executing. Only during the execution of the diamond, lines between its non static children can be real. If the diamond isn’t executing, or it’s not a diamond, but a square, lines between the non static children are suggestive. Only lines between static members in such cases, can be real. |
+|     |     |
+|-----|-----|
+| ![](images/Symbol%20Language%20(2004).423.jpeg) | __Reference to sibling inactive clause, in a square__ |
+|     | Only possible for static procedure members or exclusive establishment. |
+|     |     |
+| ![](images/Symbol%20Language%20(2004).424.jpeg) | __Reference to sibling active clause, in a square__ |
+|     | Only possible for static procedure members or exclusive establishment. |
+|     |     |
+| ![](images/Symbol%20Language%20(2004).425.jpeg) | __Call to sibling inactive clause, in a square__ |
+|     | This is like a jump to a clause, that would otherwise not execute. |
+|     | Only possible for static procedure members or exclusive establishment. |
+|     | A diamond can be executing. Only during the execution of the diamond, lines between its non static children can be real. If the diamond isn’t executing, or it’s not a diamond, but a square, lines between the non static children are suggestive. Only lines between static members in such cases, can be real. |
 
 #### àSystem Aspects
 
@@ -5956,8 +6035,9 @@ Only procedures get access controllers, not objects. Access to an object is cont
 
 The two basic access controllers are *Accessible* and *Inaccessible*. Their diagram notations are as follows:
 
-| ![](images/Symbol%20Language%20(2004).426.png)<br>*Accessible* | ![](images/Symbol%20Language%20(2004).427.png)<br>*Inaccessible* |
-| :-: | :-: |
+| ![](images/Symbol%20Language%20(2004).426.png) | ![](images/Symbol%20Language%20(2004).427.png) |
+|:----------------------------------------------:|:----------------------------------------------:|
+|                   Accessible                   |                  Inaccessible                  |
 
 The meaning of them is as can be expected: the Accessible square is accessible, while the Inaccessible square is inaccessible This basic notation does not show which parties get access and which do not.
 
@@ -5985,20 +6065,23 @@ Exclusion access controllers are also called *access* *modifiers*, because they 
 
 Public and Private are notated as follows:
 
-| ![](images/Symbol%20Language%20(2004).428.png)<br>*Public* | ![](images/Symbol%20Language%20(2004).429.png)<br>*Private* |
-| :-: | :-: |
+| ![](images/Symbol%20Language%20(2004).428.png) | ![](images/Symbol%20Language%20(2004).429.png) |
+|:----------------------------------------------:|:----------------------------------------------:|
+|                    Public                      |                     Private                    |
 
 The reason that the following notation won’t do:
 
-| ![](images/Symbol%20Language%20(2004).430.png)<br>*Not Public* | ![](images/Symbol%20Language%20(2004).431.png)<br>*Not Private* |
-| :-: | :-: |
+| ![](images/Symbol%20Language%20(2004).430.png) | ![](images/Symbol%20Language%20(2004).431.png) |
+|:----------------------------------------------:|:----------------------------------------------:|
+|                   Not Public                   |                   Not Private                  |
 
 is that this access modifier is imposed by the procedure itself, not by its parent.
 
 The reason that the following notation won’t do:
 
-| ![](images/Symbol%20Language%20(2004).432.png)<br>*Not Public* | ![](images/Symbol%20Language%20(2004).433.png)<br>*Not Private* |
-| :-: | :-: |
+| ![](images/Symbol%20Language%20(2004).432.png) | ![](images/Symbol%20Language%20(2004).433.png) |
+|:----------------------------------------------:|:----------------------------------------------:|
+|                   Not Public                   |                   Not Private                  |
 
 is that the access symbols in these diagrams are about access to the object, not access to the procedure of the object.
 
@@ -6019,12 +6102,12 @@ B has excluded P, so A can’t exclude P again. Both access symbols above are ab
 Let’s cover how to interpret the examples I’ve already mentioned.
 
 | ![](images/Symbol%20Language%20(2004).430.png) | ![](images/Symbol%20Language%20(2004).431.png) |
-| :-: | :-: |
+|------------------------------------------------|------------------------------------------------|
 
 With *these* access modifiers, the *procedure* is making itself accessible or inaccessible.
 
 | ![](images/Symbol%20Language%20(2004).432.png) | ![](images/Symbol%20Language%20(2004).433.png) |
-| :-: | :-: |
+|------------------------------------------------|------------------------------------------------|
 
 With these access modifiers, the *object* is making *itself* accessible or inaccessible.
 
@@ -6102,14 +6185,14 @@ There is another basic access controller in addition to Accessible and Inaccessi
 
 When a procedure is *Protected*, it means that it’s inaccessible if contained in a circle, but accessible if contained in a triangle. 
 
-| ![](images/Symbol%20Language%20(2004).442.png) | ≈ | ![](images/Symbol%20Language%20(2004).443.png) |
-| - | :-: | - |
-| ![](images/Symbol%20Language%20(2004).444.png) | ≈ | ![](images/Symbol%20Language%20(2004).445.png) |
+| ![](images/Symbol%20Language%20(2004).442.png) | __≈__ | ![](images/Symbol%20Language%20(2004).443.png) |
+|-----------------------------------------------:|:-----:|:-----------------------------------------------|
+| ![](images/Symbol%20Language%20(2004).444.png) | __≈__ | ![](images/Symbol%20Language%20(2004).445.png) |
 
 A circular descendant automatically privatises a Protected member:
 
 | ![](images/Symbol%20Language%20(2004).446.png) | ≈ | ![](images/Symbol%20Language%20(2004).447.png) |
-| :- | - | :-: |
+|:-----------------------------------------------|---|:----------------------------------------------:|
 
 The member isn’t accessible to any higher symbols than the first circular descendant.
 
@@ -6131,11 +6214,15 @@ __Public *Up 2*__
 
 A procedure with this access modifier is accessible but two levels up the ancestry. Outside those levels, the procedure is inaccessible.
 
-| *No object level limitation: Public* |
-| :-: |
+No object level limitation: Public:
+
 | ![](images/Symbol%20Language%20(2004).448.png) | ≈ | ![](images/Symbol%20Language%20(2004).449.png) |
-| *Object Level Limitation: Public Up 2* |
+|------------------------------------------------|---|------------------------------------------------|
+
+Object Level Limitation: Public Up 2:
+
 | ![](images/Symbol%20Language%20(2004).450.png) | ≈ | ![](images/Symbol%20Language%20(2004).451.png) |
+|------------------------------------------------|---|------------------------------------------------|
 
 Level limitation works the same for the Protected access modifier, but gets the additional restriction that comes with that access modifier:
 
@@ -6143,25 +6230,34 @@ __Protected *Up 2*__
 
 A procedure with this access modifier is accessible two levels up the ancestry, but inaccessible outside the first circular descendant.
 
-| *Protected Up 2, contained in three triangles* |
-| :-: |
+Protected Up 2, contained in three triangles:
+
 | ![](images/Symbol%20Language%20(2004).452.png) | ≈ | ![](images/Symbol%20Language%20(2004).453.png) |
-| *Protected Up 2, contained in a triangle contained in two circles* |
+|------------------------------------------------|---|------------------------------------------------|
+
+Protected Up 2, contained in a triangle contained in two circles:
+
 | ![](images/Symbol%20Language%20(2004).454.png) | ≈ | ![](images/Symbol%20Language%20(2004).455.png) |
-| *Protected Up 2, contained in three circles* |
+|------------------------------------------------|---|------------------------------------------------|
+
+Protected Up 2, contained in three circles:
+
 | ![](images/Symbol%20Language%20(2004).456.png) | ≈ | ![](images/Symbol%20Language%20(2004).457.png) |
+|------------------------------------------------|---|------------------------------------------------|
 
 Level limitation can also be applied to deeper exclusion than Public and Protected. So a parent can impose level limitation on a child procedure.
 
-| *Level limitation on deeper exclusion* |
-| :-: |
+Level limitation on deeper exclusion:
+
 | ![](images/Symbol%20Language%20(2004).458.png) | ≈ | ![](images/Symbol%20Language%20(2004).459.png) |
+|------------------------------------------------|---|------------------------------------------------|
 
 You can also apply level limitation for on symbols shalower than the target procedure.
 
-| *Level limitation on deeper exclusion* |
-| :-: |
+Level limitation on deeper exclusion:
+
 | ![](images/Symbol%20Language%20(2004).460.png) | ≈ | ![](images/Symbol%20Language%20(2004).461.png) |
+|------------------------------------------------|---|------------------------------------------------|
 
 Level limitation is defined there where it doesn’t have effect yet. It only has effect higher in the ancestry. Basic exclusion is always defined there where it has effect. So level limitation automatically excludes members at *n* levels up the ancestry.
 
@@ -6177,13 +6273,20 @@ __Public *Globality Up 1*__
 
 When an access modifier is paired with a globality level limitation, the access modifier works normally *n* level up the *globality ancestry*. But for higher globalities the member is inaccessible.
 
-| *Public* |
-| :-: |
+Public:
+
 | ![](images/Symbol%20Language%20(2004).462.png) | ≈ | ![](images/Symbol%20Language%20(2004).463.png) |
-| *Public Globality Up 1* |
-| ![](images/Symbol%20Language%20(2004).464.png) | ≈ |  ![](images/Symbol%20Language%20(2004).465.png) |
-| *Public Globality Up 2* |
+|------------------------------------------------|---|------------------------------------------------|
+
+Public Globality Up 1:
+
+| ![](images/Symbol%20Language%20(2004).464.png) | ≈ | ![](images/Symbol%20Language%20(2004).465.png) |
+|------------------------------------------------|---|------------------------------------------------|
+
+Public Globality Up 2:
+
 | ![](images/Symbol%20Language%20(2004).466.png) | ≈ | ![](images/Symbol%20Language%20(2004).467.png) |
+|------------------------------------------------|---|------------------------------------------------|
 
 Protected Globality Up N works the same as Public, but adds the extra restriction that comes with protected.
 
@@ -6202,7 +6305,7 @@ Access modifiers in Globalities:
 To understand what happens when procedures inside globalities are given access controllers you need to view the globality as an object, that is referenced from any of its ancestor objects:
 
 | ![](images/Symbol%20Language%20(2004).468.png) | ≈ | ![](images/Symbol%20Language%20(2004).469.png) |
-| - | :-: | - |
+|------------------------------------------------|---|------------------------------------------------|
 
 If a global procedure is Inaccessible, it’s just not accessible at all (*‘outcommented’*), so not really global either. If a global procedure is Private, it’s not really global either, only accessible by the globality object itself, just like something private of a circle object. If a global procedure is Public, then it *is* global. It is then accessible from any ancestor within the globality. 
 
@@ -7031,21 +7134,22 @@ De access operators in text code
 
 In text code you sort of see the calls to system procedures and you also sort of don’t. Each system procedure has its own access operator
 
-| State Get: | x |
-| -: | - |
-| State Set: | = |
-| | |
-| Object Access: | . Member |
-| Object Copy: | . |
-| Object Set: | . = |
-| Create: | = New |
-| | |
-| Type Access: | :: Member |
-| Type Copy: | :: |
-| Type Set: | :: = |
-| | |
-| Interface Copy: | : |
-| Interface Set: | : = |
+|                 |           |
+|----------------:|:----------|
+|      State Get: | x         |
+|      State Set: | =         |
+|                 |           |
+|  Object Access: | . Member  |
+|    Object Copy: | .         |
+|     Object Set: | . =       |
+|         Create: | = New     |
+|                 |           |
+|    Type Access: | :: Member |
+|      Type Copy: | ::        |
+|       Type Set: | :: =      |
+|                 |           |
+| Interface Copy: | :         |
+|  Interface Set: | : =       |
 
 << Maybe I’ll do special operator symbols in text code that represent the object relations. Actually, that’s what I’d like a little. Except member access. I wanna keep that. >>
 
@@ -7356,33 +7460,48 @@ End Object
 
 ##### Dimensional Table notation
 
-| Object Genericity |
-| :- |
-| | __Object__ |
-| | | Original object | Object determined by no line<br>(no object line) |
-| | | Delegated object | Object determined by a line<br>(object line) |
-| | __Type__ |
-| | | Original type | Type determined by no line<br>(object nor type line) |
-| | | Delegated type | Type determined by a line<br>(type or object line) |
-| | | Explicit type | Type determined by type line<br>(limits the possible object to objects of that type) |
-| | | Generic type | Type determined by object line<br>(symbol adopts any type the object might have)  |
-| | __Interface__ |
-| | | Original interface | Interface determined by no line<br>(interface, type nor object line) |
-| | | Delegated interface | Interface determined by a line<br>(interface, type or object line) |
-| | | Explicit interface | Interface determined by interface line<br>(one specific interface of the type is used)<br>(limits the possible types to ones that support the interface) |
-| | | Generic interface | Interface determined by type line or object line<br>(type’s whole interface used)<br>(symbol adopts any interface the type might have) |
-| __Procedure Genericity__ |
-| | __Definition__ |
-| | | Original definition | Definition determined by no line<br>(no reference line) |
-| | | Delegated definition | Definition determined by a line<br>(a reference line) |
-| | __Interface__ |
-| | | Original interface | Interface determined by no line<br>(interface nor reference line) |
-| | | Delegated interface | Interface determined by a line<br>(interface or reference line) |
-| | | Explicit interface | Interface determined by interface line<br>(limits the possible procedure to procedures with that interface) |
-| | | Generic interface | Interface determined by reference line<br>(symbol adopts any interface the procedure might have) |
-| __Interface Doesn’t Determine Type__ |
-| | Interface-type genericity | The fact that the interface never fixes the type |
-| | Interface-procedure genericity | The fact that the procedure interface never fixes the  procedure. |
+| __Object Genericity__ | |               |                              |
+|-|---------------|-----------------------|------------------------------|
+| | __Object__    | Original object       | Object determined by no line |
+| |               |                       | (no object line) |
+| |               | Delegated object      | Object determined by a line |
+| |               |                       | (object line) |
+| | __Type__      | Original type         | Type determined by no line |
+| |               |                       | (type nor object line) |
+| |               | Delegated type        | Type determined by a line 
+| |               |                       | (type or object line) |
+| |               | Explicit type         | Type determined by type line |
+| |               |                       | (limits the possible object to objects of that type) |
+| |               | Generic type          | Type determined by object line |
+| |               |                       | (symbol adopts any type the object might have) |
+| | __Interface__ | Original interface    | Interface determined by no line |
+| |               |                       | (interface, type nor object line) |
+| |               | Delegated interface   | Interface determined by a line  |
+| |               |                       | (interface, type or object line) |
+| |               | Explicit interface    | Interface determined by interface line |
+| |               |                       | (one specific interface of the type is used) |
+| |               |                       | (limits the possible types to ones that support the interface) |
+| |               | Generic interface     | Interface determined by type line or object line |
+| |               |                       | (type’s whole interface used) |
+| |               |                       | (symbol adopts any interface the type might have) |
+| __Procedure Genericity__                | | | |
+| | __Definition__ | Original definition  | Definition determined by no line |
+| |                |                      | (no reference line) |
+| |                | Delegated definition | Definition determined by a line |
+| |                |                      | (a reference line) |
+| | __Interface__  | Original interface   | Interface determined by no line |
+| |                |                      | (interface nor reference line) |
+| |                | Delegated interface  | Interface determined by a line |
+| |                |                      | (interface or reference line) |
+| |                | Explicit interface   | Interface determined by interface line |
+| |                |                      | (limits the possible procedures to ones with that interface) |
+| |                | Generic interface    | Interface determined by reference line |
+| |                |                      | (symbol adopts any interface the procedure might have) |
+
+|                                      |                                |     |
+|--------------------------------------|--------------------------------|-----|
+| __Interface Doesn’t Determine Type__ | Interface-type genericity      | The fact that the interface never fixes the type |
+|                                      | Interface-procedure genericity | The fact that the procedure interface never fixes the  procedure. |
 
 ##### Tree Notation
 
@@ -8311,26 +8430,30 @@ Groeperingssymbool op basis van wat een client object gebruikt. De interface ind
 
 wat de verschillende clients gebruiken en misschien voor het overzicht toch een interface indeling gebruiken.
 
-| Programming Concepts’ Diagram Elements |
-| ------------------------------------ |
-| Containment | Shapes contain other shapes |
-| Reference | Line between reference and referee, <br>    going outward and acces controllers shed light on direction |
-| Type | Dotted line from object to type<br>    going outward and acces controllers shed light on direction |
-| Object reference | Circle |
-| Interface | Triangle |
-| Procedure | Square |
-| Access | |
-|    Global | All inside a pentagon (There are issues) |
-|    Public for reference | Line to just outside to a tangent line. |
-|    Private for reference | Line to just outside to a cross |
-|    Friend for reference | Line to just outside to a < shape pointed inwards |
-|    Public for instancing | Line to just outside to a dotted tangent |
-|    Private for instancing | Line to just outside to a dotted cross |
-|    Friend for instancing | Line to just outside to a dotted < shape pointed inwards |
-| Execution order | Dependent of positioning. Clockwise. Symbols possibly tied together with lines. |
+__Programming Concepts’ Diagram Elements__
+
+|                            |     |
+| -------------------------- |-----|
+| Containment                | Shapes contain other shapes |
+| Reference                  | Line between reference and referee, |
+|                            | going outward and acces controllers shed light on direction |
+| Type                       | Dotted line from object to type |
+|                            | going outward and acces controllers shed light on direction |
+| Object reference           | Circle |
+| Interface                  | Triangle |
+| Procedure                  | Square |
+| Access                     |     |
+| > Global                   | All inside a pentagon (There are issues) |
+| > Public for reference     | Line to just outside to a tangent line. |
+| > Private for reference    | Line to just outside to a cross |
+| > Friend for reference     | Line to just outside to a < shape pointed inwards |
+| > Public for instancing    | Line to just outside to a dotted tangent |
+| > Private for instancing   | Line to just outside to a dotted cross |
+| > Friend for instancing    | Line to just outside to a dotted < shape pointed inwards |
+| Execution order            | Dependent of positioning. Clockwise. Symbols possibly tied together with lines. |
 | Changing reference or type | Also include creation and destruction. Special procedures that actually alter the diagram. |
-| Array | Special type with special methods changing the count of contained object references. |
-| Module | A globality symbol can be compiled |
+| Array                      | Special type with special methods changing the count of contained object references. |
+| Module                     | A globality symbol can be compiled |
 
 #### Old
 
@@ -8421,45 +8544,50 @@ Maybe then I can wrap it up to inambiguous. Perhaps I then should combine sectio
 
 ##### Concept à Diagram Element
 
-| Programming Concepts’ Diagram Elements |
-| :- |
-| Containement | Physical containment of shapes |
-| Reference | Line between reference and referee, <br>    going outward and acces controllers shed light on direction |
-| Type | Dotted line from object to type<br>    going outward and acces controllers shed light on direction |
-| Object reference | Circle |
-| Interface | Triangle |
-| Procedure | Square |
-| Access | |
-|    Global | All inside a pentagon (There are issues) |
-|    Public for reference | Line to just outside to a tangent line. |
-|    Private for reference | Line to just outside to a cross |
-|    Friend for reference | Line to just outside to a < shape pointed inwards |
-|    Public for instancing | Line to just outside to a dotted tangent |
-|    Private for instancing | Line to just outside to a dotted cross |
-|    Friend for instancing | Line to just outside to a dotted < shape pointed inwards |
-| Execution order | Dependent of positioning. Clockwise. Symbols possibly tied together with lines. |
+__Programming Concepts’ Diagram Elements__
+
+|                            |     |
+|----------------------------|-----|
+| Containement               | Physical containment of shapes |
+| Reference                  | Line between reference and referee |
+|                            | going outward and acces controllers shed light on direction |
+| Type                       | Dotted line from object to type |
+|                            | going outward and acces controllers shed light on direction |
+| Object reference           | Circle |
+| Interface                  | Triangle |
+| Procedure                  | Square |
+| Access                     |     |
+| > Global                   | All inside a pentagon (There are issues) |
+| > Public for reference     | Line to just outside to a tangent line. |
+| > Private for reference    | Line to just outside to a cross |
+| > Friend for reference     | Line to just outside to a < shape pointed inwards |
+| > Public for instancing    | Line to just outside to a dotted tangent |
+| > Private for instancing   | Line to just outside to a dotted cross |
+| > Friend for instancing    | Line to just outside to a dotted < shape pointed inwards |
+| Execution order            | Dependent of positioning. Clockwise. Symbols possibly tied together with lines. |
 | Changing reference or type | Also include creation and destruction. Special procedures that actually alter the diagram. |
-| Array | Special type with special methods changing the count of contained object references. |
-| Module | A globality symbol can be compiled |
+| Array                      | Special type with special methods changing the count of contained object references. |
+| Module                     | A globality symbol can be compiled |
 
 ##### Diagram Element à Concept
 
-| Circle | Object reference |
-| - | - |
-| Triangle | Interface, inheritance |
-| Square | Procedure, procedure call |
-| Pentagon | Globality region |
-| Continguous line | Points to referee |
-| Dotted line | Points to type |
-| Continguous dissector | | Public for reference |
-| Continguous dissector X | Private for reference |
-| Continguous dissector < | Friend for reference |
-| Dotted dissector | | Public for instancing |
-| Dotted dissector X | Private for instancing |
-| Dotted dissector < | Friend for instancing |
-| Containment | Logical containment of objects |
-| Linkage | Pointing to referee or type |
-| Positioning | Arbitrary / execution order |
+|                          |                                |
+|--------------------------|--------------------------------|
+| Circle                   | Object reference               |
+| Triangle                 | Interface, inheritance         |
+| Square                   | Procedure, procedure call      |
+| Pentagon                 | Globality region               |
+| Continguous line         | Points to referee              |
+| Dotted line              | Points to type                 |
+| Continguous dissector \| | Public for reference           |
+| Continguous dissector X  | Private for reference          |
+| Continguous dissector <  | Friend for reference           |
+| Dotted dissector \|      | Public for instancing          |
+| Dotted dissector X       | Private for instancing         |
+| Dotted dissector <       | Friend for instancing          |
+| Containment              | Logical containment of objects |
+| Linkage                  | Pointing to referee or type    |
+| Positioning              | Arbitrary / execution order    |
 
 ##### Derived Concepts
 
@@ -8477,18 +8605,31 @@ Events / outward interfaces
 
 Overriding
 
-| Procedure call | Procedure reference |
-| - | - |
-| Inheritance | Interface with the base as the type<br>Interface can be created or refer to a shared base object <br>Interface referencing an object or interface<br>Referencing an interface makes it interface inheritance only.<br>Referencing the object means referencing its total interface in a way too. |
+|                      |                     |
+|----------------------|---------------------|
+| Procedure call       | Procedure reference |
+| Inheritance          | Interface with the base as the type |
+|                      | Interface can be created or refer to a shared base object |
+|                      | Interface referencing an object or interface |
+|                      | Referencing an interface makes it interface inheritance only. |
+|                      | Referencing the object means referencing its total interface in a way too. |
 | Multiple containment | Containment and reference |
-| Pointer | Reference |
-| Object reference | Object, reference |
-| Parameters | A procedure’s object reference public as referee |
-| Arguments | In:<br>    Create parameter and assign or change reference<br>Out:<br>    Change reference<br>In/Out:<br>    change reference<br>Change reference of parameter or create parameter  |
-| Variables | See storage |
-| Storage | Are objects with a read and write method<br>Yet another shape? It is sort of an objects in that it has a read and write method. Storage is never really physically addressed. It’s always an abtract that gives you |
-| Type reference | You can make any object or interface get the type of any other object or interface, which can in turn have a type. |
-| Member grouping | Apparent to the referer: a circle around the group<br>Not apparent to the referrer: a triangle around the group, but don’t make the triangle public or it will appear as an interface outside. |
+| Pointer              | Reference |
+| Object reference     | Object, reference |
+| Parameters           | A procedure’s object reference public as referee |
+| Arguments            | In: Create parameter and assign or change reference |
+|                      | Out: Change reference |
+|                      | In/Out: change reference |
+|                      | Change reference of parameter or create parameter  |
+| Variables            | See storage |
+| Storage              | Are objects with a read and write method |
+|                      | Yet another shape? It is sort of an objects in that it has a read and write method. |
+|                      | Storage is never really physically addressed. It’s always an abtract that gives you |
+| Type reference       | You can make any object or interface get the type  |
+|                      | of any other object or interface, which can in turn have a type. |
+| Member grouping      | Apparent to the referer: a circle around the group |
+|                      | Not apparent to the referrer: a triangle around the group, |
+|                      | but don’t make the triangle public or it will appear as an interface outside. |
 
 ##### Details
 

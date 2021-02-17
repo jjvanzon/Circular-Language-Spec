@@ -512,7 +512,7 @@ If you break one of the lines in the circularity, the one loosing the line comes
 | |               | Generic interface     | Interface determined by type line or object line |
 | |               |                       | (type’s whole interface used) |
 | |               |                       | (symbol adopts any interface the type might have) |
-| __Procedure Symbol Genericity__         | |
+| __Procedure Symbol Genericity__         | | | |
 | | __Definition__ | Original definition  | Definition determined by no line |
 | |                |                      | (no reference line) |
 | |                | Delegated definition | Definition determined by a line |
