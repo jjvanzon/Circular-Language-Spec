@@ -12,7 +12,7 @@ You may find the following folders here:
 - Broader View
     - Various draft texts that may once describe a story, ideas about how this Circle language might be used in practice. The folder may not be organized that well yet.
 - Construct Drafts
-    - It may contain drafts of ideas that might not become part of the spec. Or language constructs that are just not as clear worked out yet. Best not to expect too much from the content in this folder. It might disparagingly be called the glorified recycle bin of this repository.
+    - It may contain drafts of ideas that might not become part of the spec. Or language constructs that are just not as clear worked out yet. Best not to expect too much from the content in this folder. It might just be a glorified recycle bin.
 
 The material may still be a bit rough. Both in content and writing style.
 
