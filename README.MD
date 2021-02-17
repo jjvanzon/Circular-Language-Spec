@@ -14,8 +14,8 @@ The following folders might be found:
 - Construct Drafts
     - It may contain drafts of ideas that might not become part of the spec. Or language constructs that are just not as clear worked out yet. Best not to expect too much from the content in this folder. It might disparagingly be called the glorified recycle bin of this repository.
 
-The material may still be a bit rough around the edges. Both in content and writing style.
+The material may still be a bit rough. Both in content and writing style.
 
-Effort may  be made tidying it up step by step. The current goal (as of February, 2021) would be converting the Word documents to MarkDown.
+It might be made better step by step. The current goal (as of February, 2021) would be converting the Word documents to MarkDown.
 
 Would anyone be interested. Another repository would describe the plans, notes and TODO's around this project. Here it is: [Circle-Language-Spec-Plans](https://github.com/jjvanzon/Circle-Language-Spec-Plans)
