@@ -7,12 +7,13 @@ Circle would be an unfinished programming language. It aims to once become a dia
 
 You may find the following folders here:
 
-- Spec
+- [Spec](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec)
     - Not done yet. However, more finished up content might be found here. It might once form a specification of this language.
-- Broader View
+- [Broader View](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/2.%20Broader%20View)
     - Various draft texts that may once describe a story, ideas about how this Circle language might be used in practice. The folder may not be organized that well yet.
-- Construct Drafts
+- [Construct Drafts](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/3.%20Constructs%20Drafts)
     - It may contain drafts of ideas that might not become part of the spec. Or language constructs that are just not as clear worked out yet. Best not to expect too much from the content in this folder. It might just be a glorified recycle bin.
+- [Archive](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/4.%20Archive)
 
 The material may still be a bit rough. Both in content and writing style.
 
