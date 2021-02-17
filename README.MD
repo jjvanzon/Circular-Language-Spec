@@ -14,6 +14,7 @@ You may find the following folders here:
 - [Construct Drafts](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/3.%20Constructs%20Drafts)
     - It may contain drafts of ideas that might not become part of the spec. Or language constructs that are just not as clear worked out yet. Best not to expect too much from the content in this folder. It might just be a glorified recycle bin.
 - [Archive](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/4.%20Archive)
+    - Content that might not be relevant anymore. It may be one step away from being deleted. It is still kept in this folder in case it may become relevant again.
 
 The material may still be a bit rough. Both in content and writing style.
 
