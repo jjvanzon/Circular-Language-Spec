@@ -404,31 +404,35 @@ A pointer assignment always has a __Reference__ as a source, not its __Object__,
 
 A pointer assignment is displayed with an arrow inside the diamond.
 
-|Object Pointer Assignment:|
-| :-: |
-||
-|![](images/Pointers.018.png)|
-|<p>Reference Get ß</p><p>Object Set à  (~= Set Object to Other Related Item)</p>|
-||
-|![](images/Pointers.019.png)|
-|<p>Reference Get ß</p><p>Object Set à  (~= Set Object to Other Related List Item)</p>|
-||
-|![](images/Pointers.020.png)|
-|<p>Reference Get ß</p><p>Object Set à  (~= Set Object to Other Related List Item)</p>|
+|                  Object Pointer Assignment:                 |
+|:-----------------------------------------------------------:|
+|                ![](images/Pointers.018.png)                 |
+|                     __Reference Get ß__                     |
+|   __Object Set à__ (~= Set Object to Other Related Item)    |
+|                                                             |
+|                ![](images/Pointers.019.png)                 |
+|                     __Reference Get ß__                     |
+| __Object Set à__ (~= Set Object to Other Related List Item) |
+|                                                             |
+|                ![](images/Pointers.020.png)                 |
+|                     __Reference Get ß__                     |
+| __Object Set à__ (~= Set Object to Other Related List Item) |
 
 Pointer assignment also works for class assignment. You can use a reference as a class, instead using an object itself as the class:
 
-|Class Pointer Assignment:|
-| :-: |
-||
-|![](images/Pointers.021.png)|
-|<p>Use Reference As Class ß (~= Reference Get)</p><p>Class Set à  (~= Set Class to Other Related Item)</p>|
-||
-|![](images/Pointers.022.png)|
-|<p>Use Reference As Class ß (~= Reference Get)</p><p>Class Set à  (~= Set Class to Other Related Item)</p>|
-||
-|![](images/Pointers.023.png)|
-|<p>Use Reference As Class à (~= Reference Get)</p><p>Class Set à  (~= Set Class to Other Related List Item)</p>|
+|                  Class Pointer Assignment:                 |
+|:----------------------------------------------------------:|
+|                ![](images/Pointers.021.png)                |
+|      __Use Reference As Class ß__ (~= Reference Get)       |
+|   __Class Set à__  (~= Set Class to Other Related Item)    |
+|                                                            |
+|                ![](images/Pointers.022.png)                |
+|      __Use Reference As Class ß__ (~= Reference Get)       |
+|   __Class Set à__  (~= Set Class to Other Related Item)    |
+|                                                            |
+|                ![](images/Pointers.023.png)                |
+|      __Use Reference As Class à__ (~= Reference Get)       |
+| __Class Set à__ (~= Set Class to Other Related List Item)  |
 
 ### Assignment With Pointer Source
 
@@ -436,42 +440,46 @@ If something is already a pointer-to-pointer and it is the source of a conventio
 
 So a conventional object assignment can also have the following implementations:
 
-|Object Assignment:|
-| :-: |
-||
-|![](images/Pointers.024.png)|
-|<p>Object Get ß  (~= Use Reference As Object ~= Reference Get)</p><p>Object Set à  (~= Set Object to Other Related Item)</p>|
-||
-|![](images/Pointers.025.png)|
-|<p>Object Get ß  (~= Use Reference As Object ~= Reference Get) </p><p>Object Set à  (~= Set Object to Other Related List Item)</p>|
+|                     Object Assignment:                         |
+|:--------------------------------------------------------------:|
+|                  ![](images/Pointers.024.png)                  |
+| __Object Get ß__ (~= Use Reference As Object ~= Reference Get) |
+|     __Object Set à__ (~= Set Object to Other Related Item)     |
+|                                                                |
+|                  ![](images/Pointers.025.png)                  |
+| __Object Get ß__ (~= Use Reference As Object ~= Reference Get) |
+|  __Object Set à__ (~= Set Object to Other Related List Item)   |
 
 Assignment when source is pointer to pointer also works for the __Class__ aspect:
 
-|Class Assignment:|
-| :-: |
-||
-|![](images/Pointers.026.png)|
-|<p>Use As Class ß  (~= Use Reference As Class)</p><p>Class Set à  (~= Set Class to Other Related Item)</p>|
-||
-|![](images/Pointers.027.png)|
-|<p>Use As Class ß  (~= Use Reference As Class) </p><p>Class Set à  (~= Set Class to Other Related List Item)</p>|
+|                     Class Assignment:                     |
+|:---------------------------------------------------------:|
+|              ![](images/Pointers.026.png)                 |
+|       __Use As Class ß__ (~= Use Reference As Class)      |
+|   __Class Set à__ (~= Set Class to Other Related Item)    |
+|                                                           |
+|             ![](images/Pointers.027.png)                  |
+|      __Use As Class ß__ (~= Use Reference As Class)       |
+| __Class Set à__ (~= Set Class to Other Related List Item) |
 
 ### Cross-Aspect Assignment
 
 If the source of the assignment is a pointer-to-pointer, then the target also becomes a pointer-to-pointer. So this also gives __Reference Class to Object__ assignment the following implementations:
 
-|Reference-Class to Object Assignment|
-| :-: |
-|![](images/Pointers.028.png)|
-|<p>Reference-Class Get ß  (~= Other Related Item Class Get)</p><p>Object Set à  (~= Other Related Item Set)</p>|
-|*Result:*|
-|![](images/Pointers.029.png)|
-||
-|__Reference-Class to Object Assignment__|
-|![](images/Pointers.030.png)|
-|<p>__Reference-Class Get ß  (~= Other Related List Item Class Get)__</p><p>__Object Set à  (~= Other Related List Item Set)__</p>|
-|*Result:*|
-|![](images/Pointers.031.png)|
+|                 Reference-Class to Object Assignment              |
+|:-----------------------------------------------------------------:|
+|                    ![](images/Pointers.028.png)                   |
+|   __Reference-Class Get ß__  (~= Other Related Item Class Get)    |
+|          __Object Set à__  (~= Other Related Item Set)            |
+|                              *Result:*                            |
+|                    ![](images/Pointers.029.png)                   |
+|                                                                   |
+|              __Reference-Class to Object Assignment__             |
+|                    ![](images/Pointers.030.png)                   |
+| __Reference-Class Get ß__ (~= Other Related List Item Class Get)  |
+|        __Object Set à__ (~= Other Related List Item Set)          |
+|                              *Result:*                            |
+|                    ![](images/Pointers.031.png)                   |
 
 ### Cross-Aspect Pointer Assignment
 
