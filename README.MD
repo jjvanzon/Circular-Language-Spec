@@ -5,7 +5,7 @@ Circle-Language-Spec
 
 Circle would be an unfinished programming language. It aims to once become a diagram notation for visualizing computer code.
 
-The following folders might be found:
+You may find the following folders here:
 
 - Spec
     - Not done yet. However, more finished up content might be found here. It might once form a specification of this language.
