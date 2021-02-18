@@ -29,9 +29,11 @@ In eerste instantie is dit minder belangrijk, maar misschien maakt de automatisc
 
 naast dat de formele in, out en thru configuratie dan waarschijnlijk ook helpt voor concurrency resolution.
 
-< 2008-07-03
+<
+2008-07-03
 
-In automatic execution order you can see, that when you first assume arbitrary order of sub-commands, that do reads and writes, you have a concurrency situation. If you can solve THAT concurrency situation with automatic execution order, you can solve an arbitrary concurrent data-use situation with automatic execution order too. If everything is programmed, where does arbitrarity of the concurrency situation come from? The arbitrarity comes from users. Somehow a bigger whole, than a command with sub-commands would need to be treated as a single command, and the techniques of automatic execution order should be applied to that. Automatic execution order has not been fully described yet. >
+In automatic execution order you can see, that when you first assume arbitrary order of sub-commands, that do reads and writes, you have a concurrency situation. If you can solve THAT concurrency situation with automatic execution order, you can solve an arbitrary concurrent data-use situation with automatic execution order too. If everything is programmed, where does arbitrarity of the concurrency situation come from? The arbitrarity comes from users. Somehow a bigger whole, than a command with sub-commands would need to be treated as a single command, and the techniques of automatic execution order should be applied to that. Automatic execution order has not been fully described yet.
+/>
 
 ##### Concurrency is not considered
 
@@ -112,7 +114,7 @@ Actually
 
 ##### Other Ideas
 
-< Parameters not used in a specific execution: non-put>
+< Parameters not used in a specific execution: non-put >
 
 Threads,
 

@@ -9,6 +9,6 @@ Symbol text code is actually a language embedded into the Symbol Diagram Languag
 
 This way you can for instance embed other diagram types into the Symbol Language. 
 
-<< you can integrate data logic by being able to choose to display the data logic diagram right inside a symbol, or display the object structure it resolves in. >>
+< you can integrate data logic by being able to choose to display the data logic diagram right inside a symbol, or display the object structure it resolves in. >
 
-<< you can integrate text code in the very same way >>
+< you can integrate text code in the very same way >

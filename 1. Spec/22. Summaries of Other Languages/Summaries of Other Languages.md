@@ -356,9 +356,9 @@ typedef
 - Enumerations: Declaration, Conversions and enumerated types
 - Templates: functions and types: template
     - No arbitrary textual substitution, but only substitution of type, type or constant
-        - type placeholders: <type …>
-        - constant placeholder: any type name e.g. <int …>
-        - type placeholder: <typename …>
+        - type placeholders: < type ... >
+        - constant placeholder: any type name e.g. < int ... >
+        - type placeholder: < typename ... >
     - Specifies a family of types, code generated when it is referenced in code
 - Namespaces
     - Declaration
@@ -366,7 +366,7 @@ typedef
     - Members
     - Namespace alias: alternate name for namespace
     - namespace
-    - using namespace <namespace>: allows you to ommit the namespace identifier when referencing things in the namespace
+    - using namespace < namespace >: allows you to ommit the namespace identifier when referencing things in the namespace
     - Accessing the namespace (C++ uses ::)
 - Abstract declarator: identifier omitted
 - const and volatile pointers
@@ -458,6 +458,6 @@ Concepts
 
 ### Other
 
-I don’t summarize Com, because it doesn’t really add any programming concepts, but mainly only libraries. I don’t summarize Visual Basic, because it doesn’t really add any concepts to… oh, I do need Visual Basic and Com, for the events and stuff… shit. And properties, and all. Many Visual Basic and Com concepts have no place in this programming language, but in other modules.
+I don’t summarize Com, because it doesn’t really add any programming concepts, but mainly only libraries. I don’t summarize Visual Basic, because it doesn’t really add any concepts to... oh, I do need Visual Basic and Com, for the events and stuff... shit. And properties, and all. Many Visual Basic and Com concepts have no place in this programming language, but in other modules.
 
 Com concepts: components, interfaces.

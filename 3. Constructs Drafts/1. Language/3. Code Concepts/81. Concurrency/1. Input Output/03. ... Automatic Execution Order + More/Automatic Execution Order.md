@@ -129,7 +129,7 @@ It can be determined, that part of the sub-commands can run independently. If th
 
 < 2008-07-06 When commands have multiple parameters tied together complexly to other parameters, you have to resolve this in an execution order. >
 
-< By the way: if you use multiple output parameters of a command, how does the consult of the *two* parameters result in a *single* run?> 
+< By the way: if you use multiple output parameters of a command, how does the consult of the *two* parameters result in a *single* run? >
 
 ##### Apart from direct connection between parameters
 

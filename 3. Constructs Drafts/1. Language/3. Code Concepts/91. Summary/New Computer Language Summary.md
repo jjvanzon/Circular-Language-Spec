@@ -23,10 +23,8 @@ JJ
 
 This summary, though, doesn’t organize Symbol in the order of explaining it and it doesn’t cover concrete examples either. It just orders the concepts by category and is an overview of the soup of rules that is Symbol.
 
-<<
-‘Static’ is part of Object Structure. So lifetime is part of object structure.
-Access and Scope are the same subject.
-\>>
+< ‘Static’ is part of Object Structure. So lifetime is part of object structure.
+Access and Scope are the same subject. >
 
 ##### Rough
 
@@ -39,9 +37,7 @@ Access and Scope are the same subject.
 
 ##### More Detailed
 
-<<
-Overloading can only be part of procedures if you either cannot overload an object or you call a procedure to return an object...
-\>>
+< Overloading can only be part of procedures if you either cannot overload an object or you call a procedure to return an object... >
 
 - Identifiers
 - Objects
@@ -110,7 +106,7 @@ Overloading can only be part of procedures if you either cannot overload an obje
 
 
 - Access
-    - << does constant have a place here. Private read, public write... >>
+    - < does constant have a place here. Private read, public write... >
     - Public, Private
         - For different Aspects: 
             - Object

@@ -176,7 +176,7 @@ Every symbol of the same type has the same contents. The type can be edited by e
 
 __Static and Creation__
 
-<An object doesn’t define code. You could say that the type defines code and that a object only defines data. Each module instance, though, has its own instance of the types of the modules, even though the code of the types is still only in memory once. So you can’t really say the code resides in a type either.>
+< An object doesn’t define code. You could say that the type defines code and that a object only defines data. Each module instance, though, has its own instance of the types of the modules, even though the code of the types is still only in memory once. So you can’t really say the code resides in a type either. >
 
 - Type static
 - Procedure static
@@ -240,7 +240,7 @@ By making a procedure’s object both Procedure Static *and* Type Static, the pr
 
 Procedure and Type Static objects inside procedures can also have the long lines going from all objects to the type.
 
-<P>
+< P >
 
 Module Static Objects
 
@@ -379,7 +379,7 @@ Static bij procedure members.
 
 __Other ideas__
 
-<Also discuss the way to call a type’s members directly, while they are ‘object static’ (I haven’t introduced the term object static yet, I used to call it non-static, but object static seems to fit well in the system). So, discuss calling a type’s object static members directly, filling the *this* argument with a reference to the object. >
+< Also discuss the way to call a type’s members directly, while they are ‘object static’ (I haven’t introduced the term object static yet, I used to call it non-static, but object static seems to fit well in the system). So, discuss calling a type’s object static members directly, filling the *this* argument with a reference to the object. >
 
 
 If one diamond’s internal lines change, lines of all procedure symbols pointing to the diamond change too. If a static procedure line is changed, all procedure symbols, also all calls with that definition will change.
@@ -393,11 +393,7 @@ Static,
 
 2004
 
-<
-
-a symbol apart from an object access procedure also has a class access procedure giving you access to the class members in a static form. The object includes its type-static members…(I’m explaining static here)
-
-\>
+< a symbol apart from an object access procedure also has a class access procedure giving you access to the class members in a static form. The object includes its type-static members…(I’m explaining static here) >
 
 JJ
 

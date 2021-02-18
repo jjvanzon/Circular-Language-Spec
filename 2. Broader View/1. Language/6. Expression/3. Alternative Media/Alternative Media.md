@@ -16,8 +16,8 @@ Consider the different types of literals in Text Code. You can use this literal 
 
 ### Langauge Integration
 
-< Chemistry language. Flat or 3D>
-< controls are an interactive language>
+< Chemistry language. Flat or 3D >
+< controls are an interactive language >
 < an interactive language is a language that doesn’t only allow expression of things, but allows at least two parties to exchange information and respond to given information. > 
 
 You can translate parts of a system to text, but you can just as well translate it to a more graphical language. 
@@ -57,27 +57,27 @@ How about integrating VB and C++?
 | Object Genericity | | | |
 |---|---|---|---|
 |   | __Object__ |
-|   |   | Original object | <p>Object determined by no line</p><p>(no object line)</p> |
-|   |   | Delegated object | <p>Object determined by a line</p><p>(object line)</p> |
+|   |   | Original object | Object determined by no line<br>(no object line) |
+|   |   | Delegated object | Object determined by a line<br>(object line) |
 |   | __Type__ |
-|   |   | Original type | <p>Type determined by no line</p><p>(object nor type line)</p> |
-|   |   | Delegated type | <p>Type determined by a line</p><p>(type or object line)</p> |
-|   |   | Explicit type | <p>Type determined by type line</p><p>(limits the possible object to objects of that type)</p> |
-|   |   | Generic type | <p>Type determined by object line</p><p>(symbol adopts any type the object might have) </p> |
+|   |   | Original type | Type determined by no line<br>(object nor type line) |
+|   |   | Delegated type | Type determined by a line<br>(type or object line) |
+|   |   | Explicit type | Type determined by type line<br>(limits the possible object to objects of that type) |
+|   |   | Generic type | Type determined by object line<br>(symbol adopts any type the object might have)  |
 |   | __Interface__ |
-|   |   | Original interface | <p>Interface determined by no line</p><p>(interface, type nor object line)</p> |
-|   |   | Delegated interface | <p>Interface determined by a line</p><p>(interface, type or object line)</p> |
-|   |   | Explicit interface | <p>Interface determined by interface line</p><p>(one specific interface of the type is used)</p><p>(limits the possible types to ones that support the interface)</p> |
-|   |   | Generic interface | <p>Interface determined by type line or object line</p><p>(type’s whole interface used)</p><p>(symbol adopts any interface the type might have)</p> |
+|   |   | Original interface | Interface determined by no line<br>(interface, type nor object line) |
+|   |   | Delegated interface | Interface determined by a line<br>(interface, type or object line) |
+|   |   | Explicit interface | Interface determined by interface line<br>(one specific interface of the type is used)<br>(limits the possible types to ones that support the interface) |
+|   |   | Generic interface | Interface determined by type line or object line<br>(type’s whole interface used)<br>(symbol adopts any interface the type might have) |
 | __Procedure Genericity__ |
 |   | __Definition__ |
-|   |   | Original definition | <p>Definition determined by no line</p><p>(no reference line)</p> |
-|   |   | Delegated definition | <p>Definition determined by a line</p><p>(a reference line)</p> |
+|   |   | Original definition | Definition determined by no line<br>(no reference line) |
+|   |   | Delegated definition | Definition determined by a line<br>(a reference line) |
 |   | __Interface__ |
-|   |   | Original interface | <p>Interface determined by no line</p><p>(interface nor reference line)</p> |
-|   |   | Delegated interface | <p>Interface determined by a line</p><p>(interface or reference line)</p> |
-|   |   | Explicit interface | <p>Interface determined by interface line</p><p>(limits the possible procedure to procedures with that interface)</p> |
-|   |   | Generic interface | <p>Interface determined by reference line</p><p>(symbol adopts any interface the procedure might have)</p> |
+|   |   | Original interface | Interface determined by no line<br>(interface nor reference line) |
+|   |   | Delegated interface | Interface determined by a line<br>(interface or reference line) |
+|   |   | Explicit interface | Interface determined by interface line<br>(limits the possible procedure to procedures with that interface) |
+|   |   | Generic interface | Interface determined by reference line<br>(symbol adopts any interface the procedure might have) |
 | __Interface Doesn’t Determine Type__ |
 |   | Interface-type genericity | The fact that the interface never fixes the type |
 |   | Interface-procedure genericity | The fact that the procedure interface never fixes the  procedure. |

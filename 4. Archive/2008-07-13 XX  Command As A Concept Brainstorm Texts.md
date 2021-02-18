@@ -683,7 +683,7 @@ Comtemplations about further thru parameter passing stereotyping will be postpon
 
 The thru parameter passing type can be further split up in *affected*, *used & affected*, *transformed*, *transformed same value*, *used & affected & transformed* and *used & affected & transformed same value*.
 
-<...>
+< ... >
 
 Furthermore, thru can be either *affected*, *used & affected* or *transformed* or both. Affected is considered throughput, even though nothing is read from it, because the object is still *passed through* the command.
 

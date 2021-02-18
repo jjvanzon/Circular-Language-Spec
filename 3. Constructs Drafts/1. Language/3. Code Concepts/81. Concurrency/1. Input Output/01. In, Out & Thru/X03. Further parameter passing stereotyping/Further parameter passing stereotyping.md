@@ -21,7 +21,7 @@ Transformed means that what’s written to the object is dependant on what was f
 
 The thru parameter passing type can be further split up in *affected*, *used & affected*, *transformed*, *transformed same value*, *used & affected & transformed* and *used & affected & transformed same value*.
 
-<...>
+< ... >
 
 Furthermore, thru can be either *affected*, *used & affected* or *transformed* or both. Affected is considered throughput, even though nothing is read from it, because the object is still *passed through* the command.
 
@@ -68,7 +68,8 @@ Then I need to work out the subjects under the assumption, that you only need to
 
 ### Throughput variations
 
-< combinations:
+<
+combinations:
 
 not affected, not used, not transformed
 \-
@@ -76,7 +77,8 @@ not affected, not used, too transformed
 transformed
 not affected, too used, not transformed
 used
-\> in, not thru
+\>
+in, not thru
 not affected, too used, too transformed
 used & transformed
 too affected, not used, not transformed

@@ -573,11 +573,9 @@ JJ
 < Also look at Access Media  : Interface Access >
     \> 2009-06-28 later also called Access Ways and Special Access
 
-<<
-Does genericity control what happens on the call of system procedures or if the call to a system procedure is illegal or not?
-\>>
+< Does genericity control what happens on the call of system procedures or if the call to a system procedure is illegal or not? >
 
-<< Introduce more system procedures here:
+< Introduce more system procedures here:
 
 Type Generic Get
 Type Generic Set
@@ -585,13 +583,11 @@ Interface Generic Get
 Interface Generic Set
 Procedure Reference Generic Get
 Procedure Reference Generic Set
-Here and no earlier
+Here and no earlier >
 
-\>>
+< is that the same or different from being able to change type at creation or assignment of object reference ? >
 
-<< is that the same or different from being able to change type at creation or assignment of object reference ?>>
-
-<<
+<
 Old:
 
 A symbol’s type or interface can be generic or explicit.
@@ -601,7 +597,7 @@ Generic:
 - Generic type: a symbol always adopts the type of its object.
 - Generic interface: the interface is the default interface of the type
 
-The type of the object may be generic too. The interface of the type might be generic too. <…>
+The type of the object may be generic too. The interface of the type might be generic too. < ... >
 
 Explicit:
 
@@ -633,7 +629,7 @@ You can change whether or not a type or interface is generic. It is a separate a
 
 If a symbol already has a type line it has to have that type. If it doesn’t have a type line then it gets the type of the object it’s pointing at (not considering the interface problem below) 
 
-##### Interface <>
+##### Interface < >
 
 Something like this should be possible:
 
@@ -649,7 +645,7 @@ Ah, more rules need to be invented for working with interfaces.
 
 The type line is pointing at the center circle, but implicitly points at one of the right triangle. So there’s an invisible extension to the type line. The extension changes with the interface line of the source symbol. However… the interface of the child determines which interface is implicitly pointed at by the type line. This seems an explicit/implicit subject.
 
-Another direction rule can be added I guess, looking at the implicit piece of the type line: Sooner to exit from a circle as line source than to exit from a triangle as the line source. <that rule needs some reformulating, though.>
+Another direction rule can be added I guess, looking at the implicit piece of the type line: Sooner to exit from a circle as line source than to exit from a triangle as the line source. < that rule needs some reformulating, though. >
 
 The rule about the type line determines the interface line stays. It’s just that there’s an implicit extension to the type line, which can be generic, pointing at the interface that is the interface of the child…
 
@@ -666,7 +662,7 @@ If you redirect with an object line then the object reference gets the same type
 | __Interface Generic Get:__ | ~:    |
 | __Interface Generic Set:__ | ~: =  |
 
-<< Maybe I’ll do special operator symbols in text code that represent the object relations. Actually, that’s what I’d like a little. Except member access. I wanna keep that. >>
+< Maybe I’ll do special operator symbols in text code that represent the object relations. Actually, that’s what I’d like a little. Except member access. I wanna keep that. >
 
 Oh, making type unsettable at run time can be considered a form of genericity. Maybe I should even rename the other type genericity I mentioned. It might be called object-type genericity. Well… settability can also be called variable and constant.
 

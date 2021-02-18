@@ -934,13 +934,13 @@ Whenever you reference a square member, an implicit call is made.
 
 ![](images/Input%20Output%20Parameter%20Passings.070.jpeg "Picture 17b")
 
-<Add some access symbols>
+< Add some access symbols >
 
 If you want to access members of a procedure using only one call, you have to explicitly notate the diamond that is the call.
 
 ![](images/Input%20Output%20Parameter%20Passings.071.jpeg "Picture 18")
 
-<Add some access symbols>
+< Add some access symbols >
 
 But the accesses can only only take place just before the call and just after.
 
@@ -982,7 +982,7 @@ An object reference to a procedure can only be a reference to the procedure’s 
 
 ![](images/Input%20Output%20Parameter%20Passings.079.jpeg "Picture 26")
 
-<o = out, r = return>
+(o = out, r = return)
 
 __a__ can only be a reference to __r__, the return value. __b__ is a reference to __o__, another out parameter.
 
@@ -990,7 +990,7 @@ __a__ can only be a reference to __r__, the return value. __b__ is a reference t
 
 There are three ways to use arguments: state read, state write and passing by reference:
 
-| ![](images/Input%20Output%20Parameter%20Passings.080.png) | <p>![](images/Input%20Output%20Parameter%20Passings.081.png) | ![](images/Input%20Output%20Parameter%20Passings.082.png)|
+| ![](images/Input%20Output%20Parameter%20Passings.080.png) | ![](images/Input%20Output%20Parameter%20Passings.081.png) | ![](images/Input%20Output%20Parameter%20Passings.082.png)|
 |:------------:|:-------------:|:-------------------:|
 | *State read* | *State write* | *Pass by reference* |
 
@@ -1058,7 +1058,7 @@ A argument reference (a line entering a diamond) is an implicit notation of the 
 
 Rule 2:
 
-If the line both enters and exists a diamond, then the inversion of direction doesn’t solve it. <> In that case, a child diamond is created in the diamond that holds the argument reference. The diamond references the diamond that held the argument reference target. The new child diamond is used instead. <>
+If the line both enters and exists a diamond, then the inversion of direction doesn’t solve it. < > In that case, a child diamond is created in the diamond that holds the argument reference. The diamond references the diamond that held the argument reference target. The new child diamond is used instead. < >
 
 Rule 3:
 
@@ -1224,7 +1224,7 @@ When you reference output parameters of a procedure multiple times, each referen
 
 If the diagram above is an abstract view on the system, there might only be made a single call, but officially the diagram above is showing *two* implicit calls. The meaning of the diagram above is:
 
-*< P: same system as above, now physically showing the two calls >*
+< P: same system as above, now physically showing the two calls >
 
 If you want to reference multiple output parameters of a single call, you have to expliclity display the call and reference the objects that are inside the call symbol. By referencing the parameters of the call, you only use one call.
 
@@ -1320,7 +1320,7 @@ Implicit Notations
 
 ###### New
 
-- < > The assignment destination consult is not seens as a consult.<> Consult of a parameter as assignment destination does not require execution of the parameter holder.
+- < > The assignment destination consult is not seens as a consult. < > Consult of a parameter as assignment destination does not require execution of the parameter holder.
 - Executor represents one execution per call on definition.
     - Implicit calls are not made for diamond contents reference < >
 
@@ -1369,7 +1369,7 @@ Oh jawel! Consult vind gewoonlijk altijd plaats in epiloog, maar bij assignment 
 
 ![](images/Input%20Output%20Parameter%20Passings.118.jpeg "8")
 
-The last picture is an acceptable substitute for implicit state assignment. It is actually explicit state assignment, but it looks like a real connection between A and B. A rule though: state assignment takes two arguments: destination = source. In the notation on the left you have to follow the direciton of the line you’d get between A and B if you ignore the call thing in between to find out which is the first argumetn and which is the second. In text code it goed from  lieft to right. In the diagram It goes from ...<>. B is destination A is source. I mean B is the one that gets the line. B is source of line, Asbut destination of assignment. 
+The last picture is an acceptable substitute for implicit state assignment. It is actually explicit state assignment, but it looks like a real connection between A and B. A rule though: state assignment takes two arguments: destination = source. In the notation on the left you have to follow the direciton of the line you’d get between A and B if you ignore the call thing in between to find out which is the first argumetn and which is the second. In text code it goed from  lieft to right. In the diagram It goes from ... < >. B is destination A is source. I mean B is the one that gets the line. B is source of line, Asbut destination of assignment. 
 
 #### Argument Access Summary
 

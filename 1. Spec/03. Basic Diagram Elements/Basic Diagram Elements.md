@@ -247,7 +247,7 @@ A line might have direction. The direction of a line could be expressed with an 
 
 > ![](images/Basic%20Diagram%20Elements.029.png)
 >
-> --->
+> `=>`
 
 The direction would go from symbol __A__ to symbol __B__. The access mark might be placed before the object, that would be accessed.
 
@@ -261,7 +261,7 @@ The first suggestion for line direction is that a line might usually point outwa
 
 > ![](images/Basic%20Diagram%20Elements.030.png)
 >
-> --->
+> `=>`
 
 Symbol __A__ has a line that might be pointing to Symbol __C__, because lines might tend to point outwards.
 
@@ -269,7 +269,7 @@ If the direction would not be outwards, it might be denoted with an access mark.
 
 > ![](images/Basic%20Diagram%20Elements.031.png)
 >
-> <---
+> `<=`
 
 Now symbol __C__ would then be like a pointer to symbol __A__.
 
@@ -279,7 +279,7 @@ The second suggestion for line direction might be that a diamond might be more l
 
 > ![](images/Basic%20Diagram%20Elements.032.jpeg)
 >
-> --->
+> `=>`
 
 The diamond would point to the square.
 
@@ -287,7 +287,7 @@ If the direction would be the other way around, it might be denoted with the use
 
 > ![](images/Basic%20Diagram%20Elements.033.jpeg)
 >
-> <---
+> `<=`
 
 
 #### Access Mark Placement
