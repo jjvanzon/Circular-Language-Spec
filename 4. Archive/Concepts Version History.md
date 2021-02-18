@@ -1,7 +1,8 @@
 ﻿Concepts article group versions
 ===============================
 
-|Version|Name|Description|
-| :- | :- | :- |
-|XXXX-XX-XX XX|Concepts|<p>Development version.</p><p>There has not been a release version yet.</p>|
+| Version       | Description                               |
+|---------------|-------------------------------------------|
+| XXXX-XX-XX XX | Development version                       |
+|               | There has not been a release version yet. |
 

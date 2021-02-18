@@ -1,7 +1,8 @@
 ﻿Coding Concepts article versions
 ================================
 
-|Version|Name|Description|
-| :- | :- | :- |
-|XXXX-XX-XX XX|Coding Concepts|Development version.<br>No version has been released yet.|
+| Version       | Description                       |
+|---------------|-----------------------------------|
+| XXXX-XX-XX XX | Development version.              |
+|               | No version has been released yet. |
 

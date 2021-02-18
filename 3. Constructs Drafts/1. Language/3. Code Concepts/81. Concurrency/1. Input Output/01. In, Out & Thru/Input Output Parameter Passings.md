@@ -868,8 +868,7 @@ Even though an argument’s line is hardly ever read, an argument’s state *is*
 
 #### Using Arguments
 
-|You’ll mainly use arguments by reading and writing their state or to pass objects by reference.|
-| :- |
+You’ll mainly use arguments by reading and writing their state or to pass objects by reference.
 
 #### Accessing Arguments During Execution
 
@@ -991,8 +990,9 @@ __a__ can only be a reference to __r__, the return value. __b__ is a reference t
 
 There are three ways to use arguments: state read, state write and passing by reference:
 
-|<p></p><p>![](images/Input%20Output%20Parameter%20Passings.080.png)</p><p>*State read*</p>|<p>![](images/Input%20Output%20Parameter%20Passings.081.png)</p><p>*State write*</p>|<p></p><p></p><p>![](images/Input%20Output%20Parameter%20Passings.082.png)</p><p>*Pass by reference*</p>|
-| :-: | :-: | :-: |
+| ![](images/Input%20Output%20Parameter%20Passings.080.png) | <p>![](images/Input%20Output%20Parameter%20Passings.081.png) | ![](images/Input%20Output%20Parameter%20Passings.082.png)|
+|:------------:|:-------------:|:-------------------:|
+| *State read* | *State write* | *Pass by reference* |
 
 There seems to be one more: *argument reference*.
 
@@ -1116,9 +1116,11 @@ Which is not a real bidirection, because the line can’t *really* go inward any
 
 As such, there are six explicit argument purposes:
 
-|<p>![](images/Input%20Output%20Parameter%20Passings.097.png)</p><p>*State in*</p><p></p>|<p></p><p>![](images/Input%20Output%20Parameter%20Passings.098.png)</p><p>*State out*</p>|<p>![](images/Input%20Output%20Parameter%20Passings.099.png)</p><p>*State thru*</p>|
-| :-: | :-: | :-: |
-|<p>![](images/Input%20Output%20Parameter%20Passings.100.png)</p><p>*Reference in*</p>|<p>![](images/Input%20Output%20Parameter%20Passings.101.png)</p><p>*Reference out*</p>|<p></p><p>![](images/Input%20Output%20Parameter%20Passings.102.png)</p><p>*Reference thru*</p>|
+| ![](images/Input%20Output%20Parameter%20Passings.097.png) | ![](images/Input%20Output%20Parameter%20Passings.098.png) | ![](images/Input%20Output%20Parameter%20Passings.099.png) |
+|:--------------:|:---------------:|:----------------:|
+|   *State in*   |   *State out*   |   *State thru*   |
+| ![](images/Input%20Output%20Parameter%20Passings.100.png) | ![](images/Input%20Output%20Parameter%20Passings.101.png) | ![](images/Input%20Output%20Parameter%20Passings.102.png) |
+| *Reference in* | *Reference out* | *Reference thru* |
 
 #### Execution Order In Text Code
 

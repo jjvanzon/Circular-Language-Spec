@@ -1924,17 +1924,17 @@ When denoting the mere existance of a line, the destination of the line is undet
 
 To denote that many borders are crossed, usually three peels are used. So three peels come in the place of where otherwise an exact amount of peels is put. A line that crosses many borders is also said to have a far away line target.
 
-|                             |                                |                                 |
-|:---------------------------:|:------------------------------:|:-------------------------------:|
+|                             |                                |                                |
+|:---------------------------:|:------------------------------:|:------------------------------:|
 | ![](images/Symbol%20Language%20(2004).203.png) | ![](images/Symbol%20Language%20(2004).203.png) | ![](images/Symbol%20Language%20(2004).202.png) |
-| Triple solid object symbol: | Triple dashed object symbol:   |  Triple dotted object symbol:   |
-|    object symbol with a     |     object symbol with a       |      object symbol with a       |
-| far away object line target |  far away  type line target    | far away  interface line target |
-|                             |                                |                                 |
+| Triple solid object symbol: | Triple dashed object symbol:   |  Triple dotted object symbol:  |
+|    object symbol with a     |     object symbol with a       |      object symbol with a      |
+| far away object line target |  f ar away type line target    | far away interface line target |
+|                             |                                |                                |
 | | ![](images/Symbol%20Language%20(2004).204.png) | ![](images/Symbol%20Language%20(2004).205.png) |
-|                             |         Triple square:         |       Triple dotted square:     |
-|                             |    procedure symbol with a     |     procedure symbol with a     |
-|                             | far away reference line target | far away interface line target  |
+|                             |         Triple square:         |       Triple dotted square:    |
+|                             |    procedure symbol with a     |     procedure symbol with a    |
+|                             | far away reference line target | far away interface line target |
 
 ###### Other Abstract Meanings
 
