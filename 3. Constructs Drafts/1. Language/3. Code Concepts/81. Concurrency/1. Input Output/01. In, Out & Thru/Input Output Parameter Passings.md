@@ -1,8 +1,8 @@
-﻿Computer Language Coding Concepts
-=================================
+﻿Circle Language | Construct Drafts | Input Output
+=================================================
 
-Input Output Parameter Passings
--------------------------------
+Parameter Passing
+-----------------
 
 These sections were set aside in the project *Work Out Parameter Articles*.
 

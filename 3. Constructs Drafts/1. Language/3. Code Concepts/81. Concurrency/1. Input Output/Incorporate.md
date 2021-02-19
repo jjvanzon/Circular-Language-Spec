@@ -1,3 +1,9 @@
+Circle Language | Construct Drafts | Input Output
+=================================================
+
+Texts to Incorporate
+--------------------
+
 Advanced Command Articles,
 2008-08
 
@@ -25,7 +31,7 @@ JJ
 Advanced Command Artices,
 2008-08
 
-A clause has a unary relation with its parameters, because you do not want to see the clause as a command in the classes of a clause’s parameters.
+A clause has a unary relation with its parameters, because you do not want to see the clause as a command in the classes of a clauseï¿½s parameters.
 
 JJ
 
@@ -75,7 +81,7 @@ JJ
 Input Output,
 2008-09-09
 
-But access controlling aspects of a parameter will give guarantees about the command’s behavior. Guarantees, that might be essential for automatic execution order, concurrency resolution and user controlled access control, so a user can make a decision about the usage of a command, based on what is done with the objects passed to it.
+But access controlling aspects of a parameter will give guarantees about the commandï¿½s behavior. Guarantees, that might be essential for automatic execution order, concurrency resolution and user controlled access control, so a user can make a decision about the usage of a command, based on what is done with the objects passed to it.
 
 JJ
 

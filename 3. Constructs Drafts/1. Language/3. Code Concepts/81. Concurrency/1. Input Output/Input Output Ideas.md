@@ -1,5 +1,8 @@
-﻿Input Output | Ideas
-====================
+﻿Circle Language | Construct Drafts | Input Output
+=================================================
+
+Ideas
+-----
 
 *The texts below are loose ideas yet to be turned into good documentation.*
 

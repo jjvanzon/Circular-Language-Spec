@@ -1,8 +1,8 @@
-﻿Computer Language
-=================
+﻿Circle Language | Construct Drafts
+==================================
 
-New Computer Language Summary
------------------------------
+Circle Language Summary
+-----------------------
 
 Computer Language,
 2008-08-06

@@ -1,5 +1,8 @@
-﻿Multiple Language Layers
-========================
+﻿Circle Language | Construct Drafts
+==================================
+
+Multiple Language Layers
+------------------------
 
 - Arithmetic Algebra
 - Comparative Algebra
@@ -10,7 +13,7 @@
 - Relational
 - ...
 
-##### Procedural Imposed On Algebraic
+### Procedural Imposed On Algebraic
 
 The criteria that are simple types can only be expressed with numbers and all. So simple literals. I accept that.
 

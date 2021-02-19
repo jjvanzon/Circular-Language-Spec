@@ -1,7 +1,12 @@
-﻿Command As A Concept Brainstorm Texts
-=====================================
+﻿Circle Language | Archive
+=========================
 
-#### Commands as a concept
+__[Obsolete]__
+
+Command As A Concept Brainstorm Texts
+-------------------------------------
+
+### Commands as a concept
 
 Keep in mind, that in earlier articles it was explained, that a command is a separate entity, as opposed to being part of a specific class.
 
@@ -68,7 +73,7 @@ Zo uit de losse pols verzin ik nu, dat een command een object is, waarvan de pro
 
 JJ
 
-#### Classes & commands loosely coupled as relations between commands and objects
+### Classes & commands loosely coupled as relations between commands and objects
 
 Parameters are the essential connection between commands and objects. If I can use a line merge in bidirectional relations between classes, does that mean that a line merge between a command parameter’s class line and a class command’s definition line should be considered a bidirectional relation between a class and a command? Should that be viewed more like a relationship, than anything else?
 
@@ -103,13 +108,13 @@ Subdividing the commands from different site into different interfaces of an obj
 
 Still ignore, that also for relations between objects and commands the diagram notation has discrepancies with the diagram notation of automatic containment.
 
-#### Downput
+### Downput
 
 Next to the terms input, output and throughput, the term downput will be introduced. Downput is intermediate data as a helper of a process, that will eventually produce output. Temporary variables, local variables. They are all downput. Actually, in the method-call structure, a method in which output data is disposed, this output as become downput.
 
 The term downput is good, because it is only passed *down* into sub-commands. And it is dropped after the parent command is done (dropped *down*). It is ‘put down’ / rejected after the execution. Or put down / to put something down, that you had in your hand.
 
-#### Read-Write Direction As A Connection
+### Read-Write Direction As A Connection
 
 Formerly, the direction of input and output was indicated with an access mark on a reference line. But this created ambiguity with the indication of *reference targets*. Read-write direction is something so basic in computer language, that it deserves a separate line type. From now on, value direction will be indicated by a *wavy line*.
 
@@ -125,7 +130,7 @@ Sometimes the command itself does not read or write from a parameter, but the pa
 
 It is not clear yet if it is best to also use value direction to indicate addition, removal, creation and annulment of objects.
 
-#### Input, output, throughput, downput
+### Input, output, throughput, downput
 
 ##### Introduction
 
@@ -770,7 +775,7 @@ The combinations, that are left, then:
 
 Does not make sense. You’d give a parameter an initial value, that does not get used, but will be overwritten.
 
-#### Automatically determining what’s in, out or thru
+### Automatically determining what’s in, out or thru
 
 The terms input, output, throughput and downput were discussed earlier. Here it is discussed how to automatically determine whether a parameter is in, out, through or downput.
 
@@ -810,7 +815,7 @@ You should only *refer* to those articles, even when the articles are not not fi
 
 The rest is all part of automatically determing in-out-thru.
 
-#### Automatic Execution Order
+### Automatic Execution Order
 
 The first thought was, that the execution order of sub-commands could be automatically determined, based connection between parameters and objects, and whether parameter is __In__, __Out__ or __Thru__ and __By Reference__, __By Value__ or __Object Out__. But this is not true.
 
@@ -934,9 +939,9 @@ It can be determined, that part of the sub-commands can run independently. If th
 
 < By the way: if you use multiple output parameters of a command, how does the consult of the *two* parameters result in a *single* run? > 
 
-#### System interface
+### System interface
 
-There is a paradox.
+here is a paradox.
 
 A command is a special object, that can execute, but an object has system commands. A related item gets system commands. So here I want to replace a real command by an object, that can behave as a command, but an object *must* have system commands in order to function.
 
@@ -954,7 +959,7 @@ It is really not that much of a problem.
 
 Assignments also require calls to system commands. You have to consider that.
 
-#### Remaining Ideas
+### Remaining Ideas
 
 The implementation of a command is called a procedure.
 

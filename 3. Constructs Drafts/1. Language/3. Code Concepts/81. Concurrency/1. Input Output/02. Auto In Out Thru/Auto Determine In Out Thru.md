@@ -1,8 +1,8 @@
-﻿Computer Language Coding Concepts
-=================================
+﻿Circle Language | Construct Drafts | Input Output
+=================================================
 
 Automatically Determining What’s In Out or Thru
-----------------------------------------------
+-----------------------------------------------
 
 < Under construction >
 

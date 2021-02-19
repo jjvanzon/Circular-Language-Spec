@@ -1,5 +1,8 @@
-﻿Computer Language, Old Ideas
-============================
+﻿Circle Language | Construct Drafts | Utilities
+==============================================
+
+Old Ideas
+=========
 
 Development Notes
 -----------------
@@ -659,7 +662,7 @@ y = r \* sin((2PI / n + b) \* I)
 
 ## Brainstorm
 
-###### ‘Normal’ Variables
+### ‘Normal’ Variables
 
 Variables are objects. A data type is a class. Its members operate on some data.
 
@@ -669,7 +672,7 @@ Copy is like variable assignment
 
 I will translate each common variable action for you to symbol object structure methods.
 
-##### Brainstorm
+### Brainstorm
 
 Event interfaces
 Multiple sink events
@@ -755,7 +758,7 @@ If the values of the parameters are different all the time, it's best to keep th
 
 This is the contemplation for clarity, which is something different from the contemplation for efficiency. I wonder if the stack (with random access) is really faster than regular memory access. That's the criterium for efficiency contemplations.
 
-##### J Code and Code Style
+#### J Code and Code Style
 
 Je moet om properties te groeperen in Vb een hele set klassen maken.
 

@@ -1,6 +1,8 @@
 ﻿Interesting Old Introduction To J Data
 ======================================
 
+__[Obsolete]__
+
 *This story dates from a time when I looked at it from a data perspective, rather than an object perspective. I kept the name J Data in the story, instead of replacing it with Creator, so that it’s clear the story is about an older perspective.*
 
 J Data may be *the* basic software module that makes all computing *so* easy.
@@ -27,7 +29,9 @@ So using J Data is quite easy: you define the *logical* data elements and how th
 
 Even though you can use J Data Structure for all your data, it is still possible to directly use the basic data structures provided by J Lists and Trees.
 
-##### Summary
+
+ Summary
+ -------
 
 - Basic Data structures: lists and trees
 - Common interface for lists
