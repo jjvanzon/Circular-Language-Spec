@@ -317,7 +317,7 @@ virtual, inline
 
 - Type qualifiers:
 
-` `const, volatile
+const, volatile
 
 - Friend: a global function overloaded and specified inside a type for access to its protected and private members
 
@@ -329,7 +329,7 @@ any type
 
 - typedef specifier:
 
-typedef	
+typedef
 
 - Declarators: specifies
     - The name and pointering in a declaration (and type names in certain cases). Basically the part of the declaration that the specifiers do not cover.
@@ -458,6 +458,6 @@ Concepts
 
 ### Other
 
-I don’t summarize Com, because it doesn’t really add any programming concepts, but mainly only libraries. I don’t summarize Visual Basic, because it doesn’t really add any concepts to... oh, I do need Visual Basic and Com, for the events and stuff... shit. And properties, and all. Many Visual Basic and Com concepts have no place in this programming language, but in other modules.
+I don’t summarize Com, because it doesn’t really add any programming concepts, but mainly only libraries. I don’t summarize Visual Basic, because it doesn’t really add any concepts to... oh, I do need Visual Basic and Com, for the events and stuff... dang. And properties, and all. Many Visual Basic and Com concepts have no place in this programming language, but in other modules.
 
 Com concepts: components, interfaces.

@@ -1,5 +1,5 @@
-﻿Circle Language Spec: Modules
-=============================
+﻿Circle Language Spec
+====================
 
 Modules
 -------
@@ -48,13 +48,14 @@ Here is a module with a reference to another module:
 
 This makes all the global members of module A, globally accessible from inside module B.
 
-## Ideas
+
+### Ideas
 
 *The texts below are ideas yet to be turned into good documentation.*
 
-### Out of the original Symbol documentation
+#### Out of the original Symbol documentation
 
-#### Multiple Module Levels
+##### Multiple Module Levels
 
 A module B inside a module A is accessible by A. A module C inside module B is not accessible by A unless declared public.
 
@@ -82,7 +83,6 @@ module, where there are multiple levels of module and that exists in today's sys
 
 JJ
 
-#### System Procedures for Modules
+##### System Procedures for Modules
 
 System procedures of modules are the same as for other object symbols. The only restriction is that modules can’t have lines to objects and objects can’t have lines to modules. Modules can have an object line, type line and interface line just like objects.
-

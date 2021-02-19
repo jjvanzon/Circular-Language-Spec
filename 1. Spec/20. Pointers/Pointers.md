@@ -135,7 +135,9 @@ But similarity in aspect can also be implied by a *name* and the *connection bet
 
 The only point to implicit connection through parent is to make the diagram clearer.
 
-## Pointers and the System Interface
+
+Pointers and the System Interface
+---------------------------------
 
 ### System Objects
 
@@ -392,7 +394,9 @@ __Reference__
 
 The __Use Reference As Object__ command is part of the __Object__ aspect but __Gets__ the __Reference__ aspect. The __Use Reference As Class__ command is part of the __Class__ aspect, but __Gets__ the __Reference__ aspect.
 
-## Pointer Assignment
+
+Pointer Assignment
+------------------
 
 ### Pointer Assignment
 
@@ -485,7 +489,9 @@ If the source of the assignment is a pointer-to-pointer, then the target also be
 
 *Pointer* assignments do not have a cross-aspect variation. Pointer assignments use an the reference aspect as the source of an assignment: not a particular aspect of the object reference, but the reference itself. It does not apply to cross-aspect assignments, because on one end of the assignment no aspect at all is involved.
 
-## System Command Calls and Pointers
+
+System Command Calls and Pointers
+---------------------------------
 
 ### System Interface Call
 
@@ -505,7 +511,8 @@ __(Class Set `=>`)__
 
 (has assignment notation)
 
-## Loose Ideas
+Loose Ideas
+-----------
 
 ### Loose Ideas about Target Objects
 

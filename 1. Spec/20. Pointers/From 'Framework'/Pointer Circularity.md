@@ -1,5 +1,5 @@
-﻿Computer Language Coding Concepts
-=================================
+﻿Circle Language Spec | Circularity
+==================================
 
 Pointer Circularity
 -------------------

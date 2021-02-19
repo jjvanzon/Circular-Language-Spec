@@ -1,9 +1,12 @@
-﻿Symbol: Generiek sluit daarbij aan
-==================================
+﻿Circle Language Spec
+====================
+
+Type Safety, Genericity, Explicit
+---------------------------------
 
 Het type van de items is nu wel heel generiek. Dat sluit aan bij generiekheid in Symbol. Mooi.
 
-#### Ideas
+### Ideas
 
 Computer Language,
 
@@ -101,7 +104,8 @@ You won't be running a procedure over it anyway.
 JJ
 
 
-## from original Symbol documentation
+From Original Symbol Documentation
+----------------------------------
 
 ### Object Basics
 
@@ -568,7 +572,7 @@ JJ
 
 ## More from the original Symbol documentation
 
-#### Old
+### Old
 
 < Also look at Access Media  : Interface Access >
     \> 2009-06-28 later also called Access Ways and Special Access
@@ -629,7 +633,7 @@ You can change whether or not a type or interface is generic. It is a separate a
 
 If a symbol already has a type line it has to have that type. If it doesn’t have a type line then it gets the type of the object it’s pointing at (not considering the interface problem below) 
 
-##### Interface < >
+#### Interface < >
 
 Something like this should be possible:
 
@@ -649,11 +653,11 @@ Another direction rule can be added I guess, looking at the implicit piece of th
 
 The rule about the type line determines the interface line stays. It’s just that there’s an implicit extension to the type line, which can be generic, pointing at the interface that is the interface of the child…
 
-##### Type
+#### Type
 
 If you redirect with an object line then the object reference gets the same type as the target object (except when you use a different interface, the previous problem I introduced). Not all the symbols will get a line to the type, though.
 
-##### Operators
+#### Operators
 
 |                            |       |
 |---------------------------:|:------|

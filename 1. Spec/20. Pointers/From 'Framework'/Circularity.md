@@ -1,5 +1,8 @@
-﻿Circularity
-============
+﻿Circle Language Spec | Pointers
+===============================
+
+Circularity
+-----------
 
 Circularities are in many cases no problem. Sometimes, however, a program is organized in a way, that circularities will make the program hang. Therefore there is standard functionality in Creator to handle circularities. Procedures that handle a circularity sometimes require a lot of steps.
 
@@ -28,7 +31,7 @@ The fourth way of circularity handling is called circularity targeting. This add
 
 Ofcourse circularities don’t need to be protected, circularities can be made as soon as somewhere in the relational redirection, an already passed object occurs. This section simply laid out the possibilities in Creator to handle circularities to prevent your program from hanging.
 
-#### Older Story
+### Older Story
 
 To completely prevent circularities from forming, though, this procedure only needs to be executed whenever a circularity could be formed: on changing an object reference. To detect a circularity that’s already there, can require a lot of steps, though.
 
@@ -61,7 +64,7 @@ I have to think of better names. Preventing and blocking sound too alike.
 
 Ofcourse circularities don’t need to be protected, circularities can be made as soon as somewhere in the relational redirection, an already passed object occurs. This section simply laid out the possibilities in J Data to handle circularities to prevent your program from hanging.
 
-## Ideas
+### Ideas
 
 2008-04-26
 

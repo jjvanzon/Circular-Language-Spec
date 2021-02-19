@@ -1,5 +1,5 @@
-﻿Circle Language Spec: Object Order
-==================================
+﻿Circle Language Spec
+====================
 
 Object Order
 ------------
@@ -8,7 +8,7 @@ __[Preliminary documentation]__
 
 This is unfinished documentation of lower quality. It only has unfinished descriptions and loose ideas.
 
-### Object Order
+### Brainstorm
 
 *This brainstorm was written in the context of efforts to program a prototype app 'Circle 3'.*
 
