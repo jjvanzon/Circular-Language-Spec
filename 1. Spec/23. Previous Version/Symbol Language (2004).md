@@ -717,7 +717,7 @@ A *line dissector*, also called an *access symbol*, can determine the direction 
 | ![](images/Symbol%20Language%20(2004).062.png) | ![](images/Symbol%20Language%20(2004).062.png)|
 |:----------------------------------------------:|:---------------------------------------------:|
 |               *B is pointed to.*               |               *A is pointed to.*              |
-|      *The direction goes to the right à.*      |      *The direction goes to the left ß.*      |
+|    *The direction goes to the right `=>`.*     |    *The direction goes to the left `<=`.*     |
 |         *In this case A points to B.*          |         *In this case B points to A.*         |
 
 You can see the line dissector as the door that lets you access a symbol. Therefore in the first example, __B__ is accessed: __B__ is pointed to by __A__, and in the second example __A__ is accessed: __A__ is pointed to by __B__.
@@ -726,7 +726,7 @@ In another situation the access symbol is placed as follows:
 
 | ![](images/Symbol%20Language%20(2004).062.png) | ![](images/Symbol%20Language%20(2004).063.png) |
 |:----------------------------------------------:|:----------------------------------------------:|
-|      *The direction goes to the right à.*      |      *The direction goes to the left ß.*       |
+|    *The direction goes to the right `=>`.*     |    *The direction goes to the left `<=`.*      |
 |                 *A points to B.*               |                *B points to A.*                |
 
 In the last picture, the access symbol isn’t placed near __A__, but closer to the border of __C__. Why this is so is explained later. For now you can see the line dissector as the *door* to __C__ that lets you access __A__.
@@ -787,13 +787,13 @@ It happens more often that a procedure has a pointer to an object:
 
 ![](images/Symbol%20Language%20(2004).066.png)
 
-à
+`=>`
 
 than for an object to directly reference a procedure parameter:
 
 ![](images/Symbol%20Language%20(2004).067.png)
 
-ß
+`<=`
 
 That is actually highly uncommon. It’s *not* uncommon to reference a procedure’s object, but it *is* uncommon to reference it directly from an object.
 
@@ -801,7 +801,7 @@ It is very *common* for a procedure to have a reference another object’s proce
 
 ![](images/Symbol%20Language%20(2004).068.png)
 
-à
+`=>`
 
 Especially when it’s a diamond:
 
@@ -811,7 +811,7 @@ And it is very *uncommon* to reference a procedure clause from an object:
 
 ![](images/Symbol%20Language%20(2004).070.png)
 
-ß
+`<=`
 
 Altogether it is more common for a procedure to point to something in an object, than for an object to directly reference something in a procedure: you sooner exit a procedure than an object.
 
@@ -821,15 +821,15 @@ Or: you sooner point *to* a triangle than *from* a triangle. This rule only appl
 
 ![](images/Symbol%20Language%20(2004).071.png)
 
-à
+`=>`
 
-The direction goes to the right à. It’s more common for a circle to redirect to an interface implementation in another circle. The other direction is less common: it’s less common to redirect an interface implementation to some far away object.
+The direction goes to the right =>. It’s more common for a circle to redirect to an interface implementation in another circle. The other direction is less common: it’s less common to redirect an interface implementation to some far away object.
 
 ![](images/Symbol%20Language%20(2004).072.png)
 
-ß
+`<=`
 
-In this example the direction *is* to the left ß. You *do* sooner reference an interface than redirect an interface, but the outwards rule is still dominant. In the first diagram the outwards rule didn’t apply; here it does.
+In this example the direction *is* to the left `<=`. You *do* sooner reference an interface than redirect an interface, but the outwards rule is still dominant. In the first diagram the outwards rule didn’t apply; here it does.
 
 ##### You Sooner Redirect a Diamond than Reference It
 
@@ -837,13 +837,13 @@ A diamond is usually a call, so it’s most common that the diamond points at so
 
 ![](images/Symbol%20Language%20(2004).073.jpeg)
 
-à
+`=>`
 
 You can point *to* a diamond:
 
 ![](images/Symbol%20Language%20(2004).074.jpeg)
 
-ß
+`<=`
 
 But it happens to be so that a diamond usually points *at* something. The picture above shows a reference to a diamond symbol.
 
@@ -3376,7 +3376,7 @@ Een call line is eigenlijk een reference line, maar als de parent square execute
 
 Een call een aparte line maken is net zo iets als een triangle een aparte line maken. Hetzelfde mankement. Dan lijkt het logisch, dat een call een apart symbool krijgt, niet een aparte line. Shit. Welk symbool. >
 
-#### àElsewhere
+#### =>Elsewhere
 
 __*Procedure Interface Restrictions*__
 
@@ -4135,7 +4135,7 @@ You could speak of conditional calls, actually.
 
 Calls can be managed by execution control. Execution control manages the regular order of the calls *and* can alter the regular traversal of calls depending on a Boolean result (If, Select, For, Do). The Boolean result can spring from any combination of forms of algebra that in the end returns a Boolean result. Comparison algebra and Boolean algebra return Boolean results.
 
-#### àExecution Control
+#### =>Execution Control
 
 But... if you pass a clause reference to an execution control procedure the execution control CAN call the clause, but only in the context of the procedure instance that called the execution control procedure!
 
@@ -4294,7 +4294,7 @@ The public ancestors of a globality are accessible from anywhere within the glob
 
 ### Brainstorm
 
-#### àAccess Ways
+#### =>Access Ways
 
 Clause members can  access the members of its ancestor procedure symbols. 
 
@@ -5220,7 +5220,7 @@ Symbol’s __Destroy__ is actually like Visual Basic’s __= Nothing__. It is lo
 
 However, if a target object symbol is destroyed, other references will not point to a created object anymore. In a symbol diagram this makes sense. 
 
-| ![](images/Symbol%20Language%20(2004).399.png) | à | ![](images/Symbol%20Language%20(2004).400.png) | à | ![](images/Symbol%20Language%20(2004).401.png) |
+| ![](images/Symbol%20Language%20(2004).399.png) | `=>` | ![](images/Symbol%20Language%20(2004).400.png) | `=>` | ![](images/Symbol%20Language%20(2004).401.png) |
 |:---:|:---:|:---:|:---:|:---:|
 
 In Com, the object remains as long as there are referrers. Symbol just has a more refined methodology.
@@ -5890,13 +5890,13 @@ I also wanna cover how lines are set and what happens when ... now I forgot what
 
 #### Brainstorm
 
-#### àSystem Aspects
+#### =>System Aspects
 
 *This Argument*
 
 < Also discuss the way to call a type’s members directly, while they are ‘object static’ (I haven’t introduced the term object static yet, I used to call it non-static, but object static seems to fit well in the system). So, discuss calling a type’s object static members directly, filling the *this* argument with a reference to the object. Then you also need to figure out a notation for this call when you see the call line. How do you see the this parameter inside the type, or do you only see it on the call to the type’s object static member? >
 
-#### àSystem Aspects
+#### =>System Aspects
 
 <
 *Passing a clause by reference*
@@ -5913,7 +5913,7 @@ Procedure ( Parameter . Reference = ... )
 
 \>
 
-### àSystem Aspects
+### =>System Aspects
 
 *Exclusive Establishment*
 
@@ -5930,7 +5930,7 @@ Procedure ( Parameter . Reference = ... )
 |     | Only possible for static procedure members or exclusive establishment. |
 |     | A diamond can be executing. Only during the execution of the diamond, lines between its non static children can be real. If the diamond isn’t executing, or it’s not a diamond, but a square, lines between the non static children are suggestive. Only lines between static members in such cases, can be real. |
 
-#### àSystem Aspects
+#### =>System Aspects
 
 *Exclusive Establishment*
 
@@ -5943,31 +5943,31 @@ If a clause can access anything outside then you should be able to have exclusiv
 Create the picture in your head as you read that. Anyway, I disagree. It doesn’t matter that it’s reachable by the definition or not. All that matters is that the one setting the line could reach both source and destination. It doesn’t matter if the line source can access the line destination. Funny enough, that does matter. The line talked about is still exclusive establishment, not real, but it can be there as an imaginary line. No problem 
 />
 
-#### àSystem Aspects
+#### =>System Aspects
 
 __*Exclusive Establishment*__
 
 Diamonds and squares with lines between internals and to internals, real to and between static members, real non-static members in diamond execution and unreal lines based on establishment exclusion in any situation: statics, non-statics, in execution or not. A square’s normal members never have real lines to the outside, only imaginary. except for static members.
 
-#### àSystem Aspects
+#### =>System Aspects
 
 Referencing static members of a call doesn’t cause procedure execution at all. Static procedure members have the lifetime of the procedure’s object
 
-#### àSystem Aspects: Exclusive Establishment
+#### =>System Aspects: Exclusive Establishment
 
 You will only lay a reference to the contents of a call in the execution of a call. So there can only be references established in places the call execution leads to. This can result in an object’s explicit reference to an argument. When the call ends, though, these reference is annulled.
 
-#### àSystem Aspects: Can’t call Outwards in the Object Ancestry
+#### =>System Aspects: Can’t call Outwards in the Object Ancestry
 
 < That’s not true at all.
 
 What IS true is that you can’t directly access anything outward in the object ancestry. You have to be given a reference to the outside in order to access it. The line that is the call, can go outward, but the line must be set by the outside >
 
-#### àSystem Aspects
+#### =>System Aspects
 
 If one diamond’s internal lines change, lines of all procedure symbols pointing to the diamond change too. If a static procedure line is changed, all procedure symbols, also all calls with that definition will change.
 
-#### àSystem Aspects
+#### =>System Aspects
 
 The following rule isn’t true:
 
@@ -7503,7 +7503,7 @@ End Object
 
 You know the kind
 
-But my kind also has convergence... and allows 1/nà1/n distinction or maybe those are other notations yet.
+But my kind also has convergence... and allows 1/n=>1/n distinction or maybe those are other notations yet.
 
 ### Analyses
 
@@ -8489,8 +8489,8 @@ Maybe then I can wrap it up to inambiguous. Perhaps I then should combine sectio
 
 - Concepts
 - Diagram Elements
-- Concept à Diagram Element
-- Diagram Element à Concept
+- Concept => Diagram Element
+- Diagram Element => Concept
 - Ambiguous Programming Concepts
 
 ##### Primary Concepts
@@ -8536,7 +8536,7 @@ Maybe then I can wrap it up to inambiguous. Perhaps I then should combine sectio
     - Linkage
     - Positioning
 
-##### Concept à Diagram Element
+##### Concept => Diagram Element
 
 __Programming Concepts’ Diagram Elements__
 
@@ -8563,7 +8563,7 @@ __Programming Concepts’ Diagram Elements__
 | Array                      | Special type with special methods changing the count of contained object references. |
 | Module                     | A globality symbol can be compiled |
 
-##### Diagram Element à Concept
+##### Diagram Element => Concept
 
 |                          |                                |
 |--------------------------|--------------------------------|

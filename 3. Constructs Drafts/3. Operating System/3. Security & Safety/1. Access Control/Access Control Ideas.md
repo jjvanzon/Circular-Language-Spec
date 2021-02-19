@@ -68,21 +68,21 @@ The procedures that can be access controled are:
 - __JAttribute.ChangeByUser__ : 
     - Controls if the user can change the attribute
 - __When1.ReadAccess__ : 
-    - Access controls the à1 related object’s Property Set procedure
+    - Access controls the =>1 related object’s Property Set procedure
 - __When1.WriteAccess__ : 
-    - Access controls the à1 related object’s Property Set procedure
+    - Access controls the =>1 related object’s Property Set procedure
 - __WhenN.ReadAccess__ :
-    - Access controls List.Item.Get. So if items in a àn relation can be read.
+    - Access controls List.Item.Get. So if items in a =>n relation can be read.
 - __WhenN.WriteAccess__ :
-    - Access controls List.Item.Set. So if items in a àn relation can be set to another object.
+    - Access controls List.Item.Set. So if items in a =>n relation can be set to another object.
 - __WhenN.AddAccess__ : 
     - Access controls a Lists’s Add method
 - __WhenN.RemoveAccess__ :
     - Access controls a Lists’s Remove method
 - __WhenX.ReadAccess__ :
-    - Access controls the àx related List’s Item.Get procedure. So if items in a àx relation can be read.
+    - Access controls the =>x related List’s Item.Get procedure. So if items in a =>x relation can be read.
 - __WhenX.WriteAccess__ : 
-    - Access controls the àx related List’s Item.Set procedure. So if items in a àx relation can be set to another object
+    - Access controls the =>x related List’s Item.Set procedure. So if items in a =>x relation can be set to another object
 
 And then there’s __JAttribute.HasGet__ and __JAttribute.HasSet__, which control the presence altogether of a __Property Get__ and __Property Set__ for an attribute.
 
@@ -93,7 +93,7 @@ Furthermore, you can separately control access by the user for two things:
 - WhenN.AddAndRemoveByUser
     - Controls whether a user can Add and Remove items in a related list.
 
-It is the intention for the programmer to be able to access control most procedures that would otherwize be __Public__ and also separately control access from the user interface to those procedures. Also, the programmer will be more able to leave out certain procedures altogether, like you can with the attribute __Get__ and __Set__. For instance, the __Add__, __Remove__ and __Clear__ methods in a àn related list, should become separately access controllable as well as separately disincluded.
+It is the intention for the programmer to be able to access control most procedures that would otherwize be __Public__ and also separately control access from the user interface to those procedures. Also, the programmer will be more able to leave out certain procedures altogether, like you can with the attribute __Get__ and __Set__. For instance, the __Add__, __Remove__ and __Clear__ methods in a =>n related list, should become separately access controllable as well as separately disincluded.
 
 ###### Read Only
 

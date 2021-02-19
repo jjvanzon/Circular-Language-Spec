@@ -179,9 +179,9 @@ __Reference Get__
 
 A reference can be a __Related Item__ or a __Related List Item__. This creates two overloads for __Reference Get__:
 
-__Reference Get à Related Item Get__
+__Reference Get => Related Item Get__
 
-__Reference Get à Related List Item Get__
+__Reference Get => Related List Item Get__
 
 The reference aspect is used in pointer operations.
 
@@ -199,9 +199,9 @@ As such, pointer-to-pointer functionality introduces extra commands.
 
 To be able to set the object aspect to another related item, __Object Set__ has two overloads:
 
-__Object Set__ à __Set Object to Other Related Item__
+__Object Set__ => __Set Object to Other Related Item__
 
-__Object Set__ à __Set Object to Other Related List Item__
+__Object Set__ => __Set Object to Other Related List Item__
 
 If you want a single name to express both situations, you could call it __Set Object to Reference__.
 
@@ -209,9 +209,9 @@ If you want a single name to express both situations, you could call it __Set Ob
 
 Because the object aspect can be another related item, the __Object Get__ command gets two overloads:
 
-__Object Get__ à __Get Object which is Another Related Item__
+__Object Get__ => __Get Object which is Another Related Item__
 
-__Object Get__ à __Get Object which is Another Related List Item__
+__Object Get__ => __Get Object which is Another Related List Item__
 
 If you want a single name to express both situations, you could also call it __Get Object which is a Reference__. During execution these system commands call __Reference Get__ on the other related item.
 
@@ -245,9 +245,9 @@ In a standard situation the __Use As Class, Class Set__, __Reference-Class Get__
 
 To be able to set the __Class__ aspect to another related item, __Class Set__ has two overloads:
 
-__Class Set__ à __Set Class to Other Related Item__
+__Class Set__ => __Set Class to Other Related Item__
 
-__Class Set__ à __Set Class to Other Related List Item__
+__Class Set__ => __Set Class to Other Related List Item__
 
 If you want a single name to express both situations, you could call it __Set Class to Reference__.
 
@@ -255,13 +255,13 @@ If you want a single name to express both situations, you could call it __Set Cl
 
 Because the __Class__ aspect can be set to another related item, the __Class Get__ command gets extra overloads. Next to that, there are different overloads for the two types of __Class Get__: __Reference-Class Get__ and __Object-Class Get__. This creates the following overloads:
 
-__Reference-Class Get à Get Reference-Class which is Another Related Item__
+__Reference-Class Get => Get Reference-Class which is Another Related Item__
 
-__Reference-Class Get à Get Reference-Class which is Another Related List Item__
+__Reference-Class Get => Get Reference-Class which is Another Related List Item__
 
-__Object-Class Get à Get Object-Class which is Another Related Item__
+__Object-Class Get => Get Object-Class which is Another Related Item__
 
-__Object-Class Get à Get Object-Class which is Another Related List Item__
+__Object-Class Get => Get Object-Class which is Another Related List Item__
 
 You could also call them __Get Class which is a Reference__.
 
@@ -300,34 +300,34 @@ __Use Reference As Class__
 
 ##### Common Commands for Related Items and Related List Items
 
-__Reference Get à Related Item Get__
+__Reference Get => Related Item Get__
 
-__Reference Get à Related List Item Get__
+__Reference Get => Related List Item Get__
 
 ##### Both
 
 - *Common commands for related items and related list items and*
 - *Common commands for direct pointers and pointers-to-pointers*
 
-__Object Set__ à __Set Object to Other Related Item__
+__Object Set__ => __Set Object to Other Related Item__
 
-__Object Set à Set Object to Other Related List Item__
+__Object Set => Set Object to Other Related List Item__
 
-__Object Get à Get Object which is Another Related Item__
+__Object Get => Get Object which is Another Related Item__
 
-__Object Get à Get Object which is Another Related List Item__
+__Object Get => Get Object which is Another Related List Item__
 
-__Class Set à Set Class to Other Related Item__
+__Class Set => Set Class to Other Related Item__
 
-__Class Set à Set Class to Other Related List Item__
+__Class Set => Set Class to Other Related List Item__
 
-__Reference-Class Get à Get Reference-Class which is Another Related Item__
+__Reference-Class Get => Get Reference-Class which is Another Related Item__
 
-__Reference-Class Get à Get Reference-Class which is Another Related List Item__
+__Reference-Class Get => Get Reference-Class which is Another Related List Item__
 
-__Object-Class Get à Get Object-Class which is Another Related Item__
+__Object-Class Get => Get Object-Class which is Another Related Item__
 
-__Object-Class Get à Get Object-Class which is Another Related List Item__
+__Object-Class Get => Get Object-Class which is Another Related List Item__
 
 Again: the reasons for extra commands, overloads and delegation are:
 
@@ -404,35 +404,35 @@ A pointer assignment always has a __Reference__ as a source, not its __Object__,
 
 A pointer assignment is displayed with an arrow inside the diamond.
 
-|                  Object Pointer Assignment:                 |
-|:-----------------------------------------------------------:|
-|                ![](images/Pointers.018.png)                 |
-|                     __Reference Get ß__                     |
-|   __Object Set à__ (~= Set Object to Other Related Item)    |
-|                                                             |
-|                ![](images/Pointers.019.png)                 |
-|                     __Reference Get ß__                     |
-| __Object Set à__ (~= Set Object to Other Related List Item) |
-|                                                             |
-|                ![](images/Pointers.020.png)                 |
-|                     __Reference Get ß__                     |
-| __Object Set à__ (~= Set Object to Other Related List Item) |
+|                    Object Pointer Assignment:                  |
+|:--------------------------------------------------------------:|
+|                  ![](images/Pointers.018.png)                  |
+|                     __Reference Get `<=`__                     |
+|   __Object Set `=>`__ (~= Set Object to Other Related Item)    |
+|                                                                |
+|                  ![](images/Pointers.019.png)                  |
+|                     __Reference Get `<=`__                     |
+| __Object Set `=>`__ (~= Set Object to Other Related List Item) |
+|                                                                |
+|                  ![](images/Pointers.020.png)                  |
+|                     __Reference Get `<=`__                     |
+| __Object Set `=>`__ (~= Set Object to Other Related List Item) |
 
 Pointer assignment also works for class assignment. You can use a reference as a class, instead using an object itself as the class:
 
-|                  Class Pointer Assignment:                 |
-|:----------------------------------------------------------:|
-|                ![](images/Pointers.021.png)                |
-|      __Use Reference As Class ß__ (~= Reference Get)       |
-|   __Class Set à__  (~= Set Class to Other Related Item)    |
-|                                                            |
-|                ![](images/Pointers.022.png)                |
-|      __Use Reference As Class ß__ (~= Reference Get)       |
-|   __Class Set à__  (~= Set Class to Other Related Item)    |
-|                                                            |
-|                ![](images/Pointers.023.png)                |
-|      __Use Reference As Class à__ (~= Reference Get)       |
-| __Class Set à__ (~= Set Class to Other Related List Item)  |
+|                   Class Pointer Assignment:                  |
+|:------------------------------------------------------------:|
+|                 ![](images/Pointers.021.png)                 |
+|      __Use Reference As Class `<=`__ (~= Reference Get)      |
+|   __Class Set `=>`__  (~= Set Class to Other Related Item)   |
+|                                                              |
+|                 ![](images/Pointers.022.png)                 |
+|      __Use Reference As Class `<=`__ (~= Reference Get)      |
+|   __Class Set `=>`__  (~= Set Class to Other Related Item)   |
+|                                                              |
+|                 ![](images/Pointers.023.png)                 |
+|      __Use Reference As Class `=>`__ (~= Reference Get)      |
+| __Class Set `=>`__ (~= Set Class to Other Related List Item) |
 
 ### Assignment With Pointer Source
 
@@ -440,46 +440,46 @@ If something is already a pointer-to-pointer and it is the source of a conventio
 
 So a conventional object assignment can also have the following implementations:
 
-|                     Object Assignment:                         |
-|:--------------------------------------------------------------:|
-|                  ![](images/Pointers.024.png)                  |
-| __Object Get ß__ (~= Use Reference As Object ~= Reference Get) |
-|     __Object Set à__ (~= Set Object to Other Related Item)     |
-|                                                                |
-|                  ![](images/Pointers.025.png)                  |
-| __Object Get ß__ (~= Use Reference As Object ~= Reference Get) |
-|  __Object Set à__ (~= Set Object to Other Related List Item)   |
+|                       Object Assignment:                          |
+|:-----------------------------------------------------------------:|
+|                   ![](images/Pointers.024.png)                    |
+| __Object Get `<=`__ (~= Use Reference As Object ~= Reference Get) |
+|     __Object Set `=>`__ (~= Set Object to Other Related Item)     |
+|                                                                   |
+|                   ![](images/Pointers.025.png)                    |
+| __Object Get `<=`__ (~= Use Reference As Object ~= Reference Get) |
+|  __Object Set `=>`__ (~= Set Object to Other Related List Item)   |
 
 Assignment when source is pointer to pointer also works for the __Class__ aspect:
 
-|                     Class Assignment:                     |
-|:---------------------------------------------------------:|
-|              ![](images/Pointers.026.png)                 |
-|       __Use As Class ß__ (~= Use Reference As Class)      |
-|   __Class Set à__ (~= Set Class to Other Related Item)    |
-|                                                           |
-|             ![](images/Pointers.027.png)                  |
-|      __Use As Class ß__ (~= Use Reference As Class)       |
-| __Class Set à__ (~= Set Class to Other Related List Item) |
+|                       Class Assignment:                      |
+|:------------------------------------------------------------:|
+|                 ![](images/Pointers.026.png)                 |
+|       __Use As Class `<=`__ (~= Use Reference As Class)      |
+|   __Class Set `=>`__ (~= Set Class to Other Related Item)    |
+|                                                              |
+|                 ![](images/Pointers.027.png)                 |
+|      __Use As Class `<=`__ (~= Use Reference As Class)       |
+| __Class Set `=>`__ (~= Set Class to Other Related List Item) |
 
 ### Cross-Aspect Assignment
 
 If the source of the assignment is a pointer-to-pointer, then the target also becomes a pointer-to-pointer. So this also gives __Reference Class to Object__ assignment the following implementations:
 
-|                 Reference-Class to Object Assignment              |
-|:-----------------------------------------------------------------:|
-|                    ![](images/Pointers.028.png)                   |
-|   __Reference-Class Get ß__  (~= Other Related Item Class Get)    |
-|          __Object Set à__  (~= Other Related Item Set)            |
-|                              *Result:*                            |
-|                    ![](images/Pointers.029.png)                   |
-|                                                                   |
-|              __Reference-Class to Object Assignment__             |
-|                    ![](images/Pointers.030.png)                   |
-| __Reference-Class Get ß__ (~= Other Related List Item Class Get)  |
-|        __Object Set à__ (~= Other Related List Item Set)          |
-|                              *Result:*                            |
-|                    ![](images/Pointers.031.png)                   |
+|                  Reference-Class to Object Assignment               |
+|:-------------------------------------------------------------------:|
+|                     ![](images/Pointers.028.png)                    |
+|   __Reference-Class Get `<=`__  (~= Other Related Item Class Get)   |
+|          __Object Set `=>`__  (~= Other Related Item Set)           |
+|                               *Result:*                             |
+|                     ![](images/Pointers.029.png)                    |
+|                                                                     |
+|               __Reference-Class to Object Assignment__              |
+|                     ![](images/Pointers.030.png)                    |
+| __Reference-Class Get `<=`__ (~= Other Related List Item Class Get) |
+|        __Object Set `=>`__ (~= Other Related List Item Set)         |
+|                               *Result:*                             |
+|                     ![](images/Pointers.031.png)                    |
 
 ### Cross-Aspect Pointer Assignment
 
@@ -499,9 +499,9 @@ __Use Reference As Class__
 
 ![](images/Pointers.033.png)
 
-__Use Reference As Class ß__
+__Use Reference As Class `<=`__
 
-__(Class Set à)__
+__(Class Set `=>`)__
 
 (has assignment notation)
 

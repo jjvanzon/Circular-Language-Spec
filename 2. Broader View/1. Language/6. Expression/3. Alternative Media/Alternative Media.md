@@ -85,7 +85,7 @@ How about integrating VB and C++?
 ##### Tree Notation
 
 You know the kind
-But my kind also has convergence… and allows 1/nà1/n distinction or maybe those are other notations yet.
+But my kind also has convergence… and allows 1/n=>1/n distinction or maybe those are other notations yet.
 
 Brainstorm
 ----------

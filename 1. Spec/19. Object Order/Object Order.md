@@ -20,7 +20,7 @@ A strategy you could have is to ignore the expression of object order for now, a
 
 ### Order Matters
 
-This is a value you can set to __True__ in a à n relation, that should aid in picking the right data structure for the relation. The only thing it was come up for, was to base picking either hole list or linked list on variables that had no techical meaning, but only functional meaning. I assumed that there will be more list structures that can be chosen if __OrderMatters__ or __Not__.
+This is a value you can set to __True__ in a => n relation, that should aid in picking the right data structure for the relation. The only thing it was come up for, was to base picking either hole list or linked list on variables that had no techical meaning, but only functional meaning. I assumed that there will be more list structures that can be chosen if __OrderMatters__ or __Not__.
 
 That’s all there is to say about it for now.
 

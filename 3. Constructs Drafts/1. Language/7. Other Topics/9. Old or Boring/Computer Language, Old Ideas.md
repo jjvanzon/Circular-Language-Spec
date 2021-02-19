@@ -538,7 +538,7 @@ alphabetic
 punctuation
 
 Uppercase and accents are approached with characters categories. A a ? â á à
-Á À Â å a A Å ? can be seen as the same category so they will all be
+Á à Â å a A Å ? can be seen as the same category so they will all be
 interpreted as 'a'.
 
 
