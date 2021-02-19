@@ -18,25 +18,16 @@ The diagrams might involve set of basic elements, that may include the following
 
 Diagrams might also contain text. Shapes might have names that might appear as text. Numbers and dates and other values could also appear as text.
 
-> __MyObject__
->
-> __My Site__
->
-> __7__
-> 
-> __3.141593__
-> 
-> __2005-08-14__
-> 
-> __"Hello"__
-> 
-> __True__
-> 
-> __False__
-> 
-> __On__
-> 
-> __Off__
+> __MyObject__  
+> __My Site__  
+ __7__  
+> __3.141593__  
+> __2005-08-14__  
+> __"Hello"__  
+> __True__  
+> __False__  
+> __On__  
+> __Off__  
 
 Perhaps some of the code might not be visualized graphically, but just displayed as text expressions:
 
@@ -473,6 +464,6 @@ There might be more occurrences where connections are left out, since implied by
 
 Object's members a and be might be class-connected to Related Class 1 and Related Class 2. But a notational choice was made to leave those out, since they seem implied. Perhaps it might not even be wordt to point out. But perhaps at one point one could desire an exactness in notational choices like that, and awareness that there are these notational choices, might help. But it could also be regarded up to the reader's imagination what he or she might do with it or not. It does not seem essential for the general idea.
 
-The phenomenon may be called 'implicitly connected through parent'. It may have once have been thought aspart of the currently out-of-scope idea of Automatic Containment. But maybe it is not specific to Automatic Containment.
+The phenomenon may be called 'implicitly connected through parent'. It may have once have been thought apart of the currently out-of-scope idea of Automatic Containment. But maybe it is not specific to Automatic Containment.
 
 JJ
