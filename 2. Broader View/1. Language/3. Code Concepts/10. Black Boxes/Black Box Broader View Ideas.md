@@ -1,7 +1,8 @@
-﻿Circle Language Spec: Black Boxes
-=================================
+﻿Circle Language | Broader View
+==============================
 
-## Black Boxes Broader View Ideas
+Black Boxes Broader View Ideas
+------------------------------
 
 ### Side-Issues
 

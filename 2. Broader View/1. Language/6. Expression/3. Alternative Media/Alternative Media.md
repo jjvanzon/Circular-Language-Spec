@@ -1,20 +1,16 @@
-﻿Computer Language Expression
-============================
+﻿Circle Language | Broader View | Expression
+===========================================
 
-Alternative Media
------------------
+Alternative Media Ideas
+-----------------------
 
-Ideas
------
-
-Out of the original Symbol documentation
----------------------------------------
+### Out of the original Symbol documentation
 
 2008-10-09
 
 Consider the different types of literals in Text Code. You can use this literal type subdivision for alternative media too. But the thing is: each concept could get its own type of literal again. Yes, but there are also a few basic ones, the expression of which could facilitate in the expression of anything.
 
-### Langauge Integration
+#### Language Integration
 
 < Chemistry language. Flat or 3D >
 < controls are an interactive language >
@@ -24,7 +20,7 @@ You can translate parts of a system to text, but you can just as well translate 
 
 The Information Language, part of the J Data technology, is a diagram language designed to define information ( / data ) structures. It is a form of diagram different from Symbol.
 
-#### Real Language
+##### Real Language
 
 ```vb
 If X Then A
@@ -44,15 +40,15 @@ When Y = 1 then A is executed
 
 Maybe I should allow the ‘real language’ text to be used as code too. Eventually.
 
-#### Brainstorm
+##### Brainstorm
 
 How about … an alternative notation for an object structure… like a simple tree notation.
 
 How about integrating VB and C++?
 
-#### Other notations
+##### Other notations
 
-##### Dimensional Table notation
+###### Dimensional Table notation
 
 | Object Genericity | | | |
 |---|---|---|---|
@@ -82,19 +78,19 @@ How about integrating VB and C++?
 |   | Interface-type genericity | The fact that the interface never fixes the type |
 |   | Interface-procedure genericity | The fact that the procedure interface never fixes the  procedure. |
 
-##### Tree Notation
+###### Tree Notation
 
 You know the kind
 But my kind also has convergence… and allows 1/n=>1/n distinction or maybe those are other notations yet.
 
-Brainstorm
-----------
+### Brainstorm
 
 Operators:
 
 J Data Information Language is an alternative notation used inside Symbol code. Does it therefore consist of operator functions? And is that then the first operator that is about a more non textual notation a a more graphical one?
 
-# Other ideas
+
+### Other ideas
 
 Text, diagram, algebra, data.
 

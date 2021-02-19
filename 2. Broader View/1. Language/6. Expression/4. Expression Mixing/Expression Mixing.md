@@ -1,3 +1,11 @@
+Circle Language | Broader View | Expression
+===========================================
+
+Expression Mixing
+-----------------
+
+### Ideas
+
 Next to different expressions being able to replace eachother,
 the different media in which to express data and code can also
 be embedded into eachother.

@@ -1,11 +1,14 @@
-﻿Ideas
-=====
+﻿Circle Language | Broader View | Diagram Expression
+===================================================
 
-####### Artificial Promotion
+Artificial Promotion / Esthetic Reference
+-----------------------------------------
 
-Objects automatically put on a lower level, because of deeper usage, can artifically be promoted to a higher level, by creating a reference to it from a higher object, for estaetic reasons, related to it having great significance on a higher level. (this doesn't have to result in an object reference being put on every level in between.)
+### Ideas
 
-A compiler could generate a warning about such an unused reference, unless you actively type the reference as being estaetic.
+Objects automatically put on a lower level, because of deeper usage, can artificially be promoted to a higher level, by creating a reference to it from a higher object, for esthetic reasons, related to it having great significance on a higher level. (this doesn't have to result in an object reference being put on every level in between.)
+
+A compiler could generate a warning about such an unused reference, unless you actively type the reference as being esthetic.
 
 Heel algemene dingen komen bij automatische containment in de diepste lagen terecht, terwijl je het misschien wel hoger wil zien. Eigenlijk wil je het dan promoveren naar een hoger niveau. Ik bedenk me nu, dat je dat kan doen door een hoger object een (ongebruikte) referentie te geven naar het algemene object. Dat hoger object zit dan wel 'toevallig', 'vanzelf' hoger op dat moment. Dat is ok.
 

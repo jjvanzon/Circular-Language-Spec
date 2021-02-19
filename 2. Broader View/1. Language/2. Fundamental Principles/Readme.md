@@ -1,5 +1,5 @@
-﻿New Computer Language Fundamental Principles
-===========================================
+﻿Circle Language | Broader View | Fundamental Principles
+=======================================================
 
 Read Me
 -------

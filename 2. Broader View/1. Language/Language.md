@@ -1,7 +1,8 @@
-﻿Circle Broader View
-===================
+﻿Circle Language | Broader View | Language
+=========================================
 
-## Overview
+Overview
+--------
 
 This documentation folder describes the new computer programming language. This is the most important part of the documentation.
 
@@ -36,6 +37,7 @@ This folder contains topics regarding the new computer language, that are either
 ### Previous Versions
 
 This folder contains previous versions of descriptions of a new computer programming language.
+
 
 Loose Ideas
 -----------

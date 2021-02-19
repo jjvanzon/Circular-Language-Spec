@@ -1,7 +1,8 @@
-﻿Circle Language Spec
-====================
+﻿Circle Language | Broader View
+==============================
 
-## Commands and Classes Loosely Coupled
+Commands and Classes Loosely Coupled
+------------------------------------
 
 ### Concept
 

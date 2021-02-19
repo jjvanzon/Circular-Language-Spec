@@ -1,7 +1,8 @@
-﻿Circle Broader View
-===================
+﻿Circle Language | Broader View
+==============================
 
-## Relationships Broader View
+Relationships Broader View
+--------------------------
 
 ### Relationship Direction
 
@@ -42,9 +43,10 @@ Another reason for not keeping the backward relationship, is that you may not be
 
 I admit, that I would like to give an exact formula for when a backward relationship should or should not be maintained. But for now, I can only give a functional description of when it is ridiculous to maintain a backward relationship. A programmer is going to have to determine it, when a relationship should be unidirectional.
 
-## Loose Ideas
 
-### Loose Ideas about Ubiquitous Bidirectional Relationships
+### Loose Ideas
+
+#### Loose Ideas about Ubiquitous Bidirectional Relationships
 
 Relationships,
 

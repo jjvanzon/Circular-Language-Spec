@@ -1,7 +1,8 @@
-﻿Computer Language
-=================
+﻿Circle Language | Broader View
+==============================
 
-## Coding Concepts
+Coding Concepts
+---------------
 
 This documentation section covers all the coding concepts and principles of the new computer language.
 
