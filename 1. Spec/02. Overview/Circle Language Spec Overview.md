@@ -18,7 +18,7 @@ The documentation tries to shed light on the following topics:
 
 ### Introduction
 
-- > Tries to gently introduce this language.
+- Tries to gently introduce this language.
 
 ### Basic Diagram Elements
 
