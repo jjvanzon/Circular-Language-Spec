@@ -123,7 +123,7 @@ The command can do whatever it wants with the parameters passed to it. Arguably,
 
 *Call a command of the __Text__ parameter.*
 
-The terms *parameter* and *argument* are sometimes used interchangedly. They are not entirely the same thing, but the difference might be too suble to talk about right now.
+The terms *parameter* and *argument* are sometimes used interchangedly. They are not entirely the same thing, but the difference might be too subtle to talk about right now.
 
 ### Interfaces
 
