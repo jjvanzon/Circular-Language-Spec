@@ -312,11 +312,11 @@ A type has one interface by default: the default interface, which is formed by e
 
 Each symbol represents an object:
 
-![](images/Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025a.png)
 
 You can make two symbols represent the same object by connecting them with a line:
 
-![](images/Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025b.png)
 
 A solid line in this case is also called an *object line*, because it denotes which symbols are the same object.
 
@@ -324,11 +324,11 @@ A solid line in this case is also called an *object line*, because it denotes wh
 
 Each symbol is a type:
 
-![](images/Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025c.png)
 
 You can make two symbols be of the same type by connecting them with a dashed line:
 
-![](images/Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025d.png)
 
 Both symbols are of the same type, but they are separate objects.
 
@@ -346,7 +346,7 @@ So a symbol always has an interface: its public members.
 
 To make two symbols have the same interface you connect them with a dotted line:
 
-![](images/Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025e.png)
 
 This dotted kind of line is also called an *interface line*, because it denotes which symbols have the same interface. The public members of both symbols are the same, but each symbol has its own *implementation*. The symbols are not necessarily the same type nor the same object.
 
@@ -373,7 +373,7 @@ A triangle, just like the circle, is a:
 - Interface source
 - Creatable (explained soon)
 
-![](images/Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025f.png)
 
 Using a triangle instead of a circle:
 
@@ -394,7 +394,7 @@ You can accomplish simple inheritance by using a triangle.
 
 To give a symbol a base type you put a triangle in it and connect it to its type. This type is then the base type:
 
-![](images/Symbol%20Language%20(2004).029.png)
+![](images/Symbol%20Language%20(2004).029a.png)
 
 __B__ is the base type, __A__ is the derived type, because it now includes __B__’s interface with __B__’s implementation.
 
@@ -402,7 +402,7 @@ Inheritance in Symbol is actually more refined than in the C++ programming langu
 
 So you can make the base object an object that already existed:
 
-![](images/Symbol%20Language%20(2004).029.png)
+![](images/Symbol%20Language%20(2004).029b.png)
 
 __B__ is the base *object* of __A__. And you can still refer to __A__ as if it was of type __B__.
 
@@ -432,11 +432,11 @@ Since a triangle represents an interface implementation and a circle contains bu
 
 A circle:
 
-![](images/Symbol%20Language%20(2004).028.png)
+![](images/Symbol%20Language%20(2004).028a.png)
 
 is *not* shorthand for:
 
-![](images/Symbol%20Language%20(2004).028.png)
+![](images/Symbol%20Language%20(2004).028b.png)
 
 because the triangle is its own object. The first diagram shows one object and the second diagram shows two.
 
@@ -446,39 +446,39 @@ because the triangle is its own object. The first diagram shows one object and t
 
 If you make two symbols the same object:
 
-![](images/Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025g.png)
 
 They automatically are the same type, sort of like this:
 
-![](images/Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025h.png)
 
 #### Same Type, Same Interfaces
 
 When you make two symbols the same type:
 
-![](images/Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025i.png)
 
 They (by default) automatically get the same interfaces, sort of like this:
 
-![](images/Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025j.png)
 
 #### Same Object, Same Type, Same Interfaces
 
 If you make two symbols the same object:
 
-![](images/Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025k.png)
 
 They automaticaly have the same type with (by default) the same interfaces, sort of like this:
 
-![](images/Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025l.png)
 
 #### Not Shorthand
 
 However, you can’t call it *shorthand*. The following two are not precisely the same thing:
 
-![](images/Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025m.png)
 
-![](images/Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025n.png)
 
 The lack or presence of a type line *does* make a difference, as will be explained in a later chapter.
 
@@ -488,7 +488,7 @@ An object takes up memory. When an object is not used, you might not want it to 
 
 After a symbol is created, it is drawn differently. For instance by filling it:
 
-![](images/Symbol%20Language%20(2004).032.png)
+![](images/Symbol%20Language%20(2004).032a.png)
 
 Or by drawing it with thicker lines:
 
@@ -715,7 +715,7 @@ In that sense the lines have no particular direction. However, the direction of 
 
 A *line dissector*, also called an *access symbol*, can determine the direction of a line. It sort of denotes which symbol is pointed at:
 
-| ![](images/Symbol%20Language%20(2004).062.png) | ![](images/Symbol%20Language%20(2004).062.png)|
+| ![](images/Symbol%20Language%20(2004).062a.png) | ![](images/Symbol%20Language%20(2004).062b.png)|
 |:----------------------------------------------:|:---------------------------------------------:|
 |               *B is pointed to.*               |               *A is pointed to.*              |
 |    *The direction goes to the right `=>`.*     |    *The direction goes to the left `<=`.*     |
@@ -725,7 +725,7 @@ You can see the line dissector as the door that lets you access a symbol. Theref
 
 In another situation the access symbol is placed as follows:
 
-| ![](images/Symbol%20Language%20(2004).062.png) | ![](images/Symbol%20Language%20(2004).063.png) |
+| ![](images/Symbol%20Language%20(2004).062c.png) | ![](images/Symbol%20Language%20(2004).063.png) |
 |:----------------------------------------------:|:----------------------------------------------:|
 |    *The direction goes to the right `=>`.*     |    *The direction goes to the left `<=`.*      |
 |                 *A points to B.*               |                *B points to A.*                |
@@ -734,7 +734,7 @@ In the last picture, the access symbol isn’t placed near __A__, but closer to 
 
 The access symbol can also be put at both ends:
 
-![](images/Symbol%20Language%20(2004).062.png)
+![](images/Symbol%20Language%20(2004).062d.png)
 
 In that case the direction goes both ways. Actually, there’s two lines: one going one way and the other going the other way.
 
@@ -882,7 +882,7 @@ If *no rule* determines direction then the direction is either not expressed in 
 
 The direction *certainly* goes both ways if both ends have an access symbol:
 
-| ![](images/Symbol%20Language%20(2004).080.png) | ![](images/Symbol%20Language%20(2004).081.png) | ![](images/Symbol%20Language%20(2004).080.png) |
+| ![](images/Symbol%20Language%20(2004).080a.png) | ![](images/Symbol%20Language%20(2004).081.png) | ![](images/Symbol%20Language%20(2004).080b.png) |
 |-----|-----|-----|
 
 A line going both ways is called a *bidirection*. Formally there are actually two lines: one for each direction, but only one line is shown.
@@ -983,7 +983,7 @@ Lines redirect a *system aspect* of a symbol to another symbol.
 
 For instance: an object symbol can serve as its own object:
 
-![](images/Symbol%20Language%20(2004).028.png)
+![](images/Symbol%20Language%20(2004).028c.png)
 
 But if it has an object line, it is no more than a pointer to an object, rather than the object itself, while te target of the line is regarded the real object. 
 
@@ -995,7 +995,7 @@ The object symbol *redirects* its *object* system aspect to another symbol. Line
 
 An object symbol can also serve as its own type:
 
-![](images/Symbol%20Language%20(2004).028.png)
+![](images/Symbol%20Language%20(2004).028d.png)
 
 Then it is an object that defines its own type. But if it has a type line, it redirects its type to another symbol. Then it is no longer its own type, but a mere object from an existing type, also called an instance of a type. The target of the type line is regarded the type itself.
 
@@ -1005,7 +1005,7 @@ Then it is an object that defines its own type. But if it has a type line, it re
 
 Similarly, an object symbol can control its own interface:
 
-![](images/Symbol%20Language%20(2004).028.png)
+![](images/Symbol%20Language%20(2004).028e.png)
 
 But if it has an interface line, its interface is bound to that of its interface line target. The symbol is regarded an interface implementation, while the target interface serves as the interface.
 
@@ -1015,7 +1015,7 @@ But if it has an interface line, its interface is bound to that of its interface
 
 A procedure symbol can define its own procedure:
 
-![](images/Symbol%20Language%20(2004).032.png)
+![](images/Symbol%20Language%20(2004).032b.png)
 
 But if it has a reference line it is regarded no more than a reference or call to a procedure. The target of the line is considered the procedure itself or the *definition* of the procedure.
 
@@ -1183,7 +1183,7 @@ Also note that when redirecting to an execution, the definition is always the sa
 
 If an object symbol has no object line or type line, then finding the target object and type is much simpler, because no redirectioning at all takes place. The symbol is its own object and type.
 
-![](images/Symbol%20Language%20(2004).028.png)
+![](images/Symbol%20Language%20(2004).028f.png)
 
 Traces usually don’t require as many steps as in the examples above.
 
@@ -1632,11 +1632,11 @@ When a symbol has an explicit type, it’s object can only be of that type. Havi
 
 Earlier on, in the section *Object Basics : Same Object, Same Type* I said that if you make two symbols the same object:
 
-![](images/Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025o.png)
 
 they automatically are the same type, sort of like this:
 
-![](images/Symbol%20Language%20(2004).025.png)
+![](images/Symbol%20Language%20(2004).025p.png)
 
 The topics of genericity show that these two pictures aren’t synonyms. In the second picture the type is explicit, while in the first picture the type is generic. The same goes for the other comparisons in that section.
 
@@ -1927,7 +1927,7 @@ To denote that many borders are crossed, usually three peels are used. So three 
 
 |                             |                                |                                |
 |:---------------------------:|:------------------------------:|:------------------------------:|
-| ![](images/Symbol%20Language%20(2004).203.png) | ![](images/Symbol%20Language%20(2004).203.png) | ![](images/Symbol%20Language%20(2004).202.png) |
+| ![](images/Symbol%20Language%20(2004).203a.png) | ![](images/Symbol%20Language%20(2004).203b.png) | ![](images/Symbol%20Language%20(2004).203c.png) |
 | Triple solid object symbol: | Triple dashed object symbol:   |  Triple dotted object symbol:  |
 |    object symbol with a     |     object symbol with a       |      object symbol with a      |
 | far away object line target |  f ar away type line target    | far away interface line target |
@@ -1946,13 +1946,13 @@ I will simply give a sum up of the other abstract meanings I’ve mentioned and 
 | ![](images/Symbol%20Language%20(2004).194.png)  |  ![](images/Symbol%20Language%20(2004).193.png)   |
 |               Line exits borders.               |                Line enters borders.               |
 |                                                 |                                                   |
-| ![](images/Symbol%20Language%20(2004).206.png)  |  ![](images/Symbol%20Language%20(2004).207.png)   |
+| ![](images/Symbol%20Language%20(2004).206.png)  |  ![](images/Symbol%20Language%20(2004).207a.png)  |
 |            Line exits many borders.             |             Line enters many borders.             |
 |                                                 |                                                   |
 | ![](images/Symbol%20Language%20(2004).208.png)  |  ![](images/Symbol%20Language%20(2004).209.png)   |
 |         Line exits and enters borders.          |  Line exits many borders and enters many borders. |
 |                                                 |                                                   |
-| ![](images/Symbol%20Language%20(2004).207.png)  |  ![](images/Symbol%20Language%20(2004).207.png)   |
+| ![](images/Symbol%20Language%20(2004).207b.png) |  ![](images/Symbol%20Language%20(2004).207c.png)  |
 |   Line exits many borders and enters borders.   |    Line exits borders and enters many borders.    |
 |                                                 |                                                   |
 | ![](images/Symbol%20Language%20(2004).210.jpeg) |  ![](images/Symbol%20Language%20(2004).211.jpeg)  |
@@ -2274,7 +2274,7 @@ The information of a read argument can also be the line target of the argument, 
 
 If you do do it, then you’d better copy the final target of the argument to some place. I can give a notation of the effect of this assignment:
 
-| ![](images/Symbol%20Language%20(2004).244.jpeg) | ![](images/Symbol%20Language%20(2004).245.jpeg) | ![](images/Symbol%20Language%20(2004).245.jpeg) |
+| ![](images/Symbol%20Language%20(2004).244.jpeg) | ![](images/Symbol%20Language%20(2004).245a.jpeg) | ![](images/Symbol%20Language%20(2004).245b.jpeg) |
 |:--------------------:|:------------------:|:----------------------------------------------:|
 | Argument points to A | Line target copied | Diamond destroys. Argument’s line is annulled. |
 |                      |                    |      Line target information is preserved.     |
@@ -3050,9 +3050,6 @@ As such, there are six explicit argument purposes:
 | ![](images/Symbol%20Language%20(2004).320.png) | ![](images/Symbol%20Language%20(2004).321.png) | ![](images/Symbol%20Language%20(2004).322.png) |
 |   State in   |   State out   |   State thru   |
 |              |               |                |
-| ![](images/Symbol%20Language%20(2004).320.png) | ![](images/Symbol%20Language%20(2004).321.png) | ![](images/Symbol%20Language%20(2004).322.png) |
-|   State in   |   State out   |   State thru   |
-|              |               |                |
 | ![](images/Symbol%20Language%20(2004).323.png) | ![](images/Symbol%20Language%20(2004).324.png) | ![](images/Symbol%20Language%20(2004).325.png) |
 | Reference in | Reference out | Reference thru |
 
@@ -3419,9 +3416,6 @@ There *are* techniques for a child to communicate with its parent. There are two
 |:----------------------------------------------:|:----------------------------------------------:|
 | ![](images/Symbol%20Language%20(2004).336.png) | ![](images/Symbol%20Language%20(2004).337.png) |
 | Reference to parent procedure with an interface defined by the child. | Calling procedures of a reference to a parent object with an interface that the child defines. |
-|                                                |                                                |
-| ![](images/Symbol%20Language%20(2004).336.png) | ![](images/Symbol%20Language%20(2004).337.png) |
-| Reference to parent procedure with an interface defined by the child. | Calling procedures of a reference to a parent object with an interface that the child defines. |
 
 *The dashed reference lines in these pictures could also have been notated solid.*
 
@@ -3620,25 +3614,25 @@ Even more is done to simplify the notation. Clauses that are not filled in can b
 If X Then A:
 ```
 
-> ![](images/6.%20Execution%20Control%20Ideas.006.png)
+> ![](images/Symbol%20Language%20(2004).343.png)
 
 ```vb
 If X Then A Else B:
 ```
 
-> ![](images/6.%20Execution%20Control%20Ideas.007.png) 
+> ![](images/Symbol%20Language%20(2004).344.png)
 
 ```vb
 If X Then A Else If Y Then B:
 ```
 
-> ![](images/6.%20Execution%20Control%20Ideas.008.png) 
+> ![](images/Symbol%20Language%20(2004).345.png)
 
 ```vb
 If X Then A Else If Y Then B Else C:
 ```
 
-> ![](images/6.%20Execution%20Control%20Ideas.009.png) 
+> ![](images/Symbol%20Language%20(2004).346.png)
 
 ```vb
 Select X 
@@ -3647,7 +3641,7 @@ Select X
 End Select:
 ```
 
-> ![](images/6.%20Execution%20Control%20Ideas.010.png) 
+> ![](images/Symbol%20Language%20(2004).347.png)
 
 ```vb
 Select X
@@ -3657,7 +3651,7 @@ Select X
 End Select:
 ```
 
-![](images/6.%20Execution%20Control%20Ideas.011.png) 
+> ![](images/Symbol%20Language%20(2004).348.png)
 
 You can nest Selection statements as deep as you want.
 
@@ -3675,7 +3669,7 @@ Select X
 End Select:
 ```
 
-![](images/6.%20Execution%20Control%20Ideas.012.png)
+> ![](images/Symbol%20Language%20(2004).349.png)
 
 Math language (as well as text code) integrates into Symbol. When using execution selection this is very handy. Let’s take the following text code example:
 
@@ -3838,7 +3832,7 @@ End If
 
 Breaking, because each Case group is evaluated now.
 
-### Text Code Blathering < >
+### Text Code Blabbing
 
 #### Conditional Jumps
 
@@ -4323,13 +4317,13 @@ Overriding means that a parent can replace a procedure of its child by another. 
 
 This is a type with an overridable procedure B, called by the child. The access symbol on the right means that the Procedure Reference Set is public. Therefore you can make B redirect to a procedure that the parent defines.
 
-![](images/Symbol%20Language%20(2004).370.png)
+![](images/Symbol%20Language%20(2004).370a.png)
 
 The parent overrode the overridable procedure B. A call to B will resolve to a call to C instead. You can see that overriding means that the parent gives a child’s procedure a reference line to one of its own procedures.
 
 In the replacement procedure, you can still call the base procedure. That way you can both override procedures of the child or extend them.
 
-![](images/Symbol%20Language%20(2004).370.png)
+![](images/Symbol%20Language%20(2004).370b.png)
 
 Overridden procedures are called by the child and that way they’re a means for a child to call a procedure of the parent.
 
@@ -5183,9 +5177,9 @@ A symbol can have a line to a non created symbol. So you can reference an object
 
 When you break the chain of symbols pointing to a created target object, only certain objects will still refer to a created object:
 
-![](images/Symbol%20Language%20(2004).397.png)
+![](images/Symbol%20Language%20(2004).397a.png)
 
-![](images/Symbol%20Language%20(2004).397.png)
+![](images/Symbol%20Language%20(2004).397b.png)
 
 Only the ones still pointing to this target object still point to a created object. The ones before the break refer to a newly formed uncreated target object. Here you see the concept of direction playing a big role.
 
@@ -5594,7 +5588,7 @@ Static bij procedure members.
 
 A call line makes the square a call. A reference line makes it a reference. No line at all indicates that it’s a procedure definition or a clause. Lines can also be left out for abstraction reasons.
 
-| ![](images/Symbol%20Language%20(2004).409.png) | ![](images/Symbol%20Language%20(2004).409.png) | ![](images/Symbol%20Language%20(2004).410.png) | ![](images/Symbol%20Language%20(2004).411.png) <br> ![](images/Symbol%20Language%20(2004).412.png) | ![](images/Symbol%20Language%20(2004).413.png) |
+| ![](images/Symbol%20Language%20(2004).409a.png) | ![](images/Symbol%20Language%20(2004).409b.png) | ![](images/Symbol%20Language%20(2004).410.png) | ![](images/Symbol%20Language%20(2004).411.png) <br> ![](images/Symbol%20Language%20(2004).412.png) | ![](images/Symbol%20Language%20(2004).413.png) |
 |:----------:|:------:|:----:|:---------:|:------------------------------------------------------:|
 | Definition | Clause | Call | Reference | Illegal: a square can’t be both a call and a reference |
 

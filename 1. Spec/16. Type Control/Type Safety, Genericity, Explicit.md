@@ -115,39 +115,39 @@ From Original Symbol Documentation
 
 If you make two symbols the same object:
 
-![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001a.png)
 
 They automatically are the same type, sort of like this:
 
-![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001b.png)
 
 ##### Same Type, Same Interfaces
 
 When you make two symbols the same type:
 
-![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001c.png)
 
 They (by default) automatically get the same interfaces, sort of like this:
 
-![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001d.png)
 
 ##### Same Object, Same Type, Same Interfaces
 
 If you make two symbols the same object:
 
-![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001e.png)
 
 They automaticaly have the same type with (by default) the same interfaces, sort of like this:
 
-![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001f.png)
 
 ##### Not Shorthand
 
 However, you can’t call it *shorthand*. The following two are not precisely the same thing:
 
-![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001g.png)
 
-![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001h.png)
 
 The lack or presence of a type line *does* make a difference, as will be explained in a later chapter.
 
@@ -468,11 +468,11 @@ When a symbol has an explicit type, it’s object can only be of that type. Havi
 
 Earlier on, in the section *Object Basics : Same Object, Same Type* I said that if you make two symbols the same object:
 
-![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001i.png)
 
 they automatically are the same type, sort of like this:
 
-![](images/Type%20Safety,%20Genericity,%20Explicit.001.png)
+![](images/Type%20Safety,%20Genericity,%20Explicit.001j.png)
 
 The topics of genericity show that these two pictures aren’t synonyms. In the second picture the type is explicit, while in the first picture the type is generic. The same goes for the other comparisons in that section.
 

@@ -8,7 +8,7 @@ This document contains summaries of other languages, mainly C and C++, in the fo
 
 ### C
 
-*A summary of Msdn Library Visual Studio July 2000: C Language Reference*
+*A summary of Msdn Library C Language Reference*
 
 - Identifiers
 - Constants: floating point, integer, string, enumerator
@@ -97,7 +97,7 @@ This document contains summaries of other languages, mainly C and C++, in the fo
 
 ### C++
 
-*A summary of Msdn Library Visual Studio July 2000: C++ Language Reference*
+*A summary of Msdn Library C++ Language Reference*
 
 I reorganized the information into the following main topics:
 
