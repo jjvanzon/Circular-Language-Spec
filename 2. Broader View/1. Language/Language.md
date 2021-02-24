@@ -181,7 +181,7 @@ Computer Language,
 
 The diagram expression also makes it possible to 
 use hand signs in the air to draw out relations between objects,
-in a technical story you try to explain.
+in a technical story `you` try to explain.
 
 JJ 
 
