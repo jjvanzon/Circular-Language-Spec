@@ -16,7 +16,7 @@ You may find the following folders here:
 - [Archive](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/4.%20Archive)
     - Content that might not be relevant anymore. It may be one step away from being deleted. It is still kept in this folder in case something would become relevant again.
 
-The material may still be a bit rough. Both in content and language style.
+The material may still be a bit rough. Both in tone and in content.
 
 It might be improved step by step. The current goal would be converting Word documents to MarkDown.
 
