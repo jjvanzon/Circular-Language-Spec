@@ -28,7 +28,7 @@ It might be worth highlighting there may be different interpretations of pointer
 
 ### Brainstorm Ref-Ness
 
-Another topic that might be covered, is a comparison with other languages (even though one of the strategic items is to not try and compare so much in this text, with the idea that 'where would it end?') An exception to the rule could be made here to add a comparison to other language's ref-ness, because Circle seems to be 'make a mockery' of the concept ref-ness in a way. C# or C++ seem to be specific about ref-ness. (C++ might make you specify asterisks \*\* to indicate how many redirections a pointer variable makes; C# and .NET seem to assign intrisic importance to defining parameters as ref or out and what other 'ref-nesses' have you? Anyway, they seem quite specific.) Circle however, seems to make a 'mockery' out of this, because all you need to do is add a line and the ref-ness changes. And the ref-ness does not seem to be specified near the start of the pointer redirection, but you might arbitrarily let redirections be added by the thing you are pointing to. 'mockery' is a meant a bit humoristically here, of course. It is just a notation. If the diagrams might represent something from C#, rules are probably just bound by what you can do in C#. You simply might not be able to add more redirections, or might not validly specify something with not enough redirection. Getter accesses in C# might actually be C#'s own embodiment of indeterminate ref-ness. Or depending how lightly you might want to apply the diagram language, it might not really matter that much, this ref-ness issue and these diagrams. But what might become a splinter in your brain, is that Circle does not seem to have a notation (yet) to specify fixed ref-ness. And what might rub some against the fur, is that Circle seems to like indeterminate ref-ness while some might hold determinate ref-ness in great value perhaps. The notion that there are these ideas about that, might justify thinking about it and perhaps describing a way to elegantly solve it or perhaps find a way to live with things the way they are.
+Another topic that might be covered, is a comparison with other languages (even though one of the strategic items is to not try and compare so much in this text, with the idea that 'where would it end?') An exception to the rule could be made here to add a comparison to other language's ref-ness, because Circle seems to be 'make a mockery' of the concept ref-ness in a way. C# or C++ seem to be specific about ref-ness. (C++ might make you specify asterisks \*\* to indicate how many redirections a pointer variable makes; C# and .NET seem to assign intrinsic importance to defining parameters as ref or out and what other 'ref-nesses' have you? Anyway, they seem quite specific.) Circle however, seems to make a 'mockery' out of this, because all you need to do is add a line and the ref-ness changes. And the ref-ness does not seem to be specified near the start of the pointer redirection, but you might arbitrarily let redirections be added by the thing you are pointing to. 'mockery' is a meant a bit humoristically here, of course. It is just a notation. If the diagrams might represent something from C#, rules are probably just bound by what you can do in C#. You simply might not be able to add more redirections, or might not validly specify something with not enough redirection. Getter accesses in C# might actually be C#'s own embodiment of indeterminate ref-ness. Or depending how lightly you might want to apply the diagram language, it might not really matter that much, this ref-ness issue and these diagrams. But what might become a splinter in your brain, is that Circle does not seem to have a notation (yet) to specify fixed ref-ness. And what might rub some against the fur, is that Circle seems to like indeterminate ref-ness while some might hold determinate ref-ness in great value perhaps. The notion that there are these ideas about that, might justify thinking about it and perhaps describing a way to elegantly solve it or perhaps find a way to live with things the way they are.
 
 ### Target Objects
 
@@ -161,13 +161,13 @@ Sometimes no aspect of a reference is called upon, but there is worked directly 
 
 This would add the following aspect to the list of aspects:
 
-__Reference__
+- __Reference__
 
 ### Object-Bound & Reference Bound Aspects
 
 The following aspects are reference-bound (or *sub-object-bound*):
 
-__Reference__
+- __Reference__
 
 ### System Commands
 
@@ -175,13 +175,12 @@ __Reference__
 
 The only system command for the __Reference__ aspect is:
 
-__Reference Get__
+- __Reference Get__
 
 A reference can be a __Related Item__ or a __Related List Item__. This creates two overloads for __Reference Get__:
 
-__Reference Get => Related Item Get__
-
-__Reference Get => Related List Item Get__
+- __Reference Get => Related Item Get__
+- __Reference Get => Related List Item Get__
 
 The reference aspect is used in pointer operations.
 
@@ -199,9 +198,8 @@ As such, pointer-to-pointer functionality introduces extra commands.
 
 To be able to set the object aspect to another related item, __Object Set__ has two overloads:
 
-__Object Set__ => __Set Object to Other Related Item__
-
-__Object Set__ => __Set Object to Other Related List Item__
+- __Object Set => Set Object to Other Related Item__
+- __Object Set => Set Object to Other Related List Item__
 
 If you want a single name to express both situations, you could call it __Set Object to Reference__.
 
@@ -209,9 +207,8 @@ If you want a single name to express both situations, you could call it __Set Ob
 
 Because the object aspect can be another related item, the __Object Get__ command gets two overloads:
 
-__Object Get__ => __Get Object which is Another Related Item__
-
-__Object Get__ => __Get Object which is Another Related List Item__
+- __Object Get => Get Object which is Another Related Item__
+- __Object Get => Get Object which is Another Related List Item__
 
 If you want a single name to express both situations, you could also call it __Get Object which is a Reference__. During execution these system commands call __Reference Get__ on the other related item.
 
@@ -219,7 +216,7 @@ If you want a single name to express both situations, you could also call it __G
 
 The reference aspect can be access-controlled for the different ways you can use it. Pointer-to-pointer situations require you to be able to use a reference as an *object*. To be able to access control the different purposes for which you can use a reference, the __Reference Get__ command gets the second implementation:
 
-__Use Reference As Object__
+- __Use Reference As Object__
 
 which delegates directly to the __Reference Get__ command.
 
@@ -229,7 +226,7 @@ Do not wreck your brain over all this delegation and overloading. It is just for
 
 This leaves us with the following command added for pointer-to-pointer situations:
 
-__Use Reference As Object__
+- __Use Reference As Object__
 
 Detail: For that last command you might want to overload __Object Get.__ But that does not work. You can not overload it, because they will both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
 
@@ -237,7 +234,7 @@ Detail: For that last command you might want to overload __Object Get.__ But tha
 
 ##### Pointer-to-Pointer Situations
 
-In a standard situation the __Use As Class, Class Set__, __Reference-Class Get__ and __ObjectClass Get__ commands are about making an object function as another object’s class. However, you can also make something’s class be yet again another reference. That means that another parent object determines the eventual class.
+In a standard situation the __Use As Class, Class Set__, __Reference-Class Get__ and __Object-Class Get__ commands are about making an object function as another object’s class. However, you can also make something’s class be yet again another reference. That means that another parent object determines the eventual class.
 
 (However, this might create difficulty for the system to maintain a constant class. You might want another parent to determine the initial class, but the class of an object should not change during its lifetime.)
 
@@ -245,9 +242,8 @@ In a standard situation the __Use As Class, Class Set__, __Reference-Class Get__
 
 To be able to set the __Class__ aspect to another related item, __Class Set__ has two overloads:
 
-__Class Set__ => __Set Class to Other Related Item__
-
-__Class Set__ => __Set Class to Other Related List Item__
+- __Class Set => Set Class to Other Related Item__
+- __Class Set => Set Class to Other Related List Item__
 
 If you want a single name to express both situations, you could call it __Set Class to Reference__.
 
@@ -255,13 +251,11 @@ If you want a single name to express both situations, you could call it __Set Cl
 
 Because the __Class__ aspect can be set to another related item, the __Class Get__ command gets extra overloads. Next to that, there are different overloads for the two types of __Class Get__: __Reference-Class Get__ and __Object-Class Get__. This creates the following overloads:
 
-__Reference-Class Get => Get Reference-Class which is Another Related Item__
-
-__Reference-Class Get => Get Reference-Class which is Another Related List Item__
-
-__Object-Class Get => Get Object-Class which is Another Related Item__
-
-__Object-Class Get => Get Object-Class which is Another Related List Item__
+- __Reference-Class Get => Get Reference-Class which is Another Related Item__
+- __Reference-Class Get => Get Reference-Class which is Another Related List Item__
+-
+- __Object-Class Get => Get Object-Class which is Another Related Item__
+- __Object-Class Get => Get Object-Class which is Another Related List Item__
 
 You could also call them __Get Class which is a Reference__.
 
@@ -269,7 +263,7 @@ You could also call them __Get Class which is a Reference__.
 
 The __Reference__ aspect can be access-controlled for different ways you can use it. Pointer-to-pointer situations require you to be able to use a reference as a *class*. To be able to access control the different purposes for which you can use a reference, the __Reference Get__ command gets the secondary implementation:
 
-__Use Reference As Class__
+- __Use Reference As Class__
 
 which delegates directly to the __Reference Get__ command.
 
@@ -279,7 +273,7 @@ Do not wreck your brain over all this delegation and overloading. It is just for
 
 This leaves us with the following command added for pointer-to-pointer situations:
 
-__Use Reference As Class__
+- __Use Reference As Class__
 
 Detail: For that last command you might want to overload __Object Get.__ But that does not work. You can not overload it, because they will both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
 
@@ -294,40 +288,33 @@ Here follows an overview of which reason applies to which command or overload.
 
 ##### Access-Control Usage
 
-__Use Reference As Object__
-
-__Use Reference As Class__
+- __Use Reference As Object__
+- __Use Reference As Class__
 
 ##### Common Commands for Related Items and Related List Items
 
-__Reference Get => Related Item Get__
-
-__Reference Get => Related List Item Get__
+- __Reference Get => Related Item Get__
+- __Reference Get => Related List Item Get__
 
 ##### Both
 
 - *Common commands for related items and related list items and*
 - *Common commands for direct pointers and pointers-to-pointers*
-
-__Object Set__ => __Set Object to Other Related Item__
-
-__Object Set => Set Object to Other Related List Item__
-
-__Object Get => Get Object which is Another Related Item__
-
-__Object Get => Get Object which is Another Related List Item__
-
-__Class Set => Set Class to Other Related Item__
-
-__Class Set => Set Class to Other Related List Item__
-
-__Reference-Class Get => Get Reference-Class which is Another Related Item__
-
-__Reference-Class Get => Get Reference-Class which is Another Related List Item__
-
-__Object-Class Get => Get Object-Class which is Another Related Item__
-
-__Object-Class Get => Get Object-Class which is Another Related List Item__
+-
+- __Object Set => Set Object to Other Related Item__
+- __Object Set => Set Object to Other Related List Item__
+-
+- __Object Get => Get Object which is Another Related Item__
+- __Object Get => Get Object which is Another Related List Item__
+-
+- __Class Set => Set Class to Other Related Item__
+- __Class Set => Set Class to Other Related List Item__
+-
+- __Reference-Class Get => Get Reference-Class which is Another Related Item__
+- __Reference-Class Get => Get Reference-Class which is Another Related List Item__
+-
+- __Object-Class Get => Get Object-Class which is Another Related Item__
+- __Object-Class Get => Get Object-Class which is Another Related List Item__
 
 Again: the reasons for extra commands, overloads and delegation are:
 
@@ -340,13 +327,13 @@ Again: the reasons for extra commands, overloads and delegation are:
 
 An additional aspect, that may apply to a __Related Item__ could be:
 
-__Reference__
+- __Reference__
 
 ##### The Reference Aspect in the System Interface
 
 The __Reference__ aspect is controlled through only one command:
 
-__Reference Get__
+- __Reference Get__
 
 The __Reference__ aspect is placed inside a triangle, that wraps together the members to control the __Reference__ aspect:
 
@@ -356,7 +343,7 @@ The __Reference__ aspect is placed inside a triangle, that wraps together the me
 
 The __Object__ aspect of a __Related Item__ is controlled through an additional command:
 
-__Use Reference As Object__ 
+- __Use Reference As Object__ 
 
 The commands are placed inside a triangle, that wraps together the members of the __Object__ aspect:
 
@@ -370,7 +357,7 @@ The full system interface of a __Related Item__ including pointer-to-pointer pro
 
 ##### The Reference-Class Aspect in the System Interface
 
-__Use Reference As Class__
+- __Use Reference As Class__
 
 The commands are placed inside a triangle, that wraps together the members of the __Class__ aspect:
 
@@ -380,7 +367,7 @@ The commands are placed inside a triangle, that wraps together the members of th
 
 An additional aspects, that apply to a __Related List Item__ is:
 
-__Reference__
+- __Reference__
 
 ##### The Full System Interface for Related Item
 
@@ -514,17 +501,14 @@ Loose Ideas
 
 ### Loose Ideas about Target Objects
 
-Objects,
-
-Target,
-
+Objects,  
+Target,  
 2008-07-26
 
-I need to rename the term Target Object, Target Class and Target Interface to Final Object Target, Final Class Target and Final Interface Target, because I’m not targeting an object, class or interface, but I’m targeting an object reference representing an object, class or interface.
+I need to rename `the*` term Target Object, Target Class and Target Interface to Final Object Target, Final Class Target and Final Interface Target, because I’m not targeting an object, class or interface, but I’m targeting an object reference representing an object, class or interface.  
+Also the `term*` object target is `the*` same as direct object target. That also counts for classes and interfaces.
 
-Also the term object target is the same as direct object target. That also counts for classes and interfaces.
-
-The term Target Object, Target Class and Target Interface have less of a use now. But the way they are used now is misleading.
+`The*` term Target Object, Target Class and Target Interface have less of a use now. But `the*` way they are used now is misleading.
 
 JJ
 
@@ -532,49 +516,45 @@ JJ
 
 #### Object Trace
 
-< 2008-10-06 Probably not right anymore. >
+< 2008-10-06 Probably not right anymore. >  
+To find `the*` target object, `you’d*` expect to only follow object lines. However, there’s a pitfall: a situation that does not occur a lot, though.
 
-To find the target object, you’d expect to only follow object lines. However, there’s a pitfall: a situation that does not occur a lot, though.
-
-If a type line points to a symbol with an object line, the type is a single object.
+If a type line points to a symbol with an object line, `the*` type is a single object.
 
 ![](images/Pointers.034.jpeg)
 
-Each instance of the type is actually the same object. 
+Each instance of the `type*` is actually `the*` same object. 
 
 ![](images/Pointers.035.png)
 
-Therefore, a type line can redirect the object of the symbol. Therefore, type lines need to be followed to find the object.
+Therefore, a type line can redirect `the*` object of `the*` symbol. Therefore, type lines need to be followed to find `the*` object.
 
-The last symbol pointed to by an object line is the object.
+`The*` last symbol pointed to by an object line is `the*` object.
 
 ![](images/Pointers.036.jpeg)
 
 This kind of redirectioning is called an *object trace*.
 
-Delegating the object aspect is the main type of object redirection.
+Delegating `the*` object aspect is `the*` main type of object redirection.
 
 #### Idea
 
-In C++ bepaal je de redirection diepte vooraf:
-
-Int \*\*\*TripleRedirected
-
-In Symbol kan je de redirection diepte achteraf bepalen
-
+In C++ bepaal je de redirection diepte vooraf:  
+Int \*\*\*TripleRedirected  
+In Symbol kan je de redirection diepte achteraf bepalen.  
 Als je in C++ een object referenties toewijst aan een object referentie, dan wijs je niet naar de object referentie, maar naar het target object. Symbol heeft meer structurering hier.
 
 #### Multiple Redirection and Final Targets
 
-If an object symbol has an object line to a symbol that again has an object line, there is redirected until a symbol without an object line is encountered: the *target object*.
+If an object symbol has an object line to a symbol that again has an object line, there is redirected until a symbol without an object line is encountered: `the*` *target object*.
 
 ![](images/Pointers.037.png)
 
-*C is the target object of A and B.*
+*C is `the*` target object of A and B.*
 
-The target object symbol is regarded to represent the object for real. The other symbols are references to the object.
+`The*` target object symbol is regarded to represent `the*` object for real. `The*` other symbols are references to `the*` object.
 
-The same way there are symbols serving as a *target type* or a *target interface*. Also a procedure has an interface target. A procedure also has a call target and reference target. In both those cases reference lines are followed.
+`The*` same way there are symbols serving as a *target type* or a *target interface*. Also a procedure has an interface target. A procedure also has a call target and reference target. In both those cases reference lines are followed.
 
 ### Loose Ideas about Target Classes
 
@@ -582,8 +562,7 @@ The same way there are symbols serving as a *target type* or a *target interface
 
 #### Tracing Object Aspects
 
-Formerly I’ve said that when you encountered a symbol that doesn’t have a type line, then it is the target type. But in *Object Basics* I said that when a symbol doesn’t have a type line, the object line functions as the type line. Therefore, if a symbol has no type line, the type can still be redirected by an object line.
-
+Formerly I’ve said that when you encountered a symbol that doesn’t have a type line, then it is the target type. But in *Object Basics* I said that when a symbol doesn’t have a type line, the object line functions as the type line. Therefore, if a symbol has no type line, the type can still be redirected by an object line.  
 Finding the aspects of a symbol, such as target object or target type, is called a *trace*.
 
 ##### Type Trace
@@ -628,22 +607,20 @@ If an object symbol has no object line or type line, then finding the target obj
 
 Traces usually don’t require as many steps as in the examples above.
 
+-----
 
-Targets,
+Targets,  
 2010-05
 
-\> I do not know how it works yet. Now my mind says: follow all redirections, including multiple interface redirections… but in the Target Class story I stopped doing that. Maybe it is just what you want the term Target Interface to define. Maybe it is not even important. I don’t know.
-
-\> Perhaps there should be a distinction between interface definition and target interface. I do feel that both the ‘follow only one class or interface step’ version is a concept to be aware of, but the target interface concept would actually be following all redirections to find the object that actually determines the publics.
-
-\> Yes. What is now called Target Interface should probably be called the *Interface Object* and the *Target Interface* is the object after following all types of redirections in any order.
+- \> I do not know how it works yet. Now my mind says: follow all redirections, including multiple interface redirections… but in the Target Class story I stopped doing that. Maybe it is just what you want the term Target Interface to define. Maybe it is not even important. I don’t know.
+- \> Perhaps there should be a distinction between interface definition and target interface. I do feel that both the ‘follow only one class or interface step’ version is a concept to be aware of, but the target interface concept would actually be following all redirections to find the object that actually determines the publics.
+- \> Yes. What is now called Target Interface should probably be called the *Interface Object* and the *Target Interface* is the object after following all types of redirections in any order.
 
 JJ
 
 ### Other Loose Ideas
 
-Pointer to class of,
-
+Pointer to class of,  
 2008-08-17
 
 Consider the notation of pointing to the class of an object reference, used in the article Class Referrers in a Diagram.
@@ -660,17 +637,14 @@ JJ
 
 ### Loose Ideas about Relation to a Pointer
 
-Relations,
-
-Relations to Pointers,
+Relations,  
+Relations to Pointers,  
 2008-09-25
 
-Pointers (references to related objects)
-
-A relation between a *pointer to an object* and a *command*. `The*` pointer `is` a totally different entity, than `the*` object itself.
-
-\>  2008-10-01 `I’d` think, that `this will` add related objects to `the*` system interface, `so` related objects to a related item system object, instead of related objects to `the*` target object of `the*` related item system object.
-`This is` a relations issue: relations to pointers in particuler.  
+Pointers (references to related objects)  
+A relation between a *pointer to an object* and a *command*. `The*` pointer `is` a totally different entity, than `the*` object itself.  
+\>  2008-10-01 `I’d` think, that `this will` add related objects to `the*` system interface, `so` related objects to a related item system object, instead of related objects to `the*` target object of `the*` related item system object.  
+`This is` a relations issue: relations to pointers in particular.  
 `I will need` to look at *System Objects* to see what a pointer `actually was`: it `was` a relation to a related item, instead of a relation to an object independent of `any` other container.
 
 JJ
