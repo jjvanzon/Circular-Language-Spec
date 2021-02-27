@@ -15,6 +15,7 @@ You can also access control object symbols, so that they can only be used as a c
 
 JJ
 
+-----
 
 Diagrams,
 
@@ -24,82 +25,59 @@ In that case, you can display several different lines for the symbol
 
 JJ
 
+-----
 
 Classes & interfaces implementation
 
-Classes, interfaces en ook relations kunnen concepts worden,
-in plaats van principles, omdat het slechts om reenforcement gaat:
-je pint een stuk structuur van het object vast aan een ander object.
-De code base kan ook zonder.
+Classes, interfaces en ook relations kunnen concepts worden, in plaats van principles, omdat het slechts om reenforcement gaat: je pint een stuk structuur van het object vast aan een ander object.  
+De code base kan ook zonder.  
 Dat geld dan voor veel van wat nu Coding Principles zijn.
 
 If classes is to be implemented as a relation between objects, then you already need relations between object, even though you don’t have relation between classes yet.
 
 JJ
 
+-----
 
-- \> An object's class or a class's interface is a prototype-based principle,
-     so any other object can serve as a class or interface,
-     but symbols will be more likely to be assigned a fixed role.
+An object's class or a class's interface is a prototype-based principle, so any other object can serve as a class or interface, but symbols will be more likely to be assigned a fixed role.
 
-- \> In Coding Principles, Classes and Coding Principles, Interfaces:
+-----
 
-    - In the coding principles documentation,
-      for class you need to clarify that object with the
-      same class have the same public and private symbols,
-      but the state of each object is different, meaning
-      that each object has different attribute values and subobjects point
-      at different targets.
+In Coding Principles, Classes and Coding Principles, Interfaces:
+- In the coding principles documentation, for class you need to clarify that object with the same class have the same public and private symbols, but the state of each object is different, meaning that each object has different attribute values and sub-objects point  at different targets.
+- A similar explanation has to be given for the interface coding principle.
 
-    - A similar explanation has to be given for the interface coding principle.
-
+-----
 
 Classes & Interfaces,
 
-You should introduce type safety and genericity sooner,
-in the coding principles.
-Type safety can be implemented as a concept,
-but assigning a class or interface really doesn't make
-any sense without it, so you have to introduce it
-in the articles about classes and interfaces.
+You should introduce type safety and genericity sooner, in the coding principles. Type safety can be implemented as a concept, but assigning a class or interface really doesn't make any sense without it, so you have to introduce it in the articles about classes and interfaces.
 
 A classes fixes the collection of sub objects that
 exist in it, and the names for those sub-objects.
-A sub-object can reference another object,
-but its names is fixed by the class.
-Usually the sub objects defined by the class
-also have a fixed class.
-Explain everything in terms of classes first,
-not mentioning interfaces.
+A sub-object can reference another object, but its names is fixed by the class. Usually the sub objects defined by the class also have a fixed class.
+
+Explain everything in terms of classes first, not mentioning interfaces.
 
 JJ
 
-
+-----
 
 Classes & Interfaces,
 
-You have to explain sooner, what's the use of fixing
-the class of an object reference.
+You have to explain sooner, what's the use of fixing the class of an object reference.
 
-You have to discuss what's the use of fixing all classes,
-and what is the use of not fixing any classes.
+You have to discuss what's the use of fixing all classes, and what is the use of not fixing any classes.
 
-Fixing the classes of objects and their contents
-results in exactly knowing how the an object looks and behaves.
+Fixing the classes of objects and their contents results in exactly knowing how the an object looks and behaves.
 
-Fixing the interface of objects results in exactly knowing
-how an object looks, even though the behavior can be different.
+Fixing the interface of objects results in exactly knowing how an object looks, even though the behavior can be different.
 
-If you pass an object along to a procedure, the procedure can
-make no assumptions about the contents of the object,
-unless it has a fixed class or interface.
+If you pass an object along to a procedure, the procedure can make no assumptions about the contents of the object, unless it has a fixed class or interface.
 
-Type safety only useful so PROCEDURES can make
-assumptions about the interface or behavior of an object.
+Type safety only useful so PROCEDURES can make assumptions about the interface or behavior of an object.
 
-But when just using an object as a folder, you keep the way
-the object looks totally variable, so you can put anything in it.
-You won't be running a procedure over it anyway.
+But when just using an object as a folder, you keep the way the object looks totally variable, so you can put anything in it. You won't be running a procedure over it anyway.
 
 JJ
 
@@ -137,7 +115,7 @@ If you make two symbols the same object:
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.001e.png)
 
-They automaticaly have the same type with (by default) the same interfaces, sort of like this:
+They automatically have the same type with (by default) the same interfaces, sort of like this:
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.001f.png)
 
@@ -187,7 +165,7 @@ If a symbol has an object line then it adopts the object of the line target. __A
 
 If a symbol doesn’t have an object line, though, it represents its own object. The symbol is an *original object*.
 
-Synomyms for the terms *delegated* and *original* are allowed. *Delegated* has synonyms such as *diverted*, *redirected*, etcetera. All are valid. Synonyms for *original object*, can be expressions such as ‘the symbol *is its own object*’.
+Synonyms for the terms *delegated* and *original* are allowed. *Delegated* has synonyms such as *diverted*, *redirected*, etcetera. All are valid. Synonyms for *original object*, can be expressions such as ‘the symbol *is its own object*’.
 
 |                      |                              |
 |----------------------|------------------------------|
@@ -264,7 +242,7 @@ The interface can be determined by the target of the interface line, type line o
 | __Delegated interface__ | Interface determined by a line line |
 |                         | (interface, type or object line)    |
 
-During execution the interface can change from being delegated to original and back. The original interface isn’t lost as soon as you delegate the interface. When you annull the delegation, then the original interface reappears. It was only temporarily hidden. Mostsymbols don’t define an original interface, so not every object symbol holds original interface systematics.
+During execution the interface can change from being delegated to original and back. The original interface isn’t lost as soon as you delegate the interface. When you annul the delegation, then the original interface reappears. It was only temporarily hidden. Most symbols don’t define an original interface, so not every object symbol holds original interface systematics.
 
 The use of delegation of the interface is to fix the interface and to use an already defined interface.
 
@@ -351,7 +329,7 @@ In both cases the interface is delegated. If a procedure symbol has no line at a
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.030.jpeg)
 
-During execution the interface can change from being delegated to original and back. The original interface isn’t lost as soon as you delegate the interface. When you annull the delegation, then the original interface reappears. It was only temporarily hidden. Most procedure symbols don’t define an original interface, so most symbols don’t holds original interface systematics.
+During execution the interface can change from being delegated to original and back. The original interface isn’t lost as soon as you delegate the interface. When you annul the delegation, then the original interface reappears. It was only temporarily hidden. Most procedure symbols don’t define an original interface, so most symbols don’t holds original interface systematics.
 
 The *use* of delegation of the interface is to fix the interface of a procedure and to use an already defined procedure interface.
 
@@ -436,7 +414,7 @@ __Symbol A__ redirects the type to __Type A__. In the first picture __Symbol A__
 
 This means that the object line determines the interface sooner than the type line. That’s why in the interface trace, the object line is preferred over the type line.
 
-##### Interface Type Generiticy
+##### Interface Type Genericity
 
 Another very important use of the separation between types and interfaces is that you can choose any *object* that supports the interface, not worrying about its type.
 
@@ -478,7 +456,7 @@ The topics of genericity show that these two pictures aren’t synonyms. In the 
 
 #### Delegated to Original in a Circularity
 
-When you annull a symbol’s type line, it usually regains its original type. All symbols pointing to the reappeared original type, now also have a different type.
+When you annul a symbol’s type line, it usually regains its original type. All symbols pointing to the reappeared original type, now also have a different type.
 
 In a circularity it’s different. When you delegate the type to a circularity, the whole circularity represents the type.
 
@@ -543,28 +521,11 @@ If you break one of the lines in the circularity, the one loosing the line comes
 Type Control,
 2008-10-20
 
-Strong typing is no more, than a binary format with type checking around it.
-It also gives you a nice autocomplete list in your programming environment.
-The type checking is only a restriction imposed by the compiler:
-the compiler, even though it could compile, refuses to compile, when something against the rules
-is in the code. But it could compile, but it just refuses to do it.
-If it would compile the program anyway, then a runtime error could occur when the type is wrongly
-used in the code. You can easily make a program compile with the 'error' in it, by giving the object a generic type.
-That takes away the strong typing, which basically only takes away checks, that the compiler performs.
+Strong typing is no more, than a binary format with type checking around it. It also gives you a nice autocomplete list in your programming environment. The type checking is only a restriction imposed by the compiler: the compiler, even though it could compile, refuses to compile, when something against the rules is in the code. But it could compile, but it just refuses to do it. If it would compile the program anyway, then a runtime error could occur when the type is wrongly used in the code. You can easily make a program compile with the 'error' in it, by giving the object a generic type. That takes away the strong typing, which basically only takes away checks, that the compiler performs.
 
-Strong typing is just a helper, not a mandatory thing. Computer systems can function without it.
-It is just an extra. It is just something that rules out certain mistakes a programmer can make.
+Strong typing is just a helper, not a mandatory thing. Computer systems can function without it. It is just an extra. It is just something that rules out certain mistakes a programmer can make.
 
-That's the way it is implemented in the new computer language too:
-the whole system can function without it, but it extra checking and extra helpers,
-imposed afterwards.
-Not only the imposing of the rules is very important about type checking.
-Also the helpers for the programmer are a blessing. Without any documentation,
-autocomplete lists already give an interface to the format an object is expected to have.
-Yes, objects have a format. You may only see members in the autocomplete list,
-but internally objects just have a format.
-That's what a class is: a format. Furtherly, the class is extended with the methods you
-could operate on the object of a class.
+That's the way it is implemented in the new computer language too: the whole system can function without it, but it extra checking and extra helpers, imposed afterwards. Not only the imposing of the rules is very important about type checking. Also the helpers for the programmer are a blessing. Without any documentation, autocomplete lists already give an interface to the format an object is expected to have. Yes, objects have a format. You may only see members in the autocomplete list, but internally objects just have a format. That's what a class is: a format. Furtherly, the class is extended with the methods you could operate on the object of a class.
 
 Enough for now.
 
@@ -574,24 +535,35 @@ JJ
 
 ### Old
 
-< Also look at Access Media  : Interface Access >
-    \> 2009-06-28 later also called Access Ways and Special Access
+< Also look at Access Media : Interface Access >
+- \> 2009-06-28 later also called Access Ways and Special Access
+
+-----
 
 < Does genericity control what happens on the call of system procedures or if the call to a system procedure is illegal or not? >
 
-< Introduce more system procedures here:
+-----
 
-Type Generic Get
-Type Generic Set
-Interface Generic Get
-Interface Generic Set
-Procedure Reference Generic Get
-Procedure Reference Generic Set
-Here and no earlier >
+<  
+Introduce more system procedures here:
+
+- Type Generic Get
+- Type Generic Set
+- Interface Generic Get
+- Interface Generic Set
+- Procedure Reference Generic Get
+- Procedure Reference Generic Set
+ 
+Here and no earlier.  
+/>
+
+-----
 
 < is that the same or different from being able to change type at creation or assignment of object reference ? >
 
-<
+-----
+
+<  
 Old:
 
 A symbol’s type or interface can be generic or explicit.
@@ -608,11 +580,11 @@ Explicit:
 - The type of the symbol is defined and must match with the type of the object
 - The interface of the symbol is defined and must be supported by its type
 
-\-----
+-----
 
 Assignment can occur by two means: explicit assignment and generic assignment.
 
-The type of the assigned object may be generic too. The interface of the assigned type might be generic too. But the tied together symbols change simultaniously.
+The type of the assigned object may be generic too. The interface of the assigned type might be generic too. But the tied together symbols change simultaneously.
 
 Explicit:
 
@@ -621,15 +593,17 @@ Explicit:
         - It must have this type or an exception occurs
     - When you assign the interface:
         - The type must support the interface or an exception occurs
-    - Explicit interface: 
-        - When you assign the type:
-            - The type must support the interface or an exception occurs
-        - When you assign the object:
-            - The object must be of a type that supports the interface (?)
+- Explicit interface: 
+    - When you assign the type:
+        - The type must support the interface or an exception occurs
+    - When you assign the object:
+        - The object must be of a type that supports the interface (?)
 
 You can change whether or not a type or interface is generic. It is a separate aspect of the symbol. Genericity of type doesn’t mean that it’s of type Object or something, because whenever a symbol has an object, it has a specific type: the type of the object. Whether a symbol has a generic type or interface or not can be set as runtime. Except when the type has been made constant on that part: always a generic interface or always an explicit interface, always a generic type or always an explicit type. Always an explicit type does not mean that the type is constant. The type just always needs to be assigned explicitly, but *can* vary.
 
-\>>
+\>
+
+-----
 
 If a symbol already has a type line it has to have that type. If it doesn’t have a type line then it gets the type of the object it’s pointing at (not considering the interface problem below) 
 
@@ -641,8 +615,7 @@ Something like this should be possible:
 
 The point is in the lines of the child of the top symbol. It’s type line points to the center symbol, but it’s interface line points to the interface of ONE of its types interface implementations, not to the joint interface implementation of the type. You have to be able to do this.
 
-But it goes against rules I set up earlier. So there has to be more flexibility with interfaces.
-
+But it goes against rules I set up earlier. So there has to be more flexibility with interfaces.  
 The type line no longer determines the interface line.
 
 Ah, more rules need to be invented for working with interfaces.
@@ -667,6 +640,8 @@ If you redirect with an object line then the object reference gets the same type
 | __Interface Generic Set:__ | ~: =  |
 
 < Maybe I’ll do special operator symbols in text code that represent the object relations. Actually, that’s what I’d like a little. Except member access. I wanna keep that. >
+
+-----
 
 Oh, making type unsettable at run time can be considered a form of genericity. Maybe I should even rename the other type genericity I mentioned. It might be called object-type genericity. Well… settability can also be called variable and constant.
 
