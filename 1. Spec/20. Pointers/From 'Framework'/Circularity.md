@@ -4,11 +4,10 @@
 Circularity
 -----------
 
-Circularities are in many cases no problem. Sometimes, however, a program is organized in a way, that circularities will make the program hang. Therefore there is standard functionality in Creator to handle circularities. Procedures that handle a circularity sometimes require a lot of steps.
-
+Circularities are in many cases no problem. Sometimes, however, a program is organized in a way, that circularities will make the program hang. Therefore there is standard functionality in Creator to handle circularities. Procedures that handle a circularity sometimes require a lot of steps.  
 < 2007-07-15, Creator will handle these steps for you? >
 
-The first thing to understand is how circularities are formed. Object structures can form large constructions of one object refering to another. when following redirections from one object to another, you can end up at the same object again. This means that the redirectioning is circular.
+The first thing to understand is how circularities are formed. Object structures can form large constructions of one object referring to another. when following redirections from one object to another, you can end up at the same object again. This means that the redirecting is circular.
 
 Circularities are easily formed. A parent referencing a child and the child referencing the parent again, is a circularity already. They’re practically there all the time. However, some circularities are important to handle or prevent. In the __Structure__ you have to specify for what kind of redirections you will handle circularities. You do that by selecting a subset of relations in which circularities will be handled.
 
@@ -21,15 +20,15 @@ There are four ways to handle circularities:
 - Circularity encountering
 - Circularity targeting
 
-The first type of circularity handing is *circularity detecting*. This type of circularity will add a method to all __Items__ and __Lists__ involved in the subset of relations. This method is named __IsCircular__, which returns __True__ when the object is part of a circularity, and __False__ if the object is not part of a circularity. The whole redirectioning of the object structure could be followed to find out if a circularity closes itself somewhere. It can be quite a process. Hellish in certain cases, but sometimes it’s quite important to know if something is circular. One __IsCircular__ method delegates to other __IsCircular__ methods in related objects, which again delegate to __IsCircular__ in even deeper objects. Passed along with the __IsCircular__ method is the object to check circularity for. Another thing passed along is the __Parent Stack__, which is the chain of redirections already followed: the current redirectioning path. In the __IsCircular__ method, an object first compares itself with the object passed along. If they match, then __IsCircular__ will return __True__ and the whole circularity detection will be wrapped up in a flash. If the objects don’t match, then the object adds itself to the __Parent Stack__, and calls the __IsCircular__ method of the related objects, that participate in the circularity handling. The __IsCircular__ methods of the related objects work exactly the same. At the end of the __IsCircular__ method, the object removes itself from the __Parent Stack__ and returns to the previous caller. Depending on the enormity of the structure, this process can be quite elaborate.
+The first type of circularity handing is *circularity detecting*. This type of circularity will add a method to all __Items__ and __Lists__ involved in the subset of relations. This method is named __IsCircular__, which returns __True__ when the object is part of a circularity, and __False__ if the object is not part of a circularity. The whole redirecting of the object structure could be followed to find out if a circularity closes itself somewhere. It can be quite a process. Hellish in certain cases, but sometimes it’s quite important to know if something is circular. One __IsCircular__ method delegates to other __IsCircular__ methods in related objects, which again delegate to __IsCircular__ in even deeper objects. Passed along with the __IsCircular__ method is the object to check circularity for. Another thing passed along is the __Parent Stack__, which is the chain of redirections already followed: the current redirecting path. In the __IsCircular__ method, an object first compares itself with the object passed along. If they match, then __IsCircular__ will return __True__ and the whole circularity detection will be wrapped up in a flash. If the objects don’t match, then the object adds itself to the __Parent Stack__, and calls the __IsCircular__ method of the related objects, that participate in the circularity handling. The __IsCircular__ methods of the related objects work exactly the same. At the end of the __IsCircular__ method, the object removes itself from the __Parent Stack__ and returns to the previous caller. Depending on the enormity of the structure, this process can be quite elaborate.
 
-The second type of circularity handling is *circularity blocking*. This methods sees to it that circularities are *never formed*. In that case, you will never have to mind circularities when working with the structure, because circularities will simply never be there. Every time an object inside the subset of relations is __Set__, there is checked if a circularity is in jeopardy of being formed. If it is, then the the object will *not* be set. Every involved item and list will get a __WillBeCircular__ method. This method checks if the object is already present anywhere in the redirectioning. If it is, then a *circularity* would be formed by assigning the object. __WillBeCircular__ will then return __True__ and the object will not be assigned.
+The second type of circularity handling is *circularity blocking*. This methods sees to it that circularities are *never formed*. In that case, you will never have to mind circularities when working with the structure, because circularities will simply never be there. Every time an object inside the subset of relations is __Set__, there is checked if a circularity is in jeopardy of being formed. If it is, then the the object will *not* be set. Every involved item and list will get a __WillBeCircular__ method. This method checks if the object is already present anywhere in the redirecting. If it is, then a *circularity* would be formed by assigning the object. __WillBeCircular__ will then return __True__ and the object will not be assigned.
 
 The third type of circularity handling is *circularity encountering*. In this method the circularity is not prevented, but just detected in the right situations. For instance, in J Sound, you might want to detect circularities on getting an __Operator__’s __Value__ (the output value of an __Operator__). A method will be added to the __Operator__ called __CircularityReached__, which checks if the object itself is already present in a chain of *call parents*. That method will require a collection of previously called parents to be passed along. The object will search for itself in this __Parent Stack__. This requires that the __Parent Stack__ is passed to the every __Value__ property. The __Value__ property will call the __CircularityReached__ method that returns if returns if the object is already on the __Parent Stack__. If it was, then the __Value__ method should return a default value and not work with any other operands. The first thing you do in the __Value__ procedure, is call __Circularity Reached__ and if it’s __True__, you return with a default value. When __Circularity Reached = False__ then you continue the procedure. The first thing to do then is for the object to put itself on the __Parent Stack__. At the end of the __Value__ procedure you will remove the object from the __Parent Stack__. In between you will use the __Operands__’ __Value__ procedures, passing along the __Parent Stack__. This __Value__ procedure is a custom procedure that you write yourself and you should obey to these circularity managing rules.
 
 The fourth way of circularity handling is called circularity targeting. This adds a method to the involved classes, named __CircularityTarget__. When this method is called in an object part of a circularity, then it will return the circularity target. I have to check the Symbol documentation to see how a target symbol is found.
 
-Ofcourse circularities don’t need to be protected, circularities can be made as soon as somewhere in the relational redirection, an already passed object occurs. This section simply laid out the possibilities in Creator to handle circularities to prevent your program from hanging.
+Of course circularities don’t need to be protected, circularities can be made as soon as somewhere in the relational redirection, an already passed object occurs. This section simply laid out the possibilities in Creator to handle circularities to prevent your program from hanging.
 
 ### Older Story
 
@@ -62,31 +61,22 @@ So there are four types of circularity checking:
 
 I have to think of better names. Preventing and blocking sound too alike.
 
-Ofcourse circularities don’t need to be protected, circularities can be made as soon as somewhere in the relational redirection, an already passed object occurs. This section simply laid out the possibilities in J Data to handle circularities to prevent your program from hanging.
+Of course circularities don’t need to be protected, circularities can be made as soon as somewhere in the relational redirection, an already passed object occurs. This section simply laid out the possibilities in J Data to handle circularities to prevent your program from hanging.
 
 ### Ideas
 
-2008-04-26
-
+2008-04-26  
 I would also want to give procedures running over circular object structures, a maximum number of iterations, so that you can let procedures run circularly to a certain extent.
 
+-----
 
-Circular creation,
+Circular creation,  
 2008-08-15
 
-Special creation behavior for recursive calls,
-prevents a hazard, that is actually also
-present in objects: cicular creation:
+Special creation behavior for recursive calls, prevents a hazard, that is actually also present in objects: circular creation:
 
-create an object of a class,
-that creates an new object of the same class,
-which creates a new object of the same class.
+create an object of a class, that creates an new object of the same class, which creates a new object of the same class.
 
-Don't pay too much attention to it now.
-Make it an article in the circularity topics.
-Also put there, that in the project,
-that works out circularity, you have
-to see if you can merge the concepts of
-circular creation and creation behavior of sub-commands.
+Don't pay too much attention to it now. Make it an article in the circularity topics. Also put there, that in the project, that works out circularity, you have to see if you can merge the concepts of circular creation and creation behavior of sub-commands.
 
 JJ
