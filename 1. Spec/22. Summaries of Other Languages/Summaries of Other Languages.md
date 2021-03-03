@@ -17,7 +17,7 @@ This document contains summaries of other languages, mainly C and C++, in the fo
 - Name Spaces
 - Variable
 - Specifiers
-    - Access modifiers: `public  private`, 
+    - Access modifiers: `public  private`
     - Types: `void  char  short  int  long  float  double  signed  unsigned`, `struct`-or-`union`-specifier, `enum`-specifier, `typedef`-name
     - Type qualifiers: `const volatile`, normal
 - Declarations
