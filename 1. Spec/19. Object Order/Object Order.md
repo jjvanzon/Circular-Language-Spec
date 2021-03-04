@@ -52,3 +52,14 @@ There are several candidates for a diagram notation for order. They are out ther
 - The items are linked to each other, like next-command references (look up the idea somewhere.)
 
 JJ
+
+-----
+
+Object Order,
+2021-03-03
+
+Numerical ordinals as an alternative?
+See "Automatic Execution Order + More" / "Automatic Execution Order" / "Symbol Language (2004)"?
+
+
+JJ

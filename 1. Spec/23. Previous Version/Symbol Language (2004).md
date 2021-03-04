@@ -8167,7 +8167,7 @@ Full summary:
     - Declarators: specifies
         - The name and pointering in a declaration (and type names in certain cases). Basically the part of the declaration that the specifiers do not cover.
             - Name
-            - Pointers: pointer, reference, array, pointer to any member of a type (ClassName::\*)
+            - Pointers: pointer, reference, array, pointer to any member of a type (ClassName`::*`)
             - Type names: in conversions, sizeof, new, function prototypes, typedefs
         - Initialization
             - Pointers to const objects
@@ -8200,7 +8200,7 @@ Full summary:
         - Namespace alias: alternate name for namespace
         - namespace
         - using namespace < namespace >: allows you to ommit the namespace identifier when referencing things in the namespace
-        - Accessing the namespace (C++ uses ::)
+        - Accessing the namespace (C++ uses `::`)
     - Abstract declarator: identifier omitted
     - const and volatile pointers
 
@@ -8254,19 +8254,19 @@ Full summary:
 
 ##### Unclassified
 
-Microsoft specific:
+- Microsoft specific:
 
 ```
-allocate3 \_\_inline property
-\_\_asm1 \_\_int8 selectany
-\_\_based2 \_\_int16 \_\_single\_inheritance 
-\_\_cdecl \_\_int32 \_\_stdcall 
-\_\_declspec \_\_int64 thread
-dllexport3 \_\_leave \_\_try 
-dllimport3 \_\_multiple\_inheritance uuid
-\_\_except naked3 \_\_uuidof 
-\_\_fastcall nothrow3 \_\_virtual\_inheritance 
-\_\_finally
+    allocate3 __inline property
+    __asm1 __int8 selectany
+    __based2 __int16 __single_inheritance 
+    __cdecl __int32 __stdcall 
+    __declspec __int64 thread
+    dllexport3 __leave __try 
+    dllimport3 __multiple_inheritance uuid
+    __except naked3 __uuidof 
+    __fastcall nothrow3 __virtual_inheritance 
+    __finally
 ```
 
 - Keywords:
@@ -8279,8 +8279,6 @@ Other Sigma components replace functionality of Standard libraries, but C progra
 
 Formal arguments are the variables  inside the function as opposed to the values given in the function call.
 
-Concepts
-
 #### Other
 
 I don’t summarize Com, because it doesn’t really add any programming concepts, but mainly only libraries. I don’t summarize Visual Basic, because it doesn’t really add any concepts to... oh, I do need Visual Basic and Com, for the events and stuff... dang. And properties, and all. Many Visual Basic and Com concepts have no place in this programming language, but in other modules.
@@ -8289,106 +8287,128 @@ Com concepts: components, interfaces.
 
 ### Terms
 
-capsule
-containment structure
-encapsulation (structure)
-*ancestors* 
-*higher* objects
-Deeper objects
-*lower* objects
-*descendants*
-derived 
-*inherit* 
-*child*
-*parent* 
-*grandchild*
-*grandparent*
-
-*base*
-*base* *object*
-*base type*
-*ancestry*
-*level*
-*layer*
-*deep ancestry*
-*Deeper layers*
-*bottom layers*
-*Higher layers*
-*top layers*
-*foundation*
-
-*Container*
-*the contained*
-
-
-Object
-Type
-
-Base
-Derive, derivation
-Inheritance
-
-Lower
-Deeper
-Higher
-
-Child
-Parent
-Ancestor
-Descendant
-Grandchild
-Grandparent
-
-Reference
-Referee
-
-Interface
-Implementation
-
-Procedure
-Procedure reference
-Call
-Definition
+- capsule
+- containment structure
+- encapsulation (structure)
+- *ancestors* 
+- *higher* objects
+- Deeper objects
+- *lower* objects
+- *descendants*
+- derived 
+- *inherit* 
+- *child*
+- *parent* 
+- *grandchild*
+- *grandparent*
+-----
+- *base*
+- *base* *object*
+- *base type*
+- *ancestry*
+- *level*
+- *layer*
+- *deep ancestry*
+- *Deeper layers*
+- *bottom layers*
+- *Higher layers*
+- *top layers*
+- *foundation*
+-----
+- *Container*
+- *the contained*
+-----
+- Object
+- Type
+-----
+- Base
+- Derive, derivation
+- Inheritance
+-----
+- Lower
+- Deeper
+- Higher
+-----
+- Child
+- Parent
+- Ancestor
+- Descendant
+- Grandchild
+- Grandparent
+-----
+- Reference
+- Referee
+-----
+- Interface
+- Implementation
+-----
+- Procedure
+- Procedure reference
+- Call
+- Definition
 
 # Brainstorm
 
 Als je een te supplyen procedure reference (pure virtual function, pure overridable) niet invult, dan heeft hij van zichzelf waarschijnlijk geen inhoud. Als je hem dan aanroept gebeurt er gewoon niks. Eigenlijk zou dan misschien ook bij niet gecreerde objecten moeten gebeuren: je roept hem wel aan maar er gebeurt gewoon niks. Dat voorkomt foutmeldingen, maar het is eigenlijk niet de bedoeling. Of kan je erop bouwen. Misschien is het een keuze die je maakt als programmeur. Nou moet ik zeggen dat ik in mijn code er altijd voor kies dat als er iets 'verkeerds' wordt aangeroepen, dat er dan gewoon NIKS gebeurt. Er gaan niks fout, nee er gebeurt gewoon niks.
 
+-----
+
 Delegation, delegation structure.
+
+-----
 
 < I have to get all of my Symbol scribbles out of the bin and put them in a ... map.
 
+-----
+
 < What I call type members a lot, really aren’t type members. They’re object members. Only static type members are type members. And what I call procedure members aren’t procedure members. They are call members. Only static procedure members are procedure members. So what are Type Static procedure members? They are type members that are only associated with a single procedure. Oh, but they are still procedure members than. And then object members can also be called type members. Hmmm... yes, but I overuse ‘type member’ I think. In a lot of places I can say object member. >
+
+-----
 
 < I need a story about where the code resides and that the code isn’t really part of globality instances, types, objects or procedures. Those entities only complete the code with a copy of data. >
 
+-----
+
 Objects don’t *really* contain data, though, but memory is reserved for every object and linked to the object.
+
+-----
 
 Er moet ergens nog in dat een procedure een interface heeft. En misschien moet een procedure daarom ook een interface line krijgen.
 
+-----
+
 Trouwens: Een multicast event is niet meer dan een object met een dimensie, die meerdere procedure references registreerd. Misschien moet er een speciale notatie zijn zodat je de lines ziet. Je moet van dat object met een dimensie een method aan kunnen roepen, die in een rij alle references aanroept. Daarom moet een dimensionaal object ook niet dimensionale members kunnen hebben, maar ik weet nog niet helemaal hoe dat dan gaat.
+
+-----
 
 - Pointer to member of type
 - Pointer to function: can I make obligations about function signature?
 
+-----
+
 *Little disclaimer: I use the word Friend here, but it’s not the same as the Friend access controller. It’s a keyword overused here. However, it’s overused the same way in C++ and I have not yet come up with a decent alternative. The word Friend has been taken over from C++, just like the other access controller keywords. The access controller keywords aren’t super accurate description of their effect, they are just picked because the words are short and you can related their meaning remotely to their effect. I ain’t good at coming up with inaccurate names for something, so I can’t find an alternative now for this second hand use of the keyword Friend. I could go look for more concise words for the access controllers, but those would confuse me, because I’m still used to the old words. And it’s hard enough trying to get the description of this programming language on paper as it is.*
 
-In J Code you could do overloading in which anything of the declaration can differ. If you use
+-----
 
-named arguments than you can do same parameter types. You can link to any symbol anyway,
+In J Code you could do overloading in which anything of the declaration can differ. If you use named arguments than you can do same parameter types. You can link to any symbol anyway, so it would be just a matter of what you see in text code.
 
-so it would be just a matter of what you see in text code.
+-----
 
 I may need to use the terms *object* and *child* everywhere rather than *type* and *ancestor*. An object’s member for instance. I should also talk about *parents* and *children*.
 
+-----
+
 Cover the possible ways to have events.
 
+-----
+
 A possible notation: showing things further away as smaller.
+
+-----
 
 Operators:
 
 J Data Information Language is an alternative notation used inside Symbol code. Does it therefore consist of operator functions? And is that then the first operator that is about a more non textual notation a a more graphical one?
-
 
 Other Things
 ------------
@@ -8398,6 +8418,8 @@ Other Things
 - Operators
 - Operation control
 
+-----
+
 I’m going to summarize all programming concepts. I need to shorten the list by only mentioning the general outline concepts. Blah. I’ll use the C and C++ language analyses I made. I need a short summary of com concepts too:
 
 - Interfaces
@@ -8405,12 +8427,17 @@ I’m going to summarize all programming concepts. I need to shorten the list by
 
 Isn’t that basically all? Maybe, but it needs to be incorporated.
 
+-----
+
 The alternative views and colors and other indicators are all a separate subject that shouldn’t be covered at first, but lateron.
+
+-----
 
 Don’t forget to expand inheritance possibilities. Exclude, override, pre extension, post extension. 
 
-<
+-----
 
+<
 - Operation control:
     - Expressions
     - Iterations
@@ -8420,29 +8447,31 @@ Don’t forget to expand inheritance possibilities. Exclude, override, pre exten
         - If
         - Select / Switch
         - Procedure call and return
-
+-----
 - Objects and interfaces
-
+-----
 - Operators: are interfaces for functions. Interfaces for functions??
-
+-----
 - Variables, Simple data types
 - Variables are objects and simple data types are their types. 
 - They control data and a variety of operations are allowed on them
-
+-----
 - Function arguments, In, Out, Through
-
+-----
 - Creation
 
 \>
 
-J Code Access Controllers and Interfaces.
+J Code Access Controllers and Interfaces.  
 \------------------------------------------------
 
 I mentioned friend and public here, but access controllers are more complex in J Code due to embedded globalities. There is basically an infinite amount of access controllers. For that they aren't primarily named anymore, they are systemized. You might have an access controller that ensures that. Maybe what I put in a triangle previously, is actually something that just has special access. Maybe the triangle shouldn't be used there then, but just a special access controller. The triangle can then be used as an interfaces mark. The triangle previously marked all symbols inside the triangle as having this special access. If I don't use the  triangle there anymore then I'd have to change each of those symbols' access controllers. For that... You should be able to group symbols inside a special symbol that controls the access for all the directly contained symbols. So to see the triangle as a special access controller and for that not use the triangle for it anymore, but an actual access controller, I'd have to use access controller symbols (line and line 'terminators) for all the containing symbols, which would drastically make the diagram more difficult. An  idea is to make a special symbol to control the access for all the directly contained symbols. What pops into my head now is: since the triangle would then stand for interface, each member with the same access controller could belong to the same interface. Therefore, an interface symbol (triangle) could be used to group these symbols and the interface symbol gets the access controller instead, which applies it to all directly contained symbols.
 
-Groeperingssymbool op basis van wat een client object gebruikt. De interface indeling is op die manier een beetje automatisch. Als je geen interface indeling hebt, dan kun je toch zien 
+-----
 
-wat de verschillende clients gebruiken en misschien voor het overzicht toch een interface indeling gebruiken.
+Groeperingssymbool op basis van wat een client object gebruikt. De interface indeling is op die manier een beetje automatisch. Als je geen interface indeling hebt, dan kun je toch zien wat de verschillende clients gebruiken en misschien voor het overzicht toch een interface indeling gebruiken.
+
+-----
 
 __Programming Concepts’ Diagram Elements__
 
@@ -8476,7 +8505,6 @@ Old
 < you can integrate data logic by being able to choose to display the data logic diagram right inside a symbol, or display the object structure it resolves in. >
 
 < you can integrate text code in the very same way >
-
 
 Introduction
 ------------
@@ -8579,13 +8607,13 @@ __Programming Concepts’ Diagram Elements__
 | Interface                  | Triangle |
 | Procedure                  | Square |
 | Access                     |     |
-| > Global                   | All inside a pentagon (There are issues) |
-| > Public for reference     | Line to just outside to a tangent line. |
-| > Private for reference    | Line to just outside to a cross |
-| > Friend for reference     | Line to just outside to a < shape pointed inwards |
-| > Public for instancing    | Line to just outside to a dotted tangent |
-| > Private for instancing   | Line to just outside to a dotted cross |
-| > Friend for instancing    | Line to just outside to a dotted < shape pointed inwards |
+| - Global                   | All inside a pentagon (There are issues) |
+| - Public for reference     | Line to just outside to a tangent line. |
+| - Private for reference    | Line to just outside to a cross |
+| - Friend for reference     | Line to just outside to a < shape pointed inwards |
+| - Public for instancing    | Line to just outside to a dotted tangent |
+| - Private for instancing   | Line to just outside to a dotted cross |
+| - Friend for instancing    | Line to just outside to a dotted < shape pointed inwards |
 | Execution order            | Dependent of positioning. Clockwise. Symbols possibly tied together with lines. |
 | Changing reference or type | Also include creation and destruction. Special procedures that actually alter the diagram. |
 | Array                      | Special type with special methods changing the count of contained object references. |
@@ -8613,19 +8641,18 @@ __Programming Concepts’ Diagram Elements__
 
 ### Derived Concepts
 
-Procedure call
-Inheritance
-Multiple containment
-Pointer
-Parameters
-Arguments
-Variables
-Storage
-Member grouping
-Interface implementation
-Events / outward interfaces
-
-Overriding
+- Procedure call
+- Inheritance
+- Multiple containment
+- Pointer
+- Parameters
+- Arguments
+- Variables
+- Storage
+- Member grouping
+- Interface implementation
+- Events / outward interfaces
+- Overriding
 
 |                      |                     |
 |----------------------|---------------------|
@@ -8659,8 +8686,7 @@ Overriding
 
 I said a triangle was an interface. Eigenlijk is de interface een hoop functie referenties die ingevuld moeten worden. Dan zou het zo zijn dat alle members in een driehoek door zouden moeten refereren naar members binnen de cirkel. Eigenlijk moet ik een driehoek zijn eigen syntax laten hebben. Een driehoek krijgt een interface klasse. Deze kan een cirkel zijn of driehoek. De driehoek krijgt de publieke en vriendschappelijke inhoud van de interface klasse, maar niet de prive inhoud, welke de implementatie omvat. Dus de implementatie ontbreekt. Je kunt deze of zelf invullen of je creeert de implementatie door de driehoek te creeeren met een bepaalde implementatie klasse, waardoor je inheritance bewerkstelligt. Je kunt evengoed de verwijzing van de driehoek veranderen om de implementatie te delegeren. De driehoek heeft altijd de holle vorm van zijn interface klasse, maar de klasse en het object van zijn verwijzing. Als je hem creeert dan heeft hij geen verwijzing.
 
-Een interface heeft een interface, implementatie en object. De klasse is de interface, de implementatie zou ook een klasse moeten zijn en het object dan de referentie.
-
+Een interface heeft een interface, implementatie en object. De klasse is de interface, de implementatie zou ook een klasse moeten zijn en het object dan de referentie.  
 Heeft de driehoek een extra referentie dan? Interface, implementatie en object?
 
 Maar dan heeft een cirkel dat ook, want die representeert... oh, de gezamenlijke interface. De driehoek kan ook zelf de interface klasse zijn en de interface en de implementatie.
@@ -8669,8 +8695,7 @@ Maar dan heeft een cirkel dat ook, want die representeert... oh, de gezamenlijke
 
 ##### Direction
 
-Always first goes outward, but that doesn’t mean that outward is the direction. Line disectors
-
+Always first goes outward, but that doesn’t mean that outward is the direction. Line disectors  
 Reference to a procedure is a call and is represented by a square tied to another.
 
 ##### Reference to object
@@ -8695,6 +8720,8 @@ What about ‘system wide’ things that can be accessed from anywhere? It can b
 
 But what if it’s less system wide? In that case it seems that a deep globality has access to a shallower globality... < I’ll figure out later >
 
+-----
+
 If a globality is declared public, it becomes a sub module in the Sigma module.
 
 ##### Friend for reference
@@ -8711,24 +8738,30 @@ Reference can be seen in a way as containment.
 
 #### Changing a Reference or Type
 
-Special procedures that can actually alter the diagram.
-Objects are always object references or types until the object is created. Create an object for one reference, then the references tied to that reference also point at that object, ofcourse, since the reference tied to the reference are actually references to references.
-A creation procedure method is called with a fixed reference to another reference to create an object for. The dectruction method is the same. The creation method kinda turns the references on, while the destruction method turns it off.
-The procedure for changing a reference gets the reference as an argument, and another argument that specifies the symbol to reference. The symbol to reference needs to be the same interface ...
-A reference has a fixed interface, but can be point to or be of any type as long as you reference the same interface.
+Special procedures that can actually alter the diagram.  
+Objects are always object references or types until the object is created. Create an object for one reference, then the references tied to that reference also point at that object, ofcourse, since the reference tied to the reference are actually references to references.  
+A creation procedure method is called with a fixed reference to another reference to create an object for. The dectruction method is the same. The creation method kinda turns the references on, while the destruction method turns it off.  
+The procedure for changing a reference gets the reference as an argument, and another argument that specifies the symbol to reference. The symbol to reference needs to be the same interface ...  
+A reference has a fixed interface, but can be point to or be of any type as long as you reference the same interface.  
 For that, changing the type of a reference is permited
+
+-----
 
 Changing the type of a symbol is not permitted, be it that the same interface of 
 
+-----
+
 These procedures ARE J Core function. Only they have a great impact: they change the diagram.
+
+-----
 
 Possible changes in the diagram may be laid out. There may be limits to the possible reference gotten...
 
 #### Execution order
 
-clockwise starting at the top one or 
-like reading: left to right, top to bottom or 
-tied together, except for the first and last ones
+clockwise starting at the top one or  
+like reading: left to right, top to bottom or  
+tied together, except for the first and last ones  
 Sometimes it doesn’t matter in which order something takes place, in case of which both symbols get the same execution order ordinal. Symbols are tied together parallelly instead of serially then or positioned ‘parallely’ over the clock’s arrow.
 
 Type reference
@@ -8759,9 +8792,9 @@ There is a standard way of translating symbol diagrams to symbol text code. Ther
 - Access controllers
 - Parameters
 - Arithmetic operators
-
+-----
 - Assembly
-
+-----
 - Standard conventions
 
 ### Identifiers
@@ -8792,44 +8825,46 @@ Apple+Pear Fruit Table
 
 < (an object’s Type) operator >
 
-Interface access .
-Member access .
-Sub member
-Sub system access :
-Type access ::
-
-Core : Objects . Event Map :: Alignment . Arbitrary
-
-: Subsystem to subsystem
-Subsystem to type
-Subsystem to interface (interface access means object access)
-Subsystem to member
-type to interface
-type to member
-interface to member
-member to submember
-
-to subsystem
-to type
-to interface
-to member
-to submember
-
-: to subsystem
-:: to type
-; to interface
-. to member
-.. to submember
+- Interface access .
+- Member access .
+- Sub member
+- Sub system access :
+- Type access ::
+-----
+- Core : Objects . Event Map :: Alignment . Arbitrary
+-----
+- : Subsystem to subsystem
+- Subsystem to type
+- Subsystem to interface (interface access means object access)
+- Subsystem to member
+- type to interface
+- type to member
+- interface to member
+- member to submember
+-----
+- to subsystem
+- to type
+- to interface
+- to member
+- to submember
+-----
+- : to subsystem
+- :: to type
+- ; to interface
+- . to member
+- .. to submember
 
 Core : Object :: Event Map ; Aligment .. Arbitrary
 
+-----
+
 Other scheme:
 
-: from subsystem
-:: from type
-. from interface
-. from member to member
-to submember
+- : from subsystem
+- :: from type
+- . from interface
+- . from member to member
+- to submember
 
 Aligment . 
 
@@ -8839,8 +8874,7 @@ I forgot genetive containment, didn’t I. You do supply a capsule, but everythi
 
 I may want it to be an interface, but I want to see it as member access outside.
 
-The thing is... the member of a purely genetive subdivision without programmatic consequences.
-
+The thing is... the member of a purely genetive subdivision without programmatic consequences.  
 Uhhhmmm... yeah... whatever
 
 An example:
@@ -8900,31 +8934,32 @@ I’d have to present the concept in both diagram language and text language, be
 
 Perhaps I should explain on any concept, even when it has no presence in the system because its not necessary.
 
+-----
 
-List diagram elements
-List programming aspects
-Then associate diagram elements with programming aspects and
-Programming aspects with diagram elements.
+- List diagram elements
+- List programming aspects
+- Then associate diagram elements with programming aspects and
+- Programming aspects with diagram elements.
 
-\---
+-----
 
 I adopt the visual basic object way: always an object reference. C++ allows you to declare an object not through a pointer variable, so it is instantiated instantly.
 
 Some objects in Symbol may be tagged so they’re always created.
 
-\---
+-----
 
 Global is a bad term
 
-\---
+-----
 
 I noticed that in writing when I’ve described how it is, I often leave out the why it’s not different. I do that to keep the story from being lengthy. It happens that ask myself the same questions again as I leave out explanations why it’s not like that.
 
 I should consider to keep them in there. But since I want a story that is not lengthy, I should keep them separate, I guess.
 
-< I have to define a system that returns  every possible 
+-----
 
-tie-together of objects. > I SHOULD REALLY CONSIDER THIS.
+< I have to define a system that returns  every possible tie-together of objects. > I SHOULD REALLY CONSIDER THIS.
 
 
 Buh
@@ -8964,7 +8999,7 @@ In conventional object oriented programming a ancestor object always contained m
 
 Restrictions to edit actions.
 
-???That triangles can be freely used to anywhere to group things.???
+???That triangles can be freely used to anywhere to group things.???  
 Similar ordinals group things too.... What to do? Put a triangle there for more clarity?
 
 ### Alternative Views
@@ -9017,13 +9052,10 @@ Two diagram aspects can be turned off: lines and color. You can stop color from 
 
 The encapsulation, lines and color aspects of the diagram can be distributed over the encapsulation, delegation and type/object strucures, each hierarchical system aspect being represented by one hierarchical diagram aspect.
 
-\-----
+-----
 
-Red, green and blue could actually express three hierarchies...
-
+Red, green and blue could actually express three hierarchies...  
 Or tint, blackness en whiteness.
-
-\-----
 
 #### Criterial Diagram Aspects
 
@@ -9047,15 +9079,15 @@ There is a set of attributes for each symbol in the system:
 
 These attributes are mostly critical to system design so it is important to express them in a way in the diagram. You can also match symbols to an arbitrarily formulated criterium, which could be regarded a complex or composed attribute. These criteria could be a value of a single attribute, a combination of attributes, a range of values of a single attribute or combination of attributes or could be related to hierarchy depth.
 
-\----
+-----
 
 __Thought__:
 
-I could have :
-shapes and colors
-values of attributes
-ranges of attributes
-an arbitrary number of values and ranges assigned to any shape or color.
+- I could have :
+- shapes and colors
+- values of attributes
+- ranges of attributes
+- an arbitrary number of values and ranges assigned to any shape or color.
 
 *Waar dit criterium:*
 
@@ -9063,8 +9095,8 @@ Int(EncapsulationDepth / 2) = ChildDepth / 2
 
 *Een (complexe) toepassing van kleur:*
 
-R = 0.3 \* (1 - (EncapsulationDepth / DeepestEncapsulationDepth)) 
-G = 0.6 \*  (EncapsulationDepth / DeepestEncapsulationDepth)
+R = 0.3 \* (1 - (EncapsulationDepth / DeepestEncapsulationDepth))  
+G = 0.6 \*  (EncapsulationDepth / DeepestEncapsulationDepth)  
 B = 0.9 \* (1 - (EncapsulationDepth / DeepestEncapsulationDepth)) 
 
 *Een (complexe) toepassing van vorm:*
@@ -9077,18 +9109,16 @@ Stel dat ik zelfde klassen dezelfde vorm wil toewijzen
 
 Kan ik niet ook namen gebruiken als criterium diagram eigenschappen?
 
-Er is een grotere complexiteit dan ik in eerste instantie dacht.
-
+Er is een grotere complexiteit dan ik in eerste instantie dacht.  
 Wat is de echte rij met kleur, naam en vorm toepassings-mogenlijkeden zonder efficientie van de oplossing in acht te nemen?
 
-\----
+-----
 
 You should be able to highlight symbols with certain simple or complex attributes. Color and shapes can take upon themselves this roll in clarification. You can assign different n-gonic shapes or colors to symbols matching certain criteria. You can easily express a wide range of criteria simultaniously with different colors and shapes
 
 You can also use the color: ‘transparent’. It is almost an insult to call transparent a color because its usefulness by far exceeds that of color. I call transparency a color, because transparency can be applied in exactly the same manner as color. Transparency as a color makes it possible to abstract the diagram. It is a very powerful tool. Abstraction is a mechanism more important than the object oriented paradigma. By using transparency you can hide for instance deep encapsulation depths so that they don’t obscure the big picture. Another very important use of transparency is hiding members of a symbol that have the Reference Access attribute set to private, which means the same as hiding the private members of an object.
 
-(the following paragraph is unclear language)
-
+(the following paragraph is unclear language)  
 Another thing about criterial diagram aspects is that you can assign a highlight method to be invoked *under certain circumstances only*, which means for instance that you only show members that are Protected for Reference when the symbol is Inherited and, more related to the Symbol Environment then the Symbol language, the symbol’s parent is the current symbol. That means just about the same as you can only visually see the protected members of an descendant when editing the ancestor. < That’s simply an extra criterium added to the complex criterium. >
 
 #### Other
@@ -9097,11 +9127,13 @@ On top of the arbitrary assignments of diagram elements to aspects of the system
 
 You can customize a number of things:
 
-\1) You can express the encapsulation and delegation tree structure as a single encapsulation structure in which symbols can overlap:
+1) You can express the encapsulation and delegation tree structure as a single encapsulation structure in which symbols can overlap:
 
 This may result in unclarity:
 
 The rule of thumb is: a symbol is encapsulated only if its shape is totally encapsulated < That so? >
+
+-----
 
 In case of equal ordinals the symbols ARE executed but the order of execution is irrelevant. Even when the order of execution is irrelevant the ordinal is the only pure way to control the positioning of the symbols.
 
@@ -9109,38 +9141,40 @@ In case of equal ordinals the symbols ARE executed but the order of execution is
 Glossary
 --------
 
-Parent
-Child
-Reference
-Referrer
-Object
-Type
-Sister
-Container
-Contents
-Scope Level
-Level Down
-Level Up
-Circular Reference
-Base
-Descendant
-Ancestor
-Inheritance
-Delegation
-Encapsulation
-Property
-Event
-Method
-Procedure
-Event Procedure
-Variable
-... bla bla bla some other time
+- Parent
+- Child
+- Reference
+- Referrer
+- Object
+- Type
+- Sister
+- Container
+- Contents
+- Scope Level
+- Level Down
+- Level Up
+- Circular Reference
+- Base
+- Descendant
+- Ancestor
+- Inheritance
+- Delegation
+- Encapsulation
+- Property
+- Event
+- Method
+- Procedure
+- Event Procedure
+- Variable
+- ... bla bla bla some other time
 
 
 Brainstorm
 ----------
 
 A number that's always above zero could be a data type too. Or a number that's always between certain bounds. Or whatever.
+
+-----
 
 Boolean and comparison algebra:
 
@@ -9151,30 +9185,45 @@ Not is both a logical and a comparison operator
 Not CurrentRow < Int(TopRow) == CurrentRow >= Int(TopRow)
 < > (CurrentRow < Int(TopRow)) == CurrentRow >= Int(TopRow)
 
+-----
+
 Moet je niet gewoon symbolen kunnen added in runtime. Anders kun je misschien geen arrays maken.
+
+-----
 
 Je hebt in Vb 6 en 7 in een With clause get 'Anti-With' net zoals de anti-moniker in Com of beter bekend de hogere directory in een bestands systeem '..'
 
-Consider making:
-+=, -=, /=, etcetera:
+-----
+
+Consider making:  
++=, -=, /=, etcetera:  
 =+, =-
 
-The problem with that is that + and - can't be unary operators unless you put a space between the = and the + or -:
-= +
+The problem with that is that + and - can't be unary operators unless you put a space between the = and the + or -:  
+= +  
 = -
+
+-----
 
 A parent block is sorta like a globality in that way.
 
 Globality and triangle are alike. They 
 
-I might want to switch the square and pentagon symbols.
+-----
+
+I might want to switch the square and pentagon symbols.  
 A square would then become a globality. A pentagon would become an execution point and then execution would look like neurons between which electrons are shot...
 
-And a 'block' as I described, would actually look like a square.
-A procedure will probably not get its own symbol anyway. It would just be an object with an execution point.
+-----
+
+And a 'block' as I described, would actually look like a square.  
+A procedure will probably not get its own symbol anyway. It would just be an object with an execution point.  
+
+-----
+
 An arithmetic operation on something as an argument:
 
-" / 2"
+" / 2"  
 " + 3"
 
 That operation can be executed on something
@@ -9187,48 +9236,43 @@ For instance tString = Left(tString, - 3)
 
 It should cut away the last three characters
 
+-----
 
 Variables declared inside a parent block in a procedure are accessible directly by the child blocks. Variables declared inside a child block are inaccessible to a parent block.
 
+-----
+
 You might not want to be able to reference a types full interface, but only the sub interfaces, so it would be more like com. Oh, this actually seems an access control issue.
 
+-----
 
-Accessing public objects is no longer ambiguous if you use access symbols
-just outside the border of
-the parent
+Accessing public objects is no longer ambiguous if you use access symbols just outside the border of the parent
 
+-----
 
-A pentagon's direct children can all reference eachother and can be
-referenced by all ancestors (containmentwise ancestors). Globality is
-only one function of a pentagon. Actually a pentagon is a lot like
-globality, where there are multiple levels of globality and that exists in
-today's systems.
+A pentagon's direct children can all reference eachother and can be referenced by all ancestors (containmentwise ancestors). Globality is only one function of a pentagon. Actually a pentagon is a lot like globality, where there are multiple levels of globality and that exists in today's systems.
 
+-----
 
 Conditional arguments:
 
-not only being capable of assigning single values to a parameter, but also
-being able to
-specify ranges. For instance  
+not only being capable of assigning single values to a parameter, but also being able to specify ranges. For instance  
 
 Parts(aIDFilter => 100)
 
-Should I make special types for this or should this be generally
-applicable. Actually, 
-the author has to decide what values may be ranges and which may not. But I
-think it must be
-as common as assignment for simple data types.
+Should I make special types for this or should this be generally applicable. Actually, the author has to decide what values may be ranges and which may not. But I think it must be as common as assignment for simple data types.
 
-In normal programming languages these operators are only used for
-comparison. In the case here
-you assign a range by specifying comparison values.
+In normal programming languages these operators are only used for comparison. In the case here you assign a range by specifying comparison values.
 
+-----
 
 You can use colors coloring diagram elements to denote which diagram aspect represents which system aspect.
 
+-----
 
 Generating the stack operations preceding and concluding function calls is called prolog and epilog code in C
 
+-----
 
 In the C documentation a distinction is made between Lexical Grammar and Phrase Structure Grammar. 
 
@@ -9237,12 +9281,19 @@ In the C documentation a distinction is made between Lexical Grammar and Phrase 
 - Phrase structure grammar:
     - Expressions, declarations, statements, external definitions
 
+-----
 
 Abstract Symbol. How to express overview concepts, like: there are methods that delegate to methods in children, but put restrictions on the methods.
 
+-----
+
 Methods abstract other methods
 
+-----
+
 The grouping of lines by caller, callee, etcetera
+
+-----
 
 Maybe a private access symbol should be inside the capsule somehow.
 
@@ -9250,13 +9301,16 @@ perhaps change the symbol
 
 de lijnen van aparte public symbols aan elkaar plakken en line naar object naar samengesmolten public symbol doen wijzen
 
-Tree like diagram with convergences should be part of Symbol I guess.
-100258621(14:04 PM) : 
+-----
+
+Tree like diagram with convergences should be part of Symbol I guess.  
+100258621(14:04 PM) :  
 Maybe by giving symbol aspects to it, I can refine the tree like diagram language
 
+-----
 
-Incremental compilation
-Debugging
+Incremental compilation  
+Debugging  
 Syntax Checking
 
 ### Notation
@@ -9319,6 +9373,8 @@ Or:
 
 Method Object . Method (Word Argument 1, Double Word Argument 2 ) Real 32 Return Value
 
+-----
+
 Since I’m working with multiple arguments as well as multiple return values, I may as well use a separate argument type that is both an argument as well as a return value (not to be mistaken for a reference argument).
 
 Arguments are then In parameters. Return values are Out parameters. The last type described would be InOut parameters, more nicely called Thru (Through) parameters.
@@ -9339,6 +9395,7 @@ In: Argument1, Argument2, Thru: Argument3, Argument4, Out: Argument3, Argument4
 
 I’ll stick to that for now..
 
+-----
 
 Thru arguments are not to be confused by reference arguments. The values of Thru arguments are actually put on the stack and read from the stack and written to the stack by the procedure. Reference arguments are usually In paramters and not written. The reference argument is a mere number that points to an object. The object a reference argument points at can be written and read, but this object doesn’t reside on the stack. Reference arguments in other languages were often used as a trick to use multiple return values or to have arguments that are both given to the procedure and then returned to the caller possibly altered: thru arguments.
 
@@ -9376,12 +9433,14 @@ If the value is between A and B then
 
 it's more or less like you're making a simple grammar to be able to notate a function call more dynamically.
 
-\----
+-----
 
-100258621(03:22 AM) : 
+100258621(03:22 AM) :  
 and also, but not. Hmm those kinds of expressions may do for odd boolean operators too... explore
-100258621(06:22 AM) :
 
+-----
+
+100258621(06:22 AM) :
 
 nouns are objects, verbs are methods and adverbs are properties. Hmmm... the study of language and grammar will extend the symbol language.
 
@@ -9399,47 +9458,70 @@ Seeing what's obsolete, so unreferenced.
 
 Seeing everything that's directly or indirectly referenced by something
 
-
-\-
+-----
 
 Symbol has to be revised. It doesn’t distinct types and interfaces well. It doesn’t work well with interfaces. Like how do I pass a pointer one interface of an object to a method?
 
-\-
+-----
 
 Giving properties instant changed events.
 
-\-
+-----
 
 The scope of a variable defines which parts of your code are aware of its existence.
 
-\-
+-----
 
 If there are multiple procedures and variables with the same name, Visual Basic takes the value of the more local variable, which in this case, is the Form1 variable.
 
-\-
+-----
 
 References to the name Temp within the procedure would access the local variable; references to Temp outside the procedure would access the public variable. The module-level variable can be accessed from within the procedure by qualifying the variable with the module name
-\-
-Static Function RunningTotal(num)
-\-
-Const conReleaseDate = #1/1/95
-\-
-Public Const conPi = 3.14, conMaxPlanets = 9, \_
-conWorldPop = 6E+09
-\-
-Const conPi2 = conPi \* 2
-\-
-Constants can be procedure level
-\-
-Private I As Integer, Amt As Double
 
+-----
+
+```
+Static Function RunningTotal(num)
+```
+
+-----
+
+```
+Const conReleaseDate = #1/1/95
+```
+
+-----
+
+```
+Public Const conPi = 3.14, conMaxPlanets = 9, _
+conWorldPop = 6E+09
+```
+
+-----
+
+```
+Const conPi2 = conPi \* 2
+```
+
+-----
+
+```
+Constants can be procedure level
+```
+
+-----
+
+```
+Private I As Integer, Amt As Double
+```
+
+-----
 
 Using the ParamArray keyword allows you to specify that a procedure will accept an arbitrary number of arguments. This allows you to write functions like Sum:
 
+-----
 
-
-
-
+```
 Select Case testexpression
 [Case expressionlist1
 [statementblock-1]]
@@ -9450,11 +9532,13 @@ Select Case testexpression
 .
 [Case Else
 [statementblock-n]]
+
 End Select
+```
 
 Each expressionlist is a list of one or more values.
 
-\-
+-----
 
 There can be multiple return out variables. For that one procedure could also be represented by multiple objects, not? When you could separately read the output, I should manage that you can get the output objects at will, but only when the input changes the procedure is reexecuted when you get an output object...
 
@@ -9525,10 +9609,10 @@ Old Overview of Lines
 
 - Procedures can be tied only to procedures
 - Objects can be tied only to objects
-
+-----
 - An object symbol can have only one line of each type: an object line, a type line and an interface line
 - A procedure symbol can have only one line: a call line *or* a reference line.
-
+-----
 - A symbol’s line points *away* from the symbol.
 - The other connected lines point *to* the symbol.
 
@@ -9536,10 +9620,10 @@ Old Overview of Lines
 
 - A square can ony have a call line if it’s directly inside another square.
 - The call line must first exit the containing square.
-
+-----
 - If a solid procedure line can't be a call line then it is a reference line
 - If it’s a reference line then you use a solid line unless it directly exits a square
-
+-----
 - Any square can have a reference line
 
 A procedure symbol can have one of four roles: - definition, - clause, - call, - reference
@@ -9568,61 +9652,54 @@ A procedure symbol can have one of four roles: - definition, - clause, - call, -
 #### Overview of Lines: Alternate Notations
 
 - Double lined shapes:
-
     - The line can be left out in these cases, but doesn’t have to.
-
+    -----
     - Double solid line object symbol:
         - It’s an object reference or
         - It’s an object reference to an object in the parent
     - Triple solid line object symbol:
         - It’s an object reference to an object in the grandparent
     - Etcetera
-
+    -----
     - Dashed line object symbol:
         - It has an external type or
         - It has a type that’s inside the parent
     - Double dashed line object symbol:
         - It has a type that’s inside the grandparent
     - Etcetera
-
+    -----
     - Dotted line object symbol:
         - It has an external interface or
         - It has an interface that’s inside the parent
     - Double dotted line object symbol:
         - It has an interface that’s inside the grandparent
     - Etcetera
-
+    -----
     - Double solid line square:
         - It is a call
         - It’s a call to a procedure in the parent
     - Triple solid line square:
         - It’s a call to a procedure in the grandparent
     - Etcetera
-
+    -----
     - Dashed square:
         - It’s a procedure reference
         - It’s a procedure reference to a procedure in the parent
     - Double dashed square:
         - It’s a procedure reference to a procedure in the grandparent
     - Etcetera
-
 - Double lines:
-
     - In these cases, alternate shape borders are usually not used
-
+    -----
     - Double line:     line points two capsules outwards
     - Triple line:     line points three capsules outwards
-
 - Line convergence:
-
     - If there are many lines then they can converge. They can be grouped by how many borders they will exit and by what they will enter.
     - The grouping can be multi dimensional . 
     - And grouping can take place at multiple borders
     - The grouping between borders can become more precise or more general
     - You can name the groups of lines by what they exit or enter. Sort of line a bus lane can be named by its destination.
-
 - Ambiguity in alternate notations:
-
     - Double shape borders can seem ambiguous to double encapsulation
     - Double lines can seem ambiguous to two separate lines.
     - Line grouping can make ambiguity of double lines even worse.
@@ -9632,9 +9709,8 @@ You can decide on your own what kind of notation you want to use, but the progra
 ### Original
 
 - Direction
-
     - Lines have a direction
-
+    -----
     - An access symbol can totally determine the direction
     - Access symbol at one end
     - Access symbol at the other end
@@ -9643,176 +9719,160 @@ You can decide on your own what kind of notation you want to use, but the progra
         - The direction goes *both ways*
         - The direction doesn’t matter in this view
         - Other rules determine the direction
-
+    -----
     - You can leave out access symbols if other rules determine the direction. The precedence of rules is:
-    - *Acces Symbols*: Access symbol determines direction
-    - *Outwards*: The direction is outwards by default
-    - *You Sooner Exit a Procedure than an Object*
-    - *Exit the Most Borders:* If multiple borders are exited and entered then the line exits the most borders and enters the least borders. This rule is mostly not relied on.
+        - *Acces Symbols*: Access symbol determines direction
+        - *Outwards*: The direction is outwards by default
+        - *You Sooner Exit a Procedure than an Object*
+        - *Exit the Most Borders:* If multiple borders are exited and entered then the line exits the most borders and enters the least borders. This rule is mostly not relied on.
     - Without precedence the rules are summarized as:
-    - Access symbol is decisive
-    - You sooner to exit than enter
-    - You sooner to exit a procedure than an object
+        - Access symbol is decisive
+        - You sooner to exit than enter
+        - You sooner to exit a procedure than an object
 
     - Bidirection:
-    - If no rule determines direction then the direction is either not expressed in the diagram or the direction goes both ways.
-    - The direction certainly goes both ways if both ends have an access symbol.
-
+        - If no rule determines direction then the direction is either not expressed in the diagram or the direction goes both ways.
+        - The direction certainly goes both ways if both ends have an access symbol.
 - Connections
-
     - Procedures can be tied only to procedures
     - Objects can be tied only to objects
-
+    -----
     - An object symbol can have only one line of each type: an object line, a type line and an interface line
     - A procedure symbol can have only one line: a call line *or* a reference line.
-
+    -----
     - A symbol’s line points *away* from the symbol.
     - The other connected lines point *to* the symbol.
-
 - Procedure Calls and References
-
     - A square can ony have a call line if it’s directly inside another square.
     - The call line must first exit the containing square.
-
+    -----
     - If a solid procedure line can't be a call line then it is a reference line
     - If it’s a reference line then you use a solid line unless it directly exits a square
-
+    -----
     - Any square can have a reference line
-
+    -----
     - A procedure symbol can have one of four roles: - definition, - clause, - call, - reference
-
 - Redirection
-
     - Object symbol redirection
-    - Target symbols
-    - Circularity
-        - By recurrence
-        - By bidirection
-
+        - Target symbols
+        - Circularity
+            - By recurrence
+            - By bidirection
+    -----
     - Procedure redirection
-    - A call cannot be called or refererenced
-    - So a *call* line can only be at the beginning of the redirection
-    - So you can only redirect procedures with reference lines
-
+        - A call cannot be called or refererenced
+        - So a *call* line can only be at the beginning of the redirection
+        - So you can only redirect procedures with reference lines
 - Access symbol placement
-
     - If a line crosses borders it first exits borders and then enters borders. You can't mix exits and entrances.
     - If an access symbol is drawn to denote direction is is by default put in the section between the exits and entrances, so not neccessarily with the eventually entered symbol.
     - In other words: the access symbol is usually put in front of the border that is first entered.
     - If this access symbol will go out of view then the access symbol can be placed where it’s visible.
     - It is placed in front of a border that is gone entered or exited.
-
 - Alternate notations
-
     - Double shape borders:
-
         - The line can be left out in these cases, but doesn’t have to.
-
+        -----
         - Double solid line object symbol:
-        - It’s an object reference or
-        - It’s an object reference to an object in the parent
+            - It’s an object reference or
+            - It’s an object reference to an object in the parent
         - Triple solid line object symbol:
-        - It’s an object reference to an object in the grandparent
+            - It’s an object reference to an object in the grandparent
         - Etcetera
-
+        -----
         - Dashed line object symbol:
-        - It has an external type or
-        - It has a type that’s inside the parent
+            - It has an external type or
+            - It has a type that’s inside the parent
         - Double dashed line object symbol:
-        - It has a type that’s inside the grandparent
+            - It has a type that’s inside the grandparent
         - Etcetera
-
+        -----
         - Dotted line object symbol:
-        - It has an external interface or
-        - It has an interface that’s inside the parent
+            - It has an external interface or
+            - It has an interface that’s inside the parent
         - Double dotted line object symbol:
-        - It has an interface that’s inside the grandparent
+            - It has an interface that’s inside the grandparent
         - Etcetera
-
+        -----
         - Double solid line square:
-        - It is a call
-        - It’s a call to a procedure in the parent
+            - It is a call
+            - It’s a call to a procedure in the parent
+        -----
         - Triple solid line square:
-        - It’s a call to a procedure in the grandparent
+            - It’s a call to a procedure in the grandparent
         - Etcetera
-
+        -----
         - Dashed square:
-        - It’s a procedure reference
-        - It’s a procedure reference to a procedure in the parent
+            - It’s a procedure reference
+            - It’s a procedure reference to a procedure in the parent
         - Double dashed square:
-        - It’s a procedure reference to a procedure in the grandparent
+            - It’s a procedure reference to a procedure in the grandparent
         - Etcetera
-
     - Double lines:
-
         - In these cases, alternate shape borders are usually not used
-
+        -----
         - Double line: 
-        - Line points two capsules outwards
+            - Line points two capsules outwards
         - Triple line: 
-        - line points three capsules outwards
-
+            - line points three capsules outwards
     - Line convergence:
-
         - If there are many lines then they can converge. They can be grouped by how many borders they will exit and by what they will enter.
         - The grouping can be multi dimensional . 
         - And grouping can take place at multiple borders
         - The grouping between borders can become more precise or more general
         - You can name the groups of lines by what they exit or enter. Sort of line a bus lane can be named by its destination.
-
     - Ambiguity in alternate notations:
-
         - Double shape borders can seem ambiguous to double encapsulation
         - Double lines can seem ambiguous to two separate lines.
         - Line grouping can make ambiguity of double lines even worse.
-
     - You can decide on your own what kind of notation you want to use, but the programming environment adopts standard ways to draw a diagram. It automatically uses different notations in different views on the system.
 
 ### Original List
 
 - Alternate notation for symbols: dashed squares...
-
+-----
 - Lines have a direction
 - Direction is usually outward
 - If both ends go outward, then there are precedence rules
     - An object symbol's line is sooner to exit a procedure than to exit an object
 - If precedence rules can't determine the direction then 
     - An access symbol determines the direction
-< If direction is determined with none of the rules then the direction is either insignificant or the direction goes both ways. An access symbol on both ends expresses that the direction REALLY goes both ways. >
+- < If direction is determined with none of the rules then the direction is either insignificant or the direction goes both ways. An access symbol on both ends expresses that the direction REALLY goes both ways. >
 - The direction goes both way
-    - Or
+- Or
 - Access symbols can be at both ends which makes the line go both ways
 - An object symbol can have only one line of each type
 - A procedure symbol can have only one line. So it can't have a call line AND a reference line
 - the other connected lines point to the symbol, not away
-
+-----
 - Redirection
 - circularity
     - by recurrence
     - by ambiguity
 - target symbols
-
+-----
 - procedures can be tied only to procedures
 - objects can be tied only to objects
-
+-----
 - A square can only have a call line directly exiting another square
 - A solid procedure line that can't be a call line is treated as a reference line
 “If it is a reference line and a solid line can’t be a call line, a solid line is used” >
 - You can't call or reference a call
 - So you can only redirect procedures with reference lines
 - So a call line can only be at the beginning of the redirection
-
+-----
 - If a line crosses borders it first exits borders and then enters borders. You can't mix exits and entrances
 - If an access symbol is drawn to denote direction is is by default put in the section between the exits and entrances, so not neccessarily with the eventually entered symbol.
-- If this access symbol will go out of view then the
-The access symbol is put in front of the border that is entered.
+- If this access symbol will go out of view then
+- The access symbol is put in front of the border that is entered.
 
 Create default, ready to easily work with, settings for objects. ‘Advanced’ programmers can alter them as they know better. Programmers might want to create their own default that overrides the premade default. Or use no initialization at all. I’ll think about that later.
 
-\-
+-----
 
 Arrays and collections are types that contain objects of a variable type, but not generic on each action. In visual basic you can’t create custom forms of such things. In C++ .... In Com you would HAVE to give the type a certain interface for it to have this genericity and it’s not really handy. In Symbol you can easily change a symbol’s type in run time so you can create custom types that have these array capabilities. This makes it possible for an array to be a regular symbol object in a library and not a special built in type.
 
+-----
 
 I must write documentation on how to design applications. Designing that is not user interface centered and why my type of layering is better than user interface centered and other layering of application design.
 
@@ -9901,7 +9961,7 @@ Attempt to Organize Lines Chapter
 - Genericity
     - Type Genericity
     - Interface Genericity
-        - Type Interface Genericity
+    - Type Interface Genericity
     - Explicit Isn’t Fixed
 - Symbols can Overlap
     - Containment for Divergence, Lines for Convergence
@@ -9916,6 +9976,8 @@ Attempt to Organize Lines Chapter
 ### Forming New Subdivision
 
 #### Mark Main Grouping
+
+(Original Word document had color coding. The color codings were meant to regroup topics. Each color would represent a new main topic.)
 
 - Direction:
     - Access Symbols
@@ -10020,6 +10082,7 @@ Attempt to Organize Lines Chapter
         - Exit the Most Borders
     - Bidirection
         - Access Symbol Placement
+-----
 - Connection~
     - Procedures to Procedures, Objects to Objects
     - Line ownership
@@ -10063,6 +10126,7 @@ Attempt to Organize Lines Chapter
         - Target Symbols
         - Call cannot be called or referenced
         - \* Any tracing?
+-----
 - Accesses
     - An access is where a call line enters an object symbol
     - Accesses
@@ -10072,6 +10136,7 @@ Attempt to Organize Lines Chapter
         - But not every object symbol the reference line crosses
         - \* Why not for the call line then?
     - Complex call example
+-----
 - Ways to Access
     - < Neigbor > Access
     - Child Access
@@ -10079,6 +10144,7 @@ Attempt to Organize Lines Chapter
     - Interface Access
     - Clause Access
     - Globalities, Interface and Clauses
+-----
 - Implicit Calls
     - Explicit Calls
     - Implicit Calls
@@ -10088,18 +10154,19 @@ Attempt to Organize Lines Chapter
     - Type Genericity
     - Interface Genericity
     - Type Interface Genericity
-- Explicit Isn’t Fixed
+    - Explicit Isn’t Fixed
 - < There is a distinction between notation methods and system rules >
+-----
 - Peels
     - Shape Peels
     - Line Peels
     - Ambiguity In Peels
+-----
 - Symbols can Overlap
     - Containment for Divergence, Lines for Convergence
     - Triangles For Arbitrary Grouping < Non-Object Triangles >
     - Procedures can Overlap
-
-
+-----
 - Move to other chapters:
 - Procedure Interface
 - All Object Symbols that are the same Objects have the Same Line Targets
@@ -10126,6 +10193,7 @@ Attempt to Organize Lines Chapter
         - The __*roles*__ that symbols get when connecting them with lines
         - Redirection and __*targets*__ (hmmm... which adds more roles)
         - Events (this important subject is in jeopardy of being swallowed by a tree of super sections
+    - (Original Word document had some color coding here. The color codings would indicate to which main topic something might belong.)
     - Connection~
         - Procedures to Procedures, Objects to Objects
         - Line ownership
@@ -10174,9 +10242,9 @@ Attempt to Organize Lines Chapter
     - An access is where a call line enters an object symbol
     - Each access requires tracing object and type
     - After accesses, the reference line must be followed
-    - Each reference line redirection requires tracing object and type
-    - But not every object symbol the reference line crosses
-    - \* Why not for the call line then?
+        - Each reference line redirection requires tracing object and type
+        - But not every object symbol the reference line crosses
+        - \* Why not for the call line then?
     - Complex call example
 
 - Ways to Access
@@ -10237,7 +10305,7 @@ In the next organization I’ve also reorganized Line Rules.
     - Object symbol can have object, type and interface line
     - Procedure symbol can have an interface line and acall *or* reference line
 - Target Symbols (Redirection and __*targets*__ (hmmm... which adds more roles)
-- Redirection
+    - Redirection
     - Object Symbol Redirection
         - Target Symbols
         - Circularity
@@ -10466,11 +10534,12 @@ Maybe I should abolish the word type completely. It’s just the word that is �
 - Use ‘Type’ where you use ‘Type’
 - Use ‘Diamond’ where you use ‘Diamond’
 - Use ‘Line’ where you use ‘Line’
+-----
 - Introduce the word variable in the ‘Introduction’ chapter.
 - Just as in procedures, you could make certain members of a type required, while others are optional. You have to fill in the required members on creation of the object. This should be there for the same reason as required parameters are there in a procedure: the function of the object just doesn’t make sense unless you write the required members. The programmer is made extra aware of that by making the members required.
 
 You can also let J Data maintain the containment automatically, based on mutual ancestors. I should be able to do that automatically in Symbol too. Should make a note about that in the Symbol documentation.
 
-\-----
+-----
 
 Ik moet een soort Symbol shorthand maken, om met pen en papier te gebruiken, zonder dat je het diagram telkens opnieuw moet tekenen of de kluts kwijt raakt.
