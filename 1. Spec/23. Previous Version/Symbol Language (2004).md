@@ -86,11 +86,11 @@ The parent of a child can also be called the *direct parent*, to emphasize that 
 
 Ancestry can also be called *object structure* in a lot of cases. But object structure really involves more than just ancestry and ancestry really involves more than just object structure, but you will hear more on that later.
 
-Other terms of family ties can be used just as well. Words such as cousins, siblings or uncle are allowed. Sibbling would be objects directly in the same parent.
+Other terms of family ties can be used just as well. Words such as cousins, siblings or uncle are allowed. Sibling would be objects directly in the same parent.
 
 ![](images/Symbol%20Language%20(2004).008.png)
 
-Cousins are objects whose parents are sibblings.
+Cousins are objects whose parents are siblings.
 
 ![](images/Symbol%20Language%20(2004).009.png)
 
@@ -122,7 +122,7 @@ Here’s a list of basic terms:
 |          Derived | Base       |
 |       Derivation |            |
 |      Inheritance |            |
-|         Sibbling |            |
+|          Sibling |            |
 |           Cousin |            |
 |            Uncle |            |
 |      Etcetera... |            |
@@ -142,7 +142,7 @@ Object A
 
 A type gets an identifier, but also the separate objects get their own identifiers.
 
-The same name can be used for different symbols. Which of the *Johns* you’re talking about depends on its context (where it resides). Sibblings usually don’t have the same name, because they reside in the same context. Only in a very special case sibblings can have the same name.
+The same name can be used for different symbols. Which of the *Johns* you’re talking about depends on its context (where it resides). Siblings usually don’t have the same name, because they reside in the same context. Only in a very special case siblings can have the same name.
 
 ### Procedures
 
@@ -200,7 +200,7 @@ Procedures can also be called *operations*, *functions* or *routines* and there 
 
 ### Many Don’t Get It
 
-Many think it’s not important to have a good subdivision in sub ideas and to come up with good names. They think that something just needs to work and then it’s ok. Consider what happens when you take away good naming and good subdivision: all you’re left with is procedures calling eachother for no apparent reason until they resolve in machine instructions, the names of which are fortunately already picked by Intel(\*. The clarity of code is dependant on the clarity of names and subdivision. The less clear the names and subdivision are, the less sense the code will make.
+Many think it’s not important to have a good subdivision in sub ideas and to come up with good names. They think that something just needs to work and then it’s ok. Consider what happens when you take away good naming and good subdivision: all you’re left with is procedures calling each other for no apparent reason until they resolve in machine instructions, the names of which are fortunately already picked by Intel(\*. The clarity of code is dependant on the clarity of names and subdivision. The less clear the names and subdivision are, the less sense the code will make.
 
 Sometimes I spend most time thinking about a subdivision of code and about names, not testing if something is doing what I want it to do. I can spend ten minutes figuring out a name. If I don’t give it a good name, the code is not going to make sense.
 
@@ -248,7 +248,7 @@ Interfaces are distinguished by triangles.
 
 The employee is an advisor to the customer and to another employee a coworker.
 
-Where to start when you read a diagram like this? You first read the containment structure. You start at the largest container, then the smallers ones. After that you look at the relations made by the connecting lines.
+Where to start when you read a diagram like this? You first read the containment structure. You start at the largest container, then the smaller ones. After that you look at the relations made by the connecting lines.
 
 You don’t always start with the largest container. Sometimes one symbol is highlighted. Then this symbol is what the diagram is about and it's all about the aspects of this symbol. Then you start at the highlighted symbol and look around. There’s no one way of doing it.
 
@@ -260,17 +260,17 @@ Objects, be it triangles, are an excellent way to give different types mutual ch
 
 Even though you could speak of *inheritance* concerning the whole of the ancestry, originally, in other programming languages, only what the triangle does is called inheritance: a sub object’s characteristics merge with its container.
 
-I still employ the term inheritance when I mean an object’s merging with a container. I can also use the term inheritance in normal containment if I see it fit. Repectively, the word *base* is also used as a term for a triangular sub object, but if I see it fit I will use it for a *circular* object too.
+I still employ the term inheritance when I mean an object’s merging with a container. I can also use the term inheritance in normal containment if I see it fit. Respectively, the word *base* is also used as a term for a triangular sub object, but if I see it fit I will use it for a *circular* object too.
 
 ### Programming Language
 
-A computer program is described in a *programming language*. Formerly all programming languages were textual, just like normal language. The text that describes a program is called the program’s *code*. Symbol code consists maily of *diagrams*, though. Nevertheless, the diagrams are called *code* all the same.
+A computer program is described in a *programming language*. Formerly all programming languages were textual, just like normal language. The text that describes a program is called the program’s *code*. Symbol code consists mainly of *diagrams*, though. Nevertheless, the diagrams are called *code* all the same.
 
 ### Symbol
 
 Symbol Language comes in two main variations: text code and diagram code. Both variations can fully express a system. Sometimes a system looks clearer in a diagram and in other cases it looks clearer in text. The *Sigma Data Language* is also integrated into Symbol Language, as well as others.
 
-One great aspect of diagram code is that apart from expressing a system in full, you can also have an abstract view on the system, leaving out details or hightlighting specific details. This way the code itself can function as the analysis of it.
+One great aspect of diagram code is that apart from expressing a system in full, you can also have an abstract view on the system, leaving out details or highlighting specific details. This way the code itself can function as the analysis of it.
 
 
 Object Basics
@@ -302,7 +302,7 @@ Dotted lines, dashed lines and solid lines.
 
 Every circle or triangle represents an object.
 
-Every of those objects has a type. The type determines the contents of the symbol. Every object of the same type has the same contents and the contents of these objects changes simultaniously as you edit it.
+Every of those objects has a type. The type determines the contents of the symbol. Every object of the same type has the same contents and the contents of these objects changes simultaneously as you edit it.
 
 A type has one interface by default: the default interface, which is formed by every public member of the type. A type can also have multiple interfaces, which are groups of its members. The default interface includes all members of these separate interfaces.
 
@@ -330,7 +330,7 @@ You can make two symbols be of the same type by connecting them with a dashed li
 
 Both symbols are of the same type, but they are separate objects.
 
-Every symbol of the same type has the same contents. The type can be edited by editing either symbol and their contents will change simultaniously.
+Every symbol of the same type has the same contents. The type can be edited by editing either symbol and their contents will change simultaneously.
 
 A dashed line in this case is also called a *type line*, because it denotes which symbols are the same type.
 
@@ -350,7 +350,7 @@ This dotted kind of line is also called an *interface line*, because it denotes 
 
 This way you can give a type an already defined interface.  That for instance allows objects that can work with a certain interface, to link to objects of the new type.
 
-Editing the interface can be kind of dangerous, because if you remove an interface member, you remove all the implementations of the member in all the types that have that interface. If you do edit an interface, then the *interface* of the connected symbols changes simultaniously, but *not* the implementation.
+Editing the interface can be kind of dangerous, because if you remove an interface member, you remove all the implementations of the member in all the types that have that interface. If you do edit an interface, then the *interface* of the connected symbols changes simultaneously, but *not* the implementation.
 
 #### Two Interfaces
 
@@ -496,7 +496,7 @@ Or by drawing it with an alternate color:
 
 ![](images/Symbol%20Language%20(2004).028g.png)
 
-When objects are tied together with object lines, they represent the same object, but this object does not neccesarily have to be created. But when it *is* created, the connected symbols will represent the same object. In the C++(\* programming language, this is not possible.
+When objects are tied together with object lines, they represent the same object, but this object does not necessarily have to be created. But when it *is* created, the connected symbols will represent the same object. In the C++(\* programming language, this is not possible.
 
 When you create a symbol the ‘normal’ way, you create it having its own type.
 
@@ -539,10 +539,10 @@ I mention this separately here, because you won’t see this notation very often
 Procedure Basics
 ----------------
 
-< a diamond is also notated pointier than a square. So this is be a diamond too:
+<  
+a diamond is also notated pointier than a square. So this is be a diamond too:
 
-[Picture with a pointy square]
-
+[Picture with a pointy square]  
 \>
 
 ### Notation Elements
@@ -675,7 +675,6 @@ A procedure has an interface too, consisting of all public contents of the proce
 *Procedure with an external interface:*  
 ![](images/Symbol%20Language%20(2004).058.png)
 
-
 The interface source for a procedure can only be a procedure, not an object. Also: a procedure can *not* have multiple interfaces. The effect of allowing these two things can be imagined, but the usefulness of these structural possibilties is slim, while it would add a lot more rules to the Symbol Language.
 
 For the time being, triangles can reside in a procedure, but only for the purpose of grouping procedure members. You can’t give these triangle any lines, because that would suggest that the procedure adopts all characteristics of an object.
@@ -712,19 +711,19 @@ In that sense the lines have no particular direction. However, the direction of 
 A *line dissector*, also called an *access symbol*, can determine the direction of a line. It sort of denotes which symbol is pointed at:
 
 | ![](images/Symbol%20Language%20(2004).062a.png) | ![](images/Symbol%20Language%20(2004).062b.png)|
-|:----------------------------------------------:|:---------------------------------------------:|
-|               *B is pointed to.*               |               *A is pointed to.*              |
-|    *The direction goes to the right `=>`.*     |    *The direction goes to the left `<=`.*     |
-|         *In this case A points to B.*          |         *In this case B points to A.*         |
+|:-----------------------------------------------:|:----------------------------------------------:|
+|               *B is pointed to.*                |               *A is pointed to.*               |
+|     *The direction goes to the right `=>`.*     |     *The direction goes to the left `<=`.*     |
+|          *In this case A points to B.*          |         *In this case B points to A.*          |
 
 You can see the line dissector as the door that lets you access a symbol. Therefore in the first example, __B__ is accessed: __B__ is pointed to by __A__, and in the second example __A__ is accessed: __A__ is pointed to by __B__.
 
 In another situation the access symbol is placed as follows:
 
 | ![](images/Symbol%20Language%20(2004).062c.png) | ![](images/Symbol%20Language%20(2004).063.png) |
-|:----------------------------------------------:|:----------------------------------------------:|
-|    *The direction goes to the right `=>`.*     |    *The direction goes to the left `<=`.*      |
-|                 *A points to B.*               |                *B points to A.*                |
+|:-----------------------------------------------:|:----------------------------------------------:|
+|     *The direction goes to the right `=>`.*     |    *The direction goes to the left `<=`.*      |
+|                *A points to B.*                 |                *B points to A.*                |
 
 In the last picture, the access symbol isn’t placed near __A__, but closer to the border of __C__. Why this is so is explained later. For now you can see the line dissector as the *door* to __C__ that lets you access __A__.
 
@@ -853,7 +852,7 @@ The outwards rule says that you exit a border rather than enter it. The exit the
 
 ![](images/Symbol%20Language%20(2004).075.png)
 
-*A points to B becase because you exit more than you enter.*
+*A points to B because because you exit more than you enter.*
 
 This rule only applies if no other rule has already determined the direction. In many cases the rule is ignored, and an access symbol is used, but there *are* situations in which it’s common to determine the direction from this rule, and there an access symbol is often left out.
 
@@ -890,7 +889,7 @@ When a line crosses symbol borders, it first exits borders and then enters borde
 
 *First come the exits a and b, and then come the entrances c, d and e.*
 
-If an access symbol is drawn to denote direction, it is by default put in the section between the exits and entrances. So not neccessarily close to the eventual symbol pointed at. In other words: the access symbol is usually put in front of the border that is first entered.
+If an access symbol is drawn to denote direction, it is by default put in the section between the exits and entrances. So not necessarily close to the eventual symbol pointed at. In other words: the access symbol is usually put in front of the border that is first entered.
 
 ![](images/Symbol%20Language%20(2004).083.png)
 
@@ -964,7 +963,7 @@ But only by containing a procedure related to another or being contained *in* a 
 
 ![](images/Symbol%20Language%20(2004).092.jpeg)
 
-That way symbols can relate to one another by not being tied together nor by one being contained in the other, but sherely by the relations that their ancestors or descendants have:
+That way symbols can relate to one another by not being tied together nor by one being contained in the other, but sheerly by the relations that their ancestors or descendants have:
 
 ![](images/Symbol%20Language%20(2004).094.jpeg)
 
@@ -1017,7 +1016,7 @@ But if it has a reference line it is regarded no more than a reference or call t
 *A is the reference, B is the definition:*  
 ![](images/Symbol%20Language%20(2004).098.jpeg)
 
-*A is the procedure reference, B is the definition:*
+*A is the procedure reference, B is the definition:*  
 ![](images/Symbol%20Language%20(2004).099.jpeg)
 
 #### Multiple Redirection and Final Targets
@@ -1084,7 +1083,7 @@ The last symbol pointed to by an object line is the object.
 
 ![](images/Symbol%20Language%20(2004).105.jpeg)
 
-This kind of redirectioning is called an *object trace*.
+This kind of redirecting is called an *object trace*.
 
 Delegating the object aspect is the main type of object redirection.
 
@@ -1174,7 +1173,7 @@ Also note that when redirecting to an execution, the definition is always the sa
 
 ##### Tracing is Not Always Hard
 
-If an object symbol has no object line or type line, then finding the target object and type is much simpler, because no redirectioning at all takes place. The symbol is its own object and type.
+If an object symbol has no object line or type line, then finding the target object and type is much simpler, because no redirecting at all takes place. The symbol is its own object and type.
 
 ![](images/Symbol%20Language%20(2004).028f.png)
 
@@ -1262,7 +1261,7 @@ If the closed circle consists of only squares, the circularity only represents t
 
 #### Terms
 
-There’s a lot to be said about the terminoligy around target symbols. I’ve put all this in this section. I kept these discussions out of the original text of ‘Target Symbols’, because it would obscure the main point.
+There’s a lot to be said about the terminology around target symbols. I’ve put all this in this section. I kept these discussions out of the original text of ‘Target Symbols’, because it would obscure the main point.
 
 ##### Target Symbol
 
@@ -1342,7 +1341,7 @@ If a symbol has an object line then it adopts the object of the line target. __A
 
 If a symbol doesn’t have an object line, though, it represents its own object. The symbol is an *original object*.
 
-Synomyms for the terms *delegated* and *original* are allowed. *Delegated* has synonyms such as *diverted*, *redirected*, etcetera. All are valid. Synonyms for *original object*, can be expressions such as ‘the symbol *is its own object*’.
+Synonyms for the terms *delegated* and *original* are allowed. *Delegated* has synonyms such as *diverted*, *redirected*, etcetera. All are valid. Synonyms for *original object*, can be expressions such as ‘the symbol *is its own object*’.
 
 |                      |                              |
 |----------------------|------------------------------|
@@ -1419,7 +1418,7 @@ The interface can be determined by the target of the interface line, type line o
 | __Delegated interface__ | Interface determined by a line line |
 |                         | (interface, type or object line)    |
 
-During execution the interface can change from being delegated to original and back. The original interface isn’t lost as soon as you delegate the interface. When you annull the delegation, then the original interface reappears. It was only temporarily hidden. Mostsymbols don’t define an original interface, so not every object symbol holds original interface systematics.
+During execution the interface can change from being delegated to original and back. The original interface isn’t lost as soon as you delegate the interface. When you annul the delegation, then the original interface reappears. It was only temporarily hidden. Most symbols don’t define an original interface, so not every object symbol holds original interface systematics.
 
 The use of delegation of the interface is to fix the interface and to use an already defined interface.
 
@@ -1506,7 +1505,7 @@ In both cases the interface is delegated. If a procedure symbol has no line at a
 
 ![](images/Symbol%20Language%20(2004).154.jpeg)
 
-During execution the interface can change from being delegated to original and back. The original interface isn’t lost as soon as you delegate the interface. When you annull the delegation, then the original interface reappears. It was only temporarily hidden. Most procedure symbols don’t define an original interface, so most symbols don’t holds original interface systematics.
+During execution the interface can change from being delegated to original and back. The original interface isn’t lost as soon as you delegate the interface. When you annul the delegation, then the original interface reappears. It was only temporarily hidden. Most procedure symbols don’t define an original interface, so most symbols don’t holds original interface systematics.
 
 The *use* of delegation of the interface is to fix the interface of a procedure and to use an already defined procedure interface.
 
@@ -1634,7 +1633,7 @@ The topics of genericity show that these two pictures aren’t synonyms. In the 
 
 #### Delegated to Original in a Circularity
 
-When you annull a symbol’s type line, it usually regains its original type. All symbols pointing to the reappeared original type, now also have a different type.
+When you annul a symbol’s type line, it usually regains its original type. All symbols pointing to the reappeared original type, now also have a different type.
 
 In a circularity it’s different. When you delegate the type to a circularity, the whole circularity represents the type.
 
@@ -1915,7 +1914,7 @@ The solid border needs to be doubled, because otherwise you don’t see that inf
 
 ![](images/Symbol%20Language%20(2004).202.png)
 
-When denoting the mere existance of a line, the destination of the line is undetermined, but it’s is usually just outside the parent. This assumption is analogous to the first line direction rule: the outwards rule. A line simply most commonly points outwards and most commonly only crosses a single border.
+When denoting the mere existence of a line, the destination of the line is undetermined, but it’s is usually just outside the parent. This assumption is analogous to the first line direction rule: the outwards rule. A line simply most commonly points outwards and most commonly only crosses a single border.
 
 ###### Symbol’s Line Crosses Many Borders
 
@@ -2017,8 +2016,8 @@ The little blue mark with the type line denotes that the line expresses the amou
 
 Here is a list of a few ambiguity risks when using peels:
 
-- Multiple shape peel types may suggest the existance of another symbol.
-- Line peels may suggest the existance of multiple lines.
+- Multiple shape peel types may suggest the existence of another symbol.
+- Line peels may suggest the existence of multiple lines.
 
 Ambiguity risks will be widely covered in the ‘Diagram Metrics’ in the book ‘Symbol Language Advanced’.
 
@@ -2280,7 +2279,7 @@ A detailed notation of this assignment is beyond the scope of this chapter. This
 
 #### ----------------- < >
 
-#### Input, Output and Thoughput
+#### Input, Output and Throughput
 
 ##### Output by Reference
 
@@ -2348,7 +2347,7 @@ You can let the separate object seem to be the argument itself, by using a peel 
 
 The creation will still be visible, but you’ve excluded the line, without loosing the information that it’s really an external object. 
 
-Ofcourse you don’t have to show the implicit creation.
+Of course you don’t have to show the implicit creation.
 
 ![](images/Symbol%20Language%20(2004).249.jpeg)
 
@@ -2377,7 +2376,7 @@ Except for passing procedure reference to a procedure.
 
 #### Accessing Arguments During Execution
 
-Apart from writing in the prolog and reading in the epilog, there’s a third period in which you can access an argument: during execution. You can only access the arguments of a diamond *in execution*. The caller of the diamond is frozen, till the execution completes, so the caller doesn’t have any chance of accessing the arguments during execution. However, everything inside the executor is in motion. The executor itself can freely access its arguments, ofcourse, but also anything it calls, could access its arguments, if given a reference. But, as I said, the *caller* of an execution can’t access the arguments during execution.
+Apart from writing in the prolog and reading in the epilog, there’s a third period in which you can access an argument: during execution. You can only access the arguments of a diamond *in execution*. The caller of the diamond is frozen, till the execution completes, so the caller doesn’t have any chance of accessing the arguments during execution. However, everything inside the executor is in motion. The executor itself can freely access its arguments, of course, but also anything it calls, could access its arguments, if given a reference. But, as I said, the *caller* of an execution can’t access the arguments during execution.
 
 The diagrammatic effect of this is the following. A member can be accessed by the diamond that contains it, and by all its sub diamonds:
 
@@ -2420,9 +2419,9 @@ Direction can be determined by assumption of the most common situation. Therefor
 | ![](images/Symbol%20Language%20(2004).256.png) | ![](images/Symbol%20Language%20(2004).257.png) |
 |:----------------------------------------------:|:----------------------------------------------:|
 
-For state assignments it’s adised to always show the access symbol. 
+For state assignments it’s advised to always show the access symbol. 
 
-### ------------------------------------------------------< !!! Was here replacing call lines with diamond symbols and trying to finish up the first chapters. >
+### ------------------------------------------------------ < !!! Was here replacing call lines with diamond symbols and trying to finish up the first chapters. >
 
 ### Execution Basics
 
@@ -2512,7 +2511,7 @@ Multi-threading, which is ..., can also make you able to access a diamond in exe
 
 Two sibling procedures are executing at the same time, in different threads, which makes it possible for one executing procedure to access the other. Thread control makes it possible to avoid such volatile situations.
 
-(the fact that the diamonds are drawn with thicker lines above, says that they are both in execution. If they wouldn’t be thicker drawn, then the diagram above doesn’t explicitly show that there is a multithread situation. Regarding it single threadedly, the situation above is just the bigger diamond executing first, after which the smaller diamond uses its return value.)
+(the fact that the diamonds are drawn with thicker lines above, says that they are both in execution. If they wouldn’t be thicker drawn, then the diagram above doesn’t explicitly show that there is a multi-threaded situation. Regarding it single-threadedly, the situation above is just the bigger diamond executing first, after which the smaller diamond uses its return value.)
 
 < What happens when two threads try to initiate the same diamond or a thread tries to initiate a diamond that’s already executing. I want that one figured out >
 
@@ -2529,7 +2528,7 @@ In the situation above it seems the procedure could access the object anyway (be
 
 When the caller (the parent diamond) sets the line, then the caller decides which object the call will refer to.
 
-So lines going out of a diamond aren’t neccesarily lines set by the caller.  
+So lines going out of a diamond aren’t necessarily lines set by the caller.  
 Procedures can’t set line going *into* the square themselves. Those are always set by the caller.
 
 It’s important that the procedure itself sets lines, because the line targets of procedure members often serve as the output values of the procedure.
@@ -2551,7 +2550,7 @@ Squares formally can’t have outward lines, except for static members. There ar
 
 #### Passing a procedure reference
 
-When you pass a procedure referece to a child procedure:
+When you pass a procedure reference to a child procedure:
 
 ![](images/Symbol%20Language%20(2004).271.jpeg)
 
@@ -2575,7 +2574,7 @@ The clauses can freely access anything of __Procedure A__, so __Procedure B__ is
 - Diamond pointing to another diamond
 - Recursive calls... hmmm... advanced issue. Hoef je je klomp niet over te breken. 
     - < Maar lijkt een Execution basics. Hmmm... de term Execution Basics is niet goed genoeg dan. De term basics is niet goed. Execution Facts... nah. >
-- Wanneer wordt een diamond meerdere keren geexecute?
+- Wanneer wordt een diamond meerdere keren geëxecute?
 
 ##### 1
 
@@ -2595,7 +2594,7 @@ If eventually the original caller is called again, with one of its calls in prog
 
 ##### 4
 
-(*Implicit* embedded procedure reference causes a separate implicit call)
+(*Implicit* embedded procedure reference causes a separate implicit call.)
 
 ##### 5
 
@@ -2619,7 +2618,7 @@ Only when you call a clause or an embedded procedure reference, the line doesn�
 
 ### Implicit Notations
 
-< you can call an implicit call a parameter reference too. Mention it so you show that there’s a big difference between parameter reference and argument reference >
+< you can call an implicit call a parameter reference too. Mention it so you show that there’s a big difference between parameter reference and argument reference. >
 
 - Implicit call and Explicit call
 - Implicit return value reference
@@ -2647,7 +2646,7 @@ The diamond missing when referencing the square member is called the implicit ca
 
 Even though the Symbol code *really* *defines* a reference to a square member, when the code is executed, it’s treated as having an extra diamond. Allowing referencing a square member can simplify the notation in many cases, that’s why it’s allowed.
 
-The implied diamond always becomes the sibbling of the reference to a member. In a more encapsulative situation, this:
+The implied diamond always becomes the sibling of the reference to a member. In a more encapsulative situation, this:
 
 ![](images/Symbol%20Language%20(2004).279.jpeg)
 
@@ -2709,7 +2708,7 @@ in the second picture you see the explicit call. The third picture adds the expl
 
 ###### Reference to Other Out Parameters
 
-An object reference to a procedure can only be a reference to the procedure’s return value. If you want to reference other out paramters, you have to reference them explicitly.
+An object reference to a procedure can only be a reference to the procedure’s return value. If you want to reference other out parameters, you have to reference them explicitly.
 
 ![](images/Symbol%20Language%20(2004).291.jpeg)
 
@@ -2807,7 +2806,7 @@ If the diagram above is an abstract view on the system, there might only be made
 
 < P: same system as above, now physically showing the two calls >
 
-If you want to reference multiple output parameters of a single call, you have to expliclity display the call and reference the objects that are inside the call symbol. By referencing the parameters of the call, you only use one call.
+If you want to reference multiple output parameters of a single call, you have to explicitly display the call and reference the objects that are inside the call symbol. By referencing the parameters of the call, you only use one call.
 
 ![](images/Symbol%20Language%20(2004).298.png)
 
@@ -2895,7 +2894,7 @@ The explicit notation that solves this is the following:
 The child diamond is inserted as a substitute for the higher diamond it refers to. This offers a solution because the parent of the child diamond will exist when the child exists. < This might be an issue for multiple execution of a diamond. It also raises the question what happens when you consult something of the righter diamond. Is the bigger diamond executed first? What? > That’s rule two for getting to the explicit notation of parameter reference.
 
 < I have doubts about this third rule. I think this case might be illegal. I need to find the rule on what makes it illegal and how you see the illegality of it in the implicit notation >  
-There’s one more problem. The explicit notation introduced so fat has a flaw: the object has two line targets! If a situation as such occurs, the directions of all flawful non-argument references are inverted:
+There’s one more problem. The explicit notation introduced so fat has a flaw: the object has two line targets! If a situation as such occurs, the directions of all flawed non-argument references are inverted:
 
 ![](images/Symbol%20Language%20(2004).306.png)
 
@@ -2990,11 +2989,11 @@ Randomly referencing call members. I thought you could only do it just before an
 HMMM... in sommige gevallen execute de diamond misschien meerdere keren zonder unconditional jumps en zonder z’n parent meerdere keren te executen... dat moet dan wel een specifieke uitzonderlijke situatie zijn die precies te definiëren is >
 
 Goeie zin?:  
-Call finished: references to diamond contents anulled.
+Call finished: references to diamond contents annulled.
 
 ##### Execution Basics or Execution Order
 
-So diamonds represent executions and calls, but not necessarily indivual executions. Multiple diamonds can represent the same execution. Actuall: only the same execution at one time, because you can execute the diamond multiple times, only no two executions at the same time.
+So diamonds represent executions and calls, but not necessarily individual executions. Multiple diamonds can represent the same execution. Actually: only the same execution at one time, because you can execute the diamond multiple times, only no two executions at the same time.
 
 ### In, Out and Thru Argument Notation
 
@@ -3051,7 +3050,7 @@ The resulting sequence of code lines corresponds to the execution order required
 
 ### Brainstorm
 
-< By the way, argument in, out and thru notatioin doesn’t cover the in, out, though notation in procedure definitions. If I will even create that >
+< By the way, argument in, out and thru notation doesn’t cover the in, out, though notation in procedure definitions. If I will even create that >
 
 #### Summary of Old Subdivision
 
@@ -3117,9 +3116,9 @@ The resulting sequence of code lines corresponds to the execution order required
 - Exclusive establishment problemen moeten in System Aspects worden behandeld
 - Definitions of the terms parameter and argument
 - Recursive calls... hmmm... advanced issue. Hoef je je klomp niet over te breken.
-- Wanneer wordt een diamond meerdere keren geexecute?
+- Wanneer wordt een diamond meerdere keren geëxecute?
 - Diamond pointing to another diamond
-- Line of connected diamonds change simultaniously
+- Line of connected diamonds change simultaneously
 - Initiation of execution:
     - Containment in other diamond
     - Consult of a parameter.
@@ -3207,7 +3206,7 @@ The resulting sequence of code lines corresponds to the execution order required
 
 - ?:
     - Events ~ Mixed topic it seems. Not a main one, anyway.
-    - Line of connected diamonds change simultaniously
+    - Line of connected diamonds change simultaneously
 
 -----
 
@@ -3236,7 +3235,7 @@ The resulting sequence of code lines corresponds to the execution order required
 
 The problems proposed in this text have to do with:
 
-- The terms prolog and epilog, prologous and epilogous
+- The terms prolog and epilog
 - The term executor and execution
 - No implicit notation for state assignment
 - Parameter assignments involve consults of parameters in prolog of procedure call, while consults are usually always in epilog.
@@ -3248,7 +3247,7 @@ The problems proposed in this text have to do with:
 - Parameter writes in prolog
 - Parameter reads (/consults) in epilog 
 - No implicit notation for state assignment. An orderly explicit notation will do.
-- Assignments of parameters suggests reading parameters. However, these assignments do take place in the prolog, even though they suggest reads. Assignments are different that way. < > The assignment destination consult is not seens as a consult. < > Consult of a parameter as assignment destination does not require execution of the parameter holder.
+- Assignments of parameters suggests reading parameters. However, these assignments do take place in the prolog, even though they suggest reads. Assignments are different that way. < > The assignment destination consult is not seen as a consult. < > Consult of a parameter as assignment destination does not require execution of the parameter holder.
 - Executor represents one execution per call on definition.        
     - Implicit calls are not made for diamond contents reference < >
 
@@ -3265,7 +3264,7 @@ If it were to become a connection between symbols, like implicit line assignment
 ![](images/Symbol%20Language%20(2004).328.jpeg)  
 *(Implicit assignments)*
 
-De assignment calls gedragen zich niet normaal, want consult van de argumenten van __A__ veroorzaken geen executie. Een soort passieve parameter consult vind plaats door de assignment calls, in het proloog van __A__. Bedenk wel: het zijn systeeem procedures: niet normaal.
+De assignment calls gedragen zich niet normaal, want consult van de argumenten van __A__ veroorzaken geen executie. Een soort passieve parameter consult vind plaats door de assignment calls, in het proloog van __A__. Bedenk wel: het zijn systeem procedures: niet normaal.
 
 ![](images/Symbol%20Language%20(2004).328.jpeg)![](images/Symbol%20Language%20(2004).329.jpeg)
 
@@ -3278,7 +3277,7 @@ Niet het een executor, anders verwar je het met een aparte executie! Een system 
 
 \* dit zou A triggeren als het niet een line van een system procedure call was.
 
-Assignmet procedures = system procedure, eerste argument is het __This__ argument.
+Assignment procedures = system procedure, eerste argument is het __This__ argument.
 
 ![](images/Symbol%20Language%20(2004).331.jpeg)
 
@@ -3357,7 +3356,7 @@ __References between siblings is uncommon.__
 Nothing active can reside directly in an object.
 
 ![](images/Symbol%20Language%20(2004).335.jpeg)   
-__Unconditional jump = Call to sibling active clause.__  
+__Unconditional jump = Call to sibling active clause.__   
 If you are familiar with the term *unconditional jump*, them this is the equivalent of that in Symbol. Can only take place directly inside a procedure.
 
 #### Other: Explore Later
@@ -3378,20 +3377,22 @@ In an explicit call you always see the the call displayed as a separate diamond.
 
 __This IS the text that lead me to wanting a diamond symbol instead of a call line.__
 
-< Why on earth not, actually? Ok, you can’t do it in other languages, but why on earth can’t you do it here. Oh. When you reference a call, it makes the call line function as a reference line rather than a call line. If you want this to be different, a reference to call would become a call, which is not something you want to happen in your system. The reference target would get control over if the source will be a reference or if the source will execute. The source would have no say in that. Unacceptable. So a candidate for an alternative rule for A Call Can’t be Called or Referenced is: if you reference a call, its call line is treated as a reference line.  
+<  
+Why on earth not, actually? Ok, you can’t do it in other languages, but why on earth can’t you do it here. Oh. When you reference a call, it makes the call line function as a reference line rather than a call line. If you want this to be different, a reference to call would become a call, which is not something you want to happen in your system. The reference target would get control over if the source will be a reference or if the source will execute. The source would have no say in that. Unacceptable. So a candidate for an alternative rule for A Call Can’t be Called or Referenced is: if you reference a call, its call line is treated as a reference line.  
 If you call the reference to a call... 
 
 Een call line is eigenlijk een reference line, maar als de parent square execute, dan execute ook de call. Hmmm... het is bijna of het allemaal reference lines zijn en sommige squares executen nou eenmaal. Shit! Dat is ook zo! Clauses moeten ook kunnen executen en ik zeg nu dat iets alleen execute als het een call line heeft!!! Hmmm... shit, een call is een tag, niet een line!!!!!!!!!!!!
 
-Een call een aparte line maken is net zo iets als een triangle een aparte line maken. Hetzelfde mankement. Dan lijkt het logisch, dat een call een apart symbool krijgt, niet een aparte line. Shit. Welk symbool. >
+Een call een aparte line maken is net zo iets als een triangle een aparte line maken. Hetzelfde mankement. Dan lijkt het logisch, dat een call een apart symbool krijgt, niet een aparte line. Shit. Welk symbool.  
+\>
 
-#### =>Elsewhere
+#### => Elsewhere
 
 __*Procedure Interface Restrictions*__  
 < >  
-A procedure has an interface too, consisting of all public contents of the procedude: public objects (in, out or thru) and public procedures (clauses, calls and references), which can also be individually referenced and called.
+A procedure has an interface too, consisting of all public contents of the procedure: public objects (in, out or thru) and public procedures (clauses, calls and references), which can also be individually referenced and called.
 
-The interface source for a procedure cannot be an object symbol. Also: a procedure cannot have multiple interfaces. The effect of allowing these things can be imagined, but the usefulness of these structural possibilties is slim, while it would add a lot more rules to the Symbol Language.
+The interface source for a procedure cannot be an object symbol. Also: a procedure cannot have multiple interfaces. The effect of allowing these things can be imagined, but the usefulness of these structural possibilities is slim, while it would add a lot more rules to the Symbol Language.
 
 For the time being, triangles can reside in a procedure, but only for the purpose of grouping procedure members. You can’t give these triangle any lines, because that would suggest that the procedure adopts all characteristics of an object.
 
@@ -3428,7 +3429,7 @@ There *are* techniques for a child to communicate with its parent. There are two
 
 #### Nog
 
-Er is naast referentie naar procedure en referentie naar object nog een manier voor Events. Je moet namelijk ‘multi-cast’ events mogelijk maken en daar vereist een collection van event sinks die allemaal simulataan aangeroepen worden.. work it out
+Er is naast referentie naar procedure en referentie naar object nog een manier voor Events. Je moet namelijk ‘multi-cast’ events mogelijk maken en daar vereist een collection van event sinks die allemaal simultaan aangeroepen worden.. work it out
 
 
 Execution Control
@@ -3996,7 +3997,7 @@ Select Case X =
 End Select
 ```
 
-< Maybe I should just first explain the concept and then introduce all them various notations. Mayve this text notation should be explained totally separately anyway. I only needed it to give an example of an If here, man. >
+< Maybe I should just first explain the concept and then introduce all them various notations. Maybe this text notation should be explained totally separately anyway. I only needed it to give an example of an If here, man. >
 
 A Basic Select statement:
 
@@ -4159,11 +4160,11 @@ Access Ways
 
 < Do neighbor access and child access protect the independence of types? As a substitute for the old, false rule: ‘Can’t call upward in the ancestry’? >
 
-There’s several ways to access a procedure. The most common way is for procedure’s of the same object to call upon eachother. The second most common way is for a parent to access a child’s procedures. A global object is accessible from anywhere within the globality and there are more ways. I will discuss these different ways of access one by one in this section.
+There’s several ways to access a procedure. The most common way is for procedure’s of the same object to call upon each other. The second most common way is for a parent to access a child’s procedures. A global object is accessible from anywhere within the globality and there are more ways. I will discuss these different ways of access one by one in this section.
 
 ### Neighbor Access
 
-< Discuss procedures within the same object accessing eachother >
+< Discuss procedures within the same object accessing each other. >
 
 ### Child Access
 
@@ -4225,13 +4226,13 @@ The child globality can then be accessed like a circle or a triangle, but refers
 
 In other languages, globalities usually contain a large amount of code, because it’s not easy to handle many globalities. In symbol it’s easier to manage globalities and whenever you need the effect of having a small, local, globality (or software component), you can easily use a globality.
 
-This is also an invitation to making a more refined division in software components. You cannot only easily work with a division in more components. You can also embed software components. And you can refinedly control referencing existing instances of software components.
+This is also an invitation to making a more refined division in software components. You cannot only easily work with a division in more components. You can also embed software components. And you can finely control referencing existing instances of software components.
 
 The child globality in the picture above can only access things global inside itself. It cannot access the global things of its parent globality.
 
-#### Pentagons not Exchangable with Triangles and Circles
+#### Pentagons not Exchangeable with Triangles and Circles
 
-A pentagon is not exchangable with triangles and circles as much as triangles and circles are exchangable. Global has the side effect that things become accessible where otherwise inaccessible. If you suddenly replace the pentagon with a circle or triangle it would mean that things formerly global are no longer global and all sorts of accesses in the globality object are suddenly invalid. For that a pentagon stays a pentagon and a reference to it can only be a pentagon itself.
+A pentagon is not exchangeable with triangles and circles as much as triangles and circles are exchangeable. Global has the side effect that things become accessible where otherwise inaccessible. If you suddenly replace the pentagon with a circle or triangle it would mean that things formerly global are no longer global and all sorts of accesses in the globality object are suddenly invalid. For that a pentagon stays a pentagon and a reference to it can only be a pentagon itself.
 
 #### Extra Indication
 
@@ -4302,7 +4303,7 @@ So its like the borders of clauses can be ignored in outward access.
 
 So usually only parents can access their ancestor’s things.
 
-Globalities, interface implentations and clauses make exceptions on those rules.
+Globalities, interface implementations and clauses make exceptions on those rules.
 
 The public ancestors of a globality are accessible from anywhere within the globality, the borders of triangles can be ignored and a clause can directly access anything in its descendant clauses and its procedure definition.
 
@@ -4368,7 +4369,7 @@ Overloading means that you give several procedures the same name, while they hav
 
 The operator procedure + for instance is richly overloaded. Operator + always has two parameters: the two operands. The two operands can be of many different types and each type configuration requires a separate procedure. Which procedure is called is determined by the types of objects assigned to the parameters.
 
-In diagram code you may see the difference between a call to one procedure or the other. In text code, however, as well as in certain abstract views on the diagram the effect is more subtle and you won’t see the difference between a call to one procedure or the other. This is actualy a nice, and wanted effect.
+In diagram code you may see the difference between a call to one procedure or the other. In text code, however, as well as in certain abstract views on the diagram the effect is more subtle and you won’t see the difference between a call to one procedure or the other. This is actually a nice, and wanted effect.
 
 Given is the text code below:
 
@@ -4388,7 +4389,7 @@ The following would be the diagram code without mentioning the types of objects 
 
 ![](images/Symbol%20Language%20(2004).371.png)
 
-The outer circle is Type 1. It declars the three basic object X, Y and Z. It also contains the procedure Procedure 1, in which are performed two plus operations to which references to the basic objects are passed.
+The outer circle is Type 1. It declares the three basic object X, Y and Z. It also contains the procedure Procedure 1, in which are performed two plus operations to which references to the basic objects are passed.
 
 However, when you do mention the types of objects and procedure calls, you see that two different procedures are called.
 
@@ -4402,7 +4403,7 @@ All three diagrams above describe the same code, only in one diagram some parts 
 
 The + procedure has a special notation: an operator notation, which is a customized representation of a procedure call and its parameters. This method is discussed in the ‘Text Code’ and ‘Language Integration’ chapters.
 
-The names of procedures that overload eachother are always equal. The configuration of a procedure’s public objects determines which procedure is called. This configuration of public object includes: the object count, object types and object names.
+The names of procedures that overload each other are always equal. The configuration of a procedure’s public objects determines which procedure is called. This configuration of public object includes: the object count, object types and object names.
 
 Usually the count and types of parameters are varied, but if two overloaded procedures only differ in parameter *names*, in text code it is required to *name* the object when you call the procedure.
 
@@ -4468,7 +4469,7 @@ When the merging procedures reside in *exactly the same container*, they cannot 
 
 < Picture of that (29): the legal situation and a picture with a red cross through it showing a forbidden way of calling and showing that the call would look the same in text code >
 
-That ensures that diagram code and text code are exchangable and can be mutually used.
+That ensures that diagram code and text code are exchangeable and can be mutually used.
 
 < Merging should be a technique, not embedded in the language. When it’s about calling both procedures of the triangles, you have to shadow those procedures with a procedure that calls both. >
 
@@ -4717,7 +4718,7 @@ If you see the system interface as an object, though, you can regard the system 
 
 ### Get and Set are Inseparable
 
-__Get__ and __Set__ always accompany eachother. That is: there’s no point to *getting* something if you aren’t going to *assign* it to something else. Conversely, you can’t *set* something unless you’ve *gotten* something in the first place.
+__Get__ and __Set__ always accompany each other. That is: there’s no point to *getting* something if you aren’t going to *assign* it to something else. Conversely, you can’t *set* something unless you’ve *gotten* something in the first place.
 
 *Getting* a value is done solely to immediately *assign* it to something else. __Get__ and __Set__ are stuck together with superglue. There is no intermediate state of a value between the __Get__ and the __Set__. There’s no manipulating a *gotten* value before you *set* it to something else.
 
@@ -4795,9 +4796,15 @@ The distinction has to do with access control. For instance: the symbol get migh
 
 ### Access Control on System Procedures
 
+...
+
 ### Variable and Constant
 
+...
+
 ### Redefining System Procedures
+
+....
 
 ### Exclusive Establishment
 
@@ -4809,11 +4816,19 @@ The distinction has to do with access control. For instance: the symbol get migh
 
 ### State
 
+....
+
 ### Dimensions
+
+....
 
 ### Storage of Symbols, Line Targets and Objects
 
+....
+
 ### Brainstorm
+
+...
 
 #### Summary of Old Subdivision
 
@@ -4827,7 +4842,7 @@ That introduction:
     - Setting lines
     - Setting State
 - Automatic system aspect procedures calls
-- Get and Set always accompany eachother
+- Get and Set always accompany each other
 - State assignment
     - Conversion
 - Copy, Access and Redirection purposes
@@ -4874,7 +4889,7 @@ That introduction:
     - Showing only part of the system interface
         - System interface members don’t have system procedures themselves and you can’t redirect them with lines
         - Seeing the system interface as having a system type.
-- __Get and Set Always Accompany Eachother__
+- __Get and Set Always Accompany Each Other__
 - __Get Purposes__
     - Get
         - Copy
@@ -4904,7 +4919,7 @@ That introduction:
     - Conversion
 - __Dimensions__
 - __Storage of Symbols, Line Targets and Objects__
- 
+-----
 - __Final Issues__
     - Immutable at Run Time
     - Symbol Roles ?
@@ -4917,7 +4932,7 @@ That introduction:
 
 - System Aspects 
 - System Procedures
-- Get and Set Always Accompany Eachother
+- Get and Set Always Accompany Each Other
 - Get Purposes
 - Access Control of System Procedures 
 - Variable and Constant 
@@ -4962,9 +4977,9 @@ Are implicit calls mostly an alternative notation for get set actions?
 - __State__
 
 __Symbol__ returns the id of the symbol itself.  
-__Object__ returns (the id of) the target of the object line  
-__Type__ returns the target of the type line and  
-__Interface__ returns the target of the interface line  
+__Object__ returns (the id of) the target of the object line.  
+__Type__ returns the target of the type line.  
+__Interface__ returns the target of the interface line.  
 __Target Object__, __Target Type__ and __Target Interface__ return respectively the id of the previously discussed *target* object, *target* type and *target* interface.
 
 __State__ is special and returns a copy of the object as it were, which is a copy of all the data the object stores. This state must be immediately assigned to another object, which is usually of the same type.  
@@ -4985,7 +5000,7 @@ Some aspects of a symbol can also be *set*. By doing so you change the system (a
 
 By setting a symbol’s __Object__, you change the target of the object line of the symbol. The same way, you change the target of the type line by setting the __Type__ and the target of the interface line by setting the __Interface__. The __State__ can also be set. You can also remove a line completely by assigning __Nothing__ to the __Object__, __Type__ or __Interface__.
 
-A programmer commands when an __Object__, __Type__, __Interface__ or __State__ is *set*. *Getting* is not always done on direct command of a programmer. When a programmer wants to call a member of an object, he may *indirectly* cause a lot of __Gets__ to be done. < > On each access that the call makes, the target object and target type are figured out in one string of redirectioning < >. On each of those redirections an __Object Get__ or __Type Get__ is called. When a programmer calls __Target Object Get__ or __Target Type Get__, the same string of redirections is executed, causing automatic calls to __Object Get__ and __Type Get__.
+A programmer commands when an __Object__, __Type__, __Interface__ or __State__ is *set*. *Getting* is not always done on direct command of a programmer. When a programmer wants to call a member of an object, he may *indirectly* cause a lot of __Gets__ to be done. < > On each access that the call makes, the target object and target type are figured out in one string of redirecting < >. On each of those redirections an __Object Get__ or __Type Get__ is called. When a programmer calls __Target Object Get__ or __Target Type Get__, the same string of redirections is executed, causing automatic calls to __Object Get__ and __Type Get__.
 
 The programmer can also initiate __Gets__ himself. This is always done paired with storing the gotten value somewhere, for instance in a variable. So a __Get__ directly initiated by a programmer is always accompanied with a __Set__.
 
@@ -5097,9 +5112,9 @@ __Symbol__, __Target Object__, __Target Type__ and __Target Interface__ only hav
 
 Now you can see that the system procedures are actual Symbol procedures (except that they don’t have system procedures themselves). You can do with them the things discussed above: you can change their access controllers. Some of these procedures can get multiple access controllers for different purposes (System procedures are the only procedures that have this capability.). The Object, Type, Interface and State’s Gets and Sets can be redefined by filling the procedures with code.
 
-Notice that what you fill in in the Type Get procedure, determines the contents of the symbol in the ‘normal’ representation, or *type representation*, because the type represenation shows the members of the symbol’s type.
+Notice that what you fill in in the Type Get procedure, determines the contents of the symbol in the ‘normal’ representation, or *type representation*, because the type representation shows the members of the symbol’s type.
 
-The system representation of a symbol has no lines.  The lines of the *type representation* are actually determined by what Get procedures return. Therefore, a symbol is no more than a bunch of system procedures  
+The system representation of a symbol has no lines.  The lines of the *type representation* are actually determined by what Get procedures return. Therefore, a symbol is no more than a bunch of system procedures.  
 <  
 Interesting, but not entirely true, because it suggests you can determine thw whole system by filling in system procedures, while you can’t directly change the ancestry or change the shapes of symbols. The contents of system procedures determine the lines. The system representation is like seeing the setup of the symbol machine.  
 \>
@@ -5110,7 +5125,7 @@ Procedure symbols also have an system representation:
 
 #### Simultaneous System Representation and Type Representation
 
-You can also view the system representation along with the normal representation. System procedures are called, just like other procedures are called and their being called is mixed with calls to regulare procedures, so you have to be able to see both the system procedures and type procedures at the same time.
+You can also view the system representation along with the normal representation. System procedures are called, just like other procedures are called and their being called is mixed with calls to regular procedures, so you have to be able to see both the system procedures and type procedures at the same time.
 
 The following notation is used for this:
 
@@ -5137,7 +5152,7 @@ I will now discuss the same complex call as before, but now denoting which syste
 
 ![](images/Symbol%20Language%20(2004).392.png)
 
-We start at *a*, the procedure which contains a call, located near the center of the diagram. It calls b, but before that it first acceses c and then i.
+We start at *a*, the procedure which contains a call, located near the center of the diagram. It calls b, but before that it first accesses c and then i.
 
 c . i . b Is the expression that calls b. The period (.) is an operator, which, as will be explained later, is a procedure call.
 
@@ -5266,7 +5281,7 @@ However, if a target object symbol is destroyed, other references will not point
 
 In Com, the object remains as long as there are referrers. Symbol just has a more refined methodology.
 
-Another difference in methodology is that if an object is destroyed, non created symbols still refer to eachother (see picture).
+Another difference in methodology is that if an object is destroyed, non created symbols still refer to each other (see picture).
 
 <  
 How do you mimic Com methodology?  
@@ -5279,7 +5294,7 @@ Creation is *not* a special State assignment. State assignment fills an existing
 
 ### Set Example
 
-Here I give the diagrams of how system procedures are called to set a line at design time, change it at run time and anull it at run time.
+Here I give the diagrams of how system procedures are called to set a line at design time, change it at run time and annul it at run time.
 
 When you set lines at design time, you’re actually putting code into the Create procedure of the mutual descendant.
 
@@ -5313,7 +5328,7 @@ When debugging at any moment a line is changed, you’ll see the source and targ
 
 ![](images/Symbol%20Language%20(2004).406.png)
 
-You can also take away the object line completely by assigning Nothing as the symbol’s object, or *anulling* the line:
+You can also take away the object line completely by assigning Nothing as the symbol’s object, or *annulling* the line:
 
 *Change:*
 
@@ -5332,7 +5347,7 @@ What’s actually done is that values from one object are copied to the other ob
 - An object’s state includes its children’s lines.
 - The states of all its ancestor *created target objects* are also part of the state.
 
-The states of *non*-target object descendents are *not* part of the state. Those symbols point to other symbols. Their line targets *are* incorporated in the state.
+The states of *non*-target object descendants are *not* part of the state. Those symbols point to other symbols. Their line targets *are* incorporated in the state.
 
 #### Conversions
 
@@ -5361,7 +5376,7 @@ I also need a basic explanation about the consequences of giving system procedur
 ### Brainstorm
 
 < >  
-I cannot seem to be able to give this sentence a place:   
+I cannot seem to be able to give this sentence a place:  
 The usual way of accessing most objects is by getting a reference to it and then calling a member of it. The usual way of accessing simpler objects such as Integers is by getting the *state* of it.
 
 < Doesn’t the fact that procedures determine lines make the symbol database as I know it invalid? Yeah. Line targets would be far from primary data. What would be primary data then? Object and procedure ancestry and call lines? Yeah. Other lines are data derived from the calls inside system procedures. >
@@ -5396,21 +5411,15 @@ Als types static members hebben dan heeft elke globality instance z’n eigen ty
 - Type static
 - Procedure static
 - Globality static
-
 -----
-
 - Type static objects
 - Procedure static objects
 - Globality static objects
-
 -----
-
 - Procedure static procedures
 - Type static procedures
 - Globality static procedures
-
 -----
-
 - Type Create
 - Procedure Create
 - Globality Type Create
@@ -5507,7 +5516,7 @@ The rules of Type Static procedures also apply to Globality Static procedures. O
 
 ##### Type Create and Destroy
 
-###### Type Create and Destroy
+###### Type Create and Destroy Introduction
 
 In order to initialize and terminate objects and procedures static to the type, object symbols have a Type Create and a Type Destroy system procedure. The Type Create procedure of an object symbol is called long before the object symbol is created and becomes a created object. The Type Create procedure is called when a globality object is created. The Type Create procedures of any ancestor object symbol of the globality is called, but not of the object symbols in sub globalities. Those object symbols’ Type Create procedures are called only when the sub globality is created. Many object symbols might not even have a Type Create procedure.
 
@@ -5546,7 +5555,7 @@ Globality Static members of both globality, its type and procedures are initiali
 
 <  
 Object data:
-An object has its own data. Data is accessed through the objects’procedures or through the procedures of its sub objects.  
+An object has its own data. Data is accessed through the objects’ procedures or through the procedures of its sub objects.  
 \>
 
 ##### Objects and Memory Reservation
@@ -5565,7 +5574,7 @@ The first point is just a matter of tagging it static.
 The second point:  
 The type should contain objects that store data. How do they belong to the type rather than the individual objects? Make all system procedures static? What does that render? That makes the procedures accessible when the descendant isn’t created.
 
-Aleen als de naar hetzelfde geheugen verwijst.
+Alleen als de naar hetzelfde geheugen verwijst.
 
 Ik volg het niet. Ik zie het niet.
 
@@ -5599,7 +5608,7 @@ Globalities can also have static members. Those are members of the module that c
 
 Types in a non created globality can usually not be referred to. 
 
-There can also be static members of a globality. Those are mutual to all globality instances and can be referred to even when the globality isn’t created. Then you can refer to procedures (and objects and types) of a non created globality. The procedures must be made Globality Static in order to do that. Globality Static symbols’ Type Create procedures are called even when the globality isn’t created. To have objects run as soon as the globality type runs, the globality symbol has a Type Create and Type Destroy procedure as well, in which you can create objects to run staticly.
+There can also be static members of a globality. Those are mutual to all globality instances and can be referred to even when the globality isn’t created. Then you can refer to procedures (and objects and types) of a non created globality. The procedures must be made Globality Static in order to do that. Globality Static symbols’ Type Create procedures are called even when the globality isn’t created. To have objects run as soon as the globality type runs, the globality symbol has a Type Create and Type Destroy procedure as well, in which you can create objects to run statically.
 
 Types of globalities can be
 
@@ -5607,7 +5616,7 @@ Then globality static type creates should be called when the sigma module loads.
 
 So now there’s not only static symbols, but globality static symbols, which can be members of ancestors at any depth inside the globality. Only globality static members (including system procedures) can be called when a globality is not created.
 
-Sub globality’s type creates are also called on module load. If you don’t define globality type create of syb globalities, then nothing is called ofcouse. Only if you choose to have a globality with globally static data, their globality type create procedure is called.
+Sub globality’s type creates are also called on module load. If you don’t define globality type create of syb globalities, then nothing is called ofc ouse. Only if you choose to have a globality with globally static data, their globality type create procedure is called.
 
 Sub globality’s type creates are also called on module load. Sub globality type creates are called in the super globality type create. In a globality type, Type Create procedures that are declared Globally Static of object symbols are called when the the globality type is created.
 
@@ -5693,7 +5702,7 @@ Each of those steps is called a *redirection* and they are part of the same acce
 
 ### Accesses
 
-Any access (*a call line’s entering an object symbol*)  involves such redirectioning, in order to know which type to call, to operate on which object. If you access multiple symbols on one call, each access includes its own object-type-interface trace.
+Any access (*a call line’s entering an object symbol*)  involves such redirecting, in order to know which type to call, to operate on which object. If you access multiple symbols on one call, each access includes its own object-type-interface trace.
 
 ![](images/Symbol%20Language%20(2004).421.png)
 
@@ -5714,7 +5723,7 @@ Every step in finding the procedure reference target involves tracking down a ty
 
 ![](images/Symbol%20Language%20(2004).422.png)
 
-This is a call to a child’s procedure. After reaching the child’s procedure, the redirectioning isn’t done, because the child’s procedure has reference line (*r*), which is to be followed. Eventually b is called.
+This is a call to a child’s procedure. After reaching the child’s procedure, the redirecting isn’t done, because the child’s procedure has reference line (*r*), which is to be followed. Eventually b is called.
 
 When the target procedure is found, it needs to be called. In order to do so, object and type must again be traced, in order to know which procedure of which object to call. This again isn’t an access, but the same kind of process is involved: the process of finding the target type and target object of a symbol.
 
@@ -5834,10 +5843,10 @@ Vraag 1:
 - In een __Line Target__ object < geen goede naam >. Deze klasse bevat een __Exits Integer__ en een __Entrances Integer Array__. De __Exits Integer__ slaat het aantal exits op. De __Entrances__ __Integer Array__ bevat de ordinalen van de symbolen to enter. Een ordinaal is het symboolnummer binnen zijn parent.
 - Elke line wordt zo opgeslagen binnen het object dat de line bevat.
 - De line source hoeft niets te weten van zijn omgeving en de inhoud van children of cousins om er toch naar te verwijzen
-- Pas als de echte line crossings (hoe heten deze symbolen die gecrossed worden?) moeten worden achterhaald, dan worden er traces uitgevoerd. Dit gebeurt bij opvragen van informatie over een symbool (? Oh ja? Krijg je niet gewoon de Line Target object terug? Of krijg je dan wel unieke symboolnummers terug of zo?), bijvoorbeeld bij het uittekenen van het systeem, of bij een call.
+- Pas als de echte line crossings (hoe heten deze symbolen die gecrosst worden?) moeten worden achterhaald, dan worden er traces uitgevoerd. Dit gebeurt bij opvragen van informatie over een symbool (? Oh ja? Krijg je niet gewoon de Line Target object terug? Of krijg je dan wel unieke symboolnummers terug of zo?), bijvoorbeeld bij het uittekenen van het systeem, of bij een call.
 - Dit heeft tot gevolg dat bij veranderingen in het systeem, de line target naar onbedoelde symbolen verwijst. Daarom worden bij bepaalde systeemveranderingen (optioneel?) de line sources opgeheven(, of tijdelijk onschadelijk gemaakt?) < moet de term *line source* niet ergens geïntroduceerd worden? >
 
-Dus krijgt elk zichtbaar symbool toch een nummer? Ondanks dat sytematiek opgeslagen is in de object klasse van de globality klasse?
+Dus krijgt elk zichtbaar symbool toch een nummer? Ondanks dat systematiek opgeslagen is in de object klasse van de globality klasse?
 
 Elke opslag entiteit krijgt een nummer. Een opslag entiteit wordt gerepresenteerd door een symbool. Een gewoon object is een opslag capaciteit. Ook een call is een opslag capaciteit. Een klasse ook, voor de type static delen. Een globality object ook, en een globality klasse ook. Binnen deze opslag entiteiten worden line targets opgeslagen. Wat voor nummer krijg je nou terug bij het aanroepen van een aspect procedure? Niet een opslag nummer, want meerdere symbolen kunnen dezelfde opslag representeren. Hmmm... Ik weet het niet.
 
@@ -5870,24 +5879,24 @@ Dat is dus niet waar. Een line wijst naar een symbool in een object referentie, 
 
 Maar wijzen naar binnen is gemakkelijker, want wijzen naar buiten kan 
 
-Oh, als je niet alleen het *aantal* exits opslaat, maar de symbolen die geexit worden? Oh, maar welke ordinalen krijgt die dan. Uhhmm... 
+Oh, als je niet alleen het *aantal* exits opslaat, maar de symbolen die geëxit worden? Oh, maar welke ordinalen krijgt die dan. Uhmmm... 
 
 Hè! Poe! Lines opslaan is moeilijk.
 
-Ze worden binnen een opslag entiteit opgeslagen. Nu is het nog onduidelijk hoe de target wordt geidentificeerd.  
-Het is alleen moeilijk voor binnengaan en verlaten van object symbols. Of niet? Hè, fuck. De target moet gecreerd zijn, maar wijst naar een referentie
+Ze worden binnen een opslag entiteit opgeslagen. Nu is het nog onduidelijk hoe de target wordt geïdentificeerd.  
+Het is alleen moeilijk voor binnengaan en verlaten van object symbols. Of niet? Hè, fuck. De target moet gecreëerd zijn, maar wijst naar een referentie
 
 Ik weet niet hoe een target wordt opgeslagen. Ik weet niet hoe een referentie wordt geïdentificeerd.
 
-Referenties zijn inderdaad aparte entitieten en ze verdwijnen en ontstaan bij het veranderen van type lines, interface lines en ook object lines als de *klasse* of *interface* van een symbool verandert.
+Referenties zijn inderdaad aparte entiteiten en ze verdwijnen en ontstaan bij het veranderen van type lines, interface lines en ook object lines als de *klasse* of *interface* van een symbool verandert.
 
-Dus er moet dus maar rekening mee gehouden worden dat als je een symbool van klasse of interface doet veranderen, dat dat gevolgen heeft, vooral als je het extern kan instellen met weinig beperking. Als een symbool van klasse of interface verandert, dan moeten er oude symbolen worden gederegistreerd en nieuwe symbolen worden geregistreerd. Maar hoe koppel je dan die symbolen met hun id. Nou, de registratie zit gebonden aan de parent. Dus je moet het symbool toch identificeren met zijn parent en eventueel grandparent. Dus met een heel pad. Maar hoeveel identificaties je nodig hebt is afhankelijk van de scope. Je identificeerd alleen de diepere containers.
+Dus er moet dus maar rekening mee gehouden worden dat als je een symbool van klasse of interface doet veranderen, dat dat gevolgen heeft, vooral als je het extern kan instellen met weinig beperking. Als een symbool van klasse of interface verandert, dan moeten er oude symbolen worden gederegistreerd en nieuwe symbolen worden geregistreerd. Maar hoe koppel je dan die symbolen met hun id. Nou, de registratie zit gebonden aan de parent. Dus je moet het symbool toch identificeren met zijn parent en eventueel grandparent. Dus met een heel pad. Maar hoeveel identificaties je nodig hebt is afhankelijk van de scope. Je identificeert alleen de diepere containers.
 
-OH! Inderdaad wordt elk symbool in de Symbol database opgeslagen! Aleen als je van klasse of interface verandert, deregistreer en registreer je symbolen. Shit hé, kan je dan toch een symbool met 1 nummer identificeren? Ja. Maar het zit zo: hoe kom je van nummer naar oord en van oord naar nummer? Nou, de relaties tussen de symbolen zitten in een boomstructuur opgeslagen. Je kan met de symbol id naar de parents en children hoppen.
+OH! Inderdaad wordt elk symbool in de Symbol database opgeslagen! Alleen als je van klasse of interface verandert, deregistreer en registreer je symbolen. Shit hé, kan je dan toch een symbool met 1 nummer identificeren? Ja. Maar het zit zo: hoe kom je van nummer naar oord en van oord naar nummer? Nou, de relaties tussen de symbolen zitten in een boomstructuur opgeslagen. Je kan met de symbol id naar de parents en children hoppen.
 
-Dus, oh, jee. Ondanks veranderbaarheid van het diagram staat toch elk individueel symbool (dus ook individuele referenties naar hetzelgde object) apart geregistreerd. Je kunt dus alle symbolen identificeren met een nummer.
+Dus, oh, jee. Ondanks veranderbaarheid van het diagram staat toch elk individueel symbool (dus ook individuele referenties naar hetzelfde object) apart geregistreerd. Je kunt dus alle symbolen identificeren met een nummer.
 
-Als dan dus een line target verwijst naar binnen ergens en opeens verandert de inhoud en bestaat de target niet meer, dan worden de source symbol’s lines maar geannulled.
+Als dan dus een line target verwijst naar binnen ergens en opeens verandert de inhoud en bestaat de target niet meer, dan worden de source symbol’s lines maar geannulld.
 
 HEH. Volgens mij ben ik eruit. Je kunt gewoon symbols line targets met een enkel nummer identificeren. De symbol database (in design time, dan) is ook weer wat duidelijker.
 
@@ -6010,7 +6019,7 @@ The following rule isn’t true:
 
 *Can’t Call Upward in the Ancestry*
 
-An object should act independent of its surroudings. Unless it *chooses* to be dependent on its surroundings.
+An object should act independent of its surroundings. Unless it *chooses* to be dependent on its surroundings.
 
 < You can make a call to the outside if the type allows you to set a diamonds reference line. Then the container must decide whereto the call leads >
 
@@ -6026,7 +6035,7 @@ System aspects is the hardest concept to understand of Symbol Language. Access c
 
 < Access control is niet voor beginnende programmeurs. Het is ongrijpbaar misschien, maar zeker onbruikbaar, omdat ze er niet mee om kunnen gaan. 
 
-Wat wel zo is is dat de standaard access control van system procedures er voor zorgt dat je niet *zo maar* rare dingen kan gaan doen. Erg belangrijk als je effe snel iets programmeerd, dat je de echt rare effecten uitsluit zonder extra moeite. >
+Wat wel zo is is dat de standaard access control van system procedures er voor zorgt dat je niet *zo maar* rare dingen kan gaan doen. Erg belangrijk als je effe snel iets programmeert, dat je de echt rare effecten uitsluit zonder extra moeite. >
 
 < Give a story about the true meaning of an access symbol that denotes direction. That it is a syntactically correct access symbol. Access symbols can used to denote direction, because access symbols *can* point out direction. >
 
@@ -6072,7 +6081,7 @@ The two basic access controllers are *Accessible* and *Inaccessible*. Their diag
 
 The meaning of them is as can be expected: the Accessible square is accessible, while the Inaccessible square is inaccessible This basic notation does not show which parties get access and which do not.
 
-The symbols used here are actualy access symbols, which I’ve already introduced. Access symbols can denote direction, and they also denote where access takes place, but they’re also used to denote access control.
+The symbols used here are actually access symbols, which I’ve already introduced. Access symbols can denote direction, and they also denote where access takes place, but they’re also used to denote access control.
 
 #### Exclusion
 
@@ -6082,13 +6091,13 @@ Exclusion is the primary method for controlling which parties get access to a pr
 
 A type controls which of its procedures are accessible to the outside (*Public* procedures), and which are *not* accessible to the outside (*Private* procedures). Private procedures *are* accessible to the *inside* the type.
 
-Apart from controlling access to the type’s own procedures, a type can also control publicity of procedures *of its chilren*. That way you can publish a child, but make some of its public procedures inaccessible outside the parent. This way you can also exclude members of a base type. A parent can’t make a child’s procedure inaccessible to the child itself; it’s the child’s own procedures.
+Apart from controlling access to the type’s own procedures, a type can also control publicity of procedures *of its children*. That way you can publish a child, but make some of its public procedures inaccessible outside the parent. This way you can also exclude members of a base type. A parent can’t make a child’s procedure inaccessible to the child itself; it’s the child’s own procedures.
 
 You can also exclude members of ancestors even further down the hierarchy.
 
-Forms of exclusion other than Private are just called exclusion or privatising.
+Forms of exclusion other than Private are just called exclusion or privatizing.
 
-You can only make a procedure of a child *less* accesible, never *more* accessible. The parent can’t publish a child’s procedure that the child defines as Private. A child can’t put restrictions on how its members are privatised by the parent, so a parent has full control over the exclusion of the procedures its ancestors.
+You can only make a procedure of a child *less* accessible, never *more* accessible. The parent can’t publish a child’s procedure that the child defines as Private. A child can’t put restrictions on how its members are privatized by the parent, so a parent has full control over the exclusion of the procedures its ancestors.
 
 Exclusion access controllers are also called *access* *modifiers*, because they modify formerly set access controllers.
 
@@ -6122,13 +6131,13 @@ Each descendant that has access to the procedure can impose its own access modif
 
 ![](images/Symbol%20Language%20(2004).434.png)
 
-In this example A privatises P. The marks and the access controller are called an access controller list. The whole access controller list can be interpreted as a single symbol, which can be called the access symbol. An access controller can be placed on each mark. Each position in the access controller list represents the access modification of a deeper laid symbol. All access modifications are imposed by A. The first position modifies access to A itself, the second position modifies access to B, the third position modifies access to C, thus the fourth position modifies access to P. The marks are called *access marks*, not to be confused with the term ‘access symbols’.
+In this example A privatizes P. The marks and the access controller are called an access controller list. The whole access controller list can be interpreted as a single symbol, which can be called the access symbol. An access controller can be placed on each mark. Each position in the access controller list represents the access modification of a deeper laid symbol. All access modifications are imposed by A. The first position modifies access to A itself, the second position modifies access to B, the third position modifies access to C, thus the fourth position modifies access to P. The marks are called *access marks*, not to be confused with the term ‘access symbols’.
 
 Very deep exclusion is uncommon, so you usually won’t interprent more than one or two access marks.
 
 ![](images/Symbol%20Language%20(2004).435.png)
 
-*Privatisation is the last access modification*. Once an descendant has excluded the member, higher descendants can’t exclude the member again, because they can’t access the member.
+*Privatization is the last access modification*. Once an descendant has excluded the member, higher descendants can’t exclude the member again, because they can’t access the member.
 
 B has excluded P, so A can’t exclude P again. Both access symbols above are about access to P. The first position of the access controller list is always about access to the symbol that defines the access controller list. Not all positions of the access controller need to be displayed. The last positions can be left out at will. That means that the last access controller doesn’t have to be about the line target, but can be about an intermediate access.
 
@@ -6183,7 +6192,7 @@ Being able to change access modifiers at run time may be interesting. That way y
 
 The Access Modifier property procedures can be access controlled themselves, so that they can be made inaccessible, for instance when you don’t want to be able to change the access modifier at run time. The access modifiers of the Access Modifier property can’t be changed at run time themselves. In other words: the Access Controller property procedures don’t have an Access Controller property of their own. This complies with the rule: system procedures don’t have system procedures of their own. 
 
-A single procedure can have several access modifiers so there are multiple access modifiers to get and set. This would suggest that the Accesss Modifier property has a dimension. However, when you call the Access Modifier property, you return or set the access modifier imposed by the object you’re calling from. The object you’re calling from is a hidden argument to the Access Modifier property. The access modifiers aren’t really stored inside the procedure, but in the object symbol that imposes it.
+A single procedure can have several access modifiers so there are multiple access modifiers to get and set. This would suggest that the Access Modifier property has a dimension. However, when you call the Access Modifier property, you return or set the access modifier imposed by the object you’re calling from. The object you’re calling from is a hidden argument to the Access Modifier property. The access modifiers aren’t really stored inside the procedure, but in the object symbol that imposes it.
 
 If the access modifier isn’t variable at run time, then the type defines a fixed access modifier. If the access modifier *is* variable at run time then the access modifier can be different for each instance of the type.
 
@@ -6193,7 +6202,7 @@ Apart from a *decisive* access modifier, you can also give a procedure a *sugges
 
 #### Exclusion of System Procedures
 
-Exclusion (and inclusion) can also be applied to system procedures. Exclusion is actually very important for system procedures. An object symbol’s Target Object procedure must be accessible to make you able to call its procedures. When you control access to the Target Object procedure, you can for instance set the object to be accessible privately, but not publically.
+Exclusion (and inclusion) can also be applied to system procedures. Exclusion is actually very important for system procedures. An object symbol’s Target Object procedure must be accessible to make you able to call its procedures. When you control access to the Target Object procedure, you can for instance set the object to be accessible privately, but not publicly.
 
 Exclusion of Set procedures controls who can set a symbol’s lines. Exclusion of Get procedures controls who can get information about lines or who can access the object.
 
@@ -6239,7 +6248,7 @@ Protected is used in exclusion only. It cannot be used for ‘outcommenting’ c
 
 ##### Object Level Limitation
 
-Basic access controllers are decisive, but level limitation adds additional restriction. 
+Basic access controllers are decisive, but level limitation adds additional restriction.
 
 Level limitation is paired with the basic access controller.
 
@@ -6287,7 +6296,7 @@ Level limitation on deeper exclusion:
 | ![](images/Symbol%20Language%20(2004).458.png) | ≈ | ![](images/Symbol%20Language%20(2004).459.png) |
 |------------------------------------------------|---|------------------------------------------------|
 
-You can also apply level limitation for on symbols shalower than the target procedure.
+You can also apply level limitation for on symbols shallower than the target procedure.
 
 Level limitation on deeper exclusion:
 
@@ -6346,7 +6355,7 @@ If a global procedure is Inaccessible, it’s just not accessible at all (*‘ou
 
 When a global procedure is Public it is however also accessible *outside* the globality, as a public procedure of the globality object. For a procedure to be global inside the globality, but not accessible outside the globality you use globality level limitation: __Public Globality Up 1__.
 
-It is not a permitted to make a global procedure Protected. A pentagon is not exchangable with a triangle, so Global Protected wouldn’t have much meaning.
+It is not a permitted to make a global procedure Protected. A pentagon is not exchangeable with a triangle, so Global Protected wouldn’t have much meaning.
 
 ### Friends
 
@@ -6373,7 +6382,7 @@ Je hebt *eigenlijk* alleen befriended types. Befriended types geven toegang tot 
 
 Onderscheid tussen befriended procedures en befriended types aangeven.
 
-Exclusion is the primary method for access control. Friends is the method to make exceptions to the privatisation imposed by exclusion. A procedure or type can make any other procedure or type they can reach a Friend, meaning that that procedure or that type has access to all members privately accessible in the befriended.  
+Exclusion is the primary method for access control. Friends is the method to make exceptions to the privatization imposed by exclusion. A procedure or type can make any other procedure or type they can reach a Friend, meaning that that procedure or that type has access to all members privately accessible in the befriended.  
 < ... Copy most from the old stuff >
 
 ### System Procedures with Access Modifiers
@@ -6476,7 +6485,7 @@ Has put all of the language’s access controllers in one system and added extra
 When you for instance use triangles to group members of an object, then the access modifiers need to change. When first you accessed something one capsule deep, is accessed two capsules deep when you put a triangle or circle around it. Access modifiers change accordingly when you edit code:
 
 < P: Circle with public procedure >  
-< P: Trangle put around public procedure, changed access modifier >  
+< P: Triangle put around public procedure, changed access modifier >  
 < P: Circle with public procedure >  
 < P: Circle put around public procedure, changed access modifier >
 
@@ -6506,7 +6515,7 @@ Maybe it's a good rule to only show access symbols to denote:
 
 If a configuration of any sort is a common one, it might be nice to make something like a typedef so you give the configuration a name of its own, Like if you commonly use ‘Public Up 1 Globality Up 2’, you might want to give it a different name.
 
-Mayve access controllers are a step into the direction of security. Mayve security should be a kind of advanced access control.
+Maybe access controllers are a step into the direction of security. Maybe security should be a kind of advanced access control.
 
 Procedure primarily Inaccessible: This seems unuseful: why not just leave the procedure out completely? It could be used a means to temporarily deactivate code.
 
@@ -6527,7 +6536,7 @@ When being a triangle:
 
 < When being a globality? >
 
-Using triangles to group members with equal acccess controllers. As with exclusion, the access controller of the triangle limits access again. It won’t make things *more* accessible.
+Using triangles to group members with equal access controllers. As with exclusion, the access controller of the triangle limits access again. It won’t make things *more* accessible.
 
 Initialization  
 Sometimes you want to give a specific party access to a private procedure. Such a procedure *befriends* itself with with a specific type or procedure. The friend type or procedure can access anything private or < > otherwise anything marked as friend for that type < > ...   
@@ -6561,7 +6570,7 @@ Here and no earlier
 
 < is that the same or different from being able to change type at creation or assignment of object reference ? >
 
-<
+<  
 Old:
 
 A symbol’s type or interface can be generic or explicit.
@@ -6582,7 +6591,7 @@ Explicit:
 
 Assignment can occur by two means: explicit assignment and generic assignment.
 
-The type of the assigned object may be generic too. The interface of the assigned type might be generic too. But the tied together symbols change simultaniously.
+The type of the assigned object may be generic too. The interface of the assigned type might be generic too. But the tied together symbols change simultaneously.
 
 Explicit:
 
@@ -6597,11 +6606,10 @@ Explicit:
     - When you assign the object:
         - The object must be of a type that supports the interface (?)
 
-You can change whether or not a type or interface is generic. It is a separate aspect of the symbol. Genericity of type doesn’t mean that it’s of type Object or something, because whenever a symbol has an object, it has a specific type: the type of the object. Whether a symbol has a generic type or interface or not can be set as runtime. Except when the type has been made constant on that part: always a generic interface or always an explicit interface, always a generic type or always an explicit type. Always an explicit type does not mean that the type is constant. The type just always needs to be assigned explicitly, but *can* vary.
-
+You can change whether or not a type or interface is generic. It is a separate aspect of the symbol. Genericity of type doesn’t mean that it’s of type Object or something, because whenever a symbol has an object, it has a specific type: the type of the object. Whether a symbol has a generic type or interface or not can be set as runtime. Except when the type has been made constant on that part: always a generic interface or always an explicit interface, always a generic type or always an explicit type. Always an explicit type does not mean that the type is constant. The type just always needs to be assigned explicitly, but *can* vary.  
 \>
 
-If a symbol already has a type line it has to have that type. If it doesn’t have a type line then it gets the type of the object it’s pointing at (not considering the interface problem below) 
+If a symbol already has a type line it has to have that type. If it doesn’t have a type line then it gets the type of the object it’s pointing at (not considering the interface problem below).
 
 #### Interface < >
 
@@ -6651,7 +6659,7 @@ In the system representation you see all access to an object as a call to one of
 
 < Picture >
 
-And here I draw out both representations on top of eachother, one representation in one color and the other representation in another color.
+And here I draw out both representations on top of each other, one representation in one color and the other representation in another color.
 
 < Picture >
 
@@ -6659,7 +6667,7 @@ And here I draw out both representations on top of eachother, one representation
 
 ###### 1
 
-< The exchangability of method and object notation >  
+< The exchangeability of method and object notation >  
 < You CAN display a method as an object. You’d then display it as its return value(s) >
 
 ###### 2
@@ -6676,7 +6684,7 @@ Actually, the objects symbols I’ve introduced before *are* the object represen
 
 Here you see that you have multiple representations of something: you can see the system as a bunch of procedures or you can see it as a bunch of objects, but it’s still the same system.
 
-If you regard something a property, which you often will, the primary representatioin of it is its object representation. If you regard something a method or if the procedure doesn’t return a value, then its primary representation is the procedure representation.
+If you regard something a property, which you often will, the primary representation of it is its object representation. If you regard something a method or if the procedure doesn’t return a value, then its primary representation is the procedure representation.
 
 ###### 3
 
@@ -6702,7 +6710,7 @@ I need changed events to exist automatically
 Perhaps include some appendices that now ended up in Advanced Symbol Language.
 
 <  
-op veel plekken ontbreekt de uitleg van de toepassing. Het lijkt alsof als ik de theorie op papier heb, ik de toepassing maar uitwis. Introduction gaat helemaal over de toepassing. Objects Basics en Procedure Basics daar is de toepassing compleet zoek. Access Control daarbij is de toepassing ook helemaal zoek. Waarom heb je dat soort access controllers? Waarom moet je global access hebben en waarom clause access? In Lines lijk ik nu wel wat meer voorbeelden te behandelen, maar alleen maar omdat ik er aan werk. Als ik dit nu niet op zou hebben gemerkt zou ik straks een theorie hebben geformuleerd in lines en de toepassing compleet weggeveegd. Ik moet meer de theorie en toepassing combineren. Ok, je moet een theorie *vormen*, en uiteindelijk moet je de theorie apart op papier hebben, maar na het vormen van de thoerie is uitleggen van de toepassing niet opeen onbelangrijk. Dit gebeurt echt vaak in boeken. Ze komen maar met de theorie en de voorbeelden ervan zijn compleet achter wege gelaten.  
+op veel plekken ontbreekt de uitleg van de toepassing. Het lijkt alsof als ik de theorie op papier heb, ik de toepassing maar uitwis. Introduction gaat helemaal over de toepassing. Objects Basics en Procedure Basics daar is de toepassing compleet zoek. Access Control daarbij is de toepassing ook helemaal zoek. Waarom heb je dat soort access controllers? Waarom moet je global access hebben en waarom clause access? In Lines lijk ik nu wel wat meer voorbeelden te behandelen, maar alleen maar omdat ik er aan werk. Als ik dit nu niet op zou hebben gemerkt zou ik straks een theorie hebben geformuleerd in lines en de toepassing compleet weggeveegd. Ik moet meer de theorie en toepassing combineren. Ok, je moet een theorie *vormen*, en uiteindelijk moet je de theorie apart op papier hebben, maar na het vormen van de theorie is uitleggen van de toepassing niet opeen onbelangrijk. Dit gebeurt echt vaak in boeken. Ze komen maar met de theorie en de voorbeelden ervan zijn compleet achterwege gelaten.  
 \>
 
 In C++ bepaal je de redirection diepte vooraf:
@@ -6762,9 +6770,9 @@ The following is done:
 
 Each interface has a shared part that way.
 
-A and B share an interface by putting a traingular object symbol inside both A and B and connecting them with an object line makes them represent the same object. A and B basically both contain the object. In that sense, containment can overlap. Lines are a way for one object to have multiple containers. Lines are a way for objects to overlap.
+A and B share an interface by putting a triangular object symbol inside both A and B and connecting them with an object line makes them represent the same object. A and B basically both contain the object. In that sense, containment can overlap. Lines are a way for one object to have multiple containers. Lines are a way for objects to overlap.
 
-You aren’t limited to traingle symbols to make objects overlap. You can also use an overlapping notation for circular objects:
+You aren’t limited to triangle symbols to make objects overlap. You can also use an overlapping notation for circular objects:
 
 < P >
 
@@ -6794,11 +6802,11 @@ With circular symbols it’s quite logical to display double capsules in overlap
 
 A and B both contain C. Therefore C is notated in the overlapping area.
 
-### Containment for Divergance, Lines for Convergance
+### Containment for Divergence, Lines for Convergence
 
 This suggests that a line structure can represent part of the containment.
 
-Normal containment is a tree like structure: one thing contains multiple things. Using lines you can make the tree branches convert again: multiple things contain one thing. Convergance can be displayed in the overlapping notation. So the effect of lines can be displayed in an overlapping notation.
+Normal containment is a tree like structure: one thing contains multiple things. Using lines you can make the tree branches convert again: multiple things contain one thing. Convergence can be displayed in the overlapping notation. So the effect of lines can be displayed in an overlapping notation.
 
 In a normal diagram, *containment* is both the divergence structure of the *object structure*, *type structure* and *interface structure*.
 
@@ -6815,7 +6823,7 @@ Containment creates the same tree out for all three of the hierarchies. Converge
 < P: Two layer tree out. >  
 < P: Type tree out heffed op. >
 
-That way the three hierarchies can be made independent of eachother. The example above is a perfect way for part of the branch out, that the containment structure imposes, to be lifted, anulled, ignored. In the case above, the type structure ignores the split up in A, B, C, D and E. A, B, C, D and E are still separate objects: the object structure still makes a split up, but the type structure does not make a split up.
+That way the three hierarchies can be made independent of each other. The example above is a perfect way for part of the branch out, that the containment structure imposes, to be lifted, annulled, ignored. In the case above, the type structure ignores the split up in A, B, C, D and E. A, B, C, D and E are still separate objects: the object structure still makes a split up, but the type structure does not make a split up.
 
 The example above, though, does not establish convergence in the type structure. The type structure is as follows:
 
@@ -6832,7 +6840,7 @@ The last picture is still called overlapping notation. You can see that the over
 
 In the programming environment, triangles can be used to group members by criteria, without the triangle’s being real objects. The triangles are then just used as marks. In that case there can be overlapping triangles, but the triangles aren’t objects.
 
-< Perhaps I should allows non existant triangles: triangles that aren’t object capsules. I might want the programmer to have control over them. Triangles used for the sheer purpose of creating an overlapping structure can then be made non-object, so that no double capsules need to be displayed in the overlapping parts in the overlapping notation.
+< Perhaps I should allows non existent triangles: triangles that aren’t object capsules. I might want the programmer to have control over them. Triangles used for the sheer purpose of creating an overlapping structure can then be made non-object, so that no double capsules need to be displayed in the overlapping parts in the overlapping notation.
 
 ### Procedures can Overlap
 
@@ -6855,9 +6863,9 @@ Diagram Metrics
 ### Line Alignment
 
 - 1: Line convergence is...
-- 2: Dimensional convergence with only target convergance
-- 3: Dimensional convergence with source convergance and target convergence
-- 4: Disturbance of convergance:
+- 2: Dimensional convergence with only target convergence
+- 3: Dimensional convergence with source convergence and target convergence
+- 4: Disturbance of convergence:
     - Alignment disturbance
     - Angle disturbance
     - Solutions for disturbance
@@ -6871,7 +6879,7 @@ Diagram Metrics
                 - When proportionality causes a deeper object to be smaller, then it works *with* the convergence. Then proportionality causes a deeper symbol to be bigger, it works against the convergence and can actually show divergence. < However lines still group themselves together >. It’s encapsulation level fighting against quantity of contained symbols.
     - Exact and approximate alignment
         - Simple example allows exact alignment. This situation occurs in many places in a diagram
-        - Complexer example shows inaxact alignment:
+        - Complexer example shows inexact alignment:
             - More than two children
             - Both source and target convergence
             - Multiple lines fight.
@@ -6893,13 +6901,13 @@ __Sometimes symbol proportionality and placement is compromised for the sake of 
 
 2: When multiple borders are crossed. < a dimensional convergence onstaat >
 
-3: In the previous example only the target symbols were part of an encapsulation structure (or the souce symbols, if you reverse the direction). When both sources and targets are part of an encapsulation structure, there is both groupage by source as well as targets. Actually there is groupage by any crossing and by eventual source and target symbols >
+3: In the previous example only the target symbols were part of an encapsulation structure (or the source symbols, if you reverse the direction). When both sources and targets are part of an encapsulation structure, there is both groupage by source as well as targets. Actually there is groupage by any crossing and by eventual source and target symbols >
 
 4: The symbols in the diagrams above were properly aligned to show the convergence of lines best. The symbols were lined up by line target. Not like this:
 
 < P: symbols not aligned, lines crossing a lot >
 
-That is one disturbance of the convergence. It causes lines to cross. It’s called order distrurbance or cross distrurbance. The lack of this disturbance is called source-target alignment. Another disturbance is the following:
+That is one disturbance of the convergence. It causes lines to cross. It’s called order disturbance or cross disturbance. The lack of this disturbance is called source-target alignment. Another disturbance is the following:
 
 < P: aligned more paralel. Convergence angle decreases. >
 
@@ -6921,7 +6929,7 @@ Exact alignment of sources and targets, however, totally annuls the alignment.
 < P: Symbols straight lines, equally spaced >  
 Lines always go from the center of the source symbol to the center of the target symbol, though. This causes convergence.  
 < P: previous picture, but lines go to the center >  
-The reason that lines automatically converge is that they go from center to center. < more pictures explaining that metric fact. Zonneklaar aantonen waar het metrische effect door komt >  
+The reason that lines automatically converge is that they go from center to center. < more pictures explaining that metric fact.  Zonneklaar aantonen waar het metrische effect door komt >  
 The symbol sizes should be more proportionate, though, dependant on their encapsulation level and the amount of symbols it contains.  
 < P: normal simple convergence picture: proportionate symbols, lines from center to center. >  
 Making symbols proportionate like that causes more convergence.
@@ -6935,7 +6943,7 @@ De binnenkomende lines worden geordend op waar ze vandaan komen en de uitgaande 
 < Ik moet de uitleg beginnen met een simpele toepassing van line convergence. Ik moet het steeds moeilijker maken en uiteindelijk ermee eindigen dat je kan groeperen op elk mogenlijk criterium. >
 
 <  
-Eigenlijk worden de lines al automatische geordend op waar ze heen gaan en waar ze vandaan komen, met convergence wordt dat nog een zwaarder benadrukt. Ja... dat is zo. Dat is grappig ja. Line convergence is alleen maar een overdrijving van wat al gebeurt. Maybe it’s near a border crossing where convergence is exaggerated. Eigenlijk wordt de convergence niet geëxaggerate. Eigenlijk wordt het ge-deëxaggerate. Je converged ze waar ze eigenlijk divergeren. Convergen doen ze al... zie tekeningen. Als de lijn naar het ene symbol en naar het andere symbol geen grote hoek maken, of zelfs een hoek van 0° dan kan er niet of nauwelijks ‘natuurlijke’ convergence plaats vinden. Stiekum vergroot je de hoek.
+Eigenlijk worden de lines al automatische geordend op waar ze heen gaan en waar ze vandaan komen, met convergence wordt dat nog een zwaarder benadrukt. Ja... dat is zo. Dat is grappig ja. Line convergence is alleen maar een overdrijving van wat al gebeurt. Maybe it’s near a border crossing where convergence is exaggerated. Eigenlijk wordt de convergence niet opgeblazen. Eigenlijk wordt het ver-ont-opgeblazen. Je converged ze waar ze eigenlijk divergeren. Convergen doen ze al... zie tekeningen. Als de lijn naar het ene symbol en naar het andere symbol geen grote hoek maken, of zelfs een hoek van 0° dan kan er niet of nauwelijks ‘natuurlijke’ convergence plaats vinden. Stiekem vergroot je de hoek.
 
 Bij overdreven convergence moeten vaste afstanden aangehouden worden.
 
@@ -6968,19 +6976,19 @@ To accompany the grouping you can mention the grouping criterium. Or rather: men
 
 Convergence takes place where lines enter or exit borders.
 
-The grouping between borders can become more precise or more general. You might not care about the source of a line in a higher encapsulation level, so grouping can be generalized and possibly more focused on where the lines are going. Ofcouse, if before a crossing the grouping is about where the lines are going, after the crossing, the same grouping is about where the lines came from. Grouping can be about any crossing. On borders or around borders, regrouping can take place and grouping. Ofcourse any other criterium can be grouped by too, but you usually use crossings as the criteria for for line grouping.
+The grouping between borders can become more precise or more general. You might not care about the source of a line in a higher encapsulation level, so grouping can be generalized and possibly more focused on where the lines are going. Of course, if before a crossing the grouping is about where the lines are going, after the crossing, the same grouping is about where the lines came from. Grouping can be about any crossing. On borders or around borders, regrouping can take place and grouping. Of course any other criterium can be grouped by too, but you usually use crossings as the criteria for for line grouping.
 
-A group of lines can be seen like a buslane for lines with certain sources, targets or any selection of its crossing actually.
+A group of lines can be seen like a bus lane for lines with certain sources, targets or any selection of its crossing actually.
 
-Grouping lines by next entrance is quite handy in any case. It even evetually takes place anyway: they converge towards what they enter automatically, because they’re all ending up in the same point... at least in the same symbol.
+Grouping lines by next entrance is quite handy in any case. It even eventually takes place anyway: they converge towards what they enter automatically, because they’re all ending up in the same point... at least in the same symbol.
 
 You could also group lines by line type so that you separate object lines, type lines and interface lines.
 
 < In line convergence, show that not only is convergence useful when you see the whole diagram, but also when you don’t see the full diagram, you can still distinct line targets __*and sources*__ >
 
-< line convergence, or actually, the curvedness of lines also creates clarity where lines cross eachother. When drawing a diagram you should try to make as little lines as possible cross. When you curve lines you can make crossings of lines more haaks. That makes it clearer to see where each line is going >
+< line convergence, or actually, the curviness of lines also creates clarity where lines cross each other. When drawing a diagram you should try to make as little lines as possible cross. When you curve lines you can make crossings of lines more haaks. That makes it clearer to see where each line is going >
 
-< Line convergence is very useful in complicated situations where many things call many other things in a rather disoriented matter. *Spaghetti code* this is called sometimes. In Symbol, the actualy spaghetti becomes visible, because the lines look like spaghetti, and the more lines there are and the more they go though < > eaching, the more it looks like spaghetti >
+< Line convergence is very useful in complicated situations where many things call many other things in a rather disoriented matter. *Spaghetti code* this is called sometimes. In Symbol, the actually spaghetti becomes visible, because the lines look like spaghetti, and the more lines there are and the more they go though each other, the more it looks like spaghetti. >
 
 ### Compromise between Symbol Placement and Line Alignment
 
@@ -6999,21 +7007,21 @@ You could also group lines by line type so that you separate object lines, type 
 
 ### Ambiguity Risks In Symbol Metrics
 
-- Multiple shape peel types may suggest the existance of another symbol.
+- Multiple shape peel types may suggest the existence of another symbol.
 - Line convergence may suggest line peels
 - Line peels may suggest line convergence
-- Line peels may suggest the existance of multiple lines.
+- Line peels may suggest the existence of multiple lines.
 - Others
-
-...
+- ...
 
 ### Notation Choice
 
-< - Implicit calls notation >  
-<  
-There may be an automatic choice mechanism in the Symbol programming enviroment. This is a rather complex, thing though, but should be regarded part of the language explanation, not just part of the Symbol programming environment.
+< - Implicit calls notation >
 
-Maybe this isn’t an alternative notations subject  
+<  
+There may be an automatic choice mechanism in the Symbol programming environment. This is a rather complex, thing though, but should be regarded part of the language explanation, not just part of the Symbol programming environment.
+
+Maybe this isn’t an alternative notations subject.  
 \>
 
 ### Brainstorm
@@ -7040,7 +7048,7 @@ Language Integration
 
 Symbol Language embeds techniques that makes you able to integrate any other language into it. Certain and Symbol recognizes uses translation. Symbol text code is actually a language embedded into the Symbol Diagram Language. You can translate parts of a system to text, but you can just as well translate it to a more graphical language. This way you can for instance embed other diagram types into the Symbol Language. The Information Language, part of the J Data technology, is a diagram language designed to define information ( / data ) structures. It is a form of diagram different from Symbol.
 
-There can be defined standard ways to translate, as well as translations specific to certain symbols. Standard translations allow you to translate any part of a system to another language using a standard notation. Translations for specific symbols allow you to define a custom way to translate
+There can be defined standard ways to translate, as well as translations specific to certain symbols. Standard translations allow you to translate any part of a system to another language using a standard notation. Translations for specific symbols allow you to define a custom way to translate.
 
 The following can be translated to another language, for instance text code:
 
@@ -7056,13 +7064,13 @@ To demonstrate how other languages, including graphical ones, can be integrated 
 
 Text code is made out of a symbol by giving a reference to a symbol to a translation procedure. The translation procedure will construct a String object that contains the text code. Thus, a tranlation procedure takes a system and translates it to an object that represents the system. If you don’t translate the system to a String, but another type of object, containing shapes and lines, for instance a Shapes object, then you can establish a graphical language.
 
-The symbol diagram language is such a translation to a graphical language... ... yes, unfortunately the diagram language introduced so far is nothing more than a utilization of Symbol. It isn’t symbol itself. A system is retained in a J Data Base. The J Data Base stores the symbols and their relations and also a few standard translation procedures, which are also systems. Some of those standard translation procedures draw out the Symbol diagram language. Another set of those standard translation procedures produce the Symbol text language.
+The symbol diagram language is such a translation to a graphical language... yes, unfortunately the diagram language introduced so far is nothing more than a utilization of Symbol. It isn’t symbol itself. A system is retained in a J Data Base. The J Data Base stores the symbols and their relations and also a few standard translation procedures, which are also systems. Some of those standard translation procedures draw out the Symbol diagram language. Another set of those standard translation procedures produce the Symbol text language.
 
 ### Operators
 
 <
 Operators *are* procedures. They are assigned a special notation.  
-Evaluation order, childhesis, Precedence  
+Evaluation order, 'child-hesis', Precedence  
 Conversion operators  
 \>
 
@@ -7074,7 +7082,7 @@ An example of operators are arithmetic operators:
 
 An operator is notated like a method. It resembles an operation. The difference in notation is not in the diagram code. An operator’s speciality is that it supports an alternate notation, usually textual, but not necessarily.
 
-\+ and – operations can be represented in plain text. Powers in Basic were represented by the ^ character. I wish to change that. I want the real mathematical notation to integrate with the language. For that I define operators as procedures that have any alternate notation. The power is represented by the exponent being notated in superscript: higher and smaller than the: b<sup>e</sup>
+`+` and `–` operations can be represented in plain text. Powers in Basic were represented by the ^ character. I wish to change that. I want the real mathematical notation to integrate with the language. For that I define operators as procedures that have any alternate notation. The power is represented by the exponent being notated in superscript: higher and smaller than the: b<sup>e</sup>
 
 #### Parameters
 
@@ -7082,7 +7090,7 @@ The textual notations of parameters
 
 Possibly notating parameters on calls differently in the diagram than usual object assignments.
 
-Parameter notations and operators are subjects totally for the Text Code chapter
+Parameter notations and operators are subjects totally for the Text Code chapter.
 
 Operators then too. 
 
@@ -7118,7 +7126,7 @@ Their state can only be controlled using
 
 Of its data members
 
-Maybe you should be able to define orders in which 
+Maybe you should be able to define orders in which
 
 <  
 This concept is much like the operator concept, which can convert *procedures* with arguments to a textual notation and back. 
@@ -7176,10 +7184,10 @@ In text code you sort of see the calls to system procedures and you also sort of
 
 - Access Operators
     - One for each system procedure and ones that can do for multiple system procedures, depending on the context
-    - ... :: . , () []
+    - `... :: . , () []`
     - Special operators. Are they operators? If they are then they should be able to be overloaded. Maybe that’s handy too.
         - System procedure arguments
-        - Genetivity
+        - Genitivity
 
 ### Real Language
 
@@ -7223,7 +7231,7 @@ Does properties have a place here? Somewhere? A bit?
 
 I think a lot of this needs to be put in the other sections.
 
-Operators, literals *is* a special text code issue. It can be parallelized with language integration, actually. And if it can’t be put in one concept as it is now, then I might need to make a single concept that covers language integration altogehter. There are two ways to express parameters in text code: as a definition or as a procedure call. The declaration of a procedure can be expressed as freely as an operator or literal notation. The general form of a textual procedure call notation is nothing more than a standard operator notation for a procedure.
+Operators, literals *is* a special text code issue. It can be parallelized with language integration, actually. And if it can’t be put in one concept as it is now, then I might need to make a single concept that covers language integration altogether. There are two ways to express parameters in text code: as a definition or as a procedure call. The declaration of a procedure can be expressed as freely as an operator or literal notation. The general form of a textual procedure call notation is nothing more than a standard operator notation for a procedure.
 
 - Mention that access operators are operator notations of the system procedures.
 - Explain what execution control text notation is (is it an operator notation?)
@@ -7288,7 +7296,7 @@ Circle System
     Circle Interface A
 
     Circle Type B
-        Traingle
+        Triangle
     End Circle
 
     System Procedures
@@ -7315,7 +7323,7 @@ Circle System
     Circle Interface A
 
     Circle Type B
-          Traingle : Interface = Interface A
+        Triangle : Interface = Interface A
     End Circle
 
 End Circle
@@ -7333,7 +7341,7 @@ Circle System
     Circle Interface A
 
     Circle Type B
-        Traingle : Interface A
+        Triangle : Interface A
     End Circle
 
 End Circle
@@ -7351,7 +7359,7 @@ System
     Interface A
 
     Type B
-        Traingle : Interface A
+        Triangle : Interface A
     End B
 
 End Circle
@@ -7412,7 +7420,7 @@ In text code a parameter
 
 In text code there are several notations for parameter definitions and assignments call. The most common one is in a comma separated list.
 
-< I need to explain the difference between the term parameter and argument somewhere before this section >
+< I need to explain the difference between the term parameter and argument somewhere before this section. >
 
 #### Access Control
 
@@ -7521,7 +7529,7 @@ End Object
 
 #### Tree Notation
 
-You know the kind  
+You know the kind.  
 But my kind also has convergence... and allows 1/n=>1/n distinction or maybe those are other notations yet.
 
 
@@ -7565,7 +7573,7 @@ Analysis klopt daar ook wel bij.
 But another odd thing it that even though something is a call, you don’t always notate it, so the square won’t seem to have a line... This may be a subject for Abstract Symbol.  
 \>
 
-Symbol can be used to describe a system in full, so to program a system. You can also use symbol to describe the rought outline of a system: abstract Symbol code. *This* is also used in programming in order to simplify the view on the system. However, abstract Symbol can also be used for diagrams in documents describing technical designs.
+Symbol can be used to describe a system in full, so to program a system. You can also use symbol to describe the rough outline of a system: abstract Symbol code. *This* is also used in programming in order to simplify the view on the system. However, abstract Symbol can also be used for diagrams in documents describing technical designs.
 
 - Assumptions and in the middle latingen
 
@@ -7584,7 +7592,7 @@ This for some reason implies that it’s ONLY accessible from the inside. Formal
 <  
 Misschien mag ik dan al wel verklappen dat de call zo’n beetje het object is en de definition de klasse.  
 En waarom het dan aparte symbolen zijn en niet verschillende line types. Eigenlijk moet ik dan de keuze voor alle line types en symbolen aangeven.  
-Je kunt maar 1 reference line hebben. Dat is zo’n beetje de reden. Hè, ik moet het inderdaad goed opschrijven 
+Je kunt maar 1 reference line hebben. Dat is zo’n beetje de reden. Hè, ik moet het inderdaad goed opschrijven. 
 
 Call is een hoedanigheid van het symbool, dat geen line behoeft.  
 Type is niet een hoedanigheid van een symbool, het is waar een symbool voor *kan* dienen.  
@@ -7595,11 +7603,11 @@ Eigenlijk is het wel een beetje zo dat: alles wat ik aan mezelf heb moeten uitle
 
 A definition is a lot like a type of procedure, while an execution is an instance of the procedure. As I state this relation, it may seem strange to you that I picked *separate symbols* to denote a procedure symbol’s execution and definition, while for objects I use different *line types* to separate objects from types. Diamond is actually the extra symbol picked to represent an execution. An execution of a definition is like an object of a type. However, an execution has another special characteristic: it executes. 
 
-When an object symbol has a type line it’s behavior in the container isn’t as much different as
+When an object symbol has a type line it’s behavior in the container isn’t as much different as ...
 
-However, object symbols aren’t different to their container if they 
+However, object symbols aren’t different to their container if they ...
 
-To find the definition you follow the reference line between
+To find the definition you follow the reference line between ...
 
 Just consider: if a diamond doesn’t have a line it is an executing clause, when a square doesn’t have a line, it’s a non executing clause. In both cases it’s a definition. But the two case differ in that in one case it executes and in the other it doesn’t. If an object symbol has no line, it’s an object. Simply stated, it needs an object line for it not to be a type. A procedure symbol shouldn’t need a line to be an execution.
 
@@ -7611,7 +7619,7 @@ For a procedure symbol to function as a reference and not as an execution is not
 
 Ok, if I wanted it so that an object symbol could only function as a type, but not as an object, I should reserve a separate shape for it. But that doesn’t mean that an object shape can’t serve as a type. An execution shape can serve as the definition too.
 
-It’s important for some procedure symbols not to function as an execution. Otherwize the system would behave complete different. It’s not as important for an object symbol not to function as an object, only as a type. The system isn’t really harmed as severly by that. The same goes for triangles: if a triangle is suddenly a circle, the system behaves completely differently.
+It’s important for some procedure symbols not to function as an execution. Otherwise the system would behave complete different. It’s not as important for an object symbol not to function as an object, only as a type. The system isn’t really harmed as severely by that. The same goes for triangles: if a triangle is suddenly a circle, the system behaves completely differently.
 
 I’m still in doubt. I think it’s good that there’s a diamond symbol and that there aren’t separate object, type and interface shapes. I just can’t define *why* yet.
 
@@ -7632,18 +7640,18 @@ Programming
 -----------
 
 <  
-I have explained all possiblities of the language, but there simply are things you’ll use more than others. In my former explanations for instance it seems that using object lines is just as common as using type and interface lines. However, you’ll find, let’s say 20 times more object lines that you will find type lines. You might even write a whole module without any interface lines at all.
+I have explained all possibilities of the language, but there simply are things you’ll use more than others. In my former explanations for instance it seems that using object lines is just as common as using type and interface lines. However, you’ll find, let’s say 20 times more object lines that you will find type lines. You might even write a whole module without any interface lines at all.
 
-So some topics of the language might be complex, but used only incidently.  
+So some topics of the language might be complex, but used only incidentally.  
 Exclusion, that is, a container’s exclusion of members of its children, doesn’t need to be used a lot. In fact, other programming languages I know don’t even have this capability at all. 
 
-Etcetera. Symbol will become much easier when you find what’s used most and what things are for incidental use, no matter how complex the topics you’ll use incidently are.
+Etcetera. Symbol will become much easier when you find what’s used most and what things are for incidental use, no matter how complex the topics you’ll use incidentally are.
 
 You can write programs in which you have no notice of any system aspect procedure at all. In programs in which you do work with system aspect procedures, you won’t will not notice the presence of all aspect procedures, just some.  
 />
 
 < remember that I can only explain how to program structurally using the systems I’ve programmed as an example >  
-I’ve called this chapter into existance, because I want to write about programming methodologies.
+I’ve called this chapter into existence, because I want to write about programming methodologies.
 
 ### Transforming a Procedure to an Object
 
@@ -7670,7 +7678,7 @@ I am still in contemplation about this. Perhaps apply methodology can be applied
 
 Another thing interesting in these kinds of objects is Changed events. Perhaps this must become something standard too.
 
-In types I always want changed events for the sub objects. The only reason I don’t add them for all sub objects is that it’s more code writing and Visual Basic may make the program heavier. Symbol however, doesn’t put anything unused in the compiled code. Oh, shit, it does when a type with a load of changed events is a public member of the module. Hmmm... perhaps changed events must become a standard thing. That way you can really respond to any change without having to 
+In types I always want changed events for the sub objects. The only reason I don’t add them for all sub objects is that it’s more code writing and Visual Basic may make the program heavier. Symbol however, doesn’t put anything unused in the compiled code. Oh, shit, it does when a type with a load of changed events is a public member of the module. Hmmm... perhaps changed events must become a standard thing. That way you can really respond to any change without having to ...
 
 Darn, I should also add programming methodology issues in this book. Most of which must be explained at the end.  
 < >
@@ -7679,11 +7687,11 @@ Integrating Structure and Symbol
 --------------------------------
 
 < Brainstorm >  
-You have to look at basics of Symbol. And the basic thing is encapsulation. The encapsulation of a Structure can be derived from the referential structure using a mutual parent rule. This in real life also determines how we feel something encapsulates another thing. You can apply this mutual parent rule to class relations and object relations. All class and object reference are expressed as splines, except the references from parent to child. Objects and procedures are there in both languages and are exchangable. Publicity is also present in both systems. The only thing I don’t know how to express in Symbol is plurality.
+You have to look at basics of Symbol. And the basic thing is encapsulation. The encapsulation of a Structure can be derived from the referential structure using a mutual parent rule. This in real life also determines how we feel something encapsulates another thing. You can apply this mutual parent rule to class relations and object relations. All class and object reference are expressed as splines, except the references from parent to child. Objects and procedures are there in both languages and are exchangeable. Publicity is also present in both systems. The only thing I don’t know how to express in Symbol is plurality.
 
 Symbol always had a lack of expression in plurality. How. You’d almost want a new shape of symbol. But I’ve sort of run out of shapes. I’d go for a hexagon. It looks like a circle, but has a plurality feeling to it. If you have to, you could choose for octagons.
 
-Ofcouse, one of those, would contain a variable amount of objects, that don’t even have to be of the same type, but will always have the same interface I guess.
+Of course, one of those, would contain a variable amount of objects, that don’t even have to be of the same type, but will always have the same interface I guess.
 
 That would conclude seem to conclude the parallelization of Symbol and Structure.
 
@@ -7695,17 +7703,17 @@ How well are the relation between types shown in symbol. Well, you see the conta
 
 But how do the relations between classes show? Each circle or octagon expresses a relation class. Its class target is the class. You can recognize the class of the target by the class name of the relation class symbol. Class splines show the Structure Relations.
 
-Ok, to recap: most things can be mutually exchangable between Symbol and Structure. There are two tacky points though: giving the Symbol code an encapsulation structure and plurality in symbol. An octagon will express that an object is plural. The encapsulation is derived from the reference structure using the mutual parent method. Some advantage symbol adds to Structure then, are encapsulation and also object relations. In structure code, it’s hard to view object relations.
+Ok, to recap: most things can be mutually exchangeable between Symbol and Structure. There are two tacky points though: giving the Symbol code an encapsulation structure and plurality in symbol. An octagon will express that an object is plural. The encapsulation is derived from the reference structure using the mutual parent method. Some advantage symbol adds to Structure then, are encapsulation and also object relations. In structure code, it’s hard to view object relations.
 
 Oh, gee. The expression of the structure is covered that way.  
-But what about the generated code? The data part may look much like the structure, but what about the user interface. Code for the user interface will add so much diagram to it, that overview over the realy structure will be pushed away.  
+But what about the generated code? The data part may look much like the structure, but what about the user interface. Code for the user interface will add so much diagram to it, that overview over the really structure will be pushed away.  
 Oh, how funny, you program the structure in one diagram, but the object oriented system that comes out is a different structure, that resembes the structure diagram, but is much more extended.
 
 Object relations will only come to light when the generated code is running.  
 However, you should be able to define static object relations in the structure, or not? Anyway, in the generated code, you should also be able to hide all user interface elements.
 
-- Translate Litterly
-    - Most things in the structure and the generated application can be litterly translated to Symbol
+- Translate Literally
+    - Most things in the structure and the generated application can be literally translated to Symbol
 - Plurality
     - A plurality symbol was added to Symbol
 - Mutual Parent
@@ -7713,7 +7721,7 @@ However, you should be able to define static object relations in the structure, 
 - Hide Things
     - Things in the generated application are hidden, to keep the focus on the structure (but they can be shown if chosen).
 - Extra Relation Splines
-    - Add special lines to the diagram that expresses the Structure. You won’t see the relations between classes as well in the structure as you do in the generated code, and I do want to see it. The relations between classes should be expressed with relation splines in the Classses collection. And the classes collection’s mutual parent structure should be expressed as the encapsulation structure, right then and there. iagram elements may be added to better see that.  
+    - Add special lines to the diagram that expresses the Structure. You won’t see the relations between classes as well in the structure as you do in the generated code, and I do want to see it. The relations between classes should be expressed with relation splines in the Classes collection. And the classes collection’s mutual parent structure should be expressed as the encapsulation structure, right then and there. Diagram elements may be added to better see that.  
     Perhaps I should develop a separate way to notate the structure. Perhaps you should draw out the relations as you see them in the generated code and then Structure will figure out what it means.  
     That means you draw classes and you put object in them and that draws out the relation. The object contain the members of the Class class and you can specify it furtherly there.
 
@@ -7721,7 +7729,7 @@ Nee, forget all that.
 
 Als je Structure in Symbol gaat toepassen, zal je een deel van ‘de gegenereerde code’ zelf programmeren. Dat lijkt in ieder geval zo. Als je een class in de structure will aanmaken, maak je een symbol aan. Als je een relatie tussen twee klassen wilt maken, dan maak je een object reference aan in een klasse die een relatie met de ander heeft. De relatie wordt wel automatisch dual. Als je een attribuut wilt toevoegen aan een class, dan stop je een objectje er gewoon in. Attributen worden trouwens objecten. Veel dingen worden wel op een gewone Structure achtige wijze ingevoerd. Daarvoor heeft een object symbol een Class interface gekregen, waar de structure information in wordt bewerkt. Daarin kun je ook bijvoorbeeld, customizen voor deeper objects. Je ziet ook nog globaal de classes en de relations collecties. Je ziet dus gewoon alle structuur informatie. Je kunt ook alles van de gegenereerde applicatie zien. Zo kun je in het aangemaakte object symbol (dat een Structure class is) de symboliek van de gegenereerde user interface zien. Die symboliek wordt automatisch bijgewerkt als je de Class informatie aanpast. Wijzigingen in de gegenereerde user interface symboliek worden als customization gezien en blijven staan, tenzij ze weer gedefault worden, waardoor de generator weer bepaalt wat het wordt. Je kunt ook een symbol meteen runnen, dus je kunt een control meteen laten zien.
 
-Je ziet gewoon de structuur informatie en de gegenereerde applicatie in één symbol diagram. Dus voor een deel programmeer je in Symbol de Structure alsof je zelf de gegenereerde code aan het programmeren bent en de structure informatie is nog steeds wel beschikbaar. Alles wat je ziet komt ook in de gegenereerde applicatie terecht. Structuur informatie wordt namelijk ook zichtbaar in de gegenereerde applicatie. De uitzondering daarop is dat er kan gekozen worden om structuur informatie achterwege te laten in de generated application, alsmede andere dingen achtewege gelaten, maar die dingen zie je dan wel in de design code.
+Je ziet gewoon de structuur informatie en de gegenereerde applicatie in één symbol diagram. Dus voor een deel programmeer je in Symbol de Structure alsof je zelf de gegenereerde code aan het programmeren bent en de structure informatie is nog steeds wel beschikbaar. Alles wat je ziet komt ook in de gegenereerde applicatie terecht. Structuur informatie wordt namelijk ook zichtbaar in de gegenereerde applicatie. De uitzondering daarop is dat er kan gekozen worden om structuur informatie achterwege te laten in de generated application, alsmede andere dingen achterwege gelaten, maar die dingen zie je dan wel in de design code.
 
 Je kunt ervoor kiezen om de encapsulatie structuur automatisch aan te laten leggen. Je kunt ook zelf de encapsulatie bepalen.
 
@@ -7787,7 +7795,7 @@ Overloading can only be part of procedures if you either cannot overload an obje
             - –>\*    Dereference pointer to type member
         - Size of object
         - Type name
-        - Assigment: =
+        - Assignment: =
     -----
     - Blocks...
     - Lifetime
@@ -7824,7 +7832,7 @@ Overloading can only be part of procedures if you either cannot overload an obje
     - Ambiguity
         - Overloading
             - Being able to reference things with the same name
-            - The thing being referenced dependent of the referers place...
+            - The thing being referenced dependent of the referrers place...
         - Hiding names: 
             - one name takes precedence over another. 
             - Accessing a hidden name.
@@ -7834,7 +7842,7 @@ Overloading can only be part of procedures if you either cannot overload an obje
     - Delegating
     - Notations
 
-- Access  < does constant have a place here. Private read, public write... >
+- Access < does constant have a place here. Private read, public write... >
     - Public, Private
     - For different Aspects: 
         - Object
@@ -7868,7 +7876,7 @@ Overloading can only be part of procedures if you either cannot overload an obje
         - Access interface
         - Access type
         - System procedure arguments
-        - Genetivity
+        - Genitivity
     -----
     - Generic and Explicit
     - Recursion and Circularity
@@ -7928,14 +7936,14 @@ Overloading can only be part of procedures if you either cannot overload an obje
     - Types: void, char, short, int, long, float, double, signed, unsigned, struct-or-union-specifier, enum-specifier, typedef-name; signed, unsigned
     - Type qualifiers: normal, const, volatile
 - Declarations
-    - Single value variable with fixed size declations
-    - Array, string declations
-    - Pointer declations
-    - Enumeration declations
-    - Structure declations
-    - Union declations
+    - Single value variable with fixed size declarations
+    - Array, string declarations
+    - Pointer declarations
+    - Enumeration declarations
+    - Structure declarations
+    - Union declarations
     - Alignment
-    - Typedef declations
+    - Typedef declarations
     - complex variable declarations
     - initialization: scalar, aggregate and strings
     - Incomplete types (look it up)
@@ -7965,9 +7973,9 @@ Overloading can only be part of procedures if you either cannot overload an obje
             - cast
             - sizeof expression
             - sizeof(type)
-            - &, \*, +, -, ~. !: bitwise and, dereference, plus, negate, bitwise complement, not/logical negation
+            - `& * + - ~ !`: bitwise and, dereference, plus, negate, bitwise complement, not/logical negation
         - Arithmetics (are functions)
-            - Multiplative: \*, / and %
+            - Multiplicative: `* / %`
             - Additive: +, -, pointer arithmetic
         - Bit shift
             - shift: <<, >>
@@ -7980,7 +7988,7 @@ Overloading can only be part of procedures if you either cannot overload an obje
             - And: &&
             - Or: | |
         - Ternary: Conditional expression: ? :
-        - Assigment: =, \*=, /=, %=, +=, -=, <<=, >>=, &=, ^=, | =
+        - Assignment: `= *= /= %= += -= <<= >>= &= ^= | =`
         - Sequential evaluation: , (doesn’t do much)
     - Operator precedence
     - Type conversions
@@ -8038,25 +8046,25 @@ More detail:
     - Primary expressions
     - Operators
         - Access
-            - ::  ::  [ ]  ( )  .  –>  ,  =
+            - `::  ::  [ ]  ( )  .  –>  ,  =`
         - Arithmetic
-            - ++  --  ++  --  +  -  \*  /  %  +  –  \*=  /=  %=  +=  –=
+            - `++  --  ++  --  +  -  *  /  %  +  –  *=  /=  %=  +=  –=`
         - Creation
             - new  delete  delete[ ]
         - Pointer
-            - \*  &  .\*  –>\*
+            - `*  &  .*  –>*`
         - Comparative
-            - <  >  <=  >=  ==  !=
+            - `<  >  <=  >=  ==  !=`
         - Boolean
-            - !  &&  | |
+            - `!  &&  | |`
         - Bit
-            - ~  <<  >>  &  ^  |  <<=  >>=  &=  | =  ^=
+            - `~  <<  >>  &  ^  |  <<=  >>=  &=  | =  ^=`
         - Analytic
-            - sizeof  sizeof ( )  typeid( )
+            - `sizeof  sizeof ( )  typeid( )`
         - Conversion
-            - (type)  const\_cast  dynamic\_cast  reinterpret\_cast  static\_cast
+            - `(type)  const_cast  dynamic_cast  reinterpret_cast  static_cast`
         - Conditional
-            - e1?e2:e3
+            - `e1?e2:e3`
     - Semantics
 - Declarations
     - Specifiers
@@ -8113,34 +8121,34 @@ Full summary:
         - this
     - Operators
         - Access
-            - ::  ::  [ ]  ( )  .  –>  ,  =
+            - `::  ::  [ ]  ( )  .  –>  ,  =`
             - Scope resolution, Global, Array subscript, Function call, Member selection (object), Member selection (pointer), Comma, Assignment
-            - Comma : argument seperation, multiple statements where one expected (e.g. if specification)
+            - Comma : argument separation, multiple statements where one expected (e.g. if specification)
         - Arithmetic
-            - ++  --  ++  --  +  -  \*  /  %  +  –  \*=  /=  %=  +=  –=
+            - `++  --  ++  --  +  -  *  /  %  +  –  *=  /=  %=  +=  –=`
             - Postfix increment, Postfix decrement, Prefix increment, Prefix decrement, Unary plus, Arithmetic negation - (unary), Multiplication, Division, Remainder (modulus), Addition, Subtraction, Multiplication assignment, Division assignment, Modulus assignment, Addition assignment, Subtraction assignment
         - Creation
-            - new  delete  delete[ ] 
+            - `new  delete  delete[ ]`
             - Allocate object, Deallocate object, Deallocate object
         - Pointer
-            - \*  &  .\*  –>\*
+            - `*  &  .*  –>*`
             - Dereference, Address-of, Apply pointer to type member (objects), Dereference pointer to type member
         - Comparative
-            - <  >  <=  >=  ==  !=
+            - `<  >  <=  >=  ==  !=`
             - Less than, Greater than, Less than or equal to, Greater than or equal to, Equality, Inequality
         - Boolean
-            - !  &&  | |
+            - `!  &&  ||`
             - Logical NOT, Logical AND, Logical OR
         - Bit
-            - ~  <<  >>  &  ^  |  <<=  >>=  &=  | =  ^=
+            - `~  <<  >>  &  ^  |  <<=  >>=  &=  | =  ^=`
             - Bitwise complement, Left shift, Right shift, Bitwise AND, Bitwise exclusive OR, Bitwise OR, Left-shift assignment, Right-shift assignment, Bitwise AND assignment, Bitwise inclusive OR assignment, Bitwise exclusive OR assignment
         - Analytic
-            - sizeof  sizeof ( )  typeid( )
+            - `sizeof  sizeof ( )  typeid( )`
             - Size of object, Size of type, type name
         - Conversion
-            - (type)  const\_cast  dynamic\_cast  reinterpret\_cast  static\_cast
+            - `(type)  const_cast  dynamic_cast  reinterpret_cast  static_cast`
         - Conditional
-            - e1?e2:e3
+            - `e1?e2:e3`
     - Semantics
         - Evaluation order and sequence points
         - Declarations on first use (in the middle of a statement)
@@ -8152,7 +8160,7 @@ Full summary:
         - Access:
             - public, protected, private
         - Storage type:
-            - static, auto, register; extern (linkage); Ommitted
+            - static, auto, register; extern (linkage); Omitted
         - Function:
             - virtual, inline
         - Type qualifiers:
@@ -8172,7 +8180,7 @@ Full summary:
         - Initialization
             - Pointers to const objects
             - Static members
-            - Aggegrates
+            - Aggregates
             - Character arrays
             - References
     - Functions
@@ -8199,7 +8207,7 @@ Full summary:
         - Members
         - Namespace alias: alternate name for namespace
         - namespace
-        - using namespace < namespace >: allows you to ommit the namespace identifier when referencing things in the namespace
+        - using namespace < namespace >: allows you to omit the namespace identifier when referencing things in the namespace
         - Accessing the namespace (C++ uses `::`)
     - Abstract declarator: identifier omitted
     - const and volatile pointers
@@ -8271,7 +8279,7 @@ Full summary:
 
 - Keywords:
     - Constants: true, false
-    - Don't know: typename, typeid, type\_info, mutable, explicit, bad\_cast, bad\_typeid
+    - Don't know: `typename, typeid, type_info, mutable, explicit, bad_cast, bad_typeid`
 
 - Where did the embedded declarations in a function declaration go?
 
@@ -8349,7 +8357,7 @@ Com concepts: components, interfaces.
 
 # Brainstorm
 
-Als je een te supplyen procedure reference (pure virtual function, pure overridable) niet invult, dan heeft hij van zichzelf waarschijnlijk geen inhoud. Als je hem dan aanroept gebeurt er gewoon niks. Eigenlijk zou dan misschien ook bij niet gecreerde objecten moeten gebeuren: je roept hem wel aan maar er gebeurt gewoon niks. Dat voorkomt foutmeldingen, maar het is eigenlijk niet de bedoeling. Of kan je erop bouwen. Misschien is het een keuze die je maakt als programmeur. Nou moet ik zeggen dat ik in mijn code er altijd voor kies dat als er iets 'verkeerds' wordt aangeroepen, dat er dan gewoon NIKS gebeurt. Er gaan niks fout, nee er gebeurt gewoon niks.
+Als je een te supplyen procedure reference (pure virtual function, pure overridable) niet invult, dan heeft hij van zichzelf waarschijnlijk geen inhoud. Als je hem dan aanroept gebeurt er gewoon niks. Eigenlijk zou dan misschien ook bij niet gecreëerde objecten moeten gebeuren: je roept hem wel aan maar er gebeurt gewoon niks. Dat voorkomt foutmeldingen, maar het is eigenlijk niet de bedoeling. Of kan je erop bouwen. Misschien is het een keuze die je maakt als programmeur. Nou moet ik zeggen dat ik in mijn code er altijd voor kies dat als er iets 'verkeerds' wordt aangeroepen, dat er dan gewoon NIKS gebeurt. Er gaan niks fout, nee er gebeurt gewoon niks.
 
 -----
 
@@ -8357,7 +8365,7 @@ Delegation, delegation structure.
 
 -----
 
-< I have to get all of my Symbol scribbles out of the bin and put them in a ... map.
+< I have to get all of my Symbol scribbles out of the bin and put them in a ... map. >
 
 -----
 
@@ -8377,7 +8385,7 @@ Er moet ergens nog in dat een procedure een interface heeft. En misschien moet e
 
 -----
 
-Trouwens: Een multicast event is niet meer dan een object met een dimensie, die meerdere procedure references registreerd. Misschien moet er een speciale notatie zijn zodat je de lines ziet. Je moet van dat object met een dimensie een method aan kunnen roepen, die in een rij alle references aanroept. Daarom moet een dimensionaal object ook niet dimensionale members kunnen hebben, maar ik weet nog niet helemaal hoe dat dan gaat.
+Trouwens: Een multicast event is niet meer dan een object met een dimensie, die meerdere procedure references registreert. Misschien moet er een speciale notatie zijn zodat je de lines ziet. Je moet van dat object met een dimensie een method aan kunnen roepen, die in een rij alle references aanroept. Daarom moet een dimensionaal object ook niet dimensionale members kunnen hebben, maar ik weet nog niet helemaal hoe dat dan gaat.
 
 -----
 
@@ -8410,6 +8418,7 @@ Operators:
 
 J Data Information Language is an alternative notation used inside Symbol code. Does it therefore consist of operator functions? And is that then the first operator that is about a more non textual notation a a more graphical one?
 
+
 Other Things
 ------------
 
@@ -8437,7 +8446,7 @@ Don’t forget to expand inheritance possibilities. Exclude, override, pre exten
 
 -----
 
-<
+<  
 - Operation control:
     - Expressions
     - Iterations
@@ -8469,7 +8478,7 @@ I mentioned friend and public here, but access controllers are more complex in J
 
 -----
 
-Groeperingssymbool op basis van wat een client object gebruikt. De interface indeling is op die manier een beetje automatisch. Als je geen interface indeling hebt, dan kun je toch zien wat de verschillende clients gebruiken en misschien voor het overzicht toch een interface indeling gebruiken.
+Groepering symbool op basis van wat een client object gebruikt. De interface indeling is op die manier een beetje automatisch. Als je geen interface indeling hebt, dan kun je toch zien wat de verschillende clients gebruiken en misschien voor het overzicht toch een interface indeling gebruiken.
 
 -----
 
@@ -8485,7 +8494,7 @@ __Programming Concepts’ Diagram Elements__
 | Object reference           | Circle |
 | Interface                  | Triangle |
 | Procedure                  | Square |
-| Access                     |     |
+| Access                     | |
 | > Global                   | All inside a pentagon (There are issues) |
 | > Public for reference     | Line to just outside to a tangent line. |
 | > Private for reference    | Line to just outside to a cross |
@@ -8502,9 +8511,10 @@ __Programming Concepts’ Diagram Elements__
 Old
 ---
 
-< you can integrate data logic by being able to choose to display the data logic diagram right inside a symbol, or display the object structure it resolves in. >
+< You can integrate data logic by being able to choose to display the data logic diagram right inside a symbol, or display the object structure it resolves in. >
 
-< you can integrate text code in the very same way >
+< You can integrate text code in the very same way. >
+
 
 Introduction
 ------------
@@ -8528,7 +8538,7 @@ Darn
 
 Single concepts about multiple items. For instance: 
 
-- Putting restrictions on a childs methods
+- Putting restrictions on a child's methods
 - Methods abstract other methods
 - Having an event interface
 - ...
@@ -8537,7 +8547,7 @@ Single concepts about multiple items. For instance:
 
 global
 
-Maybe then I can wrap it up to inambiguous. Perhaps I then should combine sections to be about for instance both pointers and object references.
+Maybe then I can wrap it up to unambiguous. Perhaps I then should combine sections to be about for instance both pointers and object references.
 
 
 Symbol Diagram Language
@@ -8568,7 +8578,7 @@ Symbol Diagram Language
 - Basic elements
     - Shapes
     - Lines
-    - Line disectors
+    - Line dissectors
 - Basic elements more refined
     - Shapes
         - Circles
@@ -8576,10 +8586,10 @@ Symbol Diagram Language
         - Squares
         - Pentagons
     - Lines
-        - Continguous line
+        - Contiguous line
         - Dotted line
     - Line dissector
-        - Continguous
+        - Contiguous
             - -- |
             - --X
             - --<
@@ -8598,7 +8608,7 @@ __Programming Concepts’ Diagram Elements__
 
 |                            |     |
 |----------------------------|-----|
-| Containement               | Physical containment of shapes |
+| Containment                | Physical containment of shapes |
 | Reference                  | Line between reference and referee |
 |                            | going outward and acces controllers shed light on direction |
 | Type                       | Dotted line from object to type |
@@ -8606,7 +8616,7 @@ __Programming Concepts’ Diagram Elements__
 | Object reference           | Circle |
 | Interface                  | Triangle |
 | Procedure                  | Square |
-| Access                     |     |
+| Access                     | |
 | - Global                   | All inside a pentagon (There are issues) |
 | - Public for reference     | Line to just outside to a tangent line. |
 | - Private for reference    | Line to just outside to a cross |
@@ -8621,23 +8631,23 @@ __Programming Concepts’ Diagram Elements__
 
 ### Diagram Element => Concept
 
-|                          |                                |
-|--------------------------|--------------------------------|
-| Circle                   | Object reference               |
-| Triangle                 | Interface, inheritance         |
-| Square                   | Procedure, procedure call      |
-| Pentagon                 | Globality region               |
-| Continguous line         | Points to referee              |
-| Dotted line              | Points to type                 |
-| Continguous dissector \| | Public for reference           |
-| Continguous dissector X  | Private for reference          |
-| Continguous dissector <  | Friend for reference           |
-| Dotted dissector \|      | Public for instancing          |
-| Dotted dissector X       | Private for instancing         |
-| Dotted dissector <       | Friend for instancing          |
-| Containment              | Logical containment of objects |
-| Linkage                  | Pointing to referee or type    |
-| Positioning              | Arbitrary / execution order    |
+|                         |                                |
+|-------------------------|--------------------------------|
+| Circle                  | Object reference               |
+| Triangle                | Interface, inheritance         |
+| Square                  | Procedure, procedure call      |
+| Pentagon                | Globality region               |
+| Contiguous line         | Points to referee              |
+| Dotted line             | Points to type                 |
+| Contiguous dissector \| | Public for reference           |
+| Contiguous dissector X  | Private for reference          |
+| Contiguous dissector <  | Friend for reference           |
+| Dotted dissector \|     | Public for instancing          |
+| Dotted dissector X      | Private for instancing         |
+| Dotted dissector <      | Friend for instancing          |
+| Containment             | Logical containment of objects |
+| Linkage                 | Pointing to referee or type    |
+| Positioning             | Arbitrary / execution order    |
 
 ### Derived Concepts
 
@@ -8673,10 +8683,10 @@ __Programming Concepts’ Diagram Elements__
 | Variables            | See storage |
 | Storage              | Are objects with a read and write method |
 |                      | Yet another shape? It is sort of an objects in that it has a read and write method. |
-|                      | Storage is never really physically addressed. It’s always an abtract that gives you |
+|                      | Storage is never really physically addressed. It’s always an abstract that gives you |
 | Type reference       | You can make any object or interface get the type  |
 |                      | of any other object or interface, which can in turn have a type. |
-| Member grouping      | Apparent to the referer: a circle around the group |
+| Member grouping      | Apparent to the referrer: a circle around the group |
 |                      | Not apparent to the referrer: a triangle around the group, |
 |                      | but don’t make the triangle public or it will appear as an interface outside. |
 
@@ -8684,7 +8694,7 @@ __Programming Concepts’ Diagram Elements__
 
 #### Interface
 
-I said a triangle was an interface. Eigenlijk is de interface een hoop functie referenties die ingevuld moeten worden. Dan zou het zo zijn dat alle members in een driehoek door zouden moeten refereren naar members binnen de cirkel. Eigenlijk moet ik een driehoek zijn eigen syntax laten hebben. Een driehoek krijgt een interface klasse. Deze kan een cirkel zijn of driehoek. De driehoek krijgt de publieke en vriendschappelijke inhoud van de interface klasse, maar niet de prive inhoud, welke de implementatie omvat. Dus de implementatie ontbreekt. Je kunt deze of zelf invullen of je creeert de implementatie door de driehoek te creeeren met een bepaalde implementatie klasse, waardoor je inheritance bewerkstelligt. Je kunt evengoed de verwijzing van de driehoek veranderen om de implementatie te delegeren. De driehoek heeft altijd de holle vorm van zijn interface klasse, maar de klasse en het object van zijn verwijzing. Als je hem creeert dan heeft hij geen verwijzing.
+I said a triangle was an interface. Eigenlijk is de interface een hoop functie referenties die ingevuld moeten worden. Dan zou het zo zijn dat alle members in een driehoek door zouden moeten refereren naar members binnen de cirkel. Eigenlijk moet ik een driehoek zijn eigen syntax laten hebben. Een driehoek krijgt een interface klasse. Deze kan een cirkel zijn of driehoek. De driehoek krijgt de publieke en vriendschappelijke inhoud van de interface klasse, maar niet de privé inhoud, welke de implementatie omvat. Dus de implementatie ontbreekt. Je kunt deze of zelf invullen of je creëert de implementatie door de driehoek te creëren met een bepaalde implementatie klasse, waardoor je inheritance bewerkstelligt. Je kunt evengoed de verwijzing van de driehoek veranderen om de implementatie te delegeren. De driehoek heeft altijd de holle vorm van zijn interface klasse, maar de klasse en het object van zijn verwijzing. Als je hem creëert dan heeft hij geen verwijzing.
 
 Een interface heeft een interface, implementatie en object. De klasse is de interface, de implementatie zou ook een klasse moeten zijn en het object dan de referentie.  
 Heeft de driehoek een extra referentie dan? Interface, implementatie en object?
@@ -8695,7 +8705,7 @@ Maar dan heeft een cirkel dat ook, want die representeert... oh, de gezamenlijke
 
 ##### Direction
 
-Always first goes outward, but that doesn’t mean that outward is the direction. Line disectors  
+Always first goes outward, but that doesn’t mean that outward is the direction. Line dissectors  
 Reference to a procedure is a call and is represented by a square tied to another.
 
 ##### Reference to object
@@ -8706,7 +8716,7 @@ Is reference to total interface, that isn’t denoted with a triangle, but is im
 
 Direct containment grants access for referring
 
-Line disectors can describe indirect containment access
+Line dissectors can describe indirect containment access
 
 To the outside there is only access to the children of the pentagon the symbol is indirectly in. Friend access controllers of pentagon children  restrict global access and denote what can serve as a type and what can serve as an object reference. You only have access to other things outside through a reference, but that reference resides inside the symbol.
 
@@ -8739,15 +8749,15 @@ Reference can be seen in a way as containment.
 #### Changing a Reference or Type
 
 Special procedures that can actually alter the diagram.  
-Objects are always object references or types until the object is created. Create an object for one reference, then the references tied to that reference also point at that object, ofcourse, since the reference tied to the reference are actually references to references.  
-A creation procedure method is called with a fixed reference to another reference to create an object for. The dectruction method is the same. The creation method kinda turns the references on, while the destruction method turns it off.  
+Objects are always object references or types until the object is created. Create an object for one reference, then the references tied to that reference also point at that object, of course, since the reference tied to the reference are actually references to references.  
+A creation procedure method is called with a fixed reference to another reference to create an object for. The destruction method is the same. The creation method kinda turns the references on, while the destruction method turns it off.  
 The procedure for changing a reference gets the reference as an argument, and another argument that specifies the symbol to reference. The symbol to reference needs to be the same interface ...  
 A reference has a fixed interface, but can be point to or be of any type as long as you reference the same interface.  
-For that, changing the type of a reference is permited
+For that, changing the type of a reference is permitted.
 
 -----
 
-Changing the type of a symbol is not permitted, be it that the same interface of 
+Changing the type of a symbol is not permitted, be it that the same interface of ...
 
 -----
 
@@ -8762,7 +8772,7 @@ Possible changes in the diagram may be laid out. There may be limits to the poss
 clockwise starting at the top one or  
 like reading: left to right, top to bottom or  
 tied together, except for the first and last ones  
-Sometimes it doesn’t matter in which order something takes place, in case of which both symbols get the same execution order ordinal. Symbols are tied together parallelly instead of serially then or positioned ‘parallely’ over the clock’s arrow.
+Sometimes it doesn’t matter in which order something takes place, in case of which both symbols get the same execution order ordinal. Symbols are tied together parallelly instead of serially then or positioned ‘parallelly’ over the clock’s arrow.
 
 Type reference
 
@@ -8809,7 +8819,7 @@ This is a valid identifier:
 Apple Fruit Table
 ```
 
-\+ is an operator. So this is an invalid identifier
+`+` is an operator. So this is an invalid identifier.
 
 ```
 Apple + Pear Fruit Table
@@ -8854,7 +8864,7 @@ Apple+Pear Fruit Table
 - . to member
 - .. to submember
 
-Core : Object :: Event Map ; Aligment .. Arbitrary
+Core : Object :: Event Map ; Alignment .. Arbitrary
 
 -----
 
@@ -8866,16 +8876,16 @@ Other scheme:
 - . from member to member
 - to submember
 
-Aligment . 
+Alignment . 
 
 Standards
 
-I forgot genetive containment, didn’t I. You do supply a capsule, but everything inside the capsule is like it’s inside its parent. That’s actually what the triangle is for. Nevertheless, you’re forced to use the identifier for access. That’s normal for interfaces, except for the whole interface.
+I forgot genitive containment, didn’t I? You do supply a capsule, but everything inside the capsule is like it’s inside its parent. That’s actually what the triangle is for. Nevertheless, you’re forced to use the identifier for access. That’s normal for interfaces, except for the whole interface.
 
 I may want it to be an interface, but I want to see it as member access outside.
 
-The thing is... the member of a purely genetive subdivision without programmatic consequences.  
-Uhhhmmm... yeah... whatever
+The thing is... the member of a purely genitive subdivision without programmatic consequences.  
+Uhmmm... yeah... whatever.
 
 An example:
 
@@ -8884,19 +8894,22 @@ An example:
     - Record Size
     - Field Start
 
-The properties of Alignment can be reached by the siblings of Alignment. But the siblings of Alignment can also be accessed by the properties of Alignment. So they have access to 
+The properties of Alignment can be reached by the siblings of Alignment. But the siblings of Alignment can also be accessed by the properties of Alignment. So they have access to ...
 
 ### Parameters
 
 There are three types of parameters: in, out and thru. In parameters go in, out parameters go out and thru parameters come in and go out.
 
+```
 Procedure 1 (In: Input, Out: Output 1, Output 2, Thru: Increment Me)
 End Procedure
-
+```
 
 Parameters can have a reference access controller that can be public or friend:
 
+```
 Procedure 1
+```
 
 #### Arguments
 
@@ -8912,7 +8925,7 @@ Diagram Editing
 Sigma Module
 ------------
 
-A pentagon can be translated to a Sigma module. Only things publically accessible outside the pentagon get a place inside the Sigma module.
+A pentagon can be translated to a Sigma module. Only things publicly accessible outside the pentagon get a place inside the Sigma module.
 
 Circles and triangles that are public for instancing, become a type in the Sigma module. There can be a multi-layer subdivision in types. These layers are expressed as sub modules in the Sigma module.
 
@@ -8949,7 +8962,7 @@ Some objects in Symbol may be tagged so they’re always created.
 
 -----
 
-Global is a bad term
+Global is a bad term.
 
 -----
 
@@ -9018,9 +9031,9 @@ There are the following aspects to the diagram:
 
 What I have described in the previous sections is the standard notation for Symbol diagrams. 
 
-- Encapsulation is used to express the encapsulation structure
-- Lines are used to express the delegation structure
-- Color is used to express the type/object structure
+- Encapsulation is used to express the encapsulation structure.
+- Lines are used to express the delegation structure.
+- Color is used to express the type/object structure.
 - Shapes are used to distinguish between inheritance, encapsulation and execution.
 - Names are used to indicate what something is called, what something refers to and of which type it is.
 
@@ -9048,9 +9061,9 @@ Diagram aspects:
 
 The encapsulation, delegation and type/object hierarchies are all tree-like structures. The diagram’s encapsulation, lines and color can each present a single tree structure. Any of these three diagram aspects can be related to any of the three hierarchies. 
 
-Two diagram aspects can be turned off: lines and color. You can stop color from representing a hierarchy and you can stop lines from expressing a hierarchy. You might want to set up two simultanious views in which you assign different diagram aspects to different hierarchies so for instance you don’t use color to express a diagram aspect, yet in the first diagram you use diagram encapsulation and lines to express two of the hierarchies and in the next diagram you use diagram encapsulation to express the hierarchy missing in the first diagram.
+Two diagram aspects can be turned off: lines and color. You can stop color from representing a hierarchy and you can stop lines from expressing a hierarchy. You might want to set up two simultaneous views in which you assign different diagram aspects to different hierarchies so for instance you don’t use color to express a diagram aspect, yet in the first diagram you use diagram encapsulation and lines to express two of the hierarchies and in the next diagram you use diagram encapsulation to express the hierarchy missing in the first diagram.
 
-The encapsulation, lines and color aspects of the diagram can be distributed over the encapsulation, delegation and type/object strucures, each hierarchical system aspect being represented by one hierarchical diagram aspect.
+The encapsulation, lines and color aspects of the diagram can be distributed over the encapsulation, delegation and type/object structures, each hierarchical system aspect being represented by one hierarchical diagram aspect.
 
 -----
 
@@ -9091,17 +9104,23 @@ __Thought__:
 
 *Waar dit criterium:*
 
+```
 Int(EncapsulationDepth / 2) = ChildDepth / 2
+```
 
 *Een (complexe) toepassing van kleur:*
 
-R = 0.3 \* (1 - (EncapsulationDepth / DeepestEncapsulationDepth))  
-G = 0.6 \*  (EncapsulationDepth / DeepestEncapsulationDepth)  
-B = 0.9 \* (1 - (EncapsulationDepth / DeepestEncapsulationDepth)) 
+```
+R = 0.3 * (1 - (EncapsulationDepth / DeepestEncapsulationDepth))  
+G = 0.6 *  (EncapsulationDepth / DeepestEncapsulationDepth)  
+B = 0.9 * (1 - (EncapsulationDepth / DeepestEncapsulationDepth)) 
+```
 
 *Een (complexe) toepassing van vorm:*
 
-N = 3 + 7 \* (1 - (EncapsulationDepth / DeepestEncapsulationDepth))
+```
+N = 3 + 7 * (1 - (EncapsulationDepth / DeepestEncapsulationDepth))
+```
 
 En bij overlappende eigenschappen kleuren mixen of optellen en dubbele vormen...
 
@@ -9110,11 +9129,11 @@ Stel dat ik zelfde klassen dezelfde vorm wil toewijzen
 Kan ik niet ook namen gebruiken als criterium diagram eigenschappen?
 
 Er is een grotere complexiteit dan ik in eerste instantie dacht.  
-Wat is de echte rij met kleur, naam en vorm toepassings-mogenlijkeden zonder efficientie van de oplossing in acht te nemen?
+Wat is de echte rij met kleur, naam en vorm toepassings-mogenlijkeden zonder efficiëntie van de oplossing in acht te nemen?
 
 -----
 
-You should be able to highlight symbols with certain simple or complex attributes. Color and shapes can take upon themselves this roll in clarification. You can assign different n-gonic shapes or colors to symbols matching certain criteria. You can easily express a wide range of criteria simultaniously with different colors and shapes
+You should be able to highlight symbols with certain simple or complex attributes. Color and shapes can take upon themselves this roll in clarification. You can assign different n-gonic shapes or colors to symbols matching certain criteria. You can easily express a wide range of criteria simultaneously with different colors and shapes
 
 You can also use the color: ‘transparent’. It is almost an insult to call transparent a color because its usefulness by far exceeds that of color. I call transparency a color, because transparency can be applied in exactly the same manner as color. Transparency as a color makes it possible to abstract the diagram. It is a very powerful tool. Abstraction is a mechanism more important than the object oriented paradigma. By using transparency you can hide for instance deep encapsulation depths so that they don’t obscure the big picture. Another very important use of transparency is hiding members of a symbol that have the Reference Access attribute set to private, which means the same as hiding the private members of an object.
 
@@ -9166,7 +9185,7 @@ Glossary
 - Procedure
 - Event Procedure
 - Variable
-- ... bla bla bla some other time
+- ... blah blah blah some other time
 
 
 Brainstorm
@@ -9178,12 +9197,16 @@ A number that's always above zero could be a data type too. Or a number that's a
 
 Boolean and comparison algebra:
 
+```
 Not CurrentRow < Int(TopRow) = CurrentRow >= Int(TopRow)
+```
 
 Not is both a logical and a comparison operator
 
+```
 Not CurrentRow < Int(TopRow) == CurrentRow >= Int(TopRow)
 < > (CurrentRow < Int(TopRow)) == CurrentRow >= Int(TopRow)
+```
 
 -----
 
@@ -9196,8 +9219,8 @@ Je hebt in Vb 6 en 7 in een With clause get 'Anti-With' net zoals de anti-monike
 -----
 
 Consider making:  
-+=, -=, /=, etcetera:  
-=+, =-
++=  -=  /= etcetera:  
+=+  =-
 
 The problem with that is that + and - can't be unary operators unless you put a space between the = and the + or -:  
 = +  
@@ -9207,7 +9230,7 @@ The problem with that is that + and - can't be unary operators unless you put a 
 
 A parent block is sorta like a globality in that way.
 
-Globality and triangle are alike. They 
+Globality and triangle are alike. They ...
 
 -----
 
@@ -9217,7 +9240,7 @@ A square would then become a globality. A pentagon would become an execution poi
 -----
 
 And a 'block' as I described, would actually look like a square.  
-A procedure will probably not get its own symbol anyway. It would just be an object with an execution point.  
+A procedure will probably not get its own symbol anyway. It would just be an object with an execution point.
 
 -----
 
@@ -9250,7 +9273,7 @@ Accessing public objects is no longer ambiguous if you use access symbols just o
 
 -----
 
-A pentagon's direct children can all reference eachother and can be referenced by all ancestors (containmentwise ancestors). Globality is only one function of a pentagon. Actually a pentagon is a lot like globality, where there are multiple levels of globality and that exists in today's systems.
+A pentagon's direct children can all reference each other and can be referenced by all ancestors (containment-wise ancestors). Globality is only one function of a pentagon. Actually a pentagon is a lot like globality, where there are multiple levels of globality and that exists in today's systems.
 
 -----
 
@@ -9270,7 +9293,7 @@ You can use colors coloring diagram elements to denote which diagram aspect repr
 
 -----
 
-Generating the stack operations preceding and concluding function calls is called prolog and epilog code in C
+Generating the stack operations preceding and concluding function calls is called prolog and epilog code in C.
 
 -----
 
@@ -9291,20 +9314,19 @@ Methods abstract other methods
 
 -----
 
-The grouping of lines by caller, callee, etcetera
+The grouping of lines by caller, callee, etcetera.
 
 -----
 
 Maybe a private access symbol should be inside the capsule somehow.
 
-perhaps change the symbol
+Perhaps change the symbol.
 
-de lijnen van aparte public symbols aan elkaar plakken en line naar object naar samengesmolten public symbol doen wijzen
+De lijnen van aparte public symbols aan elkaar plakken en line naar object naar samengesmolten public symbol doen wijzen.
 
 -----
 
 Tree like diagram with convergences should be part of Symbol I guess.  
-100258621(14:04 PM) :  
 Maybe by giving symbol aspects to it, I can refine the tree like diagram language
 
 -----
@@ -9321,28 +9343,36 @@ You can choose autoformatting.
 
 In identifiers:
 
-- You can choose to have case sensitivity or no case sensitivity
-- You can choose wether or not to use Spaces
-- You can choose wether or not to use other characters in a single identifier (that you normally wouldn’t in other languages)
-- You can choose whether or not there’ll be extra Spaces around member operators and function call operators
+- You can choose to have case sensitivity or no case sensitivity.
+- You can choose wether or not to use Spaces.
+- You can choose wether or not to use other characters in a single identifier (that you normally wouldn’t in other languages).
+- You can choose whether or not there’ll be extra Spaces around member operators and function call operators.
 
 Spaces will not serve as white Space if within identifiers. This adds a bit more complexity to parsing than in other languages.
 
 This is my personal favorite notation of a method call:
 
+```
 Return Value = Object . Object’s Method ( Method Argument 1, Method Argument 2 )
+```
 
 I used to be used to Visual Basic notation which would be:
 
+```
 ReturnValue = Object.ObjectMethod(MethodArgument1, MethodArgument2)
+```
 
 I see readability in using Spaces in identifiers, which would make it:
 
+```
 Return Value = Object.Object’s Method(Method Argument 1, Method Argument 2)
+```
 
 Now the member operators and function call operators are not easily spotted, so I add Spaces around those:
 
+```
 Return Value = Object . Object’s Method ( Method Argument 1, Method Argument 2 )
+```
 
 I guess I kept liking the capitals.
 
@@ -9350,60 +9380,73 @@ I guess I kept liking the capitals.
 
 ##### Member Call
 
+```
 Return Value = Object . Object’s Method ( Method Argument 1, Method Argument 2 )
 
 Return Value 1, Return Value 2 = Object . Object’s Method ( Method Argument 1, Method Argument 2 )
+```
 
 ##### Member Declaration
 
 With types...
 
+```
 Method Object . Method (Word: Argument 1, Double Word: Argument 2 ) Real 32: Return Value
+```
 
 Or:
 
+```
 Object . Method (Argument 1 As Word, Argument 2 As Double Word) Return Value As Real 32
+```
 
 Or: 
 
+```
 Object . Method (Argument 1 as Word, Argument 2 as Double Word) Return Value as Real 32
-
+```
 
 Or:
 
+```
 Method Object . Method (Word Argument 1, Double Word Argument 2 ) Real 32 Return Value
+```
 
 -----
 
 Since I’m working with multiple arguments as well as multiple return values, I may as well use a separate argument type that is both an argument as well as a return value (not to be mistaken for a reference argument).
 
-Arguments are then In parameters. Return values are Out parameters. The last type described would be InOut parameters, more nicely called Thru (Through) parameters.
+Arguments are then `In` parameters. Return values are `Out` parameters. The last type described would be `InOut` parameters, more nicely called `Thru` (Through) parameters.
 
-You could also say Read, Write and Read/Write, but this creates ambiguity about who’se reading or writing: the caller or the procedure.
+You could also say `Read`, `Write` and `Read/Write`, but this creates ambiguity about who's reading or writing: the caller or the procedure.
 
-In, Out and Through. Now we need a notation for them
+`In`, `Out` and `Thru`. Now we need a notation for them.
 
 This was the notation with arguments and return values:
 
+```
 (In, In, In) Out Out Out
+```
 
 Now we need a through.
 
 Options:
 
+```
 In: Argument1, Argument2, Thru: Argument3, Argument4, Out: Argument3, Argument4
+```
 
 I’ll stick to that for now..
 
 -----
 
-Thru arguments are not to be confused by reference arguments. The values of Thru arguments are actually put on the stack and read from the stack and written to the stack by the procedure. Reference arguments are usually In paramters and not written. The reference argument is a mere number that points to an object. The object a reference argument points at can be written and read, but this object doesn’t reside on the stack. Reference arguments in other languages were often used as a trick to use multiple return values or to have arguments that are both given to the procedure and then returned to the caller possibly altered: thru arguments.
+`Thru` arguments are not to be confused by reference arguments. The values of Thru arguments are actually put on the stack and read from the stack and written to the stack by the procedure. Reference arguments are usually In parameters and not written. The reference argument is a mere number that points to an object. The object a reference argument points at can be written and read, but this object doesn’t reside on the stack. Reference arguments in other languages were often used as a trick to use multiple return values or to have arguments that are both given to the procedure and then returned to the caller possibly altered: thru arguments.
 
-Reference arguments are still of use, but since J Core supports multiple return values (Out arguments) and thru arguments, they
+Reference arguments are still of use, but since J Core supports multiple return values (Out arguments) and thru arguments, they ...
 
 Reference arguments are actually pointer arguments. 
 
-References in Visual Basis and the Object Variables are pointers.
+References in Visual Basic and the Object Variables are pointers.
 
 References in C++ are a mere altered notation of pointers, with a few restrictions (even) put on them.
 
@@ -9413,44 +9456,47 @@ References in C++ are a mere altered notation of pointers, with a few restrictio
 
 When only using in and out arguments I could optionally use the ‘normal’ notation:
 
+```vb
 Function (In1, In2) Out1, Out2
 
-
-
 If IsBetween(TheValue , A, B) Then
+```
 
 or
 
+```vb
 If TheValue IsBetween(A, B) Then
+```
 
 or
 
+```vb
 If TheValue IsBetween A And B Then
+```
 
 or
 
+```
 If the value is between A and B then
+```
 
 it's more or less like you're making a simple grammar to be able to notate a function call more dynamically.
 
 -----
 
-100258621(03:22 AM) :  
-and also, but not. Hmm those kinds of expressions may do for odd boolean operators too... explore
+And also, but not. Hmmm those kinds of expressions may do for odd Boolean operators too... explore.
 
 -----
 
-100258621(06:22 AM) :
+Nouns are objects, verbs are methods and adverbs are properties. Hmmm... the study of language and grammar will extend the symbol language.
 
-nouns are objects, verbs are methods and adverbs are properties. Hmmm... the study of language and grammar will extend the symbol language.
-
-Symbol non encapsulative (full referential) notation. Symbol total encapsulative notation (non referentia) (possible overlaps). Symbol obvious encapsulative notation ? level bound?
+Symbol non-encapsulative (full referential) notation. Symbol total encapsulative notation (non-referential) (possible overlaps). Symbol obvious encapsulative notation ? level bound?
 
 So there doesn't have to be a difference between reference and encapsulation. You could arbitrarily assign wether to regard it reference and wether to regard it encapsulation?
 
-For childern that refer to the same thing, should or shouldn't the parent be seen as having to refer to it too? Hmmm
+For children that refer to the same thing, should or shouldn't the parent be seen as having to refer to it too? Hmmm
 
-)Oh. In overlapping it seems they contain eachother and you can't see who's the parent and who's the child
+Oh. In overlapping it seems they contain each other and you can't see who's the parent and who's the child
 
 Seeing everything that's directly or indirectly referring to another thing.
 
@@ -9505,9 +9551,7 @@ Const conPi2 = conPi \* 2
 
 -----
 
-```
 Constants can be procedure level
-```
 
 -----
 
@@ -9540,13 +9584,13 @@ Each expressionlist is a list of one or more values.
 
 -----
 
-There can be multiple return out variables. For that one procedure could also be represented by multiple objects, not? When you could separately read the output, I should manage that you can get the output objects at will, but only when the input changes the procedure is reexecuted when you get an output object...
+There can be multiple return out variables. For that one procedure could also be represented by multiple objects, not? When you could separately read the output, I should manage that you can get the output objects at will, but only when the input changes the procedure is re-executed when you get an output object...
 
 A procedure often returns a single object. Many procedures simply stand for returning a single object. In that case you can use the procedure AS an object and the procedure is notated as an object... I still need to figure out how to notate it, but it will still contain an execution point and at the time the object is referenced for retrieval or assignment, the execution sets off.
 
 A procedure’s representation can alternatively can be its return value or, in case of multiple return values, a group symbol containing the return values.
 
-Je roept eigenlijk aldoor maar procedures aan als je naar een object refereert om een procedure ervan aan te roepen, dan is dat referen eigenlijk het aanroepen van een procedure die een obect referentie terug geeft
+Je roept eigenlijk aldoor maar procedures aan als je naar een object refereert om een procedure ervan aan te roepen, dan is dat referen eigenlijk het aanroepen van een procedure die een object referentie terug geeft.
 
 
 Old Overview of Lines
@@ -9621,10 +9665,10 @@ Old Overview of Lines
 - A square can ony have a call line if it’s directly inside another square.
 - The call line must first exit the containing square.
 -----
-- If a solid procedure line can't be a call line then it is a reference line
-- If it’s a reference line then you use a solid line unless it directly exits a square
+- If a solid procedure line can't be a call line then it is a reference line.
+- If it’s a reference line then you use a solid line unless it directly exits a square.
 -----
-- Any square can have a reference line
+- Any square can have a reference line.
 
 A procedure symbol can have one of four roles: - definition, - clause, - call, - reference
 
@@ -9637,14 +9681,14 @@ A procedure symbol can have one of four roles: - definition, - clause, - call, -
         - By bidirection
 
 - Procedure redirection
-    - A call cannot be called or refererenced
-    - So a *call* line can only be at the beginning of the redirection
-    - So you can only redirect procedures with reference lines
+    - A call cannot be called or referenced.
+    - So a *call* line can only be at the beginning of the redirection.
+    - So you can only redirect procedures with reference lines.
 
 #### Overview of Access Symbol Placement
 
 - If a line crosses borders it first exits borders and then enters borders. You can't mix exits and entrances.
-- If an access symbol is drawn to denote direction it is by default put in the section between the exits and entrances, so not neccessarily with the eventually entered symbol.
+- If an access symbol is drawn to denote direction it is by default put in the section between the exits and entrances, so not necessarily with the eventually entered symbol.
 - In other words: the access symbol is usually put in front of the border that is first entered.
 - If this access symbol will go out of view then the access symbol can be placed where it’s visible.
 - It is placed in front of a border that is gone entered or exited.
@@ -9729,7 +9773,7 @@ You can decide on your own what kind of notation you want to use, but the progra
         - Access symbol is decisive
         - You sooner to exit than enter
         - You sooner to exit a procedure than an object
-
+    -----
     - Bidirection:
         - If no rule determines direction then the direction is either not expressed in the diagram or the direction goes both ways.
         - The direction certainly goes both ways if both ends have an access symbol.
@@ -9760,12 +9804,12 @@ You can decide on your own what kind of notation you want to use, but the progra
             - By bidirection
     -----
     - Procedure redirection
-        - A call cannot be called or refererenced
-        - So a *call* line can only be at the beginning of the redirection
-        - So you can only redirect procedures with reference lines
+        - A call cannot be called or referenced.
+        - So a *call* line can only be at the beginning of the redirection.
+        - So you can only redirect procedures with reference lines.
 - Access symbol placement
     - If a line crosses borders it first exits borders and then enters borders. You can't mix exits and entrances.
-    - If an access symbol is drawn to denote direction is is by default put in the section between the exits and entrances, so not neccessarily with the eventually entered symbol.
+    - If an access symbol is drawn to denote direction is is by default put in the section between the exits and entrances, so not necessarily with the eventually entered symbol.
     - In other words: the access symbol is usually put in front of the border that is first entered.
     - If this access symbol will go out of view then the access symbol can be placed where it’s visible.
     - It is placed in front of a border that is gone entered or exited.
@@ -9817,14 +9861,14 @@ You can decide on your own what kind of notation you want to use, but the progra
             - line points three capsules outwards
     - Line convergence:
         - If there are many lines then they can converge. They can be grouped by how many borders they will exit and by what they will enter.
-        - The grouping can be multi dimensional . 
+        - The grouping can be multi dimensional
         - And grouping can take place at multiple borders
         - The grouping between borders can become more precise or more general
         - You can name the groups of lines by what they exit or enter. Sort of line a bus lane can be named by its destination.
     - Ambiguity in alternate notations:
         - Double shape borders can seem ambiguous to double encapsulation
-        - Double lines can seem ambiguous to two separate lines.
-        - Line grouping can make ambiguity of double lines even worse.
+        - Double lines can seem ambiguous to two separate lines
+        - Line grouping can make ambiguity of double lines even worse
     - You can decide on your own what kind of notation you want to use, but the programming environment adopts standard ways to draw a diagram. It automatically uses different notations in different views on the system.
 
 ### Original List
@@ -9846,23 +9890,23 @@ You can decide on your own what kind of notation you want to use, but the progra
 - the other connected lines point to the symbol, not away
 -----
 - Redirection
-- circularity
-    - by recurrence
-    - by ambiguity
-- target symbols
+- Circularity
+    - By recurrence
+    - By ambiguity
+- Target symbols
 -----
-- procedures can be tied only to procedures
-- objects can be tied only to objects
+- Procedures can be tied only to procedures
+- Objects can be tied only to objects
 -----
 - A square can only have a call line directly exiting another square
 - A solid procedure line that can't be a call line is treated as a reference line
-“If it is a reference line and a solid line can’t be a call line, a solid line is used” >
+- “If it is a reference line and a solid line can’t be a call line, a solid line is used.”
 - You can't call or reference a call
 - So you can only redirect procedures with reference lines
 - So a call line can only be at the beginning of the redirection
 -----
 - If a line crosses borders it first exits borders and then enters borders. You can't mix exits and entrances
-- If an access symbol is drawn to denote direction is is by default put in the section between the exits and entrances, so not neccessarily with the eventually entered symbol.
+- If an access symbol is drawn to denote direction is is by default put in the section between the exits and entrances, so not necessarily with the eventually entered symbol.
 - If this access symbol will go out of view then
 - The access symbol is put in front of the border that is entered.
 
@@ -9887,7 +9931,7 @@ Attempt to Organize Lines Chapter
     - Rules:
         - Access Symbols
         - Outward
-        - You Sooner Exit a PRocedure than an Object
+        - You Sooner Exit a Procedure than an Object
         - You Sooner Reference an Interface than Redirect an Interface
         - Exit the Most Borders
     - Bidirection
@@ -10049,7 +10093,7 @@ Attempt to Organize Lines Chapter
     - Clause Access
     - Globalities, Interface and Clauses
 - Implicit Calls
-    - Explicit Calls
+    - Explicit calls
     - Implicit Calls
     - Implicit Return Value Reference
     - Multiple Out Parameters
