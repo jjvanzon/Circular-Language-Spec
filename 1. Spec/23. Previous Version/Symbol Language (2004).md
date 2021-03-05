@@ -2372,7 +2372,7 @@ In the epilog, first arguments are read before the created arguments are destroy
 or keeping a reference to a created parameter or __do the same with members of parameters__... Hmmm...
 
 Except for passing procedure reference to a procedure.  
-/>
+\>
 
 #### Accessing Arguments During Execution
 
@@ -3266,7 +3266,9 @@ If it were to become a connection between symbols, like implicit line assignment
 
 De assignment calls gedragen zich niet normaal, want consult van de argumenten van __A__ veroorzaken geen executie. Een soort passieve parameter consult vind plaats door de assignment calls, in het proloog van __A__. Bedenk wel: het zijn systeem procedures: niet normaal.
 
-![](images/Symbol%20Language%20(2004).328.jpeg)![](images/Symbol%20Language%20(2004).329.jpeg)
+![](images/Symbol%20Language%20(2004).328.jpeg)
+
+![](images/Symbol%20Language%20(2004).329.jpeg)
 
 De calls naar system procedures gedragen zich anders dan gewone calls. Ze vinden namelijk hier plaats in het proloog van de executie. Je ziet dit wèl in de text code, maar hoe zie je in diagram code of een systeem procedure apart wordt aangeroepen of in de context van een andere functie aanroep?  
 Hypothese: als je bij systeem procedure aanroep een parameter betrekt in een diepere executie, dan zit het in het proloog of epiloog. Zit de parameter in de huidige of hogere executie, of is er helemaal geen parameter bij betrokken, dan wordt de systeem procedure call normaal uitgevoerd. En veroorzaakt geen executie van de sub executor.
@@ -3338,7 +3340,7 @@ Creation and state read and write only apply to object parameters, not to parame
 
 The situation above can only exist right after a call. If you want to 
 
-< A problem: you get returned an object reference. You lead a line to it. Then the procedure returns. Line target gone. If you want to link to its object, you might want to link to its __Target Object__. But, shit, in Com, if you link to an object, it stays in memory wether the original reference holder releases or not. In Symbol, when the target object is destroyed (released) then the object is destroyed. That’s because one symbol represents the object for real. If you want a object to destroy when reference count is 0, then you have to emulate it in Symbol by creating an object symbol that represents the object. References represent references to it. The object will destroy itself if all references to it are released. It’s just a different deal in Symbol. It just is. It’s not like it’s any worse. Line methodology has too many advantages in relation to Com, to hate it for not being like Com. >
+< A problem: you get returned an object reference. You lead a line to it. Then the procedure returns. Line target gone. If you want to link to its object, you might want to link to its __Target Object__. But, dang, in Com, if you link to an object, it stays in memory wether the original reference holder releases or not. In Symbol, when the target object is destroyed (released) then the object is destroyed. That’s because one symbol represents the object for real. If you want a object to destroy when reference count is 0, then you have to emulate it in Symbol by creating an object symbol that represents the object. References represent references to it. The object will destroy itself if all references to it are released. It’s just a different deal in Symbol. It just is. It’s not like it’s any worse. Line methodology has too many advantages in relation to Com, to hate it for not being like Com. >
 
 So... To do the com way, you DO have to copy the final object target.
 
@@ -3381,9 +3383,9 @@ __This IS the text that lead me to wanting a diamond symbol instead of a call li
 Why on earth not, actually? Ok, you can’t do it in other languages, but why on earth can’t you do it here. Oh. When you reference a call, it makes the call line function as a reference line rather than a call line. If you want this to be different, a reference to call would become a call, which is not something you want to happen in your system. The reference target would get control over if the source will be a reference or if the source will execute. The source would have no say in that. Unacceptable. So a candidate for an alternative rule for A Call Can’t be Called or Referenced is: if you reference a call, its call line is treated as a reference line.  
 If you call the reference to a call... 
 
-Een call line is eigenlijk een reference line, maar als de parent square execute, dan execute ook de call. Hmmm... het is bijna of het allemaal reference lines zijn en sommige squares executen nou eenmaal. Shit! Dat is ook zo! Clauses moeten ook kunnen executen en ik zeg nu dat iets alleen execute als het een call line heeft!!! Hmmm... shit, een call is een tag, niet een line!!!!!!!!!!!!
+Een call line is eigenlijk een reference line, maar als de parent square execute, dan execute ook de call. Hmmm... het is bijna of het allemaal reference lines zijn en sommige squares executen nou eenmaal. Hè! Dat is ook zo! Clauses moeten ook kunnen executen en ik zeg nu dat iets alleen execute als het een call line heeft!!! Hmmm... hè, een call is een tag, niet een line!!!!!!!!!!!!
 
-Een call een aparte line maken is net zo iets als een triangle een aparte line maken. Hetzelfde mankement. Dan lijkt het logisch, dat een call een apart symbool krijgt, niet een aparte line. Shit. Welk symbool.  
+Een call een aparte line maken is net zo iets als een triangle een aparte line maken. Hetzelfde mankement. Dan lijkt het logisch, dat een call een apart symbool krijgt, niet een aparte line. Hè. Welk symbool.  
 \>
 
 #### => Elsewhere
@@ -4148,7 +4150,7 @@ You could speak of conditional calls, actually.
 
 Calls can be managed by execution control. Execution control manages the regular order of the calls *and* can alter the regular traversal of calls depending on a Boolean result (If, Select, For, Do). The Boolean result can spring from any combination of forms of algebra that in the end returns a Boolean result. Comparison algebra and Boolean algebra return Boolean results.
 
-#### =>Execution Control
+#### => Execution Control
 
 But... if you pass a clause reference to an execution control procedure the execution control CAN call the clause, but only in the context of the procedure instance that called the execution control procedure!
 
@@ -4309,7 +4311,7 @@ The public ancestors of a globality are accessible from anywhere within the glob
 
 ### Brainstorm
 
-#### =>Access Ways
+#### => Access Ways
 
 Clause members can  access the members of its ancestor procedure symbols. 
 
@@ -4362,7 +4364,7 @@ A procedure can also have multiple interfaces by using triangle symbols. This en
 \>
 
 <  
-This is an example of how text code can affect the behavior of the diagram. Call line automatically changes when parameters of different types are assigned. Oh, shit, after compilation the text identifiers might not exist anymore. Then it’s gotta become a deep system aspect the overloading, independent of text code. Text code and diagram code would simply be affected by the overloading concept. It should be like this, because of reasons discussed in the language integration chapter.  
+This is an example of how text code can affect the behavior of the diagram. Call line automatically changes when parameters of different types are assigned. Oh, dang, after compilation the text identifiers might not exist anymore. Then it’s gotta become a deep system aspect the overloading, independent of text code. Text code and diagram code would simply be affected by the overloading concept. It should be like this, because of reasons discussed in the language integration chapter.  
 \>
 
 Overloading means that you give several procedures the same name, while they have a different interface. This is handy if you wish to make different variations of similar functionality.
@@ -4416,7 +4418,7 @@ When you change a parameter to an object of a different type, then the call line
 ### Shadowing
 
 <  
-Can shadowing change so that the target of a line is changed at run time automatically because of shadowing? If that’s so then shadowing is a way in which text code affects the behavior of the diagram. Same shit problem after compilation no text identifiers anymore  
+Can shadowing change so that the target of a line is changed at run time automatically because of shadowing? If that’s so then shadowing is a way in which text code affects the behavior of the diagram. Same darn problem after compilation no text identifiers anymore  
 \>
 
 Shadowing is handy when you use a triangle: a base type or an extra interface implementation.
@@ -4709,7 +4711,8 @@ Notation of the system interface can go together with the regular contents of th
 
 Calls to system procedures and object members are intermixed, so you have to be able to see both the system interface and the object members at the same time.
 
-![](images/Symbol%20Language%20(2004).385.png)  
+![](images/Symbol%20Language%20(2004).385.png)
+
 *(Calls to system interface and to object members)*
 
 The system interface encapsulates many triangular objects and procedures. However, those objects and procedures are not the same as normal objects and procedures. The members of the system interface are very primary. they don’t have a system interface themselves and you can’t redirect them with lines.
@@ -5884,7 +5887,7 @@ Oh, als je niet alleen het *aantal* exits opslaat, maar de symbolen die geëxit 
 Hè! Poe! Lines opslaan is moeilijk.
 
 Ze worden binnen een opslag entiteit opgeslagen. Nu is het nog onduidelijk hoe de target wordt geïdentificeerd.  
-Het is alleen moeilijk voor binnengaan en verlaten van object symbols. Of niet? Hè, fuck. De target moet gecreëerd zijn, maar wijst naar een referentie
+Het is alleen moeilijk voor binnengaan en verlaten van object symbols. Of niet? Hè, tjee. De target moet gecreëerd zijn, maar wijst naar een referentie
 
 Ik weet niet hoe een target wordt opgeslagen. Ik weet niet hoe een referentie wordt geïdentificeerd.
 
@@ -5892,7 +5895,7 @@ Referenties zijn inderdaad aparte entiteiten en ze verdwijnen en ontstaan bij he
 
 Dus er moet dus maar rekening mee gehouden worden dat als je een symbool van klasse of interface doet veranderen, dat dat gevolgen heeft, vooral als je het extern kan instellen met weinig beperking. Als een symbool van klasse of interface verandert, dan moeten er oude symbolen worden gederegistreerd en nieuwe symbolen worden geregistreerd. Maar hoe koppel je dan die symbolen met hun id. Nou, de registratie zit gebonden aan de parent. Dus je moet het symbool toch identificeren met zijn parent en eventueel grandparent. Dus met een heel pad. Maar hoeveel identificaties je nodig hebt is afhankelijk van de scope. Je identificeert alleen de diepere containers.
 
-OH! Inderdaad wordt elk symbool in de Symbol database opgeslagen! Alleen als je van klasse of interface verandert, deregistreer en registreer je symbolen. Shit hé, kan je dan toch een symbool met 1 nummer identificeren? Ja. Maar het zit zo: hoe kom je van nummer naar oord en van oord naar nummer? Nou, de relaties tussen de symbolen zitten in een boomstructuur opgeslagen. Je kan met de symbol id naar de parents en children hoppen.
+OH! Inderdaad wordt elk symbool in de Symbol database opgeslagen! Alleen als je van klasse of interface verandert, deregistreer en registreer je symbolen. Poe hé, kan je dan toch een symbool met 1 nummer identificeren? Ja. Maar het zit zo: hoe kom je van nummer naar oord en van oord naar nummer? Nou, de relaties tussen de symbolen zitten in een boomstructuur opgeslagen. Je kan met de symbol id naar de parents en children hoppen.
 
 Dus, oh, jee. Ondanks veranderbaarheid van het diagram staat toch elk individueel symbool (dus ook individuele referenties naar hetzelfde object) apart geregistreerd. Je kunt dus alle symbolen identificeren met een nummer.
 
@@ -6947,7 +6950,7 @@ Eigenlijk worden de lines al automatische geordend op waar ze heen gaan en waar 
 
 Bij overdreven convergence moeten vaste afstanden aangehouden worden.
 
-Worden er nog groeperingen afgestreept onderweg? Nee. Nooit. Er is altijd groepering op alle criteria. Ik bedoel entrances. Op exits wordt niet gegroepeerd, want het is altijd dezelfde die exit < nah, het gaat over meedere lines >. Er is altijd een groepering op entrances en target. Altijd primair op uiteindelijk target, secundair op de parent van de target, ternair op de grandparent van de target, totaan de eerste exit. Shit. Ik ben er nog niet uit.
+Worden er nog groeperingen afgestreept onderweg? Nee. Nooit. Er is altijd groepering op alle criteria. Ik bedoel entrances. Op exits wordt niet gegroepeerd, want het is altijd dezelfde die exit < nah, het gaat over meedere lines >. Er is altijd een groepering op entrances en target. Altijd primair op uiteindelijk target, secundair op de parent van de target, ternair op de grandparent van de target, totaan de eerste exit. Hè. Ik ben er nog niet uit.
 
 Een ander voordeel van gedwongen convergence is dat tijdens de rit de afstanden tussen de lines meestal gelijk blijven. Je kunt wel na elke border de convergence steeds wat verder overdrijven.
 
@@ -7678,7 +7681,7 @@ I am still in contemplation about this. Perhaps apply methodology can be applied
 
 Another thing interesting in these kinds of objects is Changed events. Perhaps this must become something standard too.
 
-In types I always want changed events for the sub objects. The only reason I don’t add them for all sub objects is that it’s more code writing and Visual Basic may make the program heavier. Symbol however, doesn’t put anything unused in the compiled code. Oh, shit, it does when a type with a load of changed events is a public member of the module. Hmmm... perhaps changed events must become a standard thing. That way you can really respond to any change without having to ...
+In types I always want changed events for the sub objects. The only reason I don’t add them for all sub objects is that it’s more code writing and Visual Basic may make the program heavier. Symbol however, doesn’t put anything unused in the compiled code. Oh, dang, it does when a type with a load of changed events is a public member of the module. Hmmm... perhaps changed events must become a standard thing. That way you can really respond to any change without having to ...
 
 Darn, I should also add programming methodology issues in this book. Most of which must be explained at the end.  
 < >
@@ -8495,13 +8498,13 @@ __Programming Concepts’ Diagram Elements__
 | Interface                  | Triangle |
 | Procedure                  | Square |
 | Access                     | |
-| > Global                   | All inside a pentagon (There are issues) |
-| > Public for reference     | Line to just outside to a tangent line. |
-| > Private for reference    | Line to just outside to a cross |
-| > Friend for reference     | Line to just outside to a < shape pointed inwards |
-| > Public for instancing    | Line to just outside to a dotted tangent |
-| > Private for instancing   | Line to just outside to a dotted cross |
-| > Friend for instancing    | Line to just outside to a dotted < shape pointed inwards |
+| - Global                   | All inside a pentagon (There are issues) |
+| - Public for reference     | Line to just outside to a tangent line. |
+| - Private for reference    | Line to just outside to a cross |
+| - Friend for reference     | Line to just outside to a < shape pointed inwards |
+| - Public for instancing    | Line to just outside to a dotted tangent |
+| - Private for instancing   | Line to just outside to a dotted cross |
+| - Friend for instancing    | Line to just outside to a dotted < shape pointed inwards |
 | Execution order            | Dependent of positioning. Clockwise. Symbols possibly tied together with lines. |
 | Changing reference or type | Also include creation and destruction. Special procedures that actually alter the diagram. |
 | Array                      | Special type with special methods changing the count of contained object references. |
@@ -8788,7 +8791,7 @@ There are a few standard modules that supply symbols mostly for hard to divide o
 
 Data structures in J Data may get alternative notations just as well.
 
-Maybe, but I say maybe, I should make a standard way to make an extension to Symbol Text Code. But that would allow everybody to totally fuck up Symbol Text Code. Unless I don’t publish it.
+Maybe, but I say maybe, I should make a standard way to make an extension to Symbol Text Code. But that would allow everybody to totally mess up Symbol Text Code. Unless I don’t publish it.
 
 
 Symbol Text Code
@@ -10504,7 +10507,7 @@ It might be an idea to be able to declare those constructions and reuse them by 
 
 Delcaration of constructions:
 
-```
+```vb
 Construction Type Attributes ( aClass )
 
     With aClass
@@ -10542,7 +10545,7 @@ End Construction
 
 Use of construction:
 
-```
+```vb
 For Type Attributes ( aClass )
     L "Private Const " + tPrefix + . Code Name + "Field As Long = " + aIndex
     aIndex = aIndex + 1
