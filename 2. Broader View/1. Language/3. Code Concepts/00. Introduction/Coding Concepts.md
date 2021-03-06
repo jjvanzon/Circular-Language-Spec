@@ -1,8 +1,8 @@
 ﻿Circle Language | Broader View
 ==============================
 
-Coding Concepts
----------------
+Coding Concepts Introduction
+----------------------------
 
 This documentation section covers all the coding concepts and principles of the new computer language.
 
@@ -23,10 +23,10 @@ The following principles need to be part of the code base:
 
 It is important to understand, that there are *coding principles*, and there are *coding concepts*. 
 
-Coding *principles* need to be part of the code base.
+Coding *principles* need to be part of the code base.  
 Coding *concepts* do not.
 
-A Concept is a construct, that can be programmed within the new computer language and a *principle* is something the code base can not do without. A lot of principles can be implemented as a concept, but only *after* you have added it to the code base.
+A __Concept__ is a construct, that can be programmed within the new computer language and a *principle* is something the code base can not do without. A lot of principles can be implemented as a concept, but only *after* you have added it to the code base.
 
 Examples of coding concepts are: classes, attributes, parameters and inheritance. So none of those need to be present in the code base. They can all be programmed using the new computer language itself.
 
@@ -38,16 +38,17 @@ On top of that: when developing the code base, you will determine how much can b
 
 *The texts below are loose ideas, yet to be turned into good documentation.*
 
-Process Control
-2009-05-03,
+Process Control,  
+2009-05-03
 
-Process Control like main processes and sub processes and the logging of user actions and stopping other processes from running if one process is in error state and a process monitor and notifications when something goes wrong…
+Process Control like main processes and sub processes and the logging of user actions and stopping other processes from running if one process is in error state and a process monitor and notifications when something goes wrong...   
 This should be part of Coding Concepts. I am not sure how yet.
 
 JJ
 
+-----
 
-Symbol Roles,
+Symbol Roles,  
 2004
 
 - base
