@@ -91,4 +91,3 @@ The concept of *Classes and Commands Loosely Coupled* may run into trouble when 
 A quite particular situation. But it might be solved by regarding situation as that a parameter without a class, would simply *have* *no* class. That may add the command to *any* object. This make *classless* stands for *arbitrariness* again.
 
 ![](images/Commands%20and%20Classes%20Loosely%20Coupled.009.png)
-
