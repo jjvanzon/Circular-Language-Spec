@@ -1,5 +1,5 @@
-﻿Circle Language | Broader View | Fundamental Principles
-=======================================================
+﻿Circle Language Broader View | Fundamental Principles
+=====================================================
 
 Read Me
 -------
