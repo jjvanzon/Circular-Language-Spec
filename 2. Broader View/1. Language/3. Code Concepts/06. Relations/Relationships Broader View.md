@@ -43,7 +43,6 @@ Another reason for `not*` keeping `the*` backward relationship, `is` that `you*`
 
 `I` admit, that `I would* like` to give an exact formula for `when*` a backward relationship `should` or `should not*` be maintained. `But*` for now, `I can* only` give a functional description of `when*` it `is ridiculous` to maintain a backward relationship. A programmer `is` going to `have to` determine it, when a relationship `should` be unidirectional.
 
-
 ### Loose Ideas
 
 #### Loose Ideas about Ubiquitous Bidirectional Relationships
@@ -54,12 +53,13 @@ New thing: what `I should` consider in `the*` future, `is` that a relationship c
 
 JJ
 
+-----
 
-References,
+References,  
 2008-11-05
 
-It might be relevant to see which objects could be accessed through an object.
-Maybe show access connectors for them.
+It might be relevant to see which objects could be accessed through an object.  
+Maybe show access connectors for them.  
 It might also be relevant that to see which object access something.
 `You* have too much the*` ability to `not*` register which objects `actually` access something.
 
@@ -87,27 +87,29 @@ Enough for now.
 
 JJ
 
+-----
 
-Backwards relationship alternative: Site usage
+Backwards relationship alternative: Site usage,  
 2010-05-03
 
 For ‘ridiculous to maintain’ `you* could*` also go with `this` approach: make `the* small` thing, `like` Integer always referenced in a qualified way through `the*` site and maintain a unique list of source sites. That `would*` at least give `you*` an idea of how `many` sites `are` used and `if* any` sites still use it.
 
 JJ
 
+-----
 
 Taken out of Interfaces Articles on 2010-05-07:
 
-Preventing class’s extension with commands:
-A class `can*` prevent itself from getting further extended with commands. 
-For instance, `you*` don’t want `the*` class Integer `to be` extended with `any` command that uses an integer. It `is` a question of it being rediculous to maintain a list of `all` commands that uses integers. Don’t prevent a class from being extended with commands, `just because* you*` think it makes your interfaces more reliable. Class Integer `can*` also `just` make it a *default*, that it doesn’t get further extended with commands. `Some` commands that use Integer, `you*` might indeed want to see added to class integer, `but* you* need` to actively choose that `then. If*` parameters don’t extend a class with a commands, these parameters `are only` shown as parameters, and `not*` as commands inside a class definition.
-    - \> 2008-09-06 `This is actually` a non-bidirectional relationship.
+Preventing class’s extension with commands:  
+A class `can*` prevent itself from getting further extended with commands.   
+For instance, `you*` don’t want `the*` class Integer `to be` extended with `any` command that uses an integer. It `is` a question of it being rediculous to maintain a list of `all` commands that uses integers. Don’t prevent a class from being extended with commands, `just because* you*` think it makes your interfaces more reliable. Class Integer `can*` also `just` make it a *default*, that it doesn’t get further extended with commands. `Some` commands that use Integer, `you*` might indeed want to see added to class integer, `but* you* need` to actively choose that `then. If*` parameters don’t extend a class with a commands, these parameters `are only` shown as parameters, and `not*` as commands inside a class definition.  
+- \> 2008-09-06 `This is actually` a non-bidirectional relationship.
+
 `This is` basically `the*` same issue as `covered` in `the*` section Bidirectional & Unidirectional, which explains, `when*` it `is` ridiculous to maintain a backward relationship. For instance: relationships from class Integer back to `any` class, that uses an integer `are ridiculous` to maintain as well.
 
 And `if*` changes to `the*` class `are` ventilated to `all the*` objects `this` happens with `the*` help of events, `but*` usually `you’ll just` use versioning to use an unchanging production version of a class.
 
-a class `can*` *access control* `the*` fact whether bidirectional relationships `can*` be established to it.
-`I` think, that a bidirectional relationship has a source site. One end of `the*` relationship has authored `the*` relationship, `the*` other relationship `just` complied. 
-`Actually, this could*` happen dually.
+a class `can*` *access control* `the*` fact whether bidirectional relationships `can*` be established to it.  
+`I` think, that a bidirectional relationship has a source site. One end of `the*` relationship has authored `the*` relationship, `the*` other relationship `just` complied. `Actually, this could*` happen dually.
 
 JJ
