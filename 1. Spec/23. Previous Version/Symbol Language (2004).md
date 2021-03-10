@@ -1897,18 +1897,18 @@ A border with peels can also express more abstract facts. Here are some of such 
 
 With a simple alternative shape border you can express that a symbol has a line of a certain type.
 
-|                                        |                                |                                         |
-|:--------------------------------------:|:------------------------------:|:---------------------------------------:|
+|                                      |                                  |                                        |
+|:------------------------------------:|:--------------------------------:|:--------------------------------------:|
 | ![](images/Symbol%20Language%20(2004).197.png) | ![](images/Symbol%20Language%20(2004).198.png) | ![](images/Symbol%20Language%20(2004).199.png) |
-|      Double solid object symbol:       |     Dashed object symbol:      |         Dotted object symbol:           |
-|   object symbol with an object line    | object symbol with a type line |  object symbol with an interface line   |
-|                                        |                                |                                         |
+|    *Double solid object symbol:*     |     *Dashed object symbol:*      |        *Dotted object symbol:*         |
+| *object symbol with an object line*  | *object symbol with a type line* | *object symbol with an interface line* |
+
 
 |                                                |                                                |
 |:----------------------------------------------:|:----------------------------------------------:|
 | ![](images/Symbol%20Language%20(2004).200.png) | ![](images/Symbol%20Language%20(2004).201.png) |
-|            Double procedure symbol:            |            Dotted procedure symbol:            |
-|     procedure symbol with a reference line     |    procedure symbol with an interface line     |
+|           *Double procedure symbol:*           |           *Dotted procedure symbol:*           |
+|    *procedure symbol with a reference line*    |   *procedure symbol with an interface line*    |
 
 The solid border needs to be doubled, because otherwise you don’t see that information about the line is expressed. When you denote that a symbol has both an object line as well as a type line, you can use a single solid peel, because then it’s clear that you’re expressing line information. 
 
