@@ -1,10 +1,10 @@
-﻿Circle Language | Construct Drafts | Input Output
-=================================================
+﻿Circle Language Construct Drafts | Input Output
+===============================================
 
 Further Parameter Passing Stereotyping
 --------------------------------------
 
-Comtemplations about further thru parameter passing stereotyping will be postponed.
+Contemplations about further thru parameter passing stereotyping will be postponed.
 
 Throughput could have the following elements:
 
@@ -12,12 +12,13 @@ Throughput could have the following elements:
 - used
 - transformed
 
-Affected means that what’s written to the object is not dependant on the original contents of the object.
-Affected and used means the same as affected, but also values are read from the object, but the read values do not have an effect on the object itself.
+Affected means that what’s written to the object is not dependant on the original contents of the object.  
+Affected and used means the same as affected, but also values are read from the object, but the read values do not have an effect on the object itself.  
 Transformed means that what’s written to the object is dependant on what was first read from the object.
 
 < Actually, just affected is not throughput at all, that’s output. >
 
+-----
 
 The thru parameter passing type can be further split up in *affected*, *used & affected*, *transformed*, *transformed same value*, *used & affected & transformed* and *used & affected & transformed same value*.
 
@@ -56,10 +57,10 @@ This gives us the following number of parameter passing situations:
 
 ### Brainstorm
 
-Do I really need to stereotype this many subtile variations? Isn’t the fact that it is thru enough to tie everything together?
-This whole section in, out, thru is getting out of hand.
-It was supposed to be simple. It wasn’t even there at first.
-I have to simplify the story, keeping the split up in affected, used, transformed and ‘same value’ a detail
+Do I really need to stereotype this many subtile variations? Isn’t the fact that it is thru enough to tie everything together?  
+This whole section in, out, thru is getting out of hand.  
+It was supposed to be simple. It wasn’t even there at first.  
+I have to simplify the story, keeping the split up in affected, used, transformed and ‘same value’ a detail.  
 Then I need to work out the subjects under the assumption, that you only need to be concerned with in, out and thru.
 
 ### Same Value
@@ -71,24 +72,24 @@ Then I need to work out the subjects under the assumption, that you only need to
 <
 combinations:
 
-not affected, not used, not transformed
+not affected, not used, not transformed  
 \-
-not affected, not used, too transformed
-transformed
-not affected, too used, not transformed
-used
+not affected, not used, too transformed  
+transformed   
+not affected, too used, not transformed  
+used  
 \>
-in, not thru
-not affected, too used, too transformed
-used & transformed
-too affected, not used, not transformed
-affected
-too affected, not used, too transformed
-affected & transformed
-too affected, too used, not transformed
-affected & used
-too affected, too used, too transformed
-affected & used & transformed
+in, not thru  
+not affected, too used, too transformed  
+used & transformed  
+too affected, not used, not transformed  
+affected  
+too affected, not used, too transformed  
+affected & transformed  
+too affected, too used, not transformed  
+affected & used  
+too affected, too used, too transformed  
+affected & used & transformed  
 
 < only *used* is actually input, not throughput. >
 
@@ -108,7 +109,8 @@ Does not make sense. You’d give a parameter an initial value, that does not ge
 - used to affect itself ( = throughput )
 - affected by another ( = ~ output / affected
 - produced ( = output )
-- temporarily existant
+- temporarily existent
+-----
 - privates used to affect another
 - privates used to affect itself
 - privates affected by another
