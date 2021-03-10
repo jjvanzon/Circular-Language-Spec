@@ -9855,13 +9855,14 @@ You can decide on your own what kind of notation you want to use, but the progra
         - Double dashed square:
             - It’s a procedure reference to a procedure in the grandparent
         - Etcetera
+    -----
     - Double lines:
         - In these cases, alternate shape borders are usually not used
-        -----
         - Double line: 
             - Line points two capsules outwards
         - Triple line: 
-            - line points three capsules outwards
+            - Line points three capsules outwards
+    -----
     - Line convergence:
         - If there are many lines then they can converge. They can be grouped by how many borders they will exit and by what they will enter.
         - The grouping can be multi dimensional
