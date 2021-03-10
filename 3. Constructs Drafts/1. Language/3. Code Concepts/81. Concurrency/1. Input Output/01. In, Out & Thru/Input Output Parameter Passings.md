@@ -731,7 +731,7 @@ JJ
 Parameters,   
 2008-06
 
-Always something is the input and something is the output: at least one thing is used, and at least one thing is affected. But the affected thing can also be a new thing  
+Always something is the input and something is the output: at least one thing is used, and at least one thing is affected. But the affected thing can also be a new thing.  
 One thing is executed on another. So its data executed on data.
 
 JJ
@@ -778,9 +778,11 @@ Actually, the method will only become part of the classes that it directly uses.
 
 -----
 
-Byrefs have pros and cons in different situations.
+ByRefs have pros and cons in different situations.
 
-# From the original Symbol documentation
+
+From the Original Symbol Documentation
+======================================
 
 ## Procedure Parameters
 
@@ -1288,13 +1290,13 @@ Implicit calls when referencing square contents (and their explicit diagram repr
 
 #### New Brainstorm Texts
 
-###### New
+##### New
 
 - < > The assignment destination consult is not seen as a consult. < > Consult of a parameter as assignment destination does not require execution of the parameter holder.
 - Executor represents one execution per call on definition.
     - Implicit calls are not made for diamond contents reference < >
 
-###### Old
+##### Old
 
 < 2008-10-08 This talks about parameter passing, a notation for value assignment and about implicit call. Those three are spread over multiple documentation sections. But do the cross out here. >
 
