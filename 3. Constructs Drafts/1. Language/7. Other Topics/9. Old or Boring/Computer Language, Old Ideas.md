@@ -753,7 +753,7 @@ Operation is actually a nice synonym for a function, procedure, subroutine, rout
 
 I have to think about and write something about the fact that most properties that can be written are hardly ever read.
 
-For clarity, there are cases in which common parameters of members are best included in each member, but there are also cases in which common parameters of members can best become members of their own. For instance in set of members with a lot of parameters that have the same values a lot. If the values of the common parameters are the same most of the time, they are best made members of their own. 
+For clarity, there are cases in which common parameters of members are best included in each member, but there are also cases in which common parameters of members can best become members of their own. For instance in set of members with a lot of parameters that have the same values a lot. If the values of the common parameters are the same most of the time, they are best made members of their own.
 
 If the values of the parameters are different all the time, it's best to keep them as parameters.
 
