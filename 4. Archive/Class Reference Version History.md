@@ -1,4 +1,4 @@
-﻿Class Reference articles versions
+﻿Class Reference Articles Versions
 =================================
 
 | Version            | Description                                                       |

@@ -1,4 +1,4 @@
-﻿Class Referrers articles versions
+﻿Class Referrers Articles Versions
 =================================
 
 | Version            | Description                                                       |
