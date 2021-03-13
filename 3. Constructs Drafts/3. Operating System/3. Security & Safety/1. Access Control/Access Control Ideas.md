@@ -4,21 +4,22 @@
 Access Control Ideas
 --------------------
 
-( used to be intrinsic principle )
+(Access Control used to be intrinsic principle.)
 
 - Encryption
-- Object = User , User = Object
+- Object = User, User = Object
 - Access Literals
 - Over System Methods
 - From certain object oriented perspectives
-- Parent
-- Interface Parent
-- Etcetera
+    - Parent
+    - Interface Parent
+    - Etcetera
 - Global
 - Certain levels up
 
+-----
 
-Access Control,
+Access Control,  
 2008
 
 A lot of things about the system interface could be access controlled. Access control might only be worked out in the future. You might however mention it in the documentation in multiple places, where access control could be applied. Maybe refer to the access control documentation, but also maybe mention the access control’s physical effect.
@@ -27,25 +28,22 @@ An idea for access control documentation, might be that you could consider the a
 
 JJ
 
+-----
 
-Access Control, Public & Private, 2008-06-08
+Access Control, Public & Private,  
+2008-06-08
 
-Public and private are actually part of access control.
-
-Access control determines what objects can see what content of another object.
-
-Content of an object, that can only be seen by the object itself is called private content of the object. Public content of the object is what can be seen from the outside by any other object.
-
+Public and private are actually part of access control.  
+Access control determines what objects can see what content of another object.  
+Content of an object, that can only be seen by the object itself is called private content of the object. Public content of the object is what can be seen from the outside by any other object.  
 But if one object decides things are visible to any other object, a parent object can decide to put more restrictions on the access, so that not all other objects can access the public contents of another object.
 
-I’ve often brainstormed about this. About making public and private not part of access control, because access control would be user bound and public and private would just be there to turn something into a black box. But if you approach users as objects with certain access priveledges, you can make an analogy. Content accessible only to the object itself are private contents of an object. Content accessible to other objects are public content, but access to this content can be further restricted by a parent object.
+I’ve often brainstormed about this. About making public and private not part of access control, because access control would be user bound and public and private would just be there to turn something into a black box. But if you approach users as objects with certain access privileges, you can make an analogy. Content accessible only to the object itself are private contents of an object. Content accessible to other objects are public content, but access to this content can be further restricted by a parent object.
 
-Private and public do have more of a function as complexity-hiding.
-
+Private and public do have more of a function as complexity-hiding.  
 But that is just another point to access control. Access control is not only there to make certain people not able to do certain things. It is also there for complexity-hiding, to make it easier on people, making sure they don’t see irrelevant details that obscure the picture.
 
-However, this complexity hiding is very welcome in the diagrams, because it hides the complexity of a procedure, so you only see a name of a command and some parameters.
-
+However, this complexity hiding is very welcome in the diagrams, because it hides the complexity of a procedure, so you only see a name of a command and some parameters.  
 However, before access control is implemented, you will just see the private contents of a command wherever you can call it. Tough.
 
 JJ
@@ -55,7 +53,7 @@ JJ
 Access Control in Creator currently means the following things:
 
 - Certain procedures in the code Creator generates, can be access controlled by the author of the structure. 
-- On top of that, the *existance* of Property Get and Property Set can be controlled for attributes.
+- On top of that, the *existence* of Property Get and Property Set can be controlled for attributes.
 - Also certain things can be made read-only or inaccessible to the *user*.
 
 Access controlling procedures means that you can give procedures one of the following access modifiers:
@@ -64,10 +62,10 @@ Access controlling procedures means that you can give procedures one of the foll
 - Friend
 - Public
 
-The procedures that can be access controled are:
+The procedures that can be access controlled are:
 
 - __JAttribute.WriteAccess__ : 
-    - Sets the attribute’s Propety Set procedure acces modifier
+    - Sets the attribute’s Property Set procedure acces modifier
 - __JAttribute.ChangeByUser__ : 
     - Controls if the user can change the attribute
 - __When1.ReadAccess__ : 
@@ -91,12 +89,12 @@ And then there’s __JAttribute.HasGet__ and __JAttribute.HasSet__, which contro
 
 Furthermore, you can separately control access by the user for two things:
 
-- JAttrbute.ChangeByUser
+- JAttribute.ChangeByUser
     - Controls whether a user can change the value of an attribute or not.
 - WhenN.AddAndRemoveByUser
     - Controls whether a user can Add and Remove items in a related list.
 
-It is the intention for the programmer to be able to access control most procedures that would otherwize be __Public__ and also separately control access from the user interface to those procedures. Also, the programmer will be more able to leave out certain procedures altogether, like you can with the attribute __Get__ and __Set__. For instance, the __Add__, __Remove__ and __Clear__ methods in a =>n related list, should become separately access controllable as well as separately disincluded.
+It is the intention for the programmer to be able to access control most procedures that would otherwise be __Public__ and also separately control access from the user interface to those procedures. Also, the programmer will be more able to leave out certain procedures altogether, like you can with the attribute __Get__ and __Set__. For instance, the __Add__, __Remove__ and __Clear__ methods in a =>n related list, should become separately access controllable as well as separately excluded.
 
 #### Read Only
 
@@ -109,7 +107,7 @@ Nothing has been thought of to control access for different users. That’s quit
 
 #### Public Creatable Classes
 
-A common way of accessing an object structure is by accessing it through one or more global objects and access all other objects from there. You can also allow an application to create object of classes and access a portion of the object structure from there. Internal in the software module that contains a class, the class can already be created. You can’t put a plug in that. Whether or not a class can be created by another software module, you have to specify for each class. Make the __Class.PublicCreatable = True__ and the class will be publically creatable. By default classes are not public creatable.
+A common way of accessing an object structure is by accessing it through one or more global objects and access all other objects from there. You can also allow an application to create object of classes and access a portion of the object structure from there. Internal in the software module that contains a class, the class can already be created. You can’t put a plug in that. Whether or not a class can be created by another software module, you have to specify for each class. Make the __Class.PublicCreatable = True__ and the class will be publicly creatable. By default classes are not public creatable.
 
 ### Attribute . HasGet
 
@@ -164,66 +162,78 @@ Class contains the following name properties:
 - DefaultListDisplayName
 - ItemControlBaseObjectName
 
-When you don’t separately specify names for the __Item Control__ or __Item Window__ for instance, these names are derived from more general names, like __Class.Name__ and __Class.NamePlural__.
+When you don’t separately specify names for the `Item Control` or `Item Window` for instance, these names are derived from more general names, like `Class.Name` and `Class.NamePlural`.
 
 For more information see the *Names* section.
-
 
 ### Ideas
 
 #### Access Control
 
-Misschien moet elke access modifier / access control specifier wel altijd per object een eigen interface creeeren. Je kunt interfaces toch laten overlappen. 
+Misschien moet elke access modifier / access control specifier wel altijd per object een eigen interface creëren. Je kunt interfaces toch laten overlappen. 
+
+-----
 
 JCode: being able to see the source code, but not change it. That's handy for supplied components.
 
-Function failure due to security restrictions are things on which a function can fail without there actually being an error in any code or logic. I’m sure that a methody can be devised that will make error handling in these cases unneccesary, though.
+-----
+
+Function failure due to security restrictions are things on which a function can fail without there actually being an error in any code or logic. I’m sure that a methodology can be devised that will make error handling in these cases unnecessary, though.
+
+-----
 
 Public for sub components, but private for super components.
 
-The problem is, that the idea was to implement it as a concept, but it’s important to make the access control not easily breachable, and I’m not sure how I will do that.
+-----
 
+The problem is, that the idea was to implement it as a concept, but it’s important to make the access control not easily breached, and I’m not sure how I will do that.
 
 ### Automatic Containment And Access Control
 
-Automatic encapsulation structure does impose a problem in Access Control. An access modifier is related to the position in the encapsulation. The base of the system has only a referential structure. Everything is basically accessible at any level. Anything is potentially global. But when you convert it to an encapsulation structure, not everything is global.
-
-When you see the encapsulation structure, you can impose an access restriction based on the position in the encapsulation structure, but if you change the underlying referential structure, the symbol gets a different position in the hierarchy, perhaps a higher one, making it all of a sudden accessible on a higher level. On one hand this is required: higher objects make use of the object. But that means everything is basically public, because you can use anything. As soon as you want to use it, it is placed on a higher level in the hierarchy. There are no restrictions there. What you might be able to do in Access Control is actually fix the relative encapsulation position, so it can’t be made any higher, and then impose an access modifier based on hierarchical position.
-
+Automatic encapsulation structure does impose a problem in Access Control. An access modifier is related to the position in the encapsulation. The base of the system has only a referential structure. Everything is basically accessible at any level. Anything is potentially global. But when you convert it to an encapsulation structure, not everything is global.  
+When you see the encapsulation structure, you can impose an access restriction based on the position in the encapsulation structure, but if you change the underlying referential structure, the symbol gets a different position in the hierarchy, perhaps a higher one, making it all of a sudden accessible on a higher level. On one hand this is required: higher objects make use of the object. But that means everything is basically public, because you can use anything. As soon as you want to use it, it is placed on a higher level in the hierarchy. There are no restrictions there. What you might be able to do in Access Control is actually fix the relative encapsulation position, so it can’t be made any higher, and then impose an access modifier based on hierarchical position.  
 But access modifiers are for later, but anyway, that was a good idea about it.
+
+-----
 
 With access control you make an object accessible only:
 - *through* a certain other object or
 - *to* certain other objects or users
 
+-----
+
 Classes giving methods access to their private contents should be a form of access control.
 
-#### Disincluding Add, Remove or Clear from Programming Interface
+#### Excluding Add, Remove or Clear from Programming Interface
 
-You can disinclude the __Add__, __Remove__ and __Clear__ methods with the __HasAdd__, __HasRemove__ and __HasClear__ structure settings. You can also merely access control the __Add__, __Remove__ and __Clear__ methods. That way you can disallow calls to the procedures from outside your library or application, so only your application can __Add__, __Remove__ or __Clear__, but any program, that links to your application, can’t. That would be the situation when you give a method __Friend__ access. You can also make the method __Private__, in case of which only procedures within the list class itself can access the method. See the *Access Control* section for more on this subject.
+You can exclude the __Add__, __Remove__ and __Clear__ methods with the __HasAdd__, __HasRemove__ and __HasClear__ structure settings. You can also merely access control the __Add__, __Remove__ and __Clear__ methods. That way you can disallow calls to the procedures from outside your library or application, so only your application can __Add__, __Remove__ or __Clear__, but any program, that links to your application, can’t. That would be the situation when you give a method __Friend__ access. You can also make the method __Private__, in case of which only procedures within the list class itself can access the method. See the *Access Control* section for more on this subject.
 
-Considere access control of the system interface members.
+Consider access control of the system interface members.
 Perhaps you just have to talk about access control in the implementation articles of Coding Concepts and all.
 
-A procedure extension event is not a mult-cast event, like most events. There can be only one implementation of a procedure extension event.
-The parent object is the only one that can implement the system command extension event. This is has to be access controlled.
+-----
+
+A procedure extension event is not a multi-cast event, like most events. There can be only one implementation of a procedure extension event.  
+The parent object is the only one that can implement the system command extension event. This is has to be access controlled.  
 Access control is worked out later in the *Access Control* articles.
 
+-----
 
-- Access control
+Access Control
 
-A lot of things about the system interface needs to be access controlled. Access control will only be worked out in the future. You do however have to mention it in the documentation everywhere, where access control has to be applied. Refer to the access control documentation, but also immediately mention the needed access control’s physical effect.
-
+A lot of things about the system interface needs to be access controlled. Access control will only be worked out in the future. You do however have to mention it in the documentation everywhere, where access control has to be applied. Refer to the access control documentation, but also immediately mention the needed access control’s physical effect.  
 Do put in the preliminary access control documentation, that you need to consider everything about access control in the system interface.
 
+-----
 
-Access Control,
+Access Control,  
 2008-08-18
 
 The private contents of a call are only visible to users, that are declared friends of the command definition. But that’s a topic for the Access Control articles.
 
 JJ
 
+-----
 
 Access Control,
 
@@ -231,49 +241,51 @@ Restrictions on how large a bulk over data may be transmitted in one blow, or ho
 
 JJ
 
+-----
 
-Access Control,
+Access Control,  
 2008-06-16
 
-Usage quota's are essential in security now,
-because otherwise a user programming something
-could bring a remote module down.
+Usage quota's are essential in security now, because otherwise a user programming something could bring a remote module down.
 
 JJ
 
+-----
 
-Security,
+Security,  
 2008-08-06
 
 Macro beveiliging:
 - Alleen lees-acties toestaan
 - Ook verzend (e-mail, HTTP) acties toestaan
-- Schrijfacties toestaan
-(= access control want je geeft schrijf toegant tot een bron)
+- Schrijfacties toestaan  
+  (= access control want je geeft schrijf toegang tot een bron)
 
 JJ
 
+-----
 
 Access Control,
 
-even though logging into the internet gives you automatic access to certain sites, with your access cards or tickets displayed at the bottom-right corner of the screen, you might also choose to have to click it in order to actually access the site. This sort of gives you the idea of actively entering something. Perhaps you want to see yourself as the user of a module, and only sometimes, when you click your access card, you get to be an author of it, and see more of its internal structure and the comments.
+Even though logging into the internet gives you automatic access to certain sites, with your access cards or tickets displayed at the bottom-right corner of the screen, you might also choose to have to click it in order to actually access the site. This sort of gives you the idea of actively entering something. Perhaps you want to see yourself as the user of a module, and only sometimes, when you click your access card, you get to be an author of it, and see more of its internal structure and the comments.
 
 JJ
 
+-----
 
 But for security it is always important to consider: who's supervising the supervisors of the supervisors? who might manipulate the supervisor. Who will try to go around the supervisor? But further security issues are for later.
 
+-----
 
-Command IO,
-Security & Privacy,
+Command IO,  
+Security & Privacy,  
 2008-07-14
 
-Sometimes an executable object does not need to be open about what it reads or writes. It should be able to apply privacy to data, owned by the site, or the user. This to protect the design of the data model. You shouldn't have to expose your data model
+Sometimes an executable object does not need to be open about what it reads or writes. It should be able to apply privacy to data, owned by the site, or the user. This to protect the design of the data model. You shouldn't have to expose your data model.
 
 However, when it is the user or site's OWN data, you have to be completely open about what a command will read or change.
 
-Then the data model stores data, that is the user's OWN data,
-the data model should be completely open, as far as reporting command IO to the user.
+Then the data model stores data, that is the user's OWN data, the data model should be completely open, as far as reporting command IO to the user.
 
 You could say: an authoring company does not have to expose the data model of its programs, even when it is the user's own data. But strong security with a user choice based on command IO requires the data model to be open.
 
@@ -283,7 +295,7 @@ It is like a user has to have access to the data of its own file. Compare it to 
 
 The software author should not have too much of a choice about what data models it will protect. If it's the user's own data, the software needs to be completely open about a command's IO.
 
-If a software author can keep any data undisclosed, it takes away the security aspect. Open Command IO shields malicious software, spyware, adware and virusses.
+If a software author can keep any data undisclosed, it takes away the security aspect. Open Command IO shields malicious software, spyware, adware and viruses.
 
 It remains to be exactly determined how the system can even see whether it is a user's own data or for instance another company's private data.
 
@@ -291,10 +303,11 @@ All this is for later. It is security and privacy. It won't be further elaborate
 
 JJ
 
+-----
 
-Access Control
+Access Control,
 
-< This issue is replaced by access control >
+< This issue is replaced by access control. >
 
 The following is unclear. A View is something with which you view something, but can also be an editor. To distinguish view and editor you use the terms view and editor. Now... these terms are about the user interface. You can also have one programming interface be read only, while in another programming interface you can also edit the data. How should I call those? How should I call the editable one?
 
@@ -302,36 +315,38 @@ I can't call it editor, because that suggests that it is a user interface...
 
 JJ
 
-
 ### More Ideas
 
-Access Control,
+Access Control,  
 2008-09-09
 
-In a capsule, everything that goes in and comes out goes through an encryption, so that everything in it looks fuzzy on the outside, when you do not have the key. You could litterly display the fuzziness, so the concept of encryption is visualized.
+In a capsule, everything that goes in and comes out goes through an encryption, so that everything in it looks fuzzy on the outside, when you do not have the key. You could literally display the fuzziness, so the concept of encryption is visualized.
 
 JJ
 
+-----
 
-Access Control,
-With Conditions,
+Access Control,  
+With Conditions,  
 2008-09-06
 
 No dual relations allowed WITH objects with type command.
 
 JJ
 
-
 ### From the original Symbol documentation
 
 Assumptions about access controllers, for instance:
 
-![](images/Access%20Control%20Ideas.001.png "Private Notation that Won't Do 1")
+![](images/Access%20Control%20Ideas.001.png)
 
 This for some reason implies that it’s ONLY accessible from the inside. Formally, the access symbol denotes that it’s simply accessible and that this access controller is imposed by the square.
 
+-----
+
 < 2008-10-09  The idea back in 2004 of the expression of access controllers in a diagram was, that the controller was placed in front of the symbol, that *imposed* the access control. I really should not consider this for basic black boxing, but I should consider this, when I work out the more generally applicable access control. >
 
+-----
 
 2004,
 
@@ -339,17 +354,17 @@ Accessing public objects is no longer ambiguous if you use access symbols just o
 
 JJ
 
+-----
 
 2004,
 
 Maybe a private access symbol should be inside the capsule somehow.
 
-perhaps change the symbol.
+Perhaps change the symbol.
 
-de lijnen van aparte public symbols aan elkaar plakken en line naar object naar samengesmolten public symbol doen wijzen
+De lijnen van aparte public symbols aan elkaar plakken en line naar object naar samengesmolten public symbol doen wijzen.
 
 JJ
-
 
 ### More Ideas
 
@@ -357,22 +372,20 @@ Security may be an extension to Symbol access control. But then with users. I gu
 
 #### Brainstorm
 
-Bij een absolute integratie van programmatische access modifiers en user access control, moet je een user-under-user principe toepassen, waarbij elke sub-user de access verder kan beperkt. Elke class en procedure is daarbij ook een user. De access kan ingesteld worden voor alle users (object/gebruiker) (public, private) en users met bepaalde eigenschappen of verhoudingen tot deze 'user' (friend, protected). Dus toegang wordt daarbij verleend voor bepaalde users tot bepaalde users. Een gebruiker wordt daardoor ook een object. Dit user object heeft dus bepaalde eigenschappen, waardoor hij tot bepaalde andere users/objecten wel of geen toegang krijgt. De rights van een user worden nooit door hemzelf bepaald. De toegang tot zijn eigen dingen wordt wel bepaald door hemzelf, en door containers of referrers, maar dan alleen de toegang tot deze objecten via de container. Alle andere toegangswegen zijn open, tenzij ze dus weer door een hoger object worden geblockt. Dus als je toegang regelt op het object boven het hoogst containende object, dan is het afgeblockt. Het hoogst containende object is eigenlijk altijd de owner.
+Bij een absolute integratie van programmatische access modifiers en user access control, moet je een user-under-user principe toepassen, waarbij elke sub-user de access verder kan beperkt. Elke class en procedure is daarbij ook een user. De access kan ingesteld worden voor alle users (object/gebruiker) (public, private) en users met bepaalde eigenschappen of verhoudingen tot deze 'user' (friend, protected). Dus toegang wordt daarbij verleend voor bepaalde users tot bepaalde users. Een gebruiker wordt daardoor ook een object. Dit user object heeft dus bepaalde eigenschappen, waardoor hij tot bepaalde andere users/objecten wel of geen toegang krijgt. De rights van een user worden nooit door hemzelf bepaald. De toegang tot zijn eigen dingen wordt wel bepaald door hemzelf, en door containers of referrers, maar dan alleen de toegang tot deze objecten via de container. Alle andere toegangswegen zijn open, tenzij ze dus weer door een hoger object worden geblokt. Dus als je toegang regelt op het object boven het hoogst containende object, dan is het afgeblokt. Het hoogst containende object is eigenlijk altijd de owner.
 
 De administrator heeft alle rechten. Dat wil niet zeggen, dat hij zijn eigen privileges kan bepalen. Niemand bepaald de privileges van de administrator: die liggen vast.
 
 Verder moet zo'n access systeem niet alleen mooi georganiseerd zijn, maar ook nog eens werkelijk veilig, en liever niet kraakbaar.
 
+-----
 
-Security & users:
-why the hell do you have to login everywhere,
-why can’t you be a single user on the internet, and you’ve got access rights.
-The access rights to a certain site are just added to your rights.
-
+Security & users:  
+Why on earth you have to login everywhere, why can’t you be a single user on the internet, and you’ve got access rights. The access rights to a certain site are just added to your rights.
 
 ### Ideas
 
-Security & Safety
+Security & Safety,
 
 There's no way in windows something is going to check what an executable actually performs. Whether is contains instructions to delete files or anything. You CAN build that into the Software System as a security feature.
 
@@ -380,29 +393,21 @@ JJ
 
 #### Security & Safety
 
-Security is now present at the heart of the system. It is intrinsicly part of the Code. It is not a module of Code, but it is very present in it. The access modifiers Public and Private are actually a security feature now. There is no distinction between user access control and programmatic access modifiers. They are both about who can access what out of what position.
+Security is now present at the heart of the system. It is intrinsically part of the Code. It is not a module of Code, but it is very present in it. The access modifiers Public and Private are actually a security feature now. There is no distinction between user access control and programmatic access modifiers. They are both about who can access what out of what position.
 
 The Concept Literals feature of code makes it possible to integrate security keywords into the programming language.
 
+-----
 
-Access Control,
+Access Control,  
 2008-06-10
 
-A user is also an object, that has private content,
-that it can make public.
+A user is also an object, that has private content, that it can make public.
 
-Every form of grant to access is given to an
-object in the form of a virtual access card or ticket.
-Tickets expire sooner than access cards.
-The tickets and access cards form the access control
-descriptor for what is accessible to an object.
+Every form of grant to access is given to an object in the form of a virtual access card or ticket. Tickets expire sooner than access cards. The tickets and access cards form the access control descriptor for what is accessible to an object.
 
-An object describes what kind of options you have to 
-have on your card or ticket in order to get access.
+An object describes what kind of options you have to have on your card or ticket in order to get access.
 
-Objects have their own security relations.
-A user-object is an object with
-certain access, but sees the objects' restrictions
-to eachother. What's that about? How does that work?
+Objects have their own security relations. A user-object is an object with certain access, but sees the objects' restrictions to each other. What's that about? How does that work?
 
 JJ
