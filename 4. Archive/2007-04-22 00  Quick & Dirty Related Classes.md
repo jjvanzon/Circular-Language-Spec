@@ -4,7 +4,7 @@
 Quick & Dirty Related Classes
 -----------------------------
 
-`[ Obsolete ]`
+`[ Deprecated Text ]`
 
 *Perhaps reading it slowly might help.*
 
