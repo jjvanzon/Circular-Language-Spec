@@ -1,4 +1,4 @@
-﻿Class Commands articles versions
+﻿Class Commands Articles Versions
 ================================
 
 | Version            | Description                                                       |
