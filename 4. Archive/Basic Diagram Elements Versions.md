@@ -1,4 +1,4 @@
-﻿Basic Diagram Elements article versions
+﻿Basic Diagram Elements Article Versions
 =======================================
 
 | Version            | Description                                                                              |
