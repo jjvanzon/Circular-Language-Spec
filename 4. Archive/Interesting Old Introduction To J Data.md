@@ -1,7 +1,9 @@
 ﻿Interesting Old Introduction To J Data
 ======================================
 
-__[Obsolete]__
+*2005-08-31*
+
+`[ Obsolete Documentation ]`
 
 *This story dates from a time when I looked at it from a data perspective, rather than an object perspective. I kept the name J Data in the story, instead of replacing it with Creator, so that it’s clear the story is about an older perspective.*
 
@@ -21,7 +23,7 @@ The classes of J Lists and Trees, each representing a list or tree, share a comm
 
 With J Data Structure you can describe a *relational structure* (which is not the same as in relational databases). This structure defines the *purpose* of the data, rather than how it’s *stored*. You can also call it the the data logic or logical data, distinguishing it from physical data: how it’s stored. I also call it the object structure or relational object structure. Each element in the object structure may be a list or tree. Object structure also defines relations between these elements.
 
-All applications can mostly be deduced to a relational object structure. Therefore, most of the application logic can be delegeted to J Data.
+All applications can mostly be deduced to a relational object structure. Therefore, most of the application logic can be delegated to J Data.
 
 J Data Generator produces a software module with an object structure that matches the data logic. From the data logic J Data Generator can read what qualities an element needs. Because each basic data structure in J Lists and Trees returns its qualities, a match is easily made. Needed qualities can also partly be derived from the actual data put into the J Data Structure.
 
@@ -30,8 +32,8 @@ So using J Data is quite easy: you define the *logical* data elements and how th
 Even though you can use J Data Structure for all your data, it is still possible to directly use the basic data structures provided by J Lists and Trees.
 
 
- Summary
- -------
+Summary
+-------
 
 - Basic Data structures: lists and trees
 - Common interface for lists
