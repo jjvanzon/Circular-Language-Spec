@@ -1,5 +1,5 @@
-﻿Concepts article group versions
-===============================
+﻿Concepts Articles Version History
+=================================
 
 | Version       | Description                               |
 |---------------|-------------------------------------------|
