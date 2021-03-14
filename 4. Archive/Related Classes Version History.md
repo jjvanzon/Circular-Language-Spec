@@ -1,5 +1,5 @@
-﻿Related Classes article versions
-================================
+﻿Related Classes Article Version History
+=======================================
 
 | Version            | Description                                                       |
 |--------------------|-------------------------------------------------------------------|
