@@ -1,5 +1,5 @@
-﻿Programming Language = Database article versions
-===============================================
+﻿Programming Language = Database Article Version History
+=======================================================
 
 | Version            | Description                                                                     |
 |--------------------|---------------------------------------------------------------------------------|
