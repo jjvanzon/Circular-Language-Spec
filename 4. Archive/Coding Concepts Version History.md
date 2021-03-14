@@ -1,5 +1,5 @@
-﻿Coding Concepts article versions
-================================
+﻿Coding Concepts Article Version History
+=======================================
 
 | Version       | Description                       |
 |---------------|-----------------------------------|
