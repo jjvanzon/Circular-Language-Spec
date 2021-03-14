@@ -1,5 +1,5 @@
-﻿Globality article group versions
-================================
+﻿Globality Articles Version History
+==================================
 
 | Version            | Description                                                        |
 |--------------------|--------------------------------------------------------------------|
