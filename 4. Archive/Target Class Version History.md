@@ -1,5 +1,5 @@
-﻿Target Classes articles versions
-================================
+﻿Target Classes Articles Version History
+=======================================
 
 | Version            | Description                                                       |
 |--------------------|-------------------------------------------------------------------|
