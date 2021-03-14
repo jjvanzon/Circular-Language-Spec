@@ -1,5 +1,5 @@
-﻿Creation Behavior of Command Calls article versions
-===================================================
+﻿Creation Behavior of Command Calls Article Version History
+==========================================================
 
 | Version       | Description                                                    |
 |---------------|----------------------------------------------------------------|
