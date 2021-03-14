@@ -1,5 +1,5 @@
-﻿Flat & Structured Interchange article versions
-=============================================
+﻿Flat & Structured Interchange Article Version History
+=====================================================
 
 | Version       | Description                                                                         |
 |---------------|-------------------------------------------------------------------------------------|
