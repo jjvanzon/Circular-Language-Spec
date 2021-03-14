@@ -1,5 +1,5 @@
-﻿Concepts as External Modules article versions
-============================================
+﻿Concepts as External Modules Article Version History
+====================================================
 
 | Version       | Description             |
 |---------------|-------------------------|
