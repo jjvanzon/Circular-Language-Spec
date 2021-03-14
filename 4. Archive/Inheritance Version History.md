@@ -1,5 +1,5 @@
-﻿Inheritance Chapter Versions
-============================
+﻿Inheritance Chapter Version History
+===================================
 
 | Version            | Description                                                                                    |
 |--------------------|------------------------------------------------------------------------------------------------|
@@ -11,5 +11,5 @@
 |                    |   along with the idea of multiple overrides in object inheritance.                             |
 |                    | - Add specialization versus data replacement                                                   |
 |                    | - More articles finished                                                                       |
-|                    | - System inheritance changed completely and made more analogus to list inheritance.            |
+|                    | - System inheritance changed completely and made more analogous to list inheritance.           |
 | XXXX-XX-XX XX  X.X | Development version.                                                                           |
