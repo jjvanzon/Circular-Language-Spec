@@ -1,5 +1,5 @@
-﻿Module Integration article versions
-===================================
+﻿Module Integration Article Version History
+==========================================
 
 | Version            | Description                                                       |
 |--------------------|-------------------------------------------------------------------|
