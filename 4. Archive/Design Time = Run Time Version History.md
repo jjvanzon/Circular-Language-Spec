@@ -1,5 +1,5 @@
-﻿Design Time = Run Time article versions
-=======================================
+﻿Design Time = Run Time Article Version History
+==============================================
 
 | Version            | Description                                                    |
 |--------------------|----------------------------------------------------------------|
