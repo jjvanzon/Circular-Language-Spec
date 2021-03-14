@@ -1,5 +1,5 @@
-﻿Identifiers articles versions
-=============================
+﻿Omitted Identifier Article Version History
+==========================================
 
 | Version            | Description                                                        |
 |--------------------|--------------------------------------------------------------------|
