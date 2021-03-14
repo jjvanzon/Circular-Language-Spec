@@ -1,5 +1,5 @@
-﻿Symbol = Creator article versions
-=================================
+﻿Symbol = Creator Article Version History
+========================================
 
 | Version            | Description                                          |
 |--------------------|------------------------------------------------------|
