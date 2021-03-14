@@ -1,5 +1,5 @@
-﻿Identifiers articles versions
-=============================
+﻿Identifiers Articles Version History
+====================================
 
 | Version            | Description                                                        |
 |--------------------|--------------------------------------------------------------------|
