@@ -1,5 +1,5 @@
-﻿Relations Between Objects articles versions
-============================================
+﻿Relations Between Objects Articles Version History
+==================================================
 
 | Version            | Description                                                      |
 |--------------------|------------------------------------------------------------------|
