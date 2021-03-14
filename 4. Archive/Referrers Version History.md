@@ -1,5 +1,5 @@
-﻿Referrers articles versions
-===========================
+﻿Referrers Articles Version History
+==================================
 
 | Version            | Description                                              |
 |--------------------|----------------------------------------------------------|
