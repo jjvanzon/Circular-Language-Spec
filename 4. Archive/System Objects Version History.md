@@ -1,12 +1,12 @@
-﻿System Objects article group versions
-=====================================
+﻿System Objects Article Group Version History
+============================================
 
 | Version                    | Name             | Description                                                                           |
 |----------------------------|------------------|---------------------------------------------------------------------------------------|
 | 2008-05-26 XX              | System Interface | Old, unfinished version                                                               |
 | 2008-05-27 00  1.0  Assign | Assignment       |                                                                                       |
 | 2008-06-21 00  1.0         | System Interface | After project Document Diagram Expression for Classes & Relations.                    |
-|                            |                  | It was the only article about System interface then                                   |
+|                            |                  | It was the only article about System interface then.                                  |
 | 2008-07-23 XX              | System Interface | Backup of some articles, before changing the article group name to System Objects     |
 | 2008-07-24 00  2.0         | System Objects   | Release version after project Work Out System Objects Articles                        |
 | 2008-07-24 XX  Assign      | Assignment       | After project Work Out Assignment Articles                                            |
