@@ -1,5 +1,5 @@
-﻿Clear Cut Coding Principles article versions
-============================================
+﻿Clear Cut Coding Principles Article Version History
+===================================================
 
 | Version            | Description                                                     |
 |--------------------|-----------------------------------------------------------------|
