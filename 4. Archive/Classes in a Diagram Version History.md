@@ -1,4 +1,4 @@
-﻿Classes in a Diagram article versions
+﻿Classes in a Diagram Article Versions
 =====================================
 
 | Version            | Description                                                                    |
