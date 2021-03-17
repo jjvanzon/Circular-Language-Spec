@@ -1,8 +1,8 @@
 ﻿Circle Language | Broader View
 ==============================
 
-Coding Concepts Introduction
-----------------------------
+Ideas Broader View
+------------------
 
 This documentation section covers all the coding concepts and principles of the new computer language.
 
