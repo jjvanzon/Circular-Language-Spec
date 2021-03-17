@@ -4,7 +4,7 @@
 Introduction
 ------------
 
-This chapter aims to introduce the basics of Circle language. Circle language is an idea for a computer programming language, mostly a diagram notation for visualizing computer code.
+This chapter aims to introduce the basics of Circle language. Circle language is an idea for a computer programming language, mostly a diagram notation for visualizing computer code. 
 
 ### Splitting up Ideas
 
