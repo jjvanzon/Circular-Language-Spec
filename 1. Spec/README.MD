@@ -4,7 +4,7 @@ Circle Language Spec
 - [Introduction](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/introduction.md)
 - [Overview](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/overview.md)
 - [Basic Diagram Elements](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/basic-diagram-elements.md)
-- [Objects](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/04.%20Objects/Objects.md)
+- [Objects](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/objects.md)
 - [Classes](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/05.%20Classes)
     - [Classes](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/05.%20Classes/Classes.md)
     - [Static](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/05.%20Classes/Static%20(unfinished).md)
