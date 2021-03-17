@@ -3,7 +3,7 @@ Circle Language Spec
 
 - [Introduction](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/Introduction.md)
 - [Overview](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/Overview.md)
-- [Basic Diagram Elements](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/03.%20Basic%20Diagram%20Elements/Basic%20Diagram%20Elements.md)
+- [Basic Diagram Elements](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/basic-diagram-elements.md)
 - [Objects](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/04.%20Objects/Objects.md)
 - [Classes](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/05.%20Classes)
     - [Classes](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/05.%20Classes/Classes.md)
