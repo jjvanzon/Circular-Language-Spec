@@ -32,6 +32,13 @@ You can’t all anything higher in the encapsulation hierarchy, so an object can
 
 The object is then accessing this *reference*, which is inside the object. The reference just happens to resolve in something outside the object, but the parent is still accessing something inside itself.
 
+-----
+
+<  
+2002 +/-:
+Variables declared inside a parent block in a procedure are accessible directly by the child blocks. Variables declared inside a child block are inaccessible to a parent block.  
+/>
+
 #### Global Access
 
 < Nice sentence:  

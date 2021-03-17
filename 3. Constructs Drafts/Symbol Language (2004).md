@@ -1,13 +1,11 @@
 ﻿`[ Deprecated documentation ]`
 
-`This is a previous attempt to make a Circle Language Spec.`
+`This is a previous attempt to make Circle Language Spec from 2004.`
 
 Symbol Language | Basic
 =======================
 
 *The New Computer Language*
-
-From 2004
 
 Introduction
 ------------
