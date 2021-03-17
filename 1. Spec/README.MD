@@ -1,8 +1,5 @@
-Circle-Language-Spec
+Circle Language Spec
 ====================
-
-Contents
---------
 
 - [Introduction](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/01.%20Introduction)
 - [Overview](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/02.%20Overview)
