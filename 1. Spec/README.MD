@@ -1,0 +1,27 @@
+Circle-Language-Spec
+====================
+
+Contents
+--------
+
+- [Introduction](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/01.%20Introduction)
+- [Overview](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/02.%20Overview)
+- [Basic Diagram Elements](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/03.%20Basic%20Diagram%20Elements)
+- [Objects](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/04.%20Objects)
+- [Classes](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/05.%20Classes)
+- [Relationships](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/06.%20Relationships)
+- [Commands](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/07.%20Commands)
+- [Parameters](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/08.%20Parameters)
+- [Modules](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/09.%20Modules)
+- [Execution Flow](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/10.%20Execution%20Flow)
+- [Black Boxes](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/11.%20Black%20Boxes)
+- [Interfaces](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/12.%20Interfaces)
+- [Events](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/13.%20Events)
+- [Inheritance](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/14.%20Inheritance)
+- [System Objects](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/15.%20System%20Objects)
+- [Type Control](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/16.%20Type%20Control)
+- [Object Resolution](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/17.%20Object%20Resolution)
+- [Conditions](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/18.%20Conditions)
+- [Object Order](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/19.%20Object%20Order)
+- [Pointers](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/20.%20Pointers)
+- [Misc Diagram Topics](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/21.%20Misc%20Diagram%20Topics)
