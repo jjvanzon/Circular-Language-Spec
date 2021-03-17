@@ -8,7 +8,7 @@ Circle Language Spec
 - [Classes](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/05.%20Classes)
     - [Classes](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/05.%20Classes/Classes.md)
     - [Static](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/05.%20Classes/Static%20(unfinished).md)
-- [Relationships](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/06.%20Relationships/1.%20Relationships.md)
+- [Relationships](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/relationships.md)
 - [Commands](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/07.%20Commands)
     - [Main Concepts](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/07.%20Commands/1.%20Commands%20Main%20Concepts.md)
     - [Start & Stop](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/07.%20Commands/2.%20Start%20&%20Stop.md)
