@@ -1,8 +1,8 @@
 ﻿Circle Language Spec | System Objects
 =====================================
 
-Ideas
------
+Loose Ideas
+-----------
 
 *The texts below are material, yet to be turned into good documentation. They are categorized into subjects and each subject may become a separate article in the future. They are ordered roughly by importance.*
 

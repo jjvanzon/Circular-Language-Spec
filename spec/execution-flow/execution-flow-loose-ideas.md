@@ -1,8 +1,8 @@
 ﻿Circle Language Spec | Execution Flow
 =====================================
 
-Ideas
------
+Loose Ideas
+-----------
 
 Execution Flow / Process Control
 

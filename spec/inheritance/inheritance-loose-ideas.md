@@ -1,8 +1,8 @@
 ﻿Circle Language Spec | Inheritance
 ==================================
 
-Ideas
------
+Loose Ideas
+-----------
 
 *This article contains left-over rough ideas that are not incorporated into the documentation yet.*
 

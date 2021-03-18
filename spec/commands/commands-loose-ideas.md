@@ -1,8 +1,8 @@
 ﻿Circle Language Spec | Commands
 ===============================
 
-Ideas
------
+Loose Ideas
+-----------
 
 Not showing private members or the contents of procedures is an important subject for the display of the diagrams. 
 
