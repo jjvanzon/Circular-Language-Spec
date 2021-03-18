@@ -4,6 +4,8 @@
 Relationships Broader View
 --------------------------
 
+`[ Preliminary documentation ]`
+
 ### Relationship Direction
 
 `When* all` relationships `are` bidirectional, a side-effect might be that everything might end up at `the*` same level hierarchically, since `all the*` relationships `are` mutual.

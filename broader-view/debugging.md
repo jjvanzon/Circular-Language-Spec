@@ -4,6 +4,8 @@
 Debugging
 ---------
 
+`[ Preliminary documentation ]`
+
 ### Ideas
 
 Ik wil vaak bepaalde functies bij het debuggen niet stap voor stap doen, maar gewoon in 1 klap.
