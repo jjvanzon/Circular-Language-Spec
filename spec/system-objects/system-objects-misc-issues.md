@@ -2,7 +2,9 @@
 =====================================
 
 Misc Issues
---------------------------
+-----------
+
+`[ Preliminary documentation ]`
 
 ### System Command Calls by User
 
@@ -57,8 +59,6 @@ It might look something like this:
 But the exact way in which command extension is implemented will be covered by the *Inheritance* articles.
 
 ### Parameters For Objects
-
-`[Preliminary documentation]`
 
 #### Concept
 

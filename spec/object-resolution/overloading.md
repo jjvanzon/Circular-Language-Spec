@@ -4,6 +4,8 @@
 Overloading
 -----------
 
+`[ Preliminary documentation ]`
+
 - Overloading names of related classes, disambiguating by class.
 
 ### Ideas

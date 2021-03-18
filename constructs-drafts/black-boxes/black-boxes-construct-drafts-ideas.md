@@ -4,6 +4,8 @@
 Black Boxes Construct Drafts Ideas
 ----------------------------------
 
+`[ Preliminary documentation ]`
+
 ### Misc Issues
 
 In previous projects the main articles about black boxing were finished, but other subjects were left unfinished. This article contains the unfinished material of some of these topics.

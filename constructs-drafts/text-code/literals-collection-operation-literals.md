@@ -4,6 +4,8 @@
 Collection Operation Literals
 -----------------------------
 
+`[ Deprecated documentation ]`
+
 Text notation for operations on collections.
 
 ### Ideas

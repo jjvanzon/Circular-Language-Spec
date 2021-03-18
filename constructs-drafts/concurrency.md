@@ -4,6 +4,8 @@
 Concurrency
 -----------
 
+`[ Preliminary documentation ]`
+
 Concurrency problems might be solved with several mechanisms. Which is the best one is yet to be determined. In this document you will find a lot of ideas about it.
 
 The current document is under construction.  

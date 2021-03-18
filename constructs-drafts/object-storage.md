@@ -4,6 +4,8 @@
 Object Storage
 --------------
 
+`[ Preliminary documentation ]`
+
 *Object Storage* is the binding force between basic data structures on storage devices and the object logic inside the new computer language. It is about how basic data structures are used to store objects. Not all of these principles are original, because many other systems use them, but they were isolated here in a single folder as a single group of concepts required to turn storage into objects.
 
 The documentation is not finished. It is the bone-structure of documentation yet to be finished. It does sum up the required concepts to turn basic data structures into digital objects. Some of the concepts, though, should be moved elsewhere to another *Storage* documentation section. Into this bone-structure, loose ideas are dropped as well as (unfinished) texts out of the documentation of the new computer language version 0.9, as well as texts made during the development of the new computer language version 2.0. Software has been developed using these concepts, because both those versions of the new computer language had to do with storage principles in order to turn basic data structures into digital objects. But not all storage principles were used inside those implementations yet.

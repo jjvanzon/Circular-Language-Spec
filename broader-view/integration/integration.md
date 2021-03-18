@@ -4,6 +4,8 @@
 Integration
 -----------
 
+`[ Preliminary documentation ]`
+
 This folder does not contain a lot of documentation. It is the bone-structure for future documentation. Also, hardly any integration software has been developed yet. This folder will contain any documentation about integration modules, that *Circle* has to offer in order to integrate with the rest of the world of computer technology. *Circle* is not meant to live on its own, but existing resources on the internet should be accessible, when working with the new language. Each integration module will facilitate two goals: accessing other systems using *Circle* and the ability to access *Circle* resources from inside other systems. As such you can access other file systems using *Circle*, and you can also access *Circle* resources as if it was a file system. That example would be called *File System Integration*. As such there will be systems such as *Database Integration*, *SOAP Integration*, *ODBC Integration*, *File Types* and *Module System Integration*. It is considered quite important, that *Circle* in the future will give access to all those resources as well as be accessible by other systems through all kinds of different protocols.
 
 There are the following sub-folders:

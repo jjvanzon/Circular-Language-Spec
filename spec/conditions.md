@@ -4,6 +4,8 @@
 Conditions
 ----------
 
+`[ Preliminary documentation ]`
+
 ### Loose Ideas
 
 Conditions,

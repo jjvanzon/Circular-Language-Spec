@@ -4,7 +4,7 @@
 Automatically Determining What’s In Out or Thru
 -----------------------------------------------
 
-`[ Under Construction ]`
+`[ Preliminary documentation ]`
 
 The terms input, output, throughput and downput were discussed earlier. Here it is discussed how to automatically determine whether a parameter is in, out, through or downput.
 

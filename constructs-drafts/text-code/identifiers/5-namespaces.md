@@ -4,6 +4,8 @@
 Namespaces
 ----------
 
+`[ Deprecated documentation ]`
+
 ### Ideas
 
 *The texts below are loose ideas yet to be turned into good documentation.*

@@ -4,6 +4,8 @@
 Everything Only (Lack Of Choice = Guarantees)
 -----------------------------------------------
 
+`[ Out of scope ]`
+
 In Computer Language 0.9, almost any code that could be generated was optional. This basically created a lot of different possible situations in which everything needed to still function correctly.
 
 The principle of Everything Only is the opposite: instead of making everything optional, everything is included without a choice. This limits all the possible situations, which makes things easier to test, there are no surprises and it is easy to give guarantees to a system’s functioning.

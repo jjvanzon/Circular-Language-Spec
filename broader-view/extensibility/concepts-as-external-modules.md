@@ -4,6 +4,8 @@
 Concepts As External Modules
 ----------------------------
 
+`[ Preliminary documentation ]`
+
 Concepts add something to every class that supports the concept. The class doesn’t get polluted directly. A concept adds a sub object operating on the class’s members in a generic way.
 
 All I need to do, is invent a way to describe any of the concepts I had already implemented in Computer Language 0.9 in text code, and how do I let each class decide which concept to support. How do I set a default as to which concepts classes should support?

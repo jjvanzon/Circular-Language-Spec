@@ -4,6 +4,8 @@
 Edge Cases
 ----------
 
+`[ Preliminary documentation ]`
+
 ### Member Grouping
 
 Triangles could be used to indicate a benign member grouping:

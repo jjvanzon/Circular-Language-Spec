@@ -4,6 +4,8 @@
 Reflection
 ----------
 
+`[ Preliminary documentation ]`
+
 Reflective data is data that describes the structure of a program. The reflective data of a program for instance contains descriptions of classes.
 
 In ordinary programming languages, it is considered something special to be able to access data that describes a program, listing out all the classes and all of its members.

@@ -4,6 +4,8 @@
 Basic Diagram Elements
 ----------------------
 
+`[ Preliminary documentation ]`
+
 This article attempts to give a more or less formal overview of elements that might appear in the diagrams.
 
 The diagrams might involve set of basic elements, that may include the following:

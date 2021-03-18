@@ -4,7 +4,7 @@
 Object Order
 ------------
 
-`[Preliminary documentation]`
+`[ Preliminary documentation ]`
 
 This is unfinished documentation of lower quality. It only has unfinished descriptions and loose ideas.
 

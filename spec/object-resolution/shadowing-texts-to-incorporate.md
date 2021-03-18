@@ -4,6 +4,8 @@ Circle Language Spec | Object Resolution
 Shadowing
 ---------
 
+`[ Preliminary documentation ]`
+
 (Text to incorporate)
 
 Shadowing,

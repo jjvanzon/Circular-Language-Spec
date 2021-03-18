@@ -4,6 +4,8 @@
 Cascading Overriding
 --------------------
 
+`[ Preliminary documentation ]`
+
 J Graphics was the program that made me write the first functional piece of J Data Generator. The thing that seemed hardest to generate is the cascading overriding of the styles of J Graphics objects. Actually, it never *got* generated.
 
 The basic idea is the following. A Line object would contain two Points. The Point objects have their own style. The Line can choose to override the style of the Point objects. The point would then get the PointStyle specified in the Line object. A Polygon object consists of Line objects. The Polygon object specifies a LineStyle and a PointStyle, which can override the Styles of the Line objects.

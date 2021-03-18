@@ -4,6 +4,8 @@
 Hand Writing
 ------------
 
+`[ Preliminary documentation ]`
+
 Drawing On Paper
 
 ### Symbol Drawing Equipment

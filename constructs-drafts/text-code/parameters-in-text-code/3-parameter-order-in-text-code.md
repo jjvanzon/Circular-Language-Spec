@@ -4,6 +4,8 @@
 Parameter Order in Text Code
 ----------------------------
 
+`[ Deprecated documentation ]`
+
 The article *Parameter Order* introduced the concept of an ordered list of parameters. In text code, you can just list them out in that order then. Textual display is totally preliminary, because text code of the new computer language is totally not worked out yet.
 
 It is not clear yet, how it will be displayed in a command definition, that the parameters are not only named, but also ordered.

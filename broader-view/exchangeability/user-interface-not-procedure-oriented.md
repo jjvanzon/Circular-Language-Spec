@@ -4,6 +4,8 @@
 User Interface Not Procedure Oriented
 -------------------------------------
 
+`[ Preliminary documentation]`
+
 Programming interfaces have gone from procedural, to object oriented. Procedures are part of the object they are about, rather than separate procedures being executed on data.
 
 User interfaces however, are still too much procedure oriented, because there are commands in a menu, instead of being able to right-click on an object and see any action you can undertake on it.

@@ -4,6 +4,8 @@
 Circle Language Summary
 -----------------------
 
+`[ Deprecated documentation ]`
+
 ### Ideas
 
 Computer Language,  

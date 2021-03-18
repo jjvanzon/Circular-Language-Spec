@@ -4,6 +4,8 @@
 System Command Call Notations Construct Drafts
 ----------------------------------------------
 
+`[ Deprecated documentation ]`
+
 ### System Interface Command Call Notation
 
 There might be other options for displaying a call to a system command that are laid out in the articles that follow.

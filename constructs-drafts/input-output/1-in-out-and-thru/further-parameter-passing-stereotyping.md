@@ -4,6 +4,8 @@
 Further Parameter Passing Stereotyping
 --------------------------------------
 
+`[ Preliminary documentation ]`
+
 Contemplations about further thru parameter passing stereotyping will be postponed.
 
 Throughput could have the following elements:

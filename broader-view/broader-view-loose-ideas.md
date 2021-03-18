@@ -4,6 +4,8 @@
 Loose Ideas
 -----------
 
+`[ Preliminary documentation ]`
+
 This documentation section covers all the coding concepts and principles of the new computer language.
 
 Some of the principles have to be implemented inside the code base. Most of the concepts can be implemented merely as a *concept* construct, using the new computer language itself.

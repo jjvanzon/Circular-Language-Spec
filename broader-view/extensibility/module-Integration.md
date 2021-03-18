@@ -4,6 +4,8 @@
 Module Integration
 ------------------
 
+`[ Preliminary documentation ]`
+
 In an earlier version of Computer Language it was a problem to load multiple modules, and have one module use objects of a class of another module.
 
 But in a newer version of Computer Language there is simply no distinction between modules. It’s like there is only one module running on the computer. The separate modules are simply sub-objects inside the single module. An object can have a class out of any of the modules, that run on the computer.  

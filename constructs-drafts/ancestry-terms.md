@@ -4,6 +4,8 @@
 Ancestry
 --------
 
+`[ Deprecated documentation ]`
+
 A containment structure is also called an *ancestry*.
 
 ![](images/80.%20Ancestry%20Terms.001.png)

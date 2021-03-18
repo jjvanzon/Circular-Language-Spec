@@ -4,6 +4,8 @@
 Introduction
 ------------
 
+`[ Preliminary documentation ]`
+
 Traditionally the systematics of a program are expressed by means of text code. But in the new language, systematics are stored as binary interlinked objects. Text code is a mere *expression* of those binary interlinked objects. The *Text Code* sub-module makes sure, that systematics are translated to text code. The text code can be adapted, resulting in changes to the stored binary objects, rather than the text code’s being literally stored.
 
 The general idea is that each language element’s textual representation is considered the language element’s *literal*, that can be read out and assigned. However large the construct, its text code is still just a literal, be it composed of the literals of its sub-constructs.

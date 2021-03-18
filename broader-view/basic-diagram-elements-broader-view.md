@@ -4,6 +4,8 @@
 Basic Diagram Elements Broader View
 -----------------------------------
 
+`[ Preliminary documentation ]`
+
 For some reason the choices for the different shapes is sometimes commented on too.
 
 ### Circles & Triangles

@@ -4,6 +4,8 @@
 Public & Private Connectors, Connections & Assignments
 ------------------------------------------------------
 
+`[ Preliminary documentation ]`
+
 ### Public & Private Connectors
 
 The following articles display the various access connectors an object can have.

@@ -4,6 +4,8 @@
 Command Literals
 ----------------
 
+`[ Deprecated documentation ]`
+
 ( Operators )  
 Evaluation Order, Parenthesis, Precedence
 

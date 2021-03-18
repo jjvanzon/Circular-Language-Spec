@@ -4,6 +4,8 @@
 Loops
 -----
 
+`[ Preliminary documentation ]`
+
 ### Concept
 
 A loop is a form of control over *execution flow*. Execution flow is explained in the article *Execution Flow*.

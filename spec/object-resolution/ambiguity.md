@@ -4,6 +4,8 @@
 Ambiguity
 ---------
 
+`[ Preliminary documentation ]`
+
 ( Textual ambiguity )
 
 - Disambiguation

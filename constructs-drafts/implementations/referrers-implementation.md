@@ -4,7 +4,7 @@
 Referrers Implementation
 ------------------------
 
-`[ This article may not be up to date. ]`
+`[ Out of scope ]`
 
 *Referrers* is a coding concept. A concept is something programmed inside the new computer language itself, which can extend any object, because it operates using the reflective data of an object, which makes it adaptable to any object.
 

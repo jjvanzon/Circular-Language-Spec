@@ -4,6 +4,8 @@
 Enforcing & Preventing Specialization
 -------------------------------------
 
+`[ Preliminary documentation ]`
+
 The world of programming languages offers several ways to prevent *or* *enforce* specialization. This article will give this a place inside the new computer language.
 
 The concepts from other languages can be boiled down to a simpler model that has to provide the following:

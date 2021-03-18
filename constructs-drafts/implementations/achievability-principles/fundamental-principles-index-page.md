@@ -4,6 +4,8 @@
 Fundamental Principles
 ----------------------
 
+`[ Preliminary documentation ]`
+
 This documentation describes the fundamental principles, upon which the new computer language is based. It covers the *reasons*, the *aims*  and the *way*  to realize the new computer language. Perhaps the most important goal of the new computer language, is to melt together all computer technology disciplines, providing one clear language, that can express anything, and that everybody can understand. The *Fundamental Principles* folder makes a lot of promises about the new language, but the *Coding Concepts* folder shows you how those promises are upheld.
 
 This contents page will give a definition of each of the fundamental principles of the new computer language. More principles will be added in the future.

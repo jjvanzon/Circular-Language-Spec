@@ -4,6 +4,8 @@
 Variable Amount in Text Code
 ----------------------------
 
+`[ Deprecated documentation ]`
+
 This proposal of textual representation of variable amount of arguments is totally not final yet.
 
 In the article *Variable Amount* it was stipulated, that for backwards compatibility purposes, and textual representation purposes, an array parameter could be typed as being the array, that represents the variable amount of arguments at the end of the parameter list. So the declaration of such a command with a variable amount of parameters may look like this:

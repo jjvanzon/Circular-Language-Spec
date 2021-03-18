@@ -4,6 +4,8 @@
 Object Resolution
 -----------------
 
+`[ Preliminary documentation ]`
+
 Object Resolution,  
 2020-05-24
 

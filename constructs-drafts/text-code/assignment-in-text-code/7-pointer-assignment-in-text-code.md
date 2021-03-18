@@ -4,6 +4,8 @@
 Pointer Assignment in Text Code
 -------------------------------
 
+`[ Deprecated documentation ]`
+
 An assignment is actually a combination of a __Get__ and a __Set__ call. Instead of using a call to an assignment command, you could also use a call to the __Get__ and __Set__ system commands. In object reference assignment, though, no __Get__ is executed because an object reference is the direct source of the assignment, not its object.
 
 ```

@@ -4,6 +4,8 @@
 Simplified Access Control Notation
 ----------------------------------
 
+`[ Preliminary documentation ]`
+
 There are only a couple of ways, in which expression of access control connectors in a diagram will be simplified.
 
 The first method is merging the access connectors of different aspects together.

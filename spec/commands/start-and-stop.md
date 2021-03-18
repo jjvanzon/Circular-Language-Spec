@@ -4,6 +4,8 @@
 Start & Stop
 ------------
 
+`[ Preliminary documentation ]`
+
 An executable object can be run, paused, stopped, recorded, put in reverse, etcetera. Those are called *execution commands*.
 
 You can also invoke an execution command on a thread, which is a string of commands, that automatically follow each other up. A thread, however, can also be considered a single command as well.

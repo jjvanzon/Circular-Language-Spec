@@ -1,8 +1,10 @@
 ﻿Circle Language | Broader View
-===================================================
+==============================
 
 Automatic Containment
 ---------------------
+
+`[ Preliminary documentation ]`
 
 The concept of automatic containment is about translating a referential structure to a containment structure.
 

@@ -4,6 +4,8 @@
 Main Concepts
 -------------
 
+`[ Preliminary documentation ]`
+
 Commands may be objects, that so happen to be *executable*. Commands could be actions, procedures and processes, that a computer might perform. They might be displayed in a diagram as squares and diamond shapes:
 
 ![](images/1.%20Commands%20Main%20Concepts.001.png) 

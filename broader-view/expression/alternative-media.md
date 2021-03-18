@@ -4,6 +4,8 @@
 Alternative Media Ideas
 -----------------------
 
+`[ Preliminary documentation ]`
+
 ### Out of the original Symbol documentation
 
 2008-10-09  

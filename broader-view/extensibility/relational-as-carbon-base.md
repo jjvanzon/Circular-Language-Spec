@@ -4,6 +4,8 @@
 Relational As Carbon Base
 -------------------------
 
+`[ Preliminary documentation ]`
+
 The Relational As Carbon Base principle means that when making a program, you should primarily think in terms of relations between classes. The relations and classes are used as a base.  
 They are used by *concepts*, for instance to automatically generate a user interface for the system. Also the concepts Undo and Copy & Paste can automatically be applied to the relational structure. The concepts are tied to the relational structure. The relational structure forms the carbon base of the program, onto which other atom groups can be attached.
 

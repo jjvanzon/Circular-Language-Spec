@@ -4,6 +4,8 @@
 Commands and Classes Loosely Coupled
 ------------------------------------
 
+`[ Preliminary documentation ]`
+
 ### Concept
 
 Objects of the same class might have a similar set of commands.

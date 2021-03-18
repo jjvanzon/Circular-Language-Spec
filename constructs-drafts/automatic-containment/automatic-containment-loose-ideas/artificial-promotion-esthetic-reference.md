@@ -4,6 +4,8 @@
 Artificial Promotion / Esthetic Reference
 -----------------------------------------
 
+`[ Preliminary documentation ]`
+
 ### Ideas
 
 Objects automatically put on a lower level, because of deeper usage, can artificially be promoted to a higher level, by creating a reference to it from a higher object, for esthetic reasons, related to it having great significance on a higher level. (this doesn't have to result in an object reference being put on every level in between.)

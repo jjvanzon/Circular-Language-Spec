@@ -4,6 +4,8 @@
 Pointer Circularity
 -------------------
 
+`[ Preliminary documentation ]`
+
 ### Ideas
 
 (Out of the original Symbol documentation)

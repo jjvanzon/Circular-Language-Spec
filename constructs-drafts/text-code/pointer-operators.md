@@ -4,6 +4,8 @@
 Pointer Operators
 -----------------
 
+`[ Deprecated documentation ]`
+
 - Dereference (`*`)
 - Address Of (`&`)
 

@@ -4,6 +4,8 @@
 Flat & Structured Interchange Loose Ideas 2
 -------------------------------------------
 
+`[ Preliminary documentation ]`
+
 Flat & Structured Interchange consists of a set of principles, that turn something flat and unstructured into something structured automatically. It also can approach anything structured as something entirely flat.
 
 Some aspects of the system you do not structure yourself anymore. The system gets structured automatically following fixed rules. 

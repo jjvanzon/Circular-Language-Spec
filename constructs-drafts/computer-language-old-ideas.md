@@ -4,6 +4,8 @@
 Old Ideas
 ---------
 
+`[ Preliminary documentation ]`
+
 ### Development Notes
 
 #### Symbol Development Notes

@@ -4,6 +4,8 @@
 User = Programmer
 -----------------
 
+`[ Preliminary documentation ]`
+
 There is no distinction between design time and run time anymore. This makes programming software and using software blend together. 
 
 Programs can indeed be displayed as text code, but also as diagrams or as objects linked together in a tree, more like a user interface. Perhaps not everything will be easy to understand to any type of user, but the lines between creating a programing and using a program will fade.

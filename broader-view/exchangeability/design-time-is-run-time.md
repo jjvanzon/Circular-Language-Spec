@@ -4,6 +4,8 @@
 Design Time = Run Time
 ----------------------
 
+`[ Preliminary documentation ]`
+
 In most programming languages there is a distinction between design time and run time. This means, that the software is programmed first, and then run. You only run it after you programmed it. If the program it is not error free, the program may crash.
 
 The principle *Design Time = Run Time*  takes away this distinction between design time and run time. This article demonstrates how you can create a program and use it at the same time.

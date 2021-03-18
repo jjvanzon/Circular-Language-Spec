@@ -4,6 +4,8 @@
 Loose Ideas
 -----------
 
+`[ Preliminary documentation ]`
+
 ### Loose Ideas about Relations Through Interfaces
 
 Relations Through Interfaces,  

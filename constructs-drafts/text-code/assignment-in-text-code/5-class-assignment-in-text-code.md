@@ -4,6 +4,8 @@
 Class Assignment in Text Code
 -----------------------------
 
+`[ Deprecated documentation ]`
+
 In text code, the symbol for class assignment is the following:
 
 ```

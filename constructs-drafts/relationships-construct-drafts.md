@@ -4,6 +4,8 @@
 Relationships Construct Drafts
 ------------------------------
 
+`[ Deprecated documentation ]`
+
 ### Relationships Between Classes
 
 `The*` class-relationship structure `is the*` bone structure of a program.

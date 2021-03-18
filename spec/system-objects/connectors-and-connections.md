@@ -4,6 +4,8 @@
 Connectors & Connections
 ------------------------
 
+`[ Preliminary documentation ]`
+
 ### Connectors
 
 System command definitions are displayed in the system interface:

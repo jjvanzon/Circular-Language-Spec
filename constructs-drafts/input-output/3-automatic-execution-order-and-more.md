@@ -4,6 +4,8 @@
 Automatic Execution Order
 -------------------------
 
+`[ Preliminary documentation ]`
+
 ### Newer Concept
 
 ± 2008-08

@@ -4,6 +4,8 @@
 Loop-Related Jumps
 ------------------
 
+`[ Preliminary documentation ]`
+
 ### Concept
 
 Loop-related jumps are jumps used specifically inside a loop. Jumps are a form of control over *execution flow*. Loops are explained in the article *Loops*. Execution flow is explained in the article *Execution Flow*.

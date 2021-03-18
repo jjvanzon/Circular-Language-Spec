@@ -4,7 +4,7 @@
 Parameters For Objects in Text Code
 -----------------------------------
 
-`[ Preliminary documentation ]`
+`[ Deprecated documentation ]`
 
 Parameters for objects in text code actually look like objects, that have a parameter. They look much like command calls then.
 

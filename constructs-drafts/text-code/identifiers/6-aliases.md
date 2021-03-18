@@ -4,6 +4,8 @@
 Aliases
 -------
 
+`[ Deprecated documentation ]`
+
 - Aliases
 - Namespace Alias
 - Class Alias

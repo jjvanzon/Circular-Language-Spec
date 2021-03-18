@@ -4,6 +4,8 @@
 Flat & Structured Interchange Loose Ideas 1
 --------------------------------------------
 
+`[ Preliminary documentation ]`
+
 *Date: 2005-08-31*
 
 ## Ideas

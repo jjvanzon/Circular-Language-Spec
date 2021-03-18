@@ -4,6 +4,8 @@
 Loose Ideas
 -----------
 
+`[ Preliminary documentation ]`
+
 (Access Control used to be intrinsic principle.)
 
 - Encryption

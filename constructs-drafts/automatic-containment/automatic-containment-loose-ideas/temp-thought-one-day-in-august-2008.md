@@ -1,6 +1,8 @@
 temp Thought one day in august 2008
 ===================================
 
+`[ Preliminary documentation ]`
+
 I am wondering if I can stop emphasizing every symbol is a reference, and just save that for specific diagram topics. That will make the story a lot simpler. I can then ignore automatic containment, making an outer stub of a redirection, the object itself. Crap, would that simplify the explanations.
 
 

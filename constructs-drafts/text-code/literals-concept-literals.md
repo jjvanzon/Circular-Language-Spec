@@ -4,6 +4,8 @@
 Concept Literals
 ----------------
 
+`[ Deprecated documentation ]`
+
 (Text code expression of a concept.)
 
 ### Ideas

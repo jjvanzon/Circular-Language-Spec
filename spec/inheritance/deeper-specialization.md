@@ -4,6 +4,8 @@
 Deeper Specialization
 ---------------------
 
+`[ Preliminary documentation ]`
+
 The main concept of deeper specialization is that you can not only specialize direct members of an object, but you can also alter and extend members from deeper objects. A simple example is to exclude a member of a sub-object. Here is a normal object with a couple of public sub-objects:
 
 ![](images/4.%20Deeper%20Specialization.001.png)

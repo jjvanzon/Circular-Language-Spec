@@ -4,6 +4,8 @@
 Simplified Access Control Expression in Text Code
 -------------------------------------------------
 
+`[ Preliminary documentation ]`
+
 ### Main Idea
 
 To describe the access control of a parameter using the literals, introduced in the article *Access Controlling System Aspects*, you end up with an access control literal, that is quite a mouthful, for instance:

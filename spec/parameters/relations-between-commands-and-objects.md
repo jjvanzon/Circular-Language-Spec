@@ -4,6 +4,8 @@
 Relations Between Commands & Objects
 ------------------------------------
 
+`[ Preliminary documentation ]`
+
 ### Concept
 
 A command can contain a set of related objects. Those are the parameters of the command. A command will use objects to do its work.

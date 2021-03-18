@@ -4,6 +4,8 @@
 Melding
 -------
 
+`[ Preliminary documentation ]`
+
 Melding objects means that for instance a relation class or a progressed object have the same item object name, and meld together to a single property procedure, in which all functionality of both procedures is embedded.
 
 ### Ideas

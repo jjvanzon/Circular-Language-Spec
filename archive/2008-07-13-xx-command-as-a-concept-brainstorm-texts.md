@@ -4,7 +4,7 @@
 Command As A Concept Brainstorm Texts
 -------------------------------------
 
-`[ Deprecated Text ]`
+`[ Deprecated documentation ]`
 
 ### Commands as a concept
 

@@ -4,6 +4,8 @@
 ~ Hiding
 --------
 
+`[ Preliminary documentation ]`
+
 - ( not the same as another concept? )
 - Accessing a hidden name
 

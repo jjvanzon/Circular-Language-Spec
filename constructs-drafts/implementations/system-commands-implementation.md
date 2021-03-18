@@ -4,6 +4,8 @@
 Implementation of System Commands
 ---------------------------------
 
+`[ Out of scope ]`
+
 There is a paradox.
 
 A *command* is a special object, that can execute, but an object has system *commands*. So here I want to replace a command by an object, but an object *must* have system commands in order to function.

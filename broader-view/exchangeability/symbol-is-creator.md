@@ -4,6 +4,8 @@
 Symbol = Creator
 ----------------
 
+`[ Preliminary documentation ]`
+
 *Symbol* refers to an object oriented programming language I began to construct around the year 2001. It is a programming language, that fully expresses a program in a diagram.
 
 *Creator* refers to a programming language I began working on around 2006. The basic principle of it is, that you start off defining classes and relations, and an application is generated out of it.

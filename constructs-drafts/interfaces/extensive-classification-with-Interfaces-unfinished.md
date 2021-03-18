@@ -4,6 +4,8 @@
 Extensive Classification with Interfaces (Unfinished)
 -----------------------------------------------------
 
+`[ Preliminary documentation ]`
+
 This article is not finished.
 
 Extensive classification through interfaces is about automatic definition of interfaces, as well as manual definition of interfaces. (Consider the imaginary group-by-source interfaces, which could be suggestions for interfaces to form.).

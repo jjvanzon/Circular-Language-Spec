@@ -4,6 +4,8 @@
 Events
 ------
 
+`[ Preliminary documentation ]`
+
 ### Introduction
 
 Events are notification calls. Call receivers subscribe to an event. The call sender will call the receivers whenever it feels like it. Another name for events that the world adopts, is *‘the observer pattern’*. The caller decides what the message looks like. The receiver has to supply a command, that has an interface, specified by the caller.

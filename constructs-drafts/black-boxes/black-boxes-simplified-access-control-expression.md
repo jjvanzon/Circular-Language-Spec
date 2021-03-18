@@ -4,4 +4,6 @@
 Simplified Access Control Expression
 ------------------------------------
 
+`[ Preliminary documentation ]`
+
 These two articles cover simplified textual and diagram expression of access control of parameters.

@@ -4,6 +4,8 @@
 Peels
 -----
 
+`[ Preliminary documentation ]`
+
 An additional notation technique exists to express information about lines. It’s called the peel notation.
 
 ![](images/98.%20Peels%20(a%20rejected%20concept).001.png)

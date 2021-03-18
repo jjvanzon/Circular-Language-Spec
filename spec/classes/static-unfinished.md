@@ -4,7 +4,7 @@
 Static
 ------
 
-__[Preliminary documentation]__
+`[ Preliminary documentation ]`
 
 This is unfinished documentation of lower quality. It only has an unfinished description of the general idea.
 

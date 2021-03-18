@@ -4,6 +4,8 @@
 Automatic Object Formation
 --------------------------
 
+`[ Preliminary documentation ]`
+
 If you program something purely procedural,  
 but you use the data as parameters,  
 the parameters become classes which have this method  

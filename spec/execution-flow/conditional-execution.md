@@ -4,6 +4,8 @@
 Conditional Execution
 ---------------------
 
+`[ Preliminary documentation ]`
+
 ### Concept
 
 Conditional execution is a form of control over *execution flow*. Execution flow is explained in the article *Execution Flow*.

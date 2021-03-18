@@ -4,6 +4,8 @@
 Black Boxes
 -----------
 
+`[ Preliminary documentation ]`
+
 ### Introduction
 
 The concept of *Black Box* is also known as the concept of *Public and Private*. *Private* makes something only accessible inside the object. *Public* makes something accessible outside the object. That way, the inner workings of an object are hidden away and you only work with the input and output.

@@ -4,6 +4,8 @@
 Identifiers
 -----------
 
+`[ Deprecated documentation ]`
+
 Identifiers are names for objects, collections, attributes, sites, programs, modules or any other element of a system. Any element of a system can get an identifier.
 
 In other computers languages there are limitations to identifiers. For instance: identifiers can’t contain spaces. This is so, because spaces are used as a separator, to separate elements of a textual expression in computer code. Identifiers without spaces make it easier for the text code parser.

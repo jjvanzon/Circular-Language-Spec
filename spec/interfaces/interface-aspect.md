@@ -4,6 +4,8 @@
 Interface Aspect
 ----------------
 
+`[ Preliminary documentation ]`
+
 While systems seem to be composed of a lot of different types of objects, all objects and types are in reality no more than a very limited set of types, that can be configured to look like other types. Those basic objects are called *system objects*. The behavior of those system objects is controlled by controlling their *system aspects*. System objects is covered in a separate chapter called *System Objects*, but there the *interface* aspect was completely left out of the story. In this part of the documentation everything about the interface aspect is laid out to make the concept of interfaces catch up with the *System Objects* story.
 
 The __Interface__ aspect allows you to control how objects look on the outside, while the insides of the objects can differ completely. Another concept which employs the word *interfaces* is an object (an interface) melting together with its container. From a systematic point of view they seem to be completely unrelated concepts, however in practice they are conjoinedly used. To distinguish them we call them the __Interface__ aspect and the __Interface Merging__ aspect. The main diagram symbolization of the __Interface__ aspect is as follows:

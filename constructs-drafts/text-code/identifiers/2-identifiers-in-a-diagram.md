@@ -4,6 +4,8 @@
 Identifiers in a Diagram
 ------------------------
 
+`[ Deprecated documentation ]`
+
 Identifiers are names for objects, collections, attributes, sites, programs, modules or any other element of a system. Any element of a system can get an identifier.
 
 Identifiers are explained in the article *Identifiers*. This article demonstrates their usage in a diagram.

@@ -4,6 +4,8 @@
 Loose Ideas
 -----------
 
+`[ Preliminary documentation ]`
+
 *The texts below are loose ideas yet to be turned into good documentation.*
 
 Input Output,  

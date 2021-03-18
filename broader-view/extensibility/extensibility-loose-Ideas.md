@@ -4,6 +4,8 @@
 Loose Ideas
 -----------
 
+`[ Preliminary documentation ]`
+
 The Extensibility Principles should also cover the idea behind legacy modules.
 
 ### From the original Symbol documentation

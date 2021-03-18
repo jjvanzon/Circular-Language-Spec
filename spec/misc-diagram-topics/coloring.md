@@ -4,6 +4,8 @@
 Coloring
 --------
 
+`[ Preliminary documentation ]`
+
 ### From the Original Symbol Documentation
 
 Coloring is een analyse methode 

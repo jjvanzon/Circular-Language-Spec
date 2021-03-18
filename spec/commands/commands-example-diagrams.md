@@ -4,6 +4,8 @@
 Example Diagrams
 ----------------
 
+`[ Preliminary documentation ]`
+
 This article attempts to systematically demonstrate different situations of commands.
 
 ### Command Calls in a Command Definition

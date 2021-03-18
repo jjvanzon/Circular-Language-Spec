@@ -4,6 +4,8 @@
 Command Redirection
 -------------------
 
+`[ Preliminary documentation ]`
+
 ### Inactive Command Object Redirection
 
 An inactive command object redirection makes an inactive command symbol a command reference.

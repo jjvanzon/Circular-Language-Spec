@@ -4,6 +4,8 @@
 Execution Flow
 --------------
 
+`[ Preliminary documentation ]`
+
 Execution flow statements are points in a program, that take a decision about: what is the next step to take.
 
 Execution flow is the only thing, that varies the order of execution in a program. It is all about choosing the next step to take.

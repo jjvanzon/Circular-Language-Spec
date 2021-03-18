@@ -4,7 +4,7 @@
 Mutual Commands, Mutual Interfaces (Unfinished)
 -----------------------------------------------
 
-This article is not finished.
+`[ Preliminary documentation ]`
 
 Brainstorm 2010-05-06:
 

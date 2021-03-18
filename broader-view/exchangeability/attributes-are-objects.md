@@ -4,6 +4,8 @@
 Attributes Are Objects
 ----------------------
 
+`[ Preliminary documentation ]`
+
 __Attributes__ may very well become __Classes__ in the future. __Classes__ will eventually be capable of being configured to behave just like simple variables.
 
 A __Class__ looks exactly like a simple data type when it has the following configuration:
@@ -50,7 +52,9 @@ Eerder dacht ik ook aan om misschien meteen Attributes Become Classes toe te pas
 
 Toen ik dit probeerde te implementeren in de eerste opzet van Creator 2.0, kreeg ik problemen met de verschillen tussen een object referentie en een uniek object, enzo. Het was in ieder geval erg lastig om het meteen te implementeren, dus ik heb gewoon Attributes apart gedaan.
 
-### Ideas
+### Loose Ideas
+
+`[ Deprecated ]`
 
 #### Attributes Are Objects
 

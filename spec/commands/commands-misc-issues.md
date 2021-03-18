@@ -4,6 +4,8 @@
 Misc Issues
 -----------
 
+`[ Preliminary documentation ]`
+
 ### Parent Controls Its Sub-Executions
 
 A parent command needs full control over the execution of its sub-commands. The parent command makes the decision about the exact moment, that the sub-command runs.
@@ -109,8 +111,6 @@ Sub-commands are never manually started by a user. Then there is no way for a us
 
 ### Command Referrers
 
-`[Preliminary documentation]`
-
 #### Command Object Referrers
 
 The *Referrers* article explained how an object can be made aware of its referrers. The concept of referrers applies direction to command objects as well.
@@ -132,8 +132,6 @@ If another site uses this widely used command definition, the using site could a
 < The expression of referrers in a diagram needs to be redone, because the referrers list refers to the parents of the references, which is not necessarily the way to go. I’m not sure yet. I might want to register the related items and related lists items that are the references to the command definition, instead of registering their parents, and an ID, that the reference has inside the parent. >
 
 ### This
-
-`[Preliminary documentation]`
 
 #### Class . HasThis
 

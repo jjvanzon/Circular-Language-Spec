@@ -4,6 +4,8 @@ Circle Language Construct Drafts | Input Output
 Texts to Incorporate
 --------------------
 
+`[ Preliminary documentation ]`
+
 Advanced Command Articles,  
 2008-08
 

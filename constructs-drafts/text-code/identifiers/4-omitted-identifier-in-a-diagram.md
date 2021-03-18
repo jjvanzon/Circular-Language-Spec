@@ -4,6 +4,8 @@
 Omitted Identifier in a Diagram
 -------------------------------
 
+`[ Deprecated documentation ]`
+
 It is not mandatory to name an element of the system.
 
 Omitted identifiers are explained in the article *Omitted Identifier*. This article emphasizes its implication on diagram expression.

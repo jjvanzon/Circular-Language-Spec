@@ -4,6 +4,8 @@
 Programming Language Programmed Within Itself
 ---------------------------------------------
 
+`[ Out of scope ]`
+
 *(This article also covers subjects about the implementation of the code base.)*
 
 Software development projects take a lot of time. Think of how much you have to test for even a smaller project. I have seen it in some of the projects I did at home, such as Finney and Music Thumper. Using the normal way to develop software it is impossible to create the amount of software, that I want to create all by myself.

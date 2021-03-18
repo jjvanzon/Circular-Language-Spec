@@ -4,6 +4,8 @@
 The Internet as a Single Computer
 ---------------------------------
 
+`[ Preliminary documentation ]`
+
 *This article is too long. It contains too many details about other topics. Those should be moved to other articles.*
 
 *In also break the rules of writing style, set up in the project New Computer Language Functional Design. Those rules are about doing too much of this: defining, comparing, explaining how and why, exceptional cases, implications, different uses, assumptions about the reader’s (lack of) knowledge. Those things should all be left out. You have to be more blunt when explaining a concept.*

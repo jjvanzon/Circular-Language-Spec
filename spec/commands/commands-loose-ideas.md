@@ -4,6 +4,8 @@
 Loose Ideas
 -----------
 
+`[ Preliminary documentation ]`
+
 Not showing private members or the contents of procedures is an important subject for the display of the diagrams. 
 
 The definition of something can just as well be shown inside a reference to the definition. It’s a setting whether you’ll show the full definition in a reference or just the public things. It is best if you can’t *change* the definition from a reference to a definition.  

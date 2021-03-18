@@ -4,6 +4,8 @@
 Class Pointer Assignment in Text Code
 -------------------------------------
 
+`[ Deprecated documentation ]`
+
 The textual symbol for an object reference class assignment is:
 
 ```

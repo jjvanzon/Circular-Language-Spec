@@ -4,6 +4,8 @@
 Index
 -----
 
+`[ Preliminary documentation ]`
+
 This index page may contain descriptions of topics now spread elsewhere or some topics might still be found in this section of the documentation.
 
 ### Coding Concepts Index

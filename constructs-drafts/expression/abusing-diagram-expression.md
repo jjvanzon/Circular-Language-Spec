@@ -4,6 +4,8 @@
 Alternative Diagram Expression
 ------------------------------
 
+`[ Preliminary documentation ]`
+
 (From the original Symbol documentation)
 
 - Alternative diagram expressions:

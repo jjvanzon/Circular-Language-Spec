@@ -4,6 +4,8 @@
 Loose Ideas
 -----------
 
+`[ Preliminary documentation ]`
+
 *This article contains left-over rough ideas that are not incorporated into the documentation yet.*
 
 Inheritance,  

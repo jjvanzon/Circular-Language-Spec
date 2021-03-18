@@ -4,6 +4,8 @@
 Parameter Passing
 -----------------
 
+`[ Preliminary documentation ]`
+
 These sections were set aside in the project *Work Out Parameter Articles*.
 
 The sections each cover an obsolete parameter passing type.

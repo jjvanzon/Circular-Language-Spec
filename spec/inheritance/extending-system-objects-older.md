@@ -4,6 +4,8 @@
 Extending the System Objects
 ----------------------------
 
+`[ Preliminary documentation ]`
+
 In the *System Objects* articles it has been repeatedly mentioned, that all the system commands can be extended with extra procedures. First, to demonstrate the concept, this article gives you the main examples of system command extension. After that, all the possible system command extensions will be listed out.
 
 ### Main Examples of System Command Extension

@@ -4,7 +4,7 @@
 Related Classes
 ---------------
 
-`[ Deprecated Text ]`
+`[ Deprecated documentation ]`
 
 If the class doesn’t fix the class of a related item, then any type of object can be assigned as the related item.
 

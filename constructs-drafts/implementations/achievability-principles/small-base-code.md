@@ -4,6 +4,8 @@
 Small Base of Code
 ------------------
 
+`[ Out of scope ]`
+
 This principle is quite important. The base of Computer Language, which is programmed in C++, should be very small. The rest of the computer language will be programmed within the computer language itself. The new computer language is hoped to make programming easier, so reprogramming it within itself would make it possible to easily add more features to it.
 
 At least some small base of code in e.g. C++ would always be required, that offers the computer language in its most stripped down form. The whole system is running on it. It is the engine for the new computer language.

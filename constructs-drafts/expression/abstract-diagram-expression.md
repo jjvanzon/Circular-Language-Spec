@@ -4,6 +4,8 @@
 Abstract Diagram Expression
 ---------------------------
 
+`[ Preliminary documentation ]`
+
 ### Loose Ideas
 
 *The texts below are loose ideas yet to be turned into good documentation.*

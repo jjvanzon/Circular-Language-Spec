@@ -4,6 +4,8 @@
 UML
 ---
 
+`[ Preliminary documentation ]`
+
 ### Ideas
 
 It is worth reconsidering UML for Symbol?  

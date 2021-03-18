@@ -3,7 +3,7 @@
 
 *2005-08-31*
 
-`[ Obsolete Documentation ]`
+`[ Deprecated documentation ]`
 
 *This story dates from a time when I looked at it from a data perspective, rather than an object perspective. I kept the name J Data in the story, instead of replacing it with Creator, so that it’s clear the story is about an older perspective.*
 

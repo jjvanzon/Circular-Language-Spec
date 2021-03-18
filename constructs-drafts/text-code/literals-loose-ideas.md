@@ -4,6 +4,8 @@
 Literals Loose Ideas
 --------------------
 
+`[ Deprecated documentation ]`
+
 One thing that makes a simple data type different from an object is that a simple data type can be expressed by a literal. The literal expresses the state of the simple data type variable. You can express the state on screen as a literal, or you can assign a literal to the variable, which alters the variable’s state. 
 
 I’ve created the same capability for objects.

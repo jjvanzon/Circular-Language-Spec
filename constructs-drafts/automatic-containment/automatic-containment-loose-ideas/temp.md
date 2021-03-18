@@ -1,3 +1,5 @@
+`[ Preliminary documentation ]`
+
 express mutuality of object separate from expressing relations...
 So you have a relation symbol function as the indicator of a relation, and an imaginary reference functioning as the indicator of the object. Too many lines.
 It sucks.

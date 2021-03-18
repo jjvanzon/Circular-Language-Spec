@@ -4,6 +4,8 @@
 Access Operators
 ----------------
 
+`[ Deprecated documentation ]`
+
 - Access Globality Operator
 - Access Object Operator
 - Access Interface Operator
