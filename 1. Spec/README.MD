@@ -73,7 +73,7 @@ Circle Language Spec
     - [Implicit Conversions (not written yet)](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/object-resolution/implicit-conversions-not-written-yet.md)
     - [With Blocks](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/object-resolution/with-blocks.md)
 - [Conditions](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/conditions.md)
-- [Object Order](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/19.%20Object%20Order/Object%20Order.md)
+- [Object Order](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/object-order.md)
 - [Pointers](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/20.%20Pointers)
     - [Pointers](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/20.%20Pointers/Pointers.md)
     - [Redirection](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/20.%20Pointers/Redirection.md)
