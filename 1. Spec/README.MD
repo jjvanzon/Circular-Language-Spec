@@ -46,7 +46,7 @@ Circle Language Spec
     - [Interfaces Main Concepts](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/interfaces/interfaces-main-concepts.md)
     - [Interface Aspect](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/interfaces/interface-aspect.md)
     - [Interfaces Edge Cases](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/interfaces/interfaces-edge-cases.md)
-    - [Interfaces Loose Ideas](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/12.%20Interfaces/interfaces-loose-ideas.md)
+    - [Interfaces Loose Ideas](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/interfaces/interfaces-loose-ideas.md)
 - [Events](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/13.%20Events)
     - [Events](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/13.%20Events/1.%20Events.md)
     - [System Events](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/13.%20Events/2.%20System%20Events.md)
