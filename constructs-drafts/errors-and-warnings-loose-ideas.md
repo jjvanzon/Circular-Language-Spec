@@ -1,8 +1,8 @@
 ﻿Circle Language Construct Drafts | Errors & Warnings
 ====================================================
 
-Ideas
------
+Loose Ideas
+-----------
 
 Ik moet Booleans HasErrors en HasWarnings hebben en ik moet de Errors en warnings terug kunnen geven op een bepaalde manier.  
 Ik moet ook opvangen dat een top level menu geen separator kan zijn en een separator geen children kan hebben.

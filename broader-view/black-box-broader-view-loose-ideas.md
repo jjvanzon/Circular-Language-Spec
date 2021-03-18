@@ -1,8 +1,8 @@
-﻿Circle Language | Broader View
-==============================
+﻿Circle Language Broader View | Black Boxes
+==========================================
 
-Black Boxes Broader View Ideas
-------------------------------
+Loose Ideas
+-----------
 
 ### Side-Issues
 

@@ -1,8 +1,8 @@
-﻿Circle Language | Construct Drafts
-==================================
+﻿Circle Language Construct Drafts | Access Control
+=================================================
 
-Access Control Ideas
---------------------
+Loose Ideas
+-----------
 
 (Access Control used to be intrinsic principle.)
 

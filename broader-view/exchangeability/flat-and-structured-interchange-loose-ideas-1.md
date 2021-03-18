@@ -1,8 +1,8 @@
 ﻿Circle Language Broader View | Exchangeability Principles
 =========================================================
 
-Flat & Structured Interchange Ideas 1
--------------------------------------
+Flat & Structured Interchange Loose Ideas 1
+--------------------------------------------
 
 *Date: 2005-08-31*
 

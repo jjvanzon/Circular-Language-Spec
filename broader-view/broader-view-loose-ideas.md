@@ -1,8 +1,8 @@
 ﻿Circle Language | Broader View
 ==============================
 
-Ideas Broader View
-------------------
+Loose Ideas
+-----------
 
 This documentation section covers all the coding concepts and principles of the new computer language.
 

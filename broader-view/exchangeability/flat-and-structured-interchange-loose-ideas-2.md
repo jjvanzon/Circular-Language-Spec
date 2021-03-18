@@ -1,8 +1,8 @@
 ﻿Circle Language Broader View | Exchangeability Principles
 =========================================================
 
-Flat & Structured Interchange Ideas 2
--------------------------------------
+Flat & Structured Interchange Loose Ideas 2
+-------------------------------------------
 
 Flat & Structured Interchange consists of a set of principles, that turn something flat and unstructured into something structured automatically. It also can approach anything structured as something entirely flat.
 
