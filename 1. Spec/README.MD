@@ -67,7 +67,7 @@ Circle Language Spec
     - [Melding](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/object-resolution/melding.md)
     - [Hiding](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/object-resolution/hiding.md)
     - [Interface Resolution (not written yet)](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/object-resolution/interface-resolution-not-written-yet.md)
-    - [Default Member](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/object-resolution/default-nember.md)
+    - [Default Member](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/object-resolution/default-member.md)
     - [Cascading Overriding](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/object-resolution/cascading-overriding.md)
     - [Ambiguity](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/object-resolution/ambiguity.md)
     - [Implicit Conversions (not written yet)](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/object-resolution/implicit-conversions-not-written-yet.md)
