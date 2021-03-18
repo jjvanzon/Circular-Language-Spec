@@ -5,11 +5,11 @@ Circle Language Spec
 - [Overview](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/overview.md)
 - [Basic Diagram Elements](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/basic-diagram-elements.md)
 - [Objects](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/objects.md)
-- [Classes](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/classes)
+- Classes
     - [Classes](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/classes/classes.md)
     - [Static](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/classes/static-unfinished.md)
 - [Relationships](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/relationships.md)
-- [Commands](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/commands)
+- Commands
     - [Main Concepts](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/commands/commands-main-concepts.md)
     - [Start & Stop](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/commands/start-and-stop.md)
     - [Creation Behavior Of Commands](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/commands/creation-behavior-of-commands.md)
@@ -17,19 +17,19 @@ Circle Language Spec
     - [Commands Example Diagrams](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/commands/commands-example-diagrams.md)
     - [Commands Misc Issues](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/commands/commands-misc-issues.md)
     - [Commands Loose Ideas](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/commands/commands-loose-ideas.md)
-- [Parameters](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/parameters)
+- Parameters
     - [Relations Between Commands & Objects](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/parameters/relations-between-commands-and-objects.md)
     - [Imported Parameter Concepts](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/parameters/imported-parameter-concepts.md)
     - [Miscellaneous Parameter Topics](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/parameters/miscellaneous-parameter-topics.md)
 - [Modules](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/modules.md)
-- [Execution Flow](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/execution-flow)
+- Execution Flow
     - [Introduction](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/execution-flow/introduction-to-execution-flow.md)
     - [Conditional Execution](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/execution-flow/conditional-execution.md)
     - [Loops](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/execution-flow/loops.md)
     - [Jumps](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/execution-flow/jumps.md)
     - [Loop-Related Jumps](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/execution-flow/loop-related-jumps.md)
     - [Execution Flow Loose Ideas](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/execution-flow/execution-flow-loose-ideas.md)
-- [System Objects](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/system-objects)
+- System Objects
     - [System Objects](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/system-objects/system-objects.md)
     - [Assignment](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/system-objects/assignment.md)
     - [System Command Call Notations](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/system-objects/system-command-call-notations.md)
@@ -37,21 +37,21 @@ Circle Language Spec
     - [System Objects Misc Issues](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/system-objects/system-objects-misc-issues.md)
     - [List Concept](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/system-objects/list-concept.md)
     - [System Objects Loose Ideas](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/system-objects/system-objects-loose-ideas.md)
-- [Black Boxes](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/black-boxes)
+- Black Boxes
     - [Black Boxes](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/black-boxes/black-boxes.md)
     - [Public & Private Connectors, Connections & Assignments](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/black-boxes/public-and-private-connectors-connections-and-assignments.md)
     - [Simplified Access Control Notation](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/black-boxes/simplified-access-control-notation.md)
     - [Black Boxes Unfinished](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/black-boxes/black-boxes-unfinished.md)
-- [Interfaces](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/interfaces)
+- Interfaces
     - [Interfaces Main Concepts](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/interfaces/interfaces-main-concepts.md)
     - [Interface Aspect](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/interfaces/interface-aspect.md)
     - [Interfaces Edge Cases](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/interfaces/interfaces-edge-cases.md)
     - [Interfaces Loose Ideas](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/interfaces/interfaces-loose-ideas.md)
-- [Events](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/events)
+- Events
     - [Events](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/events/events.md)
     - [System Events](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/events/system-events.md)
     - [Events Loose Ideas](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/events/events-loose-ideas.md)
-- [Inheritance](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/inheritance)
+- Inheritance
     - [Main Concepts](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/inheritance/inheritance-main-concepts.md)
     - [Specialization](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/inheritance/specialization.md)
     - [Enforcing & Preventing Specialization](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/inheritance/enforcing-and-preventing-specialization.md)
@@ -59,7 +59,7 @@ Circle Language Spec
     - [Extending System Objects (Older)](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/inheritance/extending-system-objects-older.md)
     - [Inheritance Loose Ideas](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/inheritance/inheritance-loose-ideas.md)
 - [Type Control](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/type-safety-genericity-explicit.md)
-- [Object Resolution](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/object-resolution)
+- Object Resolution
     - [Introduction](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/object-resolution/object-resolution-introduction.md)
     - [Overriding (not written yet)](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/object-resolution/overriding-not-written-yet.md)
     - [Overloading](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/object-resolution/overloading.md)
@@ -74,14 +74,14 @@ Circle Language Spec
     - [With Blocks](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/object-resolution/with-blocks.md)
 - [Conditions](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/conditions.md)
 - [Object Order](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/object-order.md)
-- [Pointers](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/pointers)
+- Pointers
     - [Pointers](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/pointers/pointers.md)
     - [Redirection](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/pointers/redirection.md)
     - [From 'Framework'](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/pointers/from-framework)
         - [Circularity](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/pointers/from-framework/circularity.md)
         - [Code Concepts Extended](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/pointers/from-framework/code-concepts-extended.md)
         - [Pointer Circularity](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/pointers/from-framework/pointer-circularity.md)
-- [Misc Diagram Topics](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/misc-diagram-topics)
+- Misc Diagram Topics
     - [Diagram Expression Introduction](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/misc-diagram-topics/diagram-expression-introduction.md)
     - [Diagram Metrics](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/misc-diagram-topics/diagram-metrics.md)
     - [Coloring](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec/misc-diagram-topics/coloring.md)
