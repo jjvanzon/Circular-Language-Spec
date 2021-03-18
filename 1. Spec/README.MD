@@ -61,7 +61,7 @@ Circle Language Spec
 - [Type Control](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/type-safety-genericity-explicit.md)
 - [Object Resolution](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/object-resolution)
     - [Introduction](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/object-resolution/object-resolution-introduction.md)
-    - [Overriding (not written yet)](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/object-resolution/overriding-no-written-yet.md)
+    - [Overriding (not written yet)](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/object-resolution/overriding-not-written-yet.md)
     - [Overloading](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/object-resolution/overloading.md)
     - [Shadowing, Texts to Incorporate](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/object-resolution/shadowing-texts-to-incorporate.md)
     - [Melding](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/object-resolution/melding.md)
