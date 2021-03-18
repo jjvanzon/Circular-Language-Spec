@@ -1,5 +1,5 @@
-﻿Circle Language Spec: Object Resolution
-=======================================
+﻿Circle Language Spec | Object Resolution
+========================================
 
 With Blocks
 ------------

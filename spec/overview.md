@@ -4,6 +4,8 @@
 Overview
 --------
 
+`[ Preliminary documentation ]`
+
 This documentation is an attempt to describe a programming language called Circle. It aims to be a diagram notation for visualizing computer code. 
 
 The documentation tries to explain how coding concepts might be expressed in this Circle language: concepts like objects, classes, relations, interfaces, events, commands and parameters.
