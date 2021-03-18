@@ -6,6 +6,17 @@ Conditions
 
 ### Loose Ideas
 
+Conditions,
+2008~
+
+Conditions might be:
+- on commands or
+- on object values
+
+JJ
+
+-----
+
 Conditions,  
 2020-05-24
 
