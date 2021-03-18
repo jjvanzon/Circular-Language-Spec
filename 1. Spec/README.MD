@@ -39,7 +39,7 @@ Circle Language Spec
     - [System Objects Ideas](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/system-objects/system-objects-ideas.md)
 - [Black Boxes](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/black-boxes)
     - [Black Boxes](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/black-boxes/black-boxes.md)
-    - [Public & Private Connectors, Connections & Assignments](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/black-boxes/public-and-private-connectors-and-assignments.md)
+    - [Public & Private Connectors, Connections & Assignments](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/black-boxes/public-and-private-connectors-connections-and-assignments.md)
     - [Simplified Access Control Notation](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/black-boxes/simplified-access-control-notation.md)
     - [Black Boxes Unfinished](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/black-boxes/black-boxes-unfinished.md)
 - [Interfaces](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/12.%20Interfaces)
