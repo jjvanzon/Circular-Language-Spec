@@ -14,13 +14,13 @@ The Circle language for now is a specification in writing. At the time of this w
 
 The documentation tries to shed light on the following topics:
 
-### Overview
-
-- This overview, which attempts to summarize each topic. 
-
 ### Introduction
 
 - Tries to gently introduce this language.
+
+### Overview
+
+- This overview, which attempts to summarize each topic. 
 
 ### Basic Diagram Elements
 
@@ -46,12 +46,6 @@ The documentation tries to shed light on the following topics:
 
   When an object connects to another object, it is like a relationship between the two is established. This documentation tries to clarify the concept of relationships. Even though objects might relate to an arbitrary set of other objects, the concept might also be about how *classes* set the guidelines for the kinds of relationships objects might have. Relations between classes form a sort of *model* of relationships for objects.
 
-### System Objects
-
-- ![](images/Circle%20Language%20Spec%20Overview.007.png)
-
-  One possible application of how this language might run in practice, is one where systems may be composed of *system objects*. System objects could be the *actual* objects, that a system runs on. Maybe this is a specific use case of the language, but describing it, seems to have allowed more generally usable things fall out. One of the intentions of system objects could be, to manage *relations* between objects. They might also control *system aspects*, such as __Class__, __Interface__, __Execution__ and __Data__. Those aspects could be controlled through *system commands*. The story moves on to assignment commands. The idea is that assignment command copy an aspect from one object to another. The *System Objects* documentation also tries to show connectors, connections and different notational forms to regulate these aspects.
-
 ### Commands
 
 - ![](images/Circle%20Language%20Spec%20Overview.008.png)
@@ -75,6 +69,12 @@ The documentation tries to shed light on the following topics:
 - ![](images/Circle%20Language%20Spec%20Overview.011.png)
 
   The idea of execution flow statements is that they may regulate the order in which things are executed. Several execution flow statements are proposed. The key examples might be __If__ and __For__ statements. An attempt is made to build up a complete set of execution flow statements, to explore what could be desired from the diagram notation for it.
+
+### System Objects
+
+- ![](images/Circle%20Language%20Spec%20Overview.007.png)
+
+  One possible application of how this language might run in practice, is one where systems may be composed of *system objects*. System objects could be the *actual* objects, that a system runs on. Maybe this is a specific use case of the language, but describing it, seems to have allowed more generally usable things fall out. One of the intentions of system objects could be, to manage *relations* between objects. They might also control *system aspects*, such as __Class__, __Interface__, __Execution__ and __Data__. Those aspects could be controlled through *system commands*. The story moves on to assignment commands. The idea is that assignment command copy an aspect from one object to another. The *System Objects* documentation also tries to show connectors, connections and different notational forms to regulate these aspects.
 
 ### Black Boxes
 
