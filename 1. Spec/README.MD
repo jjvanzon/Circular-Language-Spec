@@ -15,7 +15,7 @@ Circle Language Spec
     - [Creation Behavior Of Commands](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/commands/creation-behavior-of-commands.md)
     - [Command Redirection](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/commands/command-redirection.md)
     - [Commands Example Diagrams](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/commands/commands-example-diagrams.md)
-    - [Comands Misc Issues](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/commands/comands-misc-issues.md)
+    - [Commands Misc Issues](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/commands/commands-misc-issues.md)
     - [Commands Ideas](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/commands/commands-ideas.md)
 - [Parameters](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/08.%20Parameters)
     - [Relations Between Commands & Objects](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/1.%20Spec/08.%20Parameters/1.%20Relations%20Between%20Commands%20&%20Objects.md)
