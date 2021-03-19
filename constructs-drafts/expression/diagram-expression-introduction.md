@@ -25,7 +25,3 @@ This folder contains the following articles:
 - ### Abstract Diagram Expression
 
     - This article is not finished. Abstract diagram expression means to use the diagram notation leaving all sorts of details out of the diagram, to only draw out the general concept of something. For instance, just drawing two triangles on paper is not a real program yet, but it does mean ‘separation between interfaces’. It is not expressing an actual system, but it is expressing the general concept of something. You can also draw out a diagram, that clearly makes a point about how a system works, while in practice the actual diagram code of the fully working program does not look that way. You could leave out all sorts of details for the sake of making a point. The diagram may even be formally incorrect, but still it makes a point. How you could use the diagram notation as such should be further worked out in this article.
-
-- ### Peels (a rejected concept)
-
-    - This article is about a concept, that was later rejected. The article contains texts out of an old design of the diagram notation, that are about a notational concept that was later rejected: using extra lines around the shape to reveal information about the target of a line. It should not be gone into too much.

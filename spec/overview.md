@@ -151,11 +151,3 @@ That was the more rounded up documentation. Next an attempt is made to list the 
 ### Misc Diagram Topics
 
 - It would be nice if diagrams could be automatically drawn out: if the metrics and positions of the shapes and lines could be automatically done. Suggestions could be found this documentation about aspects of positioning, that might make diagrams look tidier. Also described might be ideas about how colors may be used to express things. This documentation might still be loose ideas from previous versions of descriptions of this Circle programming language.
-
-### Summaries of Other Languages
-
-- Attempts to summarize other languages, mainly C and C++, in the form of bulleted lists. They were made around the year 2004 during an analysis of the grammar of C and C++ to compare it to this Circle programming language.
-
-### Previous Version
-
-- The previous version of a description of this programming language.
