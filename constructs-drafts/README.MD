@@ -1,8 +1,8 @@
 ﻿Circle Language | Construct Drafts
 ==================================
 
-Index
------
+Overview
+--------
 
 `[ Preliminary documentation ]`
 
