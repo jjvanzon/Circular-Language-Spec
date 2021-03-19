@@ -6,8 +6,6 @@ Index
 
 `[ Preliminary documentation ]`
 
-This index page may contain descriptions of topics now spread elsewhere or some topics might still be found in this section of the documentation.
-
 - ### Automatic Containment
 
     - The concept of automatic containment would be about automatically translating a referential structure to a containment structure.
@@ -20,7 +18,7 @@ This index page may contain descriptions of topics now spread elsewhere or some 
 
 - ### Expression
 
-    - This part of the documentation may cover remaining topics about the diagram expression.  
+    - This part of the documentation may cover remaining topics about diagram expression.  
      
     - The idea behind expression in general is that a program’s systematics might not be described by text code, but text code as well as the diagram notation may be mere *expressions* of systematics, stored in some other way, for instance a binary way as interlinked objects.
 
@@ -44,9 +42,9 @@ This index page may contain descriptions of topics now spread elsewhere or some 
 
 - ### Input Output
 
-    - The concept of input and output may be well-known by computer experts, yet the concept does not seem very present in both object oriented program code or relational database. Something simply ‘becomes’ input or output, arbitrarily chosen by the programmer, but it is ever explicitly *defined* in program code, what is the input and what is the output: it could be a return value returned by a procedure, a value passed along to another procedure, but it could also be reads, writes deletes and inserts into a database. Those things are spread out all over the procedures and you do not really see where something is input and where something is output. Yet, input and output seem a fundamental idea in computer programming. It seems we talk about it all the time. In the new computer language, input and output may get a more prominent position.
+    - The concept of input and output may be well-known by computer experts, yet the concept does not seem very present in both object oriented program code or relational database. Something simply ‘becomes’ input or output, arbitrarily chosen by the programmer, but it might not explicitly *defined* in program code, what is the input and what is the output: it could be a return value returned by a procedure, a value passed along to another procedure, but it could also be reads, writes deletes and inserts into a database. Those things are spread out all over the procedures and you do not really see where something is input and where something is output. Yet, input and output seem a fundamental idea in computer programming. It seems we talk about it all the time. In the new computer language, input and output may get a more prominent position.
 
-    - This documentation is not finished up yet. It contains a lot of unfinished texts but also some (amazing?) ideas, but it is all not worked out yet. The concept of input and output may be taken further than before. What might be worked out, is a definition of what input and output is and what different forms of input and output there might be. In the end, every command may have an input / output definition, that could consist of for instance reads, writes, additions and removals of data. This might not define *exactly* what the command does, but it does define what data is affected and what data is used. Users can always see what the input and output of a program or command is and this offers better security, because the user can see the input / output effect of what they are about to run. You can further secure the system by allowing a command to only access data, that it says it needs to access, so nothing funky can be run inside a program. This definition of input and output of a command will be called the *Command IO*.
+    - This documentation is not finished up yet. It contains a lot of unfinished texts but also some ideas that are perhaps nice, but it is all not worked out yet. The concept of input and output may be taken further. What might be worked out, is a definition of what input and output is and what different forms of input and output there might be. In the end, every command may have an input / output definition, that could consist of for instance reads, writes, additions and removals of data. This might not define *exactly* what the command does, but it does define what data is affected and what data is used. Users can always see what the input and output of a program or command is and this offers better security, because the user can see the input / output effect of what they are about to run. You can further secure the system by allowing a command to only access data, that it says it needs to access, so nothing funky can be run inside a program. This definition of input and output of a command will be called the *Command IO*.
 
     - When two commands affect the same data, they could be in each other’s way. The definition of that overlapping usage and alteration is called *Compared IO*. The idea is, that when you have defined what data is mutually used, you have defined the input-output dependency of commands.
 
@@ -74,7 +72,7 @@ This index page may contain descriptions of topics now spread elsewhere or some 
 
 - ### Ancestry Terms
 
-    - Here terms may be described terms like "parent", "child", "ancestor" and about 50 variations of them or so.
+    - Here terms may be described like "parent", "child", "ancestor" and about 50 variations of them or so.
      
     - The topic might not be essential for describing the Circle language and may also be a bit subjective.
 
@@ -84,9 +82,9 @@ This index page may contain descriptions of topics now spread elsewhere or some 
 
 - ### Circle Language Summary
 
-    - In the future, the *Summary* documentation folder might contain a summary of all the coding concepts introduced. It is supposed to be a quick-reference card of all the concepts, with perhaps textual and diagram notation next to it, without  further explanations. The whole language might be displayed in this overview. Th
+    - In the future, the *Summary* documentation folder might contain a summary of all the coding concepts introduced. It is supposed to be a quick-reference card of all the concepts, with perhaps textual and diagram notation next to it, without  further explanations. The whole language might be displayed in this overview.
   
-    - summary is not made yet, might be created when the design of the new computer language is more complete. It may be decided to leave out such a summary, perhaps if the added value is questioned.
+    - This summary is not made yet, might be created when the design of the new computer language is more complete. It may be decided to leave out such a summary, perhaps if the added value is questioned.
 
 - ### Commands & Classes Loosely Coupled
 
@@ -130,15 +128,15 @@ This index page may contain descriptions of topics now spread elsewhere or some 
 
 - ### Multiple Language Layer
 
-    - ...
-
+    - Multiple language layers may be the idea that programming language might be built up in layers, first starting perhaps with *arithmetic* algebra and numbers (`+ - * /`). Arithmetic expressions may be input of *comparative* algebra (`< > =`). Then building up to *logical* operations (`and or not`). Then may follow *execution flow* (`if else then`). Constructs consisting of all of those operations may be organized into *procedures*. Those may be grouped into *objects*. Objects may have *relations* with each other. And what layer follows above that. *Aspects*? *Generated* code? From this idea might once follow a nice story. The document may just contain a few loose ideas for now.
+    
 - ### Object Storage
 
     - Object Storage basically turns lists on storage devices into a landscape of digital objects. It is the binding force between basic data structures on storage devices and the object logic of the new computer language. It is about how basic data structures are used to store objects. Not all of these principles are original, because many other systems use them, but they were isolated here in a single folder as a single group of concepts required to turn storage into objects.
      
     - The documentation is not finished. It is the bone-structure of documentation yet to be finished. It does sum up the required concepts to turn basic data structures into digital objects. Some of the concepts, though, should be moved elsewhere to another Storage documentation section. Into this bone-structure, loose ideas are dropped as well as (unfinished) texts out of the documentation of the new computer language version 0.9, as well as texts made during the development of the new computer language version 2.0. Software has been developed using object storage concepts, because both those versions of the new computer language had to do with object storage in order to turn basic data structures into digital objects.
 
-- ### Peels (a rejected concept)
+- ### Peels
 
     - This article is about a concept, that was later rejected. The article contains texts out of an old design of the diagram notation, that are about a notational concept that was later rejected: using extra lines around the shape to reveal information about the target of a line. It should not be gone into too much.
 
@@ -148,15 +146,15 @@ This index page may contain descriptions of topics now spread elsewhere or some 
 
 - ### Special Access
 
-    - ...
+    - Tries to discuss differences in concepts like child access, global access, interface access and access to/from variables in a code block. The rules seem to be different and this text attempted to distinguish those rules. It did not seem the diagram notation depended on this concept very much, so it was left out of the spec.
 
 - ### Summaries of the C and C++ Languages
 
-    - Attempts to summarize other languages, mainly C and C++, in the form of bulleted lists. They were made around the year 2004 during an analysis of the grammar of C and C++ to compare it to this Circle programming language.
+    - Attempts to summarize other programming languages, like C and C++, in the form of bulleted lists. They were made around the year 2004 during an analysis of the grammar of C and C++ to compare it to this Circle programming language.
 
 - ### Symbol Language (2004)
 
-    - The previous version of a description of this programming language.
+    - Previous version of an attempt to describe this programming language.
 
 - ### System Command Call Notations Construct Drafts
 
@@ -168,8 +166,6 @@ This index page may contain descriptions of topics now spread elsewhere or some 
 
 - ### Libraries
 
-    - This document may not be written yet.
-
     - The idea might be that base libraries might provide basic types and operations for *math* operations: arithmetic, comparative, logical, Boolean, bit operations for instance. Numbers and math operation might be objects, that link together (perhaps to be called *Math Objects*).
 
     - Another library might provide individual *assembly* instructions (machine instructions) as commands or perhaps substitutes of such basic operations.
@@ -177,3 +173,5 @@ This index page may contain descriptions of topics now spread elsewhere or some 
     - Even __If__ statements and loops might be helped by a base library to provide the syntax.
 
     - *Events* perhaps as well.
+
+    - This document may not be written yet.
