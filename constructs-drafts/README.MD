@@ -1,10 +1,10 @@
 ﻿Circle Language | Construct Drafts
 ==================================
 
+`[ Preliminary documentation ]`
+
 Index
 -----
-
-`[ Preliminary documentation ]`
 
 - ### Automatic Containment
 
