@@ -146,7 +146,7 @@ Overview
 
 - ### Special Access
 
-    - Tries to discuss differences in concepts like child access, global access, interface access and access to/from variables in a code block. The rules seem to be different and this text attempted to distinguish those rules. It did not seem the diagram notation depended on this concept very much, so it was left out of the spec.
+    - Tries to discuss differences between concepts like child access, global access, interface access to/from code blocks. The rules seem to be different. This text attempted to distinguish those rules. It did not seem the diagram notation depended very much on describing these concepts separately, so this was left out of the spec.
 
 - ### Summaries of the C and C++ Languages
 

@@ -4,8 +4,6 @@
 Overview
 --------
 
-`[ Preliminary documentation ]`
-
 This documentation is an attempt to describe a programming language called Circle. It aims to be a diagram notation for visualizing computer code. 
 
 The documentation tries to explain how coding concepts might be expressed in this Circle language: concepts like objects, classes, relations, interfaces, events, commands and parameters.
@@ -50,7 +48,7 @@ The documentation tries to shed light on the following topics:
 
 - ![](images/Circle%20Language%20Spec%20Overview.008.png)
 
-  Commands could be seen as executable objects. Other synonyms for commands might be *methods*, *procedures*, *routines*, *subs* and *functions*. But in the Circle Language Spec those executable objects would be called *commands*. In some programming languages, commands might not be objects, but constructs, that are not exchangeable with objects. But in Circle an attempt is made to see them as objects, that happen to be executable. Commands do seem to have specific behavior. This documentation tries to evaluate this behavior.
+  Commands could be seen as executable objects. Other synonyms for commands might be *methods*, *procedures*, *routines*, *subs* and *functions*. But in the Circle Language Spec those executable objects would be called *commands*. In some programming languages, commands might not be objects, but constructs, that are not exchangeable with objects. But in Circle an attempt is made to see them as objects, that so happen to be executable. Commands do seem to have specific behavior. This documentation tries to evaluate this behavior.
 
 ### Parameters
 
@@ -62,7 +60,7 @@ The documentation tries to shed light on the following topics:
 
 - ![](images/Circle%20Language%20Spec%20Overview.010.png)
 
-  A module would be like a little world in which objects and commands live. A module might be a site, a computer program, a library, a name space or other kind of module. A module may group together functionality or data. A module might be thought of as an object with a special property: something that might be called *global* access to its sub-objects. This is another suggested description of that property: Anything directly inside the module can be directly referenced from anywhere within that module.
+  A module would be like a little world in which objects and commands live. A module might be a site, a computer program, a library, a name space or other kind of module. A module may group together functionality or data. Some modules might have a property that might be called *global* access to its sub-objects, which may also be described as: Anything directly inside the module can be directly referenced from anywhere within that module. A module might also be just an object with this special 'global access' property.
 
 ### Execution Flow
 
@@ -74,7 +72,7 @@ The documentation tries to shed light on the following topics:
 
 - ![](images/Circle%20Language%20Spec%20Overview.007.png)
 
-  One possible application of how this language might run in practice, is one where systems may be composed of *system objects*. System objects could be the *actual* objects, that a system runs on. Maybe this is a specific use case of the language, but describing it, seems to have allowed more generally usable things fall out. One of the intentions of system objects could be, to manage *relations* between objects. They might also control *system aspects*, such as __Class__, __Interface__, __Execution__ and __Data__. Those aspects could be controlled through *system commands*. The story moves on to assignment commands. The idea is that assignment command copy an aspect from one object to another. The *System Objects* documentation also tries to show connectors, connections and different notational forms to regulate these aspects.
+  One possible application of how this language might run in practice, is one where systems may be composed of *system objects*. System objects could be the *actual* objects, that a system runs on. Maybe this is a specific use case of the language, but describing it, seems to have allowed more generally usable things to fall out. One of the intentions of system objects could be, to manage *relationships* between objects. They might also control *system aspects*, such as __Value__, __Object__, __Class__, __Interface__ and __Execution__ and __Multiplicity__. Those aspects could be controlled through *system commands* like __Get__ and __Set__. The story moves on to assignment commands. The idea is that assignment commands copy an aspect from one object to another. The *System Objects* documentation also tries to show connectors, connections and different notational forms to regulate these aspects.
 
 ### Black Boxes
 
@@ -90,39 +88,37 @@ The documentation tries to shed light on the following topics:
 
 - ![](images/Circle%20Language%20Spec%20Overview.013.png)
 
-  This chapter attempts to describe the concept of interfaces along with their diagram notation. Up till now the idea of interfaces was sometimes left out of the stories. This chapter tries to catch up with that. There are also attemps to describe: interface assignment, interface reference and relations that might form through the use of interfaces. As interfaces might be applied to *objects*, interfaces might also be applied to *commands*.
+  This chapter attempts to describe the concept of interfaces along with their diagram notation. Up until now the idea of interfaces was sometimes left out of the stories. This chapter tries to catch up with that. There are also attempts to describe: interface assignment, interface reference and relations that might form through the use of interfaces. As interfaces might be applied to *objects*, interfaces might also be applied to *commands*.
 
 ### Events
 
 - ![](images/Circle%20Language%20Spec%20Overview.014.png)
 
-  Events might be thought of as notification calls. Call receivers might subscribe to an event. The call sender might send a call to the receivers at times. Another variation of the events concept, that the world seems to use, if not mistaken is the *‘the observer pattern’*. The term observer may help here, to realize what an event is for: watching out for something to take place, to possibly take action. The sender might decide what the message looks like. The receiver might supply a command, that should have an interface, given by the sender.
+  Events might be thought of as notification calls. Call receivers might subscribe to an event. The call sender might send a call to the receivers at times. Another variation of the events concept, that the world seems to use, might be the *‘the observer pattern’*. The term observer may help here, to realize what an event is: watching out for something to take place, to possibly take action. The sender might decide what the message looks like. The receiver might supply a command, that should have an interface, suggested by the sender.
 
   The concept of events might be seen as a combination of constructs: an array of command references, a command interface, then supporting the command interface, registering the command inside the array of command references and then calling the commands in the array at times.
 
-  Even though It might be established by a combination of other constructs, it seems to be of enough use, that Circle attempts to accommodate it as a separate construct, like some other programming languages seem to do.
-
-  The documentation also tries to show, how events look in Circle's diagram notation.
+  The documentation also tries to show, how events might look in Circle's diagram notation.
 
 ### Inheritance
 
 - ![](images/Circle%20Language%20Spec%20Overview.015.png)
 
-  This part of the documentation attempts to describe the concept of inheritance inside the Circle language. This concept seems to have been part of some object oriented programming languages for a while. In certain languages one class might inherit from another class, to take over its characteristics before the derived class might get extended or altered. When the notation in Circle was worked out, different variations on that seemed to fall out, that might not necessarily be present in all object oriented languages. Next to *class inheritance* (could be thought of as the *traditional* form of inheritance), there could also be *object inheritance*. This might mean, that one object takes over the characteristics of a specific other object. The other object seems to melt together with the new object. When maybe changing base members of the new object, the base object’s data might also change. This could be called *object inheritance*. More forms of inheritance may be proposed. A collection might be inherited from, so that an existing 'table' of items might be extended with 'new columns'. This could be called *list inheritance*. There is also the idea for a construct, where a *system* or module can inherit from another system, taking over its characteristics, and the derived system can be altered, augmented, specialized and extended. This might be called *system inheritance* or *module inheritance*. If the original system would change, this may also change the derived systems. (Other technology might establish this with what may be called 'proxy classes' and extending auto-generated proxy-classes with additional aspects.) So the idea is that things can be inherited from to render specialized versions of a class, object, collection or module.
+  This part of the documentation attempts to describe the concept of *inheritance* inside the Circle language. This concept seems to have been part of some object oriented programming languages for a while. In certain languages one class might inherit from another class, to take over its characteristics before the derived class might get extended or altered. When the notation in Circle was worked out, different variations on that seemed to fall out, that might not necessarily be present in all object oriented languages. Next to *class inheritance* (could be thought of as the *traditional* form of inheritance), there could also be *object inheritance*. This might mean, that one object takes over the characteristics of a specific other object. The other object seems to melt together with the new object. When maybe changing base members of the new object, the base object’s data might also change. This could be called *object inheritance*. More forms of inheritance may be proposed. A collection might be inherited from, so that an existing 'table' of items might be extended with 'new columns'. This could be called *list inheritance*. There is also the idea for a construct, where a *system* or module can inherit from another system, taking over its characteristics, and the derived system can be altered, augmented, specialized and extended. This might be called *system inheritance* or *module inheritance*. If the original system would change, this may also change the derived systems. (Other technology might establish this with what may be called 'proxy classes' and extending auto-generated proxy-classes with additional aspects.) So the idea is that things can be inherited from to render specialized versions of a class, object, collection or module.
 
   Such specialization might also be applied to *commands*. The inheritance documentation also aims to describe other concepts in the area of *specialization* and *extension*. Inheritance might be thought of related to the concept of *interfaces.*
 
-That was the more rounded up documentation. Next an attempt is made to list the documents, that might not be as well polished. The descriptions below, however, might be a rounded reflection on the topics.
+That was the more rounded up documentation. Next an attempt is made to list the documents, that might not be as well polished. The descriptions below, however, might be a rounded up reflection on the topics.
 
 ### Type Control
 
 - ![](images/Circle%20Language%20Spec%20Overview.016.png)
 
-  Objects might relate to free to choose sets of other objects. But when the class of an object is set, some relations might be determined by the class. This could be considered a form of *type control*. Another form of type control might be assigning an interface to an object reference. This may change the types of objects that might be assigned to the object reference.
+  Objects might relate to, free to choose sets of other objects. But when the class of an object is set, some relations might be determined by the class. This could be considered a form of *type control*. Another form of type control might be assigning an interface to an object reference. This may change the types of objects that might be assigned to the object reference.
 
   Binding an object like that could be called *explicit* declaration. Not binding an object or object reference like that might be called *generic* declaration. Both concepts could be seen as *type control*.
 
-  This documentation folder might have one document, with ideas that are possibly not as well polished, including an original description worked out in a previous version of the design of this diagram notation language.
+  This document might have ideas that are possibly not as well polished, including an original description worked out in a previous version of the design of this diagram language.
 
 ### Object Resolution
 
@@ -136,18 +132,26 @@ That was the more rounded up documentation. Next an attempt is made to list the 
 
 - ![](images/Circle%20Language%20Spec%20Overview.018.png)
 
-  An object might set rules for what kind of values may be filled in into it and a command might be given conditions on whether the procedure might be started or not. This might perhaps be done by adding code to a procedure (or for an object, to the __Set__ command). From that code may follow, that depending on certain conditions, the execution of the rest of the procedure is or is not run. That just may have described a low-level way to handle conditions. But conditions could be centric enough in programming, that they might become a construct in the Circle diagram language. A (value) object or command might propose a set of conditions, to evaluate whether the value may be assigned or if the command is allowed to execute. The documentation may be not so rich yet, apart from some loose ideas.
+  An object might set rules for what kind of values may be filled in into it and a command might be given conditions on whether the procedure might be started or not. This might perhaps be done by adding code to a procedure (or for an object, to the __Set__ command). From that code may follow, that depending on certain conditions, the execution of the rest of the procedure is or is not run. That just may have described a low-level way to handle conditions. But conditions could be centric enough in programming, that they might become a construct in the Circle diagram language. A (value) object or command might propose a set of conditions, to evaluate whether the value may be assigned or if the command is allowed to execute.
+ 
+  The documentation may be not so rich yet, apart from some loose ideas.
 
 ### Object Order
 
-- By default, objects inside a collection might be put in an arbitrary order. The *Object Order* concept may allow sorting a list, or putting things in a manually chosen order, and also perhaps a diagram notation for it. This documentation is a collection of ideas, that might be polished up to be made neater.
+- By default, objects inside a collection might be put in an arbitrary order. The *Object Order* concept may allow sorting a list, or putting things in a manually chosen order, and also perhaps a diagram notation for it.
+ 
+- This documentation is a collection of ideas, that might be polished up to be made neater later.
 
 ### Pointers
 
 - ![](images/Circle%20Language%20Spec%20Overview.019.jpeg)
 
-  The intention could be to move pointer-to-pointer related issues from being in more than one place to this chapter. This may or may not have been done yet.
+  The intention could be to move pointer-related issues to this chapter instead of being spread around multiple places.
+ 
+  This may or may not have been done yet.
 
 ### Misc Diagram Topics
 
-- It would be nice if diagrams could be automatically drawn out: if the metrics and positions of the shapes and lines could be automatically done. Suggestions could be found this documentation about aspects of positioning, that might make diagrams look tidier. Also described might be ideas about how colors may be used to express things. This documentation might still be loose ideas from previous versions of descriptions of this Circle programming language.
+- It would be nice if diagrams could be automatically drawn out: if the metrics and positions of the shapes and lines could be automatically done. Suggestions could be found this documentation about aspects of positioning, that might make diagrams look tidier. Also described might be ideas about how colors may be used to highlight things
+ 
+- This documentation might still be loose ideas from previous descriptions of this Circle programming language.
