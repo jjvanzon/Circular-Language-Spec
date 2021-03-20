@@ -1,20 +1,22 @@
-﻿Circle Language | Broader View
-==============================
+﻿Circle Language Broader View | Integration
+==========================================
 
-Integration
------------
+Overview
+--------
 
 `[ Preliminary documentation ]`
 
-This folder does not contain a lot of documentation. It is the bone-structure for future documentation. Also, hardly any integration software has been developed yet. This folder will contain any documentation about integration modules, that *Circle* has to offer in order to integrate with the rest of the world of computer technology. *Circle* is not meant to live on its own, but existing resources on the internet should be accessible, when working with the new language. Each integration module will facilitate two goals: accessing other systems using *Circle* and the ability to access *Circle* resources from inside other systems. As such you can access other file systems using *Circle*, and you can also access *Circle* resources as if it was a file system. That example would be called *File System Integration*. As such there will be systems such as *Database Integration*, *SOAP Integration*, *ODBC Integration*, *File Types* and *Module System Integration*. It is considered quite important, that *Circle* in the future will give access to all those resources as well as be accessible by other systems through all kinds of different protocols.
+This folder may contain documentation about integration modules, that might work with *Circle* in order to integrate with the rest of the world of computer technology. *Circle* is not meant to live on its own, but existing resources on the internet should be accessible, when working with the new language. Each integration module will facilitate two goals: accessing other systems using *Circle* and the ability to access *Circle* resources from inside other systems. As such you can access other file systems using *Circle*, and you can also access *Circle* resources as if it was a file system. That example would be called *File System Integration*. As such there will be systems such as *Database Integration*, *SOAP Integration*, *ODBC Integration*, *File Types* and *Module System Integration*. It is considered quite important, that *Circle* in the future will give access to all those resources as well as be accessible by other systems through all kinds of different protocols.
 
-There are the following sub-folders:
+Here are some topics that might be put under this umbrella. Some may have their own article.
 
-- ### More Text Codes
+- ### Integration Loose Ideas
 
-    - *More Text Codes* actually encapsulates a large number of sub-modules. It wraps together everything regarding other text codes. They are wrapped together, to not overshadow the other sub-modules of *Code*.
+    - Lesser worked out ideas about integration.
 
-    - The *More Text Codes* documentation folder is genuinely a throw-together of ideas, put into a structure. It needs a lot of work to become good documentation yet.
+- ### [Text Codes](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/broader-view/integration/text-codes.md)
+
+    - *Text Codes* might encapsulates a large number of sub-modules. It might be about integrating many other text codes.
     
 - ### File System Integration
 
@@ -40,13 +42,13 @@ There are the following sub-folders:
 
     - *Module System Integration* means, that you could for instance use ActiveX resources, Java, COM, .NET and other module systems using *Circle*. Also, *Circle* resources could linked to as if they were for instance COM or any other module systems. The documentation folder is empty. No software has been developed for this yet.
 
-- ### Protocols
+- ### [Protocols](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/broader-view/integration/protocols.md)
 
     - Also, there will be *Protocols*, which will enable several internet protocols, so that you can access resources that are exposed through those protocols. Protocols such as HTTP, SMTP, POP3, FTP, etcetera. *Protocols* will make sure a *Circle* resource is accessible through those protocols. The documentation folder is empty. No software has been developed for this yet.
 
-- ### Legacy API's
+- ### External API's
 
-    - Furthermore, a lot of software is dependent on API’s. When software is made, and it uses an API, it is dependent on that API. You can not port the software to another system if the same API is not supported. *Module System Integration* might part solve this. You can link to resources from other systems, so you do not necessarily need to port to native *Circle* to integrate with another system. However, you might want to be able to port your system to the new computer language’s native operating system, to make use of new features in it. Porting as such is only possible if the API your program depends on, is either accessible through *Module Systems Integration* or the legacy API is supported in the new computer language as well. That is the part *Legacy API’s* is responsible for. It is undoable to support all existing API’s inside the new *OS*, but if an API is supported, *Legacy API’s* is the part of the system to put it in. The documentation folder is empty. No software has been developed for this yet.
+    - Furthermore, a lot of software is dependent on API’s. When software is made, and it uses an API, it is dependent on that API. You can not port the software to another system if the same API is not supported. *Module System Integration* might part solve this. You can link to resources from other systems, so you do not necessarily need to port to native *Circle* to integrate with another system. However, you might want to be able to port your system to the new computer language’s native operating system, to make use of new features in it. Porting as such is only possible if the API your program depends on, is either accessible through *Module Systems Integration* or the external API is supported in the new computer language as well. That is the part *External API’s* is responsible for. It is undoable to support all existing API’s inside the new *OS*, but if an API is supported, *External API’s* is the part of the system to put it in. The documentation folder is empty. No software has been developed for this yet.
 
 - ### ‘...’
 
