@@ -52,8 +52,8 @@ There are the following sub-folders:
 
     - Perhaps later other types of systems to integrate with will come to light. That is why this folder is put at the end: as a placeholder for possible future folders.
 
-Ideas
-------
+Loose Ideas
+-----------
 
 *The texts below are loose ideas, yet to be turned into good documentation.*
 
