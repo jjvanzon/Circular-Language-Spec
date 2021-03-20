@@ -42,9 +42,9 @@ Here are some topics that might be put under this umbrella. Some may have their 
 
     - *Module System Integration* means, that you could for instance use ActiveX resources, Java, COM, .NET and other module systems using *Circle*. Also, *Circle* resources could linked to as if they were for instance COM or any other module systems. The documentation folder is empty. No software has been developed for this yet.
 
-- ### [Protocols](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/broader-view/integration/protocols.md)
+- ### Protocols
 
-    - Also, there will be *Protocols*, which will enable several internet protocols, so that you can access resources that are exposed through those protocols. Protocols such as HTTP, SMTP, POP3, FTP, etcetera. *Protocols* will make sure a *Circle* resource is accessible through those protocols. The documentation folder is empty. No software has been developed for this yet.
+    - *Protocols* might enable several internet protocols, so that you might access resources that are exposed through those protocols. Protocols such as HTTP, SMTP, POP3, FTP, etcetera. *Protocols* might make sure a *Circle* resource is accessible through those protocols.
 
 - ### External API's
 
