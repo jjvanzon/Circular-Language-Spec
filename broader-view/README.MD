@@ -3,9 +3,10 @@
 
 These are various draft texts that may once describe a story, ideas about how this Circle language might be used in practice.
 
-- ## Exchangeability / Extensibility / Fundamental Principles
+- ## Exchangeability Principles
 
-    - This documentation describes what may be fundamental principles, that the Circle  language is based on. One of the goals might be for Circle to melt together  computer technology disciplines, providing one clear language, that can express many things, and that everybody might understand. The *Fundamental Principles* folder makes promises about the new language, but the *Spec* folder shows you how those promises are upheld. If you want to go straight to the definition of the language itself, go to the *Spec* documentation.
+    - The *Exchangeability Principles* describes things in the area of computer technology, that are traditionally separate, that might be combined to form one thing.
+    - Perhaps the most important goal of the Circle programming language, is to melt together all computer technology disciplines, providing one clear language, that can express anything, and that everybody can understand. The *Exchangeability Principles* might make a lot of promises about the new language.
 
 - ## Expression
 
@@ -21,7 +22,8 @@ These are various draft texts that may once describe a story, ideas about how th
 
 - ## Extensibility
  
-    - See "Exchangeability / Extensibility / Fundamental Principles" (above).
+    - Perhaps the most important goal of the Circle programming language, is to melt together all computer technology disciplines, providing one clear language, that can express anything, and that everybody can understand. The *Extensibility Principles* may make a lot of promises about the new language.
+    - The *extensibility principles* may cover the techniques that make sure existing software is extensible and make sure, that *Circle language* may integrate with the rest of the world of computer technology. *Circle* resources might be accessible to other systems and existing resources on the internet might be accessible in *Circle*.
 
 - ## Integration
 
@@ -66,18 +68,6 @@ These are various draft texts that may once describe a story, ideas about how th
 - ## Debugging
 
     - The new computer language is described, but how to go through code step by step or debug it has not been covered yet. This documentation may cover how debugging is implemented inside the environment of the new computer language. For now it only contains loose ideas about it. Nothing like this has been developed yet.
-
-- ## Fundamental Principles Loose Ideas
-
-    - See "Exchangeability / Extensibility / Fundamental Principles" (above).
-
-- ## Fundamental Principles Overview
-
-    - See "Exchangeability / Extensibility / Fundamental Principles" (above).
-
-- ## Fundamental Principles Read Me
-
-    - See "Exchangeability / Extensibility / Fundamental Principles" (above).
 
 - ## Interfaces Group By Source
 

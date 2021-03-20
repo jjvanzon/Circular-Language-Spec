@@ -1,8 +1,8 @@
 ﻿Circle Language Broader View | Exchangeability Principles
 =========================================================
 
-Flat & Structured Interchange Loose Ideas 2
--------------------------------------------
+Flat & Structured Interchange Loose Ideas
+-----------------------------------------
 
 `[ Preliminary documentation ]`
 
