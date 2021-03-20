@@ -14,14 +14,18 @@ The articles in the *Diagrams* documentation folder are not finished. They consi
 
 This folder contains the following articles:
 
-- ### Diagrams as a Concept
+- ### [Misc Pictures](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/constructs-drafts/expression/misc-pictures)
 
-    - There is nothing inside this documentation folder yet, but the idea behind diagrams as a concept, is that drawing out diagrams should be implemented as a *concept* programming construct, which can use the reflective data of objects and translate that to a diagram.
+    - Some misc pictures that are somehow hard to throw away.
 
-- ### Abusing Diagram Expression
+- ### [Abstract Diagram Expression](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/expression/abstract-diagram-expression.md)
+
+    - This article is not finished. Abstract diagram expression means to use the diagram notation leaving all sorts of details out of the diagram, to only draw out the general concept of something. For instance, just drawing two triangles on paper is not a real program yet, but it does mean ‘separation between interfaces’. It is not expressing an actual system, but it is expressing the general concept of something. You can also draw out a diagram, that clearly makes a point about how a system works, while in practice the actual diagram code of the fully working program does not look that way. You could leave out all sorts of details for the sake of making a point. The diagram may even be formally incorrect, but still it makes a point. How you could use the diagram notation as such should be further worked out in this article.
+
+- ### [Abusing Diagram Expression](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/expression/abusing-diagram-expression.md)
 
     - This article is not finished yet. Diagrams are usually drawn out in a standard way: each shape has its meaning, containment has a meaning, lines have a meaning, line types like dashed and dotted have their meaning. The concept of *abusing diagram expression* is about switching around these means of expression and their actual meanings. For instance: the referential structure of objects is expressed by putting shapes inside other shapes. To express which references inside the diagram point to the same object, lines are used connecting those shapes, that represent the same object. How would the diagram look if you could express the same-object thing with containment and the referential thing with lines between shapes? It is not fully worked out how this would work, but this is what *abusing diagram expression* should be about: switching means of expression between what they actually express. Another idea, that is also called diagram expression abuse, is to allow shapes to overlap: in the normal diagram notation shapes do not overlap, but abusing diagram expression should also cover how overlap in a system could be expressed in a diagram by actual overlap of shapes.
 
-- ### Abstract Diagram Expression
+- ### Diagrams as a Concept
 
-    - This article is not finished. Abstract diagram expression means to use the diagram notation leaving all sorts of details out of the diagram, to only draw out the general concept of something. For instance, just drawing two triangles on paper is not a real program yet, but it does mean ‘separation between interfaces’. It is not expressing an actual system, but it is expressing the general concept of something. You can also draw out a diagram, that clearly makes a point about how a system works, while in practice the actual diagram code of the fully working program does not look that way. You could leave out all sorts of details for the sake of making a point. The diagram may even be formally incorrect, but still it makes a point. How you could use the diagram notation as such should be further worked out in this article.
+    - The idea behind diagrams as a concept, might that drawing out diagrams may be implemented as a *concept* programming construct, which might use the reflective data of objects and translate that to a diagram.
