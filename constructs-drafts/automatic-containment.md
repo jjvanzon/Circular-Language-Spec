@@ -8,6 +8,8 @@ Automatic Containment
 
 The concept of automatic containment is about translating a referential structure to a containment structure.
 
+That might make relations between object more easy to overview.
+
 To be able to work out the idea, some concepts need to be ignored first and reconsidered later (concepts such as module and physical storage location).
 
 I am working out the idea here as I go along. The explanations may need to be redone in the future.
@@ -306,7 +308,7 @@ The reason why module was at first ingored when working out automatic containmen
 But this is all solved with imaginary references: *the* trick to give something referenced multiple times a single logical position inside the containment structure.
 
 
-Ideas
+Loose Ideas
 -----
 
 *The texts below are loose ideas and texts out of older documentation, that still need to be turned into good documentation and integrated with the rest of the concepts.*
@@ -1182,5 +1184,90 @@ JJ
 Formerly in the Relations chapter,
 
 It `must` be mentioned, that `the*` method of *automatic containment* applies to unidirectional references, and `just` *does `not*` match* yet with `the*` notation for relationships. In `the*` future it `must` be further worked out how to `best` turn them into a single notation.
+
+JJ
+
+-----
+
+Artificial Promotion / Esthetic Reference,
+
+Objects automatically put on a lower level, because of deeper usage, can artificially be promoted to a higher level, by creating a reference to it from a higher object, for esthetic reasons, related to it having great significance on a higher level. (this doesn't have to result in an object reference being put on every level in between.)
+
+A compiler could generate a warning about such an unused reference, unless you actively type the reference as being esthetic.
+
+JJ
+
+-----
+
+Artificial Promotion / Esthetic Reference,
+
+Heel algemene dingen komen bij automatische containment in de diepste lagen terecht, terwijl je het misschien wel hoger wil zien. Eigenlijk wil je het dan promoveren naar een hoger niveau. Ik bedenk me nu, dat je dat kan doen door een hoger object een (ongebruikte) referentie te geven naar het algemene object. Dat hoger object zit dan wel 'toevallig', 'vanzelf' hoger op dat moment. Dat is ok.
+
+JJ
+
+-----
+
+Artificial Promotion / Esthetic Reference,
+
+Automatische encapsulatie, zet algemene dingen op het diepste niveau  
+Aan de andere kant zijn algemene dingen eigenlijk minder belangrijk, dus mogen ze diep zitten, maar ze kunnen voor het begrip van het systeem wel belangrijk zijn. Logging is bijvoorbeeld eigenlijk deel van de user interface, en de user interface ligt een niveau hoger dan het proces zelf, ondanks dat de functionaliteit van het proces meer over het programma zegt, dan de user interface, die daarop gebouwd is. Het probleem van technische encapsulatie versus functioneel belang versus belang voor het begrip van het systeem, zit me nog niet lekker wat betreft automatische encapsulatie.
+
+Maar gebruikte componenten zitten ook op een dieper niveau, maar het diepere niveau refereert qua class naar hoger, want de component class staat gewoon naast het component dat daarop voortbouwt.
+
+Eigenlijk moet ik autocontainment gewoon in de praktijk zien.
+
+JJ
+
+-----
+
+express mutuality of object separate from expressing relations...
+So you have a relation symbol function as the indicator of a relation, and an imaginary reference functioning as the indicator of the object. Too many lines.
+It sucks.
+
+Perhaps I need to show the symbol's contents only at the highest containment level, at which the object is referenced. And therefore, have relation symbols also only reside on a high level.
+
+But is there a situation in which you access things on a deeper level? Or is everything happening, elevated to a higher level, by putting imaginary references on a higher level.
+
+It still does not look good
+
+-----
+
+Perhaps the answer lies somewhere in
+- Containment implies a relation back to the parent
+- Relations are given direction
+- Most relations have a main direction,
+  the main direction is displayed as a unary relation
+  but with a couple of circles around the line,
+  indicating a dual relation.
+
+-----
+
+Automatic Containment,  
+2008
+
+Brainstorm:
+
+I am wondering if I can stop emphasizing every symbol is a reference, and just save that for specific diagram topics. That will make the story a lot simpler. I can then ignore automatic containment, making an outer stub of a redirection, the object itself. Crap, would that simplify the explanations.
+
+
+In automatic containment, I create imaginary references, turning all the symbols imaginarily to object references,
+which they actually already were. But the outer reference is representing the object itself.
+
+Ignore that for other article groups. Only focus on the current one. But actually, I have already done that in the other articles.
+
+In that case, I should stop calling them pointers to pointers. They are, but I should stop calling them that.
+
+It would so much simplify the usage of the language. If you have to consider any symbol a reference, then it will be totally inaccessible to children, for instance.
+
+
+These contemplations have everything to do with the implications of automatic containment. Every symbol is a reference. But in the original Symbol, the target of all the redirections was the object itself. I have to uphold that, for a better understandable language.
+
+JJ
+
+-----
+
+Posessed Imaginary References,
+
+![](images/Posessed%20imaginary%20references.png)
 
 JJ

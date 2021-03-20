@@ -8,12 +8,6 @@ Overview
 
 This documentation may contain drafts of ideas that might not become part of the spec. Or language constructs that are just not as clearly worked out yet.
 
-- ### Automatic Containment
-
-    - The concept of automatic containment would be about automatically translating a referential structure to a containment structure.
-
-    - The idea may have loose ends.
-
 - ### Black Boxes Construct Drafts
 
     - Lesser worked out ideas about this topic may be moved here from the spec.
@@ -67,6 +61,12 @@ This documentation may contain drafts of ideas that might not become part of the
     - __Identifiers__
 
         - Identifiers are names for objects, collections, attributes, sites, programs, modules or any other element of a system. Any element of a system can get an identifier. This documentation folder describes how such names are used inside the new computer language. The documentation folder consists of five articles. The two most basic ones are finished. The three less fundamental ones are not finished.
+
+- ### Automatic Containment
+
+    - The concept of automatic containment would be about automatically translating a referential structure to a containment structure.
+
+    - The idea may have loose ends.
 
 - ### Access Control Loose Ideas
 
