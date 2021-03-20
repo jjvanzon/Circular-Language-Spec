@@ -111,3 +111,7 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 - ### [Symbol = Creator](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/broader-view/exchangeability/symbol-is-creator.md)
 
     - This principle partly confirms the *Object Oriented = Relational* principle. *Symbol*  refers to an object oriented programming language I began to construct around the year 2001. It is a programming language, that can fully express a program in a diagram. *Creator*  refers to a programming language I began working on around 2006. The basic principle of it is, that you start off defining classes and relations, and an application is generated out of it. The principle of *Symbol = Creator* is about turning these two languages into a single programming language. This is hard, because *Creator* is based on defining *relations*, and *Symbol* was an object oriented language about a diagram notation, which on top of it all had no way to express a *relation*. This article explains how the two will be combined in the new design, to form a single language.
+
+- ### [Exchangeability Loose Ideas](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/broader-view/exchangeability/exchangeability-loose-ideas.md)
+
+    - Loose ideas not yet given a place.
