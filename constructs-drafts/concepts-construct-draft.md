@@ -55,7 +55,7 @@ I have an adequate brainstorm here about how things should be and I am confident
 
 P.S.: Concepts can probably also have their own code, that does not really extend other objects, but is called upon by other objects. However that will be implemented, this will not be a problem.
 
-### Ideas
+### Loose Ideas
 
 A Concept not only can extend an item, but can also extend a class definition.  
 Preferably keep the extension a Concept imposes under a subobject. Don’t merge the concept into the rest of the item.

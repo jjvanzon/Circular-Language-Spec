@@ -8,7 +8,7 @@ Overloading
 
 - Overloading names of related classes, disambiguating by class.
 
-### Ideas
+### Loose Ideas
 
 *These were moved here from the Projects documentation, to the System documentation, to integrate them with the System documentation. Remaining ideas should be moved back to the Projects documentation after that. The Projects documentation is where Ideas belong.*
 

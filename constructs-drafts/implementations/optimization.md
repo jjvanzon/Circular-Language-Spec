@@ -6,7 +6,7 @@ Optimization
 
 `[ Out of scope ]`
 
-### Ideas
+### Loose Ideas
 
 Automatic optimization, by using temporary variables for the same expression, that can't change as the procedure runs. That last element is hard to determine. For that it may also be advised to make it just a suggestion. Perhaps the temporary variable may still not be put in the source code, after the suggestion has been went along with, but the temporary storage suggestions may be declared at the beginning of the procedure.
 

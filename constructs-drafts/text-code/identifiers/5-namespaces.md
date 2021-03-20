@@ -6,7 +6,7 @@ Namespaces
 
 `[ Deprecated documentation ]`
 
-### Ideas
+### Loose Ideas
 
 *The texts below are loose ideas yet to be turned into good documentation.*
 

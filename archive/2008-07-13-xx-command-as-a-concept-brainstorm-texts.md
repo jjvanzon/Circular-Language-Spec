@@ -62,7 +62,7 @@ If you want to do that, you *have* to implement commands as a concept.
 
 A command itself can also contain related command references, which are then considered parameters of the command.
 
-#### Ideas
+#### Loose Ideas
 
 Commands,
 

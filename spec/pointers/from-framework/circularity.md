@@ -65,7 +65,7 @@ I have to think of better names. Preventing and blocking sound too alike.
 
 Of course circularities don’t need to be protected, circularities can be made as soon as somewhere in the relational redirection, an already passed object occurs. This section simply laid out the possibilities in J Data to handle circularities to prevent your program from hanging.
 
-### Ideas
+### Loose Ideas
 
 2008-04-26  
 I would also want to give procedures running over circular object structures, a maximum number of iterations, so that you can let procedures run circularly to a certain extent.

@@ -33,7 +33,7 @@ Apart from __RelationClass__, __Class__ also has an __OrderMatters__ property in
 
 See the *Order Matters* section.
 
-### Ideas
+### Loose Ideas
 
 Object Order,  
 2008-09-30

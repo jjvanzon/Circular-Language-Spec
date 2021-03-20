@@ -15,7 +15,7 @@ Such as mutuality of commands creates mutuality of interfaces.
 
 A grouping symbol based on what a dependent object uses. The interface organization is a little bit automatic that way. If you do not have an interface organization, then you can still see what the various clients are using and perhaps for the overview you may use an interface organization after all.
 
-## Ideas
+## Loose Ideas
 
 - Extensive classification through interfaces
     - Each attribute or method can be made an interface 

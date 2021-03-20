@@ -6,7 +6,7 @@ Circle Language Summary
 
 `[ Deprecated documentation ]`
 
-### Ideas
+### Loose Ideas
 
 Computer Language,  
 2008-08-06

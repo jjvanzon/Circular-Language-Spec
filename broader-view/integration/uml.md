@@ -6,7 +6,7 @@ UML
 
 `[ Preliminary documentation ]`
 
-### Ideas
+### Loose Ideas
 
 It is worth reconsidering UML for Symbol?  
 You should consider the practical value of each of the diagram types. Symbol does provide a way to express any system.  

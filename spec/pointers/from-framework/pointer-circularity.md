@@ -6,7 +6,7 @@ Pointer Circularity
 
 `[ Preliminary documentation ]`
 
-### Ideas
+### Loose Ideas
 
 (Out of the original Symbol documentation)
 

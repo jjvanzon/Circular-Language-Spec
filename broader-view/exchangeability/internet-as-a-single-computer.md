@@ -453,7 +453,7 @@ Other concepts do enrich the landscape of the internet, but are not requirements
 
 In each concept it must be considered how it is applied when the internet needs to function as a single computer.
 
-### Ideas
+### Loose Ideas
 
 *The texts below are loose ideas, yet to be turned into good documentation.*
 

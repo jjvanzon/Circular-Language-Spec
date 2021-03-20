@@ -50,7 +50,7 @@ Here is a module with a reference to another module:
 
 This makes all the global members of module __A__, globally accessible from inside module __B__.
 
-### Ideas
+### Loose Ideas
 
 *The texts below are ideas yet to be turned into good documentation.*
 

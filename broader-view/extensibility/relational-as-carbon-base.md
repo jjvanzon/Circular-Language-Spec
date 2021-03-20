@@ -22,7 +22,7 @@ Actually, you should see it like this: if you’re defining objects and object l
 
 It’s hard... at all times in the diagram the target classes and the class lines between them should be highlit, because it SHOULD be on the foreground of your software development, and it should count as the bone structure of your program. Therefore the bone-structure must be highlit, because everything is attached to this, and it is the relational structure, which should be the base of what you think about when defining your program.
 
-### Ideas
+### Loose Ideas
 
 Men moet gewoon de klasse-relatie structuur zo veel mogelijk als basis nemen, en niets ernaast bouwen, maar procedures in de structuur INbouwen. de klasse-relatie structuur is zeg maar de koolstof basis en daar kan vanalles aanhangen.
 

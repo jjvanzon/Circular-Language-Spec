@@ -97,7 +97,7 @@ A programmer can’t control retaining the system attribute. They are added and 
 
 For n`<=>`n, x`<=>`n and n`<=>`x relaties you can’t give the relation classes 1 id. In A 1`<=>`n B, B has an ID in its A. In A n`<=>`n B, B has an ID in every A it exists in.  At the moment I don’t make the IDs system attributes in this case, but I structurelessly generate the dimensional IDs into the code modules.
 
-#### Ideas
+#### Loose Ideas
 
 *These were moved here from the Projects documentation, to the System documentation, to integrate them with the System documentation. Remaining ideas should be moved back to the Projects documentation after that. The Projects documentation is where Ideas belong.*
 

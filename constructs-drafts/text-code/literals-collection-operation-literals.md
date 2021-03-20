@@ -8,7 +8,7 @@ Collection Operation Literals
 
 Text notation for operations on collections.
 
-### Ideas
+### Loose Ideas
 
 #### Collection Operation Literals
 

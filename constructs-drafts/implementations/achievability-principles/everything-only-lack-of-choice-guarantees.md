@@ -30,7 +30,7 @@ In Computer Language 3.0 it will be easy to turn on extra concepts later, so it 
 
 In the first version of Computer Language, the principle of Everything Only might have caused performance problems, because all concepts would then be turned on at once, but in Computer Language 3.0 any *concept will __be__* optional, so this performance problem does not apply anymore.
 
-### Ideas
+### Loose Ideas
 
 Bepaalde dingen niet toestaan in Creator.  
 Bijvoorbeeld: een object referentie komt altijd tot stand door een relatie. Je moet vrij strikt conformeren aan een basis van werken met relaties. Het werken met deze relaties moet uiteindelijk werkbaar zijn voor leken, zodat het een nieuwe benadering van computers is, die met een beetje moeite grijpbaar is voor iedereen. Mensen die nu voor het eerst een computer gebruiken, moeten ook vanalles leren. Creator relaties moet ook te leren zijn. Het is weliswaar een hele andere benadering, maar voor nieuwkomers, is de huidige manier van werken met computers ook een heel aparte benadering.

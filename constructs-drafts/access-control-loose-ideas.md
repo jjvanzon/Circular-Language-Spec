@@ -168,7 +168,7 @@ When you don’t separately specify names for the `Item Control` or `Item Window
 
 For more information see the *Names* section.
 
-### Ideas
+### Loose Ideas
 
 #### Access Control
 
@@ -385,7 +385,7 @@ Verder moet zo'n access systeem niet alleen mooi georganiseerd zijn, maar ook no
 Security & users:  
 Why on earth you have to login everywhere, why can’t you be a single user on the internet, and you’ve got access rights. The access rights to a certain site are just added to your rights.
 
-### Ideas
+### Loose Ideas
 
 Security & Safety,
 

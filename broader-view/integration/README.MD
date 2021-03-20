@@ -10,7 +10,7 @@ This folder may contain documentation about integration modules, that might work
 
 Here are some topics that might be put under this umbrella. Some may have their own article.
 
-- ### Integration Loose Ideas
+- ### [Integration Loose Ideas](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/broader-view/integration/integration-loose-ideas.md)
 
     - Lesser worked out ideas about integration.
 
@@ -49,6 +49,18 @@ Here are some topics that might be put under this umbrella. Some may have their 
 - ### External API's
 
     - Furthermore, a lot of software is dependent on API’s. When software is made, and it uses an API, it is dependent on that API. You can not port the software to another system if the same API is not supported. *Module System Integration* might part solve this. You can link to resources from other systems, so you do not necessarily need to port to native *Circle* to integrate with another system. However, you might want to be able to port your system to the new computer language’s native operating system, to make use of new features in it. Porting as such is only possible if the API your program depends on, is either accessible through *Module Systems Integration* or the external API is supported in the new computer language as well. That is the part *External API’s* is responsible for. It is undoable to support all existing API’s inside the new *OS*, but if an API is supported, *External API’s* is the part of the system to put it in. The documentation folder is empty. No software has been developed for this yet.
+
+- ### [Translating From XML (to a J Data Structure)](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/broader-view/integration/translating-from-xml-to-a-j-data-structure.md)
+
+    - This may be a tool to read out XML and show it as a structure in the new computer language. So it is not about saving and loading data as XML, but it is about taking existing XML from another source and showing it inside the new computer language. The idea came out of the design of the relational language *Creator* made in 2007. This idea will probably not be implemented inside the main module *Code*, but inside the main module *Legacy*, to offer access to XML. Nothing like this has been developed in the software yet. The documentation only contains a loose idea about it and is not a full description yet.
+
+- ### [Translating To and From Relational Database](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/broader-view/integration/translating-to-and-from-relational-database.md)
+
+    - This may be a module to convert a relational database to a structure inside the new computer language or to convert a structure in the new computer language to a relational database. The idea came out of the design of the relational language *Creator* made in 2007. The idea was, that this would make using the new language an option more easily picked. This idea will be superseded by *Legacy* modules offering the ability to access the new computer language as if it were relational database and the ability to display relational databases in the syntax of the new computer language. Nothing like this has been developed in the software yet. The documentation only contains a loose idea about it and is not a full description yet.
+
+- ### [UML](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/broader-view/integration/uml.md)
+
+    - This article is not finished. It should contain an evaluation on what are the pros and cons of the new diagram notation compared to UML: what does UML offer, that the new diagram notation does not and what UML-expressible concepts have a better alternative notation inside the new diagram language? How useful is UML anymore if you have the new diagram notation? Or does UML still offer things, that the new diagram notation does not? And if there is something the new diagram notation does not offer: should the diagram notation be changed, so that it could be a substitute for UML? So this article should be a comparison between UML and the diagram notation of the new computer language.
 
 - ### ‘...’
 

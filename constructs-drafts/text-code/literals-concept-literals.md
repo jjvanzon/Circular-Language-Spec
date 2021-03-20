@@ -8,7 +8,7 @@ Concept Literals
 
 (Text code expression of a concept.)
 
-### Ideas
+### Loose Ideas
 
 Macro keywords kunnen in de toekomst ook gebruikt worden voor access control keywords. Daarbij heb je 1 keyword, dat eigenlijk een aantal access control eigenschappen in zich heeft. (zie Symbol Language documentatie)
 

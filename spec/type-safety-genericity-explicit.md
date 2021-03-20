@@ -8,7 +8,7 @@ Type Safety, Genericity, Explicit
 
 Het type van de items is nu wel heel generiek. Dat sluit aan bij generiekheid in Symbol. Mooi.
 
-### Ideas
+### Loose Ideas
 
 Computer Language,
 

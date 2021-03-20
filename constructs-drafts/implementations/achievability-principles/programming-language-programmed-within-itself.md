@@ -250,7 +250,7 @@ It also speeded up class assignment, because class assignment also looked up ite
 
 If you index items purely by number, then you also don’t have to search for names anymore. That would be very nice.
 
-### Ideas
+### Loose Ideas
 
 Computer Language, Code Base
 

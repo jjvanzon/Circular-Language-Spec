@@ -26,7 +26,7 @@ This folder contains the following articles:
 
 - This documentation folder contains a zip file with pictures of *example diagrams*. Some of the diagrams come from analysis of real-life situations, and they are just too inspiring to throw away, so they have been given a place here.
 
-### Ideas
+### Loose Ideas
 
 *The texts below are loose ideas, yet to be turned into good documentation.*
 

@@ -144,7 +144,7 @@ The cloning depth may be dependent on the parameter usage inside the command.
 
 ### Older Ideas
 
-#### Ideas
+#### Loose Ideas
 
 If you don’t indicate the order in which to execute the commands, then they will execute in an arbitrary order. Sometimes this is acceptable from a functional point of view.
 

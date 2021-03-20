@@ -6,7 +6,7 @@ Diagram & Text Code Expression
 
 `[ Preliminary documentation ]`
 
-### Ideas
+### Loose Ideas
 
 #### Out of the original Symbol documentation
 

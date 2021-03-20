@@ -13,7 +13,7 @@ Note that the Inheritance chapter might have content about Object Resolution top
 
 JJ
 
-### Ideas
+### Loose Ideas
 
 #### Inheritance en Overloading (overloaded default properties)
 

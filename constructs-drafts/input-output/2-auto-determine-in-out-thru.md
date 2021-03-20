@@ -37,6 +37,6 @@ You should only *refer* to those articles, even when the articles are not not fi
 
 The rest is all part of automatically determining in-out-thru.
 
-### Ideas
+### Loose Ideas
 
 If anything should change about the Basic Command Topics as soon as you will revise Commands & Classes Loosely Coupled, then you have to redo the Basic Command Topics during a project about Advanced Command Topics.

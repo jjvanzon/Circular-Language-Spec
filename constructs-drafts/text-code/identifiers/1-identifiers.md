@@ -48,7 +48,7 @@ When you type in an identifier to identify an element of the system, it needs to
 
 The first versions of the new computer language will store a large space as two spaces next to each other. This does, however, imposes the restriction on identifiers, that you can’t use several spaces right next to each other.
 
-### Ideas
+### Loose Ideas
 
 Statement:
 - The ‘As’ or ‘In’ notation for relation names is applied when it isn’t the only relation between the two classes

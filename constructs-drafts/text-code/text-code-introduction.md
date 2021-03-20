@@ -95,7 +95,7 @@ Ideas
 Eventually parts of this documentation section will be moved to the concept, the text code expresses, because diagram and text code expression of a concept is placed with the concept, because that makes the documentation easier to read and easier to write.  
 But for now text expression topics are not worked out with the concepts yet.
 
-## Ideas
+## Loose Ideas
 
 ### Text Parser
 
@@ -813,7 +813,7 @@ But it is a unary relation there.
 
 However, I have expressed only unary relations above.
 
-## Ideas
+## Loose Ideas
 
 The comparative operators = and <> do not only apply to numbers, but to any kind of object
 

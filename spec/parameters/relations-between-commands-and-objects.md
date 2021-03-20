@@ -144,7 +144,7 @@ The local variable *might* make the command part of the class anyway, but then a
 
 - \> 2008-09-06 Not true. Just wait what it will look like relations between objects and commands.
 
-## Ideas
+## Loose Ideas
 
 Commands,  
 ± 2008
