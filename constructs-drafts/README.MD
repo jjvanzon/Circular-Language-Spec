@@ -6,6 +6,8 @@ Overview
 
 `[ Preliminary documentation ]`
 
+This documentation may contain drafts of ideas that might not become part of the spec. Or language constructs that are just not as clearly worked out yet.
+
 - ### Automatic Containment
 
     - The concept of automatic containment would be about automatically translating a referential structure to a containment structure.

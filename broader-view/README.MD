@@ -1,7 +1,7 @@
 ﻿Circle Language | Broader View
 ==============================
 
-`[ Preliminary documentation ]`
+These are various draft texts that may once describe a story, ideas about how this Circle language might be used in practice.
 
 - ## Exchangeability / Extensibility / Fundamental Principles
 
@@ -37,7 +37,7 @@
 
         - This may be a module to convert a relational database to a structure inside the new computer language or to convert a structure in the new computer language to a relational database. The idea came out of the design of the relational language *Creator* made in 2007. The idea was, that this would make using the new language an option more easily picked. This idea will be superseded by *Legacy* modules offering the ability to access the new computer language as if it were relational database and the ability to display relational databases in the syntax of the new computer language. Nothing like this has been developed in the software yet. The documentation only contains a loose idea about it and is not a full description yet.
 
-- ## Artificial Intelligence, Natural Language, Neural Networks
+- ## Artificial Intelligence, Natural Language, Neural Networks, Object Algebra
 
     - It goes too far for now to consider the possibilities inside the new computer language regarding these concepts. But they are mentioned here, to demonstrate, that they are things that need to be thought about in the future. 
 
