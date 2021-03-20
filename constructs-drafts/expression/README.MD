@@ -1,5 +1,5 @@
-﻿Circle Language Construct Drafts | Diagram Expression
-=====================================================
+﻿Circle Language Construct Drafts | Expression
+=============================================
 
 Introduction
 ------------
@@ -8,15 +8,13 @@ Introduction
 
 *Expression* might be about a *diagram notation* for visualizing the program code. The diagrams may be mere expressions of binary interlinked objects. Systematics, stored in a binary way as interlinked objects, might be translated to a diagram, expressed on screen. The diagram might once be fully automatically drawn out. The metrics and positioning of the shapes and lines may automatically determined. The diagram might be edited, resulting in changes to the stored binary objects.
 
-*This* documentation folder might describe remaining topics about diagram the diagram notation, that might not quite have made it into the main texts.
+This documentation folder might describe remaining topics about diagram the diagram notation, that might not quite have made it into the main texts.
 
-The articles here might not be not finished.
-
-This folder may contain the following articles:
+The articles here might not be not finished. This folder may contain the following articles:
 
 - ### [Misc Pictures](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/constructs-drafts/expression/misc-pictures)
 
-    - Some misc pictures that are somehow hard to throw away.
+    - Some misc pictures that were somehow hard to throw away.
 
 - ### [Abstract Diagram Expression](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/expression/abstract-diagram-expression.md)
 
