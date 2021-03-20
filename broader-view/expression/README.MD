@@ -1,26 +1,20 @@
-﻿Circle Language | Broader View
-==============================
+﻿Circle Language Broader View | Expression
+=========================================
 
-Expression (2)
---------------
+Overview
+--------
 
 `[ Preliminary documentation ]`
 
-A program’s systematics are not described by text code, but text code as well as the diagram notation are a mere *expression* of systematics, stored in a binary way as interlinked objects. This folder covers the different kinds of ways you can express systematics.
+This part of the documentation may cover remaining topics about diagram expression.  
 
-The basic ideas about a diagram notation were already covered earlier at the beginning of the new computer language documentation, because it was important to quickly introduce those.
+The idea behind expression in general is that a program’s systematics might not be described by text code, but text code as well as the diagram notation may be mere *expressions* of systematics, stored in some other way, for instance a binary way as interlinked objects. Systematics, stored in perhaps a binary way as interlinked objects, might be translated to a diagram. The diagram can be edited, resulting in changes to the stored (binary) objects again.
 
-Much of the documentation in this folder is a mere throw-together of ideas or pieces of text, that came out of previous descriptions of new computer programming languages.
+This folder covers the different kinds of ways you can express systematics. Perhaps in a broader sense than just Circle language alone.
+
+Some of the documentation in this folder is are mere throw-togethers of ideas or pieces of text, that came out of previous descriptions of new computer programming languages.
 
 The *Expression* folder contains the following articles:
-
-- ### Diagrams
-
-    - *Expression* includes a *diagram notation* for visualizing the program code. The diagrams are also a mere expression of binary interlinked objects. Systematics, stored in a binary way as interlinked objects, can be translated to a diagram. The diagram should be fully automatically drawn out. The metrics and positioning of the shapes and lines is automatically determined. The diagram can be edited, resulting in changes to the stored binary objects.
-
-    - The basics of the diagram notation were already covered at the beginning of the new computer language documentation. How *each concept* is expressed in a diagram is already covered in the documentation *of that* concept. This documentation folder explains everything *else* about diagram the diagram notation, such as how the shape positions of the diagram are automatically determined and how the diagram can be *colored*, to make the systematics even more clear. 
-
-    - The articles in the *Diagrams* documentation folder are not finished. They consist mostly of texts coming out of an earlier unfinished design of the diagram notation language. The diagram notation has not been realized in software yet.
 
 - ### Alternative Media
 

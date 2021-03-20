@@ -10,6 +10,12 @@ This folder does not contain a lot of documentation. It is the bone-structure fo
 
 There are the following sub-folders:
 
+- ### More Text Codes
+
+    - *More Text Codes* actually encapsulates a large number of sub-modules. It wraps together everything regarding other text codes. They are wrapped together, to not overshadow the other sub-modules of *Code*.
+
+    - The *More Text Codes* documentation folder is genuinely a throw-together of ideas, put into a structure. It needs a lot of work to become good documentation yet.
+    
 - ### File System Integration
 
     - You can access other file systems from within *Circle*, and you can also access *Circle* as if it *were* a file system. *File System Integration* also covers any other tools regarding files. In the new software system you would apply those to *objects* instead of files. Some file tools have been developed. The documentation folder only contains loose ideas about file functions.
