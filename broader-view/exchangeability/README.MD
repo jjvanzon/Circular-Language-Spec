@@ -56,7 +56,7 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
     - (The article is not finished yet. It is just ideas gathered up out of old documentation, yet to be turned into a new article.)
 
-- ### [Command = Executable Object](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/broader-view/exchangeability/command-is-executable-object-loose-ideas.md)
+- ### [Command = Executable Object](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/broader-view/exchangeability/command-is-executable-object.md)
 
     - Even more programming constructs are turned into just objects. Methods, functions, procedures, routines, commands, executables, all called *commands* in the new language, are actually objects too. Every command is a special object, that just happens to be executable. A whole chapter has been devoted to it: the *Commands* chapter. The differences between commands and normal objects are explained in it, but the essence of it is: commands are *objects*, *executable* *objects*. Turning commands and objects into the same construct makes the new computer language’s grammar less complex.
 

@@ -1,8 +1,10 @@
 Circle Language Broader View | Exchangeability Principles
 =========================================================
 
-Commands = Executable Object Loose Ideas 
-----------------------------------------
+Commands = Executable Object
+----------------------------
+
+### Loose Ideas
 
 `[ Preliminary documentation ]`
 
