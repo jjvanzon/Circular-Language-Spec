@@ -3,7 +3,7 @@
 
 These are various draft texts that may once describe a story, ideas about how this Circle language might be used in practice.
 
-- ## Exchangeability Principles
+- ## Exchangeability
 
     - The *Exchangeability Principles* describes things in the area of computer technology, that are traditionally separate, that might be combined to form one thing.
     - Perhaps the most important goal of the Circle programming language, is to melt together all computer technology disciplines, providing one clear language, that can express anything, and that everybody can understand. The *Exchangeability Principles* might make a lot of promises about the new language.
@@ -68,6 +68,10 @@ These are various draft texts that may once describe a story, ideas about how th
 - ## Debugging
 
     - The new computer language is described, but how to go through code step by step or debug it has not been covered yet. This documentation may cover how debugging is implemented inside the environment of the new computer language. For now it only contains loose ideas about it. Nothing like this has been developed yet.
+
+- ## Fundamental Principles Loose Ideas
+
+    - Might contain loose ideas that might once be spread across "Exchangeability Principles", "Extensibility Principles" and "Achievability Principles".
 
 - ## Interfaces Group By Source
 
