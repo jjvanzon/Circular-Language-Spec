@@ -54,7 +54,7 @@ Toen ik dit probeerde te implementeren in de eerste opzet van Creator 2.0, kreeg
 
 ### Loose Ideas
 
-`[ Deprecated ]`
+`[ Deprecated documentation ]`
 
 #### Attributes Are Objects
 
