@@ -28,7 +28,7 @@ Here might be some of the topics that could be found here:
 
 - ### [Optimization](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/optimization.md)
 
-    - May cover any kind of optimization algorithm, that might be integrated into the new computer language. For now this is considered not too important to think about. The text might just be loose ideas.
+    - May cover optimization algorithms, that might be integrated into the new computer language. For now this is considered not too important to think about. The text might just be loose ideas.
 
 - ### [Referrers Implementation](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/referrers-implementation.md)
 
