@@ -6,7 +6,7 @@ Further Parameter Passing Stereotyping
 
 `[ Preliminary documentation ]`
 
-Contemplations about further thru parameter passing stereotyping will be postponed.
+Contemplations about further thru parameter passing stereotyping would be postponed.
 
 Throughput could have the following elements:
 
