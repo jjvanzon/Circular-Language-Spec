@@ -6,9 +6,9 @@ Implementations
 
 `[ Out of Scope ]`
 
-Topics in this folder may have been left out of the spec, because of a decision not to cover *implementations* and applications of the diagram notation. Internal workings may not be that essential for conveying the ideas about this diagram language.
+Topics in this folder may have been left out of the spec, because of a decision not to cover *implementations* and applications of the diagram notation. Internal workings may not be that essential for conveying ideas about this diagram language.
 
-Here might be some of the topics that could  be found here:
+Here might be some of the topics that could be found here:
 
 - ### [Achievability](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/constructs-drafts/implementations/achievability)
 
@@ -18,9 +18,9 @@ Here might be some of the topics that could  be found here:
 
     - Ideas about this topic, that might not belong in the spec of the language, but are more like an application of it.
 
-- ### [Code Editor | Not Written Yet](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/code-editor-not-written-yet.md)
+- ### Code Editor
 
-    - This document may not have been written yet. On top of text code being constructed and parsed, text code may also separately require a code editor for use in the programming environment.
+    - On top of text code being constructed and parsed, text code may also separately require a code editor for use in the programming environment.
 
 - ### [Commands Implementation](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/commands-implementation.md)
 
