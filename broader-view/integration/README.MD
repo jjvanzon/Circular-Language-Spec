@@ -1,8 +1,8 @@
-﻿Circle Language Broader View | Integration
-==========================================
+﻿Circle Language | Broader View
+==============================
 
-Overview
---------
+Integration
+-----------
 
 `[ Preliminary documentation ]`
 

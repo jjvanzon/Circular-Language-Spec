@@ -1,8 +1,8 @@
-﻿Circle Language Broader View | Exchangeability
-==============================================
+﻿Circle Language | Broader View
+==============================
 
-Overview
---------
+Exchangeability
+---------------
 
 `[ Preliminary documentation ]`
 

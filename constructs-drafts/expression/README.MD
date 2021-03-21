@@ -1,8 +1,8 @@
-﻿Circle Language Construct Drafts | Expression
-=============================================
+﻿Circle Language | Construct Drafts
+==================================
 
-Introduction
-------------
+Expression
+----------
 
 `[ Preliminary documentation ]`
 

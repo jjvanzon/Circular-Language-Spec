@@ -1,8 +1,8 @@
-﻿Circle Language Broader View | Expression
-=========================================
+﻿Circle Language | Broader View
+==============================
 
-Overview
---------
+Expression
+----------
 
 `[ Preliminary documentation ]`
 

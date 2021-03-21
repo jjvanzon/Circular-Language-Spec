@@ -1,8 +1,8 @@
-﻿Circle Language Broader View | Extensibility
-============================================
+﻿Circle Language | Broader View
+==============================
 
-Overview
---------
+Extensibility
+-------------
 
 `[ Preliminary documentation ]`
 
