@@ -1,4 +1,4 @@
-﻿Circle Language Construct Drafts | Interfaces
+﻿Circle Language Broader View | Interfaces
 =============================================
 
 Imaginary Backward Relationships
