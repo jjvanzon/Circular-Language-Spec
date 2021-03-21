@@ -6,7 +6,7 @@ Text Code
 
 `[ Preliminary documentation ]`
 
-Traditionally the systematics of a program are expressed by means of text code. But in the new language, systematics might be stored in another way like binary interlinked objects. Text code may be a mere *expression* of those stored objects. The *Text Code* sub-module might make sure, that systematics are translated to text code. The text code might be adapted, resulting in changes to the stored  objects, rather than the text code’s being literally stored.
+Traditionally the systematics of a program might be expressed by means of text code. But in the new language, systematics might be stored in another way like binary interlinked objects. Text code may be a mere *expression* of those stored objects. The *Text Code* sub-module might make sure, that systematics are translated to text code. The text code might be adapted, resulting in changes to the stored  objects, rather than the text code’s being literally stored.
 
 The exact way the textual code is going to look inside the new language is not yet determined, because it was considered more important to work out the language *conceptually* along with its *diagram notation*, than to work out the *textual notation*. Version 2.0 of the new computer language had a text code, but it was still quite basic.
 
@@ -14,15 +14,15 @@ The articles might not be finished. They might be throw-togethers of ideas and c
 
 You might find the following content here:
 
-- ### Identifiers
+- ### [Identifiers](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/constructs-drafts/text-code/identifiers)
 
     - ...
 
-- ### Literals
+- ### [Literals](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/constructs-drafts/text-code/literals)
 
     - ...
 
-- ### Parameters in Text Code
+- ### [Parameters in Text Code](parameters-in-text-code)
 
     - ...
 
@@ -30,16 +30,16 @@ You might find the following content here:
 
     - This article is just a throw-together of ideas. Traditional text codes have access operators to access an object, a class, a procedure, arrays, pointers or values. Because other languages have access operators, the documentation about this new language also has a separate *Access Operators* article, in which it is to be figured out what place access operators has in the new language. Originally, it was hard to place access operators inside the new language. In C++ documentation access operators are introduced like they have an analogy to mathematic operators:  
 
-````
-        ::   Scope resolution  
-        ::   Global  
-        [ ]  Array subscript  
-        ( )  Function call  
-        .    Member selection (object)  
-        –>   Member selection (pointer)  
-        ,    Comma (parameter separation)  
+    ````
+        ::   Scope resolution
+        ::   Global
+        [ ]  Array subscript
+        ( )  Function call
+        .    Member selection (object)
+        –>   Member selection (pointer)
+        ,    Comma (parameter separation)
         =    Assignment
-````
+    ````
 
     - Access operators are hard to place inside a mathematical system. It is hard to find an analogy between mathematical operators and such access literals. However, it is clear what place access operators have inside the new computer language. Access operators are abstract character representations of system commands, such as __Object Get, Class Get, Item Get, Value Get__ and __Value Set__. All these system commands are explained in the *System Objects* chapter of the *Code* documentation folder. In the new computer language, access operators are just a textual expression of calls to those system commands. What has yet to be decided inside this unfinished article is how the access operators will textually look inside the new computer language.
 
