@@ -15,6 +15,10 @@ Such as mutuality of commands creates mutuality of interfaces.
 
 A grouping symbol based on what a dependent object uses. The interface organization is a little bit automatic that way. If you do not have an interface organization, then you can still see what the various clients are using and perhaps for the overview you may use an interface organization after all.
 
+Perhaps multiple objects have commands that looks similar on the outside. Even without defining an interface yourself, some sort of mechanism or construct might be thought of that might make you able to reference any object that has a command much like it.
+
+Or when multiple objects have a sub-object with the same class, you might reference them as having a mutual type, even when you have not necessarily defined this type yourself.
+
 ## Loose Ideas
 
 - Extensive classification through interfaces

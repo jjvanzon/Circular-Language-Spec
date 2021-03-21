@@ -63,6 +63,10 @@ These are various draft texts that may once describe a story, ideas about how th
 
     - Might contain loose ideas that might once be spread across "Exchangeability Principles", "Extensibility Principles" and "Achievability Principles".
 
+- ### Interfaces Broader View
+
+    - Ideas about this topic, perhaps less to the point but more philosophical, might be moved from the spec to here.
+
 - ## Interfaces Group By Source
 
     - A specific application of interfaces might be when your object might get extended with commands programmed by other people, code coming from other sites. To have commands from others available from the object might be handy, but it may create overview if these commands are grouped by source. Also to maybe have grip onto the reliability of a command. This article tries to further get into that and how the diagram notation might look.

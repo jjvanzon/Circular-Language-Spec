@@ -30,10 +30,6 @@ This documentation may contain drafts of ideas that might not become part of the
 
     - The concept of input and output may be well-known by computer experts, yet the concept does not seem very present in both object oriented program code or relational database. Something simply ‘becomes’ input or output, arbitrarily chosen by the programmer, but it might not explicitly *defined* in program code, what is the input and what is the output: it could be a return value returned by a procedure, a value passed along to another procedure, but it could also be reads, writes deletes and inserts into a database. In Circle language, input and output may get a more prominent position. It may offer opportunities for resolution of concurrency and parallelism as well as better security.
 
-- ### Interfaces Construct Drafts
-
-    - Lesser worked out ideas about this topic may be moved here from the spec.
-
 - ### Text Code
 
     - Traditionally, the systematics of a program are expressed by means of text code. But in the new language systematics are stored as binary interlinked objects. Text code is a mere *expression* of those binary interlinked objects. The *Text Code* sub-module makes sure, that systematics are translated to text code. The text code can be adapted, resulting in changes to the stored binary objects, rather than that the text code is literally stored.
