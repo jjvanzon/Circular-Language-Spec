@@ -1,8 +1,8 @@
-Circle Language Broader View | Achievability Principles
-=======================================================
+Circle Language Construct Drafts | Achievability
+================================================
 
-Texts to Incorporate
---------------------
+Brainstorm
+----------
 
 `[ Preliminary documentation ]`
 

@@ -1,12 +1,10 @@
-﻿Circle Language Broader View | Achievability Principles
-=======================================================
+﻿Circle Language Broader View | Achievability
+============================================
 
 Loose Ideas
 -----------
 
 `[ Preliminary documentation ]`
-
-*The texts below are loose ideas yet to be turned into good documentation.*
 
 Achievability Principles,  
 2008-10-16
