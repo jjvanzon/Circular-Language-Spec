@@ -1306,3 +1306,24 @@ Text Code,
 Inversed path should be a text expression concept.
 
 JJ
+
+-----
+
+JCode, Expression, Text Code,
+
+Zo heb je een access operator, voor het overgaan naar een ander systeem:
+
+`\\MyServer\MySourceControlSystem\\MyFolder\MySubFolder`
+
+(`\` = access object)  
+(`\\` = access system)
+
+JJ 
+
+-----
+
+Computer Language,
+
+Text code is not leading anymore.
+
+JJ

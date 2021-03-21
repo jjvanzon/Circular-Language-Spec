@@ -89,24 +89,3 @@ Computer Language,
 Instruction caching. If machine instructions other than calling methods are executed repeatedly, there may be a way to cache the eventually executed machine instructions, and run that instead of with all the calls around it.
 
 JJ
-
-#### Text Code
-
-JCode, Expression, Text Code,
-
-Zo heb je een access operator, voor het overgaan naar een ander systeem:
-
-`\\MyServer\MySourceControlSystem\\MyFolder\MySubFolder`
-
-(`\` = access object)  
-(`\\` = access system)
-
-JJ 
-
------
-
-Computer Language,
-
-Text code is not leading anymore.
-
-JJ
