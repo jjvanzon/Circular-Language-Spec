@@ -1,8 +1,8 @@
-Circle Language Construct Drafts | Implementations
-==================================================
+Circle Language Construct Drafts
+================================
 
-Overview
---------
+Implementations
+---------------
 
 `[ Out of Scope ]`
 
@@ -16,7 +16,7 @@ Here might be some of the topics that could  be found here:
 
 - ### [Classes Implementation | Texts to Incorporate](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/classes-implementation-texts-to-incorporate.md)
 
-    - Ideas about this topic, that might not belong in the specification of the language, but are more an application of it.
+    - Ideas about this topic, that might not belong in the spec of the language, but are more like an application of it.
 
 - ### [Code Editor | Not Written Yet](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/code-editor-not-written-yet.md)
 
@@ -24,7 +24,7 @@ Here might be some of the topics that could  be found here:
 
 - ### [Commands Implementation](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/commands-implementation.md)
 
-    - Ideas about this topic, that might not belong in the specification of the language, but are more an application of it.
+    - Ideas about this topic, that might not belong in the spec of the language, but are more like an application of it.
 
 - ### [Optimization](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/optimization.md)
 
@@ -32,8 +32,8 @@ Here might be some of the topics that could  be found here:
 
 - ### [Referrers Implementation](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/referrers-implementation.md)
 
-    - Ideas about this topic, that might not belong in the specification of the language, but are more an application of it.
+    - Ideas about this topic, that might not belong in the spec of the language, but are more like an application of it.
 
 - ### [System Commands Implementation](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/system-commands-implementation.md)
 
-    - Ideas about this topic, that might not belong in the specification of the language, but are more an application of it.
+    - Ideas about this topic, that might not belong in the spec of the language, but are more like an application of it.

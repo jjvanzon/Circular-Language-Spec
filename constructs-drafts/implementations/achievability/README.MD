@@ -1,8 +1,8 @@
-﻿Circle Language Construct Drafts | Achievability
-================================================
+﻿Circle Language Construct Drafts
+================================
 
-Overview
---------
+Achievability
+-------------
 
 `[ Out of Scope ]`
 
