@@ -12,11 +12,11 @@ Here might be some of the topics that could  be found here:
 
 - ### [Achievability](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/constructs-drafts/implementations/achievability)
 
-    - This sub-folder represents a category of principles that might be called the *achievability principles*. The achievability principles would be a set of principles, that describe how a running new computer language might be developed in a limited amount of time with a limited amount of people: what techniques might be employed to try and make that possible.
+    - The achievability principles would be a set of principles, that describe how a running new computer language might be developed in a limited amount of time with a limited amount of people: what techniques might be employed to try and make that possible.
 
 - ### [Classes Implementation | Texts to Incorporate](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/classes-implementation-texts-to-incorporate.md)
 
-    - Ideas about this topic, that might not belong in the specification of the language, but are more about making an application in which the concept is used.
+    - Ideas about this topic, that might not belong in the specification of the language, but are more an application of it.
 
 - ### [Code Editor | Not Written Yet](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/code-editor-not-written-yet.md)
 
@@ -24,7 +24,7 @@ Here might be some of the topics that could  be found here:
 
 - ### [Commands Implementation](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/commands-implementation.md)
 
-    - Ideas about this topic, that might not belong in the specification of the language, but are more about making an application in which the concept is used.
+    - Ideas about this topic, that might not belong in the specification of the language, but are more an application of it.
 
 - ### [Optimization](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/optimization.md)
 
@@ -32,8 +32,8 @@ Here might be some of the topics that could  be found here:
 
 - ### [Referrers Implementation](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/referrers-implementation.md)
 
-    - Ideas about this topic, that might not belong in the specification of the language, but are more about making an application in which the concept is used.
+    - Ideas about this topic, that might not belong in the specification of the language, but are more an application of it.
 
 - ### [System Commands Implementation](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/system-commands-implementation.md)
 
-    - Ideas about this topic, that might not belong in the specification of the language, but are more about making an application in which the concept is used.
+    - Ideas about this topic, that might not belong in the specification of the language, but are more an application of it.
