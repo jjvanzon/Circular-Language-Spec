@@ -4,7 +4,7 @@ Circle Language Construct Drafts | Text Code
 Assignment in Text Code
 -----------------------
 
-`[ Preliminary documentation ]`
+`[ Deprecated documentation ]`
 
 ### Introduction to Assignment in Text Code
 
