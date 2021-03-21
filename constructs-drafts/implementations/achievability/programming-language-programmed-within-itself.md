@@ -4,7 +4,7 @@
 Programming Language Programmed Within Itself
 ---------------------------------------------
 
-`[ Out of scope ]`
+`[ Out of Scope ]`
 
 *(This article also covers subjects about the implementation of the code base.)*
 

@@ -4,7 +4,7 @@
 Optimization
 ------------
 
-`[ Out of scope ]`
+`[ Out of Scope ]`
 
 ### Loose Ideas
 

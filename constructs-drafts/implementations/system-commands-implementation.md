@@ -4,7 +4,7 @@
 Implementation of System Commands
 ---------------------------------
 
-`[ Out of scope ]`
+`[ Out of Scope ]`
 
 There is a paradox.
 

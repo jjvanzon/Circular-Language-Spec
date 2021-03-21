@@ -4,7 +4,7 @@
 Everything Only (Lack Of Choice = Guarantees)
 -----------------------------------------------
 
-`[ Out of scope ]`
+`[ Out of Scope ]`
 
 In Computer Language 0.9, almost any code that could be generated was optional. This basically created a lot of different possible situations in which everything needed to still function correctly.
 

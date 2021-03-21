@@ -4,7 +4,7 @@ Circle Language | Construct Drafts
 Classes Implementation
 ----------------------
 
-`[ Out of scope ]`
+`[ Out of Scope ]`
 
 ### Texts to Incorporate
 

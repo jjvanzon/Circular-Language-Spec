@@ -4,7 +4,7 @@
 Small Base of Code
 ------------------
 
-`[ Out of scope ]`
+`[ Out of Scope ]`
 
 This principle is quite important. The base of Computer Language, which is programmed in C++, should be very small. The rest of the computer language will be programmed within the computer language itself. The new computer language is hoped to make programming easier, so reprogramming it within itself would make it possible to easily add more features to it.
 
