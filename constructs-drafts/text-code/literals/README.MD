@@ -1,12 +1,12 @@
-Circle Language | Construct Drafts
-==================================
+Circle Language Construct Drafts | Text Code
+============================================
 
 Literals
 --------
 
 `[ Deprecated documentation ]`
 
-The idea here would be that each language element’s textual representation might be considered the language element’s *literal*, that might be read out and assigned. However large the construct, its text code might still just be a literal, be it composed of the literals of its sub-constructs.
+The idea here would be that each language element’s textual representation might be considered the language element’s *literal*, that could be read out and assigned. However large the construct, its text code might still just be a literal, be it composed of the literals of its sub-constructs.
 
 You might find the following sub-topics here:
 
@@ -20,7 +20,7 @@ You might find the following sub-topics here:
 
 - ### [Concept Literals](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/literals/concept-literals.md)
 
-    - This article might not be finished, but it may describe how you might use the *concept* programming construct to define new literal notations on-the-fly. Some programming constructs might be programmed using the new computer language itself was the plan once. New constructs might also include a textual notation. So being able to custom-define a new textual notation using the language itself, might be a welcome addition.
+    - This article might not be finished, but it may describe how the *concept* programming construct might be used to define new literal notations on-the-fly. It once was a plan for some programming constructs to be programmed using the new computer language itself. New constructs might also include a textual notation. So it might be a welcome addition to be able to custom-define a new textual notation using the language itself.
 
 - ### [Collection Operation Literals](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/literals/collection-operation-literals.md)
 
