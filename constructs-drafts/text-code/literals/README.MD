@@ -4,26 +4,28 @@ Circle Language | Construct Drafts
 Literals
 --------
 
-The general idea is that each language element’s textual representation is considered the language element’s *literal*, that can be read out and assigned. However large the construct, its text code is still just a literal, be it composed of the literals of its sub-constructs.
+`[ Deprecated documentation ]`
 
-The main article in this folder only contains an explanation of the traditional meaning of literals, and also some loose ideas about the topic of literals. There are the following sub-folders:
+The idea here would be that each language element’s textual representation might be considered the language element’s *literal*, that might be read out and assigned. However large the construct, its text code might still just be a literal, be it composed of the literals of its sub-constructs.
+
+You might find the following sub-topics here:
 
 - ### Object Literals
 
-    - This article was not written yet, but should contain the explanation how objects can get literals. Simple objects, like numbers and dates, should be covered, but also how a literal can be assigned to an object to initialize the object’s members.
+    - Might not have an article yet, but if one would ever be written, it might contain the explanation how objects can get literals. Simple objects, like numbers and dates, might be covered, but also perhaps how a literal might be assigned to an object to initialize the object’s members.
 
-- ### Command Literals
+- ### [Command Literals](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/literals/command-literals.md)
 
-    - The text code of command definitions and command calls are also considered literals. This article is not finished yet, but it should contain a description of how command definitions and command calls are translated to literals.
+    - The text code of command definitions and command calls might also be considered literals. This article might not be finished yet, but it may contain a description of how command definitions and command calls might be translated to literals.
 
-- ### Concept Literals
+- ### [Concept Literals](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/literals/concept-literals.md)
 
-    - This article is not finished, but it should describe how the *concept* programming construct should be able to define new literal notations. Some programming constructs are programmed using the new computer language itself. So as you do that, you also should include a textual notation of those new constructs. So you should be able to custom-define textual notations for newly introduced constructs.
+    - This article might not be finished, but it may describe how you might use the *concept* programming construct to define new literal notations on-the-fly. Some programming constructs might be programmed using the new computer language itself was the plan once. New constructs might also include a textual notation. So being able to custom-define a new textual notation using the language itself, might be a welcome addition.
 
-- ### Collection Operation Literals
+- ### [Collection Operation Literals](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/literals/collection-operation-literals.md)
 
-    - Notations for *collections* should also have literals: from simple array access, to a notation to execute a command on all the items inside a collection at once.
+    - Notations for *collections* might also have literals: from simple array access, to perhaps a notation to execute a command on all the items inside a collection at once.
      
-- ### Literals Loose Ideas
+- ### [Literals Loose Ideas](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/literals/literals-loose-ideas.md)
  
-    - ...
+    - Loose ideas about the concept of literals.
