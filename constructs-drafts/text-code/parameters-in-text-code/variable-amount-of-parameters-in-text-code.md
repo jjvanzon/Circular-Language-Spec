@@ -1,5 +1,5 @@
-﻿Circle Language Construct Drafts | Parameters
-=============================================
+﻿Circle Language Construct Drafts | Parameters in Text Code
+==========================================================
 
 Variable Amount in Text Code
 ----------------------------
