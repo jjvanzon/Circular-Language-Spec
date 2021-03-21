@@ -16,15 +16,15 @@ You might find the following content here:
 
 - ### [Identifiers](identifiers)
 
-    - ...
+    - Identifiers are names for objects, collections, attributes, sites, programs, modules or any other element of a system. 
 
 - ### [Literals](literals)
 
-    - ...
+    - The idea here would be that each language element’s textual representation might be considered the language element’s *literal*, that could be read out and assigned. However large the construct, its text code might still just be a literal, be it composed of the literals of its sub-constructs.
 
 - ### [Parameters in Text Code](parameters-in-text-code)
 
-    - ...
+    - About several specific topics about parameters' notation in text code.
 
 - ### [Access Operators](access-operators.md)
 
@@ -45,7 +45,7 @@ You might find the following content here:
 
 - ### [Assignment in Text Code](assignment-in-text-code.md)
 
-    - ...
+    - Assignment was given a specific text notation so that it might distinguish value, object, class and interface assignment and pointer-related assignments, for instance: `c=` and `o=->`.
 
 - ### [Declaration on first use](declaration-on-first-use.md)
 
@@ -80,7 +80,7 @@ You might find the following content here:
 
 - ### [Qualified Event Names](qualified-event-names.md)
 
-    - ...
+    - Tries to describe how it might look in text code to pick up an event from an object more than one layer deeper in the containment structure of the objects.
 
 - ### [Text Code | Loose Ideas](text-code-loose-ideas.md)
   
