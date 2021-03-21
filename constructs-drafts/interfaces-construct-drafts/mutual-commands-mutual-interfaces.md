@@ -1,14 +1,14 @@
 ﻿Circle Language Construct Drafts | Interfaces
 =============================================
 
-Mutual Commands, Mutual Interfaces (Unfinished)
------------------------------------------------
+Mutual Commands, Mutual Interfaces
+----------------------------------
 
 `[ Preliminary documentation ]`
 
 Brainstorm 2010-05-06:
 
-The idea described here is not what I want in practice. However, perhaps some derived concept could prove its use.
+The idea described here might not be what I want in practice. However, perhaps some derived concept could prove its use.
 
 Perhaps you should be able to define some sort of generic interface.  
 If you define an interface with a command in it, that has a certain class, perhaps with some sort of mechanism or construct you should be able to reference any object that has a command with that class. You will get in trouble if an object has two commands with the same class, though.

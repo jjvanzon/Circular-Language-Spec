@@ -1,12 +1,12 @@
 ﻿Circle Language Construct Drafts | Interfaces
 =============================================
 
-Extensive Classification with Interfaces (Unfinished)
------------------------------------------------------
+Extensive Classification with Interfaces
+----------------------------------------
 
 `[ Preliminary documentation ]`
 
-This article is not finished.
+Extensive classification with interfaces might encompass some ideas about how to use interface more where otherwise you might not, so that a more detailed classification of things might emerge. This might be interesting to form some sort of semantic model.
 
 Extensive classification through interfaces is about automatic definition of interfaces, as well as manual definition of interfaces. (Consider the imaginary group-by-source interfaces, which could be suggestions for interfaces to form.).
 
