@@ -1,6 +1,9 @@
 Circle Language Construct Drafts | Identifiers
 ==============================================
 
+Contents
+--------
+
 - [Identifiers](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/identifiers/identifiers.md)
 - [Identifiers in a Diagram](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/identifiers/identifiers-in-a-diagram.md)
 - [Omitted Identifier](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/identifiers/omitted-identifier.md)
