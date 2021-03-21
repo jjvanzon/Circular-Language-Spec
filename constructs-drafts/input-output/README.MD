@@ -4,7 +4,7 @@ Circle Language | Construct Drafts
 Input Output
 ------------
 
-The concept of input and output may be well-known by computer experts, yet the concept does not seem very present in both object oriented program code or relational database. Something simply ‘becomes’ input or output, arbitrarily chosen by the programmer, but it might not explicitly *defined* in program code, what is the input and what is the output: it could be a return value returned by a procedure, a value passed along to another procedure, but it could also be reads, writes deletes and inserts into a database. Those things are spread out all over the procedures and you do not really see where something is input and where something is output. Yet, input and output seem a fundamental idea in computer programming. It seems we talk about it all the time. In Circle language, input and output may get a more prominent position. It may offer opportunities for resolution of concurrency and parallelism as well as better security.
+The concept of input and output may be well-known by computer experts, yet the concept does not seem very present in both object oriented program code or relational database. Something simply ‘becomes’ input or output, arbitrarily chosen by the programmer, but it might not explicitly *defined* in program code, what is the input and what is the output: it could be a return value returned by a procedure, a value passed along to another procedure, but it could also be reads, writes deletes and inserts into a database. Those things are spread out all over the procedures and you do not really see where something is input and where something is output. Yet, input and output seem a fundamental idea in computer programming. It seems we talk about it all the time. In Circle language, input and output may get a more prominent position. It may even offer opportunities for resolution of concurrency and parallelism as well as better security.
 
 This documentation is not finished up yet. It contains a lot of unfinished texts but also some ideas that are perhaps nice, but it is all not worked out yet. The concept of input and output may be taken further.
 
@@ -12,23 +12,25 @@ This documentation is not finished up yet. It contains a lot of unfinished texts
 
     - What might be worked out, is a definition of what input and output is and what different forms of input and output there might be.
 
-- ### Input Output | Parameter Passing
+- ### [Input Output | Parameter Passing](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/input-output/input-output-parameter-passing.md)
 
     - ...
 
-- ### Further Parameter Passing Stereotyping
+- ### [Further Parameter Passing Stereotyping](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/input-output/further-parameter-passing-stereotyping.md)
 
     - ...
 
-- ### Auto-Determine In, Out & Thru
+- ### [Auto-Determine In, Out & Thru](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/input-output/auto-determine-in-out-thru.md)
 
     - ...
 
-- ### Automatic Execution Order & More
+- ### [Automatic Execution Order & More](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/input-output/automatic-execution-order-and-more.md)
 
     - This document may combine several of the topics mentioned here. It may once be split up into separate articles.
 
-- ### Input Output | Loose Ideas
+- ### [Input Output | Loose Ideas](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/input-output/input-output-loose-ideas.md)
+
+    - ...
 
 - ### Command IO
 
