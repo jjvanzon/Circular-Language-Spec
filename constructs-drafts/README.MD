@@ -24,17 +24,7 @@ This documentation may contain drafts of ideas that might not become part of the
 
 - ### Implementations 
 
-    - Topics in this folder may have been left out of the spec, because of a decision not to cover *implementations* and applications of the diagram notation. Internal workings may not be that essential for conveying the ideas about this diagram language.
-
-    - Here might be some of the topics that could  be found here:
-
-    - __Code Editor__
-
-        - This document may not have been written yet. On top of text code being constructed and parsed, text code may also separately require a code editor for use in the programming environment.
-
-    - __Optimization__
-
-        - Covers any kind of optimization algorithm, that might be integrated into the new computer language. For now this is considered not too important to think about.
+    - Topics in this folder may have been left out of the spec, because of a decision not to cover *implementations* and applications of the diagram notation. Internal workings may not be that essential for conveying the ideas about this diagram language. You may find topics here like "Optimization" and "Code Editor".
 
 - ### Input Output
 
