@@ -67,10 +67,6 @@ These are various draft texts that may once describe a story, ideas about how th
 
     - Ideas about this topic, perhaps less to the point but more philosophical, might be moved from the spec to here.
 
-- ## Interfaces Group By Source
-
-    - A specific application of interfaces might be when your object might get extended with commands programmed by other people, code coming from other sites. To have commands from others available from the object might be handy, but it may create overview if these commands are grouped by source. Also to maybe have grip onto the reliability of a command. This article tries to further get into that and how the diagram notation might look.
-
 - ## Macro Recorder
 
     - The new computer language should have this button to press, that records all user actions, that are undertaken. Then, when you stop recording, the user actions are recorded as a procedure, that can be called as a command to be executed in one blow instead of performing all the actions manually. You can also edit the command code, to fine-tune the behavior of the command. This makes it easy to turn manual work into automatic procedures and it also makes it easier to program new commands. Other programs have this sort of macro recording, and the new computer language should also have such functionality in the futures. Macro recording has not been implemented inside existing versions of the new computer language yet.

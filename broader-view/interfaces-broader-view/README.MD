@@ -1,12 +1,12 @@
 Circle Language | Broader View
 ==================================
 
-Interfaces Broader View
------------------------
+Interfaces | Broader View
+-------------------------
 
 `[ Preliminary documentation ]`
 
-- Ideas about this topic, perhaps less to the point but more philosophical, might be moved from the spec to here.
+Ideas about this topic, perhaps less to the point but more philosophical, might be moved from the spec to here.
 
 - ### [Extensive Classification with Interfaces](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/interfaces-broader-view/extensive-classification-with-interfaces.md)
     
@@ -16,6 +16,6 @@ Interfaces Broader View
     
     - Some relationships between objects are bidirectional. Some are not. Imaginary backward relationships might be the idea that even when a relationship is not defined as bidirectional, you might derive the backwards relationship on the fly in certain cases, because it might be useful information. Producing the backward relationship may involve scanning part of a system in which an object might be used or perhaps sped up by some sort of caching scheme.
 
-- ## Interfaces Group By Source
+- ### [Interfaces Group By Source](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/broader-view/interfaces-broader-view/interfaces-group-by-source.md)
 
     - A specific application of interfaces might be when your object might get extended with commands programmed by other people, code coming from other sites. To have commands from others available from the object might be handy, but it may create overview if these commands are grouped by source. Also to maybe have grip onto the reliability of a command. This article tries to further get into that and how the diagram notation might look.
