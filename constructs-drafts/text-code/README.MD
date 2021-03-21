@@ -8,33 +8,19 @@ Text Code
 
 Traditionally the systematics of a program are expressed by means of text code. But in the new language, systematics are stored as binary interlinked objects. Text code is a mere *expression* of those binary interlinked objects. The *Text Code* sub-module makes sure, that systematics are translated to text code. The text code can be adapted, resulting in changes to the stored binary objects, rather than the text code’s being literally stored.
 
-The general idea is that each language element’s textual representation is considered the language element’s *literal*, that can be read out and assigned. However large the construct, its text code is still just a literal, be it composed of the literals of its sub-constructs.
-
 The exact way the textual code is going to look inside the new language is not yet determined, because it is more important to work out the language *conceptually* along with its *diagram notation*, than it is to work out the *textual notation*. Version 2.0 of the new computer language had a text code, but it was still very basic.
 
-None of the articles are finished. They are throw-togethers of ideas. The first topic, *Literals*, is what text code really is about. The other sub-folders were just dumped here. They are like leftovers from old documentation. The ideas at the bottom of this article also contain a lot of old material, that might be used inside new documentation in the future.
+None of the articles are finished. They are throw-togethers of ideas. They are like leftovers from old documentation.
 
 This folder contains the following sub-folders:
 
+### Identifiers
+
+    - ...
+
 ### Literals
 
-The main article in this folder only contains an explanation of the traditional meaning of literals, and also some loose ideas about the topic of literals. There are the following sub-folders:
-
-- #### Object Literals
-
-    - This folder is empty, but should contain the explanation how objects can get literals. Simple objects, like numbers and dates, should be covered, but also how a literal can be assigned to an object to initialize the object’s members.
-
-- #### Command Literals
-
-    - The text code of command definitions and command calls are also considered literals. This article is not finished yet, but it should contain a description of how command definitions and command calls are translated to literals.
-
-- #### Concept Literals
-
-    - This article is not finished, but it should describe how the *concept* programming construct should be able to define new literal notations. Some programming constructs are programmed using the new computer language itself. So as you do that, you also should include a textual notation of those new constructs. So you should be able to custom-define textual notations for newly introduced constructs.
-
-- #### Collection Operation Literals
-
-    - Notations for *collections* should also have literals: from simple array access, to a notation to execute a command on all the items inside a collection at once.
+    - ...
 
 ### Access Operators
 
@@ -83,3 +69,7 @@ The main article in this folder only contains an explanation of the traditional 
 - The dereference operator gets the value of an object reference. The address-of operator retrieves the memory address of a value. It has to be figured out what place this has in the new computer language.
 
 - These pointer operators, just like access operators, will probably turn out to be just calls to system commands, such as __Object Get, Class Get, Item Get, Value Get__ and __Value Set__. All these system commands are explained inside the *System Objects* chapter of the *Code* documentation folder. There is full availability of everything you would want to do with pointers inside the new computer language. Which system commands will substitute dereference and address-of operators in C++ has to be figured out. *And* whether or not *more* pointer operations may be necessary in the new language.
+
+### Text Code | Loose Ideas
+  
+- Contains a lot of older material, that might be used inside new documentation in the future.

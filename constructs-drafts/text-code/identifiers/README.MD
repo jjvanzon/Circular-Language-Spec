@@ -6,6 +6,8 @@ Identifiers Articles
 
 `[ Deprecated documentation ]`
 
+Identifiers are names for objects, collections, attributes, sites, programs, modules or any other element of a system. 
+
 - [Identifiers](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/identifiers/identifiers.md)
 - [Identifiers in a Diagram](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/identifiers/identifiers-in-a-diagram.md)
 - [Omitted Identifier](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/identifiers/omitted-identifier.md)
