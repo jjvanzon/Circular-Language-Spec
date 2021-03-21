@@ -1,10 +1,12 @@
 ﻿Circle Language Construct Drafts | Input Output
 ===============================================
 
-Further Parameter Passing Stereotyping
---------------------------------------
+Thruput Parameters | Affected, Used and Transformed
+---------------------------------------------------
 
 `[ Preliminary documentation ]`
+
+Further parameter passing stereotyping.
 
 Contemplations about further thru parameter passing stereotyping would be postponed.
 
