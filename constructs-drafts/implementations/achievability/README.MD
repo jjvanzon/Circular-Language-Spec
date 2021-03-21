@@ -1,12 +1,12 @@
-﻿Circle Language Broader View | Achievability
-============================================
+﻿Circle Language Construct Drafts | Achievability
+================================================
 
 Overview
 --------
 
 `[ Out of Scope ]`
 
-This sub-folder represents a category of principles that might be called the *achievability principles*. The achievability principles would be a set of principles, that describe how a new computer language might be developed in a limited amount of time with a limited amount of people: what techniques might be employed to make that possible. It might cover how the development of modules of a *Software System* other than the programming language might be made more achievable like that. Not all the content might be finished yet, but the *Achievability* folder may contain the following articles:
+This sub-folder represents a category of principles that might be called the *achievability principles*. The achievability principles would be a set of principles, that describe how a running new computer language might be developed in a limited amount of time with a limited amount of people: what techniques might be employed to make that possible. It might cover how the development of modules of a *Software System* other than the programming language might be made more achievable like that. Not all the content might be finished yet, but the *Achievability* folder may contain the following articles:
 
 - ### [Achievability Brainstorm](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/achievability/achievability-brainstorm.md)
 
