@@ -16,7 +16,7 @@ You might find the following sub-topics here:
 
 - ### [Command Literals](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/literals/command-literals.md)
 
-    - The text code of command definitions and command calls might also be considered literals. This article might not be finished yet, but it may contain a description of how command definitions and command calls might be translated to literals.
+    - This article might not be finished yet, but it may contain a description of how command definitions and command calls might be translated to literals.
 
 - ### [Concept Literals](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/literals/concept-literals.md)
 
