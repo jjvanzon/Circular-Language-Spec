@@ -14,15 +14,15 @@ This documentation is not finished up yet. It contains a lot of unfinished texts
 
 - ### [Input Output | Parameter Passing](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/input-output/input-output-parameter-passing.md)
 
-    - ...
+    - This take on *Parameters* might once take preference again over the one currently in the *Spec*. The *Spec* may currently speak of parameters as a loosely coupled relationship between commands and classes. That take on it might have made things rather complicated instead of being more helpful. The take here in *Construct Drafts* seemed a simpler perhaps more usable alternative. It seems to talk about subdividing parameter passings into __By Ref / By Value__ and __Input / Output / Thruput__. The idea seems to have been set aside, because of som difficulty defining what __Input__ and __Output__ mean precisely on a more detailed level as well as in grander scope. But a simplified version of this story it might be more helpful as a way to express parameters in this diagram language, that may once be moved to the *Spec* again.
 
 - ### [Further Parameter Passing Stereotyping](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/input-output/further-parameter-passing-stereotyping.md)
 
-    - ...
+    - Explores a slightly more detailed way of specifying variations on __Thruput__ parameters: __Affected__ / __Used__ / __Transformed__. It might not be as usable in practice. That is why the topic was set aside here.
 
 - ### [Auto-Determine In, Out & Thru](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/input-output/auto-determine-in-out-thru.md)
 
-    - ...
+    - Explores an idea where the way a parameter is used could determine whether it might be considered __Input__, __Output__ or __Thruput__. It may be of help once making a simpler variation on a *Parameters* section in the *Spec*. But for now the idea is parked here.
 
 - ### [Automatic Execution Order & More](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/input-output/automatic-execution-order-and-more.md)
 
@@ -30,7 +30,7 @@ This documentation is not finished up yet. It contains a lot of unfinished texts
 
 - ### [Input Output | Loose Ideas](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/input-output/input-output-loose-ideas.md)
 
-    - ...
+    - Loose ideas about the topic.
 
 - ### Command IO
 
