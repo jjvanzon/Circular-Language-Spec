@@ -14,18 +14,18 @@ You might find the following sub-topics here:
 
     - Might not have an article yet, but if one would ever be written, it might contain the explanation how objects can get literals. Simple objects, like numbers and dates, might be covered, but also perhaps how a literal might be assigned to an object to initialize the object’s members.
 
-- ### [Command Literals](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/literals/command-literals.md)
+- ### [Command Literals](command-literals.md)
 
     - This article might not be finished yet, but it may contain a description of how command definitions and command calls might be translated to literals.
 
-- ### [Concept Literals](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/literals/concept-literals.md)
+- ### [Concept Literals](concept-literals.md)
 
     - This article might not be finished, but it may describe how the *concept* programming construct might be used to define new literal notations on-the-fly. It once was a plan for some programming constructs to be programmed using the new computer language itself. New constructs might also include a textual notation. So it might be a welcome addition to be able to custom-define a new textual notation using the language itself.
 
-- ### [Collection Operation Literals](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/literals/collection-operation-literals.md)
+- ### [Collection Operation Literals](collection-operation-literals.md)
 
     - Notations for *collections* might also have literals: from simple array access, to perhaps a notation to execute a command on all the items inside a collection at once.
      
-- ### [Literals Loose Ideas](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/literals/literals-loose-ideas.md)
+- ### [Literals Loose Ideas](literals-loose-ideas.md)
  
     - Loose ideas about the concept of literals.
