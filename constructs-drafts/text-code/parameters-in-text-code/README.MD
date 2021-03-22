@@ -1,10 +1,12 @@
 Circle Language | Construct Drafts
 ==================================
 
+Parameters in Text Code Articles
+--------------------------------
+
 `[ Deprecated documentation ]`
 
-Parameters in Text Code 
------------------------
+Here might be found several specific topics about parameter notation in text code.
 
 - [Parameter Order in Text Code](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/parameters-in-text-code/parameter-order-in-text-code.md)
 - [Parameters for Objects in Text Code](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/text-code/parameters-in-text-code/parameters-for-objects-in-text-code.md)
