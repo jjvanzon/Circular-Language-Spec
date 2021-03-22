@@ -1,8 +1,6 @@
 Circle-Language-Spec | Root
 ===========================
 
-*JJ van Zon, 2021-02-17*
-
 Circle would be an unfinished programming language. It aims to once become a diagram notation for visualizing computer code.
 
 You may find the following folders here:
@@ -16,8 +14,6 @@ You may find the following folders here:
 - [Archive](archive)
     - Content that might not be relevant anymore. It may be one step away from being deleted. It is still kept in this folder in case something would become relevant again.
 
-The material may still be a bit rough. Both in tone and in content.
+The material may still be a bit rough. Both in tone and in content. It might be improved step by step.
 
-It might be improved step by step. The current goal would be converting Word documents to MarkDown.
-
-Would anyone be interested. Another repository would describe the plans, notes and TODO's around this project. Here it is: [Circle-Language-Spec-Plans](https://github.com/jjvanzon/Circle-Language-Spec-Plans)
+Would anyone be interested: Another repository would describe the plans, notes and TODO's around this project. Here it is: [Circle-Language-Spec-Plans](https://github.com/jjvanzon/Circle-Language-Spec-Plans)
