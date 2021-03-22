@@ -28,9 +28,9 @@ You might find the following content here:
 
 - ### [Access Operators](access-operators.md)
 
-    - This article might just be a throw-together of ideas. Traditional text codes may have access operators to access an object, a class, a procedure, arrays, pointers or values. Because other languages may have access operators, the documentation about Circle might also has an *Access Operators* article, which may make an attempt to figure out what place access operators might have in the Circle language. In C++ documentation access operators seem to be introduced like they have an analogy to mathematic operators:  
+    - This article might just be a throw-together of ideas. Traditional text codes may have access operators to access an object, a class, a procedure, arrays, pointers or values. Because other languages may have access operators, the documentation about Circle might also have an *Access Operators* article, which may make an attempt to figure out what place access operators might have in the Circle language. In C++ documentation access operators seem to be introduced like they have an analogy to mathematical operators:  
 
-    ````
+    ```
         .    Member selection (object)
         –>   Member selection (pointer)
         [ ]  Array subscript
@@ -39,7 +39,7 @@ You might find the following content here:
         =    Assignment
         ::   Scope resolution
         ::   Global
-    ````
+    ```
 
     - Access operators seem hard to place inside a mathematical system. It may be difficult to find an analogy between mathematical operators and such access literals. However, a clearer view on what place access operators might have inside Circle language might be welcome. Access operators seem to be abstract character representations of system commands, such as __Object Get, Class Get, Item Get, Value Get__ and __Value Set__. All these system commands seem to be explained in the *System Objects* chapter of the *Spec*. Inside Circle language, access operators might just be textual expressions of calls to those system commands. What might not yet be clarified inside this unfinished article is how the access operators might textually look inside the new computer language.
 
@@ -49,7 +49,7 @@ You might find the following content here:
 
 - ### Declaration on First Use
 
-    - Some programmer’s text books might say you should declare variables of a procedure at the beginning of a procedure, to keep an overview of all the variables used inside a procedure. It might be a bit subjective, if that is necessarily the best thing to do. A suggestion here is made, to declare a variable right before you use it. That might be a way to go. This may produce hints in the code about parts of a procedure depend on which variable and which parts of a procedure do not use that variable. Perhaps declaring a variable upon first use requires slightly less CPU-power, than declaring all the variables at the beginning of the procedure, because if a code block is not executed, the variables used exclusively inside that code block might not be allocated or assigned.
+    - Some programmer’s text books might say you should declare variables of a procedure at the beginning of a procedure, to keep an overview of all the variables used inside a procedure. It might be a bit subjective, if that is necessarily the best thing to do. A suggestion here is made, to declare a variable right before you use it. That might be a way to go. This may produce hints in the code about which parts of a procedure depend on which variable and which parts of a procedure do not use that variable. Perhaps declaring a variable upon first use requires slightly less CPU-power, than declaring all the variables at the beginning of the procedure, because if a code block is not executed, the variables used exclusively inside that code block might not be allocated or assigned.
 
     - If (binary) stored object systematics might be translated to text code, this rule might be applied, that a variable is declared in the text code right before it is used. This also might mean, that if a variable is used in several deeper blocks of code, the variable may need to be declared inside the *closest mutual parent* of those deeper blocks.
 
@@ -63,16 +63,18 @@ You might find the following content here:
 
 - ### Macro Keywords
 
-    - Macro keywords would be an idea, that may have come from an older design of the diagram notation. Access modifier literals might have been considered macro keywords. Some of the access modifiers, like __Public Read-Only__ could mean: __Get Public__ and __Set Private__. So the literals __Get Public__ and __Set Private__ may be replaced by the ‘macro keyword’ __Public Read-Only__. So there would be one keyword replacing a string of other keywords. That might have been the original concept of macro keywords. What place it may still has in the a newer design of the language might not be that clear. It might become part of the subject of concept literals, with which you might introduce new textual notations.
+    - Macro keywords would be an idea, that may have come from an older design of the diagram notation. Access modifier literals might have been considered macro keywords. Some of the access modifiers, like __Public Read-Only__ could mean: __Get Public__ and __Set Private__. So the literals __Get Public__ and __Set Private__ may be replaced by the ‘macro keyword’ __Public Read-Only__. So there would be one keyword replacing a string of other keywords. That might have been the original concept of macro keywords. What place it may still have in the a newer design of the language might not be that clear. It might become part of the subject of *concept literals*, with which you might introduce new textual notations.
 
 - ### Pointer Operators
 
-    - The language C++ seems to have two pointer operators:
+    - The language C++ seems to have these pointer operators:
 
-      Dereference / value of ( `*` )  
-      Address of ( `&` )
+    ```
+        *   Dereference / value of
+        &   Address of
+    ```
 
-    - The dereference operator seem to get the target (value) of a reference. The address-of operator seems to retrieve the memory address of a value or object. What place this may have in Circle might be considered.
+    - The dereference operator seems to get the target (value) of a reference. The address-of operator seems to retrieve the memory address of a value or object. It might be considered what place this may have in Circle.
 
     - These pointer operators, like access operators, might turn out to be calls to system commands, such as __Object Get, Class Get, Item Get, Value Get__ and __Value Set__. All these system commands may be explained inside the *System Objects* part of the *Spec*, not necessarily here. It might be an idea to try and have full availability of everything you might want to do with pointers inside Circle language. Which system commands might substitute dereference and address-of operators in C++ might be figured out. And whether or not more pointer operations may be welcome in the Circle language.
 
