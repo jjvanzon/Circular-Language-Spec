@@ -104,7 +104,7 @@ This documentation may contain drafts of ideas that might not become part of the
     
 - ### [Object Storage](object-storage.md)
 
-    - Object Storage may turn lists on storage devices into a landscape of digital objects. It might the binding force between basic data structures on storage devices and the object logic of this computer language. It may be about how basic data structures are used to store objects. Not all of these principles might be original, because many other systems might use them, but they were isolated here in a single place as a single group of concepts that may be required to turn storage into objects.
+    - Object Storage may turn lists on storage devices into a landscape of digital objects. It might be the binding force between basic data structures on storage devices and the object logic of this computer language. It may be about how basic data structures are used to store objects. Not all of these principles might be original, because other systems might use them, but they were isolated here in a single place as a single group of concepts that may be used to turn storage into objects.
     
     - Perhaps trying to find one way to manage memory allocation, database-like storage and file systems might be a bit ambitious.
      
@@ -112,7 +112,7 @@ This documentation may contain drafts of ideas that might not become part of the
 
 - ### [Peels](peels.md)
 
-    - This article seems to be about a concept, that may have later been rejected. The article seems to contain texts out of an older design of the diagram language, that would be about a notational concept that seemed later be rejected: using extra lines around a shape to try and reveal information about the target of a line. It might not need to be gone into much.
+    - This article seems to be about a concept, that may have later been rejected. The article seems to contain texts out of an older design of the diagram language, that would be about a notational concept that seemed later be rejected: using extra lines around a shape to try and reveal information about the target of a line.
 
 - ### [Relationships Construct Drafts](relationships-construct-drafts.md)
 
@@ -120,7 +120,7 @@ This documentation may contain drafts of ideas that might not become part of the
 
 - ### [Special Access](special-access.md)
 
-    - Tries to discuss differences between concepts like child access, global access, interface access to/from code blocks. The rules seem to be different between those. This text attempted to distinguish those rules. It did not seem the diagram notation depended very much on describing these concepts separately, so this was left out of the spec.
+    - Tries to discuss differences between concepts like child access, global access, interface access and access to/from code blocks. The rules seem to be different between those. This text attempted to distinguish those rules. It did not seem the diagram notation depended very much on describing these concepts separately, so this was left out of the spec.
 
 - ### [Summaries of the C and C++ Languages](summaries-of-the-c-and-cpp-languages.md)
 
