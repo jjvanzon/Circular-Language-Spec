@@ -207,7 +207,7 @@ To accompany the grouping you can mention the grouping criterium. Or rather: men
 
 Convergence takes place where lines enter or exit borders.
 
-The grouping between borders can become more precise or more general. You might not care about the source of a line in a higher encapsulation level, so grouping can be generalized and possibly more focused on where the lines are going. Of couse, if before a crossing the grouping is about where the lines are going, after the crossing, the same grouping is about where the lines came from. Grouping can be about any crossing. On borders or around borders, regrouping can take place and grouping. Of course any other criterium can be grouped by too, but you usually use crossings as the criteria for for line grouping.
+The grouping between borders can become more precise or more general. You might not care about the source of a line in a higher encapsulation level, so grouping can be generalized and possibly more focused on where the lines are going. Of course, if before a crossing the grouping is about where the lines are going, after the crossing, the same grouping is about where the lines came from. Grouping can be about any crossing. On borders or around borders, regrouping can take place and grouping. Of course any other criterium can be grouped by too, but you usually use crossings as the criteria for for line grouping.
 
 A group of lines can be seen like a bus lane for lines with certain sources, targets or any selection of its crossing actually.
 
