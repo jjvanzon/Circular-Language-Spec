@@ -29,7 +29,7 @@ These are various draft texts that may once describe a story, ideas about how th
 
 - ## [From Spec](from-spec)
 
-    - Topics recognizable from the *spec*, but then ideas perhaps less to the point but more philosophical. Those might be moved from the spec to here.
+    - Topics recognizable from the *spec*, but then ideas perhaps less to the point but more philosophical.
 
 - ## [Integration](integration)
 

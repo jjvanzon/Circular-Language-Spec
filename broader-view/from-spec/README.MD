@@ -6,7 +6,7 @@ From Spec
 
 `[ Preliminary documentation ]`
 
-Topics recognizable from the *spec*, but then ideas perhaps less to the point but more philosophical. Those might be moved from the spec to here.
+Topics recognizable from the *spec*, but then ideas perhaps less to the point but more philosophical.
 
 - [Interfaces Broader View](interfaces-broader-view)
 - [Basic Diagram Elements Broader View](basic-diagram-elements-broader-view.md)
