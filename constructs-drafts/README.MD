@@ -8,15 +8,15 @@ Overview
 
 This documentation may contain drafts of ideas that might not become part of the spec. Or language constructs that are just not as clearly worked out.
 
-- ### [Black Boxes Construct Drafts](black-boxes-construct-drafts)
-
-    - Lesser worked out ideas about this topic may be moved here from the spec.
-
 - ### [Expression](expression)
 
     - The idea behind expression in general might be that a program’s systematics might not be described by text code, but text code as well as the diagram notation may be mere *expressions* of systematics, stored in some other way, for instance a binary way as interlinked objects.
 
     - This part of the documentation may cover remaining topics about diagram expression. This documentation may cover some misc issues that have not become part of the spec. This documentation folder may be a mere throw-together of ideas or pieces of text, that came out of previous descriptions of new computer programming languages.  
+
+- ### [From Spec](from-spec)
+
+    - Topics recognizable from the *spec*, but then maybe lesser worked out ideas about these topic.
 
 - ### [Implementations](implementations)
 
@@ -51,10 +51,6 @@ This documentation may contain drafts of ideas that might not become part of the
     - The concept of automatic containment would be about automatically translating a referential structure to a containment structure.
 
     - The idea may have loose ends.
-
-- ### [Basic Diagram Elements Construct Drafts](basic-diagram-elements-construct-drafts.md)
-
-    - Lesser worked out ideas about this topic may be moved here from the spec.
 
 - ### [Circle Language Summary](circle-language-summary.md)
 
@@ -114,10 +110,6 @@ This documentation may contain drafts of ideas that might not become part of the
 
     - This article seems to be about a concept, that may have later been rejected. The article seems to contain texts out of an older design of the diagram language, that would be about a notational concept that seemed later be rejected: using extra lines around a shape to try and reveal information about the target of a line.
 
-- ### [Relationships Construct Drafts](relationships-construct-drafts.md)
-
-    - Lesser worked out ideas about this topic may be moved here from the spec.
-
 - ### [Special Access](special-access.md)
 
     - Tries to discuss differences between concepts like child access, global access, interface access and access to/from code blocks. The rules seem to be different between those. This text attempted to distinguish those rules. It did not seem the diagram notation depended very much on describing these concepts separately, so this was left out of the spec.
@@ -129,10 +121,6 @@ This documentation may contain drafts of ideas that might not become part of the
 - ### [Symbol Language (2004)](symbol-language-2004.md)
 
     - Previous version of an attempt to describe this programming language.
-
-- ### [System Command Call Notations Construct Drafts](system-command-call-notations-construct-drafts.md)
-
-    - There might be several notations for calling a system command, like __Get__, __Set__ and __Use__ commands. The ideas here in *Construct Drafts* were deprecated notation proposals.
 
 - ### [Transactions](transactions.md)
 
