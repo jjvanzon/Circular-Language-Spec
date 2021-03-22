@@ -134,18 +134,18 @@ This summary, though, doesn’t organize Symbol in the order of explaining it an
             - Interface children
             - N interface levels up
             - N interface levels down
-            - Up until globality
-            - N globalities up
+            - Up until module
+            - N modules up
             - Certain types
             - Certain objects
-            - Certain globality types
-            - Certain globality objects
-    - Globalities
+            - Certain module types
+            - Certain module objects
+    - Modules
     - Delocating members 
-        - (‘friend’ sorta transfers things out of a type to the nearest globality. Is all that required? Does Symbol not  have better substitutes for this?)
+        - (‘friend’ sorta transfers things out of a type to the nearest module. Is all that required? Does Symbol not  have better substitutes for this?)
     - Access Operators
         - Special operators. Are they operators? If they are then they should be able to be overloaded. Maybe that’s handy too.
-        - Access globality
+        - Access module
         - Access object
         - Access interface
         - Access type

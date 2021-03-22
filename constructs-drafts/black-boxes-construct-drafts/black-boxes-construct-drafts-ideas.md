@@ -195,39 +195,39 @@ Level limitation is defined there where it doesn’t have effect yet. It only ha
 
 Maybe call it Level Restriction.
 
-#### Globality Level Limitation
+#### Module Level Limitation
 
 < Pictures >
 
-Apart from object level limitation there is also globality level limitation.
+Apart from object level limitation there is also module level limitation.
 
-- __Public *Globality Up 1*__
+- __Public *Module Up 1*__
 
-When an access modifier is paired with a globality level limitation, the access modifier works normally *n* level up the *globality ancestry*. But for higher globalities the member is inaccessible.
+When an access modifier is paired with a module level limitation, the access modifier works normally *n* level up the *module ancestry*. But for higher modules the member is inaccessible.
 
 *Public:*
 
 | ![](images/2.0.%20Black%20Boxes%20Construct%20Drafts%20Ideas.014.png) | ≈ | ![](images/2.0.%20Black%20Boxes%20Construct%20Drafts%20Ideas.015.png) |
 |-----|-----|-----|
 
-*Public Globality Up 1:*
+*Public Module Up 1:*
 
 | ![](images/2.0.%20Black%20Boxes%20Construct%20Drafts%20Ideas.016.png) | ≈ | ![](images/2.0.%20Black%20Boxes%20Construct%20Drafts%20Ideas.017.png) |
 |-----|-----|-----|
 
-*Public Globality Up 2:*
+*Public Module Up 2:*
 
 | ![](images/2.0.%20Black%20Boxes%20Construct%20Drafts%20Ideas.018.png) | ≈ | ![](images/2.0.%20Black%20Boxes%20Construct%20Drafts%20Ideas.019.png) |
 |-----|-----|-----|
 
-Protected Globality Up N works the same as Public, but adds the extra restriction that comes with protected.
+Protected Module Up N works the same as Public, but adds the extra restriction that comes with protected.
 
-- \> 2009-06-27: Globality level limitation is that VB6 Friend idea. That is probably why I also introduced object level limitation to begin with: as a bridge towards the concept globality level limitation. It is more like overkill... I do not know yet how VB6 Friend access is supposed to look, but perhaps you’d better just appoint inside which globality you still have access to it or something, instead of coming up with Object level limitation and only to build globality level limitation only to have a substitute for VB6 friend access control.
-- \> 2009-06-29: But level limitation and then globality level limitation is a lot of systematics to introduce just to facilitate a VB Friend access modifier.
+- \> 2009-06-27: Module level limitation is that VB6 Friend idea. That is probably why I also introduced object level limitation to begin with: as a bridge towards the concept module level limitation. It is more like overkill... I do not know yet how VB6 Friend access is supposed to look, but perhaps you’d better just appoint inside which module you still have access to it or something, instead of coming up with Object level limitation and only to build module level limitation only to have a substitute for VB6 friend access control.
+- \> 2009-06-29: But level limitation and then module level limitation is a lot of systematics to introduce just to facilitate a VB Friend access modifier.
 
 < Pictures with that? >
 
-< ‘Globality Up 2’ is too long, because Public Globality Up 1 will be used commonly. Visual Basic’s Friend access modifier is the same as Public Globality Up 1. I might need to invent a specific term for Public Globality Up 1. I won’t use ‘Friend’, because that would conflict with >
+< ‘Module Up 2’ is too long, because Public Module Up 1 will be used commonly. Visual Basic’s Friend access modifier is the same as Public Module Up 1. I might need to invent a specific term for Public Module Up 1. I won’t use ‘Friend’, because that would conflict with >
 
 #### Downsides to Black Boxes
 
@@ -537,7 +537,7 @@ Using triangles to group members with equal access controllers. As with exclusio
 Replace the protected keyword by a concept like ‘when being a triangle’:
 Basically you can optionally totally redefine the access for the case when the type is a used as a triangle.
 
-< When being a globality? >
+< When being a module? >
 
 Or perhaps even make it as general as ‘conditional access control’: Public if triangle.
 
@@ -586,9 +586,9 @@ JJ
 
 #### Access Controller Parts
 
-In one access controller you can use an __exclusion access controller__, an `object level restriction` and a *globality level restriction*:
+In one access controller you can use an __exclusion access controller__, an `object level restriction` and a *module level restriction*:
 
-__Protected__ `Up 1` *Globality Up 2*
+__Protected__ `Up 1` *Module Up 2*
 
 Access controllers as such are not usual, though and *if* you use them, they’re not very diverse.
 

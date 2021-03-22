@@ -6,7 +6,7 @@ Access Operators
 
 `[ Deprecated documentation ]`
 
-- Access Globality Operator
+- Access Module Operator
 - Access Object Operator
 - Access Interface Operator
 - Access Class Operator

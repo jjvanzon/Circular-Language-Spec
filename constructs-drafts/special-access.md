@@ -12,7 +12,7 @@ Special Access
 
 < Do neighbor access and child access protect the independence of types? As a substitute for the old, false rule: ‘Can’t call upward in the ancestry’? >
 
-There’s several ways to access a procedure. The most common way is for procedures of the same object to call upon each other. The second most common way is for a parent to access a child’s procedures. A global object is accessible from anywhere within the globality and there are more ways. I will discuss these different ways of access one by one in this section.
+There’s several ways to access a procedure. The most common way is for procedures of the same object to call upon each other. The second most common way is for a parent to access a child’s procedures. A global object is accessible from anywhere within the module and there are more ways. I will discuss these different ways of access one by one in this section.
 
 #### Neighbor Access
 
@@ -44,7 +44,7 @@ Variables declared inside a parent block in a procedure are accessible directly 
 #### Global Access
 
 < Nice sentence:  
-Globality makes all direct children accessible to all ancestors >
+Module makes all direct children accessible to all ancestors >
 
 There’s also a way to make objects accessible not only to parents, but accessible from anywhere. This makes the accessed objects global.
 
@@ -58,41 +58,41 @@ Anything directly inside the pentagon is accessible from *anywhere*. So the (pub
 
 *The blue symbols are accessible from anywhere inside the pentagon.*
 
-A pentagon and all its contents are also called a *globality*.
+A pentagon and all its contents are also called a *module*.
 
-It’s like any object inside a globality has a reference to the globality object:
+It’s like any object inside a module has a reference to the module object:
 
 ![](images/0.%20Special%20Access.005.png)
 
-These references don’t really exist, though. Everything global is just reachable inside every object inside a globality.
+These references don’t really exist, though. Everything global is just reachable inside every object inside a module.
 
 ![](images/0.%20Special%20Access.006.png)
 
 In this the solid line *can* be a call, because it’s a reference to something global.
 
-A globality can also be viewed as being a module, or software component. It is a way to order code into components. Globalities can be embedded just like as objects:
+A module can also be viewed as being a module, or software component. It is a way to order code into components. Modules can be embedded just like as objects:
 
 ![](images/0.%20Special%20Access.007.png)
 
-In fact, a globality symbol is an object symbol too. It works as a triangle: you can access things in the globality directly, but also by qualifying it with the globality identifier, but it has the special side effect that anything it directly contains can be directly accessed from anywhere.
+In fact, a module symbol is an object symbol too. It works as a triangle: you can access things in the module directly, but also by qualifying it with the module identifier, but it has the special side effect that anything it directly contains can be directly accessed from anywhere.
 
 -----
 
-When you want one globality to use another, you make a reference to the other globality:
+When you want one module to use another, you make a reference to the other module:
 
 ![](images/0.%20Special%20Access.008.png)
 
-The child globality can then be accessed like a circle or a triangle, but refers to an existing instance of the globality (software component). Since the globality is a direct child of another globality, anything in the contained globality is just as global as anything in the parent globality. However, if you make the child globality private, it’s not accessible outside the parent globality. It is accessible as global inside the parent globality, though.
+The child module can then be accessed like a circle or a triangle, but refers to an existing instance of the module (software component). Since the module is a direct child of another module, anything in the contained module is just as global as anything in the parent module. However, if you make the child module private, it’s not accessible outside the parent module. It is accessible as global inside the parent module, though.
 
-In other languages, globalities usually contain a large amount of code, because it’s not easy to handle many globalities. In symbol it’s easier to manage globalities and whenever you need the effect of having a small, local, globality (or software component), you can easily use a globality.
+In other languages, modules usually contain a large amount of code, because it’s not easy to handle many modules. In symbol it’s easier to manage modules and whenever you need the effect of having a small, local, module (or software component), you can easily use a module.
 
 This is also an invitation to making a more refined division in software components. You can not only easily work with a division in more components. You can also embed software components. And you can finely control referencing existing instances of software components.
 
-The child globality in the picture above can only access things global inside itself. It can not access the global things of its parent globality.
+The child module in the picture above can only access things global inside itself. It can not access the global things of its parent module.
 
 #### Pentagons not Exchangeable with Triangles and Circles
 
-A pentagon is not exchangeable with triangles and circles as much as triangles and circles are exchangeable. Global has the side effect that things become accessible where otherwise inaccessible. If you suddenly replace the pentagon with a circle or triangle it would mean that things formerly global are no longer global and all sorts of accesses in the globality object are suddenly invalid. For that a pentagon stays a pentagon and a reference to it can only be a pentagon itself.
+A pentagon is not exchangeable with triangles and circles as much as triangles and circles are exchangeable. Global has the side effect that things become accessible where otherwise inaccessible. If you suddenly replace the pentagon with a circle or triangle it would mean that things formerly global are no longer global and all sorts of accesses in the module object are suddenly invalid. For that a pentagon stays a pentagon and a reference to it can only be a pentagon itself.
 
 #### Extra Indication
 
@@ -161,13 +161,13 @@ But a clause does not have access to a clause that doesn’t encapsulate it.
 
 So its like the borders of clauses can be ignored in outward access.
 
-#### Globalities, Interfaces and Clauses
+#### Modules, Interfaces and Clauses
 
 So usually only parents can access their ancestor’s things.
 
-Globalities, interface implementations and clauses make exceptions on those rules.
+Modules, interface implementations and clauses make exceptions on those rules.
 
-The public ancestors of a globality are accessible from anywhere within the globality, the borders of triangles can be ignored and a clause can directly access anything in its descendant clauses and its procedure definition.
+The public ancestors of a module are accessible from anywhere within the module, the borders of triangles can be ignored and a clause can directly access anything in its descendant clauses and its procedure definition.
 
 #### Brainstorm
 
@@ -177,9 +177,9 @@ Clause members can access the members of its ancestor procedure symbols.
 
 #### Other
 
-Globality and triangle are alike. They change the way you can access their members.
+Module and triangle are alike. They change the way you can access their members.
 
-A parent block is sorta like a globality in that way.
+A parent block is sorta like a module in that way.
 
 Child Access  
 is the normal type of access

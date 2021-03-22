@@ -20,6 +20,6 @@ JJ
 Exchangeability Principles,  
 2009-05-27
 
-Globalities: modules, libraries, executables, site...
+Modules: modules, libraries, executables, site...
 
 JJ

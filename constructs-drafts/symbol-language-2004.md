@@ -4165,7 +4165,7 @@ Access Ways
 
 < Do neighbor access and child access protect the independence of types? As a substitute for the old, false rule: ‘Can’t call upward in the ancestry’? >
 
-There’s several ways to access a procedure. The most common way is for procedure’s of the same object to call upon each other. The second most common way is for a parent to access a child’s procedures. A global object is accessible from anywhere within the globality and there are more ways. I will discuss these different ways of access one by one in this section.
+There’s several ways to access a procedure. The most common way is for procedure’s of the same object to call upon each other. The second most common way is for a parent to access a child’s procedures. A global object is accessible from anywhere within the module and there are more ways. I will discuss these different ways of access one by one in this section.
 
 ### Neighbor Access
 
@@ -4190,7 +4190,7 @@ The object is then accessing this *reference*, which is inside the object. The r
 ### Global Access
 
 < Nice sentence:  
-Globality makes all direct children accessible to all ancestors >  
+Module makes all direct children accessible to all ancestors >  
 There’s also a way to make objects accessible not only to parents, but accessible from anywhere. This makes the accessed objects global.
 
 A special symbol is used: a pentagon.
@@ -4203,41 +4203,41 @@ Anything directly inside the pentagon is accessible from *anywhere*. So the (pub
 
 *The blue symbols are accessible from anywhere inside the pentagon.*
 
-A pentagon and all its contents are also called a *globality*.
+A pentagon and all its contents are also called a *module*.
 
-It’s like any object inside a globality has a reference to the globality object:
+It’s like any object inside a module has a reference to the module object:
 
 ![](images/Symbol%20Language%20(2004).354.png)
 
-These references don’t really exist, though. Everything global is just reachable inside every object inside a globality.
+These references don’t really exist, though. Everything global is just reachable inside every object inside a module.
 
 ![](images/Symbol%20Language%20(2004).355.png)
 
 In this the solid line *can* be a call, because it’s a reference to something global.
 
-A globality can also be viewed as being a module, or software component. It is a way to order code into components. Globalities can be embedded just like as objects:
+A module can also be viewed as being a module, or software component. It is a way to order code into components. Modules can be embedded just like as objects:
 
 ![](images/Symbol%20Language%20(2004).356.png)
 
-In fact, a globality symbol is an object symbol too. It works as a triangle: you can access things in the globality directly, but also by qualifying it with the globality identifier, but it has the special side effect that anything it directly contains can be directly accessed from anywhere.
+In fact, a module symbol is an object symbol too. It works as a triangle: you can access things in the module directly, but also by qualifying it with the module identifier, but it has the special side effect that anything it directly contains can be directly accessed from anywhere.
 
 -----
 
-When you want one globality to use another, you make a reference to the other globality:
+When you want one module to use another, you make a reference to the other module:
 
 ![](images/Symbol%20Language%20(2004).357.png)
 
-The child globality can then be accessed like a circle or a triangle, but refers to an existing instance of the globality (software component). Since the globality is a direct child of another globality, anything in the contained globality is just as global as anything in the parent globality. However, if you make the child globality private, it’s not accessible outside the parent globality. It is accessible as global inside the parent globality, though.
+The child module can then be accessed like a circle or a triangle, but refers to an existing instance of the module (software component). Since the module is a direct child of another module, anything in the contained module is just as global as anything in the parent module. However, if you make the child module private, it’s not accessible outside the parent module. It is accessible as global inside the parent module, though.
 
-In other languages, globalities usually contain a large amount of code, because it’s not easy to handle many globalities. In symbol it’s easier to manage globalities and whenever you need the effect of having a small, local, globality (or software component), you can easily use a globality.
+In other languages, modules usually contain a large amount of code, because it’s not easy to handle many modules. In symbol it’s easier to manage modules and whenever you need the effect of having a small, local, module (or software component), you can easily use a module.
 
 This is also an invitation to making a more refined division in software components. You cannot only easily work with a division in more components. You can also embed software components. And you can finely control referencing existing instances of software components.
 
-The child globality in the picture above can only access things global inside itself. It cannot access the global things of its parent globality.
+The child module in the picture above can only access things global inside itself. It cannot access the global things of its parent module.
 
 #### Pentagons not Exchangeable with Triangles and Circles
 
-A pentagon is not exchangeable with triangles and circles as much as triangles and circles are exchangeable. Global has the side effect that things become accessible where otherwise inaccessible. If you suddenly replace the pentagon with a circle or triangle it would mean that things formerly global are no longer global and all sorts of accesses in the globality object are suddenly invalid. For that a pentagon stays a pentagon and a reference to it can only be a pentagon itself.
+A pentagon is not exchangeable with triangles and circles as much as triangles and circles are exchangeable. Global has the side effect that things become accessible where otherwise inaccessible. If you suddenly replace the pentagon with a circle or triangle it would mean that things formerly global are no longer global and all sorts of accesses in the module object are suddenly invalid. For that a pentagon stays a pentagon and a reference to it can only be a pentagon itself.
 
 #### Extra Indication
 
@@ -4304,13 +4304,13 @@ But a clause doe not have access to a clause that doesn’t encapsulate it.
 
 So its like the borders of clauses can be ignored in outward access.
 
-### Globalities, Interfaces and Clauses
+### Modules, Interfaces and Clauses
 
 So usually only parents can access their ancestor’s things.
 
-Globalities, interface implementations and clauses make exceptions on those rules.
+Modules, interface implementations and clauses make exceptions on those rules.
 
-The public ancestors of a globality are accessible from anywhere within the globality, the borders of triangles can be ignored and a clause can directly access anything in its descendant clauses and its procedure definition.
+The public ancestors of a module are accessible from anywhere within the module, the borders of triangles can be ignored and a clause can directly access anything in its descendant clauses and its procedure definition.
 
 ### Brainstorm
 
@@ -5407,28 +5407,28 @@ a symbol apart from an object access procedure also has a type access procedure 
 <  
 Uit dit verhaal volgt dat je wel code als deel van de klasse kan zien, maar dat procedures niet deel van de klasse zijn. Als procedures static members hebben dan heeft elk object z’n eigen procedure type object. 
 
-Als types static members hebben dan heeft elke globality instance z’n eigen type object  
+Als types static members hebben dan heeft elke module instance z’n eigen type object  
 \>
 
 < ik moet *makkelijker* met de static termen moeten kunnen omgaan >
 
-< An object doesn’t define code. You could say that the type defines code and that a object only defines data. Each globality instance, though, has its own instance of the types of the globalities, even though the code of the types is still only in memory once. So you can’t really say the code resides in a type either. >
+< An object doesn’t define code. You could say that the type defines code and that a object only defines data. Each module instance, though, has its own instance of the types of the modules, even though the code of the types is still only in memory once. So you can’t really say the code resides in a type either. >
 
 - Type static
 - Procedure static
-- Globality static
+- Module static
 -----
 - Type static objects
 - Procedure static objects
-- Globality static objects
+- Module static objects
 -----
 - Procedure static procedures
 - Type static procedures
-- Globality static procedures
+- Module static procedures
 -----
 - Type Create
 - Procedure Create
-- Globality Type Create
+- Module Type Create
 
 #### Memory Reservation
 
@@ -5448,15 +5448,15 @@ Procedure instances are made on each call to the procedure. A call is a procedur
 
 Static members of a procedure are only the same for every call to the procedure. Static members of a procedure are different for every object that holds the procedure. In order to make procedure members static for the whole type of objects you have to make a procedure member Type Static. When I talk about static procedure members I’m talking about Procedure Static members.
 
-Static type members are the same for every object instance. However, each globality instance has its own copy of static type members. Static type members are not the same for every globality instance. In order to make a type member, or a procedure member static to the any globality instance, you make the member Globality Static.
+Static type members are the same for every object instance. However, each module instance has its own copy of static type members. Static type members are not the same for every module instance. In order to make a type member, or a procedure member static to the any module instance, you make the member Module Static.
 
-An effect of making type members static is that you can call the members even when the symbol isn’t created. Non-static members, or *instance members*, can only be called on a created object. Globality static members can be called even when the globality instance isn’t created, but the globality type is loaded into memory. Static members of a procedure can be accessed without running the procedure.
+An effect of making type members static is that you can call the members even when the symbol isn’t created. Non-static members, or *instance members*, can only be called on a created object. Module static members can be called even when the module instance isn’t created, but the module type is loaded into memory. Static members of a procedure can be accessed without running the procedure.
 
-Procedure static members are like part of their object. They persist for as long as the object is created. Type static members persist for as long as its globality instance is created. Note here that each globality instance gets its own set of types with static members. Globality static members persist for as long as the globality type exist. A globality type exists when the Sigma module that contains it is in memory.
+Procedure static members are like part of their object. They persist for as long as the object is created. Type static members persist for as long as its module instance is created. Note here that each module instance gets its own set of types with static members. Module static members persist for as long as the module type exist. A module type exists when the Sigma module that contains it is in memory.
 
 #### Type Creation
 
-The Object Create procedure initializes the instance. In it you can create sub objects, set up lines and call members. Type members are initialized in another procedure: Type Create. The Type Create procedure of a symbol is called when the type is created. Types are created when a globality instance is created so the Type Create procedure of all types in a globality instances are called right after the globality’s Object Create procedure.
+The Object Create procedure initializes the instance. In it you can create sub objects, set up lines and call members. Type members are initialized in another procedure: Type Create. The Type Create procedure of a symbol is called when the type is created. Types are created when a module instance is created so the Type Create procedure of all types in a module instances are called right after the module’s Object Create procedure.
 
 You can only call static type members in the Type Create procedure, because non-static, *object* members cannot be accessed yet, because they can only be accessed through a created object.
 
@@ -5464,13 +5464,13 @@ A procedure has a Type Create system procedure as well, to set up the procedure�
 
 Members of a procedure that are Type Static are initialized in the type’s Type Create procedure. Any Type Static member, be it of a procedure lives as long as its type. Type Static procedure members are like type static type members, except that they are accessed through the procedure. If the procedure declares them private, they are accessible only to the procedure itself.
 
-A globality also have a Type Create procedure. This is called when the globality type comes to light. Globality types come to light when a Sigma module is loaded. All the Type Creates of globality types in a Sigma module are called right after the Sigma module is loaded. The Type Create of the main globality of a Sigma module serves as the module initializer. The Object Create of the main globality serves as the module instance initializer.
+A module also have a Type Create procedure. This is called when the module type comes to light. Module types come to light when a Sigma module is loaded. All the Type Creates of module types in a Sigma module are called right after the Sigma module is loaded. The Type Create of the main module of a Sigma module serves as the module initializer. The Object Create of the main module serves as the module instance initializer.
 
 #### Old
 
 ##### Creation
 
-###### Globality Creation
+###### Module Creation
 
 ...
 
@@ -5494,13 +5494,13 @@ Procedure and Type Static objects inside procedures can also have the long lines
 
 < P >
 
-###### Globality Static Objects
+###### Module Static Objects
 
-A Type Static sub object is the same instance for each object of the type. But each globality instance gets its own Type Static object. If you want the object to be the same for every instance of the globality, then you must make the object Globality Static.
+A Type Static sub object is the same instance for each object of the type. But each module instance gets its own Type Static object. If you want the object to be the same for every instance of the module, then you must make the object Module Static.
 
-Note that Type Static Objects that are direct ancestors of the globality are static to the globality type so automatically Globality Static.
+Note that Type Static Objects that are direct ancestors of the module are static to the module type so automatically Module Static.
 
-Note that Globality Static objects are automatically also Type Static.
+Note that Module Static objects are automatically also Type Static.
 
 ##### Static Procedures
 
@@ -5516,29 +5516,29 @@ Another effect of making a procedure Type Static is that you can call the proced
 
 Type Static objects and procedures can be accessed even though an uncreated object symbol, but non Type Static procedures and objects can *not* be accessed unless the object symbol is created.
 
-###### Globality Static Procedures
+###### Module Static Procedures
 
-The rules of Type Static procedures also apply to Globality Static procedures. Only Type Static procedures’ objects are static to *all instances* of the globality.
+The rules of Type Static procedures also apply to Module Static procedures. Only Type Static procedures’ objects are static to *all instances* of the module.
 
 ##### Type Create and Destroy
 
 ###### Type Create and Destroy Introduction
 
-In order to initialize and terminate objects and procedures static to the type, object symbols have a Type Create and a Type Destroy system procedure. The Type Create procedure of an object symbol is called long before the object symbol is created and becomes a created object. The Type Create procedure is called when a globality object is created. The Type Create procedures of any ancestor object symbol of the globality is called, but not of the object symbols in sub globalities. Those object symbols’ Type Create procedures are called only when the sub globality is created. Many object symbols might not even have a Type Create procedure.
+In order to initialize and terminate objects and procedures static to the type, object symbols have a Type Create and a Type Destroy system procedure. The Type Create procedure of an object symbol is called long before the object symbol is created and becomes a created object. The Type Create procedure is called when a module object is created. The Type Create procedures of any ancestor object symbol of the module is called, but not of the object symbols in sub modules. Those object symbols’ Type Create procedures are called only when the sub module is created. Many object symbols might not even have a Type Create procedure.
 
-The Type Destroy procedure is called when the globality instance is Destroyed. Beware not to uninitialize Globality Static members of the type, because those belong to all instances of the globality, not just the instance of the globality that’s being destroyed.
+The Type Destroy procedure is called when the module instance is Destroyed. Beware not to uninitialize Module Static members of the type, because those belong to all instances of the module, not just the instance of the module that’s being destroyed.
 
 Note that you can only initialize the members static to the type in the Type Create procedure, not instance members. This is not a restriction that the Type Create procedure imposes. It’s just that the Type Create procedure is called before any object is created and you could only access non static members through a created object, so at the time the Type Create procedure is run, instance objects and procedures are accessible.
 
-Type Create is stuck right at the end of the globality’s Object Create.
+Type Create is stuck right at the end of the module’s Object Create.
 
-Type Static members are like part of the globality instance, rather than the object instance.
+Type Static members are like part of the module instance, rather than the object instance.
 
-Globality Type Static members are like part of the Sigma module, rather than the globality instance.
+Module Type Static members are like part of the Sigma module, rather than the module instance.
 
-###### Globality Type Create and Destroy
+###### Module Type Create and Destroy
 
-Globality symbols also have a Type Create. New globality types come to light when a Sigma module is loaded. All the Type Creates of globality types in a Sigma module are called right after the Sigma module is loaded. The Type Create of the main globality of a Sigma module serves as the module initializer. The Object Create of the main globality serves as the module instance initializer.
+Module symbols also have a Type Create. New module types come to light when a Sigma module is loaded. All the Type Creates of module types in a Sigma module are called right after the Sigma module is loaded. The Type Create of the main module of a Sigma module serves as the module initializer. The Object Create of the main module serves as the module instance initializer.
 
 ###### Procedure Create and Destroy
 
@@ -5551,11 +5551,11 @@ Procedure Static members of a procedure are like part of the object instance, ra
 #### Question
 
 Where are type static procedure members initialized?  
-Type Static procedure members are like part of the globality instance. They are globality instance *specific*, but this is also called type specific, because a type belongs to a globality instance. They should be initialized along with the globality instance, so along with the type creation. Type Create can access Type Static procedure members and are initialized there.
+Type Static procedure members are like part of the module instance. They are module instance *specific*, but this is also called type specific, because a type belongs to a module instance. They should be initialized along with the module instance, so along with the type creation. Type Create can access Type Static procedure members and are initialized there.
 
 Type Static members of both the type and its procedures are initialized in the Type Create procedure and terminated in the Type Destroy procedure.
 
-Globality Static members of both globality, its type and procedures are initialized in the globality’s Type Create procedure and terminiated in its Type Destroy procedure.
+Module Static members of both module, its type and procedures are initialized in the module’s Type Create procedure and terminiated in its Type Destroy procedure.
 
 #### Old
 
@@ -5598,51 +5598,51 @@ You may want static objects to always be created. Remember that static objects a
 
 ###### Types’ Creation
 
-The Type Create and Type Destroy system procedures can’t be called in your code. They are only called by Symbol automatically, just like Object Redirect is only used by Symbol itself. Type Create procedures are called when the direct globality of it is created. So when a globality is created, any Type Create procedure of any object symbol inside it is called.
+The Type Create and Type Destroy system procedures can’t be called in your code. They are only called by Symbol automatically, just like Object Redirect is only used by Symbol itself. Type Create procedures are called when the direct module of it is created. So when a module is created, any Type Create procedure of any object symbol inside it is called.
 
 ###### Type Create and Type Destroy are Static nor Non Static
 
 The Type Create and Type Destroy are considered static nor non static, because because Type Create is called before the type is created, so before static members can be called.
 
-##### Globality Static
+##### Module Static
 
 ###### Other Issues
 
-Globalities need to be created too.
+Modules need to be created too.
 
-Globalities can also have static members. Those are members of the module that can be called even when the module is not created. The globality type create procedure of all sub globalities is called as soon as the module is loaded in Sigma.
+Modules can also have static members. Those are members of the module that can be called even when the module is not created. The module type create procedure of all sub modules is called as soon as the module is loaded in Sigma.
 
-Types in a non created globality can usually not be referred to. 
+Types in a non created module can usually not be referred to. 
 
-There can also be static members of a globality. Those are mutual to all globality instances and can be referred to even when the globality isn’t created. Then you can refer to procedures (and objects and types) of a non created globality. The procedures must be made Globality Static in order to do that. Globality Static symbols’ Type Create procedures are called even when the globality isn’t created. To have objects run as soon as the globality type runs, the globality symbol has a Type Create and Type Destroy procedure as well, in which you can create objects to run statically.
+There can also be static members of a module. Those are mutual to all module instances and can be referred to even when the module isn’t created. Then you can refer to procedures (and objects and types) of a non created module. The procedures must be made Module Static in order to do that. Module Static symbols’ Type Create procedures are called even when the module isn’t created. To have objects run as soon as the module type runs, the module symbol has a Type Create and Type Destroy procedure as well, in which you can create objects to run statically.
 
-Types of globalities can be
+Types of modules can be
 
-Then globality static type creates should be called when the sigma module loads. Right. The module only exists when. So globalities must also have their own (Globality) Type Create and Type Destroy procedures that are runned when the Sigma module is loaded, respectively unloaded. 
+Then module static type creates should be called when the sigma module loads. Right. The module only exists when. So modules must also have their own (Module) Type Create and Type Destroy procedures that are runned when the Sigma module is loaded, respectively unloaded. 
 
-So now there’s not only static symbols, but globality static symbols, which can be members of ancestors at any depth inside the globality. Only globality static members (including system procedures) can be called when a globality is not created.
+So now there’s not only static symbols, but module static symbols, which can be members of ancestors at any depth inside the module. Only module static members (including system procedures) can be called when a module is not created.
 
-Sub globality’s type creates are also called on module load. If you don’t define globality type create of syb globalities, then nothing is called ofc ouse. Only if you choose to have a globality with globally static data, their globality type create procedure is called.
+Sub module’s type creates are also called on module load. If you don’t define module type create of syb modules, then nothing is called ofc ouse. Only if you choose to have a module with globally static data, their module type create procedure is called.
 
-Sub globality’s type creates are also called on module load. Sub globality type creates are called in the super globality type create. In a globality type, Type Create procedures that are declared Globally Static of object symbols are called when the the globality type is created.
+Sub module’s type creates are also called on module load. Sub module type creates are called in the super module type create. In a module type, Type Create procedures that are declared Globally Static of object symbols are called when the the module type is created.
 
-The creation of a globality must be initiated by code, because a globality symbol can also become a globality reference, in case of which Create must not be called.
+The creation of a module must be initiated by code, because a module symbol can also become a module reference, in case of which Create must not be called.
 
 Dus globally static procedures kunnen worden aangeroepen nadat module is geload. Alle globally static procedures van alle.
 
 - Globally static procedures
-- Type Create procedure of globalities
+- Type Create procedure of modules
 - Static procedures
 - Type Create procedures of object symbols
-- Object Create procedures of globalities
+- Object Create procedures of modules
 - Object Create procedures of object symbols
-- Static procedures directly in globalities
+- Static procedures directly in modules
 
-Symbols always contain some data: their line targets. Those are static data, so when you create a globality there’s always memory reserved: for each symbol memory that stores the line targets. (by the way: doesn’t a flag need to be stored to on if the symbol is created?). Or should I store line targets in the Core’s object table? Hmmm...
+Symbols always contain some data: their line targets. Those are static data, so when you create a module there’s always memory reserved: for each symbol memory that stores the line targets. (by the way: doesn’t a flag need to be stored to on if the symbol is created?). Or should I store line targets in the Core’s object table? Hmmm...
 
 Static bij procedure members.
 
-< How can you make a type: globality static? >
+< How can you make a type: module static? >
 
 ### Symbol Roles
 
@@ -5758,9 +5758,9 @@ Ik met echt nog wel meer operator style behandelen.
 
 Object stores line targets (except for type members, those are stored in the type). So any object reference has the same line targets. It the object shows that one of its members has a line, that member of other object references  has a line to the same target.
 
-#### System Procedures for Globalities
+#### System Procedures for Modules
 
-System procedures of globalities are the same as for other object symbols. The only restriction is that globalities can’t have lines to objects and objects can’t have lines to globalities. Globalities can have an object line, type line and interface line just like objects.
+System procedures of modules are the same as for other object symbols. The only restriction is that modules can’t have lines to objects and objects can’t have lines to modules. Modules can have an object line, type line and interface line just like objects.
 
 #### New Name for System Procedures
 
@@ -5852,9 +5852,9 @@ Vraag 1:
 - Pas als de echte line crossings (hoe heten deze symbolen die gecrosst worden?) moeten worden achterhaald, dan worden er traces uitgevoerd. Dit gebeurt bij opvragen van informatie over een symbool (? Oh ja? Krijg je niet gewoon de Line Target object terug? Of krijg je dan wel unieke symboolnummers terug of zo?), bijvoorbeeld bij het uittekenen van het systeem, of bij een call.
 - Dit heeft tot gevolg dat bij veranderingen in het systeem, de line target naar onbedoelde symbolen verwijst. Daarom worden bij bepaalde systeemveranderingen (optioneel?) de line sources opgeheven(, of tijdelijk onschadelijk gemaakt?) < moet de term *line source* niet ergens geïntroduceerd worden? >
 
-Dus krijgt elk zichtbaar symbool toch een nummer? Ondanks dat systematiek opgeslagen is in de object klasse van de globality klasse?
+Dus krijgt elk zichtbaar symbool toch een nummer? Ondanks dat systematiek opgeslagen is in de object klasse van de module klasse?
 
-Elke opslag entiteit krijgt een nummer. Een opslag entiteit wordt gerepresenteerd door een symbool. Een gewoon object is een opslag capaciteit. Ook een call is een opslag capaciteit. Een klasse ook, voor de type static delen. Een globality object ook, en een globality klasse ook. Binnen deze opslag entiteiten worden line targets opgeslagen. Wat voor nummer krijg je nou terug bij het aanroepen van een aspect procedure? Niet een opslag nummer, want meerdere symbolen kunnen dezelfde opslag representeren. Hmmm... Ik weet het niet.
+Elke opslag entiteit krijgt een nummer. Een opslag entiteit wordt gerepresenteerd door een symbool. Een gewoon object is een opslag capaciteit. Ook een call is een opslag capaciteit. Een klasse ook, voor de type static delen. Een module object ook, en een module klasse ook. Binnen deze opslag entiteiten worden line targets opgeslagen. Wat voor nummer krijg je nou terug bij het aanroepen van een aspect procedure? Niet een opslag nummer, want meerdere symbolen kunnen dezelfde opslag representeren. Hmmm... Ik weet het niet.
 
 I guess each symbol must get its own id, somehow. Recursion is not a problem in this, because recursion doesn’t create infinity, it only creates ~ possible infinity. Each symbol getting an id may be bad when the system changes at run time.
 
@@ -6056,7 +6056,7 @@ Wat wel zo is is dat de standaard access control van system procedures er voor z
 - Exclusion (can then already be covered)
     - Private, Public is exclusion
     - Protected
-    - Access Modifiers in Globalities needs to be further thought through. It gets tricky as you put it in diagram code.
+    - Access Modifiers in Modules needs to be further thought through. It gets tricky as you put it in diagram code.
     - Level Restriction
 - Friends
 - Access Controllers for System Procedures
@@ -6313,67 +6313,67 @@ Level limitation is defined there where it doesn’t have effect yet. It only ha
 
 < Figure out a better diagram notation. >
 
-##### Globality Level Limitation
+##### Module Level Limitation
 
 < Pictures >
 
-Apart from object level limitation there is also globality level limitation.
+Apart from object level limitation there is also module level limitation.
 
-__Public *Globality Up 1*__
+__Public *Module Up 1*__
 
-When an access modifier is paired with a globality level limitation, the access modifier works normally *n* level up the *globality ancestry*. But for higher globalities the member is inaccessible.
+When an access modifier is paired with a module level limitation, the access modifier works normally *n* level up the *module ancestry*. But for higher modules the member is inaccessible.
 
 Public:
 
 | ![](images/Symbol%20Language%20(2004).462.png) | ≈ | ![](images/Symbol%20Language%20(2004).463.png) |
 |------------------------------------------------|---|------------------------------------------------|
 
-Public Globality Up 1:
+Public Module Up 1:
 
 | ![](images/Symbol%20Language%20(2004).464.png) | ≈ | ![](images/Symbol%20Language%20(2004).465.png) |
 |------------------------------------------------|---|------------------------------------------------|
 
-Public Globality Up 2:
+Public Module Up 2:
 
 | ![](images/Symbol%20Language%20(2004).466.png) | ≈ | ![](images/Symbol%20Language%20(2004).467.png) |
 |------------------------------------------------|---|------------------------------------------------|
 
-Protected Globality Up N works the same as Public, but adds the extra restriction that comes with protected.
+Protected Module Up N works the same as Public, but adds the extra restriction that comes with protected.
 
 < Pictures with that? >
 
-< ‘Globality Up 2’ is too long, because Public Globality Up 1 will be used commonly. Visual Basic’s Friend access modifier is the same as Public Globality Up 1. I might need to invent a specific term for Public Globality Up 1. I won’t use ‘Friend’, because that would conflict with >
+< ‘Module Up 2’ is too long, because Public Module Up 1 will be used commonly. Visual Basic’s Friend access modifier is the same as Public Module Up 1. I might need to invent a specific term for Public Module Up 1. I won’t use ‘Friend’, because that would conflict with >
 
-#### Exclusion in Globalities
+#### Exclusion in Modules
 
-Access modifiers in Globalities:
+Access modifiers in Modules:
 
 - Global Inaccessible
 - Global Private
 - Global Public
 
-To understand what happens when procedures inside globalities are given access controllers you need to view the globality as an object, that is referenced from any of its ancestor objects:
+To understand what happens when procedures inside modules are given access controllers you need to view the module as an object, that is referenced from any of its ancestor objects:
 
 | ![](images/Symbol%20Language%20(2004).468.png) | ≈ | ![](images/Symbol%20Language%20(2004).469.png) |
 |------------------------------------------------|---|------------------------------------------------|
 
-If a global procedure is Inaccessible, it’s just not accessible at all (*‘outcommented’*), so not really global either. If a global procedure is Private, it’s not really global either, only accessible by the globality object itself, just like something private of a circle object. If a global procedure is Public, then it *is* global. It is then accessible from any ancestor within the globality. 
+If a global procedure is Inaccessible, it’s just not accessible at all (*‘outcommented’*), so not really global either. If a global procedure is Private, it’s not really global either, only accessible by the module object itself, just like something private of a circle object. If a global procedure is Public, then it *is* global. It is then accessible from any ancestor within the module. 
 
-When a global procedure is Public it is however also accessible *outside* the globality, as a public procedure of the globality object. For a procedure to be global inside the globality, but not accessible outside the globality you use globality level limitation: __Public Globality Up 1__.
+When a global procedure is Public it is however also accessible *outside* the module, as a public procedure of the module object. For a procedure to be global inside the module, but not accessible outside the module you use module level limitation: __Public Module Up 1__.
 
 It is not a permitted to make a global procedure Protected. A pentagon is not exchangeable with a triangle, so Global Protected wouldn’t have much meaning.
 
 ### Friends
 
-In types, globality types, procedures and clauses you can define *Friends* of the symbol. Friends are other symbols that when defined friend get full access to all members of the befriended.
+In types, module types, procedures and clauses you can define *Friends* of the symbol. Friends are other symbols that when defined friend get full access to all members of the befriended.
 
 It only goes one way: the friend symbol can access private things of the befriended, but the befriended doesn’t get access to the friend’s private members. Its kind of a like a sick friendship where one likes the other, but the other doesn’t like him back. That’s why the symbol that defines his friends is called the *befriended*, not a friend itself.
 
-A type, globality type, procedure or clause can define:
+A type, module type, procedure or clause can define:
 
 - Friend Types
 - Friend Procedures
-- Friend Globalities
+- Friend Modules
 
 Which grants its friends full access to the private and protected members of the befriended.
 
@@ -6459,13 +6459,13 @@ I can use this notation:
 ###### Visual Basic Friend Members
 
 <  
-I have to note the application of the Visual Basic Friend access modifier. The basic access controller Friend isn’t required (Public Friend and Protected Friend). Friend Basic Access Controller means that you make a procedure’s own globality a Friend globality.
+I have to note the application of the Visual Basic Friend access modifier. The basic access controller Friend isn’t required (Public Friend and Protected Friend). Friend Basic Access Controller means that you make a procedure’s own module a Friend module.
 
-Yes, but for the effect of the Visual Basic Friend access modifier you also need to deprive global members from being accessed outside the globality. And that is done with globality level restriction.
+Yes, but for the effect of the Visual Basic Friend access modifier you also need to deprive global members from being accessed outside the module. And that is done with module level restriction.
 
-So the effect of the Visual Basic Friend access controller is replaced by • making the globality a friend of the procedure and level restricting global procedures.
+So the effect of the Visual Basic Friend access controller is replaced by • making the module a friend of the procedure and level restricting global procedures.
 
-NO! It’s just making it Globality Up 1! Nothing Else! Do not use a Friend Globality for specific procedures!  
+NO! It’s just making it Module Up 1! Nothing Else! Do not use a Friend Module for specific procedures!  
 />
 
 ###### C++ Friend Functions
@@ -6519,7 +6519,7 @@ Maybe it's a good rule to only show access symbols to denote:
 
 -----
 
-If a configuration of any sort is a common one, it might be nice to make something like a typedef so you give the configuration a name of its own, Like if you commonly use ‘Public Up 1 Globality Up 2’, you might want to give it a different name.
+If a configuration of any sort is a common one, it might be nice to make something like a typedef so you give the configuration a name of its own, Like if you commonly use ‘Public Up 1 Module Up 2’, you might want to give it a different name.
 
 Maybe access controllers are a step into the direction of security. Maybe security should be a kind of advanced access control.
 
@@ -6527,9 +6527,9 @@ Procedure primarily Inaccessible: This seems unuseful: why not just leave the pr
 
 #### Access Controller Parts
 
-In one access controller you can use an exclusion access controller, an object level restriction *and* a globality level restriction:
+In one access controller you can use an exclusion access controller, an object level restriction *and* a module level restriction:
 
-- Protected Up 1 Globality Up 2
+- Protected Up 1 Module Up 2
 
 Access controllers as such are not usual, though and *if* you use them, they’re not very diverse.
 
@@ -6540,7 +6540,7 @@ When being a triangle:
 - Basically you can optionally totally redefine the access for the case when the type is a used as a triangle.
 - Protected is a form of that.
 
-< When being a globality? >
+< When being a module? >
 
 Using triangles to group members with equal access controllers. As with exclusion, the access controller of the triangle limits access again. It won’t make things *more* accessible.
 
@@ -7866,18 +7866,18 @@ Overloading can only be part of procedures if you either cannot overload an obje
             - Interface children
             - N interface levels up
             - N interface levels down
-            - Up until globality
-            - N globalities up
+            - Up until module
+            - N modules up
             - Certain types
             - Certain objects
-            - Certain globality types
-            - Certain globality objects
-    - Globalities
+            - Certain module types
+            - Certain module objects
+    - Modules
         - Delocating members 
-            - (‘friend’ sorta transfers things out of a type to the nearest globality. Is all that required? Does Symbol not  have better substitutes for this?)
+            - (‘friend’ sorta transfers things out of a type to the nearest module. Is all that required? Does Symbol not  have better substitutes for this?)
     - Access Operators
         - Special operators. Are they operators? If they are then they should be able to be overloaded. Maybe that’s handy too.
-        - Access globality
+        - Access module
         - Access object
         - Access interface
         - Access type
@@ -8379,7 +8379,7 @@ Delegation, delegation structure.
 
 -----
 
-< I need a story about where the code resides and that the code isn’t really part of globality instances, types, objects or procedures. Those entities only complete the code with a copy of data. >
+< I need a story about where the code resides and that the code isn’t really part of module instances, types, objects or procedures. Those entities only complete the code with a copy of data. >
 
 -----
 
@@ -8480,7 +8480,7 @@ Don’t forget to expand inheritance possibilities. Exclude, override, pre exten
 J Code Access Controllers and Interfaces.  
 \------------------------------------------------
 
-I mentioned friend and public here, but access controllers are more complex in J Code due to embedded globalities. There is basically an infinite amount of access controllers. For that they aren't primarily named anymore, they are systemized. You might have an access controller that ensures that. Maybe what I put in a triangle previously, is actually something that just has special access. Maybe the triangle shouldn't be used there then, but just a special access controller. The triangle can then be used as an interfaces mark. The triangle previously marked all symbols inside the triangle as having this special access. If I don't use the  triangle there anymore then I'd have to change each of those symbols' access controllers. For that... You should be able to group symbols inside a special symbol that controls the access for all the directly contained symbols. So to see the triangle as a special access controller and for that not use the triangle for it anymore, but an actual access controller, I'd have to use access controller symbols (line and line 'terminators) for all the containing symbols, which would drastically make the diagram more difficult. An  idea is to make a special symbol to control the access for all the directly contained symbols. What pops into my head now is: since the triangle would then stand for interface, each member with the same access controller could belong to the same interface. Therefore, an interface symbol (triangle) could be used to group these symbols and the interface symbol gets the access controller instead, which applies it to all directly contained symbols.
+I mentioned friend and public here, but access controllers are more complex in J Code due to embedded modules. There is basically an infinite amount of access controllers. For that they aren't primarily named anymore, they are systemized. You might have an access controller that ensures that. Maybe what I put in a triangle previously, is actually something that just has special access. Maybe the triangle shouldn't be used there then, but just a special access controller. The triangle can then be used as an interfaces mark. The triangle previously marked all symbols inside the triangle as having this special access. If I don't use the  triangle there anymore then I'd have to change each of those symbols' access controllers. For that... You should be able to group symbols inside a special symbol that controls the access for all the directly contained symbols. So to see the triangle as a special access controller and for that not use the triangle for it anymore, but an actual access controller, I'd have to use access controller symbols (line and line 'terminators) for all the containing symbols, which would drastically make the diagram more difficult. An  idea is to make a special symbol to control the access for all the directly contained symbols. What pops into my head now is: since the triangle would then stand for interface, each member with the same access controller could belong to the same interface. Therefore, an interface symbol (triangle) could be used to group these symbols and the interface symbol gets the access controller instead, which applies it to all directly contained symbols.
 
 -----
 
@@ -8511,7 +8511,7 @@ __Programming Concepts’ Diagram Elements__
 | Execution order            | Dependent of positioning. Clockwise. Symbols possibly tied together with lines. |
 | Changing reference or type | Also include creation and destruction. Special procedures that actually alter the diagram. |
 | Array                      | Special type with special methods changing the count of contained object references. |
-| Module                     | A globality symbol can be compiled |
+| Module                     | A module symbol can be compiled |
 
 
 Old
@@ -8633,7 +8633,7 @@ __Programming Concepts’ Diagram Elements__
 | Execution order            | Dependent of positioning. Clockwise. Symbols possibly tied together with lines. |
 | Changing reference or type | Also include creation and destruction. Special procedures that actually alter the diagram. |
 | Array                      | Special type with special methods changing the count of contained object references. |
-| Module                     | A globality symbol can be compiled |
+| Module                     | A module symbol can be compiled |
 
 ### Diagram Element => Concept
 
@@ -8642,7 +8642,7 @@ __Programming Concepts’ Diagram Elements__
 | Circle                  | Object reference               |
 | Triangle                | Interface, inheritance         |
 | Square                  | Procedure, procedure call      |
-| Pentagon                | Globality region               |
+| Pentagon                | Module region               |
 | Contiguous line         | Points to referee              |
 | Dotted line             | Points to type                 |
 | Contiguous dissector \| | Public for reference           |
@@ -8726,27 +8726,27 @@ Line dissectors can describe indirect containment access
 
 To the outside there is only access to the children of the pentagon the symbol is indirectly in. Friend access controllers of pentagon children  restrict global access and denote what can serve as a type and what can serve as an object reference. You only have access to other things outside through a reference, but that reference resides inside the symbol.
 
-##### Multiple Globality Levels
+##### Multiple Module Levels
 
-A globality B inside a globality A is accessible by A. A globality C inside globality B is not accessible by A unless declared public.
+A module B inside a module A is accessible by A. A module C inside module B is not accessible by A unless declared public.
 
-globality A outside globality B cannot be accessed by B.
+module A outside module B cannot be accessed by B.
 
-What about ‘system wide’ things that can be accessed from anywhere? It can be reached from embedded globalities, which disobeys the rule just defined. If it’s really system wide, then you simply embed a globality by linking to the shared instance of a module.
+What about ‘system wide’ things that can be accessed from anywhere? It can be reached from embedded modules, which disobeys the rule just defined. If it’s really system wide, then you simply embed a module by linking to the shared instance of a module.
 
-But what if it’s less system wide? In that case it seems that a deep globality has access to a shallower globality... < I’ll figure out later >
+But what if it’s less system wide? In that case it seems that a deep module has access to a shallower module... < I’ll figure out later >
 
 -----
 
-If a globality is declared public, it becomes a sub module in the Sigma module.
+If a module is declared public, it becomes a sub module in the Sigma module.
 
 ##### Friend for reference
 
-Means access only anywhere within the globality, but not inside embedded globalities.
+Means access only anywhere within the module, but not inside embedded modules.
 
 ##### Public for instancing
 
-The symbol serves as a type and can be instantiated outside the globality.
+The symbol serves as a type and can be instantiated outside the module.
 
 #### Contaiment by Containment and Reference
 
@@ -8784,7 +8784,7 @@ Type reference
 
 #### Procedures Parameters
 
-A procedure can contain variable objects. The public ones are parameters. The friend ones are parameters within the current globality
+A procedure can contain variable objects. The public ones are parameters. The friend ones are parameters within the current module
 
 
 Standard Modules
@@ -9234,14 +9234,14 @@ The problem with that is that + and - can't be unary operators unless you put a 
 
 -----
 
-A parent block is sorta like a globality in that way.
+A parent block is sorta like a module in that way.
 
-Globality and triangle are alike. They ...
+Module and triangle are alike. They ...
 
 -----
 
 I might want to switch the square and pentagon symbols.  
-A square would then become a globality. A pentagon would become an execution point and then execution would look like neurons between which electrons are shot...
+A square would then become a module. A pentagon would become an execution point and then execution would look like neurons between which electrons are shot...
 
 -----
 
@@ -9279,7 +9279,7 @@ Accessing public objects is no longer ambiguous if you use access symbols just o
 
 -----
 
-A pentagon's direct children can all reference each other and can be referenced by all ancestors (containment-wise ancestors). Globality is only one function of a pentagon. Actually a pentagon is a lot like globality, where there are multiple levels of globality and that exists in today's systems.
+A pentagon's direct children can all reference each other and can be referenced by all ancestors (containment-wise ancestors). Module is only one function of a pentagon. Actually a pentagon is a lot like module, where there are multiple levels of module and that exists in today's systems.
 
 -----
 
@@ -10001,7 +10001,7 @@ Attempt to Organize Lines Chapter
     - Global Access
     - Interface Access
     - Clause Access
-    - Globalities, Interface and Clauses
+    - Modules, Interface and Clauses
 - Implicit Calls
     - Explicit Calls
     - Implicit Calls
@@ -10098,7 +10098,7 @@ Attempt to Organize Lines Chapter
     - Global Access
     - Interface Access
     - Clause Access
-    - Globalities, Interface and Clauses
+    - Modules, Interface and Clauses
 - Implicit Calls
     - Explicit calls
     - Implicit Calls
@@ -10194,7 +10194,7 @@ Attempt to Organize Lines Chapter
     - Global Access
     - Interface Access
     - Clause Access
-    - Globalities, Interface and Clauses
+    - Modules, Interface and Clauses
 -----
 - Implicit Calls
     - Explicit Calls
@@ -10304,7 +10304,7 @@ Attempt to Organize Lines Chapter
     - Global Access
     - Interface Access
     - Clause Access
-    - Globalities, Interface and Clauses
+    - Modules, Interface and Clauses
 
 - Genericity
     - Implicit Calls
@@ -10415,7 +10415,7 @@ In the next organization I’ve also reorganized Line Rules.
 - Global Access
 - Interface Access
 - Clause Access
-- Globalities, Interface and Clauses
+- Modules, Interface and Clauses
 
 #### Genericity
 
