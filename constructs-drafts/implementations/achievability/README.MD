@@ -32,7 +32,7 @@ This sub-folder represents a category of principles that might be called the *ac
 
     - The concept *Computer Language Programmed Within Itself* was tried with experimental version 2.0 of a computer language. In that version the base of the language was reprogrammed using the new language itself. The idea was that all the other software might be based on that, which from then on, would be programmed only using the new computer language itself.
 
-- ### [Small Code Base](small-base-code.md)
+- ### [Small Base of Code](small-base-of-code.md)
 
     - This principle would be about trying to make the base of the code for a new computer language as small as possible and have the rest of the computer language programmed within a computer language itself. This principle was tried in version 2.0 of a new computer language: the code base was reprogrammed within itself.
 
