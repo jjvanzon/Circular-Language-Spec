@@ -6,5 +6,3 @@ Classes Articles
 
 - [Classes](classes.md)
 - [Static](static-unfinished.md)
-
-
