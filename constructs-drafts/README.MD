@@ -8,7 +8,7 @@ Overview
 
 This documentation may contain drafts of ideas that might not become part of the spec. Or language constructs that are just not as clearly worked out yet.
 
-- ### [Black Boxes Construct Drafts](black-black-boxes-construct-drafts)
+- ### [Black Boxes Construct Drafts](black-boxes-construct-drafts)
 
     - Lesser worked out ideas about this topic may be moved here from the spec.
 
