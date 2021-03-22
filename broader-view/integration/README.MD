@@ -10,11 +10,11 @@ This folder may contain documentation about integration modules, that might work
 
 Here are some topics that might be put under this umbrella. Some may have their own article:
 
-- ### [Integration Loose Ideas](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/broader-view/integration/integration-loose-ideas.md)
+- ### [Integration Loose Ideas](integration-loose-ideas.md)
 
     - Lesser worked out ideas about integration.
 
-- ### [Text Codes](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/broader-view/integration/text-codes.md)
+- ### [Text Codes](text-codes.md)
 
     - *Text Codes* might encapsulates a larger number of sub-modules. It might be about integrating many other text codes.
 
@@ -22,7 +22,7 @@ Here are some topics that might be put under this umbrella. Some may have their 
 
     - This may be a tool to read out XML and show it as a structure in the Circle language. So it is not about saving and loading data as XML, but it is about taking existing XML from another source and showing it inside the Circle computer language.
 
-- ### [UML](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/broader-view/integration/uml.md)
+- ### [UML](uml.md)
 
     - This article is not finished. It might once become an evaluation on what are the pros and cons of the Circle diagram notation compared to UML: what does UML offer, that the Circle diagram notation does not and what UML-expressible concepts might have an alternative notation inside the Circle diagram language? Does UML still offer things, that the Circle diagram notation does not? And if there is something the Circle diagram notation does not offer: should the diagram notation be changed, so that it could be a substitute for UML? So this article might become a comparison between UML and the diagram notation of Circle.
 
