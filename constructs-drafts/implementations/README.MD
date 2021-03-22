@@ -10,11 +10,11 @@ Topics in this folder may have been left out of the spec, because of a decision 
 
 Here might be some of the topics that could be found here:
 
-- ### [Achievability](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/constructs-drafts/implementations/achievability)
+- ### [Achievability](achievability)
 
     - The achievability principles would be a set of principles, that describe how a running new computer language might be developed in a limited amount of time with a limited amount of people: what techniques might be employed to try and make that possible.
 
-- ### [Classes Implementation | Texts to Incorporate](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/classes-implementation-texts-to-incorporate.md)
+- ### [Classes Implementation | Texts to Incorporate](classes-implementation-texts-to-incorporate.md)
 
     - Ideas about this topic, that might not belong in the spec of the language, but are more like an application of it.
 
@@ -22,18 +22,18 @@ Here might be some of the topics that could be found here:
 
     - On top of text code being constructed and parsed, text code may also separately require a code editor for use in a programming environment.
 
-- ### [Commands Implementation](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/commands-implementation.md)
+- ### [Commands Implementation](commands-implementation.md)
 
     - Ideas about this topic, that might not belong in the spec of the language, but are more like an application of it.
 
-- ### [Optimization](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/optimization.md)
+- ### [Optimization](optimization.md)
 
     - May cover optimization algorithms, that might be integrated into the new computer language. For now this is considered not so important to think about. The text might just be loose ideas.
 
-- ### [Referrers Implementation](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/referrers-implementation.md)
+- ### [Referrers Implementation](referrers-implementation.md)
 
     - Ideas about this topic, that might not belong in the spec of the language, but are more like an application of it.
 
-- ### [System Commands Implementation](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/implementations/system-commands-implementation.md)
+- ### [System Commands Implementation](system-commands-implementation.md)
 
     - Ideas about this topic, that might not belong in the spec of the language, but are more like an application of it.
