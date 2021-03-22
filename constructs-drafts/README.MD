@@ -6,7 +6,7 @@ Overview
 
 `[ Preliminary documentation ]`
 
-This documentation may contain drafts of ideas that might not become part of the spec. Or language constructs that are just not as clearly worked out yet.
+This documentation may contain drafts of ideas that might not become part of the spec. Or language constructs that are just not as clearly worked out.
 
 - ### [Black Boxes Construct Drafts](black-boxes-construct-drafts)
 
@@ -30,11 +30,11 @@ This documentation may contain drafts of ideas that might not become part of the
 
     - Traditionally systematics of a program might be expressed by means of text code. But in Circle language, systematics might be stored in another way for instance as binary interlinked objects. Text code may be a mere *expression* of those stored objects. A *Text Code* sub-module might translate those systematics to text code. The text code might be adapted, which may result in changes to the stored objects, rather than the text code’s being literally stored.
 
+    - One of the ideas would be that each language element’s textual representation might be considered the language element’s *literal*, that could be read out and assigned. The idea was, that however large the construct, its text code might still just be a literal, be it composed of the literals of its sub-constructs. This is just an idea, but it might be the way to go.
+
     - Exactly how the textual code might look in Circle, might not have been decided yet, because at one time it was considered more important to work out the language *conceptually* along with a *diagram notation*, than to work out the *textual notation*. Experimental version 2.0 of a new computer language had a text code, but it was still quite basic.
 
     - The articles might not have been finished. They might be throw-togethers of ideas sort of like cut up leftovers from older documentation.
-
-    - One of the ideas would be that each language element’s textual representation might be considered the language element’s *literal*, that could be read out and assigned. The idea was, that however large the construct, its text code might still just be a literal, be it composed of the literals of its sub-constructs. This is just an idea, but it might be the way to go.
 
 - ### [Access Control Loose Ideas](access-control-loose-ideas.md)
 
