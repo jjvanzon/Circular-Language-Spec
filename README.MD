@@ -8,7 +8,7 @@ Circle would be an unfinished programming language. It aims to once become a dia
 You may find the following folders here:
 
 - [Spec](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/spec)
-    - Not done yet. More finished up content might be found here. It might once form a specification of this programming language.
+    - More finished up content might be found here. It might once form a specification of this programming language.
 - [Broader View](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/broader-view)
     - Various draft texts that may once describe a story, ideas about how this Circle language might be used in practice.
 - [Construct Drafts](https://github.com/jjvanzon/Circle-Language-Spec/tree/master/constructs-drafts)
