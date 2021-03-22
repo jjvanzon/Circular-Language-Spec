@@ -136,7 +136,7 @@ This documentation may contain drafts of ideas that might not become part of the
 
 - ### [Transactions](transactions.md)
 
-    - Concurrency resolution ideas about *transactions* might be put here. The ideas currently do not seem to be part of the spec.
+    - Concurrency resolution ideas about *transactions* might be put here. The ideas currently might not belong in the spec.
 
 - ### Libraries
 
@@ -146,6 +146,4 @@ This documentation may contain drafts of ideas that might not become part of the
 
     - Another library might provide individual *assembly* instructions (machine instructions) as commands or perhaps substitutes of such basic operations.
      
-    - Even __If__ statements and loops might be helped by a base library to provide the syntax.
-
-    - *Events* perhaps as well.
+    - Even __If__ statements and loops might be helped by a base library to provide the syntax. *Events* perhaps as well.
