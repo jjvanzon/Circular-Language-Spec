@@ -27,7 +27,7 @@ These are various draft texts that may once describe a story, ideas about how th
     - Perhaps the most important goal of the Circle programming language, is to melt together all computer technology disciplines, providing one clear language, that can express anything, and that everybody can understand. The *Extensibility Principles* may make a lot of promises about the new language.
     - The *extensibility principles* may cover the techniques that make sure existing software is extensible and make sure, that *Circle language* may integrate with the rest of the world of computer technology. *Circle* resources might be accessible to other systems and existing resources on the internet might be accessible in *Circle*.
 
-- ## ['From Spec'](from-spec)
+- ## [From Spec](from-spec)
 
     - Topics recognizable from the *spec*, but then ideas perhaps less to the point but more philosophical. Those might be moved from the spec to here.
 
