@@ -14,23 +14,23 @@ This documentation does not seem finished up yet. It seems to contains quite som
 
     - What might be worked out, is a definition of what input and output is and what different forms of input and output there might be.
 
-- ### [Input Output | Parameter Passing](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/input-output/input-output-parameter-passing.md)
+- ### [Input Output | Parameter Passing](input-output-parameter-passing.md)
 
     - This take on *Parameters* might once take preference over the one currently in the *Spec*. The *Spec* may currently speak of parameters as a loosely coupled relationship between commands and classes. That take on it might have made things rather complicated instead of being more helpful. The take here in *Construct Drafts* seemed simpler and perhaps a more usable alternative. It seems to talk about subdividing parameter passings into __By Ref / By Value__ and __Input / Output / Thruput__. The idea seems to have been set aside, because of some difficulty defining what __Input__ and __Output__ mean precisely on a more detailed level as well as in grander scope. But a simplified version of this story it might be more helpful as a way to express parameters in this diagram language, that may once become part of the *Spec* again.
 
-- ### [Thruput Parameters | Affected, Used and Transformed](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/input-output/thruput-parameters-affected-used-and-transformed.md)
+- ### [Thruput Parameters | Affected, Used and Transformed](thruput-parameters-affected-used-and-transformed.md)
 
     - Explores a slightly more detailed way of specifying variations on __Thruput__ parameters: __Affected__ / __Used__ / __Transformed__. It might not be as usable in practice. That is why the topic was set aside here.
 
-- ### [Auto-Determine In, Out & Thru](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/input-output/auto-determine-in-out-thru.md)
+- ### [Auto-Determine In, Out & Thru](auto-determine-in-out-thru.md)
 
     - Explores an idea where the way a parameter is used, could determine whether it might be considered __Input__, __Output__ or __Thruput__. It may be of help once when making a simpler variation on a *Parameters* section in the *Spec*. But for now the idea is parked here.
 
-- ### [Automatic Execution Order & More](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/input-output/automatic-execution-order-and-more.md)
+- ### [Automatic Execution Order & More](automatic-execution-order-and-more.md)
 
     - This document may combine several of these input/output topics. It may once be split up into separate articles.
 
-- ### [Input Output | Loose Ideas](https://github.com/jjvanzon/Circle-Language-Spec/blob/master/constructs-drafts/input-output/input-output-loose-ideas.md)
+- ### [Input Output | Loose Ideas](input-output-loose-ideas.md)
 
     - Loose ideas about the topic.
 
