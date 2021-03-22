@@ -28,7 +28,7 @@ Inactive command class redirection is less common than inactive command object r
 
 Inactive command *class* redirection makes a command definition take over all aspects of another command definition, but creates a *new* command definition object, for which the other command definition is the prototype. The new command definition can only redefine the other definition’s *default values*. That’s all that is additionally possible, compared to inactive command *object* redirection.
 
-Inactive command class redirection is analogus to having a class redirect its class, making one object the prototype for another prototype.
+Inactive command class redirection is analogous to having a class redirect its class, making one object the prototype for another prototype.
 
 An inactive command class redirection can also point to an active command, making an *executable* command object the prototype for the new command definition. That is even less common, but possible all the same.
 
@@ -74,7 +74,7 @@ An executable command, that redirects to another executable command, is a refere
 
 Executable command object redirection is less common than inactive command object redirection.
 
-You can also object redirect an executable command to an inactive command. If the final target of the object redirections is an inactive command, then you can not run that unexecutable command object through an active reference to it. It is kind of pointless to point to an inactive command object through an executable command reference, so it is very uncommon.
+You can also object redirect an executable command to an inactive command. If the final target of the object redirections is an inactive command, then you can not run that inexecutable command object through an active reference to it. It is kind of pointless to point to an inactive command object through an executable command reference, so it is very uncommon.
 
 #### In a Diagram
 
@@ -106,7 +106,7 @@ Symbol __A__ is an active command reference to symbol __B__. Symbol __B__ is an 
 
 ### Target Command Definition
 
-A target command definition is completely analogus to a *target class*.
+A target command definition is completely analogous to a *target class*.
 
 A target command definition is found by following the redirections, that lead to a symbol’s command definition.
 

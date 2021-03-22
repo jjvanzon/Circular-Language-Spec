@@ -40,7 +40,7 @@ The square is a command definition. The circles inside of it are the parameters.
 
 ![](images/5.%20Commands%20Example%20Diagrams.005.png)
 
-The diamond shape is a command call. What makes it a command call, is that it is tied to its command definition, the square, with a class line, the dashed line. The circles inside the diamond are the parameters. The parameters are tied to objects on the outside with parameter passings. The parameter passings are the lines connecting the smaller circles inside the diamond, the parameters, to the larger circles ouside the diamond. Parameter passings are explained later in the *parameter* articles.
+The diamond shape is a command call. What makes it a command call, is that it is tied to its command definition, the square, with a class line, the dashed line. The circles inside the diamond are the parameters. The parameters are tied to objects on the outside with parameter passings. The parameter passings are the lines connecting the smaller circles inside the diamond, the parameters, to the larger circles outside the diamond. Parameter passings are explained later in the *parameter* articles.
 
 ### Parameters in a Command Reference
 
@@ -220,7 +220,7 @@ Because public object, parameters, always come with an indication of the paramet
 
 ![](images/5.%20Commands%20Example%20Diagrams.034.png)
 
-The large square is a command definition, the inactive clause is in. The square inside the large square is the inclause. The inactive clause contains two squares, which are the command references. They are actually *public* command references. This makes the command references parameters of the inactive clause. The command references have object lines, solid ones, going outside, ending at an access mark. Those object lines are indications of parameter passing, indicating that the command references are so called Reference parameters. Parameter passings are explained in the *Parameters* articles. The parameters are not filled in, because an inactive clause is a dormant command definition. Only in a call to the dormant command definitions, the parameters are filled in.
+The large square is a command definition, the inactive clause is in. The square inside the large square is the clause. The inactive clause contains two squares, which are the command references. They are actually *public* command references. This makes the command references parameters of the inactive clause. The command references have object lines, solid ones, going outside, ending at an access mark. Those object lines are indications of parameter passing, indicating that the command references are so called Reference parameters. Parameter passings are explained in the *Parameters* articles. The parameters are not filled in, because an inactive clause is a dormant command definition. Only in a call to the dormant command definitions, the parameters are filled in.
 
 ### Command References in an Active Clause
 

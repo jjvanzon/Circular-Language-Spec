@@ -814,7 +814,7 @@ When an *object* `is` drawn with a dashed line, then it `is only` used as a clas
 
 ![](images/1.%20Commands%20Main%20Concepts.054.png)
 
-This notation` will *not*` be copied to `the` concept of commands. This `is` because a command’s definition `will usually` be a square and a square `will usually` be a command’s definition, so `using` dashed lines for command definitions, `would` create an `overload` of dashed squares. So command symbols, that `are only` used as a definition, `do not` get a dashed notation.
+This notation `will *not*` be copied to `the` concept of commands. This `is` because a command’s definition `will usually` be a square and a square `will usually` be a command’s definition, so `using` dashed lines for command definitions, `would` create an `overload` of dashed squares. So command symbols, that `are only` used as a definition, `do not` get a dashed notation.
 
 << details >>  
 A command, that might be used as a definition, `is usually` not executable. Only `individual` calls to `the` command, that `use the` command as a definition, might be executable. If a command definition `is` executable `after all`, then it `is clearly` mentioned, that it `is` an *active* command definition, because it might be a special situation.
