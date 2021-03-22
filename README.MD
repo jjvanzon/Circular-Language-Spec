@@ -1,7 +1,8 @@
 Circle-Language-Spec | Root
 ===========================
 
-Circle would be an unfinished programming language. It aims to once become a diagram notation for visualizing computer code.
+
+Circle aims to become a visual programming language made from shapes and lines. It may once become a diagram notation for visualizing computer code.
 
 You may find the following folders here:
 
