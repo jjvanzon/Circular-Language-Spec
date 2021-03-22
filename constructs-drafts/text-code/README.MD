@@ -4,7 +4,7 @@
 Text Code
 ---------
 
-`[ Preliminary documentation ]`
+`[ Deprecated documentation ]`
 
 Traditionally systematics of a program might be expressed by means of text code. But in Circle language, systematics might be stored in another way for instance as binary interlinked objects. Text code may be a mere *expression* of those stored objects. A *Text Code* sub-module might translate those systematics to text code. The text code might be adapted, which may result in changes to the stored  objects, rather than the text code’s being literally stored.
 
@@ -47,11 +47,11 @@ You might find the following content here:
 
     - A specific text notation might be suggested for assignment so that it might distinguish value, object, class and interface assignment and pointer-related assignments, for instance: `c=` and `o=->`.
 
-- ### [Declaration on First Use](declaration-on-first-use.md)
+- ### Declaration on First Use
 
     - Some programmer’s text books might say you should declare variables of procedures at the beginning of procedures, to keep an overview of all the variables used inside the procedure. It might be a bit suggestive if that is necessarily the best thing to do. A suggestion here is declare a variable right before you use it might be a way to go. This may give a hint about parts of a procedure depend on which variable and which parts of a procedure do not use that variable. Perhaps declaring a variable upon first use requires slightly less CPU-power, than declaring all the variables at the beginning of the procedure, because if a code block is not executed, the variables used exclusively inside that code block might not get assigned.
 
-    - If (binary) stored object systematics might be transalted to text code, this rule might be applied, that a variable is declared in the text code right before it is used. This also might mean, that if a variable is used in several deeper blocks of code, the variable may need to be declared inside the *closest mutual parent* of those deeper blocks.
+    - If (binary) stored object systematics might be translated to text code, this rule might be applied, that a variable is declared in the text code right before it is used. This also might mean, that if a variable is used in several deeper blocks of code, the variable may need to be declared inside the *closest mutual parent* of those deeper blocks.
 
     - The concept of *‘closest mutual parent’* seems similar as a diagram notation idea that might be called *automatic containment*. There a variable, reference or object would be displayed inside the *closest mutual parent* of all the objects inside of which the variable, reference or object might be used.
 
@@ -65,9 +65,7 @@ You might find the following content here:
 
     - Macro keywords would be an idea, that may have come from an older design of the diagram notation. Access modifier literals might have been considered macro keywords. Some of the access modifiers, like __Public Read-Only__ could mean: __Get Public__ and __Set Private__. So the literals __Get Public__ and __Set Private__ may be replaced by the ‘macro keyword’ __Public Read-Only__. So there would be one keyword replacing a string of other keywords. That might have been the original concept of macro keywords. What place it may still has in the a newer design of the language might not be that clear. It might become part of the subject of concept literals, with which you might introduce new textual notations.
 
-- ### [Pointer Operators](pointer-operators.md)
-
-    - This article might be quite short.
+- ### Pointer Operators
 
     - The language C++ seems to have two pointer operators:
 
@@ -82,6 +80,6 @@ You might find the following content here:
 
     - Tries to describe how it might look in text code to pick up an event from an object more than one layer deeper in the containment structure of the objects.
 
-- ### [Text Code | Loose Ideas](text-code-loose-ideas.md)
+- ### [Text Code Loose Ideas](text-code-loose-ideas.md)
   
     - Contains older material, that might once be used inside newer documentation.
