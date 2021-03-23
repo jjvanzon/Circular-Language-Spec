@@ -1,4 +1,4 @@
-﻿Circle Language Construct Drafts | From Spec
+﻿Circle Language Broader View | From Spec
 ============================================
 
 Commands and Classes Loosely Coupled
