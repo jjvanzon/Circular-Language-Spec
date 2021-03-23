@@ -80,18 +80,6 @@ This documentation may contain drafts of ideas that might not become part of the
 
     - Concurrency resolution ideas about locking mechanisms might be put here. The idea might not be part of the spec as of yet.
 
-- ### [Multiple Language Layers](multiple-language-layers.md)
-
-    - Multiple language layers may be the idea that programming language could be built up of layers, first starting perhaps with *arithmetic* algebra and numbers (`+ - * /`). Arithmetic expressions may be input of *comparative* algebra (`< > =`). Then building up to *logical* operations (`and` / `or` / `not`). Then may follow *execution flow* (`if` / `else` / `then`). Constructs consisting of all of those operations may be organized into *procedures*. Those may be grouped into *objects*. Objects may have *relations* with each other. And what layer follows above that? *Aspects?* *Generated* code? From this idea might once follow a nice story. The document may just contain some loose ideas for now.
-    
-- ### [Object Storage](object-storage.md)
-
-    - Object Storage may turn lists on storage devices into a landscape of digital objects. It might be the binding force between basic data structures on storage devices and the object logic of this computer language. It may be about how basic data structures are used to store objects. Not all of these principles might be original, because other systems might use them, but they were isolated here in a single place as a single group of concepts that may be used to turn storage into objects.
-    
-    - Perhaps trying to find one way to manage memory allocation, database-like storage and file systems might be a bit ambitious.
-     
-    - The documentation might not be finished. An attempt was made to sum up the required concepts trying to turn basic data structures into digital objects.
-
 - ### [Peels](peels.md)
 
     - This article seems to be about a concept, that may have later been rejected. The article seems to contain texts out of an older design of the diagram language, that would be about a notational concept that seemed later be rejected: using extra lines around a shape to try and reveal information about the target of a line.

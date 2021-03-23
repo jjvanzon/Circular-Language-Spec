@@ -65,6 +65,18 @@ These are various draft texts that may once describe a story, ideas about how th
 
     - The new computer language should have this button to press, that records all user actions, that are undertaken. Then, when you stop recording, the user actions are recorded as a procedure, that can be called as a command to be executed in one blow instead of performing all the actions manually. You can also edit the command code, to fine-tune the behavior of the command. This makes it easy to turn manual work into automatic procedures and it also makes it easier to program new commands. Other programs have this sort of macro recording, and the new computer language should also have such functionality in the futures. Macro recording has not been implemented inside existing versions of the new computer language yet.
 
+- ### [Multiple Language Layers](multiple-language-layers.md)
+
+    - Multiple language layers may be the idea that programming language could be built up of layers, first starting perhaps with *arithmetic* algebra and numbers (`+ - * /`). Arithmetic expressions may be input of *comparative* algebra (`< > =`). Then building up to *logical* operations (`and` / `or` / `not`). Then may follow *execution flow* (`if` / `else` / `then`). Constructs consisting of all of those operations may be organized into *procedures*. Those may be grouped into *objects*. Objects may have *relations* with each other. And what layer follows above that? *Aspects?* *Generated* code? From this idea might once follow a nice story. The document may just contain some loose ideas for now.
+    
+- ### [Object Storage](object-storage.md)
+
+    - Object Storage may turn lists on storage devices into a landscape of digital objects. It might be the binding force between basic data structures on storage devices and the object logic of this computer language. It may be about how basic data structures are used to store objects. Not all of these principles might be original, because other systems might use them, but they were isolated here in a single place as a single group of concepts that may be used to turn storage into objects.
+    
+    - Perhaps trying to find one way to manage memory allocation, database-like storage and file systems might be a bit ambitious.
+     
+    - The documentation might not be finished. An attempt was made to sum up the required concepts trying to turn basic data structures into digital objects.
+
 - ## [Text Classing](text-classing.md)
 
     - This concept might allow quickly selecting pieces of text out of a text document and call it an object and assign a class typing to it, so that you turn the text document into objects with classes, references to each other and a containment structure. That way text document might be turned into a relational structure perhaps in a practical way. The documentation tries to describes the basic idea.
