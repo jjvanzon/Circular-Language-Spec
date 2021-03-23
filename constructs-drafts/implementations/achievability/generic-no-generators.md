@@ -1,8 +1,8 @@
-﻿Circle Language Broader View | Achievability Principles
-=======================================================
+﻿Circle Language Construct Drafts | Implementations
+==================================================
 
-Generic, No Generators
-----------------------
+Achievability | Generic, No Generators
+--------------------------------------
 
 `[ Out of Scope ]`
 

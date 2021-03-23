@@ -1,5 +1,5 @@
-﻿Circle Language Spec
-====================
+﻿Circle Language | Construct Drafts
+==================================
 
 *From 2003*
 

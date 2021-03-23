@@ -1,8 +1,8 @@
-﻿Circle Language | Broader View
-==============================
+﻿Circle Language Broader View | From Spec
+========================================
 
-Basic Diagram Elements Broader View
------------------------------------
+Basic Diagram Elements | Broader View
+-------------------------------------
 
 `[ Preliminary documentation ]`
 

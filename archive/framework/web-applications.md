@@ -1,7 +1,7 @@
-﻿Circle Language Construct Drafts | Utilities
-============================================
+﻿Circle Language Spec | Archive
+==============================
 
-Web Applications
-----------------
+Framework | Web Applications
+----------------------------
 
 You also have to be able to generate web applications in J Data.

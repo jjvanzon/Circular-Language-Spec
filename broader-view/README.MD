@@ -57,7 +57,7 @@ These are various draft texts that may once describe a story, ideas about how th
 
     - The new computer language is described, but how to go through code step by step or debug it has not been covered yet. This documentation may cover how debugging is implemented inside the environment of the new computer language. For now it only contains loose ideas about it. Nothing like this has been developed yet.
 
-- ## [Fundamental Principles Loose Ideas](fundamental-principles-loose-ideas.md)
+- ## [Fundamental Principles | Loose Ideas](fundamental-principles-loose-ideas.md)
 
     - Might contain loose ideas that might once be spread across "Exchangeability Principles", "Extensibility Principles" and "Achievability Principles".
 

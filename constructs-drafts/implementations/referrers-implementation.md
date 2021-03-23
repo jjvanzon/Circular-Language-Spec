@@ -1,8 +1,8 @@
-﻿Circle Language Construct Drafts | Relationships
-================================================
+﻿Circle Language Construct Drafts | Implementations
+==================================================
 
-Referrers Implementation
-------------------------
+Relationships | Referrers Implementation
+-----------------------------------------
 
 `[ Out of Scope ]`
 

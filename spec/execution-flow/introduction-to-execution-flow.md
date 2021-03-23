@@ -1,8 +1,8 @@
-﻿Circle Language Spec
-====================
+﻿Circle Language Spec | Execution Flow
+=====================================
 
-Execution Flow
---------------
+Introduction
+------------
 
 `[ Preliminary documentation ]`
 
@@ -100,4 +100,3 @@ You can do this by defining references to the clauses on a higher level. This wi
 See the articles *Esthetic Reference* and *Automatic Containment* for more about those subjects.
 
 It is a coincidence, that a diamond was already used, to express a *decision* in many types of control-flow diagram, that already existed before this new computer language. It turns out, that using the existing syntax for calling commands, passing along command references as parameters, works perfectly for a clear way to express execution flow.
-

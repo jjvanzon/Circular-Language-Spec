@@ -1,8 +1,8 @@
-﻿Circle Language Spec
-====================
+﻿Circle Language Spec | Pointers
+===============================
 
-Code Concepts Extended
-----------------------
+From Framework | Code Concepts Extended
+---------------------------------------
 
 `[ Preliminary documentation ]`
 

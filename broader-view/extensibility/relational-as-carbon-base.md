@@ -1,5 +1,5 @@
-﻿Circle Language Broader View | Extensibility Principles
-=======================================================
+﻿Circle Language Broader View | Extensibility
+============================================
 
 Relational As Carbon Base
 -------------------------

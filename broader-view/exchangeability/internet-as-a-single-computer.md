@@ -1,5 +1,5 @@
-﻿Circle Language Broader View | Exchangeability Principles
-=========================================================
+﻿Circle Language Broader View | Exchangeability
+==============================================
 
 The Internet as a Single Computer
 ---------------------------------

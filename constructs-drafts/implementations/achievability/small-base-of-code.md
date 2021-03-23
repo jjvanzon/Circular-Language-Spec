@@ -1,8 +1,8 @@
-﻿Circle Language Broader View | Achievability Principles
-=======================================================
+﻿Circle Language Construct Drafts | Implementations
+==================================================
 
-Small Base of Code
-------------------
+Achievability | Small Base of Code
+----------------------------------
 
 `[ Out of Scope ]`
 

@@ -1,6 +1,9 @@
-﻿`[ Deprecated documentation ]`
+﻿Circle Language | Construct Drafts
+==================================
 
-`This is a previous attempt to make Circle Language Spec from 2004.`
+`[ Deprecated documentation ]`
+
+*Previous attempt at making a Circle Language Spec from 2004.*
 
 Symbol Language | Basic
 =======================

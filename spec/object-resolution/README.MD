@@ -4,7 +4,7 @@ Circle Language Spec
 Object Resolution Articles
 --------------------------
 
-- [Introduction](object-resolution-introduction.md)
+- [Loose Ideas](object-resolution-loose-ideas.md)
 - [Overriding (not written yet)](overriding-not-written-yet.md)
 - [Overloading](overloading.md)
 - [Shadowing, Texts to Incorporate](shadowing-texts-to-incorporate.md)

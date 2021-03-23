@@ -1,12 +1,12 @@
 ﻿Circle Language | Construct Drafts
 ==================================
 
+Special Access
+--------------
+
 `[ Preliminary documentation ]`
 
 (From the original Symbol documentation)
-
-Special Access
---------------
 
 ### Access Ways
 

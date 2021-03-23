@@ -1,10 +1,12 @@
-﻿Circle Language Construct Drafts | Errors & Warnings
-====================================================
+﻿Circle Language | Construct Drafts 
+==================================
 
-Loose Ideas
------------
+Errors & Warnings
+-----------------
 
 `[ Preliminary documentation ]`
+
+### Loose Ideas
 
 Ik moet Booleans HasErrors en HasWarnings hebben en ik moet de Errors en warnings terug kunnen geven op een bepaalde manier.  
 Ik moet ook opvangen dat een top level menu geen separator kan zijn en een separator geen children kan hebben.
@@ -43,7 +45,7 @@ Much of the ideas have to be moved from *Design Time = Run Time* to here while D
 
 JJ
 
-### Compiler ‘Pitfalls’ ( Errors )
+#### Compiler ‘Pitfalls’ ( Errors )
 
 - In Visual Basic 6 komt een interface als member benaderen door de compiler heen, terwijl Visual Basic 6 crasht als je de reference werkelijk benadert.
 - Pitfall: Selection List Chain Must Be Consecutive
@@ -61,6 +63,6 @@ JJ
     - Visual Basic keywords gebruikt voor elementen.
 - Check of er geen dubbele klassen in zitten (wel het specificeren toelaten, om vrij te kunnen blijven editen)
 
-### Out of the Original Symbol Documentation
+#### Out of the Original Symbol Documentation
 
 Als je een te supplyen procedure reference (pure virtual function, pure overridable) niet invult, dan heeft hij van zichzelf waarschijnlijk geen inhoud. Als je hem dan aanroept gebeurt er gewoon niks. Eigenlijk zou dan misschien ook bij niet gecreëerde objecten moeten gebeuren: je roept hem wel aan maar er gebeurt gewoon niks. Dat voorkomt foutmeldingen, maar het is eigenlijk niet de bedoeling. Of kan je erop bouwen. Misschien is het een keuze die je maakt als programmeur. Nou moet ik zeggen dat ik in mijn code er altijd voor kies dat als er iets 'verkeerds' wordt aangeroepen, dat er dan gewoon NIKS gebeurt. Er gaan niks fout, nee er gebeurt gewoon niks.

@@ -1,8 +1,8 @@
-﻿Circle Language Construct Drafts | System Objects
-=================================================
+﻿Circle Language | Construct Drafts
+==================================
 
-Ancestry
---------
+Ancestry Terms
+--------------
 
 `[ Deprecated documentation ]`
 

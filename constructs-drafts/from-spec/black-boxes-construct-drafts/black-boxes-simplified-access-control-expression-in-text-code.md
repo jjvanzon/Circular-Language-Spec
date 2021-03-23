@@ -1,8 +1,8 @@
-﻿Circle Language Construct Drafts | Black Boxes
-==============================================
+﻿Circle Language Construct Drafts | From Spec
+============================================
 
-Simplified Access Control Expression in Text Code
--------------------------------------------------
+Black Boxes | Simplified Access Control Expression in Text Code
+---------------------------------------------------------------
 
 `[ Preliminary documentation ]`
 

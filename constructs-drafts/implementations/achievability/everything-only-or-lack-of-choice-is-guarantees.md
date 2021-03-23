@@ -1,8 +1,8 @@
-﻿Circle Language Broader View | Achievability Principles
-=======================================================
+﻿Circle Language Construct Drafts | Implementations
+==================================================
 
-Everything Only (Lack Of Choice = Guarantees)
----------------------------------------------
+Achievability | Everything Only (Lack Of Choice = Guarantees)
+-------------------------------------------------------------
 
 `[ Out of Scope ]`
 

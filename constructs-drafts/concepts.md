@@ -1,14 +1,16 @@
-﻿Circle Language Construct Drafts | Concepts
-===========================================
+﻿Circle Language | Construct Drafts
+==================================
 
-Loose Ideas
------------
+Concepts
+--------
 
 `[ Preliminary documentation ]`
 
+### Loose Ideas
+
 *This is unfinished documentation of lower quality. It only has unfinished descriptions and loose ideas.*
 
-### Concepts
+#### Concepts
 
 *This brainstorm was written in the context of efforts to program a prototype app 'Circle 3'.*
 
@@ -55,7 +57,7 @@ I have an adequate brainstorm here about how things should be and I am confident
 
 P.S.: Concepts can probably also have their own code, that does not really extend other objects, but is called upon by other objects. However that will be implemented, this will not be a problem.
 
-### Loose Ideas
+#### Loose Ideas
 
 A Concept not only can extend an item, but can also extend a class definition.  
 Preferably keep the extension a Concept imposes under a subobject. Don’t merge the concept into the rest of the item.
@@ -153,7 +155,7 @@ Concepts are about extension.
 
 JJ
 
-### Concepts & Principles
+#### Concepts & Principles
 
 A Concept is a piece of software that can be applied to *any* existing object or system. A clear characteristic of it is that it operates using the reflective data of an object or system. This makes it possible for features of software that would otherwise be intrinsic to the program, to be plugged into any existing system.
 
@@ -172,7 +174,7 @@ and how they should be expressed in diagram code.
 
 But I still need something to make extend the language with concepts that alter access, in the ways required.
 
-### More Ideas
+#### More Ideas
 
 Concepts / aspects,  
 2008-12-24 

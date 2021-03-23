@@ -1,8 +1,8 @@
-﻿Circle Language Construct Drafts | Access Control
-=================================================
+﻿Circle Language | Construct Drafts
+==================================
 
-Loose Ideas
------------
+Access Control Loose Ideas
+--------------------------
 
 `[ Preliminary documentation ]`
 

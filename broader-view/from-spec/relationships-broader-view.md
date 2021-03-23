@@ -1,8 +1,8 @@
-﻿Circle Language | Broader View
-==============================
+﻿Circle Language Broader View | From Spec
+========================================
 
-Relationships Broader View
---------------------------
+Relationships | Broader View
+----------------------------
 
 `[ Preliminary documentation ]`
 

@@ -1,5 +1,5 @@
-﻿Circle Language Broader View | Other Topics
-===========================================
+﻿Circle Language | Broader View
+==============================
 
 Automatic Object Formation
 --------------------------

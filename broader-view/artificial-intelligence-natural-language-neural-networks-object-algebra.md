@@ -1,5 +1,5 @@
-﻿Circle Language | Broader View | Other Topics
-=============================================
+﻿Circle Language | Broader View
+==============================
 
 Artificial Intelligence, Natural Language, Neural Networks, Object Algebra
 --------------------------------------------------------------------------

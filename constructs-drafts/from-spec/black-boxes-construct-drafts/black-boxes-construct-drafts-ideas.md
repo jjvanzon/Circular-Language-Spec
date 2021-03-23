@@ -1,5 +1,5 @@
-﻿Circle Language Construct Drafts | Black Boxes
-==============================================
+﻿Circle Language Construct Drafts | From Spec
+============================================
 
 Black Boxes Construct Drafts Ideas
 ----------------------------------

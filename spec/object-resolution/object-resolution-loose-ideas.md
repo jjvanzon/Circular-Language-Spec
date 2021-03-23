@@ -1,8 +1,8 @@
-﻿Circle Language Spec
-====================
+﻿Circle Language Spec | Object Resolution
+========================================
 
-Object Resolution
------------------
+Loose Ideas
+-----------
 
 `[ Preliminary documentation ]`
 
@@ -13,9 +13,7 @@ Note that the Inheritance chapter might have content about Object Resolution top
 
 JJ
 
-### Loose Ideas
-
-#### Inheritance en Overloading (overloaded default properties)
+### Inheritance en Overloading (overloaded default properties)
 
 2008-06-11
 
@@ -49,9 +47,9 @@ Disambiguaten moet dus toch in zowel het diagram als in text code. Als je verwij
 
 JJ
 
-#### From the Original Symbol Documentation
+### From the Original Symbol Documentation
 
-##### Procedure Resolution
+#### Procedure Resolution
 
 The following methods let a parent mess with the procedures of a child:
 
@@ -65,7 +63,7 @@ Overloading, shadowing and merging are about which procedure to call if several 
 
 Overriding and exclusion are techniques equally useful in both diagram code and text code. The others: overloading, merging and shadowing, are mostly useful in text code.
 
-###### Overriding
+##### Overriding
 
 Overriding means that a parent can replace a procedure of its child by another. A child decides whether a procedure of his is overridable or not.
 
@@ -85,11 +83,11 @@ Overridden procedures are called by the child and that way they’re a means for
 
 An overridable procedure that is only for communication to the parent is left empty by the child and is only filled in by the parent. This kind of overridable procedure is therefore also called a virtual procedure of the child.
 
-###### Exclusion
+##### Exclusion
 
 Exclusion is already covered extensively, but it can also be regarded a procedure resolution technique. A parent can exclude members from a published object or base object.
 
-###### Overloading
+##### Overloading
 
 < Overloaded objects>
 
@@ -145,7 +143,7 @@ When you change a parameter to an object of a different type, then the call line
 
 < I need pictures with that. >
 
-###### Shadowing
+##### Shadowing
 
 < Can shadowing change so that the target of a line  is changed at run time automatically because of shadowing? If that’s so then shadowing is a way in which text code affects the behavior of the diagram. Same shit problem after compilation no text identifiers anymore >
 
@@ -179,7 +177,7 @@ I.A is inaccessible outside the parent, for the parent has chosen to shadow it.
 
 A member is automatically shadowed if the parent of a triangle defines a procedure with exactly the same characteristics as the triangle’s procedure. The parent can freely shadow any member of the child.
 
-###### Merging
+##### Merging
 
 When a procedure has the same name and configuration of public members then in text code there is no way to distinguish calls to either procedure. What happens automatically is that the *‘nearest’* member *shadows* the member *further* away.
 

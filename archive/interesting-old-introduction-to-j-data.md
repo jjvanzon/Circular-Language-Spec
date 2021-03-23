@@ -1,5 +1,8 @@
-﻿Interesting Old Introduction To J Data
-======================================
+﻿Circle Language | Archive
+=========================
+
+Interesting Old Introduction To J Data
+--------------------------------------
 
 *2005-08-31*
 
@@ -31,9 +34,7 @@ So using J Data is quite easy: you define the *logical* data elements and how th
 
 Even though you can use J Data Structure for all your data, it is still possible to directly use the basic data structures provided by J Lists and Trees.
 
-
-Summary
--------
+### Summary
 
 - Basic Data structures: lists and trees
 - Common interface for lists

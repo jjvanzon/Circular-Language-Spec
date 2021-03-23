@@ -1,8 +1,8 @@
-﻿Circle Language Broader View | Achievability Principles
-=======================================================
+﻿Circle Language Construct Drafts | Implementations
+==================================================
 
-Programming Language Programmed Within Itself
----------------------------------------------
+Achievability | Programming Language Programmed Within Itself
+-------------------------------------------------------------
 
 `[ Out of Scope ]`
 

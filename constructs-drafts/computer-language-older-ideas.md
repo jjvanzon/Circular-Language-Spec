@@ -1,8 +1,8 @@
 ﻿Circle Language | Construct Drafts
 ==================================
 
-Old Ideas
----------
+Older Ideas
+-----------
 
 `[ Preliminary documentation ]`
 

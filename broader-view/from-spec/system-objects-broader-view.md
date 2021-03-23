@@ -1,8 +1,8 @@
-﻿Circle Language | Broader View
-==============================
+﻿Circle Language Broader View | From Spec
+========================================
 
-System Objects Broader View
----------------------------
+System Objects | Broader View
+-----------------------------
 
 `[ Preliminary documentation ]`
 

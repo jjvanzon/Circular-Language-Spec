@@ -1,10 +1,10 @@
-﻿Circle Language Broader View | Achievability
-============================================
+﻿Circle Language Construct Drafts | Implementations
+==================================================
 
-Loose Ideas
------------
+Achievability | Loose Ideas
+---------------------------
 
-`[ Preliminary documentation ]`
+`[ Out of Scope ]`
 
 Achievability Principles,  
 2008-10-16

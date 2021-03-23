@@ -1,5 +1,5 @@
-﻿Circle Language Broader View | Exchangeability Principles
-=========================================================
+﻿Circle Language Broader View | Exchangeability
+==============================================
 
 Flat & Structured Interchange Loose Ideas
 -----------------------------------------

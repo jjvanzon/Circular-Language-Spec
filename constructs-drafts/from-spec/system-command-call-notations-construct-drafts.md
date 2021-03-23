@@ -1,8 +1,8 @@
-﻿Circle Language Construct Drafts | System Objects
-=================================================
+﻿Circle Language Construct Drafts | From Spec
+============================================
 
-System Command Call Notations Construct Drafts
-----------------------------------------------
+System Objects | System Command Call Notations Construct Drafts
+---------------------------------------------------------------
 
 `[ Deprecated documentation ]`
 

@@ -1,8 +1,8 @@
-﻿Circle Language Broader View | Black Boxes
-==========================================
+﻿Circle Language Broader View | From Spec
+========================================
 
-Loose Ideas
------------
+Black Boxes Broader View | Loose Ideas
+--------------------------------------
 
 `[ Preliminary documentation ]`
 

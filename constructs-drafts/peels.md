@@ -1,5 +1,5 @@
-﻿Circle Language Construct Drafts | Diagram Expression
-=====================================================
+﻿Circle Language | Construct Drafts
+==================================
 
 Peels
 -----

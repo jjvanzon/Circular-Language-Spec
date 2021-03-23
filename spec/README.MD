@@ -1,6 +1,9 @@
 Circle Language Spec
 ====================
 
+Contents
+--------
+
 - [Introduction](introduction.md)
 - [Overview](overview.md)
 - [Basic Diagram Elements](basic-diagram-elements.md)
@@ -60,7 +63,7 @@ Circle Language Spec
     - [Inheritance Loose Ideas](inheritance/inheritance-loose-ideas.md)
 - [Type Control](type-safety-genericity-explicit.md)
 - Object Resolution
-    - [Introduction](object-resolution/object-resolution-introduction.md)
+    - [Loose Ideas](object-resolution/object-resolution-loose-ideas.md)
     - [Overriding (not written yet)](object-resolution/overriding-not-written-yet.md)
     - [Overloading](object-resolution/overloading.md)
     - [Shadowing, Texts to Incorporate](object-resolution/shadowing-texts-to-incorporate.md)

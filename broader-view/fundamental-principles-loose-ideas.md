@@ -1,8 +1,8 @@
-﻿Circle Language Broader View | Fundamental Principles
-=====================================================
+﻿Circle Language | Broader View
+==============================
 
-Loose Ideas
------------
+Fundamental Principles | Loose Ideas
+------------------------------------
 
 `[ Preliminary documentation ]`
 

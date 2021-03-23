@@ -1,8 +1,8 @@
-﻿Circle Language | Construct Drafts
-==================================
+﻿Circle Language Construct Drafts | Implementations
+==================================================
 
-Implementation of System Commands
----------------------------------
+System Commands Implementation
+------------------------------
 
 `[ Out of Scope ]`
 

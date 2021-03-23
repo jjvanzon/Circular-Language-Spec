@@ -2,7 +2,7 @@ Circle Language Spec
 ====================
 
 Events Articles
------------------
+---------------
 
 - [Events](events.md)
 - [System Events](system-events.md)
