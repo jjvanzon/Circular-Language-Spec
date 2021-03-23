@@ -405,7 +405,7 @@ An oval shape or ring might be drawn through two lines:
 
 ![](images/Basic%20Diagram%20Elements.055.png)
 
-It would mean, that the symbols have a special relationship to eachother. How this might be applied might come to light in other articles. It could be applied to the concept of *automatically synchronized bidirectional relationships*.
+It would mean, that the symbols have a special relationship to each other. How this might be applied might come to light in other articles. It could be applied to the concept of *automatically synchronized bidirectional relationships*.
 
 This notation may be a preferred alternative over the *Line Merge* and *Symbol Merge* notations introduced next.
 
