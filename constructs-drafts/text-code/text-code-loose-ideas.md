@@ -1243,3 +1243,96 @@ Computer Language,
 Text code is not leading anymore.
 
 JJ
+
+### Parsing
+
+Onderdeelomschrijvingen opsplitsen in criteria
+
+First you split up the string into sequences of characters of the same category. A character can belong to multiple categories.
+
+Then you use this information to compare it to a specification containing a sequence of wildcards:
+
+- Exact string
+- Or wildcard:
+    - Category: specific or not specific
+    - Length: specific (?) or not length specific (`*`), between lengths (`? ???` or `?? *`)
+- Not'ness
+- Or'ness
+
+Then a set of findings can be built up.
+
+The findings can be extended with a replacement to correct the format of things.
+
+Let's take this nomenclature:
+
+```
+!
+
+=...
+=*...
+
+?
+*
+@
+*@
+#
+*#
+a
+*a
+.
+*.
+_
+
+ch.12352->
+->Ch.1423452
+
+=*-
+=>
+c
+h
+*_
+.
+*_
+*n
+
+=*-    =>    c    h    *_    .    *_    *#
+
+->Ch . 13242
+-->cH.1
+
+~=
+~c~
+~h~
+~* ~
+~.~
+~* ~
+~*n~
+~=*-~
+~=>~
+```
+
+Splitting starts with categorizing characters.
+
+Categories could be:
+
+- numeric
+- alphabetic
+- punctuation
+
+Uppercase and accents are approached with characters categories. A a ? â á à Á à Â å a A Å ? can be seen as the same category so they will all be interpreted as 'a'.
+
+-----
+
+In Symbol, when you use public objects, direction is ambiguous. Also, an object in ActiveX is actually a property. Why is it a circle in my case then? Why isn't a property an object then? oh. No. Getting an object is actually a procedure, but you use it as if it's just an object. When you can set it, then that's a definite procedure. Darn. I have to revise Symbol. It's not that good this way.
+
+-----
+
+For string manipulations:
+
+When you want to do two manipulations that require you to go through all characters you could use a single traverse function which you give an array of references to functions so that you only loop once, yet apply two string transformations. For instance, making the letter case of names proper and removing every third space.
+
+More details are involved, but that's the general idea
+
+-----
+
+Perhaps there's an optimization to be derived from that: merging loops
