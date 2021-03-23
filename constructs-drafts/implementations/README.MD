@@ -26,6 +26,10 @@ Here might be some of the topics that could be found here:
 
     - Ideas about this topic, that might not belong in the spec of the language, but are more like an application of it.
 
+- ### [Implementation Attempt 2002](implementation-attempt-2002.md)
+
+    - Document about a more serious attempt to make a programming environment that would use the Circle notation.
+
 - ### [Optimization](optimization.md)
 
     - May cover optimization algorithms, that might be integrated into the new computer language. For now this is considered not so important to think about. The text might just be loose ideas.

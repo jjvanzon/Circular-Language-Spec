@@ -1,16 +1,14 @@
 ﻿Circle Language | Construct Drafts
 ==================================
 
-Older Ideas
------------
+Implementation Attempt 2002
+---------------------------
 
 `[ Preliminary documentation ]`
 
 ### Development Notes
 
 #### Symbol Development Notes
-
-Stepping through a procedure without seeing that you enter a whole tree out of procedures, should be a standard stepping mode.
 
 ### Introduction
 
