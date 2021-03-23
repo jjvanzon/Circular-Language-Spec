@@ -93,7 +93,7 @@ Exclusion is already covered extensively, but it can also be regarded a procedur
 
 < A procedure can also have multiple interfaces by using triangle symbols. This enables the possibility to have multiple parameter configurations for the same procedure. >
 
-< This is an example of how text code can affect the behavior of the diagram. Call line automatically changes when parameters of different types are assigned. Oh, shit, after compilation the text identifiers might not exist anymore. Then it’s gotta become a deep system aspect the overloading, independent of text code. Text code and diagram code would simply be affected by the overloading concept. It should be like this, because of reasons discussed in the language integration chapter. >
+< This is an example of how text code can affect the behavior of the diagram. Call line automatically changes when parameters of different types are assigned. Oh no, after compilation the text identifiers might not exist anymore. Then it’s gotta become a deep system aspect the overloading, independent of text code. Text code and diagram code would simply be affected by the overloading concept. It should be like this, because of reasons discussed in the language integration chapter. >
 
 Overloading means that you give several procedures the same name, while they have a different interface. This is handy if you wish to make different variations of similar functionality.
 
@@ -145,7 +145,7 @@ When you change a parameter to an object of a different type, then the call line
 
 ##### Shadowing
 
-< Can shadowing change so that the target of a line  is changed at run time automatically because of shadowing? If that’s so then shadowing is a way in which text code affects the behavior of the diagram. Same shit problem after compilation no text identifiers anymore >
+< Can shadowing change so that the target of a line  is changed at run time automatically because of shadowing? If that’s so then shadowing is a way in which text code affects the behavior of the diagram. Same darn problem after compilation no text identifiers anymore >
 
 Shadowing is handy when you use a triangle: a base type or an extra interface implementation.
 

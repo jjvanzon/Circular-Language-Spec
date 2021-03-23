@@ -700,7 +700,7 @@ the rules I suggested above are still true: when you set input, it is meant to b
 But when you SET something of a parameter, than you are sure it is input or output.  
 Where you then GET it, is not clear. It could be far away on a higher level, or far a way on a deeper level. That’s why SETTING allows you to say something about something’s being input or output. But can the ability to set a parameter on either inside or outside exclusively tell you it is input or output?  
 What use does access control over getting have?  
-I think being able to allow a Set from the outside, and then still being able to disallow getting on the inside is stupid: it has to be gotten at some point, if only for redirection.  
+I think being able to allow a Set from the outside, and then still being able to disallow getting on the inside might be unuseful: it has to be gotten at some point, if only for redirection.  
 So those allowances should go hand in hand: if you can write it from the outside, you can read if from the inside. If you can write it on the inside, you can read it from the outside.  
 but WHERE it is then read could be somewhere totally else than directly outside or directly inside. DOES THAT count for SETTING too?
 

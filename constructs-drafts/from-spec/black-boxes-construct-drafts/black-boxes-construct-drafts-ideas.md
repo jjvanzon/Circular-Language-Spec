@@ -227,7 +227,7 @@ But this is more for automatic containment (or relations). This is the discrepan
 
 For the time being this all will be put under ‘Comparison to Traditional Black Boxing’, which is not called a *main issue* for nothing.
 
-How stupid is the older notation of public and private when you use it in the less-referential containment notation?
+How useful is the older notation of public and private anymore when you use it in the less-referential containment notation?
 
 I have to make dues with the fact, that there are two notations: one with one symbol displayed inside the other with the reverse relations implied, and a notation with one symbol displayed inside the other, but the inverted containment right next to it, and them being connected together.
 

@@ -197,11 +197,11 @@ Substituting Intel mnemonics by readable names is a good idea. Being able to use
 
 Unreal forms of instructions, forms that don't exist on the 8086, but do have a logical meaning, can have synonyms that will work. Being able to use them will help.
 
-I think that Assembly does not deserve to be used by hand. I think I should write a low level (but higher than assembly) alternative language the compiler of which looks up the fastest way to do it in assembly, so that all the damn shitty rules of assembly are hidden into the compiler and you shouldn't worry about how to optimize, because the compiler does it for you.
+I think that Assembly does not deserve to be used by hand. I think I should write a low level (but higher than assembly) alternative language the compiler of which looks up the fastest way to do it in assembly, so that all the darn rules of assembly are hidden into the compiler and you shouldn't worry about how to optimize, because the compiler does it for you.
 
 Gather up what useful things can be done with assembly instructions and use statements of useful things and let the compiler do its job.
 
-Stupid synonyms, ones stupidly long, should also be translated to the optimal equivalent, maybe even especially stupid synonyms need to do this.
+Silly synonyms, ones silly long, should also be translated to the optimal equivalent, maybe even especially silly synonyms need to do this.
 
 Perhaps there is a way to derive the synonym table from the behavior of every instruction.
 

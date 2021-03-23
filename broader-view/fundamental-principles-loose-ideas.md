@@ -350,7 +350,7 @@ It seems, that the problem with good concepts, such as Aspect Oriented Programmi
 
 Many beautiful concepts come up with in the 70's, 80's and 90's are not used, because not enough people know about it. Many of those concepts could be made part of a programming language itself, so that more people, trying out programming, are tempted to experiment with them. If they don't have it available in the language, many concepts will be forgotten about, and the whole proffession of software programming lags behind on itself.
 
-That is why I need to get myself educated about all the ideas, that already existed, so that I know how to give them a place in my own programming language. I need to converge existing ideas, and turn them into new products. That should be my job, rather than just reinventing everything. That would make me more effective in my job. I should be less individualistic. I can do much better work when I use ideas, that already existed before I was born. Those people were not stupid.
+That is why I need to get myself educated about all the ideas, that already existed, so that I know how to give them a place in my own programming language. I need to converge existing ideas, and turn them into new products. That should be my job, rather than just reinventing everything. That would make me more effective in my job. I should be less individualistic. I can do much better work when I use ideas, that already existed before I was born. Those people were not being silly.
 
 JJ
 
