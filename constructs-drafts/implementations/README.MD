@@ -30,6 +30,10 @@ Here might be some of the topics that could be found here:
 
     - Document about a more serious attempt to make a programming environment that would use the Circle notation.
 
+- ### [Implementations Loose Ideas](implementations-loose-ideas.md)
+
+    - Uncategorized ideas about implementations.
+
 - ### [Optimization](optimization.md)
 
     - May cover optimization algorithms, that might be integrated into the new computer language. For now this is considered not so important to think about. The text might just be loose ideas.

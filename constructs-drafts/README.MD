@@ -66,10 +66,6 @@ This documentation may contain drafts of ideas that might not become part of the
 
     - Concurrency might occur when several running processes or users would access the same data at the same time. This may result in several problems. There might be several candidate mechanisms to help with concurrency problems. Which is the best, might not be clear. This article may contain quite some ideas about it, but they might still be under construction. The article *Internet As A Single Computer* might shed light on the problem better. The *Input Output* concept might at one point also offer a method to resolve concurrency issues.
 
-- ### [Construct Drafts Loose Ideas](construct-drafts-loose-ideas.md)
-
-    - Uncategorized ideas.
-
 - ### [Conversions](conversions.md)
 
     - When an object’s state is assigned, and the state comes from an object with perhaps a different class, the assigned data may need to be converted. The conversion might be performed by a conversion command. Conversion commands might be considered system commands. New conversion commands might be introduced into the system. When objects would not match on assignment, implicit conversion may take place. The right conversion command might be found by means of *Object Resolution* (see *Object Resolution).* Conversion commands might also be called *explicitly*. The Conversions article might only contain a brief description of the idea. The details might be worked out later.
