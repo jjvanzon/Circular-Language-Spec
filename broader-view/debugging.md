@@ -25,3 +25,7 @@ Zoals in andere programmeertalen in de autocomplete list bij elk item staat of h
 -----
 
 Direct code voorbeelden en help onder transparent popup bij member.
+
+-----
+
+Stepping through a procedure without seeing that you enter a whole tree out of procedures, should be a standard stepping mode.
