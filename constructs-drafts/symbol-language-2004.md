@@ -3,7 +3,7 @@
 
 `[ Deprecated documentation ]`
 
-*Previous attempt at making a Encircle Language Spec from 2004.*
+*Previous attempt at making an Encircle Language Spec from 2004.*
 
 Symbol Language | Basic
 =======================

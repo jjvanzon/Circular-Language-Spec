@@ -780,7 +780,7 @@ Details about parameters `can` be found in `the` *Parameters* articles.
 ### Exchangeability Between Commands & Objects
 
 << commands compared to objects >>  
-In some programming languages, commands might not be exchangeable with objects, but be totally separate constructs. But in the Encircle, commands could be seen as objects, that just happen to be executable.
+In some programming languages, commands might not be exchangeable with objects, but be totally separate constructs. But in Encircle, commands could be seen as objects, that just happen to be executable.
 
 Using some programming languages a process might be implemented as a procedure. Sometimes a procedure might become more complex. It might be an option to then rewrite a procedure to an object, whose purpose could be to execute that procedure. This object may then hide complexity of the input and output better, and might better hides the complexity of the procedure itself. An object in some programming languages might offer a way to split up a procedure into separate steps, without seeing that on the outside. Turning a procedure into an object may make linking to it more flexible. For instance you might plug a new process into an already existing system, that was not aware of this procedure. That might not be easily possible, unless you turn a procedure into an object.
 
