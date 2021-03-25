@@ -52,7 +52,7 @@ This documentation may contain drafts of ideas that might not become part of the
 
     - The idea may have loose ends.
 
-- ### [Encircle Language Summary](circle-language-summary.md)
+- ### [Encircle Language Summary](encircle-language-summary.md)
 
     - In the future, the *Summary* article might contain a summary of all the coding concepts introduced. It is supposed to become a quick-reference card of all the concepts, with perhaps textual and diagram notation next to it, without further explanations. The whole language might be displayed in this overview.
   
