@@ -1,5 +1,5 @@
 ﻿Encircle Language Broader View | Exchangeability
-==============================================
+================================================
 
 Clear Cut Coding Principles
 ---------------------------

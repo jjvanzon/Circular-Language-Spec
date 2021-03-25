@@ -1,5 +1,5 @@
 ﻿Encircle Language Broader View | Exchangeability
-==============================================
+================================================
 
 Diagram & Text Code Expression
 ------------------------------

@@ -1,5 +1,5 @@
 ﻿Encircle Language Construct Drafts | Text Code
-============================================
+==============================================
 
 Collection Operation Literals
 -----------------------------

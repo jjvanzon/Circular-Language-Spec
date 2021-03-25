@@ -1,5 +1,5 @@
 ﻿Encircle Language Broader View | Exchangeability
-==============================================
+================================================
 
 The Internet as a Single Computer
 ---------------------------------

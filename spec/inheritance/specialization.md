@@ -1,5 +1,5 @@
 ﻿Encircle Language Spec | Inheritance
-==================================
+====================================
 
 Specialization
 --------------

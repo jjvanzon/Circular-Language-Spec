@@ -1,5 +1,5 @@
 ﻿Encircle Language Broader View | From Spec
-========================================
+==========================================
 
 Basic Diagram Elements | Broader View
 -------------------------------------

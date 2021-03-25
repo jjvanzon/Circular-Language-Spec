@@ -1,5 +1,5 @@
 ﻿Encircle Language Construct Drafts | From Spec
-============================================
+==============================================
 
 Basic Diagram Elements Construct Drafts
 ---------------------------------------

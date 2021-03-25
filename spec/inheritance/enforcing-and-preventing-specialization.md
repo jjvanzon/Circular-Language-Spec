@@ -1,5 +1,5 @@
 ﻿Encircle Language Spec | Inheritance
-==================================
+====================================
 
 Enforcing & Preventing Specialization
 -------------------------------------

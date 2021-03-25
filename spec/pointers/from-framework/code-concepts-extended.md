@@ -1,5 +1,5 @@
 ﻿Encircle Language Spec | Pointers
-===============================
+=================================
 
 From Framework | Code Concepts Extended
 ---------------------------------------

@@ -1,5 +1,5 @@
 ﻿Encircle Language Spec | Misc Diagram Topics
-==========================================
+============================================
 
 Diagram Expression Introduction
 -------------------------------

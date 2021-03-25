@@ -1,5 +1,5 @@
 ﻿Encircle Language Spec | Classes
-==============================
+================================
 
 Static
 ------
@@ -10,7 +10,7 @@ This is unfinished documentation of lower quality. It only has an unfinished des
 
 ### Preliminary Design
 
-*This brainstorm was written in the context of efforts to program a prototype app 'Encircle 3'.*
+*This brainstorm was written in the context of efforts to program a prototype app 'Circle 3'.*
 
 The new version of the new computer language will work with the basics of objects, classes and interfaces. The distinction between objects, classes and interfaces is so loose in the new language and the distinction really leans on the concepts of public / private and the concept of static. These determine the difference between objects, classes and interfaces.
 

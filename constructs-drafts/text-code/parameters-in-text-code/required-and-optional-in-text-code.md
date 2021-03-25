@@ -1,5 +1,5 @@
 ﻿Encircle Language Construct Drafts | Parameters in Text Code
-==========================================================
+============================================================
 
 Required & Optional in Text Code
 --------------------------------

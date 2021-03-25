@@ -1,5 +1,5 @@
 ﻿Encircle Language Broader View | From Spec
-========================================
+==========================================
 
 Black Boxes Broader View | Loose Ideas
 --------------------------------------

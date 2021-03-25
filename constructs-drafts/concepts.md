@@ -1,5 +1,5 @@
 ﻿Encircle Language | Construct Drafts
-==================================
+====================================
 
 Concepts
 --------
@@ -12,9 +12,9 @@ Concepts
 
 #### Concepts
 
-*This brainstorm was written in the context of efforts to program a prototype app 'Encircle 3'.*
+*This brainstorm was written in the context of efforts to program a prototype app 'Circle 3'.*
 
-The *concepts* construct will become important in the new language, only it will not be implemented yet in Encircle 3. However, Encircle 3 has to be implemented in a way that the concepts construct can later be added to it. Concepts are so important that this must be possible. So in order to feel comfortable about this I have to know more about concepts, so I am going to work out a preliminary, brainstorm-style design here.
+The *concepts* construct will become important in the new language, only it will not be implemented yet in Circle 3. However, Circle 3 has to be implemented in a way that the concepts construct can later be added to it. Concepts are so important that this must be possible. So in order to feel comfortable about this I have to know more about concepts, so I am going to work out a preliminary, brainstorm-style design here.
 
 For this I am going to look into the Creator 0.9 code in which I will see what concepts need to be capable of and I will list out what you have to be able to define inside a concept and then maybe I will get a picture of how this should look in a diagram.
 

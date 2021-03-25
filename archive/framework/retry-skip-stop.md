@@ -1,5 +1,5 @@
 Encircle Language Spec | Archive
-==============================
+================================
 
 Framework | Retry, Skip, Stop
 -----------------------------

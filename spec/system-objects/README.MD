@@ -1,5 +1,5 @@
 Encircle Language Spec
-====================
+======================
 
 System Objects Articles
 -----------------------

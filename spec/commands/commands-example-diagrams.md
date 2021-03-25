@@ -1,5 +1,5 @@
 ﻿Encircle Language Spec | Commands
-===============================
+=================================
 
 Example Diagrams
 ----------------

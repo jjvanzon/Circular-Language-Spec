@@ -1,5 +1,5 @@
 ﻿Encircle Language Broader View | From Spec
-========================================
+==========================================
 
 System Objects | Broader View
 -----------------------------

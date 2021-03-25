@@ -1,5 +1,5 @@
 Encircle Language Construct Drafts | From Spec
-============================================
+==============================================
 
 Black Boxes | Level Limitation
 ------------------------------

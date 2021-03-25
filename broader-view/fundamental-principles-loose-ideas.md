@@ -1,5 +1,5 @@
 ﻿Encircle Language | Broader View
-==============================
+================================
 
 Fundamental Principles | Loose Ideas
 ------------------------------------

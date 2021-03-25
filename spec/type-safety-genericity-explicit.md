@@ -1,5 +1,5 @@
 ﻿Encircle Language Spec
-====================
+======================
 
 Type Safety, Genericity, Explicit
 ---------------------------------

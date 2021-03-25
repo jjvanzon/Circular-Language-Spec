@@ -1,5 +1,5 @@
 Encircle Language Broader View | Exchangeability
-==============================================
+================================================
 
 Commands = Executable Object
 ----------------------------

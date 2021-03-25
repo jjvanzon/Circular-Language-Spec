@@ -1,5 +1,5 @@
 Encircle Language Spec
-====================
+======================
 
 Execution Flow Articles
 -----------------------
