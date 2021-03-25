@@ -1,4 +1,4 @@
-﻿Circle Language Broader View | Extensibility
+﻿Encircle Language Broader View | Extensibility
 ============================================
 
 Module Integration

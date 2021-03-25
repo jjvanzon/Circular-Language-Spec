@@ -1,4 +1,4 @@
-﻿Circle Language Spec
+﻿Encircle Language Spec
 ====================
 
 Object Order
@@ -10,12 +10,12 @@ This is unfinished documentation of lower quality. It only has unfinished descri
 
 ### Brainstorm
 
-*This brainstorm was written in the context of efforts to program a prototype app 'Circle 3'.*
+*This brainstorm was written in the context of efforts to program a prototype app 'Encircle 3'.*
 
 This section is here to augment the functional design of the object order concept. Object order is not a difficult concept. If objects have a certain sequence order, there are several basic data structures facilitating putting the objects in a certain order. That is not the problem here. The problem with object order is the notation. I recall that several notations were proposed, but no definite one was chosen. Actually Object Order is not a problem. It is not like there is no solution for it, it is just that there are too many solutions / too many possible notations. It would indeed be nice to determine the perfect notation.  
 Ordering is positioning, so the best way of expressing ordering objects would seem to position them in a certain order. The diagram notation is all about expressing systematics with the their most direct depiction possible, so I think the only possible way to express object order is through positioning. This may conflict with automatic positioning of diagram elements. So … then you have to see if it does.
 
-A strategy you could have is to ignore the expression of object order for now, and pick one later when the rest is up and running. You can have to base up and running and ignore the expression of this concept. So the concept is implemented, but the expression is not. Yet another limitation to impose onto the first version of Circle 3.
+A strategy you could have is to ignore the expression of object order for now, and pick one later when the rest is up and running. You can have to base up and running and ignore the expression of this concept. So the concept is implemented, but the expression is not. Yet another limitation to impose onto the first version of Encircle 3.
 
 ### Order Matters
 

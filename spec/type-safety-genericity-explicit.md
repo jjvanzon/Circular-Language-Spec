@@ -1,4 +1,4 @@
-﻿Circle Language Spec
+﻿Encircle Language Spec
 ====================
 
 Type Safety, Genericity, Explicit

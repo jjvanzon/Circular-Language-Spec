@@ -1,14 +1,14 @@
-﻿Circle Language | Broader View
+﻿Encircle Language | Broader View
 ==============================
 
 `[ Preliminary documentation ]`
 
-These are various draft texts that may once describe a story, ideas about how this Circle language might be used in practice.
+These are various draft texts that may once describe a story, ideas about how this Encircle language might be used in practice.
 
 - ## [Exchangeability](exchangeability)
 
     - The *Exchangeability Principles* describes things in the area of computer technology, that are traditionally separate, that might be combined to form one thing.
-    - Perhaps the most important goal of the Circle programming language, is to melt together all computer technology disciplines, providing one clear language, that can express anything, and that everybody can understand. The *Exchangeability Principles* might make a lot of promises about the new language.
+    - Perhaps the most important goal of the Encircle programming language, is to melt together all computer technology disciplines, providing one clear language, that can express anything, and that everybody can understand. The *Exchangeability Principles* might make a lot of promises about the new language.
 
 - ## [Expression](expression)
 
@@ -24,8 +24,8 @@ These are various draft texts that may once describe a story, ideas about how th
 
 - ## [Extensibility](extensibility)
  
-    - Perhaps the most important goal of the Circle programming language, is to melt together all computer technology disciplines, providing one clear language, that can express anything, and that everybody can understand. The *Extensibility Principles* may make a lot of promises about the new language.
-    - The *extensibility principles* may cover the techniques that make sure existing software is extensible and make sure, that *Circle language* may integrate with the rest of the world of computer technology. *Circle* resources might be accessible to other systems and existing resources on the internet might be accessible in *Circle*.
+    - Perhaps the most important goal of the Encircle programming language, is to melt together all computer technology disciplines, providing one clear language, that can express anything, and that everybody can understand. The *Extensibility Principles* may make a lot of promises about the new language.
+    - The *extensibility principles* may cover the techniques that make sure existing software is extensible and make sure, that *Encircle language* may integrate with the rest of the world of computer technology. *Encircle* resources might be accessible to other systems and existing resources on the internet might be accessible in *Encircle*.
 
 - ## [From Spec](from-spec)
 
@@ -33,7 +33,7 @@ These are various draft texts that may once describe a story, ideas about how th
 
 - ## [Integration](integration)
 
-    - Circle language might be a candidate for a different way to operate computers. This folder will contain any documentation about integration modules, that *Circle* has to offer in order to integrate with the rest of the world of computer technology. *Circle* is not meant to live on its own, but existing resources on the internet should be accessible, when working with the new language. Each integration module will facilitate two goals: accessing other systems using *Circle* and the ability to access *Circle* resources from inside other systems. As such you can access other file systems using *Circle*, and you can also access *Circle* resources as if it was a file system. That example would be called *File System Integration*. As such there will be systems such as *Database Integration*, *SOAP Integration*, *ODBC Integration*, *File Types* and *Module System Integration*. *Database Integration* will allow you to access *Circle* as if it were relational database, but will also allow you to access relational database systems using *Circle*. *SOAP Integration* will expose *Circle* resources through a SOAP interface, but also allow you to access other SOAP interfaces using *Circle*. *ODBC Integration* will make *Circle* support connecting to it through ODBC, but will also allow you to access relational database resources using ODBC inside *Circle*. *File Types* will allow you to export or expose *Circle* resources as different commonly used file types, but also allows you to access files of such types from within *Circle*. *Module System Integration* means, that you could for instance use ActiveX resources, Java, COM, .NET and other module systems using *Circle*. Also, *Circle* resources could be linked to as if they were for instance COM or any other module systems. Also, there will be *Protocols*, which will enable several internet protocols, so that you can access resources that are exposed through those protocols using Circle. Protocols such as HTTP, SMTP, POP3, FTP, etcetera. It is considered quite important, that *Circle* in the future will give access to all those resources as well as be accessible by other systems through all kinds of different protocols.
+    - Encircle language might be a candidate for a different way to operate computers. This folder will contain any documentation about integration modules, that *Encircle* has to offer in order to integrate with the rest of the world of computer technology. *Encircle* is not meant to live on its own, but existing resources on the internet should be accessible, when working with the new language. Each integration module will facilitate two goals: accessing other systems using *Encircle* and the ability to access *Encircle* resources from inside other systems. As such you can access other file systems using *Encircle*, and you can also access *Encircle* resources as if it was a file system. That example would be called *File System Integration*. As such there will be systems such as *Database Integration*, *SOAP Integration*, *ODBC Integration*, *File Types* and *Module System Integration*. *Database Integration* will allow you to access *Encircle* as if it were relational database, but will also allow you to access relational database systems using *Encircle*. *SOAP Integration* will expose *Encircle* resources through a SOAP interface, but also allow you to access other SOAP interfaces using *Encircle*. *ODBC Integration* will make *Encircle* support connecting to it through ODBC, but will also allow you to access relational database resources using ODBC inside *Encircle*. *File Types* will allow you to export or expose *Encircle* resources as different commonly used file types, but also allows you to access files of such types from within *Encircle*. *Module System Integration* means, that you could for instance use ActiveX resources, Java, COM, .NET and other module systems using *Encircle*. Also, *Encircle* resources could be linked to as if they were for instance COM or any other module systems. Also, there will be *Protocols*, which will enable several internet protocols, so that you can access resources that are exposed through those protocols using Encircle. Protocols such as HTTP, SMTP, POP3, FTP, etcetera. It is considered quite important, that *Encircle* in the future will give access to all those resources as well as be accessible by other systems through all kinds of different protocols.
 
 - ## [Artificial Intelligence, Natural Language, Neural Networks, Object Algebra](artificial-intelligence-natural-language-neural-networks-object-algebra.md)
 

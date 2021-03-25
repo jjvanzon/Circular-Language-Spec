@@ -1,4 +1,4 @@
-﻿Circle Language Spec
+﻿Encircle Language Spec
 ====================
 
 System Objects
@@ -8,9 +8,9 @@ System Objects
 
 ### Introduction
 
-This chapter tries to demonstrate internal workings of symbols in Circle.
+This chapter tries to demonstrate internal workings of symbols in Encircle.
 
-Circle Language Spec's aim might be to show the *notation* of Circle, but this chapter tries to look at the *internal* *workings* as if it were an actual program. In doing so, finer details of Circle might start to show. Specifically, usages of the *system interface* notation might come to light.
+Encircle Language Spec's aim might be to show the *notation* of Encircle, but this chapter tries to look at the *internal* *workings* as if it were an actual program. In doing so, finer details of Encircle might start to show. Specifically, usages of the *system interface* notation might come to light.
 
 This hypothetical implementation supposes, that systems might be composed of *system objects*. System objects might be *actual* objects that systems would be running on.
 
@@ -129,7 +129,7 @@ The terms above indicate different kinds of *system objects*, except for maybe t
 
 #### Summary
 
-All the objects in this imaginary implementation of Circle might live as these system objects.
+All the objects in this imaginary implementation of Encircle might live as these system objects.
 
 Here is a recap of terms introduced in this section:
 
@@ -264,7 +264,7 @@ Sometimes an object's normal members might be shown:
 
 ![](images/1.%20System%20Objects.022.png)
 
-In this hypothetical Circle system, all objects might be system objects under the hood. This might include normal objects, object references and lists. They might all be system objects deeper down. An alternative to viewing the normal members like above might be for the members of a system object to be shown instead. This might be done by breaking open the inner workings of an object and show its *system interface*:
+In this hypothetical Encircle system, all objects might be system objects under the hood. This might include normal objects, object references and lists. They might all be system objects deeper down. An alternative to viewing the normal members like above might be for the members of a system object to be shown instead. This might be done by breaking open the inner workings of an object and show its *system interface*:
 
 ![](images/1.%20System%20Objects.023.png)
 
@@ -628,8 +628,8 @@ Different choices could be made here. Perhaps a distinction between __Reference_
 
 #### Performance Concerns?
 
-Someone might wonder critically if Circle could run fast if running on these heavy weight system objects, instead of a regularly compiled code. One option might be that these system objects could function as a certain interpreted mode, that might compile / optimize into faster machine code. System objects might be an intermediate format of some sort. Perhaps a similar distinction as text code and machine code can be seen here.
+Someone might wonder critically if Encircle could run fast if running on these heavy weight system objects, instead of a regularly compiled code. One option might be that these system objects could function as a certain interpreted mode, that might compile / optimize into faster machine code. System objects might be an intermediate format of some sort. Perhaps a similar distinction as text code and machine code can be seen here.
 
 #### Preliminariness of the System Interface Notation
 
-The system interface notation's basics might not be preliminary. But the content of a system interface might not be precisely as specified in this documentation. One idea is that Circle might run on system objects proposed here. And that depending on how these system objects are implemented precisely, the public members of a system object could form the content of a system interface. Design choices were made in this documentation, which can influence the notation of system interface members. But hopefully it shed light on the kind of things the system interface might be used for, what roles it might play and its notation basics.
+The system interface notation's basics might not be preliminary. But the content of a system interface might not be precisely as specified in this documentation. One idea is that Encircle might run on system objects proposed here. And that depending on how these system objects are implemented precisely, the public members of a system object could form the content of a system interface. Design choices were made in this documentation, which can influence the notation of system interface members. But hopefully it shed light on the kind of things the system interface might be used for, what roles it might play and its notation basics.

@@ -1,4 +1,4 @@
-﻿Circle Language Construct Drafts | From Spec
+﻿Encircle Language Construct Drafts | From Spec
 ============================================
 
 Relationships Construct Drafts
@@ -12,7 +12,7 @@ Relationships Construct Drafts
 
 ### Bidirectional Relationships
 
-The notation suggested here was moved away from the Circle Language Spec in favor of another notation.
+The notation suggested here was moved away from the Encircle Language Spec in favor of another notation.
 
 Starting with:
 

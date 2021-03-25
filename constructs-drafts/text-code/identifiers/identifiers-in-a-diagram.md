@@ -1,4 +1,4 @@
-﻿Circle Language Construct Drafts | Text Code
+﻿Encircle Language Construct Drafts | Text Code
 ============================================
 
 Identifiers in a Diagram

@@ -1,4 +1,4 @@
-﻿Circle Language Construct Drafts | Diagram Expression
+﻿Encircle Language Construct Drafts | Diagram Expression
 =====================================================
 
 Misc Pictures

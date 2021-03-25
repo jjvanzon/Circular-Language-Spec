@@ -1,4 +1,4 @@
-﻿Circle Language | Broader View
+﻿Encircle Language | Broader View
 ==============================
 
 Extensibility
@@ -6,9 +6,9 @@ Extensibility
 
 `[ Preliminary documentation ]`
 
-Perhaps a central goal of the Circle programming language could be, to melt together computer technology disciplines, aiming to provide one clear language, that might express anything, and that everybody might understand. The *Extensibility Principles* may shape these hopes for the language.
+Perhaps a central goal of the Encircle programming language could be, to melt together computer technology disciplines, aiming to provide one clear language, that might express anything, and that everybody might understand. The *Extensibility Principles* may shape these hopes for the language.
 
-The *extensibility principles* may cover techniques that might make existing software extensible and make sure, that *Circle language* may integrate with the rest of the world of computer technology. *Circle* resources might be accessible to other systems and existing resources on the internet might be accessible in *Circle*. Not all these articles might be finished yet. More may be added in the future. The *Extensibility* folder may contains the following articles:
+The *extensibility principles* may cover techniques that might make existing software extensible and make sure, that *Encircle language* may integrate with the rest of the world of computer technology. *Encircle* resources might be accessible to other systems and existing resources on the internet might be accessible in *Encircle*. Not all these articles might be finished yet. More may be added in the future. The *Extensibility* folder may contains the following articles:
 
 - ### [Concepts As External Modules](concepts-as-external-modules.md)
 
@@ -22,7 +22,7 @@ The *extensibility principles* may cover techniques that might make existing sof
 
     - Turning concepts into external modules instead of polluting all the code of a program with it, might makes systems more easily extensible.
 
-    - Perhaps this might only work for systems that have a way to integrate with Circle.
+    - Perhaps this might only work for systems that have a way to integrate with Encircle.
 
     - This article may still consist of just loose ideas.
 
@@ -44,4 +44,4 @@ The *extensibility principles* may cover techniques that might make existing sof
 
 - ### [Relational As Carbon Base](relational-as-carbon-base.md)
 
-    - The *Relational As Carbon Base* principle means that when making a program, you should primarily think in terms of relations between classes. The relations and classes are used as a base. They are used by *concepts*, for instance to automatically generate a user interface for the system. Also other concepts like *Undo* and *Copy & Paste* can automatically be applied to the relational structure. The concepts are tied to the relational structure. The relational structure forms the carbon base of the program, onto which other atom groups can be attached. It might not look like that exactly in the diagrams, but conceptually there might look like there is a parallel. In the Circle diagrams, things might tend to be placed inside each other, rather than being plugged in on the outside.
+    - The *Relational As Carbon Base* principle means that when making a program, you should primarily think in terms of relations between classes. The relations and classes are used as a base. They are used by *concepts*, for instance to automatically generate a user interface for the system. Also other concepts like *Undo* and *Copy & Paste* can automatically be applied to the relational structure. The concepts are tied to the relational structure. The relational structure forms the carbon base of the program, onto which other atom groups can be attached. It might not look like that exactly in the diagrams, but conceptually there might look like there is a parallel. In the Encircle diagrams, things might tend to be placed inside each other, rather than being plugged in on the outside.

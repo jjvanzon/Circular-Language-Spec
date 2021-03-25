@@ -1,4 +1,4 @@
-﻿Circle Language | Construct Drafts
+﻿Encircle Language | Construct Drafts
 ==================================
 
 Text Code
@@ -6,9 +6,9 @@ Text Code
 
 `[ Deprecated documentation ]`
 
-Traditionally systematics of a program might be expressed by means of text code. But in Circle language, systematics might be stored in another way for instance as binary interlinked objects. Text code may be a mere *expression* of those stored objects. A *Text Code* sub-module might translate those systematics to text code. The text code might be adapted, which may result in changes to the stored  objects, rather than the text code’s being literally stored.
+Traditionally systematics of a program might be expressed by means of text code. But in Encircle language, systematics might be stored in another way for instance as binary interlinked objects. Text code may be a mere *expression* of those stored objects. A *Text Code* sub-module might translate those systematics to text code. The text code might be adapted, which may result in changes to the stored  objects, rather than the text code’s being literally stored.
 
-Exactly how the textual code might look in Circle, might not have been decided yet, because at one time it was considered more important to work out the language *conceptually* along with a *diagram notation*, than to work out the *textual notation*. Experimental version 2.0 of a new computer language had a text code, but it was still quite basic.
+Exactly how the textual code might look in Encircle, might not have been decided yet, because at one time it was considered more important to work out the language *conceptually* along with a *diagram notation*, than to work out the *textual notation*. Experimental version 2.0 of a new computer language had a text code, but it was still quite basic.
 
 The articles might not have been finished. They might be throw-togethers of ideas sort of like cut up leftovers from older documentation.
 
@@ -28,7 +28,7 @@ You might find the following content here:
 
 - ### [Access Operators](access-operators.md)
 
-    - This article might just be a throw-together of ideas. Traditional text codes may have access operators to access an object, a class, a procedure, arrays, pointers or values. Because other languages may have access operators, the documentation about Circle might also have an *Access Operators* article, which may make an attempt to figure out what place access operators might have in the Circle language. In C++ documentation access operators seem to be introduced like they have an analogy to mathematical operators:  
+    - This article might just be a throw-together of ideas. Traditional text codes may have access operators to access an object, a class, a procedure, arrays, pointers or values. Because other languages may have access operators, the documentation about Encircle might also have an *Access Operators* article, which may make an attempt to figure out what place access operators might have in the Encircle language. In C++ documentation access operators seem to be introduced like they have an analogy to mathematical operators:  
 
     ```
         .    Member selection (object)
@@ -41,7 +41,7 @@ You might find the following content here:
         ::   Global
     ```
 
-    - Access operators seem hard to place inside a mathematical system. It may be difficult to find an analogy between mathematical operators and such access literals. However, a clearer view on what place access operators might have inside Circle language might be welcome. Access operators seem to be abstract character representations of system commands, such as __Object Get, Class Get, Item Get, Value Get__ and __Value Set__. All these system commands seem to be explained in the *System Objects* chapter of the *Spec*. Inside Circle language, access operators might just be textual expressions of calls to those system commands. What might not yet be clarified inside this unfinished article is how the access operators might textually look inside the new computer language.
+    - Access operators seem hard to place inside a mathematical system. It may be difficult to find an analogy between mathematical operators and such access literals. However, a clearer view on what place access operators might have inside Encircle language might be welcome. Access operators seem to be abstract character representations of system commands, such as __Object Get, Class Get, Item Get, Value Get__ and __Value Set__. All these system commands seem to be explained in the *System Objects* chapter of the *Spec*. Inside Encircle language, access operators might just be textual expressions of calls to those system commands. What might not yet be clarified inside this unfinished article is how the access operators might textually look inside the new computer language.
 
 - ### [Assignment in Text Code](assignment-in-text-code.md)
 
@@ -57,7 +57,7 @@ You might find the following content here:
 
 - ### Half-Case-Sensitive Identifiers
 
-    - When typing an identifier to identify an element of the system, it might need to be *recognized* by the system. Other programming languages may recognize names either *case-sensitive* or *case-insensitive*. For the Circle language the recognition of identifiers might become *half*-case-sensitive: the recognition might only pay attention to upper case or lower case letters, if needed. Only when two identifiers with the same name may be within scope with different case usage, a case *sensitive* match might need to be made. This may combine two concepts into one. It might relieve possible confusion that that may arise from case-sensitive name matching, and may reintroduce it only when required.
+    - When typing an identifier to identify an element of the system, it might need to be *recognized* by the system. Other programming languages may recognize names either *case-sensitive* or *case-insensitive*. For the Encircle language the recognition of identifiers might become *half*-case-sensitive: the recognition might only pay attention to upper case or lower case letters, if needed. Only when two identifiers with the same name may be within scope with different case usage, a case *sensitive* match might need to be made. This may combine two concepts into one. It might relieve possible confusion that that may arise from case-sensitive name matching, and may reintroduce it only when required.
 
     - This topic might not have its own article, but the issue may also have been explained in a documentation folder called *Identifiers*.
 
@@ -74,9 +74,9 @@ You might find the following content here:
         &   Address of
     ```
 
-    - The dereference operator seems to get the target (value) of a reference. The address-of operator seems to retrieve the memory address of a value or object. It might be considered what place this may have in Circle.
+    - The dereference operator seems to get the target (value) of a reference. The address-of operator seems to retrieve the memory address of a value or object. It might be considered what place this may have in Encircle.
 
-    - These pointer operators, like access operators, might turn out to be calls to system commands, such as __Object Get, Class Get, Item Get, Value Get__ and __Value Set__. All these system commands may be explained inside the *System Objects* part of the *Spec*, not necessarily here. It might be an idea to try and have full availability of everything you might want to do with pointers inside Circle language. Which system commands might substitute dereference and address-of operators in C++ might be figured out. And whether or not more pointer operations may be welcome in the Circle language.
+    - These pointer operators, like access operators, might turn out to be calls to system commands, such as __Object Get, Class Get, Item Get, Value Get__ and __Value Set__. All these system commands may be explained inside the *System Objects* part of the *Spec*, not necessarily here. It might be an idea to try and have full availability of everything you might want to do with pointers inside Encircle language. Which system commands might substitute dereference and address-of operators in C++ might be figured out. And whether or not more pointer operations may be welcome in the Encircle language.
 
 - ### [Qualified Event Names](qualified-event-names.md)
 

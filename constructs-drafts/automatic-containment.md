@@ -1,4 +1,4 @@
-﻿Circle Language | Construct Drafts
+﻿Encircle Language | Construct Drafts
 ==================================
 
 Automatic Containment
@@ -949,7 +949,7 @@ JJ
 
 < Triangles can converge types, right? Give a symbol three types? Think about that. >  
 < I have to use sheer triangles for *pure* overlap establishment. >  
-< Circle structure and triangle structure as separate hierarchies. One was originally  called containment hierarchy, while the other was called the inheritance hierarchy. >  
+< Encircle structure and triangle structure as separate hierarchies. One was originally  called containment hierarchy, while the other was called the inheritance hierarchy. >  
 < Procedure and object hierarchy regarded separately... >
 
 Members can be grouped by different criteria. Groups can overlap, therefore triangles can overlap. This goes against object oriented programming, because objects can’t overlap.
@@ -1023,7 +1023,7 @@ That way the three hierarchies can be made independent of each other. The exampl
 
 The example above, though, does not establish convergence in the type structure. The type structure is as follows:
 
-< Circle in circle >
+< Encircle in circle >
 
 To completely lift up the branch out you can do the following:
 

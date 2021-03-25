@@ -1,4 +1,4 @@
-﻿Circle Language Construct Drafts | From Spec
+﻿Encircle Language Construct Drafts | From Spec
 ============================================
 
 Black Boxes | Simplified Access Control Expression in Text Code

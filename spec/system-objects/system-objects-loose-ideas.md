@@ -1,4 +1,4 @@
-﻿Circle Language Spec | System Objects
+﻿Encircle Language Spec | System Objects
 =====================================
 
 Loose Ideas

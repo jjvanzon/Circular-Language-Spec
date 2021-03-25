@@ -1,4 +1,4 @@
-﻿Circle Language | Construct Drafts
+﻿Encircle Language | Construct Drafts
 ==================================
 
 Special Access
@@ -128,8 +128,8 @@ You can’t see in the picture above if the called square is referenced through 
 
 | ![](images/0.%20Special%20Access.013.png) | ![](images/0.%20Special%20Access.014.png) | ![](images/0.%20Special%20Access.015.png) |
 |:---:|:---:|:---:|
-| *Accessed through the Circle:* | *Accessed through the Circle and the Triangle:* | *Also accessed through the Circle and the Triangle:* |
-| __*Circle . Procedure*__ | __*Circle . Triangle . Procedure*__ | __*Circle . Triangle . Procedure*__ |
+| *Accessed through the Encircle:* | *Accessed through the Encircle and the Triangle:* | *Also accessed through the Encircle and the Triangle:* |
+| __*Encircle . Procedure*__ | __*Encircle . Triangle . Procedure*__ | __*Encircle . Triangle . Procedure*__ |
 
 In text code you can see the difference all the more. I’ve put the text code under the diagrams above.
 

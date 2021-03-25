@@ -1,4 +1,4 @@
-﻿Circle Language Broader View | Integration
+﻿Encircle Language Broader View | Integration
 ==========================================
 
 Text Codes
@@ -14,7 +14,7 @@ The *More Text Codes* documentation folder is genuinely a throw-together of idea
 
 - ### Additional Text Codes
 
-    - *Additional Text Codes* covers two more types of text codes, that might be essential in a certain possible application of Circle where it runs as a stand-alone engine. They are considered so important, because without them, the language might not be completely usable: *Math Code* and *Assembly Language*.
+    - *Additional Text Codes* covers two more types of text codes, that might be essential in a certain possible application of Encircle where it runs as a stand-alone engine. They are considered so important, because without them, the language might not be completely usable: *Math Code* and *Assembly Language*.
 
 - ### Integrating Text Codes
 

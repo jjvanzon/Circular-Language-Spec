@@ -1,4 +1,4 @@
-﻿Circle Language Spec | Events
+﻿Encircle Language Spec | Events
 =============================
 
 System Events

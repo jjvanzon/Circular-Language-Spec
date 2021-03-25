@@ -1,4 +1,4 @@
-Circle Language | Construct Drafts
+Encircle Language | Construct Drafts
 ==================================
 
 Implementations
@@ -28,7 +28,7 @@ Here might be some of the topics that could be found here:
 
 - ### [Implementation Attempt 2002](implementation-attempt-2002.md)
 
-    - Document about a more serious attempt to make a programming environment that would use the Circle notation.
+    - Document about a more serious attempt to make a programming environment that would use the Encircle notation.
 
 - ### [Implementations Loose Ideas](implementations-loose-ideas.md)
 

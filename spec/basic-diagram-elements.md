@@ -1,4 +1,4 @@
-﻿Circle Language Spec
+﻿Encircle Language Spec
 ====================
 
 Basic Diagram Elements
@@ -226,7 +226,7 @@ A triangular mark:
 
 ![](images/Basic%20Diagram%20Elements.014.png)
 
-may be used to indicate that a symbol that might own the line would be __Protected__. Protected is something that can play a role in the concept of inheritance. In the Circle language it might mean that a symbol might only be accessible if it is placed inside a triangle.
+may be used to indicate that a symbol that might own the line would be __Protected__. Protected is something that can play a role in the concept of inheritance. In the Encircle language it might mean that a symbol might only be accessible if it is placed inside a triangle.
 
 Here is how that might look if it is connected to a symbol:
 
@@ -450,7 +450,7 @@ You'd have to look at the usage of the sub-objects of the objects of that class,
 
 Doesn't a sub-object have a reference to the class's sub-object or does the parent object only have a reference to the class?
 
-\> 2020-06-13: I now think, that a sub-object of an object does not have a reference to the sub-object of a class. I guess the relationship is implied by form/shape/name/aspect correspondence. I get how that might be bothersome. Then there might be relationships in the diagram that are expressed with neither lines nor containment. Maybe it is something to not be bothered by. Maybe it is something to mention as another type of relationship between symbols. There might be a spot for it in Basic Diagram Elements for that, next to the other types of relationships between symbols that might be named there. Maybe 'it is just a notation' might be the way to think about it. There might not be a precise mathematical definition of why shapes are used and the choice of containment vs association is also left as an arbitrary design choice so why would this not be ok as something arbitrary about the notation? If it turns out to be bothersome, maybe a different kind of line to express a different kind of correspondence could be used. But that may be something not to make part of the initial release of Circle language spec.
+\> 2020-06-13: I now think, that a sub-object of an object does not have a reference to the sub-object of a class. I guess the relationship is implied by form/shape/name/aspect correspondence. I get how that might be bothersome. Then there might be relationships in the diagram that are expressed with neither lines nor containment. Maybe it is something to not be bothered by. Maybe it is something to mention as another type of relationship between symbols. There might be a spot for it in Basic Diagram Elements for that, next to the other types of relationships between symbols that might be named there. Maybe 'it is just a notation' might be the way to think about it. There might not be a precise mathematical definition of why shapes are used and the choice of containment vs association is also left as an arbitrary design choice so why would this not be ok as something arbitrary about the notation? If it turns out to be bothersome, maybe a different kind of line to express a different kind of correspondence could be used. But that may be something not to make part of the initial release of Encircle language spec.
 
 A curly line (like a spring) may be introduced. And optionality of them being displayed, since form/shape/name/position(?) may imply the connections already
 

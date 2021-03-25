@@ -1,4 +1,4 @@
-﻿Circle Language Broader View | From Spec
+﻿Encircle Language Broader View | From Spec
 ========================================
 
 Relationships | Broader View
@@ -10,7 +10,7 @@ Relationships | Broader View
 
 `When* all` relationships `are` bidirectional, a side-effect might be that everything might end up at `the*` same level hierarchically, since `all the*` relationships `are` mutual.
 
-That might bump with `the*` containment structures that might look nice in Circle notation.
+That might bump with `the*` containment structures that might look nice in Encircle notation.
 
 A proposed solution might be to `specify` a direction to these relationships, `so` that `the*` 'inferior' part of `the*` relationship might be put at a lower level of containment, restoring `the*` use of a containment structure. Perhaps a 1 to n relationships might `already` imply direction: parent on top, children below.
 

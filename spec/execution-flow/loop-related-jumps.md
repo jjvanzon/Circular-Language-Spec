@@ -1,4 +1,4 @@
-﻿Circle Language Spec | Execution Flow
+﻿Encircle Language Spec | Execution Flow
 =====================================
 
 Loop-Related Jumps

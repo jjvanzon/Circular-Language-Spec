@@ -1,4 +1,4 @@
-﻿Circle Language Spec | Misc Diagram Topics
+﻿Encircle Language Spec | Misc Diagram Topics
 ==========================================
 
 Diagram Expression Introduction

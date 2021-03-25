@@ -1,9 +1,9 @@
-﻿Circle Language | Construct Drafts
+﻿Encircle Language | Construct Drafts
 ==================================
 
 `[ Deprecated documentation ]`
 
-*Previous attempt at making a Circle Language Spec from 2004.*
+*Previous attempt at making a Encircle Language Spec from 2004.*
 
 Symbol Language | Basic
 =======================
@@ -368,7 +368,7 @@ The following is the basic notation for a symbol that implements two separate in
 
 A triangle represents *the implementation of an interface*. Triangles *are*, however, often called *interfaces* of the object. Don’t start to think that *only triangles* are interfaces. Any symbol can function as an interface. A triangle is the *implementation* of an interface. 
 
-#### Triangle Versus Circle
+#### Triangle Versus Encircle
 
 A triangle, just like the circle, is a:
 
@@ -428,7 +428,7 @@ Because a triangle basically merges with its container, it’s like you aren’t
 
 You can also put a circle around members to group them. That changes the way you access the members, though. You’d have to qualify the access with the name of the grouping circle.
 
-#### A Circle Contains But Interface Implementations
+#### A Encircle Contains But Interface Implementations
 
 Each circle implements at least one interface. Nothing is defined outside the context of an interface implementation so inside a circle nothing else can be defined but a set of interface implementations and the interface implementations contain the rest.
 
@@ -4275,8 +4275,8 @@ You can’t see in the picture above if the called square is referenced through 
 |                                |                                   |                                   |
 |:------------------------------:|:---------------------------------:|:---------------------------------:|
 | ![](images/Symbol%20Language%20(2004).362.png) | ![](images/Symbol%20Language%20(2004).363.png) | ![](images/Symbol%20Language%20(2004).364.png) |
-| *Accessed through the Circle:* |        *Accessed through*         |      *Also accessed through*      |
-|                                |  *the Circle and the Triangle:*   |  *the Circle and the Triangle:*   |
+| *Accessed through the Encircle:* |        *Accessed through*         |      *Also accessed through*      |
+|                                |  *the Encircle and the Triangle:*   |  *the Encircle and the Triangle:*   |
 |     __Circle . Procedure__     | __Circle . Triangle . Procedure__ | __Circle . Triangle . Procedure__ |
 
 In text code you can see the difference all the more. I’ve put the text code under the diagrams above.

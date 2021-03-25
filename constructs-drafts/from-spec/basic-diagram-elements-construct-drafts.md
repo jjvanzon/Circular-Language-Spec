@@ -1,4 +1,4 @@
-﻿Circle Language Construct Drafts | From Spec
+﻿Encircle Language Construct Drafts | From Spec
 ============================================
 
 Basic Diagram Elements Construct Drafts
@@ -17,7 +17,7 @@ Basic Diagram Elements Construct Drafts
 
 This might be (possibly complicated) text for justification of a diamond symbol rather than a call line. It also seems sort of a mystery when something is symbolized with a shape, and when by a line drawn with a certain style.
 
-If there is nothing to point to, while there is an aspect to express visually, that may exclude a line from being used and may 'require' a shape, but then why one time the same shape with a different line type versus a different shape? The choice 'different shape' vs. 'shape drawn with different line style' seems not easy to rationally pinpoint. Maybe it could be used as food for thought when 'abusing diagram expression' might be worked out some day perhaps. Then the idea was a systematic overview all methods of symbolizations used in Circle vs possibility to express aspects of systematics using that symbolization.
+If there is nothing to point to, while there is an aspect to express visually, that may exclude a line from being used and may 'require' a shape, but then why one time the same shape with a different line type versus a different shape? The choice 'different shape' vs. 'shape drawn with different line style' seems not easy to rationally pinpoint. Maybe it could be used as food for thought when 'abusing diagram expression' might be worked out some day perhaps. Then the idea was a systematic overview all methods of symbolizations used in Encircle vs possibility to express aspects of systematics using that symbolization.
 
 ##### Executions & Parameters Brainstorm
 

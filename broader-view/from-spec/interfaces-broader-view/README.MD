@@ -1,4 +1,4 @@
-Circle Language Broader View | From Spec
+Encircle Language Broader View | From Spec
 ========================================
 
 Interfaces | Broader View

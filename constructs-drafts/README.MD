@@ -1,4 +1,4 @@
-﻿Circle Language | Construct Drafts
+﻿Encircle Language | Construct Drafts
 ==================================
 
 Overview
@@ -24,15 +24,15 @@ This documentation may contain drafts of ideas that might not become part of the
 
 - ### [Input Output](input-output)
 
-    - The concept of input and output may be well-known by computer experts, yet the concept does not seem very present in both object oriented program code or relational database. Something simply seems to ‘become’ input or output, arbitrarily chosen by the programmer, but it might not be explicitly *defined* in program code, what is the input and what is the output: it could be a return value returned by a procedure, a value passed along to another procedure, but it could also be reads, writes deletes and inserts into a database. In Circle language, input and output may get a more prominent position. It may offer opportunities for resolution of concurrency and parallelism as well as improved security perhaps.
+    - The concept of input and output may be well-known by computer experts, yet the concept does not seem very present in both object oriented program code or relational database. Something simply seems to ‘become’ input or output, arbitrarily chosen by the programmer, but it might not be explicitly *defined* in program code, what is the input and what is the output: it could be a return value returned by a procedure, a value passed along to another procedure, but it could also be reads, writes deletes and inserts into a database. In Encircle language, input and output may get a more prominent position. It may offer opportunities for resolution of concurrency and parallelism as well as improved security perhaps.
 
 - ### [Text Code](text-code)
 
-    - Traditionally systematics of a program might be expressed by means of text code. But in Circle language, systematics might be stored in another way for instance as binary interlinked objects. Text code may be a mere *expression* of those stored objects. A *Text Code* sub-module might translate those systematics to text code. The text code might be adapted, which may result in changes to the stored objects, rather than the text code’s being literally stored.
+    - Traditionally systematics of a program might be expressed by means of text code. But in Encircle language, systematics might be stored in another way for instance as binary interlinked objects. Text code may be a mere *expression* of those stored objects. A *Text Code* sub-module might translate those systematics to text code. The text code might be adapted, which may result in changes to the stored objects, rather than the text code’s being literally stored.
 
     - One of the ideas would be that each language element’s textual representation might be considered the language element’s *literal*, that could be read out and assigned. The idea was, that however large the construct, its text code might still just be a literal, be it composed of the literals of its sub-constructs. This is just an idea, but it might be the way to go.
 
-    - Exactly how the textual code might look in Circle, might not have been decided yet, because at one time it was considered more important to work out the language *conceptually* along with a *diagram notation*, than to work out the *textual notation*. Experimental version 2.0 of a new computer language had a text code, but it was still quite basic.
+    - Exactly how the textual code might look in Encircle, might not have been decided yet, because at one time it was considered more important to work out the language *conceptually* along with a *diagram notation*, than to work out the *textual notation*. Experimental version 2.0 of a new computer language had a text code, but it was still quite basic.
 
     - The articles might not have been finished. They might be throw-togethers of ideas sort of like cut up leftovers from older documentation.
 
@@ -44,7 +44,7 @@ This documentation may contain drafts of ideas that might not become part of the
 
     - Here terms may be described like "parent", "child", "ancestor" and about 50 variations of them or so.
      
-    - The topic might not be essential for describing the Circle language and may also be a bit subjective.
+    - The topic might not be essential for describing the Encircle language and may also be a bit subjective.
 
 - ### [Automatic Containment](automatic-containment.md)
 
@@ -52,11 +52,11 @@ This documentation may contain drafts of ideas that might not become part of the
 
     - The idea may have loose ends.
 
-- ### [Circle Language Summary](circle-language-summary.md)
+- ### [Encircle Language Summary](circle-language-summary.md)
 
     - In the future, the *Summary* article might contain a summary of all the coding concepts introduced. It is supposed to become a quick-reference card of all the concepts, with perhaps textual and diagram notation next to it, without further explanations. The whole language might be displayed in this overview.
   
-    - This summary is not made yet, but might be created when the design of the Circle language might be more complete. It may be decided to leave out such a summary, perhaps if the added value would be questioned.
+    - This summary is not made yet, but might be created when the design of the Encircle language might be more complete. It may be decided to leave out such a summary, perhaps if the added value would be questioned.
 
 - ### [Concepts](concepts.md)
 
@@ -90,7 +90,7 @@ This documentation may contain drafts of ideas that might not become part of the
 
 - ### [Summaries of the C and C++ Languages](summaries-of-the-c-and-cpp-languages.md)
 
-    - Attempts to summarize other programming languages, like C and C++, in the form of bulleted lists. They seem to be made around the year 2004 during an analysis of the grammar of C and C++ to perhaps compare it to this Circle programming language.
+    - Attempts to summarize other programming languages, like C and C++, in the form of bulleted lists. They seem to be made around the year 2004 during an analysis of the grammar of C and C++ to perhaps compare it to this Encircle programming language.
 
 - ### [Symbol Language (2004)](symbol-language-2004.md)
 

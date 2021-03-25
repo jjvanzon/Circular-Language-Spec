@@ -1,4 +1,4 @@
-﻿Circle Language Spec | Interfaces
+﻿Encircle Language Spec | Interfaces
 =================================
 
 Edge Cases

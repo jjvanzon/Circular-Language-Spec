@@ -1,4 +1,4 @@
-﻿Circle Language Spec
+﻿Encircle Language Spec
 ====================
 
 Relationships
@@ -221,7 +221,7 @@ As such, a bidirectional relationship might have three parts:
 
 #### Implementation
 
-The idea would be that that there might be software libraries that have code that make the relationship synchronization work. Circle Language Spec currently only aims to supply a notation for it. There should be freedom of choice how it would be implemented. The notational choices made here, and implementation details might not always resonate with each other. Variations on notations may be possible. The one described here might just lay a foundation.
+The idea would be that that there might be software libraries that have code that make the relationship synchronization work. Encircle Language Spec currently only aims to supply a notation for it. There should be freedom of choice how it would be implemented. The notational choices made here, and implementation details might not always resonate with each other. Variations on notations may be possible. The one described here might just lay a foundation.
 
 The implementation procedures for relationship synchronization might be expressed in a diagram, when a *system interface* of a symbol would be displayed.
 

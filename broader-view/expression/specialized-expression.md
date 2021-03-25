@@ -1,4 +1,4 @@
-﻿Circle Language Broader View | Expression
+﻿Encircle Language Broader View | Expression
 =========================================
 
 Specialized Expression 

@@ -1,4 +1,4 @@
-﻿Circle Language Spec | Inheritance
+﻿Encircle Language Spec | Inheritance
 ==================================
 
 Deeper Specialization

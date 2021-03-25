@@ -1,4 +1,4 @@
-﻿Circle Language Spec | Black Boxes
+﻿Encircle Language Spec | Black Boxes
 ==================================
 
 Black Boxes Unfinished

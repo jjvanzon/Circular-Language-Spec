@@ -1,4 +1,4 @@
-﻿Circle Language Spec | Misc Diagram Topics
+﻿Encircle Language Spec | Misc Diagram Topics
 ==========================================
 
 Diagram Metrics
@@ -8,9 +8,9 @@ Diagram Metrics
 
 This is unfinished documentation of lower quality. It only has unfinished descriptions and loose ideas.
 
-### Diagram Metrics in Circle 3
+### Diagram Metrics in Encircle 3
 
-*This text was written in the context of efforts to program a prototype app 'Circle 3'.*
+*This text was written in the context of efforts to program a prototype app 'Encircle 3'.*
 
 The diagrams of the new computer language are to be drawn out automatically. If they weren’t, this would decrease the usability of the language. These diagram metrics as they are called will be functionally described first not being burdened by any mathematical implications, and after that the math to do so will be designed.
 

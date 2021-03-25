@@ -1,4 +1,4 @@
-﻿Circle Language Spec | Pointers
+﻿Encircle Language Spec | Pointers
 ===============================
 
 From Framework | Pointer Circularity

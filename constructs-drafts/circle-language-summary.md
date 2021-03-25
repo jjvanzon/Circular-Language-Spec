@@ -1,7 +1,7 @@
-﻿Circle Language | Construct Drafts
+﻿Encircle Language | Construct Drafts
 ==================================
 
-Circle Language Summary
+Encircle Language Summary
 -----------------------
 
 `[ Deprecated documentation ]`

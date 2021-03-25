@@ -1,4 +1,4 @@
-﻿Circle Language | Broader View
+﻿Encircle Language | Broader View
 ==============================
 
 Exchangeability
@@ -8,9 +8,9 @@ Exchangeability
 
 The *Exchangeability Principles* describes things in the area of computer technology, that are traditionally separate, that might be combined to form one thing.
 
-Perhaps a central goal of the Circle programming language might be, to melt together computer technology disciplines, aiming to provide one clear language, that might express anything, and that everybody might understand. The *Extensibility Principles* may give shape to these hopes for the language.
+Perhaps a central goal of the Encircle programming language might be, to melt together computer technology disciplines, aiming to provide one clear language, that might express anything, and that everybody might understand. The *Extensibility Principles* may give shape to these hopes for the language.
 
-This contents page will try to give a definition of each of the exchangeability principles of Circle programming language. More principles might be added in the future.
+This contents page will try to give a definition of each of the exchangeability principles of Encircle programming language. More principles might be added in the future.
 
 Some of these articles are not finished yet. The *Exchangeability Principles* folder may contain the following articles:
 

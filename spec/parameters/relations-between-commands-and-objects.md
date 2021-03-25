@@ -1,4 +1,4 @@
-﻿Circle Language Spec | Parameters
+﻿Encircle Language Spec | Parameters
 =================================
 
 Relations Between Commands & Objects

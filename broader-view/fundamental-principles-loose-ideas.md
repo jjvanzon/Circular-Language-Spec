@@ -1,4 +1,4 @@
-﻿Circle Language | Broader View
+﻿Encircle Language | Broader View
 ==============================
 
 Fundamental Principles | Loose Ideas
@@ -641,7 +641,7 @@ JJ
 Fundamental Principles,  
 2010-04-25 ~
 
-How does Aquima impose rules. No, back to Circle. Everything is possible with all the constructs available. But awareness of all the construct should inspire you to pick the right solution in the right situation. And now Aquima. You always have to pick one out of 5 first. In a way, in Circle, you always have to pick one out of 12 first, or something. You have to pick a construct... I am not going to brainstorm more about these fundamental things. I can not get my head around it right now.
+How does Aquima impose rules. No, back to Encircle. Everything is possible with all the constructs available. But awareness of all the construct should inspire you to pick the right solution in the right situation. And now Aquima. You always have to pick one out of 5 first. In a way, in Encircle, you always have to pick one out of 12 first, or something. You have to pick a construct... I am not going to brainstorm more about these fundamental things. I can not get my head around it right now.
 
 JJ
 

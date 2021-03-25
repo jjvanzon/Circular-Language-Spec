@@ -1,4 +1,4 @@
-﻿Circle Language | Broader View
+﻿Encircle Language | Broader View
 ==============================
 
 Artificial Intelligence, Natural Language, Neural Networks, Object Algebra

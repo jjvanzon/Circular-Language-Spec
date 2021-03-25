@@ -1,4 +1,4 @@
-﻿Circle Language | Archive
+﻿Encircle Language | Archive
 =========================
 
 Command As A Concept Brainstorm Texts

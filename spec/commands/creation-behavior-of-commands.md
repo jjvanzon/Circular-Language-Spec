@@ -1,4 +1,4 @@
-﻿Circle Language Spec | Commands
+﻿Encircle Language Spec | Commands
 ===============================
 
 Creation Behavior

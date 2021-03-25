@@ -1,4 +1,4 @@
-﻿Circle Language Spec | Commands
+﻿Encircle Language Spec | Commands
 ===============================
 
 Main Concepts
@@ -15,11 +15,11 @@ Commands may be objects, that so happen to be *executable*. Commands could be ac
 
 The concept of commands may boil down to a limited set of characteristics.
 
-A *square* in Circle might symbolize that the command is __not executable__.
+A *square* in Encircle might symbolize that the command is __not executable__.
 
 ![](images/1.%20Commands%20Main%20Concepts.001.png)
 
-A *diamond* in Circle may express a command that might be* __executable__.
+A *diamond* in Encircle may express a command that might be* __executable__.
 
 ![](images/1.%20Commands%20Main%20Concepts.002.png)
 
@@ -61,7 +61,7 @@ Here is an attempt to summarize these traits that commands might have:
   
 ### Derived Constructs
 
-Constructs that might be known from other programming languages, may have a reasonably unique expression using combinations of these more basic elements from Circle mentioned above. Here follows an attempt to accompany this claim with some examples.
+Constructs that might be known from other programming languages, may have a reasonably unique expression using combinations of these more basic elements from Encircle mentioned above. Here follows an attempt to accompany this claim with some examples.
 
 ### Command Definitions
 
@@ -75,7 +75,7 @@ void MyDefinition()
 }
 ```
 
-To express it in Circle, a square might be used: 
+To express it in Encircle, a square might be used: 
 
 ![](images/1.%20Commands%20Main%20Concepts.008.png)
 
@@ -196,7 +196,7 @@ void MyDefinition()
 
 The inner braces and its contents would be the code block.
 
-In Circle, a code block may be *embedded* inside another command:
+In Encircle, a code block may be *embedded* inside another command:
 
 ![](images/1.%20Commands%20Main%20Concepts.014.png)
 
@@ -244,7 +244,7 @@ void MyParentCommand()
 }
 ```
 
-In Circle it might also be a command definition contained within another command definition.
+In Encircle it might also be a command definition contained within another command definition.
 
 ![](images/1.%20Commands%20Main%20Concepts.017.png)
 
@@ -290,7 +290,7 @@ It also may look a bit like a nameless local function that you might pass a refe
 
 ![](images/1.%20Commands%20Main%20Concepts.021.png)
 
-The following was another attempt to define what a clause might be in Circle: *a command inside another command with no lines going to or from it*. That definition might not cover it. It might be just terminology quibbles. Later on it seemed to not matter much. Command-like constructs from other languages seem to be expressible within Circle perhaps in a reasonable fashion.
+The following was another attempt to define what a clause might be in Encircle: *a command inside another command with no lines going to or from it*. That definition might not cover it. It might be just terminology quibbles. Later on it seemed to not matter much. Command-like constructs from other languages seem to be expressible within Encircle perhaps in a reasonable fashion.
 
 So a clause might be expressed with:
 
@@ -323,7 +323,7 @@ Where(...)
 
 So the `...` would be the lambda expression.
 
-Honestly said, in Circle there might not be a way to distinguish it from *clauses*.
+Honestly said, in Encircle there might not be a way to distinguish it from *clauses*.
 
 ![](images/1.%20Commands%20Main%20Concepts.022.png)
 
@@ -345,7 +345,7 @@ The large square would have contents, drawn with thick lines, would represent th
 
 ### Conclusion
 
-Using the constructs for commands from Circle, it may seem circumstantial whether a command symbol could be stereotyped as a block, clause, definition, call, etc. It seems to result from the way basic language elements from Circle relate to each other. Still, it may be relevant to be aware how these symbols from Circle can be combined to represent constructs from other languages.
+Using the constructs for commands from Encircle, it may seem circumstantial whether a command symbol could be stereotyped as a block, clause, definition, call, etc. It seems to result from the way basic language elements from Encircle relate to each other. Still, it may be relevant to be aware how these symbols from Encircle can be combined to represent constructs from other languages.
 
 ### Details
 
@@ -480,7 +480,7 @@ A command reference `can also` redirect to `yet` another command reference, `cre
 ### Command Reference Edge Cases
 
 << detail >>  
-In Circle command references and their target commands could in theory be either inactive or executable.
+In Encircle command references and their target commands could in theory be either inactive or executable.
 
 ![](images/1.%20Commands%20Main%20Concepts.025.png)
 
@@ -780,13 +780,13 @@ Details about parameters `can` be found in `the` *Parameters* articles.
 ### Exchangeability Between Commands & Objects
 
 << commands compared to objects >>  
-In some programming languages, commands might not be exchangeable with objects, but be totally separate constructs. But in the Circle, commands could be seen as objects, that just happen to be executable.
+In some programming languages, commands might not be exchangeable with objects, but be totally separate constructs. But in the Encircle, commands could be seen as objects, that just happen to be executable.
 
 Using some programming languages a process might be implemented as a procedure. Sometimes a procedure might become more complex. It might be an option to then rewrite a procedure to an object, whose purpose could be to execute that procedure. This object may then hide complexity of the input and output better, and might better hides the complexity of the procedure itself. An object in some programming languages might offer a way to split up a procedure into separate steps, without seeing that on the outside. Turning a procedure into an object may make linking to it more flexible. For instance you might plug a new process into an already existing system, that was not aware of this procedure. That might not be easily possible, unless you turn a procedure into an object.
 
-In Circle though, procedures might be considered an object as is, without rewriting anything. The only difference might be that this object has the special property, that it would be *executable*.
+In Encircle though, procedures might be considered an object as is, without rewriting anything. The only difference might be that this object has the special property, that it would be *executable*.
 
-In the Circle notation, a command could have complexity hiding and linking possibilities, just like a 'normal' object. A command might for instance also *inherit* a base procedure from another command, just to name something.
+In the Encircle notation, a command could have complexity hiding and linking possibilities, just like a 'normal' object. A command might for instance also *inherit* a base procedure from another command, just to name something.
 
 A command could be structured similarly as an object. Perhaps that takes away the argument that using just procedures might be a less structured way of programming than using objects. A command might already be an object, that represents a process. It may looks like a command, but might have the capabilities of an object.
 

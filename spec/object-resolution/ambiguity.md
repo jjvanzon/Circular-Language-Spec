@@ -1,4 +1,4 @@
-﻿Circle Language Spec | Object Resolution
+﻿Encircle Language Spec | Object Resolution
 ========================================
 
 Ambiguity
