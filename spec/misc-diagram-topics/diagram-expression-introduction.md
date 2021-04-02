@@ -22,10 +22,6 @@ This folder contains the following articles:
 
 - There is not a lot of text in this documentation folder yet. This documentation folder is to contain explanations on how the shapes inside the diagram can be colored to highlight certain parts of the system. A system can be fully drawn out with diagrams not using any coloring at all, but coloring may highlight certain parts of the system. You could highlight all objects of a certain class, or you could highlight all classes, or highlight all interfaces, or highlight all objects with classes from a certain site. The possibilities for coloring are endless and you could apply coloring with an infinite possibility of conditions. In the future, a few standard colorings may prove to be particularly handy. All this coloring is for analysis purposes, to highlight certain aspects of a system. You could also just let circles be blue, squares be red, triangles be yellow, diamonds be orange, etcetera. You could just draw the outline of shapes or you could fill the shapes up. Each containment level could get its own color. You could switch between two colors on each deeper containment level. These are all sorts of beautiful possibilities for coloring.
 
-### Example Diagrams
-
-- This documentation folder contains a zip file with pictures of *example diagrams*. Some of the diagrams come from analysis of real-life situations, and they are just too inspiring to throw away, so they have been given a place here.
-
 ### Loose Ideas
 
 *The texts below are loose ideas, yet to be turned into good documentation.*
