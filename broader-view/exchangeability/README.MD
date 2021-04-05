@@ -80,6 +80,10 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
     - (There may not be a separate article for this yet.)
     
+- ### Multi-Language
+
+    - A model might be come up with for making identifiers in code and translated texts for the user a unified thing. Also error messages might be made more readable and multi-lingual or unified with the user experience in some way. This to try and uphold the idea that a user and a programmer should be much more alike.
+
 - ### System Engineering = Software Engineering
 
     - That way, the new computer language allows hardware and software developers and system engineers to work using the same language.

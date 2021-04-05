@@ -8,10 +8,6 @@ Interfaces | Broader View
 
 Ideas about this topic, perhaps less to the point but more philosophical, might be moved from the spec to here.
 
-- ### [Extensive Classification with Interfaces](extensive-classification-with-interfaces.md)
-    
-    - Extensive classification with interfaces might encompass some ideas about how to use interfaces more where otherwise you might not, so that a more detailed classification of things might emerge. This might be interesting to form some sort of semantic model. Mutuality of commands automatically leading to mutuality of interfaces might be a simpler example of an application of such an idea. Or a grouping based on what a dependent object uses. The idea might be played with, but might not be fully worked out yet.
-
 - ### [Imaginary Backward Relationships](imaginary-backward-relationships.md)
     
     - Some relationships between objects might be bidirectional. Some might not. Imaginary backward relationships might be an idea, where even when a relationship is not defined as bidirectional, you might derive the backwards relationship on the fly in certain cases, because it might be useful information. Producing the backward relationship may involve scanning part of a system in which an object might be used, perhaps sped up by some sort of caching scheme.

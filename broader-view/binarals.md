@@ -1,8 +1,8 @@
 ﻿Encircle Language | Broader View
 ================================
 
-Binaral
--------
+Binarals
+--------
 
 `[ Preliminary documentation ]`
 

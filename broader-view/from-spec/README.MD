@@ -6,7 +6,7 @@ From Spec
 
 `[ Preliminary documentation ]`
 
-Topics that may be recognizable from the *spec*, but then ideas perhaps less to the point but more philosophical.
+Topics that may be recognizable from the *spec*, but then ideas perhaps more philosophical and lesser to the point.
 
 - [Interfaces | Broader View](interfaces-broader-view)
 

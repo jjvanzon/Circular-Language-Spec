@@ -6,7 +6,7 @@ From Spec
 
 `[ Preliminary documentation ]`
 
-Topics that may be recognizable from the *spec*, but then maybe lesser worked out ideas about these topic.
+Topics that may be recognizable from the *spec*, but then maybe lesser worked out ideas about these topics.
 
 - [Black Boxes Construct Drafts](black-boxes-construct-drafts)
 
