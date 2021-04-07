@@ -6,11 +6,34 @@ The Internet as a Single Computer
 
 `[ Preliminary documentation ]`
 
-*This article is too long. It contains too many details about other topics. Those should be moved to other articles.*
+### Contents
 
-*In also break the rules of writing style, set up in the project New Computer Language Functional Design. Those rules are about doing too much of this: defining, comparing, explaining how and why, exceptional cases, implications, different uses, assumptions about the reader’s (lack of) knowledge. Those things should all be left out. You have to be more blunt when explaining a concept.*
+- [Introduction](#introduction)
+- [A unified paradigm for all digital objects](#a-unified-paradigm-for-all-digital-objects)
+- [My insecurities](#my-insecurities)
+- [A single bulk of storage](#a-single-bulk-of-storage)
+    - [Cache Layering](#cache-layering)
+- [Execution of programs running across machine boundaries](#execution-of-programs-running-across-machine-boundaries)
+- [Security](#security)
+- [Control of concurrent use](#control-of-concurrent-use)
+- [Communication between computers](#communication-between-computers)
+    - [Summary of the internet protocol](#summary-of-the-internet-protocol)
+    - [One big electronic circuit](#one-big-electronic-circuit)
+    - [Traffic](#traffic)
+    - [Uniquely identifying resources on the internet](#uniquely-identifying-resources-on-the-internet)
+    - [ID’s](#ids)
+    - [Grid Computing](#grid-computing)
+    - [Site Merging](#site-merging)
+    - [Parallel processing](#parallel-processing)
+    - [Mirroring & synchronized copies](#mirroring--synchronized-copies)
+    - [Connection Lost!](#connection-lost)
+- [Implications for other concepts](#implications-for-other-concepts)
+    - [Collection](#collection)
+- [Integration Modules](#integration-modules)
+- [Requirement Summary](#requirement-summary)
+- [Loose Ideas](#loose-ideas)
 
-*However, the concept explained in this article is important: Internet as a Single Computer.*
+### Introduction
 
 If the new code base of the new computer language does not turn the internet into a single computer, I wouldn’t call it a final version.
 

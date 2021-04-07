@@ -6,6 +6,42 @@ Static
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Introduction](#introduction)
+- [Preliminary Design](#preliminary-design)
+- [Interface-Like Static](#interface-like-static)
+- [Important Brainstorm](#important-brainstorm)
+- [Loose Ideas](#loose-ideas)
+    - [Out of the original Symbol documentation](#out-of-the-original-symbol-documentation)
+        - [Static and Creation](#static-and-creation)
+            - [Static](#static-1)
+            - [Type Creation](#type-creation)
+            - [Old](#old)
+                - [Static Objects](#static-objects)
+                    - [Type Static Objects](#type-static-objects)
+                    - [Procedure Static Objects](#procedure-static-objects)
+                    - [Module Static Objects](#module-static-objects)
+                - [Static Procedures](#static-procedures)
+                    - [Procedure Static Procedures](#procedure-static-procedures)
+                    - [Type Static Procedures](#type-static-procedures)
+                    - [Module Static Procedures](#module-static-procedures)
+                - [Type Create and Destroy](#type-create-and-destroy)
+                    - [Type Create and Destroy](#type-create-and-destroy-1)
+                    - [Module Type Create and Destroy](#module-type-create-and-destroy)
+                    - [Procedure Create and Destroy](#procedure-create-and-destroy)
+            - [Question](#question)
+            - [Old](#old-1)
+                - [Type Static](#type-static)
+                    - [Static Members](#static-members)
+                    - [Type Create and Type Destroy](#type-create-and-type-destroy)
+                    - [Type Create and Type Destroy are Static nor Non Static](#type-create-and-type-destroy-are-static-nor-non-static)
+                - [Module Static](#module-static)
+                    - [Other Issues](#other-issues)
+        - [Other ideas](#other-ideas)
+
+### Introduction
+
 This is unfinished documentation of lower quality. It only has an unfinished description of the general idea.
 
 ### Preliminary Design

@@ -6,6 +6,33 @@ Black Boxes Construct Drafts Ideas
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Misc Issues](#misc-issues)
+    - [Deeper Exclusion](#deeper-exclusion)
+- [Side-Issues](#side-issues)
+    - [Inclusion](#inclusion)
+- [May Cover Last](#may-cover-last)
+    - [Downsides to Black Boxes](#downsides-to-black-boxes)
+    - [Get For Access and Get For Copy](#get-for-access-and-get-for-copy)
+    - [Inaccessible System Aspects](#inaccessible-system-aspects)
+    - [Compared to Traditional Black Boxing](#compared-to-traditional-black-boxing)
+    - [Brainstorm](#brainstorm)
+    - [Other Brainstorm Items](#other-brainstorm-items)
+    - [Using command symbols](#using-command-symbols)
+    - [Other Details](#other-details)
+- [Might Not Cover](#might-not-cover)
+    - [Access Modifier Get & Set](#access-modifier-get--set)
+    - [Changing Access Modifiers at Run Time](#changing-access-modifiers-at-run-time)
+    - [Changing ‘can be’ class, interface or object](#changing-can-be-class-interface-or-object)
+    - [Grouped Access Control](#grouped-access-control)
+    - [Conditional Access Control](#conditional-access-control)
+    - [Delayed Creation of Object’s Privates](#delayed-creation-of-objects-privates)
+    - [Access Symbols And Accesses](#access-symbols-and-accesses)
+    - [Access Controller Parts](#access-controller-parts)
+    - [Uses of Access Controlling System Aspects](#uses-of-access-controlling-system-aspects)
+    - [Other Details](#other-details-1)
+
 ### Misc Issues
 
 In previous projects the main articles about black boxing were finished, but other subjects were left unfinished. This article contains the unfinished material of some of these topics.

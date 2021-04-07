@@ -6,6 +6,54 @@ Basic Diagram Elements
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Introduction](#introduction)
+- [Text](#text)
+- [Circles & Triangles](#circles--triangles)
+- [Squares & Diamonds](#squares--diamonds)
+- [Pentagons](#pentagons)
+- [Nonagon](#nonagon)
+- [Object Symbols](#object-symbols)
+- [Command Symbols](#command-symbols)
+- [Lines](#lines)
+- [Solid Line](#solid-line)
+- [Dashed Line](#dashed-line)
+- [Dotted Line](#dotted-line)
+- [Wavy Line](#wavy-line)
+- [Cross](#cross)
+- [Relations Between Symbols](#relations-between-symbols)
+    - [Object Reference](#object-reference)
+- [Connecting Object Symbols](#connecting-object-symbols)
+    - [Object Connection](#object-connection)
+    - [Class Connection](#class-connection)
+    - [Interface Connection](#interface-connection)
+    - [Value Connection](#value-connection)
+- [Connecting Command Symbols](#connecting-command-symbols)
+    - [Command Reference Connection](#command-reference-connection)
+    - [Command Definition Connection](#command-definition-connection)
+    - [Command Interface Connection](#command-interface-connection)
+- [Straight Mark](#straight-mark)
+- [Cross Mark](#cross-mark)
+- [Triangular Mark](#triangular-mark)
+- [Line Direction, Access Marks, Line Ownership](#line-direction-access-marks-line-ownership)
+    - [Lines Pointing Outwards](#lines-pointing-outwards)
+    - [Diamonds More Likely to Redirect](#diamonds-more-likely-to-redirect)
+    - [Access Mark Placement](#access-mark-placement)
+    - [Line Ownership](#line-ownership)
+- [Object Symbols Drawn with Different Lines](#object-symbols-drawn-with-different-lines)
+- [Command Symbols Drawn with Different Lines](#command-symbols-drawn-with-different-lines)
+- [More Suggestions for Dashed Lines](#more-suggestions-for-dashed-lines)
+    - [Commands with Dashed Lines](#commands-with-dashed-lines)
+    - [Object Structure Solid, Class Structure Dashed](#object-structure-solid-class-structure-dashed)
+    - [Other Ideas](#other-ideas)
+- [Relational Ring](#relational-ring)
+- [Line Merge](#line-merge)
+- [Symbol Merge](#symbol-merge)
+- [Loose Ideas](#loose-ideas)
+
+### Introduction
+
 This article attempts to give a more or less formal overview of elements that might appear in the diagrams.
 
 The diagrams might involve set of basic elements, that may include the following:

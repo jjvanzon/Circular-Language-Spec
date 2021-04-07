@@ -6,9 +6,17 @@ Concepts
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Loose Ideas](#loose-ideas)
+    - [Concepts](#concepts-1)
+    - [Loose Ideas](#loose-ideas-1)
+    - [Concepts & Principles](#concepts--principles)
+    - [More Ideas](#more-ideas)
+
 ### Loose Ideas
 
-*This is unfinished documentation of lower quality. It only has unfinished descriptions and loose ideas.*
+*This is unfinished documentation of possibly lower quality. It only has unfinished descriptions and loose ideas.*
 
 #### Concepts
 

@@ -6,6 +6,39 @@ Interface Aspect
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Introduction](#introduction)
+- [System Commands for the Interface Aspect](#system-commands-for-the-interface-aspect)
+    - [Interface is Both Object-Bound and Reference-Bound](#interface-is-both-object-bound-and-reference-bound)
+    - [Pointer-to-Pointer Situations](#pointer-to-pointer-situations)
+    - [Set Interface to Reference](#set-interface-to-reference)
+    - [Get Interface which is a Reference](#get-interface-which-is-a-reference)
+    - [Use Reference As Interface](#use-reference-as-interface)
+    - [The Overloads Recapitulated](#the-overloads-recapitulated)
+- [System Commands for the Interface Merging Aspect](#system-commands-for-the-interface-merging-aspect)
+- [Interface Aspect in System Interface](#interface-aspect-in-system-interface)
+    - [Object-Interface in System Interface](#object-interface-in-system-interface)
+    - [Reference-Interface in System Interface](#reference-interface-in-system-interface)
+    - [Reference-Interface in System Interface of Related List](#reference-interface-in-system-interface-of-related-list)
+    - [Interface Merging in System Interface](#interface-merging-in-system-interface)
+- [Interface Assignment Types](#interface-assignment-types)
+    - [Interface Assignment](#interface-assignment)
+    - [Interface Pointer Assignment](#interface-pointer-assignment)
+    - [Interface Assignment With Pointer Source](#interface-assignment-with-pointer-source)
+    - [Cross-Aspect Interface Assignment](#cross-aspect-interface-assignment)
+- [Interface System Command Calls](#interface-system-command-calls)
+    - [Interface - System Interface - Command Call Notation](#interface---system-interface---command-call-notation)
+    - [Simplified System Command Call Notation](#simplified-system-command-call-notation)
+    - [System Command Call Notation with Argument](#system-command-call-notation-with-argument)
+    - [Explicit Get & Set Notation](#explicit-get--set-notation)
+    - [Explicit Get & Set Arguments Notation](#explicit-get--set-arguments-notation)
+- [Interface Connectors](#interface-connectors)
+- [Interface Connections](#interface-connections)
+- [New Command with Interface Parameter](#new-command-with-interface-parameter)
+
+### Introduction
+
 While systems seem to be composed of a lot of different types of objects, all objects and types are in reality no more than a very limited set of types, that can be configured to look like other types. Those basic objects are called *system objects*. The behavior of those system objects is controlled by controlling their *system aspects*. System objects is covered in a separate chapter called *System Objects*, but there the *interface* aspect was completely left out of the story. In this part of the documentation everything about the interface aspect is laid out to make the concept of interfaces catch up with the *System Objects* story.
 
 The __Interface__ aspect allows you to control how objects look on the outside, while the insides of the objects can differ completely. Another concept which employs the word *interfaces* is an object (an interface) melting together with its container. From a systematic point of view they seem to be completely unrelated concepts, however in practice they are conjoinedly used. To distinguish them we call them the __Interface__ aspect and the __Interface Merging__ aspect. The main diagram symbolization of the __Interface__ aspect is as follows:

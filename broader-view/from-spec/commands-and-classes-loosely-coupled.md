@@ -6,6 +6,19 @@ Commands and Classes Loosely Coupled
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Concept](#concept)
+- [More Commands but Grouped by Source](#more-commands-but-grouped-by-source)
+- [Mutual Control](#mutual-control)
+- [General Notation](#general-notation)
+- [Example](#example)
+- [Parameter without a Class](#parameter-without-a-class)
+- [Parameter with a Class](#parameter-with-a-class)
+- [Line Merge](#line-merge)
+- [Summary](#summary)
+- [Commands and Classes Loosely Coupled when Object would Define Its own Class?](#commands-and-classes-loosely-coupled-when-object-would-define-its-own-class)
+
 ### Concept
 
 Objects of the same class might have a similar set of commands.

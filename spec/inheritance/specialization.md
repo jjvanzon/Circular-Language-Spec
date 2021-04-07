@@ -6,6 +6,33 @@ Specialization
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Introduction](#introduction)
+- [Specialization & Data Replacement](#specialization--data-replacement)
+- [Altering the Member Set](#altering-the-member-set)
+    - [Member Addition](#member-addition)
+    - [Member Exclusion](#member-exclusion)
+    - [Member Inclusion](#member-inclusion)
+- [Detouring Members](#detouring-members)
+    - [Disclaimer](#disclaimer)
+    - [Shadowing](#shadowing)
+    - [Overriding](#overriding)
+        - [Calling Base Class’s Version of Overridden Member](#calling-base-classs-version-of-overridden-member)
+        - [Overriding Alternative: Event Notation](#overriding-alternative-event-notation)
+        - [Discarded Intrinsic Overriding Notation](#discarded-intrinsic-overriding-notation)
+- [Altering Command Implementations](#altering-command-implementations)
+    - [Command Extension](#command-extension)
+    - [System Command Extension](#system-command-extension)
+    - [System Command Overriding](#system-command-overriding)
+    - [System Command Shadowing](#system-command-shadowing)
+    - [System Command Extension By Shadowing](#system-command-extension-by-shadowing)
+    - [System Commands Extension By Overriding (Questionable)](#system-commands-extension-by-overriding-questionable)
+    - [System Command Overriding By Extension](#system-command-overriding-by-extension)
+- [Destructive & Non-Destructive Specialization Methods](#destructive--non-destructive-specialization-methods)
+
+### Introduction
+
 There are four groups of specialization techniques that can be identified. Each will be separately explained:
 
 - *Data Replacement*

@@ -6,6 +6,29 @@ Loops
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Concept](#concept)
+- [In a Diagram](#in-a-diagram)
+- [For](#for)
+    - [Concept](#concept-1)
+    - [Diagram](#diagram)
+- [For (range)](#for-range)
+    - [Concept](#concept-2)
+    - [Diagram](#diagram-1)
+- [For (conditional)](#for-conditional)
+    - [Concept](#concept-3)
+    - [Diagram](#diagram-2)
+- [For Each](#for-each)
+    - [Concept](#concept-4)
+    - [Diagram](#diagram-3)
+- [While](#while)
+    - [Concept](#concept-5)
+    - [Diagram](#diagram-4)
+- [Until](#until)
+    - [Concept](#concept-6)
+    - [Diagram](#diagram-5)
+
 ### Concept
 
 A loop is a form of control over *execution flow*. Execution flow is explained in the article *Execution Flow*.

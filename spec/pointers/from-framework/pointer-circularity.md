@@ -6,6 +6,17 @@ From Framework | Pointer Circularity
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Loose Ideas](#loose-ideas)
+    - [Circularity](#circularity)
+        - [Circularity in Tracing](#circularity-in-tracing)
+        - [Circularity in an Object-Type Trace](#circularity-in-an-object-type-trace)
+        - [Circularity in a Interface Trace](#circularity-in-a-interface-trace)
+        - [Circularity in a Definition Trace](#circularity-in-a-definition-trace)
+        - [Circularity in a Procedure Interface Trace](#circularity-in-a-procedure-interface-trace)
+        - [Circularity in an Execution-Definition Trace](#circularity-in-an-execution-definition-trace)
+
 ### Loose Ideas
 
 (Out of the original Symbol documentation)

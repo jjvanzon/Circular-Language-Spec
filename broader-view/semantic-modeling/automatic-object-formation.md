@@ -9,7 +9,7 @@ Automatic Object Formation
 If you program something purely procedural,  
 but you use the data as parameters,  
 the parameters become classes which have this method  
- with the principle of 'Methods and classes loosely coupled'.
+with the principle of 'Methods and classes loosely coupled'.
 
 But what if the data is not parameters, but data in a god-object?
 

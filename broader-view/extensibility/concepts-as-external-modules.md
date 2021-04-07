@@ -6,6 +6,24 @@ Concepts As External Modules
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Introduction](#introduction)
+- [Brainstorm](#brainstorm)
+    - [Generic, Not Generated](#generic-not-generated)
+    - [System Structure Elements](#system-structure-elements)
+    - [Which Attributes Exist?](#which-attributes-exist)
+    - [How Many Are There?](#how-many-are-there)
+    - [How Are They Automatically Added and Removed?](#how-are-they-automatically-added-and-removed)
+    - [When Are They Added and Removed](#when-are-they-added-and-removed)
+    - [Attribute Roles](#attribute-roles)
+        - [No Control Over Retaining the System Attribute](#no-control-over-retaining-the-system-attribute)
+    - [N `<=>` N](#n--n)
+    - [Loose Ideas](#loose-ideas)
+    - [Concepts As External Modules](#concepts-as-external-modules-1)
+
+### Introduction
+
 Concepts add something to every class that supports the concept. The class doesn’t get polluted directly. A concept adds a sub object operating on the class’s members in a generic way.
 
 All I need to do, is invent a way to describe any of the concepts I had already implemented in Computer Language 0.9 in text code, and how do I let each class decide which concept to support. How do I set a default as to which concepts classes should support?

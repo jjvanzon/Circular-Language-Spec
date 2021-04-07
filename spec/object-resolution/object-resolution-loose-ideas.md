@@ -6,12 +6,17 @@ Loose Ideas
 
 `[ Preliminary documentation ]`
 
-Object Resolution,  
-2020-05-24
+### Contents
 
-Note that the Inheritance chapter might have content about Object Resolution topics too.
-
-JJ
+- [Inheritance en Overloading (overloaded default properties)](#inheritance-en-overloading-overloaded-default-properties)
+- [From the Original Symbol Documentation](#from-the-original-symbol-documentation)
+    - [Procedure Resolution](#procedure-resolution)
+        - [Overriding](#overriding)
+        - [Exclusion](#exclusion)
+        - [Overloading](#overloading)
+        - [Shadowing](#shadowing)
+        - [Merging](#merging)
+- [Other Ideas](#other-ideas)
 
 ### Inheritance en Overloading (overloaded default properties)
 
@@ -218,5 +223,14 @@ Object Resolution,
 2010-05-18
 
 Object resolution only happens when things are ambiguous. Things are only ambiguous if you use triangles to merge member sets (except for overloading (disputable)). Then things could start getting in each other’s way.
+
+JJ
+
+-----
+
+Object Resolution,  
+2020-05-24
+
+Note that the Inheritance chapter might have content about Object Resolution topics too.
 
 JJ

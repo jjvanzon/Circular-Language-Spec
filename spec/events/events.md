@@ -6,6 +6,29 @@ Events
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Contents](#contents)
+- [Introduction](#introduction)
+- [Prime Event Example: Button Clicked](#prime-event-example-button-clicked)
+- [Main Concepts](#main-concepts)
+    - [Main Notation of Event](#main-notation-of-event)
+    - [Event Connector](#event-connector)
+    - [Event Raising](#event-raising)
+    - [Call to a Parent](#call-to-a-parent)
+    - [Event Implementation & Connector](#event-implementation--connector)
+- [Event Situations](#event-situations)
+    - [Multi-Cast Events](#multi-cast-events)
+    - [Multi-Cast in Same Parent](#multi-cast-in-same-parent)
+    - [Event with Parameters](#event-with-parameters)
+    - [Event From Deeper Object](#event-from-deeper-object)
+- [Explicit Implementation of Event Object](#explicit-implementation-of-event-object)
+- [Explicit Interface of Event Object](#explicit-interface-of-event-object)
+- [Event Interface Reference](#event-interface-reference)
+- [Interaction Events](#interaction-events)
+- [Black Boxed Events](#black-boxed-events)
+- [Event Alternatives](#event-alternatives)
+
 ### Introduction
 
 Events are notification calls. Call receivers subscribe to an event. The call sender will call the receivers whenever it feels like it. Another name for events that the world adopts, is *‘the observer pattern’*. The caller decides what the message looks like. The receiver has to supply a command, that has an interface, specified by the caller.

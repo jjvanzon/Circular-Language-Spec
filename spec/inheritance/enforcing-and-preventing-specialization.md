@@ -6,6 +6,34 @@ Enforcing & Preventing Specialization
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Introduction](#introduction)
+- [Protected](#protected)
+- [Overriding](#overriding)
+- [Optional / Required](#optional--required)
+- [Requirements for Other Side of Connection](#requirements-for-other-side-of-connection)
+- [Gut Feeling](#gut-feeling)
+- [Applied to Concepts from Other Languages](#applied-to-concepts-from-other-languages)
+- [Protected](#protected-1)
+- [Virtual](#virtual)
+- [Abstract Member](#abstract-member)
+- [Abstract Class](#abstract-class)
+- [Sealed / Final Class](#sealed--final-class)
+- [Interface / Interface Member](#interface--interface-member)
+    - [Rule 1: Interfaces are Abstract](#rule-1-interfaces-are-abstract)
+    - [Rule 2: Interface Members are Abstract](#rule-2-interface-members-are-abstract)
+    - [Rule 3: Interfaces can not Have an Implementation](#rule-3-interfaces-can-not-have-an-implementation)
+    - [Gruesome](#gruesome)
+- [Non-Overridable](#non-overridable)
+- [More Combinations](#more-combinations)
+- [Courtesy](#courtesy)
+- [Enforcing & Preventing Other Specialization Methods](#enforcing--preventing-other-specialization-methods)
+- [Preventing Pre-Extension with Cancellation](#preventing-pre-extension-with-cancellation)
+- [Preventing & Enforcing Data Replacement](#preventing--enforcing-data-replacement)
+
+### Introduction
+
 The world of programming languages offers several ways to prevent *or* *enforce* specialization. This article will give this a place inside the new computer language.
 
 The concepts from other languages can be boiled down to a simpler model that has to provide the following:

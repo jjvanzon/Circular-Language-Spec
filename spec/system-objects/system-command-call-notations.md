@@ -6,6 +6,18 @@ System Command Call Notations
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Introduction](#introduction)
+- [Notational Choices](#notational-choices)
+    - [Distinguishing Object-Bound and Reference-Bound Aspects](#distinguishing-object-bound-and-reference-bound-aspects)
+    - [System Interface Call Notation](#system-interface-call-notation)
+- [System Interface Calls versus Assignment](#system-interface-calls-versus-assignment)
+- [System Interface Calls](#system-interface-calls)
+- [System Interface Calls with Arguments](#system-interface-calls-with-arguments)
+- [Explicit Get & Set](#explicit-get--set)
+- [Explicit Display of Assignment](#explicit-display-of-assignment)
+
 ### Introduction
 
 There might be several notations for calling a system command.

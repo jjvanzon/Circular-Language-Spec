@@ -8,6 +8,36 @@ Example Diagrams
 
 This article attempts to systematically demonstrate different situations of commands.
 
+### Contents
+
+- [Command Calls in a Command Definition](#command-calls-in-a-command-definition)
+- [Command Calls in a Command Call](#command-calls-in-a-command-call)
+- [Command Calls in a Command Reference](#command-calls-in-a-command-reference)
+- [Parameters in a Command Definition](#parameters-in-a-command-definition)
+- [Parameters in a Command Call](#parameters-in-a-command-call)
+- [Parameters in a Command Reference](#parameters-in-a-command-reference)
+- [Private Objects in a Command Definition](#private-objects-in-a-command-definition)
+- [Private Objects in a Command Call](#private-objects-in-a-command-call)
+- [Private Objects in a Command Reference](#private-objects-in-a-command-reference)
+- [Command References in a Command Definition](#command-references-in-a-command-definition)
+- [Command References in a Command Call](#command-references-in-a-command-call)
+- [Command References in a Command Reference](#command-references-in-a-command-reference)
+- [Clauses in Clauses](#clauses-in-clauses)
+- [Inactive Clauses in a Command Definition](#inactive-clauses-in-a-command-definition)
+- [Inactive Clauses in a Command Call](#inactive-clauses-in-a-command-call)
+- [Inactive Clauses in a Command Reference](#inactive-clauses-in-a-command-reference)
+- [Active Clauses in a Command Definition](#active-clauses-in-a-command-definition)
+- [Active Clauses in a Command Call](#active-clauses-in-a-command-call)
+- [Active Clauses in a Command Reference](#active-clauses-in-a-command-reference)
+- [Command Calls in an Inactive Clause](#command-calls-in-an-inactive-clause)
+- [Command Calls in an Active Clause](#command-calls-in-an-active-clause)
+- [Parameters in an Inactive Clause](#parameters-in-an-inactive-clause)
+- [Parameters in an Active Clause](#parameters-in-an-active-clause)
+- [Private Objects in an Inactive Clause](#private-objects-in-an-inactive-clause)
+- [Private Objects in an Active Clause](#private-objects-in-an-active-clause)
+- [Command References in an Inactive Clause](#command-references-in-an-inactive-clause)
+- [Command References in an Active Clause](#command-references-in-an-active-clause)
+
 ### Command Calls in a Command Definition
 
 ![](images/5.%20Commands%20Example%20Diagrams.001.png)

@@ -6,6 +6,17 @@ Relationships | Broader View
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Relationship Direction](#relationship-direction)
+- [Ubiquitous Bidirectional Relationships](#ubiquitous-bidirectional-relationships)
+    - [Concept](#concept)
+    - [Ridiculous to maintain backward relationship](#ridiculous-to-maintain-backward-relationship)
+    - [Unable to program class](#unable-to-program-class)
+    - [`No exact` formula](#no-exact-formula)
+- [Loose Ideas](#loose-ideas)
+    - [Loose Ideas about Ubiquitous Bidirectional Relationships](#loose-ideas-about-ubiquitous-bidirectional-relationships)
+
 ### Relationship Direction
 
 `When* all` relationships `are` bidirectional, a side-effect might be that everything might end up at `the*` same level hierarchically, since `all the*` relationships `are` mutual.

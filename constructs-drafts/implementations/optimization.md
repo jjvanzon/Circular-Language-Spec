@@ -6,6 +6,26 @@ Optimization
 
 `[ Out of Scope ]`
 
+### Contents
+
+- [Loose Ideas](#loose-ideas)
+- [Procedural](#procedural)
+    - [Inline](#inline)
+    - [Inline Module](#inline-module)
+        - [Inline Module Usage](#inline-module-usage)
+        - [Inlining Modules](#inlining-modules)
+    - [Inline](#inline-1)
+    - [Inline](#inline-2)
+        - [Inline Module](#inline-module-1)
+        - [Inline Module Usage](#inline-module-usage-1)
+- [Machine Code](#machine-code)
+    - [Machine Oriented Optimization of Code for Speed](#machine-oriented-optimization-of-code-for-speed)
+- [Possibility Optimization](#possibility-optimization)
+- [Access Optimization](#access-optimization)
+    - [Leave Out Access](#leave-out-access)
+- [Logic optimization](#logic-optimization)
+- [End State Optimization](#end-state-optimization)
+
 ### Loose Ideas
 
 Automatic optimization, by using temporary variables for the same expression, that can't change as the procedure runs. That last element is hard to determine. For that it may also be advised to make it just a suggestion. Perhaps the temporary variable may still not be put in the source code, after the suggestion has been went along with, but the temporary storage suggestions may be declared at the beginning of the procedure.
@@ -362,5 +382,3 @@ Sometimes code is executed that can be done simpler. You can recognize construct
 If a stretch of code results in nothing other than a configuration of objects and data, then you can store the end result of it in an end state. When that code is normally called, instead, the end state is loaded immediately. That saves a lot of time. This can only be done in cases where the end result of a chunk of code isn’t variable. If it is only a little variable, you could play with this optimization a little and store end states of the invariable things and calculate the variable part *or* store multiple partial end states, one for each variation.
 
 In development, this optimization is not that much wanted, because the code changes there all the time. After compilation the code doesn’t change and therefore such an optimization is useful.
-
-

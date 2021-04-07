@@ -46,4 +46,3 @@ Samensmelten moet een apart topic worden.
 #### Good Example Where Melding Would Cause Problems
 
 Be careful in Synchronization 1=>1. For instance in J Graphics: the relation Application <=> Current Line Style. If Line Style . Application is assigned, Application . Current Line Style should not be synchronized with that Line Style. Therefore you can set Relation Class . Synchronize = False. You set Synchronize = False for the Relation Class that should stay most constant and be the least volatile, so in this case the Current Line Style relation class gets Synchronize = False.
-

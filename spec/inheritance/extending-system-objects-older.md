@@ -6,6 +6,22 @@ Extending the System Objects
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Introduction](#introduction)
+- [Main Examples of System Command Extension](#main-examples-of-system-command-extension)
+- [Command Extension Possibilities](#command-extension-possibilities)
+- [Extend System Interface with More Members](#extend-system-interface-with-more-members)
+- [Extension Regardless of Value Change](#extension-regardless-of-value-change)
+- [Extension Procedures are Events](#extension-procedures-are-events)
+- [Extension Procedures Part of Parent](#extension-procedures-part-of-parent)
+- [Obsolete Members: Initialize Item & Terminate Item](#obsolete-members-initialize-item--terminate-item)
+- [Extension of System Objects in a Diagram](#extension-of-system-objects-in-a-diagram)
+- [Loose Ideas](#loose-ideas)
+    - [Extension (Cross-Out Leftovers from System Objects)](#extension-cross-out-leftovers-from-system-objects)
+
+### Introduction
+
 In the *System Objects* articles it has been repeatedly mentioned, that all the system commands can be extended with extra procedures. First, to demonstrate the concept, this article gives you the main examples of system command extension. After that, all the possible system command extensions will be listed out.
 
 ### Main Examples of System Command Extension
@@ -232,13 +248,11 @@ Extension of system commands of a related list item works a bit differently, bec
 
 The examples shows the system interface of a related list, but not all its members. The following system objects are shown: __Item New__, __Item Annul__ and __Item Object__. The rest of the system objects are left out. The system object __Item Object__ contains the __Get__ and __Set__ objects. Objects like __Item Object  .  Get__, that have the same name as a system command of a related list item, define the extension procedures. In the example above, the system object __Item Object  .  Get__ has a pre- extension defined. The extension is displayed as a line going out of __Item Object  .  Get__ to a procedure named __Pre-Extend__, defined inside the parent object. The extension procedure is passed a parameter, namely: the __Related List Item__ for which the extension procedure was called.
 
-
-Ideas
------
+### Loose Ideas
 
 *The texts below are loose ideas yet to be turned into good documentation.*
 
-### Extension (Cross-Out Leftovers from System Objects)
+#### Extension (Cross-Out Leftovers from System Objects)
 
 Assignment and retrieval of the related item can be decorated with extra procedures.
 

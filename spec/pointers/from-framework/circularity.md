@@ -6,6 +6,14 @@ From Framework | Circularity
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [One Approach](#one-approach)
+- [Older Story](#older-story)
+- [Loose Ideas](#loose-ideas)
+
+### One Approach
+
 Circularities are in many cases no problem. Sometimes, however, a program is organized in a way, that circularities will make the program hang. Therefore there is standard functionality in Creator to handle circularities. Procedures that handle a circularity sometimes require a lot of steps.  
 < 2007-07-15, Creator will handle these steps for you? >
 

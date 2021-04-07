@@ -2,7 +2,7 @@
 ====================================
 
 Encircle Language Summary
------------------------
+-------------------------
 
 `[ Deprecated documentation ]`
 

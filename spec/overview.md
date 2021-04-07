@@ -12,6 +12,30 @@ The Encircle language for now is a specification in writing. At the time of this
 
 The documentation tries to shed light on the following topics:
 
+### Contents
+
+- [Introduction](#introduction)
+- [Overview](#overview-1)
+- [Basic Diagram Elements](#basic-diagram-elements)
+- [Objects](#objects)
+- [Classes](#classes)
+- [Relationships](#relationships)
+- [Commands](#commands)
+- [Parameters](#parameters)
+- [Modules](#modules)
+- [Execution Flow](#execution-flow)
+- [System Objects](#system-objects)
+- [Black Boxes](#black-boxes)
+- [Interfaces](#interfaces)
+- [Events](#events)
+- [Inheritance](#inheritance)
+- [Type Control](#type-control)
+- [Object Resolution](#object-resolution)
+- [Conditions](#conditions)
+- [Object Order](#object-order)
+- [Pointers](#pointers)
+- [Misc Diagram Topics](#misc-diagram-topics)
+
 ### Introduction
 
 - Tries to gently introduce this language.

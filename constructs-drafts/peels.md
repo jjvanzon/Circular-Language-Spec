@@ -4,7 +4,32 @@
 Peels
 -----
 
-`[ Preliminary documentation ]`
+`[ Deprecated documentation ]`
+
+### Contents
+
+- [Introduction](#introduction)
+- [Shape Peels](#shape-peels)
+    - [Extra Borders](#extra-borders)
+    - [Exits and Entrance Separation](#exits-and-entrance-separation)
+    - [Line Type](#line-type)
+    - [Type of Crossed Border: Studs](#type-of-crossed-border-studs)
+    - [Name of Symbol Crossed](#name-of-symbol-crossed)
+    - [Exceptionals](#exceptionals)
+        - [Single Solid Border](#single-solid-border)
+        - [No Crossings](#no-crossings)
+    - [Peels for Other Symbols.](#peels-for-other-symbols)
+    - [Abstract Meaning](#abstract-meaning)
+        - [Symbol Has A Line](#symbol-has-a-line)
+        - [Symbol’s Line Crosses Many Borders](#symbols-line-crosses-many-borders)
+        - [Other Abstract Meanings](#other-abstract-meanings)
+    - [Expressible in the Symbol Border](#expressible-in-the-symbol-border)
+    - [Only Use Peel Notation Where It’s Useful](#only-use-peel-notation-where-its-useful)
+- [Line Peels](#line-peels)
+- [Ambiguity In Peels](#ambiguity-in-peels)
+- [Overview of Peals](#overview-of-peals)
+
+### Introduction
 
 An additional notation technique exists to express information about lines. It’s called the peel notation.
 

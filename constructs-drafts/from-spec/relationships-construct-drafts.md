@@ -6,6 +6,34 @@ Relationships Construct Drafts
 
 `[ Deprecated documentation ]`
 
+### Contents
+
+- [Relationships Between Classes](#relationships-between-classes)
+- [Bidirectional Relationships](#bidirectional-relationships)
+    - [Counterpart out of Sight](#counterpart-out-of-sight)
+    - [`No` Reuse of Merged Imaginary References](#no-reuse-of-merged-imaginary-references)
+    - [Example](#example)
+- [Relations Between Objects](#relations-between-objects)
+    - [Diagram Notation](#diagram-notation)
+    - [Counterpart out of sight](#counterpart-out-of-sight-1)
+    - [`No` reuse of merged imaginary references](#no-reuse-of-merged-imaginary-references-1)
+- [Bidirectional Relationship Synchronization Implementation Details](#bidirectional-relationship-synchronization-implementation-details)
+    - [Synchronization Types](#synchronization-types)
+    - [1 => 1 Synchronization](#1--1-synchronization)
+    - [Risk of infinite loop 1 => 1](#risk-of-infinite-loop-1--1)
+    - [1 => n Synchronization](#1--n-synchronization)
+    - [Risk of infinite loop 1 => n](#risk-of-infinite-loop-1--n)
+    - [n => 1 Synchronization](#n--1-synchronization)
+    - [Risk of infinite loop n => 1](#risk-of-infinite-loop-n--1)
+    - [n => n Synchronization](#n--n-synchronization)
+    - [Risk of infinite loop n => n](#risk-of-infinite-loop-n--n)
+    - [`The*` abolished multiplicity of x](#the-abolished-multiplicity-of-x)
+    - [Confusions about relationship synchronization](#confusions-about-relationship-synchronization)
+    - [Confusion 1](#confusion-1)
+    - [Confusion 2](#confusion-2)
+- [Loose Ideas](#loose-ideas)
+    - [± 2004](#-2004)
+
 ### Relationships Between Classes
 
 `The*` class-relationship structure `is the*` bone structure of a program.
@@ -279,7 +307,7 @@ A system in which `all` relationships `are` bidirectional and given `the*` corre
 
 Synchronization `could*` cause confusion in `older` versions of `the* computer language`, where `you* have` two bidirectional relationships to `the*` same class, that `are` given `the*` same __Item Object Name__. In that case, one relationship’s counterpart synchronizing back to `the*` related object `could*` affect `the*` other relationship. By default it `is not*` allowed to `have` one class __A__ being __1 =>__ related to multiple classes, in which __A__ has `the*` same __Item Object Name__. That `is only` allowed `if* the*` other relationships `are` made unidirectional, and `not*` bidirectional, or `if*` *melding* `is` enabled. *Melding* `is` a topic, which makes it possible for multiple relationship classes or for instance *progressed objects* (article *Progression)*, `to be` referenced as a single related item, `but*` it `has to be` stated explicitly that `this is the*` intention. See `the*` article *Melding*.
 
-## Loose Ideas
+### Loose Ideas
 
 Stereotyping relationships
 
@@ -296,7 +324,7 @@ Relationships,
 
 JJ
 
-### ± 2004
+#### ± 2004
 
 (Specific implementation in Creator 0.9)
 

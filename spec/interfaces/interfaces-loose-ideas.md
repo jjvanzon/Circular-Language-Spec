@@ -6,6 +6,20 @@ Loose Ideas
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Loose Ideas about Relations Through Interfaces](#loose-ideas-about-relations-through-interfaces)
+- [Loose Ideas about Target Interfaces](#loose-ideas-about-target-interfaces)
+    - [Out of the original Symbol documentation](#out-of-the-original-symbol-documentation)
+        - [Tracing Object Aspects](#tracing-object-aspects)
+            - [Interface Trace](#interface-trace)
+            - [Object-Type-Interface Trace](#object-type-interface-trace)
+        - [Tracing Procedure Aspects](#tracing-procedure-aspects)
+            - [Procedure Interface Trace](#procedure-interface-trace)
+            - [Execution-Definition-Interface Trace](#execution-definition-interface-trace)
+            - [Type Line Being called Interface Line](#type-line-being-called-interface-line)
+- [Loose Ideas about Interfaces](#loose-ideas-about-interfaces)
+
 ### Loose Ideas about Relations Through Interfaces
 
 Relations Through Interfaces,  

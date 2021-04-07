@@ -6,6 +6,33 @@ Command Redirection
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Inactive Command Object Redirection](#inactive-command-object-redirection)
+- [Inactive Command Class Redirection](#inactive-command-class-redirection)
+    - [In a Diagram](#in-a-diagram)
+- [Executable Command Class Redirection in a Diagram](#executable-command-class-redirection-in-a-diagram)
+    - [Concept](#concept)
+    - [In a Diagram](#in-a-diagram-1)
+- [Executable Command Object Redirection](#executable-command-object-redirection)
+    - [In a Diagram](#in-a-diagram-2)
+- [Target Command Object](#target-command-object)
+    - [In a Diagram](#in-a-diagram-3)
+- [Target Command Definition](#target-command-definition)
+    - [In a Diagram](#in-a-diagram-4)
+- [Recursion](#recursion)
+    - [Concept](#concept-1)
+    - [In a Diagram](#in-a-diagram-5)
+- [Loose Ideas about Command Redirection](#loose-ideas-about-command-redirection)
+    - [Ideas (about Target Command Object)](#ideas-about-target-command-object)
+        - [Execution Trace](#execution-trace)
+        - [Tracing Procedure Aspects](#tracing-procedure-aspects)
+            - [Redirecting to an Execution](#redirecting-to-an-execution)
+    - [Ideas (about Target Command Definition)](#ideas-about-target-command-definition)
+        - [Definition Trace](#definition-trace)
+        - [Execution-Definition Trace](#execution-definition-trace)
+- [Loose Ideas about Recursion](#loose-ideas-about-recursion)
+
 ### Inactive Command Object Redirection
 
 An inactive command object redirection makes an inactive command symbol a command reference.
@@ -202,15 +229,13 @@ The call on the right might be executing, but its call inside the __then__ claus
 
 Yes, there are a lot of class lines, but each separate call has a separate class line to the right definition. If there is a recursive command running, then each execution of the same command has a separate execution symbol, because there will be an execution contained in an execution, contained in an execution, etcetera.
 
+### Loose Ideas about Command Redirection
 
-Loose Ideas about Command Redirection
-------------------------------------
-
-### Ideas (about Target Command Object)
+#### Ideas (about Target Command Object)
 
 (Out of the original Symbol documentation)
 
-#### Execution Trace
+##### Execution Trace
 
 To find the execution you do the following.
 
@@ -220,7 +245,7 @@ What you do is that you follow reference lines until you encounter a symbol with
 
 Tracing the execution target only seems to be relevant when the source symbol is a diamond. It usually is. Usually you’ll only do this trace for a diamond. However, the target execution is also relevant for a square, because if a square’s redirection has a diamond in it, any call to the square is a call to the same execution.
 
-#### Tracing Procedure Aspects
+##### Tracing Procedure Aspects
 
 Even though there are only *two* line types for procedure symbols, there are *three* aspects of a procedure symbol to trace:
 
@@ -230,7 +255,7 @@ Even though there are only *two* line types for procedure symbols, there are *th
 
 A definition is a lot like the type of the procedure, while an execution is an instance of the procedure.
 
-##### Redirecting to an Execution
+###### Redirecting to an Execution
 
 A lot of times you will redirect an execution, but you won’t redirect *to* an execution.
 
@@ -242,23 +267,22 @@ By redirecting to an execution, it is possible for multiple symbols to represent
 
 Also note that when redirecting to an execution, the definition is always the same execution.
 
-### Ideas (about Target Command Definition)
+#### Ideas (about Target Command Definition)
 
 (Out of the original Symbol documentation)
 
-#### Definition Trace
+##### Definition Trace
 
 The definition trace is quite easy: follow reference lines until you bump into a symbol without a reference line. That symbol’s the definition
 
 ![](images/4.%20Command%20Redirection.025.jpeg)
 
-#### Execution-Definition Trace
+##### Execution-Definition Trace
 
 Just as with the object-type trace, the execution trace requires you to find the definition anyway, so when you need both, the execution trace will suffice. It’s called a *execution-definition trace* when you use an execution trace to find both execution and definition.
 
 
-Loose Ideas about Recursion
---------------------------
+### Loose Ideas about Recursion
 
 (Out of the original Symbol documentation)
 

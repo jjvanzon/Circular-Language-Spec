@@ -6,6 +6,28 @@ Misc Issues
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [System Command Calls by User](#system-command-calls-by-user)
+- [Objects Floating Around](#objects-floating-around)
+- [System Command Extension](#system-command-extension)
+- [Parameters For Objects](#parameters-for-objects)
+    - [Concept](#concept)
+    - [Diagram Notation](#diagram-notation)
+- [Referrers](#referrers)
+    - [Object Referrers](#object-referrers)
+        - [Concept](#concept-1)
+            - [`Not*` Supporting `the*` Referrers Concept](#not-supporting-the-referrers-concept)
+        - [Diagram Notation](#diagram-notation-1)
+    - [Class Referrers](#class-referrers)
+        - [Concept](#concept-2)
+            - [`Not*` Registering Class Referrers](#not-registering-class-referrers)
+        - [Diagram Notation](#diagram-notation-2)
+    - [Referrers Versus Related Objects](#referrers-versus-related-objects)
+    - [`The*` Referrers Concept](#the-referrers-concept)
+- [Loose Ideas](#loose-ideas)
+    - [Loose Ideas about Referrers](#loose-ideas-about-referrers)
+
 ### System Command Calls by User
 
 A user will often execute __Gets__ and __Sets__ and other system commands when connecting symbols together, but they will only see the connectors and the *result* of a __Get__ and __Set__, but never the explicit __Get__ and __Set__ calls. The system commands are executed as the user builds up a diagram.
@@ -225,10 +247,9 @@ A __Number__ class `could*` choose to support `the*` __Referrers__ concept. `Thi
 
 `But* then* the*` __Number__ class `will` also register `all` its *class referrers*, which `is` undoable, `because*` a humongous amount of objects refer to `this` class. `But*` a solution for `this was already` proposed by `the*` article *Class Referrers*. `You* can*` choose for a class to `not*` register its class referrers, while objects do register their referrers.
 
-Loose Ideas
------------
+### Loose Ideas
 
-### Loose Ideas about Referrers
+#### Loose Ideas about Referrers
 
 Taken out of `the*` Referrers article:
 

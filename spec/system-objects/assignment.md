@@ -4,6 +4,19 @@
 Assignment
 ----------
 
+### Contents
+
+- [Introduction](#introduction)
+- [Distinguishing Object-Bound and Reference-Bound Aspects](#distinguishing-object-bound-and-reference-bound-aspects)
+- [Basic Assignment Types](#basic-assignment-types)
+- [Cross-Aspect Assignments](#cross-aspect-assignments)
+- [Assignment without an Assignment Notation](#assignment-without-an-assignment-notation)
+- [Ideas about Assignment](#ideas-about-assignment)
+    - [Opposite Direction Indicators?](#opposite-direction-indicators)
+    - [Leaving Out Diamonds for Value Assignment?](#leaving-out-diamonds-for-value-assignment)
+
+### Introduction
+
 Calls to system commands (like __Get Object__, __Set Value__ or __Use As Class__) might not be commonly seen. They might be more likely to be called indirectly. An assignment command might indirectly carry out a __Get__ on one object and a __Set__ on another object, trying to yield over something from one symbol to another.
 
 ### Distinguishing Object-Bound and Reference-Bound Aspects

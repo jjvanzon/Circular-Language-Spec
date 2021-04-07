@@ -6,6 +6,23 @@ Misc Issues
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Parent Controls Its Sub-Executions](#parent-controls-its-sub-executions)
+    - [Sub-Commands Are Never Referenced](#sub-commands-are-never-referenced)
+        - [In a Diagram](#in-a-diagram)
+    - [Beware of Active Command References in Commands](#beware-of-active-command-references-in-commands)
+        - [In a Diagram](#in-a-diagram-1)
+    - [Sub-Commands Not Manually Started](#sub-commands-not-manually-started)
+- [Command Referrers](#command-referrers)
+    - [Command Object Referrers](#command-object-referrers)
+    - [Command Definition Referrers](#command-definition-referrers)
+        - [In a Diagram](#in-a-diagram-2)
+- [This](#this)
+    - [Class . HasThis](#class--hasthis)
+    - [Class . This](#class--this)
+    - [This](#this-1)
+
 ### Parent Controls Its Sub-Executions
 
 A parent command needs full control over the execution of its sub-commands. The parent command makes the decision about the exact moment, that the sub-command runs.
@@ -37,7 +54,7 @@ To not cause any confusion, sub-commands are made __Private__.
 
 Do not change the rule to *sub-commands are always private*, because this would not fully solve the parent command’s control over its sub-commands’ execution. By just making them private, the parent command could still pass a reference to a *sub-*command, so that the parent *gives up* control over the execution of a *sub-*command. This is something, that will not be allowed. Now that you can *never reference a sub-command*, this control is restored.
 
-##### Diagram Notation
+##### In a Diagram
 
 The current paragraph repeats the story, but now demonstrates the concept using diagrams.
 
@@ -83,7 +100,7 @@ This also has consequences for setting parameters for the active command referen
 
 It is *not* the rule, to beware of *any* active command reference. It is the rule to just always beware of them in a *parent command*. An *object* can contain an active command reference, in order to for instance allow a user to carry around a reference to an active command, executing on a site somewhere.
 
-##### Diagram Notation
+##### In a Diagram
 
 You have to be aware, that when you use an active command reference, the active command reference may already have been executed.
 

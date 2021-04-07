@@ -6,6 +6,16 @@ Black Boxes Unfinished
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Misc Issues](#misc-issues)
+    - [Protected](#protected)
+    - [Internal](#internal)
+- [Side-Issues](#side-issues)
+    - [Private Names](#private-names)
+- [May Cover Last](#may-cover-last)
+    - [Access Controlling Globals](#access-controlling-globals)
+
 ### Misc Issues
 
 In previous projects the main articles about black boxing were finished, but other subjects were left unfinished. This article contains the unfinished material of some of these topics.

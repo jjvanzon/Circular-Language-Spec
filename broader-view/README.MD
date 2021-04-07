@@ -7,7 +7,7 @@ These are various draft texts that may once describe a story, ideas about how th
 
 - ## [Exchangeability](exchangeability)
 
-    - The *Exchangeability Principles* describes things in the area of computer technology, that are traditionally separate, that might be combined to form one thing.
+    - The *Exchangeability Principles* describe things in the area of computer technology, that may traditionally be separate, that might be combined to form one thing.
     - Perhaps the most important goal of the Encircle programming language, is to melt together all computer technology disciplines, providing one clear language, that can express anything, and that everybody can understand. The *Exchangeability Principles* might make a lot of promises about the new language.
 
 - ## [Expression](expression)

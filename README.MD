@@ -1,4 +1,4 @@
-Encircle-Language-Spec | Root
+Encircle Language Spec | Root
 =============================
 
 Encircle aims to become a visual programming language made from shapes and lines. It may once become a diagram notation for visualizing computer code.

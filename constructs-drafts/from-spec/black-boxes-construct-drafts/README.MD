@@ -2,7 +2,7 @@ Encircle Language | Construct Drafts
 ====================================
 
 Black Boxes Construct Drafts Articles
-------------------------------------
+-------------------------------------
 
 - [Black Boxes Construct Drafts Ideas](black-boxes-construct-drafts-ideas.md)
 - [Black Boxes | Level Limitation](black-boxes-level-limitation.md)

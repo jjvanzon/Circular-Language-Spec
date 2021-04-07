@@ -6,6 +6,24 @@ Deeper Specialization
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Introduction](#introduction)
+- [Other Specialization Techniques](#other-specialization-techniques)
+- [Deeper Exclusion](#deeper-exclusion)
+- [Deeper Inclusion](#deeper-inclusion)
+- [Deeper Member Addition](#deeper-member-addition)
+- [Even Deeper Member Addition](#even-deeper-member-addition)
+- [Deeper Shadowing](#deeper-shadowing)
+- [Deeper Overriding](#deeper-overriding)
+- [Deeper Command Extension](#deeper-command-extension)
+- [Deeper System Command Extension](#deeper-system-command-extension)
+- [Deeper System Command Overriding](#deeper-system-command-overriding)
+- [Deeper System Command Shadowing](#deeper-system-command-shadowing)
+- [The Deeper Specializations Structure](#the-deeper-specializations-structure)
+
+### Introduction
+
 The main concept of deeper specialization is that you can not only specialize direct members of an object, but you can also alter and extend members from deeper objects. A simple example is to exclude a member of a sub-object. Here is a normal object with a couple of public sub-objects:
 
 ![](images/4.%20Deeper%20Specialization.001.png)

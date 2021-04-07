@@ -6,6 +6,12 @@ Black Boxes Broader View | Loose Ideas
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Side-Issues](#side-issues)
+    - [Black Boxing and User Access Control](#black-boxing-and-user-access-control)
+    - [Programmers and Users](#programmers-and-users)
+
 ### Side-Issues
 
 In previous projects the main articles about black boxing were finished, but other subjects were left unfinished. This article contains the unfinished material of some of these topics.

@@ -6,9 +6,58 @@ Type Safety, Genericity, Explicit
 
 `[ Preliminary documentation ]`
 
-Het type van de items is nu wel heel generiek. Dat sluit aan bij generiekheid in Symbol. Mooi.
+### Contents
 
-### Loose Ideas
+- [Loose Ideas](#loose-ideas)
+- [More Ideas](#more-ideas)
+- [From Original Symbol Documentation](#from-original-symbol-documentation)
+    - [Object Basics](#object-basics)
+        - [Same Object, Same Type](#same-object-same-type)
+            - [Same Object, Same Type](#same-object-same-type-1)
+            - [Same Type, Same Interfaces](#same-type-same-interfaces)
+            - [Same Object, Same Type, Same Interfaces](#same-object-same-type-same-interfaces)
+            - [Not Shorthand](#not-shorthand)
+        - [Same Procedure, Same Interface](#same-procedure-same-interface)
+    - [Genericity](#genericity)
+        - [Object Symbol Genericity](#object-symbol-genericity)
+            - [Original and Delegated Object](#original-and-delegated-object)
+            - [Original and Delegated Type](#original-and-delegated-type)
+            - [Explicit and Generic Type](#explicit-and-generic-type)
+            - [Original and Delegated Interface](#original-and-delegated-interface)
+            - [Explicit and Generic Interface](#explicit-and-generic-interface)
+        - [Procedure Symbol Genericity](#procedure-symbol-genericity)
+            - [Original and Delegated Definition](#original-and-delegated-definition)
+            - [Original and Delegated Execution](#original-and-delegated-execution)
+            - [Original and Delegated Procedure Interface](#original-and-delegated-procedure-interface)
+            - [Explicit and Generic Procedure Interface](#explicit-and-generic-procedure-interface)
+        - [Type-Interface Interaction](#type-interface-interaction)
+            - [Type Interface Genericity](#type-interface-genericity)
+                - [Using Interface Extends Type Line](#using-interface-extends-type-line)
+                - [Object Shows Only Used Interface Implementation](#object-shows-only-used-interface-implementation)
+                - [Create Symbol: Create Object of the Whole Type](#create-symbol-create-object-of-the-whole-type)
+                - [Choose From Multiple Types](#choose-from-multiple-types)
+                - [No Interface Line: Follow Object Line](#no-interface-line-follow-object-line)
+            - [Interface Type Genericity](#interface-type-genericity)
+            - [Interface Procedure Genericity](#interface-procedure-genericity)
+            - [Overview of Genericities of Type-Interface Interaction](#overview-of-genericities-of-type-interface-interaction)
+        - [Final Issues](#final-issues)
+            - [Explicit Isn’t Fixed](#explicit-isnt-fixed)
+            - [Same Object, Same Type](#same-object-same-type-2)
+        - [Delegated to Original in a Circularity](#delegated-to-original-in-a-circularity)
+        - [Overview](#overview)
+- [More from the original Symbol documentation](#more-from-the-original-symbol-documentation)
+    - [Old](#old)
+        - [Interface < >](#interface--)
+        - [Type](#type)
+        - [Operators](#operators)
+
+
+Loose Ideas
+-----------
+
+Encircle language an item can be quite generic. So the wish for Encircle to work with both concepts of explicit and generic seems granted there.
+
+-----
 
 Computer Language,
 
@@ -80,6 +129,23 @@ If you pass an object along to a procedure, the procedure can make no assumption
 Type safety only useful so PROCEDURES can make assumptions about the interface or behavior of an object.
 
 But when just using an object as a folder, you keep the way the object looks totally variable, so you can put anything in it. You won't be running a procedure over it anyway.
+
+JJ
+
+
+More Ideas
+----------
+
+Type Control,
+2008-10-20
+
+Strong typing is no more, than a binary format with type checking around it. It also gives you a nice autocomplete list in your programming environment. The type checking is only a restriction imposed by the compiler: the compiler, even though it could compile, refuses to compile, when something against the rules is in the code. But it could compile, but it just refuses to do it. If it would compile the program anyway, then a runtime error could occur when the type is wrongly used in the code. You can easily make a program compile with the 'error' in it, by giving the object a generic type. That takes away the strong typing, which basically only takes away checks, that the compiler performs.
+
+Strong typing is just a helper, not a mandatory thing. Computer systems can function without it. It is just an extra. It is just something that rules out certain mistakes a programmer can make.
+
+That's the way it is implemented in the new computer language too: the whole system can function without it, but it extra checking and extra helpers, imposed afterwards. Not only the imposing of the rules is very important about type checking. Also the helpers for the programmer are a blessing. Without any documentation, autocomplete lists already give an interface to the format an object is expected to have. Yes, objects have a format. You may only see members in the autocomplete list, but internally objects just have a format. That's what a class is: a format. Furtherly, the class is extended with the methods you could operate on the object of a class.
+
+Enough for now.
 
 JJ
 
@@ -517,21 +583,6 @@ If you break one of the lines in the circularity, the one loosing the line comes
 | __One does not fix the other__ | Interface type genericity      | Fixing the interface doesn’t fix the type |
 |                                | Type interface genericity      | Fixing the type doesn’t fix the interface |
 |                                | Interface-procedure genericity | Fixing the procedure interface doesn’t fix the procedure |
-
-## More Ideas
-
-Type Control,
-2008-10-20
-
-Strong typing is no more, than a binary format with type checking around it. It also gives you a nice autocomplete list in your programming environment. The type checking is only a restriction imposed by the compiler: the compiler, even though it could compile, refuses to compile, when something against the rules is in the code. But it could compile, but it just refuses to do it. If it would compile the program anyway, then a runtime error could occur when the type is wrongly used in the code. You can easily make a program compile with the 'error' in it, by giving the object a generic type. That takes away the strong typing, which basically only takes away checks, that the compiler performs.
-
-Strong typing is just a helper, not a mandatory thing. Computer systems can function without it. It is just an extra. It is just something that rules out certain mistakes a programmer can make.
-
-That's the way it is implemented in the new computer language too: the whole system can function without it, but it extra checking and extra helpers, imposed afterwards. Not only the imposing of the rules is very important about type checking. Also the helpers for the programmer are a blessing. Without any documentation, autocomplete lists already give an interface to the format an object is expected to have. Yes, objects have a format. You may only see members in the autocomplete list, but internally objects just have a format. That's what a class is: a format. Furtherly, the class is extended with the methods you could operate on the object of a class.
-
-Enough for now.
-
-JJ
 
 ## More from the original Symbol documentation
 

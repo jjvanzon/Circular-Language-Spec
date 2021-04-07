@@ -6,7 +6,21 @@ Diagram Metrics
 
 `[ Preliminary documentation ]`
 
-This is unfinished documentation of lower quality. It only has unfinished descriptions and loose ideas.
+### Contents
+
+- [Diagram Metrics in Circle 3](#diagram-metrics-in-circle-3)
+- [Brainstorm Text (from original Symbol documentation)](#brainstorm-text-from-original-symbol-documentation)
+    - [Symbol Placement and Proportion](#symbol-placement-and-proportion)
+    - [Line Alignment](#line-alignment)
+        - [Old](#old)
+        - [Old](#old-1)
+    - [Compromise between Symbol Placement and Line Alignment](#compromise-between-symbol-placement-and-line-alignment)
+    - [Other Metrics](#other-metrics)
+    - [Ambiguity Risks In Symbol Metrics](#ambiguity-risks-in-symbol-metrics)
+    - [Notation Choice](#notation-choice)
+    - [Brainstorm](#brainstorm)
+    - [Line convergence](#line-convergence)
+- [More Ideas](#more-ideas)
 
 ### Diagram Metrics in Circle 3
 

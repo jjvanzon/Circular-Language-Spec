@@ -6,7 +6,45 @@ Loose Ideas
 
 `[ Preliminary documentation ]`
 
-*The texts below are material, yet to be turned into good documentation. They are categorized into subjects and each subject may become a separate article in the future. They are ordered roughly by importance.*
+*The texts below may be rough material, that might once serve as a base for more polished text.*
+
+### Contents
+
+- [Introduction](#introduction)
+- [More Commands & Aspects](#more-commands--aspects)
+- [Extension of System Commands](#extension-of-system-commands)
+- [Extend Connectors and Connections](#extend-connectors-and-connections)
+- [System Objects](#system-objects)
+    - [Parent Contains References to Sub-Objects](#parent-contains-references-to-sub-objects)
+    - [Pointer-to-Pointer](#pointer-to-pointer)
+    - [Multiple Redirection](#multiple-redirection)
+    - [Other Related Item](#other-related-item)
+    - [System Objects](#system-objects-1)
+- [Qualifiers](#qualifiers)
+- [System Interface Notation](#system-interface-notation)
+- [Code Base Objects](#code-base-objects)
+- [Preliminariness of System Interface Notation](#preliminariness-of-system-interface-notation)
+- [Form](#form)
+- [Phrases](#phrases)
+- [Naming](#naming)
+- [Working methods](#working-methods)
+- [Details](#details)
+    - [Command with Return Value versus Object with Get Command](#command-with-return-value-versus-object-with-get-command)
+    - [Object = Collection?](#object--collection)
+    - [Object Target Reference = Value??](#object-target-reference--value)
+    - [Design Time = Run Time](#design-time--run-time)
+- [Assignment Ideas](#assignment-ideas)
+    - [Integrate these Sections](#integrate-these-sections)
+        - [Value Direction](#value-direction)
+        - [Clone](#clone)
+    - [More Ideas](#more-ideas)
+    - [From the original Symbol documentation](#from-the-original-symbol-documentation)
+        - [Assignment](#assignment)
+        - [Distinguishing Assignment Source and Target](#distinguishing-assignment-source-and-target)
+        - [Executions & Parameters](#executions--parameters)
+            - [Brainstorm](#brainstorm)
+- [Enumeration of Attributes](#enumeration-of-attributes)
+- [Other Ideas](#other-ideas)
 
 ### More Commands & Aspects
 
@@ -833,6 +871,14 @@ For state assignments it’s advised to always show the access symbol.
     - Use the simple notation
     - ~ State assignment is the basic assignment
 
+### Enumeration of Attributes
+
+A symbol might simply become an attribute depending on its characteristics. Attributes might be spread around an object’s list of related items. (See Attributes in the Objects chapter.)
+
+`The*` attributes `could` be returned by `the*` object as a `separate*` list, `instead` of `looking` them up in an object’s collection of related objects.
+
+An object might return a list of `just` its attributes, `instead` of `just all` related objects.
+
 ### Other Ideas
 
 Alternative Assignments in a Diagram,  
@@ -967,12 +1013,3 @@ The Name aspect is missing from the command call notations,
 and probably also other aspects.
 
 JJ
-
-### Enumeration of Attributes
-
-A symbol might simply become an attribute depending on its characteristics. Attributes might be spread around an object’s list of related items. (See Attributes in the Objects chapter.)
-
-`The*` attributes `could` be returned by `the*` object as a `separate*` list, `instead` of `looking` them up in an object’s collection of related objects.
-
-An object might return a list of `just` its attributes, `instead` of `just all` related objects.
-

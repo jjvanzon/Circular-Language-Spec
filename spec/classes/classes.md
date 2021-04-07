@@ -4,6 +4,22 @@
 Classes
 -------
 
+### Contents
+
+- [Introduction](#introduction)
+- [Class Redirection](#class-redirection)
+- [Using Dashed Shapes](#using-dashed-shapes)
+- [Using an Object as a Class](#using-an-object-as-a-class)
+- [Using a Class Like an Object](#using-a-class-like-an-object)
+- [Object Reference with a Class](#object-reference-with-a-class)
+- [Object Reference without a Class](#object-reference-without-a-class)
+- [No Class != Defines its own Class?](#no-class--defines-its-own-class)
+- [Object Reference would define its Own Class?](#object-reference-would-define-its-own-class)
+- [Shape Both Dashed and Solid](#shape-both-dashed-and-solid)
+- [Conclusion](#conclusion)
+
+### Introduction
+
 The contents of an object might be arbitrary. Anything may be put inside an object:
 
 ![](images/Classes.001.png)

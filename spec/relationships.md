@@ -4,6 +4,34 @@
 Relationships
 -------------
 
+### Contents
+
+- [Introduction](#introduction)
+- [Relationships Between Classes](#relationships-between-classes)
+    - [Related Item with a Class](#related-item-with-a-class)
+    - [Related Item Without a Class](#related-item-without-a-class)
+    - [Related Lists](#related-lists)
+    - [Related List Without a Class](#related-list-without-a-class)
+    - [Related List with a Class](#related-list-with-a-class)
+    - [Related List with Multiple Classes](#related-list-with-multiple-classes)
+- [Bidirectional Relationships](#bidirectional-relationships)
+    - [Compared to Unidirectional Relationships](#compared-to-unidirectional-relationships)
+    - [1 to 1 Relationship](#1-to-1-relationship)
+    - [Relational Ring](#relational-ring)
+    - [Lists](#lists)
+    - [1 to N Relationship](#1-to-n-relationship)
+    - [N to 1 Relationship](#n-to-1-relationship)
+    - [N to N Relationship](#n-to-n-relationship)
+    - [Relationship with Multiple Classes](#relationship-with-multiple-classes)
+    - [Class Relating to Itself](#class-relating-to-itself)
+    - [Example](#example)
+- [Bidirectional Relationships Between Objects](#bidirectional-relationships-between-objects)
+    - [Pairs of Related Objects](#pairs-of-related-objects)
+    - [Lists](#lists-1)
+    - [Object Related to Itself](#object-related-to-itself)
+- [Bidirectional Relationship Synchronization](#bidirectional-relationship-synchronization)
+    - [Implementation](#implementation)
+
 ### Introduction
 
 This topic aims to introduce the idea that the build up of classes might be viewed as a model of relationships between classes. A notation for bidirectional relationships is suggested. An attempt is also made to describe how relations between classes would compare to relations between objects.

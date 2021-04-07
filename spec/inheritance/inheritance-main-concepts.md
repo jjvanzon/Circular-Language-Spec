@@ -6,6 +6,22 @@ Main Concepts
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Introduction](#introduction)
+- [Main Concepts](#main-concepts-1)
+- [Class Inheritance](#class-inheritance)
+- [Object Inheritance](#object-inheritance)
+- [Interface Inheritance](#interface-inheritance)
+- [List Inheritance](#list-inheritance)
+- [System Inheritance](#system-inheritance)
+- [Alternate Version Through Inheritance](#alternate-version-through-inheritance)
+- [Miscellaneous Inheritance Situations](#miscellaneous-inheritance-situations)
+    - [Command Inheritance](#command-inheritance)
+    - [Backward Relation to Derived Classes](#backward-relation-to-derived-classes)
+    - [Multiple Objects Sharing One Base Object](#multiple-objects-sharing-one-base-object)
+    - [Inheriting Multiply from the Same Class](#inheriting-multiply-from-the-same-class)
+
 ### Introduction
 
 This documentation folder covers the concept of inheritance. This concept has been present inside object oriented programming languages for decades. But the new computer language takes it a little bit further. In other languages one class can inherit from another class, taking over all its characteristics before the derived class gets extended or altered. Inheritance goes further than that in the new computer language. Next to class inheritance (the traditional form of inheritance), there is also object inheritance. This means, that one object takes over the characteristics of a specific other object. In fact, the other object melts together with the new object. When you change base members of the new object, the base object’s data also changes. This is callled object inheritance. There are even more forms of inheritance. A collection can be inherited from, so that a whole existing table of items can be extended with new columns. This is called list inheritance. A whole system can also inherit from another system, taking over all of its characteristics, and the derived system can be altered, augmented, specialized and extended. This is called system inheritance. If the original system gets changed, this may also change the derived systems. So basically: everything can be inherited from and this can render specialized versions of any class, object, collection or module.

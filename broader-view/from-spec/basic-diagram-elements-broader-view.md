@@ -6,6 +6,20 @@ Basic Diagram Elements | Broader View
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Introduction](#introduction)
+- [Circles & Triangles](#circles--triangles)
+- [Squares & Diamonds](#squares--diamonds)
+- [Pentagons](#pentagons)
+- [Nonagon](#nonagon)
+- [Wavy Line](#wavy-line)
+- [Access Marks](#access-marks)
+- [Line Direction](#line-direction)
+- [Object Reference](#object-reference)
+
+### Introduction
+
 For some reason the choices for the different shapes is sometimes commented on too.
 
 ### Circles & Triangles

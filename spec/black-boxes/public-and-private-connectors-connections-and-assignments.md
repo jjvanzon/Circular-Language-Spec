@@ -6,6 +6,50 @@ Public & Private Connectors, Connections & Assignments
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Public & Private Connectors](#public--private-connectors)
+    - [Object Connectors](#object-connectors)
+    - [Class Connectors](#class-connectors)
+    - [Value Connectors](#value-connectors)
+    - [Data Connectors](#data-connectors)
+    - [Clone Connectors](#clone-connectors)
+    - [Existence Connectors](#existence-connectors)
+    - [Execute Connectors](#execute-connectors)
+    - [Add And Remove Connectors ...](#add-and-remove-connectors-)
+    - [Remarks](#remarks)
+        - [Object-Bound & Reference Bound Connectors](#object-bound--reference-bound-connectors)
+        - [Object Class Connectors](#object-class-connectors)
+        - [Class Get and Use As Class Connectors](#class-get-and-use-as-class-connectors)
+        - [Value Connectors](#value-connectors-1)
+        - [Data Connectors](#data-connectors-1)
+        - [Clone Connectors](#clone-connectors-1)
+        - [Interface Connectors & Other Connectors](#interface-connectors--other-connectors)
+        - [Preliminary System Command Notation](#preliminary-system-command-notation)
+- [Public & Private Connections](#public--private-connections)
+    - [Object Connections](#object-connections)
+    - [Class Connections](#class-connections)
+    - [Value Connections](#value-connections)
+    - [Clone Connections](#clone-connections)
+    - [New & Annul Calls](#new--annul-calls)
+    - [Execute Connections](#execute-connections)
+    - [< Add And Remove Connections ... >](#-add-and-remove-connections--)
+    - [Remarks](#remarks-1)
+        - [Friend and Private Connections](#friend-and-private-connections)
+        - [Object Set Connections](#object-set-connections)
+        - [Class Connections](#class-connections-1)
+        - [Value Connections](#value-connections-1)
+        - [Data Connections](#data-connections)
+        - [Clone Connections](#clone-connections-1)
+        - [Existence & Execute Connections](#existence--execute-connections)
+- [Public & Private Assignment](#public--private-assignment)
+    - [Object Assignment](#object-assignment)
+    - [Class Assignment](#class-assignment)
+    - [Class Get Connection](#class-get-connection)
+    - [Remarks](#remarks-2)
+        - [Only Object and Class Assignments](#only-object-and-class-assignments)
+        - [Connectors & Assignments](#connectors--assignments)
+
 ### Public & Private Connectors
 
 The following articles display the various access connectors an object can have.

@@ -6,6 +6,17 @@ Achievability | Generic, No Generators
 
 `[ Out of Scope ]`
 
+### Contents
+
+- [Introduction](#introduction)
+- [Attributes](#attributes)
+- [Related Items](#related-items)
+- [Related Lists](#related-lists)
+- [User Interface](#user-interface)
+- [All Concepts Can Become Generic, Except For One: Methods](#all-concepts-can-become-generic-except-for-one-methods)
+
+### Introduction
+
 Computer Language version 0.9 was a code generator. This code generator was quite hard to make, even after implementing several good ideas for organizing its code. It still happened frequently, that *something* in the generated code was missing, or some situation was not accounted for. And it made the code generator produce uncompilable code. You could argue that the code generator was just not well written, but it is still a fact that the code generator was simply very hard to make.
 
 Then, for Computer Language 2.0 I decided to implement things in a different way. I made it a goal to make Computer Language run on generic modules. Instead of regenerating the whole program every time, Computer Language would become an engine, that simply takes a program description and adapts itself to it.

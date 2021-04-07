@@ -6,19 +6,32 @@ Special Access
 
 `[ Preliminary documentation ]`
 
-(From the original Symbol documentation)
+### Contents
 
-### Access Ways
+- [Introduction](#introduction)
+- [Neighbor Access](#neighbor-access)
+- [Child Access](#child-access)
+- [Global Access](#global-access)
+- [Pentagons not Exchangeable with Triangles and Circles](#pentagons-not-exchangeable-with-triangles-and-circles)
+- [Extra Indication](#extra-indication)
+- [Interface Access](#interface-access)
+- [Clause Access](#clause-access)
+- [Modules, Interfaces and Clauses](#modules-interfaces-and-clauses)
+- [Brainstorm](#brainstorm)
+
+### Introduction 
+
+(From the original Symbol documentation)
 
 < Do neighbor access and child access protect the independence of types? As a substitute for the old, false rule: ‘Can’t call upward in the ancestry’? >
 
 There’s several ways to access a procedure. The most common way is for procedures of the same object to call upon each other. The second most common way is for a parent to access a child’s procedures. A global object is accessible from anywhere within the module and there are more ways. I will discuss these different ways of access one by one in this section.
 
-#### Neighbor Access
+### Neighbor Access
 
 < Discuss procedures within the same object accessing each other. >
 
-#### Child Access
+### Child Access
 
 The normal way of accessing an object is *child access*: an object can only access its what’s inside of it: its ancestors.
 
@@ -41,7 +54,7 @@ The object is then accessing this *reference*, which is inside the object. The r
 Variables declared inside a parent block in a procedure are accessible directly by the child blocks. Variables declared inside a child block are inaccessible to a parent block.  
 />
 
-#### Global Access
+### Global Access
 
 < Nice sentence:  
 Module makes all direct children accessible to all ancestors >
@@ -90,11 +103,11 @@ This is also an invitation to making a more refined division in software compone
 
 The child module in the picture above can only access things global inside itself. It can not access the global things of its parent module.
 
-#### Pentagons not Exchangeable with Triangles and Circles
+### Pentagons not Exchangeable with Triangles and Circles
 
 A pentagon is not exchangeable with triangles and circles as much as triangles and circles are exchangeable. Global has the side effect that things become accessible where otherwise inaccessible. If you suddenly replace the pentagon with a circle or triangle it would mean that things formerly global are no longer global and all sorts of accesses in the module object are suddenly invalid. For that a pentagon stays a pentagon and a reference to it can only be a pentagon itself.
 
-#### Extra Indication
+### Extra Indication
 
 There are two common ways to extra denote that you’re referencing something global.
 
@@ -112,7 +125,7 @@ You can also put a multiply peeled pentagon in the direct parent object and refe
 
 This multiply peeled pentagon doesn’t exist either.
 
-#### Interface Access
+### Interface Access
 
 The separate interfaces of an object:
 
@@ -137,7 +150,7 @@ So its like the borders of triangles can be ignored in inward access. You don’
 
 < This concept could have a place in Genericity. >
 
-#### Clause Access
+### Clause Access
 
 < Nice sentence:  
 A procedure makes all direct children accessible to all blocks.  
@@ -161,7 +174,7 @@ But a clause does not have access to a clause that doesn’t encapsulate it.
 
 So its like the borders of clauses can be ignored in outward access.
 
-#### Modules, Interfaces and Clauses
+### Modules, Interfaces and Clauses
 
 So usually only parents can access their ancestor’s things.
 
@@ -169,13 +182,11 @@ Modules, interface implementations and clauses make exceptions on those rules.
 
 The public ancestors of a module are accessible from anywhere within the module, the borders of triangles can be ignored and a clause can directly access anything in its descendant clauses and its procedure definition.
 
-#### Brainstorm
-
-##### => Access Ways
+### Brainstorm
 
 Clause members can access the members of its ancestor procedure symbols. 
 
-#### Other
+-----
 
 Module and triangle are alike. They change the way you can access their members.
 

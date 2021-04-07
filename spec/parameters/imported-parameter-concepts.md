@@ -6,6 +6,26 @@ Imported Parameter Concepts
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Introduction](#introduction)
+- [Required & Optional](#required--optional)
+    - [Concept](#concept)
+    - [Required & Optional in a Diagram](#required--optional-in-a-diagram)
+    - [Ideas about Required and Optional](#ideas-about-required-and-optional)
+- [Variable Amount of Arguments](#variable-amount-of-arguments)
+    - [Concept](#concept-1)
+    - [Variable amount of Parameters in a Diagram](#variable-amount-of-parameters-in-a-diagram)
+    - [Ideas about Variable Amount of Parameters](#ideas-about-variable-amount-of-parameters)
+- [Return Values](#return-values)
+    - [Concept](#concept-2)
+    - [In a Diagram](#in-a-diagram)
+- [Parameter Order](#parameter-order)
+    - [Concept](#concept-3)
+    - [In a Diagram](#in-a-diagram-1)
+
+### Introduction
+
 The following articles will explain some concepts from other programming languages and the how they are implemented in the new computer language.
 
 - *Required & Optional*

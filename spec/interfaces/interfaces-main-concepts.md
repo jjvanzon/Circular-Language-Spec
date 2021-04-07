@@ -6,6 +6,34 @@ Main Concepts
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Introduction](#introduction)
+- [Interface = Publics](#interface--publics)
+- [Interface & Implementation](#interface--implementation)
+- [Interface = Objects Melting Together](#interface--objects-melting-together)
+- [Interface = Contract](#interface--contract)
+- [Multiple Interfaces](#multiple-interfaces)
+- [Interface Type Control](#interface-type-control)
+- [Explicit Interfaces](#explicit-interfaces)
+- [Implicit Interfaces](#implicit-interfaces)
+- [Polymorphism](#polymorphism)
+- [Interface Object Resolution](#interface-object-resolution)
+- [Inheritance](#inheritance)
+- [Main Usages of Contracts](#main-usages-of-contracts)
+- [Command Interfaces](#command-interfaces)
+- [Target Interfaces](#target-interfaces)
+- [Interface Referencing and Redirecting](#interface-referencing-and-redirecting)
+    - [Interface Reference](#interface-reference)
+    - [Command Class Interface](#command-class-interface)
+    - [Class Command Interface](#class-command-interface)
+    - [Command Definition Interface Redirection](#command-definition-interface-redirection)
+    - [Command Reference Interface Redirection](#command-reference-interface-redirection)
+    - [Command Call Interface Redirection](#command-call-interface-redirection)
+    - [Active Clause Interface Redirection](#active-clause-interface-redirection)
+    - [Inactive Clause Interface Redirection](#inactive-clause-interface-redirection)
+- [Relations Through Interfaces](#relations-through-interfaces)
+
 ### Introduction
 
 Up till now the idea of interfaces was fully left out of the stories. This chapter makes the concept of interfaces catch up with the rest of the documentation. The basic concept of interfaces is covered along with its diagram notation. Also covered are: interface assignment, interface reference and relations that form through the use of interfaces. Another concept, yet to be worked out, is how commands of an object are grouped by site: an object can have commands, defined on different sites, and the commands should be grouped by site in order to judge how reliable the commands are *(grouped by source)*. As interfaces can be applied to objects, but interfaces can also be applied to *commands*.

@@ -6,6 +6,31 @@ Achievability | Programming Language Programmed Within Itself
 
 `[ Out of Scope ]`
 
+### Contents
+
+- [Introduction](#introduction)
+- [The Six Layers](#the-six-layers)
+- [Layer 1: The ccc-Layer](#layer-1-the-ccc-layer)
+- [Layer 2: The gcc-Layer](#layer-2-the-gcc-layer)
+- [Layer 3: The ggc-Layer](#layer-3-the-ggc-layer)
+- [About The Layers Up Until Now](#about-the-layers-up-until-now)
+- [Layer 4: The ggg-Layer](#layer-4-the-ggg-layer)
+- [Generic & Non-Generic Classes](#generic--non-generic-classes)
+- [Summary of Layers 1 - 4](#summary-of-layers-1---4)
+- [Layer 5: The pgg-Layer](#layer-5-the-pgg-layer)
+- [The ggg-Layer Not Required](#the-ggg-layer-not-required)
+- [Layer 6: The ppg-Layer](#layer-6-the-ppg-layer)
+- [Summary Of The Layers](#summary-of-the-layers)
+- [Parsed Layers Not Required](#parsed-layers-not-required)
+- [Indirection On Class Assignment](#indirection-on-class-assignment)
+- [No Indirections On Object Access](#no-indirections-on-object-access)
+- [How Data Is Stored](#how-data-is-stored)
+- [Layer 7 Is For Fun](#layer-7-is-for-fun)
+- [Slowing Down On Each Added Layer](#slowing-down-on-each-added-layer)
+- [Loose Ideas](#loose-ideas)
+
+### Introduction
+
 *(This article also covers subjects about the implementation of the code base.)*
 
 Software development projects take a lot of time. Think of how much you have to test for even a smaller project. I have seen it in some of the projects I did at home, such as Finney and Music Thumper. Using the normal way to develop software it is impossible to create the amount of software, that I want to create all by myself.

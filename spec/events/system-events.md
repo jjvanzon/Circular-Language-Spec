@@ -6,6 +6,21 @@ System Events
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Introduction](#introduction)
+    - [Changed Events](#changed-events)
+    - [Changing Events](#changing-events)
+    - [Get Events](#get-events)
+    - [Use Events](#use-events)
+    - [List Events](#list-events)
+    - [Execution & Existence Events](#execution--existence-events)
+    - [Pointer to Pointer Events](#pointer-to-pointer-events)
+- [System Events in Normal Notation](#system-events-in-normal-notation)
+- [Simplified System Event Notation](#simplified-system-event-notation)
+- [System Event Parameters](#system-event-parameters)
+- [System Event Design Choices](#system-event-design-choices)
+
 ### Introduction
 
 Without even defining any objects or class libraries, there are already a lot of standard events you can use. In most situations these will suffice.

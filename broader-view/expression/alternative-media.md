@@ -6,6 +6,19 @@ Alternative Media Ideas
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Out of the original Symbol documentation](#out-of-the-original-symbol-documentation)
+    - [Language Integration](#language-integration)
+    - [Real Language](#real-language)
+    - [Brainstorm](#brainstorm)
+    - [Other notations](#other-notations)
+        - [Dimensional Table notation](#dimensional-table-notation)
+        - [Tree Notation](#tree-notation)
+- [Brainstorm](#brainstorm-1)
+- [Other ideas](#other-ideas)
+    - [Information Language](#information-language)
+
 ### Out of the original Symbol documentation
 
 2008-10-09  

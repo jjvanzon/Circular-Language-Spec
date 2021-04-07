@@ -6,6 +6,19 @@ Edge Cases
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Member Grouping](#member-grouping)
+    - [Explicit Interface Dependency](#explicit-interface-dependency)
+    - [Call Overhead](#call-overhead)
+- [Interface Referrers](#interface-referrers)
+- [Reliability of Interfaces](#reliability-of-interfaces)
+    - [Private Backward Relation](#private-backward-relation)
+    - [Public Backward Relation](#public-backward-relation)
+    - [Manual Backward Relations](#manual-backward-relations)
+    - [Conditional Backward Relations](#conditional-backward-relations)
+    - [Preliminary Backward Relation](#preliminary-backward-relation)
+
 ### Member Grouping
 
 Triangles could be used to indicate a benign member grouping:

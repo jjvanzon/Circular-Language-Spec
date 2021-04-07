@@ -6,6 +6,54 @@ Automatic Containment
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Introduction](#introduction)
+- [A slice of referential structure](#a-slice-of-referential-structure)
+- [The main solution](#the-main-solution)
+- [The closest mutual parent](#the-closest-mutual-parent)
+- [Branched out reference lines](#branched-out-reference-lines)
+- [Recap](#recap)
+- [Zooming in, zooming out and making changes](#zooming-in-zooming-out-and-making-changes)
+- [Analogy to the real world](#analogy-to-the-real-world)
+- [Ignored concepts](#ignored-concepts)
+    - [Physical location](#physical-location)
+    - [Caching](#caching)
+    - [Pointers](#pointers)
+    - [Residence on a site](#residence-on-a-site)
+    - [Central registration lists](#central-registration-lists)
+    - [Classes, interfaces and methods](#classes-interfaces-and-methods)
+    - [Fixed logical residence](#fixed-logical-residence)
+    - [Class pointers](#class-pointers)
+    - [Duality of relations](#duality-of-relations)
+    - [Module](#module)
+- [Loose Ideas](#loose-ideas)
+- [Automatic Containment Ideas](#automatic-containment-ideas)
+- [Esthetic reference & real reference replaces imaginary reference](#esthetic-reference--real-reference-replaces-imaginary-reference)
+- [Other](#other)
+- [Commands with Fixed Logical Residence](#commands-with-fixed-logical-residence)
+- [Ideas From Commands & Classes Loosely coupled](#ideas-from-commands--classes-loosely-coupled)
+    - [Automatic containment of independent commands](#automatic-containment-of-independent-commands)
+    - [Expressing a call to a command as a call to multiple objects](#expressing-a-call-to-a-command-as-a-call-to-multiple-objects)
+    - [Command definition accessing the objects](#command-definition-accessing-the-objects)
+    - [Editing a call](#editing-a-call)
+- [Ideas From the project Work Out Parameter Articles](#ideas-from-the-project-work-out-parameter-articles)
+- [Out of the original Symbol documentation](#out-of-the-original-symbol-documentation)
+    - [Overlapping Hierarchies](#overlapping-hierarchies)
+        - [Containment for Divergence, Lines for Convergence](#containment-for-divergence-lines-for-convergence)
+        - [Triangles for Arbitrary Groupings](#triangles-for-arbitrary-groupings)
+        - [Procedures can Overlap](#procedures-can-overlap)
+        - [Another Thing](#another-thing)
+    - [Integrating Structure and Symbol](#integrating-structure-and-symbol)
+    - [Brainstorm](#brainstorm)
+    - [Contaiment by Containment and Reference](#contaiment-by-containment-and-reference)
+    - [Other](#other-1)
+    - [Object Basics](#object-basics)
+        - [Referencing a Parent](#referencing-a-parent)
+- [More Ideas](#more-ideas)
+
+### Introduction
+
 The concept of automatic containment is about translating a referential structure to a containment structure.
 
 That might make relations between object more easy to overview.

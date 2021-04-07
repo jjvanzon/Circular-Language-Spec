@@ -6,6 +6,24 @@ Relations Between Commands & Objects
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Concept](#concept)
+    - [Object Relations](#object-relations)
+    - [Class Relations](#class-relations)
+- [In a Diagram](#in-a-diagram)
+    - [Object Relations](#object-relations-1)
+    - [Class Relations](#class-relations-1)
+- [Use This](#use-this)
+    - [Out of Commands & Classes Loosely Coupled](#out-of-commands--classes-loosely-coupled)
+        - [Inactive Command References](#inactive-command-references)
+        - [Local Variables](#local-variables)
+- [Loose Ideas](#loose-ideas)
+    - [Parameter and Argument](#parameter-and-argument)
+        - [Brainstorm](#brainstorm)
+            - [Other](#other)
+    - [Misc Ideas](#misc-ideas)
+
 ### Concept
 
 A command can contain a set of related objects. Those are the parameters of the command. A command will use objects to do its work.
@@ -113,7 +131,7 @@ It is a relation between classes, instead of a relation between objects. This au
 
 There is complete exchangeability between the class of a parameter and a command of a class.
 
-## Use This
+### Use This
 
 When you program a command, that does something, the action is immediately available in the context of any type of object, that has anything to do with that command.
 
@@ -125,9 +143,9 @@ A command can be called on each object, whose class is a parameter of the comman
 
 When you call a command on an object, the call points to the command of an object, but the object is also visible as a parameter of the call.
 
-### Out of Commands & Classes Loosely Coupled
+#### Out of Commands & Classes Loosely Coupled
 
-#### Inactive Command References
+##### Inactive Command References
 
 In the explanations above only command calls were considered, not inactive command references. Inactive command references don’t work the same as calls.
 
@@ -135,7 +153,7 @@ Calls have parameters filled in. Inactive command references don't have paramete
 
 The object of the parameter is not determined yet in an inactive command reference. However, the class of the parameter may be determined after all. Therefore, the parameters in an inactive command references may be tied to a command inside class with a class line.
 
-#### Local Variables
+##### Local Variables
 
 Local variables, as they are called in contemporary programming languages, are a lot like parameters. Unlike parameters, they are private to the command, rather than publicly written or read. Local variables are private contents of a command. Since they can not be publicly set, and you can not determine what object the private variable will hold, the command also can not become part of any arbitrary object of the class of the local variable.  
 So the command does not become part of each object of the class of that local variable, because the object of that local variable can not be freely appointed.
@@ -144,7 +162,7 @@ The local variable *might* make the command part of the class anyway, but then a
 
 - \> 2008-09-06 Not true. Just wait what it will look like relations between objects and commands.
 
-## Loose Ideas
+### Loose Ideas
 
 Commands,  
 ± 2008
@@ -155,7 +173,7 @@ The idea of multi-methods and exchangeability between class methods and method p
 
 JJ
 
-### Parameter and Argument
+#### Parameter and Argument
 
 *(From the original Symbol documentation)*
 
@@ -172,12 +190,12 @@ An argument is a public member of a diamond in execution.
 
 - Definitions of the terms parameter and argument
 
-#### Brainstorm
+##### Brainstorm
 
-##### Other
+###### Other
 
 Creation and state read and write only apply to object parameters, not to parameters that are procedures.
 
-### Misc Ideas
+#### Misc Ideas
 
 Nice phrase? "how to link objects to a command."

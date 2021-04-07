@@ -6,6 +6,42 @@ Creation Behavior
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Contents](#contents)
+- [Creation Behavior of Calls](#creation-behavior-of-calls)
+    - [Calls In A Parent Command](#calls-in-a-parent-command)
+    - [Original Problem & Solution](#original-problem--solution)
+    - [Problems Solved By Delayed Creation](#problems-solved-by-delayed-creation)
+    - [Delayed Creation Of Private Contents Only Counts For Command Calls](#delayed-creation-of-private-contents-only-counts-for-command-calls)
+    - [Compared To CPU-Like Call](#compared-to-cpu-like-call)
+    - [Diagram Notation](#diagram-notation)
+- [Creation Behavior of Clauses](#creation-behavior-of-clauses)
+    - [In a Diagram](#in-a-diagram)
+- [Creation Behavior of ‘Inactive Calls’](#creation-behavior-of-inactive-calls)
+    - [In a Diagram](#in-a-diagram-1)
+- [No Overhead of Command Creation](#no-overhead-of-command-creation)
+- [No Circular Command Creation](#no-circular-command-creation)
+    - [In a Diagram](#in-a-diagram-2)
+- [No Private Contents in a Call in a Definition](#no-private-contents-in-a-call-in-a-definition)
+    - [In a Diagram](#in-a-diagram-3)
+- [A Call in a Call Shows Privates When Running](#a-call-in-a-call-shows-privates-when-running)
+    - [In a Diagram](#in-a-diagram-4)
+- [Active Command in Inactive Command](#active-command-in-inactive-command)
+    - [In a Diagram](#in-a-diagram-5)
+- [Comparison to CPU-Like Call Instantiation](#comparison-to-cpu-like-call-instantiation)
+    - [What happens in other programming languages?](#what-happens-in-other-programming-languages)
+    - [Why does that not work for my own system?](#why-does-that-not-work-for-my-own-system)
+    - [Data](#data)
+    - [Pointers to this data](#pointers-to-this-data)
+    - [Sub-commands](#sub-commands)
+    - [Parameters of these sub-commands](#parameters-of-these-sub-commands)
+    - [Assignment of data to the sub-commands’ parameters](#assignment-of-data-to-the-sub-commands-parameters)
+    - [Reason to always create and assign sub-commands…](#reason-to-always-create-and-assign-sub-commands)
+    - [How can a parameter passing assignment be stored](#how-can-a-parameter-passing-assignment-be-stored)
+    - [More Brainstorming](#more-brainstorming)
+    - [Former Text](#former-text)
+
 ### Creation Behavior of Calls
 
 A call can be present inside an object or inside another command. When a call is created, it is not immediately run, so that you get a chance to set its parameters. Before a command call is run, the command call’s public contents are there: its parameters. Those parameters are copied out of the call’s definition. The private contents are not there yet. A command’s private contents include private objects, clauses and command calls. The private contents will be copied out of the command defininition, only just before the command call runs. The public contents of a command call are added when the command object is created. The private contents of a command call are only added when its about to run. So the general rule is: creation of private contents of a command call is delayed until just before a command call is run.

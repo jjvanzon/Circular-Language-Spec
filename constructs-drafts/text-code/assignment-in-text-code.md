@@ -6,6 +6,19 @@ Assignment in Text Code
 
 `[ Deprecated documentation ]`
 
+### Contents
+
+- [Introduction to Assignment in Text Code](#introduction-to-assignment-in-text-code)
+- [Assignment in Text Code](#assignment-in-text-code-1)
+- [Value Assignment in Text Code](#value-assignment-in-text-code)
+- [Object Assignment in Text Code](#object-assignment-in-text-code)
+- [Class Assignment in Text Code](#class-assignment-in-text-code)
+- [Interface Assignment in Text Code](#interface-assignment-in-text-code)
+- [Pointer Assignment in Text Code](#pointer-assignment-in-text-code)
+- [Object Pointer Assignment in Text Code](#object-pointer-assignment-in-text-code)
+- [Class Pointer Assignment in Text Code](#class-pointer-assignment-in-text-code)
+- [Interface Pointer Assignment in Text Code](#interface-pointer-assignment-in-text-code)
+
 ### Introduction to Assignment in Text Code
 
 The articles in this folder came out of the discontinued article group *Assignment*. It partly covered a textual assignment notation. Working out text code notations currently has a very low priority. But the unfinished text is preserved here anyway.

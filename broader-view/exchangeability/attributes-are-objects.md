@@ -6,6 +6,17 @@ Attributes Are Objects
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Contents](#contents)
+- [Main Concepts](#main-concepts)
+- [Other Things](#other-things)
+- [Attributes Become Classes](#attributes-become-classes)
+- [Loose Ideas](#loose-ideas)
+    - [Attributes Are Objects](#attributes-are-objects-1)
+
+### Main Concepts
+
 __Attributes__ may very well become __Classes__ in the future. __Classes__ will eventually be capable of being configured to behave just like simple variables.
 
 A __Class__ looks exactly like a simple data type when it has the following configuration:

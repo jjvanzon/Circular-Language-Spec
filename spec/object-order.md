@@ -6,7 +6,14 @@ Object Order
 
 `[ Preliminary documentation ]`
 
-This is unfinished documentation of lower quality. It only has unfinished descriptions and loose ideas.
+*These may be rough texts that might once be used to build more polished text.*
+
+### Contents
+
+- [Brainstorm](#brainstorm)
+- [Order Matters](#order-matters)
+- [Class . OrderMatters](#class--ordermatters)
+- [Loose Ideas](#loose-ideas)
 
 ### Brainstorm
 

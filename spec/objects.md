@@ -4,6 +4,25 @@
 Objects
 -------
 
+### Contents
+
+- [Introduction](#introduction)
+- [Sub-Objects](#sub-objects)
+- [Object Reference](#object-reference)
+- [Nothing](#nothing)
+- [Multiplicity](#multiplicity)
+- [Values](#values)
+- [Attributes](#attributes)
+    - [Attributes might be Objects](#attributes-might-be-objects)
+    - [Values](#values-1)
+    - [Fixed Logical Residence](#fixed-logical-residence)
+    - [Life Time](#life-time)
+    - [Part of the Object](#part-of-the-object)
+    - [Not a Pointer](#not-a-pointer)
+    - [Summary](#summary)
+
+### Introduction
+
 In object oriented programming, an *object* might be considered the most basic element of a computer program. An object might represent a thing, an idea or a place, a number or a collection of other things or possibly anything else. All those things might be called objects.
 
 An object in a diagram might be represented by a circle:

@@ -6,6 +6,19 @@ Connectors & Connections
 
 `[ Preliminary documentation ]`
 
+### Contents
+
+- [Connectors](#connectors)
+    - [Loose Ideas about Connectors](#loose-ideas-about-connectors)
+- [Connections](#connections)
+    - [Outward and Inward Connections](#outward-and-inward-connections)
+    - [Remarks](#remarks)
+        - [Class Connections](#class-connections)
+        - [Value Connections](#value-connections)
+        - [Data Connections](#data-connections)
+        - [Clone Connections](#clone-connections)
+        - [Existence, Execute & List](#existence-execute--list)
+
 ### Connectors
 
 System command definitions are displayed in the system interface:
@@ -71,7 +84,7 @@ Each system command has a connector, so every system aspect has its own set of c
 |                        __Add__                        |                      __Remove__                       |
 | ![](images/4.%20Connectors%20&%20Connections.021.png) | ![](images/4.%20Connectors%20&%20Connections.022.png) |
 
-### Loose Ideas about Connectors
+#### Loose Ideas about Connectors
 
 System Objects,  
 2009-09-27
