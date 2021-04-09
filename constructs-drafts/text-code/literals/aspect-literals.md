@@ -1,18 +1,18 @@
 ﻿Encircle Language Construct Drafts | Text Code
 ==============================================
 
-Concept Literals
-----------------
+Aspect Literals
+---------------
 
 `[ Deprecated documentation ]`
 
-(Text code expression of a concept.)
+(Text code expression of an aspect.)
 
 ### Loose Ideas
 
 Macro keywords kunnen in de toekomst ook gebruikt worden voor access control keywords. Daarbij heb je 1 keyword, dat eigenlijk een aantal access control eigenschappen in zich heeft. (zie Symbol Language documentatie)
 
-Als je in de toekomst meer concepten krijg in Creator, dan wil je daar misschien weer notaties voor hebben in text code. Daar had ik nog niet aan gedacht. Dat betekent dat bij uitbreiding van Creator met meer Creator structures, je ook de parser uit moet breiden. Er zal wel een standaard notatie voor verzonnen kunnen worden, maar vaak wil je denk ik een simpelere, heldere notatie voor bepaalde secundaire basisconcepten hebben.
+Als je in de toekomst meer aspecten krijg in Creator, dan wil je daar misschien weer notaties voor hebben in text code. Daar had ik nog niet aan gedacht. Dat betekent dat bij uitbreiding van Creator met meer Creator structures, je ook de parser uit moet breiden. Er zal wel een standaard notatie voor verzonnen kunnen worden, maar vaak wil je denk ik een simpelere, heldere notatie voor bepaalde secundaire basis aspecten hebben.
 
 -----
 

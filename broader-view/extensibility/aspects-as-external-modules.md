@@ -1,7 +1,7 @@
 ﻿Encircle Language Broader View | Extensibility
 ==============================================
 
-Concepts As External Modules
+Aspects As External Modules
 ----------------------------
 
 `[ Preliminary documentation ]`
@@ -20,32 +20,32 @@ __Contents__
         - [No Control Over Retaining the System Attribute](#no-control-over-retaining-the-system-attribute)
     - [N `<=>` N](#n--n)
     - [Loose Ideas](#loose-ideas)
-    - [Concepts As External Modules](#concepts-as-external-modules-1)
+    - [Aspects As External Modules](#aspects-as-external-modules-1)
 
 ### Introduction
 
-Concepts add something to every class that supports the concept. The class doesn’t get polluted directly. A concept adds a sub object operating on the class’s members in a generic way.
+Aspects add something to every class that supports the aspect. The class doesn’t get polluted directly. An aspect adds a sub object operating on the class’s members in a generic way.
 
-All I need to do, is invent a way to describe any of the concepts I had already implemented in Computer Language 0.9 in text code, and how do I let each class decide which concept to support. How do I set a default as to which concepts classes should support?
+All I need to do, is invent a way to describe any of the aspects I had already implemented in Computer Language 0.9 in text code, and how do I let each class decide which aspect to support. How do I set a default as to which aspects classes should support?
 
-The main part of the text code description of a concept is the code as generated before, but now with template placeholders in it.  
-Shouldn’t be hard. In the code generator version of computer language, every module decided which concepts to support
+The main part of the text code description of an aspect is the code as generated before, but now with template placeholders in it.  
+Shouldn’t be hard. In the code generator version of computer language, every module decided which aspects to support
 
-< I need to incorporate a story from Software System.doc about concepts about dependencies. >
+< I need to incorporate a story from Software System.doc about aspects about dependencies. >
 
 ### Brainstorm
 
-In Computer Language 0.9 every concept (for instance Copy-Paste, Default Values and Enums) used to have its own part of the code generator. In a generic version of Computer Language, this would translate to every concept being its own generic part of the engine. It is indeed easier to program the concepts as part of an engine, rather than part of a code generator, but it gets even easier. The concepts are no longer part of the engine either. They are become external modules, written in a custom text code, that can be loaded by the engine and run inside it.
+In Computer Language 0.9 every aspect (for instance Copy-Paste, Default Values and Enums) used to have its own part of the code generator. In a generic version of Computer Language, this would translate to every aspect being its own generic part of the engine. It is indeed easier to program the aspects as part of an engine, rather than part of a code generator, but it gets even easier. The aspects are no longer part of the engine either. They are become external modules, written in a custom text code, that can be loaded by the engine and run inside it.
 
 #### Generic, Not Generated
 
-Instead of generating code for each concept, each basic concept gets its own module in the Creator ‘engine’ so to say.
+Instead of generating code for each aspect, each basic aspect gets its own module in the Creator ‘engine’ so to say.
 
-Ik bekijk nu de basale concepten, en kijk hoe die van gegenereerd, naar generiek kunnen gaan.
+Ik bekijk nu de basale aspecten, en kijk hoe die van gegenereerd, naar generiek kunnen gaan.
 
 #### System Structure Elements
 
-< 2007-10-04 Applies to Extensible Concepts >  
+< 2007-10-04 Applies to Extensible Aspects >  
 There are several attributes that J Data adds automatically, that aren’t defined by the one building the Structure. There are also other structure elements added by J Data automatically.
 
 In this section I will give an overview of all system structure elements, give information on how they are managed, how they are customized and what you should be aware of.
@@ -119,14 +119,14 @@ For n`<=>`n, x`<=>`n and n`<=>`x relaties you can’t give the relation classes 
 
 *These were moved here from the Projects documentation, to the System documentation, to integrate them with the System documentation. Remaining ideas should be moved back to the Projects documentation after that. The Projects documentation is where Ideas belong.*
 
-##### Concepts As External Modules
+##### Aspects As External Modules
 
-Moeten er concepten bibliotheek bestaan?  
-Of: moet een module naast classes en data ook concepten kunnen definiëren, die vervolgens op gelijk welke gegevensstructuur kan worden toegepast? Moet een concept een synchrone toepassing kunnen hebben, dus zichzelf opbouwen vanaf dat er nog geen gegevens zijn.
+Moeten er aspecten bibliotheek bestaan?  
+Of: moet een module naast classes en data ook aspecten kunnen definiëren, die vervolgens op gelijk welke gegevensstructuur kan worden toegepast? Moet een aspect een synchrone toepassing kunnen hebben, dus zichzelf opbouwen vanaf dat er nog geen gegevens zijn.
 
 -----
 
-Dit extensible concepts model is een erg aantrekkelijk vlak voor mij. Dit loopt in 1 lijn met Creator in Creator en Generic not Generated. Dit kan een project worden voor nà versie 2.0 + een aantal extra concepten geïmplementeerd, als creator extensie. In wezen breid je creator uit door concepten toe te voegen. Maar niet alle objecten op de hele wereld implementeren alle concepten. Die draaien in dat geval allemaal op een andere creator. Of hoe?
+Dit extensible aspects model is een erg aantrekkelijk vlak voor mij. Dit loopt in 1 lijn met Creator in Creator en Generic not Generated. Dit kan een project worden voor nà versie 2.0 + een aantal extran aspecten geïmplementeerd, als creator extensie. In wezen breid je creator uit door aspecten toe te voegen. Maar niet alle objecten op de hele wereld implementeren alle aspecten. Die draaien in dat geval allemaal op een andere creator. Of hoe?
 
 -----
 
@@ -134,15 +134,15 @@ Kan gegevens als module worden gezien, waarvan de structuur mogelijk uit een and
 
 -----
 
-De onvoorwaardelijke 'reflectiviteit' van Creator, is het middel voor uitbreiding met concepten.
+De onvoorwaardelijke 'reflectiviteit' van Creator, is het middel voor uitbreiding met aspecten.
 
 -----
 
-You have to note that when something is a coding concept, and not a coding principle, it doesn’t mean it’s less important for the programming language. It just means that it can be expressed using more basic coding principles using reflective data.  
-That does mean that Attributes could become a concept, and perhaps even that relations could too. Funny. Perhaps I can strip the core even further down.  
-Funny. Perhaps object oriented can be defined as a concept too.  
+You have to note that when something is a coding aspect, and not a coding principle, it doesn’t mean it’s less important for the programming language. It just means that it can be expressed using more basic coding principles using reflective data.  
+That does mean that Attributes could become an aspect, and perhaps even that relations could too. Funny. Perhaps I can strip the core even further down.  
+Funny. Perhaps object oriented can be defined as an aspect too.  
 Deep. Cool stuff.  
-Concept literals is a great help in this as well.
+Aspect literals is a great help in this as well.
 
 -----
 

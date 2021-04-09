@@ -33,8 +33,8 @@ Diagram Expression concepts:
 - Diagram Metrics
 - System Methods
 
-The diagram does need to be able to display the whole system in terms of just coding principles, and not coding concepts, because you need to be able to start programming coding concepts using the diagrams. The diagrams need to already be in the language, when you don’t yet have coding concepts.  
-However, coding concepts will be applying to the display of diagrams.
+The diagram does need to be able to display the whole system in terms of just coding principles, and not coding aspects, because you need to be able to start programming coding aspects using the diagrams. The diagrams need to already be in the language, when you don’t yet have coding aspects.  
+However, coding aspects will be applying to the display of diagrams.
 
 -----
 
@@ -251,7 +251,7 @@ JJ
 Basic Diagram Elements,  
 2008-08-02
 
-For each basic diagram element, you have to motivate why this is the most appropriate symbol for it. Why this symbol is chosen. This motivation is often just philosophical of nature. In the articles about a coding concept, that also introduce a basic symbol, you also have to put this motivation.
+For each basic diagram element, it might be motivated why this is the most appropriate symbol for it. Why this symbol is chosen. This motivation is often just philosophical of nature. In the articles about a coding concept, that also introduce a basic symbol, you also might put this motivation.
 
 JJ
 
@@ -380,14 +380,14 @@ Other
 A text out of the old symbol documentation said:
 
 List diagram elements  
-List programming aspects  
-Programming aspects with diagram elements.  
-Then associate diagram elements with programming aspects and
+List programming concepts  
+Programming concepts with diagram elements.  
+Then associate diagram elements with programming concepts and
 
 Not so long ago I separated the conceptual explanations from the expression in a diagram and in text code.  
 But the list above leads to not only explaining all concepts in a diagram,  
-but also all diagram elements as a concept.  
-That can lead to the specification of the most basic concepts, which have the most basic expression in a diagram.  
+but also all diagram elements as an aspect.  
+That can lead to the specification of the most basic aspects, which have the most basic expression in a diagram.  
 Maybe the order of explanations will be adapted to that.  
 But I won’t start working on that right now. It is something for the future.
 

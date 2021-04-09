@@ -63,7 +63,7 @@ You might find the following content here:
 
 - ### Macro Keywords
 
-    - Macro keywords would be an idea, that may have come from an older design of the diagram notation. Access modifier literals might have been considered macro keywords. Some of the access modifiers, like __Public Read-Only__ could mean: __Get Public__ and __Set Private__. So the literals __Get Public__ and __Set Private__ may be replaced by the ‘macro keyword’ __Public Read-Only__. So there would be one keyword replacing a string of other keywords. That might have been the original concept of macro keywords. What place it may still have in the a newer design of the language might not be that clear. It might become part of the subject of *concept literals*, with which you might introduce new textual notations.
+    - Macro keywords would be an idea, that may have come from an older design of the diagram notation. Access modifier literals might have been considered macro keywords. Some of the access modifiers, like __Public Read-Only__ could mean: __Get Public__ and __Set Private__. So the literals __Get Public__ and __Set Private__ may be replaced by the ‘macro keyword’ __Public Read-Only__. So there would be one keyword replacing a string of other keywords. That might have been the original concept of macro keywords. What place it may still have in the a newer design of the language might not be that clear. It might become part of the subject of *aspect literals*, with which you might introduce new textual notations.
 
 - ### Pointer Operators
 

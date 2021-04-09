@@ -80,7 +80,7 @@ JJ
 
 Classes & interfaces implementation
 
-Classes, interfaces en ook relations kunnen concepts worden, in plaats van principles, omdat het slechts om reenforcement gaat: je pint een stuk structuur van het object vast aan een ander object.  
+Classes, interfaces en ook relations kunnen aspects worden, in plaats van principles, omdat het slechts om reenforcement gaat: je pint een stuk structuur van het object vast aan een ander object.  
 De code base kan ook zonder.  
 Dat geld dan voor veel van wat nu Coding Principles zijn.
 
@@ -102,7 +102,7 @@ In Coding Principles, Classes and Coding Principles, Interfaces:
 
 Classes & Interfaces,
 
-You should introduce type safety and genericity sooner, in the coding principles. Type safety can be implemented as a concept, but assigning a class or interface really doesn't make any sense without it, so you have to introduce it in the articles about classes and interfaces.
+You should introduce type safety and genericity sooner, in the coding principles. Type safety can be implemented as an aspect, but assigning a class or interface really doesn't make any sense without it, so you have to introduce it in the articles about classes and interfaces.
 
 A classes fixes the collection of sub objects that
 exist in it, and the names for those sub-objects.

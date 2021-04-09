@@ -1,12 +1,12 @@
 ﻿Encircle Language | Archive
 ===========================
 
-Command As A Concept Brainstorm Texts
+Command as an Aspect Brainstorm Texts
 -------------------------------------
 
 `[ Deprecated documentation ]`
 
-### Commands as a concept
+### Commands as an aspect
 
 Keep in mind, that in earlier articles it was explained, that a command is a separate entity, as opposed to being part of a specific class.
 
@@ -33,7 +33,7 @@ A new command object is created on each call to the command. Then the input is s
 
 The parameters are not really a list of objects passed to the call anymore. The call is an object, that has a set of object references in it, that are individually set.
 
-All of this behavior is implemented as the __Command__ concept. The __Command__ concept can be supported by any object, upon which the object becomes a command.
+All of this behavior is implemented as the __Command__ aspect. The __Command__ aspect can be supported by any object, upon which the object becomes a command.
 
 The code base, however, in some basic form needs to support an object’s ability to execute.
 
@@ -49,7 +49,7 @@ A command has added behavior, compared to a normal object:
 
 For the rest objects and commands are identical.
 
-The added behavior of commands is implemented as the __Command__ concept. When an object supports the __Command__ concept, it automatically becomes a command. The code base only needs to support an object’s ability to execute in some basic form. But most of the functionality for commands is programmed within the new computer language itself. The code base only supplies the basic need to facilitate it.
+The added behavior of commands is implemented as the __Command__ aspect. When an object supports the __Command__ aspect, it automatically becomes a command. The code base only needs to support an object’s ability to execute in some basic form. But most of the functionality for commands is programmed within the new computer language itself. The code base only supplies the basic need to facilitate it.
 
 For a command to execute, the sub-commands need to execute in the right order. The sub-commands again execute sub-commands. This going by the commands recursively probably needs to be present in the code base. The outer commands are machine instructions, which will also be called by the code base.
 
@@ -58,7 +58,7 @@ A command actually *is* an object, with some special properties: it executes, it
 All you need to do is assign the input parameters, ‘run’ the object, and assign the output to other objects.
 
 For an object to have a reference to a command, you *have to* be able to define a *relation* between a command and an object. This is only possible, if a command *is* an object.  
-If you want to do that, you *have* to implement commands as a concept.
+If you want to do that, you *have* to implement commands as an aspect.
 
 A command itself can also contain related command references, which are then considered parameters of the command.
 
@@ -76,7 +76,7 @@ Parameters are the essential connection between commands and objects. If I can u
 
 When a command definition gets an object with a class, this creates a relation between the command and the class definition. This means, that the class definition also gets a reference back to the command.
 
-It looks like, when you turn a command into an executable object, without any additional effort automatically establishes the interchangeability between class commands and command parameters. I didn’t expect that. If two seemingly independent concepts confirm each other, I must be on the right track.
+It looks like, when you turn a command into an executable object, without any additional effort automatically establishes the interchangeability between class commands and command parameters. I didn’t expect that. If two seemingly independent aspects confirm each other, I must be on the right track.
 
 For objects of the class, this means, that they copy all methods of the class.  
 If the method changes, this changes the class configuration. The change in class configuration must then be ventilated through to all the objects of the class.  
@@ -86,8 +86,8 @@ However when creating a command, and giving it a relation to a class, I guess I 
 Gee, the commands inside an object are no longer imaginary references. They are real ones now.  
 I guess, that only if you link to the development version, changes are ventilated through from the classes to the objects.
 
-But command as a concept, as a way to establish interchangeability between class commands and command parameters, also needs to subdivise the class commands into interfaces: one for each module commands are defined in.  
-How that is established by command as a concept is yet to be determined.
+But command as an aspect, as a way to establish interchangeability between class commands and command parameters, also needs to subdivise the class commands into interfaces: one for each module commands are defined in.  
+How that is established by command as an aspect is yet to be determined.
 
 Automatic Containment for Relations is still a problem. Line merges for relations between commands and objects may have the same problem. I didn’t account for that earlier. A good example of this problem is yet to be drawn out.
 
@@ -143,15 +143,15 @@ In that case the parameters are passed *by value*: the value of one object is *c
 
 __Value In__:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.001.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.001.png)
 
 __Value Out__:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.002.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.002.png)
 
 __Value Thru__:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.003.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.003.png)
 
 A read of an output parameter is always accompanied by a write to another object. A write to an input parameter is always preceded by a read from another object. A read operation is always accompanied by a write operation. A value is read from one object, only to be written to another object.
 
@@ -159,25 +159,25 @@ Next to passing a parameter by *value*, you can also pass a parameter by referen
 
 __Reference__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.004.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.004.png)
 
 The called command can then read out of the object, that it was given a reference to. In that case it is called a __Reference In__ parameter.
 
 __Reference In__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.005.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.005.png)
 
 When a command is passed a reference to an object, and the command writes to the parameter, it is called a __Reference Out__ parameter.
 
 __Reference Out__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.006.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.006.png)
 
 Next to __Reference In__ and __Reference Out__, there is also __Reference Thru__, which means, that the command both reads and writes to the object passed to it.
 
 __Reference Thru__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.007.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.007.png)
 
 When a command call has an outward reference to an object, this *does* make the object a parameter, but this *does not* determine yet whether it is input, output or throughput. The *in* and *out* in this case refer to whether values are written or read to the object reference. A reference parameter is always sort of like input, though: the parent command passes the object to the sub-command, so the parent inputs something into the sub command. Therefore it can also be called __Reference Outward, Value In__ and __Reference Outward, Value Out__ But those names are too long. The distinction between __Reference In__ and __Reference Out__ is about whether values are read or written to the object passed to the sub-command.
 
@@ -185,29 +185,29 @@ The other way around is also possible: the sub-command passes a reference to an 
 
 __Reference Inward__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.008.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.008.png)
 
 This is a __Reference Inward__ parameter, as opposed to a __Reference Outward__ parameter. The sub-command writes to the output object. The long name of this type of parameter passing is __Reference Inward, Value Out__.
 
 __Reference Inward, Value Out__:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.009.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.009.png)
 
 The sub-command can also read from the output object, but this doesn’t have anything to do with the parameter passing between parent- and sub-commands.
 
 __Reference Inward, Value In__:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.010.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.010.png)
 
 __Reference Inward, Value Thru__:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.011.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.011.png)
 
 Because __Reference Inward, Value Out__ is only relevant for the parent’s reading values from an output object, it is shortened to __Object Out__.
 
 __Object Out__:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.008.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.008.png)
 
 The assignments, that come with parameter passing are always done by the parent command. Whether it is __Reference Inward__, __Reference Outward__, or *values*, the assignments that come with parameter passing are always done by the parent command.
 
@@ -237,31 +237,31 @@ Here is a list of the parameter passings, with their short names, and their diag
 
 __Value In__
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.001.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.001.png)
 
 __Value Out__
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.002.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.002.png)
 
 __Value Thru__
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.003.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.003.png)
 
 __Reference In__
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.005.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.005.png)
 
 __Reference Out__
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.006.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.006.png)
 
 __Reference Thru__
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.007.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.007.png)
 
 __Object Out__
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.008.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.008.png)
 
 The reason why it is important to keep understanding the three aspects of parameter passing, is that __Reference__ parameters, even though they can be __In__, __Out__ or __Thru__, are always *input* in a way, because it is a reference passed from the parent command to the sub-command.
 
@@ -285,17 +285,17 @@ Perhaps for that reason, no references to original objects will be cloned for by
 
 In parameter passing by value, the parameter object and the object, that is passed the value to or from, are not referring to each other at all.
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.012.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.012.png)
 
 A value assignment performs a yield over of value.
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.013.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.013.png)
 
 A value assignment *does* have an invisible reference to the parameter, but you won’t see it in the diagram, because an assignment is something so basic, that the notation of it is kept very basic.
 
 The complicated notation:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.014.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.014.png)
 
 (the arrows are pointing to the references invisible earlier)
 
@@ -307,7 +307,7 @@ Next to passing a parameter by *value*, you can also pass a parameter by referen
 
 Reference parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.004.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.004.png)
 
 When a command call has an outward reference to an object, this *does* make the object a parameter, but this *does not* determine yet whether it is input, output or throughput. The *in* and *out* in this case refer to whether *values* are written or read to the object reference. A reference parameter is always sort of like input, though: the parent command passes the object to the sub-command, so the parent inputs something into the sub command. 
 
@@ -328,19 +328,19 @@ A __Value In__ parameter works best for a simple object, that stores a single va
 
 A diagram of a command call with a __Value In__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.015.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.015.png)
 
 Or:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.016.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.016.png)
 
 A diagram of a command definition with a __Value In__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.017.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.017.png)
 
 Or:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.018.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.018.png)
 
 ##### Value Out
 
@@ -352,19 +352,19 @@ A __Value Out__ parameter works best for a simple object, that stores a single v
 
 Command call with a __Value Out__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.019.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.019.png)
 
 Or:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.020.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.020.png)
 
 A command definition with a __Value Out__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.021.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.021.png)
 
 Or:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.022.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.022.png)
 
 ##### Value Thru
 
@@ -374,21 +374,21 @@ A __Value Thru__ parameter works best for a simple object, that stores a single 
 
 Command call with a __Value Thru__ parameter.
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.023.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.023.png)
 
 Or:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.024.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.024.png)
 
 In theory, the value could first come from one object, and after the call be written to another object. But that’s not regularly what a __Value Thru__ parameter is used for.
 
 Command definition with a __Value Thru__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.025.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.025.png)
 
 Or:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.026.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.026.png)
 
 ##### Reference In
 
@@ -398,19 +398,19 @@ Because a __Reference In__ parameter is input, the called command can only *read
 
 Command call with a __Reference In__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.027.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.027.png)
 
 Or:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.028.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.028.png)
 
 Command definition with a __Reference In__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.029.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.029.png)
 
 Or:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.030.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.030.png)
 
 ##### Reference Out
 
@@ -420,19 +420,19 @@ Because a __Reference Out__ parameter is output, the called command can only *wr
 
 Command call with a __Reference Out__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.031.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.031.png)
 
 Or:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.032.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.032.png)
 
 Command definition with a __Reference Out__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.033.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.033.png)
 
 Or:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.034.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.034.png)
 
 In a sense, a __Reference *Out*__ parameter is actually *through*put.  
 When output is alteration of an existing object, it could be considered throughput, even though there is only *written* to the object, and nothing is *read* from the object, it is still an object passed *through* the command.
@@ -447,19 +447,19 @@ A __Reference Thru__ parameter is a pointer to something outside the command. Th
 
 Command call with a __Reference Thru__ parameter.
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.035.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.035.png)
 
 Or
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.036.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.036.png)
 
 Command definition with a __Reference Thru__ parameter.
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.037.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.037.png)
 
 Or:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.038.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.038.png)
 
 ##### Object Out
 
@@ -469,11 +469,11 @@ Unlike parameters passed by reference, an __Object Out__ parameter is *referred 
 
 A diagram of a command call with an __Object Out__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.039.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.039.png)
 
 A diagram of a command definition with an __Object Out__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.040.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.040.png)
 
 Unlike __By Reference__ and __By Value__ parameters, there are no three variations for parameters referred *to*. The reason ‘__Object__’ parameter passing does not have three variations, like the __Value__ and __Reference__ parameter passings, is that the command’s reading and writing values to the object is irrelevant to the *parameter passing*. __Object Out__ does not have anything to do with whether the command call reads or writes from the object it outputs. That is irrelevant to the parameter *passing*.
 
@@ -485,11 +485,11 @@ A reference to an __Object Out__ parameter causes an implicit run of the command
 
 A reference parameter is assigned an object.
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.041.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.041.png)
 
 The assignment of an object can also be replaced with the *redirection* of an object.
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.042.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.042.png)
 
 The target symbol is not the object itself, but an *object reference*. The parameter is a *reference* to an object reference. This makes the parameter a pointer to a pointer.
 
@@ -501,7 +501,7 @@ A reference to an __Object Out__ parameter is also an implicit notation for an o
 
 The notations of value transmission for Reference parameters is also just an abstract expression:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.027.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.027.png)
 
 It does not display which specific values are read or what the read value is copied to. It does however express the type of parameter passing.  
 It is an abstract display, not an implicit display.  
@@ -515,11 +515,11 @@ If a parameter is for instance __Reference Thru__, it can only point *to* someth
 
 The caller can not redirect the __Object Out__ parameter. The call itself may be able to redirect the __Object Out__ parameter, but not to something outside the call, because the call is only aware of what’s reachable *inside* the call. This actually counts for objects as well. So the following situation is not possible:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.043.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.043.png)
 
 If the caller wants all the object symbols to represent the same object, it should do it for instance like this:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.044.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.044.png)
 
 ##### Transfer of indirect values
 
@@ -533,13 +533,13 @@ For an __Object Out__ parameter, the type of value transfer does not matter, so 
 
 When it is direct value transfer, an assignment call is shown in the diagram. 
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.045.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.045.png)
 
 The above displays a __Reference In__ parameter inside the call, whose direct value is used.
 
 If it is indirect value transfers, then the diagram does not show an assignment call.
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.046.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.046.png)
 
 The above displays a command that uses values from the sub-objects of the __Reference In__ parameter.
 
@@ -574,67 +574,67 @@ One parameter type can only be tied to a parameter with specific other parameter
 
 A __Value In__ parameter can be only be tied to a __Value Out__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.047.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.047.png)
 
 A __Value Out__ parameter can only be tied to a __Value In__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.048.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.048.png)
 
 A __Value Thru__ parameter can not be tied to another parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.049.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.049.png)
 
 This is because it creates a circularity in which one parameter writes its values to the other, and the other parameter writes its value to the first parameter. It is just an unlogical circular situation.
 
 A __Reference In__ parameter can only be tied to an __Object Out__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.050.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.050.png)
 
 A __Reference Out__ parameter can only be tied to an __Object Out__ parameter.
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.051.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.051.png)
 
 A __Reference Thru__ parameter can only be tied to an __Object Out__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.052.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.052.png)
 
 An __Object Out__ parameter can be tied to a __Reference In__, __Reference Out__ or __Reference Thru__ parameter. In short an __Object Out__ parameter can only be tied to a __Reference__ parameter:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.053.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.053.png)
 
 So to summarize it:
 
 Only __Value In__ parameters and __Value Out__ parameters can be tied together:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.048.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.048.png)
 
 Only __Object Out__ and __Reference__ parameters can be tied together:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.054.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.054.png)
 
 However, these direct connections between parameters is an implicit notation of reads and writes executed by the parent.
 
 A direct value transfer:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.055.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.055.png)
 
 Is indeed already the explicit notation of it: the value of one parameter is assigned as the value of the other parameter.
 
 An *in*direct value transfer:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.056.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.056.png)
 
 is in fact an implicit notation of a cloning operation performed by the parent. For indirect value transfers between __By Value__ parameters, you might indicate the cloning depth:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.057.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.057.png)
 
 The explicit notation of the __Clone__ call:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.058.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.058.png)
 
 The command definitions with an indirect by value parameter, with a cloning depth indicated might look like this:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.059.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.059.png)
 
 Looking at the explicit notation of the __Clone__ call above, because the __By Value__ parameters are referenced by the __Clone__ operation, this sort of makes the by value parameters:
 
@@ -645,11 +645,11 @@ However, this is not the way you want to look at it when programming. This is ju
 
 For object transfers between __Object Out__ parameters and __Reference__ parameters, the implicit notation is:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.060.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.060.png)
 
 However, this direct connection between parameters is an implicit notation of an object assignment executed by the parent:
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.061.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.061.png)
 
 So the connection from the __By Reference__ parameter to the __Object Out__ parameter isn’t really a reference to a reference; it is an object assignment.
 
@@ -670,7 +670,7 @@ Tying parameters together directly states a direct dependency. No direct referen
 
 Next to making sub-command directly dependent on each other like that, input output can also be between a sub-commands parameter and a sub-object of the parent command. This does not create a direct dependency between sub-commands, but it does create an indirect dependency.
 
-![](images/2008-07-13%20XX%20%20Command%20As%20A%20Concept%20Brainstorm%20Texts.062.png)
+![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.062.png)
 
 The parameter of command __A__ is a __Value Out__ parameter that writes to object __O__. The parameter of command __B__ is a __Reference Out__ parameter that connects to object __O__. The parameters of command __A__ and command __B__ are not directly tied to each other, but they do indirectly related to each other. This will be further elaborated in *Automatic Execution Order*.
 
@@ -783,7 +783,7 @@ Each command defines what is its input, output or throughput, and a new command 
 However, when a definition of a command changes, a huge cast to all its callers and their callers, and their callers is executed.  
 Even this big event cast can be prevented. The answer is versioning. When you use versioning, a called command never changes. Only when command A decides to link to a newer version of command B, command A’s input, output, throughput configuration may change. If command B changes, command A keeps linking to the old version of command B. So the dependencies of command A do not change, and keep pointing to an old version of command A.  
 Only when programming a new version of a system, you can decide to possibly link to a new version of things. A version of a system, that is in production, keeps pointing to unchanging versions of their dependencies.  
-A question for versioning is: when will a version of a command be created? On every change? Or will there be key moments at which an author publishes the new version of the command. These are issues for Versioning, which falls under the Editing & Authoring concepts.  
+A question for versioning is: when will a version of a command be created? On every change? Or will there be key moments at which an author publishes the new version of the command. These are issues for Versioning, which falls under the Editing & Authoring aspects.  
 Versioning of commands can prevent huge casts of changes to input, output or throughput configuration, or at least limit it in size. Only when defining a new call, you have to look at the called command to see if this changes the in, out, thru configuration of the currently edited parent command definition.
 
 #### Giving the issues in this section a place
@@ -925,7 +925,7 @@ It can be determined, that part of the sub-commands can run independently. If th
 Here is a paradox.  
 A command is a special object, that can execute, but an object has system commands. A related item gets system commands. So here I want to replace a real command by an object, that can behave as a command, but an object *must* have system commands in order to function.
 
-But it is not so much about the system commands, that are added by concepts, but about *fundamental* system commands.  
+But it is not so much about the system commands, that are added by aspects, but about *fundamental* system commands.  
 Actually, no object has fundamental system commands. Only object references, symbols, have fundamental system commands.  
 And there aren’t many either. Just get, and set and some other few.
 

@@ -1,8 +1,8 @@
-﻿Encircle Language Construct Drafts | Input Output
-=================================================
+﻿Encircle Language Construct Drafts
+==================================
 
-Loose Ideas
------------
+Input Output | Loose Ideas
+--------------------------
 
 `[ Preliminary documentation ]`
 
@@ -23,7 +23,7 @@ Advanced Command Articles,
 2008-08
 
 For an object to have a reference to a command, you have to be able to define a relation between a command and an object. This is only possible, if a command is an object.
-If you want to do that, you have to implement commands as a concept.
+If you want to do that, you have to implement commands as an aspect.
 
 A command itself can also contain related command references, which are then considered parameters of the command.
 
@@ -70,7 +70,7 @@ JJ
 Parameters / Input Output,  
 2008-09-25
 
-> 2008-10-01 What do I want to do with this? I moved the idea from Parameters to input-output, because I do not find it important right now. Perhaps I will find it important when thinking through Input-Output concepts, or perhaps I will find out I want to throw this away.
+> 2008-10-01 What do I want to do with this? I moved the idea from Parameters to input-output, because I do not find it important right now. Perhaps I will find it important when thinking through Input-Output aspects, or perhaps I will find out I want to throw this away.
 - A situation, where an Object Set on the inside and an Object Set on the outside has the exact same result.
 The effect of an Object Set from the outside can perhaps result in the same situation as na Object Set from the inside. It might not matter whether the result of an Object Set on the outside is the same as an Object Set on the inside. This is what it is conceptually.
 The effect will be that a command contains a reference to an object, whether it is an Object Out parameter, Value parameter or Reference parameter.  

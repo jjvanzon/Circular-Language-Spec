@@ -10,7 +10,7 @@ Perhaps a central goal of the Encircle programming language could be, to melt to
 
 The *extensibility principles* may cover techniques that might make existing software extensible and make sure, that *Encircle language* may integrate with the rest of the world of computer technology. *Encircle* resources might be accessible to other systems and existing resources on the internet might be accessible in *Encircle*. Not all these articles might be finished yet. More may be added in the future. The *Extensibility* folder may contains the following articles:
 
-- ### [Concepts (Aspects) As External Modules](concepts-as-external-modules.md)
+- ### [Aspects as External Modules](aspects-as-external-modules.md)
 
     - Concepts might be power-enhancements of software, that might be immediately applied to any system without any further programming. A concept may become a special programming construct.
 

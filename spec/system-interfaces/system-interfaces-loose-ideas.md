@@ -656,7 +656,7 @@ JJ
 -----
 
 Assignment,  
-Pointers to pointers as a concept,  
+Pointers to pointers as an aspect,  
 2008-08
 
 A related item can point to a =>1 related item contained by another parent or to a =>n related list item contained by another parent. Redirecting to another related item or related list item may be accomplished by extending the object get and object set procedures of the related item. The extension procedure basically constitutes, or instantiates, the redirection. So a pointer to a pointer would be accomplished by procedure extension, instead of implementing it in the code base. However, this will not work for related *list* items, because all items in a related list have the same decoration, and redirecting a list item to an arbitrary other related item or related list item would require each list item to have its own decoration.
@@ -687,7 +687,7 @@ For more complex objects, value direction can mean an object will be cloned up u
 
 A single-value transfer is actually the equivalent of a cloning operation with a depth of __1__.
 
-There are other types of cloning in which clones do end up with reference to existing objects, but those types of cloning will be covered in the article Clone in the Editing Concepts.
+There are other types of cloning in which clones do end up with reference to existing objects, but those types of cloning will be covered in the article Clone in the Editing Aspects.
 
 These are examples diagram expressions of __Value__ cloning operations:
 
@@ -952,7 +952,7 @@ System Interfaces,
 2008-08-08,
 
 Toegang van het ene object naar het andere met puntnotatie,
-is ook een concept. Je moet namelijk access operators gaan definiëren, en toegang als aparte actie zien, ook om die actie
+is ook een aspect. Je moet namelijk access operators gaan definiëren, en toegang als aparte actie zien, ook om die actie
 apart te kunnen access controllen.
 
 JJ

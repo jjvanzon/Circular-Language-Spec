@@ -8,9 +8,9 @@ Loose Ideas
 
 *The texts below are loose ideas, yet to be turned into more polished documentation.*
 
-This documentation section covers all the coding concepts and principles of the new computer language.
+This documentation section covers all the coding aspects and principles of the new computer language.
 
-Some of the principles have to be implemented inside the code base. Most of the concepts can be implemented merely as a *concept* construct, using the new computer language itself.
+Some of the principles have to be implemented inside the code base. Most of the aspects can be implemented merely as an *aspect* construct, using the new computer language itself.
 
 The following principles need to be part of the code base:
 
@@ -25,18 +25,18 @@ The following principles need to be part of the code base:
 - Value Assignment
 - Object Assignment
 
-It is important to understand, that there are *coding principles*, and there are *coding concepts*. 
+It is important to understand, that there are *coding principles*, and there are *coding aspects*. 
 
 Coding *principles* need to be part of the code base.  
-Coding *concepts* do not.
+Coding *aspects* do not.
 
-A __Concept__ is a construct, that can be programmed within the new computer language and a *principle* is something the code base can not do without. A lot of principles can be implemented as a concept, but only *after* you have added it to the code base.
+An __Aspect__ is a construct, that can be programmed within the new computer language and a *principle* is something the code base can not do without. A lot of principles can be implemented as an aspect, but only *after* you have added it to the code base.
 
-Examples of coding concepts are: classes, attributes, parameters and inheritance. So none of those need to be present in the code base. They can all be programmed using the new computer language itself.
+Examples of coding aspects are: classes, attributes, parameters and inheritance. So none of those need to be present in the code base. They can all be programmed using the new computer language itself.
 
-Many of the coding concepts are just as elementary to computer programming as coding principles. Functionally, coding principles and concepts blend together. That is why coding principles and coding concepts do not have separate documentation sections.
+Many of the coding aspects are just as elementary to computer programming as coding principles. Functionally, coding principles and aspects blend together. That is why coding principles and coding aspects do not have separate documentation sections.
 
-On top of that: when developing the code base, you will determine how much can be banned out of the code base, and only programmed within the new computer language itself. As the concepts are described here functionally, it is not as important to determine which ones have to be part of the code base and which ones can be left out.
+On top of that: when developing the code base, you will determine how much can be banned out of the code base, and only programmed within the new computer language itself. As the aspects are described here functionally, it is not as important to determine which ones have to be part of the code base and which ones can be left out.
 
 ### Loose Ideas
 
@@ -46,7 +46,7 @@ Process Control,
 2009-05-03
 
 Process Control like main processes and sub processes and the logging of user actions and stopping other processes from running if one process is in error state and a process monitor and notifications when something goes wrong...   
-This should be part of Coding Concepts. I am not sure how yet.
+This should be part of Coding Aspects. I am not sure how yet.
 
 JJ
 
@@ -84,9 +84,9 @@ JJ
 
 Caché bestrijkt vele gebieden al, waar Code een oplossing voor biedt. Het relationeel en object georiënteerd unify'en, dan zit daar eigenlijk al bijna compleet in.
 
-Afgeleide containment relaties niet, diagrammen niet en applicatie feature generatie niet, en aspecten niet (ik zal naast standaard aspecten van JJ, zorgen dan je customer concepten kunt introduceren.) extended inheritance niet, kiezen tussen geheugen en schrijf niet, speciale security niet.
+Afgeleide containment relaties niet, diagrammen niet en applicatie feature generatie niet, en aspecten niet (ik zal naast standaard aspecten van JJ, zorgen dan je custom aspecten kunt introduceren.) extended inheritance niet, kiezen tussen geheugen en schrijf niet, speciale security niet.
 
-Dat soort concepten niet, maar het hele idee relationeel en object georiënteerd gelijk trekken wel. Behalve echt 1 taal maken van OO en SQL
+Dat soort aspecten niet, maar het hele idee relationeel en object georiënteerd gelijk trekken wel. Behalve echt 1 taal maken van OO en SQL
 
 Relaties ingaan in SQL statements in Cache, is precies de manier waarop ik het van plan was. But I don't think it takes relations and classes as the base of the system. It's either specify tables with foreign keys, or declare objects with sub objects in them. I don't know if the two counterparts of a relation are synchronized either.
 
@@ -156,7 +156,7 @@ JJ
 
 Computer Language,
 
-Ik wil gewoon dat workflow en methods die elkaar aanroepen gewoon hetzelfde concept zijn. Method stappen kunnen parallel lopen en seriele punten hebben en vertragingen en gezette tijden hebben.
+Ik wil gewoon dat workflow en methods die elkaar aanroepen gewoon hetzelfde aspect zijn. Method stappen kunnen parallel lopen en seriele punten hebben en vertragingen en gezette tijden hebben.
 
 JJ
 

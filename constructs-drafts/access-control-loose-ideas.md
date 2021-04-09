@@ -213,7 +213,7 @@ Public for sub components, but private for super components.
 
 -----
 
-The problem is, that the idea was to implement it as a concept, but it’s important to make the access control not easily breached, and I’m not sure how I will do that.
+The problem is, that the idea was to implement it as an aspect, but it’s important to make the access control not easily breached, and I’m not sure how I will do that.
 
 ### Automatic Containment And Access Control
 
@@ -236,7 +236,7 @@ Classes giving methods access to their private contents should be a form of acce
 You can exclude the __Add__, __Remove__ and __Clear__ methods with the __HasAdd__, __HasRemove__ and __HasClear__ structure settings. You can also merely access control the __Add__, __Remove__ and __Clear__ methods. That way you can disallow calls to the procedures from outside your library or application, so only your application can __Add__, __Remove__ or __Clear__, but any program, that links to your application, can’t. That would be the situation when you give a method __Friend__ access. You can also make the method __Private__, in case of which only procedures within the list class itself can access the method. See the *Access Control* section for more on this subject.
 
 Consider access control of the system interface members.
-Perhaps you just have to talk about access control in the implementation articles of Coding Concepts and all.
+Perhaps you just have to talk about access control in the implementation articles of Coding Aspects and all.
 
 -----
 
@@ -326,7 +326,7 @@ If a software author can keep any data undisclosed, it takes away the security a
 
 It remains to be exactly determined how the system can even see whether it is a user's own data or for instance another company's private data.
 
-All this is for later. It is security and privacy. It won't be further elaborated in the project Command As A Concept
+All this is for later. It is security and privacy. It won't be further elaborated in the project Command As An Aspect.
 
 JJ
 
@@ -347,7 +347,7 @@ JJ
 Access Control,  
 2008-09-09
 
-In a capsule, everything that goes in and comes out goes through an encryption, so that everything in it looks fuzzy on the outside, when you do not have the key. You could literally display the fuzziness, so the concept of encryption is visualized.
+In a capsule, everything that goes in and comes out goes through an encryption, so that everything in it looks fuzzy on the outside, when you do not have the key. You could literally display the fuzziness, so the aspect of encryption is visualized.
 
 JJ
 
@@ -422,7 +422,7 @@ JJ
 
 Security is now present at the heart of the system. It is intrinsically part of the Code. It is not a module of Code, but it is very present in it. The access modifiers Public and Private are actually a security feature now. There is no distinction between user access control and programmatic access modifiers. They are both about who can access what out of what position.
 
-The Concept Literals feature of code makes it possible to integrate security keywords into the programming language.
+The Aspect Literals feature of code makes it possible to integrate security keywords into the programming language.
 
 -----
 

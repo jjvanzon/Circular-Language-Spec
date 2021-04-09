@@ -107,7 +107,7 @@ JJ
 
 -----
 
-The fundamental principles of other programming languages may not be so fundamental in my new computer language. For instance basic math may be considered fundamental in other programming languages, but it’s no more than a plug-in module in my own system. Another example: type safety may be considered fundamental in other programming language, but in my own system it is a plug-in concept, which sees to it an object’s type is checked before it is assigned to an object reference.
+The fundamental principles of other programming languages may not be so fundamental in my new computer language. For instance basic math may be considered fundamental in other programming languages, but it’s no more than a plug-in module in my own system. Another example: type safety may be considered fundamental in other programming language, but in my own system it is a plug-in aspect, which sees to it an object’s type is checked before it is assigned to an object reference.
 
 -----
 
@@ -122,7 +122,7 @@ They require me to go into detail, while fundamental principles was only to give
 
 -----
 
-Some of the Fundamental Principles are very clear. Some are not clear yet. The articles of the unclear Fundamental Principles will be full of details after you write them. Lateron the details have to moved to other articles about the other principle and concept, that the details are about. The Fundamental Principles should eventually only give a summary and the correlation between other principles and concepts.  
+Some of the Fundamental Principles are very clear. Some are not clear yet. The articles of the unclear Fundamental Principles will be full of details after you write them. Lateron the details have to moved to other articles about the other principles and aspects, that the details are about. The Fundamental Principles should eventually only give a summary and the correlation between other principles and aspects.  
 Eventually in the explanations of the fundamental principles, everything should fall into place, and everything should be explained in a clear-cut way. It should be a complete introduction to my ideas, so it should make a person acquainted with the material.
 
 -----
@@ -172,17 +172,17 @@ JJ
 
 -----
 
-Concepts / Achievability,  
+Aspects / Achievability,  
 2008-08-08
 
-Denk eens een keer na over, dat een ander je een concept, bijvoorbeeld Find en een Find Control, moet kunnen vervangen
+Denk eens een keer na over, dat een ander je een aspect, bijvoorbeeld Find en een Find Control, moet kunnen vervangen
 door een betere.
 
 Daarmee creëer ik toch netjes een markt met concurrentie, er niet vanuit gaande dat ik altijd alles het beste programmeer, en niemand ooit met iets beter zal komen.
 
 Hoe kun je het programmeurs makkelijk laten omcoderen om toch nog de oude interface van de oude Find te kunnen gebruiken?
 
-Hoe kun je mensen zelf een systeem laten inheriten, iets disincluden en een concept erbij zetten, om zo een beter systeem te hebben?
+Hoe kun je mensen zelf een systeem laten inheriten, iets disincluden en een aspect erbij zetten, om zo een beter systeem te hebben?
 
 JJ
 
@@ -340,7 +340,7 @@ JJ
 Computer Language,  
 2008-12-22
 
-That Concept construct I want in my programming language seems to have existed forever:  
+That Aspect construct I want in my programming language seems to have existed forever:  
 *"Extensible Compiler Architecture | Examples from JModelica.org | Uses of the JastAdd systems | Görel Hedin | Computer Science, Lund University"*  
 http://www.lucas.lth.se/lucas-dagar/2002/slides2002/hedin.pdf
 (newer link 2021-03-06)  
@@ -470,13 +470,13 @@ are a programming construct of an importance equal to that of procedures.
 
 In the new computer language it is the same way:
 
-relations and concepts are programming constructs of equal importance, but you do not have to use them. Nevertheless, they are so present as a programming construct, that you start to use them anyway.
+relations and aspects are programming constructs of equal importance, but you do not have to use them. Nevertheless, they are so present as a programming construct, that you start to use them anyway.
 
 Actually a lot of programmers took a long time to realize what they need classes for to program with.
 
 But they have been applying them for years, because they have been USING classes. They just hadn't been programming classes.
 
-In the new computer language it is the same way: concepts, relations and objects and commands and everything are clearly present in the framework libraries. You will be using them before you start to program them yourself.
+In the new computer language it is the same way: aspects, relations and objects and commands and everything are clearly present in the framework libraries. You will be using them before you start to program them yourself.
 
 In assembly, you could program in an object oriented way with classes. It is a matter of working in a certain fashion and yes, the syntax looks much different, but you are still modeling with classes and objects.
 
@@ -551,7 +551,7 @@ JJ
 Computer Language,  
 2009-05-02
 
-I might not have a good spot or good explanation about how assembly seamlessly integrates into the language. This is part of the achievability principles, but also makes use of the Binaral concept and the Value concept too.
+I might not have a good spot or good explanation about how assembly seamlessly integrates into the language. This is part of the achievability principles, but also makes use of the Binaral aspect and the Value aspect too.
 
 JJ
 
@@ -560,7 +560,7 @@ JJ
 Fundamental Principles,  
 2009-06-14
 
-Hoeveel van die beloftes worden al waargemaakt in de coding concepts & data concepts?  
+Hoeveel van die beloftes worden al waargemaakt in de coding aspects & data aspects?  
 \> Anders denken ze: "Jij praat poep".  
 Zou je na het uitwerken van Input / Output NOG een belofte kunnen doen, aangaande concurrency resolution?
 

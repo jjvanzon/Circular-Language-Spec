@@ -319,8 +319,8 @@ JJ
 
 - Classes need to be part of the code base in order to rewrite the code base several times.
     - Classes misschien toch niet nodig in code base
-        - Als ook de code base geen classes heeft, hoef je classes ook niet te herprogrammeren in lagen daarboven. Pas op het eind implementeren als Concept?  
-        Dit gaat over het onderwerp implementation as a concept: een ander project. Niet belangrijk nu, wat principle is en wat concept.
+        - Als ook de code base geen classes heeft, hoef je classes ook niet te herprogrammeren in lagen daarboven. Pas op het eind implementeren als Aspect?  
+        Dit gaat over het onderwerp implementation as an aspect: een ander project. Niet belangrijk nu, wat principle is en wat aspect.
 
 -----
 
@@ -328,11 +328,11 @@ Code Base, Objects,
 
 For relation between objects, you only need two unary relations, that are not synchronized. An object has a list of referrers in it, and an item in it, that says which other object it refers to.
 
-You only need relation between objects for the concept of classes, if you make the concept of classes a dual relation: a class also needs to be aware of all the objects that use it as its class.  
+You only need relation between objects for the aspect of classes, if you make the aspect of classes a dual relation: a class also needs to be aware of all the objects that use it as its class.  
 If you accept, that a class does not know which objects use it as its class, then you don’t even need relations between objects to be dual. You’s only need sub objects, that refer to another object.
 
 But you already need to implement sub objects and sub lists in the code base in order to have any kind of multiplicity, don’t you?  
-Actually, that is not important enough for now. For now it is not important to brainstorm about what is a principle, what is a concept, and how much needs to be put in the code base.
+Actually, that is not important enough for now. For now it is not important to brainstorm about what is a principle, what is an aspect, and how much needs to be put in the code base.
 
 The code base probably only needs unary relations between objects. The highest layers on top of the code base, can turn this into dual relations between objects, but the lowest layer only needs unary relations.
 
@@ -341,7 +341,7 @@ JJ
 -----
 
 Code Base,  
-Reference as a Concept,  
+Reference as an Aspect,  
 2008-06-23
 
 If a sub object either is a reference, or a value, can a reference be implemented as a binary value. Could the principle of Values facilitate the principle of reference?
