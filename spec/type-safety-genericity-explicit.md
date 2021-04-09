@@ -6,7 +6,7 @@ Type Safety, Genericity, Explicit
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Loose Ideas](#loose-ideas)
 - [More Ideas](#more-ideas)

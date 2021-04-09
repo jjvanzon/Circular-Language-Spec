@@ -6,7 +6,7 @@ Relations Between Commands & Objects
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Concept](#concept)
     - [Object Relations](#object-relations)

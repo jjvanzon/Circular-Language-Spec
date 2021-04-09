@@ -6,7 +6,7 @@ Connectors & Connections
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Connectors](#connectors)
     - [Loose Ideas about Connectors](#loose-ideas-about-connectors)

@@ -6,7 +6,7 @@ Creation Behavior
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Contents](#contents)
 - [Creation Behavior of Calls](#creation-behavior-of-calls)

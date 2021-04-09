@@ -6,7 +6,7 @@ Relationships | Broader View
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Relationship Direction](#relationship-direction)
 - [Ubiquitous Bidirectional Relationships](#ubiquitous-bidirectional-relationships)

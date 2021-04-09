@@ -4,7 +4,7 @@
 Loose Ideas
 -----------
 
-### Contents
+__Contents__
 
 - [Loose Ideas](#loose-ideas-1)
 - [From the Original Symbol Documentation](#from-the-original-symbol-documentation)

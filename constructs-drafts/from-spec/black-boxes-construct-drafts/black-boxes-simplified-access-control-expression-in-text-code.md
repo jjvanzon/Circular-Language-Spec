@@ -6,7 +6,7 @@ Black Boxes | Simplified Access Control Expression in Text Code
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Main Idea](#main-idea)
 - [Admission](#admission)

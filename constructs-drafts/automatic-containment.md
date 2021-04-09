@@ -6,7 +6,7 @@ Automatic Containment
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [A slice of referential structure](#a-slice-of-referential-structure)

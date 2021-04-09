@@ -6,7 +6,7 @@ Miscellaneous Topics
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [Parameter Passing](#parameter-passing)

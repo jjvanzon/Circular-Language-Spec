@@ -6,7 +6,7 @@ Loose Ideas
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Inheritance en Overloading (overloaded default properties)](#inheritance-en-overloading-overloaded-default-properties)
 - [From the Original Symbol Documentation](#from-the-original-symbol-documentation)

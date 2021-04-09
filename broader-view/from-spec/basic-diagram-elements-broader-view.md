@@ -6,7 +6,7 @@ Basic Diagram Elements | Broader View
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [Circles & Triangles](#circles--triangles)

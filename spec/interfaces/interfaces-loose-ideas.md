@@ -6,7 +6,7 @@ Loose Ideas
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Loose Ideas about Relations Through Interfaces](#loose-ideas-about-relations-through-interfaces)
 - [Loose Ideas about Target Interfaces](#loose-ideas-about-target-interfaces)

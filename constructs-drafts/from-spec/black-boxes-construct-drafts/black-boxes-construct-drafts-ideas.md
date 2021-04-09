@@ -6,7 +6,7 @@ Black Boxes Construct Drafts Ideas
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Misc Issues](#misc-issues)
     - [Deeper Exclusion](#deeper-exclusion)

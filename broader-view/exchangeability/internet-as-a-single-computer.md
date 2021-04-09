@@ -6,7 +6,7 @@ The Internet as a Single Computer
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [A unified paradigm for all digital objects](#a-unified-paradigm-for-all-digital-objects)

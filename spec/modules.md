@@ -6,7 +6,7 @@ Modules
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Concept](#concept)
 - [In a Diagram](#in-a-diagram)

@@ -6,7 +6,7 @@ Assignment in Text Code
 
 `[ Deprecated documentation ]`
 
-### Contents
+__Contents__
 
 - [Introduction to Assignment in Text Code](#introduction-to-assignment-in-text-code)
 - [Assignment in Text Code](#assignment-in-text-code-1)

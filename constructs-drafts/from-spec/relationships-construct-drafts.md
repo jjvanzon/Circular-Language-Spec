@@ -6,7 +6,7 @@ Relationships Construct Drafts
 
 `[ Deprecated documentation ]`
 
-### Contents
+__Contents__
 
 - [Relationships Between Classes](#relationships-between-classes)
 - [Bidirectional Relationships](#bidirectional-relationships)

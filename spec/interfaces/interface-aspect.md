@@ -6,7 +6,7 @@ Interface Aspect
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [System Commands for the Interface Aspect](#system-commands-for-the-interface-aspect)

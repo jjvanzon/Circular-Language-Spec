@@ -8,7 +8,7 @@ Example Diagrams
 
 This article attempts to systematically demonstrate different situations of commands.
 
-### Contents
+__Contents__
 
 - [Command Calls in a Command Definition](#command-calls-in-a-command-definition)
 - [Command Calls in a Command Call](#command-calls-in-a-command-call)

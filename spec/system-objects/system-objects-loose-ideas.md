@@ -8,7 +8,7 @@ Loose Ideas
 
 *The texts below may be rough material, that might once serve as a base for more polished text.*
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [More Commands & Aspects](#more-commands--aspects)

@@ -6,7 +6,7 @@ Pointers
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Pointers in General](#pointers-in-general)
     - [Brainstorm](#brainstorm)

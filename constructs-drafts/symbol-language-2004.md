@@ -9614,7 +9614,7 @@ Any symbol code translates to Basic, C++ or Symbol text notation as well as the 
 Old
 ---
 
-### Contents
+__Contents__
 
 < I should distinguish between internal symbols and their representing shapes >
 

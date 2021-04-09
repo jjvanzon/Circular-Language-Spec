@@ -6,7 +6,7 @@ Peels
 
 `[ Deprecated documentation ]`
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [Shape Peels](#shape-peels)

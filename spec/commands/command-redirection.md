@@ -6,7 +6,7 @@ Command Redirection
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Inactive Command Object Redirection](#inactive-command-object-redirection)
 - [Inactive Command Class Redirection](#inactive-command-class-redirection)

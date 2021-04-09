@@ -6,7 +6,7 @@ System Objects | System Command Call Notations Construct Drafts
 
 `[ Deprecated documentation ]`
 
-### Contents
+__Contents__
 
 - [System Interface Command Call Notation](#system-interface-command-call-notation)
 - [Simplified System Interface Calls](#simplified-system-interface-calls)

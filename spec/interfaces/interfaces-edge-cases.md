@@ -6,7 +6,7 @@ Edge Cases
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Member Grouping](#member-grouping)
     - [Explicit Interface Dependency](#explicit-interface-dependency)

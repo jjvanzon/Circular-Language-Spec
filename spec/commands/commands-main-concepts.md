@@ -6,7 +6,7 @@ Main Concepts
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [Diagram Elements](#diagram-elements)

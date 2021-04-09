@@ -6,7 +6,7 @@ System Command Call Notations
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [Notational Choices](#notational-choices)

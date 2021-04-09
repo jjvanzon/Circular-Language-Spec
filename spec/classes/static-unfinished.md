@@ -6,7 +6,7 @@ Static
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [Preliminary Design](#preliminary-design)

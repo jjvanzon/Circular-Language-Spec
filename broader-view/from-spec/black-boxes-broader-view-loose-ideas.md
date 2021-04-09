@@ -6,7 +6,7 @@ Black Boxes Broader View | Loose Ideas
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Side-Issues](#side-issues)
     - [Black Boxing and User Access Control](#black-boxing-and-user-access-control)

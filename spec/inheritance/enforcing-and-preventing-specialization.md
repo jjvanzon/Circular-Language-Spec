@@ -6,7 +6,7 @@ Enforcing & Preventing Specialization
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [Protected](#protected)

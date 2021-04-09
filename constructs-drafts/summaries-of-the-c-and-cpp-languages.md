@@ -6,7 +6,7 @@
 Summaries of the C and C++ Languages
 ------------------------------------
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [C](#c)

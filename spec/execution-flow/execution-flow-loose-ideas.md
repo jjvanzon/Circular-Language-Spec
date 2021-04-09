@@ -6,7 +6,7 @@ Loose Ideas
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Loose Ideas](#loose-ideas-1)
 - [From the original Symbol documentation](#from-the-original-symbol-documentation)

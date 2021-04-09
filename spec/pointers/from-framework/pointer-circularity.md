@@ -6,7 +6,7 @@ From Framework | Pointer Circularity
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Loose Ideas](#loose-ideas)
     - [Circularity](#circularity)

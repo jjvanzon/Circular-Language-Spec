@@ -6,7 +6,7 @@ System Events
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
     - [Changed Events](#changed-events)

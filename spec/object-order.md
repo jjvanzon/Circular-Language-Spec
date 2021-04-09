@@ -8,7 +8,7 @@ Object Order
 
 *These may be rough texts that might once be used to build more polished text.*
 
-### Contents
+__Contents__
 
 - [Brainstorm](#brainstorm)
 - [Order Matters](#order-matters)

@@ -6,7 +6,7 @@ Introduction
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Concept](#concept)
 - [Diagram](#diagram)

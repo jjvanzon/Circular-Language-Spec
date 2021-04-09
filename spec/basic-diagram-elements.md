@@ -6,7 +6,7 @@ Basic Diagram Elements
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [Text](#text)

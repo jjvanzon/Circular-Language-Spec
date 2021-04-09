@@ -6,7 +6,7 @@ Concepts
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Loose Ideas](#loose-ideas)
     - [Concepts](#concepts-1)

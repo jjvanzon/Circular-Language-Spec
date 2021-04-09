@@ -4,7 +4,7 @@
 Classes
 -------
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [Class Redirection](#class-redirection)

@@ -6,7 +6,7 @@ Public & Private Connectors, Connections & Assignments
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Public & Private Connectors](#public--private-connectors)
     - [Object Connectors](#object-connectors)

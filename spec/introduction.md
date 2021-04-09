@@ -6,7 +6,7 @@ Introduction
 
 This article aims to introduce the basics of Encircle language. Encircle language is an idea for a computer programming language, mostly a diagram notation for visualizing computer code. 
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [Splitting up Ideas](#splitting-up-ideas)

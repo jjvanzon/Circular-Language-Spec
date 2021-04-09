@@ -6,7 +6,7 @@ Implementation Attempt 2002
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [Symbol Database](#symbol-database)

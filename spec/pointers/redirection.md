@@ -6,7 +6,7 @@ Redirection
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Target Symbols](#target-symbols)
     - [Line Targets](#line-targets)

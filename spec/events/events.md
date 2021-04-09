@@ -6,7 +6,7 @@ Events
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Contents](#contents)
 - [Introduction](#introduction)

@@ -6,7 +6,7 @@ Alternative Media Ideas
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Out of the original Symbol documentation](#out-of-the-original-symbol-documentation)
     - [Language Integration](#language-integration)

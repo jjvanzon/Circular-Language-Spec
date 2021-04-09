@@ -6,7 +6,7 @@ Access Control Loose Ideas
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Loose Ideas](#loose-ideas)
 - [Access Control](#access-control)

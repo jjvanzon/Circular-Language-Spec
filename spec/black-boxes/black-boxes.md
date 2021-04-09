@@ -6,7 +6,7 @@ Black Boxes
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [Main Concepts](#main-concepts)

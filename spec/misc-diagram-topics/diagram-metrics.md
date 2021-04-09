@@ -6,7 +6,7 @@ Diagram Metrics
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Diagram Metrics in Circle 3](#diagram-metrics-in-circle-3)
 - [Brainstorm Text (from original Symbol documentation)](#brainstorm-text-from-original-symbol-documentation)

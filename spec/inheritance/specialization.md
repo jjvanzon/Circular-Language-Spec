@@ -6,7 +6,7 @@ Specialization
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [Specialization & Data Replacement](#specialization--data-replacement)

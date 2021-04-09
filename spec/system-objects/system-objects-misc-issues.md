@@ -6,7 +6,7 @@ Misc Issues
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [System Command Calls by User](#system-command-calls-by-user)
 - [Objects Floating Around](#objects-floating-around)

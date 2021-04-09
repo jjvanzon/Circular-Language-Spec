@@ -6,7 +6,7 @@ Misc Issues
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Parent Controls Its Sub-Executions](#parent-controls-its-sub-executions)
     - [Sub-Commands Are Never Referenced](#sub-commands-are-never-referenced)

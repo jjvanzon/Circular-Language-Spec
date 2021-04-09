@@ -6,7 +6,7 @@ Commands and Classes Loosely Coupled
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Concept](#concept)
 - [More Commands but Grouped by Source](#more-commands-but-grouped-by-source)

@@ -6,7 +6,7 @@ Optimization
 
 `[ Out of Scope ]`
 
-### Contents
+__Contents__
 
 - [Loose Ideas](#loose-ideas)
 - [Procedural](#procedural)

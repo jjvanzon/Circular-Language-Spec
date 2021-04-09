@@ -6,7 +6,7 @@ Deeper Specialization
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [Other Specialization Techniques](#other-specialization-techniques)

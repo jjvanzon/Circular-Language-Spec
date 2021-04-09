@@ -4,7 +4,7 @@
 Assignment
 ----------
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [Distinguishing Object-Bound and Reference-Bound Aspects](#distinguishing-object-bound-and-reference-bound-aspects)

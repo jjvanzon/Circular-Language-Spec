@@ -4,7 +4,7 @@
 Relationships
 -------------
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [Relationships Between Classes](#relationships-between-classes)

@@ -12,7 +12,7 @@ The Encircle language for now is a specification in writing. At the time of this
 
 The documentation tries to shed light on the following topics:
 
-### Contents
+__Contents__
 
 - [Introduction](#introduction)
 - [Overview](#overview-1)

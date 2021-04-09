@@ -6,7 +6,7 @@ Black Boxes Unfinished
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [Misc Issues](#misc-issues)
     - [Protected](#protected)

@@ -6,7 +6,7 @@ From Framework | Circularity
 
 `[ Preliminary documentation ]`
 
-### Contents
+__Contents__
 
 - [One Approach](#one-approach)
 - [Older Story](#older-story)
