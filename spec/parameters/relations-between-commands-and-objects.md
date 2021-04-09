@@ -11,7 +11,7 @@ __Contents__
 - [Concept](#concept)
     - [Object Relations](#object-relations)
     - [Class Relations](#class-relations)
-- [In a Diagram](#in-a-diagram)
+- [Diagram](#diagram)
     - [Object Relations](#object-relations-1)
     - [Class Relations](#class-relations-1)
 - [Use This](#use-this)
@@ -56,7 +56,7 @@ So when you’ve passed an object to a command, the command automatically become
 
 But in case of a command definition, a parameter is usually not filled in yet, but the class of the parameter *is* filled in. It is a relation between classes, instead of a relation between objects. This automatically makes the command definition available from the parameter’s class. There is complete exchangeability between the class of a parameter and a command of a class.
 
-### In a Diagram
+### Diagram
 
 A parameter is an object related to a command.
 

@@ -9,7 +9,7 @@ Modules
 __Contents__
 
 - [Concept](#concept)
-- [In a Diagram](#in-a-diagram)
+- [Diagram](#diagram)
 - [Loose Ideas](#loose-ideas)
     - [Out of the original Symbol documentation](#out-of-the-original-symbol-documentation)
         - [Multiple Module Levels](#multiple-module-levels)
@@ -27,7 +27,7 @@ You can also reference a module directly from within another module. In that cas
 
 You don’t need to let modules refer to each other, to actually let one module use something from another module: one module can always access anything inside another module, whether it has a reference to it or not. A reference however, makes global things from one module, globally accessible inside another module.
 
-### In a Diagram
+### Diagram
 
 The principle of module is explained in the article *Module*. This article demonstrates its expression in a diagram.
 

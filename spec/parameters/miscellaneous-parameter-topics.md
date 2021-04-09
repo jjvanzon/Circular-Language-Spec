@@ -13,7 +13,7 @@ __Contents__
 - [Joint Display of Access Connectors and Object Relations](#joint-display-of-access-connectors-and-object-relations)
 - [Parameters & Arguments](#parameters--arguments)
     - [Concept](#concept)
-    - [In a Diagram](#in-a-diagram)
+    - [Diagram](#diagram)
 - [Parameters For The Add Command](#parameters-for-the-add-command)
 
 ### Introduction
@@ -68,7 +68,7 @@ So an argument is what is filled in as the parameter, what is pointing to the pa
 
 Since an argument can be a pointer to a parameter, and a parameter can be pointed to multiple times, a single parameter can have multiple arguments.
 
-#### In a Diagram
+#### Diagram
 
 The article *Parameters & Arguments* conceptually explained the usage of the term argument in relation to parameters. The current article gives examples of the diagrammatic expression of parameters and their arguments.
 

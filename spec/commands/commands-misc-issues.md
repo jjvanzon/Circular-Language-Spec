@@ -10,14 +10,14 @@ __Contents__
 
 - [Parent Controls Its Sub-Executions](#parent-controls-its-sub-executions)
     - [Sub-Commands Are Never Referenced](#sub-commands-are-never-referenced)
-        - [In a Diagram](#in-a-diagram)
+        - [Diagram](#diagram)
     - [Beware of Active Command References in Commands](#beware-of-active-command-references-in-commands)
-        - [In a Diagram](#in-a-diagram-1)
+        - [Diagram](#diagram-1)
     - [Sub-Commands Not Manually Started](#sub-commands-not-manually-started)
 - [Command Referrers](#command-referrers)
     - [Command Object Referrers](#command-object-referrers)
     - [Command Definition Referrers](#command-definition-referrers)
-        - [In a Diagram](#in-a-diagram-2)
+        - [Diagram](#diagram-2)
 - [This](#this)
     - [Class . HasThis](#class--hasthis)
     - [Class . This](#class--this)
@@ -54,7 +54,7 @@ To not cause any confusion, sub-commands are made __Private__.
 
 Do not change the rule to *sub-commands are always private*, because this would not fully solve the parent command’s control over its sub-commands’ execution. By just making them private, the parent command could still pass a reference to a *sub-*command, so that the parent *gives up* control over the execution of a *sub-*command. This is something, that will not be allowed. Now that you can *never reference a sub-command*, this control is restored.
 
-##### In a Diagram
+##### Diagram
 
 The current paragraph repeats the story, but now demonstrates the concept using diagrams.
 
@@ -100,7 +100,7 @@ This also has consequences for setting parameters for the active command referen
 
 It is *not* the rule, to beware of *any* active command reference. It is the rule to just always beware of them in a *parent command*. An *object* can contain an active command reference, in order to for instance allow a user to carry around a reference to an active command, executing on a site somewhere.
 
-##### In a Diagram
+##### Diagram
 
 You have to be aware, that when you use an active command reference, the active command reference may already have been executed.
 
@@ -144,7 +144,7 @@ When a site hosts a command definition, that is widely used all over the world, 
 
 If another site uses this widely used command definition, the using site could add a command reference to the command definition on the other site. A command reference has its own list of referrers. The using site could then redirect calls and references to its own command reference. Then the using site has a registration of anything on its site that uses the external command definition.
 
-##### In a Diagram
+##### Diagram
 
 < The expression of referrers in a diagram needs to be redone, because the referrers list refers to the parents of the references, which is not necessarily the way to go. I’m not sure yet. I might want to register the related items and related lists items that are the references to the command definition, instead of registering their parents, and an ID, that the reference has inside the parent. >
 

@@ -10,19 +10,19 @@ __Contents__
 
 - [Inactive Command Object Redirection](#inactive-command-object-redirection)
 - [Inactive Command Class Redirection](#inactive-command-class-redirection)
-    - [In a Diagram](#in-a-diagram)
+    - [Diagram](#diagram)
 - [Executable Command Class Redirection in a Diagram](#executable-command-class-redirection-in-a-diagram)
     - [Concept](#concept)
-    - [In a Diagram](#in-a-diagram-1)
+    - [Diagram](#diagram-1)
 - [Executable Command Object Redirection](#executable-command-object-redirection)
-    - [In a Diagram](#in-a-diagram-2)
+    - [Diagram](#diagram-2)
 - [Target Command Object](#target-command-object)
-    - [In a Diagram](#in-a-diagram-3)
+    - [Diagram](#diagram-3)
 - [Target Command Definition](#target-command-definition)
-    - [In a Diagram](#in-a-diagram-4)
+    - [Diagram](#diagram-4)
 - [Recursion](#recursion)
     - [Concept](#concept-1)
-    - [In a Diagram](#in-a-diagram-5)
+    - [Diagram](#diagram-5)
 - [Loose Ideas about Command Redirection](#loose-ideas-about-command-redirection)
     - [Ideas (about Target Command Object)](#ideas-about-target-command-object)
         - [Execution Trace](#execution-trace)
@@ -61,7 +61,7 @@ An inactive command class redirection can also point to an active command, makin
 
 Do remember, that the new prototype can *not* be executed by pointing to it with an active command reference, because the new prototype is a new *inactive* command object, and an inactive command object can not be executed.
 
-#### In a Diagram
+#### Diagram
 
 ![](images/4.%20Command%20Redirection.003.png)
 
@@ -81,7 +81,7 @@ If an executable command *does not have* a class redirection, then it defines it
 
 You could let an executable command redirect its definition to another executable command, but this is far less common. But an active command *can* function as the prototype for another executable command.
 
-#### In a Diagram
+#### Diagram
 
 Executable command class redirection is explained in the article *Executable Command Class Redirection*. The current article demonstrates the concept in a diagram.
 
@@ -103,7 +103,7 @@ Executable command object redirection is less common than inactive command objec
 
 You can also object redirect an executable command to an inactive command. If the final target of the object redirections is an inactive command, then you can not run that inexecutable command object through an active reference to it. It is kind of pointless to point to an inactive command object through an executable command reference, so it is very uncommon.
 
-#### In a Diagram
+#### Diagram
 
 The concept of execution object redirection is explained in the article *Execution Object Redirection*. The current article explains its expression in a diagram.
 
@@ -123,7 +123,7 @@ A command reference can point to another command reference, which points to anot
 
 The term target command is also used to denote the direct reference target, not necessarily the final target. What kind of target is denoted, will be clear from the context.
 
-#### In a Diagram
+#### Diagram
 
 The target command object is the last point in a string of object redirections of command symbols.
 
@@ -139,7 +139,7 @@ A target command definition is found by following the redirections, that lead to
 
 When you want to find the definition of a command, and the command is actually a command reference, you first need to follow all object reference redirections, to find the target command object. When you found the target command object, you can find the target command definition, by following one class redirection. Do not follow more than one class redirection, because if a definition points out a definition again, then the second definition is *another* command object, that the first definition is just *based* on. If the definition is a command reference itself, you have to follow all object redirections to find the target *definition* object. Then you have found the target command definition. That’s where redirection following ends. If the definition object has a definition itself, you might be tempted to follow the definition object’s class redirections as well, to find the final target definition, but you should not do that. If a definition object has a definition itself, then the definition object is only based on another definition, but it *is* an object of its own. An object redirection is just a much tighter bond like that, than a class redirection.
 
-#### In a Diagram
+#### Diagram
 
 To find the target definition, you first follow *all* the object redirections, then *one* class redirection, then *all* the object redirections and there it ends.
 
@@ -177,7 +177,7 @@ Only when the call actually executes, you can see private contents inside the re
 
 So only creating private content just before a command actually executes solves the problem of endless recursion.
 
-#### In a Diagram
+#### Diagram
 
 Recursion in commands happens when a command contains a call to the same command definition again.
 

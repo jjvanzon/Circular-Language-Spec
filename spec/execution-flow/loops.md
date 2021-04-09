@@ -9,25 +9,25 @@ Loops
 __Contents__
 
 - [Concept](#concept)
-- [In a Diagram](#in-a-diagram)
+- [Diagram](#diagram)
 - [For](#for)
     - [Concept](#concept-1)
-    - [Diagram](#diagram)
+    - [Diagram](#diagram-1)
 - [For (range)](#for-range)
     - [Concept](#concept-2)
-    - [Diagram](#diagram-1)
+    - [Diagram](#diagram-2)
 - [For (conditional)](#for-conditional)
     - [Concept](#concept-3)
-    - [Diagram](#diagram-2)
+    - [Diagram](#diagram-3)
 - [For Each](#for-each)
     - [Concept](#concept-4)
-    - [Diagram](#diagram-3)
+    - [Diagram](#diagram-4)
 - [While](#while)
     - [Concept](#concept-5)
-    - [Diagram](#diagram-4)
+    - [Diagram](#diagram-5)
 - [Until](#until)
     - [Concept](#concept-6)
-    - [Diagram](#diagram-5)
+    - [Diagram](#diagram-6)
 
 ### Concept
 
@@ -47,7 +47,7 @@ The following forms of repetition are supported:
 
 Each form is explained in a separate article.
 
-### In a Diagram
+### Diagram
 
 Loops are a form of execution flow explained in the article *Loops*. The articles that follow only explain their expression in a diagram.
 

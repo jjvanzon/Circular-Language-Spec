@@ -8,39 +8,38 @@ Creation Behavior
 
 __Contents__
 
-- [Contents](#contents)
 - [Creation Behavior of Calls](#creation-behavior-of-calls)
-    - [Calls In A Parent Command](#calls-in-a-parent-command)
-    - [Original Problem & Solution](#original-problem--solution)
-    - [Problems Solved By Delayed Creation](#problems-solved-by-delayed-creation)
-    - [Delayed Creation Of Private Contents Only Counts For Command Calls](#delayed-creation-of-private-contents-only-counts-for-command-calls)
-    - [Compared To CPU-Like Call](#compared-to-cpu-like-call)
-    - [Diagram Notation](#diagram-notation)
+  - [Calls In A Parent Command](#calls-in-a-parent-command)
+  - [Original Problem & Solution](#original-problem--solution)
+  - [Problems Solved By Delayed Creation](#problems-solved-by-delayed-creation)
+  - [Delayed Creation Of Private Contents Only Counts For Command Calls](#delayed-creation-of-private-contents-only-counts-for-command-calls)
+  - [Compared To CPU-Like Call](#compared-to-cpu-like-call)
+  - [Diagram Notation](#diagram-notation)
 - [Creation Behavior of Clauses](#creation-behavior-of-clauses)
-    - [In a Diagram](#in-a-diagram)
+  - [Diagram](#diagram)
 - [Creation Behavior of ‘Inactive Calls’](#creation-behavior-of-inactive-calls)
-    - [In a Diagram](#in-a-diagram-1)
+  - [Diagram](#diagram-1)
 - [No Overhead of Command Creation](#no-overhead-of-command-creation)
 - [No Circular Command Creation](#no-circular-command-creation)
-    - [In a Diagram](#in-a-diagram-2)
+  - [Diagram](#diagram-2)
 - [No Private Contents in a Call in a Definition](#no-private-contents-in-a-call-in-a-definition)
-    - [In a Diagram](#in-a-diagram-3)
+  - [Diagram](#diagram-3)
 - [A Call in a Call Shows Privates When Running](#a-call-in-a-call-shows-privates-when-running)
-    - [In a Diagram](#in-a-diagram-4)
+  - [Diagram](#diagram-4)
 - [Active Command in Inactive Command](#active-command-in-inactive-command)
-    - [In a Diagram](#in-a-diagram-5)
+  - [Diagram](#diagram-5)
 - [Comparison to CPU-Like Call Instantiation](#comparison-to-cpu-like-call-instantiation)
-    - [What happens in other programming languages?](#what-happens-in-other-programming-languages)
-    - [Why does that not work for my own system?](#why-does-that-not-work-for-my-own-system)
-    - [Data](#data)
-    - [Pointers to this data](#pointers-to-this-data)
-    - [Sub-commands](#sub-commands)
-    - [Parameters of these sub-commands](#parameters-of-these-sub-commands)
-    - [Assignment of data to the sub-commands’ parameters](#assignment-of-data-to-the-sub-commands-parameters)
-    - [Reason to always create and assign sub-commands…](#reason-to-always-create-and-assign-sub-commands)
-    - [How can a parameter passing assignment be stored](#how-can-a-parameter-passing-assignment-be-stored)
-    - [More Brainstorming](#more-brainstorming)
-    - [Former Text](#former-text)
+  - [What happens in other programming languages?](#what-happens-in-other-programming-languages)
+  - [Why does that not work for my own system?](#why-does-that-not-work-for-my-own-system)
+  - [Data](#data)
+  - [Pointers to this data](#pointers-to-this-data)
+  - [Sub-commands](#sub-commands)
+  - [Parameters of these sub-commands](#parameters-of-these-sub-commands)
+  - [Assignment of data to the sub-commands’ parameters](#assignment-of-data-to-the-sub-commands-parameters)
+  - [Reason to always create and assign sub-commands…](#reason-to-always-create-and-assign-sub-commands)
+  - [How can a parameter passing assignment be stored](#how-can-a-parameter-passing-assignment-be-stored)
+  - [More Brainstorming](#more-brainstorming)
+  - [Former Text](#former-text)
 
 ### Creation Behavior of Calls
 
@@ -212,7 +211,7 @@ Clauses being permanently created as long as the parent command is created even 
 
 Note, that though everything of the clauses is created, parameters of an active clause are only *assigned* right before the clause is run.
 
-#### In a Diagram
+#### Diagram
 
 Just like other commands, that do not have a definition, a clause’s contents are created all the time, including its private contents.
 
@@ -238,7 +237,7 @@ Special creation behavior does *not* count for inactive command objects inside a
 
 Creating its private contents, does not create a recursive creation or anything: the inactive call’s own private calls do not create *their* private contents, so there is no recursion there.
 
-#### In a Diagram
+#### Diagram
 
 The article *Creation Behavior of ‘Inactive Calls’* already explained this behavior conceptually. The current article further clarifies the idea using diagrams.
 
@@ -286,7 +285,7 @@ One of the reasons why private contents of a call are only created just before t
 
 Another reason why private contents of a call are only created just before the call is run, is because this prevents circular creation of commands. Some command may call another command and that command may call the first one again. Command calls are usually private, so if you would create all possible command calls, you end up creating an endless recurrence of command creations, while in reality, the recurrence will be broken by some conditional execution of one of the command calls. Creating private contents of command calls prevents this circular creation and only creates a command object when it will actually run.
 
-#### In a Diagram
+#### Diagram
 
 The concept of No Circular Command Creation has already been explained in the article *No Circular Command Creation*. The current article shows what circular creation could look like
 
@@ -300,7 +299,7 @@ Not creating a call’s private contents before it even runs, takes away discuss
 
 Bear in mind, that when an executable object does not redirect its definition, it has to define its own private contents, because nothing else defines its private contents but he himself. But *calls inside* such a definition, only have their *public* contents are created again.
 
-#### In a Diagram
+#### Diagram
 
 This section repeats the story, but now demonstrates the concept using diagrams.
 
@@ -338,7 +337,7 @@ A call inside another call only contains its private content when it is actually
 
 Not creating a call’s private contents before it even runs, takes away discussion about when to display and when not to display a command’s private contents.
 
-#### In a Diagram
+#### Diagram
 
 A call inside another call only contains its private content when it is actually running. 
 
@@ -360,7 +359,7 @@ A clause in a clause only ever runs when its top parent command is an active com
 
 An executable command inside a command definition can not be run, because its parent is dormant, and an executable sub-command can not be referenced from elsewhere either.
 
-#### In a Diagram
+#### Diagram
 
 A clause in a clause only ever runs when its top parent command is an active command object. If the top parent command is an inactive command object, for instance a command definition, then even an *active* clause in it is dormant.
 

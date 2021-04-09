@@ -19,10 +19,10 @@ __Contents__
     - [Ideas about Variable Amount of Parameters](#ideas-about-variable-amount-of-parameters)
 - [Return Values](#return-values)
     - [Concept](#concept-2)
-    - [In a Diagram](#in-a-diagram)
+    - [Diagram](#diagram)
 - [Parameter Order](#parameter-order)
     - [Concept](#concept-3)
-    - [In a Diagram](#in-a-diagram-1)
+    - [Diagram](#diagram-1)
 
 ### Introduction
 
@@ -146,7 +146,7 @@ Variable amount of arguments is a purely textual notation. The diagram notation 
 
 Other programming language used to have only *one* return value. The new computer language can have *any* amount of output values or output objects, and no single parameter is selected to be *the* return value. I guess the concept of one return value dates from when a command was meant to be like a mathematical formula. I do not think, that limiting the amount of return values of a command to one, has a place in a more modern programming language anymore, because we have to realize, that programming is not mathematics.
 
-#### In a Diagram
+#### Diagram
 
 As discussed in the article *Return Values*, the new computer language does not limit the amount of output objects. Any object readable from the outside, may be an output object.
 
@@ -162,7 +162,7 @@ Other programming languages were textual. The parameters were put in a certain o
 
 Even though all parameters can be individually accessed by pointing to its symbol or by using its name, you *can* still give the parameters an order of display. The articles, that follow, will elaborate on the diagrammatic and textual expression of parameter order.
 
-#### In a Diagram
+#### Diagram
 
 The article *Parameter Order* introduced the concept of an ordered list of parameters. The diagramatic display of parameter order is still not final.
 
