@@ -1,5 +1,5 @@
-﻿Encircle Language Spec | System Objects
-=======================================
+﻿Encircle Language Spec | System Interfaces
+==========================================
 
 Connectors & Connections
 ------------------------
@@ -86,7 +86,7 @@ Each system command has a connector, so every system aspect has its own set of c
 
 #### Loose Ideas about Connectors
 
-System Objects,  
+System Interfaces,  
 2009-09-27
 
 Not all system commands are present here yet.  

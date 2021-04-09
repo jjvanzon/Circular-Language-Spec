@@ -24,7 +24,7 @@ __Contents__
 - [Parameters](#parameters)
 - [Modules](#modules)
 - [Execution Flow](#execution-flow)
-- [System Objects](#system-objects)
+- [System Interfaces](#system-interfaces)
 - [Black Boxes](#black-boxes)
 - [Interfaces](#interfaces)
 - [Events](#events)
@@ -92,11 +92,11 @@ __Contents__
 
   The idea of execution flow statements is that they may regulate the order in which things are executed. Several execution flow statements are proposed. The key examples might be __If__ and __For__ statements. An attempt is made to build up a complete set of execution flow statements, to explore what could be desired from the diagram notation for it.
 
-### [System Objects](system-objects)
+### [System Interfaces](system-interfaces)
 
 - ![](images/Circle%20Language%20Spec%20Overview.007.png)
 
-  One possible application of how this language might run in practice, is one where systems may be composed of *system objects*. System objects could be the *actual* objects, that a system runs on. Maybe this is a specific use case of the language, but describing it, seems to have allowed more generally usable things to fall out. One of the intentions of system objects could be, to manage *relationships* between objects. They might also control *system aspects*, such as __Value__, __Object__, __Class__, __Interface__ and __Execution__ and __Multiplicity__. Those aspects could be controlled through *system commands* like __Get__ and __Set__. The story moves on to assignment commands. The idea is that assignment commands copy an aspect from one object to another. The *System Objects* documentation also tries to show connectors, connections and different notational forms to regulate these aspects.
+  One possible application of how this language might run in practice, is one where systems may be composed of *system objects*. System objects could be the *actual* objects, that a system runs on. Maybe this is a specific use case of the language, but describing it, seems to have allowed more generally usable things to fall out. One of the intentions of system objects could be, to manage *relationships* between objects. They might also control *system aspects*, such as __Value__, __Object__, __Class__, __Interface__ and __Execution__ and __Multiplicity__. Those aspects could be controlled through *system commands* like __Get__ and __Set__. The story moves on to assignment commands. The idea is that assignment commands copy an aspect from one object to another. The *System Interfaces* documentation also tries to show connectors, connections and different notational forms to regulate these aspects.
 
 ### [Black Boxes](black-boxes)
 

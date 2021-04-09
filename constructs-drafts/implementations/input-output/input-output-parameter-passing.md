@@ -505,7 +505,7 @@ It can also be a *sub-object* of the parameter, that is read or written. Even th
 Sometimes the command itself does not read or write from a parameter, but the parameter is passed down to a sub-command, that reads or writes from the object. This yields over the in-out-thru properties of the parameter. This does give the parameter an indication of value direction, but this is an abstract notation of what is going on. The assignments are done by a sub-command.
 
 Next to values being read or written, an abstract indication of value direction is also used to indicate addition, removal, creation and annulment of objects. These actions are all considered *writing* or *output*.  
-In the definition of the command, you will see the individual additions, removals, creations and annulments as calls to system commands (see the *System Objects* documentation section).  
+In the definition of the command, you will see the individual additions, removals, creations and annulments as calls to system commands (see the *System Interfaces* documentation section).  
 But the __Reference__ *parameter* will get an *abstract* value direction indication, that says the reference parameter is output.
 
 All in all, non-value transmissions apply to __By Reference__ parameters only.

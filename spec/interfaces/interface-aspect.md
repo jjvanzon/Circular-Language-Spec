@@ -39,7 +39,7 @@ __Contents__
 
 ### Introduction
 
-While systems seem to be composed of a lot of different types of objects, all objects and types are in reality no more than a very limited set of types, that can be configured to look like other types. Those basic objects are called *system objects*. The behavior of those system objects is controlled by controlling their *system aspects*. System objects is covered in a separate chapter called *System Objects*, but there the *interface* aspect was completely left out of the story. In this part of the documentation everything about the interface aspect is laid out to make the concept of interfaces catch up with the *System Objects* story.
+While systems seem to be composed of a lot of different types of objects, all objects and types are in reality no more than a very limited set of types, that can be configured to look like other types. Those basic objects are called *system objects*. The behavior of those system objects is controlled by controlling their *system aspects*. System objects is covered in a separate chapter called *System Interfaces*, but there the *interface* aspect was completely left out of the story. In this part of the documentation everything about the interface aspect is laid out to make the concept of interfaces catch up with the *System Interfaces* story.
 
 The __Interface__ aspect allows you to control how objects look on the outside, while the insides of the objects can differ completely. Another concept which employs the word *interfaces* is an object (an interface) melting together with its container. From a systematic point of view they seem to be completely unrelated concepts, however in practice they are conjoinedly used. To distinguish them we call them the __Interface__ aspect and the __Interface Merging__ aspect. The main diagram symbolization of the __Interface__ aspect is as follows:
 
@@ -130,7 +130,7 @@ When an interface is merged it means that its members merge with its container a
 
 ### Interface Aspect in System Interface
 
-System aspects can be shown in the system interface notation as worked out in the *System Interfaces* articles in the *System Objects* chapter. The __Interface__ aspect was not covered there, so this is a supplement to that documentation.
+System aspects can be shown in the system interface notation as worked out in the *System Interfaces* articles in the *System Interfaces* chapter. The __Interface__ aspect was not covered there, so this is a supplement to that documentation.
 
 #### Object-Interface in System Interface
 
@@ -180,7 +180,7 @@ __Interface Merging__ does not apply to __Related List Items__, because it does 
 
 ### Interface Assignment Types
 
-This section is a mere supplement to the *Assignment* articles in the *System Objects* chapter. For a general explanation of assignment, look there. This section only makes the __Interface__ aspect catch up with the rest of the explanations.
+This section is a mere supplement to the *Assignment* articles in the *System Interfaces* chapter. For a general explanation of assignment, look there. This section only makes the __Interface__ aspect catch up with the rest of the explanations.
 
 
 #### Interface Assignment
@@ -251,13 +251,13 @@ This section is a mere supplement to the *Assignment* articles in the *System Ob
 |             __Reference-Class Get `<=`__              |
 |           __Reference-Interface Set `=>`__            |
 
-There are more implementations of the cross-aspect assignments for cases when the source of the assignment is a pointer-to-pointer, but they are not shown here. To understand the concept look in the *Cross-Aspect Assignments* article in the *System Objects* chapter.
+There are more implementations of the cross-aspect assignments for cases when the source of the assignment is a pointer-to-pointer, but they are not shown here. To understand the concept look in the *Cross-Aspect Assignments* article in the *System Interfaces* chapter.
 
 ### Interface System Command Calls
 
-The concepts of system command call notations is not explained here. Refer to the *System Command Call Notations* article in the *System Objects* chapter for that. this is a supplement to that documentation, covering it for the __Interface__ aspect. The __Interface Merged__ aspect is also covered.
+The concepts of system command call notations is not explained here. Refer to the *System Command Call Notations* article in the *System Interfaces* chapter for that. this is a supplement to that documentation, covering it for the __Interface__ aspect. The __Interface Merged__ aspect is also covered.
 
-Cross-aspect situations can apply to the __Interface__ aspect, but they are not covered. Cross-aspect situations between the __Object__ and __Class__ aspects are described in the *System Objects* chapter and adequately shed light on the topic.
+Cross-aspect situations can apply to the __Interface__ aspect, but they are not covered. Cross-aspect situations between the __Object__ and __Class__ aspects are described in the *System Interfaces* chapter and adequately shed light on the topic.
 
 #### Interface - System Interface - Command Call Notation
 
@@ -358,7 +358,7 @@ Below you will find the possible connections for the __Interface__ aspect and th
 
 ### New Command with Interface Parameter
 
-The __New__ command was introduced in the *System Objects* chapter, having an optional __Class__ parameter:
+The __New__ command was introduced in the *System Interfaces* chapter, having an optional __Class__ parameter:
 
 ![](images/2.%20Interface%20Aspect.049.png)
 

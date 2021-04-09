@@ -22,4 +22,4 @@ Topics that may be recognizable from the *spec*, but then ideas perhaps more phi
 
 - [Relationships | Broader View](relationships-broader-view.md)
 
-- [System Objects | Broader View](system-objects-broader-view.md)
+- [System Interfaces | Broader View](system-interfaces-broader-view.md)

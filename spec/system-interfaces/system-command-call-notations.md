@@ -1,5 +1,5 @@
-﻿Encircle Language Spec | System Objects
-=======================================
+﻿Encircle Language Spec | System Interfaces
+==========================================
 
 System Command Call Notations
 -----------------------------

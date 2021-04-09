@@ -41,7 +41,7 @@ You might find the following content here:
         ::   Global
     ```
 
-    - Access operators seem hard to place inside a mathematical system. It may be difficult to find an analogy between mathematical operators and such access literals. However, a clearer view on what place access operators might have inside Encircle language might be welcome. Access operators seem to be abstract character representations of system commands, such as __Object Get, Class Get, Item Get, Value Get__ and __Value Set__. All these system commands seem to be explained in the *System Objects* chapter of the *Spec*. Inside Encircle language, access operators might just be textual expressions of calls to those system commands. What might not yet be clarified inside this unfinished article is how the access operators might textually look inside the new computer language.
+    - Access operators seem hard to place inside a mathematical system. It may be difficult to find an analogy between mathematical operators and such access literals. However, a clearer view on what place access operators might have inside Encircle language might be welcome. Access operators seem to be abstract character representations of system commands, such as __Object Get, Class Get, Item Get, Value Get__ and __Value Set__. All these system commands seem to be explained in the *System Interfaces* chapter of the *Spec*. Inside Encircle language, access operators might just be textual expressions of calls to those system commands. What might not yet be clarified inside this unfinished article is how the access operators might textually look inside the new computer language.
 
 - ### [Assignment in Text Code](assignment-in-text-code.md)
 
@@ -76,7 +76,7 @@ You might find the following content here:
 
     - The dereference operator seems to get the target (value) of a reference. The address-of operator seems to retrieve the memory address of a value or object. It might be considered what place this may have in Encircle.
 
-    - These pointer operators, like access operators, might turn out to be calls to system commands, such as __Object Get, Class Get, Item Get, Value Get__ and __Value Set__. All these system commands may be explained inside the *System Objects* part of the *Spec*, not necessarily here. It might be an idea to try and have full availability of everything you might want to do with pointers inside Encircle language. Which system commands might substitute dereference and address-of operators in C++ might be figured out. And whether or not more pointer operations may be welcome in the Encircle language.
+    - These pointer operators, like access operators, might turn out to be calls to system commands, such as __Object Get, Class Get, Item Get, Value Get__ and __Value Set__. All these system commands may be explained inside the *System Interfaces* part of the *Spec*, not necessarily here. It might be an idea to try and have full availability of everything you might want to do with pointers inside Encircle language. Which system commands might substitute dereference and address-of operators in C++ might be figured out. And whether or not more pointer operations may be welcome in the Encircle language.
 
 - ### [Qualified Event Names](qualified-event-names.md)
 

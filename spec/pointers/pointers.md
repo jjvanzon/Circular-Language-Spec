@@ -716,6 +716,6 @@ Pointers (references to related objects)
 A relation between a *pointer to an object* and a *command*. `The*` pointer `is` a totally different entity, than `the*` object itself.  
 \>  2008-10-01 `I’d` think, that `this will` add related objects to `the*` system interface, `so` related objects to a related item system object, instead of related objects to `the*` target object of `the*` related item system object.  
 `This is` a relations issue: relations to pointers in particular.  
-`I will need` to look at *System Objects* to see what a pointer `actually was`: it `was` a relation to a related item, instead of a relation to an object independent of `any` other container.
+`I will need` to look at *System Interfaces* to see what a pointer `actually was`: it `was` a relation to a related item, instead of a relation to an object independent of `any` other container.
 
 JJ

@@ -1,5 +1,5 @@
-﻿Encircle Language Spec | System Objects
-=======================================
+﻿Encircle Language Spec | System Interfaces
+==========================================
 
 Loose Ideas
 -----------
@@ -77,7 +77,7 @@ JJ
 -----
 
 Computer Language,  
-System Objects
+System Interfaces,
 
 Je moet ook system commands hebben, die een ->1 related item toevoegen, en dergelijke. Je moet eigenlijk alles van het diagram kunnen genereren. Ik ben geen voorstander van code generators, maar het moet wel mogelijk zijn.
 
@@ -167,7 +167,7 @@ Just now, I’ve only discussed the system procedures of *object symbols*. Proce
 
 -----
 
-System Objects,  
+System Interfaces,  
 2009-08-31
 
 You might create something to only retrieve related commands or only related (non-command) objects, but that is a detail.
@@ -176,7 +176,7 @@ JJ
 
 -----
 
-System Objects,  
+System Interfaces,  
 2009-08-31
 
 In 2004 there used to be the Shape aspect, but now I would make them a set of booleans:
@@ -190,7 +190,7 @@ JJ
 
 -----
 
-System Objects,  
+System Interfaces,  
 2009-08-31
 
 What represents the state of an object, are all the values stored by the object, including the ID’s of related objects, etcetera. It might also be callled an aspect, but is not to be confused with the Value aspect.
@@ -199,7 +199,7 @@ JJ
 
 -----
 
-System Objects,  
+System Interfaces,  
 2004
 
 The __State__ symbol aspect can be obtained and assigned too.
@@ -215,7 +215,7 @@ JJ
 
 -----
 
-System Objects,  
+System Interfaces,  
 2009-08-31
 
 Can the Related Items and Related Lists be called a separate aspect, such as the __Ancestry__ aspect or something similar?
@@ -224,7 +224,7 @@ JJ
 
 -----
 
-System Objects,  
+System Interfaces,  
 2009-08-31
 
 In 2004 I had the Symbol aspect, that returns the symbol itself. That is now the Reference aspect. I had already thought of that in 2004.
@@ -233,7 +233,7 @@ JJ
 
 -----
 
-System Objects,  
+System Interfaces,  
 2009-08-31
 
 Should I mention the inseparability of Get and Set?  
@@ -244,7 +244,7 @@ JJ
 
 -----
 
-System Objects,  
+System Interfaces,  
 2009-08-31
 
 Get for Access:  
@@ -254,7 +254,7 @@ JJ
 
 -----
 
-System Objects,  
+System Interfaces,  
 2009-08-31
 
 ‘Get Purposes’
@@ -275,7 +275,7 @@ JJ
 
 -----
 
-System Objects,  
+System Interfaces,  
 2009-08-31
 
 I forgot about annulling the Class. This removes the class list completely. How do I express that?
@@ -284,7 +284,7 @@ JJ
 
 -----
 
-System Objects,  
+System Interfaces,  
 2009-09-03
 
 Can you display an Access call explicitly?
@@ -301,7 +301,7 @@ The Get usually returns system information. The Set usually changes a line targe
 
 -----
 
-System Objects,  
+System Interfaces,  
 2004
 
 - Setting lines
@@ -412,7 +412,7 @@ Ondanks dat systematiek opgeslagen is in de object klasse van de module klasse?
 
 ### System Interface Notation
 
-System Objects,  
+System Interfaces,  
 2009-08-31
 
 Notation of the system interface *can* go together with the regular contents of the symbol.
@@ -427,7 +427,7 @@ Because procedures have system procedures themselves, you’d think that an syst
 
 -----
 
-System Objects  
+System Interfaces  
 2004,
 
 If you see the system interface as an object, though, you can regard the system interface to have the same type for every object symbol. Procedure symbols would have a different system type. All symbols would derive from this system type then.
@@ -486,7 +486,7 @@ A system object is represented as follows: < Bluntly a simple display of the sys
 
 -----
 
-System Objects,  
+System Interfaces,  
 2004
 
 The combination of a Get and a Set as such is called an *assignment*.
@@ -507,7 +507,7 @@ TO THE 'OLDER' ARTICLES THEN...
 
 -----
 
-System Objects
+System Interfaces,
 
 Object of class zou aan een gebruiker ook kunnen worden uitgelegd als 'context'.
 
@@ -519,7 +519,7 @@ The System Commands articles may be further extended with details and more exact
 
 ### Details
 
-System Objects,  
+System Interfaces,  
 2004
 
 There are two things you can do with a value: copy it or transform it.
@@ -528,7 +528,7 @@ JJ
 
 -----
 
-System Objects,  
+System Interfaces,  
 2009-08-31
 
 There are no assignments between the Value and Object aspects... cover that somewhere?
@@ -593,10 +593,10 @@ Conversely, a procedure can apart from it’s usual representation, be represent
 
 #### Object = Collection?
 
-System Objects,  
+System Interfaces,  
 2009-04-08
 
-I want to add this idea to to the System Objects documentation:
+I want to add this idea to to the System Interfaces documentation:
 
 An object is a collection of other objects. So in a way an object is always a collection. Yet, it is not represented by a nonagon shape, that represents multiplicity.
 
@@ -610,7 +610,7 @@ JJ
 
 #### Object Target Reference = Value??
 
-System Objects,  
+System Interfaces,  
 2009-08-31
 
 Internally, an aspect such as Object is stored as the ID of the object, which is a Value, stored as a Value aspect of the ID object.
@@ -619,7 +619,7 @@ JJ
 
 #### Design Time = Run Time
 
-System Objects / Design Time = Run Time,  
+System Interfaces / Design Time = Run Time,  
 2009-08-31
 
 Typical design type aspects:
@@ -919,7 +919,7 @@ JJ
 
 -----
 
-System Objects,  
+System Interfaces,  
 2009-08
 
 - Related list item may support the same interface as a related item, as an aid in concepts that apply to both related items and related list items.
@@ -931,7 +931,7 @@ JJ
 
 -----
 
-System Objects,  
+System Interfaces,  
 2009-09
 
 - More system commands
@@ -948,7 +948,7 @@ JJ
 
 -----
 
-System Objects,  
+System Interfaces,  
 2008-08-08,
 
 Toegang van het ene object naar het andere met puntnotatie,
@@ -959,7 +959,7 @@ JJ
 
 -----
 
-System Objects,  
+System Interfaces,  
 2009-09-06
 
 Also clearly state, that everything comes down to system command calls, even when you are accessing objects.
@@ -968,7 +968,7 @@ JJ
 
 -----
 
-System Objects,  
+System Interfaces,  
 2009-08
 
 < Om iets alleen te mogen gebruiken als class kun je de access connector line gestreept tekenen (en ook de shape). Als je iets wel als object mag gebruiken, alleen het wordt alleen *gebruikt* als class kun je de *shape* met gestreepte lijn tekenen maar de access connector (inclusief line) ononderbroken laten. >
@@ -977,7 +977,7 @@ JJ
 
 -----
 
-System Objects,
+System Interfaces,
 2009-08
 
 There may be a difference between the fundamental notations of
@@ -996,7 +996,7 @@ JJ
 
 -----
 
-System Objects,  
+System Interfaces,  
 2010-05
 
 I have the idea, that you could distinguish accessing the reference from accessing the object though use of the access mark, because that indicates an active get, an active access. But then the notation may come in conflict with other simplified system objects notations.  
@@ -1006,7 +1006,7 @@ JJ
 
 -----
 
-System Objects,  
+System Interfaces,  
 2010-05-12
 
 The Name aspect is missing from the command call notations,

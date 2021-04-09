@@ -62,7 +62,7 @@ Some of the execution flow commands are passed a *condition*. The condition will
 
 For the __If__ statement it is alright, when the condition is calculated *once* and the Boolean result is passed to the __If__ command as the condition. But in a conditional *loop*, the condition must be re-evaluated on every repetition of the loop. Recalculation of the condition, every time the condition is consulted, can be established by making the condition a reference to a reference to a __Boolean__, rather than a reference to a specific __Boolean__ object.  
 So the condition argument refers to a *reference*.  
-The reference, that is referred to, can perform a calculation before it returns the __Boolean__. It performs the calculation every time the reference is consulted. How a reference can recalculate the value of an object whenever it is retrieved, is explained by the article *System Objects*.
+The reference, that is referred to, can perform a calculation before it returns the __Boolean__. It performs the calculation every time the reference is consulted. How a reference can recalculate the value of an object whenever it is retrieved, might be described in the *System Interfaces* articles.
 
 Commands basically just call more commands. But a few commands do something other than just call other commands. The most basic ones of those are commands, that execute a machine instruction: an operation that is executed by the CPU, the central processing unit of the computer. But directly on top of the machine commands, there are the *execution flow commands*, that control the flow of a program, making the next command to call dependent on a condition. Any other command basically only calls more commands.
 

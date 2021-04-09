@@ -472,7 +472,7 @@ The __Interface__ aspect is not covered here, because it is covered by the *Inte
 
 ### Object-Bound, Reference-Bound & Access Control
 
-For the basics: see the article *Object-Bound & Reference-Bound* in the *System Objects* article group.
+For the basics: see *Object-Bound & Reference-Bound* in the *System Interfaces* articles.
 
 #### Key Example: Value Get
 

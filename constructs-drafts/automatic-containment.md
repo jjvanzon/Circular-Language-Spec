@@ -969,7 +969,7 @@ JJ
 Automatic Containment,  
 2008-09-21
 
-The beginning of the System Objects article group:
+The beginning of the System Interfaces article group:
 
 “Objects are never directly accessed. They are always floating around somewhere you cannot touch. You are always accessing an object through an *object reference*. You are always dealing with *references* to objects, never with the object directly.”
 

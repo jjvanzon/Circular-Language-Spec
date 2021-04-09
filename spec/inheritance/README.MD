@@ -8,5 +8,5 @@ Inheritance Articles
 - [Specialization](specialization.md)
 - [Enforcing & Preventing Specialization](enforcing-and-preventing-specialization.md)
 - [Deeper Specialization](deeper-specialization.md)
-- [Extending System Objects (Older)](extending-system-objects-older.md)
+- [Extending the System Interfaces (Older)](extending-the-system-interfaces-older.md)
 - [Inheritance Loose Ideas](inheritance-loose-ideas.md)

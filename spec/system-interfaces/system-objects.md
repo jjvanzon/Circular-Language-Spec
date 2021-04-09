@@ -81,7 +81,7 @@ A system object may also manage aspects of a symbol, like its *class*, whether i
 
 *Assignment commands* may also be system commands. An assignment command might copy an aspect from one object to another.
 
-The *System Objects* documentation would also show *connectors, connections* and other notational forms that might come with controlling these system aspects.
+The *System Interfaces* documentation would also show *connectors, connections* and other notational forms that might come with controlling these system aspects.
 
 ### The System Objects
 

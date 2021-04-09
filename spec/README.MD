@@ -32,14 +32,14 @@ Contents
     - [Jumps](execution-flow/jumps.md)
     - [Loop-Related Jumps](execution-flow/loop-related-jumps.md)
     - [Execution Flow Loose Ideas](execution-flow/execution-flow-loose-ideas.md)
-- System Objects
-    - [System Objects](system-objects/system-objects.md)
-    - [Assignment](system-objects/assignment.md)
-    - [System Command Call Notations](system-objects/system-command-call-notations.md)
-    - [Connectors & Connections](system-objects/connectors-and-connections.md)
-    - [System Objects Misc Issues](system-objects/system-objects-misc-issues.md)
-    - [List Concept](system-objects/list-concept.md)
-    - [System Objects Loose Ideas](system-objects/system-objects-loose-ideas.md)
+- System Interfaces
+    - [System Objects](system-interfaces/system-objects.md)
+    - [Assignment](system-interfaces/assignment.md)
+    - [System Command Call Notations](system-interfaces/system-command-call-notations.md)
+    - [Connectors & Connections](system-interfaces/connectors-and-connections.md)
+    - [System Interfaces Misc Issues](system-interfaces/system-interfaces-misc-issues.md)
+    - [List Concept](system-interfaces/list-concept.md)
+    - [System Interfaces Loose Ideas](system-interfaces/system-interfaces-loose-ideas.md)
 - Black Boxes
     - [Black Boxes](black-boxes/black-boxes.md)
     - [Public & Private Connectors, Connections & Assignments](black-boxes/public-and-private-connectors-connections-and-assignments.md)
@@ -59,7 +59,7 @@ Contents
     - [Specialization](inheritance/specialization.md)
     - [Enforcing & Preventing Specialization](inheritance/enforcing-and-preventing-specialization.md)
     - [Deeper Specialization](inheritance/deeper-specialization.md)
-    - [Extending System Objects (Older)](inheritance/extending-system-objects-older.md)
+    - [Extending the System Interfaces (Older)](inheritance/extending-the-system-interfaces-older.md)
     - [Inheritance Loose Ideas](inheritance/inheritance-loose-ideas.md)
 - [Type Control](type-safety-genericity-explicit.md)
 - Object Resolution

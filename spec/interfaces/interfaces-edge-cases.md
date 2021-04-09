@@ -45,7 +45,7 @@ Below these two problems are explained and possible solutions are given. Solutio
 > 
 > To allow member grouping to be benign, some solution must be found for this. The solution probably lies in the area of access controlling system commands. The member groupings need to be access controlled enough to not be able to explicitly connect to them, but not so much that it makes their members totally inaccessible. Separately access controlling __Get For Access__ and __Get For Copy__ might solve this problem. However, it needs to be thought through if this really only blocks something’s usage as a qualifier. If it does not, probably another split up in system commands will do the trick.
 > 
-> Ideas about the separation between __Get For Access__ and __Get For Copy__ can also be found in the *Black Box* and *System Objects* chapters.
+> Ideas about the separation between __Get For Access__ and __Get For Copy__ can also be found in the *Black Box* and *System Interfaces* chapters.
 
 #### Call Overhead
 

@@ -1,5 +1,5 @@
-﻿Encircle Language Spec | System Objects
-=======================================
+﻿Encircle Language Spec | System Interfaces
+==========================================
 
 Misc Issues
 -----------
@@ -153,7 +153,7 @@ Objects can have references to other objects. A referenced object may not aware 
 
 `The*` __Referrers__ list `consists` of references *back* to `the*` referrers, `but*` that `does not* mean the*` object `in turn becomes` a referrer of `the*` referrer `again`.
 
-An object `can* have` a referrers list, `but*` an object reference, `so` a related item or related list item (see `the*` *System Objects* articles), `can*` also `have` its `own` referrers list for references that `refer` to references.
+An object `can* have` a referrers list, `but*` an object reference, `so` a related item or related list item (see `the*` *System Interfaces* articles), `can*` also `have` its `own` referrers list for references that `refer` to references.
 
 ###### `Not*` Supporting `the*` Referrers Concept
 

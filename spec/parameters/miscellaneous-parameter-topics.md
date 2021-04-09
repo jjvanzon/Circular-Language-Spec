@@ -22,7 +22,7 @@ The following articles may explain some miscellaneous parameter topics, that are
 
 ### Parameter Passing
 
-*Object*, *class*, *value* and *execution* are called system aspects of a symbol. The basic ones are covered in the articles *System Objects*.
+*Object*, *class*, *value* and *execution* are called system aspects of a symbol. The basic ones are covered in the articles *System Interfaces*.
 
 Other programming languages have *parameter passings*. In the new computer language parameter passing is established by access controlling the system aspects of a parameter.
 

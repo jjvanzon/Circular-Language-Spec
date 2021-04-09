@@ -1,8 +1,8 @@
 ﻿Encircle Language Spec | Inheritance
 ====================================
 
-Extending the System Objects
-----------------------------
+Extending the System Interfaces
+-------------------------------
 
 `[ Preliminary documentation ]`
 
@@ -16,13 +16,13 @@ __Contents__
 - [Extension Procedures are Events](#extension-procedures-are-events)
 - [Extension Procedures Part of Parent](#extension-procedures-part-of-parent)
 - [Obsolete Members: Initialize Item & Terminate Item](#obsolete-members-initialize-item--terminate-item)
-- [Extension of System Objects in a Diagram](#extension-of-system-objects-in-a-diagram)
+- [Extension of System Interfaces in a Diagram](#extension-of-system-interfaces-in-a-diagram)
 - [Loose Ideas](#loose-ideas)
-    - [Extension (Cross-Out Leftovers from System Objects)](#extension-cross-out-leftovers-from-system-objects)
+    - [Extension (Cross-Out Leftovers from System Interfaces)](#extension-cross-out-leftovers-from-system-interfaces)
 
 ### Introduction
 
-In the *System Objects* articles it has been repeatedly mentioned, that all the system commands can be extended with extra procedures. First, to demonstrate the concept, this article gives you the main examples of system command extension. After that, all the possible system command extensions will be listed out.
+In the *System Interfaces* articles it has been repeatedly mentioned, that all the system commands can be extended with extra procedures. First, to demonstrate the concept, this article gives you the main examples of system command extension. After that, all the possible system command extensions will be listed out.
 
 ### Main Examples of System Command Extension
 
@@ -232,9 +232,9 @@ Theoretically it does not matter whether extension procedures are defined by for
 
 In an earlier version of the new computer language, version 2.0, a related list also had the extension procedures __Initialize Item__ and __Terminate Item__. In the new version of the new computer language, version 3.0, __Initialize Item__ is replaced by __Add  .  Post-Extend__ and __Terminate Item__ is replaced by __Remove  .  Pre-Extend__.
 
-### Extension of System Objects in a Diagram
+### Extension of System Interfaces in a Diagram
 
-The concept of extending the system objects is already explained in the article *Extending the System Objects*. The current article demonstrates its expression in a diagram.
+The concept of extending the system objects is already explained in the article *Extending the System Interfaces*. The current article demonstrates its expression in a diagram.
 
 Not all possible extensions of the system commands will be displayed in this article. Any extension procedure of the system interface commands is displayed the same way. Only a couple of extension procedures will be displayed, to demonstrate the idea.
 
@@ -252,7 +252,7 @@ The examples shows the system interface of a related list, but not all its membe
 
 *The texts below are loose ideas yet to be turned into good documentation.*
 
-#### Extension (Cross-Out Leftovers from System Objects)
+#### Extension (Cross-Out Leftovers from System Interfaces)
 
 Assignment and retrieval of the related item can be decorated with extra procedures.
 
@@ -289,7 +289,7 @@ At first there was the idea, that a related list item could get the same behavio
 
 -----
 
-Actually, system objects would not be an equivalent of __Getters__ and __Setters__ if it weren’t for the *extension* of system commands. A summary of the system objects would not be complete without a list of all possible system commands and all its possible procedure extensions. Below you will find lists of all the extension possibilities of the system objects. For explanations about the extension possibilities, refer to the article *Extending The System Objects*. 
+Actually, system objects would not be an equivalent of __Getters__ and __Setters__ if it weren’t for the *extension* of system commands. A summary of the system objects would not be complete without a list of all possible system commands and all its possible procedure extensions. Below you will find lists of all the extension possibilities of the system objects. For explanations about the extension possibilities, refer to the article *Extending The System Interfaces*. 
 
 Related item extension possibilities:
 
@@ -420,6 +420,6 @@ JJ
 Parameters for System Commands,  
 2009-08-31
 
-Parameters for System Commands should also belong to extension, but it is currently inside the System Objects article group.
+Parameters for System Commands should also belong to extension, but it is currently inside the System Interfaces article group.
 
 JJ

@@ -14,7 +14,7 @@ The paradox is only there for *fundamental* system commands, that the system can
 
 *Object* do not have fundamental system commands. Only object *references*, symbols, have fundamental system commands.
 
-The fundamental system commands are only a limited set, so you only have to consider a few of them. See the *System Objects* articles for all fundamental system objects, that need to be implemented in the code base. They also discuss the fundamental system commands. Those are the system commands we are talking about here.
+The fundamental system commands are only a limited set, so you only have to consider a few of them. See the *System Interfaces* articles for all fundamental system objects, that need to be implemented in the code base. They also discuss the fundamental system commands. Those are the system commands we are talking about here.
 
 It is not so much about system commands, that are added by concepts, but about the fundamental system commands. System commands, added by concepts, can build on top of the fundamental layer of the engine of the new computer language.
 
