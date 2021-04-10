@@ -6,10 +6,10 @@ Clear Cut Coding Principles
 
 `[ Preliminary documentation ]`
 
-The idea behind clear cut coding principles, is that the computer language is so accessible, that even children could pick it up, because the principles are so easy to understand, and there are not that many pitfalls.  
-But I think only part of this is true. I think the basic parts of the coding principles can be taught to children, enough for them to create something useful with it, but more advanced subjects need to be left out, because not all of it can be understood that easily.
+The idea behind clear cut coding principles, is that the computer language might be so accessible, that anyone might pick it up, perhaps even children, because the principles might be easier to understand, and there might not be as many pitfalls.  
+But I think only part of this is true. I think the basic parts of the coding principles might be more understandable, so perhaps children can create something useful with it, but more advanced subjects might be left out when giving a simpler view on it, because not all of it might be understood that easily.
 
-I think the following topics could be picked up even by children:
+Maybe the following topics could be picked up by children:
 
 - Objects
 - Relations
@@ -24,6 +24,6 @@ But not things like:
 - Type Safety
 - Locking
 
-But some advanced features can be turned on, without your being conscious of how it exactly works. For instance: automatic containment can be applied automatically, but you don’t need to know exactly how it works.
+But some advanced features might be turned on, without being conscious of how it exactly works. For instance: automatic containment might be applied automatically, without needing to know exactly how it works.
 
-Computer Language 0.9 was less clear cut, because it allowed you to add any kind of custom text code to any of the classes or modules, whenever the generated code would not suffice. In Computer Language 2.0 and 3.0 you won’t be able to do that. You are compelled to declaring any variable or object as an attribute or a relation. That will make a program defined in a clearer way.
+Computer Language 0.9 may have been less clear cut, because it allowed adding custom text code to any of the classes or modules, whenever the generated code would not suffice. In Computer Language 2.0 and 3.0 you might not be able to do that. You may be compelled to declaring any variable or object as an attribute or a relation. That might make a program defined in a clearer way.
