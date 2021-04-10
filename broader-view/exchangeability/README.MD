@@ -52,9 +52,7 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
 - ### [Attributes Are Objects](attributes-are-objects.md)
 
-    - In traditional object oriented programming languages and relational databases simple data types, also called *attributes*, are not considered objects. They have such different behavior, that we tend to approach them much different from objects. In Encircle, however, simple objects such as numbers and dates are always objects. There are a couple of special characteristics to *simple* objects, that will be explained in the *Objects* documentation. Unifying attributes with objects makes Encircle’s grammar less complex.
-
-    - (The article is not finished yet. It is just ideas gathered up out of old documentation, yet to be turned into a new article.)
+    - In traditional object oriented programming languages and relational databases simple data types, which also may be called *attributes*, might not be considered objects. They have such different behavior, that they might be approached differently from objects. In Encircle, however, simple objects such as numbers and dates might always be objects. There are a couple of special characteristics to *simple* objects, that may be explained in the *Objects* documentation. Unifying attributes with objects may make Encircle’s grammar less complex.
 
 - ### [Command = Executable Object](command-is-executable-object.md)
 
