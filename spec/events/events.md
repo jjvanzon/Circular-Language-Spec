@@ -35,9 +35,9 @@ Events are notification calls. Call receivers subscribe to an event. The call se
 
 The concept of events is nothing more than a combination of constructs: an array of command references, a command interface and supporting the command interface, registering the command inside the array of command references and then calling all the commands in the array at specific times.
 
-Even though it is just a combination of some other constructs, it is such an important concept, that the new computer language explicitly defines it as a sepate construct, following the footsteps of other programming environments, that did this as well.
+Even though it is just a combination of some other constructs, it is such an important concept, that Encircle explicitly defines it as a sepate construct, following the footsteps of other programming environments, that did this as well.
 
-The documentation will also show how events look in the diagram notation of the new computer language.
+The documentation will also show how events look in the diagram notation of Encircle.
 
 ### Prime Event Example: Button Clicked
 
@@ -127,7 +127,7 @@ What you see is the registered event implementation (at the top), the collection
 
 Note that even though the concept is that parents can pick up messages from children, it is not the *parents* that are registered, but the *event procedures* that are registered.
 
-Even though the event concept is just a combination of other constructs, it is such an important concept, that the new computer language explicitly defines it as a sepate construct with its own notation.
+Even though the event concept is just a combination of other constructs, it is such an important concept, that Encircle explicitly defines it as a sepate construct with its own notation.
 
 ### Explicit Interface of Event Object
 

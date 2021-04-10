@@ -76,7 +76,7 @@ The main solution to converting a referential structure to a containment structu
 
 The circles are all objects. Object A for instance has two references: one to object B and one to object E. Two objects refer to object D: both object C and object E refer to object D.
 
-In a new computer language diagram, the references would look more like this:
+In an Encircle diagram, the references would look more like this:
 
 ![](images/3.%20Automatic%20Containment.002.png)
 
@@ -279,11 +279,11 @@ However, in the method found, I do not think central registration lists will be 
 
 In the stories above only objects were considered. Classes, interfaces and methods were ignored. To cut to the chase: it simply works the same for the display of classes, interfaces and methods.
 
-In the new computer language the class of an object is actually another object. In the new computer language, another object simply serves as the prototype for another object, with default values and everything.
+In Encircle the class of an object is actually another object. In Encircle, another object simply serves as the prototype for another object, with default values and everything.
 
 When you first display containment, without lines leading back to a single object and everything, you do not see mutuality of classes at all. Just like you don’t see mutuality of objects. To express the mutuality of classes, lines and imaginary references are positioned the same way, as they are for lines leading back to the mutual object, but now it is lines leading back to the mutual class. Class lines are dashed instead of solidly drawn.
 
-In the new computer language an interface is also simply an object. An object can serve as the prototype for the interface of another object. When you first display containment, without lines leading back to a single object and everything, you do not see mutuality of interfaces at all. To express the mutuality of interfaces, lines and imaginary references are positioned the same way, as they are for lines leading back to a mutual object, but now it is lines leading back to the mutual interface (= object serving as a prototype for the interface). Interface lines are dotted, instead of solid.
+In Encircle an interface is also simply an object. An object can serve as the prototype for the interface of another object. When you first display containment, without lines leading back to a single object and everything, you do not see mutuality of interfaces at all. To express the mutuality of interfaces, lines and imaginary references are positioned the same way, as they are for lines leading back to a mutual object, but now it is lines leading back to the mutual interface (= object serving as a prototype for the interface). Interface lines are dotted, instead of solid.
 
 For methods it works a bit differently. Methods are not objects. Methods are not displayed as circles. Their default display is a square. So they have different symbols compared to objects. But the way lines lead back to a mutual method, simply works the same as for objects. There is more to the display of methods, but that is not covered here. The main point is: the technique for displaying mutuality of class, interface, and object works for mutuality of methods too.
 
@@ -726,7 +726,7 @@ Another way to make a command part of a bigger whole, is to give a command a fix
 
 It is actually advised to give a command a fixed logical residence. Preferably, you make the command logically part of a module, because modules will bundle together classes and commands to a single logical unit of functionality. Don’t make the command part of a class. This binds a command too much to a class. Give a command the freedom to become part of multiple classes, rather than tying it up to a single class. A class’s granting a command access to its private contents already establishes a tighter bond, and the command will be visible as part of the class anyway, even when the class is not the fixed logical residence of the command. And even when you do give the command a fixed logical residence inside a class, the whole rest of the system is going to ignore that: a command call will still be a call upon multiple objects. Only the definition of the command would then be bound to the class.
 
-A module can get overloaded command names, when all commands are logically tied to a module, but this was already the case in languages such as C++. In C++ all the commands of all classes were already reachable globally. In the new computer language, commands can even be overloaded having the same signatures, because in the diagram they are different symbols, and can be reached separately regardless of their name or signature.
+A module can get overloaded command names, when all commands are logically tied to a module, but this was already the case in languages such as C++. In C++ all the commands of all classes were already reachable globally. In Encircle, commands can even be overloaded having the same signatures, because in the diagram they are different symbols, and can be reached separately regardless of their name or signature.
 
 ### Ideas From Commands & Classes Loosely coupled
 

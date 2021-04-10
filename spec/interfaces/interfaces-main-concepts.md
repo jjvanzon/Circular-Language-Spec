@@ -38,7 +38,7 @@ __Contents__
 
 Up till now the idea of interfaces was fully left out of the stories. This chapter makes the concept of interfaces catch up with the rest of the documentation. The basic concept of interfaces is covered along with its diagram notation. Also covered are: interface assignment, interface reference and relations that form through the use of interfaces. Another concept, yet to be worked out, is how commands of an object are grouped by site: an object can have commands, defined on different sites, and the commands should be grouped by site in order to judge how reliable the commands are *(grouped by source)*. As interfaces can be applied to objects, but interfaces can also be applied to *commands*.
 
-At some point the idea was, to also cover all the different *uses* of interfaces. But the different uses of interfaces are adequately described by other literature. The focus will lie on explaining the raw concept of interfaces and their presence in the new computer language.
+At some point the idea was, to also cover all the different *uses* of interfaces. But the different uses of interfaces are adequately described by other literature. The focus will lie on explaining the raw concept of interfaces and their presence in Encircle.
 
 The main concepts of interfaces are explained here along with their diagram notations.
 
@@ -150,7 +150,7 @@ So because the triangle has an externally defined class (dashed line) instead of
 
 ![](images/1.%20Interfaces%20Main%20Concepts.013.png)
 
-Classic inheritance is not the only form of inheritance in the new computer language. Different forms of inheritance are covered separately in the chapter *Inheritance*, but it is important to point out here, that classic inheritance and interfaces are closely related.
+Classic inheritance is not the only form of inheritance in Encircle. Different forms of inheritance are covered separately in the chapter *Inheritance*, but it is important to point out here, that classic inheritance and interfaces are closely related.
 
 ### Main Usages of Contracts
 
@@ -164,9 +164,9 @@ A powerful application of such a contract, is the interface as a contract of *pa
 
 ### Command Interfaces
 
-This article is here to point out that commands can have interfaces just like objects. A command having an interface approximates the same functionality as C++ function prototypes or delegates in .NET. Only in the new computer language much more is possible. Because a command is an object, any interface concept is applicable to commands as well.
+This article is here to point out that commands can have interfaces just like objects. A command having an interface approximates the same functionality as C++ function prototypes or delegates in .NET. Only in Encircle much more is possible. Because a command is an object, any interface concept is applicable to commands as well.
 
-Here is your basic function prototype concept expressed in a new computer language diagram:
+Here is your basic function prototype concept expressed in an Encircle diagram:
 
 ![](images/1.%20Interfaces%20Main%20Concepts.014.png)
 
@@ -178,7 +178,7 @@ The implementation of the command can be different from its function prototype:
 
 ![](images/1.%20Interfaces%20Main%20Concepts.016.png)
 
-But this was classic C++ function prototype. The new computer language has more possibilities when it comes to command interfaces, some of which are displayed below.
+But this was classic C++ function prototype. Encircle has more possibilities when it comes to command interfaces, some of which are displayed below.
 
 Command inheritance:
 

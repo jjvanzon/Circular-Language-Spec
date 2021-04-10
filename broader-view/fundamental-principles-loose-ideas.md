@@ -107,7 +107,7 @@ JJ
 
 -----
 
-The fundamental principles of other programming languages may not be so fundamental in my new computer language. For instance basic math may be considered fundamental in other programming languages, but it’s no more than a plug-in module in my own system. Another example: type safety may be considered fundamental in other programming language, but in my own system it is a plug-in aspect, which sees to it an object’s type is checked before it is assigned to an object reference.
+The fundamental principles of other programming languages may not be so fundamental in Encircle. For instance basic math may be considered fundamental in other programming languages, but it’s no more than a plug-in module in my own system. Another example: type safety may be considered fundamental in other programming language, but in my own system it is a plug-in aspect, which sees to it an object’s type is checked before it is assigned to an object reference.
 
 -----
 
@@ -201,10 +201,10 @@ JJ
 
 -----
 
-New Computer Language,  
+Encircle,  
 2008-09-08
 
-The new computer language is pretty much the opposite of the tendency towards natural language syntax. It is also the opposite of the tendency towards domain specific languages.
+Encircle is pretty much the opposite of the tendency towards natural language syntax. It is also the opposite of the tendency towards domain specific languages.
 
 JJ
 
@@ -288,17 +288,6 @@ JJ
 -----
 
 Fundamental Principles,  
-2008-10-17
-
-I guess I want the new computer language to be as fundamental as the Von Neumann architecture.
-
-It’s totally different than what was before, but so logical we will not change it any time soon.
-
-JJ
-
------
-
-Fundamental Principles,  
 2008-11-05
 
 It may be a fundamental principle, that all references are registered. It may also be fundamental principle, that possible bad behavior should not compromise your abilities for good behavior. So the use of your creativity should not be put to a limit by possible bad behavior of others. If you can make a system that completely work following these principles, than that would be great.
@@ -312,7 +301,7 @@ JJ
 Fundamental Principles,  
 2008-11-05
 
-The bad behavior principle is why registration of all references SHOULD be designed for good practice to work, without having to consider the bad behavior. Deterring bad behavior should be completely separately addressed, because also in the design of the new computer language, bad behavior should not have to be considered, because it it may not compromise my creativity by having to think about all sorts of possible bad behavior as I try to design a language to do good with. Programming USING the language should be the same: you should only have to separately address possible bad behavior, not while you are designing a system that works for good behavior.
+The bad behavior principle is why registration of all references SHOULD be designed for good practice to work, without having to consider the bad behavior. Deterring bad behavior should be completely separately addressed, because also in the design of Encircle, bad behavior should not have to be considered, because it it may not compromise my creativity by having to think about all sorts of possible bad behavior as I try to design a language to do good with. Programming USING the language should be the same: you should only have to separately address possible bad behavior, not while you are designing a system that works for good behavior.
 
 JJ
 
@@ -394,7 +383,7 @@ JJ
 
 -----
 
-New Computer Language,  
+Encircle,  
 2009-02-12
 
 You can put a breakpoint on members of specific objects, not just a member of a class. Just as well you can put a breakpoint on any data member’s get or set procedures or other system procedures.
@@ -403,7 +392,7 @@ JJ
 
 -----
 
-New Computer Language,  
+Encircle,  
 2009-02-12
 
 ‘Not too much derivation’ could be a Fundamental Principle, for the same reasons as Lack of Choice = Guarantees.
@@ -463,12 +452,12 @@ Computer Language,
 Fundamental Principles,  
 2009-03-31
 
-It is possible to program as simply in assembly as you do in the new computer language, but in the new computer language you are more dictated to work within a certain paradigm. You can apply the paradigm in assembly language too, but in assembly you can more easily break those rules. In the new computer language the rules are more imposed. Actually, in the new computer language you are also not obliged to do it that way.
+It is possible to program as simply in assembly as you do in Encircle, but in Encircle you are more dictated to work within a certain paradigm. You can apply the paradigm in assembly language too, but in assembly you can more easily break those rules. In Encircle the rules are more imposed. Actually, in Encircle you are also not obliged to do it that way.
 
 In an object oriented language you can still program procedural, but it is just, that objects and classes
 are a programming construct of an importance equal to that of procedures.
 
-In the new computer language it is the same way:
+In Encircle it is the same way:
 
 relations and aspects are programming constructs of equal importance, but you do not have to use them. Nevertheless, they are so present as a programming construct, that you start to use them anyway.
 
@@ -476,7 +465,7 @@ Actually a lot of programmers took a long time to realize what they need classes
 
 But they have been applying them for years, because they have been USING classes. They just hadn't been programming classes.
 
-In the new computer language it is the same way: aspects, relations and objects and commands and everything are clearly present in the framework libraries. You will be using them before you start to program them yourself.
+In Encircle it is the same way: aspects, relations and objects and commands and everything are clearly present in the framework libraries. You will be using them before you start to program them yourself.
 
 In assembly, you could program in an object oriented way with classes. It is a matter of working in a certain fashion and yes, the syntax looks much different, but you are still modeling with classes and objects.
 
@@ -493,7 +482,7 @@ JJ
 
 -----
 
-New Computer Language Functional Design,  
+Encircle Language Spec,  
 2009-04-16
 
 A user-defined order number of a user-defined sorting, and the use of aliases prevents dead links. You could also do a kind of automatic aliasing: when a link is not found, the history of that link would be stored inside the container of the leaf, and this could be used to offer a suggested new linkage, when the dead link was attempted to be accessed.

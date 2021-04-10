@@ -12,7 +12,7 @@ Here might be some of the topics that could be found here:
 
 - ### [Achievability](achievability)
 
-    - The achievability principles would be a set of principles, that describe how a running new computer language might be developed in a limited amount of time with a limited amount of people: what techniques might be employed to try and make that possible.
+    - The achievability principles would be a set of principles, that describe how a running Encircle might be developed in a limited amount of time with a limited amount of people: what techniques might be employed to try and make that possible.
 
 - ### [Classes Implementation | Texts to Incorporate](classes-implementation-texts-to-incorporate.md)
 
@@ -36,7 +36,7 @@ Here might be some of the topics that could be found here:
 
 - ### [Optimization](optimization.md)
 
-    - May cover optimization algorithms, that might be integrated into the new computer language. For now this is considered not so important to think about. The text might just be loose ideas.
+    - May cover optimization algorithms, that might be integrated into Encircle. For now this is considered not so important to think about. The text might just be loose ideas.
 
 - ### [Referrers Implementation](referrers-implementation.md)
 

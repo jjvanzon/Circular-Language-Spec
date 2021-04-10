@@ -22,7 +22,7 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
 - ### Object Oriented = Relational
 
-    - This article has not been written yet, but it should contain a description about how relational database is reconciled with object oriented programming. The two could always be combinedly used, but it has always been a problem to make the two really one system. They were always just two separate systems, that are conjoined. The new language will turn the two principles into a single paradigm. The object oriented approach and the relational database approach, which are traditionally separate things, are turned into one language. This is intrinsic to the new design of the language. It has not been fully established yet in the programmed versions of the new computer language.
+    - This article has not been written yet, but it should contain a description about how relational database is reconciled with object oriented programming. The two could always be combinedly used, but it has always been a problem to make the two really one system. They were always just two separate systems, that are conjoined. The new language will turn the two principles into a single paradigm. The object oriented approach and the relational database approach, which are traditionally separate things, are turned into one language. This is intrinsic to the new design of the language. It has not been fully established yet in the programmed versions of Encircle.
 
     - (There may not be a separate article for this yet.)
 
@@ -34,13 +34,13 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
     - This fundamental principle is about the fact that the code of a program is stored as a database. *Code is just data*, that describes a procedure.
      
-    - This concept is fully applied inside the new design of the the computer language. It is not applied yet inside the running versions 0.9 and 2.0 of the new computer language.
+    - This concept is fully applied inside the new design of the the computer language. It is not applied yet inside the running versions 0.9 and 2.0 of Encircle.
 
 - ### [Design Time = Run Time](design-time-is-run-time.md)
 
     - In most programming languages there is a distinction between design time and run time. This means, that the software is programmed first, and then run. You only run it after you programmed it. If the program it is not error free, the program may crash. The principle *Design Time = Run Time*  takes away this distinction between design time and run time. This article demonstrates how you can create a program and use it at the same time. It goes too much into what happens when an error occurs. That should be covered later in *Errors & Warnings* and in *Concurrency*.
 
-    - The concept has not been fully realized yet in software, but version 2.0 of the new computer language comes close to it.
+    - The concept has not been fully realized yet in software, but version 2.0 of Encircle comes close to it.
 
 - ### [User = Programmer](user-is-programmer.md)
 
@@ -48,23 +48,23 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
 - ### [Clear Cut Coding Principles](clear-cut-coding-principles.md)
 
-    - The idea behind clear cut coding principles, is that the computer language is so accessible, that even children could pick it up, because the principles are so easy to understand, and there are not that many pitfalls. The basic parts of the coding principles could be picked up by anyone, but more advanced subjects need to be left out, because they can not be understood that easily. It is the intention for a running version of the new computer language to have sort of like a scale, a slider, that can be adjusted, limiting the amount of concepts expressed in the diagram or textual language, so that complex systems can be expressed using easier concepts, so that the general workings of a system are accessible to anyone.
+    - The idea behind clear cut coding principles, is that the computer language is so accessible, that even children could pick it up, because the principles are so easy to understand, and there are not that many pitfalls. The basic parts of the coding principles could be picked up by anyone, but more advanced subjects need to be left out, because they can not be understood that easily. It is the intention for a running version of Encircle to have sort of like a scale, a slider, that can be adjusted, limiting the amount of concepts expressed in the diagram or textual language, so that complex systems can be expressed using easier concepts, so that the general workings of a system are accessible to anyone.
 
 - ### [Attributes Are Objects](attributes-are-objects.md)
 
-    - In traditional object oriented programming languages and relational databases simple data types, also called *attributes*, are not considered objects. They have such different behavior, that we tend to approach them much different from objects. In the new computer language, however, simple objects such as numbers and dates are always objects. There are a couple of special characteristics to *simple* objects, that will be explained in the *Objects* documentation. Unifying attributes with objects makes the new computer language’s grammar less complex.
+    - In traditional object oriented programming languages and relational databases simple data types, also called *attributes*, are not considered objects. They have such different behavior, that we tend to approach them much different from objects. In Encircle, however, simple objects such as numbers and dates are always objects. There are a couple of special characteristics to *simple* objects, that will be explained in the *Objects* documentation. Unifying attributes with objects makes Encircle’s grammar less complex.
 
     - (The article is not finished yet. It is just ideas gathered up out of old documentation, yet to be turned into a new article.)
 
 - ### [Command = Executable Object](command-is-executable-object.md)
 
-    - Even more programming constructs are turned into just objects. Methods, functions, procedures, routines, commands, executables, all called *commands* in the new language, are actually objects too. Every command is a special object, that just happens to be executable. A whole chapter has been devoted to it: the *Commands* chapter. The differences between commands and normal objects are explained in it, but the essence of it is: commands are *objects*, *executable* *objects*. Turning commands and objects into the same construct makes the new computer language’s grammar less complex.
+    - Even more programming constructs are turned into just objects. Methods, functions, procedures, routines, commands, executables, all called *commands* in the new language, are actually objects too. Every command is a special object, that just happens to be executable. A whole chapter has been devoted to it: the *Commands* chapter. The differences between commands and normal objects are explained in it, but the essence of it is: commands are *objects*, *executable* *objects*. Turning commands and objects into the same construct makes Encircle’s grammar less complex.
 
     - (This article is not started at yet.)
 
 - ### [Hand Signs](hand-signs.md)
 
-    - The diagram notation is so clear and expressive in its forms and shapes, that you can even draw out the shapes *in the air* to clarify systematics. The new computer language also is a hand sign language for technology.
+    - The diagram notation is so clear and expressive in its forms and shapes, that you can even draw out the shapes *in the air* to clarify systematics. Encircle also is a hand sign language for technology.
 
     - (This article is not finished yet.)
 
@@ -76,7 +76,7 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
 - ### Hardware & Software
 
-    - The new computer language will reveal the connection between object logic and the physical hardware. It will reveal the internal workings of a computer. It will connect logic to electronics.
+    - Encircle will reveal the connection between object logic and the physical hardware. It will reveal the internal workings of a computer. It will connect logic to electronics.
 
     - (There may not be a separate article for this yet.)
     
@@ -86,7 +86,7 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
 - ### System Engineering = Software Engineering
 
-    - That way, the new computer language allows hardware and software developers and system engineers to work using the same language.
+    - That way, Encircle allows hardware and software developers and system engineers to work using the same language.
 
     - (There may not be a separate article for this yet.)
 
@@ -94,13 +94,13 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
     - This document describes how the internet is turned into a single computer. There simply is no difference between a program running on your own machine and programs running on another machine on the internet. The internet is just used as one giant computer, that everybody uses and contributes to.
 
-    - This document has been moved to the *Infrastructure* documentation, because it will not be part of the first versions to come of the new computer language.
+    - This document has been moved to the *Infrastructure* documentation, because it will not be part of the first versions to come of Encircle.
 
     - The documentation is quite lengthy and will later be split up into multiple pieces. No software has been developed for it yet.
 
 - ### [Hyperlinks = Referential Structure](hyper-links-is-referential-structure.md)
 
-    - This fundamental principle shows how to view hyperlinks in the new computer language. Hyperlinks are still part of a textual document, but they can also be seen as analogous to *object structures*, because they are about documents with references to other documents inside it, which is like objects with references to other objects inside it. So this fundamental principle explains how hyperlinks are exchangeable with referential structures, that can be visualized with the new computer language.
+    - This fundamental principle shows how to view hyperlinks in Encircle. Hyperlinks are still part of a textual document, but they can also be seen as analogous to *object structures*, because they are about documents with references to other documents inside it, which is like objects with references to other objects inside it. So this fundamental principle explains how hyperlinks are exchangeable with referential structures, that can be visualized with Encircle.
 
 - ### [Flat & Structured Interchange Loose Ideas](flat-and-structured-interchange-loose-ideas.md)
 

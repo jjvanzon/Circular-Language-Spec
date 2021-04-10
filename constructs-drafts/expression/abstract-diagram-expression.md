@@ -86,7 +86,7 @@ For instance you could highlight:
  
 That way you can produce different diagrams for documentation purposes.  
 UML does that too.  
-Only in the new computer language it is more subtractive:  
+Only in Encircle it is more subtractive:  
 You start with a full diagrammatic system description at your disposal.  
 You can abstract it in order to shed light on a particular aspect of the system.
 

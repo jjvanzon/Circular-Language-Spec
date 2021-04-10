@@ -15,7 +15,7 @@ __Contents__
 
 ### Introduction
 
-This document contains summaries of other languages (C and C++), in the form of bulleted lists. They were made around the year 2004 during an analysis of the grammar of C and C++ to compare them to the new computer language.
+This document contains summaries of other languages (C and C++), in the form of bulleted lists. They were made around the year 2004 during an analysis of the grammar of C and C++ to compare them to Encircle.
 
 ### C
 

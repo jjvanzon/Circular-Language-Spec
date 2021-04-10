@@ -8,7 +8,7 @@ Text Code
 
 Traditionally systematics of a program might be expressed by means of text code. But in Encircle language, systematics might be stored in another way for instance as binary interlinked objects. Text code may be a mere *expression* of those stored objects. A *Text Code* sub-module might translate those systematics to text code. The text code might be adapted, which may result in changes to the stored  objects, rather than the text code’s being literally stored.
 
-Exactly how the textual code might look in Encircle, might not have been decided yet, because at one time it was considered more important to work out the language *conceptually* along with a *diagram notation*, than to work out the *textual notation*. Experimental version 2.0 of a new computer language had a text code, but it was still quite basic.
+Exactly how the textual code might look in Encircle, might not have been decided yet, because at one time it was considered more important to work out the language *conceptually* along with a *diagram notation*, than to work out the *textual notation*. Experimental version 2.0 of Encircle had a text code, but it was still quite basic.
 
 The articles might not have been finished. They might be throw-togethers of ideas sort of like cut up leftovers from older documentation.
 
@@ -41,7 +41,7 @@ You might find the following content here:
         ::   Global
     ```
 
-    - Access operators seem hard to place inside a mathematical system. It may be difficult to find an analogy between mathematical operators and such access literals. However, a clearer view on what place access operators might have inside Encircle language might be welcome. Access operators seem to be abstract character representations of system commands, such as __Object Get, Class Get, Item Get, Value Get__ and __Value Set__. All these system commands seem to be explained in the *System Interfaces* chapter of the *Spec*. Inside Encircle language, access operators might just be textual expressions of calls to those system commands. What might not yet be clarified inside this unfinished article is how the access operators might textually look inside the new computer language.
+    - Access operators seem hard to place inside a mathematical system. It may be difficult to find an analogy between mathematical operators and such access literals. However, a clearer view on what place access operators might have inside Encircle language might be welcome. Access operators seem to be abstract character representations of system commands, such as __Object Get, Class Get, Item Get, Value Get__ and __Value Set__. All these system commands seem to be explained in the *System Interfaces* chapter of the *Spec*. Inside Encircle language, access operators might just be textual expressions of calls to those system commands. What might not yet be clarified inside this unfinished article is how the access operators might textually look inside Encircle.
 
 - ### [Assignment in Text Code](assignment-in-text-code.md)
 

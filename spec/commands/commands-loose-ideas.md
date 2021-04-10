@@ -977,7 +977,7 @@ Commands,
 
 "Do you know I don't even want those commands." ...
 I made that remark when I right-clicked on an item.
-The new computer language will make a ton of commands available on
+Encircle will make a ton of commands available on
 many many objects... but a lot of times I don't even want those commands.
 So I as the user want to be able to hide those. I do not want to see those.
 

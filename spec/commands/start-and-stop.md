@@ -128,7 +128,7 @@ So that excludes the following ones from being an execution state:
 - __Go To End__
 - __Next__
 
-There is a big difference in difficulty of implementing the execution commands. This is irrelevant to their usage, but will affect their availability in early stages of development of the new computer language. There are five categories of difficulty of implementation of execution commands and execution states. Here they are going from simple to difficult:
+There is a big difference in difficulty of implementing the execution commands. This is irrelevant to their usage, but will affect their availability in early stages of development of Encircle. There are five categories of difficulty of implementation of execution commands and execution states. Here they are going from simple to difficult:
 
 - Play, stop, next, previous, not runnable, finished
 - Forward at arbitrary speeds

@@ -10,7 +10,7 @@ Reflective data is data that describes the structure of a program. The reflectiv
 
 In ordinary programming languages, it is considered something special to be able to access data that describes a program, listing out all the classes and all of its members.
 
-In the new computer language the program actually *is* a description of the structure of the program. As you make the program, you are creating this data, and it is actually the program itself, that will just be run inside an engine.
+In Encircle the program actually *is* a description of the structure of the program. As you make the program, you are creating this data, and it is actually the program itself, that will just be run inside an engine.
 
 Any object simply has a reference to its class. You can access the full description of this class at all times.
 

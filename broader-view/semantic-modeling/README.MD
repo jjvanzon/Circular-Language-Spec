@@ -8,7 +8,7 @@ May be about how Encircle language might be used to express or model meaning fro
 
 - ### [Artificial Intelligence, Natural Language, Neural Networks, Object Algebra](artificial-intelligence-natural-language-neural-networks-object-algebra.md)
 
-    - It goes too far for now to consider the possibilities inside the new computer language regarding these concepts. But they are mentioned here, to demonstrate, that they are things that need to be thought about in the future. 
+    - It goes too far for now to consider the possibilities inside Encircle regarding these concepts. But they are mentioned here, to demonstrate, that they are things that need to be thought about in the future. 
 
     - One of the sub-topics might be this:
 

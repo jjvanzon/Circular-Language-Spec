@@ -113,7 +113,7 @@ An object reference `can*` point to another object reference, `which* points` to
 
 ##### ~Compared to C++~
 
-~In C++ `you* had to specify* in advance* the*` number of pointer redirections of a variable. In `the* new computer language` a symbol `can` follow `any*` amount of indirections, from `zero*` to `infinity. You* do not specify* the*` amount of redirections `in advance*. You* can just` add a redirection by `turning* the*` target object into a pointer.~
+~In C++ `you* had to specify* in advance* the*` number of pointer redirections of a variable. In Encircle a symbol `can` follow `any*` amount of indirections, from `zero*` to `infinity. You* do not specify* the*` amount of redirections `in advance*. You* can just` add a redirection by `turning* the*` target object into a pointer.~
 
 ##### Diagram
 

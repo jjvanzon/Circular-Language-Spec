@@ -116,11 +116,11 @@ A related item will have the following extension possibilities:
 - __Created  .  Set  .  Post-Extend__
 - __Created  .  Set  .  Override__
 
-These are the new computer language’s equivalent of __Getters__, __Setters__ and __Property__ procedures.
+These are Encircle’s equivalent of __Getters__, __Setters__ and __Property__ procedures.
 
 This adds a lot more possibilities to surround a sub-object’s behavior, than just the one __Getter__ and __Setter__, that other computer programming languages offer. You don’t have to define all of the extension procedures. When you don’t define a __Getter__ or __Setter__, the related item will just have default __Getter__ and __Setter__ behavior.
 
-=>n related *list items* have the same system commands as =>1 related items, but the extension of a related list item’s system commands is the same for every item of the list, so the extension procedures for related list items are defined by the related list. The related list items have a reference to the list they belong to, and also store the position in the list, as well as a __Remove__ command, that removes the item from the list. In the new computer language’s code base, a related list item automatically calls the extension procedures defined in the list, passing the position of the item in the list to the extension procedure as a parameter. Here is a list of all the extension procedures a list can define for a related list’s items:
+=>n related *list items* have the same system commands as =>1 related items, but the extension of a related list item’s system commands is the same for every item of the list, so the extension procedures for related list items are defined by the related list. The related list items have a reference to the list they belong to, and also store the position in the list, as well as a __Remove__ command, that removes the item from the list. In Encircle’s code base, a related list item automatically calls the extension procedures defined in the list, passing the position of the item in the list to the extension procedure as a parameter. Here is a list of all the extension procedures a list can define for a related list’s items:
 
 - __Item Object  .  Get  .  Pre-Extend__
 - __Item Object  .  Get  .  Post-Extend__
@@ -198,13 +198,13 @@ Extension of the system interface’s members allows you to control the inner wo
 
 ### Extend System Interface with More Members
 
-Other features of the new computer language can add more items to the system interface, to define the behavior of a related item. The system interface is *extensible*. For instance the concept of *the class* will add more items to the configuration of a related item. So apart from extending a system interface’s existing commands, new commands and objects can be added to the system interface.
+Other features of Encircle can add more items to the system interface, to define the behavior of a related item. The system interface is *extensible*. For instance the concept of *the class* will add more items to the configuration of a related item. So apart from extending a system interface’s existing commands, new commands and objects can be added to the system interface.
 
 The system interface members added by other features will automatically get all the extension possibilities as well.
 
 ### Extension Regardless of Value Change
 
-The various __Get__ commands only really execute their procedure when a value is actually *changed*. That is the default behavior of the new computer language. It prevents a lot of unnecessary system activity. By default, pre- and post-extension procedures are only executed for getters, when a *different* value is actually assigned. However, a feature, that may be added to the new computer language could be:
+The various __Get__ commands only really execute their procedure when a value is actually *changed*. That is the default behavior of Encircle. It prevents a lot of unnecessary system activity. By default, pre- and post-extension procedures are only executed for getters, when a *different* value is actually assigned. However, a feature, that may be added to Encircle could be:
 
 - Pre-extension regardless of value change
 - Post-extension regardless of value change
@@ -230,7 +230,7 @@ Theoretically it does not matter whether extension procedures are defined by for
 
 ### Obsolete Members: Initialize Item & Terminate Item
 
-In an earlier version of the new computer language, version 2.0, a related list also had the extension procedures __Initialize Item__ and __Terminate Item__. In the new version of the new computer language, version 3.0, __Initialize Item__ is replaced by __Add  .  Post-Extend__ and __Terminate Item__ is replaced by __Remove  .  Pre-Extend__.
+In an earlier version of Encircle, version 2.0, a related list also had the extension procedures __Initialize Item__ and __Terminate Item__. In the new version of Encircle, version 3.0, __Initialize Item__ is replaced by __Add  .  Post-Extend__ and __Terminate Item__ is replaced by __Remove  .  Pre-Extend__.
 
 ### Extension of System Interfaces in a Diagram
 
@@ -397,7 +397,7 @@ To also display the members and extension possibilities of another part of the s
 
 -----
 
-A system interface is the new computer language’s equivalent of __Getters__, __Setters__ and __Property__ procedures. But the new computer language offers a lot more to control the behavior of assigning or retrieving a related object compared to other programming languages.
+A system interface is Encircle’s equivalent of __Getters__, __Setters__ and __Property__ procedures. But Encircle offers a lot more to control the behavior of assigning or retrieving a related object compared to other programming languages.
 
 -----
 

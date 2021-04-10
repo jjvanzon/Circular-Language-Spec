@@ -26,7 +26,7 @@ __Contents__
 
 *This text was written in the context of efforts to program a prototype app 'Circle 3'.*
 
-The diagrams of the new computer language are to be drawn out automatically. If they weren’t, this would decrease the usability of the language. These diagram metrics as they are called will be functionally described first not being burdened by any mathematical implications, and after that the math to do so will be designed.
+The diagrams of Encircle are to be drawn out automatically. If they weren’t, this would decrease the usability of the language. These diagram metrics as they are called will be functionally described first not being burdened by any mathematical implications, and after that the math to do so will be designed.
 
 There are several elements to the diagram metrics. Some of them are considered more essential than others. A new version of the computer language is currently being implemented and only the essential diagram metrics concepts will be implemented at first.
 

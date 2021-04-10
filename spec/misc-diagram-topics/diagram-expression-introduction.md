@@ -8,7 +8,7 @@ Diagram Expression Introduction
 
 *Expression* includes a *diagram notation* for visualizing the program code. The diagrams are a mere expression of binary interlinked objects. Systematics, stored in a binary way as interlinked objects, are translated to a diagram, expressed on screen. The diagram should be fully automatically drawn out. The metrics and positioning of the shapes and lines is automatically determined. The diagram can be edited, resulting in changes to the stored binary objects.
 
-How *each concept* is expressed in a diagram is already covered in the documentation *of those* concepts. The basics of the diagram notation were already covered at the beginning of the new computer language documentation. *This* documentation folder explains everything *else* about diagram the diagram notation, such as how the shape positions of the diagram are automatically determined and how the diagram can be *colored*, to make the systematics even more clear. 
+How *each concept* is expressed in a diagram is already covered in the documentation *of those* concepts. The basics of the diagram notation were already covered at the beginning of Encircle documentation. *This* documentation folder explains everything *else* about diagram the diagram notation, such as how the shape positions of the diagram are automatically determined and how the diagram can be *colored*, to make the systematics even more clear. 
 
 The articles in the *Diagrams* documentation folder are not finished. They consist mostly of texts coming out of an earlier unfinished design of the diagram notation language. The diagram notation has not been realized in software yet.
 
@@ -16,7 +16,7 @@ This folder contains the following articles:
 
 ### Diagram Metrics
 
-- This article is not finished. However, *diagram metrics* are very important to make the new computer language a success, because if the diagram is not automatically drawn out, and you have to position all the shapes in it yourself, then the language is not that easy to use anymore. The diagrams are automatically drawn out and you get very little say in where the shapes are positioned and how the lines between shapes are drawn out. The interconnection between shapes and the embedding of it, should pull the shapes and lines into the right position like molecules.
+- This article is not finished. However, *diagram metrics* are very important to make Encircle a success, because if the diagram is not automatically drawn out, and you have to position all the shapes in it yourself, then the language is not that easy to use anymore. The diagrams are automatically drawn out and you get very little say in where the shapes are positioned and how the lines between shapes are drawn out. The interconnection between shapes and the embedding of it, should pull the shapes and lines into the right position like molecules.
 
 ### Coloring
 
@@ -398,7 +398,7 @@ JJ
 More Ideas
 
 Expression,  
-New Computer Language Functional Design,  
+Encircle Language Spec,  
 2009-04-20
 
 You'd have to integrate tooltips into the diagram, e.g. to explain what to do with an access connector.

@@ -26,7 +26,7 @@ __Contents__
 
 ### Introduction
 
-The following articles will explain some concepts from other programming languages and the how they are implemented in the new computer language.
+The following articles will explain some concepts from other programming languages and the how they are implemented in Encircle.
 
 - *Required & Optional*
 - *Variable Amount of Arguments*
@@ -37,9 +37,9 @@ The following articles will explain some concepts from other programming languag
 
 #### Concept
 
-Some programming languages have a thing called required and optional parameters. In other programming languages basically all parameters are required, unless they are typed optional. In the new computer language it is the other way around: any parameter is optional unless it is typed required. This is because in the new computer language commands are the same as objects, that just happen to be executable, and the parameters inside a command are analogous to sub-objects inside another object, whose filling-in is also totally arbitrary.
+Some programming languages have a thing called required and optional parameters. In other programming languages basically all parameters are required, unless they are typed optional. In Encircle it is the other way around: any parameter is optional unless it is typed required. This is because in Encircle commands are the same as objects, that just happen to be executable, and the parameters inside a command are analogous to sub-objects inside another object, whose filling-in is also totally arbitrary.
 
-Some parameters can be made required, so you *have to* fill them in as input. In the new computer language, this means that reading and writing any accessible aspect of a parameter can be separately made required or optional. When output is required, it means you have to use the output. You will be unable to execute the command without picking up the return value or returned object.
+Some parameters can be made required, so you *have to* fill them in as input. In Encircle, this means that reading and writing any accessible aspect of a parameter can be separately made required or optional. When output is required, it means you have to use the output. You will be unable to execute the command without picking up the return value or returned object.
 
 Basically each system command can be made required or optional. Usually you make access from the *outside* required. When you make access from the *inside* required, this can give the user of the command guarantees about the parameter’s usage.
 
@@ -106,9 +106,9 @@ Just as in procedures, you could make certain members of a type required, while 
 
 Other programming languages have a concept called variable amount of arguments. This means, that a command’s parameter list does not have a fixed amount of parameters. The last parameters can be any amount of parameters. This is specified as the last parameter’s being an *array* of parameters.
 
-In the new computer language, any parameter can be an array. In other programming languages, parameters could also be arrays, but for the array, that represented the variable amount of arguments, each item of the array was separately listed out at the end of the command call, as opposed to other parameters, that were arrays, which were just references to arrays, that were initialized elsewhere, not inside the command call.
+In Encircle, any parameter can be an array. In other programming languages, parameters could also be arrays, but for the array, that represented the variable amount of arguments, each item of the array was separately listed out at the end of the command call, as opposed to other parameters, that were arrays, which were just references to arrays, that were initialized elsewhere, not inside the command call.
 
-In the new computer language, for backwards compatibility purposes, and textual representation purposes, a parameter may be typed as the array that will represent the variable amount of arguments. In other programming languages, variable amount of arguments was also just for textual representation.
+In Encircle, for backwards compatibility purposes, and textual representation purposes, a parameter may be typed as the array that will represent the variable amount of arguments. In other programming languages, variable amount of arguments was also just for textual representation.
 
 Perhaps in the future, it can be applied, that multiple array parameters are considered the variable amount of arguments. But how the notation will be kept unambiguous then is not clear yet.
 
@@ -144,11 +144,11 @@ Variable amount of arguments is a purely textual notation. The diagram notation 
 
 #### Concept
 
-Other programming language used to have only *one* return value. The new computer language can have *any* amount of output values or output objects, and no single parameter is selected to be *the* return value. I guess the concept of one return value dates from when a command was meant to be like a mathematical formula. I do not think, that limiting the amount of return values of a command to one, has a place in a more modern programming language anymore, because we have to realize, that programming is not mathematics.
+Other programming language used to have only *one* return value. Encircle can have *any* amount of output values or output objects, and no single parameter is selected to be *the* return value. I guess the concept of one return value dates from when a command was meant to be like a mathematical formula. I do not think, that limiting the amount of return values of a command to one, has a place in a more modern programming language anymore, because we have to realize, that programming is not mathematics.
 
 #### Diagram
 
-As discussed in the article *Return Values*, the new computer language does not limit the amount of output objects. Any object readable from the outside, may be an output object.
+As discussed in the article *Return Values*, Encircle does not limit the amount of output objects. Any object readable from the outside, may be an output object.
 
 ![](images/2.%20Imported%20Parameter%20Concepts.026.png)
 
@@ -158,7 +158,7 @@ The correct usage of the term output will be discussed only later, in the *Advan
 
 #### Concept
 
-Other programming languages were textual. The parameters were put in a certain order. In the new computer language parameters are more free in order, just like sub-objects inside another object usually have no particular order. The parameters are not really a list of objects anymore. A command call is an object, that has a set of object references in it, that are individually set, and do not have a particular order.
+Other programming languages were textual. The parameters were put in a certain order. In Encircle parameters are more free in order, just like sub-objects inside another object usually have no particular order. The parameters are not really a list of objects anymore. A command call is an object, that has a set of object references in it, that are individually set, and do not have a particular order.
 
 Even though all parameters can be individually accessed by pointing to its symbol or by using its name, you *can* still give the parameters an order of display. The articles, that follow, will elaborate on the diagrammatic and textual expression of parameter order.
 

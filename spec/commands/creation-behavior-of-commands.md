@@ -109,7 +109,7 @@ But if a command object does not have a definition, then it defines its own defi
 
 #### Compared To CPU-Like Call
 
-There was a lot of brainstorming about how this relates to the way it goes in other programming languages, which have a command call creation scheme totally compliant to the CPU’s way of handling command calls, which is not in the spirit of *commands as an object*. But that brainstorming was postponed, because it did not have anything to do with a goal, but more with optimization of the new computer language. The contemplations are still there in the article *Comparison to CPU-Like Call Instantiation*, as an unfinished brainstorm, that may be later worked out, to better take advantage of CPU power.
+There was a lot of brainstorming about how this relates to the way it goes in other programming languages, which have a command call creation scheme totally compliant to the CPU’s way of handling command calls, which is not in the spirit of *commands as an object*. But that brainstorming was postponed, because it did not have anything to do with a goal, but more with optimization of Encircle. The contemplations are still there in the article *Comparison to CPU-Like Call Instantiation*, as an unfinished brainstorm, that may be later worked out, to better take advantage of CPU power.
 
 #### Diagram Notation
 
@@ -373,7 +373,7 @@ An executable command inside a command definition can not be run, because its pa
 
 ### Comparison to CPU-Like Call Instantiation
 
-There was a lot of brainstorming about how the new computer language’s call instantiation compares to call instantiation in other programming languages, which are totally compliant to the CPU’s way of handling command calls, but is not in the spirit of *commands as an object*. But that brainstorming was postponed, because it did not have anything to do with a goal of a workable type of call instantiation, but more with optimization of the new computer language. The contemplations are still there in this article, as an unfinished brainstorm, that may be later worked out, to better take advantage of CPU power.
+There was a lot of brainstorming about how Encircle’s call instantiation compares to call instantiation in other programming languages, which are totally compliant to the CPU’s way of handling command calls, but is not in the spirit of *commands as an object*. But that brainstorming was postponed, because it did not have anything to do with a goal of a workable type of call instantiation, but more with optimization of Encircle. The contemplations are still there in this article, as an unfinished brainstorm, that may be later worked out, to better take advantage of CPU power.
 
 Perhaps creation behavior is just the most important issue of Command is an Object. It really belongs to the introduction of commands, that explains how a command is an executable object. Closely related to it, is the special creation behavior of executable objects. You have to well understand the creation behavior to implement a command as an object.
 
@@ -473,7 +473,7 @@ A parameter passing assignment could only be stored by the parent command-call i
 
 #### More Brainstorming
 
-< A problem is, that in my own computer language, the command definition is not assembly code. It is objects of the new computer language. >
+< A problem is, that in my own computer language, the command definition is not assembly code. It is objects of Encircle. >
 
 In CPU-like languages the sub-command-calls are in the machine instructions.
 In my own computer language sub-commands-calls are in an objects somewhere.

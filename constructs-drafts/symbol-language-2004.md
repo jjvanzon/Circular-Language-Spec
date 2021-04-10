@@ -629,7 +629,7 @@ Contents
 Symbol Language | Basic
 =======================
 
-*The New Computer Language*
+*Encircle*
 
 Introduction
 ------------

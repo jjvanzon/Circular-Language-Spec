@@ -151,7 +151,7 @@ There are two forms of __Select Case__:
 
 The two forms will be explained in separate articles.
 
-The name __Select Case__ is directly taken over from the programming language *Basic*. You can choose between *Basic* naming and *C*  naming for execution flow statements. In the programming language *C*  it is called a __switch__ statement. Both names are available in the new computer language, as part of the multi-lingual approach of the system.
+The name __Select Case__ is directly taken over from the programming language *Basic*. You can choose between *Basic* naming and *C*  naming for execution flow statements. In the programming language *C*  it is called a __switch__ statement. Both names are available in Encircle, as part of the multi-lingual approach of the system.
 
 #### Diagram
 

@@ -45,7 +45,7 @@ These are various draft texts that may once describe a story, ideas about how th
 
 - ## [Debugging](debugging.md)
 
-    - The new computer language is described, but how to go through code step by step or debug it has not been covered yet. This documentation may cover how debugging is implemented inside the environment of the new computer language. For now it only contains loose ideas about it. Nothing like this has been developed yet.
+    - Encircle is described, but how to go through code step by step or debug it has not been covered yet. This documentation may cover how debugging is implemented inside the environment of Encircle. For now it only contains loose ideas about it. Nothing like this has been developed yet.
 
 - ## [Fundamental Principles | Loose Ideas](fundamental-principles-loose-ideas.md)
 
@@ -53,7 +53,7 @@ These are various draft texts that may once describe a story, ideas about how th
 
 - ## [Macro Recorder](macro-recorder.md)
 
-    - The new computer language should have this button to press, that records all user actions, that are undertaken. Then, when you stop recording, the user actions are recorded as a procedure, that can be called as a command to be executed in one blow instead of performing all the actions manually. You can also edit the command code, to fine-tune the behavior of the command. This makes it easy to turn manual work into automatic procedures and it also makes it easier to program new commands. Other programs have this sort of macro recording, and the new computer language should also have such functionality in the futures. Macro recording has not been implemented inside existing versions of the new computer language yet.
+    - Encircle should have this button to press, that records all user actions, that are undertaken. Then, when you stop recording, the user actions are recorded as a procedure, that can be called as a command to be executed in one blow instead of performing all the actions manually. You can also edit the command code, to fine-tune the behavior of the command. This makes it easy to turn manual work into automatic procedures and it also makes it easier to program new commands. Other programs have this sort of macro recording, and Encircle should also have such functionality in the futures. Macro recording has not been implemented inside existing versions of Encircle yet.
 
 - ## [Object Storage](object-storage.md)
 

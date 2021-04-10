@@ -85,7 +85,7 @@ __Reference__ parameter:
 
 Therefore it can also be called __Reference Outward, Value In__ and __Reference Outward, Value Out__ But those names are too long. The distinction between __Reference In__ and __Reference Out__ is about whether values are read or written to the object passed to the sub-command.
 
-In earlier programming languages one use of by reference was to be able to pass large objects to a procedure. Another use was to be able to let the procedure have multiple return values, because in other programming languages a procedure can really only have one return value. In the new computer language, multiple return values is accomplished by having multiple __Object Out__ parameters. So you do not need __Reference Out__ parameters for that purpose anymore.
+In earlier programming languages one use of by reference was to be able to pass large objects to a procedure. Another use was to be able to let the procedure have multiple return values, because in other programming languages a procedure can really only have one return value. In Encircle, multiple return values is accomplished by having multiple __Object Out__ parameters. So you do not need __Reference Out__ parameters for that purpose anymore.
 
 When a command call has an outward reference to an object, this *does* make the object a parameter, but this *does not* determine yet whether it is input, output or throughput. The *in* and *out* in this case refer to whether *values* are written or read to the object reference. A reference parameter is always sort of like input, though: the parent command passes the object to the sub-command, so the parent inputs something into the sub command.
 
@@ -411,7 +411,7 @@ __Value In__ and __Value Out__ means reading and writing done by de caller. __Re
 
 In other programming languages, sub-commands do not directly read or write to each other’s parameters. Parameters are only read or written by the parent command.
 
-However, in the new computer language, parameters of commands can be tied together directly.
+However, in Encircle, parameters of commands can be tied together directly.
 
 One parameter type can only be tied to a parameter with specific other parameter type.
 

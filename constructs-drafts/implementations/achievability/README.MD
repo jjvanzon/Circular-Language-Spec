@@ -6,7 +6,7 @@ Achievability
 
 `[ Out of Scope ]`
 
-This sub-folder represents a category of principles that might be called the *achievability principles*. The achievability principles would be a set of principles, that describe how a running new computer language might be developed in a limited amount of time with a limited amount of people: what techniques might be employed to make that possible. It might cover how the development of modules of a *Software System* other than the programming language might be made more achievable like that. Not all the content might be finished yet, but the *Achievability* folder may contain the following articles:
+This sub-folder represents a category of principles that might be called the *achievability principles*. The achievability principles would be a set of principles, that describe how a running Encircle might be developed in a limited amount of time with a limited amount of people: what techniques might be employed to make that possible. It might cover how the development of modules of a *Software System* other than the programming language might be made more achievable like that. Not all the content might be finished yet, but the *Achievability* folder may contain the following articles:
 
 - ### [Achievability Brainstorm](achievability-brainstorm.md)
 
@@ -28,13 +28,13 @@ This sub-folder represents a category of principles that might be called the *ac
 
 - ### [Programming Language Programmed Within Itself](programming-language-programmed-within-itself.md)
 
-    - A dream would be for a computer language to make it easier to program larger systems of software. But making a computer language itself seems difficult. So a way to make it easier, might be to program most of a computer language within the new computer language itself. This article tries to explain how this might be possible. The description might be lengthy and hard to understand perhaps. It may cover many technical details, instead of an easier presentation of the concept.
+    - A dream would be for a computer language to make it easier to program larger systems of software. But making a computer language itself seems difficult. So a way to make it easier, might be to program most of a computer language within Encircle itself. This article tries to explain how this might be possible. The description might be lengthy and hard to understand perhaps. It may cover many technical details, instead of an easier presentation of the concept.
 
-    - The concept *Computer Language Programmed Within Itself* was tried with experimental version 2.0 of a computer language. In that version the base of the language was reprogrammed using the new language itself. The idea was that all the other software might be based on that, which from then on, would be programmed only using the new computer language itself.
+    - The concept *Computer Language Programmed Within Itself* was tried with experimental version 2.0 of a computer language. In that version the base of the language was reprogrammed using the new language itself. The idea was that all the other software might be based on that, which from then on, would be programmed only using Encircle itself.
 
 - ### [Small Base of Code](small-base-of-code.md)
 
-    - This principle would be about trying to make the base of the code for a new computer language as small as possible and have the rest of the computer language programmed within a computer language itself. This principle was tried in version 2.0 of a new computer language: the code base was reprogrammed within itself.
+    - This principle would be about trying to make the base of the code for Encircle as small as possible and have the rest of the computer language programmed within a computer language itself. This principle was tried in version 2.0 of Encircle: the code base was reprogrammed within itself.
 
 - ### C++ / C\#
 

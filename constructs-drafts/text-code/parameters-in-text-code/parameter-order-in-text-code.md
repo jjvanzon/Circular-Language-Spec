@@ -6,7 +6,7 @@ Parameter Order in Text Code
 
 `[ Deprecated documentation ]`
 
-The article *Parameter Order* introduced the concept of an ordered list of parameters. In text code, you can just list them out in that order then. Textual display is totally preliminary, because text code of the new computer language is totally not worked out yet.
+The article *Parameter Order* introduced the concept of an ordered list of parameters. In text code, you can just list them out in that order then. Textual display is totally preliminary, because text code of Encircle is totally not worked out yet.
 
 It is not clear yet, how it will be displayed in a command definition, that the parameters are not only named, but also ordered.
 
@@ -24,4 +24,4 @@ And when the parameter list *is* ordered, you can leave out the names in the par
 Command  (  423  ,  Object A  )
 ```
 
-Command calls and command definitions are not really different in the new computer language. They are both just command objects, so how can there be a difference in the display of command definitions and command calls? That is not clear yet, but it is to be worked out in a later project, when text code is further worked out, or differences in behavior of classes and instances are worked out.
+Command calls and command definitions are not really different in Encircle. They are both just command objects, so how can there be a difference in the display of command definitions and command calls? That is not clear yet, but it is to be worked out in a later project, when text code is further worked out, or differences in behavior of classes and instances are worked out.

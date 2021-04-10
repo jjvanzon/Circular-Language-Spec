@@ -190,7 +190,7 @@ Imaginary references `were` put on one level higher:
 
 `When* you*` let one of `the*` object references link to another object, `then* the*` link from `the*` old counterpart to `the*` object `should` be broken and a link from `the*` new counterpart to `the*` object `should` be established. `The*` object synchronizes `the* old` counterpart *out*, and it synchronizes `the*` new counterpart *in*.
 
-In `the* new computer language you* are` still able to create `just` a unidirectional relationship. In a programming environment `you* should` be able to automatically turn a unidirectional relationship to a bidirectional relationship. In a programming environment `you* should` be able to turn two `already defined` unidirectional relationships into a single bidirectional relationship.
+In Encircle `you* are` still able to create `just` a unidirectional relationship. In a programming environment `you* should` be able to automatically turn a unidirectional relationship to a bidirectional relationship. In a programming environment `you* should` be able to turn two `already defined` unidirectional relationships into a single bidirectional relationship.
 
 `So` whenever a __Jar__ changes its __Lid__, `the*` original __Lid__’s reference to `the*` __Jar__ `is` annulled, and `the*` new __Lid__ get a reference to its new __Jar__. `This actually` explains synchronization between __1 => 1__ related objects. Synchronization happens `when*` assigning a related item. `When*` assigning a related item, `the*` related item gets a reference back to `the*` first item.
 
@@ -295,7 +295,7 @@ What `can*` be confusing `is` that, `when*` a __1 => n__ relationship `is` synch
 
 It `is` often easier to `define` something in __1 => n__ relationships, `without` thinking about it, that `the*` backward relationship might be __=> n__ `too. But* when*` a relationship `is` synchronized, `the*` system falls apart `when*` a __1 => n__ `is actually` intended as __n => n__ and `you’re*` trying to *use* it that way.
 
-`This can*` be misconceived as an error in `the* new computer language`, or an inability of it, while it’s `really just` a wrongly `defined` relationship.
+`This can*` be misconceived as an error in Encircle, or an inability of it, while it’s `really just` a wrongly `defined` relationship.
 
 `So then*` it becomes `really important` to `define the* exact` relationship type of something, even `when*` it’s more difficult.
 

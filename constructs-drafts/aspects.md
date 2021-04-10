@@ -140,7 +140,7 @@ JJ
 
 Aspects mostly operate using the reflective data. The fact that aspects they operate using reflective data makes them inherently applicable to any system.
 
-Some things that in other programming languages are considered fundamental coding principles, can be implemented as an aspect in the new computer language. Examples of this are: parameters, enums, events, type safety, inheritance. (There are even things called fundamental in other programming languages, that are considered mere plug-in modules in Software System, such as basic math.)
+Some things that in other programming languages are considered fundamental coding principles, can be implemented as an aspect in Encircle. Examples of this are: parameters, enums, events, type safety, inheritance. (There are even things called fundamental in other programming languages, that are considered mere plug-in modules in Software System, such as basic math.)
 
 So expressing the system in text code is considered an aspect built on top of the principles already offered by the code base. We would be lost without actually expressing computer code, but eventually the code runs without it, only it can’t be written by a human being if it wasn’t for expression.
 
@@ -149,7 +149,7 @@ So expressing the system in text code is considered an aspect built on top of th
 Aspects,  
 2008-09-20
 
-Do not mix the term aspect and the term aspect. System aspects are more basic than aspects. Aspects in the new computer language are like aspects in Aspect Oriented Programming, but I use the term aspect. The term aspect is too much the idea of part-of-something, inseparable. The term aspect is more like something separate, that you can sell separately, that can be applied to anything.
+Do not mix the term aspect and the term aspect. System aspects are more basic than aspects. Aspects in Encircle are like aspects in Aspect Oriented Programming, but I use the term aspect. The term aspect is too much the idea of part-of-something, inseparable. The term aspect is more like something separate, that you can sell separately, that can be applied to anything.
 
 JJ
 

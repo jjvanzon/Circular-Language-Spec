@@ -546,16 +546,16 @@ JJ
 
 -----
 
-New Computer Language,  
+Encircle Language Spec,  
 2009-09-03
 
-What about a two-dimensional array? How would that look in the new computer language?
+What about a two-dimensional array? How would that look in Encircle?
 
 JJ
 
 -----
 
-New Computer Language,  
+Encircle Language Spec,  
 2009-09-03
 
 Nice phrase:  

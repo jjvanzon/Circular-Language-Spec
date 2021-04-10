@@ -66,7 +66,7 @@ Each object reference gets its own identifier, even when an object reference is 
 
 One thing that makes it important to be aware of system commands at all is *extension* of system commands.
 
-A system command, such as __Get Value__, can be decorated with a procedure, that determines the value that is returned. It is the new computer language’s equivalent of __Getters__ and __Setters__ or __Property__ procedures. The __Get Object__ command can be extended as well, which makes you able to further control the connection between one object and the other.
+A system command, such as __Get Value__, can be decorated with a procedure, that determines the value that is returned. It is Encircle’s equivalent of __Getters__ and __Setters__ or __Property__ procedures. The __Get Object__ command can be extended as well, which makes you able to further control the connection between one object and the other.
 
 Any system command can be decorated with a __Pre-Extension__, __Post-Extension__ or __Override__. 
 
@@ -84,7 +84,7 @@ But the exact way in which command extension is implemented will be covered by t
 
 #### Concept
 
-This is a preliminary description of the concept. The details are still to be worked out. It could be that in practice, when the new computer language is up and running, the details that have to be solved, will come to light straight away.
+This is a preliminary description of the concept. The details are still to be worked out. It could be that in practice, when Encircle is up and running, the details that have to be solved, will come to light straight away.
 
 In other programming languages there are *getters* and *setters*, which are also called *properties*. Those are replaced by the fact, that any related object has a set of system commands, such as __Get Object__ and __Set Object__, that can be extended with extra code around the __Get__ and __Set__ actions.
 
@@ -96,13 +96,13 @@ Pressure  (  Time  )
 
 Even through the retrieval of pressure could be made a command with a parameter, one might want to see __Pressure__ as an *object*, rather than a *command*.
 
-You can use a related object for that. A related object has a system interface, that allows you to let the eventual object it displays be determined by a procedure. The system interface controls what is returned as the related object. You can extend the __Get Value__ and __Set Value__ system commands. The new computer language must allow you to be able to add extra parameters to system commands, or add extra sub-objects to a system aspect, such as the __Value__ aspect, creating a single parameter for both __Get Value__ and __Set Value__ at the same time, and the new computer language should also allow you to add sub-objects to the whole system interface, to give the retrieval and assignment of any aspect the same parameter. So it is not really the object itself, that gets a parameter, but the related object, that gets a parameter. An object *reference* gets a parameter. That is why the parameter needs to be part of the system interface.
+You can use a related object for that. A related object has a system interface, that allows you to let the eventual object it displays be determined by a procedure. The system interface controls what is returned as the related object. You can extend the __Get Value__ and __Set Value__ system commands. Encircle must allow you to be able to add extra parameters to system commands, or add extra sub-objects to a system aspect, such as the __Value__ aspect, creating a single parameter for both __Get Value__ and __Set Value__ at the same time, and Encircle should also allow you to add sub-objects to the whole system interface, to give the retrieval and assignment of any aspect the same parameter. So it is not really the object itself, that gets a parameter, but the related object, that gets a parameter. An object *reference* gets a parameter. That is why the parameter needs to be part of the system interface.
 
-Because you can add a parameter to the whole system interface which extends every system command with a parameter, the new computer language should supply the capability to select which system commands actually get extended with the same parameter, and whether the __Time__ parameter is required or optional. __Time__ is a sub-object of the related object’s system interface, so it is not really a parameter of a command. However, it does extend the system commands with a __Time__ parameter, so a sub-object of a system interface is always called a parameter, but it is called a parameter of a *related* object instead of a parameter of a command.
+Because you can add a parameter to the whole system interface which extends every system command with a parameter, Encircle should supply the capability to select which system commands actually get extended with the same parameter, and whether the __Time__ parameter is required or optional. __Time__ is a sub-object of the related object’s system interface, so it is not really a parameter of a command. However, it does extend the system commands with a __Time__ parameter, so a sub-object of a system interface is always called a parameter, but it is called a parameter of a *related* object instead of a parameter of a command.
 
 Adding parameters to the system interface of a related object or extensive extension of system commands is a way to let a retrieval procedure be represented by an object instead of a command.
 
-A command in the new computer language can have multiple return values, but when you convert the command into the retrieval procedure of a related object, the command will actually have a single return value. So in this case, you do have the concept of having only one single return value, unlike commands, in which you can have multiple return values.
+A command in Encircle can have multiple return values, but when you convert the command into the retrieval procedure of a related object, the command will actually have a single return value. So in this case, you do have the concept of having only one single return value, unlike commands, in which you can have multiple return values.
 
 There are no plans yet to make a command, that is a retrieval procedure, and a related object with an extensive retrieval procedure, two completely equally present views on the same thing (like other flat and structured interchange concepts within the language, like exchangeability of class commands and command parameters).
 
