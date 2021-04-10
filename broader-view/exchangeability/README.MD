@@ -56,9 +56,7 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
 - ### [Command = Executable Object](command-is-executable-object.md)
 
-    - Even more programming constructs are turned into just objects. Methods, functions, procedures, routines, commands, executables, all called *commands* in the new language, are actually objects too. Every command is a special object, that just happens to be executable. A whole chapter has been devoted to it: the *Commands* chapter. The differences between commands and normal objects are explained in it, but the essence of it is: commands are *objects*, *executable* *objects*. Turning commands and objects into the same construct makes Encircle’s grammar less complex.
-
-    - (This article is not started at yet.)
+    - Even more programming constructs might be turned into just objects. Methods, functions, procedures, routines, commands, executables, all called *commands* in Encircle, are actually objects too. Every command might be a special object, that just happens to be executable. A whole chapter has been devoted to it: the *Commands* chapter. The differences between commands and normal objects are explained in it, but the essence of it is: commands might just be *objects*, *executable objects*. Turning commands and objects into the same construct may make Encircle’s grammar less complex.
 
 - ### [Hand Signs](hand-signs.md)
 
