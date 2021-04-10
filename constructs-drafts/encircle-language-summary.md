@@ -11,9 +11,9 @@ Encircle Language Summary
 Computer Language,  
 2008-08-06
 
-In the end, you are going to have to summarize the coding concepts and diagram syntax.
+In the end, a summary / cheat sheet might be made of the coding concepts and diagram syntax.
 
-How about you only give the diagram syntax, if the coding concept actually has its own syntax, not when the diagram expression just functions a clarification of the concept. Then you have all the syntaxes in a list, and you can distinguish derived concepts and uses of a concept from the main concepts, that actually introduce syntax rules.
+How about only giving the diagram syntax, if the coding concept actually has its own syntax, not when the diagram expression just functions a clarification of the concept. That would sum up all the syntaxes in a list, and then derived concepts and uses of a concept might be distinguished from the main concepts, that would actually introduce syntax rules.
 
 JJ
 

@@ -20,7 +20,7 @@ The *extensibility principles* may cover techniques that might make existing sof
 
     - Concepts might often make use of a system’s *reflective data*.
 
-    - Turning concepts into external modules instead of polluting all the code of a program with it, might makes systems more easily extensible.
+    - Turning aspects into external modules instead of polluting all the code of a program with it, might makes systems more easily extensible.
 
     - Perhaps this might only work for systems that have a way to integrate with Encircle.
 

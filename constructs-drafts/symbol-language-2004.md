@@ -5362,7 +5362,7 @@ So you always need to combine a call to a __Get__ with a call to a __Set__. The 
 
 You can always combine aspects that both return a __Symbol Id__. __State__ can only be combined with __State__. The __Created__ aspect can be treated like any __Boolean__ object.
 
-__Symbol Ids__ are stored like an __Integer__ number, but they cannot be used as __Integer__ objects. They can only be used among system procedures. You can’t assign an __Integer__ to a aspect returning a symbol and you can’t assign a symbol aspect to an __Integer__ number. So you can’t temporarily store a reference to a symbol inside an __Integer__.  
+__Symbol Ids__ are stored like an __Integer__ number, but they cannot be used as __Integer__ objects. They can only be used among system procedures. You can’t assign an __Integer__ to an aspect returning a symbol and you can’t assign a symbol aspect to an __Integer__ number. So you can’t temporarily store a reference to a symbol inside an __Integer__.  
 {Is that true? In that case you can’t investigate the surrounding encapsulation and store it anywhere.}
 
 Note that of the aspects introduced, the only ones that can be __Set__ are: line targets, __State__ and the __Created__ aspect.

@@ -153,7 +153,7 @@ Apart to system events, the next most commonly used group of events may very wel
 
 Interaction events are events that occur when a user for instance clicks a button, or double clicks or presses a keyboard key.
 
-This type of event is more of a *controls concept* than a coding concept, but they are mentioned here anyway, because they are such a common use of events
+This type of event is more of a *controls aspect* than a coding aspect, but they are mentioned here anyway, because they are such a common use of events
 
 Below you will find a simplified overview of the most common interaction events.
 
