@@ -12,7 +12,7 @@ Conversions
 
 #### Brainstorm
 
-If the State isn’t assigned to the same type then a conversion must take place. The target type for the state assignment must define the conversion and this conversion is bound to the state source type; for each state source type, the state target type must define a conversion. If the conversion isn’t defined then it’s not possible to assign a state of that type.
+If the State isn’t assigned to the same type then a conversion might take place. The target type for the state assignment might define the conversion and this conversion is bound to the state source type; for each state source type, the state target type might define a conversion. If the conversion isn’t defined then it’s not possible to assign a state of that type.
 
 Conversions can also be cast explicitly rather than being automatically performed on state assignment.
 
@@ -34,7 +34,7 @@ Conversion,
 Conversions may apply to assigning object references as well, as well as other types of assignment.  
 But in assignment of an object, that does not have the right class, but it does support the right interface should be allowed and not result in conversion. How the two resolutions relate, has to be covered in this documentation folder as well.
 
-It seems, that when type control does not allow the assignment, a conversion command must be available for implicit invocation, or an error might occur.
+It seems, that when type control does not allow the assignment, a conversion command might be available for implicit invocation, or an error might occur.
 
 Conversion commands are not specific to an object. It links to two objects: the source and the target. Because command parameters and object commands are interchangeable, how do conversion commands look in a diagram?
 

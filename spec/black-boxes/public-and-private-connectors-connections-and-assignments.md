@@ -271,7 +271,7 @@ For now the notation of system command connectors is open to discussion.
 
 #### Execute Connections
 
-< TO DO: You have to address the details in *Using Command Symbols* and the preliminariness of the system command notation must eventually be removed. And then you have to display just the actual connections (executable references to the command) that are already visible inside the more complex pictures now shown below. >
+< TO DO: You have to address the details in *Using Command Symbols* and the preliminariness of the system command notation might eventually be removed. And then you have to display just the actual connections (executable references to the command) that are already visible inside the more complex pictures now shown below. >
 
 Access controlling the __Execute__ system command for command objects may seem like access controlling the ability to call a command. But that is not true. You can access control a command’s __Use As Class__ connector to make a command callable or not. You do not need to access control the __Execute__ system command for that.
 

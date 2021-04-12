@@ -130,11 +130,11 @@ In text code, parameter assignments before a call are notated something like thi
 
 Procedure A is the procedure name, the two numbers between brackets are the two arguments. Text code is covered in detail lateron.
 
-The parameters of a procedure are listed in a fixed order. Even the optional parameters have a place in this fixed list and when you don’t want to fill it in you must leave the position open:
+The parameters of a procedure are listed in a fixed order. Even the optional parameters have a place in this fixed list and when you don’t want to fill it in you might leave the position open:
 
     Procedure A ( 0 , 4 ,  , 1 )
 
-After the fixed parameter list, a procedure can allow a variable amount of parameters to follow. This variable amount of parameters is stored in a single special parameter. This parameter is of type Array, a type defined in the Sigma Data module. To support variable amount of arguments, the procedure must have a public Array object that is assigned to be this special parameter.
+After the fixed parameter list, a procedure can allow a variable amount of parameters to follow. This variable amount of parameters is stored in a single special parameter. This parameter is of type Array, a type defined in the Sigma Data module. To support variable amount of arguments, the procedure might have a public Array object that is assigned to be this special parameter.
 
     Procedure A ( 0 , 4 ,  , 1 , 3 , 7 , __…__ )
 

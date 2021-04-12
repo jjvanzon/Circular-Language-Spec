@@ -83,7 +83,7 @@ Document  .  Lines  .  Item  [  0  ..  *  ]  .  Point B   .  X
 Document  .  Lines  .  Item  [  0  ..  *  ]  .  Point B   .  Y
 ```
 
-There must be a limitation in the expression of what is accessed. Perhaps if only __Document__'s existence is being checked, this might be indicated. But to a certain extend the expression of what exactly is accessed should be limited. Not the entire inner workings of a command are visible from its input and output. For instance, in the input / output expression you might *not* be seeing what *sub-commands* are called.
+There might be a limitation in the expression of what is accessed. Perhaps if only __Document__'s existence is being checked, this might be indicated. But to a certain extend the expression of what exactly is accessed should be limited. Not the entire inner workings of a command are visible from its input and output. For instance, in the input / output expression you might *not* be seeing what *sub-commands* are called.
 
 What is written and read by a command are actually pre- and post-conditions of the command. 
 
@@ -122,7 +122,7 @@ That is what automatic execution order is.
 
 Sub-commands indirectly relate to each other through mutual references to the same object, and what they read or write from that object.
 
-It can be determined, that part of the sub-commands can run independently. If they don’t consult the same data, they can run totally concurrently. Only if things consult the same data, and there is at least one reference that writes to it, then an order must be determined.
+It can be determined, that part of the sub-commands can run independently. If they don’t consult the same data, they can run totally concurrently. Only if things consult the same data, and there is at least one reference that writes to it, then an order might be determined.
 
 ##### Multiple parameters
 
@@ -194,7 +194,7 @@ I just think that blending the procedures and objects into a single construction
 
 -----
 
-Perhaps methods only interweave at points at which a resource is accessed by multiple things at the same time. The methods' diagram contents may be thrown in one method, automatic execution order applied, and the combined method is executed, where some things can be done in parallel and some things must be executed serial.
+Perhaps methods only interweave at points at which a resource is accessed by multiple things at the same time. The methods' diagram contents may be thrown in one method, automatic execution order applied, and the combined method is executed, where some things can be done in parallel and some things might be executed serial.
 
 Perhaps, everything's one big method in a way, you can flatten it out, and restructure it with automatic execution order... or something.
 
@@ -234,7 +234,7 @@ However, translating it to the explicit reference argument notation:
 
 ![](images/Automatic%20Execution%20Order.003.png)
 
-The dependency looks must different. After the translation to this, execution order is determined fully by parent-child relations: parents execute first, then children.
+The dependency looks might different. After the translation to this, execution order is determined fully by parent-child relations: parents execute first, then children.
 
 ![](images/Automatic%20Execution%20Order.004.png)
 

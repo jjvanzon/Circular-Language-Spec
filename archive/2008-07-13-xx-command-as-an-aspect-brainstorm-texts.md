@@ -76,10 +76,10 @@ Parameters are the essential connection between commands and objects. If I can u
 
 When a command definition gets an object with a class, this creates a relation between the command and the class definition. This means, that the class definition also gets a reference back to the command.
 
-It looks like, when you turn a command into an executable object, without any additional effort automatically establishes the interchangeability between class commands and command parameters. I didn’t expect that. If two seemingly independent aspects confirm each other, I must be on the right track.
+It looks like, when you turn a command into an executable object, without any additional effort automatically establishes the interchangeability between class commands and command parameters. I didn’t expect that. If two seemingly independent aspects confirm each other, I might be on the right track.
 
 For objects of the class, this means, that they copy all methods of the class.  
-If the method changes, this changes the class configuration. The change in class configuration must then be ventilated through to all the objects of the class.  
+If the method changes, this changes the class configuration. The change in class configuration might then be ventilated through to all the objects of the class.  
 I haven’t accounted for that yet. The same effect is there for just data of objects: if the class configuration changes, the objects should change also.  
 Gee... you should be versioning. Objects do not change, because they link to a specific version of the class.  
 However when creating a command, and giving it a relation to a class, I guess I do want the command to be ventilated through to the objects? Or might I just forget about that?  
@@ -867,7 +867,7 @@ Document  .  Lines  .  Item  [  0  ..  *  ]  .  Point B   .  X
 Document  .  Lines  .  Item  [  0  ..  *  ]  .  Point B   .  Y
 ```
 
-There must be a limitation in the expression of what is accessed. Perhaps if only __Document__'s existence is being checked, this might be indicated. But to a certain extend the expression of what exactly is accessed should be limited. Not the entire inner workings of a command are visible from its input and output. For instance, in the input / output expression you might *not* be seeing what *sub-commands* are called.
+There might be a limitation in the expression of what is accessed. Perhaps if only __Document__'s existence is being checked, this might be indicated. But to a certain extend the expression of what exactly is accessed should be limited. Not the entire inner workings of a command are visible from its input and output. For instance, in the input / output expression you might *not* be seeing what *sub-commands* are called.
 
 What is written and read by a command are actually pre- and post-conditions of the command. 
 
@@ -906,7 +906,7 @@ That is what automatic execution order is.
 
 Sub-commands indirectly relate to each other through mutual references to the same object, and what they read or write from that object.
 
-It can be determined, that part of the sub-commands can run independently. If they don’t consult the same data, they can run totally concurrently. Only if things consult the same data, and there is at least one reference that writes to it, then an order must be determined.
+It can be determined, that part of the sub-commands can run independently. If they don’t consult the same data, they can run totally concurrently. Only if things consult the same data, and there is at least one reference that writes to it, then an order might be determined.
 
 ##### Multiple parameters
 
@@ -923,7 +923,7 @@ It can be determined, that part of the sub-commands can run independently. If th
 ### System interface
 
 Here is a paradox.  
-A command is a special object, that can execute, but an object has system commands. A related item gets system commands. So here I want to replace a real command by an object, that can behave as a command, but an object *must* have system commands in order to function.
+A command is a special object, that can execute, but an object has system commands. A related item gets system commands. So here I want to replace a real command by an object, that can behave as a command, but an object *might* have system commands in order to function.
 
 But it is not so much about the system commands, that are added by aspects, but about *fundamental* system commands.  
 Actually, no object has fundamental system commands. Only object references, symbols, have fundamental system commands.  

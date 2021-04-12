@@ -277,7 +277,7 @@ An item in one list `is` aware of its position in `the*` other list. That makes 
 `When* you*` assign an item to a list for synchronization purposes, `no` synchronization `is to be` executed on `the*` other side again.  
 `You'd* have to` call a `special` __List Item Set__ procedure, accessible `only` to `the*` related class, that simply won’t synchronize back again.
 
-Another solution opted at first, `was` to execute a __Find Or Add__ for synchronization, instead of executing an normal __Add__ command. That `would*` prevent a related item from being added and added again. `But* then* you* have the*` problem: maybe `the*` same item *`should`* be added twice to `the*` list, `because*` one item `can*` relate to another item multiple times, which also `requires the*` other item to relate back to `the*` first item multiple times. For `each` reference to an item, `the*` item `must have` a reference back to `the*` referrer.
+Another solution opted at first, `was` to execute a __Find Or Add__ for synchronization, instead of executing an normal __Add__ command. That `would*` prevent a related item from being added and added again. `But* then* you* have the*` problem: maybe `the*` same item *`should`* be added twice to `the*` list, `because*` one item `can*` relate to another item multiple times, which also `requires the*` other item to relate back to `the*` first item multiple times. For `each` reference to an item, `the*` item `might have` a reference back to `the*` referrer.
 
 `So the*` new option `is` better: `you* have` a `special` __List Item Set__ procedure, possibly called by a `special` __Add__ procedure, used solely for relationship synchronization, that won’t synchronize *back* again.
 

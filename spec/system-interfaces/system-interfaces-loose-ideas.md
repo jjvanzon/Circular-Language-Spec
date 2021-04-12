@@ -296,7 +296,7 @@ I forgot that a __Related List__ also has the __Name__ aspect.
 
 ### Extension of System Commands
 
-The Get usually returns system information. The Set usually changes a line target normally. However, as a programmer you can also decide for yourself what’s the effect of a Get or a Set.  You can totally redefine the Get and Set procedures of a symbol. With that you can also add parameters to the Get and Set procedures. So you’re able to decide yourself which symbol to return on a Get and which symbol to assign on a Set. You can also for instance see to it that on a Set call, the change is applied to all sorts of things, by starting procedures that apply the new value. When setting an object’s state, for instance, you can automatically apply its new state to other objects, for instance when you need to draw a text on screen every time a value changes. You can’t redefine *all* system procedures. For instance the effect of Target Object Get must stay consistent and can not be customized. And also Symbol Get always needs to return the symbol itself. You can only redefine the Object, Type, Interface and State Gets and Sets.
+The Get usually returns system information. The Set usually changes a line target normally. However, as a programmer you can also decide for yourself what’s the effect of a Get or a Set.  You can totally redefine the Get and Set procedures of a symbol. With that you can also add parameters to the Get and Set procedures. So you’re able to decide yourself which symbol to return on a Get and which symbol to assign on a Set. You can also for instance see to it that on a Set call, the change is applied to all sorts of things, by starting procedures that apply the new value. When setting an object’s state, for instance, you can automatically apply its new state to other objects, for instance when you need to draw a text on screen every time a value changes. You can’t redefine *all* system procedures. For instance the effect of Target Object Get might stay consistent and can not be customized. And also Symbol Get always needs to return the symbol itself. You can only redefine the Object, Type, Interface and State Gets and Sets.
 
 -----
 
@@ -457,7 +457,7 @@ Other possibility:
 
 -----
 
-- Perhaps do not introduce the complete system interface of a system object. I am not going to explain it in the article of the system object, so why bother the reader with it. Give a conceptual explanation without the whole system interface. If you must show the whole system interface, show it in a separate article, after all system objects and system aspects have been explained. Call it for instance: 'Related List Item System Interface'.
+- Perhaps do not introduce the complete system interface of a system object. I am not going to explain it in the article of the system object, so why bother the reader with it. Give a conceptual explanation without the whole system interface. If you might show the whole system interface, show it in a separate article, after all system objects and system aspects have been explained. Call it for instance: 'Related List Item System Interface'.
 
 -----
 
@@ -539,7 +539,7 @@ JJ
 Conversion,  
 2004
 
-If the state isn’t assigned to the same type then a conversion must take place. 
+If the state isn’t assigned to the same type then a conversion might take place. 
 
 JJ
 
@@ -740,7 +740,7 @@ JJ
 
 ##### Assignment
 
-Before I explain using arguments, I must introduce another basic concept: *assignment*. I have to explain it, because to use input arguments you have to *assign* a values to it. Likewise, to retain output arguments, you must *assign* the output values to other objects.
+Before I explain using arguments, I might introduce another basic concept: *assignment*. I have to explain it, because to use input arguments you have to *assign* a values to it. Likewise, to retain output arguments, you might *assign* the output values to other objects.
 
 *An assignment*:
 

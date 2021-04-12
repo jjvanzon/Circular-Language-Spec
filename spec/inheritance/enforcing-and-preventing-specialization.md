@@ -73,7 +73,7 @@ The overriding concept is already explained in the specialization article. There
 
 ### Optional / Required
 
-The concepts from other languages for preventing or enforcing specialization require imposing that something *must* be filled in. The concept of *required* is already worked out in the article *Optional & Required*. The notation looks as follows:
+The concepts from other languages for preventing or enforcing specialization require imposing that something *might* be filled in. The concept of *required* is already worked out in the article *Optional & Required*. The notation looks as follows:
 
 __Optional__  
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.007.png)
@@ -95,7 +95,7 @@ So it is a notation where the requirements for the other end of the connection a
 
 ### Gut Feeling
 
-A gut feeling of mine is that __Protected__ and requirements for other side of connection could be made more alike, because both are about how the other end must be a triangle, but in one case that the direct reference must be a triangle, and in the other case the parent must be a triangle. So these requirements for it being a triangle might have to be merged into one concept one day.
+A gut feeling of mine is that __Protected__ and requirements for other side of connection could be made more alike, because both are about how the other end might be a triangle, but in one case that the direct reference might be a triangle, and in the other case the parent might be a triangle. So these requirements for it being a triangle might have to be merged into one concept one day.
 
 The notation come up with for requirements for the other side of the connection may be inspiration for a notation for a more elaborate security model one day.
 
@@ -139,7 +139,7 @@ In some languages overriding is private by default, protecting a base class from
 
 ### Abstract Member
 
-When the keyword __abstract__ from other languages is applied to a member, it means that you *must* override the member. It is also called __MustOverride__. In Encircle is a combination of making overriding __Public__ *and* __Required__. In the two notations for overriding this would look as follows:
+When the keyword __abstract__ from other languages is applied to a member, it means that you *might* override the member. It is also called __MustOverride__. In Encircle is a combination of making overriding __Public__ *and* __Required__. In the two notations for overriding this would look as follows:
 
 |                     *Object reference notation:*                     |
 |:--------------------------------------------------------------------:|
@@ -153,7 +153,7 @@ When the keyword __abstract__ from other languages is applied to a member, it me
 
 ### Abstract Class
 
-When the keyword __abstract__ from other languages is applied to a class, it means that you *must* inherit from the class, or better said: you cannot just reference the class, the reference must merge with its container. It is also called __MustInherit__.
+When the keyword __abstract__ from other languages is applied to a class, it means that you *might* inherit from the class, or better said: you cannot just reference the class, the reference might merge with its container. It is also called __MustInherit__.
 
 In Encircle this gets the following preliminary notation:
 
@@ -168,7 +168,7 @@ Or perhaps simply:
 
 __Public Triangle Use As Class__
 
-Do not get confused: abstract applied to a class does not mean that its commands are __abstract__, so must be overridden, it just means that the class must be inherited from. An __abstract__ class *can* have method *implementations* in it. 
+Do not get confused: abstract applied to a class does not mean that its commands are __abstract__, so might be overridden, it just means that the class might be inherited from. An __abstract__ class *can* have method *implementations* in it. 
 
 ### Sealed / Final Class
 
@@ -203,15 +203,15 @@ This is a bit different from other languages.
 
 The differences are pointed out here, but it is questionable whether it is important to do anything about those differences. In other programming languages the interface construct imposes several extra restrictions compared to the class construct. An interface is:
 
-- abstract / must be inherited from
-- only has abstract members / members must be overridden
+- abstract / might be inherited from
+- only has abstract members / members might be overridden
 - cannot have an implementation
 
 Normally you do not see these restrictions. They only come to light as soon as you break a rule. That is why the interface constructs seems like a simpler construct: you can do less with it, but you could also see it as a more complex one, because compared to the class construct, *more restrictions* are imposed and these restrictions are also define somewhere. You just do not see this in other languages.
 
 #### Rule 1: Interfaces are Abstract
 
-The first rule for interfaces in other languages is: interfaces are abstract and must be inherited from. This rule is questionable though, since some languages allow you to declare an *explicit* interface, which basically replaces the inheritance characteristic of the interface with aggregation characteristics. In Encircle you can also choose whether to implement an interface in an implicit or explicit mannar / choose between inheritance and aggregation.  
+The first rule for interfaces in other languages is: interfaces are abstract and might be inherited from. This rule is questionable though, since some languages allow you to declare an *explicit* interface, which basically replaces the inheritance characteristic of the interface with aggregation characteristics. In Encircle you can also choose whether to implement an interface in an implicit or explicit mannar / choose between inheritance and aggregation.  
 However if you want to enforce that you can only use the interface in an inheritance way, you could express that by imposing a rule for the other side of the connection:
 
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.022.png)
@@ -220,7 +220,7 @@ This expresses that the other end of the connection should be a triangle.
 
 #### Rule 2: Interface Members are Abstract
 
-The second rule of interfaces is: members must be overridden / members are abstract. In Encircle all interface members are always present inside an implementation of an interface. This is not considered overriding: you have no say in whether to override something or not, the members are just automatically there as soon as you implement an interface.
+The second rule of interfaces is: members might be overridden / members are abstract. In Encircle all interface members are always present inside an implementation of an interface. This is not considered overriding: you have no say in whether to override something or not, the members are just automatically there as soon as you implement an interface.
 
 However unnecessary, you can implicitly define that a member is abstract, which usually looks as follows:
 
@@ -242,7 +242,7 @@ But all in all, you should not worry about this, because if you use an interface
 
 Encircle offers no way to enforce that the interface object has no implementations. Period. You can put implementations in interfaces, only they might never be used.
 
-Something must be considered here compared to other programming languages. In other programming languages the implementation of an interface is composed of method implementations and private members. In Encircle, method implementations are considered *private content*. So in Encircle the interface and implementation are distinguished by separating the public content from the private content.
+Something might be considered here compared to other programming languages. In other programming languages the implementation of an interface is composed of method implementations and private members. In Encircle, method implementations are considered *private content*. So in Encircle the interface and implementation are distinguished by separating the public content from the private content.
 
 So how this translated to implementations inside interface objects: if you make something inside an interface object private, it might never be used.  
 You can make the private content usable again by either making it public again or by making the object usable as a class or plainly as a object.
@@ -293,7 +293,7 @@ All of this is just courtesy to support all these concepts in Encircle. My gut f
 
 For instance the __Protected__ connector notation was come up with at a very early stage, long before the other inheritance-related modifiers were considered. My gut feeling is that I have to let go of the notation for __Protected__ and go for a notation more concise and integrated with all of the other things that can be expressed. __Protected__ really does not deserve such an intrinsic notation compared to the rest of the inheritance-related modifiers.
 
-This article is just put here to make sure that at least all of this stuff is possible in Encircle, but my gut feeling is that a replacement for all of this must be found.
+This article is just put here to make sure that at least all of this stuff is possible in Encircle, but my gut feeling is that a replacement for all of this might be found.
 
 ### Enforcing & Preventing Other Specialization Methods
 

@@ -355,7 +355,7 @@ The complexity hiding aspect is clearly expresses the black boxing concept in th
 
 -----
 
-< Perhaps these specifics to commands must be separately addressed, completely separately. You also need to introduce access controlling Use As Class / Use As Definition in use with commands. >
+< Perhaps these specifics to commands might be separately addressed, completely separately. You also need to introduce access controlling Use As Class / Use As Definition in use with commands. >
 
 -----
 
@@ -520,7 +520,7 @@ Access controllers as such are not usual, though and *if* you use them, they’r
 
 #### Uses of Access Controlling System Aspects
 
-An object symbol’s Object Get procedure must be accessible to make you able to access its sub-object. 
+An object symbol’s Object Get procedure might be accessible to make you able to access its sub-object. 
 
 Exclusion of Set procedures controls who can set a symbol’s lines. Exclusion of Get procedures controls who can get information about lines or who can access the object.
 - \> 2009-07-06: Or who can use the object as line source.

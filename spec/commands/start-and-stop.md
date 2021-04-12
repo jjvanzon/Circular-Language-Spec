@@ -153,7 +153,7 @@ The __Previous__ command might cause a __Stop__ state on the previous command fo
 
 ### Rollback Execution Command
 
-The __Rollback__ execution command might undo all changes of the current command and makes all data return to the state it was before the command had started. If the same data has already been changed by another source it may be overwritten by the original value it had before running the command or the change on that particular data item may not be rolled back at all, or some sort of concurrency resolution must be applied, but concurrency issues might be dealt with later.
+The __Rollback__ execution command might undo all changes of the current command and makes all data return to the state it was before the command had started. If the same data has already been changed by another source it may be overwritten by the original value it had before running the command or the change on that particular data item may not be rolled back at all, or some sort of concurrency resolution might be applied, but concurrency issues might be dealt with later.
 
 In case of regular computation, a __Rollback__ might be executed as fast as possible. For video, audio or presentation or any other type of running media, Rollback means immediately going to the beginning of the execution.
 

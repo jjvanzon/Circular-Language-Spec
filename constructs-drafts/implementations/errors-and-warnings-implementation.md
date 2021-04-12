@@ -17,12 +17,12 @@ Ik begin me steeds meer te beseffen dat goede error handling heel belangrijk is.
 
 -----
 
-Organization of structure must generate errors, but the generated code also needs better error handling. You can generate safer code, if all dependencies of the procedure are checked and specific errors are generated if something goes wrong. You might have the option of continuing always on error, breaking on error, stopping execution on error, ask what to do in case of an error or maintain an error log. Or you could choose not to generate any error handling at all.
+Organization of structure might generate errors, but the generated code also needs better error handling. You can generate safer code, if all dependencies of the procedure are checked and specific errors are generated if something goes wrong. You might have the option of continuing always on error, breaking on error, stopping execution on error, ask what to do in case of an error or maintain an error log. Or you could choose not to generate any error handling at all.
 
 #### Experiment 0.9's Compiler Pitfalls ( Errors )
 
 - In Visual Basic 6 komt een interface als member benaderen door de compiler heen, terwijl Visual Basic 6 crasht als je de reference werkelijk benadert.
-- Pitfall: Selection List Chain Must Be Consecutive
+- Pitfall: Selection List Chain Might Be Consecutive
 - List to Select From moet een van een Dual relation zijn, omdat een ID Attribute nodig is en als een lijst zicht niet bewust is van z’n Parent, dan kent hij ook zijn ID in die Parent niet.
 - Failure when generating controls and there are no main lists.
 - Circular object creation hazard (e.g. 1<->1 relation both of which have CreateObjects) -> Out of Stack Space)

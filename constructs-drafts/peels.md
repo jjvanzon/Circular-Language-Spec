@@ -322,7 +322,7 @@ or
 
 or
 
-- Similarity in line destination must be emphasized
+- Similarity in line destination might be emphasized
 
 So don’t use shape peels… unless the reasons above weigh out. < zwaarder wegen? >
 

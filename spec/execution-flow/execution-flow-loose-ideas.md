@@ -702,7 +702,7 @@ Maybe the procedure references of execution flow procedures need to have a certa
 
 -----
 
-About the execution of non execution controlled calls. Some calls must be made before others because the result of one call is used in another call. That defines (some of) the order of precedence of calls.  
+About the execution of non execution controlled calls. Some calls might be made before others because the result of one call is used in another call. That defines (some of) the order of precedence of calls.  
 The order of the calls in a procedure is (part) determined by dependence, independent of the order the programmer gives.
 
 The programmer can change the order of things that are arbitrarily called and insert calls into the obligatory order or calls, but if it’s not so relevant, the programmer doesn’t even provide the call order. Most of the time it is not that relevant. (or is it, to what extent can I not see the requirement of the order of calls, even when its order is very important?
@@ -755,7 +755,7 @@ Calls can be managed by execution control. Execution control manages the regular
 
 But... if you pass a clause reference to an execution flow procedure the execution control CAN call the clause, but only in the context of the procedure instance that called the execution flow procedure!
 
-Execution control procedures must call clauses in the context of a *specific call* to the clause’s procedure definition.
+Execution control procedures might call clauses in the context of a *specific call* to the clause’s procedure definition.
 
 
 Declared Traversions / Constructions

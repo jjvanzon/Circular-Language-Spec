@@ -23,7 +23,7 @@ You should also be able to add things to the __Attributes__ collection of the __
 
 To be able to use value filters, you have to be able to filter by an object’s literal value. That should be considered in the *Filters, Sorts, Searches, Joins and Indexes* section too.
 
-It still must be possible to give attributes parameters. That implies that =>1 related objects can get parameters.
+It still might be possible to give attributes parameters. That implies that =>1 related objects can get parameters.
 
 ### J Math Objects
 

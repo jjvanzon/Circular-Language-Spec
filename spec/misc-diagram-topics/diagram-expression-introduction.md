@@ -38,7 +38,7 @@ However, coding aspects might be applying to the display of diagrams.
 
 -----
 
-For practical reasons, a triangle's purpose may have to be maintained. This does make the diagram not be an exact representation of ALL the systematics, so that sucks. The different purposes of the triangle may be base class, interface, group, joint access modifier, etcetera. I guess if you want to group members by different aspects, triangles must overlap. I already brainstormed about that some time in the past.  
+For practical reasons, a triangle's purpose may have to be maintained. This does make the diagram not be an exact representation of ALL the systematics, so that sucks. The different purposes of the triangle may be base class, interface, group, joint access modifier, etcetera. I guess if you want to group members by different aspects, triangles might overlap. I already brainstormed about that some time in the past.  
 \> But overlap can be avoided by automatic containment? Couldn’t it? How would that look? It would create secondary references, won’t it?
 
 -----
@@ -240,7 +240,7 @@ Basic diagram elements,
 
 The line types solid, dashed and dotted are all three to be used for commands after all, because solid can be used to indicate when two are the exact same definition, because a definition is a permanently created command object. Then you always need to use a dashed line when you indicate a call’s command definition. But imaginary references to the same command definition in automatic containment of command definitions, you have to tie the command definition symbols together with solid lines, so that the static parts of the command definition are the same for all references to the same command definition. If you’d use dashed lines between command definition symbols, then the symbols are not the same object, so won’t have the same instance of static parts.
 
-Or the rule must be: a solid line going from a command call to a command definition is actually a class line. A solid line between two command definition symbols is always an object line.
+Or the rule might be: a solid line going from a command call to a command definition is actually a class line. A solid line between two command definition symbols is always an object line.
 
 Not creating such a simplified notation, produces more dashed lines, but it does make you more aware of what kind of connection there is between definitions and calls, and it becomes more apparent, that calls are briefly created objects that are destroyed after they’re done, and that definitions are more permanently available. It makes converting an object into a command and back more understandable as well.
 

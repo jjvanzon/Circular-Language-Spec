@@ -259,12 +259,12 @@ After With detection, the part after With is parsed as a qualifier. A reference 
 After End With is detected, the original With is relieved. In with blocks it is immediately required that I can remember a stack of With blocks.  
 < Why can I not use a stack in Creator by default? >
 
-After For Each has been detected, the statement is split by In. The part before In is parsed as a qualifier, except for the first two tokens, and the part after the In is parsed. Then it is remembered on class scope, not function scope, what loop is started and what element of the loop we are at. Embedded looping I might add later. In that case a stack of loops must be remembered.
+After For Each has been detected, the statement is split by In. The part before In is parsed as a qualifier, except for the first two tokens, and the part after the In is parsed. Then it is remembered on class scope, not function scope, what loop is started and what element of the loop we are at. Embedded looping I might add later. In that case a stack of loops might be remembered.
 
 After Next detection, Parsing is actually repeated (this isn’t a perfect solution I am making) until all elements were looped through.
 
-Parsing a qualifier goes as follows. You first split the line by period ‘.’ ( Funny enough a line can be split by multiple main delimiters, or rather a detection of a statement can cause another splitting operation, that sort of overrides the splitting operation we already did. ) After splitting by period, you go by all elements from left to right. Except for the last element, they all must be an object. The last element can be an object or an attribute.  
-The first object must somehow be globally accessible. In case of With blocks, the first object is missing, but in its place comes the object remembered by the With operation. The next element must be a member object of the previous object. There are hardly any methods yet, so I really don’t have to take those into consideration much, except for the Add and Remove methods, which have to be executed if they are found along the way. Add returns an object.
+Parsing a qualifier goes as follows. You first split the line by period ‘.’ ( Funny enough a line can be split by multiple main delimiters, or rather a detection of a statement can cause another splitting operation, that sort of overrides the splitting operation we already did. ) After splitting by period, you go by all elements from left to right. Except for the last element, they all might be an object. The last element can be an object or an attribute.  
+The first object might somehow be globally accessible. In case of With blocks, the first object is missing, but in its place comes the object remembered by the With operation. The next element might be a member object of the previous object. There are hardly any methods yet, so I really don’t have to take those into consideration much, except for the Add and Remove methods, which have to be executed if they are found along the way. Add returns an object.
 
 ###### Too Much Theory For Now
 
@@ -299,7 +299,7 @@ Token build-up of the statements:
     - *In*
     - < Specifier >
         - Delegate to other function
-        - Must resolve in a list
+        - Might resolve in a list
 - Next
     - *Next*
 - End With
@@ -316,8 +316,8 @@ Token build-up of the statements:
         - *Nothing* (if Specifier 1 resolves in an object)
         - < Specifier >
             - Delegate to other function
-            - Must be object if specifier 1 is object
-            - Must be attribute if specifier 1 is attribute
+            - Might be object if specifier 1 is object
+            - Might be attribute if specifier 1 is attribute
             - Can’t be list
 - Add Call
     - Keyword: *Add*
@@ -1117,7 +1117,7 @@ End Square <=> End Procedure
 
 ###### Parameter Text Notation
 
-There are several ways to notate parameters in text code. First of all, the definition of the procedure in text code must contain a parameter list:
+There are several ways to notate parameters in text code. First of all, the definition of the procedure in text code might contain a parameter list:
 
 ```
 Procedure Do Something ( Parameter 1 : Type A, Parameter 2 : Type B, Interface A )

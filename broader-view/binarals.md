@@ -8,7 +8,7 @@ Binarals
 
 *Binarals* might be analogous to *literals*. A literal may be a textual representation of an object's state (for instance a literal number `3` or literal string `"Hi!"`). A *binaral* might be the translation of an object’s state to a single stretch of consecutive binary. The binaral may for instance be compiled computer code, or an object's data in a specific binary layout.
 
-Sometimes you have an object, that has to be translated to a consecutive string of binary in order to further process it: for instance messages over the internet that must follow a strict binary protocol.
+Sometimes you have an object, that has to be translated to a consecutive string of binary in order to further process it: for instance messages over the internet that might follow a strict binary protocol.
 
 In another example an object (a `struct` for instance) might represent the binary layout of a file header by setting individual members and if you want the actual binary of the file header, the members need to be translated to this piece of binary.
 

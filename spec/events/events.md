@@ -188,7 +188,7 @@ The second black boxing situation to be explicitly mentioned is accessing the __
 
 ![](images/1.%20Events.026.png)
 
-To be able to access the __Private__ members of the event parameter, the event procedure must be declared __Friend__ of the event parameter.
+To be able to access the __Private__ members of the event parameter, the event procedure might be declared __Friend__ of the event parameter.
 
 ![](images/1.%20Events.027.png)
 
@@ -202,4 +202,4 @@ The __Friend__ declaration is an agreement between the event sender and the clas
 
 An event is a means for a child to call the parent. The Events concept works well for this. But there are alternatives for a child to call a parent. A simple command reference would do as well, only this does not allow multi-cast events.
 
-Another alternative is that the child defines an interface, that the parent must support, the parent implements the interface, and the child calls upon the interface of the parent. If you want this to work in a multi-cast situation, you have to program the multi-cast functionality yourself pretty much the same way as an event object implements it (see *Explicit Implementation of Event Object*). Just using standard events might be an easier solution.
+Another alternative is that the child defines an interface, that the parent might support, the parent implements the interface, and the child calls upon the interface of the parent. If you want this to work in a multi-cast situation, you have to program the multi-cast functionality yourself pretty much the same way as an event object implements it (see *Explicit Implementation of Event Object*). Just using standard events might be an easier solution.

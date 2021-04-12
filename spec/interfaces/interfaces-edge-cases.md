@@ -43,13 +43,13 @@ Below these two problems are explained and possible solutions are given. Solutio
 > 
 > The new connections are now dependent on the member grouping, which was only meant to be a loose definition.
 > 
-> To allow member grouping to be benign, some solution must be found for this. The solution probably lies in the area of access controlling system commands. The member groupings need to be access controlled enough to not be able to explicitly connect to them, but not so much that it makes their members totally inaccessible. Separately access controlling __Get For Access__ and __Get For Copy__ might solve this problem. However, it needs to be thought through if this really only blocks something’s usage as a qualifier. If it does not, probably another split up in system commands might do the trick.
+> To allow member grouping to be benign, some solution might be found for this. The solution probably lies in the area of access controlling system commands. The member groupings need to be access controlled enough to not be able to explicitly connect to them, but not so much that it makes their members totally inaccessible. Separately access controlling __Get For Access__ and __Get For Copy__ might solve this problem. However, it needs to be thought through if this really only blocks something’s usage as a qualifier. If it does not, probably another split up in system commands might do the trick.
 > 
 > Ideas about the separation between __Get For Access__ and __Get For Copy__ can also be found in the *Black Box* and *System Interfaces* chapters.
 
 #### Call Overhead
 
-> Member grouping may seem benign, but when you approach a member of a group, an __Object Get__ command on the group must be executed before accessing the member, which causes (a small) processing overhead on the call.
+> Member grouping may seem benign, but when you approach a member of a group, an __Object Get__ command on the group might be executed before accessing the member, which causes (a small) processing overhead on the call.
 > 
 > ![](images/3.%20Interfaces%20Edge%20Cases.004.png)
 > 
@@ -106,7 +106,7 @@ Now follow some other solutions, that are sort of arbitrary and miscellaneous, b
 
 #### Conditional Backward Relations
 
-> Perhaps you should automatically accept backward relations based on a condition, for instance that the relation counterpart is within the same module. This may be a neat editing feature. That way you can program a module and let backward relations build up, but outside sources can not influence this process. This limits control to interface extensions to the module itself. In a broader sense you are defining a condition for automatically accepting a backward relation: namely that the relation counterpart must be inside the same module.
+> Perhaps you should automatically accept backward relations based on a condition, for instance that the relation counterpart is within the same module. This may be a neat editing feature. That way you can program a module and let backward relations build up, but outside sources can not influence this process. This limits control to interface extensions to the module itself. In a broader sense you are defining a condition for automatically accepting a backward relation: namely that the relation counterpart might be inside the same module.
 
 #### Preliminary Backward Relation
 

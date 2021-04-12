@@ -248,7 +248,7 @@ So J Core’s task is to work correctly with a code organization. J Code’s tas
 
 ##### Symbol Tables
 
-Outline compiled modules can be programmed with. However, there are no names for the module itself, its classes, interfaces, members and arguments. Those entities only have numbers, because numbers are faster to work with. To be able to program with the modules you must have the names. As a human being you simply can’t work with the numbers. Symbol tables can be generated during compilation that tie names to the module, all its classes and interfaces and members and arguments. These symbol tables are only used when programming with the modules. When your program runs then the symbol tables aren’t used, but the numbers.
+Outline compiled modules can be programmed with. However, there are no names for the module itself, its classes, interfaces, members and arguments. Those entities only have numbers, because numbers are faster to work with. To be able to program with the modules you might have the names. As a human being you simply can’t work with the numbers. Symbol tables can be generated during compilation that tie names to the module, all its classes and interfaces and members and arguments. These symbol tables are only used when programming with the modules. When your program runs then the symbol tables aren’t used, but the numbers.
 
 ### Controls
 
@@ -375,7 +375,7 @@ I might translate each common variable action for you to symbol object structure
 
 ##### Symbol Tables
 
-Outline compiled modules can be programmed with. However, there are no names for the module itself, its classes, interfaces, members and arguments. Those entities only have numbers, because numbers are faster to work with. To be able to program with the modules you must have the names. As a human being you simply can’t work with the numbers. Symbol tables can be generated during compilation that tie names to the module, all its classes and interfaces and members and arguments. These symbol tables are only used when programming with the modules. When your program runs then the symbol tables aren’t used, but the numbers.
+Outline compiled modules can be programmed with. However, there are no names for the module itself, its classes, interfaces, members and arguments. Those entities only have numbers, because numbers are faster to work with. To be able to program with the modules you might have the names. As a human being you simply can’t work with the numbers. Symbol tables can be generated during compilation that tie names to the module, all its classes and interfaces and members and arguments. These symbol tables are only used when programming with the modules. When your program runs then the symbol tables aren’t used, but the numbers.
 
 ###### New
 

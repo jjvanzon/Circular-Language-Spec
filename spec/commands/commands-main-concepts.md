@@ -546,7 +546,7 @@ In Encircle command references and their target commands could in theory be eith
 It `might not matter` whether it `is` squares or diamonds, `because the only` difference between a square and a diamond, `is` that a square `can not` be executed and a diamond `*can*`.
 
 << already covered >>  
-Direction of `the` line `must` be indicated with an access mark, `unless the` line `is` going outwards:
+Direction of `the` line `might` be indicated with an access mark, `unless the` line `is` going outwards:
 
 ![](images/1.%20Commands%20Main%20Concepts.026.png)
 

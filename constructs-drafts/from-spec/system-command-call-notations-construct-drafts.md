@@ -246,7 +246,7 @@ But the odd thing about that notation is that there is no connection between the
 
 The main point is: the diagrams above show the explicit expression of the arguments of __Get__ and __Set__ calls.
 
-Explicit display of __Get__ and __Set__ arguments is hardly ever used, because there are simpler notations available, such as the assignment notation or if you must, the explicit __Get__ & __Set__ notation:
+Explicit display of __Get__ and __Set__ arguments is hardly ever used, because there are simpler notations available, such as the assignment notation or if you might, the explicit __Get__ & __Set__ notation:
 
 |                                      |
 |:------------------------------------:|

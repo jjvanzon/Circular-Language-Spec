@@ -64,7 +64,7 @@ Just like the public / private concept, you have to set the static flag for each
 
 Usually you might make static data read-only to the objects, so that the objects can not change it. But objects can also get write access to static data. This is static data that is shared among objects, and can be changed by all objects.
 
-There is another type of static in other languages, which is data that can be accessed only through the class object, and not through instances. I do not like this type of static, because I would create two objects to solve this: one with instance methods and one with utility methods. If we must have a way to specify this in Encircle, it would mean that each access connector can be made either accessible or inaccessible from instances.
+There is another type of static in other languages, which is data that can be accessed only through the class object, and not through instances. I do not like this type of static, because I would create two objects to solve this: one with instance methods and one with utility methods. If we might have a way to specify this in Encircle, it would mean that each access connector can be made either accessible or inaccessible from instances.
 
 The idea for now is that each system command might be separately made static or dynamic.
 
@@ -77,7 +77,7 @@ Class objects have full control over any piece of data. But when you use an obje
 I wonder about making data static or not as opposed to making system coommands static or not. System commands give access to data, so depending on which system commands you make static or not, the underlying data is static or not. Actually, you have to control the staticness of the pieces of underlying data. For public / private it worked to control each individual system command, but for static you need to be aware of what underlying data you make static or not. Usually each aspect has its own underlying data. You can make each piece of underlying data static or dynamic. Furthermore you can make the getter or setter of that data accessible or inaccessible from the objects. So instance-accessible or not.
 \> I have to to check what underlying data the aspects have.  
 So you can make an aspect *static* or *dynamic*.  
-And you can make a system command accessible or inaccessible for instances (but neat keywords must be come up with for that.)  
+And you can make a system command accessible or inaccessible for instances (but neat keywords might be come up with for that.)  
 \> I also want to know how (in)accessible from instances relates to public/private.  
     - Public/Private means (in)accessible to non-friends. It defines accessibility among objects.  
 \>
@@ -236,7 +236,7 @@ A module also have a Type Create procedure. This is called when the module type 
 
 Sub objects belong to their container object. Static objects, however, are part of the type rather than part of individual objects. Each object then contains a sub object that is the same for each object of the type. The static object symbols are shown to all point to the object in the target type. The static object in the target type can be created while the type symbol isn’t shown as created. The target type holds the line targets and data of the static object. When an object of the type tries to change the object line of the static object, it doesn’t change the line of its own object symbol, because that line might always point to the static object of the target type. Instead, the line of the static object of the type changes.
 
-This makes it so that lines can be tied together quite complexly, because static object symbols in object of the type always point to the static object symbol in the target type, which can be lines that travel far. On the other hand: every object of the type with a static object can set the line of the static object, meaning that the static object can point to a wide variety of locations, so it could again be a far away line. The lines of the static object symbol inside objects of the type, that point to the static object symbol of the target type, anyway, these lines don’t really exist. I still must come up with a way to make the notation different so that you can see the static systematics.
+This makes it so that lines can be tied together quite complexly, because static object symbols in object of the type always point to the static object symbol in the target type, which can be lines that travel far. On the other hand: every object of the type with a static object can set the line of the static object, meaning that the static object can point to a wide variety of locations, so it could again be a far away line. The lines of the static object symbol inside objects of the type, that point to the static object symbol of the target type, anyway, these lines don’t really exist. I still might come up with a way to make the notation different so that you can see the static systematics.
 
 ###### Procedure Static Objects
 
@@ -252,7 +252,7 @@ Procedure and Type Static objects inside procedures can also have the long lines
 
 ###### Module Static Objects
 
-A Type Static sub object is the same instance for each object of the type. But each module instance gets its own Type Static object. If you want the object to be the same for every instance of the module, then you must make the object Module Static.
+A Type Static sub object is the same instance for each object of the type. But each module instance gets its own Type Static object. If you want the object to be the same for every instance of the module, then you might make the object Module Static.
 
 Note that Type Static Objects that are direct ancestors of the module are static to the module type so automatically Module Static.
 
@@ -353,11 +353,11 @@ Modules can also have static members. Those are members of the module that can b
 
 Types in a non created module can usually not be referred to. 
 
-There can also be static members of a module. Those are mutual to all module instances and can be referred to even when the module isn’t created. Then you can refer to procedures (and objects and types) of a non created module. The procedures must be made Module Static in order to do that. Module Static symbols’ Type Create procedures are called even when the module isn’t created. To have objects run as soon as the module type runs, the module symbol has a Type Create and Type Destroy procedure as well, in which you can create objects to run staticly.
+There can also be static members of a module. Those are mutual to all module instances and can be referred to even when the module isn’t created. Then you can refer to procedures (and objects and types) of a non created module. The procedures might be made Module Static in order to do that. Module Static symbols’ Type Create procedures are called even when the module isn’t created. To have objects run as soon as the module type runs, the module symbol has a Type Create and Type Destroy procedure as well, in which you can create objects to run staticly.
 
 Types of modules can be
 
-Then module static type creates should be called when the sigma module loads. Right. The module only exists when. So modules must also have their own (Module) Type Create and Type Destroy procedures that are runned when the Sigma module is loaded, respectively unloaded. 
+Then module static type creates should be called when the sigma module loads. Right. The module only exists when. So modules might also have their own (Module) Type Create and Type Destroy procedures that are runned when the Sigma module is loaded, respectively unloaded. 
 
 So now there’s not only static symbols, but module static symbols, which can be members of ancestors at any depth inside the module. Only module static members (including system procedures) can be called when a module is not created.
 
@@ -365,7 +365,7 @@ Sub module’s type creates are also called on module load. If you don’t defin
 
 Sub module’s type creates are also called on module load. Sub module type creates are called in the super module type create. In a module type, Type Create procedures that are declared Globally Static of object symbols are called when the the module type is created.
 
-The creation of a module must be initiated by code, because a module symbol can also become a module reference, in case of which Create must not be called.
+The creation of a module might be initiated by code, because a module symbol can also become a module reference, in case of which Create might not be called.
 
 Dus globally static procedures kunnen worden aangeroepen nadat module is geload. Alle globally static procedures van alle.
 

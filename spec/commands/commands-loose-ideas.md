@@ -206,7 +206,7 @@ Say a procedure has input objects and output objects. When you call the procedur
 
 To create a class out of the procedure you just take over all of the procedure’s objects. The procedure itself, stripped from objects, becomes a member of the type too.
 
-You can freely read and write the objects. However, the procedure must be occasionally run.
+You can freely read and write the objects. However, the procedure might be occasionally run.
 
 The benefits from making a type out of a procedure is that you can dynamically write and write input objects and read output objects, without having to run a procedure all the time.
 
@@ -397,7 +397,7 @@ Squares inside procedures are non executing clauses or procedure references. Dia
 
 ### Required and Optional Parameters
 
-As a procedure is like a type it may seem that you have full freedom regarding which objects you write and which you don’t. However, many parameters of procedures are *required* parameters. This means that you *must* write something to it before the call. Optional parameters are ones that do not necessarily need to be written before the call. Required parameters are there to on one hand ensure a parameter holds a right value. That however, could have been done by the procedure’s initializing the value itself. The main point of required parameters is that a lot of times the function of a procedure just doesn’t make sense unless you write the parameters. The programmer is made extra aware of that by making the parameter required.
+As a procedure is like a type it may seem that you have full freedom regarding which objects you write and which you don’t. However, many parameters of procedures are *required* parameters. This means that you *might* write something to it before the call. Optional parameters are ones that do not necessarily need to be written before the call. Required parameters are there to on one hand ensure a parameter holds a right value. That however, could have been done by the procedure’s initializing the value itself. The main point of required parameters is that a lot of times the function of a procedure just doesn’t make sense unless you write the parameters. The programmer is made extra aware of that by making the parameter required.
 
 In diagram code, optional parameters are denoted by displaying the word __Optional__ near the optional parameter. The other parameters are required.
 
@@ -462,7 +462,7 @@ A clause is a definition contained in a procedure:
 
 ![](images/7.%20Commands%20Ideas.028.png)
 
-This type of definition is usually not called a definition. The clause must be directly contained by a procedure. So this is not a clause:
+This type of definition is usually not called a definition. The clause might be directly contained by a procedure. So this is not a clause:
 
 ![](images/7.%20Commands%20Ideas.029.png)
 
@@ -714,7 +714,7 @@ Just before execution you’ll write arguments. Just after execution, you’ll r
 
 #### Prolog and Epilog
 
-Writing and reading arguments require things to be done just before and right after the execution. Things that must be done just before execution are called the *prolog* of the execution. Things that must be done just after the execution are called the *epilog*.
+Writing and reading arguments require things to be done just before and right after the execution. Things that might be done just before execution are called the *prolog* of the execution. Things that might be done just after the execution are called the *epilog*.
 
 Writing arguments takes place in the prolog and reading arguments takes place in the epilog.
 
@@ -728,7 +728,7 @@ An assignment call:
 
 *consults* the argument to *write*: *reads* the argument to *write*.
 
-Assignment of arguments simply *must* take place in the prolog, even though they require reading the arguments.
+Assignment of arguments simply *might* take place in the prolog, even though they require reading the arguments.
 
 Assignment procedures are fundamental procedures of the Symbol Language and behave much different from other procedures.
 

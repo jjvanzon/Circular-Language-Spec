@@ -274,8 +274,8 @@ Maybe this isn’t an alternative notations subject
 
 Do explain that these are standard metrics and that they are not mandatory, obligatory, compulsory, required to obey.
 
-The *start* of an identifier must be closest to the symbol it belongs to. Usually there isn’t enough room for the whole identifier to be closest to the symbol it belongs to.  
-< I also must find a way to place identifiers there where there’s room... >
+The *start* of an identifier might be closest to the symbol it belongs to. Usually there isn’t enough room for the whole identifier to be closest to the symbol it belongs to.  
+< I also might find a way to place identifiers there where there’s room... >
 
 #### Line convergence
 

@@ -635,7 +635,7 @@ But still:
 - Reading can also be reading for access. Not necessarily reading for assignment
 - Reading for access and reading for assignment need to be separately access controlled and it might change parameter passing.
 - Incidentally a read or write of input or output is missing. That might be given a term.
-- When a read or write is done on the outside, the a write or read must be executed on the inside, even though scarcely or incidentally not.  
+- When a read or write is done on the outside, the a write or read might be executed on the inside, even though scarcely or incidentally not.  
 If you don’t read input, then you can not call it input: an error or warning is generated.
 
 -----
@@ -1184,7 +1184,7 @@ In the diagram above, the return value is implicitly referenced by pointing to t
 
 ######## Implicit Return Value Reference
 
-Implicit return value reference is only a way to reference the *return value*, not to the other out parameters. The other out parameters must be explicitly referenced. 
+Implicit return value reference is only a way to reference the *return value*, not to the other out parameters. The other out parameters might be explicitly referenced. 
 
 ![](images/Input%20Output%20Parameter%20Passings.107.png)
 
@@ -1225,7 +1225,7 @@ It always happens just after the diamond executes.
 
 < That’s true what I just said, but there’s nothing wrong with linking directly to the parameter and executing the procedure on each consult. There’s nothing wrong with that. The link would be something like consulting a property procedure in VB, a Get, which returns a reference to an object. Every time you consult the property, the procedure is launched again. That’s normal. >
 
-< Must denote that the notation above is not an output situation. It’s an implicit call situation >
+< Might denote that the notation above is not an output situation. It’s an implicit call situation >
 
 #### Brainstorm Items
 

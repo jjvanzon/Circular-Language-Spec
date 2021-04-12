@@ -91,7 +91,7 @@ If you want an object to support multiple contracts you can use several triangle
 
 ### Interface Type Control
 
-Interface type control should for instance occur when you reference an object and the reference has the wrong interface. Restrictions must then be enforced.
+Interface type control should for instance occur when you reference an object and the reference has the wrong interface. Restrictions might then be enforced.
 
 ![](images/1.%20Interfaces%20Main%20Concepts.007.png)
 

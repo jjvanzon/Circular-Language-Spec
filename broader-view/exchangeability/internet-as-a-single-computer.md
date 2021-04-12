@@ -115,11 +115,11 @@ Usage of the same data may cause problems. For instance: when you use a value mu
 
 But perhaps problems with multiple users accessing the same data may also be solved by casting events when data changes, and being able to reject a change when busy with data. I’m not sure yet if that can offer any improvement to the locking scheme, but these issues might be covered in the article *Events*.
 
-Each user has his own undo history, so that he can undo the steps he took. But if somebody else changes the same data, the first user’s change can’t be undone anymore. So the option to undo the change falls away. A solution for that needs to be found. Perhaps it’s just that: the option to undo the change falls away. The user must be notified about the change, though, and may be able to reject the change. These problems need to be discussed in the article *Undo*.
+Each user has his own undo history, so that he can undo the steps he took. But if somebody else changes the same data, the first user’s change can’t be undone anymore. So the option to undo the change falls away. A solution for that needs to be found. Perhaps it’s just that: the option to undo the change falls away. The user might be notified about the change, though, and may be able to reject the change. These problems need to be discussed in the article *Undo*.
 
 When people are working on exactly the same piece of data at the same time, it would only be practical if these people would actually be communicating about their changes in some form, I guess... but I’m not sure.
 
-I have a gut feeling that automatic execution order may solve concurrency issues mathematically, by determining which things can be executed in parallel, and which things must be executed serially, independent of the ‘earthly’ logic of the methods, but approaching it like a mathematical equation consisting of references to objects and procedure calls. Multiple methods interweave to become a single method. I'm just not sure yet how, but I just have a hunch here. Execution order is fixed in normal programming languages, because it is text, in which an order is an inevitable fact, that you cannot go around. A diagram however does not have a specific order, so the execution order may be determined based on the correlation between individual elements.  
+I have a gut feeling that automatic execution order may solve concurrency issues mathematically, by determining which things can be executed in parallel, and which things might be executed serially, independent of the ‘earthly’ logic of the methods, but approaching it like a mathematical equation consisting of references to objects and procedure calls. Multiple methods interweave to become a single method. I'm just not sure yet how, but I just have a hunch here. Execution order is fixed in normal programming languages, because it is text, in which an order is an inevitable fact, that you cannot go around. A diagram however does not have a specific order, so the execution order may be determined based on the correlation between individual elements.  
 Perhaps this can prevent locking and waiting, and just make a single sequence out of two methods instead of two sequences waiting on each other, and eventually giving up.
 
 Unfortunately it is not clear yet which of the concepts might best solve control of concurrent use. I would prefer a scheme where a programmer does not even need to consider the problems around concurrent use anymore. I might have to extend the explanations here after these specific concepts are better worked out.
@@ -305,7 +305,7 @@ Bits of work are delegated to computers that take part in the parallel processin
 Parallel processing can not be applied in every situation. The computation performed has to lend itself for it.  
 The computation should not require any sequentiality. In many situations things just need to happen one thing after another, in case of which it does not make as much sense to spread the work over multiple machines. This is exactly where you can’t apply parallel processing. For things that cannot go parallelly, you can’t use parallel processing at all.
 
-If the results from multiple machines should combined before moving on to a next step, the waiting until the computers are all done should be worth it. These points at which there must be waited until all the results are gathered, are also called points of sequentiality.
+If the results from multiple machines should combined before moving on to a next step, the waiting until the computers are all done should be worth it. These points at which there might be waited until all the results are gathered, are also called points of sequentiality.
 
 It would also be nice if the delegated computations do not have to be done synchronously. That means, that there is no requirement for waiting until a computer is done at all. So no point of sequentiality even follows.
 
@@ -315,7 +315,7 @@ I have plans to make something, that automatically can determine the optimal exe
 
 Parallel processing is most effective when huge amounts of data need to be processed, that don’t have to be processed in a particular order.
 
-Even though you spread the threads, you still have to transport the data that is processed in those threads to the computer on which the thread is running. All data has to be communicated over the network. All the data to process, and all the process results have to be transferred over the network. If the computation is much harder than the transportation of data, than it might be worth it to parallel process it. Or at least, there must be some sort of viable ratio to it.
+Even though you spread the threads, you still have to transport the data that is processed in those threads to the computer on which the thread is running. All data has to be communicated over the network. All the data to process, and all the process results have to be transferred over the network. If the computation is much harder than the transportation of data, than it might be worth it to parallel process it. Or at least, there might be some sort of viable ratio to it.
 
 There should be a central host of the parallel process. This host manages the delegation of work to the different computers.
 
@@ -376,19 +376,19 @@ The backup machine concept is also effective, in cases where a computer or disk 
 
 ### Implications for other concepts
 
-Having the internet function as a single computer can have implications for other concepts. In each concept it must be considered how it is applied under the principle *internet as a single computer*. It’s not a fundamental principle for nothing. But I am sure that I might come up with a solution for it in each of those cases. I might not cover all concepts here. The current article adequately describes the idea behind internet as a single computer and how the main problems around that are solved. However, I might cover the concept of Collection here, just to demonstrate. 
+Having the internet function as a single computer can have implications for other concepts. In each concept it might be considered how it is applied under the principle *internet as a single computer*. It’s not a fundamental principle for nothing. But I am sure that I might come up with a solution for it in each of those cases. I might not cover all concepts here. The current article adequately describes the idea behind internet as a single computer and how the main problems around that are solved. However, I might cover the concept of Collection here, just to demonstrate. 
 
 #### Collection
 
 The *Collection* concepts make is possible to query for objects as if Encircle were a relational database. In relational database, all objects of a certain class are stored in one table in a single database. In Encircle the objects of a class can be spread all around the internet. This becomes a problem, because you can't search the whole internet for objects.
 
-If you want to query the whole class, an index must be hosted somewhere, that is simply a list of pointers pointing to all the objects of that class that are scattered around the earth. In that case, the objects of that class are obliged to always register themselves in that index.
+If you want to query the whole class, an index might be hosted somewhere, that is simply a list of pointers pointing to all the objects of that class that are scattered around the earth. In that case, the objects of that class are obliged to always register themselves in that index.
 
-But the real solution is to accept you might no longer be querying the whole class of objects. You might be querying objects from a specific collection. You don’t have a central database, so not all objects of the same class might be centrally registered. The objects of a class are spread all around the world. This may blow the socks off some relational database purists. These people usually insist, that when selecting objects from a table, you are querying the whole class. So the table must have a singular name, not plural, because it references a class, not a collection. From now on you are not querying a class: you’re querying a collection, which is a resource that contains a *selection* of references to objects of a certain class. This collection *might* represent all the objects on the internet of this class, but it may very well not be. So you’re querying a collection, not a class, so for all of you that insist table names should get singular names, table names might usually be *plural* again. Believe it or not, there are internet forums full of people fighting about that.
+But the real solution is to accept you might no longer be querying the whole class of objects. You might be querying objects from a specific collection. You don’t have a central database, so not all objects of the same class might be centrally registered. The objects of a class are spread all around the world. This may blow the socks off some relational database purists. These people usually insist, that when selecting objects from a table, you are querying the whole class. So the table might have a singular name, not plural, because it references a class, not a collection. From now on you are not querying a class: you’re querying a collection, which is a resource that contains a *selection* of references to objects of a certain class. This collection *might* represent all the objects on the internet of this class, but it may very well not be. So you’re querying a collection, not a class, so for all of you that insist table names should get singular names, table names might usually be *plural* again. Believe it or not, there are internet forums full of people fighting about that.
 
 In the future you can also query a list of objects that have different classes. If the different classes have mutual members, you can set criteria for these members. When objects of different classes have an interface in common, they have mutual members. If you select objects setting criteria for attributes, and an object doesn’t even have this attribute, the object won’t be part of the selection at all.
 
-It’s all up to the discretion of the people designing the system, if they are going to have a list of object that have an arbitrary class, a list of object that have at least one specific interface in common, a list of object that can only have a limited set of classes, or objects of exactly the same class. You can set this for the collection your are publishing: a programmer / system designer can set whether the class is fixed or not, or whether the objects added to the collection must at least implement a certain interface, or the objects in the collection can only have particular classes.
+It’s all up to the discretion of the people designing the system, if they are going to have a list of object that have an arbitrary class, a list of object that have at least one specific interface in common, a list of object that can only have a limited set of classes, or objects of exactly the same class. You can set this for the collection your are publishing: a programmer / system designer can set whether the class is fixed or not, or whether the objects added to the collection might at least implement a certain interface, or the objects in the collection can only have particular classes.
 
 ### Integration Modules
 
@@ -474,7 +474,7 @@ There are many concepts that need to work together in order to achieve this:
 
 Other concepts do enrich the landscape of the internet, but are not requirements for making the internet work as a single computer.
 
-In each concept it must be considered how it is applied when the internet needs to function as a single computer.
+In each concept it might be considered how it is applied when the internet needs to function as a single computer.
 
 ### Loose Ideas
 

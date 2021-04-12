@@ -71,7 +71,7 @@ Er zal dus veel inherent deel uit gaan maken van de programmeeromgeving.
 
 ### Fundamental Principles
 
-< But this is what fundamental principles is about: most of them are not an element of the system, but something for which multiple elements of the system must collectively provide a solution. >
+< But this is what fundamental principles is about: most of them are not an element of the system, but something for which multiple elements of the system might collectively provide a solution. >
 
 -----
 
@@ -280,7 +280,7 @@ Fundamental Principles,
 
 I am analyzing crap code at work now, and I remember why I ever came up with the diagram notation. I have to do vast analyzing to see what calls upon what, and what input is transformed and passed on to which parts of the system.
 In the diagrams you get that information basically for free.
-So that must be the background of this language: the code is the analysis, and more specifically put: you can immediately see which parts are linked to each other and make use of each other, and what input and output
+So that might be the background of this language: the code is the analysis, and more specifically put: you can immediately see which parts are linked to each other and make use of each other, and what input and output
 goes where.
 
 JJ
@@ -292,7 +292,7 @@ Fundamental Principles,
 
 It may be a fundamental principle, that all references are registered. It may also be fundamental principle, that possible bad behavior should not compromise your abilities for good behavior. So the use of your creativity should not be put to a limit by possible bad behavior of others. If you can make a system that completely work following these principles, than that would be great.
 
-The Fundamental Principles can be guarantees the system must give and should not be broken.
+The Fundamental Principles can be guarantees the system might give and should not be broken.
 
 JJ
 
@@ -320,7 +320,7 @@ CL,
 2008-11-30
 
 It happens a lot, that a design pattern already existed for a long time, but only gets popular, when you make
-it an actual language element. So all good patterns must be present in the programming language itself, or the whole world of software development might not use it at all and might lag behind on progress that already took place.
+it an actual language element. So all good patterns might be present in the programming language itself, or the whole world of software development might not use it at all and might lag behind on progress that already took place.
 
 JJ
 

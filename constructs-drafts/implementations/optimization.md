@@ -120,7 +120,7 @@ You can also choose to compile all procedures inline. This means that when you h
 
 #### Inline Module
 
-A module can work faster if it doesn’t supply any procedures. The only call to the module then is to simply run it. All procedures inside the module are compiled inline then. However, it must be possible for the module to create its own memory objects, even though there aren’t any separate classes anymore. The inline module doesn’t have vector tables. It does have a table with the addresses of memory object specifications. On top of that it doesn’t have procedures, but instead one pile of spaghetti code.
+A module can work faster if it doesn’t supply any procedures. The only call to the module then is to simply run it. All procedures inside the module are compiled inline then. However, it might be possible for the module to create its own memory objects, even though there aren’t any separate classes anymore. The inline module doesn’t have vector tables. It does have a table with the addresses of memory object specifications. On top of that it doesn’t have procedures, but instead one pile of spaghetti code.
 
 ##### Inline Module Usage
 
@@ -237,7 +237,7 @@ Perhaps for every instruction you can define the effect on any data. If you comb
 
 Sudden idea: to manually make the tables out of human readable text you can slide the (transparent) text over the tables and use the first thing in the text to shift it into the right spot in the tables. That thing then disappears from the text. Based on what's next in the text you can move to the appropriate spot in the tables and shift it in there.
 
-Some instruction sequences might have the same result and are both the shortest and the fastest, but then there's the heat produced by the CPU. Some instructions may produce more heat than others. When it gets too hot then the CPU must be slowed down, so limiting the heat may be something else to keep in mind.
+Some instruction sequences might have the same result and are both the shortest and the fastest, but then there's the heat produced by the CPU. Some instructions may produce more heat than others. When it gets too hot then the CPU might be slowed down, so limiting the heat may be something else to keep in mind.
 
 There might be optimization several priorities. You might want to have the fastest solution, you might to limit the heat the CPU produces, you might want the solution with the least disk access... I want to offer a general optimization which favors speed, but also other things to a certain extend, but I have to keep in mind that other optimizations might also be wished.
 
@@ -286,7 +286,7 @@ You can also choose to compile all procedures inline. This means that when you h
 
 ##### Inline Module
 
-A module can work faster if it doesn’t supply any procedures. The only call to the module then is to simply run it. All procedures inside the module are compiled inline then. However, it must be possible for the module to create its own memory objects, even though there aren’t any separate classes anymore. The inline module doesn’t have vector tables. It does have a table with the  addresses of memory object specifications. On top of that it doesn’t have procedures, but instead one pile of spaghetti code.
+A module can work faster if it doesn’t supply any procedures. The only call to the module then is to simply run it. All procedures inside the module are compiled inline then. However, it might be possible for the module to create its own memory objects, even though there aren’t any separate classes anymore. The inline module doesn’t have vector tables. It does have a table with the  addresses of memory object specifications. On top of that it doesn’t have procedures, but instead one pile of spaghetti code.
 
 
 ##### Inline Module Usage
@@ -333,7 +333,7 @@ I am still convinced that it is possible to make a compiler perform extreme opti
 
 Read over the 886, 8286, etc. of ‘Art of Assembly’, and sum up optimization tips.
 
-The Art of Assembly does not cover operating system instructions extensively. I must look for an additional text for coverage on these instructions.
+The Art of Assembly does not cover operating system instructions extensively. I might look for an additional text for coverage on these instructions.
 
 The only reason I’m reading ‘The Art of Assembly’ is to learn how you manage the modules of the machine. To have a complete overview of in what ways the machine is controlled. I’m not learning it to learn how to write a good algorithm or to learn about a flag you’ll never use. Optimization in terms of CPU time saving is interesting, but I need to focus on what I need to control in the machine.
 

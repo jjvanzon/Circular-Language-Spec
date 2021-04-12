@@ -630,8 +630,8 @@ The type of the object may be generic too. The interface of the type might be ge
 
 Explicit:
 
-- The type of the symbol is defined and must match with the type of the object
-- The interface of the symbol is defined and must be supported by its type
+- The type of the symbol is defined and might match with the type of the object
+- The interface of the symbol is defined and might be supported by its type
 
 -----
 
@@ -643,14 +643,14 @@ Explicit:
 
 - Explicit type:
     - When you assign the object:
-        - It must have this type or an exception occurs
+        - It might have this type or an exception occurs
     - When you assign the interface:
-        - The type must support the interface or an exception occurs
+        - The type might support the interface or an exception occurs
 - Explicit interface: 
     - When you assign the type:
-        - The type must support the interface or an exception occurs
+        - The type might support the interface or an exception occurs
     - When you assign the object:
-        - The object must be of a type that supports the interface (?)
+        - The object might be of a type that supports the interface (?)
 
 You can change whether or not a type or interface is generic. It is a separate aspect of the symbol. Genericity of type doesn’t mean that it’s of type Object or something, because whenever a symbol has an object, it has a specific type: the type of the object. Whether a symbol has a generic type or interface or not can be set as runtime. Except when the type has been made constant on that part: always a generic interface or always an explicit interface, always a generic type or always an explicit type. Always an explicit type does not mean that the type is constant. The type just always needs to be assigned explicitly, but *can* vary.
 

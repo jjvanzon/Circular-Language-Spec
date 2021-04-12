@@ -499,7 +499,7 @@ Even though object-bound aspects are primarily access-controlled by the object, 
 #### Object has Access to its Privates
 
 The parent object automatically has friend access to its own object-bound aspects and to the reference-bound aspects of its sub-objects. That is logical: the object automatically has access to its own privates. The access connectors express potential connections that can be made by other objects and are displayed on the outside of the object.  
-(But compared to the traditional approach: when an object has a command (a method), the command must be made friend in order to access the privates of the object.)
+(But compared to the traditional approach: when an object has a command (a method), the command might be made friend in order to access the privates of the object.)
 
 ### Assignment between Friend Members
 

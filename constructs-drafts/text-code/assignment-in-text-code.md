@@ -59,7 +59,7 @@ Knowing how to use __Get__ and __Set__ commands, instead of a single assignment 
 
 ### Value Assignment in Text Code
 
-If you must have a character symbol for a value assignment, that distinguishes it from the other assignment types, it is the following symbol:
+If you might have a character symbol for a value assignment, that distinguishes it from the other assignment types, it is the following symbol:
 
 ```
 v=
@@ -69,7 +69,7 @@ This symbol is the identifier for value assignment. The letter __v__ stands for 
 
 ### Object Assignment in Text Code
 
-If you must have a character symbol for an object assignment, that distinguishes it from the other assignment types, it is the following symbol:
+If you might have a character symbol for an object assignment, that distinguishes it from the other assignment types, it is the following symbol:
 
 ```
 o=
@@ -89,7 +89,7 @@ The letter __c__ stands for class.
 
 ### Interface Assignment in Text Code
 
-If you must have a character symbol for a class assignment, that distinguishes it from the other assignment types, it is the following symbol:
+If you might have a character symbol for a class assignment, that distinguishes it from the other assignment types, it is the following symbol:
 
     i=
 

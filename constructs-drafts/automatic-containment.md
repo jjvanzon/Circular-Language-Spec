@@ -62,7 +62,7 @@ To be able to work out the idea, some concepts need to be ignored first and reco
 
 I am working out the idea here as I go along. The explanations may need to be redone in the future.
 
-It must be mentioned, that the method of automatic containment described here, applies to unary references, and not to objects referring to each other in a dual relation. The notation for dual relations, and the notation of automatic containment described here, just *do not match* yet, unfortunately. In the future it must be further worked out how to best turn them into a single notation.
+It might be mentioned, that the method of automatic containment described here, applies to unary references, and not to objects referring to each other in a dual relation. The notation for dual relations, and the notation of automatic containment described here, just *do not match* yet, unfortunately. In the future it might be further worked out how to best turn them into a single notation.
 
 ### A slice of referential structure
 
@@ -1216,7 +1216,7 @@ I mention this separately here, because you won’t see this notation very often
 
 -----
 
-< Must explain how the children inside parents, that are the same object, have the same line targets. Or the children inside diamonds that are the same execution. >
+< Might explain how the children inside parents, that are the same object, have the same line targets. Or the children inside diamonds that are the same execution. >
 
 ### More Ideas
 
@@ -1231,7 +1231,7 @@ JJ
 
 Formerly in the Relations chapter,
 
-It `must` be mentioned, that `the*` method of *automatic containment* applies to unidirectional references, and `just` *does `not*` match* yet with `the*` notation for relationships. In `the*` future it `must` be further worked out how to `best` turn them into a single notation.
+It `might` be mentioned, that `the*` method of *automatic containment* applies to unidirectional references, and `just` *does `not*` match* yet with `the*` notation for relationships. In `the*` future it `might` be further worked out how to `best` turn them into a single notation.
 
 JJ
 

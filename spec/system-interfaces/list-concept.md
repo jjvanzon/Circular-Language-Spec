@@ -20,21 +20,21 @@ The differences between the two is in the way the sub-objects are controlled.
 
 First of all the intention with the normal object is that the amount of members is constant. The intention with the list is that the amount of objects in it is variable. But if nothing is controlled, the object’s amount of members can also freely change.
 
-What is special about a list is that you can control the aspects of multiple objects at the same time: you set the rules that all the objects inside the list must comply with.
+What is special about a list is that you can control the aspects of multiple objects at the same time: you set the rules that all the objects inside the list might comply with.
 
-This basically means that you can collectively set the aspects of the objects. The most basic example is that you set the class for the list, and then all the objects inside the list must be of that class.
+This basically means that you can collectively set the aspects of the objects. The most basic example is that you set the class for the list, and then all the objects inside the list might be of that class.
 
 ![](images/6.%20List%20Concept.003.png)
 
 ![](images/6.%20List%20Concept.004.png)
 
-You can also set the interface for the list, and then all objects inside the list must either have that exact interface or support that interface.
+You can also set the interface for the list, and then all objects inside the list might either have that exact interface or support that interface.
 
 ![](images/6.%20List%20Concept.005.png)
 
 The set of aspects, system commands, connectors, connections, etcetera of a list is the same as that of a normal item, so you can control all aspects of the list items.
 
-A list is an object like any other object. There can several classes of lists: a stack, a linked list, a flat list, etcetera. List objects can also for instance inherit from each other. To set the list class of the list object itself can not have the same notation as setting which class the list *items* must have. So you can not use this notation:
+A list is an object like any other object. There can several classes of lists: a stack, a linked list, a flat list, etcetera. List objects can also for instance inherit from each other. To set the list class of the list object itself can not have the same notation as setting which class the list *items* might have. So you can not use this notation:
 
 ![](images/6.%20List%20Concept.003.png)
 

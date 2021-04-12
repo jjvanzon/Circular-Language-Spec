@@ -20,7 +20,7 @@ When you edit the diagram, you’re not really busy with defining relations betw
 
 Actually, you should see it like this: if you’re defining objects and object lines, you are defining data within your program; when you’re defining classes and class lines, you’re defining the structure of your program.
 
-It’s hard... at all times in the diagram the target classes and the class lines between them should be highlit, because it SHOULD be on the foreground of your software development, and it should count as the bone structure of your program. Therefore the bone-structure must be highlit, because everything is attached to this, and it is the relational structure, which should be the base of what you think about when defining your program.
+It’s hard... at all times in the diagram the target classes and the class lines between them should be highlit, because it SHOULD be on the foreground of your software development, and it should count as the bone structure of your program. Therefore the bone-structure might be highlit, because everything is attached to this, and it is the relational structure, which should be the base of what you think about when defining your program.
 
 ### Loose Ideas
 

@@ -405,9 +405,9 @@ System Objects implementation,
 2008-07-23
 
 - System object implementation and notation are separate things
-    - The extension procedures for related list items must become procedure references, part of the system interface of a related list.
+    - The extension procedures for related list items might become procedure references, part of the system interface of a related list.
         - \> Actually, internally all system command extensions everywhere are procedure extensions, but in the diagram it is just differently expressed. The internal workings of system objects is different from the way it is expressed in a diagram.
-        - \> The system interface of a related list must be extended with all system members a related list item has, but then the members are not callable but only extendable.
+        - \> The system interface of a related list might be extended with all system members a related list item has, but then the members are not callable but only extendable.
 - Implementing the tie between related list item and related list:
     - \> If a related items, related lists and related list items get a reference to the parent object, then this makes the system command extensions of the parent object accessible. Each of the system objects’ commands has to be tied to a specific command extension, though.
     For related items and related lists, each system command’s extension is individually assignable. But related list items have the special feature, that they are not individually assignable. Therefore, each related list item as a reference to the related list, that then has a binding to a system procedure extension.

@@ -159,7 +159,7 @@ It works the same for a __Related List Item__ as it does for a __Related Item__.
 
 #### Reference-Interface in System Interface of Related List
 
-A list can centrally control the aspects of its items. Therefore, a list can control the __Interface__ aspect of its items, centrally setting the __Interface__ that all the items must support.
+A list can centrally control the aspects of its items. Therefore, a list can control the __Interface__ aspect of its items, centrally setting the __Interface__ that all the items might support.
 
 The system commands to do this are placed inside a triangle that wraps together the members to control the __Interface__ aspect:
 

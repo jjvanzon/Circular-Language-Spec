@@ -134,7 +134,7 @@ The __For__ command takes a command reference to the __Initialization__ procedur
 
 The __Condition__ is usually passed to the __For__ command as a reference to a reference to a __Boolean__. It needs to be a reference to a reference, because the condition needs to be recalculated every time it is consulted. Why making it a reference to a reference solves that problem is explained in the second last paragraph of the article *Execution Flow*, part of which I repeat here:
 
-In a conditional *loop*, the condition must be re-evaluated on every repetition of the loop. Recalculation of the condition, every time the condition is consulted, can be established by making the condition a reference to a reference to a __Boolean__, rather than a reference to a specific __Boolean__ object.  
+In a conditional *loop*, the condition might be re-evaluated on every repetition of the loop. Recalculation of the condition, every time the condition is consulted, can be established by making the condition a reference to a reference to a __Boolean__, rather than a reference to a specific __Boolean__ object.  
 So the condition argument refers to a *reference*.  
 The reference, that is referred to, can perform a calculation before it returns the __Boolean__. It performs the calculation every time the reference is consulted. How a reference can recalculate the value of an object whenever it is retrieved, is explained by the article *System Interface*.
 
@@ -199,11 +199,11 @@ The __While__ loop keeps repeating the same code as long as a __Condition__ is _
 
 The __Condition__ is usually passed to the __While__ command as a reference to a reference to a __Boolean__. It needs to be a reference to a reference, because the condition needs to be recalculated every time it is consulted. Why making it a reference to a reference solves that problem is explained in the second last paragraph of the article *Execution Flow*, part of which I repeat here:
 
-In a conditional *loop*, the condition must be re-evaluated on every repetition of the loop. Recalculation of the condition, every time the condition is consulted, can be established by making the condition a reference to a reference to a __Boolean__, rather than a reference to a specific __Boolean__ object.  
+In a conditional *loop*, the condition might be re-evaluated on every repetition of the loop. Recalculation of the condition, every time the condition is consulted, can be established by making the condition a reference to a reference to a __Boolean__, rather than a reference to a specific __Boolean__ object.  
 So the condition argument refers to a *reference*.  
 The reference, that is referred to, can perform a calculation before it returns the __Boolean__. It performs the calculation every time the reference is consulted. How a reference can recalculate the value of an object whenever it is retrieved, is explained by the article *System Interface*.
 
-It needs to be said, that you are not obliged to pass a reference to a reference to a __Boolean__. It’s just that, in order to have a formula be reevaluated on every consult of the __Boolean__ it must be a reference to a reference. The __Boolean__ can also be just a reference to a __Boolean__. Then the __Boolean__ has to change by some external force. You can also make it a fixed __Boolean__ value, but then the loop might either not start at all or not end unless you explicitly call __Exit Loop__, based on some other condition (see *Exit Loop*).
+It needs to be said, that you are not obliged to pass a reference to a reference to a __Boolean__. It’s just that, in order to have a formula be reevaluated on every consult of the __Boolean__ it might be a reference to a reference. The __Boolean__ can also be just a reference to a __Boolean__. Then the __Boolean__ has to change by some external force. You can also make it a fixed __Boolean__ value, but then the loop might either not start at all or not end unless you explicitly call __Exit Loop__, based on some other condition (see *Exit Loop*).
 
 Next to the __Condition__, the __While__ loop is passed a reference to a command as a parameter. The parameter is called __Loop__. This command is called repeatedly as long as the __Condition__ returns __True__. 
 

@@ -11,7 +11,7 @@ Loose Ideas
 Inheritance,  
 2010-07-15
 
-\> The following example is wrong, because each layer in between must also become a specialized version.
+\> The following example is wrong, because each layer in between might also become a specialized version.
 
 Deeper Additional Members in an Object - List - Object – Object Situation:
 

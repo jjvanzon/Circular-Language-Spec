@@ -86,7 +86,7 @@ Now you can add any additional members to __A . B__:
 
 ### Even Deeper Member Addition
 
-However, if the additional member must be added to an even deeper level, each level must be given a specialized version.
+However, if the additional member might be added to an even deeper level, each level might be given a specialized version.
 
 Take the following structure:
 

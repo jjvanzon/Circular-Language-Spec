@@ -134,7 +134,7 @@ I guess I have made clear, that it is important to understand that CItem objects
 
 ### About The Layers Up Until Now
 
-The first layer is the absolute minimum Encircle must contain. In the second layer you build up a generic version of it, but it’s still described in a way, you couldn’t describe it in Encircle itself. The third layer is programmed in a way, you could program it in an Encircle programming environment. So this layer could be reprogrammed in an Encircle programming environment.
+The first layer is the absolute minimum Encircle might contain. In the second layer you build up a generic version of it, but it’s still described in a way, you couldn’t describe it in Encircle itself. The third layer is programmed in a way, you could program it in an Encircle programming environment. So this layer could be reprogrammed in an Encircle programming environment.
 
 The bottom layers might only contain the absolute base of the systematics of Encircle: Encircle in its most primitive form, just enough to redescribe it. All the extensions are added to the top layer, which can be reprogrammed within the Encircle programming environment.
 
