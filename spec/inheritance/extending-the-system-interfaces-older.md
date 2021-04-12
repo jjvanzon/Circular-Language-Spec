@@ -230,7 +230,7 @@ Theoretically it does not matter whether extension procedures are defined by for
 
 ### Obsolete Members: Initialize Item & Terminate Item
 
-In an earlier experiment, version 2.0, a related list also had the extension procedures __Initialize Item__ and __Terminate Item__. In experiment 3, __Initialize Item__ might be replaced by __Add  .  Post-Extend__ and __Terminate Item__ is replaced by __Remove  .  Pre-Extend__.
+In an earlier experiment, version 2.0, a related list also had the extension procedures __Initialize Item__ and __Terminate Item__. In experiment 3.0, __Initialize Item__ might be replaced by __Add  .  Post-Extend__ and __Terminate Item__ is replaced by __Remove  .  Pre-Extend__.
 
 ### Extension of System Interfaces in a Diagram
 

@@ -14,21 +14,21 @@ But this principle dates out of a time when Encircle did not have extensible con
 
 Optionality mostly caused problems in experiment 0.9 because concepts were required by other concepts and the dependency of concepts was not worked out well, and sometimes something used by one concept, was missing in the generated code, because a dependency concept was turned off, because it was optional. When code was generated, the code was not compilable, because there were references to things that were turned off.
 
-For experiment 3 you can only give the guarantee of ‘everything only’ to the *code base*. Nothing is optional in the *code base*. But every concept *is* optional, yet the concepts have a dependency structure. When you turn on a concept, that requires another concept, the dependency concept is implicitly turned on as well. Implicitly turned on concepts could be turned off again as soon as they are not required anymore.
+For experiment 3.0 you can only give the guarantee of ‘everything only’ to the *code base*. Nothing is optional in the *code base*. But every concept *is* optional, yet the concepts have a dependency structure. When you turn on a concept, that requires another concept, the dependency concept is implicitly turned on as well. Implicitly turned on concepts could be turned off again as soon as they are not required anymore.
 
 When you turn the concepts into separate modules, that have a dependency, optionality of concepts becomes more manageable. Everything Only only counts for the code base now. But it is still a defendable concept that can prove its use.
 
 -----
 
-In experiment 3, in which the system is extensible with concepts, a lot more concepts are created than in previous versions. In experiment 0.9 *all* concepts were there, all of them could be turned on or off independently,  but none could easily be added.
+In experiment 3.0, in which the system is extensible with concepts, a lot more concepts are created than in previous versions. In experiment 0.9 *all* concepts were there, all of them could be turned on or off independently,  but none could easily be added.
 
 An old argument for Everything Only in experiment 0.9:
 
 - Why would I not want to have everything in it? Wouldn't I miss something at some unsuspected point, where I'd go: gee, did I optimize that one out?
 
-In experiment 3 it might be easy to turn on extra concepts later, so it is not a valid argument anymore, that you might miss something at some unsuspected point. In experiment 0.9 the concepts could not easily be turned on later, because they were embedded in the code generator.
+In experiment 3.0 it might be easy to turn on extra concepts later, so it is not a valid argument anymore, that you might miss something at some unsuspected point. In experiment 0.9 the concepts could not easily be turned on later, because they were embedded in the code generator.
 
-In the first version of Encircle, the principle of Everything Only might have caused performance problems, because all concepts would then be turned on at once, but in experiment 3 any *concept might __be__* optional, so this performance problem does not apply anymore.
+In the first version of Encircle, the principle of Everything Only might have caused performance problems, because all concepts would then be turned on at once, but in experiment 3.0 any *concept might __be__* optional, so this performance problem does not apply anymore.
 
 ### Loose Ideas
 

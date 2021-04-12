@@ -38,4 +38,4 @@ This sub-folder represents a category of principles that might be called the *ac
 
 - ### C++ / C\#
 
-    - This principle is the idea, that the base of the code for Encircle might initially be programmed using C++ or C#. It is called an achievability principle, because originally an experiment for a computer language was written in VB6 and this may have created a performance barrier. Experiment 2.0 was based on C++. Experiment 3 might be based on C# and .NET.
+    - This principle is the idea, that the base of the code for Encircle might initially be programmed using C++ or C#. It is called an achievability principle, because originally an experiment for a computer language was written in VB6 and this may have created a performance barrier. Experiment 2.0 was based on C++. Experiment 3.0 might be based on C# and .NET.
