@@ -90,7 +90,7 @@ JJ
 
 -----
 
-An object's class or a class's interface is a prototype-based principle, so any other object can serve as a class or interface, but symbols will be more likely to be assigned a fixed role.
+An object's class or a class's interface is a prototype-based principle, so any other object can serve as a class or interface, but symbols might be more likely to be assigned a fixed role.
 
 -----
 
@@ -195,7 +195,7 @@ However, you can’t call it *shorthand*. The following two are not precisely th
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.001h.png)
 
-The lack or presence of a type line *does* make a difference, as will be explained in a later chapter.
+The lack or presence of a type line *does* make a difference, as might be explained in a later chapter.
 
 #### Same Procedure, Same Interface
 
@@ -207,7 +207,7 @@ They also get the same interface, sort of like this:
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.003.jpeg)
 
-However, the lack or presence of an interface line *does* make a difference, as will be explained later.
+However, the lack or presence of an interface line *does* make a difference, as might be explained later.
 
 ### Genericity
 
@@ -215,7 +215,7 @@ Genericity is about the how loose or rigid a system aspect is.
 
 For instance, if a circle has no type line, the object can be of any type. The type is *generic* in this case. If the type line is set, though, the object can only be of a single type. The type is *explicit* in that case.
 
-There are more such phenomena. This section will cover all of them.
+There are more such phenomena. This section might cover all of them.
 
 #### Object Symbol Genericity
 
@@ -223,7 +223,7 @@ This section covers the all forms of genericity for object symbols.
 
 ##### Original and Delegated Object
 
-The first concept I will explain is quite simple.
+The first concept I might explain is quite simple.
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.004.jpeg)
 
@@ -435,7 +435,7 @@ A special form of genericity is very important and it’s crucial for the use of
 
 ###### Using Interface Extends Type Line
 
-When you set the interface of a symbol then it can only point to definitions that have the interface or support the interface. I will now describe how using a supported interface works.
+When you set the interface of a symbol then it can only point to definitions that have the interface or support the interface. I might now describe how using a supported interface works.
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.036.jpeg)
 
@@ -681,7 +681,7 @@ The rule about the type line determines the interface line stays. It’s just th
 
 #### Type
 
-If you redirect with an object line then the object reference gets the same type as the target object (except when you use a different interface, the previous problem I introduced). Not all the symbols will get a line to the type, though.
+If you redirect with an object line then the object reference gets the same type as the target object (except when you use a different interface, the previous problem I introduced). Not all the symbols might get a line to the type, though.
 
 #### Operators
 

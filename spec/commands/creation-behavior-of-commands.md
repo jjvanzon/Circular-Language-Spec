@@ -43,7 +43,7 @@ __Contents__
 
 ### Creation Behavior of Calls
 
-A call can be present inside an object or inside another command. When a call is created, it is not immediately run, so that you get a chance to set its parameters. Before a command call is run, the command call’s public contents are there: its parameters. Those parameters are copied out of the call’s definition. The private contents are not there yet. A command’s private contents include private objects, clauses and command calls. The private contents will be copied out of the command defininition, only just before the command call runs. The public contents of a command call are added when the command object is created. The private contents of a command call are only added when its about to run. So the general rule is: creation of private contents of a command call is delayed until just before a command call is run.
+A call can be present inside an object or inside another command. When a call is created, it is not immediately run, so that you get a chance to set its parameters. Before a command call is run, the command call’s public contents are there: its parameters. Those parameters are copied out of the call’s definition. The private contents are not there yet. A command’s private contents include private objects, clauses and command calls. The private contents might be copied out of the command defininition, only just before the command call runs. The public contents of a command call are added when the command object is created. The private contents of a command call are only added when its about to run. So the general rule is: creation of private contents of a command call is delayed until just before a command call is run.
 
 The reasons for the delay of creation of private contents are explained later. First, the steps of a command call’s creation are laid out one by one.
 
@@ -283,7 +283,7 @@ One of the reasons why private contents of a call are only created just before t
 
 ### No Circular Command Creation
 
-Another reason why private contents of a call are only created just before the call is run, is because this prevents circular creation of commands. Some command may call another command and that command may call the first one again. Command calls are usually private, so if you would create all possible command calls, you end up creating an endless recurrence of command creations, while in reality, the recurrence will be broken by some conditional execution of one of the command calls. Creating private contents of command calls prevents this circular creation and only creates a command object when it will actually run.
+Another reason why private contents of a call are only created just before the call is run, is because this prevents circular creation of commands. Some command may call another command and that command may call the first one again. Command calls are usually private, so if you would create all possible command calls, you end up creating an endless recurrence of command creations, while in reality, the recurrence might be broken by some conditional execution of one of the command calls. Creating private contents of command calls prevents this circular creation and only creates a command object when it might actually run.
 
 #### Diagram
 
@@ -293,7 +293,7 @@ The concept of No Circular Command Creation has already been explained in the ar
 
 ### No Private Contents in a Call in a Definition
 
-A definition is always dormant, and never runs. So also the *calls* inside a definition will never run. Therefore, the private contents of calls inside a definition are *never* created. A call in a definition never shows the call’s private contents. The call at most shows its parameters, so the public contents of the command call. Only the *definition* of the called command will show private contents. So you have to hop to the definition of a call to see the private contents of the command.
+A definition is always dormant, and never runs. So also the *calls* inside a definition might never run. Therefore, the private contents of calls inside a definition are *never* created. A call in a definition never shows the call’s private contents. The call at most shows its parameters, so the public contents of the command call. Only the *definition* of the called command might show private contents. So you have to hop to the definition of a call to see the private contents of the command.
 
 Not creating a call’s private contents before it even runs, takes away discussion about when to display and when not to display a command’s private contents.
 
@@ -303,7 +303,7 @@ Bear in mind, that when an executable object does not redirect its definition, i
 
 This section repeats the story, but now demonstrates the concept using diagrams.
 
-A definition is always dormant, and never runs. So also the *calls* inside a definition will never run.
+A definition is always dormant, and never runs. So also the *calls* inside a definition might never run.
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.028.png)
 
@@ -315,7 +315,7 @@ A call in a definition never shows the call’s private contents. The call at mo
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.030.png)
 
-Only the *definition* of the called command will show private contents.
+Only the *definition* of the called command might show private contents.
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.031.png)
 
@@ -365,7 +365,7 @@ A clause in a clause only ever runs when its top parent command is an active com
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.036.png)
 
-The clause will only ever run in a *call* to the definition, but then it is a copy of the definition’s clause:
+The clause might only ever run in a *call* to the definition, but then it is a copy of the definition’s clause:
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.037.png)
 
@@ -378,7 +378,7 @@ There was a lot of brainstorming about how Encircle’s call instantiation compa
 Perhaps creation behavior is just the most important issue of Command is an Object. It really belongs to the introduction of commands, that explains how a command is an executable object. Closely related to it, is the special creation behavior of executable objects. You have to well understand the creation behavior to implement a command as an object.
 
 There was a brainstorm about the problems, that come with creating a sub-call object just before it executes. This brainstorm in further down below in the section *Former Text*.  
-But the idea will now be further worked out by making a comparison between other programming languages and how it will be solved in the new programming language.
+But the idea might now be further worked out by making a comparison between other programming languages and how it might be solved in the new programming language.
 
 #### What happens in other programming languages?
 
@@ -391,7 +391,7 @@ From a single-threaded point of view, the same command does not run at the same 
 In a multi-threaded situation a command could run twice at the same time.  
 A thread, however, `has its own stack and also its own instruction pointer, as well as its own registers.
 
-In a time-sliced threading situation, whenever the CPU switches from one thread to another, the data the command operates on is changed and the command will pick it up where it left off in that thread’s previous time slice.
+In a time-sliced threading situation, whenever the CPU switches from one thread to another, the data the command operates on is changed and the command might pick it up where it left off in that thread’s previous time slice.
 
 In multi-threaded situations with two CPU’s or two CPU cores things still go ok, because each thread has its own instruction pointer and a different call stack. It is no problem to reuse the same code. The code does not specify which specific data it is operating on, so the code is just instruction data, that is reused.
 
@@ -405,7 +405,7 @@ The same code, with fixed pointers has to be executed on different data all the 
 
 #### Why does that not work for my own system?
 
-The CPU is quite straightforward in a way. It executes and executes doing exactly what it is lead to do by its instruction pointer that only goes forward, and it only skips to another spot, when it encounters a jump instruction and the data then determines whether it will jump at all. A CPU is really quite straightforward and just does what we tell it to do. As a normal program runs, you do not *see* debug information. When a program runs normally, you do not see what method it is in and of what object, and even the CPU does not see what method it is in and of what object. When you debug, though, you want to see the exact code line of what exact method and of what object, you can even see (from an alternated call stack) what commands were called before and of what object.
+The CPU is quite straightforward in a way. It executes and executes doing exactly what it is lead to do by its instruction pointer that only goes forward, and it only skips to another spot, when it encounters a jump instruction and the data then determines whether it might jump at all. A CPU is really quite straightforward and just does what we tell it to do. As a normal program runs, you do not *see* debug information. When a program runs normally, you do not see what method it is in and of what object, and even the CPU does not see what method it is in and of what object. When you debug, though, you want to see the exact code line of what exact method and of what object, you can even see (from an alternated call stack) what commands were called before and of what object.
 
 In Encircle, when you pause on a running command, you might see the procedure call stack as the hierarchy upward. This call stack was not built up as the command was running. You can zoom in on any piece ‘call stack’, that is not even running, but might be running in the future.
 
@@ -431,7 +431,7 @@ Pointers to the data, that was already there, are on the call stack in a CPU-lik
 
 #### Sub-commands
 
-Now, the sub-commands in a CPU-like language are there as CALL instructions. CALL instructions are in the command definition. In my own language sub-commands are there as sub-command references, with a *definition* assigned to them, but no object  yet. The sub-command *object* is only created just before a sub-command will be run.
+Now, the sub-commands in a CPU-like language are there as CALL instructions. CALL instructions are in the command definition. In my own language sub-commands are there as sub-command references, with a *definition* assigned to them, but no object  yet. The sub-command *object* is only created just before a sub-command might be run.
 
 I still do not have a clear view on why in CPU-like languages it is CALL instructions in the definition, and in my own language it is sub-command references inside a call object.  
 < ... >
@@ -506,7 +506,7 @@ and then leave it unfinished indefinitely.
 The problem is:  
 Parameter assignment calls have to point to parameters. How can you point to a parameter, if the call is not created yet?
 
-You have to add to the command call article, that in a definition, the calls have to be created, because a definition has to specify what will become input and output for the command call. Or perhaps add that to sub-commands articles.
+You have to add to the command call article, that in a definition, the calls have to be created, because a definition has to specify what might become input and output for the command call. Or perhaps add that to sub-commands articles.
 
 I am still totally confused about the creation behavior of calls.  
 It looks like a call object has to be created as soon as its parent call is created, because input and output references have to be defined?  

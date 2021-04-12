@@ -48,13 +48,13 @@ Examples of practical parameter access control may be covered later.
 
 When you see a parameter as a relation between a command and an object, it used to be a paradox, that the parameter can always point to an object on the outside, even though the parameter passing said, that you can only point *to* the parameter.
 
-This problem was taken away by completely separating the object relations on one hand, and on the other hand access controlling the system aspects of the parameter. In a diagram you will also see those two things separately displayed.
+This problem was taken away by completely separating the object relations on one hand, and on the other hand access controlling the system aspects of the parameter. In a diagram you might also see those two things separately displayed.
 
 The relational position of the object and the way you can access it are separately expressed in the diagram, and not by means of the same lines.
 
 ![](images/3.%20Miscellaneous%20Parameter%20Topics.001.png)
 
-The open-ended lines of the circles inside the diamond are the parameters’ access connectors, that define how the parameter is or can be used. You can define a new relation to the command by tying an object to an access connector of a parameter. The access connector will not be taken *in use*, because after you’ve used it to define a relation to the command, the access connector is still there, open for usage.
+The open-ended lines of the circles inside the diamond are the parameters’ access connectors, that define how the parameter is or can be used. You can define a new relation to the command by tying an object to an access connector of a parameter. The access connector might not be taken *in use*, because after you’ve used it to define a relation to the command, the access connector is still there, open for usage.
 
 ### Parameters & Arguments
 
@@ -76,11 +76,11 @@ The article *Parameters & Arguments* conceptually explained the usage of the ter
 
 ### Parameters For The Add Command
 
-The __Add__ command is a system command of a list. It can be called without any parameters. This will add a new item to the list.
+The __Add__ command is a system command of a list. It can be called without any parameters. This might add a new item to the list.
 
 But there are multiple ways to provide parameters to the __Add__ command, that may come in handy.
 
-These will simply produce different overloaded variations of the __Add__ command.
+These might simply produce different overloaded variations of the __Add__ command.
 
 First of all, the __Add__ command could return the object, that was added, when the list automatically creates objects when adding a position to the list.
 
@@ -88,7 +88,7 @@ Secondly, when objects are not automatically created, then the *item position* i
 
 But those are just the basic __Add__ overloads.
 
-Some lists will automatically create an object when you call the __Add__ command. But to occasionally prevent that, you can pass an existing object to the __Add__ command, that will be put in the new position in the list. This will keep the list filled with created objects, without having unnecessary creation of new objects, that are immediately destroyed when replaced by an existing object.
+Some lists might automatically create an object when you call the __Add__ command. But to occasionally prevent that, you can pass an existing object to the __Add__ command, that might be put in the new position in the list. This might keep the list filled with created objects, without having unnecessary creation of new objects, that are immediately destroyed when replaced by an existing object.
 
 Another application of parameters for the __Add__ command, is providing *attribute values* as parameters in the call to the __Add__ command. A standard __Add__ command could be generated, that includes any attribute as an optional parameter. Then the caller of the __Add__ command can choose which ones to fill in.
 

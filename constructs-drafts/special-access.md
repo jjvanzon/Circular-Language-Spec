@@ -25,7 +25,7 @@ __Contents__
 
 < Do neighbor access and child access protect the independence of types? As a substitute for the old, false rule: ‘Can’t call upward in the ancestry’? >
 
-There’s several ways to access a procedure. The most common way is for procedures of the same object to call upon each other. The second most common way is for a parent to access a child’s procedures. A global object is accessible from anywhere within the module and there are more ways. I will discuss these different ways of access one by one in this section.
+There’s several ways to access a procedure. The most common way is for procedures of the same object to call upon each other. The second most common way is for a parent to access a child’s procedures. A global object is accessible from anywhere within the module and there are more ways. I might discuss these different ways of access one by one in this section.
 
 ### Neighbor Access
 

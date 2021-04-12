@@ -18,7 +18,7 @@ Systems 1000 times complex than what we consider huge software packages now, cou
 
 -----
 
-How will I store the code in the future? Will it be as text code or as a Creator database?
+How might I store the code in the future? Might it be as text code or as a Creator database?
 
 -----
 

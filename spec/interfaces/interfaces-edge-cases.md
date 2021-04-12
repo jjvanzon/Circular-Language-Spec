@@ -43,7 +43,7 @@ Below these two problems are explained and possible solutions are given. Solutio
 > 
 > The new connections are now dependent on the member grouping, which was only meant to be a loose definition.
 > 
-> To allow member grouping to be benign, some solution must be found for this. The solution probably lies in the area of access controlling system commands. The member groupings need to be access controlled enough to not be able to explicitly connect to them, but not so much that it makes their members totally inaccessible. Separately access controlling __Get For Access__ and __Get For Copy__ might solve this problem. However, it needs to be thought through if this really only blocks something’s usage as a qualifier. If it does not, probably another split up in system commands will do the trick.
+> To allow member grouping to be benign, some solution must be found for this. The solution probably lies in the area of access controlling system commands. The member groupings need to be access controlled enough to not be able to explicitly connect to them, but not so much that it makes their members totally inaccessible. Separately access controlling __Get For Access__ and __Get For Copy__ might solve this problem. However, it needs to be thought through if this really only blocks something’s usage as a qualifier. If it does not, probably another split up in system commands might do the trick.
 > 
 > Ideas about the separation between __Get For Access__ and __Get For Copy__ can also be found in the *Black Box* and *System Interfaces* chapters.
 
@@ -61,7 +61,7 @@ Below these two problems are explained and possible solutions are given. Solutio
 
 ### Interface Referrers
 
-The *Referrers* concept has been explained in the *Relations* chapter. The article *Class Referrers* explains the concept for classes. It works exactly the same for interfaces. It will not be further explained here. Mind that commands can have interface referrers as well.
+The *Referrers* concept has been explained in the *Relations* chapter. The article *Class Referrers* explains the concept for classes. It works exactly the same for interfaces. It might not be further explained here. Mind that commands can have interface referrers as well.
 
 ### Reliability of Interfaces
 
@@ -77,7 +77,7 @@ Bidirectional relations also see to it that when a command has a parameter, the 
 
 To keep interfaces reliable, somehow the backward relations should not become part of the interface. The solution is to make the backward relations __Private__. This excludes the members from the interface, but keeps them available as part of the implementation. 
 
-Other options have been proposed to responsibly get rid of the automatically created members. The options will be explained now.
+Other options have been proposed to responsibly get rid of the automatically created members. The options might be explained now.
 
 Backward relation options:
 
@@ -93,7 +93,7 @@ Backward relation options:
 
 #### Public Backward Relation
 
-> Allowing __Public__ backward relations means the interface will not be stable, because extra members are created when things start pointing to an object. However, this does not have to be a problem in all cases.
+> Allowing __Public__ backward relations means the interface might not be stable, because extra members are created when things start pointing to an object. However, this does not have to be a problem in all cases.
 
 #### Manual Backward Relations
 
@@ -110,6 +110,6 @@ Now follow some other solutions, that are sort of arbitrary and miscellaneous, b
 
 #### Preliminary Backward Relation
 
-> Preliminary backward relation means that the forward end of the relation will maintain the backward relation until the relation counterpart either accepts or refuses it. This politely keeps the other related object’s interface and storage in tact while still offering the ability to adopt the index. You may also solve a quota overrun security problem this way.
+> Preliminary backward relation means that the forward end of the relation might maintain the backward relation until the relation counterpart either accepts or refuses it. This politely keeps the other related object’s interface and storage in tact while still offering the ability to adopt the index. You may also solve a quota overrun security problem this way.
 >
 > This sounds good in theory, but in practice it may turn out that the registration of the request takes the same amount of storage as storing the backwards relation itself.

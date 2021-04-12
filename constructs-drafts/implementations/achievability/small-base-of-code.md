@@ -14,6 +14,6 @@ So the part that is programmed in C++ should be limited to the very minimum: onl
 
 So take as much as possible out of the code base.
 
-Check if you're not making too much intrinsic to the system's code base. The code base will be teeny weeny. The complete rest of the system will be built on Encircle itself. If the code base is really small, it will be easier to rewrite it in Assembly or worse: make a computer chip out of it.
+Check if you're not making too much intrinsic to the system's code base. The code base might be teeny weeny. The complete rest of the system might be built on Encircle itself. If the code base is really small, it might be easier to rewrite it in Assembly or worse: make a computer chip out of it.
 
-So whenever something is present in the C++ code, just to make it look more complete, you’re probably obligated to remove it. For instance security will not be intrinsic to the system. It will be an extension. It will only *seem* intrinsic from the outside, due to Encircle’s extensibility. It is not part of the code base.
+So whenever something is present in the C++ code, just to make it look more complete, you’re probably obligated to remove it. For instance security might not be intrinsic to the system. It might be an extension. It might only *seem* intrinsic from the outside, due to Encircle’s extensibility. It is not part of the code base.

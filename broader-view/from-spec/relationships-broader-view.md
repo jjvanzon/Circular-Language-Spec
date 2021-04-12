@@ -44,7 +44,7 @@ Bidirectional relationships `were already` introduced by `the*` article *Relatio
 `This is the*` case `when* the*` target class of `the*` relationship `is very` generally used. `The*` key example for `this is` a __Number__. A number `is` used by `too many` other classes, `so` it `is ridiculous` to give a __Number__ a related list for `every` class that uses __Numbers__. To determine `if*` a backward relationship `is ridiculous` to maintain `you* could*` also consider `the*` following:
 
 - `No` functional correspondence with `anything` particular
-- Too `many` objects `will` refer to `this`.
+- Too `many` objects `might` refer to `this`.
 
 `This is all very` subjective, `but* I can’t*` give a more `exact` definition for it.
 

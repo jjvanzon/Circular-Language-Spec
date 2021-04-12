@@ -24,14 +24,14 @@ The *Object Storage* folder contains the following sub-folders:
 
 - ### Caching
 
-    - *Caching* may not be part of *Object Storage* in the future. *Caching* is put directly under *Storage*, right next to *Object Storage*. This folder is empty. The document *Internet as a Single Computer*, though, in another part of the documentation, has a good description of the idea behind how caching will be applied inside Encircle (in the section *Cache Layering*).
+    - *Caching* may not be part of *Object Storage* in the future. *Caching* is put directly under *Storage*, right next to *Object Storage*. This folder is empty. The document *Internet as a Single Computer*, though, in another part of the documentation, has a good description of the idea behind how caching might be applied inside Encircle (in the section *Cache Layering*).
 
     - No such caching mechanism has not been developed yet, though, but it is important to have it, when developing a serious version of Encircle.
 
 - ### Reference Counting
 
-    - Object lifetime will be controlled by a reference counting mechanism. When nothing refers to an object anymore, it is automatically deleted from the system.  
-    You may oppose this, when looking at a system with a relational database table approach, but if an object is still in a table, then that also counts as one reference, so objects will never suddenly disappear from a table.
+    - Object lifetime might be controlled by a reference counting mechanism. When nothing refers to an object anymore, it is automatically deleted from the system.  
+    You may oppose this, when looking at a system with a relational database table approach, but if an object is still in a table, then that also counts as one reference, so objects might never suddenly disappear from a table.
 
     - The reference counting article is not finished yet. It is just a throw-together of ideas. Reference counting was an optional mechanism inside experiment 0.9. Reference counting was to be applied to the storage mechanisms of experiment 2.0, but that did not get off the ground, because developments took another course.
 
@@ -43,7 +43,7 @@ The *Object Storage* folder contains the following sub-folders:
 
 - ### ID's
 
-    - ID’s are numbers that identify an object. The same object can be referenced from many different places. Each of those places can give the object an extra ID. So an object can have several ID’s. Most of the times, the ID is a position in a list. An object can also get its own unique ID, but this ID will be based on the *position* in one central list, so it is still the same concept.
+    - ID’s are numbers that identify an object. The same object can be referenced from many different places. Each of those places can give the object an extra ID. So an object can have several ID’s. Most of the times, the ID is a position in a list. An object can also get its own unique ID, but this ID might be based on the *position* in one central list, so it is still the same concept.
 
     - This article contains a lot of loose ideas about the subject, but was not turned into well-readable text. The concept of identifying an object by its position in a list was applied in both experiments 0.9 and 2.0. It is the fastest reference to an object there is.
 
@@ -79,6 +79,6 @@ The *Object Storage* folder contains the following sub-folders:
 
 - ### Do Not Store Empty Lists
 
-    - To limit storage use, it may be an idea to not store a related list, if there aren’t any items in it yet. The class will define the lists anyway. This saves storage space. This is really an issue for the technical implementation of Encircle, but it is comforting to know that you don’t need to care much about having many related lists in a class, when most of the related lists will stay empty.  
+    - To limit storage use, it may be an idea to not store a related list, if there aren’t any items in it yet. The class might define the lists anyway. This saves storage space. This is really an issue for the technical implementation of Encircle, but it is comforting to know that you don’t need to care much about having many related lists in a class, when most of the related lists might stay empty.  
 
     - This article is not yet finished, and the concept has not been implemented in either experiment 0.9 or experiment 2.0.

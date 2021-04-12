@@ -58,7 +58,7 @@ In Encircle, execution flow statements are special commands. They are commands, 
 
 Even though execution flow commands are really just commands with command references, a call to an execution flow command is often called a *statement*.
 
-Some of the execution flow commands are passed a *condition*. The condition will determine, what command reference is called. The condition is a Boolean value. Most likely it is *not* a fixed Boolean value. It is more likely to be a Boolean variable stored inside an object. The Boolean value can *also* be the result of a command. The Boolean value can also be the result of a formula, but a formula actually *is* a command. So the condition is either a Boolean variable inside an object, or the Boolean output of a command.
+Some of the execution flow commands are passed a *condition*. The condition might determine, what command reference is called. The condition is a Boolean value. Most likely it is *not* a fixed Boolean value. It is more likely to be a Boolean variable stored inside an object. The Boolean value can *also* be the result of a command. The Boolean value can also be the result of a formula, but a formula actually *is* a command. So the condition is either a Boolean variable inside an object, or the Boolean output of a command.
 
 For the __If__ statement it is alright, when the condition is calculated *once* and the Boolean result is passed to the __If__ command as the condition. But in a conditional *loop*, the condition must be re-evaluated on every repetition of the loop. Recalculation of the condition, every time the condition is consulted, can be established by making the condition a reference to a reference to a __Boolean__, rather than a reference to a specific __Boolean__ object.  
 So the condition argument refers to a *reference*.  
@@ -70,7 +70,7 @@ Commands basically just call more commands. But a few commands do something othe
 
 The concept of execution flow is explained in the article *Execution Flow*. The current article demonstrates its expression in a diagram.
 
-The articles, that will follow, explain the diagram expression separately for each execution flow statement. But to explain their expression in general, the __If__ statement is used as an example here.
+The articles, that might follow, explain the diagram expression separately for each execution flow statement. But to explain their expression in general, the __If__ statement is used as an example here.
 
 An __If__ statement executes a command if a certain condition is met. If the condition is not met, then an alternate command can be run.
 
@@ -103,7 +103,7 @@ The __Condition__ and the __Then__ and __Else__ commands are shown right inside 
 ![](images/1.%20Introduction%20to%20Execution%20Flow.004.png)
 ![](images/1.%20Introduction%20to%20Execution%20Flow.005.png)
 
-You can do this by defining references to the clauses on a higher level. This will automatically connect the clauses inside the __If__ symbol to the clauses outside the __If__ symbol. A clause inside the __If__ symbol and a clause outside the __If__ symbol are actually both no more than references the same clause. So this will create references to the same clause on multiple levels. Following the rules of automatic containment, references to the same thing are tied together with lines. The symbol on the highest containment level represents the command itself. Putting a reference an a higher level for the sole purpose of elevating the definition of something, up to a level it is not required to be defined in, is called an *esthetic reference*.  
+You can do this by defining references to the clauses on a higher level. This might automatically connect the clauses inside the __If__ symbol to the clauses outside the __If__ symbol. A clause inside the __If__ symbol and a clause outside the __If__ symbol are actually both no more than references the same clause. So this might create references to the same clause on multiple levels. Following the rules of automatic containment, references to the same thing are tied together with lines. The symbol on the highest containment level represents the command itself. Putting a reference an a higher level for the sole purpose of elevating the definition of something, up to a level it is not required to be defined in, is called an *esthetic reference*.  
 See the articles *Esthetic Reference* and *Automatic Containment* for more about those subjects.
 
 It is a coincidence, that a diamond was already used, to express a *decision* in some types of control-flow diagrams, that existed before Encircle. That might coincidentally make the syntax for calling commands, passing along command references as parameters, work intuitively to express execution flow.

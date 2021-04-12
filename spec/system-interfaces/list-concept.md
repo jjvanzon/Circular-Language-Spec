@@ -48,7 +48,7 @@ expresses that the list *items* inheriting from the list items in the other list
 
 ![](images/6.%20List%20Concept.007.png)
 
-A triangle inside a nonagon will never express anything other than list inheritance as such.
+A triangle inside a nonagon might never express anything other than list inheritance as such.
 
 The solution to setting aspects of the list object itself is as follows. The contents you normally see in the list symbol, in the nonagon, are not the actual members of the list object. They are an alternate view on the list object. You do not see the list object members, you see the list items. The actual members of the list object are hidden away as part of the *system* *object*.  The system object members are visible inside the system interface:
 
@@ -60,7 +60,7 @@ This means that when you want to control the list object itself, you have to do 
 
 ![](images/6.%20List%20Concept.009.png)
 
-Below you will find other examples.
+Below you might find other examples.
 
 Here is a list class inheriting from another list class:
 

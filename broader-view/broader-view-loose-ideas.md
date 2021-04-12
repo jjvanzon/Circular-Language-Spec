@@ -36,7 +36,7 @@ Examples of coding aspects are: classes, attributes, parameters and inheritance.
 
 Many of the coding aspects are just as elementary to computer programming as coding principles. Functionally, coding principles and aspects blend together. That is why coding principles and coding aspects do not have separate documentation sections.
 
-On top of that: when developing the code base, you will determine how much can be banned out of the code base, and only programmed within Encircle itself. As the aspects are described here functionally, it is not as important to determine which ones have to be part of the code base and which ones can be left out.
+On top of that: when developing the code base, you might determine how much can be banned out of the code base, and only programmed within Encircle itself. As the aspects are described here functionally, it is not as important to determine which ones have to be part of the code base and which ones can be left out.
 
 ### Loose Ideas
 
@@ -288,7 +288,7 @@ When something crashes, it is just that process, that crashes.
 The rest keeps running.
 
 But in my own system, the whole internet is really just one process.  
-So what needs to be done, is analyse the advantages people think they can only get from isolated processes, (advantages, that are probably only precautions for problems) and see what solutions for those problems will be implemented in my own system.
+So what needs to be done, is analyse the advantages people think they can only get from isolated processes, (advantages, that are probably only precautions for problems) and see what solutions for those problems might be implemented in my own system.
 
 JJ
 

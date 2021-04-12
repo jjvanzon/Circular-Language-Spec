@@ -156,7 +156,7 @@ Keeping space between the different peel types can also cause ambiguity, though,
 
 ![](images/98.%20Peels%20(a%20rejected%20concept).018.png)
 
-In larger symbols you will see the difference more easily, though:
+In larger symbols you might see the difference more easily, though:
 
 ![](images/98.%20Peels%20(a%20rejected%20concept).019.png)
 
@@ -270,7 +270,7 @@ To denote that many borders are crossed, usually three peels are used. So three 
 
 ##### Other Abstract Meanings
 
-I will simply give a sum up of the other abstract meanings I’ve mentioned and give the peel notation for them.
+I might simply give a sum up of the other abstract meanings I’ve mentioned and give the peel notation for them.
 
 |                                                             |                                                             |
 |:-----------------------------------------------------------:|:-----------------------------------------------------------:|
@@ -338,7 +338,7 @@ When you use line peels, shape peels are usually not used, but no rule stops you
 
 ![](images/98.%20Peels%20(a%20rejected%20concept).048.png)
 
-Don’t put an exit enter mark through a line, or it will seem to be an access symbol: one of the exit-enter marks is left out in the diagram above for this purpose.
+Don’t put an exit enter mark through a line, or it might seem to be an access symbol: one of the exit-enter marks is left out in the diagram above for this purpose.
 
 In the peels of a *line* you can’t express exit-enter separation or the type of symbol crossed. You can however express that a line with a single peel expresses the amount of crossed borders, by using an extra mark:
 
@@ -353,7 +353,7 @@ Here is a list of a few ambiguity risks when using peels:
 - Multiple shape peel types may suggest the existence of another symbol.
 - Line peels may suggest the existence of multiple lines.
 
-Ambiguity risks will be widely covered in the ‘Diagram Metrics’ in the book ‘Symbol Language Advanced’.
+Ambiguity risks might be widely covered in the ‘Diagram Metrics’ in the book ‘Symbol Language Advanced’.
 
 ### Overview of Peals
 

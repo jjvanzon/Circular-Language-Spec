@@ -109,7 +109,7 @@ Another topic that might be covered, is a comparison with other languages (even 
 
 An object reference `can*` point to another object reference, `which* points` to another object reference and so on. `The* first*` object `found` in this redirection, that `does not` refer to another object `again*, is` called `the*` *target object*. `Even* though* any` of `the*` object *references* `can` be used like it `is the*` object `itself, the*` *target object* `is` considered `the*` real object and `not just*` a reference to it.
 
-`The*` term target object `is` also used to denote `the* direct*` reference target, not necessarily `the*` final target. What kind of target `is` denoted, `will` be clear from `the*` context.
+`The*` term target object `is` also used to denote `the* direct*` reference target, not necessarily `the*` final target. What kind of target `is` denoted, `might` be clear from `the*` context.
 
 ##### ~Compared to C++~
 
@@ -165,7 +165,7 @@ Below `is` an example, with classes getting further redirected.
 
 ##### Concept
 
-As `covered` by `the*` article *Related Classes*, `you* can*` also establish a unidirectional relation with a *pointer* to another class. `This is not* so` common, `but*` it `is` possible `all the*` same. `This is` mostly applied, to allow a class to make a sub-object’s class *adjustable*. It `is important` to consider, that everything inside a pointer `is really` part of `the*` *target class*, `but*` a pointer itself `is` usable individually, independent from `the*` target class. `This is` well visualized in `the*` article *Relation to a Pointer in a Diagram.* To make a relation to a pointer bidirectional, `you* have to` give `the*` target class a relation back to `the*` first class. `The*` first class relates to `the*` pointer, `but* the*` target class relates back to `the*` first class. `This` automatically gives `the*` pointer a relation back to `the*` first class. `This` creates a bidirectional relation between `the*` first class and `the*` pointer to a class, `but* only` a unidirectional backwards relation between `the*` target class and `the*` first class. `This is because* the*` first class does `not*` directly refer to `the*` target class, `but* the*` target class does directly refer back to it. `You* should` see it in a diagram. That `will` make it `much` clearer.
+As `covered` by `the*` article *Related Classes*, `you* can*` also establish a unidirectional relation with a *pointer* to another class. `This is not* so` common, `but*` it `is` possible `all the*` same. `This is` mostly applied, to allow a class to make a sub-object’s class *adjustable*. It `is important` to consider, that everything inside a pointer `is really` part of `the*` *target class*, `but*` a pointer itself `is` usable individually, independent from `the*` target class. `This is` well visualized in `the*` article *Relation to a Pointer in a Diagram.* To make a relation to a pointer bidirectional, `you* have to` give `the*` target class a relation back to `the*` first class. `The*` first class relates to `the*` pointer, `but* the*` target class relates back to `the*` first class. `This` automatically gives `the*` pointer a relation back to `the*` first class. `This` creates a bidirectional relation between `the*` first class and `the*` pointer to a class, `but* only` a unidirectional backwards relation between `the*` target class and `the*` first class. `This is because* the*` first class does `not*` directly refer to `the*` target class, `but* the*` target class does directly refer back to it. `You* should` see it in a diagram. That `might` make it `much` clearer.
 
 ##### Diagram Notation
 
@@ -295,13 +295,13 @@ which delegates directly to the __Reference Get__ command.
 
 ###### The Overloads Recapitulated
 
-Do not wreck your brain over all this delegation and overloading. It is just for pointer-to-pointer situations to have the same command names as standard situations, and also to be able to separately access control the specific *uses* of a reference. You will not usually see the pointer-related commands, because they will be implicitly delegated to by the main system commands.
+Do not wreck your brain over all this delegation and overloading. It is just for pointer-to-pointer situations to have the same command names as standard situations, and also to be able to separately access control the specific *uses* of a reference. You might not usually see the pointer-related commands, because they might be implicitly delegated to by the main system commands.
 
 This leaves us with the following command added for pointer-to-pointer situations:
 
 - __Use Reference As Object__
 
-Detail: For that last command you might want to overload __Object Get.__ But that does not work. You can not overload it, because they will both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
+Detail: For that last command you might want to overload __Object Get.__ But that does not work. You can not overload it, because they might both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
 
 ##### System Commands for the Class Aspect
 
@@ -342,13 +342,13 @@ which delegates directly to the __Reference Get__ command.
 
 ###### The Overloads Recapitulated
 
-Do not wreck your brain over all this delegation and overloading. It is just for pointer-to-pointer situations to have the same command names as standard situations, and also to be able to separately access-control the specific *uses* of references or objects. You will not usually see the pointer-related commands, because they will be implicitly delegated to by the main commands.
+Do not wreck your brain over all this delegation and overloading. It is just for pointer-to-pointer situations to have the same command names as standard situations, and also to be able to separately access-control the specific *uses* of references or objects. You might not usually see the pointer-related commands, because they might be implicitly delegated to by the main commands.
 
 This leaves us with the following command added for pointer-to-pointer situations:
 
 - __Use Reference As Class__
 
-Detail: For that last command you might want to overload __Object Get.__ But that does not work. You can not overload it, because they will both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
+Detail: For that last command you might want to overload __Object Get.__ But that does not work. You can not overload it, because they might both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
 
 ##### The Extra Commands & Overloads
 
@@ -456,7 +456,7 @@ The __Use Reference As Object__ command is part of the __Object__ aspect but 
 
 #### Pointer Assignment
 
-Next to assigning one object reference’s object to another object reference, you could also assign the object reference itself to another object reference. In that case the second object reference will become a *reference to an object reference*, instead of a reference to an *object*. This requires another type of assignment: a pointer assignment.
+Next to assigning one object reference’s object to another object reference, you could also assign the object reference itself to another object reference. In that case the second object reference might become a *reference to an object reference*, instead of a reference to an *object*. This requires another type of assignment: a pointer assignment.
 
 Pointer assignments establish a pointer-to-pointer. Instead of assigning a target object to the reference, you assign a reference to the reference. This creates a *pointer-to-pointer*, instead of a direct reference to an *object*. This allows another object reference to decide which object is eventually pointed at.
 
@@ -695,7 +695,7 @@ Consider the notation of pointing to the class of an object reference, used in t
 
 I need a notation for explicitly referring to a pointer or to the class of an object or to the class of an object reference.
 
-Do consider that the target object in a diagram really needs to represents the object. You should not think of it as an object reference, because that will make it harder to see through the system.
+Do consider that the target object in a diagram really needs to represents the object. You should not think of it as an object reference, because that might make it harder to see through the system.
 
 \> 2020-06-13: Might it be an idea to consult the system interface to point to the class of an object symbol? So the system interface might show the class and that bit of the system interface might be shown, and an object reference would point to the class indication in the system interface? Something like that.
 
@@ -711,8 +711,8 @@ Relations to Pointers,
 
 Pointers (references to related objects)  
 A relation between a *pointer to an object* and a *command*. `The*` pointer `is` a totally different entity, than `the*` object itself.  
-\>  2008-10-01 `I’d` think, that `this will` add related objects to `the*` system interface, `so` related objects to a related item system object, instead of related objects to `the*` target object of `the*` related item system object.  
+\>  2008-10-01 `I’d` think, that `this might` add related objects to `the*` system interface, `so` related objects to a related item system object, instead of related objects to `the*` target object of `the*` related item system object.  
 `This is` a relations issue: relations to pointers in particular.  
-`I will need` to look at *System Interfaces* to see what a pointer `actually was`: it `was` a relation to a related item, instead of a relation to an object independent of `any` other container.
+`I might need` to look at *System Interfaces* to see what a pointer `actually was`: it `was` a relation to a related item, instead of a relation to an object independent of `any` other container.
 
 JJ

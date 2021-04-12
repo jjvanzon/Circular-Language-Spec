@@ -18,7 +18,7 @@ The *More Text Codes* documentation folder is genuinely a throw-together of idea
 
 - ### Integrating Text Codes
 
-    - *Integrating Text Codes* covers text codes non-standard to Encircle. Encircle might have its own text code syntax + math syntax and assembly language syntax. But other types of text code may be supported as well. Each type of text code might become a separate module. Here is a list of text codes, that might be supported. More languages may be added in the future, but there may also be languages in the list, that will never be supported at all:
+    - *Integrating Text Codes* covers text codes non-standard to Encircle. Encircle might have its own text code syntax + math syntax and assembly language syntax. But other types of text code may be supported as well. Each type of text code might become a separate module. Here is a list of text codes, that might be supported. More languages may be added in the future, but there may also be languages in the list, that might never be supported at all:
      
         - *XML*
         - *SQL*

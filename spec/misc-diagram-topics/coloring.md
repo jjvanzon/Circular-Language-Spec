@@ -21,7 +21,7 @@ Another way to see the type/object structure is by coloring the symbols. It can 
 
 < 2008-10-10 I used to have nothing to express the relation between an object and its class. I did not have dashed class lines here. >
 
-The above shows all smaller circles in blue. That means that all three have the same type. The darker blue circle is the type of the lighter blue ones. Color depth can express the depth of the type/object hierarchy, like the depth of encapsulation is expressed by the size and residence of the circles. There is a standard complex way of doing this coloring. I will elaborate on this later. 
+The above shows all smaller circles in blue. That means that all three have the same type. The darker blue circle is the type of the lighter blue ones. Color depth can express the depth of the type/object hierarchy, like the depth of encapsulation is expressed by the size and residence of the circles. There is a standard complex way of doing this coloring. I might elaborate on this later. 
 
 ### Other Ideas
 

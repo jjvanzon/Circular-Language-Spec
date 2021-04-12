@@ -23,7 +23,7 @@ __Contents__
 
 ### Introduction
 
-Without even defining any objects or class libraries, there are already a lot of standard events you can use. In most situations these will suffice.
+Without even defining any objects or class libraries, there are already a lot of standard events you can use. In most situations these might suffice.
 
 They are events mostly related to changes to the data. Any type of change to the data can be picked up as an event.
 
@@ -115,11 +115,11 @@ Below is an overview of all events that derive from this concept. This results i
 
 #### Pointer to Pointer Events
 
-Perhaps the different overloads for pointer-to-pointer situations should have separate events as well, but this depends on design choices and this issue will be left open for now.
+Perhaps the different overloads for pointer-to-pointer situations should have separate events as well, but this depends on design choices and this issue might be left open for now.
 
 ### System Events in Normal Notation
 
-System can be displayed with the normal event notation, examples of which you will find below.
+System can be displayed with the normal event notation, examples of which you might find below.
 
 ![](images/2.%20System%20Events.001a.png)
 
@@ -135,7 +135,7 @@ In the matrix below, reference-bound aspects are displayed with a parent around 
 
 ![](images/2.%20System%20Events.003.png)
 
-(It is not sure whether this will adequately disambiguate in practice. Hopefully using the diagram concept of automatic containment it will turn out not to be ambiguous, but that is not sure yet.)
+(It is not sure whether this might adequately disambiguate in practice. Hopefully using the diagram concept of automatic containment it might turn out not to be ambiguous, but that is not sure yet.)
 
 Here follow the simplified notations for all the system events.
 
@@ -257,7 +257,7 @@ Second of all for systems events that announce something is about to happen, usu
 
 The __List__ and __Existence__ aspects have additional event parameters.
 
-The __Creating__ event have a __Class__ and __Interface__ parameter, which indicate which class or interface the new object will have.
+The __Creating__ event have a __Class__ and __Interface__ parameter, which indicate which class or interface the new object might have.
 
 ![](images/2.%20System%20Events.066.png)
 
@@ -275,7 +275,7 @@ The __Clone__ aspect’s events also have a __Depth__ parameter.
 
 ![](images/2.%20System%20Events.070.png)
 
-Possibly a __Changed__ event will also contain the __Previous Value__ parameter.
+Possibly a __Changed__ event might also contain the __Previous Value__ parameter.
 
 ![](images/2.%20System%20Events.071.png)
 
@@ -285,7 +285,7 @@ In the earlier introduced connector notation, parameters are not shown. But the 
 
 The names used for the events might not be the eventual names. For instance a more simplified design might simply let all system commands have a __Executing__ and __Executed__ event, instead of inventing different names for the different events, so that __Value Changed__ is named __Value Set . Executed__. In another design choice you might not call it the __Executing__ and __Executed__ event, but the __Before__ and __After__ event, or the __Happening__ and __Happened__ events, or the __Pre-Extension__ and __Post-Extension__ events.
 
-This does not change the concept. These are all just benign design choices. You could also call it __Value Will Change__ instead of __Value Changing__, this is not really the point. It does not change the concept.
+This does not change the concept. These are all just benign design choices. You could also call it __Value Might Change__ instead of __Value Changing__, this is not really the point. It does not change the concept.
 
 The concept is still derived from the fact that you can pick up the __Executing__ and __Executed__ event from any command, including all system commands.
 

@@ -30,7 +30,7 @@ As said, the texts about these subjects are not finished yet.
 
 #### Black Boxing and User Access Control
 
-Access control will be fully managed by the access control module, even for access controlling an object's members, making the members only accessible to the direct container of the member in order to hide complexity from the outside, or to to protect the object's data.
+Access control might be fully managed by the access control module, even for access controlling an object's members, making the members only accessible to the direct container of the member in order to hide complexity from the outside, or to to protect the object's data.
 
 But that form of access control is so important in programming software, that it is introduced earlier as the concept of Public & Private, before access control is worked out as a complete solution to security.
 
@@ -84,7 +84,7 @@ only when editing the definition.
 - It's the difference between friend for reference, and friend for change.
     - \> 2009-06-26: Meh, see last comments.
 
-If you are a friend for change (not for reference) for private contents, you will only see the private contents if you are at logical target the definition.
+If you are a friend for change (not for reference) for private contents, you might only see the private contents if you are at logical target the definition.
 
 JJ
 

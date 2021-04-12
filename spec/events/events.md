@@ -31,13 +31,13 @@ __Contents__
 
 ### Introduction
 
-Events are notification calls. Call receivers subscribe to an event. The call sender will call the receivers whenever it feels like it. Another name for events that the world adopts, is *‘the observer pattern’*. The caller decides what the message looks like. The receiver has to supply a command, that has an interface, specified by the caller.
+Events are notification calls. Call receivers subscribe to an event. The call sender might call the receivers whenever it feels like it. Another name for events that the world adopts, is *‘the observer pattern’*. The caller decides what the message looks like. The receiver has to supply a command, that has an interface, specified by the caller.
 
 The concept of events is nothing more than a combination of constructs: an array of command references, a command interface and supporting the command interface, registering the command inside the array of command references and then calling all the commands in the array at specific times.
 
 Even though it is just a combination of some other constructs, it is such an important concept, that Encircle explicitly defines it as a sepate construct, following the footsteps of other programming environments, that did this as well.
 
-The documentation will also show how events look in the diagram notation of Encircle.
+The documentation might also show how events look in the diagram notation of Encircle.
 
 ### Prime Event Example: Button Clicked
 
@@ -59,7 +59,7 @@ It shows an object with an event procedure / event command / event implementatio
 
 #### Event Connector
 
-When an event procedure is not filled in, you will only see the event as a connector:
+When an event procedure is not filled in, you might only see the event as a connector:
 
 ![](images/1.%20Events.003.png)
 
@@ -67,7 +67,7 @@ The reason for displaying it like this is that connectors usually look like the 
 
 #### Event Raising
 
-The object can raise the event. If you only see the interface of the object you will usually not see this, but if you can see the implementation of the object, its raising the event will look as follows:
+The object can raise the event. If you only see the interface of the object you might usually not see this, but if you can see the implementation of the object, its raising the event might look as follows:
 
 ![](images/1.%20Events.004.png)
 
@@ -135,13 +135,13 @@ The previous article showed how the implementation of an event object explicitly
 
 ![](images/1.%20Events.012.png)
 
-The connectors at the top of the picture are the members that the event *receiver* will interact with: it will *register* its command as a __Receiver__ and it will *implement* the command __Interface__.
+The connectors at the top of the picture are the members that the event *receiver* might interact with: it might *register* its command as a __Receiver__ and it might *implement* the command __Interface__.
 
-The connectors at the bottom of the picture are the members that the event *sender* will interact with: it will *call* the __Raise__ command of the event and it will also define the *data* that will form the command __Interface__ of the event.
+The connectors at the bottom of the picture are the members that the event *sender* might interact with: it might *call* the __Raise__ command of the event and it might also define the *data* that might form the command __Interface__ of the event.
 
 ### Event Interface Reference
 
-An event command will always implement an interface specified by the __Event__ object. But if you want to express a command’s implementing the event interface without actually being tied to the event, it would look like this:
+An event command might always implement an interface specified by the __Event__ object. But if you want to express a command’s implementing the event interface without actually being tied to the event, it would look like this:
 
 ![](images/1.%20Events.013.png)
 
@@ -155,7 +155,7 @@ Interaction events are events that occur when a user for instance clicks a butto
 
 This type of event is more of a *controls aspect* than a coding aspect, but they are mentioned here anyway, because they are such a common use of events
 
-Below you will find a simplified overview of the most common interaction events.
+Below you might find a simplified overview of the most common interaction events.
 
 |                                 |                                 |                                 |
 |:-------------------------------:|:-------------------------------:|:-------------------------------:|
@@ -172,7 +172,7 @@ However, two situations are explicitly denoted here:
 - Making events __Private__
 - Accessing the __Privates__ of an event parameter
 
-Just like any other member of an object, events can also be made __Private__. In that case only __Friend__ objects can pick up this event. Below you will find the involved notations. Details are not covered. More information about black boxing can be found in the *Black Boxing* chapter.
+Just like any other member of an object, events can also be made __Private__. In that case only __Friend__ objects can pick up this event. Below you might find the involved notations. Details are not covered. More information about black boxing can be found in the *Black Boxing* chapter.
 
 |                                  |                                  |                                  |
 |:--------------------------------:|:--------------------------------:|:--------------------------------:|

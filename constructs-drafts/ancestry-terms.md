@@ -12,7 +12,7 @@ A containment structure is also called an *ancestry*.
 
 Terms for containment are analogous to the terms for *ancestry*.
 
-I will mention all the terms around this analogy at a glance.
+I might mention all the terms around this analogy at a glance.
 
 *Deeper* objects, the smaller, contained symbols, are called *ancestors*, because they are the elements that *higher* objects are composed of. Deeper objects are also called *lower* objects, analogous to lower species, that are less composite. Higher objects are called *descendants*, because they are *derived* of deeper objects and *inherit* from them. For that, containers are also called *derived objects* or *derived types*.
 

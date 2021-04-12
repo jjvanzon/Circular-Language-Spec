@@ -22,7 +22,7 @@ __Contents__
 
 ### Introduction
 
-In the *System Interfaces* articles it has been repeatedly mentioned, that all the system commands can be extended with extra procedures. First, to demonstrate the concept, this article gives you the main examples of system command extension. After that, all the possible system command extensions will be listed out.
+In the *System Interfaces* articles it has been repeatedly mentioned, that all the system commands can be extended with extra procedures. First, to demonstrate the concept, this article gives you the main examples of system command extension. After that, all the possible system command extensions might be listed out.
 
 ### Main Examples of System Command Extension
 
@@ -77,7 +77,7 @@ These types of extension can be applied to each system command. Pre-extension tr
 
 Extension procedures may be implemented by the system interface as events raised by the system commands. But how to best implement procedure extension can be determined later.
 
-A related item will have the following extension possibilities:
+A related item might have the following extension possibilities:
 
 - __Object  .  Get  .  Pre-Extend__
 - __Object  .  Get  .  Post-Extend__
@@ -118,7 +118,7 @@ A related item will have the following extension possibilities:
 
 These are Encircle’s equivalent of __Getters__, __Setters__ and __Property__ procedures.
 
-This adds a lot more possibilities to surround a sub-object’s behavior, than just the one __Getter__ and __Setter__, that other computer programming languages offer. You don’t have to define all of the extension procedures. When you don’t define a __Getter__ or __Setter__, the related item will just have default __Getter__ and __Setter__ behavior.
+This adds a lot more possibilities to surround a sub-object’s behavior, than just the one __Getter__ and __Setter__, that other computer programming languages offer. You don’t have to define all of the extension procedures. When you don’t define a __Getter__ or __Setter__, the related item might just have default __Getter__ and __Setter__ behavior.
 
 =>n related *list items* have the same system commands as =>1 related items, but the extension of a related list item’s system commands is the same for every item of the list, so the extension procedures for related list items are defined by the related list. The related list items have a reference to the list they belong to, and also store the position in the list, as well as a __Remove__ command, that removes the item from the list. In Encircle’s code base, a related list item automatically calls the extension procedures defined in the list, passing the position of the item in the list to the extension procedure as a parameter. Here is a list of all the extension procedures a list can define for a related list’s items:
 
@@ -198,9 +198,9 @@ Extension of the system interface’s members allows you to control the inner wo
 
 ### Extend System Interface with More Members
 
-Other features of Encircle can add more items to the system interface, to define the behavior of a related item. The system interface is *extensible*. For instance the concept of *the class* will add more items to the configuration of a related item. So apart from extending a system interface’s existing commands, new commands and objects can be added to the system interface.
+Other features of Encircle can add more items to the system interface, to define the behavior of a related item. The system interface is *extensible*. For instance the concept of *the class* might add more items to the configuration of a related item. So apart from extending a system interface’s existing commands, new commands and objects can be added to the system interface.
 
-The system interface members added by other features will automatically get all the extension possibilities as well.
+The system interface members added by other features might automatically get all the extension possibilities as well.
 
 ### Extension Regardless of Value Change
 
@@ -236,7 +236,7 @@ In an earlier experiment, version 2.0, a related list also had the extension pro
 
 The concept of extending the system objects is already explained in the article *Extending the System Interfaces*. The current article demonstrates its expression in a diagram.
 
-Not all possible extensions of the system commands will be displayed in this article. Any extension procedure of the system interface commands is displayed the same way. Only a couple of extension procedures will be displayed, to demonstrate the idea.
+Not all possible extensions of the system commands might be displayed in this article. Any extension procedure of the system interface commands is displayed the same way. Only a couple of extension procedures might be displayed, to demonstrate the idea.
 
 ![](images/5.%20Extending%20System%20Objects%20(Older).001.png)
 
@@ -256,7 +256,7 @@ The examples shows the system interface of a related list, but not all its membe
 
 Assignment and retrieval of the related item can be decorated with extra procedures.
 
-Decorating assignment and retrieval of a related item with extra procedures will be covered by the article *Extending the System Interface*.
+Decorating assignment and retrieval of a related item with extra procedures might be covered by the article *Extending the System Interface*.
 
 Each item in the list has different data in its system object, but extensions to the procedures around assignment or retrieval of an item in the list are the same for each item. That’s why the extension procedures of related list items are defined inside the related list.  
 A related list’s system interface has objects, that define the extension procedures of related list items’ system commands:
@@ -289,7 +289,7 @@ At first there was the idea, that a related list item could get the same behavio
 
 -----
 
-Actually, system objects would not be an equivalent of __Getters__ and __Setters__ if it weren’t for the *extension* of system commands. A summary of the system objects would not be complete without a list of all possible system commands and all its possible procedure extensions. Below you will find lists of all the extension possibilities of the system objects. For explanations about the extension possibilities, refer to the article *Extending The System Interfaces*. 
+Actually, system objects would not be an equivalent of __Getters__ and __Setters__ if it weren’t for the *extension* of system commands. A summary of the system objects would not be complete without a list of all possible system commands and all its possible procedure extensions. Below you might find lists of all the extension possibilities of the system objects. For explanations about the extension possibilities, refer to the article *Extending The System Interfaces*. 
 
 Related item extension possibilities:
 

@@ -6,7 +6,7 @@ Concurrency
 
 `[ Preliminary documentation ]`
 
-Concurrency problems might be solved with several mechanisms. Which is the best one is yet to be determined. In this document you will find a lot of ideas about it.
+Concurrency problems might be solved with several mechanisms. Which is the best one is yet to be determined. In this document you might find a lot of ideas about it.
 
 The current document is under construction.  
 Look inside the document Internet As A Single Computer for a better description of the problem.
@@ -38,7 +38,7 @@ In automatic execution order you can see, that when you first assume arbitrary o
 
 #### Concurrency is not considered
 
-Concurrency was not considered in automatic execution order. On top of that, any connection between objects can change *just like that*, so you are only sure which piece of data will be read the moment you are reading it. The only time you know what data gets accessed concurrently, is *when* the data actually gets accessed concurrently. So you only know what readings and writings to specific data will influence each other, the moment *they are* influencing each other. So the *automatic* determination if sub-commands are data-dependent on each other is not possible. It is only possible as soon as reads and writes *are* accessing the same data, which converts this to a concurrency resolution problem, that is not within the area of subject of automatic execution order anymore. Automatic execution order will not consider any volatile concurrency situation for now.
+Concurrency was not considered in automatic execution order. On top of that, any connection between objects can change *just like that*, so you are only sure which piece of data might be read the moment you are reading it. The only time you know what data gets accessed concurrently, is *when* the data actually gets accessed concurrently. So you only know what readings and writings to specific data might influence each other, the moment *they are* influencing each other. So the *automatic* determination if sub-commands are data-dependent on each other is not possible. It is only possible as soon as reads and writes *are* accessing the same data, which converts this to a concurrency resolution problem, that is not within the area of subject of automatic execution order anymore. Automatic execution order might not consider any volatile concurrency situation for now.
 
 #### Concurrency issues
 
@@ -74,7 +74,7 @@ Can you apply automatic execution order to accesses, that are actually happening
 
 In my system it might become a little different. Instead of locking data, which locks procedures, the order of the procedures trying to access the same data is determined. 
 
-If the data does not become available soon enough, the procedure that tries to get access will give up and fail. This causes a rollback of the whole procedure.
+If the data does not become available soon enough, the procedure that tries to get access might give up and fail. This causes a rollback of the whole procedure.
 
 If you can’t automatically determine the execution order for a procedure definition, but you can only determine the execution order of running procedures, then you’re only working on concurrency, no longer on automatic execution order.
 

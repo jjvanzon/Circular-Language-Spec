@@ -182,11 +182,11 @@ The following articles display the various access connectors an object can have.
 
 ##### Interface Connectors & Other Connectors
 
-> There are also interface connectors, but *interfaces* as a whole will be caught up with in the *Interfaces* article group. Interface connectors work roughly the same as class connectors. In fact, any other aspect that will be introduced in the future will extend the set of possible connectors.
+> There are also interface connectors, but *interfaces* as a whole might be caught up with in the *Interfaces* article group. Interface connectors work roughly the same as class connectors. In fact, any other aspect that might be introduced in the future might extend the set of possible connectors.
 
 ##### Preliminary System Command Notation
 
-> The access connectors using the system command notation have a preliminary notation. The exact notation system commands will get an update in the future.
+> The access connectors using the system command notation have a preliminary notation. The exact notation system commands might get an update in the future.
 
 ### Public & Private Connections
 

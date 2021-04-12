@@ -62,7 +62,7 @@ additional J Code optimizations can be gotten from this.
 
 -----
 
-- Stripping code lines (e.g. omitting checks that will never be needed)
+- Stripping code lines (e.g. omitting checks that might never be needed)
 - Optimizing assembly constructions
 
 -----
@@ -148,7 +148,7 @@ For assembly generating software you could make tables drawing out logically equ
 
 I talked about sequences of operations that perform a single logical operation.
 
-I will call a sequence of operation that perform a single logical operation a logical operation. The multitude of assembly equivalents I will call logical operation variations.
+I might call a sequence of operation that perform a single logical operation a logical operation. The multitude of assembly equivalents I might call logical operation variations.
 
 -----
 
@@ -170,17 +170,17 @@ Another optimization is inlining: avoiding jumps.
 
 I suspect that mr. Randall Hyde thinks of a computer software system as something so arbitrary that it can only be optimized by hand. That he thinks of sequences of instructions including jump statements.                  
 
-Sometimes, when input varies arbitrarily (within certain limits), you can't know exactly what will happen in the code in a single case. So there can not be an exact determination of what will happen in case of usage of arbitrary input. There can however be a determination of the ODDS of what will happen. The possible things that will happen is large. But these possibilities are all embedded into the code. 
+Sometimes, when input varies arbitrarily (within certain limits), you can't know exactly what might happen in the code in a single case. So there can not be an exact determination of what might happen in case of usage of arbitrary input. There can however be a determination of the ODDS of what might happen. The possible things that might happen is large. But these possibilities are all embedded into the code. 
 
 When you have a sequence of instructions that take an arbitrary value and limit it between -1 and 1 then this POTENTIALLY limits the possible progressions of the code.
 
 -----
 
-Optimizing weighing out the odds of any possibility against each other is possible, but sometimes not enough. Of the possible things a user can do there are things that users are most likely to do and things that they are less likely to do. This requires arbitrary odds setting by the programmer. The programmer can add to the exact odds a logical odds factor which the assembly generator will take into consideration.
+Optimizing weighing out the odds of any possibility against each other is possible, but sometimes not enough. Of the possible things a user can do there are things that users are most likely to do and things that they are less likely to do. This requires arbitrary odds setting by the programmer. The programmer can add to the exact odds a logical odds factor which the assembly generator might take into consideration.
 
 -----
 
-This way, apart from anything the user can do to be most optimal as a whole, some things the user can do are more optimal than other things a user can do so that the things that the user will do most frequently are optimized the most.
+This way, apart from anything the user can do to be most optimal as a whole, some things the user can do are more optimal than other things a user can do so that the things that the user might do most frequently are optimized the most.
 
 -----
 
@@ -194,15 +194,15 @@ There are tables for optimal assembly operation combinations. Those tables are d
 
 The table with optimal assembly operation combinations determines the fastest logical operation assembly synonym. It also determines the fastest logical operation combination. This is not tying together the fastest logical operations, because the combination of logical operations affects the speed so its the combination that determines the optimal form.
 
-You can mess around with the order of the logical operations if a different order is faster. The programmer will say when the order of logical operations matters or not. 
+You can mess around with the order of the logical operations if a different order is faster. The programmer might say when the order of logical operations matters or not. 
 
 Jumps in code flush the prefetch queue.
 
-Jump statements possibly vary the sequences of logical operations arbitrarily. If no arbitrary input values are used then the program will still operate in a single way. Jumps can be omitted by tying the program up in one sequence without jumps, because the program will execute in but one way. 
+Jump statements possibly vary the sequences of logical operations arbitrarily. If no arbitrary input values are used then the program might still operate in a single way. Jumps can be omitted by tying the program up in one sequence without jumps, because the program might execute in but one way. 
 
 -----
 
-When there is arbitrary (user) input than jumps can become conditional for real. You can't determine how a program will run.
+When there is arbitrary (user) input than jumps can become conditional for real. You can't determine how a program might run.
 
 You can however determine the possible ways the program can run. You can make an organization of the exact odds of the possible program runs. Only the sequences that CAN execute deserve optimization.
 
@@ -215,7 +215,7 @@ Compute the optimization tables directly from the data you base these tables fro
 
 Substituting Intel mnemonics by readable names is a good idea. Being able to use the '=' sign in place of a comma would also be a great help.
 
-Unreal forms of instructions, forms that don't exist on the 8086, but do have a logical meaning, can have synonyms that will work. Being able to use them will help.
+Unreal forms of instructions, forms that don't exist on the 8086, but do have a logical meaning, can have synonyms that might work. Being able to use them might help.
 
 I think that Assembly does not deserve to be used by hand. I think I should write a low level (but higher than assembly) alternative language the compiler of which looks up the fastest way to do it in assembly, so that all the darn rules of assembly are hidden into the compiler and you shouldn't worry about how to optimize, because the compiler does it for you.
 
@@ -231,7 +231,7 @@ Can you derive what effects of an instruction are used and which not from the co
 
 The eventual state of all data after an instruction is all that matters. It defines whether something is a synonym or not or an 'almost synonym' and which data is effected differently and how.
 
-Perhaps for every instruction you can define the effect on any data. If you combine several instructions you still have a single description of the effect on the data. Comparing the effects on the data will give you synonyms. Comparing the effects on the data can also give you 'almost synonyms'.
+Perhaps for every instruction you can define the effect on any data. If you combine several instructions you still have a single description of the effect on the data. Comparing the effects on the data might give you synonyms. Comparing the effects on the data can also give you 'almost synonyms'.
 
 -----
 
@@ -243,7 +243,7 @@ There might be optimization several priorities. You might want to have the faste
 
 The objective is to benefit fully from assembly, but not to have to bother with the downsides of it. On top of that there's added clarity by an alternative naming and forgetting about different instruction forms.
 
-If you take the assembly division instructions for instance then you see that certain forms are faster. Careful use of the alternative language I will make will make faster code(?). But most optimizations are done by the compiler. The amount of tricks and things you need to know to get the optimal result is far smaller than programming in assembly.
+If you take the assembly division instructions for instance then you see that certain forms are faster. Careful use of the alternative language I might make might make faster code(?). But most optimizations are done by the compiler. The amount of tricks and things you need to know to get the optimal result is far smaller than programming in assembly.
 
 -----
 
@@ -343,13 +343,13 @@ Art of Assembly says that segment addresses don’t resolve to a memory location
 
 I see that knowledge of the computer adds a lot of rules to how to optimize assembly code. I was worried that this meant that J Core could not become simple and could not set simple rules, because it should embed all these optimization rules.
 
-A while later I figured out that this wasn’t true. The instruction set that is most of the Assembly language is a clear set of instructions to use with which you can make clear code. You don’t need to be concerned with the machine to make this clear code and with good architecture, it will operate at warp speed for most purposes. It is only when you WANT to optimize for speed that you need to understand the machine. The same should go for J Core. The programming model provides a simple and clear way to work. It is only when you want to optimize things that you should be concerned with the machine.
+A while later I figured out that this wasn’t true. The instruction set that is most of the Assembly language is a clear set of instructions to use with which you can make clear code. You don’t need to be concerned with the machine to make this clear code and with good architecture, it might operate at warp speed for most purposes. It is only when you WANT to optimize for speed that you need to understand the machine. The same should go for J Core. The programming model provides a simple and clear way to work. It is only when you want to optimize things that you should be concerned with the machine.
 
 Assembly sets this challenge: the stuff you program has effects on the speed that are totally obscure when you just understand the code. The code is a complete cloud over what effects it has on the speed. If Intel does it, then J Core can do this: the stuff you program has effects on the speed that are totally obscure when you just understand the code. The code is a complete cloud over wht effects it has on the speed.
 
 So a message from me to me: ‘Don’t worry: design a wonderful programming model and forget about the speed implications. Everyone makes it a difficult to do machine oriented speed optimizations. I can’t correct this and I am not going to.’
 
-An example is accessing memory: accessing memory locations near each other is faster. You can access memory locations far apart from each other all the time. A J Core programmer can too. A J Core programmer can work with unbounded consecutive stretches of memory. If he uses it in a certain way he will gain tremendous speed. He can’t be aware of this just looking at the programming model, just like in assembly.
+An example is accessing memory: accessing memory locations near each other is faster. You can access memory locations far apart from each other all the time. A J Core programmer can too. A J Core programmer can work with unbounded consecutive stretches of memory. If he uses it in a certain way he might gain tremendous speed. He can’t be aware of this just looking at the programming model, just like in assembly.
 
 Note: when the code is clear, everything is faster. Weird time consuming mistakes are made when code is not clear. The code might be so unclear that the programmer doesn’t even know he made a mistake at all.
 

@@ -31,10 +31,10 @@ JJ
 #### Other
 
 Space won't have files,  
-it will have objects  
+it might have objects  
 it won't have folders.  
-It will have objects and collections  
-What used to be files, will again contain objects.
+It might have objects and collections  
+What used to be files, might again contain objects.
 
 -----
 
@@ -50,7 +50,7 @@ Software System:
 
 Perhaps if you make user remember:  
 "You can view any object in the standard way you want to.
-If you are at somebody else's computer, and you are unfamiliar with the way the object is presented, just switch to the standard view that you do know, and you will be comfortable with it again."  
+If you are at somebody else's computer, and you are unfamiliar with the way the object is presented, just switch to the standard view that you do know, and you might be comfortable with it again."  
 But then formulated easier. Make any user remember such meta facts, and most of them may be able to handle any digital object.
 
 JJ
@@ -122,7 +122,7 @@ They require me to go into detail, while fundamental principles was only to give
 
 -----
 
-Some of the Fundamental Principles are very clear. Some are not clear yet. The articles of the unclear Fundamental Principles will be full of details after you write them. Lateron the details have to moved to other articles about the other principles and aspects, that the details are about. The Fundamental Principles should eventually only give a summary and the correlation between other principles and aspects.  
+Some of the Fundamental Principles are very clear. Some are not clear yet. The articles of the unclear Fundamental Principles might be full of details after you write them. Lateron the details have to moved to other articles about the other principles and aspects, that the details are about. The Fundamental Principles should eventually only give a summary and the correlation between other principles and aspects.  
 Eventually in the explanations of the fundamental principles, everything should fall into place, and everything should be explained in a clear-cut way. It should be a complete introduction to my ideas, so it should make a person acquainted with the material.
 
 -----
@@ -249,16 +249,16 @@ JJ
 #### Programming
 
 <  
-I have explained all possibilities of the language, but there simply are things you’ll use more than others. In my former explanations for instance it seems that using object lines is just as common as using type and interface lines. However, you’ll find, let’s say 20 times more object lines that you will find type lines. You might even write a whole module without any interface lines at all.
+I have explained all possibilities of the language, but there simply are things you’ll use more than others. In my former explanations for instance it seems that using object lines is just as common as using type and interface lines. However, you’ll find, let’s say 20 times more object lines that you might find type lines. You might even write a whole module without any interface lines at all.
 
 So some topics of the language might be complex, but used only incidentally.  
 Exclusion, that is, a container’s exclusion of members of its children, doesn’t need to be used a lot. In fact, other programming languages I know don’t even have this capability at all. 
 
-Etcetera. Symbol will become much easier when you find what’s used most and what things are for incidental use, no matter how complex the topics you’ll use incidentally are.
+Etcetera. Symbol might become much easier when you find what’s used most and what things are for incidental use, no matter how complex the topics you’ll use incidentally are.
 
 -----
 
-You can write programs in which you have no notice of any system aspect procedure at all. In programs in which you do work with system aspect procedures, you won’t will not notice the presence of all aspect procedures, just some.  
+You can write programs in which you have no notice of any system aspect procedure at all. In programs in which you do work with system aspect procedures, you won’t might not notice the presence of all aspect procedures, just some.  
 \>
 
 < remember that I can only explain how to program structurally using the systems I’ve programmed as an example >  
@@ -269,7 +269,7 @@ I’ve called this chapter into existence, because I want to write about program
 Fundamental Principles,  
 2009-08
 
-If people find the notation difficult after all, say: that is what we thought about textual computer code once. But we all got used to it. And now we can read each other’s code. When you make a program with diagram code, the code will be clear to you when you make it, than reading someone else’s code. And just as with textual code, you will learn to read other people’s code.
+If people find the notation difficult after all, say: that is what we thought about textual computer code once. But we all got used to it. And now we can read each other’s code. When you make a program with diagram code, the code might be clear to you when you make it, than reading someone else’s code. And just as with textual code, you might learn to read other people’s code.
 
 JJ
 
@@ -320,7 +320,7 @@ CL,
 2008-11-30
 
 It happens a lot, that a design pattern already existed for a long time, but only gets popular, when you make
-it an actual language element. So all good patterns must be present in the programming language itself, or the whole world of software development will not use it at all and will lag behind on progress that already took place.
+it an actual language element. So all good patterns must be present in the programming language itself, or the whole world of software development might not use it at all and might lag behind on progress that already took place.
 
 JJ
 
@@ -335,9 +335,9 @@ http://www.lucas.lth.se/lucas-dagar/2002/slides2002/hedin.pdf
 (newer link 2021-03-06)  
 http://www.lccc.lth.se/media/LCCC2012/WorkshopSeptember/slides/Hedin.pdf
 
-It seems, that the problem with good concepts, such as Aspect Oriented Programming and design patterns, is that they are not used, because they do not become part of the programming language. Those ideas could be made part of the programming language, but instead they are introduced as methodology. If they are made part of the language, then hobbyists will be more likely to use it.
+It seems, that the problem with good concepts, such as Aspect Oriented Programming and design patterns, is that they are not used, because they do not become part of the programming language. Those ideas could be made part of the programming language, but instead they are introduced as methodology. If they are made part of the language, then hobbyists might be more likely to use it.
 
-Many beautiful concepts come up with in the 70's, 80's and 90's are not used, because not enough people know about it. Many of those concepts could be made part of a programming language itself, so that more people, trying out programming, are tempted to experiment with them. If they don't have it available in the language, many concepts will be forgotten about, and the whole proffession of software programming lags behind on itself.
+Many beautiful concepts come up with in the 70's, 80's and 90's are not used, because not enough people know about it. Many of those concepts could be made part of a programming language itself, so that more people, trying out programming, are tempted to experiment with them. If they don't have it available in the language, many concepts might be forgotten about, and the whole proffession of software programming lags behind on itself.
 
 That is why I need to get myself educated about all the ideas, that already existed, so that I know how to give them a place in my own programming language. I need to converge existing ideas, and turn them into new products. That should be my job, rather than just reinventing everything. That would make me more effective in my job. I should be less individualistic. I can do much better work when I use ideas, that already existed before I was born. Those people were not being silly.
 
@@ -422,7 +422,7 @@ JJ
 Encircle,  
 2009-03-13
 
-Icon display and double clicking on them, showing THEIR contents, is ALMOST what I want to see regarding containment, except, that you will actually see the zooming in animate.
+Icon display and double clicking on them, showing THEIR contents, is ALMOST what I want to see regarding containment, except, that you might actually see the zooming in animate.
 
 JJ
 
@@ -465,7 +465,7 @@ Actually a lot of programmers took a long time to realize what they need classes
 
 But they have been applying them for years, because they have been USING classes. They just hadn't been programming classes.
 
-In Encircle it is the same way: aspects, relations and objects and commands and everything are clearly present in the framework libraries. You will be using them before you start to program them yourself.
+In Encircle it is the same way: aspects, relations and objects and commands and everything are clearly present in the framework libraries. You might be using them before you start to program them yourself.
 
 In assembly, you could program in an object oriented way with classes. It is a matter of working in a certain fashion and yes, the syntax looks much different, but you are still modeling with classes and objects.
 
@@ -734,13 +734,13 @@ I think the coupling and cohesion are irrational words, because the number of co
 
 Whether you connect to members directly or group the connections into interfaces: all the connections are still there, actually you have increased the number of connections by first having to connect to the interface.
 
-NCL would solve this for a great part and easily show that the low-coupled (high-interfaced) version actually has more connections than the high coupled (low-interfaced) version. In NCL the readability of the highly coupled system will be better than in other languages, especially when the lines will be regroup as they go from sources to targets. I just forgot how valuable that part of the notation could be when it comes to reading how systems interface with each other. Each grouping of lines could potentially be replaced by an interface, only then you would end up with too many interfaces again. NCL with the use of regrouping of lines as they go from sources to targets would make it easier to automatically explicitly define the interfacing points, or make it easier to spot a place in the system in which it looks appropriate to create an interface in between. But if you create a derived interface for each user of an interface you have actually applied to concept of low-coupling, yet you have created more complexity by creating an insane amount of interfaces.
+NCL would solve this for a great part and easily show that the low-coupled (high-interfaced) version actually has more connections than the high coupled (low-interfaced) version. In NCL the readability of the highly coupled system might be better than in other languages, especially when the lines might be regroup as they go from sources to targets. I just forgot how valuable that part of the notation could be when it comes to reading how systems interface with each other. Each grouping of lines could potentially be replaced by an interface, only then you would end up with too many interfaces again. NCL with the use of regrouping of lines as they go from sources to targets would make it easier to automatically explicitly define the interfacing points, or make it easier to spot a place in the system in which it looks appropriate to create an interface in between. But if you create a derived interface for each user of an interface you have actually applied to concept of low-coupling, yet you have created more complexity by creating an insane amount of interfaces.
 
 Clearly defined interfaces are still valuable in NCL, and do not all of a sudden become unnecessary, but they DO create more connections, rather than less if you put more interfaces in between. However proper interfaces can make the system more readable.
 
 (Low-coupling is not the same as encapsulation. But both are solved using interfaces. Both low-coupling and encapsulation (data-protection) are concepts that are applied using the concept of interfaces, but they attempt to solve different problems, so they are not the same thing. Low-coupling should be about complexity reduction or complexity tangibility, encapsulation should be about data protection and stability. So one is about understandability of a system, and the other is about how easily we can thump over a system.)
 
-So the technique of low-coupling does not create less connections. So low-coupling it is not an exact science of creating less connections, because putting an interface in between actually creates more connections. It is about limitation of complexibility, tangibility of complexity and prevention of complexity. The low-coupling techniques can help in this, but going too far with it actually create more complexity, people just forget to count the actual connections and only count the interfacing points over which multiple connections can be made. Furthermore, the rules of interfacing are not enforced by the machine, but by human hand. You will not devise a system that prevents complexity, it will be humans that prevent complexity, by making things more readable for himself, making it less likely for humans to break their own rules, and humans imposing rules onto another human beings.
+So the technique of low-coupling does not create less connections. So low-coupling it is not an exact science of creating less connections, because putting an interface in between actually creates more connections. It is about limitation of complexibility, tangibility of complexity and prevention of complexity. The low-coupling techniques can help in this, but going too far with it actually create more complexity, people just forget to count the actual connections and only count the interfacing points over which multiple connections can be made. Furthermore, the rules of interfacing are not enforced by the machine, but by human hand. You might not devise a system that prevents complexity, it might be humans that prevent complexity, by making things more readable for himself, making it less likely for humans to break their own rules, and humans imposing rules onto another human beings.
 
 Programmers may get emotional, irrational and upset, when you state that low-coupling is not an exact science and not necessarily required. Someone may irrationally think it is an exact science, because they are selectively forgetting and imagining connections that are or are not there, because in their head they select a set of connections and forget about connections that are still there.
 

@@ -44,7 +44,7 @@ That is why access control literals should be simplified. This article lists out
 
 ### Admission
 
-I have tried to make a good setup of simplification rules, but I have not been able finish it. However, I do find it important to be picked up in the future, to make a clear set of terms, that more easily expresses access control situations. In this article I will lay out the ideas I already have about it, even though it is not finished yet.
+I have tried to make a good setup of simplification rules, but I have not been able finish it. However, I do find it important to be picked up in the future, to make a clear set of terms, that more easily expresses access control situations. In this article I might lay out the ideas I already have about it, even though it is not finished yet.
 
 ### Leave out the inaccessible
 
@@ -82,11 +82,11 @@ Annul Public
 ( Command )
 ```
 
-So only the accessible elements will end up in the access control literal.
+So only the accessible elements might end up in the access control literal.
 
 ### Aspects separated
 
-The various system aspects will always produce their own separate piece of access control literal:
+The various system aspects might always produce their own separate piece of access control literal:
 
 ```
 Value
@@ -98,7 +98,7 @@ Creation ( New / Annul )
 Command / Object
 ```
 
-These elements, if accessible at all, always each produce a *separate* piece of access control literal, and no rules will be introduced, that converge access control elements of different aspects to a single term.
+These elements, if accessible at all, always each produce a *separate* piece of access control literal, and no rules might be introduced, that converge access control elements of different aspects to a single term.
 
 ### Order in a basic literal
 
@@ -165,7 +165,7 @@ Execute
 Creation
 ```
 
-The order was dependent on a general likeliness for a system aspect to be accessed. But this ordering will not be used anymore. The chronological order described below will be used.
+The order was dependent on a general likeliness for a system aspect to be accessed. But this ordering might not be used anymore. The chronological order described below might be used.
 
 ### Chronological order
 
@@ -192,9 +192,9 @@ The terms I would like to see back in access control literals are the terms __In
 Object In, Value Out
 ```
 
-Earlier on, this article introduced a way to use the terms __In__, __Out__ and __Thru__, that I later had to withdraw. It was implied, that In is writing from the outside, and Out is writing from the inside, so it implied, that it was about the access direction of *writing*. However, now I figure that it is whether the inner object writes or reads, so __In__ would mean reading from the inside and __Out__ would mean writing on the inside. How public reading and writing will be called from that perspective, is not clear to me yet (2008-09-29). I will further work out the terms In, Out and Thru in the *Advanced Command Articles*.
+Earlier on, this article introduced a way to use the terms __In__, __Out__ and __Thru__, that I later had to withdraw. It was implied, that In is writing from the outside, and Out is writing from the inside, so it implied, that it was about the access direction of *writing*. However, now I figure that it is whether the inner object writes or reads, so __In__ would mean reading from the inside and __Out__ would mean writing on the inside. How public reading and writing might be called from that perspective, is not clear to me yet (2008-09-29). I might further work out the terms In, Out and Thru in the *Advanced Command Articles*.
 
-Also: it was implied that in __Object Set Public, Value Set Private__, you do not privately *get* the object, that was *set* publicly. But that was a mistake as well: you do first get the object privately in order to set it’s value. This all will be worked out in the *Advanced Command Articles*.
+Also: it was implied that in __Object Set Public, Value Set Private__, you do not privately *get* the object, that was *set* publicly. But that was a mistake as well: you do first get the object privately in order to set it’s value. This all might be worked out in the *Advanced Command Articles*.
 
 ### Object Or Command
 
@@ -235,7 +235,7 @@ Below are described three options for simplification of __New__ and __Annul__ ac
 
 #### Implied by Object aspect
 
-__New__ and __Annul__ are also sort of like __Object__ aspect writing. So __Object Set Public__ may also mean you can publicly execute __New__ on the parameter, as well as __Annul__. So maybe __Object Set__ implies also that you can execute __New__ and __Annul__. __New__ and __Annul__ under the surface will probably use __Object Set__ anyway, and *above* the surface you may be able to use __Object Set__ as a __New__ and __Annul__ after all (but I am saying nothing final about that yet).
+__New__ and __Annul__ are also sort of like __Object__ aspect writing. So __Object Set Public__ may also mean you can publicly execute __New__ on the parameter, as well as __Annul__. So maybe __Object Set__ implies also that you can execute __New__ and __Annul__. __New__ and __Annul__ under the surface might probably use __Object Set__ anyway, and *above* the surface you may be able to use __Object Set__ as a __New__ and __Annul__ after all (but I am saying nothing final about that yet).
 
 But perhaps you should not go with such implication and insist you always express it when you can use __New__ or __Annul__ on something.
 
@@ -331,7 +331,7 @@ Existence Out
 Existence Thru
 ```
 
-The only thing I need to make me completely satisfied with the simplified access control literals, is that good usage of the terms __In__, __Out__ and __Thru__ will replace the terms __Get Public__ , __Set Public__ , __Get Private__ and __Set Private__.
+The only thing I need to make me completely satisfied with the simplified access control literals, is that good usage of the terms __In__, __Out__ and __Thru__ might replace the terms __Get Public__ , __Set Public__ , __Get Private__ and __Set Private__.
 
 ### Replacement that didn’t work out
 

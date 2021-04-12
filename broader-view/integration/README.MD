@@ -60,4 +60,4 @@ Here are some topics that might be put under this umbrella. Some may have their 
 
 - ### ...
 
-    - Perhaps later other types of systems to integrate with will come to light. That is what this placeholder at the end is for.
+    - Perhaps later other types of systems to integrate with might come to light. That is what this placeholder at the end is for.

@@ -178,11 +178,11 @@ Imaginary references `were` put on one level higher:
 
 ![](images/1.%20Relationships%20Construct%20Drafts.022.png)
 
-`When* you*` merge `the*` imaginary references to display that two references `are` part of a single relationship, `you* will not*` connect `all` references to `the*` merged imaginary reference:
+`When* you*` merge `the*` imaginary references to display that two references `are` part of a single relationship, `you* might not*` connect `all` references to `the*` merged imaginary reference:
 
 ![](images/1.%20Relationships%20Construct%20Drafts.023.png)
 
-`You* will` keep separate imaginary references for `the*` other unidirectional relationships to `the*` objects:
+`You* might` keep separate imaginary references for `the*` other unidirectional relationships to `the*` objects:
 
 ![](images/1.%20Relationships%20Construct%20Drafts.016.png)
 
@@ -253,7 +253,7 @@ A __Child__ `can* not*` appear multiple times in `the*` same __Parent__, `becaus
 
 `When*` a __1 => n__ relationship `is` synchronized, `you*` may `have` a risk to an infinite loop. `When* you*` add a __Child__ to a __Parent__, `then* the*` __Parent__ `is` assigned to `the*` __Child__, upon which `the*` __Child__ `is` added to `the*` __Parent__ *again*.
 
-An earlier solution proposed for `this, is` that in synchronizing `the*` relationship, `you*` never boldly __Add__ `the*` __Child__ to `the*` __Parent__, `but* you*` execute a __Find Or Add__, which prevents `the*` __Child__ from being added again, `when*` it `is already` in `the*` __Parent__’s list. `This would* have` worked, `but*` n => n synchronization `already required` a different solution, that `will` be more efficient for n => 1 synchronization as well.
+An earlier solution proposed for `this, is` that in synchronizing `the*` relationship, `you*` never boldly __Add__ `the*` __Child__ to `the*` __Parent__, `but* you*` execute a __Find Or Add__, which prevents `the*` __Child__ from being added again, `when*` it `is already` in `the*` __Parent__’s list. `This would* have` worked, `but*` n => n synchronization `already required` a different solution, that `might` be more efficient for n => 1 synchronization as well.
 
 `When* you*` assign an item to a list for synchronization purposes, `no` synchronization `is to be` executed on `the*` other side again.  
 `You’d* have to` call a `special` __List Item Set__ procedure, accessible `only` to `the*` related class, that simply won’t synchonize back again.
@@ -264,15 +264,15 @@ One *related item* in one object always creates *one related item* inside `the*`
 
 Two items, related to each other in an __n => n__ relationship, `are` always connected to each other, by connecting two `specific` list positions to each other.
 
-In __n => n__ synchronization, __Object A__’s reference to __Object B__ `will` be replaced by a reference to __Object C__. `When*` __Object B__ `is` removed from __Object A__’s list, `then*` __Object A__ `is` also be removed from __Object B__’s list. After that, __Object A__ `is` added to __Object C__’s list.
+In __n => n__ synchronization, __Object A__’s reference to __Object B__ `might` be replaced by a reference to __Object C__. `When*` __Object B__ `is` removed from __Object A__’s list, `then*` __Object A__ `is` also be removed from __Object B__’s list. After that, __Object A__ `is` added to __Object C__’s list.
 
 An item in one list `is` aware of its position in `the*` other list. That makes it easy for an item in one list, to remove itself from `the*` other list.
 
 #### Risk of infinite loop n => n
 
-`But* when* you*` add __Object A__ to __Object C__’s list of related items, `then*` __Object C__ `will` try to add itself to __Object A__’s list of related items, upon which __Object A__ `will` add itself to `the*` list of __Object C__ again. An infinite loop `should` be prevented here.
+`But* when* you*` add __Object A__ to __Object C__’s list of related items, `then*` __Object C__ `might` try to add itself to __Object A__’s list of related items, upon which __Object A__ `might` add itself to `the*` list of __Object C__ again. An infinite loop `should` be prevented here.
 
-`When*` synchronizing `the*` relationship between two objects in an __n => n__ relationship, `you* will` add a position to `the*` list of `the*` referrer, and next assign an item to `this*` position.
+`When*` synchronizing `the*` relationship between two objects in an __n => n__ relationship, `you* might` add a position to `the*` list of `the*` referrer, and next assign an item to `this*` position.
 
 `When* you*` assign an item to a list for synchronization purposes, `no` synchronization `is to be` executed on `the*` other side again.  
 `You'd* have to` call a `special` __List Item Set__ procedure, accessible `only` to `the*` related class, that simply won’t synchronize back again.
@@ -299,7 +299,7 @@ It `is` often easier to `define` something in __1 => n__ relationships, `without
 
 `So then*` it becomes `really important` to `define the* exact` relationship type of something, even `when*` it’s more difficult.
 
-`If* you*` do want to use `the*` __1 => n__ relationship as an __n => n__ relationship, `you*` `should` change `the*` relationship type, `but* you* could*` also choose to split `the*` bidirectional relationship into two unsynchronized unidirectional relationships. However, `you* will` be loosing out on functionality and loosing integrity and coherence of `the*` system.
+`If* you*` do want to use `the*` __1 => n__ relationship as an __n => n__ relationship, `you*` `should` change `the*` relationship type, `but* you* could*` also choose to split `the*` bidirectional relationship into two unsynchronized unidirectional relationships. However, `you* might` be loosing out on functionality and loosing integrity and coherence of `the*` system.
 
 A system in which `all` relationships `are` bidirectional and given `the*` correct relationship type, functions in perfect harmony and everything `is` logical, correct and solid.
 
@@ -336,7 +336,7 @@ JJ
 `The*` __Classes__ collection `contains` objects of class __Class__.  
 `The*` __Relationships__ collection `contains` objects of class __Relationship__.
 
-`Every` __Class__ `has` an __Attributes__ collection. A __Person Class__, for instance, `could* have` a __Name Attribute__ and an __EmailAddress Attribute__ and more attributes such as __Street__, __HouseNumber__, __ZipCode__, etcetera. A __Class__ also `contains` a __RelatedClasses__ collection, which reflects `all` of `the*` class’s related classes. `You* can’t` add __RelatedClasses__ to `this` collection. `You* have to define` relationships in `the*` __Structure.Relationships__ collection and they `will` be *reflected* in `the*` __Class.RelatedClasses__ collection. Other members of `the*` __Class__ class `are*` explained in other sections, `covering` different concepts. However, `all` members `are` briefly explained in a sub section below.
+`Every` __Class__ `has` an __Attributes__ collection. A __Person Class__, for instance, `could* have` a __Name Attribute__ and an __EmailAddress Attribute__ and more attributes such as __Street__, __HouseNumber__, __ZipCode__, etcetera. A __Class__ also `contains` a __RelatedClasses__ collection, which reflects `all` of `the*` class’s related classes. `You* can’t` add __RelatedClasses__ to `this` collection. `You* have to define` relationships in `the*` __Structure.Relationships__ collection and they `might` be *reflected* in `the*` __Class.RelatedClasses__ collection. Other members of `the*` __Class__ class `are*` explained in other sections, `covering` different concepts. However, `all` members `are` briefly explained in a sub section below.
 
 A __Relationship__ consists of two __RelationClasses__. It `contains` two __RelationClass__ objects that `define the*` two classes of `the*` relationship and how they relate to one another.
 
@@ -353,11 +353,11 @@ A `very important` member of a __RelationClass__ `is the*` __AbstractNumber__. `
 To `define the*` quantity of x, `you*` set __ExactNumber__. For instance, in a 
 __Line n<=>2 Point__ relationship, `you* define` for `the*` __Point__ __RelationClass__ that its __AbstractNumber = x__ and its __ExactNumber = 2__.
 
-Two other `important` members of a __RelationClass__ `are` __CreateObjects__ and __EnsureSubObjects__. __CreateObjects__ `is` by default __True__, exceptions `not*` regarded. __CreateObjects__ says that `when*` a new position `is` created within `the*` related list, an object `is` instantly *created* in that position (See *Objects and Object Positions*). In `many` cases `you*` want that to happen. Sometimes `you*` don’t want objects `to be` created, `because* you’d*` want to assign an object to that position yourself. `Then* you*` set __CreateObjects__ to __False__. Furtherly, __EnsureObjects__ `will` see to it that `you* can’t*` assign __Nothing__ to `the*` object position. It `is` __True__ by default, `but* can*` be set to __False__. For more information see `the*` sections *Create Objects* and *Ensure Objects*.
+Two other `important` members of a __RelationClass__ `are` __CreateObjects__ and __EnsureSubObjects__. __CreateObjects__ `is` by default __True__, exceptions `not*` regarded. __CreateObjects__ says that `when*` a new position `is` created within `the*` related list, an object `is` instantly *created* in that position (See *Objects and Object Positions*). In `many` cases `you*` want that to happen. Sometimes `you*` don’t want objects `to be` created, `because* you’d*` want to assign an object to that position yourself. `Then* you*` set __CreateObjects__ to __False__. Furtherly, __EnsureObjects__ `might` see to it that `you* can’t*` assign __Nothing__ to `the*` object position. It `is` __True__ by default, `but* can*` be set to __False__. For more information see `the*` sections *Create Objects* and *Ensure Objects*.
 
 And `then*` there’s another member of __RelationClass__ that `is important` to mention. And that `is` __ListType__. __ListType__ `is usually` set to __NormalListType__, `but* can*` also be set to __ReferenceCountedListType__, __RegistrationListType__, __SharedListType__ or __SelectionListType__. `The*` list `then*` gets `very special` behavior. For more information see `the*` *Specialized Lists* section. Although `I` don’t explain them here `very` thoroughly, __ListType__ does `mean` a `lot` for `the*` general structure of `the*` system.
 
-`You* can*` see that inside a __RelationClass__ object, `much` more `is defined` than `just the*` __Class__. That`’s` why __RelationClass__ `is` a separate class. `Many` times `I will` speak of a relationship class, and `you*` shouldn’t confuse it with `just` a class `then*, because*` it `will` be defining a class as it `is` in `the*` context of a relationship.
+`You* can*` see that inside a __RelationClass__ object, `much` more `is defined` than `just the*` __Class__. That`’s` why __RelationClass__ `is` a separate class. `Many` times `I might` speak of a relationship class, and `you*` shouldn’t confuse it with `just` a class `then*, because*` it `might` be defining a class as it `is` in `the*` context of a relationship.
 
 `The*` elements as `I’ve` described them in `this` section, form `the*` following structure of  __Classes__, __Attributes__ and __Relationships__.
 

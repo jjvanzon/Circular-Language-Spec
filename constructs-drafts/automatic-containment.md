@@ -66,7 +66,7 @@ It must be mentioned, that the method of automatic containment described here, a
 
 ### A slice of referential structure
 
-One thing that will make it doable, to convert a referential structure to a containment structure, is that you will never display the complete referential structure: you will always display a slice of the referential structure. The contents of *one* object are shown and it goes but x levels deep. That way you always display a slice of the referential structure: cut off from the top at the parent object and cut off at the bottom x levels deep. The containment structure is worked out only for that slice of referential structure.
+One thing that might make it doable, to convert a referential structure to a containment structure, is that you might never display the complete referential structure: you might always display a slice of the referential structure. The contents of *one* object are shown and it goes but x levels deep. That way you always display a slice of the referential structure: cut off from the top at the parent object and cut off at the bottom x levels deep. The containment structure is worked out only for that slice of referential structure.
 
 ### The main solution
 
@@ -104,7 +104,7 @@ Regardless of which diagram you find prettier, the containment diagram does disp
 
 Multiple symbols in a diagram can represent the same object. In that aspect, a containment diagram does not explicitly express a single place where the object really is. It does not display where the *object* is, just where the object *references* are. Only one of the symbols should be considered the object itself, and the other symbols mere references.
 
-To determine the containment position of the actual object, you have to ask yourself: what would the *real* containment level of the object be? You will have to go upward in the containment hierarchy, until you find the level at which all the references are contained inside a single symbol. That is the actual containment level of the object:
+To determine the containment position of the actual object, you have to ask yourself: what would the *real* containment level of the object be? You might have to go upward in the containment hierarchy, until you find the level at which all the references are contained inside a single symbol. That is the actual containment level of the object:
 
 ![](images/3.%20Automatic%20Containment.005.png)
 
@@ -120,7 +120,7 @@ The diagram above does not even display the symbol, that represents the object i
 
 It is an *imaginary* reference, directly placed inside the closest mutual parent. It is called imaginary, because its container doesn’t really refer to the object directly.
 
-The other references will connect to the symbol that represents the object itself:
+The other references might connect to the symbol that represents the object itself:
 
 ![](images/3.%20Automatic%20Containment.007.png)
 
@@ -130,11 +130,11 @@ This is a simple example of expressing the location of an object. The situation 
 
 ### Branched out reference lines
 
-Here is a more complex example, in which the lines will branch out into a tree structure. This happens when an object is present in several different branches of the containment structure:
+Here is a more complex example, in which the lines might branch out into a tree structure. This happens when an object is present in several different branches of the containment structure:
 
 ![](images/3.%20Automatic%20Containment.008.png)
 
-Imaginary references will be created at every mutual parent in the structure, that contains multiple references:
+Imaginary references might be created at every mutual parent in the structure, that contains multiple references:
 
 ![](images/3.%20Automatic%20Containment.009.png)
 
@@ -202,9 +202,9 @@ And this is what also happens in the diagrams. That way, something can get a dif
 
 ### Ignored concepts
 
-To easily understand the idea of automatic containment, a few concepts were ignored. In the sections that follow I will consider the concepts that earlier were ingored.
+To easily understand the idea of automatic containment, a few concepts were ignored. In the sections that follow I might consider the concepts that earlier were ingored.
 
-Here is a sum-up of all the concepts that will be considered here.
+Here is a sum-up of all the concepts that might be considered here.
 
 - Physical location
 - Caching
@@ -231,7 +231,7 @@ Even though on a logical level the same object can be logically resident in diff
 
 The logical containment levels are important. They make sure, that you see which objects indirectly contain multiple references to the same object. It also always gives you an intermediate target object to look at, when the real target object is way out of sight: in a diagram, displaying a limited part of the system, there is always one symbol that represents the object itself.
 
-Because the physical location of an object will usually be out of sight, the last intermediate target object, that *is* in sight, usually points out of the diagram: a reference line, the end of which you don’t see on screen. You could even display the name of the physical location in the reference line going out of the screen. If you go one containment level up, you might find another intermediate reference there.
+Because the physical location of an object might usually be out of sight, the last intermediate target object, that *is* in sight, usually points out of the diagram: a reference line, the end of which you don’t see on screen. You could even display the name of the physical location in the reference line going out of the screen. If you go one containment level up, you might find another intermediate reference there.
 
 The storage location gives the object its ID.
 
@@ -241,7 +241,7 @@ Having a single way to clearly express something’s physical location as well a
 
 #### Pointers
 
-The lines connecting to imaginary references are considered imaginary reference lines. In this section I will introduce *real* reference lines, that are set by a programmer, instead of being automatically set by the system.
+The lines connecting to imaginary references are considered imaginary reference lines. In this section I might introduce *real* reference lines, that are set by a programmer, instead of being automatically set by the system.
 
 In the explanations above the lines simply indicate which symbols represent the same object. Imaginary references in mutual parents are used to indicate which symbols contained by the mutual parent represent the same object. The lines connected to imaginary references are also imaginary: they are not really part of the system. The symbols connected to it, don’t really point to it: in reality they point directly to the target object.
 
@@ -265,7 +265,7 @@ In the first story I gave about automatic containment I said, that the target ob
 
 Later I said that the imaginary reference is really not the target object: the target object is the physical storage of the object.
 
-The fact that an object *can* have a fixed spot, also makes it possible for an object to reside on a site. When I still suggested that an object didn’t have a fixed location, it was an enigma how I was going to let an object live inside a site, while an object doesn’t have a fixed location at all. Now an object does have a fixed location, it is easy to place it inside a site. A site could host *pointers* to the physical locations, instead of exposing the target object itself, because you would probably not want other sites to point directly to the place an object is stored or directly see the infrastructure of the site: what disks and which computers. The infrastructure of the site can be hidden by access controlling it. A site will only be exposing things that others have access to.
+The fact that an object *can* have a fixed spot, also makes it possible for an object to reside on a site. When I still suggested that an object didn’t have a fixed location, it was an enigma how I was going to let an object live inside a site, while an object doesn’t have a fixed location at all. Now an object does have a fixed location, it is easy to place it inside a site. A site could host *pointers* to the physical locations, instead of exposing the target object itself, because you would probably not want other sites to point directly to the place an object is stored or directly see the infrastructure of the site: what disks and which computers. The infrastructure of the site can be hidden by access controlling it. A site might only be exposing things that others have access to.
 
 If an object is stored on one site, it may logically be resident in multiple locations, but its physical position is still on that site.
 
@@ -273,7 +273,7 @@ If an object is stored on one site, it may logically be resident in multiple loc
 
 One problem I did not want to consider at first, was that a module might contain a registration list of all objects of a certain class. Because that would have given an object an exact location: that would have given an object a fixed place, and all lines would have pointed directly to the central list, which would not make the diagram overviewable.
 
-However, in the method found, I do not think central registration lists will be a problem anymore. A central registration list does have a place in the diagram, but not all lines are not directly pointing to it, and when it is outside the screen, you only see the closest logical location of the object. The display of the diagram is simply dependant on the level of detail now and lines are usually not pointing directly to a fixed location at all: just to an imaginary logical location. Having central registration lists inside a diagram is really not a problem anymore.
+However, in the method found, I do not think central registration lists might be a problem anymore. A central registration list does have a place in the diagram, but not all lines are not directly pointing to it, and when it is outside the screen, you only see the closest logical location of the object. The display of the diagram is simply dependant on the level of detail now and lines are usually not pointing directly to a fixed location at all: just to an imaginary logical location. Having central registration lists inside a diagram is really not a problem anymore.
 
 #### Classes, interfaces and methods
 
@@ -291,7 +291,7 @@ Imaginary object references are always circles, and not triangles or pentagons o
 
 #### Fixed logical residence
 
-A target object resides on a storage device. That is the residence of the object. However: classes and methods represent structure of a program. The definition of the structure of a program often not only needs a physical target location. The definition of structure of a program often needs to be part of a module: not just as an intermediate target, that then redirects to the storage device, but as the only target. A single logical location can take over the position of the physical target and will become *the* target. That way you can give something a fixed logical location.
+A target object resides on a storage device. That is the residence of the object. However: classes and methods represent structure of a program. The definition of the structure of a program often not only needs a physical target location. The definition of structure of a program often needs to be part of a module: not just as an intermediate target, that then redirects to the storage device, but as the only target. A single logical location can take over the position of the physical target and might become *the* target. That way you can give something a fixed logical location.
 
 This is important for objects that serve as prototypes for other objects (also known as classes) and it is also important for methods to be able to have a fixed logical location. Normal objects can sort of float around and change residence. They don’t need to be part of one module, they just float around.
 
@@ -319,7 +319,7 @@ Because it is unacceptable *not* to see this duality in a diagram, the following
 
 Consider first of all, that if something contains another thing, the reference back to the parent is just as apparent as the parent’s reference to a child: just look a container of the child. So the duality of that relation was already displayed in the diagram.
 
-The rule to follow is: if one direction of the relation is already displayed as going downward in the containment structure, don’t display the other direction of the relation as going downward again, because then you will be displaying the same relation twice.
+The rule to follow is: if one direction of the relation is already displayed as going downward in the containment structure, don’t display the other direction of the relation as going downward again, because then you might be displaying the same relation twice.
 
 So when something is already displayed as something’s parent, you don’t display the reference back to the parent as a child anymore. The display of a containment is already considered the display of a bi-directional relation.
 
@@ -327,11 +327,11 @@ Just accept the fact, that the display of a parent, is already the display of th
 
 - This may stand a little bit in the way of creating a pointer to a reference: if you create a pointer to a parent, are you creating a pointer to the child's pointer to the parent, or are you creating a pointer to the grandparent pointing to the parent? A good solution for this can be found later.
 
-A funny effect of that is, that when you zoom in on a child, the object formerly displayed as the parent, all of a sudden appears as a child again. Something else funny, is that if you zoom in on that child, the child becomes the parent again and you will be seeing the same thing as when you were two zoom levels up! Now, that’s automatic containment!
+A funny effect of that is, that when you zoom in on a child, the object formerly displayed as the parent, all of a sudden appears as a child again. Something else funny, is that if you zoom in on that child, the child becomes the parent again and you might be seeing the same thing as when you were two zoom levels up! Now, that’s automatic containment!
 
 When one direction of a relation is displayed, the other direction is not displayed anymore. That is the rule.
 
-One flaw in this is, that you don’t easily see the relation type. An n => n relation is displayed as a 1 => n relation. A n => 1 relation is displayed as a 1 => 1 relation. A solution may need to be found for that. When and how the full relation types between classes can be expressed will be covered in another article, discussing the explicit expression of relations in a diagram.
+One flaw in this is, that you don’t easily see the relation type. An n => n relation is displayed as a 1 => n relation. A n => 1 relation is displayed as a 1 => 1 relation. A solution may need to be found for that. When and how the full relation types between classes can be expressed might be covered in another article, discussing the explicit expression of relations in a diagram.
 
 In this section it is important to understand that a backward relation between *objects* is always expressed when automatic containment is applied.
 
@@ -341,7 +341,7 @@ A module is there to group something into a large whole. Modules and programs ar
 
 A module is an object. However, it is not represented by a circle, but by a pentagon shape.
 
-You could directly connect lines to the global things, but that will make the diagram unoverviewable. But we already had a solution for that: you make imaginary references.
+You could directly connect lines to the global things, but that might make the diagram unoverviewable. But we already had a solution for that: you make imaginary references.
 
 When the module itself is not in sight, but you are zoomed in on *part* of the module, you are going to see an imaginary reference to the module. Imaginary references to module, just like imaginary object references, are positioned in all the mutual parents from which global things are accessed. But unlike imaginary references to objects, nothing has to point to a module, in order for an imaginary reference to the module be displayed. An imaginary reference to the module is always displayed at the highest visible level of containment. You can point to the global things you see inside this imaginary reference. The imaginary references to module are displayed as pentagons, that is how you recognize the global things you can access.
 
@@ -373,7 +373,7 @@ JJ
 ![](images/3.%20Automatic%20Containment.012.png)
 
 Watch out. The diagrams above suggest that lines don’t always go outwards. But the diagrams are not written well enough. The real imaginary residence of an object or a method definition is not inside the modules where their fixed logical residence is. They are one level higher, because mutual usage extends across the module. If that’s right, then the imaginary target object is different from the real target object ... That means that first lines go outward to the imaginary residence, then back inward to the fixed logical residence, and from thereon tot the physical residence. That is weird, however. The lines going inward could from some views be going outward to an imaginary residence. I still need to work this out. Perhaps you just need to see everything as going outward to a certain extent, but the access marks lead to the fixed logical residence.  
-It’s best not to make a fixed logical residence any more specific than on a site or inside a module. It will get the appropriate imaginary residences anyway.
+It’s best not to make a fixed logical residence any more specific than on a site or inside a module. It might get the appropriate imaginary residences anyway.
 
 -----
 
@@ -593,7 +593,7 @@ JJ
 Automatic Containment,  
 2008-06-19
 
-I just wonder what will be left of the original display of imaginary references, when most references become part of a dual relation, and won’t connect to the same imaginary reference anymore.
+I just wonder what might be left of the original display of imaginary references, when most references become part of a dual relation, and won’t connect to the same imaginary reference anymore.
 
 JJ
 
@@ -629,13 +629,13 @@ When the counterpart of the relation is out of sight, a line should point out of
 
 Diagram Expression,
 
-The diagram view on an object, should be showing just the object's contents x levels deep. When you focus on an object, the diagram will be showing everything x levels deeper, and y levels higher. That way, you have one object focussed on, of which you can see the contents as well as the surroundings, so you can see its direct context.
+The diagram view on an object, should be showing just the object's contents x levels deep. When you focus on an object, the diagram might be showing everything x levels deeper, and y levels higher. That way, you have one object focussed on, of which you can see the contents as well as the surroundings, so you can see its direct context.
 
 JJ
 
 -----
 
-About incorporating automatic containment into the Diagram Expression documentation: I think I should introduce automatic containment only later in the documentation (of Diagram Expression). I should first ignore it, and after explaining enough topics I will have created enough frame of reference, to be able to introduce it
+About incorporating automatic containment into the Diagram Expression documentation: I think I should introduce automatic containment only later in the documentation (of Diagram Expression). I should first ignore it, and after explaining enough topics I might have created enough frame of reference, to be able to introduce it
 
 -----
 
@@ -660,13 +660,13 @@ Esthetic reference:
 
 ![](images/3.%20Automatic%20Containment.014.png)
 
-And automatically the lower references will point to the esthetic reference.  
+And automatically the lower references might point to the esthetic reference.  
 This is actually not true. An imaginary reference is created, that defines mutuality of ...
 
 When you turn a reference structure into a containment structure, you might take away the effect of splitting up methods into sub-methods, that refer to each other.  
-But if you want to reestablish that, you have to put an extra reference to the method on a higher level, and that will actually become the target definition, so you are back in business regarding the splitting up methods into sub-methods.
+But if you want to reestablish that, you have to put an extra reference to the method on a higher level, and that might actually become the target definition, so you are back in business regarding the splitting up methods into sub-methods.
 
-You should stereotype an esthetic reference as esthetic. You might draw it brighter than the other symbols. It will be like it is lifted up: it’s a real reference that’s only there for an imaginary reason. I find the imaginary reason so important, that I have to make it real. It makes it somehow even more real than a real reference that’s there only for a logical reason.
+You should stereotype an esthetic reference as esthetic. You might draw it brighter than the other symbols. It might be like it is lifted up: it’s a real reference that’s only there for an imaginary reason. I find the imaginary reason so important, that I have to make it real. It makes it somehow even more real than a real reference that’s there only for a logical reason.
 
 Imaginary reference not created if single real reference already there. If multiple real references are there, you might create an imaginary one anyway. Because the line to the real reference is imaginary, you can still tell it's an imaginary intermediate target.
 
@@ -717,20 +717,20 @@ Each object’s contents should officially also be class-tied to their class. Bu
 
 About incorporating automatic containment into the Diagram Expression documentation:
 
-I think I should introduce automatic containment only later in the documentation (of Diagram Expression). I should first ignore it, and after explaining enough topics I will have created enough frame of reference, to be able to introduce it
+I think I should introduce automatic containment only later in the documentation (of Diagram Expression). I should first ignore it, and after explaining enough topics I might have created enough frame of reference, to be able to introduce it
 
 ### Commands with Fixed Logical Residence
 
 (2008-05-18)  
 Another way to make a command part of a bigger whole, is to give a command a fixed logical residence. A command already has a fixed *physical* residence, being the place where the command is stored on disk permanently. A command is stored somewhere, just like an object. But a command can also be given a fixed *logical* residence. This fixed logical residence shadows the fixed physical residence and gives a command a fixed logical position. The logical residence is the target of all references to the command. Only the fixed logical residence has access to the physical residence of the command.
 
-It is actually advised to give a command a fixed logical residence. Preferably, you make the command logically part of a module, because modules will bundle together classes and commands to a single logical unit of functionality. Don’t make the command part of a class. This binds a command too much to a class. Give a command the freedom to become part of multiple classes, rather than tying it up to a single class. A class’s granting a command access to its private contents already establishes a tighter bond, and the command will be visible as part of the class anyway, even when the class is not the fixed logical residence of the command. And even when you do give the command a fixed logical residence inside a class, the whole rest of the system is going to ignore that: a command call will still be a call upon multiple objects. Only the definition of the command would then be bound to the class.
+It is actually advised to give a command a fixed logical residence. Preferably, you make the command logically part of a module, because modules might bundle together classes and commands to a single logical unit of functionality. Don’t make the command part of a class. This binds a command too much to a class. Give a command the freedom to become part of multiple classes, rather than tying it up to a single class. A class’s granting a command access to its private contents already establishes a tighter bond, and the command might be visible as part of the class anyway, even when the class is not the fixed logical residence of the command. And even when you do give the command a fixed logical residence inside a class, the whole rest of the system is going to ignore that: a command call might still be a call upon multiple objects. Only the definition of the command would then be bound to the class.
 
 A module can get overloaded command names, when all commands are logically tied to a module, but this was already the case in languages such as C++. In C++ all the commands of all classes were already reachable globally. In Encircle, commands can even be overloaded having the same signatures, because in the diagram they are different symbols, and can be reached separately regardless of their name or signature.
 
 ### Ideas From Commands & Classes Loosely coupled
 
-< 2008-09-22. These sections used to be part of Commands & Classes Loosely Coupled, but are moved to Automatic Containment as a cross out text. Some of the approaches in this section are old. Class commands are no longer imaginary. The questions, that remain at the end of the first section should be solved by automatic containment of relations. The display of a bidirectional relation between a command and an object is not like this anymore. If the explanations will not have a place in Automatic Containment anymore, then they can be deleted, because these texts are not required anywhere else. >
+< 2008-09-22. These sections used to be part of Commands & Classes Loosely Coupled, but are moved to Automatic Containment as a cross out text. Some of the approaches in this section are old. Class commands are no longer imaginary. The questions, that remain at the end of the first section should be solved by automatic containment of relations. The display of a bidirectional relation between a command and an object is not like this anymore. If the explanations might not have a place in Automatic Containment anymore, then they can be deleted, because these texts are not required anywhere else. >
 
 #### Automatic containment of independent commands
 
@@ -740,13 +740,13 @@ It works the same for commands. A command has a fixed physical location, where t
 
 A reference to a command is either a command invocation, or an inactive pointer to the command. For now only command invocations are considered, also called *command calls*.
 
-In this section, about automatic containment of commands, I will first look at commands as totally independent entities, not tied to a class at all. I will actually explain here how a more structured view on a command call is translated to a flat view on it, because the flat view is how things will be physically stored. In later sections, I will show, how a flat view will translate to a structured view, and explain how a call upon a global command turns into a call upon multiple objects.
+In this section, about automatic containment of commands, I might first look at commands as totally independent entities, not tied to a class at all. I might actually explain here how a more structured view on a command call is translated to a flat view on it, because the flat view is how things might be physically stored. In later sections, I might show, how a flat view might translate to a structured view, and explain how a call upon a global command turns into a call upon multiple objects.
 
-A call to a command contains parameters, to which objects need to be assigned. When an object is assigned to a parameter, the parameter is tied to the closest imaginary reference to the object. The command call will simply contain object references pointing outward to imaginary object references.
+A call to a command contains parameters, to which objects need to be assigned. When an object is assigned to a parameter, the parameter is tied to the closest imaginary reference to the object. The command call might simply contain object references pointing outward to imaginary object references.
 
-The command call symbol itself, so not the command parameters, but the command call itself, will point to the closest imaginary reference to the command definition. The command call symbol will be connected to the closest imaginary reference with a class line (a dashed line), because the command symbols will represent the same class of command, not the same instance of the command (a call itself is an instance of a command, but the commands tied together represent the same definition, not the same call).
+The command call symbol itself, so not the command parameters, but the command call itself, might point to the closest imaginary reference to the command definition. The command call symbol might be connected to the closest imaginary reference with a class line (a dashed line), because the command symbols might represent the same class of command, not the same instance of the command (a call itself is an instance of a command, but the commands tied together represent the same definition, not the same call).
 
-Now I will explain, how you create a command call in the programming environment. A command *call* can be created inside another command. First you create a command call, with no particular command assigned to it yet.
+Now I might explain, how you create a command call in the programming environment. A command *call* can be created inside another command. First you create a command call, with no particular command assigned to it yet.
 
 | ![](images/3.%20Automatic%20Containment.015.png) | `=>` | ![](images/3.%20Automatic%20Containment.016.png) |
 |--------------------------------------------------|------|--------------------------------------------------|
@@ -787,7 +787,7 @@ Turns into this:
 
 ![](images/3.%20Automatic%20Containment.022.png)
 
-When you get used to reading the diagrams, you will clearly see that you are calling a command of a module, passing an object on a site to it as a parameter. You also see that nearby there is a reference to the same object, that contains an imaginary reference to the command.
+When you get used to reading the diagrams, you might clearly see that you are calling a command of a module, passing an object on a site to it as a parameter. You also see that nearby there is a reference to the same object, that contains an imaginary reference to the command.
 
 But what you don’t see, is that you are calling a command of an object. That’s what still ‘sucks’ in this notation.
 
@@ -845,7 +845,7 @@ It is an implicit notation, because a connection between two symbols usually mea
 
 Connecting a *parameter* directly to a *command* definition inside an object is *the* implicit notation for interchangeability between command parameters and class commands, because it is useful for editing and it is unambiguous as to which objects are called / which object are the parameters.
 
-In object oriented all members of the class, that the command is part of, were available directly from within the command, without qualifying them with the object name, in other words: without accessing them through an object. But in commands and classes loosely coupled, the object a command is called upon is like accessing an object inside the command anyway. But perhaps this notation will be changed in the future. Or perhaps not: this may be a concession you need to make.
+In object oriented all members of the class, that the command is part of, were available directly from within the command, without qualifying them with the object name, in other words: without accessing them through an object. But in commands and classes loosely coupled, the object a command is called upon is like accessing an object inside the command anyway. But perhaps this notation might be changed in the future. Or perhaps not: this may be a concession you need to make.
 
 \> 2008-09-06 Actually, if you make the command parameter object a triangle, then the members of the triangle sort of melt together with the command, making the triangle’s members direct available without any further qualification. To prevent the triangle’s members to be directly accessible through the command object, you can just make the triangle Private. But then you have the problem, that the parameter is Private, which does not make it a parameter of the command anymore, but a Private object. The solution is to add a private triangle to the command, that is a reference to the parameter. < See picture on paper 2008-09-06. >
 
@@ -855,7 +855,7 @@ First you create a call inside another command.
 
 ![](images/3.%20Automatic%20Containment.016.png)
 
-Then you need to assign a command definition to it, to determine which command you are going to call, unless you will be defining the procedure right then and there, right inside the call. You can assign a command definition in two ways:
+Then you need to assign a command definition to it, to determine which command you are going to call, unless you might be defining the procedure right then and there, right inside the call. You can assign a command definition in two ways:
 
 - You point the call to an imaginary command reference somewhere or
 - you point the call to an imaginary command definition inside an object.
@@ -935,7 +935,7 @@ I still do not know what to do with the fact, that the class lines to class B of
 
 ![](images/3.%20Automatic%20Containment.042.png)
 
-I also do not know why, when a definition inside an object is called by giving the call a class line to the definition, the class line is unary again, and what will make it so, that this will make the object of which the definition was used as a class, the parameter of the call, giving the object an active command reference back to the call.  
+I also do not know why, when a definition inside an object is called by giving the call a class line to the definition, the class line is unary again, and what might make it so, that this might make the object of which the definition was used as a class, the parameter of the call, giving the object an active command reference back to the call.  
 I do not know yet what makes this happen and why so many class lines are unary.  
 I expected class relations to be more like object relations and more dual, and I expected relations to automatically cause intuitive behavior of calls and stuff.  
 I think I have to compare it conceptually to how you look at it in current programming languages.
@@ -978,7 +978,7 @@ Referential structure is real. Containment structure is imaginary.
 Automatic containment displays the references as containment, then converges references to the same object back to a single imaginary object location near the top of the structure visible in the diagram. Then that imaginary object location leads back to the logical object location possibly somewhere on another site, even, by following inward references.  
 Those inward references could also be interpreted as going outward to the imaginary object location. The logical target location leads even further, to the physical target location, but that’s for another project.
 
-In conceptual explanations you can stick to the referential approach, while automatic containment will convert it to a containment structure.
+In conceptual explanations you can stick to the referential approach, while automatic containment might convert it to a containment structure.
 
 JJ
 
@@ -1105,7 +1105,7 @@ You have to look at basics of Symbol. And the basic thing is encapsulation. The 
 
 Symbol always had a lack of expression in plurality. How. You’d almost want a new shape of symbol. But I’ve sort of run out of shapes. I’d go for a hexagon. It looks like a circle, but has a plurality feeling to it. If you have to, you could choose for octagons.
 
-Of course, one of those, would contain a variable amount of objects, that don’t even have to be of the same type, but will always have the same interface I guess.
+Of course, one of those, would contain a variable amount of objects, that don’t even have to be of the same type, but might always have the same interface I guess.
 
 That would conclude seem to conclude the parallelization of Symbol and Structure.
 
@@ -1117,13 +1117,13 @@ How well are the relation between types shown in symbol. Well, you see the conta
 
 But how do the relations between classes show? Each circle or octagon expresses a relation class. Its class target is the class. You can recognize the class of the target by the class name of the relation class symbol. Class splines show the Structure Relations.
 
-Ok, to recap: most things can be mutually exchangeable between Symbol and Structure. There are two tacky points though: giving the Symbol code an encapsulation structure and plurality in symbol. An octagon will express that an object is plural. The encapsulation is derived from the reference structure using the mutual parent method. Some advantage symbol adds to Structure then, are encapsulation and also object relations. In structure code, it’s hard to view object relations.
+Ok, to recap: most things can be mutually exchangeable between Symbol and Structure. There are two tacky points though: giving the Symbol code an encapsulation structure and plurality in symbol. An octagon might express that an object is plural. The encapsulation is derived from the reference structure using the mutual parent method. Some advantage symbol adds to Structure then, are encapsulation and also object relations. In structure code, it’s hard to view object relations.
 
 Oh, gee. The expression of the structure is covered that way.  
-But what about the generated code? The data part may look much like the structure, but what about the user interface. Code for the user interface will add so much diagram to it, that overview over the really structure will be pushed away.  
+But what about the generated code? The data part may look much like the structure, but what about the user interface. Code for the user interface might add so much diagram to it, that overview over the really structure might be pushed away.  
 Oh, how funny, you program the structure in one diagram, but the object oriented system that comes out is a different structure, that resembes the structure diagram, but is much more extended.
 
-Object relations will only come to light when the generated code is running.  
+Object relations might only come to light when the generated code is running.  
 However, you should be able to define static object relations in the structure, or not? Anyway, in the generated code, you should also be able to hide all user interface elements.
 
 - Translate Literally
@@ -1136,12 +1136,12 @@ However, you should be able to define static object relations in the structure, 
     - Things in the generated application are hidden, to keep the focus on the structure (but they can be shown if chosen).
 - Extra Relation Splines
     - Add special lines to the diagram that expresses the Structure. You won’t see the relations between classes as well in the structure as you do in the generated code, and I do want to see it. The relations between classes should be expressed with relation splines in the Classes collection. And the classes collection’s mutual parent structure should be expressed as the encapsulation structure, right then and there. Diagram elements may be added to better see that.
-    Perhaps I should develop a separate way to notate the structure. Perhaps you should draw out the relations as you see them in the generated code and then Structure will figure out what it means.
+    Perhaps I should develop a separate way to notate the structure. Perhaps you should draw out the relations as you see them in the generated code and then Structure might figure out what it means.
     That means you draw classes and you put object in them and that draws out the relation. The object contain the members of the Class class and you can specify it furtherly there.
 
 Nee, forget all that.
 
-Als je Structure in Symbol gaat toepassen, zal je een deel van ‘de gegenereerde code’ zelf programmeren. Dat lijkt in ieder geval zo. Als je een class in de structure will aanmaken, maak je een symbol aan. Als je een relatie tussen twee klassen wilt maken, dan maak je een object reference aan in een klasse die een relatie met de ander heeft. De relatie wordt wel automatisch dual. Als je een attribuut wilt toevoegen aan een class, dan stop je een objectje er gewoon in. Attributen worden trouwens objecten. Veel dingen worden wel op een gewone Structure achtige wijze ingevoerd. Daarvoor heeft een object symbol een Class interface gekregen, waar de structure information in wordt bewerkt. Daarin kun je ook bijvoorbeeld, customizen voor deeper objects. Je ziet ook nog globaal de classes en de relations collecties. Je ziet dus gewoon alle structuur informatie. Je kunt ook alles van de gegenereerde applicatie zien. Zo kun je in het aangemaakte object symbol (dat een Structure class is) de symboliek van de gegenereerde user interface zien. Die symboliek wordt automatisch bijgewerkt als je de Class informatie aanpast. Wijzigingen in de gegenereerde user interface symboliek worden als customization gezien en blijven staan, tenzij ze weer gedefault worden, waardoor de generator weer bepaalt wat het wordt. Je kunt ook een symbol meteen runnen, dus je kunt een control meteen laten zien.
+Als je Structure in Symbol gaat toepassen, zal je een deel van ‘de gegenereerde code’ zelf programmeren. Dat lijkt in ieder geval zo. Als je een class in de structure might aanmaken, maak je een symbol aan. Als je een relatie tussen twee klassen wilt maken, dan maak je een object reference aan in een klasse die een relatie met de ander heeft. De relatie wordt wel automatisch dual. Als je een attribuut wilt toevoegen aan een class, dan stop je een objectje er gewoon in. Attributen worden trouwens objecten. Veel dingen worden wel op een gewone Structure achtige wijze ingevoerd. Daarvoor heeft een object symbol een Class interface gekregen, waar de structure information in wordt bewerkt. Daarin kun je ook bijvoorbeeld, customizen voor deeper objects. Je ziet ook nog globaal de classes en de relations collecties. Je ziet dus gewoon alle structuur informatie. Je kunt ook alles van de gegenereerde applicatie zien. Zo kun je in het aangemaakte object symbol (dat een Structure class is) de symboliek van de gegenereerde user interface zien. Die symboliek wordt automatisch bijgewerkt als je de Class informatie aanpast. Wijzigingen in de gegenereerde user interface symboliek worden als customization gezien en blijven staan, tenzij ze weer gedefault worden, waardoor de generator weer bepaalt wat het wordt. Je kunt ook een symbol meteen runnen, dus je kunt een control meteen laten zien.
 
 Je ziet gewoon de structuur informatie en de gegenereerde applicatie in één symbol diagram. Dus voor een deel programmeer je in Symbol de Structure alsof je zelf de gegenereerde code aan het programmeren bent en de structure informatie is nog steeds wel beschikbaar. Alles wat je ziet komt ook in de gegenereerde applicatie terecht. Structuur informatie wordt namelijk ook zichtbaar in de gegenereerde applicatie. De uitzondering daarop is dat er kan gekozen worden om structuur informatie achterwege te laten in de generated application, alsmede andere dingen achterwege gelaten, maar die dingen zie je dan wel in de design code.
 
@@ -1295,7 +1295,7 @@ Automatic Containment,
 
 Brainstorm:
 
-I am wondering if I can stop emphasizing every symbol is a reference, and just save that for specific diagram topics. That will make the story a lot simpler. I can then ignore automatic containment, making an outer stub of a redirection, the object itself. Crap, would that simplify the explanations.
+I am wondering if I can stop emphasizing every symbol is a reference, and just save that for specific diagram topics. That might make the story a lot simpler. I can then ignore automatic containment, making an outer stub of a redirection, the object itself. Crap, would that simplify the explanations.
 
 
 In automatic containment, I create imaginary references, turning all the symbols imaginarily to object references,
@@ -1305,7 +1305,7 @@ Ignore that for other article groups. Only focus on the current one. But actuall
 
 In that case, I should stop calling them pointers to pointers. They are, but I should stop calling them that.
 
-It would so much simplify the usage of the language. If you have to consider any symbol a reference, then it will be totally inaccessible to children, for instance.
+It would so much simplify the usage of the language. If you have to consider any symbol a reference, then it might be totally inaccessible to children, for instance.
 
 
 These contemplations have everything to do with the implications of automatic containment. Every symbol is a reference. But in the original Symbol, the target of all the redirections was the object itself. I have to uphold that, for a better understandable language.

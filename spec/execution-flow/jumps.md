@@ -40,7 +40,7 @@ The following forms of *jumps* are supported:
 
 Each form is explained in a separate article. 
 
-The last two jumps are only used inside a loop, and will not be explained in this set of articles, but will be explained by the article *Jump-Related Loops*.
+The last two jumps are only used inside a loop, and might not be explained in this set of articles, but might be explained by the article *Jump-Related Loops*.
 
 ### Diagram
 
@@ -57,7 +57,7 @@ The following forms of *jumps* are supported:
 
 Each form is explained in a separate article. 
 
-The last two jumps are only used inside a loop, and will not be explained in this set of articles, but will be explained by the article *Jump-Related Loops in a Diagram*.
+The last two jumps are only used inside a loop, and might not be explained in this set of articles, but might be explained by the article *Jump-Related Loops in a Diagram*.
 
 ### Normal Execution Order
 
@@ -67,7 +67,7 @@ Normal execution order of a procedure means one command being followed up by the
 
 But in Encircle, a command is basically just a collection of calls to other commands with no particular order.
 
-If you don’t indicate the order in which to execute the commands, then they will execute in an arbitrary order. Sometimes this is acceptable from a functional point of view.
+If you don’t indicate the order in which to execute the commands, then they might execute in an arbitrary order. Sometimes this is acceptable from a functional point of view.
 
 The order of a procedure can also be *automatically* determined by *input / output dependency*. A command, called inside a procedure, can take input, that is the output of another command. Then the other command needs to execute first, in order to pass its output on to the next command. This is called the *automatic execution order* principle, part of the flat & structured interchange principles. 
 
@@ -82,7 +82,7 @@ Normal execution order is a form of execution flow. Following the *normal execut
 
 The hope that comes with automatic execution order determined by input / output dependency is to not have to define any normal execution order, because if parts of a procedure have no input / output dependency, then those parts can always execute in any arbitrary order.
 
-Automatic execution order is not worked out in this article. It is will be worked out in the article *Automatic Execution Order*. Normal execution order is about indicating the order of execution yourself.
+Automatic execution order is not worked out in this article. It is might be worked out in the article *Automatic Execution Order*. Normal execution order is about indicating the order of execution yourself.
 
 #### Diagram
 
@@ -165,17 +165,17 @@ __Exit Command__ immediately stops executing a command, leaving any output in an
 
 The execution flow command __Exit Command__ takes a reference to the __Command End__ as a parameter. The __Command End__ is explained in the article *Normal Order*.
 
-The implementation of the execution flow command __Exit Command__ will remove the command that is exited from the call stack, and immediately jumps to the command referred to by the __Command End__, that was passed to it.
+The implementation of the execution flow command __Exit Command__ might remove the command that is exited from the call stack, and immediately jumps to the command referred to by the __Command End__, that was passed to it.
 
 #### Diagram
 
-__Exit Command__ is defined in a command definition. It will transfer control to the command, that immediately follows after it. The __Exit Command__ command is passed the __Command End__ as an argument:
+__Exit Command__ is defined in a command definition. It might transfer control to the command, that immediately follows after it. The __Exit Command__ command is passed the __Command End__ as an argument:
 
 ![](images/4.%20Jumps.008.png)
 
 For information about the command end, see the article *Normal Execution Order* *in a Diagram*.
 
-The normal execution order in the command *definition* is not yet pointing to the next step. It represents the normal execution order as it *will be* in a call to the command definition.
+The normal execution order in the command *definition* is not yet pointing to the next step. It represents the normal execution order as it *might be* in a call to the command definition.
 
 The __Exit Command__ looks as follows inside a command call: 
 

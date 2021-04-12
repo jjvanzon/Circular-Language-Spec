@@ -47,7 +47,7 @@ The __Interface__ aspect allows you to control how objects look on the outside, 
 
 The triangle is the symbolization of the __Interface Merging__ aspect, and the dotted line is the symbolization of __Interface__ aspect.
 
-__Interface Merging__ in the future will probably become an aspect that extends beyond the concept of interfaces, because it could for instance apply to the concept of default members too.
+__Interface Merging__ in the future might probably become an aspect that extends beyond the concept of interfaces, because it could for instance apply to the concept of default members too.
 
 ### System Commands for the Interface Aspect
 
@@ -105,7 +105,7 @@ which delegates directly to the __Reference Get__ command.
 
 #### The Overloads Recapitulated
 
-Do not wreck your brain over all this delegation and overloading. It is just for pointer-to-pointer situations to have the same command names as standard situations, and also to be able to separately access-control the specific *uses* of references or objects. You will not usually see the pointer-related commands, because they will be implicitly delegated to by the main commands. This leaves us with the following commands:
+Do not wreck your brain over all this delegation and overloading. It is just for pointer-to-pointer situations to have the same command names as standard situations, and also to be able to separately access-control the specific *uses* of references or objects. You might not usually see the pointer-related commands, because they might be implicitly delegated to by the main commands. This leaves us with the following commands:
 
 - __Use As Interface__
 - __Interface Set__
@@ -113,7 +113,7 @@ Do not wreck your brain over all this delegation and overloading. It is just for
 - __Object-Interface Get__
 - __Use Reference As Interface__
 
-Detail: For that last command you might want to overload Object Get. But that does not work. You can not overload it, because they will both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
+Detail: For that last command you might want to overload Object Get. But that does not work. You can not overload it, because they might both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
 
 ### System Commands for the Interface Merging Aspect
 
@@ -261,13 +261,13 @@ Cross-aspect situations can apply to the __Interface__ aspect, but they are not 
 
 #### Interface - System Interface - Command Call Notation
 
-Only one example of a call to a system command of the __Interface__ aspect using the system interface notation will be given here. Below you will find this notation for a call to the __Object-Interface Get__ command:
+Only one example of a call to a system command of the __Interface__ aspect using the system interface notation might be given here. Below you might find this notation for a call to the __Object-Interface Get__ command:
 
 ![](images/2.%20Interface%20Aspect.017.png)
 
 #### Simplified System Command Call Notation
 
-Below you will find the various types of calls to a system command on the __Interface__ aspect in the *simplified system command call notation*.
+Below you might find the various types of calls to a system command on the __Interface__ aspect in the *simplified system command call notation*.
 
 |                                             |                                             |
 |:-------------------------------------------:|:-------------------------------------------:|
@@ -285,7 +285,7 @@ Below you will find the various types of calls to a system command on the __Inte
 
 #### System Command Call Notation with Argument
 
-Below you will find the various types of calls to a system command on the __Interface__ aspect in the *system command call with argument notation*.
+Below you might find the various types of calls to a system command on the __Interface__ aspect in the *system command call with argument notation*.
 
 |                                             |                                             |                                             |
 |:-------------------------------------------:|:-------------------------------------------:|:-------------------------------------------:|
@@ -308,7 +308,7 @@ Below you will find the various types of calls to a system command on the __Inte
 
 #### Explicit Get & Set Notation
 
-Below you will find some examples of the *explicit Get and Set* notation working on the __Interface__ aspect.
+Below you might find some examples of the *explicit Get and Set* notation working on the __Interface__ aspect.
 
 ![](images/2.%20Interface%20Aspect.032.png)
 
@@ -328,7 +328,7 @@ Below you find various notations where __Get__ and __Set__ arguments are explici
 
 ### Interface Connectors
 
-Below you will find an overview of the possible connectors for the __Interface__ aspect and the __Interface Merged__ aspect.
+Below you might find an overview of the possible connectors for the __Interface__ aspect and the __Interface Merged__ aspect.
 
 |                                             |                                             |
 |:-------------------------------------------:|:-------------------------------------------:|
@@ -346,7 +346,7 @@ Below you will find an overview of the possible connectors for the __Interface__
 
 ### Interface Connections
 
-Below you will find the possible connections for the __Interface__ aspect and the __Interface Merged__ aspect. A connection is the result of a call to a system command. However, the result of call to the __Interface Merged Set__ command is that the reference becomes a triangle or a circle shape. This result is also presented in this overview.
+Below you might find the possible connections for the __Interface__ aspect and the __Interface Merged__ aspect. A connection is the result of a call to a system command. However, the result of call to the __Interface Merged Set__ command is that the reference becomes a triangle or a circle shape. This result is also presented in this overview.
 
 |                                             |                                             |
 |:-------------------------------------------:|:-------------------------------------------:|
@@ -366,8 +366,8 @@ But now also the __Interface__ can be specified upon creation of an object. This
 
 ![](images/2.%20Interface%20Aspect.050.png)
 
-Now the __New__ command’s __Interface__ parameter is filled in. The new object will have a fixed interface, but the object does not have a class. This means the __Publics__ are fixed by the interface, but an implementation is free to fill in.
+Now the __New__ command’s __Interface__ parameter is filled in. The new object might have a fixed interface, but the object does not have a class. This means the __Publics__ are fixed by the interface, but an implementation is free to fill in.
 
 You do not need to set both __Class__ and __Interface__ parameter of the __New__ method, because if the __Class__ parameter is set, it determines the __Interface__ too.
 
-It is also not required to set either parameter, because that will create an empty object in which you can put arbitrary content, that is not bound to a class or interface at all.
+It is also not required to set either parameter, because that might create an empty object in which you can put arbitrary content, that is not bound to a class or interface at all.

@@ -33,7 +33,7 @@ __Contents__
 
 ### Introduction
 
-There are four groups of specialization techniques that can be identified. Each will be separately explained:
+There are four groups of specialization techniques that can be identified. Each might be separately explained:
 
 - *Data Replacement*
 - *Altering the Member Set*
@@ -72,7 +72,7 @@ The easiest technique for specialization by altering the member set is *member a
 
 ![](images/2.%20Specialization.003.png)
 
-Member addition means adding a member, that was not there in the base, but will be in the derived object:
+Member addition means adding a member, that was not there in the base, but might be in the derived object:
 
 ![](images/2.%20Specialization.004.png)
 
@@ -113,7 +113,7 @@ Each of them is covered in a separate article
 
 #### Disclaimer
 
-Inheritance makes extensive use of the concepts of overriding and shadowing. However, the notations and implementations of overriding and shadowing are not worked out to perfection yet. Preliminary notations are proposed. They will be reconsidered when working out the chapter *Object Resolution*.
+Inheritance makes extensive use of the concepts of overriding and shadowing. However, the notations and implementations of overriding and shadowing are not worked out to perfection yet. Preliminary notations are proposed. They might be reconsidered when working out the chapter *Object Resolution*.
 
 #### Shadowing
 
@@ -179,7 +179,7 @@ What should also be mentioned is that overriding is not specific to inheritance.
 
 ##### Calling Base Class’s Version of Overridden Member
 
-Some programming languages offer a way to call the member defined by the base class, even when the base member was overridden. In Encircle this is not possible by default, because any call to the overridden member will redirect to the overriding member.
+Some programming languages offer a way to call the member defined by the base class, even when the base member was overridden. In Encircle this is not possible by default, because any call to the overridden member might redirect to the overriding member.
 
 ![](images/2.%20Specialization.022.png)
 
@@ -223,7 +223,7 @@ However, the intrinsic overriding notation was discarded, because it is undefend
 
 Another way to specialize a derived object is to *alter* the command implementations of the base object (as opposed to replacing a command entirely).
 
-Several separate techniques can be identified and will be explained in individual articles:
+Several separate techniques can be identified and might be explained in individual articles:
 
 - *Command Extension*
 - *System Command Extension*
@@ -252,7 +252,7 @@ Another way to specialize a derived object is to let it define extra functionali
 
 ![](images/2.%20Specialization.031.png)
 
-So then the derived class defines something that will be run every time the object’s value changes.
+So then the derived class defines something that might be run every time the object’s value changes.
 
 #### System Command Overriding
 
@@ -290,7 +290,7 @@ A benefit of system command extension by shadowing compared to normal system com
 
 #### System Commands Extension By Overriding (Questionable)
 
-This is a technique that will not work. The idea is that you accomplish command extension by employing the overriding concept. The idea is that you override the base command, executing your own procedure and call the base command from your own procedure.
+This is a technique that might not work. The idea is that you accomplish command extension by employing the overriding concept. The idea is that you override the base command, executing your own procedure and call the base command from your own procedure.
 
 ![](images/2.%20Specialization.036.png)
 

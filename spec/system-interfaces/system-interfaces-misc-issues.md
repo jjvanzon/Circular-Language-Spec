@@ -30,7 +30,7 @@ __Contents__
 
 ### System Command Calls by User
 
-A user will often execute __Gets__ and __Sets__ and other system commands when connecting symbols together, but they will only see the connectors and the *result* of a __Get__ and __Set__, but never the explicit __Get__ and __Set__ calls. The system commands are executed as the user builds up a diagram.
+A user might often execute __Gets__ and __Sets__ and other system commands when connecting symbols together, but they might only see the connectors and the *result* of a __Get__ and __Set__, but never the explicit __Get__ and __Set__ calls. The system commands are executed as the user builds up a diagram.
 
 ### Objects Floating Around
 
@@ -72,19 +72,19 @@ Any system command can be decorated with a __Pre-Extension__, __Post-Extension__
 
 System command extensions are implemented the same way as ‘normal’ command extensions. Command extension is put under the topic of *Inheritance*, because it is an extension technique.
 
-System command extension will get a notation, that complies to the notation of normal command extension. The code base will implement system command extension like normal command extension and the way extension is implemented inside the code base will influence how the eventual notation will look.
+System command extension might get a notation, that complies to the notation of normal command extension. The code base might implement system command extension like normal command extension and the way extension is implemented inside the code base might influence how the eventual notation might look.
 
 It might look something like this:
 
 ![](images/5.%20System%20Objects%20Misc%20Issues.006.png)
 
-But the exact way in which command extension is implemented will be covered by the *Inheritance* articles.
+But the exact way in which command extension is implemented might be covered by the *Inheritance* articles.
 
 ### Parameters For Objects
 
 #### Concept
 
-This is a preliminary description of the concept. The details are still to be worked out. It could be that in practice, when Encircle is up and running, the details that have to be solved, will come to light straight away.
+This is a preliminary description of the concept. The details are still to be worked out. It could be that in practice, when Encircle is up and running, the details that have to be solved, might come to light straight away.
 
 In other programming languages there are *getters* and *setters*, which are also called *properties*. Those are replaced by the fact, that any related object has a set of system commands, such as __Get Object__ and __Set Object__, that can be extended with extra code around the __Get__ and __Set__ actions.
 
@@ -102,7 +102,7 @@ Because you can add a parameter to the whole system interface which extends ever
 
 Adding parameters to the system interface of a related object or extensive extension of system commands is a way to let a retrieval procedure be represented by an object instead of a command.
 
-A command in Encircle can have multiple return values, but when you convert the command into the retrieval procedure of a related object, the command will actually have a single return value. So in this case, you do have the concept of having only one single return value, unlike commands, in which you can have multiple return values.
+A command in Encircle can have multiple return values, but when you convert the command into the retrieval procedure of a related object, the command might actually have a single return value. So in this case, you do have the concept of having only one single return value, unlike commands, in which you can have multiple return values.
 
 There are no plans yet to make a command, that is a retrieval procedure, and a related object with an extensive retrieval procedure, two completely equally present views on the same thing (like other flat and structured interchange concepts within the language, like exchangeability of class commands and command parameters).
 
@@ -129,7 +129,7 @@ When you very much customize the system interface, you do not always have a stan
 This shows, that the related __Pressure__ object has a __Time__ parameter.  
 In this case the whole system interface is extended with a parameter, because the __Time__ parameter is not shown in a specific system command or specific system aspect, but shown inside the whole system interface. This means, that with any system command you can supply the __Time__ parameter.
 
-A call to the system command, such as value assignment, will show the __Time__ parameter:
+A call to the system command, such as value assignment, might show the __Time__ parameter:
 
 ![](images/5.%20System%20Objects%20Misc%20Issues.012.png)
 
@@ -149,7 +149,7 @@ Objects can have references to other objects. A referenced object may not aware 
 
 `The*` referrers `are not* the*` parents `containing the*` references to `the*` object, `but* the*` referrers `are the*` *references* to `the*` object `themselves`.
 
-`When*` a related item `is set to point` to a `certain` object, `the*`  __Related Item  .  Object  .  Set__  command `will` update `the*` target’s list of __Referrers__. `So the*` *referrers* `update the*` target’s __Referrers__ list. `The*` referenced object `does not*` update `the*` __Referrers__ list `itself`.
+`When*` a related item `is set to point` to a `certain` object, `the*`  __Related Item  .  Object  .  Set__  command `might` update `the*` target’s list of __Referrers__. `So the*` *referrers* `update the*` target’s __Referrers__ list. `The*` referenced object `does not*` update `the*` __Referrers__ list `itself`.
 
 `The*` __Referrers__ list `consists` of references *back* to `the*` referrers, `but*` that `does not* mean the*` object `in turn becomes` a referrer of `the*` referrer `again`.
 
@@ -157,7 +157,7 @@ An object `can* have` a referrers list, `but*` an object reference, `so` a relat
 
 ###### `Not*` Supporting `the*` Referrers Concept
 
-An object `could*` choose `not*` to support `the*` __Referrers__ concept, `if* the*` programmer `knows,` that `this` object `will` be referenced `so many` times, and there `is so little interest` in `knowing all` its referrers, that it `would*` be `ridiculous` maintain a list.
+An object `could*` choose `not*` to support `the*` __Referrers__ concept, `if* the*` programmer `knows,` that `this` object `might` be referenced `so many` times, and there `is so little interest` in `knowing all` its referrers, that it `would*` be `ridiculous` maintain a list.
 
 `But* by default, the*` __Referrers__ concept `is always` supported.
 
@@ -169,7 +169,7 @@ An object `could*` choose `not*` to support `the*` __Referrers__ concept, `if* t
 
 `The*` entry in `the*` __Referrers__ list `is` pointing to a related item in `the*` parent object __A__, `not* directly` to an object.
 
-`The*` lines `coming out` of `the*` referrers list `are usually not*` shown, `because*` a line `tied *to*` an object `already *implies*` a referrer. `The*` diagrams `will have more` features `later`, and the referrer lines `would* obscure the*` picture.
+`The*` lines `coming out` of `the*` referrers list `are usually not*` shown, `because*` a line `tied *to*` an object `already *implies*` a referrer. `The*` diagrams `might have more` features `later`, and the referrer lines `would* obscure the*` picture.
 
 ![](images/5.%20System%20Objects%20Misc%20Issues.015.png)
 
@@ -191,21 +191,21 @@ __b__ in __A__ `is` a reference to `the*` reference to __c__ inside __B__. `To d
 
 ~Classes `are` implemented as an aspect.~ That concept `adds` an object reference to `the*` system interface. `This` object reference `points out` which other object `is` its class. `So oddly`, an object reference, that `points` out `the*` class, `is already` added to `the*` class’s list of referrers. `The*` classes `are registered` inside `the* same` list of referrers as object referrers. `This is actually just fine. The*` __Referrers__ list `is supposed to be` a `low-level` view on `the*` referrers.
 
-A class `is usually only` *used* as a class, and `not* also used` as an object, `so in practice, the*` __Referrers__ list of a class, `actually already *is*` a list of class referrers. `So` a `separate` list of __Class Referrers__ `will not*` be `implemented`.
+A class `is usually only` *used* as a class, and `not* also used` as an object, `so in practice, the*` __Referrers__ list of a class, `actually already *is*` a list of class referrers. `So` a `separate` list of __Class Referrers__ `might not*` be `implemented`.
 
-`But* if*` in `the* future` there `is` a `need` to `also maintain` a `separate` list of class referrers, a `separate` __Class Referrers__ concept `could*` be `implemented. In that case, when*` a related item’s *class* `is` set, `the*` __Related Item  .  Class  .  Set__ `will` update `the* target`’s list of __Class Referrers__.
+`But* if*` in `the* future` there `is` a `need` to `also maintain` a `separate` list of class referrers, a `separate` __Class Referrers__ concept `could*` be `implemented. In that case, when*` a related item’s *class* `is` set, `the*` __Related Item  .  Class  .  Set__ `might` update `the* target`’s list of __Class Referrers__.
 
 ###### `Not*` Registering Class Referrers
 
-`The*` amount of referrers of a __Number__ *object* may be `small, but* the*` amount of referrers of `the*` __Number__ *class* `is humungous. The*` class `will even have` a __Referrers__ list, `when* the*` class `is not*` a created object, `because*` __Referrers__ `applies` to `both` symbols and objects.
+`The*` amount of referrers of a __Number__ *object* may be `small, but* the*` amount of referrers of `the*` __Number__ *class* `is humungous. The*` class `might even have` a __Referrers__ list, `when* the*` class `is not*` a created object, `because*` __Referrers__ `applies` to `both` symbols and objects.
 
 `You* would* want to` turn `the*` __Referrers__ concept `*off*` for `the*` __Number__ class and *on* for __Number__ objects. `But* the* problem here is`, that a class `is` a blueprint for an object. An object `only supports` __Referrers__, `because* the*` *class* `supports` it.
 
 `The* first solution proposed was` to `simply not* support the*` __Referrers__ concept for classes that `are widely` used. `But* then*` for `widely` used classes, `the*` __Referrers__ concept `never` be `supported`. That `is against the*` idea of `supporting the*` __Referrers__ concept `by default`.
 
-`If* you* can* not* stop` a class from `supporting` __Referrers__ `without stopping` objects from `supporting` __Referrers__ at `the* same time, then* the*` __Referrers__ concept `will not*` be `widely` used `anymore`.
+`If* you* can* not* stop` a class from `supporting` __Referrers__ `without stopping` objects from `supporting` __Referrers__ at `the* same time, then* the*` __Referrers__ concept `might not*` be `widely` used `anymore`.
 
-`Therefore, you* are` going to `have to specify` for a symbol or object, that it `is` a non-practitioner of a concept. Derivation of objects `will` take over `the* specified` concept, `but* not* the*` non-practitioner aspect. Or perhaps instead of calling it non-practitioner, `you* could*` call it __Objects Support Concept Referrers__, or something.
+`Therefore, you* are` going to `have to specify` for a symbol or object, that it `is` a non-practitioner of a concept. Derivation of objects `might` take over `the* specified` concept, `but* not* the*` non-practitioner aspect. Or perhaps instead of calling it non-practitioner, `you* could*` call it __Objects Support Concept Referrers__, or something.
 
 ##### Diagram Notation
 
@@ -223,15 +223,15 @@ A class `is usually only` *used* as a class, and `not* also used` as an object, 
 
 ![](images/5.%20System%20Objects%20Misc%20Issues.020.png)
 
-`The*` referrers `are` pointed at by solid lines, `because*` they `are just` references to `the*` objects, that `use` it as a class. `No implicit` notation of `making the*` referrer lines *dashed* `will` be used `here, because*` that `will` introduce `too much ambiguity` in `the*` diagram `notation`.
+`The*` referrers `are` pointed at by solid lines, `because*` they `are just` references to `the*` objects, that `use` it as a class. `No implicit` notation of `making the*` referrer lines *dashed* `might` be used `here, because*` that `might` introduce `too much ambiguity` in `the*` diagram `notation`.
 
 As `mentioned` in `the*` article *Referrers*, it `is not* clear yet` under which circumstances `the* whole` referrers list might be `completely` left out of `the*` diagram.
 
-`If*` a class `defines` that its objects `support` __Referrers__, `but* the*` class `itself won’t` register its __Referrers__, `then* the*` Referrers list of `the*` class `will` be drawn out with dashed lines.
+`If*` a class `defines` that its objects `support` __Referrers__, `but* the*` class `itself won’t` register its __Referrers__, `then* the*` Referrers list of `the*` class `might` be drawn out with dashed lines.
 
 ![](images/5.%20System%20Objects%20Misc%20Issues.021.png)
 
-`Obviously, the*` inactive referrers list `will not* contain any` object references.
+`Obviously, the*` inactive referrers list `might not* contain any` object references.
 
 #### Referrers Versus Related Objects
 
@@ -243,9 +243,9 @@ To make `the*` remote class or object aware of its referrers anyway, `you* can*`
 
 #### `The*` Referrers Concept
 
-A __Number__ class `could*` choose to support `the*` __Referrers__ concept. `This will` give a __Number__ object `only` one list of `all` referrers, instead of a separate list for `every` class that uses __Numbers__. __Numbers__ may be used by `many` classes, `but*` an individual __Number__ object, `is` never used `much`. It `is not*` a `lot` of data to register inside an __Number__ object, which objects refer to that particular __Number__.
+A __Number__ class `could*` choose to support `the*` __Referrers__ concept. `This might` give a __Number__ object `only` one list of `all` referrers, instead of a separate list for `every` class that uses __Numbers__. __Numbers__ may be used by `many` classes, `but*` an individual __Number__ object, `is` never used `much`. It `is not*` a `lot` of data to register inside an __Number__ object, which objects refer to that particular __Number__.
 
-`But* then* the*` __Number__ class `will` also register `all` its *class referrers*, which `is` undoable, `because*` a humongous amount of objects refer to `this` class. `But*` a solution for `this was already` proposed by `the*` article *Class Referrers*. `You* can*` choose for a class to `not*` register its class referrers, while objects do register their referrers.
+`But* then* the*` __Number__ class `might` also register `all` its *class referrers*, which `is` undoable, `because*` a humongous amount of objects refer to `this` class. `But*` a solution for `this was already` proposed by `the*` article *Class Referrers*. `You* can*` choose for a class to `not*` register its class referrers, while objects do register their referrers.
 
 ### Loose Ideas
 
@@ -255,7 +255,7 @@ Taken out of `the*` Referrers article:
 
 < Compared to giving a number class a related list for `every` class that uses integers >
 
-A number class `could*`, however, choose to support a single list of `all` referrers. `Then*` a number object `will have only` one related list. Numbers may be used by `many` classes, `but*` an individual number object, `is` never used `much`. It `is not*` a `lot` of data to register inside an integer object, which objects refer to that particular number.
+A number class `could*`, however, choose to support a single list of `all` referrers. `Then*` a number object `might have only` one related list. Numbers may be used by `many` classes, `but*` an individual number object, `is` never used `much`. It `is not*` a `lot` of data to register inside an integer object, which objects refer to that particular number.
 
 JJ
 
@@ -305,7 +305,7 @@ Referrers,
 
 - `I` hate it, that `I could* not* finish the*` referrers articles.
 - `But*` it `is too much` to go into `just like` that.
-- `I have to` accept that `the*` produced article group `will` contain two subjects, that `are not* finished`.
+- `I have to` accept that `the*` produced article group `might` contain two subjects, that `are not* finished`.
 
 JJ
 

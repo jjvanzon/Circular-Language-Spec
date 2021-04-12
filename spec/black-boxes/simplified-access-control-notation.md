@@ -6,7 +6,7 @@ Simplified Access Control Notation
 
 `[ Preliminary documentation ]`
 
-There are only a couple of ways, in which expression of access control connectors in a diagram will be simplified.
+There are only a couple of ways, in which expression of access control connectors in a diagram might be simplified.
 
 The first method is merging the access connectors of different aspects together.
 
@@ -18,7 +18,7 @@ The second method is merging the access connectors of a __Get__ and __Set__ toge
 ![](images/3.%20Simplified%20Access%20Control%20Notation.003.png)
 ![](images/3.%20Simplified%20Access%20Control%20Notation.004.png)
 
-There will be rules about when you can apply these methods of simplification.
+There might be rules about when you can apply these methods of simplification.
 
 Merging access connectors of different aspects together only happens for access connectors with the same access direction and same access mark position.
 
@@ -30,11 +30,11 @@ Merging __Get__ and __Set__ connectors happens only when they are both accessibl
 ![](images/3.%20Simplified%20Access%20Control%20Notation.003.png)
 ![](images/3.%20Simplified%20Access%20Control%20Notation.004.png)
 
-Furthermore, the merging happens in respect to the most likely chronological order of access: __Set Public__, __Get Private__, __Set Private__, __Get Public__. This means, that two access connectors will only merge if there is nothing chronologically in between them, that is accessible.
+Furthermore, the merging happens in respect to the most likely chronological order of access: __Set Public__, __Get Private__, __Set Private__, __Get Public__. This means, that two access connectors might only merge if there is nothing chronologically in between them, that is accessible.
 
 ![](images/3.%20Simplified%20Access%20Control%20Notation.003.png)
 
-The access connectors above will merge, because nothing is chronologically in between.
+The access connectors above might merge, because nothing is chronologically in between.
 
 ![](images/3.%20Simplified%20Access%20Control%20Notation.004.png)
 
@@ -42,7 +42,7 @@ But if something were in between, for instance, a __Private Set__ connector, the
 
 ![](images/3.%20Simplified%20Access%20Control%20Notation.005.png)
 
-In the picture above, the __Public Get__ and __Set__ connectors will not be merged, because the __Private Set__ connector is chronologically in between.
+In the picture above, the __Public Get__ and __Set__ connectors might not be merged, because the __Private Set__ connector is chronologically in between.
 
 The access connectors do not need to be *positioned* in chronological order in the diagram, but merging connectors together suggests nothing can be in between them, and it is just clearer if you keep them separated when something can get chronologically in between.
 
@@ -187,7 +187,7 @@ But what about ‘making a command Private’? What do you mean by that? You can
 
 -----
 
-Should there not be something implied when a connector is not there: in a friend relation this will create a lot of connectors... so no connectors should mean everything is accessible in a friend or one connector should be the placeholder for any other connector... or some common connectors and others (such as Class Get implied)
+Should there not be something implied when a connector is not there: in a friend relation this might create a lot of connectors... so no connectors should mean everything is accessible in a friend or one connector should be the placeholder for any other connector... or some common connectors and others (such as Class Get implied)
 
 -----
 

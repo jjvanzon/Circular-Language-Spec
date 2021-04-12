@@ -26,9 +26,9 @@ __Contents__
 
 *This text was written in the context of efforts to program experiment 3.0.*
 
-The diagrams of Encircle are to be drawn out automatically. If they weren’t, this would decrease the usability of the language. These diagram metrics as they are called will be functionally described first not being burdened by any mathematical implications, and after that the math to do so will be designed.
+The diagrams of Encircle are to be drawn out automatically. If they weren’t, this would decrease the usability of the language. These diagram metrics as they are called might be functionally described first not being burdened by any mathematical implications, and after that the math to do so might be designed.
 
-There are several elements to the diagram metrics. Some of them are considered more essential than others. A new version of Encircle is currently being implemented and only the essential diagram metrics concepts will be implemented at first.
+There are several elements to the diagram metrics. Some of them are considered more essential than others. A new version of Encircle is currently being implemented and only the essential diagram metrics concepts might be implemented at first.
 
 The concepts are put more or less in order of priority.
 
@@ -42,17 +42,17 @@ The concepts are put more or less in order of priority.
     - Imaginary reference trees
 
         - How to keep that overviewable?
-        - At first it will be kept simple. Just distribute the objects over the circle’s circumference and give each object its reference tree up until the point that it needs
+        - At first it might be kept simple. Just distribute the objects over the circle’s circumference and give each object its reference tree up until the point that it needs
 
     - Inward reference lines
 
         - This happens in case of fixed logical residences, when the fixed logical residence is actually displayed in the diagram, or one of the qualifiers of it is displayed.
         - And it also happens in case of arbitrarily chosen qualified references.
-        - < I do not have a clear picture of when imaginary references will appear and when not. >
+        - < I do not have a clear picture of when imaginary references might appear and when not. >
 
     - Lines going out of the diagram
 
-        - If the fixed logical residence is out of sight, the highest imaginary reference will get another imaginary references on just outside the diagram’s upmost parent shape and this imaginary reference will get a line with an open end at which the qualified name of the logical target object reference is displayed.
+        - If the fixed logical residence is out of sight, the highest imaginary reference might get another imaginary references on just outside the diagram’s upmost parent shape and this imaginary reference might get a line with an open end at which the qualified name of the logical target object reference is displayed.
 
     - Access marks
 
@@ -66,7 +66,7 @@ The concepts are put more or less in order of priority.
 
     - Object order
 
-        - Will position the sub-objects in a certain order.
+        - Might position the sub-objects in a certain order.
 
     - Connectors
 
@@ -207,7 +207,7 @@ Line convergence basically means that you group lines that have similar aspects.
 
 It’s usually near a border crossing where line convergence takes place.
 
-Say multiple lines exit a parent. Around the border you can group them by where they’re going. Some lines will enter A, some will enter B, others will exit. On the border you group them.
+Say multiple lines exit a parent. Around the border you can group them by where they’re going. Some lines might enter A, some might enter B, others might exit. On the border you group them.
 
 You can also group lines just before the borders and just after. Say before the border you group them by where they came from and after the border you group them by where they’re going.
 
@@ -279,7 +279,7 @@ The *start* of an identifier must be closest to the symbol it belongs to. Usuall
 
 #### Line convergence
 
-- If there are many lines then they can converge. They can be grouped by how many borders they will exit and by what they will enter.
+- If there are many lines then they can converge. They can be grouped by how many borders they might exit and by what they might enter.
 - The grouping can be multi dimensional < P >. 
 - And grouping can take place at multiple borders
 - The grouping between borders can become more precise or more general

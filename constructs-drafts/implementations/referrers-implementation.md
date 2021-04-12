@@ -8,13 +8,13 @@ Relationships | Referrers Implementation
 
 *Referrers* is a coding aspect. An aspect is something programmed inside Encircle itself, which can extend any object, because it operates using the reflective data of an object, which makes it adaptable to any object.
 
-The __Referrers__ coding aspect extends the system interface of any related object with an attribute __Referrer ID in Object. The Object  .  Set__ will be pre-extended with removing itself from the original target object’s list of referrers, using the previously stored __Referrer ID in Object__ attribute. The __Object  .  Set__ also gets post-extended with adding itself to the new target object’s list of referrers. After that the position in this list is assigned as the __Referrer ID in Object__.
+The __Referrers__ coding aspect extends the system interface of any related object with an attribute __Referrer ID in Object. The Object  .  Set__ might be pre-extended with removing itself from the original target object’s list of referrers, using the previously stored __Referrer ID in Object__ attribute. The __Object  .  Set__ also gets post-extended with adding itself to the new target object’s list of referrers. After that the position in this list is assigned as the __Referrer ID in Object__.
 
-The __Referrers__ coding aspect also adds a __Referrers__ list to every object. An *object* stores the list of referrers, but a *symbol* can also store its own list of referrers if it is a pointer *pointed to*. Th  __Referrer__ list’s __Add__ method will return the added item’s position in the list, so it can be recorded by the __Referrer__ as a sub-object’s __Referrer ID in Object__.
+The __Referrers__ coding aspect also adds a __Referrers__ list to every object. An *object* stores the list of referrers, but a *symbol* can also store its own list of referrers if it is a pointer *pointed to*. Th  __Referrer__ list’s __Add__ method might return the added item’s position in the list, so it can be recorded by the __Referrer__ as a sub-object’s __Referrer ID in Object__.
 
-If an object does not support the aspect of __Referrers__, then it will not have a __Referrers__ list.
+If an object does not support the aspect of __Referrers__, then it might not have a __Referrers__ list.
 
-An object, that does not support the aspect of __Referrers__, also will not register itself as a referrer in objects that it references. So that will make the object sort of stealthy, and not known to the objects that it references.
+An object, that does not support the aspect of __Referrers__, also might not register itself as a referrer in objects that it references. So that might make the object sort of stealthy, and not known to the objects that it references.
 
 ### Diagrams
 

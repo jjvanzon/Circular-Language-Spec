@@ -22,16 +22,16 @@ A parameter is __By Value__, if you can only publicly read or write the value of
 
 Passing a parameter by value means, that the input or output is *copied* to or from the parameter object.
 
-Parameters passed by value are really only useful for smaller amounts of data. The data might be changed inside the command, but that will not affect the original object.  
-For an object, that only stores one value and that’s it, it is easy to just copy the value. More complex objects passed by value will be cloned up until a certain cloning depth.
+Parameters passed by value are really only useful for smaller amounts of data. The data might be changed inside the command, but that might not affect the original object.  
+For an object, that only stores one value and that’s it, it is easy to just copy the value. More complex objects passed by value might be cloned up until a certain cloning depth.
 
-When pass an input parameter by value, it is guaranteed, that the operations inside the command will not affect the original object.
+When pass an input parameter by value, it is guaranteed, that the operations inside the command might not affect the original object.
 
-For that reason, when a value parameter is cloned up until a certain depth, no references to original objects will be taken over by the clone. __By Value__ clones never have references to existing objects, but always contain entirely new objects or object references that are __Nothing__.
+For that reason, when a value parameter is cloned up until a certain depth, no references to original objects might be taken over by the clone. __By Value__ clones never have references to existing objects, but always contain entirely new objects or object references that are __Nothing__.
 
 A single-value transfer is actually the equivalent of a cloning operation with a depth of __1__.
 
-If you want to pass more complex objects to a command, you do it by reference, but then changes to the parameter will affect the original objects.
+If you want to pass more complex objects to a command, you do it by reference, but then changes to the parameter might affect the original objects.
 
 In parameter passing by value, the parameter object and the object, that is passed the value to or from, are not referring to each other at all.
 
@@ -73,7 +73,7 @@ The notation of a __By Value__ cloning operation looks as follows:
 ![](images/Input%20Output%20Parameter%20Passings.004.png)
 
 The number __2__ stands for the cloning depth.
-A single-value transfer will be the same as a cloning depth of __1__, but the number __1__ will not be shown then.
+A single-value transfer might be the same as a cloning depth of __1__, but the number __1__ might not be shown then.
 
 ### By Reference
 
@@ -95,7 +95,7 @@ A __Value In__ parameter passes a value from an object to the parameter of a com
 
 The command can manipulate the __Value In__ parameter without affecting the original object.
 
-A __Value In__ parameter works best simple objects, that stores a single value, but can also work for more complex objects, that will then be cloned up until a certain depth.
+A __Value In__ parameter works best simple objects, that stores a single value, but can also work for more complex objects, that might then be cloned up until a certain depth.
 
 ### Value In in a Diagram
 
@@ -125,7 +125,7 @@ But the __Value In__ parameter of an inactive command could be filled in just as
 
 ![](images/Input%20Output%20Parameter%20Passings.011.png)
 
-The fact, that it is an inactive command, means that it will not run, but for the rest it is the same as any other command object, so it basically has the same possibilities.
+The fact, that it is an inactive command, means that it might not run, but for the rest it is the same as any other command object, so it basically has the same possibilities.
 
 Here is the expression of cloning depth for __Value In__ parameters of inactive commands, which is the same notation as for active commands:
 
@@ -145,7 +145,7 @@ A diagram of an executable command with a __Value Out__ parameter looks as follo
 
 ![](images/Input%20Output%20Parameter%20Passings.014.png)
 
-The following diagram shows the __Value Out__ parameter with an assignment target indicated to which the output value will be transferred:
+The following diagram shows the __Value Out__ parameter with an assignment target indicated to which the output value might be transferred:
 
 ![](images/Input%20Output%20Parameter%20Passings.015.png)
 
@@ -159,7 +159,7 @@ Or with the target of the output filled in:
 
 The pictures above display a cloning depth of __2__, but any cloning depth can be used.
 
-A command definition or other inactive command displays __Value Out__ parameters the exact same way. The __Value Out__ parameter of a command definition will look like this:
+A command definition or other inactive command displays __Value Out__ parameters the exact same way. The __Value Out__ parameter of a command definition might look like this:
 
 ![](images/Input%20Output%20Parameter%20Passings.018.png)
 
@@ -167,7 +167,7 @@ The __Value Out__ parameter of an inactive command can also be read and written 
 
 ![](images/Input%20Output%20Parameter%20Passings.019.png)
 
-The fact, that it is an inactive command, means that it will not run, but for the rest it is the same as any other command object, so it basically has the same possibilities, even reading and writing its parameters.
+The fact, that it is an inactive command, means that it might not run, but for the rest it is the same as any other command object, so it basically has the same possibilities, even reading and writing its parameters.
 
 Here is the expression of cloning depth for __Value Out__ parameters of inactive commands, which is the same notation as for active commands:
 
@@ -182,7 +182,7 @@ A __Value Thru__ parameter is an object inside the command call, that can be wri
 
 As said in the article __By Value__, the parameter is either a copy of a single value, or a clone to a certain depth.
 
-In theory the value could first come from one object, and after the call be written to another object. But that’s not regularly what a __Value Thru__ parameter is used for. The value will first be copied from one object and assigned to the parameter, and afterwards the value of the parameter is copied to the original object again.
+In theory the value could first come from one object, and after the call be written to another object. But that’s not regularly what a __Value Thru__ parameter is used for. The value might first be copied from one object and assigned to the parameter, and afterwards the value of the parameter is copied to the original object again.
 
 ### Value Thru in a Diagram
 
@@ -212,7 +212,7 @@ But the __Value Thru__ parameter of an inactive command could be filled in just 
 
 ![](images/Input%20Output%20Parameter%20Passings.027.png)
 
-The fact, that it is an inactive command, means that it will not run, but for the rest it is the same as any other command object, so it basically has the same possibilities.
+The fact, that it is an inactive command, means that it might not run, but for the rest it is the same as any other command object, so it basically has the same possibilities.
 
 Here is the expression of cloning depth for __Value Thru__ parameters of inactive commands, which is the same notation as for active commands:
 
@@ -234,7 +234,7 @@ When a __Reference In__ parameter does not have a reference target filled in yet
 
 ![](images/Input%20Output%20Parameter%20Passings.031.png)
 
-An inactive command displays __Reference In__ parameters the exact same way. The fact, that it is an inactive command, means, that it will not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command. The reference target of a __Reference In__ parameter of an inactive command definition is usually not filled in.
+An inactive command displays __Reference In__ parameters the exact same way. The fact, that it is an inactive command, means, that it might not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command. The reference target of a __Reference In__ parameter of an inactive command definition is usually not filled in.
 
 ![](images/Input%20Output%20Parameter%20Passings.032.png)
 
@@ -263,7 +263,7 @@ The access mark on the left is a connector point, to which the reference target 
 
 The fact that the reference goes outwards, does not make it an Out parameter. That just makes it a __Reference__ parameter. The fact, that the command only *writes* to the parameter makes it an Out parameter, so the term __Out__ is about value direction, not reference direction.
 
-An inactive command displays __Reference Out__ parameters the exact same way. The fact, that it is an inactive command, means, that it will not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command. The reference target of a __Reference Out__ parameter of an inactive command definition is usually not filled in:
+An inactive command displays __Reference Out__ parameters the exact same way. The fact, that it is an inactive command, means, that it might not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command. The reference target of a __Reference Out__ parameter of an inactive command definition is usually not filled in:
 
 ![](images/Input%20Output%20Parameter%20Passings.036.png)
 
@@ -287,7 +287,7 @@ When a __Reference Thru__ parameter does not have a reference target filled in y
 
 ![](images/Input%20Output%20Parameter%20Passings.039.png)
 
-An inactive command displays __Reference Thru__ parameters the exact same way. The fact, that it is an inactive command, means, that it will not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command. The reference target of a __Reference Thru__ parameter of an inactive command definition is usually not filled in.
+An inactive command displays __Reference Thru__ parameters the exact same way. The fact, that it is an inactive command, means, that it might not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command. The reference target of a __Reference Thru__ parameter of an inactive command definition is usually not filled in.
 
 ![](images/Input%20Output%20Parameter%20Passings.040.png)
 
@@ -299,7 +299,7 @@ Do note, that the expression of read-write direction is not a connector point. I
 
 ### Object Out
 
-An __Object Out__ parameter is an object, that resides inside the command. The __Object Out__ parameter may be a new object, or redirect to an existing object. Anyway, the *command* determines which object will be output. The produced object can be referenced from outside the command.
+An __Object Out__ parameter is an object, that resides inside the command. The __Object Out__ parameter may be a new object, or redirect to an existing object. Anyway, the *command* determines which object might be output. The produced object can be referenced from outside the command.
 
 Unlike parameters passed __By Reference__, an __Object Out__ parameter is *referred to*. This is an exclusive aspect of the __Object Out__ parameter passing.
 
@@ -339,7 +339,7 @@ The outer end of the line is an connection point to which you can connect an obj
 
 ![](images/Input%20Output%20Parameter%20Passings.043.png)
 
-An inactive command displays __Object Out__ parameters the exact same way. The fact, that it is an inactive command, means, that it will not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command. The object referring to the __Object Out__ parameter of an inactive command definition is usually not filled in.
+An inactive command displays __Object Out__ parameters the exact same way. The fact, that it is an inactive command, means, that it might not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command. The object referring to the __Object Out__ parameter of an inactive command definition is usually not filled in.
 
 ![](images/Input%20Output%20Parameter%20Passings.044.png)
 
@@ -437,7 +437,7 @@ When directly tying together value parameters, cloning depth can be intermixed:
 
 ![](images/Input%20Output%20Parameter%20Passings.057.png)
 
-Effectively, it will be the lowest cloning depth that will be transferred to the input parameter on the right. When the __Value In__ and __Value Out__ parameters have the same cloning depth, it is drawn out as follows:
+Effectively, it might be the lowest cloning depth that might be transferred to the input parameter on the right. When the __Value In__ and __Value Out__ parameters have the same cloning depth, it is drawn out as follows:
 
 ![](images/Input%20Output%20Parameter%20Passings.058.png)
 
@@ -477,13 +477,13 @@ After execution you can only read. > 2008-09-24 from the outside
 
 ### Downput
 
-Next to the terms input, output and throughput, the term downput will be introduced. Downput is intermediate data as a helper of a process, that will eventually produce output. Temporary variables, local variables. They are all downput. Actually, in the command-call structure, a command in which output data is disposed, this output has become downput.
+Next to the terms input, output and throughput, the term downput might be introduced. Downput is intermediate data as a helper of a process, that might eventually produce output. Temporary variables, local variables. They are all downput. Actually, in the command-call structure, a command in which output data is disposed, this output has become downput.
 
 Downput data is private data of the command.
 
 The term downput is a good term, because it is only passed *down* into sub-commands. And it is dropped after the parent command is done (dropped *down*). It is ‘put down’ / rejected after the execution. Or put down / to put something down, that you had in your hand.
 
-When a command disposes objects after it is done, then those objects are called *downput*. Downput may have been input for sub-commands, or it could have been output of sub-commands. To the parent command, though, it is *downput*. Downput parameters will not be further considered here, because they do not have anything to do with parameter *passing*.
+When a command disposes objects after it is done, then those objects are called *downput*. Downput may have been input for sub-commands, or it could have been output of sub-commands. To the parent command, though, it is *downput*. Downput parameters might not be further considered here, because they do not have anything to do with parameter *passing*.
 
 ### Incidental parameter passing
 
@@ -496,7 +496,7 @@ The object command’s on the other end of the relationship, also get additional
 Used in abstract notations, explained later, a value line does not necessarily mean yielding over the value of one object on one end of the line to the other object on the other end of the line. It may be yielding over values between sub-objects. So it’s not synonym to a value assignment in that case.  
 But usually value direction means assigning the value of one object to another.
 
-- \> Indirect value direction may be called data direction, and will be given a double wavy line as a symbol. It can indicate addition, removal, creation, annulment and value transfers of the direct object or its sub objects.
+- \> Indirect value direction may be called data direction, and might be given a double wavy line as a symbol. It can indicate addition, removal, creation, annulment and value transfers of the direct object or its sub objects.
 
 For __Reference__ parameters it does not need to be the value of the object itself, that is read or written.
 
@@ -505,12 +505,12 @@ It can also be a *sub-object* of the parameter, that is read or written. Even th
 Sometimes the command itself does not read or write from a parameter, but the parameter is passed down to a sub-command, that reads or writes from the object. This yields over the in-out-thru properties of the parameter. This does give the parameter an indication of value direction, but this is an abstract notation of what is going on. The assignments are done by a sub-command.
 
 Next to values being read or written, an abstract indication of value direction is also used to indicate addition, removal, creation and annulment of objects. These actions are all considered *writing* or *output*.  
-In the definition of the command, you will see the individual additions, removals, creations and annulments as calls to system commands (see the *System Interfaces* documentation section).  
-But the __Reference__ *parameter* will get an *abstract* value direction indication, that says the reference parameter is output.
+In the definition of the command, you might see the individual additions, removals, creations and annulments as calls to system commands (see the *System Interfaces* documentation section).  
+But the __Reference__ *parameter* might get an *abstract* value direction indication, that says the reference parameter is output.
 
 All in all, non-value transmissions apply to __By Reference__ parameters only.
 
-So for reference parameters, the in-out-thru direction will be an abstract indication of what is going on. It can mean a lot of different things. The exact objects and manipulations a command executes on a reference parameter are indicated by its command IO, covered in the article *Command IO* (possibly still part of the article *Automatic Execution Order*).
+So for reference parameters, the in-out-thru direction might be an abstract indication of what is going on. It can mean a lot of different things. The exact objects and manipulations a command executes on a reference parameter are indicated by its command IO, covered in the article *Command IO* (possibly still part of the article *Automatic Execution Order*).
 
 ### Wrong approach to the terms In, Out and Thru
 
@@ -532,15 +532,15 @@ But the terms __Set Public__ and __Set Private__ can be replaced now by the term
 
 It looks a lot clearer that way.
 
-If the *same* system aspect is written from both the inside as well the outside, then the term __Thru__ will be used, for instance:
+If the *same* system aspect is written from both the inside as well the outside, then the term __Thru__ might be used, for instance:
 
 - __Object In Value Thru__
 
-The keyword __Thru__ can only be used, when it is the same aspect, that is set from both the inside and the outside. When different aspects are written on the inside and the outside, you will not see the word __Thru__ in the access control literal. For instance, when a parameter is:
+The keyword __Thru__ can only be used, when it is the same aspect, that is set from both the inside and the outside. When different aspects are written on the inside and the outside, you might not see the word __Thru__ in the access control literal. For instance, when a parameter is:
 
 - __Object In Value Out__
 
-it can be called a __Thru__ parameter, but you will not use the term __Thru__ in the access control literal, because you can only use the term __Thru__ in a literal when the *same aspect* is set on both the inside and the outside.
+it can be called a __Thru__ parameter, but you might not use the term __Thru__ in the access control literal, because you can only use the term __Thru__ in a literal when the *same aspect* is set on both the inside and the outside.
 
 The use of the keyword __Thru__ may also become scarce, if you insist to keep the access control elements in chronological order:
 
@@ -558,7 +558,7 @@ Reading stuff does not seem to have anything to do with the terms __In, Out__ an
 
 Reading stuff seems to matter less. Reading might not be seen as parameter passing. It might be only about: who writes it and from which direction. Reading has less impact than writing. But its impact may become important later, when using it in more advanced techniques for for instance concurrency resolution.
 
-What I see now, is that if I find simpler terms for reading, I will probably be totally happy with my parameter access control literals. Since there is such beautiful names for writing from either inside or outside (__In, Out__ and __Thru__) can I come up with beautiful names for reading too? If I can find a replacement for the terms __Get Private__ and __Get Public__, then I will probably be completely satisfied with how the parameter access control literals look.
+What I see now, is that if I find simpler terms for reading, I might probably be totally happy with my parameter access control literals. Since there is such beautiful names for writing from either inside or outside (__In, Out__ and __Thru__) can I come up with beautiful names for reading too? If I can find a replacement for the terms __Get Private__ and __Get Public__, then I might probably be completely satisfied with how the parameter access control literals look.
 
 Next to an easier expression of __Get Private__ and __Get Public__, you may also want to invent keywords to express that something is publicly written and privately read, or the other way around. So when __Value__ is set on the outside and read on the inside, you get an easier expression for it, than saying __Value In, Value Get Private__. Do note, that when you set a value on the outside, it does not imply, that you also *read* the value on the inside.
 
@@ -586,11 +586,11 @@ I think the terms input and output should not be about whether something is writ
 So it is about what happens on the inside. Whether something is written or read from the outside is not the issue.
 
 Anyway, input and output are too complicated to just wrap up the old parameter passing type stories, which depend on those terms.  
-Advanced Command Topics will also do a lot with input and output. Actually, most of it is about the complexity of input and output. I should really save it for another project. One of the objectives of the project Work Out Advanced Command Topics should be to determine the exact definition of input and output and the exact definition of input and output parameters.  
+Advanced Command Topics might also do a lot with input and output. Actually, most of it is about the complexity of input and output. I should really save it for another project. One of the objectives of the project Work Out Advanced Command Topics should be to determine the exact definition of input and output and the exact definition of input and output parameters.  
 I should shove it over to that project.  
 I should register in the project description that determining the exact definition of input and output is one of the objectives.
 
-The current project will wrap up everything else about parameters.  
+The current project might wrap up everything else about parameters.  
 I have to clean up the objectives of the current project and create a new plan for it.  
 Then I can work my way up to an end point. And in the next project I can just calmly look at the exact complexity of input and output.
 
@@ -633,8 +633,8 @@ But still:
 
 - input means writing on the outside, reading on the inside.
 - Reading can also be reading for access. Not necessarily reading for assignment
-- Reading for access and reading for assignment need to be separately access controlled and it will change parameter passing.
-- Incidentally a read or write of input or output is missing. That will be given a term.
+- Reading for access and reading for assignment need to be separately access controlled and it might change parameter passing.
+- Incidentally a read or write of input or output is missing. That might be given a term.
 - When a read or write is done on the outside, the a write or read must be executed on the inside, even though scarcely or incidentally not.  
 If you don’t read input, then you can not call it input: an error or warning is generated.
 
@@ -691,7 +691,7 @@ Is there really a point to talking about input and output at this stage?
 Isn’t input and output much more complicated than expected.  
 The general meaning is understandable, but what it means on an object oriented level could be very complex. I really think it is something for Advanced Command topics.
 
-I can talk about Reference In, but when you assign the object to a parameter, and the value is supposed to be accessible, it doesn’t mean, that you will read the value directly in the command. You may very well read it somewhere in a deep sub-command.
+I can talk about Reference In, but when you assign the object to a parameter, and the value is supposed to be accessible, it doesn’t mean, that you might read the value directly in the command. You may very well read it somewhere in a deep sub-command.
 
 This whole theory about how something becomes input or output should just be saved for Advanced command topics. And things like Reference In and all that, are just not as simple as suggested.
 
@@ -720,7 +720,7 @@ Parameter passings,
 
 If a command parameter is typed with in, out, or though,  
 then an object command can also be given a title depending  
-on whether it will be input, output, throughput, etcetera.
+on whether it might be input, output, throughput, etcetera.
 
 input is not an object that something is done to. It can be considered an object doing something to another object. So it is clearly an actor.
 
@@ -745,7 +745,7 @@ Access Controling System Aspects,
 
 When you access control the system aspects of a parameter, does this have implications for acces control of the object’s command?
 
-When you show a command inside an object, how will you see, that the command outputs the object or if the command uses the object?
+When you show a command inside an object, how might you see, that the command outputs the object or if the command uses the object?
 
 JJ
 
@@ -770,13 +770,13 @@ JJ
 
 -----
 
-When a command is called, objects are filled into the parameters of the command. A command will use objects to do its work. The objects filled in as parameters are also called arguments.
+When a command is called, objects are filled into the parameters of the command. A command might use objects to do its work. The objects filled in as parameters are also called arguments.
 
 As commands call each other, every time different data is passed along to the different commands, that are called.
 
 -----
 
-Actually, the method will only become part of the classes that it directly uses. When the method uses submembers of the classes, the method does not become part of the classes of the submembers.
+Actually, the method might only become part of the classes that it directly uses. When the method uses submembers of the classes, the method does not become part of the classes of the submembers.
 
 -----
 
@@ -788,7 +788,7 @@ From the Original Symbol Documentation
 
 ## Procedure Parameters
 
-Procedures can have *parameters*: instructions passed along with the procedure that make the procedure behave differently. The __Button . Set Text__ procedure, for instance, has a __Text__ parameter, which indicates what the new text of the button will be.
+Procedures can have *parameters*: instructions passed along with the procedure that make the procedure behave differently. The __Button . Set Text__ procedure, for instance, has a __Text__ parameter, which indicates what the new text of the button might be.
 
 Text is an *idea*. It is an *object*. It is *objects* that serve as parameters.
 
@@ -824,7 +824,7 @@ When you read a state, the state is meant to be assigned to another object. And 
 
 < 2008-10-06 Move to Input Output >
 
-The procedure output method above is hardly used ever used. That’s because you can’t really tell if the target object will keep existing, unless you’ve defined the object yourself. Therefore, using output other than state output is usually done by passing a reference to an existing object to the procedure.
+The procedure output method above is hardly used ever used. That’s because you can’t really tell if the target object might keep existing, unless you’ve defined the object yourself. Therefore, using output other than state output is usually done by passing a reference to an existing object to the procedure.
 
 This, however requires you to *write* the line of an argument.
 
@@ -1004,7 +1004,7 @@ The explicit notation that solves this is the following:
 
 ![](images/Input%20Output%20Parameter%20Passings.086.png)
 
-The child diamond is inserted as a substitute for the higher diamond it refers to. This offers a solution because the parent of the child diamond will exist when the child exists. {This might be an issue for multiple execution of a diamond. It also raises the question what happens when you consult something of the righter diamond. Is the bigger diamond executed first? What?} That’s rule two for getting to the explicit notation of parameter reference.
+The child diamond is inserted as a substitute for the higher diamond it refers to. This offers a solution because the parent of the child diamond might exist when the child exists. {This might be an issue for multiple execution of a diamond. It also raises the question what happens when you consult something of the righter diamond. Is the bigger diamond executed first? What?} That’s rule two for getting to the explicit notation of parameter reference.
 
 < I have doubts about this third rule. I think this case might be illegal. I need to find the rule on what makes it illegal and how you see the illegality of it in the implicit notation >
 
@@ -1221,7 +1221,7 @@ Referencing a diamond’s members is like reading a procedure member.
 
 It always happens just after the diamond executes.
 
-< The parameter objects destroy right after the call. If you use the top circle like above, every consult of the top circle will result in executing the diamond again. To persist the information contained in the argument, without having to call the procedure again, you have to do a State Copy. Another way of using output parameters is to give the execution a reference to an external symbol. Anyway: if you want return information to persist after the call, it has to be stored in external symbol: store the returned state to an object that the caller contains, or pass a reference to the caller’s object to the called procedure >
+< The parameter objects destroy right after the call. If you use the top circle like above, every consult of the top circle might result in executing the diamond again. To persist the information contained in the argument, without having to call the procedure again, you have to do a State Copy. Another way of using output parameters is to give the execution a reference to an external symbol. Anyway: if you want return information to persist after the call, it has to be stored in external symbol: store the returned state to an object that the caller contains, or pass a reference to the caller’s object to the called procedure >
 
 < That’s true what I just said, but there’s nothing wrong with linking directly to the parameter and executing the procedure on each consult. There’s nothing wrong with that. The link would be something like consulting a property procedure in VB, a Get, which returns a reference to an object. Every time you consult the property, the procedure is launched again. That’s normal. >
 

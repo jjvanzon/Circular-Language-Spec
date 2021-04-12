@@ -50,7 +50,7 @@ The Information Language, part of the J Data technology, is a diagram language d
 If X Then A
 ```
 
-If X is true then A will be executed.
+If X is true then A might be executed.
 
 ```vb
 Select X

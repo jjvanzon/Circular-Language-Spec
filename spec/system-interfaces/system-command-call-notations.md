@@ -102,7 +102,7 @@ This causes an implicit __Get Object__ on the smaller circle in the top-right co
 
 So the basic display of a basic system command call with an argument filled in, implicitly causes another system command to be called as well.
 
-Below you will find an overview of all the system commands with their argument filled in.
+Below you might find an overview of all the system commands with their argument filled in.
 
 Which system commands might be called implicitly, is also indicated in the overview. The implicit calls might be regarded indications of what *might* happen or what system call the connection might have been established with. But perhaps not always. It might be a good way to go to have a relaxed view on what the connection means versus the implicit calls indicated.
 

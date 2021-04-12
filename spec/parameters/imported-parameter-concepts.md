@@ -26,7 +26,7 @@ __Contents__
 
 ### Introduction
 
-The following articles will explain some concepts from other programming languages and the how they are implemented in Encircle.
+The following articles might explain some concepts from other programming languages and the how they are implemented in Encircle.
 
 - *Required & Optional*
 - *Variable Amount of Arguments*
@@ -39,13 +39,13 @@ The following articles will explain some concepts from other programming languag
 
 Some programming languages have a thing called required and optional parameters. In other programming languages basically all parameters are required, unless they are typed optional. In Encircle it is the other way around: any parameter is optional unless it is typed required. This is because in Encircle commands are the same as objects, that just happen to be executable, and the parameters inside a command are analogous to sub-objects inside another object, whose filling-in is also totally arbitrary.
 
-Some parameters can be made required, so you *have to* fill them in as input. In Encircle, this means that reading and writing any accessible aspect of a parameter can be separately made required or optional. When output is required, it means you have to use the output. You will be unable to execute the command without picking up the return value or returned object.
+Some parameters can be made required, so you *have to* fill them in as input. In Encircle, this means that reading and writing any accessible aspect of a parameter can be separately made required or optional. When output is required, it means you have to use the output. You might be unable to execute the command without picking up the return value or returned object.
 
 Basically each system command can be made required or optional. Usually you make access from the *outside* required. When you make access from the *inside* required, this can give the user of the command guarantees about the parameter’s usage.
 
 #### Required & Optional in a Diagram
 
-*Optional* is the default behavior. *Required* is an extra rule imposed. Required is expressed by drawing half a shape at the end of a connector. It should be half of what has to be connected to it. Most of the times it will be half a circle:
+*Optional* is the default behavior. *Required* is an extra rule imposed. Required is expressed by drawing half a shape at the end of a connector. It should be half of what has to be connected to it. Most of the times it might be half a circle:
 
 ![](images/2.%20Imported%20Parameter%20Concepts.001.png)
 
@@ -65,11 +65,11 @@ For system commands that require the command call connector notation, also the 5
 
 ![](images/2.%20Imported%20Parameter%20Concepts.005.png)
 
-The ‘half a shape’ will also get a line type adapted to the role the required object will get. If the connector specifies that it gets a class role, the half-shape will be drawn with a dashed line.
+The ‘half a shape’ might also get a line type adapted to the role the required object might get. If the connector specifies that it gets a class role, the half-shape might be drawn with a dashed line.
 
 ![](images/2.%20Imported%20Parameter%20Concepts.006.png)
 
-Below you will find examples of *required* connectors. Not every possible connector is shown, but enough to cover the notation.
+Below you might find examples of *required* connectors. Not every possible connector is shown, but enough to cover the notation.
 
 | ![](images/2.%20Imported%20Parameter%20Concepts.007.png) | ![](images/2.%20Imported%20Parameter%20Concepts.008.png) | ![](images/2.%20Imported%20Parameter%20Concepts.009.png) |
 |:------------------:|:------------------:|:-----------------:|
@@ -108,9 +108,9 @@ Other programming languages have a concept called variable amount of arguments. 
 
 In Encircle, any parameter can be an array. In other programming languages, parameters could also be arrays, but for the array, that represented the variable amount of arguments, each item of the array was separately listed out at the end of the command call, as opposed to other parameters, that were arrays, which were just references to arrays, that were initialized elsewhere, not inside the command call.
 
-In Encircle, for backwards compatibility purposes, and textual representation purposes, a parameter may be typed as the array that will represent the variable amount of arguments. In other programming languages, variable amount of arguments was also just for textual representation.
+In Encircle, for backwards compatibility purposes, and textual representation purposes, a parameter may be typed as the array that might represent the variable amount of arguments. In other programming languages, variable amount of arguments was also just for textual representation.
 
-Perhaps in the future, it can be applied, that multiple array parameters are considered the variable amount of arguments. But how the notation will be kept unambiguous then is not clear yet.
+Perhaps in the future, it can be applied, that multiple array parameters are considered the variable amount of arguments. But how the notation might be kept unambiguous then is not clear yet.
 
 Important to remember, is that parameters are not always single items, but a parameter can also be an array.
 
@@ -152,7 +152,7 @@ As discussed in the article *Return Values*, Encircle does not limit the amount 
 
 ![](images/2.%20Imported%20Parameter%20Concepts.026.png)
 
-The correct usage of the term output will be discussed only later, in the *Advanced Command Topics*.
+The correct usage of the term output might be discussed only later, in the *Advanced Command Topics*.
 
 ### Parameter Order
 
@@ -160,7 +160,7 @@ The correct usage of the term output will be discussed only later, in the *Advan
 
 Other programming languages were textual. The parameters were put in a certain order. In Encircle parameters are more free in order, just like sub-objects inside another object usually have no particular order. The parameters are not really a list of objects anymore. A command call is an object, that has a set of object references in it, that are individually set, and do not have a particular order.
 
-Even though all parameters can be individually accessed by pointing to its symbol or by using its name, you *can* still give the parameters an order of display. The articles, that follow, will elaborate on the diagrammatic and textual expression of parameter order.
+Even though all parameters can be individually accessed by pointing to its symbol or by using its name, you *can* still give the parameters an order of display. The articles, that follow, might elaborate on the diagrammatic and textual expression of parameter order.
 
 #### Diagram
 
@@ -170,11 +170,11 @@ In a diagram the order of the parameters could be expressed just like the order 
 
 ![](images/2.%20Imported%20Parameter%20Concepts.027.png)
 
-Perhaps the first item will also be denoted like this:
+Perhaps the first item might also be denoted like this:
 
 ![](images/2.%20Imported%20Parameter%20Concepts.028.png)
 
-The eventual display is all up to the implementation of *Object Order*. That will determine the ways sorted objects are displayed. The ideas introduced here are preliminary. Eventually parameter order will comply to object order.
+The eventual display is all up to the implementation of *Object Order*. That might determine the ways sorted objects are displayed. The ideas introduced here are preliminary. Eventually parameter order might comply to object order.
 
 The objects may also be displayed clockwise:
 

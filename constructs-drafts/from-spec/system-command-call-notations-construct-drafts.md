@@ -79,7 +79,7 @@ can be simplified for system commands:
 
 The simplified notation is only used for system commands, because system commands are so fundamental that they need a notation that is as simple as possible.
 
-The general use of this notation will be explained with __Object Get__ as an example. __Object Get__ will probably never use this notation, but it is easier to explain this way.
+The general use of this notation might be explained with __Object Get__ as an example. __Object Get__ might probably never use this notation, but it is easier to explain this way.
 
 Here is the basic notation of an __Object Get__ system command:
 
@@ -154,7 +154,7 @@ Yielding over between __Class__ aspect and __Object__ aspect:
 |   (Object Get `=>`)   |                           |                       |
 |        Add `<=`       |                           |                       |
 
-Most of the notations above will never be used. Only the notation for the __New__ and __Add__ arguments are common.
+Most of the notations above might never be used. Only the notation for the __New__ and __Add__ arguments are common.
 
 #### Class Assignment Extended
 
@@ -242,7 +242,7 @@ There is also the following weirder possibility to display the __Get__ and __Set
 
 ![](images/3.%20System%20Command%20Call%20Notations%20Construct%20Drafts.046.png)
 
-But the odd thing about that notation is that there is no connection between the __Get__ and __Set__ arguments and the real __Get__ and __Set__ targets. The notation looks so strange, that we will probably never go with that.
+But the odd thing about that notation is that there is no connection between the __Get__ and __Set__ arguments and the real __Get__ and __Set__ targets. The notation looks so strange, that we might probably never go with that.
 
 The main point is: the diagrams above show the explicit expression of the arguments of __Get__ and __Set__ calls.
 

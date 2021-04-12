@@ -49,7 +49,7 @@ It turns out you have to redescribe the code base six times, using its predesess
 
 When adapting the module again, you are programming it using a previous version of the module. Strict and robust version control is used to keep that manageable.
 
-The system will always be running on a code base written in an older Encircle, but this code base will be very small. The topmost version of the engine, will be decorated with numerous features, but the engines below that will always have the most limited amount of features required to rewrite that engine using itself.
+The system might always be running on a code base written in an older Encircle, but this code base might be very small. The topmost version of the engine, might be decorated with numerous features, but the engines below that might always have the most limited amount of features required to rewrite that engine using itself.
 
 The fact that this works, has already been proven with experiment 2.0.
 
@@ -76,9 +76,9 @@ The code above can be used for describing *structure* of data. An actual *item o
 class CItem ;
 ```
 
-The first layer is also called the ccc-layer. Each c stands for C++. It means that the structure of the program above, the code, and the usage is all done in C++. With each layer things will gradually shift towards Encircle. At this point everything is still C++.
+The first layer is also called the ccc-layer. Each c stands for C++. It means that the structure of the program above, the code, and the usage is all done in C++. With each layer things might gradually shift towards Encircle. At this point everything is still C++.
 
-The class CItem is not really part of the ccc-layer. CItem objects will still be used in the topmost layer, only the *class description* for a CItem object will be different in each layer. CItem objects are not considered C++ objects, they are considered Encircle objects.
+The class CItem is not really part of the ccc-layer. CItem objects might still be used in the topmost layer, only the *class description* for a CItem object might be different in each layer. CItem objects are not considered C++ objects, they are considered Encircle objects.
 
 ### Layer 2: The gcc-Layer
 
@@ -100,7 +100,7 @@ gccStructureToRelations . RelationClassB = gccRelation ;
 
 The 1st layer is used here to describe the same system again. The 2nd layer is called the gcc-layer.
 
-- The first g stands for *generic*. When you use the engine above, you will describe classes in a more generic way as CItem objects rather than CClass objects. CItem objects are considered Encircle objects, not C++ objects.
+- The first g stands for *generic*. When you use the engine above, you might describe classes in a more generic way as CItem objects rather than CClass objects. CItem objects are considered Encircle objects, not C++ objects.
 - In first c stands for C++, and the fact the engine itself is described using C++ objects (CClass objects).
 - The second c stands C++, and the fact that the *reflective data* of the objects this layer is built up of, is merely the C++ code of the ccc-layer.
 
@@ -128,7 +128,7 @@ ggcStructureToClasses . RelatedItems . Item ( "gcc Relation Class B" ) = ggcRela
 
 This is where objects no longer have C++ *classes*, but a C++ *object* for a class.  
 The first line assigns the Structure class to the Structure object.  
-The layer is called the ggc layer. The first g stands for *generic*. When you use the engine above, you will describe classes in a more generic way as CItem objects. CItem objects are considered Encircle objects, not C++ objects. The second g also stands for generic. For the first time the engine itself is described as CItem objects, which are not considered C++ objects, but Encircle objects. The third letter, the letter c stands for C++ and the fact that the *reflective data* of the objects used above, are still CClass objects of the ccc-layer, which are considered C++ objects, rather than Encircle objects.
+The layer is called the ggc layer. The first g stands for *generic*. When you use the engine above, you might describe classes in a more generic way as CItem objects. CItem objects are considered Encircle objects, not C++ objects. The second g also stands for generic. For the first time the engine itself is described as CItem objects, which are not considered C++ objects, but Encircle objects. The third letter, the letter c stands for C++ and the fact that the *reflective data* of the objects used above, are still CClass objects of the ccc-layer, which are considered C++ objects, rather than Encircle objects.
 
 I guess I have made clear, that it is important to understand that CItem objects are *not* considered C++ objects but generic Encircle objects.
 
@@ -136,11 +136,11 @@ I guess I have made clear, that it is important to understand that CItem objects
 
 The first layer is the absolute minimum Encircle must contain. In the second layer you build up a generic version of it, but it’s still described in a way, you couldn’t describe it in Encircle itself. The third layer is programmed in a way, you could program it in an Encircle programming environment. So this layer could be reprogrammed in an Encircle programming environment.
 
-The bottom layers will only contain the absolute base of the systematics of Encircle: Encircle in its most primitive form, just enough to redescribe it. All the extensions are added to the top layer, which can be reprogrammed within the Encircle programming environment.
+The bottom layers might only contain the absolute base of the systematics of Encircle: Encircle in its most primitive form, just enough to redescribe it. All the extensions are added to the top layer, which can be reprogrammed within the Encircle programming environment.
 
 In theory, you could directly program the running programming environment. So in realtime you are programming the program you are programming in. Very cool, but not very practical, because if you mess up the program, you have also directly messed up the environment you were programming in. So you are going to want to use an older version of the programming environment, to make a new version with. The new programming environment can replace the older version. So you can reprogram the topmost layer within Encircle itself.
 
-A part of Encircle will never be reprogrammed within itself. In experiment 0.9, the generator-version, the generator itself was also never regenerated, only the part with which you describe a program. The absolute base of Encircle might always be ‘hand written’.
+A part of Encircle might never be reprogrammed within itself. In experiment 0.9, the generator-version, the generator itself was also never regenerated, only the part with which you describe a program. The absolute base of Encircle might always be ‘hand written’.
 
 ### Layer 4: The ggg-Layer
 
@@ -165,7 +165,7 @@ gggStructureToClasses . RelatedItems . Item ( "ggc Relation Class B" ) = gggRela
 When adding items, under the surface, an item gets assigned a class, upon which the item configures itself according to the class description. Only one of the assignments of a class is explicitly visible in the code above: the first line: assigning the Structure class to the Structure object.  
 In the 3rd layer it was a C++ object describing the class. In the 4th layer it is an Encircle object describing the class. So in this layer, the class descriptions used, are Encircle objects, whereas in the previous layer the class descriptions used, were C++ objects.  
 After class assignment, an object looks the same in both layers.  
-The first g in ggg-layer stands for generic: the fact that the engine above will be used specifying Encircle objects. The second g in the ggg-layer also stands for generic, but now because the engine itself is built up of generic CItem objects. The third g in the ggg-layer stands for generic, but now the fact that the reflective data of every CItem object used in the code above, is also a generic Encircle object.
+The first g in ggg-layer stands for generic: the fact that the engine above might be used specifying Encircle objects. The second g in the ggg-layer also stands for generic, but now because the engine itself is built up of generic CItem objects. The third g in the ggg-layer stands for generic, but now the fact that the reflective data of every CItem object used in the code above, is also a generic Encircle object.
 
 So the three letters always indicate:
 
@@ -201,7 +201,7 @@ Structure  (  Structure  )    1  -->  n    Class  (  Classes  )
 Structure  (  Structure  )    1  -->  n    Relation  (  Relations  )
 ```
 
-The parser will translate it to the same data as in the previous layer. But in this layer more features are added, because it is so much easier to add more features using this custom text code. So here it is, where all the extra features are added, that were left out in the layers before. It is in this layer, that you can really see that the Encircle is being programmed within itself. And this is where it gets so much easier to program more features.  
+The parser might translate it to the same data as in the previous layer. But in this layer more features are added, because it is so much easier to add more features using this custom text code. So here it is, where all the extra features are added, that were left out in the layers before. It is in this layer, that you can really see that the Encircle is being programmed within itself. And this is where it gets so much easier to program more features.  
 The two g’s in the term pgg-layer stand for *generic* in the fact that the engine is still built on top of non-parsed Encircle objects, with non-parsed Encircle objects as reflective data.
 
 ### The ggg-Layer Not Required
@@ -210,7 +210,7 @@ The parser could (probably) also have used the 3rd layer instead of the 4th laye
 
 ### Layer 6: The ppg-Layer
 
-There’s also a 6th layer. The code of it, is exactly the same as the 5th layer. The deal is that the extra features, that are in the text code, were added to the *objects*, but the extra features were not present in the *class descriptions* of the objects. So the objects themselves had extra elements, but their reflective data did not. To make the reflective data of the engine as rich as the objects themselves, the parser will build up the structure again using the 5th layer as reflective data, which also has all the rich features  present in it. The 6th layer is also called the ppg-layer. It is the topmost layer.
+There’s also a 6th layer. The code of it, is exactly the same as the 5th layer. The deal is that the extra features, that are in the text code, were added to the *objects*, but the extra features were not present in the *class descriptions* of the objects. So the objects themselves had extra elements, but their reflective data did not. To make the reflective data of the engine as rich as the objects themselves, the parser might build up the structure again using the 5th layer as reflective data, which also has all the rich features  present in it. The 6th layer is also called the ppg-layer. It is the topmost layer.
 
 ### Summary Of The Layers
 
@@ -225,11 +225,11 @@ A summary of all the layers:
     - The engine itself is still built up of C++ objects.
     - And the reflective data of the C++ objects, are also C++ objects.
 - ggc-layer:
-    - When you use this engine, you will be working with Encircle objects.
+    - When you use this engine, you might be working with Encircle objects.
     - The engine itself is also built up of Encircle objects.
     - But the class descriptions of the objects the engine is built up of, are still C++ objects.
 - ggg-layer:
-    - When you use this engine, you will be working with Encircle objects.
+    - When you use this engine, you might be working with Encircle objects.
     - The engine itself is also built up of Encircle objects.
     - And the class descriptions of the objects the engine is built up of, are also Encircle objects.
 - pgg-layer:
@@ -281,7 +281,7 @@ Encircle, Code Base
 
 - Rename 'Your' and 'My' to ccc and gcc naming
 - Also rename the identifiers in the first layer to ccc
-    - \> That will make a lot of code look crappy, because then members such as RelatedItems will always be called cccRelatedItems.  
+    - \> That might make a lot of code look crappy, because then members such as RelatedItems might always be called cccRelatedItems.  
     What you should do is not apply that naming for the items, only for the structure
 
 JJ

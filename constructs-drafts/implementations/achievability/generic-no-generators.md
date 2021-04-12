@@ -42,7 +42,7 @@ Then the object holds all attributes that are specified in the class description
 You can let the object perform a basic search by name, and let it return the right attribute.
 
 You could optimize things by not storing the attribute names inside every object, but only using the names stored in the class. But that’s for later.  
-In a more optimized situation, the attributes will hardly even *be*  accessed by name anyway, but mostly by number, so you won’t even need the names then, but this is an issue for later.
+In a more optimized situation, the attributes might hardly even *be*  accessed by name anyway, but mostly by number, so you won’t even need the names then, but this is an issue for later.
 
 ### Related Items
 
@@ -51,7 +51,7 @@ It is pretty much the same issue for related items. The generic object contains 
 ### Related Lists
 
 For related lists you can do the same things. A related list is merely a lists of generic objects. There is a generic class, called List, that simply holds an array of generic objects. An object contains an array of Lists. Each related list has an item in this array of Lists.
-The difference between related items and related lists, is that a related list does not contain any objects at first: objects will be added to it later. When adding an object to the related list, the related list is aware of the class of object, that the list should contain, and assigns the class of the object to it whenever an object is added to it.
+The difference between related items and related lists, is that a related list does not contain any objects at first: objects might be added to it later. When adding an object to the related list, the related list is aware of the class of object, that the list should contain, and assigns the class of the object to it whenever an object is added to it.
 
 ### User Interface
 

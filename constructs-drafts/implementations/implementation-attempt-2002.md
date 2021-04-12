@@ -92,11 +92,11 @@ Symbol language is stored in a J Database.
 
 #### System Specification
 
-The symbol language includes a system specification document class. This class will be used to contain the source code. The document is read to be able to produce the Sigma module.
+The symbol language includes a system specification document class. This class might be used to contain the source code. The document is read to be able to produce the Sigma module.
 
 #### Document
 
-The document is encapsulated by a single class that represents the part of the software through which the Symbol code data is managed and in which it is stored and guarded. Calling the members of its interface will not harm the integrity of the Symbol diagram.
+The document is encapsulated by a single class that represents the part of the software through which the Symbol code data is managed and in which it is stored and guarded. Calling the members of its interface might not harm the integrity of the Symbol diagram.
 
 The document returns the diagram data, provides edit methods, manages selections, allows undo, etc. Almost all possibilities for the user of the Symbol Environment have a place in the symbol document.
 
@@ -104,13 +104,13 @@ The document returns the diagram data, provides edit methods, manages selections
 
 (and Cut, Save Selected and Merge)
 
-Cutting is the same as Copying and then Deleting. Saving Selected will work the same as Copying. Merging will work the same as Pasting. This narrows it down to Copy and Paste.  I will explaining Copy and Paste in detail.
+Cutting is the same as Copying and then Deleting. Saving Selected might work the same as Copying. Merging might work the same as Pasting. This narrows it down to Copy and Paste.  I might explaining Copy and Paste in detail.
 
-No diagram will have classes, references or parents that do not exist in the same diagram. If a fraction of a diagram is taken when copying and classes of objects in the fraction are not in the fraction then dummy classes will be added and taken in use. The same goes for parents and references.
+No diagram might have classes, references or parents that do not exist in the same diagram. If a fraction of a diagram is taken when copying and classes of objects in the fraction are not in the fraction then dummy classes might be added and taken in use. The same goes for parents and references.
 
-An effect of that is that cutting and then immediately pasting does not keep the situation in tact. Classes that weren't cut are no longer referred to by the cut and pasted symbols, but they will have a dummy as a class.
+An effect of that is that cutting and then immediately pasting does not keep the situation in tact. Classes that weren't cut are no longer referred to by the cut and pasted symbols, but they might have a dummy as a class.
 
-Only the outer parent will not be dummied. There will be –1 parents in the fraction, which will become the parent the fraction is pasted in.
+Only the outer parent might not be dummied. There might be –1 parents in the fraction, which might become the parent the fraction is pasted in.
 
 Just about the only difference between Copy/Paste and SaveSelected/Merge is that SaveSelected/Merge has to use a whole SymDoc as a 'clipboard', while Copy/Paste can do with only a SymDocTable which excludes indexes, selections and many other things.
 
@@ -123,15 +123,15 @@ You know *which* of the diagram symbols were just added because we built up an a
 ###### Copy
 
 In every SymDocTable there is an extra field 'Vector' that serves as a vector table.  
-A secondary SymDoc or a SymDocMain will function as a clipboard. You add as many symbols to the clipboard as should be copied and set all properties except Parent, Reference and Class. As you do that you fill in the vector table in the main diagram: diagram position -> clipboard position which means that you don't change ALL the entries in the vector table.  
-After all symbols have been added to the clipboard you will change the parents, references and classes in the clipboard to the value in the primary doc converted with the vector table so they become references to positions in the clipboard and not position in the diagram. If a class wasn't copied then the vector table indicates -1 for it and then an extra symbol is to be added to the clipboard representing a dummy class and an the entry in the vector table that converts the not copied class will convert it to the dummy class. Positions of these vectors to dummy classes are kept in an array. Then the process of changing parents, references and classes can continue. Of course when I talk about a class the same goes for parents and references. After copying, the vector table should be reset. All the selected symbols' Vector properties are to be set to -1.  
+A secondary SymDoc or a SymDocMain might function as a clipboard. You add as many symbols to the clipboard as should be copied and set all properties except Parent, Reference and Class. As you do that you fill in the vector table in the main diagram: diagram position -> clipboard position which means that you don't change ALL the entries in the vector table.  
+After all symbols have been added to the clipboard you might change the parents, references and classes in the clipboard to the value in the primary doc converted with the vector table so they become references to positions in the clipboard and not position in the diagram. If a class wasn't copied then the vector table indicates -1 for it and then an extra symbol is to be added to the clipboard representing a dummy class and an the entry in the vector table that converts the not copied class might convert it to the dummy class. Positions of these vectors to dummy classes are kept in an array. Then the process of changing parents, references and classes can continue. Of course when I talk about a class the same goes for parents and references. After copying, the vector table should be reset. All the selected symbols' Vector properties are to be set to -1.  
 We kept an array of positions of vectors to dummy classes these vectors should be reset to -1 also.
 
 The residence of the vector table is best in the main symbol table for it would be costly to create an array with 60,000 records every time you copy any small bit of a 60,000 symbol diagram.
 
 ##### The below information about Document is obsolete
 
-In this section I will describe abstractly three things about the document: what is explicitly stored (“Stored”), what is read only and what is random access (“Properties”) and the methods of the document class (“Methods”).
+In this section I might describe abstractly three things about the document: what is explicitly stored (“Stored”), what is read only and what is random access (“Properties”) and the methods of the document class (“Methods”).
 
 Keywords regarding the document are: integrity, indexes and abundance.
 
@@ -202,7 +202,7 @@ There are methods that can return to you object relational information and there
 
 ##### System Specification
 
-The symbol language includes a system specification document class. This class will be used to contain the source code. The document is read to be able to produce the Sigma module.
+The symbol language includes a system specification document class. This class might be used to contain the source code. The document is read to be able to produce the Sigma module.
 
 ### Optimizations
 
@@ -230,7 +230,7 @@ A Sigma module contains the organization of a module as well as the machine inst
 
 Sigma requires you to obey a certain groupage. Sigma doesn’t require you to put the tables in a fixed order in memory. It only requires you to tie the right table to the right other table. This makes the hierarchy adequately in order.
 
-In the future I might change the code organization, but I will now take the following as an example organization:
+In the future I might change the code organization, but I might now take the following as an example organization:
 
 ... (encapsulation diagram of the organization)
 
@@ -254,7 +254,7 @@ Outline compiled modules can be programmed with. However, there are no names for
 
 #### View
 
-The Symbol view will simply be the drawn diagram. Complex calculation is involved with placing the symbols on screen, because the user does not use the mouse to place the symbols on screen. The symbols are automatically positioned. The complex calculation is the most complicated about the view, but for calculations there is referred to another section “Calculation” so that won’t be in this chapter. What I’ll describe is the other features that the view supports.
+The Symbol view might simply be the drawn diagram. Complex calculation is involved with placing the symbols on screen, because the user does not use the mouse to place the symbols on screen. The symbols are automatically positioned. The complex calculation is the most complicated about the view, but for calculations there is referred to another section “Calculation” so that won’t be in this chapter. What I’ll describe is the other features that the view supports.
 
 The view supports Zoom and Offset by mouse movement. It supports a map for an overview of the symbols. It can display grids and rulers. It can use color indicators to let jump symbols matching certain criteria. Coloring is also commonly used to display inheritance relations. 
 
@@ -364,7 +364,7 @@ Constants (can be assigned only once where declared (initialization))
 
 Copy is like variable assignment
 
-I will translate each common variable action for you to symbol object structure methods.
+I might translate each common variable action for you to symbol object structure methods.
 
 #### Brainstorm
 
@@ -381,7 +381,7 @@ Outline compiled modules can be programmed with. However, there are no names for
 
 The lowest advisable level to program J Core modules in is a Symbol document. This specifies the system structure. The procedures are also specified in symbol. The symbols in a procedure can refer to the Symbol Assembly library or can refer to other procedures inside the module or to procedures outside the module. The procedures can be displayed as a diagram, but also as a language much like Assembly language and OO Basic intermixed.
 
-J Code will convert the symbol document into the tables specifying the classes and interfaces and translate the procedures to Assembly code that makes J Core calls and obeys the extra set of rules that J Core sets that you don’t have to worry about as a programmer.
+J Code might convert the symbol document into the tables specifying the classes and interfaces and translate the procedures to Assembly code that makes J Core calls and obeys the extra set of rules that J Core sets that you don’t have to worry about as a programmer.
 
 Management of segments, optimizing code for speed, etcetera, are all controlled by J Code and I don’t want programmers, including me, to have anything to do with it, because it is possible to automatically do this. I think real assembly is not worth manually programming with and should be automated.
 
@@ -481,11 +481,11 @@ Module [4] . Interface Module [2] . Interface [3] . Member [21] . Type
 
 A much better representation of actuality, and readable, unlike the original structure.
 
-Member access isn't only useful in, also to group things. To get member access to the grouped things you actually require another class, which is unfortunately not a child class in visual basic, but another entry in the richly occupied class list in Visual Basic. Would you have a thing as child classes, this ugliness could be omitted, because it would then be a tree structure. Another thing with grouping properties is that when you put them in a child class, the child class doesn't have access to the main class's members just like that. You might want the grouped properties to interact with the other properties. In that case you should have to use another phenomena than just a child class. Something solely made for grouping. In VB you don't have this. For that, for interaction with the properties outside a class that groups a few can only be accessed if you give the group a reference to the parent class. This adds a method or property to the group that we don't want to see outside the main class. We can't verhelp this inside the module. But outside the module we don't need to see this member that sets the parent class. We can hide them from outside the module, by declaring them Friend, instead of Public. But inside the module we will still see it as part of the member of an object property.
+Member access isn't only useful in, also to group things. To get member access to the grouped things you actually require another class, which is unfortunately not a child class in visual basic, but another entry in the richly occupied class list in Visual Basic. Would you have a thing as child classes, this ugliness could be omitted, because it would then be a tree structure. Another thing with grouping properties is that when you put them in a child class, the child class doesn't have access to the main class's members just like that. You might want the grouped properties to interact with the other properties. In that case you should have to use another phenomena than just a child class. Something solely made for grouping. In VB you don't have this. For that, for interaction with the properties outside a class that groups a few can only be accessed if you give the group a reference to the parent class. This adds a method or property to the group that we don't want to see outside the main class. We can't verhelp this inside the module. But outside the module we don't need to see this member that sets the parent class. We can hide them from outside the module, by declaring them Friend, instead of Public. But inside the module we might still see it as part of the member of an object property.
 
 ##### Other
 
-In the Windows API documentation somewhere it is told that delegating specific windows message handling to other functions in the window procedure will prevent the stack from overflowing when using many local variables.
+In the Windows API documentation somewhere it is told that delegating specific windows message handling to other functions in the window procedure might prevent the stack from overflowing when using many local variables.
 
 However, if you make it so that the local variables are allocated on the stack imperatively where they are declared, when the declaration code isn’t reached, this allocation doesn’t take place. Microsoft people might advise (in documentation about VB) to put local variable declarations at the beginning of the procedure. So it may not be the best methodology that makes the argument for this. It’s may not be a good idea.
 
@@ -513,7 +513,7 @@ The simplest way to turn a variable into an expression is to enclose it in child
 
 -----
 
-Tip: If you're going to use the value of a property more than once, your code will run faster if you store the value in a variable.
+Tip: If you're going to use the value of a property more than once, your code might run faster if you store the value in a variable.
 
 Conversely in symbol when a property returns explicitly a variable, then you compile it to be an access of the value.
 

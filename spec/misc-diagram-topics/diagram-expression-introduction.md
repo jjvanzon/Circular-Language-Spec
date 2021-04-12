@@ -34,7 +34,7 @@ Diagram Expression concepts:
 - System Methods
 
 The diagram does need to be able to display the whole system in terms of just coding principles, and not coding aspects, because you need to be able to start programming coding aspects using the diagrams. The diagrams need to already be in the language, when you don’t yet have coding aspects.  
-However, coding aspects will be applying to the display of diagrams.
+However, coding aspects might be applying to the display of diagrams.
 
 -----
 
@@ -48,7 +48,7 @@ The CONNECTIONS between symbols, when 'molecularly' positioned, can form shapes 
 
 -----
 
-This is nice to put in documentation: that the symbols and their connection, besides being separate connected shapes, when positioned molecularly, will form symbols of their own, consisting of a combination of symbols. When you use standard positioning, these symbols can be interpreted as a whole, instead of looking at each symbol individually.
+This is nice to put in documentation: that the symbols and their connection, besides being separate connected shapes, when positioned molecularly, might form symbols of their own, consisting of a combination of symbols. When you use standard positioning, these symbols can be interpreted as a whole, instead of looking at each symbol individually.
 
 -----
 
@@ -198,7 +198,7 @@ JJ
 
 Diagram Expression,
 
-A special thing about the notation of definitions (command definitions, classes, interfaces, command interfaces) is, that it expresses all the POSSIBILITIES, to connect objects to each other. An OBJECT will only express the current situation the object might be in. The difference is visible in, that connections that are not yet made, ARE displayed as the possible connections, that can be made. Only if you for instance type something as a class, or USE something as a class, the possible connections are displayed. Heck, even for objects I would probably need to display the possible connections to make with it, in order to display all the connection points.
+A special thing about the notation of definitions (command definitions, classes, interfaces, command interfaces) is, that it expresses all the POSSIBILITIES, to connect objects to each other. An OBJECT might only express the current situation the object might be in. The difference is visible in, that connections that are not yet made, ARE displayed as the possible connections, that can be made. Only if you for instance type something as a class, or USE something as a class, the possible connections are displayed. Heck, even for objects I would probably need to display the possible connections to make with it, in order to display all the connection points.
 
 JJ
 
@@ -355,9 +355,9 @@ Language Integration
 
 Symbol Language embeds techniques that makes you able to integrate any other language into it. 
 
-To demonstrate how other languages, including graphical ones, can be integrated into Symbol I will show how text code is established. 
+To demonstrate how other languages, including graphical ones, can be integrated into Symbol I might show how text code is established. 
 
-Text code is made out of a symbol by giving a reference to a symbol to a translation procedure. The translation procedure will construct a String object that contains the text code. Thus, a tranlation procedure takes a system and translates it to an object that represents the system. If you don’t translate the system to a String, but another type of object, containing shapes and lines, for instance a Shapes object, then you can establish a graphical language.
+Text code is made out of a symbol by giving a reference to a symbol to a translation procedure. The translation procedure might construct a String object that contains the text code. Thus, a tranlation procedure takes a system and translates it to an object that represents the system. If you don’t translate the system to a String, but another type of object, containing shapes and lines, for instance a Shapes object, then you can establish a graphical language.
 
 The symbol diagram language is such a translation to a graphical language... ... yes, unfortunately the diagram language introduced so far is nothing more than a utilization of Symbol. It isn’t symbol itself. A system is retained in a J Data Base. The J Data Base stores the symbols and their relations and also a few standard translation procedures, which are also systems. Some of those standard translation procedures draw out the Symbol diagram language. Another set of those standard translation procedures produce the Symbol text language.
 
@@ -388,7 +388,7 @@ Not so long ago I separated the conceptual explanations from the expression in a
 But the list above leads to not only explaining all concepts in a diagram,  
 but also all diagram elements as an aspect.  
 That can lead to the specification of the most basic aspects, which have the most basic expression in a diagram.  
-Maybe the order of explanations will be adapted to that.  
+Maybe the order of explanations might be adapted to that.  
 But I won’t start working on that right now. It is something for the future.
 
 JJ

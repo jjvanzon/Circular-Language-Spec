@@ -81,7 +81,7 @@ Loose Ideas
 Not showing private members or the contents of procedures is an important subject for the display of the diagrams. 
 
 The definition of something can just as well be shown inside a reference to the definition. It’s a setting whether you’ll show the full definition in a reference or just the public things. It is best if you can’t *change* the definition from a reference to a definition.  
-The definition will be shown next to the diagram anyway. You can change it there. That will work more intuitive.
+The definition might be shown next to the diagram anyway. You can change it there. That might work more intuitive.
 
 -----
 
@@ -257,7 +257,7 @@ The __Redraw Button__ procedure is rather complex. In this procedure lines of th
 
 ![](images/7.%20Commands%20Ideas.007.jpeg)
 
-You can also see here that separately defining a procedure can lead to the *reuse* of procedures. The __Draw Line__ procedure is reused three times in the example above. There are many procedures already defined, that you will use one way or another. Most of these procedures are encapsulated in a type. There’s for instance a __File__ type that contains procedures with which to control a single computer file.
+You can also see here that separately defining a procedure can lead to the *reuse* of procedures. The __Draw Line__ procedure is reused three times in the example above. There are many procedures already defined, that you might use one way or another. Most of these procedures are encapsulated in a type. There’s for instance a __File__ type that contains procedures with which to control a single computer file.
 
 So where does it end? Procedures would continue to delegate to one another and nothing would really actually happen. Well, it ends at a special group of procedures that don’t call other procedures anymore. Each of those procedures executes a so called machine instruction: a basic instruction that is sent to the computer’s central processing unit (CPU) and make the *computer* *do* something. The CPU performs a hardware defined *machine* procedure.
 
@@ -267,7 +267,7 @@ Justs like with the kitchen example: you don’t necessarily need to see the det
 
 ![](images/7.%20Commands%20Ideas.008.jpeg)
 
-Procedures can also be called *operations*, *functions* or *routines* and there are even more synonyms. But I will usually stick to the term *procedure*.
+Procedures can also be called *operations*, *functions* or *routines* and there are even more synonyms. But I might usually stick to the term *procedure*.
 
 
 Procedure Basics
@@ -284,7 +284,7 @@ Procedure Basics
 
 ![](images/7.%20Commands%20Ideas.009.jpeg)
 
-The square is the usual symbol for a procedure. The diamond is a special symbol, as I will show lateron.
+The square is the usual symbol for a procedure. The diamond is a special symbol, as I might show lateron.
 
 Relations between procedures are expressed by *containment*:
 
@@ -314,7 +314,7 @@ To make one procedure call another procedure, you put a diamond in the calling p
 
 ![](images/7.%20Commands%20Ideas.014.jpeg)
 
-You can say __A__ calls __B__, or __B__ is called from __A__. You could say that the line is directed outwards: the call line first exists a square, to next find its target procedure. The connected symbols here represent the same procedure. The side effect of a diamond though, is that it *executes*. __C__ is now part of procedure __A__ and it will execute when __A__ executes. It’s like the code of __B__ is inserted right into procedure __A__. Considering that, it seems that the direction of the line doesn’t really matter: both symbols simply represent the same procedure. But a procedure does have a definition in one place while the other symbols are calls or references to it. The topic of direction is looked at closer in the *Lines* chapter, but I’ll tell you now that the direction of a line is usually outwards.
+You can say __A__ calls __B__, or __B__ is called from __A__. You could say that the line is directed outwards: the call line first exists a square, to next find its target procedure. The connected symbols here represent the same procedure. The side effect of a diamond though, is that it *executes*. __C__ is now part of procedure __A__ and it might execute when __A__ executes. It’s like the code of __B__ is inserted right into procedure __A__. Considering that, it seems that the direction of the line doesn’t really matter: both symbols simply represent the same procedure. But a procedure does have a definition in one place while the other symbols are calls or references to it. The topic of direction is looked at closer in the *Lines* chapter, but I’ll tell you now that the direction of a line is usually outwards.
 
 If one square is called, its contained squares are called too.
 
@@ -584,13 +584,13 @@ If the diamond executor accesses something of a diamond, it’ll only access it 
 
 < Don’t know the notation, really >
 
-In fact the diamond executor will only write members just before the call and will only read members just after the call.
+In fact the diamond executor might only write members just before the call and might only read members just after the call.
 
 < Don’t forget that you don’t need to read or write necessarily, you can also just call a member of the parameter instead of read or write it… explore that >
 
 #### Accessing a Diamond Member During a Call
 
-So how will you access a diamond member *during* a call? Well, usually only procedures called by the executing diamond can access the call parent.
+So how might you access a diamond member *during* a call? Well, usually only procedures called by the executing diamond can access the call parent.
 
 ![](images/7.%20Commands%20Ideas.046.jpeg)
 
@@ -616,14 +616,14 @@ In the situation above it seems the procedure could access the object anyway (be
 
 #### Procedure can set object reference itself too
 
-When the caller (the parent diamond) sets the line, then the caller decides which object the call will refer to.
+When the caller (the parent diamond) sets the line, then the caller decides which object the call might refer to.
 
 So lines going out of a diamond aren’t neccesarily lines set by the caller.  
 Procedures can’t set line going *into* the square themselves. Those are always set by the caller.
 
 It’s important that the procedure itself sets lines, because the line targets of procedure members often serve as the output values of the procedure.
 
-< I don’t know a notation to distinct sets by the caller and sets by the call. Well… in a more explicit notation you will see that the caller calls the set or the called calls the set. >
+< I don’t know a notation to distinct sets by the caller and sets by the call. Well… in a more explicit notation you might see that the caller calls the set or the called calls the set. >
 
 #### Clause Access
 
@@ -644,7 +644,7 @@ When you pass a procedure reference to a child procedure:
 
 ![](images/7.%20Commands%20Ideas.050.jpeg)
 
-The child can call the referenced procedure at will.
+The child can call the referenced procedure at might.
 
 #### The If example
 
@@ -674,7 +674,7 @@ In a recursive situation, though: < P >, one diamond can represent multiple call
 
 ##### 2
 
-A diamond pointing to another diamond: it’s a call to a call. both diamonds represent the same call. They will never execute individually.
+A diamond pointing to another diamond: it’s a call to a call. both diamonds represent the same call. They might never execute individually.
 
 ##### 3
 
@@ -742,7 +742,7 @@ An assignment as such, requires you to get a value from one place and set the ar
 
 There may be more things you want to do with an argument before passing it to a procedure. You may want to create a brand new object as an argument and you may want to call some members of the argument first. You *can’t* do these operations directly on the argument. You have to create a separate object, manipulate it and then pass it by reference
 
-There’s a shorthand for creating a brand new object and passing it by reference. In text code this will look like this:
+There’s a shorthand for creating a brand new object and passing it by reference. In text code this might look like this:
 
 ```vb
 Procedure ( New Type )
@@ -772,13 +772,13 @@ You can let the separate object seem to be the argument itself, by using a peel 
 
 ![](images/7.%20Commands%20Ideas.058.jpeg)
 
-The creation will still be visible, but you’ve excluded the line, without loosing the information that it’s really an external object. 
+The creation might still be visible, but you’ve excluded the line, without loosing the information that it’s really an external object. 
 
 Of course you don’t have to show the implicit creation.
 
 ![](images/7.%20Commands%20Ideas.059.jpeg)
 
-Then you just see that the object is created, and you will be satisfied knowing only *that* it is created, not where and when. This is just about exactly the effect of:
+Then you just see that the object is created, and you might be satisfied knowing only *that* it is created, not where and when. This is just about exactly the effect of:
 
 ```vb
 Procedure ( New Type )
@@ -954,7 +954,7 @@ However, the picture above is actually again an implicit notation for something 
 
 ### Brainstorm
 
-A procedure will probably not get its own symbol anyway. It would just be an object with an execution point.
+A procedure might probably not get its own symbol anyway. It would just be an object with an execution point.
 
 A procedure symbol can define its own procedure:
 
@@ -977,7 +977,7 @@ Commands,
 
 "Do you know I don't even want those commands." ...
 I made that remark when I right-clicked on an item.
-Encircle will make a ton of commands available on
+Encircle might make a ton of commands available on
 many many objects... but a lot of times I don't even want those commands.
 So I as the user want to be able to hide those. I do not want to see those.
 
@@ -1022,7 +1022,7 @@ Here is a list of possible reference targets and call targets:
 
 An object assignment can also be used for *commands*. In that case it is a *command object assignment*. You can only let two command symbols refer to the same object when they are command *definitions*. You can not assign a command object to a command call. This is due to the special object creation behavior of a call. Command calls can never *redirect* their object. They are always *their own* object, and they are only created, when they are running. Command definitions, however, are permanently created objects, and a command definition symbol can redirect its object target.
 
-To keep direct conversion between an object and a command possible without any loss of structure, it is allowed to give a call symbol and object redirection anyway. But then, the object redirection will behave as a *definition* redirection and a warning will be generated.
+To keep direct conversion between an object and a command possible without any loss of structure, it is allowed to give a call symbol and object redirection anyway. But then, the object redirection might behave as a *definition* redirection and a warning might be generated.
 
 -----
 
@@ -1034,7 +1034,7 @@ Object assignment can also be done for commands, but only has the right effect b
 
 Class assignment is also used to assign a command definition to a call.
 
-Command definition assignment means, that a call or command reference is appointed a new definition target. The target definition of one command reference or call is assigned as the target definition of another command reference or call. The reference to the original command definition is released. Only when the original command definition does not have any other references anymore, then the original object is deleted. But do not worry; as long as a command definition is part of a module, it means there still is a reference to it and it will not get deleted.
+Command definition assignment means, that a call or command reference is appointed a new definition target. The target definition of one command reference or call is assigned as the target definition of another command reference or call. The reference to the original command definition is released. Only when the original command definition does not have any other references anymore, then the original object is deleted. But do not worry; as long as a command definition is part of a module, it means there still is a reference to it and it might not get deleted.
 
 -----
 
@@ -1048,7 +1048,7 @@ In the example above, symbol __A__ is a non-executing (square) command symbol, a
 
 An object pointer assignment can also be used for *commands*. In that case it is a *command reference command object assignment*. You can only let two command symbols refer to the same target object when they are command *definitions*. You can not assign a command object to a command call. This is due to the special object creation behavior of a call. Command calls can never *redirect* their object. They are always *their own* object, and they are only created, when they are running. Command definitions, however, are permanently created objects, and a command definition symbol can redirect its object target.
 
-To keep direct conversion between an object and a command possible without any loss of structure, it is allowed to give a call symbol and object redirection anyway. But then, the object redirection will behave as a *definition* redirection and a warning will be generated.
+To keep direct conversion between an object and a command possible without any loss of structure, it is allowed to give a call symbol and object redirection anyway. But then, the object redirection might behave as a *definition* redirection and a warning might be generated.
 
 -----
 

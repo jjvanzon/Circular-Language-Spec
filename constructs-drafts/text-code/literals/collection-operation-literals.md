@@ -12,4 +12,4 @@ Text notation for operations on collections.
 
 #### Collection Operation Literals
 
-Perhaps there will be a general text notation for filling (collection) data, that will easily work for specifying structures.
+Perhaps there might be a general text notation for filling (collection) data, that might easily work for specifying structures.

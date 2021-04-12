@@ -36,7 +36,7 @@ This makes it possible to create a simplified set of members for the sub-objects
 
 ![](images/4.%20Deeper%20Specialization.003.png)
 
-It is the higher parent object that imposes restrictions to access to the deeper objects. So the higher parent object will store those restrictions for deeper objects in a tree structure of __Deeper Specializations__. Even though this is something quite special, it still has a quite simple notation.
+It is the higher parent object that imposes restrictions to access to the deeper objects. So the higher parent object might store those restrictions for deeper objects in a tree structure of __Deeper Specializations__. Even though this is something quite special, it still has a quite simple notation.
 
 ### Other Specialization Techniques
 
@@ -166,4 +166,4 @@ The __Deeper Specializations__ structure is part of the system object, so the in
 
 ![](images/4.%20Deeper%20Specialization.022.png)
 
-Not all sub-objects are represented inside the __Deeper Specializations__ structure. Only as soon as a member gets specialized in a way that requires the __Deeper Specializations__ structure, the member gets a representation inside the __Deeper Specializations__ object. The exact implementation however, will depend on what offers best performance and efficiency.
+Not all sub-objects are represented inside the __Deeper Specializations__ structure. Only as soon as a member gets specialized in a way that requires the __Deeper Specializations__ structure, the member gets a representation inside the __Deeper Specializations__ object. The exact implementation however, might depend on what offers best performance and efficiency.

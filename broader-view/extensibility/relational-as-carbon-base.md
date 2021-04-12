@@ -29,7 +29,7 @@ Men moet gewoon de klasse-relatie structuur zo veel mogelijk als basis nemen, en
 -----
 
 Methods are now separate entities. They are flat functions as they used to be very long ago, before C++, but because of the Flat & Structured Interchange concepts, a method becomes part of the class of each of its parameters.  
-So if you create a set of functions that processes a recursive structure, and you’re wise and you create a method for each type of element in the recursive structure, and the element in the recursive structure, becomes a parameter of the method, then the functions will automatically become part of the class they process. If the class can not be extended with methods, because the author has locked it, the whole class structure will be inherited from and the derived classes will get the new methods included.
+So if you create a set of functions that processes a recursive structure, and you’re wise and you create a method for each type of element in the recursive structure, and the element in the recursive structure, becomes a parameter of the method, then the functions might automatically become part of the class they process. If the class can not be extended with methods, because the author has locked it, the whole class structure might be inherited from and the derived classes might get the new methods included.
 
 -----
 

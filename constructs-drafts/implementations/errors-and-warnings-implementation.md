@@ -17,7 +17,7 @@ Ik begin me steeds meer te beseffen dat goede error handling heel belangrijk is.
 
 -----
 
-Organization of structure must generate errors, but the generated code also needs better error handling. You can generate safer code, if all dependencies of the procedure are checked and specific errors are generated if something goes wrong. You will have the option of continuing always on error, breaking on error, stopping execution on error, ask what to do in case of an error or maintain an error log. Or you could choose not to generate any error handling at all.
+Organization of structure must generate errors, but the generated code also needs better error handling. You can generate safer code, if all dependencies of the procedure are checked and specific errors are generated if something goes wrong. You might have the option of continuing always on error, breaking on error, stopping execution on error, ask what to do in case of an error or maintain an error log. Or you could choose not to generate any error handling at all.
 
 #### Experiment 0.9's Compiler Pitfalls ( Errors )
 
@@ -31,7 +31,7 @@ Organization of structure must generate errors, but the generated code also need
 - Inherited member different signature than the shadowing derived class member
 - Duplicate class name, duplicate attribute name, duplicate enum name, etcetera.
 - Inheritance Circularity pitfall
-- How should I check if name ambiguities will occur? Not for the moment.
+- How should I check if name ambiguities might occur? Not for the moment.
 - In de meeste gevallen als de J Data Base output niet te compileren is zijn er:
     - Namen dubbel gespecificeerd.
     - Visual Basic keywords gebruikt voor elementen.

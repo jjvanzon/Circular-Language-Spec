@@ -62,10 +62,10 @@ Automatically imposing conditions
 
 < Optimization issue >
 
-Checking conditions takes up small quantities of time. It is a balance between the time required to check conditions, time required to rollback the method’s data mutations, and the likeliness that an error will occur.
+Checking conditions takes up small quantities of time. It is a balance between the time required to check conditions, time required to rollback the method’s data mutations, and the likeliness that an error might occur.
 
-You might want to automatically regulate checking the conditions or not, but this regulation would probably add a considerable performance penalty too. You might also do a periodic automatic tuning of the methods, so that conditions will be added or removed based on how many times an error occurs, and if it’s averagely faster to do a rollback every now and then, or a conditional check all the time.
+You might want to automatically regulate checking the conditions or not, but this regulation would probably add a considerable performance penalty too. You might also do a periodic automatic tuning of the methods, so that conditions might be added or removed based on how many times an error occurs, and if it’s averagely faster to do a rollback every now and then, or a conditional check all the time.
 
-Maybe the conditional checks will be checked under the surface anyway, only you could do some of the checks earlier at the beginning of the method.
+Maybe the conditional checks might be checked under the surface anyway, only you could do some of the checks earlier at the beginning of the method.
 
 < / Optimization issue >

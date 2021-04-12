@@ -26,7 +26,7 @@ __Contents__
 
 ### Concept
 
-A command can contain a set of related objects. Those are the parameters of the command. A command will use objects to do its work.
+A command can contain a set of related objects. Those are the parameters of the command. A command might use objects to do its work.
 
 A parameter is an object related to a command.
 
@@ -39,7 +39,7 @@ Commands are special objects, that just happen to be executable. That is why the
 You can view a system as being a flat set of procedures, that take objects as parameters. You can also view a system as being a set of objects, that have a set of commands inside of them them. Procedural and object oriented are completely interchangeable in this system.
 
 Multiple commands can have the same object filled in as a parameter.  
-Then the object will contain all of those commands.  
+Then the object might contain all of those commands.  
 These two perspectives on it are completely interchangeable.
 
 A command can contain multiple objects.  
@@ -89,7 +89,7 @@ Multiple commands can have the same object as a parameter.
 
 ![](images/1.%20Relations%20Between%20Commands%20&%20Objects.007.png)
 
-Then the object will contain all of those commands.
+Then the object might contain all of those commands.
 
 ![](images/1.%20Relations%20Between%20Commands%20&%20Objects.008.png)
 
@@ -155,12 +155,12 @@ The object of the parameter is not determined yet in an inactive command referen
 
 ##### Local Variables
 
-Local variables, as they are called in contemporary programming languages, are a lot like parameters. Unlike parameters, they are private to the command, rather than publicly written or read. Local variables are private contents of a command. Since they can not be publicly set, and you can not determine what object the private variable will hold, the command also can not become part of any arbitrary object of the class of the local variable.  
+Local variables, as they are called in contemporary programming languages, are a lot like parameters. Unlike parameters, they are private to the command, rather than publicly written or read. Local variables are private contents of a command. Since they can not be publicly set, and you can not determine what object the private variable might hold, the command also can not become part of any arbitrary object of the class of the local variable.  
 So the command does not become part of each object of the class of that local variable, because the object of that local variable can not be freely appointed.
 
 The local variable *might* make the command part of the class anyway, but then as a static command, that can be called on the class, but not on any arbitrary object.
 
-- \> 2008-09-06 Not true. Just wait what it will look like relations between objects and commands.
+- \> 2008-09-06 Not true. Just wait what it might look like relations between objects and commands.
 
 ### Loose Ideas
 

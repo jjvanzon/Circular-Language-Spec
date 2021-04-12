@@ -152,7 +152,7 @@ A dotted line might point out an *interface*. Shapes connected by dotted lines m
 
 ![](images/Basic%20Diagram%20Elements.016.png)
 
-A wavy line could represent the concept of *values*. When shapes are connected with a wavy line, it might mean, they have the same value or perhaps soon will get the same value. Another name for this line might be a *value line*.
+A wavy line could represent the concept of *values*. When shapes are connected with a wavy line, it might mean, they have the same value or perhaps soon might get the same value. Another name for this line might be a *value line*.
 
 ### Cross
 
@@ -494,7 +494,7 @@ Classes,
 
 If you can see object usage, you can not see class-sub-object usage.
 
-You'd have to look at the usage of the sub-objects of the objects of that class, to see the class's sub-object usage. Indirectly you will be able to see the dependency on a class's sub-object.
+You'd have to look at the usage of the sub-objects of the objects of that class, to see the class's sub-object usage. Indirectly you might be able to see the dependency on a class's sub-object.
 
 Doesn't a sub-object have a reference to the class's sub-object or does the parent object only have a reference to the class?
 

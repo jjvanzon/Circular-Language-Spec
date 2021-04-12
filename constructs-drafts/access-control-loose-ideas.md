@@ -71,7 +71,7 @@ Private and public do have more of a function as complexity-hiding.
 But that is just another point to access control. Access control is not only there to make certain people not able to do certain things. It is also there for complexity-hiding, to make it easier on people, making sure they don’t see irrelevant details that obscure the picture.
 
 However, this complexity hiding is very welcome in the diagrams, because it hides the complexity of a procedure, so you only see a name of a command and some parameters.  
-However, before access control is implemented, you will just see the private contents of a command wherever you can call it. Tough.
+However, before access control is implemented, you might just see the private contents of a command wherever you can call it. Tough.
 
 JJ
 
@@ -121,7 +121,7 @@ Furthermore, you can separately control access by the user for two things:
 - WhenN.AddAndRemoveByUser
     - Controls whether a user can Add and Remove items in a related list.
 
-It is the intention for the programmer to be able to access control most procedures that would otherwise be __Public__ and also separately control access from the user interface to those procedures. Also, the programmer will be more able to leave out certain procedures altogether, like you can with the attribute __Get__ and __Set__. For instance, the __Add__, __Remove__ and __Clear__ methods in a =>n related list, should become separately access controllable as well as separately excluded.
+It is the intention for the programmer to be able to access control most procedures that would otherwise be __Public__ and also separately control access from the user interface to those procedures. Also, the programmer might be more able to leave out certain procedures altogether, like you can with the attribute __Get__ and __Set__. For instance, the __Add__, __Remove__ and __Clear__ methods in a =>n related list, should become separately access controllable as well as separately excluded.
 
 #### Read Only
 
@@ -134,17 +134,17 @@ Nothing has been thought of to control access for different users. That’s quit
 
 #### Public Creatable Classes
 
-A common way of accessing an object structure is by accessing it through one or more global objects and access all other objects from there. You can also allow an application to create object of classes and access a portion of the object structure from there. Internal in the software module that contains a class, the class can already be created. You can’t put a plug in that. Whether or not a class can be created by another software module, you have to specify for each class. Make the __Class.PublicCreatable = True__ and the class will be publicly creatable. By default classes are not public creatable.
+A common way of accessing an object structure is by accessing it through one or more global objects and access all other objects from there. You can also allow an application to create object of classes and access a portion of the object structure from there. Internal in the software module that contains a class, the class can already be created. You can’t put a plug in that. Whether or not a class can be created by another software module, you have to specify for each class. Make the __Class.PublicCreatable = True__ and the class might be publicly creatable. By default classes are not public creatable.
 
 ### Attribute . HasGet
 
-This Boolean property sets or returns whether the attribute will get a __Property Get__ procedure at all in the generated programming interface. If __HasGet = False__, then the attribute is also completely write-only anywhere else in the system, including the user interface. It will also be write-only within the class itself, so can not be read at all.
+This Boolean property sets or returns whether the attribute might get a __Property Get__ procedure at all in the generated programming interface. If __HasGet = False__, then the attribute is also completely write-only anywhere else in the system, including the user interface. It might also be write-only within the class itself, so can not be read at all.
 
 For more information, see the *Access Control* section.
 
 ### Attribute . HasSet
 
-This Boolean property sets or returns whether the attribute will get a __Property Set__ (or __Let__) procedure at all in the generated programming interface. If __HasSet = False__, then the attribute is also completely read-only anywhere else in the system, including the user interface. It will also be read-only within the class itself, so can not be written at all.
+This Boolean property sets or returns whether the attribute might get a __Property Set__ (or __Let__) procedure at all in the generated programming interface. If __HasSet = False__, then the attribute is also completely read-only anywhere else in the system, including the user interface. It might also be read-only within the class itself, so can not be written at all.
 
 For more information, see the *Access Control* section.
 
@@ -156,7 +156,7 @@ For more information, see the *Access Control* section.
 
 #### Class . PublicCreatable
 
-Setting __Class.PublicCreatable__ will see to it that the __Item Class__ will be creatable outside the generated system.
+Setting __Class.PublicCreatable__ might see to it that the __Item Class__ might be creatable outside the generated system.
 
 For more information see then *Public Creatable Classes* section.
 
@@ -205,7 +205,7 @@ JCode: being able to see the source code, but not change it. That's handy for su
 
 -----
 
-Function failure due to security restrictions are things on which a function can fail without there actually being an error in any code or logic. I’m sure that a methodology can be devised that will make error handling in these cases unnecessary, though.
+Function failure due to security restrictions are things on which a function can fail without there actually being an error in any code or logic. I’m sure that a methodology can be devised that might make error handling in these cases unnecessary, though.
 
 -----
 
@@ -213,7 +213,7 @@ Public for sub components, but private for super components.
 
 -----
 
-The problem is, that the idea was to implement it as an aspect, but it’s important to make the access control not easily breached, and I’m not sure how I will do that.
+The problem is, that the idea was to implement it as an aspect, but it’s important to make the access control not easily breached, and I’m not sure how I might do that.
 
 ### Automatic Containment And Access Control
 
@@ -248,7 +248,7 @@ Access control is worked out later in the *Access Control* articles.
 
 Access Control
 
-A lot of things about the system interface needs to be access controlled. Access control will only be worked out in the future. You do however have to mention it in the documentation everywhere, where access control has to be applied. Refer to the access control documentation, but also immediately mention the needed access control’s physical effect.  
+A lot of things about the system interface needs to be access controlled. Access control might only be worked out in the future. You do however have to mention it in the documentation everywhere, where access control has to be applied. Refer to the access control documentation, but also immediately mention the needed access control’s physical effect.  
 Do put in the preliminary access control documentation, that you need to consider everything about access control in the system interface.
 
 -----
@@ -300,7 +300,7 @@ JJ
 
 -----
 
-But for security it is always important to consider: who's supervising the supervisors of the supervisors? who might manipulate the supervisor. Who will try to go around the supervisor? But further security issues are for later.
+But for security it is always important to consider: who's supervising the supervisors of the supervisors? who might manipulate the supervisor. Who might try to go around the supervisor? But further security issues are for later.
 
 -----
 
@@ -310,7 +310,7 @@ Security & Privacy,
 
 Sometimes an executable object does not need to be open about what it reads or writes. It should be able to apply privacy to data, owned by the site, or the user. This to protect the design of the data model. You shouldn't have to expose your data model.
 
-However, when it is the user or site's OWN data, you have to be completely open about what a command will read or change.
+However, when it is the user or site's OWN data, you have to be completely open about what a command might read or change.
 
 Then the data model stores data, that is the user's OWN data, the data model should be completely open, as far as reporting command IO to the user.
 
@@ -320,7 +320,7 @@ You have to look at the belangen of the user and the author of the software: It 
 
 It is like a user has to have access to the data of its own file. Compare it to  medical data, and an employee's file. The employee or patient has the right to look into this data.
 
-The software author should not have too much of a choice about what data models it will protect. If it's the user's own data, the software needs to be completely open about a command's IO.
+The software author should not have too much of a choice about what data models it might protect. If it's the user's own data, the software needs to be completely open about a command's IO.
 
 If a software author can keep any data undisclosed, it takes away the security aspect. Open Command IO shields malicious software, spyware, adware and viruses.
 

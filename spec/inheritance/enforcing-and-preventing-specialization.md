@@ -34,7 +34,7 @@ __Contents__
 
 ### Introduction
 
-The world of programming languages offers several ways to prevent *or* *enforce* specialization. This article will give this a place inside Encircle.
+The world of programming languages offers several ways to prevent *or* *enforce* specialization. This article might give this a place inside Encircle.
 
 The concepts from other languages can be boiled down to a simpler model that has to provide the following:
 
@@ -53,7 +53,7 @@ __Protected Object Set__
 __Protected Object Get__  
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.002.png)
 
-In other words: __Protected__ will be accomplished by providing ‘public’ access through a triangle reference, but ‘private’ access through a circle reference. In the picture below the triangle offers access to the member, but the circle does not.
+In other words: __Protected__ might be accomplished by providing ‘public’ access through a triangle reference, but ‘private’ access through a circle reference. In the picture below the triangle offers access to the member, but the circle does not.
 
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.003.png)
 
@@ -191,7 +191,7 @@ Here it becomes apparent that the notation should not be just an open half trian
 
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.020.png)
 
-The use of this enforcement is questionable to me, because with a little effort you could wrap a non-inheritable class into an inheritable class again. I can imagine that a __final__ class could not have __virtual__ or __abstract__ members, so such a trick would not make it possible to override members, but it will make it possible to do any other inheritance trick in the book.
+The use of this enforcement is questionable to me, because with a little effort you could wrap a non-inheritable class into an inheritable class again. I can imagine that a __final__ class could not have __virtual__ or __abstract__ members, so such a trick would not make it possible to override members, but it might make it possible to do any other inheritance trick in the book.
 
 ### Interface / Interface Member
 
@@ -240,11 +240,11 @@ But all in all, you should not worry about this, because if you use an interface
 
 #### Rule 3: Interfaces can not Have an Implementation
 
-Encircle offers no way to enforce that the interface object has no implementations. Period. You can put implementations in interfaces, only they will never be used.
+Encircle offers no way to enforce that the interface object has no implementations. Period. You can put implementations in interfaces, only they might never be used.
 
 Something must be considered here compared to other programming languages. In other programming languages the implementation of an interface is composed of method implementations and private members. In Encircle, method implementations are considered *private content*. So in Encircle the interface and implementation are distinguished by separating the public content from the private content.
 
-So how this translated to implementations inside interface objects: if you make something inside an interface object private, it will never be used.  
+So how this translated to implementations inside interface objects: if you make something inside an interface object private, it might never be used.  
 You can make the private content usable again by either making it public again or by making the object usable as a class or plainly as a object.
 
 #### Gruesome
@@ -289,7 +289,7 @@ But this is also possible in other languages by making a member __protected abst
 
 ### Courtesy
 
-All of this is just courtesy to support all these concepts in Encircle. My gut feeling is that something simpler will be come up with in the future.
+All of this is just courtesy to support all these concepts in Encircle. My gut feeling is that something simpler might be come up with in the future.
 
 For instance the __Protected__ connector notation was come up with at a very early stage, long before the other inheritance-related modifiers were considered. My gut feeling is that I have to let go of the notation for __Protected__ and go for a notation more concise and integrated with all of the other things that can be expressed. __Protected__ really does not deserve such an intrinsic notation compared to the rest of the inheritance-related modifiers.
 
@@ -297,7 +297,7 @@ This article is just put here to make sure that at least all of this stuff is po
 
 ### Enforcing & Preventing Other Specialization Methods
 
-The ideas above will provide other language’s capabilities to enforce or prevent specialization. But what about the other specialization methods? How are they enforced or prevented? The following specialization methods were not covered:
+The ideas above might provide other language’s capabilities to enforce or prevent specialization. But what about the other specialization methods? How are they enforced or prevented? The following specialization methods were not covered:
 
 - Altering the Member Set:
  
@@ -326,7 +326,7 @@ However, these other specialization methods do not really disturb the class’s 
 
 ### Preventing Pre-Extension with Cancellation
 
-Pre-extension with cancellation is an alternative to overriding. It should also be preventable, because it alters the base’s behavior. Clearly when something is not overridable, you should also not be able to cancel it. The exact implementation of this is not important. The only thing that is important is that it prevention of pre-extension with cancellation *will* be implemented.
+Pre-extension with cancellation is an alternative to overriding. It should also be preventable, because it alters the base’s behavior. Clearly when something is not overridable, you should also not be able to cancel it. The exact implementation of this is not important. The only thing that is important is that it prevention of pre-extension with cancellation *might* be implemented.
 
 ### Preventing & Enforcing Data Replacement
 

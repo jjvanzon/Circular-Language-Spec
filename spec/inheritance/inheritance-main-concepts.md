@@ -30,7 +30,7 @@ Such specialization can be also be applied to commands. The inheritance document
 
 ### Main Concepts
 
-Encircle supports several forms of inheritance. All these basic forms of inheritance will be laid out in the following articles:
+Encircle supports several forms of inheritance. All these basic forms of inheritance might be laid out in the following articles:
 
 - *Class Inheritance*
 - *Object Inheritance*
@@ -74,7 +74,7 @@ What is special about it, is that when an object is added to the base list, an o
 
 ![](images/1.%20Inheritance%20Main%20Concepts.006.png)
 
-And the list item added to the derived list will inherit directly from the list item in the base list.
+And the list item added to the derived list might inherit directly from the list item in the base list.
 
 ![](images/1.%20Inheritance%20Main%20Concepts.007.png)
 
@@ -86,17 +86,17 @@ The list inheritance construct realizes such behavior by responding to the __Lis
 
 ![](images/1.%20Inheritance%20Main%20Concepts.008.png)
 
-These events make sure that what happened in the base list, will also happen in the derived list.
+These events make sure that what happened in the base list, might also happen in the derived list.
 
 ![](images/1.%20Inheritance%20Main%20Concepts.009.png)
 
-And on top of that, the derived list item will be linked to the base list item through inheritance.
+And on top of that, the derived list item might be linked to the base list item through inheritance.
 
 ![](images/1.%20Inheritance%20Main%20Concepts.010.png)
 
 List inheritance also makes a distinction between object inheritance and class inheritance. The default is object inheritance, which causes the behavior you are most likely to expect.
 
-But *class* inheritance is also possible for lists, in case of which the lists items will be linked with class inheritance:
+But *class* inheritance is also possible for lists, in case of which the lists items might be linked with class inheritance:
 
 ![](images/1.%20Inheritance%20Main%20Concepts.011.png)
 
@@ -114,7 +114,7 @@ System inheritance introduces the concept of having one module with objects defi
 
 You can be selective about which objects inside the derived module get specialized. This allows you to both specialize objects with a fixed logical residence inside the base module, as well as specialize objects that are mere references to objects defined totally elsewhere outside the module.
 
-Objects in the derived module will inherit from their counterpart object in the base module. This will all go automatically.
+Objects in the derived module might inherit from their counterpart object in the base module. This might all go automatically.
 
 Synonyms for system inheritance are module inheritance or a parallel structure.
 
@@ -140,7 +140,7 @@ In system inheritance you can simply pick out the sub-object you are going to sp
 
 Now the derived object is not the same object as the object in the base system anymore, but the derived object is a new object, which has a triangular reference to the base object.
 
-Something to consider though, is that when a much deeper object is specialized, all the levels that lead to the deeper object will also get a specialized version (for more information see: *Even Deeper Member Addition*).
+Something to consider though, is that when a much deeper object is specialized, all the levels that lead to the deeper object might also get a specialized version (for more information see: *Even Deeper Member Addition*).
 
 Systems can inherit with either object inheritance or class inheritance.
 
@@ -152,7 +152,7 @@ Systems can inherit with either object inheritance or class inheritance.
 
 ![](images/1.%20Inheritance%20Main%20Concepts.018.png)
 
-The difference between the two is completely analogous to normal object inheritance and class inheritance. In system *object* inheritance changing the values of base members will directly change the base system. You are working directly on the base system. In system *class* inheritance you can freely change the values of the base members without affecting the base system.
+The difference between the two is completely analogous to normal object inheritance and class inheritance. In system *object* inheritance changing the values of base members might directly change the base system. You are working directly on the base system. In system *class* inheritance you can freely change the values of the base members without affecting the base system.
 
 System inheritance is added behavior compared to normal inheritance, because any of the sub-objects can be redefined. Modules can also inherit from each other like *normal* objects, but you have to do this using the system interface notation as follows:
 
@@ -162,7 +162,7 @@ You can then add or specialize members from the base system in a normal inherita
 
 ### Alternate Version Through Inheritance
 
-Once there was the idea, that through inheritance and specialization, you can create a *totally* altered version of a system, while the base system stays in tact. But this idea is let go of, because if something is private, then you can not change it, and when a specialization method is made private, then you can not specialize that. So you will not be able to create completely alternate versions of something through mere inheritance.
+Once there was the idea, that through inheritance and specialization, you can create a *totally* altered version of a system, while the base system stays in tact. But this idea is let go of, because if something is private, then you can not change it, and when a specialization method is made private, then you can not specialize that. So you might not be able to create completely alternate versions of something through mere inheritance.
 
 ### Miscellaneous Inheritance Situations
 

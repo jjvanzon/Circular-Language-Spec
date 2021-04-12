@@ -148,7 +148,7 @@ Since this would sort of indicate the direction of the flow of the data. But the
 |:--------------------------------------:|
 | __Get Value `=>` <br> Set Value `<=`__ |
 
-In the main idea the access mark sort of points in the direction of what the value is going to be, rather than where the value will go.
+In the main idea the access mark sort of points in the direction of what the value is going to be, rather than where the value might go.
 
 That said, there is a little bit of doubt. That is why this alternative idea is still described here.
 

@@ -45,7 +45,7 @@ Creating containment relations, overlapping containment by references.
 A dictionary can tell the classes of words, giving the words classes.  
 Inheritance can be used to give different words the same base class. For instance: ‘sadness’ and ‘unity’ are both ‘concepts’. Both have concept as the base class.
 
-It can create correlations between syntaxes that are semantically correct. That way you can say things in a million ways, and it still will be able to point out a single same meaning of what you say.  
+It can create correlations between syntaxes that are semantically correct. That way you can say things in a million ways, and it still might be able to point out a single same meaning of what you say.  
 If it encounters ambiguity ...
 
 I’m not saying it’s easy, but if the systematics of language can be defined exactly, then a computer system could be designed to interpret it.
@@ -165,6 +165,6 @@ tie-together of objects. > I SHOULD REALLY CONSIDER THIS.
 
 2004,
 
-Nouns are objects, verbs are methods and adverbs are properties. Hmmm... the study of language and grammar will extend the symbol language.
+Nouns are objects, verbs are methods and adverbs are properties. Hmmm... the study of language and grammar might extend the symbol language.
 
 JJ

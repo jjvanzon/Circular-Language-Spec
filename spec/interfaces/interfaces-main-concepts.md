@@ -38,7 +38,7 @@ __Contents__
 
 Up till now the idea of interfaces was fully left out of the stories. This chapter makes the concept of interfaces catch up with the rest of the documentation. The basic concept of interfaces is covered along with its diagram notation. Also covered are: interface assignment, interface reference and relations that form through the use of interfaces. Another concept, yet to be worked out, is how commands of an object are grouped by site: an object can have commands, defined on different sites, and the commands should be grouped by site in order to judge how reliable the commands are *(grouped by source)*. As interfaces can be applied to objects, but interfaces can also be applied to *commands*.
 
-At some point the idea was, to also cover all the different *uses* of interfaces. But the different uses of interfaces are adequately described by other literature. The focus will lie on explaining the raw concept of interfaces and their presence in Encircle.
+At some point the idea was, to also cover all the different *uses* of interfaces. But the different uses of interfaces are adequately described by other literature. The focus might lie on explaining the raw concept of interfaces and their presence in Encircle.
 
 The main concepts of interfaces are explained here along with their diagram notations.
 
@@ -129,7 +129,7 @@ Interface object resolution happens when you reference an object and the referen
 
 It is about the bit of dotted line denoted by the arrow. This is an automatic extension of the solid line on the left. Because the the reference (__R__) on the left has an externally defined interface (__I__) on the right, and the object (__O__) supports this interface, the reference’s line is automatically redirected to this particular interface of the object. Automatic redirections like that are called *object resolution*.
 
-There are a lot of other object resolution concepts related to interfaces and inheritance, such as overriding and shadowing, but they will be covered separately in the *Object Resolution* chapter.
+There are a lot of other object resolution concepts related to interfaces and inheritance, such as overriding and shadowing, but they might be covered separately in the *Object Resolution* chapter.
 
 The situation above only works in case of implicit interfaces.  
 It also does not work when the same interface is defined twice. If it is, you have to refer to the interface explicitly.
@@ -156,9 +156,9 @@ Classic inheritance is not the only form of inheritance in Encircle. Different f
 
 When you externally define an interface, it becomes a contract. You can creatively use this concept for any purposes, but some of those purposes deserve to be pointed out explicitly.
 
-It can be a contract of a *guarantee* to support a sure set of members. So this offers a guarantee to ones that will be using the object. So you know an object has *at least* those members with that exact configuration.
+It can be a contract of a *guarantee* to support a sure set of members. So this offers a guarantee to ones that might be using the object. So you know an object has *at least* those members with that exact configuration.
 
-An interface can also serve as a contract of *usage*. This means, that an object has *exactly* the members defined by the interface. So now someone using the object will only be able to use it in an exactly defined way.
+An interface can also serve as a contract of *usage*. This means, that an object has *exactly* the members defined by the interface. So now someone using the object might only be able to use it in an exactly defined way.
 
 A powerful application of such a contract, is the interface as a contract of *participation*. You can give a type an already defined interface. That allows objects that can work with a certain interface, to link to objects of the new type, even when the system was not originally aware of that type. This concept makes it possible to introduce new types of objects into a system, that was not originally aware of them.
 

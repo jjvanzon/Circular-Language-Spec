@@ -71,7 +71,7 @@ Loose Ideas
 
 ## Explanation
 
-Eventually parts of this documentation section will be moved to the concept, the text code expresses, because diagram and text code expression of a concept is placed with the concept, because that makes the documentation easier to read and easier to write.  
+Eventually parts of this documentation section might be moved to the concept, the text code expresses, because diagram and text code expression of a concept is placed with the concept, because that makes the documentation easier to read and easier to write.  
 But for now text expression topics are not worked out with the concepts yet.
 
 ## Loose Ideas
@@ -212,7 +212,7 @@ Language Elements:
 
 ##### Brainstorm 5 : Definitive brainstorm
 
-I will start improvising the parser code soon. I will no longer write out the theory behind it.
+I might start improvising the parser code soon. I might no longer write out the theory behind it.
 
 The following statements are detected by keyword:
 
@@ -225,7 +225,7 @@ The following statements are detected by keyword:
 - For Each ... In ...
 - Next
 
-Actually, Assignment, Add and Remove reach my direct goal already. So it is a question whether I will go any further after that.
+Actually, Assignment, Add and Remove reach my direct goal already. So it is a question whether I might go any further after that.
 
 Add and Remove are currently the only possible method calls for now.
 
@@ -242,7 +242,7 @@ These are their keywords:
 | For Each ... In ... | Keyword: *For Each* |
 | Next                | Keyword: *Next*     |
 
-I will program the interpretation of the statements one by one, and make the most essential one first.
+I might program the interpretation of the statements one by one, and make the most essential one first.
 
 The text is first split up in lines by enter, and then split up in tokens by large space. Then keywords are detected.
 
@@ -259,7 +259,7 @@ After With detection, the part after With is parsed as a qualifier. A reference 
 After End With is detected, the original With is relieved. In with blocks it is immediately required that I can remember a stack of With blocks.  
 < Why can I not use a stack in Creator by default? >
 
-After For Each has been detected, the statement is split by In. The part before In is parsed as a qualifier, except for the first two tokens, and the part after the In is parsed. Then it is remembered on class scope, not function scope, what loop is started and what element of the loop we are at. Embedded looping I will add later. In that case a stack of loops must be remembered.
+After For Each has been detected, the statement is split by In. The part before In is parsed as a qualifier, except for the first two tokens, and the part after the In is parsed. Then it is remembered on class scope, not function scope, what loop is started and what element of the loop we are at. Embedded looping I might add later. In that case a stack of loops must be remembered.
 
 After Next detection, Parsing is actually repeated (this isn’t a perfect solution I am making) until all elements were looped through.
 
@@ -454,7 +454,7 @@ Keywords are used to detect a statement, because this makes the parsing very eas
 
 Enough of that for now. This is going too far for the goal I have right now. This is what I’m supposed to have gotten better at.
 
-I WILL reorganize the text in Brainstorm 3, or perhaps rewrite it. And implement the procedural parser.
+I MIGHT reorganize the text in Brainstorm 3, or perhaps rewrite it. And implement the procedural parser.
 
 ##### Brainstorm 2 : Some Example Code
 
@@ -816,8 +816,8 @@ Voor een iets andere syntax voor Creator structure:
   een niet duale relatie is, de enigste die naar dat specifieke object refereert,  
   etcetera.
 
-I have yet to consider if I will come up with a system of operators that can mean only one operation (but still on different types) or the same symbol being able to mean different operations, such as the = sign, which can mean equality comparison, value assignment and object assignment.  
-If attributes will become classes, it may be so much more clear what operation does what when you use a unique symbol per operation.  
+I have yet to consider if I might come up with a system of operators that can mean only one operation (but still on different types) or the same symbol being able to mean different operations, such as the = sign, which can mean equality comparison, value assignment and object assignment.  
+If attributes might become classes, it may be so much more clear what operation does what when you use a unique symbol per operation.  
 But multiple meanings for the same symbol works more intuitive. I think I should make it an option to display unique operators or an intuitive simple set of operators.
 
 Symbolen  
@@ -855,7 +855,7 @@ How can you unambiguously resolve this interpretation?
 Text Code,  
 2008-10-01
 
-Perhaps for text code there will be several variations:
+Perhaps for text code there might be several variations:
 
 - Brackets / Words:
     - C-like with more brackets / Basic-like with more keywords
@@ -927,7 +927,7 @@ Some types have special notation formats, such as Integer Number, Floating Point
 
 The notation as such describes the state of an object and it’s called a literal. The examples above are textual literals. To assign a literal to an Integer object, the literal is put into a Text object and the conversion procedure for Text to Integer is called. So literals are interpreted by using a conversion procedure with Text as the source type.
 
-A literal can be a Text, but any other type will do, for instance a Picture. If a Picture serves as a literal, then to interpret the literal, the conversion procedure with. < A literal is always of a type of a type. >
+A literal can be a Text, but any other type might do, for instance a Picture. If a Picture serves as a literal, then to interpret the literal, the conversion procedure with. < A literal is always of a type of a type. >
 
 There can also be a reverse for a literal interpreter. The Integer to Text conversion produces the textual integer literal.
 
@@ -1011,7 +1011,7 @@ In text code you sort of see the calls to system procedures and you also sort of
 
 ##### Objects
 
-Here follows an example code, expressed in a diagram, that will be used as an example for the expressions in text code that follow.
+Here follows an example code, expressed in a diagram, that might be used as an example for the expressions in text code that follow.
 
 ![](images/0.0.%20Text%20Code%20Introduction.001.png)
 
@@ -1382,7 +1382,7 @@ Categories could be:
 - alphabetic
 - punctuation
 
-Uppercase and accents are approached with characters categories. A a ? â á à Á à Â å a A Å ? can be seen as the same category so they will all be interpreted as 'a'.
+Uppercase and accents are approached with characters categories. A a ? â á à Á à Â å a A Å ? can be seen as the same category so they might all be interpreted as 'a'.
 
 -----
 

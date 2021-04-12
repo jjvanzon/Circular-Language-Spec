@@ -26,7 +26,7 @@ The following two forms of jump relate specifically to a loop:
 - __Exit Loop__
 - __Continue__
 
-They each will be explained in their own article.
+They each might be explained in their own article.
 
 ### Diagram
 
@@ -48,7 +48,7 @@ The __Continue__ statement is a loop-related jump. It is a jump that is only per
 __Continue__ skips the remainder of the loop procedure and immediately moves on to the next repetition of a loop.
 
 A loop procedure is implemented as a reference to a command, passed as an argument to an execution flow command. So __Continue__ means no more, than to exit the command that is looped, so it is a synonym for __Exit Command__, but then used inside a loop.  
-It will remove the command that is exited from the call stack, and immediately jumps to the command referred to by the __Command End__, that was passed to it.
+It might remove the command that is exited from the call stack, and immediately jumps to the command referred to by the __Command End__, that was passed to it.
 
 #### Diagram
 
@@ -70,7 +70,7 @@ __Exit Loop__ is a jump to the __Command End__ of the loop command. The __Comman
 
 Do not confuse this with exiting the command that is *being* looped, because that causes the next repetition of the loop to run. That action is performed with the __Continue__ command. The __Exit Loop__ command ends the *whole loop*.
 
-The implementation of the __Exit Loop__ command is a lot like the implementation of __Exit Command__, only the __Exit Loop__ command will delete the last *two* calls from the call stack, and immediately jumps to the command referred to by the __Command End__, that was passed to it.
+The implementation of the __Exit Loop__ command is a lot like the implementation of __Exit Command__, only the __Exit Loop__ command might delete the last *two* calls from the call stack, and immediately jumps to the command referred to by the __Command End__, that was passed to it.
 
 #### Diagram
 

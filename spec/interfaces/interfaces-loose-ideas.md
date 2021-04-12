@@ -26,7 +26,7 @@ Relations Through Interfaces,
 2010-05-07
 
 There is one thing I don’t get: if a class relates to an interface, how does the interface know it is a class? The class is no more than an object, really. That it is a class depends on its being used as a prototype for other objects.  
-I bet that if you think about it long enough or if you see it in practice in a prototype version the solution will present itself.
+I bet that if you think about it long enough or if you see it in practice in a prototype version the solution might present itself.
 
 JJ
 
@@ -89,7 +89,7 @@ In the *procedure interface trace* you follow both line types, but you prefer fo
 
 The last symbol of the trace is the interface.
 
-Following any of the two line types will eventually lead to the same symbol. In that sense it doesn’t matter what line type you prefer to follow. The interface line is preferred, though, both because it’s more logical to follow, and because following them you’ll probably hit the interface sooner: probably there will be less interface redirections than reference redirections.
+Following any of the two line types might eventually lead to the same symbol. In that sense it doesn’t matter what line type you prefer to follow. The interface line is preferred, though, both because it’s more logical to follow, and because following them you’ll probably hit the interface sooner: probably there might be less interface redirections than reference redirections.
 
 ###### Execution-Definition-Interface Trace
 

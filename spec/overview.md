@@ -78,7 +78,7 @@ __Contents__
 
 - ![](images/Circle%20Language%20Spec%20Overview.009.png)
 
-  Parameters are like instructions passed along with a command that could make the command behave differently. This documentation tries to view parameters as a relationship between commands and objects. It entertains an idea of how *command parameters* and *class methods* might be interchangeable, as if they might be one and the same concept. It is not sure, if this idea will still be in there in the future. Also a diagram notation of commands and parameters is suggested.
+  Parameters are like instructions passed along with a command that could make the command behave differently. This documentation tries to view parameters as a relationship between commands and objects. It entertains an idea of how *command parameters* and *class methods* might be interchangeable, as if they might be one and the same concept. It is not sure, if this idea might still be in there in the future. Also a diagram notation of commands and parameters is suggested.
 
 ### [Modules](modules.md)
 

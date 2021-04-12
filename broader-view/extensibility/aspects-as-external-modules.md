@@ -48,7 +48,7 @@ Ik bekijk nu de basale aspecten, en kijk hoe die van gegenereerd, naar generiek 
 < 2007-10-04 Applies to Extensible Aspects >  
 There are several attributes that J Data adds automatically, that aren’t defined by the one building the Structure. There are also other structure elements added by J Data automatically.
 
-In this section I will give an overview of all system structure elements, give information on how they are managed, how they are customized and what you should be aware of.
+In this section I might give an overview of all system structure elements, give information on how they are managed, how they are customized and what you should be aware of.
 
 Everything I mention below about system attributes, also counts for system enums.
 

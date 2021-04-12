@@ -54,7 +54,7 @@ Execution Control
 
 ### Basic Language Execution Control
 
-To explain control over execution flow in Symbol I will first introduce examples of execution flow statements in the Basic programming language.
+To explain control over execution flow in Symbol I might first introduce examples of execution flow statements in the Basic programming language.
 
 ```vb
 If X Then A Else B
@@ -88,7 +88,7 @@ Do While I < 6
 Loop
 ```
 
-The same happens here as in the __For__ loop, but it’s a different notation that allows more flexible control of the repetition. First __0__ is assigned as the initial value of __I__. Then there will be looped while __I < 6__. If __I__ becomes greater than or equal to __6__ then the repetition ends. In the repetitions __A(I)__ is called, after which __I__ is incremented.
+The same happens here as in the __For__ loop, but it’s a different notation that allows more flexible control of the repetition. First __0__ is assigned as the initial value of __I__. Then there might be looped while __I < 6__. If __I__ becomes greater than or equal to __6__ then the repetition ends. In the repetitions __A(I)__ is called, after which __I__ is incremented.
 
 The blue parts in the code above are called the *clauses* of the control statements. Those clauses are the code whose execution is considered controlled. They are executed depending on the results of *expressions* and *assignments*, marked with red.
 
@@ -96,7 +96,7 @@ The start of the control statement and the end and whatever’s in between is co
 
 ### Execution Control Procedures
 
-Execution control statements are special procedures. They are given one or more references to other procedures, the execution of which is controlled. These referenced procedures are the clauses of the control statement and also the expressions and assignments controlling their execution. The execution flow procedure decides when or if any of these referenced procedures are called and how many times. How the execution flow procedure will call its referenced procedures, is dependent on what the referenced procedures will do.
+Execution control statements are special procedures. They are given one or more references to other procedures, the execution of which is controlled. These referenced procedures are the clauses of the control statement and also the expressions and assignments controlling their execution. The execution flow procedure decides when or if any of these referenced procedures are called and how many times. How the execution flow procedure might call its referenced procedures, is dependent on what the referenced procedures might do.
 
 ### Selection and Repetition
 
@@ -215,7 +215,7 @@ End If
 
 The outer squares are the clauses. The squares in the larger square are the references to those clauses.
 
-Execution control is so common and the notation above is rather complex. The notation above should even require grouping triangles around the __If__ groups. I already left those out, but I will do more to make it look clearer. A simplified notation for a call to the Selection procedure is regularly used instead:
+Execution control is so common and the notation above is rather complex. The notation above should even require grouping triangles around the __If__ groups. I already left those out, but I might do more to make it look clearer. A simplified notation for a call to the Selection procedure is regularly used instead:
 
 ![](images/6.%20Execution%20Control%20Ideas.003.png)
 
@@ -299,7 +299,7 @@ Integrating math language, you can draw the following diagram:
 
 < Picture: almost the same as text code. Clauses are put in dashed rectangles. >
 
-When you don’t use math language it will look as follows:
+When you don’t use math language it might look as follows:
 
 < Picture: See paper. >
 
@@ -321,7 +321,7 @@ __Repetition__ has the following clauses:
 
 Of each clause there can be only one, but not all need to be filled in.
 
-I will express the two Basic repetition statements in diagram code. The colors denote the different clauses of the Repetition statement.
+I might express the two Basic repetition statements in diagram code. The colors denote the different clauses of the Repetition statement.
 
 Text Code:
 
@@ -398,7 +398,7 @@ You can recognize an embedded procedure by the fact that they’re not calls, no
 
 < picture 40: embedded procedures. Mark the ones that are clauses with a color >
 
-Perhaps jumping will change that and the clauses will get lines, but no lines that end up outside the embedding procedure.
+Perhaps jumping might change that and the clauses might get lines, but no lines that end up outside the embedding procedure.
 
 < Picture 41: clause that does have a line because of a jump to it >
 
@@ -420,7 +420,7 @@ __Returns__ and __Jumps__
     5    Call D
 ```
 
-Line 3 will make a jump to line 5. Line 4 will be skipped.
+Line 3 might make a jump to line 5. Line 4 might be skipped.
 
 ...
 
@@ -454,7 +454,7 @@ Breaking, because each __Case__ group is evaluated now.
 
 #### Conditional Jumps
 
-Two forms of conditional jumping are generally used: selection and iteration. Selections will do either one thing or the other depending on a __Boolean__ state. Iterations will repeat something depending on a __Boolean__ state.
+Two forms of conditional jumping are generally used: selection and iteration. Selections might do either one thing or the other depending on a __Boolean__ state. Iterations might repeat something depending on a __Boolean__ state.
 
 ##### Selection
 
@@ -722,11 +722,11 @@ Most of what’s done inside a procedure is calling other procedures.
 
 Apart from executing a sequence of calls linearly, you can alter the course of the calls using execution control.
 
-A clause is like a procedure itself. For that you can see execution control as selecting which procedure will be called next. Or actually which clause will be called next.
+A clause is like a procedure itself. For that you can see execution control as selecting which procedure might be called next. Or actually which clause might be called next.
 
 First explain that a control statement controls which call is made next. They are responsible for the arbitrarily in execution. Otherwise there would be just one way a program can execute from start to beginning and that’s that, but execution control sees to it that there is variation in the execution of a program.
 
-In one compiler optimization technique it is these execution flow statements that are analysed. Execution control statements make execution variable and this compiler technique analyses how variable that actually is. Maybe the execution control will not be reached with too many different values, let’s say, two values. In that case you might consider removing the variation in execution by making two procedures one of which is one situation of the execution flow statement and the other one is the other situation of the execution flow statement. At calls to the execution flow statement or indirect calls to it, you insert the variation that applies right there.  
+In one compiler optimization technique it is these execution flow statements that are analysed. Execution control statements make execution variable and this compiler technique analyses how variable that actually is. Maybe the execution control might not be reached with too many different values, let’s say, two values. In that case you might consider removing the variation in execution by making two procedures one of which is one situation of the execution flow statement and the other one is the other situation of the execution flow statement. At calls to the execution flow statement or indirect calls to it, you insert the variation that applies right there.  
 \>
 
 #### Nice Example

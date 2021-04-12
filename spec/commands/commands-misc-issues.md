@@ -52,7 +52,7 @@ Not being able to reference sub-commands does not mean, that you *can* use it as
 
 To not cause any confusion, sub-commands are made __Private__. 
 
-Do not change the rule to *sub-commands are always private*, because this would not fully solve the parent command’s control over its sub-commands’ execution. By just making them private, the parent command could still pass a reference to a *sub-*command, so that the parent *gives up* control over the execution of a *sub-*command. This is something, that will not be allowed. Now that you can *never reference a sub-command*, this control is restored.
+Do not change the rule to *sub-commands are always private*, because this would not fully solve the parent command’s control over its sub-commands’ execution. By just making them private, the parent command could still pass a reference to a *sub-*command, so that the parent *gives up* control over the execution of a *sub-*command. This is something, that might not be allowed. Now that you can *never reference a sub-command*, this control is restored.
 
 ##### Diagram
 
@@ -84,7 +84,7 @@ Do not change the rule to *sub-commands are always private*, because this would 
 
 ![](images/6.%20Comands%20Misc%20Issues.005.png)
 
-That would make the parent *give up control* over the execution of a sub-command. This is something, that will not be allowed. Now that you can *never reference a sub-command*, this control is restored.
+That would make the parent *give up control* over the execution of a sub-command. This is something, that might not be allowed. Now that you can *never reference a sub-command*, this control is restored.
 
 ![](images/6.%20Comands%20Misc%20Issues.006.png)
 
@@ -94,9 +94,9 @@ This is a rule for enforcement of control of a parent command over the execution
 
 When you are using an active command reference inside a command, then you are giving up the full control over this sub-command’s execution.
 
-You have to be aware, that when you use an active command reference, the active command reference may already have been executed, or that you may be *waiting* on an external execution to finished. If the external execution won’t finish, then the referring procedure is stuck. If the external command object is an inactive command object, it will never execute, and the command will truly be stuck. A warning should be generated then.
+You have to be aware, that when you use an active command reference, the active command reference may already have been executed, or that you may be *waiting* on an external execution to finished. If the external execution won’t finish, then the referring procedure is stuck. If the external command object is an inactive command object, it might never execute, and the command might truly be stuck. A warning should be generated then.
 
-This also has consequences for setting parameters for the active command reference. If it is already executing or has already executed, then you can not overwrite the parameters. This may mean, that it will simply not be allowed to set parameters for an active command reference at all.
+This also has consequences for setting parameters for the active command reference. If it is already executing or has already executed, then you can not overwrite the parameters. This may mean, that it might simply not be allowed to set parameters for an active command reference at all.
 
 It is *not* the rule, to beware of *any* active command reference. It is the rule to just always beware of them in a *parent command*. An *object* can contain an active command reference, in order to for instance allow a user to carry around a reference to an active command, executing on a site somewhere.
 
@@ -112,7 +112,7 @@ Or that you may be *waiting* on an external execution to finished.
 
 If the external execution won’t finish, then the referring procedure is stuck.
 
-If the external command object is an inactive command object, it will never execute, and the command will truly be stuck. A warning should be generated then.
+If the external command object is an inactive command object, it might never execute, and the command might truly be stuck. A warning should be generated then.
 
 ![](images/6.%20Comands%20Misc%20Issues.009.png)
 
@@ -124,7 +124,7 @@ It is *not* the rule, to beware of any active command reference. It is the rule 
 
 This is a rule for enforcement of control of a parent command over the execution of its sub-commands.
 
-Sub-commands are never manually started by a user. Then there is no way for a user to run the sub-command at any arbitrary moment, and the parent command will keep control over the execution of its sub-commands.
+Sub-commands are never manually started by a user. Then there is no way for a user to run the sub-command at any arbitrary moment, and the parent command might keep control over the execution of its sub-commands.
 
 ### Command Referrers
 
@@ -132,7 +132,7 @@ Sub-commands are never manually started by a user. Then there is no way for a us
 
 The *Referrers* article explained how an object can be made aware of its referrers. The concept of referrers applies direction to command objects as well.
 
-If a command and its references both support the __Referrers__ concept, then every command reference will register itself in the __Referrers__ list of the target command.
+If a command and its references both support the __Referrers__ concept, then every command reference might register itself in the __Referrers__ list of the target command.
 
 Refer to the article *Referrers* for an explanation on how the Referrers concept works.
 
@@ -152,7 +152,7 @@ If another site uses this widely used command definition, the using site could a
 
 #### Class . HasThis
 
-This __Boolean__ expresses if the __Item Class__ will have a __This__ property. For more information see the *This* section. 
+This __Boolean__ expresses if the __Item Class__ might have a __This__ property. For more information see the *This* section. 
 
 #### Class . This
 
@@ -160,7 +160,7 @@ The __This__ member returns the object itself.
 
 #### This
 
-If you set the __Class.HasThis__ property to __True__, then the class will get a __This__ property, which will return the object itself. This is particularly handy in __With__ blocks in which you wish to set another variable to the __With__ block object. __Class.HasThis__ is __True__ by default.
+If you set the __Class.HasThis__ property to __True__, then the class might get a __This__ property, which might return the object itself. This is particularly handy in __With__ blocks in which you wish to set another variable to the __With__ block object. __Class.HasThis__ is __True__ by default.
 
 - Using class procedures with the THIS argument
 

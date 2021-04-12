@@ -49,7 +49,7 @@ That used to be one argument in the claim, that automatic execution order is imp
 
 #### Specific data unknown
 
-Another argument against automatic execution order is, that from a command *definition*, you still don’t know what specific data will be processed. This is because the parameters of the command are not yet filled in. A command definition does not have any objects assigned to the parameters yet. So it is not clear what exact data will be processed. Command definitions only indicate what *types* of object can be connected to the command, but not what *specific* objects are connected to the command. You only know what specific data is processed when a command has specific object connections. A command only has specific object connections when it actually *runs*. But even though, what a command will change seems pretty volatile, there are possibilities for predictions about what a command will change. Things considering each other’s changings once a command actually runs, is a concurrency topic, that will be covered in *Concurrency Resolution*, but not in *Automatic Execution Order*.
+Another argument against automatic execution order is, that from a command *definition*, you still don’t know what specific data might be processed. This is because the parameters of the command are not yet filled in. A command definition does not have any objects assigned to the parameters yet. So it is not clear what exact data might be processed. Command definitions only indicate what *types* of object can be connected to the command, but not what *specific* objects are connected to the command. You only know what specific data is processed when a command has specific object connections. A command only has specific object connections when it actually *runs*. But even though, what a command might change seems pretty volatile, there are possibilities for predictions about what a command might change. Things considering each other’s changings once a command actually runs, is a concurrency topic, that might be covered in *Concurrency Resolution*, but not in *Automatic Execution Order*.
 
 #### Parameters & IO
 
@@ -83,23 +83,23 @@ Document  .  Lines  .  Item  [  0  ..  *  ]  .  Point B   .  X
 Document  .  Lines  .  Item  [  0  ..  *  ]  .  Point B   .  Y
 ```
 
-There must be a limitation in the expression of what is accessed. Perhaps if only __Document__'s existence is being checked, this might be indicated. But to a certain extend the expression of what exactly is accessed should be limited. Not the entire inner workings of a command are visible from its input and output. For instance, in the input / output expression you will *not* be seeing what *sub-commands* are called.
+There must be a limitation in the expression of what is accessed. Perhaps if only __Document__'s existence is being checked, this might be indicated. But to a certain extend the expression of what exactly is accessed should be limited. Not the entire inner workings of a command are visible from its input and output. For instance, in the input / output expression you might *not* be seeing what *sub-commands* are called.
 
 What is written and read by a command are actually pre- and post-conditions of the command. 
 
-Only when you are editing a command, the pre- and post-conditions of the command have to be determined. The pre- and post-conditions do not change once you’ve published, versioned, the command. Once you are done designing, the input-output configuration will be stored within the command. Remember that the *structural* input and output is different from what a command will actually read and change.
+Only when you are editing a command, the pre- and post-conditions of the command have to be determined. The pre- and post-conditions do not change once you’ve published, versioned, the command. Once you are done designing, the input-output configuration might be stored within the command. Remember that the *structural* input and output is different from what a command might actually read and change.
 
 #### Compared IO
 
-In a command definition you only know which *structure elements* a command accesses, and not yet what specific objects. But from the structure elements used by the command, you can already see whether commands *might* be in each other's way. This opens up possibilities to exclude or confirm, that commands might be in each other’s way. When parameters of different reading and writing commands are tied to the same object reference and they are accessing the exact same structure elements, you can be pretty sure they will be in each other’s way. But when you are accessing different object references, you can’t be sure whether accessing *different* object references means accessing *different* objects. The two object references may be referring to the same object all the same. Even though automatic containment of objects would indicate which object references represent the same object, this can not be seen in the diagram expression of a command *definition*, because objects are not filled in yet.
+In a command definition you only know which *structure elements* a command accesses, and not yet what specific objects. But from the structure elements used by the command, you can already see whether commands *might* be in each other's way. This opens up possibilities to exclude or confirm, that commands might be in each other’s way. When parameters of different reading and writing commands are tied to the same object reference and they are accessing the exact same structure elements, you can be pretty sure they might be in each other’s way. But when you are accessing different object references, you can’t be sure whether accessing *different* object references means accessing *different* objects. The two object references may be referring to the same object all the same. Even though automatic containment of objects would indicate which object references represent the same object, this can not be seen in the diagram expression of a command *definition*, because objects are not filled in yet.
 
 And then you have to look if there is any overlap in what one command writes and the other commands reads. The overlap might prove a possible read-write dependency. The order of the two commands would affect the outcome, so that might prove that you *have to* indicate an outcome dependency or a negative statement of outcome dependency. Or when a *different* object reference of the same class is consulted, that you *might* need to indicate outcome dependency.
 
-When you don’t consider volatile concurrency, then when sub-commands follow the same structure paths starting at the same object, you are pretty sure, when the same object will be accessed. But in a volatile concurrency situation you are never entirely sure, unless you lock the data. But those are concurrency issues, which are for later.
+When you don’t consider volatile concurrency, then when sub-commands follow the same structure paths starting at the same object, you are pretty sure, when the same object might be accessed. But in a volatile concurrency situation you are never entirely sure, unless you lock the data. But those are concurrency issues, which are for later.
 
 __Command A__ can only be outcome-dependent on __Command B__, when some of __Command B__’s output is __Command A__’s input. Input and output of a command are not the parameters, but what is read or written *from* the parameters. For command *definitions*, this means, that outcome dependency can only be indicated for sub-commands that have any possible overlap in input-output.
 
-Building up the outcome-dependency structure of a command is only done in the design stage of the command. The outcome-dependency does not change once you’ve published, versioned, a command with sub-commands. Once you are done designing, the outcome-dependency configuration will be stored within the command.
+Building up the outcome-dependency structure of a command is only done in the design stage of the command. The outcome-dependency does not change once you’ve published, versioned, a command with sub-commands. Once you are done designing, the outcome-dependency configuration might be stored within the command.
 
 #### IO definition used for security
 
@@ -136,7 +136,7 @@ Next to making sub-command directly dependent on each other by directly tying th
 
 ![](images/Automatic%20Execution%20Order.001.png)
 
-The parameter of command __A__ is a __Value Out__ parameter that writes to object __O__. The parameter of command __B__ is a __Reference Out__ parameter that connects to object __O__. The parameters of command __A__ and command __B__ are not directly tied to each other, but they do indirectly related to each other. This will be further elaborated in *Automatic Execution Order*.
+The parameter of command __A__ is a __Value Out__ parameter that writes to object __O__. The parameter of command __B__ is a __Reference Out__ parameter that connects to object __O__. The parameters of command __A__ and command __B__ are not directly tied to each other, but they do indirectly related to each other. This might be further elaborated in *Automatic Execution Order*.
 
 #### Other Ideas
 
@@ -146,7 +146,7 @@ The cloning depth may be dependent on the parameter usage inside the command.
 
 #### Loose Ideas
 
-If you don’t indicate the order in which to execute the commands, then they will execute in an arbitrary order. Sometimes this is acceptable from a functional point of view.
+If you don’t indicate the order in which to execute the commands, then they might execute in an arbitrary order. Sometimes this is acceptable from a functional point of view.
 
 The order of a procedure can also be *automatically* determined by *input / output dependency*. A command, called inside a procedure, can take input, that is the output of another command. Then the other command needs to execute first, in order to pass its output on to the next command. This is called the *automatic execution order* principle, part of the flat & structured interchange principles. 
 

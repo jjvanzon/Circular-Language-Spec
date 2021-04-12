@@ -69,7 +69,7 @@ Je moet recursieve operaties TOE kunnen voegen aan een class, door inheritance, 
 
 -----
 
-Also show that deeper member addition will work for lists in the structure.
+Also show that deeper member addition might work for lists in the structure.
 
 -----
 

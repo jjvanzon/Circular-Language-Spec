@@ -78,7 +78,7 @@ This is a type with an overridable procedure B, called by the child. The access 
 
 ![](images/0.%20Object%20Resolution%20Introduction.002.png)
 
-The parent overrode the overridable procedure B. A call to B will resolve to a call to C instead. You can see that overriding means that the parent gives a child’s procedure a reference line to one of its own procedures.
+The parent overrode the overridable procedure B. A call to B might resolve to a call to C instead. You can see that overriding means that the parent gives a child’s procedure a reference line to one of its own procedures.
 
 In the replacement procedure, you can still call the base procedure. That way you can both override procedures of the child or extend them.
 
@@ -144,7 +144,7 @@ Usually the count and types of parameters are varied, but if two overloaded proc
 
 < Picture: text code and diagram code with overloaded procedures that only differ in parameter names. >
 
-When you change a parameter to an object of a different type, then the call line of the call will automatically point to another procedure.
+When you change a parameter to an object of a different type, then the call line of the call might automatically point to another procedure.
 
 < I need pictures with that. >
 
@@ -158,7 +158,7 @@ Shadowing is handy when you use a triangle: a base type or an extra interface im
 
 The two lines are calls to the triangle’s members.
 
-When you want to use a name that’s already used by the base type, you can shadow it and calls will be made to the shadowing member instead:
+When you want to use a name that’s already used by the base type, you can shadow it and calls might be made to the shadowing member instead:
 
 ![](images/0.%20Object%20Resolution%20Introduction.007.png)
 
@@ -168,7 +168,7 @@ The difference with overriding is that the base type still calls its own member,
 
 *I* still calls its own A, while P and anyone else calls P’s A.
 
-A parent can still call the shadowed member, but this would require qualification with the interface name, or the shadowed member will be called:
+A parent can still call the shadowed member, but this would require qualification with the interface name, or the shadowed member might be called:
 
 A
 
@@ -188,7 +188,7 @@ When a procedure has the same name and configuration of public members then in t
 
 ![](images/0.%20Object%20Resolution%20Introduction.011.png)
 
-A second option when you can’t distinct a call to one procedure from a call to the other is simply for *both* procedures to be called. This is called merging the two procedures and in that case the call will resolve in calling *both* procedures. If you want to address a specific procedure, you could qualify the call with the name of the container of the procedure, if that would make a difference. In diagram code you can see the two procedures as separate squares and you *can* see the difference between a call to procedure A and a call to procedure B.
+A second option when you can’t distinct a call to one procedure from a call to the other is simply for *both* procedures to be called. This is called merging the two procedures and in that case the call might resolve in calling *both* procedures. If you want to address a specific procedure, you could qualify the call with the name of the container of the procedure, if that would make a difference. In diagram code you can see the two procedures as separate squares and you *can* see the difference between a call to procedure A and a call to procedure B.
 
 < Picture 27: of text code call to merged procedure with next to it the diagram code >
 

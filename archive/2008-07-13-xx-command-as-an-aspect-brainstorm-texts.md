@@ -12,7 +12,7 @@ Keep in mind, that in earlier articles it was explained, that a command is a sep
 
 A command is an *executable object*.
 
-If an object represents a process, then in Encircle the object is just a command, and no longer an object representing a process. Actually, a *command* will always be an object that represents a process. In Encircle, a command looks just as structured as an object.
+If an object represents a process, then in Encircle the object is just a command, and no longer an object representing a process. Actually, a *command* might always be an object that represents a process. In Encircle, a command looks just as structured as an object.
 
 You can use all the capabilities of objects inside a command.  
 But a command has the special property, that it is *executable*.
@@ -20,7 +20,7 @@ But a command has the special property, that it is *executable*.
 But there is more to the behavior of a command, compared to a normal object.
 
 A command definition contains a collection of other commands to execute.  
-The collection is sorted by the order in which these sub-commands will execute.
+The collection is sorted by the order in which these sub-commands might execute.
 
 The command definition can also contain a set of related objects. Those are the parameters of the command. They are just input, output, throughput or downput. This input, output, throughput and downput is passed on to the sub-commands, that are given outward references to these items (the parameters of the sub-commands are pointers to pointers that way). Some parameters may become *required*, so that you have to fill them in, or have to use them as output.
 
@@ -51,7 +51,7 @@ For the rest objects and commands are identical.
 
 The added behavior of commands is implemented as the __Command__ aspect. When an object supports the __Command__ aspect, it automatically becomes a command. The code base only needs to support an object’s ability to execute in some basic form. But most of the functionality for commands is programmed in Encircle itself. The code base only supplies the basic need to facilitate it.
 
-For a command to execute, the sub-commands need to execute in the right order. The sub-commands again execute sub-commands. This going by the commands recursively probably needs to be present in the code base. The outer commands are machine instructions, which will also be called by the code base.
+For a command to execute, the sub-commands need to execute in the right order. The sub-commands again execute sub-commands. This going by the commands recursively probably needs to be present in the code base. The outer commands are machine instructions, which might also be called by the code base.
 
 A command actually *is* an object, with some special properties: it executes, it contains *calls* to other commands, and the calls are executed in a certain order, part of which can be automatically determined.
 
@@ -82,7 +82,7 @@ For objects of the class, this means, that they copy all methods of the class.
 If the method changes, this changes the class configuration. The change in class configuration must then be ventilated through to all the objects of the class.  
 I haven’t accounted for that yet. The same effect is there for just data of objects: if the class configuration changes, the objects should change also.  
 Gee... you should be versioning. Objects do not change, because they link to a specific version of the class.  
-However when creating a command, and giving it a relation to a class, I guess I do want the command to be ventilated through to the objects? Or will I just forget about that?  
+However when creating a command, and giving it a relation to a class, I guess I do want the command to be ventilated through to the objects? Or might I just forget about that?  
 Gee, the commands inside an object are no longer imaginary references. They are real ones now.  
 I guess, that only if you link to the development version, changes are ventilated through from the classes to the objects.
 
@@ -107,13 +107,13 @@ Still ignore, that also for relations between objects and commands the diagram n
 
 ### Downput
 
-Next to the terms input, output and throughput, the term downput will be introduced. Downput is intermediate data as a helper of a process, that will eventually produce output. Temporary variables, local variables. They are all downput. Actually, in the method-call structure, a method in which output data is disposed, this output as become downput.
+Next to the terms input, output and throughput, the term downput might be introduced. Downput is intermediate data as a helper of a process, that might eventually produce output. Temporary variables, local variables. They are all downput. Actually, in the method-call structure, a method in which output data is disposed, this output as become downput.
 
 The term downput is good, because it is only passed *down* into sub-commands. And it is dropped after the parent command is done (dropped *down*). It is ‘put down’ / rejected after the execution. Or put down / to put something down, that you had in your hand.
 
 ### Read-Write Direction As A Connection
 
-Formerly, the direction of input and output was indicated with an access mark on a reference line. But this created ambiguity with the indication of *reference targets*. Read-write direction is something so basic in Encircle, that it deserves a separate line type. From now on, value direction will be indicated by a *wavy line*.
+Formerly, the direction of input and output was indicated with an access mark on a reference line. But this created ambiguity with the indication of *reference targets*. Read-write direction is something so basic in Encircle, that it deserves a separate line type. From now on, value direction might be indicated by a *wavy line*.
 
 This is actually a good symbol for it, because it looks like a less direct connection than the other line types and *it is* a less direct connection. In fact, the two symbols *aren’t* connected at all. The wavy line looks like a less direction connection, because the complete length of the line, curves and everything, is much longer than a straight line. A wavy line also indicates *heat*, or activity, more than the other line types. Value direction is an *action*.
 
@@ -135,7 +135,7 @@ Input, output and throughput are parameter passing types.
 They are shortened to __In__, __Out__ and __Thru__.  
 When a command’s parameter is __In__, it means that the command reads values from the parameter. When a command’s parameter is __Out__, it means that the command writes values to the parameter. When a command’s parameter is __Thru__, it means, that the command reads values and writes values to the parameter. Throughput functions as both input and output at the same time.
 
-When a command disposes objects after it is done, then those objects are called *downput*. Downput may have been input for sub-commands, or it could have been output of sub-commands. To the parent command, though, it is *downput*. Downput parameters will not be further considered here, because they do not have anything to do with parameter *passing*.
+When a command disposes objects after it is done, then those objects are called *downput*. Downput may have been input for sub-commands, or it could have been output of sub-commands. To the parent command, though, it is *downput*. Downput parameters might not be further considered here, because they do not have anything to do with parameter *passing*.
 
 Input values are written to the command right before the call. Output values are read right after the call.
 
@@ -277,11 +277,11 @@ Parameters passed by value are really only useful for smaller amounts of data, t
 
 By value should only be used for simple object types with a binary value stored in it, or at most simpler objects, cloned to a certain depth. You should not use by value for complex object types.
 
-Please don’t use passing a parameter by value for complex objects and expect no operation to affect the original object, because the deeper objects of it might not be cloned. The object may be passed to sub-commands, that *will* affect the original sub-objects. I will not elaborate on all the difficult situations that it may produce.
+Please don’t use passing a parameter by value for complex objects and expect no operation to affect the original object, because the deeper objects of it might not be cloned. The object may be passed to sub-commands, that *might* affect the original sub-objects. I might not elaborate on all the difficult situations that it may produce.
 
 If you want to pass more complex objects to a command, you do it by reference. If you would pass more complex objects to a command by value, expecting no operation to affect the original object, this would make the various passing by value situations too complex, which is way beyond the goal of parameter passing by value.
 
-Perhaps for that reason, no references to original objects will be cloned for by value parameters. Only *values* of sub-objects will be cloned.
+Perhaps for that reason, no references to original objects might be cloned for by value parameters. Only *values* of sub-objects might be cloned.
 
 In parameter passing by value, the parameter object and the object, that is passed the value to or from, are not referring to each other at all.
 
@@ -324,7 +324,7 @@ A __Value In__ parameter passes a value from an object to the parameter of a com
 
 The command can manipulate the __Value In__ parameter without affecting the original object.
 
-A __Value In__ parameter works best for a simple object, that stores a single value, but might also work for more complex objects, with more than just a single value, but that will require specifying a cloning depth, and comes with all sorts of downsides. See *By Value*.
+A __Value In__ parameter works best for a simple object, that stores a single value, but might also work for more complex objects, with more than just a single value, but that might require specifying a cloning depth, and comes with all sorts of downsides. See *By Value*.
 
 A diagram of a command call with a __Value In__ parameter:
 
@@ -348,7 +348,7 @@ A __Value Out__ is a value produced by a command, that is yielded over to anothe
 
 Output values are parameters, that are not assigned before the call, but only read from after the call.
 
-A __Value Out__ parameter works best for a simple object, that stores a single value. But it might also work for more complex objects, with more than just a single value, but that will require specifying a cloning depth, and comes with all sorts of downsides. See *By Value*.
+A __Value Out__ parameter works best for a simple object, that stores a single value. But it might also work for more complex objects, with more than just a single value, but that might require specifying a cloning depth, and comes with all sorts of downsides. See *By Value*.
 
 Command call with a __Value Out__ parameter:
 
@@ -370,7 +370,7 @@ Or:
 
 Throughput by value is when a by value parameter is first written to, then changed by the command, and then the value of the parameter is read from again, and assigned to the original object.
 
-A __Value Thru__ parameter works best for a simple object, that stores a single value, but might also work for more complex objects, with more than just a single value, but that will require specifying a cloning depth, and comes with all sorts of downsides. See *By Value*.
+A __Value Thru__ parameter works best for a simple object, that stores a single value, but might also work for more complex objects, with more than just a single value, but that might require specifying a cloning depth, and comes with all sorts of downsides. See *By Value*.
 
 Command call with a __Value Thru__ parameter.
 
@@ -463,7 +463,7 @@ Or:
 
 ##### Object Out
 
-An __Object Out__ parameter is an object that resides inside the command. The __Object Out__ may be a new object, or redirect to an existing object. Anyway, the command determines which object will be output. The produced object will be referenced from outside the command.
+An __Object Out__ parameter is an object that resides inside the command. The __Object Out__ may be a new object, or redirect to an existing object. Anyway, the command determines which object might be output. The produced object might be referenced from outside the command.
 
 Unlike parameters passed by reference, an __Object Out__ parameter is *referred to*. This is an exclusive aspect of the __Object Out__ parameter passing type.
 
@@ -672,11 +672,11 @@ Next to making sub-command directly dependent on each other like that, input out
 
 ![](images/2008-07-13%20XX%20%20Command%20As%20A%20Aspect%20Brainstorm%20Texts.062.png)
 
-The parameter of command __A__ is a __Value Out__ parameter that writes to object __O__. The parameter of command __B__ is a __Reference Out__ parameter that connects to object __O__. The parameters of command __A__ and command __B__ are not directly tied to each other, but they do indirectly related to each other. This will be further elaborated in *Automatic Execution Order*.
+The parameter of command __A__ is a __Value Out__ parameter that writes to object __O__. The parameter of command __B__ is a __Reference Out__ parameter that connects to object __O__. The parameters of command __A__ and command __B__ are not directly tied to each other, but they do indirectly related to each other. This might be further elaborated in *Automatic Execution Order*.
 
 #### Further parameter passing stereotyping
 
-Contemplations about further thru parameter passing stereotyping will be postponed.
+Contemplations about further thru parameter passing stereotyping might be postponed.
 
 The thru parameter passing type can be further split up in *affected*, *used & affected*, *transformed*, *transformed same value*, *used & affected & transformed* and *used & affected & transformed same value*.
 
@@ -694,7 +694,7 @@ This gives us the following number of parameter passing situations:
 - Reference Out
 - Value Thru
     - Value Thru, Affected
-        - Value Thru, Affected does not make sense. You’d give a parameter an initial value, that does not get used, but will be overwritten. Value In is a better choice in that case.
+        - Value Thru, Affected does not make sense. You’d give a parameter an initial value, that does not get used, but might be overwritten. Value In is a better choice in that case.
     - Value Thru, Transformed
     - Value Thru, Used & Affected
     - Value Thru, Used & Affected & Transformed
@@ -759,7 +759,7 @@ The combinations, that are left, then:
 
 ##### Value Thru, affected
 
-Does not make sense. You’d give a parameter an initial value, that does not get used, but will be overwritten.
+Does not make sense. You’d give a parameter an initial value, that does not get used, but might be overwritten.
 
 ### Automatically determining what’s in, out or thru
 
@@ -775,7 +775,7 @@ A rigorous way to automatically determine whether something is input, output or 
 
 Whether something is input, output of throughput only changes when the command definition of a sub-command changes. So instead of traversing the whole command call structure to determine whether something is in, out or thru, you also could cast a change to all callers of the command, and their callers, and their callers, upon which the callers adapt their in-out-thru configuration accordingly. This creates a huge event cast. This needs to happen with events, and all dependencies should register themselves inside what they are dependent on.
 
-This makes it possible, that you get very wide casts for a small change in the system. In a well monitored and regulated system this should be workable. Events will create this extreme activity, but that’s just an aspect of this new system. Computer systems will be extremely active, but this is solved by regulating input and output and quota-limits in space and time.
+This makes it possible, that you get very wide casts for a small change in the system. In a well monitored and regulated system this should be workable. Events might create this extreme activity, but that’s just an aspect of this new system. Computer systems might be extremely active, but this is solved by regulating input and output and quota-limits in space and time.
 
 Any way it is done, you have to *store inside* a command, whether a parameter is input, output or throughput, whether it is automatically determined or not. Just like the execution order of sub-commands it is stored inside a command. You have to *store* whether something’s input, output or throughput, because otherwise, you have to redetermine it too many times using a complicated procedure.
 
@@ -783,7 +783,7 @@ Each command defines what is its input, output or throughput, and a new command 
 However, when a definition of a command changes, a huge cast to all its callers and their callers, and their callers is executed.  
 Even this big event cast can be prevented. The answer is versioning. When you use versioning, a called command never changes. Only when command A decides to link to a newer version of command B, command A’s input, output, throughput configuration may change. If command B changes, command A keeps linking to the old version of command B. So the dependencies of command A do not change, and keep pointing to an old version of command A.  
 Only when programming a new version of a system, you can decide to possibly link to a new version of things. A version of a system, that is in production, keeps pointing to unchanging versions of their dependencies.  
-A question for versioning is: when will a version of a command be created? On every change? Or will there be key moments at which an author publishes the new version of the command. These are issues for Versioning, which falls under the Editing & Authoring aspects.  
+A question for versioning is: when might a version of a command be created? On every change? Or might there be key moments at which an author publishes the new version of the command. These are issues for Versioning, which falls under the Editing & Authoring aspects.  
 Versioning of commands can prevent huge casts of changes to input, output or throughput configuration, or at least limit it in size. Only when defining a new call, you have to look at the called command to see if this changes the in, out, thru configuration of the currently edited parent command definition.
 
 #### Giving the issues in this section a place
@@ -835,7 +835,7 @@ That used to be one argument in the claim, that automatic execution order is imp
 
 #### Specific data unknown
 
-Another argument against automatic execution order is, that from a command *definition*, you still don’t know what specific data will be processed. This is because the parameters of the command are not yet filled in. A command definition does not have any objects assigned to the parameters yet. So it is not clear what exact data will be processed. Command definitions only indicate what *types* of object can be connected to the command, but not what *specific* objects are connected to the command. You only know what specific data is processed when a command has specific object connections. A command only has specific object connections when it actually *runs*. But even though, what a command will change seems pretty volatile, there are possibilities for predictions about what a command will change. Things considering each other’s changings once a command actually runs, is a concurrency topic, that will be covered in *Concurrency Resolution*, but not in *Automatic Execution Order*.
+Another argument against automatic execution order is, that from a command *definition*, you still don’t know what specific data might be processed. This is because the parameters of the command are not yet filled in. A command definition does not have any objects assigned to the parameters yet. So it is not clear what exact data might be processed. Command definitions only indicate what *types* of object can be connected to the command, but not what *specific* objects are connected to the command. You only know what specific data is processed when a command has specific object connections. A command only has specific object connections when it actually *runs*. But even though, what a command might change seems pretty volatile, there are possibilities for predictions about what a command might change. Things considering each other’s changings once a command actually runs, is a concurrency topic, that might be covered in *Concurrency Resolution*, but not in *Automatic Execution Order*.
 
 #### Parameters & IO
 
@@ -867,23 +867,23 @@ Document  .  Lines  .  Item  [  0  ..  *  ]  .  Point B   .  X
 Document  .  Lines  .  Item  [  0  ..  *  ]  .  Point B   .  Y
 ```
 
-There must be a limitation in the expression of what is accessed. Perhaps if only __Document__'s existence is being checked, this might be indicated. But to a certain extend the expression of what exactly is accessed should be limited. Not the entire inner workings of a command are visible from its input and output. For instance, in the input / output expression you will *not* be seeing what *sub-commands* are called.
+There must be a limitation in the expression of what is accessed. Perhaps if only __Document__'s existence is being checked, this might be indicated. But to a certain extend the expression of what exactly is accessed should be limited. Not the entire inner workings of a command are visible from its input and output. For instance, in the input / output expression you might *not* be seeing what *sub-commands* are called.
 
 What is written and read by a command are actually pre- and post-conditions of the command. 
 
-Only when you are editing a command, the pre- and post-conditions of the command have to be determined. The pre- and post-conditions do not change once you’ve published, versioned, the command. Once you are done designing, the input-output configuration will be stored within the command. Remember that the *structural* input and output is different from what a command will actually read and change.
+Only when you are editing a command, the pre- and post-conditions of the command have to be determined. The pre- and post-conditions do not change once you’ve published, versioned, the command. Once you are done designing, the input-output configuration might be stored within the command. Remember that the *structural* input and output is different from what a command might actually read and change.
 
 #### Compared IO
 
-In a command definition you only know which *structure elements* a command accesses, and not yet what specific objects. But from the structure elements used by the command, you can already see whether commands *might* be in each other's way. This opens up possibilities to exclude or confirm, that commands might be in each other’s way. When parameters of different reading and writing commands are tied to the same object reference and they are accessing the exact same structure elements, you can be pretty sure they will be in each other’s way. But when you are accessing different object references, you can’t be sure whether accessing *different* object references means accessing *different* objects. The two object references may be referring to the same object all the same. Even though automatic containment of objects would indicate which object references represent the same object, this can not be seen in the diagram expression of a command *definition*, because objects are not filled in yet.
+In a command definition you only know which *structure elements* a command accesses, and not yet what specific objects. But from the structure elements used by the command, you can already see whether commands *might* be in each other's way. This opens up possibilities to exclude or confirm, that commands might be in each other’s way. When parameters of different reading and writing commands are tied to the same object reference and they are accessing the exact same structure elements, you can be pretty sure they might be in each other’s way. But when you are accessing different object references, you can’t be sure whether accessing *different* object references means accessing *different* objects. The two object references may be referring to the same object all the same. Even though automatic containment of objects would indicate which object references represent the same object, this can not be seen in the diagram expression of a command *definition*, because objects are not filled in yet.
 
 And then you have to look if there is any overlap in what one command writes and the other commands reads. The overlap might prove a possible read-write dependency. The order of the two commands would affect the outcome, so that might prove that you *have to* indicate an outcome dependency or a negative statement of outcome dependency. Or when a *different* object reference of the same class is consulted, that you *might* need to indicate outcome dependency.
 
-When you don’t consider volatile concurrency, then when sub-commands follow the same structure paths starting at the same object, you are pretty sure, when the same object will be accessed. But in a volatile concurrency situation you are never entirely sure, unless you lock the data. But those are concurrency issues, which are for later.
+When you don’t consider volatile concurrency, then when sub-commands follow the same structure paths starting at the same object, you are pretty sure, when the same object might be accessed. But in a volatile concurrency situation you are never entirely sure, unless you lock the data. But those are concurrency issues, which are for later.
 
 __Command A__ can only be outcome-dependent on __Command B__, when some of __Command B__’s output is __Command A__’s input. Input and output of a command are not the parameters, but what is read or written *from* the parameters. For command *definitions*, this means, that outcome dependency can only be indicated for sub-commands that have any possible overlap in input-output.
 
-Building up the outcome-dependency structure of a command is only done in the design stage of the command. The outcome-dependency does not change once you’ve published, versioned, a command with sub-commands. Once you are done designing, the outcome-dependency configuration will be stored within the command.
+Building up the outcome-dependency structure of a command is only done in the design stage of the command. The outcome-dependency does not change once you’ve published, versioned, a command with sub-commands. Once you are done designing, the outcome-dependency configuration might be stored within the command.
 
 #### IO definition used for security
 

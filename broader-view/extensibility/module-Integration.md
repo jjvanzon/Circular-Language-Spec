@@ -14,6 +14,6 @@ When a module contains an object with a class from another module, the object si
 
 One program doesn’t have to define a reference to another module, to use anything out of the module. A program can simply reach anything running on the computer. In fact, a program can simply reach anything running on the internet, that is publicly accessible.
 
-A module isn’t even loaded or unloaded into memory or anything like that. When a computer is running, all the modules are just there. Whether it is physically stored on disk or loaded into memory depends on a caching scheme. If a module isn’t used for a while, it will be removed from memory and just reside on disk. If a module is used frequently, the parts frequently used will be put in RAM. This is managed by a caching, not by loading or unloading modules.
+A module isn’t even loaded or unloaded into memory or anything like that. When a computer is running, all the modules are just there. Whether it is physically stored on disk or loaded into memory depends on a caching scheme. If a module isn’t used for a while, it might be removed from memory and just reside on disk. If a module is used frequently, the parts frequently used might be put in RAM. This is managed by a caching, not by loading or unloading modules.
 
 It all seems so common, it’s not even worth explaining anymore. The topic isn’t really module integration. The topic is: there is no distinction between modules anymore.

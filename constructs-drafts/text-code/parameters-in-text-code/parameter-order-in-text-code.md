@@ -8,7 +8,7 @@ Parameter Order in Text Code
 
 The article *Parameter Order* introduced the concept of an ordered list of parameters. In text code, you can just list them out in that order then. Textual display is totally preliminary, because text code of Encircle is totally not worked out yet.
 
-It is not clear yet, how it will be displayed in a command definition, that the parameters are not only named, but also ordered.
+It is not clear yet, how it might be displayed in a command definition, that the parameters are not only named, but also ordered.
 
 What is clear, though, is that if the parameters are not ordered, then in text code, you have to use the parameter *names* in a call to a command:
 

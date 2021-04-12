@@ -114,7 +114,7 @@ Other names for commands could be *operations, procedures*, *functions, methods*
 
 ### Command Parameters
 
-Commands can have *parameters*. Those are like instructions passed along with the command that make the command behave differently. The __Button . Set Text__ command, for instance, has a __Text__ parameter, which indicates what the new text of the button will be.
+Commands can have *parameters*. Those are like instructions passed along with the command that make the command behave differently. The __Button . Set Text__ command, for instance, has a __Text__ parameter, which indicates what the new text of the button might be.
 
 Text can also be seen as an *idea*. It can be thought of as an *object*. That way, it is *objects* that serve as parameters.
 

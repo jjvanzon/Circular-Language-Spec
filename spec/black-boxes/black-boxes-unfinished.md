@@ -165,7 +165,7 @@ Some of the topics might be deleted and others might not.
 
 #### Access Controlling Globals
 
-\> This issue is more important than level limitation and module level limitation, but those two concepts are used in the implementation as laid out below (the implementation will probably change in the future.
+\> This issue is more important than level limitation and module level limitation, but those two concepts are used in the implementation as laid out below (the implementation might probably change in the future.
 
 Access modifiers in Modules:
 

@@ -18,7 +18,7 @@ A rigorous way to automatically determine whether something is input, output or 
 
 Whether something is input, output of throughput only changes when the command definition of a sub-command changes. So instead of traversing the whole command call structure to determine whether something is in, out or thru, you also could cast a change to all callers of the command, and their callers, and their callers, upon which the callers adapt their in-out-thru configuration accordingly. This creates a huge event cast. This needs to happen with events, and all dependencies should register themselves inside what they are dependent on.
 
-This makes it possible, that you get very wide casts for a small change in the system. In a well monitored and regulated system this should be workable. Events will create this extreme activity, but that’s just an aspect of this new system. Computer systems will be extremely active, but this is solved by regulating input and output and quota-limits in space and time.
+This makes it possible, that you get very wide casts for a small change in the system. In a well monitored and regulated system this should be workable. Events might create this extreme activity, but that’s just an aspect of this new system. Computer systems might be extremely active, but this is solved by regulating input and output and quota-limits in space and time.
 
 Any way it is done, you have to *store inside* a command, whether a parameter is input, output or throughput, whether it is automatically determined or not. Just like the execution order of sub-commands it is stored inside a command. You have to *store* whether something’s input, output or throughput, because otherwise, you have to redetermine it too many times using a complicated procedure.
 
@@ -26,7 +26,7 @@ Each command defines what is its input, output or throughput, and a new command 
 However, when a definition of a command changes, a huge cast to all its callers and their callers, and their callers is executed.  
 Even this big event cast can be prevented. The answer is versioning. When you use versioning, a called command never changes. Only when command A decides to link to a newer version of command B, command A’s input, output, throughput configuration may change. If command B changes, command A keeps linking to the old version of command B. So the dependencies of command A do not change, and keep pointing to an old version of command A.  
 Only when programming a new version of a system, you can decide to possibly link to a new version of things. A version of a system, that is in production, keeps pointing to unchanging versions of their dependencies.  
-A question for versioning is: when will a version of a command be created? On every change? Or will there be key moments at which an author publishes the new version of the command. These are issues for Versioning, which falls under the Editing & Authoring concepts.  
+A question for versioning is: when might a version of a command be created? On every change? Or might there be key moments at which an author publishes the new version of the command. These are issues for Versioning, which falls under the Editing & Authoring concepts.  
 Versioning of commands can prevent huge casts of changes to input, output or throughput configuration, or at least limit it in size. Only when defining a new call, you have to look at the called command to see if this changes the in, out, thru configuration of the currently edited parent command definition.
 
 ### Giving the issues in this section a place
@@ -39,4 +39,4 @@ The rest is all part of automatically determining in-out-thru.
 
 ### Loose Ideas
 
-If anything should change about the Basic Command Topics as soon as you will revise Commands & Classes Loosely Coupled, then you have to redo the Basic Command Topics during a project about Advanced Command Topics.
+If anything should change about the Basic Command Topics as soon as you might revise Commands & Classes Loosely Coupled, then you have to redo the Basic Command Topics during a project about Advanced Command Topics.

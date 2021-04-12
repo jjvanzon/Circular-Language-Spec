@@ -108,7 +108,7 @@ Deeper exclusion protects members of sub-objects, but how much can those sub-obj
 
 Yeah, there is a discrepancy between controlling access and the fact that containment is now a volatile thing. Fixed containment needs to be imposed in order to establish access control...
 
-Multiple objects can impose another access modifier upon the same object, so where are all these access modifiers stored? At first it will only be access modification of a direct reference, which is already under control of the parent object. But for deeper objects it is different... so I am not sure yet... are those deeper objects supposed to be exclusively contained by the grandparent object? Or can they also be referenced elsewhere, so that the grandparent has to remember the grandchild access modification settings and not just delegate that to the child, that holds the grandchild? I'm not sure. Perhaps details like that should be worked out when actually turning this language into an actual programming environment... and we should keep the focus on the general idea?
+Multiple objects can impose another access modifier upon the same object, so where are all these access modifiers stored? At first it might only be access modification of a direct reference, which is already under control of the parent object. But for deeper objects it is different... so I am not sure yet... are those deeper objects supposed to be exclusively contained by the grandparent object? Or can they also be referenced elsewhere, so that the grandparent has to remember the grandchild access modification settings and not just delegate that to the child, that holds the grandchild? I'm not sure. Perhaps details like that should be worked out when actually turning this language into an actual programming environment... and we should keep the focus on the general idea?
 
 -----
 
@@ -139,7 +139,7 @@ As said, the texts about these subjects are not finished yet.
 
 #### Inclusion
 
-Apart from a *decisive* access modifier, you can also give a procedure a *suggested* access modifier. This means that when you put an object in a type, a procedure of the object will get its *suggested* access modifier, for instance Private, but if its *decisive* access controller is Public, then you can still upgrade it to Public. This is called *inclusion*. The suggested access modifier is always set to less accessible than the decisive one. A type can also give suggested access modifiers to procedures of deeper objects.
+Apart from a *decisive* access modifier, you can also give a procedure a *suggested* access modifier. This means that when you put an object in a type, a procedure of the object might get its *suggested* access modifier, for instance Private, but if its *decisive* access controller is Public, then you can still upgrade it to Public. This is called *inclusion*. The suggested access modifier is always set to less accessible than the decisive one. A type can also give suggested access modifiers to procedures of deeper objects.
 
 -----
 
@@ -161,7 +161,7 @@ In professional software development it is a blessing, that you get access to a 
 
 The downside of complexity hiding, though, is that you do not know what is going on inside the object you are calling. You may think something you call upon is a simple procedure, while in reality you are consuming so much the computer’s power that it makes your application perform really poorly and probably puts a break on your whole computer’s performance. You might not want to know all the details, but when something is abstracted you do not know exactly what is done.
 
-There are methods to overcome this though. It is not concrete yet, but the inner complexity of an object or command could be expressed by size. That will give you a relative estimation of the complexity of what you are calling upon.
+There are methods to overcome this though. It is not concrete yet, but the inner complexity of an object or command could be expressed by size. That might give you a relative estimation of the complexity of what you are calling upon.
 
 < ... >
 
@@ -212,11 +212,11 @@ JJ
 
 -----
  
-\> 2009-06-26: The last two ideas do not apply anymore. Public and Private will not have anything to do with outside or inside... Privates are accessible to friends... whether those friends are on the outside or on the inside.
+\> 2009-06-26: The last two ideas do not apply anymore. Public and Private might not have anything to do with outside or inside... Privates are accessible to friends... whether those friends are on the outside or on the inside.
 
-Perhaps you could also work out the traditional implementation of public and private. In that setting the original notation is usable. Now it is all changing. Perhaps it will create clarity if you isolate the original idea.
+Perhaps you could also work out the traditional implementation of public and private. In that setting the original notation is usable. Now it is all changing. Perhaps it might create clarity if you isolate the original idea.
 
-It is superseded by the Friendship idea. And later, the Friendship idea will probably be superseded by Access Control: public and private and user access control are the same concept. But you have to make dues with intermediate solutions. So the traditional idea behind
+It is superseded by the Friendship idea. And later, the Friendship idea might probably be superseded by Access Control: public and private and user access control are the same concept. But you have to make dues with intermediate solutions. So the traditional idea behind
 Public and Private is also important.... maybe.
 
 The main problem with the original idea about Public and Private, is that a programmer does not define a containment structure, and there is only a referential structure...  Something contained inside another thing can easily also be referenced elsewhere. This counts for methods too, so they are not exclusively part of one single object / class.
@@ -225,7 +225,7 @@ This creates problems for the traditional approach of Public and Private.
 
 -----
 
-Who knows. Maybe the whole idea I have now about the Black Box principle will totally change in this project.
+Who knows. Maybe the whole idea I have now about the Black Box principle might totally change in this project.
 
 The main problem I still see, is that in the new system, containment is not so actively set by programmers anymore, because you are mainly working with a referential structure, which makes the containment structure more volatile.
 
@@ -249,10 +249,10 @@ Hoe komt het black box principe nog naar voren? Wordt dat black box principe let
 It is so incredibly referential. Euwch.  
 The thing missing is the ‘accessed on the inside’ aspect, that in traditional black boxing was there. This is because in traditional OO you do not see that you are accessing a this parameter when you are accessing members of this. So it seems you are accessing things directly, while really you are accessing the members of the *this* object.
 
-But I sort of miss the idea. Perhaps you’d want to get it back. This will only be possible, if you do not express access to this members as an access to a member of the argument, but as an access to a member of the parent object. So then instead of referentially displaying a this-argument inside the command, and a command inside the object next to it, you have to display a command in an object and ...  
+But I sort of miss the idea. Perhaps you’d want to get it back. This might only be possible, if you do not express access to this members as an access to a member of the argument, but as an access to a member of the parent object. So then instead of referentially displaying a this-argument inside the command, and a command inside the object next to it, you have to display a command in an object and ...  
 But this is more for automatic containment (or relations). This is the discrepancy between automatic containment and displaying bidirectional relations, not to be covered here. But it is to be emphasized here. Perhaps you do need to show the less-referential approach, and the inversion of it and also show the referential view. Both notations. Because black boxing is about containment... and containment is a little lost.
 
-For the time being this all will be put under ‘Comparison to Traditional Black Boxing’, which is not called a *main issue* for nothing.
+For the time being this all might be put under ‘Comparison to Traditional Black Boxing’, which is not called a *main issue* for nothing.
 
 How useful is the older notation of public and private anymore when you use it in the less-referential containment notation?
 
@@ -288,7 +288,7 @@ Friend Access,
 
 In Encircle’s implementation of parameters, commands only become part of a class if the class is used for one of the parameters of the command.  
 This makes it possible for a command to become part of multiple classes.  
-This is a richer and more dynamic approach, than object oriented programming languages. You may now think you are loosing control over the system, if a class gets so easily extended with more commands. But you still have control, as will be explained in the Interfaces article group.  
+This is a richer and more dynamic approach, than object oriented programming languages. You may now think you are loosing control over the system, if a class gets so easily extended with more commands. But you still have control, as might be explained in the Interfaces article group.  
 There is one thing however, that’s missing from the story. In C++ and other object oriented programming languages, there was one parameter of a global method, that was the this-parameter. The class of the this parameter determined which class the method would be part of. That parameter was the only parameter in the method, whose private contents could be directly accessed by the method. This is the one thing missing in the story of Parameters: when does a command have access to the private contents of a parameter? The answer lies in __Friend__-access. A command has access to the private contents of a class, when the class declares its command to be __Friend__. When a related object is declared __Friend__, then the related object can access the private contents of the one that declared it __Friend__.
 
 Commands do not decide on their own whether they have access to a class’s private contents. A class grants a command access to its private contents. 
@@ -535,7 +535,7 @@ Exclusion of Set procedures controls who can set a symbol’s lines. Exclusion o
 
 -----
 
-\> 2009-06-26: I do not even know what I mean by this: You will not be able to totally make clear what private and friend means in this context, but you can just use the term command anyway, to make it clear.
+\> 2009-06-26: I do not even know what I mean by this: You might not be able to totally make clear what private and friend means in this context, but you can just use the term command anyway, to make it clear.
 
 -----
 

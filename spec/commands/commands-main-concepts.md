@@ -603,7 +603,7 @@ A clause `can just as well` be placed inside a diamond, `instead of` a square:
 ![](images/1.%20Commands%20Main%20Concepts.031.png)
 
 << already covered >>  
-A clause `will never` redirect its definition or object to another command.  
+A clause `might never` redirect its definition or object to another command.  
 << broader perspective >>  
 Clauses `can` have parameters, `just like` command definitions:
 
@@ -625,7 +625,7 @@ Because an [active clause] `has its own` definition, its contents `are totally a
 #### Diagram Notation
 
 << nice formulation >>  
-Active clauses `can freely` be used `to put` a frame around a piece of code inside a command. In that case `the whole` command `will still` do `exactly the same` thing:
+Active clauses `can freely` be used `to put` a frame around a piece of code inside a command. In that case `the whole` command `might still` do `exactly the same` thing:
 
 ![](images/1.%20Commands%20Main%20Concepts.033.png)
 
@@ -677,7 +677,7 @@ Executions `can` also be placed in a list. `No problem. You can` run `each` item
 
 #### Resolution When `Not Allowed` For Commands
 
-When `the` command concept `imposes a rule`, that `does not apply` to normal objects, then `you will` seem `to be` able to `break that rule`. To `keep direct` conversion between an object and a command `possible without any loss` of structure, it seems to be `allowed to break any of the extra rules imposed` by commands. But in that case `the` command `will always` get `the next best` alternative behavior and a warning `will` be generated. This `keeps` conversion between objects and commands possible `without any loss of` structure.
+When `the` command concept `imposes a rule`, that `does not apply` to normal objects, then `you might` seem `to be` able to `break that rule`. To `keep direct` conversion between an object and a command `possible without any loss` of structure, it seems to be `allowed to break any of the extra rules imposed` by commands. But in that case `the` command `might always` get `the next best` alternative behavior and a warning `might` be generated. This `keeps` conversion between objects and commands possible `without any loss of` structure.
 
 ### Commands Edge Cases
 
@@ -724,7 +724,7 @@ then `you can all of a sudden` run it, which may overwrite `the` executable’s 
 << move >>  
 > (to article "Creation Behavior of Commands")
 
-A parent command `automatically executes` its sub-commands. After a sub-command `completes, the` process `returns` to `the` parent command, which `will` then continue, `executing the` next sub-command.
+A parent command `automatically executes` its sub-commands. After a sub-command `completes, the` process `returns` to `the` parent command, which `might` then continue, `executing the` next sub-command.
 
 Inside a command, `usually just` more commands `are` invoked.
 
@@ -788,18 +788,18 @@ An executable object `stands for` a potential execution:
 An executable object `never stands` for multiple executions, `just one` execution or `no` execution `at all`.
 
 << commands compared to objects >>  
-`The same` command object `can` be displayed in `the` diagram multiple times. In that case, a symbol might be added to the diagram, that `the` multiple references to `the same` command object `will` converge to, so that a single symbol in `the` diagram `is` selected to represent `the` command object itself, while `the` other ones `are` just references.
+`The same` command object `can` be displayed in `the` diagram multiple times. In that case, a symbol might be added to the diagram, that `the` multiple references to `the same` command object `might` converge to, so that a single symbol in `the` diagram `is` selected to represent `the` command object itself, while `the` other ones `are` just references.
 
 ![](images/1.%20Commands%20Main%20Concepts.051.png)
 
-So it `is not so`, that each diamond in `the` diagram represents its own individual command execution. Each individual *command object* `represents` an individual command execution. Multiple symbols in `the` diagram `can` represent `the same` command object, but `will` converge into one symbol representing `the` object itself.
+So it `is not so`, that each diamond in `the` diagram represents its own individual command execution. Each individual *command object* `represents` an individual command execution. Multiple symbols in `the` diagram `can` represent `the same` command object, but `might` converge into one symbol representing `the` object itself.
 
 ### Public Inactive Clause `=` Command `Out` Parameter
 
 << repeated >>  
 *Active* clauses, command calls and active command references in parent commands `are always` private, because `you can not` reference a sub-command.
 
-But *inactive* clauses `*can*` be referenced and might be made public. If `you make` an inactive clause public, `you will` make it an __Object `Out`__ parameter: an object `produced or determined` by `the` command. A public inactive clause `would` be a command definition `produced` by another command.
+But *inactive* clauses `*can*` be referenced and might be made public. If `you make` an inactive clause public, `you might` make it an __Object `Out`__ parameter: an object `produced or determined` by `the` command. A public inactive clause `would` be a command definition `produced` by another command.
 
 #### Diagram Notation
 
@@ -812,7 +812,7 @@ But *inactive* clauses `*can*` be referenced and might be made public.
 
 ![](images/1.%20Commands%20Main%20Concepts.053.png)
 
-If `you make` an inactive clause public, `you will` make it an __Object `Out`__ parameter: an object `produced or determined` by `the` command. It `would` be an __Object `Out`__ parameter, that `is` an executable object. That `would` work `just fine`.
+If `you make` an inactive clause public, `you might` make it an __Object `Out`__ parameter: an object `produced or determined` by `the` command. It `would` be an __Object `Out`__ parameter, that `is` an executable object. That `would` work `just fine`.
 
 ### Reading & Writing Parameters
 
@@ -855,7 +855,7 @@ In that philosophy, commands would be *executable objects*.
 
 << creation behavior of commands >>  
 << details >>  
-a command object might only execute *once*. A command object may represent a single execution. An execution might be created and dormant until it would be run. This might be a chance to set the input of the command. After a command was run, the execution might stay created while it may still be referenced, so output might be read, until `everybody` might be done with it. When the executable object would not be referenced anymore, it might be destroyed. A command object might not be executed twice: to run a command again, a new command object might be created, that may have the same *definition*. In an attempt to execute the same command symbol twice, what might happen instead, is that the old object may be released, and a new object could be created in its place. A reason why a command object might only be executed once, may be that this would give all the referrers a chance to read `the` execution’s output, `whenever` they want, `without` it `being` overwritten by new output. A command object `stays` created for `as long as` it `is being` referenced, so `everybody can` read `the` output of `the` command. `The` command object `will only` be `destroyed` when `nothing refers` to it `anymore`.
+a command object might only execute *once*. A command object may represent a single execution. An execution might be created and dormant until it would be run. This might be a chance to set the input of the command. After a command was run, the execution might stay created while it may still be referenced, so output might be read, until `everybody` might be done with it. When the executable object would not be referenced anymore, it might be destroyed. A command object might not be executed twice: to run a command again, a new command object might be created, that may have the same *definition*. In an attempt to execute the same command symbol twice, what might happen instead, is that the old object may be released, and a new object could be created in its place. A reason why a command object might only be executed once, may be that this would give all the referrers a chance to read `the` execution’s output, `whenever` they want, `without` it `being` overwritten by new output. A command object `stays` created for `as long as` it `is being` referenced, so `everybody can` read `the` output of `the` command. `The` command object `might only` be `destroyed` when `nothing refers` to it `anymore`.
 
 ### Command Definition Analogy to Classes
 
@@ -873,7 +873,7 @@ When an *object* `is` drawn with a dashed line, then it `is only` used as a clas
 
 ![](images/1.%20Commands%20Main%20Concepts.054.png)
 
-This notation `will *not*` be copied to `the` concept of commands. This `is` because a command’s definition `will usually` be a square and a square `will usually` be a command’s definition, so `using` dashed lines for command definitions, `would` create an `overload` of dashed squares. So command symbols, that `are only` used as a definition, `do not` get a dashed notation.
+This notation `might *not*` be copied to `the` concept of commands. This `is` because a command’s definition `might usually` be a square and a square `might usually` be a command’s definition, so `using` dashed lines for command definitions, `would` create an `overload` of dashed squares. So command symbols, that `are only` used as a definition, `do not` get a dashed notation.
 
 << details >>  
 A command, that might be used as a definition, `is usually` not executable. Only `individual` calls to `the` command, that `use the` command as a definition, might be executable. If a command definition `is` executable `after all`, then it `is clearly` mentioned, that it `is` an *active* command definition, because it might be a special situation.

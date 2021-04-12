@@ -341,7 +341,7 @@ The Connectors and the Connections articles have to be extended, because they ar
 
 #### Parent Contains References to Sub-Objects
 
-A relation to another object is part of the parent object. A parent object is a real object. Its related item is not a real object, but a *pointer* to an object. The system interface of a related item determines which object the parent will refer to.
+A relation to another object is part of the parent object. A parent object is a real object. Its related item is not a real object, but a *pointer* to an object. The system interface of a related item determines which object the parent might refer to.
 
 ![](images/7.%20System%20Objects%20Ideas.001.png)
 
@@ -374,7 +374,7 @@ __Parent 1__ gives __Parent 2__ control the eventual target pointed at.
 
 #### Other Related Item
 
-Because the contents of the target object are probably not visible in the diagram, when the system interface is opened, the target of the related item will be connected to the __Other Related Item  .  ID__ or __Other Related List Item  .  ID__ of the system interface:
+Because the contents of the target object are probably not visible in the diagram, when the system interface is opened, the target of the related item might be connected to the __Other Related Item  .  ID__ or __Other Related List Item  .  ID__ of the system interface:
 
 ![](images/7.%20System%20Objects%20Ideas.003.png)
 
@@ -461,7 +461,7 @@ Other possibility:
 
 -----
 
-- In each article it seems to be repeated, that you can extend the  system commands with extra functionality. Why not leave that out, and just mention that in the article, that actually explains extending the system interface. Do not make so many references to other issues... that will make the articles more complicated.
+- In each article it seems to be repeated, that you can extend the  system commands with extra functionality. Why not leave that out, and just mention that in the article, that actually explains extending the system interface. Do not make so many references to other issues... that might make the articles more complicated.
 
 -----
 
@@ -497,8 +497,8 @@ JJ
 Why do I call them Object Get and Object Set? Is that proper English...? Why don't I call then Get Object and Set Object?
 Probably because I want to mention the aspect first?
 You know what? The naming does not matter that much.
-The concepts do. A PROBLEM IS, THAT IN THE SYSTEM INTERFACE ARTICLES I WILL GROUP COMMANDS BY ASPECT, SO THEN THE IDENTIFIERS
-WILL LOOK DIFFERENT. I AM GOING TO HAVE TO SYNCHRONIZE THAT
+The concepts do. A PROBLEM IS, THAT IN THE SYSTEM INTERFACE ARTICLES I MIGHT GROUP COMMANDS BY ASPECT, SO THEN THE IDENTIFIERS
+MIGHT LOOK DIFFERENT. I AM GOING TO HAVE TO SYNCHRONIZE THAT
 TO THE 'OLDER' ARTICLES THEN...
 
 - I misspelled Existence. I spelled it as Existance.
@@ -585,7 +585,7 @@ Actually, the objects symbols I’ve introduced before *are* the object represen
 
 Here you see that you have multiple representations of something: you can see the system as a bunch of procedures or you can see it as a bunch of objects, but it’s still the same system.
 
-If you regard something a property, which you often will, the primary representation of it is its object representation. If you regard something a method or if the procedure doesn’t return a value, then its primary representation is the procedure representation.
+If you regard something a property, which you often might, the primary representation of it is its object representation. If you regard something a method or if the procedure doesn’t return a value, then its primary representation is the procedure representation.
 
 Conversely, a procedure can apart from it’s usual representation, be represented as the object that it returns.
 - \> 2009-06-28: Then you have to just make it an object symbol and implement the object get system procedure.
@@ -658,9 +658,9 @@ Assignment,
 Pointers to pointers as an aspect,  
 2008-08
 
-A related item can point to a =>1 related item contained by another parent or to a =>n related list item contained by another parent. Redirecting to another related item or related list item may be accomplished by extending the object get and object set procedures of the related item. The extension procedure basically constitutes, or instantiates, the redirection. So a pointer to a pointer would be accomplished by procedure extension, instead of implementing it in the code base. However, this will not work for related *list* items, because all items in a related list have the same decoration, and redirecting a list item to an arbitrary other related item or related list item would require each list item to have its own decoration.
+A related item can point to a =>1 related item contained by another parent or to a =>n related list item contained by another parent. Redirecting to another related item or related list item may be accomplished by extending the object get and object set procedures of the related item. The extension procedure basically constitutes, or instantiates, the redirection. So a pointer to a pointer would be accomplished by procedure extension, instead of implementing it in the code base. However, this might not work for related *list* items, because all items in a related list have the same decoration, and redirecting a list item to an arbitrary other related item or related list item would require each list item to have its own decoration.
 
-< If you make a related item return an object out of another parent, then this decoration with procedures is functionally the same as making the related item a pointer to related item in another parent. But this implementation of a pointer to a pointer will not work for related list items, because list items do not have their own individual decoration with procedures, so that’s why pointers to pointers still need to be part of the code base. >
+< If you make a related item return an object out of another parent, then this decoration with procedures is functionally the same as making the related item a pointer to related item in another parent. But this implementation of a pointer to a pointer might not work for related list items, because list items do not have their own individual decoration with procedures, so that’s why pointers to pointers still need to be part of the code base. >
 
 JJ
 
@@ -678,15 +678,15 @@ Read-write direction, input-output direction and value direction are synonymous 
 
 A read of an output parameter is always accompanied by a write to another object. A write to an input parameter is always preceded by a read from another object. A read operation is always accompanied by a write operation. A value is read from one object, only to be written to another object.
 
-- \> Actually, writing is not the only purpose a read can have. You can also read for access, apart from read for assignment, but this will be thought through later.
+- \> Actually, writing is not the only purpose a read can have. You can also read for access, apart from read for assignment, but this might be thought through later.
 
 ##### Clone
 
-For more complex objects, value direction can mean an object will be cloned up until a certain cloning depth. When the values of an object are cloned up until a certain depth, no references to original objects will be taken over by the clone. Clones like that never have references to existing objects, but always contain entirely new objects or object references that are __Nothing__.
+For more complex objects, value direction can mean an object might be cloned up until a certain cloning depth. When the values of an object are cloned up until a certain depth, no references to original objects might be taken over by the clone. Clones like that never have references to existing objects, but always contain entirely new objects or object references that are __Nothing__.
 
 A single-value transfer is actually the equivalent of a cloning operation with a depth of __1__.
 
-There are other types of cloning in which clones do end up with reference to existing objects, but those types of cloning will be covered in the article Clone in the Editing Aspects.
+There are other types of cloning in which clones do end up with reference to existing objects, but those types of cloning might be covered in the article Clone in the Editing Aspects.
 
 These are examples diagram expressions of __Value__ cloning operations:
 
@@ -701,7 +701,7 @@ These are examples diagram expressions of __Value__ cloning operations:
 The number __2__ stands for the cloning depth.  
 The access mark indicates value direction.
 
-A single-value transfer will be the same as a cloning depth of __1__, but the number __1__ will not be shown then.
+A single-value transfer might be the same as a cloning depth of __1__, but the number __1__ might not be shown then.
 
 Here are examples of expression of value cloning access connectors:
 
@@ -812,13 +812,13 @@ A shorthand, quick notation of an assignment is the following:
 
 There are more ways to draw out an assignment, but the ones here are by far the simplest and most easy to understand. Other notations are covered in another chapter.
 
-State assignment is the most basic assignment. Line assignment is based on it. A line target is stored in an __Integer__ object. So when assigning the line target, you’re actually assigning the __State__ of this __Integer__ object. Drawing a line assignment as a state assignment is a more difficult, but useful notation. However, in this chapter I will stick to the simpler notations.
+State assignment is the most basic assignment. Line assignment is based on it. A line target is stored in an __Integer__ object. So when assigning the line target, you’re actually assigning the __State__ of this __Integer__ object. Drawing a line assignment as a state assignment is a more difficult, but useful notation. However, in this chapter I might stick to the simpler notations.
 
 You can work with the *type* and *interface* lines the same way: there’s also type assignment and interface assignment. Likewise, you can work with line assignments for *procedure symbols*. However, I’ll mostly talk about state and object assignment.
 
 ##### Distinguishing Assignment Source and Target
 
-There’s one more ambiguity in argument access that I will resolve here. In an assignment call in diagram as follows:
+There’s one more ambiguity in argument access that I might resolve here. In an assignment call in diagram as follows:
 
 ![](images/7.%20System%20Objects%20Ideas.030.png)
 

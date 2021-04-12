@@ -10,7 +10,7 @@ Extensive classification with interfaces might encompass some ideas about how to
 
 Extensive classification through interfaces is about automatic definition of interfaces, as well as manual definition of interfaces. (Consider the imaginary group-by-source interfaces, which could be suggestions for interfaces to form.).
 
-Perhaps there will be other ways interfaces will be automatically defined.  
+Perhaps there might be other ways interfaces might be automatically defined.  
 Such as mutuality of commands creates mutuality of interfaces.
 
 A grouping symbol based on what a dependent object uses. The interface organization is a little bit automatic that way. If you do not have an interface organization, then you can still see what the various clients are using and perhaps for the overview you may use an interface organization after all.
@@ -45,7 +45,7 @@ Brainstorm 2010-05-06:
 The idea described here might not be what I want in practice. However, perhaps some derived concept could prove its use.
 
 Perhaps you should be able to define some sort of generic interface.  
-If you define an interface with a command in it, that has a certain class, perhaps with some sort of mechanism or construct you should be able to reference any object that has a command with that class. You will get in trouble if an object has two commands with the same class, though.
+If you define an interface with a command in it, that has a certain class, perhaps with some sort of mechanism or construct you should be able to reference any object that has a command with that class. You might get in trouble if an object has two commands with the same class, though.
 
 One of the ideas behind this is idea is that objects, that have the same command, because they are both parameters of the command, have a joint interface, to create a relation. But really, they already have a relation, just an indirect relation, which is also a relation.
 

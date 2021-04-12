@@ -64,9 +64,9 @@ The concept of *Black Box* is also known as the concept of *Public and Private*.
 
 The code generator experiment (version 0.9) simply borrowed the public and private concept of the target programming language for which code was generated. The *generic module* experiment (version 2.0) did not have any black boxing yet at all. The black box implementation of the version to come is worked out in this documentation folder.
 
-The main articles about black boxing are finished, but you will also find a lot of unfinished material at the end of the documentation, which might be worked out later. Nevertheless, the main idea is worked out completely, and it is clearly denoted which material is not finished.
+The main articles about black boxing are finished, but you might also find a lot of unfinished material at the end of the documentation, which might be worked out later. Nevertheless, the main idea is worked out completely, and it is clearly denoted which material is not finished.
 
-The idea for the future is that *user* access control and *black boxing* access control will become a single concept of ‘what has access to what’, but that will not immediately be done at first. A simpler black box method is worked out first: one much like what you see in contemporary programming languages. However, this method is adapted to Encircle, because Encircle has a different view on objects and commands. Which commands get access to the private contents of which objects is less obvious, because a command is not part of a specific object or class. In fact, no command gets access to the private contents of an object, unless that command is a *friend* of the object. This creates a tighter bond between the command and the object. Another thing, that is different in Encircle, is that commands are no more than objects. They are the same thing. This really impacts the way you think about black boxing.
+The idea for the future is that *user* access control and *black boxing* access control might become a single concept of ‘what has access to what’, but that might not immediately be done at first. A simpler black box method is worked out first: one much like what you see in contemporary programming languages. However, this method is adapted to Encircle, because Encircle has a different view on objects and commands. Which commands get access to the private contents of which objects is less obvious, because a command is not part of a specific object or class. In fact, no command gets access to the private contents of an object, unless that command is a *friend* of the object. This creates a tighter bond between the command and the object. Another thing, that is different in Encircle, is that commands are no more than objects. They are the same thing. This really impacts the way you think about black boxing.
 
 ### Main Concepts
 
@@ -422,7 +422,7 @@ But remember that the *connector* always stays visible:
 
 #### Friend Declaration, Connector and Connection
 
-Here the difference is demonstrated between the notations of __Friend__ declarations, __Friend__ connectors and __Friend__ connections. It will also become apparent how their notations disambiguate.
+Here the difference is demonstrated between the notations of __Friend__ declarations, __Friend__ connectors and __Friend__ connections. It might also become apparent how their notations disambiguate.
 
 ![](images/1.%20Black%20Boxes.030.png)
 

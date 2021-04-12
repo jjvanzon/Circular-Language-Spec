@@ -121,7 +121,7 @@ But this situation is very uncommon. You can not run command __B__ through symbo
 
 A command reference can point to another command reference, which points to another command reference and so on. The first command found in this redirection, that does not refer to another command again, is called the *target command object*. Even though any of the command *references* can be used like it is the command object itself, the *target command object* is considered the real command object and not just a reference to it.
 
-The term target command is also used to denote the direct reference target, not necessarily the final target. What kind of target is denoted, will be clear from the context.
+The term target command is also used to denote the direct reference target, not necessarily the final target. What kind of target is denoted, might be clear from the context.
 
 #### Diagram
 
@@ -227,7 +227,7 @@ The call on the right might be executing, but its call inside the __then__ claus
 
 ![](images/4.%20Command%20Redirection.021.png)
 
-Yes, there are a lot of class lines, but each separate call has a separate class line to the right definition. If there is a recursive command running, then each execution of the same command has a separate execution symbol, because there will be an execution contained in an execution, contained in an execution, etcetera.
+Yes, there are a lot of class lines, but each separate call has a separate class line to the right definition. If there is a recursive command running, then each execution of the same command has a separate execution symbol, because there might be an execution contained in an execution, contained in an execution, etcetera.
 
 ### Loose Ideas about Command Redirection
 
@@ -257,7 +257,7 @@ A definition is a lot like the type of the procedure, while an execution is an i
 
 ###### Redirecting to an Execution
 
-A lot of times you will redirect an execution, but you won’t redirect *to* an execution.
+A lot of times you might redirect an execution, but you won’t redirect *to* an execution.
 
 ![](images/4.%20Command%20Redirection.023.jpeg)
 
@@ -279,7 +279,7 @@ The definition trace is quite easy: follow reference lines until you bump into a
 
 ##### Execution-Definition Trace
 
-Just as with the object-type trace, the execution trace requires you to find the definition anyway, so when you need both, the execution trace will suffice. It’s called a *execution-definition trace* when you use an execution trace to find both execution and definition.
+Just as with the object-type trace, the execution trace requires you to find the definition anyway, so when you need both, the execution trace might suffice. It’s called a *execution-definition trace* when you use an execution trace to find both execution and definition.
 
 
 ### Loose Ideas about Recursion

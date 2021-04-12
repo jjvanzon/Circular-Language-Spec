@@ -107,4 +107,4 @@ Protected Module Up N works the same as Public, but adds the extra restriction t
 
 < Pictures with that? >
 
-< ‘Module Up 2’ is too long, because Public Module Up 1 will be used commonly. Visual Basic’s Friend access modifier is the same as Public Module Up 1. I might need to invent a specific term for Public Module Up 1. I won’t use ‘Friend’, because that would conflict with >
+< ‘Module Up 2’ is too long, because Public Module Up 1 might be used commonly. Visual Basic’s Friend access modifier is the same as Public Module Up 1. I might need to invent a specific term for Public Module Up 1. I won’t use ‘Friend’, because that would conflict with >

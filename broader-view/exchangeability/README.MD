@@ -10,7 +10,7 @@ The *Exchangeability Principles* describes things in the area of computer techno
 
 Perhaps a central goal of the Encircle programming language might be, to melt together computer technology disciplines, aiming to provide one clear language, that might express anything, and that everybody might understand. The *Extensibility Principles* may give shape to these hopes for the language.
 
-This contents page will try to give a definition of each of the exchangeability principles of Encircle programming language. More principles might be added in the future.
+This contents page might try to give a definition of each of the exchangeability principles of Encircle programming language. More principles might be added in the future.
 
 Some of these articles are not finished yet. The *Exchangeability Principles* folder may contain the following articles:
 
@@ -28,7 +28,7 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
 - ### [Data = Code](data-is-code.md)
 
-    - This fundamental principle is about the fact that a program will *not* consist of procedures operating on a database. Your program primarily is the database. Code is just inserted into the data structure, to become part of it.
+    - This fundamental principle is about the fact that a program might *not* consist of procedures operating on a database. Your program primarily is the database. Code is just inserted into the data structure, to become part of it.
 
 - ### [Programming Language = Database](programming-language-is-database.md)
 
@@ -44,7 +44,7 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
 - ### [User = Programmer](user-is-programmer.md)
 
-    - There is no distinction between design time and run time anymore. This makes programming software and using software blend together. Perhaps not everything will be easy to understand to every user, but the lines between creating a program and using a program will fade. The language, with which a user operates the computer, will be the same language, with which you program software. This article further goes into this concept.
+    - There is no distinction between design time and run time anymore. This makes programming software and using software blend together. Perhaps not everything might be easy to understand to every user, but the lines between creating a program and using a program might fade. The language, with which a user operates the computer, might be the same language, with which you program software. This article further goes into this concept.
 
 - ### [Clear Cut Coding Principles](clear-cut-coding-principles.md)
 
@@ -72,7 +72,7 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
 - ### Hardware & Software
 
-    - Encircle will reveal the connection between object logic and the physical hardware. It will reveal the internal workings of a computer. It will connect logic to electronics.
+    - Encircle might reveal the connection between object logic and the physical hardware. It might reveal the internal workings of a computer. It might connect logic to electronics.
 
     - (There may not be a separate article for this yet.)
     
@@ -90,9 +90,9 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
     - This document describes how the internet is turned into a single computer. There simply is no difference between a program running on your own machine and programs running on another machine on the internet. The internet is just used as one giant computer, that everybody uses and contributes to.
 
-    - This document has been moved to the *Infrastructure* documentation, because it will not be part of the first versions to come of Encircle.
+    - This document has been moved to the *Infrastructure* documentation, because it might not be part of the first versions to come of Encircle.
 
-    - The documentation is quite lengthy and will later be split up into multiple pieces. No software has been developed for it yet.
+    - The documentation is quite lengthy and might later be split up into multiple pieces. No software has been developed for it yet.
 
 - ### [Hyperlinks = Referential Structure](hyper-links-is-referential-structure.md)
 
@@ -110,7 +110,7 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
 - ### [Symbol = Creator](symbol-is-creator.md)
 
-    - This principle partly confirms the *Object Oriented = Relational* principle. *Symbol*  refers to an object oriented programming language I began to construct around the year 2001. It is a programming language, that can fully express a program in a diagram. *Creator*  refers to a programming language I began working on around 2006. The basic principle of it is, that you start off defining classes and relations, and an application is generated out of it. The principle of *Symbol = Creator* is about turning these two languages into a single programming language. This is hard, because *Creator* is based on defining *relations*, and *Symbol* was an object oriented language about a diagram notation, which on top of it all had no way to express a *relation*. This article explains how the two will be combined in the new design, to form a single language.
+    - This principle partly confirms the *Object Oriented = Relational* principle. *Symbol*  refers to an object oriented programming language I began to construct around the year 2001. It is a programming language, that can fully express a program in a diagram. *Creator*  refers to a programming language I began working on around 2006. The basic principle of it is, that you start off defining classes and relations, and an application is generated out of it. The principle of *Symbol = Creator* is about turning these two languages into a single programming language. This is hard, because *Creator* is based on defining *relations*, and *Symbol* was an object oriented language about a diagram notation, which on top of it all had no way to express a *relation*. This article explains how the two might be combined in the new design, to form a single language.
 
 - ### [Exchangeability Loose Ideas](exchangeability-loose-ideas.md)
 

@@ -38,7 +38,7 @@ The *extensibility principles* may cover techniques that might make existing sof
 
 - ### [Reflection](reflection.md)
 
-    - Reflective data is data that describes the structure of a program. The reflective data of a program for instance contains descriptions of classes. In other programming languages, it might be considered something special to be able to access data that describes a program, listing out all the classes and all of its members. In Encircle the program actually *is* a description of the structure of the program. As you make the program, you are creating this data, and it is actually the program itself, that will just be run inside an engine. Any object simply has a reference to its class. You can access the full description of this class at all times.
+    - Reflective data is data that describes the structure of a program. The reflective data of a program for instance contains descriptions of classes. In other programming languages, it might be considered something special to be able to access data that describes a program, listing out all the classes and all of its members. In Encircle the program actually *is* a description of the structure of the program. As you make the program, you are creating this data, and it is actually the program itself, that might just be run inside an engine. Any object simply has a reference to its class. You can access the full description of this class at all times.
 
     - Having this reflective data at hand at all times, makes it easy to write software that adapts its behavior to this reflective data, rather than being written for a specific data structure. That may create better extensibility.
 
