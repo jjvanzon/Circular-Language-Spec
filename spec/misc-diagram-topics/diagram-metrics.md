@@ -8,7 +8,7 @@ Diagram Metrics
 
 __Contents__
 
-- [Diagram Metrics in Circle 3](#diagram-metrics-in-circle-3)
+- [Diagram Metrics in Experiment 3](#diagram-metrics-in-experiment-3)
 - [Brainstorm Text (from original Symbol documentation)](#brainstorm-text-from-original-symbol-documentation)
     - [Symbol Placement and Proportion](#symbol-placement-and-proportion)
     - [Line Alignment](#line-alignment)
@@ -22,9 +22,9 @@ __Contents__
     - [Line convergence](#line-convergence)
 - [More Ideas](#more-ideas)
 
-### Diagram Metrics in Circle 3
+### Diagram Metrics in Experiment 3
 
-*This text was written in the context of efforts to program a prototype app 'Circle 3'.*
+*This text was written in the context of efforts to program experiment 3.*
 
 The diagrams of Encircle are to be drawn out automatically. If they weren’t, this would decrease the usability of the language. These diagram metrics as they are called will be functionally described first not being burdened by any mathematical implications, and after that the math to do so will be designed.
 

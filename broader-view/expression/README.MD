@@ -22,7 +22,7 @@ The *Expression* folder may contain the following articles:
 
     - The documentation of *Alternative Media* might not be finished up yet. It may consist of only one article, that may not be much more than a throw-together of ideas. Part of it might be texts coming out of an earlier unfinished design of the diagram notation language.
 
-    - The concept of controls being alternative media in which to express systematics was part applied inside an experimental program "version 2.0" of Encircle. It had a tree control, that displayed and altered the underlying systematics, that were stored in as binary interlinked objects.
+    - The concept of controls being alternative media in which to express systematics was part applied inside experiment 2.0. It had a tree control, that displayed and altered the underlying systematics, that were stored in as binary interlinked objects.
 
 - ### [Expression Mixing](expression-mixing.md)
 

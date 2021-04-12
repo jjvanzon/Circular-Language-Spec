@@ -34,7 +34,7 @@ This sub-folder represents a category of principles that might be called the *ac
 
 - ### [Small Base of Code](small-base-of-code.md)
 
-    - This principle would be about trying to make the base of the code for Encircle as small as possible and have the rest of Encircle programmed within Encircle itself. This principle was tried in version 2.0 of Encircle: the code base was reprogrammed within itself.
+    - This principle would be about trying to make the base of the code for Encircle as small as possible and have the rest of Encircle programmed within Encircle itself. This principle was tried in experiment 2.0: the code base was reprogrammed within itself.
 
 - ### C++ / C\#
 

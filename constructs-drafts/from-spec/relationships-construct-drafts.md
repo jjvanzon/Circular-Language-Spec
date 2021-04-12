@@ -326,7 +326,7 @@ JJ
 
 #### ± 2004
 
-(Specific implementation in Creator 0.9)
+(Specific implementation in experiment 0.9)
 
 `The*` main unit in a relational structure `is the*` *class*. There `is` a list of *classes*.
 `The*` classes `are` tied together with *relationships*. One class `is` tied to another.

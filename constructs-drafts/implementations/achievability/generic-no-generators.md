@@ -17,9 +17,9 @@ __Contents__
 
 ### Introduction
 
-Encircle version 0.9 was a code generator. This code generator was quite hard to make, even after implementing several good ideas for organizing its code. It still happened frequently, that *something* in the generated code was missing, or some situation was not accounted for. And it made the code generator produce uncompilable code. You could argue that the code generator was just not well written, but it is still a fact that the code generator was simply very hard to make.
+Experiment 0.9 was a code generator. This code generator was quite hard to make, even after implementing several good ideas for organizing its code. It still happened frequently, that *something* in the generated code was missing, or some situation was not accounted for. And it made the code generator produce uncompilable code. You could argue that the code generator was just not well written, but it is still a fact that the code generator was simply very hard to make.
 
-Then, for Encircle 2.0 I decided to implement things in a different way. I made it a goal to make Encircle run on generic modules. Instead of regenerating the whole program every time, Encircle would become an engine, that simply takes a program description and adapts itself to it.
+Then, for experiment 2.0 I decided to implement things in a different way. I made it a goal to make Encircle run on generic modules. Instead of regenerating the whole program every time, Encircle would become an engine, that simply takes a program description and adapts itself to it.
 
 I proposed the following axiom:
 
@@ -27,7 +27,7 @@ I proposed the following axiom:
 
 So the generic program would become an engine that can load programs and have them run inside of it.
 
-I had foreseen, that programs running in it would be slower than programs that were totally generated and would run stand-alone. In Encircle 2.0 it turned out that the speed loss is really not that bad. And I was still identifying things by name there, not even by number; that would have made it even faster.
+I had foreseen, that programs running in it would be slower than programs that were totally generated and would run stand-alone. In experiment 2.0 it turned out that the speed loss is really not that bad. And I was still identifying things by name there, not even by number; that would have made it even faster.
 
 The programming interface of a *generated* modules used to look very slick in the generated code. Using the programming interface of the *generic* modules does not make the code look nice. However, you won’t be using it directly in C++ anymore. You’ll be using a custom text code, which *does*  look totally slick again. So it really doesn’t matter, that the code would not that good in C++.
 
@@ -61,5 +61,5 @@ Now seeing how easily a generic version of an object could adapt itself to a cla
 
 All concepts of Encircle can become purely generic.
 
-In the first generic version of Encircle (version 2.0) all the basic concepts could easily be implemented as a generic version, except for one: methods.  
+In the first generic version (experiment 2.0) all the basic concepts could easily be implemented as a generic version, except for one: methods.  
 It was harder to let custom methods run inside the engine. A preliminary solution was found, by letting the engine link to external DLLs, but explaining this is outside the scope of this article. See: *Preliminary Methods*.

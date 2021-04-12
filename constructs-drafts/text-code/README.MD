@@ -8,7 +8,7 @@ Text Code
 
 Traditionally systematics of a program might be expressed by means of text code. But in Encircle language, systematics might be stored in another way for instance as binary interlinked objects. Text code may be a mere *expression* of those stored objects. A *Text Code* sub-module might translate those systematics to text code. The text code might be adapted, which may result in changes to the stored  objects, rather than the text code’s being literally stored.
 
-Exactly how the textual code might look in Encircle, might not have been decided yet, because at one time it was considered more important to work out the language *conceptually* along with a *diagram notation*, than to work out the *textual notation*. Experimental version 2.0 of Encircle had a text code, but it was still quite basic.
+Exactly how the textual code might look in Encircle, might not have been decided yet, because at one time it was considered more important to work out the language *conceptually* along with a *diagram notation*, than to work out the *textual notation*. Experiment 2.0 had a text code, but it was still quite basic.
 
 The articles might not have been finished. They might be throw-togethers of ideas sort of like cut up leftovers from older documentation.
 

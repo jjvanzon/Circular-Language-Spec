@@ -20,16 +20,16 @@ __Contents__
 
 #### Aspects
 
-*This brainstorm was written in the context of efforts to program a prototype app 'Circle 3'.*
+*This brainstorm was written in the context of efforts to program experiment 3.*
 
-The *aspect* construct might become important in Encircle, only it will not be implemented yet in Circle 3. However, Circle 3 has to be implemented in a way that the aspects construct can later be added to it. Aspects are so important that this must be possible. So in order to feel comfortable about this I have to know more about aspects, so I am going to work out a preliminary, brainstorm-style design here.
+The *aspect* construct might become important in Encircle, only it will not be implemented yet in experiment 3. However, experiment 3 has to be implemented in a way that the aspects construct can later be added to it. Aspects are so important that this must be possible. So in order to feel comfortable about this I have to know more about aspects, so I am going to work out a preliminary, brainstorm-style design here.
 
-For this I am going to look into the Creator 0.9 code in which I will see what aspects need to be capable of and I will list out what you have to be able to define inside an aspect and then maybe I will get a picture of how this should look in a diagram.
+For this I am going to look into the experiment 0.9 code in which I will see what aspects need to be capable of and I will list out what you have to be able to define inside an aspect and then maybe I will get a picture of how this should look in a diagram.
 
 -----
 
 A lot of times aspects need to tap into other methods or other aspects’ methods and pre- or post-extend the method. And the pre- or post-extension must be in a specific point in the code of the method into which code is injected.  
-In Creator 0.9 there is a distinction between injecting it inside the Set’s If Value has changed or outside the Set’s If Value has actually changed. I am not sure the distinction is needed in the new version but it might have to be a feature.  
+In experiment 0.9 there is a distinction between injecting it inside the Set’s If Value has changed or outside the Set’s If Value has actually changed. I am not sure the distinction is needed in the new version but it might have to be a feature.  
 The idea about injecting code a specific point was that this point of injection is determined by dependency on other aspects. Some parts of other aspects must either be finished or not started yet when the code of the dependent aspect is run. So pinpointing this position is done by pinpointing the dependency on another aspect and whether something has to be done before or after a part of another aspect is finished. So it is about Before or After an element of another aspect or Before or After a number of elements of a number of other aspects. That is how the position of code injection must be defined.  
 The idea is that with aspects everything is possible that is possible with code generation, only in a more structured way.  
 Aspect dependency also means that another aspect must be implemented for the dependent aspect to be active. And sometimes even certain (optional) elements of an aspect must be active in order to make a dependent aspect work. This may also have to be definable.    
@@ -50,7 +50,7 @@ In Aspects, which replace code generation, you have to accept that members are f
 But in its basic form, aspects just use the specialization techniques defined in the functional design of inheritance.  
 When you take pre-extension as an example, something is tricky though. The extensions and member additions apply not to a specific object or class, but to a selection of objects. So you need a proxy object inside the aspect definition, that stands for any object the extension will be applied to. And there should be a condition that tells which objects will get the extension. So it is really starting to look like aspect oriented programming: you have code, you have join points and an expression defining which objects it applies to. The join points, however are defined through specialization techniques defined in the inheritance documentation, and the code is just code, like in aspect oriented programming and the objects it applies to is a proxy object inside the aspect definition, which an expression selecting the proper objects.
 
-I will look over a few more aspects in Creator 0.9 later, but for now I will go on with the brainstorm.
+I will look over a few more aspects in experiment 0.9 later, but for now I will go on with the brainstorm.
 
 The definition of an aspect must be an as concrete as possible depiction. So the definition of an aspect is basically code, that specializes a proxy object, which stands for objects that adhere to certain criteria, so that the right objects are selected. Furthermore, you can add dependency aspects, that make sure the dependent aspect is not applied when the dependency aspect is not supported, and also make you able to apply specialization techniques to code that is added by the dependency aspect. If a piece of code is added by the aspect, then this piece of code is a separate method, that is tied to a specific pre or post of a specific other method, which can also yet another pre or post. This probably accounts for the complexity needed to implement aspects.
 

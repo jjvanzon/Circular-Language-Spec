@@ -37,7 +37,7 @@ Attributes might be considered are outermost nodes of the relational structure, 
 
 Eerder dacht ik ook aan om misschien meteen Attributes Become Classes toe te passen. Maar laat dat nog maar even. Het inrichten van attributen is heel erg gelijk aan het inrichten van related items. Je zou de item class ook 1 string waarde kunnen geven, 1 integer waarde, etcetera. Daarmee kan de item class ook een enkele string of integer representeren.
 
-Toen ik dit probeerde te implementeren in de eerste opzet van Creator 2.0, kreeg ik problemen met de verschillen tussen een object referentie en een uniek object, enzo. Het was in ieder geval erg lastig om het meteen te implementeren, dus ik heb gewoon Attributes apart gedaan.
+Toen ik dit probeerde te implementeren in de eerste opzet van experiment 2.0, kreeg ik problemen met de verschillen tussen een object referentie en een uniek object, enzo. Het was in ieder geval erg lastig om het meteen te implementeren, dus ik heb gewoon Attributes apart gedaan.
 
 ### Create Objects / Ensure Objects = Default Values / Not Null ?
 
