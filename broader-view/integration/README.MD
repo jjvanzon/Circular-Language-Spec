@@ -20,7 +20,7 @@ Here are some topics that might be put under this umbrella. Some may have their 
 
 - ### XML Integration
 
-    - This may be a tool to read out XML and show it as a structure in the Encircle language. So it is not about saving and loading data as XML, but it is about taking existing XML from another source and showing it inside the Encircle computer language.
+    - This may be a tool to read out XML and show it as a structure in the Encircle language. So it is not about saving and loading data as XML, but it is about taking existing XML from another source and showing it inside Encircle.
 
 - ### [UML](uml.md)
 

@@ -62,7 +62,7 @@ __Contents__
 
 The concept of *Black Box* is also known as the concept of *Public and Private*. *Private* makes something only accessible inside the object. *Public* makes something accessible outside the object. That way, the inner workings of an object are hidden away and you only work with the input and output.
 
-The code generator version of the the computer language (version 0.9) simply borrowed the public and private concept of the target programming language for which code was generated. The *generic module* version of Encircle (version 2.0) did not have any black boxing yet at all. The black box implementation of the version to come is worked out in this documentation folder.
+The code generator version of Encircle (version 0.9) simply borrowed the public and private concept of the target programming language for which code was generated. The *generic module* version of Encircle (version 2.0) did not have any black boxing yet at all. The black box implementation of the version to come is worked out in this documentation folder.
 
 The main articles about black boxing are finished, but you will also find a lot of unfinished material at the end of the documentation, which might be worked out later. Nevertheless, the main idea is worked out completely, and it is clearly denoted which material is not finished.
 

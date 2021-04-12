@@ -6,9 +6,9 @@ Module Integration
 
 `[ Preliminary documentation ]`
 
-In an earlier version of Computer Language it was a problem to load multiple modules, and have one module use objects of a class of another module.
+In an earlier version of Encircle it was a problem to load multiple modules, and have one module use objects of a class of another module.
 
-But in a newer version of Computer Language there is simply no distinction between modules. It’s like there is only one module running on the computer. The separate modules are simply sub-objects inside the single module. An object can have a class out of any of the modules, that run on the computer.  
+But in a newer version of Encircle there is simply no distinction between modules. It’s like there is only one module running on the computer. The separate modules are simply sub-objects inside the single module. An object can have a class out of any of the modules, that run on the computer.  
 The modules are not separate programs. They are just objects living inside the computer.  
 When a module contains an object with a class from another module, the object simply refers to the class as if there wasn’t even any distinction between modules: everything is running on the same computer, everything is an object, and the modules are simply a benign grouping of things, that doesn’t really create any barrier between programs.
 

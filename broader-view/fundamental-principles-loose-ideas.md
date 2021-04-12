@@ -99,7 +99,7 @@ JJ
 
 -----
 
-Computer language,
+Encircle,
 
 I like mechanisms, that control themselves, instead of having to control the mechanism yourself.
 
@@ -141,7 +141,7 @@ JJ
 
 -----
 
-Computer Language,
+Encircle,
 
 Je zou aspecten van de computertaal kunnen in- en uitschakelen, zodat het behapbaarder wordt voor bepaalde mensen: kinderen of echt programmeurs. Je zou kunnen laten zien welke aspecten van de computertaal zichtbaar zijn, en welke er geprogrammeerd kunnen worden. Uitgeschakelde aspecten van de taal, worden of niet weergegeven, of op met een alternatieve, vereenvoudigde notatie weergegeven.
 
@@ -153,7 +153,7 @@ Automatic diagram metrics is a fundamental principle.
 
 -----
 
-Computer Language Fundamental Principles,
+Exchangeability,
 
 Benadruk ook in je Fundamental Principles,
 dat OO, relationele database, file system, registry
@@ -188,7 +188,7 @@ JJ
 
 ### More Ideas
 
-Computer Language,  
+Encircle,  
 Fundamental Principles,  
 2008-09-12
 
@@ -326,7 +326,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 2008-12-22
 
 That Aspect construct I want in my programming language seems to have existed forever:  
@@ -345,7 +345,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 2008-12-22
 
 I ask myself if anything original is left to my language, when I orient myself into existing ideas.
@@ -356,7 +356,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 2008-12-22
 
 Als hedendaagse programmeertechnieken zo geweldig zijn, waarom is alles dan nog steeds zo'n haperende troep. Met name als je aan het programmeren bent.
@@ -365,7 +365,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 2008-12-23
 
 Heel veel van die dingen kom je gewoon niet vanzelf tegen. En dat is jammer. Want zo leren de meesten programmeren: door dingen vanzelf tegen te komen. En dat stimuleer je door het in de taal zelf op te nemen.
@@ -401,7 +401,7 @@ JJ
 
 -----
 
-Commands / Computer Language,  
+Commands / Encircle,  
 2009-03-13
 
 What if you can say: I want a command on that object, that calls that program's this and that command. The reason programming is hard, is because programming languages are too hard. The user knows what he wants. Why is it any more difficult to realize something on the computer, than to just tell the computer what it is you want?
@@ -410,7 +410,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 2009-03-13
 
 Folders, containing files and other folders? Presented in a tree structure without it even actually looking like a tree? Why is it you are presenting only the IDEA of containment, and not how containment actually looks?
@@ -419,7 +419,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 2009-03-13
 
 Icon display and double clicking on them, showing THEIR contents, is ALMOST what I want to see regarding containment, except, that you will actually see the zooming in animate.
@@ -428,7 +428,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 2009
 
 Zodat software ontwikkelaars nog minder weten van wat er op fysiek niveau gebeurt... Op zich wel mooi om je op conceptueel niveau bezit te houden, maar het creëert ook meer afstand ten opzichte van wat er fysiek gebeurt. Dat heb je al met SQL. Dat wordt niet per so nog erger met LINQ, maar dat houdt het wel in stand. Er zijn al tal van programmeurs, die verrotte queries schrijven en daarna de database de schuld geven, omdat ze geen flauw benul hebben van wat er onder water eigenlijk gebeurt. Het beste snap je zowel dingen op conceptueel niveau, als de fysieke uitvoering ervan. Ik zie daar wel een voordeel van mijn eigen taal in. Die verbindt die twee en maakt ze even toegankelijk.
@@ -437,7 +437,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 2009-03-31
 
 Who is this guy: http://strlen.com/index.html
@@ -448,7 +448,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 Fundamental Principles,  
 2009-03-31
 
@@ -473,7 +473,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 2009-04-08
 
 Just about everything in text code is reference by name. You do not physically see connections between things. The correspondence of names creates the connection. That is what is hard about analyzing existing code.
@@ -528,7 +528,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 2009-06-12
 
 All we are working with is just feedback from what is really going on inside the computer. We are just tapped in and only tap off some of what's going on inside that thing.
@@ -537,7 +537,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 2009-05-02
 
 I might not have a good spot or good explanation about how assembly seamlessly integrates into the language. This is part of the achievability principles, but also makes use of the Binaral aspect and the Value aspect too.

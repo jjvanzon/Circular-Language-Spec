@@ -8,7 +8,7 @@ Encircle Language Summary
 
 ### Loose Ideas
 
-Computer Language,  
+Encircle,  
 2008-08-06
 
 In the end, a summary / cheat sheet might be made of the coding concepts and diagram syntax.

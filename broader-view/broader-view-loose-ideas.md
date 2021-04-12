@@ -126,7 +126,7 @@ JJ
 
 ### Other Ideas
 
-Computer Language,
+Encircle,
 
 Windows Workflow raakvlakken met diagrammen.
 
@@ -134,7 +134,7 @@ JJ
 
 -----
 
-Computer Language,
+Encircle,
 
 I saw something call specifying the structure of a program, rather than what happens step-by-step is called declarative programming, as opposed to imperative programming.
 
@@ -142,7 +142,7 @@ JJ
 
 -----
 
-Computer Language,
+Encircle,
 
 I don't have ... for user program flow, for instance when using
 multiple windows seemingly arbitrarily, but not...  
@@ -154,7 +154,7 @@ JJ
 
 -----
 
-Computer Language,
+Encircle,
 
 Ik wil gewoon dat workflow en methods die elkaar aanroepen gewoon hetzelfde aspect zijn. Method stappen kunnen parallel lopen en seriele punten hebben en vertragingen en gezette tijden hebben.
 
@@ -162,7 +162,7 @@ JJ
 
 -----
 
-Computer Language,
+Encircle,
 
 Dead links.
 
@@ -178,7 +178,7 @@ JJ
 
 -----
 
-Computer Language,
+Encircle,
 
 Important statement to use: objects first, procedures second.
 
@@ -186,7 +186,7 @@ JJ
 
 -----
 
-Computer Language,
+Encircle,
 
 People aren't realizing that a computer program IS a domain-specific language.
 
@@ -194,16 +194,16 @@ JJ
 
 -----
 
-Computer Language,
+Encircle,
 
-Met diagrams in computer language wordt de systematiek echt zichtbaar.
+Met diagrams in Encircle wordt de systematiek echt zichtbaar.
 Op het moment programmeren we eigenlijk allemaal blind en op de tast.
 
 JJ
 
 -----
 
-Computer Language,
+Encircle,
 
 The idea of object oriented is: objects first, procedures second.
 
@@ -211,7 +211,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 2008-06-03
 
 The diagram expression also makes it possible to use hand signs in the air to draw out relations between objects, in a technical story `you` try to explain.
@@ -220,7 +220,7 @@ JJ
 
 -----
 
-Computer Language,
+Encircle,
 
 De kracht van programmeertalen nu, zit hem niet in de taal zelf, maar in het framework.
 
@@ -230,7 +230,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 2008-08-15
 
 Other programming languages and diagram expressions:
@@ -240,7 +240,7 @@ JJ
 
 -----
 
-Computer Language,
+Encircle,
 
 Other programming languages and diagram expressions:  
 Leuke zoekterm om op te googlen:  
@@ -250,7 +250,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 2008-08-15
 
 Other programming languages and diagram expressions:  
@@ -277,7 +277,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 2008-09-02
 
 Some people seem to like isolated memory space.  
@@ -294,7 +294,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 2008-09-02
 
 Google using a separate process for each tab in its Google Chrome browser, is just a practical solution, relatively easy to implement.
@@ -304,7 +304,7 @@ JJ
 
 -----
 
-Computer Language,
+Encircle,
 
 Ik ben me er wel van bewust, dat een nieuwe programmeertaal, of nieuwe manier van besturen van je computer, een bijdrage is, niet een vervanging van alle andere software. Daar zijn software giganten
 veel te innovatief voor.
@@ -313,7 +313,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 2008-08-23
 
 The way it is right now, the system can not change the system as much as a user can change the system.

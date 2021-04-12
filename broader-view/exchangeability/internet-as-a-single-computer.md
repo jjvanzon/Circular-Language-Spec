@@ -196,7 +196,7 @@ But there is so much on your local computer, that is genuinely *not*  interestin
 
 Now, not only classes are resources on the internet. I just used that as an example to present the problem area. Individual objects are also resources on the internet. And modules, that contain multiple classes and objects are also a resource on the internet. Each *method*  is also an individual resource on the internet, because a method can be seen as separate from its class, next to being able to see it as part of a class. An internet address can identify an individual object, an individual class, an individual method, a lists of classes, a list of objects, a single module containing multiple objects, classes and methods, or a list of modules. Because classes, methods and modules are also objects, objects, classes, methods and modules on a site are identified in a single numbering. The site is represented by a single object, holding all the other resources. 
 
-Perhaps in the future there will be ideas about how to abstract it, and not see the boundaries between sites at all. However, I kind of like the idea of subdividing things into areas. It works fine for the human mind, because our own world is also split up into cities with areas, with houses and central places. Administrating networks in Encircle will still be a lot like networks are adminstrated today, only more transparent as to where everything is. It would no longer be something abstract that lays behind network administration screens and IP numbers, you will see the landscape of it before you in a computer language diagram.  
+Perhaps in the future there will be ideas about how to abstract it, and not see the boundaries between sites at all. However, I kind of like the idea of subdividing things into areas. It works fine for the human mind, because our own world is also split up into cities with areas, with houses and central places. Administrating networks in Encircle will still be a lot like networks are adminstrated today, only more transparent as to where everything is. It would no longer be something abstract that lays behind network administration screens and IP numbers, you will see the landscape of it before you in an Encircle diagram.  
 Personally, I would like to use a different term for IP addresses and domain names. I would like to call them site names and site ID’s.
 
 #### ID’s
@@ -208,7 +208,7 @@ At first the idea was to have the object’s identification consist of:
 - Class ID
 - Object Position
 
-But in Computer Language modules and classes are also objects. In fact, all objects, including the classes and modules, are accessible from a single flat list of objects.  
+But in Encircle modules and classes are also objects. In fact, all objects, including the classes and modules, are accessible from a single flat list of objects.  
 So whether you want to identify a specific object from any module or class, or if you want to identify just a module, you only need to specify the IP Address and an Object Position, which is an object’s storage position on disk. An object’s identification will be a combination of the site’s IP address and the object’s position on disk:
 
 - IP Address
@@ -380,7 +380,7 @@ Having the internet function as a single computer can have implications for othe
 
 #### Collection
 
-The *Collection* concepts make is possible to query for objects as if Computer Language were a relational database. In relational database, all objects of a certain class are stored in one table in a single database. In Computer Language the objects of a class can be spread all around the internet. This becomes a problem, because you can't search the whole internet for objects.
+The *Collection* concepts make is possible to query for objects as if Encircle were a relational database. In relational database, all objects of a certain class are stored in one table in a single database. In Encircle the objects of a class can be spread all around the internet. This becomes a problem, because you can't search the whole internet for objects.
 
 If you want to query the whole class, an index must be hosted somewhere, that is simply a list of pointers pointing to all the objects of that class that are scattered around the earth. In that case, the objects of that class are obliged to always register themselves in that index.
 

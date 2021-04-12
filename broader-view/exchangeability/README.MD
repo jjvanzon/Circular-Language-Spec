@@ -22,7 +22,7 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
 - ### Object Oriented = Relational
 
-    - This article has not been written yet, but it should contain a description about how relational database is reconciled with object oriented programming. The two could always be combinedly used, but it has always been a problem to make the two really one system. They were always just two separate systems, that are conjoined. The new language will turn the two principles into a single paradigm. The object oriented approach and the relational database approach, which are traditionally separate things, are turned into one language. This is intrinsic to the new design of the language. It has not been fully established yet in the programmed versions of Encircle.
+    - This article has not been written yet, but it should contain a description about how relational database is reconciled with object oriented programming. The two could always be combinedly used, but it has always been a problem to make the two really one system. They were always just two separate systems, that are conjoined. Encircle might turn the two principles into a single paradigm. The object oriented approach and the relational database approach, which are traditionally separate things, are turned into one language. This is intrinsic to the new design of the language. It has not been fully established yet in the programmed versions of Encircle.
 
     - (There may not be a separate article for this yet.)
 
@@ -34,7 +34,7 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
     - This fundamental principle is about the fact that the code of a program is stored as a database. *Code is just data*, that describes a procedure.
      
-    - This concept is fully applied inside the new design of the the computer language. It is not applied yet inside the running versions 0.9 and 2.0 of Encircle.
+    - This concept is fully applied inside the new design of Encircle. It is not applied yet inside the running versions 0.9 and 2.0 of Encircle.
 
 - ### [Design Time = Run Time](design-time-is-run-time.md)
 
@@ -48,7 +48,7 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
 - ### [Clear Cut Coding Principles](clear-cut-coding-principles.md)
 
-    - The idea behind clear cut coding principles, is that the computer language is so accessible, that even children could pick it up, because the principles are so easy to understand, and there are not that many pitfalls. The basic parts of the coding principles could be picked up by anyone, but more advanced subjects need to be left out, because they can not be understood that easily. It is the intention for a running version of Encircle to have sort of like a scale, a slider, that can be adjusted, limiting the amount of concepts expressed in the diagram or textual language, so that complex systems can be expressed using easier concepts, so that the general workings of a system are accessible to anyone.
+    - The idea behind clear cut coding principles, is that Encircle is so accessible, that even children could pick it up, because the principles are so easy to understand, and there are not that many pitfalls. The basic parts of the coding principles could be picked up by anyone, but more advanced subjects need to be left out, because they can not be understood that easily. It is the intention for a running version of Encircle to have sort of like a scale, a slider, that can be adjusted, limiting the amount of concepts expressed in the diagram or textual language, so that complex systems can be expressed using easier concepts, so that the general workings of a system are accessible to anyone.
 
 - ### [Attributes Are Objects](attributes-are-objects.md)
 

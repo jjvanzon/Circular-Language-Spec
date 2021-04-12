@@ -76,7 +76,6 @@ JJ
 
 -----
 
-Computer Language,  
 System Interfaces,
 
 Je moet ook system commands hebben, die een ->1 related item toevoegen, en dergelijke. Je moet eigenlijk alles van het diagram kunnen genereren. Ik ben geen voorstander van code generators, maar het moet wel mogelijk zijn.
@@ -646,7 +645,7 @@ JJ
 
 -----
 
-Computer Language Coding Principles,  
+Encircle Coding Principles,  
 2008-07-04
 
 An object assignment, and a pointer to a pointer are not completely interchangeable, but it is close to it.
@@ -669,7 +668,7 @@ JJ
 
 ##### Value Direction
 
-Read-write direction is something so basic in computer language, that it has a separate line type. Value direction is indicated by a *wavy line*.
+Read-write direction is something so basic in Encircle, that it has a separate line type. Value direction is indicated by a *wavy line*.
 
 A value connection is actually not a real connection between symbols, but a value assignment.
 

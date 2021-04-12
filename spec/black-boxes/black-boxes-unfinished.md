@@ -184,7 +184,7 @@ When a global procedure is Public it is however also accessible *outside* the mo
 
 -----
 
-\> 2009-06-27: And here I am attempting to differentiate between VB6 __Friend__ on a global level and VB6 __Public__ on a global level. I am trying too hard to make a match between access modifiers I know from VB6 and C++ and match them with a new language. I was too afraid to reinvent each atypical concept, and insisted to put those concepts inside a single systematic. That is why I went to such an extent with this level limitation stuff. Ok, I can respect it now. It is an attempt to put those access modifier situations into context, but I think this should only be an intermediate implementation of it and in the near future an easier approach needs to be come up with. This stuff here should be seen as just a brainstorm.
+\> 2009-06-27: And here I am attempting to differentiate between VB6 __Friend__ on a global level and VB6 __Public__ on a global level. I might be trying too hard to make a match between access modifiers I know from VB6 and C++ and match them with Encircle. I was too afraid to reinvent each atypical concept, and insisted to put those concepts inside a single systematic. That is why I went to such an extent with this level limitation stuff. Ok, I can respect it now. It is an attempt to put those access modifier situations into context, but I think this should only be an intermediate implementation of it and in the near future an easier approach needs to be come up with. This stuff here should be seen as just a brainstorm.
 
 -----
 

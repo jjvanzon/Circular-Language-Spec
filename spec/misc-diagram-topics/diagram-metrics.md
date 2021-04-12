@@ -28,7 +28,7 @@ __Contents__
 
 The diagrams of Encircle are to be drawn out automatically. If they weren’t, this would decrease the usability of the language. These diagram metrics as they are called will be functionally described first not being burdened by any mathematical implications, and after that the math to do so will be designed.
 
-There are several elements to the diagram metrics. Some of them are considered more essential than others. A new version of the computer language is currently being implemented and only the essential diagram metrics concepts will be implemented at first.
+There are several elements to the diagram metrics. Some of them are considered more essential than others. A new version of Encircle is currently being implemented and only the essential diagram metrics concepts will be implemented at first.
 
 The concepts are put more or less in order of priority.
 

@@ -533,7 +533,7 @@ JJ
 
 -----
 
-Computer Language,  
+Encircle,  
 2008-08-17
 
 Two layers.  
@@ -579,7 +579,7 @@ But imaginary redirections aren't even discussed in The Diagram expression artic
 
 -----
 
-Computer language,
+Encircle,
 
 Eigenlijk moet je wel blij zijn met het feit, dat je de notatie langzamerhand helder krijgt, zij het met moeite.  
 Er stonden nog issues open aangaande automatic containment.  

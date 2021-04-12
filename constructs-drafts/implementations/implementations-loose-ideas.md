@@ -6,7 +6,7 @@ Loose Ideas
 
 *The material below are loose ideas, yet to be turned into good documentation.*
 
-Computer Language, Utilities,
+Encircle, Utilities,
 
 Ik heb geen tool voor performance monitoring en tuning vermeld in de documentatie.
 

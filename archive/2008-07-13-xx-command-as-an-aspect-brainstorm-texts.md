@@ -113,7 +113,7 @@ The term downput is good, because it is only passed *down* into sub-commands. An
 
 ### Read-Write Direction As A Connection
 
-Formerly, the direction of input and output was indicated with an access mark on a reference line. But this created ambiguity with the indication of *reference targets*. Read-write direction is something so basic in computer language, that it deserves a separate line type. From now on, value direction will be indicated by a *wavy line*.
+Formerly, the direction of input and output was indicated with an access mark on a reference line. But this created ambiguity with the indication of *reference targets*. Read-write direction is something so basic in Encircle, that it deserves a separate line type. From now on, value direction will be indicated by a *wavy line*.
 
 This is actually a good symbol for it, because it looks like a less direct connection than the other line types and *it is* a less direct connection. In fact, the two symbols *aren’t* connected at all. The wavy line looks like a less direction connection, because the complete length of the line, curves and everything, is much longer than a straight line. A wavy line also indicates *heat*, or activity, more than the other line types. Value direction is an *action*.
 

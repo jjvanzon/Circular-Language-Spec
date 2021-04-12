@@ -48,7 +48,7 @@ This is unfinished documentation of lower quality. It only has an unfinished des
 
 *This brainstorm was written in the context of efforts to program a prototype app 'Circle 3'.*
 
-The new version of Encircle will work with the basics of objects, classes and interfaces. The distinction between objects, classes and interfaces is so loose in the new language and the distinction really leans on the concepts of public / private and the concept of static. These determine the difference between objects, classes and interfaces.
+The new version of Encircle will work with the basics of objects, classes and interfaces. The distinction between objects, classes and interfaces is so loose in Encircle and the distinction really leans on the concepts of public / private and the concept of static. These determine the difference between objects, classes and interfaces.
 
 The concept of static is not completely worked out yet in the functional design.
 
@@ -64,7 +64,7 @@ Just like the public / private concept, you have to set the static flag for each
 
 Usually you will make static data read-only to the objects, so that the objects can not change it. But objects can also get write access to static data. This is static data that is shared among objects, and can be changed by all objects.
 
-There is another type of static in other languages, which is data that can be accessed only through the class object, and not through instances. I do not like this type of static, because I would create two objects to solve this: one with instance methods and one with utility methods. If we must have a way to specify this in the new language, it would mean that each access connector can be made either accessible or inaccessible from instances.
+There is another type of static in other languages, which is data that can be accessed only through the class object, and not through instances. I do not like this type of static, because I would create two objects to solve this: one with instance methods and one with utility methods. If we must have a way to specify this in Encircle, it would mean that each access connector can be made either accessible or inaccessible from instances.
 
 The idea for now is that each system command will be separately made static or dynamic.
 

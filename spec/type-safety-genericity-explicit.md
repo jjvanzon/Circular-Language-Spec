@@ -59,7 +59,7 @@ Encircle language an item can be quite generic. So the wish for Encircle to work
 
 -----
 
-Computer Language,
+Encircle,
 
 Object symbols can be prototyped as classes and interfaces.
 You can also access control object symbols, so that they can only be used as a class or an interface.

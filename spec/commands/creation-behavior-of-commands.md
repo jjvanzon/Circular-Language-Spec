@@ -407,7 +407,7 @@ The same code, with fixed pointers has to be executed on different data all the 
 
 The CPU is quite straightforward in a way. It executes and executes doing exactly what it is lead to do by its instruction pointer that only goes forward, and it only skips to another spot, when it encounters a jump instruction and the data then determines whether it will jump at all. A CPU is really quite straightforward and just does what we tell it to do. As a normal program runs, you do not *see* debug information. When a program runs normally, you do not see what method it is in and of what object, and even the CPU does not see what method it is in and of what object. When you debug, though, you want to see the exact code line of what exact method and of what object, you can even see (from an alternated call stack) what commands were called before and of what object.
 
-In my own computer language, when you pause on a running command, you see the procedure call stack as the hierarchy upward. This call stack was not built up as the command was running. You can zoom in on any piece ‘call stack’, that is not even running, but might be running in the future.
+In Encircle, when you pause on a running command, you might see the procedure call stack as the hierarchy upward. This call stack was not built up as the command was running. You can zoom in on any piece ‘call stack’, that is not even running, but might be running in the future.
 
 Now, the data, assigned to a call’s parameters… where does it come from in CPU-like, procedural and object oriented programming languages? Where does it come from in my own system? 
 
@@ -473,10 +473,10 @@ A parameter passing assignment could only be stored by the parent command-call i
 
 #### More Brainstorming
 
-< A problem is, that in my own computer language, the command definition is not assembly code. It is objects of Encircle. >
+< A problem is, that in Encircle, the command definition is not assembly code. It is objects of Encircle. >
 
 In CPU-like languages the sub-command-calls are in the machine instructions.
-In my own computer language sub-commands-calls are in an objects somewhere.
+In Encircle sub-commands-calls are in an objects somewhere.
 The command definition object has the sub-commands, but they are not lined up like machine instructions. Each command call is tied to the next with a pointer to another command object.  
 It is very hard to make the command definition use the data in the command CALL, because that is what has to be done, to do it in the more CPU-like fashion.
 

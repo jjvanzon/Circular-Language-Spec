@@ -224,7 +224,7 @@ The parent object is the only one that can implement the system command extensio
 ### Extension Procedures Part of Parent
 
 Although the system objects define the extension events, the *parent object* defines the implementation of the extension procedures. The extension procedures are defined by the parent object. This counts for related item, related lists and related list items. Extension procedures need to be normal commands, not system commands.  
-It is just more practical to make the extension procedures part of the parent object. Only a normal computer language object can define commands, that have all the possibilities of computer language. You cannot really change objects like related items or related lists, because they are system objects. Those system objects can only be extended, not changed.
+It is just more practical to make the extension procedures part of the parent object. Only a normal Encircle object can define commands, that have all the possibilities of Encircle. You cannot really change objects like related items or related lists, because they are system objects. Those system objects can only be extended, not changed.
 
 Theoretically it does not matter whether extension procedures are defined by for instance inside a related item or inside the parent object of a related item. A related item is part of the parent object anyway.
 

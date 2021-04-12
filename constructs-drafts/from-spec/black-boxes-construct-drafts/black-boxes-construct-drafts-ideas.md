@@ -168,7 +168,7 @@ There are methods to overcome this though. It is not concrete yet, but the inner
 #### Get For Access and Get For Copy
 
 Access can be controlled for regular procedures this way. You can also control access to system procedures. When you make an object Private, you’re in fact making its Object Get procedure private (which can even get different separate access controllers for Access and Copy, ~~Run Time~~ Copy ~~and Design Time Copy~~).
-- \> 2009-06-29: The difference between design-time and run-time is gone in the new language. There is only differentiation between program authors and users through user access control.
+- \> 2009-06-29: The difference between design-time and run-time is gone in Encircle. There is only differentiation between program authors and users through user access control.
 
 There might be a separation between access controlling Get for Access and Get for Copy... but not much more. I used to have a difference between Run Time Copy and Design Time Copy, but that is bull now, because there is not difference between run time and design time. There may be a difference between different types of users: authors and users... but that is user access control, which is not covered here.
 
@@ -184,7 +184,7 @@ Let’s stick to the plan where either everything is accessible or a selection o
 
 #### Compared to Traditional Black Boxing
 
-I already did compare it too much to other systems, but for a proper explanation it is important to draw that comparison to regular OO. So in that case it is allowed to draw a comparison (it is a rule not to go on and on comparing the new language to other systems...)
+I already did compare it too much to other systems, but for a proper explanation it is important to draw that comparison to regular OO. So in that case it is allowed to draw a comparison (it is a rule not to go on and on comparing Encircle to other systems...)
 
 - \> Deals with the two differences to traditional:
     - Not only commands are friend with their object

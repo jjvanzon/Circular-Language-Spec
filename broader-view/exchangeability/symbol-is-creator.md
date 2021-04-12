@@ -53,4 +53,4 @@ Below I sum up the main problems in trying to unify the two programming language
 - Not a solution: a separate part of the diagram contains the classes
 - Solution: with automatic containment the class is specified on the highest level it is used. A single symbol’s being able to have three possible functions will sustain.
 
-The specification of how Symbol and Creator will become one language will be covered in the explanations about the abstract  principles in the section Computer Language, Coding Principles and the expression of those principles in diagrammatic form will be covered in Computer Language, Expression, Diagrams. It will just be the principles and the expression from now on. No more Creator and Symbol.
+The specification of how Symbol and Creator will become one language might be covered in the explanations in the spec. It might just be the principles and the expression from now on. No more Creator and Symbol.

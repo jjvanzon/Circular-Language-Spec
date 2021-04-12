@@ -26,16 +26,16 @@ __Contents__
 
 Aspects add something to every class that supports the aspect. The class doesn’t get polluted directly. An aspect adds a sub object operating on the class’s members in a generic way.
 
-All I need to do, is invent a way to describe any of the aspects I had already implemented in Computer Language 0.9 in text code, and how do I let each class decide which aspect to support. How do I set a default as to which aspects classes should support?
+All I need to do, is invent a way to describe any of the aspects I had already implemented in Encircle 0.9 in text code, and how do I let each class decide which aspect to support. How do I set a default as to which aspects classes should support?
 
 The main part of the text code description of an aspect is the code as generated before, but now with template placeholders in it.  
-Shouldn’t be hard. In the code generator version of computer language, every module decided which aspects to support
+Shouldn’t be hard. In the code generator version of Encircle, every module decided which aspects to support
 
 < I need to incorporate a story from Software System.doc about aspects about dependencies. >
 
 ### Brainstorm
 
-In Computer Language 0.9 every aspect (for instance Copy-Paste, Default Values and Enums) used to have its own part of the code generator. In a generic version of Computer Language, this would translate to every aspect being its own generic part of the engine. It is indeed easier to program the aspects as part of an engine, rather than part of a code generator, but it gets even easier. The aspects are no longer part of the engine either. They are become external modules, written in a custom text code, that can be loaded by the engine and run inside it.
+In Encircle 0.9 every aspect (for instance Copy-Paste, Default Values and Enums) used to have its own part of the code generator. In a generic version of Encircle, this would translate to every aspect being its own generic part of the engine. It is indeed easier to program the aspects as part of an engine, rather than part of a code generator, but it gets even easier. The aspects are no longer part of the engine either. They are become external modules, written in a custom text code, that can be loaded by the engine and run inside it.
 
 #### Generic, Not Generated
 

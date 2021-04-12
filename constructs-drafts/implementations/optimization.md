@@ -104,7 +104,7 @@ JJ
 
 -----
 
-Computer Language,
+Encircle,
 
 Instruction caching. If machine instructions other than calling methods are executed repeatedly, there may be a way to cache the eventually executed machine instructions, and run that instead of with all the calls around it.
 

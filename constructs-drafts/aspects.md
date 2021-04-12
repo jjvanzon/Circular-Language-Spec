@@ -22,7 +22,7 @@ __Contents__
 
 *This brainstorm was written in the context of efforts to program a prototype app 'Circle 3'.*
 
-The *aspect* construct will become important in the new language, only it will not be implemented yet in Circle 3. However, Circle 3 has to be implemented in a way that the aspects construct can later be added to it. Aspects are so important that this must be possible. So in order to feel comfortable about this I have to know more about aspects, so I am going to work out a preliminary, brainstorm-style design here.
+The *aspect* construct might become important in Encircle, only it will not be implemented yet in Circle 3. However, Circle 3 has to be implemented in a way that the aspects construct can later be added to it. Aspects are so important that this must be possible. So in order to feel comfortable about this I have to know more about aspects, so I am going to work out a preliminary, brainstorm-style design here.
 
 For this I am going to look into the Creator 0.9 code in which I will see what aspects need to be capable of and I will list out what you have to be able to define inside an aspect and then maybe I will get a picture of how this should look in a diagram.
 
