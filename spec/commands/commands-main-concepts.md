@@ -87,7 +87,7 @@ Containment is a way to express a relationship. One symbol might __contain__ ano
 
 A *solid line* between symbols might mean that one command is a __reference__ to another:
 
-<img src="images/1.%20Commands%20Main%20Concepts.004.png" width="50%"/>
+<img src="images/1.%20Commands%20Main%20Concepts.004.png" width="250"/>
 
 ![](images/1.%20Commands%20Main%20Concepts.004.png)
 
