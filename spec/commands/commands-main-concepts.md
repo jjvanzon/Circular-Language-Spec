@@ -66,8 +66,8 @@ __Contents__
 
 Commands may be objects, that so happen to be *executable*. Commands could be actions, procedures and processes, that a computer might perform. They might be displayed in a diagram as squares and diamond shapes:
 
-![](images/1.%20Commands%20Main%20Concepts.001.png) 
-![](images/1.%20Commands%20Main%20Concepts.002.png)
+<img src="images/1.%20Commands%20Main%20Concepts.001.png" width="50" />
+<img src="images/1.%20Commands%20Main%20Concepts.002.png" width="50" />
 
 ### Diagram Elements
 
@@ -75,15 +75,15 @@ The concept of commands may boil down to a limited set of characteristics.
 
 A *square* in Encircle might symbolize that the command is __not executable__.
 
-![](images/1.%20Commands%20Main%20Concepts.001.png)
+<img src="images/1.%20Commands%20Main%20Concepts.001.png" width="50" />
 
 A *diamond* in Encircle may express a command that might be* __executable__.
 
-![](images/1.%20Commands%20Main%20Concepts.002.png)
+<img src="images/1.%20Commands%20Main%20Concepts.002.png" width="50" />
 
 Containment is a way to express a relationship. One symbol might __contain__ another:
 
-![](images/1.%20Commands%20Main%20Concepts.003.png)
+<img src="images/1.%20Commands%20Main%20Concepts.003.png" width="100" />
 
 A *solid line* between symbols might mean that one command is a __reference__ to another:
 
@@ -91,23 +91,23 @@ A *solid line* between symbols might mean that one command is a __reference__ to
 
 A *dashed line* between command symbols might make one command a kind of copy of another:
 
-<img src="images/1.%20Commands%20Main%20Concepts.005.png" width="100" />
+<img src="images/1.%20Commands%20Main%20Concepts.005.png" width="80" />
 
 It might also be said, that it indicates one command's being the __prototype__ for another.
 
 If a command might *only* be used as a prototype, it might be drawn with a *dashed border*:
 
-![](images/1.%20Commands%20Main%20Concepts.006.png)
+<img src="images/1.%20Commands%20Main%20Concepts.006.png" width="80" />
 
 (Using dashed shapes is still a bit of an open discussion.)
 
 A command may have a *name*:
 
-![](images/1.%20Commands%20Main%20Concepts.007.png)
+<img src="images/1.%20Commands%20Main%20Concepts.007.png" width="140" />
 
 It might also be *nameless.*
 
-![](images/1.%20Commands%20Main%20Concepts.001.png)
+<img src="images/1.%20Commands%20Main%20Concepts.001.png" width="50" />
 
 Here is an attempt to summarize these traits that commands might have:
 
@@ -135,23 +135,23 @@ void MyDefinition()
 
 To express it in Encircle, a square might be used: 
 
-![](images/1.%20Commands%20Main%20Concepts.008.png)
+<img src="images/1.%20Commands%20Main%20Concepts.008.png" width="50" />
 
 Its being a square, might indicate that it may *not execute*.
 
 If a symbol might *only* be used as a definition, it might be drawn out with a *dashed border* too:
 
-![](images/1.%20Commands%20Main%20Concepts.006.png)
+<img src="images/1.%20Commands%20Main%20Concepts.006.png" width="70" />
 
 (Though dashed shape notation is still a bit of an open discussion.)
 
 A definition might also have a *name*:
 
-![](images/1.%20Commands%20Main%20Concepts.009.png)
+<img src="images/1.%20Commands%20Main%20Concepts.009.png" width="140" />
 
 When used, a command definition may be pointed to by a *dashed line*:
 
-![](images/1.%20Commands%20Main%20Concepts.010.png)
+<img src="images/1.%20Commands%20Main%20Concepts.010.png" width="210" />
 
 That way another symbol might use `MyDefinition` as a *prototype*.
 
@@ -180,16 +180,15 @@ MyCommand();
 
 A command call may *execute*, so it might be symbolized with a diamond shape:
 
-
-![](images/1.%20Commands%20Main%20Concepts.002.png)
+<img src="images/1.%20Commands%20Main%20Concepts.002.png" width="50" />
 
 A call may point out a definition, so it might have a *dashed line* pointing away from it:
 
-![](images/1.%20Commands%20Main%20Concepts.011.png)
+<img src="images/1.%20Commands%20Main%20Concepts.011.png" width="120" />
 
 A call might be placed *inside* a parent command.
 
-![](images/1.%20Commands%20Main%20Concepts.012.png)
+<img src="images/1.%20Commands%20Main%20Concepts.012.png" width="140" />
 
 The call itself might remain *nameless*.
 
@@ -221,11 +220,11 @@ So without any decoration with brackets or what have you, it may represent a ref
 
 A command reference may be a square, to indicate it might not *execute* directly.
 
-![](images/1.%20Commands%20Main%20Concepts.008.png)
+<img src="images/1.%20Commands%20Main%20Concepts.008.png" width="50" />
 
 A *solid line* can be used to point out a different command:
 
-![](images/1.%20Commands%20Main%20Concepts.013.png)
+<img src="images/1.%20Commands%20Main%20Concepts.013.png" width="400" />
 
 So a command reference might be symbolized by:
 
@@ -256,7 +255,7 @@ The inner braces and its contents might be the code block.
 
 In Encircle, a code block may be *embedded* inside another command:
 
-![](images/1.%20Commands%20Main%20Concepts.014.png)
+<img src="images/1.%20Commands%20Main%20Concepts.014.png" width="100" />
 
 The inner command (the code block) might be drawn as a *diamond*: it *executes* if the parent command executes.
 
@@ -264,13 +263,13 @@ A code block might be *nameless*. It might not have any *lines* going towards it
 
 A code block might also look like this:
 
-![](images/1.%20Commands%20Main%20Concepts.015.png)
+<img src="images/1.%20Commands%20Main%20Concepts.015.png" width="100" />
 
 The previous diagram might show a code block within a definition (a square). This diagram shows the code block while that command is executed.
 
 Code blocks might be nested even further:
 
-![](images/1.%20Commands%20Main%20Concepts.016.png)
+<img src="images/1.%20Commands%20Main%20Concepts.016.png" width="180" />
 
 So a code block might be symbolized by:
 
@@ -304,15 +303,15 @@ void MyParentCommand()
 
 In Encircle it might also be a command definition contained within another command definition.
 
-![](images/1.%20Commands%20Main%20Concepts.017.png)
+<img src="images/1.%20Commands%20Main%20Concepts.017.png" width="100" />
 
 When peeking at another programming language, a local function seems to be able to have a name.
 
-![](images/1.%20Commands%20Main%20Concepts.018.png)
+<img src="images/1.%20Commands%20Main%20Concepts.018.png" width="160" />
 
 It may also be *called* from within its parent command:
 
-![](images/1.%20Commands%20Main%20Concepts.019.png)
+<img src="images/1.%20Commands%20Main%20Concepts.019.png" width="200" />
 
 So a local function might be symbolized by:
 
@@ -342,11 +341,11 @@ if { ... }
 
 There might be a bit of an interpretation problem here. A clause in an `if` statement looks a bit like a *code block*. Maybe it could be interpreted as such.
 
-![](images/1.%20Commands%20Main%20Concepts.020.png)
+<img src="images/1.%20Commands%20Main%20Concepts.020.png" width="100" />
 
 It also may look a bit like a nameless local function that you might pass a reference to, to the `if` statement:
 
-![](images/1.%20Commands%20Main%20Concepts.021.png)
+<img src="images/1.%20Commands%20Main%20Concepts.021.png" width="170" />
 
 The following was another attempt to define what a clause might be in Encircle: *a command inside another command with no lines going to or from it*. That definition might not cover it. It might be just terminology quibbles. Later on it seemed to not matter much. Command-like constructs from other languages seem to be expressible within Encircle perhaps in a reasonable fashion.
 
@@ -383,11 +382,11 @@ So the `...` might be the lambda expression.
 
 Honestly said, in Encircle there might not be a way to distinguish it from *clauses*.
 
-![](images/1.%20Commands%20Main%20Concepts.022.png)
+<img src="images/1.%20Commands%20Main%20Concepts.022.png" width="100" />
 
 Or:
 
-![](images/1.%20Commands%20Main%20Concepts.023.png)
+<img src="images/1.%20Commands%20Main%20Concepts.023.png" width="160" />
 
 ### Parameters and Return Values Not Covered
 
@@ -397,7 +396,7 @@ Symbolizations for parameters and return values might be missing in much of thes
 
 The implementation of a command might be defined as the private contents of a command. Here is an attempt to demonstrate that visually:
 
-![](images/1.%20Commands%20Main%20Concepts.024.png)
+<img src="images/1.%20Commands%20Main%20Concepts.024.png" width="300" />
 
 The large square might have contents, drawn with thick lines, might represent the command’s *implementation*, because they might be private. The objects inside the large square that are drawn with thinner lines, might be the command’s parameters: its publics. (Notation for *parameters* might be involved in the picture above, but might remain unexplained until the chapter "Parameters".)
 
