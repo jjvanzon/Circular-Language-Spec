@@ -19,7 +19,7 @@ __Contents__
     - [Life Time](#life-time)
     - [Part of the Object](#part-of-the-object)
     - [Not a Pointer](#not-a-pointer)
-    - [Summary](#summary)
+    - [Summary of Attributes](#summary-of-attributes)
 
 ### Introduction
 
@@ -123,7 +123,7 @@ Something might point to an attribute, but an attribute might not be a pointer t
 
 When an attribute might become a pointer or might be destroyed or recreated it might give up its status as attribute, and might just be considered a related object again.
 
-#### Summary
+#### Summary of Attributes
 
 Here follows an attempt to summarize what might be the aspects of an attribute:
 

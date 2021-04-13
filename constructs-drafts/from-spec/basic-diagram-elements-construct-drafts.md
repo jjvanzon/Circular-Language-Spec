@@ -6,20 +6,59 @@ Basic Diagram Elements Construct Drafts
 
 `[ Preliminary documentation ]`
 
-### Loose Ideas
+__Contents__
 
-*Below you may find loose ideas and parts from older documentation, that are intended to be turned into more polished documentation.*
+- [Loose Ideas](#loose-ideas)
+- [Brainstorms Shape vs Line Type](#brainstorms-shape-vs-line-type)
+    - [Executions & Parameters Brainstorm](#executions--parameters-brainstorm)
+    - [When Shape Types, When Line Types](#when-shape-types-when-line-types)
+
+### Loose Ideas
 
 - Notation Methods versus System Rules
     - Implicit calls are but notation methods, that don’t affect the behavior of the system. Type genericity, interface genericity and type interface genericity are system rules. They affect the behavior of the system.
 
-#### Brainstorms Shape vs Line Type
+-----
+
+Basic Diagram Elements,  
+Relations Between Symbols,  
+2008-11-13
+
+If you can see object usage, you can not see class-sub-object usage.
+
+You'd have to look at the usage of the sub-objects of the objects of that class, to see the class's sub-object usage. Indirectly you might be able to see the dependency on a class's sub-object.
+
+Doesn't a sub-object have a reference to the class's sub-object or might the parent object only have a reference to the class?
+
+\> 2020-06-13: I now think, that a sub-object of an object might not have a reference to the sub-object of a class. I guess the relationship is implied by form/shape/name/aspect correspondence. I get how that might be bothersome. Then there might be relationships in the diagram that are expressed with neither lines nor containment. Maybe it is something to not be bothered by. Maybe it is something to mention as another type of relationship between symbols. There might be a spot for it in Basic Diagram Elements for that, next to the other types of relationships between symbols that might be named there. Maybe 'it is just a notation' might be the way to think about it. There might not be a precise mathematical definition of why shapes are used and the choice of containment vs association is also left as an arbitrary design choice so why might this not be ok as something arbitrary about the notation? If it turns out to be bothersome, maybe a different kind of line to express a different kind of correspondence could be used. But that may be something not to make part of the initial release of Encircle language spec.
+
+A curly line (like a spring) may be introduced. And optionality of them being displayed, since form/shape/name/position(?) may imply the connections already
+
+JJ
+
+-----
+
+Basic Diagram Elements,  
+Relations Between Symbols,  
+2020-06-18
+
+There might be more occurrences where connections are left out, since implied by the class:
+
+![](images/Basic%20Diagram%20Elements.060.png)
+
+Object's members a and be might be class-connected to Related Class 1 and Related Class 2. But a notational choice was made to leave those out, since they seem implied. Perhaps it might not even be wordt to point out. But perhaps at one point one could desire an exactness in notational choices like that, and awareness that there are these notational choices, might help. But it could also be regarded up to the reader's imagination what he or she might do with it or not. It might not seem essential for the general idea.
+
+The phenomenon may be called 'implicitly connected through parent'. It may have once have been thought apart of the currently out-of-scope idea of Automatic Containment. But maybe it is not specific to Automatic Containment.
+
+JJ
+
+### Brainstorms Shape vs Line Type
 
 This might be (possibly complicated) text for justification of a diamond symbol rather than a call line. It also seems sort of a mystery when something is symbolized with a shape, and when by a line drawn with a certain style.
 
 If there is nothing to point to, while there is an aspect to express visually, that may exclude a line from being used and may 'require' a shape, but then why one time the same shape with a different line type versus a different shape? The choice 'different shape' vs. 'shape drawn with different line style' seems not easy to rationally pinpoint. Maybe it could be used as food for thought when 'abusing diagram expression' might be worked out some day perhaps. Then the idea was a systematic overview all methods of symbolizations used in Encircle vs possibility to express aspects of systematics using that symbolization.
 
-##### Executions & Parameters Brainstorm
+#### Executions & Parameters Brainstorm
 
 __This IS the text that lead me to wanting a diamond symbol instead of a call line.__
 
@@ -30,7 +69,7 @@ Een call line is eigenlijk een reference line, maar als de parent square execute
 
 Een call een aparte line maken is net zoiets als een triangle een aparte line maken. Hetzelfde mankement. Dan lijkt het logisch, dat een call een apart symbool krijgt, niet een aparte line. O. Welk symbool?
 
-##### When Shape Types, When Line Types
+#### When Shape Types, When Line Types
 
 < So, there’s a call trace and a definition trace. >  
 < Target call, target definition >  

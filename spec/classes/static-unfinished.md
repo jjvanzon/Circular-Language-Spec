@@ -12,33 +12,32 @@ __Contents__
 - [Preliminary Design](#preliminary-design)
 - [Interface-Like Static](#interface-like-static)
 - [Important Brainstorm](#important-brainstorm)
-- [Loose Ideas](#loose-ideas)
-    - [Out of the original Symbol documentation](#out-of-the-original-symbol-documentation)
-        - [Static and Creation](#static-and-creation)
-            - [Static](#static-1)
-            - [Type Creation](#type-creation)
-            - [Old](#old)
-                - [Static Objects](#static-objects)
-                    - [Type Static Objects](#type-static-objects)
-                    - [Procedure Static Objects](#procedure-static-objects)
-                    - [Module Static Objects](#module-static-objects)
-                - [Static Procedures](#static-procedures)
-                    - [Procedure Static Procedures](#procedure-static-procedures)
-                    - [Type Static Procedures](#type-static-procedures)
-                    - [Module Static Procedures](#module-static-procedures)
-                - [Type Create and Destroy](#type-create-and-destroy)
-                    - [Type Create and Destroy](#type-create-and-destroy-1)
-                    - [Module Type Create and Destroy](#module-type-create-and-destroy)
-                    - [Procedure Create and Destroy](#procedure-create-and-destroy)
-            - [Question](#question)
-            - [Old](#old-1)
-                - [Type Static](#type-static)
-                    - [Static Members](#static-members)
-                    - [Type Create and Type Destroy](#type-create-and-type-destroy)
-                    - [Type Create and Type Destroy are Static nor Non Static](#type-create-and-type-destroy-are-static-nor-non-static)
-                - [Module Static](#module-static)
-                    - [Other Issues](#other-issues)
-        - [Other ideas](#other-ideas)
+- [Static and Creation (Out of the Original Symbol Documentation from 2004)](#static-and-creation-out-of-the-original-symbol-documentation-from-2004)
+    - [Static](#static)
+    - [Type Creation](#type-creation)
+    - [Old](#old)
+        - [Static Objects](#static-objects)
+            - [Type Static Objects](#type-static-objects)
+            - [Procedure Static Objects](#procedure-static-objects)
+            - [Module Static Objects](#module-static-objects)
+        - [Static Procedures](#static-procedures)
+            - [Procedure Static Procedures](#procedure-static-procedures)
+            - [Type Static Procedures](#type-static-procedures)
+            - [Module Static Procedures](#module-static-procedures)
+        - [Type Create and Destroy](#type-create-and-destroy)
+            - [Type Create and Destroy](#type-create-and-destroy-1)
+            - [Module Type Create and Destroy](#module-type-create-and-destroy)
+            - [Procedure Create and Destroy](#procedure-create-and-destroy)
+    - [Question](#question)
+    - [Old](#old-1)
+        - [Type Static](#type-static)
+            - [Static Members](#static-members)
+            - [Type Create and Type Destroy](#type-create-and-type-destroy)
+            - [Type Create and Type Destroy are Static nor Non Static](#type-create-and-type-destroy-are-static-nor-non-static)
+        - [Module Static](#module-static)
+            - [Other Issues](#other-issues)
+    - [Misc Brainstorm Items](#misc-brainstorm-items)
+- [Loose ideas](#loose-ideas)
 
 ### Introduction
 
@@ -68,32 +67,16 @@ The idea for now is that each system command might be separately made static or 
 
 Class objects have full control over any piece of data. But when you use an object as a class, the object might only be able to control what the class object defines an object can control.
 
-< Static read-write to the objects. How do you type-control this? I do not think this can be solved with just friend-public-private modifiers. >  
-< And what might be the notation for static? >
-
-<  
-I wonder about making data static or not as opposed to making system coommands static or not. System commands give access to data, so depending on which system commands you make static or not, the underlying data is static or not. Actually, you have to control the staticness of the pieces of underlying data. For public / private it worked to control each individual system command, but for static you need to be aware of what underlying data you make static or not. Usually each aspect has its own underlying data. You can make each piece of underlying data static or dynamic. Furthermore you can make the getter or setter of that data accessible or inaccessible from the objects. So instance-accessible or not.
-\> I have to to check what underlying data the aspects have.  
-So you can make an aspect *static* or *dynamic*.  
-And you can make a system command accessible or inaccessible for instances (but neat keywords might be come up with for that.)  
-\> I also want to know how (in)accessible from instances relates to public/private.  
-    - Public/Private means (in)accessible to non-friends. It defines accessibility among objects.  
-\>
-
-Usable phrase:
-
-Formerly it was fixed which types of construct were static and which were not, but now you can choose.
-
 ### Interface-Like Static
 
-Is anything defined inside an interface static? I don’t know. Interfaces might be excluded from the first version.
+Is anything defined inside an interface static? I don’t know.
 
 ### Important Brainstorm
 
 2010-05-07
 
-\> The Relation concept now is worked out under the assumption that a class determines which other classes it is related to. But it is possible for a class to define which class it relates to and that an object of that class to change the related class.  
-It is about Static. I am talking about my kind of static. Not the .NET or VB6 kind of static.  
+\> The Relationships concept now is worked out under the assumption that a class determines which other classes it is related to. But it is possible for a class to define which class it relates to and that an object of that class to change the related class.  
+It is about Static. I am talking about my personal interpretation of static. Not the .NET or VB6 kind of static.  
 If nothing inside a class is declared static you may as well not even have a class definition at all, because then everything defined in the class merely constitutes default values, because everything is still changeable inside an object. That is probably the prototype-based thing people talk about: nothing is actually fixed by the class. You just copy the whole class and then you have an object, in which you can still change everything, including the methods and the set of other members.  
 To make a class definition worth something, you have to make some things static, which means, that it might be the same for every object of the class, it can not be changed inside any object of the class. Usually you make the command definitions static. But there are other types of static too. There is also a type of static where an object can change something of the class, but all objects share that data. There is also a type of static where something is only accessible through the class definition and not through an object (the kind of static that I do not like), and lastly there is the situation where something is not static, and each object just gets its own copy of the data.  
 It is possible for a variable to be declared inside a class, the class aspect of which is static, but the value property of which is not static. So then the class of the variable is fixed, but objects can change the data of the variable and actually have their own copy of the variable. < Static ~= Private for Instances, except that there are also no separate copies of it for instances. > < This is not true. It changed. >  
@@ -104,83 +87,7 @@ I am mixing up the concepts of Static and Private here: both have to do with fix
 
 \> One assumption specifically is wrong: that the class always defines certain constructs, that an object can not change. This also counts for interfaces, which are basically the same as classes but only for the public part of an object.
 
-Loose Ideas
-===========
-
-Fixed logical residence (in automatic containemtn) gives you a clue about static members of classes. That is also a special form of access, like global access. 
-
-In the For loop, the Loop procedure reference parameter has a Variable filled in, that is like static to the procedure definition. How might that work?
-
-Objects set for a command definition or class, that are taken over by all calls or objects. The reference target can not be overwritten by the call or object, but the value can be written or read. It is all about which system members of the object of a definition or class are declared static. The static system members are changeable by the class or definition, but cannot be changed by objects or calls.  
-\> Once again another concept, that required better understanding of the system interface.
-
-
-Static command data,
-
-The data inside a command definition object serves as default values for the command parameters. The data inside a command definition also might be statically created, which means that calls, instead of creating a copy of the data of the command, refer directly to the data inside the command definition object. A command definition object can be assigned another command definition object, so command object assignment only works for assigning a command object to a definition.
-
-JJ
-
-
-Static,  
-2008-06
-
-A local variable may make the method a static method of a class, instead of a method of an object?
-
-JJ
-
-
-Classes,  
-Static  
-Parameters, class redirections & calls,  
-2008-09-16
-
-Als je een class relatie hebt tussen een command definition en een class,
-dan krijgt de class een inactive command erin met een class line naar de command definition.
-Als je een object creeert van de class, dan heeft die ook een inactive command erin,
-met een class line naar de command definition. Dus dan heb je al twee kopieen van
-de oorspronkelijke command definition.
-De command in het object blijft inactive. Als je een command runt, dan ...
-
-JJ
-
-
-Static,  
-2008-10-01
-
-You HAVE TO give class relations different behavior compared to object relations.
-You HAVE TO give class relations specialized behavior.
-Class relations are covered by the Class concept.
-The Class concept might establish this specialized behavior.
-As such, you can let Class relations behave different from
-just an under the surface relation to an object, that serves as a class.
-As such, you can let object instantiation from a class refrain from
-duplicating shared code of a class.
-This should be sort of like static stuff. You should have a separation
-between static code and static data.
-Only for caching purposes static code and data can be duplicated.
-Caching is unaviodable in a network and persistance situation.
-It looks like Static is a topic, that belongs to the documentation about Classses.
-
-JJ
-
-
-Static,
-2009-06-17
-
-There are two forms of static: static parts of a class, that might become part of all objects of that class and static parts of a class, that can not be called through the objects, but only directly by referencing the class.
-
-JJ
-
-Out of the original Symbol documentation
-----------------------------------------
-
-< I need a story about where the code resides and that the code isn’t really part of module instances, types, objects or procedures. Those entities only complete the code with a copy of data. >
-
-his formulation may not be entirely true, but maybe wording like that could be used in the 'Static' explanation? For instance the idea that types could be changed live, and the contents of objects might simultaneously change:  
-Every symbol of the same type has the same contents. The type can be edited by editing either symbol and their contents might change simultaneously.
-
-### Static and Creation
+### Static and Creation (Out of the Original Symbol Documentation from 2004)
 
 < An object doesn’t define code. You could say that the type defines code and that a object only defines data. Each module instance, though, has its own instance of the types of the modules, even though the code of the types is still only in memory once. So you can’t really say the code resides in a type either. >
 
@@ -375,37 +282,142 @@ Dus globally static procedures kunnen worden aangeroepen nadat module is geload.
 - Object Create procedures of object symbols
 - Static procedures directly in modules
 
-Symbols always contain some data: their line targets. Those are static data, so when you create a module there’s always memory reserved: for each symbol memory that stores the line targets. (by the way: doesn’t a flag need to be stored to on if the symbol is created?). Or should I store line targets in the Core’s object table? Hmmm…
+Symbols always contain some data: their line targets. Those are static data, so when you create a module there’s always memory reserved: for each symbol memory that stores the line targets. (by the way: doesn’t a flag need to be stored to on if the symbol is created?). Or should I store line targets in the Core’s object table? Hmmm...
 
 Static bij procedure members.
 
 < How can you make a type: module static? >
 
-### Other ideas
+#### Misc Brainstorm Items
+
+< I need a story about where the code resides and that the code isn’t really part of module instances, types, objects or procedures. Those entities only complete the code with a copy of data. >
+
+his formulation may not be entirely true, but maybe wording like that could be used in the 'Static' explanation? For instance the idea that types could be changed live, and the contents of objects might simultaneously change:  
+Every symbol of the same type has the same contents. The type can be edited by editing either symbol and their contents might change simultaneously.
+
+### Loose ideas
+
+< Static read-write to the objects. How do you type-control this? I do not think this can be solved with just friend-public-private modifiers. >  
+
+-----
+
+< And what might be the notation for static? >
+
+-----
+
+<  
+I wonder about making data static or not, as opposed to making system commands static or not. System commands give access to data, so depending on which system commands you make static or not, the underlying data is static or not. Actually, you have to control the staticness of the pieces of underlying data. For public / private it worked to control each individual system command, but for static you need to be aware of what underlying data you make static or not. Usually each aspect has its own underlying data. You can make each piece of underlying data static or dynamic. Furthermore you can make the getter or setter of that data accessible or inaccessible from the objects. So instance-accessible or not.
+\> I might check what underlying data the aspects have.  
+So you might make an aspect *static* or *dynamic*.  
+And you can make a system command accessible or inaccessible for instances (but neat keywords might be come up with for that.)  
+\> I also want to know how (in)accessible from instances relates to public/private.  
+    - Public/Private means (in)accessible to non-friends. It defines accessibility among objects.  
+\>
+
+-----
+
+Usable phrase:
+
+Formerly it was fixed which types of construct were static and which were not, but now you can choose.
+
+-----
+
+Fixed logical residence (in automatic containemtn) gives you a clue about static members of classes. That is also a special form of access, like global access. 
+
+In the For loop, the Loop procedure reference parameter has a Variable filled in, that is like static to the procedure definition. How might that work?
+
+Objects set for a command definition or class, that are taken over by all calls or objects. The reference target can not be overwritten by the call or object, but the value can be written or read. It is all about which system members of the object of a definition or class are declared static. The static system members are changeable by the class or definition, but cannot be changed by objects or calls.  
+\> Once again another concept, that required better understanding of the system interface.
+
+-----
+
+Static command data,
+
+The data inside a command definition object serves as default values for the command parameters. The data inside a command definition also might be statically created, which means that calls, instead of creating a copy of the data of the command, refer directly to the data inside the command definition object. A command definition object can be assigned another command definition object, so command object assignment only works for assigning a command object to a definition.
+
+JJ
+
+-----
+
+Static,  
+2008-06
+
+A local variable may make the method a static method of a class, instead of a method of an object?
+
+JJ
+
+-----
+
+Classes,  
+Static,  
+Parameters, Class Redirections & Calls,  
+2008-09-16
+
+Als je een class relatie hebt tussen een command definition en een class, dan krijgt de class een inactive command erin met een class line naar de command definition. Als je een object creeert van de class, dan heeft die ook een inactive command erin,
+met een class line naar de command definition. Dus dan heb je al twee kopieen van
+de oorspronkelijke command definition.
+De command in het object blijft inactive. Als je een command runt, dan ...
+
+JJ
+
+-----
+
+Static,  
+2008-10-01
+
+You HAVE TO give class relations different behavior compared to object relations.
+You HAVE TO give class relations specialized behavior.
+Class relations are covered by the Class concept.
+The Class concept might establish this specialized behavior.
+As such, you can let Class relations behave different from
+just an under the surface relation to an object, that serves as a class.
+As such, you can let object instantiation from a class refrain from
+duplicating shared code of a class.
+This should be sort of like static stuff. You should have a separation
+between static code and static data.
+Only for caching purposes static code and data can be duplicated.
+Caching is unaviodable in a network and persistance situation.
+It looks like Static is a topic, that belongs to the documentation about Classes.
+
+JJ
+
+-----
+
+Static,
+2009-06-17
+
+There are two forms of static: static parts of a class, that might become part of all objects of that class and static parts of a class, that can not be called through the objects, but only directly by referencing the class.
+
+JJ
+
+-----
 
 < Also discuss the way to call a type’s members directly, while they are ‘object static’ (I haven’t introduced the term object static yet, I used to call it non-static, but object static seems to fit well in the system). So, discuss calling a type’s object static members directly, filling the *this* argument with a reference to the object. >
 
+-----
 
 If one diamond’s internal lines change, lines of all procedure symbols pointing to the diamond change too. If a static procedure line is changed, all procedure symbols, also all calls with that definition might change.
 
+-----
 
 < You have to mention here somewhere what the normal kind of static is and that when explaining situations, you are always seeing members in their normal type of static, and the other types of static are not considered. That way in other explanations lateron, I don’t have to add to every conclusion ‘unless it is static’>
 
-
+-----
 
 Static,  
 2004
 
 <  
-a symbol apart from an object access procedure also has a class access procedure giving you access to the class members in a static form. The object includes its type-static members…(I’m explaining static here)  
+a symbol apart from an object access procedure also has a class access procedure giving you access to the class members in a static form. The object includes its type-static members... (I’m explaining static here.)  
 \>
 
 JJ
 
-Static & Classes,
+-----
 
+Static & Classes,  
 2010-05-18
 
 The class defines the *characteristics* of an object. This is a vague way to put it, because the distinction between the data that is part of the class and the data that is part of the object is arbitrarily chosen by the programmer. But since the class data might not change, the 
 
-JJ
+JJ`
