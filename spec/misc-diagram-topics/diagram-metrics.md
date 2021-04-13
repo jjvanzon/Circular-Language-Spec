@@ -8,7 +8,7 @@ Diagram Metrics
 
 __Contents__
 
-- [Diagram Metrics in Experiment 3.0](#diagram-metrics-in-experiment-30)
+- [Diagram Metrics](#diagram-metrics)
 - [Brainstorm Text (from original Symbol documentation)](#brainstorm-text-from-original-symbol-documentation)
     - [Symbol Placement and Proportion](#symbol-placement-and-proportion)
     - [Line Alignment](#line-alignment)
@@ -22,13 +22,11 @@ __Contents__
     - [Line convergence](#line-convergence)
 - [More Ideas](#more-ideas)
 
-### Diagram Metrics in Experiment 3.0
+### Diagram Metrics
 
-*This text was written in the context of efforts to program experiment 3.0.*
+The diagrams of Encircle are to be drawn out automatically. If they weren’t, this may decrease the usability of the language. These 'diagram metrics', as they are called here, might be functionally described first not being burdened by any mathematical implications, and after that the math to do so might be designed.
 
-The diagrams of Encircle are to be drawn out automatically. If they weren’t, this would decrease the usability of the language. These diagram metrics as they are called might be functionally described first not being burdened by any mathematical implications, and after that the math to do so might be designed.
-
-There are several elements to the diagram metrics. Some of them are considered more essential than others. A new version of Encircle is currently being implemented and only the essential diagram metrics concepts might be implemented at first.
+There are several elements to the diagram metrics. Some of them are considered more essential than others.
 
 The concepts are put more or less in order of priority.
 
@@ -46,8 +44,8 @@ The concepts are put more or less in order of priority.
 
     - Inward reference lines
 
-        - This happens in case of fixed logical residences, when the fixed logical residence is actually displayed in the diagram, or one of the qualifiers of it is displayed.
-        - And it also happens in case of arbitrarily chosen qualified references.
+        - This may happen in case of fixed logical residences, when the fixed logical residence is actually displayed in the diagram, or one of the qualifier elements (This Object . That Object . My Object ...) of it is displayed.
+        - And it also seems to happen in case of arbitrarily chosen qualified references.
         - < I do not have a clear picture of when imaginary references might appear and when not. >
 
     - Lines going out of the diagram
@@ -58,11 +56,11 @@ The concepts are put more or less in order of priority.
 
         - When to show them, when not to show them.
 
-    - Molecular ordering
+    - Force-based ordering
 
         - Shapes and lines being driven into position by certain forces.
         - \> Perhaps with an invisible springs algorithm you can animate everything to equilibrium and you might not have to worry about calculating the exact optimal position.
-        - \> Molecular ordering and object order unfortunately might contradict.
+        - \> Force-based ordering and object order unfortunately might contradict.
 
     - Object order
 

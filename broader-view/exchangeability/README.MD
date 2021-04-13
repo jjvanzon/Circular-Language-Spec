@@ -33,14 +33,10 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 - ### [Programming Language = Database](programming-language-is-database.md)
 
     - This fundamental principle is about the fact that the code of a program is stored as a database. *Code is just data*, that describes a procedure.
-     
-    - This concept is fully applied inside the new design of Encircle. It is not applied yet inside experiments 0.9 and 2.0.
 
 - ### [Design Time = Run Time](design-time-is-run-time.md)
 
     - In most programming languages there is a distinction between design time and run time. This means, that the software is programmed first, and then run. You only run it after you programmed it. If the program it is not error free, the program may crash. The principle *Design Time = Run Time*  takes away this distinction between design time and run time. This article demonstrates how you can create a program and use it at the same time. It goes too much into what happens when an error occurs. That should be covered later in *Errors & Warnings* and in *Concurrency*.
-
-    - The concept has not been fully realized yet in software, but experiment 2.0 comes close to it.
 
 - ### [User = Programmer](user-is-programmer.md)
 

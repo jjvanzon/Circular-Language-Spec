@@ -46,13 +46,11 @@ This is unfinished documentation of lower quality. It only has an unfinished des
 
 ### Preliminary Design
 
-*This brainstorm was written in the context of efforts to program experiment 3.0.*
-
-The new version of Encircle might work with the basics of objects, classes and interfaces. The distinction between objects, classes and interfaces is so loose in Encircle and the distinction really leans on the concepts of public / private and the concept of static. These determine the difference between objects, classes and interfaces.
+The distinction between objects, classes and interfaces is so loose in Encircle and the distinction really leans on the concepts of public / private and the concept of static. These determine the difference between objects, classes and interfaces.
 
 The concept of static is not completely worked out yet in the functional design.
 
-There is a general brainstorm < read the brainstorm > but it has loose ends.
+There is a general brainstorm but it has loose ends.
 
 The first thing you have to know about classes and static structure in Encircle is that what is traditionally part of the static structure, is not by default part of the static structure anymore. By default everything, including method definitions, are just data inside an object. In Encircle you have to choose whether method definitions are part of the static structure or part of the object data. When it is part of the object data, this basically means that you can change this method definition for each object. If it part of the static structure, objects do not have their individual copy of the data and usually the objects can not change the data either.
 
@@ -60,11 +58,11 @@ So static parts of a class are the parts that can not vary between objects, it i
 
 Static data inside the class might be like the class definition, while non-static data inside the class constitute mere default values for objects, but the values can be individually changed among objects.
 
-Just like the public / private concept, you have to set the static flag for each individual access connector, in other words, each system command can be separately made static or dynamic.
+Just like the public / private concept, you might set the *static* flag for each individual access connector, in other words, each system command can be separately made static or dynamic.
 
 Usually you might make static data read-only to the objects, so that the objects can not change it. But objects can also get write access to static data. This is static data that is shared among objects, and can be changed by all objects.
 
-There is another type of static in other languages, which is data that can be accessed only through the class object, and not through instances. I do not like this type of static, because I would create two objects to solve this: one with instance methods and one with utility methods. If we might have a way to specify this in Encircle, it would mean that each access connector can be made either accessible or inaccessible from instances.
+There is another type of static in other languages, which is data that can be accessed only through the class object, and not through instances. I do not like this type of static as much, because in my head I would create two objects to solve this: one with instance methods and one with utility methods. If we might have a way to specify this in Encircle, it would mean that each access connector can be made either accessible or inaccessible from instances.
 
 The idea for now is that each system command might be separately made static or dynamic.
 

@@ -224,7 +224,7 @@ JJ
 CL,  
 2008-09-18
 
-"Convention over Configuration" means a developer only needs to specify unconventional aspects of the application. For example, if there's a class Sale in the model, the corresponding table in the database is called sales by default. It is only if one deviates from this convention, such as calling the table "products sold", that one needs to write code regarding these names. In general, this leads to less code.
+"Convention over Configuration" means a developer only needs to specify unconventional aspects of the application. For example, if there's a class Sale in the model, the corresponding table in the database is called Sales by default. It is only if one deviates from this convention, such as calling the table "products sold", that one needs to write code regarding these names. In general, this might lead to less code.
 
 \> I actually had trouble with the automatic configuration in the code generator experiment 0.9, that easily lead to ambiguities, and unwanted automatically made decisions. But perhaps it could be made better.
 

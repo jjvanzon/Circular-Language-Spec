@@ -1,10 +1,10 @@
 Encircle Language Construct Drafts | Implementations
 ====================================================
 
-Loose Ideas
------------
+Implementations Loose Ideas
+---------------------------
 
-*The material below are loose ideas, yet to be turned into good documentation.*
+`[ Preliminary documentation ]`
 
 Encircle, Utilities,
 

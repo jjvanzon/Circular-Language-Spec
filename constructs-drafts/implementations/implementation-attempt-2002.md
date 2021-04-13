@@ -4,7 +4,7 @@
 Implementation Attempt 2002
 ---------------------------
 
-`[ Preliminary documentation ]`
+`[ Out of Scope ]`
 
 __Contents__
 

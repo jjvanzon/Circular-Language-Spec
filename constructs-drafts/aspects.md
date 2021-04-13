@@ -20,15 +20,13 @@ __Contents__
 
 #### Aspects
 
-*This brainstorm was written in the context of efforts to program experiment 3.0.*
+The *aspect* construct might become important in Encircle, only it might not be implemented yet in future experiment 3.0. However, experiment 3.0 might be implemented in a way that the aspects construct might be added to it later. Aspects might be useful enough to do this. In order to feel comfortable about this, I would like to know more about aspects, so I might work out a preliminary, brainstorm-style design here.
 
-The *aspect* construct might become important in Encircle, only it might not be implemented yet in experiment 3.0. However, experiment 3.0 has to be implemented in a way that the aspects construct can later be added to it. Aspects are so important that this might be possible. So in order to feel comfortable about this I have to know more about aspects, so I am going to work out a preliminary, brainstorm-style design here.
-
-For this I am going to look into the experiment 0.9 code in which I might see what aspects need to be capable of and I might list out what you have to be able to define inside an aspect and then maybe I might get a picture of how this should look in a diagram.
+For this I might look into the experiment 0.9 code, in which I might see what aspects might need to be capable of and I might list out what you have to be able to define inside an aspect and then maybe I might get a picture of how this should look in a diagram.
 
 -----
 
-A lot of times aspects need to tap into other methods or other aspects’ methods and pre- or post-extend the method. And the pre- or post-extension might be in a specific point in the code of the method into which code is injected.  
+A lot of times aspects might tap into other methods or other aspects’ methods and pre- or post-extend the method. And the pre- or post-extension might be in a specific point in the code of the method into which code is injected.  
 In experiment 0.9 there is a distinction between injecting it inside the Set’s If Value has changed or outside the Set’s If Value has actually changed. I am not sure the distinction is needed in the new version but it might have to be a feature.  
 The idea about injecting code a specific point was that this point of injection is determined by dependency on other aspects. Some parts of other aspects might either be finished or not started yet when the code of the dependent aspect is run. So pinpointing this position is done by pinpointing the dependency on another aspect and whether something has to be done before or after a part of another aspect is finished. So it is about Before or After an element of another aspect or Before or After a number of elements of a number of other aspects. That is how the position of code injection might be defined.  
 The idea is that with aspects everything is possible that is possible with code generation, only in a more structured way.  

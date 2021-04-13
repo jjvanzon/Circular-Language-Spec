@@ -1,10 +1,12 @@
 ﻿Encircle Language Construct Drafts | Implementations
 ====================================================
 
-System Commands Implementation
-------------------------------
+System Interfaces Implementation
+--------------------------------
 
 `[ Out of Scope ]`
+
+### System Commands Implementation
 
 There is a paradox.
 
@@ -19,3 +21,7 @@ The fundamental system commands are only a limited set, so you only have to cons
 It is not so much about system commands, that are added by aspects, but about the fundamental system commands. System commands, added by aspects, can build on top of the fundamental layer of the engine of Encircle.
 
 It is really not that much of a problem. Just *some* commands need to be present in the code base, just like *some* objects need to be present in the code base.
+
+### Obsolete Members: Initialize Item & Terminate Item
+
+In experiment 2.0, a related list also had the extension procedures __Initialize Item__ and __Terminate Item__. In experiment 3.0, __Initialize Item__ might be replaced by __Add  .  Post-Extend__ and __Terminate Item__ is replaced by __Remove  .  Pre-Extend__.

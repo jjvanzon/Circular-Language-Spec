@@ -12,7 +12,19 @@ __Contents__
 - [Brainstorm](#brainstorm)
     - [Generic, Not Generated](#generic-not-generated)
     - [System Structure Elements](#system-structure-elements)
-    - [Which Attributes Exist?](#which-attributes-exist)
+    - [Which Attr- [Introduction](#introduction)
+- [Brainstorm](#brainstorm)
+    - [Generic, Not Generated](#generic-not-generated)
+    - [System Structure Elements](#system-structure-elements)
+        - [Which Attributes Exist?](#which-attributes-exist)
+        - [How Many Are There?](#how-many-are-there)
+        - [How Are They Automatically Added and Removed?](#how-are-they-automatically-added-and-removed)
+        - [When Are They Added and Removed](#when-are-they-added-and-removed)
+        - [Attribute Roles](#attribute-roles)
+            - [No Control Over Retaining the System Attribute](#no-control-over-retaining-the-system-attribute)
+        - [N `<=>` N](#n--n)
+    - [Loose Ideas](#loose-ideas)
+        - [Aspects As External Modules](#aspects-as-external-modules)ibutes Exist?](#which-attributes-exist)
     - [How Many Are There?](#how-many-are-there)
     - [How Are They Automatically Added and Removed?](#how-are-they-automatically-added-and-removed)
     - [When Are They Added and Removed](#when-are-they-added-and-removed)
@@ -24,9 +36,9 @@ __Contents__
 
 ### Introduction
 
-Aspects add something to every class that supports the aspect. The class doesn’t get polluted directly. An aspect adds a sub object operating on the class’s members in a generic way.
+Aspects might add something to every class that supports the aspect. The class doesn’t get polluted directly. An aspect might add a sub object operating on the class’s members in a generic way.
 
-All I need to do, is invent a way to describe any of the aspects I had already implemented in experiment 0.9 in text code, and how do I let each class decide which aspect to support. How do I set a default as to which aspects classes should support?
+What might be desired from Encircle, would be to offer a way to describe any of the aspects that were implemented in experiment 0.9 in text code, and how do I let each class decide which aspect to support. How do I set a default as to which aspects classes should support?
 
 The main part of the text code description of an aspect is the code as generated before, but now with template placeholders in it.  
 Shouldn’t be hard. In the code generator version of Encircle, every module decided which aspects to support
@@ -35,7 +47,7 @@ Shouldn’t be hard. In the code generator version of Encircle, every module dec
 
 ### Brainstorm
 
-In experiment 0.9 every aspect (for instance Copy-Paste, Default Values and Enums) used to have its own part of the code generator. In a generic version of Encircle, this would translate to every aspect being its own generic part of the engine. It is indeed easier to program the aspects as part of an engine, rather than part of a code generator, but it gets even easier. The aspects are no longer part of the engine either. They are become external modules, written in a custom text code, that can be loaded by the engine and run inside it.
+In experiment 0.9 every aspect (for instance Copy-Paste, Default Values and Enums) used to have its own part of the code generator. In a generic version of Encircle, this might translate to every aspect being its own generic part of the engine. It is perhaps easier to program the aspects as part of an engine, rather than part of a code generator, but something might make it even more handy. The aspects might no longer be part of the engine either. They might become external modules, written in perhaps custom code, that might be loaded by the engine and run inside of it.
 
 #### Generic, Not Generated
 
@@ -117,8 +129,6 @@ For n`<=>`n, x`<=>`n and n`<=>`x relaties you can’t give the relation classes 
 
 #### Loose Ideas
 
-*These were moved here from the Projects documentation, to the System documentation, to integrate them with the System documentation. Remaining ideas should be moved back to the Projects documentation after that. The Projects documentation is where Ideas belong.*
-
 ##### Aspects As External Modules
 
 Moeten er aspecten bibliotheek bestaan?  
@@ -126,7 +136,7 @@ Of: moet een module naast classes en data ook aspecten kunnen definiëren, die v
 
 -----
 
-Dit extensible aspects model is een erg aantrekkelijk vlak voor mij. Dit loopt in 1 lijn met Creator in Creator en Generic not Generated. Dit kan een project worden voor nà experiment 2.0 + een aantal extra aspecten geïmplementeerd, als creator extensie. In wezen breid je creator uit door aspecten toe te voegen. Maar niet alle objecten op de hele wereld implementeren alle aspecten. Die draaien in dat geval allemaal op een andere creator. Of hoe?
+Dit extensible aspects model is een erg aantrekkelijk vlak voor mij. Dit loopt in 1 lijn met *Programming Language Programmed Within Itself* en *Generic not Generated*. In wezen breid je misschien de programmeer taal uit door aspecten toe te voegen. Maar niet alle objecten op de hele wereld implementeren alle aspecten. Dus hoe gaat dat werken?
 
 -----
 

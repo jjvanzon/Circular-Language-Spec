@@ -13,7 +13,7 @@ __Contents__
 - [Related Items](#related-items)
 - [Related Lists](#related-lists)
 - [User Interface](#user-interface)
-- [All Concepts Can Become Generic, Except For One: Methods](#all-concepts-can-become-generic-except-for-one-methods)
+- [In Experiment 2.0: All Concepts Can Become Generic, Except For One: Methods](#in-experiment-20-all-concepts-can-become-generic-except-for-one-methods)
 
 ### Introduction
 
@@ -57,9 +57,9 @@ The difference between related items and related lists, is that a related list d
 
 Now seeing how easily a generic version of an object could adapt itself to a class description, you can also imagine creating a generic user interface, that adapts itself to a class description. An generic user interface, that displays the attributes of a single object for instance. When assigning a class to the generic user interface, for every String attribute that the class contains, it could add a Text Box to an array of text boxes it contains.
 
-### All Concepts Can Become Generic, Except For One: Methods
+### In Experiment 2.0: All Concepts Can Become Generic, Except For One: Methods
 
-All concepts of Encircle can become purely generic.
+All concepts of Encircle might become purely generic.
 
 In the first generic version (experiment 2.0) all the basic concepts could easily be implemented as a generic version, except for one: methods.  
 It was harder to let custom methods run inside the engine. A preliminary solution was found, by letting the engine link to external DLLs, but explaining this is outside the scope of this article. See: *Preliminary Methods*.

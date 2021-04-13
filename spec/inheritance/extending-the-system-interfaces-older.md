@@ -15,7 +15,6 @@ __Contents__
 - [Extension Regardless of Value Change](#extension-regardless-of-value-change)
 - [Extension Procedures are Events](#extension-procedures-are-events)
 - [Extension Procedures Part of Parent](#extension-procedures-part-of-parent)
-- [Obsolete Members: Initialize Item & Terminate Item](#obsolete-members-initialize-item--terminate-item)
 - [Extension of System Interfaces in a Diagram](#extension-of-system-interfaces-in-a-diagram)
 - [Loose Ideas](#loose-ideas)
     - [Extension (Cross-Out Leftovers from System Interfaces)](#extension-cross-out-leftovers-from-system-interfaces)
@@ -227,10 +226,6 @@ Although the system objects define the extension events, the *parent object* def
 It is just more practical to make the extension procedures part of the parent object. Only a normal Encircle object can define commands, that have all the possibilities of Encircle. You cannot really change objects like related items or related lists, because they are system objects. Those system objects can only be extended, not changed.
 
 Theoretically it does not matter whether extension procedures are defined by for instance inside a related item or inside the parent object of a related item. A related item is part of the parent object anyway.
-
-### Obsolete Members: Initialize Item & Terminate Item
-
-In an earlier experiment, version 2.0, a related list also had the extension procedures __Initialize Item__ and __Terminate Item__. In experiment 3.0, __Initialize Item__ might be replaced by __Add  .  Post-Extend__ and __Terminate Item__ is replaced by __Remove  .  Pre-Extend__.
 
 ### Extension of System Interfaces in a Diagram
 

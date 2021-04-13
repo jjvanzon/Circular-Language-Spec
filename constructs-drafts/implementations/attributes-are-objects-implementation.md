@@ -4,7 +4,7 @@
 Attributes Are Objects Implementation
 -------------------------------------
 
-`[ Preliminary documentation ]`
+`[ Out of Scope ]`
 
 __Contents__
 

@@ -22,8 +22,6 @@ The *Expression* folder may contain the following articles:
 
     - The documentation of *Alternative Media* might not be finished up yet. It may consist of only one article, that may not be much more than a throw-together of ideas. Part of it might be texts coming out of an earlier unfinished design of the diagram notation language.
 
-    - The concept of controls being alternative media in which to express systematics was part applied inside experiment 2.0. It had a tree control, that displayed and altered the underlying systematics, that were stored in as binary interlinked objects.
-
 - ### [Expression Mixing](expression-mixing.md)
 
     - Furthermore all those forms of expression of systematics may be mixed and combined with each other. You might use text (code) inside diagrams and you may let an object in a diagram be opened in a window with a tree control in it and have the window be displayed on top of the diagram. Or a scroll bar or slider could be displayed next to an object in a diagram with which you can the object’s value. As such, all forms of expression might be embedded into each other.
