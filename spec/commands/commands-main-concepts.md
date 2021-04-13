@@ -15,6 +15,7 @@ __Contents__
 - [Command Calls](#command-calls)
 - [Command References](#command-references)
 - [Code Blocks](#code-blocks)
+- [Code Blocks Details](#code-blocks-details)
 - [Local Function](#local-function)
 - [Clauses](#clauses)
 - [Lambda Expression](#lambda-expression)
@@ -28,7 +29,6 @@ __Contents__
     - [Command Call Synonyms](#command-call-synonyms)
     - [Command Reference Synonyms](#command-reference-synonyms)
 - [Loose Ideas](#loose-ideas)
-    - [Command Definition](#command-definition)
     - [Command Definition Compared to Objects](#command-definition-compared-to-objects)
     - [Executable Commands](#executable-commands)
     - [Inactive Command](#inactive-command)
@@ -42,21 +42,20 @@ __Contents__
         - [Diagram Notation](#diagram-notation)
     - [Active Clause](#active-clause)
         - [Concept](#concept-1)
-        - [Diagram Notation](#diagram-notation-1)
     - [Commands Compared to Objects](#commands-compared-to-objects)
         - [Commands Anywhere](#commands-anywhere)
-            - [Diagram Notation](#diagram-notation-2)
+            - [Diagram Notation](#diagram-notation-1)
         - [Resolution When `Not Allowed` For Commands](#resolution-when-not-allowed-for-commands)
     - [Commands Edge Cases](#commands-edge-cases)
         - [Changing Inactive to Executable](#changing-inactive-to-executable)
-            - [Diagram Notation](#diagram-notation-3)
+            - [Diagram Notation](#diagram-notation-2)
     - [Sub-Commands](#sub-commands)
         - [Sub-Commands in a Diagram](#sub-commands-in-a-diagram)
     - [Command References Inside Commands](#command-references-inside-commands)
     - [Executables & Executions](#executables--executions)
-        - [Diagram Notation](#diagram-notation-4)
+        - [Diagram Notation](#diagram-notation-3)
     - [Public Inactive Clause `=` Command `Out` Parameter](#public-inactive-clause--command-out-parameter)
-        - [Diagram Notation](#diagram-notation-5)
+        - [Diagram Notation](#diagram-notation-4)
     - [Reading & Writing Parameters](#reading--writing-parameters)
     - [Exchangeability Between Commands & Objects](#exchangeability-between-commands--objects)
     - [Execute Once](#execute-once)
@@ -74,13 +73,15 @@ Commands may be objects, that so happen to be *executable*. Commands could be ac
 
 The concept of commands may boil down to a limited set of characteristics.
 
+A *diamond* in Encircle may express a command that might be __executable__.
+
+<img src="images/1.%20Commands%20Main%20Concepts.002.png" width="50" />
+
+An executable command might be carried out, while one that is not executable, might stay asleep.
+
 A *square* in Encircle might symbolize that the command is __not executable__.
 
 <img src="images/1.%20Commands%20Main%20Concepts.001.png" width="50" />
-
-A *diamond* in Encircle may express a command that might be* __executable__.
-
-<img src="images/1.%20Commands%20Main%20Concepts.002.png" width="50" />
 
 Containment is a way to express a relationship. One symbol might __contain__ another:
 
@@ -134,13 +135,11 @@ void MyDefinition()
 }
 ```
 
-To express it in Encircle, a square might be used: 
+Command definitions themselves might not necessarily execute. Just copies of it, more likely. Its *not executing* may be expressed with a square: 
 
 <img src="images/1.%20Commands%20Main%20Concepts.008.png" width="50" />
 
-Its being a square, might indicate that it may *not execute*.
-
-If a symbol might *only* be used as a definition, it might be drawn out with a *dashed border* too:
+If a command might only be used or usable as a definition, it might be drawn with a *dashed border*:
 
 <img src="images/1.%20Commands%20Main%20Concepts.006.png" width="70" />
 
@@ -268,10 +267,6 @@ A code block might also look like this:
 
 The previous diagram might show a code block within a definition (a square). This diagram shows the code block while that command is executed.
 
-Code blocks might be nested even further:
-
-<img src="images/1.%20Commands%20Main%20Concepts.016.png" width="180" />
-
 So a code block might be symbolized by:
 
 - a diamond
@@ -286,6 +281,20 @@ because it is:
 - nameless
 - not a reference
 - not a definition
+
+### Code Blocks Details
+
+Code blocks might be nested even further:
+
+<img src="images/1.%20Commands%20Main%20Concepts.016.png" width="180" />
+
+Because a code block does not point out a definition, its contents might be arbitrary / decided by its parent command, unlike calls, whose contents might comply with a  definition, that they may call.
+
+Code blocks might freely be used for putting a frame around a piece of code inside a command. In that case that command might still do the same thing:
+
+![](images/1.%20Commands%20Main%20Concepts.033.png)
+
+![](images/1.%20Commands%20Main%20Concepts.034.png)
 
 ### Local Function
 
@@ -443,25 +452,12 @@ Using the constructs for commands from Encircle, it may seem circumstantial whet
 
 ### Loose Ideas
 
-#### Command Definition
-
-`<< nice formulation >>`  
-Command definitions themselves might not necessarily be executed. Just copies of it, more likely. A command definition's not being executable might be expressed by using a square, rather than a diamond:
-
-![](images/1.%20Commands%20Main%20Concepts.001.png)
-
-`<< nice formulation >>`  
-If a command is only used or usable as a definition, it might be drawn with a dashed line:
-
 #### Command Definition Compared to Objects
 
 `<< commands compared to objects >>`  
 A command object might have a similar structure as its definition, but not necessarily the same data. Values might change for each individual command object. *Which* objects are referenced might also be different for each individual command object. But initially the command object might be an exact replica of the definition. The definition’s attribute values and object references might only function as a default.
 
 #### Executable Commands
-
-`<< nice formulation >>`  
-An *executable* command might be carried out, while an *inactive* command, might stay asleep.
 
 `<< synonym >>`  
 An executable command might also be called an *active command*. In
@@ -470,9 +466,6 @@ An executable command might also be called an *active command*. In
 A diamond shape might also be called an *active command symbol*.
 
 #### Inactive Command
-
-`<< nice formulation >>`  
-An inactive command object may be asleep and might never be executed.
 
 `<< already covered >>`  
 It could be used as a prototype for another command.
@@ -616,18 +609,6 @@ An *active* clause `executes` when its parent command `is` executed.
 
 `<< commands compared to objects >>`  
 An active clause `is analogous` to an object that `might not` have a class. A *call* `is more` like an object that `*might*` have a class.
-
-`<< nice formulation >>`  
-Because an [active clause] `has its own` definition, its contents `are totally arbitrary` and `definable` by `the author` of `the` parent command, `unlike` calls, whose contents `comply` with `the` definition, that they `call`.
-
-##### Diagram Notation
-
-`<< nice formulation >>`  
-Active clauses `can freely` be used `to put` a frame around a piece of code inside a command. In that case `the whole` command `might still` do `exactly the same` thing:
-
-![](images/1.%20Commands%20Main%20Concepts.033.png)
-
-![](images/1.%20Commands%20Main%20Concepts.034.png)
 
 #### Commands Compared to Objects
 
