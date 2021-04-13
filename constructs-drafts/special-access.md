@@ -105,7 +105,7 @@ The child module in the picture above can only access things global inside itsel
 
 ### Pentagons not Exchangeable with Triangles and Circles
 
-A pentagon is not exchangeable with triangles and circles as much as triangles and circles are exchangeable. Global has the side effect that things become accessible where otherwise inaccessible. If you suddenly replace the pentagon with a circle or triangle it would mean that things formerly global are no longer global and all sorts of accesses in the module object are suddenly invalid. For that a pentagon stays a pentagon and a reference to it can only be a pentagon itself.
+A pentagon is not exchangeable with triangles and circles as much as triangles and circles are exchangeable. Global has the side effect that things become accessible where otherwise inaccessible. If you suddenly replace the pentagon with a circle or triangle it might mean that things formerly global are no longer global and all sorts of accesses in the module object are suddenly invalid. For that a pentagon stays a pentagon and a reference to it can only be a pentagon itself.
 
 ### Extra Indication
 
@@ -131,7 +131,7 @@ The separate interfaces of an object:
 
 ![](images/0.%20Special%20Access.011.png)
 
-can be accessed through a reference to the triangle, just like you would access a circle:
+can be accessed through a reference to the triangle, just like you might access a circle:
 
 ![](images/0.%20Special%20Access.012.png)
 

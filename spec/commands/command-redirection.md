@@ -197,7 +197,7 @@ When a command definition contains a call to the same command definition, then t
 
 ![](images/4.%20Command%20Redirection.014.png)
 
-The call in the __then__ clause does not execute, so shows no private contents. Would the __then__ clause be executing, then the diagram would look like this:
+The call in the __then__ clause does not execute, so shows no private contents. Might the __then__ clause be executing, then the diagram might look like this:
 
 ![](images/4.%20Command%20Redirection.016.png)
 

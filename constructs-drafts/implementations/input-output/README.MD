@@ -40,7 +40,7 @@ This documentation does not seem finished up yet. It seems to contains quite som
 
 - ### Compared IO
 
-    - When two commands seem to affect the same data, they might be in each other’s way. A definition of that overlapping usage and alteration might be called *Compared IO*. The idea would be, that when it is defined what data is mutually used, this might define the input-output dependency of commands.
+    - When two commands seem to affect the same data, they might be in each other’s way. A definition of that overlapping usage and alteration might be called *Compared IO*. The idea might be, that when it is defined what data is mutually used, this might define the input-output dependency of commands.
 
 - ### Outcome Dependency
 

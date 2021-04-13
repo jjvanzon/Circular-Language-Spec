@@ -38,7 +38,7 @@ The access connectors above might merge, because nothing is chronologically in b
 
 ![](images/3.%20Simplified%20Access%20Control%20Notation.004.png)
 
-But if something were in between, for instance, a __Private Set__ connector, then the merge would be blocked by it:
+But if something were in between, for instance, a __Private Set__ connector, then the merge might be blocked by it:
 
 ![](images/3.%20Simplified%20Access%20Control%20Notation.005.png)
 

@@ -279,7 +279,7 @@ By value should only be used for simple object types with a binary value stored 
 
 Please don’t use passing a parameter by value for complex objects and expect no operation to affect the original object, because the deeper objects of it might not be cloned. The object may be passed to sub-commands, that *might* affect the original sub-objects. I might not elaborate on all the difficult situations that it may produce.
 
-If you want to pass more complex objects to a command, you do it by reference. If you would pass more complex objects to a command by value, expecting no operation to affect the original object, this would make the various passing by value situations too complex, which is way beyond the goal of parameter passing by value.
+If you want to pass more complex objects to a command, you do it by reference. If you might pass more complex objects to a command by value, expecting no operation to affect the original object, this might make the various passing by value situations too complex, which is way beyond the goal of parameter passing by value.
 
 Perhaps for that reason, no references to original objects might be cloned for by value parameters. Only *values* of sub-objects might be cloned.
 
@@ -497,7 +497,7 @@ An object assignment, and a pointer to a pointer are not completely interchangea
 
 Reference parameters could be made pointers to pointers, like in the notation, but the notation may also just be regarded an implicit notation of an object assignment.
 
-A reference to an __Object Out__ parameter is also an implicit notation for an object assignment from the parameter to a referrer. So that would nicely fit the two together: parameter references are also an implicit notation for object assignments.
+A reference to an __Object Out__ parameter is also an implicit notation for an object assignment from the parameter to a referrer. So that might nicely fit the two together: parameter references are also an implicit notation for object assignments.
 
 The notations of value transmission for Reference parameters is also just an abstract expression:
 
@@ -771,7 +771,7 @@ Not only directly contained parameters are input, output or throughput. When sub
 
 To automatically determine, whether a parameter is input, output or throughput, you should not only only look at the assignments executed by the command itself. Parameters, or sub-objects of parameters, are also passed to other commands. Whether something is input, output or throughput is equally dependent on whether it is input, output or throughput of a sub-command. If something is throughput for command A, and command A is called by command B, this automatically makes it throughput of command B. (This, unless it is command B’s downput.)
 
-A rigorous way to automatically determine whether something is input, output or throughput, would be to traverse the whole structure of command calls. The assignments are the leaves of that structure (or any other form of read-write machine instruction is also a leave of this structure). Whether something’s input, output of throughput is derived from these assignments and machine instructions. You *could* encounter circularities traversing the call structure. So this would require circularity handling.
+A rigorous way to automatically determine whether something is input, output or throughput, might be to traverse the whole structure of command calls. The assignments are the leaves of that structure (or any other form of read-write machine instruction is also a leave of this structure). Whether something’s input, output of throughput is derived from these assignments and machine instructions. You *could* encounter circularities traversing the call structure. So this might require circularity handling.
 
 Whether something is input, output of throughput only changes when the command definition of a sub-command changes. So instead of traversing the whole command call structure to determine whether something is in, out or thru, you also could cast a change to all callers of the command, and their callers, and their callers, upon which the callers adapt their in-out-thru configuration accordingly. This creates a huge event cast. This needs to happen with events, and all dependencies should register themselves inside what they are dependent on.
 
@@ -875,9 +875,9 @@ Only when you are editing a command, the pre- and post-conditions of the command
 
 #### Compared IO
 
-In a command definition you only know which *structure elements* a command accesses, and not yet what specific objects. But from the structure elements used by the command, you can already see whether commands *might* be in each other's way. This opens up possibilities to exclude or confirm, that commands might be in each other’s way. When parameters of different reading and writing commands are tied to the same object reference and they are accessing the exact same structure elements, you can be pretty sure they might be in each other’s way. But when you are accessing different object references, you can’t be sure whether accessing *different* object references means accessing *different* objects. The two object references may be referring to the same object all the same. Even though automatic containment of objects would indicate which object references represent the same object, this can not be seen in the diagram expression of a command *definition*, because objects are not filled in yet.
+In a command definition you only know which *structure elements* a command accesses, and not yet what specific objects. But from the structure elements used by the command, you can already see whether commands *might* be in each other's way. This opens up possibilities to exclude or confirm, that commands might be in each other’s way. When parameters of different reading and writing commands are tied to the same object reference and they are accessing the exact same structure elements, you can be pretty sure they might be in each other’s way. But when you are accessing different object references, you can’t be sure whether accessing *different* object references means accessing *different* objects. The two object references may be referring to the same object all the same. Even though automatic containment of objects might indicate which object references represent the same object, this can not be seen in the diagram expression of a command *definition*, because objects are not filled in yet.
 
-And then you have to look if there is any overlap in what one command writes and the other commands reads. The overlap might prove a possible read-write dependency. The order of the two commands would affect the outcome, so that might prove that you *have to* indicate an outcome dependency or a negative statement of outcome dependency. Or when a *different* object reference of the same class is consulted, that you *might* need to indicate outcome dependency.
+And then you have to look if there is any overlap in what one command writes and the other commands reads. The overlap might prove a possible read-write dependency. The order of the two commands might affect the outcome, so that might prove that you *have to* indicate an outcome dependency or a negative statement of outcome dependency. Or when a *different* object reference of the same class is consulted, that you *might* need to indicate outcome dependency.
 
 When you don’t consider volatile concurrency, then when sub-commands follow the same structure paths starting at the same object, you are pretty sure, when the same object might be accessed. But in a volatile concurrency situation you are never entirely sure, unless you lock the data. But those are concurrency issues, which are for later.
 

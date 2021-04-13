@@ -23,4 +23,4 @@ This is an attempt at a specification of this language. You may find the followi
 
 The material may still be a bit rough. Both in tone and in content. It might be improved step by step.
 
-Would anyone be interested: Another repository would describe the plans, notes and TODO's around this project. Here it is: [Encircle-Language-Spec-Plans](https://github.com/jjvanzon/Encircle-Language-Spec-Plans)
+Would anyone be interested: Another repository might describe the plans, notes and TODO's around this project. Here it is: [Encircle-Language-Spec-Plans](https://github.com/jjvanzon/Encircle-Language-Spec-Plans)

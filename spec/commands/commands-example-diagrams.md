@@ -90,7 +90,7 @@ The following picture is another possible expression of the private objects:
 
 ![](images/5.%20Commands%20Example%20Diagrams.008.png)
 
-Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it would be obvious: if they do not have a parameter passing, then they are private.
+Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it might be obvious: if they do not have a parameter passing, then they are private.
 
 ### Private Objects in a Command Call
 
@@ -102,7 +102,7 @@ Another possible expression of the private objects is the following:
 
 ![](images/5.%20Commands%20Example%20Diagrams.010.png)
 
-Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it would be obvious: if they do not have a parameter passing, then they are private.
+Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it might be obvious: if they do not have a parameter passing, then they are private.
 
 ### Private Objects in a Command Reference
 
@@ -114,7 +114,7 @@ Another possible expression of the private objects is the following:
 
 ![](images/5.%20Commands%20Example%20Diagrams.012.png)
 
-Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it would be obvious: if they do not have a parameter passing, then they are private.
+Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it might be obvious: if they do not have a parameter passing, then they are private.
 
 Either of the square could have been replaced by a diamond, making the command symbol executable, rather than dormant.
 
@@ -232,7 +232,7 @@ Another possible expression of the private objects is the following:
 
 ![](images/5.%20Commands%20Example%20Diagrams.031.png)
 
-Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it would be obvious: if they do not have a parameter passing, then they are private.
+Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it might be obvious: if they do not have a parameter passing, then they are private.
 
 ### Private Objects in an Active Clause
 
@@ -244,7 +244,7 @@ Another possible expression of the private objects is the following:
 
 ![](images/5.%20Commands%20Example%20Diagrams.033.png)
 
-Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it would be obvious: if they do not have a parameter passing, then they are private.
+Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it might be obvious: if they do not have a parameter passing, then they are private.
 
 ### Command References in an Inactive Clause
 

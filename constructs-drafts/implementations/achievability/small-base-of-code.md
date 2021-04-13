@@ -6,9 +6,9 @@ Achievability | Small Base of Code
 
 `[ Out of Scope ]`
 
-This principle is quite important. The base of Encircle, which might be programmed in C++, might be very small. The rest of Encircle might be programmed within Encircle. Encircle is hoped to make programming easier, so reprogramming it within itself would make it possible to easily add more features to it.
+This principle is quite important. The base of Encircle, which might be programmed in C++, might be very small. The rest of Encircle might be programmed within Encircle. Encircle is hoped to make programming easier, so reprogramming it within itself might make it possible to easily add more features to it.
 
-At least some small base of code in e.g. C++ would always be required, that offers Encircle in its most stripped down form. The whole system is running on it. It is the engine for Encircle.
+At least some small base of code in e.g. C++ might always be required, that offers Encircle in its most stripped down form. The whole system is running on it. It is the engine for Encircle.
 
 So the part that is programmed in C++ should be limited to the very minimum: only the minimum amount of functionality needed in order to reprogram Encircle within itself.
 

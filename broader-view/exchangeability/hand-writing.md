@@ -10,7 +10,7 @@ Drawing On Paper
 
 ### Symbol Drawing Equipment
 
-It would be very nice to have a little drawing thing that makes it easy for you to draw on paper:
+It might be very nice to have a little drawing thing that makes it easy for you to draw on paper:
 
 - Dotted lines
 - Dashed lines

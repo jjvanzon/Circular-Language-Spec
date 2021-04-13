@@ -85,8 +85,8 @@ A parent command, that executes, automatically executes its sub-command-calls on
 #### Original Problem & Solution
 
 This was the original problem:  
-When a sub-command would only be created just before it is run, there is a problem: if a sub-command is created only just before it is run, when can a parent command fill in the parameters of the *not yet created* sub-command? Parameter passings could not reference the sub-command’s parameters. That’s why before running the parent command, the sub-commands need to be created.  
-But when creating the sub-command even before it is  run, there is another problem: if sub-commands need to be created when their parent is created, the sub-commands of sub-commands would also need to be created, and their sub-commands and so on. So the whole call structure would have to be created before the parent command could even run. This could even have resulted in circularities, that would make the system hang.
+When a sub-command might only be created just before it is run, there is a problem: if a sub-command is created only just before it is run, when can a parent command fill in the parameters of the *not yet created* sub-command? Parameter passings could not reference the sub-command’s parameters. That’s why before running the parent command, the sub-commands need to be created.  
+But when creating the sub-command even before it is  run, there is another problem: if sub-commands need to be created when their parent is created, the sub-commands of sub-commands might also need to be created, and their sub-commands and so on. So the whole call structure might have to be created before the parent command could even run. This could even have resulted in circularities, that might make the system hang.
 
 The solution was, to create a call before it is run, but only the public contents, so that a parent can set the parameters. But the private contents are only created just before the command is run, which creates its sub-commands, but again only its parameters. This prevents recursive creation of the call structure, and gives command creation a neat and steady pulse. So this all makes it doable. Otherwise there could have been an endless recursive creation procedure, before any command could ever run.
 
@@ -279,11 +279,11 @@ Creating its private contents, does not create a recursive creation or anything:
 
 ### No Overhead of Command Creation
 
-One of the reasons why private contents of a call are only created just before the call is run, is because this prevents overhead of creation. If you would have to create the whole call structure when the great grandparent of commands is created, then this is not only a lot of work in one blow, but also, a lot of command call objects are created, that never get to run in the first place, because it only runs under certain conditions. Delayed creation of the private contents of a command call prevents this overhead of procedure creation and creates a neat and steady rate of procedure creation.
+One of the reasons why private contents of a call are only created just before the call is run, is because this prevents overhead of creation. If you might have to create the whole call structure when the great grandparent of commands is created, then this is not only a lot of work in one blow, but also, a lot of command call objects are created, that never get to run in the first place, because it only runs under certain conditions. Delayed creation of the private contents of a command call prevents this overhead of procedure creation and creates a neat and steady rate of procedure creation.
 
 ### No Circular Command Creation
 
-Another reason why private contents of a call are only created just before the call is run, is because this prevents circular creation of commands. Some command may call another command and that command may call the first one again. Command calls are usually private, so if you would create all possible command calls, you end up creating an endless recurrence of command creations, while in reality, the recurrence might be broken by some conditional execution of one of the command calls. Creating private contents of command calls prevents this circular creation and only creates a command object when it might actually run.
+Another reason why private contents of a call are only created just before the call is run, is because this prevents circular creation of commands. Some command may call another command and that command may call the first one again. Command calls are usually private, so if you might create all possible command calls, you end up creating an endless recurrence of command creations, while in reality, the recurrence might be broken by some conditional execution of one of the command calls. Creating private contents of command calls prevents this circular creation and only creates a command object when it might actually run.
 
 #### Diagram
 
@@ -333,7 +333,7 @@ But *calls inside* such a definition, only have their *public* contents are crea
 
 ### A Call in a Call Shows Privates When Running
 
-A call inside another call only contains its private content when it is actually running. If a call is not running, then you would have to hop to the definition of a call to see the private contents of the command.
+A call inside another call only contains its private content when it is actually running. If a call is not running, then you might have to hop to the definition of a call to see the private contents of the command.
 
 Not creating a call’s private contents before it even runs, takes away discussion about when to display and when not to display a command’s private contents.
 
@@ -345,7 +345,7 @@ If a call is not running:
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.034.png)
 
-Then you would have to hop to the definition of a call to see the private contents of the command.
+Then you might have to hop to the definition of a call to see the private contents of the command.
 
 When a call is running, you do see its private contents:
 
@@ -492,7 +492,7 @@ I'm having trouble in my head now, because up until now, the diagram was a clear
 Isn't it jut solved if you just accept, to create a call object as a replica of a definition, even though, then you are copying 'code' as well as data.  
 And just when running the parent command, you create all the sub-commands,
 and their parameters, but leave them unfilled in and create the parent command's parameter assignments. Then you have everything instantiated, that you need, and you can just start at sub-command 1, run the input parameters assignments, and run it, run the output parameter assignments (even when they immediately assign something to parameters of another command), and then continue with sub-command 2.
-That would just solve the problem.
+That might just solve the problem.
 
 Just leave that CPU comparison stuff in another article.  
 Just confess in that article, that it is just a brainstorm,  

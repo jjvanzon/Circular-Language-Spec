@@ -191,7 +191,7 @@ The list object only has one system command. Its extension procedures are:
 
 The other extension procedures, a related list defines, are extensions for commands of the list *items*, not extensions for commands of the list object itself.
 
-You are most likely to only use the __Add  .  Post-Extend__ to extend the addition of an item and use the __Item Remove  .  Pre-Extend__ to finalize an item ready to be removed. But the other extension possibilities of __Add__ and __Remove__ are there, because this allows you full control over the behavior of related objects, regardless of what would be most logical to do.
+You are most likely to only use the __Add  .  Post-Extend__ to extend the addition of an item and use the __Item Remove  .  Pre-Extend__ to finalize an item ready to be removed. But the other extension possibilities of __Add__ and __Remove__ are there, because this allows you full control over the behavior of related objects, regardless of what might be most logical to do.
 
 Extension of the system interface’s members allows you to control the inner workings of a sub-object.
 
@@ -284,7 +284,7 @@ At first there was the idea, that a related list item could get the same behavio
 
 -----
 
-Actually, system objects would not be an equivalent of __Getters__ and __Setters__ if it weren’t for the *extension* of system commands. A summary of the system objects would not be complete without a list of all possible system commands and all its possible procedure extensions. Below you might find lists of all the extension possibilities of the system objects. For explanations about the extension possibilities, refer to the article *Extending The System Interfaces*. 
+Actually, system objects might not be an equivalent of __Getters__ and __Setters__ if it weren’t for the *extension* of system commands. A summary of the system objects might not be complete without a list of all possible system commands and all its possible procedure extensions. Below you might find lists of all the extension possibilities of the system objects. For explanations about the extension possibilities, refer to the article *Extending The System Interfaces*. 
 
 Related item extension possibilities:
 

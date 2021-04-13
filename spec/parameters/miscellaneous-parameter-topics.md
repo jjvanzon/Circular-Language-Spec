@@ -98,4 +98,4 @@ Perhaps the designer of the list decides, it is required that you fill in attrib
 
 A set of default __Add__ overloads could be generated as such by supporting the __Add__ concept.
 
-Perhaps object initialization on __Add__ could be realized already by a neat, inline object initialization syntax in text code, and you would not need to make each attribute a parameter of the __Add__ command. You would just need the __Add__ overload, that takes a new object as a parameter, and use inline object initialization syntax.
+Perhaps object initialization on __Add__ could be realized already by a neat, inline object initialization syntax in text code, and you might not need to make each attribute a parameter of the __Add__ command. You might just need the __Add__ overload, that takes a new object as a parameter, and use inline object initialization syntax.

@@ -20,7 +20,7 @@ It does sum up the required concepts to turn basic data structures into digital 
 
     - One of the tasks of the *Object Storage* module is use disk and memory storage in a unified way. Objects should not be actively stored on disk and actively loaded into memory. Stored objects should automatically load into memory when being operated on. Memory works like a caching mechanism for stored objects. Unifying disk and memory is about using objects, that are persistent, while not worrying about actively saving them to disk or performance lags of disk-based objects compared to objects stored in memory.
 
-    - The ideas about unifying disk and memory are not fully worked out yet. The article only contains a throw-together of ideas. It was not implemented inside any of the versions of Encircle yet. Unifying disk and memory would perhaps have been the next principle to be implemented inside experiment 2.0, but then developments took another course.
+    - The ideas about unifying disk and memory are not fully worked out yet. The article only contains a throw-together of ideas. It was not implemented inside any of the versions of Encircle yet. Unifying disk and memory might perhaps have been the next principle to be implemented inside experiment 2.0, but then developments took another course.
 
 - ### Caching
 
@@ -51,7 +51,7 @@ It does sum up the required concepts to turn basic data structures into digital 
 
 - ### Changing Field Sizes
 
-    - It should be made easy to alter a text field’s size. It is easier to store fields with a constant binary size, but text fields you would want to make bigger, when texts you want to enter in it do not fit in it anymore. A solution for that should be found and described in this article.
+    - It should be made easy to alter a text field’s size. It is easier to store fields with a constant binary size, but text fields you might want to make bigger, when texts you want to enter in it do not fit in it anymore. A solution for that should be found and described in this article.
 
 - ### Primary Identification
 

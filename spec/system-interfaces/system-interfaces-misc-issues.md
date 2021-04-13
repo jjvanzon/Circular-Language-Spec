@@ -157,7 +157,7 @@ An object `can* have` a referrers list, `but*` an object reference, `so` a relat
 
 ###### `Not*` Supporting `the*` Referrers Concept
 
-An object `could*` choose `not*` to support `the*` __Referrers__ concept, `if* the*` programmer `knows,` that `this` object `might` be referenced `so many` times, and there `is so little interest` in `knowing all` its referrers, that it `would*` be `ridiculous` maintain a list.
+An object `could*` choose `not*` to support `the*` __Referrers__ concept, `if* the*` programmer `knows,` that `this` object `might` be referenced `so many` times, and there `is so little interest` in `knowing all` its referrers, that it `might*` be `ridiculous` maintain a list.
 
 `But* by default, the*` __Referrers__ concept `is always` supported.
 
@@ -169,7 +169,7 @@ An object `could*` choose `not*` to support `the*` __Referrers__ concept, `if* t
 
 `The*` entry in `the*` __Referrers__ list `is` pointing to a related item in `the*` parent object __A__, `not* directly` to an object.
 
-`The*` lines `coming out` of `the*` referrers list `are usually not*` shown, `because*` a line `tied *to*` an object `already *implies*` a referrer. `The*` diagrams `might have more` features `later`, and the referrer lines `would* obscure the*` picture.
+`The*` lines `coming out` of `the*` referrers list `are usually not*` shown, `because*` a line `tied *to*` an object `already *implies*` a referrer. `The*` diagrams `might have more` features `later`, and the referrer lines `might* obscure the*` picture.
 
 ![](images/5.%20System%20Objects%20Misc%20Issues.015.png)
 
@@ -199,7 +199,7 @@ A class `is usually only` *used* as a class, and `not* also used` as an object, 
 
 `The*` amount of referrers of a __Number__ *object* may be `small, but* the*` amount of referrers of `the*` __Number__ *class* `is humungous. The*` class `might even have` a __Referrers__ list, `when* the*` class `is not*` a created object, `because*` __Referrers__ `applies` to `both` symbols and objects.
 
-`You* would* want to` turn `the*` __Referrers__ concept `*off*` for `the*` __Number__ class and *on* for __Number__ objects. `But* the* problem here is`, that a class `is` a blueprint for an object. An object `only supports` __Referrers__, `because* the*` *class* `supports` it.
+`You* might* want to` turn `the*` __Referrers__ concept `*off*` for `the*` __Number__ class and *on* for __Number__ objects. `But* the* problem here is`, that a class `is` a blueprint for an object. An object `only supports` __Referrers__, `because* the*` *class* `supports` it.
 
 `The* first solution proposed was` to `simply not* support the*` __Referrers__ concept for classes that `are widely` used. `But* then*` for `widely` used classes, `the*` __Referrers__ concept `never` be `supported`. That `is against the*` idea of `supporting the*` __Referrers__ concept `by default`.
 

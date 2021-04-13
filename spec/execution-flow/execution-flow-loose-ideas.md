@@ -156,9 +156,9 @@ Select X – 2 >
 End Select
 ```
 
-The resulting expression of the first __If__ would be __X – 2 > 0__.
+The resulting expression of the first __If__ might be __X – 2 > 0__.
 
-Symbol text code allows various representations of __Selection__ execution flow, but the notation above uses each clause’s distinctive name. An alternate notation would be as follows:
+Symbol text code allows various representations of __Selection__ execution flow, but the notation above uses each clause’s distinctive name. An alternate notation might be as follows:
 
 ```vb
 Select X – 2 >
@@ -197,7 +197,7 @@ In diagram notation, the __Selection__ procedure with all its clauses looks like
 
 The amount of __If__ groups can vary. I’ve notated three of them in the diagram above.
 
-All clauses are procedure references provided to the selection procedure as parameters when you call it. For that, the diagram for a call to the Selection procedure would look like this:
+All clauses are procedure references provided to the selection procedure as parameters when you call it. For that, the diagram for a call to the Selection procedure might look like this:
 
 ![](images/6.%20Execution%20Control%20Ideas.002.png)
 
@@ -724,7 +724,7 @@ Apart from executing a sequence of calls linearly, you can alter the course of t
 
 A clause is like a procedure itself. For that you can see execution control as selecting which procedure might be called next. Or actually which clause might be called next.
 
-First explain that a control statement controls which call is made next. They are responsible for the arbitrarily in execution. Otherwise there would be just one way a program can execute from start to beginning and that’s that, but execution control sees to it that there is variation in the execution of a program.
+First explain that a control statement controls which call is made next. They are responsible for the arbitrarily in execution. Otherwise there might be just one way a program can execute from start to beginning and that’s that, but execution control sees to it that there is variation in the execution of a program.
 
 In one compiler optimization technique it is these execution flow statements that are analysed. Execution control statements make execution variable and this compiler technique analyses how variable that actually is. Maybe the execution control might not be reached with too many different values, let’s say, two values. In that case you might consider removing the variation in execution by making two procedures one of which is one situation of the execution flow statement and the other one is the other situation of the execution flow statement. At calls to the execution flow statement or indirect calls to it, you insert the variation that applies right there.  
 \>

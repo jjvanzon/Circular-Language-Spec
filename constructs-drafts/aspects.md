@@ -20,7 +20,7 @@ __Contents__
 
 #### Aspects
 
-The *aspect* construct might become important in Encircle, only it might not be implemented yet in future experiment 3.0. However, experiment 3.0 might be implemented in a way that the aspects construct might be added to it later. Aspects might be useful enough to do this. In order to feel comfortable about this, I would like to know more about aspects, so I might work out a preliminary, brainstorm-style design here.
+The *aspect* construct might become important in Encircle, only it might not be implemented yet in future experiment 3.0. However, experiment 3.0 might be implemented in a way that the aspects construct might be added to it later. Aspects might be useful enough to do this. In order to feel comfortable about this, I might like to know more about aspects, so I might work out a preliminary, brainstorm-style design here.
 
 For this I might look into the experiment 0.9 code, in which I might see what aspects might need to be capable of and I might list out what you have to be able to define inside an aspect and then maybe I might get a picture of how this should look in a diagram.
 
@@ -34,7 +34,7 @@ Aspect dependency also means that another aspect might be implemented for the de
 Sometimes aspects just add extra methods to an object.  
 Perhaps the extra method might be part of the object itself. Perhaps it might become an extra interface of the object, perhaps it might become part of the object’s system interface and visible like an extra system aspect. I dunno, that is not the most important.
 
-The idea is that you can apply aspects to an existing system. Does the existing system decide to use the aspect or does the user of the system choose to apply an aspect? The problem with the last thing is that this might harm the interface of the original object. The solution would be to use inheritance to keep the original interface in tact and only specialize the object adding more aspects. This would be something for system inheritance, which does have a functional definition which is still open to discussion.
+The idea is that you can apply aspects to an existing system. Does the existing system decide to use the aspect or does the user of the system choose to apply an aspect? The problem with the last thing is that this might harm the interface of the original object. The solution might be to use inheritance to keep the original interface in tact and only specialize the object adding more aspects. This might be something for system inheritance, which does have a functional definition which is still open to discussion.
 
 So an aspect can add members to an existing object, to an existing object’s system interface and add pre- and post- extensions to methods of an object, or methods added by other aspects.
 
@@ -104,7 +104,7 @@ Aspects,
 
 The amount of referrers of a __Number__ *object* may be small, but the amount of referrers of the __Number__ *class* is humongous. The class might even have a __Referrers__ list, when the class is not a created object, because __Referrers__ applies to both symbols and objects.
 
-You would want to turn the __Referrers__ aspect *off* for the __Number__ class and *on* for __Number__ objects. But the problem here is, that a class is a blueprint for an object. An object only supports __Referrers__, because the *class* supports it.
+You might want to turn the __Referrers__ aspect *off* for the __Number__ class and *on* for __Number__ objects. But the problem here is, that a class is a blueprint for an object. An object only supports __Referrers__, because the *class* supports it.
 
 The first solution proposed was to simply not support the __Referrers__ aspect for classes that are widely used. But then __Referrers__ might by *not* be supported for widely used classes. That is against the idea of supporting the __Referrers__ aspect by default.
 
@@ -140,7 +140,7 @@ Aspects mostly operate using the reflective data. The fact that aspects they ope
 
 Some things that in other programming languages are considered fundamental coding principles, can be implemented as an aspect in Encircle. Examples of this are: parameters, enums, events, type safety, inheritance. (There are even things called fundamental in other programming languages, that are considered mere plug-in modules in Software System, such as basic math.)
 
-So expressing the system in text code is considered an aspect built on top of the principles already offered by the code base. We would be lost without actually expressing computer code, but eventually the code runs without it, only it can’t be written by a human being if it wasn’t for expression.
+So expressing the system in text code is considered an aspect built on top of the principles already offered by the code base. We might be lost without actually expressing computer code, but eventually the code runs without it, only it can’t be written by a human being if it wasn’t for expression.
 
 -----
 
@@ -162,7 +162,7 @@ JJ
 
 #### Aspects & Principles
 
-An aspect is a piece of software that can be applied to *any* existing object or system. A clear characteristic of it is that it operates using the reflective data of an object or system. This makes it possible for features of software that would otherwise be intrinsic to the program, to be plugged into any existing system.
+An aspect is a piece of software that can be applied to *any* existing object or system. A clear characteristic of it is that it operates using the reflective data of an object or system. This makes it possible for features of software that might otherwise be intrinsic to the program, to be plugged into any existing system.
 
 If something is an intrinsic part of a system and it can’t be replaced by a module operating on reflective data only, it is not called an aspect, but a Principle. The word Principle expresses a stronger being bound to it, than the word Aspect. A Principle is an intrinsic aspect that can not be applied through any extensible model. The word Aspect expresses something general, that can be *applied* to anything.
 
@@ -201,7 +201,7 @@ Aspects can extend system commands with more code, through pre-extension, post-e
 
 Aspects / Aspects,
 
-An application of this new model, that is my software system, would be
+An application of this new model, that is my software system, might be
 for instance, that someone comes up with something that makes any lengthy
 process pauzable, items in it skippable, etcetera. Just a handy aspect
 for handling lengthy processes.

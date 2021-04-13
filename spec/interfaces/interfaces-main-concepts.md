@@ -146,7 +146,7 @@ Traditional inheritance is related to the concept of interfaces. What happens is
 
 ![](images/1.%20Interfaces%20Main%20Concepts.012.png)
 
-So because the triangle has an externally defined class (dashed line) instead of an externally defined interface (dotted line) the situation turns from implicit interface into classic inheritance. In the situation above one object inherits from another object. Expressing it more like one class inheriting from another class it would look as follows:
+So because the triangle has an externally defined class (dashed line) instead of an externally defined interface (dotted line) the situation turns from implicit interface into classic inheritance. In the situation above one object inherits from another object. Expressing it more like one class inheriting from another class it might look as follows:
 
 ![](images/1.%20Interfaces%20Main%20Concepts.013.png)
 
@@ -224,7 +224,7 @@ The last symbol may eventually *define* the interface, but it is still __Interfa
 
 ### Interface Referencing and Redirecting
 
-This article contains examples of what different interface referencing and redirecting situations would look like in a diagram and what name we could give to this situation.
+This article contains examples of what different interface referencing and redirecting situations might look like in a diagram and what name we could give to this situation.
 
 #### Interface Reference
 

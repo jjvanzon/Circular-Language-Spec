@@ -64,7 +64,7 @@ So in the expression in a diagram, you see a loop, that has the command to loop 
 
 The __Exit Loop__ statement is a loop-related jump. It is a jump that is only performed inside a loop.
 
-__Exit Loop__ omits all repetitions, that would have followed and immediately ends the complete loop.
+__Exit Loop__ omits all repetitions, that might have followed and immediately ends the complete loop.
 
 __Exit Loop__ is a jump to the __Command End__ of the loop command. The __Command End__ of a command is a reference to the next command to run, so the normal order that follows after the loop continues.
 

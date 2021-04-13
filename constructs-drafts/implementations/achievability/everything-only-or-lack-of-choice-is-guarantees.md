@@ -20,15 +20,15 @@ When you turn the aspects into separate modules, that have a dependency, optiona
 
 -----
 
-In future experiment 3.0, the aim would be that the system might be extensible with aspects, a lot more aspects might be created than in previous versions. In experiment 0.9 all once programmed aspects were there, all of them could be turned on or off independently, but none could easily be added.
+In future experiment 3.0, the aim might be that the system might be extensible with aspects, a lot more aspects might be created than in previous versions. In experiment 0.9 all once programmed aspects were there, all of them could be turned on or off independently, but none could easily be added.
 
 An old argument for Everything Only in experiment 0.9:
 
-- Why would I not want to have everything in it? Wouldn't I miss something at some unsuspected point, where I'd go: gee, did I optimize that one out?
+- Why might I not want to have everything in it? Wouldn't I miss something at some unsuspected point, where I'd go: gee, did I optimize that one out?
 
 In future experiment 3.0 it might become easier to turn on extra aspects later, so it might not be a valid argument anymore, that you might miss something at some unsuspected point. In experiment 0.9 the aspects could not easily be turned on later, because they were embedded in the code generator.
 
-In former experiments of Encircle, the principle of Everything Only might have caused performance problems, because all aspects would then be turned on at once, but in future experiment 3.0 any aspect might *be* optional, so this performance problem might not apply anymore.
+In former experiments of Encircle, the principle of Everything Only might have caused performance problems, because all aspects might then be turned on at once, but in future experiment 3.0 any aspect might *be* optional, so this performance problem might not apply anymore.
 
 ### Loose Ideas
 

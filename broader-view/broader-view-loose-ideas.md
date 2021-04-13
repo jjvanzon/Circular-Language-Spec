@@ -298,7 +298,7 @@ Encircle,
 2008-09-02
 
 Google using a separate process for each tab in its Google Chrome browser, is just a practical solution, relatively easy to implement.
-That's why process isolation offers a solution to this problem. It is not, that with more effort, a not-yet existing solution to this problem, that does not use the isolation of processes, would not offer a better or equally practical solution, would products like that be finished today and free to use.
+That's why process isolation offers a solution to this problem. It is not, that with more effort, a not-yet existing solution to this problem, that does not use the isolation of processes, might not offer a better or equally practical solution, might products like that be finished today and free to use.
 
 JJ
 

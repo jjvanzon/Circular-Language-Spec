@@ -139,7 +139,7 @@ More Ideas
 Type Control,
 2008-10-20
 
-Strong typing is no more, than a binary format with type checking around it. It also gives you a nice autocomplete list in your programming environment. The type checking is only a restriction imposed by the compiler: the compiler, even though it could compile, refuses to compile, when something against the rules is in the code. But it could compile, but it just refuses to do it. If it would compile the program anyway, then a runtime error could occur when the type is wrongly used in the code. You can easily make a program compile with the 'error' in it, by giving the object a generic type. That takes away the strong typing, which basically only takes away checks, that the compiler performs.
+Strong typing is no more, than a binary format with type checking around it. It also gives you a nice autocomplete list in your programming environment. The type checking is only a restriction imposed by the compiler: the compiler, even though it could compile, refuses to compile, when something against the rules is in the code. But it could compile, but it just refuses to do it. If it might compile the program anyway, then a runtime error could occur when the type is wrongly used in the code. You can easily make a program compile with the 'error' in it, by giving the object a generic type. That takes away the strong typing, which basically only takes away checks, that the compiler performs.
 
 Strong typing is just a helper, not a mandatory thing. Computer systems can function without it. It is just an extra. It is just something that rules out certain mistakes a programmer can make.
 
@@ -445,7 +445,7 @@ One one hand you can a see using the supported interface as a silent extension o
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.037.jpeg)
 
-But on the other hand it’s not like that, because that would mean that __Object A__ gets __Type B__. It still has __Type A__ however. When __Object A__ is created, an object of __Type A__ is is created, not __Type B__. But __Object A__ can only call upon the members of __Interface A__.
+But on the other hand it’s not like that, because that might mean that __Object A__ gets __Type B__. It still has __Type A__ however. When __Object A__ is created, an object of __Type A__ is is created, not __Type B__. But __Object A__ can only call upon the members of __Interface A__.
 
 ###### Object Shows Only Used Interface Implementation
 

@@ -37,7 +37,7 @@ If a system command is not about establishing a connection between symbols, the 
 
 ![](images/4.%20Connectors%20&%20Connections.004.png)
 
-But then more like a loose end, because an unconnected line is displayed at the end of the (potential) __New__ call. An actual __New__ call would look like this:
+But then more like a loose end, because an unconnected line is displayed at the end of the (potential) __New__ call. An actual __New__ call might look like this:
 
 ![](images/4.%20Connectors%20&%20Connections.005.png)
 

@@ -471,7 +471,7 @@ Point  .  Lines ( as point B )  [  2  ]
 ```
 Structure  .  Classes  (  "Class"  )  .  Related Classes  .  Add  (  Structure  . Classes  (  "...
 
-'This would traverse the Related Classes if the  Relation Class  -->  Class  
+'This might traverse the Related Classes if the  Relation Class  -->  Class  
 'relation was dual and Relation Class has the derived attribute Other Relation 
 'Class:
 
@@ -1224,7 +1224,7 @@ Method Object . Method (Word: Argument 1, Double Word: Argument 2 ) Real 32: Ret
 
 Since I’m working with multiple arguments as well as multiple return values, I may as well use a separate argument type that is both an argument as well as a return value (not to be mistaken for a reference argument).
 
-Arguments are then In parameters. Return values are Out parameters. The last type described would be InOut parameters, more nicely called Thru (Through) parameters.
+Arguments are then In parameters. Return values are Out parameters. The last type described might be InOut parameters, more nicely called Thru (Through) parameters.
 
 You could also say Read, Write and Read/Write, but this creates ambiguity about who’se reading or writing: the caller or the procedure.
 

@@ -80,7 +80,7 @@ A list object can also take over the interface of another list, and specify its 
 
 This is called list interface inheritance.
 
-So the ‘normal’ appearance of the nonagon would be what is the most intuitive behavior of a list: not to express primarily that the list is also just an object: that is internal behavior, hidden away in the system interface. So the class line of a nonagon should express the class that the items should have.
+So the ‘normal’ appearance of the nonagon might be what is the most intuitive behavior of a list: not to express primarily that the list is also just an object: that is internal behavior, hidden away in the system interface. So the class line of a nonagon should express the class that the items should have.
 
 Lastly, it is also possible to have a list of lists:
 

@@ -12,7 +12,7 @@ I have not taken into account in Symbol, that some objects need to be locked, to
 
 -----
 
-This could create trouble, when a method wasn’t locking all data that was its output. In that case it would be volatile data, that should not be rolled back, because it might have been changed by something else, and that something else would want to keep it changed. You could make it possible to see whether you were the last changer, so you could rollback changes you made yourself. >  
+This could create trouble, when a method wasn’t locking all data that was its output. In that case it might be volatile data, that should not be rolled back, because it might have been changed by something else, and that something else might want to keep it changed. You could make it possible to see whether you were the last changer, so you could rollback changes you made yourself. >  
 < I have a huge problem with locking now. I don’t know how to provide a good locking scheme for now. It is required to let the internet as a single computer function. >
 
 -----
@@ -72,5 +72,5 @@ I have the idea that the number of situations of working with data are limited a
 How can you alter a method at the same time?  
 Didn’t I at some point decide that when multiple users alter the same data, they should be communicating about it? Yes they should, unless it’s accepted that the data is that volatile.
 
-A user can lock some data. That would be handy, so there might be no intruders.  
+A user can lock some data. That might be handy, so there might be no intruders.  
 An object is also a user. It can also lock data. But unless he locks it, it can change at any time.

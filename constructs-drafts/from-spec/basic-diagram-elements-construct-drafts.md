@@ -23,7 +23,7 @@ If there is nothing to point to, while there is an aspect to express visually, t
 
 __This IS the text that lead me to wanting a diamond symbol instead of a call line.__
 
-< Why not, actually? Ok, you can’t do it in other languages, but why can’t you do it here. Oh. When you reference a call, it makes the call line function as a reference line rather than a call line. If you want this to be different, a reference to call would become a call, which is not something you want to happen in your system. The reference target would get control over if the source might be a reference or if the source might execute. The source would have no say in that. Unacceptable. So, a candidate for an alternative rule for A Call Can’t be Called or Referenced is: if you reference a call, its call line is treated as a reference line.   
+< Why not, actually? Ok, you can’t do it in other languages, but why can’t you do it here. Oh. When you reference a call, it makes the call line function as a reference line rather than a call line. If you want this to be different, a reference to call might become a call, which is not something you want to happen in your system. The reference target might get control over if the source might be a reference or if the source might execute. The source might have no say in that. Unacceptable. So, a candidate for an alternative rule for A Call Can’t be Called or Referenced is: if you reference a call, its call line is treated as a reference line.   
 If you call the reference to a call… 
 
 Een call line is eigenlijk een reference line, maar als de parent square execute, dan execute ook de call. Hmmm… het is bijna of het allemaal reference lines zijn en sommige squares executen nou eenmaal. O! Dat is ook zo! Clauses moeten ook kunnen executen en ik zeg nu dat iets alleen execute als het een call line heeft! Hmmm… o, een call is een tag, niet een line!
@@ -65,7 +65,7 @@ For a procedure symbol to function as a reference and not as an execution is not
 
 Ok, if I wanted it so that an object symbol could only function as a type, but not as an object, I should reserve a separate shape for it. But that doesn’t mean that an object shape can’t serve as a type. An execution shape can serve as the definition too.
 
-It’s important for some procedure symbols not to function as an execution. Otherwise the system would behave complete different. It’s not as important for an object symbol not to function as an object, only as a type. The system isn’t really harmed as severely by that. The same goes for triangles: if a triangle is suddenly a circle, the system behaves completely differently.
+It’s important for some procedure symbols not to function as an execution. Otherwise the system might behave complete different. It’s not as important for an object symbol not to function as an object, only as a type. The system isn’t really harmed as severely by that. The same goes for triangles: if a triangle is suddenly a circle, the system behaves completely differently.
 
 I’m still in doubt. I think it’s good that there’s a diamond symbol and that there aren’t separate object, type and interface shapes. I just can’t define *why* yet.
 

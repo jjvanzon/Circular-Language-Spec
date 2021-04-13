@@ -265,7 +265,7 @@ Explicit display of __Get__ and __Set__ arguments is hardly ever used, because t
 |            Object Get `<=`           |
 |            Object Set `=>`           |
 
-You would only use explicit display of __Get__ and __Set__ arguments in abstract diagram expression when you just want to make a point.
+You might only use explicit display of __Get__ and __Set__ arguments in abstract diagram expression when you just want to make a point.
 
 ### Explicit Display of Assignment
 

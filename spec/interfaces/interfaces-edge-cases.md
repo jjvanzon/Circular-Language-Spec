@@ -71,7 +71,7 @@ However, the concept of *relations* can make interfaces unreliable.
 
 Relations are bidirectional. When something points to something else, the other thing points back. This causes extra members to be dynamically added to the interface of another object. The interface of one object changes when other objects start pointing to it.
 
-The benefits from bidirectional relations are too important to rid of. They solve a difficult fundamental problem in computer technology. A lot of times you want to know whether an object is still used and what specifically still uses this object. In computer systems today this is often difficult to find out. Knowing all backward connections all the time would solve this problem.
+The benefits from bidirectional relations are too important to rid of. They solve a difficult fundamental problem in computer technology. A lot of times you want to know whether an object is still used and what specifically still uses this object. In computer systems today this is often difficult to find out. Knowing all backward connections all the time might solve this problem.
 
 Bidirectional relations also see to it that when a command has a parameter, the command is immediately available from any object that the command could be executed on.
 

@@ -61,7 +61,7 @@ Because assignments might occur commonly, an implicit, simplified notation is su
 |                        *The result might be:*                         |
 |                  ![](images/2.%20Assignment.008.png)                  |
 
-In this assignment notation the line type (dashed, wavy) might indicate which aspect would be yielded over.
+In this assignment notation the line type (dashed, wavy) might indicate which aspect might be yielded over.
 
 ![](images/2.%20Assignment.009.png)
 
@@ -69,7 +69,7 @@ The access mark (the smaller line crossing the longer line) might indicate direc
 
 ![](images/2.%20Assignment.010.png)
 
-The diamond shape in the middle would symbolize a call to an assignment command.
+The diamond shape in the middle might symbolize a call to an assignment command.
 
 ![](images/2.%20Assignment.011.png)
 
@@ -122,12 +122,12 @@ There used to be an idea to flip the indication of direction in assignment notat
 | __Get Object `=>` <br> Set Object `<=`__ |
 |          (opposite direction)            |
 
-Access marks seem to indicate direction in this language. It may make sense that the access mark might indicate the assignment direction and that the assignment direction means from source to destination. But what might make less sense is when the result of the assignment would seem to be in the opposite direction of the assignment direction:
+Access marks seem to indicate direction in this language. It may make sense that the access mark might indicate the assignment direction and that the assignment direction means from source to destination. But what might make less sense is when the result of the assignment might seem to be in the opposite direction of the assignment direction:
 
 *Result of the assignment*  
 ![](images/2.%20Assignment.019.png)
 
-Perhaps it can be imagined seeing live changes in a diagram, assignment calls be executed live, seeing their effect, it would perhaps not be so intuitive when lines would seem to flip direction so many times.
+Perhaps it can be imagined seeing live changes in a diagram, assignment calls be executed live, seeing their effect, it might perhaps not be so intuitive when lines might seem to flip direction so many times.
 
 That is why the suggestion was made to make the assignment look more like the direction of the result:
 
@@ -142,7 +142,7 @@ The idea to put the mark at the opposite end, might have some intuitivity to it,
 | __Get Value `=>` <br> Set Value `<=`__ |
 |         *(opposite direction)*         |
 
-Since this would sort of indicate the direction of the flow of the data. But the price of inconsistency might not be worth that intuitivity, and might actually be less intuitive.
+Since this might sort of indicate the direction of the flow of the data. But the price of inconsistency might not be worth that intuitivity, and might actually be less intuitive.
 
 |  ![](images/2.%20Assignment.003.png)   |
 |:--------------------------------------:|
@@ -169,14 +169,14 @@ In the past there was the idea, that value lines might always mean assignment. S
 
 But this might conflict with wanting to express value assignment and value correspondence distinctly and be consistent with the rest of the language.
 
-Then again: if value correspondence would have a direction (indicated with an access mark), what else could it mean but a value assignment?
+Then again: if value correspondence might have a direction (indicated with an access mark), what else could it mean but a value assignment?
 
 *Value assignment?*  
 ![](images/2.%20Assignment.024.png)
 
 So there still seems to be some doubt around the idea. A choice was made to make a notation leading with less implicit rules and more equal ways of symbolizing things across the language.
 
-A line would mean correspondence:
+A line might mean correspondence:
 
 ![](images/2.%20Assignment.025.png)
 

@@ -14,7 +14,7 @@ __Contents__
 - [Object Reference with a Class](#object-reference-with-a-class)
 - [Object Reference without a Class](#object-reference-without-a-class)
 - [No Class != Defines its own Class?](#no-class--defines-its-own-class)
-- [Object Reference would define its Own Class?](#object-reference-would-define-its-own-class)
+- [Object Reference might define its Own Class?](#object-reference-might-define-its-own-class)
 - [Shape Both Dashed and Solid](#shape-both-dashed-and-solid)
 - [Conclusion](#conclusion)
 
@@ -28,17 +28,17 @@ But an object might also select another object to serve as its *class* or *proto
 
 ![](images/Classes.002.png)
 
-What a *class* means may be explained later. The object on the left would point at its class on the right. The dashed line between the circles would express pointing out a *class*. The one circle's being dashed might be optional.
+What a *class* means may be explained later. The object on the left might point at its class on the right. The dashed line between the circles might express pointing out a *class*. The one circle's being dashed might be optional.
 
-When an object would have a class, the contents of that object may not be arbitrary:
+When an object might have a class, the contents of that object may not be arbitrary:
 
 ![](images/Classes.003.png)
 
 The object on the left may have similar contents as the class on the right. At first an object may contain related items and related lists that roughly correspond with the class. The object might also have a similar set of commands as the class.
 
-An idea would be that an object's behavior during its lifetime might be guided by rules set by this class. A class would be like a special object, that aims to describe characteristics and behavior of other objects.
+An idea might be that an object's behavior during its lifetime might be guided by rules set by this class. A class might be like a special object, that aims to describe characteristics and behavior of other objects.
 
-Initially an object may look the same as its class. Changeable parts of an object might initially be set to what would be drawn out in the class:
+Initially an object may look the same as its class. Changeable parts of an object might initially be set to what might be drawn out in the class:
 
 ![](images/Classes.004.png)
 
@@ -54,7 +54,7 @@ In these diagrams an object might be used as a class or prototype for another ob
 
 ![](images/Classes.006.png)
 
-The object on the left would have the class on the right. An object’s pointing out its class, could be called *class redirection*. The usage of the dashed line would have a meaning here. *Dashed lines* would symbolize *classes*.
+The object on the left might have the class on the right. An object’s pointing out its class, could be called *class redirection*. The usage of the dashed line might have a meaning here. *Dashed lines* might symbolize *classes*.
 
 ### Using Dashed Shapes
 
@@ -64,7 +64,7 @@ The object on the left would have the class on the right. An object’s pointing
 
 But using dashed *shapes* might be optional. 
 
-Here an object would be used as another object’s class:
+Here an object might be used as another object’s class:
 
 ![](images/Classes.006.png)
 
@@ -78,17 +78,17 @@ Other parts of the static (or 'class') structure might be drawn with dashed line
 
 ![](images/Classes.009.png)
 
-The rules do not seem to be that precise when it comes to shapes drawn with different line styles. The rules for pointing lines might be a bit stricter: dashed would point out a class.
+The rules do not seem to be that precise when it comes to shapes drawn with different line styles. The rules for pointing lines might be a bit stricter: dashed might point out a class.
 
 ### Using an Object as a Class
 
-Perhaps it might be familiar that an object would be stable in its role as a prototype or class. Dashed shape notation might be helpful as more specific in meaning: to indicate that it might just be a class.
+Perhaps it might be familiar that an object might be stable in its role as a prototype or class. Dashed shape notation might be helpful as more specific in meaning: to indicate that it might just be a class.
 
 To express an object's stable role as a class, a dashed line might be used to draw its symbol:
 
 ![](images/Classes.010.png)
 
-Here is a picture that would include an object circle with a class redirection:
+Here is a picture that might include an object circle with a class redirection:
 
 ![](images/Classes.008.png)
 
@@ -102,7 +102,7 @@ With object references to a class, a type might be referenced like an object.
 
 ![](images/Classes.012.png)
 
-That the line in the middle would be *solid* would mean it is an object reference.
+That the line in the middle might be *solid* might mean it is an object reference.
 
 Or possibly this expresses it neatly:
 
@@ -114,25 +114,25 @@ Similar to an *object* might have a class, an *object reference* might also have
 
 ![](images/Classes.014.png)
 
-The object reference on the left would point out its class on the right. The object at the bottom would also point out its class on the right. The solid line might be ok for the object reference to point to the object, since they seem to have the same class.
+The object reference on the left might point out its class on the right. The object at the bottom might also point out its class on the right. The solid line might be ok for the object reference to point to the object, since they seem to have the same class.
 
 ### Object Reference without a Class
 
-When an object reference would not have a class, this might suggest the possibility to point to *any* object.
+When an object reference might not have a class, this might suggest the possibility to point to *any* object.
 
 ![](images/Classes.015.png)
 
-The 'untyped' object reference at the top-left might point to an object of any class. It seems to point to an object at the bottom, which appears to have a class, that the'untyped' object reference would not specifically refer to.
+The 'untyped' object reference at the top-left might point to an object of any class. It seems to point to an object at the bottom, which appears to have a class, that the'untyped' object reference might not specifically refer to.
 
 An interpretation might be that an 'untyped' object reference could take on the class of an object it may point to. So indirectly it might have a class.
 
 ### No Class != Defines its own Class?
 
-Something might have been unclear at one point. Objects might be usable as classes. It may be tempting to think that an object *without* a class would define *its* *own* class. It might be handy to not think of it that way, but think of it as object without a class simply not having a class. Having no class might suggest something would be arbitrary.
+Something might have been unclear at one point. Objects might be usable as classes. It may be tempting to think that an object *without* a class might define *its* *own* class. It might be handy to not think of it that way, but think of it as object without a class simply not having a class. Having no class might suggest something might be arbitrary.
 
 There may be examples where this might be a helpful concept.
 
-### Object Reference would define its Own Class?
+### Object Reference might define its Own Class?
 
 There may be other examples, but it might be unfortunate to think of an *object reference* as defining its own class. Because then the object reference may only point to … itself?
 
@@ -144,7 +144,7 @@ Instead of a 'stuck on itself' situation, it may be seen as an indication that s
 
 ### Shape Both Dashed and Solid
 
-It may be an idea that if a symbol serves as another object’s class, but also would be referenced like an object, the symbol might get a double border to maybe indicate its dual role as both an object and a class.
+It may be an idea that if a symbol serves as another object’s class, but also might be referenced like an object, the symbol might get a double border to maybe indicate its dual role as both an object and a class.
 
 ![](images/Classes.017.png)
 
@@ -162,4 +162,4 @@ The optional nature of the dashed shapes seems to leave things open to discussio
 
 ### Conclusion
 
-Hopefully this would give an impression of how class notation might be used in the Encircle language.
+Hopefully this might give an impression of how class notation might be used in the Encircle language.

@@ -13,7 +13,7 @@ Encircle,
 
 In the end, a summary / cheat sheet might be made of the coding concepts and diagram syntax.
 
-How about only giving the diagram syntax, if the coding concept actually has its own syntax, not when the diagram expression just functions a clarification of the concept. That would sum up all the syntaxes in a list, and then derived concepts and uses of a concept might be distinguished from the main concepts, that would actually introduce syntax rules.
+How about only giving the diagram syntax, if the coding concept actually has its own syntax, not when the diagram expression just functions a clarification of the concept. That might sum up all the syntaxes in a list, and then derived concepts and uses of a concept might be distinguished from the main concepts, that might actually introduce syntax rules.
 
 JJ
 

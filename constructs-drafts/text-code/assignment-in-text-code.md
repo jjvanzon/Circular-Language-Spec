@@ -138,7 +138,7 @@ o=->
 ```
 
 It can be pronounced ‘object is pointer to’.  
-In an actual text code line it would look like this:
+In an actual text code line it might look like this:
 
 ```
 A  o=->  B
@@ -156,7 +156,7 @@ c=->
 
 It can be pronounced ‘class is pointer to’.
 
-In an actual text code line it would look like this:
+In an actual text code line it might look like this:
 
 ```
 A  c=->  B
@@ -171,7 +171,7 @@ The textual symbol for an interface pointer assignment is:
     i=->
 
 It can be pronounced ‘interface is pointer to’.  
-In an actual text code line it would look like this:
+In an actual text code line it might look like this:
 
     A  i=->  B
 

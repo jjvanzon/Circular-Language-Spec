@@ -18,11 +18,11 @@ May be about how Encircle language might be used to express or model meaning fro
 
 - ### Attributes as Tree Layers
 
-    - When data that is not a tree, it may still be converted to a tree, when maybe selecting a *property* (or *attribute*), and would choose to make the attribute values the nodes in the tree layer. That way multiple attributes might be selected which is could form a subsequent layer in the tree. Like that an arbitrary tree structure might be chosen from otherwise 'flat' data.
+    - When data that is not a tree, it may still be converted to a tree, when maybe selecting a *property* (or *attribute*), and might choose to make the attribute values the nodes in the tree layer. That way multiple attributes might be selected which is could form a subsequent layer in the tree. Like that an arbitrary tree structure might be chosen from otherwise 'flat' data.
 
 - ### [Automatic Object Formation](automatic-object-formation.md)
 
-    - This is also a concept, that is considered to go too far for now. It is about automatically converting unorganized code and data into well-structured code and data, organizing it into objects, so that even when you would program something in an unstructured way, it can be automatically converted into a sound structure. This would be handy for trying to understand crap-code, or for reverse engineering compiled machine instructions, or to detect possible improvements to the structure of your code, maybe for deciphering the workings of a formed neural network. Maybe in the future you might not program in a structured way yourself anymore, but you just let the computer figure out the best way to structure the system. All in all, this goes too far for now, but it is something that needs to be thought through in the future.
+    - This is also a concept, that is considered to go too far for now. It is about automatically converting unorganized code and data into well-structured code and data, organizing it into objects, so that even when you might program something in an unstructured way, it can be automatically converted into a sound structure. This might be handy for trying to understand crap-code, or for reverse engineering compiled machine instructions, or to detect possible improvements to the structure of your code, maybe for deciphering the workings of a formed neural network. Maybe in the future you might not program in a structured way yourself anymore, but you just let the computer figure out the best way to structure the system. All in all, this goes too far for now, but it is something that needs to be thought through in the future.
 
 - ### [Extensive Classification with Interfaces](extensive-classification-with-interfaces.md)
     

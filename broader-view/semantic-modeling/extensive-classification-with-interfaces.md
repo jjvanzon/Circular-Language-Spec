@@ -34,7 +34,7 @@ Then, for instance, you can program classes that can then be used in J Sound as 
 
 I never really organized a system as such, but thinking in that way, does lead to extensibility.
 
-Perhaps several object classes could have physically the same attribute, so that an attribute can belong to multiple classes. Perhaps that should be part of inheritance, though. That would be less uncontrolled. (For instance the BackColor attribute can be part of multiple classes. Perhaps BackColor should be something they all centrally relate to.)
+Perhaps several object classes could have physically the same attribute, so that an attribute can belong to multiple classes. Perhaps that should be part of inheritance, though. That might be less uncontrolled. (For instance the BackColor attribute can be part of multiple classes. Perhaps BackColor should be something they all centrally relate to.)
 
 ### Mutual Commands, Mutual Interfaces
 
@@ -50,7 +50,7 @@ If you define an interface with a command in it, that has a certain class, perha
 One of the ideas behind this is idea is that objects, that have the same command, because they are both parameters of the command, have a joint interface, to create a relation. But really, they already have a relation, just an indirect relation, which is also a relation.
 
 This idea just does not work. It only works if you assume that a command definition is unchangeable and that class references to the same command actually have to be the same procedure, but it hasn’t. You can have a command referenced twice that has elements to it that can still be redefined.  
-When this would not be the case then yes an idea like objects with the same command have a mutual interface could work, but in dynamic circumstances that are possible in Encircle I just want to forget about it.
+When this might not be the case then yes an idea like objects with the same command have a mutual interface could work, but in dynamic circumstances that are possible in Encircle I just want to forget about it.
 
 #### A command is an interface
 
@@ -58,7 +58,7 @@ If multiple classes can support the same command, then the classes support the s
 
 ![](images/21.%20Mutual%20Commands,%20Mutual%20Interfaces%20(Unfinished).001.png)
 
-You don’t see triangles around the commands inside the circles, that would specify, that it is a separate interface: each command automatically becomes a separate interface. Just like each object also defines an interface; even though there is no triangle directly inside it, it still has an interface.
+You don’t see triangles around the commands inside the circles, that might specify, that it is a separate interface: each command automatically becomes a separate interface. Just like each object also defines an interface; even though there is no triangle directly inside it, it still has an interface.
 
 #### Multiple classes can support the same command
 

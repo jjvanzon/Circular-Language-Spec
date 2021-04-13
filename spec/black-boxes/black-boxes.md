@@ -91,7 +91,7 @@ An object’s public contents can be accessed by anything that has a reference t
 What other programming languages call class methods, Encircle calls friend commands of a class object.
 
 The object with private contents declares which other objects are its friends.  
-The friendship does not automatically go both ways: the *befriended* has access to the privates of the friend, but the friend does not have access to the privates of the befriended. For that you would have to establish a mutual friendship.
+The friendship does not automatically go both ways: the *befriended* has access to the privates of the friend, but the friend does not have access to the privates of the befriended. For that you might have to establish a mutual friendship.
 
 #### Friend Relations
 
@@ -252,7 +252,7 @@ Mutual friendship can be expressed as follows in a referential notation:
 
 #### Mutual Friendship Containment Notation
 
-Mutual friendship in a containment notation would look as follows:
+Mutual friendship in a containment notation might look as follows:
 
 ![](images/1.%20Black%20Boxes.015.png)
 
@@ -427,11 +427,11 @@ Here the difference is demonstrated between the notations of __Friend__ declarat
 The friend *declaration* is always shown directly *near* the befriended (the situation at the top).  
 The friend access *connector* is always a loose end (the situation in the middle): one end of it is not connected yet. It is a placeholder for possible connections. A friend *connection* (the situation at the bottom) *is* connected at both ends. But the access symbol is placed in front the parent of the target symbol. This is because you always access an object through the parent symbol. The parent symbol can impose access restrictions onto its child objects.
 
-If the friend connection would be an outward connection, no friend access mark would be displayed at all:
+If the friend connection might be an outward connection, no friend access mark might be displayed at all:
 
 ![](images/1.%20Black%20Boxes.031.png)
 
-The friend connection shown there is not really a *friend* connection either. It is just a *connection*, an outward *connection*, a *passive* connection. What a releaf that a passive connection does not require an access symbol at all, or it would have conflicted with our friend declaration notation, which looks a bit like an outward connection with an access mark displayed in it, but it is not an access mark; it is a friend declaration.
+The friend connection shown there is not really a *friend* connection either. It is just a *connection*, an outward *connection*, a *passive* connection. What a releaf that a passive connection does not require an access symbol at all, or it might have conflicted with our friend declaration notation, which looks a bit like an outward connection with an access mark displayed in it, but it is not an access mark; it is a friend declaration.
 
 #### Friend Get Connection
 
@@ -474,7 +474,7 @@ For the basics: see *Object-Bound & Reference-Bound* in the *System Interfaces* 
 
 #### Key Example: Value Get
 
-If the Value aspect were reference-bound and made read-only by a reference and you could still __Get__ the __Object__, you could assign the __Object__ to another reference and write the __Value__ there. Read-only protecting the __Value__ aspect would be non-waterproof and more like a *suggested* access control, rather than *real* access control. By realizing that the __Value__ aspect is object-bound, you can not make a read-only __Value__ aspect all of a sudden writable through another reference.
+If the Value aspect were reference-bound and made read-only by a reference and you could still __Get__ the __Object__, you could assign the __Object__ to another reference and write the __Value__ there. Read-only protecting the __Value__ aspect might be non-waterproof and more like a *suggested* access control, rather than *real* access control. By realizing that the __Value__ aspect is object-bound, you can not make a read-only __Value__ aspect all of a sudden writable through another reference.
 
 Reference-related aspects only count for a single reference and not for the whole object, and can be freely overridden by another reference. Object-bound aspects count for all references and can not be overridden by another reference.
 

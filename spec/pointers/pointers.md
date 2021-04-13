@@ -81,29 +81,29 @@ __Contents__
 
 #### Brainstorm
 
-The 'pointer-to-pointer' issues seemed to be a bit spread over the chapters. When a chapter would be explained, afterwards it seemed to evaluate how things could look in pointer-to-pointer situations. The idea is that all of those pointer-to-pointer situations might be put here in this chapter instead. Topics like objects, classes, interfaces, assignment, seem to able to live without thinking about pointer situations, and pointers just seems a single problem area that might be desirable to cover separately.
+The 'pointer-to-pointer' issues seemed to be a bit spread over the chapters. When a chapter might be explained, afterwards it seemed to evaluate how things could look in pointer-to-pointer situations. The idea is that all of those pointer-to-pointer situations might be put here in this chapter instead. Topics like objects, classes, interfaces, assignment, seem to able to live without thinking about pointer situations, and pointers just seems a single problem area that might be desirable to cover separately.
 
 It might be worth highlighting there may be different interpretations of pointers, lines and their direction. They seem to be non-competing. Here is an attempt to summarize some of them:
 
 - Interpretation 1:
-    - Line direction would not matter, only aspect correspondence would matter.
+    - Line direction might not matter, only aspect correspondence might matter.
 - Interpretation 2:
-    - Direction tends to point outwards, if inward, this would be denoted with an access symbol.
-    - The notational choice would be arbitrary and carry no special meaning.
+    - Direction tends to point outwards, if inward, this might be denoted with an access symbol.
+    - The notational choice might be arbitrary and carry no special meaning.
 - Interpretation 3:
-    - Directions tend to point outwards, if inward, this would be denoted with an access symbol, like previously.
-    - Inward directions would actually be more 'active' redirections/accesses: Pointer-to-pointer redirections, getter accesses, calls to procedures returning an object, etc.
-    - Outward directions, would be more passive. They might represent 'simple' pointers, not represent getter calls or anything, more like indications of aspect correspondence.
+    - Directions tend to point outwards, if inward, this might be denoted with an access symbol, like previously.
+    - Inward directions might actually be more 'active' redirections/accesses: Pointer-to-pointer redirections, getter accesses, calls to procedures returning an object, etc.
+    - Outward directions, might be more passive. They might represent 'simple' pointers, not represent getter calls or anything, more like indications of aspect correspondence.
 - Interpretation 4:
-    - All symbols would be pointers, kind of like in some languages objects might be accessed through singly-redirected object references (C# assumably).
+    - All symbols might be pointers, kind of like in some languages objects might be accessed through singly-redirected object references (C# assumably).
 - Interpretation 5:
-    - There would be one symbol in the diagram, that represents the actual object, not a pointer to it.
+    - There might be one symbol in the diagram, that represents the actual object, not a pointer to it.
     - It might be found by first following all outward redirections, then all the inward ones.
     - Where it ends, might be the 'target' symbol: The actual target of the redirections that might be said to be represent the actual object, rather than just a reference to it.
 
 #### Brainstorm Ref-Ness
 
-Another topic that might be covered, is a comparison with other languages (even though one of the strategic items is to not try and compare so much in this text, with the idea that 'where would it end?') An exception to the rule could be made here to add a comparison to other language's ref-ness, because Encircle seems to be 'make a mockery' of the concept ref-ness in a way. C# or C++ seem to be specific about ref-ness. (C++ might make you specify asterisks \*\* to indicate how many redirections a pointer variable makes; C# and .NET seem to assign intrinsic importance to defining parameters as ref or out and what other 'ref-nesses' have you? Anyway, they seem quite specific.) Encircle however, seems to make a 'mockery' out of this, because all you need to do is add a line and the ref-ness changes. And the ref-ness does not seem to be specified near the start of the pointer redirection, but you might arbitrarily let redirections be added by the thing you are pointing to. 'mockery' is a meant a bit humoristically here, of course. It is just a notation. If the diagrams might represent something from C#, rules are probably just bound by what you can do in C#. You simply might not be able to add more redirections, or might not validly specify something with not enough redirection. Getter accesses in C# might actually be C#'s own embodiment of indeterminate ref-ness. Or depending how lightly you might want to apply the diagram language, it might not really matter that much, this ref-ness issue and these diagrams. But what might become a splinter in your brain, is that Encircle does not seem to have a notation (yet) to specify fixed ref-ness. And what might rub some against the fur, is that Encircle seems to like indeterminate ref-ness while some might hold determinate ref-ness in great value perhaps. The notion that there are these ideas about that, might justify thinking about it and perhaps describing a way to elegantly solve it or perhaps find a way to live with things the way they are.
+Another topic that might be covered, is a comparison with other languages (even though one of the strategic items is to not try and compare so much in this text, with the idea that 'where might it end?') An exception to the rule could be made here to add a comparison to other language's ref-ness, because Encircle seems to be 'make a mockery' of the concept ref-ness in a way. C# or C++ seem to be specific about ref-ness. (C++ might make you specify asterisks \*\* to indicate how many redirections a pointer variable makes; C# and .NET seem to assign intrinsic importance to defining parameters as ref or out and what other 'ref-nesses' have you? Anyway, they seem quite specific.) Encircle however, seems to make a 'mockery' out of this, because all you need to do is add a line and the ref-ness changes. And the ref-ness does not seem to be specified near the start of the pointer redirection, but you might arbitrarily let redirections be added by the thing you are pointing to. 'mockery' is a meant a bit humoristically here, of course. It is just a notation. If the diagrams might represent something from C#, rules are probably just bound by what you can do in C#. You simply might not be able to add more redirections, or might not validly specify something with not enough redirection. Getter accesses in C# might actually be C#'s own embodiment of indeterminate ref-ness. Or depending how lightly you might want to apply the diagram language, it might not really matter that much, this ref-ness issue and these diagrams. But what might become a splinter in your brain, is that Encircle does not seem to have a notation (yet) to specify fixed ref-ness. And what might rub some against the fur, is that Encircle seems to like indeterminate ref-ness while some might hold determinate ref-ness in great value perhaps. The notion that there are these ideas about that, might justify thinking about it and perhaps describing a way to elegantly solve it or perhaps find a way to live with things the way they are.
 
 #### Target Objects
 
@@ -232,7 +232,7 @@ Sometimes no aspect of a reference is called upon, but there is worked directly 
 
 ##### Summary
 
-This would add the following aspect to the list of aspects:
+This might add the following aspect to the list of aspects:
 
 - __Reference__
 
@@ -681,7 +681,7 @@ Targets,
 2010-05
 
 - \> I do not know how it works yet. Now my mind says: follow all redirections, including multiple interface redirections… but in the Target Class story I stopped doing that. Maybe it is just what you want the term Target Interface to define. Maybe it is not even important. I don’t know.
-- \> Perhaps there should be a distinction between interface definition and target interface. I do feel that both the ‘follow only one class or interface step’ version is a concept to be aware of, but the target interface concept would actually be following all redirections to find the object that actually determines the publics.
+- \> Perhaps there should be a distinction between interface definition and target interface. I do feel that both the ‘follow only one class or interface step’ version is a concept to be aware of, but the target interface concept might actually be following all redirections to find the object that actually determines the publics.
 - \> Yes. What is now called Target Interface should probably be called the *Interface Object* and the *Target Interface* is the object after following all types of redirections in any order.
 
 JJ
@@ -697,7 +697,7 @@ I need a notation for explicitly referring to a pointer or to the class of an ob
 
 Do consider that the target object in a diagram really needs to represents the object. You should not think of it as an object reference, because that might make it harder to see through the system.
 
-\> 2020-06-13: Might it be an idea to consult the system interface to point to the class of an object symbol? So the system interface might show the class and that bit of the system interface might be shown, and an object reference would point to the class indication in the system interface? Something like that.
+\> 2020-06-13: Might it be an idea to consult the system interface to point to the class of an object symbol? So the system interface might show the class and that bit of the system interface might be shown, and an object reference might point to the class indication in the system interface? Something like that.
 
 ![](images/Pointers.044.png)
 

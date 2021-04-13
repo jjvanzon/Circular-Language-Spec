@@ -65,7 +65,7 @@ Access control determines what objects can see what content of another object.
 Content of an object, that can only be seen by the object itself is called private content of the object. Public content of the object is what can be seen from the outside by any other object.  
 But if one object decides things are visible to any other object, a parent object can decide to put more restrictions on the access, so that not all other objects can access the public contents of another object.
 
-I’ve often brainstormed about this. About making public and private not part of access control, because access control would be user bound and public and private would just be there to turn something into a black box. But if you approach users as objects with certain access privileges, you can make an analogy. Content accessible only to the object itself are private contents of an object. Content accessible to other objects are public content, but access to this content can be further restricted by a parent object.
+I’ve often brainstormed about this. About making public and private not part of access control, because access control might be user bound and public and private might just be there to turn something into a black box. But if you approach users as objects with certain access privileges, you can make an analogy. Content accessible only to the object itself are private contents of an object. Content accessible to other objects are public content, but access to this content can be further restricted by a parent object.
 
 Private and public do have more of a function as complexity-hiding.  
 But that is just another point to access control. Access control is not only there to make certain people not able to do certain things. It is also there for complexity-hiding, to make it easier on people, making sure they don’t see irrelevant details that obscure the picture.
@@ -121,7 +121,7 @@ Furthermore, you can separately control access by the user for two things:
 - WhenN.AddAndRemoveByUser
     - Controls whether a user can Add and Remove items in a related list.
 
-It is the intention for the programmer to be able to access control most procedures that would otherwise be __Public__ and also separately control access from the user interface to those procedures. Also, the programmer might be more able to leave out certain procedures altogether, like you can with the attribute __Get__ and __Set__. For instance, the __Add__, __Remove__ and __Clear__ methods in a =>n related list, should become separately access controllable as well as separately excluded.
+It is the intention for the programmer to be able to access control most procedures that might otherwise be __Public__ and also separately control access from the user interface to those procedures. Also, the programmer might be more able to leave out certain procedures altogether, like you can with the attribute __Get__ and __Set__. For instance, the __Add__, __Remove__ and __Clear__ methods in a =>n related list, should become separately access controllable as well as separately excluded.
 
 #### Read Only
 
@@ -130,7 +130,7 @@ It is the intention for the programmer to be able to access control most procedu
 
 #### Authorization
 
-Nothing has been thought of to control access for different users. That’s quite important, I think. This subject should be thought about. It would probably have to get a place in Access Control, for it *is* Access Control, but on a much different level than Public, Friend and Private.
+Nothing has been thought of to control access for different users. That’s quite important, I think. This subject should be thought about. It might probably have to get a place in Access Control, for it *is* Access Control, but on a much different level than Public, Friend and Private.
 
 #### Public Creatable Classes
 
@@ -233,7 +233,7 @@ Classes giving methods access to their private contents should be a form of acce
 
 #### Excluding Add, Remove or Clear from Programming Interface
 
-You can exclude the __Add__, __Remove__ and __Clear__ methods with the __HasAdd__, __HasRemove__ and __HasClear__ structure settings. You can also merely access control the __Add__, __Remove__ and __Clear__ methods. That way you can disallow calls to the procedures from outside your library or application, so only your application can __Add__, __Remove__ or __Clear__, but any program, that links to your application, can’t. That would be the situation when you give a method __Friend__ access. You can also make the method __Private__, in case of which only procedures within the list class itself can access the method. See the *Access Control* section for more on this subject.
+You can exclude the __Add__, __Remove__ and __Clear__ methods with the __HasAdd__, __HasRemove__ and __HasClear__ structure settings. You can also merely access control the __Add__, __Remove__ and __Clear__ methods. That way you can disallow calls to the procedures from outside your library or application, so only your application can __Add__, __Remove__ or __Clear__, but any program, that links to your application, can’t. That might be the situation when you give a method __Friend__ access. You can also make the method __Private__, in case of which only procedures within the list class itself can access the method. See the *Access Control* section for more on this subject.
 
 Consider access control of the system interface members.
 Perhaps you just have to talk about access control in the implementation articles of Coding Aspects and all.

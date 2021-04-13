@@ -39,7 +39,7 @@ However, coding aspects might be applying to the display of diagrams.
 -----
 
 For practical reasons, a triangle's purpose may have to be maintained. This does make the diagram not be an exact representation of ALL the systematics, so that sucks. The different purposes of the triangle may be base class, interface, group, joint access modifier, etcetera. I guess if you want to group members by different aspects, triangles might overlap. I already brainstormed about that some time in the past.  
-\> But overlap can be avoided by automatic containment? Couldn’t it? How would that look? It would create secondary references, won’t it?
+\> But overlap can be avoided by automatic containment? Couldn’t it? How might that look? It might create secondary references, won’t it?
 
 -----
 
@@ -68,7 +68,7 @@ Een Public interface zal er zijn, een Private interface base interfaces en dus i
 
 -----
 
-You CAN reduce the variety of things computers are applied for (flows of application of computer processes) to a set of standards, such as UML attempts to do. However, I think UML is very incomplete in that area. I would like to integrate diagrams of flows of application of computer processes in Symbol and make it integrate into the other kinds of diagram.
+You CAN reduce the variety of things computers are applied for (flows of application of computer processes) to a set of standards, such as UML attempts to do. However, I think UML is very incomplete in that area. I might like to integrate diagrams of flows of application of computer processes in Symbol and make it integrate into the other kinds of diagram.
 
 -----
 
@@ -84,7 +84,7 @@ Perhaps sometimes in Symbol diagrams, only the forward relation should be shown.
 And the backward relation should be implicitly there?  
 (not all relations are dual, though)
 
-Perhaps the fact that something is a forward or backward relation should be expressed by direction the way I do that already in symbol. Perhaps the containment structure should be derived looking at the relation direction also, and favor outward pointing? (highly disputable) For sy, you should first be looking at how to express a relational structure in an as simple matter as possible, before looking at how to express the object oriented part, and perhaps use elements to express relational, that were originally reserved for expressing OO. The thing about sy was to have an as simple but as explicit as possible expression of OO, because OO was the most important concept. Then it was important to me that all of the system could be expressed in Sy. But now it turned out relational is the most important concept. And now I have to again look first for the simplest and most explicit way to express relational. A dual relation should be expressed as a single line between two circles, I would say, in that case.
+Perhaps the fact that something is a forward or backward relation should be expressed by direction the way I do that already in symbol. Perhaps the containment structure should be derived looking at the relation direction also, and favor outward pointing? (highly disputable) For sy, you should first be looking at how to express a relational structure in an as simple matter as possible, before looking at how to express the object oriented part, and perhaps use elements to express relational, that were originally reserved for expressing OO. The thing about sy was to have an as simple but as explicit as possible expression of OO, because OO was the most important concept. Then it was important to me that all of the system could be expressed in Sy. But now it turned out relational is the most important concept. And now I have to again look first for the simplest and most explicit way to express relational. A dual relation should be expressed as a single line between two circles, I might say, in that case.
 
 -----
 
@@ -144,7 +144,7 @@ Informal line types:
 
 In that picture I also see, that I connect the two method interfaces inside the imaginary class definition to the method interfaces on the separate sites using interface lines. Theoretically that is not right: not only the interface of the symbols connected with an interface line is the same, the definition is the same, so theoretically they should be connected with class lines.  
 But I made them interface lines just for clarity, because it is all about interface definitions, and now all things about interface definitions are expressed in dotted lines, and all things about class definitions are expressed in dashed lines; it is just clearer this way.  
-But does this create an ambiguity? The interface line between the interface definition in the imaginary target class and te interface definition on a site, literally does mean, that only the interface of the two objects is the same: that means: the public contents of them is the same, but the private contents are different, which means the methods have the same interface, but they are different methods, with just the same signature. That’s not what I intended to express, though. The interfaces in the sites should even have been drawn with dotted lines either, because that would imply you are only using it as an interface, while really you’re using it as a definition.
+But does this create an ambiguity? The interface line between the interface definition in the imaginary target class and te interface definition on a site, literally does mean, that only the interface of the two objects is the same: that means: the public contents of them is the same, but the private contents are different, which means the methods have the same interface, but they are different methods, with just the same signature. That’s not what I intended to express, though. The interfaces in the sites should even have been drawn with dotted lines either, because that might imply you are only using it as an interface, while really you’re using it as a definition.
 
 The ‘wrong’ notation is just so much clearer, but it does not formally express the system correctly, because it implies two symbols only have the same interface, but really they have the same definition. But the ‘wrong’ notation of it is just so much clearer. I’m going to have to invent rules that make the ‘wrong’ notation formally ok, or the ‘right’ notation more clear.
 
@@ -198,7 +198,7 @@ JJ
 
 Diagram Expression,
 
-A special thing about the notation of definitions (command definitions, classes, interfaces, command interfaces) is, that it expresses all the POSSIBILITIES, to connect objects to each other. An OBJECT might only express the current situation the object might be in. The difference is visible in, that connections that are not yet made, ARE displayed as the possible connections, that can be made. Only if you for instance type something as a class, or USE something as a class, the possible connections are displayed. Heck, even for objects I would probably need to display the possible connections to make with it, in order to display all the connection points.
+A special thing about the notation of definitions (command definitions, classes, interfaces, command interfaces) is, that it expresses all the POSSIBILITIES, to connect objects to each other. An OBJECT might only express the current situation the object might be in. The difference is visible in, that connections that are not yet made, ARE displayed as the possible connections, that can be made. Only if you for instance type something as a class, or USE something as a class, the possible connections are displayed. Heck, even for objects I might probably need to display the possible connections to make with it, in order to display all the connection points.
 
 JJ
 
@@ -314,7 +314,7 @@ JJ
 Diagram Expression,  
 2009-10-22
 
-What if correspondence in value is what you would want to express. Then the wavy line would stop being an assignment, but start meaning correspondence in value. That would make things more consistent, and perhaps from a mutuality point of view, you would decide, that this is the way the language has to be.
+What if correspondence in value is what you might want to express. Then the wavy line might stop being an assignment, but start meaning correspondence in value. That might make things more consistent, and perhaps from a mutuality point of view, you might decide, that this is the way the language has to be.
 
 JJ
 

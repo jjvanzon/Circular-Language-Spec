@@ -62,7 +62,7 @@ Just like the public / private concept, you might set the *static* flag for each
 
 Usually you might make static data read-only to the objects, so that the objects can not change it. But objects can also get write access to static data. This is static data that is shared among objects, and can be changed by all objects.
 
-There is another type of static in other languages, which is data that can be accessed only through the class object, and not through instances. I do not like this type of static as much, because in my head I would create two objects to solve this: one with instance methods and one with utility methods. If we might have a way to specify this in Encircle, it would mean that each access connector can be made either accessible or inaccessible from instances.
+There is another type of static in other languages, which is data that can be accessed only through the class object, and not through instances. I do not like this type of static as much, because in my head I might create two objects to solve this: one with instance methods and one with utility methods. If we might have a way to specify this in Encircle, it might mean that each access connector can be made either accessible or inaccessible from instances.
 
 The idea for now is that each system command might be separately made static or dynamic.
 
@@ -177,7 +177,7 @@ Out of the original Symbol documentation
 
 < I need a story about where the code resides and that the code isn’t really part of module instances, types, objects or procedures. Those entities only complete the code with a copy of data. >
 
-his formulation may not be entirely true, but maybe wording like that could be used in the 'Static' explanation? For instance the idea that types could be changed live, and the contents of objects would simultaneously change:  
+his formulation may not be entirely true, but maybe wording like that could be used in the 'Static' explanation? For instance the idea that types could be changed live, and the contents of objects might simultaneously change:  
 Every symbol of the same type has the same contents. The type can be edited by editing either symbol and their contents might change simultaneously.
 
 ### Static and Creation

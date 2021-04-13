@@ -102,7 +102,7 @@ When the order of the commands should not be arbitrary or determined by input / 
 
 ![](images/4.%20Jumps.003.png)
 
-The first command to run is a command, that is nobody’s next statement, not even in the input, output dependency. In the diagram above, that would be __A__. The commands are executed in the order __A__, __B__, __C__. The fact, that __B__ is followed up by __A__ is displayed as an active reference from __A__ to __B__. But the active reference never returns to __A__ again. This is displayed as the active reference from __A__ to __B__’s being stuck to the end of __A__, so that if you follow the line to __B__ back to __A__, it does not enter back into A again: it does not return back into __A__.
+The first command to run is a command, that is nobody’s next statement, not even in the input, output dependency. In the diagram above, that might be __A__. The commands are executed in the order __A__, __B__, __C__. The fact, that __B__ is followed up by __A__ is displayed as an active reference from __A__ to __B__. But the active reference never returns to __A__ again. This is displayed as the active reference from __A__ to __B__’s being stuck to the end of __A__, so that if you follow the line to __B__ back to __A__, it does not enter back into A again: it does not return back into __A__.
 
 The diagram notation also looks like a call to the *end* of a command.  
 The diamond stuck to the border of a call is actually called the __Command End__, and is an *actual* reference to the next command, but then called in a special way.
@@ -161,7 +161,7 @@ Here is what a call looks like in a diagram.
 
 __Exit Command__ is a *jump*. A jump is a type of execution flow statement, explained by the article *Jumps*.
 
-__Exit Command__ immediately stops executing a command, leaving any output in any state it was in. Any order of commands, that would have followed, is omitted and the command ends right then and there. Execution returns to the command, that called the command that was just exited. __Return__ is a synonym for __Exit Command__.
+__Exit Command__ immediately stops executing a command, leaving any output in any state it was in. Any order of commands, that might have followed, is omitted and the command ends right then and there. Execution returns to the command, that called the command that was just exited. __Return__ is a synonym for __Exit Command__.
 
 The execution flow command __Exit Command__ takes a reference to the __Command End__ as a parameter. The __Command End__ is explained in the article *Normal Order*.
 

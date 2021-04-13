@@ -76,7 +76,7 @@ The main solution to converting a referential structure to a containment structu
 
 The circles are all objects. Object A for instance has two references: one to object B and one to object E. Two objects refer to object D: both object C and object E refer to object D.
 
-In an Encircle diagram, the references would look more like this:
+In an Encircle diagram, the references might look more like this:
 
 ![](images/3.%20Automatic%20Containment.002.png)
 
@@ -104,7 +104,7 @@ Regardless of which diagram you find prettier, the containment diagram does disp
 
 Multiple symbols in a diagram can represent the same object. In that aspect, a containment diagram does not explicitly express a single place where the object really is. It does not display where the *object* is, just where the object *references* are. Only one of the symbols should be considered the object itself, and the other symbols mere references.
 
-To determine the containment position of the actual object, you have to ask yourself: what would the *real* containment level of the object be? You might have to go upward in the containment hierarchy, until you find the level at which all the references are contained inside a single symbol. That is the actual containment level of the object:
+To determine the containment position of the actual object, you have to ask yourself: what might the *real* containment level of the object be? You might have to go upward in the containment hierarchy, until you find the level at which all the references are contained inside a single symbol. That is the actual containment level of the object:
 
 ![](images/3.%20Automatic%20Containment.005.png)
 
@@ -164,7 +164,7 @@ This is solved by connecting the symbols that represent the same object together
 
 But to have a single symbol, that represents the object itself, all symbols of the same object all need to point back to a single symbol. That single symbol represents the object itself. The other symbols are mere references to the object.
 
-But where is this object placed? You would have to go upward in the containment hierarchy, until you find the level at which all the references are contained inside a single symbol. That is the actual containment level of the object.
+But where is this object placed? You might have to go upward in the containment hierarchy, until you find the level at which all the references are contained inside a single symbol. That is the actual containment level of the object.
 
 ![](images/3.%20Automatic%20Containment.011.png)
 
@@ -223,7 +223,7 @@ The most important concept to explain first, is the physical location of an obje
 
 It turns out I was lying a bit, when I suggested that the target object totally depends on the specific perspective displayed by the diagram. That’s not entirely true. The true target object is stored on a physical storage device.
 
-But if all object references would directly point to the physical storage location of the object, things would turn into an unoverviewable bunch of wiring.
+But if all object references might directly point to the physical storage location of the object, things might turn into an unoverviewable bunch of wiring.
 
 The imaginary references, that were automatically put in between are the answer to making things overviewable when the target object is far away. The imaginary references are intermediate target objects. Those turn reference lines into an overviewable tree structure, the root of which is the target object on physical storage.
 
@@ -265,13 +265,13 @@ In the first story I gave about automatic containment I said, that the target ob
 
 Later I said that the imaginary reference is really not the target object: the target object is the physical storage of the object.
 
-The fact that an object *can* have a fixed spot, also makes it possible for an object to reside on a site. When I still suggested that an object didn’t have a fixed location, it was an enigma how I was going to let an object live inside a site, while an object doesn’t have a fixed location at all. Now an object does have a fixed location, it is easy to place it inside a site. A site could host *pointers* to the physical locations, instead of exposing the target object itself, because you would probably not want other sites to point directly to the place an object is stored or directly see the infrastructure of the site: what disks and which computers. The infrastructure of the site can be hidden by access controlling it. A site might only be exposing things that others have access to.
+The fact that an object *can* have a fixed spot, also makes it possible for an object to reside on a site. When I still suggested that an object didn’t have a fixed location, it was an enigma how I was going to let an object live inside a site, while an object doesn’t have a fixed location at all. Now an object does have a fixed location, it is easy to place it inside a site. A site could host *pointers* to the physical locations, instead of exposing the target object itself, because you might probably not want other sites to point directly to the place an object is stored or directly see the infrastructure of the site: what disks and which computers. The infrastructure of the site can be hidden by access controlling it. A site might only be exposing things that others have access to.
 
 If an object is stored on one site, it may logically be resident in multiple locations, but its physical position is still on that site.
 
 #### Central registration lists
 
-One problem I did not want to consider at first, was that a module might contain a registration list of all objects of a certain class. Because that would have given an object an exact location: that would have given an object a fixed place, and all lines would have pointed directly to the central list, which would not make the diagram overviewable.
+One problem I did not want to consider at first, was that a module might contain a registration list of all objects of a certain class. Because that might have given an object an exact location: that might have given an object a fixed place, and all lines might have pointed directly to the central list, which might not make the diagram overviewable.
 
 However, in the method found, I do not think central registration lists might be a problem anymore. A central registration list does have a place in the diagram, but not all lines are not directly pointing to it, and when it is outside the screen, you only see the closest logical location of the object. The display of the diagram is simply dependant on the level of detail now and lines are usually not pointing directly to a fixed location at all: just to an imaginary logical location. Having central registration lists inside a diagram is really not a problem anymore.
 
@@ -287,7 +287,7 @@ In Encircle an interface is also simply an object. An object can serve as the pr
 
 For methods it works a bit differently. Methods are not objects. Methods are not displayed as circles. Their default display is a square. So they have different symbols compared to objects. But the way lines lead back to a mutual method, simply works the same as for objects. There is more to the display of methods, but that is not covered here. The main point is: the technique for displaying mutuality of class, interface, and object works for mutuality of methods too.
 
-Imaginary object references are always circles, and not triangles or pentagons or anything, because those alternate shapes would give the object a special function, that can only be chosen by a programmer. Imaginary references are created by the system, which does not give the object symbol any other function than to simply be an imaginary reference, so no alternate shapes are required for its notation. For the same reason imaginary method references are always squares and not diamonds or anything else, because this alternate shape would give the method a special function, that can only be chosen by a programmer. Imaginary references are created by the system, which does not give the method symbol any other function than to simply be an imaginary reference to a method.
+Imaginary object references are always circles, and not triangles or pentagons or anything, because those alternate shapes might give the object a special function, that can only be chosen by a programmer. Imaginary references are created by the system, which does not give the object symbol any other function than to simply be an imaginary reference, so no alternate shapes are required for its notation. For the same reason imaginary method references are always squares and not diamonds or anything else, because this alternate shape might give the method a special function, that can only be chosen by a programmer. Imaginary references are created by the system, which does not give the method symbol any other function than to simply be an imaginary reference to a method.
 
 #### Fixed logical residence
 
@@ -297,7 +297,7 @@ This is important for objects that serve as prototypes for other objects (also k
 
 Classes and methods however, you might want to make part of a single logical unit. That’s why you need to be able to replace the physical target with a logical one, and let the logical target shadow the physical target, and be the only one referencing the physical target.
 
-Interfaces are also structure definitions that you would want to give a fixed logical location.
+Interfaces are also structure definitions that you might want to give a fixed logical location.
 
 You can also give normal objects a fixed location, so that they become part of a module, and have a fixed logical target location, that shadows the physical storage location.
 
@@ -351,7 +351,7 @@ You can also reference a module directly from within another module. In that cas
 
 You don’t need to let modules refer to each other, to actually let one module use something from another module: one module can always access anything inside another module, whether it has a reference to it or not. A reference however, makes global things from one module, globally accessible inside another module.
 
-The reason why module was at first ingored when working out automatic containment, is that module gave things a fixed spot. Everything would have been pointing to a fixed spot, which would make the diagrams unoverviewable. That is the same reason why physical location, residence on a site and central registration lists were ignored.
+The reason why module was at first ingored when working out automatic containment, is that module gave things a fixed spot. Everything might have been pointing to a fixed spot, which might make the diagrams unoverviewable. That is the same reason why physical location, residence on a site and central registration lists were ignored.
 
 But this is all solved with imaginary references: *the* trick to give something referenced multiple times a single logical position inside the containment structure.
 
@@ -397,7 +397,7 @@ But this implicit connection makes the diagram so much clearer. It makes it so m
 
 -----
 
-< I would make implicit connection a part of automatic containment, because automatic containment defines the imaginary references, that we’re going to leave out by implicit connection through connection between parents. >
+< I might make implicit connection a part of automatic containment, because automatic containment defines the imaginary references, that we’re going to leave out by implicit connection through connection between parents. >
 
 -----
 
@@ -505,7 +505,7 @@ JJ
 Automatic Containment,  
 2008-08-17
 
-If it weren't for object references always being object references, the principle of always being able to pass an object on to another object, would be lost.  
+If it weren't for object references always being object references, the principle of always being able to pass an object on to another object, might be lost.  
 That why everything is always pointers to object, instead of
 being directly contained by something.  
 If you do want something to be really RESIDENT somewhere,
@@ -724,7 +724,7 @@ I think I should introduce automatic containment only later in the documentation
 (2008-05-18)  
 Another way to make a command part of a bigger whole, is to give a command a fixed logical residence. A command already has a fixed *physical* residence, being the place where the command is stored on disk permanently. A command is stored somewhere, just like an object. But a command can also be given a fixed *logical* residence. This fixed logical residence shadows the fixed physical residence and gives a command a fixed logical position. The logical residence is the target of all references to the command. Only the fixed logical residence has access to the physical residence of the command.
 
-It is actually advised to give a command a fixed logical residence. Preferably, you make the command logically part of a module, because modules might bundle together classes and commands to a single logical unit of functionality. Don’t make the command part of a class. This binds a command too much to a class. Give a command the freedom to become part of multiple classes, rather than tying it up to a single class. A class’s granting a command access to its private contents already establishes a tighter bond, and the command might be visible as part of the class anyway, even when the class is not the fixed logical residence of the command. And even when you do give the command a fixed logical residence inside a class, the whole rest of the system is going to ignore that: a command call might still be a call upon multiple objects. Only the definition of the command would then be bound to the class.
+It is actually advised to give a command a fixed logical residence. Preferably, you make the command logically part of a module, because modules might bundle together classes and commands to a single logical unit of functionality. Don’t make the command part of a class. This binds a command too much to a class. Give a command the freedom to become part of multiple classes, rather than tying it up to a single class. A class’s granting a command access to its private contents already establishes a tighter bond, and the command might be visible as part of the class anyway, even when the class is not the fixed logical residence of the command. And even when you do give the command a fixed logical residence inside a class, the whole rest of the system is going to ignore that: a command call might still be a call upon multiple objects. Only the definition of the command might then be bound to the class.
 
 A module can get overloaded command names, when all commands are logically tied to a module, but this was already the case in languages such as C++. In C++ all the commands of all classes were already reachable globally. In Encircle, commands can even be overloaded having the same signatures, because in the diagram they are different symbols, and can be reached separately regardless of their name or signature.
 
@@ -801,7 +801,7 @@ The diagrams shown before, is the expression of calling a global command, with i
 
 When you have to express, that one command is called upon two objects, you have to tie the command call to both objects' command definitions.
 
-So it would be a call to both objects' command. Instead of referencing both objects from the command, the command is tied to both command references inside the objects.
+So it might be a call to both objects' command. Instead of referencing both objects from the command, the command is tied to both command references inside the objects.
 
 In this section I display calling a remote command with two remote objects as parameters. And then I display the same call as calling a remote command on both those objects. It’s basically the same example as above, but now with *two* parameters.
 
@@ -1105,9 +1105,9 @@ You have to look at basics of Symbol. And the basic thing is encapsulation. The 
 
 Symbol always had a lack of expression in plurality. How. You’d almost want a new shape of symbol. But I’ve sort of run out of shapes. I’d go for a hexagon. It looks like a circle, but has a plurality feeling to it. If you have to, you could choose for octagons.
 
-Of course, one of those, would contain a variable amount of objects, that don’t even have to be of the same type, but might always have the same interface I guess.
+Of course, one of those, might contain a variable amount of objects, that don’t even have to be of the same type, but might always have the same interface I guess.
 
-That would conclude seem to conclude the parallelization of Symbol and Structure.
+That might conclude seem to conclude the parallelization of Symbol and Structure.
 
 But wait a moment. Structure is based on relations between types. How well do I see those relations between types in Symbol.
 
@@ -1295,7 +1295,7 @@ Automatic Containment,
 
 Brainstorm:
 
-I am wondering if I can stop emphasizing every symbol is a reference, and just save that for specific diagram topics. That might make the story a lot simpler. I can then ignore automatic containment, making an outer stub of a redirection, the object itself. Crap, would that simplify the explanations.
+I am wondering if I can stop emphasizing every symbol is a reference, and just save that for specific diagram topics. That might make the story a lot simpler. I can then ignore automatic containment, making an outer stub of a redirection, the object itself. Crap, might that simplify the explanations.
 
 
 In automatic containment, I create imaginary references, turning all the symbols imaginarily to object references,
@@ -1305,7 +1305,7 @@ Ignore that for other article groups. Only focus on the current one. But actuall
 
 In that case, I should stop calling them pointers to pointers. They are, but I should stop calling them that.
 
-It would so much simplify the usage of the language. If you have to consider any symbol a reference, then it might be totally inaccessible to children, for instance.
+It might so much simplify the usage of the language. If you have to consider any symbol a reference, then it might be totally inaccessible to children, for instance.
 
 
 These contemplations have everything to do with the implications of automatic containment. Every symbol is a reference. But in the original Symbol, the target of all the redirections was the object itself. I have to uphold that, for a better understandable language.

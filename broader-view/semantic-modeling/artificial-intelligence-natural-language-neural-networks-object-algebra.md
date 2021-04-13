@@ -135,7 +135,7 @@ JJ
 Encircle algebraic approach,  
 2008-07
 
-If you can’t automatically make assumptions about the execution order of sub-commands, can you define a precedence of parameter passing, based on likeliness, like in algebra? Can you then affect the execution order with something like parenthesis, like in algebra? I WAS going for something about connections between objects and commands, that can be algebraically approached, and solved like an equation, so maybe there is a key there. Perhaps such algebraic approach would help in concurrency resolution as well.
+If you can’t automatically make assumptions about the execution order of sub-commands, can you define a precedence of parameter passing, based on likeliness, like in algebra? Can you then affect the execution order with something like parenthesis, like in algebra? I WAS going for something about connections between objects and commands, that can be algebraically approached, and solved like an equation, so maybe there is a key there. Perhaps such algebraic approach might help in concurrency resolution as well.
 
 You might make a default assumption about a dependant reading command wanting the clean, unaltered value, but maybe not.
 

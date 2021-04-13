@@ -42,7 +42,7 @@ The object symbol *redirects* its *object* system aspect to another symbol. Line
 
 #### Terms
 
-There’s a lot to be said about the terminology around target symbols. I’ve put all this in this section. I kept these discussions out of the original text of "Target Symbols", because it would obscure the main point.
+There’s a lot to be said about the terminology around target symbols. I’ve put all this in this section. I kept these discussions out of the original text of "Target Symbols", because it might obscure the main point.
 
 ##### Target Symbol
 

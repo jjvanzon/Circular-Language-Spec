@@ -123,7 +123,7 @@ __Protected__
 
 ### Virtual
 
-The keyword __virtual__ from other languages means that you *can override* the member. It is also called __Overridable__. In Encircle this means that overriding should be __Public__. In the two notations for overriding this would look as follows:
+The keyword __virtual__ from other languages means that you *can override* the member. It is also called __Overridable__. In Encircle this means that overriding should be __Public__. In the two notations for overriding this might look as follows:
 
 |                     *Object reference notation*                      |
 |:--------------------------------------------------------------------:|
@@ -139,7 +139,7 @@ In some languages overriding is private by default, protecting a base class from
 
 ### Abstract Member
 
-When the keyword __abstract__ from other languages is applied to a member, it means that you *might* override the member. It is also called __MustOverride__. In Encircle is a combination of making overriding __Public__ *and* __Required__. In the two notations for overriding this would look as follows:
+When the keyword __abstract__ from other languages is applied to a member, it means that you *might* override the member. It is also called __MustOverride__. In Encircle is a combination of making overriding __Public__ *and* __Required__. In the two notations for overriding this might look as follows:
 
 |                     *Object reference notation:*                     |
 |:--------------------------------------------------------------------:|
@@ -187,11 +187,11 @@ Or simply just:
 
 __Private Triangle Use As Class__
 
-Here it becomes apparent that the notation should not be just an open half triangle, because this would imply that the connector is __Required__, which it explicitly is not.
+Here it becomes apparent that the notation should not be just an open half triangle, because this might imply that the connector is __Required__, which it explicitly is not.
 
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.020.png)
 
-The use of this enforcement is questionable to me, because with a little effort you could wrap a non-inheritable class into an inheritable class again. I can imagine that a __final__ class could not have __virtual__ or __abstract__ members, so such a trick would not make it possible to override members, but it might make it possible to do any other inheritance trick in the book.
+The use of this enforcement is questionable to me, because with a little effort you could wrap a non-inheritable class into an inheritable class again. I can imagine that a __final__ class could not have __virtual__ or __abstract__ members, so such a trick might not make it possible to override members, but it might make it possible to do any other inheritance trick in the book.
 
 ### Interface / Interface Member
 
@@ -228,7 +228,7 @@ However unnecessary, you can implicitly define that a member is abstract, which 
 
 Meaning the *interface’s* *square* member has a __Public Object Set__ access connector that is __Required__.
 
-But if you want to do that, you would have to do it for all members of an interface.
+But if you want to do that, you might have to do it for all members of an interface.
 
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.024.png)
 

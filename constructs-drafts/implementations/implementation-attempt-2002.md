@@ -127,7 +127,7 @@ A secondary SymDoc or a SymDocMain might function as a clipboard. You add as man
 After all symbols have been added to the clipboard you might change the parents, references and classes in the clipboard to the value in the primary doc converted with the vector table so they become references to positions in the clipboard and not position in the diagram. If a class wasn't copied then the vector table indicates -1 for it and then an extra symbol is to be added to the clipboard representing a dummy class and an the entry in the vector table that converts the not copied class might convert it to the dummy class. Positions of these vectors to dummy classes are kept in an array. Then the process of changing parents, references and classes can continue. Of course when I talk about a class the same goes for parents and references. After copying, the vector table should be reset. All the selected symbols' Vector properties are to be set to -1.  
 We kept an array of positions of vectors to dummy classes these vectors should be reset to -1 also.
 
-The residence of the vector table is best in the main symbol table for it would be costly to create an array with 60,000 records every time you copy any small bit of a 60,000 symbol diagram.
+The residence of the vector table is best in the main symbol table for it might be costly to create an array with 60,000 records every time you copy any small bit of a 60,000 symbol diagram.
 
 ##### The below information about Document is obsolete
 
@@ -481,7 +481,7 @@ Module [4] . Interface Module [2] . Interface [3] . Member [21] . Type
 
 A much better representation of actuality, and readable, unlike the original structure.
 
-Member access isn't only useful in, also to group things. To get member access to the grouped things you actually require another class, which is unfortunately not a child class in visual basic, but another entry in the richly occupied class list in Visual Basic. Would you have a thing as child classes, this ugliness could be omitted, because it would then be a tree structure. Another thing with grouping properties is that when you put them in a child class, the child class doesn't have access to the main class's members just like that. You might want the grouped properties to interact with the other properties. In that case you should have to use another phenomena than just a child class. Something solely made for grouping. In VB you don't have this. For that, for interaction with the properties outside a class that groups a few can only be accessed if you give the group a reference to the parent class. This adds a method or property to the group that we don't want to see outside the main class. We can't verhelp this inside the module. But outside the module we don't need to see this member that sets the parent class. We can hide them from outside the module, by declaring them Friend, instead of Public. But inside the module we might still see it as part of the member of an object property.
+Member access isn't only useful in, also to group things. To get member access to the grouped things you actually require another class, which is unfortunately not a child class in visual basic, but another entry in the richly occupied class list in Visual Basic. Might you have a thing as child classes, this ugliness could be omitted, because it might then be a tree structure. Another thing with grouping properties is that when you put them in a child class, the child class doesn't have access to the main class's members just like that. You might want the grouped properties to interact with the other properties. In that case you should have to use another phenomena than just a child class. Something solely made for grouping. In VB you don't have this. For that, for interaction with the properties outside a class that groups a few can only be accessed if you give the group a reference to the parent class. This adds a method or property to the group that we don't want to see outside the main class. We can't verhelp this inside the module. But outside the module we don't need to see this member that sets the parent class. We can hide them from outside the module, by declaring them Friend, instead of Public. But inside the module we might still see it as part of the member of an object property.
 
 ##### Other
 
@@ -489,13 +489,13 @@ In the Windows API documentation somewhere it is told that delegating specific w
 
 However, if you make it so that the local variables are allocated on the stack imperatively where they are declared, when the declaration code isn’t reached, this allocation doesn’t take place. Microsoft people might advise (in documentation about VB) to put local variable declarations at the beginning of the procedure. So it may not be the best methodology that makes the argument for this. It’s may not be a good idea.
 
-It may not be a good idea regarding the using a function a message. It is however so that variables on the stack aren’t freed until you exit the function, so you can’t free declared stack variables. Maybe I could free it in J Code if it would be required.
+It may not be a good idea regarding the using a function a message. It is however so that variables on the stack aren’t freed until you exit the function, so you can’t free declared stack variables. Maybe I could free it in J Code if it might be required.
 
 -----
 
 Windows often stuffs a lot of booleans in a bit field. In the Windows Controls, often styles are used, which are booleans in bit fields that you can switch on or off. You supply the bit field at creation of the control window. You can change the bit field of some bits in the fields by sending window messages to the control.
 
-I would just make them properties most of the times. At most I make them creation arguments. Supplying all as creation arguments is no better than not initializing the control and letting the programmer set the properties. Properties are not applied to the representation straight away, because display operations are postponed, because they do not affect control logic data and operations, yet cost CPU time.
+I might just make them properties most of the times. At most I make them creation arguments. Supplying all as creation arguments is no better than not initializing the control and letting the programmer set the properties. Properties are not applied to the representation straight away, because display operations are postponed, because they do not affect control logic data and operations, yet cost CPU time.
 
 What is better in the Windows way? If anything, can I embed it into my way, without losing any benefits of my way?
 
@@ -505,7 +505,7 @@ Windows might stuff multiple values into a single data unit. For instance, a bun
 
 -----
 
-Consider making designers for certain things. If a designer would help.
+Consider making designers for certain things. If a designer might help.
 
 -----
 

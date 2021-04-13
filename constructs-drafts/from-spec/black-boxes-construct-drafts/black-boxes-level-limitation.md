@@ -10,7 +10,7 @@ Black Boxes | Level Limitation
 
 -----
 
-\> 2009-06-27: I am not sure why I would need a child object to restrict the number of levels up it is accessible... why? for protection? Well... I would better resort to use access control for such protections...
+\> 2009-06-27: I am not sure why I might need a child object to restrict the number of levels up it is accessible... why? for protection? Well... I might better resort to use access control for such protections...
 
 -----
 
@@ -107,4 +107,4 @@ Protected Module Up N works the same as Public, but adds the extra restriction t
 
 < Pictures with that? >
 
-< ‘Module Up 2’ is too long, because Public Module Up 1 might be used commonly. Visual Basic’s Friend access modifier is the same as Public Module Up 1. I might need to invent a specific term for Public Module Up 1. I won’t use ‘Friend’, because that would conflict with >
+< ‘Module Up 2’ is too long, because Public Module Up 1 might be used commonly. Visual Basic’s Friend access modifier is the same as Public Module Up 1. I might need to invent a specific term for Public Module Up 1. I won’t use ‘Friend’, because that might conflict with >

@@ -6,13 +6,13 @@ Literals
 
 `[ Deprecated documentation ]`
 
-The idea here would be that each language element’s textual representation might be considered the language element’s *literal*, that could be read out and assigned. However large the construct, its text code might still just be a literal, be it composed of the literals of its sub-constructs.
+The idea here might be that each language element’s textual representation might be considered the language element’s *literal*, that could be read out and assigned. However large the construct, its text code might still just be a literal, be it composed of the literals of its sub-constructs.
 
 You might find the following sub-topics here:
 
 - ### Object Literals
 
-    - Might not have an article yet, but if one would ever be written, it might contain the explanation how objects can get literals. Simple objects, like numbers and dates, might be covered, but also perhaps how a literal might be assigned to an object to initialize the object’s members.
+    - Might not have an article yet, but if one might ever be written, it might contain the explanation how objects can get literals. Simple objects, like numbers and dates, might be covered, but also perhaps how a literal might be assigned to an object to initialize the object’s members.
 
 - ### [Command Literals](command-literals.md)
 

@@ -4,7 +4,7 @@ Encircle Language Spec
 Object Resolution Articles
 --------------------------
 
-Might shed light on a group of topics that may be called *object resolution* (which would include overload resolution).
+Might shed light on a group of topics that may be called *object resolution* (which might include overload resolution).
 
 Some concepts may have been covered in *Inheritance | Specialization*, but presenting these topics here as a group, may give a specific overview over these phenomena.
 

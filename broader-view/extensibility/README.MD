@@ -14,7 +14,7 @@ The *extensibility principles* may cover techniques that might make existing sof
 
     - Concepts might be power-enhancements of software, that might be immediately applied to any system without any further programming. A concept may become a special programming construct.
 
-    - A *concept* might be close to what some programming environments call *aspects*. But the hope would be that concept might become a richer, more usable variation on aspects.
+    - A *concept* might be close to what some programming environments call *aspects*. But the hope might be that concept might become a richer, more usable variation on aspects.
 
     - Concepts may allow you to program modules, that adapt themselves to the structure of other modules, automatically extending an existing structure with an extra aspect, such as instantly enabling copy-paste actions inside a system, that originally did not support it, or instantly being able to save object structures to XML, for a system that originally did not have this functionality.
 

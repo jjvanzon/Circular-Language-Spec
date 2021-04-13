@@ -142,9 +142,9 @@ The following articles display the various access connectors an object can have.
 
 ##### Class Get and Use As Class Connectors
 
-> For the __Class__ aspect, there is a distinction between __Use As Class__ and __Class Get__. They are different. __Use As Class__ makes you use one symbol as the class for another symbol. That is how classes are most commonly used. That would be the result of an __Object Get__ on the source object, followed by a __Class Set__ on the target object. No __Class Get__ is involved in a __Use As Class__ action, which you might expect if you draw a parallel to the __Object__ aspect.
+> For the __Class__ aspect, there is a distinction between __Use As Class__ and __Class Get__. They are different. __Use As Class__ makes you use one symbol as the class for another symbol. That is how classes are most commonly used. That might be the result of an __Object Get__ on the source object, followed by a __Class Set__ on the target object. No __Class Get__ is involved in a __Use As Class__ action, which you might expect if you draw a parallel to the __Object__ aspect.
 >
-> __Class Get__ gets a reference to the class object of an object. Traditionally this would be considered getting an object’s reflective data. You can use the reference to the class to your own discretion. __Class Get__ is far less common. __Use As Class__ gets a fundamental notation, whereas __Class Get__ has to make dues with the ‘system command’ notation.
+> __Class Get__ gets a reference to the class object of an object. Traditionally this might be considered getting an object’s reflective data. You can use the reference to the class to your own discretion. __Class Get__ is far less common. __Use As Class__ gets a fundamental notation, whereas __Class Get__ has to make dues with the ‘system command’ notation.
 >
 > This is due to the behavior of the __Class__ aspect. This is different behavior compared to the __Object__ aspect. You just have to remember, that each aspect has different behavior, because it has a different purpose.
 >
@@ -263,7 +263,7 @@ And here it becomes apparent why. The following diagrams show __New__ and __Annu
 ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.069.png)
 ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.070.png)
 
-An access connector stands for a potential connection and should look like the potential connection. In the pictures above, the connector does not look like the actual connection, so the notation may need to change in the future. A potential connection is usually expressed as a loose end, so the potential system command call should also be expressed as a loose end somehow, so perhaps the following notation for access controlling a system command would be better:
+An access connector stands for a potential connection and should look like the potential connection. In the pictures above, the connector does not look like the actual connection, so the notation may need to change in the future. A potential connection is usually expressed as a loose end, so the potential system command call should also be expressed as a loose end somehow, so perhaps the following notation for access controlling a system command might be better:
 
 ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.071.png)
 
@@ -394,7 +394,7 @@ This section demonstrates how accessing system aspects looks in assignment notat
 
 #### Class Get Connection
 
-At first glance you would guess, that __Class Get__ in assignment looks something like this:
+At first glance you might guess, that __Class Get__ in assignment looks something like this:
 
 ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.085.png)
 
@@ -455,4 +455,4 @@ An alternative: assigning __Class__ object to __Object__ aspect of other symbol:
 > 
 > The access mark in the assignment and the access mark in the connector have opposite directions.
 > 
-> This is because for the assignment notation it was decided, that an the access mark expresses the direction of the assignment, and the connector expresses the direction of the *potential connection*, so the direction of the result. It was decided, that it would be clearer to express the direction of the *assignment* inside the diagram notation, instead of letting the assignment call express the direction of its *result*.
+> This is because for the assignment notation it was decided, that an the access mark expresses the direction of the assignment, and the connector expresses the direction of the *potential connection*, so the direction of the result. It was decided, that it might be clearer to express the direction of the *assignment* inside the diagram notation, instead of letting the assignment call express the direction of its *result*.

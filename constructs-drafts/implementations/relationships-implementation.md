@@ -75,7 +75,7 @@ In a __1 => n__ relationship between __Parents__ and __Children__, `every` time 
 
 Also, `the*` original __Child__’s __ID In Parent__ `is` yielded over to `the*` new __Child__. `The*` original __Child__’s __ID In Parent__ `is` reset.
 
-There used `to be` a misunderstanding, that one __Parent__ `could*` reference `the*` same __Child__ multiple times. `But*` that idea `was` abolished, `because* when*` a __Parent__ relates to a __Child__ twice, `the*` __Child__ `has to` relate back to `the*` __Parent__ twice. A __Child__ `can* only have` one __Parent__, `so` it `can*` never relate back to `the*` same __Parent__ twice. Something `like` that `would* require` an __n => n__ relationship, for `the*` __Child__ `to be` able to hold multiple references to `the*` same __Parent__.
+There used `to be` a misunderstanding, that one __Parent__ `could*` reference `the*` same __Child__ multiple times. `But*` that idea `was` abolished, `because* when*` a __Parent__ relates to a __Child__ twice, `the*` __Child__ `has to` relate back to `the*` __Parent__ twice. A __Child__ `can* only have` one __Parent__, `so` it `can*` never relate back to `the*` same __Parent__ twice. Something `like` that `might* require` an __n => n__ relationship, for `the*` __Child__ `to be` able to hold multiple references to `the*` same __Parent__.
 
 #### Risk of infinite loop 1 => n
 
@@ -91,7 +91,7 @@ A __Child__ `can* not*` appear multiple times in `the*` same __Parent__, `becaus
 
 `When*` a __1 => n__ relationship `is` synchronized, `you*` may `have` a risk to an infinite loop. `When* you*` add a __Child__ to a __Parent__, `then* the*` __Parent__ `is` assigned to `the*` __Child__, upon which `the*` __Child__ `is` added to `the*` __Parent__ *again*.
 
-An earlier solution proposed for `this, is` that in synchronizing `the*` relationship, `you*` never boldly __Add__ `the*` __Child__ to `the*` __Parent__, `but* you*` execute a __Find Or Add__, which prevents `the*` __Child__ from being added again, `when*` it `is already` in `the*` __Parent__’s list. `This would* have` worked, `but*` n => n synchronization `already required` a different solution, that `might` be more efficient for n => 1 synchronization as well.
+An earlier solution proposed for `this, is` that in synchronizing `the*` relationship, `you*` never boldly __Add__ `the*` __Child__ to `the*` __Parent__, `but* you*` execute a __Find Or Add__, which prevents `the*` __Child__ from being added again, `when*` it `is already` in `the*` __Parent__’s list. `This might* have` worked, `but*` n => n synchronization `already required` a different solution, that `might` be more efficient for n => 1 synchronization as well.
 
 `When* you*` assign an item to a list for synchronization purposes, `no` synchronization `is to be` executed on `the*` other side again.  
 `You’d* have to` call a `special` __List Item Set__ procedure, accessible `only` to `the*` related class, that simply won’t synchonize back again.
@@ -115,13 +115,13 @@ An item in one list `is` aware of its position in `the*` other list. That makes 
 `When* you*` assign an item to a list for synchronization purposes, `no` synchronization `is to be` executed on `the*` other side again.  
 `You'd* have to` call a `special` __List Item Set__ procedure, accessible `only` to `the*` related class, that simply won’t synchronize back again.
 
-Another solution opted at first, `was` to execute a __Find Or Add__ for synchronization, instead of executing an normal __Add__ command. That `would*` prevent a related item from being added and added again. `But* then* you* have the*` problem: maybe `the*` same item *`should`* be added twice to `the*` list, `because*` one item `can*` relate to another item multiple times, which also `requires the*` other item to relate back to `the*` first item multiple times. For `each` reference to an item, `the*` item `might have` a reference back to `the*` referrer.
+Another solution opted at first, `was` to execute a __Find Or Add__ for synchronization, instead of executing an normal __Add__ command. That `might*` prevent a related item from being added and added again. `But* then* you* have the*` problem: maybe `the*` same item *`should`* be added twice to `the*` list, `because*` one item `can*` relate to another item multiple times, which also `requires the*` other item to relate back to `the*` first item multiple times. For `each` reference to an item, `the*` item `might have` a reference back to `the*` referrer.
 
 `So the*` new option `is` better: `you* have` a `special` __List Item Set__ procedure, possibly called by a `special` __Add__ procedure, used solely for relationship synchronization, that won’t synchronize *back* again.
 
 #### `The*` abolished multiplicity of x
 
-Earlier `I` had invented a multiplicity of __x__, which `is` plural, `but* then*` a fixed set of items, for instance three items. `But*` __x__ `can*` be replaced by three separate __=> 1__ relationships. __X__ `was` abolished in particular, `because*` it `would*` cause a `lot` of unpredictable behavior `when*` trying to synchronize `the*` two relationship counterparts, especially in __n/x => n/x__ synchronization.
+Earlier `I` had invented a multiplicity of __x__, which `is` plural, `but* then*` a fixed set of items, for instance three items. `But*` __x__ `can*` be replaced by three separate __=> 1__ relationships. __X__ `was` abolished in particular, `because*` it `might*` cause a `lot` of unpredictable behavior `when*` trying to synchronize `the*` two relationship counterparts, especially in __n/x => n/x__ synchronization.
 
 #### Confusions about relationship synchronization
 
@@ -163,7 +163,7 @@ A __Relationship__ consists of two __RelationClasses__. It `contains` two __Rela
 
 A __Relationship__ also `defines` whether `the*` relationship `is` __Bidirectional__ or __Unidirectional__, by `the*` __Boolean__ __Bidirectional__ member. `If*` a __Relationship__ `is` __Bidirectional__, `then*` both classes `are` aware of eachother and refer to one another. `If*` a __Relationship__ `is` __Unidirectional__ `then* only` __RelationClassA__ `is` aware of __RelationClassB__ and refers to it, `but*` __RelationClassB__ `is` unaware of __RelationClassA__ and doesn’t refer to it.
 
-Even though a __Bidirectional__ relationship `would*` seem to make __RelationClassA__ and __RelationClassB__ equal opponents, __RelationClassB__ in `many` cases `is the* inferior` one. For instance, in writing XML files, __RelationClassB__ `is` seen as `contained` in __RelationClassA__ and `not* the*` other way around. In that case *direction* of `the*` relationship does matter. However, still in `many` cases __RelationClassA__ and __RelationClassB__ `are` technically equal opponents. `When* you*` keep in mind which __RelationClass__ `is` inferior and which one `is` superior, things `like` XML writing go well automatically. `If* you* are` sloppy with choosing `if*` something `is` __RelationClassA__ or __RelationClassB__, `you* could*` get trouble that makes `you*` obliged to switch `the*` two relationship classes within `the*` relationship, `but*` usually `you*` won’t notice `anything` going `wrong. So` relax, `but*` beware.
+Even though a __Bidirectional__ relationship `might*` seem to make __RelationClassA__ and __RelationClassB__ equal opponents, __RelationClassB__ in `many` cases `is the* inferior` one. For instance, in writing XML files, __RelationClassB__ `is` seen as `contained` in __RelationClassA__ and `not* the*` other way around. In that case *direction* of `the*` relationship does matter. However, still in `many` cases __RelationClassA__ and __RelationClassB__ `are` technically equal opponents. `When* you*` keep in mind which __RelationClass__ `is` inferior and which one `is` superior, things `like` XML writing go well automatically. `If* you* are` sloppy with choosing `if*` something `is` __RelationClassA__ or __RelationClassB__, `you* could*` get trouble that makes `you*` obliged to switch `the*` two relationship classes within `the*` relationship, `but*` usually `you*` won’t notice `anything` going `wrong. So` relax, `but*` beware.
 
 `The*` two __RelationClass__ objects `define the*` relationship furtherly.
 

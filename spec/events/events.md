@@ -117,7 +117,7 @@ A child object is not the only object you can pick up events from. You can just 
 
 The concept of events is nothing more than a combination of constructs: an array of command references, a command interface and supporting the command interface, registering the command inside the array of command references and then calling all the commands in the array at specific times.
 
-Explicitly drawing out the event concept using constructs mentioned above, the picture would look like this:
+Explicitly drawing out the event concept using constructs mentioned above, the picture might look like this:
 
 ![](images/1.%20Events.011.png)
 
@@ -141,7 +141,7 @@ The connectors at the bottom of the picture are the members that the event *send
 
 ### Event Interface Reference
 
-An event command might always implement an interface specified by the __Event__ object. But if you want to express a command’s implementing the event interface without actually being tied to the event, it would look like this:
+An event command might always implement an interface specified by the __Event__ object. But if you want to express a command’s implementing the event interface without actually being tied to the event, it might look like this:
 
 ![](images/1.%20Events.013.png)
 
@@ -200,6 +200,6 @@ The __Friend__ declaration is an agreement between the event sender and the clas
 
 ### Event Alternatives
 
-An event is a means for a child to call the parent. The Events concept works well for this. But there are alternatives for a child to call a parent. A simple command reference would do as well, only this does not allow multi-cast events.
+An event is a means for a child to call the parent. The Events concept works well for this. But there are alternatives for a child to call a parent. A simple command reference might do as well, only this does not allow multi-cast events.
 
 Another alternative is that the child defines an interface, that the parent might support, the parent implements the interface, and the child calls upon the interface of the parent. If you want this to work in a multi-cast situation, you have to program the multi-cast functionality yourself pretty much the same way as an event object implements it (see *Explicit Implementation of Event Object*). Just using standard events might be an easier solution.

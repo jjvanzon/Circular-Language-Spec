@@ -20,13 +20,13 @@ It might not be that easy, allowing an object or an object reference to change c
 
 If the class of an object is changed, one possibility might be to erase an object’s original contents. If an object reference already points to an object of one class, what happens if you'd change that object reference's class? Perhaps the reference might be cleared, nullified, or marked as invalid, which may lead to a temporarily unusable object reference. Or should something be changed inside the target object?
 
-Another possibility might be: mapping one class to another in a fuzzy way. This may be known from certain systems. The problem may not be unheard of. What is most practical may be dependent on the specific needs of the application. Just putting it out there, that this might become a bit of a problem when design time would equal run time. This problem might not exist if everything might just be thrown away everything, memory be cleared, and restart an application.
+Another possibility might be: mapping one class to another in a fuzzy way. This may be known from certain systems. The problem may not be unheard of. What is most practical may be dependent on the specific needs of the application. Just putting it out there, that this might become a bit of a problem when design time might equal run time. This problem might not exist if everything might just be thrown away everything, memory be cleared, and restart an application.
 
 ### Doubt
 
 The idea of *Design Time = Run Time* might stand in the way of how objects might be allocated traditionally. That may make it less doable to change an object's configuration once created. Some tech might lean on that. Performance might be a reason.
 
-Perhaps this would be thinking in terms of how things are. Not in terms of how things might be. Instead of thinking of how you might want to program and then saying: "That's impossible, because..." Perhaps it might not be so bad, defining how you might *want* to program, and then trying to find solutions for it.
+Perhaps this might be thinking in terms of how things are. Not in terms of how things might be. Instead of thinking of how you might want to program and then saying: "That's impossible, because..." Perhaps it might not be so bad, defining how you might *want* to program, and then trying to find solutions for it.
 
 What if "programming it at the same time" might not be as performant, but when you stop programming it *is* performant? That maybe leads to a usable set up. What if the performance cost is acceptable, if the class has not so many object instances? I feel holes to be poked into these ideas, while they might just be problems with solutions.
 
@@ -40,7 +40,7 @@ The main point may be, that it might be a *problem* when design time = run time,
 
 ### Multi-User
 
-There is one thing, that may distort the blending together of design time and run time: when everything would be running in a multi-user environment, in which multiple people might be working with the same data at the same time.
+There is one thing, that may distort the blending together of design time and run time: when everything might be running in a multi-user environment, in which multiple people might be working with the same data at the same time.
 
 ### Versioning
 

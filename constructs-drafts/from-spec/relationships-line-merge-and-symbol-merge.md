@@ -25,11 +25,11 @@ Starting with:
 
 ![](images/1.%20Relationships%20Construct%20Drafts.001.png)
 
-A suggested notation would be for the two class lines to merge together to form `the` picture below:
+A suggested notation might be for the two class lines to merge together to form `the` picture below:
 
 ![](images/1.%20Relationships%20Construct%20Drafts.002.png)
 
-This, however, might be a quite ambiguous notation. It would suggest that the two symbols joined by the line would have the same class. But that would not be what is intended. The circle inside __Class A__ would have __Class B__ and the circle inside __Class B__ would have __Class A__.
+This, however, might be a quite ambiguous notation. It might suggest that the two symbols joined by the line might have the same class. But that might not be what is intended. The circle inside __Class A__ might have __Class B__ and the circle inside __Class B__ might have __Class A__.
 
 A solution to this ambiguity may be proposed.
 
@@ -49,7 +49,7 @@ Next, `the*` class lines `are` merged, `but*` also `the*` class symbols `are` me
 
 ![](images/1.%20Relationships%20Construct%20Drafts.003.png)
 
-`The*` notation `would*` still be ambiguous, `if*` it weren’t for `the*` double dashed line of `the*` merged class symbols. `So` a double dashed circle symbolizes a relationship between classes.
+`The*` notation `might*` still be ambiguous, `if*` it weren’t for `the*` double dashed line of `the*` merged class symbols. `So` a double dashed circle symbolizes a relationship between classes.
 
 Examples with different multiplicities:
 
@@ -61,13 +61,13 @@ Examples with different multiplicities:
 
 A symbol merge in a relationship that has nonagons in it also results in a double dashed circle, `because* the*` imaginary reference to `the*` classes, that `are` put on a higher level, `are` represented by circles, `not*` a nonagons.
 
-There is an idea where one related list might contain items from multiple classes. __Class A__ would have a __n => 1__ relationship to items of __Class B__ and __Class C__, which the picture below aims to express:
+There is an idea where one related list might contain items from multiple classes. __Class A__ might have a __n => 1__ relationship to items of __Class B__ and __Class C__, which the picture below aims to express:
 
 ![](images/1.%20Relationships%20Construct%20Drafts.008.png)
 
 #### Counterpart out of Sight
 
-If the counterpart of a relationship would be out of sight, a line might point out of the diagram. A catch there might be that you might not see whether the relationship counterpart would have multiplicity of __1__ or __n__. A possible solution for this, might be to express multiplicity at the end of that line that might point out of the diagram.
+If the counterpart of a relationship might be out of sight, a line might point out of the diagram. A catch there might be that you might not see whether the relationship counterpart might have multiplicity of __1__ or __n__. A possible solution for this, might be to express multiplicity at the end of that line that might point out of the diagram.
 
 This might look as follows with the double dashed border notation:
 
@@ -104,7 +104,7 @@ Next, `the*` class lines `are` merged, `but*` also `the*` class symbols `are` me
 
 ![](images/1.%20Relationships%20Construct%20Drafts.020.png)
 
-`The*` notation `would*` still be ambiguous, `if*` it weren’t for `the*` double line of `the*` merged object symbols. `So` a double circle symbolizes a relationship between objects.
+`The*` notation `might*` still be ambiguous, `if*` it weren’t for `the*` double line of `the*` merged object symbols. `So` a double circle symbolizes a relationship between objects.
 
 For relationships between classes `the*` relationship symbol `is` a double *dashed* circle. For relationships between objects, `the*` relationship symbol `is` a double circle drawn with *solid* lines.
 
@@ -130,7 +130,7 @@ Imaginary references `were` put on one level higher:
 
 ![](images/1.%20Relationships%20Construct%20Drafts.019.png)
 
-`If*` other references to `the*` same objects `were` also displayed in `the*` diagram, `then*` they `would*` connect to `the*` same imaginary references, put on a higher level:
+`If*` other references to `the*` same objects `were` also displayed in `the*` diagram, `then*` they `might*` connect to `the*` same imaginary references, put on a higher level:
 
 ![](images/1.%20Relationships%20Construct%20Drafts.022.png)
 

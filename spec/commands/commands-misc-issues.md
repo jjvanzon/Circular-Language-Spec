@@ -48,11 +48,11 @@ This is a rule for enforcement of control of a parent command over the execution
 
 It is *not* the rule, that command calls can never be referenced. It’s just that command calls *inside another command* can not be referenced. When a command call resides in an object, the command call *can* be referenced, to for instance allow a user to carry around a reference to an active command, executing on a site somewhere. So a command call inside an object can be referenced, but a command call inside another command can not be referenced.
 
-Not being able to reference sub-commands does not mean, that you *can* use it as a class, because a class reference is also a reference. This would also put the sub-command in danger of being prematurely executed, because you could establish an active reference to the class of another command object and execute it.
+Not being able to reference sub-commands does not mean, that you *can* use it as a class, because a class reference is also a reference. This might also put the sub-command in danger of being prematurely executed, because you could establish an active reference to the class of another command object and execute it.
 
 To not cause any confusion, sub-commands are made __Private__. 
 
-Do not change the rule to *sub-commands are always private*, because this would not fully solve the parent command’s control over its sub-commands’ execution. By just making them private, the parent command could still pass a reference to a *sub-*command, so that the parent *gives up* control over the execution of a *sub-*command. This is something, that might not be allowed. Now that you can *never reference a sub-command*, this control is restored.
+Do not change the rule to *sub-commands are always private*, because this might not fully solve the parent command’s control over its sub-commands’ execution. By just making them private, the parent command could still pass a reference to a *sub-*command, so that the parent *gives up* control over the execution of a *sub-*command. This is something, that might not be allowed. Now that you can *never reference a sub-command*, this control is restored.
 
 ##### Diagram
 
@@ -74,17 +74,17 @@ Not being able to reference sub-commands does not mean, that you can use it as a
 
 ![](images/6.%20Comands%20Misc%20Issues.003.png)
 
-This would also put the sub-command in danger of being prematurely executed, because you could establish an active reference to the class of another command object and execute it.
+This might also put the sub-command in danger of being prematurely executed, because you could establish an active reference to the class of another command object and execute it.
 
 To not cause any confusion, sub-commands are made __Private__. 
 
 ![](images/6.%20Comands%20Misc%20Issues.004.png)
 
-Do not change the rule to *sub-commands are always private*, because this would not fully solve the parent command’s control over its sub-commands’ execution. By just making them private, the parent command could still pass a reference to a sub-command.
+Do not change the rule to *sub-commands are always private*, because this might not fully solve the parent command’s control over its sub-commands’ execution. By just making them private, the parent command could still pass a reference to a sub-command.
 
 ![](images/6.%20Comands%20Misc%20Issues.005.png)
 
-That would make the parent *give up control* over the execution of a sub-command. This is something, that might not be allowed. Now that you can *never reference a sub-command*, this control is restored.
+That might make the parent *give up control* over the execution of a sub-command. This is something, that might not be allowed. Now that you can *never reference a sub-command*, this control is restored.
 
 ![](images/6.%20Comands%20Misc%20Issues.006.png)
 
@@ -140,7 +140,7 @@ Refer to the article *Referrers* for an explanation on how the Referrers concept
 
 The *Referrers* article explained how an object can be made aware of its referrers. A command is an object as well and the __Referrers__ concept already provides a command with *command definition referrers* functionality. An inactive command is the only type of command symbol that can be referenced. Am inactive command symbol can implement the __Referrers__ concept to register every call or reference to it.
 
-When a site hosts a command definition, that is widely used all over the world, you might not want the command definition to register its referrers, because it would be a very long list to maintain. You can turn off the Referrers concept for any command definition.
+When a site hosts a command definition, that is widely used all over the world, you might not want the command definition to register its referrers, because it might be a very long list to maintain. You can turn off the Referrers concept for any command definition.
 
 If another site uses this widely used command definition, the using site could add a command reference to the command definition on the other site. A command reference has its own list of referrers. The using site could then redirect calls and references to its own command reference. Then the using site has a registration of anything on its site that uses the external command definition.
 

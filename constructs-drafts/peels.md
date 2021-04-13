@@ -302,7 +302,7 @@ So the following about a line can be expressed in a symbol’s peels:
 
 The peels can also only have a more abstract meaning.
 
-Unless you name the peels, the only thing you can’t express in a symbol’s peels is *which* symbol is entered. You *would* know which symbol is exited, because only the parent can be exited.
+Unless you name the peels, the only thing you can’t express in a symbol’s peels is *which* symbol is entered. You *might* know which symbol is exited, because only the parent can be exited.
 
 That means that you can express a whole lot in a symbol’s peels. If you count names with peels, you can express everything about a line in a shape peel notation.
 
@@ -318,7 +318,7 @@ or
 
 or
 
-- lines would obscure the picture.
+- lines might obscure the picture.
 
 or
 

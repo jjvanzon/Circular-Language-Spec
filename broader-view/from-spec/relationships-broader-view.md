@@ -25,9 +25,9 @@ That might bump with `the*` containment structures that might look nice in Encir
 
 A proposed solution might be to `specify` a direction to these relationships, `so` that `the*` 'inferior' part of `the*` relationship might be put at a lower level of containment, restoring `the*` use of a containment structure. Perhaps a 1 to n relationships might `already` imply direction: parent on top, children below.
 
-`This` may `only` be a problem, `if* the*` containment structure `would* have to be` figured out by `the*` system on its own.
+`This` may `only` be a problem, `if* the*` containment structure `might* have to be` figured out by `the*` system on its own.
 
-Another solution might be that a programmer `can*` pick `the*` containment level, `so then*` maybe it `is not* really` a problem and relationship direction `would*` be implied by `the*` containment levels picked by a programmer.
+Another solution might be that a programmer `can*` pick `the*` containment level, `so then*` maybe it `is not* really` a problem and relationship direction `might*` be implied by `the*` containment levels picked by a programmer.
 
 ### Ubiquitous Bidirectional Relationships
 
@@ -54,7 +54,7 @@ Another reason for `not*` keeping `the*` backward relationship, `is` that `you*`
 
 #### `No exact` formula
 
-`I` admit, that `I would* like` to give an exact formula for `when*` a backward relationship `should` or `should not*` be maintained. `But*` for now, `I can* only` give a functional description of `when*` it `is ridiculous` to maintain a backward relationship. A programmer `is` going to `have to` determine it, when a relationship `should` be unidirectional.
+`I` admit, that `I might* like` to give an exact formula for `when*` a backward relationship `should` or `should not*` be maintained. `But*` for now, `I can* only` give a functional description of `when*` it `is ridiculous` to maintain a backward relationship. A programmer `is` going to `have to` determine it, when a relationship `should` be unidirectional.
 
 ### Loose Ideas
 
@@ -105,7 +105,7 @@ JJ
 Backwards relationship alternative: Site usage,  
 2010-05-03
 
-For ‘ridiculous to maintain’ `you* could*` also go with `this` approach: make `the* small` thing, `like` Integer always referenced in a qualified way through `the*` site and maintain a unique list of source sites. That `would*` at least give `you*` an idea of how `many` sites `are` used and `if* any` sites still use it.
+For ‘ridiculous to maintain’ `you* could*` also go with `this` approach: make `the* small` thing, `like` Integer always referenced in a qualified way through `the*` site and maintain a unique list of source sites. That `might*` at least give `you*` an idea of how `many` sites `are` used and `if* any` sites still use it.
 
 JJ
 

@@ -38,6 +38,6 @@ Which Workspace reference is filled in, determines the role of the document. Is 
 Document  Is  Base In Workspace
 ```
 
-But I am not sure yet how that would be implemented.
+But I am not sure yet how that might be implemented.
 
 JJ

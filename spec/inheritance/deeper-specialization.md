@@ -154,7 +154,7 @@ Some deeper specializations though, are not registered inside the deeper objects
 
 ![](images/4.%20Deeper%20Specialization.015.png)
 
-The shadowing of the deeper member is registered inside the outer parent. It would seem easier to just register a shadower inside the deeper object itself, but the problem is that the shadowing is specific to accessing the deeper object through the outer parent that defines the shadow. Through any other path, the deeper member is not shadowed.
+The shadowing of the deeper member is registered inside the outer parent. It might seem easier to just register a shadower inside the deeper object itself, but the problem is that the shadowing is specific to accessing the deeper object through the outer parent that defines the shadow. Through any other path, the deeper member is not shadowed.
 
 To store shadowings, exclusions and inclusions, the outer parent contains a __Deeper Specializations__ structure, which is a parallel structure, parallel to the object structure inside the parent.
 

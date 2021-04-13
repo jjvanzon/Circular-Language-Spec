@@ -32,7 +32,7 @@ What I have described in the previous sections is the standard notation for Symb
 - Shapes are used to distinguish between inheritance, encapsulation and execution.
 - Names are used to indicate what something is called, what something refers to and of which type it is.
 
-As I said: this is the standard way that the diagram elements are used to express a system. To keep things clear I only introduced you to the standard notation or it would have been futile to explain the notation at all. 
+As I said: this is the standard way that the diagram elements are used to express a system. To keep things clear I only introduced you to the standard notation or it might have been futile to explain the notation at all. 
 
 ### Customization
 
@@ -142,4 +142,4 @@ Another thing about criterial diagram aspects is that you can assign a highlight
 -----
 
 I might want to switch the square and pentagon symbols.  
-A square would then become a module. A pentagon would become an execution point and then execution would look like neurons between which electrons are shot...
+A square might then become a module. A pentagon might become an execution point and then execution might look like neurons between which electrons are shot...

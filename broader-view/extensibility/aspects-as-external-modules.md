@@ -38,7 +38,7 @@ __Contents__
 
 Aspects might add something to every class that supports the aspect. The class doesn’t get polluted directly. An aspect might add a sub object operating on the class’s members in a generic way.
 
-What might be desired from Encircle, would be to offer a way to describe any of the aspects that were implemented in experiment 0.9 in text code, and how do I let each class decide which aspect to support. How do I set a default as to which aspects classes should support?
+What might be desired from Encircle, might be to offer a way to describe any of the aspects that were implemented in experiment 0.9 in text code, and how do I let each class decide which aspect to support. How do I set a default as to which aspects classes should support?
 
 The main part of the text code description of an aspect is the code as generated before, but now with template placeholders in it.  
 Shouldn’t be hard. In the code generator version of Encircle, every module decided which aspects to support

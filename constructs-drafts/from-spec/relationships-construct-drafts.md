@@ -24,7 +24,7 @@ A class-relationship structure might be a program's bone structure.
 
 ![](images/1.%20Relationships%20Construct%20Drafts.012.png)
 
-That proposal might be a problem, because it seems to clash with a proposed notation for optional. And also it seems to not reflect the containment structure: there would be a container in between the half shape and the other parts of the diagram. Seems unfortunate.
+That proposal might be a problem, because it seems to clash with a proposed notation for optional. And also it seems to not reflect the containment structure: there might be a container in between the half shape and the other parts of the diagram. Seems unfortunate.
 
 In another proposal:
 

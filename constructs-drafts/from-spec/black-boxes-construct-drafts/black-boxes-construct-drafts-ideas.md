@@ -289,7 +289,7 @@ Friend Access,
 In Encircle’s implementation of parameters, commands only become part of a class if the class is used for one of the parameters of the command.  
 This makes it possible for a command to become part of multiple classes.  
 This is a richer and more dynamic approach, than object oriented programming languages. You may now think you are loosing control over the system, if a class gets so easily extended with more commands. But you still have control, as might be explained in the Interfaces article group.  
-There is one thing however, that’s missing from the story. In C++ and other object oriented programming languages, there was one parameter of a global method, that was the this-parameter. The class of the this parameter determined which class the method would be part of. That parameter was the only parameter in the method, whose private contents could be directly accessed by the method. This is the one thing missing in the story of Parameters: when does a command have access to the private contents of a parameter? The answer lies in __Friend__-access. A command has access to the private contents of a class, when the class declares its command to be __Friend__. When a related object is declared __Friend__, then the related object can access the private contents of the one that declared it __Friend__.
+There is one thing however, that’s missing from the story. In C++ and other object oriented programming languages, there was one parameter of a global method, that was the this-parameter. The class of the this parameter determined which class the method might be part of. That parameter was the only parameter in the method, whose private contents could be directly accessed by the method. This is the one thing missing in the story of Parameters: when does a command have access to the private contents of a parameter? The answer lies in __Friend__-access. A command has access to the private contents of a class, when the class declares its command to be __Friend__. When a related object is declared __Friend__, then the related object can access the private contents of the one that declared it __Friend__.
 
 Commands do not decide on their own whether they have access to a class’s private contents. A class grants a command access to its private contents. 
 
@@ -345,7 +345,7 @@ The complexity hiding aspect is clearly expresses the black boxing concept in th
 
 ##### Using command symbols
 
-< Cover ~all (?) the notations when one of them is a command symbol? It is to point out how it would look in the traditional approach where commands are friends with their class... >
+< Cover ~all (?) the notations when one of them is a command symbol? It is to point out how it might look in the traditional approach where commands are friends with their class... >
 
 -----
 
@@ -426,7 +426,7 @@ Interesting new system commands:
 - Access Modifier Get
 - Access Modifier Set
 
-So would each system commands have its own system command
+So might each system commands have its own system command
 controlling the access modifier?  
 But what modifies the access to the access modifier system commands?  
 \> Details...
@@ -442,7 +442,7 @@ Access Modifier:
 
 The Access Modifier property procedures can be access controlled themselves, so that they can be made inaccessible, for instance when you don’t want to be able to change the access modifier at run time. The access modifiers of the Access Modifier property can’t be changed at run time themselves. In other words: the Access Controller property procedures don’t have an Access Controller property of their own. This complies with the rule: system procedures don’t have system procedures of their own.
 
-A single procedure can have several access modifiers so there are multiple access modifiers to get and set. This would suggest that the Access Modifier property has a dimension. However, when you call the Access Modifier property, you return or set the access modifier imposed by the object you’re calling from. The object you’re calling from is a hidden argument to the Access Modifier property. The access modifiers aren’t really stored inside the procedure, but in the object symbol that imposes it.
+A single procedure can have several access modifiers so there are multiple access modifiers to get and set. This might suggest that the Access Modifier property has a dimension. However, when you call the Access Modifier property, you return or set the access modifier imposed by the object you’re calling from. The object you’re calling from is a hidden argument to the Access Modifier property. The access modifiers aren’t really stored inside the procedure, but in the object symbol that imposes it.
 
 If the access modifier isn’t variable at run time, then the type defines a fixed access modifier. If the access modifier *is* variable at run time then the access modifier can be different for each instance of the type.
 

@@ -30,7 +30,7 @@ This documentation may contain drafts of ideas that might not become part of the
 
     - Traditionally systematics of a program might be expressed by means of text code. But in Encircle language, systematics might be stored in another way for instance as binary interlinked objects. Text code may be a mere *expression* of those stored objects. A *Text Code* sub-module might translate those systematics to text code. The text code might be adapted, which may result in changes to the stored objects, rather than the text code’s being literally stored.
 
-    - One of the ideas would be that each language element’s textual representation might be considered the language element’s *literal*, that could be read out and assigned. The idea was, that however large the construct, its text code might still just be a literal, be it composed of the literals of its sub-constructs. This is just an idea, but it might be the way to go.
+    - One of the ideas might be that each language element’s textual representation might be considered the language element’s *literal*, that could be read out and assigned. The idea was, that however large the construct, its text code might still just be a literal, be it composed of the literals of its sub-constructs. This is just an idea, but it might be the way to go.
 
     - Exactly how the textual code might look in Encircle, might not have been decided yet, because at one time it was considered more important to work out the language *conceptually* along with a *diagram notation*, than to work out the *textual notation*.
 
@@ -48,7 +48,7 @@ This documentation may contain drafts of ideas that might not become part of the
 
 - ### [Automatic Containment](automatic-containment.md)
 
-    - The concept of automatic containment would be about automatically translating a referential structure to a containment structure.
+    - The concept of automatic containment might be about automatically translating a referential structure to a containment structure.
 
     - The idea may have loose ends.
 
@@ -56,19 +56,19 @@ This documentation may contain drafts of ideas that might not become part of the
 
     - In the future, the *Summary* article might contain a summary of all the coding concepts introduced. It is supposed to become a quick-reference card of all the concepts, with perhaps textual and diagram notation next to it, without further explanations. The whole language might be displayed in this overview.
   
-    - This summary is not made yet, but might be created when the design of the Encircle language might be more complete. It may be decided to leave out such a summary, perhaps if the added value would be questioned.
+    - This summary is not made yet, but might be created when the design of the Encircle language might be more complete. It may be decided to leave out such a summary, perhaps if the added value might be questioned.
 
 - ### [Aspects](aspects.md)
 
-    - Aspects might be power-enhancements of software, that might be immediately applied to any system without any further programming. The hope would be that aspects for instance make you able to program "copy and paste" functionality once, and then automatically apply it to any system, without any additional code. The hope would be that Encircle language could have a variation on *aspects* from other ideas in the world about patterns and programming langages. Aspect may be the result of a transition from code generators to generic modules, that might adapt themselves to a structure description, that you might feed to it. In experiment 0.9, which was a code generator, a certain aspect of the code (such as logging, copy and paste or XML serialization) may be isolated into a single module, so that the aspect for it might not be spread out all over the *generator’s* code. In the genera*ted* code, however, the aspect *could* be spread out all over the code. The idea was, that any aspect you might generate code for, may be replaced by an *aspect* module, that might embed all the generic code. The aspect might be automatically applied to any object or system by just specifying, that the system would support the aspect. The idea may not be fully worked out yet, but the functional requirement might be, simply stated: everything you might do with a concept in the experimental code generator version of Encircle, should be (easily) definable as a separate aspect module, that would replace it. The idea might not have been worked out in software yet.
+    - Aspects might be power-enhancements of software, that might be immediately applied to any system without any further programming. The hope might be that aspects for instance make you able to program "copy and paste" functionality once, and then automatically apply it to any system, without any additional code. The hope might be that Encircle language could have a variation on *aspects* from other ideas in the world about patterns and programming langages. Aspect may be the result of a transition from code generators to generic modules, that might adapt themselves to a structure description, that you might feed to it. In experiment 0.9, which was a code generator, a certain aspect of the code (such as logging, copy and paste or XML serialization) may be isolated into a single module, so that the aspect for it might not be spread out all over the *generator’s* code. In the genera*ted* code, however, the aspect *could* be spread out all over the code. The idea was, that any aspect you might generate code for, may be replaced by an *aspect* module, that might embed all the generic code. The aspect might be automatically applied to any object or system by just specifying, that the system might support the aspect. The idea may not be fully worked out yet, but the functional requirement might be, simply stated: everything you might do with a concept in the experimental code generator version of Encircle, should be (easily) definable as a separate aspect module, that might replace it. The idea might not have been worked out in software yet.
 
 - ### [Concurrency](concurrency.md)
 
-    - Concurrency might occur when several running processes or users would access the same data at the same time. This may result in several problems. There might be several candidate mechanisms to help with concurrency problems. Which is the best, might not be clear. This article may contain quite some ideas about it, but they might still be under construction. The article *Internet As A Single Computer* might shed light on the problem better. The *Input Output* concept might at one point also offer a method to resolve concurrency issues.
+    - Concurrency might occur when several running processes or users might access the same data at the same time. This may result in several problems. There might be several candidate mechanisms to help with concurrency problems. Which is the best, might not be clear. This article may contain quite some ideas about it, but they might still be under construction. The article *Internet As A Single Computer* might shed light on the problem better. The *Input Output* concept might at one point also offer a method to resolve concurrency issues.
 
 - ### [Conversions](conversions.md)
 
-    - When an object’s state is assigned, and the state comes from an object with perhaps a different class, the assigned data may need to be converted. The conversion might be performed by a conversion command. Conversion commands might be considered system commands. New conversion commands might be introduced into the system. When objects would not match on assignment, implicit conversion may take place. The right conversion command might be found by means of *Object Resolution* (see *Object Resolution).* Conversion commands might also be called *explicitly*. The Conversions article might only contain a brief description of the idea. The details might be worked out later.
+    - When an object’s state is assigned, and the state comes from an object with perhaps a different class, the assigned data may need to be converted. The conversion might be performed by a conversion command. Conversion commands might be considered system commands. New conversion commands might be introduced into the system. When objects might not match on assignment, implicit conversion may take place. The right conversion command might be found by means of *Object Resolution* (see *Object Resolution).* Conversion commands might also be called *explicitly*. The Conversions article might only contain a brief description of the idea. The details might be worked out later.
 
 - ### [Errors & Warnings](errors-and-warnings.md)
 
@@ -82,7 +82,7 @@ This documentation may contain drafts of ideas that might not become part of the
 
 - ### [Peels](peels.md)
 
-    - This article seems to be about a concept, that may have later been rejected. The article seems to contain texts out of an older design of the diagram language, that would be about a notational concept that seemed later be rejected: using extra lines around a shape to try and reveal information about the target of a line.
+    - This article seems to be about a concept, that may have later been rejected. The article seems to contain texts out of an older design of the diagram language, that might be about a notational concept that seemed later be rejected: using extra lines around a shape to try and reveal information about the target of a line.
 
 - ### [Special Access](special-access.md)
 

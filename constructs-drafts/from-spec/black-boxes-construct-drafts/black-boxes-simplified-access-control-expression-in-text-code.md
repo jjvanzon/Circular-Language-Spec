@@ -186,13 +186,13 @@ Object Set Public, Value Set Private
 
 ### In, Out and Thru
 
-The terms I would like to see back in access control literals are the terms __In__, __Out__ and __Thru__. It would greatly increase the readability if you could for instance say:
+The terms I might like to see back in access control literals are the terms __In__, __Out__ and __Thru__. It might greatly increase the readability if you could for instance say:
 
 ```
 Object In, Value Out
 ```
 
-Earlier on, this article introduced a way to use the terms __In__, __Out__ and __Thru__, that I later had to withdraw. It was implied, that In is writing from the outside, and Out is writing from the inside, so it implied, that it was about the access direction of *writing*. However, now I figure that it is whether the inner object writes or reads, so __In__ would mean reading from the inside and __Out__ would mean writing on the inside. How public reading and writing might be called from that perspective, is not clear to me yet (2008-09-29). I might further work out the terms In, Out and Thru in the *Advanced Command Articles*.
+Earlier on, this article introduced a way to use the terms __In__, __Out__ and __Thru__, that I later had to withdraw. It was implied, that In is writing from the outside, and Out is writing from the inside, so it implied, that it was about the access direction of *writing*. However, now I figure that it is whether the inner object writes or reads, so __In__ might mean reading from the inside and __Out__ might mean writing on the inside. How public reading and writing might be called from that perspective, is not clear to me yet (2008-09-29). I might further work out the terms In, Out and Thru in the *Advanced Command Articles*.
 
 Also: it was implied that in __Object Set Public, Value Set Private__, you do not privately *get* the object, that was *set* publicly. But that was a mistake as well: you do first get the object privately in order to set it’s value. This all might be worked out in the *Advanced Command Articles*.
 
@@ -243,7 +243,7 @@ But perhaps you should not go with such implication and insist you always expres
 
 Since __New__ and __Annul__ are both writing, you may use the terms __In__ and __Out__ for it.
 
-__New In__ would mean you can execute __New__ from the outside and __New Out__ means you can execute __New__ on the inside. This produces the following, easier to interpret literals:
+__New In__ might mean you can execute __New__ from the outside and __New Out__ means you can execute __New__ on the inside. This produces the following, easier to interpret literals:
 
 ```
 New In
@@ -343,7 +343,7 @@ I also thought about replacing __Get__ and __Set__ by __Accessible__ when the __
 
 But that naming resulted in overlap in possibilities. The same access control situation could be expressed in several different ways. And I could *not* come up with an exact rule to pick the clearest naming from a set of overlapping naming possibilities.
 
-When I also tried to apply the terms __In__, __Out__ and __Thru__, then I got really confused. At that point I decided, that I would no longer think about it anymore, and only summarize my existing, unfinished ideas in this article. It did not even turn out that bad and it is a good start anyway.
+When I also tried to apply the terms __In__, __Out__ and __Thru__, then I got really confused. At that point I decided, that I might no longer think about it anymore, and only summarize my existing, unfinished ideas in this article. It did not even turn out that bad and it is a good start anyway.
 
 ### Old naming
 

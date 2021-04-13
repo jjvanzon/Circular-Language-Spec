@@ -518,11 +518,11 @@ So for reference parameters, the in-out-thru direction might be an abstract indi
 
 #### In, Out & Thru
 
-The terms I would like to see back in access control literals are the terms __In, Out__ and __Thru__.
+The terms I might like to see back in access control literals are the terms __In, Out__ and __Thru__.
 
 After a lot of brainstorm I figured, that whether something is __In__ or __Out__ depends on whether something is being *written* from the *outside* or on the *inside*. When something is set on both the outside and the inside, then it is called __Thru__. From which direction something is *read* is not relevant for the terms __In, Out__ and __Thru__.
 
-When you write one aspect on the outside, it does not mean that the same aspect is supposed to be read on the inside. You may write one aspect on the outside and read another aspect on the inside. For instance, if you write the object from the outside, you may only read its value from the inside. Earlier, this would produce the following literal:
+When you write one aspect on the outside, it does not mean that the same aspect is supposed to be read on the inside. You may write one aspect on the outside and read another aspect on the inside. For instance, if you write the object from the outside, you may only read its value from the inside. Earlier, this might produce the following literal:
 
 - __Object Set Public, Value Set Private__
 
@@ -603,12 +603,12 @@ The problem with defining what is input and what is output, is:
 
 You might think: both; something that is written from the outside is read on the inside and something that is written on the inside, is read from the outside.
 
-But one prime example would overthrow that: An object can be written, so passed to a command, and the value of the object might be read. So Object Set Public, Value Get Private. So then you do not set the object, to read it on the inside, but the object is set, to read the value on the inside, so when an aspect, such as Object or Value, is In, it does not mean that it is both written from the outside and read on the inside.
+But one prime example might overthrow that: An object can be written, so passed to a command, and the value of the object might be read. So Object Set Public, Value Get Private. So then you do not set the object, to read it on the inside, but the object is set, to read the value on the inside, so when an aspect, such as Object or Value, is In, it does not mean that it is both written from the outside and read on the inside.
 
 But in the car on my way home from work I realized, that I have been forgetting about half the gets. When an object is written from the outside of the command, of which the __Value__ is read on the inside, the __Object__ is read as well, because you need to read the object, before you can retrieve the value of the object. So the object is read for access. Not for copy / assignment.
 
 Perhaps you need to consider reading an object for access too. I already wrote something about that in the old Symbol documentation: different forms of getting, that also might be separately access controlled.  
-It makes a difference when something gettable for access compared to gettable for copying. It would make a difference for outcome dependency. For instance: when you can get something for accessing but can’t get something for copying, then the object can be accessed inside the command, but it can not be passed further down into sub-commands.  
+It makes a difference when something gettable for access compared to gettable for copying. It might make a difference for outcome dependency. For instance: when you can get something for accessing but can’t get something for copying, then the object can be accessed inside the command, but it can not be passed further down into sub-commands.  
 This has implications for automatic determination of in out and thru and also for compared IO and automatic execution order.
 
 Perhaps I need to consider Command IO a little to come up with a more exact definition of input and output. But I think I am getting there now.
@@ -657,7 +657,7 @@ __Object Set Public, Value Get Private__
 __Object Set Public, Object Get Private For Redirection, Value Get Private__
 
 Hmmm... if you get the value of an object, does that mean you first follow redirection? I guess you do..  
-The last bit of the access control literal specifies, you can only follow redirection of the object to get the value or otherwise it would be Data Get Private.
+The last bit of the access control literal specifies, you can only follow redirection of the object to get the value or otherwise it might be Data Get Private.
 
 But the access literal above further simplified  
 = Object In For Redirection, Value Get Private.
@@ -992,7 +992,7 @@ There’s more to getting the explicit notation of argument reference than just 
 
 ![](images/Input%20Output%20Parameter%20Passings.084.png)
 
-This diagram has two argument references in it. If you would simply invert the direction you’d get the following:
+This diagram has two argument references in it. If you might simply invert the direction you’d get the following:
 
 ![](images/Input%20Output%20Parameter%20Passings.085.png)
 
@@ -1223,7 +1223,7 @@ It always happens just after the diamond executes.
 
 < The parameter objects destroy right after the call. If you use the top circle like above, every consult of the top circle might result in executing the diamond again. To persist the information contained in the argument, without having to call the procedure again, you have to do a State Copy. Another way of using output parameters is to give the execution a reference to an external symbol. Anyway: if you want return information to persist after the call, it has to be stored in external symbol: store the returned state to an object that the caller contains, or pass a reference to the caller’s object to the called procedure >
 
-< That’s true what I just said, but there’s nothing wrong with linking directly to the parameter and executing the procedure on each consult. There’s nothing wrong with that. The link would be something like consulting a property procedure in VB, a Get, which returns a reference to an object. Every time you consult the property, the procedure is launched again. That’s normal. >
+< That’s true what I just said, but there’s nothing wrong with linking directly to the parameter and executing the procedure on each consult. There’s nothing wrong with that. The link might be something like consulting a property procedure in VB, a Get, which returns a reference to an object. Every time you consult the property, the procedure is launched again. That’s normal. >
 
 < Might denote that the notation above is not an output situation. It’s an implicit call situation >
 
@@ -1308,7 +1308,7 @@ In implicit argument assignment, there is no way to express state assignment.
 
 ![](images/Input%20Output%20Parameter%20Passings.112.jpeg)
 
-If it were to become a connection between symbols, like implicit line assignments, it would definitely not behave the same as a line.
+If it were to become a connection between symbols, like implicit line assignments, it might definitely not behave the same as a line.
 
 ![](images/Input%20Output%20Parameter%20Passings.113.jpeg)
 

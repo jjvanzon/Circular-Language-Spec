@@ -20,7 +20,7 @@ You might find the following content here:
 
 - ### [Literals](literals)
 
-    - The idea here would be that each language element’s textual representation might be considered the language element’s *literal*, that could be read out and assigned. The idea was, that however large the construct, its text code might still just be a literal, be it composed of the literals of its sub-constructs.
+    - The idea here might be that each language element’s textual representation might be considered the language element’s *literal*, that could be read out and assigned. The idea was, that however large the construct, its text code might still just be a literal, be it composed of the literals of its sub-constructs.
 
 - ### [Parameters in Text Code](parameters-in-text-code)
 
@@ -53,7 +53,7 @@ You might find the following content here:
 
     - If (binary) stored object systematics might be translated to text code, this rule might be applied, that a variable is declared in the text code right before it is used. This also might mean, that if a variable is used in several deeper blocks of code, the variable may need to be declared inside the *closest mutual parent* of those deeper blocks.
 
-    - The concept of *‘closest mutual parent’* seems similar as a diagram notation idea that might be called *automatic containment*. There, a variable, reference or object would be displayed inside the *closest mutual parent* of all the objects which might use the variable, reference or object.
+    - The concept of *‘closest mutual parent’* seems similar as a diagram notation idea that might be called *automatic containment*. There, a variable, reference or object might be displayed inside the *closest mutual parent* of all the objects which might use the variable, reference or object.
 
 - ### Half-Case-Sensitive Identifiers
 
@@ -63,7 +63,7 @@ You might find the following content here:
 
 - ### Macro Keywords
 
-    - Macro keywords would be an idea, that may have come from an older design of the diagram notation. Access modifier literals might have been considered macro keywords. Some of the access modifiers, like __Public Read-Only__ could mean: __Get Public__ and __Set Private__. So the literals __Get Public__ and __Set Private__ may be replaced by the ‘macro keyword’ __Public Read-Only__. So there would be one keyword replacing a string of other keywords. That might have been the original concept of macro keywords. What place it may still have in the a newer design of the language might not be that clear. It might become part of the subject of *aspect literals*, with which you might introduce new textual notations.
+    - Macro keywords might be an idea, that may have come from an older design of the diagram notation. Access modifier literals might have been considered macro keywords. Some of the access modifiers, like __Public Read-Only__ could mean: __Get Public__ and __Set Private__. So the literals __Get Public__ and __Set Private__ may be replaced by the ‘macro keyword’ __Public Read-Only__. So there might be one keyword replacing a string of other keywords. That might have been the original concept of macro keywords. What place it may still have in the a newer design of the language might not be that clear. It might become part of the subject of *aspect literals*, with which you might introduce new textual notations.
 
 - ### Pointer Operators
 

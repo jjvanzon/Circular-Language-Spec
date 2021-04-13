@@ -25,5 +25,5 @@ So in one layer I insert the Related Classes data about the current layer into t
 That means in Creator Text Code I have to insert the Related Classes data into the previous layer: GGG, but this data reflects the structure specified in the Creator Text Code.  
 Filling in the Related Classes data into the previous layer is called a Quick & Dirty solution, because officially the deeper layer should do that automatically.  
 So officially GGG should fill the Related Classes of the Creator Text Code automatically, but because it can't (yet), Creator In Creator Text Code has to do it.  
-What would work is, that in parsing a Relation, I automatically add the Related Class to GGG layer. That would take care of it.  
-Then a Creator Text Code Creator would result in the same thing as the current gggCreator.
+What might work is, that in parsing a Relation, I automatically add the Related Class to GGG layer. That might take care of it.  
+Then a Creator Text Code Creator might result in the same thing as the current gggCreator.

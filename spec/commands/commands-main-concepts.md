@@ -96,7 +96,7 @@ A *dashed line* between command symbols might make one command a kind of copy of
 
 It might also be said, that it indicates one command's being the __prototype__ for another.
 
-If a command would *only* be used as a prototype, it might be drawn with a *dashed border*:
+If a command might *only* be used as a prototype, it might be drawn with a *dashed border*:
 
 ![](images/1.%20Commands%20Main%20Concepts.006.png)
 
@@ -140,7 +140,7 @@ To express it in Encircle, a square might be used:
 
 Its being a square, might indicate that it may *not execute*.
 
-If a symbol would *only* be used as a definition, it might be drawn out with a *dashed border* too:
+If a symbol might *only* be used as a definition, it might be drawn out with a *dashed border* too:
 
 ![](images/1.%20Commands%20Main%20Concepts.006.png)
 
@@ -253,7 +253,7 @@ void MyDefinition()
 }
 ```
 
-The inner braces and its contents would be the code block.
+The inner braces and its contents might be the code block.
 
 In Encircle, a code block may be *embedded* inside another command:
 
@@ -380,7 +380,7 @@ Minus the details:
 Where(...)
 ```
 
-So the `...` would be the lambda expression.
+So the `...` might be the lambda expression.
 
 Honestly said, in Encircle there might not be a way to distinguish it from *clauses*.
 
@@ -400,7 +400,7 @@ The implementation of a command might be defined as the private contents of a co
 
 ![](images/1.%20Commands%20Main%20Concepts.024.png)
 
-The large square would have contents, drawn with thick lines, would represent the command’s *implementation*, because they would be private. The objects inside the large square that are drawn with thinner lines, might be the command’s parameters: its publics. (Notation for *parameters* might be involved in the picture above, but might remain unexplained until the chapter "Parameters".)
+The large square might have contents, drawn with thick lines, might represent the command’s *implementation*, because they might be private. The objects inside the large square that are drawn with thinner lines, might be the command’s parameters: its publics. (Notation for *parameters* might be involved in the picture above, but might remain unexplained until the chapter "Parameters".)
 
 ### Conclusion
 
@@ -498,13 +498,13 @@ Initially, a call might be sort of a copy of its definition. Data of the command
 At first a command call might be sort of asleep. That might be when there is a chance to set its parameters. After that the command call might be run.
 
 << detail >>  
-Expected behavior might be that a command call would only run once.
+Expected behavior might be that a command call might only run once.
 
 << creation behavior of commands >>  
 If the parent command runs it might automatically executes the calls inside it.
 
 << detail >>  
-When a call might be placed directly inside an *object,* it might* be a question what would actually happen to it. It may be an idea, that the command might only be run manually. Another idea might be, that those calls might run just after the object was created (perhaps a bit like constructors from object oriented programming).
+When a call might be placed directly inside an *object,* it might* be a question what might actually happen to it. It may be an idea, that the command might only be run manually. Another idea might be, that those calls might run just after the object was created (perhaps a bit like constructors from object oriented programming).
 
 << commands compared to objects >>  
 Because `the` definition `is the` prototype of `the` call, and `not the same` object as `the` call, a dashed class line `needs to` be used to point out `the` definition of a call.
@@ -571,13 +571,13 @@ A clause `can` be *active* or *inactive*. If it `is` active, it is like a comman
 A clause `is always` created `as long as the` parent command `is` created. 
 
 << detail >>  
-A clause `does not` redirect its definition, because then `it would` be a command call.
+A clause `does not` redirect its definition, because then `it might` be a command call.
 
 << detail >>  
-A clause `does not` redirect its object, because then `it would` be a command reference.
+A clause `does not` redirect its object, because then `it might` be a command reference.
 
 << detail >>  
-A clause `is never` situated inside an object, or `it would` not be a clause.
+A clause `is never` situated inside an object, or `it might` not be a clause.
 
 << detail >>  
 Clauses `are` like command definitions, `therefore` they `can` have parameters `just like` command definitions.
@@ -799,7 +799,7 @@ So it `is not so`, that each diamond in `the` diagram represents its own individ
 << repeated >>  
 *Active* clauses, command calls and active command references in parent commands `are always` private, because `you can not` reference a sub-command.
 
-But *inactive* clauses `*can*` be referenced and might be made public. If `you make` an inactive clause public, `you might` make it an __Object `Out`__ parameter: an object `produced or determined` by `the` command. A public inactive clause `would` be a command definition `produced` by another command.
+But *inactive* clauses `*can*` be referenced and might be made public. If `you make` an inactive clause public, `you might` make it an __Object `Out`__ parameter: an object `produced or determined` by `the` command. A public inactive clause `might` be a command definition `produced` by another command.
 
 #### Diagram Notation
 
@@ -812,7 +812,7 @@ But *inactive* clauses `*can*` be referenced and might be made public.
 
 ![](images/1.%20Commands%20Main%20Concepts.053.png)
 
-If `you make` an inactive clause public, `you might` make it an __Object `Out`__ parameter: an object `produced or determined` by `the` command. It `would` be an __Object `Out`__ parameter, that `is` an executable object. That `would` work `just fine`.
+If `you make` an inactive clause public, `you might` make it an __Object `Out`__ parameter: an object `produced or determined` by `the` command. It `might` be an __Object `Out`__ parameter, that `is` an executable object. That `might` work `just fine`.
 
 ### Reading & Writing Parameters
 
@@ -843,19 +843,19 @@ In some programming languages, commands might not be exchangeable with objects, 
 
 Using some programming languages a process might be implemented as a procedure. Sometimes a procedure might become more complex. It might be an option to then rewrite a procedure to an object, whose purpose could be to execute that procedure. This object may then hide complexity of the input and output better, and might better hides the complexity of the procedure itself. An object in some programming languages might offer a way to split up a procedure into separate steps, without seeing that on the outside. Turning a procedure into an object may make linking to it more flexible. For instance you might plug a new process into an already existing system, that was not aware of this procedure. That might not be easily possible, unless you turn a procedure into an object.
 
-In Encircle though, procedures might be considered an object as is, without rewriting anything. The only difference might be that this object has the special property, that it would be *executable*.
+In Encircle though, procedures might be considered an object as is, without rewriting anything. The only difference might be that this object has the special property, that it might be *executable*.
 
 In the Encircle notation, a command could have complexity hiding and linking possibilities, just like a 'normal' object. A command might for instance also *inherit* a base procedure from another command, just to name something.
 
 A command could be structured similarly as an object. Perhaps that takes away the argument that using just procedures might be a less structured way of programming than using objects. A command might already be an object, that represents a process. It may looks like a command, but might have the capabilities of an object.
 
-In that philosophy, commands would be *executable objects*.
+In that philosophy, commands might be *executable objects*.
 
 ### Execute Once
 
 << creation behavior of commands >>  
 << details >>  
-a command object might only execute *once*. A command object may represent a single execution. An execution might be created and dormant until it would be run. This might be a chance to set the input of the command. After a command was run, the execution might stay created while it may still be referenced, so output might be read, until `everybody` might be done with it. When the executable object would not be referenced anymore, it might be destroyed. A command object might not be executed twice: to run a command again, a new command object might be created, that may have the same *definition*. In an attempt to execute the same command symbol twice, what might happen instead, is that the old object may be released, and a new object could be created in its place. A reason why a command object might only be executed once, may be that this would give all the referrers a chance to read `the` execution’s output, `whenever` they want, `without` it `being` overwritten by new output. A command object `stays` created for `as long as` it `is being` referenced, so `everybody can` read `the` output of `the` command. `The` command object `might only` be `destroyed` when `nothing refers` to it `anymore`.
+a command object might only execute *once*. A command object may represent a single execution. An execution might be created and dormant until it might be run. This might be a chance to set the input of the command. After a command was run, the execution might stay created while it may still be referenced, so output might be read, until `everybody` might be done with it. When the executable object might not be referenced anymore, it might be destroyed. A command object might not be executed twice: to run a command again, a new command object might be created, that may have the same *definition*. In an attempt to execute the same command symbol twice, what might happen instead, is that the old object may be released, and a new object could be created in its place. A reason why a command object might only be executed once, may be that this might give all the referrers a chance to read `the` execution’s output, `whenever` they want, `without` it `being` overwritten by new output. A command object `stays` created for `as long as` it `is being` referenced, so `everybody can` read `the` output of `the` command. `The` command object `might only` be `destroyed` when `nothing refers` to it `anymore`.
 
 ### Command Definition Analogy to Classes
 
@@ -873,7 +873,7 @@ When an *object* `is` drawn with a dashed line, then it `is only` used as a clas
 
 ![](images/1.%20Commands%20Main%20Concepts.054.png)
 
-This notation `might *not*` be copied to `the` concept of commands. This `is` because a command’s definition `might usually` be a square and a square `might usually` be a command’s definition, so `using` dashed lines for command definitions, `would` create an `overload` of dashed squares. So command symbols, that `are only` used as a definition, `do not` get a dashed notation.
+This notation `might *not*` be copied to `the` concept of commands. This `is` because a command’s definition `might usually` be a square and a square `might usually` be a command’s definition, so `using` dashed lines for command definitions, `might` create an `overload` of dashed squares. So command symbols, that `are only` used as a definition, `do not` get a dashed notation.
 
 << details >>  
 A command, that might be used as a definition, `is usually` not executable. Only `individual` calls to `the` command, that `use the` command as a definition, might be executable. If a command definition `is` executable `after all`, then it `is clearly` mentioned, that it `is` an *active* command definition, because it might be a special situation.

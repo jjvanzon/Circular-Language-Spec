@@ -46,7 +46,7 @@ Targets,
 2010-05
 
 \> Now my mind says: follow all redirections, including multiple interface redirections... but in the Target Class story I stopped doing that. Maybe it is just what you want the term Target Interface to define.  
-\> Perhaps there should be a distinction between interface definition and target interface. I do feel that both the ‘follow only one class or interface step’ version is a concept to be aware of, but the target interface concept would actually be following all redirections to find the object that actually determines the publics.  
+\> Perhaps there should be a distinction between interface definition and target interface. I do feel that both the ‘follow only one class or interface step’ version is a concept to be aware of, but the target interface concept might actually be following all redirections to find the object that actually determines the publics.  
 \> Yes. What is now called Target Interface should probably be called the *Interface Object* and the *Target Interface* is the object after following all types of redirections in any order.
 
 JJ

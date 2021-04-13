@@ -259,7 +259,7 @@ The __Redraw Button__ procedure is rather complex. In this procedure lines of th
 
 You can also see here that separately defining a procedure can lead to the *reuse* of procedures. The __Draw Line__ procedure is reused three times in the example above. There are many procedures already defined, that you might use one way or another. Most of these procedures are encapsulated in a type. There’s for instance a __File__ type that contains procedures with which to control a single computer file.
 
-So where does it end? Procedures would continue to delegate to one another and nothing would really actually happen. Well, it ends at a special group of procedures that don’t call other procedures anymore. Each of those procedures executes a so called machine instruction: a basic instruction that is sent to the computer’s central processing unit (CPU) and make the *computer* *do* something. The CPU performs a hardware defined *machine* procedure.
+So where does it end? Procedures might continue to delegate to one another and nothing might really actually happen. Well, it ends at a special group of procedures that don’t call other procedures anymore. Each of those procedures executes a so called machine instruction: a basic instruction that is sent to the computer’s central processing unit (CPU) and make the *computer* *do* something. The CPU performs a hardware defined *machine* procedure.
 
 That way there can develop a big procedure call tree-out, which makes a single procedure consist of many, many machine instructions, ranging from tens to thousands of machine instructions or even more.
 
@@ -466,7 +466,7 @@ This type of definition is usually not called a definition. The clause might be 
 
 ![](images/7.%20Commands%20Ideas.029.png)
 
-The clause can be a diamond or a square. Its container can also be a diamond as well as a square. A clause does not have a reference line, or it would have been a reference or a call, not a clause.
+The clause can be a diamond or a square. Its container can also be a diamond as well as a square. A clause does not have a reference line, or it might have been a reference or a call, not a clause.
 
 #### Active and Inactive
 
@@ -954,7 +954,7 @@ However, the picture above is actually again an implicit notation for something 
 
 ### Brainstorm
 
-A procedure might probably not get its own symbol anyway. It would just be an object with an execution point.
+A procedure might probably not get its own symbol anyway. It might just be an object with an execution point.
 
 A procedure symbol can define its own procedure:
 
@@ -1015,7 +1015,7 @@ Here is a list of possible reference targets and call targets:
 |-----|----|
 | ![](images/7.%20Commands%20Ideas.077.jpeg) | __Reference to sibling inactive clause, in a square.__ <br> Only possible for static procedure members or exclusive establishment. | 
 | ![](images/7.%20Commands%20Ideas.078.jpeg) | __Reference to sibling active clause, in a square.__ <br> Only possible for static procedure members or exclusive establishment. | 
-| ![](images/7.%20Commands%20Ideas.079.jpeg) | __Call to sibling inactive clause, in a square.__ <br> This is like a jump to a clause, that would otherwise not execute. <br> Only possible for static procedure members or exclusive establishment. |
+| ![](images/7.%20Commands%20Ideas.079.jpeg) | __Call to sibling inactive clause, in a square.__ <br> This is like a jump to a clause, that might otherwise not execute. <br> Only possible for static procedure members or exclusive establishment. |
 | |A diamond can be executing. Only during the execution of the diamond, lines between its non static children can be real. If the diamond isn’t executing, or it’s not a diamond, but a square, lines between the non static children are suggestive. Only lines between static members in such cases, can be real.|
 
 ### From the Original Assignment Article Group

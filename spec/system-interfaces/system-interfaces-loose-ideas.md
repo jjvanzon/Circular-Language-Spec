@@ -178,7 +178,7 @@ JJ
 System Interfaces,  
 2009-08-31
 
-In 2004 there used to be the Shape aspect, but now I would make them a set of booleans:
+In 2004 there used to be the Shape aspect, but now I might make them a set of booleans:
 
 - Is Command
 - Is Executable
@@ -208,7 +208,7 @@ The __State__ symbol aspect can be obtained and assigned too.
 
 The state is obtained to be immediately assigned to another object. That way the values and line targets of one object are copied to another object, giving both objects the same state.
 
-\> 2009-08-31: so also, the targets of the sub-objects would be copied... or the targets of a related item.
+\> 2009-08-31: so also, the targets of the sub-objects might be copied... or the targets of a related item.
 
 JJ
 
@@ -429,7 +429,7 @@ Because procedures have system procedures themselves, you’d think that an syst
 System Interfaces  
 2004,
 
-If you see the system interface as an object, though, you can regard the system interface to have the same type for every object symbol. Procedure symbols would have a different system type. All symbols would derive from this system type then.
+If you see the system interface as an object, though, you can regard the system interface to have the same type for every object symbol. Procedure symbols might have a different system type. All symbols might derive from this system type then.
 
 JJ
 
@@ -548,7 +548,7 @@ JJ
 Encircle Language Spec,  
 2009-09-03
 
-What about a two-dimensional array? How would that look in Encircle?
+What about a two-dimensional array? How might that look in Encircle?
 
 JJ
 
@@ -658,7 +658,7 @@ Assignment,
 Pointers to pointers as an aspect,  
 2008-08
 
-A related item can point to a =>1 related item contained by another parent or to a =>n related list item contained by another parent. Redirecting to another related item or related list item may be accomplished by extending the object get and object set procedures of the related item. The extension procedure basically constitutes, or instantiates, the redirection. So a pointer to a pointer would be accomplished by procedure extension, instead of implementing it in the code base. However, this might not work for related *list* items, because all items in a related list have the same decoration, and redirecting a list item to an arbitrary other related item or related list item would require each list item to have its own decoration.
+A related item can point to a =>1 related item contained by another parent or to a =>n related list item contained by another parent. Redirecting to another related item or related list item may be accomplished by extending the object get and object set procedures of the related item. The extension procedure basically constitutes, or instantiates, the redirection. So a pointer to a pointer might be accomplished by procedure extension, instead of implementing it in the code base. However, this might not work for related *list* items, because all items in a related list have the same decoration, and redirecting a list item to an arbitrary other related item or related list item might require each list item to have its own decoration.
 
 < If you make a related item return an object out of another parent, then this decoration with procedures is functionally the same as making the related item a pointer to related item in another parent. But this implementation of a pointer to a pointer might not work for related list items, because list items do not have their own individual decoration with procedures, so that’s why pointers to pointers still need to be part of the code base. >
 
@@ -883,7 +883,7 @@ An object might return a list of `just` its attributes, `instead` of `just all` 
 Alternative Assignments in a Diagram,  
 2008-07-26
 
-One of the prime examples of an alternative assignment, compared to normal assignment and object reference assignment, is to assign the final target of object redirections of one symbol as the object of another symbol. This would be implemented as first calling the __Target Object__ system command and then assigning its return value as the object of the other symbol. Below is the expression of that in a diagram.
+One of the prime examples of an alternative assignment, compared to normal assignment and object reference assignment, is to assign the final target of object redirections of one symbol as the object of another symbol. This might be implemented as first calling the __Target Object__ system command and then assigning its return value as the object of the other symbol. Below is the expression of that in a diagram.
 
 ![](images/7.%20System%20Objects%20Ideas.036.png)
 
@@ -902,7 +902,7 @@ Alternative Assignments in Text Code,
 
 The concept of alternative assignments was already explained in the article *Alternative Assignments*. The current article displays the text code of some prime examples of alternative assignments.
 
-One of the prime examples of an alternative assignment, compared to normal assignment and object reference assignment, is to assign the final target of object redirections of one symbol as the object of another symbol. This would be implemented as first calling the __Target Object__ system command and then assigning its return value as the object of the other symbol. Below is the expression of that in text code.
+One of the prime examples of an alternative assignment, compared to normal assignment and object reference assignment, is to assign the final target of object redirections of one symbol as the object of another symbol. This might be implemented as first calling the __Target Object__ system command and then assigning its return value as the object of the other symbol. Below is the expression of that in text code.
 
 ```
 B  o=->  A  .  Target Object

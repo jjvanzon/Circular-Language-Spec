@@ -52,4 +52,4 @@ JJ
 
 #### Out of the original Symbol documentation
 
-In J Code you could do overloading in which anything of the declaration can differ. If you use named arguments than you can do same parameter types. You can link to any symbol anyway, so it would be just a matter of what you see in text code.
+In J Code you could do overloading in which anything of the declaration can differ. If you use named arguments than you can do same parameter types. You can link to any symbol anyway, so it might be just a matter of what you see in text code.

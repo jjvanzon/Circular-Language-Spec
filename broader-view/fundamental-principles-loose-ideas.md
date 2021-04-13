@@ -290,7 +290,7 @@ JJ
 Fundamental Principles,  
 2008-11-05
 
-It may be a fundamental principle, that all references are registered. It may also be fundamental principle, that possible bad behavior should not compromise your abilities for good behavior. So the use of your creativity should not be put to a limit by possible bad behavior of others. If you can make a system that completely work following these principles, than that would be great.
+It may be a fundamental principle, that all references are registered. It may also be fundamental principle, that possible bad behavior should not compromise your abilities for good behavior. So the use of your creativity should not be put to a limit by possible bad behavior of others. If you can make a system that completely work following these principles, than that might be great.
 
 The Fundamental Principles can be guarantees the system might give and should not be broken.
 
@@ -339,7 +339,7 @@ It seems, that the problem with good concepts, such as Aspect Oriented Programmi
 
 Many beautiful concepts come up with in the 70's, 80's and 90's are not used, because not enough people know about it. Many of those concepts could be made part of a programming language itself, so that more people, trying out programming, are tempted to experiment with them. If they don't have it available in the language, many concepts might be forgotten about, and the whole proffession of software programming lags behind on itself.
 
-That is why I need to get myself educated about all the ideas, that already existed, so that I know how to give them a place in my own programming language. I need to converge existing ideas, and turn them into new products. That should be my job, rather than just reinventing everything. That would make me more effective in my job. I should be less individualistic. I can do much better work when I use ideas, that already existed before I was born. Those people were not being silly.
+That is why I need to get myself educated about all the ideas, that already existed, so that I know how to give them a place in my own programming language. I need to converge existing ideas, and turn them into new products. That should be my job, rather than just reinventing everything. That might make me more effective in my job. I should be less individualistic. I can do much better work when I use ideas, that already existed before I was born. Those people were not being silly.
 
 JJ
 
@@ -485,7 +485,7 @@ JJ
 Encircle Language Spec,  
 2009-04-16
 
-A user-defined order number of a user-defined sorting, and the use of aliases prevents dead links. You could also do a kind of automatic aliasing: when a link is not found, the history of that link would be stored inside the container of the leaf, and this could be used to offer a suggested new linkage, when the dead link was attempted to be accessed.
+A user-defined order number of a user-defined sorting, and the use of aliases prevents dead links. You could also do a kind of automatic aliasing: when a link is not found, the history of that link might be stored inside the container of the leaf, and this could be used to offer a suggested new linkage, when the dead link was attempted to be accessed.
 
 JJ
 
@@ -570,7 +570,7 @@ https://bofh.org.uk/2008/04/07/code-is-data-and-it-always-has-been/
 
 Possible response:
 
-I think you are putting to much effort into answering this question. I would put it more bluntly. 'Code = data' is not an idea. It is a fact.
+I think you are putting to much effort into answering this question. I might put it more bluntly. 'Code = data' is not an idea. It is a fact.
 
 It is character data or binary data, with a certain format, that can be interpreted by the computer. It is a description of linkages between program elements. Not much different from a spread sheet, which is also contains linkages between data and stuff that can be executed.
 
@@ -696,7 +696,7 @@ In high-coupled situations any system element could potentially be accessing any
 
 This is handy for being able to change the way systems connect to each other, when for instance a piece of the system is discontinued or replaced, or to offer an easy way to connect new pieces of system to existing interfaces.
 
-I think the terms loose coupling or high coupling are inaccurate terms. I think a better way to describe it would be clear coupling or unclear coupling.
+I think the terms loose coupling or high coupling are inaccurate terms. I think a better way to describe it might be clear coupling or unclear coupling.
 
 The thing with high and low coupling is not necessarily that there are more or less connection points in either situation, but that in case of what is called low coupling, it is clearer to see at what points systems connect and a limit is imposed onto at what points systems could connect.
 
@@ -706,7 +706,7 @@ There is also something some programmers might fail to see in case of low-coupli
 
 Each connection to a member of an interface is a separate connection. Each method call, call upon a data member, filling in of a parameter, assignment, indirection, etcetera, is a connection. Those connections are there in either low-coupling or high-coupling situation.
 
-In fact, if you make an interface, but you make it too elaborate, you end up with a highly coupled situation again: any member of the interface could be connected to and you can not easily see which members are used and which are not. In an elaborate interface it is still not clear which which members access what other members. While supposedly there would only be one connection. But not really then is it?
+In fact, if you make an interface, but you make it too elaborate, you end up with a highly coupled situation again: any member of the interface could be connected to and you can not easily see which members are used and which are not. In an elaborate interface it is still not clear which which members access what other members. While supposedly there might only be one connection. But not really then is it?
 
 In a finished system in either a high-coupling or low-coupling situation, both situations actually show the same number of connection points between members, variables, etcetera.
 
@@ -718,7 +718,7 @@ The problem with allowing more possible connections is that potentially more con
 
 What's forgotten, is that if you connect to a single interface, you do not really have one connection. There can be many connections to the numerous parts of the interface.
 
-The term low-coupling is even in contradiction with itself. Given a finished system, the supposedly high-coupled version would actually contain less connections, than the low-coupled version. The low coupled version would contain more connections, because on top of the members accessing each other, they are separeted by interfaces, creating more indirections between their connections, and these indirections are connections in itself. You first need to connect to the interface, and then you connect to the member.
+The term low-coupling is even in contradiction with itself. Given a finished system, the supposedly high-coupled version might actually contain less connections, than the low-coupled version. The low coupled version might contain more connections, because on top of the members accessing each other, they are separeted by interfaces, creating more indirections between their connections, and these indirections are connections in itself. You first need to connect to the interface, and then you connect to the member.
 
 Theoretically in a low coupling situation there are actually more connections, because instead of connecting to a data member directly, first there is connected to an interface, and then to the data member, and maybe even not directly with the data member, but with some adapters in between. So actually, in a finished system low coupling may have more connections than the high coupling variation.
 
@@ -734,7 +734,7 @@ I think the coupling and cohesion are irrational words, because the number of co
 
 Whether you connect to members directly or group the connections into interfaces: all the connections are still there, actually you have increased the number of connections by first having to connect to the interface.
 
-NCL would solve this for a great part and easily show that the low-coupled (high-interfaced) version actually has more connections than the high coupled (low-interfaced) version. In NCL the readability of the highly coupled system might be better than in other languages, especially when the lines might be regroup as they go from sources to targets. I just forgot how valuable that part of the notation could be when it comes to reading how systems interface with each other. Each grouping of lines could potentially be replaced by an interface, only then you would end up with too many interfaces again. NCL with the use of regrouping of lines as they go from sources to targets would make it easier to automatically explicitly define the interfacing points, or make it easier to spot a place in the system in which it looks appropriate to create an interface in between. But if you create a derived interface for each user of an interface you have actually applied to concept of low-coupling, yet you have created more complexity by creating an insane amount of interfaces.
+NCL might solve this for a great part and easily show that the low-coupled (high-interfaced) version actually has more connections than the high coupled (low-interfaced) version. In NCL the readability of the highly coupled system might be better than in other languages, especially when the lines might be regroup as they go from sources to targets. I just forgot how valuable that part of the notation could be when it comes to reading how systems interface with each other. Each grouping of lines could potentially be replaced by an interface, only then you might end up with too many interfaces again. NCL with the use of regrouping of lines as they go from sources to targets might make it easier to automatically explicitly define the interfacing points, or make it easier to spot a place in the system in which it looks appropriate to create an interface in between. But if you create a derived interface for each user of an interface you have actually applied to concept of low-coupling, yet you have created more complexity by creating an insane amount of interfaces.
 
 Clearly defined interfaces are still valuable in NCL, and do not all of a sudden become unnecessary, but they DO create more connections, rather than less if you put more interfaces in between. However proper interfaces can make the system more readable.
 
@@ -783,7 +783,7 @@ There are more definitions to low coupling:
 - You can separate things into layers so that people of different disciplines can work on the layer they specialized in.
 - When you want to keep storage separated from presentation, possibly allowing multiple representations of the same data, and you want to be able to change the data model. (At one point the data model changes so much you can not  prevent the interface of the bridge to change or even the user interface to change, or you are going to have to keep your data model backwards compatible, something that you were trying to work around with the bridge.)
 
-So simply trying to make things that are actually independent on each other, sort of independent of changes to the dependency, you build a bridge between them. It does require additional code, additional connections and wiring, adds complexity. I would not recommend putting a bridge between any two objects. That would create incredible complexity. How is that going to help you change the code? So you have to apply this when it is useful.
+So simply trying to make things that are actually independent on each other, sort of independent of changes to the dependency, you build a bridge between them. It does require additional code, additional connections and wiring, adds complexity. I might not recommend putting a bridge between any two objects. That might create incredible complexity. How is that going to help you change the code? So you have to apply this when it is useful.
 
 I can imagine that an ESB allows you to define interfaces / adapters between any two resources. Or offer the same interface to multiple programs or the give multiple resources the same interface, or create bridges between systems.
 

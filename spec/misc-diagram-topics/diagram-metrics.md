@@ -168,7 +168,7 @@ Which is the same as ordering the target symbols by source. Switch the order of 
 
 < P: use rainbow colors to denote which order is reversed. Two pictures: in one the sources reversed, in the other the targets. >
 
-The ideal situation would seem to be be if you could always line up symbols by source and target the and put them tegenover elkaar. This is when the row of target symbols and the row of source symbols make no angle and if these rows are perpendicular to the lines’ metric direction.
+The ideal situation might seem to be be if you could always line up symbols by source and target the and put them tegenover elkaar. This is when the row of target symbols and the row of source symbols make no angle and if these rows are perpendicular to the lines’ metric direction.
 
 Exact alignment of sources and targets, however, totally annuls the alignment.  
 < P: Symbols straight lines, equally spaced >  
@@ -309,7 +309,7 @@ Diagram Metrics,
 
 You might want to abstractly express the complexity of an object or method, by making its symbol bigger.
 
-'Size' of a called method could indicate its complexity / how much it does, but it is: what does the method itself do, what do the methods called from it do? But how deep should you go? through the full depth? Because that's how much it does, but sometimes you want to see how much complexity of your own code is below that, so you would only want to see the complexity of some of the modules expressed and ignore the complexities in deeper modules...
+'Size' of a called method could indicate its complexity / how much it does, but it is: what does the method itself do, what do the methods called from it do? But how deep should you go? through the full depth? Because that's how much it does, but sometimes you want to see how much complexity of your own code is below that, so you might only want to see the complexity of some of the modules expressed and ignore the complexities in deeper modules...
 
 JJ
 

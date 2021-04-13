@@ -73,7 +73,7 @@ This chapter tries to demonstrate internal workings of symbols in Encircle.
 
 Encircle Language Spec's aim might be to show the *notation* of Encircle, but this chapter tries to look at the *internal* *workings* as if it were an actual program. In doing so, finer details of Encircle might start to show. Specifically, usages of the *system interface* notation might come to light.
 
-This hypothetical implementation supposes, that systems might be composed of *system objects*. System objects might be *actual* objects that systems would be running on.
+This hypothetical implementation supposes, that systems might be composed of *system objects*. System objects might be *actual* objects that systems might be running on.
 
 One of the purposes of system objects could be to manage *relationships* between objects.
 
@@ -81,7 +81,7 @@ A system object may also manage aspects of a symbol, like its *class*, whether i
 
 *Assignment commands* may also be system commands. An assignment command might copy an aspect from one object to another.
 
-The *System Interfaces* documentation would also show *connectors, connections* and other notational forms that might come with controlling these system aspects.
+The *System Interfaces* documentation might also show *connectors, connections* and other notational forms that might come with controlling these system aspects.
 
 ### The System Objects
 
@@ -138,7 +138,7 @@ More may follow about this system interface notation later.
 
 #### Related Items & Related Lists Collections
 
-Inside the system interface an object’s related items and related lists might be stored as the object’s containing two collections: __Related Items__ and __Related Lists__. The __Related Items__ collection would contain the related items of an object. The __Related Lists__ collection would contain the related lists of an object.
+Inside the system interface an object’s related items and related lists might be stored as the object’s containing two collections: __Related Items__ and __Related Lists__. The __Related Items__ collection might contain the related items of an object. The __Related Lists__ collection might contain the related lists of an object.
 
 ![](images/1.%20System%20Objects.007.png)
 
@@ -158,7 +158,7 @@ Another variation might add another collection:
 
 ![](images/1.%20System%20Objects.009.png)
 
-Here next to __Related Items__, __Related Lists__ there would be __Attributes__: basically a collection of simple loose values an object might hold.
+Here next to __Related Items__, __Related Lists__ there might be __Attributes__: basically a collection of simple loose values an object might hold.
 
 It might go on. A __Commands__ collection might be added for instance, to perhaps list sub-objects that are command symbols.
 
@@ -220,7 +220,7 @@ The __Object__ aspect may determine which object is pointed to.
 
 #### Class
 
-The __Class__ aspect might determine which other object would function as a prototype or class of another object. It can also bind a reference to a class.
+The __Class__ aspect might determine which other object might function as a prototype or class of another object. It can also bind a reference to a class.
 
 ![](images/1.%20System%20Objects.013.png)
 
@@ -293,7 +293,7 @@ Here is an attempt to list the aspects again:
 
 When using *system aspects*, there seems to be a subtle phenomenon that some aspects might to be bound to an *object*, while other aspects may be bound to a *reference*.
 
-Object-bound aspects would be determined by an object. An object might also control its sub-objects’ reference-bound aspects. Therefore *reference-bound* aspects might also be called *sub-object-bound* aspects.
+Object-bound aspects might be determined by an object. An object might also control its sub-objects’ reference-bound aspects. Therefore *reference-bound* aspects might also be called *sub-object-bound* aspects.
 
 The following aspects may be object-bound:
 
@@ -337,7 +337,7 @@ An __Object__'s normal members might look like this:
 
 ![](images/1.%20System%20Objects.024.png)
 
-But when the __Object__'s system interface would be opened, then for instance the __Related Items__ and __Related Lists__ collections might be shown instead:
+But when the __Object__'s system interface might be opened, then for instance the __Related Items__ and __Related Lists__ collections might be shown instead:
 
 ![](images/1.%20System%20Objects.025.png)
 
@@ -357,15 +357,15 @@ Several aspects could be given __Get__ and __Set__ commands. But each aspect mig
 
 ##### System Interface might be Publics of System Objects
 
-One idea that system interfaces may be based on, is that a system interface might be no more than public members of a system object. When this description here about system interfaces would be incomplete, what might be missing may be derived from the idea, that a system interface may simply show public members of a system object. Another idea derived from that could be that *private* workings of system objects might not be shown in a system interface. But these may be mere guidelines to have something to hold on to.
+One idea that system interfaces may be based on, is that a system interface might be no more than public members of a system object. When this description here about system interfaces might be incomplete, what might be missing may be derived from the idea, that a system interface may simply show public members of a system object. Another idea derived from that could be that *private* workings of system objects might not be shown in a system interface. But these may be mere guidelines to have something to hold on to.
 
 ##### Origin of the System Interface Notation
 
-The notation for a *system interface* may be derived from *interface* notation. When an object would have several interfaces, each interface might be shown as a triangle inside the object:
+The notation for a *system interface* may be derived from *interface* notation. When an object might have several interfaces, each interface might be shown as a triangle inside the object:
 
 ![](images/1.%20System%20Objects.027.png)
 
-But showing a system interface would be like showing the interior of 'the symbol itself'. Therefore, the triangle of a system interface might be creatively stuck to the border of the symbol:
+But showing a system interface might be like showing the interior of 'the symbol itself'. Therefore, the triangle of a system interface might be creatively stuck to the border of the symbol:
 
 ![](images/1.%20System%20Objects.005.png)
 
@@ -565,7 +565,7 @@ Members might be placed inside an interface triangle, that might wrap together m
 ![](images/1.%20System%20Objects.038.png)
 
 The __Remove__ command might remove an item from a list.  
-The __List__ member might be a reference to the List that a related item would be part of.
+The __List__ member might be a reference to the List that a related item might be part of.
 
 ##### Overview of a System Interface for Related List Item
 
@@ -599,7 +599,7 @@ The __Class__ aspect may have several system commands, but the following two may
 - __Set Class__
 - __Get Reference-Bound Class__
 
-Commands might be placed inside a triangle, that would wrap together members of the __Class__ aspect:
+Commands might be placed inside a triangle, that might wrap together members of the __Class__ aspect:
 
 ![](images/1.%20System%20Objects.041.png)
 
@@ -623,13 +623,13 @@ A *reference* also could have a class, aiming to indicate which class of object 
 
 ![](images/1.%20System%20Objects.044.png)
 
-When the reference would be __Nothing__ or __null__, any class might be assigned to the reference.
+When the reference might be __Nothing__ or __null__, any class might be assigned to the reference.
 
 ![](images/1.%20System%20Objects.045.png)
 
-Both line __a__ and __b__ would both be possible.
+Both line __a__ and __b__ might both be possible.
 
-The class of a reference might be changed, but only when it would be compatible with the object assigned to the reference. 
+The class of a reference might be changed, but only when it might be compatible with the object assigned to the reference. 
 
 The __Object-Bound Class__ and __Reference-Bound Class__ could point to the same class.
 
@@ -649,13 +649,13 @@ An aspect might be represented by a triangle that could contain system commands:
 
 It was a design choice to have system commands placed inside a triangle, that might represent an aspect. That way __Use As Class__ for instance might be used without putting __"Class ."__ or __"Object . "__ in front of it.
 
-An alternative was putting it in a circle, which would make textual alternatives of commands be something like:
+An alternative was putting it in a circle, which might make textual alternatives of commands be something like:
 
 - __Class . Use As Class__
 - __Class . Use Object As__ 
 - __Object . Use As Class__
 
-Those would all be alternatives for __Use As Class__. The idea is that this might not look as nice as just __Use As Class__.
+Those might all be alternatives for __Use As Class__. The idea is that this might not look as nice as just __Use As Class__.
 
 The alternative __Object . Use As Class__ might look ok, but may place this class-related action inside the __Object__ aspect, which might not be desirable either.
 
@@ -669,7 +669,7 @@ A __Use As Class__ command might be made part of the __Class__ aspect while it m
 
 ![](images/1.%20System%20Objects.048.png)
 
-A __Use__ command may __Get__ a different aspect than what it applies to. A __Use As Class__ command might be part of the __Class__ aspect but would __Get__ the __Object__ aspect.
+A __Use__ command may __Get__ a different aspect than what it applies to. A __Use As Class__ command might be part of the __Class__ aspect but might __Get__ the __Object__ aspect.
 
 An alternative could have been to put __Use As Class__ in the __Object__ aspect. But __Use As Class__ seems the primary use of the __Class__ aspects, so to put it in the __Object__ aspect might not be desirable.
 

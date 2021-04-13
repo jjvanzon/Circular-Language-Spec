@@ -38,7 +38,7 @@ Ancestry can also be called *object structure*.
 
 An object’s sub-objects and command are also called the object’s *members*. The parameters of a command can also be called *members* of the command.
 
-Other terms of family ties can be used just as well. Words such as cousins, siblings or uncle are allowed. Sibling would be objects that directly reside in the same parent:
+Other terms of family ties can be used just as well. Words such as cousins, siblings or uncle are allowed. Sibling might be objects that directly reside in the same parent:
 
 ![](images/80.%20Ancestry%20Terms.002.png)
 

@@ -8,7 +8,7 @@ Thruput Parameters | Affected, Used and Transformed
 
 Further parameter passing stereotyping.
 
-Contemplations about further thru parameter passing stereotyping would be postponed.
+Contemplations about further thru parameter passing stereotyping might be postponed.
 
 Throughput could have the following elements:
 

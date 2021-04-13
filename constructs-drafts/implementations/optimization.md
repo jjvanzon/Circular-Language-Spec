@@ -67,7 +67,7 @@ additional J Code optimizations can be gotten from this.
 
 -----
 
-Would J Code’s compilation optimizers take away bound these checks? Consider the ComponentList’s Remove method and see what the optimizer would have to do to find out a safety check could go.
+Might J Code’s compilation optimizers take away bound these checks? Consider the ComponentList’s Remove method and see what the optimizer might have to do to find out a safety check could go.
 
 -----
 
@@ -98,7 +98,7 @@ JJ
 
 Optimization
 
-At some point you’re going to want to explain what happens physically when doing some high level stuff, so you can see if this is the optimal way to do it. But I don’t care that much right now, but at some point it might have to be addressed. I would do that in J Code, Fundamental Principles, but I won’t work it out straight away. Perhaps I’d just make an article about it, where I mention that it should be studied, but I don’t want to do that straight away, and why it should be studied. How things could be non-optimal and may be optimized.
+At some point you’re going to want to explain what happens physically when doing some high level stuff, so you can see if this is the optimal way to do it. But I don’t care that much right now, but at some point it might have to be addressed. I might do that in J Code, Fundamental Principles, but I won’t work it out straight away. Perhaps I’d just make an article about it, where I mention that it should be studied, but I don’t want to do that straight away, and why it should be studied. How things could be non-optimal and may be optimized.
 
 JJ
 
@@ -213,7 +213,7 @@ More on it later.
 (PUT NEXT ICQ MESSAGE ABOVE)  
 Compute the optimization tables directly from the data you base these tables from, so that new computer configurations can instantly get an optimized compilation using the configuration data.
 
-Substituting Intel mnemonics by readable names is a good idea. Being able to use the '=' sign in place of a comma would also be a great help.
+Substituting Intel mnemonics by readable names is a good idea. Being able to use the '=' sign in place of a comma might also be a great help.
 
 Unreal forms of instructions, forms that don't exist on the 8086, but do have a logical meaning, can have synonyms that might work. Being able to use them might help.
 
@@ -251,13 +251,13 @@ Another idea: an 'overhoring' program is still useful.
 
 -----
 
-The only thing you have to do to really optimize your code would be to specify with each line or group of lines what storages matter to you or maybe even this can be exactly derived from the rest of the code. Consider for instance always overwriting data previously set by an operation before you ever used that data. Then that data is unimportant and the synonyms you can choose from are allowed to produce different results for this particular data.
+The only thing you have to do to really optimize your code might be to specify with each line or group of lines what storages matter to you or maybe even this can be exactly derived from the rest of the code. Consider for instance always overwriting data previously set by an operation before you ever used that data. Then that data is unimportant and the synonyms you can choose from are allowed to produce different results for this particular data.
 
 ##### Inlining Modules
 
 Inline modules run faster because there aren’t any procedure calls. Procedure calls require things to be put on the stack, a round trip through vector tables and a return. Procedure data needs to be dynamically allocated.
 
-Inline modules have their procedure data in a fixed spot in memory, though seperated from the code. Calls to procedures are not made. A lot of times what otherwise be the first line of a separate procedure would be the next line in code. Other times a jump is made to another part of the code.
+Inline modules have their procedure data in a fixed spot in memory, though seperated from the code. Calls to procedures are not made. A lot of times what otherwise be the first line of a separate procedure might be the next line in code. Other times a jump is made to another part of the code.
 
 Not making jump statements makes the fastest code. This has to do with the CPU’s architecture. The CPU fetches opcodes from memory while it processes the current opcode so that it has the next opcode ready straight away after processing the current instruction. Also, the CPU decodes the next instruction while it is executing the current instruction. The CPU fetches the opcodes following the current operation. The prefetches operations are called the prefetch queue. A jump invalidates the prefetch queue and the decoding of the next instruction delaying the processors execution.
 

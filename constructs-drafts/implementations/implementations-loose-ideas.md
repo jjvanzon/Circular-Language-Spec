@@ -32,7 +32,7 @@ JJ
 
 Monitoring
 
-Where I thought a tuning utility would be an option, I should think more that it is a requirement.
+Where I thought a tuning utility might be an option, I should think more that it is a requirement.
 
 JJ
 

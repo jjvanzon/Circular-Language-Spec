@@ -197,7 +197,7 @@ A __Slower Backwards__ execution state (going slower backwards) is the system’
 
 ### Reverse Execution Command
 
-The __Reverse__ execution command might start a rollback at normal speed. In case of regular computation, normal speed would be top speed. For video, audio or presentation or any other type of running media, normal is not as fast as possible, but the normal speed of presentation but then in reverse.
+The __Reverse__ execution command might start a rollback at normal speed. In case of regular computation, normal speed might be top speed. For video, audio or presentation or any other type of running media, normal is not as fast as possible, but the normal speed of presentation but then in reverse.
 
 The __Reverse__ execution command is only available if a command is finished or anywhere in the middle of running. 
 
@@ -213,7 +213,7 @@ If the speed is slower or faster than considered average, the execution state mi
 
 ### Play Execution Command
 
-The __Play__ execution command might start or continue execution at normal speed. In case of regular computation, normal speed would be *top* speed. For video, audio or presentation or any other type of running media, normal is not as fast as possible.
+The __Play__ execution command might start or continue execution at normal speed. In case of regular computation, normal speed might be *top* speed. For video, audio or presentation or any other type of running media, normal is not as fast as possible.
 
 The __Play__ execution command is only available if a command is runnable or anywhere in the middle of running.
 

@@ -98,7 +98,7 @@ Exclusion is already covered extensively, but it can also be regarded a procedur
 
 < A procedure can also have multiple interfaces by using triangle symbols. This enables the possibility to have multiple parameter configurations for the same procedure. >
 
-< This is an example of how text code can affect the behavior of the diagram. Call line automatically changes when parameters of different types are assigned. Oh no, after compilation the text identifiers might not exist anymore. Then it’s gotta become a deep system aspect the overloading, independent of text code. Text code and diagram code would simply be affected by the overloading concept. It should be like this, because of reasons discussed in the language integration chapter. >
+< This is an example of how text code can affect the behavior of the diagram. Call line automatically changes when parameters of different types are assigned. Oh no, after compilation the text identifiers might not exist anymore. Then it’s gotta become a deep system aspect the overloading, independent of text code. Text code and diagram code might simply be affected by the overloading concept. It should be like this, because of reasons discussed in the language integration chapter. >
 
 Overloading means that you give several procedures the same name, while they have a different interface. This is handy if you wish to make different variations of similar functionality.
 
@@ -120,7 +120,7 @@ Object Type 1
 End Object
 ```
 
-The following would be the diagram code without mentioning the types of objects nor procedure calls:
+The following might be the diagram code without mentioning the types of objects nor procedure calls:
 
 ![](images/0.%20Object%20Resolution%20Introduction.003.png)
 
@@ -168,7 +168,7 @@ The difference with overriding is that the base type still calls its own member,
 
 *I* still calls its own A, while P and anyone else calls P’s A.
 
-A parent can still call the shadowed member, but this would require qualification with the interface name, or the shadowed member might be called:
+A parent can still call the shadowed member, but this might require qualification with the interface name, or the shadowed member might be called:
 
 A
 
@@ -188,7 +188,7 @@ When a procedure has the same name and configuration of public members then in t
 
 ![](images/0.%20Object%20Resolution%20Introduction.011.png)
 
-A second option when you can’t distinct a call to one procedure from a call to the other is simply for *both* procedures to be called. This is called merging the two procedures and in that case the call might resolve in calling *both* procedures. If you want to address a specific procedure, you could qualify the call with the name of the container of the procedure, if that would make a difference. In diagram code you can see the two procedures as separate squares and you *can* see the difference between a call to procedure A and a call to procedure B.
+A second option when you can’t distinct a call to one procedure from a call to the other is simply for *both* procedures to be called. This is called merging the two procedures and in that case the call might resolve in calling *both* procedures. If you want to address a specific procedure, you could qualify the call with the name of the container of the procedure, if that might make a difference. In diagram code you can see the two procedures as separate squares and you *can* see the difference between a call to procedure A and a call to procedure B.
 
 < Picture 27: of text code call to merged procedure with next to it the diagram code >
 
@@ -198,9 +198,9 @@ Merging is handy for instance when a symbol contains two interface implementatio
 
 < Picture of that >
 
-When the merging procedures reside in *exactly the same container*, they can not be separately called. They are always simultaneously called. In diagram code you might be able to express a call to a specific procedure, but it is forbidden to make such a call, because this would be impossible to express in text code.
+When the merging procedures reside in *exactly the same container*, they can not be separately called. They are always simultaneously called. In diagram code you might be able to express a call to a specific procedure, but it is forbidden to make such a call, because this might be impossible to express in text code.
 
-< Picture of that (29): the legal situation and a picture with a red cross through it showing a forbidden way of calling and showing that the call would look the same in text code >
+< Picture of that (29): the legal situation and a picture with a red cross through it showing a forbidden way of calling and showing that the call might look the same in text code >
 
 That ensures that diagram code and text code are exchangeable and can be mutually used.
 

@@ -10,7 +10,7 @@ Errors might not always be handled the same way. I could list out different ways
 
 ### Rolling Back
 
-Perhaps preferably, when an error was encountered, all changes are rolled back, and either default output is produced or the error is raised again, upon which the command caller might be rolled back too. Any change to data, would be rolled back upon error. The idea is that the effect of the command would be totally erased.
+Perhaps preferably, when an error was encountered, all changes are rolled back, and either default output is produced or the error is raised again, upon which the command caller might be rolled back too. Any change to data, might be rolled back upon error. The idea is that the effect of the command might be totally erased.
 
 A command might be rolled back, and the error thrown or default output produced. You can also choose to always return default output while you are *editing* your command.
 

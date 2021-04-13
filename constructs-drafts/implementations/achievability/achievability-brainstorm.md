@@ -12,7 +12,7 @@ Imagine that creating the programs most important for our productivity today, no
 
 If millions of smart programmers and software developers no longer have to work years on end to create software. Imagine what they could do with their minds,being able to let their ideas on the loose and actually realizing them as products.
 
-All software we now have would then be easy to program. Any sofware that exists today would relatively take no time at all to program or maintain. We could start having ideas about things we never even imagined possible. Or imagined, but could never realize, because it is too huge, for the whole of humanity to even accomplish.
+All software we now have might then be easy to program. Any sofware that exists today might relatively take no time at all to program or maintain. We could start having ideas about things we never even imagined possible. Or imagined, but could never realize, because it is too huge, for the whole of humanity to even accomplish.
 
 Systems 1000 times complex than what we consider huge software packages now, could be program with 10% of the people working on it in only 10% of the time.
 
