@@ -14,7 +14,7 @@ But this principle dates out of a time when Encircle did not have extensible asp
 
 Optionality mostly caused problems in experiment 0.9 because aspects were required by other aspects and the dependency of aspects was not worked out well, and sometimes something used by one aspect, was missing in the generated code, because a dependency aspect was turned off, because it was optional. When code was generated, the code was not compilable, because there were references to things that were turned off.
 
-For experiment 3.0 you can only give the guarantee of ‘everything only’ to the *code base*. Nothing is optional in the *code base*. But every aspect *is* optional, yet the aspects have a dependency structure. When you turn on a aspect, that requires another aspect, the dependency aspect might implicitly turned on as well. Implicitly turned on aspects could be turned off again as soon as they are not required anymore.
+Experiment 3.0 might only give the guarantee of ‘everything only’ to the *base code*. Nothing is optional in the *base code*. But every aspect *is* optional, yet the aspects have a dependency structure. When you turn on a aspect, that requires another aspect, the dependency aspect might implicitly turned on as well. Implicitly turned on aspects could be turned off again as soon as they are not required anymore.
 
 When you turn the aspects into separate modules, that have a dependency, optionality of aspects becomes more manageable. Everything Only only counts for the code base now. But it is still a defendable concept that can prove its use.
 
