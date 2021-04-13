@@ -1,8 +1,8 @@
 Encircle Language Construct Drafts | Implementations
 ====================================================
 
-Object Order Implementation
----------------------------
+Sequence Order Implementation
+-----------------------------
 
 `[ Out of Scope ]`
 
@@ -14,7 +14,7 @@ __Contents__
 
 ### Brainstorm
 
-A strategy you could have is to ignore the expression of object order for now for experiment 3.0, and pick one later when the rest is up and running. You can have to base up and running and ignore the expression of this concept. So the concept is implemented, but the expression is not. Yet another limitation to impose onto the first version of experiment 3.0.
+A strategy you could have is to ignore the expression of sequence order for now for experiment 3.0, and pick one later when the rest is up and running. You can have to base up and running and ignore the expression of this concept. So the concept is implemented, but the expression is not. Yet another limitation to impose onto the first version of experiment 3.0.
 
 ### Order Matters
 

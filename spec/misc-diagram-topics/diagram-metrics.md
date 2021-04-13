@@ -60,9 +60,9 @@ The concepts are put more or less in order of priority.
 
         - Shapes and lines being driven into position by certain forces.
         - \> Perhaps with an invisible springs algorithm you can animate everything to equilibrium and you might not have to worry about calculating the exact optimal position.
-        - \> Force-based ordering and object order unfortunately might contradict.
+        - \> Force-based ordering and sequence order unfortunately might contradict.
 
-    - Object order
+    - Sequence order
 
         - Might position the sub-objects in a certain order.
 

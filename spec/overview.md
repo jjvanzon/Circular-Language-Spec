@@ -15,7 +15,7 @@ The documentation tries to shed light on the following topics:
 __Contents__
 
 - [Introduction](#introduction)
-- [Overview](#overview-1)
+- [Overview](#overview)
 - [Basic Diagram Elements](#basic-diagram-elements)
 - [Objects](#objects)
 - [Classes](#classes)
@@ -32,7 +32,7 @@ __Contents__
 - [Type Control](#type-control)
 - [Object Resolution](#object-resolution)
 - [Conditions](#conditions)
-- [Object Order](#object-order)
+- [Sequence Order](#sequence-order)
 - [Pointers](#pointers)
 - [Misc Diagram Topics](#misc-diagram-topics)
 
@@ -160,9 +160,9 @@ That was the more rounded up documentation. Next an attempt is made to list the 
  
   The documentation may be not so rich yet, apart from some loose ideas.
 
-### [Object Order](object-order.md)
+### [Sequence Order](sequence-order.md)
 
-- By default, objects inside a collection might be put in an arbitrary order. The *Object Order* concept may allow sorting a list, or putting things in a manually chosen order, and also perhaps a diagram notation for it.
+- By default, objects inside a collection might be put in an arbitrary order. The *Sequence order* concept may allow sorting a list, or putting things in a manually chosen order, and also perhaps a diagram notation for it.
  
 - This documentation is a collection of ideas, that might be polished up to be made neater later.
 

@@ -174,7 +174,7 @@ Perhaps the first item might also be denoted like this:
 
 ![](images/2.%20Imported%20Parameter%20Concepts.028.png)
 
-The eventual display is all up to the implementation of *Object Order*. That might determine the ways sorted objects are displayed. The ideas introduced here are preliminary. Eventually parameter order might comply to object order.
+The eventual display is all up to the implementation of *Sequence Order*. That might determine the ways sorted objects are displayed. The ideas introduced here are preliminary. Eventually parameter order might comply to sequence order.
 
 The objects may also be displayed clockwise:
 

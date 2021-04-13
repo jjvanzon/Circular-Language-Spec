@@ -80,7 +80,7 @@ Contents
     - [Implicit Conversions (not written yet)](object-resolution/implicit-conversions-not-written-yet.md)
     - [With Blocks](object-resolution/with-blocks.md)
 - [Conditions](conditions.md)
-- [Object Order](object-order.md)
+- [Sequence Order](sequence-order.md)
 - Pointers
     - [Pointers](pointers/pointers.md)
     - [Redirection](pointers/redirection.md)
