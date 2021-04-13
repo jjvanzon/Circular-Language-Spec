@@ -71,9 +71,9 @@ If you don’t indicate the order in which to execute the commands, then they mi
 
 The order of a procedure can also be *automatically* determined by *input / output dependency*. A command, called inside a procedure, can take input, that is the output of another command. Then the other command needs to execute first, in order to pass its output on to the next command. This is called the *automatic execution order* principle, part of the flat & structured interchange principles. 
 
-If commands should not be executed in an arbitrary order, and the input / output dependency does not determine the order either, then you can indicate the order of execution yourself. This is what we are usually talking about when we refer to *normal execution order*.
+If commands should not be executed in an arbitrary order, and the input / output dependency might not determine the order either, then you can indicate the order of execution yourself. This is what we are usually talking about when we refer to *normal execution order*.
 
-Normal execution order places one command call after another to form the order in which to execute the commands. One command actually *calls* the next one. However, it is a special call, because the call never returns to the caller, which it normally does when calling a command. The call to the next command is also called the __Command End__.
+Normal execution order places one command call after another to form the order in which to execute the commands. One command actually *calls* the next one. However, it is a special call, because the call never returns to the caller, which it normally might when calling a command. The call to the next command is also called the __Command End__.
 
 The first command to run is a command, that is no other commands’ next command, not even in the input, output dependency.  
 Normal execution order is also indicated for calls to execution flow statements, like __If__ calls and __For__ calls.
@@ -102,7 +102,7 @@ When the order of the commands should not be arbitrary or determined by input / 
 
 ![](images/4.%20Jumps.003.png)
 
-The first command to run is a command, that is nobody’s next statement, not even in the input, output dependency. In the diagram above, that might be __A__. The commands are executed in the order __A__, __B__, __C__. The fact, that __B__ is followed up by __A__ is displayed as an active reference from __A__ to __B__. But the active reference never returns to __A__ again. This is displayed as the active reference from __A__ to __B__’s being stuck to the end of __A__, so that if you follow the line to __B__ back to __A__, it does not enter back into A again: it does not return back into __A__.
+The first command to run is a command, that is nobody’s next statement, not even in the input, output dependency. In the diagram above, that might be __A__. The commands are executed in the order __A__, __B__, __C__. The fact, that __B__ is followed up by __A__ is displayed as an active reference from __A__ to __B__. But the active reference never returns to __A__ again. This is displayed as the active reference from __A__ to __B__’s being stuck to the end of __A__, so that if you follow the line to __B__ back to __A__, it might not enter back into A again: it might not return back into __A__.
 
 The diagram notation also looks like a call to the *end* of a command.  
 The diamond stuck to the border of a call is actually called the __Command End__, and is an *actual* reference to the next command, but then called in a special way.
@@ -125,7 +125,7 @@ A clause is a command definition embedded inside a command. The name of the clau
 
 Just like in normal execution order a __Goto__ statement never returns to the code it was called from.
 
-The implementation of the execution flow command __Goto__ might somehow first roll back part of the call stack, so that the call to the execution flow command does not return to where it was called from. Next the __Goto__ command uses a machine instruction to jump to the jump __Target__.
+The implementation of the execution flow command __Goto__ might somehow first roll back part of the call stack, so that the call to the execution flow command might not return to where it was called from. Next the __Goto__ command uses a machine instruction to jump to the jump __Target__.
 
 #### Diagram
 

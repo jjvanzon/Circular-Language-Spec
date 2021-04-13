@@ -217,7 +217,7 @@ The problem is, that the idea was to implement it as an aspect, but it’s impor
 
 ### Automatic Containment And Access Control
 
-Automatic encapsulation structure does impose a problem in Access Control. An access modifier is related to the position in the encapsulation. The base of the system has only a referential structure. Everything is basically accessible at any level. Anything is potentially global. But when you convert it to an encapsulation structure, not everything is global.  
+Automatic encapsulation structure might impose a problem in Access Control. An access modifier is related to the position in the encapsulation. The base of the system has only a referential structure. Everything is basically accessible at any level. Anything is potentially global. But when you convert it to an encapsulation structure, not everything is global.  
 When you see the encapsulation structure, you can impose an access restriction based on the position in the encapsulation structure, but if you change the underlying referential structure, the symbol gets a different position in the hierarchy, perhaps a higher one, making it all of a sudden accessible on a higher level. On one hand this is required: higher objects make use of the object. But that means everything is basically public, because you can use anything. As soon as you want to use it, it is placed on a higher level in the hierarchy. There are no restrictions there. What you might be able to do in Access Control is actually fix the relative encapsulation position, so it can’t be made any higher, and then impose an access modifier based on hierarchical position.  
 But access modifiers are for later, but anyway, that was a good idea about it.
 
@@ -308,15 +308,15 @@ Command IO,
 Security & Privacy,  
 2008-07-14
 
-Sometimes an executable object does not need to be open about what it reads or writes. It should be able to apply privacy to data, owned by the site, or the user. This to protect the design of the data model. You shouldn't have to expose your data model.
+Sometimes an executable object might not need to be open about what it reads or writes. It should be able to apply privacy to data, owned by the site, or the user. This to protect the design of the data model. You shouldn't have to expose your data model.
 
 However, when it is the user or site's OWN data, you have to be completely open about what a command might read or change.
 
 Then the data model stores data, that is the user's OWN data, the data model should be completely open, as far as reporting command IO to the user.
 
-You could say: an authoring company does not have to expose the data model of its programs, even when it is the user's own data. But strong security with a user choice based on command IO requires the data model to be open.
+You could say: an authoring company might not have to expose the data model of its programs, even when it is the user's own data. But strong security with a user choice based on command IO requires the data model to be open.
 
-You have to look at the belangen of the user and the author of the software: It is the software author's data model, but it is the user's own data, so why should a software author not be completely open about what it does with the user's data.
+You have to look at the belangen of the user and the author of the software: It is the software author's data model, but it is the user's own data, so why should a software author not be completely open about what it might with the user's data.
 
 It is like a user has to have access to the data of its own file. Compare it to  medical data, and an employee's file. The employee or patient has the right to look into this data.
 
@@ -435,6 +435,6 @@ Every form of grant to access is given to an object in the form of a virtual acc
 
 An object describes what kind of options you have to have on your card or ticket in order to get access.
 
-Objects have their own security relations. A user-object is an object with certain access, but sees the objects' restrictions to each other. What's that about? How does that work?
+Objects have their own security relations. A user-object is an object with certain access, but sees the objects' restrictions to each other. What's that about? How might that work?
 
 JJ

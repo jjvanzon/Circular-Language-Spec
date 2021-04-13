@@ -73,7 +73,7 @@ When assigning a class to a parameter, then the command might only be available 
 
 ![](images/Commands%20and%20Classes%20Loosely%20Coupled.004.png)
 
-The image attempts to show some differences compared to the previous image. The small circle in the large square now has a dashed class line pointing to the dashed class circle at the top. What also seems to have happened, is that this made the object circle on the left not have the command anymore. The circle on the left no longer seems to participate, because it does not have the class associated with the command.
+The image attempts to show some differences compared to the previous image. The small circle in the large square now has a dashed class line pointing to the dashed class circle at the top. What also seems to have happened, is that this made the object circle on the left not have the command anymore. The circle on the left no longer seems to participate, because it might not have the class associated with the command.
 
 ### Line Merge
 

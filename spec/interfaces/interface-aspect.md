@@ -113,7 +113,7 @@ Do not wreck your brain over all this delegation and overloading. It is just for
 - __Object-Interface Get__
 - __Use Reference As Interface__
 
-Detail: For that last command you might want to overload Object Get. But that does not work. You can not overload it, because they might both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
+Detail: For that last command you might want to overload Object Get. But that might not work. You can not overload it, because they might both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
 
 ### System Commands for the Interface Merging Aspect
 
@@ -155,7 +155,7 @@ The commands are placed inside a triangle, that wraps together the members of th
 
 ![](images/2.%20Interface%20Aspect.003.png)
 
-It works the same for a __Related List Item__ as it does for a __Related Item__.
+It works the same for a __Related List Item__ as it might for a __Related Item__.
 
 #### Reference-Interface in System Interface of Related List
 
@@ -176,7 +176,7 @@ The commands are placed inside the system interface inside a triangle, that wrap
 
 ![](images/2.%20Interface%20Aspect.005.png)
 
-__Interface Merging__ does not apply to __Related List Items__, because it does not seem to be practical there.
+__Interface Merging__ might not apply to __Related List Items__, because it might not seem to be practical there.
 
 ### Interface Assignment Types
 
@@ -366,7 +366,7 @@ But now also the __Interface__ can be specified upon creation of an object. This
 
 ![](images/2.%20Interface%20Aspect.050.png)
 
-Now the __New__ command’s __Interface__ parameter is filled in. The new object might have a fixed interface, but the object does not have a class. This means the __Publics__ are fixed by the interface, but an implementation is free to fill in.
+Now the __New__ command’s __Interface__ parameter is filled in. The new object might have a fixed interface, but the object might not have a class. This means the __Publics__ are fixed by the interface, but an implementation is free to fill in.
 
 You do not need to set both __Class__ and __Interface__ parameter of the __New__ method, because if the __Class__ parameter is set, it determines the __Interface__ too.
 

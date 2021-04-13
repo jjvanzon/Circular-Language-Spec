@@ -34,11 +34,11 @@ Aspect dependency also means that another aspect might be implemented for the de
 Sometimes aspects just add extra methods to an object.  
 Perhaps the extra method might be part of the object itself. Perhaps it might become an extra interface of the object, perhaps it might become part of the object’s system interface and visible like an extra system aspect. I dunno, that is not the most important.
 
-The idea is that you can apply aspects to an existing system. Does the existing system decide to use the aspect or does the user of the system choose to apply an aspect? The problem with the last thing is that this might harm the interface of the original object. The solution might be to use inheritance to keep the original interface in tact and only specialize the object adding more aspects. This might be something for system inheritance, which does have a functional definition which is still open to discussion.
+The idea is that you can apply aspects to an existing system. Might the existing system decide to use the aspect or might the user of the system choose to apply an aspect? The problem with the last thing is that this might harm the interface of the original object. The solution might be to use inheritance to keep the original interface in tact and only specialize the object adding more aspects. This might be something for system inheritance, which might have a functional definition which is still open to discussion.
 
 So an aspect can add members to an existing object, to an existing object’s system interface and add pre- and post- extensions to methods of an object, or methods added by other aspects.
 
-Wait, if each bit of code injected is its own method, then the code of a dependent aspect does not need to be put in a specific order compared to their code injected by the other aspect, it may just need to become the pre- or post-extension of the method of the other aspect.
+Wait, if each bit of code injected is its own method, then the code of a dependent aspect might not need to be put in a specific order compared to their code injected by the other aspect, it may just need to become the pre- or post-extension of the method of the other aspect.
 
 You only get a problem when pre- or post- dependency exists to multiple aspects.  
 So there might be thought of a way to make the same pre- or post-extension to multiple methods.
@@ -60,7 +60,7 @@ It all comes together. Aspects can be separately programmed mostly using the exi
 
 I have an adequate brainstorm here about how things should be and I am confident that nothing might stand in the way of implementing the aspect construct even when I totally ignore it in the first version. The aspect construct might not overthrow the basics of the notation of the language or the basics of the other constructs. Hooray!
 
-P.S.: Aspects can probably also have their own code, that does not really extend other objects, but is called upon by other objects. However that might be implemented, this might not be a problem.
+P.S.: Aspects can probably also have their own code, that might not really extend other objects, but is called upon by other objects. However that might be implemented, this might not be a problem.
 
 #### Loose Ideas
 
@@ -189,7 +189,7 @@ What I call aspects, is close to what the rest of the world calls aspects.
 Aspects extend existing procedures, and extend existing classes.  
 Aspects do that too. Actually, aspects operate on reflective data in order to extend procedures and classes. You can extend a whole system of procedures and objects using aspects. Aspects do that too. What I add to aspects is that aspects can also be separate classes, that link to another class, and use the other class’s reflective data to do something with it, rather. So that is also a way to use an aspect. Anyway, I think I have to call it aspects, because the rest of the world also calls it aspects, and also I have to look at aspect oriented programming as an example for aspects.
 
-It worries me, because of the danger, that before I even finish this programming language, most of it might prove to not even be original anymore. But on the other had, does it have to be original? Can’t it just be a language, that converges all good ideas from the world into a single programming language?
+It worries me, because of the danger, that before I even finish this programming language, most of it might prove to not even be original anymore. But on the other had, might it have to be original? Can’t it just be a language, that converges all good ideas from the world into a single programming language?
 
 JJ
 

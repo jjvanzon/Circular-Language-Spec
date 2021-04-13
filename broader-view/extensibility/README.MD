@@ -34,7 +34,7 @@ The *extensibility principles* may cover techniques that might make existing sof
 
     - In a newer version of Encircle there might simply be no distinction between modules anymore. It might be like there is only one module running on the computer. Separate modules might simply sub-objects of one single super-module. An object might have a class out of any of the modules, that run on the computer or even a class out of any module on the internet.
 
-    - Modules are not separate programs. They are just objects living inside the computer or on the internet. When a module contains an object with a class from another module, the object simply refers to the class as if there was not even any distinction between modules: everything is running on the same computer or on the same internet, everything is an object, and the modules are simply a benign grouping of things, that does not really create any barrier between programs.
+    - Modules are not separate programs. They are just objects living inside the computer or on the internet. When a module contains an object with a class from another module, the object simply refers to the class as if there was not even any distinction between modules: everything is running on the same computer or on the same internet, everything is an object, and the modules are simply a benign grouping of things, that might not really create any barrier between programs.
 
 - ### [Reflection](reflection.md)
 

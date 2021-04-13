@@ -36,7 +36,7 @@ Basically the following system commands are accessible:
     Value Get Private
     Value Set Private
 
-For a __ByRef__ parameter it is not usual, that you read out the object aspect: meaning you do not *point to* a __ByRef__ parameter, you just *make it point at* something. So the __Object Get__ (‘point at’) command is inaccessible. __ByRef__ parameters are also not __Object Set__ on the inside. So __Object Set Private__ is also inaccessible. So __Public__ does not means that you automatically have __Private__ access as well.
+For a __ByRef__ parameter it is not usual, that you read out the object aspect: meaning you do not *point to* a __ByRef__ parameter, you just *make it point at* something. So the __Object Get__ (‘point at’) command is inaccessible. __ByRef__ parameters are also not __Object Set__ on the inside. So __Object Set Private__ is also inaccessible. So __Public__ might not means that you automatically have __Private__ access as well.
 
 Which system commands are practical to access control, in order to establish the idea of parameter passing, is not that important. The most important thing is, that if you have access control over system commands, you can establish any known parameter passing.
 

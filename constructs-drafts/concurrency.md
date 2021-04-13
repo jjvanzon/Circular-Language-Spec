@@ -33,7 +33,7 @@ In eerste instantie is dit minder belangrijk, maar misschien maakt de automatisc
 
 <  
 2008-07-03  
-In automatic execution order you can see, that when you first assume arbitrary order of sub-commands, that do reads and writes, you have a concurrency situation. If you can solve THAT concurrency situation with automatic execution order, you can solve an arbitrary concurrent data-use situation with automatic execution order too. If everything is programmed, where does arbitrariness of the concurrency situation come from? The arbitrariness comes from users. Somehow a bigger whole, than a command with sub-commands might need to be treated as a single command, and the techniques of automatic execution order should be applied to that. Automatic execution order has not been fully described yet.  
+In automatic execution order you can see, that when you first assume arbitrary order of sub-commands, that do reads and writes, you have a concurrency situation. If you can solve THAT concurrency situation with automatic execution order, you can solve an arbitrary concurrent data-use situation with automatic execution order too. If everything is programmed, where might arbitrariness of the concurrency situation come from? The arbitrariness comes from users. Somehow a bigger whole, than a command with sub-commands might need to be treated as a single command, and the techniques of automatic execution order should be applied to that. Automatic execution order has not been fully described yet.  
 />
 
 #### Concurrency is not considered
@@ -74,7 +74,7 @@ Can you apply automatic execution order to accesses, that are actually happening
 
 In my system it might become a little different. Instead of locking data, which locks procedures, the order of the procedures trying to access the same data is determined. 
 
-If the data does not become available soon enough, the procedure that tries to get access might give up and fail. This causes a rollback of the whole procedure.
+If the data might not become available soon enough, the procedure that tries to get access might give up and fail. This causes a rollback of the whole procedure.
 
 If you can’t automatically determine the execution order for a procedure definition, but you can only determine the execution order of running procedures, then you’re only working on concurrency, no longer on automatic execution order.
 

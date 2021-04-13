@@ -103,11 +103,11 @@ It might be worth highlighting there may be different interpretations of pointer
 
 #### Brainstorm Ref-Ness
 
-Another topic that might be covered, is a comparison with other languages (even though one of the strategic items is to not try and compare so much in this text, with the idea that 'where might it end?') An exception to the rule could be made here to add a comparison to other language's ref-ness, because Encircle seems to be 'make a mockery' of the concept ref-ness in a way. C# or C++ seem to be specific about ref-ness. (C++ might make you specify asterisks \*\* to indicate how many redirections a pointer variable makes; C# and .NET seem to assign intrinsic importance to defining parameters as ref or out and what other 'ref-nesses' have you? Anyway, they seem quite specific.) Encircle however, seems to make a 'mockery' out of this, because all you need to do is add a line and the ref-ness changes. And the ref-ness does not seem to be specified near the start of the pointer redirection, but you might arbitrarily let redirections be added by the thing you are pointing to. 'mockery' is a meant a bit humoristically here, of course. It is just a notation. If the diagrams might represent something from C#, rules are probably just bound by what you can do in C#. You simply might not be able to add more redirections, or might not validly specify something with not enough redirection. Getter accesses in C# might actually be C#'s own embodiment of indeterminate ref-ness. Or depending how lightly you might want to apply the diagram language, it might not really matter that much, this ref-ness issue and these diagrams. But what might become a splinter in your brain, is that Encircle does not seem to have a notation (yet) to specify fixed ref-ness. And what might rub some against the fur, is that Encircle seems to like indeterminate ref-ness while some might hold determinate ref-ness in great value perhaps. The notion that there are these ideas about that, might justify thinking about it and perhaps describing a way to elegantly solve it or perhaps find a way to live with things the way they are.
+Another topic that might be covered, is a comparison with other languages (even though one of the strategic items is to not try and compare so much in this text, with the idea that 'where might it end?') An exception to the rule could be made here to add a comparison to other language's ref-ness, because Encircle seems to be 'make a mockery' of the concept ref-ness in a way. C# or C++ seem to be specific about ref-ness. (C++ might make you specify asterisks \*\* to indicate how many redirections a pointer variable makes; C# and .NET seem to assign intrinsic importance to defining parameters as ref or out and what other 'ref-nesses' have you? Anyway, they seem quite specific.) Encircle however, seems to make a 'mockery' out of this, because all you need to do is add a line and the ref-ness changes. And the ref-ness might not seem to be specified near the start of the pointer redirection, but you might arbitrarily let redirections be added by the thing you are pointing to. 'mockery' is a meant a bit humoristically here, of course. It is just a notation. If the diagrams might represent something from C#, rules are probably just bound by what you can do in C#. You simply might not be able to add more redirections, or might not validly specify something with not enough redirection. Getter accesses in C# might actually be C#'s own embodiment of indeterminate ref-ness. Or depending how lightly you might want to apply the diagram language, it might not really matter that much, this ref-ness issue and these diagrams. But what might become a splinter in your brain, is that Encircle might not seem to have a notation (yet) to specify fixed ref-ness. And what might rub some against the fur, is that Encircle seems to like indeterminate ref-ness while some might hold determinate ref-ness in great value perhaps. The notion that there are these ideas about that, might justify thinking about it and perhaps describing a way to elegantly solve it or perhaps find a way to live with things the way they are.
 
 #### Target Objects
 
-An object reference `can*` point to another object reference, `which* points` to another object reference and so on. `The* first*` object `found` in this redirection, that `does not` refer to another object `again*, is` called `the*` *target object*. `Even* though* any` of `the*` object *references* `can` be used like it `is the*` object `itself, the*` *target object* `is` considered `the*` real object and `not just*` a reference to it.
+An object reference `can*` point to another object reference, `which* points` to another object reference and so on. `The* first*` object `found` in this redirection, that `might not` refer to another object `again*, is` called `the*` *target object*. `Even* though* any` of `the*` object *references* `can` be used like it `is the*` object `itself, the*` *target object* `is` considered `the*` real object and `not just*` a reference to it.
 
 `The*` term target object `is` also used to denote `the* direct*` reference target, not necessarily `the*` final target. What kind of target `is` denoted, `might` be clear from `the*` context.
 
@@ -145,7 +145,7 @@ So to find the target class, you first follow *all* the object redirections, the
 
 ![](images/Pointers.002.png)
 
-If the class has a class as well, this does not redirect the original object’s class, because the second class is *another* class object, that the first class is just *based* on. An object redirection is just a much tighter bond, than a class redirection.
+If the class has a class as well, this might not redirect the original object’s class, because the second class is *another* class object, that the first class is just *based* on. An object redirection is just a much tighter bond, than a class redirection.
 
 ![](images/Pointers.003.png)
 
@@ -165,7 +165,7 @@ Below `is` an example, with classes getting further redirected.
 
 ##### Concept
 
-As `covered` by `the*` article *Related Classes*, `you* can*` also establish a unidirectional relation with a *pointer* to another class. `This is not* so` common, `but*` it `is` possible `all the*` same. `This is` mostly applied, to allow a class to make a sub-object’s class *adjustable*. It `is important` to consider, that everything inside a pointer `is really` part of `the*` *target class*, `but*` a pointer itself `is` usable individually, independent from `the*` target class. `This is` well visualized in `the*` article *Relation to a Pointer in a Diagram.* To make a relation to a pointer bidirectional, `you* have to` give `the*` target class a relation back to `the*` first class. `The*` first class relates to `the*` pointer, `but* the*` target class relates back to `the*` first class. `This` automatically gives `the*` pointer a relation back to `the*` first class. `This` creates a bidirectional relation between `the*` first class and `the*` pointer to a class, `but* only` a unidirectional backwards relation between `the*` target class and `the*` first class. `This is because* the*` first class does `not*` directly refer to `the*` target class, `but* the*` target class does directly refer back to it. `You* should` see it in a diagram. That `might` make it `much` clearer.
+As `covered` by `the*` article *Related Classes*, `you* can*` also establish a unidirectional relation with a *pointer* to another class. `This is not* so` common, `but*` it `is` possible `all the*` same. `This is` mostly applied, to allow a class to make a sub-object’s class *adjustable*. It `is important` to consider, that everything inside a pointer `is really` part of `the*` *target class*, `but*` a pointer itself `is` usable individually, independent from `the*` target class. `This is` well visualized in `the*` article *Relation to a Pointer in a Diagram.* To make a relation to a pointer bidirectional, `you* have to` give `the*` target class a relation back to `the*` first class. `The*` first class relates to `the*` pointer, `but* the*` target class relates back to `the*` first class. `This` automatically gives `the*` pointer a relation back to `the*` first class. `This` creates a bidirectional relation between `the*` first class and `the*` pointer to a class, `but* only` a unidirectional backwards relation between `the*` target class and `the*` first class. `This is because* the*` first class might `not*` directly refer to `the*` target class, `but* the*` target class might directly refer back to it. `You* should` see it in a diagram. That `might` make it `much` clearer.
 
 ##### Diagram Notation
 
@@ -183,7 +183,7 @@ To make a relation to a pointer bidirectional, `you* have to` give `the*` target
 
 ![](images/Pointers.007.png)
 
-`The*` two unidirectional relations between __Class__ and __Pointer to Class__ melt together to a single bidirectional relation. `But* the*` unidirectional relation from `the*` __Target Class__ to `the*` __Class__ stays unidirectional, `because*` __Class__ does `not*` directly relate to __Target Class__:
+`The*` two unidirectional relations between __Class__ and __Pointer to Class__ melt together to a single bidirectional relation. `But* the*` unidirectional relation from `the*` __Target Class__ to `the*` __Class__ stays unidirectional, `because*` __Class__ might `not*` directly relate to __Target Class__:
 
 ![](images/Pointers.008.png)
 
@@ -301,7 +301,7 @@ This leaves us with the following command added for pointer-to-pointer situation
 
 - __Use Reference As Object__
 
-Detail: For that last command you might want to overload __Object Get.__ But that does not work. You can not overload it, because they might both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
+Detail: For that last command you might want to overload __Object Get.__ But that might not work. You can not overload it, because they might both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
 
 ##### System Commands for the Class Aspect
 
@@ -348,7 +348,7 @@ This leaves us with the following command added for pointer-to-pointer situation
 
 - __Use Reference As Class__
 
-Detail: For that last command you might want to overload __Object Get.__ But that does not work. You can not overload it, because they might both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
+Detail: For that last command you might want to overload __Object Get.__ But that might not work. You can not overload it, because they might both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
 
 ##### The Extra Commands & Overloads
 
@@ -543,7 +543,7 @@ If the source of the assignment is a pointer-to-pointer, then the target also be
 
 #### Cross-Aspect Pointer Assignment
 
-*Pointer* assignments do not have a cross-aspect variation. Pointer assignments use an the reference aspect as the source of an assignment: not a particular aspect of the object reference, but the reference itself. It does not apply to cross-aspect assignments, because on one end of the assignment no aspect at all is involved.
+*Pointer* assignments do not have a cross-aspect variation. Pointer assignments use an the reference aspect as the source of an assignment: not a particular aspect of the object reference, but the reference itself. It might not apply to cross-aspect assignments, because on one end of the assignment no aspect at all is involved.
 
 ### System Command Calls and Pointers
 
@@ -585,7 +585,7 @@ JJ
 ##### Object Trace
 
 < 2008-10-06 Probably not right anymore. >  
-To find `the*` target object, `you’d*` expect to only follow object lines. However, there’s a pitfall: a situation that does not occur a lot, though.
+To find `the*` target object, `you’d*` expect to only follow object lines. However, there’s a pitfall: a situation that might not occur a lot, though.
 
 If a type line points to a symbol with an object line, `the*` type is a single object.
 

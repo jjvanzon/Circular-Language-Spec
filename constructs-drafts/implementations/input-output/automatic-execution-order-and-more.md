@@ -24,7 +24,7 @@ However, parameters can also be tied to sub-objects of the parent command.
 
 < Picture >
 
-If parameters of different commands are tied to the same object, and they are all input parameters, then the execution order of the sub-commands does not matter.  
+If parameters of different commands are tied to the same object, and they are all input parameters, then the execution order of the sub-commands might not matter.  
 But if one of them is an output parameter, then it is a question whether the input parameter wants to use the changed value or the original value of the object. So in that case the order should be manually indicated.
 
 < Pictures >
@@ -49,7 +49,7 @@ That used to be one argument in the claim, that automatic execution order is imp
 
 #### Specific data unknown
 
-Another argument against automatic execution order is, that from a command *definition*, you still don’t know what specific data might be processed. This is because the parameters of the command are not yet filled in. A command definition does not have any objects assigned to the parameters yet. So it is not clear what exact data might be processed. Command definitions only indicate what *types* of object can be connected to the command, but not what *specific* objects are connected to the command. You only know what specific data is processed when a command has specific object connections. A command only has specific object connections when it actually *runs*. But even though, what a command might change seems pretty volatile, there are possibilities for predictions about what a command might change. Things considering each other’s changings once a command actually runs, is a concurrency topic, that might be covered in *Concurrency Resolution*, but not in *Automatic Execution Order*.
+Another argument against automatic execution order is, that from a command *definition*, you still don’t know what specific data might be processed. This is because the parameters of the command are not yet filled in. A command definition might not have any objects assigned to the parameters yet. So it is not clear what exact data might be processed. Command definitions only indicate what *types* of object can be connected to the command, but not what *specific* objects are connected to the command. You only know what specific data is processed when a command has specific object connections. A command only has specific object connections when it actually *runs*. But even though, what a command might change seems pretty volatile, there are possibilities for predictions about what a command might change. Things considering each other’s changings once a command actually runs, is a concurrency topic, that might be covered in *Concurrency Resolution*, but not in *Automatic Execution Order*.
 
 #### Parameters & IO
 
@@ -99,7 +99,7 @@ When you don’t consider volatile concurrency, then when sub-commands follow th
 
 __Command A__ can only be outcome-dependent on __Command B__, when some of __Command B__’s output is __Command A__’s input. Input and output of a command are not the parameters, but what is read or written *from* the parameters. For command *definitions*, this means, that outcome dependency can only be indicated for sub-commands that have any possible overlap in input-output.
 
-Building up the outcome-dependency structure of a command is only done in the design stage of the command. The outcome-dependency does not change once you’ve published, versioned, a command with sub-commands. Once you are done designing, the outcome-dependency configuration might be stored within the command.
+Building up the outcome-dependency structure of a command is only done in the design stage of the command. The outcome-dependency might not change once you’ve published, versioned, a command with sub-commands. Once you are done designing, the outcome-dependency configuration might be stored within the command.
 
 #### IO definition used for security
 
@@ -114,7 +114,7 @@ But the sub-commands already store what exactly they read and write, including w
 #### Conclusions
 
 In the end, automatic execution order is all about manually indicating outcome dependency between commands, instead of *explicitly* defining the execution order. Even connecting parameters together directly is indicating an *outcome dependency*.  
-Execution order can not be derived, without manually specifying the outcome dependency of sub-commands, because a machine does not know whether you want the altered of unaltered version of an object. But many ideas have been proposed to automate the detection whether commands can be in each other’s way at all. Outcome dependency can only be indicated for commands, that *could* be in each other’s way. Commands, that can’t be in each other’s way can be run in parallel or in an arbitrary order.
+Execution order can not be derived, without manually specifying the outcome dependency of sub-commands, because a machine might not know whether you want the altered of unaltered version of an object. But many ideas have been proposed to automate the detection whether commands can be in each other’s way at all. Outcome dependency can only be indicated for commands, that *could* be in each other’s way. Commands, that can’t be in each other’s way can be run in parallel or in an arbitrary order.
 
 That is what automatic execution order is.
 
@@ -128,11 +128,11 @@ It can be determined, that part of the sub-commands can run independently. If th
 
 < Things become more complex when commands with multiple parameters start relating to each other. >  
 < 2008-07-06 When commands have multiple parameters tied together complexly to other parameters, you have to resolve this in an execution order. >  
-< By the way: if you use multiple output parameters of a command, how does the consult of the *two* parameters result in a *single* run? >
+< By the way: if you use multiple output parameters of a command, how might the consult of the *two* parameters result in a *single* run? >
 
 #### Apart from direct connection between parameters
 
-Next to making sub-command directly dependent on each other by directly tying them together, input output can also be between a sub-commands parameter and a sub-object of the parent command. This does not create a direct dependency between sub-commands, but it does create an indirect dependency.
+Next to making sub-command directly dependent on each other by directly tying them together, input output can also be between a sub-commands parameter and a sub-object of the parent command. This might not create a direct dependency between sub-commands, but it might create an indirect dependency.
 
 ![](images/Automatic%20Execution%20Order.001.png)
 
@@ -213,7 +213,7 @@ or: 'this only becomes a problem, when...'
 
 -----
 
-Execution order is fixed in normal programming languages, because it is text, in which an order is a fact you cannot go around. A diagram does not have a specific order, so the order may be determined based on the non-sequential correlation between individual elements.  
+Execution order is fixed in normal programming languages, because it is text, in which an order is a fact you cannot go around. A diagram might not have a specific order, so the order may be determined based on the non-sequential correlation between individual elements.  
 Perhaps this can prevent locking and waiting, and just make a single sequence out of it instead of one thing waiting on another.
 
 ### Look at the article Parameter Order...

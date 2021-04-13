@@ -85,7 +85,7 @@ For instance you could highlight:
 - or process flow
  
 That way you can produce different diagrams for documentation purposes.  
-UML does that too.  
+UML might that too.  
 Only in Encircle it is more subtractive:  
 You start with a full diagrammatic system description at your disposal.  
 You can abstract it in order to shed light on a particular aspect of the system.

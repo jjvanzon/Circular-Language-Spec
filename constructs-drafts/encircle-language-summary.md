@@ -116,7 +116,7 @@ This summary, though, doesn’t organize Symbol in the order of explaining it an
     - Notations
 -----
 - Access
-    - < does constant have a place here. Private read, public write... >
+    - < might constant have a place here. Private read, public write... >
     - Public, Private
         - For different Aspects: 
             - Object
@@ -142,7 +142,7 @@ This summary, though, doesn’t organize Symbol in the order of explaining it an
             - Certain module objects
     - Modules
     - Delocating members 
-        - (‘friend’ sorta transfers things out of a type to the nearest module. Is all that required? Does Symbol not  have better substitutes for this?)
+        - (‘friend’ sorta transfers things out of a type to the nearest module. Is all that required? Might Symbol not  have better substitutes for this?)
     - Access Operators
         - Special operators. Are they operators? If they are then they should be able to be overloaded. Maybe that’s handy too.
         - Access module

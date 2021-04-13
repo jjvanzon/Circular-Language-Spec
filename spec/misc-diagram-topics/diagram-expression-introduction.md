@@ -33,12 +33,12 @@ Diagram Expression concepts:
 - Diagram Metrics
 - System Methods
 
-The diagram does need to be able to display the whole system in terms of just coding principles, and not coding aspects, because you need to be able to start programming coding aspects using the diagrams. The diagrams need to already be in the language, when you don’t yet have coding aspects.  
+The diagram might need to be able to display the whole system in terms of just coding principles, and not coding aspects, because you need to be able to start programming coding aspects using the diagrams. The diagrams need to already be in the language, when you don’t yet have coding aspects.  
 However, coding aspects might be applying to the display of diagrams.
 
 -----
 
-For practical reasons, a triangle's purpose may have to be maintained. This does make the diagram not be an exact representation of ALL the systematics, so that sucks. The different purposes of the triangle may be base class, interface, group, joint access modifier, etcetera. I guess if you want to group members by different aspects, triangles might overlap. I already brainstormed about that some time in the past.  
+For practical reasons, a triangle's purpose may have to be maintained. This might make the diagram not be an exact representation of ALL the systematics, so that sucks. The different purposes of the triangle may be base class, interface, group, joint access modifier, etcetera. I guess if you want to group members by different aspects, triangles might overlap. I already brainstormed about that some time in the past.  
 \> But overlap can be avoided by automatic containment? Couldn’t it? How might that look? It might create secondary references, won’t it?
 
 -----
@@ -144,9 +144,9 @@ Informal line types:
 
 In that picture I also see, that I connect the two method interfaces inside the imaginary class definition to the method interfaces on the separate sites using interface lines. Theoretically that is not right: not only the interface of the symbols connected with an interface line is the same, the definition is the same, so theoretically they should be connected with class lines.  
 But I made them interface lines just for clarity, because it is all about interface definitions, and now all things about interface definitions are expressed in dotted lines, and all things about class definitions are expressed in dashed lines; it is just clearer this way.  
-But does this create an ambiguity? The interface line between the interface definition in the imaginary target class and te interface definition on a site, literally does mean, that only the interface of the two objects is the same: that means: the public contents of them is the same, but the private contents are different, which means the methods have the same interface, but they are different methods, with just the same signature. That’s not what I intended to express, though. The interfaces in the sites should even have been drawn with dotted lines either, because that might imply you are only using it as an interface, while really you’re using it as a definition.
+But might this create an ambiguity? The interface line between the interface definition in the imaginary target class and te interface definition on a site, literally might mean, that only the interface of the two objects is the same: that means: the public contents of them is the same, but the private contents are different, which means the methods have the same interface, but they are different methods, with just the same signature. That’s not what I intended to express, though. The interfaces in the sites should even have been drawn with dotted lines either, because that might imply you are only using it as an interface, while really you’re using it as a definition.
 
-The ‘wrong’ notation is just so much clearer, but it does not formally express the system correctly, because it implies two symbols only have the same interface, but really they have the same definition. But the ‘wrong’ notation of it is just so much clearer. I’m going to have to invent rules that make the ‘wrong’ notation formally ok, or the ‘right’ notation more clear.
+The ‘wrong’ notation is just so much clearer, but it might not formally express the system correctly, because it implies two symbols only have the same interface, but really they have the same definition. But the ‘wrong’ notation of it is just so much clearer. I’m going to have to invent rules that make the ‘wrong’ notation formally ok, or the ‘right’ notation more clear.
 
 -----
 
@@ -160,7 +160,7 @@ JJ
 
 Diagram Expression,
 
-"Your screen doesn't have to do everything. Your brain does the rest."
+"Your screen doesn't have to do everything. Your brain might the rest."
 
 JJ
 
@@ -242,7 +242,7 @@ The line types solid, dashed and dotted are all three to be used for commands af
 
 Or the rule might be: a solid line going from a command call to a command definition is actually a class line. A solid line between two command definition symbols is always an object line.
 
-Not creating such a simplified notation, produces more dashed lines, but it does make you more aware of what kind of connection there is between definitions and calls, and it becomes more apparent, that calls are briefly created objects that are destroyed after they’re done, and that definitions are more permanently available. It makes converting an object into a command and back more understandable as well.
+Not creating such a simplified notation, produces more dashed lines, but it might make you more aware of what kind of connection there is between definitions and calls, and it becomes more apparent, that calls are briefly created objects that are destroyed after they’re done, and that definitions are more permanently available. It makes converting an object into a command and back more understandable as well.
 
 JJ
 

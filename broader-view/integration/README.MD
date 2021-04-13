@@ -24,7 +24,7 @@ Here are some topics that might be put under this umbrella. Some may have their 
 
 - ### [UML](uml.md)
 
-    - This article is not finished. It might once become an evaluation on what are the pros and cons of the Encircle diagram notation compared to UML: what does UML offer, that the Encircle diagram notation does not and what UML-expressible concepts might have an alternative notation inside the Encircle diagram language? Does UML still offer things, that the Encircle diagram notation does not? And if there is something the Encircle diagram notation does not offer: should the diagram notation be changed, so that it could be a substitute for UML? So this article might become a comparison between UML and the diagram notation of Encircle.
+    - This article is not finished. It might once become an evaluation on what are the pros and cons of the Encircle diagram notation compared to UML: what might UML offer, that the Encircle diagram notation might not and what UML-expressible concepts might have an alternative notation inside the Encircle diagram language? Might UML still offer things, that the Encircle diagram notation might not? And if there is something the Encircle diagram notation might not offer: should the diagram notation be changed, so that it could be a substitute for UML? So this article might become a comparison between UML and the diagram notation of Encircle.
 
 - ### File System Integration
 

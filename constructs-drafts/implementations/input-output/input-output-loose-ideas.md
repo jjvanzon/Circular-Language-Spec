@@ -74,7 +74,7 @@ Parameters / Input Output,
 - A situation, where an Object Set on the inside and an Object Set on the outside has the exact same result.
 The effect of an Object Set from the outside can perhaps result in the same situation as na Object Set from the inside. It might not matter whether the result of an Object Set on the outside is the same as an Object Set on the inside. This is what it is conceptually.
 The effect might be that a command contains a reference to an object, whether it is an Object Out parameter, Value parameter or Reference parameter.  
-I could take a look at situations, where an Object Set on the inside and an Object Set on the outside has the exact same result, but even if it does, it does not matter.
+I could take a look at situations, where an Object Set on the inside and an Object Set on the outside has the exact same result, but even if it might, it might not matter.
 
 JJ
 

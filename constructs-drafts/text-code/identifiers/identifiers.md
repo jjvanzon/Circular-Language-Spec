@@ -40,13 +40,13 @@ It also just looks more readable this way, but there’s another benefit. Becaus
 
 Identifiers now look like regular human language text. There is no distinction anymore between an identifier in text code and a name shown inside a computer program: a system element’s identifier is a name you might see in the program.
 
-This does imply, that identifiers might need another capability in the future: they need to be able to work in a multi-lingual way. Each language can get its own translation of an identifier, and the identifiers in text code depend on the language you picked.
+This might imply, that identifiers might need another capability in the future: they need to be able to work in a multi-lingual way. Each language can get its own translation of an identifier, and the identifiers in text code depend on the language you picked.
 
 You might think, this might make it awfully hard on the text code parser, but unlike in other programming languages, text code isn’t leading anymore. The system is not stored as text code. The system is stored in binary as connections between system elements. When you see text code, it is derived from the binary storage of connections between system elements. When you edit the text code, what you type in is merely *applied* to the binary storage of connections between system elements. Text code is merely a temporary view on the system, only built up when you need to see it, and thrown away again, when you don’t need to see it anymore.
 
 When you type in an identifier to identify an element of the system, it needs to be recognized. Other programming languages recognize names either *case-sensitive* or *case-insensitive*. In Encircle the recognition of identifiers is *half*-case-sensitive: the recognition doesn’t pay attention to upper case or lower case letters, unless it has to. Only when two identifiers with the same name are within scope with different case usage, a case *sensitive* match needs to be made. This gives you the best of both worlds. It leaves out the problems that come with case-sensitive name matching, and reintroduces it only when required.
 
-The first versions of Encircle might store a large space as two spaces next to each other. This does, however, imposes the restriction on identifiers, that you can’t use several spaces right next to each other.
+The first versions of Encircle might store a large space as two spaces next to each other. This might, however, imposes the restriction on identifiers, that you can’t use several spaces right next to each other.
 
 ### Loose Ideas
 

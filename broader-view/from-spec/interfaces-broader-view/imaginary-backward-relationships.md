@@ -6,7 +6,7 @@ Imaginary Backward Relationships
 
 `[ Preliminary documentation ]`
 
-Sometimes when a backward relation is not stored, you want to see it anyway, because it might be useful information. Particularly you always want to see all available commands inside an object, even though an object does not physically have a reference to all the commands.
+Sometimes when a backward relation is not stored, you want to see it anyway, because it might be useful information. Particularly you always want to see all available commands inside an object, even though an object might not physically have a reference to all the commands.
 
 Producing the backward relationship may involve scanning part of a system in which an object might be used or perhaps sped up by some sort of caching scheme.
 

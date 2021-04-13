@@ -149,7 +149,7 @@ De onvoorwaardelijke 'reflectiviteit' van Creator, is het middel voor uitbreidin
 -----
 
 You have to note that when something is a coding aspect, and not a coding principle, it doesn’t mean it’s less important for the programming language. It just means that it can be expressed using more basic coding principles using reflective data.  
-That does mean that Attributes could become an aspect, and perhaps even that relations could too. Funny. Perhaps I can strip the core even further down.  
+That might mean that Attributes could become an aspect, and perhaps even that relations could too. Funny. Perhaps I can strip the core even further down.  
 Funny. Perhaps object oriented can be defined as an aspect too.  
 Deep. Cool stuff.  
 Aspect literals is a great help in this as well.

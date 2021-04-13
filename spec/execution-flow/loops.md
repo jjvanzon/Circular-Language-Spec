@@ -166,7 +166,7 @@ There are three forms of __For__ loop, as mentioned in the article *For*. This a
 
 The collection is passed as an argument to the __For__ command. The __For__ command might also be passed a command reference that might be called once for every item in the collection. The command reference parameter is called __Loop__. The current item of the collection is stored as the __Item__ parameter, that is read only, and controlled by the __For__ command. The __Item__ parameter is passed to the __Loop__ procedure, each time it is called.
 
-The implementation of the __For Each__ loop does not only use plain machine instructions, because it it might be accessing a collection with a more object oriented approach. The looping itself can be controlled with machine instructions, though jumping back to the same call to the __Loop__ procedure for each of the items of the collection.
+The implementation of the __For Each__ loop might not only use plain machine instructions, because it it might be accessing a collection with a more object oriented approach. The looping itself can be controlled with machine instructions, though jumping back to the same call to the __Loop__ procedure for each of the items of the collection.
 
 #### Diagram
 

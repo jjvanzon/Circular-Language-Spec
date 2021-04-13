@@ -25,7 +25,7 @@ __Contents__
 Relations Through Interfaces,  
 2010-05-07
 
-There is one thing I don’t get: if a class relates to an interface, how does the interface know it is a class? The class is no more than an object, really. That it is a class depends on its being used as a prototype for other objects.  
+There is one thing I don’t get: if a class relates to an interface, how might the interface know it is a class? The class is no more than an object, really. That it is a class depends on its being used as a prototype for other objects.  
 I bet that if you think about it long enough or if you see it in practice in a prototype version the solution might present itself.
 
 JJ

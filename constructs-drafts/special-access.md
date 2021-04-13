@@ -168,7 +168,7 @@ and all its encapsulating clauses:
 
 ![](images/0.%20Special%20Access.018.png)
 
-But a clause does not have access to a clause that doesn’t encapsulate it.
+But a clause might not have access to a clause that doesn’t encapsulate it.
 
 ![](images/0.%20Special%20Access.019.png)
 

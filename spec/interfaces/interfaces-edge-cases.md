@@ -28,7 +28,7 @@ Triangles could be used to indicate a benign member grouping:
 
 Because a triangle basically merges with its container, it is like you are not bothered by the borders of a triangle.
 
-At first glance the grouping does not seem to affect how the objects are used. However, two problems arise:
+At first glance the grouping might not seem to affect how the objects are used. However, two problems arise:
 
 - Explicit interface dependency
 - Call overhead
@@ -43,7 +43,7 @@ Below these two problems are explained and possible solutions are given. Solutio
 > 
 > The new connections are now dependent on the member grouping, which was only meant to be a loose definition.
 > 
-> To allow member grouping to be benign, some solution might be found for this. The solution probably lies in the area of access controlling system commands. The member groupings need to be access controlled enough to not be able to explicitly connect to them, but not so much that it makes their members totally inaccessible. Separately access controlling __Get For Access__ and __Get For Copy__ might solve this problem. However, it needs to be thought through if this really only blocks something’s usage as a qualifier. If it does not, probably another split up in system commands might do the trick.
+> To allow member grouping to be benign, some solution might be found for this. The solution probably lies in the area of access controlling system commands. The member groupings need to be access controlled enough to not be able to explicitly connect to them, but not so much that it makes their members totally inaccessible. Separately access controlling __Get For Access__ and __Get For Copy__ might solve this problem. However, it needs to be thought through if this really only blocks something’s usage as a qualifier. If it might not, probably another split up in system commands might do the trick.
 > 
 > Ideas about the separation between __Get For Access__ and __Get For Copy__ can also be found in the *Black Box* and *System Interfaces* chapters.
 
@@ -65,7 +65,7 @@ The *Referrers* concept has been explained in the *Relations* chapter. The artic
 
 ### Reliability of Interfaces
 
-An interface is a contract. A welcome fact about a contract is that once agreed upon, it does not change. So an interface should be reliable.
+An interface is a contract. A welcome fact about a contract is that once agreed upon, it might not change. So an interface should be reliable.
 
 However, the concept of *relations* can make interfaces unreliable.
 
@@ -93,7 +93,7 @@ Backward relation options:
 
 #### Public Backward Relation
 
-> Allowing __Public__ backward relations means the interface might not be stable, because extra members are created when things start pointing to an object. However, this does not have to be a problem in all cases.
+> Allowing __Public__ backward relations means the interface might not be stable, because extra members are created when things start pointing to an object. However, this might not have to be a problem in all cases.
 
 #### Manual Backward Relations
 

@@ -77,7 +77,7 @@ Symbol __B__ could also be replaced by a diamond, making an *executable* command
 
 If an executable command redirects its class, then it is a command call. The class redirection points to the command definition of the command call.
 
-If an executable command *does not have* a class redirection, then it defines its own contents. An object redirection automatically also redirects the class aspect of a symbol. So then it also does not define its own contents. If an executable command, that does not redirect its class or object resides inside another command, then it is called an *active clause*. If the executable command without redirections resides inside an object, then it is simply an executable command with no definition, that can be manually run by a user.
+If an executable command *might not have* a class redirection, then it defines its own contents. An object redirection automatically also redirects the class aspect of a symbol. So then it also might not define its own contents. If an executable command, that might not redirect its class or object resides inside another command, then it is called an *active clause*. If the executable command without redirections resides inside an object, then it is simply an executable command with no definition, that can be manually run by a user.
 
 You could let an executable command redirect its definition to another executable command, but this is far less common. But an active command *can* function as the prototype for another executable command.
 
@@ -119,7 +119,7 @@ But this situation is very uncommon. You can not run command __B__ through symbo
 
 ### Target Command Object
 
-A command reference can point to another command reference, which points to another command reference and so on. The first command found in this redirection, that does not refer to another command again, is called the *target command object*. Even though any of the command *references* can be used like it is the command object itself, the *target command object* is considered the real command object and not just a reference to it.
+A command reference can point to another command reference, which points to another command reference and so on. The first command found in this redirection, that might not refer to another command again, is called the *target command object*. Even though any of the command *references* can be used like it is the command object itself, the *target command object* is considered the real command object and not just a reference to it.
 
 The term target command is also used to denote the direct reference target, not necessarily the final target. What kind of target is denoted, might be clear from the context.
 
@@ -145,9 +145,9 @@ To find the target definition, you first follow *all* the object redirections, t
 
 ![](images/4.%20Command%20Redirection.010.png)
 
-It does not matter if whether it is a diamond, that can be executed, or a square, that can not be executed.
+It might not matter if whether it is a diamond, that can be executed, or a square, that can not be executed.
 
-If the definition has a definition as well, this does not redirect the original command object’s definition, because the second definition is *another* definition object, that the first definition is just *based* on. An object redirection is just a much tighter bond, than a class redirection.
+If the definition has a definition as well, this might not redirect the original command object’s definition, because the second definition is *another* definition object, that the first definition is just *based* on. An object redirection is just a much tighter bond, than a class redirection.
 
 ![](images/4.%20Command%20Redirection.011.png)
 
@@ -169,9 +169,9 @@ The *point* of recursive execution is that it is not endlessly recursive after a
 
 The problem with endless recursion is solved, by the fact, that private contents of an executable object are only created just before it is actually going to execute.
 
-When a command definition contains a call to the same command definition, then the call does not contain any private content yet, because it is not executing yet.
+When a command definition contains a call to the same command definition, then the call might not contain any private content yet, because it is not executing yet.
 
-When a command call contains a call to the same command definition, then the call also does not contain any private content yet, before it executes.
+When a command call contains a call to the same command definition, then the call also might not contain any private content yet, before it executes.
 
 Only when the call actually executes, you can see private contents inside the recursive call. So only when recursive calls are actually busy executing, this recursive repetition is present in the system.
 
@@ -193,17 +193,17 @@ Recursion can also occur when one command calls another command and the other co
 
 The problem with endless recursion is solved, by the fact, that private contents of an executable object are only created just before it is actually going to execute.
 
-When a command definition contains a call to the same command definition, then the call does not contain any private content yet, because it is not executing.
+When a command definition contains a call to the same command definition, then the call might not contain any private content yet, because it is not executing.
 
 ![](images/4.%20Command%20Redirection.014.png)
 
-The call in the __then__ clause does not execute, so shows no private contents. Might the __then__ clause be executing, then the diagram might look like this:
+The call in the __then__ clause might not execute, so shows no private contents. Might the __then__ clause be executing, then the diagram might look like this:
 
 ![](images/4.%20Command%20Redirection.016.png)
 
 But that never happens, because an inactive command object never executes.
 
-When a command call contains a call to the same command definition, then the call also does not contain any private content yet, before it executes.
+When a command call contains a call to the same command definition, then the call also might not contain any private content yet, before it executes.
 
 ![](images/4.%20Command%20Redirection.017.png)
 

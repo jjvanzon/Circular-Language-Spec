@@ -817,7 +817,7 @@ Voor een iets andere syntax voor Creator structure:
   etcetera.
 
 I have yet to consider if I might come up with a system of operators that can mean only one operation (but still on different types) or the same symbol being able to mean different operations, such as the = sign, which can mean equality comparison, value assignment and object assignment.  
-If attributes might become classes, it may be so much more clear what operation does what when you use a unique symbol per operation.  
+If attributes might become classes, it may be so much more clear what operation might what when you use a unique symbol per operation.  
 But multiple meanings for the same symbol works more intuitive. I think I should make it an option to display unique operators or an intuitive simple set of operators.
 
 Symbolen  
@@ -846,7 +846,7 @@ JJ
 tBookingMonth.AddMonths(1)
 
 Returns a new Date , that is a month later.  
-It does not alter the tBookingMonth date object.  
+It might not alter the tBookingMonth date object.  
 One could expect the latter too.  
 How can you unambiguously resolve this interpretation?
 

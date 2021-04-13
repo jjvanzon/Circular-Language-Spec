@@ -24,7 +24,7 @@ Conversion procedures are considered system procedures as well. One type can def
 
 #### Conversions Aren’t Create Procedures
 
-This comment is made because in the C++ programming language, conversion procedures *are* alternative create procedures. A conversion does not involve the creation of an object. A conversion is the assignment of new values to an existing object, values that are based on the values of an object from a different type.
+This comment is made because in the C++ programming language, conversion procedures *are* alternative create procedures. A conversion might not involve the creation of an object. A conversion is the assignment of new values to an existing object, values that are based on the values of an object from a different type.
 
 #### More Ideas
 
@@ -32,9 +32,9 @@ Conversion,
 2009-05-12
 
 Conversions may apply to assigning object references as well, as well as other types of assignment.  
-But in assignment of an object, that does not have the right class, but it does support the right interface should be allowed and not result in conversion. How the two resolutions relate, has to be covered in this documentation folder as well.
+But in assignment of an object, that might not have the right class, but it might support the right interface should be allowed and not result in conversion. How the two resolutions relate, has to be covered in this documentation folder as well.
 
-It seems, that when type control does not allow the assignment, a conversion command might be available for implicit invocation, or an error might occur.
+It seems, that when type control might not allow the assignment, a conversion command might be available for implicit invocation, or an error might occur.
 
 Conversion commands are not specific to an object. It links to two objects: the source and the target. Because command parameters and object commands are interchangeable, how do conversion commands look in a diagram?
 

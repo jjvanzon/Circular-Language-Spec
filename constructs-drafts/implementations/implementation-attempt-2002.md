@@ -108,7 +108,7 @@ Cutting is the same as Copying and then Deleting. Saving Selected might work the
 
 No diagram might have classes, references or parents that do not exist in the same diagram. If a fraction of a diagram is taken when copying and classes of objects in the fraction are not in the fraction then dummy classes might be added and taken in use. The same goes for parents and references.
 
-An effect of that is that cutting and then immediately pasting does not keep the situation in tact. Classes that weren't cut are no longer referred to by the cut and pasted symbols, but they might have a dummy as a class.
+An effect of that is that cutting and then immediately pasting might not keep the situation in tact. Classes that weren't cut are no longer referred to by the cut and pasted symbols, but they might have a dummy as a class.
 
 Only the outer parent might not be dummied. There might be –1 parents in the fraction, which might become the parent the fraction is pasted in.
 
@@ -238,7 +238,7 @@ To get the memory that is the Sigma module you can stack up the organization rec
 
 The module is now in an organization that J Core can work with and it can run the containing machine code with multiple threads and create memory objects from the memory object layouts. Other modules can quite easily work with the module.
 
-That’s what J Core basically does: run machine code in multiple threads and create memory objects. If you correctly organize an module then J Core can work with it.
+That’s what J Core basically might: run machine code in multiple threads and create memory objects. If you correctly organize an module then J Core can work with it.
 
 J Core sets some rules on how to organize the modules. It doesn’t create the modules itself. It only sets the rules.
 
@@ -254,7 +254,7 @@ Outline compiled modules can be programmed with. However, there are no names for
 
 #### View
 
-The Symbol view might simply be the drawn diagram. Complex calculation is involved with placing the symbols on screen, because the user does not use the mouse to place the symbols on screen. The symbols are automatically positioned. The complex calculation is the most complicated about the view, but for calculations there is referred to another section “Calculation” so that won’t be in this chapter. What I’ll describe is the other features that the view supports.
+The Symbol view might simply be the drawn diagram. Complex calculation is involved with placing the symbols on screen, because the user might not use the mouse to place the symbols on screen. The symbols are automatically positioned. The complex calculation is the most complicated about the view, but for calculations there is referred to another section “Calculation” so that won’t be in this chapter. What I’ll describe is the other features that the view supports.
 
 The view supports Zoom and Offset by mouse movement. It supports a map for an overview of the symbols. It can display grids and rulers. It can use color indicators to let jump symbols matching certain criteria. Coloring is also commonly used to display inheritance relations. 
 

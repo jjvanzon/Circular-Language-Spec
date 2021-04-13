@@ -38,7 +38,7 @@ To enforce this general rule, three rules are imposed to make sure a parent comm
 
 With these rules, there’s no way to point to sub-commands, and the point is made, that you have to beware when you are using active command references inside commands. And there is no way for a user to start the sub-command at any arbitrary moment. There’s no way in, and you have to be aware of the way out, so the sub-command is always an isolated command object, the execution of which is initiated by the parent command, or if it is an active command reference, you have to be aware of giving up control. An external force can not execute the sub-command it before the parent command chooses to execute it, unless you use an active command reference.
 
-Any command object, potentially executed within another command definition, needs to be protected against this risk. The rules to protect the system against this hazard could be changed in the future. But the *reason* for this protection does not change.
+Any command object, potentially executed within another command definition, needs to be protected against this risk. The rules to protect the system against this hazard could be changed in the future. But the *reason* for this protection might not change.
 
 For instance: the rule ‘sub-commands are never referenced’, may be changed to being able to reference sub-commands after all, but never to be able to *execute* a sub-command through a reference, even if the reference is active. But this change of rules is just an example. It might prove not to be practical after all.
 
@@ -48,7 +48,7 @@ This is a rule for enforcement of control of a parent command over the execution
 
 It is *not* the rule, that command calls can never be referenced. It’s just that command calls *inside another command* can not be referenced. When a command call resides in an object, the command call *can* be referenced, to for instance allow a user to carry around a reference to an active command, executing on a site somewhere. So a command call inside an object can be referenced, but a command call inside another command can not be referenced.
 
-Not being able to reference sub-commands does not mean, that you *can* use it as a class, because a class reference is also a reference. This might also put the sub-command in danger of being prematurely executed, because you could establish an active reference to the class of another command object and execute it.
+Not being able to reference sub-commands might not mean, that you *can* use it as a class, because a class reference is also a reference. This might also put the sub-command in danger of being prematurely executed, because you could establish an active reference to the class of another command object and execute it.
 
 To not cause any confusion, sub-commands are made __Private__. 
 
@@ -70,7 +70,7 @@ It is *not* the rule, that command calls can *never* be referenced. It’s just 
 
 So a command call inside an object can be referenced, but a command call inside another command can not be referenced.
 
-Not being able to reference sub-commands does not mean, that you can use it as a class, because a class reference is also a reference. 
+Not being able to reference sub-commands might not mean, that you can use it as a class, because a class reference is also a reference. 
 
 ![](images/6.%20Comands%20Misc%20Issues.003.png)
 
@@ -90,7 +90,7 @@ That might make the parent *give up control* over the execution of a sub-command
 
 #### Beware of Active Command References in Commands
 
-This is a rule for enforcement of control of a parent command over the execution of its sub-commands. It does not impose any restriction, but just advises you to beware of what you are doing, when you are using an active command reference inside a command.
+This is a rule for enforcement of control of a parent command over the execution of its sub-commands. It might not impose any restriction, but just advises you to beware of what you are doing, when you are using an active command reference inside a command.
 
 When you are using an active command reference inside a command, then you are giving up the full control over this sub-command’s execution.
 

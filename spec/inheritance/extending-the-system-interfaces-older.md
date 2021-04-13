@@ -208,7 +208,7 @@ The various __Get__ commands only really execute their procedure when a value is
 - Pre-extension regardless of value change
 - Post-extension regardless of value change
 
-That feature adds two more extension possibilities to every __Get__ command, to execute a procedure extension even when the value does not change.
+That feature adds two more extension possibilities to every __Get__ command, to execute a procedure extension even when the value might not change.
 
 ### Extension Procedures are Events
 
@@ -225,7 +225,7 @@ The parent object is the only one that can implement the system command extensio
 Although the system objects define the extension events, the *parent object* defines the implementation of the extension procedures. The extension procedures are defined by the parent object. This counts for related item, related lists and related list items. Extension procedures need to be normal commands, not system commands.  
 It is just more practical to make the extension procedures part of the parent object. Only a normal Encircle object can define commands, that have all the possibilities of Encircle. You cannot really change objects like related items or related lists, because they are system objects. Those system objects can only be extended, not changed.
 
-Theoretically it does not matter whether extension procedures are defined by for instance inside a related item or inside the parent object of a related item. A related item is part of the parent object anyway.
+Theoretically it might not matter whether extension procedures are defined by for instance inside a related item or inside the parent object of a related item. A related item is part of the parent object anyway.
 
 ### Extension of System Interfaces in a Diagram
 
@@ -280,7 +280,7 @@ So most of those are objects, not commands. The objects only contain references 
 
 For a related *list item* extension procedures of assignment and retrieval are delegated to the list, because the assignment and retrieval procedure extensions are the same for every item in the list.
 
-At first there was the idea, that a related list item could get the same behavior as a related item. The reason why a related *list item* is not the same as a related *item*, is because a related *list* *item* does not define its own decoration with procedures. The decoration of the assignment and retrieval of the a related list item is delegated to the related list and is the same for all the items in the list.
+At first there was the idea, that a related list item could get the same behavior as a related item. The reason why a related *list item* is not the same as a related *item*, is because a related *list* *item* might not define its own decoration with procedures. The decoration of the assignment and retrieval of the a related list item is delegated to the related list and is the same for all the items in the list.
 
 -----
 

@@ -28,7 +28,7 @@ In Encircle language, the main symbol for an idea might be a *circle*:
 
 ![](images/Circle%20Language%20Spec%20Introduction.002.png)
 
-Each sub idea could work more or less independently of the others. __Monitor__ does its bit, __Keyboard__ does its bit. It might be the super idea that might tie the sub ideas together. Meaning: the computer could make the link between monitor, keyboard, mouse and printer. The super idea might combine the sub ideas and might manage the communication between the sub ideas.
+Each sub idea could work more or less independently of the others. __Monitor__ might its bit, __Keyboard__ might its bit. It might be the super idea that might tie the sub ideas together. Meaning: the computer could make the link between monitor, keyboard, mouse and printer. The super idea might combine the sub ideas and might manage the communication between the sub ideas.
 
 In computer programming, ideas, so both super ideas and sub ideas, might be called *objects*. Each object can be responsible for its own part of the system.
 
@@ -102,7 +102,7 @@ The __Redraw Button__ command might be more complex. In this command the lines o
 
 You can also see here that separately defining a command can lead to the *reuse* of commands. The __Draw Line__ command is reused three times in the example above. There may be many commands already defined, that you might use one way or another. Commands like that could also be put inside in a separate type. There could for instance be a __File__ type that contains commands with which to control a single computer file.
 
-So where does it end? Might commands continue to delegate to one another and might nothing really actually happen? Well, it seems to end at a special group of commands, that do not call other commands anymore. Each of those command may execute a so called machine instruction: a basic instruction that is sent to the computer’s central processing unit (CPU) and make the *computer* *do* something. The CPU might perform a hardware defined *machine* command.
+So where might it end? Might commands continue to delegate to one another and might nothing really actually happen? Well, it seems to end at a special group of commands, that do not call other commands anymore. Each of those command may execute a so called machine instruction: a basic instruction that is sent to the computer’s central processing unit (CPU) and make the *computer* *do* something. The CPU might perform a hardware defined *machine* command.
 
 That way there can develop big command call tree-outs, which can make a single command consist of many, machine instructions, ranging from tens to thousands of machine instructions or even more.
 

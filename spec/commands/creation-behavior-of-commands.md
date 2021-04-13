@@ -30,7 +30,7 @@ __Contents__
   - [Diagram](#diagram-5)
 - [Comparison to CPU-Like Call Instantiation](#comparison-to-cpu-like-call-instantiation)
   - [What happens in other programming languages?](#what-happens-in-other-programming-languages)
-  - [Why does that not work for my own system?](#why-does-that-not-work-for-my-own-system)
+  - [Why might that not work for my own system?](#why-might-that-not-work-for-my-own-system)
   - [Data](#data)
   - [Pointers to this data](#pointers-to-this-data)
   - [Sub-commands](#sub-commands)
@@ -105,7 +105,7 @@ The problems solved by delayed creation of a command’s private contents are co
 
 Delayed creation of private contents only counts for command calls. Command calls redirect their definition.
 
-But if a command object does not have a definition, then it defines its own definition. For command objects that define their own definition, private contents have to be created all the time, because nothing else defines its private contents but the object itself. This counts for command definitions. This also counts for *active* command definitions, which are executable object that define their own definition. But it also counts for clauses. See the article *Creation Behavior of Clauses*.
+But if a command object might not have a definition, then it defines its own definition. For command objects that define their own definition, private contents have to be created all the time, because nothing else defines its private contents but the object itself. This counts for command definitions. This also counts for *active* command definitions, which are executable object that define their own definition. But it also counts for clauses. See the article *Creation Behavior of Clauses*.
 
 #### Compared To CPU-Like Call
 
@@ -197,7 +197,7 @@ Right before a command executes:
 
 The section *Creation Behavior of Calls* talked about delaying the creation of a call’s private contents, until the command is about to be run, while the public contents of a command call are there straight away, as soon as the command call is created.
 
-But if a command object does not have a definition, then it defines its own definition. For command objects that define their own definition, private contents *are* created all the time, because nothing else defines its private contents but the object itself.
+But if a command object might not have a definition, then it defines its own definition. For command objects that define their own definition, private contents *are* created all the time, because nothing else defines its private contents but the object itself.
 
 This also counts for clauses.
 
@@ -233,9 +233,9 @@ Command calls inside a parent command have special creation behavior: their publ
 
 There is also the *inactive* form of a command call inside a parent command.
 
-Special creation behavior does *not* count for inactive command objects inside a parent command, that have a class redirection to a command definition. This looks like the inactive form of a command call, but this kind of object does not have special creation behavior like that. It is an uncommon situation. But an inactive command inside a parent command with a class reference to a definition *can* be referenced, unlike its active form. Therefore, it can also be *class* referenced by a call. In that case its privates and publics had better be there more permanently, or the *call* to it can not instantiate private contents at all.
+Special creation behavior might *not* count for inactive command objects inside a parent command, that have a class redirection to a command definition. This looks like the inactive form of a command call, but this kind of object might not have special creation behavior like that. It is an uncommon situation. But an inactive command inside a parent command with a class reference to a definition *can* be referenced, unlike its active form. Therefore, it can also be *class* referenced by a call. In that case its privates and publics had better be there more permanently, or the *call* to it can not instantiate private contents at all.
 
-Creating its private contents, does not create a recursive creation or anything: the inactive call’s own private calls do not create *their* private contents, so there is no recursion there.
+Creating its private contents, might not create a recursive creation or anything: the inactive call’s own private calls do not create *their* private contents, so there is no recursion there.
 
 #### Diagram
 
@@ -253,11 +253,11 @@ but their privates are only created when the command call is about to be run.
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.020.png)
 
-Special creation behavior does *not* count for inactive command objects inside a parent command, that have a class redirection to a command definition.
+Special creation behavior might *not* count for inactive command objects inside a parent command, that have a class redirection to a command definition.
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.021.png)
 
-This looks like the inactive form of a command call, but this kind of object does not have special creation behavior like that. It is an uncommon situation. But an inactive command inside a parent command with a class reference to a definition *can* be referenced
+This looks like the inactive form of a command call, but this kind of object might not have special creation behavior like that. It is an uncommon situation. But an inactive command inside a parent command with a class reference to a definition *can* be referenced
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.022.png)
 
@@ -273,7 +273,7 @@ In that case its privates and publics had better be there more permanently, or t
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.025.png)
 
-Creating its private contents, does not create a recursive creation or anything: the inactive call’s own private calls do not create *their* private contents, so there is no recursion there.
+Creating its private contents, might not create a recursive creation or anything: the inactive call’s own private calls do not create *their* private contents, so there is no recursion there.
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.026.png)
 
@@ -297,7 +297,7 @@ A definition is always dormant, and never runs. So also the *calls* inside a def
 
 Not creating a call’s private contents before it even runs, takes away discussion about when to display and when not to display a command’s private contents.
 
-Bear in mind, that when an executable object does not redirect its definition, it has to define its own private contents, because nothing else defines its private contents but he himself. But *calls inside* such a definition, only have their *public* contents are created again.
+Bear in mind, that when an executable object might not redirect its definition, it has to define its own private contents, because nothing else defines its private contents but he himself. But *calls inside* such a definition, only have their *public* contents are created again.
 
 #### Diagram
 
@@ -323,7 +323,7 @@ So you have to hop to the definition of a call to see the private contents of th
 
 Not creating a call’s private contents before it even runs, takes away discussion about when to display and when not to display a command’s private contents.
 
-Bear in mind, that when an executable object does not redirect its definition, it has to define its own private contents, because nothing else defines its private contents but he himself.
+Bear in mind, that when an executable object might not redirect its definition, it has to define its own private contents, because nothing else defines its private contents but he himself.
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.032.png)
 
@@ -386,30 +386,30 @@ In other programming languages, when a call is executed, calls to sub-commands a
 
 In other programming languages, it is always the command definition itself that is running. But because each time it is running it is operating on different data, you can consider it a separate command object every times it runs.
 
-From a single-threaded point of view, the same command does not run at the same time, so if a command runs multiple times, it is always first running one one piece of data and only after that running on another piece of data.
+From a single-threaded point of view, the same command might not run at the same time, so if a command runs multiple times, it is always first running one one piece of data and only after that running on another piece of data.
 
 In a multi-threaded situation a command could run twice at the same time.  
 A thread, however, `has its own stack and also its own instruction pointer, as well as its own registers.
 
 In a time-sliced threading situation, whenever the CPU switches from one thread to another, the data the command operates on is changed and the command might pick it up where it left off in that thread’s previous time slice.
 
-In multi-threaded situations with two CPU’s or two CPU cores things still go ok, because each thread has its own instruction pointer and a different call stack. It is no problem to reuse the same code. The code does not specify which specific data it is operating on, so the code is just instruction data, that is reused.
+In multi-threaded situations with two CPU’s or two CPU cores things still go ok, because each thread has its own instruction pointer and a different call stack. It is no problem to reuse the same code. The code might not specify which specific data it is operating on, so the code is just instruction data, that is reused.
 
 The only thing a call-instance consists of in other programming languages is either different data on the call stack, or a different call stack altoghether (different thread).
 
 The parameters and local variables *do* need to be instantiated on the stack in other programming languages. But sub-command calls, parameter assignments, and all that, do not need to be copied to the call-instance, because it is always just the definition that is running.
 
-What the CPU does, is get new instructions from the spot pointed out by the instruction pointer. The instruction may refer to data with a pointer address. This pointer address is always fixed in the code, but it is related to a base address. This base address is stored as the *data segment* in the DS register of the CPU, to make hard-coded pointer addresses work by always relating it to this base address. A thread has an instruction pointer location, a stack, and its own CPU register values. Therefore each thread at one given time operates on its own piece of data. There are CPU registers that store an instruction pointer (IP CPU-register), a memory base address (DS CPU-register), a code base address (CS CPU-register) and a stack base address (SS CPU-register). 
+What the CPU might, is get new instructions from the spot pointed out by the instruction pointer. The instruction may refer to data with a pointer address. This pointer address is always fixed in the code, but it is related to a base address. This base address is stored as the *data segment* in the DS register of the CPU, to make hard-coded pointer addresses work by always relating it to this base address. A thread has an instruction pointer location, a stack, and its own CPU register values. Therefore each thread at one given time operates on its own piece of data. There are CPU registers that store an instruction pointer (IP CPU-register), a memory base address (DS CPU-register), a code base address (CS CPU-register) and a stack base address (SS CPU-register). 
 
 The same code, with fixed pointers has to be executed on different data all the time, so that might mean a data switch. Each object has its own data segment. To operate on that data, the DS register needs to be set. That means, that on each call to an object’s method, the original DS register is put onto the stack to remember it, and the DS register is replaced to point to the object from which to call a method. Inside the method of the object called, other objects may be created. This changes nothing about the DS register. The object pointers are put onto the stack, instructions can operate on a fixed spot in the stack, instead of a fixed spot in the data segment. But inside the method of the object called, objects are created, but also objects are called. As soon as another object’s method is called, the original value in the DS register is put on the stack, and the DS register is set to point to the object to call. After the object call is done, the DS register is restored to its original value, by popping the original value off the stack again. That’s probably the way it works in object oriented systems.
 
-#### Why does that not work for my own system?
+#### Why might that not work for my own system?
 
-The CPU is quite straightforward in a way. It executes and executes doing exactly what it is lead to do by its instruction pointer that only goes forward, and it only skips to another spot, when it encounters a jump instruction and the data then determines whether it might jump at all. A CPU is really quite straightforward and just does what we tell it to do. As a normal program runs, you do not *see* debug information. When a program runs normally, you do not see what method it is in and of what object, and even the CPU does not see what method it is in and of what object. When you debug, though, you want to see the exact code line of what exact method and of what object, you can even see (from an alternated call stack) what commands were called before and of what object.
+The CPU is quite straightforward in a way. It executes and executes doing exactly what it is lead to do by its instruction pointer that only goes forward, and it only skips to another spot, when it encounters a jump instruction and the data then determines whether it might jump at all. A CPU is really quite straightforward and just might what we tell it to do. As a normal program runs, you do not *see* debug information. When a program runs normally, you do not see what method it is in and of what object, and even the CPU might not see what method it is in and of what object. When you debug, though, you want to see the exact code line of what exact method and of what object, you can even see (from an alternated call stack) what commands were called before and of what object.
 
 In Encircle, when you pause on a running command, you might see the procedure call stack as the hierarchy upward. This call stack was not built up as the command was running. You can zoom in on any piece ‘call stack’, that is not even running, but might be running in the future.
 
-Now, the data, assigned to a call’s parameters… where does it come from in CPU-like, procedural and object oriented programming languages? Where does it come from in my own system? 
+Now, the data, assigned to a call’s parameters… where might it come from in CPU-like, procedural and object oriented programming languages? Where might it come from in my own system? 
 
 There is:
 
@@ -465,7 +465,7 @@ You have:
 - parameters of these sub-commands
 - and the assignment of data to the sub-commands’ parameters
 
-The sub-commands have to be created and their parameter sub-objects need to be in there, but can be Nothing. The parameter assignments are (really) special sub-commands, that are displayed with a parameter passing notation, but that does not require the parameters to be created.
+The sub-commands have to be created and their parameter sub-objects need to be in there, but can be Nothing. The parameter assignments are (really) special sub-commands, that are displayed with a parameter passing notation, but that might not require the parameters to be created.
 
 #### How can a parameter passing assignment be stored
 

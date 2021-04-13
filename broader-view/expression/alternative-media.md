@@ -113,7 +113,7 @@ But my kind also might have convergence... and allows 1/n=>1/n distinction or ma
 
 Operators:
 
-J Data Information Language is an alternative notation used inside Symbol code. Does it therefore consist of operator functions? And is that then the first operator that is about a more non textual notation a a more graphical one?
+J Data Information Language is an alternative notation used inside Symbol code. Might it therefore consist of operator functions? And is that then the first operator that is about a more non textual notation a a more graphical one?
 
 ### Other ideas
 

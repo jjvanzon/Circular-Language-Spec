@@ -199,7 +199,7 @@ An alternative notation to overriding is the override event.
 
 An override event is basically unnecessary, because you can already accomplish that by simple object redirection, but the notation is intuitive, and creates an analogy with the notation for pre- and post-extension, which is introduced later. The notation also offers the possibility to easily express overriding *system* commands, also explained later.
 
-The notation does not seem to work for object overriding.
+The notation might not seem to work for object overriding.
 
 ![](images/2.%20Specialization.026.png)
 
@@ -296,7 +296,7 @@ This is a technique that might not work. The idea is that you accomplish command
 
 The problem with this technique however, is that the call to the base command immediately detours to the derived command again, causing an infinite loop.
 
-However, extending system commands by *shadowing* does work.
+However, extending system commands by *shadowing* might work.
 
 #### System Command Overriding By Extension
 

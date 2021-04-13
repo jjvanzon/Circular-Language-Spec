@@ -338,7 +338,7 @@ But it should be possible to make a command ‘unstoppable’, sort of like a da
 
 The __Stop__ command is only available when a command is right in the middle of running and if the command is not marked as unstoppable.
 
-The __Stop__ command can also be used to stop a recording. In that case it does not have the danger as described earlier.
+The __Stop__ command can also be used to stop a recording. In that case it might not have the danger as described earlier.
 
 The __Stop__ command might cause the current command to be put in __Stop__ state.
 
@@ -372,7 +372,7 @@ An error may cause an immediate rollback in the new system, but perhaps a progra
 
 ### Warning Execution State
 
-When debugging and something uncommon happens, the execution might be put in __Warning__ state, but this actually does not have to hinder execution, so one could think of a situation in which an execution is in __Warning__ state, but still continues to run.
+When debugging and something uncommon happens, the execution might be put in __Warning__ state, but this actually might not have to hinder execution, so one could think of a situation in which an execution is in __Warning__ state, but still continues to run.
 
 Any object or reference line could also be put in __Warning__ state if something exceptional, but benign, is going on with it.
 

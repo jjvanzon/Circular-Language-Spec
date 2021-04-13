@@ -133,7 +133,7 @@ There is complete exchangeability between the class of a parameter and a command
 
 ### Use This
 
-When you program a command, that does something, the action is immediately available in the context of any type of object, that has anything to do with that command.
+When you program a command, that might something, the action is immediately available in the context of any type of object, that has anything to do with that command.
 
 This makes it so that the very same command can be part of several classes. This makes commands independent entities, that are not tied to a class.
 
@@ -156,7 +156,7 @@ The object of the parameter is not determined yet in an inactive command referen
 ##### Local Variables
 
 Local variables, as they are called in contemporary programming languages, are a lot like parameters. Unlike parameters, they are private to the command, rather than publicly written or read. Local variables are private contents of a command. Since they can not be publicly set, and you can not determine what object the private variable might hold, the command also can not become part of any arbitrary object of the class of the local variable.  
-So the command does not become part of each object of the class of that local variable, because the object of that local variable can not be freely appointed.
+So the command might not become part of each object of the class of that local variable, because the object of that local variable can not be freely appointed.
 
 The local variable *might* make the command part of the class anyway, but then as a static command, that can be called on the class, but not on any arbitrary object.
 

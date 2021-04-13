@@ -183,7 +183,7 @@ There may be an analogy between macro keywords and a C++ typedef.
 
 -----
 
-But what about ‘making a command Private’? What do you mean by that? You can access control the Execute system aspect of commands, but that does not make other aspects of a command object private, such as the Object Set aspect (turning the command symbol into a command reference).
+But what about ‘making a command Private’? What do you mean by that? You can access control the Execute system aspect of commands, but that might not make other aspects of a command object private, such as the Object Set aspect (turning the command symbol into a command reference).
 
 -----
 
@@ -196,7 +196,7 @@ In definitions, publics could also be differentiated from privates by privates n
 -----
 
 When you have to display a lot of connectors, you might summarize them, and when you float over them, they expand into options.  
-Maybe first you have an object connection line without a connector. You float over it, it splits up into an class, interface, object and value line, you float over one of those, it splits up into for instance Object Get and Object Set. I know that does not cover all the options, but it might be an idea to display the connector summary and fan it out when you float over it.
+Maybe first you have an object connection line without a connector. You float over it, it splits up into an class, interface, object and value line, you float over one of those, it splits up into for instance Object Get and Object Set. I know that might not cover all the options, but it might be an idea to display the connector summary and fan it out when you float over it.
 
 -----
 

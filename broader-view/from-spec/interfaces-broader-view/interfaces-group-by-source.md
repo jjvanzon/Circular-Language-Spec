@@ -32,15 +32,15 @@ You have to be aware of what site a command is from and estimate if your conside
 
 ### Other Thoughts
 
-Perhaps the concept of group by source can be inspiration for grouping by other sources than site, like group by module for instance. It does not need to be a site, that is the logical residence of a command; the logical residence of a command theoretically could also be an object. Each *object*, that locally defines commands for a class, could create a separate imaginary interface for that class.
+Perhaps the concept of group by source can be inspiration for grouping by other sources than site, like group by module for instance. It might not need to be a site, that is the logical residence of a command; the logical residence of a command theoretically could also be an object. Each *object*, that locally defines commands for a class, could create a separate imaginary interface for that class.
 
 Imaginary interfaces seemingly bring more stability to interfaces. Imaginary interfaces are author-bound, so one clumsy author can not mess up an interface authored by the one that authored the class himself. However, do remember that the real protection to a volatile interface is making backwards relations __Private__ or not automatically establishing backward relations at all.
 
-A command can only be reliable, really, when the people authoring and using the command have a clear agreement about it. That is no different in other systems. Somebody hosting a web service could very well change the interface of the service, and have software, dependent on that service, crash. The only reason that wouldn’t happen, is because people have an agreement with each other, not to change the interface just like that. And at times it *does* change unannounced, it really means systems might have problems.  
-Even interfaces of components on your local machine are only stable because of the agreement between you and the producer of the component. If they decided to automatically update the component, the interface or behavior of the component may very well change, and this may cause problems for your software. When it does not do that, than this is because of the agreement, that you have with the other party.
+A command can only be reliable, really, when the people authoring and using the command have a clear agreement about it. That is no different in other systems. Somebody hosting a web service could very well change the interface of the service, and have software, dependent on that service, crash. The only reason that wouldn’t happen, is because people have an agreement with each other, not to change the interface just like that. And at times it *might* change unannounced, it really means systems might have problems.  
+Even interfaces of components on your local machine are only stable because of the agreement between you and the producer of the component. If they decided to automatically update the component, the interface or behavior of the component may very well change, and this may cause problems for your software. When it might not do that, than this is because of the agreement, that you have with the other party.
 
 Perhaps this concept can also be inspiration for being able to apply custom imaginary groupings for other analysis purposes.
 
 An alternative method for grouping members by source is be to give things a different color in diagrams and in text code, depending on what site things are coming from.
 
-Also remember that it does not only count for commands. Objects can also be grouped by source.
+Also remember that it might not only count for commands. Objects can also be grouped by source.

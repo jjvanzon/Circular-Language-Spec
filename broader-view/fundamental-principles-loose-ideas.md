@@ -494,7 +494,7 @@ JJ
 NCL Fundamental Principles,  
 2009-04-20
 
-Connections between system elements in text code are ALWAYS established purely through name correspondence. That's one of the problems with analyzing text code. You have to acquaint yourself with the names, before you can start to understand the connections between things. And through those connections, understanding which are main things, which are less important things, which are big things, which things are unused and what are the first things or prime things, that a program does. An understanding of those things is what the result of such analysis is. Text code alone never reveals such information immediately, so understanding text code is always accompanied by either explanation through documentation or by analyzing the code.
+Connections between system elements in text code are ALWAYS established purely through name correspondence. That's one of the problems with analyzing text code. You have to acquaint yourself with the names, before you can start to understand the connections between things. And through those connections, understanding which are main things, which are less important things, which are big things, which things are unused and what are the first things or prime things, that a program might. An understanding of those things is what the result of such analysis is. Text code alone never reveals such information immediately, so understanding text code is always accompanied by either explanation through documentation or by analyzing the code.
 
 In diagrams, the connections and the prominence of things are already visible to the naked eye, so the connections and hierarchy between things are apparent at a much earlier stage (more or less immediately), when looking at other people's code.
 
@@ -509,7 +509,7 @@ JJ
 NCL Fundamental Principles,  
 2009-04-20
 
-Code along with comment can not easily point out things like the following. Simply: where does the program start? What are the prime things the program does and where does it do it? What prime components is the program composed of and how do they relate to each other?
+Code along with comment can not easily point out things like the following. Simply: where might the program start? What are the prime things the program might and where might it do it? What prime components is the program composed of and how do they relate to each other?
 
 WHY is the program structured like this? What is the program FOR?
 
@@ -630,7 +630,7 @@ JJ
 Fundamental Principles,  
 2010-04-25 ~
 
-How does Aquima impose rules. No, back to Encircle. Everything is possible with all the constructs available. But awareness of all the construct should inspire you to pick the right solution in the right situation. And now Aquima. You always have to pick one out of 5 first. In a way, in Encircle, you always have to pick one out of 12 first, or something. You have to pick a construct... I am not going to brainstorm more about these fundamental things. I can not get my head around it right now.
+How might Aquima impose rules. No, back to Encircle. Everything is possible with all the constructs available. But awareness of all the construct should inspire you to pick the right solution in the right situation. And now Aquima. You always have to pick one out of 5 first. In a way, in Encircle, you always have to pick one out of 12 first, or something. You have to pick a construct... I am not going to brainstorm more about these fundamental things. I can not get my head around it right now.
 
 JJ
 
@@ -688,7 +688,7 @@ I have found two definitions of the term low-coupling: One definition is a syste
 
 A combined (mis)conception is that both are the same thing.
 
-The first definition is actually what it should mean in my view: a system's being composed of less connections. In the story below I try to explain why communication through interfaces does not necessarily mean that the system is composed of less connections.
+The first definition is actually what it should mean in my view: a system's being composed of less connections. In the story below I try to explain why communication through interfaces might not necessarily mean that the system is composed of less connections.
 
 What low-coupling tries to solve is limitation of (possible) connections to create clarity about how systems interface with each other.
 
@@ -710,11 +710,11 @@ In fact, if you make an interface, but you make it too elaborate, you end up wit
 
 In a finished system in either a high-coupling or low-coupling situation, both situations actually show the same number of connection points between members, variables, etcetera.
 
-So low coupling does not really mean less connection points, just clarity and limitation of the possible points of connection.
+So low coupling might not really mean less connection points, just clarity and limitation of the possible points of connection.
 
 Low coupling: the interfacing is clear and constrained. High coupling: the interfacing is not easy to see and it is not defined which members are potentially accessed in later sofware developments.
 
-The problem with allowing more possible connections is that potentially more connections are made, but that does not mean that this is necessarily what is happening.
+The problem with allowing more possible connections is that potentially more connections are made, but that might not mean that this is necessarily what is happening.
 
 What's forgotten, is that if you connect to a single interface, you do not really have one connection. There can be many connections to the numerous parts of the interface.
 
@@ -724,7 +724,7 @@ Theoretically in a low coupling situation there are actually more connections, b
 
 So low-coupling and high-coupling are the illusion of having less connections. The situation solved by low-coupling is not having less connections, but having more insight and control over those connections. Insight into the connections in an existing system, and control over the possible connections when a system is changed.
 
-There is another thing that does not work well in low-coupling, while it should actually be the stuff that low-coupling should be solving. If a low-coupled situation changes, you might end up with a lot of unused interface members, of which you can not easily see that they are not required anymore. So that is the inverse of not knowing what is used: not knowing what is not used anymore. So you have a cluttered interface with members that are not used of which you do not know that you could remove them. When you have an interface, and only 5% of the interface is still used, you still have the same problem as in the highly coupled situation: you have a ton of members and you do not know which are accessed by what.
+There is another thing that might not work well in low-coupling, while it should actually be the stuff that low-coupling should be solving. If a low-coupled situation changes, you might end up with a lot of unused interface members, of which you can not easily see that they are not required anymore. So that is the inverse of not knowing what is used: not knowing what is not used anymore. So you have a cluttered interface with members that are not used of which you do not know that you could remove them. When you have an interface, and only 5% of the interface is still used, you still have the same problem as in the highly coupled situation: you have a ton of members and you do not know which are accessed by what.
 
 Low-coupling is there in order to be able to know how systems interface and to be able to facilitate controlled changes inside those systems.
 
@@ -740,7 +740,7 @@ Clearly defined interfaces are still valuable in NCL, and do not all of a sudden
 
 (Low-coupling is not the same as encapsulation. But both are solved using interfaces. Both low-coupling and encapsulation (data-protection) are concepts that are applied using the concept of interfaces, but they attempt to solve different problems, so they are not the same thing. Low-coupling should be about complexity reduction or complexity tangibility, encapsulation should be about data protection and stability. So one is about understandability of a system, and the other is about how easily we can thump over a system.)
 
-So the technique of low-coupling does not create less connections. So low-coupling it is not an exact science of creating less connections, because putting an interface in between actually creates more connections. It is about limitation of complexibility, tangibility of complexity and prevention of complexity. The low-coupling techniques can help in this, but going too far with it actually create more complexity, people just forget to count the actual connections and only count the interfacing points over which multiple connections can be made. Furthermore, the rules of interfacing are not enforced by the machine, but by human hand. You might not devise a system that prevents complexity, it might be humans that prevent complexity, by making things more readable for himself, making it less likely for humans to break their own rules, and humans imposing rules onto another human beings.
+So the technique of low-coupling might not create less connections. So low-coupling it is not an exact science of creating less connections, because putting an interface in between actually creates more connections. It is about limitation of complexibility, tangibility of complexity and prevention of complexity. The low-coupling techniques can help in this, but going too far with it actually create more complexity, people just forget to count the actual connections and only count the interfacing points over which multiple connections can be made. Furthermore, the rules of interfacing are not enforced by the machine, but by human hand. You might not devise a system that prevents complexity, it might be humans that prevent complexity, by making things more readable for himself, making it less likely for humans to break their own rules, and humans imposing rules onto another human beings.
 
 Programmers may get emotional, irrational and upset, when you state that low-coupling is not an exact science and not necessarily required. Someone may irrationally think it is an exact science, because they are selectively forgetting and imagining connections that are or are not there, because in their head they select a set of connections and forget about connections that are still there.
 
@@ -783,7 +783,7 @@ There are more definitions to low coupling:
 - You can separate things into layers so that people of different disciplines can work on the layer they specialized in.
 - When you want to keep storage separated from presentation, possibly allowing multiple representations of the same data, and you want to be able to change the data model. (At one point the data model changes so much you can not  prevent the interface of the bridge to change or even the user interface to change, or you are going to have to keep your data model backwards compatible, something that you were trying to work around with the bridge.)
 
-So simply trying to make things that are actually independent on each other, sort of independent of changes to the dependency, you build a bridge between them. It does require additional code, additional connections and wiring, adds complexity. I might not recommend putting a bridge between any two objects. That might create incredible complexity. How is that going to help you change the code? So you have to apply this when it is useful.
+So simply trying to make things that are actually independent on each other, sort of independent of changes to the dependency, you build a bridge between them. It might require additional code, additional connections and wiring, adds complexity. I might not recommend putting a bridge between any two objects. That might create incredible complexity. How is that going to help you change the code? So you have to apply this when it is useful.
 
 I can imagine that an ESB allows you to define interfaces / adapters between any two resources. Or offer the same interface to multiple programs or the give multiple resources the same interface, or create bridges between systems.
 

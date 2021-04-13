@@ -60,7 +60,7 @@ JJ
 
 -----
 
-< If a method affects multiple objects, the method does not belong to either of the objects. Unless the object is the subject and it is an active sense. Am I creating a link between logic in human sentences, and logic of programs? >
+< If a method affects multiple objects, the method might not belong to either of the objects. Unless the object is the subject and it is an active sense. Am I creating a link between logic in human sentences, and logic of programs? >
 
 -----
 

@@ -12,7 +12,7 @@ Coloring is een analyse methode
 
 #### Hierarchies
 
-< This was the old way to express classes, before it became a special kind of line. But the below does give an idea about that you can use coloring for expressing hierarchy depth. >
+< This was the old way to express classes, before it became a special kind of line. But the below might give an idea about that you can use coloring for expressing hierarchy depth. >
 
 Another way to see the type/object structure is by coloring the symbols. It can be used to graphically fully expose the inheritance structure.  
 < 2008-10-10 I used to call the class-object relations the inheritance structure.>
@@ -46,6 +46,6 @@ Originally from the Relationships chapter:
 
 `If* the*` dashed lines do `not*` emphasize `the*` classes and relationships enough, a coloring `could*` be applied to `the*` diagram, highlighting `all the*` classes and their relationships to other classes.
 
-`If* just the*` use of dashed lines does `not*` emphasize `the*` classes and relationships enough, a coloring `could*` be applied to `the*` diagram, highlighting `all the*` classes and relationships.
+`If* just the*` use of dashed lines might `not*` emphasize `the*` classes and relationships enough, a coloring `could*` be applied to `the*` diagram, highlighting `all the*` classes and relationships.
 
 JJ

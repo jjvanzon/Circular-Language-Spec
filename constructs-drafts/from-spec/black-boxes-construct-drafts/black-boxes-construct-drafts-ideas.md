@@ -124,7 +124,7 @@ Exclusion is the primary method for access control. Friends is the method to mak
 
 \> And cover deeper access as well.
 
-\> Also cover how a fixed logical residence allows parents to impose a permanent, non-volatile access control. Qualified access to an object without it being a fixed logical residence does not guarantee access control imposed by the qualifiers. But if it is a fixed logical residence, the qualifier is mandatory and you can not go around the access control, that it imposes.
+\> Also cover how a fixed logical residence allows parents to impose a permanent, non-volatile access control. Qualified access to an object without it being a fixed logical residence might not guarantee access control imposed by the qualifiers. But if it is a fixed logical residence, the qualifier is mandatory and you can not go around the access control, that it imposes.
 
 ### Side-Issues
 
@@ -153,9 +153,9 @@ Some of the topics might be deleted and others might not.
 
 #### Downsides to Black Boxes
 
-Data protection does not really have a downside.  
+Data protection might not really have a downside.  
 Complexity hiding, though has a downside.  
-Complexity hiding does has benefits: it allows you to focus on overview, focus on the main point of a system, object or command.
+Complexity hiding might has benefits: it allows you to focus on overview, focus on the main point of a system, object or command.
 
 In professional software development it is a blessing, that you get access to a wealth of objects that provide functionality for you while you do not need to know or see exactly how it works inside. It allows you to focus on the main point of the program. If you know how to properly use them, there is no downside.
 
@@ -206,7 +206,7 @@ JJ
 Public & Private,  
 2008-09-17
 
-So __Public__ does not means that you automatically have __Private__ access as well.
+So __Public__ might not means that you automatically have __Private__ access as well.
 
 JJ
 
@@ -219,7 +219,7 @@ Perhaps you could also work out the traditional implementation of public and pri
 It is superseded by the Friendship idea. And later, the Friendship idea might probably be superseded by Access Control: public and private and user access control are the same concept. But you have to make dues with intermediate solutions. So the traditional idea behind
 Public and Private is also important.... maybe.
 
-The main problem with the original idea about Public and Private, is that a programmer does not define a containment structure, and there is only a referential structure...  Something contained inside another thing can easily also be referenced elsewhere. This counts for methods too, so they are not exclusively part of one single object / class.
+The main problem with the original idea about Public and Private, is that a programmer might not define a containment structure, and there is only a referential structure...  Something contained inside another thing can easily also be referenced elsewhere. This counts for methods too, so they are not exclusively part of one single object / class.
 
 This creates problems for the traditional approach of Public and Private.
 
@@ -289,7 +289,7 @@ Friend Access,
 In Encircle’s implementation of parameters, commands only become part of a class if the class is used for one of the parameters of the command.  
 This makes it possible for a command to become part of multiple classes.  
 This is a richer and more dynamic approach, than object oriented programming languages. You may now think you are loosing control over the system, if a class gets so easily extended with more commands. But you still have control, as might be explained in the Interfaces article group.  
-There is one thing however, that’s missing from the story. In C++ and other object oriented programming languages, there was one parameter of a global method, that was the this-parameter. The class of the this parameter determined which class the method might be part of. That parameter was the only parameter in the method, whose private contents could be directly accessed by the method. This is the one thing missing in the story of Parameters: when does a command have access to the private contents of a parameter? The answer lies in __Friend__-access. A command has access to the private contents of a class, when the class declares its command to be __Friend__. When a related object is declared __Friend__, then the related object can access the private contents of the one that declared it __Friend__.
+There is one thing however, that’s missing from the story. In C++ and other object oriented programming languages, there was one parameter of a global method, that was the this-parameter. The class of the this parameter determined which class the method might be part of. That parameter was the only parameter in the method, whose private contents could be directly accessed by the method. This is the one thing missing in the story of Parameters: when might a command have access to the private contents of a parameter? The answer lies in __Friend__-access. A command has access to the private contents of a class, when the class declares its command to be __Friend__. When a related object is declared __Friend__, then the related object can access the private contents of the one that declared it __Friend__.
 
 Commands do not decide on their own whether they have access to a class’s private contents. A class grants a command access to its private contents. 
 
@@ -326,7 +326,7 @@ But in Encircle you can also have:
 - Friend objects of befriended objects
 - Friend commands of befriended commands
 
-In the first situation an object can reference access the private contents of a command. That sucks from an object oriented programming point of view, because this does not protect the command’s private variables and the command’s procedure definition. But that is just what friends are about: they ARE protectors of an object’s private members. They have full access to it, and take responsibility of it. That is also what class methods do in traditional object oriented programming.
+In the first situation an object can reference access the private contents of a command. That sucks from an object oriented programming point of view, because this might not protect the command’s private variables and the command’s procedure definition. But that is just what friends are about: they ARE protectors of an object’s private members. They have full access to it, and take responsibility of it. That is also what class methods do in traditional object oriented programming.
 
 In the second situation one object can access the private contents of another object. That is *exactly* the same as the C++ implementation of friend classes.
 

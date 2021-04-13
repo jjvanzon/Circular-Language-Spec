@@ -98,11 +98,11 @@ Now both symbols represent the same object.
 
 One symbol is going to be selected to represent the object itself, so that an object gets a fixed containment position, while the other symbols are considered mere references to the object. How a single symbol is selected is explained in the next section.
 
-Regardless of which diagram you find prettier, the containment diagram does display more clearly *what* is part of *what*. For instance: you can see that object B *indirectly* contains object D. That was not that apparent in the referential diagram. But now you have a problem: a single object is not represented by a single symbol anymore.
+Regardless of which diagram you find prettier, the containment diagram might display more clearly *what* is part of *what*. For instance: you can see that object B *indirectly* contains object D. That was not that apparent in the referential diagram. But now you have a problem: a single object is not represented by a single symbol anymore.
 
 ### The closest mutual parent
 
-Multiple symbols in a diagram can represent the same object. In that aspect, a containment diagram does not explicitly express a single place where the object really is. It does not display where the *object* is, just where the object *references* are. Only one of the symbols should be considered the object itself, and the other symbols mere references.
+Multiple symbols in a diagram can represent the same object. In that aspect, a containment diagram might not explicitly express a single place where the object really is. It might not display where the *object* is, just where the object *references* are. Only one of the symbols should be considered the object itself, and the other symbols mere references.
 
 To determine the containment position of the actual object, you have to ask yourself: what might the *real* containment level of the object be? You might have to go upward in the containment hierarchy, until you find the level at which all the references are contained inside a single symbol. That is the actual containment level of the object:
 
@@ -114,7 +114,7 @@ The container of the object is also called the *closest mutual parent* of the ob
 
 The mutual parent connects all the references together. The mutual parent is the containment position of the object itself.
 
-The diagram above does not even display the symbol, that represents the object itself. We have yet to put a new circle in the diagram directly inside the closest mutual parent of the references:
+The diagram above might not even display the symbol, that represents the object itself. We have yet to put a new circle in the diagram directly inside the closest mutual parent of the references:
 
 ![](images/3.%20Automatic%20Containment.006.png)
 
@@ -156,7 +156,7 @@ When you display a diagram in pure referential style, a single symbol represents
 
 When you display a reference structure as containment, and there are things, that refer to the same object, then all of a sudden the same object is displayed multiple times and in totally different places.
 
-The diagram does not explicitly display individual objects anymore. 
+The diagram might not explicitly display individual objects anymore. 
 
 The referential structure is treated directly as a containment structure, but then multiple symbols can represent the same object.
 
@@ -198,7 +198,7 @@ What if you have more appliances in your house, in multiple rooms, that also con
 
 The containment level of this type of electronic part, just depends on the perspective from which you look at it.
 
-And this is what also happens in the diagrams. That way, something can get a different containment level depending on the perspective from which you look at it. From within that perspective, something does get a *unique* containment level.
+And this is what also happens in the diagrams. That way, something can get a different containment level depending on the perspective from which you look at it. From within that perspective, something might get a *unique* containment level.
 
 ### Ignored concepts
 
@@ -265,7 +265,7 @@ In the first story I gave about automatic containment I said, that the target ob
 
 Later I said that the imaginary reference is really not the target object: the target object is the physical storage of the object.
 
-The fact that an object *can* have a fixed spot, also makes it possible for an object to reside on a site. When I still suggested that an object didn’t have a fixed location, it was an enigma how I was going to let an object live inside a site, while an object doesn’t have a fixed location at all. Now an object does have a fixed location, it is easy to place it inside a site. A site could host *pointers* to the physical locations, instead of exposing the target object itself, because you might probably not want other sites to point directly to the place an object is stored or directly see the infrastructure of the site: what disks and which computers. The infrastructure of the site can be hidden by access controlling it. A site might only be exposing things that others have access to.
+The fact that an object *can* have a fixed spot, also makes it possible for an object to reside on a site. When I still suggested that an object didn’t have a fixed location, it was an enigma how I was going to let an object live inside a site, while an object doesn’t have a fixed location at all. Now an object might have a fixed location, it is easy to place it inside a site. A site could host *pointers* to the physical locations, instead of exposing the target object itself, because you might probably not want other sites to point directly to the place an object is stored or directly see the infrastructure of the site: what disks and which computers. The infrastructure of the site can be hidden by access controlling it. A site might only be exposing things that others have access to.
 
 If an object is stored on one site, it may logically be resident in multiple locations, but its physical position is still on that site.
 
@@ -273,7 +273,7 @@ If an object is stored on one site, it may logically be resident in multiple loc
 
 One problem I did not want to consider at first, was that a module might contain a registration list of all objects of a certain class. Because that might have given an object an exact location: that might have given an object a fixed place, and all lines might have pointed directly to the central list, which might not make the diagram overviewable.
 
-However, in the method found, I do not think central registration lists might be a problem anymore. A central registration list does have a place in the diagram, but not all lines are not directly pointing to it, and when it is outside the screen, you only see the closest logical location of the object. The display of the diagram is simply dependant on the level of detail now and lines are usually not pointing directly to a fixed location at all: just to an imaginary logical location. Having central registration lists inside a diagram is really not a problem anymore.
+However, in the method found, I do not think central registration lists might be a problem anymore. A central registration list might have a place in the diagram, but not all lines are not directly pointing to it, and when it is outside the screen, you only see the closest logical location of the object. The display of the diagram is simply dependant on the level of detail now and lines are usually not pointing directly to a fixed location at all: just to an imaginary logical location. Having central registration lists inside a diagram is really not a problem anymore.
 
 #### Classes, interfaces and methods
 
@@ -287,7 +287,7 @@ In Encircle an interface is also simply an object. An object can serve as the pr
 
 For methods it works a bit differently. Methods are not objects. Methods are not displayed as circles. Their default display is a square. So they have different symbols compared to objects. But the way lines lead back to a mutual method, simply works the same as for objects. There is more to the display of methods, but that is not covered here. The main point is: the technique for displaying mutuality of class, interface, and object works for mutuality of methods too.
 
-Imaginary object references are always circles, and not triangles or pentagons or anything, because those alternate shapes might give the object a special function, that can only be chosen by a programmer. Imaginary references are created by the system, which does not give the object symbol any other function than to simply be an imaginary reference, so no alternate shapes are required for its notation. For the same reason imaginary method references are always squares and not diamonds or anything else, because this alternate shape might give the method a special function, that can only be chosen by a programmer. Imaginary references are created by the system, which does not give the method symbol any other function than to simply be an imaginary reference to a method.
+Imaginary object references are always circles, and not triangles or pentagons or anything, because those alternate shapes might give the object a special function, that can only be chosen by a programmer. Imaginary references are created by the system, which might not give the object symbol any other function than to simply be an imaginary reference, so no alternate shapes are required for its notation. For the same reason imaginary method references are always squares and not diamonds or anything else, because this alternate shape might give the method a special function, that can only be chosen by a programmer. Imaginary references are created by the system, which might not give the method symbol any other function than to simply be an imaginary reference to a method.
 
 #### Fixed logical residence
 
@@ -309,7 +309,7 @@ Such genericity of class can be access controlled: you can control whether the c
 
 #### Duality of relations
 
-The concept of duality of relations was ignored at first. Just like the concept of physical location, this concept does change the nature of the diagrams a little bit.
+The concept of duality of relations was ignored at first. Just like the concept of physical location, this concept might change the nature of the diagrams a little bit.
 
 In the diagrams explained before, only mono-directional relations were considered. An object that referred to another object, did not refer back to the first object.
 
@@ -457,7 +457,7 @@ JJ
 Automatic Containment for reads and writes,  
 2008-07-03
 
-Does automatic containment apply to reads and writes?  
+Might automatic containment apply to reads and writes?  
 The two counterparts do not represent the same object. They are different objects. How do you draw that out in a diagram.  
 I won’t be concerned with it now. Automatic Execution Order is my current subject. Not the notation of it.
 
@@ -675,7 +675,7 @@ Now, one problem with automatic containment now, is that no real references poin
 So when you already have a real reference on a level that contains multiple of the same objects, an imaginary reference is added anyway to which the deeper reference point, and to which the reference on the same level also points.  
 But it usually just looks more clear when the real reference replaces the otherwise created imaginary reference.  
 It also turns things more into a tree structure, because a reference to something on the same level doesn’t really look like a tree branch as much.  
-And esthetic reference won’t work if a real reference does not replace the imaginary reference.  
+And esthetic reference won’t work if a real reference might not replace the imaginary reference.  
 But there was a reason why I created an imaginary reference anyway. For instance: when two object references on the same level, refer to the same object, they need to converge to an imaginary reference, or you won’t know what is the target object.  
 Do the arguments against reusing a real reference weigh up to the clarity of reusing an real reference?  
 I’d have to look that up in the article Automatic Containment.
@@ -711,7 +711,7 @@ Implicit connection through parent kan alleen, als daarbij de namen van de objec
 
 Connect to sub objects inside the closest imaginary reference.
 
-Each object’s contents should officially also be class-tied to their class. But if there is an implicit connection through parent it does not. If a reference target already class tied the sub-objects, then you don’t have to repeat it in the referrer.
+Each object’s contents should officially also be class-tied to their class. But if there is an implicit connection through parent it might not. If a reference target already class tied the sub-objects, then you don’t have to repeat it in the referrer.
 
 -----
 
@@ -847,7 +847,7 @@ Connecting a *parameter* directly to a *command* definition inside an object is 
 
 In object oriented all members of the class, that the command is part of, were available directly from within the command, without qualifying them with the object name, in other words: without accessing them through an object. But in commands and classes loosely coupled, the object a command is called upon is like accessing an object inside the command anyway. But perhaps this notation might be changed in the future. Or perhaps not: this may be a concession you need to make.
 
-\> 2008-09-06 Actually, if you make the command parameter object a triangle, then the members of the triangle sort of melt together with the command, making the triangle’s members direct available without any further qualification. To prevent the triangle’s members to be directly accessible through the command object, you can just make the triangle Private. But then you have the problem, that the parameter is Private, which does not make it a parameter of the command anymore, but a Private object. The solution is to add a private triangle to the command, that is a reference to the parameter. < See picture on paper 2008-09-06. >
+\> 2008-09-06 Actually, if you make the command parameter object a triangle, then the members of the triangle sort of melt together with the command, making the triangle’s members direct available without any further qualification. To prevent the triangle’s members to be directly accessible through the command object, you can just make the triangle Private. But then you have the problem, that the parameter is Private, which might not make it a parameter of the command anymore, but a Private object. The solution is to add a private triangle to the command, that is a reference to the parameter. < See picture on paper 2008-09-06. >
 
 #### Editing a call
 
@@ -1067,9 +1067,9 @@ Containment creates the same tree out for all three of the hierarchies. Converge
 
 < P: Type tree out heffed op. >
 
-That way the three hierarchies can be made independent of each other. The example above is a perfect way for part of the branch out, that the containment structure imposes, to be lifted, annulled, ignored. In the case above, the type structure ignores the split up in A, B, C, D and E. A, B, C, D and E are still separate objects: the object structure still makes a split up, but the type structure does not make a split up.
+That way the three hierarchies can be made independent of each other. The example above is a perfect way for part of the branch out, that the containment structure imposes, to be lifted, annulled, ignored. In the case above, the type structure ignores the split up in A, B, C, D and E. A, B, C, D and E are still separate objects: the object structure still makes a split up, but the type structure might not make a split up.
 
-The example above, though, does not establish convergence in the type structure. The type structure is as follows:
+The example above, though, might not establish convergence in the type structure. The type structure is as follows:
 
 < Circle in circle >
 
@@ -1079,7 +1079,7 @@ To completely lift up the branch out you can do the following:
 
 < P: type containment >
 
-The last picture is still called overlapping notation. You can see that the overlapping notation does not show all the details about the lines. It just shows their resulting effect.
+The last picture is still called overlapping notation. You can see that the overlapping notation might not show all the details about the lines. It just shows their resulting effect.
 
 ##### Triangles for Arbitrary Groupings
 
@@ -1091,7 +1091,7 @@ In the programming environment, triangles can be used to group members by criter
 
 Procedures can overlap all the same, because they are much like objects.
 
-< Does this add two more hierarchies? Call and procedures reference hierarchy? >
+< Might this add two more hierarchies? Call and procedures reference hierarchy? >
 
 ##### Another Thing
 
@@ -1231,7 +1231,7 @@ JJ
 
 Formerly in the Relations chapter,
 
-It `might` be mentioned, that `the*` method of *automatic containment* applies to unidirectional references, and `just` *does `not*` match* yet with `the*` notation for relationships. In `the*` future it `might` be further worked out how to `best` turn them into a single notation.
+It `might` be mentioned, that `the*` method of *automatic containment* applies to unidirectional references, and `just` *might `not*` match* yet with `the*` notation for relationships. In `the*` future it `might` be further worked out how to `best` turn them into a single notation.
 
 JJ
 
@@ -1276,7 +1276,7 @@ Perhaps I need to show the symbol's contents only at the highest containment lev
 
 But is there a situation in which you access things on a deeper level? Or is everything happening, elevated to a higher level, by putting imaginary references on a higher level.
 
-It still does not look good
+It still might not look good
 
 -----
 

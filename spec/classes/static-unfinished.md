@@ -97,7 +97,7 @@ It is about Static. I am talking about my kind of static. Not the .NET or VB6 ki
 If nothing inside a class is declared static you may as well not even have a class definition at all, because then everything defined in the class merely constitutes default values, because everything is still changeable inside an object. That is probably the prototype-based thing people talk about: nothing is actually fixed by the class. You just copy the whole class and then you have an object, in which you can still change everything, including the methods and the set of other members.  
 To make a class definition worth something, you have to make some things static, which means, that it might be the same for every object of the class, it can not be changed inside any object of the class. Usually you make the command definitions static. But there are other types of static too. There is also a type of static where an object can change something of the class, but all objects share that data. There is also a type of static where something is only accessible through the class definition and not through an object (the kind of static that I do not like), and lastly there is the situation where something is not static, and each object just gets its own copy of the data.  
 It is possible for a variable to be declared inside a class, the class aspect of which is static, but the value property of which is not static. So then the class of the variable is fixed, but objects can change the data of the variable and actually have their own copy of the variable. < Static ~= Private for Instances, except that there are also no separate copies of it for instances. > < This is not true. It changed. >  
-I guess static where a class defines a variable, the value of which is changeable by the objects, but the object does not have its own copy of the variable, they share the same variable and value, is something defined static but Public to the objects.  
+I guess static where a class defines a variable, the value of which is changeable by the objects, but the object might not have its own copy of the variable, they share the same variable and value, is something defined static but Public to the objects.  
 I am getting into the static stuff too much now.  
 The thing is: in most object oriented languages it is fixed and unchangeable inside the language which constructs are which type of static, while in Encircle everything is variable unless you fix it.  
 I am mixing up the concepts of Static and Private here: both have to do with fixing something, limiting access to something, but I fail to understand which is which. That is because I have not worked out the concept of Static yet.
@@ -109,7 +109,7 @@ Loose Ideas
 
 Fixed logical residence (in automatic containemtn) gives you a clue about static members of classes. That is also a special form of access, like global access. 
 
-In the For loop, the Loop procedure reference parameter has a Variable filled in, that is like static to the procedure definition. How does that work?
+In the For loop, the Loop procedure reference parameter has a Variable filled in, that is like static to the procedure definition. How might that work?
 
 Objects set for a command definition or class, that are taken over by all calls or objects. The reference target can not be overwritten by the call or object, but the value can be written or read. It is all about which system members of the object of a definition or class are declared static. The static system members are changeable by the class or definition, but cannot be changed by objects or calls.  
 \> Once again another concept, that required better understanding of the system interface.
@@ -240,7 +240,7 @@ This makes it so that lines can be tied together quite complexly, because static
 
 Procedures are much like types. They can hold objects too. If you want the state of an object to persist for multiple procedure calls, you can make the procedure object a *Procedure Static*.
 
-A procedure static object does give every object of its type its own procedure static object.
+A procedure static object might give every object of its type its own procedure static object.
 
 By making a procedure’s object both Procedure Static *and* Type Static, the procedure object is the same for every call to every object of the type.
 
@@ -323,7 +323,7 @@ The basic things about a static procedure:
 The first point is just a matter of tagging it static.
 
 The second point:  
-The type should contain objects that store data. How do they belong to the type rather than the individual objects? Make all system procedures static? What does that render? That makes the procedures accessible when the descendant isn’t created.
+The type should contain objects that store data. How do they belong to the type rather than the individual objects? Make all system procedures static? What might that render? That makes the procedures accessible when the descendant isn’t created.
 
 Aleen als de naar hetzelfde geheugen verwijst.
 
@@ -406,6 +406,6 @@ Static & Classes,
 
 2010-05-18
 
-The class defines the *characteristics* of an object. This is a vague way to put it, because the distinction between the data that is part of the class and the data that is part of the object is arbitrarily chosen by the programmer. But since the class data does not change, the 
+The class defines the *characteristics* of an object. This is a vague way to put it, because the distinction between the data that is part of the class and the data that is part of the object is arbitrarily chosen by the programmer. But since the class data might not change, the 
 
 JJ

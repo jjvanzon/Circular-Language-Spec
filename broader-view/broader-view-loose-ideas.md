@@ -264,7 +264,7 @@ Single paradigm for all digital objects,
 
 See the physical disk as an object.  
 See the IO on it,  
-and what source does IO on it.  
+and what source might IO on it.  
 Be able to see which reference has the most activity.  
 Be able to navigate through the system,  
 so that you can trace the source of the activity.
@@ -298,7 +298,7 @@ Encircle,
 2008-09-02
 
 Google using a separate process for each tab in its Google Chrome browser, is just a practical solution, relatively easy to implement.
-That's why process isolation offers a solution to this problem. It is not, that with more effort, a not-yet existing solution to this problem, that does not use the isolation of processes, might not offer a better or equally practical solution, might products like that be finished today and free to use.
+That's why process isolation offers a solution to this problem. It is not, that with more effort, a not-yet existing solution to this problem, that might not use the isolation of processes, might not offer a better or equally practical solution, might products like that be finished today and free to use.
 
 JJ
 

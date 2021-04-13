@@ -307,7 +307,7 @@ System Interfaces,
     - default implementation
         - \> 2009-08-31: Daarmee bedoel ik: wat opgeslagen is bepaalt de line target
     - What get returns determines line.
-        - \> 2009-08-31: How does that look?
+        - \> 2009-08-31: How might that look?
         - \> 2009-08-31: Daarmee bedoel ik: de procedure bepaalt uiteindelijk de line target
 
 JJ
@@ -369,7 +369,7 @@ When a related item points to a related item, that related item can again point 
 
 That’s how you create multiple pointer redirections.
 
-So __Parent 1__ delegates its sub-object to __Parent 2__, granting __Parent 2__ control over the eventual target pointed at, which __Parent 2__ does, by deciding the eventual target is a related item inside __Parent 3__.  
+So __Parent 1__ delegates its sub-object to __Parent 2__, granting __Parent 2__ control over the eventual target pointed at, which __Parent 2__ might, by deciding the eventual target is a related item inside __Parent 3__.  
 __Parent 1__ gives __Parent 2__ control the eventual target pointed at.
 
 #### Other Related Item
@@ -453,7 +453,7 @@ Other possibility:
 
 ### Form
 
-- A lot of the times it is interesting to introduce the diagram almost immediately. And most of the times the diagram is quite self-explanatory and does not require sentences, such as: "The system member Add is part of the system interface of a related list and is displayed in a diagram as follows:"
+- A lot of the times it is interesting to introduce the diagram almost immediately. And most of the times the diagram is quite self-explanatory and might not require sentences, such as: "The system member Add is part of the system interface of a related list and is displayed in a diagram as follows:"
 
 -----
 
@@ -496,7 +496,7 @@ JJ
 
 Why do I call them Object Get and Object Set? Is that proper English...? Why don't I call then Get Object and Set Object?
 Probably because I want to mention the aspect first?
-You know what? The naming does not matter that much.
+You know what? The naming might not matter that much.
 The concepts do. A PROBLEM IS, THAT IN THE SYSTEM INTERFACE ARTICLES I MIGHT GROUP COMMANDS BY ASPECT, SO THEN THE IDENTIFIERS
 MIGHT LOOK DIFFERENT. I AM GOING TO HAVE TO SYNCHRONIZE THAT
 TO THE 'OLDER' ARTICLES THEN...
@@ -758,7 +758,7 @@ State assignment is the most basic, and the easiest to understand. The values of
 A = B
 ```
 
-The value of __B__ is copied to __A__. The state assignment does not make __A__ and __B__ the same object. They are two *separate* objects that contain equal *values*. Change the value of one object and the two objects differ again.
+The value of __B__ is copied to __A__. The state assignment might not make __A__ and __B__ the same object. They are two *separate* objects that contain equal *values*. Change the value of one object and the two objects differ again.
 
 To make __A__ and __B__ represent the same *object*, you have to do a *line assignment*:
 

@@ -50,7 +50,7 @@ There could be multiple ways to display the content of the system interface. The
 
 ### System Interface Calls versus Assignment
 
-System command calls to __Get__, __Set__ or __Use__ might not often be visible, because they might usually be implied by assignment calls. But for alternative types of assignment, that do not have a standard assignment notation, you can explicitly display __Get__, __Set__ and __Use__ calls. When a simpler notation does not suffice, displaying __Get__, __Use__ or __Set__ command explicitly might be needed. This basically only happens in unusual cross-aspect assignments. In abstract diagram expression though, you can always use the explicit notations to simply make a point.
+System command calls to __Get__, __Set__ or __Use__ might not often be visible, because they might usually be implied by assignment calls. But for alternative types of assignment, that do not have a standard assignment notation, you can explicitly display __Get__, __Set__ and __Use__ calls. When a simpler notation might not suffice, displaying __Get__, __Use__ or __Set__ command explicitly might be needed. This basically only happens in unusual cross-aspect assignments. In abstract diagram expression though, you can always use the explicit notations to simply make a point.
 
 ### System Interface Calls
 

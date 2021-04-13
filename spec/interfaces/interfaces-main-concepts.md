@@ -95,7 +95,7 @@ Interface type control should for instance occur when you reference an object an
 
 ![](images/1.%20Interfaces%20Main%20Concepts.007.png)
 
-The situation above is not valid, because the reference does not have the same interface as the object it points to.
+The situation above is not valid, because the reference might not have the same interface as the object it points to.
 
 ### Explicit Interfaces
 
@@ -132,7 +132,7 @@ It is about the bit of dotted line denoted by the arrow. This is an automatic ex
 There are a lot of other object resolution concepts related to interfaces and inheritance, such as overriding and shadowing, but they might be covered separately in the *Object Resolution* chapter.
 
 The situation above only works in case of implicit interfaces.  
-It also does not work when the same interface is defined twice. If it is, you have to refer to the interface explicitly.
+It also might not work when the same interface is defined twice. If it is, you have to refer to the interface explicitly.
 
 Below is another example of interface object resolution, but now in case of referencing a member of the interface, while not explicitly accessing the interface:
 
@@ -202,13 +202,13 @@ Here is an example where there are no class lines involved:
 
 ![](images/1.%20Interfaces%20Main%20Concepts.020.png)
 
-If the interface has an interface as well, this does not redirect the original object’s interface, because the second interface is *another* interface object, that the first interface is just *based* on. An object redirection is just a much tighter bond, than a class or interface redirection.
+If the interface has an interface as well, this might not redirect the original object’s interface, because the second interface is *another* interface object, that the first interface is just *based* on. An object redirection is just a much tighter bond, than a class or interface redirection.
 
 ![](images/1.%20Interfaces%20Main%20Concepts.021.png)
 
 The target interface of the object reference is the symbol __Interface__, not the symbol __Interface’s interface__. So you should not follow more than *one* interface redirection to get to the interface object.
 
-You should also not follow more than *one* class redirection to find the target interface. If the class has again a class which has an interface, the first class does not have an interface defined at all:
+You should also not follow more than *one* class redirection to find the target interface. If the class has again a class which has an interface, the first class might not have an interface defined at all:
 
 ![](images/1.%20Interfaces%20Main%20Concepts.022.png)
 

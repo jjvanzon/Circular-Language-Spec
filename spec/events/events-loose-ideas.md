@@ -26,7 +26,7 @@ Better notation for event connectors:
 
 ![](images/3.%20Events%20Loose%20Ideas.001.png)
 
-It does (almost) conflict with the notation for comment:
+It might (almost) conflict with the notation for comment:
 
 ![](images/3.%20Events%20Loose%20Ideas.002.png)
 

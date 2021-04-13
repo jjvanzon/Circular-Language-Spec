@@ -80,7 +80,7 @@ And the list item added to the derived list might inherit directly from the list
 
 List inheritance is analogous to defining a *parallel list*, adding extra columns to an existing list.
 
-This behavior is specific to list inheritance and does not apply to any of the other forms of inheritance.
+This behavior is specific to list inheritance and might not apply to any of the other forms of inheritance.
 
 The list inheritance construct realizes such behavior by responding to the __List__ events of the base list: the __Added__ and __Removing__ events. These events are *system events*, that were introduced by the *Events* chapter.
 
@@ -104,7 +104,7 @@ This behavior is not as intuitive as object list inheritance.
 
 For an explanation about how different list objects themselves, such as linked list and stack, can inherit from each other, see the article *List Concept*. The main idea is that you might have to open up the system interface for that.
 
-The following might be something you could get confused about. A normal object is also a *list* of members. However one object’s inheriting from another object does not cause the same behavior as list inheritance: extra members are not added to the derived object when members are added to the base object. So do not get confused over this.
+The following might be something you could get confused about. A normal object is also a *list* of members. However one object’s inheriting from another object might not cause the same behavior as list inheritance: extra members are not added to the derived object when members are added to the base object. So do not get confused over this.
 
 ![](images/1.%20Inheritance%20Main%20Concepts.012.png)
 
@@ -206,4 +206,4 @@ Because you can give an object two sub-objects of the same class, you can also l
 
 ![](images/1.%20Inheritance%20Main%20Concepts.027.png)
 
-But why might you do that? It does not matter, that’s up to you. You’re the programmer. You can reference the double members individually in the diagram, but when you want to reference a double member textually you have to disambiguate with a qualifier, which does require you to give each base its own name.
+But why might you do that? It might not matter, that’s up to you. You’re the programmer. You can reference the double members individually in the diagram, but when you want to reference a double member textually you have to disambiguate with a qualifier, which might require you to give each base its own name.

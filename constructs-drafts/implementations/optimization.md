@@ -120,7 +120,7 @@ You can also choose to compile all procedures inline. This means that when you h
 
 #### Inline Module
 
-A module can work faster if it doesn’t supply any procedures. The only call to the module then is to simply run it. All procedures inside the module are compiled inline then. However, it might be possible for the module to create its own memory objects, even though there aren’t any separate classes anymore. The inline module doesn’t have vector tables. It does have a table with the addresses of memory object specifications. On top of that it doesn’t have procedures, but instead one pile of spaghetti code.
+A module can work faster if it doesn’t supply any procedures. The only call to the module then is to simply run it. All procedures inside the module are compiled inline then. However, it might be possible for the module to create its own memory objects, even though there aren’t any separate classes anymore. The inline module doesn’t have vector tables. It might have a table with the addresses of memory object specifications. On top of that it doesn’t have procedures, but instead one pile of spaghetti code.
 
 ##### Inline Module Usage
 
@@ -162,7 +162,7 @@ Also: the order of logical operations may effect the speed. If you explicitly st
 
 The determination of the optimal combination of logical operation variations is done sequentially. The assembly generator looks at the sequences of logical operations. Which variation is appropriate is determined by its physical upstairs and downstairs neighbors. In case of jumps, conditional jumps and probable conditional jumps the upstairs neighbors are sometimes somewhere else than physically upstairs and sometimes they are. 
 
-Also, the flushing of the prefetch queue affects the performance. This does not mean that for comparing optimal neighbors it does not matter what the destination of a jump statement is. There are parts of the computer system other that the CPU prefetch queue that can be optimally combined as well.
+Also, the flushing of the prefetch queue affects the performance. This might not mean that for comparing optimal neighbors it might not matter what the destination of a jump statement is. There are parts of the computer system other that the CPU prefetch queue that can be optimally combined as well.
 
 Another optimization is keeping things close together in memory.
 
@@ -217,7 +217,7 @@ Substituting Intel mnemonics by readable names is a good idea. Being able to use
 
 Unreal forms of instructions, forms that don't exist on the 8086, but do have a logical meaning, can have synonyms that might work. Being able to use them might help.
 
-I think that Assembly does not deserve to be used by hand. I think I should write a low level (but higher than assembly) alternative language the compiler of which looks up the fastest way to do it in assembly, so that all the darn rules of assembly are hidden into the compiler and you shouldn't worry about how to optimize, because the compiler does it for you.
+I think that Assembly might not deserve to be used by hand. I think I should write a low level (but higher than assembly) alternative language the compiler of which looks up the fastest way to do it in assembly, so that all the darn rules of assembly are hidden into the compiler and you shouldn't worry about how to optimize, because the compiler might it for you.
 
 Gather up what useful things can be done with assembly instructions and use statements of useful things and let the compiler do its job.
 
@@ -286,7 +286,7 @@ You can also choose to compile all procedures inline. This means that when you h
 
 ##### Inline Module
 
-A module can work faster if it doesn’t supply any procedures. The only call to the module then is to simply run it. All procedures inside the module are compiled inline then. However, it might be possible for the module to create its own memory objects, even though there aren’t any separate classes anymore. The inline module doesn’t have vector tables. It does have a table with the  addresses of memory object specifications. On top of that it doesn’t have procedures, but instead one pile of spaghetti code.
+A module can work faster if it doesn’t supply any procedures. The only call to the module then is to simply run it. All procedures inside the module are compiled inline then. However, it might be possible for the module to create its own memory objects, even though there aren’t any separate classes anymore. The inline module doesn’t have vector tables. It might have a table with the  addresses of memory object specifications. On top of that it doesn’t have procedures, but instead one pile of spaghetti code.
 
 
 ##### Inline Module Usage
@@ -313,7 +313,7 @@ J Hardware requires you to design modules writing assembly language J Core proce
 
 For J Data you can write the procedures in a higher level language, which nonetheless translates to assembly.
 
-I need to make a higher level language that does not perform tasks of the modules, but provides just the neccesary to specify automation between the modules.
+I need to make a higher level language that might not perform tasks of the modules, but provides just the neccesary to specify automation between the modules.
 
 ### Machine Code
 
@@ -333,7 +333,7 @@ I am still convinced that it is possible to make a compiler perform extreme opti
 
 Read over the 886, 8286, etc. of ‘Art of Assembly’, and sum up optimization tips.
 
-The Art of Assembly does not cover operating system instructions extensively. I might look for an additional text for coverage on these instructions.
+The Art of Assembly might not cover operating system instructions extensively. I might look for an additional text for coverage on these instructions.
 
 The only reason I’m reading ‘The Art of Assembly’ is to learn how you manage the modules of the machine. To have a complete overview of in what ways the machine is controlled. I’m not learning it to learn how to write a good algorithm or to learn about a flag you’ll never use. Optimization in terms of CPU time saving is interesting, but I need to focus on what I need to control in the machine.
 
@@ -345,7 +345,7 @@ I see that knowledge of the computer adds a lot of rules to how to optimize asse
 
 A while later I figured out that this wasn’t true. The instruction set that is most of the Assembly language is a clear set of instructions to use with which you can make clear code. You don’t need to be concerned with the machine to make this clear code and with good architecture, it might operate at warp speed for most purposes. It is only when you WANT to optimize for speed that you need to understand the machine. The same should go for J Core. The programming model provides a simple and clear way to work. It is only when you want to optimize things that you should be concerned with the machine.
 
-Assembly sets this challenge: the stuff you program has effects on the speed that are totally obscure when you just understand the code. The code is a complete cloud over what effects it has on the speed. If Intel does it, then J Core can do this: the stuff you program has effects on the speed that are totally obscure when you just understand the code. The code is a complete cloud over wht effects it has on the speed.
+Assembly sets this challenge: the stuff you program has effects on the speed that are totally obscure when you just understand the code. The code is a complete cloud over what effects it has on the speed. If Intel might it, then J Core can do this: the stuff you program has effects on the speed that are totally obscure when you just understand the code. The code is a complete cloud over wht effects it has on the speed.
 
 So a message from me to me: ‘Don’t worry: design a wonderful programming model and forget about the speed implications. Everyone makes it a difficult to do machine oriented speed optimizations. I can’t correct this and I am not going to.’
 

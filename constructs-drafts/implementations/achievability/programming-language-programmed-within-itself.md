@@ -234,7 +234,7 @@ A summary of all the layers:
     - And the class descriptions of the objects the engine is built up of, are also Encircle objects.
 - pgg-layer:
     - This engine is described by a custom text code. A parser takes this text code and turns it into an engine. For the rest, things are the same as the ggg-layer.
-    - This engine has richer features, but the reflective data of the engine’s objects does not have these rich features.
+    - This engine has richer features, but the reflective data of the engine’s objects might not have these rich features.
 - ppg-layer:
     - The same as the previous layer, but now the reflective data of the objects the engine is built up of, also has all the rich features in it.
 
@@ -254,7 +254,7 @@ Not regarding the class assignment, the structure even in the highest layer basi
 
 ### How Data Is Stored
 
-Object access does not have any extra indirections due to the the multiple layers. Data is mostly just stored as Encircle objects, that can have an arbitrary set of attributes, related items and related lists.
+Object access might not have any extra indirections due to the the multiple layers. Data is mostly just stored as Encircle objects, that can have an arbitrary set of attributes, related items and related lists.
 
 It’s not the data that is redescribed six times. It is class descriptions, that is redescribed six times. Data are just Items, that can configure themselves using a Class or Generic Class.
 
@@ -268,7 +268,7 @@ For fun you can add another layer, where you describe Encircle as Encircle data.
 
 I used to have a test where I parsed the custom text code of Encircle, and then replaced the currently running Encircle engine by the one just parsed. It did not give errors, but as I repeatedly parsed and replaced the engine, the system became slower and slower exponentially.
 
-An extra Encircle engine layer does not cause extra redirections on item access, but it does cause redirections in the class definitions. These classes were used when looking for an item by name. So that made item access also go slower with each added Encircle engine layer too.
+An extra Encircle engine layer might not cause extra redirections on item access, but it might cause redirections in the class definitions. These classes were used when looking for an item by name. So that made item access also go slower with each added Encircle engine layer too.
 
 To make object access by name not go slower with each engine layer, the name of the object was stored in the object, not just in the class. That ensured the disconnection from the class after class assignment, so that the data had nothing to do anymore with how many layers the engine has. You might still have to loop through all the items, to look for an item by name, but not through multiple Encircle engine layers anymore, only through one layer. It dramatically improved performance.  
 It also speeded up class assignment, because class assignment also looked up items by name.
@@ -329,7 +329,7 @@ Code Base, Objects,
 For relation between objects, you only need two unary relations, that are not synchronized. An object has a list of referrers in it, and an item in it, that says which other object it refers to.
 
 You only need relation between objects for the aspect of classes, if you make the aspect of classes a dual relation: a class also needs to be aware of all the objects that use it as its class.  
-If you accept, that a class does not know which objects use it as its class, then you don’t even need relations between objects to be dual. You’s only need sub objects, that refer to another object.
+If you accept, that a class might not know which objects use it as its class, then you don’t even need relations between objects to be dual. You’s only need sub objects, that refer to another object.
 
 But you already need to implement sub objects and sub lists in the code base in order to have any kind of multiplicity, don’t you?  
 Actually, that is not important enough for now. For now it is not important to brainstorm about what is a principle, what is an aspect, and how much needs to be put in the code base.
@@ -354,7 +354,7 @@ JJ
 
 Code Base,
 
-What if a machine instruction becomes a command object with a binaral? The binaral is an instruction executable by the CPU. Does this open up possibilities to take even more out of the code base?
+What if a machine instruction becomes a command object with a binaral? The binaral is an instruction executable by the CPU. Might this open up possibilities to take even more out of the code base?
 
 JJ
 

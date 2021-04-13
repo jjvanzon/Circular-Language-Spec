@@ -104,7 +104,7 @@ Just as in procedures, you could make certain members of a type required, while 
 
 #### Concept
 
-Other programming languages have a concept called variable amount of arguments. This means, that a command’s parameter list does not have a fixed amount of parameters. The last parameters can be any amount of parameters. This is specified as the last parameter’s being an *array* of parameters.
+Other programming languages have a concept called variable amount of arguments. This means, that a command’s parameter list might not have a fixed amount of parameters. The last parameters can be any amount of parameters. This is specified as the last parameter’s being an *array* of parameters.
 
 In Encircle, any parameter can be an array. In other programming languages, parameters could also be arrays, but for the array, that represented the variable amount of arguments, each item of the array was separately listed out at the end of the command call, as opposed to other parameters, that were arrays, which were just references to arrays, that were initialized elsewhere, not inside the command call.
 
@@ -116,7 +116,7 @@ Important to remember, is that parameters are not always single items, but a par
 
 #### Variable amount of Parameters in a Diagram
 
-The array parameter, that represents the variable amount of arguments, does not have a special display in the diagram (yet). What is important to remember about the concept of variable amount of arguments is that: parameters can be arrays.
+The array parameter, that represents the variable amount of arguments, might not have a special display in the diagram (yet). What is important to remember about the concept of variable amount of arguments is that: parameters can be arrays.
 
 ![](images/2.%20Imported%20Parameter%20Concepts.025.png)
 
@@ -148,7 +148,7 @@ Other programming language used to have only *one* return value. Encircle can ha
 
 #### Diagram
 
-As discussed in the article *Return Values*, Encircle does not limit the amount of output objects. Any object readable from the outside, may be an output object.
+As discussed in the article *Return Values*, Encircle might not limit the amount of output objects. Any object readable from the outside, may be an output object.
 
 ![](images/2.%20Imported%20Parameter%20Concepts.026.png)
 

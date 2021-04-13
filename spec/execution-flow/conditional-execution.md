@@ -66,7 +66,7 @@ The __If__ command takes one or two command references as a parameter. That is t
 
 The command to run when a condition is met is called the __Then__ clause. The command to run when a condition is *not* met is called the __Else__ clause.
 
-There are two versions of __If__. There is the __If Then__ statement, that does not have an __Else__ clause. And there is __If Else__ statement, which does have an __Else__ clause.
+There are two versions of __If__. There is the __If Then__ statement, that might not have an __Else__ clause. And there is __If Else__ statement, which might have an __Else__ clause.
 
 The implementation of the __If__ command is quite simple. It simply calls a few machine instructions to start the right command, based on whether the __Boolean__ is __True__ or __False__.
 
@@ -132,7 +132,7 @@ The *definition* of the __Else If__ command is part of a system module of execut
 
 Nothing is filled in yet for the condition, the __Then__ clause or the __Else__ clause, and there are no __Cases__ defined yet. But a *class* for a __Case__ *is* defined. The __Case__ class defines a condition and a __Then__ clause.
 
-There is another, separate definition of the __Else If__ command, that is the same as the other __Else If__ command definition, except that it does not have an __Else__ clause in it.
+There is another, separate definition of the __Else If__ command, that is the same as the other __Else If__ command definition, except that it might not have an __Else__ clause in it.
 
 ### Select Case
 
@@ -187,7 +187,7 @@ The *definition* of the __Select Case__ execution flow commands is part of a sys
 
 Nothing is filled in yet as the __Select__ or __Else__, and there are no __Cases__ defined, but a *class* for a __Case__ *is* defined.
 
-There is another, separate definition of the __Select Case__ command for comparison of exact values, that is the same as the other __Select Case__ command definition, except that it does not have an __Else__ clause in it.
+There is another, separate definition of the __Select Case__ command for comparison of exact values, that is the same as the other __Select Case__ command definition, except that it might not have an __Else__ clause in it.
 
 ### Select Case (split formula)
 
@@ -238,4 +238,4 @@ The public elements of the definition for half a formula as the first part of th
 
 Nothing is filled in yet as the __Select__ or __Else__, and there are no __Cases__ defined, but a *class* for a __Case__ *is* defined.
 
-There is another, separate definition of the __Select Case__ command for formulas, that is the same as the other __Select Case__ command definition, except that it does not have an __Else__ clause in it.
+There is another, separate definition of the __Select Case__ command for formulas, that is the same as the other __Select Case__ command definition, except that it might not have an __Else__ clause in it.

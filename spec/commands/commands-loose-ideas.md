@@ -227,7 +227,7 @@ Sub objects again contain procedures.
 
 ![](images/7.%20Commands%20Ideas.002.png)
 
-Software can’t execute without procedures. When you run a procedure, an object *does something*.
+Software can’t execute without procedures. When you run a procedure, an object *might something*.
 
 A button could have a __Set Text__ procedure for instance, which sets the text displayed on the button.
 
@@ -259,7 +259,7 @@ The __Redraw Button__ procedure is rather complex. In this procedure lines of th
 
 You can also see here that separately defining a procedure can lead to the *reuse* of procedures. The __Draw Line__ procedure is reused three times in the example above. There are many procedures already defined, that you might use one way or another. Most of these procedures are encapsulated in a type. There’s for instance a __File__ type that contains procedures with which to control a single computer file.
 
-So where does it end? Procedures might continue to delegate to one another and nothing might really actually happen. Well, it ends at a special group of procedures that don’t call other procedures anymore. Each of those procedures executes a so called machine instruction: a basic instruction that is sent to the computer’s central processing unit (CPU) and make the *computer* *do* something. The CPU performs a hardware defined *machine* procedure.
+So where might it end? Procedures might continue to delegate to one another and nothing might really actually happen. Well, it ends at a special group of procedures that don’t call other procedures anymore. Each of those procedures executes a so called machine instruction: a basic instruction that is sent to the computer’s central processing unit (CPU) and make the *computer* *do* something. The CPU performs a hardware defined *machine* procedure.
 
 That way there can develop a big procedure call tree-out, which makes a single procedure consist of many, many machine instructions, ranging from tens to thousands of machine instructions or even more.
 
@@ -314,7 +314,7 @@ To make one procedure call another procedure, you put a diamond in the calling p
 
 ![](images/7.%20Commands%20Ideas.014.jpeg)
 
-You can say __A__ calls __B__, or __B__ is called from __A__. You could say that the line is directed outwards: the call line first exists a square, to next find its target procedure. The connected symbols here represent the same procedure. The side effect of a diamond though, is that it *executes*. __C__ is now part of procedure __A__ and it might execute when __A__ executes. It’s like the code of __B__ is inserted right into procedure __A__. Considering that, it seems that the direction of the line doesn’t really matter: both symbols simply represent the same procedure. But a procedure does have a definition in one place while the other symbols are calls or references to it. The topic of direction is looked at closer in the *Lines* chapter, but I’ll tell you now that the direction of a line is usually outwards.
+You can say __A__ calls __B__, or __B__ is called from __A__. You could say that the line is directed outwards: the call line first exists a square, to next find its target procedure. The connected symbols here represent the same procedure. The side effect of a diamond though, is that it *executes*. __C__ is now part of procedure __A__ and it might execute when __A__ executes. It’s like the code of __B__ is inserted right into procedure __A__. Considering that, it seems that the direction of the line doesn’t really matter: both symbols simply represent the same procedure. But a procedure might have a definition in one place while the other symbols are calls or references to it. The topic of direction is looked at closer in the *Lines* chapter, but I’ll tell you now that the direction of a line is usually outwards.
 
 If one square is called, its contained squares are called too.
 
@@ -348,7 +348,7 @@ A diamond without a line:
 
 ![](images/7.%20Commands%20Ideas.019.jpeg)
 
-Also executes, when its parent procedure executes, but it doesn’t delegate to another procedure, like a call does:
+Also executes, when its parent procedure executes, but it doesn’t delegate to another procedure, like a call might:
 
 ![](images/7.%20Commands%20Ideas.020.jpeg)
 
@@ -382,7 +382,7 @@ The objects inside a procedure can be regarded:
 - Return values
 - Local variables
 
-The input parameters of a procedure are its writable objects. The output values are its readable objects. Objects that are read-write are like in-out or thru parameters. One readable object can be chosen to be the return value, which promotes it to being the main output parameter. This does not give it extra capabilities, only an extra notation in certain places. The return value is denoted in a diagram by putting the term __Return__ near one of the parameters. The private objects are the procedure’s local variables. If __A__ is an input parameter and __B__ is an output parameter, you can also say that the procedure *takes* __A__ and *gives* __B__.
+The input parameters of a procedure are its writable objects. The output values are its readable objects. Objects that are read-write are like in-out or thru parameters. One readable object can be chosen to be the return value, which promotes it to being the main output parameter. This might not give it extra capabilities, only an extra notation in certain places. The return value is denoted in a diagram by putting the term __Return__ near one of the parameters. The private objects are the procedure’s local variables. If __A__ is an input parameter and __B__ is an output parameter, you can also say that the procedure *takes* __A__ and *gives* __B__.
 
 Squares inside procedures are non executing clauses or procedure references. Diamonds inside procedures are executing clauses or procedure calls.
 
@@ -432,7 +432,7 @@ The following are procedure references:
 
 ![](images/7.%20Commands%20Ideas.024.png)
 
-It’s a square that is redirected. It’s always a *square* with a *reference line*. It is a procedure that redirects, but *does not* execute. It can point either to a square or a diamond.
+It’s a square that is redirected. It’s always a *square* with a *reference line*. It is a procedure that redirects, but *might not* execute. It can point either to a square or a diamond.
 
 #### Call
 
@@ -466,11 +466,11 @@ This type of definition is usually not called a definition. The clause might be 
 
 ![](images/7.%20Commands%20Ideas.029.png)
 
-The clause can be a diamond or a square. Its container can also be a diamond as well as a square. A clause does not have a reference line, or it might have been a reference or a call, not a clause.
+The clause can be a diamond or a square. Its container can also be a diamond as well as a square. A clause might not have a reference line, or it might have been a reference or a call, not a clause.
 
 #### Active and Inactive
 
-A diamond executes, a square does not. A diamond is said to be active, while a square is inactive.
+A diamond executes, a square might not. A diamond is said to be active, while a square is inactive.
 
 #### Active Clause
 
@@ -556,7 +556,7 @@ Actually, The letters distinguish the different symbols. If you only use letters
 
 ![](images/7.%20Commands%20Ideas.042.jpeg)
 
-So in that sense, diamond A does execute. But not the definition executes, only the call executes.
+So in that sense, diamond A might execute. But not the definition executes, only the call executes.
 
 #### Diamonds Can only be Directly Inside a Procedure Symbol, Diamonds Can’t be Directly Inside an Object Symbol
 
@@ -1034,7 +1034,7 @@ Object assignment can also be done for commands, but only has the right effect b
 
 Class assignment is also used to assign a command definition to a call.
 
-Command definition assignment means, that a call or command reference is appointed a new definition target. The target definition of one command reference or call is assigned as the target definition of another command reference or call. The reference to the original command definition is released. Only when the original command definition does not have any other references anymore, then the original object is deleted. But do not worry; as long as a command definition is part of a module, it means there still is a reference to it and it might not get deleted.
+Command definition assignment means, that a call or command reference is appointed a new definition target. The target definition of one command reference or call is assigned as the target definition of another command reference or call. The reference to the original command definition is released. Only when the original command definition might not have any other references anymore, then the original object is deleted. But do not worry; as long as a command definition is part of a module, it means there still is a reference to it and it might not get deleted.
 
 -----
 

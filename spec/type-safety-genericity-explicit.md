@@ -195,7 +195,7 @@ However, you can’t call it *shorthand*. The following two are not precisely th
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.001h.png)
 
-The lack or presence of a type line *does* make a difference, as might be explained in a later chapter.
+The lack or presence of a type line *might* make a difference, as might be explained in a later chapter.
 
 #### Same Procedure, Same Interface
 
@@ -207,7 +207,7 @@ They also get the same interface, sort of like this:
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.003.jpeg)
 
-However, the lack or presence of an interface line *does* make a difference, as might be explained later.
+However, the lack or presence of an interface line *might* make a difference, as might be explained later.
 
 ### Genericity
 
@@ -580,7 +580,7 @@ If you break one of the lines in the circularity, the one loosing the line comes
 
 |                                |                                |                                           |
 |--------------------------------|--------------------------------|-------------------------------------------|
-| __One does not fix the other__ | Interface type genericity      | Fixing the interface doesn’t fix the type |
+| __One might not fix the other__ | Interface type genericity      | Fixing the interface doesn’t fix the type |
 |                                | Type interface genericity      | Fixing the type doesn’t fix the interface |
 |                                | Interface-procedure genericity | Fixing the procedure interface doesn’t fix the procedure |
 
@@ -593,7 +593,7 @@ If you break one of the lines in the circularity, the one loosing the line comes
 
 -----
 
-< Does genericity control what happens on the call of system procedures or if the call to a system procedure is illegal or not? >
+< Might genericity control what happens on the call of system procedures or if the call to a system procedure is illegal or not? >
 
 -----
 
@@ -652,7 +652,7 @@ Explicit:
     - When you assign the object:
         - The object might be of a type that supports the interface (?)
 
-You can change whether or not a type or interface is generic. It is a separate aspect of the symbol. Genericity of type doesn’t mean that it’s of type Object or something, because whenever a symbol has an object, it has a specific type: the type of the object. Whether a symbol has a generic type or interface or not can be set as runtime. Except when the type has been made constant on that part: always a generic interface or always an explicit interface, always a generic type or always an explicit type. Always an explicit type does not mean that the type is constant. The type just always needs to be assigned explicitly, but *can* vary.
+You can change whether or not a type or interface is generic. It is a separate aspect of the symbol. Genericity of type doesn’t mean that it’s of type Object or something, because whenever a symbol has an object, it has a specific type: the type of the object. Whether a symbol has a generic type or interface or not can be set as runtime. Except when the type has been made constant on that part: always a generic interface or always an explicit interface, always a generic type or always an explicit type. Always an explicit type might not mean that the type is constant. The type just always needs to be assigned explicitly, but *can* vary.
 
 \>
 
@@ -698,4 +698,4 @@ If you redirect with an object line then the object reference gets the same type
 
 Oh, making type unsettable at run time can be considered a form of genericity. Maybe I should even rename the other type genericity I mentioned. It might be called object-type genericity. Well… settability can also be called variable and constant.
 
-See to it you mention that an explicit type does not fix the type permanently unless you make the Type Set of the symbol Runtime Inaccessible. Oh, haven’t covered access control in detail yet, but that’s not a problem really. 
+See to it you mention that an explicit type might not fix the type permanently unless you make the Type Set of the symbol Runtime Inaccessible. Oh, haven’t covered access control in detail yet, but that’s not a problem really. 

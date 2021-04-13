@@ -9,8 +9,8 @@ UML
 ### Loose Ideas
 
 It is worth reconsidering UML for Symbol?  
-You should consider the practical value of each of the diagram types. Symbol does provide a way to express any system.  
-All systematics expressed in UML, can also be expressed in Symbol, however, the diagram types in UML do serve a practical purpose, in that they clearly depict a certain aspect of the systematics. For instance, the sequence diagram shows more clearly, exactly the order in which a process does things and easily which objects executes what thing. In Symbol you CAN express the same systematics, but the timeline may be depicted less clearly. But compared to text code the timeline is much clearer in Symbol. Of course, when you are able to express the timeline as clearly in Symbol as in the sequence diagram, you may have found a substitute for it. However, it still remains to be seem if 'normal' people, that do not really know Symbol, might take it in as easily with Symbol as with a sequence diagram. Possibly, Symbol CAN provide a good way. The use of the two dimensions in a sequence diagram is very nice. Can symbol, being more geometrical, offer the same clear view on the timeline without using the straight axis, or should symbols be placed under straight axes? Or are the reference symbols too much for 'normal' people...
+You should consider the practical value of each of the diagram types. Symbol might provide a way to express any system.  
+All systematics expressed in UML, can also be expressed in Symbol, however, the diagram types in UML do serve a practical purpose, in that they clearly depict a certain aspect of the systematics. For instance, the sequence diagram shows more clearly, exactly the order in which a process might things and easily which objects executes what thing. In Symbol you CAN express the same systematics, but the timeline may be depicted less clearly. But compared to text code the timeline is much clearer in Symbol. Of course, when you are able to express the timeline as clearly in Symbol as in the sequence diagram, you may have found a substitute for it. However, it still remains to be seem if 'normal' people, that do not really know Symbol, might take it in as easily with Symbol as with a sequence diagram. Possibly, Symbol CAN provide a good way. The use of the two dimensions in a sequence diagram is very nice. Can symbol, being more geometrical, offer the same clear view on the timeline without using the straight axis, or should symbols be placed under straight axes? Or are the reference symbols too much for 'normal' people...
 
 Stuff like that might be considered.
 
@@ -40,4 +40,4 @@ en toch wordt UML weinig gebruikt en ook UML in Visio, want je kunt niet veel re
 
 -----
 
-Symbol depicts the technical object oriented organization. I suspect UML does provide some practical points of view, that Symbol does not. Can Symbol somehow serve as an intermediate language which translates to UML and back? Or should something UML-like still be used to express systems in a practical way.
+Symbol depicts the technical object oriented organization. I suspect UML might provide some practical points of view, that Symbol might not. Can Symbol somehow serve as an intermediate language which translates to UML and back? Or should something UML-like still be used to express systems in a practical way.

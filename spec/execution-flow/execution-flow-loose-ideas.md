@@ -400,7 +400,7 @@ You can recognize an embedded procedure by the fact that they’re not calls, no
 
 Perhaps jumping might change that and the clauses might get lines, but no lines that end up outside the embedding procedure.
 
-< Picture 41: clause that does have a line because of a jump to it >
+< Picture 41: clause that might have a line because of a jump to it >
 
 < It’s like when something’s a clause, it ignores its parent’s borders. Conversely, the contents of a block are by default only accessible within that block. >
 

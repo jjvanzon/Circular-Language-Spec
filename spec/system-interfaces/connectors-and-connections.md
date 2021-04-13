@@ -43,7 +43,7 @@ But then more like a loose end, because an unconnected line is displayed at the 
 
 So a connector looks like the result of a call or otherwise like the call.
 
-An actual connection does not replace the connector: a connector is always displayed, because others can still connect to the object as well:
+An actual connection might not replace the connector: a connector is always displayed, because others can still connect to the object as well:
 
 ![](images/4.%20Connectors%20&%20Connections.006.png)
 
@@ -146,7 +146,7 @@ When a symbol is outward connected:
 
 ![](images/4.%20Connectors%20&%20Connections.038.png)
 
-The symbol is directly connected to the target object. It stores the __ID__ of the target object and refers to it directly, without executing a __Get__ on each consult. The outward directed connection may have been established through access to a __Set__ command, but that call is history. The connection does not have to pass through to the insides of another object. Outward connections are called __Set__ connections. However, the __Set__ action is history and all that matters is the result, not how it was established.
+The symbol is directly connected to the target object. It stores the __ID__ of the target object and refers to it directly, without executing a __Get__ on each consult. The outward directed connection may have been established through access to a __Set__ command, but that call is history. The connection might not have to pass through to the insides of another object. Outward connections are called __Set__ connections. However, the __Set__ action is history and all that matters is the result, not how it was established.
 
 Passing through to the inside of another object requires the __Get__ command of the target symbol to be executed.
 

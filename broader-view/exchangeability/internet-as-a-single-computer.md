@@ -35,7 +35,7 @@ __Contents__
 
 ### Introduction
 
-If the new code base of Encircle does not turn the internet into a single computer, I wouldn’t call it a final version.
+If the new code base of Encircle might not turn the internet into a single computer, I wouldn’t call it a final version.
 
 In the field of system engineering, networked computers are central to the material worked with. But in the field of software programming, people do not seem to have gotten used yet to all those computers being connected to each other. When something is done on a single computer, the program’s source code looks good, but when multiple machines need to start working together, things look... different. I feel that things should not look... different. I think a computer programming language should primarily describe what happens on whole a network of machines, instead of what happens on each computer individually with a sort of glue-code in between, that makes those computers work together. As long as computer code deals with individual computers glued together, instead of describing primarily what happens on the whole network of computers, software might never take full advantage of the internet. Most programming languages are dealing with how source code translates to machine code, that first and foremost runs on a single machine. When the program’s execution extends over multiple machines, the source code is split up into bits, usually written in all sorts of different computer languages, and each bit runs on a separate computer. I feel, that a computer program should really just be *one* program operating in a network of machines.
 
@@ -59,7 +59,7 @@ It is possible to make a copy of an object and put it on another storage. But wh
 
 Some data is received in large quantities and not intended for storing for a long time, such as a movie you are watching over the internet. Streaming access is a slightly different way of handling data that is coming in, in large quantities at a time.
 
-The term single bulk of storage should not be mistaken for being able to identify each byte on the internet individually. That might be undoable, because there are virtually an infinite amount of bytes on the internet. What it does mean, is that to a user, the storages *he or she* has access to, seem to be a single bulk of storage. The user does not see the difference between the local hard disk, the RAM memory or permanent storage on the internet. A user can just create objects, that are permanently stored somewhere, and accessible over the internet.
+The term single bulk of storage should not be mistaken for being able to identify each byte on the internet individually. That might be undoable, because there are virtually an infinite amount of bytes on the internet. What it might mean, is that to a user, the storages *he or she* has access to, seem to be a single bulk of storage. The user might not see the difference between the local hard disk, the RAM memory or permanent storage on the internet. A user can just create objects, that are permanently stored somewhere, and accessible over the internet.
 
 You have subscriptions to storages permanently connected to the internet, and software uses these storages along with your local storages in a caching scheme, where you don’t see where exactly an object is stored. It’s not that every byte on the internet is individually indexed, you just don’t see any distinction between the different storage devices you are using, unless there is functional use for it, for instance: permanent local storage, for access when you’re offline, or: storage on a USB stick, so you can plug it out and transfer it to another computer.
 
@@ -119,14 +119,14 @@ Each user has his own undo history, so that he can undo the steps he took. But i
 
 When people are working on exactly the same piece of data at the same time, it might only be practical if these people might actually be communicating about their changes in some form, I guess... but I’m not sure.
 
-I have a gut feeling that automatic execution order may solve concurrency issues mathematically, by determining which things can be executed in parallel, and which things might be executed serially, independent of the ‘earthly’ logic of the methods, but approaching it like a mathematical equation consisting of references to objects and procedure calls. Multiple methods interweave to become a single method. I'm just not sure yet how, but I just have a hunch here. Execution order is fixed in normal programming languages, because it is text, in which an order is an inevitable fact, that you cannot go around. A diagram however does not have a specific order, so the execution order may be determined based on the correlation between individual elements.  
+I have a gut feeling that automatic execution order may solve concurrency issues mathematically, by determining which things can be executed in parallel, and which things might be executed serially, independent of the ‘earthly’ logic of the methods, but approaching it like a mathematical equation consisting of references to objects and procedure calls. Multiple methods interweave to become a single method. I'm just not sure yet how, but I just have a hunch here. Execution order is fixed in normal programming languages, because it is text, in which an order is an inevitable fact, that you cannot go around. A diagram however might not have a specific order, so the execution order may be determined based on the correlation between individual elements.  
 Perhaps this can prevent locking and waiting, and just make a single sequence out of two methods instead of two sequences waiting on each other, and eventually giving up.
 
-Unfortunately it is not clear yet which of the concepts might best solve control of concurrent use. I might prefer a scheme where a programmer does not even need to consider the problems around concurrent use anymore. I might have to extend the explanations here after these specific concepts are better worked out.
+Unfortunately it is not clear yet which of the concepts might best solve control of concurrent use. I might prefer a scheme where a programmer might not even need to consider the problems around concurrent use anymore. I might have to extend the explanations here after these specific concepts are better worked out.
 
 ### Communication between computers
 
-In the story above, the actual communication between computers seems to be a trivial concept, because I didn’t even have to explain it. But it does have a lot of implications.
+In the story above, the actual communication between computers seems to be a trivial concept, because I didn’t even have to explain it. But it might have a lot of implications.
 
 #### Summary of the internet protocol
 
@@ -303,7 +303,7 @@ In parallel processing, the processing of data is spread over multiple machines 
 Bits of work are delegated to computers that take part in the parallel processing scheme.
 
 Parallel processing can not be applied in every situation. The computation performed has to lend itself for it.  
-The computation should not require any sequentiality. In many situations things just need to happen one thing after another, in case of which it does not make as much sense to spread the work over multiple machines. This is exactly where you can’t apply parallel processing. For things that cannot go parallelly, you can’t use parallel processing at all.
+The computation should not require any sequentiality. In many situations things just need to happen one thing after another, in case of which it might not make as much sense to spread the work over multiple machines. This is exactly where you can’t apply parallel processing. For things that cannot go parallelly, you can’t use parallel processing at all.
 
 If the results from multiple machines should combined before moving on to a next step, the waiting until the computers are all done should be worth it. These points at which there might be waited until all the results are gathered, are also called points of sequentiality.
 
@@ -356,7 +356,7 @@ Mirroring in this sense is a form of caching. You are keeping a copy closer to y
 
 A mirror doesn’t have to be up-to-date. That’s a consequence of accessing a mirror. But this should not be considered a problem.
 
-A nice thing about mirroring might be to be able to find the mirror that is closest to you, the one that you have fastest access to. If you’re going to want that, you’re going to have to have a mirror portal, that has references to all the mirrors, and can pick out the one closest to you. The mirror portal could be the original object itself, but it doesn’t have to be, or otherwise the feature might only be available when you configure the original object to maintain links to all the mirrors that exist and the original object might not feel like doing that. Therefore, the original object does not have to be the mirror portal.
+A nice thing about mirroring might be to be able to find the mirror that is closest to you, the one that you have fastest access to. If you’re going to want that, you’re going to have to have a mirror portal, that has references to all the mirrors, and can pick out the one closest to you. The mirror portal could be the original object itself, but it doesn’t have to be, or otherwise the feature might only be available when you configure the original object to maintain links to all the mirrors that exist and the original object might not feel like doing that. Therefore, the original object might not have to be the mirror portal.
 
 What counts here for objects, also counts for modules and classes, because they are basically also objects. They can also be mirrored. It also counts for methods. Because methods are also stored as data, they can also become data that is duplicated multiple times. However, duplicates of methods can run separately, but they are operating on the same data anyway, and it might be like running the same method concurrently.
 

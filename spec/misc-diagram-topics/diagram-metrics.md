@@ -309,7 +309,7 @@ Diagram Metrics,
 
 You might want to abstractly express the complexity of an object or method, by making its symbol bigger.
 
-'Size' of a called method could indicate its complexity / how much it does, but it is: what does the method itself do, what do the methods called from it do? But how deep should you go? through the full depth? Because that's how much it does, but sometimes you want to see how much complexity of your own code is below that, so you might only want to see the complexity of some of the modules expressed and ignore the complexities in deeper modules...
+'Size' of a called method could indicate its complexity / how much it might, but it is: what might the method itself do, what do the methods called from it do? But how deep should you go? through the full depth? Because that's how much it might, but sometimes you want to see how much complexity of your own code is below that, so you might only want to see the complexity of some of the modules expressed and ignore the complexities in deeper modules...
 
 JJ
 

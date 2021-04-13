@@ -10,7 +10,7 @@ The terms input, output, throughput and downput were discussed earlier. Here it 
 
 Input, output and throughput has to do with value assignment, but also reference-assignment and other types of assignment, and also other machine instructions that perform a read-write operation.
 
-Not only directly contained parameters are input, output or throughput. When sub-objects of a parameter are used, the sub-objects become input, output and throughput of the command. So the configuration of direct parameters does not determine at all what exactly is input, output or throughput. The *usage* of things determines it.
+Not only directly contained parameters are input, output or throughput. When sub-objects of a parameter are used, the sub-objects become input, output and throughput of the command. So the configuration of direct parameters might not determine at all what exactly is input, output or throughput. The *usage* of things determines it.
 
 To automatically determine, whether a parameter is input, output or throughput, you should not only only look at the assignments executed by the command itself. Parameters, or sub-objects of parameters, are also passed to other commands. Whether something is input, output or throughput is equally dependent on whether it is input, output or throughput of a sub-command. If something is throughput for command A, and command A is called by command B, this automatically makes it throughput of command B. (This, unless it is command B’s downput.)
 

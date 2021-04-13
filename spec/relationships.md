@@ -116,7 +116,7 @@ Relationships might also be *bidirectional:* a two-way street. If one class rela
 
 #### 1 to 1 Relationship
 
-In the image above __Class B__ does not seem to have a relationship back to __Class A__ yet. The picture below might add that relationship back to __Class A__:
+In the image above __Class B__ might not seem to have a relationship back to __Class A__ yet. The picture below might add that relationship back to __Class A__:
 
 ![](images/1.%20Relationships.012.png)
 

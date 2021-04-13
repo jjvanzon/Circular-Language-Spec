@@ -28,7 +28,7 @@ But it may also be decided, that variable amount of arguments is not supported a
 Command 1  (  "Hello"  ,  {  524  ;  324  ;  523  ;  74  }  )
 ```
 
-That way, the term Variable Amount does not even need to be mentioned in the command declaration:
+That way, the term Variable Amount might not even need to be mentioned in the command declaration:
 
 ```
 Command  Command 1  (

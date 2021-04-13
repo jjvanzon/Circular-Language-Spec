@@ -220,7 +220,7 @@ MyCommand
 
 So without any decoration with brackets or what have you, it may represent a reference to a command.
 
-A command reference may be a square, to indicate it does not *execute* directly.
+A command reference may be a square, to indicate it might not *execute* directly.
 
 ![](images/1.%20Commands%20Main%20Concepts.008.png)
 
@@ -571,10 +571,10 @@ A clause `can` be *active* or *inactive*. If it `is` active, it is like a comman
 A clause `is always` created `as long as the` parent command `is` created. 
 
 << detail >>  
-A clause `does not` redirect its definition, because then `it might` be a command call.
+A clause `might not` redirect its definition, because then `it might` be a command call.
 
 << detail >>  
-A clause `does not` redirect its object, because then `it might` be a command reference.
+A clause `might not` redirect its object, because then `it might` be a command reference.
 
 << detail >>  
 A clause `is never` situated inside an object, or `it might` not be a clause.
@@ -617,7 +617,7 @@ Clauses `can` have parameters, `just like` command definitions:
 An *active* clause `executes` when its parent command `is` executed.
 
 << commands compared to objects >>  
-An active clause `is analogous` to an object that `does not` have a class. A *call* `is more` like an object that `*does*` have a class.
+An active clause `is analogous` to an object that `might not` have a class. A *call* `is more` like an object that `*might*` have a class.
 
 << nice formulation >>  
 Because an [active clause] `has its own` definition, its contents `are totally arbitrary` and `definable` by `the author` of `the` parent command, `unlike` calls, whose contents `comply` with `the` definition, that they `call`.
@@ -677,7 +677,7 @@ Executions `can` also be placed in a list. `No problem. You can` run `each` item
 
 #### Resolution When `Not Allowed` For Commands
 
-When `the` command concept `imposes a rule`, that `does not apply` to normal objects, then `you might` seem `to be` able to `break that rule`. To `keep direct` conversion between an object and a command `possible without any loss` of structure, it seems to be `allowed to break any of the extra rules imposed` by commands. But in that case `the` command `might always` get `the next best` alternative behavior and a warning `might` be generated. This `keeps` conversion between objects and commands possible `without any loss of` structure.
+When `the` command concept `imposes a rule`, that `might not apply` to normal objects, then `you might` seem `to be` able to `break that rule`. To `keep direct` conversion between an object and a command `possible without any loss` of structure, it seems to be `allowed to break any of the extra rules imposed` by commands. But in that case `the` command `might always` get `the next best` alternative behavior and a warning `might` be generated. This `keeps` conversion between objects and commands possible `without any loss of` structure.
 
 ### Commands Edge Cases
 
@@ -749,7 +749,7 @@ Below `is` a picture of two sub-commands inside an inactive command:
 
 ![](images/1.%20Commands%20Main%20Concepts.048.png)
 
-`The` __Parent Command__ `is` an inactive command, because it `is` a square. In `the` diagram above, `the` __Parent Command__ `contains` two sub-commands. `The` sub-commands `are` displayed as diamond shapes. One of `the` sub-commands `is` a call, because it `has` a dashed line `going` outside `the` __Parent Command__, `tying the` sub-command to its command definition. `The` other sub-command `is` an *active clause*, because it `does not` redirect its command definition.
+`The` __Parent Command__ `is` an inactive command, because it `is` a square. In `the` diagram above, `the` __Parent Command__ `contains` two sub-commands. `The` sub-commands `are` displayed as diamond shapes. One of `the` sub-commands `is` a call, because it `has` a dashed line `going` outside `the` __Parent Command__, `tying the` sub-command to its command definition. `The` other sub-command `is` an *active clause*, because it `might not` redirect its command definition.
 
 Below `is` a picture of two sub-commands inside an active command:
 

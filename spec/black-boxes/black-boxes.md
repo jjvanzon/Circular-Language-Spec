@@ -91,7 +91,7 @@ An object’s public contents can be accessed by anything that has a reference t
 What other programming languages call class methods, Encircle calls friend commands of a class object.
 
 The object with private contents declares which other objects are its friends.  
-The friendship does not automatically go both ways: the *befriended* has access to the privates of the friend, but the friend does not have access to the privates of the befriended. For that you might have to establish a mutual friendship.
+The friendship might not automatically go both ways: the *befriended* has access to the privates of the friend, but the friend might not have access to the privates of the befriended. For that you might have to establish a mutual friendship.
 
 #### Friend Relations
 
@@ -112,7 +112,7 @@ Black boxing is based on two simple concepts: *accessible* and *inaccessible*. Y
 
 The concepts are not literally used inside the language, but all the other black boxing concepts are based on it.
 
-The notation of __Accessible__ and __Inaccessible__ *can* be used in abstract diagram expression, though, which does not have to be syntactically correct, but is only used to make a point.
+The notation of __Accessible__ and __Inaccessible__ *can* be used in abstract diagram expression, though, which might not have to be syntactically correct, but is only used to make a point.
 
 #### Access Controlling System Aspects
 
@@ -216,7 +216,7 @@ In the following picture __B__ is declared friend of __A__:
 
 ![](images/1.%20Black%20Boxes.010.png)
 
-__A__ can access everything of __B__, even the __Private__ stuff. It does not go both ways: __B__ can only access the __Public__ contents of __A__.
+__A__ can access everything of __B__, even the __Private__ stuff. It might not go both ways: __B__ can only access the __Public__ contents of __A__.
 
 #### Friend Declaration, Container is Friend
 
@@ -304,7 +304,7 @@ The following diagram shows a member with __Private Set__ not accessible or visi
 
 ![](images/1.%20Black%20Boxes.020.png)
 
-And that is where the complexity *hiding* kicks in. The circle on the right is still the definition, so it does show the __Private__ member while the normal reference on the left does not show the __Private__ members of its related object.
+And that is where the complexity *hiding* kicks in. The circle on the right is still the definition, so it might show the __Private__ member while the normal reference on the left might not show the __Private__ members of its related object.
 
 The following diagram shows a member with __Private *Get*__ not accessible or visible from within a normal reference:
 
@@ -385,7 +385,7 @@ Usually, access to procedures is controlled in a *class* and each of its objects
 
 ### Public & Friend Connections
 
-An actual connection does not replace the access *connector:* an access connector is always displayed, because others can still connect to the object as well:
+An actual connection might not replace the access *connector:* an access connector is always displayed, because others can still connect to the object as well:
 
 ![](images/1.%20Black%20Boxes.026.png)
 
@@ -431,7 +431,7 @@ If the friend connection might be an outward connection, no friend access mark m
 
 ![](images/1.%20Black%20Boxes.031.png)
 
-The friend connection shown there is not really a *friend* connection either. It is just a *connection*, an outward *connection*, a *passive* connection. What a releaf that a passive connection does not require an access symbol at all, or it might have conflicted with our friend declaration notation, which looks a bit like an outward connection with an access mark displayed in it, but it is not an access mark; it is a friend declaration.
+The friend connection shown there is not really a *friend* connection either. It is just a *connection*, an outward *connection*, a *passive* connection. What a releaf that a passive connection might not require an access symbol at all, or it might have conflicted with our friend declaration notation, which looks a bit like an outward connection with an access mark displayed in it, but it is not an access mark; it is a friend declaration.
 
 #### Friend Get Connection
 

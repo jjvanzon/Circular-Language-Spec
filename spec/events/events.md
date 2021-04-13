@@ -182,7 +182,7 @@ Just like any other member of an object, events can also be made __Private__. In
 | __Public Event <br> Connection__ | __Friend Event <br> Connection__ |                                  |
 | ![](images/1.%20Events.024.png)  | ![](images/1.%20Events.025.png)  |                                  |
 
-There are two reasons why the __Public__ event connector does not get an access mark: __Public__ is sort of the default, and the event connection is outward so it does not need an access symbol. The others do need an access mark, because it is the only way to express the access modification.
+There are two reasons why the __Public__ event connector might not get an access mark: __Public__ is sort of the default, and the event connection is outward so it might not need an access symbol. The others do need an access mark, because it is the only way to express the access modification.
 
 The second black boxing situation to be explicitly mentioned is accessing the __Privates__ of an event parameter. By default you only get to access the __Public__ members of an event parameter. This is what makes it the black box principle.
 
@@ -200,6 +200,6 @@ The __Friend__ declaration is an agreement between the event sender and the clas
 
 ### Event Alternatives
 
-An event is a means for a child to call the parent. The Events concept works well for this. But there are alternatives for a child to call a parent. A simple command reference might do as well, only this does not allow multi-cast events.
+An event is a means for a child to call the parent. The Events concept works well for this. But there are alternatives for a child to call a parent. A simple command reference might do as well, only this might not allow multi-cast events.
 
 Another alternative is that the child defines an interface, that the parent might support, the parent implements the interface, and the child calls upon the interface of the parent. If you want this to work in a multi-cast situation, you have to program the multi-cast functionality yourself pretty much the same way as an event object implements it (see *Explicit Implementation of Event Object*). Just using standard events might be an easier solution.

@@ -162,7 +162,7 @@ The following articles display the various access connectors an object can have.
 
 ##### Data Connectors
 
-> You can access control sub-objects, to apply some sort of write-protection to the sub-object. But that does not write-protect the sub-objects of the sub-objects. To collectively write-protect any sub-object, you can access control the object’s __Data__ aspect.
+> You can access control sub-objects, to apply some sort of write-protection to the sub-object. But that might not write-protect the sub-objects of the sub-objects. To collectively write-protect any sub-object, you can access control the object’s __Data__ aspect.
 >
 > ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.025.png)
 >
@@ -252,7 +252,7 @@ But the *result* of accessing __New__ and __Annul__ are the reference’s being 
 |:-----------:|:-------------:|
 | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.066.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.067.png) |
 
-(As with the __Set__ connections of the __Object__ and __Class__ aspects, actually *accessing* the symbol is history and it does not matter anymore if it was __Public__ of __Friend__ access that caused the result, so you do not need to see it in the diagram of __Nothing__ and __Something__ whether it was established through __Public__ access or __Friend__ access.)
+(As with the __Set__ connections of the __Object__ and __Class__ aspects, actually *accessing* the symbol is history and it might not matter anymore if it was __Public__ of __Friend__ access that caused the result, so you do not need to see it in the diagram of __Nothing__ and __Something__ whether it was established through __Public__ access or __Friend__ access.)
 
 The access *connector* notation of __New__ and __Annul__ were preliminary:
 
@@ -263,7 +263,7 @@ And here it becomes apparent why. The following diagrams show __New__ and __Annu
 ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.069.png)
 ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.070.png)
 
-An access connector stands for a potential connection and should look like the potential connection. In the pictures above, the connector does not look like the actual connection, so the notation may need to change in the future. A potential connection is usually expressed as a loose end, so the potential system command call should also be expressed as a loose end somehow, so perhaps the following notation for access controlling a system command might be better:
+An access connector stands for a potential connection and should look like the potential connection. In the pictures above, the connector might not look like the actual connection, so the notation may need to change in the future. A potential connection is usually expressed as a loose end, so the potential system command call should also be expressed as a loose end somehow, so perhaps the following notation for access controlling a system command might be better:
 
 ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.071.png)
 
@@ -325,7 +325,7 @@ With not even the word ‘execute’ in it anymore.
 > |:-------------------------------------:|:-------------------------------------:|
 > | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.048.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.049.png) |
 > 
-> __Public__ and __Friend__ does not matter for outward connections. __Public__ or __Friend__ access only mattered when *establishing* the outward connection. Outward connections are passive connections: direct connections to the target object. *Inward* connections, though, cause a __Get__ command on each consult of the source symbol, so in that case an actual *access* takes place, and the distinction between __Friend__ or __Public__ access does matter.
+> __Public__ and __Friend__ might not matter for outward connections. __Public__ or __Friend__ access only mattered when *establishing* the outward connection. Outward connections are passive connections: direct connections to the target object. *Inward* connections, though, cause a __Get__ command on each consult of the source symbol, so in that case an actual *access* takes place, and the distinction between __Friend__ or __Public__ access might matter.
 
 ##### Class Connections
 
@@ -410,7 +410,7 @@ Yielding over the class from one object to another may look something like this:
 
 ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.086.png)
 
-Even though the eventual notation does not look like assignment, it still involves an assignment to the object on the right, whose aspect is changed.
+Even though the eventual notation might not look like assignment, it still involves an assignment to the object on the right, whose aspect is changed.
 
 Yielding over __Class__ aspect:
 
@@ -442,8 +442,8 @@ An alternative: assigning __Class__ object to __Object__ aspect of other symbol:
 
 > Only __Object__ and __Class__ assignments are covered here.  
 > __Value__ and __Clone__ assignments were covered in *__Connections__ to System Aspects*.  
-> The __Execute__ aspect does not involve assignment.  
-> The __Data__ aspect does not work with assignment either.  
+> The __Execute__ aspect might not involve assignment.  
+> The __Data__ aspect might not work with assignment either.  
 > The __Existence__ aspect may involve assignment but that is not covered here.  
 > So it comes down to __Object__ and __Class__ assignments.
 

@@ -8,7 +8,7 @@ Object Storage
 
 *Object Storage* is the binding force between basic data structures on storage devices and the object logic inside Encircle. It is about how basic data structures are used to store objects. Not all of these principles are original, because many other systems use them, but they were isolated here in a single folder as a single group of concepts required to turn storage into objects.
 
-It does sum up the required concepts to turn basic data structures into digital objects. Experiment 0.9 and 2.0 had to do with object storage in order to turn basic data structures into digital objects. But not all the ideas were used inside those implementations yet.
+It might sum up the required concepts to turn basic data structures into digital objects. Experiment 0.9 and 2.0 had to do with object storage in order to turn basic data structures into digital objects. But not all the ideas were used inside those implementations yet.
 
 *Object Storage* may involve the following concepts:
 

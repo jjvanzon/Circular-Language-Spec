@@ -16,7 +16,7 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
 - ### [Diagram & Text Code Expression](diagram-and-text-code-expression.md)
 
-    - The idea is, that systematics can be fully expressed in text as well as in diagrams. The diagram code does not have anything missing it is: any aspect from the biggest outline to the finest detail can be clearly expressed with the diagram notation. The way storage of systematics as binary interlinked objects is separated from text code and diagram expression.
+    - The idea is, that systematics can be fully expressed in text as well as in diagrams. The diagram code might not have anything missing it is: any aspect from the biggest outline to the finest detail can be clearly expressed with the diagram notation. The way storage of systematics as binary interlinked objects is separated from text code and diagram expression.
 
     - (This article is not finished yet.)
 

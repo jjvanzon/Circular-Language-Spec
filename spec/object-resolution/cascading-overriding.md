@@ -12,7 +12,7 @@ The basic idea is the following. A Line object might contain two Points. The Poi
 
 Actually it was even more refined. Each value of the style, for instance the ForeColor, BorderColor, FontName or FontSize, could be individually overridden.
 
-Dang, does not seem that simple. Hmmm, what to do with that.
+Dang, might not seem that simple. Hmmm, what to do with that.
 
 The Point object’s styles might actually return the values as overridden.
 

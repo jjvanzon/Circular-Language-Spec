@@ -29,7 +29,7 @@ So the generic program might become an engine that can load programs and have th
 
 I had foreseen, that programs running in it might be slower than programs that were totally generated and might run stand-alone. In experiment 2.0 it turned out that the speed loss is really not that bad. And I was still identifying things by name there, not even by number; that might have made it even faster.
 
-The programming interface of a *generated* modules used to look very slick in the generated code. Using the programming interface of the *generic* modules does not make the code look nice. However, you won’t be using it directly in C++ anymore. You’ll be using a custom text code, which *does*  look totally slick again. So it really doesn’t matter, that the code might not that good in C++.
+The programming interface of a *generated* modules used to look very slick in the generated code. Using the programming interface of the *generic* modules might not make the code look nice. However, you won’t be using it directly in C++ anymore. You’ll be using a custom text code, which *might*  look totally slick again. So it really doesn’t matter, that the code might not that good in C++.
 
 Below I give a description of the implementation of some basic coding principles, and how they could be implemented by a generic module, rather than have code generator generate the code for it. It is a simplified implementation, just to make it clear how it is possible.
 
@@ -51,7 +51,7 @@ It is pretty much the same issue for related items. The generic object contains 
 ### Related Lists
 
 For related lists you can do the same things. A related list is merely a lists of generic objects. There is a generic class, called List, that simply holds an array of generic objects. An object contains an array of Lists. Each related list has an item in this array of Lists.
-The difference between related items and related lists, is that a related list does not contain any objects at first: objects might be added to it later. When adding an object to the related list, the related list is aware of the class of object, that the list should contain, and assigns the class of the object to it whenever an object is added to it.
+The difference between related items and related lists, is that a related list might not contain any objects at first: objects might be added to it later. When adding an object to the related list, the related list is aware of the class of object, that the list should contain, and assigns the class of the object to it whenever an object is added to it.
 
 ### User Interface
 

@@ -53,7 +53,7 @@ __Protected Object Set__
 __Protected Object Get__  
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.002.png)
 
-In other words: __Protected__ might be accomplished by providing ‘public’ access through a triangle reference, but ‘private’ access through a circle reference. In the picture below the triangle offers access to the member, but the circle does not.
+In other words: __Protected__ might be accomplished by providing ‘public’ access through a triangle reference, but ‘private’ access through a circle reference. In the picture below the triangle offers access to the member, but the circle might not.
 
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.003.png)
 
@@ -81,7 +81,7 @@ __Optional__
 __Required__  
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.008.png)
 
-*Required* is expressed by putting half of the expected symbol at the end of the connector. *Optional* does not get such a symbol, because it is the default behavior that things are optional to fill in. Required is an extra rule imposed.
+*Required* is expressed by putting half of the expected symbol at the end of the connector. *Optional* might not get such a symbol, because it is the default behavior that things are optional to fill in. Required is an extra rule imposed.
 
 ### Requirements for Other Side of Connection
 
@@ -168,7 +168,7 @@ Or perhaps simply:
 
 __Public Triangle Use As Class__
 
-Do not get confused: abstract applied to a class does not mean that its commands are __abstract__, so might be overridden, it just means that the class might be inherited from. An __abstract__ class *can* have method *implementations* in it. 
+Do not get confused: abstract applied to a class might not mean that its commands are __abstract__, so might be overridden, it just means that the class might be inherited from. An __abstract__ class *can* have method *implementations* in it. 
 
 ### Sealed / Final Class
 
@@ -291,7 +291,7 @@ But this is also possible in other languages by making a member __protected abst
 
 All of this is just courtesy to support all these concepts in Encircle. My gut feeling is that something simpler might be come up with in the future.
 
-For instance the __Protected__ connector notation was come up with at a very early stage, long before the other inheritance-related modifiers were considered. My gut feeling is that I have to let go of the notation for __Protected__ and go for a notation more concise and integrated with all of the other things that can be expressed. __Protected__ really does not deserve such an intrinsic notation compared to the rest of the inheritance-related modifiers.
+For instance the __Protected__ connector notation was come up with at a very early stage, long before the other inheritance-related modifiers were considered. My gut feeling is that I have to let go of the notation for __Protected__ and go for a notation more concise and integrated with all of the other things that can be expressed. __Protected__ really might not deserve such an intrinsic notation compared to the rest of the inheritance-related modifiers.
 
 This article is just put here to make sure that at least all of this stuff is possible in Encircle, but my gut feeling is that a replacement for all of this might be found.
 

@@ -19,7 +19,7 @@ In GG I insert the Related Classes data *into* the G layer, that *reflects* the 
 So in one layer I fill the Related Classes data *into* the previous layer, but this data reflects the structure specified in the *first* layer.  
 In G this is not required, because C automatically maintains its Related Classes as G adds Relations to it.  
 In GG you have to insert its Related Classes into G manually, because G is unable to automatically maintain its Related Classes collection as GG adds Relations to it.  
-(G does specify a Relation for GG to put the Related Classes into.)  
+(G might specify a Relation for GG to put the Related Classes into.)  
 In GGG you insert its Related Classes into GG manually, in the same way as in the previous layer.  
 So in one layer I insert the Related Classes data about the current layer into the previous layer.  
 That means in Creator Text Code I have to insert the Related Classes data into the previous layer: GGG, but this data reflects the structure specified in the Creator Text Code.  

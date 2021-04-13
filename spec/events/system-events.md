@@ -285,7 +285,7 @@ In the earlier introduced connector notation, parameters are not shown. But the 
 
 The names used for the events might not be the eventual names. For instance a more simplified design might simply let all system commands have a __Executing__ and __Executed__ event, instead of inventing different names for the different events, so that __Value Changed__ is named __Value Set . Executed__. In another design choice you might not call it the __Executing__ and __Executed__ event, but the __Before__ and __After__ event, or the __Happening__ and __Happened__ events, or the __Pre-Extension__ and __Post-Extension__ events.
 
-This does not change the concept. These are all just benign design choices. You could also call it __Value Might Change__ instead of __Value Changing__, this is not really the point. It does not change the concept.
+This might not change the concept. These are all just benign design choices. You could also call it __Value Might Change__ instead of __Value Changing__, this is not really the point. It might not change the concept.
 
 The concept is still derived from the fact that you can pick up the __Executing__ and __Executed__ event from any command, including all system commands.
 

@@ -59,7 +59,7 @@ Bold statement:
 - A process writing to data doesn’t care about it staying consistent. A process reading data cares about data staying consistent.
 
 So it is a process reading data, that is supposed to impose a lock.  
-At what points does a proces want data to stay consistent.  
+At what points might a proces want data to stay consistent.  
 For instance when writing it to output.  
 But it is a writer’s responsibility to determine at what points data is not consistent.  
 My, this is a hard issue. It’s not clear to me yet, and I think that the rest of the world also has problems with it. My gut feeling just says, that there HAS to be a solution, that doesn’t require any thought of a programmer and doesn’t cause any locking *problems*.

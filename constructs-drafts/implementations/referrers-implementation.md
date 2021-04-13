@@ -12,9 +12,9 @@ The __Referrers__ coding aspect extends the system interface of any related obje
 
 The __Referrers__ coding aspect also adds a __Referrers__ list to every object. An *object* stores the list of referrers, but a *symbol* can also store its own list of referrers if it is a pointer *pointed to*. Th  __Referrer__ list’s __Add__ method might return the added item’s position in the list, so it can be recorded by the __Referrer__ as a sub-object’s __Referrer ID in Object__.
 
-If an object does not support the aspect of __Referrers__, then it might not have a __Referrers__ list.
+If an object might not support the aspect of __Referrers__, then it might not have a __Referrers__ list.
 
-An object, that does not support the aspect of __Referrers__, also might not register itself as a referrer in objects that it references. So that might make the object sort of stealthy, and not known to the objects that it references.
+An object, that might not support the aspect of __Referrers__, also might not register itself as a referrer in objects that it references. So that might make the object sort of stealthy, and not known to the objects that it references.
 
 ### Diagrams
 

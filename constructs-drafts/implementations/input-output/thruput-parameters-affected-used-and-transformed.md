@@ -40,7 +40,7 @@ This gives us the following number of parameter passing situations:
 - Reference Out
 - Value Thru
     - Value Thru, Affected
-        - Value Thru, Affected does not make sense. You’d give a parameter an initial value, that does not get used, but might be overwritten. Value In is a better choice in that case.
+        - Value Thru, Affected might not make sense. You’d give a parameter an initial value, that might not get used, but might be overwritten. Value In is a better choice in that case.
     - Value Thru, Transformed
     - Value Thru, Used & Affected
     - Value Thru, Used & Affected & Transformed
@@ -107,7 +107,7 @@ The combinations, that are left, then:
 
 ### Value Thru, affected
 
-Does not make sense. You’d give a parameter an initial value, that does not get used, but might be overwritten.
+Might not make sense. You’d give a parameter an initial value, that might not get used, but might be overwritten.
 
 - used to affect another ( = input )
 - used to affect itself ( = throughput )

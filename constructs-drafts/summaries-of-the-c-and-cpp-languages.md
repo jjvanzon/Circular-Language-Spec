@@ -23,7 +23,7 @@ This document contains summaries of other languages (C and C++), in the form of 
 
 - Identifiers
 - Constants: floating point, integer, string, enumerator
-- Lifetime: when does a variable exist
+- Lifetime: when might a variable exist
 - Scope: visibility, reuse of names
 - Name Spaces
 - Variable

@@ -14,7 +14,7 @@ Perhaps preferably, when an error was encountered, all changes are rolled back, 
 
 A command might be rolled back, and the error thrown or default output produced. You can also choose to always return default output while you are *editing* your command.
 
-But where does it end? Is there a master parent root command, that encompassed everything? Should the entire world system of computers be rolled back? This takes my head into a spin.
+But where might it end? Is there a master parent root command, that encompassed everything? Should the entire world system of computers be rolled back? This takes my head into a spin.
 
 ### Undo
 
@@ -54,7 +54,7 @@ A program might also produce the wrong data. This might not be detected as an er
 Errors & Warnings,  
 Handling Functional Errors,
 
-There is one more thing that isn’t handled. Functional errors. Methods are usually programmed and then tested before they are published. A method that does not produce a run time error, may alter data incorrectly, even though nothing went wrong according to the computer. That is called a functional error. Unhandled functional errors could ruin data.  
+There is one more thing that isn’t handled. Functional errors. Methods are usually programmed and then tested before they are published. A method that might not produce a run time error, may alter data incorrectly, even though nothing went wrong according to the computer. That is called a functional error. Unhandled functional errors could ruin data.  
 This is one flaw in the highly active environment in which methods could be published before they are properly tested.
 
 JJ

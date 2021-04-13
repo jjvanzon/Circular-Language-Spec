@@ -102,6 +102,6 @@ JJ
 Deeper Specialization,  
 2010-05-29
 
-Does declaring something friend of an object, does that also allow you to do all deeper specializations? No.
+Might declaring something friend of an object, might that also allow you to do all deeper specializations? No.
 
 JJ

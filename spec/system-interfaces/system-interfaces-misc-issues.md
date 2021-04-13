@@ -38,7 +38,7 @@ Objects are never directly accessed. They are always floating around somewhere y
 
 ![](images/5.%20System%20Objects%20Misc%20Issues.001.png)
 
-The smaller, contained circles are *references* to objects, even though the bigger circle seems to be the sole container of the objects themselves. An object does not really contain sub-objects. An object contains pointers to its sub-objects. Even when the object seems the sole container of the other objects, the other objects are really only referenced. You do not see the actual object. You are only seeing references to it.
+The smaller, contained circles are *references* to objects, even though the bigger circle seems to be the sole container of the objects themselves. An object might not really contain sub-objects. An object contains pointers to its sub-objects. Even when the object seems the sole container of the other objects, the other objects are really only referenced. You do not see the actual object. You are only seeing references to it.
 
 Another symbol can start referring to the same object, making the object all of a sudden not part of a unique container anymore.
 
@@ -60,7 +60,7 @@ In reality the objects do not move at all. They are physically stored in the sam
 
 Even when you *create* an object, you are not directly in touch with the object. The object is immediately assigned to an object reference. Also: when you assign a *value* to an object, you do not assign the value directly to the object, but you assign it through an object reference.
 
-Each object reference gets its own identifier, even when an object reference is __Nothing__. An object itself, does not have an identifier. An object can be given a __Name__ attribute, though.
+Each object reference gets its own identifier, even when an object reference is __Nothing__. An object itself, might not have an identifier. An object can be given a __Name__ attribute, though.
 
 ### System Command Extension
 
@@ -98,7 +98,7 @@ Even through the retrieval of pressure could be made a command with a parameter,
 
 You can use a related object for that. A related object has a system interface, that allows you to let the eventual object it displays be determined by a procedure. The system interface controls what is returned as the related object. You can extend the __Get Value__ and __Set Value__ system commands. Encircle might allow you to be able to add extra parameters to system commands, or add extra sub-objects to a system aspect, such as the __Value__ aspect, creating a single parameter for both __Get Value__ and __Set Value__ at the same time, and Encircle should also allow you to add sub-objects to the whole system interface, to give the retrieval and assignment of any aspect the same parameter. So it is not really the object itself, that gets a parameter, but the related object, that gets a parameter. An object *reference* gets a parameter. That is why the parameter needs to be part of the system interface.
 
-Because you can add a parameter to the whole system interface which extends every system command with a parameter, Encircle should supply the capability to select which system commands actually get extended with the same parameter, and whether the __Time__ parameter is required or optional. __Time__ is a sub-object of the related object’s system interface, so it is not really a parameter of a command. However, it does extend the system commands with a __Time__ parameter, so a sub-object of a system interface is always called a parameter, but it is called a parameter of a *related* object instead of a parameter of a command.
+Because you can add a parameter to the whole system interface which extends every system command with a parameter, Encircle should supply the capability to select which system commands actually get extended with the same parameter, and whether the __Time__ parameter is required or optional. __Time__ is a sub-object of the related object’s system interface, so it is not really a parameter of a command. However, it might extend the system commands with a __Time__ parameter, so a sub-object of a system interface is always called a parameter, but it is called a parameter of a *related* object instead of a parameter of a command.
 
 Adding parameters to the system interface of a related object or extensive extension of system commands is a way to let a retrieval procedure be represented by an object instead of a command.
 
@@ -110,7 +110,7 @@ A query is also an example of a related object or related list with an extended 
 
 #### Diagram Notation
 
-Default system commands can be called with an easy notation, that does not show the system command definition:
+Default system commands can be called with an easy notation, that might not show the system command definition:
 
 ![](images/5.%20System%20Objects%20Misc%20Issues.007.png)
 
@@ -149,9 +149,9 @@ Objects can have references to other objects. A referenced object may not aware 
 
 `The*` referrers `are not* the*` parents `containing the*` references to `the*` object, `but* the*` referrers `are the*` *references* to `the*` object `themselves`.
 
-`When*` a related item `is set to point` to a `certain` object, `the*`  __Related Item  .  Object  .  Set__  command `might` update `the*` target’s list of __Referrers__. `So the*` *referrers* `update the*` target’s __Referrers__ list. `The*` referenced object `does not*` update `the*` __Referrers__ list `itself`.
+`When*` a related item `is set to point` to a `certain` object, `the*`  __Related Item  .  Object  .  Set__  command `might` update `the*` target’s list of __Referrers__. `So the*` *referrers* `update the*` target’s __Referrers__ list. `The*` referenced object `might not*` update `the*` __Referrers__ list `itself`.
 
-`The*` __Referrers__ list `consists` of references *back* to `the*` referrers, `but*` that `does not* mean the*` object `in turn becomes` a referrer of `the*` referrer `again`.
+`The*` __Referrers__ list `consists` of references *back* to `the*` referrers, `but*` that `might not* mean the*` object `in turn becomes` a referrer of `the*` referrer `again`.
 
 An object `can* have` a referrers list, `but*` an object reference, `so` a related item or related list item (see `the*` *System Interfaces* articles), `can*` also `have` its `own` referrers list for references that `refer` to references.
 
@@ -235,9 +235,9 @@ As `mentioned` in `the*` article *Referrers*, it `is not* clear yet` under which
 
 #### Referrers Versus Related Objects
 
-Referrers `are` handy, `when* so many` classes relate to another class, that `the*` other class does `not*` want to maintain a separate list for `each` class that links to it.
+Referrers `are` handy, `when* so many` classes relate to another class, that `the*` other class might `not*` want to maintain a separate list for `each` class that links to it.
 
-It `is` also handy for `when*` a class `can't*` be aware of its related classes, `so can* not*` automatically get a relation back to classes, that want to link to it. In that case `the*` other class `can* not*` establish a dual relation with `the*` remote class, probably, `because*` it does `not* have` permission to alter `the*` remote class. Or `the*` remote class denies dual relationships to it altogether.
+It `is` also handy for `when*` a class `can't*` be aware of its related classes, `so can* not*` automatically get a relation back to classes, that want to link to it. In that case `the*` other class `can* not*` establish a dual relation with `the*` remote class, probably, `because*` it might `not* have` permission to alter `the*` remote class. Or `the*` remote class denies dual relationships to it altogether.
 
 To make `the*` remote class or object aware of its referrers anyway, `you* can*` let it support `the*` referrers concept.
 
