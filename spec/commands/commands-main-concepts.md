@@ -28,37 +28,48 @@ __Contents__
     - [Executable Command Synonyms](#executable-command-synonyms)
     - [Command Call Synonyms](#command-call-synonyms)
     - [Command Reference Synonyms](#command-reference-synonyms)
-- [Loose Ideas](#loose-ideas)
-    - [Command Definition Compared to Objects](#command-definition-compared-to-objects)
+- [`<< already covered >>`](#-already-covered-)
     - [Inactive Command](#inactive-command)
-    - [Command Call Compared to Objects](#command-call-compared-to-objects)
-    - [Command Call Behavior](#command-call-behavior)
-    - [Command Reference Behavior](#command-reference-behavior)
-    - [Command Reference Pointer to Pointer Situations](#command-reference-pointer-to-pointer-situations)
     - [Command Reference Edge Cases](#command-reference-edge-cases)
     - [Clause](#clause)
         - [Concept](#concept)
         - [Diagram Notation](#diagram-notation)
     - [Active Clause](#active-clause)
         - [Concept](#concept-1)
+    - [Executables & Executions](#executables--executions)
+    - [Public Inactive Clause `=` Command `Out` Parameter](#public-inactive-clause--command-out-parameter)
+- [`<< commands compared to objects >>`](#-commands-compared-to-objects-)
+    - [Command Definition Compared to Objects](#command-definition-compared-to-objects)
+    - [Command Call Compared to Objects](#command-call-compared-to-objects)
+    - [Command Call Behavior](#command-call-behavior)
+    - [Command Reference Behavior](#command-reference-behavior)
+    - [Active Clause Behavior](#active-clause-behavior)
     - [Commands Compared to Objects](#commands-compared-to-objects)
         - [Commands Anywhere](#commands-anywhere)
             - [Diagram Notation](#diagram-notation-1)
         - [Resolution When `Not Allowed` For Commands](#resolution-when-not-allowed-for-commands)
+    - [Reading & Writing Parameters](#reading--writing-parameters)
+    - [Exchangeability Between Commands & Objects](#exchangeability-between-commands--objects)
+    - [Command Definition Analogy to Classes](#command-definition-analogy-to-classes)
+- [`<< creation behavior of commands >>`](#-creation-behavior-of-commands-)
+    - [Command Call Behavior](#command-call-behavior-1)
+    - [Clause Creation Behavior](#clause-creation-behavior)
+    - [Sub-Commands](#sub-commands)
+    - [Reading & Writing Parameters](#reading--writing-parameters-1)
+    - [Execute Once](#execute-once)
+- [`<< details >>`](#-details-)
     - [Commands Edge Cases](#commands-edge-cases)
         - [Changing Inactive to Executable](#changing-inactive-to-executable)
             - [Diagram Notation](#diagram-notation-2)
-    - [Sub-Commands](#sub-commands)
-        - [Sub-Commands in a Diagram](#sub-commands-in-a-diagram)
+    - [Sub-Commands in a Diagram](#sub-commands-in-a-diagram)
     - [Command References Inside Commands](#command-references-inside-commands)
-    - [Executables & Executions](#executables--executions)
+    - [Executables & Executions](#executables--executions-1)
         - [Diagram Notation](#diagram-notation-3)
-    - [Public Inactive Clause `=` Command `Out` Parameter](#public-inactive-clause--command-out-parameter)
-        - [Diagram Notation](#diagram-notation-4)
-    - [Reading & Writing Parameters](#reading--writing-parameters)
-    - [Exchangeability Between Commands & Objects](#exchangeability-between-commands--objects)
-    - [Execute Once](#execute-once)
-    - [Command Definition Analogy to Classes](#command-definition-analogy-to-classes)
+- [`<< explains other technology >>`](#-explains-other-technology-)
+- [`<< pointers >>`](#-pointers-)
+    - [Command Reference Pointer to Pointer Situations](#command-reference-pointer-to-pointer-situations)
+- [`<< parameters >>`](#-parameters-)
+- [`<< basic diagram elements >>`](#-basic-diagram-elements-)
     - [No Dashed Squares?](#no-dashed-squares)
 
 ### Introduction
@@ -451,95 +462,19 @@ Using the constructs for commands from Encircle, it may seem circumstantial whet
 - method reference
 - delegate
 
-### Loose Ideas
-
-#### Command Definition Compared to Objects
-
-`<< commands compared to objects >>`  
-A command object might have a similar structure as its definition, but not necessarily the same data. Values might change for each individual command object. *Which* objects are referenced might also be different for each individual command object. But initially the command object might be an exact replica of the definition. The definition’s attribute values and object references might only function as a default.
+### `<< already covered >>`  
 
 #### Inactive Command
 
 `<< already covered >>`  
 It could be used as a prototype for another command.
 
-#### Command Call Compared to Objects
-
-`<< commands compared to objects >>`  
-A command call might be like an instantiation of a command definition. A command call might be an individual object with something similar to a class reference to another command. There might be an analogy between calls to a definition and objects of a class, with an addition, that a call might be *executable*.
-
-A command call might select its command definition with a *class* redirection, because the definition might be like the command call’s *prototype*, and the call may always be its own individual object for which the command definition may be the prototype.
-
-#### Command Call Behavior
-
-`<< commands compared to objects >>`  
-Initially, a call might be sort of a copy of its definition. Data of the command definition might just be default values. Data of a call object might be changed before it might run and change while it runs. What data of a command might be changed or not, might be covered later.
-
-`<< creation behavior of commands >>`  
-At first a command call might be sort of asleep. That might be when there is a chance to set its parameters. After that the command call might be run.
-
-`<< detail >>`  
-Expected behavior might be that a command call might only run once.
-
-`<< creation behavior of commands >>`  
-If the parent command runs it might automatically executes the calls inside it.
-
-`<< detail >>`  
-When a call might be placed directly inside an *object,* it might* be a question what might actually happen to it. It may be an idea, that the command might only be run manually. Another idea might be, that those calls might run just after the object was created (perhaps a bit like constructors from object oriented programming).
-
-`<< commands compared to objects >>`  
-Because `the` definition `is the` prototype of `the` call, and `not the same` object as `the` call, a dashed class line `needs to` be used to point out `the` definition of a call.
-
-#### Command Reference Behavior
-
-`<< commands compared to objects >>`  
-A command reference might be achieved with *object* redirection.
-
-`<< detail >>`  
-A command reference may commonly be inactive. But a command reference might also be active.
-
-`<< explains other technology >>`   
-`The handy thing` about command reference, `is` that it `makes you able to keep` the operation `to execute` variable. `The` target of `the` command reference `is` variable. When `you *call*` a command reference, then `the` target of `the` command reference `determines` which command `is` called. `So calling` a command reference `means` calling a variable command definition.
-
-`<< commands compared to objects >>`  
-A command reference `represents the same` object as `the` object `pointed to`. `So the` command reference’s contents `are the exact same` objects as that of `the` command object it `points to`.
-
-`<< detail >>`  
-`Both the` command reference and its target `can` be `either` active or inactive.
-
-`<< detail >>`  
-An *active* reference to an *inactive* command `might not` be executed. `The` `final` target of object redirections `is the` object itself, and when it `is` inactive, `the` command object `can not` be executed, `but only function` as a prototype.
-
-`You can not` execute an *active* command object through an *inactive* command reference `either`. But an active reference to an inactive reference to an active command `*can*` be executed.
-
-#### Command Reference Pointer to Pointer Situations
-
-`<< move >>`  
-A command reference `can also` redirect to `yet` another command reference, `creating` multiple command object redirections. `The` target of `the` last command reference `determines the` definition of `the` first command reference.
-
 #### Command Reference Edge Cases
-
-`<< detail >>`  
-In Encircle command references and their target commands could in theory be either inactive or executable.
-
-![](images/1.%20Commands%20Main%20Concepts.025.png)
-
-It `might not matter` whether it `is` squares or diamonds, `because the only` difference between a square and a diamond, `is` that a square `can not` be executed and a diamond `*can*`.
 
 `<< already covered >>`  
 Direction of `the` line `might` be indicated with an access mark, `unless the` line `is` going outwards:
 
 ![](images/1.%20Commands%20Main%20Concepts.026.png)
-
-`<< detail >>`  
-`You can not` execute an active command object through an inactive command reference.
-
-![](images/1.%20Commands%20Main%20Concepts.027.png)
-
-`<< detail >>`  
-But with an executable reference to an inactive reference to an executable command `you *can*` execute `the` command object `again`.
-
-![](images/1.%20Commands%20Main%20Concepts.028.png)
 
 #### Clause
 
@@ -547,21 +482,6 @@ But with an executable reference to an inactive reference to an executable comma
 
 `<< already covered >>`  
 A clause `can` be *active* or *inactive*. If it `is` active, it is like a command call, `executed` when its parent command `is` executed. If a clause `is` *inactive*, then it `is only` executed when it `is` *called*.
-
-`<< creation behavior of commands >>`  
-A clause `is always` created `as long as the` parent command `is` created. 
-
-`<< detail >>`  
-A clause `might not` redirect its definition, because then `it might` be a command call.
-
-`<< detail >>`  
-A clause `might not` redirect its object, because then `it might` be a command reference.
-
-`<< detail >>`  
-A clause `is never` situated inside an object, or `it might` not be a clause.
-
-`<< detail >>`  
-Clauses `are` like command definitions, `therefore` they `can` have parameters `just like` command definitions.
 
 ##### Diagram Notation
 
@@ -597,8 +517,59 @@ Clauses `can` have parameters, `just like` command definitions:
 `<< already covered >>`  
 An *active* clause `executes` when its parent command `is` executed.
 
+#### Executables & Executions
+
+`<< repeated >>`  
+An executable object `stands for` a potential execution.
+
+`<< repeated >>`  
+An executable object `never stands for` multiple executions, `just one` execution or `no` execution `at all`.
+
+`<< repeated >>`  
+So each execution `is` represented by its own individual executable object.
+
+#### Public Inactive Clause `=` Command `Out` Parameter
+
+`<< repeated >>`  
+*Active* clauses, command calls and active command references in parent commands `are always` private, because `you can not` reference a sub-command.
+
+But *inactive* clauses `*can*` be referenced and might be made public. If `you make` an inactive clause public, `you might` make it an __Object `Out`__ parameter: an object `produced or determined` by `the` command. A public inactive clause `might` be a command definition `produced` by another command.
+
+### `<< commands compared to objects >>`  
+
+#### Command Definition Compared to Objects
+
+`<< commands compared to objects >>`  
+A command object might have a similar structure as its definition, but not necessarily the same data. Values might change for each individual command object. *Which* objects are referenced might also be different for each individual command object. But initially the command object might be an exact replica of the definition. The definition’s attribute values and object references might only function as a default.
+
+#### Command Call Compared to Objects
+
+`<< commands compared to objects >>`  
+A command call might be like an instantiation of a command definition. A command call might be an individual object with something similar to a class reference to another command. There might be an analogy between calls to a definition and objects of a class, with an addition, that a call might be *executable*.
+
+A command call might select its command definition with a *class* redirection, because the definition might be like the command call’s *prototype*, and the call may always be its own individual object for which the command definition may be the prototype.
+
+#### Command Call Behavior
+
+`<< commands compared to objects >>`  
+Initially, a call might be sort of a copy of its definition. Data of the command definition might just be default values. Data of a call object might be changed before it might run and change while it runs. What data of a command might be changed or not, might be covered later.
+
+`<< commands compared to objects >>`  
+Because `the` definition `is the` prototype of `the` call, and `not the same` object as `the` call, a dashed class line `needs to` be used to point out `the` definition of a call.
+
+#### Command Reference Behavior
+
+`<< commands compared to objects >>`  
+A command reference might be achieved with *object* redirection.
+
+`<< commands compared to objects >>`  
+A command reference `represents the same` object as `the` object `pointed to`. `So the` command reference’s contents `are the exact same` objects as that of `the` command object it `points to`.
+
+#### Active Clause Behavior
+
 `<< commands compared to objects >>`  
 An active clause `is analogous` to an object that `might not` have a class. A *call* `is more` like an object that `*might*` have a class.
+
 
 #### Commands Compared to Objects
 
@@ -648,6 +619,164 @@ Executions `can` also be placed in a list. `No problem. You can` run `each` item
 
 When `the` command concept `imposes a rule`, that `might not apply` to normal objects, then `you might` seem `to be` able to `break that rule`. To `keep direct` conversion between an object and a command `possible without any loss` of structure, it seems to be `allowed to break any of the extra rules imposed` by commands. But in that case `the` command `might always` get `the next best` alternative behavior and a warning `might` be generated. This `keeps` conversion between objects and commands possible `without any loss of` structure.
 
+
+#### Reading & Writing Parameters
+
+`<< commands compared to objects >>`  
+A command definition’s parameter values `are` public, `so` if `you can` reach `the` definition, `you can basically` change its parameter values, and `mess about` with them `all you want`. This `needs to be` access controlled, but how this `should` be done `is not yet determined`.
+
+`<< parameters >>`  
+Details about parameters `can` be found in `the` *Parameters* articles.
+
+#### Exchangeability Between Commands & Objects
+
+`<< commands compared to objects >>`  
+In some programming languages, commands might not be exchangeable with objects, but be totally separate constructs. But in Encircle, commands could be seen as objects, that just happen to be executable.
+
+Using some programming languages a process might be implemented as a procedure. Sometimes a procedure might become more complex. It might be an option to then rewrite a procedure to an object, whose purpose could be to execute that procedure. This object may then hide complexity of the input and output better, and might better hides the complexity of the procedure itself. An object in some programming languages might offer a way to split up a procedure into separate steps, without seeing that on the outside. Turning a procedure into an object may make linking to it more flexible. For instance you might plug a new process into an already existing system, that was not aware of this procedure. That might not be easily possible, unless you turn a procedure into an object.
+
+In Encircle though, procedures might be considered an object as is, without rewriting anything. The only difference might be that this object has the special property, that it might be *executable*.
+
+In the Encircle notation, a command could have complexity hiding and linking possibilities, just like a 'normal' object. A command might for instance also *inherit* a base procedure from another command, just to name something.
+
+A command could be structured similarly as an object. Perhaps that takes away the argument that using just procedures might be a less structured way of programming than using objects. A command might already be an object, that represents a process. It may looks like a command, but might have the capabilities of an object.
+
+In that philosophy, commands might be *executable objects*.
+
+#### Command Definition Analogy to Classes
+
+`<< commands compared to objects >>`  
+Commands with `the same` definition `contain the same` list of attributes, related items and related lists.
+
+There `is` a `complete` analogy between a command’s definition and `the` class of an object.
+
+`Anything` that `applies` to classes, also `applies` to command definitions.
+
+### `<< creation behavior of commands >>`  
+
+#### Command Call Behavior
+
+`<< creation behavior of commands >>`  
+At first a command call might be sort of asleep. That might be when there is a chance to set its parameters. After that the command call might be run.
+
+`<< creation behavior of commands >>`  
+If the parent command runs it might automatically executes the calls inside it.
+
+#### Clause Creation Behavior
+
+`<< creation behavior of commands >>`  
+A clause `is always` created `as long as the` parent command `is` created. 
+
+
+#### Sub-Commands
+
+`<< details >>`  
+`<< broader perspective >>`  
+`<< already covered >>`  
+> (in chapter "Introduction" and article "Creation Behavior of Commands")
+
+`<< move >>`  
+> (to article "Creation Behavior of Commands")
+
+A parent command `automatically executes` its sub-commands. After a sub-command `completes, the` process `returns` to `the` parent command, which `might` then continue, `executing the` next sub-command.
+
+Inside a command, `usually just` more commands `are` invoked.
+
+There `are only a few` commands that `do` something other than execute other commands. Those `are special` commands, that `perform` a machine instruction: an operation that `is` executed by `the` CPU, `the` central processing unit of `the` computer.
+
+On top of those `special` commands, a `few basic` commands exist, like __If__’s and __For__ loops, that control `the` flow of a program, making `the` next command to call dependent on a condition.
+
+But `basically`, a command `just calls` more commands. Machine instructions, arithmetic operators, comparative and Boolean algebra, assignments, and execution control statements such as __If__ and __For__, `are` *`all` just commands*.
+
+`<< broader perspective >>`
+Apart from sub-commands, a command `can` also contain data.
+(Inactive clauses and inactive command references for instance are also considered data, and `are` not sub-commands, because they `do not` execute.)
+
+#### Reading & Writing Parameters
+
+`<< creation behavior of commands >>`  
+Before a command `is` run `you can mess about` with `the` parameters `all you want`.
+
+During `the` execution of a command `you can not` read or write `anything`.
+
+After a command `has` executed, `you can not` change `the` parameters, `just out of practical reasons`, because it `is more practical` for `the` parameters to `keep` visualizing `the` state they `were` in after `the` command `was` run.
+
+- Before execution `you can` read and write.
+- During execution `you can not` read or write.
+- After execution `you can` only read.
+
+
+#### Execute Once
+
+`<< creation behavior of commands >>`  
+`<< details >>`  
+a command object might only execute *once*. A command object may represent a single execution. An execution might be created and dormant until it might be run. This might be a chance to set the input of the command. After a command was run, the execution might stay created while it may still be referenced, so output might be read, until `everybody` might be done with it. When the executable object might not be referenced anymore, it might be destroyed. A command object might not be executed twice: to run a command again, a new command object might be created, that may have the same *definition*. In an attempt to execute the same command symbol twice, what might happen instead, is that the old object may be released, and a new object could be created in its place. A reason why a command object might only be executed once, may be that this might give all the referrers a chance to read `the` execution’s output, `whenever` they want, `without` it `being` overwritten by new output. A command object `stays` created for `as long as` it `is being` referenced, so `everybody can` read `the` output of `the` command. `The` command object `might only` be `destroyed` when `nothing refers` to it `anymore`.
+
+### `<< details >>`
+
+`<< detail >>`  
+Expected behavior might be that a command call might only run once.
+
+`<< detail >>`  
+When a call might be placed directly inside an *object,* it might* be a question what might actually happen to it. It may be an idea, that the command might only be run manually. Another idea might be, that those calls might run just after the object was created (perhaps a bit like constructors from object oriented programming).
+
+`<< detail >>`  
+A command reference may commonly be inactive. But a command reference might also be active.
+
+`<< detail >>`  
+`Both the` command reference and its target `can` be `either` active or inactive.
+
+`<< detail >>`  
+An *active* reference to an *inactive* command `might not` be executed. `The` `final` target of object redirections `is the` object itself, and when it `is` inactive, `the` command object `can not` be executed, `but only function` as a prototype.
+
+`You can not` execute an *active* command object through an *inactive* command reference `either`. But an active reference to an inactive reference to an active command `*can*` be executed.
+
+`<< detail >>`  
+In Encircle command references and their target commands could in theory be either inactive or executable.
+
+![](images/1.%20Commands%20Main%20Concepts.025.png)
+
+It `might not matter` whether it `is` squares or diamonds, `because the only` difference between a square and a diamond, `is` that a square `can not` be executed and a diamond `*can*`.
+
+`<< detail >>`  
+`You can not` execute an active command object through an inactive command reference.
+
+![](images/1.%20Commands%20Main%20Concepts.027.png)
+
+`<< detail >>`  
+But with an executable reference to an inactive reference to an executable command `you *can*` execute `the` command object `again`.
+
+![](images/1.%20Commands%20Main%20Concepts.028.png)
+
+`<< detail >>`  
+A clause `might not` redirect its definition, because then `it might` be a command call.
+
+`<< detail >>`  
+A clause `might not` redirect its object, because then `it might` be a command reference.
+
+`<< detail >>`  
+A clause `is never` situated inside an object, or `it might` not be a clause.
+
+`<< detail >>`  
+Clauses `are` like command definitions, `therefore` they `can` have parameters `just like` command definitions.
+
+`<< detail >>`  
+Active clauses, command calls and active command references in parent commands `are always` private, because `you can not` reference a sub-command.
+
+![](images/1.%20Commands%20Main%20Concepts.052.png)
+
+But *inactive* clauses `*can*` be referenced and might be made public.
+
+![](images/1.%20Commands%20Main%20Concepts.053.png)
+
+If `you make` an inactive clause public, `you might` make it an __Object `Out`__ parameter: an object `produced or determined` by `the` command. It `might` be an __Object `Out`__ parameter, that `is` an executable object. That `might` work `just fine`.
+
+`<< details >>`  
+Only when an executable object `is actually` executed, it `is` called an execution. When an executable object `is` not executing yet, it `is still only` a *potential* execution.
+
+`<< details >>`  
+A command, that might be used as a definition, `is usually` not executable. Only `individual` calls to `the` command, that `use the` command as a definition, might be executable. If a command definition `is` executable `after all`, then it `is clearly` mentioned, that it `is` an *active* command definition, because it might be a special situation.
+
 #### Commands Edge Cases
 
 ##### Changing Inactive to Executable
@@ -683,31 +812,7 @@ If `you change` an inactive command definition to an executable command definiti
 
 then `you can all of a sudden` run it, which may overwrite `the` executable’s default output values.
 
-#### Sub-Commands
-
-`<< details >>`  
-`<< broader perspective >>`  
-`<< already covered >>`  
-> (in chapter "Introduction" and article "Creation Behavior of Commands")
-
-`<< move >>`  
-> (to article "Creation Behavior of Commands")
-
-A parent command `automatically executes` its sub-commands. After a sub-command `completes, the` process `returns` to `the` parent command, which `might` then continue, `executing the` next sub-command.
-
-Inside a command, `usually just` more commands `are` invoked.
-
-There `are only a few` commands that `do` something other than execute other commands. Those `are special` commands, that `perform` a machine instruction: an operation that `is` executed by `the` CPU, `the` central processing unit of `the` computer.
-
-On top of those `special` commands, a `few basic` commands exist, like __If__’s and __For__ loops, that control `the` flow of a program, making `the` next command to call dependent on a condition.
-
-But `basically`, a command `just calls` more commands. Machine instructions, arithmetic operators, comparative and Boolean algebra, assignments, and execution control statements such as __If__ and __For__, `are` *`all` just commands*.
-
-`<< broader perspective >>`
-Apart from sub-commands, a command `can` also contain data.
-(Inactive clauses and inactive command references for instance are also considered data, and `are` not sub-commands, because they `do not` execute.)
-
-##### Sub-Commands in a Diagram
+#### Sub-Commands in a Diagram
 
 `<< details >>`  
 > (terminology quibbles)
@@ -733,18 +838,6 @@ A command reference `is` considered data. A command reference in a parent comman
 
 #### Executables & Executions
 
-`<< repeated >>`  
-An executable object `stands for` a potential execution.
-
-`<< repeated >>`  
-An executable object `never stands for` multiple executions, `just one` execution or `no` execution `at all`.
-
-`<< repeated >>`  
-So each execution `is` represented by its own individual executable object.
-
-`<< details >>`  
-Only when an executable object `is actually` executed, it `is` called an execution. When an executable object `is` not executing yet, it `is still only` a *potential* execution.
-
 ##### Diagram Notation
 
 `<< details >>`
@@ -763,77 +856,23 @@ An executable object `never stands` for multiple executions, `just one` executio
 
 So it `is not so`, that each diamond in `the` diagram represents its own individual command execution. Each individual *command object* `represents` an individual command execution. Multiple symbols in `the` diagram `can` represent `the same` command object, but `might` converge into one symbol representing `the` object itself.
 
-#### Public Inactive Clause `=` Command `Out` Parameter
+### `<< explains other technology >>`
 
-`<< repeated >>`  
-*Active* clauses, command calls and active command references in parent commands `are always` private, because `you can not` reference a sub-command.
+`The handy thing` about command reference, `is` that it `makes you able to keep` the operation `to execute` variable. `The` target of `the` command reference `is` variable. When `you *call*` a command reference, then `the` target of `the` command reference `determines` which command `is` called. `So calling` a command reference `means` calling a variable command definition.
 
-But *inactive* clauses `*can*` be referenced and might be made public. If `you make` an inactive clause public, `you might` make it an __Object `Out`__ parameter: an object `produced or determined` by `the` command. A public inactive clause `might` be a command definition `produced` by another command.
+### `<< pointers >>`
 
-##### Diagram Notation
+#### Command Reference Pointer to Pointer Situations
 
-`<< detail >>`  
-Active clauses, command calls and active command references in parent commands `are always` private, because `you can not` reference a sub-command.
+`<< move >>`  
+A command reference `can also` redirect to `yet` another command reference, `creating` multiple command object redirections. `The` target of `the` last command reference `determines the` definition of `the` first command reference.
 
-![](images/1.%20Commands%20Main%20Concepts.052.png)
-
-But *inactive* clauses `*can*` be referenced and might be made public.
-
-![](images/1.%20Commands%20Main%20Concepts.053.png)
-
-If `you make` an inactive clause public, `you might` make it an __Object `Out`__ parameter: an object `produced or determined` by `the` command. It `might` be an __Object `Out`__ parameter, that `is` an executable object. That `might` work `just fine`.
-
-#### Reading & Writing Parameters
+### `<< parameters >>`  
 
 `<< parameters >>`  
 Whether a parameter of a command `can` be read or written `at all is` access-controlled. This access control `determines` whether a parameter `is` for instance input or output.
 
-`<< creation behavior of commands >>`  
-Before a command `is` run `you can mess about` with `the` parameters `all you want`.
-
-During `the` execution of a command `you can not` read or write `anything`.
-
-After a command `has` executed, `you can not` change `the` parameters, `just out of practical reasons`, because it `is more practical` for `the` parameters to `keep` visualizing `the` state they `were` in after `the` command `was` run.
-
-- Before execution `you can` read and write.
-- During execution `you can not` read or write.
-- After execution `you can` only read.
-
-`<< commands compared to objects >>`  
-A command definition’s parameter values `are` public, `so` if `you can` reach `the` definition, `you can basically` change its parameter values, and `mess about` with them `all you want`. This `needs to be` access controlled, but how this `should` be done `is not yet determined`.
-
-`<< parameters >>`  
-Details about parameters `can` be found in `the` *Parameters* articles.
-
-#### Exchangeability Between Commands & Objects
-
-`<< commands compared to objects >>`  
-In some programming languages, commands might not be exchangeable with objects, but be totally separate constructs. But in Encircle, commands could be seen as objects, that just happen to be executable.
-
-Using some programming languages a process might be implemented as a procedure. Sometimes a procedure might become more complex. It might be an option to then rewrite a procedure to an object, whose purpose could be to execute that procedure. This object may then hide complexity of the input and output better, and might better hides the complexity of the procedure itself. An object in some programming languages might offer a way to split up a procedure into separate steps, without seeing that on the outside. Turning a procedure into an object may make linking to it more flexible. For instance you might plug a new process into an already existing system, that was not aware of this procedure. That might not be easily possible, unless you turn a procedure into an object.
-
-In Encircle though, procedures might be considered an object as is, without rewriting anything. The only difference might be that this object has the special property, that it might be *executable*.
-
-In the Encircle notation, a command could have complexity hiding and linking possibilities, just like a 'normal' object. A command might for instance also *inherit* a base procedure from another command, just to name something.
-
-A command could be structured similarly as an object. Perhaps that takes away the argument that using just procedures might be a less structured way of programming than using objects. A command might already be an object, that represents a process. It may looks like a command, but might have the capabilities of an object.
-
-In that philosophy, commands might be *executable objects*.
-
-#### Execute Once
-
-`<< creation behavior of commands >>`  
-`<< details >>`  
-a command object might only execute *once*. A command object may represent a single execution. An execution might be created and dormant until it might be run. This might be a chance to set the input of the command. After a command was run, the execution might stay created while it may still be referenced, so output might be read, until `everybody` might be done with it. When the executable object might not be referenced anymore, it might be destroyed. A command object might not be executed twice: to run a command again, a new command object might be created, that may have the same *definition*. In an attempt to execute the same command symbol twice, what might happen instead, is that the old object may be released, and a new object could be created in its place. A reason why a command object might only be executed once, may be that this might give all the referrers a chance to read `the` execution’s output, `whenever` they want, `without` it `being` overwritten by new output. A command object `stays` created for `as long as` it `is being` referenced, so `everybody can` read `the` output of `the` command. `The` command object `might only` be `destroyed` when `nothing refers` to it `anymore`.
-
-#### Command Definition Analogy to Classes
-
-`<< commands compared to objects >>`  
-Commands with `the same` definition `contain the same` list of attributes, related items and related lists.
-
-There `is` a `complete` analogy between a command’s definition and `the` class of an object.
-
-`Anything` that `applies` to classes, also `applies` to command definitions.
+### `<< basic diagram elements >>`  
 
 #### No Dashed Squares?
 
@@ -843,6 +882,3 @@ When an *object* `is` drawn with a dashed line, then it `is only` used as a clas
 ![](images/1.%20Commands%20Main%20Concepts.054.png)
 
 This notation `might *not*` be copied to `the` concept of commands. This `is` because a command’s definition `might usually` be a square and a square `might usually` be a command’s definition, so `using` dashed lines for command definitions, `might` create an `overload` of dashed squares. So command symbols, that `are only` used as a definition, `do not` get a dashed notation.
-
-`<< details >>`  
-A command, that might be used as a definition, `is usually` not executable. Only `individual` calls to `the` command, that `use the` command as a definition, might be executable. If a command definition `is` executable `after all`, then it `is clearly` mentioned, that it `is` an *active* command definition, because it might be a special situation.
