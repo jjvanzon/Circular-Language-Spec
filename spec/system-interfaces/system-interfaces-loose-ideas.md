@@ -10,7 +10,6 @@ Loose Ideas
 
 __Contents__
 
-- [Introduction](#introduction)
 - [More Commands & Aspects](#more-commands--aspects)
 - [Extension of System Commands](#extension-of-system-commands)
 - [Extend Connectors and Connections](#extend-connectors-and-connections)
@@ -497,9 +496,7 @@ JJ
 Why do I call them Object Get and Object Set? Is that proper English...? Why don't I call then Get Object and Set Object?
 Probably because I want to mention the aspect first?
 You know what? The naming might not matter that much.
-The concepts do. A PROBLEM IS, THAT IN THE SYSTEM INTERFACE ARTICLES I MIGHT GROUP COMMANDS BY ASPECT, SO THEN THE IDENTIFIERS
-MIGHT LOOK DIFFERENT. I AM GOING TO MIGHT SYNCHRONIZE THAT
-TO THE 'OLDER' ARTICLES THEN...
+The concepts do. A PROBLEM IS, THAT IN THE SYSTEM INTERFACE ARTICLES I MIGHT GROUP COMMANDS BY ASPECT, SO THEN THE IDENTIFIERS MIGHT LOOK DIFFERENT. I MIGHT SYNCHRONIZE THAT TO THE 'OLDER' ARTICLES THEN...
 
 - I misspelled Existence. I spelled it as Existance.
 - Rename the Execute aspect to the Execution aspect.

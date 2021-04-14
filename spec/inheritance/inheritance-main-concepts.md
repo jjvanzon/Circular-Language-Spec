@@ -9,7 +9,7 @@ Main Concepts
 __Contents__
 
 - [Introduction](#introduction)
-- [Main Concepts](#main-concepts-1)
+- [Main Concepts](#main-concepts)
 - [Class Inheritance](#class-inheritance)
 - [Object Inheritance](#object-inheritance)
 - [Interface Inheritance](#interface-inheritance)
@@ -102,7 +102,7 @@ But *class* inheritance is also possible for lists, in case of which the lists i
 
 This behavior is not as intuitive as object list inheritance.
 
-For an explanation about how different list objects themselves, such as linked list and stack, can inherit from each other, see the article *List Concept*. The main idea is that you might might open up the system interface for that.
+For an explanation about how different list objects themselves, such as linked list and stack, can inherit from each other, see the article *List Concept*. The main idea is that you might open up the system interface for that.
 
 The following might be something you could get confused about. A normal object is also a *list* of members. However one object’s inheriting from another object might not cause the same behavior as list inheritance: extra members are not added to the derived object when members are added to the base object. So do not get confused over this.
 

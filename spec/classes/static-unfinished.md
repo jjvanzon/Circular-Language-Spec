@@ -83,7 +83,7 @@ It is possible for a variable to be declared inside a class, the class aspect of
 I guess static where a class defines a variable, the value of which is changeable by the objects, but the object might not have its own copy of the variable, they share the same variable and value, is something defined static but Public to the objects.  
 I am getting into the static stuff too much now.  
 The thing is: in most object oriented languages it is fixed and unchangeable inside the language which constructs are which type of static, while in Encircle everything is variable unless you fix it.  
-I am mixing up the concepts of Static and Private here: both might do with fixing something, limiting access to something, but I fail to understand which is which. That is because I have not worked out the concept of Static yet.
+I am mixing up the concepts of Static and Private here: both might have to do with fixing something, limiting access to something, but I fail to understand which is which. That is because I have not worked out the concept of Static yet.
 
 \> One assumption specifically is wrong: that the class always defines certain constructs, that an object can not change. This also counts for interfaces, which are basically the same as classes but only for the public part of an object.
 

@@ -459,7 +459,7 @@ are a programming construct of an importance equal to that of procedures.
 
 In Encircle it is the same way:
 
-relations and aspects are programming constructs of equal importance, but you do not might use them. Nevertheless, they are so present as a programming construct, that you start to use them anyway.
+relations and aspects are programming constructs of equal importance, but you might not use them. Nevertheless, they are so present as a programming construct, that you start to use them anyway.
 
 Actually a lot of programmers took a long time to realize what they need classes for to program with.
 
@@ -653,7 +653,7 @@ Take the following question: There is a function. What other functions use it, a
 This is a question that often needs to be answered when you analyse existing computer code. And this is a difficult question to answer. In most programming environments answering this question requires extensive analysis of the code, even when you have a tool for searching references. It gets worse if there the involved functions are not only used internally by a program, but also used by yet again other programs.
 
 The diagram notation of NCL actually makes this otherwise difficult to extract information visible instantly. This is a big benefit of the NCL.  
-You might might use coloring to make the information pop out of the diagram, but using the diagram notation it is evident how to easily highlight this.
+You might use coloring to make the information pop out of the diagram, but using the diagram notation it is evident how to easily highlight this.
 
 JJ
 
@@ -781,7 +781,7 @@ There are more definitions to low coupling:
 - Using a mutual interface for multiple types of objects, so that the consumer is not bound to the classes, but to the interface.
 - To prevent having to change n things, you let them refer to a bridging 1 thing, that connects to the targeted resource.
 - You can separate things into layers so that people of different disciplines can work on the layer they specialized in.
-- When you want to keep storage separated from presentation, possibly allowing multiple representations of the same data, and you want to be able to change the data model. (At one point the data model changes so much you can not  prevent the interface of the bridge to change or even the user interface to change, or you are going to might keep your data model backwards compatible, something that you were trying to work around with the bridge.)
+- When you want to keep storage separated from presentation, possibly allowing multiple representations of the same data, and you want to be able to change the data model. (At one point the data model changes so much you can not  prevent the interface of the bridge to change or even the user interface to change, or you might keep your data model backwards compatible, something that you were trying to work around with the bridge.)
 
 So simply trying to make things that are actually independent on each other, sort of independent of changes to the dependency, you build a bridge between them. It might require additional code, additional connections and wiring, adds complexity. I might not recommend putting a bridge between any two objects. That might create incredible complexity. How is that going to help you change the code? So you might apply this when it is useful.
 

@@ -9,7 +9,7 @@ Assignment in Text Code
 __Contents__
 
 - [Introduction to Assignment in Text Code](#introduction-to-assignment-in-text-code)
-- [Assignment in Text Code](#assignment-in-text-code-1)
+- [Assignment in Text Code](#assignment-in-text-code)
 - [Value Assignment in Text Code](#value-assignment-in-text-code)
 - [Object Assignment in Text Code](#object-assignment-in-text-code)
 - [Class Assignment in Text Code](#class-assignment-in-text-code)
@@ -39,7 +39,7 @@ B  .  Object  .  Set  =  A  .  Object  .  Get
 
 (hypothetical notation, not a real, valid notation)
 
-When you use an assignment symbol (__=__), you do not might display the words __Get__ and __Set__, because it is obvious, that the right operand requires a __Get__ and the left operand requires a __Set__.
+When you use an assignment symbol (__=__), you might not display the words __Get__ and __Set__, because it is obvious, that the right operand requires a __Get__ and the left operand requires a __Set__.
 
 ```
 B  .  Object  =  A  .  Object
@@ -47,7 +47,7 @@ B  .  Object  =  A  .  Object
 
 (hypothetical notation, not a real, valid notation)
 
-But there is no such thing as a general assignment. The above is an object assignment, that has the symbol __o=__. When you use the symbol o=, you also do not might mention __‘.  Object’__:
+But there is no such thing as a general assignment. The above is an object assignment, that has the symbol __o=__. When you use the symbol o=, you also might not mention __‘.  Object’__:
 
 ```
 B  o=  A
@@ -111,7 +111,7 @@ B  .  Other Related Item  .  Set  =  A
 
 (hypothetical notation, not a real, valid notation)
 
-When you use an assignment symbol (__=__), you do not might display the words __Get__ and __Set__, because it is obvious, that the right operand requires a __Get__ and the left operand requires a __Set__.
+When you use an assignment symbol (__=__), you might not display the words __Get__ and __Set__, because it is obvious, that the right operand requires a __Get__ and the left operand requires a __Set__.
 
 (hypothetical notation, not a real, valid notation)
 
@@ -119,7 +119,7 @@ When you use an assignment symbol (__=__), you do not might display the words __
 B  .  Other Related Item  =  A
 ```
 
-But there is no such thing as a general assignment. The above is an object reference object assignment, that has the symbol __o=->__. When you use the symbol __o=->__, you also do not might mention __‘.  Other Related Item’__:
+But there is no such thing as a general assignment. The above is an object reference object assignment, that has the symbol __o=->__. When you use the symbol __o=->__, you also might not mention __‘.  Other Related Item’__:
 
 ```
 B  o=->  A

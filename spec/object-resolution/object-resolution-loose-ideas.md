@@ -211,7 +211,7 @@ That ensures that diagram code and text code are exchangeable and can be mutuall
 Conversion / Object Resolution,  
 2009-05-12
 
-What if you have multiple possible conversion commands? One has to be selected for implicit conversion. This has to be disambiguated in that case, through object resolution or explicit conversion. You do not might do with all the conversion commands in the world, just the ones out of modules you selected.
+What if you have multiple possible conversion commands? One has to be selected for implicit conversion. This has to be disambiguated in that case, through object resolution or explicit conversion. You might not be concerned with all the conversion commands in the world, just the ones out of modules you selected.
 
 Implicit conversion is object resolution.
 

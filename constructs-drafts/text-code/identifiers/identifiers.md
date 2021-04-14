@@ -30,7 +30,7 @@ It looks much better too. But things can look even more natural: you can use spa
 Value 1  +  Value 2
 ```
 
-You’re going to might put spaces around anything: even around parenthesis characters.
+You might put spaces around anything: even around parenthesis characters.
 
 ```vb
 (  Value 1  +  Value 2  )  \*  Value 3

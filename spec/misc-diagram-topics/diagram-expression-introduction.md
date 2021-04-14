@@ -146,7 +146,7 @@ In that picture I also see, that I connect the two method interfaces inside the 
 But I made them interface lines just for clarity, because it is all about interface definitions, and now all things about interface definitions are expressed in dotted lines, and all things about class definitions are expressed in dashed lines; it is just clearer this way.  
 But might this create an ambiguity? The interface line between the interface definition in the imaginary target class and te interface definition on a site, literally might mean, that only the interface of the two objects is the same: that means: the public contents of them is the same, but the private contents are different, which means the methods have the same interface, but they are different methods, with just the same signature. That’s not what I intended to express, though. The interfaces in the sites should even have been drawn with dotted lines either, because that might imply you are only using it as an interface, while really you’re using it as a definition.
 
-The ‘wrong’ notation is just so much clearer, but it might not formally express the system correctly, because it implies two symbols only have the same interface, but really they have the same definition. But the ‘wrong’ notation of it is just so much clearer. I’m going to might invent rules that make the ‘wrong’ notation formally ok, or the ‘right’ notation more clear.
+The ‘wrong’ notation is just so much clearer, but it might not formally express the system correctly, because it implies two symbols only have the same interface, but really they have the same definition. But the ‘wrong’ notation of it is just so much clearer. I might invent rules that make the ‘wrong’ notation formally ok, or the ‘right’ notation more clear.
 
 -----
 
@@ -401,6 +401,6 @@ Expression,
 Encircle Language Spec,  
 2009-04-20
 
-You'd might integrate tooltips into the diagram, e.g. to explain what to do with an access connector.
+You might integrate tooltips into the diagram, e.g. to explain what to do with an access connector.
 
 JJ

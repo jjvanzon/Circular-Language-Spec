@@ -54,7 +54,7 @@ The object has moved from one parent to another.
 
 ![](images/5.%20System%20Objects%20Misc%20Issues.005.png)
 
-Objects are always just floating around like that. They do not might stay in a fixed spot.
+Objects are always just floating around like that. They might not stay in a fixed spot.
 
 In reality the objects do not move at all. They are physically stored in the same spot all the time, no matter where they appear to be. An object can just be freely referenced from anywhere, because objects are always accessed through references.
 

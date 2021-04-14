@@ -294,7 +294,7 @@ JJ
 
 Access Control,
 
-Even though logging into the internet gives you automatic access to certain sites, with your access cards or tickets displayed at the bottom-right corner of the screen, you might also choose to might click it in order to actually access the site. This sort of gives you the idea of actively entering something. Perhaps you want to see yourself as the user of a module, and only sometimes, when you click your access card, you get to be an author of it, and see more of its internal structure and the comments.
+Even though logging into the internet gives you automatic access to certain sites, with your access cards or tickets displayed at the bottom-right corner of the screen, you might also choose to click it in order to actually access the site. This sort of gives you the idea of actively entering something. Perhaps you want to see yourself as the user of a module, and only sometimes, when you click your access card, you get to be an author of it, and see more of its internal structure and the comments.
 
 JJ
 
@@ -314,7 +314,7 @@ However, when it is the user or site's OWN data, you might be completely open ab
 
 Then the data model stores data, that is the user's OWN data, the data model should be completely open, as far as reporting command IO to the user.
 
-You could say: an authoring company might not might expose the data model of its programs, even when it is the user's own data. But strong security with a user choice based on command IO requires the data model to be open.
+You could say: an authoring company might not expose the data model of its programs, even when it is the user's own data. But strong security with a user choice based on command IO requires the data model to be open.
 
 You might look at the belangen of the user and the author of the software: It is the software author's data model, but it is the user's own data, so why should a software author not be completely open about what it might with the user's data.
 

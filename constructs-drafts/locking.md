@@ -21,7 +21,7 @@ locking data in a highly concurrent environment.
 
 -----
 
-I just don’t know at what point to might accept data getting unlocked and from that point basically becoming volatile.
+I just don’t know at what point to accept data getting unlocked and from that point basically becoming volatile.
 
 I know it is important to lock data between certain points in time. I just don’t know when it becomes not important anymore to have it locked. But I know it is important to have it unlocked at some time again.  
 At that point there is always a point of acceptance that the data is volatile.  

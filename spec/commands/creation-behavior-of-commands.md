@@ -86,7 +86,7 @@ A parent command, that executes, automatically executes its sub-command-calls on
 
 This was the original problem:  
 When a sub-command might only be created just before it is run, there is a problem: if a sub-command is created only just before it is run, when can a parent command fill in the parameters of the *not yet created* sub-command? Parameter passings could not reference the sub-command’s parameters. That’s why before running the parent command, the sub-commands need to be created.  
-But when creating the sub-command even before it is  run, there is another problem: if sub-commands need to be created when their parent is created, the sub-commands of sub-commands might also need to be created, and their sub-commands and so on. So the whole call structure might might be created before the parent command could even run. This could even have resulted in circularities, that might make the system hang.
+But when creating the sub-command even before it is  run, there is another problem: if sub-commands need to be created when their parent is created, the sub-commands of sub-commands might also need to be created, and their sub-commands and so on. So the whole call structure might be created before the parent command could even run. This could even have resulted in circularities, that might make the system hang.
 
 The solution was, to create a call before it is run, but only the public contents, so that a parent can set the parameters. But the private contents are only created just before the command is run, which creates its sub-commands, but again only its parameters. This prevents recursive creation of the call structure, and gives command creation a neat and steady pulse. So this all makes it doable. Otherwise there could have been an endless recursive creation procedure, before any command could ever run.
 
@@ -279,7 +279,7 @@ Creating its private contents, might not create a recursive creation or anything
 
 ### No Overhead of Command Creation
 
-One of the reasons why private contents of a call are only created just before the call is run, is because this prevents overhead of creation. If you might might create the whole call structure when the great grandparent of commands is created, then this is not only a lot of work in one blow, but also, a lot of command call objects are created, that never get to run in the first place, because it only runs under certain conditions. Delayed creation of the private contents of a command call prevents this overhead of procedure creation and creates a neat and steady rate of procedure creation.
+One of the reasons why private contents of a call are only created just before the call is run, is because this prevents overhead of creation. If you might create the whole call structure when the great grandparent of commands is created, then this is not only a lot of work in one blow, but also, a lot of command call objects are created, that never get to run in the first place, because it only runs under certain conditions. Delayed creation of the private contents of a command call prevents this overhead of procedure creation and creates a neat and steady rate of procedure creation.
 
 ### No Circular Command Creation
 
@@ -333,7 +333,7 @@ But *calls inside* such a definition, only have their *public* contents are crea
 
 ### A Call in a Call Shows Privates When Running
 
-A call inside another call only contains its private content when it is actually running. If a call is not running, then you might might hop to the definition of a call to see the private contents of the command.
+A call inside another call only contains its private content when it is actually running. If a call is not running, then you might hop to the definition of a call to see the private contents of the command.
 
 Not creating a call’s private contents before it even runs, takes away discussion about when to display and when not to display a command’s private contents.
 
@@ -345,7 +345,7 @@ If a call is not running:
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.034.png)
 
-Then you might might hop to the definition of a call to see the private contents of the command.
+Then you might hop to the definition of a call to see the private contents of the command.
 
 When a call is running, you do see its private contents:
 

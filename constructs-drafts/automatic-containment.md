@@ -27,7 +27,6 @@ __Contents__
     - [Class pointers](#class-pointers)
     - [Duality of relations](#duality-of-relations)
     - [Module](#module)
-- [Loose Ideas](#loose-ideas)
 - [Automatic Containment Ideas](#automatic-containment-ideas)
 - [Esthetic reference & real reference replaces imaginary reference](#esthetic-reference--real-reference-replaces-imaginary-reference)
 - [Other](#other)
@@ -104,7 +103,7 @@ Regardless of which diagram you find prettier, the containment diagram might dis
 
 Multiple symbols in a diagram can represent the same object. In that aspect, a containment diagram might not explicitly express a single place where the object really is. It might not display where the *object* is, just where the object *references* are. Only one of the symbols should be considered the object itself, and the other symbols mere references.
 
-To determine the containment position of the actual object, you might ask yourself: what might the *real* containment level of the object be? You might might go upward in the containment hierarchy, until you find the level at which all the references are contained inside a single symbol. That is the actual containment level of the object:
+To determine the containment position of the actual object, you might ask yourself: what might the *real* containment level of the object be? You might go upward in the containment hierarchy, until you find the level at which all the references are contained inside a single symbol. That is the actual containment level of the object:
 
 ![](images/3.%20Automatic%20Containment.005.png)
 
@@ -164,7 +163,7 @@ This is solved by connecting the symbols that represent the same object together
 
 But to have a single symbol, that represents the object itself, all symbols of the same object all need to point back to a single symbol. That single symbol represents the object itself. The other symbols are mere references to the object.
 
-But where is this object placed? You might might go upward in the containment hierarchy, until you find the level at which all the references are contained inside a single symbol. That is the actual containment level of the object.
+But where is this object placed? You might go upward in the containment hierarchy, until you find the level at which all the references are contained inside a single symbol. That is the actual containment level of the object.
 
 ![](images/3.%20Automatic%20Containment.011.png)
 
@@ -337,7 +336,7 @@ In this section it is important to understand that a backward relation between *
 
 #### Module
 
-A module is there to group something into a large whole. Modules and programs are modules. A site is also a module. Anything directly inside the module can be directly referenced from anywhere within the module. That is the basic principle. However, you do not might make everything directly inside the module accessible globally. If members of a module are just publicly accessible, they are not globally accessible, they are just accessible as members of an object, and not accessible from anywhere within the module. It is also not entirely true, that everything inside the module can access the global members. You can only access global member, from members, whose fixed logical residence is inside the module. So global things can only be directly accessed from definitions, whose fixed logical residence is inside the module. Things *referenced* inside the module, whose definition are elsewhere, can not access the global members.
+A module is there to group something into a large whole. Modules and programs are modules. A site is also a module. Anything directly inside the module can be directly referenced from anywhere within the module. That is the basic principle. However, you might not make everything directly inside the module accessible globally. If members of a module are just publicly accessible, they are not globally accessible, they are just accessible as members of an object, and not accessible from anywhere within the module. It is also not entirely true, that everything inside the module can access the global members. You can only access global member, from members, whose fixed logical residence is inside the module. So global things can only be directly accessed from definitions, whose fixed logical residence is inside the module. Things *referenced* inside the module, whose definition are elsewhere, can not access the global members.
 
 A module is an object. However, it is not represented by a circle, but by a pentagon shape.
 

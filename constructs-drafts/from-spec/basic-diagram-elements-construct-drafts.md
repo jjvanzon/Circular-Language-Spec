@@ -26,7 +26,7 @@ Relations Between Symbols,
 
 If you can see object usage, you can not see class-sub-object usage.
 
-You'd might look at the usage of the sub-objects of the objects of that class, to see the class's sub-object usage. Indirectly you might be able to see the dependency on a class's sub-object.
+You might look at the usage of the sub-objects of the objects of that class, to see the class's sub-object usage. Indirectly you might be able to see the dependency on a class's sub-object.
 
 Doesn't a sub-object have a reference to the class's sub-object or might the parent object only have a reference to the class?
 

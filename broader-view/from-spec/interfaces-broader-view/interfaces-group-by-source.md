@@ -28,7 +28,7 @@ This means you get to see which site commands are defined on.
 
 If you use a command from some vague site, then the command is not reliable. If you access a command through a class, and that command is hosted elsewhere, you might know you can trust that other site.
 
-You might be aware of what site a command is from and estimate if your consider this site reliable before you run a command. You might do with the whole internet now, so you might be aware of where stuff comes. This counts for everything: commands, classes, objects, modules. You just need to be aware what site you are accessing and whether you consider it a safe source.
+You might be aware of what site a command is from and estimate if your consider this site reliable before you run a command. You might have to do with the whole internet now, so you might be aware of where stuff comes. This counts for everything: commands, classes, objects, modules. You just need to be aware what site you are accessing and whether you consider it a safe source.
 
 ### Other Thoughts
 

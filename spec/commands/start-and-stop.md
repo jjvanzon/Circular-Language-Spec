@@ -372,7 +372,7 @@ An error may cause an immediate rollback in the new system, but perhaps a progra
 
 ### Warning Execution State
 
-When debugging and something uncommon happens, the execution might be put in __Warning__ state, but this actually might not might hinder execution, so one could think of a situation in which an execution is in __Warning__ state, but still continues to run.
+When debugging and something uncommon happens, the execution might be put in __Warning__ state, but this actually might not hinder execution, so one could think of a situation in which an execution is in __Warning__ state, but still continues to run.
 
 Any object or reference line could also be put in __Warning__ state if something exceptional, but benign, is going on with it.
 

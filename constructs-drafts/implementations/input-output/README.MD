@@ -36,7 +36,7 @@ This documentation might not seem finished up yet. It seems to contains quite so
 
 - ### Command IO
 
-    - In the end, every command may have an input / output definition, that could consist of for instance reads, writes, additions and removals of data. This might not define *exactly* what the command might, but might might define what data is affected and what data is used. Users might then be directly able to see what the input and output of a program or command might be and this may offer better security, if the user can see the input / output effect of what they may be about to run. You might further secure the system if you could allow a command to only access data, that it says it needs to access, so nothing funky might run inside a program. This definition of input and output of a command might be called the *Command IO*.
+    - In the end, every command may have an input / output definition, that could consist of for instance reads, writes, additions and removals of data. This might not define *exactly* what the command might do, but might define what data is affected and what data is used. Users might then be directly able to see what the input and output of a program or command might be and this may offer better security, if the user can see the input / output effect of what they may be about to run. You might further secure the system if you could allow a command to only access data, that it says it needs to access, so nothing funky might run inside a program. This definition of input and output of a command might be called the *Command IO*.
 
 - ### Compared IO
 

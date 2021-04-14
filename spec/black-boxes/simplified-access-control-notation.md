@@ -221,7 +221,7 @@ Another fact:
 
 -----
 
-Perhaps that way the number of possible access controllers becomes more limited, so you do not might display each possible access connector: Object Get implies any kind of connector.  
+Perhaps that way the number of possible access controllers becomes more limited, so you might not display each possible access connector: Object Get implies any kind of connector.  
 Access controlling for just allowing a Class Get might not be practical either: who wants that? Who wants to only be able to access the reflective data of an object, but not the object itself?
 
 -----

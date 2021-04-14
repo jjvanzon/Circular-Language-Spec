@@ -95,7 +95,7 @@ So it is a notation where the requirements for the other end of the connection a
 
 ### Gut Feeling
 
-A gut feeling of mine is that __Protected__ and requirements for other side of connection could be made more alike, because both are about how the other end might be a triangle, but in one case that the direct reference might be a triangle, and in the other case the parent might be a triangle. So these requirements for it being a triangle might might be merged into one concept one day.
+A gut feeling of mine is that __Protected__ and requirements for other side of connection could be made more alike, because both are about how the other end might be a triangle, but in one case that the direct reference might be a triangle, and in the other case the parent might be a triangle. So these requirements for it being a triangle might be merged into one concept one day.
 
 The notation come up with for requirements for the other side of the connection may be inspiration for a notation for a more elaborate security model one day.
 
@@ -228,7 +228,7 @@ However unnecessary, you can implicitly define that a member is abstract, which 
 
 Meaning the *interface’s* *square* member has a __Public Object Set__ access connector that is __Required__.
 
-But if you want to do that, you might might do it for all members of an interface.
+But if you want to do that, you might do it for all members of an interface.
 
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.024.png)
 

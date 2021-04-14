@@ -93,7 +93,7 @@ Backward relation options:
 
 #### Public Backward Relation
 
-> Allowing __Public__ backward relations means the interface might not be stable, because extra members are created when things start pointing to an object. However, this might not might be a problem in all cases.
+> Allowing __Public__ backward relations means the interface might not be stable, because extra members are created when things start pointing to an object. However, this might not be a problem in all cases.
 
 #### Manual Backward Relations
 

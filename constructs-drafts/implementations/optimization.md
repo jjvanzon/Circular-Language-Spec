@@ -67,7 +67,7 @@ additional J Code optimizations can be gotten from this.
 
 -----
 
-Might J Code’s compilation optimizers take away bound these checks? Consider the ComponentList’s Remove method and see what the optimizer might might do to find out a safety check could go.
+Might J Code’s compilation optimizers take away bound these checks? Consider the ComponentList’s Remove method and see what the optimizer might do to find out a safety check could go.
 
 -----
 
@@ -98,7 +98,7 @@ JJ
 
 Optimization
 
-At some point you’re going to want to explain what happens physically when doing some high level stuff, so you can see if this is the optimal way to do it. But I don’t care that much right now, but at some point it might might be addressed. I might do that in J Code, Fundamental Principles, but I won’t work it out straight away. Perhaps I’d just make an article about it, where I mention that it should be studied, but I don’t want to do that straight away, and why it should be studied. How things could be non-optimal and may be optimized.
+At some point you’re going to want to explain what happens physically when doing some high level stuff, so you can see if this is the optimal way to do it. But I don’t care that much right now, but at some point it might be addressed. I might do that in J Code, Fundamental Principles, but I won’t work it out straight away. Perhaps I’d just make an article about it, where I mention that it should be studied, but I don’t want to do that straight away, and why it should be studied. How things could be non-optimal and may be optimized.
 
 JJ
 
@@ -241,7 +241,7 @@ Some instruction sequences might have the same result and are both the shortest 
 
 There might be optimization several priorities. You might want to have the fastest solution, you might to limit the heat the CPU produces, you might want the solution with the least disk access... I want to offer a general optimization which favors speed, but also other things to a certain extend, but I might keep in mind that other optimizations might also be wished.
 
-The objective is to benefit fully from assembly, but not to might bother with the downsides of it. On top of that there's added clarity by an alternative naming and forgetting about different instruction forms.
+The objective is to benefit fully from assembly, but not to be bothered with the downsides of it. On top of that there's added clarity by an alternative naming and forgetting about different instruction forms.
 
 If you take the assembly division instructions for instance then you see that certain forms are faster. Careful use of the alternative language I might make might make faster code(?). But most optimizations are done by the compiler. The amount of tricks and things you need to know to get the optimal result is far smaller than programming in assembly.
 

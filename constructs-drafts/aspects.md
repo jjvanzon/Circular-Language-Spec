@@ -9,7 +9,7 @@ Aspects
 __Contents__
 
 - [Loose Ideas](#loose-ideas)
-    - [Aspects](#aspects-1)
+    - [Aspects](#aspects)
     - [Loose Ideas](#loose-ideas-1)
     - [Aspects & Principles](#aspects--principles)
     - [More Ideas](#more-ideas)
@@ -27,7 +27,7 @@ For this I might look into the experiment 0.9 code, in which I might see what as
 -----
 
 A lot of times aspects might tap into other methods or other aspects’ methods and pre- or post-extend the method. And the pre- or post-extension might be in a specific point in the code of the method into which code is injected.  
-In experiment 0.9 there is a distinction between injecting it inside the Set’s If Value has changed or outside the Set’s If Value has actually changed. I am not sure the distinction is needed in the new version but it might might be a feature.  
+In experiment 0.9 there is a distinction between injecting it inside the Set’s If Value has changed or outside the Set’s If Value has actually changed. I am not sure the distinction is needed in the new version but it might be a feature.  
 The idea about injecting code a specific point was that this point of injection is determined by dependency on other aspects. Some parts of other aspects might either be finished or not started yet when the code of the dependent aspect is run. So pinpointing this position is done by pinpointing the dependency on another aspect and whether something has to be done before or after a part of another aspect is finished. So it is about Before or After an element of another aspect or Before or After a number of elements of a number of other aspects. That is how the position of code injection might be defined.  
 The idea is that with aspects everything is possible that is possible with code generation, only in a more structured way.  
 Aspect dependency also means that another aspect might be implemented for the dependent aspect to be active. And sometimes even certain (optional) elements of an aspect might be active in order to make a dependent aspect work. This may also might be definable.    
@@ -110,7 +110,7 @@ The first solution proposed was to simply not support the __Referrers__ aspect f
 
 If you can not stop a class from supporting __Referrers__ without stopping objects from supporting __Referrers__ at the same time, then the __Referrers__ aspect might not be widely used anymore.
 
-Therefore, you are going to might specify for a symbol or object, that it is a non-practitioner of an aspect. Derivation of objects might take over the specified aspect, but not the non-practitioner aspect.
+Therefore, you might specify for a symbol or object, that it is a non-practitioner of an aspect. Derivation of objects might take over the specified aspect, but not the non-practitioner aspect.
 
 JJ
 
