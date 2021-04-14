@@ -15,7 +15,7 @@ __Contents__
 - [Command Calls](#command-calls)
 - [Command References](#command-references)
 - [Code Blocks](#code-blocks)
-- [Code Blocks Details](#code-blocks-details)
+    - [Code Blocks Details](#code-blocks-details)
 - [Local Function](#local-function)
 - [Clauses](#clauses)
 - [Lambda Expression](#lambda-expression)
@@ -30,7 +30,6 @@ __Contents__
     - [Command Reference Synonyms](#command-reference-synonyms)
 - [Loose Ideas](#loose-ideas)
     - [Command Definition Compared to Objects](#command-definition-compared-to-objects)
-    - [Executable Commands](#executable-commands)
     - [Inactive Command](#inactive-command)
     - [Command Call Compared to Objects](#command-call-compared-to-objects)
     - [Command Call Behavior](#command-call-behavior)
@@ -282,7 +281,7 @@ because it is:
 - not a reference
 - not a definition
 
-### Code Blocks Details
+#### Code Blocks Details
 
 Code blocks might be nested even further:
 
@@ -422,6 +421,7 @@ Using the constructs for commands from Encircle, it may seem circumstantial whet
 - blue-print
 - inactive command
 - inactive command symbol
+- square
 - command definition
 - definition
 
@@ -437,6 +437,7 @@ Using the constructs for commands from Encircle, it may seem circumstantial whet
 
 - active command
 - active command symbol
+- diamond
 - executable command
 - executable command symbol
 
@@ -457,21 +458,10 @@ Using the constructs for commands from Encircle, it may seem circumstantial whet
 `<< commands compared to objects >>`  
 A command object might have a similar structure as its definition, but not necessarily the same data. Values might change for each individual command object. *Which* objects are referenced might also be different for each individual command object. But initially the command object might be an exact replica of the definition. The definition’s attribute values and object references might only function as a default.
 
-#### Executable Commands
-
-`<< synonym >>`  
-An executable command might also be called an *active command*. In
-
-`<< synonym >>`  
-A diamond shape might also be called an *active command symbol*.
-
 #### Inactive Command
 
 `<< already covered >>`  
 It could be used as a prototype for another command.
-
-`<< synonym >>`  
-A square might be a symbol for a command's being *inactive*.
 
 #### Command Call Compared to Objects
 
