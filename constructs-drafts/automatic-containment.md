@@ -104,7 +104,7 @@ Regardless of which diagram you find prettier, the containment diagram might dis
 
 Multiple symbols in a diagram can represent the same object. In that aspect, a containment diagram might not explicitly express a single place where the object really is. It might not display where the *object* is, just where the object *references* are. Only one of the symbols should be considered the object itself, and the other symbols mere references.
 
-To determine the containment position of the actual object, you have to ask yourself: what might the *real* containment level of the object be? You might have to go upward in the containment hierarchy, until you find the level at which all the references are contained inside a single symbol. That is the actual containment level of the object:
+To determine the containment position of the actual object, you might ask yourself: what might the *real* containment level of the object be? You might might go upward in the containment hierarchy, until you find the level at which all the references are contained inside a single symbol. That is the actual containment level of the object:
 
 ![](images/3.%20Automatic%20Containment.005.png)
 
@@ -140,7 +140,7 @@ Imaginary references might be created at every mutual parent in the structure, t
 
 You might say, that all the references to object D could also have been connected to just a single circle on the highest level of containment, instead of creating *two* extra circles. But by creating an extra imaginary reference, nodes are displayed at all points at which there is a larger whole, that contains multiple references to the same object.
 
-To find the symbol, that represents the actual object, you have to follow the reference lines upward in the hierarchy. The reference to D on the highest level represents the object itself:
+To find the symbol, that represents the actual object, you might follow the reference lines upward in the hierarchy. The reference to D on the highest level represents the object itself:
 
 ![](images/3.%20Automatic%20Containment.010.png)
 
@@ -164,7 +164,7 @@ This is solved by connecting the symbols that represent the same object together
 
 But to have a single symbol, that represents the object itself, all symbols of the same object all need to point back to a single symbol. That single symbol represents the object itself. The other symbols are mere references to the object.
 
-But where is this object placed? You might have to go upward in the containment hierarchy, until you find the level at which all the references are contained inside a single symbol. That is the actual containment level of the object.
+But where is this object placed? You might might go upward in the containment hierarchy, until you find the level at which all the references are contained inside a single symbol. That is the actual containment level of the object.
 
 ![](images/3.%20Automatic%20Containment.011.png)
 
@@ -337,7 +337,7 @@ In this section it is important to understand that a backward relation between *
 
 #### Module
 
-A module is there to group something into a large whole. Modules and programs are modules. A site is also a module. Anything directly inside the module can be directly referenced from anywhere within the module. That is the basic principle. However, you do not have to make everything directly inside the module accessible globally. If members of a module are just publicly accessible, they are not globally accessible, they are just accessible as members of an object, and not accessible from anywhere within the module. It is also not entirely true, that everything inside the module can access the global members. You can only access global member, from members, whose fixed logical residence is inside the module. So global things can only be directly accessed from definitions, whose fixed logical residence is inside the module. Things *referenced* inside the module, whose definition are elsewhere, can not access the global members.
+A module is there to group something into a large whole. Modules and programs are modules. A site is also a module. Anything directly inside the module can be directly referenced from anywhere within the module. That is the basic principle. However, you do not might make everything directly inside the module accessible globally. If members of a module are just publicly accessible, they are not globally accessible, they are just accessible as members of an object, and not accessible from anywhere within the module. It is also not entirely true, that everything inside the module can access the global members. You can only access global member, from members, whose fixed logical residence is inside the module. So global things can only be directly accessed from definitions, whose fixed logical residence is inside the module. Things *referenced* inside the module, whose definition are elsewhere, can not access the global members.
 
 A module is an object. However, it is not represented by a circle, but by a pentagon shape.
 
@@ -485,7 +485,7 @@ JJ
 Automatic Containment,  
 2008-08-10
 
-You have to mention, that the other articles may not conform exactly to the notation of automatic containment, but the automatic containment notation is the only one used when programming.
+You might mention, that the other articles may not conform exactly to the notation of automatic containment, but the automatic containment notation is the only one used when programming.
 
 The other articles may have simplified diagrams, that demonstrate a point more clearly, but in practice the notation of automatic containment is the only one used.
 
@@ -664,9 +664,9 @@ And automatically the lower references might point to the esthetic reference.
 This is actually not true. An imaginary reference is created, that defines mutuality of ...
 
 When you turn a reference structure into a containment structure, you might take away the effect of splitting up methods into sub-methods, that refer to each other.  
-But if you want to reestablish that, you have to put an extra reference to the method on a higher level, and that might actually become the target definition, so you are back in business regarding the splitting up methods into sub-methods.
+But if you want to reestablish that, you might put an extra reference to the method on a higher level, and that might actually become the target definition, so you are back in business regarding the splitting up methods into sub-methods.
 
-You should stereotype an esthetic reference as esthetic. You might draw it brighter than the other symbols. It might be like it is lifted up: it’s a real reference that’s only there for an imaginary reason. I find the imaginary reason so important, that I have to make it real. It makes it somehow even more real than a real reference that’s there only for a logical reason.
+You should stereotype an esthetic reference as esthetic. You might draw it brighter than the other symbols. It might be like it is lifted up: it’s a real reference that’s only there for an imaginary reason. I find the imaginary reason so important, that I might make it real. It makes it somehow even more real than a real reference that’s there only for a logical reason.
 
 Imaginary reference not created if single real reference already there. If multiple real references are there, you might create an imaginary one anyway. Because the line to the real reference is imaginary, you can still tell it's an imaginary intermediate target.
 
@@ -678,7 +678,7 @@ It also turns things more into a tree structure, because a reference to somethin
 And esthetic reference won’t work if a real reference might not replace the imaginary reference.  
 But there was a reason why I created an imaginary reference anyway. For instance: when two object references on the same level, refer to the same object, they need to converge to an imaginary reference, or you won’t know what is the target object.  
 Do the arguments against reusing a real reference weigh up to the clarity of reusing an real reference?  
-I’d have to look that up in the article Automatic Containment.
+I’d might look that up in the article Automatic Containment.
 
 ### Other
 
@@ -711,7 +711,7 @@ Implicit connection through parent kan alleen, als daarbij de namen van de objec
 
 Connect to sub objects inside the closest imaginary reference.
 
-Each object’s contents should officially also be class-tied to their class. But if there is an implicit connection through parent it might not. If a reference target already class tied the sub-objects, then you don’t have to repeat it in the referrer.
+Each object’s contents should officially also be class-tied to their class. But if there is an implicit connection through parent it might not. If a reference target already class tied the sub-objects, then you don’t might repeat it in the referrer.
 
 -----
 
@@ -799,7 +799,7 @@ So it should be the other way around: the last picture should automatically turn
 
 The diagrams shown before, is the expression of calling a global command, with its object as a parameter. This turned out to be exactly what I *didn’t* want to express. Displaying a command as part of a class is much more preferred over displaying the class as a parameter of a command.
 
-When you have to express, that one command is called upon two objects, you have to tie the command call to both objects' command definitions.
+When you might express, that one command is called upon two objects, you might tie the command call to both objects' command definitions.
 
 So it might be a call to both objects' command. Instead of referencing both objects from the command, the command is tied to both command references inside the objects.
 
@@ -938,7 +938,7 @@ I still do not know what to do with the fact, that the class lines to class B of
 I also do not know why, when a definition inside an object is called by giving the call a class line to the definition, the class line is unary again, and what might make it so, that this might make the object of which the definition was used as a class, the parameter of the call, giving the object an active command reference back to the call.  
 I do not know yet what makes this happen and why so many class lines are unary.  
 I expected class relations to be more like object relations and more dual, and I expected relations to automatically cause intuitive behavior of calls and stuff.  
-I think I have to compare it conceptually to how you look at it in current programming languages.
+I think I might compare it conceptually to how you look at it in current programming languages.
 
 JJ
 
@@ -947,7 +947,7 @@ JJ
 Automatic Containment,  
 2008-09-20
 
-You have to solve a lot of things in automatic containment.  
+You might solve a lot of things in automatic containment.  
 For instance: display of referenced parameters and reference parameters.
 
 I thought automatic containment implied, that when you point inward to something, it is because something has a fixed logical location inside of something. But you really should not worry about that at this stage.
@@ -996,7 +996,7 @@ JJ
 #### Overlapping Hierarchies
 
 < Triangles can converge types, right? Give a symbol three types? Think about that. >  
-< I have to use sheer triangles for *pure* overlap establishment. >  
+< I might use sheer triangles for *pure* overlap establishment. >  
 < Circle structure and triangle structure as separate hierarchies. One was originally  called containment hierarchy, while the other was called the inheritance hierarchy. >  
 < Procedure and object hierarchy regarded separately... >
 
@@ -1101,11 +1101,11 @@ A View Where Lines point to target objects?
 
 < Brainstorm >
 
-You have to look at basics of Symbol. And the basic thing is encapsulation. The encapsulation of a Structure can be derived from the referential structure using a mutual parent rule. This in real life also determines how we feel something encapsulates another thing. You can apply this mutual parent rule to class relations and object relations. All class and object reference are expressed as splines, except the references from parent to child. Objects and procedures are there in both languages and are exchangeable. Publicity is also present in both systems. The only thing I don’t know how to express in Symbol is plurality.
+You might look at basics of Symbol. And the basic thing is encapsulation. The encapsulation of a Structure can be derived from the referential structure using a mutual parent rule. This in real life also determines how we feel something encapsulates another thing. You can apply this mutual parent rule to class relations and object relations. All class and object reference are expressed as splines, except the references from parent to child. Objects and procedures are there in both languages and are exchangeable. Publicity is also present in both systems. The only thing I don’t know how to express in Symbol is plurality.
 
-Symbol always had a lack of expression in plurality. How. You’d almost want a new shape of symbol. But I’ve sort of run out of shapes. I’d go for a hexagon. It looks like a circle, but has a plurality feeling to it. If you have to, you could choose for octagons.
+Symbol always had a lack of expression in plurality. How. You’d almost want a new shape of symbol. But I’ve sort of run out of shapes. I’d go for a hexagon. It looks like a circle, but has a plurality feeling to it. If you might, you could choose for octagons.
 
-Of course, one of those, might contain a variable amount of objects, that don’t even have to be of the same type, but might always have the same interface I guess.
+Of course, one of those, might contain a variable amount of objects, that don’t even might be of the same type, but might always have the same interface I guess.
 
 That might conclude seem to conclude the parallelization of Symbol and Structure.
 
@@ -1196,7 +1196,7 @@ You can also let J Data maintain the containment automatically, based on mutual 
 
 Symbol non encapsulative (full referential) notation. Symbol total encapsulative notation (non-referential) (possible overlaps). Symbol obvious encapsulative notation ? level bound?
 
-So there doesn't have to be a difference between reference and encapsulation. You could arbitrarily assign wether to regard it reference and wether to regard it encapsulation?
+So there doesn't might be a difference between reference and encapsulation. You could arbitrarily assign wether to regard it reference and wether to regard it encapsulation?
 
 For children that refer to the same thing, should or shouldn't the parent be seen as having to refer to it too? Hmmm
 
@@ -1239,7 +1239,7 @@ JJ
 
 Artificial Promotion / Esthetic Reference,
 
-Objects automatically put on a lower level, because of deeper usage, can artificially be promoted to a higher level, by creating a reference to it from a higher object, for esthetic reasons, related to it having great significance on a higher level. (this doesn't have to result in an object reference being put on every level in between.)
+Objects automatically put on a lower level, because of deeper usage, can artificially be promoted to a higher level, by creating a reference to it from a higher object, for esthetic reasons, related to it having great significance on a higher level. (this doesn't might result in an object reference being put on every level in between.)
 
 A compiler could generate a warning about such an unused reference, unless you actively type the reference as being esthetic.
 
@@ -1305,10 +1305,10 @@ Ignore that for other article groups. Only focus on the current one. But actuall
 
 In that case, I should stop calling them pointers to pointers. They are, but I should stop calling them that.
 
-It might so much simplify the usage of the language. If you have to consider any symbol a reference, then it might be totally inaccessible to children, for instance.
+It might so much simplify the usage of the language. If you might consider any symbol a reference, then it might be totally inaccessible to children, for instance.
 
 
-These contemplations have everything to do with the implications of automatic containment. Every symbol is a reference. But in the original Symbol, the target of all the redirections was the object itself. I have to uphold that, for a better understandable language.
+These contemplations have everything to do with the implications of automatic containment. Every symbol is a reference. But in the original Symbol, the target of all the redirections was the object itself. I might uphold that, for a better understandable language.
 
 JJ
 

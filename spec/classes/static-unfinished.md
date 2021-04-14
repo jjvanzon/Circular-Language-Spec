@@ -51,7 +51,7 @@ The concept of static is not completely worked out yet in the functional design.
 
 There is a general brainstorm but it has loose ends.
 
-The first thing you have to know about classes and static structure in Encircle is that what is traditionally part of the static structure, is not by default part of the static structure anymore. By default everything, including method definitions, are just data inside an object. In Encircle you have to choose whether method definitions are part of the static structure or part of the object data. When it is part of the object data, this basically means that you can change this method definition for each object. If it part of the static structure, objects do not have their individual copy of the data and usually the objects can not change the data either.
+The first thing you might know about classes and static structure in Encircle is that what is traditionally part of the static structure, is not by default part of the static structure anymore. By default everything, including method definitions, are just data inside an object. In Encircle you might choose whether method definitions are part of the static structure or part of the object data. When it is part of the object data, this basically means that you can change this method definition for each object. If it part of the static structure, objects do not have their individual copy of the data and usually the objects can not change the data either.
 
 So static parts of a class are the parts that can not vary between objects, it is the data that all objects share.
 
@@ -78,12 +78,12 @@ Is anything defined inside an interface static? I don’t know.
 \> The Relationships concept now is worked out under the assumption that a class determines which other classes it is related to. But it is possible for a class to define which class it relates to and that an object of that class to change the related class.  
 It is about Static. I am talking about my personal interpretation of static. Not the .NET or VB6 kind of static.  
 If nothing inside a class is declared static you may as well not even have a class definition at all, because then everything defined in the class merely constitutes default values, because everything is still changeable inside an object. That is probably the prototype-based thing people talk about: nothing is actually fixed by the class. You just copy the whole class and then you have an object, in which you can still change everything, including the methods and the set of other members.  
-To make a class definition worth something, you have to make some things static, which means, that it might be the same for every object of the class, it can not be changed inside any object of the class. Usually you make the command definitions static. But there are other types of static too. There is also a type of static where an object can change something of the class, but all objects share that data. There is also a type of static where something is only accessible through the class definition and not through an object (the kind of static that I do not like), and lastly there is the situation where something is not static, and each object just gets its own copy of the data.  
+To make a class definition worth something, you might make some things static, which means, that it might be the same for every object of the class, it can not be changed inside any object of the class. Usually you make the command definitions static. But there are other types of static too. There is also a type of static where an object can change something of the class, but all objects share that data. There is also a type of static where something is only accessible through the class definition and not through an object (the kind of static that I do not like), and lastly there is the situation where something is not static, and each object just gets its own copy of the data.  
 It is possible for a variable to be declared inside a class, the class aspect of which is static, but the value property of which is not static. So then the class of the variable is fixed, but objects can change the data of the variable and actually have their own copy of the variable. < Static ~= Private for Instances, except that there are also no separate copies of it for instances. > < This is not true. It changed. >  
 I guess static where a class defines a variable, the value of which is changeable by the objects, but the object might not have its own copy of the variable, they share the same variable and value, is something defined static but Public to the objects.  
 I am getting into the static stuff too much now.  
 The thing is: in most object oriented languages it is fixed and unchangeable inside the language which constructs are which type of static, while in Encircle everything is variable unless you fix it.  
-I am mixing up the concepts of Static and Private here: both have to do with fixing something, limiting access to something, but I fail to understand which is which. That is because I have not worked out the concept of Static yet.
+I am mixing up the concepts of Static and Private here: both might do with fixing something, limiting access to something, but I fail to understand which is which. That is because I have not worked out the concept of Static yet.
 
 \> One assumption specifically is wrong: that the class always defines certain constructs, that an object can not change. This also counts for interfaces, which are basically the same as classes but only for the public part of an object.
 
@@ -113,7 +113,7 @@ Members usually belong to an object: every object has its own sub objects and pr
 
 Procedure instances are made on each call to the procedure. A call is a procedure instance. In order to make objects part of the whole procedure, rather than just the call, procedure members can be made Static to the procedure. On each call to the procedure, the static members retain their configuration.
 
-Static members of a procedure are only the same for every call to the procedure. Static members of a procedure are different for every object that holds the procedure. In order to make procedure members static for the whole type of objects you have to make a procedure member Type Static. When I talk about static procedure members I’m talking about Procedure Static members.
+Static members of a procedure are only the same for every call to the procedure. Static members of a procedure are different for every object that holds the procedure. In order to make procedure members static for the whole type of objects you might make a procedure member Type Static. When I talk about static procedure members I’m talking about Procedure Static members.
 
 Static type members are the same for every object instance. However, each module instance has its own copy of static type members. Static type members are not the same for every module instance. In order to make a type member, or a procedure member static to the any module instance, you make the member Module Static.
 
@@ -306,7 +306,7 @@ Every symbol of the same type has the same contents. The type can be edited by e
 -----
 
 <  
-I wonder about making data static or not, as opposed to making system commands static or not. System commands give access to data, so depending on which system commands you make static or not, the underlying data is static or not. Actually, you have to control the staticness of the pieces of underlying data. For public / private it worked to control each individual system command, but for static you need to be aware of what underlying data you make static or not. Usually each aspect has its own underlying data. You can make each piece of underlying data static or dynamic. Furthermore you can make the getter or setter of that data accessible or inaccessible from the objects. So instance-accessible or not.
+I wonder about making data static or not, as opposed to making system commands static or not. System commands give access to data, so depending on which system commands you make static or not, the underlying data is static or not. Actually, you might control the staticness of the pieces of underlying data. For public / private it worked to control each individual system command, but for static you need to be aware of what underlying data you make static or not. Usually each aspect has its own underlying data. You can make each piece of underlying data static or dynamic. Furthermore you can make the getter or setter of that data accessible or inaccessible from the objects. So instance-accessible or not.
 \> I might check what underlying data the aspects have.  
 So you might make an aspect *static* or *dynamic*.  
 And you can make a system command accessible or inaccessible for instances (but neat keywords might be come up with for that.)  
@@ -365,8 +365,8 @@ JJ
 Static,  
 2008-10-01
 
-You HAVE TO give class relations different behavior compared to object relations.
-You HAVE TO give class relations specialized behavior.
+You MIGHT give class relations different behavior compared to object relations.
+You MIGHT give class relations specialized behavior.
 Class relations are covered by the Class concept.
 The Class concept might establish this specialized behavior.
 As such, you can let Class relations behave different from
@@ -400,7 +400,7 @@ If one diamond’s internal lines change, lines of all procedure symbols pointin
 
 -----
 
-< You have to mention here somewhere what the normal kind of static is and that when explaining situations, you are always seeing members in their normal type of static, and the other types of static are not considered. That way in other explanations lateron, I don’t have to add to every conclusion ‘unless it is static’>
+< You might mention here somewhere what the normal kind of static is and that when explaining situations, you are always seeing members in their normal type of static, and the other types of static are not considered. That way in other explanations lateron, I don’t might add to every conclusion ‘unless it is static’>
 
 -----
 

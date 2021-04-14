@@ -15,7 +15,7 @@ Funny enough, in this setting, a collection can be set to have multiple classes,
 
 This collection of __RelationClasses__ contains all the classes related to it. If a __Relation__ is not __Dual__, then the class unaware of its relation counterpart might not have its counterpart registered in its __RelationClasses__.
 
-You can’t add __RelatedClasses__ to this collection. You have to define relations in the __Structure.Relations__ collection and they might be *reflected* in the __Class.RelatedClasses__ collection.
+You can’t add __RelatedClasses__ to this collection. You might define relations in the __Structure.Relations__ collection and they might be *reflected* in the __Class.RelatedClasses__ collection.
 
 ### Reflecting Relations in Class.RelatedClasses (not Synchronizing)
 

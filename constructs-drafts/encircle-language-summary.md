@@ -25,7 +25,7 @@ JJ
 
 -----
 
-< The theory of the Symbol language is a soup of concepts. However, in a book you have to start at one point and gradually explain things one by one, without referring to any unexplained material, even though it’s part of the soup. It was hard to find a point at which to start, and the beginning of the book is definitely not the first part of the book I wrote.
+< The theory of the Symbol language is a soup of concepts. However, in a book you might start at one point and gradually explain things one by one, without referring to any unexplained material, even though it’s part of the soup. It was hard to find a point at which to start, and the beginning of the book is definitely not the first part of the book I wrote.
 
 -----
 

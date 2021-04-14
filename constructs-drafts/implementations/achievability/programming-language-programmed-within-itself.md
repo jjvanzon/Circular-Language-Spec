@@ -33,7 +33,7 @@ __Contents__
 
 *(This article also covers subjects about the implementation of the code base.)*
 
-Software development projects take a lot of time. Think of how much you have to test for even a smaller project. I have seen it in some of the projects I did at home, such as Finney and Music Thumper. Using the normal way to develop software it is impossible to create the amount of software, that I want to create all by myself.
+Software development projects take a lot of time. Think of how much you might test for even a smaller project. I have seen it in some of the projects I did at home, such as Finney and Music Thumper. Using the normal way to develop software it is impossible to create the amount of software, that I want to create all by myself.
 
 But Encircle is so powerful, that you *can* make this software all by yourself. However, creating its programming environment is a huge project in itself, that you can not do alone using the normal way of making software. This was proven by my trying to make experiment 0.9, which took about one and a half years, and still it wasn’t finished. The only way I am going to create such a programming environment on my own, is to program the programming environment using Encircle itself.
 
@@ -45,7 +45,7 @@ For a while it wasn’t clear how I might implement the principle of programming
 
 The trick is to have a small code base that offers the basic language, and use this code base to program the rest. The deepest part of Encircle might always be a small code base written in another language (for instance C++ or Assembly).
 
-It turns out you have to redescribe the code base six times, using its predesessing module, until you are able to describe the module in the exact same way the predesessing module is described.
+It turns out you might redescribe the code base six times, using its predesessing module, until you are able to describe the module in the exact same way the predesessing module is described.
 
 When adapting the module again, you are programming it using a previous version of the module. Strict and robust version control is used to keep that manageable.
 
@@ -270,10 +270,10 @@ I used to have a test where I parsed the custom text code of Encircle, and then 
 
 An extra Encircle engine layer might not cause extra redirections on item access, but it might cause redirections in the class definitions. These classes were used when looking for an item by name. So that made item access also go slower with each added Encircle engine layer too.
 
-To make object access by name not go slower with each engine layer, the name of the object was stored in the object, not just in the class. That ensured the disconnection from the class after class assignment, so that the data had nothing to do anymore with how many layers the engine has. You might still have to loop through all the items, to look for an item by name, but not through multiple Encircle engine layers anymore, only through one layer. It dramatically improved performance.  
+To make object access by name not go slower with each engine layer, the name of the object was stored in the object, not just in the class. That ensured the disconnection from the class after class assignment, so that the data had nothing to do anymore with how many layers the engine has. You might still might loop through all the items, to look for an item by name, but not through multiple Encircle engine layers anymore, only through one layer. It dramatically improved performance.  
 It also speeded up class assignment, because class assignment also looked up items by name.
 
-If you index items purely by number, then you also don’t have to search for names anymore. That might be very nice.
+If you index items purely by number, then you also don’t might search for names anymore. That might be very nice.
 
 ### Loose Ideas
 
@@ -375,7 +375,7 @@ Redirections are established with assignments,
 
 < 2008-09-02 This is considered a code base idea, because it makes redirections be able to build on value assignment. >
 
-You have to explain how lines or redirections are established with an assignment, and that this happens automatically when for instance, when instantiating objects of a class. The assignment, even though you don’t see it, is executed by the direct mutual parent.
+You might explain how lines or redirections are established with an assignment, and that this happens automatically when for instance, when instantiating objects of a class. The assignment, even though you don’t see it, is executed by the direct mutual parent.
 
 JJ
 

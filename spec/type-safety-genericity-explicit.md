@@ -102,7 +102,7 @@ In Coding Principles, Classes and Coding Principles, Interfaces:
 
 Classes & Interfaces,
 
-You should introduce type safety and genericity sooner, in the coding principles. Type safety can be implemented as an aspect, but assigning a class or interface really doesn't make any sense without it, so you have to introduce it in the articles about classes and interfaces.
+You should introduce type safety and genericity sooner, in the coding principles. Type safety can be implemented as an aspect, but assigning a class or interface really doesn't make any sense without it, so you might introduce it in the articles about classes and interfaces.
 
 A classes fixes the collection of sub objects that
 exist in it, and the names for those sub-objects.
@@ -116,9 +116,9 @@ JJ
 
 Classes & Interfaces,
 
-You have to explain sooner, what's the use of fixing the class of an object reference.
+You might explain sooner, what's the use of fixing the class of an object reference.
 
-You have to discuss what's the use of fixing all classes, and what is the use of not fixing any classes.
+You might discuss what's the use of fixing all classes, and what is the use of not fixing any classes.
 
 Fixing the classes of objects and their contents results in exactly knowing how the an object looks and behaves.
 
@@ -465,7 +465,7 @@ However, when you *create* the symbol, an object of the *full type* is created. 
 
 *Symbol A is of Type A, but only uses Interface A. Symbol A only shows the systematics of that one interface: a circle. However, it’s an object of the __whole type__. This is important. The importance is pointed out by Symbol B. Symbol B is a pointer to Symbol A, only it uses a different interface. So it shows different systematics.*
 
-So object symbols tied together with object lines don’t have to use the same interface at all. The picture above shows that when you use an object line (__Symbol B__ points to __Symbol A__), the target doesn’t have to have the same interface, only the same type.
+So object symbols tied together with object lines don’t might use the same interface at all. The picture above shows that when you use an object line (__Symbol B__ points to __Symbol A__), the target doesn’t might have the same interface, only the same type.
 
 ###### Choose From Multiple Types
 
@@ -666,7 +666,7 @@ Something like this should be possible:
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.046.png)
 
-The point is in the lines of the child of the top symbol. It’s type line points to the center symbol, but it’s interface line points to the interface of ONE of its types interface implementations, not to the joint interface implementation of the type. You have to be able to do this.
+The point is in the lines of the child of the top symbol. It’s type line points to the center symbol, but it’s interface line points to the interface of ONE of its types interface implementations, not to the joint interface implementation of the type. You might be able to do this.
 
 But it goes against rules I set up earlier. So there has to be more flexibility with interfaces.  
 The type line no longer determines the interface line.

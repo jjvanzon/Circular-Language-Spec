@@ -22,7 +22,7 @@ But there is more to the behavior of a command, compared to a normal object.
 A command definition contains a collection of other commands to execute.  
 The collection is sorted by the order in which these sub-commands might execute.
 
-The command definition can also contain a set of related objects. Those are the parameters of the command. They are just input, output, throughput or downput. This input, output, throughput and downput is passed on to the sub-commands, that are given outward references to these items (the parameters of the sub-commands are pointers to pointers that way). Some parameters may become *required*, so that you have to fill them in, or have to use them as output.
+The command definition can also contain a set of related objects. Those are the parameters of the command. They are just input, output, throughput or downput. This input, output, throughput and downput is passed on to the sub-commands, that are given outward references to these items (the parameters of the sub-commands are pointers to pointers that way). Some parameters may become *required*, so that you might fill them in, or might use them as output.
 
 A command *definition* is a permanently created object. It has to be created, because it needs to *store* what becomes the input and output of its sub-commands. For that, the sub-commands are also created objects. They have a fixed logical residence inside the command definition, even though their definition is totally elsewhere.
 
@@ -57,7 +57,7 @@ A command actually *is* an object, with some special properties: it executes, it
 
 All you need to do is assign the input parameters, ‘run’ the object, and assign the output to other objects.
 
-For an object to have a reference to a command, you *have to* be able to define a *relation* between a command and an object. This is only possible, if a command *is* an object.  
+For an object to have a reference to a command, you *might* be able to define a *relation* between a command and an object. This is only possible, if a command *is* an object.  
 If you want to do that, you *have* to implement commands as an aspect.
 
 A command itself can also contain related command references, which are then considered parameters of the command.
@@ -718,7 +718,7 @@ This gives us the following number of parameter passing situations:
 Do I really need to stereotype this many subtile variations? Isn’t the fact that it is thru enough to tie everything together?  
 This whole section in, out, thru is getting out of hand.  
 It was supposed to be simple. It wasn’t even there at first.  
-I have to simplify the story, keeping the split up in affected, used, transformed and ‘same value’ a detail.  
+I might simplify the story, keeping the split up in affected, used, transformed and ‘same value’ a detail.  
 Then I need to work out the subjects under the assumption, that you only need to be concerned with in, out and thru.
 
 ##### Same Value
@@ -777,14 +777,14 @@ Whether something is input, output of throughput only changes when the command d
 
 This makes it possible, that you get very wide casts for a small change in the system. In a well monitored and regulated system this should be workable. Events might create this extreme activity, but that’s just an aspect of this new system. Computer systems might be extremely active, but this is solved by regulating input and output and quota-limits in space and time.
 
-Any way it is done, you have to *store inside* a command, whether a parameter is input, output or throughput, whether it is automatically determined or not. Just like the execution order of sub-commands it is stored inside a command. You have to *store* whether something’s input, output or throughput, because otherwise, you have to redetermine it too many times using a complicated procedure.
+Any way it is done, you might *store inside* a command, whether a parameter is input, output or throughput, whether it is automatically determined or not. Just like the execution order of sub-commands it is stored inside a command. You might *store* whether something’s input, output or throughput, because otherwise, you might redetermine it too many times using a complicated procedure.
 
 Each command defines what is its input, output or throughput, and a new command can part take over the input, output, throughput configuration from its sub-commands.  
 However, when a definition of a command changes, a huge cast to all its callers and their callers, and their callers is executed.  
 Even this big event cast can be prevented. The answer is versioning. When you use versioning, a called command never changes. Only when command A decides to link to a newer version of command B, command A’s input, output, throughput configuration may change. If command B changes, command A keeps linking to the old version of command B. So the dependencies of command A do not change, and keep pointing to an old version of command A.  
 Only when programming a new version of a system, you can decide to possibly link to a new version of things. A version of a system, that is in production, keeps pointing to unchanging versions of their dependencies.  
 A question for versioning is: when might a version of a command be created? On every change? Or might there be key moments at which an author publishes the new version of the command. These are issues for Versioning, which falls under the Editing & Authoring aspects.  
-Versioning of commands can prevent huge casts of changes to input, output or throughput configuration, or at least limit it in size. Only when defining a new call, you have to look at the called command to see if this changes the in, out, thru configuration of the currently edited parent command definition.
+Versioning of commands can prevent huge casts of changes to input, output or throughput configuration, or at least limit it in size. Only when defining a new call, you might look at the called command to see if this changes the in, out, thru configuration of the currently edited parent command definition.
 
 #### Giving the issues in this section a place
 
@@ -817,11 +817,11 @@ But if one of them is an output parameter, then it is a question whether the inp
 
 #### Outcome dependency
 
-If a reading sub-command is dependent on the outcome of a writing sub-command, then you have to manually indicate the execution order, so that the writing command runs before the reading command. The indication of execution order in that case is sort of like indicating an *outcome* dependency. If you want the original value, you can indicate the execution order, drawing out, that the reading command should run first, which is like a negative statement of outcome dependency.
+If a reading sub-command is dependent on the outcome of a writing sub-command, then you might manually indicate the execution order, so that the writing command runs before the reading command. The indication of execution order in that case is sort of like indicating an *outcome* dependency. If you want the original value, you can indicate the execution order, drawing out, that the reading command should run first, which is like a negative statement of outcome dependency.
 
 - *Outcome dependency is exchangeable with execution order.*
 
-Multiple things may be dependent on the outcome of a command, which means that the writing command might have multiple next-command indications. That’s right. The dependencies could all run in parallel. From this dependency can be derived, that some things can be run in parallel, and some things have to run in a serial order.
+Multiple things may be dependent on the outcome of a command, which means that the writing command might have multiple next-command indications. That’s right. The dependencies could all run in parallel. From this dependency can be derived, that some things can be run in parallel, and some things might run in a serial order.
 
 #### Accessing parameters’ sub-objects
 
@@ -871,13 +871,13 @@ There might be a limitation in the expression of what is accessed. Perhaps if on
 
 What is written and read by a command are actually pre- and post-conditions of the command. 
 
-Only when you are editing a command, the pre- and post-conditions of the command have to be determined. The pre- and post-conditions do not change once you’ve published, versioned, the command. Once you are done designing, the input-output configuration might be stored within the command. Remember that the *structural* input and output is different from what a command might actually read and change.
+Only when you are editing a command, the pre- and post-conditions of the command might be determined. The pre- and post-conditions do not change once you’ve published, versioned, the command. Once you are done designing, the input-output configuration might be stored within the command. Remember that the *structural* input and output is different from what a command might actually read and change.
 
 #### Compared IO
 
 In a command definition you only know which *structure elements* a command accesses, and not yet what specific objects. But from the structure elements used by the command, you can already see whether commands *might* be in each other's way. This opens up possibilities to exclude or confirm, that commands might be in each other’s way. When parameters of different reading and writing commands are tied to the same object reference and they are accessing the exact same structure elements, you can be pretty sure they might be in each other’s way. But when you are accessing different object references, you can’t be sure whether accessing *different* object references means accessing *different* objects. The two object references may be referring to the same object all the same. Even though automatic containment of objects might indicate which object references represent the same object, this can not be seen in the diagram expression of a command *definition*, because objects are not filled in yet.
 
-And then you have to look if there is any overlap in what one command writes and the other commands reads. The overlap might prove a possible read-write dependency. The order of the two commands might affect the outcome, so that might prove that you *have to* indicate an outcome dependency or a negative statement of outcome dependency. Or when a *different* object reference of the same class is consulted, that you *might* need to indicate outcome dependency.
+And then you might look if there is any overlap in what one command writes and the other commands reads. The overlap might prove a possible read-write dependency. The order of the two commands might affect the outcome, so that might prove that you *might* indicate an outcome dependency or a negative statement of outcome dependency. Or when a *different* object reference of the same class is consulted, that you *might* need to indicate outcome dependency.
 
 When you don’t consider volatile concurrency, then when sub-commands follow the same structure paths starting at the same object, you are pretty sure, when the same object might be accessed. But in a volatile concurrency situation you are never entirely sure, unless you lock the data. But those are concurrency issues, which are for later.
 
@@ -887,7 +887,7 @@ Building up the outcome-dependency structure of a command is only done in the de
 
 #### IO definition used for security
 
-This explicit statement of what exactly is accessed, is a great tool for security. A user can actually *see* what a command is changing. In security you have to beware how the command might be faking it.
+This explicit statement of what exactly is accessed, is a great tool for security. A user can actually *see* what a command is changing. In security you might beware how the command might be faking it.
 
 #### Sub-commands
 
@@ -914,7 +914,7 @@ It can be determined, that part of the sub-commands can run independently. If th
 
 -----
 
-< 2008-07-06 When commands have multiple parameters tied together complexly to other parameters, you have to resolve this in an execution order. >
+< 2008-07-06 When commands have multiple parameters tied together complexly to other parameters, you might resolve this in an execution order. >
 
 -----
 
@@ -929,13 +929,13 @@ But it is not so much about the system commands, that are added by aspects, but 
 Actually, no object has fundamental system commands. Only object references, symbols, have fundamental system commands.  
 And there aren’t many either. Just get, and set and some other few.
 
-The other non-fundamental system commands *are* executable sub-objects of an object or a symbol or something, only they are hidden. Anyway, you don’t need to be concerned with them. The only place where the paradox is, is the fundamental system commands. And there aren’t many fundamental system commands, so you only have to consider a few.
+The other non-fundamental system commands *are* executable sub-objects of an object or a symbol or something, only they are hidden. Anyway, you don’t need to be concerned with them. The only place where the paradox is, is the fundamental system commands. And there aren’t many fundamental system commands, so you only might consider a few.
 
-You have to see fundamental system commands as exceptional.
+You might see fundamental system commands as exceptional.
 
 It is really not that much of a problem.
 
-Assignments also require calls to system commands. You have to consider that.
+Assignments also require calls to system commands. You might consider that.
 
 ### Remaining Ideas
 

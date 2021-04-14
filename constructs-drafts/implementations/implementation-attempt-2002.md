@@ -289,7 +289,7 @@ So the the radius for a child is:
 
 #### Interaction
 
-The interaction isn’t much more than two text boxes and something that interprets typed single word or two word commands and then calling the appropriate function of the document. Restrictions are managed by the document so the interaction doesn’t have to concern itself with protecting the data.
+The interaction isn’t much more than two text boxes and something that interprets typed single word or two word commands and then calling the appropriate function of the document. Restrictions are managed by the document so the interaction doesn’t might concern itself with protecting the data.
 
 #### Calculation
 
@@ -381,7 +381,7 @@ Outline compiled modules can be programmed with. However, there are no names for
 
 The lowest advisable level to program J Core modules in is a Symbol document. This specifies the system structure. The procedures are also specified in symbol. The symbols in a procedure can refer to the Symbol Assembly library or can refer to other procedures inside the module or to procedures outside the module. The procedures can be displayed as a diagram, but also as a language much like Assembly language and OO Basic intermixed.
 
-J Code might convert the symbol document into the tables specifying the classes and interfaces and translate the procedures to Assembly code that makes J Core calls and obeys the extra set of rules that J Core sets that you don’t have to worry about as a programmer.
+J Code might convert the symbol document into the tables specifying the classes and interfaces and translate the procedures to Assembly code that makes J Core calls and obeys the extra set of rules that J Core sets that you don’t might worry about as a programmer.
 
 Management of segments, optimizing code for speed, etcetera, are all controlled by J Code and I don’t want programmers, including me, to have anything to do with it, because it is possible to automatically do this. I think real assembly is not worth manually programming with and should be automated.
 
@@ -410,7 +410,7 @@ Operation is actually a nice synonym for a function, procedure, subroutine, rout
 
 #### J Code
 
-I have to think about and write something about the fact that most properties that can be written are hardly ever read.
+I might think about and write something about the fact that most properties that can be written are hardly ever read.
 
 For clarity, there are cases in which common parameters of members are best included in each member, but there are also cases in which common parameters of members can best become members of their own. For instance in set of members with a lot of parameters that have the same values a lot. If the values of the common parameters are the same most of the time, they are best made members of their own.
 
@@ -437,7 +437,7 @@ Misschien nog wat over het vermijden van loops.
 
 Sometimes there’s a distinction between a class that serves as a simple storage for, let’s say Object Interfaces, and a class that combines other classes ondergeschikt aan Object Interfaces and the storage class I mentioned. In both cases you could use a plural to denote you manage a collection of Object Interfaces. To distinct the storage list from the complexer abstraction class you call the storage class Object Interface List class, while the complexer abstraction class you call the Object Interfaces class
 
-If you use constructions like described in the last paragraph, then if a class is an abstract of a basic data structure storage, but the entities involved have no child entities for the storage to be combined with, then the class doesn’t have to be called a list, because it manages everything up until this abstraction level... < I need a better description for that, man >
+If you use constructions like described in the last paragraph, then if a class is an abstract of a basic data structure storage, but the entities involved have no child entities for the storage to be combined with, then the class doesn’t might be called a list, because it manages everything up until this abstraction level... < I need a better description for that, man >
 
 -----
 
@@ -481,7 +481,7 @@ Module [4] . Interface Module [2] . Interface [3] . Member [21] . Type
 
 A much better representation of actuality, and readable, unlike the original structure.
 
-Member access isn't only useful in, also to group things. To get member access to the grouped things you actually require another class, which is unfortunately not a child class in visual basic, but another entry in the richly occupied class list in Visual Basic. Might you have a thing as child classes, this ugliness could be omitted, because it might then be a tree structure. Another thing with grouping properties is that when you put them in a child class, the child class doesn't have access to the main class's members just like that. You might want the grouped properties to interact with the other properties. In that case you should have to use another phenomena than just a child class. Something solely made for grouping. In VB you don't have this. For that, for interaction with the properties outside a class that groups a few can only be accessed if you give the group a reference to the parent class. This adds a method or property to the group that we don't want to see outside the main class. We can't verhelp this inside the module. But outside the module we don't need to see this member that sets the parent class. We can hide them from outside the module, by declaring them Friend, instead of Public. But inside the module we might still see it as part of the member of an object property.
+Member access isn't only useful in, also to group things. To get member access to the grouped things you actually require another class, which is unfortunately not a child class in visual basic, but another entry in the richly occupied class list in Visual Basic. Might you have a thing as child classes, this ugliness could be omitted, because it might then be a tree structure. Another thing with grouping properties is that when you put them in a child class, the child class doesn't have access to the main class's members just like that. You might want the grouped properties to interact with the other properties. In that case you should might use another phenomena than just a child class. Something solely made for grouping. In VB you don't have this. For that, for interaction with the properties outside a class that groups a few can only be accessed if you give the group a reference to the parent class. This adds a method or property to the group that we don't want to see outside the main class. We can't verhelp this inside the module. But outside the module we don't need to see this member that sets the parent class. We can hide them from outside the module, by declaring them Friend, instead of Public. But inside the module we might still see it as part of the member of an object property.
 
 ##### Other
 

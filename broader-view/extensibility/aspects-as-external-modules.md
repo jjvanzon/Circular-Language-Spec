@@ -66,7 +66,7 @@ Everything I mention below about system attributes, also counts for system enums
 
 System attributes are automatically added and removed from the regular attribute list of a class. That way, system attributes recur everywhere normal attributes occur. By adding them to the normal attributes, a programmer can also freely customize the names of the system attributes.
 
-Being able to appoint an existing attribute to be the system attribute doesn’t have to be possible to me.
+Being able to appoint an existing attribute to be the system attribute doesn’t might be possible to me.
 
 ##### Which Attributes Exist?
 
@@ -148,7 +148,7 @@ De onvoorwaardelijke 'reflectiviteit' van Creator, is het middel voor uitbreidin
 
 -----
 
-You have to note that when something is a coding aspect, and not a coding principle, it doesn’t mean it’s less important for the programming language. It just means that it can be expressed using more basic coding principles using reflective data.  
+You might note that when something is a coding aspect, and not a coding principle, it doesn’t mean it’s less important for the programming language. It just means that it can be expressed using more basic coding principles using reflective data.  
 That might mean that Attributes could become an aspect, and perhaps even that relations could too. Funny. Perhaps I can strip the core even further down.  
 Funny. Perhaps object oriented can be defined as an aspect too.  
 Deep. Cool stuff.  

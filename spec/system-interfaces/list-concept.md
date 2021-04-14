@@ -56,7 +56,7 @@ The solution to setting aspects of the list object itself is as follows. The con
 
 To specify the type of list you use is something special, which should get an alternate notation. Controlling aspects of the list object itself are actually considered the internal workings of the list system object. And internal workings are exposed through the system interface. 
 
-This means that when you want to control the list object itself, you have to do this by using the system interface:
+This means that when you want to control the list object itself, you might do this by using the system interface:
 
 ![](images/6.%20List%20Concept.009.png)
 

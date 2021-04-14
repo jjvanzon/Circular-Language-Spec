@@ -38,6 +38,6 @@ It seems, that when type control might not allow the assignment, a conversion co
 
 Conversion commands are not specific to an object. It links to two objects: the source and the target. Because command parameters and object commands are interchangeable, how do conversion commands look in a diagram?
 
-What if you have multiple possible conversion commands? One has to be selected. This has to be disambiguated in that case, through object resolution or explicit conversion. You do not have to do with all the conversion commands in the world, just the ones out of modules you selected.
+What if you have multiple possible conversion commands? One has to be selected. This has to be disambiguated in that case, through object resolution or explicit conversion. You do not might do with all the conversion commands in the world, just the ones out of modules you selected.
 
 JJ

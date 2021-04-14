@@ -24,9 +24,9 @@ Has a literal that looks like this:
 
 So this proves that a literal is a *textual representation* of the state of the object, not the actual state of the object. When you assign a literal, then the text is parsed and the state of the object is changed for instance by deriving a binary coding out of the text.
 
-To give objects the ability to be expressed in a literal just like a simple data type, one attribute of the object is reserved as the __Literal Attribute__. This attribute is always of type __String__. A literal expression can be assigned to the attribute and the attribute returns the literal when it’s retrieved. To actually make the literal assignment change the state of the object or make the literal retrieval return a __String__ that represents the state of the object, you have to write your own custom code.
+To give objects the ability to be expressed in a literal just like a simple data type, one attribute of the object is reserved as the __Literal Attribute__. This attribute is always of type __String__. A literal expression can be assigned to the attribute and the attribute returns the literal when it’s retrieved. To actually make the literal assignment change the state of the object or make the literal retrieval return a __String__ that represents the state of the object, you might write your own custom code.
 
-So what’s the value for J Data of making one attribute the literal attribute, while you have to specify your own custom code for it anyway? Well, J Data might use the literal attribute in the user interface. An object can be changed by assigning a literal value instead of changing individual properties of the object or calling methods. The object can also be textually expressed instead of by a list of separate properties. That way, the object looks just like an attribute, and can be shown as a column in a __List Control__.
+So what’s the value for J Data of making one attribute the literal attribute, while you might specify your own custom code for it anyway? Well, J Data might use the literal attribute in the user interface. An object can be changed by assigning a literal value instead of changing individual properties of the object or calling methods. The object can also be textually expressed instead of by a list of separate properties. That way, the object looks just like an attribute, and can be shown as a column in a __List Control__.
 
 You are not obliged to make the literal assignable. You can also just make it return a summary of the state of the object and not be able to assign the literal. This can be very handy to quickly view a summary of the state of the object.
 
@@ -65,7 +65,7 @@ Literals,
 
 The handy thing about literals, is that they can easily be cut and pasted, and typed in in one blow.
 
-The dowside is, that you have to know the exact syntax, to be able to type it in. Interpreting a literal happens more intuitive, though, and
+The dowside is, that you might know the exact syntax, to be able to type it in. Interpreting a literal happens more intuitive, though, and
 you do not necessarily need to know the exact syntax for that.
 
 But next to literals you might need buttons and options and stuff, in order to be able to use all options without knowing any syntax through a graphical user interface.

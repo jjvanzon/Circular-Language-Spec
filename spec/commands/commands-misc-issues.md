@@ -36,7 +36,7 @@ To enforce this general rule, three rules are imposed to make sure a parent comm
 - Sub-commands are never manually started
     - See the article *Sub-Commands Not Manually Started*
 
-With these rules, there’s no way to point to sub-commands, and the point is made, that you have to beware when you are using active command references inside commands. And there is no way for a user to start the sub-command at any arbitrary moment. There’s no way in, and you have to be aware of the way out, so the sub-command is always an isolated command object, the execution of which is initiated by the parent command, or if it is an active command reference, you have to be aware of giving up control. An external force can not execute the sub-command it before the parent command chooses to execute it, unless you use an active command reference.
+With these rules, there’s no way to point to sub-commands, and the point is made, that you might beware when you are using active command references inside commands. And there is no way for a user to start the sub-command at any arbitrary moment. There’s no way in, and you might be aware of the way out, so the sub-command is always an isolated command object, the execution of which is initiated by the parent command, or if it is an active command reference, you might be aware of giving up control. An external force can not execute the sub-command it before the parent command chooses to execute it, unless you use an active command reference.
 
 Any command object, potentially executed within another command definition, needs to be protected against this risk. The rules to protect the system against this hazard could be changed in the future. But the *reason* for this protection might not change.
 
@@ -94,7 +94,7 @@ This is a rule for enforcement of control of a parent command over the execution
 
 When you are using an active command reference inside a command, then you are giving up the full control over this sub-command’s execution.
 
-You have to be aware, that when you use an active command reference, the active command reference may already have been executed, or that you may be *waiting* on an external execution to finished. If the external execution won’t finish, then the referring procedure is stuck. If the external command object is an inactive command object, it might never execute, and the command might truly be stuck. A warning should be generated then.
+You might be aware, that when you use an active command reference, the active command reference may already have been executed, or that you may be *waiting* on an external execution to finished. If the external execution won’t finish, then the referring procedure is stuck. If the external command object is an inactive command object, it might never execute, and the command might truly be stuck. A warning should be generated then.
 
 This also has consequences for setting parameters for the active command reference. If it is already executing or has already executed, then you can not overwrite the parameters. This may mean, that it might simply not be allowed to set parameters for an active command reference at all.
 
@@ -102,7 +102,7 @@ It is *not* the rule, to beware of *any* active command reference. It is the rul
 
 ##### Diagram
 
-You have to be aware, that when you use an active command reference, the active command reference may already have been executed.
+You might be aware, that when you use an active command reference, the active command reference may already have been executed.
 
 ![](images/6.%20Comands%20Misc%20Issues.007.png)
 

@@ -204,14 +204,14 @@ When the merging procedures reside in *exactly the same container*, they can not
 
 That ensures that diagram code and text code are exchangeable and can be mutually used.
 
-< Merging should be a technique, not embedded in the language. When it’s about calling both procedures of the triangles, you have to shadow those procedures with a procedure that calls both. >
+< Merging should be a technique, not embedded in the language. When it’s about calling both procedures of the triangles, you might shadow those procedures with a procedure that calls both. >
 
 ### Other Ideas
 
 Conversion / Object Resolution,  
 2009-05-12
 
-What if you have multiple possible conversion commands? One has to be selected for implicit conversion. This has to be disambiguated in that case, through object resolution or explicit conversion. You do not have to do with all the conversion commands in the world, just the ones out of modules you selected.
+What if you have multiple possible conversion commands? One has to be selected for implicit conversion. This has to be disambiguated in that case, through object resolution or explicit conversion. You do not might do with all the conversion commands in the world, just the ones out of modules you selected.
 
 Implicit conversion is object resolution.
 

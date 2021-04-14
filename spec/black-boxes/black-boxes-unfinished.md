@@ -99,7 +99,7 @@ JJ
 -----
 
 <  
-I have to note the application of the Visual Basic __Friend__ access modifier. The basic access controller __Friend__ isn’t required (__Public Friend__ and __Protected Friend__). __Friend__ Basic Access Controller means that you make a procedure’s own module a __Friend__ module.
+I might note the application of the Visual Basic __Friend__ access modifier. The basic access controller __Friend__ isn’t required (__Public Friend__ and __Protected Friend__). __Friend__ Basic Access Controller means that you make a procedure’s own module a __Friend__ module.
 
 Yes, but for the effect of the Visual Basic __Friend__ access modifier you also need to deprive global members from being accessed outside the module. And that is done with module level restriction.
 
@@ -149,7 +149,7 @@ It is important to separate the interface from the implementation.
 The implementation is only visible in the target definition.  
 \> 2009-06-26: And inside references of friends.
 
-For execution control commands, you have to be able to hide the name of a symbol when you call it. So while the symbol itself can be part of the interface, the name could be part of the implementation, which is not visible unless you’re editing the definition of something.
+For execution control commands, you might be able to hide the name of a symbol when you call it. So while the symbol itself can be part of the interface, the name could be part of the implementation, which is not visible unless you’re editing the definition of something.
 
 ![](images/4.%20Black%20Boxes%20Unfinished.009.png)
 

@@ -119,7 +119,7 @@ The __Selection__ execution flow procedure takes 4 kinds of procedure references
 - __Then__
 - __Else__
 
-I call all of these procedure references *clauses*. Not all clauses have to be filled in.
+I call all of these procedure references *clauses*. Not all clauses might be filled in.
 
 If the __Select__ clause isn’t filled in then there’s only one __If__ clause, one __Then__ clause and one __Else__ clause:
 
@@ -142,7 +142,7 @@ Select X
 End Select
 ```
 
-Each __If__ clause is accompanied by its own __Then__ and __Else__ clause. The __Else__ clause doesn’t have to be filled in. Above, only the __If__ that has an __Else__ clause is the first one.  
+Each __If__ clause is accompanied by its own __Then__ and __Else__ clause. The __Else__ clause doesn’t might be filled in. Above, only the __If__ that has an __Else__ clause is the first one.  
 The __Select__ clause is also accompanied by its own __Else__, which is executed if none of the __Select__ statement’s __If__'s returns __True__.
 
 The __Select__ clause represents the beginning of the __If__ clauses. It can be any beginning of an expression:

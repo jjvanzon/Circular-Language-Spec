@@ -64,7 +64,7 @@ JJ
 
 -----
 
-< Noun and a verb. A method is a verb, an object is a noun. A verb is an action, the nouns are the objects. A noun can be used, or affected. Also, the relation of the object can be expressed by a ~ voegwoord < ? > (in, op, bij, met...). Can I limit the possible relations between words, regardless of their meaning, just like computer programs only really express relations between things, regardless of their meaning, and the meaning is just in the imagination of the human being? Perhaps you just have to investigate what possible logical relation an object can have with an action, to be able to see how to couple methods and classes automatically. >
+< Noun and a verb. A method is a verb, an object is a noun. A verb is an action, the nouns are the objects. A noun can be used, or affected. Also, the relation of the object can be expressed by a ~ voegwoord < ? > (in, op, bij, met...). Can I limit the possible relations between words, regardless of their meaning, just like computer programs only really express relations between things, regardless of their meaning, and the meaning is just in the imagination of the human being? Perhaps you just might investigate what possible logical relation an object can have with an action, to be able to see how to couple methods and classes automatically. >
 
 -----
 
@@ -110,7 +110,7 @@ JJ
 
 Flat & Structured Interchange, Automatic Object Formation, Neural Networks,
 
-To subdivise in classes, you have to recognize patterns, or phenomena.
+To subdivise in classes, you might recognize patterns, or phenomena.
 
 JJ
 
@@ -158,7 +158,7 @@ JJ
 -----
 
 Consider this for object algebra:  
-< I have to define a system that returns  every possible 
+< I might define a system that returns  every possible 
 tie-together of objects. > I SHOULD REALLY CONSIDER THIS.
 
 -----

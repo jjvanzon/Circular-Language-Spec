@@ -54,7 +54,7 @@ The object has moved from one parent to another.
 
 ![](images/5.%20System%20Objects%20Misc%20Issues.005.png)
 
-Objects are always just floating around like that. They do not have to stay in a fixed spot.
+Objects are always just floating around like that. They do not might stay in a fixed spot.
 
 In reality the objects do not move at all. They are physically stored in the same spot all the time, no matter where they appear to be. An object can just be freely referenced from anywhere, because objects are always accessed through references.
 
@@ -84,7 +84,7 @@ But the exact way in which command extension is implemented might be covered by 
 
 #### Concept
 
-This is a preliminary description of the concept. The details are still to be worked out. It could be that in practice, when Encircle is up and running, the details that have to be solved, might come to light straight away.
+This is a preliminary description of the concept. The details are still to be worked out. It could be that in practice, when Encircle is up and running, the details that might be solved, might come to light straight away.
 
 In other programming languages there are *getters* and *setters*, which are also called *properties*. Those are replaced by the fact, that any related object has a set of system commands, such as __Get Object__ and __Set Object__, that can be extended with extra code around the __Get__ and __Set__ actions.
 
@@ -122,7 +122,7 @@ Even though you can also display the system interface and show a call to the com
 
 ![](images/5.%20System%20Objects%20Misc%20Issues.010.png)
 
-When you very much customize the system interface, you do not always have a standard notation for a consult of the system interface anymore. Giving a related object’s __Get Object__ and __Set Object__ a parameter, you have to display the system interface all the time.
+When you very much customize the system interface, you do not always have a standard notation for a consult of the system interface anymore. Giving a related object’s __Get Object__ and __Set Object__ a parameter, you might display the system interface all the time.
 
 ![](images/5.%20System%20Objects%20Misc%20Issues.011.png)
 
@@ -205,7 +205,7 @@ A class `is usually only` *used* as a class, and `not* also used` as an object, 
 
 `If* you* can* not* stop` a class from `supporting` __Referrers__ `without stopping` objects from `supporting` __Referrers__ at `the* same time, then* the*` __Referrers__ concept `might not*` be `widely` used `anymore`.
 
-`Therefore, you* are` going to `have to specify` for a symbol or object, that it `is` a non-practitioner of a concept. Derivation of objects `might` take over `the* specified` concept, `but* not* the*` non-practitioner aspect. Or perhaps instead of calling it non-practitioner, `you* could*` call it __Objects Support Concept Referrers__, or something.
+`Therefore, you* are` going to `might specify` for a symbol or object, that it `is` a non-practitioner of a concept. Derivation of objects `might` take over `the* specified` concept, `but* not* the*` non-practitioner aspect. Or perhaps instead of calling it non-practitioner, `you* could*` call it __Objects Support Concept Referrers__, or something.
 
 ##### Diagram Notation
 
@@ -280,9 +280,9 @@ Referrers `has to be` redone. It `has to` become a list of related items and rel
 Redoing Referrers `was` postponed in `the*` project Work Out Basic Command Articles, `because*` it involves `too much` other material, that takes `too much` time to go into.
 
 Referrers `is` mainly part of Relations.  
-`You* are` probably going to `have to` read over `the*` whole Relations article group.
+`You* are` probably going to `might` read over `the*` whole Relations article group.
 
-`The*` following articles may `have to be` redone, `when*` redoing Referrers:
+`The*` following articles may `might be` redone, `when*` redoing Referrers:
 
 - Referrers
 - Referrers in a Diagram
@@ -305,7 +305,7 @@ Referrers,
 
 - `I` hate it, that `I could* not* finish the*` referrers articles.
 - `But*` it `is too much` to go into `just like` that.
-- `I have to` accept that `the*` produced article group `might` contain two subjects, that `are not* finished`.
+- `I might` accept that `the*` produced article group `might` contain two subjects, that `are not* finished`.
 
 JJ
 

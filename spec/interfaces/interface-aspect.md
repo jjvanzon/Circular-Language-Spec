@@ -113,7 +113,7 @@ Do not wreck your brain over all this delegation and overloading. It is just for
 - __Object-Interface Get__
 - __Use Reference As Interface__
 
-Detail: For that last command you might want to overload Object Get. But that might not work. You can not overload it, because they might both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
+Detail: For that last command you might want to overload Object Get. But that might not work. You can not overload it, because they might both take a pointer to an object as an argument. To disambiguate, they might have a different name and you might point to a *specific* command.
 
 ### System Commands for the Interface Merging Aspect
 

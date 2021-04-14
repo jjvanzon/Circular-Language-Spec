@@ -591,7 +591,7 @@ I should shove it over to that project.
 I should register in the project description that determining the exact definition of input and output is one of the objectives.
 
 The current project might wrap up everything else about parameters.  
-I have to clean up the objectives of the current project and create a new plan for it.  
+I might clean up the objectives of the current project and create a new plan for it.  
 Then I can work my way up to an end point. And in the next project I can just calmly look at the exact complexity of input and output.
 
 ### Brainstorm 2008-09-26
@@ -680,7 +680,7 @@ Sub-commands yield over in, out properties to their parent commands.
 
 You write the value... it needs to be written at some point.
 
-When you write the value from the outside, and you can only access the object on the inside, you have to pass the object to a sub-command, that might write the value. But can you really know? Maybe not, but it should be read somewhere on the inside.
+When you write the value from the outside, and you can only access the object on the inside, you might pass the object to a sub-command, that might write the value. But can you really know? Maybe not, but it should be read somewhere on the inside.
 
 Look, there is a whole object theory behind the in out and thru. And it should be covered by advanced command topics, to the extent, that you can automatically determine execution outcome dependency, execution order and possible resolve concurrency.  
 But writing means you’re going to read it, and when you read it, is has to have been read.
@@ -914,7 +914,7 @@ Whenever you reference a square member, an implicit call is made.
 
 < Add some access symbols >
 
-If you want to access members of a procedure using only one call, you have to explicitly notate the diamond that is the call.
+If you want to access members of a procedure using only one call, you might explicitly notate the diamond that is the call.
 
 ![](images/Input%20Output%20Parameter%20Passings.071.jpeg)
 
@@ -956,7 +956,7 @@ in the second picture you see the explicit call. The third picture adds the expl
 
 ###### Reference to Other Out Parameters
 
-An object reference to a procedure can only be a reference to the procedure’s return value. If you want to reference other out parameters, you have to reference them explicitly.
+An object reference to a procedure can only be a reference to the procedure’s return value. If you want to reference other out parameters, you might reference them explicitly.
 
 ![](images/Input%20Output%20Parameter%20Passings.079.jpeg)
 
@@ -1202,7 +1202,7 @@ If the diagram above is an abstract view on the system, there might only be made
 
 < P: same system as above, now physically showing the two calls >
 
-If you want to reference multiple output parameters of a single call, you have to explicitly display the call and reference the objects that are inside the call symbol. By referencing the parameters of the call, you only use one call.
+If you want to reference multiple output parameters of a single call, you might explicitly display the call and reference the objects that are inside the call symbol. By referencing the parameters of the call, you only use one call.
 
 ![](images/Input%20Output%20Parameter%20Passings.109.png)
 
@@ -1217,11 +1217,11 @@ Referencing a diamond’s members is like reading a procedure member.
 
 ![](images/Input%20Output%20Parameter%20Passings.110.jpeg)
 
-< 20040418: this is interesting. It has to do with implicit call and I have to explore in which situation this is useful. I think that when you call a member of the top circle, then the diamond executes. It’s like calling member of the bottom circle... >
+< 20040418: this is interesting. It has to do with implicit call and I might explore in which situation this is useful. I think that when you call a member of the top circle, then the diamond executes. It’s like calling member of the bottom circle... >
 
 It always happens just after the diamond executes.
 
-< The parameter objects destroy right after the call. If you use the top circle like above, every consult of the top circle might result in executing the diamond again. To persist the information contained in the argument, without having to call the procedure again, you have to do a State Copy. Another way of using output parameters is to give the execution a reference to an external symbol. Anyway: if you want return information to persist after the call, it has to be stored in external symbol: store the returned state to an object that the caller contains, or pass a reference to the caller’s object to the called procedure >
+< The parameter objects destroy right after the call. If you use the top circle like above, every consult of the top circle might result in executing the diamond again. To persist the information contained in the argument, without having to call the procedure again, you might do a State Copy. Another way of using output parameters is to give the execution a reference to an external symbol. Anyway: if you want return information to persist after the call, it has to be stored in external symbol: store the returned state to an object that the caller contains, or pass a reference to the caller’s object to the called procedure >
 
 < That’s true what I just said, but there’s nothing wrong with linking directly to the parameter and executing the procedure on each consult. There’s nothing wrong with that. The link might be something like consulting a property procedure in VB, a Get, which returns a reference to an object. Every time you consult the property, the procedure is launched again. That’s normal. >
 
@@ -1340,7 +1340,7 @@ Oh jawel! Consult vind gewoonlijk altijd plaats in epiloog, maar bij assignment 
 
 ![](images/Input%20Output%20Parameter%20Passings.118.jpeg)
 
-The last picture is an acceptable substitute for implicit state assignment. It is actually explicit state assignment, but it looks like a real connection between A and B. A rule though: state assignment takes two arguments: destination = source. In the notation on the left you have to follow the direction of the line you’d get between A and B if you ignore the call thing in between to find out which is the first argument and which is the second. In text code it goed from left to right. In the diagram It goes from ... < >. B is destination A is source. I mean B is the one that gets the line. B is source of line, but destination of assignment. 
+The last picture is an acceptable substitute for implicit state assignment. It is actually explicit state assignment, but it looks like a real connection between A and B. A rule though: state assignment takes two arguments: destination = source. In the notation on the left you might follow the direction of the line you’d get between A and B if you ignore the call thing in between to find out which is the first argument and which is the second. In text code it goed from left to right. In the diagram It goes from ... < >. B is destination A is source. I mean B is the one that gets the line. B is source of line, but destination of assignment. 
 
 #### Argument Access Summary
 

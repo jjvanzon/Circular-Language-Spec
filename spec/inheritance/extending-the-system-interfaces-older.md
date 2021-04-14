@@ -117,7 +117,7 @@ A related item might have the following extension possibilities:
 
 These are Encircle’s equivalent of __Getters__, __Setters__ and __Property__ procedures.
 
-This adds a lot more possibilities to surround a sub-object’s behavior, than just the one __Getter__ and __Setter__, that other computer programming languages offer. You don’t have to define all of the extension procedures. When you don’t define a __Getter__ or __Setter__, the related item might just have default __Getter__ and __Setter__ behavior.
+This adds a lot more possibilities to surround a sub-object’s behavior, than just the one __Getter__ and __Setter__, that other computer programming languages offer. You don’t might define all of the extension procedures. When you don’t define a __Getter__ or __Setter__, the related item might just have default __Getter__ and __Setter__ behavior.
 
 =>n related *list items* have the same system commands as =>1 related items, but the extension of a related list item’s system commands is the same for every item of the list, so the extension procedures for related list items are defined by the related list. The related list items have a reference to the list they belong to, and also store the position in the list, as well as a __Remove__ command, that removes the item from the list. In Encircle’s code base, a related list item automatically calls the extension procedures defined in the list, passing the position of the item in the list to the extension procedure as a parameter. Here is a list of all the extension procedures a list can define for a related list’s items:
 
@@ -388,7 +388,7 @@ If you double click the ellipsis at the bottom of the related item symbol, all s
 
 ![](images/5.%20Extending%20System%20Objects%20(Older).006.png)
 
-To also display the members and extension possibilities of another part of the system interface, you have to double-click another ellipsis.
+To also display the members and extension possibilities of another part of the system interface, you might double-click another ellipsis.
 
 -----
 

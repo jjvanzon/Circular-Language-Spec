@@ -354,7 +354,7 @@ Also executes, when its parent procedure executes, but it doesn’t delegate to 
 
 It is an undelegated part of a procedure, called a *clause*.
 
-Because a diamond doesn’t have to be a call, it is also called an *execution* or an *execution point*.
+Because a diamond doesn’t might be a call, it is also called an *execution* or an *execution point*.
 
 An undelegated square inside a procedure is also considered a clause.
 
@@ -740,7 +740,7 @@ An assignment as such, requires you to get a value from one place and set the ar
 
 ### Create Argument and Call Argument’s Members
 
-There may be more things you want to do with an argument before passing it to a procedure. You may want to create a brand new object as an argument and you may want to call some members of the argument first. You *can’t* do these operations directly on the argument. You have to create a separate object, manipulate it and then pass it by reference
+There may be more things you want to do with an argument before passing it to a procedure. You may want to create a brand new object as an argument and you may want to call some members of the argument first. You *can’t* do these operations directly on the argument. You might create a separate object, manipulate it and then pass it by reference
 
 There’s a shorthand for creating a brand new object and passing it by reference. In text code this might look like this:
 
@@ -774,7 +774,7 @@ You can let the separate object seem to be the argument itself, by using a peel 
 
 The creation might still be visible, but you’ve excluded the line, without loosing the information that it’s really an external object. 
 
-Of course you don’t have to show the implicit creation.
+Of course you don’t might show the implicit creation.
 
 ![](images/7.%20Commands%20Ideas.059.jpeg)
 
@@ -883,7 +883,7 @@ Line of connected diamonds change simultaneously
 
 #### New Brainstorm Texts
 
-The problems proposed in this text have to do with:
+The problems proposed in this text might do with:
 
 - The terms prolog and epilog, prologous and epilogous
 - The term executor and execution
@@ -991,7 +991,7 @@ A call line makes the square a call. A reference line makes it a reference. No l
 |:----------:|:------:|:----:|:---------:|:------------------------------------------------------:|
 | Definition | Clause | Call | Reference | Illegal: a square can’t be both a call and a reference |
 
-< Not true: a call doesn’t have to directly exit a square if it calls a procedure reference embedded in the same procedure or a clause of the procedure >
+< Not true: a call doesn’t might directly exit a square if it calls a procedure reference embedded in the same procedure or a clause of the procedure >
 
 Note here that the access symbol of a solid procedure reference line is also drawn solid.
 

@@ -22,15 +22,15 @@ __Contents__
 
 The *aspect* construct might become important in Encircle, only it might not be implemented yet in future experiment 3.0. However, experiment 3.0 might be implemented in a way that the aspects construct might be added to it later. Aspects might be useful enough to do this. In order to feel comfortable about this, I might like to know more about aspects, so I might work out a preliminary, brainstorm-style design here.
 
-For this I might look into the experiment 0.9 code, in which I might see what aspects might need to be capable of and I might list out what you have to be able to define inside an aspect and then maybe I might get a picture of how this should look in a diagram.
+For this I might look into the experiment 0.9 code, in which I might see what aspects might need to be capable of and I might list out what you might be able to define inside an aspect and then maybe I might get a picture of how this should look in a diagram.
 
 -----
 
 A lot of times aspects might tap into other methods or other aspects’ methods and pre- or post-extend the method. And the pre- or post-extension might be in a specific point in the code of the method into which code is injected.  
-In experiment 0.9 there is a distinction between injecting it inside the Set’s If Value has changed or outside the Set’s If Value has actually changed. I am not sure the distinction is needed in the new version but it might have to be a feature.  
+In experiment 0.9 there is a distinction between injecting it inside the Set’s If Value has changed or outside the Set’s If Value has actually changed. I am not sure the distinction is needed in the new version but it might might be a feature.  
 The idea about injecting code a specific point was that this point of injection is determined by dependency on other aspects. Some parts of other aspects might either be finished or not started yet when the code of the dependent aspect is run. So pinpointing this position is done by pinpointing the dependency on another aspect and whether something has to be done before or after a part of another aspect is finished. So it is about Before or After an element of another aspect or Before or After a number of elements of a number of other aspects. That is how the position of code injection might be defined.  
 The idea is that with aspects everything is possible that is possible with code generation, only in a more structured way.  
-Aspect dependency also means that another aspect might be implemented for the dependent aspect to be active. And sometimes even certain (optional) elements of an aspect might be active in order to make a dependent aspect work. This may also have to be definable.    
+Aspect dependency also means that another aspect might be implemented for the dependent aspect to be active. And sometimes even certain (optional) elements of an aspect might be active in order to make a dependent aspect work. This may also might be definable.    
 Sometimes aspects just add extra methods to an object.  
 Perhaps the extra method might be part of the object itself. Perhaps it might become an extra interface of the object, perhaps it might become part of the object’s system interface and visible like an extra system aspect. I dunno, that is not the most important.
 
@@ -43,7 +43,7 @@ Wait, if each bit of code injected is its own method, then the code of a depende
 You only get a problem when pre- or post- dependency exists to multiple aspects.  
 So there might be thought of a way to make the same pre- or post-extension to multiple methods.
 
-In Aspects, which replace code generation, you have to accept that members are freely added, that is what code generation is, but if you want to keep interfaces stable you can easily do this by means of separation of interfaces, this is what separation of interfaces is meant to solve.
+In Aspects, which replace code generation, you might accept that members are freely added, that is what code generation is, but if you want to keep interfaces stable you can easily do this by means of separation of interfaces, this is what separation of interfaces is meant to solve.
 
 But in its basic form, aspects just use the specialization techniques defined in the functional design of inheritance.  
 When you take pre-extension as an example, something is tricky though. The extensions and member additions apply not to a specific object or class, but to a selection of objects. So you need a proxy object inside the aspect definition, that stands for any object the extension might be applied to. And there should be a condition that tells which objects might get the extension. So it is really starting to look like aspect oriented programming: you have code, you have join points and an expression defining which objects it applies to. The join points, however are defined through specialization techniques defined in the inheritance documentation, and the code is just code, like in aspect oriented programming and the objects it applies to is a proxy object inside the aspect definition, which an expression selecting the proper objects.
@@ -56,7 +56,7 @@ Then there is another side to it: how might the resultant code look? Because asp
 
 The specialization techniques in the functional design of Inheritance and the system events in the functional design of Events really suffice here.
 
-It all comes together. Aspects can be separately programmed mostly using the existing constructs + aspect dependency + proxy objects + object selection expressions. You just have to make the data that defines the aspect an as direct depiction of the aspect as possible. And aspects can be applied to systems in either an interface-stable, or an interface-unstable way. How that last part might look, might need to prove itself in practice. I just do not want to work out the theory. I just want to program it and see how it works instead of just trying to imagine it in my head.
+It all comes together. Aspects can be separately programmed mostly using the existing constructs + aspect dependency + proxy objects + object selection expressions. You just might make the data that defines the aspect an as direct depiction of the aspect as possible. And aspects can be applied to systems in either an interface-stable, or an interface-unstable way. How that last part might look, might need to prove itself in practice. I just do not want to work out the theory. I just want to program it and see how it works instead of just trying to imagine it in my head.
 
 I have an adequate brainstorm here about how things should be and I am confident that nothing might stand in the way of implementing the aspect construct even when I totally ignore it in the first version. The aspect construct might not overthrow the basics of the notation of the language or the basics of the other constructs. Hooray!
 
@@ -110,7 +110,7 @@ The first solution proposed was to simply not support the __Referrers__ aspect f
 
 If you can not stop a class from supporting __Referrers__ without stopping objects from supporting __Referrers__ at the same time, then the __Referrers__ aspect might not be widely used anymore.
 
-Therefore, you are going to have to specify for a symbol or object, that it is a non-practitioner of an aspect. Derivation of objects might take over the specified aspect, but not the non-practitioner aspect.
+Therefore, you are going to might specify for a symbol or object, that it is a non-practitioner of an aspect. Derivation of objects might take over the specified aspect, but not the non-practitioner aspect.
 
 JJ
 
@@ -187,9 +187,9 @@ Aspects / aspects,
 Brainstorm about Aspects:  
 What I call aspects, is close to what the rest of the world calls aspects.  
 Aspects extend existing procedures, and extend existing classes.  
-Aspects do that too. Actually, aspects operate on reflective data in order to extend procedures and classes. You can extend a whole system of procedures and objects using aspects. Aspects do that too. What I add to aspects is that aspects can also be separate classes, that link to another class, and use the other class’s reflective data to do something with it, rather. So that is also a way to use an aspect. Anyway, I think I have to call it aspects, because the rest of the world also calls it aspects, and also I have to look at aspect oriented programming as an example for aspects.
+Aspects do that too. Actually, aspects operate on reflective data in order to extend procedures and classes. You can extend a whole system of procedures and objects using aspects. Aspects do that too. What I add to aspects is that aspects can also be separate classes, that link to another class, and use the other class’s reflective data to do something with it, rather. So that is also a way to use an aspect. Anyway, I think I might call it aspects, because the rest of the world also calls it aspects, and also I might look at aspect oriented programming as an example for aspects.
 
-It worries me, because of the danger, that before I even finish this programming language, most of it might prove to not even be original anymore. But on the other had, might it have to be original? Can’t it just be a language, that converges all good ideas from the world into a single programming language?
+It worries me, because of the danger, that before I even finish this programming language, most of it might prove to not even be original anymore. But on the other had, might it might be original? Can’t it just be a language, that converges all good ideas from the world into a single programming language?
 
 JJ
 
@@ -212,7 +212,7 @@ aspect, that was not applicable to the system yet.
 I think in order for a system to be adaptable to new aspects, there
 might be a set of standards to be upheld. Otherwise a program might be just
 one big method, and that can not adopt new aspects.
-So you have to impose design rules in order to make a program
+So you might impose design rules in order to make a program
 adaptable to new aspects.
 
 JJ

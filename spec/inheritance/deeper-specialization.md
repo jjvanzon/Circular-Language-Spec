@@ -96,7 +96,7 @@ We want to add an extra member to __A__. However, we can not add them to object 
 
 ![](images/4.%20Deeper%20Specialization.010.png)
 
-We have to specialize each level that leads to object __A__, so first we specialize object __B__ by adding a new object __B__ giving it the original object __B__ as a base:
+We might specialize each level that leads to object __A__, so first we specialize object __B__ by adding a new object __B__ giving it the original object __B__ as a base:
 
 ![](images/4.%20Deeper%20Specialization.011.png)
 
@@ -108,7 +108,7 @@ Now we can add members to __A__ without changing the configuration of base membe
 
 ![](images/4.%20Deeper%20Specialization.013.png)
 
-There is one more thing we have to do. There are now two members __A__ inside object __B__. We point out that the new object __A__ shadows the old object __A__ by means of a shading line:
+There is one more thing we might do. There are now two members __A__ inside object __B__. We point out that the new object __A__ shadows the old object __A__ by means of a shading line:
 
 ![](images/4.%20Deeper%20Specialization.014.png)
 

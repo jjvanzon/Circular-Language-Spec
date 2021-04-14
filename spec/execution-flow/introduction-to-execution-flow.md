@@ -90,7 +90,7 @@ Or:
 
 ![](images/1.%20Introduction%20to%20Execution%20Flow.002.png)
 
-The circle is the condition. The word *condition* might not have to be shown in the diagram. The __Then__ and the __Else__ are two command references, that are passed to the __If__ command.
+The circle is the condition. The word *condition* might not might be shown in the diagram. The __Then__ and the __Else__ are two command references, that are passed to the __If__ command.
 
 The __If__ statement is drawn out like a diamond shape. A diamond shape stands for a *call*. It is a *call* to an execution flow command. The definition of the execution flow commands is part of a system module of execution flow commands. It looks like this:
 

@@ -95,7 +95,7 @@ So it is a notation where the requirements for the other end of the connection a
 
 ### Gut Feeling
 
-A gut feeling of mine is that __Protected__ and requirements for other side of connection could be made more alike, because both are about how the other end might be a triangle, but in one case that the direct reference might be a triangle, and in the other case the parent might be a triangle. So these requirements for it being a triangle might have to be merged into one concept one day.
+A gut feeling of mine is that __Protected__ and requirements for other side of connection could be made more alike, because both are about how the other end might be a triangle, but in one case that the direct reference might be a triangle, and in the other case the parent might be a triangle. So these requirements for it being a triangle might might be merged into one concept one day.
 
 The notation come up with for requirements for the other side of the connection may be inspiration for a notation for a more elaborate security model one day.
 
@@ -228,7 +228,7 @@ However unnecessary, you can implicitly define that a member is abstract, which 
 
 Meaning the *interface’s* *square* member has a __Public Object Set__ access connector that is __Required__.
 
-But if you want to do that, you might have to do it for all members of an interface.
+But if you want to do that, you might might do it for all members of an interface.
 
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.024.png)
 
@@ -291,7 +291,7 @@ But this is also possible in other languages by making a member __protected abst
 
 All of this is just courtesy to support all these concepts in Encircle. My gut feeling is that something simpler might be come up with in the future.
 
-For instance the __Protected__ connector notation was come up with at a very early stage, long before the other inheritance-related modifiers were considered. My gut feeling is that I have to let go of the notation for __Protected__ and go for a notation more concise and integrated with all of the other things that can be expressed. __Protected__ really might not deserve such an intrinsic notation compared to the rest of the inheritance-related modifiers.
+For instance the __Protected__ connector notation was come up with at a very early stage, long before the other inheritance-related modifiers were considered. My gut feeling is that I might let go of the notation for __Protected__ and go for a notation more concise and integrated with all of the other things that can be expressed. __Protected__ really might not deserve such an intrinsic notation compared to the rest of the inheritance-related modifiers.
 
 This article is just put here to make sure that at least all of this stuff is possible in Encircle, but my gut feeling is that a replacement for all of this might be found.
 

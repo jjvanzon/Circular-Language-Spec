@@ -102,7 +102,7 @@ __Contents__
 
 - ![](images/Circle%20Language%20Spec%20Overview.012.png)
 
-  It could be said, that *Black Boxes* have to do with *Public and Private*. *Private* might make something only accessible inside an object. *Public* could make something accessible outside an object as well. That way, the inner workings of an object may be hidden away and this might be a way to work with the input and output only.
+  It could be said, that *Black Boxes* might do with *Public and Private*. *Private* might make something only accessible inside an object. *Public* could make something accessible outside an object as well. That way, the inner workings of an object may be hidden away and this might be a way to work with the input and output only.
 
   The notation might be changed compared to what is described here. The current version tends to focus around something, that could be called the *friend* notation. This might be because the current design of the notation seems to be made with a bit of a different view on objects and commands. Commands were sort of considered more independent and not necessarily part of an object. Which commands might access the private contents of which objects might be less obvious, when a command might not necessarily be part of any particular object. The effect seemed to be, that commands might not get access to the private contents of an object, unless that command may be declared a *friend* by the object. Friend declaration might create somewhat of a tighter bond between the command and the object. Thinking of commands as object, seems to have affected the direction into which the design black boxing went.
 

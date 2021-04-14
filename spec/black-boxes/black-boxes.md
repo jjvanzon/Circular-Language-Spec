@@ -91,7 +91,7 @@ An object’s public contents can be accessed by anything that has a reference t
 What other programming languages call class methods, Encircle calls friend commands of a class object.
 
 The object with private contents declares which other objects are its friends.  
-The friendship might not automatically go both ways: the *befriended* has access to the privates of the friend, but the friend might not have access to the privates of the befriended. For that you might have to establish a mutual friendship.
+The friendship might not automatically go both ways: the *befriended* has access to the privates of the friend, but the friend might not have access to the privates of the befriended. For that you might might establish a mutual friendship.
 
 #### Friend Relations
 
@@ -112,7 +112,7 @@ Black boxing is based on two simple concepts: *accessible* and *inaccessible*. Y
 
 The concepts are not literally used inside the language, but all the other black boxing concepts are based on it.
 
-The notation of __Accessible__ and __Inaccessible__ *can* be used in abstract diagram expression, though, which might not have to be syntactically correct, but is only used to make a point.
+The notation of __Accessible__ and __Inaccessible__ *can* be used in abstract diagram expression, though, which might not might be syntactically correct, but is only used to make a point.
 
 #### Access Controlling System Aspects
 

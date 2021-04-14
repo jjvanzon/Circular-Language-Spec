@@ -108,7 +108,7 @@ What happened to commands like Target Object Get?
 -----
 
 < How about system aspects that return how many exits a line makes and which symbols it enters? >
-- \> 2009-09-06: I do have to do something with qualified references, though.
+- \> 2009-09-06: I do might do something with qualified references, though.
 
 -----
 
@@ -335,7 +335,7 @@ JJ
 
 ### Extend Connectors and Connections
 
-The Connectors and the Connections articles have to be extended, because they are supposed to express every system command call as a connector or connection, but they don’t.
+The Connectors and the Connections articles might be extended, because they are supposed to express every system command call as a connector or connection, but they don’t.
 
 ### System Objects
 
@@ -391,7 +391,7 @@ A *related list item* is a system object. A related list item is contained by a 
 Related Lists,  
 2008-08-10
 
-You can’t always display all items in the list, if there are too many. You have to have a way to scroll through them. And parhaps you should be able to open up a table view.
+You can’t always display all items in the list, if there are too many. You might have a way to scroll through them. And parhaps you should be able to open up a table view.
 
 JJ
 
@@ -498,7 +498,7 @@ Why do I call them Object Get and Object Set? Is that proper English...? Why don
 Probably because I want to mention the aspect first?
 You know what? The naming might not matter that much.
 The concepts do. A PROBLEM IS, THAT IN THE SYSTEM INTERFACE ARTICLES I MIGHT GROUP COMMANDS BY ASPECT, SO THEN THE IDENTIFIERS
-MIGHT LOOK DIFFERENT. I AM GOING TO HAVE TO SYNCHRONIZE THAT
+MIGHT LOOK DIFFERENT. I AM GOING TO MIGHT SYNCHRONIZE THAT
 TO THE 'OLDER' ARTICLES THEN...
 
 - I misspelled Existence. I spelled it as Existance.
@@ -588,7 +588,7 @@ Here you see that you have multiple representations of something: you can see th
 If you regard something a property, which you often might, the primary representation of it is its object representation. If you regard something a method or if the procedure doesn’t return a value, then its primary representation is the procedure representation.
 
 Conversely, a procedure can apart from it’s usual representation, be represented as the object that it returns.
-- \> 2009-06-28: Then you have to just make it an object symbol and implement the object get system procedure.
+- \> 2009-06-28: Then you might just make it an object symbol and implement the object get system procedure.
 
 #### Object = Collection?
 
@@ -603,7 +603,7 @@ You can have a nonagon be a collection of objects of any arbitrary class.
 
 What then defends the use nonagon and what defends the use of an object, because both are really collections.
 
-I have to think that over once.
+I might think that over once.
 
 JJ
 
@@ -740,7 +740,7 @@ JJ
 
 ##### Assignment
 
-Before I explain using arguments, I might introduce another basic concept: *assignment*. I have to explain it, because to use input arguments you have to *assign* a values to it. Likewise, to retain output arguments, you might *assign* the output values to other objects.
+Before I explain using arguments, I might introduce another basic concept: *assignment*. I might explain it, because to use input arguments you might *assign* a values to it. Likewise, to retain output arguments, you might *assign* the output values to other objects.
 
 *An assignment*:
 
@@ -760,7 +760,7 @@ A = B
 
 The value of __B__ is copied to __A__. The state assignment might not make __A__ and __B__ the same object. They are two *separate* objects that contain equal *values*. Change the value of one object and the two objects differ again.
 
-To make __A__ and __B__ represent the same *object*, you have to do a *line assignment*:
+To make __A__ and __B__ represent the same *object*, you might do a *line assignment*:
 
 A ![](images/7.%20System%20Objects%20Ideas.018.png) B   
 
@@ -801,7 +801,7 @@ Is the result of an object assignment:
 
 This is an important way of viewing it, because most of the times you’ll only see the result of an assignment and not the assignment operation itself. The assignment operation *is there*, however. Therefore an even simpler notation of assignment is not to show the assignment at all.
 
-Unfortunately, the result of *state* assignment is not visible in diagram code as a line, so you have to display the explicit assignment.
+Unfortunately, the result of *state* assignment is not visible in diagram code as a line, so you might display the explicit assignment.
 
 ![](images/7.%20System%20Objects%20Ideas.027.jpeg)
 

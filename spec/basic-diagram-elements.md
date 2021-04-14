@@ -410,7 +410,7 @@ A choice could be to not do this, because otherwise you might mostly see dashed 
 
 It depends the choices of how to use this notation of borders with different line styles.
 
-There may be a particular case where you might draw a square with a dashed line, but the suggestion for this may have to wait.
+There may be a particular case where you might draw a square with a dashed line, but the suggestion for this may might wait.
 
 Both command calls and command definitions may function as the interface for another command symbol. In that case the idea is that the command symbol may get an extra dotted border.
 

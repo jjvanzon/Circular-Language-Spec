@@ -80,7 +80,7 @@ Normal execution order is also indicated for calls to execution flow statements,
 
 Normal execution order is a form of execution flow. Following the *normal execution order* is considered following a consecution of jumps. *Jumps* are execution flow statements explained in the article *Jumps*. 
 
-The hope that comes with automatic execution order determined by input / output dependency is to not have to define any normal execution order, because if parts of a procedure have no input / output dependency, then those parts can always execute in any arbitrary order.
+The hope that comes with automatic execution order determined by input / output dependency is to not might define any normal execution order, because if parts of a procedure have no input / output dependency, then those parts can always execute in any arbitrary order.
 
 Automatic execution order is not worked out in this article. It is might be worked out in the article *Automatic Execution Order*. Normal execution order is about indicating the order of execution yourself.
 

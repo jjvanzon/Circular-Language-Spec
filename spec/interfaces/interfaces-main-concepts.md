@@ -132,7 +132,7 @@ It is about the bit of dotted line denoted by the arrow. This is an automatic ex
 There are a lot of other object resolution concepts related to interfaces and inheritance, such as overriding and shadowing, but they might be covered separately in the *Object Resolution* chapter.
 
 The situation above only works in case of implicit interfaces.  
-It also might not work when the same interface is defined twice. If it is, you have to refer to the interface explicitly.
+It also might not work when the same interface is defined twice. If it is, you might refer to the interface explicitly.
 
 Below is another example of interface object resolution, but now in case of referencing a member of the interface, while not explicitly accessing the interface:
 

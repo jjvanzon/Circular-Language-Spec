@@ -264,7 +264,7 @@ After For Each has been detected, the statement is split by In. The part before 
 After Next detection, Parsing is actually repeated (this isn’t a perfect solution I am making) until all elements were looped through.
 
 Parsing a qualifier goes as follows. You first split the line by period ‘.’ ( Funny enough a line can be split by multiple main delimiters, or rather a detection of a statement can cause another splitting operation, that sort of overrides the splitting operation we already did. ) After splitting by period, you go by all elements from left to right. Except for the last element, they all might be an object. The last element can be an object or an attribute.  
-The first object might somehow be globally accessible. In case of With blocks, the first object is missing, but in its place comes the object remembered by the With operation. The next element might be a member object of the previous object. There are hardly any methods yet, so I really don’t have to take those into consideration much, except for the Add and Remove methods, which have to be executed if they are found along the way. Add returns an object.
+The first object might somehow be globally accessible. In case of With blocks, the first object is missing, but in its place comes the object remembered by the With operation. The next element might be a member object of the previous object. There are hardly any methods yet, so I really don’t might take those into consideration much, except for the Add and Remove methods, which might be executed if they are found along the way. Add returns an object.
 
 ###### Too Much Theory For Now
 
@@ -337,7 +337,7 @@ I do have optionality and order (mixing statement types) to consider.
 
 I don’t want the perfect parser for now. That’s not the point.
 
-If I am to use a Creator structure to put the parsed code in, I have to figure out the precise the embeddance of the statements.
+If I am to use a Creator structure to put the parsed code in, I might figure out the precise the embeddance of the statements.
 
 Also, I want to use a preliminary way to program methods in C++ for Creator objects, so I can already fully use the Creator philosophy.
 
@@ -430,7 +430,7 @@ Specifier
 |-- [  ]
 ```
 
-I don’t want to create the perfect parser, but I do feel an urge to think about its concepts. Perhaps because I’m going too far with it and have to spend too much time designing it, I do have to use the procedural approach anyway.
+I don’t want to create the perfect parser, but I do feel an urge to think about its concepts. Perhaps because I’m going too far with it and might spend too much time designing it, I do might use the procedural approach anyway.
 
 Anyway, to just wrap up the general parser idea for now:
 
@@ -1386,7 +1386,7 @@ Uppercase and accents are approached with characters categories. A a ? â á à 
 
 -----
 
-In Symbol, when you use public objects, direction is ambiguous. Also, an object in ActiveX is actually a property. Why is it a circle in my case then? Why isn't a property an object then? oh. No. Getting an object is actually a procedure, but you use it as if it's just an object. When you can set it, then that's a definite procedure. Darn. I have to revise Symbol. It's not that good this way.
+In Symbol, when you use public objects, direction is ambiguous. Also, an object in ActiveX is actually a property. Why is it a circle in my case then? Why isn't a property an object then? oh. No. Getting an object is actually a procedure, but you use it as if it's just an object. When you can set it, then that's a definite procedure. Darn. I might revise Symbol. It's not that good this way.
 
 -----
 

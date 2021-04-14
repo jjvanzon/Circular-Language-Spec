@@ -39,7 +39,7 @@ The following articles might explain some concepts from other programming langua
 
 Some programming languages have a thing called required and optional parameters. In other programming languages basically all parameters are required, unless they are typed optional. In Encircle it is the other way around: any parameter is optional unless it is typed required. This is because in Encircle commands are the same as objects, that just happen to be executable, and the parameters inside a command are analogous to sub-objects inside another object, whose filling-in is also totally arbitrary.
 
-Some parameters can be made required, so you *have to* fill them in as input. In Encircle, this means that reading and writing any accessible aspect of a parameter can be separately made required or optional. When output is required, it means you have to use the output. You might be unable to execute the command without picking up the return value or returned object.
+Some parameters can be made required, so you *might* fill them in as input. In Encircle, this means that reading and writing any accessible aspect of a parameter can be separately made required or optional. When output is required, it means you might use the output. You might be unable to execute the command without picking up the return value or returned object.
 
 Basically each system command can be made required or optional. Usually you make access from the *outside* required. When you make access from the *inside* required, this can give the user of the command guarantees about the parameter’s usage.
 
@@ -98,7 +98,7 @@ Below you might find examples of *required* connectors. Not every possible conne
 
 (Out of the original Symbol documentation)
 
-Just as in procedures, you could make certain members of a type required, while others are optional. You have to fill in the required members on creation of the object. This should be there for the same reason as required parameters are there in a procedure: the function of the object just doesn’t make sense unless you write the required members. The programmer is made extra aware of that by making the members required.
+Just as in procedures, you could make certain members of a type required, while others are optional. You might fill in the required members on creation of the object. This should be there for the same reason as required parameters are there in a procedure: the function of the object just doesn’t make sense unless you write the required members. The programmer is made extra aware of that by making the members required.
 
 ### Variable Amount of Arguments
 
@@ -144,7 +144,7 @@ Variable amount of arguments is a purely textual notation. The diagram notation 
 
 #### Concept
 
-Other programming language used to have only *one* return value. Encircle can have *any* amount of output values or output objects, and no single parameter is selected to be *the* return value. I guess the concept of one return value dates from when a command was meant to be like a mathematical formula. I do not think, that limiting the amount of return values of a command to one, has a place in a more modern programming language anymore, because we have to realize, that programming is not mathematics.
+Other programming language used to have only *one* return value. Encircle can have *any* amount of output values or output objects, and no single parameter is selected to be *the* return value. I guess the concept of one return value dates from when a command was meant to be like a mathematical formula. I do not think, that limiting the amount of return values of a command to one, has a place in a more modern programming language anymore, because we might realize, that programming is not mathematics.
 
 #### Diagram
 

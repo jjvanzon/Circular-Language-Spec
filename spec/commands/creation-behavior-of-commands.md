@@ -86,7 +86,7 @@ A parent command, that executes, automatically executes its sub-command-calls on
 
 This was the original problem:  
 When a sub-command might only be created just before it is run, there is a problem: if a sub-command is created only just before it is run, when can a parent command fill in the parameters of the *not yet created* sub-command? Parameter passings could not reference the sub-command’s parameters. That’s why before running the parent command, the sub-commands need to be created.  
-But when creating the sub-command even before it is  run, there is another problem: if sub-commands need to be created when their parent is created, the sub-commands of sub-commands might also need to be created, and their sub-commands and so on. So the whole call structure might have to be created before the parent command could even run. This could even have resulted in circularities, that might make the system hang.
+But when creating the sub-command even before it is  run, there is another problem: if sub-commands need to be created when their parent is created, the sub-commands of sub-commands might also need to be created, and their sub-commands and so on. So the whole call structure might might be created before the parent command could even run. This could even have resulted in circularities, that might make the system hang.
 
 The solution was, to create a call before it is run, but only the public contents, so that a parent can set the parameters. But the private contents are only created just before the command is run, which creates its sub-commands, but again only its parameters. This prevents recursive creation of the call structure, and gives command creation a neat and steady pulse. So this all makes it doable. Otherwise there could have been an endless recursive creation procedure, before any command could ever run.
 
@@ -105,7 +105,7 @@ The problems solved by delayed creation of a command’s private contents are co
 
 Delayed creation of private contents only counts for command calls. Command calls redirect their definition.
 
-But if a command object might not have a definition, then it defines its own definition. For command objects that define their own definition, private contents have to be created all the time, because nothing else defines its private contents but the object itself. This counts for command definitions. This also counts for *active* command definitions, which are executable object that define their own definition. But it also counts for clauses. See the article *Creation Behavior of Clauses*.
+But if a command object might not have a definition, then it defines its own definition. For command objects that define their own definition, private contents might be created all the time, because nothing else defines its private contents but the object itself. This counts for command definitions. This also counts for *active* command definitions, which are executable object that define their own definition. But it also counts for clauses. See the article *Creation Behavior of Clauses*.
 
 #### Compared To CPU-Like Call
 
@@ -279,7 +279,7 @@ Creating its private contents, might not create a recursive creation or anything
 
 ### No Overhead of Command Creation
 
-One of the reasons why private contents of a call are only created just before the call is run, is because this prevents overhead of creation. If you might have to create the whole call structure when the great grandparent of commands is created, then this is not only a lot of work in one blow, but also, a lot of command call objects are created, that never get to run in the first place, because it only runs under certain conditions. Delayed creation of the private contents of a command call prevents this overhead of procedure creation and creates a neat and steady rate of procedure creation.
+One of the reasons why private contents of a call are only created just before the call is run, is because this prevents overhead of creation. If you might might create the whole call structure when the great grandparent of commands is created, then this is not only a lot of work in one blow, but also, a lot of command call objects are created, that never get to run in the first place, because it only runs under certain conditions. Delayed creation of the private contents of a command call prevents this overhead of procedure creation and creates a neat and steady rate of procedure creation.
 
 ### No Circular Command Creation
 
@@ -293,7 +293,7 @@ The concept of No Circular Command Creation has already been explained in the ar
 
 ### No Private Contents in a Call in a Definition
 
-A definition is always dormant, and never runs. So also the *calls* inside a definition might never run. Therefore, the private contents of calls inside a definition are *never* created. A call in a definition never shows the call’s private contents. The call at most shows its parameters, so the public contents of the command call. Only the *definition* of the called command might show private contents. So you have to hop to the definition of a call to see the private contents of the command.
+A definition is always dormant, and never runs. So also the *calls* inside a definition might never run. Therefore, the private contents of calls inside a definition are *never* created. A call in a definition never shows the call’s private contents. The call at most shows its parameters, so the public contents of the command call. Only the *definition* of the called command might show private contents. So you might hop to the definition of a call to see the private contents of the command.
 
 Not creating a call’s private contents before it even runs, takes away discussion about when to display and when not to display a command’s private contents.
 
@@ -319,7 +319,7 @@ Only the *definition* of the called command might show private contents.
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.031.png)
 
-So you have to hop to the definition of a call to see the private contents of the command.
+So you might hop to the definition of a call to see the private contents of the command.
 
 Not creating a call’s private contents before it even runs, takes away discussion about when to display and when not to display a command’s private contents.
 
@@ -333,7 +333,7 @@ But *calls inside* such a definition, only have their *public* contents are crea
 
 ### A Call in a Call Shows Privates When Running
 
-A call inside another call only contains its private content when it is actually running. If a call is not running, then you might have to hop to the definition of a call to see the private contents of the command.
+A call inside another call only contains its private content when it is actually running. If a call is not running, then you might might hop to the definition of a call to see the private contents of the command.
 
 Not creating a call’s private contents before it even runs, takes away discussion about when to display and when not to display a command’s private contents.
 
@@ -345,7 +345,7 @@ If a call is not running:
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.034.png)
 
-Then you might have to hop to the definition of a call to see the private contents of the command.
+Then you might might hop to the definition of a call to see the private contents of the command.
 
 When a call is running, you do see its private contents:
 
@@ -375,7 +375,7 @@ An executable command inside a command definition can not be run, because its pa
 
 There was a lot of brainstorming about how Encircle’s call instantiation compares to call instantiation in other programming languages, which are totally compliant to the CPU’s way of handling command calls, but is not in the spirit of *commands as an object*. But that brainstorming was postponed, because it did not have anything to do with a goal of a workable type of call instantiation, but more with optimization of Encircle. The contemplations are still there in this article, as an unfinished brainstorm, that may be later worked out, to better take advantage of CPU power.
 
-Perhaps creation behavior is just the most important issue of Command is an Object. It really belongs to the introduction of commands, that explains how a command is an executable object. Closely related to it, is the special creation behavior of executable objects. You have to well understand the creation behavior to implement a command as an object.
+Perhaps creation behavior is just the most important issue of Command is an Object. It really belongs to the introduction of commands, that explains how a command is an executable object. Closely related to it, is the special creation behavior of executable objects. You might well understand the creation behavior to implement a command as an object.
 
 There was a brainstorm about the problems, that come with creating a sub-call object just before it executes. This brainstorm in further down below in the section *Former Text*.  
 But the idea might now be further worked out by making a comparison between other programming languages and how it might be solved in the new programming language.
@@ -465,7 +465,7 @@ You have:
 - parameters of these sub-commands
 - and the assignment of data to the sub-commands’ parameters
 
-The sub-commands have to be created and their parameter sub-objects need to be in there, but can be Nothing. The parameter assignments are (really) special sub-commands, that are displayed with a parameter passing notation, but that might not require the parameters to be created.
+The sub-commands might be created and their parameter sub-objects need to be in there, but can be Nothing. The parameter assignments are (really) special sub-commands, that are displayed with a parameter passing notation, but that might not require the parameters to be created.
 
 #### How can a parameter passing assignment be stored
 
@@ -504,15 +504,15 @@ and then leave it unfinished indefinitely.
 *{ Most of this is brainstorming. The more true conclusions are there under ‘What happens in current programming languages?’. }*
 
 The problem is:  
-Parameter assignment calls have to point to parameters. How can you point to a parameter, if the call is not created yet?
+Parameter assignment calls might point to parameters. How can you point to a parameter, if the call is not created yet?
 
-You have to add to the command call article, that in a definition, the calls have to be created, because a definition has to specify what might become input and output for the command call. Or perhaps add that to sub-commands articles.
+You might add to the command call article, that in a definition, the calls might be created, because a definition has to specify what might become input and output for the command call. Or perhaps add that to sub-commands articles.
 
 I am still totally confused about the creation behavior of calls.  
-It looks like a call object has to be created as soon as its parent call is created, because input and output references have to be defined?  
+It looks like a call object has to be created as soon as its parent call is created, because input and output references might be defined?  
 No. Input and output references are not defined. Input and output references are actually assignments, that only look like references. Yeah, but the assignments reference the parameters.
 
-Perhaps you have to separate the creation behavior from the explanations of the general terms.
+Perhaps you might separate the creation behavior from the explanations of the general terms.
 
 \-----
 
@@ -527,7 +527,7 @@ So what’s complicated about this? Well… the fact that when you process a sub
 So what if after you created the parent command, based on the definition, you set input and then, before executing, the sub-commands are all created, and their input set, but not their sub-commands.  
 Only when you are about to *execute* a sub-command, its own sub-commands are created. But before that the parameters had already been assigned…
 
-But crap. That works for reference parameters, but not for value parameters. You have to set value input right before you execute.
+But crap. That works for reference parameters, but not for value parameters. You might set value input right before you execute.
 
 Create the parent command, based on the definition  
 Set input of parent command  

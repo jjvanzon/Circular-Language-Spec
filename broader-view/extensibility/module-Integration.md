@@ -12,7 +12,7 @@ But in a newer version of Encircle there is simply no distinction between module
 The modules are not separate programs. They are just objects living inside the computer.  
 When a module contains an object with a class from another module, the object simply refers to the class as if there wasn’t even any distinction between modules: everything is running on the same computer, everything is an object, and the modules are simply a benign grouping of things, that doesn’t really create any barrier between programs.
 
-One program doesn’t have to define a reference to another module, to use anything out of the module. A program can simply reach anything running on the computer. In fact, a program can simply reach anything running on the internet, that is publicly accessible.
+One program doesn’t might define a reference to another module, to use anything out of the module. A program can simply reach anything running on the computer. In fact, a program can simply reach anything running on the internet, that is publicly accessible.
 
 A module isn’t even loaded or unloaded into memory or anything like that. When a computer is running, all the modules are just there. Whether it is physically stored on disk or loaded into memory depends on a caching scheme. If a module isn’t used for a while, it might be removed from memory and just reside on disk. If a module is used frequently, the parts frequently used might be put in RAM. This is managed by a caching, not by loading or unloading modules.
 

@@ -104,7 +104,7 @@ When you make it private, it means that it is only accessible to friends... hmmm
 
 -----
 
-Deeper exclusion protects members of sub-objects, but how much can those sub-object members be protected, if they might also be referenced elsewhere. Somehow they have to be protected from being referenced elsewhere... fixed logical residence? What if you reference the object from elsewhere? Somehow it needs to be controlled, that an object is always referenced THROUGH the object that protects it... There is a link with user access control here, but I won't go there yet.
+Deeper exclusion protects members of sub-objects, but how much can those sub-object members be protected, if they might also be referenced elsewhere. Somehow they might be protected from being referenced elsewhere... fixed logical residence? What if you reference the object from elsewhere? Somehow it needs to be controlled, that an object is always referenced THROUGH the object that protects it... There is a link with user access control here, but I won't go there yet.
 
 Yeah, there is a discrepancy between controlling access and the fact that containment is now a volatile thing. Fixed containment needs to be imposed in order to establish access control...
 
@@ -216,7 +216,7 @@ JJ
 
 Perhaps you could also work out the traditional implementation of public and private. In that setting the original notation is usable. Now it is all changing. Perhaps it might create clarity if you isolate the original idea.
 
-It is superseded by the Friendship idea. And later, the Friendship idea might probably be superseded by Access Control: public and private and user access control are the same concept. But you have to make dues with intermediate solutions. So the traditional idea behind
+It is superseded by the Friendship idea. And later, the Friendship idea might probably be superseded by Access Control: public and private and user access control are the same concept. But you might make dues with intermediate solutions. So the traditional idea behind
 Public and Private is also important.... maybe.
 
 The main problem with the original idea about Public and Private, is that a programmer might not define a containment structure, and there is only a referential structure...  Something contained inside another thing can easily also be referenced elsewhere. This counts for methods too, so they are not exclusively part of one single object / class.
@@ -249,14 +249,14 @@ Hoe komt het black box principe nog naar voren? Wordt dat black box principe let
 It is so incredibly referential. Euwch.  
 The thing missing is the ‘accessed on the inside’ aspect, that in traditional black boxing was there. This is because in traditional OO you do not see that you are accessing a this parameter when you are accessing members of this. So it seems you are accessing things directly, while really you are accessing the members of the *this* object.
 
-But I sort of miss the idea. Perhaps you’d want to get it back. This might only be possible, if you do not express access to this members as an access to a member of the argument, but as an access to a member of the parent object. So then instead of referentially displaying a this-argument inside the command, and a command inside the object next to it, you have to display a command in an object and ...  
+But I sort of miss the idea. Perhaps you’d want to get it back. This might only be possible, if you do not express access to this members as an access to a member of the argument, but as an access to a member of the parent object. So then instead of referentially displaying a this-argument inside the command, and a command inside the object next to it, you might display a command in an object and ...  
 But this is more for automatic containment (or relations). This is the discrepancy between automatic containment and displaying bidirectional relations, not to be covered here. But it is to be emphasized here. Perhaps you do need to show the less-referential approach, and the inversion of it and also show the referential view. Both notations. Because black boxing is about containment... and containment is a little lost.
 
 For the time being this all might be put under ‘Comparison to Traditional Black Boxing’, which is not called a *main issue* for nothing.
 
 How useful is the older notation of public and private anymore when you use it in the less-referential containment notation?
 
-I have to make dues with the fact, that there are two notations: one with one symbol displayed inside the other with the reverse relations implied, and a notation with one symbol displayed inside the other, but the inverted containment right next to it, and them being connected together.
+I might make dues with the fact, that there are two notations: one with one symbol displayed inside the other with the reverse relations implied, and a notation with one symbol displayed inside the other, but the inverted containment right next to it, and them being connected together.
 
 JJ
 
@@ -361,7 +361,7 @@ The complexity hiding aspect is clearly expresses the black boxing concept in th
 
 The essence of access controlling the __Execute__ aspect is basically to make a command Private: the command can only be executed from __Friend__ objects.
 
-You have to consider how the effect of accessing a system aspect looks, and then base the access connector on it.
+You might consider how the effect of accessing a system aspect looks, and then base the access connector on it.
 
 The effect:
 

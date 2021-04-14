@@ -48,6 +48,6 @@ This documentation might not seem finished up yet. It seems to contains quite so
 
 - ### Automatic Execution Order
  
-    - Perhaps the most practical execution order of commands could be automatically determined without intervention of a programmer: *automatic execution order*. It may not be fully worked out yet, but the hope is, that this can be translated into a method for resolving concurrent access of data *(concurrency resolution)* and automatically determining whether things have to run serially or if things can be processed in parallel, perhaps offering an automatic way to resolve *parallelism*.
+    - Perhaps the most practical execution order of commands could be automatically determined without intervention of a programmer: *automatic execution order*. It may not be fully worked out yet, but the hope is, that this can be translated into a method for resolving concurrent access of data *(concurrency resolution)* and automatically determining whether things might run serially or if things can be processed in parallel, perhaps offering an automatic way to resolve *parallelism*.
 
 When working out this documentation, the exact definition of the concepts above might be worked out and hopefully it may carefully explain how, by giving the concept of input and output a more prominent position in Encircle and comparing different command IO definitions, this may offer opportunities for resolution of concurrency and parallelism as well as perhaps improved security.

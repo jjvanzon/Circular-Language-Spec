@@ -10,7 +10,7 @@ The article *Parameter Order* introduced the concept of an ordered list of param
 
 It is not clear yet, how it might be displayed in a command definition, that the parameters are not only named, but also ordered.
 
-What is clear, though, is that if the parameters are not ordered, then in text code, you have to use the parameter *names* in a call to a command:
+What is clear, though, is that if the parameters are not ordered, then in text code, you might use the parameter *names* in a call to a command:
 
 ```
 Command  (  Parameter B  =  423  ,  Parameter A  =  Object A  )

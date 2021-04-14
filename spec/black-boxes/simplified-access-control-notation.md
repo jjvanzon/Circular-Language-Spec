@@ -172,7 +172,7 @@ If a configuration of any sort is a common one, it might be nice to make somethi
 Consider combining the concepts Presets, Macro-Keywords and just a brainstorm about nice-to-have keywords for common access control situations.
 
 Best example: Public Read-Only Value. Read-Only Value.  
-You do not even have to introduce completely sound systematics, you can also just shed light on the general concept.
+You do not even might introduce completely sound systematics, you can also just shed light on the general concept.
 
 Those 'macro' access modifier keywords are not very important.
 
@@ -195,7 +195,7 @@ In definitions, publics could also be differentiated from privates by privates n
 
 -----
 
-When you have to display a lot of connectors, you might summarize them, and when you float over them, they expand into options.  
+When you might display a lot of connectors, you might summarize them, and when you float over them, they expand into options.  
 Maybe first you have an object connection line without a connector. You float over it, it splits up into an class, interface, object and value line, you float over one of those, it splits up into for instance Object Get and Object Set. I know that might not cover all the options, but it might be an idea to display the connector summary and fan it out when you float over it.
 
 -----
@@ -221,7 +221,7 @@ Another fact:
 
 -----
 
-Perhaps that way the number of possible access controllers becomes more limited, so you do not have to display each possible access connector: Object Get implies any kind of connector.  
+Perhaps that way the number of possible access controllers becomes more limited, so you do not might display each possible access connector: Object Get implies any kind of connector.  
 Access controlling for just allowing a Class Get might not be practical either: who wants that? Who wants to only be able to access the reflective data of an object, but not the object itself?
 
 -----

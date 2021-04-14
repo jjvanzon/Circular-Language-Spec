@@ -26,7 +26,7 @@ Relations Between Symbols,
 
 If you can see object usage, you can not see class-sub-object usage.
 
-You'd have to look at the usage of the sub-objects of the objects of that class, to see the class's sub-object usage. Indirectly you might be able to see the dependency on a class's sub-object.
+You'd might look at the usage of the sub-objects of the objects of that class, to see the class's sub-object usage. Indirectly you might be able to see the dependency on a class's sub-object.
 
 Doesn't a sub-object have a reference to the class's sub-object or might the parent object only have a reference to the class?
 
@@ -96,7 +96,7 @@ To find the definition you follow the reference line between ...
 
 Just consider: if a diamond doesn’t have a line it is an executing clause, when a square doesn’t have a line, it’s a non executing clause. In both cases it’s a definition. But the two case differ in that in one case it executes and in the other it doesn’t. If an object symbol has no line, it’s an object. Simply stated, it needs an object line for it not to be a type. A procedure symbol shouldn’t need a line to be an execution.
 
-When a characteristic’s presence shouldn’t be dependent of the presence of a line, it needs to be drawn out with a shape type. If a characteristic is dependent of the presence of a line, it’s the line presence that gives it the characteristic. If I’d want object symbols to serve only as a type and not as an object, then I’d need to reserve a special shape to separate types from objects. Now, to make an object symbol serve as a type only and not as a type, I make the Object Get Inaccessible? NO. That’s not true. Actually I’d have to not be able to Symbol Get if it’s for the purpose of assigning an object line.
+When a characteristic’s presence shouldn’t be dependent of the presence of a line, it needs to be drawn out with a shape type. If a characteristic is dependent of the presence of a line, it’s the line presence that gives it the characteristic. If I’d want object symbols to serve only as a type and not as an object, then I’d need to reserve a special shape to separate types from objects. Now, to make an object symbol serve as a type only and not as a type, I make the Object Get Inaccessible? NO. That’s not true. Actually I’d might not be able to Symbol Get if it’s for the purpose of assigning an object line.
 
 A square is never an object.
 

@@ -31,11 +31,11 @@ But if one of them is an output parameter, then it is a question whether the inp
 
 #### Outcome dependency
 
-If a reading sub-command is dependent on the outcome of a writing sub-command, then you have to manually indicate the execution order, so that the writing command runs before the reading command. The indication of execution order in that case is sort of like indicating an *outcome* dependency. If you want the original value, you can indicate the execution order, drawing out, that the reading command should run first, which is like a negative statement of outcome dependency.
+If a reading sub-command is dependent on the outcome of a writing sub-command, then you might manually indicate the execution order, so that the writing command runs before the reading command. The indication of execution order in that case is sort of like indicating an *outcome* dependency. If you want the original value, you can indicate the execution order, drawing out, that the reading command should run first, which is like a negative statement of outcome dependency.
 
 - *Outcome dependency is exchangeable with execution order.*
 
-Multiple things may be dependent on the outcome of a command, which means that the writing command might have multiple next-command indications. That’s right. The dependencies could all run in parallel. From this dependency can be derived, that some things can be run in parallel, and some things have to run in a serial order.
+Multiple things may be dependent on the outcome of a command, which means that the writing command might have multiple next-command indications. That’s right. The dependencies could all run in parallel. From this dependency can be derived, that some things can be run in parallel, and some things might run in a serial order.
 
 #### Accessing parameters’ sub-objects
 
@@ -87,13 +87,13 @@ There might be a limitation in the expression of what is accessed. Perhaps if on
 
 What is written and read by a command are actually pre- and post-conditions of the command. 
 
-Only when you are editing a command, the pre- and post-conditions of the command have to be determined. The pre- and post-conditions do not change once you’ve published, versioned, the command. Once you are done designing, the input-output configuration might be stored within the command. Remember that the *structural* input and output is different from what a command might actually read and change.
+Only when you are editing a command, the pre- and post-conditions of the command might be determined. The pre- and post-conditions do not change once you’ve published, versioned, the command. Once you are done designing, the input-output configuration might be stored within the command. Remember that the *structural* input and output is different from what a command might actually read and change.
 
 #### Compared IO
 
 In a command definition you only know which *structure elements* a command accesses, and not yet what specific objects. But from the structure elements used by the command, you can already see whether commands *might* be in each other's way. This opens up possibilities to exclude or confirm, that commands might be in each other’s way. When parameters of different reading and writing commands are tied to the same object reference and they are accessing the exact same structure elements, you can be pretty sure they might be in each other’s way. But when you are accessing different object references, you can’t be sure whether accessing *different* object references means accessing *different* objects. The two object references may be referring to the same object all the same. Even though automatic containment of objects might indicate which object references represent the same object, this can not be seen in the diagram expression of a command *definition*, because objects are not filled in yet.
 
-And then you have to look if there is any overlap in what one command writes and the other commands reads. The overlap might prove a possible read-write dependency. The order of the two commands might affect the outcome, so that might prove that you *have to* indicate an outcome dependency or a negative statement of outcome dependency. Or when a *different* object reference of the same class is consulted, that you *might* need to indicate outcome dependency.
+And then you might look if there is any overlap in what one command writes and the other commands reads. The overlap might prove a possible read-write dependency. The order of the two commands might affect the outcome, so that might prove that you *might* indicate an outcome dependency or a negative statement of outcome dependency. Or when a *different* object reference of the same class is consulted, that you *might* need to indicate outcome dependency.
 
 When you don’t consider volatile concurrency, then when sub-commands follow the same structure paths starting at the same object, you are pretty sure, when the same object might be accessed. But in a volatile concurrency situation you are never entirely sure, unless you lock the data. But those are concurrency issues, which are for later.
 
@@ -103,7 +103,7 @@ Building up the outcome-dependency structure of a command is only done in the de
 
 #### IO definition used for security
 
-This explicit statement of what exactly is accessed, is a great tool for security. A user can actually *see* what a command is changing. In security you have to beware how the command might be faking it.
+This explicit statement of what exactly is accessed, is a great tool for security. A user can actually *see* what a command is changing. In security you might beware how the command might be faking it.
 
 #### Sub-commands
 
@@ -127,7 +127,7 @@ It can be determined, that part of the sub-commands can run independently. If th
 ##### Multiple parameters
 
 < Things become more complex when commands with multiple parameters start relating to each other. >  
-< 2008-07-06 When commands have multiple parameters tied together complexly to other parameters, you have to resolve this in an execution order. >  
+< 2008-07-06 When commands have multiple parameters tied together complexly to other parameters, you might resolve this in an execution order. >  
 < By the way: if you use multiple output parameters of a command, how might the consult of the *two* parameters result in a *single* run? >
 
 #### Apart from direct connection between parameters
@@ -150,7 +150,7 @@ If you don’t indicate the order in which to execute the commands, then they mi
 
 The order of a procedure can also be *automatically* determined by *input / output dependency*. A command, called inside a procedure, can take input, that is the output of another command. Then the other command needs to execute first, in order to pass its output on to the next command. This is called the *automatic execution order* principle, part of the flat & structured interchange principles. 
 
-The hope that comes with automatic execution order determined by input / output dependency is to not have to define any normal order, because if parts of a procedure have not input / output dependency, then those parts can always execute in any arbitrary order.
+The hope that comes with automatic execution order determined by input / output dependency is to not might define any normal order, because if parts of a procedure have not input / output dependency, then those parts can always execute in any arbitrary order.
 
 #### Automatic Execution Order
 
@@ -169,7 +169,7 @@ Maybe there a way a system can determine, what needs to be done in a single blow
 maybe you can mathematically determine, that two parts of a procedure are independent of each other, so could not be in each other's way.  
 Perhaps not, because everything is a big method, in a way. What tells me, that something read in one part of the method, is not expected to be exactly the same half an hour later in the method?
 
-Perhaps in automatic execution order you can see which things have to go parallel, and which things have to go serially.Perhaps that way, multiple threads running at the same time, can be interweaved, by tying all the object relations (including relations between procedure calls) together, and figuring out which things can go simultaneous and which things have to be done one by one.  
+Perhaps in automatic execution order you can see which things might go parallel, and which things might go serially.Perhaps that way, multiple threads running at the same time, can be interweaved, by tying all the object relations (including relations between procedure calls) together, and figuring out which things can go simultaneous and which things might be done one by one.  
 I'm not sure. I should know more about automatic execution order for that.
 
 -----
@@ -181,15 +181,15 @@ In automatic execution order, something intended to run sequentially can be turn
 I think I can do the same thing the other way around:  
 some things intended to run in parallel, can be converted into points that require sequentiality, and points at which parallel execution is allowed.  
 I just don't know how that's going to look yet.  
-I have to have a clear view on the atoms of work there are, independant of the earthly meaning of the work.  
+I might have a clear view on the atoms of work there are, independant of the earthly meaning of the work.  
 And how those atoms of work can influence each other, independant of the early meaning
 of them.
 
 It's all just hunches for now.
 
 If methods are tied to the same data... a relational database doesn't know about that. It can be statements specified in a procedural programming environment, that the database is not aware of at all.  
-It just gets confronted with multiple methods that want to run when they want to run. My own system might know they can be in each other's way, because the system sees both the data and the methods, and the way they are tied together. The data is aware of the methods that influence them, the methods and the data form a single construction of things referring to one another. A single diagram in symbol. Automatic execution order may determine which things have to go sequentially and which things need to go parallelly.  
-I just have to list out all the different possibilities for things getting in each other's way.  
+It just gets confronted with multiple methods that want to run when they want to run. My own system might know they can be in each other's way, because the system sees both the data and the methods, and the way they are tied together. The data is aware of the methods that influence them, the methods and the data form a single construction of things referring to one another. A single diagram in symbol. Automatic execution order may determine which things might go sequentially and which things need to go parallelly.  
+I just might list out all the different possibilities for things getting in each other's way.  
 I just think that blending the procedures and objects into a single construction just gives you an opportunity to mathematically solve the equation and automatically determine what can execute concurrently and what  can not, and for how long, or up until which point.
 
 -----

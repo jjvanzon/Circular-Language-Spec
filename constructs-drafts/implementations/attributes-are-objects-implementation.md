@@ -19,9 +19,9 @@ You might still be able to see a __Relation Class__ as an __Attribute__. An __Is
 
 __Attributes__ might still very much be an application design concept. The only technical remainder in J Data might be that there is a __Class Preset__ called __Attribute__, which gives the __Class__ settings as they are generally expected in an __Attribute__. For more information, see the *Presets* section. The __Attributes__ filter index can also be automatically created by setting the __Class__’s __HasAttributes__ property.
 
-You should also be able to add things to the __Attributes__ collection of the __Class__, or you’d have to define everything in the __Structure.Relation__ collection. Heck, I want to be able to add relations to the __Class.RelatedClasses__ anyway. I could just make __Class.RelatedClasses.Add__ create a __Relation__ in the Structure.Relations collection and return the __Other Relation Class__. When adding to the __Attributes__ collection, I should do the same, but give the added __Relation Class__ the __Attribute Preset__.
+You should also be able to add things to the __Attributes__ collection of the __Class__, or you’d might define everything in the __Structure.Relation__ collection. Heck, I want to be able to add relations to the __Class.RelatedClasses__ anyway. I could just make __Class.RelatedClasses.Add__ create a __Relation__ in the Structure.Relations collection and return the __Other Relation Class__. When adding to the __Attributes__ collection, I should do the same, but give the added __Relation Class__ the __Attribute Preset__.
 
-To be able to use value filters, you have to be able to filter by an object’s literal value. That should be considered in the *Filters, Sorts, Searches, Joins and Indexes* section too.
+To be able to use value filters, you might be able to filter by an object’s literal value. That should be considered in the *Filters, Sorts, Searches, Joins and Indexes* section too.
 
 It still might be possible to give attributes parameters. That implies that =>1 related objects can get parameters.
 

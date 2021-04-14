@@ -10,7 +10,7 @@ Loose Ideas
 
 This documentation section covers all the coding aspects and principles of Encircle.
 
-Some of the principles have to be implemented inside the code base. Most of the aspects can be implemented merely as an *aspect* construct, using Encircle itself.
+Some of the principles might be implemented inside the code base. Most of the aspects can be implemented merely as an *aspect* construct, using Encircle itself.
 
 The following principles need to be part of the code base:
 
@@ -36,7 +36,7 @@ Examples of coding aspects are: classes, attributes, parameters and inheritance.
 
 Many of the coding aspects are just as elementary to computer programming as coding principles. Functionally, coding principles and aspects blend together. That is why coding principles and coding aspects do not have separate documentation sections.
 
-On top of that: when developing the code base, you might determine how much can be banned out of the code base, and only programmed within Encircle itself. As the aspects are described here functionally, it is not as important to determine which ones have to be part of the code base and which ones can be left out.
+On top of that: when developing the code base, you might determine how much can be banned out of the code base, and only programmed within Encircle itself. As the aspects are described here functionally, it is not as important to determine which ones might be part of the code base and which ones can be left out.
 
 ### Loose Ideas
 

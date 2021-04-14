@@ -122,7 +122,7 @@ They require me to go into detail, while fundamental principles was only to give
 
 -----
 
-Some of the Fundamental Principles are very clear. Some are not clear yet. The articles of the unclear Fundamental Principles might be full of details after you write them. Lateron the details have to moved to other articles about the other principles and aspects, that the details are about. The Fundamental Principles should eventually only give a summary and the correlation between other principles and aspects.  
+Some of the Fundamental Principles are very clear. Some are not clear yet. The articles of the unclear Fundamental Principles might be full of details after you write them. Lateron the details might moved to other articles about the other principles and aspects, that the details are about. The Fundamental Principles should eventually only give a summary and the correlation between other principles and aspects.  
 Eventually in the explanations of the fundamental principles, everything should fall into place, and everything should be explained in a clear-cut way. It should be a complete introduction to my ideas, so it should make a person acquainted with the material.
 
 -----
@@ -278,7 +278,7 @@ JJ
 Fundamental Principles,  
 2008-10-16
 
-I am analyzing crap code at work now, and I remember why I ever came up with the diagram notation. I have to do vast analyzing to see what calls upon what, and what input is transformed and passed on to which parts of the system.
+I am analyzing crap code at work now, and I remember why I ever came up with the diagram notation. I might do vast analyzing to see what calls upon what, and what input is transformed and passed on to which parts of the system.
 In the diagrams you get that information basically for free.
 So that might be the background of this language: the code is the analysis, and more specifically put: you can immediately see which parts are linked to each other and make use of each other, and what input and output
 goes where.
@@ -301,7 +301,7 @@ JJ
 Fundamental Principles,  
 2008-11-05
 
-The bad behavior principle is why registration of all references SHOULD be designed for good practice to work, without having to consider the bad behavior. Deterring bad behavior should be completely separately addressed, because also in the design of Encircle, bad behavior should not have to be considered, because it it may not compromise my creativity by having to think about all sorts of possible bad behavior as I try to design a language to do good with. Programming USING the language should be the same: you should only have to separately address possible bad behavior, not while you are designing a system that works for good behavior.
+The bad behavior principle is why registration of all references SHOULD be designed for good practice to work, without having to consider the bad behavior. Deterring bad behavior should be completely separately addressed, because also in the design of Encircle, bad behavior should not might be considered, because it it may not compromise my creativity by having to think about all sorts of possible bad behavior as I try to design a language to do good with. Programming USING the language should be the same: you should only might separately address possible bad behavior, not while you are designing a system that works for good behavior.
 
 JJ
 
@@ -459,7 +459,7 @@ are a programming construct of an importance equal to that of procedures.
 
 In Encircle it is the same way:
 
-relations and aspects are programming constructs of equal importance, but you do not have to use them. Nevertheless, they are so present as a programming construct, that you start to use them anyway.
+relations and aspects are programming constructs of equal importance, but you do not might use them. Nevertheless, they are so present as a programming construct, that you start to use them anyway.
 
 Actually a lot of programmers took a long time to realize what they need classes for to program with.
 
@@ -494,7 +494,7 @@ JJ
 NCL Fundamental Principles,  
 2009-04-20
 
-Connections between system elements in text code are ALWAYS established purely through name correspondence. That's one of the problems with analyzing text code. You have to acquaint yourself with the names, before you can start to understand the connections between things. And through those connections, understanding which are main things, which are less important things, which are big things, which things are unused and what are the first things or prime things, that a program might. An understanding of those things is what the result of such analysis is. Text code alone never reveals such information immediately, so understanding text code is always accompanied by either explanation through documentation or by analyzing the code.
+Connections between system elements in text code are ALWAYS established purely through name correspondence. That's one of the problems with analyzing text code. You might acquaint yourself with the names, before you can start to understand the connections between things. And through those connections, understanding which are main things, which are less important things, which are big things, which things are unused and what are the first things or prime things, that a program might. An understanding of those things is what the result of such analysis is. Text code alone never reveals such information immediately, so understanding text code is always accompanied by either explanation through documentation or by analyzing the code.
 
 In diagrams, the connections and the prominence of things are already visible to the naked eye, so the connections and hierarchy between things are apparent at a much earlier stage (more or less immediately), when looking at other people's code.
 
@@ -630,7 +630,7 @@ JJ
 Fundamental Principles,  
 2010-04-25 ~
 
-How might Aquima impose rules. No, back to Encircle. Everything is possible with all the constructs available. But awareness of all the construct should inspire you to pick the right solution in the right situation. And now Aquima. You always have to pick one out of 5 first. In a way, in Encircle, you always have to pick one out of 12 first, or something. You have to pick a construct... I am not going to brainstorm more about these fundamental things. I can not get my head around it right now.
+How might Aquima impose rules. No, back to Encircle. Everything is possible with all the constructs available. But awareness of all the construct should inspire you to pick the right solution in the right situation. And now Aquima. You always might pick one out of 5 first. In a way, in Encircle, you always might pick one out of 12 first, or something. You might pick a construct... I am not going to brainstorm more about these fundamental things. I can not get my head around it right now.
 
 JJ
 
@@ -653,7 +653,7 @@ Take the following question: There is a function. What other functions use it, a
 This is a question that often needs to be answered when you analyse existing computer code. And this is a difficult question to answer. In most programming environments answering this question requires extensive analysis of the code, even when you have a tool for searching references. It gets worse if there the involved functions are not only used internally by a program, but also used by yet again other programs.
 
 The diagram notation of NCL actually makes this otherwise difficult to extract information visible instantly. This is a big benefit of the NCL.  
-You might have to use coloring to make the information pop out of the diagram, but using the diagram notation it is evident how to easily highlight this.
+You might might use coloring to make the information pop out of the diagram, but using the diagram notation it is evident how to easily highlight this.
 
 JJ
 
@@ -781,9 +781,9 @@ There are more definitions to low coupling:
 - Using a mutual interface for multiple types of objects, so that the consumer is not bound to the classes, but to the interface.
 - To prevent having to change n things, you let them refer to a bridging 1 thing, that connects to the targeted resource.
 - You can separate things into layers so that people of different disciplines can work on the layer they specialized in.
-- When you want to keep storage separated from presentation, possibly allowing multiple representations of the same data, and you want to be able to change the data model. (At one point the data model changes so much you can not  prevent the interface of the bridge to change or even the user interface to change, or you are going to have to keep your data model backwards compatible, something that you were trying to work around with the bridge.)
+- When you want to keep storage separated from presentation, possibly allowing multiple representations of the same data, and you want to be able to change the data model. (At one point the data model changes so much you can not  prevent the interface of the bridge to change or even the user interface to change, or you are going to might keep your data model backwards compatible, something that you were trying to work around with the bridge.)
 
-So simply trying to make things that are actually independent on each other, sort of independent of changes to the dependency, you build a bridge between them. It might require additional code, additional connections and wiring, adds complexity. I might not recommend putting a bridge between any two objects. That might create incredible complexity. How is that going to help you change the code? So you have to apply this when it is useful.
+So simply trying to make things that are actually independent on each other, sort of independent of changes to the dependency, you build a bridge between them. It might require additional code, additional connections and wiring, adds complexity. I might not recommend putting a bridge between any two objects. That might create incredible complexity. How is that going to help you change the code? So you might apply this when it is useful.
 
 I can imagine that an ESB allows you to define interfaces / adapters between any two resources. Or offer the same interface to multiple programs or the give multiple resources the same interface, or create bridges between systems.
 

@@ -64,7 +64,7 @@ This gives us the following number of parameter passing situations:
 Do I really need to stereotype this many subtile variations? Isn’t the fact that it is thru enough to tie everything together?  
 This whole section in, out, thru is getting out of hand.  
 It was supposed to be simple. It wasn’t even there at first.  
-I have to simplify the story, keeping the split up in affected, used, transformed and ‘same value’ a detail.  
+I might simplify the story, keeping the split up in affected, used, transformed and ‘same value’ a detail.  
 Then I need to work out the subjects under the assumption, that you only need to be concerned with in, out and thru.
 
 ### Same Value

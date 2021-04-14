@@ -59,7 +59,7 @@ The concepts are put more or less in order of priority.
     - Force-based ordering
 
         - Shapes and lines being driven into position by certain forces.
-        - \> Perhaps with an invisible springs algorithm you can animate everything to equilibrium and you might not have to worry about calculating the exact optimal position.
+        - \> Perhaps with an invisible springs algorithm you can animate everything to equilibrium and you might not might worry about calculating the exact optimal position.
         - \> Force-based ordering and sequence order unfortunately might contradict.
 
     - Sequence order
@@ -136,7 +136,7 @@ The concepts are put more or less in order of priority.
     - Varying Quanta of distance unit between two crossings
         - This rule is a part annihilation of the exaggerated convergence.
 
-I have to have a term for the piece of line in between two crossings: line segment.
+I might have a term for the piece of line in between two crossings: line segment.
 
 Do I need to cover proportionality of symbols here. I could. I could upgrade this subject to symbol metrics in general.
 

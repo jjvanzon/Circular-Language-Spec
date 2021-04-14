@@ -16,7 +16,7 @@ This folder contains the following articles:
 
 ### Diagram Metrics
 
-- This article is not finished. However, *diagram metrics* are very important to make Encircle a success, because if the diagram is not automatically drawn out, and you have to position all the shapes in it yourself, then the language is not that easy to use anymore. The diagrams are automatically drawn out and you get very little say in where the shapes are positioned and how the lines between shapes are drawn out. The interconnection between shapes and the embedding of it, should pull the shapes and lines into the right position like molecules.
+- This article is not finished. However, *diagram metrics* are very important to make Encircle a success, because if the diagram is not automatically drawn out, and you might position all the shapes in it yourself, then the language is not that easy to use anymore. The diagrams are automatically drawn out and you get very little say in where the shapes are positioned and how the lines between shapes are drawn out. The interconnection between shapes and the embedding of it, should pull the shapes and lines into the right position like molecules.
 
 ### Coloring
 
@@ -38,7 +38,7 @@ However, coding aspects might be applying to the display of diagrams.
 
 -----
 
-For practical reasons, a triangle's purpose may have to be maintained. This might make the diagram not be an exact representation of ALL the systematics, so that sucks. The different purposes of the triangle may be base class, interface, group, joint access modifier, etcetera. I guess if you want to group members by different aspects, triangles might overlap. I already brainstormed about that some time in the past.  
+For practical reasons, a triangle's purpose may might be maintained. This might make the diagram not be an exact representation of ALL the systematics, so that sucks. The different purposes of the triangle may be base class, interface, group, joint access modifier, etcetera. I guess if you want to group members by different aspects, triangles might overlap. I already brainstormed about that some time in the past.  
 \> But overlap can be avoided by automatic containment? Couldn’t it? How might that look? It might create secondary references, won’t it?
 
 -----
@@ -84,7 +84,7 @@ Perhaps sometimes in Symbol diagrams, only the forward relation should be shown.
 And the backward relation should be implicitly there?  
 (not all relations are dual, though)
 
-Perhaps the fact that something is a forward or backward relation should be expressed by direction the way I do that already in symbol. Perhaps the containment structure should be derived looking at the relation direction also, and favor outward pointing? (highly disputable) For sy, you should first be looking at how to express a relational structure in an as simple matter as possible, before looking at how to express the object oriented part, and perhaps use elements to express relational, that were originally reserved for expressing OO. The thing about sy was to have an as simple but as explicit as possible expression of OO, because OO was the most important concept. Then it was important to me that all of the system could be expressed in Sy. But now it turned out relational is the most important concept. And now I have to again look first for the simplest and most explicit way to express relational. A dual relation should be expressed as a single line between two circles, I might say, in that case.
+Perhaps the fact that something is a forward or backward relation should be expressed by direction the way I do that already in symbol. Perhaps the containment structure should be derived looking at the relation direction also, and favor outward pointing? (highly disputable) For sy, you should first be looking at how to express a relational structure in an as simple matter as possible, before looking at how to express the object oriented part, and perhaps use elements to express relational, that were originally reserved for expressing OO. The thing about sy was to have an as simple but as explicit as possible expression of OO, because OO was the most important concept. Then it was important to me that all of the system could be expressed in Sy. But now it turned out relational is the most important concept. And now I might again look first for the simplest and most explicit way to express relational. A dual relation should be expressed as a single line between two circles, I might say, in that case.
 
 -----
 
@@ -130,7 +130,7 @@ Refer to the reference target coding concept, saying that that is the way to mak
 
 < Then I convert that to a containment structure. >
 
-< Now I somehow have to place the two produced pictures inside each other. >
+< Now I somehow might place the two produced pictures inside each other. >
 
 < I just don’t know what the use of it is. The concepts of containment and lines between references to the same object are not interchangeable: one is about how one object refers to the other, the other is about indicating  which are the same objects. >
 
@@ -146,7 +146,7 @@ In that picture I also see, that I connect the two method interfaces inside the 
 But I made them interface lines just for clarity, because it is all about interface definitions, and now all things about interface definitions are expressed in dotted lines, and all things about class definitions are expressed in dashed lines; it is just clearer this way.  
 But might this create an ambiguity? The interface line between the interface definition in the imaginary target class and te interface definition on a site, literally might mean, that only the interface of the two objects is the same: that means: the public contents of them is the same, but the private contents are different, which means the methods have the same interface, but they are different methods, with just the same signature. That’s not what I intended to express, though. The interfaces in the sites should even have been drawn with dotted lines either, because that might imply you are only using it as an interface, while really you’re using it as a definition.
 
-The ‘wrong’ notation is just so much clearer, but it might not formally express the system correctly, because it implies two symbols only have the same interface, but really they have the same definition. But the ‘wrong’ notation of it is just so much clearer. I’m going to have to invent rules that make the ‘wrong’ notation formally ok, or the ‘right’ notation more clear.
+The ‘wrong’ notation is just so much clearer, but it might not formally express the system correctly, because it implies two symbols only have the same interface, but really they have the same definition. But the ‘wrong’ notation of it is just so much clearer. I’m going to might invent rules that make the ‘wrong’ notation formally ok, or the ‘right’ notation more clear.
 
 -----
 
@@ -160,7 +160,7 @@ JJ
 
 Diagram Expression,
 
-"Your screen doesn't have to do everything. Your brain might the rest."
+"Your screen doesn't might do everything. Your brain might the rest."
 
 JJ
 
@@ -238,7 +238,7 @@ Basic diagram elements,
 
 < 2008-09-02 Part of this story is outdated, but some things are still relevant and nice explanations. >
 
-The line types solid, dashed and dotted are all three to be used for commands after all, because solid can be used to indicate when two are the exact same definition, because a definition is a permanently created command object. Then you always need to use a dashed line when you indicate a call’s command definition. But imaginary references to the same command definition in automatic containment of command definitions, you have to tie the command definition symbols together with solid lines, so that the static parts of the command definition are the same for all references to the same command definition. If you’d use dashed lines between command definition symbols, then the symbols are not the same object, so won’t have the same instance of static parts.
+The line types solid, dashed and dotted are all three to be used for commands after all, because solid can be used to indicate when two are the exact same definition, because a definition is a permanently created command object. Then you always need to use a dashed line when you indicate a call’s command definition. But imaginary references to the same command definition in automatic containment of command definitions, you might tie the command definition symbols together with solid lines, so that the static parts of the command definition are the same for all references to the same command definition. If you’d use dashed lines between command definition symbols, then the symbols are not the same object, so won’t have the same instance of static parts.
 
 Or the rule might be: a solid line going from a command call to a command definition is actually a class line. A solid line between two command definition symbols is always an object line.
 
@@ -401,6 +401,6 @@ Expression,
 Encircle Language Spec,  
 2009-04-20
 
-You'd have to integrate tooltips into the diagram, e.g. to explain what to do with an access connector.
+You'd might integrate tooltips into the diagram, e.g. to explain what to do with an access connector.
 
 JJ

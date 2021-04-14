@@ -606,7 +606,7 @@ An active clause `is analogous` to an object that `might not` have a class. A *c
 
 ##### Commands Anywhere
 
-Commands `are` executable objects that `can freely` move around. `You have to start` thinking of an executable object `more like` an object, that `just happens to be` executable. `You are going to have to see` an execution `much, much more like` an executable object that `can` be situated `anywhere` and referenced from `anywhere. You can` put `the` executable object inside another object. `You can` reference an executable object. `Yes, you can` put an executable object inside a command definition. But `you can also` put an executable object inside a class.
+Commands `are` executable objects that `can freely` move around. `You might start` thinking of an executable object `more like` an object, that `just happens to be` executable. `You are going to might see` an execution `much, much more like` an executable object that `can` be situated `anywhere` and referenced from `anywhere. You can` put `the` executable object inside another object. `You can` reference an executable object. `Yes, you can` put an executable object inside a command definition. But `you can also` put an executable object inside a class.
 
 `You can` run an execution inside an object, sort of like having an execution run inside a specific folder. `You can also` run `the` execution inside `your` 'user object' and sort of take it along with `you`, wherever `you` go into `the` digital world. `You can` also run an execution globally on a site.
 
@@ -673,7 +673,7 @@ If `you decide` to change `the` inactive command definition back to an active co
 
 `Others might` still have a reference to it `to be` able to read its output.
 
-If `you` want to run `the` command definition again, `you are going to have to` make a call to it instead:
+If `you` want to run `the` command definition again, `you are going to might` make a call to it instead:
 
 ![](images/1.%20Commands%20Main%20Concepts.046.png)
 

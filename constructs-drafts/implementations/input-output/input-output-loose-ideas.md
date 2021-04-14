@@ -22,8 +22,8 @@ JJ
 Advanced Command Articles,  
 2008-08
 
-For an object to have a reference to a command, you have to be able to define a relation between a command and an object. This is only possible, if a command is an object.
-If you want to do that, you have to implement commands as an aspect.
+For an object to have a reference to a command, you might be able to define a relation between a command and an object. This is only possible, if a command is an object.
+If you want to do that, you might implement commands as an aspect.
 
 A command itself can also contain related command references, which are then considered parameters of the command.
 

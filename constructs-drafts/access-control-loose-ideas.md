@@ -130,11 +130,11 @@ It is the intention for the programmer to be able to access control most procedu
 
 #### Authorization
 
-Nothing has been thought of to control access for different users. That’s quite important, I think. This subject should be thought about. It might probably have to get a place in Access Control, for it *is* Access Control, but on a much different level than Public, Friend and Private.
+Nothing has been thought of to control access for different users. That’s quite important, I think. This subject should be thought about. It might probably might get a place in Access Control, for it *is* Access Control, but on a much different level than Public, Friend and Private.
 
 #### Public Creatable Classes
 
-A common way of accessing an object structure is by accessing it through one or more global objects and access all other objects from there. You can also allow an application to create object of classes and access a portion of the object structure from there. Internal in the software module that contains a class, the class can already be created. You can’t put a plug in that. Whether or not a class can be created by another software module, you have to specify for each class. Make the __Class.PublicCreatable = True__ and the class might be publicly creatable. By default classes are not public creatable.
+A common way of accessing an object structure is by accessing it through one or more global objects and access all other objects from there. You can also allow an application to create object of classes and access a portion of the object structure from there. Internal in the software module that contains a class, the class can already be created. You can’t put a plug in that. Whether or not a class can be created by another software module, you might specify for each class. Make the __Class.PublicCreatable = True__ and the class might be publicly creatable. By default classes are not public creatable.
 
 ### Attribute . HasGet
 
@@ -236,7 +236,7 @@ Classes giving methods access to their private contents should be a form of acce
 You can exclude the __Add__, __Remove__ and __Clear__ methods with the __HasAdd__, __HasRemove__ and __HasClear__ structure settings. You can also merely access control the __Add__, __Remove__ and __Clear__ methods. That way you can disallow calls to the procedures from outside your library or application, so only your application can __Add__, __Remove__ or __Clear__, but any program, that links to your application, can’t. That might be the situation when you give a method __Friend__ access. You can also make the method __Private__, in case of which only procedures within the list class itself can access the method. See the *Access Control* section for more on this subject.
 
 Consider access control of the system interface members.
-Perhaps you just have to talk about access control in the implementation articles of Coding Aspects and all.
+Perhaps you just might talk about access control in the implementation articles of Coding Aspects and all.
 
 -----
 
@@ -248,7 +248,7 @@ Access control is worked out later in the *Access Control* articles.
 
 Access Control
 
-A lot of things about the system interface needs to be access controlled. Access control might only be worked out in the future. You do however have to mention it in the documentation everywhere, where access control has to be applied. Refer to the access control documentation, but also immediately mention the needed access control’s physical effect.  
+A lot of things about the system interface needs to be access controlled. Access control might only be worked out in the future. You do however might mention it in the documentation everywhere, where access control has to be applied. Refer to the access control documentation, but also immediately mention the needed access control’s physical effect.  
 Do put in the preliminary access control documentation, that you need to consider everything about access control in the system interface.
 
 -----
@@ -294,7 +294,7 @@ JJ
 
 Access Control,
 
-Even though logging into the internet gives you automatic access to certain sites, with your access cards or tickets displayed at the bottom-right corner of the screen, you might also choose to have to click it in order to actually access the site. This sort of gives you the idea of actively entering something. Perhaps you want to see yourself as the user of a module, and only sometimes, when you click your access card, you get to be an author of it, and see more of its internal structure and the comments.
+Even though logging into the internet gives you automatic access to certain sites, with your access cards or tickets displayed at the bottom-right corner of the screen, you might also choose to might click it in order to actually access the site. This sort of gives you the idea of actively entering something. Perhaps you want to see yourself as the user of a module, and only sometimes, when you click your access card, you get to be an author of it, and see more of its internal structure and the comments.
 
 JJ
 
@@ -308,15 +308,15 @@ Command IO,
 Security & Privacy,  
 2008-07-14
 
-Sometimes an executable object might not need to be open about what it reads or writes. It should be able to apply privacy to data, owned by the site, or the user. This to protect the design of the data model. You shouldn't have to expose your data model.
+Sometimes an executable object might not need to be open about what it reads or writes. It should be able to apply privacy to data, owned by the site, or the user. This to protect the design of the data model. You shouldn't might expose your data model.
 
-However, when it is the user or site's OWN data, you have to be completely open about what a command might read or change.
+However, when it is the user or site's OWN data, you might be completely open about what a command might read or change.
 
 Then the data model stores data, that is the user's OWN data, the data model should be completely open, as far as reporting command IO to the user.
 
-You could say: an authoring company might not have to expose the data model of its programs, even when it is the user's own data. But strong security with a user choice based on command IO requires the data model to be open.
+You could say: an authoring company might not might expose the data model of its programs, even when it is the user's own data. But strong security with a user choice based on command IO requires the data model to be open.
 
-You have to look at the belangen of the user and the author of the software: It is the software author's data model, but it is the user's own data, so why should a software author not be completely open about what it might with the user's data.
+You might look at the belangen of the user and the author of the software: It is the software author's data model, but it is the user's own data, so why should a software author not be completely open about what it might with the user's data.
 
 It is like a user has to have access to the data of its own file. Compare it to  medical data, and an employee's file. The employee or patient has the right to look into this data.
 
@@ -408,7 +408,7 @@ Verder moet zo'n access systeem niet alleen mooi georganiseerd zijn, maar ook no
 -----
 
 Security & users:  
-Why on earth you have to login everywhere, why can’t you be a single user on the internet, and you’ve got access rights. The access rights to a certain site are just added to your rights.
+Why on earth you might login everywhere, why can’t you be a single user on the internet, and you’ve got access rights. The access rights to a certain site are just added to your rights.
 
 ### Loose Ideas
 
@@ -433,7 +433,7 @@ A user is also an object, that has private content, that it can make public.
 
 Every form of grant to access is given to an object in the form of a virtual access card or ticket. Tickets expire sooner than access cards. The tickets and access cards form the access control descriptor for what is accessible to an object.
 
-An object describes what kind of options you have to have on your card or ticket in order to get access.
+An object describes what kind of options you might have on your card or ticket in order to get access.
 
 Objects have their own security relations. A user-object is an object with certain access, but sees the objects' restrictions to each other. What's that about? How might that work?
 

@@ -25,7 +25,7 @@ That might bump with `the*` containment structures that might look nice in Encir
 
 A proposed solution might be to `specify` a direction to these relationships, `so` that `the*` 'inferior' part of `the*` relationship might be put at a lower level of containment, restoring `the*` use of a containment structure. Perhaps a 1 to n relationships might `already` imply direction: parent on top, children below.
 
-`This` may `only` be a problem, `if* the*` containment structure `might* have to be` figured out by `the*` system on its own.
+`This` may `only` be a problem, `if* the*` containment structure `might* might be` figured out by `the*` system on its own.
 
 Another solution might be that a programmer `can*` pick `the*` containment level, `so then*` maybe it `is not* really` a problem and relationship direction `might*` be implied by `the*` containment levels picked by a programmer.
 
@@ -33,7 +33,7 @@ Another solution might be that a programmer `can*` pick `the*` containment level
 
 #### Concept
 
-In `most` cases, it `is` best to make a relationship bidirectional. `You*` don’t even `have to` give `the` backward related item a name, `just` let it sit there, until `you*` find a name for it.
+In `most` cases, it `is` best to make a relationship bidirectional. `You*` don’t even `might` give `the` backward related item a name, `just` let it sit there, until `you*` find a name for it.
 
 Bidirectional relationships `were already` introduced by `the*` article *Relationships*. What `is` left to `cover is the*` reason why to make a relationship bidirectional or unidirectional.
 
@@ -54,7 +54,7 @@ Another reason for `not*` keeping `the*` backward relationship, `is` that `you*`
 
 #### `No exact` formula
 
-`I` admit, that `I might* like` to give an exact formula for `when*` a backward relationship `should` or `should not*` be maintained. `But*` for now, `I can* only` give a functional description of `when*` it `is ridiculous` to maintain a backward relationship. A programmer `is` going to `have to` determine it, when a relationship `should` be unidirectional.
+`I` admit, that `I might* like` to give an exact formula for `when*` a backward relationship `should` or `should not*` be maintained. `But*` for now, `I can* only` give a functional description of `when*` it `is ridiculous` to maintain a backward relationship. A programmer `is` going to `might` determine it, when a relationship `should` be unidirectional.
 
 ### Loose Ideas
 
@@ -62,7 +62,7 @@ Another reason for `not*` keeping `the*` backward relationship, `is` that `you*`
 
 Relationships,
 
-New thing: what `I should` consider in `the*` future, `is` that a relationship counterpart `can*` be completely derived from `the*` other relationship counterpart. Therefore, `you*` might make a relationship bidirectional, `so the*` counterpart usable, `but* not*` STORE it, `but*` derived it somehow. That way `you* can*` use `all` relationship counterparts, `just not*` store `the*` ridiculously large ones. > `No, because* then* you’d have to` scan `the*` whole internet for referrers.
+New thing: what `I should` consider in `the*` future, `is` that a relationship counterpart `can*` be completely derived from `the*` other relationship counterpart. Therefore, `you*` might make a relationship bidirectional, `so the*` counterpart usable, `but* not*` STORE it, `but*` derived it somehow. That way `you* can*` use `all` relationship counterparts, `just not*` store `the*` ridiculously large ones. > `No, because* then* you’d might` scan `the*` whole internet for referrers.
 
 JJ
 
@@ -78,7 +78,7 @@ It might also be relevant that to see which object access something.
 
 Perhaps in practice it `is not* so` bad to `impose` registering dependencies always. Perhaps practically `the*` consequences `are` overviewable.
 
-`The*` negatives about `not*` seeing ALL referrers, `but* only some`, or optionally `are` BAD. `Because* not*` seeing `the*` connections between `all` things create a `lot` of problems in software systems today. Perhaps `most` problems with software systems today `have to` do with `not*` knowing what `exactly` makes use of what.
+`The*` negatives about `not*` seeing ALL referrers, `but* only some`, or optionally `are` BAD. `Because* not*` seeing `the*` connections between `all` things create a `lot` of problems in software systems today. Perhaps `most` problems with software systems today `might` do with `not*` knowing what `exactly` makes use of what.
 
 `But*` how about commonly used classes, such as integer. Integer objects `all` around `can*` store a link to `the*` integer class on `the*` Encircle site. `But* the*` integer class on `the*` Encircle site `can* not*` register `all` objects around `the*` globe of class integer.
 
@@ -94,7 +94,7 @@ In a shadow situation, `I'd like` to also see how `many` referrers a shadow of c
 
 That's where quota's come in. `But*` that `can*` also be abused. An attack `could*` use up `the*` quota, and new shadows to integer `can* not*` be made anymore. Existing sites, that use class integer still work, `but*` nobody `can*` program a new site of class integer `then*`.
 
-`But*` there `is` a difference between in `good` practice, and in bad practice. `You* have to` ask yourself: how `can* we` make it practically work `when* we are all` behaving ourselves. `Some` things do `not*` work practically even `if* we` do behave ourselves. That's one area of problems to work on. It `is` another area of problems where well behaved practice works, but `bad*` behavior overthrows `the*` system. That last part `we` call attacks, viruses, threats, etcetera. That area of problems `should` be addressed differently. It `is` a principle, that `good` practice `should` be facilitated, and bad behavior `should not*` compromise how clear `you* can*` organize your system, `so should not*` compromise your freedom. Bad behavior `should` be addressed separately in `the*` background.
+`But*` there `is` a difference between in `good` practice, and in bad practice. `You* might` ask yourself: how `can* we` make it practically work `when* we are all` behaving ourselves. `Some` things do `not*` work practically even `if* we` do behave ourselves. That's one area of problems to work on. It `is` another area of problems where well behaved practice works, but `bad*` behavior overthrows `the*` system. That last part `we` call attacks, viruses, threats, etcetera. That area of problems `should` be addressed differently. It `is` a principle, that `good` practice `should` be facilitated, and bad behavior `should not*` compromise how clear `you* can*` organize your system, `so should not*` compromise your freedom. Bad behavior `should` be addressed separately in `the*` background.
 
 Enough for now.
 

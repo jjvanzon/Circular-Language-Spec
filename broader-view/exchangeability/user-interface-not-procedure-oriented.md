@@ -10,7 +10,7 @@ Programming interfaces have gone from procedural, to object oriented. Procedures
 
 User interfaces however, are still too much procedure oriented, because there are commands in a menu, instead of being able to right-click on an object and see any action you can undertake on it.
 
-The objects you see on screen have a serious lack of items in their *context* menu (the one you see when you right-click an object on screen). Instead, most commands are hidden somewhere in the big menu at the top of your window. That’s not handy. You’d have to look through the menu’s to find a command to execute on an object, you already see on screen.
+The objects you see on screen have a serious lack of items in their *context* menu (the one you see when you right-click an object on screen). Instead, most commands are hidden somewhere in the big menu at the top of your window. That’s not handy. You’d might look through the menu’s to find a command to execute on an object, you already see on screen.
 
 Any command you can execute on an object should be listed under the context menu of that object. I first and foremost want to see a command hanging under an item, not look through a big list of commands to find the one, I can execute on my item.
 

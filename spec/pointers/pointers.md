@@ -131,7 +131,7 @@ Symbol __A__ `is` an object reference to symbol __B__. Symbol __B__ `is` an obje
 
 A target class is found by following the redirections, that lead to a symbol’s class.
 
-Do not follow more than one class redirection, because if a class points out a class again, then the second class is *another* class object, that the first class is just *based* on. If the class is an object reference itself, you have to follow all object redirections to find the target class object. Then you have found the target class. That’s where redirection following ends. If the class object has a class itself, you might be tempted to follow the class object’s class redirections as well, to find the final target class, but you should not do that. The first class redirection indicates the class. If that class object has a class itself, then the class object is only based on another class, but it *is* a class on its own. An object redirection is just a much tighter bond like that, than a class redirection.
+Do not follow more than one class redirection, because if a class points out a class again, then the second class is *another* class object, that the first class is just *based* on. If the class is an object reference itself, you might follow all object redirections to find the target class object. Then you have found the target class. That’s where redirection following ends. If the class object has a class itself, you might be tempted to follow the class object’s class redirections as well, to find the final target class, but you should not do that. The first class redirection indicates the class. If that class object has a class itself, then the class object is only based on another class, but it *is* a class on its own. An object redirection is just a much tighter bond like that, than a class redirection.
 
 ##### Diagram Notation
 
@@ -165,7 +165,7 @@ Below `is` an example, with classes getting further redirected.
 
 ##### Concept
 
-As `covered` by `the*` article *Related Classes*, `you* can*` also establish a unidirectional relation with a *pointer* to another class. `This is not* so` common, `but*` it `is` possible `all the*` same. `This is` mostly applied, to allow a class to make a sub-object’s class *adjustable*. It `is important` to consider, that everything inside a pointer `is really` part of `the*` *target class*, `but*` a pointer itself `is` usable individually, independent from `the*` target class. `This is` well visualized in `the*` article *Relation to a Pointer in a Diagram.* To make a relation to a pointer bidirectional, `you* have to` give `the*` target class a relation back to `the*` first class. `The*` first class relates to `the*` pointer, `but* the*` target class relates back to `the*` first class. `This` automatically gives `the*` pointer a relation back to `the*` first class. `This` creates a bidirectional relation between `the*` first class and `the*` pointer to a class, `but* only` a unidirectional backwards relation between `the*` target class and `the*` first class. `This is because* the*` first class might `not*` directly refer to `the*` target class, `but* the*` target class might directly refer back to it. `You* should` see it in a diagram. That `might` make it `much` clearer.
+As `covered` by `the*` article *Related Classes*, `you* can*` also establish a unidirectional relation with a *pointer* to another class. `This is not* so` common, `but*` it `is` possible `all the*` same. `This is` mostly applied, to allow a class to make a sub-object’s class *adjustable*. It `is important` to consider, that everything inside a pointer `is really` part of `the*` *target class*, `but*` a pointer itself `is` usable individually, independent from `the*` target class. `This is` well visualized in `the*` article *Relation to a Pointer in a Diagram.* To make a relation to a pointer bidirectional, `you* might` give `the*` target class a relation back to `the*` first class. `The*` first class relates to `the*` pointer, `but* the*` target class relates back to `the*` first class. `This` automatically gives `the*` pointer a relation back to `the*` first class. `This` creates a bidirectional relation between `the*` first class and `the*` pointer to a class, `but* only` a unidirectional backwards relation between `the*` target class and `the*` first class. `This is because* the*` first class might `not*` directly refer to `the*` target class, `but* the*` target class might directly refer back to it. `You* should` see it in a diagram. That `might` make it `much` clearer.
 
 ##### Diagram Notation
 
@@ -177,7 +177,7 @@ As `covered` by `the*` article *Related Classes*, `you* can*` also establish a u
 
 It `is important` to consider, that everything inside a pointer `is really` part of `the*` *target class*, `but*` a pointer itself `is` usable individually, independent from `the*` target class.
 
-To make a relation to a pointer bidirectional, `you* have to` give `the*` target class a relation back to `the*` first class.
+To make a relation to a pointer bidirectional, `you* might` give `the*` target class a relation back to `the*` first class.
 
 `The*` relation back `can*` be displayed in both symbols, that represent `the*` target class:
 
@@ -301,7 +301,7 @@ This leaves us with the following command added for pointer-to-pointer situation
 
 - __Use Reference As Object__
 
-Detail: For that last command you might want to overload __Object Get.__ But that might not work. You can not overload it, because they might both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
+Detail: For that last command you might want to overload __Object Get.__ But that might not work. You can not overload it, because they might both take a pointer to an object as an argument. To disambiguate, they might have a different name and you might point to a *specific* command.
 
 ##### System Commands for the Class Aspect
 
@@ -348,7 +348,7 @@ This leaves us with the following command added for pointer-to-pointer situation
 
 - __Use Reference As Class__
 
-Detail: For that last command you might want to overload __Object Get.__ But that might not work. You can not overload it, because they might both take a pointer to an object as an argument. To disambiguate, they have to have a different name and you have to point to a *specific* command.
+Detail: For that last command you might want to overload __Object Get.__ But that might not work. You can not overload it, because they might both take a pointer to an object as an argument. To disambiguate, they might have a different name and you might point to a *specific* command.
 
 ##### The Extra Commands & Overloads
 
@@ -641,7 +641,7 @@ When there is no type line, the object determines the type.
 
 ![](images/Pointers.038.jpeg)
 
-Interface lines are not followed. Note that the target type doesn’t have to be pointed to by a type line. 
+Interface lines are not followed. Note that the target type doesn’t might be pointed to by a type line. 
 
 ###### Object-Type Trace
 

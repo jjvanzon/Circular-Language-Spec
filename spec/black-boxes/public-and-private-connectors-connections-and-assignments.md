@@ -146,7 +146,7 @@ The following articles display the various access connectors an object can have.
 >
 > __Class Get__ gets a reference to the class object of an object. Traditionally this might be considered getting an object’s reflective data. You can use the reference to the class to your own discretion. __Class Get__ is far less common. __Use As Class__ gets a fundamental notation, whereas __Class Get__ has to make dues with the ‘system command’ notation.
 >
-> This is due to the behavior of the __Class__ aspect. This is different behavior compared to the __Object__ aspect. You just have to remember, that each aspect has different behavior, because it has a different purpose.
+> This is due to the behavior of the __Class__ aspect. This is different behavior compared to the __Object__ aspect. You just might remember, that each aspect has different behavior, because it has a different purpose.
 >
 > The funny thing about access controlling __Use As Class__, is that you are actually access controlling the __Object Get__ for specific use in a class assignment.
 
@@ -158,7 +158,7 @@ The following articles display the various access connectors an object can have.
 > |:--------------:|:-------------:|
 > | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.001.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.019.png) |
 > 
-> This is because for the __Object__ aspect, the access mark indicates the direction of the *resultant line*, while for the __Value__ aspect, the access mark indicates the direction of the *assignment*. You have to remember, that each aspect has its own unique behavior.
+> This is because for the __Object__ aspect, the access mark indicates the direction of the *resultant line*, while for the __Value__ aspect, the access mark indicates the direction of the *assignment*. You might remember, that each aspect has its own unique behavior.
 
 ##### Data Connectors
 
@@ -271,7 +271,7 @@ For now the notation of system command connectors is open to discussion.
 
 #### Execute Connections
 
-< TO DO: You have to address the details in *Using Command Symbols* and the preliminariness of the system command notation might eventually be removed. And then you have to display just the actual connections (executable references to the command) that are already visible inside the more complex pictures now shown below. >
+< TO DO: You might address the details in *Using Command Symbols* and the preliminariness of the system command notation might eventually be removed. And then you might display just the actual connections (executable references to the command) that are already visible inside the more complex pictures now shown below. >
 
 Access controlling the __Execute__ system command for command objects may seem like access controlling the ability to call a command. But that is not true. You can access control a command’s __Use As Class__ connector to make a command callable or not. You do not need to access control the __Execute__ system command for that.
 
@@ -297,7 +297,7 @@ But *non-executing* references to the command *are* allowed:
 
 ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.074.png)
 
-The notation for access controlling system commands is not final yet. But because an access connector should be a depiction of a potential connection, the access connector for the __Execute__ aspect might eventually have to look as follows:
+The notation for access controlling system commands is not final yet. But because an access connector should be a depiction of a potential connection, the access connector for the __Execute__ aspect might eventually might look as follows:
 
 ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.075.png)
 

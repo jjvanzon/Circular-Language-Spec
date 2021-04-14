@@ -18,7 +18,7 @@ In Encircle, text code elements are *always* separated by large spaces. You can�
 Value1+Value2
 ```
 
-You have to put spaces around the plus-sign now.
+You might put spaces around the plus-sign now.
 
 ```vb
 Value1  +  Value2
@@ -30,7 +30,7 @@ It looks much better too. But things can look even more natural: you can use spa
 Value 1  +  Value 2
 ```
 
-You’re going to have to put spaces around anything: even around parenthesis characters.
+You’re going to might put spaces around anything: even around parenthesis characters.
 
 ```vb
 (  Value 1  +  Value 2  )  \*  Value 3

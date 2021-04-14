@@ -67,11 +67,11 @@ additional J Code optimizations can be gotten from this.
 
 -----
 
-Might J Code’s compilation optimizers take away bound these checks? Consider the ComponentList’s Remove method and see what the optimizer might have to do to find out a safety check could go.
+Might J Code’s compilation optimizers take away bound these checks? Consider the ComponentList’s Remove method and see what the optimizer might might do to find out a safety check could go.
 
 -----
 
-An optimization: in a procedure every argument that is on the stack might be used only once. Then you can alter the order of the arguments so that it’s the order in which they are used, so that you can pop em one by one and don’t have to read them and then pop em at the end.
+An optimization: in a procedure every argument that is on the stack might be used only once. Then you can alter the order of the arguments so that it’s the order in which they are used, so that you can pop em one by one and don’t might read them and then pop em at the end.
 
 If all arguments are used once and another one twice, you *might* want to push the argument on the stack twice in the order that the values are used.
 
@@ -98,7 +98,7 @@ JJ
 
 Optimization
 
-At some point you’re going to want to explain what happens physically when doing some high level stuff, so you can see if this is the optimal way to do it. But I don’t care that much right now, but at some point it might have to be addressed. I might do that in J Code, Fundamental Principles, but I won’t work it out straight away. Perhaps I’d just make an article about it, where I mention that it should be studied, but I don’t want to do that straight away, and why it should be studied. How things could be non-optimal and may be optimized.
+At some point you’re going to want to explain what happens physically when doing some high level stuff, so you can see if this is the optimal way to do it. But I don’t care that much right now, but at some point it might might be addressed. I might do that in J Code, Fundamental Principles, but I won’t work it out straight away. Perhaps I’d just make an article about it, where I mention that it should be studied, but I don’t want to do that straight away, and why it should be studied. How things could be non-optimal and may be optimized.
 
 JJ
 
@@ -116,7 +116,7 @@ JJ
 
 Private procedures can be compiled inline except when infinite recursion is possible.
 
-You can also choose to compile all procedures inline. This means that when you have compiled the module you don’t have separate procedures anymore, so you can’t have separate interface members, so no interfaces and no classes. That way the whole object oriented organization collapses and you have one pile of spaghetti code. Spaghetti code that is *way* faster than the organized code. However, you can’t use the classes of the module anymore. You’d have to have the module’s source code to be able to program with it again.
+You can also choose to compile all procedures inline. This means that when you have compiled the module you don’t have separate procedures anymore, so you can’t have separate interface members, so no interfaces and no classes. That way the whole object oriented organization collapses and you have one pile of spaghetti code. Spaghetti code that is *way* faster than the organized code. However, you can’t use the classes of the module anymore. You’d might have the module’s source code to be able to program with it again.
 
 #### Inline Module
 
@@ -239,9 +239,9 @@ Sudden idea: to manually make the tables out of human readable text you can slid
 
 Some instruction sequences might have the same result and are both the shortest and the fastest, but then there's the heat produced by the CPU. Some instructions may produce more heat than others. When it gets too hot then the CPU might be slowed down, so limiting the heat may be something else to keep in mind.
 
-There might be optimization several priorities. You might want to have the fastest solution, you might to limit the heat the CPU produces, you might want the solution with the least disk access... I want to offer a general optimization which favors speed, but also other things to a certain extend, but I have to keep in mind that other optimizations might also be wished.
+There might be optimization several priorities. You might want to have the fastest solution, you might to limit the heat the CPU produces, you might want the solution with the least disk access... I want to offer a general optimization which favors speed, but also other things to a certain extend, but I might keep in mind that other optimizations might also be wished.
 
-The objective is to benefit fully from assembly, but not to have to bother with the downsides of it. On top of that there's added clarity by an alternative naming and forgetting about different instruction forms.
+The objective is to benefit fully from assembly, but not to might bother with the downsides of it. On top of that there's added clarity by an alternative naming and forgetting about different instruction forms.
 
 If you take the assembly division instructions for instance then you see that certain forms are faster. Careful use of the alternative language I might make might make faster code(?). But most optimizations are done by the compiler. The amount of tricks and things you need to know to get the optimal result is far smaller than programming in assembly.
 
@@ -251,7 +251,7 @@ Another idea: an 'overhoring' program is still useful.
 
 -----
 
-The only thing you have to do to really optimize your code might be to specify with each line or group of lines what storages matter to you or maybe even this can be exactly derived from the rest of the code. Consider for instance always overwriting data previously set by an operation before you ever used that data. Then that data is unimportant and the synonyms you can choose from are allowed to produce different results for this particular data.
+The only thing you might do to really optimize your code might be to specify with each line or group of lines what storages matter to you or maybe even this can be exactly derived from the rest of the code. Consider for instance always overwriting data previously set by an operation before you ever used that data. Then that data is unimportant and the synonyms you can choose from are allowed to produce different results for this particular data.
 
 ##### Inlining Modules
 
@@ -281,7 +281,7 @@ An inline compiled module can create objects from its own classes, because the m
 
 Private procedures can be compiled inline except when infinite recursion is possible.
 
-You can also choose to compile all procedures inline. This means that when you have compiled the module you don’t have separate procedures anymore, so you can’t have separate interface members, so no interfaces and no classes. That way the whole object oriented organization collapses and you have one pile of spaghetti code. Spaghetti code that is *way* faster than the organized code. However, you can’t use the classes of the module anymore. You’d have to have the module’s source code to be able to program with it again.
+You can also choose to compile all procedures inline. This means that when you have compiled the module you don’t have separate procedures anymore, so you can’t have separate interface members, so no interfaces and no classes. That way the whole object oriented organization collapses and you have one pile of spaghetti code. Spaghetti code that is *way* faster than the organized code. However, you can’t use the classes of the module anymore. You’d might have the module’s source code to be able to program with it again.
 
 
 ##### Inline Module
@@ -369,7 +369,7 @@ However you don’t have the names of modules, classes and other elements. You n
 
 #### Leave Out Access
 
-To make a system perform faster you can take away the object oriented structure. With that you gain that you don’t have to put directions on the stack and make jump statements to get to the procedure.
+To make a system perform faster you can take away the object oriented structure. With that you gain that you don’t might put directions on the stack and make jump statements to get to the procedure.
 
 Another way to optimize code for speed is to inline procedures. Preferably all procedures if there isn’t a potentially infinite recurrence. (You could inline a maximum of recurrences.)
 

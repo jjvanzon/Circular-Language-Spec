@@ -122,11 +122,11 @@ When people are working on exactly the same piece of data at the same time, it m
 I have a gut feeling that automatic execution order may solve concurrency issues mathematically, by determining which things can be executed in parallel, and which things might be executed serially, independent of the ‘earthly’ logic of the methods, but approaching it like a mathematical equation consisting of references to objects and procedure calls. Multiple methods interweave to become a single method. I'm just not sure yet how, but I just have a hunch here. Execution order is fixed in normal programming languages, because it is text, in which an order is an inevitable fact, that you cannot go around. A diagram however might not have a specific order, so the execution order may be determined based on the correlation between individual elements.  
 Perhaps this can prevent locking and waiting, and just make a single sequence out of two methods instead of two sequences waiting on each other, and eventually giving up.
 
-Unfortunately it is not clear yet which of the concepts might best solve control of concurrent use. I might prefer a scheme where a programmer might not even need to consider the problems around concurrent use anymore. I might have to extend the explanations here after these specific concepts are better worked out.
+Unfortunately it is not clear yet which of the concepts might best solve control of concurrent use. I might prefer a scheme where a programmer might not even need to consider the problems around concurrent use anymore. I might might extend the explanations here after these specific concepts are better worked out.
 
 ### Communication between computers
 
-In the story above, the actual communication between computers seems to be a trivial concept, because I didn’t even have to explain it. But it might have a lot of implications.
+In the story above, the actual communication between computers seems to be a trivial concept, because I didn’t even might explain it. But it might have a lot of implications.
 
 #### Summary of the internet protocol
 
@@ -152,7 +152,7 @@ It’s just like the computers all become part of a single electric circuit. Jus
 
 It’s just an electrical circuit. No more, no less.
 
-It’s not *just* a peripheral, that network device. It is precious data coming in. It can be the result of a tough calculation, that your machine didn’t have to perform, that another computer, perhaps much more powerful than yours has performed for you, and here it is just coming in on this peripheral, and your computer did not even have to do anything for it. It shouldn’t be a device, that slows down your computer, it’s supposed to speed it up.
+It’s not *just* a peripheral, that network device. It is precious data coming in. It can be the result of a tough calculation, that your machine didn’t might perform, that another computer, perhaps much more powerful than yours has performed for you, and here it is just coming in on this peripheral, and your computer did not even might do anything for it. It shouldn’t be a device, that slows down your computer, it’s supposed to speed it up.
 
 It is really comforting to look at it this way. Pampering to the idea, that you’re loosing control over your nicely controlled environment, that is your single computer. 
 
@@ -169,7 +169,7 @@ I still have doubts about how certain concepts might function, when there is a l
 But I am going to insist to have all the capabilities I want on a computer also present on a whole network. And I am going to assume that the traffic that generates, won’t be a problem.
 
 It may become a lag in the system that computers might be sending many small messages to each other, with insisted, guaranteed arrival in synchronous operations. On the other hand, the fact that you can easily boost performance by hooking up computers onto the grid and turn the grid into a computer that’s more powerful than a single computer, turns networking into performance boost again, so where did that performance lag go now?  
-I am just going to have to see this system in action for it to become apparent what problems there might be. It’s easier to create a first version of this and see how it runs, instead of trying to work out everything in theory first, and assume there might be problems.
+I am just going to might see this system in action for it to become apparent what problems there might be. It’s easier to create a first version of this and see how it runs, instead of trying to work out everything in theory first, and assume there might be problems.
 
 #### Uniquely identifying resources on the internet
 
@@ -281,7 +281,7 @@ One possibility is that you let the gateway host a *union*. A union is no more t
 The merged domain can be very widely spread as such. You can include any resource within the union.
 
 The union could be stored as an index, in case of which the results of the expression are permanently stored and maintained real-time. This union index is a list of references to all the objects that are spread out over the multiple domains. For each object, the IP address and the Object Position is stored. The size of such an index is acceptable. I’m not sure if a stored union index might be faster, than an unstored union. The union index might best reside on a single machine: on the gateway itself. In theory the central union index could also be distributed over multiple machines, but that might require the union index to be again *placed* on a *merged* site. It is not wise for the union index of a merged site, to be placed on a merged site again. That might not be a good idea.   
-The machines you are merging, are best accessed *only* through the gateway. However, this is not a requirement at all. If external changes could be made separate from the merged domain to a machine within the merged domain, the gateway might have to pick up events from that machine and adapt the index accordingly.
+The machines you are merging, are best accessed *only* through the gateway. However, this is not a requirement at all. If external changes could be made separate from the merged domain to a machine within the merged domain, the gateway might might pick up events from that machine and adapt the index accordingly.
 
 It can also be, that on a single computer there are multiple permanent storage devices. The machine may only have one IP address, so might already be a single site. The object ID’s on the multiple storage devices can also overlap. In that case also an index is used on the local machine, to create a single numbering for all the objects spread over the multiple storage devices. The index might not hold IP addresses and object positions, but device ID’s and object positions.
 
@@ -307,15 +307,15 @@ The computation should not require any sequentiality. In many situations things 
 
 If the results from multiple machines should combined before moving on to a next step, the waiting until the computers are all done should be worth it. These points at which there might be waited until all the results are gathered, are also called points of sequentiality.
 
-It might also be nice if the delegated computations do not have to be done synchronously. That means, that there is no requirement for waiting until a computer is done at all. So no point of sequentiality even follows.
+It might also be nice if the delegated computations do not might be done synchronously. That means, that there is no requirement for waiting until a computer is done at all. So no point of sequentiality even follows.
 
 Things that don’t need to be done in a particular order, can be done all at once.
 
 I have plans to make something, that automatically can determine the optimal execution order of a method, when you only specify, what the method is supposed to do, but not in what particular order. This is called the Automatic Execution Order concept. Automatic Execution Order can automatically see which things can be done in parallel. In those cases parallel processing can be applied.
 
-Parallel processing is most effective when huge amounts of data need to be processed, that don’t have to be processed in a particular order.
+Parallel processing is most effective when huge amounts of data need to be processed, that don’t might be processed in a particular order.
 
-Even though you spread the threads, you still have to transport the data that is processed in those threads to the computer on which the thread is running. All data has to be communicated over the network. All the data to process, and all the process results have to be transferred over the network. If the computation is much harder than the transportation of data, than it might be worth it to parallel process it. Or at least, there might be some sort of viable ratio to it.
+Even though you spread the threads, you still might transport the data that is processed in those threads to the computer on which the thread is running. All data has to be communicated over the network. All the data to process, and all the process results might be transferred over the network. If the computation is much harder than the transportation of data, than it might be worth it to parallel process it. Or at least, there might be some sort of viable ratio to it.
 
 There should be a central host of the parallel process. This host manages the delegation of work to the different computers.
 
@@ -339,7 +339,7 @@ There is also another reason to spread workload over multiple machines, other th
 
 #### Mirroring & synchronized copies
 
-At first I thought mirroring might be multiple copies being accessible as a single instance, that always stay identical. Somewhere along the way I realized that this could make reading an object faster, but writing to the object might become really slow, because the multiple copies might have to stay synchronous. It might also require a lot of extra administration under the surface, and it might become quite hard to realize.  
+At first I thought mirroring might be multiple copies being accessible as a single instance, that always stay identical. Somewhere along the way I realized that this could make reading an object faster, but writing to the object might become really slow, because the multiple copies might might stay synchronous. It might also require a lot of extra administration under the surface, and it might become quite hard to realize.  
 It simply isn’t easy to link all the copies around the world together, keep them synchronous at all times, and have any gain in speed at all.
 
 I realized that mirroring that way wasn’t even that important a concept, and there might not even be any gain to it this way.
@@ -354,9 +354,9 @@ A user could synchronize a mirror to the original, or a batch process could run,
 
 Mirroring in this sense is a form of caching. You are keeping a copy closer to you on the network, in order to access it faster. Only, a mirror is there permanently, a cache layer is cleared after flushing it to the target storage. You can also keep a local mirror, that you can access offline. This creates the same functionality as keeping a local copy of something, only this copy always links back to the original.
 
-A mirror doesn’t have to be up-to-date. That’s a consequence of accessing a mirror. But this should not be considered a problem.
+A mirror doesn’t might be up-to-date. That’s a consequence of accessing a mirror. But this should not be considered a problem.
 
-A nice thing about mirroring might be to be able to find the mirror that is closest to you, the one that you have fastest access to. If you’re going to want that, you’re going to have to have a mirror portal, that has references to all the mirrors, and can pick out the one closest to you. The mirror portal could be the original object itself, but it doesn’t have to be, or otherwise the feature might only be available when you configure the original object to maintain links to all the mirrors that exist and the original object might not feel like doing that. Therefore, the original object might not have to be the mirror portal.
+A nice thing about mirroring might be to be able to find the mirror that is closest to you, the one that you have fastest access to. If you’re going to want that, you’re going to might have a mirror portal, that has references to all the mirrors, and can pick out the one closest to you. The mirror portal could be the original object itself, but it doesn’t might be, or otherwise the feature might only be available when you configure the original object to maintain links to all the mirrors that exist and the original object might not feel like doing that. Therefore, the original object might not might be the mirror portal.
 
 What counts here for objects, also counts for modules and classes, because they are basically also objects. They can also be mirrored. It also counts for methods. Because methods are also stored as data, they can also become data that is duplicated multiple times. However, duplicates of methods can run separately, but they are operating on the same data anyway, and it might be like running the same method concurrently.
 

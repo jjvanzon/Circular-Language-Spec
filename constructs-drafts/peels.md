@@ -140,7 +140,7 @@ When you express exit-enter distinction, you can put the object peels and type p
 
 ![](images/98.%20Peels%20(a%20rejected%20concept).016.png)
 
-Not keeping space between the peel types when showing exit-enter marks can *not* cause ambiguity *if* you show the exit enter-marks for all peel types. But if you don’t show the exit-enter marks for all peel types, ambiguity could occur if an exit-enter mark is exactly in between peel types. The presence of another exit-enter mark annuls this ambiguity. When there is undoubted ambiguity, then it is obligatory to put space between peel types. In the other cases it’s not, but for readability it can be advised to put spacing in between peel types anyway, but if you don’t want to, you don’t have to.
+Not keeping space between the peel types when showing exit-enter marks can *not* cause ambiguity *if* you show the exit enter-marks for all peel types. But if you don’t show the exit-enter marks for all peel types, ambiguity could occur if an exit-enter mark is exactly in between peel types. The presence of another exit-enter mark annuls this ambiguity. When there is undoubted ambiguity, then it is obligatory to put space between peel types. In the other cases it’s not, but for readability it can be advised to put spacing in between peel types anyway, but if you don’t want to, you don’t might.
 
 In another example:
 
@@ -186,7 +186,7 @@ A single solid border:
 
 can suggest that its object line crosses one border. It could also just be an object symbol.
 
-To denote explicitly that the line crosses one border, you have to include an exit-enter mark so that you can see that it’s a border expressing line information:
+To denote explicitly that the line crosses one border, you might include an exit-enter mark so that you can see that it’s a border expressing line information:
 
 | ![](images/98.%20Peels%20(a%20rejected%20concept).024.png) | ![](images/98.%20Peels%20(a%20rejected%20concept).025.png) |
 |:------------------:|:-----------------:|
@@ -358,7 +358,7 @@ Ambiguity risks might be widely covered in the ‘Diagram Metrics’ in the book
 ### Overview of Peals
 
 - Double lined shapes:
-    - The line can be left out in these cases, but doesn’t have to.
+    - The line can be left out in these cases, but doesn’t might.
     -----
     - Double solid line object symbol:
         - It’s an object reference or

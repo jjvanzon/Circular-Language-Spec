@@ -94,7 +94,7 @@ A __Child__ `can* not*` appear multiple times in `the*` same __Parent__, `becaus
 An earlier solution proposed for `this, is` that in synchronizing `the*` relationship, `you*` never boldly __Add__ `the*` __Child__ to `the*` __Parent__, `but* you*` execute a __Find Or Add__, which prevents `the*` __Child__ from being added again, `when*` it `is already` in `the*` __Parent__’s list. `This might* have` worked, `but*` n => n synchronization `already required` a different solution, that `might` be more efficient for n => 1 synchronization as well.
 
 `When* you*` assign an item to a list for synchronization purposes, `no` synchronization `is to be` executed on `the*` other side again.  
-`You’d* have to` call a `special` __List Item Set__ procedure, accessible `only` to `the*` related class, that simply won’t synchonize back again.
+`You’d* might` call a `special` __List Item Set__ procedure, accessible `only` to `the*` related class, that simply won’t synchonize back again.
 
 #### n => n Synchronization
 
@@ -113,7 +113,7 @@ An item in one list `is` aware of its position in `the*` other list. That makes 
 `When*` synchronizing `the*` relationship between two objects in an __n => n__ relationship, `you* might` add a position to `the*` list of `the*` referrer, and next assign an item to `this*` position.
 
 `When* you*` assign an item to a list for synchronization purposes, `no` synchronization `is to be` executed on `the*` other side again.  
-`You'd* have to` call a `special` __List Item Set__ procedure, accessible `only` to `the*` related class, that simply won’t synchronize back again.
+`You'd* might` call a `special` __List Item Set__ procedure, accessible `only` to `the*` related class, that simply won’t synchronize back again.
 
 Another solution opted at first, `was` to execute a __Find Or Add__ for synchronization, instead of executing an normal __Add__ command. That `might*` prevent a related item from being added and added again. `But* then* you* have the*` problem: maybe `the*` same item *`should`* be added twice to `the*` list, `because*` one item `can*` relate to another item multiple times, which also `requires the*` other item to relate back to `the*` first item multiple times. For `each` reference to an item, `the*` item `might have` a reference back to `the*` referrer.
 
@@ -157,7 +157,7 @@ Synchronization `could*` cause confusion in `older` versions of Encircle, where 
 `The*` __Classes__ collection `contains` objects of class __Class__.  
 `The*` __Relationships__ collection `contains` objects of class __Relationship__.
 
-`Every` __Class__ `has` an __Attributes__ collection. A __Person Class__, for instance, `could* have` a __Name Attribute__ and an __EmailAddress Attribute__ and more attributes such as __Street__, __HouseNumber__, __ZipCode__, etcetera. A __Class__ also `contains` a __RelatedClasses__ collection, which reflects `all` of `the*` class’s related classes. `You* can’t` add __RelatedClasses__ to `this` collection. `You* have to define` relationships in `the*` __Structure.Relationships__ collection and they `might` be *reflected* in `the*` __Class.RelatedClasses__ collection. Other members of `the*` __Class__ class `are*` explained in other sections, `covering` different concepts. However, `all` members `are` briefly explained in a sub section below.
+`Every` __Class__ `has` an __Attributes__ collection. A __Person Class__, for instance, `could* have` a __Name Attribute__ and an __EmailAddress Attribute__ and more attributes such as __Street__, __HouseNumber__, __ZipCode__, etcetera. A __Class__ also `contains` a __RelatedClasses__ collection, which reflects `all` of `the*` class’s related classes. `You* can’t` add __RelatedClasses__ to `this` collection. `You* might define` relationships in `the*` __Structure.Relationships__ collection and they `might` be *reflected* in `the*` __Class.RelatedClasses__ collection. Other members of `the*` __Class__ class `are*` explained in other sections, `covering` different concepts. However, `all` members `are` briefly explained in a sub section below.
 
 A __Relationship__ consists of two __RelationClasses__. It `contains` two __RelationClass__ objects that `define the*` two classes of `the*` relationship and how they relate to one another.
 
