@@ -12,6 +12,7 @@ __Contents__
 - [Brainstorms Shape vs Line Type](#brainstorms-shape-vs-line-type)
     - [Executions & Parameters Brainstorm](#executions--parameters-brainstorm)
     - [When Shape Types, When Line Types](#when-shape-types-when-line-types)
+- [No Dashed Squares?](#no-dashed-squares)
 
 ### Loose Ideas
 
@@ -119,3 +120,12 @@ The total reason of the diamond and triangle symbols is that the effect of it ha
 Dat is zo’n beetje waar het kwartje begon te vallen dat het een shape moest zijn en geen line type.
 
 Een andere shape wordt in basis Symbol alleen gebruikt als het echt nodig is. Als het niet echt nodig was om andere shapes te gebruiken, dan maakte ik het *allemaal* cirkels.
+
+### No Dashed Squares?
+
+`<< basic diagram elements >>`  
+When an *object* `is` drawn with a dashed line, then it `is only` used as a class:
+
+![](images/1.%20Commands%20Main%20Concepts.054.png)
+
+This notation `might *not*` be copied to `the` concept of commands. This `is` because a command’s definition `might usually` be a square and a square `might usually` be a command’s definition, so `using` dashed lines for command definitions, `might` create an `overload` of dashed squares. So command symbols, that `are only` used as a definition, `do not` get a dashed notation.

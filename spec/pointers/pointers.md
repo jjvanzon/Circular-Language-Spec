@@ -64,6 +64,7 @@ __Contents__
 - [System Command Calls and Pointers](#system-command-calls-and-pointers)
     - [System Interface Call](#system-interface-call)
     - [System Interface Call with Argument](#system-interface-call-with-argument)
+- [Commands and Pointers](#commands-and-pointers)
 - [Loose Ideas](#loose-ideas)
     - [Loose Ideas about Target Objects](#loose-ideas-about-target-objects)
         - [Object Trace](#object-trace)
@@ -564,6 +565,24 @@ __Use Reference As Class `<=`__
 __(Class Set `=>`)__
 
 (has assignment notation)
+
+### Commands and Pointers
+
+`A handy thing` about command reference might be, that it `makes you able to keep` the operation `to execute` variable. `The` target of `the` command reference `is` variable. When `you *call*` a command reference, then `the` target of `the` command reference `determines` which command `is` called. `So calling` a command reference `means` calling a variable command definition.
+
+A command reference `can also` redirect to `yet` another command reference, `creating` multiple command object redirections. `The` target of `the` last command reference `determines the` definition of `the` first command reference.
+
+-----
+
+`You can not` execute an active command object through an inactive command reference.
+
+![](images/1.%20Commands%20Main%20Concepts.027.png)
+
+-----
+
+But with an executable reference to an inactive reference to an executable command `you *can*` execute `the` command object `again`.
+
+![](images/1.%20Commands%20Main%20Concepts.028.png)
 
 ### Loose Ideas
 

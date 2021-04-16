@@ -20,6 +20,7 @@ __Contents__
 - [Reading & Writing Parameters](#reading--writing-parameters)
 - [Exchangeability Between Commands & Objects](#exchangeability-between-commands--objects)
 - [Command Definition Analogy to Classes](#command-definition-analogy-to-classes)
+- [Executables & Executions](#executables--executions)
 
 ### Command Definition Compared to Objects
 
@@ -120,3 +121,18 @@ Commands with `the same` definition `contain the same` list of attributes, relat
 There `is` a `complete` analogy between a command’s definition and `the` class of an object.
 
 `Anything` that `applies` to classes, also `applies` to command definitions.
+
+### Executables & Executions
+
+`<< commands compared to objects >>`  
+An executable object might stands for a potential execution:
+
+![](images/1.%20Commands%20Main%20Concepts.050.png)
+
+An executable object might not stands for multiple executions, `just one` execution or `no` execution `at all`.
+
+`The same` command object might be displayed in `the` diagram multiple times. In that case, a symbol might be added to the diagram, that `the` multiple references to `the same` command object `might` converge to, so that a single symbol in `the` diagram `is` selected to represent `the` command object itself, while `the` other ones `are` just references.
+
+![](images/1.%20Commands%20Main%20Concepts.051.png)
+
+So it `is not so`, that each diamond in `the` diagram represents its own individual command execution. Each individual *command object* `represents` an individual command execution. Multiple symbols in `the` diagram `can` represent `the same` command object, but `might` converge into one symbol representing `the` object itself.

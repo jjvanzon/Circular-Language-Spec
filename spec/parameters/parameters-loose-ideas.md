@@ -62,3 +62,15 @@ Nice phrase? "how to link objects to a command."
 Clauses might have parameters, `just like` command definitions:
 
 ![](images/1.%20Commands%20Main%20Concepts.032.png)
+
+-----
+
+Whether a parameter of a command `can` be read or written `at all is` access-controlled. This access control `determines` whether a parameter `is` for instance input or output.
+
+-----
+
+Clauses `are` like command definitions, `therefore` they `can` have parameters `just like` command definitions.
+
+-----
+
+If `you make` an inactive clause public, `you might` make it an __Object `Out`__ parameter: an object `produced or determined` by `the` command. It `might` be an __Object `Out`__ parameter, that `is` an executable object. That `might` work `just fine`.
