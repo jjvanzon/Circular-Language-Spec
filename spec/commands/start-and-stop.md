@@ -10,8 +10,9 @@ __Contents__
 
 - [Introduction](#introduction)
 - [Execution Commands & States](#execution-commands--states)
-- [Diagram Notation](#diagram-notation)
 - [Availability](#availability)
+- [Diagram Notation](#diagram-notation)
+- [Descriptions](#descriptions)
 - [Previous Execution Command](#previous-execution-command)
 - [Rollback Execution Command](#rollback-execution-command)
 - [Rollback Execution State](#rollback-execution-state)
@@ -49,7 +50,7 @@ __Contents__
 
 An executable object might be run, paused, stopped, perhaps recorded or put in reverse, etcetera. Those might be called *execution commands*.
 
-`<< details >>`
+`<< details >>`  
 You can also invoke an execution command on a thread, which is a string of commands, that automatically follow each other up. A thread, however, can also be considered a single command as well.
 
 There may be a distinction between an *execution command* and an *execution state*.
@@ -82,55 +83,24 @@ The following execution states and execution commands may be considered:
 
 Which execution commands could be invoke, may depend on the execution state a command is in. When a command has *finished*, it might not be possible to *play* it again. When a command would be *not runnable*, it might not be an option to *play* at all.
 
-The following execution *states* might also be execution *commands*:
-
-- __Previous__
-- __Rollback__
-- __Faster Backwards__
-- __Slower Backwards__
-- __Reverse__
-- __Play__
-- __Slower__
-- __Faster__
-- __Go To End__
-- __Next__
-- __Pause__
-- __Wait__
-- __Timer__
-- __Stop__
-- __Record__
-
-So that may exclude the following ones from being an execution command:
+These *execution states* might not have a corresponding *execution command*:
 
 - __Not Runnable__
 - __Finished__
 - __Error__
 - __Warning__
 
-The following ones can be execution states:
-
-- __Rollback__
-- __Faster Backwards__
-- __Slower Backwards__
-- __Reverse__
-- __Play__
-- __Slower__
-- __Faster__
-- __Pause__
-- __Wait__
-- __Timer__
-- __Not Runnable__
-- __Stop__
-- __Finished__
-- __Record__
-- __Error__
-- __Warning__
-
-So that excludes the following ones from being an execution state:
+The following *execution commands* might not also be *execution states*:
 
 - __Previous__
 - __Go To End__
 - __Next__
+
+But it seems most can be both execution commands and execution states.
+
+### Availability
+
+The availability of execution commands or execution states may also be dependent on the particular application. For instance a media player or debugger or perhaps a different user application. It may also depend on what a diagram tries to express.
 
 ### Diagram Notation
 
@@ -149,15 +119,15 @@ Each of the following commands or states may have a symbol. The symbols may be s
 | ![](images/2.%20Start%20&%20Stop.015.png) | ![](images/2.%20Start%20&%20Stop.016.png) | ![](images/2.%20Start%20&%20Stop.017.png) | ![](images/2.%20Start%20&%20Stop.018.png) | |
 | Finished |  Record  | Error | Warning | |
 
-The commands can be displayed at the bottom of the screen to execute a selected command or on a thread, that you are following.
+The commands can be displayed at the bottom of the screen to execute a selected command or on a thread, that you are following. They may also be shown in certain cases near a diamond shape / executable command symbol.
 
 ![](images/2.%20Start%20&%20Stop.019.png)
 
-The order of the symbols may become different in practice. They might probably put in a straight line. Some of them can not even be execution *commands*, but can only be execution *states*, so those might be left out of the bottom of the screen.
-
-Another example display of the execution commands and execution states:
+The order of the symbols may become different in practice. They might be put in a single straight line. Another example display of the execution commands and execution states:
 
 ![](images/2.%20Start%20&%20Stop.020.png)
+
+Some of them can not even be execution *commands*, but can only be execution *states*, so those might be left out of the bottom of the screen, if that were the choice. It may be less crowded with buttons, as availability of commands may vary.
 
 The following symbols are also possible candidates:
 
@@ -165,36 +135,35 @@ The following symbols are also possible candidates:
 
 Those symbols could set the speed of going forward or backward, gradually changing it from __Faster Backwards__, __Reverse__, __Slower Backwards__ and to __Slower__, __Play__, __Faster__. The first symbol simply decreases the speed or makes it go faster backwards, and the second symbol simply increases the speed or makes it go slower backwards.
 
+`<< broader view >>`
 The symbols for actions, that a media player also has, were retained, because I just love symbolic representation and I do not see a need to invent any other symbolic display for this.
 
-An execution state is also be displayed at the bottom of a command symbol, to indicate its state:
+An execution state might also be displayed at the bottom of a command symbol, to indicate its state:
 
 ![](images/2.%20Start%20&%20Stop.023.png)
 
-The executable command above is currently running at normal speed, since it is in __Play__ state. Here are more examples of executable command object in different states.
+The executable command above might currently be running at normal speed, since it appears to be in __Play__ state. Here are more examples of executable command object in different states.
 
-The following command is paused:
+The following command might be paused:
 
 ![](images/2.%20Start%20&%20Stop.024.png)
 
-The following command is finished:
+The following command may be finished:
 
 ![](images/2.%20Start%20&%20Stop.025.png)
 
-The following command is recording:
+The following command could be recording:
 
 ![](images/2.%20Start%20&%20Stop.026.png)
 
-The following command is not executable at all:
+The following command may not be executable at all:
 
 ![](images/2.%20Start%20&%20Stop.027.png)
 
-Any execution state can be indicated for a command object like that.
+Any execution state might be indicated for a command object like that.
 
 
-### Availability
-
-The availability of execution commands or execution states may also be dependent on the particular application. For instance a media player or debugger or perhaps a different user application. It may also depend on what a diagram tries to express.
+### Descriptions
 
 Below an attempt to describe each execution command and execution state separately.
 
