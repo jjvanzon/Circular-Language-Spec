@@ -28,3 +28,7 @@ The __Record__ command might be less hard, than commands going in reverse, but i
 Commands going in reverse may the worst in complexity. They may be rollback and undo functionality, that is much harder to implement. They may include __Reverse__, __Slower Backwards__, __Faster Backwards__ and __Rollback__.
 
 So the execution commands might not all be available in one blow.
+
+### Detail
+
+You can also invoke an execution command on a thread, which is a string of commands, that automatically follow each other up. A thread, however, can also be considered a single command as well.

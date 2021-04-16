@@ -24,4 +24,6 @@ Topics that may be recognizable from the *spec*, but then ideas perhaps more phi
 
 - [Relationships | Broader View](relationships-broader-view.md)
 
+- [Start & Stop | Broader View](start-and-stop-broader-view.md)
+
 - [System Interfaces | Broader View](system-interfaces-broader-view.md)

@@ -42,6 +42,10 @@ Here might be some of the topics that could be found here:
 
     - Ideas about this topic, that might not belong in the spec of the language, but are more like an application of it.
 
+- ### [Start & Stop](start-and-stop-implementation.md)
+
+    - Ideas about this topic, that might not belong in the spec of the language, but are more like an application of it.
+
 - ### [System Commands Implementation](system-commands-implementation.md)
 
     - Ideas about this topic, that might not belong in the spec of the language, but are more like an application of it.

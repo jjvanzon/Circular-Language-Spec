@@ -50,9 +50,6 @@ __Contents__
 
 An executable object might be run, paused, stopped, perhaps recorded or put in reverse, etcetera. Those might be called *execution commands*.
 
-`<< details >>`  
-You can also invoke an execution command on a thread, which is a string of commands, that automatically follow each other up. A thread, however, can also be considered a single command as well.
-
 There may be a distinction between an *execution command* and an *execution state*.
 
 An executable object may have a *state* of execution, for which similar terms might be used as for *execution commands*: play, stop, record, etcetera.
@@ -134,9 +131,6 @@ The following symbols are also possible candidates:
 ![](images/2.%20Start%20&%20Stop.021.png) ![](images/2.%20Start%20&%20Stop.022.png)
 
 Those symbols could set the speed of going forward or backward, gradually changing it from __Faster Backwards__, __Reverse__, __Slower Backwards__ and to __Slower__, __Play__, __Faster__. The first symbol simply decreases the speed or makes it go faster backwards, and the second symbol simply increases the speed or makes it go slower backwards.
-
-`<< broader view >>`
-The symbols for actions, that a media player also has, were retained, because I just love symbolic representation and I do not see a need to invent any other symbolic display for this.
 
 An execution state might also be displayed at the bottom of a command symbol, to indicate its state:
 
