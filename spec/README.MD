@@ -20,7 +20,6 @@ Contents
     - [Main Concepts](commands/commands-main-concepts.md)
     - [Start & Stop](commands/start-and-stop.md)
     - [Creation Behavior Of Commands](commands/creation-behavior-of-commands.md)
-    - [Command Redirection](commands/command-redirection.md)
     - [Commands Example Diagrams](commands/commands-example-diagrams.md)
     - [Commands Misc Issues](commands/commands-misc-issues.md)
     - [Commands Loose Ideas](commands/commands-loose-ideas.md)
@@ -85,6 +84,7 @@ Contents
 - Pointers
     - [Pointers](pointers/pointers.md)
     - [Redirection](pointers/redirection.md)
+    - [Command Redirection](pointers/command-redirection.md)
     - From 'Framework'
         - [Circularity](pointers/from-framework/circularity.md)
         - [Code Concepts Extended](pointers/from-framework/code-concepts-extended.md)
