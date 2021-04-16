@@ -8,6 +8,7 @@ Creation Behavior of Commands
 
 __Contents__
 
+- [Introduction](#introduction)
 - [Creation Behavior of Calls](#creation-behavior-of-calls)
   - [Calls In A Parent Command](#calls-in-a-parent-command)
   - [Original Problem & Solution](#original-problem--solution)
@@ -27,6 +28,12 @@ __Contents__
     - [Sub-Commands](#sub-commands)
     - [Reading & Writing Parameters](#reading--writing-parameters)
     - [Execute Once](#execute-once)
+
+### Introduction
+
+Notation for commands may differ from that of objects, mainly by usage of different shapes. The similarity in notations may lead to questions like: "Are commands just like objects? In what way might they be different?"
+
+This article tries to explore one way commands may be different from objects, suggesting they might have special *creation behavior*, that normal objects might not.
 
 ### Creation Behavior of Calls
 

@@ -23,7 +23,7 @@ __Contents__
 
 ### Introduction
 
-Notation for commands may differ from that of objects, mainly by usage of different shapes. The similarity in notations may make you think: "Are commands just like objects? In what way might they be different?" This article tries to explore ways commands may compare to objects. Command creation behavior might not be covered, but be a separate topic altogether. 
+Notation for commands may differ from that of objects, mainly by usage of different shapes. The similarity in notations may lead to questions like: "Are commands just like objects? In what way might they be different?" This article tries to explore ways commands may compare to objects. Command creation behavior might not be covered, but be a separate topic altogether. 
 
 ### Commands Anywhere
 
