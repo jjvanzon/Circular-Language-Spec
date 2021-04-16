@@ -11,6 +11,7 @@ __Contents__
 - [Introduction](#introduction)
 - [Execution Commands & States](#execution-commands--states)
 - [Diagram Notation](#diagram-notation)
+- [Availability](#availability)
 - [Previous Execution Command](#previous-execution-command)
 - [Rollback Execution Command](#rollback-execution-command)
 - [Rollback Execution State](#rollback-execution-state)
@@ -78,10 +79,6 @@ The following execution states and execution commands may be considered:
 - __Error__
 - __Warning__
 
-The availability of execution commands may also be dependent on the particular application. For instance a media player or debugger or other user application. So it may also depend on what a diagram tries to express.
-
-Further down each execution command and execution state is explained separately.
-
 ### Execution Commands & States
 
 Which execution commands could be invoke, may depend on the execution state a command is in. When a command has *finished*, it might not be possible to *play* it again. When a command would be *not runnable*, it might not be an option to *play* at all.
@@ -135,7 +132,6 @@ So that excludes the following ones from being an execution state:
 - __Previous__
 - __Go To End__
 - __Next__
-
 
 ### Diagram Notation
 
@@ -196,9 +192,17 @@ The following command is not executable at all:
 
 Any execution state can be indicated for a command object like that.
 
+
+### Availability
+
+The availability of execution commands or execution states may also be dependent on the particular application. For instance a media player or debugger or perhaps a different user application. It may also depend on what a diagram tries to express.
+
+Below an attempt to describe each execution command and execution state separately.
+
+
 ### Previous Execution Command
 
-The __Previous__ execution command immediately stops the execution of the current command and positions the instruction position to the command previous in line. And if there is no previous sibling command, there might be moved a level up, to the parent command.
+The __Previous__ execution command may immediately stop the execution of the current command and positions the instruction position to the command previous in line. And if there is no previous sibling command, there might be moved a level up, to the parent command.
 
 The __Previous__ execution command is only available if there is a previous command to go to.
 
