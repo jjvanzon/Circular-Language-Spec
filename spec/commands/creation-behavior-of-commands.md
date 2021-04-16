@@ -40,6 +40,13 @@ __Contents__
   - [How can a parameter passing assignment be stored](#how-can-a-parameter-passing-assignment-be-stored)
   - [More Brainstorming](#more-brainstorming)
   - [Former Text](#former-text)
+- [Loost Ideas](#loost-ideas)
+  - [From "Commands Main Concepts"](#from-commands-main-concepts)
+    - [Command Call Behavior](#command-call-behavior)
+    - [Clause Creation Behavior](#clause-creation-behavior)
+    - [Sub-Commands](#sub-commands-1)
+    - [Reading & Writing Parameters](#reading--writing-parameters)
+    - [Execute Once](#execute-once)
 
 ### Creation Behavior of Calls
 
@@ -546,3 +553,54 @@ So it’s all about getting the material ready for a parent command to execute. 
 
 \> I do not think it is mandatory to immediately create sub-command-calls and their parameters for a call-instance
 
+### Loost Ideas
+
+#### From "Commands Main Concepts"
+
+*These texts might have been part of Commands Main Concepts once but might be integrated here into Creation Behavior of Commands instead.*
+
+##### Command Call Behavior
+
+At first a command call might be sort of asleep. That might be when there is a chance to set its parameters. After that the command call might be run.
+
+If the parent command runs it might automatically executes the calls inside it.
+
+##### Clause Creation Behavior
+
+A clause `is always` created `as long as the` parent command `is` created. 
+
+##### Sub-Commands
+
+`<< details >>`  
+`<< broader perspective >>`  
+
+A parent command `automatically executes` its sub-commands. After a sub-command `completes, the` process `returns` to `the` parent command, which `might` then continue, `executing the` next sub-command.
+
+Inside a command, `usually just` more commands `are` invoked.
+
+There `are only a few` commands that `do` something other than execute other commands. Those `are special` commands, that `perform` a machine instruction: an operation that `is` executed by `the` CPU, `the` central processing unit of `the` computer.
+
+On top of those `special` commands, a `few basic` commands exist, like __If__’s and __For__ loops, that control `the` flow of a program, making `the` next command to call dependent on a condition.
+
+But `basically`, a command `just calls` more commands. Machine instructions, arithmetic operators, comparative and Boolean algebra, assignments, and execution control statements such as __If__ and __For__, `are` *`all` just commands*.
+
+`<< broader perspective >>`
+Apart from sub-commands, a command `can` also contain data.
+(Inactive clauses and inactive command references for instance are also considered data, and `are` not sub-commands, because they `do not` execute.)
+
+##### Reading & Writing Parameters
+
+Before a command `is` run `you can mess about` with `the` parameters `all you want`.
+
+During `the` execution of a command `you can not` read or write `anything`.
+
+After a command `has` executed, `you can not` change `the` parameters, `just out of practical reasons`, because it `is more practical` for `the` parameters to `keep` visualizing `the` state they `were` in after `the` command `was` run.
+
+- Before execution `you can` read and write.
+- During execution `you can not` read or write.
+- After execution `you can` only read.
+
+##### Execute Once
+
+`<< details >>`  
+a command object might only execute *once*. A command object may represent a single execution. An execution might be created and dormant until it might be run. This might be a chance to set the input of the command. After a command was run, the execution might stay created while it may still be referenced, so output might be read, until `everybody` might be done with it. When the executable object might not be referenced anymore, it might be destroyed. A command object might not be executed twice: to run a command again, a new command object might be created, that may have the same *definition*. In an attempt to execute the same command symbol twice, what might happen instead, is that the old object may be released, and a new object could be created in its place. A reason why a command object might only be executed once, may be that this might give all the referrers a chance to read `the` execution’s output, `whenever` they want, `without` it `being` overwritten by new output. A command object `stays` created for `as long as` it `is being` referenced, so `everybody can` read `the` output of `the` command. `The` command object `might only` be `destroyed` when `nothing refers` to it `anymore`.
