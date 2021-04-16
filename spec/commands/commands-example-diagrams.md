@@ -6,10 +6,9 @@ Example Diagrams
 
 `[ Preliminary documentation ]`
 
-This article attempts to systematically demonstrate different situations of commands.
-
 __Contents__
 
+- [Introduction](#introduction)
 - [Command Calls in a Command Definition](#command-calls-in-a-command-definition)
 - [Command Calls in a Command Call](#command-calls-in-a-command-call)
 - [Command Calls in a Command Reference](#command-calls-in-a-command-reference)
@@ -37,6 +36,24 @@ __Contents__
 - [Private Objects in an Active Clause](#private-objects-in-an-active-clause)
 - [Command References in an Inactive Clause](#command-references-in-an-inactive-clause)
 - [Command References in an Active Clause](#command-references-in-an-active-clause)
+
+### Introduction
+
+This article tries to systematically demonstrate different situations of commands.
+
+Relationships between the following concepts may be demonstrated:
+
+| Concept            | Description                                                                  |
+|--------------------|------------------------------------------------------------------------------|
+| Command call       | Executes a command definition it points out.                                 |
+| Command definition | Does not execute directly but may get called.                                |
+| Command reference  | Pointer to another command.                                                  |
+| Active clause      | Command defined inside another command, that may execute.                    |
+| Inactive clause    | Command defined inside another command, that might not be executed directly. |
+| Parameter          | Instruction passed to a command, that makes it behave differently.           |
+| Private object     | Helper variables inside a command, invisible from the outside.               |
+
+The term 'clause' may be used here in quite a particular way. It is *containment* relationships between these  constructs, that might be explored. It may enrich the impression of commands in Encircle.
 
 ### Command Calls in a Command Definition
 
