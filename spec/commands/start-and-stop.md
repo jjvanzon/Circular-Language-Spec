@@ -9,6 +9,8 @@ Start & Stop
 __Contents__
 
 - [Introduction](#introduction)
+- [Execution Commands & States](#execution-commands--states)
+- [Diagram Notation](#diagram-notation)
 - [Previous Execution Command](#previous-execution-command)
 - [Rollback Execution Command](#rollback-execution-command)
 - [Rollback Execution State](#rollback-execution-state)
@@ -41,20 +43,20 @@ __Contents__
 - [Error Execution State](#error-execution-state)
 - [Warning Execution State](#warning-execution-state)
 - [Normal Speed](#normal-speed)
-- [Diagram Notation](#diagram-notation)
 - [Implementation](#implementation)
 
 ### Introduction
 
-An executable object can be run, paused, stopped, recorded, put in reverse, etcetera. Those are called *execution commands*.
+An executable object might be run, paused, stopped, perhaps recorded or put in reverse, etcetera. Those might be called *execution commands*.
 
+`<< details >>`
 You can also invoke an execution command on a thread, which is a string of commands, that automatically follow each other up. A thread, however, can also be considered a single command as well.
 
-There is a distinction between an *execution command* and an *execution state*.
+There may be a distinction between an *execution command* and an *execution state*.
 
-An executable object has a *state* of execution, for which the same terms are used as for the *execution commands*: play, stop, record, etcetera.
+An executable object may have a *state* of execution, for which similar terms might be used as for *execution commands*: play, stop, record, etcetera.
 
-The following execution states and execution commands exist:
+The following execution states and execution commands may be considered:
 
 - __Previous__
 - __Rollback__
@@ -76,9 +78,15 @@ The following execution states and execution commands exist:
 - __Error__
 - __Warning__
 
-Which execution commands you can invoke, depends on the execution state the command is in. When a command has finished, you can not play it again. When a command is not runnable, you can not play it at all.
+The availability of execution commands may also be dependent on the particular application. For instance a media player or debugger or other user application. So it may also depend on what a diagram tries to express.
 
-The following ones can be execution *commands*:
+Further down each execution command and execution state is explained separately.
+
+### Execution Commands & States
+
+Which execution commands could be invoke, may depend on the execution state a command is in. When a command has *finished*, it might not be possible to *play* it again. When a command would be *not runnable*, it might not be an option to *play* at all.
+
+The following execution *states* might also be execution *commands*:
 
 - __Previous__
 - __Rollback__
@@ -96,7 +104,7 @@ The following ones can be execution *commands*:
 - __Stop__
 - __Record__
 
-So that excludes the following ones from being an execution command:
+So that may exclude the following ones from being an execution command:
 
 - __Not Runnable__
 - __Finished__
@@ -128,19 +136,65 @@ So that excludes the following ones from being an execution state:
 - __Go To End__
 - __Next__
 
-There is a big difference in difficulty of implementing the execution commands. This is irrelevant to their usage, but might affect their availability in early stages of development of Encircle. There are five categories of difficulty of implementation of execution commands and execution states. Here they are going from simple to difficult:
 
-- Play, stop, next, previous, not runnable, finished
-- Forward at arbitrary speeds
-- Waiting
-- Error and warning
-- Record
-- Going in reverse
+### Diagram Notation
 
-The states __Play__, __Stop__, __Next__, __Previous__, __Not Running__ and __Finished__ are the most basic and more easy to implement. They are implemented first. Commands going in reverse are the worst in complexity. They include __Reverse__, __Slower Backwards__, __Faster Backwards__ and __Rollback__. They are rollback and undo functionality, that is much harder to implement. So the execution commands might not all be available in one blow.
+Each of the following commands or states may have a symbol. The symbols may be similar to those of a media player:
 
-Below each execution command and execution state is explained separately.
+| ![](images/2.%20Start%20&%20Stop.001.png) | ![](images/2.%20Start%20&%20Stop.002.png) | ![](images/2.%20Start%20&%20Stop.003.png) | ![](images/2.%20Start%20&%20Stop.004.png) | ![](images/2.%20Start%20&%20Stop.005a.png) |
+|:--------:|:--------:|:----------------:|:----------------:|:-------:|
+| Previous | Rollback | Faster Backwards | Slower Backwards | Reverse |
+|          |          |                  |                  |         |
+| ![](images/2.%20Start%20&%20Stop.005b.png) | ![](images/2.%20Start%20&%20Stop.006.png) | ![](images/2.%20Start%20&%20Stop.007.png) | ![](images/2.%20Start%20&%20Stop.008.png) | ![](images/2.%20Start%20&%20Stop.009.png) |
+| Play | Slower | Faster | Go To End | Next |
+|      |        |        |           |      |
+| ![](images/2.%20Start%20&%20Stop.010.png) | ![](images/2.%20Start%20&%20Stop.011.png) | ![](images/2.%20Start%20&%20Stop.012.png) | ![](images/2.%20Start%20&%20Stop.013.png) | ![](images/2.%20Start%20&%20Stop.014.png) |
+|  Pause | Wait | Timer | Not Runnable | Stop |
+|        |      |       |              |      |
+| ![](images/2.%20Start%20&%20Stop.015.png) | ![](images/2.%20Start%20&%20Stop.016.png) | ![](images/2.%20Start%20&%20Stop.017.png) | ![](images/2.%20Start%20&%20Stop.018.png) | |
+| Finished |  Record  | Error | Warning | |
 
+The commands can be displayed at the bottom of the screen to execute a selected command or on a thread, that you are following.
+
+![](images/2.%20Start%20&%20Stop.019.png)
+
+The order of the symbols may become different in practice. They might probably put in a straight line. Some of them can not even be execution *commands*, but can only be execution *states*, so those might be left out of the bottom of the screen.
+
+Another example display of the execution commands and execution states:
+
+![](images/2.%20Start%20&%20Stop.020.png)
+
+The following symbols are also possible candidates:
+
+![](images/2.%20Start%20&%20Stop.021.png) ![](images/2.%20Start%20&%20Stop.022.png)
+
+Those symbols could set the speed of going forward or backward, gradually changing it from __Faster Backwards__, __Reverse__, __Slower Backwards__ and to __Slower__, __Play__, __Faster__. The first symbol simply decreases the speed or makes it go faster backwards, and the second symbol simply increases the speed or makes it go slower backwards.
+
+The symbols for actions, that a media player also has, were retained, because I just love symbolic representation and I do not see a need to invent any other symbolic display for this.
+
+An execution state is also be displayed at the bottom of a command symbol, to indicate its state:
+
+![](images/2.%20Start%20&%20Stop.023.png)
+
+The executable command above is currently running at normal speed, since it is in __Play__ state. Here are more examples of executable command object in different states.
+
+The following command is paused:
+
+![](images/2.%20Start%20&%20Stop.024.png)
+
+The following command is finished:
+
+![](images/2.%20Start%20&%20Stop.025.png)
+
+The following command is recording:
+
+![](images/2.%20Start%20&%20Stop.026.png)
+
+The following command is not executable at all:
+
+![](images/2.%20Start%20&%20Stop.027.png)
+
+Any execution state can be indicated for a command object like that.
 
 ### Previous Execution Command
 
@@ -382,96 +436,27 @@ Any object or reference line could also be put in __Warning__ state if something
 In a normal situation, normal speed for computation is top speed, and normal speed for a playable medium is the normal speed to play the medium. But you can indicate an alternate normal speed. If you are reviewing a playable medium, that you might be needing to look at in slow motion, you can make slow motion the normal speed. In that case __Play__ means going in slow motion, and __Faster__ means it is going faster than the normal rate of slow motion. If you are debugging, you might also set the normal speed of computation to slower. In that case you can visually follow the execution of the procedures. This normal rate of slow motion might also be the barrier for what the states __Slower__ and __Faster__ might consider the average speed.
 
 
-### Diagram Notation
-
-Each of the following commands or states has a symbol:
-
-- __Previous__
-- __Rollback__
-- __Faster Backwards__
-- __Slower Backwards__
-- __Reverse__
-- __Play__
-- __Slower__
-- __Faster__
-- __Go To End__
-- __Next__
-- __Pause__
-- __Wait__
-- __Timer__
-- __Not Runnable__
-- __Stop__
-- __Finished__
-- __Record__
-- __Error__
-- __Warning__
-
-The symbols are just about the same as those of media players of today:
-
-| ![](images/2.%20Start%20&%20Stop.001.png) | ![](images/2.%20Start%20&%20Stop.002.png) | ![](images/2.%20Start%20&%20Stop.003.png) | ![](images/2.%20Start%20&%20Stop.004.png) | ![](images/2.%20Start%20&%20Stop.005a.png) |
-|:--------:|:--------:|:----------------:|:----------------:|:-------:|
-| Previous | Rollback | Faster Backwards | Slower Backwards | Reverse |
-|          |          |                  |                  |         |
-| ![](images/2.%20Start%20&%20Stop.005b.png) | ![](images/2.%20Start%20&%20Stop.006.png) | ![](images/2.%20Start%20&%20Stop.007.png) | ![](images/2.%20Start%20&%20Stop.008.png) | ![](images/2.%20Start%20&%20Stop.009.png) |
-| Play | Slower | Faster | Go To End | Next |
-|      |        |        |           |      |
-| ![](images/2.%20Start%20&%20Stop.010.png) | ![](images/2.%20Start%20&%20Stop.011.png) | ![](images/2.%20Start%20&%20Stop.012.png) | ![](images/2.%20Start%20&%20Stop.013.png) | ![](images/2.%20Start%20&%20Stop.014.png) |
-|  Pause | Wait | Timer | Not Runnable | Stop |
-|        |      |       |              |      |
-| ![](images/2.%20Start%20&%20Stop.015.png) | ![](images/2.%20Start%20&%20Stop.016.png) | ![](images/2.%20Start%20&%20Stop.017.png) | ![](images/2.%20Start%20&%20Stop.018.png) | |
-| Finished |  Record  | Error | Warning | |
-
-The commands can be displayed at the bottom of the screen to execute a selected command or on a thread, that you are following.
-
-![](images/2.%20Start%20&%20Stop.019.png)
-
-The order of the symbols may become different in practice. They might probably put in a straight line. Some of them can not even be execution *commands*, but can only be execution *states*, so those might be left out of the bottom of the screen.
-
-Another example display of the execution commands and execution states:
-
-![](images/2.%20Start%20&%20Stop.020.png)
-
-The following symbols are also possible candidates:
-
-![](images/2.%20Start%20&%20Stop.021.png) ![](images/2.%20Start%20&%20Stop.022.png)
-
-Those symbols could set the speed of going forward or backward, gradually changing it from __Faster Backwards__, __Reverse__, __Slower Backwards__ and to __Slower__, __Play__, __Faster__. The first symbol simply decreases the speed or makes it go faster backwards, and the second symbol simply increases the speed or makes it go slower backwards.
-
-The symbols for actions, that a media player also has, were retained, because I just love symbolic representation and I do not see a need to invent any other symbolic display for this.
-
-An execution state is also be displayed at the bottom of a command symbol, to indicate its state:
-
-![](images/2.%20Start%20&%20Stop.023.png)
-
-The executable command above is currently running at normal speed, since it is in __Play__ state. Here are more examples of executable command object in different states.
-
-The following command is paused:
-
-![](images/2.%20Start%20&%20Stop.024.png)
-
-The following command is finished:
-
-![](images/2.%20Start%20&%20Stop.025.png)
-
-The following command is recording:
-
-![](images/2.%20Start%20&%20Stop.026.png)
-
-The following command is not executable at all:
-
-![](images/2.%20Start%20&%20Stop.027.png)
-
-Any execution state can be indicated for a command object like that.
-
-
 ### Implementation
 
-Do realize, that there is a difference in difficulty of implementation of the execution commands and execution states. Do not try to implement all the execution states and commands in one blow. There are 5 categories of difficulty of implementation of execution commands and execution states. Here they are going from easy to hard:
+There may be differences in difficulty of implementing each execution command or execution state. They may not all be implemented in one blow.
+
+There may be several categories of difficulty of implementing execution commands and execution states. Here is an attempt to list them going from simpler to more difficult:
 
 - Play, stop, next, previous, not runnable, finished
 - Forward at arbitrary speeds
-- Waiting commands
-- Record command
-- Commands going in reverse
+- Waiting
+- Error and warning
+- Record
+- Going in reverse
 
-The states __Play__, __Stop__, __Next__, __Previous__, __Not Running__ and __Finished__ are implemented first. They are the easiest. Going forward at arbitrary speeds includes __Slower__, __Faster__ and __Go To End__. They are nice for slowly running the steps, so you can follow better. Then there are the waiting commands, which are not that hard either. In fact it is quite important to be able to pause, so that one might be implemented sooner. The __Record__ command is easier, than commands going in reverse, but it is much less important than the commands going in reverse. And commands going in reverse are the worst. They are rollback and undo functionality, that is much harder to implement. They include __Reverse__, __Slower__, __Backwards__, __Faster Backwards__ and __Rollback__. Do not implement them all in one blow.
+The states __Play__, __Stop__, __Next__, __Previous__, __Not Running__ and __Finished__ are the most basic and more easy to implement. They might be implemented first.
+
+Going forward at arbitrary speeds includes __Slower__, __Faster__ and __Go To End__. They are nice for slowly running the steps, so you can follow better. 
+
+Then there are the waiting commands, which might not be the most difficult either.
+
+The __Record__ command might be less hard, than commands going in reverse, but it is much less important than the commands going in reverse.
+
+Commands going in reverse may the worst in complexity. They may be rollback and undo functionality, that is much harder to implement. They may include __Reverse__, __Slower Backwards__, __Faster Backwards__ and __Rollback__.
+
+So the execution commands might not all be available in one blow.
