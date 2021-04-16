@@ -14,6 +14,7 @@ __Contents__
   - [Original Problem & Solution](#original-problem--solution)
   - [Problems Solved By Delayed Creation](#problems-solved-by-delayed-creation)
   - [Delayed Creation Of Private Contents Only Counts For Command Calls](#delayed-creation-of-private-contents-only-counts-for-command-calls)
+  - [Are Parameter Connections Actually Assignments?](#are-parameter-connections-actually-assignments)
 - [Creation Behavior of Clauses](#creation-behavior-of-clauses)
 - [Creation Behavior of ‘Inactive Calls’](#creation-behavior-of-inactive-calls)
 - [No Overhead of Command Creation](#no-overhead-of-command-creation)
@@ -30,7 +31,7 @@ This article tries to explore one way commands may be different from objects, su
 
 ### Creation Behavior of Calls
 
-A call can be present inside an object or inside another command. When a call is created, at first it might be sort of asleep. That might be when there is a chance to set its parameters. Before a command call is run, the command call’s public contents are there: its parameters. Those parameters are copied out of the call’s definition. The private contents are not there yet. A command’s private contents include private objects, clauses and command calls. The private contents might be copied out of the command definition, only just before the command call runs. The public contents of a command call are added when the command object is created. The private contents of a command call are only added when its about to run. So the general rule seems to be: creation of private contents of a command call is delayed until just before a command call is run.
+A call can be present inside an object or inside another command. When a call is created, at first it might be sort of asleep. That might be when there is a chance to set its parameters. Before a command call is run, the command call’s public contents are there: its parameters. Those parameters are copied out of the call’s definition. The private contents are not there yet. A command’s private contents include private objects, clauses and command calls. The private contents might be shown as a copy out of the command definition, only just before the command call runs. The public contents of a command call are added when the command object is created. The private contents of a command call are only added when its about to run. So the general rule seems to be: creation of private contents of a command call is delayed until just before a command call is run.
 
 The reasons for the delay of creation of private contents are explained later. First, the steps of a command call’s creation are laid out one by one.
 
@@ -53,6 +54,7 @@ The reasons for the delay of creation of private contents are explained later. F
  
       ![](images/3.%20Creation%20Behavior%20Of%20Commands.004.png)
 
+
     - __Value__ parameter assignments refer to their sources and targets
   
       ![](images/3.%20Creation%20Behavior%20Of%20Commands.005.png)
@@ -65,13 +67,13 @@ The reasons for the delay of creation of private contents are explained later. F
 
     - Private contents are created  
       (private objects, clauses and command calls)  
-      (copied out of the command’s definition)
+      (shown as a copy from the command’s definition)
       (The definition of the parent command is not shown in the diagram.)
 
       ![](images/3.%20Creation%20Behavior%20Of%20Commands.007.png)
 
     - *Sub*-commands’ parameters / public contents are created  
-      (copied from the sub-command’s definition)  
+      (shown as a copy from the sub-command’s definition)  
       (The contents of the definition of the sub-command are not shown in the diagram.)
 
       ![](images/3.%20Creation%20Behavior%20Of%20Commands.008.png)
@@ -139,6 +141,10 @@ The problems solved by delayed creation of a command’s private contents are co
 Delayed creation of private contents only counts for command calls. Command calls redirect their definition.
 
 But if a command object might not have a definition, then it defines its own definition. For command objects that define their own definition, private contents might be created all the time, because nothing else defines its private contents but the object itself. This counts for command definitions. This also counts for *active* command definitions, which are executable object that define their own definition. But it also counts for clauses. See the article *Creation Behavior of Clauses*.
+
+#### Are Parameter Connections Actually Assignments?
+
+It may be a bit of an open end whether the lines connected to parameters are connections, or that they are cloaked assignment calls. Or perhaps that connections for parameters might simply behave a bit like assignment calls. It might also be that value connections with direction might be interpreted as assignment calls altogether. Perhaps at some point in the creation process they show as assignments and other times as connections. There might not be any right answers, it is just a set of options that might be chosen or not.
 
 ### Creation Behavior of Clauses
 
