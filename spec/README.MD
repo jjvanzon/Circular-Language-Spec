@@ -18,6 +18,7 @@ Contents
 - [Relationships](relationships.md)
 - Commands
     - [Main Concepts](commands/commands-main-concepts.md)
+    - [Commands Compared to Objects](commands/commands-compared-to-objects.md)
     - [Start & Stop](commands/start-and-stop.md)
     - [Creation Behavior Of Commands](commands/creation-behavior-of-commands.md)
     - [Command Redirection](commands/command-redirection.md)
@@ -28,6 +29,7 @@ Contents
     - [Relations Between Commands & Objects](parameters/relations-between-commands-and-objects.md)
     - [Imported Parameter Concepts](parameters/imported-parameter-concepts.md)
     - [Miscellaneous Parameter Topics](parameters/miscellaneous-parameter-topics.md)
+    - [Parameters Loose Ideas](parameters/parameters-loose-ideas.md)
 - [Modules](modules.md)
 - Execution Flow
     - [Introduction](execution-flow/introduction-to-execution-flow.md)

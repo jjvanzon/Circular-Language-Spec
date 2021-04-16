@@ -18,11 +18,6 @@ __Contents__
     - [Out of Commands & Classes Loosely Coupled](#out-of-commands--classes-loosely-coupled)
         - [Inactive Command References](#inactive-command-references)
         - [Local Variables](#local-variables)
-- [Loose Ideas](#loose-ideas)
-    - [Parameter and Argument](#parameter-and-argument)
-        - [Brainstorm](#brainstorm)
-            - [Other](#other)
-    - [Misc Ideas](#misc-ideas)
 
 ### Concept
 
@@ -161,41 +156,3 @@ So the command might not become part of each object of the class of that local v
 The local variable *might* make the command part of the class anyway, but then as a static command, that can be called on the class, but not on any arbitrary object.
 
 - \> 2008-09-06 Not true. Just wait what it might look like relations between objects and commands.
-
-### Loose Ideas
-
-Commands,  
-± 2008
-
-The idea of multi-methods and exchangeability between class methods and method parameters is the expressed in textual pseudo-code below:
-
-![](images/1.%20Relations%20Between%20Commands%20&%20Objects.016.png)
-
-JJ
-
-#### Parameter and Argument
-
-*(From the original Symbol documentation)*
-
-Parameters and arguments are the *public* members of a procedure. In a square they’re called parameters. In a diamond they’re called arguments.
-
-![](images/1.%20Relations%20Between%20Commands%20&%20Objects.017.png)
-
-A parameter is never created. An argument is an object that exists when the diamond executes. Therefore, an argument is a real created object, while a parameter is only a blue-print for it.
-
-A parameter is a public member of a definition.
-An argument is a public member of a diamond in execution.
-
------
-
-- Definitions of the terms parameter and argument
-
-##### Brainstorm
-
-###### Other
-
-Creation and state read and write only apply to object parameters, not to parameters that are procedures.
-
-#### Misc Ideas
-
-Nice phrase? "how to link objects to a command."
