@@ -1,5 +1,5 @@
-Encircle Language Spec | Commands
-=================================
+Encircle Language Broader View | From Spec
+==========================================
 
 Commands Compared to Objects
 ----------------------------

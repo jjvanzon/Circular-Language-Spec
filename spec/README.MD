@@ -18,7 +18,6 @@ Contents
 - [Relationships](relationships.md)
 - Commands
     - [Main Concepts](commands/commands-main-concepts.md)
-    - [Commands Compared to Objects](commands/commands-compared-to-objects.md)
     - [Start & Stop](commands/start-and-stop.md)
     - [Creation Behavior Of Commands](commands/creation-behavior-of-commands.md)
     - [Command Redirection](commands/command-redirection.md)

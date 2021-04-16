@@ -20,6 +20,8 @@ Topics that may be recognizable from the *spec*, but then ideas perhaps more phi
 
     - This idea is let go of for now, because it seemed optional and hard to match with other ideas like encapsulation and containment structure.
 
+- [Commands Compared to Objects](commands-compared-to-objects.md)
+
 - [Relationships | Broader View](relationships-broader-view.md)
 
 - [System Interfaces | Broader View](system-interfaces-broader-view.md)
