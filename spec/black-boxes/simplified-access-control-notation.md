@@ -191,7 +191,7 @@ Should there not be something implied when a connector is not there: in a friend
 
 -----
 
-In definitions, publics could also be differentiated from privates by privates not getting access connectors? Well... friends can access them, so they need access connectors...
+In definitions, publics could also be differentiated from private contents by private contents not getting access connectors? Well... friends can access them, so they need access connectors...
 
 -----
 

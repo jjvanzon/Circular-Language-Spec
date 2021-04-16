@@ -54,7 +54,7 @@ __Contents__
     - [Another Example: Use As Class](#another-example-use-as-class)
     - [Object-Bound Access Control](#object-bound-access-control)
     - [Reference can Access Control Object-Bound](#reference-can-access-control-object-bound)
-    - [Object has Access to its Privates](#object-has-access-to-its-privates)
+    - [Object has Access to its Private Contents](#object-has-access-to-its-private-contents)
 - [Assignment between Friend Members](#assignment-between-friend-members)
 - [Friend = Wavy Line](#friend--wavy-line)
 
@@ -80,7 +80,7 @@ Complexity hiding can also be called abstraction.
 
 The inner workings of an object or command are its *private* members. You only get to work with an object or command’s *public* members.
 
-So the privates of an object are protected and hidden away, while the public contents can freely be used.
+So the private contents of an object are protected and hidden away, while the public contents can freely be used.
 
 #### Friends
 
@@ -91,13 +91,13 @@ An object’s public contents can be accessed by anything that has a reference t
 What other programming languages call class methods, Encircle calls friend commands of a class object.
 
 The object with private contents declares which other objects are its friends.  
-The friendship might not automatically go both ways: the *befriended* has access to the privates of the friend, but the friend might not have access to the privates of the befriended. For that you might establish a mutual friendship.
+The friendship might not automatically go both ways: the *befriended* has access to the private contents of the friend, but the friend might not have access to the private contents of the befriended. For that you might establish a mutual friendship.
 
 #### Friend Relations
 
-A befriended object declares which object is its friend. The friend object needs to be able to access the befriended’s privates. Therefore the friend needs a reference back. So a friend connection requires a mutual relationship.
+A befriended object declares which object is its friend. The friend object needs to be able to access the befriended’s private contents. Therefore the friend needs a reference back. So a friend connection requires a mutual relationship.
 
-It is not like one class gets access to the privates of another class. It is more specific than that. A friendship is a relation between specific objects. A friendship between objects applies to only one specific relation. One object gets access to the privates of another object through one specific reference.
+It is not like one class gets access to the private contents of another class. It is more specific than that. A friendship is a relation between specific objects. A friendship between objects applies to only one specific relation. One object gets access to the private contents of another object through one specific reference.
 
 Friendship can also be applied to related lists instead of just related items.  
 An item or list in a specific relation is typed as friend.
@@ -314,25 +314,25 @@ The following diagram shows a member with __Private *Get*__ not accessible or vi
 
 The points made in the section *Notations of Private* are demonstrated here again in a different situation, where objects have external definitions. To summarize the rules:
 
-- Privates visible in definitions
-- Privates invisible in normal references
-- Privates visible in friend references
+- Private contents visible in definitions
+- Private contents invisible in normal references
+- Private contents visible in friend references
 
 In this section of the documentation it is demostrated how this looks if objects have an external class, as opposed to defining their own contents and behavior.
 
-The main thing clarified here is: “when do you show privates and when do you not”. The same rules apply here as in traditional text code, but now they are demonstrated in a diagram.
+The main thing clarified here is: “when do you show private contents and when do you not”. The same rules apply here as in traditional text code, but now they are demonstrated in a diagram.
 
 #### In a Unidirectional Relation
 
 ![](images/1.%20Black%20Boxes.022.png)
 
-The classes show privates, but the objects do not, unless they are __Friend__.
+The classes show private contents, but the objects do not, unless they are __Friend__.
 
 The effect that you see, is that wavy access connectors stay there in the objects, while cross connectors disappear in the objects. So the main rule is: crosses disappear, wavy lines stay visible.
 
 #### In a Bidirectional Relation
 
-The main point to the diagram below is that the classes show privates, but the objects do not, unless they are Friend. It shows the situation in case of a bidirectional relation.
+The main point to the diagram below is that the classes show private contents, but the objects do not, unless they are Friend. It shows the situation in case of a bidirectional relation.
 
 ![](images/1.%20Black%20Boxes.023.png)
 
@@ -340,7 +340,7 @@ The effect that you see, is that wavy access connectors stay there in the object
 
 #### Container is Friend
 
-The main point to the diagram below is that the classes show privates, but the objects do not, unless they are __Friend__. It shows the situation where the *container* is __Friend__.
+The main point to the diagram below is that the classes show private contents, but the objects do not, unless they are __Friend__. It shows the situation where the *container* is __Friend__.
 
 ![](images/1.%20Black%20Boxes.024.png)
 
@@ -348,7 +348,7 @@ The effect that you see, is that wavy connectors stay there in the objects, whil
 
 #### The Contained is Friend
 
-The main point to the diagram below is that the classes show privates, but the objects do not, unless they are __Friend__. It shows the situation where the *contained* is __Friend__.
+The main point to the diagram below is that the classes show private contents, but the objects do not, unless they are __Friend__. It shows the situation where the *contained* is __Friend__.
 
 ![](images/1.%20Black%20Boxes.025.png)
 
@@ -494,10 +494,10 @@ Object-bound aspects and reference bound-aspects do not require two separate fri
 
 Even though object-bound aspects are primarily access-controlled by the object, a reference can impose additional access control over them. So object-bound aspects can be access controlled by a parent to further protect what the object can already protect. But that is part of the *Deeper Exclusion* concept, explained elsewhere.
 
-#### Object has Access to its Privates
+#### Object has Access to its Private Contents
 
-The parent object automatically has friend access to its own object-bound aspects and to the reference-bound aspects of its sub-objects. That is logical: the object automatically has access to its own privates. The access connectors express potential connections that can be made by other objects and are displayed on the outside of the object.  
-(But compared to the traditional approach: when an object has a command (a method), the command might be made friend in order to access the privates of the object.)
+The parent object automatically has friend access to its own object-bound aspects and to the reference-bound aspects of its sub-objects. That is logical: the object automatically has access to its own private contents. The access connectors express potential connections that can be made by other objects and are displayed on the outside of the object.  
+(But compared to the traditional approach: when an object has a command (a method), the command might be made friend in order to access the private contents of the object.)
 
 ### Assignment between Friend Members
 

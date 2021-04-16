@@ -20,7 +20,7 @@ __Contents__
 - [No Overhead of Command Creation](#no-overhead-of-command-creation)
 - [No Circular Command Creation](#no-circular-command-creation)
 - [No Private Contents in a Call in a Definition](#no-private-contents-in-a-call-in-a-definition)
-- [A Call in a Call Shows Privates When Running](#a-call-in-a-call-shows-privates-when-running)
+- [A Call in a Call Shows Private Contents When Running](#a-call-in-a-call-shows-private-contents-when-running)
 - [Active Command in Inactive Command](#active-command-in-inactive-command)
 
 ### Introduction
@@ -134,7 +134,7 @@ The problems solved by delayed creation of a command’s private contents are co
 - *No Overhead of Command Creation*
 - *No Circular Command Creation*
 - *No Private Contents in Calls in Definitions*
-- *Calls in Calls Show Privates When Running*
+- *Calls in Calls Show Private Contents When Running*
 
 #### Delayed Creation Of Private Contents Only Counts For Command Calls
 
@@ -206,7 +206,7 @@ Unlike its active form, which can not be referenced.
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.023.png)
 
-Therefore, it can also be *class* referenced by a call. In that case its privates and publics had better be there more permanently, or the *call* to it can not instantiate private contents at all.
+Therefore, it can also be *class* referenced by a call. In that case its private and public contents had better be there more permanently, or the *call* to it can not instantiate private contents at all.
 
 Creating its private contents, might not create a recursive creation or anything: the inactive call’s own private calls do not create *their* private contents, so there is no recursion there.
 
@@ -214,7 +214,7 @@ Therefore, it can also be *class* referenced by a call.
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.024.png)
 
-In that case its privates and publics had better be there more permanently, or the *call* to it can not instantiate private contents at all.
+In that case its private and public contents had better be there more permanently, or the *call* to it can not instantiate private contents at all.
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.025.png)
 
@@ -265,7 +265,7 @@ But *calls inside* such a definition, only have their *public* contents are crea
 
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.033.png)
 
-### A Call in a Call Shows Privates When Running
+### A Call in a Call Shows Private Contents When Running
 
 A call inside another call only contains its private content when it is actually running.
 

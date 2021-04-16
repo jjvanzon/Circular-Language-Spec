@@ -17,17 +17,17 @@ __Contents__
     - [Get For Access and Get For Copy](#get-for-access-and-get-for-copy)
     - [Inaccessible System Aspects](#inaccessible-system-aspects)
     - [Compared to Traditional Black Boxing](#compared-to-traditional-black-boxing)
-    - [Brainstorm](#brainstorm)
-    - [Other Brainstorm Items](#other-brainstorm-items)
-    - [Using command symbols](#using-command-symbols)
+        - [Brainstorm](#brainstorm)
+        - [Other Brainstorm Items](#other-brainstorm-items)
+        - [Using command symbols](#using-command-symbols)
     - [Other Details](#other-details)
 - [Might Not Cover](#might-not-cover)
     - [Access Modifier Get & Set](#access-modifier-get--set)
-    - [Changing Access Modifiers at Run Time](#changing-access-modifiers-at-run-time)
-    - [Changing ‘can be’ class, interface or object](#changing-can-be-class-interface-or-object)
+        - [Changing Access Modifiers at Run Time](#changing-access-modifiers-at-run-time)
+        - [Changing ‘can be’ class, interface or object](#changing-can-be-class-interface-or-object)
     - [Grouped Access Control](#grouped-access-control)
     - [Conditional Access Control](#conditional-access-control)
-    - [Delayed Creation of Object’s Privates](#delayed-creation-of-objects-privates)
+    - [Delayed Creation of Object’s Private Contents](#delayed-creation-of-objects-private-contents)
     - [Access Symbols And Accesses](#access-symbols-and-accesses)
     - [Access Controller Parts](#access-controller-parts)
     - [Uses of Access Controlling System Aspects](#uses-of-access-controlling-system-aspects)
@@ -212,7 +212,7 @@ JJ
 
 -----
  
-\> 2009-06-26: The last two ideas do not apply anymore. Public and Private might not have anything to do with outside or inside... Privates are accessible to friends... whether those friends are on the outside or on the inside.
+\> 2009-06-26: The last two ideas do not apply anymore. Public and Private might not have anything to do with outside or inside... Private contents are accessible to friends... whether those friends are on the outside or on the inside.
 
 Perhaps you could also work out the traditional implementation of public and private. In that setting the original notation is usable. Now it is all changing. Perhaps it might create clarity if you isolate the original idea.
 
@@ -262,7 +262,7 @@ JJ
 
 -----
 
-A command’s access to a parameter’s privates or only its publics.
+A command’s access to a parameter’s private contents or only its publics.
 
 -----
 
@@ -467,14 +467,14 @@ Or perhaps I am looking too much for systematics behind it.
 
 Perhaps the base of Use-As access control should (eventually) be based on conditional access control. But for now it can be limited to the conceptual explanation of the most usable things.
 
-#### Delayed Creation of Object’s Privates
+#### Delayed Creation of Object’s Private Contents
 
 Public & Private,  
 2008-08-16
 
 Perhaps for objects, private contents also only need to be created, when one of its friend commands is run.  
 \>  
-But this is such an influential implication, that it needs to be covered elsewhere. Privates only make sense, when only a selection of commands, can access those privates. So only when an object’s friend command is executed, the object’s private contents are needed. But a sub-object’s system commands can also access privates...
+But this is such an influential implication, that it needs to be covered elsewhere. Private contents only make sense, when only a selection of commands, can access those private contents. So only when an object’s friend command is executed, the object’s private contents are needed. But a sub-object’s system commands can also access private contents...
 
 JJ
 

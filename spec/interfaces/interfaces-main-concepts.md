@@ -50,7 +50,7 @@ An object’s interface consists of all of its public members.
 
 ### Interface & Implementation
 
-An interface defines an object’s public members. The *privates* of an object are called the object’s *implementation*. So the concept of interfaces offers the ability to separate publics from privates, in other words separate interface from implementation.
+An interface defines an object’s public members. The *private* contents of an object are called the object’s *implementation*. So the concept of interfaces offers the ability to separate publics from private contents, in other words separate interface from implementation.
 
 *Object:*
 

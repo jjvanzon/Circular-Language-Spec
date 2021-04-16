@@ -115,9 +115,9 @@ Might not make sense. You’d give a parameter an initial value, that might not 
 - produced ( = output )
 - temporarily existent
 -----
-- privates used to affect another
-- privates used to affect itself
-- privates affected by another
+- private contents used to affect another
+- private contents used to affect itself
+- private contents affected by another
 - always used / affected / produced
 - not always used / affected / produced
 

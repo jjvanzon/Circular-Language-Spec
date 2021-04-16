@@ -66,7 +66,7 @@ JJ
 
 black boxes = user access control?
 
-privates visible in friends, and in definitions when you have user access to it, so you are a programmer, not a user.
+private contents visible in friends, and in definitions when you have user access to it, so you are a programmer, not a user.
 
 Something like that...
 

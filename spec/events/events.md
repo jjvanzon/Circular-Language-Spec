@@ -8,7 +8,6 @@ Events
 
 __Contents__
 
-- [Contents](#contents)
 - [Introduction](#introduction)
 - [Prime Event Example: Button Clicked](#prime-event-example-button-clicked)
 - [Main Concepts](#main-concepts)
@@ -170,7 +169,7 @@ Details about black boxes are covered in the chapter *Black Boxes*.
 However, two situations are explicitly denoted here:
 
 - Making events __Private__
-- Accessing the __Privates__ of an event parameter
+- Accessing the __Private__ contents of an event parameter
 
 Just like any other member of an object, events can also be made __Private__. In that case only __Friend__ objects can pick up this event. Below you might find the involved notations. Details are not covered. More information about black boxing can be found in the *Black Boxing* chapter.
 
@@ -184,7 +183,7 @@ Just like any other member of an object, events can also be made __Private__. In
 
 There are two reasons why the __Public__ event connector might not get an access mark: __Public__ is sort of the default, and the event connection is outward so it might not need an access symbol. The others do need an access mark, because it is the only way to express the access modification.
 
-The second black boxing situation to be explicitly mentioned is accessing the __Privates__ of an event parameter. By default you only get to access the __Public__ members of an event parameter. This is what makes it the black box principle.
+The second black boxing situation to be explicitly mentioned is accessing the __Private__ contents of an event parameter. By default you only get to access the __Public__ members of an event parameter. This is what makes it the black box principle.
 
 ![](images/1.%20Events.026.png)
 
