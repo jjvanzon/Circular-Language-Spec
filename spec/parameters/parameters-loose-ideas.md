@@ -12,7 +12,8 @@ __Contents__
     - [Brainstorm](#brainstorm)
         - [Other](#other)
 - [Public Inactive Clause `=` Command `Out` Parameter](#public-inactive-clause--command-out-parameter)
-- [Misc Ideas](#misc-ideas)
+- [Reading & Writing Parameters](#reading--writing-parameters)
+- [Other Ideas](#other-ideas)
 
 ### Parameter and Argument
 
@@ -42,7 +43,19 @@ Creation and state read and write only apply to object parameters, not to parame
 `<< parameters >>`
 But *inactive* clauses might be referenced and made public. If `you make` an inactive clause public, `you might` make it an __Object Out__ parameter: an object `produced or determined` by `the` command. A public inactive clause `might` be a command definition `produced` by another command.
 
-### Misc Ideas
+### Reading & Writing Parameters
+
+Before a command `is` run `you can mess about` with `the` parameters `all you want`.
+
+During `the` execution of a command `you can not` read or write `anything`.
+
+After a command `has` executed, `you can not` change `the` parameters, `just out of practical reasons`, because it `is more practical` for `the` parameters to `keep` visualizing `the` state they `were` in after `the` command `was` run.
+
+- Before execution `you can` read and write.
+- During execution `you can not` read or write.
+- After execution `you can` only read.
+
+### Other Ideas
 
 Commands,  
 ± 2008

@@ -21,13 +21,6 @@ __Contents__
 - [No Private Contents in a Call in a Definition](#no-private-contents-in-a-call-in-a-definition)
 - [A Call in a Call Shows Privates When Running](#a-call-in-a-call-shows-privates-when-running)
 - [Active Command in Inactive Command](#active-command-in-inactive-command)
-- [Loose Ideas](#loose-ideas)
-  - [From "Commands Main Concepts"](#from-commands-main-concepts)
-    - [Command Call Behavior](#command-call-behavior)
-    - [Clause Creation Behavior](#clause-creation-behavior)
-    - [Sub-Commands](#sub-commands)
-    - [Reading & Writing Parameters](#reading--writing-parameters)
-    - [Execute Once](#execute-once)
 
 ### Introduction
 
@@ -37,7 +30,7 @@ This article tries to explore one way commands may be different from objects, su
 
 ### Creation Behavior of Calls
 
-A call can be present inside an object or inside another command. When a call is created, it is not immediately run, so that you get a chance to set its parameters. Before a command call is run, the command call’s public contents are there: its parameters. Those parameters are copied out of the call’s definition. The private contents are not there yet. A command’s private contents include private objects, clauses and command calls. The private contents might be copied out of the command definition, only just before the command call runs. The public contents of a command call are added when the command object is created. The private contents of a command call are only added when its about to run. So the general rule is: creation of private contents of a command call is delayed until just before a command call is run.
+A call can be present inside an object or inside another command. When a call is created, at first it might be sort of asleep. That might be when there is a chance to set its parameters. Before a command call is run, the command call’s public contents are there: its parameters. Those parameters are copied out of the call’s definition. The private contents are not there yet. A command’s private contents include private objects, clauses and command calls. The private contents might be copied out of the command definition, only just before the command call runs. The public contents of a command call are added when the command object is created. The private contents of a command call are only added when its about to run. So the general rule seems to be: creation of private contents of a command call is delayed until just before a command call is run.
 
 The reasons for the delay of creation of private contents are explained later. First, the steps of a command call’s creation are laid out one by one.
 
@@ -98,11 +91,11 @@ The reasons for the delay of creation of private contents are explained later. F
 
       ![](images/3.%20Creation%20Behavior%20Of%20Commands.011.png)
 
-- Then the command runs:
+- After that the command call might be run:
 
   ![](images/3.%20Creation%20Behavior%20Of%20Commands.012.png)
 
-  which means it runs all its sub-commands one by one, following the same procedure of call creation.  
+  If the parent command runs, it might automatically execute all the sub-commands inside it one by one, following the same procedure of call creation.  
   The sub-command’s public content needed to be created in order to instantiate the parameter passings, part of the parent command.
 
 - After a command call has finished:
@@ -156,6 +149,8 @@ But if a command object might not have a definition, then it defines its own def
 This also counts for clauses.
 
 Clauses are like command definitions inside another command. 
+
+A clause might always be created as long as the parent command is created. 
 
 Even when a clause is an execution, it is also like a command definition. Command definitions might be created permanently, so clauses might be created permanently too, as well as clauses inside other clauses. Active clauses have added behavior compared to other sub-commands (command calls). They are like command definitions inside another command. An active clause’s private data is already created. Even when the clause structure inside a command is very deep, the *whole* depth of the clause structure is recursively created when the parent command is created. The clause structure can not have circularities and is always a limited tree structure, so that the process of creating the whole clause structure can never hang or anything like that.
 
@@ -291,55 +286,3 @@ The clause might only ever run in a *call* to the definition, but then it is a c
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.037.png)
 
 An executable command inside a command definition can not be run, because its parent is dormant, and an executable sub-command can not be referenced from elsewhere either.
-
-### Loose Ideas
-
-#### From "Commands Main Concepts"
-
-*These texts might have been part of Commands Main Concepts once but might be integrated here into Creation Behavior of Commands instead.*
-
-##### Command Call Behavior
-
-At first a command call might be sort of asleep. That might be when there is a chance to set its parameters. After that the command call might be run.
-
-If the parent command runs it might automatically executes the calls inside it.
-
-##### Clause Creation Behavior
-
-A clause `is always` created `as long as the` parent command `is` created. 
-
-##### Sub-Commands
-
-`<< details >>`  
-`<< broader perspective >>`  
-
-A parent command `automatically executes` its sub-commands. After a sub-command `completes, the` process `returns` to `the` parent command, which `might` then continue, `executing the` next sub-command.
-
-Inside a command, `usually just` more commands `are` invoked.
-
-There `are only a few` commands that `do` something other than execute other commands. Those `are special` commands, that `perform` a machine instruction: an operation that `is` executed by `the` CPU, `the` central processing unit of `the` computer.
-
-On top of those `special` commands, a `few basic` commands exist, like __If__’s and __For__ loops, that control `the` flow of a program, making `the` next command to call dependent on a condition.
-
-But `basically`, a command `just calls` more commands. Machine instructions, arithmetic operators, comparative and Boolean algebra, assignments, and execution control statements such as __If__ and __For__, `are` *`all` just commands*.
-
-`<< broader perspective >>`
-Apart from sub-commands, a command `can` also contain data.
-(Inactive clauses and inactive command references for instance are also considered data, and `are` not sub-commands, because they `do not` execute.)
-
-##### Reading & Writing Parameters
-
-Before a command `is` run `you can mess about` with `the` parameters `all you want`.
-
-During `the` execution of a command `you can not` read or write `anything`.
-
-After a command `has` executed, `you can not` change `the` parameters, `just out of practical reasons`, because it `is more practical` for `the` parameters to `keep` visualizing `the` state they `were` in after `the` command `was` run.
-
-- Before execution `you can` read and write.
-- During execution `you can not` read or write.
-- After execution `you can` only read.
-
-##### Execute Once
-
-`<< details >>`  
-a command object might only execute *once*. A command object may represent a single execution. An execution might be created and dormant until it might be run. This might be a chance to set the input of the command. After a command was run, the execution might stay created while it may still be referenced, so output might be read, until `everybody` might be done with it. When the executable object might not be referenced anymore, it might be destroyed. A command object might not be executed twice: to run a command again, a new command object might be created, that may have the same *definition*. In an attempt to execute the same command symbol twice, what might happen instead, is that the old object may be released, and a new object could be created in its place. A reason why a command object might only be executed once, may be that this might give all the referrers a chance to read `the` execution’s output, `whenever` they want, `without` it `being` overwritten by new output. A command object `stays` created for `as long as` it `is being` referenced, so `everybody can` read `the` output of `the` command. `The` command object `might only` be `destroyed` when `nothing refers` to it `anymore`.
