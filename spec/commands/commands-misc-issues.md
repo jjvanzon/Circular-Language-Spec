@@ -10,14 +10,11 @@ __Contents__
 
 - [Parent Controls Its Sub-Executions](#parent-controls-its-sub-executions)
     - [Sub-Commands Are Never Referenced](#sub-commands-are-never-referenced)
-        - [Diagram](#diagram)
     - [Beware of Active Command References in Commands](#beware-of-active-command-references-in-commands)
-        - [Diagram](#diagram-1)
     - [Sub-Commands Not Manually Started](#sub-commands-not-manually-started)
 - [Command Referrers](#command-referrers)
     - [Command Object Referrers](#command-object-referrers)
     - [Command Definition Referrers](#command-definition-referrers)
-        - [Diagram](#diagram-2)
 - [This](#this)
     - [Class . HasThis](#class--hasthis)
     - [Class . This](#class--this)
@@ -44,19 +41,7 @@ For instance: the rule ‘sub-commands are never referenced’, may be changed t
 
 #### Sub-Commands Are Never Referenced
 
-This is a rule for enforcement of control of a parent command over the execution of its sub-commands. Active clauses and command calls inside another command and are never referenced, because a command has to have full control over the execution of its sub-commands. If you could reference an active command inside a command, then the sub-command could be prematurely executed through that reference. Therefore sub-commands are never referenced.
-
-It is *not* the rule, that command calls can never be referenced. It’s just that command calls *inside another command* can not be referenced. When a command call resides in an object, the command call *can* be referenced, to for instance allow a user to carry around a reference to an active command, executing on a site somewhere. So a command call inside an object can be referenced, but a command call inside another command can not be referenced.
-
-Not being able to reference sub-commands might not mean, that you *can* use it as a class, because a class reference is also a reference. This might also put the sub-command in danger of being prematurely executed, because you could establish an active reference to the class of another command object and execute it.
-
-To not cause any confusion, sub-commands are made __Private__. 
-
-Do not change the rule to *sub-commands are always private*, because this might not fully solve the parent command’s control over its sub-commands’ execution. By just making them private, the parent command could still pass a reference to a *sub-*command, so that the parent *gives up* control over the execution of a *sub-*command. This is something, that might not be allowed. Now that you can *never reference a sub-command*, this control is restored.
-
-##### Diagram
-
-The current paragraph repeats the story, but now demonstrates the concept using diagrams.
+This is a rule for enforcement of control of a parent command over the execution of its sub-commands.
 
 Active clauses and command calls inside another command and are never referenced, because a command has to have full control over the execution of its sub-commands.
 
@@ -94,14 +79,6 @@ This is a rule for enforcement of control of a parent command over the execution
 
 When you are using an active command reference inside a command, then you are giving up the full control over this sub-command’s execution.
 
-You might be aware, that when you use an active command reference, the active command reference may already have been executed, or that you may be *waiting* on an external execution to finished. If the external execution won’t finish, then the referring procedure is stuck. If the external command object is an inactive command object, it might never execute, and the command might truly be stuck. A warning should be generated then.
-
-This also has consequences for setting parameters for the active command reference. If it is already executing or has already executed, then you can not overwrite the parameters. This may mean, that it might simply not be allowed to set parameters for an active command reference at all.
-
-It is *not* the rule, to beware of *any* active command reference. It is the rule to just always beware of them in a *parent command*. An *object* can contain an active command reference, in order to for instance allow a user to carry around a reference to an active command, executing on a site somewhere.
-
-##### Diagram
-
 You might be aware, that when you use an active command reference, the active command reference may already have been executed.
 
 ![](images/6.%20Comands%20Misc%20Issues.007.png)
@@ -115,6 +92,8 @@ If the external execution won’t finish, then the referring procedure is stuck.
 If the external command object is an inactive command object, it might never execute, and the command might truly be stuck. A warning should be generated then.
 
 ![](images/6.%20Comands%20Misc%20Issues.009.png)
+
+This also has consequences for setting parameters for the active command reference. If it is already executing or has already executed, then you can not overwrite the parameters. This may mean, that it might simply not be allowed to set parameters for an active command reference at all.
 
 It is *not* the rule, to beware of any active command reference. It is the rule to just always beware of them in a *parent command*. An *object* can contain an active command reference, in order to for instance allow a user to carry around a reference to an active command, executing on a site somewhere.
 
@@ -143,10 +122,6 @@ The *Referrers* article explained how an object can be made aware of its referre
 When a site hosts a command definition, that is widely used all over the world, you might not want the command definition to register its referrers, because it might be a very long list to maintain. You can turn off the Referrers concept for any command definition.
 
 If another site uses this widely used command definition, the using site could add a command reference to the command definition on the other site. A command reference has its own list of referrers. The using site could then redirect calls and references to its own command reference. Then the using site has a registration of anything on its site that uses the external command definition.
-
-##### Diagram
-
-< The expression of referrers in a diagram needs to be redone, because the referrers list refers to the parents of the references, which is not necessarily the way to go. I’m not sure yet. I might want to register the related items and related lists items that are the references to the command definition, instead of registering their parents, and an ID, that the reference has inside the parent. >
 
 ### This
 

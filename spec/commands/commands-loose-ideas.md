@@ -1064,3 +1064,10 @@ Commands,
 In the diagrams of Relations Between Commands & Objects you can see, that a call to a command can be a call upon multiple objects to execute that command. It is not yet discussed, how it is expressed that a command has access to the private contents of a class.
 
 JJ
+
+Referrers,  
+2008 +/-
+
+< The expression of referrers in a diagram needs to be redone, because the referrers list refers to the parents of the references, which is not necessarily the way to go. I’m not sure yet. I might want to register the related items and related lists items that are the references to the command definition, instead of registering their parents, and an ID, that the reference has inside the parent. >
+
+JJ
