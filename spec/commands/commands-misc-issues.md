@@ -22,6 +22,8 @@ __Contents__
 
 ### Parent Controls Its Sub-Executions
 
+`<< rule rich >>`
+
 A parent command needs full control over the execution of its sub-commands. The parent command makes the decision about the exact moment, that the sub-command runs.
 
 To enforce this general rule, three rules are imposed to make sure a parent command never looses control over the execution of one of its sub-commands:
@@ -107,6 +109,8 @@ Sub-commands are never manually started by a user. Then there is no way for a us
 
 ### Command Referrers
 
+`<< referrers >>`
+
 #### Command Object Referrers
 
 The *Referrers* article explained how an object can be made aware of its referrers. The concept of referrers applies direction to command objects as well.
@@ -125,17 +129,29 @@ If another site uses this widely used command definition, the using site could a
 
 ### This
 
+`<< parameters >>` ?
+
 #### Class . HasThis
+
+`<< implementation >>`
 
 This __Boolean__ expresses if the __Item Class__ might have a __This__ property. For more information see the *This* section. 
 
 #### Class . This
 
+`<< implementation >>`
+
 The __This__ member returns the object itself.
 
 #### This
 
-If you set the __Class.HasThis__ property to __True__, then the class might get a __This__ property, which might return the object itself. This is particularly handy in __With__ blocks in which you wish to set another variable to the __With__ block object. __Class.HasThis__ is __True__ by default.
+`<< implementation >>`
+
+If you set the __Class.HasThis__ property to __True__, then the class might get a __This__ property, which might return the object itself.
+
+`<< ? >>`
+
+This is particularly handy in __With__ blocks in which you wish to set another variable to the __With__ block object. __Class.HasThis__ is __True__ by default.
 
 - Using class procedures with the THIS argument
 
