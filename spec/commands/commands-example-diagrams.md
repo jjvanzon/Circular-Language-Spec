@@ -15,9 +15,9 @@ __Contents__
 - [Parameters in a Command Definition](#parameters-in-a-command-definition)
 - [Parameters in a Command Call](#parameters-in-a-command-call)
 - [Parameters in a Command Reference](#parameters-in-a-command-reference)
-- [Private Objects in a Command Definition](#private-objects-in-a-command-definition)
-- [Private Objects in a Command Call](#private-objects-in-a-command-call)
-- [Private Objects in a Command Reference](#private-objects-in-a-command-reference)
+- [Local variables in a Command Definition](#local-variables-in-a-command-definition)
+- [Local Variables in a Command Call](#local-variables-in-a-command-call)
+- [Local variables in a Command Reference](#local-variables-in-a-command-reference)
 - [Command References in a Command Definition](#command-references-in-a-command-definition)
 - [Command References in a Command Call](#command-references-in-a-command-call)
 - [Command References in a Command Reference](#command-references-in-a-command-reference)
@@ -32,8 +32,8 @@ __Contents__
 - [Command Calls in an Active Clause](#command-calls-in-an-active-clause)
 - [Parameters in an Inactive Clause](#parameters-in-an-inactive-clause)
 - [Parameters in an Active Clause](#parameters-in-an-active-clause)
-- [Private Objects in an Inactive Clause](#private-objects-in-an-inactive-clause)
-- [Private Objects in an Active Clause](#private-objects-in-an-active-clause)
+- [Local Variables in an Inactive Clause](#local-variables-in-an-inactive-clause)
+- [Local variables in an Active Clause](#local-variables-in-an-active-clause)
 - [Command References in an Inactive Clause](#command-references-in-an-inactive-clause)
 - [Command References in an Active Clause](#command-references-in-an-active-clause)
 
@@ -43,17 +43,35 @@ This article tries to systematically demonstrate different situations of command
 
 Relationships between the following concepts may be demonstrated:
 
-| Concept            | Description                                                                  |
-|--------------------|------------------------------------------------------------------------------|
-| Command call       | Executes a command definition it points out.                                 |
-| Command definition | Does not execute directly but may get called.                                |
-| Command reference  | Pointer to another command.                                                  |
-| Active clause      | Command defined inside another command, that may execute.                    |
-| Inactive clause    | Command defined inside another command, that might not be executed directly. |
-| Parameter          | Instruction passed to a command, that makes it behave differently.           |
-| Private object     | Helper variables inside a command, invisible from the outside.               |
+__Command call__  
+<img src="images/command-call.png" width="80" />  
+Executes a command definition it points out.
 
-The term 'clause' may be used here in quite a particular way. It is *containment* relationships between these  constructs, that might be explored. It may enrich the impression of commands in Encircle.
+__Command definition__  
+<img src="images/command-definition.png" width="80" />  
+Does not execute directly but may get called.
+
+__Command reference__  
+<img src="images/command-reference.png" width="100" />  
+Pointer to another command.
+
+__Active clause__  
+<img src="images/active-clause.png" width="80" />  
+Command defined inside another command, that may execute.
+
+__Inactive clause__  
+<img src="images/inactive-clause.png" width="80" />  
+Command defined inside another command, that might not be executed directly.
+
+__Parameter__  
+<img src="images/parameter.png" width="80" />  
+Instruction passed to a command, that makes it behave differently.
+
+__Local variable__  
+<img src="images/local-variable.png" width="80" />  
+Helper variables inside a command, invisible from the outside.
+
+The term 'clause' may be used here in quite a particular way. It is *containment* relationships between these constructs, that might be explored. It may enrich an impression of commands in Encircle.
 
 ### Command Calls in a Command Definition
 
@@ -97,37 +115,37 @@ The larger square on the left is a command reference. It is tied to its referenc
 
 Either of the squares could have been replaced by a diamond, making the command symbol executable, rather than dormant.
 
-### Private Objects in a Command Definition
+### Local variables in a Command Definition
 
 ![](images/5.%20Commands%20Example%20Diagrams.007.png)
 
-The square is a command definition. The circles inside of it are private objects. In diagram above the fact that they are private is displayed with the object line and the cross it ends with indicating, that you can not reference these objects from the outside.
+The square is a command definition. The circles inside of it are local variables. In diagram above the fact that they are private is displayed with the object line and the cross it ends with indicating, that you can not reference these objects from the outside.
 
-The following picture is another possible expression of the private objects:
+The following picture is another possible expression of the variables:
 
 ![](images/5.%20Commands%20Example%20Diagrams.008.png)
 
 Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it might be obvious: if they do not have a parameter passing, then they are private.
 
-### Private Objects in a Command Call
+### Local Variables in a Command Call
 
 ![](images/5.%20Commands%20Example%20Diagrams.009.png)
 
-The diamond is a command call. Its definition is indicated with the dashed line connecting it to the square, which is the definition. The circles inside the diamond are the private objects of the command call. The fact, that they are private is displayed with the object line and the cross it ends with indicating, that you can not reference these objects from the outside.
+The diamond is a command call. Its definition is indicated with the dashed line connecting it to the square, which is the definition. The circles inside the diamond are the local variables of the command call. The fact, that they are private is displayed with the object line and the cross it ends with indicating, that you can not reference these objects from the outside.
 
-Another possible expression of the private objects is the following:
+Another possible expression of the local variables is the following:
 
 ![](images/5.%20Commands%20Example%20Diagrams.010.png)
 
 Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it might be obvious: if they do not have a parameter passing, then they are private.
 
-### Private Objects in a Command Reference
+### Local variables in a Command Reference
 
 ![](images/5.%20Commands%20Example%20Diagrams.011.png)
 
-The square on the left is a command reference. Its target definition is indicated with a solid line, which is an object, pointing at the square on the right, which is the target definition. The circles inside the square on the left are the private objects of the command call. The fact, that they are private is displayed with the object line and the cross it ends with indicating, that you can not reference these objects from the outside.
+The square on the left is a command reference. Its target definition is indicated with a solid line, which is an object, pointing at the square on the right, which is the target definition. The circles inside the square on the left are the local variables of the command call. The fact, that they are private is displayed with the object line and the cross it ends with indicating, that you can not reference these objects from the outside.
 
-Another possible expression of the private objects is the following:
+Another possible expression of the local variables is the following:
 
 ![](images/5.%20Commands%20Example%20Diagrams.012.png)
 
@@ -239,25 +257,25 @@ The large square is a command definition the inactive clause is in. The square i
 
 The large square is a command definition the inactive clause is in. The diamond inside the square is the active clause. The diamond contains three circles, which are the parameters in the clause. The circles inside the diamond are connected to the circles outside the diamond with parameter passings. Parameter passings are explained in the *Parameters* articles.
 
-### Private Objects in an Inactive Clause
+### Local Variables in an Inactive Clause
 
 ![](images/5.%20Commands%20Example%20Diagrams.030.png)
 
-The large square is a command definition, the clause is in. The square inside the larger square is the inactive clause. It contains two circles, which are the private objects of the inactive clause. The lines that go outside, that end at a cross are the indications that the objects are private. They indicate you can not reference the circles from the outside. 
+The large square is a command definition, the clause is in. The square inside the larger square is the inactive clause. It contains two circles, which are the local variables of the inactive clause. The lines that go outside, that end at a cross are the indications that the objects are private. They indicate you can not reference the circles from the outside. 
 
-Another possible expression of the private objects is the following:
+Another possible expression of the local variables is the following:
 
 ![](images/5.%20Commands%20Example%20Diagrams.031.png)
 
 Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it might be obvious: if they do not have a parameter passing, then they are private.
 
-### Private Objects in an Active Clause
+### Local variables in an Active Clause
 
 ![](images/5.%20Commands%20Example%20Diagrams.032.png)
 
-The large square is a command definition, the clause is in. The diamond inside the square is the active clause. It contains two circles, which are the private objects of the active clause. The lines that go outside, that end at a cross are the indications that the objects are private. They indicate you can not reference the circles from the outside.
+The large square is a command definition, the clause is in. The diamond inside the square is the active clause. It contains two circles, which are the local variables of the active clause. The lines that go outside, that end at a cross are the indications that the objects are private. They indicate you can not reference the circles from the outside.
 
-Another possible expression of the private objects is the following:
+Another possible expression of the local variables is the following:
 
 ![](images/5.%20Commands%20Example%20Diagrams.033.png)
 
