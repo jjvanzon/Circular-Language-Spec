@@ -41,8 +41,8 @@ __Contents__
 
 This article tries to systematically demonstrate different situations of commands.
 
-Relationships between the following concepts may be demonstrated:
-(The term 'clause' may be used here in a particular way.)
+Relationships between the following concepts may be demonstrated.
+(The term 'clause' may be used here in a particular way.) It is containment relationships between these constructs, that might be explored. It may enrich an impression of commands in Encircle.
 
 | | | |
 |--------------------|-|------------------------------------------------------------------------------|
