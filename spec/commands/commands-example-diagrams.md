@@ -54,8 +54,6 @@ Relationships between the following concepts may be demonstrated.
 | __Parameter__ | <img src="images/parameter.png" width="80" /> | Instruction passed to a command, that makes it behave differently. |
 | __Local variable__ | <img src="images/local-variable.png" width="80" /> | Helper variables inside a command, invisible from the outside. |
 
-It is *containment* relationships between these constructs, that might be explored. It may enrich an impression of commands in Encircle.
-
 ### Command Calls in a Command Definition
 
 ![](images/5.%20Commands%20Example%20Diagrams.001.png)
