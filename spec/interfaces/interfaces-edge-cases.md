@@ -11,7 +11,6 @@ __Contents__
 - [Member Grouping](#member-grouping)
     - [Explicit Interface Dependency](#explicit-interface-dependency)
     - [Call Overhead](#call-overhead)
-- [Interface Referrers](#interface-referrers)
 - [Reliability of Interfaces](#reliability-of-interfaces)
     - [Private Backward Relation](#private-backward-relation)
     - [Public Backward Relation](#public-backward-relation)
@@ -58,10 +57,6 @@ Below these two problems are explained and possible solutions are given. Solutio
 > Imaginary elements of a diagram were introduced in the *Automatic Containment* article. Making the member groupings imaginary might be a bad idea, because up until now imaginary elements of the diagram were automatically calculated by the system, and not set by a programmer and it might be wise to keep it that way.
 > 
 > A better solution may lie in optimization. Programmers often add structure to their programs even though it is not absolutely necessary, but just makes things more tangible and orderly. Taking such structurings out of a program before it is run, is more of an optimization issue than anything else.
-
-### Interface Referrers
-
-The *Referrers* concept has been explained in the *Relations* chapter. The article *Class Referrers* explains the concept for classes. It works exactly the same for interfaces. It might not be further explained here. Mind that commands can have interface referrers as well.
 
 ### Reliability of Interfaces
 
