@@ -4,73 +4,70 @@
 Loose Ideas
 -----------
 
+`[ Preliminary documentation ]`
+
 __Contents__
 
-- [Notation Elements](#notation-elements)
-- [Procedures](#procedures)
-- [Procedure Call](#procedure-call)
-- [Procedure Reference](#procedure-reference)
-- [Procedure Clause](#procedure-clause)
-- [Procedure Contents](#procedure-contents)
-- [Procedure Versus Type](#procedure-versus-type)
-- [Required and Optional Parameters](#required-and-optional-parameters)
-- [Terms](#terms)
-    - [Reference](#reference)
-    - [Call](#call)
-    - [Definition](#definition)
-    - [Clause](#clause)
-    - [Active and Inactive](#active-and-inactive)
-    - [Active Clause](#active-clause)
-    - [Inactive Clause](#inactive-clause)
-    - [Sub Clause](#sub-clause)
-    - [Sub Procedure](#sub-procedure)
-    - [Executor and Execution](#executor-and-execution)
-- [Execution Basics](#execution-basics)
-    - [Squares and Diamonds](#squares-and-diamonds)
-    - [Diamonds Execute When Direct Parent Executes](#diamonds-execute-when-direct-parent-executes)
-    - [Diamonds Can only be Directly Inside a Procedure Symbol, Diamonds Can’t be Directly Inside an Object Symbol](#diamonds-can-only-be-directly-inside-a-procedure-symbol-diamonds-cant-be-directly-inside-an-object-symbol)
-    - [You Can Only Access Members of a Diamond](#you-can-only-access-members-of-a-diamond)
-    - [You can Only Access Members of a Diamond, while the Diamond is executing](#you-can-only-access-members-of-a-diamond-while-the-diamond-is-executing)
-    - [The Diamond Executor Can Access Members Only Just before and Just After the Execution](#the-diamond-executor-can-access-members-only-just-before-and-just-after-the-execution)
-    - [Accessing a Diamond Member During a Call](#accessing-a-diamond-member-during-a-call)
-    - [Passing an object reference to a procedure](#passing-an-object-reference-to-a-procedure)
-    - [Procedure can set object reference itself too](#procedure-can-set-object-reference-itself-too)
-    - [Clause Access](#clause-access)
-    - [Passing a procedure reference](#passing-a-procedure-reference)
-    - [The If example](#the-if-example)
-    - [Brainstorm](#brainstorm)
-        - [1](#1)
-        - [2](#2)
-        - [3](#3)
-        - [4](#4)
-        - [5](#5)
-- [Argument Access](#argument-access)
-    - [Prolog and Epilog](#prolog-and-epilog)
-    - [Argument Assignment Requires Reading in Prolog!](#argument-assignment-requires-reading-in-prolog)
-    - [Writing Arguments](#writing-arguments)
-- [Create Argument and Call Argument’s Members](#create-argument-and-call-arguments-members)
-- [Created Arguments](#created-arguments)
-- [Do It with a Parameter’s Members](#do-it-with-a-parameters-members)
-- [Brainstorm](#brainstorm-1)
-    - [Summary of Old Subdivision](#summary-of-old-subdivision)
-    - [New Subdivision](#new-subdivision)
-    - [New Brainstorm Texts](#new-brainstorm-texts)
-        - [New](#new)
-    - [Argument Access Summary](#argument-access-summary)
-        - [Argument Access](#argument-access-1)
-- [Other](#other)
-- [Procedures to Procedures, Objects to Object](#procedures-to-procedures-objects-to-object)
-- [Brainstorm](#brainstorm-2)
-- [Procedure Symbol Roles](#procedure-symbol-roles)
-- [Reference and Call Targets](#reference-and-call-targets)
-- [From the Original Assignment Article Group](#from-the-original-assignment-article-group)
-- [Other Ideas](#other-ideas)
+- [Misc Ideas](#misc-ideas)
+- [From the Original Symbol Documentation](#from-the-original-symbol-documentation)
+    - [Introduction, Procedures](#introduction-procedures)
+    - [Procedure Basics](#procedure-basics)
+        - [Notation Elements](#notation-elements)
+        - [Procedures](#procedures)
+        - [Procedure Call](#procedure-call)
+        - [Procedure Reference](#procedure-reference)
+        - [Procedure Clause](#procedure-clause)
+        - [Procedure Contents](#procedure-contents)
+        - [Procedure Versus Type](#procedure-versus-type)
+        - [Required and Optional Parameters](#required-and-optional-parameters)
+    - [Executions & Parameters](#executions--parameters)
+        - [Terms](#terms)
+            - [Reference](#reference)
+            - [Call](#call)
+            - [Definition](#definition)
+            - [Clause](#clause)
+            - [Active and Inactive](#active-and-inactive)
+            - [Active Clause](#active-clause)
+            - [Inactive Clause](#inactive-clause)
+            - [Sub Clause](#sub-clause)
+            - [Sub Procedure](#sub-procedure)
+            - [Executor and Execution](#executor-and-execution)
+        - [Execution Basics](#execution-basics)
+            - [Squares and Diamonds](#squares-and-diamonds)
+            - [Diamonds Execute When Direct Parent Executes](#diamonds-execute-when-direct-parent-executes)
+            - [Diamonds Can only be Directly Inside a Procedure Symbol, Diamonds Can’t be Directly Inside an Object Symbol](#diamonds-can-only-be-directly-inside-a-procedure-symbol-diamonds-cant-be-directly-inside-an-object-symbol)
+            - [You Can Only Access Members of a Diamond](#you-can-only-access-members-of-a-diamond)
+            - [You can Only Access Members of a Diamond, while the Diamond is executing](#you-can-only-access-members-of-a-diamond-while-the-diamond-is-executing)
+            - [The Diamond Executor Can Access Members Only Just before and Just After the Execution](#the-diamond-executor-can-access-members-only-just-before-and-just-after-the-execution)
+            - [Accessing a Diamond Member During a Call](#accessing-a-diamond-member-during-a-call)
+            - [Passing an object reference to a procedure](#passing-an-object-reference-to-a-procedure)
+            - [Procedure can set object reference itself too](#procedure-can-set-object-reference-itself-too)
+            - [Clause Access](#clause-access)
+            - [Passing a procedure reference](#passing-a-procedure-reference)
+            - [The If example](#the-if-example)
+            - [Brainstorm](#brainstorm)
+        - [Argument Access](#argument-access)
+            - [Prolog and Epilog](#prolog-and-epilog)
+            - [Argument Assignment Requires Reading in Prolog!](#argument-assignment-requires-reading-in-prolog)
+            - [Writing Arguments](#writing-arguments)
+        - [Create Argument and Call Argument’s Members](#create-argument-and-call-arguments-members)
+        - [Created Arguments](#created-arguments)
+        - [Do It with a Parameter’s Members](#do-it-with-a-parameters-members)
+        - [Brainstorm](#brainstorm-1)
+            - [Summary of Old Subdivision](#summary-of-old-subdivision)
+            - [New Subdivision](#new-subdivision)
+            - [New Brainstorm Texts](#new-brainstorm-texts)
+            - [Argument Access Summary](#argument-access-summary)
+        - [Other](#other)
+        - [Procedures to Procedures, Objects to Object](#procedures-to-procedures-objects-to-object)
+        - [Brainstorm](#brainstorm-2)
+    - [More Ideas](#more-ideas)
+        - [Procedure Symbol Roles](#procedure-symbol-roles)
+        - [Reference and Call Targets](#reference-and-call-targets)
+        - [From the Original Assignment Article Group](#from-the-original-assignment-article-group)
+        - [Other Ideas](#other-ideas)
 
-
-Loose Ideas
-===========
-
-`[ Preliminary documentation ]`
+### Misc Ideas
 
 Not showing private members or the contents of procedures is an important subject for the display of the diagrams. 
 
@@ -206,12 +203,9 @@ The benefits from making a type out of a procedure is that you can dynamically w
 
 JJ
 
+### From the Original Symbol Documentation
 
-From the Original Symbol Documentation
-======================================
-
-Introduction, Procedures
-------------------------
+#### Introduction, Procedures
 
 Apart from a collection of sub objects, an object contains *procedures*.
 
@@ -263,16 +257,14 @@ Justs like with the kitchen example: you don’t necessarily need to see the det
 
 Procedures can also be called *operations*, *functions* or *routines* and there are even more synonyms. But I might usually stick to the term *procedure*.
 
-
-Procedure Basics
-----------------
+#### Procedure Basics
 
 < a diamond is also notated pointier than a square. So this is be a diamond too:
 
 [Picture with a pointy square]
 \>
 
-### Notation Elements
+##### Notation Elements
 
 *Squares* and *diamonds* are procedure symbols. They represent elements of the procedure structure.
 
@@ -290,7 +282,7 @@ And by connecting them with lines, or *lines:*
 
 There can only be solid or dotted lines between procedure symbols.
 
-### Procedures
+##### Procedures
 
 Procedures are denoted with squares:
 
@@ -302,7 +294,7 @@ To make two squares be the same procedure you connect them with a line:
 
 A call to either square is a call to the same procedure.
 
-### Procedure Call
+##### Procedure Call
 
 To make one procedure call another procedure, you put a diamond in the calling procedure and you connect it to the procedure to call.
 
@@ -316,7 +308,7 @@ If one square is called, its contained squares are called too.
 
 When __A__ is called, __B__ is called. When __B__ is called, __C__, __D__ and __E__ are called.
 
-### Procedure Reference
+##### Procedure Reference
 
 A diamond connected to another procedure is a call. A square connected to another procedure is a mere *reference* to the procedure.
 
@@ -336,7 +328,7 @@ When a procedure is called, the contained procedure *references* are *not* calle
 
 When __A__ is called, __B__ and __D__ are called, but not __C__.
 
-### Procedure Clause
+##### Procedure Clause
 
 A diamond without a line:
 
@@ -360,7 +352,7 @@ but it doesn’t execute, unless you call it.
 
 A splineless diamond is also called an *active clause*, while a splineless square is also called an *inactive clause*.
 
-### Procedure Contents
+##### Procedure Contents
 
 A procedure can contain anything an object can. Anything you can declare inside a type can also be declared in a procedure.
 
@@ -380,7 +372,7 @@ The input parameters of a procedure are its writable objects. The output values 
 
 Squares inside procedures are non executing clauses or procedure references. Diamonds inside procedures are executing clauses or procedure calls.
 
-### Procedure Versus Type
+##### Procedure Versus Type
 
 *Procedures* differ from *types* in the following ways:
 
@@ -389,19 +381,18 @@ Squares inside procedures are non executing clauses or procedure references. Dia
 - The public writable objects are written only right before the call.
 - The public readable objects are read only right after the call.
 
-### Required and Optional Parameters
+##### Required and Optional Parameters
 
 As a procedure is like a type it may seem that you have full freedom regarding which objects you write and which you don’t. However, many parameters of procedures are *required* parameters. This means that you *might* write something to it before the call. Optional parameters are ones that do not necessarily need to be written before the call. Required parameters are there to on one hand ensure a parameter holds a right value. That however, could have been done by the procedure’s initializing the value itself. The main point of required parameters is that a lot of times the function of a procedure just doesn’t make sense unless you write the parameters. The programmer is made extra aware of that by making the parameter required.
 
 In diagram code, optional parameters are denoted by displaying the word __Optional__ near the optional parameter. The other parameters are required.
 
 
-Executions & Parameters
------------------------
+#### Executions & Parameters
 
 This section discusses all issues around executing procedures and using parameters.
 
-### Terms
+##### Terms
 
 Here I introduce basic terms in the area of executions and parameters. Here’s a quick reference list.
 
@@ -420,7 +411,7 @@ Here I introduce basic terms in the area of executions and parameters. Here’s 
 - Executor
 - Execution
 
-#### Reference
+###### Reference
 
 The following are procedure references:
 
@@ -428,7 +419,7 @@ The following are procedure references:
 
 It’s a square that is redirected. It’s always a *square* with a *reference line*. It is a procedure that redirects, but *might not* execute. It can point either to a square or a diamond.
 
-#### Call
+###### Call
 
 The following are calls:
 
@@ -436,7 +427,7 @@ The following are calls:
 
 It’s a diamond that is redirected. It’s always a *diamond* with a *reference line*. It executes a procedure defined elsewhere. Therefore it is a call. It can point either to a square or a diamond.
 
-#### Definition
+###### Definition
 
 A definition is a procedure symbol with no reference line at all.
 
@@ -444,7 +435,7 @@ A definition is a procedure symbol with no reference line at all.
 
 The reference line should not exist at all, not just not be shown. It’s a definition, because the contents of the procedure aren’t defined elsewhere, but defined in the symbol itself.
 
-#### Clause
+###### Clause
 
 A procedure symbol inside another procedure symbol:
 
@@ -462,11 +453,11 @@ This type of definition is usually not called a definition. The clause might be 
 
 The clause can be a diamond or a square. Its container can also be a diamond as well as a square. A clause might not have a reference line, or it might have been a reference or a call, not a clause.
 
-#### Active and Inactive
+###### Active and Inactive
 
 A diamond executes, a square might not. A diamond is said to be active, while a square is inactive.
 
-#### Active Clause
+###### Active Clause
 
 A clause that is a diamond, is called an active clause:
 
@@ -475,7 +466,7 @@ A clause that is a diamond, is called an active clause:
 
 It’s called active, because it executes.
 
-#### Inactive Clause
+###### Inactive Clause
 
 An inactive clause is a clause that doesn’t execute. So it’s a clause that is a square:
 
@@ -484,7 +475,7 @@ An inactive clause is a clause that doesn’t execute. So it’s a clause that i
 
 It won’t execute unless you call it.
 
-#### Sub Clause
+###### Sub Clause
 
 A sub clause is a clause inside a clause. So it’s a procedure symbol without a reference line in a procedure symbol without a reference line in a procedure symbol, for instance:
 
@@ -492,7 +483,7 @@ A sub clause is a clause inside a clause. So it’s a procedure symbol without a
 
 It doesn’t matter whether any of the symbols is a square or a diamond.
 
-#### Sub Procedure
+###### Sub Procedure
 
 A sub procedure is any procedure symbol inside another procedure symbol.
 
@@ -502,13 +493,13 @@ But usually it’s only the diamonds that are referred to as sub procedures. Tha
 
 ![](images/7.%20Commands%20Ideas.036.png)
 
-#### Executor and Execution
+###### Executor and Execution
 
 Any diamond symbol is called an executor, because it can execute. A single diamond can execute multiple times. An individual execution of a diamond is called an *execution*.
 
 It’s allowed to call an executor an execution, but usually only while it’s executing.
 
-### Execution Basics
+##### Execution Basics
 
 < Some things here may have a place in Execution Order >
 
@@ -518,7 +509,7 @@ This section covers some basic execution situations. Each situation has certain 
 
 < Deze inleiding is te denigrerend over de sectie >
 
-#### Squares and Diamonds
+###### Squares and Diamonds
 
 ![](images/7.%20Commands%20Ideas.037.jpeg)
 
@@ -530,7 +521,7 @@ A square doesn’t execute. Well, they only execute when you call it.
 
 But then again: A is the one that’s executing, not B. So diamonds execute, and squares do not.
 
-#### Diamonds Execute When Direct Parent Executes
+###### Diamonds Execute When Direct Parent Executes
 
 A diamond doesn’t execute automatically. It only executes when the parent symbol executes.
 
@@ -552,13 +543,13 @@ Actually, The letters distinguish the different symbols. If you only use letters
 
 So in that sense, diamond A might execute. But not the definition executes, only the call executes.
 
-#### Diamonds Can only be Directly Inside a Procedure Symbol, Diamonds Can’t be Directly Inside an Object Symbol
+###### Diamonds Can only be Directly Inside a Procedure Symbol, Diamonds Can’t be Directly Inside an Object Symbol
 
 Because execution can only take place in a procedure, a diamond can’t be directly inside an object Symbol
 
 ![](images/7.%20Commands%20Ideas.043.jpeg)
 
-#### You Can Only Access Members of a Diamond
+###### You Can Only Access Members of a Diamond
 
 You can (usually) only access members of a diamond, because a square is never created, just like you can’t access members of a non created object.
 
@@ -566,13 +557,13 @@ You can (usually) only access members of a diamond, because a square is never cr
 
 ![](images/7.%20Commands%20Ideas.045.jpeg)
 
-#### You can Only Access Members of a Diamond, while the Diamond is executing
+###### You can Only Access Members of a Diamond, while the Diamond is executing
 
 Because a diamond is only created when it’s executing, you can only access members when the diamond is in execution.
 
 Some members of a procedure can be static. In that case the member belongs to the procedure definition. Those member are the same for any reference or call to a procedure. Static member of a procedure can be freely accessed through any square or diamond that represents it.
 
-#### The Diamond Executor Can Access Members Only Just before and Just After the Execution
+###### The Diamond Executor Can Access Members Only Just before and Just After the Execution
 
 If the diamond executor accesses something of a diamond, it’ll only access it just before and just after the call.
 
@@ -582,7 +573,7 @@ In fact the diamond executor might only write members just before the call and m
 
 < Don’t forget that you don’t need to read or write necessarily, you can also just call a member of the parameter instead of read or write it… explore that >
 
-#### Accessing a Diamond Member During a Call
+###### Accessing a Diamond Member During a Call
 
 So how might you access a diamond member *during* a call? Well, usually only procedures called by the executing diamond can access the call parent.
 
@@ -601,14 +592,14 @@ Two sibling procedures are executing at the same time, in different threads, whi
 
 < consider the example of diamond reference to diamond in the main argument reference example >
 
-#### Passing an object reference to a procedure
+###### Passing an object reference to a procedure
 
 ![](images/7.%20Commands%20Ideas.048.jpeg)
 
 When you pass an object reference to a procedure, the procedure can access the object.  
 In the situation above it seems the procedure could access the object anyway (because a procedure can access everything accessible to the object that contains it). It *can*, but in this case the *caller* decides which object to point to, not the called.
 
-#### Procedure can set object reference itself too
+###### Procedure can set object reference itself too
 
 When the caller (the parent diamond) sets the line, then the caller decides which object the call might refer to.
 
@@ -619,7 +610,7 @@ It’s important that the procedure itself sets lines, because the line targets 
 
 < I don’t know a notation to distinct sets by the caller and sets by the call. Well… in a more explicit notation you might see that the caller calls the set or the called calls the set. >
 
-#### Clause Access
+###### Clause Access
 
 Clauses have special access privileges compared to delegated procedure symbols.
 
@@ -632,7 +623,7 @@ In the picture above, the top two lines could have been set by A itself. The fir
 
 Squares formally can’t have outward lines, except for static members. There are situations in which non static members of squares are shown to have outward lines, but those are discussed later.
 
-#### Passing a procedure reference
+###### Passing a procedure reference
 
 When you pass a procedure reference to a child procedure:
 
@@ -640,7 +631,7 @@ When you pass a procedure reference to a child procedure:
 
 The child can call the referenced procedure at might.
 
-#### The If example
+###### The If example
 
 A great application of that is the If procedure.
 
@@ -650,7 +641,7 @@ Procedure A passes Clause A and Clause B to Procedure B, along with an object th
 
 The clauses can freely access anything of __Procedure A__, so __Procedure B__ is able to call things that can freely access __Procedure A__’s stuff.
 
-#### Brainstorm
+###### Brainstorm
 
 - Simple voor de hand liggende issues regarding execution < Which precisely? >
 - For instance, diamond only inside a procedure symbol
@@ -660,27 +651,27 @@ The clauses can freely access anything of __Procedure A__, so __Procedure B__ is
     - < Maar lijkt een Execution basics. Hmmm… de term Execution Basics is niet goed genoeg dan. De term basics is niet goed. Execution Facts… nah.>
 - Wanneer wordt een diamond meerdere keren geexecute?
 
-##### 1
+####### 1
 
 Diamond represents individual calls to a definition.  
 In a recursive situation, though: < P >, one diamond can represent multiple calls < ? How to get that straight? >  
 < NO IT CAN’T. >
 
-##### 2
+####### 2
 
 A diamond pointing to another diamond: it’s a call to a call. both diamonds represent the same call. They might never execute individually.
 
-##### 3
+####### 3
 
 If eventually the original caller is called again, with one of its calls in progress... hmm... can you call upon a call on hold, because it is waiting for one of its calls to finish? Its public objects, maybe, but you can’t execute anything in it. 
 
 ![](images/7.%20Commands%20Ideas.052.png)
 
-##### 4
+####### 4
 
 (*Implicit* embedded procedure reference causes a separate implicit call)
 
-##### 5
+####### 5
 
 __*Procedures can only be Called from another Procedure*__
 
@@ -704,15 +695,15 @@ Using arguments always requires assignment.
 
 Just before execution you’ll write arguments. Just after execution, you’ll read arguments. Those are the main two occasions you’ll access arguments.
 
-### Argument Access
+##### Argument Access
 
-#### Prolog and Epilog
+###### Prolog and Epilog
 
 Writing and reading arguments require things to be done just before and right after the execution. Things that might be done just before execution are called the *prolog* of the execution. Things that might be done just after the execution are called the *epilog*.
 
 Writing arguments takes place in the prolog and reading arguments takes place in the epilog.
 
-#### Argument Assignment Requires Reading in Prolog!
+###### Argument Assignment Requires Reading in Prolog!
 
 Argument assignment takes place in the *prolog*. But *setting* the argument also requires *getting* the argument. However, getting the argument was said to take place in the *epilog*. For the purpose of *setting* the argument, however, *getting* happens in the *prolog*.
 
@@ -726,13 +717,13 @@ Assignment of arguments simply *might* take place in the prolog, even though the
 
 Assignment procedures are fundamental procedures of the Symbol Language and behave much different from other procedures.
 
-#### Writing Arguments
+###### Writing Arguments
 
 Writing an argument before execution means to set its state or line target.
 
 An assignment as such, requires you to get a value from one place and set the argument to it. So writing an argument actually requires both a __Get__ and a __Set__. The fact that it’s the argument that’s __Set__ makes it writing *the argument*.
 
-### Create Argument and Call Argument’s Members
+##### Create Argument and Call Argument’s Members
 
 There may be more things you want to do with an argument before passing it to a procedure. You may want to create a brand new object as an argument and you may want to call some members of the argument first. You *can’t* do these operations directly on the argument. You might create a separate object, manipulate it and then pass it by reference
 
@@ -778,7 +769,7 @@ Then you just see that the object is created, and you might be satisfied knowing
 Procedure ( New Type )
 ```
 
-### Created Arguments
+##### Created Arguments
 
 A procedure can decide if an argument is a created object or not. If it is a created object, then the object is created in the prolog, even before writing arguments. The argument object is created, then it is written, then the procedure executes.
 
@@ -786,7 +777,7 @@ Arguments as such are created objects directly contained by the procedure. They 
 
 In the epilog, first arguments are read before the created arguments are destroyed. The procedure only destroys objects it directly contains.
 
-### Do It with a Parameter’s Members
+##### Do It with a Parameter’s Members
 
 <
 *Other things done with parameters*  
@@ -795,9 +786,9 @@ or keeping a reference to a created parameter or __do the same with members of p
 Except for passing procedure reference to a procedure.
 \>
 
-### Brainstorm
+##### Brainstorm
 
-#### Summary of Old Subdivision
+###### Summary of Old Subdivision
 
 - Writing arguments before the call:
     - Assignment: lines or state
@@ -837,7 +828,7 @@ Except for passing procedure reference to a procedure.
 - Diamond pointing to another diamond
 - Line of connected diamonds change simultaniously
 
-#### New Subdivision
+###### New Subdivision
 
 - Parameter Access
     - Writing parameters before execution
@@ -875,7 +866,7 @@ Except for passing procedure reference to a procedure.
 
 Line of connected diamonds change simultaneously
 
-#### New Brainstorm Texts
+###### New Brainstorm Texts
 
 The problems proposed in this text might have to do with:
 
@@ -884,7 +875,7 @@ The problems proposed in this text might have to do with:
 - Parameter assignments involve consults of parameters in prolog of procedure call, while consults are usually always in epilog.
 - Diamond may only represent a single execution per definition call (not regarding unconditional jumps (? The latter is questionable.)
 
-##### New
+####### New
 
 - Prolog and epilog
 - Parameter writes in prolog
@@ -892,9 +883,7 @@ The problems proposed in this text might have to do with:
 
 - Assignments of parameters suggests reading parameters. However, these assignments do take place in the prolog, even though they suggest reads. Assignments are different that way.
 
-#### Argument Access Summary
-
-##### Argument Access
+###### Argument Access Summary
 
 - Writing parameters before execution
     - Assignment: lines or state
@@ -908,7 +897,7 @@ The problems proposed in this text might have to do with:
     - By child executions (~ is this the proper place for this?)
         - The callees of a diamond can access the caller's members if given references to them
 
-### Other
+##### Other
 
 A procedure symbol can have one of four roles: - definition, - clause, - call, - reference
 
@@ -920,7 +909,7 @@ Generating the stack operations preceding and concluding function calls is calle
 
 JJ
 
-### Procedures to Procedures, Objects to Object
+##### Procedures to Procedures, Objects to Object
 
 < 2008-10-12 I am not sure I should impose this rule or not >
 
@@ -946,7 +935,7 @@ So then object symbols point only to object symbols and procedure symbols only t
 
 However, the picture above is actually again an implicit notation for something else, but I won’t go into detail about that yet.
 
-### Brainstorm
+##### Brainstorm
 
 A procedure might probably not get its own symbol anyway. It might just be an object with an execution point.
 
@@ -962,9 +951,7 @@ But if it has a reference line it is regarded no more than a reference or call t
 *A is the procedure reference, B is the definition:*  
 ![](images/7.%20Commands%20Ideas.066.jpeg)
 
-
-More Ideas
-----------
+#### More Ideas
 
 Commands,
 2009-03-13
@@ -977,7 +964,7 @@ So I as the user want to be able to hide those. I do not want to see those.
 
 JJ
 
-### Procedure Symbol Roles
+##### Procedure Symbol Roles
 
 A call line makes the square a call. A reference line makes it a reference. No line at all indicates that it’s a procedure definition or a clause. Lines can also be left out for abstraction reasons.
 
@@ -989,7 +976,7 @@ A call line makes the square a call. A reference line makes it a reference. No l
 
 Note here that the access symbol of a solid procedure reference line is also drawn solid.
 
-### Reference and Call Targets
+##### Reference and Call Targets
 
 Here is a list of possible reference targets and call targets:
 
@@ -1012,7 +999,7 @@ Here is a list of possible reference targets and call targets:
 | ![](images/7.%20Commands%20Ideas.079.jpeg) | __Call to sibling inactive clause, in a square.__ <br> This is like a jump to a clause, that might otherwise not execute. <br> Only possible for static procedure members or exclusive establishment. |
 | |A diamond can be executing. Only during the execution of the diamond, lines between its non static children can be real. If the diamond isn’t executing, or it’s not a diamond, but a square, lines between the non static children are suggestive. Only lines between static members in such cases, can be real.|
 
-### From the Original Assignment Article Group
+##### From the Original Assignment Article Group
 
 An object assignment can also be used for *commands*. In that case it is a *command object assignment*. You can only let two command symbols refer to the same object when they are command *definitions*. You can not assign a command object to a command call. This is due to the special object creation behavior of a call. Command calls can never *redirect* their object. They are always *their own* object, and they are only created, when they are running. Command definitions, however, are permanently created objects, and a command definition symbol can redirect its object target.
 
@@ -1056,7 +1043,7 @@ The notation of an assignment letting a command’s definition point to a refere
 
 In the example above, symbol __A__ is a non-executing (square) command symbol, and symbol __B__ is a diamond, which stands for a call, but both symbol __A__ and __B__ could have been either squares or diamonds.
 
-### Other Ideas
+##### Other Ideas
 
 Commands,  
 2008-05-18
