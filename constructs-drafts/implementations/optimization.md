@@ -369,7 +369,7 @@ However you don’t have the names of modules, classes and other elements. You n
 
 #### Leave Out Access
 
-To make a system perform faster you can take away the object oriented structure. With that you gain that you don’t might put directions on the stack and make jump statements to get to the procedure.
+To make a system perform faster you can take away the object oriented structure. With that you gain that you might not put directions on the stack and make jump statements to get to the procedure.
 
 Another way to optimize code for speed is to inline procedures. Preferably all procedures if there isn’t a potentially infinite recurrence. (You could inline a maximum of recurrences.)
 

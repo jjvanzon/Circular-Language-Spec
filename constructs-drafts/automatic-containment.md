@@ -710,7 +710,7 @@ Implicit connection through parent kan alleen, als daarbij de namen van de objec
 
 Connect to sub objects inside the closest imaginary reference.
 
-Each object’s contents should officially also be class-tied to their class. But if there is an implicit connection through parent it might not. If a reference target already class tied the sub-objects, then you don’t might repeat it in the referrer.
+Each object’s contents should officially also be class-tied to their class. But if there is an implicit connection through parent it might not. If a reference target already class tied the sub-objects, then you might not repeat it in the referrer.
 
 -----
 

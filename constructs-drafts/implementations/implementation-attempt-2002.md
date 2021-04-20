@@ -381,7 +381,7 @@ Outline compiled modules can be programmed with. However, there are no names for
 
 The lowest advisable level to program J Core modules in is a Symbol document. This specifies the system structure. The procedures are also specified in symbol. The symbols in a procedure can refer to the Symbol Assembly library or can refer to other procedures inside the module or to procedures outside the module. The procedures can be displayed as a diagram, but also as a language much like Assembly language and OO Basic intermixed.
 
-J Code might convert the symbol document into the tables specifying the classes and interfaces and translate the procedures to Assembly code that makes J Core calls and obeys the extra set of rules that J Core sets that you don’t might worry about as a programmer.
+J Code might convert the symbol document into the tables specifying the classes and interfaces and translate the procedures to Assembly code that makes J Core calls and obeys the extra set of rules that J Core sets that you might not worry about as a programmer.
 
 Management of segments, optimizing code for speed, etcetera, are all controlled by J Code and I don’t want programmers, including me, to have anything to do with it, because it is possible to automatically do this. I think real assembly is not worth manually programming with and should be automated.
 

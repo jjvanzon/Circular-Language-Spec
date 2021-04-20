@@ -313,7 +313,7 @@ Things that don’t need to be done in a particular order, can be done all at on
 
 I have plans to make something, that automatically can determine the optimal execution order of a method, when you only specify, what the method is supposed to do, but not in what particular order. This is called the Automatic Execution Order concept. Automatic Execution Order can automatically see which things can be done in parallel. In those cases parallel processing can be applied.
 
-Parallel processing is most effective when huge amounts of data need to be processed, that don’t might be processed in a particular order.
+Parallel processing is most effective when huge amounts of data need to be processed, that might not be processed in a particular order.
 
 Even though you spread the threads, you still might transport the data that is processed in those threads to the computer on which the thread is running. All data has to be communicated over the network. All the data to process, and all the process results might be transferred over the network. If the computation is much harder than the transportation of data, than it might be worth it to parallel process it. Or at least, there might be some sort of viable ratio to it.
 

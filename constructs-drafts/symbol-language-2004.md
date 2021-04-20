@@ -2136,7 +2136,7 @@ However, when you *create* the symbol, an object of the *full type* is created. 
 
 *Symbol A is of Type A, but only uses Interface A. Symbol A only shows the systematics of that one interface: a circle. However, it’s an object of the __whole type__. This is important. The importance is pointed out by Symbol B. Symbol B is a pointer to Symbol A, only it uses a different interface. So it shows different systematics.*
 
-So object symbols tied together with object lines don’t might use the same interface at all. The picture above shows that when you use an object line (__Symbol B__ points to __Symbol A__), the target doesn’t might have the same interface, only the same type.
+So object symbols tied together with object lines might not use the same interface at all. The picture above shows that when you use an object line (__Symbol B__ points to __Symbol A__), the target doesn’t might have the same interface, only the same type.
 
 ###### Choose From Multiple Types
 
@@ -2908,7 +2908,7 @@ You can let the separate object seem to be the argument itself, by using a peel 
 
 The creation might still be visible, but you’ve excluded the line, without loosing the information that it’s really an external object. 
 
-Of course you don’t might show the implicit creation.
+Of course you might not show the implicit creation.
 
 ![](images/Symbol%20Language%20(2004).249.jpeg)
 
@@ -4836,7 +4836,7 @@ You can’t see in the picture above if the called square is referenced through 
 
 In text code you can see the difference all the more. I’ve put the text code under the diagrams above.
 
-So its like the borders of triangles can be ignored in inward access. You don’t might access the triangle in order to access its members.
+So its like the borders of triangles can be ignored in inward access. You might not access the triangle in order to access its members.
 
 < This concept could have a place in Genericity. >
 
@@ -5376,7 +5376,7 @@ The distinction has to do with access control. For instance: the symbol get migh
 
 ### Static, Creation and Destruction
 
-< You might mention here somewhere what the normal kind of static is and that when explaining situations, you are always seeing members in their normal type of static, and the other types of static are not considered. That way in other explanations lateron, I don’t might add to every conclusion ‘unless it is static’ >
+< You might mention here somewhere what the normal kind of static is and that when explaining situations, you are always seeing members in their normal type of static, and the other types of static are not considered. That way in other explanations lateron, I might not add to every conclusion ‘unless it is static’ >
 
 ### State
 
