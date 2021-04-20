@@ -308,7 +308,7 @@ Command IO,
 Security & Privacy,  
 2008-07-14
 
-Sometimes an executable object might not need to be open about what it reads or writes. It should be able to apply privacy to data, owned by the site, or the user. This to protect the design of the data model. You shouldn't might expose your data model.
+Sometimes an executable object might not need to be open about what it reads or writes. It should be able to apply privacy to data, owned by the site, or the user. This to protect the design of the data model. You might not expose your data model.
 
 However, when it is the user or site's OWN data, you might be completely open about what a command might read or change.
 

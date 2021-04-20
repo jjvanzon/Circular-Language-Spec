@@ -660,7 +660,7 @@ When there is no type line, the object determines the type.
 
 ![](images/Pointers.038.jpeg)
 
-Interface lines are not followed. Note that the target type doesn’t might be pointed to by a type line. 
+Interface lines are not followed. Note that the target type might not be pointed to by a type line. 
 
 ###### Object-Type Trace
 

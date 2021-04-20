@@ -273,7 +273,7 @@ An extra Encircle engine layer might not cause extra redirections on item access
 To make object access by name not go slower with each engine layer, the name of the object was stored in the object, not just in the class. That ensured the disconnection from the class after class assignment, so that the data had nothing to do anymore with how many layers the engine has. You might still might loop through all the items, to look for an item by name, but not through multiple Encircle engine layers anymore, only through one layer. It dramatically improved performance.  
 It also speeded up class assignment, because class assignment also looked up items by name.
 
-If you index items purely by number, then you also don’t might search for names anymore. That might be very nice.
+If you index items purely by number, then you also might not search for names anymore. That might be very nice.
 
 ### Loose Ideas
 

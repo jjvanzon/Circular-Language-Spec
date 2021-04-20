@@ -400,7 +400,7 @@ If one diamond’s internal lines change, lines of all procedure symbols pointin
 
 -----
 
-< You might mention here somewhere what the normal kind of static is and that when explaining situations, you are always seeing members in their normal type of static, and the other types of static are not considered. That way in other explanations lateron, I don’t might add to every conclusion ‘unless it is static’>
+< You might mention here somewhere what the normal kind of static is and that when explaining situations, you are always seeing members in their normal type of static, and the other types of static are not considered. That way in other explanations lateron, I might not add to every conclusion ‘unless it is static’>
 
 -----
 

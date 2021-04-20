@@ -152,7 +152,7 @@ It’s just like the computers all become part of a single electric circuit. Jus
 
 It’s just an electrical circuit. No more, no less.
 
-It’s not *just* a peripheral, that network device. It is precious data coming in. It can be the result of a tough calculation, that your machine didn’t might perform, that another computer, perhaps much more powerful than yours has performed for you, and here it is just coming in on this peripheral, and your computer did not even might do anything for it. It shouldn’t be a device, that slows down your computer, it’s supposed to speed it up.
+It’s not *just* a peripheral, that network device. It is precious data coming in. It can be the result of a tough calculation, that your machine might not perform, that another computer, perhaps much more powerful than yours has performed for you, and here it is just coming in on this peripheral, and your computer did not even might do anything for it. It shouldn’t be a device, that slows down your computer, it’s supposed to speed it up.
 
 It is really comforting to look at it this way. Pampering to the idea, that you’re loosing control over your nicely controlled environment, that is your single computer. 
 

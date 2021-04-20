@@ -289,7 +289,7 @@ So the the radius for a child is:
 
 #### Interaction
 
-The interaction isn’t much more than two text boxes and something that interprets typed single word or two word commands and then calling the appropriate function of the document. Restrictions are managed by the document so the interaction doesn’t might concern itself with protecting the data.
+The interaction isn’t much more than two text boxes and something that interprets typed single word or two word commands and then calling the appropriate function of the document. Restrictions are managed by the document so the interaction might not concern itself with protecting the data.
 
 #### Calculation
 

@@ -1195,7 +1195,7 @@ You can also let J Data maintain the containment automatically, based on mutual 
 
 Symbol non encapsulative (full referential) notation. Symbol total encapsulative notation (non-referential) (possible overlaps). Symbol obvious encapsulative notation ? level bound?
 
-So there doesn't might be a difference between reference and encapsulation. You could arbitrarily assign wether to regard it reference and wether to regard it encapsulation?
+So there might not be a difference between reference and encapsulation. You could arbitrarily assign wether to regard it reference and wether to regard it encapsulation?
 
 For children that refer to the same thing, should or shouldn't the parent be seen as having to refer to it too? Hmmm
 
@@ -1238,7 +1238,7 @@ JJ
 
 Artificial Promotion / Esthetic Reference,
 
-Objects automatically put on a lower level, because of deeper usage, can artificially be promoted to a higher level, by creating a reference to it from a higher object, for esthetic reasons, related to it having great significance on a higher level. (this doesn't might result in an object reference being put on every level in between.)
+Objects automatically put on a lower level, because of deeper usage, can artificially be promoted to a higher level, by creating a reference to it from a higher object, for esthetic reasons, related to it having great significance on a higher level. (this might not result in an object reference being put on every level in between.)
 
 A compiler could generate a warning about such an unused reference, unless you actively type the reference as being esthetic.
 

@@ -12,10 +12,6 @@ __Contents__
 - [Brainstorm](#brainstorm)
     - [Generic, Not Generated](#generic-not-generated)
     - [System Structure Elements](#system-structure-elements)
-    - [Which Attr- [Introduction](#introduction)
-- [Brainstorm](#brainstorm)
-    - [Generic, Not Generated](#generic-not-generated)
-    - [System Structure Elements](#system-structure-elements)
         - [Which Attributes Exist?](#which-attributes-exist)
         - [How Many Are There?](#how-many-are-there)
         - [How Are They Automatically Added and Removed?](#how-are-they-automatically-added-and-removed)
@@ -24,15 +20,7 @@ __Contents__
             - [No Control Over Retaining the System Attribute](#no-control-over-retaining-the-system-attribute)
         - [N `<=>` N](#n--n)
     - [Loose Ideas](#loose-ideas)
-        - [Aspects As External Modules](#aspects-as-external-modules)ibutes Exist?](#which-attributes-exist)
-    - [How Many Are There?](#how-many-are-there)
-    - [How Are They Automatically Added and Removed?](#how-are-they-automatically-added-and-removed)
-    - [When Are They Added and Removed](#when-are-they-added-and-removed)
-    - [Attribute Roles](#attribute-roles)
-        - [No Control Over Retaining the System Attribute](#no-control-over-retaining-the-system-attribute)
-    - [N `<=>` N](#n--n)
-    - [Loose Ideas](#loose-ideas)
-    - [Aspects As External Modules](#aspects-as-external-modules-1)
+        - [Aspects As External Modules](#aspects-as-external-modules)
 
 ### Introduction
 
@@ -66,7 +54,7 @@ Everything I mention below about system attributes, also counts for system enums
 
 System attributes are automatically added and removed from the regular attribute list of a class. That way, system attributes recur everywhere normal attributes occur. By adding them to the normal attributes, a programmer can also freely customize the names of the system attributes.
 
-Being able to appoint an existing attribute to be the system attribute doesn’t might be possible to me.
+Being able to appoint an existing attribute to be the system attribute might not have to be possible to me.
 
 ##### Which Attributes Exist?
 

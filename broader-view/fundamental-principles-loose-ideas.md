@@ -258,7 +258,7 @@ Etcetera. Symbol might become much easier when you find what’s used most and w
 
 -----
 
-You can write programs in which you have no notice of any system aspect procedure at all. In programs in which you do work with system aspect procedures, you won’t might not notice the presence of all aspect procedures, just some.  
+You can write programs in which you have no notice of any system aspect procedure at all. In programs in which you do work with system aspect procedures, you might not notice the presence of all aspect procedures, just some.  
 \>
 
 < remember that I can only explain how to program structurally using the systems I’ve programmed as an example >  

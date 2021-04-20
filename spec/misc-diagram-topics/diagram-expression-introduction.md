@@ -160,7 +160,7 @@ JJ
 
 Diagram Expression,
 
-"Your screen doesn't might do everything. Your brain might the rest."
+"Your screen might not do everything. Your brain might the rest."
 
 JJ
 

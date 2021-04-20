@@ -71,7 +71,7 @@ Might J Code’s compilation optimizers take away bound these checks? Consider t
 
 -----
 
-An optimization: in a procedure every argument that is on the stack might be used only once. Then you can alter the order of the arguments so that it’s the order in which they are used, so that you can pop em one by one and don’t might read them and then pop em at the end.
+An optimization: in a procedure every argument that is on the stack might be used only once. Then you can alter the order of the arguments so that it’s the order in which they are used, so that you can pop em one by one and might not read them and then pop em at the end.
 
 If all arguments are used once and another one twice, you *might* want to push the argument on the stack twice in the order that the values are used.
 

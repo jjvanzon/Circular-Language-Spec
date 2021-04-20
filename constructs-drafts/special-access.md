@@ -146,7 +146,7 @@ You can’t see in the picture above if the called square is referenced through 
 
 In text code you can see the difference all the more. I’ve put the text code under the diagrams above.
 
-So its like the borders of triangles can be ignored in inward access. You don’t might access the triangle in order to access its members.
+So its like the borders of triangles can be ignored in inward access. You might not access the triangle in order to access its members.
 
 < This concept could have a place in Genericity. >
 

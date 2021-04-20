@@ -10056,7 +10056,7 @@ Nouns are objects, verbs are methods and adverbs are properties. Hmmm... the stu
 
 Symbol non-encapsulative (full referential) notation. Symbol total encapsulative notation (non-referential) (possible overlaps). Symbol obvious encapsulative notation ? level bound?
 
-So there doesn't might be a difference between reference and encapsulation. You could arbitrarily assign wether to regard it reference and wether to regard it encapsulation?
+So there might not be a difference between reference and encapsulation. You could arbitrarily assign wether to regard it reference and wether to regard it encapsulation?
 
 For children that refer to the same thing, should or shouldn't the parent be seen as having to refer to it too? Hmmm
 
