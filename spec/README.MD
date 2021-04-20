@@ -85,6 +85,7 @@ Contents
     - [Pointers](pointers/pointers.md)
     - [Redirection](pointers/redirection.md)
     - [Command Redirection](pointers/command-redirection.md)
+    - [Referrers](pointers/referrers.md)
     - From 'Framework'
         - [Circularity](pointers/from-framework/circularity.md)
         - [Code Concepts Extended](pointers/from-framework/code-concepts-extended.md)
