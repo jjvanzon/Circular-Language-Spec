@@ -9,6 +9,7 @@ Loose Ideas
 __Contents__
 
 - [Misc Ideas](#misc-ideas)
+- [From the Original Assignment Article Group](#from-the-original-assignment-article-group)
 - [From the Original Symbol Documentation](#from-the-original-symbol-documentation)
     - [Introduction, Procedures](#introduction-procedures)
     - [Procedure Basics](#procedure-basics)
@@ -64,8 +65,6 @@ __Contents__
     - [More Ideas](#more-ideas)
         - [Procedure Symbol Roles](#procedure-symbol-roles)
         - [Reference and Call Targets](#reference-and-call-targets)
-        - [From the Original Assignment Article Group](#from-the-original-assignment-article-group)
-        - [Other Ideas](#other-ideas)
 
 ### Misc Ideas
 
@@ -134,7 +133,7 @@ JJ
 Command Basics,  
 2008-08-31
 
-For instance: the rule ‘sub-commands are never referenced’, may be changed to being able to reference sub-commands after all, but never to be able to execute a sub-command through a reference, even if the reference is active. But this change of rules is just an example. It might prove not to be practicle after all.  
+For instance: the rule ‘sub-commands are never referenced’, may be changed to being able to reference sub-commands after all, but never to be able to execute a sub-command through a reference, even if the reference is active. But this change of rules is just an example. It might prove not to be practical after all.  
 \> Perhaps change that rule for real.
 
 JJ
@@ -163,9 +162,9 @@ Commands,
 I've seen others use the following names for the following execution commands:
 
 \|<  skip backward  
-\>\|  skip foreward
+\>\|  skip forward
 
-\>> foreward  
+\>> forward  
 << rewind  
 
 JJ
@@ -217,6 +216,100 @@ You can freely read and write the objects. However, the procedure might be occas
 The benefits from making a type out of a procedure is that you can dynamically write and write input objects and read output objects, without having to run a procedure all the time.
 
 JJ
+
+`<< black boxes, friend notation >>`
+
+Commands,  
+2008-05-18
+
+In the diagrams of Relations Between Commands & Objects you can see, that a call to a command can be a call upon multiple objects to execute that command. It is not yet discussed, how it is expressed that a command has access to the private contents of a class.
+
+JJ
+
+`<< commands & classes loosely coupled >>`
+
+Commands,
+2009-03-13
+
+"Do you know, I don't even want those commands." I made that remark when I right-clicked on an item in some user interface. Encircle might make many commands available on many many objects. But perhaps many times, I don't even want those commands. So I as the user want to be able to hide those. I might not want to see those.
+
+JJ
+
+### From the Original Assignment Article Group
+
+`<< move >>`
+
+An object assignment can also be used for *commands*. In that case it is a *command object assignment*.
+
+`<< creation behavior of commands >>`
+
+`<< rule rich >>`
+
+You can only let two command symbols refer to the same object when they are command *definitions*. You can not assign a command object to a command call. This is due to the special object creation behavior of a call. Command calls can never *redirect* their object. They are always *their own* object, and they are only created, when they are running. Command definitions, however, are permanently created objects, and a command definition symbol can redirect its object target.
+
+`<< implementation >>`
+
+To keep direct conversion between an object and a command possible without any loss of structure, it is allowed to give a call symbol and object redirection anyway. But then, the object redirection might behave as a *definition* redirection and a warning might be generated.
+
+-----
+
+`<< move >>`
+
+Object assignment can also be done for commands.
+
+`<< rule rich >>`
+
+But only has the right effect between command definitions, as they make the command definitions the same command definition object.
+
+![](images/7.%20Commands%20Ideas.080.png)
+
+-----
+
+`<< move >>`
+
+Class assignment is also used to assign a command definition to a call.
+
+Command definition assignment means, that a call or command reference is appointed a new definition target.
+
+`<< rule rich >>`
+
+The target definition of one command reference or call is assigned as the target definition of another command reference or call. The reference to the original command definition is released. Only when the original command definition might not have any other references anymore, then the original object is deleted. But do not worry; as long as a command definition is part of a module, it means there still is a reference to it and it might not get deleted.
+
+-----
+
+`<< move >>`
+
+Command definition assignment is also a class assignment. A command definition assignment can look like this:
+
+![](images/7.%20Commands%20Ideas.081.png)
+
+In the example above, symbol __A__ is a non-executing (square) command symbol, and symbol __B__ is a diamond, which stands for a call, but both symbol __A__ and __B__ cold have been either squares or diamonds.
+
+-----
+
+`<< pointers >>`
+
+An object pointer assignment can also be used for *commands*. In that case it is a *command reference command object assignment*.
+
+`<< rule rich >>`
+
+You can only let two command symbols refer to the same target object when they are command *definitions*. You can not assign a command object to a command call. This is due to the special object creation behavior of a call. Command calls can never *redirect* their object. They are always *their own* object, and they are only created, when they are running. Command definitions, however, are permanently created objects, and a command definition symbol can redirect its object target.
+
+-----
+
+`<< comparison between commands & objects>>`
+
+For commands, object reference class assignment is the same as command reference definition assignment. In that case a command’s definition points to a reference to a command, instead of pointing to the command definition directly.
+
+-----
+
+`<< move >>`
+
+The notation of an assignment letting a command’s definition point to a reference to a command is the same, but then between command symbols:
+
+![](images/7.%20Commands%20Ideas.082.png)
+
+In the example above, symbol __A__ is a non-executing (square) command symbol, and symbol __B__ is a diamond, which stands for a call, but both symbol __A__ and __B__ could have been either squares or diamonds.
 
 ### From the Original Symbol Documentation
 
@@ -707,7 +800,7 @@ Multi-threading, which is basically multiple things running at the same time, ma
 ![](images/7.%20Commands%20Ideas.047.jpeg)
 
 Two sibling procedures are executing at the same time, in different threads, which makes it possible for one executing procedure to access the other. Thread control makes it possible to avoid such volatile situations.  
-(the fact that the diamonds are drawn with thicker lines above, says that they are both in execution. If they wouldn’t be thicker drawn, then the diagram above doesn’t explicitly show that there is a multithread situation. Regarding it single threadedly, the situation above is just the bigger diamond executing first, after which the smaller diamond uses its return value.)
+(the fact that the diamonds are drawn with thicker lines above, says that they are both in execution. If they wouldn’t be thicker drawn, then the diagram above doesn’t explicitly show that there is a multi-threaded situation. Regarding it single threadedly, the situation above is just the bigger diamond executing first, after which the smaller diamond uses its return value.)
 
 < What happens when two threads try to initiate the same diamond or a thread tries to initiate a diamond that’s already executing. I want that one figured out. >
 
@@ -728,7 +821,7 @@ In the situation above it seems the procedure could access the object anyway (be
 
 When the caller (the parent diamond) sets the line, then the caller decides which object the call might refer to.
 
-So lines going out of a diamond aren’t neccesarily lines set by the caller.  
+So lines going out of a diamond aren’t necessarily lines set by the caller.  
 Procedures can’t set line going *into* the square themselves. Those are always set by the caller.
 
 It’s important that the procedure itself sets lines, because the line targets of procedure members often serve as the output values of the procedure.
@@ -1069,7 +1162,7 @@ The problems proposed in this text might have to do with:
 
 `<< terminology >>`
 
-- The terms prolog and epilog, prologous and epilogous
+- The terms prolog and epilog.
 - The term executor and execution
 
 `<< details >>`
@@ -1174,15 +1267,6 @@ But if it has a reference line it is regarded no more than a reference or call t
 
 #### More Ideas
 
-`<< commands & classes loosely coupled >>`
-
-Commands,
-2009-03-13
-
-"Do you know, I don't even want those commands." I made that remark when I right-clicked on an item in some user interface. Encircle might make many commands available on many many objects. But perhaps many times, I don't even want those commands. So I as the user want to be able to hide those. I might not want to see those.
-
-JJ
-
 ##### Procedure Symbol Roles
 
 `<< construct drafts >>`
@@ -1229,89 +1313,3 @@ Here is a list of possible reference targets and call targets:
 
 A diamond can be executing. Only during the execution of the diamond, lines between its non static children can be real. If the diamond isn’t executing, or it’s not a diamond, but a square, lines between the non static children are suggestive. Only lines between static members in such cases, can be real.
 
-##### From the Original Assignment Article Group
-
-`<< move >>`
-
-An object assignment can also be used for *commands*. In that case it is a *command object assignment*.
-
-`<< creation behavior of commands >>`
-
-`<< rule rich >>`
-
-You can only let two command symbols refer to the same object when they are command *definitions*. You can not assign a command object to a command call. This is due to the special object creation behavior of a call. Command calls can never *redirect* their object. They are always *their own* object, and they are only created, when they are running. Command definitions, however, are permanently created objects, and a command definition symbol can redirect its object target.
-
-`<< implementation >>`
-
-To keep direct conversion between an object and a command possible without any loss of structure, it is allowed to give a call symbol and object redirection anyway. But then, the object redirection might behave as a *definition* redirection and a warning might be generated.
-
------
-
-`<< move >>`
-
-Object assignment can also be done for commands.
-
-`<< rule rich >>`
-
-But only has the right effect between command definitions, as they make the command definitions the same command definition object.
-
-![](images/7.%20Commands%20Ideas.080.png)
-
------
-
-`<< move >>`
-
-Class assignment is also used to assign a command definition to a call.
-
-Command definition assignment means, that a call or command reference is appointed a new definition target.
-
-`<< rule rich >>`
-
-The target definition of one command reference or call is assigned as the target definition of another command reference or call. The reference to the original command definition is released. Only when the original command definition might not have any other references anymore, then the original object is deleted. But do not worry; as long as a command definition is part of a module, it means there still is a reference to it and it might not get deleted.
-
------
-
-`<< move >>`
-
-Command definition assignment is also a class assignment. A command definition assignment can look like this:
-
-![](images/7.%20Commands%20Ideas.081.png)
-
-In the example above, symbol __A__ is a non-executing (square) command symbol, and symbol __B__ is a diamond, which stands for a call, but both symbol __A__ and __B__ cold have been either squares or diamonds.
-
------
-
-`<< pointers >>`
-
-An object pointer assignment can also be used for *commands*. In that case it is a *command reference command object assignment*.
-
-`<< rule rich >>`
-
-You can only let two command symbols refer to the same target object when they are command *definitions*. You can not assign a command object to a command call. This is due to the special object creation behavior of a call. Command calls can never *redirect* their object. They are always *their own* object, and they are only created, when they are running. Command definitions, however, are permanently created objects, and a command definition symbol can redirect its object target.
-
------
-
-`<< comparison between commands & objects>>`
-
-For commands, object reference class assignment is the same as command reference definition assignment. In that case a command’s definition points to a reference to a command, instead of pointing to the command definition directly.
-
------
-
-`<< move >>`
-
-The notation of an assignment letting a command’s definition point to a reference to a command is the same, but then between command symbols:
-
-![](images/7.%20Commands%20Ideas.082.png)
-
-In the example above, symbol __A__ is a non-executing (square) command symbol, and symbol __B__ is a diamond, which stands for a call, but both symbol __A__ and __B__ could have been either squares or diamonds.
-
-##### Other Ideas
-
-`<< black boxes, friend notation >>`
-
-Commands,  
-2008-05-18
-
-In the diagrams of Relations Between Commands & Objects you can see, that a call to a command can be a call upon multiple objects to execute that command. It is not yet discussed, how it is expressed that a command has access to the private contents of a class.
-
-JJ
