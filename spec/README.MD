@@ -21,7 +21,6 @@ Contents
     - [Start & Stop](commands/start-and-stop.md)
     - [Creation Behavior Of Commands](commands/creation-behavior-of-commands.md)
     - [Commands Example Diagrams](commands/commands-example-diagrams.md)
-    - [Commands Misc Issues](commands/commands-misc-issues.md)
     - [Commands Loose Ideas](commands/commands-loose-ideas.md)
 - Parameters
     - [Relations Between Commands & Objects](parameters/relations-between-commands-and-objects.md)
