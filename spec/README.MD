@@ -68,16 +68,16 @@ Contents
 - [Type Control](type-safety-genericity-explicit.md)
 - Object Resolution
     - [Loose Ideas](object-resolution/object-resolution-loose-ideas.md)
-    - [Overriding (not written yet)](object-resolution/overriding-not-written-yet.md)
+    - Overriding
     - [Overloading](object-resolution/overloading.md)
     - [Shadowing, Texts to Incorporate](object-resolution/shadowing-texts-to-incorporate.md)
     - [Melding](object-resolution/melding.md)
     - [Hiding](object-resolution/hiding.md)
-    - [Interface Resolution (not written yet)](object-resolution/interface-resolution-not-written-yet.md)
+    - Interface Resolution
     - [Default Member](object-resolution/default-member.md)
     - [Cascading Overriding](object-resolution/cascading-overriding.md)
     - [Ambiguity](object-resolution/ambiguity.md)
-    - [Implicit Conversions (not written yet)](object-resolution/implicit-conversions-not-written-yet.md)
+    - Implicit Conversions
     - [With Blocks](object-resolution/with-blocks.md)
 - [Conditions](conditions.md)
 - [Sequence Order](sequence-order.md)
