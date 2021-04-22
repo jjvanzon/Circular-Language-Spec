@@ -8,28 +8,27 @@ Loose Ideas
 
 __Contents__
 
-- [Basic Language Execution Control](#basic-language-execution-control)
-- [Execution Control Procedures](#execution-control-procedures)
-- [Selection and Repetition](#selection-and-repetition)
-- [Selection](#selection)
-- [Repetition](#repetition)
-- [Clauses: Embedded Procedures](#clauses-embedded-procedures)
-- [Unconditional Jumps](#unconditional-jumps)
-    - [Unconditional Jumps](#unconditional-jumps-1)
-- [Text Code Blabbing < >](#text-code-blabbing--)
-    - [Conditional Jumps](#conditional-jumps)
-        - [Selection](#selection-1)
-            - [If](#if)
-            - [Select](#select)
-        - [Iteration](#iteration)
-- [Brainstorm](#brainstorm)
-    - [Execution Control Controls which call is made next](#execution-control-controls-which-call-is-made-next)
-    - [Nice Example](#nice-example)
-    - [Execution Control is Call Control](#execution-control-is-call-control)
-    - [=> Execution Control](#-execution-control)
+- [Misc Ideas](#misc-ideas)
+- [Execution Control (from Original Symbol Documentation from 2004)](#execution-control-from-original-symbol-documentation-from-2004)
+    - [Basic Language Execution Control](#basic-language-execution-control)
+    - [Execution Control Procedures](#execution-control-procedures)
+    - [Selection and Repetition](#selection-and-repetition)
+    - [Selection](#selection)
+    - [Repetition](#repetition)
+    - [Clauses: Embedded Procedures](#clauses-embedded-procedures)
+    - [Unconditional Jumps](#unconditional-jumps)
+    - [Text Code Blabbing < >](#text-code-blabbing--)
+        - [Conditional Jumps](#conditional-jumps)
+            - [Selection](#selection-1)
+            - [Iteration](#iteration)
+    - [Brainstorm](#brainstorm)
+        - [Execution Control Controls which call is made next](#execution-control-controls-which-call-is-made-next)
+        - [Nice Example](#nice-example)
+        - [Execution Control is Call Control](#execution-control-is-call-control)
+        - [=> Execution Control](#-execution-control)
+- [Declared Traversions / Constructions](#declared-traversions--constructions)
 
-Loose Ideas
-===========
+### Misc Ideas
 
 Execution Flow / Process Control
 
@@ -37,18 +36,13 @@ Misschien moet je Execution Flow uiteindelijk wel gewoon Process Control noemen 
 
 JJ
 
-
-From the original Symbol documentation
-======================================
-
-Execution Control
------------------
+### Execution Control (from Original Symbol Documentation from 2004)
 
 < A procedure’s calling one of its own clauses, is an unconditional jump >
 
 < Cover text code entirely, right inside the story. Oh, yeah, should I? Or should I cover it in the Text Code chapter? >
 
-### Basic Language Execution Control
+#### Basic Language Execution Control
 
 To explain control over execution flow in Symbol I might first introduce examples of execution flow statements in the Basic programming language.
 
@@ -90,15 +84,15 @@ The blue parts in the code above are called the *clauses* of the control stateme
 
 The start of the control statement and the end and whatever’s in between is considered the control statement.
 
-### Execution Control Procedures
+#### Execution Control Procedures
 
 Execution control statements are special procedures. They are given one or more references to other procedures, the execution of which is controlled. These referenced procedures are the clauses of the control statement and also the expressions and assignments controlling their execution. The execution flow procedure decides when or if any of these referenced procedures are called and how many times. How the execution flow procedure might call its referenced procedures, is dependent on what the referenced procedures might do.
 
-### Selection and Repetition
+#### Selection and Repetition
 
 The execution flow mentioned till now is also called conditional jumping. There are two general forms of conditional jumping: selection and repetition. Selection selects one thing to execute out of several or whether to execute something at all depending on a condition. Repetition repeats a procedure a number of times until a condition is met. In the repeated procedure actions can be taken that affect this condition. __Select__ and __If__ statements are selection. __For__ and __Do__ statements are repetition. Symbol defines but two procedures: __Selection__ and __Repetition__. Depending on how the procedure is used it functions as an __If__, __Select__, __For__ or __Do__ and depending on that, appropriate names are notated with calls to the execution flow procedures.
 
-### Selection
+#### Selection
 
 < Sub sectioning. >
 
@@ -301,7 +295,7 @@ When you don’t use math language it might look as follows:
 
 The __=__ operator is an operator from text code language, not math language.
 
-### Repetition
+#### Repetition
 
 Now I’ve explained a lot about clauses in __Selection__, I can easily explain __Repetition__.
 
@@ -372,7 +366,7 @@ The algebra you see in the diagrams above (for instance __<= 5__) are actually c
 
 < Examples of simpler loops, in which 
 
-### Clauses: Embedded Procedures
+#### Clauses: Embedded Procedures
 
 The clauses discussed above are actually embedded procedures. Embedded procedures are often referred to with the word clause. They have the special characteristic that they can access the members of the procedure they’re embedded in.
 
@@ -400,11 +394,9 @@ Perhaps jumping might change that and the clauses might get lines, but no lines 
 
 < It’s like when something’s a clause, it ignores its parent’s borders. Conversely, the contents of a block are by default only accessible within that block. >
 
-### Unconditional Jumps
+#### Unconditional Jumps
 
 __Returns__ and __Jumps__
-
-#### Unconditional Jumps
 
 <
 
@@ -446,17 +438,17 @@ End If
 
 Breaking, because each __Case__ group is evaluated now.
 
-### Text Code Blabbing < >
+#### Text Code Blabbing < >
 
-#### Conditional Jumps
+##### Conditional Jumps
 
 Two forms of conditional jumping are generally used: selection and iteration. Selections might do either one thing or the other depending on a __Boolean__ state. Iterations might repeat something depending on a __Boolean__ state.
 
-##### Selection
+###### Selection
 
 Selection is performed with __If__ and __Select__ statements.
 
-###### If
+####### If
 
 With an __If__ you can choose wether or not to do something depending on a __Boolean__ state:
 
@@ -530,7 +522,7 @@ Else If C
 End If
 ```
 
-###### Select
+####### Select
 
 Selects let you combine a large __Else If__ construction to an easier notation:
 
@@ -660,7 +652,7 @@ If X
 End If
 ```
 
-##### Iteration
+###### Iteration
 
 ```vb
 For i = 0 To 10
@@ -692,7 +684,7 @@ A comma can be used to separate
 
 Maybe for should be called repeat
 
-### Brainstorm
+#### Brainstorm
 
 Maybe the procedure references of execution flow procedures need to have a certain procedure interface.
 
@@ -711,7 +703,7 @@ If a procedure takes a reference to a clause then you can do this notation:
 
 Defining the contents of the procedure references right within the
 
-#### Execution Control Controls which call is made next
+##### Execution Control Controls which call is made next
 
 <  
 Most of what’s done inside a procedure is calling other procedures.
@@ -725,7 +717,7 @@ First explain that a control statement controls which call is made next. They ar
 In one compiler optimization technique it is these execution flow statements that are analysed. Execution control statements make execution variable and this compiler technique analyses how variable that actually is. Maybe the execution control might not be reached with too many different values, let’s say, two values. In that case you might consider removing the variation in execution by making two procedures one of which is one situation of the execution flow statement and the other one is the other situation of the execution flow statement. At calls to the execution flow statement or indirect calls to it, you insert the variation that applies right there.  
 \>
 
-#### Nice Example
+##### Nice Example
 
 ```vb
 For I = 0 to 4
@@ -739,7 +731,7 @@ For I = 0 to 4
 Next
 ```
 
-#### Execution Control is Call Control
+##### Execution Control is Call Control
 
 This means that in Symbol the definition of execution control is selecting what procedure to call next depending on a __Boolean__ state.
 
@@ -747,15 +739,15 @@ You could speak of conditional calls, actually.
 
 Calls can be managed by execution control. Execution control manages the regular order of the calls *and* can alter the regular traversal of calls depending on a Boolean result (__If__, __Select__, __For__, __Do__). The Boolean result can spring from any combination of forms of algebra that in the end returns a Boolean result. Comparison algebra and Boolean algebra return Boolean results.
 
-#### => Execution Control
+##### => Execution Control
 
 But... if you pass a clause reference to an execution flow procedure the execution control CAN call the clause, but only in the context of the procedure instance that called the execution flow procedure!
 
 Execution control procedures might call clauses in the context of a *specific call* to the clause’s procedure definition.
 
+### Declared Traversions / Constructions
 
-Declared Traversions / Constructions
------------------------------------
+(From Original Symbol Documentation from 2004)
 
 < 2008-10-10 You can change this into iterators to which you pass a command reference. >
 

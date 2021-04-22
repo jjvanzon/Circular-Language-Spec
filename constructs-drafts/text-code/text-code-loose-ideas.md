@@ -2,98 +2,89 @@ Circular Language Construct Drafts | Text Code
 ==============================================
 
 Loose Ideas
-===========
+-----------
 
 *The text below are old material from older documents. They contain a lot of brainstorming, but possibly also usable texts for future documentation.*
 
-## Contents
+__Contents__
 
-- [Text Parser](#text-parser)
-- [Text Code](#text-code)
-    - [Identifiers](#identifiers)
-    - [Declarations](#declarations)
-        - [Type Declaration](#type-declaration)
-        - [Declaration General](#declaration-general)
-        - [Attribuut Declaratie](#attribuut-declaratie)
-        - [Relatie Declaratie](#relatie-declaratie)
-    - [Examples](#examples)
-        - [Declarations](#declarations-1)
-            - [Type Declaration](#type-declaration-1)
-            - [Attribute Declaration](#attribute-declaration)
-            - [Relation Declaration](#relation-declaration)
-    - [Data Manipulation Syntax Brainstorm](#data-manipulation-syntax-brainstorm)
-        - [Brainstorm 5 : Definitive brainstorm](#brainstorm-5--definitive-brainstorm)
-            - [Too Much Theory For Now](#too-much-theory-for-now)
-        - [Brainstorm 4 : Too general a solution](#brainstorm-4--too-general-a-solution)
-        - [Brainstorm 2 : Some Example Code](#brainstorm-2--some-example-code)
-        - [Brainstorm 1 : Example Code](#brainstorm-1--example-code)
-    - [Kleurgebruik](#kleurgebruik)
-    - [Voorlopig Beperkt](#voorlopig-beperkt)
-    - [Parser](#parser)
-    - [Opmerking](#opmerking)
-    - [Ideeën](#ideeën)
-    - [Relation Declaration Alternative Notations](#relation-declaration-alternative-notations)
-- [Korten en Lange Spaties](#korten-en-lange-spaties)
-- [Symbol: Attributes Become Classes sluit daarbij aan & Creator Text Code](#symbol-attributes-become-classes-sluit-daarbij-aan--creator-text-code)
-- [Language Integration](#language-integration)
-    - [Brainstorm](#brainstorm)
-    - [Operators](#operators)
-        - [Parameters](#parameters)
-    - [Literals](#literals)
-        - [Standard Literal](#standard-literal)
-    - [Structure](#structure)
-    - [Identifiers](#identifiers-1)
-    - [Declaration](#declaration)
-    - [What Is...](#what-is)
-        - [Access Operators](#access-operators)
-    - [Text Code](#text-code-1)
-        - [Objects](#objects)
-            - [Lines Shown in Create Procedure](#lines-shown-in-create-procedure)
-            - [Lines Shown at declaration](#lines-shown-at-declaration)
-            - [No "="](#no-)
-            - [No Circle](#no-circle)
-            - [Variations](#variations)
-        - [Procedures](#procedures)
-            - [Parameter Text Notation](#parameter-text-notation)
-            - [Parameter Notations](#parameter-notations)
-        - [Access Control](#access-control)
-            - [Textual Notation of Exclusion](#textual-notation-of-exclusion)
-            - [Textual Notation of Friendship](#textual-notation-of-friendship)
-- [Other](#other)
-    - [Member call](#member-call)
-    - [Method declaration](#method-declaration)
-    - [In, Out, Thru](#in-out-thru)
-- [Parsing](#parsing)
+- [Explanation](#explanation)
+- [Loose Ideas](#loose-ideas)
+    - [Text Parser](#text-parser)
+    - [Text Code](#text-code)
+        - [Identifiers](#identifiers)
+        - [Declarations](#declarations)
+            - [Type Declaration](#type-declaration)
+            - [Declaration General](#declaration-general)
+            - [Attribuut Declaratie](#attribuut-declaratie)
+            - [Relatie Declaratie](#relatie-declaratie)
+        - [Examples](#examples)
+            - [Declarations](#declarations-1)
+        - [Data Manipulation Syntax Brainstorm](#data-manipulation-syntax-brainstorm)
+            - [Brainstorm 5 : Definitive brainstorm](#brainstorm-5--definitive-brainstorm)
+            - [Brainstorm 4 : Too general a solution](#brainstorm-4--too-general-a-solution)
+            - [Brainstorm 2 : Some Example Code](#brainstorm-2--some-example-code)
+            - [Brainstorm 1 : Example Code](#brainstorm-1--example-code)
+        - [Kleurgebruik](#kleurgebruik)
+        - [Voorlopig Beperkt](#voorlopig-beperkt)
+        - [Parser](#parser)
+        - [Opmerking](#opmerking)
+        - [Ideeën](#ideeën)
+        - [Relation Declaration Alternative Notations](#relation-declaration-alternative-notations)
+    - [Korten en Lange Spaties](#korten-en-lange-spaties)
+    - [Symbol: Attributes Become Classes sluit daarbij aan & Creator Text Code](#symbol-attributes-become-classes-sluit-daarbij-aan--creator-text-code)
+- [Loose Ideas](#loose-ideas-1)
+- [From the Original Symbol Documentation](#from-the-original-symbol-documentation)
+    - [Language Integration](#language-integration)
+        - [Brainstorm](#brainstorm)
+        - [Operators](#operators)
+            - [Parameters](#parameters)
+        - [Literals](#literals)
+            - [Standard Literal](#standard-literal)
+        - [Structure](#structure)
+        - [Identifiers](#identifiers-1)
+        - [Declaration](#declaration)
+        - [What Is...](#what-is)
+            - [Access Operators](#access-operators)
+        - [Text Code](#text-code-1)
+            - [Objects](#objects)
+            - [Procedures](#procedures)
+            - [Access Control](#access-control)
+    - [Other](#other)
+        - [Member call](#member-call)
+        - [Method declaration](#method-declaration)
+        - [In, Out, Thru](#in-out-thru)
+    - [Parsing](#parsing)
 
-## Explanation
+### Explanation
 
 Eventually parts of this documentation section might be moved to the concept, the text code expresses, because diagram and text code expression of a concept is placed with the concept, because that makes the documentation easier to read and easier to write.  
 But for now text expression topics are not worked out with the concepts yet.
 
-## Loose Ideas
+### Loose Ideas
 
-### Text Parser
+#### Text Parser
 
 De eerste text parser (heel basaal) moet je ook handmatig maken.  
 Die text parser zou je overigens in een veel later stadium in Creator kunnen herprogrammeren, en als vervanging van de oorspronkelijke parser laten dienen.
 
-### Text Code
+#### Text Code
 
-#### Identifiers
+##### Identifiers
 
 In identifiers kunnen haakjes en spaties worden gezet.  
 Dit is mogelijk omdat spaties in identifiers 'korte spaties' zijn,  
 en alle tokens worden gescheiden door 'lange spaties'.
 
-#### Declarations
+##### Declarations
 
-##### Type Declaration
+###### Type Declaration
 
 ```
 Type  <Naam>
 ```
 
-##### Declaration General
+###### Declaration General
 
 ```
 <Type>  <Naam>
@@ -103,7 +94,7 @@ Type  <Naam>
 Òf eerst type en dan de naam.  
 Òf eerst de naam en dan het type tussen haakjes.
 
-##### Attribuut Declaratie
+###### Attribuut Declaratie
 
 ```
 <Type>  -->  <Declaratie>
@@ -125,7 +116,7 @@ Type  <Type>  :
     -->  <Declaratie>
 ```
 
-##### Relatie Declaratie
+###### Relatie Declaratie
 
 ```
 <Declaratie>  [ 1 --> 1  1 --> n  n --> n ]  <Declaratie>
@@ -138,18 +129,18 @@ Of (namen van relatie counterparts apart gedefinieerd):
     <Naam>  -->  <Naam>
 ```
 
-#### Examples
+##### Examples
 
-##### Declarations
+###### Declarations
 
-###### Type Declaration
+####### Type Declaration
 
 ```
 Type  Point
 Type  Line
 ```
 
-###### Attribute Declaration
+####### Attribute Declaration
 
 ```
 Point  -->  X  (  Double  )
@@ -179,7 +170,7 @@ Type  Point  :
     -->  Y  (  Double  )
 ```
 
-###### Relation Declaration
+####### Relation Declaration
 
 ```
 Line  Lines ( as point A )  n --> 1  Point  Point A
@@ -200,13 +191,13 @@ Line  n --> 1  Point  :
     Lines ( as point B )  -->  Point B
 ```
 
-#### Data Manipulation Syntax Brainstorm
+##### Data Manipulation Syntax Brainstorm
 
 Language Elements:
 
 < See Program elements in plan. >
 
-##### Brainstorm 5 : Definitive brainstorm
+###### Brainstorm 5 : Definitive brainstorm
 
 I might start improvising the parser code soon. I might no longer write out the theory behind it.
 
@@ -262,7 +253,7 @@ After Next detection, Parsing is actually repeated (this isn’t a perfect solut
 Parsing a qualifier goes as follows. You first split the line by period ‘.’ ( Funny enough a line can be split by multiple main delimiters, or rather a detection of a statement can cause another splitting operation, that sort of overrides the splitting operation we already did. ) After splitting by period, you go by all elements from left to right. Except for the last element, they all might be an object. The last element can be an object or an attribute.  
 The first object might somehow be globally accessible. In case of With blocks, the first object is missing, but in its place comes the object remembered by the With operation. The next element might be a member object of the previous object. There are hardly any methods yet, so I really might not take those into consideration much, except for the Add and Remove methods, which might be executed if they are found along the way. Add returns an object.
 
-###### Too Much Theory For Now
+####### Too Much Theory For Now
 
 There is an order of precedence of keyword detection:
 
@@ -323,7 +314,7 @@ Token build-up of the statements:
 - Specifier
     - Take tokens starting from specifier
 
-##### Brainstorm 4 : Too general a solution
+###### Brainstorm 4 : Too general a solution
 
 I want to use a Creator structure to enter the parsed code in.  
 This Creator structure should reflect the TEXTUAL structure of the code.  
@@ -452,7 +443,7 @@ Enough of that for now. This is going too far for the goal I have right now. Thi
 
 I MIGHT reorganize the text in Brainstorm 3, or perhaps rewrite it. And implement the procedural parser.
 
-##### Brainstorm 2 : Some Example Code
+###### Brainstorm 2 : Some Example Code
 
 (pas later van toepassing)
 
@@ -462,7 +453,7 @@ Point  .  Lines ( as point A )  .  Add  =  Line  [  12  ]
 Point  .  Lines ( as point B )  [  2  ]
 ```
 
-##### Brainstorm 1 : Example Code
+###### Brainstorm 1 : Example Code
 
 ```
 Structure  .  Classes  (  "Class"  )  .  Related Classes  .  Add  (  Structure  . Classes  (  "...
@@ -522,7 +513,7 @@ Structure  .  Classes  (  "Class"  )  .  Related Classes  .  Add  (  Structure  
     Structure  .  Classes  
 ```
 
-#### Kleurgebruik
+##### Kleurgebruik
 
 Voorbeelden:
 
@@ -536,7 +527,7 @@ Line  Line (as point b)  n --> 1  Point  Point B
 
 Dus classes in het geel, relatie pijlen in het blauw, namen in neutrale kleur (bijv. grijs), en haakjes in donkergrijs.
 
-#### Voorlopig Beperkt
+##### Voorlopig Beperkt
 
 Voorlopig beperk ik me tot de volgende notatievormen:
 
@@ -578,7 +569,7 @@ Lines ( as point A )  (  Line  )  n --> 1  Point A  (  Point  )
 Lines ( as point B )  (  Line  )  n --> 1  Point B  (  Point  )
 ```
 
-#### Parser
+##### Parser
 
 Hieronder staat een voorbeeld van hoe de Parser zou kunnen werken. Inmiddels werkt de parser al ietsje anders.
 
@@ -628,11 +619,11 @@ De vertaling naar een Creator Structure is dan ook niet zo moeilijk meer.
 - \> Nou, eigenlijk wel, want ik weet nu niet hoe ik het in Generic Generic Creator moet specificeren. Het lijkt erop dat ik toch gebruik moet maken van de h , g en gg objecten? Ik moet hier nog flink over nadenken.
 - \> Uiteindelijk bleek dat ik nog een Creator laag moest hebben.
 
-#### Opmerking
+##### Opmerking
 
 Ik gebruik de hele tijd `-->`. Maar het zijn dual relations en die drukte ik ooit uit met `<-->`. Is dat beter? Of vind ik die pijltjes eigenlijk wel mooi. Er IS meestal sprake van een forward en backward relation. Daar wordt ook gebruik van gemaakt. Dus de richting doet er wel toe. En het denkt makkelijker.
 
-#### Ideeën
+##### Ideeën
 
 Mogelijk ooit zo’n notatie:
 
@@ -652,7 +643,7 @@ As Item Attribute  (  Item Attribute  )
 
 Tja, als je voortaan het type eerst noemt en dan de objectnaam, dan begint het wel met een normaal gegeven, maar dat zie ik later wel.
 
-#### Relation Declaration Alternative Notations
+##### Relation Declaration Alternative Notations
 
 *None of the notations below satisfies me, really. I already implemented the one that satisfies me most.*
 
@@ -686,7 +677,7 @@ Item  .  Class  n --> 1  Class  .  As Item
 
 You do see what's coming, but I still think it is confusing
 
-### Korten en Lange Spaties
+#### Korten en Lange Spaties
 
 O. Om een lange en korte spatie te maken in een programmeertaal, om ook spaties in een identifier te kunnen gebruiken, kun je voor een lange spatie twee spaties gebruiken.  
 Als je dan op gewoon spatie drukt, voeg je er gewoon meteen nog een spatie bij.  
@@ -695,7 +686,7 @@ Dan kun je gewoon bestaande text boxes gebruiken.
 
 EVENTUEEL als je een spatie weghaalt met del of backspace, haal je ook weer twee spaties weg. Maar dat hoeft eigenlijk niet meteen nodig. De simpele dubbele spatie maakt gewone tekst editors ook meteen bruikbaar.
 
-### Symbol: Attributes Become Classes sluit daarbij aan & Creator Text Code
+#### Symbol: Attributes Become Classes sluit daarbij aan & Creator Text Code
 
 Ook is in Symbol een integer een rondje, net als een object. Attributes Become Classes sluit daar ook weer goed bij aan.
 
@@ -788,7 +779,7 @@ But it is a unary relation there.
 
 However, I have expressed only unary relations above.
 
-## Loose Ideas
+### Loose Ideas
 
 The comparative operators = and <> do not only apply to numbers, but to any kind of object
 
@@ -862,9 +853,9 @@ Perhaps for text code there might be several variations:
 
 JJ
 
-## From the Original Symbol Documentation
+### From the Original Symbol Documentation
 
-### Language Integration
+#### Language Integration
 
 The following can be translated to another language, for instance text code:
 
@@ -876,14 +867,14 @@ The following can be translated to another language, for instance text code:
 
 Symbol text code is established by a set of standard translations for the elements above, and a few special translations for for instance execution control procedures.
 
-#### Brainstorm
+##### Brainstorm
 
 - Normal Procedure Call Notation = Standard Operator Notation:
     - There are two ways to express parameters in text code: in a definition or in a procedure call. The declaration of a procedure can be expressed as freely as an operator or literal notation. The general form of a textual procedure call notation is nothing more than a standard operator notation for a procedure.
 - Mention that access operators are operator notations of the system procedures.
 - Explain what execution control text notation is (is it an operator notation?)
 
-#### Operators
+##### Operators
 
 <  
 Operators *are* procedures. They are assigned a special notation.  
@@ -901,7 +892,7 @@ An operator is notated like a method. It resembles an operation. The difference 
 
 \+ and – operations can be represented in plain text. Powers in Basic were represented by the ^ character. I wish to change that. I want the real mathematical notation to integrate with the language. For that I define operators as procedures that have any alternate notation. The power is represented by the exponent being notated in superscript: higher and smaller than the: b<sup>e</sup>
 
-##### Parameters
+###### Parameters
 
 The textual notations of parameters.
 
@@ -911,7 +902,7 @@ Parameter notations and operators are subjects totally for the Text Code chapter
 
 Operators then too. 
 
-#### Literals
+##### Literals
 
 Some types have special notation formats, such as Integer Number, Floating Point Number or Text:
 
@@ -927,7 +918,7 @@ A literal can be a Text, but any other type might do, for instance a Picture. If
 
 There can also be a reverse for a literal interpreter. The Integer to Text conversion produces the textual integer literal.
 
-##### Standard Literal
+###### Standard Literal
 
 There’s a standard way to interpret and procedure textual literals of objects. If there is no custom conversion to text and back, you can only control the state of an object by calling its members. Say an object has the following members:
 
@@ -954,15 +945,15 @@ The concepts ‘literals’ and ‘operators’ are very very alike, and a singl
 Standard textual literals and standard textual procedure notation.  
 \>
 
-#### Structure
+##### Structure
 
-#### Identifiers
+##### Identifiers
 
 There can be graphical identifiers.
 
-#### Declaration
+##### Declaration
 
-#### What Is...
+##### What Is...
 
 There is text code notation that I’ve introduced for which language integration techniques are used.
 - Calls and parameter assignment
@@ -971,7 +962,7 @@ There is text code notation that I’ve introduced for which language integratio
 - Access operators
 - Execution control statements
 
-##### Access Operators
+###### Access Operators
 
 De access operators in text code.
 
@@ -1003,9 +994,9 @@ In text code you sort of see the calls to system procedures and you also sort of
 - System procedure arguments
 - Genitivity
 
-#### Text Code
+##### Text Code
 
-##### Objects
+###### Objects
 
 Here follows an example code, expressed in a diagram, that might be used as an example for the expressions in text code that follow.
 
@@ -1013,7 +1004,7 @@ Here follows an example code, expressed in a diagram, that might be used as an e
 
 Lines are set in the create procedure.
 
-###### Lines Shown in Create Procedure
+####### Lines Shown in Create Procedure
 
 ```
 Circle System
@@ -1040,7 +1031,7 @@ Circle System
 End Circle
 ```
 
-###### Lines Shown at declaration
+####### Lines Shown at declaration
 
 ```
 Circle System
@@ -1058,7 +1049,7 @@ End Circle
 
 The calls added to the declaration are executed in the Create procedure, though.
 
-###### No "="
+####### No "="
 
 ```
 Circle System
@@ -1074,7 +1065,7 @@ Circle System
 End Circle
 ```
 
-###### No Circle
+####### No Circle
 
 Circle is rather general, so maybe I ought to be able to leave it out:
 
@@ -1094,7 +1085,7 @@ End Circle
 
 Slechte voorbeeld namen, dan lijkt het erop dat Type, Object en Interface keywords zijn. Dat zijn het ook, maar niet in de identifiers die ik heb gekozen.
 
-###### Variations
+####### Variations
 
 Circle System <=> Object System <=> Circular Object System  
 Triangle B <=> Triangular Object B  
@@ -1103,7 +1094,7 @@ End Circle <=> End Object
 End Triangle <=> End Object  
 End Square <=> End Procedure  
 
-##### Procedures
+###### Procedures
 
 - Procedure Structure
 - Parameter notations
@@ -1111,7 +1102,7 @@ End Square <=> End Procedure
     - Variable
     - Parameter order
 
-###### Parameter Text Notation
+####### Parameter Text Notation
 
 There are several ways to notate parameters in text code. First of all, the definition of the procedure in text code might contain a parameter list:
 
@@ -1136,7 +1127,7 @@ Ik wil dit er toch tussendoor doen. En na de andere hoofdstukken moet ik het er 
 - Standard call notation
 - Standard procedure declaration
 
-###### Parameter Notations
+####### Parameter Notations
 
 In text code a parameter
 
@@ -1144,9 +1135,9 @@ In text code there are several notations for parameter definitions and assignmen
 
 < I need to explain the difference between the term parameter and argument somewhere before this section >
 
-##### Access Control
+###### Access Control
 
-###### Textual Notation of Exclusion
+####### Textual Notation of Exclusion
 
 ```
 Object A
@@ -1183,7 +1174,7 @@ Object A
 End Object
 ```
 
-###### Textual Notation of Friendship
+####### Textual Notation of Friendship
 
 ```
 Object A
@@ -1202,9 +1193,9 @@ End Object
 
 < Execution Control? >
 
-### Other
+#### Other
 
-#### Member call
+##### Member call
 
 ```
 Return Value 1, Return Value 2 = Object . Object’s Method ( Method Argument 1, Method Argument 2 )
@@ -1212,11 +1203,11 @@ Return Value 1, Return Value 2 = Object . Object’s Method ( Method Argument 1,
 Return Value = Object . Object’s Method ( Method Argument 1, Method Argument 2 )
 ```
 
-#### Method declaration
+##### Method declaration
 
 Method Object . Method (Word: Argument 1, Double Word: Argument 2 ) Real 32: Return Value
 
-#### In, Out, Thru
+##### In, Out, Thru
 
 Since I’m working with multiple arguments as well as multiple return values, I may as well use a separate argument type that is both an argument as well as a return value (not to be mistaken for a reference argument).
 
@@ -1303,7 +1294,7 @@ Text code is not leading anymore.
 
 JJ
 
-### Parsing
+#### Parsing
 
 Onderdeelomschrijvingen opsplitsen in criteria
 
