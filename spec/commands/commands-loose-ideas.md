@@ -12,7 +12,6 @@ __Contents__
 - [From the Original Assignment Article Group](#from-the-original-assignment-article-group)
 - [From the Original Symbol Documentation](#from-the-original-symbol-documentation)
     - [Introduction, Procedures](#introduction-procedures)
-    - [Procedure Basics](#procedure-basics)
         - [Notation Elements](#notation-elements)
         - [Procedures](#procedures)
         - [Procedure Call](#procedure-call)
@@ -68,18 +67,9 @@ __Contents__
 
 ### Misc Ideas
 
-`<< diagram expression>>`
-
-Not showing private members or the contents of procedures might be a relevant subject for the display of the diagrams. 
-
-The definition of something can just as well be shown inside a reference to the definition. It might become a setting whether you’ll show the full definition in a reference or just the public things. It may be a better choice not to be able to *change* the definition from a reference to a definition.  
-The definition might be shown next to the diagram anyway. You can change it there. That might work more intuitive.
-
------
-
 `<< applications >>`
 
-CL,
+Computer Language,
 
 In concepts zetten:
 
@@ -100,41 +90,12 @@ JJ
 
 -----
 
-`<< rule rich >>`
-
-Command Basics,
-
-The following Basic Command articles do not have a diagram expression article:
-
-- Execute Once
-- Resolution When Not Allowed For Commands
-- Parent Controls Its Sub-Executions
-- Sub-Commands Not Manually Started
-- No Overhead of Command Creation
-- No Circular Command Creation
-
-JJ
-
------
-
 `<< start & stop >>`
 
 Start & Stop,  
 2008-08-29
 
 Vinkje is ook een mooi symbool voor voltooid.
-
-JJ
-
------
-
-`<< rule rich >>`
-
-Command Basics,  
-2008-08-31
-
-For instance: the rule ‘sub-commands are never referenced’, may be changed to being able to reference sub-commands after all, but never to be able to execute a sub-command through a reference, even if the reference is active. But this change of rules is just an example. It might prove not to be practical after all.  
-\> Perhaps change that rule for real.
 
 JJ
 
@@ -366,11 +327,6 @@ Justs like with the kitchen example: you don’t necessarily need to see the det
 ![](images/7.%20Commands%20Ideas.008.jpeg)
 
 Procedures can also be called *operations*, *functions* or *routines* and there are even more synonyms. But I might usually stick to the term *procedure*.
-
-#### Procedure Basics
-
-`<< basic diagram elements  >>`  
-< A diamond might also be drawn more pointy than a square. > 
 
 ##### Notation Elements
 

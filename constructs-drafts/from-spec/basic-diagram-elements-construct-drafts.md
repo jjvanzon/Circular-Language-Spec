@@ -9,6 +9,7 @@ Basic Diagram Elements Construct Drafts
 __Contents__
 
 - [Loose Ideas](#loose-ideas)
+- [Implied Relationships Between Symbols](#implied-relationships-between-symbols)
 - [Brainstorms Shape vs Line Type](#brainstorms-shape-vs-line-type)
     - [Executions & Parameters Brainstorm](#executions--parameters-brainstorm)
     - [When Shape Types, When Line Types](#when-shape-types-when-line-types)
@@ -18,6 +19,17 @@ __Contents__
 
 - Notation Methods versus System Rules
     - Implicit calls are but notation methods, that don’t affect the behavior of the system. Type genericity, interface genericity and type interface genericity are system rules. They affect the behavior of the system.
+
+-----
+
+< A diamond might also be drawn more pointy than a square. > 
+
+### Implied Relationships Between Symbols
+
+Not showing private members or the contents of procedures might be a relevant subject for the display of the diagrams. 
+
+The definition of something can just as well be shown inside a reference to the definition. It might become a setting whether you’ll show the full definition in a reference or just the public things. It may be a better choice not to be able to *change* the definition from a reference to a definition.  
+The definition might be shown next to the diagram anyway. You can change it there. That might work more intuitive.
 
 -----
 
