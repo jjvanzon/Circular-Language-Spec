@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | System Interfaces
+﻿Circular Language Spec | System Interfaces
 ==========================================
 
 Loose Ideas
@@ -542,16 +542,16 @@ JJ
 
 -----
 
-Encircle Language Spec,  
+Circular Language Spec,  
 2009-09-03
 
-What about a two-dimensional array? How might that look in Encircle?
+What about a two-dimensional array? How might that look in Circular?
 
 JJ
 
 -----
 
-Encircle Language Spec,  
+Circular Language Spec,  
 2009-09-03
 
 Nice phrase:  
@@ -642,7 +642,7 @@ JJ
 
 -----
 
-Encircle Coding Principles,  
+Circular Coding Principles,  
 2008-07-04
 
 An object assignment, and a pointer to a pointer are not completely interchangeable, but it is close to it.
@@ -665,7 +665,7 @@ JJ
 
 ##### Value Direction
 
-Read-write direction is something so basic in Encircle, that it has a separate line type. Value direction is indicated by a *wavy line*.
+Read-write direction is something so basic in Circular, that it has a separate line type. Value direction is indicated by a *wavy line*.
 
 A value connection is actually not a real connection between symbols, but a value assignment.
 

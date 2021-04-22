@@ -1,4 +1,4 @@
-﻿Encircle Language Spec
+﻿Circular Language Spec
 ======================
 
 Conditions
@@ -22,7 +22,7 @@ JJ
 Conditions,  
 2020-05-24
 
-Some information about this notation might already be found in some of these places in the Encircle Language Spec:
+Some information about this notation might already be found in some of these places in the Circular Language Spec:
 
 - "Inheritance \ Enforcing & Preventing Specialization" seems to use the Conditions notation e.g. in the section "Requirements for Other Side of Connection", "Abstract Class", "Sealed / Final Class", "Optional/Required".
 - "Parameters \ Imported Parameter Concepts \ Required & Optional" seems to demonstrate the notation for one of the most basic conditions: required/optional. This is a condition, but not the generic condition notation, though, that other conditions might use.

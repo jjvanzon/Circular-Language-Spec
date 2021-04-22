@@ -1,4 +1,4 @@
-﻿Encircle Language Broader View | Extensibility
+﻿Circular Language Broader View | Extensibility
 ==============================================
 
 Aspects As External Modules
@@ -26,16 +26,16 @@ __Contents__
 
 Aspects might add something to every class that supports the aspect. The class doesn’t get polluted directly. An aspect might add a sub object operating on the class’s members in a generic way.
 
-What might be desired from Encircle, might be to offer a way to describe any of the aspects that were implemented in experiment 0.9 in text code, and how do I let each class decide which aspect to support. How do I set a default as to which aspects classes should support?
+What might be desired from Circular, might be to offer a way to describe any of the aspects that were implemented in experiment 0.9 in text code, and how do I let each class decide which aspect to support. How do I set a default as to which aspects classes should support?
 
 The main part of the text code description of an aspect is the code as generated before, but now with template placeholders in it.  
-Shouldn’t be hard. In the code generator version of Encircle, every module decided which aspects to support
+Shouldn’t be hard. In the code generator version of Circular, every module decided which aspects to support
 
 < I need to incorporate a story from Software System.doc about aspects about dependencies. >
 
 ### Brainstorm
 
-In experiment 0.9 every aspect (for instance Copy-Paste, Default Values and Enums) used to have its own part of the code generator. In a generic version of Encircle, this might translate to every aspect being its own generic part of the engine. It is perhaps easier to program the aspects as part of an engine, rather than part of a code generator, but something might make it even more handy. The aspects might no longer be part of the engine either. They might become external modules, written in perhaps custom code, that might be loaded by the engine and run inside of it.
+In experiment 0.9 every aspect (for instance Copy-Paste, Default Values and Enums) used to have its own part of the code generator. In a generic version of Circular, this might translate to every aspect being its own generic part of the engine. It is perhaps easier to program the aspects as part of an engine, rather than part of a code generator, but something might make it even more handy. The aspects might no longer be part of the engine either. They might become external modules, written in perhaps custom code, that might be loaded by the engine and run inside of it.
 
 #### Generic, Not Generated
 

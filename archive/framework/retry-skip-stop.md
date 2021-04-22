@@ -1,4 +1,4 @@
-Encircle Language Spec | Archive
+Circular Language Spec | Archive
 ================================
 
 Framework | Retry, Skip, Stop

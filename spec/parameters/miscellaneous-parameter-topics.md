@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Parameters
+﻿Circular Language Spec | Parameters
 ===================================
 
 Miscellaneous Topics
@@ -24,7 +24,7 @@ The following articles may explain some miscellaneous parameter topics, that are
 
 *Object*, *class*, *value* and *execution* are called system aspects of a symbol. The basic ones are covered in the articles *System Interfaces*.
 
-Other programming languages have *parameter passings*. In Encircle parameter passing is established by access controlling the system aspects of a parameter.
+Other programming languages have *parameter passings*. In Circular parameter passing is established by access controlling the system aspects of a parameter.
 
 It is basically about being able to separately access control every *system command*.
 

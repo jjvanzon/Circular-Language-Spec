@@ -1,4 +1,4 @@
-Encircle Language Broader View | Integration
+Circular Language Broader View | Integration
 ============================================
 
 Loose Ideas
@@ -13,7 +13,7 @@ The integration with other systems and protocols, file systems, network protocol
 -----
 
 Standaarden ondersteunen is een belangrijk punt, maar niet voor de fase waar ik nu in zit. Dat zou onderdeel van J Integration worden, omdat als je binnen m'n systeem blijft werken, deze modules eigenlijk niet nodig zijn, maar om met de rest van de wereld samen te werken wel.
-En J Integration zal misschien wel de meeste modules bevatten. Daarin zit dan de boodschap: J Integration is misschien niet nodig om Encircle zelfstandig te laten werken, maar de wereld zoals die nu is zorgt er voor dat het aantal nodige modules met 92% wordt vermeerderd, zodat andere systemen betrokken kunnen worden. J Integration zou worden gezien als modules die functioneel niets toevoegen aan Encircle zelf, maar alleen verzorgen dat op andere systemen wordt aangesloten. Desalniettemin, is m'n eigen zooi niet commercieel viable, zonder J Integration. Er zijn gewoon dingen, die ik vroeger als onbelangrijk zag, waar m'n systeem in de toekomst op stuk zou kunnen lopen.
+En J Integration zal misschien wel de meeste modules bevatten. Daarin zit dan de boodschap: J Integration is misschien niet nodig om Circular zelfstandig te laten werken, maar de wereld zoals die nu is zorgt er voor dat het aantal nodige modules met 92% wordt vermeerderd, zodat andere systemen betrokken kunnen worden. J Integration zou worden gezien als modules die functioneel niets toevoegen aan Circular zelf, maar alleen verzorgen dat op andere systemen wordt aangesloten. Desalniettemin, is m'n eigen zooi niet commercieel viable, zonder J Integration. Er zijn gewoon dingen, die ik vroeger als onbelangrijk zag, waar m'n systeem in de toekomst op stuk zou kunnen lopen.
 
 Gewoon vanuit commercieel oogpunt.
 

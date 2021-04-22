@@ -1,4 +1,4 @@
-﻿Encircle Language Broader View | Exchangeability
+﻿Circular Language Broader View | Exchangeability
 ================================================
 
 The Internet as a Single Computer
@@ -35,13 +35,13 @@ __Contents__
 
 ### Introduction
 
-If the new code base of Encircle might not turn the internet into a single computer, I wouldn’t call it a final version.
+If the new code base of Circular might not turn the internet into a single computer, I wouldn’t call it a final version.
 
 In the field of system engineering, networked computers are central to the material worked with. But in the field of software programming, people do not seem to have gotten used yet to all those computers being connected to each other. When something is done on a single computer, the program’s source code looks good, but when multiple machines need to start working together, things look... different. I feel that things should not look... different. I think a computer programming language should primarily describe what happens on whole a network of machines, instead of what happens on each computer individually with a sort of glue-code in between, that makes those computers work together. As long as computer code deals with individual computers glued together, instead of describing primarily what happens on the whole network of computers, software might never take full advantage of the internet. Most programming languages are dealing with how source code translates to machine code, that first and foremost runs on a single machine. When the program’s execution extends over multiple machines, the source code is split up into bits, usually written in all sorts of different computer languages, and each bit runs on a separate computer. I feel, that a computer program should really just be *one* program operating in a network of machines.
 
 ### A unified paradigm for all digital objects
 
-For the internet to function as a single computer, I want everything to be accessed the same way. A default view on contents of the internet in a unified paradigm for all digital objects. The diagrammatic expression of Encircle can function as a default expression in which anything digital can be abstractly expressed. You can also view things in a tree control. Objects in such a default view can also be opened in another view. Documents such as pages with text and video files can be opened in the appropriate view. As such there are user interfaces for specific object types, but there are also user interfaces through which all the objects and their linkage can be viewed in a unified way.
+For the internet to function as a single computer, I want everything to be accessed the same way. A default view on contents of the internet in a unified paradigm for all digital objects. The diagrammatic expression of Circular can function as a default expression in which anything digital can be abstractly expressed. You can also view things in a tree control. Objects in such a default view can also be opened in another view. Documents such as pages with text and video files can be opened in the appropriate view. As such there are user interfaces for specific object types, but there are also user interfaces through which all the objects and their linkage can be viewed in a unified way.
 
 *Hyperlinks = Referential Structure* has already explained how the web pages on the world wide web can be expressed as a referential structure of interlinked objects, in order to have them integrate with the single construction, which all the other digital objects are a part of. It is not that you might only be seeing diagrams, not webpages anymore. Webpages can be opened in a different view, but can also be seen through a default view through which to view objects.
 
@@ -196,7 +196,7 @@ But there is so much on your local computer, that is genuinely *not*  interestin
 
 Now, not only classes are resources on the internet. I just used that as an example to present the problem area. Individual objects are also resources on the internet. And modules, that contain multiple classes and objects are also a resource on the internet. Each *method*  is also an individual resource on the internet, because a method can be seen as separate from its class, next to being able to see it as part of a class. An internet address can identify an individual object, an individual class, an individual method, a lists of classes, a list of objects, a single module containing multiple objects, classes and methods, or a list of modules. Because classes, methods and modules are also objects, objects, classes, methods and modules on a site are identified in a single numbering. The site is represented by a single object, holding all the other resources. 
 
-Perhaps in the future there might be ideas about how to abstract it, and not see the boundaries between sites at all. However, I kind of like the idea of subdividing things into areas. It works fine for the human mind, because our own world is also split up into cities with areas, with houses and central places. Administrating networks in Encircle might still be a lot like networks are adminstrated today, only more transparent as to where everything is. It might no longer be something abstract that lays behind network administration screens and IP numbers, you might see the landscape of it before you in an Encircle diagram.  
+Perhaps in the future there might be ideas about how to abstract it, and not see the boundaries between sites at all. However, I kind of like the idea of subdividing things into areas. It works fine for the human mind, because our own world is also split up into cities with areas, with houses and central places. Administrating networks in Circular might still be a lot like networks are adminstrated today, only more transparent as to where everything is. It might no longer be something abstract that lays behind network administration screens and IP numbers, you might see the landscape of it before you in an Circular diagram.  
 Personally, I might like to use a different term for IP addresses and domain names. I might like to call them site names and site ID’s.
 
 #### ID’s
@@ -208,7 +208,7 @@ At first the idea was to have the object’s identification consist of:
 - Class ID
 - Object Position
 
-But in Encircle modules and classes are also objects. In fact, all objects, including the classes and modules, are accessible from a single flat list of objects.  
+But in Circular modules and classes are also objects. In fact, all objects, including the classes and modules, are accessible from a single flat list of objects.  
 So whether you want to identify a specific object from any module or class, or if you want to identify just a module, you only need to specify the IP Address and an Object Position, which is an object’s storage position on disk. An object’s identification might be a combination of the site’s IP address and the object’s position on disk:
 
 - IP Address
@@ -380,7 +380,7 @@ Having the internet function as a single computer can have implications for othe
 
 #### Collection
 
-The *Collection* concepts make is possible to query for objects as if Encircle were a relational database. In relational database, all objects of a certain class are stored in one table in a single database. In Encircle the objects of a class can be spread all around the internet. This becomes a problem, because you can't search the whole internet for objects.
+The *Collection* concepts make is possible to query for objects as if Circular were a relational database. In relational database, all objects of a certain class are stored in one table in a single database. In Circular the objects of a class can be spread all around the internet. This becomes a problem, because you can't search the whole internet for objects.
 
 If you want to query the whole class, an index might be hosted somewhere, that is simply a list of pointers pointing to all the objects of that class that are scattered around the earth. In that case, the objects of that class are obliged to always register themselves in that index.
 

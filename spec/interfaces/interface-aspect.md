@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Interfaces
+﻿Circular Language Spec | Interfaces
 ===================================
 
 Interface Aspect

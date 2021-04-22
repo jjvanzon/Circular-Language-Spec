@@ -1,14 +1,14 @@
-﻿Encircle Language Spec
+﻿Circular Language Spec
 ======================
 
 Overview
 --------
 
-This documentation is an attempt to describe a programming language called Encircle. It aims to be a diagram notation for visualizing computer code. 
+This documentation is an attempt to describe a programming language called Circular. It aims to be a diagram notation for visualizing computer code. 
 
-The documentation tries to explain how coding concepts might be expressed in this Encircle language: concepts like objects, classes, relations, interfaces, events, commands and parameters.
+The documentation tries to explain how coding concepts might be expressed in this Circular language: concepts like objects, classes, relations, interfaces, events, commands and parameters.
 
-The Encircle language for now is a specification in writing. At the time of this writing, no finished program was made yet. Only experiments were done.
+The Circular language for now is a specification in writing. At the time of this writing, no finished program was made yet. Only experiments were done.
 
 The documentation tries to shed light on the following topics:
 
@@ -54,7 +54,7 @@ __Contents__
 
 - ![](images/Circle%20Language%20Spec%20Overview.004.png)
  
-  This documentation aims to describe what objects might be in computer technology and basic concepts about objects. It also tries to shed light on drawing out objects using the Encircle diagram notation.
+  This documentation aims to describe what objects might be in computer technology and basic concepts about objects. It also tries to shed light on drawing out objects using the Circular diagram notation.
 
 ### [Classes](classes)
 
@@ -72,7 +72,7 @@ __Contents__
 
 - ![](images/Circle%20Language%20Spec%20Overview.008.png)
 
-  Commands could be seen as executable objects. Other synonyms for commands might be *methods*, *procedures*, *routines*, *subs* and *functions*. But in the Encircle Language Spec those executable objects might be called *commands*. In some programming languages, commands might not be objects, but constructs, that are not exchangeable with objects. But in Encircle an attempt is made to see them as objects, that so happen to be executable. Commands do seem to have specific behavior. This documentation tries to evaluate this behavior.
+  Commands could be seen as executable objects. Other synonyms for commands might be *methods*, *procedures*, *routines*, *subs* and *functions*. But in the Circular Language Spec those executable objects might be called *commands*. In some programming languages, commands might not be objects, but constructs, that are not exchangeable with objects. But in Circular an attempt is made to see them as objects, that so happen to be executable. Commands do seem to have specific behavior. This documentation tries to evaluate this behavior.
 
 ### [Parameters](parameters)
 
@@ -122,13 +122,13 @@ __Contents__
 
   The concept of events might be seen as a combination of constructs: an array of command references, a command interface, then supporting the command interface, registering the command inside the array of command references and then calling the commands in the array at times.
 
-  The documentation also tries to show, how events might look in Encircle's diagram notation.
+  The documentation also tries to show, how events might look in Circular's diagram notation.
 
 ### [Inheritance](inheritance)
 
 - ![](images/Circle%20Language%20Spec%20Overview.015.png)
 
-  This part of the documentation attempts to describe the concept of *inheritance* inside the Encircle language. This concept seems to have been part of some object oriented programming languages for a while. In certain languages one class might inherit from another class, to take over its characteristics before the derived class might get extended or altered. When the notation in Encircle was worked out, different variations on that seemed to fall out, that might not necessarily be present in all object oriented languages. Next to *class inheritance* (could be thought of as the *traditional* form of inheritance), there could also be *object inheritance*. This might mean, that one object takes over the characteristics of a specific other object. The other object seems to melt together with the new object. When maybe changing base members of the new object, the base object’s data might also change. This could be called *object inheritance*. More forms of inheritance may be proposed. A collection might be inherited from, so that an existing 'table' of items might be extended with 'new columns'. This could be called *list inheritance*. There is also the idea for a construct, where a *system* or module can inherit from another system, taking over its characteristics, and the derived system can be altered, augmented, specialized and extended. This might be called *system inheritance* or *module inheritance*. If the original system might change, this may also change the derived systems. (Other technology might establish this with what may be called 'proxy classes' and extending auto-generated proxy-classes with additional aspects.) So the idea is that things can be inherited from to render specialized versions of a class, object, collection or module.
+  This part of the documentation attempts to describe the concept of *inheritance* inside the Circular language. This concept seems to have been part of some object oriented programming languages for a while. In certain languages one class might inherit from another class, to take over its characteristics before the derived class might get extended or altered. When the notation in Circular was worked out, different variations on that seemed to fall out, that might not necessarily be present in all object oriented languages. Next to *class inheritance* (could be thought of as the *traditional* form of inheritance), there could also be *object inheritance*. This might mean, that one object takes over the characteristics of a specific other object. The other object seems to melt together with the new object. When maybe changing base members of the new object, the base object’s data might also change. This could be called *object inheritance*. More forms of inheritance may be proposed. A collection might be inherited from, so that an existing 'table' of items might be extended with 'new columns'. This could be called *list inheritance*. There is also the idea for a construct, where a *system* or module can inherit from another system, taking over its characteristics, and the derived system can be altered, augmented, specialized and extended. This might be called *system inheritance* or *module inheritance*. If the original system might change, this may also change the derived systems. (Other technology might establish this with what may be called 'proxy classes' and extending auto-generated proxy-classes with additional aspects.) So the idea is that things can be inherited from to render specialized versions of a class, object, collection or module.
 
   Such specialization might also be applied to *commands*. The inheritance documentation also aims to describe other concepts in the area of *specialization* and *extension*. Inheritance might be thought of related to the concept of *interfaces.*
 
@@ -148,7 +148,7 @@ That was the more rounded up documentation. Next an attempt is made to list the 
 
 - ![](images/Circle%20Language%20Spec%20Overview.017.png)
 
-  Object resolution might take place when a reference to one object is more or less obscured by another object, shadowing or overriding the original object. (It also might apply to commands.) A reference might be set to an object, but instead the reference might be sort of non-consentiously pulled towards another object. There may be multiple situations in which object resolution takes place, like: overriding, overloading, shadowing, ambiguity, implicit conversions and default members. At first it was thought, that these kinds of situations might be due to ambiguity and the textual nature of code, but in the Encircle diagram notation when drawing out the situation in a diagram, it seems to fall into place, that they might be more like automatically detoured references.
+  Object resolution might take place when a reference to one object is more or less obscured by another object, shadowing or overriding the original object. (It also might apply to commands.) A reference might be set to an object, but instead the reference might be sort of non-consentiously pulled towards another object. There may be multiple situations in which object resolution takes place, like: overriding, overloading, shadowing, ambiguity, implicit conversions and default members. At first it was thought, that these kinds of situations might be due to ambiguity and the textual nature of code, but in the Circular diagram notation when drawing out the situation in a diagram, it seems to fall into place, that they might be more like automatically detoured references.
 
   This documentation might be less smooth. It may contain ideas but partly described, not as refined into polished up text.
 
@@ -156,7 +156,7 @@ That was the more rounded up documentation. Next an attempt is made to list the 
 
 - ![](images/Circle%20Language%20Spec%20Overview.018.png)
 
-  An object might set rules for what kind of values may be filled in into it and a command might be given conditions on whether the procedure might be started or not. This might perhaps be done by adding code to a procedure (or for an object, to the __Set__ command). From that code may follow, that depending on certain conditions, the execution of the rest of the procedure is or is not run. That just may have described a low-level way to handle conditions. But conditions could be centric enough in programming, that they might become a construct in the Encircle diagram language. A (value) object or command might propose a set of conditions, to evaluate whether the value may be assigned or if the command is allowed to execute.
+  An object might set rules for what kind of values may be filled in into it and a command might be given conditions on whether the procedure might be started or not. This might perhaps be done by adding code to a procedure (or for an object, to the __Set__ command). From that code may follow, that depending on certain conditions, the execution of the rest of the procedure is or is not run. That just may have described a low-level way to handle conditions. But conditions could be centric enough in programming, that they might become a construct in the Circular diagram language. A (value) object or command might propose a set of conditions, to evaluate whether the value may be assigned or if the command is allowed to execute.
  
   The documentation may be not so rich yet, apart from some loose ideas.
 
@@ -178,4 +178,4 @@ That was the more rounded up documentation. Next an attempt is made to list the 
 
 - It might be nice if diagrams could be automatically drawn out: if the metrics and positions of the shapes and lines could be automatically done. Suggestions could be found this documentation about aspects of positioning, that might make diagrams look tidier. Also described might be ideas about how colors may be used to highlight things.
 
-- This documentation might still be loose ideas from previous descriptions of this Encircle programming language.
+- This documentation might still be loose ideas from previous descriptions of this Circular programming language.

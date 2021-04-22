@@ -1,4 +1,4 @@
-Encircle Language Construct Drafts | From Spec
+Circular Language Construct Drafts | From Spec
 ==============================================
 
 Commands Construct Drafts
@@ -151,7 +151,7 @@ An *active* reference to an *inactive* command `might not` be executed. `The` `f
 
 `<< rule rich >>`  
 
-In Encircle command references and their target commands could in theory be either inactive or executable.
+In Circular command references and their target commands could in theory be either inactive or executable.
 
 ![](images/1.%20Commands%20Main%20Concepts.025.png)
 

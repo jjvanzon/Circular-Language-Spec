@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Execution Flow
+﻿Circular Language Spec | Execution Flow
 =======================================
 
 Jumps
@@ -65,7 +65,7 @@ The last two jumps are only used inside a loop, and might not be explained in th
 
 Normal execution order of a procedure means one command being followed up by the next.
 
-But in Encircle, a command is basically just a collection of calls to other commands with no particular order.
+But in Circular, a command is basically just a collection of calls to other commands with no particular order.
 
 If you don’t indicate the order in which to execute the commands, then they might execute in an arbitrary order. Sometimes this is acceptable from a functional point of view.
 
@@ -119,7 +119,7 @@ Normal execution order only puts command *calls* next to each other, not command
 
 A __Goto__ statement is an execution flow statement, that immediately jumps to another part of the code.
 
-In Encircle __Goto__ is an execution flow command that is passed a reference to the clause to go to. The reference to the clause to go to is called the __Target__ parameter.
+In Circular __Goto__ is an execution flow command that is passed a reference to the clause to go to. The reference to the clause to go to is called the __Target__ parameter.
 
 A clause is a command definition embedded inside a command. The name of the clause is considered the *label* of the statement to jump to. In other computer programming languages the part of the code jumped to was marked with a label. In the new computer programming language, the next statement to jump to is encapsulated by a clause.
 

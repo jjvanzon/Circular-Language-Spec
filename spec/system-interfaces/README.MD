@@ -1,4 +1,4 @@
-Encircle Language Spec
+Circular Language Spec
 ======================
 
 System Interfaces Articles

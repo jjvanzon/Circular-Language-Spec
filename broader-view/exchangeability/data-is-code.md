@@ -1,4 +1,4 @@
-﻿Encircle Language Broader View | Exchangeability
+﻿Circular Language Broader View | Exchangeability
 ================================================
 
 Data = Code
@@ -10,7 +10,7 @@ This is the idea that program's might not be procedures operating on a database.
 
 Procedures might only be plugged into of a relational object structure, which is primarily data. The relational structure might form the lion’s share of the program. An object may simply expose actions, that it may perform, or actions that might be performed on it, or actions that might be performed on the combination between the object itself and other objects. Anything an object can do or *anything*  that can be done *to*  an object might be exposed through a method of the object. The object may be related to other objects through relations between classes.
 
-In Encircle a program may simply be a database with concepts and methods simply being part of it.
+In Circular a program may simply be a database with concepts and methods simply being part of it.
 
 You might view your relational data as actually being the program itself.
 

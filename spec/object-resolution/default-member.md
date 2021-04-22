@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Object Resolution
+﻿Circular Language Spec | Object Resolution
 ==========================================
 
 Default Member

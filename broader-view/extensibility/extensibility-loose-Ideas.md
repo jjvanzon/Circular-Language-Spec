@@ -1,4 +1,4 @@
-﻿Encircle Language Broader View | Extensibility
+﻿Circular Language Broader View | Extensibility
 ==============================================
 
 Loose Ideas

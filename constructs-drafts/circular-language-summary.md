@@ -1,14 +1,14 @@
-﻿Encircle Language | Construct Drafts
+﻿Circular Language | Construct Drafts
 ====================================
 
-Encircle Language Summary
+Circular Language Summary
 -------------------------
 
 `[ Deprecated documentation ]`
 
 ### Loose Ideas
 
-Encircle,  
+Circular,  
 2008-08-06
 
 In the end, a summary / cheat sheet might be made of the coding concepts and diagram syntax.

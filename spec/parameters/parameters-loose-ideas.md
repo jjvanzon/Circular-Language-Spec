@@ -1,4 +1,4 @@
-Encircle Language Spec | Parameters
+Circular Language Spec | Parameters
 ===================================
 
 Loose Ideas

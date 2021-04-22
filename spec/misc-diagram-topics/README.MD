@@ -1,4 +1,4 @@
-Encircle Language Spec
+Circular Language Spec
 ======================
 
 Misc Diagram Topics

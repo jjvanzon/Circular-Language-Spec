@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Commands
+﻿Circular Language Spec | Commands
 =================================
 
 Loose Ideas
@@ -192,7 +192,7 @@ JJ
 Commands,
 2009-03-13
 
-"Do you know, I don't even want those commands." I made that remark when I right-clicked on an item in some user interface. Encircle might make many commands available on many many objects. But perhaps many times, I don't even want those commands. So I as the user want to be able to hide those. I might not want to see those.
+"Do you know, I don't even want those commands." I made that remark when I right-clicked on an item in some user interface. Circular might make many commands available on many many objects. But perhaps many times, I don't even want those commands. So I as the user want to be able to hide those. I might not want to see those.
 
 JJ
 

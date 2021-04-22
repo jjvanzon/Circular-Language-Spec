@@ -1,4 +1,4 @@
-﻿Encircle Language Broader View | Interfaces
+﻿Circular Language Broader View | Interfaces
 ===========================================
 
 Extensive Classification with Interfaces
@@ -50,7 +50,7 @@ If you define an interface with a command in it, that has a certain class, perha
 One of the ideas behind this is idea is that objects, that have the same command, because they are both parameters of the command, have a joint interface, to create a relation. But really, they already have a relation, just an indirect relation, which is also a relation.
 
 This idea just might not work. It only works if you assume that a command definition is unchangeable and that class references to the same command actually might be the same procedure, but it hasn’t. You can have a command referenced twice that has elements to it that can still be redefined.  
-When this might not be the case then yes an idea like objects with the same command have a mutual interface could work, but in dynamic circumstances that are possible in Encircle I just want to forget about it.
+When this might not be the case then yes an idea like objects with the same command have a mutual interface could work, but in dynamic circumstances that are possible in Circular I just want to forget about it.
 
 #### A command is an interface
 

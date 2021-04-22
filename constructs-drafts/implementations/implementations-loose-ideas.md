@@ -1,4 +1,4 @@
-Encircle Language Construct Drafts | Implementations
+Circular Language Construct Drafts | Implementations
 ====================================================
 
 Implementations Loose Ideas
@@ -6,7 +6,7 @@ Implementations Loose Ideas
 
 `[ Preliminary documentation ]`
 
-Encircle, Utilities,
+Circular, Utilities,
 
 Ik heb geen tool voor performance monitoring en tuning vermeld in de documentatie.
 

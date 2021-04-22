@@ -1,4 +1,4 @@
-﻿Encircle Language | Broader View
+﻿Circular Language | Broader View
 ================================
 
 Fundamental Principles | Loose Ideas
@@ -99,7 +99,7 @@ JJ
 
 -----
 
-Encircle,
+Circular,
 
 I like mechanisms, that control themselves, instead of having to control the mechanism yourself.
 
@@ -107,7 +107,7 @@ JJ
 
 -----
 
-The fundamental principles of other programming languages may not be so fundamental in Encircle. For instance basic math may be considered fundamental in other programming languages, but it’s no more than a plug-in module in my own system. Another example: type safety may be considered fundamental in other programming language, but in my own system it is a plug-in aspect, which sees to it an object’s type is checked before it is assigned to an object reference.
+The fundamental principles of other programming languages may not be so fundamental in Circular. For instance basic math may be considered fundamental in other programming languages, but it’s no more than a plug-in module in my own system. Another example: type safety may be considered fundamental in other programming language, but in my own system it is a plug-in aspect, which sees to it an object’s type is checked before it is assigned to an object reference.
 
 -----
 
@@ -141,7 +141,7 @@ JJ
 
 -----
 
-Encircle,
+Circular,
 
 Je zou aspecten van de computertaal kunnen in- en uitschakelen, zodat het behapbaarder wordt voor bepaalde mensen: kinderen of echt programmeurs. Je zou kunnen laten zien welke aspecten van de computertaal zichtbaar zijn, en welke er geprogrammeerd kunnen worden. Uitgeschakelde aspecten van de taal, worden of niet weergegeven, of op met een alternatieve, vereenvoudigde notatie weergegeven.
 
@@ -188,7 +188,7 @@ JJ
 
 ### More Ideas
 
-Encircle,  
+Circular,  
 Fundamental Principles,  
 2008-09-12
 
@@ -201,10 +201,10 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2008-09-08
 
-Encircle is pretty much the opposite of the tendency towards natural language syntax. It is also the opposite of the tendency towards domain specific languages.
+Circular is pretty much the opposite of the tendency towards natural language syntax. It is also the opposite of the tendency towards domain specific languages.
 
 JJ
 
@@ -301,7 +301,7 @@ JJ
 Fundamental Principles,  
 2008-11-05
 
-The bad behavior principle is why registration of all references SHOULD be designed for good practice to work, without having to consider the bad behavior. Deterring bad behavior should be completely separately addressed, because also in the design of Encircle, bad behavior should not might be considered, because it it may not compromise my creativity by having to think about all sorts of possible bad behavior as I try to design a language to do good with. Programming USING the language should be the same: you should only might separately address possible bad behavior, not while you are designing a system that works for good behavior.
+The bad behavior principle is why registration of all references SHOULD be designed for good practice to work, without having to consider the bad behavior. Deterring bad behavior should be completely separately addressed, because also in the design of Circular, bad behavior should not might be considered, because it it may not compromise my creativity by having to think about all sorts of possible bad behavior as I try to design a language to do good with. Programming USING the language should be the same: you should only might separately address possible bad behavior, not while you are designing a system that works for good behavior.
 
 JJ
 
@@ -326,7 +326,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2008-12-22
 
 That Aspect construct I want in my programming language seems to have existed forever:  
@@ -345,7 +345,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2008-12-22
 
 I ask myself if anything original is left to my language, when I orient myself into existing ideas.
@@ -356,7 +356,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2008-12-22
 
 Als hedendaagse programmeertechnieken zo geweldig zijn, waarom is alles dan nog steeds zo'n haperende troep. Met name als je aan het programmeren bent.
@@ -365,7 +365,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2008-12-23
 
 Heel veel van die dingen kom je gewoon niet vanzelf tegen. En dat is jammer. Want zo leren de meesten programmeren: door dingen vanzelf tegen te komen. En dat stimuleer je door het in de taal zelf op te nemen.
@@ -383,7 +383,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2009-02-12
 
 You can put a breakpoint on members of specific objects, not just a member of a class. Just as well you can put a breakpoint on any data member’s get or set procedures or other system procedures.
@@ -392,7 +392,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2009-02-12
 
 ‘Not too much derivation’ could be a Fundamental Principle, for the same reasons as Lack of Choice = Guarantees.
@@ -401,7 +401,7 @@ JJ
 
 -----
 
-Commands / Encircle,  
+Commands / Circular,  
 2009-03-13
 
 What if you can say: I want a command on that object, that calls that program's this and that command. The reason programming is hard, is because programming languages are too hard. The user knows what he wants. Why is it any more difficult to realize something on the computer, than to just tell the computer what it is you want?
@@ -410,7 +410,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2009-03-13
 
 Folders, containing files and other folders? Presented in a tree structure without it even actually looking like a tree? Why is it you are presenting only the IDEA of containment, and not how containment actually looks?
@@ -419,7 +419,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2009-03-13
 
 Icon display and double clicking on them, showing THEIR contents, is ALMOST what I want to see regarding containment, except, that you might actually see the zooming in animate.
@@ -428,7 +428,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2009
 
 Zodat software ontwikkelaars nog minder weten van wat er op fysiek niveau gebeurt... Op zich wel mooi om je op conceptueel niveau bezit te houden, maar het creëert ook meer afstand ten opzichte van wat er fysiek gebeurt. Dat heb je al met SQL. Dat wordt niet per so nog erger met LINQ, maar dat houdt het wel in stand. Er zijn al tal van programmeurs, die verrotte queries schrijven en daarna de database de schuld geven, omdat ze geen flauw benul hebben van wat er onder water eigenlijk gebeurt. Het beste snap je zowel dingen op conceptueel niveau, als de fysieke uitvoering ervan. Ik zie daar wel een voordeel van mijn eigen taal in. Die verbindt die twee en maakt ze even toegankelijk.
@@ -437,7 +437,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2009-03-31
 
 Who is this guy: http://strlen.com/index.html
@@ -448,16 +448,16 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 Fundamental Principles,  
 2009-03-31
 
-It is possible to program as simply in assembly as you do in Encircle, but in Encircle you are more dictated to work within a certain paradigm. You can apply the paradigm in assembly language too, but in assembly you can more easily break those rules. In Encircle the rules are more imposed. Actually, in Encircle you are also not obliged to do it that way.
+It is possible to program as simply in assembly as you do in Circular, but in Circular you are more dictated to work within a certain paradigm. You can apply the paradigm in assembly language too, but in assembly you can more easily break those rules. In Circular the rules are more imposed. Actually, in Circular you are also not obliged to do it that way.
 
 In an object oriented language you can still program procedural, but it is just, that objects and classes
 are a programming construct of an importance equal to that of procedures.
 
-In Encircle it is the same way:
+In Circular it is the same way:
 
 relations and aspects are programming constructs of equal importance, but you might not use them. Nevertheless, they are so present as a programming construct, that you start to use them anyway.
 
@@ -465,7 +465,7 @@ Actually a lot of programmers took a long time to realize what they need classes
 
 But they have been applying them for years, because they have been USING classes. They just hadn't been programming classes.
 
-In Encircle it is the same way: aspects, relations and objects and commands and everything are clearly present in the framework libraries. You might be using them before you start to program them yourself.
+In Circular it is the same way: aspects, relations and objects and commands and everything are clearly present in the framework libraries. You might be using them before you start to program them yourself.
 
 In assembly, you could program in an object oriented way with classes. It is a matter of working in a certain fashion and yes, the syntax looks much different, but you are still modeling with classes and objects.
 
@@ -473,7 +473,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2009-04-08
 
 Just about everything in text code is reference by name. You do not physically see connections between things. The correspondence of names creates the connection. That is what is hard about analyzing existing code.
@@ -482,7 +482,7 @@ JJ
 
 -----
 
-Encircle Language Spec,  
+Circular Language Spec,  
 2009-04-16
 
 A user-defined order number of a user-defined sorting, and the use of aliases prevents dead links. You could also do a kind of automatic aliasing: when a link is not found, the history of that link might be stored inside the container of the leaf, and this could be used to offer a suggested new linkage, when the dead link was attempted to be accessed.
@@ -528,7 +528,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2009-06-12
 
 All we are working with is just feedback from what is really going on inside the computer. We are just tapped in and only tap off some of what's going on inside that thing.
@@ -537,7 +537,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2009-05-02
 
 I might not have a good spot or good explanation about how assembly seamlessly integrates into the language. This is part of the achievability principles, but also makes use of the Binaral aspect and the Value aspect too.
@@ -630,7 +630,7 @@ JJ
 Fundamental Principles,  
 2010-04-25 ~
 
-How might Aquima impose rules. No, back to Encircle. Everything is possible with all the constructs available. But awareness of all the construct should inspire you to pick the right solution in the right situation. And now Aquima. You always might pick one out of 5 first. In a way, in Encircle, you always might pick one out of 12 first, or something. You might pick a construct... I am not going to brainstorm more about these fundamental things. I can not get my head around it right now.
+How might Aquima impose rules. No, back to Circular. Everything is possible with all the constructs available. But awareness of all the construct should inspire you to pick the right solution in the right situation. And now Aquima. You always might pick one out of 5 first. In a way, in Circular, you always might pick one out of 12 first, or something. You might pick a construct... I am not going to brainstorm more about these fundamental things. I can not get my head around it right now.
 
 JJ
 

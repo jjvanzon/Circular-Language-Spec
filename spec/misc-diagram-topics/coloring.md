@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Misc Diagram Topics
+﻿Circular Language Spec | Misc Diagram Topics
 ============================================
 
 Coloring
@@ -33,7 +33,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2009-01-27
 
 Just like in text code, coloring is not something mandatory, but darn handy anyway.

@@ -1,4 +1,4 @@
-﻿Encircle Language Broader View | Exchangeability
+﻿Circular Language Broader View | Exchangeability
 ================================================
 
 Hand Signs
@@ -6,5 +6,5 @@ Hand Signs
 
 `[ Preliminary documentation ]`
 
-Encircle Sign Language?  
+Circular Sign Language?  
 How to use hand signs to express systematics.

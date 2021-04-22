@@ -1,4 +1,4 @@
-Encircle Language | Construct Drafts
+Circular Language | Construct Drafts
 ====================================
 
 Implementations
@@ -12,7 +12,7 @@ Here might be some of the topics that could be found here:
 
 - ### [Achievability](achievability)
 
-    - The achievability principles might be a set of principles, that describe how a running Encircle might be developed in a limited amount of time with a limited amount of people: what techniques might be employed to try and make that possible.
+    - The achievability principles might be a set of principles, that describe how a running Circular might be developed in a limited amount of time with a limited amount of people: what techniques might be employed to try and make that possible.
 
 - ### [Classes Implementation | Texts to Incorporate](classes-implementation-texts-to-incorporate.md)
 
@@ -28,7 +28,7 @@ Here might be some of the topics that could be found here:
 
 - ### [Implementation Attempt 2002](implementation-attempt-2002.md)
 
-    - Document about a more serious attempt to make a programming environment that might use the Encircle notation.
+    - Document about a more serious attempt to make a programming environment that might use the Circular notation.
 
 - ### [Implementations Loose Ideas](implementations-loose-ideas.md)
 
@@ -36,7 +36,7 @@ Here might be some of the topics that could be found here:
 
 - ### [Optimization](optimization.md)
 
-    - May cover optimization algorithms, that might be integrated into Encircle. For now this is considered not so important to think about. The text might just be loose ideas.
+    - May cover optimization algorithms, that might be integrated into Circular. For now this is considered not so important to think about. The text might just be loose ideas.
 
 - ### [Referrers Implementation](referrers-implementation.md)
 

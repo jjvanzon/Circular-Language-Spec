@@ -1,4 +1,4 @@
-﻿Encircle Language Broader View | From Spec
+﻿Circular Language Broader View | From Spec
 ==========================================
 
 Commands and Classes Loosely Coupled

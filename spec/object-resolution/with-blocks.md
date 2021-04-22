@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Object Resolution
+﻿Circular Language Spec | Object Resolution
 ==========================================
 
 With Blocks
@@ -6,7 +6,7 @@ With Blocks
 
 `[ Preliminary documentation ]`
 
-This is an ‘old’ VB concept. I might use something like that in Encircle too. But I’m not sure if it might be an object resolution concept, but I had to put it somewhere for now.
+This is an ‘old’ VB concept. I might use something like that in Circular too. But I’m not sure if it might be an object resolution concept, but I had to put it somewhere for now.
 
 ### Out of the original Symbol documentation
 

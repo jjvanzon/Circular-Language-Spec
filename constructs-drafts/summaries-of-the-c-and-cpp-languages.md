@@ -1,4 +1,4 @@
-﻿Encircle Language | Construct Drafts
+﻿Circular Language | Construct Drafts
 ====================================
 
 *From 2003*
@@ -15,7 +15,7 @@ __Contents__
 
 ### Introduction
 
-This document contains summaries of other languages (C and C++), in the form of bulleted lists. They were made around the year 2004 during an analysis of the grammar of C and C++ to compare them to Encircle.
+This document contains summaries of other languages (C and C++), in the form of bulleted lists. They were made around the year 2004 during an analysis of the grammar of C and C++ to compare them to Circular.
 
 ### C
 

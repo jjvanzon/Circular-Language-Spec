@@ -1,4 +1,4 @@
-﻿Encircle Language Spec
+﻿Circular Language Spec
 ======================
 
 Black Boxes
@@ -64,7 +64,7 @@ The concept of *Black Box* is also known as the concept of *Public and Private*.
 
 The main articles about black boxing are finished, but you might also find a lot of unfinished material at the end of the documentation, which might be worked out later. Nevertheless, the main idea is worked out completely, and it is clearly denoted which material is not finished.
 
-The idea for the future is that *user* access control and *black boxing* access control might become a single concept of ‘what has access to what’, but that might not immediately be done at first. A simpler black box method is worked out first: one much like what you see in contemporary programming languages. However, this method is adapted to Encircle, because Encircle has a different view on objects and commands. Which commands get access to the private contents of which objects is less obvious, because a command is not part of a specific object or class. In fact, no command gets access to the private contents of an object, unless that command is a *friend* of the object. This creates a tighter bond between the command and the object. Another thing, that is different in Encircle, is that commands are no more than objects. They are the same thing. This really impacts the way you think about black boxing.
+The idea for the future is that *user* access control and *black boxing* access control might become a single concept of ‘what has access to what’, but that might not immediately be done at first. A simpler black box method is worked out first: one much like what you see in contemporary programming languages. However, this method is adapted to Circular, because Circular has a different view on objects and commands. Which commands get access to the private contents of which objects is less obvious, because a command is not part of a specific object or class. In fact, no command gets access to the private contents of an object, unless that command is a *friend* of the object. This creates a tighter bond between the command and the object. Another thing, that is different in Circular, is that commands are no more than objects. They are the same thing. This really impacts the way you think about black boxing.
 
 ### Main Concepts
 
@@ -88,7 +88,7 @@ There is no point to private content if it is not used by anything. Even though 
 
 An object’s public contents can be accessed by anything that has a reference to the object. Private contents can only be used by *friends*. Friends are objects that have access to the private contents of another object.
 
-What other programming languages call class methods, Encircle calls friend commands of a class object.
+What other programming languages call class methods, Circular calls friend commands of a class object.
 
 The object with private contents declares which other objects are its friends.  
 The friendship might not automatically go both ways: the *befriended* has access to the private contents of the friend, but the friend might not have access to the private contents of the befriended. For that you might establish a mutual friendship.

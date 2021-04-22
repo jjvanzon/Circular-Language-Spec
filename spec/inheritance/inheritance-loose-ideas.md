@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Inheritance
+﻿Circular Language Spec | Inheritance
 ====================================
 
 Loose Ideas

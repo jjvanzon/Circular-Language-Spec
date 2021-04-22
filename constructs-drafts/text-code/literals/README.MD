@@ -1,4 +1,4 @@
-Encircle Language Construct Drafts | Text Code
+Circular Language Construct Drafts | Text Code
 ==============================================
 
 Literals
@@ -20,7 +20,7 @@ You might find the following sub-topics here:
 
 - ### [Aspect Literals](aspect-literals.md)
 
-    - This article might not be finished, but it may describe how the *aspect* programming construct might be used to define new literal notations on-the-fly. It once was a plan for some programming constructs to be programmed using Encircle itself. New constructs might also include a textual notation. So it might be a welcome addition to be able to custom-define a new textual notation using the language itself.
+    - This article might not be finished, but it may describe how the *aspect* programming construct might be used to define new literal notations on-the-fly. It once was a plan for some programming constructs to be programmed using Circular itself. New constructs might also include a textual notation. So it might be a welcome addition to be able to custom-define a new textual notation using the language itself.
 
 - ### [Collection Operation Literals](collection-operation-literals.md)
 

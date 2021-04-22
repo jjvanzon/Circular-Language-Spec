@@ -1,4 +1,4 @@
-﻿Encircle Language | Broader View
+﻿Circular Language | Broader View
 ================================
 
 Loose Ideas
@@ -8,9 +8,9 @@ Loose Ideas
 
 *The texts below are loose ideas, yet to be turned into more polished documentation.*
 
-This documentation section covers all the coding aspects and principles of Encircle.
+This documentation section covers all the coding aspects and principles of Circular.
 
-Some of the principles might be implemented inside the code base. Most of the aspects can be implemented merely as an *aspect* construct, using Encircle itself.
+Some of the principles might be implemented inside the code base. Most of the aspects can be implemented merely as an *aspect* construct, using Circular itself.
 
 The following principles need to be part of the code base:
 
@@ -30,13 +30,13 @@ It is important to understand, that there are *coding principles*, and there are
 Coding *principles* need to be part of the code base.  
 Coding *aspects* do not.
 
-An __Aspect__ is a construct, that can be programmed in Encircle and a *principle* is something the code base can not do without. A lot of principles can be implemented as an aspect, but only *after* you have added it to the code base.
+An __Aspect__ is a construct, that can be programmed in Circular and a *principle* is something the code base can not do without. A lot of principles can be implemented as an aspect, but only *after* you have added it to the code base.
 
-Examples of coding aspects are: classes, attributes, parameters and inheritance. So none of those need to be present in the code base. They can all be programmed using Encircle itself.
+Examples of coding aspects are: classes, attributes, parameters and inheritance. So none of those need to be present in the code base. They can all be programmed using Circular itself.
 
 Many of the coding aspects are just as elementary to computer programming as coding principles. Functionally, coding principles and aspects blend together. That is why coding principles and coding aspects do not have separate documentation sections.
 
-On top of that: when developing the code base, you might determine how much can be banned out of the code base, and only programmed within Encircle itself. As the aspects are described here functionally, it is not as important to determine which ones might be part of the code base and which ones can be left out.
+On top of that: when developing the code base, you might determine how much can be banned out of the code base, and only programmed within Circular itself. As the aspects are described here functionally, it is not as important to determine which ones might be part of the code base and which ones can be left out.
 
 ### Loose Ideas
 
@@ -126,7 +126,7 @@ JJ
 
 ### Other Ideas
 
-Encircle,
+Circular,
 
 Windows Workflow raakvlakken met diagrammen.
 
@@ -134,7 +134,7 @@ JJ
 
 -----
 
-Encircle,
+Circular,
 
 I saw something call specifying the structure of a program, rather than what happens step-by-step is called declarative programming, as opposed to imperative programming.
 
@@ -142,7 +142,7 @@ JJ
 
 -----
 
-Encircle,
+Circular,
 
 I don't have ... for user program flow, for instance when using
 multiple windows seemingly arbitrarily, but not...  
@@ -154,7 +154,7 @@ JJ
 
 -----
 
-Encircle,
+Circular,
 
 Ik wil gewoon dat workflow en methods die elkaar aanroepen gewoon hetzelfde aspect zijn. Method stappen kunnen parallel lopen en seriele punten hebben en vertragingen en gezette tijden hebben.
 
@@ -162,7 +162,7 @@ JJ
 
 -----
 
-Encircle,
+Circular,
 
 Dead links.
 
@@ -178,7 +178,7 @@ JJ
 
 -----
 
-Encircle,
+Circular,
 
 Important statement to use: objects first, procedures second.
 
@@ -186,7 +186,7 @@ JJ
 
 -----
 
-Encircle,
+Circular,
 
 People aren't realizing that a computer program IS a domain-specific language.
 
@@ -194,16 +194,16 @@ JJ
 
 -----
 
-Encircle,
+Circular,
 
-Met diagrams in Encircle wordt de systematiek echt zichtbaar.
+Met diagrams in Circular wordt de systematiek echt zichtbaar.
 Op het moment programmeren we eigenlijk allemaal blind en op de tast.
 
 JJ
 
 -----
 
-Encircle,
+Circular,
 
 The idea of object oriented is: objects first, procedures second.
 
@@ -211,7 +211,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2008-06-03
 
 The diagram expression also makes it possible to use hand signs in the air to draw out relations between objects, in a technical story `you` try to explain.
@@ -220,7 +220,7 @@ JJ
 
 -----
 
-Encircle,
+Circular,
 
 De kracht van programmeertalen nu, zit hem niet in de taal zelf, maar in het framework.
 
@@ -230,7 +230,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2008-08-15
 
 Other programming languages and diagram expressions:
@@ -240,7 +240,7 @@ JJ
 
 -----
 
-Encircle,
+Circular,
 
 Other programming languages and diagram expressions:  
 Leuke zoekterm om op te googlen:  
@@ -250,7 +250,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2008-08-15
 
 Other programming languages and diagram expressions:  
@@ -277,7 +277,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2008-09-02
 
 Some people seem to like isolated memory space.  
@@ -294,7 +294,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2008-09-02
 
 Google using a separate process for each tab in its Google Chrome browser, is just a practical solution, relatively easy to implement.
@@ -304,7 +304,7 @@ JJ
 
 -----
 
-Encircle,
+Circular,
 
 Ik ben me er wel van bewust, dat een nieuwe programmeertaal, of nieuwe manier van besturen van je computer, een bijdrage is, niet een vervanging van alle andere software. Daar zijn software giganten
 veel te innovatief voor.
@@ -313,7 +313,7 @@ JJ
 
 -----
 
-Encircle,  
+Circular,  
 2008-08-23
 
 The way it is right now, the system can not change the system as much as a user can change the system.

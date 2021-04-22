@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Misc Diagram Topics
+﻿Circular Language Spec | Misc Diagram Topics
 ============================================
 
 Diagram Metrics
@@ -24,7 +24,7 @@ __Contents__
 
 ### Diagram Metrics
 
-The diagrams of Encircle are to be drawn out automatically. If they weren’t, this may decrease the usability of the language. These 'diagram metrics', as they are called here, might be functionally described first not being burdened by any mathematical implications, and after that the math to do so might be designed.
+The diagrams of Circular are to be drawn out automatically. If they weren’t, this may decrease the usability of the language. These 'diagram metrics', as they are called here, might be functionally described first not being burdened by any mathematical implications, and after that the math to do so might be designed.
 
 There are several elements to the diagram metrics. Some of them are considered more essential than others.
 

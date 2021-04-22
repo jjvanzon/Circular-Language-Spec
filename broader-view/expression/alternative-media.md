@@ -1,4 +1,4 @@
-﻿Encircle Language Broader View | Expression
+﻿Circular Language Broader View | Expression
 ===========================================
 
 Alternative Media Ideas

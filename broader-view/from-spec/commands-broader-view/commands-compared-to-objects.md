@@ -1,4 +1,4 @@
-Encircle Language Broader View | From Spec
+Circular Language Broader View | From Spec
 ==========================================
 
 Commands Compared to Objects
@@ -61,13 +61,13 @@ Executions might also be placed in a list. `You` might run `each` item in `the` 
 
 ### Exchangeability Between Commands & Objects
 
-In some programming languages, commands might not be exchangeable with objects, but be totally separate constructs. But in Encircle, commands could be seen as objects, that just happen to be executable.
+In some programming languages, commands might not be exchangeable with objects, but be totally separate constructs. But in Circular, commands could be seen as objects, that just happen to be executable.
 
 Using some programming languages a process might be implemented as a procedure. Sometimes a procedure might become more complex. It might be an option to then rewrite a procedure to an object, whose purpose could be to execute that procedure. This object may then hide complexity of the input and output better, and might better hides the complexity of the procedure itself. An object in some programming languages might offer a way to split up a procedure into separate steps, without seeing that on the outside. Turning a procedure into an object may make linking to it more flexible. For instance you might plug a new process into an already existing system, that was not aware of this procedure. That might not be easily possible, unless you turn a procedure into an object.
 
-In Encircle though, procedures might be considered an object as is, without rewriting anything. The only difference might be that this object has the special property, that it might be *executable*.
+In Circular though, procedures might be considered an object as is, without rewriting anything. The only difference might be that this object has the special property, that it might be *executable*.
 
-In the Encircle notation, a command could have complexity hiding and linking possibilities, just like a 'normal' object. A command might for instance also *inherit* a base procedure from another command, just to name something.
+In the Circular notation, a command could have complexity hiding and linking possibilities, just like a 'normal' object. A command might for instance also *inherit* a base procedure from another command, just to name something.
 
 A command could be structured similarly as an object. Perhaps that takes away the argument that using just procedures might be a less structured way of programming than using objects. A command might already be an object, that represents a process. It may looks like a command, but might have the capabilities of an object.
 

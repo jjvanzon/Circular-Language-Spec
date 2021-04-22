@@ -1,4 +1,4 @@
-﻿Encircle Language Broader View | Exchangeability
+﻿Circular Language Broader View | Exchangeability
 ================================================
 
 Design Time = Run Time

@@ -1,4 +1,4 @@
-﻿Encircle Language | Broader View
+﻿Circular Language | Broader View
 ================================
 
 Expression
@@ -10,7 +10,7 @@ This part of the documentation may cover remaining topics about diagram expressi
 
 The idea behind expression in general is that a program’s systematics might not be described by text code, but text code as well as the diagram notation may be mere *expressions* of systematics, stored in some other way, for instance a binary way as interlinked objects. The stored systematics might be translated to a diagram. The diagram might be edited, resulting in changes to the stored (binary) objects again.
 
-This folder tries to cover the different kinds of ways you can express systematics. Perhaps in a broader sense than just Encircle language alone.
+This folder tries to cover the different kinds of ways you can express systematics. Perhaps in a broader sense than just Circular language alone.
 
 Some of the documentation in this folder are mere throw-togethers of ideas or pieces of text, that came out of previous descriptions of new computer programming languages.
 

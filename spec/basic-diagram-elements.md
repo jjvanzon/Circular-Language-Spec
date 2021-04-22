@@ -1,4 +1,4 @@
-﻿Encircle Language Spec
+﻿Circular Language Spec
 ======================
 
 Basic Diagram Elements
@@ -273,7 +273,7 @@ A triangular mark:
 
 ![](images/Basic%20Diagram%20Elements.014.png)
 
-may be used to indicate that a symbol that might own the line might be __Protected__. Protected is something that can play a role in the concept of inheritance. In the Encircle language it might mean that a symbol might only be accessible if it is placed inside a triangle.
+may be used to indicate that a symbol that might own the line might be __Protected__. Protected is something that can play a role in the concept of inheritance. In the Circular language it might mean that a symbol might only be accessible if it is placed inside a triangle.
 
 Here is how that might look if it is connected to a symbol:
 

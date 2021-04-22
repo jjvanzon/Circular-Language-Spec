@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Inheritance
+﻿Circular Language Spec | Inheritance
 ====================================
 
 Main Concepts
@@ -24,13 +24,13 @@ __Contents__
 
 ### Introduction
 
-This documentation folder covers the concept of inheritance. This concept has been present inside object oriented programming languages for decades. But Encircle takes it a little bit further. In other languages one class can inherit from another class, taking over all its characteristics before the derived class gets extended or altered. Inheritance goes further than that in Encircle. Next to class inheritance (the traditional form of inheritance), there is also object inheritance. This means, that one object takes over the characteristics of a specific other object. In fact, the other object melts together with the new object. When you change base members of the new object, the base object’s data also changes. This is callled object inheritance. There are even more forms of inheritance. A collection can be inherited from, so that a whole existing table of items can be extended with new columns. This is called list inheritance. A whole system can also inherit from another system, taking over all of its characteristics, and the derived system can be altered, augmented, specialized and extended. This is called system inheritance. If the original system gets changed, this may also change the derived systems. So basically: everything can be inherited from and this can render specialized versions of any class, object, collection or module.
+This documentation folder covers the concept of inheritance. This concept has been present inside object oriented programming languages for decades. But Circular takes it a little bit further. In other languages one class can inherit from another class, taking over all its characteristics before the derived class gets extended or altered. Inheritance goes further than that in Circular. Next to class inheritance (the traditional form of inheritance), there is also object inheritance. This means, that one object takes over the characteristics of a specific other object. In fact, the other object melts together with the new object. When you change base members of the new object, the base object’s data also changes. This is callled object inheritance. There are even more forms of inheritance. A collection can be inherited from, so that a whole existing table of items can be extended with new columns. This is called list inheritance. A whole system can also inherit from another system, taking over all of its characteristics, and the derived system can be altered, augmented, specialized and extended. This is called system inheritance. If the original system gets changed, this may also change the derived systems. So basically: everything can be inherited from and this can render specialized versions of any class, object, collection or module.
 
 Such specialization can be also be applied to commands. The inheritance documentation also covers other concepts in the area of specialization and extension. Inheritance is very closely related to the concept of interfaces.
 
 ### Main Concepts
 
-Encircle supports several forms of inheritance. All these basic forms of inheritance might be laid out in the following articles:
+Circular supports several forms of inheritance. All these basic forms of inheritance might be laid out in the following articles:
 
 - *Class Inheritance*
 - *Object Inheritance*

@@ -1,10 +1,10 @@
-﻿Encircle Language Spec
+﻿Circular Language Spec
 ======================
 
 Introduction
 ------------
 
-This article aims to introduce the basics of Encircle language. Encircle language is an idea for a computer programming language, mostly a diagram notation for visualizing computer code. 
+This article aims to introduce the basics of Circular language. Circular language is an idea for a computer programming language, mostly a diagram notation for visualizing computer code. 
 
 __Contents__
 
@@ -24,7 +24,7 @@ Something that can play a role in making software, is splitting up a larger idea
 
 Here you can see the idea of *the computer*, split up into four sub ideas: the monitor, keyboard, mouse and printer.
 
-In Encircle language, the main symbol for an idea might be a *circle*:
+In Circular language, the main symbol for an idea might be a *circle*:
 
 ![](images/Circle%20Language%20Spec%20Introduction.002.png)
 
@@ -157,4 +157,4 @@ Objects, be it triangles, are an way to give different types, shared characteris
 
 ### Conclusion
 
-Hopefully this introduced you to the basics of the Encircle language.
+Hopefully this introduced you to the basics of the Circular language.

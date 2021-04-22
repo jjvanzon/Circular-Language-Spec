@@ -1,4 +1,4 @@
-﻿Encircle Language Construct Drafts | Parameters in Text Code
+﻿Circular Language Construct Drafts | Parameters in Text Code
 ============================================================
 
 Required & Optional in Text Code

@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Parameters
+﻿Circular Language Spec | Parameters
 ===================================
 
 Relations Between Commands & Objects
@@ -41,7 +41,7 @@ A command can contain multiple objects.
 Then the command becomes part of all of those objects.  
 These two perspectives on it are completely interchangeable.
 
-In other programming languages, an executed command is considered part of *one* object, while in Encircle the same execution of a command may as well be part of multiple objects. A command might be part of any object, that is an argument of the command. 
+In other programming languages, an executed command is considered part of *one* object, while in Circular the same execution of a command may as well be part of multiple objects. A command might be part of any object, that is an argument of the command. 
 
 #### Object Relations
 
@@ -104,7 +104,7 @@ These two perspectives on it are completely interchangeable.
 
 ![](images/1.%20Relations%20Between%20Commands%20&%20Objects.012.png)
 
-In Encircle both points of view, commands being part of objects, and commands being independent entities with parameters, are equally visible in the language. 
+In Circular both points of view, commands being part of objects, and commands being independent entities with parameters, are equally visible in the language. 
 
 #### Object Relations
 

@@ -1,4 +1,4 @@
-﻿Encircle Language Construct Drafts | Expression
+﻿Circular Language Construct Drafts | Expression
 ===============================================
 
 Alternative Diagram Expression

@@ -1,4 +1,4 @@
-﻿Encircle Language Construct Drafts | Input Output
+﻿Circular Language Construct Drafts | Input Output
 =================================================
 
 Thruput Parameters | Affected, Used and Transformed

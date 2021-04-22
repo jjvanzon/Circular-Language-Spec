@@ -1,4 +1,4 @@
-﻿Encircle Language Broader View | Integration
+﻿Circular Language Broader View | Integration
 ============================================
 
 UML

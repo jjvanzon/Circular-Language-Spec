@@ -1,4 +1,4 @@
-﻿Encircle Language | Broader View
+﻿Circular Language | Broader View
 ================================
 
 Artificial Intelligence, Natural Language, Neural Networks, Object Algebra
@@ -94,7 +94,7 @@ Je hebt echter de kans dat je weer Flat & Structured Interchange dingen tegen ko
 
 Je moet het doel aanscherpen: je moet zeggen onder welk mom niet uitgewerkte ideeën uitgewerkt moeten worden. Andere ideeën zouden nog niet uitgewerkt mogen worden.
 
-Inwisselbaarheid van object georiënteerd en referentieel en neuraal en semantiek, kan Encircle maken tot een intermediaire taal voor nog meer systemen, dan alleen computer systemen.
+Inwisselbaarheid van object georiënteerd en referentieel en neuraal en semantiek, kan Circular maken tot een intermediaire taal voor nog meer systemen, dan alleen computer systemen.
 
 JJ
 
@@ -124,7 +124,7 @@ JJ
 
 -----
 
-Encircle,
+Circular,
 
 Bij diagram notatie bestaat alles uit verbindingen, in plaats van code regels. Misschien kan je makkelijker rekenen met die verbindingen en 1 wiskundige benadering maken, van de objecten.
 
@@ -132,7 +132,7 @@ JJ
 
 -----
 
-Encircle algebraic approach,  
+Circular algebraic approach,  
 2008-07
 
 If you can’t automatically make assumptions about the execution order of sub-commands, can you define a precedence of parameter passing, based on likeliness, like in algebra? Can you then affect the execution order with something like parenthesis, like in algebra? I WAS going for something about connections between objects and commands, that can be algebraically approached, and solved like an equation, so maybe there is a key there. Perhaps such algebraic approach might help in concurrency resolution as well.

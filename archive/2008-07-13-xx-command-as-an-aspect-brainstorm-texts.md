@@ -1,4 +1,4 @@
-﻿Encircle Language | Archive
+﻿Circular Language | Archive
 ===========================
 
 Command as an Aspect Brainstorm Texts
@@ -12,7 +12,7 @@ Keep in mind, that in earlier articles it was explained, that a command is a sep
 
 A command is an *executable object*.
 
-If an object represents a process, then in Encircle the object is just a command, and no longer an object representing a process. Actually, a *command* might always be an object that represents a process. In Encircle, a command looks just as structured as an object.
+If an object represents a process, then in Circular the object is just a command, and no longer an object representing a process. Actually, a *command* might always be an object that represents a process. In Circular, a command looks just as structured as an object.
 
 You can use all the capabilities of objects inside a command.  
 But a command has the special property, that it is *executable*.
@@ -49,7 +49,7 @@ A command has added behavior, compared to a normal object:
 
 For the rest objects and commands are identical.
 
-The added behavior of commands is implemented as the __Command__ aspect. When an object supports the __Command__ aspect, it automatically becomes a command. The code base only needs to support an object’s ability to execute in some basic form. But most of the functionality for commands is programmed in Encircle itself. The code base only supplies the basic need to facilitate it.
+The added behavior of commands is implemented as the __Command__ aspect. When an object supports the __Command__ aspect, it automatically becomes a command. The code base only needs to support an object’s ability to execute in some basic form. But most of the functionality for commands is programmed in Circular itself. The code base only supplies the basic need to facilitate it.
 
 For a command to execute, the sub-commands need to execute in the right order. The sub-commands again execute sub-commands. This going by the commands recursively probably needs to be present in the code base. The outer commands are machine instructions, which might also be called by the code base.
 
@@ -113,7 +113,7 @@ The term downput is good, because it is only passed *down* into sub-commands. An
 
 ### Read-Write Direction As A Connection
 
-Formerly, the direction of input and output was indicated with an access mark on a reference line. But this created ambiguity with the indication of *reference targets*. Read-write direction is something so basic in Encircle, that it deserves a separate line type. From now on, value direction might be indicated by a *wavy line*.
+Formerly, the direction of input and output was indicated with an access mark on a reference line. But this created ambiguity with the indication of *reference targets*. Read-write direction is something so basic in Circular, that it deserves a separate line type. From now on, value direction might be indicated by a *wavy line*.
 
 This is actually a good symbol for it, because it looks like a less direct connection than the other line types and *it is* a less direct connection. In fact, the two symbols *aren’t* connected at all. The wavy line looks like a less direction connection, because the complete length of the line, curves and everything, is much longer than a straight line. A wavy line also indicates *heat*, or activity, more than the other line types. Value direction is an *action*.
 
@@ -316,7 +316,7 @@ So a reference parameter is a pointer to an object *reference*, not a pointer to
 So the parameter points to another pointer. The target pointer determines the eventual object pointed at.  
 The notation of a parameter as a pointer to a pointer, though, may become an implicit expression of just an object assignment.
 
-In earlier programming languages one use of by reference was used to be able to pass large objects to a procedure. Another use was to be able to let the procedure have multiple return values, because in other programming languages a procedure can really only have one return value. In Encircle, multiple return values is accomplished by having multiple __Object Out__ parameters. So you do not need __Reference Out__ parameters for that anymore.
+In earlier programming languages one use of by reference was used to be able to pass large objects to a procedure. Another use was to be able to let the procedure have multiple return values, because in other programming languages a procedure can really only have one return value. In Circular, multiple return values is accomplished by having multiple __Object Out__ parameters. So you do not need __Reference Out__ parameters for that anymore.
 
 ##### Value In
 
@@ -568,7 +568,7 @@ All in all, non-value transmissions apply to __By Reference__ parameters only.
 
 In other programming languages, sub-commands do not directly read or write to each other’s parameters. Parameters are only read or written by the parent command.
 
-However, in Encircle, parameters of sub-commands can be tied together directly.
+However, in Circular, parameters of sub-commands can be tied together directly.
 
 One parameter type can only be tied to a parameter with specific other parameter type.
 

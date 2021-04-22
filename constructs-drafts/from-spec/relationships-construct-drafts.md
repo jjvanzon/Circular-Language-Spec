@@ -1,4 +1,4 @@
-﻿Encircle Language Construct Drafts | From Spec
+﻿Circular Language Construct Drafts | From Spec
 ==============================================
 
 Relationships Construct Drafts

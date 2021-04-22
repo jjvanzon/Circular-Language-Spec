@@ -1,4 +1,4 @@
-﻿Encircle Language Construct Drafts | Input Output
+﻿Circular Language Construct Drafts | Input Output
 =================================================
 
 Automatically Determining What’s In Out or Thru

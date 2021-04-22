@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Inheritance
+﻿Circular Language Spec | Inheritance
 ====================================
 
 Extending the System Interfaces
@@ -115,11 +115,11 @@ A related item might have the following extension possibilities:
 - __Created  .  Set  .  Post-Extend__
 - __Created  .  Set  .  Override__
 
-These are Encircle’s equivalent of __Getters__, __Setters__ and __Property__ procedures.
+These are Circular’s equivalent of __Getters__, __Setters__ and __Property__ procedures.
 
 This adds a lot more possibilities to surround a sub-object’s behavior, than just the one __Getter__ and __Setter__, that other computer programming languages offer. You might not define all of the extension procedures. When you don’t define a __Getter__ or __Setter__, the related item might just have default __Getter__ and __Setter__ behavior.
 
-=>n related *list items* have the same system commands as =>1 related items, but the extension of a related list item’s system commands is the same for every item of the list, so the extension procedures for related list items are defined by the related list. The related list items have a reference to the list they belong to, and also store the position in the list, as well as a __Remove__ command, that removes the item from the list. In Encircle’s code base, a related list item automatically calls the extension procedures defined in the list, passing the position of the item in the list to the extension procedure as a parameter. Here is a list of all the extension procedures a list can define for a related list’s items:
+=>n related *list items* have the same system commands as =>1 related items, but the extension of a related list item’s system commands is the same for every item of the list, so the extension procedures for related list items are defined by the related list. The related list items have a reference to the list they belong to, and also store the position in the list, as well as a __Remove__ command, that removes the item from the list. In Circular’s code base, a related list item automatically calls the extension procedures defined in the list, passing the position of the item in the list to the extension procedure as a parameter. Here is a list of all the extension procedures a list can define for a related list’s items:
 
 - __Item Object  .  Get  .  Pre-Extend__
 - __Item Object  .  Get  .  Post-Extend__
@@ -197,13 +197,13 @@ Extension of the system interface’s members allows you to control the inner wo
 
 ### Extend System Interface with More Members
 
-Other features of Encircle can add more items to the system interface, to define the behavior of a related item. The system interface is *extensible*. For instance the concept of *the class* might add more items to the configuration of a related item. So apart from extending a system interface’s existing commands, new commands and objects can be added to the system interface.
+Other features of Circular can add more items to the system interface, to define the behavior of a related item. The system interface is *extensible*. For instance the concept of *the class* might add more items to the configuration of a related item. So apart from extending a system interface’s existing commands, new commands and objects can be added to the system interface.
 
 The system interface members added by other features might automatically get all the extension possibilities as well.
 
 ### Extension Regardless of Value Change
 
-The various __Get__ commands only really execute their procedure when a value is actually *changed*. That is the default behavior of Encircle. It prevents a lot of unnecessary system activity. By default, pre- and post-extension procedures are only executed for getters, when a *different* value is actually assigned. However, a feature, that may be added to Encircle could be:
+The various __Get__ commands only really execute their procedure when a value is actually *changed*. That is the default behavior of Circular. It prevents a lot of unnecessary system activity. By default, pre- and post-extension procedures are only executed for getters, when a *different* value is actually assigned. However, a feature, that may be added to Circular could be:
 
 - Pre-extension regardless of value change
 - Post-extension regardless of value change
@@ -223,7 +223,7 @@ The parent object is the only one that can implement the system command extensio
 ### Extension Procedures Part of Parent
 
 Although the system objects define the extension events, the *parent object* defines the implementation of the extension procedures. The extension procedures are defined by the parent object. This counts for related item, related lists and related list items. Extension procedures need to be normal commands, not system commands.  
-It is just more practical to make the extension procedures part of the parent object. Only a normal Encircle object can define commands, that have all the possibilities of Encircle. You cannot really change objects like related items or related lists, because they are system objects. Those system objects can only be extended, not changed.
+It is just more practical to make the extension procedures part of the parent object. Only a normal Circular object can define commands, that have all the possibilities of Circular. You cannot really change objects like related items or related lists, because they are system objects. Those system objects can only be extended, not changed.
 
 Theoretically it might not matter whether extension procedures are defined by for instance inside a related item or inside the parent object of a related item. A related item is part of the parent object anyway.
 
@@ -392,7 +392,7 @@ To also display the members and extension possibilities of another part of the s
 
 -----
 
-A system interface is Encircle’s equivalent of __Getters__, __Setters__ and __Property__ procedures. But Encircle offers a lot more to control the behavior of assigning or retrieving a related object compared to other programming languages.
+A system interface is Circular’s equivalent of __Getters__, __Setters__ and __Property__ procedures. But Circular offers a lot more to control the behavior of assigning or retrieving a related object compared to other programming languages.
 
 -----
 

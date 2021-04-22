@@ -1,4 +1,4 @@
-Encircle Language Construct Drafts | Implementations
+Circular Language Construct Drafts | Implementations
 ====================================================
 
 Classes Implementation

@@ -1,7 +1,7 @@
-Encircle Language Spec
+Circular Language Spec
 ======================
 
-Encircle aims to become a visual programming language made from shapes and lines. It may once become a diagram notation for visualizing computer code.
+Circular aims to become a visual programming language made from shapes and lines. It may once become a diagram notation for visualizing computer code.
 
 This is an attempt at a specification of this language. 
 

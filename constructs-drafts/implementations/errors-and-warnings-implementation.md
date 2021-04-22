@@ -1,4 +1,4 @@
-Encircle Language Construct Drafts | Implementation
+Circular Language Construct Drafts | Implementation
 ===================================================
 
 Errors & Warnings Implementation

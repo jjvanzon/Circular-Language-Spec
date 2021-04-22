@@ -1,4 +1,4 @@
-Encircle Language | Construct Drafts
+Circular Language | Construct Drafts
 ====================================
 
 Black Boxes Construct Drafts Articles

@@ -1,4 +1,4 @@
-Encircle Language Construct Drafts | Implementations
+Circular Language Construct Drafts | Implementations
 ====================================================
 
 Relationships Implementation
@@ -28,7 +28,7 @@ __Contents__
 
 `When* you*` let one of `the*` object references link to another object, `then* the*` link from `the*` old counterpart to `the*` object `should` be broken and a link from `the*` new counterpart to `the*` object `should` be established. `The*` object synchronizes `the* old` counterpart *out*, and it synchronizes `the*` new counterpart *in*.
 
-In Encircle `you* are` still able to create `just` a unidirectional relationship. In a programming environment `you* should` be able to automatically turn a unidirectional relationship to a bidirectional relationship. In a programming environment `you* should` be able to turn two `already defined` unidirectional relationships into a single bidirectional relationship.
+In Circular `you* are` still able to create `just` a unidirectional relationship. In a programming environment `you* should` be able to automatically turn a unidirectional relationship to a bidirectional relationship. In a programming environment `you* should` be able to turn two `already defined` unidirectional relationships into a single bidirectional relationship.
 
 `So` whenever a __Jar__ changes its __Lid__, `the*` original __Lid__’s reference to `the*` __Jar__ `is` annulled, and `the*` new __Lid__ get a reference to its new __Jar__. `This actually` explains synchronization between __1 => 1__ related objects. Synchronization happens `when*` assigning a related item. `When*` assigning a related item, `the*` related item gets a reference back to `the*` first item.
 
@@ -133,7 +133,7 @@ What `can*` be confusing `is` that, `when*` a __1 => n__ relationship `is` synch
 
 It `is` often easier to `define` something in __1 => n__ relationships, `without` thinking about it, that `the*` backward relationship might be __=> n__ `too. But* when*` a relationship `is` synchronized, `the*` system falls apart `when*` a __1 => n__ `is actually` intended as __n => n__ and `you’re*` trying to *use* it that way.
 
-`This can*` be misconceived as an error in Encircle, or an inability of it, while it’s `really just` a wrongly `defined` relationship.
+`This can*` be misconceived as an error in Circular, or an inability of it, while it’s `really just` a wrongly `defined` relationship.
 
 `So then*` it becomes `really important` to `define the* exact` relationship type of something, even `when*` it’s more difficult.
 
@@ -143,7 +143,7 @@ A system in which `all` relationships `are` bidirectional and given `the*` corre
 
 ##### Confusion 2
 
-Synchronization `could*` cause confusion in `older` versions of Encircle, where `you* have` two bidirectional relationships to `the*` same class, that `are` given `the*` same __Item Object Name__. In that case, one relationship’s counterpart synchronizing back to `the*` related object `could*` affect `the*` other relationship. By default it `is not*` allowed to `have` one class __A__ being __1 =>__ related to multiple classes, in which __A__ has `the*` same __Item Object Name__. That `is only` allowed `if* the*` other relationships `are` made unidirectional, and `not*` bidirectional, or `if*` *melding* `is` enabled. *Melding* `is` a topic, which makes it possible for multiple relationship classes or for instance *progressed objects* (article *Progression)*, `to be` referenced as a single related item, `but*` it `has to be` stated explicitly that `this is the*` intention. See `the*` article *Melding*.
+Synchronization `could*` cause confusion in `older` versions of Circular, where `you* have` two bidirectional relationships to `the*` same class, that `are` given `the*` same __Item Object Name__. In that case, one relationship’s counterpart synchronizing back to `the*` related object `could*` affect `the*` other relationship. By default it `is not*` allowed to `have` one class __A__ being __1 =>__ related to multiple classes, in which __A__ has `the*` same __Item Object Name__. That `is only` allowed `if* the*` other relationships `are` made unidirectional, and `not*` bidirectional, or `if*` *melding* `is` enabled. *Melding* `is` a topic, which makes it possible for multiple relationship classes or for instance *progressed objects* (article *Progression)*, `to be` referenced as a single related item, `but*` it `has to be` stated explicitly that `this is the*` intention. See `the*` article *Melding*.
 
 ### Implementation around 2004
 

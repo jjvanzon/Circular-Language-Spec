@@ -1,4 +1,4 @@
-﻿Encircle Language Construct Drafts | From Spec
+﻿Circular Language Construct Drafts | From Spec
 ==============================================
 
 Black Boxes Construct Drafts Ideas
@@ -168,7 +168,7 @@ There are methods to overcome this though. It is not concrete yet, but the inner
 #### Get For Access and Get For Copy
 
 Access can be controlled for regular procedures this way. You can also control access to system procedures. When you make an object Private, you’re in fact making its Object Get procedure private (which can even get different separate access controllers for Access and Copy, ~~Run Time~~ Copy ~~and Design Time Copy~~).
-- \> 2009-06-29: The difference between design-time and run-time is gone in Encircle. There is only differentiation between program authors and users through user access control.
+- \> 2009-06-29: The difference between design-time and run-time is gone in Circular. There is only differentiation between program authors and users through user access control.
 
 There might be a separation between access controlling Get for Access and Get for Copy... but not much more. I used to have a difference between Run Time Copy and Design Time Copy, but that is bull now, because there is not difference between run time and design time. There may be a difference between different types of users: authors and users... but that is user access control, which is not covered here.
 
@@ -184,7 +184,7 @@ Let’s stick to the plan where either everything is accessible or a selection o
 
 #### Compared to Traditional Black Boxing
 
-I already did compare it too much to other systems, but for a proper explanation it is important to draw that comparison to regular OO. So in that case it is allowed to draw a comparison (it is a rule not to go on and on comparing Encircle to other systems...)
+I already did compare it too much to other systems, but for a proper explanation it is important to draw that comparison to regular OO. So in that case it is allowed to draw a comparison (it is a rule not to go on and on comparing Circular to other systems...)
 
 - \> Deals with the two differences to traditional:
     - Not only commands are friend with their object
@@ -268,7 +268,7 @@ A command’s access to a parameter’s private contents or only its publics.
 
 < Perhaps save this for the ‘traditional black boxing’ section: >  
 A typical situation of friendship in object oriented programming is where an object has private and public data, and there are friend commands. The commands can access the private data of the object, thus becoming the protectors of the object’s private data.  
-This is a typical situation in traditional object oriented programming: class methods. In Encircle it is a little different: instead of having a class with methods in it, there is a class or object with friend methods, that are independent entities, which have access to the private contents of the befriended object.
+This is a typical situation in traditional object oriented programming: class methods. In Circular it is a little different: instead of having a class with methods in it, there is a class or object with friend methods, that are independent entities, which have access to the private contents of the befriended object.
 
 -----
 
@@ -286,7 +286,7 @@ Friend Access,
 
 (out of the original document Commands & Classes Loosely Coupled)
 
-In Encircle’s implementation of parameters, commands only become part of a class if the class is used for one of the parameters of the command.  
+In Circular’s implementation of parameters, commands only become part of a class if the class is used for one of the parameters of the command.  
 This makes it possible for a command to become part of multiple classes.  
 This is a richer and more dynamic approach, than object oriented programming languages. You may now think you are loosing control over the system, if a class gets so easily extended with more commands. But you still have control, as might be explained in the Interfaces article group.  
 There is one thing however, that’s missing from the story. In C++ and other object oriented programming languages, there was one parameter of a global method, that was the this-parameter. The class of the this parameter determined which class the method might be part of. That parameter was the only parameter in the method, whose private contents could be directly accessed by the method. This is the one thing missing in the story of Parameters: when might a command have access to the private contents of a parameter? The answer lies in __Friend__-access. A command has access to the private contents of a class, when the class declares its command to be __Friend__. When a related object is declared __Friend__, then the related object can access the private contents of the one that declared it __Friend__.
@@ -305,7 +305,7 @@ JJ
 
 In traditional black boxing in object oriented programming an object had commands and each private member of that object was accessible inside that command.
 
-In Encircle there are the following differences:
+In Circular there are the following differences:
 
 - A command is not part of a specific object or class
 - A command and an object are basically the same thing
@@ -314,13 +314,13 @@ The main idea for the solution is __Friendship__.
 
 ...
 
-If the friend object is a command, then if the command has a reference to that object, from within the command, you can reference anything private inside the friend object. This is analogous to the this-argument of a command. The private contents of an object passed as the this argument can be accessed from within the command. However, in Encircle a command can have multiple this-arguments: befriended objects.
+If the friend object is a command, then if the command has a reference to that object, from within the command, you can reference anything private inside the friend object. This is analogous to the this-argument of a command. The private contents of an object passed as the this argument can be accessed from within the command. However, in Circular a command can have multiple this-arguments: befriended objects.
 
 So friend commands are like class methods.  
 < state that every command with a parameter with a class becomes that class’s method, but not as tight a bond as a friend method. >
 
 In traditional black boxing it only applies to friend commands (class methods) and their befriended objects (this-arguments).  
-But in Encircle you can also have:
+But in Circular you can also have:
 
 - Friend objects of befriended commands and 
 - Friend objects of befriended objects
@@ -330,9 +330,9 @@ In the first situation an object can reference access the private contents of a 
 
 In the second situation one object can access the private contents of another object. That is *exactly* the same as the C++ implementation of friend classes.
 
-Actually, class methods & C++ friend methods are the exact same concept in Encircle.
+Actually, class methods & C++ friend methods are the exact same concept in Circular.
 
-> \> 2009-07-06 Actually, they are not. Friend in Encircle applies to a specific relation counterpart, while friend in C++ applies to any relation between objects of class A and an object of class B.
+> \> 2009-07-06 Actually, they are not. Friend in Circular applies to a specific relation counterpart, while friend in C++ applies to any relation between objects of class A and an object of class B.
 
 In the third situation a command gets access to another command’s private contents, making the command’s local variables and definition accessible to the other command.
 

@@ -1,4 +1,4 @@
-﻿Encircle Language Construct Drafts | From Spec
+﻿Circular Language Construct Drafts | From Spec
 ==============================================
 
 System Interfaces | System Command Call Notations Construct Drafts

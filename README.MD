@@ -1,7 +1,7 @@
-Encircle Language Spec | Root
+Circular Language Spec | Root
 =============================
 
-Encircle aims to become a visual programming language made from shapes and lines. It may once become a diagram notation for visualizing computer code.
+Circular aims to become a visual programming language made from shapes and lines. It may once become a diagram notation for visualizing computer code.
 
 This is an attempt at a specification of this language. You may find the following folders here:
 
@@ -11,7 +11,7 @@ This is an attempt at a specification of this language. You may find the followi
 
 - [Broader View](broader-view)
 
-    - Various draft texts that might once describe a story: ideas about how this Encircle language might be used in practice.
+    - Various draft texts that might once describe a story: ideas about how this Circular language might be used in practice.
 
 - [Construct Drafts](constructs-drafts)
 
@@ -23,4 +23,4 @@ This is an attempt at a specification of this language. You may find the followi
 
 The material may still be a bit rough. Both in tone and in content. It might be improved step by step.
 
-Would anyone be interested: Another repository might describe the plans, notes and TODO's around this project. Here it is: [Encircle-Language-Spec-Plans](https://github.com/jjvanzon/Encircle-Language-Spec-Plans)
+Would anyone be interested: Another repository might describe the plans, notes and TODO's around this project. Here it is: [Circular-Language-Spec-Plans](https://github.com/jjvanzon/Circular-Language-Spec-Plans)

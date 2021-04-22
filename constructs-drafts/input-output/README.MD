@@ -1,4 +1,4 @@
-Encircle Language | Construct Drafts
+Circular Language | Construct Drafts
 ====================================
 
 Input Output
@@ -6,7 +6,7 @@ Input Output
 
 `[ Preliminary documentation ]`
 
-The concept of input and output may be well-known by computer experts, yet the concept might not seem very present in both object oriented program code or relational database. Something simply seems to ‘become’ input or output, arbitrarily chosen by the programmer, but it might not explicitly *defined* in program code, what is the input and what is the output: it could be a return value returned by a procedure, a value passed along to another procedure, but it could also be reads, writes deletes and inserts into a database. Those things might be spread out all over the procedures and you might not really see explicitly where something is input and where something is output. Yet, input and output seem a fundamental idea in computer programming. It seems we sometimes do talk in terms of it. In Encircle language, input and output may get a more prominent position. It may even offer opportunities for resolution of concurrency and parallelism as well as better security in case of more control over the input and output.
+The concept of input and output may be well-known by computer experts, yet the concept might not seem very present in both object oriented program code or relational database. Something simply seems to ‘become’ input or output, arbitrarily chosen by the programmer, but it might not explicitly *defined* in program code, what is the input and what is the output: it could be a return value returned by a procedure, a value passed along to another procedure, but it could also be reads, writes deletes and inserts into a database. Those things might be spread out all over the procedures and you might not really see explicitly where something is input and where something is output. Yet, input and output seem a fundamental idea in computer programming. It seems we sometimes do talk in terms of it. In Circular language, input and output may get a more prominent position. It may even offer opportunities for resolution of concurrency and parallelism as well as better security in case of more control over the input and output.
 
 This documentation might not seem finished up yet. It seems to contains quite some unfinished texts but also some ideas that are perhaps nice, but it might not all seem to be worked out yet. The concept of input and output might be taken further in the future.
 
@@ -50,4 +50,4 @@ This documentation might not seem finished up yet. It seems to contains quite so
  
     - Perhaps the most practical execution order of commands could be automatically determined without intervention of a programmer: *automatic execution order*. It may not be fully worked out yet, but the hope is, that this can be translated into a method for resolving concurrent access of data *(concurrency resolution)* and automatically determining whether things might run serially or if things can be processed in parallel, perhaps offering an automatic way to resolve *parallelism*.
 
-When working out this documentation, the exact definition of the concepts above might be worked out and hopefully it may carefully explain how, by giving the concept of input and output a more prominent position in Encircle and comparing different command IO definitions, this may offer opportunities for resolution of concurrency and parallelism as well as perhaps improved security.
+When working out this documentation, the exact definition of the concepts above might be worked out and hopefully it may carefully explain how, by giving the concept of input and output a more prominent position in Circular and comparing different command IO definitions, this may offer opportunities for resolution of concurrency and parallelism as well as perhaps improved security.

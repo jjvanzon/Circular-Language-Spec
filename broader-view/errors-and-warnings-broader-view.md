@@ -1,4 +1,4 @@
-Encircle Language | Broader View
+Circular Language | Broader View
 ================================
 
 Errors & Warnings Broader View

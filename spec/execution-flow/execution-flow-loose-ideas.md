@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Execution Flow
+﻿Circular Language Spec | Execution Flow
 =======================================
 
 Loose Ideas

@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Inheritance
+﻿Circular Language Spec | Inheritance
 ====================================
 
 Specialization
@@ -179,7 +179,7 @@ What should also be mentioned is that overriding is not specific to inheritance.
 
 ##### Calling Base Class’s Version of Overridden Member
 
-Some programming languages offer a way to call the member defined by the base class, even when the base member was overridden. In Encircle this is not possible by default, because any call to the overridden member might redirect to the overriding member.
+Some programming languages offer a way to call the member defined by the base class, even when the base member was overridden. In Circular this is not possible by default, because any call to the overridden member might redirect to the overriding member.
 
 ![](images/2.%20Specialization.022.png)
 

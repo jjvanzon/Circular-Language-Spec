@@ -1,4 +1,4 @@
-﻿Encircle Language Broader View | Interfaces
+﻿Circular Language Broader View | Interfaces
 ===========================================
 
 Imaginary Backward Relationships

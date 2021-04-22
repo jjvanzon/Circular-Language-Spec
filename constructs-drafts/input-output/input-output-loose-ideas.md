@@ -1,4 +1,4 @@
-﻿Encircle Language Construct Drafts
+﻿Circular Language Construct Drafts
 ==================================
 
 Input Output | Loose Ideas
@@ -101,7 +101,7 @@ JJ
 Input Output,  
 2008-10-15
 
-In Encircle you might see, which things have a reference to which other things. So when you have an element of the system, you immediately which parts of the system use the element. But when you are working on a development version of something, you might have definitions to which no input or output targets are assigned yet. In that case it is handy to have an example of what the input or output might look like. This is not the same as a default value. It is an example value. In a real business environment it might become a convention, that the example input parameters establish a call upon mere test data. And when a test command is run, the example output can indicate whether anything has changed to the output since then.
+In Circular you might see, which things have a reference to which other things. So when you have an element of the system, you immediately which parts of the system use the element. But when you are working on a development version of something, you might have definitions to which no input or output targets are assigned yet. In that case it is handy to have an example of what the input or output might look like. This is not the same as a default value. It is an example value. In a real business environment it might become a convention, that the example input parameters establish a call upon mere test data. And when a test command is run, the example output can indicate whether anything has changed to the output since then.
 
 JJ
 

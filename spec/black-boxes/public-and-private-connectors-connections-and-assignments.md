@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Black Boxes
+﻿Circular Language Spec | Black Boxes
 ====================================
 
 Public & Private Connectors, Connections & Assignments

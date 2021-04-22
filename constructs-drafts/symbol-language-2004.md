@@ -1,9 +1,9 @@
-﻿Encircle Language | Construct Drafts
+﻿Circular Language | Construct Drafts
 ====================================
 
 `[ Deprecated documentation ]`
 
-*Previous attempt at making an Encircle Language Spec from 2004.*
+*Previous attempt at making an Circular Language Spec from 2004.*
 
 Contents
 ========
@@ -563,7 +563,7 @@ Contents
 Symbol Language | Basic
 =======================
 
-*Encircle*
+*Circular*
 
 Introduction
 ------------

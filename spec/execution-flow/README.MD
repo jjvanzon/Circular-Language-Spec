@@ -1,4 +1,4 @@
-Encircle Language Spec
+Circular Language Spec
 ======================
 
 Execution Flow Articles

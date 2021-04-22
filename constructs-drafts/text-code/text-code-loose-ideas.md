@@ -1,4 +1,4 @@
-Encircle Language Construct Drafts | Text Code
+Circular Language Construct Drafts | Text Code
 ==============================================
 
 Loose Ideas
@@ -1297,7 +1297,7 @@ JJ
 
 -----
 
-Encircle,
+Circular,
 
 Text code is not leading anymore.
 

@@ -1,4 +1,4 @@
-﻿Encircle Language Spec
+﻿Circular Language Spec
 ======================
 
 Objects
@@ -83,7 +83,7 @@ A value of an object might not be directly displayed in a diagram. A binary valu
 
 #### Attributes might be Objects
 
-Attributes might not be something intrinsic to Encircle language, but more of a concept.
+Attributes might not be something intrinsic to Circular language, but more of a concept.
 
 In one interpretation an attribute might be thought of as an object with specific characteristics. If an attribute might be an object, it might be represented by a circle drawn with a solid line.
 

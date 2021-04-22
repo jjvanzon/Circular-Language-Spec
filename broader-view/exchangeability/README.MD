@@ -1,4 +1,4 @@
-﻿Encircle Language | Broader View
+﻿Circular Language | Broader View
 ================================
 
 Exchangeability
@@ -8,9 +8,9 @@ Exchangeability
 
 The *Exchangeability Principles* describes things in the area of computer technology, that are traditionally separate, that might be combined to form one thing.
 
-Perhaps a central goal of the Encircle programming language might be, to melt together computer technology disciplines, aiming to provide one clear language, that might express anything, and that everybody might understand. The *Extensibility Principles* may give shape to these hopes for the language.
+Perhaps a central goal of the Circular programming language might be, to melt together computer technology disciplines, aiming to provide one clear language, that might express anything, and that everybody might understand. The *Extensibility Principles* may give shape to these hopes for the language.
 
-This contents page might try to give a definition of each of the exchangeability principles of Encircle programming language. More principles might be added in the future.
+This contents page might try to give a definition of each of the exchangeability principles of Circular programming language. More principles might be added in the future.
 
 Some of these articles are not finished yet. The *Exchangeability Principles* folder may contain the following articles:
 
@@ -22,7 +22,7 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
 - ### Object Oriented = Relational
 
-    - This article has not been written yet, but it should contain a description about how relational database is reconciled with object oriented programming. The two could always be combinedly used, but it has always been a problem to make the two really one system. They were always just two separate systems, that are conjoined. Encircle might turn the two principles into a single paradigm. The object oriented approach and the relational database approach, which are traditionally separate things, are turned into one language. This is intrinsic to the new design of the language. It has not been fully established yet in the programmed versions of Encircle.
+    - This article has not been written yet, but it should contain a description about how relational database is reconciled with object oriented programming. The two could always be combinedly used, but it has always been a problem to make the two really one system. They were always just two separate systems, that are conjoined. Circular might turn the two principles into a single paradigm. The object oriented approach and the relational database approach, which are traditionally separate things, are turned into one language. This is intrinsic to the new design of the language. It has not been fully established yet in the programmed versions of Circular.
 
     - (There may not be a separate article for this yet.)
 
@@ -44,19 +44,19 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
 - ### [Clear Cut Coding Principles](clear-cut-coding-principles.md)
 
-    - The idea behind clear cut coding principles, is that Encircle is so accessible, that even children could pick it up, because the principles are so easy to understand, and there are not that many pitfalls. The basic parts of the coding principles could be picked up by anyone, but more advanced subjects need to be left out, because they can not be understood that easily. It is the intention for a running version of Encircle to have sort of like a scale, a slider, that can be adjusted, limiting the amount of concepts expressed in the diagram or textual language, so that complex systems can be expressed using easier concepts, so that the general workings of a system are accessible to anyone.
+    - The idea behind clear cut coding principles, is that Circular is so accessible, that even children could pick it up, because the principles are so easy to understand, and there are not that many pitfalls. The basic parts of the coding principles could be picked up by anyone, but more advanced subjects need to be left out, because they can not be understood that easily. It is the intention for a running version of Circular to have sort of like a scale, a slider, that can be adjusted, limiting the amount of concepts expressed in the diagram or textual language, so that complex systems can be expressed using easier concepts, so that the general workings of a system are accessible to anyone.
 
 - ### [Attributes Are Objects](attributes-are-objects.md)
 
-    - In traditional object oriented programming languages and relational databases simple data types, which also may be called *attributes*, might not be considered objects. They have such different behavior, that they might be approached differently from objects. In Encircle, however, simple objects such as numbers and dates might always be objects. There are a couple of special characteristics to *simple* objects, that may be explained in the *Objects* documentation. Unifying attributes with objects may make Encircle’s grammar less complex.
+    - In traditional object oriented programming languages and relational databases simple data types, which also may be called *attributes*, might not be considered objects. They have such different behavior, that they might be approached differently from objects. In Circular, however, simple objects such as numbers and dates might always be objects. There are a couple of special characteristics to *simple* objects, that may be explained in the *Objects* documentation. Unifying attributes with objects may make Circular’s grammar less complex.
 
 - ### [Command = Executable Object](command-is-executable-object.md)
 
-    - Even more programming constructs might be turned into just objects. Methods, functions, procedures, routines, commands, executables, all called *commands* in Encircle, are actually objects too. Every command might be a special object, that just happens to be executable. A whole chapter has been devoted to it: the *Commands* chapter. The differences between commands and normal objects are explained in it, but the essence of it is: commands might just be *objects*, *executable objects*. Turning commands and objects into the same construct may make Encircle’s grammar less complex.
+    - Even more programming constructs might be turned into just objects. Methods, functions, procedures, routines, commands, executables, all called *commands* in Circular, are actually objects too. Every command might be a special object, that just happens to be executable. A whole chapter has been devoted to it: the *Commands* chapter. The differences between commands and normal objects are explained in it, but the essence of it is: commands might just be *objects*, *executable objects*. Turning commands and objects into the same construct may make Circular’s grammar less complex.
 
 - ### [Hand Signs](hand-signs.md)
 
-    - The diagram notation is so clear and expressive in its forms and shapes, that you can even draw out the shapes *in the air* to clarify systematics. Encircle also is a hand sign language for technology.
+    - The diagram notation is so clear and expressive in its forms and shapes, that you can even draw out the shapes *in the air* to clarify systematics. Circular also is a hand sign language for technology.
 
     - (This article is not finished yet.)
 
@@ -68,7 +68,7 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
 - ### Hardware & Software
 
-    - Encircle might reveal the connection between object logic and the physical hardware. It might reveal the internal workings of a computer. It might connect logic to electronics.
+    - Circular might reveal the connection between object logic and the physical hardware. It might reveal the internal workings of a computer. It might connect logic to electronics.
 
     - (There may not be a separate article for this yet.)
     
@@ -78,7 +78,7 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
 - ### System Engineering = Software Engineering
 
-    - That way, Encircle allows hardware and software developers and system engineers to work using the same language.
+    - That way, Circular allows hardware and software developers and system engineers to work using the same language.
 
     - (There may not be a separate article for this yet.)
 
@@ -86,13 +86,13 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
     - This document describes how the internet is turned into a single computer. There simply is no difference between a program running on your own machine and programs running on another machine on the internet. The internet is just used as one giant computer, that everybody uses and contributes to.
 
-    - This document has been moved to the *Infrastructure* documentation, because it might not be part of the first versions to come of Encircle.
+    - This document has been moved to the *Infrastructure* documentation, because it might not be part of the first versions to come of Circular.
 
     - The documentation is quite lengthy and might later be split up into multiple pieces. No software has been developed for it yet.
 
 - ### [Hyperlinks = Referential Structure](hyper-links-is-referential-structure.md)
 
-    - This fundamental principle shows how to view hyperlinks in Encircle. Hyperlinks are still part of a textual document, but they can also be seen as analogous to *object structures*, because they are about documents with references to other documents inside it, which is like objects with references to other objects inside it. So this fundamental principle explains how hyperlinks are exchangeable with referential structures, that can be visualized with Encircle.
+    - This fundamental principle shows how to view hyperlinks in Circular. Hyperlinks are still part of a textual document, but they can also be seen as analogous to *object structures*, because they are about documents with references to other documents inside it, which is like objects with references to other objects inside it. So this fundamental principle explains how hyperlinks are exchangeable with referential structures, that can be visualized with Circular.
 
 - ### [Flat & Structured Interchange Loose Ideas](flat-and-structured-interchange-loose-ideas.md)
 

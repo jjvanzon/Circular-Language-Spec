@@ -1,4 +1,4 @@
-﻿Encircle Language Construct Drafts | Implementations
+﻿Circular Language Construct Drafts | Implementations
 ====================================================
 
 Achievability | Everything Only (Lack Of Choice = Guarantees)
@@ -10,7 +10,7 @@ In experiment 0.9, almost any code that could be generated was optional. This ba
 
 The principle of Everything Only may be the opposite: instead of making everything optional, everything is included without a choice. This limits all the possible situations, which makes things easier to test, there are no surprises and it is easy to give guarantees to a system’s functioning.
 
-But this principle dates out of a time when Encircle did not have extensible aspects yet.
+But this principle dates out of a time when Circular did not have extensible aspects yet.
 
 Optionality mostly caused problems in experiment 0.9 because aspects were required by other aspects and the dependency of aspects was not worked out well, and sometimes something used by one aspect, was missing in the generated code, because a dependency aspect was turned off, because it was optional. When code was generated, the code was not compilable, because there were references to things that were turned off.
 
@@ -28,7 +28,7 @@ An old argument for Everything Only in experiment 0.9:
 
 In future experiment 3.0 it might become easier to turn on extra aspects later, so it might not be a valid argument anymore, that you might miss something at some unsuspected point. In experiment 0.9 the aspects could not easily be turned on later, because they were embedded in the code generator.
 
-In former experiments of Encircle, the principle of Everything Only might have caused performance problems, because all aspects might then be turned on at once, but in future experiment 3.0 any aspect might *be* optional, so this performance problem might not apply anymore.
+In former experiments of Circular, the principle of Everything Only might have caused performance problems, because all aspects might then be turned on at once, but in future experiment 3.0 any aspect might *be* optional, so this performance problem might not apply anymore.
 
 ### Loose Ideas
 

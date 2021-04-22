@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Classes
+﻿Circular Language Spec | Classes
 ================================
 
 Static
@@ -45,13 +45,13 @@ This is unfinished documentation of lower quality. It only has an unfinished des
 
 ### Preliminary Design
 
-The distinction between objects, classes and interfaces is so loose in Encircle and the distinction really leans on the concepts of public / private and the concept of static. These determine the difference between objects, classes and interfaces.
+The distinction between objects, classes and interfaces is so loose in Circular and the distinction really leans on the concepts of public / private and the concept of static. These determine the difference between objects, classes and interfaces.
 
 The concept of static is not completely worked out yet in the functional design.
 
 There is a general brainstorm but it has loose ends.
 
-The first thing you might know about classes and static structure in Encircle is that what is traditionally part of the static structure, is not by default part of the static structure anymore. By default everything, including method definitions, are just data inside an object. In Encircle you might choose whether method definitions are part of the static structure or part of the object data. When it is part of the object data, this basically means that you can change this method definition for each object. If it part of the static structure, objects do not have their individual copy of the data and usually the objects can not change the data either.
+The first thing you might know about classes and static structure in Circular is that what is traditionally part of the static structure, is not by default part of the static structure anymore. By default everything, including method definitions, are just data inside an object. In Circular you might choose whether method definitions are part of the static structure or part of the object data. When it is part of the object data, this basically means that you can change this method definition for each object. If it part of the static structure, objects do not have their individual copy of the data and usually the objects can not change the data either.
 
 So static parts of a class are the parts that can not vary between objects, it is the data that all objects share.
 
@@ -61,7 +61,7 @@ Just like the public / private concept, you might set the *static* flag for each
 
 Usually you might make static data read-only to the objects, so that the objects can not change it. But objects can also get write access to static data. This is static data that is shared among objects, and can be changed by all objects.
 
-There is another type of static in other languages, which is data that can be accessed only through the class object, and not through instances. I do not like this type of static as much, because in my head I might create two objects to solve this: one with instance methods and one with utility methods. If we might have a way to specify this in Encircle, it might mean that each access connector can be made either accessible or inaccessible from instances.
+There is another type of static in other languages, which is data that can be accessed only through the class object, and not through instances. I do not like this type of static as much, because in my head I might create two objects to solve this: one with instance methods and one with utility methods. If we might have a way to specify this in Circular, it might mean that each access connector can be made either accessible or inaccessible from instances.
 
 The idea for now is that each system command might be separately made static or dynamic.
 
@@ -82,7 +82,7 @@ To make a class definition worth something, you might make some things static, w
 It is possible for a variable to be declared inside a class, the class aspect of which is static, but the value property of which is not static. So then the class of the variable is fixed, but objects can change the data of the variable and actually have their own copy of the variable. < Static ~= Private for Instances, except that there are also no separate copies of it for instances. > < This is not true. It changed. >  
 I guess static where a class defines a variable, the value of which is changeable by the objects, but the object might not have its own copy of the variable, they share the same variable and value, is something defined static but Public to the objects.  
 I am getting into the static stuff too much now.  
-The thing is: in most object oriented languages it is fixed and unchangeable inside the language which constructs are which type of static, while in Encircle everything is variable unless you fix it.  
+The thing is: in most object oriented languages it is fixed and unchangeable inside the language which constructs are which type of static, while in Circular everything is variable unless you fix it.  
 I am mixing up the concepts of Static and Private here: both might have to do with fixing something, limiting access to something, but I fail to understand which is which. That is because I have not worked out the concept of Static yet.
 
 \> One assumption specifically is wrong: that the class always defines certain constructs, that an object can not change. This also counts for interfaces, which are basically the same as classes but only for the public part of an object.

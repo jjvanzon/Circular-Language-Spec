@@ -1,4 +1,4 @@
-Encircle Language Construct Drafts | Text Code
+Circular Language Construct Drafts | Text Code
 ==============================================
 
 Assignment in Text Code

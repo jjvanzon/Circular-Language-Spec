@@ -1,4 +1,4 @@
-﻿Encircle Language Spec
+﻿Circular Language Spec
 ======================
 
 Type Safety, Genericity, Explicit
@@ -51,11 +51,11 @@ __Contents__
 Loose Ideas
 -----------
 
-Encircle language an item can be quite generic. So the wish for Encircle to work with both concepts of explicit and generic seems granted there.
+Circular language an item can be quite generic. So the wish for Circular to work with both concepts of explicit and generic seems granted there.
 
 -----
 
-Encircle,
+Circular,
 
 Object symbols can be prototyped as classes and interfaces.
 You can also access control object symbols, so that they can only be used as a class or an interface.
@@ -139,7 +139,7 @@ Strong typing is no more, than a binary format with type checking around it. It 
 
 Strong typing is just a helper, not a mandatory thing. Computer systems can function without it. It is just an extra. It is just something that rules out certain mistakes a programmer can make.
 
-That's the way it is implemented in Encircle too: the whole system can function without it, but it extra checking and extra helpers, imposed afterwards. Not only the imposing of the rules is very important about type checking. Also the helpers for the programmer are a blessing. Without any documentation, autocomplete lists already give an interface to the format an object is expected to have. Yes, objects have a format. You may only see members in the autocomplete list, but internally objects just have a format. That's what a class is: a format. Furtherly, the class is extended with the methods you could operate on the object of a class.
+That's the way it is implemented in Circular too: the whole system can function without it, but it extra checking and extra helpers, imposed afterwards. Not only the imposing of the rules is very important about type checking. Also the helpers for the programmer are a blessing. Without any documentation, autocomplete lists already give an interface to the format an object is expected to have. Yes, objects have a format. You may only see members in the autocomplete list, but internally objects just have a format. That's what a class is: a format. Furtherly, the class is extended with the methods you could operate on the object of a class.
 
 Enough for now.
 

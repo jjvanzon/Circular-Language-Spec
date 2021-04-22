@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Commands
+﻿Circular Language Spec | Commands
 =================================
 
 Creation Behavior of Commands

@@ -1,4 +1,4 @@
-﻿Encircle Language | Construct Drafts
+﻿Circular Language | Construct Drafts
 ====================================
 
 Aspects
@@ -20,7 +20,7 @@ __Contents__
 
 #### Aspects
 
-The *aspect* construct might become important in Encircle, only it might not be implemented yet in future experiment 3.0. However, experiment 3.0 might be implemented in a way that the aspects construct might be added to it later. Aspects might be useful enough to do this. In order to feel comfortable about this, I might like to know more about aspects, so I might work out a preliminary, brainstorm-style design here.
+The *aspect* construct might become important in Circular, only it might not be implemented yet in future experiment 3.0. However, experiment 3.0 might be implemented in a way that the aspects construct might be added to it later. Aspects might be useful enough to do this. In order to feel comfortable about this, I might like to know more about aspects, so I might work out a preliminary, brainstorm-style design here.
 
 For this I might look into the experiment 0.9 code, in which I might see what aspects might need to be capable of and I might list out what you might be able to define inside an aspect and then maybe I might get a picture of how this should look in a diagram.
 
@@ -138,7 +138,7 @@ JJ
 
 Aspects mostly operate using the reflective data. The fact that aspects they operate using reflective data makes them inherently applicable to any system.
 
-Some things that in other programming languages are considered fundamental coding principles, can be implemented as an aspect in Encircle. Examples of this are: parameters, enums, events, type safety, inheritance. (There are even things called fundamental in other programming languages, that are considered mere plug-in modules in Software System, such as basic math.)
+Some things that in other programming languages are considered fundamental coding principles, can be implemented as an aspect in Circular. Examples of this are: parameters, enums, events, type safety, inheritance. (There are even things called fundamental in other programming languages, that are considered mere plug-in modules in Software System, such as basic math.)
 
 So expressing the system in text code is considered an aspect built on top of the principles already offered by the code base. We might be lost without actually expressing computer code, but eventually the code runs without it, only it can’t be written by a human being if it wasn’t for expression.
 
@@ -147,7 +147,7 @@ So expressing the system in text code is considered an aspect built on top of th
 Aspects,  
 2008-09-20
 
-Do not mix the term aspect and the term aspect. System aspects are more basic than aspects. Aspects in Encircle are like aspects in Aspect Oriented Programming, but I use the term aspect. The term aspect is too much the idea of part-of-something, inseparable. The term aspect is more like something separate, that you can sell separately, that can be applied to anything.
+Do not mix the term aspect and the term aspect. System aspects are more basic than aspects. Aspects in Circular are like aspects in Aspect Oriented Programming, but I use the term aspect. The term aspect is too much the idea of part-of-something, inseparable. The term aspect is more like something separate, that you can sell separately, that can be applied to anything.
 
 JJ
 

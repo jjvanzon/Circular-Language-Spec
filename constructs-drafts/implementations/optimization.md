@@ -1,4 +1,4 @@
-﻿Encircle Language Construct Drafts | Implementations
+﻿Circular Language Construct Drafts | Implementations
 ====================================================
 
 Optimization
@@ -104,7 +104,7 @@ JJ
 
 -----
 
-Encircle,
+Circular,
 
 Instruction caching. If machine instructions other than calling methods are executed repeatedly, there may be a way to cache the eventually executed machine instructions, and run that instead of with all the calls around it.
 

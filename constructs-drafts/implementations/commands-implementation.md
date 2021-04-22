@@ -1,4 +1,4 @@
-﻿Encircle Language Construct Drafts | Implementations
+﻿Circular Language Construct Drafts | Implementations
 ====================================================
 
 Commands Implementation
@@ -15,7 +15,7 @@ __Contents__
 
 ### Implementation as an Aspect
 
-The behavior, that turns an object into an executable command, is implemented as the __Command__ aspect. When an object supports the __Command__ aspect, it automatically becomes a command. The code base only needs to support an object’s ability to execute in some basic form. But most of the functionality for commands might be programmed within Encircle itself. The code base only supplies the very minimum basic need to facilitate it.
+The behavior, that turns an object into an executable command, is implemented as the __Command__ aspect. When an object supports the __Command__ aspect, it automatically becomes a command. The code base only needs to support an object’s ability to execute in some basic form. But most of the functionality for commands might be programmed within Circular itself. The code base only supplies the very minimum basic need to facilitate it.
 
 ### Implementation as Stand-Alone
 

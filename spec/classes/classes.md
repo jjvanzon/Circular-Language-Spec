@@ -1,4 +1,4 @@
-﻿Encircle Language Spec
+﻿Circular Language Spec
 ======================
 
 Classes
@@ -92,7 +92,7 @@ Here is a picture that might include an object circle with a class redirection:
 
 ![](images/Classes.008.png)
 
-But the Encircle notation itself might include objects to serve as a class or prototype for another object:
+But the Circular notation itself might include objects to serve as a class or prototype for another object:
 
 ![](images/Classes.011.png)
 
@@ -162,4 +162,4 @@ The optional nature of the dashed shapes seems to leave things open to discussio
 
 ### Conclusion
 
-Hopefully this might give an impression of how class notation might be used in the Encircle language.
+Hopefully this might give an impression of how class notation might be used in the Circular language.

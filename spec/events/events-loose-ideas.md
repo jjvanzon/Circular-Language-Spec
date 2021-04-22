@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Events
+﻿Circular Language Spec | Events
 ===============================
 
 Loose Ideas

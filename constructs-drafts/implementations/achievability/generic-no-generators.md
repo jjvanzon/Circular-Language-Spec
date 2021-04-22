@@ -1,4 +1,4 @@
-﻿Encircle Language Construct Drafts | Implementations
+﻿Circular Language Construct Drafts | Implementations
 ====================================================
 
 Achievability | Generic, No Generators
@@ -19,7 +19,7 @@ __Contents__
 
 Experiment 0.9 was a code generator. This code generator was quite hard to make, even after implementing several good ideas for organizing its code. It still happened frequently, that *something* in the generated code was missing, or some situation was not accounted for. And it made the code generator produce uncompilable code. You could argue that the code generator was just not well written, but it is still a fact that the code generator was simply very hard to make.
 
-Then, for experiment 2.0 I decided to implement things in a different way. I made it a goal to make Encircle run on generic modules. Instead of regenerating the whole program every time, Encircle might become an engine, that simply takes a program description and adapts itself to it.
+Then, for experiment 2.0 I decided to implement things in a different way. I made it a goal to make Circular run on generic modules. Instead of regenerating the whole program every time, Circular might become an engine, that simply takes a program description and adapts itself to it.
 
 I proposed the following axiom:
 
@@ -35,9 +35,9 @@ Below I give a description of the implementation of some basic coding principles
 
 ### Attributes
 
-In both the code generator version of Encircle, as well as the generic engine version of Encircle, there are objects that hold a description of a class. This class description consists among other things of a description of which attributes the class holds.  
+In both the code generator version of Circular, as well as the generic engine version of Circular, there are objects that hold a description of a class. This class description consists among other things of a description of which attributes the class holds.  
 The code generator used to use this class description to generate the code of the class.  
-In a generic version of Encircle, there are generic objects, to which a class can be assigned. The generic object then adapts itself to the class description. The object contains an arbitrary array of attributes. When the object adapts itself to the class description, all the attributes of the class description are traversed. For each attribute of the class, an item is added to the attribute array of the object. Each attribute is configured according to the class description. Each of the attributes gets the appropriate amount of memory space reserved to store the attribute. The name of the attributes is also stored inside the generic object.  
+In a generic version of Circular, there are generic objects, to which a class can be assigned. The generic object then adapts itself to the class description. The object contains an arbitrary array of attributes. When the object adapts itself to the class description, all the attributes of the class description are traversed. For each attribute of the class, an item is added to the attribute array of the object. Each attribute is configured according to the class description. Each of the attributes gets the appropriate amount of memory space reserved to store the attribute. The name of the attributes is also stored inside the generic object.  
 Then the object holds all attributes that are specified in the class description, with the names of the attributes included.  
 You can let the object perform a basic search by name, and let it return the right attribute.
 
@@ -59,7 +59,7 @@ Now seeing how easily a generic version of an object could adapt itself to a cla
 
 ### In Experiment 2.0: All Concepts Can Become Generic, Except For One: Methods
 
-All concepts of Encircle might become purely generic.
+All concepts of Circular might become purely generic.
 
 In the first generic version (experiment 2.0) all the basic concepts could easily be implemented as a generic version, except for one: methods.  
 It was harder to let custom methods run inside the engine. A preliminary solution was found, by letting the engine link to external DLLs, but explaining this is outside the scope of this article. See: *Preliminary Methods*.

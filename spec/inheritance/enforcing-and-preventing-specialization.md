@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Inheritance
+﻿Circular Language Spec | Inheritance
 ====================================
 
 Enforcing & Preventing Specialization
@@ -34,7 +34,7 @@ __Contents__
 
 ### Introduction
 
-The world of programming languages offers several ways to prevent *or* *enforce* specialization. This article might give this a place inside Encircle.
+The world of programming languages offers several ways to prevent *or* *enforce* specialization. This article might give this a place inside Circular.
 
 The concepts from other languages can be boiled down to a simpler model that has to provide the following:
 
@@ -103,7 +103,7 @@ The notation come up with for requirements for the other side of the connection 
 
 ### Applied to Concepts from Other Languages
 
-The following keywords from other languages that prevent or enforce specialization are covered along with how they translate to Encircle:
+The following keywords from other languages that prevent or enforce specialization are covered along with how they translate to Circular:
 
 - __Protected__
 - __Virtual__
@@ -116,14 +116,14 @@ The following keywords from other languages that prevent or enforce specializati
 
 ### Protected
 
-For now __Protected__ is an intrinsic part of Encircle. It has its own type of access mark: 
+For now __Protected__ is an intrinsic part of Circular. It has its own type of access mark: 
 
 __Protected__  
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.011.png)
 
 ### Virtual
 
-The keyword __virtual__ from other languages means that you *can override* the member. It is also called __Overridable__. In Encircle this means that overriding should be __Public__. In the two notations for overriding this might look as follows:
+The keyword __virtual__ from other languages means that you *can override* the member. It is also called __Overridable__. In Circular this means that overriding should be __Public__. In the two notations for overriding this might look as follows:
 
 |                     *Object reference notation*                      |
 |:--------------------------------------------------------------------:|
@@ -139,7 +139,7 @@ In some languages overriding is private by default, protecting a base class from
 
 ### Abstract Member
 
-When the keyword __abstract__ from other languages is applied to a member, it means that you *might* override the member. It is also called __MustOverride__. In Encircle is a combination of making overriding __Public__ *and* __Required__. In the two notations for overriding this might look as follows:
+When the keyword __abstract__ from other languages is applied to a member, it means that you *might* override the member. It is also called __MustOverride__. In Circular is a combination of making overriding __Public__ *and* __Required__. In the two notations for overriding this might look as follows:
 
 |                     *Object reference notation:*                     |
 |:--------------------------------------------------------------------:|
@@ -155,7 +155,7 @@ When the keyword __abstract__ from other languages is applied to a member, it me
 
 When the keyword __abstract__ from other languages is applied to a class, it means that you *might* inherit from the class, or better said: you cannot just reference the class, the reference might merge with its container. It is also called __MustInherit__.
 
-In Encircle this gets the following preliminary notation:
+In Circular this gets the following preliminary notation:
 
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.016.png)
 
@@ -174,7 +174,7 @@ Do not get confused: abstract applied to a class might not mean that its command
 
 The keywords __sealed__ and __final__ mean the same thing. A sealed class, or final class, is the opposite of an abstract class: instead of only being able to inherit from the class, you are explicitly not able to inherit from the class. It is also called __NotInheritable__.
 
-In Encircle this gets the following preliminary notation:
+In Circular this gets the following preliminary notation:
 
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.018.png)
 
@@ -195,7 +195,7 @@ The use of this enforcement is questionable to me, because with a little effort 
 
 ### Interface / Interface Member
 
-Interfaces are an intrinsic concept inside Encircle. In Encircle any object can serve as another object’s interface by using the __Use As Interface__ connector.
+Interfaces are an intrinsic concept inside Circular. In Circular any object can serve as another object’s interface by using the __Use As Interface__ connector.
 
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.021.png)
 
@@ -211,7 +211,7 @@ Normally you do not see these restrictions. They only come to light as soon as y
 
 #### Rule 1: Interfaces are Abstract
 
-The first rule for interfaces in other languages is: interfaces are abstract and might be inherited from. This rule is questionable though, since some languages allow you to declare an *explicit* interface, which basically replaces the inheritance characteristic of the interface with aggregation characteristics. In Encircle you can also choose whether to implement an interface in an implicit or explicit mannar / choose between inheritance and aggregation.  
+The first rule for interfaces in other languages is: interfaces are abstract and might be inherited from. This rule is questionable though, since some languages allow you to declare an *explicit* interface, which basically replaces the inheritance characteristic of the interface with aggregation characteristics. In Circular you can also choose whether to implement an interface in an implicit or explicit mannar / choose between inheritance and aggregation.  
 However if you want to enforce that you can only use the interface in an inheritance way, you could express that by imposing a rule for the other side of the connection:
 
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.022.png)
@@ -220,7 +220,7 @@ This expresses that the other end of the connection should be a triangle.
 
 #### Rule 2: Interface Members are Abstract
 
-The second rule of interfaces is: members might be overridden / members are abstract. In Encircle all interface members are always present inside an implementation of an interface. This is not considered overriding: you have no say in whether to override something or not, the members are just automatically there as soon as you implement an interface.
+The second rule of interfaces is: members might be overridden / members are abstract. In Circular all interface members are always present inside an implementation of an interface. This is not considered overriding: you have no say in whether to override something or not, the members are just automatically there as soon as you implement an interface.
 
 However unnecessary, you can implicitly define that a member is abstract, which usually looks as follows:
 
@@ -240,9 +240,9 @@ But all in all, you should not worry about this, because if you use an interface
 
 #### Rule 3: Interfaces can not Have an Implementation
 
-Encircle offers no way to enforce that the interface object has no implementations. Period. You can put implementations in interfaces, only they might never be used.
+Circular offers no way to enforce that the interface object has no implementations. Period. You can put implementations in interfaces, only they might never be used.
 
-Something might be considered here compared to other programming languages. In other programming languages the implementation of an interface is composed of method implementations and private members. In Encircle, method implementations are considered *private content*. So in Encircle the interface and implementation are distinguished by separating the public content from the private content.
+Something might be considered here compared to other programming languages. In other programming languages the implementation of an interface is composed of method implementations and private members. In Circular, method implementations are considered *private content*. So in Circular the interface and implementation are distinguished by separating the public content from the private content.
 
 So how this translated to implementations inside interface objects: if you make something inside an interface object private, it might never be used.  
 You can make the private content usable again by either making it public again or by making the object usable as a class or plainly as a object.
@@ -263,7 +263,7 @@ The access connector is not even required, so you can also notate:
 
 ### Non-Overridable
 
-Not being able to override is the default in other languages, but in Encircle it is an imposed restriction, making overriding __Private__, which looks as follows in the two notations for overriding:
+Not being able to override is the default in other languages, but in Circular it is an imposed restriction, making overriding __Private__, which looks as follows in the two notations for overriding:
 
 *Object reference notation:*
 
@@ -289,11 +289,11 @@ But this is also possible in other languages by making a member __protected abst
 
 ### Courtesy
 
-All of this is just courtesy to support all these concepts in Encircle. My gut feeling is that something simpler might be come up with in the future.
+All of this is just courtesy to support all these concepts in Circular. My gut feeling is that something simpler might be come up with in the future.
 
 For instance the __Protected__ connector notation was come up with at a very early stage, long before the other inheritance-related modifiers were considered. My gut feeling is that I might let go of the notation for __Protected__ and go for a notation more concise and integrated with all of the other things that can be expressed. __Protected__ really might not deserve such an intrinsic notation compared to the rest of the inheritance-related modifiers.
 
-This article is just put here to make sure that at least all of this stuff is possible in Encircle, but my gut feeling is that a replacement for all of this might be found.
+This article is just put here to make sure that at least all of this stuff is possible in Circular, but my gut feeling is that a replacement for all of this might be found.
 
 ### Enforcing & Preventing Other Specialization Methods
 

@@ -1,4 +1,4 @@
-﻿Encircle Language Construct Drafts | Parameters in Text Code
+﻿Circular Language Construct Drafts | Parameters in Text Code
 ============================================================
 
 Variable Amount in Text Code

@@ -1,14 +1,14 @@
-Encircle Language | Broader View
+Circular Language | Broader View
 ================================
 
 Semantic Modeling
 -----------------
 
-May be about how Encircle language might be used to express or model meaning from reality, a possible link to artificial intelligence, natural language and generating and manipulating those models.
+May be about how Circular language might be used to express or model meaning from reality, a possible link to artificial intelligence, natural language and generating and manipulating those models.
 
 - ### [Artificial Intelligence, Natural Language, Neural Networks, Object Algebra](artificial-intelligence-natural-language-neural-networks-object-algebra.md)
 
-    - It goes too far for now to consider the possibilities inside Encircle regarding these concepts. But they are mentioned here, to demonstrate, that they are things that need to be thought about in the future. 
+    - It goes too far for now to consider the possibilities inside Circular regarding these concepts. But they are mentioned here, to demonstrate, that they are things that need to be thought about in the future. 
 
     - One of the sub-topics might be this:
 

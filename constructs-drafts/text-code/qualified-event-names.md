@@ -1,4 +1,4 @@
-﻿Encircle Language Construct Drafts | Events
+﻿Circular Language Construct Drafts | Events
 ===========================================
 
 Qualified Event Names

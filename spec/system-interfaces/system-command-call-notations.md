@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | System Interfaces
+﻿Circular Language Spec | System Interfaces
 ==========================================
 
 System Command Call Notations
@@ -44,7 +44,7 @@ One of the notations for system command calls is calling upon the command defini
 
 ![](images/3.%20System%20Command%20Call%20Notations.003.png)
 
-This might be a regular way to display a command call in Encircle, but now a call to a command inside the system interface.
+This might be a regular way to display a command call in Circular, but now a call to a command inside the system interface.
 
 There could be multiple ways to display the content of the system interface. They might depend on taste, application or needs. This article may go for a system interface that looks relatively simple with often a loose square in it representing a system command.
 

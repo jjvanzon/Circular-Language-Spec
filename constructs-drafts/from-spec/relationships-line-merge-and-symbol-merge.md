@@ -1,4 +1,4 @@
-Encircle Language Construct Drafts | From Spec
+Circular Language Construct Drafts | From Spec
 ==============================================
 
 Relationships | Line Merge & Symbol Merge
@@ -19,7 +19,7 @@ __Contents__
 
 ### Bidirectional Relationships
 
-The notation suggested here was moved away from the Encircle Language Spec in favor of another notation.
+The notation suggested here was moved away from the Circular Language Spec in favor of another notation.
 
 Starting with:
 

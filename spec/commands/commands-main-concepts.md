@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | Commands
+﻿Circular Language Spec | Commands
 =================================
 
 Main Concepts
@@ -40,13 +40,13 @@ Commands may be objects, that so happen to be *executable*. Commands could be ac
 
 The concept of commands may boil down to a limited set of characteristics.
 
-A *diamond* in Encircle may express a command that might be __executable__.
+A *diamond* in Circular may express a command that might be __executable__.
 
 <img src="images/1.%20Commands%20Main%20Concepts.002.png" width="50" />
 
 An executable command might be carried out, while one that is not executable, might stay asleep.
 
-A *square* in Encircle might symbolize that the command is __not executable__.
+A *square* in Circular might symbolize that the command is __not executable__.
 
 <img src="images/1.%20Commands%20Main%20Concepts.001.png" width="50" />
 
@@ -88,7 +88,7 @@ Here is an attempt to summarize these traits that commands might have:
   
 ### Derived Constructs
 
-Constructs that might be known from other programming languages, may have a reasonably unique expression using combinations of these more basic elements from Encircle mentioned above. Here follows an attempt to accompany this claim with some examples.
+Constructs that might be known from other programming languages, may have a reasonably unique expression using combinations of these more basic elements from Circular mentioned above. Here follows an attempt to accompany this claim with some examples.
 
 ### Command Definitions
 
@@ -220,7 +220,7 @@ void MyDefinition()
 
 The inner braces and its contents might be the code block.
 
-In Encircle, a code block may be *embedded* inside another command:
+In Circular, a code block may be *embedded* inside another command:
 
 <img src="images/1.%20Commands%20Main%20Concepts.014.png" width="100" />
 
@@ -278,7 +278,7 @@ void MyParentCommand()
 }
 ```
 
-In Encircle it might also be a command definition contained within another command definition.
+In Circular it might also be a command definition contained within another command definition.
 
 <img src="images/1.%20Commands%20Main%20Concepts.017.png" width="100" />
 
@@ -324,7 +324,7 @@ It also may look a bit like a nameless local function that you might pass a refe
 
 <img src="images/1.%20Commands%20Main%20Concepts.021.png" width="170" />
 
-The following was another attempt to define what a clause might be in Encircle: *a command inside another command with no lines going to or from it*. That definition might not cover it. It might be just terminology quibbles. Later on it seemed to not matter much. Command-like constructs from other languages seem to be expressible within Encircle perhaps in a reasonable fashion.
+The following was another attempt to define what a clause might be in Circular: *a command inside another command with no lines going to or from it*. That definition might not cover it. It might be just terminology quibbles. Later on it seemed to not matter much. Command-like constructs from other languages seem to be expressible within Circular perhaps in a reasonable fashion.
 
 So a clause might be expressed with:
 
@@ -357,7 +357,7 @@ Where(...)
 
 So the `...` might be the lambda expression.
 
-Honestly said, in Encircle there might not be a way to distinguish it from *clauses*.
+Honestly said, in Circular there might not be a way to distinguish it from *clauses*.
 
 <img src="images/1.%20Commands%20Main%20Concepts.022.png" width="100" />
 
@@ -379,7 +379,7 @@ The large square might have contents, drawn with thick lines, might represent th
 
 ### Conclusion
 
-Using the constructs for commands from Encircle, it may seem circumstantial whether a command symbol could be stereotyped as a block, clause, definition, call, etc. It seems to result from the way basic language elements from Encircle relate to each other. Still, it may be relevant to be aware how these symbols from Encircle can be combined to represent constructs from other languages.
+Using the constructs for commands from Circular, it may seem circumstantial whether a command symbol could be stereotyped as a block, clause, definition, call, etc. It seems to result from the way basic language elements from Circular relate to each other. Still, it may be relevant to be aware how these symbols from Circular can be combined to represent constructs from other languages.
 
 ### Synonyms
 

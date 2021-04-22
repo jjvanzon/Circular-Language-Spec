@@ -1,4 +1,4 @@
-﻿Encircle Language Spec | System Interfaces
+﻿Circular Language Spec | System Interfaces
 ==========================================
 
 List Concept
