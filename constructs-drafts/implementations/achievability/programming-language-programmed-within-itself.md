@@ -134,7 +134,7 @@ I guess I have made clear, that it is important to understand that CItem objects
 
 ### About The Layers Up Until Now
 
-The first layer is the absolute minimum Circular might contain. In the second layer you build up a generic version of it, but it’s still described in a way, you couldn’t describe it in Circular itself. The third layer is programmed in a way, you could program it in an Circular programming environment. So this layer could be reprogrammed in an Circular programming environment.
+The first layer is the absolute minimum Circular might contain. In the second layer you build up a generic version of it, but it’s still described in a way, you couldn’t describe it in Circular itself. The third layer is programmed in a way, you could program it in a Circular programming environment. So this layer could be reprogrammed in a Circular programming environment.
 
 The bottom layers might only contain the absolute base of the systematics of Circular: Circular in its most primitive form, just enough to redescribe it. All the extensions are added to the top layer, which can be reprogrammed within the Circular programming environment.
 
@@ -163,7 +163,7 @@ gggStructureToClasses . RelatedItems . Item ( "ggc Relation Class B" ) = gggRela
 ```
 
 When adding items, under the surface, an item gets assigned a class, upon which the item configures itself according to the class description. Only one of the assignments of a class is explicitly visible in the code above: the first line: assigning the Structure class to the Structure object.  
-In the 3rd layer it was a C++ object describing the class. In the 4th layer it is an Circular object describing the class. So in this layer, the class descriptions used, are Circular objects, whereas in the previous layer the class descriptions used, were C++ objects.  
+In the 3rd layer it was a C++ object describing the class. In the 4th layer it is a Circular object describing the class. So in this layer, the class descriptions used, are Circular objects, whereas in the previous layer the class descriptions used, were C++ objects.  
 After class assignment, an object looks the same in both layers.  
 The first g in ggg-layer stands for generic: the fact that the engine above might be used specifying Circular objects. The second g in the ggg-layer also stands for generic, but now because the engine itself is built up of generic CItem objects. The third g in the ggg-layer stands for generic, but now the fact that the reflective data of every CItem object used in the code above, is also a generic Circular object.
 

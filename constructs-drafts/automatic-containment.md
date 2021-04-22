@@ -75,7 +75,7 @@ The main solution to converting a referential structure to a containment structu
 
 The circles are all objects. Object A for instance has two references: one to object B and one to object E. Two objects refer to object D: both object C and object E refer to object D.
 
-In an Circular diagram, the references might look more like this:
+In a Circular diagram, the references might look more like this:
 
 ![](images/3.%20Automatic%20Containment.002.png)
 

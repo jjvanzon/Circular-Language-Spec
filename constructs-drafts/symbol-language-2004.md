@@ -3,7 +3,7 @@
 
 `[ Deprecated documentation ]`
 
-*Previous attempt at making an Circular Language Spec from 2004.*
+*Previous attempt at making a Circular Language Spec from 2004.*
 
 Contents
 ========

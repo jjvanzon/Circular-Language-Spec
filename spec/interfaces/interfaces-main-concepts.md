@@ -166,7 +166,7 @@ A powerful application of such a contract, is the interface as a contract of *pa
 
 This article is here to point out that commands can have interfaces just like objects. A command having an interface approximates the same functionality as C++ function prototypes or delegates in .NET. Only in Circular much more is possible. Because a command is an object, any interface concept is applicable to commands as well.
 
-Here is your basic function prototype concept expressed in an Circular diagram:
+Here is your basic function prototype concept expressed in a Circular diagram:
 
 ![](images/1.%20Interfaces%20Main%20Concepts.014.png)
 

@@ -28,7 +28,7 @@ Here are some topics that might be put under this umbrella. Some may have their 
 
 - ### File System Integration
 
-    - You might access other file systems from within *Circular*, and you might also access *Circular* as if it *were* a file system. *File System Integration* also may cover any other tools regarding files. In an Circular system you might apply those to *objects* instead of files.
+    - You might access other file systems from within *Circular*, and you might also access *Circular* as if it *were* a file system. *File System Integration* also may cover any other tools regarding files. In a Circular system you might apply those to *objects* instead of files.
 
 - ### Database Integration
 
@@ -52,11 +52,11 @@ Here are some topics that might be put under this umbrella. Some may have their 
 
 - ### Protocols
 
-    - *Protocols* might enable several internet protocols, so that you might access resources that are exposed through those protocols. Protocols such as HTTP, SMTP, POP3, FTP, etcetera. *Protocols* might make sure an *Circular* resource is accessible through those protocols.
+    - *Protocols* might enable several internet protocols, so that you might access resources that are exposed through those protocols. Protocols such as HTTP, SMTP, POP3, FTP, etcetera. *Protocols* might make sure a *Circular* resource is accessible through those protocols.
 
 - ### External API's
 
-    - Furthermore, a lot of software may be dependent on API’s. When software is made, and it uses an API, it may be *dependent* on that API. You might not port the software to another system if the same API is not supported. *Module System Integration* might part solve this. You might link to resources from other systems, so you might not necessarily need to port to native *Circular* to integrate with another system. However, you might want to be able to port your system to a native Circular system, to make use of features in it. Porting as such may be possible if the API your program depends on, is either accessible through *Module Systems Integration* or the API is supported inside an Circular system as well. That is the part *External API’s* might be responsible for. It may be undoable to support all existing API’s inside the an Circular system, but if an API is supported intrinsically, *External API’s* might be the part of the system to put it in.
+    - Furthermore, a lot of software may be dependent on API’s. When software is made, and it uses an API, it may be *dependent* on that API. You might not port the software to another system if the same API is not supported. *Module System Integration* might part solve this. You might link to resources from other systems, so you might not necessarily need to port to native *Circular* to integrate with another system. However, you might want to be able to port your system to a native Circular system, to make use of features in it. Porting as such may be possible if the API your program depends on, is either accessible through *Module Systems Integration* or the API is supported inside a Circular system as well. That is the part *External API’s* might be responsible for. It may be undoable to support all existing API’s inside a Circular system, but if an API is supported intrinsically, *External API’s* might be the part of the system to put it in.
 
 - ### ...
 
