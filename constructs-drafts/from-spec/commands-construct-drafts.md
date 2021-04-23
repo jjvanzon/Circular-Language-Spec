@@ -234,3 +234,8 @@ For instance: the rule ‘sub-commands are never referenced’, may be changed t
 
 JJ
 
+-----
+
+`<< terminology >>`
+
+It’s *procedures* that are called. When you speak of calling an *object*, you’re talking about calling a procedure of an object (or a procedure of one of its sub objects).

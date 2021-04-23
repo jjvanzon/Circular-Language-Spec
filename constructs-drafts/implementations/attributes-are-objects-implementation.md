@@ -8,10 +8,15 @@ Attributes Are Objects Implementation
 
 __Contents__
 
+- [Introduction](#introduction)
 - [Implementation in Creator](#implementation-in-creator)
 - [J Math Objects](#j-math-objects)
 - [Implementing Attributes as Separate Construct](#implementing-attributes-as-separate-construct)
 - [Create Objects / Ensure Objects = Default Values / Not Null ?](#create-objects--ensure-objects--default-values--not-null-)
+
+### Introduction
+
+Implementation notes about when attributes, simple values an object might hold, might regarded the same as sub-objects, but then ones with specific characteristics.
 
 ### Implementation in Creator
 

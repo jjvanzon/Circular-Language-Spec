@@ -8,7 +8,6 @@ Loose Ideas
 
 __Contents__
 
-- [Misc Ideas](#misc-ideas)
 - [From the Original Assignment Article Group](#from-the-original-assignment-article-group)
 - [From the Original Symbol Documentation](#from-the-original-symbol-documentation)
     - [Introduction, Procedures](#introduction-procedures)
@@ -65,137 +64,6 @@ __Contents__
         - [Procedure Symbol Roles](#procedure-symbol-roles)
         - [Reference and Call Targets](#reference-and-call-targets)
 
-### Misc Ideas
-
-`<< applications >>`
-
-Computer Language,
-
-In concepts zetten:
-
-Precieze tijd-statistieken van alle processtappen, zodat je precies weet in welk stukje van het proces de bottleneck zit, niet alleen gewoon dat het proces lang duurt. Dan weet je ook waar het aan ligt, anders is het gissen.
-
-JJ
-
------
-
-`<< applications >>`
-
-Command Basics,  
-2008-08-17
-
-It seems, that when you have active command references inside different active parent commands, you get a problem. Multiple parent commands need to wait on the referenced command object to finish.
-
-JJ
-
------
-
-`<< start & stop >>`
-
-Start & Stop,  
-2008-08-29
-
-Vinkje is ook een mooi symbool voor voltooid.
-
-JJ
-
------
-
-`<< start & stop >>`
-
-Command,  
-2008-09-16
-
-I've seen others call the following execution commands:
-
-<<  reverse  
-\>>  fast forward
-
-JJ
-
------
-
-`<< start & stop >>`
-
-Commands,  
-2008-09-16
-
-I've seen others use the following names for the following execution commands:
-
-\|<  skip backward  
-\>\|  skip forward
-
-\>> forward  
-<< rewind  
-
-JJ
-
------
-
-`<< applications >>`
-
-CL,  
-2008-09-18
-
-Execution data.
-
-```
-Transport time
-    Ways:
-        Network (133.1.9.23) - Memory - Disk (\\local\E:)
-            14 sec
-        Disk - Memory
-            15 sec
-Processing time
-    4 sec
-< other times >
-```
-
-JJ
-
------
-
-`<< terminology >>`
-
-It’s *procedures* that are called. When you speak of calling an *object*, you’re talking about calling a procedure of an object (or a procedure of one of its sub objects).
-
------
-
-`<< applications >>`
-
-Commands,  
-2004
-
-There’s a method for turning a procedure into a class.
-
-Say a procedure has input objects and output objects. When you call the procedure you set the input objects. After the call you can read the output objects.
-
-To create a class out of the procedure you just take over all of the procedure’s objects. The procedure itself, stripped from objects, becomes a member of the type too.
-
-You can freely read and write the objects. However, the procedure might be occasionally run.
-
-The benefits from making a type out of a procedure is that you can dynamically write and write input objects and read output objects, without having to run a procedure all the time.
-
-JJ
-
-`<< black boxes, friend notation >>`
-
-Commands,  
-2008-05-18
-
-In the diagrams of Relations Between Commands & Objects you can see, that a call to a command can be a call upon multiple objects to execute that command. It is not yet discussed, how it is expressed that a command has access to the private contents of a class.
-
-JJ
-
-`<< commands & classes loosely coupled >>`
-
-Commands,
-2009-03-13
-
-"Do you know, I don't even want those commands." I made that remark when I right-clicked on an item in some user interface. Circular might make many commands available on many many objects. But perhaps many times, I don't even want those commands. So I as the user want to be able to hide those. I might not want to see those.
-
-JJ
-
 ### From the Original Assignment Article Group
 
 `<< move >>`
@@ -214,7 +82,7 @@ To keep direct conversion between an object and a command possible without any l
 
 -----
 
-`<< move >>`
+`<< assignment >>`
 
 Object assignment can also be done for commands.
 
@@ -226,7 +94,7 @@ But only has the right effect between command definitions, as they make the comm
 
 -----
 
-`<< move >>`
+`<< assignment >>`
 
 Class assignment is also used to assign a command definition to a call.
 
@@ -238,7 +106,7 @@ The target definition of one command reference or call is assigned as the target
 
 -----
 
-`<< move >>`
+`<< assignment >>`
 
 Command definition assignment is also a class assignment. A command definition assignment can look like this:
 
@@ -264,7 +132,7 @@ For commands, object reference class assignment is the same as command reference
 
 -----
 
-`<< move >>`
+`<< pointers >>`
 
 The notation of an assignment letting a command’s definition point to a reference to a command is the same, but then between command symbols:
 
@@ -1268,4 +1136,3 @@ Here is a list of possible reference targets and call targets:
 `<< rule rich >>`
 
 A diamond can be executing. Only during the execution of the diamond, lines between its non static children can be real. If the diamond isn’t executing, or it’s not a diamond, but a square, lines between the non static children are suggestive. Only lines between static members in such cases, can be real.
-

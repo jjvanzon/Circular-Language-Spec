@@ -57,6 +57,7 @@ __Contents__
     - [Object has Access to its Private Contents](#object-has-access-to-its-private-contents)
 - [Assignment between Friend Members](#assignment-between-friend-members)
 - [Friend = Wavy Line](#friend--wavy-line)
+- [Friend Notation Loose Ideas](#friend-notation-loose-ideas)
 
 ### Introduction
 
@@ -524,3 +525,12 @@ Compared to the other line types:
 The wavy line expresses something special. Wavy is also like the symbol ~, which means approximate or ‘under certain conditions’. And under certain conditions you can access __Private__ members, which are then denoted with a wavy access connector. So it looks *like* a straight access connector (meaning __Accessible__), but then under certain conditions, so the line is wavy. A wavy line expresses *special access*, *conditional access*.
 
 Wavy lines already expressed *value*, *data* and *content*. Using wavy lines in the friend notation lets you access the __Private__ *value, data and content*. So there is a vague parallel there.
+
+### Friend Notation Loose Ideas
+
+Commands,  
+2008-05-18
+
+In the diagrams of Relations Between Commands & Objects you can see, that a call to a command can be a call upon multiple objects to execute that command. It is not yet discussed, how it is expressed that a command has access to the private contents of a class.
+
+JJ

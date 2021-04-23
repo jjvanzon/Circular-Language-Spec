@@ -1,8 +1,8 @@
 ﻿Circular Language Broader View | From Spec
 ==========================================
 
-Commands and Classes Loosely Coupled
-------------------------------------
+Commands & Classes Loosely Coupled
+----------------------------------
 
 `[ Preliminary documentation ]`
 
@@ -18,6 +18,7 @@ __Contents__
 - [Line Merge](#line-merge)
 - [Summary](#summary)
 - [Commands and Classes Loosely Coupled when Object might Define Its own Class?](#commands-and-classes-loosely-coupled-when-object-might-define-its-own-class)
+- [Loose Ideas](#loose-ideas)
 
 ### Concept
 
@@ -106,3 +107,14 @@ The concept of *Classes and Commands Loosely Coupled* may run into trouble when 
 A quite particular situation. But it might be solved by regarding situation as that a parameter without a class, might simply *have* *no* class. That may add the command to *any* object. This make *classless* stands for *arbitrariness* again.
 
 ![](images/Commands%20and%20Classes%20Loosely%20Coupled.009.png)
+
+### Loose Ideas
+
+`<< commands & classes loosely coupled >>`
+
+Commands,
+2009-03-13
+
+"Do you know, I don't even want those commands." I made that remark when I right-clicked on an item in some user interface. Circular might make many commands available on many many objects. But perhaps many times, I don't even want those commands. So I as the user want to be able to hide those. I might not want to see those.
+
+JJ
