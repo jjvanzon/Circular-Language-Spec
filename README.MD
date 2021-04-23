@@ -7,11 +7,11 @@ You may find the following sections here:
 
 - [Spec](spec)
 
-    - This is an attempt at a specification of this language. More finished up content might be found here.
+    - An attempt at a specification of this language. More finished up content might be found here.
 
 - [Broader View](broader-view)
 
-    - Various draft texts that might once describe a story: ideas about how this Circular language might be used in practice.
+    - Draft texts, that might once describe a story: ideas about how this Circular language might be used in practice.
 
 - [Construct Drafts](constructs-drafts)
 
