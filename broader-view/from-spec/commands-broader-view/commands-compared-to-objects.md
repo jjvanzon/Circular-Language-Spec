@@ -20,6 +20,7 @@ __Contents__
 - [Active Clause Compared to Objects](#active-clause-compared-to-objects)
 - [Reading & Writing Parameters](#reading--writing-parameters)
 - [Resolution When `Not Allowed` For Commands](#resolution-when-not-allowed-for-commands)
+- [Assignment of Commands Compared to Objects](#assignment-of-commands-compared-to-objects)
 
 ### Introduction
 
@@ -132,3 +133,7 @@ A command definition’s parameter values `are` public, `so` if `you can` reach 
 ### Resolution When `Not Allowed` For Commands
 
 When `the` command concept `imposes a rule`, that `might not apply` to normal objects, then `you might` seem `to be` able to `break that rule`. To `keep direct` conversion between an object and a command `possible without any loss` of structure, it seems to be `allowed to break any of the extra rules imposed` by commands. But in that case `the` command `might always` get `the next best` alternative behavior and a warning `might` be generated. This might keep conversion between objects and commands possible `without any loss of` structure.
+
+### Assignment of Commands Compared to Objects
+
+For commands, object reference class assignment is the same as command reference definition assignment. In that case a command’s definition points to a reference to a command, instead of pointing to the command definition directly.

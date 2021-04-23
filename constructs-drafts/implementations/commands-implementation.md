@@ -55,3 +55,7 @@ then `you can all of a sudden` run it, which may overwrite `the` executable’s 
 ### Loose Ideas
 
 *Active* clauses, command calls and active command references in parent commands `are always` private, because `you can not` reference a sub-command.
+
+-----
+
+To keep direct conversion between an object and a command possible without any loss of structure, it is allowed to give a call symbol and object redirection anyway. But then, the object redirection might behave as a *definition* redirection and a warning might be generated.

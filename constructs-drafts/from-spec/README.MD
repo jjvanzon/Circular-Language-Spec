@@ -20,6 +20,10 @@ Topics that may be recognizable from the *spec*, but then maybe lesser worked ou
 
     - Lesser worked out ideas about this topic.
 
+- [Commands Rule Rich](commands-rule-rich.md)
+
+    - Texts that might show the struggle to make this diagram notation work for commands.
+
 - [Relationships Construct Drafts](relationships-construct-drafts.md)
 
     - Lesser worked out ideas about this topic.

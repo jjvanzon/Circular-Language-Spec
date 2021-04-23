@@ -9,8 +9,9 @@ __Contents__
 - [Introduction](#introduction)
 - [Distinguishing Object-Bound and Reference-Bound Aspects](#distinguishing-object-bound-and-reference-bound-aspects)
 - [Basic Assignment Types](#basic-assignment-types)
+- [Command Assignment](#command-assignment)
 - [Cross-Aspect Assignments](#cross-aspect-assignments)
-- [Assignment without an Assignment Notation](#assignment-without-an-assignment-notation)
+- [Assignment using Explicit Get & Set](#assignment-using-explicit-get--set)
 - [Ideas about Assignment](#ideas-about-assignment)
     - [Opposite Direction Indicators?](#opposite-direction-indicators)
     - [Leaving Out Diamonds for Value Assignment?](#leaving-out-diamonds-for-value-assignment)
@@ -73,6 +74,18 @@ The diamond shape in the middle might symbolize a call to an assignment command.
 
 ![](images/2.%20Assignment.011.png)
 
+### Command Assignment
+
+An *object* assignment might also be used for *commands*. In that case it might be called a *command object assignment*.
+
+![](images/7.%20Commands%20Ideas.080.png)
+
+*Class* assignment might also be used to assign a command *definition* to a call. Command definition assignment means, that a call or command reference is appointed a new definition target. A command definition assignment can look like this:
+
+![](images/7.%20Commands%20Ideas.081.png)
+
+In the example above, symbol __A__ is a non-executing (square) command symbol, and symbol __B__ is a diamond, which stands for a call, but both symbol __A__ and __B__ could have been either squares or diamonds.
+
 ### Cross-Aspect Assignments
 
 Perhaps a more common way to use the __Class__ aspect in an assignment might be to __Get__ the __Object__ aspect from one reference and assign it to the __Class__ aspect of another reference. But it might also be done the other way around: attempting to get the __Class__ aspect from one reference and assign it as the __Object__ of another reference. That might be called *Class-to-Object* assignment or a *Class-Get assignment* perhaps. Less conventional ways of yielding over aspects like that, might be called *cross-aspect* assignment and they might be used with the notation below.
@@ -97,7 +110,7 @@ Also noteworthy might be, that there could be two ways to get a __Class__ aspect
 |    *The object reference on the right may now point*    |
 |        *to the class of the object on the left.*        |
 
-### Assignment without an Assignment Notation
+### Assignment using Explicit Get & Set
 
 There might be special cases of assignment that do not have an assignment notation. Explicit calls to each system command might be of use then:
 
@@ -197,3 +210,4 @@ An assignment call in this case:
 ![](images/2.%20Assignment.027.png)
 
 The only implicitness in the assignment notation that might be left, may be that the assignment call was simplified to just a diamond shape, instead of for instance showing parameters inside it.
+

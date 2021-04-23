@@ -59,6 +59,7 @@ __Contents__
 - [Pointer Assignment](#pointer-assignment)
     - [Pointer Assignment](#pointer-assignment-1)
     - [Assignment With Pointer Source](#assignment-with-pointer-source)
+    - [Command Pointer Assignment](#command-pointer-assignment)
     - [Cross-Aspect Assignment](#cross-aspect-assignment)
     - [Cross-Aspect Pointer Assignment](#cross-aspect-pointer-assignment)
 - [System Command Calls and Pointers](#system-command-calls-and-pointers)
@@ -522,6 +523,16 @@ Assignment when source is pointer to pointer also works for the __Class__ aspect
 |                 ![](images/Pointers.027.png)                 |
 |      __Use As Class `<=`__ (~= Use Reference As Class)       |
 | __Class Set `=>`__ (~= Set Class to Other Related List Item) |
+
+#### Command Pointer Assignment
+
+An object pointer assignment can also be used for *commands*. In that case it is a *command reference command object assignment*.
+
+The notation of an assignment letting a command’s definition point to a reference to a command is the same, but then between command symbols:
+
+![](images/7.%20Commands%20Ideas.082.png)
+
+In the example above, symbol __A__ is a non-executing (square) command symbol, and symbol __B__ is a diamond, which stands for a call, but both symbol __A__ and __B__ could have been either squares or diamonds.
 
 #### Cross-Aspect Assignment
 
