@@ -6,6 +6,75 @@ Parameter Passing
 
 `[ Preliminary documentation ]`
 
+__Contents__
+
+- [Introduction](#introduction)
+- [By Value](#by-value)
+- [By Value in a Diagram](#by-value-in-a-diagram)
+- [By Reference](#by-reference)
+- [Value In](#value-in)
+- [Value In in a Diagram](#value-in-in-a-diagram)
+- [Value Out](#value-out)
+- [Value Out in a Diagram](#value-out-in-a-diagram)
+- [Value Thru](#value-thru)
+- [Value Thru in a Diagram](#value-thru-in-a-diagram)
+- [Reference In](#reference-in)
+- [Reference In in a Diagram](#reference-in-in-a-diagram)
+- [Reference Out](#reference-out)
+- [Reference Out in a Diagram](#reference-out-in-a-diagram)
+- [Reference Thru](#reference-thru)
+- [Reference Thru in a Diagram](#reference-thru-in-a-diagram)
+- [Object Out](#object-out)
+    - [New command ( / new object )](#new-command---new-object-)
+    - [Existing command ( / existing object )](#existing-command---existing-object-)
+- [Object Out in a Diagram](#object-out-in-a-diagram)
+- [Three Parameter Passing Elements](#three-parameter-passing-elements)
+- [Parameters of calls directly tied together](#parameters-of-calls-directly-tied-together)
+- [Strict about parameter passing](#strict-about-parameter-passing)
+- [The class of a parameter](#the-class-of-a-parameter)
+- [Sub-commands are never output objects](#sub-commands-are-never-output-objects)
+- [In, Out & Thru Parameters](#in-out--thru-parameters)
+- [Downput](#downput)
+- [Incidental parameter passing](#incidental-parameter-passing)
+- [Indirect Value Transmission](#indirect-value-transmission)
+- [Wrong approach to the terms In, Out and Thru](#wrong-approach-to-the-terms-in-out-and-thru)
+    - [In, Out & Thru](#in-out--thru)
+    - [Terms for reading](#terms-for-reading)
+    - [Consider New In & New Out](#consider-new-in--new-out)
+    - [More](#more)
+- [Brainstorm 2008-09-27](#brainstorm-2008-09-27)
+- [Brainstorm 2008-09-26](#brainstorm-2008-09-26)
+- [More Ideas](#more-ideas)
+- [From the Original Symbol Documentation](#from-the-original-symbol-documentation)
+    - [Procedure Parameters](#procedure-parameters)
+        - [Input, Output and Throughput Parameters](#input-output-and-throughput-parameters)
+    - [Get and Set are Inseparable](#get-and-set-are-inseparable)
+    - [Executions & Parameters](#executions--parameters)
+        - [Argument Access](#argument-access)
+            - [Input, Output and Throughput](#input-output-and-throughput)
+            - [Using Arguments](#using-arguments)
+            - [Accessing Arguments During Execution](#accessing-arguments-during-execution)
+        - [Implicit Notations](#implicit-notations)
+            - [Previous Texts](#previous-texts)
+        - [Argument Reference](#argument-reference)
+            - [Summary](#summary)
+        - [In, Out and Thru Argument Notation](#in-out-and-thru-argument-notation)
+            - [Execution Order In Text Code](#execution-order-in-text-code)
+        - [Implicit Notations](#implicit-notations-1)
+            - [Previous Texts](#previous-texts-1)
+            - [Brainstorm Items](#brainstorm-items)
+        - [Brainstorm](#brainstorm)
+            - [Summary of Old Subdivision](#summary-of-old-subdivision)
+            - [New Subdivision](#new-subdivision)
+            - [New Main Subdivision](#new-main-subdivision)
+            - [New Brainstorm Texts](#new-brainstorm-texts)
+            - [Argument Access Summary](#argument-access-summary)
+        - [Brainstorm](#brainstorm-1)
+            - [Other](#other)
+    - [Other](#other-1)
+
+### Introduction
+
 These sections were set aside in the project *Work Out Parameter Articles*.
 
 The sections each cover an obsolete parameter passing type.
@@ -782,11 +851,30 @@ Actually, the method might only become part of the classes that it directly uses
 
 ByRefs have pros and cons in different situations.
 
+-----
 
-From the Original Symbol Documentation
-======================================
+`<< parameters >>`  
 
-## Procedure Parameters
+The objects inside a command can be regarded:
+
+- Input parameters
+- Output parameters
+- Throughput parameters
+- Return values
+- Local variables
+
+`<< parameters >>`  
+
+The input parameters of a command are its writable objects. The output values are its readable objects. Objects that are read-write are like in-out or thru parameters.
+
+`<< return values >>`  
+
+One readable object can be chosen to be the return value, which promotes it to being the main output parameter. This might not give it extra capabilities, only an extra notation in certain places. The return value might be denoted in a diagram by putting the term __Return__ near one of the parameters.
+
+
+### From the Original Symbol Documentation
+
+#### Procedure Parameters
 
 Procedures can have *parameters*: instructions passed along with the procedure that make the procedure behave differently. The __Button . Set Text__ procedure, for instance, has a __Text__ parameter, which indicates what the new text of the button might be.
 
@@ -804,23 +892,23 @@ The procedure can do whatever it wants with the parameters passed to it. All it 
 
 The terms *parameter* and *argument* are often intermixed. For now you can assume that a parameter is a setting of a procedure and an argument is the value that it holds. That’s not the entire truth, though, but I’ll save the exact meaning for later.
 
-### Input, Output and Throughput Parameters
+##### Input, Output and Throughput Parameters
 
 Parameters are commonly input (instructions) for a procedure. Parameters can also be output (returned results). They make a procedure return something to the caller. One of the output parameters can be appointed to be *the* return value, which makes it sort of like the main output parameter. Some parameters can be input, and then output again. Then the procedure uses the parameter, transforms it and gives it back in the transformed state. These parameters are called throughput parameters, or in-out parameters. There are also objects in a procedure that are only used locally. Those are not usually called parameters, but sooner called *local objects*.
 
-## Get and Set are Inseparable
+#### Get and Set are Inseparable
 
 A state write is always paired with a state read and a state read is always paired with a state write.
 
 When you read a state, the state is meant to be assigned to another object. And from the other perspective, there’s no point in reading the state if you’re not going to assign the state to another object.
 
-## Executions & Parameters
+#### Executions & Parameters
 
-### Argument Access
+##### Argument Access
 
-#### Input, Output and Throughput
+###### Input, Output and Throughput
 
-##### Output by Reference
+####### Output by Reference
 
 < 2008-10-06 Move to Input Output >
 
@@ -834,11 +922,11 @@ Nothing is *read* in the epilog in this case. Even though the argument functions
 
 Any line going out of a diamond is set just before the diamond executes.
 
-##### Write, Read ≠ Input, Output
+####### Write, Read ≠ Input, Output
 
 As such, *read and write arguments* is not analogous to *input and output arguments*. A write argument can easily serve as an output argument.
 
-##### Reference Arguments
+####### Reference Arguments
 
 Reference arguments can serve as input, output and throughput. State arguments can serve as input, output and throughput too. 
 
@@ -846,11 +934,11 @@ You’ll hardly use a line target as output information. You’ll probably use a
 
 Even though an argument’s line is hardly ever read, an argument’s state *is* commonly read.
 
-#### Using Arguments
+###### Using Arguments
 
 You’ll mainly use arguments by reading and writing their state or to pass objects by reference.
 
-#### Accessing Arguments During Execution
+###### Accessing Arguments During Execution
 
 Apart from writing in the prolog and reading in the epilog, there’s a third period in which you can access an argument: during execution. You can only access the arguments of a diamond *in execution*. The caller of the diamond is frozen, till the execution completes, so the caller doesn’t have any chance of accessing the arguments during execution. However, everything inside the executor is in motion. The executor itself can freely access its arguments, of course, but also anything it calls, could access its arguments, if given a reference. But, as I said, the *caller* of an execution can’t access the arguments during execution.
 
@@ -866,7 +954,7 @@ Note, however, that it’s not the definition that’s accessing member __m__. I
 
 More rules on that are covered in the *Execution Basics* section.
 
-### Implicit Notations
+##### Implicit Notations
 
 < you can call an implicit call a parameter reference too. Mention it so you show that there’s a big difference between parameter reference and argument reference >
 
@@ -874,11 +962,11 @@ More rules on that are covered in the *Execution Basics* section.
 - Implicit return value reference
 - Implicit argument assignment
 
-#### Previous Texts
+###### Previous Texts
 
-##### A
+####### A
 
-###### Referencing Square Members: Implicit Call
+######## Referencing Square Members: Implicit Call
 
 It is really only allowed to reference members of diamonds:
 
@@ -926,7 +1014,7 @@ But as I said: child diamonds can access their parent diamond’s members if the
 
 ![](images/Input%20Output%20Parameter%20Passings.072.jpeg)
 
-###### An object symbol as a pointer to a procedure symbol: Implicit return value reference.
+######## An object symbol as a pointer to a procedure symbol: Implicit return value reference.
 
 You can also let an object symbol point to a procedure symbol.
 
@@ -936,7 +1024,7 @@ In that case you’re actually implicitly referencing the return value.
 
 ![](images/Input%20Output%20Parameter%20Passings.074.jpeg)
 
-###### Implicit Call and Implicit Return Value Reference
+######## Implicit Call and Implicit Return Value Reference
 
 If an object symbol is a reference to a square, it’s both an implicit call and an implicit return value reference.
 
@@ -954,7 +1042,7 @@ in the second picture you see the explicit call. The third picture adds the expl
 
 ![](images/Input%20Output%20Parameter%20Passings.077.jpeg)
 
-###### Reference to Other Out Parameters
+######## Reference to Other Out Parameters
 
 An object reference to a procedure can only be a reference to the procedure’s return value. If you want to reference other out parameters, you might reference them explicitly.
 
@@ -964,7 +1052,7 @@ An object reference to a procedure can only be a reference to the procedure’s 
 
 __a__ can only be a reference to __r__, the return value. __b__ is a reference to __o__, another out parameter.
 
-### Argument Reference
+##### Argument Reference
 
 There are three ways to use arguments: state read, state write and passing by reference:
 
@@ -1020,7 +1108,7 @@ If a reference argument targets the argument of a parent diamond, it is not cons
 
 Argument reference is only the case where you *enter* a diamond.
 
-#### Summary
+###### Summary
 
 So the implicit argument reference notation:
 
@@ -1058,7 +1146,7 @@ Invert the direction of other lines that became faulty
 
 ![](images/Input%20Output%20Parameter%20Passings.090.png)
 
-### In, Out and Thru Argument Notation
+##### In, Out and Thru Argument Notation
 
 < The out parameter access symbol isn’t required, so the notation of it *suggests* that it’s an in parameter reference >
 
@@ -1100,27 +1188,27 @@ As such, there are six explicit argument purposes:
 | ![](images/Input%20Output%20Parameter%20Passings.100.png) | ![](images/Input%20Output%20Parameter%20Passings.101.png) | ![](images/Input%20Output%20Parameter%20Passings.102.png) |
 | *Reference in* | *Reference out* | *Reference thru* |
 
-#### Execution Order In Text Code
+###### Execution Order In Text Code
 
 The resulting sequence of code lines corresponds to the execution order required for dependency. As you change the diagram, the order of the text code can change. You can freely more around text lines of sibling symbols.  
 < The resulting sequence of code lines and the execution order within code lines. >
 
 < Don’t cover exact text code here >
 
-### Implicit Notations
+##### Implicit Notations
 
-#### Previous Texts
+###### Previous Texts
 
-##### B
+####### B
 
-###### Implicit Calls
+######## Implicit Calls
 
 < 2008-10-08 The texts that follow use an old notation for calls: a definition is a square without a reference line, a call is a square with a reference line. >  
 < Maybe diagrams can be more basic, expressing solely a concept >  
 < reference a procedure parameter from an object.>  
 To explain this concept I use an example where one procedure, called __Get__, returns an object that is then passed to another procedure, called __Set__. This requires two calls: first a call to __Get__ and then to __Set__.
 
-####### Explicit Calls
+######### Explicit Calls
 
 The steps of this process can be described as follows:
 
@@ -1138,7 +1226,7 @@ The out parameter of __Get__ is called __Out__ and the in parameter of __Set__ i
 
 Only the blue parts are shown in the piece of text code. You can see that __Get__ is called and __Set__ is called. Both __Get__ and __Set__ have a parameter. The parameters are shown in the definition, but also in the call. In the call, the parameters are actually created and the parameters in the calls are worked with. The __Out__ of __Get__ and the __In__ of __Set__ are tied together with an object line. You can’t explicitly see the order in which __Get__ and __Set__ are called, but because the __Set__ call references a parameter in the __Get__ call, __Set__ is dependent of __Get__, therefore __Get__ is called first.
 
-####### Implicit Calls
+######### Implicit Calls
 
 In text code you can write the two calls in a single code line:
 
@@ -1156,7 +1244,7 @@ __Get . Out__ is assigned to the parameter of __Set__. You’re referencing a pa
 
 You can see that the __Out__ parameter of the __Get__ procedure *definition* is referenced. This implicitly causes a call to __Get__. In *explicit calls* you reference the parameters of the procedure *call*, not the procedure *definition*.
 
-####### Implicit Return Value Reference
+######### Implicit Return Value Reference
 
 __Out__ is __Get__’s return value. Therefore, the identifier __Get__ symbolizes the return value. __In__ is a parameter of __Set__ and you don’t necessarily need to mention its name in the parameter list. This all makes the text code:
 
@@ -1180,9 +1268,9 @@ In the diagram above, the return value is implicitly referenced by pointing to t
 
 *Explicit cal, implicit return value reference*
 
-####### Multiple Out Parameters
+######### Multiple Out Parameters
 
-######## Implicit Return Value Reference
+########## Implicit Return Value Reference
 
 Implicit return value reference is only a way to reference the *return value*, not to the other out parameters. The other out parameters might be explicitly referenced. 
 
@@ -1190,7 +1278,7 @@ Implicit return value reference is only a way to reference the *return value*, n
 
 *Implicit return value reference, explicit out parameter reference*
 
-######## Implicit Calls
+########## Implicit Calls
 
 When you reference output parameters of a procedure multiple times, each reference causes its own call to be made. 
 
@@ -1208,9 +1296,9 @@ If you want to reference multiple output parameters of a single call, you might 
 
 < Call in blue >
 
-##### C
+####### C
 
-###### ? Referencing a Procedure Member
+######## ? Referencing a Procedure Member
 
 < 2008-10-08 Most of what is said in this section no longer applies, because a more explicit notation is desired, to make things less ambiguous, and some remarks have already been thought through and work differently. >  
 Referencing a diamond’s members is like reading a procedure member.
@@ -1227,9 +1315,9 @@ It always happens just after the diamond executes.
 
 < Might denote that the notation above is not an output situation. It’s an implicit call situation >
 
-#### Brainstorm Items
+###### Brainstorm Items
 
-##### 1
+####### 1
 
 Oh, die assignments lijken afzonderlijke referenties, waardoor je implicit calls krijgt? Of is dat alleen bij referenties naar inhoud van squares?
 
@@ -1238,18 +1326,18 @@ Oh, nee! Hè! Ik heb ergens in dit hoofdstuk iets staan over een diamond die exe
 Dat is verkeerd  
 \>
 
-##### 2
+####### 2
 
 *Nice wording:*  
 A reference to something inside a square causes an implicit call to the square, because the procedure is required to execute in order to reference something inside of it.
 
-##### 3
+####### 3
 
 Implicit calls when referencing square contents (and their explicit diagram representations)
 
-### Brainstorm
+##### Brainstorm
 
-#### Summary of Old Subdivision
+###### Summary of Old Subdivision
 
 - Implicit call and Explicit call
 - Implicit return value reference
@@ -1260,7 +1348,7 @@ Implicit calls when referencing square contents (and their explicit diagram repr
     - Containment in other diamond
     - Consult of a parameter.
 
-#### New Subdivision
+###### New Subdivision
 
 - Out, In and Thru
     - Using reference parameters for in, out and thru (hard to control whether it’s in out or thru: you just use the object)
@@ -1283,22 +1371,22 @@ Implicit calls when referencing square contents (and their explicit diagram repr
     - Implicit call and Explicit call
     - Implicit return value reference
 
-#### New Main Subdivision
+###### New Main Subdivision
 
 - Out, In and Thru
 - Execution Basics
 - Execution Order
 - Implicit Notations
 
-#### New Brainstorm Texts
+###### New Brainstorm Texts
 
-##### New
+####### New
 
 - < > The assignment destination consult is not seen as a consult. < > Consult of a parameter as assignment destination might not require execution of the parameter holder.
 - Executor represents one execution per call on definition.
     - Implicit calls are not made for diamond contents reference < >
 
-##### Old
+####### Old
 
 < 2008-10-08 This talks about parameter passing, a notation for value assignment and about implicit call. Those three are spread over multiple documentation sections. But do the cross out here. >
 
@@ -1342,9 +1430,9 @@ Oh jawel! Consult vind gewoonlijk altijd plaats in epiloog, maar bij assignment 
 
 The last picture is an acceptable substitute for implicit state assignment. It is actually explicit state assignment, but it looks like a real connection between A and B. A rule though: state assignment takes two arguments: destination = source. In the notation on the left you might follow the direction of the line you’d get between A and B if you ignore the call thing in between to find out which is the first argument and which is the second. In text code it goed from left to right. In the diagram It goes from ... < >. B is destination A is source. I mean B is the one that gets the line. B is source of line, but destination of assignment. 
 
-#### Argument Access Summary
+###### Argument Access Summary
 
-##### In, Out and Thru
+####### In, Out and Thru
 
 - Using reference parameters for in, out and thru (hard to control whether it’s in out or thru: you just use the object)
 - Using State as In, Out and Thru
@@ -1355,14 +1443,14 @@ The last picture is an acceptable substitute for implicit state assignment. It i
 - Procedure reference too
 - If example
 
-### Brainstorm
+##### Brainstorm
 
-#### Other
+###### Other
 
 __*Different Wording, Not important, though*__
 
 In an explicit call you always see the the call displayed as a separate diamond. If the call is made, the call is like a created object. After the call it is destroyed. When the call is created, you can reference its contents from anywhere without causing another call.
 
-## Other
+#### Other
 
 There are three types of parameters: in, out and thru. In parameters go in, out parameters go out and thru parameters come in and go out.
