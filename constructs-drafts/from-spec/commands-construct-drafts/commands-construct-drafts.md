@@ -4,7 +4,7 @@ Circular Language Construct Drafts | From Spec
 Commands Construct Drafts
 -------------------------
 
-`[ Preliminary documentation ]`
+`[ Deprecated documentation ]`
 
 __Contents__
 

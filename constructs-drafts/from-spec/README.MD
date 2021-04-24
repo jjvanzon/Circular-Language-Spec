@@ -12,27 +12,19 @@ Topics that may be recognizable from the *spec*, but then maybe lesser worked ou
 
     - Lesser worked out ideas about this topic.
 
+- [Commands Construct Drafts](commands-construct-drafts)
+
+    - Lesser worked out ideas about this topic.
+
 - [Basic Diagram Elements Construct Drafts](basic-diagram-elements-construct-drafts.md)
 
     - Lesser worked out ideas about this topic.
-
-- [Commands Construct Drafts](commands-construct-drafts.md)
-
-    - Lesser worked out ideas about this topic.
-
-- [Commands Rule Rich](commands-rule-rich.md)
-
-    - Texts that might show the struggle to make this diagram notation work for commands.
 
 - [Relationships Construct Drafts](relationships-construct-drafts.md)
 
     - Lesser worked out ideas about this topic.
 
 - [Relationships Line Merge & Symbol Merge](relationships-line-merge-and-symbol-merge.md)
-
-- [Start & Stop Construct Drafts](start-and-stop-construct-drafts.md)
-
-    - Some ideas for the Start & Stop article from the Commands section in the spec.
 
 - [System Command Call Notations Construct Drafts](system-command-call-notations-construct-drafts.md)
 

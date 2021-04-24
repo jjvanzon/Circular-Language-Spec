@@ -124,3 +124,8 @@ Clauses `are` like command definitions, `therefore` they `can` have parameters `
 
 If `you make` an inactive clause public, `you might` make it an __Object `Out`__ parameter: an object `produced or determined` by `the` command. It `might` be an __Object `Out`__ parameter, that `is` an executable object. That `might` work `just fine`.
 
+-----
+
+`<< terminology >>`  
+
+If __A__ is an input parameter and __B__ is an output parameter, you can also say that the command *takes* __A__ and *gives* __B__.

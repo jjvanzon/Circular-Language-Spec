@@ -4,7 +4,7 @@ Circular Language Construct Drafts | From Spec
 Commands Rule Rich
 ------------------
 
-`[ Preliminary documentation ]`
+`[ Deprecated documentation ]`
 
 __Contents__
 
@@ -212,3 +212,12 @@ For instance: the rule ‘sub-commands are never referenced’, may be changed t
 \> Perhaps change that rule for real.
 
 JJ
+
+-----
+
+
+When a procedure is called, the contained procedure *references* are *not* called.
+
+![](images/7.%20Commands%20Ideas.018.jpeg)
+
+When __A__ is called, __B__ and __D__ are called, but not __C__.

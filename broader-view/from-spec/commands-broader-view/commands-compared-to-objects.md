@@ -18,6 +18,7 @@ __Contents__
 - [Command Call Compared to Objects](#command-call-compared-to-objects-1)
 - [Command Reference Compared to Objects](#command-reference-compared-to-objects)
 - [Active Clause Compared to Objects](#active-clause-compared-to-objects)
+- [Command Contents](#command-contents)
 - [Reading & Writing Parameters](#reading--writing-parameters)
 - [Resolution When `Not Allowed` For Commands](#resolution-when-not-allowed-for-commands)
 - [Assignment of Commands Compared to Objects](#assignment-of-commands-compared-to-objects)
@@ -125,6 +126,24 @@ A command reference `represents the same` object as `the` object `pointed to`. `
 < May change terminology. >
 
 An active clause `is analogous` to an object that `might not` have a class. A *call* `is more` like an object that *`might`* have a class.
+
+### Command Contents
+
+A command can contain anything an object can. Anything you can declare inside a class can also be declared in a command.
+
+![](images/7.%20Commands%20Ideas.023.jpeg)
+
+That way commands are like classes, but commands have special characteristics.
+
+The objects inside a command might be regarded:
+
+- Input parameters
+- Output parameters
+- Throughput parameters
+- Return values
+- Local variables
+
+The private objects are the command’s local variables.
 
 ### Reading & Writing Parameters
 
