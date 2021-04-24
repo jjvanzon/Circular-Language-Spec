@@ -8,7 +8,6 @@ This article aims to introduce the basics of Circular language. Circular languag
 
 __Contents__
 
-- [Introduction](#introduction)
 - [Splitting up Ideas](#splitting-up-ideas)
 - [Reusing Ideas](#reusing-ideas)
 - [Commands](#commands)
@@ -110,11 +109,11 @@ But you do not necessarily need to see all those details in order to understand 
 
 ![](images/Circle%20Language%20Spec%20Introduction.014.jpeg)
 
-Other names for commands could be *operations, procedures*, *functions, methods* or *routines.* There are more synonyms.
+Other names for commands could be *operations, procedures, functions, methods* or *routines.* Those might be more or less synonyms.
 
 ### Command Parameters
 
-Commands can have *parameters*. Those are like instructions passed along with the command that make the command behave differently. The __Button . Set Text__ command, for instance, has a __Text__ parameter, which indicates what the new text of the button might be.
+Commands can have *parameters*. Those are like instructions passed along with the command that make the command behave differently. The __Button . Set Text__ command for instance, has a __Text__ parameter, which indicates what the new text of the button might be.
 
 Text can also be seen as an *idea*. It can be thought of as an *object*. That way, it is *objects* that serve as parameters.
 
@@ -125,15 +124,15 @@ The command can do whatever it wants with the parameters passed to it. Arguably,
 - pass the parameter to another command *or* 
 - call commands of the parameter.
 
+Pass the __Text__ parameter on to the next command (__Format Text__):
+
 ![](images/Circle%20Language%20Spec%20Introduction.016.jpeg)
 
-*Pass the __Text__ parameter on to the next command (__Format Text__).*
+Call a command of the __Text__ parameter:
 
 ![](images/Circle%20Language%20Spec%20Introduction.017.jpeg)
 
-*Call a command of the __Text__ parameter.*
-
-The terms *parameter* and *argument* are sometimes used interchangedly. They are not entirely the same thing, but the difference might be too subtle to talk about right now.
+The terms *parameter* and *argument* are sometimes used interchangeably. They might not be entirely the same thing, but the difference might be too subtle to talk about right now.
 
 ### Interfaces
 

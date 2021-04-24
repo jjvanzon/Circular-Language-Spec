@@ -76,7 +76,7 @@ __Contents__
 
 ### [Parameters](parameters)
 
-- ![](images/Circle%20Language%20Spec%20Overview.009.png)
+- <img src="images/Circle%20Language%20Spec%20Overview.009.png" width="65" />
 
   Parameters are like instructions passed along with a command that could make the command behave differently. This documentation tries to view parameters as a relationship between commands and objects. It entertains an idea of how *command parameters* and *class methods* might be interchangeable, as if they might be one and the same concept. It is not sure, if this idea might still be in there in the future. Also a diagram notation of commands and parameters is suggested.
 
@@ -84,7 +84,7 @@ __Contents__
 
 - ![](images/Circle%20Language%20Spec%20Overview.010.png)
 
-  A module might be like a little world in which objects and commands live. A module might be a site, a computer program, a library, a name space or other kind of module. A module may group together functionality or data. Some modules might have a property that might be called *global* access to its sub-objects, which may also be described as: Anything directly inside the module can be directly referenced from anywhere within that module. A module might also be just an object with this special 'global access' property.
+  A module might be like a little world in which objects and commands live. A module might be a site, a computer program, a library, a name space or other kind of module. A module may group together functionality or data. Some modules might have a property that might be called *global* access to its sub-objects, which may also be described as: Anything directly inside the module can be directly referenced from anywhere within that module. A module might also be regarded, just an object with this special 'global access' property.
 
 ### [Execution Flow](execution-flow)
 
@@ -96,7 +96,7 @@ __Contents__
 
 - ![](images/Circle%20Language%20Spec%20Overview.007.png)
 
-  One possible application of how this language might run in practice, is one where systems may be composed of *system objects*. System objects could be the *actual* objects, that a system runs on. Maybe this is a specific use case of the language, but describing it, seems to have allowed more generally usable things to fall out. One of the intentions of system objects could be, to manage *relationships* between objects. They might also control *system aspects*, such as __Value__, __Object__, __Class__, __Interface__ and __Execution__ and __Multiplicity__. Those aspects could be controlled through *system commands* like __Get__ and __Set__. The story moves on to assignment commands. The idea is that assignment commands copy an aspect from one object to another. The *System Interfaces* documentation also tries to show connectors, connections and different notational forms to regulate these aspects.
+  This topic may be a bit abstract, but it might show a base upon which other concepts may lean. One possible application of how this language might run in practice, is one where systems may be composed of *system objects*. System objects could be the *actual* objects, that a system runs on. Maybe this is a specific use case of the language, but describing it, seems to have allowed more generally usable things to fall out. One of the intentions of system objects could be, to manage an object's *relationships* with other objects. They might also control *system aspects*, such as __Value__, __Object__, __Class__, __Interface__ and __Execution__ and __Multiplicity__. Those aspects could be controlled through *system commands* like __Get__ and __Set__. The story moves on to assignment commands. The idea is that assignment commands copy an aspect from one object to another. The *System Interfaces* documentation also tries to show connectors, connections and different notational forms to regulate these aspects.
 
 ### [Black Boxes](black-boxes)
 

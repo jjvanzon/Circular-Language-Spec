@@ -46,13 +46,13 @@ Relationships between the following concepts may be demonstrated.
 
 | | | |
 |--------------------|-|------------------------------------------------------------------------------|
-| __Command definition__ | <img src="images/command-definition.png" width="75" /> | Does not execute directly but may get called. |
-| __Command call__ | <img src="images/command-call.png" width="70" /> | Executes a command definition it points out. |
-| __Command reference__ | <img src="images/command-reference.png" width="90" /> | Pointer to another command. |
-| __Active clause__ | <img src="images/active-clause.png" width="60" /> | Command defined inside another command, that may execute. |
-| __Inactive clause__ | <img src="images/inactive-clause.png" width="60" /> | Command defined inside another command, that might not be executed directly. |
-| __Parameter__ | <img src="images/parameter.png" width="80" /> | Instruction passed to a command, that makes it behave differently. |
-| __Local variable__ | <img src="images/local-variable.png" width="80" /> | Helper variables inside a command, invisible from the outside. |
+| __Command definition__ | <img src="images/command-definition.png" width="100" /> | Does not execute directly but may get called. |
+| __Command call__ | <img src="images/command-call.png" width="100" /> | Executes a command definition it points out. |
+| __Command reference__ | <img src="images/command-reference.png" width="120" /> | Pointer to another command. |
+| __Active clause__ | <img src="images/active-clause.png" width="80" /> | Command defined inside another command, that may execute. |
+| __Inactive clause__ | <img src="images/inactive-clause.png" width="80" /> | Command defined inside another command, that might not be executed directly. |
+| __Parameter__ | <img src="images/parameter.png" width="100" /> | Instruction passed to a command, that makes it behave differently. |
+| __Local variable__ | <img src="images/local-variable.png" width="100" /> | Helper variables inside a command, invisible from the outside. |
 
 ### Command Calls in a Command Definition
 

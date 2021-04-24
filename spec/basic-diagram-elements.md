@@ -23,6 +23,8 @@ __Contents__
 - [Wavy Line](#wavy-line)
 - [Cross](#cross)
 - [Relations Between Symbols](#relations-between-symbols)
+    - [Containment](#containment)
+    - [Lines](#lines-1)
     - [Object Reference](#object-reference)
 - [Connecting Object Symbols](#connecting-object-symbols)
     - [Object Connection](#object-connection)
@@ -59,7 +61,7 @@ The diagrams might involve set of basic elements, that may include the following
 
 ![](images/Basic%20Diagram%20Elements.001.png) ![](images/Basic%20Diagram%20Elements.002.png) ![](images/Basic%20Diagram%20Elements.003.png) ![](images/Basic%20Diagram%20Elements.004.png) ![](images/Basic%20Diagram%20Elements.005.png) ![](images/Basic%20Diagram%20Elements.006.png)
 
-![](images/Basic%20Diagram%20Elements.007.png) ![](images/Basic%20Diagram%20Elements.008.png) ![](images/Basic%20Diagram%20Elements.009.png) ![](images/Basic%20Diagram%20Elements.010.png) ![](images/Basic%20Diagram%20Elements.011.png)
+![](images/Basic%20Diagram%20Elements.007.png) ![](images/Basic%20Diagram%20Elements.008.png) ![](images/Basic%20Diagram%20Elements.009.png) <img src="images/Basic%20Diagram%20Elements.010.png" width="60" /> ![](images/Basic%20Diagram%20Elements.011.png)
 
 ![](images/Basic%20Diagram%20Elements.012.png) ![](images/Basic%20Diagram%20Elements.013.png) ![](images/Basic%20Diagram%20Elements.014.png)
 
@@ -149,7 +151,7 @@ A dotted line might point out an *interface*. Shapes connected by dotted lines m
 
 ### Wavy Line
 
-![](images/Basic%20Diagram%20Elements.016.png)
+<img src="images/Basic%20Diagram%20Elements.016.png" width="70" />
 
 A wavy line could represent the concept of *values*. When shapes are connected with a wavy line, it might mean, they have the same value or perhaps soon might get the same value. Another name for this line might be a *value line*.
 
@@ -161,13 +163,17 @@ A cross might be placed inside a symbol to indicate, that an symbol is *nothing 
 
 ### Relations Between Symbols
 
+#### Containment
+
 Relations between symbols might be expressed by *containment:*
 
-![](images/Basic%20Diagram%20Elements.018.png)
+![](images/Basic%20Diagram%20Elements.018a.png)
+
+#### Lines
 
 and then possibly by connecting them with *lines:*
 
-![](images/Basic%20Diagram%20Elements.018.png)
+<img src="images/Basic%20Diagram%20Elements.018b.png" width="110" />
 
 #### Object Reference
 
@@ -207,7 +213,7 @@ The two symbols might be two separate individual objects, they may also have a d
 
 When two object symbols might be connected with a wavy line, it might mean the objects might get the same value.
 
-![](images/Basic%20Diagram%20Elements.021.png)
+<img src="images/Basic%20Diagram%20Elements.021.png" width="110" />
 
 This could express that the values of the two objects are the same. It might also mean transferring a value from one object to the next.
 
@@ -450,7 +456,7 @@ However, there might be different ideas of how to apply dashed lines, for instan
 
 An oval shape or ring might be drawn through two lines:
 
-![](images/Basic%20Diagram%20Elements.055.png)
+<img src="images/Basic%20Diagram%20Elements.055.png" width="200" />
 
 It might mean, that the symbols have a special relationship to each other. How this might be applied might come to light in other articles. It could be applied to the concept of *automatically synchronized bidirectional relationships*.
 
@@ -470,7 +476,7 @@ They may merge together to one line:
 
 Lines might merge together under different circumstances, that may come to light in other articles.
 
-There may be some reservations about using this notation, because it seem to introduce ambiguity or the suggestion of ambiguity, but the idea may still appear here and there even though it might be deprecated.
+There may be some reservations about using this notation, because it seem to introduce ambiguity or the suggestion of ambiguity, but the idea may still appear here and there, even though it might be deprecated.
 
 ### Symbol Merge
 

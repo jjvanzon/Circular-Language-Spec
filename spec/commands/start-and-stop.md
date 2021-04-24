@@ -78,9 +78,9 @@ The following execution states and execution commands may be considered:
 
 ### Execution Commands & States
 
-Which execution commands could be invoke, may depend on the execution state a command is in. When a command has *finished*, it might not be possible to *play* it again. When a command would be *not runnable*, it might not be an option to *play* at all.
+Which execution commands could be invoke, may depend on the execution state a command is in. When a command has *finished*, it might not be possible to *play* it again. When a command would be *not runnable*, it might not be an option to *play* it at all.
 
-These *execution states* might not have a corresponding *execution command*:
+These *execution states* might correspond to an *execution command*:
 
 - __Not Runnable__
 - __Finished__

@@ -52,11 +52,11 @@ Relations between classes may determine the configuration of how objects are con
 
 A sub-object inside a class could have a class. This might relate these two classes together.
 
-![](images/1.%20Relationships.003.png)
+<img src="images/1.%20Relationships.003.png" width="300" />
 
 When class might set the class for a sub-object like that, the sub-object might only be an object of that specific class.
 
-![](images/1.%20Relationships.004.png)
+<img src="images/1.%20Relationships.004.png" width="250" />
 
 __Object B__ might point out a class with a dashed line connected to __Related Class B__. Otherwise, __Object B__'s connection with the solid line might not be possible.
 
@@ -78,7 +78,7 @@ Then any type of object might be assigned as a related item. That might not intr
 
 A class may also specify related *lists*. That might be expressed in a diagram with a nonagon symbol:
 
-![](images/1.%20Relationships.007.png)
+<img src="images/1.%20Relationships.007.png" width="80" />
 
 #### Related List Without a Class
 
@@ -134,7 +134,7 @@ The picture above might express a __1__ to __1__ relationship between __Class A_
 
 Other multiplicities might also be used. A multiplicity of __n__ might be expressed with a nonagon:
 
-![](images/1.%20Relationships.014.png)
+<img src="images/1.%20Relationships.014.png" width="100" />
 
 A nonagon might represent a list of things.
 
@@ -157,7 +157,7 @@ The picture below aims to display a bidirectional __n__ to __1__ relationship be
 
 There may also be bidirectional __n to n__ relationships, where one class might hold a list of items of another class, and the other class might also hold a list of items, that connects back to the first class. The picture below aims to display a bidirectional __n to n__ relationship between __Class A__ and __Class B__.
 
-![](images/1.%20Relationships.016b.png)
+<img src="images/1.%20Relationships.016b.png" width="300" />
 
 #### Relationship with Multiple Classes
 
@@ -171,7 +171,7 @@ A class may relate to itself. For instance, a person might relate to a parent, w
 
 A class with a bidirectional relationship to itself could look as follows in a diagram:
 
-![](images/1.%20Relationships.018.png)
+<img src="images/1.%20Relationships.018.png" width="150" />
 
 #### Example
 
@@ -191,13 +191,13 @@ One idea about bidirectional relationships between objects might be: for each re
 
 Drawing out the separate counterparts of a relationship between two objects might look like this:
 
-![](images/1.%20Relationships.020.png)
+<img src="images/1.%20Relationships.020.png" width="270" />
 
 To express the closeness of the relationship between the two objects, a relational ring may be placed around the two lines:
 
-![](images/1.%20Relationships.021.png)
+<img src="images/1.%20Relationships.021.png" width="270" />
 
-The bidirectional relationships between objects all seem be __1__ to __1.__ That might be a bit of a bold statement. And it might be just one way of looking at it. But here the idea is entertained that when one object might refer to another, the other one might refer back to the first one.
+The bidirectional relationships between objects all seem to be __1__ to __1.__ That might be a bit of a bold statement. And it might be just one way of looking at it. But here the idea is entertained that when one object might refer to another, the other one might refer back to the first one.
 
 #### Lists
 
@@ -205,19 +205,19 @@ Bidirectional __1__ to __n__ and __n__ to __n__ relationships between classes mi
 
 1 to n:
 
-![](images/1.%20Relationships.022.png)
+<img src="images/1.%20Relationships.022.png" width="270" />
 
 A multiplicity of __n__ may create a list inside a class. In objects these lists might contain separate items. Any item in the list references an object and that might give the other object *one* reference back again, in case the relationship is bidirectional.
 
 For __n__ to __n__ relationships it may work similarly:
 
-![](images/1.%20Relationships.023.png)
+<img src="images/1.%20Relationships.023.png" width="270" />
 
 #### Object Related to Itself
 
 Sometimes an object might relate to itself. For a bidirectional relationships this might look as follows:
 
-![](images/1.%20Relationships.024.png)
+<img src="images/1.%20Relationships.024.png" width="110" />
 
 ### Bidirectional Relationship Synchronization
 
@@ -225,19 +225,19 @@ In a bidirectional relationship between classes, one class might relate to anoth
 
 An object of one class might refer to an arbitrary object of another class, which then might refer back to an arbitrary object of the first class again, but not necessarily the object we started with.
 
-![](images/1.%20Relationships.025.png)
+<img src="images/1.%20Relationships.025.png" width="320" />
 
 Two unidirectional relationships might not be synchronized with each other. It might not make the two objects refer to each other. It might just make the two objects refer to an arbitrary object of the other class.
 
 To see to it one object relating to another might make the other object relate back to the first object again, it might be useful for the two counterparts of the relationship to be synchronized.
 
-![](images/1.%20Relationships.026.png)
+<img src="images/1.%20Relationships.026.png" width="240" />
 
 The tell-tale sign in a diagram, that a bidirectional relationship might be *synchronized*, could be a relational ring around lines.
 
 When a sub-object's target might then be changed, the other side of the relationship might also be updated.
 
-![](images/1.%20Relationships.027.png)
+<img src="images/1.%20Relationships.027.png" width="320" />
 
 *Relationship synchronization* might mean ensuring the integrity between the two counterparts of a relationship. For example, when a __Lid__ might be assigned to a __Jar__, the __Jar__ might also be assigned to the __Lid__.
 
@@ -253,6 +253,6 @@ The idea might be that that there might be software libraries that have code tha
 
 The implementation procedures for relationship synchronization might be expressed in a diagram, when a *system interface* of a symbol might be displayed.
 
-![](images/1.%20Relationships.028.png)
+<img src="images/1.%20Relationships.028.png" width="420" />
 
 System interfaces might be like the inner workings of a symbol. Those inner workings might be tucked away and not always visible. System interfaces may have a chapter on their own. The picture above might just be an impression of what that might look like. There might be more than one way of doing it.

@@ -39,79 +39,78 @@ The reasons for the delay of creation of private contents are explained later. F
 
     - Command is created
 
-      ![](images/3.%20Creation%20Behavior%20Of%20Commands.001.png)
+      <img src="images/3.%20Creation%20Behavior%20Of%20Commands.001.png" width="300" />
 
     - Parameters / public contents are present
 
-      ![](images/3.%20Creation%20Behavior%20Of%20Commands.002.png)
+      <img src="images/3.%20Creation%20Behavior%20Of%20Commands.002.png" width="300" />
 
     - Private contents are *not* created  
       (private objects, clauses and command calls)
-  
-      ![](images/3.%20Creation%20Behavior%20Of%20Commands.003.png)
+
+      <img src="images/3.%20Creation%20Behavior%20Of%20Commands.003.png" width="300" />
 
     - __Reference__ and __Object Out__ parameters are already assigned
- 
-      ![](images/3.%20Creation%20Behavior%20Of%20Commands.004.png)
 
+      <img src="images/3.%20Creation%20Behavior%20Of%20Commands.004.png" width="300" />
 
     - __Value__ parameter assignments refer to their sources and targets
-  
-      ![](images/3.%20Creation%20Behavior%20Of%20Commands.005.png)
+
+      <img src="images/3.%20Creation%20Behavior%20Of%20Commands.005.png" width="300" />
 
 - Right before a command executes:
 
     - __Value In__ parameter assignments are executed
 
-      ![](images/3.%20Creation%20Behavior%20Of%20Commands.006.png)
+      <img src="images/3.%20Creation%20Behavior%20Of%20Commands.006.png" width="300" />
 
     - Private contents are created  
       (private objects, clauses and command calls)  
       (shown as a copy from the command’s definition)
       (The definition of the parent command is not shown in the diagram.)
 
-      ![](images/3.%20Creation%20Behavior%20Of%20Commands.007.png)
+      <img src="images/3.%20Creation%20Behavior%20Of%20Commands.007.png" width="300" />
 
     - *Sub*-commands’ parameters / public contents are created  
       (shown as a copy from the sub-command’s definition)  
       (The contents of the definition of the sub-command are not shown in the diagram.)
 
-      ![](images/3.%20Creation%20Behavior%20Of%20Commands.008.png)
+      <img src="images/3.%20Creation%20Behavior%20Of%20Commands.008.png" width="300" />
 
     - Mind, that the sub-command’s private contents are not created, which disincludes its private objects, command calls and clauses.
 
-      ![](images/3.%20Creation%20Behavior%20Of%20Commands.009.png)
+      <img src="images/3.%20Creation%20Behavior%20Of%20Commands.009.png" width="300" />
 
     - *Sub*-commands’ __Reference__ and __Object Out__ parameters are assigned  
       (targets copied from the parent command’s definition)  
       (The definition of the parent command is not shown in the diagram.)
 
-      ![](images/3.%20Creation%20Behavior%20Of%20Commands.010.png)
+      <img src="images/3.%20Creation%20Behavior%20Of%20Commands.010.png" width="300" />
 
     - Sub-commands’ __Value__ parameter assignments refer to their sources and targets  
       (copied from the parent command’s definition)
 
-      ![](images/3.%20Creation%20Behavior%20Of%20Commands.011.png)
+      <img src="images/3.%20Creation%20Behavior%20Of%20Commands.011.png" width="300" />
 
 - After that the command call might be run:
 
-  ![](images/3.%20Creation%20Behavior%20Of%20Commands.012.png)
+  <img src="images/3.%20Creation%20Behavior%20Of%20Commands.012.png" width="300" />
 
   If the parent command runs, it might automatically execute all the sub-commands inside it one by one, following the same procedure of call creation.  
   The sub-command’s public content needed to be created in order to instantiate the parameter passings, part of the parent command.
 
 - After a command call has finished:
 
-  ![](images/3.%20Creation%20Behavior%20Of%20Commands.013.png)
+  <img src="images/3.%20Creation%20Behavior%20Of%20Commands.013.png" width="300" />
 
     - __Value Out__ parameter assignments are executed
 
-      ![](images/3.%20Creation%20Behavior%20Of%20Commands.014.png)
+      <img src="images/3.%20Creation%20Behavior%20Of%20Commands.014.png" width="300" />
 
     - Private contents are released  
       (private objects, clauses and command calls)
 
-      ![](images/3.%20Creation%20Behavior%20Of%20Commands.015.png)
+      <img src="images/3.%20Creation%20Behavior%20Of%20Commands.015.png" width="300" />
 
 #### Calls In A Parent Command
 
@@ -166,7 +165,7 @@ Just like other commands, that do not have a definition, a clause’s contents a
 
 Clauses being permanently created as long as the parent command is created even counts for clauses inside a command call. Right before a call is executed, its private contents are created, including the whole depth of its clauses.
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.016.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.016.png" width="300" />
 
 In theory the definition of the clause could be pointing to the clauses inside the command call’s definition. The private contents of the clause could be created only just before the clause is run. But this is not done. As soon as a clause in a command call is copied from the definition, the clause has no connection anymore to the clause in the definition. Therefore, it needs to define its own private contents.
 
@@ -174,7 +173,7 @@ Note, that though everything of the clauses is created, parameters of an active 
 
 Even when the clause structure inside a command is very deep, the *whole* depth of the clause structure is recursively created when the parent command is created.
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.017.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.017.png" width="400" />
 
 The sub-call inside the big call and inside the big definition only have the public parameter created, not their private contents as neither of them is running. But the clause, with all its contents, are created inside the big call all anyway.
 
@@ -182,29 +181,29 @@ The sub-call inside the big call and inside the big definition only have the pub
 
 Command calls inside a parent command have special creation behavior:
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.018.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.018.png" width="200" />
 
 Their publics are created as soon as the parent command is created
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.019.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.019.png" width="200" />
 
 but their private contents are only created when the command call is about to be run.
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.020.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.020.png" width="200" />
 
 There is also the *inactive* form of a command call inside a parent command.
 
 Special creation behavior might *not* count for inactive command objects inside a parent command, that have a class redirection to a command definition.
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.021.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.021.png" width="200" />
 
 This looks like the inactive form of a command call, but this kind of object might not have special creation behavior like that. It is an uncommon situation. But an inactive command inside a parent command with a class reference to a definition *can* be referenced
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.022.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.022.png" width="300" />
 
 Unlike its active form, which can not be referenced.
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.023.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.023.png" width="300" />
 
 Therefore, it can also be *class* referenced by a call. In that case its private and public contents had better be there more permanently, or the *call* to it can not instantiate private contents at all.
 
@@ -220,7 +219,7 @@ In that case its private and public contents had better be there more permanentl
 
 Creating its private contents, might not create a recursive creation or anything: the inactive call’s own private calls do not create *their* private contents, so there is no recursion there.
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.026.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.026.png" width="300" />
 
 ### No Overhead of Command Creation
 
@@ -230,7 +229,6 @@ One of the reasons why private contents of a call are only created just before t
 
 Another reason why private contents of a call are only created just before the call is run, is because this prevents circular creation of commands. Some command may call another command and that command may call the first one again. Command calls are usually private, so if you might create all possible command calls, you end up creating an endless recurrence of command creations
 
-
 ![](images/3.%20Creation%20Behavior%20Of%20Commands.027.png)
 
 while in reality, the recurrence might be broken by some conditional execution of one of the command calls. Creating private contents of command calls prevents this circular creation and only creates a command object when it might actually run.
@@ -239,19 +237,19 @@ while in reality, the recurrence might be broken by some conditional execution o
 
 A definition is always dormant, and never runs. So also the *calls* inside a definition might never run.
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.028.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.028.png" width="200" />
 
 Therefore, the private contents of calls inside a definition are *never* created.
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.029.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.029.png" width="200" />
 
 A call in a definition never shows the call’s private contents. The call at most shows its parameters, so the public contents of the command call.
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.030.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.030.png" width="200" />
 
 Only the *definition* of the called command might show private contents.
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.031.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.031.png" width="200" />
 
 So you might hop to the definition of a call to see the private contents of the command.
 
@@ -259,11 +257,11 @@ Not creating a call’s private contents before it even runs, takes away discuss
 
 Bear in mind, that when an executable object might not redirect its definition, it has to define its own private contents, because nothing else defines its private contents but he himself.
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.032.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.032.png" width="200" />
 
 But *calls inside* such a definition, only have their *public* contents are created again.
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.033.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.033.png" width="360" />
 
 ### A Call in a Call Shows Private Contents When Running
 
@@ -271,13 +269,13 @@ A call inside another call only contains its private content when it is actually
 
 If a call is not running:
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.034.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.034.png" width="200" />
 
 Then you might hop to the definition of a call to see the private contents of the command.
 
 When a call is running, you do see its private contents:
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.035.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.035.png" width="200" />
 
 Not creating a call’s private contents before it even runs, takes away discussion about when to display and when not to display a command’s private contents.
 
@@ -285,10 +283,10 @@ Not creating a call’s private contents before it even runs, takes away discuss
 
 A clause in a clause only ever runs when its top parent command is an active command object. If the top parent command is an inactive command object, for instance a command definition, then even an *active* clause in it is dormant.
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.036.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.036.png" width="300" />
 
 The clause might only ever run in a *call* to the definition, but then it is a copy of the definition’s clause:
 
-![](images/3.%20Creation%20Behavior%20Of%20Commands.037.png)
+<img src="images/3.%20Creation%20Behavior%20Of%20Commands.037.png" width="380" />
 
 An executable command inside a command definition can not be run, because its parent is dormant, and an executable sub-command can not be referenced from elsewhere either.
