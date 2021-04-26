@@ -14,15 +14,23 @@ __Contents__
     - [Beware of Active Command References in Commands](#beware-of-active-command-references-in-commands)
     - [Sub-Commands Not Manually Started](#sub-commands-not-manually-started)
 - [Command Assignment Rule Rich](#command-assignment-rule-rich)
+- [Executor & Execution](#executor--execution)
+- [Diamonds Execute When Direct Parent Executes](#diamonds-execute-when-direct-parent-executes)
+- [Diamonds Can only be Directly Inside a Command Symbol, Diamonds Can’t be Directly Inside an Object Symbol](#diamonds-can-only-be-directly-inside-a-command-symbol-diamonds-cant-be-directly-inside-an-object-symbol)
+- [You Can Only Access Members of a Diamond](#you-can-only-access-members-of-a-diamond)
+- [You can Only Access Members of a Diamond, while the Diamond is executing](#you-can-only-access-members-of-a-diamond-while-the-diamond-is-executing)
+- [Accessing a Diamond Member During a Call](#accessing-a-diamond-member-during-a-call)
+- [Passing an object reference to a command](#passing-an-object-reference-to-a-command)
+- [Command can set object reference itself too](#command-can-set-object-reference-itself-too)
 - [Loose Ideas](#loose-ideas)
 
 ### Introduction
 
 A struggle to make it work seems noticeable here. To make the notation work for commands just like for objects. Checking if commands can retain their integrity when subjected to this diagram notation. What might be expressed with this diagram notation, would it be *valid* for commands? Can this diagram notation be *sufficient* for expressing different command situations that might be imagined?
 
-The answer to these quesions might be: "Yes."
+The answer to these quesions seems to be yes.
 
-The Circular Language Spec itself might be more about the *notation* and what it would *mean*, rather than rules and constraints. But texts about the struggle to make it work may still be retained here, in *Construct Drafts*.
+The Circular Language Spec itself might be more about *notation* and *meaning*, rather than rules and constraints. But texts about the struggle to make it work may still be retained here in this article inside *Construct Drafts*.
 
 ### Parent Controls Its Sub-Executions
 
@@ -46,7 +54,7 @@ For instance: the rule ‘sub-commands are never referenced’, may be changed t
 
 This is a rule for enforcement of control of a parent command over the execution of its sub-commands.
 
-Active clauses and command calls inside another command and are never referenced, because a command has to have full control over the execution of its sub-commands.
+Active nested commandsand command calls inside another command and are never referenced, because a command has to have full control over the execution of its sub-commands.
 
 ![](images/6.%20Comands%20Misc%20Issues.001.png)
 
@@ -124,6 +132,105 @@ The target definition of one command reference or call is assigned as the target
 
 You can only let two command symbols refer to the same target object when they are command *definitions*. You can not assign a command object to a command call. This is due to the special object creation behavior of a call. Command calls can never *redirect* their object. They are always *their own* object, and they are only created, when they are running. Command definitions, however, are permanently created objects, and a command definition symbol can redirect its object target.
 
+### Executor & Execution
+
+Any diamond symbol might be called an executor, since it can execute. A single diamond might execute multiple times. An individual execution of a diamond might be called an *execution*.
+
+It might be ok to call an executor an execution, but perhaps only while it’s executing.
+
+### Diamonds Execute When Direct Parent Executes
+
+A diamond doesn’t execute automatically. It only executes when the parent symbol executes.
+
+![](images/7.%20Commands%20Ideas.039.jpeg)
+
+*A executes only as B executes.*
+
+So diamonds inside squares don’t really execute.
+
+![](images/7.%20Commands%20Ideas.040.jpeg)
+
+But if you call B, then you get the following:
+
+![](images/7.%20Commands%20Ideas.041.jpeg)
+
+Actually, The letters distinguish the different symbols. If you only use letters to distinguish which command definition it’s about, you get the following:
+
+![](images/7.%20Commands%20Ideas.042.jpeg)
+
+So in that sense, diamond A might execute. But not the definition executes, only the call executes.
+
+### Diamonds Can only be Directly Inside a Command Symbol, Diamonds Can’t be Directly Inside an Object Symbol
+
+`<< rule rich >>`
+
+Because execution can only take place in a command, a diamond can’t be directly inside an object Symbol
+
+![](images/7.%20Commands%20Ideas.043.jpeg)
+
+### You Can Only Access Members of a Diamond
+
+`<< rule rich >>`
+
+You can (usually) only access members of a diamond, because a square is never created, just like you can’t access members of a non created object.
+
+![](images/7.%20Commands%20Ideas.044.jpeg)
+
+![](images/7.%20Commands%20Ideas.045.jpeg)
+
+### You can Only Access Members of a Diamond, while the Diamond is executing
+
+`<< rule rich >>`
+
+Because a diamond is only created when it’s executing, you can only access members when the diamond is in execution.
+
+However, *static* members of a command can be freely accessed through any square or diamond that represents it, even when it is not executing.
+
+(Some members of a command can be static. In that case the member belongs to the command definition. Those member are the same for any reference or call to a command.)
+
+### Accessing a Diamond Member During a Call
+
+`<< rule rich >>`
+
+So how might you access a diamond member *during* a call? Well, usually only commands called by the executing diamond can access the call parent.
+
+![](images/7.%20Commands%20Ideas.046.jpeg)
+
+Diamond A executes, then diamond B executes and accesses a member of diamond A. It’s not the command definition, the square, that accesses a member of diamond A, but it’s the specific call to the command that access diamond A. So usually you’ll only see child diamonds accessing parent diamonds, on top of the more common situation of write access before a call and read access after.
+
+Multi-threading, which is basically multiple things running at the same time, may also make you able to access a diamond in execution, but this might not usually be a good idea. Restrictions might be imposed onto multi-threading to avoid such situations.
+
+![](images/7.%20Commands%20Ideas.047.jpeg)
+
+Two sibling commands are executing at the same time, in different threads, which makes it possible for one executing command to access the other. Thread control makes it possible to avoid such volatile situations.  
+(the fact that the diamonds are drawn with thicker lines above, says that they are both in execution. If they wouldn’t be thicker drawn, then the diagram above doesn’t explicitly show that there is a multi-threaded situation. Regarding it single threadedly, the situation above is just the bigger diamond executing first, after which the smaller diamond uses its return value.)
+
+< What happens when two threads try to initiate the same diamond or a thread tries to initiate a diamond that’s already executing? I might want that one figured out. >
+
+< Consider the example of diamond reference to diamond in the main argument reference example. >
+
+### Passing an object reference to a command
+
+`<< rule rich >>`
+
+![](images/7.%20Commands%20Ideas.048.jpeg)
+
+When you pass an object reference to a command, the command can access the object.  
+In the situation above it seems the command could access the object anyway (because a command can access everything accessible to the object that contains it). It *can*, but in this case the *caller* decides which object to point to, not the called.
+
+### Command can set object reference itself too
+
+`<< rule rich >>`
+
+When the caller (the parent diamond) sets the line, then the caller decides which object the call might refer to.
+
+So lines going out of a diamond aren’t necessarily lines set by the caller.  
+Commands can’t set line going *into* the square themselves. Those are always set by the caller.
+
+It’s important that the command itself sets lines, because the line targets of command members often serve as the output values of the command.
+
+< I don’t know a notation to distinct sets by the caller and sets by the call. Well... in a more explicit notation you might see that the caller calls the set or the called calls the set. >
+
 ### Loose Ideas
 
 Expected behavior might be that a command call might only run once.
@@ -153,28 +260,6 @@ In Circular command references and their target commands could in theory be eith
 ![](images/1.%20Commands%20Main%20Concepts.025.png)
 
 It `might not matter` whether it `is` squares or diamonds, `because the only` difference between a square and a diamond, `is` that a square `can not` be executed and a diamond `*can*`.
-
------
-
-A clause `might not` redirect its definition, because then `it might` be a command call.
-
------
-
-A clause `might not` redirect its object, because then `it might` be a command reference.
-
------
-
-A clause `is never` situated inside an object, or `it might` not be a clause.
-
------
-
-Active clauses, command calls and active command references in parent commands `are always` private, because `you can not` reference a sub-command.
-
-![](images/1.%20Commands%20Main%20Concepts.052.png)
-
-But *inactive* clauses `*can*` be referenced and might be made public.
-
-![](images/1.%20Commands%20Main%20Concepts.053.png)
 
 -----
 

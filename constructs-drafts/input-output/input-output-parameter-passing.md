@@ -44,8 +44,8 @@ __Contents__
     - [More](#more)
 - [Brainstorm 2008-09-27](#brainstorm-2008-09-27)
 - [Brainstorm 2008-09-26](#brainstorm-2008-09-26)
-- [More Ideas](#more-ideas)
-- [From the Original Symbol Documentation](#from-the-original-symbol-documentation)
+- [Loose Ideas](#loose-ideas)
+- [From the Original Symbol Documentation from 2004](#from-the-original-symbol-documentation-from-2004)
     - [Procedure Parameters](#procedure-parameters)
         - [Input, Output and Throughput Parameters](#input-output-and-throughput-parameters)
     - [Get and Set are Inseparable](#get-and-set-are-inseparable)
@@ -773,7 +773,7 @@ I think being able to allow a Set from the outside, and then still being able to
 So those allowances should go hand in hand: if you can write it from the outside, you can read if from the inside. If you can write it on the inside, you can read it from the outside.  
 but WHERE it is then read could be somewhere totally else than directly outside or directly inside. MIGHT THAT count for SETTING too?
 
-### More Ideas
+### Loose Ideas
 
 Parameters,  
 2008-08
@@ -853,8 +853,6 @@ ByRefs have pros and cons in different situations.
 
 -----
 
-`<< parameters >>`  
-
 The objects inside a command can be regarded:
 
 - Input parameters
@@ -863,16 +861,29 @@ The objects inside a command can be regarded:
 - Return values
 - Local variables
 
-`<< parameters >>`  
+-----
 
 The input parameters of a command are its writable objects. The output values are its readable objects. Objects that are read-write are like in-out or thru parameters.
 
-`<< return values >>`  
+-----
+
+Return values,
 
 One readable object can be chosen to be the return value, which promotes it to being the main output parameter. This might not give it extra capabilities, only an extra notation in certain places. The return value might be denoted in a diagram by putting the term __Return__ near one of the parameters.
 
+< Don’t forget that you don’t need to read or write necessarily, you can also just call a member of the parameter instead of read or write it... explore that >
 
-### From the Original Symbol Documentation
+-----
+
+Passing a command reference,
+
+When you pass a command reference to a child command:
+
+![](images/7.%20Commands%20Ideas.050.jpeg)
+
+The child can call the referenced command at will.
+
+### From the Original Symbol Documentation from 2004
 
 #### Procedure Parameters
 

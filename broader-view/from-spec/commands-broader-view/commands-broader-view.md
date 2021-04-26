@@ -24,8 +24,7 @@ On top of those `special` commands, a `few basic` commands exist, like __If__’
 But `basically`, a command `just calls` more commands. Machine instructions, arithmetic operators, comparative and Boolean algebra, assignments, and execution control statements such as __If__ and __For__, `are` *`all` just commands*.
 
 Apart from sub-commands, a command `can` also contain data.
-(Inactive clauses and inactive command references for instance are also considered data, and `are` not sub-commands, because they `do not` execute.)
-
+(Inactive nested commands and inactive command references for instance are also considered data, and `are` not sub-commands, because they `do not` execute.)
 
 ### Execute Once
 

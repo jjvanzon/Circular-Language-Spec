@@ -76,9 +76,9 @@ If there is nothing to point to, while there is an aspect to express visually, t
 __This IS the text that lead me to wanting a diamond symbol instead of a call line.__
 
 < Why not, actually? Ok, you can’t do it in other languages, but why can’t you do it here. Oh. When you reference a call, it makes the call line function as a reference line rather than a call line. If you want this to be different, a reference to call might become a call, which is not something you want to happen in your system. The reference target might get control over if the source might be a reference or if the source might execute. The source might have no say in that. Unacceptable. So, a candidate for an alternative rule for A Call Can’t be Called or Referenced is: if you reference a call, its call line is treated as a reference line.   
-If you call the reference to a call… 
+If you call the reference to a call... 
 
-Een call line is eigenlijk een reference line, maar als de parent square execute, dan execute ook de call. Hmmm… het is bijna of het allemaal reference lines zijn en sommige squares executen nou eenmaal. O! Dat is ook zo! Clauses moeten ook kunnen executen en ik zeg nu dat iets alleen execute als het een call line heeft! Hmmm… o, een call is een tag, niet een line!
+Een call line is eigenlijk een reference line, maar als de parent square execute, dan execute ook de call. Hmmm... het is bijna of het allemaal reference lines zijn en sommige squares executen nou eenmaal. O! Dat is ook zo! Code blocks moeten ook kunnen executen en ik zeg nu dat iets alleen execute als het een call line heeft! Hmmm... o, een call is een tag, niet een line!
 
 Een call een aparte line maken is net zoiets als een triangle een aparte line maken. Hetzelfde mankement. Dan lijkt het logisch, dat een call een apart symbool krijgt, niet een aparte line. O. Welk symbool?
 
@@ -107,7 +107,7 @@ However, object symbols aren’t different to their container if they ...
 
 To find the definition you follow the reference line between ...
 
-Just consider: if a diamond doesn’t have a line it is an executing clause, when a square doesn’t have a line, it’s a non executing clause. In both cases it’s a definition. But the two case differ in that in one case it executes and in the other it doesn’t. If an object symbol has no line, it’s an object. Simply stated, it needs an object line for it not to be a type. A procedure symbol shouldn’t need a line to be an execution.
+Just consider: if a diamond doesn’t have a line it is an executing code block, when a square doesn’t have a line, it’s a local function. In both cases it’s a definition. But the two case differ in that in one case it executes and in the other it doesn’t. If an object symbol has no line, it’s an object. Simply stated, it needs an object line for it not to be a type. A procedure symbol shouldn’t need a line to be an execution.
 
 When a characteristic’s presence shouldn’t be dependent of the presence of a line, it needs to be drawn out with a shape type. If a characteristic is dependent of the presence of a line, it’s the line presence that gives it the characteristic. If I’d want object symbols to serve only as a type and not as an object, then I’d need to reserve a special shape to separate types from objects. Now, to make an object symbol serve as a type only and not as a type, I make the Object Get Inaccessible? NO. That’s not true. Actually I’d might not be able to Symbol Get if it’s for the purpose of assigning an object line.
 
@@ -121,9 +121,9 @@ It’s important for some procedure symbols not to function as an execution. Oth
 
 I’m still in doubt. I think it’s good that there’s a diamond symbol and that there aren’t separate object, type and interface shapes. I just can’t define *why* yet.
 
-It totally makes sense to use separate type, interface and object shapes, but … it’s just not that important. Not as important as the function of diamonds, triangles and pentagons. 
+It totally makes sense to use separate type, interface and object shapes, but ... it’s just not that important. Not as important as the function of diamonds, triangles and pentagons. 
 
-Sure it is nice to see in a system that one set of object symbols serve as the types… So it might be an idea to make it possible to give them a different shape type… when you can’t use the symbol as an object target.
+Sure it is nice to see in a system that one set of object symbols serve as the types... So it might be an idea to make it possible to give them a different shape type... when you can’t use the symbol as an object target.
 
 The total reason of the diamond and triangle symbols is that the effect of it has greater consequences for the behavior of the system. A diamond symbol makes rules easier to understand: it’s easier to get: “you can’t place a diamond in an object symbol”, than it is to remember “a procedure symbol in an object symbol can’t have a call line”
 

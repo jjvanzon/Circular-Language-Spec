@@ -10,13 +10,17 @@ Commands Construct Drafts Articles
 
     - Lesser worked out ideas about this topic.
 
+- [Clauses](clauses.md)
+
+    - In earlier texts the term 'clause' was defined differently. This article may go into the originally defined concept.
+
 - [Commands Rule Rich](commands-rule-rich.md)
 
     - Texts that might show the struggle to make this diagram notation work for commands.
 
-- [Deprecated Meaning of Clause](deprecated-meaning-of-clause.md)
+- [Creation Behavior of Commands | Construct Drafts](creation-behavior-of-commands-construct-drafts.md)
 
-    - In earlier texts the term 'clause' was defined differently. This article may go into the originally defined concept.
+    - Lesser worked out ideas about this topic.
 
 - [Start & Stop Construct Drafts](start-and-stop-construct-drafts.md)
 

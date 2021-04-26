@@ -9,6 +9,7 @@ Commands Compared to Objects
 __Contents__
 
 - [Introduction](#introduction)
+- [Command Versus Class](#command-versus-class)
 - [Commands Anywhere](#commands-anywhere)
 - [Exchangeability Between Commands & Objects](#exchangeability-between-commands--objects)
 - [Executables & Executions](#executables--executions)
@@ -17,7 +18,6 @@ __Contents__
 - [Command Call Compared to Objects](#command-call-compared-to-objects)
 - [Command Call Compared to Objects](#command-call-compared-to-objects-1)
 - [Command Reference Compared to Objects](#command-reference-compared-to-objects)
-- [Active Clause Compared to Objects](#active-clause-compared-to-objects)
 - [Command Contents](#command-contents)
 - [Reading & Writing Parameters](#reading--writing-parameters)
 - [Resolution When `Not Allowed` For Commands](#resolution-when-not-allowed-for-commands)
@@ -26,6 +26,15 @@ __Contents__
 ### Introduction
 
 Notation for commands may differ from that of objects, mainly by usage of different shapes. The similarity in notations may lead to questions like: "Are commands just like objects? In what way might they be different?" This article tries to explore ways commands may compare to objects. Command creation behavior might not be covered, but be a separate topic altogether. 
+
+### Command Versus Class
+
+*Commands* differ from *classes* in the following ways:
+
+- They may execute
+- A new command object may be created *on each call* to the command and the command object may be destroyed soon after the call.
+- The public writable objects may be written only right before the call.
+- The public readable objects may be read only right after the call.
 
 ### Commands Anywhere
 
@@ -121,15 +130,9 @@ A command reference might be achieved with *object* redirection.
 
 A command reference `represents the same` object as `the` object `pointed to`. `So the` command reference’s contents `are the exact same` objects as that of `the` command object it `points to`.
 
-### Active Clause Compared to Objects
-
-< May change terminology. >
-
-An active clause `is analogous` to an object that `might not` have a class. A *call* `is more` like an object that *`might`* have a class.
-
 ### Command Contents
 
-A command can contain anything an object can. Anything you can declare inside a class can also be declared in a command.
+A command might contain anything an object can. Anything you can declare inside a class can also be declared in a command.
 
 ![](images/7.%20Commands%20Ideas.023.jpeg)
 
@@ -143,7 +146,20 @@ The objects inside a command might be regarded:
 - Return values
 - Local variables
 
-The private objects are the command’s local variables.
+The private objects might be the command’s local variables.
+
+As for commands inside commands:
+
+- Squares inside commands might be:
+    
+    - Local functions,
+    - Clauses or
+    - Command references
+
+- Diamonds inside commands might be:
+    
+    - Code blocks
+    - Command calls
 
 ### Reading & Writing Parameters
 

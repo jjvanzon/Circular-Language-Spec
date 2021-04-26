@@ -10,6 +10,7 @@ __Contents__
 
 - [Introduction](#introduction)
 - [Diagram Elements](#diagram-elements)
+    - [Squares May Not Execute](#squares-may-not-execute)
 - [Derived Constructs](#derived-constructs)
 - [Command Definitions](#command-definitions)
 - [Command Calls](#command-calls)
@@ -21,6 +22,7 @@ __Contents__
 - [Local Function](#local-function)
 - [Clauses](#clauses)
 - [Lambda Expression](#lambda-expression)
+- [Nested Commands](#nested-commands)
 - [Parameters and Return Values Not Covered](#parameters-and-return-values-not-covered)
 - [Implementation](#implementation)
 - [Conclusion](#conclusion)
@@ -100,7 +102,17 @@ Here is an attempt to summarize these traits that commands might have:
 - __references__
 - __prototypes__ (or "definitions")
 - __(not) named__
-  
+
+#### Squares May Not Execute
+
+![](images/7.%20Commands%20Ideas.037.jpeg)
+
+A square might not execute. Well, they may only execute when called. __A__ may call __B__:
+
+![](images/7.%20Commands%20Ideas.038.jpeg)
+
+ But then again: __A__ may be the one that’s executing, not __B__. So diamonds may execute, and squares may not.
+
 ### Derived Constructs
 
 Constructs that might be known from other programming languages, may have a reasonably unique expression using combinations of these more basic elements from Circular. Here follows an attempt to accompany this claim with some examples.
@@ -121,7 +133,7 @@ Command definitions themselves might not necessarily execute. Just copies of it,
 
 <img src="images/1.%20Commands%20Main%20Concepts.008.png" width="50" />
 
-If a command might only be used or usable as a definition, it might be drawn with a *dashed border*:
+If a command might used as a definition, it might be drawn with a *dashed border*:
 
 <img src="images/1.%20Commands%20Main%20Concepts.006.png" width="70" />
 
@@ -277,7 +289,7 @@ A code block might be *nameless*. It might not have any *lines* going towards it
 
 A code block might also look like this:
 
-<img src="images/1.%20Commands%20Main%20Concepts.015.png" width="100" />
+<img src="images/1.%20Commands%20Main%20Concepts.015a.png" width="100" />
 
 The previous diagram might show a code block within a definition (a square). This diagram shows the code block while that command is executed.
 
@@ -371,7 +383,7 @@ It also may look a bit like a nameless local function that you might pass a refe
 
 <img src="images/1.%20Commands%20Main%20Concepts.021.png" width="170" />
 
-The following was another attempt to define what a clause might be in Circular: *a command inside another command with no lines going to or from it*. That definition might not cover it. It might be just terminology quibbles. Later on it seemed to not matter much. Command-like constructs from other languages seem to be expressible within Circular perhaps in a reasonable fashion.
+The exact interpretation might not matter too much. Clauses seem adequately expressible in Circular.
 
 So a clause might be expressed with:
 
@@ -411,6 +423,28 @@ Honestly said, in Circular there might not be a way to distinguish it from *clau
 Or:
 
 <img src="images/1.%20Commands%20Main%20Concepts.023.png" width="160" />
+
+### Nested Commands
+
+A nested command may be a command inside another command with no lines going to or from it.
+
+They may look like this:
+
+<img src="images/7.%20Commands%20Ideas.021.jpeg" width="90" />
+<img src="images/7.%20Commands%20Ideas.019.jpeg" width="80" />
+<img src="images/1.%20Commands%20Main%20Concepts.015a.png" width="60" />
+<img src="images/1.%20Commands%20Main%20Concepts.015b.png" width="60" />
+
+They may coincide with the terms:
+
+- Code blocks
+- Clauses
+- Local functions
+- Lambda expressions
+
+Those may all be examples of *nested commands*. Sometimes however, it might be easier to use a single name for these phenomena.
+
+A distinction between *active* nested commands and *inactive* nested commands might be relevant sometimes. Code blocks might be *active* nested commands. A local function may be an *inactive* nested command for instance.
 
 ### Parameters and Return Values Not Covered
 

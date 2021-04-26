@@ -100,6 +100,14 @@ Below you might find examples of *required* connectors. Not every possible conne
 
 Just as in procedures, you could make certain members of a type required, while others are optional. You might fill in the required members on creation of the object. This should be there for the same reason as required parameters are there in a procedure: the function of the object just doesn’t make sense unless you write the required members. The programmer is made extra aware of that by making the members required.
 
+-----
+
+Required and Optional Parameters,
+
+As a command is like a type it may seem that you have full freedom regarding which objects you write and which you don’t. However, many parameters of commands are *required* parameters. This means that you *might* write something to it before the call. Optional parameters are ones that do not necessarily need to be written before the call. Required parameters are there to on one hand ensure a parameter holds a right value. That however, could have been done by the command’s initializing the value itself. The main point of required parameters is that a lot of times the function of a command just doesn’t make sense unless you write the parameters. The programmer is made extra aware of that by making the parameter required.
+
+In diagram code, optional parameters are denoted by displaying the word __Optional__ near the optional parameter. The other parameters are required.
+
 ### Variable Amount of Arguments
 
 #### Concept

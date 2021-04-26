@@ -15,8 +15,7 @@ __Contents__
 - [Pentagons not Exchangeable with Triangles and Circles](#pentagons-not-exchangeable-with-triangles-and-circles)
 - [Extra Indication](#extra-indication)
 - [Interface Access](#interface-access)
-- [Clause Access](#clause-access)
-- [Modules, Interfaces and Clauses](#modules-interfaces-and-clauses)
+- [Modules, Interfaces and Nested Commands](#modules-interfaces-and-nested-commands)
 - [Brainstorm](#brainstorm)
 
 ### Introduction 
@@ -150,41 +149,17 @@ So its like the borders of triangles can be ignored in inward access. You might 
 
 < This concept could have a place in Genericity. >
 
-### Clause Access
+### Modules, Interfaces and Nested Commands
 
-< Nice sentence:  
-A procedure makes all direct children accessible to all blocks.  
-Only is that true? >
+So usually only parents can access their descendant’s things.
 
-Clauses are embedded procedures. In a diagram these are squares contained in other squares that have no lines. Beware that a diagram may not be showing the line, even when it exist.
+Modules, interface implementations and nested commands make exceptions on those rules.
 
-![](images/0.%20Special%20Access.016.png)
-
-Clauses have access to the contents of all their descendant clauses and the procedure definition they’re in. This means that a clause can directly access its containing definition’s members:
-
-![](images/0.%20Special%20Access.017.png)
-
-and all its encapsulating clauses:
-
-![](images/0.%20Special%20Access.018.png)
-
-But a clause might not have access to a clause that doesn’t encapsulate it.
-
-![](images/0.%20Special%20Access.019.png)
-
-So its like the borders of clauses can be ignored in outward access.
-
-### Modules, Interfaces and Clauses
-
-So usually only parents can access their ancestor’s things.
-
-Modules, interface implementations and clauses make exceptions on those rules.
-
-The public ancestors of a module are accessible from anywhere within the module, the borders of triangles can be ignored and a clause can directly access anything in its descendant clauses and its procedure definition.
+The public descendants of a module are accessible from anywhere within the module, the borders of triangles can be ignored and a nested command can directly access anything in its ancestor nested commands its procedure definition.
 
 ### Brainstorm
 
-Clause members can access the members of its ancestor procedure symbols. 
+Nested command members can access the members of its ancestor procedure symbols. 
 
 -----
 
