@@ -31,10 +31,10 @@ The alternative interpretation of the word clause may have been: *a command insi
 
 A mapping between that alternative interpretation and perhaps more common IT terminology might be:
 
-| Alternative term | More Common IT terminology |
-|------------------|----------------------------|
-| Active clause    | Code block                 |
-| Inactive clause  | Local function or clause   |
+| Alternative term | More Common IT terminology                  |
+|------------------|---------------------------------------------|
+| Active clause    | Code block                                  |
+| Inactive clause  | Clause / local function / lambda expression |
 
 ### Command Clause
 

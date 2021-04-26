@@ -152,8 +152,9 @@ As for commands inside commands:
 
 - Squares inside commands might be:
     
-    - Local functions,
-    - Clauses or
+    - Local functions
+    - Lambda expressions
+    - Clauses
     - Command references
 
 - Diamonds inside commands might be:
