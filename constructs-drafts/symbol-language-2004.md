@@ -45,7 +45,7 @@ Contents
 - [Procedures](#procedures-1)
 - [Procedure Call](#procedure-call)
 - [Procedure Reference](#procedure-reference)
-- [Procedure Clause](#procedure-clause)
+- [Nested Procedure](#nested-procedure)
 - [Procedure Contents](#procedure-contents)
 - [Procedure Versus Type](#procedure-versus-type)
 - [Required and Optional Parameters](#required-and-optional-parameters)
@@ -153,11 +153,11 @@ Contents
     - [Reference](#reference)
     - [Call](#call)
     - [Definition](#definition)
-    - [Clause](#clause)
+    - [Nested Procedure](#nested-procedure-1)
     - [Active and Inactive](#active-and-inactive)
-    - [Active Clause](#active-clause)
-    - [Inactive Clause](#inactive-clause)
-    - [Sub Clause](#sub-clause)
+    - [Active Nested Procedure](#active-nested-procedure)
+    - [Inactive Nested Procedure](#inactive-nested-procedure)
+    - [Deeper Nested Procedure](#deeper-nested-procedure)
     - [Sub Procedure](#sub-procedure)
     - [Parameter and Argument](#parameter-and-argument)
     - [Executor and Execution](#executor-and-execution)
@@ -190,7 +190,7 @@ Contents
     - [Accessing a Diamond Member During a Call](#accessing-a-diamond-member-during-a-call)
     - [Passing an object reference to a procedure](#passing-an-object-reference-to-a-procedure)
     - [Procedure can set object reference itself too](#procedure-can-set-object-reference-itself-too)
-    - [Clause Access](#clause-access)
+    - [Nested Procedure Access](#nested-procedure-access)
     - [Passing a procedure reference](#passing-a-procedure-reference)
     - [The If example](#the-if-example)
     - [Brainstorm](#brainstorm)
@@ -260,7 +260,7 @@ Contents
 - [Selection and Repetition](#selection-and-repetition)
 - [Selection](#selection)
 - [Repetition](#repetition)
-- [Clauses: Embedded Procedures](#clauses-embedded-procedures)
+- [Clauses: Nested Procedures](#clauses-nested-procedures)
 - [Unconditional Jumps](#unconditional-jumps)
     - [Unconditional Jumps](#unconditional-jumps-1)
 - [Text Code Blabbing](#text-code-blabbing)
@@ -280,8 +280,8 @@ Contents
     - [Pentagons not Exchangeable with Triangles and Circles](#pentagons-not-exchangeable-with-triangles-and-circles)
     - [Extra Indication](#extra-indication)
 - [Interface Access](#interface-access)
-- [Clause Access](#clause-access-1)
-- [Modules, Interfaces and Clauses](#modules-interfaces-and-clauses)
+- [Nested Procedure Access](#nested-procedure-access-1)
+- [Modules, Interfaces and Nested procedures](#modules-interfaces-and-nested-procedures)
 - [Brainstorm](#brainstorm-6)
     - [=> Access Ways](#-access-ways)
 - [Overriding](#overriding)
@@ -1170,7 +1170,7 @@ When a procedure is called, the contained procedure *references* are *not* calle
 
 When __A__ is called, __B__ and __D__ are called, but not __C__.
 
-### Procedure Clause
+### Nested Procedure
 
 A diamond without a line:
 
@@ -1180,11 +1180,11 @@ Also executes, when its parent procedure executes, but it doesn’t delegate to 
 
 ![](images/Symbol%20Language%20(2004).054.jpeg)
 
-It is an undelegated part of a procedure, called a *clause*.
+It is an undelegated part of a procedure, called a *nested procedure*.
 
 Because a diamond doesn’t might be a call, it is also called an *execution* or an *execution point*.
 
-An undelegated square inside a procedure is also considered a clause.
+An undelegated square inside a procedure is also considered a nested procedure.
 
 ![](images/Symbol%20Language%20(2004).055.jpeg)
 
@@ -1192,7 +1192,7 @@ but it doesn’t execute, unless you call it.
 
 ![](images/Symbol%20Language%20(2004).056.jpeg)
 
-A splineless diamond is also called an *active clause*, while a splineless square is also called an *inactive clause*.
+A splineless diamond is also called an *active nested procedure*, while a splineless square is also called an *inactive nested procedure*.
 
 ### Procedure Contents
 
@@ -1212,7 +1212,7 @@ The objects inside a procedure can be regarded:
 
 The input parameters of a procedure are its writable objects. The output values are its readable objects. Objects that are read-write are like in-out or thru parameters. One readable object can be chosen to be the return value, which promotes it to being the main output parameter. This might not give it extra capabilities, only an extra notation in certain places. The return value is denoted in a diagram by putting the term __Return__ near one of the parameters. The private objects are the procedure’s local variables. If __A__ is an input parameter and __B__ is an output parameter, you can also say that the procedure *takes* __A__ and *gives* __B__.
 
-Squares inside procedures are non executing clauses or procedure references. Diamonds inside procedures are executing clauses or procedure calls.
+Squares inside procedures are non executing nested procedures or procedure references. Diamonds inside procedures are executing nested procedures or procedure calls.
 
 ### Procedure Versus Type
 
@@ -1231,7 +1231,7 @@ In diagram code, optional parameters are denoted by displaying the word __Option
 
 ### Procedure Interface
 
-A procedure has an interface too, consisting of all public contents of the procedure: public objects (in, out or thru) and public procedures (clauses, calls and references). A procedure can have an interface line. The target of this interface line might be a procedure, in case of which both procedures get the same parameters.
+A procedure has an interface too, consisting of all public contents of the procedure: public objects (in, out or thru) and public procedures (nested procedures, calls and references). A procedure can have an interface line. The target of this interface line might be a procedure, in case of which both procedures get the same parameters.
 
 *Procedure with an external interface:*  
 ![](images/Symbol%20Language%20(2004).058.png)
@@ -1363,7 +1363,7 @@ Especially when it’s a diamond:
 
 ![](images/Symbol%20Language%20(2004).069.jpeg)
 
-And it is very *uncommon* to reference a procedure clause from an object:
+And it is very *uncommon* to reference a nested procedure from an object:
 
 ![](images/Symbol%20Language%20(2004).070.png)
 
@@ -2595,12 +2595,12 @@ Here I introduce basic terms in the area of executions and parameters. Here’s 
 - Reference
 - Call
 - Definition
-- Clause
+- Nested procedure
 - Active
 - Inactive
-- Active clause
-- Inactive clause
-- Sub clause
+- Active nested procedure
+- Inactive nested procedure
+- Deeper nested procedure
 - Sub procedure 
 - Parameter
 - Argument
@@ -2631,49 +2631,49 @@ A definition is a procedure symbol with no reference line at all.
 
 The reference line should not exist at all, not just not be shown. It’s a definition, because the contents of the procedure aren’t defined elsewhere, but defined in the symbol itself.
 
-#### Clause
+#### Nested Procedure
 
 A procedure symbol inside another procedure symbol:
 
 ![](images/Symbol%20Language%20(2004).218.jpeg)
 
-without a reference line is called a clause.
+without a reference line is called a nested procedure.
 
-A clause is a definition contained in a procedure:
+A nested procedure is a definition contained in a procedure:
 
 ![](images/Symbol%20Language%20(2004).219.png)
 
-This type of definition is usually not called a definition. The clause might be directly contained by a procedure. So this is not a clause:
+This type of definition is usually not called a definition. The nested procedure might be directly contained by a procedure. So this is not a nested procedure:
 
 ![](images/Symbol%20Language%20(2004).220.png)
 
-The clause can be a diamond or a square. Its container can also be a diamond as well as a square. A clause might not have a reference line, or it might have been a reference or a call, not a clause.
+The nested procedure can be a diamond or a square. Its container can also be a diamond as well as a square. A nested procedure might not have a reference line, or it might have been a reference or a call, not a nested procedure.
 
 #### Active and Inactive
 
 A diamond executes, a square might not. A diamond is said to be active, while a square is inactive.
 
-#### Active Clause
+#### Active Nested Procedure
 
-A clause that is a diamond, is called an active clause:
+A nested procedure that is a diamond, is called an active nested procedure:
 
 | ![](images/Symbol%20Language%20(2004).221.png) | ![](images/Symbol%20Language%20(2004).222.png) |
 |------------------------------------------------|------------------------------------------------|
 
 It’s called active, because it executes.
 
-#### Inactive Clause
+#### Inactive Nested Procedure
 
-An inactive clause is a clause that doesn’t execute. So it’s a clause that is a square:
+An inactive nested procedure is a nested procedure that doesn’t execute. So it’s a nested procedure that is a square:
 
 | ![](images/Symbol%20Language%20(2004).223.png) | ![](images/Symbol%20Language%20(2004).224.png) |
 |------------------------------------------------|------------------------------------------------|
 
 It won’t execute unless you call it.
 
-#### Sub Clause
+#### Deeper Nested Procedure
 
-A sub clause is a clause inside a clause. So it’s a procedure symbol without a reference line in a procedure symbol without a reference line in a procedure symbol, for instance:
+A deeper nested procedure is a nested procedure inside a nested procedure. So it’s a procedure symbol without a reference line in a procedure symbol without a reference line in a procedure symbol, for instance:
 
 ![](images/Symbol%20Language%20(2004).225.png)
 
@@ -3096,16 +3096,16 @@ It’s important that the procedure itself sets lines, because the line targets 
 
 < I don’t know a notation to distinct sets by the caller and sets by the call. Well... in a more explicit notation you might see that the caller calls the set or the called calls the set. >
 
-#### Clause Access
+#### Nested Procedure Access
 
-Clauses have special access privileges compared to delegated procedure symbols.
+Nested procedures have special access privileges compared to delegated procedure symbols.
 
 ![](images/Symbol%20Language%20(2004).270.jpeg)
 
 < Bad explanation following >  
-A clause can freely access anything of its parent clause and the parent clause’s parent clause, etcetera. If going up the procedure ancestry a procedure symbol is encountered with a reference line, the clause can access this ancestor freely, but not any higher in the procedure ancestry.
+A nested procedure can freely access anything of its parent nested procedure and the parent nested procedure’s parent nested procedure, etcetera. If going up the procedure ancestry a procedure symbol is encountered with a reference line, the nested procedure can access this ancestor freely, but not any higher in the procedure ancestry.
 
-In the picture above, the top two lines could have been set by A itself. The first resides in A’s parent clause. The second resides in the *execution* that parents A, so still accessible to A. The last line, crossed out, can’t be set by A itself, because it resides outside A’s containing call. It can be set only by a symbol higher than A’s containing call, for instance B.
+In the picture above, the top two lines could have been set by A itself. The first resides in A’s parent nested procedure. The second resides in the *execution* that parents A, so still accessible to A. The last line, crossed out, can’t be set by A itself, because it resides outside A’s containing call. It can be set only by a symbol higher than A’s containing call, for instance B.
 
 Squares formally can’t have outward lines, except for static members. There are situations in which non static members of squares are shown to have outward lines, but those are discussed later.
 
@@ -3169,9 +3169,9 @@ A procedure symbol can ony have a call line if it’s directly inside another pr
 
 ![](images/Symbol%20Language%20(2004).274.png)
 
-Only when you call a clause or an embedded procedure reference, the line doesn’t exit the procedure first:
+Only when you call a nested procedure or an embedded procedure reference, the line doesn’t exit the procedure first:
 
-*Call to clause:*  
+*Call to nested procedure:*  
 ![](images/Symbol%20Language%20(2004).275.jpeg)
 
 *Call an internal procedure reference:*  
@@ -3662,15 +3662,15 @@ The resulting sequence of code lines corresponds to the execution order required
     - Reference
     - call
     - definition
-    - clause
-    - active clause
-    - inactive clause
-    - sub clause / sub procedure 
+    - nested procedure
+    - active nested procedure
+    - inactive nested procedure
+    - deeper nested procedure / sub procedure 
     - ...
 
 -----
 
-- Clause access
+- Nested procedure access
 - Differences with Com with returning object references
 - Inside directly accessible, outside only 'indirectly' accessible (if line set FOR you)
 - Seeming randomly referencing diamond members. 
@@ -3709,7 +3709,7 @@ The resulting sequence of code lines corresponds to the execution order required
         - By owner
         - By child executions (~ is this the proper place for this?)
             - The callees of a diamond can access the caller's members if given references to them
-    - Clause access
+    - Nested procedure access
 
 -----
 
@@ -3717,10 +3717,10 @@ The resulting sequence of code lines corresponds to the execution order required
     - Reference
     - call
     - definition
-    - clause
-    - active clause
-    - inactive clause
-    - sub clause / sub procedure 
+    - nested procedure
+    - active nested procedure
+    - inactive nested procedure
+    - deeper nested procedure / sub procedure 
     - Definitions of the terms parameter and argument
     - < Which precisely? >
     - ...
@@ -3919,7 +3919,7 @@ __References between siblings is uncommon.__
 Nothing active can reside directly in an object.
 
 ![](images/Symbol%20Language%20(2004).335.jpeg)   
-__Unconditional jump = Call to sibling active clause.__   
+__Unconditional jump = Call to sibling active nested procedure.__   
 If you are familiar with the term *unconditional jump*, them this is the equivalent of that in Symbol. Can only take place directly inside a procedure.
 
 #### Other: Explore Later
@@ -3944,7 +3944,7 @@ __This IS the text that lead me to wanting a diamond symbol instead of a call li
 Why on earth not, actually? Ok, you can’t do it in other languages, but why on earth can’t you do it here. Oh. When you reference a call, it makes the call line function as a reference line rather than a call line. If you want this to be different, a reference to call might become a call, which is not something you want to happen in your system. The reference target might get control over if the source might be a reference or if the source might execute. The source might have no say in that. Unacceptable. So a candidate for an alternative rule for A Call Can’t be Called or Referenced is: if you reference a call, its call line is treated as a reference line.  
 If you call the reference to a call... 
 
-Een call line is eigenlijk een reference line, maar als de parent square execute, dan execute ook de call. Hmmm... het is bijna of het allemaal reference lines zijn en sommige squares executen nou eenmaal. Hè! Dat is ook zo! Clauses moeten ook kunnen executen en ik zeg nu dat iets alleen execute als het een call line heeft!!! Hmmm... hè, een call is een tag, niet een line!!!!!!!!!!!!
+Een call line is eigenlijk een reference line, maar als de parent square execute, dan execute ook de call. Hmmm... het is bijna of het allemaal reference lines zijn en sommige squares executen nou eenmaal. Hè! Dat is ook zo! Nested procedures moeten ook kunnen executen en ik zeg nu dat iets alleen execute als het een call line heeft!!! Hmmm... hè, een call is een tag, niet een line!!!!!!!!!!!!
 
 Een call een aparte line maken is net zo iets als een triangle een aparte line maken. Hetzelfde mankement. Dan lijkt het logisch, dat een call een apart symbool krijgt, niet een aparte line. Hè. Welk symbool.  
 \>
@@ -3953,7 +3953,7 @@ Een call een aparte line maken is net zo iets als een triangle een aparte line m
 
 __*Procedure Interface Restrictions*__  
 < >  
-A procedure has an interface too, consisting of all public contents of the procedure: public objects (in, out or thru) and public procedures (clauses, calls and references), which can also be individually referenced and called.
+A procedure has an interface too, consisting of all public contents of the procedure: public objects (in, out or thru) and public procedures (nested procedures, calls and references), which can also be individually referenced and called.
 
 The interface source for a procedure cannot be an object symbol. Also: a procedure cannot have multiple interfaces. The effect of allowing these things can be imagined, but the usefulness of these structural possibilities is slim, while it might add a lot more rules to the Symbol Language.
 
@@ -3961,7 +3961,7 @@ For the time being, triangles can reside in a procedure, but only for the purpos
 
 The procedure has no interface genericity. < A word not introduced yet here. > < You can’t redirect the interface of a triangle inside a procedure either, because this might suggest that a procedure gets object characteristics.  This is a restriction of a triangle directly inside a procedure symbol. >
 
-< I think I’m totally nervous about public procedure clauses. And that’s why I forbid interface redirection for triangles in procedures here. I should allow it. The only thing disallowed is interface genericity, because that might suggest that a triangle in a procedure can point to a procedure symbol.
+< I think I’m totally nervous about public nested procedures. And that’s why I forbid interface redirection for triangles in procedures here. I should allow it. The only thing disallowed is interface genericity, because that might suggest that a triangle in a procedure can point to a procedure symbol.
 
 Hmmm... dang. >  
 < A lot isn’t right in what I just said there >
@@ -3998,7 +3998,7 @@ Er is naast referentie naar procedure en referentie naar object nog een manier v
 Execution Control
 -----------------
 
-< A procedure’s calling one of its own clauses, is an unconditional jump >
+< A procedure’s calling one of its own nested procedures, is an unconditional jump >
 
 < Cover text code entirely, right inside the story. Oh, yeah, should I? Or should I cover it in the Text Code chapter? >
 
@@ -4338,33 +4338,33 @@ The algebra you see in the diagrams above (for instance <=5) are actually calls 
 
 < Examples of simpler loops, in which >
 
-### Clauses: Embedded Procedures
+### Clauses: Nested Procedures
 
-The clauses discussed above are actually embedded procedures. Embedded procedures are often referred to with the word clause. They have the special characteristic that they can access the members of the procedure they’re embedded in.
+The clauses discussed above are actually embedded procedures. Embedded procedures are sometimes referred to with the word clause. Nested procedure may have the special characteristic that they can access the members of the procedure they’re embedded in.
 
 < Picture 36 >
 
-All clauses have access to the objects in their descendant clauses and to the objects in their embedding procedure.
+All nested procedures have access to the objects in their ancestor nested procedures and to the objects in their procedure definition.
 
 < Picture 37 >
 
-The reverse is not true: an embedding procedure cannot access an object in a clause unless the object is public.
+The reverse is not true: an procedure definition cannot access an object in a nested procedure unless the object is public.
 
-< Picture 38: non public clause member, not referenced by the embedding procedure >
+< Picture 38: non public nested procedure member, not referenced by the procedure definition >
 
-And even when it’s public then it has to be written right before entering the clause, just like a procedure call.
+And even when it’s public then it has to be written right before entering the nested procedure, just like a procedure call.
 
-< Picture 39: public clause member referenced by the embedding procedure just before entrance >
+< Picture 39: public nested procedure member referenced by the procedure definition just before entrance >
 
 You can recognize an embedded procedure by the fact that they’re not calls, nor procedure references. So they (usually) have no lines:
 
-< picture 40: embedded procedures. Mark the ones that are clauses with a color >
+< picture 40: embedded procedures. Mark the ones that are nested procedures with a color >
 
-Perhaps jumping might change that and the clauses might get lines, but no lines that end up outside the embedding procedure.
+Perhaps jumping might change that and the nested procedures might get lines, but no lines that end up outside the procedure definition.
 
-< Picture 41: clause that might have a line because of a jump to it >
+< Picture 41: nested procedure that might have a line because of a jump to it >
 
-< It’s like when something’s a clause, it ignores its parent’s borders. Conversely, the contents of a block are by default only accessible within that block. >
+< It’s like when something’s a nested procedure, it ignores its parent’s borders. Conversely, the contents of a block are by default only accessible within that block. >
 
 ### Unconditional Jumps
 
@@ -4667,7 +4667,7 @@ The programmer can change the order of things that are arbitrarily called and in
 
 -----
 
-If a procedure takes a reference to a clause then you can do this notation:
+If a procedure takes a reference to a nested procedure then you can do this notation:
 
 < Square with loose squares and another square with squares pointing at those loose squares >
 
@@ -4840,41 +4840,41 @@ So its like the borders of triangles can be ignored in inward access. You might 
 
 < This concept could have a place in Genericity. >
 
-### Clause Access
+### Nested Procedure Access
 
 < Nice sentence: A procedure makes all direct children accessible to all blocks. Only is that true? >
 
-Clauses are embedded procedures. In a diagram these are squares contained in other squares that have no lines. Beware that a diagram may not be showing the line, even when it exist.
+Nested procedures are embedded procedures. In a diagram these are squares contained in other squares that have no lines. Beware that a diagram may not be showing the line, even when it exist.
 
 ![](images/Symbol%20Language%20(2004).365.png)
 
-Clauses have access to the contents of all their descendant clauses and the procedure definition they’re in. This means that a clause can directly access its containing definition’s members:
+Nested procedures have access to the contents of all their ancestor nested procedures and the procedure definition they’re in. This means that a nested procedure can directly access its containing definition’s members:
 
 ![](images/Symbol%20Language%20(2004).366.png)
 
-and all its encapsulating clauses:
+and all its encapsulating nested procedures:
 
 ![](images/Symbol%20Language%20(2004).367.png)
 
-But a clause doe not have access to a clause that doesn’t encapsulate it.
+But a nested procedure does not have access to a nested procedure that doesn’t encapsulate it.
 
 ![](images/Symbol%20Language%20(2004).368.png)
 
-So its like the borders of clauses can be ignored in outward access.
+So its like the borders of nested procedures can be ignored in outward access.
 
-### Modules, Interfaces and Clauses
+### Modules, Interfaces and Nested procedures
 
 So usually only parents can access their ancestor’s things.
 
-Modules, interface implementations and clauses make exceptions on those rules.
+Modules, interface implementations and nested procedures make exceptions on those rules.
 
-The public ancestors of a module are accessible from anywhere within the module, the borders of triangles can be ignored and a clause can directly access anything in its descendant clauses and its procedure definition.
+The public ancestors of a module are accessible from anywhere within the module, the borders of triangles can be ignored and a nested procedure can directly access anything in its ancestor nested procedures and its procedure definition.
 
 ### Brainstorm
 
 #### => Access Ways
 
-Clause members can  access the members of its ancestor procedure symbols. 
+Nested procedure members can access the members of its ancestor procedure symbols. 
 
 
 Procedure Resolution
@@ -6211,13 +6211,13 @@ Static bij procedure members.
 
 ### Procedure Symbol Roles
 
-A call line makes the square a call. A reference line makes it a reference. No line at all indicates that it’s a procedure definition or a clause. Lines can also be left out for abstraction reasons.
+A call line makes the square a call. A reference line makes it a reference. No line at all indicates that it’s a procedure definition or a nested procedure. Lines can also be left out for abstraction reasons.
 
 | ![](images/Symbol%20Language%20(2004).409a.png) | ![](images/Symbol%20Language%20(2004).409b.png) | ![](images/Symbol%20Language%20(2004).410.png) | ![](images/Symbol%20Language%20(2004).411.png) <br> ![](images/Symbol%20Language%20(2004).412.png) | ![](images/Symbol%20Language%20(2004).413.png) |
-|:----------:|:------:|:----:|:---------:|:------------------------------------------------------:|
-| Definition | Clause | Call | Reference | Illegal: a square can’t be both a call and a reference |
+|:----------:|:----------------:|:----:|:---------:|:------------------------------------------------------:|
+| Definition | Nested Procedure | Call | Reference | Illegal: a square can’t be both a call and a reference |
 
-< Not true: a call doesn’t might directly exit a square if it calls a procedure reference embedded in the same procedure or a clause of the procedure >
+< Not true: a call doesn’t might directly exit a square if it calls a procedure reference embedded in the same procedure or a nested procedure of the procedure >
 
 Note here that the access symbol of a solid procedure reference line is also drawn solid.
 
@@ -6231,7 +6231,7 @@ Here is a list of possible reference targets and call targets:
 |            Reference to definition             |               Call to definition               |
 |                                                |                                                |
 | ![](images/Symbol%20Language%20(2004).415.png) | ![](images/Symbol%20Language%20(2004).418.png) |
-|              Reference to clause               |                 Call to clause                 |
+|         Reference to nested procedure          |            Call to nested procedure            |
 |                                                |                                                |
 | ![](images/Symbol%20Language%20(2004).416.png) | ![](images/Symbol%20Language%20(2004).419.png) |
 |            Reference to reference              |                Call to reference               |
@@ -6385,8 +6385,8 @@ System procedures of modules are the same as for other object symbols. The only 
 
 I might involve text code in explanations about access.  
 What about interface lines  
-What about calls to clauses?  
-Well... maybe if calls to clauses doesn’t work too well I may just forbid it...? Might that have major consequences?  
+What about calls to nested procedures?  
+Well... maybe if calls to nested procedures doesn’t work too well I may just forbid it...? Might that have major consequences?  
 
 Wow, this also involves GETTING information about the diagram at run time too.
 
@@ -6510,7 +6510,7 @@ I also wanna cover how lines are set and what happens when ... now I forgot what
 ### => System Aspects
 
 <  
-*Passing a clause by reference*
+*Passing a nested procedure by reference*
 
 ```
 Procedure ( Parameter . Reference Set ( Value . State = ... ) )
@@ -6530,14 +6530,14 @@ Procedure ( Parameter . Reference = ... )
 
 |     |     |
 |-----|-----|
-| ![](images/Symbol%20Language%20(2004).423.jpeg) | __Reference to sibling inactive clause, in a square__ |
+| ![](images/Symbol%20Language%20(2004).423.jpeg) | __Reference to sibling inactive nested procedure, in a square__ |
 |     | Only possible for static procedure members or exclusive establishment. |
 |     |     |
-| ![](images/Symbol%20Language%20(2004).424.jpeg) | __Reference to sibling active clause, in a square__ |
+| ![](images/Symbol%20Language%20(2004).424.jpeg) | __Reference to sibling active nested procedure, in a square__ |
 |     | Only possible for static procedure members or exclusive establishment. |
 |     |     |
-| ![](images/Symbol%20Language%20(2004).425.jpeg) | __Call to sibling inactive clause, in a square__ |
-|     | This is like a jump to a clause, that might otherwise not execute. |
+| ![](images/Symbol%20Language%20(2004).425.jpeg) | __Call to sibling inactive nested procedure, in a square__ |
+|     | This is like a jump to a nested procedure, that might otherwise not execute. |
 |     | Only possible for static procedure members or exclusive establishment. |
 |     | A diamond can be executing. Only during the execution of the diamond, lines between its non static children can be real. If the diamond isn’t executing, or it’s not a diamond, but a square, lines between the non static children are suggestive. Only lines between static members in such cases, can be real. |
 
@@ -6549,7 +6549,7 @@ Or to inside static (or to outside : its static, or its exclusive establishment)
 
 Oh, a reference pointing out of a square is possible only for static symbols, because normal, non-static references to the outside are established on a call. __*A square cannot contain a non-static references to the outside.*__ A diamond can.
 
-If a clause can access anything outside then you should be able to have exclusive establishment of a line going out of a square. But this has the consequence that references to the clause could access things out of the clause’s parent. Well.. this is ok. If it isn’t a clause, but a reference, there is no possibility of this exclusive establishment of a line going out of a square unless the line target is reachable from __*the definition*__.  
+If a nested procedure can access anything outside then you should be able to have exclusive establishment of a line going out of a square. But this has the consequence that references to the nested procedure could access things out of the nested procedure’s parent. Well.. this is ok. If it isn’t a nested procedure, but a reference, there is no possibility of this exclusive establishment of a line going out of a square unless the line target is reachable from __*the definition*__.  
 <  
 Create the picture in your head as you read that. Anyway, I disagree. It doesn’t matter that it’s reachable by the definition or not. All that matters is that the one setting the line could reach both source and destination. It doesn’t matter if the line source can access the line destination. Funny enough, that might matter. The line talked about is still exclusive establishment, not real, but it can be there as an imaginary line. No problem  
 \>
@@ -6923,11 +6923,11 @@ It is not a permitted to make a global procedure Protected. A pentagon is not ex
 
 ### Friends
 
-In types, module types, procedures and clauses you can define *Friends* of the symbol. Friends are other symbols that when defined friend get full access to all members of the befriended.
+In types, module types, procedures and nested procedures you can define *Friends* of the symbol. Friends are other symbols that when defined friend get full access to all members of the befriended.
 
 It only goes one way: the friend symbol can access private things of the befriended, but the befriended doesn’t get access to the friend’s private members. Its kind of a like a sick friendship where one likes the other, but the other doesn’t like him back. That’s why the symbol that defines his friends is called the *befriended*, not a friend itself.
 
-A type, module type, procedure or clause can define:
+A type, module type, procedure or nested procedure can define:
 
 - Friend Types
 - Friend Procedures
@@ -7040,7 +7040,7 @@ Has put all of the language’s access controllers in one system and added extra
 
 #### Brainstorm
 
-< The standard access modifiers for system procedures of procedures symbols directly inside a procedure symbol are different from procedures directly inside object symbols. For instance, Symbol Get for Reference of a clause is Private by default. Symbol Get for Reference for an object member is Public by default >
+< The standard access modifiers for system procedures of procedures symbols directly inside a procedure symbol are different from procedures directly inside object symbols. For instance, Symbol Get for Reference of a nested procedure is Private by default. Symbol Get for Reference for an object member is Public by default >
 
 < There are also situations in which you want to disallow copying object reference to an argument, but only allow consult of the argument. (that’s access control of system procedures, actually) >
 
@@ -7274,7 +7274,7 @@ I need changed events to exist automatically
 Perhaps include some appendices that now ended up in Advanced Symbol Language.
 
 <  
-op veel plekken ontbreekt de uitleg van de toepassing. Het lijkt alsof als ik de theorie op papier heb, ik de toepassing maar uitwis. Introduction gaat helemaal over de toepassing. Objects Basics en Procedure Basics daar is de toepassing compleet zoek. Access Control daarbij is de toepassing ook helemaal zoek. Waarom heb je dat soort access controllers? Waarom moet je global access hebben en waarom clause access? In Lines lijk ik nu wel wat meer voorbeelden te behandelen, maar alleen maar omdat ik er aan werk. Als ik dit nu niet op zou hebben gemerkt zou ik straks een theorie hebben geformuleerd in lines en de toepassing compleet weggeveegd. Ik moet meer de theorie en toepassing combineren. Ok, je moet een theorie *vormen*, en uiteindelijk moet je de theorie apart op papier hebben, maar na het vormen van de theorie is uitleggen van de toepassing niet opeen onbelangrijk. Dit gebeurt echt vaak in boeken. Ze komen maar met de theorie en de voorbeelden ervan zijn compleet achterwege gelaten.  
+op veel plekken ontbreekt de uitleg van de toepassing. Het lijkt alsof als ik de theorie op papier heb, ik de toepassing maar uitwis. Introduction gaat helemaal over de toepassing. Objects Basics en Procedure Basics daar is de toepassing compleet zoek. Access Control daarbij is de toepassing ook helemaal zoek. Waarom heb je dat soort access controllers? Waarom moet je global access hebben en waarom nested procedure access? In Lines lijk ik nu wel wat meer voorbeelden te behandelen, maar alleen maar omdat ik er aan werk. Als ik dit nu niet op zou hebben gemerkt zou ik straks een theorie hebben geformuleerd in lines en de toepassing compleet weggeveegd. Ik moet meer de theorie en toepassing combineren. Ok, je moet een theorie *vormen*, en uiteindelijk moet je de theorie apart op papier hebben, maar na het vormen van de theorie is uitleggen van de toepassing niet opeen onbelangrijk. Dit gebeurt echt vaak in boeken. Ze komen maar met de theorie en de voorbeelden ervan zijn compleet achterwege gelaten.  
 \>
 
 In C++ bepaal je de redirection diepte vooraf:
@@ -8173,7 +8173,7 @@ However, object symbols aren’t different to their container if they ...
 
 To find the definition you follow the reference line between ...
 
-Just consider: if a diamond doesn’t have a line it is an executing clause, when a square doesn’t have a line, it’s a non executing clause. In both cases it’s a definition. But the two case differ in that in one case it executes and in the other it doesn’t. If an object symbol has no line, it’s an object. Simply stated, it needs an object line for it not to be a type. A procedure symbol shouldn’t need a line to be an execution.
+Just consider: if a diamond doesn’t have a line it is an executing nested procedure, when a square doesn’t have a line, it’s a non executing nested procedure. In both cases it’s a definition. But the two case differ in that in one case it executes and in the other it doesn’t. If an object symbol has no line, it’s an object. Simply stated, it needs an object line for it not to be a type. A procedure symbol shouldn’t need a line to be an execution.
 
 When a characteristic’s presence shouldn’t be dependent of the presence of a line, it needs to be drawn out with a shape type. If a characteristic is dependent of the presence of a line, it’s the line presence that gives it the characteristic. If I’d want object symbols to serve only as a type and not as an object, then I’d need to reserve a special shape to separate types from objects. Now, to make an objet symbol serve as a type only and not as a type, I make the Object Get Inaccessible? NO. That’s not true. Actually I’d might not be able to Symbol Get if it’s for the purpose of assigning an object line. 
 
@@ -10234,7 +10234,7 @@ Old Overview of Lines
 -----
 - Any square can have a reference line.
 
-A procedure symbol can have one of four roles: - definition, - clause, - call, - reference
+A procedure symbol can have one of four roles: - definition, - nested procedure, - call, - reference
 
 #### Overview of Redirection
 
@@ -10359,7 +10359,7 @@ You can decide on your own what kind of notation you want to use, but the progra
     -----
     - Any square can have a reference line
     -----
-    - A procedure symbol can have one of four roles: - definition, - clause, - call, - reference
+    - A procedure symbol can have one of four roles: - definition, - nested procedure, - call, - reference
 - Redirection
     - Object symbol redirection
         - Target symbols
@@ -10511,7 +10511,7 @@ Attempt to Organize Lines Chapter
     - Any solid procedure line that can’t be a call line is a reference line
         - Procedure Symbol Roles
             - Definition
-            - Clause
+            - Nested procedure
             - Call
             - Reference
             - Can’t be both a reference and a call
@@ -10524,10 +10524,10 @@ Attempt to Organize Lines Chapter
             - Base
         - Reference and Call targets
             - Reference to definition
-            - Reference to clause
+            - Reference to nested procedure
             - Reference to reference
             - Call to definition
-            - Call to clause
+            - Call to nested procedure
             - Call to reference
         - The Object of the Call Target
             - You can’t call upward in the ancestry (is introduced later too)
@@ -10558,8 +10558,8 @@ Attempt to Organize Lines Chapter
     - Child Access
     - Global Access
     - Interface Access
-    - Clause Access
-    - Modules, Interface and Clauses
+    - Nested Procedure Access
+    - Modules, Interface and Nested Procedures
 - Implicit Calls
     - Explicit Calls
     - Implicit Calls
@@ -10608,7 +10608,7 @@ Attempt to Organize Lines Chapter
     - Any solid procedure line that can’t be a call line is a reference line
     - Procedure Symbol Roles
         - Definition
-        - Clause
+        - Nested procedure
         - Call
         - Reference
         - Can’t be both a reference and a call
@@ -10621,10 +10621,10 @@ Attempt to Organize Lines Chapter
         - Base
     - Reference and Call targets
         - Reference to definition
-        - Reference to clause
+        - Reference to nested procedure
         - Reference to reference
         - Call to definition
-        - Call to clause
+        - Call to nested procedure
         - Call to reference
     - The Object of the Call Target
         - You can’t call upward in the ancestry (is introduced later too)
@@ -10655,8 +10655,8 @@ Attempt to Organize Lines Chapter
     - Child Access
     - Global Access
     - Interface Access
-    - Clause Access
-    - Modules, Interface and Clauses
+    - Nested Procedure Access
+    - Modules, Interface and Nested Procedures
 - Implicit Calls
     - Explicit calls
     - Implicit Calls
@@ -10702,7 +10702,7 @@ Attempt to Organize Lines Chapter
     - Any solid procedure line that can’t be a call line is a reference line
     - Procedure Symbol Roles
         - Definition
-        - Clause
+        - Nested procedure
         - Call
         - Reference
         - Can’t be both a reference and a call
@@ -10715,10 +10715,10 @@ Attempt to Organize Lines Chapter
         - Base
     - Reference and Call targets
         - Reference to definition
-        - Reference to clause
+        - Reference to nested procedure
         - Reference to reference
         - Call to definition
-        - Call to clause
+        - Call to nested procedure
         - Call to reference
     - The Object of the Call Target
         - You can’t call upward in the ancestry (is introduced later too)
@@ -10751,8 +10751,8 @@ Attempt to Organize Lines Chapter
     - Child Access
     - Global Access
     - Interface Access
-    - Clause Access
-    - Modules, Interface and Clauses
+    - Nested Procedure Access
+    - Modules, Interface and Nested Procedures
 -----
 - Implicit Calls
     - Explicit Calls
@@ -10813,7 +10813,7 @@ Attempt to Organize Lines Chapter
         - Any solid procedure line that can’t be a call line is a reference line
             - Procedure Symbol Roles
             - Definition
-            - Clause
+            - Nested procedure
             - Call
             - Reference
             - Can’t be both a reference and a call
@@ -10826,10 +10826,10 @@ Attempt to Organize Lines Chapter
             - Base
         - Reference and Call targets
             - Reference to definition
-            - Reference to clause
+            - Reference to nested procedure
             - Reference to reference
             - Call to definition
-            - Call to clause
+            - Call to nested procedure
             - Call to reference
         - The Object of the Call Target
             - You can’t call upward in the ancestry (is introduced later too)
@@ -10861,8 +10861,8 @@ Attempt to Organize Lines Chapter
     - Child Access
     - Global Access
     - Interface Access
-    - Clause Access
-    - Modules, Interface and Clauses
+    - Nested Procedure Access
+    - Modules, Interface and Nested Procedures
 
 - Genericity
     - Implicit Calls
@@ -10935,7 +10935,7 @@ In the next organization I’ve also reorganized Line Rules.
 - Symbol Roles (The __*roles*__ that symbols get when connecting them with lines)
     - Procedure Symbol Roles
     - Definition
-    - Clause
+    - Nested procedure
     - Call
     - Reference
     - Can’t be both a reference and a call
@@ -10948,10 +10948,10 @@ In the next organization I’ve also reorganized Line Rules.
     - Base
 - Reference and Call targets
     - Reference to definition
-    - Reference to clause
+    - Reference to nested procedure
     - Reference to reference
     - Call to definition
-    - Call to clause
+    - Call to nested procedure
     - Call to reference
 - Events
     - Events: Techniques to communicate to the parent (is introduced later too)
@@ -10972,8 +10972,8 @@ In the next organization I’ve also reorganized Line Rules.
 - Child Access
 - Global Access
 - Interface Access
-- Clause Access
-- Modules, Interface and Clauses
+- Nested Procedure Access
+- Modules, Interface and Nested Procedures
 
 #### Genericity
 

@@ -77,7 +77,7 @@ Symbol __B__ could also be replaced by a diamond, making an *executable* command
 
 If an executable command redirects its class, then it is a command call. The class redirection points to the command definition of the command call.
 
-If an executable command *might not have* a class redirection, then it defines its own contents. An object redirection automatically also redirects the class aspect of a symbol. So then it also might not define its own contents. If an executable command, that might not redirect its class or object resides inside another command, then it is called an *active clause*. If the executable command without redirections resides inside an object, then it is simply an executable command with no definition, that can be manually run by a user.
+If an executable command *might not have* a class redirection, then it defines its own contents. An object redirection automatically also redirects the class aspect of a symbol. So then it also might not define its own contents. If an executable command, that might not redirect its class or object resides inside another command, then it is called an *active nested command*. If the executable command without redirections resides inside an object, then it is simply an executable command with no definition, that can be manually run by a user.
 
 You could let an executable command redirect its definition to another executable command, but this is far less common. But an active command *can* function as the prototype for another executable command.
 

@@ -151,7 +151,7 @@ Something is constant if it can be set by programmers , but not by users.
 
 -----
 
-< The standard access modifiers for system procedures of procedure symbols directly inside a procedure symbol are different from procedures directly inside object symbols. For instance, Symbol Get for Reference of a clause is Private by default. Symbol Get for Reference for an object member is Public by default >
+< The standard access modifiers for system procedures of procedure symbols directly inside a procedure symbol are different from procedures directly inside object symbols. For instance, Symbol Get for Reference of a nested command is Private by default. Symbol Get for Reference for an object member is Public by default >
 
 -----
 

@@ -394,7 +394,7 @@ Code Base,
 Advanced Command Articles,  
 2008-08
 
-When machine instructions are invoked in Circular as calls to Circular commands, that invoke the instruction, then a string of such machine instructions has a real overhead around it. Therefore, pure stretches of assembly commands calls should be packed in a clause, that gets a binaral that is the exact machine code, compiled as a stretch of binary, instead of separate ‘symbol’ commands. That should take care of the overhead, when writing deep-core assembly stuff.
+When machine instructions are invoked in Circular as calls to Circular commands, that invoke the instruction, then a string of such machine instructions has a real overhead around it. Therefore, pure stretches of assembly commands calls should be packed in a nested command, that gets a binaral that is the exact machine code, compiled as a stretch of binary, instead of separate ‘symbol’ commands. That should take care of the overhead, when writing deep-core assembly stuff.
 
 JJ
 

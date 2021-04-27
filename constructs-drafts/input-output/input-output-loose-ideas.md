@@ -34,7 +34,7 @@ JJ
 Advanced Command Artices,  
 2008-08
 
-A clause has a unary relation with its parameters, because you do not want to see the clause as a command in the classes of a clause's parameters.
+A nested command has a unary relation with its parameters, because you do not want to see the nested command as a command in the classes of a nested command's parameters.
 
 JJ
 

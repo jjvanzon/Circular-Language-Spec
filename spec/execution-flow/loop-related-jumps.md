@@ -81,4 +81,3 @@ The __Exit Loop__ command is displayed inside the clause that is looped as a jum
 The text __Command End__ is not required in the diagram:
 
 ![](images/5.%20Loop-Related%20Jumps.003.png)
-

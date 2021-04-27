@@ -30,8 +30,8 @@ __Contents__
     - [Command Definition Interface Redirection](#command-definition-interface-redirection)
     - [Command Reference Interface Redirection](#command-reference-interface-redirection)
     - [Command Call Interface Redirection](#command-call-interface-redirection)
-    - [Active Clause Interface Redirection](#active-clause-interface-redirection)
-    - [Inactive Clause Interface Redirection](#inactive-clause-interface-redirection)
+    - [Active Nested Command Interface Redirection](#active-nested-command-interface-redirection)
+    - [Inactive Nested Command Interface Redirection](#inactive-nested-command-interface-redirection)
 - [Relations Through Interfaces](#relations-through-interfaces)
 
 ### Introduction
@@ -252,11 +252,11 @@ An object’s specification of which interface it has, is also called an *interf
 
 ![](images/1.%20Interfaces%20Main%20Concepts.029.png)
 
-#### Active Clause Interface Redirection
+#### Active Nested Command Interface Redirection
 
 ![](images/1.%20Interfaces%20Main%20Concepts.030.png)
 
-#### Inactive Clause Interface Redirection
+#### Inactive Nested Command Interface Redirection
 
 ![](images/1.%20Interfaces%20Main%20Concepts.031.png)
 

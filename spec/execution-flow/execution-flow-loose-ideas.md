@@ -15,7 +15,7 @@ __Contents__
     - [Selection and Repetition](#selection-and-repetition)
     - [Selection](#selection)
     - [Repetition](#repetition)
-    - [Clauses: Embedded Procedures](#clauses-embedded-procedures)
+    - [Clauses: Nested Commands](#clauses-nested-commands)
     - [Unconditional Jumps](#unconditional-jumps)
     - [Text Code Blabbing < >](#text-code-blabbing--)
         - [Conditional Jumps](#conditional-jumps)
@@ -366,33 +366,33 @@ The algebra you see in the diagrams above (for instance __<= 5__) are actually c
 
 < Examples of simpler loops, in which 
 
-#### Clauses: Embedded Procedures
+#### Clauses: Nested Commands
 
-The clauses discussed above are actually embedded procedures. Embedded procedures are often referred to with the word clause. They have the special characteristic that they can access the members of the procedure they’re embedded in.
+The clauses discussed above might be seen as nested commands. Nested commands might sometimes be referred to with the word clause. Nested commands may have a special characteristic, that they might access the members of the command they’re embedded in.
 
 < Picture 36 >
 
-All clauses have access to the objects in their descendant clauses and to the objects in their embedding procedure.
+Nested commands may have access to the objects in their ancestor nested commands and to the objects in the eventual command definition.
 
 < Picture 37 >
 
-The reverse is not true: an embedding procedure can not access an object in a clause unless the object is public.
+The reverse is not true: a command definition can not access an object in a nested command unless the object is public.
 
-< Picture 38: non public clause member, not referenced by the embedding procedure >
+< Picture 38: non public nested command member, not referenced by the command definition >
 
-And even when it’s public then it has to be written right before entering the clause, just like a procedure call.
+And even when it’s public then it has to be written right before entering the nested command, just like a procedure call.
 
-< Picture 39: public clause member referenced by the embedding procedure just before entrance >
+< Picture 39: public nested command member referenced by the command definition just before entrance >
 
 You can recognize an embedded procedure by the fact that they’re not calls, nor procedure references. So they (usually) have no lines:
 
-< picture 40: embedded procedures. Mark the ones that are clauses with a color >
+< picture 40: embedded procedures. Mark the ones that are nested commands with a color >
 
-Perhaps jumping might change that and the clauses might get lines, but no lines that end up outside the embedding procedure.
+Perhaps jumping might change that and the nested commands might get lines, but no lines that end up outside the command definition.
 
-< Picture 41: clause that might have a line because of a jump to it >
+< Picture 41: nested command that might have a line because of a jump to it >
 
-< It’s like when something’s a clause, it ignores its parent’s borders. Conversely, the contents of a block are by default only accessible within that block. >
+< It’s like when something’s a nested command, it ignores its parent’s borders. Conversely, the contents of a block are by default only accessible within that block. >
 
 #### Unconditional Jumps
 
@@ -697,7 +697,7 @@ The programmer can change the order of things that are arbitrarily called and in
 
 -----
 
-If a procedure takes a reference to a clause then you can do this notation:
+If a procedure takes a reference to a nested command then you can do this notation:
 
 < Square with loose squares and another square with squares pointing at those loose squares >
 

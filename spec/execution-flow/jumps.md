@@ -121,9 +121,9 @@ A __Goto__ statement is an execution flow statement, that immediately jumps to a
 
 In Circular __Goto__ is an execution flow command that is passed a reference to the clause to go to. The reference to the clause to go to is called the __Target__ parameter.
 
-A clause is a command definition embedded inside a command. The name of the clause is considered the *label* of the statement to jump to. In other computer programming languages the part of the code jumped to was marked with a label. In the new computer programming language, the next statement to jump to is encapsulated by a clause.
+A clause is a command definition embedded inside a command. The name of the clause is considered the *label* of the statement to jump to. In other computer programming languages the part of the code jumped to was marked with a label. In Circular the next statement to jump to may be encapsulated by a clause.
 
-Just like in normal execution order a __Goto__ statement never returns to the code it was called from.
+Just like in normal execution order a __Goto__ statement might not return to the code it was called from.
 
 The implementation of the execution flow command __Goto__ might somehow first roll back part of the call stack, so that the call to the execution flow command might not return to where it was called from. Next the __Goto__ command uses a machine instruction to jump to the jump __Target__.
 

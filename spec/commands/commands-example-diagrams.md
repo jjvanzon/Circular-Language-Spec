@@ -21,36 +21,35 @@ __Contents__
 - [Command References in a Command Definition](#command-references-in-a-command-definition)
 - [Command References in a Command Call](#command-references-in-a-command-call)
 - [Command References in a Command Reference](#command-references-in-a-command-reference)
-- [Clauses in Clauses](#clauses-in-clauses)
-- [Inactive Clauses in a Command Definition](#inactive-clauses-in-a-command-definition)
-- [Inactive Clauses in a Command Call](#inactive-clauses-in-a-command-call)
-- [Inactive Clauses in a Command Reference](#inactive-clauses-in-a-command-reference)
-- [Active Clauses in a Command Definition](#active-clauses-in-a-command-definition)
-- [Active Clauses in a Command Call](#active-clauses-in-a-command-call)
-- [Active Clauses in a Command Reference](#active-clauses-in-a-command-reference)
-- [Command Calls in an Inactive Clause](#command-calls-in-an-inactive-clause)
-- [Command Calls in an Active Clause](#command-calls-in-an-active-clause)
-- [Parameters in an Inactive Clause](#parameters-in-an-inactive-clause)
-- [Parameters in an Active Clause](#parameters-in-an-active-clause)
-- [Local Variables in an Inactive Clause](#local-variables-in-an-inactive-clause)
-- [Local variables in an Active Clause](#local-variables-in-an-active-clause)
-- [Command References in an Inactive Clause](#command-references-in-an-inactive-clause)
-- [Command References in an Active Clause](#command-references-in-an-active-clause)
+- [Nested Commands in Nested Commands](#nested-commands-in-nested-commands)
+- [Inactive Nested Commands in a Command Definition](#inactive-nested-commands-in-a-command-definition)
+- [Inactive Nested Commands in a Command Call](#inactive-nested-commands-in-a-command-call)
+- [Inactive Nested Commands in a Command Reference](#inactive-nested-commands-in-a-command-reference)
+- [Active Nested Commands in a Command Definition](#active-nested-commands-in-a-command-definition)
+- [Active Nested Commands in a Command Call](#active-nested-commands-in-a-command-call)
+- [Active Nested Commands in a Command Reference](#active-nested-commands-in-a-command-reference)
+- [Command Calls in an Inactive Nested Command](#command-calls-in-an-inactive-nested-command)
+- [Command Calls in an Active Nested Command](#command-calls-in-an-active-nested-command)
+- [Parameters in an Inactive Nested Command](#parameters-in-an-inactive-nested-command)
+- [Parameters in an Active Nested Command](#parameters-in-an-active-nested-command)
+- [Local Variables in an Inactive Nested Command](#local-variables-in-an-inactive-nested-command)
+- [Local variables in an Active Nested Command](#local-variables-in-an-active-nested-command)
+- [Command References in an Inactive Nested Command](#command-references-in-an-inactive-nested-command)
+- [Command References in an Active Nested Command](#command-references-in-an-active-nested-command)
 
 ### Introduction
 
 This article tries to systematically demonstrate different situations of commands.
 
-Relationships between the following concepts may be demonstrated.
-(The term 'clause' may be used here in a particular way.) It is containment relationships between these constructs, that might be explored. It may enrich an impression of commands in Circular.
+Relationships between the following concepts may be demonstrated. It is containment relationships between these constructs, that might be explored. It may enrich an impression of commands in Circular.
 
 | | | |
 |--------------------|-|------------------------------------------------------------------------------|
 | __Command definition__ | <img src="images/command-definition.png" width="100" /> | Does not execute directly but may get called. |
 | __Command call__ | <img src="images/command-call.png" width="100" /> | Executes a command definition it points out. |
 | __Command reference__ | <img src="images/command-reference.png" width="120" /> | Pointer to another command. |
-| __Active clause__ | <img src="images/active-clause.png" width="80" /> | Command defined inside another command, that may execute. |
-| __Inactive clause__ | <img src="images/inactive-clause.png" width="80" /> | Command defined inside another command, that might not be executed directly. |
+| __Active nested command__ | <img src="images/active-nested command.png" width="80" /> | Command defined inside another command, that may execute. |
+| __Inactive nested command__ | <img src="images/inactive-nested command.png" width="80" /> | Command defined inside another command, that might not be executed directly. |
 | __Parameter__ | <img src="images/parameter.png" width="100" /> | Instruction passed to a command, that makes it behave differently. |
 | __Local variable__ | <img src="images/local-variable.png" width="100" /> | Helper variables inside a command, invisible from the outside. |
 
@@ -154,95 +153,95 @@ The larger square on the left is a command reference. The target of the command 
 
 Most of the squares could have been replaced by diamond shapes, making the command symbol executable, rather than dormant. But the smaller squares inside the larger square can not be replaced by diamonds, because a command can not contain active command references, for reasons explained by the article *Parent Controls Its Sub-Executions*.
 
-### Clauses in Clauses
+### Nested Commands in Nested Commands
 
-Because clauses are always part of a parent command, the parent command is displayed in the pictures below as the outer square. Inside the square is a clause, and inside that symbol are two clauses in a clause. Inactive clauses are squares. Active clauses are diamonds.
+Because nested commands are always part of a parent command, the parent command is displayed in the pictures below as the outer square. Inside the square is a nested command, and inside that symbol are two nested commands in a nested command. Inactive nested commands are squares. Active nested commands are diamonds.
 
-Inactive clauses in an inactive clause in a command definition:
+Inactive nested commands in an inactive nested command in a command definition:
 
 ![](images/5.%20Commands%20Example%20Diagrams.016.png)
 
-Active clauses in an inactive clause in a command definition:
+Active nested commands in an inactive nested command in a command definition:
 
 ![](images/5.%20Commands%20Example%20Diagrams.017.png)
 
-Inactive clauses in an active clause in a command definition:
+Inactive nested commands in an active nested command in a command definition:
 
 ![](images/5.%20Commands%20Example%20Diagrams.018.png)
 
-Active clauses in an active clause in a command definition:
+Active nested commands in an active nested command in a command definition:
 
 ![](images/5.%20Commands%20Example%20Diagrams.019.png)
 
-### Inactive Clauses in a Command Definition
+### Inactive Nested Commands in a Command Definition
 
 ![](images/5.%20Commands%20Example%20Diagrams.020.png)
 
-The larger square is a command definition. The smaller squares inside the larger square are inactive clauses inside a command definition. Squares inside a square, that do not redirect, are inactive clauses.
+The larger square is a command definition. The smaller squares inside the larger square are inactive nested commands inside a command definition. Squares inside a square, that do not redirect, are inactive nested commands.
 
-### Inactive Clauses in a Command Call
+### Inactive Nested Commands in a Command Call
 
 ![](images/5.%20Commands%20Example%20Diagrams.021.png)
 
-The diamond shape is a command call. The command definition of the command call is pointed out by the dashed line, pointing at the square on the right, which is the command definition. The diamond contains two squares, that do not redirect. Those are the inactive clauses inside the command call. They are clauses, because they are situated inside a command symbol and they do not redirect their target.
+The diamond shape is a command call. The command definition of the command call is pointed out by the dashed line, pointing at the square on the right, which is the command definition. The diamond contains two squares, that do not redirect. Those are the inactive nested commands inside the command call. They are nested commands, because they are situated inside a command symbol and they do not redirect their target.
 
-### Inactive Clauses in a Command Reference
+### Inactive Nested Commands in a Command Reference
 
 ![](images/5.%20Commands%20Example%20Diagrams.022.png)
 
-The large square on the left is a command reference. It is pointing out its target command definition with an object line, the solid line, targeting the square on the right, which is the command definition. The command reference on the left contains two inactive clauses, smaller squares, that do not redirect their target. The target definition on the right also shows the smaller squares inside of it. Both command reference and target definition both represent the same command object, so their contents are also the same, so they both show inactive clauses.
+The large square on the left is a command reference. It is pointing out its target command definition with an object line, the solid line, targeting the square on the right, which is the command definition. The command reference on the left contains two inactive nested commands, smaller squares, that do not redirect their target. The target definition on the right also shows the smaller squares inside of it. Both command reference and target definition both represent the same command object, so their contents are also the same, so they both show inactive nested commands.
 
 Either of the larger squares could have been replaced by a diamond, making the command symbol executable, rather than dormant.
 
-### Active Clauses in a Command Definition
+### Active Nested Commands in a Command Definition
 
 ![](images/5.%20Commands%20Example%20Diagrams.023.png)
 
-The square is a command definition. The diamond shapes squares inside the square are active clauses inside a command definition. Diamonds inside a square, that do not redirect, are active clauses.
+The square is a command definition. The diamond shapes squares inside the square are active nested commands inside a command definition. Diamonds inside a square, that do not redirect, are active nested commands.
 
-### Active Clauses in a Command Call
+### Active Nested Commands in a Command Call
 
 ![](images/5.%20Commands%20Example%20Diagrams.024.png)
 
-The diamond shape is a command call. The command definition of the command call is pointed out by the dashed line, pointing at the square, which is the command definition. The diamond contains two diamond shapes, that do not redirect. Those are the active clauses inside the command call. They are clauses, because they are situated inside a command symbol and they do not redirect their target.
+The diamond shape is a command call. The command definition of the command call is pointed out by the dashed line, pointing at the square, which is the command definition. The diamond contains two diamond shapes, that do not redirect. Those are the active nested commands inside the command call. They are nested commands, because they are situated inside a command symbol and they do not redirect their target.
 
-### Active Clauses in a Command Reference
+### Active Nested Commands in a Command Reference
 
 ![](images/5.%20Commands%20Example%20Diagrams.025.png)
 
-The large square on the left is a command reference. It is pointing out its target command definition with an object line, the solid line, targeting the square on the right, which is the command definition. The command reference on the left contains two active clauses, diamonds, that do not redirect their target. The target definition on the right also shows the diamonds inside of it. Both command reference and target definition both represent the same command object, so their contents are also the same, so they both show active clauses.
+The large square on the left is a command reference. It is pointing out its target command definition with an object line, the solid line, targeting the square on the right, which is the command definition. The command reference on the left contains two active nested commands, diamonds, that do not redirect their target. The target definition on the right also shows the diamonds inside of it. Both command reference and target definition both represent the same command object, so their contents are also the same, so they both show active nested commands.
 
 Either of the squares could have been replaced by a diamond, making the command symbol executable, rather than dormant.
 
-### Command Calls in an Inactive Clause
+### Command Calls in an Inactive Nested Command
 
 ![](images/5.%20Commands%20Example%20Diagrams.026.png)
 
-The large square is the command definition the clause is in. The square inside of it, is the inactive clause. It contains two diamonds, which are the command calls inside the inactive clause. The diamonds redirect their command definition with a class line, a dashed line, connected to the squares on the right, which are the command definitions, that are called.
+The large square is the command definition the nested command is in. The square inside of it, is the inactive nested command. It contains two diamonds, which are the command calls inside the inactive nested command. The diamonds redirect their command definition with a class line, a dashed line, connected to the squares on the right, which are the command definitions, that are called.
 
-### Command Calls in an Active Clause
+### Command Calls in an Active Nested Command
 
 ![](images/5.%20Commands%20Example%20Diagrams.027.png)
 
-The large square is the command definition the clause is in. The diamond inside of it, is the active clause. It contains two diamonds, which are the command calls inside the active clause. The small diamonds redirect their command definition with a class line, a dashed line, connected to the squares on the right, which are the command definitions, that are called.
+The large square is the command definition the nested command is in. The diamond inside of it, is the active nested command. It contains two diamonds, which are the command calls inside the active nested command. The small diamonds redirect their command definition with a class line, a dashed line, connected to the squares on the right, which are the command definitions, that are called.
 
-### Parameters in an Inactive Clause
+### Parameters in an Inactive Nested Command
 
 ![](images/5.%20Commands%20Example%20Diagrams.028.png)
 
-The large square is a command definition the inactive clause is in. The square inside the square is the inactive clause. The inactive clause contains three circles, which are the parameters in the clause. The lines connected to the circles, which are also dissected by an access mark, are the parameter passings. Parameter passings are explained in the *parameter* articles.
+The large square is a command definition the inactive nested command is in. The square inside the square is the inactive nested command. The inactive nested command contains three circles, which are the parameters in the nested command. The lines connected to the circles, which are also dissected by an access mark, are the parameter passings. Parameter passings are explained in the *parameter* articles.
 
-### Parameters in an Active Clause
+### Parameters in an Active Nested Command
 
 ![](images/5.%20Commands%20Example%20Diagrams.029.png)
 
-The large square is a command definition the inactive clause is in. The diamond inside the square is the active clause. The diamond contains three circles, which are the parameters in the clause. The circles inside the diamond are connected to the circles outside the diamond with parameter passings. Parameter passings are explained in the *Parameters* articles.
+The large square is a command definition the inactive nested command is in. The diamond inside the square is the active nested command. The diamond contains three circles, which are the parameters in the nested command. The circles inside the diamond are connected to the circles outside the diamond with parameter passings. Parameter passings are explained in the *Parameters* articles.
 
-### Local Variables in an Inactive Clause
+### Local Variables in an Inactive Nested Command
 
 ![](images/5.%20Commands%20Example%20Diagrams.030.png)
 
-The large square is a command definition, the clause is in. The square inside the larger square is the inactive clause. It contains two circles, which are the local variables of the inactive clause. The lines that go outside, that end at a cross are the indications that the objects are private. They indicate you can not reference the circles from the outside. 
+The large square is a command definition, the nested command is in. The square inside the larger square is the inactive nested command. It contains two circles, which are the local variables of the inactive nested command. The lines that go outside, that end at a cross are the indications that the objects are private. They indicate you can not reference the circles from the outside. 
 
 Another possible expression of the local variables is the following:
 
@@ -250,11 +249,11 @@ Another possible expression of the local variables is the following:
 
 Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it might be obvious: if they do not have a parameter passing, then they are private.
 
-### Local variables in an Active Clause
+### Local variables in an Active Nested Command
 
 ![](images/5.%20Commands%20Example%20Diagrams.032.png)
 
-The large square is a command definition, the clause is in. The diamond inside the square is the active clause. It contains two circles, which are the local variables of the active clause. The lines that go outside, that end at a cross are the indications that the objects are private. They indicate you can not reference the circles from the outside.
+The large square is a command definition, the nested command is in. The diamond inside the square is the active nested command. It contains two circles, which are the local variables of the active nested command. The lines that go outside, that end at a cross are the indications that the objects are private. They indicate you can not reference the circles from the outside.
 
 Another possible expression of the local variables is the following:
 
@@ -262,14 +261,14 @@ Another possible expression of the local variables is the following:
 
 Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it might be obvious: if they do not have a parameter passing, then they are private.
 
-### Command References in an Inactive Clause
+### Command References in an Inactive Nested Command
 
 ![](images/5.%20Commands%20Example%20Diagrams.034.png)
 
-The large square is a command definition, the inactive clause is in. The square inside the large square is the clause. The inactive clause contains two squares, which are the command references. They are actually *public* command references. This makes the command references parameters of the inactive clause. The command references have object lines, solid ones, going outside, ending at an access mark. Those object lines are indications of parameter passing, indicating that the command references are so called Reference parameters. Parameter passings are explained in the *Parameters* articles. The parameters are not filled in, because an inactive clause is a dormant command definition. Only in a call to the dormant command definitions, the parameters are filled in.
+The large square is a command definition, the inactive nested command is in. The square inside the large square is the nested command. The inactive nested command contains two squares, which are the command references. They are actually *public* command references. This makes the command references parameters of the inactive nested command. The command references have object lines, solid ones, going outside, ending at an access mark. Those object lines are indications of parameter passing, indicating that the command references are so called Reference parameters. Parameter passings are explained in the *Parameters* articles. The parameters are not filled in, because an inactive nested command is a dormant command definition. Only in a call to the dormant command definitions, the parameters are filled in.
 
-### Command References in an Active Clause
+### Command References in an Active Nested Command
 
 ![](images/5.%20Commands%20Example%20Diagrams.035.png)
 
-The large square is the command definition, that the active clause is in. The diamond is the active clause. The smaller squares inside the diamond are command references in an active clause. They are actually *public* command references. This makes the command references parameters of the active clause. The command references have object lines, solid ones, going outside, ending at the targets of the command references.
+The large square is the command definition, that the active nested command is in. The diamond is the active nested command. The smaller squares inside the diamond are command references in an active nested command. They are actually *public* command references. This makes the command references parameters of the active nested command. The command references have object lines, solid ones, going outside, ending at the targets of the command references.

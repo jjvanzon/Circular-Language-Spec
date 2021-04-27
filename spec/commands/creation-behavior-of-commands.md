@@ -15,7 +15,7 @@ __Contents__
   - [Problems Solved By Delayed Creation](#problems-solved-by-delayed-creation)
   - [Delayed Creation Of Private Contents Only Counts For Command Calls](#delayed-creation-of-private-contents-only-counts-for-command-calls)
   - [Are Parameter Connections Actually Assignments?](#are-parameter-connections-actually-assignments)
-- [Creation Behavior of Clauses](#creation-behavior-of-clauses)
+- [Creation Behavior of Nested Commands](#creation-behavior-of-nested-commands)
 - [Creation Behavior of ‘Inactive Calls’](#creation-behavior-of-inactive-calls)
 - [No Overhead of Command Creation](#no-overhead-of-command-creation)
 - [No Circular Command Creation](#no-circular-command-creation)
@@ -31,7 +31,7 @@ This article tries to explore one way commands may be different from objects, su
 
 ### Creation Behavior of Calls
 
-A call can be present inside an object or inside another command. When a call is created, at first it might be sort of asleep. That might be when there is a chance to set its parameters. Before a command call is run, the command call’s public contents are there: its parameters. Those parameters are copied out of the call’s definition. The private contents are not there yet. A command’s private contents include private objects, clauses and command calls. The private contents might be shown as a copy out of the command definition, only just before the command call runs. The public contents of a command call are added when the command object is created. The private contents of a command call are only added when its about to run. So the general rule seems to be: creation of private contents of a command call is delayed until just before a command call is run.
+A call can be present inside an object or inside another command. When a call is created, at first it might be sort of asleep. That might be when there is a chance to set its parameters. Before a command call is run, the command call’s public contents are there: its parameters. Those parameters are copied out of the call’s definition. The private contents are not there yet. A command’s private contents include private objects, nested commands and command calls. The private contents might be shown as a copy out of the command definition, only just before the command call runs. The public contents of a command call are added when the command object is created. The private contents of a command call are only added when its about to run. So the general rule seems to be: creation of private contents of a command call is delayed until just before a command call is run.
 
 The reasons for the delay of creation of private contents are explained later. First, the steps of a command call’s creation are laid out one by one.
 
@@ -46,7 +46,7 @@ The reasons for the delay of creation of private contents are explained later. F
       <img src="images/3.%20Creation%20Behavior%20Of%20Commands.002.png" width="300" />
 
     - Private contents are *not* created  
-      (private objects, clauses and command calls)
+      (private objects, nested commands and command calls)
 
       <img src="images/3.%20Creation%20Behavior%20Of%20Commands.003.png" width="300" />
 
@@ -65,7 +65,7 @@ The reasons for the delay of creation of private contents are explained later. F
       <img src="images/3.%20Creation%20Behavior%20Of%20Commands.006.png" width="300" />
 
     - Private contents are created  
-      (private objects, clauses and command calls)  
+      (private objects, nested commands and command calls)  
       (shown as a copy from the command’s definition)
       (The definition of the parent command is not shown in the diagram.)
 
@@ -77,7 +77,7 @@ The reasons for the delay of creation of private contents are explained later. F
 
       <img src="images/3.%20Creation%20Behavior%20Of%20Commands.008.png" width="300" />
 
-    - Mind, that the sub-command’s private contents are not created, which disincludes its private objects, command calls and clauses.
+    - Mind, that the sub-command’s private contents are not created, which disincludes its private objects, command calls and nested commands.
 
       <img src="images/3.%20Creation%20Behavior%20Of%20Commands.009.png" width="300" />
 
@@ -108,7 +108,7 @@ The reasons for the delay of creation of private contents are explained later. F
       <img src="images/3.%20Creation%20Behavior%20Of%20Commands.014.png" width="300" />
 
     - Private contents are released  
-      (private objects, clauses and command calls)
+      (private objects, nested commands and command calls)
 
       <img src="images/3.%20Creation%20Behavior%20Of%20Commands.015.png" width="300" />
 
@@ -139,43 +139,43 @@ The problems solved by delayed creation of a command’s private contents are co
 
 Delayed creation of private contents only counts for command calls. Command calls redirect their definition.
 
-But if a command object might not have a definition, then it defines its own definition. For command objects that define their own definition, private contents might be created all the time, because nothing else defines its private contents but the object itself. This counts for command definitions. This also counts for *active* command definitions, which are executable object that define their own definition. But it also counts for clauses. See the article *Creation Behavior of Clauses*.
+But if a command object might not have a definition, then it defines its own definition. For command objects that define their own definition, private contents might be created all the time, because nothing else defines its private contents but the object itself. This counts for command definitions. This also counts for *active* command definitions, which are executable object that define their own definition. But it also counts for nested commands. See the section *Creation Behavior of Nested commands*.
 
 #### Are Parameter Connections Actually Assignments?
 
 It may be a bit of an open end whether the lines connected to parameters are connections, or that they are cloaked assignment calls. Or perhaps that connections for parameters might simply behave a bit like assignment calls. It might also be that value connections with direction might be interpreted as assignment calls altogether. Perhaps at some point in the creation process they show as assignments and other times as connections. There might not be any right answers, it is just a set of options that might be chosen or not.
 
-### Creation Behavior of Clauses
+### Creation Behavior of Nested Commands
 
 The section *Creation Behavior of Calls* talked about delaying the creation of a call’s private contents, until the command is about to be run, while the public contents of a command call are there straight away, as soon as the command call is created.
 
 But if a command object might not have a definition, then it defines its own definition. For command objects that define their own definition, private contents *are* created all the time, because nothing else defines its private contents but the object itself.
 
-This also counts for clauses.
+This also counts for nested commands.
 
-Clauses are like command definitions inside another command. 
+Nested commands are like command definitions inside another command. 
 
-A clause might always be created as long as the parent command is created. 
+A nested command might always be created as long as the parent command is created. 
 
-Even when a clause is an execution, it is also like a command definition. Command definitions might be created permanently, so clauses might be created permanently too, as well as clauses inside other clauses. Active clauses have added behavior compared to other sub-commands (command calls). They are like command definitions inside another command. An active clause’s private data is already created. Even when the clause structure inside a command is very deep, the *whole* depth of the clause structure is recursively created when the parent command is created. The clause structure can not have circularities and is always a limited tree structure, so that the process of creating the whole clause structure can never hang or anything like that.
+Even when a nested command is an execution, it is also like a command definition. Command definitions might be created permanently, so nested commands might be created permanently too, as well as nested commands inside other nested commands. Active nested commands have added behavior compared to other sub-commands (command calls). They are like command definitions inside another command. An active nested command’s private data is already created. Even when the nested command structure inside a command is very deep, the *whole* depth of the nested command structure is recursively created when the parent command is created. The nested command structure can not have circularities and is always a limited tree structure, so that the process of creating the whole nested command structure can never hang or anything like that.
 
 Other active sub-commands (for instance command calls) behave differently. A command calls’ *private* data is not created until the command is actually run.
 
-Just like other commands, that do not have a definition, a clause’s contents are created all the time, including its private contents.
+Just like other commands, that do not have a definition, a nested command’s contents are created all the time, including its private contents.
 
-Clauses being permanently created as long as the parent command is created even counts for clauses inside a command call. Right before a call is executed, its private contents are created, including the whole depth of its clauses.
+Nested commands being permanently created as long as the parent command is created even counts for nested commands inside a command call. Right before a call is executed, its private contents are created, including the whole depth of its nested commands.
 
 <img src="images/3.%20Creation%20Behavior%20Of%20Commands.016.png" width="300" />
 
-In theory the definition of the clause could be pointing to the clauses inside the command call’s definition. The private contents of the clause could be created only just before the clause is run. But this is not done. As soon as a clause in a command call is copied from the definition, the clause has no connection anymore to the clause in the definition. Therefore, it needs to define its own private contents.
+In theory the definition of the nested command could be pointing to the nested commands inside the command call’s definition. The private contents of the nested command could be created only just before the nested command is run. But this is not done. As soon as a nested command in a command call is copied from the definition, the nested command has no connection anymore to the nested command in the definition. Therefore, it needs to define its own private contents.
 
-Note, that though everything of the clauses is created, parameters of an active clause are only *assigned* right before the clause is run.
+Note, that though everything of the nested commands is created, parameters of an active nested command are only *assigned* right before the nested command is run.
 
-Even when the clause structure inside a command is very deep, the *whole* depth of the clause structure is recursively created when the parent command is created.
+Even when the nested command structure inside a command is very deep, the *whole* depth of the nested command structure is recursively created when the parent command is created.
 
 <img src="images/3.%20Creation%20Behavior%20Of%20Commands.017.png" width="400" />
 
-The sub-call inside the big call and inside the big definition only have the public parameter created, not their private contents as neither of them is running. But the clause, with all its contents, are created inside the big call all anyway.
+The sub-call inside the big call and inside the big definition only have the public parameter created, not their private contents as neither of them is running. But the nested command, with all its contents, are created inside the big call all anyway.
 
 ### Creation Behavior of ‘Inactive Calls’
 
@@ -281,11 +281,11 @@ Not creating a call’s private contents before it even runs, takes away discuss
 
 ### Active Command in Inactive Command
 
-A clause in a clause only ever runs when its top parent command is an active command object. If the top parent command is an inactive command object, for instance a command definition, then even an *active* clause in it is dormant.
+A nested command in a nested command only ever runs when its top parent command is an active command object. If the top parent command is an inactive command object, for instance a command definition, then even an *active* nested command in it is dormant.
 
 <img src="images/3.%20Creation%20Behavior%20Of%20Commands.036.png" width="300" />
 
-The clause might only ever run in a *call* to the definition, but then it is a copy of the definition’s clause:
+The nested command might only ever run in a *call* to the definition, but then it is a copy of the definition’s nested command:
 
 <img src="images/3.%20Creation%20Behavior%20Of%20Commands.037.png" width="380" />
 

@@ -54,7 +54,7 @@ The following forms of *jumps* are supported:
 
 The last two jumps are only used inside a loop.
 
-In Circular, execution flow statements are special commands. They are commands, whose arguments are command references. An execution flow command calls a command passed to it, based on a decision. The passed command references are called *clauses* of the execution flow command.
+In Circular, execution flow statements are special commands. They are commands, whose arguments are command references. An execution flow command calls a command passed to it, based on a decision. The passed command references might be called *clauses* of the execution flow command.
 
 Even though execution flow commands are really just commands with command references, a call to an execution flow command is often called a *statement*.
 

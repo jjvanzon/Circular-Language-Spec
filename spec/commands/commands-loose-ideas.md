@@ -97,9 +97,9 @@ A command symbol might only have a call line if it’s directly inside another c
 
 ![](images/7.%20Commands%20Ideas.053.png)
 
-Only when you call a clause or an embedded command reference, the line doesn’t exit the command first:
+Only when you call a nested command or an embedded command reference, the line doesn’t exit the command first:
 
-*Call to clause:*  
+*Call to nested command:*  
 ![](images/7.%20Commands%20Ideas.054.jpeg)
 
 *Call an internal command reference:*  
@@ -250,18 +250,19 @@ Except for passing command reference to a command.
 `<< terminology >>`
 
 - The terms:
-    - Reference
+    - reference
     - call
     - definition
-    - clause
-    - active clause
-    - inactive clause
-    - sub clause / sub command 
+    - nested command
+    - active nested command
+    - inactive nested command
+    - deeper nested command 
+    - sub command 
     - ...
 
 `<< special access >>`
 
-- Clause access
+- Nested command access
 
 `<< explains other technology >>`
 
@@ -304,10 +305,10 @@ Except for passing command reference to a command.
     - Reference
     - call
     - definition
-    - clause
-    - active clause
-    - inactive clause
-    - sub clause / sub command 
+    - nested command
+    - active nested command
+    - inactive nested command
+    - deeper nested command / sub command 
     - Definitions of the terms parameter and argument
     - < Which precisely? >
     - ...
@@ -373,7 +374,12 @@ The problems proposed in this text might have to do with:
 
 `<< terminology >>`
 
-A command symbol can have one of four roles: - definition, - clause, - call, - reference
+A command symbol might have one of four roles:
+
+- definition
+- call
+- reference
+- nested command
 
 -----
 
@@ -441,13 +447,13 @@ But if it has a reference line it is regarded no more than a reference or call t
 
 `<< construct drafts >>`
 
-A call line makes the square a call. A reference line makes it a reference. No line at all indicates that it’s a command definition or a clause. Lines can also be left out for abstraction reasons.
+A call line makes the square a call. A reference line makes it a reference. No line at all indicates that it’s a command definition or a nested command. Lines can also be left out for abstraction reasons.
 
 | ![](images/7.%20Commands%20Ideas.067.png) | ![](images/Symbol%20Language%20(2004).409b.png) | ![](images/7.%20Commands%20Ideas.068.png) | ![](images/7.%20Commands%20Ideas.069.png) <br> ![](images/7.%20Commands%20Ideas.070.png) | ![](images/7.%20Commands%20Ideas.071.png) |
 |:----------:|:------:|:----:|:---------:|:------------------------------------------------------:|
-| Definition | Clause | Call | Reference | Illegal: a square can’t be both a call and a reference |
+| Definition | Nested command | Call | Reference | Illegal: a square can’t be both a call and a reference |
 
-< Not true: a call might not directly exit a square if it calls a command reference embedded in the same command or a clause of the command >
+< Not true: a call might not directly exit a square if it calls a command reference embedded in the same command or a nested command of the command >
 
 Note here that the access symbol of a solid command reference line is also drawn solid.
 
@@ -465,7 +471,7 @@ Here is a list of possible reference targets and call targets:
 |          Reference to definition          |             Call to definition             |
 |                                           |                                            |
 | ![](images/7.%20Commands%20Ideas.073.png) | ![](images/7.%20Commands%20Ideas.075b.png) |
-|            Reference to clause            |               Call to clause               |
+|        Reference to nested command        |           Call to nested command           |
 |                                           |                                            |
 | ![](images/7.%20Commands%20Ideas.074.png) | ![](images/7.%20Commands%20Ideas.076.png)  |
 |          Reference to reference           |             Call to reference              |
@@ -475,9 +481,9 @@ Here is a list of possible reference targets and call targets:
 
 |     |    |
 |-----|----|
-| ![](images/7.%20Commands%20Ideas.077.jpeg) | __Reference to sibling inactive clause, in a square.__ <br> Only possible for static command members or exclusive establishment. | 
-| ![](images/7.%20Commands%20Ideas.078.jpeg) | __Reference to sibling active clause, in a square.__ <br> Only possible for static command members or exclusive establishment. | 
-| ![](images/7.%20Commands%20Ideas.079.jpeg) | __Call to sibling inactive clause, in a square.__ <br> This is like a jump to a clause, that might otherwise not execute. <br> Only possible for static command members or exclusive establishment. |
+| ![](images/7.%20Commands%20Ideas.077.jpeg) | __Reference to sibling inactive nested command, in a square.__ <br> Only possible for static command members or exclusive establishment. | 
+| ![](images/7.%20Commands%20Ideas.078.jpeg) | __Reference to sibling active nested command, in a square.__ <br> Only possible for static command members or exclusive establishment. | 
+| ![](images/7.%20Commands%20Ideas.079.jpeg) | __Call to sibling inactive nested command, in a square.__ <br> This is like a jump to a nested command, that might otherwise not execute. <br> Only possible for static command members or exclusive establishment. |
 
 `<< rule rich >>`
 

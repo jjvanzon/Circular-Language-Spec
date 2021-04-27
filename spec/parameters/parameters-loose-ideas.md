@@ -11,7 +11,7 @@ __Contents__
 - [Parameter and Argument](#parameter-and-argument)
     - [Brainstorm](#brainstorm)
         - [Other](#other)
-- [Public Inactive Clause `=` Command `Out` Parameter](#public-inactive-clause--command-out-parameter)
+- [Public Inactive Nested Command `=` Command `Out` Parameter](#public-inactive-nested-command--command-out-parameter)
 - [Reading & Writing Parameters](#reading--writing-parameters)
 - [This](#this)
     - [Class . HasThis](#class--hasthis)
@@ -42,10 +42,10 @@ An argument is a public member of a diamond in execution.
 
 Creation and state read and write only apply to object parameters, not to parameters that are procedures.
 
-### Public Inactive Clause `=` Command `Out` Parameter
+### Public Inactive Nested Command `=` Command `Out` Parameter
 
 `<< parameters >>`
-But *inactive* clauses might be referenced and made public. If `you make` an inactive clause public, `you might` make it an __Object Out__ parameter: an object `produced or determined` by `the` command. A public inactive clause `might` be a command definition `produced` by another command.
+But *inactive* nested commands might be referenced and made public. If `you make` an inactive nested command public, `you might` make it an __Object Out__ parameter: an object `produced or determined` by `the` command. A public inactive nested command `might` be a command definition `produced` by another command.
 
 ### Reading & Writing Parameters
 
@@ -108,7 +108,7 @@ Nice phrase? "how to link objects to a command."
 
 -----
 
-Clauses might have parameters, `just like` command definitions:
+Nested commands might have parameters, `just like` command definitions:
 
 ![](images/1.%20Commands%20Main%20Concepts.032.png)
 
@@ -118,11 +118,11 @@ Whether a parameter of a command `can` be read or written `at all is` access-con
 
 -----
 
-Clauses `are` like command definitions, `therefore` they `can` have parameters `just like` command definitions.
+Nested commands `are` like command definitions, `therefore` they `can` have parameters `just like` command definitions.
 
 -----
 
-If `you make` an inactive clause public, `you might` make it an __Object `Out`__ parameter: an object `produced or determined` by `the` command. It `might` be an __Object `Out`__ parameter, that `is` an executable object. That `might` work `just fine`.
+If `you make` an inactive nested command public, `you might` make it an __Object `Out`__ parameter: an object `produced or determined` by `the` command. It `might` be an __Object `Out`__ parameter, that `is` an executable object. That `might` work `just fine`.
 
 -----
 

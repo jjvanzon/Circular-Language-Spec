@@ -426,7 +426,7 @@ Or:
 
 ### Nested Commands
 
-A nested command may be a command inside another command with no lines going to or from it.
+A nested command is like a command defined within a command.
 
 They may look like this:
 
@@ -435,7 +435,9 @@ They may look like this:
 <img src="images/1.%20Commands%20Main%20Concepts.015a.png" width="60" />
 <img src="images/1.%20Commands%20Main%20Concepts.015b.png" width="60" />
 
-They may coincide with the terms:
+A nested command may be a command inside another command with no lines going to or from it.
+
+The concept of nested commands may coincide with the terms:
 
 - Code blocks
 - Clauses
@@ -443,6 +445,8 @@ They may coincide with the terms:
 - Lambda expressions
 
 Those may all be examples of *nested commands*. Sometimes however, it might be easier to use a single name for these phenomena.
+
+
 
 A distinction between *active* nested commands and *inactive* nested commands might be relevant sometimes. Code blocks might be *active* nested commands. A local function may be an *inactive* nested command for instance.
 
