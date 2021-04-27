@@ -12,7 +12,6 @@ __Contents__
 - [Nested Command](#nested-command)
 - [Access from Nested Commands](#access-from-nested-commands)
 - [Access from Nested Commands](#access-from-nested-commands-1)
-- [Access from Nested Commands](#access-from-nested-commands-2)
 - [Nested Command](#nested-command-1)
 - [Active Nested Command](#active-nested-command)
 - [Inactive Nested Command](#inactive-nested-command)
@@ -22,6 +21,8 @@ __Contents__
 - [Loose Ideas](#loose-ideas)
 
 ### Introduction
+
+`<< already covered >>`
 
 Nested commands may be:
 
@@ -50,7 +51,7 @@ but it doesn’t delegate to another command, like a call might:
 
 ![](images/7.%20Commands%20Ideas.020.jpeg)
 
-`<< terminology >>`  
+`<< formulation >>`  
 
 It is an undelegated part of a command, that might be called a *code block*.
 
@@ -58,11 +59,13 @@ It is an undelegated part of a command, that might be called a *code block*.
 
 Because a diamond might not be a call, it is also called an *execution* or an *execution point*.
 
-`<< terminology >>`  
+`<< already covered >>`  
 
 An undelegated square inside a command is also considered a nested command that may be a clause, local function or lambda expression.
 
 ![](images/7.%20Commands%20Ideas.021.jpeg)
+
+`<< nice formulation >>`
 
 but it doesn’t execute, unless you call it.
 
@@ -70,9 +73,7 @@ but it doesn’t execute, unless you call it.
 
 ### Access from Nested Commands
 
-Squares formally can’t have outward lines, except for static members. There are situations in which non static members of squares are shown to have outward lines, but those are discussed later.
-
-### Access from Nested Commands
+`<< special access >>`
 
 Nested commands may have special access privileges compared to delegated command symbols.
 
@@ -84,6 +85,8 @@ Nested commands may freely access anything of its parent block and the parent bl
 In the picture above, the top two lines could have been set by A itself. The first resides in A’s parent nested command. The second resides in the *execution* that parents A, so still accessible to A. The last line, crossed out, can’t be set by A itself, because it resides outside A’s containing call. It can be set only by a symbol higher than A’s containing call, for instance B.
 
 ### Access from Nested Commands
+
+`<< special access >>`
 
 < Nice sentence:  
 A procedure makes all direct children accessible to all blocks.  
@@ -109,13 +112,17 @@ So its like the borders of nested commands can be ignored in outward access.
 
 ### Nested Command
 
-`<< detail >>`
+`<< terminology >>`
 
-A nested command is usually not called a definition. The nested command might be directly contained by a command. So this is not a nested command:
+A nested command is usually not called a definition.
+
+`<< details >>`
+
+The nested command might be directly contained by a command. So this is not a nested command:
 
 ![](images/7.%20Commands%20Ideas.029.png)
 
-`<< terminology >>`
+`<< nice formulation >>`
 
 The nested command can be a diamond or a square. Its container can also be a diamond as well as a square. A nested command might not have a reference line, or it might have been a reference or a call, not a nested command.
 
@@ -139,11 +146,11 @@ An inactive nested command is a nested command that doesn’t execute. So it’s
 ![](images/7.%20Commands%20Ideas.032.png)
 ![](images/7.%20Commands%20Ideas.033.png)
 
-It won’t execute unless you call it.
+It won’t execute unless it is called.
 
 ### Deeper Nested Command
 
-`<< terminology >>`  
+`<< details >>`  
 
 A deeper nested command is a nested command inside a nested command. So it’s a command symbol without a reference line in a command symbol without a reference line in a command symbol, for instance:
 
@@ -152,6 +159,8 @@ A deeper nested command is a nested command inside a nested command. So it’s a
 It doesn’t matter whether any of the symbols is a square or a diamond.
 
 ### The If Example
+
+`<< execution flow >>`
 
 An application of that is the If command.
 
@@ -163,23 +172,31 @@ The nested commands can freely access anything of __Command A__, so __Command B_
 
 ### Active Nested Commands Compared to Objects
 
-< May change terminology. >
+`<< commands compared to objects. >>`
 
 An active nested command `is analogous` to an object that `might not` have a class. A *call* `is more` like an object that *`might`* have a class.
 
 ### Loose Ideas
 
+`<< details >>`
+
 A nested command `might not` redirect its definition, because then `it might` be a command call.
 
 -----
+
+`<< details >>`
 
 A nested command `might not` redirect its object, because then `it might` be a command reference.
 
 -----
 
+`<< details >>`
+
 A nested command `is never` situated inside an object, or `it might` not be a nested command.
 
 -----
+
+`<< rule rich >>`
 
 Active nested commands, command calls and active command references in parent commands `are always` private, because `you can not` reference a sub-command.
 
@@ -190,5 +207,7 @@ But *inactive* nested commands `*can*` be referenced and might be made public.
 ![](images/1.%20Commands%20Main%20Concepts.053.png)
 
 -----
+
+`<< rule rich >>`
 
 *Active* nested commands, command calls and active command references in parent commands `are always` private, because `you can not` reference a sub-command.
