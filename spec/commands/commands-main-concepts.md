@@ -4,8 +4,6 @@
 Main Concepts
 -------------
 
-`[ Preliminary documentation ]`
-
 __Contents__
 
 - [Introduction](#introduction)
