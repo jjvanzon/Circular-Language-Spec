@@ -67,7 +67,7 @@ There is:
 - parameters of these sub-commands
 - and the assignment of data to the sub-commands’ parameters
 
-funny enough, that is all a command call consists of. Do remember that machine instructions, arithmetic operators, comparative and boolean algebra and execution control statements such as If and For, are all just command calls.
+funny enough, that is all a command call consists of. Do remember that machine instructions, arithmetic operators, comparative and boolean algebra and execution flow statements such as If and For, are all just command calls.
 
 ### Data
 

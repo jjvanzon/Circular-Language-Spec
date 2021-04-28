@@ -865,14 +865,14 @@ The following can be translated to another language, for instance text code:
 - Operators: Command call
 - Literals: The state of an object
 
-Symbol text code is established by a set of standard translations for the elements above, and a few special translations for for instance execution control commands.
+Symbol text code is established by a set of standard translations for the elements above, and a few special translations for for instance execution flow commands.
 
 ##### Brainstorm
 
 - Normal Command Call Notation = Standard Operator Notation:
     - There are two ways to express parameters in text code: in a definition or in a command call. The declaration of a command can be expressed as freely as an operator or literal notation. The general form of a textual command call notation is nothing more than a standard operator notation for a command.
 - Mention that access operators are operator notations of the system commands.
-- Explain what execution control text notation is (is it an operator notation?)
+- Explain what execution flow text notation is (is it an operator notation?)
 
 ##### Operators
 
@@ -960,7 +960,7 @@ There is text code notation that I’ve introduced for which language integratio
 - Command declaration
 - (Standard literals)
 - Access operators
-- Execution control statements
+- Execution flow statements
 
 ###### Access Operators
 
@@ -1191,7 +1191,7 @@ Object A
 End Object
 ```
 
-< Execution Control? >
+< Execution Flow? >
 
 #### Other
 

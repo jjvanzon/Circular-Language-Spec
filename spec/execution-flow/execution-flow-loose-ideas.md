@@ -8,10 +8,9 @@ Loose Ideas
 
 __Contents__
 
-- [Misc Ideas](#misc-ideas)
-- [Execution Control (from Original Symbol Documentation from 2004)](#execution-control-from-original-symbol-documentation-from-2004)
-    - [Basic Language Execution Control](#basic-language-execution-control)
-    - [Execution Control Commands](#execution-control-commands)
+- [Execution Flow (from Original Symbol Documentation from 2004)](#execution-flow-from-original-symbol-documentation-from-2004)
+    - [Basic Language Execution Flow](#basic-language-execution-flow)
+    - [Execution Flow Commands](#execution-flow-commands)
     - [Selection and Repetition](#selection-and-repetition)
     - [Selection](#selection)
     - [Repetition](#repetition)
@@ -22,27 +21,19 @@ __Contents__
             - [Selection](#selection-1)
             - [Iteration](#iteration)
     - [Brainstorm](#brainstorm)
-        - [Execution Control Controls which call is made next](#execution-control-controls-which-call-is-made-next)
+        - [Execution Flow Controls which call is made next](#execution-flow-controls-which-call-is-made-next)
         - [Nice Example](#nice-example)
-        - [Execution Control is Call Control](#execution-control-is-call-control)
-        - [=> Execution Control](#-execution-control)
+        - [Execution Flow is Call Control](#execution-flow-is-call-control)
+        - [=> Execution Flow](#-execution-flow)
 - [Declared Traversions / Constructions](#declared-traversions--constructions)
 
-### Misc Ideas
-
-Execution Flow / Process Control
-
-Misschien moet je Execution Flow uiteindelijk wel gewoon Process Control noemen en er ook scheduling en dergelijke aan toevoegen.
-
-JJ
-
-### Execution Control (from Original Symbol Documentation from 2004)
+### Execution Flow (from Original Symbol Documentation from 2004)
 
 < A command’s calling one of its own clauses, is an unconditional jump >
 
 < Cover text code entirely, right inside the story. Oh, yeah, should I? Or should I cover it in the Text Code chapter? >
 
-#### Basic Language Execution Control
+#### Basic Language Execution Flow
 
 To explain control over execution flow in Symbol I might first introduce examples of execution flow statements in the Basic programming language.
 
@@ -84,9 +75,9 @@ The blue parts in the code above are called the *clauses* of the control stateme
 
 The start of the control statement and the end and whatever’s in between is considered the control statement.
 
-#### Execution Control Commands
+#### Execution Flow Commands
 
-Execution control statements are special commands. They are given one or more references to other commands, the execution of which is controlled. These referenced commands are the clauses of the control statement and also the expressions and assignments controlling their execution. The execution flow command decides when or if any of these referenced commands are called and how many times. How the execution flow command might call its referenced commands, is dependent on what the referenced commands might do.
+Execution flow statements are special commands. They are given one or more references to other commands, the execution of which is controlled. These referenced commands are the clauses of the control statement and also the expressions and assignments controlling their execution. The execution flow command decides when or if any of these referenced commands are called and how many times. How the execution flow command might call its referenced commands, is dependent on what the referenced commands might do.
 
 #### Selection and Repetition
 
@@ -205,7 +196,7 @@ End If
 
 The outer squares are the clauses. The squares in the larger square are the references to those clauses.
 
-Execution control is so common and the notation above is rather complex. The notation above should even require grouping triangles around the __If__ groups. I already left those out, but I might do more to make it look clearer. A simplified notation for a call to the Selection command is regularly used instead:
+Execution flow is so common and the notation above is rather complex. The notation above should even require grouping triangles around the __If__ groups. I already left those out, but I might do more to make it look clearer. A simplified notation for a call to the Selection command is regularly used instead:
 
 ![](images/6.%20Execution%20Control%20Ideas.003.png)
 
@@ -690,7 +681,7 @@ Maybe the command references of execution flow commands need to have a certain c
 
 -----
 
-About the execution of non execution controlled calls. Some calls might be made before others because the result of one call is used in another call. That defines (some of) the order of precedence of calls.  
+About the order of execution without execution flow commands: Some calls might be made before others because the result of one call is used in another call. That defines (some of) the order of precedence of calls.  
 The order of the calls in a command is (part) determined by dependence, independent of the order the programmer gives.
 
 The programmer can change the order of things that are arbitrarily called and insert calls into the obligatory order or calls, but if it’s not so relevant, the programmer doesn’t even provide the call order. Most of the time it is not that relevant. (or is it, to what extent can I not see the requirement of the order of calls, even when its order is very important?
@@ -703,18 +694,18 @@ If a command takes a reference to a nested command then you can do this notation
 
 Defining the contents of the command references right within the
 
-##### Execution Control Controls which call is made next
+##### Execution Flow Controls which call is made next
 
 <  
 Most of what’s done inside a command is calling other commands.
 
-Apart from executing a sequence of calls linearly, you can alter the course of the calls using execution control.
+Apart from executing a sequence of calls linearly, you can alter the course of the calls using execution flow.
 
-A clause is like a command itself. For that you can see execution control as selecting which command might be called next. Or actually which clause might be called next.
+A clause is like a command itself. For that you can see execution flow as selecting which command might be called next. Or actually which clause might be called next.
 
-First explain that a control statement controls which call is made next. They are responsible for the arbitrarily in execution. Otherwise there might be just one way a program can execute from start to beginning and that’s that, but execution control sees to it that there is variation in the execution of a program.
+First explain that a control statement controls which call is made next. They are responsible for the arbitrarily in execution. Otherwise there might be just one way a program can execute from start to beginning and that’s that, but execution flow sees to it that there is variation in the execution of a program.
 
-In one compiler optimization technique it is these execution flow statements that are analysed. Execution control statements make execution variable and this compiler technique analyses how variable that actually is. Maybe the execution control might not be reached with too many different values, let’s say, two values. In that case you might consider removing the variation in execution by making two commands one of which is one situation of the execution flow statement and the other one is the other situation of the execution flow statement. At calls to the execution flow statement or indirect calls to it, you insert the variation that applies right there.  
+In one compiler optimization technique it is these execution flow statements that are analysed. Execution flow statements make execution variable and this compiler technique analyses how variable that actually is. Maybe the execution flow might not be reached with too many different values, let’s say, two values. In that case you might consider removing the variation in execution by making two commands one of which is one situation of the execution flow statement and the other one is the other situation of the execution flow statement. At calls to the execution flow statement or indirect calls to it, you insert the variation that applies right there.  
 \>
 
 ##### Nice Example
@@ -731,19 +722,19 @@ For I = 0 to 4
 Next
 ```
 
-##### Execution Control is Call Control
+##### Execution Flow is Call Control
 
-This means that in Symbol the definition of execution control is selecting what command to call next depending on a __Boolean__ state.
+This means that in Symbol the definition of execution flow is selecting what command to call next depending on a __Boolean__ state.
 
 You could speak of conditional calls, actually. 
 
-Calls can be managed by execution control. Execution control manages the regular order of the calls *and* can alter the regular traversal of calls depending on a Boolean result (__If__, __Select__, __For__, __Do__). The Boolean result can spring from any combination of forms of algebra that in the end returns a Boolean result. Comparison algebra and Boolean algebra return Boolean results.
+Calls can be managed by execution flow. Execution flow manages the regular order of the calls *and* can alter the regular traversal of calls depending on a Boolean result (__If__, __Select__, __For__, __Do__). The Boolean result can spring from any combination of forms of algebra that in the end returns a Boolean result. Comparison algebra and Boolean algebra return Boolean results.
 
-##### => Execution Control
+##### => Execution Flow
 
-But... if you pass a clause reference to an execution flow command the execution control CAN call the clause, but only in the context of the command instance that called the execution flow command!
+But... if you pass a clause reference to an execution flow command the execution flow CAN call the clause, but only in the context of the command instance that called the execution flow command!
 
-Execution control commands might call clauses in the context of a *specific call* to the clause’s command definition.
+Execution flow commands might call clauses in the context of a *specific call* to the clause’s command definition.
 
 ### Declared Traversions / Constructions
 

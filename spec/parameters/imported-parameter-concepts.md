@@ -174,7 +174,7 @@ Even though all parameters can be individually accessed by pointing to its symbo
 
 The article *Parameter Order* introduced the concept of an ordered list of parameters. The diagramatic display of parameter order is still not final.
 
-In a diagram the order of the parameters could be expressed just like the order of consecutive commands are ordered by next-command references. See *Execution Control, Normal Execution Order*. This display is yielded over to ordering objects, and ordering parameters as well.
+In a diagram the order of the parameters could be expressed just like the order of consecutive commands are ordered by next-command references. See *Execution Flow, Normal Execution Order*. This display is yielded over to ordering objects, and ordering parameters as well.
 
 ![](images/2.%20Imported%20Parameter%20Concepts.027.png)
 

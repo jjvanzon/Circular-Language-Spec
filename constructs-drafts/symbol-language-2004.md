@@ -255,8 +255,8 @@ Contents
 - [Events](#events)
     - [From Another Place](#from-another-place)
     - [Nog](#nog)
-- [Basic Language Execution Control](#basic-language-execution-control)
-- [Execution Control Commands](#execution-control-commands)
+- [Basic Language Execution Flow](#basic-language-execution-flow)
+- [Execution Flow Commands](#execution-flow-commands)
 - [Selection and Repetition](#selection-and-repetition)
 - [Selection](#selection)
 - [Repetition](#repetition)
@@ -270,10 +270,10 @@ Contents
             - [Select](#select)
         - [Iteration](#iteration)
 - [Brainstorm](#brainstorm-5)
-    - [Execution Control Controls which call is made next](#execution-control-controls-which-call-is-made-next)
+    - [Execution Flow Controls which Call is Made Next](#execution-flow-controls-which-call-is-made-next)
         - [Nice Example](#nice-example)
-        - [Execution control is call control](#execution-control-is-call-control)
-    - [=> Execution Control](#-execution-control)
+        - [Execution Flow Control is Call Control](#execution-flow-control-is-call-control)
+    - [=> Execution Flow](#-execution-flow)
 - [Neighbor Access](#neighbor-access)
 - [Child Access](#child-access)
 - [Global Access](#global-access)
@@ -3995,16 +3995,16 @@ There *are* techniques for a child to communicate with its parent. There are two
 Er is naast referentie naar commando en referentie naar object nog een manier voor Events. Je moet namelijk ‘multi-cast’ events mogelijk maken en daar vereist een collection van event sinks die allemaal simultaan aangeroepen worden.. work it out
 
 
-Execution Control
------------------
+Execution Flow
+---------------
 
 < A command’s calling one of its own nested commands, is an unconditional jump >
 
 < Cover text code entirely, right inside the story. Oh, yeah, should I? Or should I cover it in the Text Code chapter? >
 
-### Basic Language Execution Control
+### Basic Language Execution Flow
 
-To explain execution control in Symbol I might first introduce examples of execution control in the Basic programming language.
+To explain execution flow in Symbol I might first introduce examples of execution flow in the Basic programming language.
 
 ```vb
 If X Then A Else B
@@ -4044,24 +4044,24 @@ The blue parts in the code above are called the *clauses* of the control stateme
 
 The start of the control statement and the end and whatever’s in between is considered the control statement.
 
-### Execution Control Commands
+### Execution Flow Commands
 
-Execution control statements are special commands. They are given one or more references to other commands, the execution of which is controlled. These referenced commands are the clauses of the control statement and also the expressions and assignments controlling their execution. The execution control command decides when or if any of these referenced commands are called and how many times. How the execution control command might call its referenced commands, is dependent on what the referenced commands might do.
+Execution flow statements are special commands. They are given one or more references to other commands, the execution of which is controlled. These referenced commands are the clauses of the control statement and also the expressions and assignments controlling their execution. The execution flow command decides when or if any of these referenced commands are called and how many times. How the execution flow command might call its referenced commands, is dependent on what the referenced commands might do.
 
 ### Selection and Repetition
 
-The execution control mentioned till now is also called conditional jumping. There are two general forms of conditional jumping: selection and repetition. Selection selects one thing to execute out of several or whether to execute something at all depending on a condition. Repetition repeats a command a number of times until a condition is met. In the repeated command actions can be taken that affect this condition. Select and If statements are selection. For and Do statements are repetition. Symbol defines but two commands: Selection and Repetition. Depending on how the command is used it functions as an If, Select, For or Do and depending on that, appropriate names are notated with calls to the execution control commands.
+The execution flow concepts mentioned till now is also called conditional jumping. There are two general forms of conditional jumping: selection and repetition. Selection selects one thing to execute out of several or whether to execute something at all depending on a condition. Repetition repeats a command a number of times until a condition is met. In the repeated command actions can be taken that affect this condition. Select and If statements are selection. For and Do statements are repetition. Symbol defines but two commands: Selection and Repetition. Depending on how the command is used it functions as an If, Select, For or Do and depending on that, appropriate names are notated with calls to the execution flow commands.
 
 ### Selection
 
 < Sub sectioning. >  
 < That shorthand: what if the actual reference target is two capsules up? >
 
-This section apart from covering the selection execution control command also explains a lot about execution control in general, not just selection, specifically about clauses.
+This section apart from covering the selection execution flow command also explains a lot about execution flow in general, not just selection, specifically about clauses.
 
-__Select__ and __If__ statements are both accomplished by calling the __Selection__ execution control command. The difference between an __If__ and a __Select__ is that a __Select__ first defines the beginning of the expression to evaluate and then a list of endings for the expression. Each beginning-ending combination is treated as a separate __If__.
+__Select__ and __If__ statements are both accomplished by calling the __Selection__ execution flow command. The difference between an __If__ and a __Select__ is that a __Select__ first defines the beginning of the expression to evaluate and then a list of endings for the expression. Each beginning-ending combination is treated as a separate __If__.
 
-The __Selection__ execution control command takes 4 kinds of command references:
+The __Selection__ execution flow command takes 4 kinds of command references:
 
 ```vb
 Select
@@ -4111,7 +4111,7 @@ The resulting expression of the first __If__ might be __X – 2 > 0__.
 
 -----
 
-Symbol text code allows various representations of __Selection__ execution control, but the notation above uses each clause’s distinctive name. An alternate notation might be as follows:
+Symbol text code allows various representations of __Selection__ execution flow, but the notation above uses each clause’s distinctive name. An alternate notation might be as follows:
 
 ```vb
 Select X – 2 >
@@ -4170,7 +4170,7 @@ End If
 
 The outer squares are the clauses. The squares in the larger square are the references to those clauses.
 
-Execution control is so common and the notation above is rather complex. The notation above should even require grouping triangles around the If groups. I already left those out, but I might do more to make it look clearer. A simplified notation for a call to the Selection command is regularly used instead:
+Execution flow is so common and the notation above is rather complex. The notation above should even require grouping triangles around the If groups. I already left those out, but I might do more to make it look clearer. A simplified notation for a call to the Selection command is regularly used instead:
 
 ![](images/Symbol%20Language%20(2004).340.png)
 
@@ -4280,7 +4280,7 @@ Step
 Loop
 ```
 
-< Picture 33: Diagram of Repetition execution control command with all its clauses >
+< Picture 33: Diagram of Repetition execution flow command with all its clauses >
 
 Of each clause there can be only one, but not all need to be filled in.
 
@@ -4331,7 +4331,7 @@ Diagram Code:
 
 < Picture 35: Square called Do with 5 other squares: I, = 0, <= 5, ++, A B. >
 
-The algebra you see in the diagrams above (for instance <=5) are actually calls to algebraic commands. The algebraic language can be integrated like that in the diagram code. The integration of other languages into diagram code is discussed in a separate chapter. Here I’ve only used it to show how using the execution control statements can look in practice.
+The algebra you see in the diagrams above (for instance <=5) are actually calls to algebraic commands. The algebraic language can be integrated like that in the diagram code. The integration of other languages into diagram code is discussed in a separate chapter. Here I’ve only used it to show how using the execution flow statements can look in practice.
 
 < Algebra covered in Math, Language embedding in a Code Language chapter >  
 < Tell not to worry about the algebraic operations and assignment.  Algebra operations and assignment are themselves commands that can be called which are explained later. >
@@ -4656,7 +4656,7 @@ Maybe for should be called repeat
 
 ### Brainstorm
 
-Maybe the command references of execution control commands need to have a certain command interface.
+Maybe the command references of execution flow commands need to have a certain command interface.
 
 -----
 
@@ -4673,20 +4673,20 @@ If a command takes a reference to a nested command then you can do this notation
 
 Defining the contents of the command references right within the
 
-#### Execution Control Controls which call is made next
+#### Execution Flow Controls which Call is Made Next
 
 <  
 Most of what’s done inside a command is calling other commands.
 
-Apart from executing a sequence of calls linearly, you can alter the course of the calls using execution control.
+Apart from executing a sequence of calls linearly, you can alter the course of the calls using execution flow.
 
-A clause is like a command itself. For that you can see execution control as selecting which command might be called next. Or actually which clause might be called next.
+A clause is like a command itself. For that you can see execution flow as selecting which command might be called next. Or actually which clause might be called next.
 
 -----
 
-First explain that a control statement controls which call is made next. They are responsible for the arbitrariness in execution. Otherwise there might be just one way a program can execute from start to beginning and that’s that, but execution control sees to it that there is variation in the execution of a program.
+First explain that a control statement controls which call is made next. They are responsible for the arbitrariness in execution. Otherwise there might be just one way a program can execute from start to beginning and that’s that, but execution flow sees to it that there is variation in the execution of a program.
 
-In one compiler optimization technique it is these execution control statements that are analysed. Execution control statements make execution variable and this compiler technique analyses how variable that actually is. Maybe the execution control might not be reached with too many different values, let’s say, two values. In that case you might consider removing the variation in execution by making two commands one of which is one situation of the execution control statement and the other one is the other situation of the execution control statement. At calls to the execution control statement or indirect calls to it, you insert the variation that applies right there.  
+In one compiler optimization technique it is these execution flow statements that are analysed. Execution flow statements make execution variable and this compiler technique analyses how variable that actually is. Maybe the execution flow might not be reached with too many different values, let’s say, two values. In that case you might consider removing the variation in execution by making two commands one of which is one situation of the execution flow statement and the other one is the other situation of the execution flow statement. At calls to the execution flow statement or indirect calls to it, you insert the variation that applies right there.  
 \>
 
 ##### Nice Example
@@ -4703,19 +4703,19 @@ For I = 0 to 4
 Next
 ```
 
-##### Execution control is call control
+##### Execution Flow Control is Call Control
 
-This means that in Symbol the definition of execution control is selecting what command to call next depending on a Boolean state.
+This means that in Symbol the definition of execution flow is selecting what command to call next depending on a Boolean state.
 
 You could speak of conditional calls, actually. 
 
-Calls can be managed by execution control. Execution control manages the regular order of the calls *and* can alter the regular traversal of calls depending on a Boolean result (If, Select, For, Do). The Boolean result can spring from any combination of forms of algebra that in the end returns a Boolean result. Comparison algebra and Boolean algebra return Boolean results.
+Calls can be managed by execution flow. Execution flow manages the regular order of the calls *and* can alter the regular traversal of calls depending on a Boolean result (If, Select, For, Do). The Boolean result can spring from any combination of forms of algebra that in the end returns a Boolean result. Comparison algebra and Boolean algebra return Boolean results.
 
-#### => Execution Control
+#### => Execution Flow
 
-But... if you pass a clause reference to an execution control command the execution control CAN call the clause, but only in the context of the command instance that called the execution control command!
+But... if you pass a command reference to an execution flow command the execution flow CAN call the clause, but only in the context of the command instance that called the execution flow command!
 
-Execution control commands might call clauses in the context of a *specific call* to the clause’s command definition.
+Execution flow commands might call clauses in the context of a *specific call* to the clause’s command definition.
 
 
 Access Ways
@@ -7622,7 +7622,7 @@ The following can be translated to another language, for instance text code:
 - Operators: Command call
 - Literals: The state of an object
 
-Symbol text code is established by a set of standard translations for the elements above, and a few special translations for for instance execution control commands.
+Symbol text code is established by a set of standard translations for the elements above, and a few special translations for for instance execution flow commands.
 
 To demonstrate how other languages, including graphical ones, can be integrated into Symbol I might show how text code is established. 
 
@@ -7719,7 +7719,7 @@ There is text code notation that I’ve introduced for which language integratio
 - Command declaration
 - (Standard literals)
 - Access operators
-- Execution control statements
+- Execution flow statements
 
 #### Access Operators
 
@@ -7798,7 +7798,7 @@ I think a lot of this needs to be put in the other sections.
 Operators, literals *is* a special text code issue. It can be parallelized with language integration, actually. And if it can’t be put in one concept as it is now, then I might need to make a single concept that covers language integration altogether. There are two ways to express parameters in text code: as a definition or as a command call. The declaration of a command can be expressed as freely as an operator or literal notation. The general form of a textual command call notation is nothing more than a standard operator notation for a command.
 
 - Mention that access operators are operator notations of the system commands.
-- Explain what execution control text notation is (is it an operator notation?)
+- Explain what execution flow text notation is (is it an operator notation?)
 
 Perhaps the standard command call notation, standard literal notation and standard command declaration can be put in the other sections, to be able to use them well explained.
 
@@ -7810,8 +7810,8 @@ As for the other issues:
     - Move to Objects chapter.
 - Command structure:
     - Move to Command chapter.
-- Execution control:
-    - Move to Execution Control section
+- Execution flow:
+    - Move to Execution flow section
 - Access Operators:
     - Introduce them in the access command section. 
 - Access Controllers:
@@ -8042,7 +8042,7 @@ Object A
 End Object
 ```
 
-< Execution Control? >
+< Execution Flow? >
 
 ### Other notations
 
@@ -11118,7 +11118,7 @@ For Related Types With Edit Values ( aClass )
 End For
 ```
 
-Looking at this, I see that you could do this easily in Symbol, by making your own execution control command.
+Looking at this, I see that you could do this easily in Symbol, by making your own execution flow command.
 
 
 Notational Choice

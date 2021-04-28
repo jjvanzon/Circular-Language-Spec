@@ -21,7 +21,7 @@ There `are only a few` commands that `do` something other than execute other com
 
 On top of those `special` commands, a `few basic` commands exist, like __If__’s and __For__ loops, that control `the` flow of a program, making `the` next command to call dependent on a condition.
 
-But `basically`, a command `just calls` more commands. Machine instructions, arithmetic operators, comparative and Boolean algebra, assignments, and execution control statements such as __If__ and __For__, `are` *`all` just commands*.
+But `basically`, a command `just calls` more commands. Machine instructions, arithmetic operators, comparative and Boolean algebra, assignments, and execution flow statements such as __If__ and __For__, `are` *`all` just commands*.
 
 Apart from sub-commands, a command `can` also contain data.
 (Inactive nested commands and inactive command references for instance are also considered data, and `are` not sub-commands, because they `do not` execute.)

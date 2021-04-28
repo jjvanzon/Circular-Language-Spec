@@ -134,7 +134,7 @@ This article contains texts and loose ideas about the following topics:
 
 *Private Names*
 
-> You can access control the Name aspect to make the identifier of an object invisible. Assignment commands and execution control commands use this feature to simplify the way they are displayed.
+> You can access control the Name aspect to make the identifier of an object invisible. Assignment commands and execution flow commands use this feature to simplify the way they are displayed.
 
 As said, the texts about these subjects are not finished yet.
 
@@ -149,7 +149,7 @@ It is important to separate the interface from the implementation.
 The implementation is only visible in the target definition.  
 \> 2009-06-26: And inside references of friends.
 
-For execution control commands, you might be able to hide the name of a symbol when you call it. So while the symbol itself can be part of the interface, the name could be part of the implementation, which is not visible unless you’re editing the definition of something.
+For execution flow commands, you might be able to hide the name of a symbol when you call it. So while the symbol itself can be part of the interface, the name could be part of the implementation, which is not visible unless you’re editing the definition of something.
 
 ![](images/4.%20Black%20Boxes%20Unfinished.009.png)
 
