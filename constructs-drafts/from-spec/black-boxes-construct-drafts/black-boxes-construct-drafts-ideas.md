@@ -47,13 +47,13 @@ As said, the texts about these subjects are not finished yet.
 
 #### Deeper Exclusion
 
-Apart from controlling access to the type’s own procedures, a type can also control publicity of procedures *of its children*. That way you can publish a child, but make some of its public procedures inaccessible outside the parent. This way you can also exclude members of a base type. A parent can’t make a child’s procedure inaccessible to the child itself; it’s the child’s own procedures.
+Apart from controlling access to the type’s own commands, a type can also control publicity of commands *of its children*. That way you can publish a child, but make some of its public commands inaccessible outside the parent. This way you can also exclude members of a base type. A parent can’t make a child’s command inaccessible to the child itself; it’s the child’s own commands.
 
 You can also exclude members of ancestors even further down the hierarchy.
 
 Forms of exclusion other than Private are just called exclusion or privatizing.
 
-You can only make a procedure of a child *less* accessible, never *more* accessible. The parent can’t publish a child’s procedure that the child defines as Private. A child can’t put restrictions on how its members are privatized by the parent, so a parent has full control over the exclusion of the procedures its ancestors.
+You can only make a command of a child *less* accessible, never *more* accessible. The parent can’t publish a child’s command that the child defines as Private. A child can’t put restrictions on how its members are privatized by the parent, so a parent has full control over the exclusion of the commands of its ancestors.
 
 Exclusion access controllers are also called *access* *modifiers*, because they modify formerly set access controllers.
 
@@ -120,7 +120,7 @@ Private, Public is exclusion
 
 -----
 
-Exclusion is the primary method for access control. Friends is the method to make exceptions to the privatization imposed by exclusion. A procedure or type can make any other procedure or type they can reach a Friend, meaning that that procedure or that type has access to all members privately accessible in the befriended.
+Exclusion is the primary method for access control. Friends is the method to make exceptions to the privatization imposed by exclusion. A command or class can make any other command or type they can reach a Friend, meaning that that command or that type has access to all members privately accessible in the befriended.
 
 \> And cover deeper access as well.
 
@@ -139,7 +139,7 @@ As said, the texts about these subjects are not finished yet.
 
 #### Inclusion
 
-Apart from a *decisive* access modifier, you can also give a procedure a *suggested* access modifier. This means that when you put an object in a type, a procedure of the object might get its *suggested* access modifier, for instance Private, but if its *decisive* access controller is Public, then you can still upgrade it to Public. This is called *inclusion*. The suggested access modifier is always set to less accessible than the decisive one. A type can also give suggested access modifiers to procedures of deeper objects.
+Apart from a *decisive* access modifier, you can also give a command a *suggested* access modifier. This means that when you put an object in a type, a command of the object might get its *suggested* access modifier, for instance Private, but if its *decisive* access controller is Public, then you can still upgrade it to Public. This is called *inclusion*. The suggested access modifier is always set to less accessible than the decisive one. A type can also give suggested access modifiers to commands of deeper objects.
 
 -----
 
@@ -159,7 +159,7 @@ Complexity hiding might has benefits: it allows you to focus on overview, focus 
 
 In professional software development it is a blessing, that you get access to a wealth of objects that provide functionality for you while you do not need to know or see exactly how it works inside. It allows you to focus on the main point of the program. If you know how to properly use them, there is no downside.
 
-The downside of complexity hiding, though, is that you do not know what is going on inside the object you are calling. You may think something you call upon is a simple procedure, while in reality you are consuming so much the computer’s power that it makes your application perform really poorly and probably puts a break on your whole computer’s performance. You might not want to know all the details, but when something is abstracted you do not know exactly what is done.
+The downside of complexity hiding, though, is that you do not know what is going on inside the object you are calling. You may think something you call upon is a simple command, while in reality you are consuming so much the computer’s power that it makes your application perform really poorly and probably puts a break on your whole computer’s performance. You might not want to know all the details, but when something is abstracted you do not know exactly what is done.
 
 There are methods to overcome this though. It is not concrete yet, but the inner complexity of an object or command could be expressed by size. That might give you a relative estimation of the complexity of what you are calling upon.
 
@@ -167,14 +167,14 @@ There are methods to overcome this though. It is not concrete yet, but the inner
 
 #### Get For Access and Get For Copy
 
-Access can be controlled for regular procedures this way. You can also control access to system procedures. When you make an object Private, you’re in fact making its Object Get procedure private (which can even get different separate access controllers for Access and Copy, ~~Run Time~~ Copy ~~and Design Time Copy~~).
+Access can be controlled for regular commands this way. You can also control access to system commands. When you make an object Private, you’re in fact making its Object Get command private (which can even get different separate access controllers for Access and Copy, ~~Run Time~~ Copy ~~and Design Time Copy~~).
 - \> 2009-06-29: The difference between design-time and run-time is gone in Circular. There is only differentiation between program authors and users through user access control.
 
 There might be a separation between access controlling Get for Access and Get for Copy... but not much more. I used to have a difference between Run Time Copy and Design Time Copy, but that is bull now, because there is not difference between run time and design time. There may be a difference between different types of users: authors and users... but that is user access control, which is not covered here.
 
 -----
 
-< There are also situations in which you want to disallow copying an object reference to an argument, but only allow consult of the argument. (that’s access control of system procedures, actually) >
+< There are also situations in which you want to disallow copying an object reference to an argument, but only allow consult of the argument. (that’s access control of system commands, actually) >
 
 #### Inaccessible System Aspects
 
@@ -326,7 +326,7 @@ But in Circular you can also have:
 - Friend objects of befriended objects
 - Friend commands of befriended commands
 
-In the first situation an object can reference access the private contents of a command. That sucks from an object oriented programming point of view, because this might not protect the command’s private variables and the command’s procedure definition. But that is just what friends are about: they ARE protectors of an object’s private members. They have full access to it, and take responsibility of it. That is also what class methods do in traditional object oriented programming.
+In the first situation an object can reference access the private contents of a command. That sucks from an object oriented programming point of view, because this might not protect the command’s private variables and the command’s definition. But that is just what friends are about: they ARE protectors of an object’s private members. They have full access to it, and take responsibility of it. That is also what class methods do in traditional object oriented programming.
 
 In the second situation one object can access the private contents of another object. That is *exactly* the same as the C++ implementation of friend classes.
 
@@ -433,16 +433,16 @@ But what modifies the access to the access modifier system commands?
 
 ##### Changing Access Modifiers at Run Time
 
-Being able to change access modifiers at run time may be interesting. That way you can for instance change the interface of an object dependent on its settings. Changing a procedure’s access modifier is done by calling the procedure’s Access Modifier Set system procedure. There’s also an Access Modifier Get procedure to obtain the access modifier. This adds two system procedures to a square:
+Being able to change access modifiers at run time may be interesting. That way you can for instance change the interface of an object dependent on its settings. Changing a command’s access modifier is done by calling the command’s Access Modifier Set system command. There’s also an Access Modifier Get command to obtain the access modifier. This adds two system commands to a square:
 
 ```
 Access Modifier:
     Get and Set
 ```
 
-The Access Modifier property procedures can be access controlled themselves, so that they can be made inaccessible, for instance when you don’t want to be able to change the access modifier at run time. The access modifiers of the Access Modifier property can’t be changed at run time themselves. In other words: the Access Controller property procedures don’t have an Access Controller property of their own. This complies with the rule: system procedures don’t have system procedures of their own.
+The Access Modifier getters and setters might be access controlled themselves, so that they can be made inaccessible, for instance when you don’t want to be able to change the access modifier at run time. The access modifiers of the Access Modifier property can’t be changed at run time themselves. In other words: the Access Controller getters and setters don’t have an Access Controller getters and setters of their own. This complies with the rule: system commands don’t have system commands of their own.
 
-A single procedure can have several access modifiers so there are multiple access modifiers to get and set. This might suggest that the Access Modifier property has a dimension. However, when you call the Access Modifier property, you return or set the access modifier imposed by the object you’re calling from. The object you’re calling from is a hidden argument to the Access Modifier property. The access modifiers aren’t really stored inside the procedure, but in the object symbol that imposes it.
+A single commands can have several access modifiers so there are multiple access modifiers to get and set. This might suggest that the Access Modifier property has a dimension. However, when you call the Access Modifier property, you return or set the access modifier imposed by the object you’re calling from. The object you’re calling from is a hidden argument to the Access Modifier property. The access modifiers aren’t really stored inside the command, but in the object symbol that imposes it.
 
 If the access modifier isn’t variable at run time, then the type defines a fixed access modifier. If the access modifier *is* variable at run time then the access modifier can be different for each instance of the type.
 
@@ -495,7 +495,7 @@ JJ
 Maybe it's a good rule to only show access symbols to denote:
 
 - Direction
-- Exclusion of a procedure
+- Exclusion of a command
 - Denote explicitly the publicity
 
 -----
@@ -520,9 +520,9 @@ Access controllers as such are not usual, though and *if* you use them, they’r
 
 #### Uses of Access Controlling System Aspects
 
-An object symbol’s Object Get procedure might be accessible to make you able to access its sub-object. 
+An object symbol’s Object Get command might be accessible to make you able to access its sub-object. 
 
-Exclusion of Set procedures controls who can set a symbol’s lines. Exclusion of Get procedures controls who can get information about lines or who can access the object.
+Exclusion of Set commands controls who can set a symbol’s lines. Exclusion of Get commands controls who can get information about lines or who can access the object.
 - \> 2009-07-06: Or who can use the object as line source.
 
 #### Other Details
@@ -531,7 +531,7 @@ Exclusion of Set procedures controls who can set a symbol’s lines. Exclusion o
 
 -----
 
-< A procedure’s primary access controller is only made Inaccessible to ‘outcomment’ code. This is a rather small concept. The rest of the use of Inaccessible and Accessible is in exclusion. Therefore, I need to denote in short that this is the only use of the primary access controller. I can basically always speak of access modifiers when talking about Accessible and Inaccessible. I can use the term exclusion in a lot of places where I now use ‘access control’. I also need to put the first section ‘Accessible and Inaccessible’ in the exclusion section. >
+< A command’s primary access controller is only made Inaccessible to ‘outcomment’ code. This is a rather small concept. The rest of the use of Inaccessible and Accessible is in exclusion. Therefore, I need to denote in short that this is the only use of the primary access controller. I can basically always speak of access modifiers when talking about Accessible and Inaccessible. I can use the term exclusion in a lot of places where I now use ‘access control’. I also need to put the first section ‘Accessible and Inaccessible’ in the exclusion section. >
 
 -----
 
@@ -549,11 +549,11 @@ The symbols used here are actually access symbols, which I’ve already introduc
 Interesting Applications of Exclusion  
 So examples of interesting applications of exclusion are:
 
-- Making procedures Public or Private
-- Excluding procedures of a public object
-- Excluding procedures of a base object
+- Making commands Public or Private
+- Excluding commands of a public object
+- Excluding commands of a base object
 - A parent’s controlling *access to objects*
 
 -----
 
-Access to *procedures* is controlled. But access control usually defines which *objects* get access to them. In a special case you can control which specific *procedures* get access.
+Access to *commands* is controlled. But access control usually defines which *objects* get access to them. In a special case you can control which specific *commands* get access.

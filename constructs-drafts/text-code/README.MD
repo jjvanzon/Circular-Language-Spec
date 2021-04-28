@@ -28,7 +28,7 @@ You might find the following content here:
 
 - ### [Access Operators](access-operators.md)
 
-    - This article might just be a throw-together of ideas. Traditional text codes may have access operators to access an object, a class, a procedure, arrays, pointers or values. Because other languages may have access operators, the documentation about Circular might also have an *Access Operators* article, which may make an attempt to figure out what place access operators might have in the Circular language. In C++ documentation access operators seem to be introduced like they have an analogy to mathematical operators:  
+    - This article might just be a throw-together of ideas. Traditional text codes may have access operators to access an object, a class, a command, arrays, pointers or values. Because other languages may have access operators, the documentation about Circular might also have an *Access Operators* article, which may make an attempt to figure out what place access operators might have in the Circular language. In C++ documentation access operators seem to be introduced like they have an analogy to mathematical operators:  
 
     ```
         .    Member selection (object)
@@ -49,7 +49,7 @@ You might find the following content here:
 
 - ### Declaration on First Use
 
-    - Some programmer’s text books might say you should declare variables of a procedure at the beginning of a procedure, to keep an overview of all the variables used inside a procedure. It might be a bit subjective, if that is necessarily the best thing to do. A suggestion here is made, to declare a variable right before you use it. That might be a way to go. This may produce hints in the code about which parts of a procedure depend on which variable and which parts of a procedure do not use that variable. Perhaps declaring a variable upon first use requires slightly less CPU-power, than declaring all the variables at the beginning of the procedure, because if a code block is not executed, the variables used exclusively inside that code block might not be allocated or assigned.
+    - Some programmer’s text books might say you should declare variables of a command at the beginning of a procedure, to keep an overview of all the variables used inside a command. It might be a bit subjective, if that is necessarily the best thing to do. A suggestion here is made, to declare a variable right before you use it. That might be a way to go. This may produce hints in the code about which parts of a command depend on which variable and which parts of a command do not use that variable. Perhaps declaring a variable upon first use requires slightly less CPU-power, than declaring all the variables at the beginning of the procedure, because if a code block is not executed, the variables used exclusively inside that code block might not be allocated or assigned.
 
     - If (binary) stored object systematics might be translated to text code, this rule might be applied, that a variable is declared in the text code right before it is used. This also might mean, that if a variable is used in several deeper blocks of code, the variable may need to be declared inside the *closest mutual parent* of those deeper blocks.
 

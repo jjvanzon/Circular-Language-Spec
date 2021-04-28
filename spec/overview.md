@@ -156,7 +156,7 @@ That was the more rounded up documentation. Next an attempt is made to list the 
 
 - ![](images/Circle%20Language%20Spec%20Overview.018.png)
 
-  An object might set rules for what kind of values may be filled in into it and a command might be given conditions on whether the procedure might be started or not. This might perhaps be done by adding code to a procedure (or for an object, to the __Set__ command). From that code may follow, that depending on certain conditions, the execution of the rest of the procedure is or is not run. That just may have described a low-level way to handle conditions. But conditions could be centric enough in programming, that they might become a construct in the Circular diagram language. A (value) object or command might propose a set of conditions, to evaluate whether the value may be assigned or if the command is allowed to execute.
+  An object might set rules for what kind of values may be filled in into it and a command might be given conditions on whether the command might be started or not. This might perhaps be done by adding code to a command (or for an object, to the __Set__ command). From that code may follow, that depending on certain conditions, the execution of the rest of the command is or is not run. That just may have described a low-level way to handle conditions. But conditions could be centric enough in programming, that they might become a construct in the Circular diagram language. A (value) object or command might propose a set of conditions, to evaluate whether the value may be assigned or if the command is allowed to execute.
  
   The documentation may be not so rich yet, apart from some loose ideas.
 

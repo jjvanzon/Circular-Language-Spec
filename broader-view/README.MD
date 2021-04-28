@@ -53,7 +53,7 @@ These are various draft texts that may once describe a story, ideas about how th
 
 - ## [Macro Recorder](macro-recorder.md)
 
-    - Circular should have this button to press, that records all user actions, that are undertaken. Then, when you stop recording, the user actions are recorded as a procedure, that can be called as a command to be executed in one blow instead of performing all the actions manually. You can also edit the command code, to fine-tune the behavior of the command. This makes it easy to turn manual work into automatic procedures and it also makes it easier to program new commands. Other programs have this sort of macro recording, and Circular should also have such functionality in the futures. Macro recording has not been implemented inside existing versions of Circular yet.
+    - Circular should have this button to press, that records all user actions, that are undertaken. Then, when you stop recording, the user actions are recorded as a command, that can be called as a command to be executed in one blow instead of performing all the actions manually. You can also edit the command code, to fine-tune the behavior of the command. This makes it easy to turn manual work into automatic commands and it also makes it easier to program new commands. Other programs have this sort of macro recording, and Circular should also have such functionality in the futures. Macro recording has not been implemented inside existing versions of Circular yet.
 
 - ## [Object Storage](object-storage.md)
 

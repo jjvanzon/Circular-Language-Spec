@@ -6,7 +6,7 @@ Melding
 
 `[ Preliminary documentation ]`
 
-Melding objects means that for instance a relation class or a progressed object have the same item object name, and meld together to a single property procedure, in which all functionality of both procedures is embedded.
+Melding objects means that for instance a relation class or a progressed object have the same item object name, and meld together to a single property command, in which all functionality of both commands is embedded.
 
 ### Loose Ideas
 
@@ -35,7 +35,7 @@ en een relatie:
 Application 1=>n LineStyles.
 ```
 
-Maar je zou ze ook moeten kunnen samensmelten? Dan krijg je dus mogelijk meerdere synchronisaties in dezelfde property procedure.
+Maar je zou ze ook moeten kunnen samensmelten? Dan krijg je dus mogelijk meerdere synchronisaties in dezelfde property command.
 
 Nu is de vraag nog: moet ik echt overlappende synchronisatie hebben, waarbij een object referentie eigenlijk 2 verschillende relation classes voorstelt? Progressions kunnen op die manier ook integreren in 1 object referentie, die hoort bij meerdere progressions, of relation classes. maar er moet wel een warning verschijnen als in de relaties A =>1 B en A =>1 C, dezelfde item object name is gekozen voor B en C en dat daarmee B.A en C.A altijd gelijk gesynchroniseerd worden. De warning zou kunnen worden uitgezet als je expliciet in de relatie aangeeft, dat het de bedoeling is.
 

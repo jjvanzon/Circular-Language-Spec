@@ -89,14 +89,14 @@ In the picture above, the top two lines could have been set by A itself. The fir
 `<< special access >>`
 
 < Nice sentence:  
-A procedure makes all direct children accessible to all blocks.  
+A command makes all direct children accessible to all blocks.  
 Only is that true? >
 
 In a diagram nested commands might be squares contained in other squares that have no lines. Beware that a diagram may not be showing the line, even when it exist.
 
 ![](images/0.%20Special%20Access.016.png)
 
-Nested commands have access to the contents of all their ancestor blocks and the procedure definition they’re in. This means that a nested command can directly access its containing definition’s members:
+Nested commands have access to the contents of all their ancestor blocks and the command definition they’re in. This means that a nested command can directly access its containing definition’s members:
 
 ![](images/0.%20Special%20Access.017.png)
 

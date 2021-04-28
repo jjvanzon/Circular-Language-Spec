@@ -98,7 +98,7 @@ Or that you may be *waiting* on an external execution to finished.
 
 ![](images/6.%20Comands%20Misc%20Issues.008.png)
 
-If the external execution won’t finish, then the referring procedure is stuck.
+If the external execution won’t finish, then the referring command is stuck.
 
 If the external command object is an inactive command object, it might never execute, and the command might truly be stuck. A warning should be generated then.
 
@@ -300,8 +300,7 @@ JJ
 
 -----
 
-
-When a procedure is called, the contained procedure *references* are *not* called.
+When a command is called, the contained command *references* are *not* called.
 
 ![](images/7.%20Commands%20Ideas.018.jpeg)
 

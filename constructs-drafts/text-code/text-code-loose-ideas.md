@@ -48,7 +48,7 @@ __Contents__
             - [Access Operators](#access-operators)
         - [Text Code](#text-code-1)
             - [Objects](#objects)
-            - [Procedures](#procedures)
+            - [Commands](#commands)
             - [Access Control](#access-control)
     - [Other](#other)
         - [Member call](#member-call)
@@ -861,23 +861,23 @@ The following can be translated to another language, for instance text code:
 
 - Identifiers
 - Structure: Encapsulation structure
-- Declaration: Procedure declaration
-- Operators: Procedure call
+- Declaration: Command declaration
+- Operators: Command call
 - Literals: The state of an object
 
-Symbol text code is established by a set of standard translations for the elements above, and a few special translations for for instance execution control procedures.
+Symbol text code is established by a set of standard translations for the elements above, and a few special translations for for instance execution control commands.
 
 ##### Brainstorm
 
-- Normal Procedure Call Notation = Standard Operator Notation:
-    - There are two ways to express parameters in text code: in a definition or in a procedure call. The declaration of a procedure can be expressed as freely as an operator or literal notation. The general form of a textual procedure call notation is nothing more than a standard operator notation for a procedure.
-- Mention that access operators are operator notations of the system procedures.
+- Normal Command Call Notation = Standard Operator Notation:
+    - There are two ways to express parameters in text code: in a definition or in a command call. The declaration of a command can be expressed as freely as an operator or literal notation. The general form of a textual command call notation is nothing more than a standard operator notation for a command.
+- Mention that access operators are operator notations of the system commands.
 - Explain what execution control text notation is (is it an operator notation?)
 
 ##### Operators
 
 <  
-Operators *are* procedures. They are assigned a special notation.  
+Operators *are* commands. They are assigned a special notation.  
 Evaluation order, parenthesis, Precedence  
 Conversion operators  
 \>
@@ -890,7 +890,7 @@ An example of operators are arithmetic operators:
 
 An operator is notated like a method. It resembles an operation. The difference in notation is not in the diagram code. An operator’s speciality is that it supports an alternate notation, usually textual, but not necessarily.
 
-\+ and – operations can be represented in plain text. Powers in Basic were represented by the ^ character. I wish to change that. I want the real mathematical notation to integrate with the language. For that I define operators as procedures that have any alternate notation. The power is represented by the exponent being notated in superscript: higher and smaller than the: b<sup>e</sup>
+\+ and – operations can be represented in plain text. Powers in Basic were represented by the ^ character. I wish to change that. I want the real mathematical notation to integrate with the language. For that I define operators as commands that have any alternate notation. The power is represented by the exponent being notated in superscript: higher and smaller than the: b<sup>e</sup>
 
 ###### Parameters
 
@@ -912,15 +912,15 @@ Some types have special notation formats, such as Integer Number, Floating Point
 “Hello, I am a text literal”
 ```
 
-The notation as such describes the state of an object and it’s called a literal. The examples above are textual literals. To assign a literal to an Integer object, the literal is put into a Text object and the conversion procedure for Text to Integer is called. So literals are interpreted by using a conversion procedure with Text as the source type.
+The notation as such describes the state of an object and it’s called a literal. The examples above are textual literals. To assign a literal to an Integer object, the literal is put into a Text object and the conversion command for Text to Integer is called. So literals are interpreted by using a conversion command with Text as the source type.
 
-A literal can be a Text, but any other type might do, for instance a Picture. If a Picture serves as a literal, then to interpret the literal, the conversion procedure with. < A literal is always of a type of a type. >
+A literal can be a Text, but any other type might do, for instance a Picture. If a Picture serves as a literal, then to interpret the literal, the conversion command with. < A literal is always of a type of a type. >
 
 There can also be a reverse for a literal interpreter. The Integer to Text conversion produces the textual integer literal.
 
 ###### Standard Literal
 
-There’s a standard way to interpret and procedure textual literals of objects. If there is no custom conversion to text and back, you can only control the state of an object by calling its members. Say an object has the following members:
+There’s a standard way to interpret and process textual literals of objects. If there is no custom conversion to text and back, you can only control the state of an object by calling its members. Say an object has the following members:
 
 ```
 Integer 1
@@ -937,12 +937,12 @@ Of its data members
 Maybe you should be able to define orders in which 
 
 <  
-This concept is much like the operator concept, which can convert *procedures* with arguments to a textual notation and back. 
+This concept is much like the operator concept, which can convert *commands* with arguments to a textual notation and back. 
 
-This conversions isn’t usually?) incorporated into the system procedures of procedure to textually notate, though. There is standard way to produce a textual notation from a procedure call.
+This conversions isn’t usually?) incorporated into the system commands of command to textually notate, though. There is standard way to produce a textual notation from a command call.
 
 The concepts ‘literals’ and ‘operators’ are very very alike, and a single word could be used that encapsulates both...  
-Standard textual literals and standard textual procedure notation.  
+Standard textual literals and standard textual command notation.  
 \>
 
 ##### Structure
@@ -957,7 +957,7 @@ There can be graphical identifiers.
 
 There is text code notation that I’ve introduced for which language integration techniques are used.
 - Calls and parameter assignment
-- Procedure declaration
+- Command declaration
 - (Standard literals)
 - Access operators
 - Execution control statements
@@ -966,7 +966,7 @@ There is text code notation that I’ve introduced for which language integratio
 
 De access operators in text code.
 
-In text code you sort of see the calls to system procedures and you also sort of don’t. Each system procedure has its own access operator.
+In text code you sort of see the calls to system commands and you also sort of don’t. Each system command has its own access operator.
 
 |                 |           |
 |----------------:|:----------|
@@ -988,10 +988,10 @@ In text code you sort of see the calls to system procedures and you also sort of
 < Maybe I’ll do special operator symbols in text code that represent the object relations. Actually, that’s what I’d like a little. Except member access. I wanna keep that. >
 
 - Access Operators
-    - One for each system procedure and ones that can do for multiple system procedures, depending on the context
+    - One for each system command and ones that can do for multiple system commands, depending on the context
     - ... :: . , (), []
 - Special operators. Are they operators? If they are then they should be able to be overloaded. Maybe that’s handy too.
-- System procedure arguments
+- System command arguments
 - Genitivity
 
 ##### Text Code
@@ -1002,9 +1002,9 @@ Here follows an example code, expressed in a diagram, that might be used as an e
 
 ![](images/0.0.%20Text%20Code%20Introduction.001.png)
 
-Lines are set in the create procedure.
+Lines are set in the create command.
 
-####### Lines Shown in Create Procedure
+####### Lines Shown in Create Command
 
 ```
 Circle System
@@ -1017,7 +1017,7 @@ Circle System
         Triangle
     End Circle
 
-    System Procedures
+    System Commands
 
         Square Create
             Object A . Type = Type B
@@ -1026,7 +1026,7 @@ Circle System
             Object A . Create
         End Square
 
-    End System Procedures
+    End System Commands
 
 End Circle
 ```
@@ -1047,7 +1047,7 @@ Circle System
 End Circle
 ```
 
-The calls added to the declaration are executed in the Create procedure, though.
+The calls added to the declaration are executed in the Create command, though.
 
 ####### No "="
 
@@ -1089,14 +1089,14 @@ Slechte voorbeeld namen, dan lijkt het erop dat Type, Object en Interface keywor
 
 Circle System <=> Object System <=> Circular Object System  
 Triangle B <=> Triangular Object B  
-Square A <=> Procedure A  
+Square A <=> Command A  
 End Circle <=> End Object  
 End Triangle <=> End Object  
-End Square <=> End Procedure  
+End Square <=> End Command  
 
-###### Procedures
+###### Commands
 
-- Procedure Structure
+- Command Structure
 - Parameter notations
     - Optional
     - Variable
@@ -1104,10 +1104,10 @@ End Square <=> End Procedure
 
 ####### Parameter Text Notation
 
-There are several ways to notate parameters in text code. First of all, the definition of the procedure in text code might contain a parameter list:
+There are several ways to notate parameters in text code. First of all, the definition of the command in text code might contain a parameter list:
 
 ```
-Procedure Do Something ( Parameter 1 : Type A, Parameter 2 : Type B, Interface A )
+Command Do Something ( Parameter 1 : Type A, Parameter 2 : Type B, Interface A )
 ```
 
 Several notations for parameter assignments.  
@@ -1116,16 +1116,16 @@ What do I mean several?
 Textual:
 - Enumerated argument list
 - Named arguments
-- Reading and writing arguments like the procedure is an object
+- Reading and writing arguments like the command is an object
 - In, Out denotation
 
 Ik wil dit er toch tussendoor doen. En na de andere hoofdstukken moet ik het er ook weer even over hebben.
 
 < >  
 ...  
-- Procedure structure
+- Command structure
 - Standard call notation
-- Standard procedure declaration
+- Standard command declaration
 
 ####### Parameter Notations
 
@@ -1213,7 +1213,7 @@ Since I’m working with multiple arguments as well as multiple return values, I
 
 Arguments are then In parameters. Return values are Out parameters. The last type described might be InOut parameters, more nicely called Thru (Through) parameters.
 
-You could also say Read, Write and Read/Write, but this creates ambiguity about who’se reading or writing: the caller or the procedure.
+You could also say Read, Write and Read/Write, but this creates ambiguity about who's reading or writing: the caller or the command.
 
 In, Out and Through. Now we need a notation for them
 
@@ -1233,7 +1233,7 @@ In: Argument1, Argument2, Thru: Argument3, Argument4, Out: Argument3, Argument4
 
 I’ll stick to that for now..
 
-Thru arguments are not to be confused by reference arguments. The values of Thru arguments are actually put on the stack and read from the stack and written to the stack by the procedure. Reference arguments are usually In parameters and not written. The reference argument is a mere number that points to an object. The object a reference argument points at can be written and read, but this object doesn’t reside on the stack. Reference arguments in other languages were often used as a trick to use multiple return values or to have arguments that are both given to the procedure and then returned to the caller possibly altered: thru arguments.
+Thru arguments are not to be confused by reference arguments. The values of Thru arguments are actually put on the stack and read from the stack and written to the stack by the command. Reference arguments are usually In parameters and not written. The reference argument is a mere number that points to an object. The object a reference argument points at can be written and read, but this object doesn’t reside on the stack. Reference arguments in other languages were often used as a trick to use multiple return values or to have arguments that are both given to the command and then returned to the caller possibly altered: thru arguments.
 
 Reference arguments are still of use, but since J Core supports multiple return values (Out arguments) and thru arguments, they
 
@@ -1373,7 +1373,7 @@ Uppercase and accents are approached with characters categories. A a ? â á à 
 
 -----
 
-In Symbol, when you use public objects, direction is ambiguous. Also, an object in ActiveX is actually a property. Why is it a circle in my case then? Why isn't a property an object then? oh. No. Getting an object is actually a procedure, but you use it as if it's just an object. When you can set it, then that's a definite procedure. Darn. I might revise Symbol. It's not that good this way.
+In Symbol, when you use public objects, direction is ambiguous. Also, an object in ActiveX is actually a property. Why is it a circle in my case then? Why isn't a property an object then? oh. No. Getting an object is actually a command, but you use it as if it's just an object. When you can set it, then that's a definite command. Darn. I might revise Symbol. It's not that good this way.
 
 -----
 

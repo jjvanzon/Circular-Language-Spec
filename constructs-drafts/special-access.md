@@ -24,11 +24,11 @@ __Contents__
 
 < Do neighbor access and child access protect the independence of types? As a substitute for the old, false rule: ‘Can’t call upward in the ancestry’? >
 
-There’s several ways to access a procedure. The most common way is for procedures of the same object to call upon each other. The second most common way is for a parent to access a child’s procedures. A global object is accessible from anywhere within the module and there are more ways. I might discuss these different ways of access one by one in this section.
+There’s several ways to access a command. The most common way is for commands of the same object to call upon each other. The second most common way is for a parent to access a child’s commands. A global object is accessible from anywhere within the module and there are more ways. I might discuss these different ways of access one by one in this section.
 
 ### Neighbor Access
 
-< Discuss procedures within the same object accessing each other. >
+< Discuss commands within the same object accessing each other. >
 
 ### Child Access
 
@@ -36,9 +36,9 @@ The normal way of accessing an object is *child access*: an object can only acce
 
 ![](images/0.%20Special%20Access.001.png)
 
-< Darn. This is not right, I need to make a call from a procedure. The line above is a reference line. >
+< Darn. This is not right, I need to make a call from a command. The line above is a reference line. >
 
-An access always takes place in a procedure call. In this picture Parent is accessing Child.
+An access always takes place in a command call. In this picture Parent is accessing Child.
 
 You can’t all anything higher in the encapsulation hierarchy, so an object can’t access anything outside the object. If it is to access anything outside the object, it needs to contain a reference to something outside the object.
 
@@ -50,7 +50,7 @@ The object is then accessing this *reference*, which is inside the object. The r
 
 <  
 2002 +/-:
-Variables declared inside a parent block in a procedure are accessible directly by the child blocks. Variables declared inside a child block are inaccessible to a parent block.  
+Variables declared inside a parent block in a command are accessible directly by the child blocks. Variables declared inside a child block are inaccessible to a parent block.  
 />
 
 ### Global Access
@@ -141,7 +141,7 @@ You can’t see in the picture above if the called square is referenced through 
 | ![](images/0.%20Special%20Access.013.png) | ![](images/0.%20Special%20Access.014.png) | ![](images/0.%20Special%20Access.015.png) |
 |:---:|:---:|:---:|
 | *Accessed through the Circle:* | *Accessed through the Circle and the Triangle:* | *Also accessed through the Circle and the Triangle:* |
-| __*Circle . Procedure*__ | __*Circle . Triangle . Procedure*__ | __*Circle . Triangle . Procedure*__ |
+| __*Circle . Command*__ | __*Circle . Triangle . Command*__ | __*Circle . Triangle . Command*__ |
 
 In text code you can see the difference all the more. I’ve put the text code under the diagrams above.
 
@@ -155,11 +155,11 @@ So usually only parents can access their descendant’s things.
 
 Modules, interface implementations and nested commands make exceptions on those rules.
 
-The public descendants of a module are accessible from anywhere within the module, the borders of triangles can be ignored and a nested command can directly access anything in its ancestor nested commands its procedure definition.
+The public descendants of a module are accessible from anywhere within the module, the borders of triangles can be ignored and a nested command can directly access anything in its ancestor nested commands its command definition.
 
 ### Brainstorm
 
-Nested command members can access the members of its ancestor procedure symbols. 
+Nested command members can access the members of its ancestor command symbols. 
 
 -----
 

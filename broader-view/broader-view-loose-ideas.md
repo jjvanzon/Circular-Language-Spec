@@ -67,7 +67,7 @@ JJ
 
 - Looking at the 'Subtext' programming language.
 - "Subtext" implies that this is always possible, but of course underlying procedures could be
-- "Subtext" code when it grows is really bound to become unoverviewable.
+- "Subtext" code when it grows might become unoverviewable.
 - His assumption that humans are not good at abstract thinking is just not true in my view. Humans do nothing else.
 - If he might give his functions better identifiers, it might be better off.
 
@@ -180,7 +180,7 @@ JJ
 
 Circular,
 
-Important statement to use: objects first, procedures second.
+Important statement to use: objects first, commands second.
 
 JJ
 
@@ -205,7 +205,7 @@ JJ
 
 Circular,
 
-The idea of object oriented is: objects first, procedures second.
+The idea of object oriented is: objects first, commands second.
 
 JJ
 

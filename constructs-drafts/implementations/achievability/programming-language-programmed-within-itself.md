@@ -175,7 +175,7 @@ So the three letters always indicate:
 
 ### Generic & Non-Generic Classes
 
-So there are two procedures in a CItem object that adapt the CItem to its class: one that takes a CClass object, that describes the class using a C++ object, and one that takes a CItem object, that describes the class Computer-Language-style.
+So there are two commands in a CItem object that adapt the CItem to its class: one that takes a CClass object, that describes the class using a C++ object, and one that takes a CItem object, that describes the class Computer-Language-style.
 
 ### Summary of Layers 1 - 4
 

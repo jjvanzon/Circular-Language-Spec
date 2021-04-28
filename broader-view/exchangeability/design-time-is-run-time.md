@@ -34,7 +34,7 @@ What if "programming it at the same time" might not be as performant, but when y
 
 The previous may just have described be the *data* aspect of it.
 
-A more difficult issue might be: how to manage errors as *procedures* run. The internet might become a single entity, and making commands accessible to others, might mean, that it could be called upon fast after making it.
+A more difficult issue might be: how to manage errors as *commands* run. The internet might become a single entity, and making commands accessible to others, might mean, that it could be called upon fast after making it.
 
 The main point may be, that it might be a *problem* when design time = run time, that errors may go off for unfinished code. The solutions may differ. A different article may list out different ways of handling errors of in a dynamic environment
 

@@ -125,12 +125,12 @@ JJ
 
 -----
 
-Extension Procedures,  
+Extension Commands,  
 Aspects / System Interfaces,  
 Classes,  
 2008-07-21
 
-A class defines the extension procedures, but a class is an object, so an object defines the extension procedures.
+A class defines the extension commands, but a class is an object, so an object defines the extension commands.
 
 JJ
 
@@ -186,8 +186,8 @@ Aspects / aspects,
 
 Brainstorm about Aspects:  
 What I call aspects, is close to what the rest of the world calls aspects.  
-Aspects extend existing procedures, and extend existing classes.  
-Aspects do that too. Actually, aspects operate on reflective data in order to extend procedures and classes. You can extend a whole system of procedures and objects using aspects. Aspects do that too. What I add to aspects is that aspects can also be separate classes, that link to another class, and use the other class’s reflective data to do something with it, rather. So that is also a way to use an aspect. Anyway, I think I might call it aspects, because the rest of the world also calls it aspects, and also I might look at aspect oriented programming as an example for aspects.
+Aspects extend existing commands, and extend existing classes.  
+Aspects do that too. Actually, aspects operate on reflective data in order to extend commands and classes. You can extend a whole system of commands and objects using aspects. Aspects do that too. What I add to aspects is that aspects can also be separate classes, that link to another class, and use the other class’s reflective data to do something with it, rather. So that is also a way to use an aspect. Anyway, I think I might call it aspects, because the rest of the world also calls it aspects, and also I might look at aspect oriented programming as an example for aspects.
 
 It worries me, because of the danger, that before I even finish this programming language, most of it might prove to not even be original anymore. But on the other had, might it might be original? Can’t it just be a language, that converges all good ideas from the world into a single programming language?
 

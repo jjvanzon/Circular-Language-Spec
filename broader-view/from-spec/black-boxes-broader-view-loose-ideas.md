@@ -92,7 +92,7 @@ JJ
 
 Set and Copy are used to set up lines. Lines are set up at design time, but can also be changed at run time. Sometimes you want to set a line at design time without being able to change it at run time. Therefore, Set and Copy might be able to have different access controllers at design time and run time. Just like the Get purposes can have different access controllers, it’s possible to have different access controllers for Design Time Set and Run Time Set and for Design Time Copy and Run Time Copy. Something is a constant if it can be Design Time Set, but not Run Time Set.
 
-Object symbol system procedures and purposes:
+Object symbol system commands and purposes:
 
 - Symbol
     - Get : Copy (Run Time or Design Time)
@@ -115,7 +115,7 @@ Object symbol system procedures and purposes:
 - Target Interface
     - Get : Copy (Run Time or Design Time)
 
-Procedure symbol system procedures and purposes:
+Command symbol system commands and purposes:
 
 - Symbol
     - Get : Copy (Run Time or Design Time)
@@ -125,5 +125,5 @@ Procedure symbol system procedures and purposes:
 - Reference
     - Get : Copy (Run Time or Design Time) or Redirect
     - Set : Run Time or Design Time
-- Target Procedure:
+- Target Command:
     - Get : Copy (Run Time or Design Time) or Access

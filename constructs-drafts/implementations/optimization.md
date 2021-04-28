@@ -28,7 +28,7 @@ __Contents__
 
 ### Loose Ideas
 
-Automatic optimization, by using temporary variables for the same expression, that can't change as the procedure runs. That last element is hard to determine. For that it may also be advised to make it just a suggestion. Perhaps the temporary variable may still not be put in the source code, after the suggestion has been went along with, but the temporary storage suggestions may be declared at the beginning of the procedure.
+Automatic optimization, by using temporary variables for the same expression, that can't change as the command runs. That last element is hard to determine. For that it may also be advised to make it just a suggestion. Perhaps the temporary variable may still not be put in the source code, after the suggestion has been went along with, but the temporary storage suggestions may be declared at the beginning of the command.
 
 -----
 
@@ -43,7 +43,7 @@ Automatic optimization, by using temporary variables for the same expression, th
 
 -----
 
-Het inklappen van procedures is procedurele optimalisatie. Het inklappen van klassen is dat ook, maar ook al space optimalisatie.
+Het inklappen van commando's is procedurele optimalisatie. Het inklappen van klassen is dat ook, maar ook al space optimalisatie.
 Data structurele optimalisatie is nou juist wat J Data doet. 
 
 -----
@@ -53,7 +53,7 @@ not including unused private functions and variables..
 
 -----
 
-Compile so that no J Core calls are made, but assembly calls are made directly to the procedures. This is possible, but you’d lose compatibility with future (and past) versions of the component and you can’t make use of all the benefits that interfaces have. It is a useful optimization though.
+Compile so that no J Core calls are made, but assembly calls are made directly to the commands. This is possible, but you’d lose compatibility with future (and past) versions of the component and you can’t make use of all the benefits that interfaces have. It is a useful optimization though.
 
 -----
 
@@ -71,7 +71,7 @@ Might J Code’s compilation optimizers take away bound these checks? Consider t
 
 -----
 
-An optimization: in a procedure every argument that is on the stack might be used only once. Then you can alter the order of the arguments so that it’s the order in which they are used, so that you can pop em one by one and might not read them and then pop em at the end.
+An optimization: in a command every argument that is on the stack might be used only once. Then you can alter the order of the arguments so that it’s the order in which they are used, so that you can pop em one by one and might not read them and then pop em at the end.
 
 If all arguments are used once and another one twice, you *might* want to push the argument on the stack twice in the order that the values are used.
 
@@ -114,23 +114,23 @@ JJ
 
 #### Inline
 
-Private procedures can be compiled inline except when infinite recursion is possible.
+Private commands can be compiled inline except when infinite recursion is possible.
 
-You can also choose to compile all procedures inline. This means that when you have compiled the module you don’t have separate procedures anymore, so you can’t have separate interface members, so no interfaces and no classes. That way the whole object oriented organization collapses and you have one pile of spaghetti code. Spaghetti code that is *way* faster than the organized code. However, you can’t use the classes of the module anymore. You’d might have the module’s source code to be able to program with it again.
+You can also choose to compile all commands inline. This means that when you have compiled the module you don’t have separate commands anymore, so you can’t have separate interface members, so no interfaces and no classes. That way the whole object oriented organization collapses and you have one pile of spaghetti code. Spaghetti code that is *way* faster than the organized code. However, you can’t use the classes of the module anymore. You’d might have the module’s source code to be able to program with it again.
 
 #### Inline Module
 
-A module can work faster if it doesn’t supply any procedures. The only call to the module then is to simply run it. All procedures inside the module are compiled inline then. However, it might be possible for the module to create its own memory objects, even though there aren’t any separate classes anymore. The inline module doesn’t have vector tables. It might have a table with the addresses of memory object specifications. On top of that it doesn’t have procedures, but instead one pile of spaghetti code.
+A module can work faster if it doesn’t supply any commands. The only call to the module then is to simply run it. All commands inside the module are compiled inline then. However, it might be possible for the module to create its own memory objects, even though there aren’t any separate classes anymore. The inline module doesn’t have vector tables. It might have a table with the addresses of memory object specifications. On top of that it doesn’t have commands, but instead one pile of spaghetti code.
 
 ##### Inline Module Usage
 
 If you choose to compile a module inline then you have a faster module. This code cannot be called by other modules though. The only way to use the module in another module is to have the source code and compile it into it inline.
 
-However, the inline module can call another outline module’s procedures. You can’t call an inline module’s procedure, but an inline module can call an outline module’s procedures.
+However, the inline module can call another outline module’s commands. You can’t call an inline module’s command, but an inline module can call an outline module’s commands.
 
 -----
 
-Think over instantiating procedures when calling one. Consider recursive calls.... they do not say that instances of procedures are made and that there are classes and instances of procedures. It however needs to be so...
+Think over instantiating commands when calling one. Consider recursive calls.... they do not say that instances of commands are made and that there are classes and instances of commands. It however needs to be so...
 
 -----
 
@@ -255,15 +255,15 @@ The only thing you might do to really optimize your code might be to specify wit
 
 ##### Inlining Modules
 
-Inline modules run faster because there aren’t any procedure calls. Procedure calls require things to be put on the stack, a round trip through vector tables and a return. Procedure data needs to be dynamically allocated.
+Inline modules run faster because there aren’t any command calls. Command calls require things to be put on the stack, a round trip through vector tables and a return. Command data needs to be dynamically allocated.
 
-Inline modules have their procedure data in a fixed spot in memory, though seperated from the code. Calls to procedures are not made. A lot of times what otherwise be the first line of a separate procedure might be the next line in code. Other times a jump is made to another part of the code.
+Inline modules have their command data in a fixed spot in memory, though seperated from the code. Calls to commands are not made. A lot of times what otherwise be the first line of a separate command might be the next line in code. Other times a jump is made to another part of the code.
 
 Not making jump statements makes the fastest code. This has to do with the CPU’s architecture. The CPU fetches opcodes from memory while it processes the current opcode so that it has the next opcode ready straight away after processing the current instruction. Also, the CPU decodes the next instruction while it is executing the current instruction. The CPU fetches the opcodes following the current operation. The prefetches operations are called the prefetch queue. A jump invalidates the prefetch queue and the decoding of the next instruction delaying the processors execution.
 
 #### Inline
 
-As long as you’re going to program with the module you need the system structure retained. The procedures need to be separate, because they can be arbitrarily called. Procedures that are called through public interfaces that is, because procedures that are private can be entirely inlined.
+As long as you’re going to program with the module you need the system structure retained. The commands need to be separate, because they can be arbitrarily called. Commands that are called through public interfaces that is, because commands that are private can be entirely inlined.
 
 A full inline compilation is a nice option, though. This speeds up the system considerably, but you can’t program with the modules furtherly.
 
@@ -273,34 +273,34 @@ That way, however, there can be no distributed systems without supplying the sou
 
 J Core’s task that always remains is to manage threads and memory. Calling conventions and system structure are an optional management. A module can be compiled fully inline in case of which it cannot be programmed with unless you have the source code. A module can be compiled with preservation of the structure allowing you to program with it if you have a symbol table.
 
-J Core supports both of these methodologies at the same time. An inline compiled module cannot be called. It can however be run and have its thread. It can even call other modules that have been compiled outline. It can even create other threads. It calls J Core every now and then to allow other threads to run, but it has no division in procedures and it can only be called in one way: run it. The module has a place in the module vector table however. The jump statement at the module vector table record goes directly to the start of the module’s code.
+J Core supports both of these methodologies at the same time. An inline compiled module cannot be called. It can however be run and have its thread. It can even call other modules that have been compiled outline. It can even create other threads. It calls J Core every now and then to allow other threads to run, but it has no division in commands and it can only be called in one way: run it. The module has a place in the module vector table however. The jump statement at the module vector table record goes directly to the start of the module’s code.
 
 An inline compiled module can create objects from its own classes, because the memory layout of a classes *are* compiled with it.
 
 #### Inline
 
-Private procedures can be compiled inline except when infinite recursion is possible.
+Private commands can be compiled inline except when infinite recursion is possible.
 
-You can also choose to compile all procedures inline. This means that when you have compiled the module you don’t have separate procedures anymore, so you can’t have separate interface members, so no interfaces and no classes. That way the whole object oriented organization collapses and you have one pile of spaghetti code. Spaghetti code that is *way* faster than the organized code. However, you can’t use the classes of the module anymore. You’d might have the module’s source code to be able to program with it again.
+You can also choose to compile all commands inline. This means that when you have compiled the module you don’t have separate commands anymore, so you can’t have separate interface members, so no interfaces and no classes. That way the whole object oriented organization collapses and you have one pile of spaghetti code. Spaghetti code that is *way* faster than the organized code. However, you can’t use the classes of the module anymore. You’d might have the module’s source code to be able to program with it again.
 
 
 ##### Inline Module
 
-A module can work faster if it doesn’t supply any procedures. The only call to the module then is to simply run it. All procedures inside the module are compiled inline then. However, it might be possible for the module to create its own memory objects, even though there aren’t any separate classes anymore. The inline module doesn’t have vector tables. It might have a table with the  addresses of memory object specifications. On top of that it doesn’t have procedures, but instead one pile of spaghetti code.
+A module can work faster if it doesn’t supply any commands. The only call to the module then is to simply run it. All commands inside the module are compiled inline then. However, it might be possible for the module to create its own memory objects, even though there aren’t any separate classes anymore. The inline module doesn’t have vector tables. It might have a table with the  addresses of memory object specifications. On top of that it doesn’t have commands, but instead one pile of spaghetti code.
 
 
 ##### Inline Module Usage
 
 If you choose to compile a module inline then you have a faster module. This code cannot be called by other modules though. The only way to use the module in another module is to have the source code and compile it into it inline.
 
-However, the inline module can call another outline module’s procedures. You can’t call an inline module’s procedure, but an inline module can call an outline module’s procedures.
+However, the inline module can call another outline module’s commands. You can’t call an inline module’s command, but an inline module can call an outline module’s commands.
 
 -----
 
 I’ve gone on about the assembly side of it, now the easier interface.
 
 <  
-Even though it seems that all sorts of stuff can happen at the same time and all sorts of objects and code can work together in an incomprehensible turn-taking. This is not true. One thing happens at a time. One thread runs at a time, one procedure runs at a time, one data structure is used at a time, one module is running at a time, one class is running at a time.  
+Even though it seems that all sorts of stuff can happen at the same time and all sorts of objects and code can work together in an incomprehensible turn-taking. This is not true. One thing happens at a time. One thread runs at a time, one command runs at a time, one data structure is used at a time, one module is running at a time, one class is running at a time.  
 \>
 
 The only way you want to work with J Core is to design modules that run under J Core. It is about is designing modules. Module design is programming so it continues in J Code. In J Code you can design modules in a simple matter. They can be compiled to machine code modules that can run under J Core.
@@ -309,9 +309,9 @@ So the easy way is not J Core. J Core is not one of those modules that has easy 
 
 Module design continues in J Code.
 
-J Hardware requires you to design modules writing assembly language J Core procedures.
+J Hardware requires you to design modules writing assembly language J Core commands.
 
-For J Data you can write the procedures in a higher level language, which nonetheless translates to assembly.
+For J Data you can write the commands in a higher level language, which nonetheless translates to assembly.
 
 I need to make a higher level language that might not perform tasks of the modules, but provides just the neccesary to specify automation between the modules.
 
@@ -369,9 +369,9 @@ However you don’t have the names of modules, classes and other elements. You n
 
 #### Leave Out Access
 
-To make a system perform faster you can take away the object oriented structure. With that you gain that you might not put directions on the stack and make jump statements to get to the procedure.
+To make a system perform faster you can take away the object oriented structure. With that you gain that you might not put directions on the stack and make jump statements to get to the command.
 
-Another way to optimize code for speed is to inline procedures. Preferably all procedures if there isn’t a potentially infinite recurrence. (You could inline a maximum of recurrences.)
+Another way to optimize code for speed is to inline commands. Preferably all commands if there isn’t a potentially infinite recurrence. (You could inline a maximum of recurrences.)
 
 ### Logic optimization
 

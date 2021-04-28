@@ -11,7 +11,7 @@ __Contents__
 - [Misc Ideas](#misc-ideas)
 - [Execution Control (from Original Symbol Documentation from 2004)](#execution-control-from-original-symbol-documentation-from-2004)
     - [Basic Language Execution Control](#basic-language-execution-control)
-    - [Execution Control Procedures](#execution-control-procedures)
+    - [Execution Control Commands](#execution-control-commands)
     - [Selection and Repetition](#selection-and-repetition)
     - [Selection](#selection)
     - [Repetition](#repetition)
@@ -38,7 +38,7 @@ JJ
 
 ### Execution Control (from Original Symbol Documentation from 2004)
 
-< A procedure’s calling one of its own clauses, is an unconditional jump >
+< A command’s calling one of its own clauses, is an unconditional jump >
 
 < Cover text code entirely, right inside the story. Oh, yeah, should I? Or should I cover it in the Text Code chapter? >
 
@@ -68,7 +68,7 @@ For I = 0 To 5
 Next
 ```
 
-This is called a __For__ loop. __A(I)__ is executed __6__ times. The first time __I = 0__, the second time __I = 1__, the third time __I = 2__ and so on until __I__ is __5__. In this example __I__ is used as a parameter to the procedure __A__.
+This is called a __For__ loop. __A(I)__ is executed __6__ times. The first time __I = 0__, the second time __I = 1__, the third time __I = 2__ and so on until __I__ is __5__. In this example __I__ is used as a parameter to the command __A__.
 
 ```vb
     I = 0
@@ -84,13 +84,13 @@ The blue parts in the code above are called the *clauses* of the control stateme
 
 The start of the control statement and the end and whatever’s in between is considered the control statement.
 
-#### Execution Control Procedures
+#### Execution Control Commands
 
-Execution control statements are special procedures. They are given one or more references to other procedures, the execution of which is controlled. These referenced procedures are the clauses of the control statement and also the expressions and assignments controlling their execution. The execution flow procedure decides when or if any of these referenced procedures are called and how many times. How the execution flow procedure might call its referenced procedures, is dependent on what the referenced procedures might do.
+Execution control statements are special commands. They are given one or more references to other commands, the execution of which is controlled. These referenced commands are the clauses of the control statement and also the expressions and assignments controlling their execution. The execution flow command decides when or if any of these referenced commands are called and how many times. How the execution flow command might call its referenced commands, is dependent on what the referenced commands might do.
 
 #### Selection and Repetition
 
-The execution flow mentioned till now is also called conditional jumping. There are two general forms of conditional jumping: selection and repetition. Selection selects one thing to execute out of several or whether to execute something at all depending on a condition. Repetition repeats a procedure a number of times until a condition is met. In the repeated procedure actions can be taken that affect this condition. __Select__ and __If__ statements are selection. __For__ and __Do__ statements are repetition. Symbol defines but two procedures: __Selection__ and __Repetition__. Depending on how the procedure is used it functions as an __If__, __Select__, __For__ or __Do__ and depending on that, appropriate names are notated with calls to the execution flow procedures.
+The execution flow mentioned till now is also called conditional jumping. There are two general forms of conditional jumping: selection and repetition. Selection selects one thing to execute out of several or whether to execute something at all depending on a condition. Repetition repeats a command a number of times until a condition is met. In the repeated command actions can be taken that affect this condition. __Select__ and __If__ statements are selection. __For__ and __Do__ statements are repetition. Symbol defines but two commands: __Selection__ and __Repetition__. Depending on how the command is used it functions as an __If__, __Select__, __For__ or __Do__ and depending on that, appropriate names are notated with calls to the execution flow commands.
 
 #### Selection
 
@@ -98,18 +98,18 @@ The execution flow mentioned till now is also called conditional jumping. There 
 
 < That shorthand: what if the actual reference target is two capsules up? >
 
-This section apart from covering the selection execution flow procedure also explains a lot about execution flow in general, not just selection, specifically about clauses.
+This section apart from covering the selection execution flow command also explains a lot about execution flow in general, not just selection, specifically about clauses.
 
-__Select__ and __If__ statements are both accomplished by calling the __Selection__ execution flow procedure. The difference between an __If__ and a __Select__ is that a __Select__ first defines the beginning of the expression to evaluate and then a list of endings for the expression. Each beginning-ending combination is treated as a separate __If__.
+__Select__ and __If__ statements are both accomplished by calling the __Selection__ execution flow command. The difference between an __If__ and a __Select__ is that a __Select__ first defines the beginning of the expression to evaluate and then a list of endings for the expression. Each beginning-ending combination is treated as a separate __If__.
 
-The __Selection__ execution flow procedure takes 4 kinds of procedure references:
+The __Selection__ execution flow command takes 4 kinds of command references:
 
 - __Select__
 - __If__
 - __Then__
 - __Else__
 
-I call all of these procedure references *clauses*. Not all clauses might be filled in.
+I call all of these command references *clauses*. Not all clauses might be filled in.
 
 If the __Select__ clause isn’t filled in then there’s only one __If__ clause, one __Then__ clause and one __Else__ clause:
 
@@ -117,7 +117,7 @@ If the __Select__ clause isn’t filled in then there’s only one __If__ clause
 If X Then A Else B
 ```
 
-__X__, __A__ and __B__ are the clauses, which are separate embedded procedures. __X__ is the __If__ clause. __A__ is the __Then__ clause. __B__ is the __Else__ clause. The __If__ clause procedure returns a condition that is either __True__ or __False__. If it is __True__ then the __Then__ clause is called, if it is __False__ then the __Else__ clause is called.
+__X__, __A__ and __B__ are the clauses, which are separate embedded commands. __X__ is the __If__ clause. __A__ is the __Then__ clause. __B__ is the __Else__ clause. The __If__ clause returns a condition that is either __True__ or __False__. If it is __True__ then the __Then__ clause is called, if it is __False__ then the __Else__ clause is called.
 
 The red clauses can be seen as the cause of the selection and the blue clauses as the result of the selection.
 
@@ -181,13 +181,13 @@ End Select
 
 The method is that where appropriate an __=__ sign is put between the __Select__ clause and the __Case__ clause.
 
-In diagram notation, the __Selection__ procedure with all its clauses looks like this:
+In diagram notation, the __Selection__ command with all its clauses looks like this:
 
 ![](images/6.%20Execution%20Control%20Ideas.001.png)
 
 The amount of __If__ groups can vary. I’ve notated three of them in the diagram above.
 
-All clauses are procedure references provided to the selection procedure as parameters when you call it. For that, the diagram for a call to the Selection procedure might look like this:
+All clauses are command references provided to the selection command as parameters when you call it. For that, the diagram for a call to the Selection command might look like this:
 
 ![](images/6.%20Execution%20Control%20Ideas.002.png)
 
@@ -205,16 +205,16 @@ End If
 
 The outer squares are the clauses. The squares in the larger square are the references to those clauses.
 
-Execution control is so common and the notation above is rather complex. The notation above should even require grouping triangles around the __If__ groups. I already left those out, but I might do more to make it look clearer. A simplified notation for a call to the Selection procedure is regularly used instead:
+Execution control is so common and the notation above is rather complex. The notation above should even require grouping triangles around the __If__ groups. I already left those out, but I might do more to make it look clearer. A simplified notation for a call to the Selection command is regularly used instead:
 
 ![](images/6.%20Execution%20Control%20Ideas.003.png)
 
-This has the same meaning as the other notation. A square drawn with dashed lines is shorthand for a square with a reference line to outside. The dashed squares are filled in with the contents of the referenced procedure.
+This has the same meaning as the other notation. A square drawn with dashed lines is shorthand for a square with a reference line to outside. The dashed squares are filled in with the contents of the referenced command.
 
 | ![](images/6.%20Execution%20Control%20Ideas.004.png) | = | ![](images/6.%20Execution%20Control%20Ideas.005.png) |
 |------------------------------------------------------|---|------------------------------------------------------|
 
-Even more is done to simplify the notation. Clauses that are not filled in can be hidden. The procedure name __Selection__ is also left out. Squares are allowed to be drawn as rectangles. When the __Select__ clause is filled in, alternate clause names are used as explained earlier.
+Even more is done to simplify the notation. Clauses that are not filled in can be hidden. The command name __Selection__ is also left out. Squares are allowed to be drawn as rectangles. When the __Select__ clause is filled in, alternate clause names are used as explained earlier.
 
 < Use those rules from this point onward >
 
@@ -307,7 +307,7 @@ __Repetition__ has the following clauses:
 - __Step__
 - __Loop__
 
-< Picture 33: Diagram of Repetition execution flow procedure with all its clauses>>
+< Picture 33: Diagram of Repetition execution flow command with all its clauses>>
 
 Of each clause there can be only one, but not all need to be filled in.
 
@@ -350,7 +350,7 @@ Next
 
 The __Step__ clause is basically no more than the second part of the loop clause. It’s just simply executed as the second part of the loop. However, it allows a more abstract notation. When you start with a binary operator then the __For__ clause is used as the first operand. If you only supply a term, then it is added to the __For__ clause.
 
-Oops the __For__ clause isn’t a procedure anymore. It’s an object whose state is gotten and set. The __Step__ clause can be a procedure reference, but can also be an object reference with state get and set. It’s overloaded to support
+Oops the __For__ clause isn’t a command anymore. It’s an object whose state is gotten and set. The __Step__ clause can be a command reference, but can also be an object reference with state get and set. It’s overloaded to support
 
 < >
 
@@ -358,11 +358,11 @@ Diagram Code:
 
 < Picture 35: Square called Do with 5 other squares: I, = 0, <= 5, ++, A B. >
 
-The algebra you see in the diagrams above (for instance __<= 5__) are actually calls to algebraic procedures. The algebraic language can be integrated like that in the diagram code. The integration of other languages into diagram code is discussed in a separate chapter. Here I’ve only used it to show how using the execution flow statements can look in practice.
+The algebra you see in the diagrams above (for instance __<= 5__) are actually calls to algebraic commands. The algebraic language can be integrated like that in the diagram code. The integration of other languages into diagram code is discussed in a separate chapter. Here I’ve only used it to show how using the execution flow statements can look in practice.
 
 < Algebra covered in Math, Language embedding in a Code Language chapter >
 
-< Tell not to worry about the algebraic operations and assignment.  Algebra operations and assignment are themselves procedures that can be called which are explained later. >
+< Tell not to worry about the algebraic operations and assignment. Algebra operations and assignment are themselves commands that can be called which are explained later. >
 
 < Examples of simpler loops, in which 
 
@@ -380,13 +380,13 @@ The reverse is not true: a command definition can not access an object in a nest
 
 < Picture 38: non public nested command member, not referenced by the command definition >
 
-And even when it’s public then it has to be written right before entering the nested command, just like a procedure call.
+And even when it’s public then it has to be written right before entering the nested command, just like a command call.
 
 < Picture 39: public nested command member referenced by the command definition just before entrance >
 
-You can recognize an embedded procedure by the fact that they’re not calls, nor procedure references. So they (usually) have no lines:
+You can recognize an embedded command by the fact that they’re not calls, nor command references. So they (usually) have no lines:
 
-< picture 40: embedded procedures. Mark the ones that are nested commands with a color >
+< picture 40: embedded commands. Mark the ones that are nested commands with a color >
 
 Perhaps jumping might change that and the nested commands might get lines, but no lines that end up outside the command definition.
 
@@ -412,19 +412,19 @@ Line 3 might make a jump to line 5. Line 4 might be skipped.
 
 ...
 
-Returns makes you able to exit procedures, a single repetition, a whole repetition loop, a select statement, etcetera.
+Returns makes you able to exit commands, a single repetition, a whole repetition loop, a select statement, etcetera.
 
 A jump ...
 
 
-Unconditional jumps are usually just regular calls to other procedures. Another special unconditional jump is immediately ending the procedure or the block or ending the current procedure and the next one and so on.
+Unconditional jumps are usually just regular calls to other commands. Another special unconditional jump is immediately ending the command or the block or ending the current command and the next one and so on.
 
 You could speak of conditional calls, actually. 
 
 \>
 
 <  
-Unconditional jumps are usually calls to other procedures indendent of a boolean state: regular calls. Another special unconditional jump is immediately ending the procedure (returning or ending a for loop) or ending the current procedure and the next one and so on (ending a nested loop and also the loop its nested in)  
+Unconditional jumps are usually calls to other commands indendent of a boolean state: regular calls. Another special unconditional jump is immediately ending the command (returning or ending a for loop) or ending the current command and the next one and so on (ending a nested loop and also the loop its nested in)  
 \>
 
 ```vb
@@ -686,35 +686,35 @@ Maybe for should be called repeat
 
 #### Brainstorm
 
-Maybe the procedure references of execution flow procedures need to have a certain procedure interface.
+Maybe the command references of execution flow commands need to have a certain command interface.
 
 -----
 
 About the execution of non execution controlled calls. Some calls might be made before others because the result of one call is used in another call. That defines (some of) the order of precedence of calls.  
-The order of the calls in a procedure is (part) determined by dependence, independent of the order the programmer gives.
+The order of the calls in a command is (part) determined by dependence, independent of the order the programmer gives.
 
 The programmer can change the order of things that are arbitrarily called and insert calls into the obligatory order or calls, but if it’s not so relevant, the programmer doesn’t even provide the call order. Most of the time it is not that relevant. (or is it, to what extent can I not see the requirement of the order of calls, even when its order is very important?
 
 -----
 
-If a procedure takes a reference to a nested command then you can do this notation:
+If a command takes a reference to a nested command then you can do this notation:
 
 < Square with loose squares and another square with squares pointing at those loose squares >
 
-Defining the contents of the procedure references right within the
+Defining the contents of the command references right within the
 
 ##### Execution Control Controls which call is made next
 
 <  
-Most of what’s done inside a procedure is calling other procedures.
+Most of what’s done inside a command is calling other commands.
 
 Apart from executing a sequence of calls linearly, you can alter the course of the calls using execution control.
 
-A clause is like a procedure itself. For that you can see execution control as selecting which procedure might be called next. Or actually which clause might be called next.
+A clause is like a command itself. For that you can see execution control as selecting which command might be called next. Or actually which clause might be called next.
 
 First explain that a control statement controls which call is made next. They are responsible for the arbitrarily in execution. Otherwise there might be just one way a program can execute from start to beginning and that’s that, but execution control sees to it that there is variation in the execution of a program.
 
-In one compiler optimization technique it is these execution flow statements that are analysed. Execution control statements make execution variable and this compiler technique analyses how variable that actually is. Maybe the execution control might not be reached with too many different values, let’s say, two values. In that case you might consider removing the variation in execution by making two procedures one of which is one situation of the execution flow statement and the other one is the other situation of the execution flow statement. At calls to the execution flow statement or indirect calls to it, you insert the variation that applies right there.  
+In one compiler optimization technique it is these execution flow statements that are analysed. Execution control statements make execution variable and this compiler technique analyses how variable that actually is. Maybe the execution control might not be reached with too many different values, let’s say, two values. In that case you might consider removing the variation in execution by making two commands one of which is one situation of the execution flow statement and the other one is the other situation of the execution flow statement. At calls to the execution flow statement or indirect calls to it, you insert the variation that applies right there.  
 \>
 
 ##### Nice Example
@@ -733,7 +733,7 @@ Next
 
 ##### Execution Control is Call Control
 
-This means that in Symbol the definition of execution control is selecting what procedure to call next depending on a __Boolean__ state.
+This means that in Symbol the definition of execution control is selecting what command to call next depending on a __Boolean__ state.
 
 You could speak of conditional calls, actually. 
 
@@ -741,9 +741,9 @@ Calls can be managed by execution control. Execution control manages the regular
 
 ##### => Execution Control
 
-But... if you pass a clause reference to an execution flow procedure the execution control CAN call the clause, but only in the context of the procedure instance that called the execution flow procedure!
+But... if you pass a clause reference to an execution flow command the execution control CAN call the clause, but only in the context of the command instance that called the execution flow command!
 
-Execution control procedures might call clauses in the context of a *specific call* to the clause’s procedure definition.
+Execution control commands might call clauses in the context of a *specific call* to the clause’s command definition.
 
 ### Declared Traversions / Constructions
 
@@ -833,4 +833,4 @@ For Related Types With Edit Values ( aClass )
 End For
 ```
 
-Looking at this, I see that you could do this easily in Symbol, by making your own execution flow procedure.
+Looking at this, I see that you could do this easily in Symbol, by making your own execution flow command.

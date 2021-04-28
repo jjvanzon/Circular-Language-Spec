@@ -44,7 +44,7 @@ Here might be some of the topics that could be found here:
 
 - ### [Comparison to CPU-Like Calls](comparison-to-cpu-like-calls.md)
 
-    - Moved here from the spec section about Commands, since it looks more like an implementation issue of how call instantion in Circular might relate to how a CPU may handle procedure calls.
+    - Moved here from the spec section about Commands, since it looks more like an implementation issue of how call instantion in Circular might relate to how a CPU may handle command calls.
 
 - ### [Errors & Warnings Implementation](errors-and-warnings-implementation.md)
 

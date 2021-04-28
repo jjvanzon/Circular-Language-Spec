@@ -18,16 +18,16 @@ __Contents__
     - [Old](#old)
         - [Static Objects](#static-objects)
             - [Type Static Objects](#type-static-objects)
-            - [Procedure Static Objects](#procedure-static-objects)
+            - [Command Static Objects](#command-static-objects)
             - [Module Static Objects](#module-static-objects)
-        - [Static Procedures](#static-procedures)
-            - [Procedure Static Procedures](#procedure-static-procedures)
-            - [Type Static Procedures](#type-static-procedures)
-            - [Module Static Procedures](#module-static-procedures)
+        - [Static Commands](#static-commands)
+            - [Command Static Commands](#command-static-commands)
+            - [Type Static Commands](#type-static-commands)
+            - [Module Static Commands](#module-static-commands)
         - [Type Create and Destroy](#type-create-and-destroy)
             - [Type Create and Destroy](#type-create-and-destroy-1)
             - [Module Type Create and Destroy](#module-type-create-and-destroy)
-            - [Procedure Create and Destroy](#procedure-create-and-destroy)
+            - [Command Create and Destroy](#command-create-and-destroy)
     - [Question](#question)
     - [Old](#old-1)
         - [Type Static](#type-static)
@@ -92,46 +92,46 @@ I am mixing up the concepts of Static and Private here: both might have to do wi
 < An object doesn’t define code. You could say that the type defines code and that a object only defines data. Each module instance, though, has its own instance of the types of the modules, even though the code of the types is still only in memory once. So you can’t really say the code resides in a type either. >
 
 - Type static
-- Procedure static
+- Command static
 - Module static
 - 
 - Type static objects
-- Procedure static objects
+- Command static objects
 - Module static objects
 - 
-- Procedure static procedures
-- Type static procedures
-- Module static procedures
+- Command static commands
+- Type static commands
+- Module static commands
 - 
 - Type Create
-- Procedure Create
+- Command Create
 - Module Type Create
 
 #### Static
 
-Members usually belong to an object: every object has its own sub objects and procedures. Members of a type that are Static, however, belong to the type rather to individual objects. These members have the same configuration for every instance of the type. A change made to one object of the type changes all objects of the type. The members are considered *static* to the type.
+Members usually belong to an object: every object has its own sub objects and commands. Members of a type that are Static, however, belong to the type rather to individual objects. These members have the same configuration for every instance of the type. A change made to one object of the type changes all objects of the type. The members are considered *static* to the type.
 
-Procedure instances are made on each call to the procedure. A call is a procedure instance. In order to make objects part of the whole procedure, rather than just the call, procedure members can be made Static to the procedure. On each call to the procedure, the static members retain their configuration.
+Command instances are made on each call to the command. A call is a command instance. In order to make objects part of the whole command, rather than just the call, command members can be made Static to the command. On each call to the command, the static members retain their configuration.
 
-Static members of a procedure are only the same for every call to the procedure. Static members of a procedure are different for every object that holds the procedure. In order to make procedure members static for the whole type of objects you might make a procedure member Type Static. When I talk about static procedure members I’m talking about Procedure Static members.
+Static members of a command are only the same for every call to the command. Static members of a command are different for every object that holds the command. In order to make command members static for the whole type of objects you might make a command member Type Static. When I talk about static command members I’m talking about Command Static members.
 
-Static type members are the same for every object instance. However, each module instance has its own copy of static type members. Static type members are not the same for every module instance. In order to make a type member, or a procedure member static to the any module instance, you make the member Module Static.
+Static type members are the same for every object instance. However, each module instance has its own copy of static type members. Static type members are not the same for every module instance. In order to make a type member, or a command member static to the any module instance, you make the member Module Static.
 
-An effect of making type members static is that you can call the members even when the symbol isn’t created. Non-static members, or *instance members*, can only be called on a created object. Module static members can be called even when the module instance isn’t created, but the module type is loaded into memory. Static members of a procedure can be accessed without running the procedure.
+An effect of making type members static is that you can call the members even when the symbol isn’t created. Non-static members, or *instance members*, can only be called on a created object. Module static members can be called even when the module instance isn’t created, but the module type is loaded into memory. Static members of a command can be accessed without running the command.
 
-Procedure static members are like part of their object. They persist for as long as the object is created. Type static members persist for as long as its module instance is created. Note here that each module instance gets its own set of types with static members. Module static members persist for as long as the module type exist. A module type exists when the Sigma module that contains it is in memory.
+Command static members are like part of their object. They persist for as long as the object is created. Type static members persist for as long as its module instance is created. Note here that each module instance gets its own set of types with static members. Module static members persist for as long as the module type exist. A module type exists when the Sigma module that contains it is in memory.
 
 #### Type Creation
 
-The Object Create procedure initializes the instance. In it you can create sub objects, set up lines and call members. Type members are initialized in another procedure: Type Create. The Type Create procedure of a symbol is called when the type is created. Types are created when a module instance is created so the Type Create procedure of all types in a module instances are called right after the module’s Object Create procedure.
+The Object Create command initializes the instance. In it you can create sub objects, set up lines and call members. Type members are initialized in another command: Type Create. The Type Create command of a symbol is called when the type is created. Types are created when a module instance is created so the Type Create command of all types in a module instances are called right after the module’s Object Create command.
 
-You can only call static type members in the Type Create procedure, because non-static, *object* members can not be accessed yet, because they can only be accessed through a created object.
+You can only call static type members in the Type Create command, because non-static, *object* members can not be accessed yet, because they can only be accessed through a created object.
 
-A procedure has a Type Create system procedure as well, to set up the procedure’s static members.
+A command has a Type Create system command as well, to set up the command’s static members.
 
-Members of a procedure that are Type Static are initialized in the type’s Type Create procedure. Any Type Static member, be it of a procedure lives as long as its type. Type Static procedure members are like type static type members, except that they are accessed through the procedure. If the procedure declares them private, they are accessible only to the procedure itself.
+Members of a command that are Type Static are initialized in the type’s Type Create command. Any Type Static member, be it of a command, lives as long as its type. Type Static command members are like type static type members, except that they are accessed through the command. If the command declares them private, they are accessible only to the command itself.
 
-A module also have a Type Create procedure. This is called when the module type comes to light. Module types come to light when a Sigma module is loaded. All the Type Creates of module types in a Sigma module are called right after the Sigma module is loaded. The Type Create of the main module of a Sigma module serves as the module initializer. The Object Create of the main module serves as the module instance initializer.
+A module also have a Type Create command. This is called when the module type comes to light. Module types come to light when a Sigma module is loaded. All the Type Creates of module types in a Sigma module are called right after the Sigma module is loaded. The Type Create of the main module of a Sigma module serves as the module initializer. The Object Create of the main module serves as the module instance initializer.
 
 #### Old
 
@@ -143,15 +143,15 @@ Sub objects belong to their container object. Static objects, however, are part 
 
 This makes it so that lines can be tied together quite complexly, because static object symbols in object of the type always point to the static object symbol in the target type, which can be lines that travel far. On the other hand: every object of the type with a static object can set the line of the static object, meaning that the static object can point to a wide variety of locations, so it could again be a far away line. The lines of the static object symbol inside objects of the type, that point to the static object symbol of the target type, anyway, these lines don’t really exist. I still might come up with a way to make the notation different so that you can see the static systematics.
 
-###### Procedure Static Objects
+###### Command Static Objects
 
-Procedures are much like types. They can hold objects too. If you want the state of an object to persist for multiple procedure calls, you can make the procedure object a *Procedure Static*.
+Commands are much like types. They can hold objects too. If you want the state of an object to persist for multiple command calls, you can make the command object a *Command Static*.
 
-A procedure static object might give every object of its type its own procedure static object.
+A command static object might give every object of its type its own command static object.
 
-By making a procedure’s object both Procedure Static *and* Type Static, the procedure object is the same for every call to every object of the type.
+By making a command’s object both Command Static *and* Type Static, the command object is the same for every call to every object of the type.
 
-Procedure and Type Static objects inside procedures can also have the long lines going from all objects to the type.
+Command and Type Static objects inside commands can also have the long lines going from all objects to the type.
 
 < P >
 
@@ -163,33 +163,33 @@ Note that Type Static Objects that are direct ancestors of the module are static
 
 Note that Module Static objects are automatically also Type Static.
 
-##### Static Procedures
+##### Static Commands
 
-###### Procedure Static Procedures
+###### Command Static Commands
 
-If you not just make a single procedure object Procedure Static, but the whole procedure Procedure Static, then all objects in the procedure are Procedure Static.
+If you not just make a single command object Command Static, but the whole command Command Static, then all objects in the command are Command Static.
 
-###### Type Static Procedures
+###### Type Static Commands
 
-If you make a procedure, not an object, Type Static, then the procedure static objects inside the procedure are also static for the whole type.
+If you make a command, not an object, Type Static, then the command static objects inside the command are also static for the whole type.
 
-Another effect of making a procedure Type Static is that you can call the procedure even through an object that isn’t created.
+Another effect of making a command Type Static is that you can call the command even through an object that isn’t created.
 
-Type Static objects and procedures can be accessed even though an uncreated object symbol, but non Type Static procedures and objects can *not* be accessed unless the object symbol is created.
+Type Static objects and commands can be accessed even though an uncreated object symbol, but non Type Static commands and objects can *not* be accessed unless the object symbol is created.
 
-###### Module Static Procedures
+###### Module Static Commands
 
-The rules of Type Static procedures also apply to Module Static procedures. Only Type Static procedures’ objects are static to *all instances* of the module.
+The rules of Type Static commands also apply to Module Static commands. Only Type Static commands’ objects are static to *all instances* of the module.
 
 ##### Type Create and Destroy
 
 ###### Type Create and Destroy
 
-In order to initialize and terminate objects and procedures static to the type, object symbols have a Type Create and a Type Destroy system procedure. The Type Create procedure of an object symbol is called long before the object symbol is created and becomes a created object. The Type Create procedure is called when a module object is created. The Type Create procedures of any ancestor object symbol of the module is called, but not of the object symbols in sub modules. Those object symbols’ Type Create procedures are called only when the sub module is created. Many object symbols might not even have a Type Create procedure.
+In order to initialize and terminate objects and commands static to the type, object symbols have a Type Create and a Type Destroy system command. The Type Create command of an object symbol is called long before the object symbol is created and becomes a created object. The Type Create command is called when a module object is created. The Type Create commands of any ancestor object symbol of the module is called, but not of the object symbols in sub modules. Those object symbols’ Type Create commands are called only when the sub module is created. Many object symbols might not even have a Type Create command.
 
-The Type Destroy procedure is called when the module instance is Destroyed. Beware not to uninitialize Module Static members of the type, because those belong to all instances of the module, not just the instance of the module that’s being destroyed.
+The Type Destroy command is called when the module instance is Destroyed. Beware not to uninitialize Module Static members of the type, because those belong to all instances of the module, not just the instance of the module that’s being destroyed.
 
-Note that you can only initialize the members static to the type in the Type Create procedure, not instance members. This is not a restriction that the Type Create procedure imposes. It’s just that the Type Create procedure is called before any object is created and you could only access non static members through a created object, so at the time the Type Create procedure is run, instance objects and procedures are accessible.
+Note that you can only initialize the members static to the type in the Type Create command, not instance members. This is not a restriction that the Type Create command imposes. It’s just that the Type Create command is called before any object is created and you could only access non static members through a created object, so at the time the Type Create command is run, instance objects and commands are accessible.
 
 Type Create is stuck right at the end of the module’s Object Create.
 
@@ -201,28 +201,28 @@ Module Type Static members are like part of the Sigma module, rather than the mo
 
 Module symbols also have a Type Create. New module types come to light when a Sigma module is loaded. All the Type Creates of module types in a Sigma module are called right after the Sigma module is loaded. The Type Create of the main module of a Sigma module serves as the module initializer. The Object Create of the main module serves as the module instance initializer.
 
-###### Procedure Create and Destroy
+###### Command Create and Destroy
 
-Procedures are in many aspects the same as types. To initialize the static members of procedures. Procedure Create is called on creation of the procedure’s object. In the Procedure Create you can only call static members of the procedure, because the instance members of procedure only exist during a call to the procedure.
+Commands are in many aspects the same as types. To initialize the static members of commands. Command Create is called on creation of the command’s object. In the Command Create you can only call static members of the command, because the instance members of command only exist during a call to the command.
 
-Procedure Create is stuck right at the end of the object’s Object Create.
+Command Create is stuck right at the end of the object’s Object Create.
 
-Procedure Static members of a procedure are like part of the object instance, rather than the procedure instance.
+Command Static members of a command are like part of the object instance, rather than the command instance.
 
 #### Question
 
-Where are type static procedure members initialized?  
-Type Static procedure members are like part of the module instance. They are module instance *specific*, but this is also called type specific, because a type belongs to a module instance. They should be initialized along with the module instance, so along with the type creation. Type Create can access Type Static procedure members and are initialized there.
+Where are type static command members initialized?  
+Type Static command members are like part of the module instance. They are module instance *specific*, but this is also called type specific, because a type belongs to a module instance. They should be initialized along with the module instance, so along with the type creation. Type Create can access Type Static command members and are initialized there.
 
-Type Static members of both the type and its procedures are initialized in the Type Create procedure and terminated in the Type Destroy procedure.
+Type Static members of both the type and its commands are initialized in the Type Create command and terminated in the Type Destroy command.
 
-Module Static members of both module, its type and procedures are initialized in the module’s Type Create procedure and terminiated in its Type Destroy procedure.
+Module Static members of both module, its type and commands are initialized in the module’s Type Create command and terminiated in its Type Destroy command.
 
 #### Old
 
 ##### Type Static
 
-The basic things about a static procedure:
+The basic things about a static command:
 
 - Callable even when the object symbol isn’t created
 - Data mutual for every object
@@ -230,19 +230,19 @@ The basic things about a static procedure:
 The first point is just a matter of tagging it static.
 
 The second point:  
-The type should contain objects that store data. How do they belong to the type rather than the individual objects? Make all system procedures static? What might that render? That makes the procedures accessible when the descendant isn’t created.
+The type should contain objects that store data. How do they belong to the type rather than the individual objects? Make all system commands static? What might that render? That makes the commands accessible when the descendant isn’t created.
 
-Aleen als de naar hetzelfde geheugen verwijst.
+Alleen als de naar hetzelfde geheugen verwijst.
 
 Ik volg het niet. Ik zie het niet.
 
 ###### Static Members
 
-There is a way to call procedures of a symbol that isn’t created: you can make procedure’s static. This makes them callable even when the symbol is not created. They are the type’s members rather than the object’s members. An object symbol becomes static by making one or more of its system procedures static, for instance the Symbol Get, which makes you able to link to an object symbol. You can call the type’s static members through any symbol that has that type. Static procedures aren’t passed the hidden object argument.
+There is a way to call commands of a symbol that isn’t created: you can make commands static. This makes them callable even when the symbol is not created. They are the type’s members rather than the object’s members. An object symbol becomes static by making one or more of its system commands static, for instance the Symbol Get, which makes you able to link to an object symbol. You can call the type’s static members through any symbol that has that type. Static commands aren’t passed the hidden object argument.
 
 ###### Type Create and Type Destroy
 
-You may want static objects to always be created. Remember that static objects are objects some of whose system procedures are static. Those static objects can store static data for the type. Or you may want to reserve ‘static’ memory space for the type yourself. There’s no such thing as static memory space, but you can allocate memory and store a reference to it in a static object. To be able to have sub objects created as soon as the *type* is running, a type, apart from an object, needs a Create procedures. Therefore, object symbols have a Type Create procedure. Object symbols also have a Type Destroy procedure to be able to destroy static objects and deallocate static memory. 
+You may want static objects to always be created. Remember that static objects are objects some of whose system commands are static. Those static objects can store static data for the type. Or you may want to reserve ‘static’ memory space for the type yourself. There’s no such thing as static memory space, but you can allocate memory and store a reference to it in a static object. To be able to have sub objects created as soon as the *type* is running, a type, apart from an object, needs a Create commands. Therefore, object symbols have a Type Create command. Object symbols also have a Type Destroy command to be able to destroy static objects and deallocate static memory. 
 
 ###### Type Create and Type Destroy are Static nor Non Static
 
@@ -254,43 +254,43 @@ The Type Create and Type Destroy are considered static nor non static, because b
 
 Modules need to be created too.
 
-Modules can also have static members. Those are members of the module that can be called even when the module is not created. The module type create procedure of all sub modules is called as soon as the module is loaded in Sigma.
+Modules can also have static members. Those are members of the module that can be called even when the module is not created. The module type create command of all sub modules is called as soon as the module is loaded in Sigma.
 
 Types in a non created module can usually not be referred to. 
 
-There can also be static members of a module. Those are mutual to all module instances and can be referred to even when the module isn’t created. Then you can refer to procedures (and objects and types) of a non created module. The procedures might be made Module Static in order to do that. Module Static symbols’ Type Create procedures are called even when the module isn’t created. To have objects run as soon as the module type runs, the module symbol has a Type Create and Type Destroy procedure as well, in which you can create objects to run staticly.
+There can also be static members of a module. Those are mutual to all module instances and can be referred to even when the module isn’t created. Then you can refer to commands (and objects and types) of a non created module. The commands might be made Module Static in order to do that. Module Static symbols’ Type Create commands are called even when the module isn’t created. To have objects run as soon as the module type runs, the module symbol has a Type Create and Type Destroy command as well, in which you can create objects to run statically.
 
 Types of modules can be
 
-Then module static type creates should be called when the sigma module loads. Right. The module only exists when. So modules might also have their own (Module) Type Create and Type Destroy procedures that are runned when the Sigma module is loaded, respectively unloaded. 
+Then module static type creates should be called when the sigma module loads. Right. The module only exists when. So modules might also have their own (Module) Type Create and Type Destroy commands that are runned when the Sigma module is loaded, respectively unloaded. 
 
-So now there’s not only static symbols, but module static symbols, which can be members of ancestors at any depth inside the module. Only module static members (including system procedures) can be called when a module is not created.
+So now there’s not only static symbols, but module static symbols, which can be members of ancestors at any depth inside the module. Only module static members (including system commands) can be called when a module is not created.
 
-Sub module’s type creates are also called on module load. If you don’t define module type create of syb modules, then nothing is called ofcouse. Only if you choose to have a module with globally static data, their module type create procedure is called.
+Sub module’s type creates are also called on module load. If you don’t define module type create of syb modules, then nothing is called ofcouse. Only if you choose to have a module with globally static data, their module type create command is called.
 
-Sub module’s type creates are also called on module load. Sub module type creates are called in the super module type create. In a module type, Type Create procedures that are declared Globally Static of object symbols are called when the the module type is created.
+Sub module’s type creates are also called on module load. Sub module type creates are called in the super module type create. In a module type, Type Create commands that are declared Globally Static of object symbols are called when the the module type is created.
 
 The creation of a module might be initiated by code, because a module symbol can also become a module reference, in case of which Create might not be called.
 
-Dus globally static procedures kunnen worden aangeroepen nadat module is geload. Alle globally static procedures van alle.
+Dus globally static commands kunnen worden aangeroepen nadat module is geload. Alle globally static commands van alle.
 
-- Globally static procedures
-- Type Create procedure of modules
-- Static procedures
-- Type Create procedures of object symbols
-- Object Create procedures of modules
-- Object Create procedures of object symbols
-- Static procedures directly in modules
+- Globally static commands
+- Type Create command of modules
+- Static commands
+- Type Create commands of object symbols
+- Object Create commands of modules
+- Object Create commands of object symbols
+- Static commands directly in modules
 
 Symbols always contain some data: their line targets. Those are static data, so when you create a module there’s always memory reserved: for each symbol memory that stores the line targets. (by the way: doesn’t a flag need to be stored to on if the symbol is created?). Or should I store line targets in the Core’s object table? Hmmm...
 
-Static bij procedure members.
+Static bij command members.
 
 < How can you make a type: module static? >
 
 #### Misc Brainstorm Items
 
-< I need a story about where the code resides and that the code isn’t really part of module instances, types, objects or procedures. Those entities only complete the code with a copy of data. >
+< I need a story about where the code resides and that the code isn’t really part of module instances, types, objects or commands. Those entities only complete the code with a copy of data. >
 
 his formulation may not be entirely true, but maybe wording like that could be used in the 'Static' explanation? For instance the idea that types could be changed live, and the contents of objects might simultaneously change:  
 Every symbol of the same type has the same contents. The type can be edited by editing either symbol and their contents might change simultaneously.
@@ -322,9 +322,9 @@ Formerly it was fixed which types of construct were static and which were not, b
 
 -----
 
-Fixed logical residence (in automatic containemtn) gives you a clue about static members of classes. That is also a special form of access, like global access. 
+Fixed logical residence (in automatic containment) gives you a clue about static members of classes. That is also a special form of access, like global access. 
 
-In the For loop, the Loop procedure reference parameter has a Variable filled in, that is like static to the procedure definition. How might that work?
+In the For loop, the Loop command reference parameter has a Variable filled in, that is like static to the command definition. How might that work?
 
 Objects set for a command definition or class, that are taken over by all calls or objects. The reference target can not be overwritten by the call or object, but the value can be written or read. It is all about which system members of the object of a definition or class are declared static. The static system members are changeable by the class or definition, but cannot be changed by objects or calls.  
 \> Once again another concept, that required better understanding of the system interface.
@@ -396,7 +396,7 @@ JJ
 
 -----
 
-If one diamond’s internal lines change, lines of all procedure symbols pointing to the diamond change too. If a static procedure line is changed, all procedure symbols, also all calls with that definition might change.
+If one diamond’s internal lines change, lines of all command symbols pointing to the diamond change too. If a static command line is changed, all command symbols, also all calls with that definition might change.
 
 -----
 
@@ -408,7 +408,7 @@ Static,
 2004
 
 <  
-a symbol apart from an object access procedure also has a class access procedure giving you access to the class members in a static form. The object includes its type-static members... (I’m explaining static here.)  
+a symbol apart from an object access command also has a class access command giving you access to the class members in a static form. The object includes its type-static members... (I’m explaining static here.)  
 \>
 
 JJ

@@ -148,15 +148,15 @@ The cloning depth may be dependent on the parameter usage inside the command.
 
 If you don’t indicate the order in which to execute the commands, then they might execute in an arbitrary order. Sometimes this is acceptable from a functional point of view.
 
-The order of a procedure can also be *automatically* determined by *input / output dependency*. A command, called inside a procedure, can take input, that is the output of another command. Then the other command needs to execute first, in order to pass its output on to the next command. This is called the *automatic execution order* principle, part of the flat & structured interchange principles. 
+The order of a command's steps can also be *automatically* determined by *input / output dependency*. A command, called inside another command, can take input, that is the output of another command. Then the other command needs to execute first, in order to pass its output on to the next command. This is called the *automatic execution order* principle, part of the flat & structured interchange principles. 
 
-The hope that comes with automatic execution order determined by input / output dependency is to not might define any normal order, because if parts of a procedure have not input / output dependency, then those parts can always execute in any arbitrary order.
+The hope that comes with automatic execution order determined by input / output dependency is perhaps not define any normal order, because if parts of a command have no input / output dependency, then those parts can always execute in any arbitrary order.
 
 #### Automatic Execution Order
 
-Apart from auto-encapsulation, auto-ordering of procedure steps can also be done, based on if all the conditions for executing a procedure step are there. If multiple procedure steps can be done in one blow, you could fork out in multiple procedure steps being executed at the same time, virtually. Logically they can be executed at the same time, but in practice, it's best for the computer to just execute them one by one in an arbitrary order. It is imposed that when conditions are met for a procedure step to be executed, then it is done. And also, a procedure step is not executed sooner than required. For instance, a variable needs only to be declared just before first taking it in use. Perhaps variable declaration has no place in JJ Code anymore, but it is a clear example of imposed procedural order, that I like to work with now.
+Apart from auto-encapsulation, auto-ordering of a command's steps can also be done, based on if all the conditions for executing a a command's step are there. If multiple steps can be done in one blow, you could fork out in multiple steps being executed at the same time, virtually. Logically they can be executed at the same time, but in practice, it's best for the computer to just execute them one by one in an arbitrary order. It is imposed that when conditions are met for a command's step to be executed, then it is done. And also, a command's step is not executed sooner than required. For instance, a variable needs only to be declared just before first taking it in use. Perhaps variable declaration has no place in JJ Code anymore, but it is a clear example of imposed procedural order, that I like to work with now.
 
-It's a tough concept, that needs further brainstorming, but it might be an idea. Not only do you not need to explicitly control the encapsulation structure yourself. You also do not need to explicitly control the procedure order yourself. It's a hypothetical concept.
+It's a tough concept, that needs further brainstorming, but it might be an idea. Not only do you not need to explicitly control the encapsulation structure yourself. You also do not need to explicitly control the execution order yourself. It's a hypothetical concept.
 
 #### Automatic Execution Order & Concurrency
 
@@ -166,10 +166,10 @@ Here follows a bunch of brainstorm texts, made when trying to solve concurrency 
 
 Maybe there's a mathematically defined point at which you can be sure things are logically correct...  
 Maybe there a way a system can determine, what needs to be done in a single blow...  
-maybe you can mathematically determine, that two parts of a procedure are independent of each other, so could not be in each other's way.  
+maybe you can mathematically determine, that two parts of a command are independent of each other, so could not be in each other's way.  
 Perhaps not, because everything is a big method, in a way. What tells me, that something read in one part of the method, is not expected to be exactly the same half an hour later in the method?
 
-Perhaps in automatic execution order you can see which things might go parallel, and which things might go serially.Perhaps that way, multiple threads running at the same time, can be interweaved, by tying all the object relations (including relations between procedure calls) together, and figuring out which things can go simultaneous and which things might be done one by one.  
+Perhaps in automatic execution order you can see which things might go parallel, and which things might go serially.Perhaps that way, multiple threads running at the same time, can be interweaved, by tying all the object relations (including relations between command calls) together, and figuring out which things can go simultaneous and which things might be done one by one.  
 I'm not sure. I should know more about automatic execution order for that.
 
 -----
@@ -190,7 +190,7 @@ It's all just hunches for now.
 If methods are tied to the same data... a relational database doesn't know about that. It can be statements specified in a procedural programming environment, that the database is not aware of at all.  
 It just gets confronted with multiple methods that want to run when they want to run. My own system might know they can be in each other's way, because the system sees both the data and the methods, and the way they are tied together. The data is aware of the methods that influence them, the methods and the data form a single construction of things referring to one another. A single diagram in symbol. Automatic execution order may determine which things might go sequentially and which things need to go parallelly.  
 I just might list out all the different possibilities for things getting in each other's way.  
-I just think that blending the procedures and objects into a single construction just gives you an opportunity to mathematically solve the equation and automatically determine what can execute concurrently and what  can not, and for how long, or up until which point.
+I just think that blending the commands and objects into a single construction just gives you an opportunity to mathematically solve the equation and automatically determine what can execute concurrently and what  can not, and for how long, or up until which point.
 
 -----
 
@@ -224,7 +224,7 @@ Perhaps this can prevent locking and waiting, and just make a single sequence ou
 
 #### Execution Order
 
-Execution order is (part) determined by dependency: a procedure that renders a result used in another procedure is executed first.
+Execution order is (part) determined by dependency: a command that renders a result used in another command is executed first.
 
 Using the dependency rules, argument reference notation (the implicit one) suggests the following execution order:
 
@@ -256,7 +256,7 @@ argument reference is not the same as an implicit call (referencing a square mem
 
 ###### 1
 
-Als een assignment een waarde uit de ene procedure (A) Get en een waarde uit een andere procedure (B) Set, dan is de executie van B afhankelijk van de executie van A. Daardoor wordt de executievolgorde bepaald. Als het ene afhankelijk is van de executie van et andere en het andere afhankelijk van de executie van het ene, dan is er een bepaald soort circularity ontstaan waar niks mee kan. De computer kan slechts de dingen een voor een uitvoeren. De compiler kapt er gewoon mee. 
+Als een assignment een waarde uit de ene command (A) Get en een waarde uit een andere command (B) Set, dan is de executie van B afhankelijk van de executie van A. Daardoor wordt de executievolgorde bepaald. Als het ene afhankelijk is van de executie van et andere en het andere afhankelijk van de executie van het ene, dan is er een bepaald soort circularity ontstaan waar niks mee kan. De computer kan slechts de dingen een voor een uitvoeren. De compiler kapt er gewoon mee. 
 
 ###### 2
 

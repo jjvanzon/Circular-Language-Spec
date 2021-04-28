@@ -10,11 +10,11 @@ __Contents__
 
 - [Out of the original Symbol documentation](#out-of-the-original-symbol-documentation)
     - [Language Integration](#language-integration)
-    - [Real Language](#real-language)
-    - [Brainstorm](#brainstorm)
-    - [Other notations](#other-notations)
-        - [Dimensional Table notation](#dimensional-table-notation)
-        - [Tree Notation](#tree-notation)
+        - [Real Language](#real-language)
+        - [Brainstorm](#brainstorm)
+        - [Other notations](#other-notations)
+            - [Dimensional Table notation](#dimensional-table-notation)
+            - [Tree Notation](#tree-notation)
 - [Brainstorm](#brainstorm-1)
 - [Other ideas](#other-ideas)
     - [Information Language](#information-language)
@@ -91,18 +91,18 @@ How about integrating VB and C++?
 |   |   | Delegated interface | Interface determined by a line<br>(interface, type or object line) |
 |   |   | Explicit interface | Interface determined by interface line<br>(one specific interface of the type is used)<br>(limits the possible types to ones that support the interface) |
 |   |   | Generic interface | Interface determined by type line or object line<br>(type’s whole interface used)<br>(symbol adopts any interface the type might have) |
-| __Procedure Genericity__ |
+| __Command Genericity__ |
 |   | __Definition__ |
 |   |   | Original definition | Definition determined by no line<br>(no reference line) |
 |   |   | Delegated definition | Definition determined by a line<br>(a reference line) |
 |   | __Interface__ |
 |   |   | Original interface | Interface determined by no line<br>(interface nor reference line) |
 |   |   | Delegated interface | Interface determined by a line<br>(interface or reference line) |
-|   |   | Explicit interface | Interface determined by interface line<br>(limits the possible procedure to procedures with that interface) |
-|   |   | Generic interface | Interface determined by reference line<br>(symbol adopts any interface the procedure might have) |
+|   |   | Explicit interface | Interface determined by interface line<br>(limits the possible commands to commands with that interface) |
+|   |   | Generic interface | Interface determined by reference line<br>(symbol adopts any interface the command might have) |
 | __Interface Doesn’t Determine Type__ |
 |   | Interface-type genericity | The fact that the interface never fixes the type |
-|   | Interface-procedure genericity | The fact that the procedure interface never fixes the  procedure. |
+|   | Interface-command genericity | The fact that the command interface never fixes the command. |
 
 ###### Tree Notation
 

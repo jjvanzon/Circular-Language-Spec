@@ -357,9 +357,9 @@ Symbol Language embeds techniques that makes you able to integrate any other lan
 
 To demonstrate how other languages, including graphical ones, can be integrated into Symbol I might show how text code is established. 
 
-Text code is made out of a symbol by giving a reference to a symbol to a translation procedure. The translation procedure might construct a String object that contains the text code. Thus, a tranlation procedure takes a system and translates it to an object that represents the system. If you don’t translate the system to a String, but another type of object, containing shapes and lines, for instance a Shapes object, then you can establish a graphical language.
+Text code is made out of a symbol by giving a reference to a symbol to a translation command. The translation command might construct a String object that contains the text code. Thus, a translation command takes a system and translates it to an object that represents the system. If you don’t translate the system to a String, but another type of object, containing shapes and lines, for instance a Shapes object, then you can establish a graphical language.
 
-The symbol diagram language is such a translation to a graphical language... ... yes, unfortunately the diagram language introduced so far is nothing more than a utilization of Symbol. It isn’t symbol itself. A system is retained in a J Data Base. The J Data Base stores the symbols and their relations and also a few standard translation procedures, which are also systems. Some of those standard translation procedures draw out the Symbol diagram language. Another set of those standard translation procedures produce the Symbol text language.
+The symbol diagram language is such a translation to a graphical language... ... yes, unfortunately the diagram language introduced so far is nothing more than a utilization of Symbol. It isn’t symbol itself. A system is retained in a J Data Base. The J Data Base stores the symbols and their relations and also a few standard translation commands, which are also systems. Some of those standard translation commands draw out the Symbol diagram language. Another set of those standard translation commands produce the Symbol text language.
 
 -----
 

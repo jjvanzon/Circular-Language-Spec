@@ -41,7 +41,7 @@ __Contents__
     - [Overlapping Hierarchies](#overlapping-hierarchies)
         - [Containment for Divergence, Lines for Convergence](#containment-for-divergence-lines-for-convergence)
         - [Triangles for Arbitrary Groupings](#triangles-for-arbitrary-groupings)
-        - [Procedures can Overlap](#procedures-can-overlap)
+        - [Commands can Overlap](#commands-can-overlap)
         - [Another Thing](#another-thing)
     - [Integrating Structure and Symbol](#integrating-structure-and-symbol)
     - [Brainstorm](#brainstorm)
@@ -854,7 +854,7 @@ First you create a call inside another command.
 
 ![](images/3.%20Automatic%20Containment.016.png)
 
-Then you need to assign a command definition to it, to determine which command you are going to call, unless you might be defining the procedure right then and there, right inside the call. You can assign a command definition in two ways:
+Then you need to assign a command definition to it, to determine which command you are going to call, unless you might be defining the command right then and there, right inside the call. You can assign a command definition in two ways:
 
 - You point the call to an imaginary command reference somewhere or
 - you point the call to an imaginary command definition inside an object.
@@ -997,7 +997,7 @@ JJ
 < Triangles can converge types, right? Give a symbol three types? Think about that. >  
 < I might use sheer triangles for *pure* overlap establishment. >  
 < Circle structure and triangle structure as separate hierarchies. One was originally  called containment hierarchy, while the other was called the inheritance hierarchy. >  
-< Procedure and object hierarchy regarded separately... >
+< Command and object hierarchy regarded separately... >
 
 Members can be grouped by different criteria. Groups can overlap, therefore triangles can overlap. This goes against object oriented programming, because objects can’t overlap.
 
@@ -1086,11 +1086,11 @@ In the programming environment, triangles can be used to group members by criter
 
 < Perhaps I should allow non-existent triangles: triangles that aren’t object capsules. I might want the programmer to have control over them. Triangles used for the sheer purpose of creating an overlapping structure can then be made non-object, so that no double capsules need to be displayed in the overlapping parts in the overlapping notation. >
 
-##### Procedures can Overlap
+##### Commands can Overlap
 
-Procedures can overlap all the same, because they are much like objects.
+Commands can overlap all the same, because they are much like objects.
 
-< Might this add two more hierarchies? Call and procedures reference hierarchy? >
+< Might this add two more hierarchies? Call and commands reference hierarchy? >
 
 ##### Another Thing
 
@@ -1100,7 +1100,7 @@ A View Where Lines point to target objects?
 
 < Brainstorm >
 
-You might look at basics of Symbol. And the basic thing is encapsulation. The encapsulation of a Structure can be derived from the referential structure using a mutual parent rule. This in real life also determines how we feel something encapsulates another thing. You can apply this mutual parent rule to class relations and object relations. All class and object reference are expressed as splines, except the references from parent to child. Objects and procedures are there in both languages and are exchangeable. Publicity is also present in both systems. The only thing I don’t know how to express in Symbol is plurality.
+You might look at basics of Symbol. And the basic thing is encapsulation. The encapsulation of a Structure can be derived from the referential structure using a mutual parent rule. This in real life also determines how we feel something encapsulates another thing. You can apply this mutual parent rule to class relations and object relations. All class and object reference are expressed as splines, except the references from parent to child. Objects and commands are there in both languages and are exchangeable. Publicity is also present in both systems. The only thing I don’t know how to express in Symbol is plurality.
 
 Symbol always had a lack of expression in plurality. How. You’d almost want a new shape of symbol. But I’ve sort of run out of shapes. I’d go for a hexagon. It looks like a circle, but has a plurality feeling to it. If you might, you could choose for octagons.
 
@@ -1183,7 +1183,7 @@ All Object Symbols that are the same Objects have the Same Line Targets
 Symbols can Overlap  
 Containment for Divergence, Lines for Convergence  
 Triangles For Arbitrary Grouping < Non-Object Triangles >  
-Procedures can Overlap
+Commands can Overlap
 
 -----
 

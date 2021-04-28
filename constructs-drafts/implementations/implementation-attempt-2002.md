@@ -24,7 +24,7 @@ __Contents__
         - [System Specification](#system-specification-1)
 - [Optimizations](#optimizations)
     - [Boolean Algebraic](#boolean-algebraic)
-- [Symbol to Symbol: Collapse Object Structure, Reduce to Procedures](#symbol-to-symbol-collapse-object-structure-reduce-to-procedures)
+- [Symbol to Symbol: Collapse Object Structure, Reduce to Commands](#symbol-to-symbol-collapse-object-structure-reduce-to-commands)
     - [Symbol to Sigma](#symbol-to-sigma)
         - [Symbol Tables](#symbol-tables)
 - [Controls](#controls)
@@ -220,7 +220,7 @@ It just worries me that If is a boolean operator
 If x = 43 then 3
 ```
 
-### Symbol to Symbol: Collapse Object Structure, Reduce to Procedures
+### Symbol to Symbol: Collapse Object Structure, Reduce to Commands
 
 This translation can be explained without knowing the Sigma module structure. This translation is a step in translating Symbol to Sigma, but the rest of Symbol to Sigma translation can only be explained if Sigma module structure is explained.
 
@@ -379,9 +379,9 @@ Outline compiled modules can be programmed with. However, there are no names for
 
 ###### New
 
-The lowest advisable level to program J Core modules in is a Symbol document. This specifies the system structure. The procedures are also specified in symbol. The symbols in a procedure can refer to the Symbol Assembly library or can refer to other procedures inside the module or to procedures outside the module. The procedures can be displayed as a diagram, but also as a language much like Assembly language and OO Basic intermixed.
+The lowest advisable level to program J Core modules in is a Symbol document. This specifies the system structure. The commands are also specified in symbol. The symbols in a command can refer to the Symbol Assembly library or can refer to other commands inside the module or to commands outside the module. The commands can be displayed as a diagram, but also as a language much like Assembly language and OO Basic intermixed.
 
-J Code might convert the symbol document into the tables specifying the classes and interfaces and translate the procedures to Assembly code that makes J Core calls and obeys the extra set of rules that J Core sets that you might not worry about as a programmer.
+J Code might convert the symbol document into the tables specifying the classes and interfaces and translate the commands to Assembly code that makes J Core calls and obeys the extra set of rules that J Core sets that you might not worry about as a programmer.
 
 Management of segments, optimizing code for speed, etcetera, are all controlled by J Code and I don’t want programmers, including me, to have anything to do with it, because it is possible to automatically do this. I think real assembly is not worth manually programming with and should be automated.
 
@@ -521,7 +521,7 @@ Conversely in symbol when a property returns explicitly a variable, then you com
 
 Each time the text changes in Text1, the child form's text box Change event sets boolDirty to True.
 
-Not to have the setting of the variable execute all the time, you can make two procedures one of which sets the variable, the other of which doesn’t. After the variable is set, the function pointer currently pointing to the function setting the variable is changed to pointing to the function not setting the variable.
+Not to have the setting of the variable execute all the time, you can make two commands one of which sets the variable, the other of which doesn’t. After the variable is set, the function pointer currently pointing to the function setting the variable is changed to pointing to the function not setting the variable.
 
 Wow another kind of optimization
 

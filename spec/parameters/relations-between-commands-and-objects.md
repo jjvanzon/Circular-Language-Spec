@@ -31,7 +31,7 @@ There is complete exchangeability between a commandâ€™s parameter and an objectâ
 
 Commands are special objects, that just happen to be executable. That is why the concept of relations applied to commands and objects, result in the concept of parameters.
 
-You can view a system as being a flat set of procedures, that take objects as parameters. You can also view a system as being a set of objects, that have a set of commands inside of them them. Procedural and object oriented are completely interchangeable in this system.
+You can view a system as being a flat set of commands, that take objects as parameters. You can also view a system as being a set of objects, that have a set of commands inside of them them. Procedural and object oriented are completely interchangeable in this system.
 
 Multiple commands can have the same object filled in as a parameter.  
 Then the object might contain all of those commands.  
@@ -70,7 +70,7 @@ Commands are special objects, that just happen to be executable. That is why the
 
 ![](images/1.%20Relations%20Between%20Commands%20&%20Objects.004.png)
 
-You can view a system as being a flat set of procedures, that take objects as parameters.
+You can view a system as being a flat set of commands, that take objects as parameters.
 
 ![](images/1.%20Relations%20Between%20Commands%20&%20Objects.005.png)
 

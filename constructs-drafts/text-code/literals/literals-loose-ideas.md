@@ -126,4 +126,4 @@ it's more or less like you're making a simple grammar to be able to notate a fun
 
 -----
 
-The text notations become extensible by being able to turn anything into a literal: attributes, objects, procedures and concepts.
+The text notations become extensible by being able to turn anything into a literal: attributes, objects, commands and concepts.

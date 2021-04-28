@@ -98,7 +98,7 @@ Below you might find examples of *required* connectors. Not every possible conne
 
 (Out of the original Symbol documentation)
 
-Just as in procedures, you could make certain members of a type required, while others are optional. You might fill in the required members on creation of the object. This should be there for the same reason as required parameters are there in a procedure: the function of the object just doesn’t make sense unless you write the required members. The programmer is made extra aware of that by making the members required.
+Just as in commands, you could make certain members of a type required, while others are optional. You might fill in the required members on creation of the object. This should be there for the same reason as required parameters are there in a command: the function of the object just doesn’t make sense unless you write the required members. The programmer is made extra aware of that by making the members required.
 
 -----
 
@@ -134,17 +134,17 @@ The array parameter, that represents the variable amount of arguments, might not
 
 In text code, parameter assignments before a call are notated something like this:
 
-    Procedure A ( 0 , 4 )
+    Command A ( 0 , 4 )
 
-Procedure A is the procedure name, the two numbers between brackets are the two arguments. Text code is covered in detail lateron.
+Command A is the command name, the two numbers between brackets are the two arguments. Text code is covered in detail lateron.
 
-The parameters of a procedure are listed in a fixed order. Even the optional parameters have a place in this fixed list and when you don’t want to fill it in you might leave the position open:
+The parameters of a command are listed in a fixed order. Even the optional parameters have a place in this fixed list and when you don’t want to fill it in you might leave the position open:
 
-    Procedure A ( 0 , 4 ,  , 1 )
+    Command A ( 0 , 4 ,  , 1 )
 
-After the fixed parameter list, a procedure can allow a variable amount of parameters to follow. This variable amount of parameters is stored in a single special parameter. This parameter is of type Array, a type defined in the Sigma Data module. To support variable amount of arguments, the procedure might have a public Array object that is assigned to be this special parameter.
+After the fixed parameter list, a command can allow a variable amount of parameters to follow. This variable amount of parameters is stored in a single special parameter. This parameter is of type Array, a type defined in the Sigma Data module. To support variable amount of arguments, the command might have a public Array object that is assigned to be this special parameter.
 
-    Procedure A ( 0 , 4 ,  , 1 , 3 , 7 , __…__ )
+    Command A ( 0 , 4 ,  , 1 , 3 , 7 , __…__ )
 
 Variable amount of arguments is a purely textual notation. The diagram notation shows working with the Array object. However, an Array parameter needs to be tagged and in the diagram code this is simply shown by displaying the words ‘Arguments’ with the Array object.
 

@@ -46,7 +46,7 @@ __Contents__
 - [Brainstorm 2008-09-26](#brainstorm-2008-09-26)
 - [Loose Ideas](#loose-ideas)
 - [From the Original Symbol Documentation from 2004](#from-the-original-symbol-documentation-from-2004)
-    - [Procedure Parameters](#procedure-parameters)
+    - [Command Parameters](#command-parameters)
         - [Input, Output and Throughput Parameters](#input-output-and-throughput-parameters)
     - [Get and Set are Inseparable](#get-and-set-are-inseparable)
     - [Executions & Parameters](#executions--parameters)
@@ -154,7 +154,7 @@ __Reference__ parameter:
 
 Therefore it can also be called __Reference Outward, Value In__ and __Reference Outward, Value Out__ But those names are too long. The distinction between __Reference In__ and __Reference Out__ is about whether values are read or written to the object passed to the sub-command.
 
-In earlier programming languages one use of by reference was to be able to pass large objects to a procedure. Another use was to be able to let the procedure have multiple return values, because in other programming languages a procedure can really only have one return value. In Circular, multiple return values is accomplished by having multiple __Object Out__ parameters. So you do not need __Reference Out__ parameters for that purpose anymore.
+In other programming languages one use of by reference was to be able to pass large objects to a command. Another use was to be able to let the command have multiple return values, because in other programming languages a command might only have one return value. In Circular, multiple return values is accomplished by having multiple __Object Out__ parameters. So you do not need __Reference Out__ parameters for that purpose anymore.
 
 When a command call has an outward reference to an object, this *might* make the object a parameter, but this *might not* determine yet whether it is input, output or throughput. The *in* and *out* in this case refer to whether *values* are written or read to the object reference. A reference parameter is always sort of like input, though: the parent command passes the object to the sub-command, so the parent inputs something into the sub command.
 
@@ -885,27 +885,27 @@ The child can call the referenced command at will.
 
 ### From the Original Symbol Documentation from 2004
 
-#### Procedure Parameters
+#### Command Parameters
 
-Procedures can have *parameters*: instructions passed along with the procedure that make the procedure behave differently. The __Button . Set Text__ procedure, for instance, has a __Text__ parameter, which indicates what the new text of the button might be.
+Commands can have *parameters*: instructions passed along with the command that make the command behave differently. The __Button . Set Text__ command, for instance, has a __Text__ parameter, which indicates what the new text of the button might be.
 
 Text is an *idea*. It is an *object*. It is *objects* that serve as parameters.
 
 ![](images/Input%20Output%20Parameter%20Passings.059.jpeg)
 
-The procedure can do whatever it wants with the parameters passed to it. All it really can do with it is again pass the parameter to another procedure *or* call procedures of the parameter.
+The command can do whatever it wants with the parameters passed to it. All it really can do with it is again pass the parameter to another command *or* call commands of the parameter.
 
-*Pass the Text parameter on to the next procedure (Format Text):*  
+*Pass the Text parameter on to the next command (Format Text):*  
 ![](images/Input%20Output%20Parameter%20Passings.060.jpeg)
 
-*Call the a procedure of the Text parameter:*  
+*Call the a command of the Text parameter:*  
 ![](images/Input%20Output%20Parameter%20Passings.061.jpeg)
 
-The terms *parameter* and *argument* are often intermixed. For now you can assume that a parameter is a setting of a procedure and an argument is the value that it holds. That’s not the entire truth, though, but I’ll save the exact meaning for later.
+The terms *parameter* and *argument* are often intermixed. For now you can assume that a parameter is a setting of a command and an argument is the value that it holds. That’s not the entire truth, though, but I’ll save the exact meaning for later.
 
 ##### Input, Output and Throughput Parameters
 
-Parameters are commonly input (instructions) for a procedure. Parameters can also be output (returned results). They make a procedure return something to the caller. One of the output parameters can be appointed to be *the* return value, which makes it sort of like the main output parameter. Some parameters can be input, and then output again. Then the procedure uses the parameter, transforms it and gives it back in the transformed state. These parameters are called throughput parameters, or in-out parameters. There are also objects in a procedure that are only used locally. Those are not usually called parameters, but sooner called *local objects*.
+Parameters are commonly input (instructions) for a command. Parameters can also be output (returned results). They make a command return something to the caller. One of the output parameters can be appointed to be *the* return value, which makes it sort of like the main output parameter. Some parameters can be input, and then output again. Then the command uses the parameter, transforms it and gives it back in the transformed state. These parameters are called throughput parameters, or in-out parameters. There are also objects in a command that are only used locally. Those are not usually called parameters, but sooner called *local objects*.
 
 #### Get and Set are Inseparable
 
@@ -923,7 +923,7 @@ When you read a state, the state is meant to be assigned to another object. And 
 
 < 2008-10-06 Move to Input Output >
 
-The procedure output method above is hardly used ever used. That’s because you can’t really tell if the target object might keep existing, unless you’ve defined the object yourself. Therefore, using output other than state output is usually done by passing a reference to an existing object to the procedure.
+The command output method above is hardly used ever used. That’s because you can’t really tell if the target object might keep existing, unless you’ve defined the object yourself. Therefore, using output other than state output is usually done by passing a reference to an existing object to the command.
 
 This, however requires you to *write* the line of an argument.
 
@@ -957,7 +957,7 @@ The diagrammatic effect of this is the following. A member can be accessed by th
 
 ![](images/Input%20Output%20Parameter%20Passings.063.png)
 
-I said, that procedures called by a procedure can access its arguments. That suggests that the procedure that accesses the member can be somewhere else than inside the member’s diamond:
+I said, that commands called by a command can access its arguments. That suggests that the command that accesses the member can be somewhere else than inside the member’s diamond:
 
 ![](images/Input%20Output%20Parameter%20Passings.064.png)
 
@@ -1013,7 +1013,7 @@ Whenever you reference a square member, an implicit call is made.
 
 < Add some access symbols >
 
-If you want to access members of a procedure using only one call, you might explicitly notate the diamond that is the call.
+If you want to access members of a command using only one call, you might explicitly notate the diamond that is the call.
 
 ![](images/Input%20Output%20Parameter%20Passings.071.jpeg)
 
@@ -1025,9 +1025,9 @@ But as I said: child diamonds can access their parent diamond’s members if the
 
 ![](images/Input%20Output%20Parameter%20Passings.072.jpeg)
 
-######## An object symbol as a pointer to a procedure symbol: Implicit return value reference.
+######## An object symbol as a pointer to a command symbol: Implicit return value reference.
 
-You can also let an object symbol point to a procedure symbol.
+You can also let an object symbol point to a command symbol.
 
 ![](images/Input%20Output%20Parameter%20Passings.073.jpeg)
 
@@ -1055,7 +1055,7 @@ in the second picture you see the explicit call. The third picture adds the expl
 
 ######## Reference to Other Out Parameters
 
-An object reference to a procedure can only be a reference to the procedure’s return value. If you want to reference other out parameters, you might reference them explicitly.
+An object reference to a command can only be a reference to the command’s return value. If you want to reference other out parameters, you might reference them explicitly.
 
 ![](images/Input%20Output%20Parameter%20Passings.079.jpeg)
 
@@ -1216,8 +1216,8 @@ The resulting sequence of code lines corresponds to the execution order required
 
 < 2008-10-08 The texts that follow use an old notation for calls: a definition is a square without a reference line, a call is a square with a reference line. >  
 < Maybe diagrams can be more basic, expressing solely a concept >  
-< reference a procedure parameter from an object.>  
-To explain this concept I use an example where one procedure, called __Get__, returns an object that is then passed to another procedure, called __Set__. This requires two calls: first a call to __Get__ and then to __Set__.
+< reference a command parameter from an object.>  
+To explain this concept I use an example where one command, called __Get__, returns an object that is then passed to another command, called __Set__. This requires two calls: first a call to __Get__ and then to __Set__.
 
 ######### Explicit Calls
 
@@ -1253,7 +1253,7 @@ __Get . Out__ is assigned to the parameter of __Set__. You’re referencing a pa
 
 *Note that the Exit Most Borders rule determines the direction.*
 
-You can see that the __Out__ parameter of the __Get__ procedure *definition* is referenced. This implicitly causes a call to __Get__. In *explicit calls* you reference the parameters of the procedure *call*, not the procedure *definition*.
+You can see that the __Out__ parameter of the __Get__ command *definition* is referenced. This implicitly causes a call to __Get__. In *explicit calls* you reference the parameters of the command *call*, not the command *definition*.
 
 ######### Implicit Return Value Reference
 
@@ -1269,11 +1269,11 @@ __Get__’s symbolizing its return value can also be applied to diagram code:
 
 *Implicit return value reference, implicit call*
 
-The line to __Get__ is not really a line from an object to a procedure. The return value of __Get__ is implicitly referenced.
+The line to __Get__ is not really a line from an object to a command. The return value of __Get__ is implicitly referenced.
 
 The diagram above looks far simpler than the first diagram. So might the text code. In reality multiple steps are taken: • Call __Get__ • Read __Get . Out__ • Write __Set . In__, • Call __Set__.
 
-In the diagram above, the return value is implicitly referenced by pointing to the procedure definition. You can also implicitly reference the return value by pointing to a procedure call square. That way, the call is explicit, but the return value reference is implicit.
+In the diagram above, the return value is implicitly referenced by pointing to the command definition. You can also implicitly reference the return value by pointing to a command call square. That way, the call is explicit, but the return value reference is implicit.
 
 ![](images/Input%20Output%20Parameter%20Passings.106.png)
 
@@ -1291,7 +1291,7 @@ Implicit return value reference is only a way to reference the *return value*, n
 
 ########## Implicit Calls
 
-When you reference output parameters of a procedure multiple times, each reference causes its own call to be made. 
+When you reference output parameters of a command multiple times, each reference causes its own call to be made. 
 
 ![](images/Input%20Output%20Parameter%20Passings.108.png)
 
@@ -1309,10 +1309,10 @@ If you want to reference multiple output parameters of a single call, you might 
 
 ####### C
 
-######## ? Referencing a Procedure Member
+######## ? Referencing a Command Member
 
 < 2008-10-08 Most of what is said in this section no longer applies, because a more explicit notation is desired, to make things less ambiguous, and some remarks have already been thought through and work differently. >  
-Referencing a diamond’s members is like reading a procedure member.
+Referencing a diamond’s members is like reading a command member.
 
 ![](images/Input%20Output%20Parameter%20Passings.110.jpeg)
 
@@ -1320,9 +1320,9 @@ Referencing a diamond’s members is like reading a procedure member.
 
 It always happens just after the diamond executes.
 
-< The parameter objects destroy right after the call. If you use the top circle like above, every consult of the top circle might result in executing the diamond again. To persist the information contained in the argument, without having to call the procedure again, you might do a State Copy. Another way of using output parameters is to give the execution a reference to an external symbol. Anyway: if you want return information to persist after the call, it has to be stored in external symbol: store the returned state to an object that the caller contains, or pass a reference to the caller’s object to the called procedure >
+< The parameter objects destroy right after the call. If you use the top circle like above, every consult of the top circle might result in executing the diamond again. To persist the information contained in the argument, without having to call the command again, you might do a State Copy. Another way of using output parameters is to give the execution a reference to an external symbol. Anyway: if you want return information to persist after the call, it has to be stored in external symbol: store the returned state to an object that the caller contains, or pass a reference to the caller’s object to the called command >
 
-< That’s true what I just said, but there’s nothing wrong with linking directly to the parameter and executing the procedure on each consult. There’s nothing wrong with that. The link might be something like consulting a property procedure in VB, a Get, which returns a reference to an object. Every time you consult the property, the procedure is launched again. That’s normal. >
+< That’s true what I just said, but there’s nothing wrong with linking directly to the parameter and executing the command on each consult. There’s nothing wrong with that. The link might be something like consulting a property command in VB, a Get, which returns a reference to an object. Every time you consult the property, the command is launched again. That’s normal. >
 
 < Might denote that the notation above is not an output situation. It’s an implicit call situation >
 
@@ -1340,7 +1340,7 @@ Dat is verkeerd
 ####### 2
 
 *Nice wording:*  
-A reference to something inside a square causes an implicit call to the square, because the procedure is required to execute in order to reference something inside of it.
+A reference to something inside a square causes an implicit call to the square, because the command is required to execute in order to reference something inside of it.
 
 ####### 3
 
@@ -1353,7 +1353,7 @@ Implicit calls when referencing square contents (and their explicit diagram repr
 - Implicit call and Explicit call
 - Implicit return value reference
 - Out, In and Thru parameter usage
-    - Cover procedure reference too
+    - Cover command reference too
     - If example
 - Initiation of execution:
     - Containment in other diamond
@@ -1366,9 +1366,9 @@ Implicit calls when referencing square contents (and their explicit diagram repr
     - Using State as In, Out and Thru
     - Using a parameter’s line targets as Out
         - Comparison with Com regarding returning object references.
-            - Persisting object reference (harder, is hardly done anyway. Or is it? Consider passing the returned object to another procedure)
-            - Using the procedure parameter as object reference directly
-    - Procedure reference too
+            - Persisting object reference (harder, is hardly done anyway. Or is it? Consider passing the returned object to another command)
+            - Using the command parameter as object reference directly
+    - Command reference too
     - If example
 
 - Execution Order
@@ -1413,27 +1413,27 @@ If it were to become a connection between symbols, like implicit line assignment
 
 (*Implicit assignments*)
 
-De assignment calls gedragen zich niet normaal, want consult van de argumenten van __A__ veroorzaken geen executie. Een soort passieve parameter consult vind plaats door de assignment calls, in het proloog van __A__. Bedenk wel: het zijn systeem procedures: niet normaal.
+De assignment calls gedragen zich niet normaal, want consult van de argumenten van __A__ veroorzaken geen executie. Een soort passieve parameter consult vind plaats door de assignment calls, in het proloog van __A__. Bedenk wel: het zijn systeem commands: niet normaal.
 
 ![](images/Input%20Output%20Parameter%20Passings.113.jpeg)![](images/Input%20Output%20Parameter%20Passings.114.jpeg)
 
-De calls naar system procedures gedragen zich anders dan gewone calls. Ze vinden namelijk hier plaats in het proloog van de executie. Je ziet dit wèl in de text code, maar hoe zie je in diagram code of een systeem procedure apart wordt aangeroepen of in de context van een andere functie aanroep?  
-Hypothese: als je bij systeem procedure aanroep een parameter betrekt in een diepere executie, dan zit het in het proloog of epiloog. Zit de parameter in de huidige of hogere executie, of is er helemaal geen parameter bij betrokken, dan wordt de systeem procedure call normaal uitgevoerd. En veroorzaakt geen executie van de sub executor.
+De calls naar system commands gedragen zich anders dan gewone calls. Ze vinden namelijk hier plaats in het proloog van de executie. Je ziet dit wèl in de text code, maar hoe zie je in diagram code of een systeem commando apart wordt aangeroepen of in de context van een andere functie aanroep?  
+Hypothese: als je bij systeem commando aanroep een parameter betrekt in een diepere executie, dan zit het in het proloog of epiloog. Zit de parameter in de huidige of hogere executie, of is er helemaal geen parameter bij betrokken, dan wordt de systeem commando call normaal uitgevoerd. En veroorzaakt geen executie van de sub executor.
 
-Niet het een executor, anders verwar je het met een aparte executie! Een system procedure triggert geen executor:
+Niet het een executor, anders verwar je het met een aparte executie! Een system commando triggert geen executor:
 
 ![](images/Input%20Output%20Parameter%20Passings.115.jpeg)
 
-\* dit zou A triggeren als het niet een line van een system procedure call was.
+\* dit zou A triggeren als het niet een line van een system commando call was.
 
-Assignment procedures = system procedure, eerste argument is het __This__ argument.
+Assignment commands = system commands, eerste argument is het __This__ argument.
 
 ![](images/Input%20Output%20Parameter%20Passings.116.jpeg)
 
 \* 2 consults, 1 execution. 1 executor zou er eigenlijk moeten zijn om 1 keer uitgevoerd te worden per ... definitie aanroep (afgezien van jumps) (? Hoe zit het daar dan precies mee)
 
 Dus implicit call moet niet bestaan bij het referen naar diamond members. Dus dan heb je ook niet het probleem dat *assignment calls* speciaal geplaatst moeten worden in het proloog en epiloog: consult van diamond members vind *altijd* plaats in proloog of epiloog!  
-Oh jawel! Consult vind gewoonlijk altijd plaats in epiloog, maar bij assignment van argumenten consulteerd __*system procedure*__ de argument in *proloog*.
+Oh jawel! Consult vind gewoonlijk altijd plaats in epiloog, maar bij assignment van argumenten consulteerd __*system commando*__ de argument in *proloog*.
 
 ![](images/Input%20Output%20Parameter%20Passings.117.jpeg)
 
@@ -1449,9 +1449,9 @@ The last picture is an acceptable substitute for implicit state assignment. It i
 - Using State as In, Out and Thru
 - Using a parameter’s line targets as Out
     - Comparison with Com regarding returning object references.
-        - Persisting object reference (harder, is hardly done anyway. Or is it? Consider passing the returned object to another procedure)
-        - Using the procedure parameter as object reference directly
-- Procedure reference too
+        - Persisting object reference (harder, is hardly done anyway. Or is it? Consider passing the returned object to another command)
+        - Using the command parameter as object reference directly
+- Command reference too
 - If example
 
 ##### Brainstorm

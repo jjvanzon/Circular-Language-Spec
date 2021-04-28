@@ -94,7 +94,7 @@ It might be worth highlighting there may be different interpretations of pointer
     - The notational choice might be arbitrary and carry no special meaning.
 - Interpretation 3:
     - Directions tend to point outwards, if inward, this might be denoted with an access symbol, like previously.
-    - Inward directions might actually be more 'active' redirections/accesses: Pointer-to-pointer redirections, getter accesses, calls to procedures returning an object, etc.
+    - Inward directions might actually be more 'active' redirections/accesses: Pointer-to-pointer redirections, getter accesses, calls to commands returning an object, etc.
     - Outward directions, might be more passive. They might represent 'simple' pointers, not represent getter calls or anything, more like indications of aspect correspondence.
 - Interpretation 4:
     - All symbols might be pointers, kind of like in some languages objects might be accessed through singly-redirected object references (C# assumably).
@@ -652,7 +652,7 @@ If an object symbol has an object line to a symbol that again has an object line
 
 `The*` target object symbol is regarded to represent `the*` object for real. `The*` other symbols are references to `the*` object.
 
-`The*` same way there are symbols serving as a *target type* or a *target interface*. Also a procedure has an interface target. A procedure also has a call target and reference target. In both those cases reference lines are followed.
+`The*` same way there are symbols serving as a *target type* or a *target interface*. Also a command has an interface target. A command also has a call target and reference target. In both those cases reference lines are followed.
 
 #### Loose Ideas about Target Classes
 

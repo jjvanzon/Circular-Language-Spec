@@ -26,7 +26,7 @@ Aan het eind van deze programmeerrit zul ik me kunnen verdiepen in alle andere p
 
 UML also provides in the practical points of views demanded when implementing a ICT system in real life business. A deployment diagram, for instance, is relevant for system engineering to be able to prepare the machines for use, take care of the neccesary lines, user rights & privileges, and be able to see the costs of physical equipment, and demand put on subscriber lines, for instance. So it is not just about making a single computer language, that programmers work with. The deployment diagram may be an arbitrary view on the system to a programmer. Symbol may not be fit for it.
 
-However, in programming in Symbol is might be wise for any object that might occur in the UML diagrams, to have a place as an object in Symbol. This might include tools, users, components, computers, communication lines, and USE CASES. Use cases in my current ideas are not defined as objects or procedures in the system at all. Being able to let Symbol provide what UML provides, it is also important to specify which elements of the system are relevant for what users / in what (UML) diagrams.
+However, in programming in Symbol is might be wise for any object that might occur in the UML diagrams, to have a place as an object in Symbol. This might include tools, users, components, computers, communication lines, and USE CASES. Use cases in my current ideas are not defined as objects or commands in the system at all. Being able to let Symbol provide what UML provides, it is also important to specify which elements of the system are relevant for what users / in what (UML) diagrams.
 
 -----
 

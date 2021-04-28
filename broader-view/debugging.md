@@ -16,7 +16,7 @@ A programmer needs to be able to have shortcuts for things frequently typed.
 
 -----
 
-Het zou mooi zijn als je de procedureverloop van een runnend programma (al dan niet gedeeltelijk) gewoon kan volgen en debuggen.
+Het zou mooi zijn als je het procedureverloop van een runnend programma (al dan niet gedeeltelijk) gewoon kan volgen en debuggen.
 
 -----
 
@@ -28,4 +28,4 @@ Direct code voorbeelden en help onder transparent popup bij member.
 
 -----
 
-Stepping through a procedure without seeing that you enter a whole tree out of procedures, should be a standard stepping mode.
+Stepping through a command without seeing that you enter a whole tree out of commands, should be a standard stepping mode.

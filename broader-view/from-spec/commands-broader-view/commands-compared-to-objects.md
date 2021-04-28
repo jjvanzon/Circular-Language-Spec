@@ -74,13 +74,13 @@ Executions might also be placed in a list. `You` might run `each` item in `the` 
 
 In some programming languages, commands might not be exchangeable with objects, but be totally separate constructs. But in Circular, commands could be seen as objects, that just happen to be executable.
 
-Using some programming languages a process might be implemented as a procedure. Sometimes a procedure might become more complex. It might be an option to then rewrite a procedure to an object, whose purpose could be to execute that procedure. This object may then hide complexity of the input and output better, and might better hides the complexity of the procedure itself. An object in some programming languages might offer a way to split up a procedure into separate steps, without seeing that on the outside. Turning a procedure into an object may make linking to it more flexible. For instance you might plug a new process into an already existing system, that was not aware of this procedure. That might not be easily possible, unless you turn a procedure into an object.
+Using some programming languages, a process might be implemented as a command or *method*. Sometimes a command might become more complex. It might be an option to then rewrite a command to an object, whose purpose could be to execute that command. This object may then hide complexity of the input and output better, and might better hides the complexity of the command itself. An object in some programming languages might offer a way to split up a command into separate steps, without seeing that on the outside. Turning a command into an object may make linking to it more flexible. For instance you might plug a new process into an already existing system, that was not aware of this command. That might not be easily possible, unless you turn a command into an object.
 
-In Circular though, procedures might be considered an object as is, without rewriting anything. The only difference might be that this object has the special property, that it might be *executable*.
+In Circular though, commands might be considered an object as is, without rewriting anything. The only difference might be that this object has the special property, that it might be *executable*.
 
-In the Circular notation, a command could have complexity hiding and linking possibilities, just like a 'normal' object. A command might for instance also *inherit* a base procedure from another command, just to name something.
+In the Circular notation, a command could have complexity hiding and linking possibilities, just like a 'normal' object. A command might for instance also *inherit* a base command from another command, just to name something.
 
-A command could be structured similarly as an object. Perhaps that takes away the argument that using just procedures might be a less structured way of programming than using objects. A command might already be an object, that represents a process. It may looks like a command, but might have the capabilities of an object.
+A command could be structured similarly as an object. Perhaps that takes away the argument that using just commands might be a less structured way of programming than using objects. A command might already be an object, that represents a process. It may looks like a command, but might have the capabilities of an object.
 
 In that philosophy, commands might be *executable objects*.
 

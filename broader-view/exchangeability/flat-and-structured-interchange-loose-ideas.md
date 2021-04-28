@@ -8,7 +8,6 @@ Flat & Structured Interchange Loose Ideas
 
 __Contents__
 
-- [Contents](#contents)
 - [Introduction](#introduction)
 - [Automatic Containment](#automatic-containment)
 - [Methods & Classes Loosely Coupled](#methods--classes-loosely-coupled)
@@ -63,7 +62,7 @@ Ik had het vanmiddag met iemand over het probleem dat bijvoorbeeld neurale netwe
 -----
 
 Creator:  
-Ook de procedure structuur kan van referentiele structuur naar encapsulatief worden omgezet. Je kunt dan ook bepaalde lagen onderscheiden in de procedures binnen 1 class.
+Ook de commando structuur kan van referentiele structuur naar encapsulatief worden omgezet. Je kunt dan ook bepaalde lagen onderscheiden in de commando's binnen 1 class.
 
 -----
 

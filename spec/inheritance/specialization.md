@@ -278,7 +278,7 @@ Shadowing a system command can only be displayed by opening up the system interf
 
 #### System Command Extension By Shadowing
 
-You can accomplish command extension by employing the shadowing concept. The idea is that you shadow the base command, executing your own procedure and call the base command from your own procedure.
+You can accomplish command extension by employing the shadowing concept. The idea is that you shadow the base command, executing your own command and call the base command from your own command.
 
 ![](images/2.%20Specialization.035.png)
 
@@ -290,7 +290,7 @@ A benefit of system command extension by shadowing compared to normal system com
 
 #### System Commands Extension By Overriding (Questionable)
 
-This is a technique that might not work. The idea is that you accomplish command extension by employing the overriding concept. The idea is that you override the base command, executing your own procedure and call the base command from your own procedure.
+This is a technique that might not work. The idea is that you accomplish command extension by employing the overriding concept. The idea is that you override the base command, executing your own command and call the base command from your own command.
 
 ![](images/2.%20Specialization.036.png)
 

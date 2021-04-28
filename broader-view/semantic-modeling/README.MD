@@ -30,7 +30,7 @@ May be about how Circular language might be used to express or model meaning fro
 
 - ### [Multiple Language Layers](multiple-language-layers.md)
 
-    - Multiple language layers may be the idea that programming language could be built up of layers, first starting perhaps with *arithmetic* algebra and numbers (`+ - * /`). Arithmetic expressions may be input of *comparative* algebra (`< > =`). Then building up to *logical* operations (`and` / `or` / `not`). Then may follow *execution flow* (`if` / `else` / `then`). Constructs consisting of all of those operations may be organized into *procedures*. Those may be grouped into *objects*. Objects may have *relations* with each other. And what layer follows above that? *Aspects?* *Generated* code? From this idea might once follow a nice story. The document may just contain some loose ideas for now.
+    - Multiple language layers may be the idea that programming language could be built up of layers, first starting perhaps with *arithmetic* algebra and numbers (`+ - * /`). Arithmetic expressions may be input of *comparative* algebra (`< > =`). Then building up to *logical* operations (`and` / `or` / `not`). Then may follow *execution flow* (`if` / `else` / `then`). Constructs consisting of all of those operations may be organized into *commands*. Those may be grouped into *objects*. Objects may have *relations* with each other. And what layer follows above that? *Aspects?* *Generated* code? From this idea might once follow a nice story. The document may just contain some loose ideas for now.
     
 - ### [Text Classing](text-classing.md)
 

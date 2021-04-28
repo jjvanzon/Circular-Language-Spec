@@ -40,7 +40,7 @@ There is another basic access controller in addition to __Accessible__ and __Ina
 
 *Protected (By the way: it’s not an arrow.)*
 
-When a procedure is __Protected__, it means that it’s inaccessible if contained in a circle, but accessible if contained in a triangle. 
+When a command is __Protected__, it means that it’s inaccessible if contained in a circle, but accessible if contained in a triangle. 
 
 | ![](images/4.%20Black%20Boxes%20Unfinished.002.png) | __≈__ | ![](images/4.%20Black%20Boxes%20Unfinished.003.png) |
 |----------------------------------------------------:|:-----:|:----------------------------------------------------|
@@ -99,13 +99,13 @@ JJ
 -----
 
 <  
-I might note the application of the Visual Basic __Friend__ access modifier. The basic access controller __Friend__ isn’t required (__Public Friend__ and __Protected Friend__). __Friend__ Basic Access Controller means that you make a procedure’s own module a __Friend__ module.
+I might note the application of the Visual Basic __Friend__ access modifier. The basic access controller __Friend__ isn’t required (__Public Friend__ and __Protected Friend__). __Friend__ Basic Access Controller means that you make a command’s own module a __Friend__ module.
 
 Yes, but for the effect of the Visual Basic __Friend__ access modifier you also need to deprive global members from being accessed outside the module. And that is done with module level restriction.
 
-So the effect of the Visual Basic __Friend__ access controller is replaced by • making the module a friend of the procedure and level restricting global procedures.
+So the effect of the Visual Basic __Friend__ access controller is replaced by • making the module a friend of the command and level restricting global commands.
 
-NO! It’s just making it __Module Up 1__! Nothing else! Do not use a __Friend__ Module for specific procedures!
+NO! It’s just making it __Module Up 1__! Nothing else! Do not use a __Friend__ Module for specific commands!
 />
 
 -----
@@ -116,7 +116,7 @@ Means access only anywhere within the module, but not inside embedded modules.
 
 -----
 
-A procedure can contain variable objects. The public ones are parameters. The friend ones are parameters within the current module.
+A command can contain variable objects. The public ones are parameters. The friend ones are parameters within the current module.
 
 -----
 
@@ -173,14 +173,14 @@ Access modifiers in Modules:
 - Global Private
 - Global Public
 
-To understand what happens when procedures inside modules are given access controllers you need to view the module as an object, that is referenced from any of its ancestor objects:
+To understand what happens when commands inside modules are given access controllers you need to view the module as an object, that is referenced from any of its ancestor objects:
 
 | ![](images/4.%20Black%20Boxes%20Unfinished.010.png) | ≈ | ![](images/4.%20Black%20Boxes%20Unfinished.011.png) |
 |-----------------------------------------------------|---|-----------------------------------------------------|
 
-If a global procedure is __Inaccessible__, it’s just not accessible at all (*‘outcommented’*), so not really global either. If a global procedure is Private, it’s not really global either, only accessible by the module object itself, just like something private of a circle object. If a global procedure is Public, then it *is* global. It is then accessible from any ancestor within the module. 
+If a global command is __Inaccessible__, it’s just not accessible at all (*‘outcommented’*), so not really global either. If a global command is Private, it’s not really global either, only accessible by the module object itself, just like something private of a circle object. If a global command is Public, then it *is* global. It is then accessible from any ancestor within the module. 
 
-When a global procedure is Public it is however also accessible *outside* the module, as a public procedure of the module object. For a procedure to be global inside the module, but not accessible outside the module you use module level limitation: __Public Module Up 1__.
+When a global command is Public it is however also accessible *outside* the module, as a public command of the module object. For a command to be global inside the module, but not accessible outside the module you use module level limitation: __Public Module Up 1__.
 
 -----
 
@@ -188,7 +188,7 @@ When a global procedure is Public it is however also accessible *outside* the mo
 
 -----
 
-- It is not a permitted to make a global procedure __Protected__. A pentagon is not exchangeable with a triangle, so __Global Protected__ wouldn’t have much meaning.
+- It is not a permitted to make a global command __Protected__. A pentagon is not exchangeable with a triangle, so __Global Protected__ wouldn’t have much meaning.
     - \> 2009-06-29 That, by the way, is not true anymore. You can reference a module triangularly if you want.
 
 -----

@@ -136,7 +136,7 @@ So when __Object Get__ is __Public__, you can reference the sub-object.
 When __Value Set__ is __Public__, you can assign a value to the object.  
 When __Value Set__ is __Private__, you can not assign a value to the object except through Friend objects.
 
-Only *system procedures* get access controllers. Objects do not get access controllers directly. Access to an *object* is controlled by access controlling the __Object Get__ procedure.
+Only *system commands* get access controllers. Objects do not get access controllers directly. Access to an *object* is controlled by access controlling the __Object Get__ command.
 
 There is not just one kind of __Private__ or __Public__. There is a separate __Private__ and __Public__ for every __Get__ and __Set__ of every system aspect.
 
@@ -382,7 +382,7 @@ Objects take over the access control properties of their class.
 ... is objects taking over friend relations from classes as straightforward as you’d think?
 
 When it is classes, the friendship counts for all the objects derived from that class.  
-Usually, access to procedures is controlled in a *class* and each of its objects adopts those same access settings.
+Usually, access to commands is controlled in a *class* and each of its objects adopts those same access settings.
 
 ### Public & Friend Connections
 

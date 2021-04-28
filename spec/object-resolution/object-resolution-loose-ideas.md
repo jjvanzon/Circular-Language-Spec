@@ -10,7 +10,7 @@ __Contents__
 
 - [Inheritance en Overloading (overloaded default properties)](#inheritance-en-overloading-overloaded-default-properties)
 - [From the Original Symbol Documentation](#from-the-original-symbol-documentation)
-    - [Procedure Resolution](#procedure-resolution)
+    - [Command Resolution](#command-resolution)
         - [Overriding](#overriding)
         - [Exclusion](#exclusion)
         - [Overloading](#overloading)
@@ -54,9 +54,9 @@ JJ
 
 ### From the Original Symbol Documentation
 
-#### Procedure Resolution
+#### Command Resolution
 
-The following methods let a parent mess with the procedures of a child:
+The following methods let a parent mess with the commands of a child:
 
 - Overriding
 - Exclusion
@@ -64,47 +64,47 @@ The following methods let a parent mess with the procedures of a child:
 - Shadowing
 - Merging
 
-Overloading, shadowing and merging are about which procedure to call if several procedures have the same name. In text code you couldn’t easily see which procedure of the bunch is called. In diagram code it is always clearly visible which procedure you’re calling, but if they have the same name, then in text code it is less easy to see. Overloading, shadowing and merging work with this phenomenon.
+Overloading, shadowing and merging are about which command to call if several commands have the same name. In text code you couldn’t easily see which command of the bunch is called. In diagram code it is always clearly visible which command you’re calling, but if they have the same name, then in text code it is less easy to see. Overloading, shadowing and merging work with this phenomenon.
 
 Overriding and exclusion are techniques equally useful in both diagram code and text code. The others: overloading, merging and shadowing, are mostly useful in text code.
 
 ##### Overriding
 
-Overriding means that a parent can replace a procedure of its child by another. A child decides whether a procedure of his is overridable or not.
+Overriding means that a parent can replace a command of its child by another. A child decides whether a command of his is overridable or not.
 
 ![](images/0.%20Object%20Resolution%20Introduction.001.png)
 
-This is a type with an overridable procedure B, called by the child. The access symbol on the right means that the Procedure Reference Set is public. Therefore you can make B redirect to a procedure that the parent defines.
+This is a type with an overridable command B, called by the child. The access symbol on the right means that the Command Reference Set is public. Therefore you can make B redirect to a command that the parent defines.
 
 ![](images/0.%20Object%20Resolution%20Introduction.002.png)
 
-The parent overrode the overridable procedure B. A call to B might resolve to a call to C instead. You can see that overriding means that the parent gives a child’s procedure a reference line to one of its own procedures.
+The parent overrode the overridable command B. A call to B might resolve to a call to C instead. You can see that overriding means that the parent gives a child’s command a reference line to one of its own commands.
 
-In the replacement procedure, you can still call the base procedure. That way you can both override procedures of the child or extend them.
+In the replacement command, you can still call the base command. That way you can both override commands of the child or extend them.
 
 ![](images/0.%20Object%20Resolution%20Introduction.002.png)
 
-Overridden procedures are called by the child and that way they’re a means for a child to call a procedure of the parent.
+Overridden commands are called by the child and that way they’re a means for a child to call a command of the parent.
 
-An overridable procedure that is only for communication to the parent is left empty by the child and is only filled in by the parent. This kind of overridable procedure is therefore also called a virtual procedure of the child.
+An overridable command that is only for communication to the parent is left empty by the child and is only filled in by the parent. This kind of overridable command is therefore also called a virtual command of the child.
 
 ##### Exclusion
 
-Exclusion is already covered extensively, but it can also be regarded a procedure resolution technique. A parent can exclude members from a published object or base object.
+Exclusion is already covered extensively, but it can also be regarded a command resolution technique. A parent can exclude members from a published object or base object.
 
 ##### Overloading
 
 < Overloaded objects>
 
-< A procedure can also have multiple interfaces by using triangle symbols. This enables the possibility to have multiple parameter configurations for the same procedure. >
+< A command can also have multiple interfaces by using triangle symbols. This enables the possibility to have multiple parameter configurations for the same command. >
 
 < This is an example of how text code can affect the behavior of the diagram. Call line automatically changes when parameters of different types are assigned. Oh no, after compilation the text identifiers might not exist anymore. Then it’s gotta become a deep system aspect the overloading, independent of text code. Text code and diagram code might simply be affected by the overloading concept. It should be like this, because of reasons discussed in the language integration chapter. >
 
-Overloading means that you give several procedures the same name, while they have a different interface. This is handy if you wish to make different variations of similar functionality.
+Overloading means that you give several commands the same name, while they have a different interface. This is handy if you wish to make different variations of similar functionality.
 
-The operator procedure + for instance is richly overloaded. Operator + always has two parameters: the two operands. The two operands can be of many different types and each type configuration requires a separate procedure. Which procedure is called is determined by the types of objects assigned to the parameters.
+The operator command + for instance is richly overloaded. Operator + always has two parameters: the two operands. The two operands can be of many different types and each type configuration requires a separate command. Which command is called is determined by the types of objects assigned to the parameters.
 
-In diagram code you may see the difference between a call to one procedure or the other. In text code, however, as well as in certain abstract views on the diagram the effect is more subtle and you won’t see the difference between a call to one procedure or the other. This is actually a nice, and wanted effect.
+In diagram code you may see the difference between a call to one command or the other. In text code, however, as well as in certain abstract views on the diagram the effect is more subtle and you won’t see the difference between a call to one command or the other. This is actually a nice, and wanted effect.
 
 Given is the text code below:
 
@@ -113,38 +113,38 @@ Object Type 1
     Integer X
     Double Y
     Float Z
-    Procedure Procedure 1
+    Command Command 1
         X + Y
         X + Z
-    End Procedure
+    End Command
 End Object
 ```
 
-The following might be the diagram code without mentioning the types of objects nor procedure calls:
+The following might be the diagram code without mentioning the types of objects nor command calls:
 
 ![](images/0.%20Object%20Resolution%20Introduction.003.png)
 
-The outer circle is Type 1. It declares the three basic object X, Y and Z. It also contains the procedure Procedure 1, in which are performed two plus operations to which references to the basic objects are passed.
+The outer circle is Type 1. It declares the three basic object X, Y and Z. It also contains the command Command 1, in which are performed two plus operations to which references to the basic objects are passed.
 
-However, when you do mention the types of objects and procedure calls, you see that two different procedures are called.
+However, when you do mention the types of objects and command calls, you see that two different commands are called.
 
 ![](images/0.%20Object%20Resolution%20Introduction.004.png)
 
-When you display the called procedures the subtlety is gone, but in this abstraction of the diagram you’ve simply *chosen* to see the difference:
+When you display the called commands the subtlety is gone, but in this abstraction of the diagram you’ve simply *chosen* to see the difference:
 
 ![](images/0.%20Object%20Resolution%20Introduction.005.png)
 
 All three diagrams above describe the same code, only in one diagram some parts are left out and some are visible while in another diagram other things are left out or visible. Abstract Symbol is covered in detail in another chapter < >.
 
-The + procedure has a special notation: an operator notation, which is a customized representation of a procedure call and its parameters. This method is discussed in the ‘Text Code’ and ‘Language Integration’ chapters.
+The + command has a special notation: an operator notation, which is a customized representation of a command call and its parameters. This method is discussed in the ‘Text Code’ and ‘Language Integration’ chapters.
 
-The names of procedures that overload each other are always equal. The configuration of a procedure’s public objects determines which procedure is called. This configuration of public object includes: the object count, object types and object names.
+The names of commands that overload each other are always equal. The configuration of a command’s public objects determines which command is called. This configuration of public object includes: the object count, object types and object names.
 
-Usually the count and types of parameters are varied, but if two overloaded procedures only differ in parameter *names*, in text code it is required to *name* the object when you call the procedure.
+Usually the count and types of parameters are varied, but if two overloaded commands only differ in parameter *names*, in text code it is required to *name* the object when you call the command.
 
-< Picture: text code and diagram code with overloaded procedures that only differ in parameter names. >
+< Picture: text code and diagram code with overloaded commands that only differ in parameter names. >
 
-When you change a parameter to an object of a different type, then the call line of the call might automatically point to another procedure.
+When you change a parameter to an object of a different type, then the call line of the call might automatically point to another command.
 
 < I need pictures with that. >
 
@@ -180,31 +180,31 @@ I.A
 
 I.A is inaccessible outside the parent, for the parent has chosen to shadow it.
 
-A member is automatically shadowed if the parent of a triangle defines a procedure with exactly the same characteristics as the triangle’s procedure. The parent can freely shadow any member of the child.
+A member is automatically shadowed if the parent of a triangle defines a command with exactly the same characteristics as the triangle’s command. The parent can freely shadow any member of the child.
 
 ##### Merging
 
-When a procedure has the same name and configuration of public members then in text code there is no way to distinguish calls to either procedure. What happens automatically is that the *‘nearest’* member *shadows* the member *further* away.
+When a command has the same name and configuration of public members then in text code there is no way to distinguish calls to either command. What happens automatically is that the *‘nearest’* member *shadows* the member *further* away.
 
 ![](images/0.%20Object%20Resolution%20Introduction.011.png)
 
-A second option when you can’t distinct a call to one procedure from a call to the other is simply for *both* procedures to be called. This is called merging the two procedures and in that case the call might resolve in calling *both* procedures. If you want to address a specific procedure, you could qualify the call with the name of the container of the procedure, if that might make a difference. In diagram code you can see the two procedures as separate squares and you *can* see the difference between a call to procedure A and a call to procedure B.
+A second option when you can’t distinct a call to one command from a call to the other is simply for *both* commands to be called. This is called merging the two commands and in that case the call might resolve in calling *both* commands. If you want to address a specific command, you could qualify the call with the name of the container of the command, if that might make a difference. In diagram code you can see the two commands as separate squares and you *can* see the difference between a call to command A and a call to command B.
 
-< Picture 27: of text code call to merged procedure with next to it the diagram code >
+< Picture 27: of text code call to merged command with next to it the diagram code >
 
-< Picture 28: of text code with qualifications that call a specific procedure >
+< Picture 28: of text code with qualifications that call a specific command >
 
 Merging is handy for instance when a symbol contains two interface implementations and each interface implementation contains a member with the same name and public members.
 
 < Picture of that >
 
-When the merging procedures reside in *exactly the same container*, they can not be separately called. They are always simultaneously called. In diagram code you might be able to express a call to a specific procedure, but it is forbidden to make such a call, because this might be impossible to express in text code.
+When the merging commands reside in *exactly the same container*, they can not be separately called. They are always simultaneously called. In diagram code you might be able to express a call to a specific command, but it is forbidden to make such a call, because this might be impossible to express in text code.
 
 < Picture of that (29): the legal situation and a picture with a red cross through it showing a forbidden way of calling and showing that the call might look the same in text code >
 
 That ensures that diagram code and text code are exchangeable and can be mutually used.
 
-< Merging should be a technique, not embedded in the language. When it’s about calling both procedures of the triangles, you might shadow those procedures with a procedure that calls both. >
+< Merging should be a technique, not embedded in the language. When it’s about calling both commands of the triangles, you might shadow those commands with a command that calls both. >
 
 ### Other Ideas
 

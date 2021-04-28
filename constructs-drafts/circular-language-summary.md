@@ -39,14 +39,14 @@ This summary, though, doesn’t organize Symbol in the order of explaining it an
 
 - Identifiers
 - Objects
-- Procedures
+- Commands
 - Access
 -----
 - Generic Code
 
 ##### More Detailed
 
-< Overloading can only be part of procedures if you either cannot overload an object or you call a procedure to return an object... >
+< Overloading can only be part of commands if you either cannot overload an object or you call a command to return an object... >
 
 - Identifiers
 -----
@@ -73,9 +73,9 @@ This summary, though, doesn’t organize Symbol in the order of explaining it an
 - Blocks...
 - Lifetime
 -----
-- Procedures
-    - Procedures
-    - Procedure Reference
+- Commands
+    - Commands
+    - Command Reference
         - Pointing
         - Calling
     - Operation Flow
@@ -89,7 +89,7 @@ This summary, though, doesn’t organize Symbol in the order of explaining it an
         - Variable Amount
         - Return Type
     - Operators
-        - Operators *are* procedures. They are assigned a special notation.
+        - Operators *are* commands. They are assigned a special notation.
         - Evaluation order, parenthesis, Precedence
         - Conversion operators
     - Object Extension
@@ -149,7 +149,7 @@ This summary, though, doesn’t organize Symbol in the order of explaining it an
         - Access object
         - Access interface
         - Access type
-        - System procedure arguments
+        - System command arguments
         - Genitivity
     -----
     - Generic and Explicit

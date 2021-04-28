@@ -208,7 +208,7 @@ Which is, by the way, not used a lot.
 
 #### Peels for Other Symbols.
 
-The peel notation above works the same for triangle symbols. It also works for procedure symbols, except that procedure symbols have a different set of line types, so a different set of peel types: reference peels and interface peels.
+The peel notation above works the same for triangle symbols. It also works for command symbols, except that command symbols have a different set of line types, so a different set of peel types: reference peels and interface peels.
 
 #### Abstract Meaning
 
@@ -238,11 +238,11 @@ With a simple alternative shape border you can express that a symbol has a line 
 |      *Double solid object symbol:*       |     *Dashed object symbol:*      |        *Dotted object symbol:*          |
 |   *object symbol with an object line*    | *object symbol with a type line* | *object symbol with an interface line*  |
 
-|                                                |                                                |
-|:----------------------------------------------:|:----------------------------------------------:|
+|                                        |                                         |
+|:--------------------------------------:|:---------------------------------------:|
 | ![](images/98.%20Peels%20(a%20rejected%20concept).031.png) | ![](images/98.%20Peels%20(a%20rejected%20concept).032.png) |
-|        *Double procedure symbol:*        |        *Dotted procedure symbol:*         |
-| *procedure symbol with a reference line* | *procedure symbol with an interface line* |
+|        *Double command symbol:*        |        *Dotted command symbol:*         |
+| *command symbol with a reference line* | *command symbol with an interface line* |
 
 The solid border needs to be doubled, because otherwise you don’t see that information about the line is expressed. When you denote that a symbol has both an object line as well as a type line, you can use a single solid peel, because then it’s clear that you’re expressing line information. 
 
@@ -264,8 +264,8 @@ To denote that many borders are crossed, usually three peels are used. So three 
 |                                |                                |
 |:------------------------------:|:------------------------------:|
 | ![](images/98.%20Peels%20(a%20rejected%20concept).037.png) | ![](images/98.%20Peels%20(a%20rejected%20concept).038.png) |
-|         Triple square:         |       Triple dotted square:    |
-|    procedure symbol with a     |     procedure symbol with a    |
+|         Triple square:         |      Triple dotted square:     |
+|     command symbol with a      |      command symbol with a     |
 | far away reference line target | far away interface line target |
 
 ##### Other Abstract Meanings
@@ -383,16 +383,16 @@ Ambiguity risks might be widely covered in the ‘Diagram Metrics’ in the book
     -----
     - Double solid line square:
         - It is a call
-        - It’s a call to a procedure in the parent
+        - It’s a call to a command in the parent
     - Triple solid line square:
-        - It’s a call to a procedure in the grandparent
+        - It’s a call to a command in the grandparent
     - Etcetera
     -----
     - Dashed square:
-        - It’s a procedure reference
-        - It’s a procedure reference to a procedure in the parent
+        - It’s a command reference
+        - It’s a command reference to a command in the parent
     - Double dashed square:
-        - It’s a procedure reference to a procedure in the grandparent
+        - It’s a command reference to a command in the grandparent
     - Etcetera
 -----
 - Double lines:

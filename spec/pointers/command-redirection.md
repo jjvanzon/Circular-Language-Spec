@@ -26,7 +26,7 @@ __Contents__
 - [Loose Ideas about Command Redirection](#loose-ideas-about-command-redirection)
     - [Ideas (about Target Command Object)](#ideas-about-target-command-object)
         - [Execution Trace](#execution-trace)
-        - [Tracing Procedure Aspects](#tracing-procedure-aspects)
+        - [Tracing Command Aspects](#tracing-command-aspects)
             - [Redirecting to an Execution](#redirecting-to-an-execution)
     - [Ideas (about Target Command Definition)](#ideas-about-target-command-definition)
         - [Definition Trace](#definition-trace)
@@ -245,15 +245,15 @@ What you do is that you follow reference lines until you encounter a symbol with
 
 Tracing the execution target only seems to be relevant when the source symbol is a diamond. It usually is. Usually you’ll only do this trace for a diamond. However, the target execution is also relevant for a square, because if a square’s redirection has a diamond in it, any call to the square is a call to the same execution.
 
-##### Tracing Procedure Aspects
+##### Tracing Command Aspects
 
-Even though there are only *two* line types for procedure symbols, there are *three* aspects of a procedure symbol to trace:
+Even though there are only *two* line types for command symbols, there are *three* aspects of a command symbol to trace:
 
 - Execution
 - Definition
 - Interface
 
-A definition is a lot like the type of the procedure, while an execution is an instance of the procedure.
+A definition is a lot like the type of the command, while an execution is an instance of the command.
 
 ###### Redirecting to an Execution
 

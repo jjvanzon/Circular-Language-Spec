@@ -24,4 +24,4 @@ It is really not that much of a problem. Just *some* commands need to be present
 
 ### Obsolete Members: Initialize Item & Terminate Item
 
-In experiment 2.0, a related list also had the extension procedures __Initialize Item__ and __Terminate Item__. In experiment 3.0, __Initialize Item__ might be replaced by __Add  .  Post-Extend__ and __Terminate Item__ is replaced by __Remove  .  Pre-Extend__.
+In experiment 2.0, a related list also had the extension commands __Initialize Item__ and __Terminate Item__. In experiment 3.0, __Initialize Item__ might be replaced by __Add  .  Post-Extend__ and __Terminate Item__ is replaced by __Remove  .  Pre-Extend__.

@@ -45,14 +45,14 @@ Each form is explained in a separate article. See the articles *Exit Loop in a D
 
 The __Continue__ statement is a loop-related jump. It is a jump that is only performed inside a loop.
 
-__Continue__ skips the remainder of the loop procedure and immediately moves on to the next repetition of a loop.
+__Continue__ skips the remainder of the loop command and immediately moves on to the next repetition of a loop.
 
-A loop procedure is implemented as a reference to a command, passed as an argument to an execution flow command. So __Continue__ means no more, than to exit the command that is looped, so it is a synonym for __Exit Command__, but then used inside a loop.  
+A loop command is implemented as a reference to a command, passed as an argument to an execution flow command. So __Continue__ means no more, than to exit the command that is looped, so it is a synonym for __Exit Command__, but then used inside a loop.  
 It might remove the command that is exited from the call stack, and immediately jumps to the command referred to by the __Command End__, that was passed to it.
 
 #### Diagram
 
-As explained in the article *Continue*, the __Continue__ command means no more than to exit the procedure that is looped.
+As explained in the article *Continue*, the __Continue__ command means no more than to exit the command that is looped.
 
 So in the expression in a diagram, you see a loop, that has the command to loop associated to it. A continue statement looks the same as to exit a command:
 

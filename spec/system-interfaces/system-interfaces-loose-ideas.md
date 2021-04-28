@@ -56,7 +56,7 @@ Another group of aspects is the *target aspects*. The target aspects of an *obje
 - __Target Type__
 - __Target Interface__
 
-And those of a *procedure symbol* are:
+And those of a *command symbol* are:
 
 - __Target Definition__
 - __Target Execution__
@@ -101,8 +101,8 @@ What happened to commands like Target Object Get?
     - Use as Object
     - Use as Type
     - Use as Interface
-- Use as Procedure
-- Use as Procedure Interface
+- Use as Command
+- Use as Command Interface
 
 -----
 
@@ -144,11 +144,11 @@ Every system aspect supports a different collection of get purposes. For instanc
 
 When the main purpose of a Get is mentioned, the word ‘Get’ is often left out. You can simply speak of for instance Object Copy or Type Redirection. 
 
-The reason that this separation between get purposes is made is not that there are three different get procedures. The get procedure of all three purposes is the same procedure so that they return consistently the same value for all three purposes. What you can control separately for the three purpose is their access controller (not covered yet). Redirection is always public: the Symbol system can always redirect whenever it feels like it, because Symbol knows perfectly when to redirect and when not to. You *can* put restrictions on Access and Copy. If you make Access private then you can’t access the symbol (through its parent). If you make Access public then you *can* access the symbol. If you make Access public, but Copy private it means that you *can* access the symbol, but you *can’t* copy the id of the symbol. To be able to do that, Copy needs to made public. Copy is always equally or less public than Access. One of the main purposes to different access controllers for different Get purposes is to be able to access a symbol, but at the same time not be able to copy the reference to the symbol. The other important purpose is that the Get always has to be public for redirection, even when it’s private for other purposes. You can alter the access controllers of almost every system procedure and purpose, except for Redirection. That one’s always public. Public for the Symbol system that is, because programmers can never call this form of get themselves.
+The reason that this separation between get purposes is made is not that there are three different get commands. The get command of all three purposes is the same command so that they return consistently the same value for all three purposes. What you can control separately for the three purpose is their access controller (not covered yet). Redirection is always public: the Symbol system can always redirect whenever it feels like it, because Symbol knows perfectly when to redirect and when not to. You *can* put restrictions on Access and Copy. If you make Access private then you can’t access the symbol (through its parent). If you make Access public then you *can* access the symbol. If you make Access public, but Copy private it means that you *can* access the symbol, but you *can’t* copy the id of the symbol. To be able to do that, Copy needs to made public. Copy is always equally or less public than Access. One of the main purposes to different access controllers for different Get purposes is to be able to access a symbol, but at the same time not be able to copy the reference to the symbol. The other important purpose is that the Get always has to be public for redirection, even when it’s private for other purposes. You can alter the access controllers of almost every system command and purpose, except for Redirection. That one’s always public. Public for the Symbol system that is, because programmers can never call this form of get themselves.
 
 -----
 
-Just now, I’ve only discussed the system procedures of *object symbols*. Procedure symbols have system procedures too:
+Just now, I’ve only discussed the system commands of *object symbols*. Command symbols have system commands too:
 
 - Symbol
     - Get : Copy
@@ -158,10 +158,10 @@ Just now, I’ve only discussed the system procedures of *object symbols*. Proce
 - Reference
     - Get : Copy or Redirect
     - Set
-- Target Procedure:
+- Target Command:
     - Get : Copy or Access
 
-*Symbol Get* obtains the id of the symbol itself. *Call Get* obtains the call line target symbol. You can also *Set* the call target. *Reference Get* returns the symbol id of the reference line target. You can also *Set* the reference line target. The *Target Procedure* of a symbol returns the procedure at the end of the redirection: the procedure definition. *Target Procedure Copy* copies the id of this procedure. *Target Procedure Access* is the Get that occurs when you call the target procedure. Access controllers can be applied to all elements, except Symbol Get. Call and Reference Get and Set can be redefined. Mind that the access controller for Target Procedure Access determines *the* access controller for calling the procedure symbol.
+*Symbol Get* obtains the id of the symbol itself. *Call Get* obtains the call line target symbol. You can also *Set* the call target. *Reference Get* returns the symbol id of the reference line target. You can also *Set* the reference line target. The *Target Command* of a symbol returns the command at the end of the redirection: the command definition. *Target Command Copy* copies the id of this command. *Target Command Access* is the Get that occurs when you call the target command. Access controllers can be applied to all elements, except Symbol Get. Call and Reference Get and Set can be redefined. Mind that the access controller for Target Command Access determines *the* access controller for calling the command symbol.
 
 -----
 
@@ -295,7 +295,7 @@ I forgot that a __Related List__ also has the __Name__ aspect.
 
 ### Extension of System Commands
 
-The Get usually returns system information. The Set usually changes a line target normally. However, as a programmer you can also decide for yourself what’s the effect of a Get or a Set.  You can totally redefine the Get and Set procedures of a symbol. With that you can also add parameters to the Get and Set procedures. So you’re able to decide yourself which symbol to return on a Get and which symbol to assign on a Set. You can also for instance see to it that on a Set call, the change is applied to all sorts of things, by starting procedures that apply the new value. When setting an object’s state, for instance, you can automatically apply its new state to other objects, for instance when you need to draw a text on screen every time a value changes. You can’t redefine *all* system procedures. For instance the effect of Target Object Get might stay consistent and can not be customized. And also Symbol Get always needs to return the symbol itself. You can only redefine the Object, Type, Interface and State Gets and Sets.
+The Get usually returns system information. The Set usually changes a line target normally. However, as a programmer you can also decide for yourself what’s the effect of a Get or a Set.  You can totally redefine the Get and Set commands of a symbol. With that you can also add parameters to the Get and Set commands. So you’re able to decide yourself which symbol to return on a Get and which symbol to assign on a Set. You can also for instance see to it that on a Set call, the change is applied to all sorts of things, by starting commands that apply the new value. When setting an object’s state, for instance, you can automatically apply its new state to other objects, for instance when you need to draw a text on screen every time a value changes. You can’t redefine *all* system commands. For instance the effect of Target Object Get might stay consistent and can not be customized. And also Symbol Get always needs to return the symbol itself. You can only redefine the Object, Type, Interface and State Gets and Sets.
 
 -----
 
@@ -307,7 +307,7 @@ System Interfaces,
         - \> 2009-08-31: Daarmee bedoel ik: wat opgeslagen is bepaalt de line target
     - What get returns determines line.
         - \> 2009-08-31: How might that look?
-        - \> 2009-08-31: Daarmee bedoel ik: de procedure bepaalt uiteindelijk de line target
+        - \> 2009-08-31: Daarmee bedoel ik: de command bepaalt uiteindelijk de line target
 
 JJ
 
@@ -316,7 +316,7 @@ JJ
 Inheritance: Extension,  
 2009-08
 
-If you can implement procedures for Get, you should be able
+If you can implement commands for Get, you should be able
 to override the default implementation, and also ditch the
 storage variable too.
 
@@ -327,7 +327,7 @@ JJ
 System Command Extension,  
 2004
 
-The Object, Type, Interface and State’s Gets and Sets can be redefined by filling the procedures with code.  
+The Object, Type, Interface and State’s Gets and Sets can be redefined by filling the commands with code.  
 \> 2009-08-31: So show the implementation right inside the system command definition, instead of seeing it in the extension ‘event’ notation?
 
 JJ
@@ -421,14 +421,14 @@ JJ
 
 ### Code Base Objects
 
-Because procedures have system procedures themselves, you’d think that an system procedure also has an system procedure. That one isn’t true. System procedures don’t have system procedures themselves.
+Because commands have system commands themselves, you’d think that an system command also has an system command. That one isn’t true. System commands don’t have system commands themselves.
 
 -----
 
 System Interfaces  
 2004,
 
-If you see the system interface as an object, though, you can regard the system interface to have the same type for every object symbol. Procedure symbols might have a different system type. All symbols might derive from this system type then.
+If you see the system interface as an object, though, you can regard the system interface to have the same type for every object symbol. Command symbols might have a different system type. All symbols might derive from this system type then.
 
 JJ
 
@@ -566,11 +566,11 @@ JJ
 
 -----
 
-You can view a procedure as the object that it returns.
+You can view a command as the object that it returns.
 
 -----
 
-< Picture: Procedure with some private contents and one public object with some contents >
+< Picture: Command with some private contents and one public object with some contents >
 
 \=
 
@@ -578,14 +578,14 @@ You can view a procedure as the object that it returns.
 
 -----
 
-Actually, the objects symbols I’ve introduced before *are* the object representation of procedures. They are representations of procedures that return objects.
+Actually, the objects symbols I’ve introduced before *are* the object representation of commands. They are representations of commands that return objects.
 
-Here you see that you have multiple representations of something: you can see the system as a bunch of procedures or you can see it as a bunch of objects, but it’s still the same system.
+Here you see that you have multiple representations of something: you can see the system as a bunch of commands or you can see it as a bunch of objects, but it’s still the same system.
 
-If you regard something a property, which you often might, the primary representation of it is its object representation. If you regard something a method or if the procedure doesn’t return a value, then its primary representation is the procedure representation.
+If you regard something a property, which you often might, the primary representation of it is its object representation. If you regard something a method or if the command doesn’t return a value, then its primary representation is the command representation.
 
-Conversely, a procedure can apart from it’s usual representation, be represented as the object that it returns.
-- \> 2009-06-28: Then you might just make it an object symbol and implement the object get system procedure.
+Conversely, a command can apart from it’s usual representation, be represented as the object that it returns.
+- \> 2009-06-28: Then you might just make it an object symbol and implement the object get system command.
 
 #### Object = Collection?
 
@@ -655,9 +655,9 @@ Assignment,
 Pointers to pointers as an aspect,  
 2008-08
 
-A related item can point to a =>1 related item contained by another parent or to a =>n related list item contained by another parent. Redirecting to another related item or related list item may be accomplished by extending the object get and object set procedures of the related item. The extension procedure basically constitutes, or instantiates, the redirection. So a pointer to a pointer might be accomplished by procedure extension, instead of implementing it in the code base. However, this might not work for related *list* items, because all items in a related list have the same decoration, and redirecting a list item to an arbitrary other related item or related list item might require each list item to have its own decoration.
+A related item can point to a =>1 related item contained by another parent or to a =>n related list item contained by another parent. Redirecting to another related item or related list item may be accomplished by extending the object get and object set commands of the related item. The extension command basically constitutes, or instantiates, the redirection. So a pointer to a pointer might be accomplished by command extension, instead of implementing it in the code base. However, this might not work for related *list* items, because all items in a related list have the same decoration, and redirecting a list item to an arbitrary other related item or related list item might require each list item to have its own decoration.
 
-< If you make a related item return an object out of another parent, then this decoration with procedures is functionally the same as making the related item a pointer to related item in another parent. But this implementation of a pointer to a pointer might not work for related list items, because list items do not have their own individual decoration with procedures, so that’s why pointers to pointers still need to be part of the code base. >
+< If you make a related item return an object out of another parent, then this decoration with commands is functionally the same as making the related item a pointer to related item in another parent. But this implementation of a pointer to a pointer might not work for related list items, because list items do not have their own individual decoration with commands, so that’s why pointers to pointers still need to be part of the code base. >
 
 JJ
 
@@ -811,7 +811,7 @@ There are more ways to draw out an assignment, but the ones here are by far the 
 
 State assignment is the most basic assignment. Line assignment is based on it. A line target is stored in an __Integer__ object. So when assigning the line target, you’re actually assigning the __State__ of this __Integer__ object. Drawing a line assignment as a state assignment is a more difficult, but useful notation. However, in this chapter I might stick to the simpler notations.
 
-You can work with the *type* and *interface* lines the same way: there’s also type assignment and interface assignment. Likewise, you can work with line assignments for *procedure symbols*. However, I’ll mostly talk about state and object assignment.
+You can work with the *type* and *interface* lines the same way: there’s also type assignment and interface assignment. Likewise, you can work with line assignments for *command symbols*. However, I’ll mostly talk about state and object assignment.
 
 ##### Distinguishing Assignment Source and Target
 
@@ -819,9 +819,9 @@ There’s one more ambiguity in argument access that I might resolve here. In an
 
 ![](images/7.%20System%20Objects%20Ideas.030.png)
 
-there isn’t anything that tells which is the source of the assignment and which is the target: is it __Procedure . B ![](images/7.%20System%20Objects%20Ideas.018.png) A__ or is it __A ![](images/7.%20System%20Objects%20Ideas.018.png) Procedure . B__ ? You could name the arguments of the ![](images/7.%20System%20Objects%20Ideas.018.png) (*object is*) call: name them __Get__ and __Set__ to make out the difference, but usually another method is adopted.
+there isn’t anything that tells which is the source of the assignment and which is the target: is it __Command . B ![](images/7.%20System%20Objects%20Ideas.018.png) A__ or is it __A ![](images/7.%20System%20Objects%20Ideas.018.png) Command . B__ ? You could name the arguments of the ![](images/7.%20System%20Objects%20Ideas.018.png) (*object is*) call: name them __Get__ and __Set__ to make out the difference, but usually another method is adopted.
 
-Assuming the assignment is really __Procedure . B ![](images/7.%20System%20Objects%20Ideas.018.png) A__, the effect of the assignment is:
+Assuming the assignment is really __Command . B ![](images/7.%20System%20Objects%20Ideas.018.png) A__, the effect of the assignment is:
 
 ![](images/7.%20System%20Objects%20Ideas.031.png)
 

@@ -237,7 +237,7 @@ CL,
 
 Er gebeurt echt vanalles in die computer en er gebeurt vanalles met allerlei data. En ergens in het systeem zitten van allerlei instellingen en bij sommige kun je niet eens bij met een user interface, omdat ze de user interface erbij 'vergeten' zijn, en je de instellingen alleen via een API functie kunt bereiken.
 
-Ik vind dat echt vervelend. We zijn gewoon blind. En ik probeer een exacte visualisatie te creëren van wat er precies allemaal in die computer zit, en wat er allemaal precies ingebeurt, en wat er allemaal in het netwerk gebeurt, zonder ongewenst te worden afgeschermd voor bepaalde zaken. Je kunt op applicatieniveau kijken, op documentniveau, op machine niveau, op hardware niveau en op netwerkniveau zien wat er aan data is, hoe alle objecten met elkaar verbonden zijn, hoe de procedures hun werk doen, en wat er door een procedure of programma geraadpleegd wordt en wat er door een programma wordt weggeschreven.
+Ik vind dat echt vervelend. We zijn gewoon blind. En ik probeer een exacte visualisatie te creëren van wat er precies allemaal in die computer zit, en wat er allemaal precies ingebeurt, en wat er allemaal in het netwerk gebeurt, zonder ongewenst te worden afgeschermd voor bepaalde zaken. Je kunt op applicatieniveau kijken, op documentniveau, op machine niveau, op hardware niveau en op netwerkniveau zien wat er aan data is, hoe alle objecten met elkaar verbonden zijn, hoe de commando's hun werk doen, en wat er door een commando of programma geraadpleegd wordt en wat er door een programma wordt weggeschreven.
 
 Je kunt gewoon naar alles wat de computer doet heennavigeren om het te visualiseren. Je kunt zelfs de werking visualisatie zelf visualiseren, door naar die runnende module te navigeren, en de activiteit te bekijken. Als je wil weten hoe de grafische kaart daarbij wordt aangesproken,
 kun je dieper navigeren naar hardware niveau en zien wat er allemaal in en uitgaat.
@@ -258,7 +258,7 @@ Etcetera. Symbol might become much easier when you find what’s used most and w
 
 -----
 
-You can write programs in which you have no notice of any system aspect procedure at all. In programs in which you do work with system aspect procedures, you might not notice the presence of all aspect procedures, just some.  
+You can write programs in which you have no notice of any system aspect command at all. In programs in which you do work with system aspect commands, you might not notice the presence of all aspect commands, just some.  
 \>
 
 < remember that I can only explain how to program structurally using the systems I’ve programmed as an example >  
@@ -386,7 +386,7 @@ JJ
 Circular,  
 2009-02-12
 
-You can put a breakpoint on members of specific objects, not just a member of a class. Just as well you can put a breakpoint on any data member’s get or set procedures or other system procedures.
+You can put a breakpoint on members of specific objects, not just a member of a class. Just as well you can put a breakpoint on any data member’s get or set commands or other system commands.
 
 JJ
 
@@ -454,8 +454,7 @@ Fundamental Principles,
 
 It is possible to program as simply in assembly as you do in Circular, but in Circular you are more dictated to work within a certain paradigm. You can apply the paradigm in assembly language too, but in assembly you can more easily break those rules. In Circular the rules are more imposed. Actually, in Circular you are also not obliged to do it that way.
 
-In an object oriented language you can still program procedural, but it is just, that objects and classes
-are a programming construct of an importance equal to that of procedures.
+In an object oriented language you can still program procedurally, but it is just, that objects and classes are a programming construct of an importance equal to that of commands.
 
 In Circular it is the same way:
 
@@ -585,7 +584,7 @@ JJ
 Fundamental Principles,  
 2009-08-18
 
-Data wordt heen en weer geflipperd, en procedures delegeren allemaal naar elkaar door. En soms delegeren en er een beetje veel procedures naar elkaar door, en flippert er een beetje veel data heen en weer. Complexiteit noemen we dat dan. En als er te veel complexiteit is ten opzichte van de functionaliteit, dan noemen we dat spaghetti.
+Data wordt heen en weer geflipperd, en commando's delegeren allemaal naar elkaar door. En soms delegeren en er een beetje veel commando's naar elkaar door, en flippert er een beetje veel data heen en weer. Complexiteit noemen we dat dan. En als er te veel complexiteit is ten opzichte van de functionaliteit, dan noemen we dat spaghetti.
 
 JJ
 

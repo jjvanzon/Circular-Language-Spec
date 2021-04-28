@@ -70,7 +70,7 @@ I’ve often brainstormed about this. About making public and private not part o
 Private and public do have more of a function as complexity-hiding.  
 But that is just another point to access control. Access control is not only there to make certain people not able to do certain things. It is also there for complexity-hiding, to make it easier on people, making sure they don’t see irrelevant details that obscure the picture.
 
-However, this complexity hiding is very welcome in the diagrams, because it hides the complexity of a procedure, so you only see a name of a command and some parameters.  
+However, this complexity hiding is very welcome in the diagrams, because it hides the complexity of a command, so you only see a name of a command and some parameters.  
 However, before access control is implemented, you might just see the private contents of a command wherever you can call it. Tough.
 
 JJ
@@ -79,26 +79,26 @@ JJ
 
 Access Control in Creator currently means the following things:
 
-- Certain procedures in the code Creator generates, can be access controlled by the author of the structure. 
+- Certain commands in the code Creator generates, can be access controlled by the author of the structure. 
 - On top of that, the *existence* of Property Get and Property Set can be controlled for attributes.
 - Also certain things can be made read-only or inaccessible to the *user*.
 
-Access controlling procedures means that you can give procedures one of the following access modifiers:
+Access controlling commands means that you can give commands one of the following access modifiers:
 
 - Private
 - Friend
 - Public
 
-The procedures that can be access controlled are:
+The commands that can be access controlled are:
 
 - __JAttribute.WriteAccess__ : 
-    - Sets the attribute’s Property Set procedure acces modifier
+    - Sets the attribute’s Property Set command acces modifier
 - __JAttribute.ChangeByUser__ : 
     - Controls if the user can change the attribute
 - __When1.ReadAccess__ : 
-    - Access controls the =>1 related object’s Property Set procedure
+    - Access controls the =>1 related object’s Property Set command
 - __When1.WriteAccess__ : 
-    - Access controls the =>1 related object’s Property Set procedure
+    - Access controls the =>1 related object’s Property Set command
 - __WhenN.ReadAccess__ :
     - Access controls List.Item.Get. So if items in a =>n relation can be read.
 - __WhenN.WriteAccess__ :
@@ -108,9 +108,9 @@ The procedures that can be access controlled are:
 - __WhenN.RemoveAccess__ :
     - Access controls a Lists’s Remove method
 - __WhenX.ReadAccess__ :
-    - Access controls the =>x related List’s Item.Get procedure. So if items in a =>x relation can be read.
+    - Access controls the =>x related List’s Item.Get command. So if items in a =>x relation can be read.
 - __WhenX.WriteAccess__ : 
-    - Access controls the =>x related List’s Item.Set procedure. So if items in a =>x relation can be set to another object
+    - Access controls the =>x related List’s Item.Set command. So if items in a =>x relation can be set to another object
 
 And then there’s __JAttribute.HasGet__ and __JAttribute.HasSet__, which control the presence altogether of a __Property Get__ and __Property Set__ for an attribute.
 
@@ -121,11 +121,11 @@ Furthermore, you can separately control access by the user for two things:
 - WhenN.AddAndRemoveByUser
     - Controls whether a user can Add and Remove items in a related list.
 
-It is the intention for the programmer to be able to access control most procedures that might otherwise be __Public__ and also separately control access from the user interface to those procedures. Also, the programmer might be more able to leave out certain procedures altogether, like you can with the attribute __Get__ and __Set__. For instance, the __Add__, __Remove__ and __Clear__ methods in a =>n related list, should become separately access controllable as well as separately excluded.
+It is the intention for the programmer to be able to access control most commands that might otherwise be __Public__ and also separately control access from the user interface to those commands. Also, the programmer might be more able to leave out certain commands altogether, like you can with the attribute __Get__ and __Set__. For instance, the __Add__, __Remove__ and __Clear__ methods in a =>n related list, should become separately access controllable as well as separately excluded.
 
 #### Read Only
 
-- Procedures
+- Commands
 - By User
 
 #### Authorization
@@ -138,19 +138,19 @@ A common way of accessing an object structure is by accessing it through one or 
 
 ### Attribute . HasGet
 
-This Boolean property sets or returns whether the attribute might get a __Property Get__ procedure at all in the generated programming interface. If __HasGet = False__, then the attribute is also completely write-only anywhere else in the system, including the user interface. It might also be write-only within the class itself, so can not be read at all.
+This Boolean property sets or returns whether the attribute might get a __Property Get__ command at all in the generated programming interface. If __HasGet = False__, then the attribute is also completely write-only anywhere else in the system, including the user interface. It might also be write-only within the class itself, so can not be read at all.
 
 For more information, see the *Access Control* section.
 
 ### Attribute . HasSet
 
-This Boolean property sets or returns whether the attribute might get a __Property Set__ (or __Let__) procedure at all in the generated programming interface. If __HasSet = False__, then the attribute is also completely read-only anywhere else in the system, including the user interface. It might also be read-only within the class itself, so can not be written at all.
+This Boolean property sets or returns whether the attribute might get a __Property Set__ (or __Let__) command at all in the generated programming interface. If __HasSet = False__, then the attribute is also completely read-only anywhere else in the system, including the user interface. It might also be read-only within the class itself, so can not be written at all.
 
 For more information, see the *Access Control* section.
 
 ### Attribute . WriteAccess
 
-This property sets the write access to the attribute property in the programming interface generated by J Data. Setting it to __PublicAccess__, __PrivateAccess__ or __FriendAccess__ changes the access modifier of the __Property Set__ procedure in the programming interface.
+This property sets the write access to the attribute property in the programming interface generated by J Data. Setting it to __PublicAccess__, __PrivateAccess__ or __FriendAccess__ changes the access modifier of the __Property Set__ command in the programming interface.
 
 For more information, see the *Access Control* section.
 
@@ -233,14 +233,14 @@ Classes giving methods access to their private contents should be a form of acce
 
 #### Excluding Add, Remove or Clear from Programming Interface
 
-You can exclude the __Add__, __Remove__ and __Clear__ methods with the __HasAdd__, __HasRemove__ and __HasClear__ structure settings. You can also merely access control the __Add__, __Remove__ and __Clear__ methods. That way you can disallow calls to the procedures from outside your library or application, so only your application can __Add__, __Remove__ or __Clear__, but any program, that links to your application, can’t. That might be the situation when you give a method __Friend__ access. You can also make the method __Private__, in case of which only procedures within the list class itself can access the method. See the *Access Control* section for more on this subject.
+You can exclude the __Add__, __Remove__ and __Clear__ methods with the __HasAdd__, __HasRemove__ and __HasClear__ structure settings. You can also merely access control the __Add__, __Remove__ and __Clear__ methods. That way you can disallow calls to the commands from outside your library or application, so only your application can __Add__, __Remove__ or __Clear__, but any program, that links to your application, can’t. That might be the situation when you give a method __Friend__ access. You can also make the method __Private__, in case of which only commands within the list class itself can access the method. See the *Access Control* section for more on this subject.
 
 Consider access control of the system interface members.
 Perhaps you just might talk about access control in the implementation articles of Coding Aspects and all.
 
 -----
 
-A procedure extension event is not a multi-cast event, like most events. There can be only one implementation of a procedure extension event.  
+A command extension event is not a multi-cast event, like most events. There can be only one implementation of a command extension event.  
 The parent object is the only one that can implement the system command extension event. This is has to be access controlled.  
 Access control is worked out later in the *Access Control* articles.
 
@@ -399,7 +399,7 @@ Security may be an extension to Symbol access control. But then with users. I gu
 
 #### Brainstorm
 
-Bij een absolute integratie van programmatische access modifiers en user access control, moet je een user-under-user principe toepassen, waarbij elke sub-user de access verder kan beperkt. Elke class en procedure is daarbij ook een user. De access kan ingesteld worden voor alle users (object/gebruiker) (public, private) en users met bepaalde eigenschappen of verhoudingen tot deze 'user' (friend, protected). Dus toegang wordt daarbij verleend voor bepaalde users tot bepaalde users. Een gebruiker wordt daardoor ook een object. Dit user object heeft dus bepaalde eigenschappen, waardoor hij tot bepaalde andere users/objecten wel of geen toegang krijgt. De rights van een user worden nooit door hemzelf bepaald. De toegang tot zijn eigen dingen wordt wel bepaald door hemzelf, en door containers of referrers, maar dan alleen de toegang tot deze objecten via de container. Alle andere toegangswegen zijn open, tenzij ze dus weer door een hoger object worden geblokt. Dus als je toegang regelt op het object boven het hoogst containende object, dan is het afgeblokt. Het hoogst containende object is eigenlijk altijd de owner.
+Bij een absolute integratie van programmatische access modifiers en user access control, moet je een user-under-user principe toepassen, waarbij elke sub-user de access verder kan beperkt. Elke class en command is daarbij ook een user. De access kan ingesteld worden voor alle users (object/gebruiker) (public, private) en users met bepaalde eigenschappen of verhoudingen tot deze 'user' (friend, protected). Dus toegang wordt daarbij verleend voor bepaalde users tot bepaalde users. Een gebruiker wordt daardoor ook een object. Dit user object heeft dus bepaalde eigenschappen, waardoor hij tot bepaalde andere users/objecten wel of geen toegang krijgt. De rights van een user worden nooit door hemzelf bepaald. De toegang tot zijn eigen dingen wordt wel bepaald door hemzelf, en door containers of referrers, maar dan alleen de toegang tot deze objecten via de container. Alle andere toegangswegen zijn open, tenzij ze dus weer door een hoger object worden geblokt. Dus als je toegang regelt op het object boven het hoogst containende object, dan is het afgeblokt. Het hoogst containende object is eigenlijk altijd de owner.
 
 De administrator heeft alle rechten. Dat wil niet zeggen, dat hij zijn eigen privileges kan bepalen. Niemand bepaald de privileges van de administrator: die liggen vast.
 

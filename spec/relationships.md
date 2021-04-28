@@ -251,7 +251,7 @@ As such, a bidirectional relationship might have three parts:
 
 The idea might be that that there might be software libraries that have code that make the relationship synchronization work. Circular Language Spec currently only aims to supply a notation for it. There should be freedom of choice how it might be implemented. The notational choices made here, and implementation details might not always resonate with each other. Variations on notations may be possible. The one described here might just lay a foundation.
 
-The implementation procedures for relationship synchronization might be expressed in a diagram, when a *system interface* of a symbol might be displayed.
+The implementation commands for relationship synchronization might be expressed in a diagram, when a *system interface* of a symbol might be displayed.
 
 <img src="images/1.%20Relationships.028.png" width="420" />
 

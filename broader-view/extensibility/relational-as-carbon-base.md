@@ -24,7 +24,7 @@ It’s hard... at all times in the diagram the target classes and the class line
 
 ### Loose Ideas
 
-Men moet gewoon de klasse-relatie structuur zo veel mogelijk als basis nemen, en niets ernaast bouwen, maar procedures in de structuur INbouwen. de klasse-relatie structuur is zeg maar de koolstof basis en daar kan vanalles aanhangen.
+Men moet gewoon de klasse-relatie structuur zo veel mogelijk als basis nemen, en niets ernaast bouwen, maar commando's in de structuur INbouwen. de klasse-relatie structuur is zeg maar de koolstof basis en daar kan vanalles aanhangen.
 
 -----
 

@@ -21,7 +21,7 @@ One of the goals of Flat & Structured Interchange is for programs programmed in 
 
 Flat programs can be made as such, when programmers are unaware of the benefits of using classes, unaware of how to program in classes, or the program can just be programmed a very long time ago, when nobody was programming in classes. It automatically gets converted into a system of classes, with methods that can be supported by multiple classes.
 
-Because of the goal of Flat & Structured Interchange, you might consider a flat set of procedures and a god object with data and how it converts to a structured program. You'd also might consider spaghetti, and how this can be converted to a well-structured program.
+Because of the goal of Flat & Structured Interchange, you might consider a flat set of commands and a god object with data and how it converts to a structured program. You'd also might consider spaghetti, and how this can be converted to a well-structured program.
 
 JJ 
 

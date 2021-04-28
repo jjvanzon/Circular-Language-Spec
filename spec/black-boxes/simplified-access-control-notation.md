@@ -102,7 +102,7 @@ Could also be called: Access Control Presets.
 
 -----
 
-< Wat wel zo is is dat de standaard access control van system procedures er voor zorgt dat je niet *zo maar* rare dingen kan gaan doen. Erg belangrijk als je effe snel iets programmeert, dat je de echt rare effecten uitsluit zonder extra moeite. >
+< Wat wel zo is is dat de standaard access control van system commands er voor zorgt dat je niet *zo maar* rare dingen kan gaan doen. Erg belangrijk als je effe snel iets programmeert, dat je de echt rare effecten uitsluit zonder extra moeite. >
 
 -----
 
@@ -111,10 +111,10 @@ Could also be called: Access Control Presets.
 -----
 
 <  
-I don’t have a special notation for publicity of Set procedures.
+I don’t have a special notation for publicity of Set commands.
 Set public or not is kind of like read only or not. Maybe I need a read only notation.
 
-Write only is also common, though. For instance of procedure reference input parameters.  
+Write only is also common, though. For instance of command reference input parameters.  
 />
 
 -----
@@ -123,9 +123,9 @@ Write only is also common, though. For instance of procedure reference input par
 
 -----
 
-When you give a system procedure an access controller, access to the procedure or object represented may get a special name and diagram notation.
+When you give a system command an access controller, access to the command or object represented may get a special name and diagram notation.
 
-An object symbol with an accessible State *Read* procedure, but no State *Write*, is called a Read Only Object.
+An object symbol with an accessible State *Read* command, but no State *Write*, is called a Read Only Object.
 
 An object symbol with only a Type Read, can be considered just a Type. Not an object or interface.
 
@@ -151,7 +151,7 @@ Something is constant if it can be set by programmers , but not by users.
 
 -----
 
-< The standard access modifiers for system procedures of procedure symbols directly inside a procedure symbol are different from procedures directly inside object symbols. For instance, Symbol Get for Reference of a nested command is Private by default. Symbol Get for Reference for an object member is Public by default >
+< The standard access modifiers for system commands of command symbols directly inside a command symbol are different from commands directly inside object symbols. For instance, Symbol Get for Reference of a nested command is Private by default. Symbol Get for Reference for an object member is Public by default >
 
 -----
 
@@ -159,11 +159,11 @@ A call is by default private.
 
 -----
 
-The access controllers of the procedure’s sub objects determine which purpose they serve. Maybe I should write a section about that in Access Control.
+The access controllers of the command’s sub objects determine which purpose they serve. Maybe I should write a section about that in Access Control.
 
 -----
 
-Required and Optional parameters as well as In, Out and Thru need to be rediscussed in Access Control, because it may be so that it is required for you to Object Set a parameter, while the procedure changes the state of the target object. This is like thru too, but a totally different fashion and there are more  ways of throughput.
+Required and Optional parameters as well as In, Out and Thru need to be rediscussed in Access Control, because it may be so that it is required for you to Object Set a parameter, while the command changes the state of the target object. This is like thru too, but a totally different fashion and there are more  ways of throughput.
 
 -----
 
@@ -233,4 +233,4 @@ need to clear that up. But whatever, this is for later.
 
 Also useless: allowing Set but not allowing Get... if you can already write it, why not allow reading it? Is there any point to that? The important thing is write-protecting, or not access at all... but read-protecting, while you could write to it? It seems unlogical.
 
-That seems a whole lot of Get and Set purposes. In practice, the set up of a symbol’s system procedures is not that complicated. There’s a standard setup: the most usual system procedure setup. Only deviations from the standard are additionally denoted.
+That seems a whole lot of Get and Set purposes. In practice, the set up of a symbol’s system commands is not that complicated. There’s a standard setup: the most usual system command setup. Only deviations from the standard are additionally denoted.

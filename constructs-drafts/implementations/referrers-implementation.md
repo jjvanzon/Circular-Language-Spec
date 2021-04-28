@@ -18,7 +18,7 @@ An object, that might not support the aspect of __Referrers__, also might not re
 
 ### Diagrams
 
-As explained in the article *Referrers*, the implementation of referrers as an aspect requires extension of related item’s  __Object  .  Set__ procedure, so that a referrer is added to the other object’s __Referrers__ list and the __Referrer ID In Object__ is recorded.
+As explained in the article *Referrers*, the implementation of referrers as an aspect requires extension of related item’s  __Object  .  Set__ command, so that a referrer is added to the other object’s __Referrers__ list and the __Referrer ID In Object__ is recorded.
 
 The adapted system interface might look something like this in a diagram:
 

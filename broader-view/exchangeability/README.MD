@@ -28,11 +28,11 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
 - ### [Data = Code](data-is-code.md)
 
-    - This fundamental principle is about the fact that a program might *not* consist of procedures operating on a database. Your program primarily is the database. Code is just inserted into the data structure, to become part of it.
+    - This fundamental principle is about the fact that a program might *not* consist of commands operating on a database. Your program primarily is the database. Code is just inserted into the data structure, to become part of it.
 
 - ### [Programming Language = Database](programming-language-is-database.md)
 
-    - This fundamental principle is about the fact that the code of a program is stored as a database. *Code is just data*, that describes a procedure.
+    - This fundamental principle is about the fact that the code of a program is stored as a database. *Code is just data*, that describes a process.
 
 - ### [Design Time = Run Time](design-time-is-run-time.md)
 
@@ -100,9 +100,9 @@ Some of these articles are not finished yet. The *Exchangeability Principles* fo
 
     - (This article is not finished yet.)
 
-- ### [User Interface Not Procedure Oriented](user-interface-not-procedure-oriented.md)
+- ### [User Interface Not Command Oriented](user-interface-not-command-oriented.md)
 
-    - Programming interfaces have gone from procedural to object oriented. Procedures are part of an object, rather than separate procedures being executed on data. User interfaces, however, are still too much *procedure* oriented, because there are commands in a menu, instead of being able to right-click on an object and see any action you can undertake on it. Any command you can execute on an object should be listed under the context menu of that object. I first and foremost want to see a command hanging under an item, not look through a big list of commands to find the one, I can execute on my item. However, in the new system, all commands you can execute on an object, are accessible under the object itself. But also: all commands of all classes of objects are accessible as a flat list of commands. So the new system actually supports both views. Both views are exchangeable.
+    - Programming interfaces have gone from procedural to object oriented. Commands are part of an object, rather than separate commands being executed on data. User interfaces, however, are still too much *command* oriented, because there are commands in a menu, instead of being able to right-click on an object and see any action you can undertake on it. Any command you can execute on an object should be listed under the context menu of that object. I first and foremost want to see a command hanging under an item, not look through a big list of commands to find the one, I can execute on my item. However, in the new system, all commands you can execute on an object, are accessible under the object itself. But also: all commands of all classes of objects are accessible as a flat list of commands. So the new system actually supports both views. Both views are exchangeable.
 
 - ### [Symbol = Creator](symbol-is-creator.md)
 

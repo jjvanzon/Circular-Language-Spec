@@ -13,7 +13,7 @@ __Contents__
 - [Loose Ideas](#loose-ideas)
     - [Out of the original Symbol documentation](#out-of-the-original-symbol-documentation)
         - [Multiple Module Levels](#multiple-module-levels)
-        - [System Procedures for Modules](#system-procedures-for-modules)
+        - [System Commands for Modules](#system-commands-for-modules)
 
 ### Concept
 
@@ -93,6 +93,6 @@ A pentagon's direct children can all reference each other and can be referenced 
 
 JJ
 
-##### System Procedures for Modules
+##### System Commands for Modules
 
-System procedures of modules are the same as for other object symbols. The only restriction is that modules can’t have lines to objects and objects can’t have lines to modules. Modules can have an object line, type line and interface line just like objects.
+System commands of modules are the same as for other object symbols. The only restriction is that modules can’t have lines to objects and objects can’t have lines to modules. Modules can have an object line, type line and interface line just like objects.

@@ -70,13 +70,13 @@ JJ
 
 -----
 
-Can you apply automatic execution order to accesses, that are actually happening? I think that is what locking actually is: one piece of procedure waits on another piece of procedure to be finished with the data.
+Can you apply automatic execution order to accesses, that are actually happening? I think that is what locking actually is: one piece of command waits on another piece of command to be finished with the data.
 
-In my system it might become a little different. Instead of locking data, which locks procedures, the order of the procedures trying to access the same data is determined. 
+In my system it might become a little different. Instead of locking data, which locks commands, the order of the commands trying to access the same data is determined. 
 
-If the data might not become available soon enough, the procedure that tries to get access might give up and fail. This causes a rollback of the whole procedure.
+If the data might not become available soon enough, the command that tries to get access might give up and fail. This causes a rollback of the whole command.
 
-If you can’t automatically determine the execution order for a procedure definition, but you can only determine the execution order of running procedures, then you’re only working on concurrency, no longer on automatic execution order.
+If you can’t automatically determine the execution order for a command definition, but you can only determine the execution order of running commands, then you’re only working on concurrency, no longer on automatic execution order.
 
 When you apply the method where readers get access first, and a writer as soon as the reader tries to read, rolls back and tries again until it succeeds without any reads in between, then you might still get inconsistent data, because maybe data items far apart still need to be consistent.
 
@@ -116,6 +116,6 @@ Concurrency resolution,
 2008-08-15~
 
 The whole idea of a user only ever performing an action by creating an executable object and running it, visualizes the volatility of command calls, when they are not programmed, but executed arbitrarily, like users make them do. This instantly creates new concurrency situations inside objects and commands that do not have a class or definition (that have arbitrary contents). Compared IO and automatic execution order can be a key to solving concurrency for user-executed commands just as well as command-executed commands.  
-So there you have your procedures, that are run volatilily, for which concurrency needs to be managed, and they are now the same as a program. So instant creation of commands, and instant interweaving of command execution order starts here.
+So there you have your commands, that are run volatilily, for which concurrency needs to be managed, and they are now the same as a program. So instant creation of commands, and instant interweaving of command execution order starts here.
 
 JJ

@@ -63,14 +63,14 @@ JJ
 Commands,  
 2004
 
-There’s a method for turning a procedure into a class.
+There’s a method for turning a command into a class.
 
-Say a procedure has input objects and output objects. When you call the procedure you set the input objects. After the call you can read the output objects.
+Say a command has input objects and output objects. When you call the command you set the input objects. After the call you can read the output objects.
 
-To create a class out of the procedure you just take over all of the procedure’s objects. The procedure itself, stripped from objects, becomes a member of the type too.
+To create a class out of the command you just take over all of the command’s objects. The command itself, stripped from objects, becomes a member of the type too.
 
-You can freely read and write the objects. However, the procedure might be occasionally run.
+You can freely read and write the objects. However, the command might be occasionally run.
 
-The benefits from making a type out of a procedure is that you can dynamically write and write input objects and read output objects, without having to run a procedure all the time.
+The benefits from making a type out of a command is that you can dynamically write and write input objects and read output objects, without having to run a command all the time.
 
 JJ

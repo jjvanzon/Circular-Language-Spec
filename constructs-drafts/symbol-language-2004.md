@@ -15,9 +15,9 @@ Contents
 - [Ancestry](#ancestry)
     - [Terms](#terms)
 - [Identifiers](#identifiers)
-- [Procedures](#procedures)
+- [Commands](#commands)
 - [Many Don’t Get It](#many-dont-get-it)
-- [Procedure Parameters](#procedure-parameters)
+- [Command Parameters](#command-parameters)
     - [Input, Output and Throughput Parameters](#input-output-and-throughput-parameters)
 - [Members](#members)
 - [Interfaces](#interfaces)
@@ -42,21 +42,21 @@ Contents
 - [Creation](#creation)
 - [Referencing a Parent](#referencing-a-parent)
 - [Notation Elements](#notation-elements-1)
-- [Procedures](#procedures-1)
-- [Procedure Call](#procedure-call)
-- [Procedure Reference](#procedure-reference)
-- [Nested Procedure](#nested-procedure)
-- [Procedure Contents](#procedure-contents)
-- [Procedure Versus Type](#procedure-versus-type)
+- [Commands](#commands-1)
+- [Command Call](#command-call)
+- [Command Reference](#command-reference)
+- [Nested Command](#nested-command)
+- [Command Contents](#command-contents)
+- [Command Versus Type](#command-versus-type)
 - [Required and Optional Parameters](#required-and-optional-parameters)
-- [Procedure Interface](#procedure-interface)
-- [Same Procedure, Same Interface](#same-procedure-same-interface)
+- [Command Interface](#command-interface)
+- [Same Command, Same Interface](#same-command-same-interface)
 - [Direction](#direction)
     - [Access Symbols](#access-symbols)
     - [Precedence of Direction Rules](#precedence-of-direction-rules)
         - [Access Symbols](#access-symbols-1)
         - [Outward](#outward)
-        - [You Sooner Exit a Procedure than an Object](#you-sooner-exit-a-procedure-than-an-object)
+        - [You Sooner Exit a Command than an Object](#you-sooner-exit-a-command-than-an-object)
         - [You Sooner Reference an Interface than Redirect It](#you-sooner-reference-an-interface-than-redirect-it)
         - [You Sooner Redirect a Diamond than Reference It](#you-sooner-redirect-a-diamond-than-reference-it)
         - [Exit the Most Borders](#exit-the-most-borders)
@@ -65,9 +65,9 @@ Contents
     - [Access Symbol Placement](#access-symbol-placement)
 - [Line Ownership](#line-ownership)
     - [Object Symbol Lines](#object-symbol-lines)
-    - [Procedure Lines](#procedure-lines)
-- [Procedures to Procedures, Objects to Object](#procedures-to-procedures-objects-to-object)
-    - [Relations between Objects and Procedures](#relations-between-objects-and-procedures)
+    - [Command Lines](#command-lines)
+- [Commands to Commands, Objects to Object](#commands-to-commands-objects-to-object)
+    - [Relations between Objects and Commands](#relations-between-objects-and-commands)
 - [Target Symbols](#target-symbols)
     - [Line Targets](#line-targets)
     - [Multiple Redirection and Final Targets](#multiple-redirection-and-final-targets)
@@ -78,9 +78,9 @@ Contents
             - [Object Trace](#object-trace)
             - [Object-Type Trace](#object-type-trace)
             - [Object-Type-Interface Trace](#object-type-interface-trace)
-        - [Tracing Procedure Aspects](#tracing-procedure-aspects)
+        - [Tracing Command Aspects](#tracing-command-aspects)
             - [Definition Trace](#definition-trace)
-            - [Procedure Interface Trace](#procedure-interface-trace)
+            - [Command Interface Trace](#command-interface-trace)
             - [Execution Trace](#execution-trace)
             - [Execution-Definition Trace](#execution-definition-trace)
             - [Execution-Definition-Interface Trace](#execution-definition-interface-trace)
@@ -91,7 +91,7 @@ Contents
         - [Circularity in a Object-Type Trace](#circularity-in-a-object-type-trace)
         - [Circularity in a Interface Trace](#circularity-in-a-interface-trace)
         - [Circularity in a Definition Trace](#circularity-in-a-definition-trace)
-        - [Circularity in a Procedure Interface Trace](#circularity-in-a-procedure-interface-trace)
+        - [Circularity in a Command Interface Trace](#circularity-in-a-command-interface-trace)
         - [Circularity in an Execution-Definition Trace](#circularity-in-an-execution-definition-trace)
     - [Terms](#terms-1)
         - [Target Symbol](#target-symbol)
@@ -102,7 +102,7 @@ Contents
         - [Type Line Being called Interface Line](#type-line-being-called-interface-line)
         - [Object Definition](#object-definition)
         - [Object Delegation](#object-delegation)
-        - [Procedure Definition Trace](#procedure-definition-trace)
+        - [Command Definition Trace](#command-definition-trace)
 - [Genericity](#genericity)
     - [Object Symbol Genericity](#object-symbol-genericity)
         - [Original and Delegated Object](#original-and-delegated-object)
@@ -110,11 +110,11 @@ Contents
         - [Explicit and Generic Type](#explicit-and-generic-type)
         - [Original and Delegated Interface](#original-and-delegated-interface)
         - [Explicit and Generic Interface](#explicit-and-generic-interface)
-    - [Procedure Symbol Genericity](#procedure-symbol-genericity)
+    - [Command Symbol Genericity](#command-symbol-genericity)
         - [Original and Delegated Definition](#original-and-delegated-definition)
         - [Original and Delegated Execution](#original-and-delegated-execution)
-        - [Original and Delegated Procedure Interface](#original-and-delegated-procedure-interface)
-        - [Explicit and Generic Procedure Interface](#explicit-and-generic-procedure-interface)
+        - [Original and Delegated Command Interface](#original-and-delegated-command-interface)
+        - [Explicit and Generic Command Interface](#explicit-and-generic-command-interface)
     - [Type-Interface Interaction](#type-interface-interaction)
         - [Type Interface Genericity](#type-interface-genericity)
             - [Using Interface Extends Type Line](#using-interface-extends-type-line)
@@ -123,7 +123,7 @@ Contents
             - [Choose From Multiple Types](#choose-from-multiple-types)
             - [No Interface Line: Follow Object Line](#no-interface-line-follow-object-line)
         - [Interface Type Generiticy](#interface-type-generiticy)
-        - [Interface Procedure Genericity](#interface-procedure-genericity)
+        - [Interface Command Genericity](#interface-command-genericity)
         - [Overview of Genericities of Type-Interface Interaction](#overview-of-genericities-of-type-interface-interaction)
     - [Final Issues](#final-issues)
         - [Explicit Isn’t Fixed](#explicit-isnt-fixed)
@@ -153,12 +153,12 @@ Contents
     - [Reference](#reference)
     - [Call](#call)
     - [Definition](#definition)
-    - [Nested Procedure](#nested-procedure-1)
+    - [Nested Command](#nested-command-1)
     - [Active and Inactive](#active-and-inactive)
-    - [Active Nested Procedure](#active-nested-procedure)
-    - [Inactive Nested Procedure](#inactive-nested-procedure)
-    - [Deeper Nested Procedure](#deeper-nested-procedure)
-    - [Sub Procedure](#sub-procedure)
+    - [Active Nested Command](#active-nested-command)
+    - [Inactive Nested Command](#inactive-nested-command)
+    - [Deeper Nested Command](#deeper-nested-command)
+    - [Sub Command](#sub-command)
     - [Parameter and Argument](#parameter-and-argument)
     - [Executor and Execution](#executor-and-execution)
 - [Assignment](#assignment)
@@ -183,15 +183,15 @@ Contents
 - [Execution Basics](#execution-basics)
     - [Squares and Diamonds](#squares-and-diamonds)
     - [Diamonds Execute When Direct Parent Executes](#diamonds-execute-when-direct-parent-executes)
-    - [Diamonds Can only be Directly Inside a Procedure Symbol, Diamonds Can’t be Directly Inside an Object Symbol](#diamonds-can-only-be-directly-inside-a-procedure-symbol-diamonds-cant-be-directly-inside-an-object-symbol)
+    - [Diamonds Can only be Directly Inside a Command Symbol, Diamonds Can’t be Directly Inside an Object Symbol](#diamonds-can-only-be-directly-inside-a-command-symbol-diamonds-cant-be-directly-inside-an-object-symbol)
     - [You Can Only Access Members of a Diamond](#you-can-only-access-members-of-a-diamond)
     - [You can Only Access Members of a Diamond, while the Diamond is executing](#you-can-only-access-members-of-a-diamond-while-the-diamond-is-executing)
     - [The Diamond Executor Can Access Members Only Just before and Just After the Execution](#the-diamond-executor-can-access-members-only-just-before-and-just-after-the-execution)
     - [Accessing a Diamond Member During a Call](#accessing-a-diamond-member-during-a-call)
-    - [Passing an object reference to a procedure](#passing-an-object-reference-to-a-procedure)
-    - [Procedure can set object reference itself too](#procedure-can-set-object-reference-itself-too)
-    - [Nested Procedure Access](#nested-procedure-access)
-    - [Passing a procedure reference](#passing-a-procedure-reference)
+    - [Passing an object reference to a command](#passing-an-object-reference-to-a-command)
+    - [Command can set object reference itself too](#command-can-set-object-reference-itself-too)
+    - [Nested Command Access](#nested-command-access)
+    - [Passing a command reference](#passing-a-command-reference)
     - [The If example](#the-if-example)
     - [Brainstorm](#brainstorm)
         - [1](#1)
@@ -203,7 +203,7 @@ Contents
     - [Previous Texts](#previous-texts)
         - [A](#a)
             - [Referencing Square Members: Implicit Call](#referencing-square-members-implicit-call)
-            - [An object symbol as a pointer to a procedure symbol: Implicit return value reference.](#an-object-symbol-as-a-pointer-to-a-procedure-symbol-implicit-return-value-reference)
+            - [An object symbol as a pointer to a command symbol: Implicit return value reference.](#an-object-symbol-as-a-pointer-to-a-command-symbol-implicit-return-value-reference)
             - [Implicit Call and Implicit Return Value Reference](#implicit-call-and-implicit-return-value-reference)
             - [Reference to Other Out Parameters](#reference-to-other-out-parameters)
         - [B](#b)
@@ -215,7 +215,7 @@ Contents
             - [Multiple Out Parameters: Implicit Return Value Reference](#multiple-out-parameters-implicit-return-value-reference)
             - [Multiple Out Parameters: Implicit Calls](#multiple-out-parameters-implicit-calls)
         - [C](#c)
-            - [? Referencing a Procedure Member](#-referencing-a-procedure-member)
+            - [? Referencing a Command Member](#-referencing-a-command-member)
     - [Brainstorm](#brainstorm-1)
         - [1](#1-1)
         - [2](#2-1)
@@ -256,11 +256,11 @@ Contents
     - [From Another Place](#from-another-place)
     - [Nog](#nog)
 - [Basic Language Execution Control](#basic-language-execution-control)
-- [Execution Control Procedures](#execution-control-procedures)
+- [Execution Control Commands](#execution-control-commands)
 - [Selection and Repetition](#selection-and-repetition)
 - [Selection](#selection)
 - [Repetition](#repetition)
-- [Clauses: Nested Procedures](#clauses-nested-procedures)
+- [Clauses: Nested Commands](#clauses-nested-commands)
 - [Unconditional Jumps](#unconditional-jumps)
     - [Unconditional Jumps](#unconditional-jumps-1)
 - [Text Code Blabbing](#text-code-blabbing)
@@ -280,8 +280,8 @@ Contents
     - [Pentagons not Exchangeable with Triangles and Circles](#pentagons-not-exchangeable-with-triangles-and-circles)
     - [Extra Indication](#extra-indication)
 - [Interface Access](#interface-access)
-- [Nested Procedure Access](#nested-procedure-access-1)
-- [Modules, Interfaces and Nested procedures](#modules-interfaces-and-nested-procedures)
+- [Nested Command Access](#nested-command-access-1)
+- [Modules, Interfaces and Nested commands](#modules-interfaces-and-nested-commands)
 - [Brainstorm](#brainstorm-6)
     - [=> Access Ways](#-access-ways)
 - [Overriding](#overriding)
@@ -289,7 +289,7 @@ Contents
 - [Overloading](#overloading)
 - [Shadowing](#shadowing)
 - [Merging](#merging)
-- [System Procedures](#system-procedures)
+- [System Commands](#system-commands)
     - [The System Interface](#the-system-interface)
 - [Get and Set are Inseparable](#get-and-set-are-inseparable-1)
     - [Which Aspects Can be Paired in an Assignment?](#which-aspects-can-be-paired-in-an-assignment)
@@ -297,9 +297,9 @@ Contents
     - [Brainstorm](#brainstorm-7)
 - [Get Purposes](#get-purposes)
     - [Brainstorm](#brainstorm-8)
-- [Access Control on System Procedures](#access-control-on-system-procedures)
+- [Access Control on System Commands](#access-control-on-system-commands)
 - [Variable and Constant](#variable-and-constant)
-- [Redefining System Procedures](#redefining-system-procedures)
+- [Redefining System Commands](#redefining-system-commands)
 - [Exclusive Establishment](#exclusive-establishment)
 - [Static, Creation and Destruction](#static-creation-and-destruction)
 - [State](#state)
@@ -319,7 +319,7 @@ Contents
 - [Setting Lines](#setting-lines)
     - [Mutual Descendant Sets Lines](#mutual-descendant-sets-lines)
 - [Create and Destroy](#create-and-destroy)
-    - [The Create and Destroy Procedures](#the-create-and-destroy-procedures)
+    - [The Create and Destroy Commands](#the-create-and-destroy-commands)
         - [Referring to Uncreated Symbols](#referring-to-uncreated-symbols)
     - [Breaking the Chain](#breaking-the-chain)
     - [Breaking a Bidirection](#breaking-a-bidirection)
@@ -330,7 +330,7 @@ Contents
 - [Set Example](#set-example)
 - [State](#state-1)
     - [Conversions](#conversions)
-- [Conversions Aren’t Create Procedures](#conversions-arent-create-procedures)
+- [Conversions Aren’t Create Commands](#conversions-arent-create-commands)
 - [Dimensions (Brainstorm)](#dimensions-brainstorm)
 - [Brainstorm](#brainstorm-10)
 - [Immutable at Run Time](#immutable-at-run-time)
@@ -343,21 +343,21 @@ Contents
             - [Module Creation](#module-creation)
         - [Static Objects](#static-objects)
             - [Type Static Objects](#type-static-objects)
-            - [Procedure Static Objects](#procedure-static-objects)
+            - [Command Static Objects](#command-static-objects)
             - [Module Static Objects](#module-static-objects)
-        - [Static Procedures](#static-procedures)
-            - [Procedure Static Procedures](#procedure-static-procedures)
-            - [Type Static Procedures](#type-static-procedures)
-            - [Module Static Procedures](#module-static-procedures)
+        - [Static Commands](#static-commands)
+            - [Command Static Commands](#command-static-commands)
+            - [Type Static Commands](#type-static-commands)
+            - [Module Static Commands](#module-static-commands)
         - [Type Create and Destroy](#type-create-and-destroy)
             - [Type Create and Destroy Introduction](#type-create-and-destroy-introduction)
             - [Module Type Create and Destroy](#module-type-create-and-destroy)
-            - [Procedure Create and Destroy](#procedure-create-and-destroy)
+            - [Command Create and Destroy](#command-create-and-destroy)
     - [Question](#question)
     - [Old](#old-3)
         - [Objects and Memory Reservation](#objects-and-memory-reservation)
         - [Type Static](#type-static)
-            - [Only Procedures of Created Objects can be Called](#only-procedures-of-created-objects-can-be-called)
+            - [Only Commands of Created Objects can be Called](#only-commands-of-created-objects-can-be-called)
             - [Static Members](#static-members)
         - [Type Create and Type Destroy](#type-create-and-type-destroy)
             - [Types’ Creation](#types-creation)
@@ -365,15 +365,15 @@ Contents
         - [Module Static](#module-static)
             - [Other Issues](#other-issues)
 - [Symbol Roles](#symbol-roles)
-- [Procedure Symbol Roles](#procedure-symbol-roles)
+- [Command Symbol Roles](#command-symbol-roles)
     - [Reference and Call Targets](#reference-and-call-targets)
 - [Accesses](#accesses)
 - [Accesses](#accesses-1)
     - [A Complex Call Example](#a-complex-call-example)
 - [Brainstorm](#brainstorm-11)
     - [All Object Symbols that are the same Objects have the Same Line Targets](#all-object-symbols-that-are-the-same-objects-have-the-same-line-targets)
-    - [System Procedures for Modules](#system-procedures-for-modules)
-    - [New Name for System Procedures](#new-name-for-system-procedures)
+    - [System Commands for Modules](#system-commands-for-modules)
+    - [New Name for System Commands](#new-name-for-system-commands)
     - [To Do](#to-do)
     - [Remarks](#remarks)
     - [Exclusive Establishment](#exclusive-establishment-1)
@@ -395,10 +395,10 @@ Contents
     - [Accessible and Inaccessible](#accessible-and-inaccessible)
     - [Exclusion](#exclusion-2)
     - [Diagram Notation of Exclusion](#diagram-notation-of-exclusion)
-    - [A Procedure’s Set of Access Controllers](#a-procedures-set-of-access-controllers)
+    - [A Command’s Set of Access Controllers](#a-commands-set-of-access-controllers)
     - [Changing Access Modifiers at Run Time](#changing-access-modifiers-at-run-time)
     - [Inclusion](#inclusion)
-    - [Exclusion of System Procedures](#exclusion-of-system-procedures)
+    - [Exclusion of System Commands](#exclusion-of-system-commands)
     - [Interesting Applications of Exclusion](#interesting-applications-of-exclusion)
     - [Protected](#protected)
     - [Level Limitation](#level-limitation)
@@ -407,9 +407,9 @@ Contents
     - [Exclusion in Modules](#exclusion-in-modules)
 - [Friends](#friends)
     - [Brainstorm](#brainstorm-14)
-- [System Procedures with Access Modifiers](#system-procedures-with-access-modifiers)
+- [System Commands with Access Modifiers](#system-commands-with-access-modifiers)
     - [Constants (Brainstorm)](#constants-brainstorm)
-    - [Default System Procedure Configuration](#default-system-procedure-configuration)
+    - [Default System Command Configuration](#default-system-command-configuration)
     - [Access Symbols of Lines, Other Than Call Lines](#access-symbols-of-lines-other-than-call-lines)
     - [Smaller Issues](#smaller-issues)
         - [Access Symbols Represent Accesses](#access-symbols-represent-accesses)
@@ -428,7 +428,7 @@ Contents
     - [Interface < >](#interface--)
     - [Type](#type)
     - [Operators](#operators)
-    - [Exchangable Object and Procedure Notation](#exchangable-object-and-procedure-notation)
+    - [Exchangeable Object and Command Notation](#exchangeable-object-and-command-notation)
         - [Access in Object Representation](#access-in-object-representation)
         - [Access in System Representation](#access-in-system-representation)
         - [Other](#other-2)
@@ -438,7 +438,7 @@ Contents
     - [Brainstorm](#brainstorm-18)
 - [Containment for Divergence, Lines for Convergence](#containment-for-divergence-lines-for-convergence)
 - [Triangles for Arbitrary Groupings](#triangles-for-arbitrary-groupings)
-- [Procedures can Overlap](#procedures-can-overlap)
+- [Commands can Overlap](#commands-can-overlap)
 - [Another Thing](#another-thing)
 - [Symbol Placement and Proportion](#symbol-placement-and-proportion)
 - [Line Alignment](#line-alignment)
@@ -465,12 +465,12 @@ Contents
     - [Variable Amount of Arguments](#variable-amount-of-arguments)
 - [Text Code](#text-code)
     - [Objects](#objects-1)
-        - [Lines Shown in Create Procedure](#lines-shown-in-create-procedure)
+        - [Lines Shown in Create Command](#lines-shown-in-create-command)
         - [Lines Shown at declaration](#lines-shown-at-declaration)
         - [No "="](#no-)
         - [No Circle](#no-circle)
         - [Variations](#variations)
-    - [Procedures](#procedures-2)
+    - [Commands](#commands-2)
         - [Parameter Text Notation](#parameter-text-notation)
         - [Parameter Notations](#parameter-notations)
     - [Access Control](#access-control)
@@ -482,7 +482,7 @@ Contents
 - [Other Notation Techniques](#other-notation-techniques)
 - [Abstract Symbol](#abstract-symbol)
 - [When Shape Types, When Line Types](#when-shape-types-when-line-types)
-- [Transforming a Procedure to an Object](#transforming-a-procedure-to-an-object)
+- [Transforming a Command to an Object](#transforming-a-command-to-an-object)
 - [Summary of Concepts](#summary-of-concepts)
     - [Rough](#rough)
     - [More Detailed](#more-detailed)
@@ -512,7 +512,7 @@ Contents
     - [Contaiment by Containment and Reference](#contaiment-by-containment-and-reference)
     - [Changing a Reference or Type](#changing-a-reference-or-type)
     - [Execution order](#execution-order-1)
-    - [Procedures Parameters](#procedures-parameters)
+    - [Commands Parameters](#commands-parameters)
 - [Identifiers](#identifiers-2)
 - [Access Operators](#access-operators-1)
 - [Parameters](#parameters-1)
@@ -539,7 +539,7 @@ Contents
     - [Overview of Lines, Direction, Bidirection](#overview-of-lines-direction-bidirection)
     - [Overview of Lines: Direction](#overview-of-lines-direction)
     - [Overview of Lines, Connection](#overview-of-lines-connection)
-    - [Overview of Lines: Procedure Calls and References](#overview-of-lines-procedure-calls-and-references)
+    - [Overview of Lines: Command Calls and References](#overview-of-lines-command-calls-and-references)
     - [Overview of Redirection](#overview-of-redirection)
     - [Overview of Access Symbol Placement](#overview-of-access-symbol-placement)
     - [Overview of Lines: Alternate Notations](#overview-of-lines-alternate-notations)
@@ -705,97 +705,97 @@ A type gets an identifier, but also the separate objects get their own identifie
 
 The same name can be used for different symbols. Which of the *Johns* you’re talking about depends on its context (where it resides). Siblings usually don’t have the same name, because they reside in the same context. Only in a very special case siblings can have the same name.
 
-### Procedures
+### Commands
 
-Apart from a collection of sub objects, an object contains *procedures*.
+Apart from a collection of sub objects, an object contains *commands*.
 
 ![](images/Symbol%20Language%20(2004).010.png)
 
-Sub objects again contain procedures.
+Sub objects again contain commands.
 
 ![](images/Symbol%20Language%20(2004).011.png)
 
-Software can’t execute without procedures. When you run a procedure, an object *might something*.
+Software can’t execute without commands. When you run a command, an object *might something*.
 
-A button could have a __Set Text__ procedure for instance, which sets the text displayed on the button.
+A button could have a __Set Text__ command for instance, which sets the text displayed on the button.
 
 ![](images/Symbol%20Language%20(2004).012.png)
 
-Procedures are denoted by *squares*.
+Commands are denoted by *squares*.
 
-Other objects could also have a __Set Text__ procedure, therefore to identify the __Set Text__ procedure of the __*Button*__ object you notate:
+Other objects could also have a __Set Text__ command, therefore to identify the __Set Text__ command of the __*Button*__ object you notate:
 
 ```
 Button . Set Text
 ```
 
-A procedure itself consists of sub procedures: the separate steps of the procedures.
+A command itself consists of sub commands: the separate steps of the commands.
 
 ![](images/Symbol%20Language%20(2004).013.jpeg)
 
-Sub procedures are usually not embedded inside other procedures. They are defined separately:
+Sub commands are usually not embedded inside other commands. They are defined separately:
 
 ![](images/Symbol%20Language%20(2004).014.jpeg)
 
-And the sub procedures are *called* from the super procedure:
+And the sub commands are *called* from the super command:
 
 ![](images/Symbol%20Language%20(2004).015.jpeg)
 
-Calling a procedure has almost the same effect as inserting the called procedure there where you call it.
+Calling a command has almost the same effect as inserting the called command there where you call it.
 
-The __Redraw Button__ procedure is rather complex. In this procedure lines of the button are drawn, the text is drawn and whatever else makes up the display of the button. The steps of this redrawing are delegated by yet again calling other procedures. __Redraw Button__ could for instance call the __Draw Line__ procedure a number of times. So sub procedures of the __Set Text__ procedure are themselves composed of sub procedures.
+The __Redraw Button__ command is rather complex. In this command lines of the button are drawn, the text is drawn and whatever else makes up the display of the button. The steps of this redrawing are delegated by yet again calling other commands. __Redraw Button__ could for instance call the __Draw Line__ command a number of times. So sub commands of the __Set Text__ command are themselves composed of sub commands.
 
 ![](images/Symbol%20Language%20(2004).016.jpeg)
 
-You can also see here that separately defining a procedure can lead to the *reuse* of procedures. The __Draw Line__ procedure is reused three times in the example above. There are many procedures already defined, that you might use one way or another. Most of these procedures are encapsulated in a type. There’s for instance a __File__ type that contains procedures with which to control a single computer file.
+You can also see here that separately defining a command can lead to the *reuse* of commands. The __Draw Line__ command is reused three times in the example above. There are many commands already defined, that you might use one way or another. Most of these commands are encapsulated in a type. There’s for instance a __File__ type that contains commands with which to control a single computer file.
 
-So where might it end? Procedures might continue to delegate to one another and nothing might really actually happen. Well, it ends at a special group of procedures that don’t call other procedures anymore. Each of those procedures executes a so called machine instruction: a basic instruction that is sent to the computer’s central processing unit (CPU) and make the *computer* *do* something. The CPU performs a hardware defined *machine* procedure.
+So where might it end? Commands might continue to delegate to one another and nothing might really actually happen. Well, it ends at a special group of commands that don’t call other commands anymore. Each of those commands executes a so called machine instruction: a basic instruction that is sent to the computer’s central processing unit (CPU) and make the *computer* *do* something. The CPU performs a hardware defined *machine* command.
 
-That way there can develop a big procedure call tree-out, which makes a single procedure consist of many, many machine instructions, ranging from tens to thousands of machine instructions or even more.
+That way there can develop a big command call tree-out, which makes a single command consist of many, many machine instructions, ranging from tens to thousands of machine instructions or even more.
 
-Justs like with the kitchen example: you don’t necessarily need to see the details of the procedure in order to understand what the effect __Button . Set Text__ is.
+Justs like with the kitchen example: you don’t necessarily need to see the details of the command in order to understand what the effect __Button . Set Text__ is.
 
 ![](images/Symbol%20Language%20(2004).017.jpeg)
 
-Procedures can also be called *operations*, *functions* or *routines* and there are even more synonyms. But I might usually stick to the term *procedure*.
+Commands can also be called *operations*, *functions* or *routines* and there are even more synonyms. But I might usually stick to the term *command*.
 
 ### Many Don’t Get It
 
-Many think it’s not important to have a good subdivision in sub ideas and to come up with good names. They think that something just needs to work and then it’s ok. Consider what happens when you take away good naming and good subdivision: all you’re left with is procedures calling each other for no apparent reason until they resolve in machine instructions, the names of which are fortunately already picked by Intel(\*. The clarity of code is dependant on the clarity of names and subdivision. The less clear the names and subdivision are, the less sense the code might make.
+Many think it’s not important to have a good subdivision in sub ideas and to come up with good names. They think that something just needs to work and then it’s ok. Consider what happens when you take away good naming and good subdivision: all you’re left with is commands calling each other for no apparent reason until they resolve in machine instructions, the names of which are fortunately already picked by Intel(\*. The clarity of code is dependant on the clarity of names and subdivision. The less clear the names and subdivision are, the less sense the code might make.
 
 Sometimes I spend most time thinking about a subdivision of code and about names, not testing if something is doing what I want it to do. I can spend ten minutes figuring out a name. If I don’t give it a good name, the code is not going to make sense.
 
-An identifier is the only thing that can tell something about the contents of a symbol when its contained symbols aren’t shown. A kitchen consists of hundreds of things, but if you say ‘kitchen’ you really know enough. If it’s given a bad name, then you don’t know what it might. Then the only way you can know what it might is by looking at its contents and hope that good names are used there. If the names inside are no good either, there is still no way of telling what it might. You can’t tell what it might from just procedure structure and object structure. Eventually there has to be names. If all names suck, then you rely on interpreting machine instructions. If Intel(\* might have given indistinguishable names to machine instructions then you might be lost. You can’t see anything in the code then. All you could rely on is documentation saying what’s what, if such documentation even exists. In some cases where you use proper naming, you hardly need to supply any documentation.
+An identifier is the only thing that can tell something about the contents of a symbol when its contained symbols aren’t shown. A kitchen consists of hundreds of things, but if you say ‘kitchen’ you really know enough. If it’s given a bad name, then you don’t know what it might. Then the only way you can know what it might is by looking at its contents and hope that good names are used there. If the names inside are no good either, there is still no way of telling what it might do. You can’t tell what it might do from just command structure and object structure. Eventually there has to be names. If all names suck, then you rely on interpreting machine instructions. If Intel(\* might have given indistinguishable names to machine instructions then you might be lost. You can’t see anything in the code then. All you could rely on is documentation saying what’s what, if such documentation even exists. In some cases where you use proper naming, you hardly need to supply any documentation.
 
 Even when you don’t think a lot, when giving something a name, even then naming is important. The names, however quickly and poorly chosen, are distinguishable or the consequence is that you can’t see what your code might, unless you look into what’s under the name, hoping you’ll recognize something there.
 
-### Procedure Parameters
+### Command Parameters
 
-Procedures can have *parameters*: instructions passed along with the procedure that make the procedure behave differently. The __Button . Set Text__ procedure, for instance, has a __Text__ parameter, which indicates what the new text of the button might be.
+Commands can have *parameters*: instructions passed along with the command that make the command behave differently. The __Button . Set Text__ command, for instance, has a __Text__ parameter, which indicates what the new text of the button might be.
 
 Text is an *idea*. It is an *object*. It is *objects* that serve as parameters.
 
 ![](images/Symbol%20Language%20(2004).018.jpeg)
 
-The procedure can do whatever it wants with the parameters passed to it. All it really can do with it is again pass the parameter to another procedure *or* call procedures of the parameter.
+The command can do whatever it wants with the parameters passed to it. All it really can do with it is again pass the parameter to another command *or* call commands of the parameter.
 
-*Pass the Text parameter on to the next procedure (Format Text):*
+*Pass the Text parameter on to the next command (Format Text):*
 ![](images/Symbol%20Language%20(2004).019.jpeg)
 
-*Call the a procedure of the Text parameter:*
+*Call a command of the Text parameter:*
 ![](images/Symbol%20Language%20(2004).020.jpeg)
 
-The terms *parameter* and *argument* are often intermixed. For now you can assume that a parameter is a setting of a procedure and an argument is the value that it holds. That’s not the entire truth, though, but I’ll save the exact meaning for later.
+The terms *parameter* and *argument* are often intermixed. For now you can assume that a parameter is a setting of a command and an argument is the value that it holds. That’s not the entire truth, though, but I’ll save the exact meaning for later.
 
 #### Input, Output and Throughput Parameters
 
-Parameters are commonly input (instructions) for a procedure. Parameters can also be output (returned results). They make a procedure return something to the caller. One of the output parameters can be appointed to be *the* return value, which makes it sort of like the main output parameter. Some parameters can be input, and then output again. Then the procedure uses the parameter, transforms it and gives it back in the transformed state. These parameters are called throughput parameters, or in-out parameters. There are also objects in a procedure that are only used locally. Those are not usually called parameters, but sooner called *local objects*.
+Parameters are commonly input (instructions) for a command. Parameters can also be output (returned results). They make a command return something to the caller. One of the output parameters can be appointed to be *the* return value, which makes it sort of like the main output parameter. Some parameters can be input, and then output again. Then the command uses the parameter, transforms it and gives it back in the transformed state. These parameters are called throughput parameters, or in-out parameters. There are also objects in a command that are only used locally. Those are not usually called parameters, but sooner called *local objects*.
 
 ### Members
 
-An object’s sub objects and procedures are also called the object’s *members*. The parameters of a procedure can also be called *members* of the procedure. *Public members* are members that can be accessed outside their container. *Private members* can be accessed only by the object that holds them and are inaccessible to the outside.
+An object’s sub objects and commands are also called the object’s *members*. The parameters of a command can also be called *members* of the command. *Public members* are members that can be accessed outside their container. *Private members* can be accessed only by the object that holds them and are inaccessible to the outside.
 
-It’s *procedures* that are called. When you speak of calling an *object*, you’re talking about calling a procedure of an object (or a procedure of one of its sub objects).
+It’s *commands* that are called. When you speak of calling an *object*, you’re talking about calling a command of an object (or a command of one of its sub objects).
 
 ### Interfaces
 
@@ -899,7 +899,7 @@ A dashed line in this case is also called a *type line*, because it denotes whic
 
 Every symbol has an interface. The interface is represented by the *public* contents of the symbol. Anything *private* is the *implementation* of the interface.
 
-In a normal procedure, for instance, the code lines of it are actually private and part of the implementation. Only the procedure name, its parameters and return value are public and are part of the interface.
+In a normal command, for instance, the code lines of it are actually private and part of the implementation. Only the command name, its parameters and return value are public and are part of the interface.
 
 So a symbol always has an interface: its public members.
 
@@ -1097,7 +1097,7 @@ You can also reference a parent or descendant:
 I mention this separately here, because you won’t see this notation very often, but it’s possible all the same.
 
 
-Procedure Basics
+Command Basics
 ----------------
 
 <  
@@ -1108,13 +1108,13 @@ a diamond is also notated pointier than a square. So this is be a diamond too:
 
 ### Notation Elements
 
-*Squares* and *diamonds* are procedure symbols. They represent elements of the procedure structure.
+*Squares* and *diamonds* are command symbols. They represent elements of the command structure.
 
 ![](images/Symbol%20Language%20(2004).043.jpeg)
 
-The square is the usual symbol for a procedure. The diamond is a special symbol, as I might show lateron.
+The square is the usual symbol for a command. The diamond is a special symbol, as I might show lateron.
 
-Relations between procedures are expressed by *containment*:
+Relations between commands are expressed by *containment*:
 
 ![](images/Symbol%20Language%20(2004).044.jpeg)
 
@@ -1122,27 +1122,27 @@ And by connecting them with lines, or *lines:*
 
 ![](images/Symbol%20Language%20(2004).045.jpeg)
 
-There can only be solid or dotted lines between procedure symbols.
+There can only be solid or dotted lines between command symbols.
 
-### Procedures
+### Commands
 
-Procedures are denoted with squares:
+Commands are denoted with squares:
 
 ![](images/Symbol%20Language%20(2004).046.png)
 
-To make two squares be the same procedure you connect them with a line:
+To make two squares be the same command you connect them with a line:
 
 ![](images/Symbol%20Language%20(2004).047.png)
 
-A call to either square is a call to the same procedure.
+A call to either square is a call to the same command.
 
-### Procedure Call
+### Command Call
 
-To make one procedure call another procedure, you put a diamond in the calling procedure and you connect it to the procedure to call.
+To make one command call another command, you put a diamond in the calling command and you connect it to the command to call.
 
 ![](images/Symbol%20Language%20(2004).048.jpeg)
 
-You can say __A__ calls __B__, or __B__ is called from __A__. You could say that the line is directed outwards: the call line first exists a square, to next find its target procedure. The connected symbols here represent the same procedure. The side effect of a diamond though, is that it *executes*. __C__ is now part of procedure __A__ and it might execute when __A__ executes. It’s like the code of __B__ is inserted right into procedure __A__. Considering that, it seems that the direction of the line doesn’t really matter: both symbols simply represent the same procedure. But a procedure might have a definition in one place while the other symbols are calls or references to it. The topic of direction is looked at closer in the *Lines* chapter, but I’ll tell you now that the direction of a line is usually outwards.
+You can say __A__ calls __B__, or __B__ is called from __A__. You could say that the line is directed outwards: the call line first exists a square, to next find its target command. The connected symbols here represent the same command. The side effect of a diamond though, is that it *executes*. __C__ is now part of command __A__ and it might execute when __A__ executes. It’s like the code of __B__ is inserted right into command __A__. Considering that, it seems that the direction of the line doesn’t really matter: both symbols simply represent the same command. But a command might have a definition in one place while the other symbols are calls or references to it. The topic of direction is looked at closer in the *Lines* chapter, but I’ll tell you now that the direction of a line is usually outwards.
 
 If one square is called, its contained squares are called too.
 
@@ -1150,41 +1150,41 @@ If one square is called, its contained squares are called too.
 
 When __A__ is called, __B__ is called. When __B__ is called, __C__, __D__ and __E__ are called.
 
-### Procedure Reference
+### Command Reference
 
-A diamond connected to another procedure is a call. A square connected to another procedure is a mere *reference* to the procedure.
+A diamond connected to another command is a call. A square connected to another command is a mere *reference* to the command.
 
 ![](images/Symbol%20Language%20(2004).050.jpeg)
 
-A call to any square that represents the same procedure is a call to the same procedure. A reference to either of the procedure references is a reference to the same procedure.
+A call to any square that represents the same command is a call to the same command. A reference to either of the command references is a reference to the same command.
 
-Therefore, when you call a procedure reference, the referenced procedure is called:
+Therefore, when you call a command reference, the referenced command is called:
 
 ![](images/Symbol%20Language%20(2004).051.jpeg)
 
 When __A__ calls __B__, it’s actually calling __C__.
 
-When a procedure is called, the contained procedure *references* are *not* called.
+When a command is called, the contained command *references* are *not* called.
 
 ![](images/Symbol%20Language%20(2004).052.jpeg)
 
 When __A__ is called, __B__ and __D__ are called, but not __C__.
 
-### Nested Procedure
+### Nested Command
 
 A diamond without a line:
 
 ![](images/Symbol%20Language%20(2004).053.jpeg)
 
-Also executes, when its parent procedure executes, but it doesn’t delegate to another procedure, like a call might:
+Also executes, when its parent command executes, but it doesn’t delegate to another command, like a call might:
 
 ![](images/Symbol%20Language%20(2004).054.jpeg)
 
-It is an undelegated part of a procedure, called a *nested procedure*.
+It is an undelegated part of a command, called a *nested command*.
 
 Because a diamond doesn’t might be a call, it is also called an *execution* or an *execution point*.
 
-An undelegated square inside a procedure is also considered a nested procedure.
+An undelegated square inside a command is also considered a nested command.
 
 ![](images/Symbol%20Language%20(2004).055.jpeg)
 
@@ -1192,17 +1192,17 @@ but it doesn’t execute, unless you call it.
 
 ![](images/Symbol%20Language%20(2004).056.jpeg)
 
-A splineless diamond is also called an *active nested procedure*, while a splineless square is also called an *inactive nested procedure*.
+A splineless diamond is also called an *active nested command*, while a splineless square is also called an *inactive nested command*.
 
-### Procedure Contents
+### Command Contents
 
-A procedure can contain anything an object can. Anything you can declare inside a type can also be declared in a procedure.
+A command can contain anything an object can. Anything you can declare inside a type can also be declared in a command.
 
 ![](images/Symbol%20Language%20(2004).057.jpeg)
 
-That way procedures are like types, but procedures have special characteristics that I’ll lay out later.
+That way commands are like types, but commands have special characteristics that I’ll lay out later.
 
-The objects inside a procedure can be regarded:
+The objects inside a command can be regarded:
 
 - Input parameters
 - Output parameters
@@ -1210,39 +1210,39 @@ The objects inside a procedure can be regarded:
 - Return values
 - Local variables
 
-The input parameters of a procedure are its writable objects. The output values are its readable objects. Objects that are read-write are like in-out or thru parameters. One readable object can be chosen to be the return value, which promotes it to being the main output parameter. This might not give it extra capabilities, only an extra notation in certain places. The return value is denoted in a diagram by putting the term __Return__ near one of the parameters. The private objects are the procedure’s local variables. If __A__ is an input parameter and __B__ is an output parameter, you can also say that the procedure *takes* __A__ and *gives* __B__.
+The input parameters of a command are its writable objects. The output values are its readable objects. Objects that are read-write are like in-out or thru parameters. One readable object can be chosen to be the return value, which promotes it to being the main output parameter. This might not give it extra capabilities, only an extra notation in certain places. The return value is denoted in a diagram by putting the term __Return__ near one of the parameters. The private objects are the command’s local variables. If __A__ is an input parameter and __B__ is an output parameter, you can also say that the command *takes* __A__ and *gives* __B__.
 
-Squares inside procedures are non executing nested procedures or procedure references. Diamonds inside procedures are executing nested procedures or procedure calls.
+Squares inside commands are non executing nested commands or command references. Diamonds inside commands are executing nested commands or command calls.
 
-### Procedure Versus Type
+### Command Versus Type
 
-*Procedures* differ from *types* in the following ways:
+*Commands* differ from *types* in the following ways:
 
 - They can execute
-- A new procedure object is created *on each call* to the procedure and the procedure object is destroyed soon after the call.
+- A new command object is created *on each call* to the command and the command object is destroyed soon after the call.
 - The public writable objects are written only right before the call.
 - The public readable objects are read only right after the call.
 
 ### Required and Optional Parameters
 
-As a procedure is like a type it may seem that you have full freedom regarding which objects you write and which you don’t. However, many parameters of procedures are *required* parameters. This means that you *might* write something to it before the call. Optional parameters are ones that do not necessarily need to be written before the call. Required parameters are there to on one hand ensure a parameter holds a right value. That however, could have been done by the procedure’s initializing the value itself. The main point of required parameters is that a lot of times the function of a procedure just doesn’t make sense unless you write the parameters. The programmer is made extra aware of that by making the parameter required.
+As a command is like a type it may seem that you have full freedom regarding which objects you write and which you don’t. However, many parameters of commands are *required* parameters. This means that you *might* write something to it before the call. Optional parameters are ones that do not necessarily need to be written before the call. Required parameters are there to on one hand ensure a parameter holds a right value. That however, could have been done by the command’s initializing the value itself. The main point of required parameters is that a lot of times the function of a command just doesn’t make sense unless you write the parameters. The programmer is made extra aware of that by making the parameter required.
 
 In diagram code, optional parameters are denoted by displaying the word __Optional__ near the optional parameter. The other parameters are required.
 
-### Procedure Interface
+### Command Interface
 
-A procedure has an interface too, consisting of all public contents of the procedure: public objects (in, out or thru) and public procedures (nested procedures, calls and references). A procedure can have an interface line. The target of this interface line might be a procedure, in case of which both procedures get the same parameters.
+A command has an interface too, consisting of all public contents of the command: public objects (in, out or thru) and public commands (nested commands, calls and references). A command can have an interface line. The target of this interface line might be a command, in case of which both commands get the same parameters.
 
-*Procedure with an external interface:*  
+*Command with an external interface:*  
 ![](images/Symbol%20Language%20(2004).058.png)
 
-The interface source for a procedure can only be a procedure, not an object. Also: a procedure can *not* have multiple interfaces. The effect of allowing these two things can be imagined, but the usefulness of these structural possibilties is slim, while it might add a lot more rules to the Symbol Language.
+The interface source for a command can only be a command, not an object. Also: a command can *not* have multiple interfaces. The effect of allowing these two things can be imagined, but the usefulness of these structural possibilties is slim, while it might add a lot more rules to the Symbol Language.
 
-For the time being, triangles can reside in a procedure, but only for the purpose of grouping procedure members. You can’t give these triangle any lines, because that might suggest that the procedure adopts all characteristics of an object.
+For the time being, triangles can reside in a command, but only for the purpose of grouping command members. You can’t give these triangle any lines, because that might suggest that the command adopts all characteristics of an object.
 
-### Same Procedure, Same Interface
+### Same Command, Same Interface
 
-When you make two symbols the same procedure:
+When you make two symbols the same command:
 
 ![](images/Symbol%20Language%20(2004).059.jpeg)
 
@@ -1333,27 +1333,27 @@ This rule applies when the access symbol rule doesn’t override it. If the acce
 
 You can see __A__ as being __C__’s *eye* to __B__, so it is logically directed outwards.
 
-##### You Sooner Exit a Procedure than an Object
+##### You Sooner Exit a Command than an Object
 
 The rule that follows only applies if the direction isn’t determined by the two rules above: the access symbol rule or the outward rule.
 
-*You Sooner Exit a Procedure than an Object*
+*You Sooner Exit a Command than an Object*
 
-It happens more often that a procedure has a pointer to an object:
+It happens more often that a command has a pointer to an object:
 
 ![](images/Symbol%20Language%20(2004).066.png)
 
 `=>`
 
-than for an object to directly reference a procedure parameter:
+than for an object to directly reference a command parameter:
 
 ![](images/Symbol%20Language%20(2004).067.png)
 
 `<=`
 
-That is actually highly uncommon. It’s *not* uncommon to reference a procedure’s object, but it *is* uncommon to reference it directly from an object.
+That is actually highly uncommon. It’s *not* uncommon to reference a command’s object, but it *is* uncommon to reference it directly from an object.
 
-It is very *common* for a procedure to have a reference another object’s procedure:
+It is very *common* for a command to have a reference another object’s command:
 
 ![](images/Symbol%20Language%20(2004).068.png)
 
@@ -1363,17 +1363,17 @@ Especially when it’s a diamond:
 
 ![](images/Symbol%20Language%20(2004).069.jpeg)
 
-And it is very *uncommon* to reference a nested procedure from an object:
+And it is very *uncommon* to reference a nested command from an object:
 
 ![](images/Symbol%20Language%20(2004).070.png)
 
 `<=`
 
-Altogether it is more common for a procedure to point to something in an object, than for an object to directly reference something in a procedure: you sooner exit a procedure than an object.
+Altogether it is more common for a command to point to something in an object, than for an object to directly reference something in a command: you sooner exit a command than an object.
 
 ##### You Sooner Reference an Interface than Redirect It
 
-Or: you sooner point *to* a triangle than *from* a triangle. This rule only applies if the rules above don’t determine the direction: access symbol, outward, sooner exit a procedure than an object.
+Or: you sooner point *to* a triangle than *from* a triangle. This rule only applies if the rules above don’t determine the direction: access symbol, outward, sooner exit a command than an object.
 
 ![](images/Symbol%20Language%20(2004).071.png)
 
@@ -1423,7 +1423,7 @@ So not looking at the precedence of rules, the rules can be viewed as follows:
 
 - *Access symbol is decisive*
 - *You sooner exit than enter*
-- *You sooner exit a procedure than an object*
+- *You sooner exit a command than an object*
 - *You sooner reference an interface than redirect it*
 - *You sooner redirect a diamond than reference it*
 
@@ -1478,13 +1478,13 @@ An object symbol can only have one object line, one type line and one interface 
 
 __a__ points *away* from __A__. This is __A__’s line. The other lines: __c__ and __d__, point *to* __A__. In other words: __C__ and __D__ are pointers to __A__. __A__ is a pointer to __B__. 
 
-#### Procedure Lines
+#### Command Lines
 
-It works the same for procedures, except that procedures have reference and interface lines.
+It works the same for commands, except that commands have reference and interface lines.
 
-### Procedures to Procedures, Objects to Object
+### Commands to Commands, Objects to Object
 
-Procedures can be tied only to procedures.
+Commands can be tied only to commands.
 
 ![](images/Symbol%20Language%20(2004).088.png)
 
@@ -1492,35 +1492,35 @@ Objects can be tied only to objects.
 
 ![](images/Symbol%20Language%20(2004).064.png)
 
-Formally, there can be no lines connecting objects and procedures:
+Formally, there can be no lines connecting objects and commands:
 
 ![](images/Symbol%20Language%20(2004).089.jpeg)
 
-However, the above *is* a valid notation. It actually denotes the object being a pointer to the *return value* of the procedure. It’s an *implicit* notation (covered later), that actually standard for something else:
+However, the above *is* a valid notation. It actually denotes the object being a pointer to the *return value* of the command. It’s an *implicit* notation (covered later), that actually standard for something else:
 
 ![](images/Symbol%20Language%20(2004).090.jpeg)
 
-So then object symbols point only to object symbols and procedure symbols only to procedure symbols.
+So then object symbols point only to object symbols and command symbols only to command symbols.
 
 However, the picture above is actually again an implicit notation for something else, but I won’t go into detail about that yet.
 
-#### Relations between Objects and Procedures
+#### Relations between Objects and Commands
 
-So formally, you can’t create a relation between a procedure and an object by tying them together with lines.
+So formally, you can’t create a relation between a command and an object by tying them together with lines.
 
 However, apart from relations made by lines, symbols can also relate through containment.
 
-Objects relate to procedures primarily by containment.
+Objects relate to commands primarily by containment.
 
 ![](images/Symbol%20Language%20(2004).091.jpeg)
 
 ![](images/Symbol%20Language%20(2004).092.jpeg)
 
-But if you redirect an object’s procedure, the object gets a relation to the procedure redirected to.
+But if you redirect an object’s command, the object gets a relation to the command redirected to.
 
 ![](images/Symbol%20Language%20(2004).093.jpeg)
 
-But only by containing a procedure related to another or being contained *in* a procedure with related to another.
+But only by containing a command related to another or being contained *in* a command with related to another.
 
 ![](images/Symbol%20Language%20(2004).092.jpeg)
 
@@ -1568,16 +1568,16 @@ But if it has an interface line, its interface is bound to that of its interface
 
 *B is the interface, A is an implementation of it.*
 
-A procedure symbol can define its own procedure:
+A command symbol can define its own command:
 
 ![](images/Symbol%20Language%20(2004).032b.png)
 
-But if it has a reference line it is regarded no more than a reference or call to a procedure. The target of the line is considered the procedure itself or the *definition* of the procedure.
+But if it has a reference line it is regarded no more than a reference or call to a command. The target of the line is considered the command itself or the *definition* of the command.
 
 *A is the reference, B is the definition:*  
 ![](images/Symbol%20Language%20(2004).098.jpeg)
 
-*A is the procedure reference, B is the definition:*  
+*A is the command reference, B is the definition:*  
 ![](images/Symbol%20Language%20(2004).099.jpeg)
 
 #### Multiple Redirection and Final Targets
@@ -1590,7 +1590,7 @@ If an object symbol has an object line to a symbol that again has an object line
 
 The target object symbol is regarded to represent the object for real. The other symbols are references to the object.
 
-The same way there are symbols serving as a *target type* or a *target interface*. Also a procedure has an interface target. A procedure also has a call target and reference target. In both those cases reference lines are followed.
+The same way there are symbols serving as a *target type* or a *target interface*. Also a command has an interface target. A command also has a call target and reference target. In both those cases reference lines are followed.
 
 #### Tracing Targets
 
@@ -1676,15 +1676,15 @@ When you only want to find out the type, it is better to use a type trace than i
 
 It happens frequently that you need a symbol’s target object, type and interface in one blow. That requires two traces: an object-type trace and an interface trace. The full operation is an *object-type-interface trace*. It deserves a separate name for it’s a very common operation.
 
-##### Tracing Procedure Aspects
+##### Tracing Command Aspects
 
-Even though there are only *two* line types for procedure symbols, there are *three* aspects of a procedure symbol to trace:
+Even though there are only *two* line types for command symbols, there are *three* aspects of a command symbol to trace:
 
 - Execution
 - Definition
 - Interface
 
-A definition is a lot like the type of the procedure, while an execution is an instance of the procedure.
+A definition is a lot like the type of the command, while an execution is an instance of the command.
 
 ###### Definition Trace
 
@@ -1692,9 +1692,9 @@ The definition trace is quite easy: follow reference lines until you bump into a
 
 ![](images/Symbol%20Language%20(2004).110.jpeg)
 
-###### Procedure Interface Trace
+###### Command Interface Trace
 
-In the *procedure interface trace* you follow both line types, but you prefer following an interface line over a reference line.
+In the *command interface trace* you follow both line types, but you prefer following an interface line over a reference line.
 
 ![](images/Symbol%20Language%20(2004).111.jpeg)
 
@@ -1782,7 +1782,7 @@ If the closed circle consists of only type lines and is pointed to by only a typ
 
 ![](images/Symbol%20Language%20(2004).120.jpeg)
 
-An object trace is the same procedure. The examples above should also clarify circularity in a type trace.
+An object trace is the same command. The examples above should also clarify circularity in a type trace.
 
 ##### Circularity in a Interface Trace
 
@@ -1798,9 +1798,9 @@ In a definition trace, only one line type is followed, so a circularity there lo
 
 The whole circularity represents the definition.
 
-##### Circularity in a Procedure Interface Trace
+##### Circularity in a Command Interface Trace
 
-Both kinds of procedure symbol lines can close a circularity in a procedure interface trace. If a circularity in encountered when tracing the procedure interface, the whole circularity represents the procedure interface.
+Both kinds of command symbol lines can close a circularity in a command interface trace. If a circularity in encountered when tracing the command interface, the whole circularity represents the command interface.
 
 ![](images/Symbol%20Language%20(2004).123.jpeg)
 
@@ -1844,7 +1844,7 @@ __Type__ can be considered __Object__’s type target, because __Object__’s ty
 
 ##### ‘Target’
 
-The term *target* is used for both intermediate targets and the final target symbols. To be more exact about what target you’re talking about you can use the terms *direct*, *intermediate* and *final*. The *direct object* of __A__ in the picture < there is no picture... > above, for instance, is __B__, while the *final object* is __C__. __B__ is also regarded an *intermediate object target*, or *intermediate object*, because it’s not the final target, nor the line source. The unaugmented terms *target object*, *target type*, *target interface* and *target procedure* are by rule reserved for final targets. If you want to denote an intermediate object target, for instance use the term *object target*, instead of *target object*, or say *intermediate target object*, but don’t use the unaugmented term *target object* for an intermediate symbol. Many times out of the context it can be understood whether there is talked about a direct, intermediate or a final target, so it’s not always extra denoted. The term target *symbol* can be about any redirection step or be about any the final target of any aspect.
+The term *target* is used for both intermediate targets and the final target symbols. To be more exact about what target you’re talking about you can use the terms *direct*, *intermediate* and *final*. The *direct object* of __A__ in the picture < there is no picture... > above, for instance, is __B__, while the *final object* is __C__. __B__ is also regarded an *intermediate object target*, or *intermediate object*, because it’s not the final target, nor the line source. The unaugmented terms *target object*, *target type*, *target interface* and *target command* are by rule reserved for final targets. If you want to denote an intermediate object target, for instance use the term *object target*, instead of *target object*, or say *intermediate target object*, but don’t use the unaugmented term *target object* for an intermediate symbol. Many times out of the context it can be understood whether there is talked about a direct, intermediate or a final target, so it’s not always extra denoted. The term target *symbol* can be about any redirection step or be about any the final target of any aspect.
 
 *Object target* is not the same as *target object*. *Object target* denotes the direct target of an object line. *Target object* denotes the symbol that is regarded to *really* represent the object.
 
@@ -1868,15 +1868,15 @@ It’s the same thing with the redirection of other system aspects.
 
 ##### Object Definition
 
-The type of an object symbol is sometimes called the definition of the object, because the type of the object determines the object’s systematics for a great part. Just like the definition of a call determines the systematics of a procedure. The term *definition of object* could also mean the target object, though, so it’s easy to say something ambiguous.
+The type of an object symbol is sometimes called the definition of the object, because the type of the object determines the object’s systematics for a great part. Just like the definition of a call determines the systematics of a command. The term *definition of object* could also mean the target object, though, so it’s easy to say something ambiguous.
 
 ##### Object Delegation
 
 Delegating the object aspect is the main type of object redirection. Because it is the main one, it can also be called *the* delegation or *object delegation*.
 
-##### Procedure Definition Trace
+##### Command Definition Trace
 
-The procedure definition trace can also be called the *procedure trace* or the *definition trace*.
+The command definition trace can also be called the *command trace* or the *definition trace*.
 
 ### Genericity
 
@@ -2011,17 +2011,17 @@ If a symbol has no interface line, the interface is said to be *generic*. It ado
 
 If the interface is determined by no line at all then it has an *original interface*. You speak of neither explicit nor generic in that case. When the interface is generic or explicit, it’s always delegated. If the interface is explicit, the interface is delegated by the interface line. If the interface is generic, the interface is delegated by either type or object line.
 
-#### Procedure Symbol Genericity
+#### Command Symbol Genericity
 
-This section covers the genericity concepts around procedure symbols.
+This section covers the genericity concepts around command symbols.
 
 ##### Original and Delegated Definition
 
-When a procedure symbol has a reference line, it adopts the procedure definition of its line target. The symbol has a delegated definition. If the symbol has no reference line, it defines the procedure itself. It has its original definition.
+When a command symbol has a reference line, it adopts the command definition of its line target. The symbol has a delegated definition. If the symbol has no reference line, it defines the command itself. It has its original definition.
 
 ![](images/Symbol%20Language%20(2004).148.jpeg)
 
-The definition of the procedure symbol determines its symbolic contents. As a system runs, the definition can go from original to delegated and back. When you remove a reference line, the symbol regains its original contents. So the original definition of a symbol is not lost once you delegate the definition. You just temporarily can’t see the original definition. When a definition is delegated, usually nothing is defined as the original definition. So not every procedure symbol needs to store its own original systematics. 
+The definition of the command symbol determines its symbolic contents. As a system runs, the definition can go from original to delegated and back. When you remove a reference line, the symbol regains its original contents. So the original definition of a symbol is not lost once you delegate the definition. You just temporarily can’t see the original definition. When a definition is delegated, usually nothing is defined as the original definition. So not every command symbol needs to store its own original systematics. 
 
 |                          |                                  |
 |--------------------------|----------------------------------|
@@ -2030,7 +2030,7 @@ The definition of the procedure symbol determines its symbolic contents. As a sy
 | __Delegated definition__ | Definition determined by a line  |
 |                          | (a reference line)               |
 
-You can also speak of *original procedure* and *delegated procedure* or *the delegation of a procedure*.
+You can also speak of *original command* and *delegated command* or *the delegation of a command*.
 
 ##### Original and Delegated Execution
 
@@ -2055,20 +2055,20 @@ You don’t usually talk about *squares* having an *original execution*, however
 
 the square *is* said to have a *delegated execution*.
 
-##### Original and Delegated Procedure Interface
+##### Original and Delegated Command Interface
 
-The interface of a procedure can be delegated to its definition target, but it can also be delegated by an interface line. 
+The interface of a command can be delegated to its definition target, but it can also be delegated by an interface line. 
 
 | ![](images/Symbol%20Language%20(2004).152.jpeg) | ![](images/Symbol%20Language%20(2004).153.jpeg) |
 |-------------------------------------------------|-------------------------------------------------|
 
-In both cases the interface is delegated. If a procedure symbol has no line at all, it has an original interface.
+In both cases the interface is delegated. If a command symbol has no line at all, it has an original interface.
 
 ![](images/Symbol%20Language%20(2004).154.jpeg)
 
-During execution the interface can change from being delegated to original and back. The original interface isn’t lost as soon as you delegate the interface. When you annul the delegation, then the original interface reappears. It was only temporarily hidden. Most procedure symbols don’t define an original interface, so most symbols don’t holds original interface systematics.
+During execution the interface can change from being delegated to original and back. The original interface isn’t lost as soon as you delegate the interface. When you annul the delegation, then the original interface reappears. It was only temporarily hidden. Most command symbols don’t define an original interface, so most symbols don’t holds original interface systematics.
 
-The *use* of delegation of the interface is to fix the interface of a procedure and to use an already defined procedure interface.
+The *use* of delegation of the interface is to fix the interface of a command and to use an already defined command interface.
 
 |                         |                                 |
 |-------------------------|---------------------------------|
@@ -2077,14 +2077,14 @@ The *use* of delegation of the interface is to fix the interface of a procedure 
 | __Delegated interface__ | Interface determined by a line  |
 |                         | (interface or reference line)   |
 
-##### Explicit and Generic Procedure Interface
+##### Explicit and Generic Command Interface
 
-If a procedure symbol has an interface line then its definition can only be one that has that particular interface. The interface is explicit.
+If a command symbol has an interface line then its definition can only be one that has that particular interface. The interface is explicit.
 
 | ![](images/Symbol%20Language%20(2004).155.jpeg) | ![](images/Symbol%20Language%20(2004).156.jpeg) | ![](images/Symbol%20Language%20(2004).157.jpeg) |
 |-----|-----|-----|
 
-If the interface line of a procedure symbol isn’t set then it adopts the interface of the target definition.
+If the interface line of a command symbol isn’t set then it adopts the interface of the target definition.
 
 | ![](images/Symbol%20Language%20(2004).158.jpeg) | ![](images/Symbol%20Language%20(2004).159.jpeg) |
 |-------------------------------------------------|-------------------------------------------------|
@@ -2162,9 +2162,9 @@ Another very important use of the separation between types and interfaces is tha
 
 Conversely, you can let a program that isn’t familiar with your type, use your type anyway, by supporting an interface that the other program *is* familiar with.
 
-##### Interface Procedure Genericity
+##### Interface Command Genericity
 
-Interface procedure genericity is like interface type genericity. It means that if you fix the procedure interface, you can still choose from multiple procedure definitions.
+Interface command genericity is like interface type genericity. It means that if you fix the command interface, you can still choose from multiple command definitions.
 
 ##### Overview of Genericities of Type-Interface Interaction
 
@@ -2172,7 +2172,7 @@ Interface procedure genericity is like interface type genericity. It means that 
 |------------------------------------|----------------------------------------------------------|
 | __Interface type genericity__      | Fixing the interface doesn’t fix the type                |
 | __Type interface genericity__      | Fixing the type doesn’t fix the interface                |
-| __Interface-procedure genericity__ | Fixing the procedure interface doesn’t fix the procedure |
+| __Interface-command genericity__ | Fixing the command interface doesn’t fix the command |
 
 #### Final Issues
 
@@ -2232,7 +2232,7 @@ If you break one of the lines in the circularity, the one loosing the line comes
 | |               | Generic interface     | Interface determined by type line or object line |
 | |               |                       | (type’s whole interface used) |
 | |               |                       | (symbol adopts any interface the type might have) |
-| __Procedure Symbol Genericity__         | |
+| __Command Symbol Genericity__         | |
 | | __Definition__ | Original definition  | Definition determined by no line |
 | |                |                      | (no reference line) |
 | |                | Delegated definition | Definition determined by a line |
@@ -2244,15 +2244,15 @@ If you break one of the lines in the circularity, the one loosing the line comes
 | |                | Delegated interface  | Interface determined by a line |
 | |                |                      | (interface or reference line) |
 | |                | Explicit interface   | Interface determined by interface line |
-| |                |                      | (limits the possible procedures to ones with that interface) |
+| |                |                      | (limits the possible commands to ones with that interface) |
 | |                | Generic interface    | Interface determined by reference line |
-| |                |                      | (symbol adopts any interface the procedure might have) |
+| |                |                      | (symbol adopts any interface the command might have) |
 
 |                                      |                                |                                           |
 |--------------------------------------|--------------------------------|-------------------------------------------|
 | __Interface Doesn’t Determine Type__ | Interface type genericity      | Fixing the interface doesn’t fix the type |
 |                                      | Type interface genericity      | Fixing the type doesn’t fix the interface |
-|                                      | Interface-procedure genericity | Fixing the procedure interface doesn’t fix the procedure |
+|                                      | Interface-command genericity | Fixing the command interface doesn’t fix the command |
 
 ### Peels
 
@@ -2434,7 +2434,7 @@ Which is, by the way, not used a lot.
 
 ##### Peels for Other Symbols.
 
-The peel notation above works the same for triangle symbols. It also works for procedure symbols, except that procedure symbols have a different set of line types, so a different set of peel types: reference peels and interface peels.
+The peel notation above works the same for triangle symbols. It also works for command symbols, except that command symbols have a different set of line types, so a different set of peel types: reference peels and interface peels.
 
 ##### Abstract Meaning
 
@@ -2468,8 +2468,8 @@ With a simple alternative shape border you can express that a symbol has a line 
 |                                                |                                                |
 |:----------------------------------------------:|:----------------------------------------------:|
 | ![](images/Symbol%20Language%20(2004).200.png) | ![](images/Symbol%20Language%20(2004).201.png) |
-|           *Double procedure symbol:*           |           *Dotted procedure symbol:*           |
-|    *procedure symbol with a reference line*    |   *procedure symbol with an interface line*    |
+|            *Double command symbol:*            |            *Dotted command symbol:*            |
+|     *command symbol with a reference line*     |    *command symbol with an interface line*     |
 
 The solid border needs to be doubled, because otherwise you don’t see that information about the line is expressed. When you denote that a symbol has both an object line as well as a type line, you can use a single solid peel, because then it’s clear that you’re expressing line information. 
 
@@ -2491,8 +2491,8 @@ To denote that many borders are crossed, usually three peels are used. So three 
 |                                |                                |
 |:------------------------------:|:------------------------------:|
 | ![](images/Symbol%20Language%20(2004).204.png) | ![](images/Symbol%20Language%20(2004).205.png) |
-|         Triple square:         |       Triple dotted square:    |
-|    procedure symbol with a     |     procedure symbol with a    |
+|         Triple square:         |      Triple dotted square:     |
+|     command symbol with a      |      command symbol with a     |
 | far away reference line target | far away interface line target |
 
 ###### Other Abstract Meanings
@@ -2586,7 +2586,7 @@ Ambiguity risks might be widely covered in the ‘Diagram Metrics’ in the book
 Executions & Parameters
 -----------------------
 
-This section discusses all issues around executing procedures and using parameters.
+This section discusses all issues around executing commands and using parameters.
 
 ### Terms
 
@@ -2595,13 +2595,13 @@ Here I introduce basic terms in the area of executions and parameters. Here’s 
 - Reference
 - Call
 - Definition
-- Nested procedure
+- Nested command
 - Active
 - Inactive
-- Active nested procedure
-- Inactive nested procedure
-- Deeper nested procedure
-- Sub procedure 
+- Active nested command
+- Inactive nested command
+- Deeper nested command
+- Sub command 
 - Parameter
 - Argument
 - Executor
@@ -2609,11 +2609,11 @@ Here I introduce basic terms in the area of executions and parameters. Here’s 
 
 #### Reference
 
-The following are procedure references:
+The following are command references:
 
 ![](images/Symbol%20Language%20(2004).215.png)
 
-It’s a square that is redirected. It’s always a *square* with a *reference line*. It is a procedure that redirects, but *might not* execute. It can point either to a square or a diamond.
+It’s a square that is redirected. It’s always a *square* with a *reference line*. It is a command that redirects, but *might not* execute. It can point either to a square or a diamond.
 
 #### Call
 
@@ -2621,77 +2621,77 @@ The following are calls:
 
 ![](images/Symbol%20Language%20(2004).216.png)
 
-It’s a diamond that is redirected. It’s always a *diamond* with a *reference line*. It executes a procedure defined elsewhere. Therefore it is a call. It can point either to a square or a diamond.
+It’s a diamond that is redirected. It’s always a *diamond* with a *reference line*. It executes a command defined elsewhere. Therefore it is a call. It can point either to a square or a diamond.
 
 #### Definition
 
-A definition is a procedure symbol with no reference line at all.
+A definition is a command symbol with no reference line at all.
 
 ![](images/Symbol%20Language%20(2004).217.png)
 
-The reference line should not exist at all, not just not be shown. It’s a definition, because the contents of the procedure aren’t defined elsewhere, but defined in the symbol itself.
+The reference line should not exist at all, not just not be shown. It’s a definition, because the contents of the command aren’t defined elsewhere, but defined in the symbol itself.
 
-#### Nested Procedure
+#### Nested Command
 
-A procedure symbol inside another procedure symbol:
+A command symbol inside another command symbol:
 
 ![](images/Symbol%20Language%20(2004).218.jpeg)
 
-without a reference line is called a nested procedure.
+without a reference line is called a nested command.
 
-A nested procedure is a definition contained in a procedure:
+A nested command is a definition contained in a command:
 
 ![](images/Symbol%20Language%20(2004).219.png)
 
-This type of definition is usually not called a definition. The nested procedure might be directly contained by a procedure. So this is not a nested procedure:
+This type of definition is usually not called a definition. The nested command might be directly contained by a command. So this is not a nested command:
 
 ![](images/Symbol%20Language%20(2004).220.png)
 
-The nested procedure can be a diamond or a square. Its container can also be a diamond as well as a square. A nested procedure might not have a reference line, or it might have been a reference or a call, not a nested procedure.
+The nested command can be a diamond or a square. Its container can also be a diamond as well as a square. A nested command might not have a reference line, or it might have been a reference or a call, not a nested command.
 
 #### Active and Inactive
 
 A diamond executes, a square might not. A diamond is said to be active, while a square is inactive.
 
-#### Active Nested Procedure
+#### Active Nested Command
 
-A nested procedure that is a diamond, is called an active nested procedure:
+A nested command that is a diamond, is called an active nested command:
 
 | ![](images/Symbol%20Language%20(2004).221.png) | ![](images/Symbol%20Language%20(2004).222.png) |
 |------------------------------------------------|------------------------------------------------|
 
 It’s called active, because it executes.
 
-#### Inactive Nested Procedure
+#### Inactive Nested Command
 
-An inactive nested procedure is a nested procedure that doesn’t execute. So it’s a nested procedure that is a square:
+An inactive nested command is a nested command that doesn’t execute. So it’s a nested command that is a square:
 
 | ![](images/Symbol%20Language%20(2004).223.png) | ![](images/Symbol%20Language%20(2004).224.png) |
 |------------------------------------------------|------------------------------------------------|
 
 It won’t execute unless you call it.
 
-#### Deeper Nested Procedure
+#### Deeper Nested Command
 
-A deeper nested procedure is a nested procedure inside a nested procedure. So it’s a procedure symbol without a reference line in a procedure symbol without a reference line in a procedure symbol, for instance:
+A deeper nested command is a nested command inside a nested command. So it’s a command symbol without a reference line in a command symbol without a reference line in a command symbol, for instance:
 
 ![](images/Symbol%20Language%20(2004).225.png)
 
 It doesn’t matter whether any of the symbols is a square or a diamond.
 
-#### Sub Procedure
+#### Sub Command
 
-A sub procedure is any procedure symbol inside another procedure symbol.
+A sub command is any command symbol inside another command symbol.
 
 ![](images/Symbol%20Language%20(2004).226.png)
 
-But usually it’s only the diamonds that are referred to as sub procedures. That’s because the execution of a procedure is made up of the execution of it’s contained diamonds combined.
+But usually it’s only the diamonds that are referred to as sub commands. That’s because the execution of a command is made up of the execution of it’s contained diamonds combined.
 
 ![](images/Symbol%20Language%20(2004).227.png)
 
 #### Parameter and Argument
 
-Parameters and arguments are the *public* members of a procedure. In a square they’re called parameters. In a diamond they’re called arguments.
+Parameters and arguments are the *public* members of a command. In a square they’re called parameters. In a diamond they’re called arguments.
 
 ![](images/Symbol%20Language%20(2004).228.png)
 
@@ -2779,7 +2779,7 @@ There are more ways to draw out an assignment, but the ones here are by far the 
 
 State assignment is the most basic assignment. Line assignment is based on it. A line target is stored in an __Integer__ object. So when assigning the line target, you’re actually assigning the __State__ of this __Integer__ object. Drawing a line assignment as a state assignment is a more difficult, but useful notation. However, in this chapter I might stick to the simpler notations.
 
-You can work with the *type* and *interface* lines the same way: there’s also type assignment and interface assignment. Likewise, you can work with line assignments for *procedure symbols*. However, I’ll mostly talk about state and object assignment.
+You can work with the *type* and *interface* lines the same way: there’s also type assignment and interface assignment. Likewise, you can work with line assignments for *command symbols*. However, I’ll mostly talk about state and object assignment.
 
 #### Get and Set are Inseparable
 
@@ -2811,7 +2811,7 @@ An assignment call:
 
 Assignment of arguments simply *might* take place in the prolog, even though they require reading the arguments.
 
-Assignment procedures are fundamental procedures of the Symbol Language and behave much different from other procedures.
+Assignment commands are fundamental commands of the Symbol Language and behave much different from other commands.
 
 #### Writing Arguments
 
@@ -2836,7 +2836,7 @@ If you do do it, then you’d better copy the final target of the argument to so
 | Argument points to A | Line target copied | Diamond destroys. Argument’s line is annulled. |
 |                      |                    |      Line target information is preserved.     |
 
-A detailed notation of this assignment is beyond the scope of this chapter. This method for procedure output is hardly ever used. Other means are adopted to have procedure output.
+A detailed notation of this assignment is beyond the scope of this chapter. This method for command output is hardly ever used. Other means are adopted to have command output.
 
 #### ----------------- < >
 
@@ -2846,7 +2846,7 @@ A detailed notation of this assignment is beyond the scope of this chapter. This
 
 < Referencing a created parameter. You don’t keep the object of it then (that should have been formulated differently). Actually something else should be done for that. I do want to keep it. But not by changing breaking the chain methodology. I might rest. >
 
-The procedure output method above is hardly used ever used. That’s because you can’t really tell if the target object might keep existing, unless you’ve defined the object yourself. Therefore, using output other than state output is usually done by passing a reference to an existing object to the procedure.
+The command output method above is hardly used ever used. That’s because you can’t really tell if the target object might keep existing, unless you’ve defined the object yourself. Therefore, using output other than state output is usually done by passing a reference to an existing object to the command.
 
 This, however requires you to *write* the line of an argument.
 
@@ -2874,31 +2874,31 @@ You’ll mainly use arguments by reading and writing their state or to pass obje
 
 #### Create Argument and Call Argument’s Members
 
-There may be more things you want to do with an argument before passing it to a procedure. You may want to create a brand new object as an argument and you may want to call some members of the argument first. You *can’t* do these operations directly on the argument. You might create a separate object, manipulate it and then pass it by reference
+There may be more things you want to do with an argument before passing it to a command. You may want to create a brand new object as an argument and you may want to call some members of the argument first. You *can’t* do these operations directly on the argument. You might create a separate object, manipulate it and then pass it by reference
 
 There’s a shorthand for creating a brand new object and passing it by reference. In text code this might look like this:
 
 ```vb
-Procedure ( New Type )
+Command ( New Type )
 ```
 
-It’s declared directly inside the procedure call. That is: unless the object is used elsewhere too. The above can also be notated as follows:
+It’s declared directly inside the command call. That is: unless the object is used elsewhere too. The above can also be notated as follows:
 
 ```vb
-Object As Type       'Declaration
-Object = New Type    'Creation
-Procedure ( Object ) 'Pass to Procedure
+Object As Type     'Declaration
+Object = New Type  'Creation
+Command ( Object ) 'Pass to Command
 ```
 
 But if __Object__ isn’t used anywhere else, you can just type: 
 
 ```vb
-Procedure ( New Type )
+Command ( New Type )
 ```
 
 That way, the object seems to be the argument itself, even though you’re actually passing an object by reference.
 
-In diagram code, the declaration of the object, its creation and its being passed to the procedure, looks like this: 
+In diagram code, the declaration of the object, its creation and its being passed to the command, looks like this: 
 
 ![](images/Symbol%20Language%20(2004).247.jpeg)
 
@@ -2915,16 +2915,16 @@ Of course you might not show the implicit creation.
 Then you just see that the object is created, and you might be satisfied knowing only *that* it is created, not where and when. This is just about exactly the effect of:
 
 ```vb
-Procedure ( New Type )
+Command ( New Type )
 ```
 
 #### Created Arguments
 
-A procedure can decide if an argument is a created object or not. If it is a created object, then the object is created in the prolog, even before writing arguments. The argument object is created, then it is written, then the procedure executes.
+A command can decide if an argument is a created object or not. If it is a created object, then the object is created in the prolog, even before writing arguments. The argument object is created, then it is written, then the command executes.
 
-Arguments as such are created objects directly contained by the procedure. They shouldn’t have lines. 
+Arguments as such are created objects directly contained by the command. They shouldn’t have lines. 
 
-In the epilog, first arguments are read before the created arguments are destroyed. The procedure only destroys objects it directly contains.
+In the epilog, first arguments are read before the created arguments are destroyed. The command only destroys objects it directly contains.
 
 #### Do It with a Parameter’s Members
 
@@ -2932,7 +2932,7 @@ In the epilog, first arguments are read before the created arguments are destroy
 *Other things done with parameters*  
 or keeping a reference to a created parameter or __do the same with members of parameters__... Hmmm...
 
-Except for passing procedure reference to a procedure.  
+Except for passing command reference to a command.  
 \>
 
 #### Accessing Arguments During Execution
@@ -2943,7 +2943,7 @@ The diagrammatic effect of this is the following. A member can be accessed by th
 
 ![](images/Symbol%20Language%20(2004).250.png)
 
-I said that procedures called by a procedure can access its arguments. That suggests that the procedure that accesses the member can be somewhere else than inside the member’s diamond:
+I said that commands called by a command can access its arguments. That suggests that the command that accesses the member can be somewhere else than inside the member’s diamond:
 
 ![](images/Symbol%20Language%20(2004).251.png)
 
@@ -2957,9 +2957,9 @@ There’s one more ambiguity in argument access that I might resolve here. In an
 
 ![](images/Symbol%20Language%20(2004).252.png)
 
-there isn’t anything that tells which is the source of the assignment and which is the target: is it __Procedure . B ![](images/Symbol%20Language%20(2004).229.png) A__ or is it __A ![](images/Symbol%20Language%20(2004).229.png) Procedure . B__ ? You could name the arguments of the ![](images/Symbol%20Language%20(2004).229.png) (*object is*) call: name them __Get__ and __Set__ to make out the difference, but usually another method is adopted.
+there isn’t anything that tells which is the source of the assignment and which is the target: is it __Command . B ![](images/Symbol%20Language%20(2004).229.png) A__ or is it __A ![](images/Symbol%20Language%20(2004).229.png) Command . B__ ? You could name the arguments of the ![](images/Symbol%20Language%20(2004).229.png) (*object is*) call: name them __Get__ and __Set__ to make out the difference, but usually another method is adopted.
 
-Assuming the assignment is really __Procedure . B ![](images/Symbol%20Language%20(2004).229.png) A__, the effect of the assignment is:
+Assuming the assignment is really __Command . B ![](images/Symbol%20Language%20(2004).229.png) A__, the effect of the assignment is:
 
 ![](images/Symbol%20Language%20(2004).253.png)
 
@@ -2988,7 +2988,7 @@ For state assignments it’s advised to always show the access symbol.
 
 < Some things here may have a place in Execution Order >
 
-< Which situations can only reside in a procedure? >
+< Which situations can only reside in a command? >
 
 This section covers some basic execution situations. Each situation has certain implications. Usually the implications are quite < voor de hand liggend >, but noteworthy nevertheless.
 
@@ -3022,15 +3022,15 @@ But if you call B, then you get the following:
 
 ![](images/Symbol%20Language%20(2004).262.jpeg)
 
-Actually, The letters distinguish the different symbols. If you only use letters to distinguish which procedure definition it’s about, you get the following:
+Actually, The letters distinguish the different symbols. If you only use letters to distinguish which command definition it’s about, you get the following:
 
 ![](images/Symbol%20Language%20(2004).263.jpeg)
 
 So in that sense, diamond A might execute. But not the definition executes, only the call executes.
 
-#### Diamonds Can only be Directly Inside a Procedure Symbol, Diamonds Can’t be Directly Inside an Object Symbol
+#### Diamonds Can only be Directly Inside a Command Symbol, Diamonds Can’t be Directly Inside an Object Symbol
 
-Because execution can only take place in a procedure, a diamond can’t be directly inside an object Symbol
+Because execution can only take place in a command, a diamond can’t be directly inside an object Symbol
 
 ![](images/Symbol%20Language%20(2004).264.jpeg)
 
@@ -3046,7 +3046,7 @@ You can (usually) only access members of a diamond, because a square is never cr
 
 Because a diamond is only created when it’s executing, you can only access members when the diamond is in execution.
 
-Some members of a procedure can be static. In that case the member belongs to the procedure definition. Those member are the same for any reference or call to a procedure. Static member of a procedure can be freely accessed through any square or diamond that represents it.
+Some members of a command can be static. In that case the member belongs to the command definition. Those member are the same for any reference or call to a command. Static member of a command can be freely accessed through any square or diamond that represents it.
 
 #### The Diamond Executor Can Access Members Only Just before and Just After the Execution
 
@@ -3060,17 +3060,17 @@ In fact the diamond executor might only write members just before the call and m
 
 #### Accessing a Diamond Member During a Call
 
-So how might you access a diamond member *during* a call? Well, usually only procedures called by the executing diamond can access the call parent.
+So how might you access a diamond member *during* a call? Well, usually only commands called by the executing diamond can access the call parent.
 
 ![](images/Symbol%20Language%20(2004).267.jpeg)
 
-Diamond A executes, then diamond B executes and accesses a member of diamond A. It’s not the procedure definition, the square, that accesses a member of diamond A, but it’s the specific call to the procedure that access diamond A. So usually you’ll only see child diamonds accessing parent diamonds, on top of the more common situation of write access before a call and read access after.
+Diamond A executes, then diamond B executes and accesses a member of diamond A. It’s not the command definition, the square, that accesses a member of diamond A, but it’s the specific call to the command that access diamond A. So usually you’ll only see child diamonds accessing parent diamonds, on top of the more common situation of write access before a call and read access after.
 
 Multi-threading, which is ..., can also make you able to access a diamond in execution, but this is usually not a good idea. Restrictions should be opposed to multi-threading to avoid such situations.
 
 ![](images/Symbol%20Language%20(2004).268.jpeg)
 
-Two sibling procedures are executing at the same time, in different threads, which makes it possible for one executing procedure to access the other. Thread control makes it possible to avoid such volatile situations.
+Two sibling commands are executing at the same time, in different threads, which makes it possible for one executing command to access the other. Thread control makes it possible to avoid such volatile situations.
 
 (the fact that the diamonds are drawn with thicker lines above, says that they are both in execution. If they wouldn’t be thicker drawn, then the diagram above doesn’t explicitly show that there is a multi-threaded situation. Regarding it single-threadedly, the situation above is just the bigger diamond executing first, after which the smaller diamond uses its return value.)
 
@@ -3078,59 +3078,59 @@ Two sibling procedures are executing at the same time, in different threads, whi
 
 < consider the example of diamond reference to diamond in the main argument reference example >
 
-#### Passing an object reference to a procedure
+#### Passing an object reference to a command
 
 ![](images/Symbol%20Language%20(2004).269.jpeg)
 
-When you pass an object reference to a procedure, the procedure can access the object.  
-In the situation above it seems the procedure could access the object anyway (because a procedure can access everything accessible to the object that contains it). It *can*, but in this case the *caller* decides which object to point to, not the called.
+When you pass an object reference to a command, the command can access the object.  
+In the situation above it seems the command could access the object anyway (because a command can access everything accessible to the object that contains it). It *can*, but in this case the *caller* decides which object to point to, not the called.
 
-#### Procedure can set object reference itself too
+#### Command can set object reference itself too
 
 When the caller (the parent diamond) sets the line, then the caller decides which object the call might refer to.
 
 So lines going out of a diamond aren’t necessarily lines set by the caller.  
-Procedures can’t set line going *into* the square themselves. Those are always set by the caller.
+Commands can’t set line going *into* the square themselves. Those are always set by the caller.
 
-It’s important that the procedure itself sets lines, because the line targets of procedure members often serve as the output values of the procedure.
+It’s important that the command itself sets lines, because the line targets of command members often serve as the output values of the command.
 
 < I don’t know a notation to distinct sets by the caller and sets by the call. Well... in a more explicit notation you might see that the caller calls the set or the called calls the set. >
 
-#### Nested Procedure Access
+#### Nested Command Access
 
-Nested procedures have special access privileges compared to delegated procedure symbols.
+Nested commands have special access privileges compared to delegated command symbols.
 
 ![](images/Symbol%20Language%20(2004).270.jpeg)
 
 < Bad explanation following >  
-A nested procedure can freely access anything of its parent nested procedure and the parent nested procedure’s parent nested procedure, etcetera. If going up the procedure ancestry a procedure symbol is encountered with a reference line, the nested procedure can access this ancestor freely, but not any higher in the procedure ancestry.
+A nested command can freely access anything of its parent nested command and the parent nested command’s parent nested command, etcetera. If going up the command ancestry a command symbol is encountered with a reference line, the nested command can access this ancestor freely, but not any higher in the command ancestry.
 
-In the picture above, the top two lines could have been set by A itself. The first resides in A’s parent nested procedure. The second resides in the *execution* that parents A, so still accessible to A. The last line, crossed out, can’t be set by A itself, because it resides outside A’s containing call. It can be set only by a symbol higher than A’s containing call, for instance B.
+In the picture above, the top two lines could have been set by A itself. The first resides in A’s parent nested command. The second resides in the *execution* that parents A, so still accessible to A. The last line, crossed out, can’t be set by A itself, because it resides outside A’s containing call. It can be set only by a symbol higher than A’s containing call, for instance B.
 
 Squares formally can’t have outward lines, except for static members. There are situations in which non static members of squares are shown to have outward lines, but those are discussed later.
 
-#### Passing a procedure reference
+#### Passing a command reference
 
-When you pass a procedure reference to a child procedure:
+When you pass a command reference to a child command:
 
 ![](images/Symbol%20Language%20(2004).271.jpeg)
 
-The child can call the referenced procedure at might.
+The child can call the referenced command at might.
 
 #### The If example
 
-A great application of that is the If procedure.
+A great application of that is the If command.
 
 ![](images/Symbol%20Language%20(2004).272.jpeg)
 
-Procedure A passes Clause A and Clause B to Procedure B, along with an object that serves as the condition. Depending on the state of the condition, Clause A is executed or Clause B. So Procedure B gets to decide which clause executes.
+Command A passes Clause A and Clause B to Command B, along with an object that serves as the condition. Depending on the state of the condition, Clause A is executed or Clause B. So Command B gets to decide which clause executes.
 
-The clauses can freely access anything of __Procedure A__, so __Procedure B__ is able to call things that can freely access __Procedure A__’s stuff.
+The clauses can freely access anything of __Command A__, so __Command B__ is able to call things that can freely access __Command A__’s stuff.
 
 #### Brainstorm
 
 - Simple voor de hand liggende issues regarding execution < Which precisely? >
-- For instance, diamond only inside a procedure symbol
+- For instance, diamond only inside a command symbol
 - Stuff like that. Simple issues that you can easily understand.
 - Diamond pointing to another diamond
 - Recursive calls... hmmm... advanced issue. Hoef je je klomp niet over te breken. 
@@ -3155,26 +3155,26 @@ If eventually the original caller is called again, with one of its calls in prog
 
 ##### 4
 
-(*Implicit* embedded procedure reference causes a separate implicit call.)
+(*Implicit* embedded command reference causes a separate implicit call.)
 
 ##### 5
 
-__*Procedures can only be Called from another Procedure*__
+__*Commands can only be Called from another Command*__
 
-*Procedures can only be called directly from another procedure.*
+*Commands can only be called directly from another command.*
 
-< Because a call executes its target when its container square is executed. Actually, relate all restrictions to the fact that procedures execute. >
+< Because a call executes its target when its container square is executed. Actually, relate all restrictions to the fact that commands execute. >
 
-A procedure symbol can ony have a call line if it’s directly inside another procedure. Usually the call line first exits the procedure that contains the call. In other words: a call line usually directly exits a square.
+A command symbol can ony have a call line if it’s directly inside another command. Usually the call line first exits the command that contains the call. In other words: a call line usually directly exits a square.
 
 ![](images/Symbol%20Language%20(2004).274.png)
 
-Only when you call a nested procedure or an embedded procedure reference, the line doesn’t exit the procedure first:
+Only when you call a nested command or an embedded command reference, the line doesn’t exit the command first:
 
-*Call to nested procedure:*  
+*Call to nested command:*  
 ![](images/Symbol%20Language%20(2004).275.jpeg)
 
-*Call an internal procedure reference:*  
+*Call an internal command reference:*  
 ![](images/Symbol%20Language%20(2004).276.jpeg)
 
 ### Implicit Notations
@@ -3227,7 +3227,7 @@ __`=`__
 
 < Add some access symbols >
 
-If you want to access members of a procedure using only one call, you might explicitly notate the diamond that is the call.
+If you want to access members of a command using only one call, you might explicitly notate the diamond that is the call.
 
 ![](images/Symbol%20Language%20(2004).283.jpeg)
 
@@ -3239,9 +3239,9 @@ But as I said: child diamonds can access their parent diamond’s members if the
 
 ![](images/Symbol%20Language%20(2004).284.jpeg)
 
-###### An object symbol as a pointer to a procedure symbol: Implicit return value reference.
+###### An object symbol as a pointer to a command symbol: Implicit return value reference.
 
-You can also let an object symbol point to a procedure symbol.
+You can also let an object symbol point to a command symbol.
 
 ![](images/Symbol%20Language%20(2004).285.jpeg)
 
@@ -3269,7 +3269,7 @@ in the second picture you see the explicit call. The third picture adds the expl
 
 ###### Reference to Other Out Parameters
 
-An object reference to a procedure can only be a reference to the procedure’s return value. If you want to reference other out parameters, you might reference them explicitly.
+An object reference to a command can only be a reference to the command’s return value. If you want to reference other out parameters, you might reference them explicitly.
 
 ![](images/Symbol%20Language%20(2004).291.jpeg)
 
@@ -3282,8 +3282,8 @@ __a__ can only be a reference to __r__, the return value. __b__ is a reference t
 ###### Implicit Calls Introduction
 
 < Maybe diagrams can be more basic, expressing solely a concept >  
-< reference a procedure parameter from an object. >  
-To explain this concept I use an example where one procedure, called __Get__, returns an object that is then passed to another procedure, called __Set__. This requires two calls: first a call to __Get__ and then to __Set__.
+< reference a command parameter from an object. >  
+To explain this concept I use an example where one command, called __Get__, returns an object that is then passed to another command, called __Set__. This requires two calls: first a call to __Get__ and then to __Set__.
 
 ###### Explicit Calls
 
@@ -3319,7 +3319,7 @@ __Get . Out__ is assigned to the parameter of __Set__. You’re referencing a pa
 
 *Note that the Exit Most Borders rule determines the direction.*
 
-You can see that the __Out__ parameter of the __Get__ procedure *definition* is referenced. This implicitly causes a call to __Get__. In *explicit calls* you reference the parameters of the procedure *call*, not the procedure *definition*.
+You can see that the __Out__ parameter of the __Get__ command *definition* is referenced. This implicitly causes a call to __Get__. In *explicit calls* you reference the parameters of the command *call*, not the command *definition*.
 
 ###### Implicit Return Value Reference
 
@@ -3335,11 +3335,11 @@ __Get__’s symbolizing its return value can also be applied to diagram code:
 
 *Implicit return value reference, implicit call*
 
-The line to __Get__ is not really a line from an object to a procedure. The return value of __Get__ is implicitly referenced.
+The line to __Get__ is not really a line from an object to a command. The return value of __Get__ is implicitly referenced.
 
 The diagram above looks far simpler than the first diagram. So might the text code. In reality multiple steps are taken: • Call __Get__ • Read __Get . Out__ • Write __Set . In__, • Call __Set__.
 
-In the diagram above, the return value is implicitly referenced by pointing to the procedure definition. You can also implicitly reference the return value by pointing to a procedure call square. That way, the call is explicit, but the return value reference is implicit.
+In the diagram above, the return value is implicitly referenced by pointing to the command definition. You can also implicitly reference the return value by pointing to a command call square. That way, the call is explicit, but the return value reference is implicit.
 
 ![](images/Symbol%20Language%20(2004).295.png)
 
@@ -3357,7 +3357,7 @@ Implicit return value reference is only a way to reference the *return value*, n
 
 ###### Multiple Out Parameters: Implicit Calls
 
-When you reference output parameters of a procedure multiple times, each reference causes its own call to be made. 
+When you reference output parameters of a command multiple times, each reference causes its own call to be made. 
 
 ![](images/Symbol%20Language%20(2004).297.png)
 
@@ -3375,9 +3375,9 @@ If you want to reference multiple output parameters of a single call, you might 
 
 ##### C
 
-###### ? Referencing a Procedure Member
+###### ? Referencing a Command Member
 
-Referencing a diamond’s members is like reading a procedure member.
+Referencing a diamond’s members is like reading a command member.
 
 ![](images/Symbol%20Language%20(2004).269.jpeg)
 
@@ -3385,9 +3385,9 @@ Referencing a diamond’s members is like reading a procedure member.
 
 It always happens just after the diamond executes.
 
-< The parameter objects destroy right after the call. If you use the top circle like above, every consult of the top circle might result in executing the diamond again. To persist the information contained in the argument, without having to call the procedure again, you might do a State Copy. Another way of using output parameters is to give the execution a reference to an external symbol. Anyway: if you want return information to persist after the call, it has to be stored in external symbol: store the returned state to an object that the caller contains, or pass a reference to the caller’s object to the called procedure >
+< The parameter objects destroy right after the call. If you use the top circle like above, every consult of the top circle might result in executing the diamond again. To persist the information contained in the argument, without having to call the command again, you might do a State Copy. Another way of using output parameters is to give the execution a reference to an external symbol. Anyway: if you want return information to persist after the call, it has to be stored in external symbol: store the returned state to an object that the caller contains, or pass a reference to the caller’s object to the called command >
 
-< That’s true what I just said, but there’s nothing wrong with linking directly to the parameter and executing the procedure on each consult. There’s nothing wrong with that. The link might be something like consulting a property procedure in VB, a Get, which returns a reference to an object. Every time you consult the property, the procedure is launched again. That’s normal. >
+< That’s true what I just said, but there’s nothing wrong with linking directly to the parameter and executing the command on each consult. There’s nothing wrong with that. The link might be something like consulting a property command in VB, a Get, which returns a reference to an object. Every time you consult the property, the command is launched again. That’s normal. >
 
 < Might denote that the notation above is not an output situation. It’s an implicit call situation >
 
@@ -3407,7 +3407,7 @@ Dat is verkeerd
 
 *Nice wording:*
 
-A reference to something inside a square causes an implicit call to the square, because the procedure is required to execute in order to reference something inside of it.
+A reference to something inside a square causes an implicit call to the square, because the command is required to execute in order to reference something inside of it.
 
 ##### 3
 
@@ -3507,7 +3507,7 @@ Invert the direction of other lines that became faulty
 
 ### Execution Order
 
-Execution order is (part) determined by dependency: a procedure that renders a result used in another procedure is executed first.
+Execution order is (part) determined by dependency: a command that renders a result used in another command is executed first.
 
 Using the dependency rules, argument reference notation (the implicit one) suggests the following execution order:
 
@@ -3539,7 +3539,7 @@ argument reference is not the same as an implicit call (referencing a square mem
 
 ##### 1
 
-Als een assignment een waarde uit de ene procedure (A) Get en een waarde uit een andere procedure (B) Set, dan is de executie van B afhankelijk van de executie van A. Daardoor wordt de executievolgorde bepaald. Als het ene afhankelijk is van de executie van et andere en het andere afhankelijk van de executie van het ene, dan is er een bepaald soort circularity ontstaan waar niks mee kan. De computer kan slechts de dingen een voor een uitvoeren. De compiler kapt er gewoon mee. 
+Als een assignment een waarde uit de ene commando (A) Get en een waarde uit een andere commando (B) Set, dan is de executie van B afhankelijk van de executie van A. Daardoor wordt de executievolgorde bepaald. Als het ene afhankelijk is van de executie van et andere en het andere afhankelijk van de executie van het ene, dan is er een bepaald soort circularity ontstaan waar niks mee kan. De computer kan slechts de dingen een voor een uitvoeren. De compiler kapt er gewoon mee. 
 
 ##### 2
 
@@ -3611,7 +3611,7 @@ The resulting sequence of code lines corresponds to the execution order required
 
 ### Brainstorm
 
-< By the way, argument in, out and thru notation doesn’t cover the in, out, though notation in procedure definitions. If I might even create that >
+< By the way, argument in, out and thru notation doesn’t cover the in, out, though notation in command definitions. If I might even create that >
 
 #### Summary of Old Subdivision
 
@@ -3638,11 +3638,11 @@ The resulting sequence of code lines corresponds to the execution order required
 
 -----
 
-- Using type procedures with the THIS argument
+- Using type commands with the THIS argument
 - State assignment is the basic assignment
 - Execution basics: 
     - simple issues regarding execution
-    - for instance, diamond only inside a procedure symbol
+    - for instance, diamond only inside a command symbol
     - Stuff like that. Simple issues that you can easily understand.
 - Diamond member access:
     - The caller of a diamond accesses members just before the call and just after
@@ -3653,7 +3653,7 @@ The resulting sequence of code lines corresponds to the execution order required
 - Implicit call and Explicit call
 - Implicit return value reference
 - Out, In and Thru parameter usage
-    - Cover procedure reference too
+    - Cover command reference too
     - If example
 
 -----
@@ -3662,15 +3662,15 @@ The resulting sequence of code lines corresponds to the execution order required
     - Reference
     - call
     - definition
-    - nested procedure
-    - active nested procedure
-    - inactive nested procedure
-    - deeper nested procedure / sub procedure 
+    - nested command
+    - active nested command
+    - inactive nested command
+    - deeper nested command / sub command 
     - ...
 
 -----
 
-- Nested procedure access
+- Nested command access
 - Differences with Com with returning object references
 - Inside directly accessible, outside only 'indirectly' accessible (if line set FOR you)
 - Seeming randomly referencing diamond members. 
@@ -3709,7 +3709,7 @@ The resulting sequence of code lines corresponds to the execution order required
         - By owner
         - By child executions (~ is this the proper place for this?)
             - The callees of a diamond can access the caller's members if given references to them
-    - Nested procedure access
+    - Nested command access
 
 -----
 
@@ -3717,10 +3717,10 @@ The resulting sequence of code lines corresponds to the execution order required
     - Reference
     - call
     - definition
-    - nested procedure
-    - active nested procedure
-    - inactive nested procedure
-    - deeper nested procedure / sub procedure 
+    - nested command
+    - active nested command
+    - inactive nested command
+    - deeper nested command / sub command 
     - Definitions of the terms parameter and argument
     - < Which precisely? >
     - ...
@@ -3732,16 +3732,16 @@ The resulting sequence of code lines corresponds to the execution order required
     - Using State as In, Out and Thru
     - Using a parameter’s line targets as Out
         - Comparison with Com regarding returning object references.
-            - Persisting object reference (harder, is hardly done anyway. Or is it? Consider passing the returned object to another procedure)
-            - Using the procedure parameter as object reference directly
-    - Procedure reference too
+            - Persisting object reference (harder, is hardly done anyway. Or is it? Consider passing the returned object to another command)
+            - Using the command parameter as object reference directly
+    - Command reference too
     - If example
 
 -----
 
 - Execution Basics
     - Simple issues regarding execution < Which precisely? >
-    - For instance, diamond only inside a procedure symbol
+    - For instance, diamond only inside a command symbol
     - Stuff like that. Simple issues that you can easily understand.
     - Diamond pointing to another diamond
     - Recursive calls... hmmm... advanced issue. Hoef je je klomp niet over te breken.  
@@ -3772,7 +3772,7 @@ The resulting sequence of code lines corresponds to the execution order required
 -----
 
 - Don’t know if I should cover here:
-    - Using type procedures with the THIS argument (need a good name for the section)
+    - Using type commands with the THIS argument (need a good name for the section)
 
 -----
 
@@ -3799,7 +3799,7 @@ The problems proposed in this text might have to do with:
 - The terms prolog and epilog
 - The term executor and execution
 - No implicit notation for state assignment
-- Parameter assignments involve consults of parameters in prolog of procedure call, while consults are usually always in epilog.
+- Parameter assignments involve consults of parameters in prolog of command call, while consults are usually always in epilog.
 - Diamond may only represent a single execution per definition call (not regarding unconditional jumps (? The latter is questionable.)
 
 ###### New
@@ -3825,29 +3825,29 @@ If it were to become a connection between symbols, like implicit line assignment
 ![](images/Symbol%20Language%20(2004).328.jpeg)  
 *(Implicit assignments)*
 
-De assignment calls gedragen zich niet normaal, want consult van de argumenten van __A__ veroorzaken geen executie. Een soort passieve parameter consult vind plaats door de assignment calls, in het proloog van __A__. Bedenk wel: het zijn systeem procedures: niet normaal.
+De assignment calls gedragen zich niet normaal, want consult van de argumenten van __A__ veroorzaken geen executie. Een soort passieve parameter consult vind plaats door de assignment calls, in het proloog van __A__. Bedenk wel: het zijn systeem commando's: niet normaal.
 
 ![](images/Symbol%20Language%20(2004).328.jpeg)
 
 ![](images/Symbol%20Language%20(2004).329.jpeg)
 
-De calls naar system procedures gedragen zich anders dan gewone calls. Ze vinden namelijk hier plaats in het proloog van de executie. Je ziet dit wèl in de text code, maar hoe zie je in diagram code of een systeem procedure apart wordt aangeroepen of in de context van een andere functie aanroep?  
-Hypothese: als je bij systeem procedure aanroep een parameter betrekt in een diepere executie, dan zit het in het proloog of epiloog. Zit de parameter in de huidige of hogere executie, of is er helemaal geen parameter bij betrokken, dan wordt de systeem procedure call normaal uitgevoerd. En veroorzaakt geen executie van de sub executor.
+De calls naar system commands gedragen zich anders dan gewone calls. Ze vinden namelijk hier plaats in het proloog van de executie. Je ziet dit wèl in de text code, maar hoe zie je in diagram code of een systeem commando apart wordt aangeroepen of in de context van een andere functie aanroep?  
+Hypothese: als je bij systeem commando aanroep een parameter betrekt in een diepere executie, dan zit het in het proloog of epiloog. Zit de parameter in de huidige of hogere executie, of is er helemaal geen parameter bij betrokken, dan wordt de systeem commando call normaal uitgevoerd. En veroorzaakt geen executie van de sub executor.
 
-Niet het een executor, anders verwar je het met een aparte executie! Een system procedure triggert geen executor:
+Niet het een executor, anders verwar je het met een aparte executie! Een system commando triggert geen executor:
 
 ![](images/Symbol%20Language%20(2004).330.jpeg)
 
-\* dit zou A triggeren als het niet een line van een system procedure call was.
+\* dit zou A triggeren als het niet een line van een system command call was.
 
-Assignment procedures = system procedure, eerste argument is het __This__ argument.
+Assignment commands = system command, eerste argument is het __This__ argument.
 
 ![](images/Symbol%20Language%20(2004).331.jpeg)
 
 \* 2 consults, 1 execution. 1 executor zou er eigenlijk moeten zijn om 1 keer uitgevoerd te worden per ... definitie aanroep (afgezien van jumps) (? Hoe zit het daar dan precies mee)
 
 Dus implicit call moet niet bestaan bij het referen naar diamond members. Dus dan heb je ook niet het probleem dat *assignment calls* speciaal geplaatst moeten worden in het proloog en epiloog: consult van diamond members vind *altijd* plaats in proloog of epiloog!  
-Oh jawel! Consult vind gewoonlijk altijd plaats in epiloog, maar bij assignment van argumenten consulteerd __*system procedure*__ de argument in *proloog*.
+Oh jawel! Consult vind gewoonlijk altijd plaats in epiloog, maar bij assignment van argumenten consulteerd __*system command*__ de argument in *proloog*.
 
 ![](images/Symbol%20Language%20(2004).332.jpeg)
 
@@ -3879,9 +3879,9 @@ The last picture is an acceptable substitute for implicit state assignment. It i
 - Using a parameter’s line targets as Out
     - Comparison with Com regarding returning object references.
         - Persisting object reference  
-          (harder, is hardly done anyway. Or is it? Consider passing the returned object to another procedure)
-        - Using the procedure parameter as object reference directly
-- Procedure reference too
+          (harder, is hardly done anyway. Or is it? Consider passing the returned object to another command)
+        - Using the command parameter as object reference directly
+- Command reference too
 - If example
 
 -----
@@ -3893,7 +3893,7 @@ The last picture is an acceptable substitute for implicit state assignment. It i
 
 #### Other
 
-Creation and state read and write only apply to object parameters, not to parameters that are procedures.
+Creation and state read and write only apply to object parameters, not to parameters that are commands.
 
 #### Other: Explore This Situation Another Time
 
@@ -3901,7 +3901,7 @@ Creation and state read and write only apply to object parameters, not to parame
 
 The situation above can only exist right after a call. If you want to 
 
-< A problem: you get returned an object reference. You lead a line to it. Then the procedure returns. Line target gone. If you want to link to its object, you might want to link to its __Target Object__. But, dang, in Com, if you link to an object, it stays in memory wether the original reference holder releases or not. In Symbol, when the target object is destroyed (released) then the object is destroyed. That’s because one symbol represents the object for real. If you want a object to destroy when reference count is 0, then you might emulate it in Symbol by creating an object symbol that represents the object. References represent references to it. The object might destroy itself if all references to it are released. It’s just a different deal in Symbol. It just is. It’s not like it’s any worse. Line methodology has too many advantages in relation to Com, to hate it for not being like Com. >
+< A problem: you get returned an object reference. You lead a line to it. Then the command returns. Line target gone. If you want to link to its object, you might want to link to its __Target Object__. But, dang, in Com, if you link to an object, it stays in memory wether the original reference holder releases or not. In Symbol, when the target object is destroyed (released) then the object is destroyed. That’s because one symbol represents the object for real. If you want a object to destroy when reference count is 0, then you might emulate it in Symbol by creating an object symbol that represents the object. References represent references to it. The object might destroy itself if all references to it are released. It’s just a different deal in Symbol. It just is. It’s not like it’s any worse. Line methodology has too many advantages in relation to Com, to hate it for not being like Com. >
 
 So... To do the com way, you DO might copy the final object target.
 
@@ -3910,7 +3910,7 @@ But this still doesn’t cover the situation above
 #### Other: Explore these two situations later
 
 - Establishing permanent links to arguments. Them being annulled when the call ends.
-- With the definition of that, might a more flexible procedure interface methodology be possible?
+- With the definition of that, might a more flexible command interface methodology be possible?
 
 #### Other: use sentence somewhere in book
 
@@ -3919,8 +3919,8 @@ __References between siblings is uncommon.__
 Nothing active can reside directly in an object.
 
 ![](images/Symbol%20Language%20(2004).335.jpeg)   
-__Unconditional jump = Call to sibling active nested procedure.__   
-If you are familiar with the term *unconditional jump*, them this is the equivalent of that in Symbol. Can only take place directly inside a procedure.
+__Unconditional jump = Call to sibling active nested command.__   
+If you are familiar with the term *unconditional jump*, them this is the equivalent of that in Symbol. Can only take place directly inside a command.
 
 #### Other: Explore Later
 
@@ -3928,7 +3928,7 @@ __*Moet ik het ook vanuit deze invalshoek uitleggen?*__
 
 Object symbols may be tied to one another with any line type without restrictions.
 
-Procedure lines have more restrictions and only regarding procedure calls. There are restrictions on pointing to a call and there are restrictions on where a call line points to. In other words: restrictions on *call lines* and on *lines to calls*.
+Command lines have more restrictions and only regarding command calls. There are restrictions on pointing to a call and there are restrictions on where a call line points to. In other words: restrictions on *call lines* and on *lines to calls*.
 
 #### Other
 
@@ -3944,34 +3944,34 @@ __This IS the text that lead me to wanting a diamond symbol instead of a call li
 Why on earth not, actually? Ok, you can’t do it in other languages, but why on earth can’t you do it here. Oh. When you reference a call, it makes the call line function as a reference line rather than a call line. If you want this to be different, a reference to call might become a call, which is not something you want to happen in your system. The reference target might get control over if the source might be a reference or if the source might execute. The source might have no say in that. Unacceptable. So a candidate for an alternative rule for A Call Can’t be Called or Referenced is: if you reference a call, its call line is treated as a reference line.  
 If you call the reference to a call... 
 
-Een call line is eigenlijk een reference line, maar als de parent square execute, dan execute ook de call. Hmmm... het is bijna of het allemaal reference lines zijn en sommige squares executen nou eenmaal. Hè! Dat is ook zo! Nested procedures moeten ook kunnen executen en ik zeg nu dat iets alleen execute als het een call line heeft!!! Hmmm... hè, een call is een tag, niet een line!!!!!!!!!!!!
+Een call line is eigenlijk een reference line, maar als de parent square execute, dan execute ook de call. Hmmm... het is bijna of het allemaal reference lines zijn en sommige squares executen nou eenmaal. Hè! Dat is ook zo! Nested commando's moeten ook kunnen executen en ik zeg nu dat iets alleen execute als het een call line heeft!!! Hmmm... hè, een call is een tag, niet een line!!!!!!!!!!!!
 
 Een call een aparte line maken is net zo iets als een triangle een aparte line maken. Hetzelfde mankement. Dan lijkt het logisch, dat een call een apart symbool krijgt, niet een aparte line. Hè. Welk symbool.  
 \>
 
 #### => Elsewhere
 
-__*Procedure Interface Restrictions*__  
+__*Command Interface Restrictions*__  
 < >  
-A procedure has an interface too, consisting of all public contents of the procedure: public objects (in, out or thru) and public procedures (nested procedures, calls and references), which can also be individually referenced and called.
+A command has an interface too, consisting of all public contents of the command: public objects (in, out or thru) and public commands (nested commands, calls and references), which can also be individually referenced and called.
 
-The interface source for a procedure cannot be an object symbol. Also: a procedure cannot have multiple interfaces. The effect of allowing these things can be imagined, but the usefulness of these structural possibilities is slim, while it might add a lot more rules to the Symbol Language.
+The interface source for a command cannot be an object symbol. Also: a command cannot have multiple interfaces. The effect of allowing these things can be imagined, but the usefulness of these structural possibilities is slim, while it might add a lot more rules to the Symbol Language.
 
-For the time being, triangles can reside in a procedure, but only for the purpose of grouping procedure members. You can’t give these triangle any lines, because that might suggest that the procedure adopts all characteristics of an object.
+For the time being, triangles can reside in a command, but only for the purpose of grouping command members. You can’t give these triangle any lines, because that might suggest that the command adopts all characteristics of an object.
 
-The procedure has no interface genericity. < A word not introduced yet here. > < You can’t redirect the interface of a triangle inside a procedure either, because this might suggest that a procedure gets object characteristics.  This is a restriction of a triangle directly inside a procedure symbol. >
+The command has no interface genericity. < A word not introduced yet here. > < You can’t redirect the interface of a triangle inside a command either, because this might suggest that a command gets object characteristics.  This is a restriction of a triangle directly inside a command symbol. >
 
-< I think I’m totally nervous about public nested procedures. And that’s why I forbid interface redirection for triangles in procedures here. I should allow it. The only thing disallowed is interface genericity, because that might suggest that a triangle in a procedure can point to a procedure symbol.
+< I think I’m totally nervous about public nested commands. And that’s why I forbid interface redirection for triangles in commands here. I should allow it. The only thing disallowed is interface genericity, because that might suggest that a triangle in a command can point to a command symbol.
 
 Hmmm... dang. >  
 < A lot isn’t right in what I just said there >
 
-< The rules I might suggest in this section can change the Procedure Basics : Procedure Interface section. >
+< The rules I might suggest in this section can change the Command Basics : Command Interface section. >
 
 ### Events
 
 < >  
-< Is not a representation! Also: empty overridable members can also serve as events. But how might they have multiple sinks then? Might an event be a special representation of an overridable procedure and might putting them in a single interface be no more than putting all originally empty overridable procedures in a single interface? ... heck, this is material >
+< Is not a representation! Also: empty overridable members can also serve as events. But how might they have multiple sinks then? Might an event be a special representation of an overridable command and might putting them in a single interface be no more than putting all originally empty overridable commands in a single interface? ... heck, this is material >
 
 Events are a means for an object to call the container. The object defines an interface that the parent should support if it wants to receive the event calls of its child. The event interface parent has to make the interface implementation accessible by its child by setting an object sink of the child.
 
@@ -3981,24 +3981,24 @@ The problem with events was that there are two ways: overriding and assigning an
 
 #### From Another Place
 
-There *are* techniques for a child to communicate with its parent. There are two similar ways: a child contains a reference to the parent’s procedure, a child contains a reference to the parent’s object. The child then has to define the interface of the object or procedure to reference. The child might also accept that the object reference might not point to an existing object. These techniques might be covered again later on.
+There *are* techniques for a child to communicate with its parent. There are two similar ways: a child contains a reference to the parent’s command, a child contains a reference to the parent’s object. The child then has to define the interface of the object or command to reference. The child might also accept that the object reference might not point to an existing object. These techniques might be covered again later on.
 
 |                                                |                                                |
 |:----------------------------------------------:|:----------------------------------------------:|
 | ![](images/Symbol%20Language%20(2004).336.png) | ![](images/Symbol%20Language%20(2004).337.png) |
-| *Reference to parent procedure with an interface defined by the child.* | *Calling procedures of a reference to a parent object with an interface that the child defines.* |
+| *Reference to parent command with an interface defined by the child.* | *Calling commands of a reference to a parent object with an interface that the child defines.* |
 
 *The dashed reference lines in these pictures could also have been notated solid.*
 
 #### Nog
 
-Er is naast referentie naar procedure en referentie naar object nog een manier voor Events. Je moet namelijk ‘multi-cast’ events mogelijk maken en daar vereist een collection van event sinks die allemaal simultaan aangeroepen worden.. work it out
+Er is naast referentie naar commando en referentie naar object nog een manier voor Events. Je moet namelijk ‘multi-cast’ events mogelijk maken en daar vereist een collection van event sinks die allemaal simultaan aangeroepen worden.. work it out
 
 
 Execution Control
 -----------------
 
-< A procedure’s calling one of its own nested procedures, is an unconditional jump >
+< A command’s calling one of its own nested commands, is an unconditional jump >
 
 < Cover text code entirely, right inside the story. Oh, yeah, should I? Or should I cover it in the Text Code chapter? >
 
@@ -4028,7 +4028,7 @@ For I = 0 To 5
 Next
 ```
 
-This is called a __For__ loop. __A(I)__ is executed __6__ times. The first time __I = 0__, the second time __I = 1__, the third time __I = 2__ and so on until __I__ is __5__. In this example __I__ is used as a parameter to the procedure __A__.
+This is called a __For__ loop. __A(I)__ is executed __6__ times. The first time __I = 0__, the second time __I = 1__, the third time __I = 2__ and so on until __I__ is __5__. In this example __I__ is used as a parameter to the command __A__.
 
 ```vb
   I = 0
@@ -4044,24 +4044,24 @@ The blue parts in the code above are called the *clauses* of the control stateme
 
 The start of the control statement and the end and whatever’s in between is considered the control statement.
 
-### Execution Control Procedures
+### Execution Control Commands
 
-Execution control statements are special procedures. They are given one or more references to other procedures, the execution of which is controlled. These referenced procedures are the clauses of the control statement and also the expressions and assignments controlling their execution. The execution control procedure decides when or if any of these referenced procedures are called and how many times. How the execution control procedure might call its referenced procedures, is dependent on what the referenced procedures might do.
+Execution control statements are special commands. They are given one or more references to other commands, the execution of which is controlled. These referenced commands are the clauses of the control statement and also the expressions and assignments controlling their execution. The execution control command decides when or if any of these referenced commands are called and how many times. How the execution control command might call its referenced commands, is dependent on what the referenced commands might do.
 
 ### Selection and Repetition
 
-The execution control mentioned till now is also called conditional jumping. There are two general forms of conditional jumping: selection and repetition. Selection selects one thing to execute out of several or whether to execute something at all depending on a condition. Repetition repeats a procedure a number of times until a condition is met. In the repeated procedure actions can be taken that affect this condition. Select and If statements are selection. For and Do statements are repetition. Symbol defines but two procedures: Selection and Repetition. Depending on how the procedure is used it functions as an If, Select, For or Do and depending on that, appropriate names are notated with calls to the execution control procedures.
+The execution control mentioned till now is also called conditional jumping. There are two general forms of conditional jumping: selection and repetition. Selection selects one thing to execute out of several or whether to execute something at all depending on a condition. Repetition repeats a command a number of times until a condition is met. In the repeated command actions can be taken that affect this condition. Select and If statements are selection. For and Do statements are repetition. Symbol defines but two commands: Selection and Repetition. Depending on how the command is used it functions as an If, Select, For or Do and depending on that, appropriate names are notated with calls to the execution control commands.
 
 ### Selection
 
 < Sub sectioning. >  
 < That shorthand: what if the actual reference target is two capsules up? >
 
-This section apart from covering the selection execution control procedure also explains a lot about execution control in general, not just selection, specifically about clauses.
+This section apart from covering the selection execution control command also explains a lot about execution control in general, not just selection, specifically about clauses.
 
-__Select__ and __If__ statements are both accomplished by calling the __Selection__ execution control procedure. The difference between an __If__ and a __Select__ is that a __Select__ first defines the beginning of the expression to evaluate and then a list of endings for the expression. Each beginning-ending combination is treated as a separate __If__.
+__Select__ and __If__ statements are both accomplished by calling the __Selection__ execution control command. The difference between an __If__ and a __Select__ is that a __Select__ first defines the beginning of the expression to evaluate and then a list of endings for the expression. Each beginning-ending combination is treated as a separate __If__.
 
-The __Selection__ execution control procedure takes 4 kinds of procedure references:
+The __Selection__ execution control command takes 4 kinds of command references:
 
 ```vb
 Select
@@ -4070,7 +4070,7 @@ Then
 Else
 ```
 
-I call all of these procedure references *clauses*. Not all clauses might be filled in.
+I call all of these command references *clauses*. Not all clauses might be filled in.
 
 If the __Select__ clause isn’t filled in then there’s only one __If__ clause, one __Then__ clause and one __Else__ clause:
 
@@ -4078,7 +4078,7 @@ If the __Select__ clause isn’t filled in then there’s only one __If__ clause
 If X Then A Else B
 ```
 
-__X__, __A__ and __B__ are the clauses, which are separate embedded procedures. __X__ is the __If__ clause. __A__ is the __Then__ clause. __B__ is the __Else__ clause. The __If__ clause procedure returns a condition that is either __True__ or __False__. If it is __True__ then the __Then__ clause is called, if it is __False__ then the __Else__ clause is called.
+__X__, __A__ and __B__ are the clauses, which are separate embedded commands. __X__ is the __If__ clause. __A__ is the __Then__ clause. __B__ is the __Else__ clause. The __If__ clause command returns a condition that is either __True__ or __False__. If it is __True__ then the __Then__ clause is called, if it is __False__ then the __Else__ clause is called.
 
 The red clauses can be seen as the cause of the selection and the blue clauses as the result of the selection.
 
@@ -4146,13 +4146,13 @@ The method is that where appropriate an __=__ sign is put between the __Select__
 
 -----
 
-In diagram notation, the __Selection__ procedure with all its clauses looks like this:
+In diagram notation, the __Selection__ command with all its clauses looks like this:
 
 ![](images/Symbol%20Language%20(2004).338.png)
 
 The amount of __If__ groups can vary. I’ve notated three of them in the diagram above.
 
-All clauses are procedure references provided to the selection procedure as parameters when you call it. For that, the diagram for a call to the __Selection__ procedure might look like this:
+All clauses are command references provided to the selection command as parameters when you call it. For that, the diagram for a call to the __Selection__ command might look like this:
 
 ![](images/Symbol%20Language%20(2004).339.png)
 
@@ -4170,18 +4170,18 @@ End If
 
 The outer squares are the clauses. The squares in the larger square are the references to those clauses.
 
-Execution control is so common and the notation above is rather complex. The notation above should even require grouping triangles around the If groups. I already left those out, but I might do more to make it look clearer. A simplified notation for a call to the Selection procedure is regularly used instead:
+Execution control is so common and the notation above is rather complex. The notation above should even require grouping triangles around the If groups. I already left those out, but I might do more to make it look clearer. A simplified notation for a call to the Selection command is regularly used instead:
 
 ![](images/Symbol%20Language%20(2004).340.png)
 
-This has the same meaning as the other notation. A square drawn with dashed lines is shorthand for a square with a reference line to outside. The dashed squares are filled in with the contents of the referenced procedure.
+This has the same meaning as the other notation. A square drawn with dashed lines is shorthand for a square with a reference line to outside. The dashed squares are filled in with the contents of the referenced command.
 
 | ![](images/Symbol%20Language%20(2004).341.png) | = | ![](images/Symbol%20Language%20(2004).342.png) |
 |-----|-----|-----|
 
 -----
 
-Even more is done to simplify the notation. Clauses that are not filled in can be hidden. The procedure name ‘Selection’ is also left out. Squares are allowed to be drawn as rectangles. When the Select clause is filled in, alternate clause names are used as explained earlier.
+Even more is done to simplify the notation. Clauses that are not filled in can be hidden. The command name ‘Selection’ is also left out. Squares are allowed to be drawn as rectangles. When the Select clause is filled in, alternate clause names are used as explained earlier.
 
 < Use those rules from this point onward >
 
@@ -4280,7 +4280,7 @@ Step
 Loop
 ```
 
-< Picture 33: Diagram of Repetition execution control procedure with all its clauses >
+< Picture 33: Diagram of Repetition execution control command with all its clauses >
 
 Of each clause there can be only one, but not all need to be filled in.
 
@@ -4323,7 +4323,7 @@ Next
 
 The Step clause is basically no more than the second part of the loop clause. It’s just simply executed as the second part of the loop. However, it allows a more abstract notation. When you start with a binary operator then the For clause is used as the first operand. If you only supply a term, then it is added to the For clause.
 
-Oops the For clause isn’t a procedure anymore. It’s an object whose state is gotten and set. The Step clause can be a procedure reference, but can also be an object reference with state get and set. It’s overloaded to support
+Oops the For clause isn’t a command anymore. It’s an object whose state is gotten and set. The Step clause can be a command reference, but can also be an object reference with state get and set. It’s overloaded to support
 
 < >
 
@@ -4331,40 +4331,40 @@ Diagram Code:
 
 < Picture 35: Square called Do with 5 other squares: I, = 0, <= 5, ++, A B. >
 
-The algebra you see in the diagrams above (for instance <=5) are actually calls to algebraic procedures. The algebraic language can be integrated like that in the diagram code. The integration of other languages into diagram code is discussed in a separate chapter. Here I’ve only used it to show how using the execution control statements can look in practice.
+The algebra you see in the diagrams above (for instance <=5) are actually calls to algebraic commands. The algebraic language can be integrated like that in the diagram code. The integration of other languages into diagram code is discussed in a separate chapter. Here I’ve only used it to show how using the execution control statements can look in practice.
 
 < Algebra covered in Math, Language embedding in a Code Language chapter >  
-< Tell not to worry about the algebraic operations and assignment.  Algebra operations and assignment are themselves procedures that can be called which are explained later. >
+< Tell not to worry about the algebraic operations and assignment.  Algebra operations and assignment are themselves commands that can be called which are explained later. >
 
 < Examples of simpler loops, in which >
 
-### Clauses: Nested Procedures
+### Clauses: Nested Commands
 
-The clauses discussed above are actually embedded procedures. Embedded procedures are sometimes referred to with the word clause. Nested procedure may have the special characteristic that they can access the members of the procedure they’re embedded in.
+The clauses discussed above are actually embedded commands. Embedded commands are sometimes referred to with the word clause. Nested command may have the special characteristic that they can access the members of the command they’re embedded in.
 
 < Picture 36 >
 
-All nested procedures have access to the objects in their ancestor nested procedures and to the objects in their procedure definition.
+All nested commands have access to the objects in their ancestor nested commands and to the objects in their command definition.
 
 < Picture 37 >
 
-The reverse is not true: an procedure definition cannot access an object in a nested procedure unless the object is public.
+The reverse is not true: a command definition cannot access an object in a nested command unless the object is public.
 
-< Picture 38: non public nested procedure member, not referenced by the procedure definition >
+< Picture 38: non public nested command member, not referenced by the command definition >
 
-And even when it’s public then it has to be written right before entering the nested procedure, just like a procedure call.
+And even when it’s public then it has to be written right before entering the nested command, just like a command call.
 
-< Picture 39: public nested procedure member referenced by the procedure definition just before entrance >
+< Picture 39: public nested command member referenced by the command definition just before entrance >
 
-You can recognize an embedded procedure by the fact that they’re not calls, nor procedure references. So they (usually) have no lines:
+You can recognize a nested command by the fact that they’re not calls, nor command references. So they (usually) have no lines:
 
-< picture 40: embedded procedures. Mark the ones that are nested procedures with a color >
+< picture 40: embedded commands. Mark the ones that are nested commands with a color >
 
-Perhaps jumping might change that and the nested procedures might get lines, but no lines that end up outside the procedure definition.
+Perhaps jumping might change that and the nested commands might get lines, but no lines that end up outside the command definition.
 
-< Picture 41: nested procedure that might have a line because of a jump to it >
+< Picture 41: nested command that might have a line because of a jump to it >
 
-< It’s like when something’s a nested procedure, it ignores its parent’s borders. Conversely, the contents of a block are by default only accessible within that block. >
+< It’s like when something’s a nested command, it ignores its parent’s borders. Conversely, the contents of a block are by default only accessible within that block. >
 
 ### Unconditional Jumps
 
@@ -4386,16 +4386,16 @@ Line 3 might make a jump to line 5. Line 4 might be skipped.
 
 ...
 
-Returns makes you able to exit procedures, a single repetition, a whole repetition loop, a select statement, etcetera.  
+Returns makes you able to exit commands, a single repetition, a whole repetition loop, a select statement, etcetera.  
 A jump ...
 
-Unconditional jumps are usually just regular calls to other procedures. Another special unconditional jump is immediately ending the procedure or the block or ending the current procedure and the next one and so on.
+Unconditional jumps are usually just regular calls to other commands. Another special unconditional jump is immediately ending the command or the block or ending the current command and the next one and so on.
 
 You could speak of conditional calls, actually.  
 \>
 
 <  
-Unconditional jumps are usually calls to other procedures indendent of a boolean state: regular calls. Another special unconditional jump is immediately ending the procedure (returning or ending a for loop) or ending the current procedure and the next one and so on (ending a nested loop and also the loop its nested in)  
+Unconditional jumps are usually calls to other commands indendent of a boolean state: regular calls. Another special unconditional jump is immediately ending the command (returning or ending a for loop) or ending the current command and the next one and so on (ending a nested loop and also the loop its nested in)  
 \>
 
 ```vb
@@ -4656,37 +4656,37 @@ Maybe for should be called repeat
 
 ### Brainstorm
 
-Maybe the procedure references of execution control procedures need to have a certain procedure interface.
+Maybe the command references of execution control commands need to have a certain command interface.
 
 -----
 
 About the execution of non-execution-controlled calls. Some calls might be made before others because the result of one call is used in another call. That defines (some of) the order of precedence of calls.  
-The order of the calls in a procedure is (part) determined by dependence, independent of the order the programmer gives.
+The order of the calls in a command is (part) determined by dependence, independent of the order the programmer gives.
 
 The programmer can change the order of things that are arbitrarily called and insert calls into the obligatory order or calls, but if it’s not so relevant, the programmer doesn’t even provide the call order. Most of the time it is not that relevant. (or is it, to what extent can I not see the requirement of the order of calls, even when its order is very important?
 
 -----
 
-If a procedure takes a reference to a nested procedure then you can do this notation:
+If a command takes a reference to a nested command then you can do this notation:
 
 < Square with loose squares and another square with squares pointing at those loose squares >
 
-Defining the contents of the procedure references right within the
+Defining the contents of the command references right within the
 
 #### Execution Control Controls which call is made next
 
 <  
-Most of what’s done inside a procedure is calling other procedures.
+Most of what’s done inside a command is calling other commands.
 
 Apart from executing a sequence of calls linearly, you can alter the course of the calls using execution control.
 
-A clause is like a procedure itself. For that you can see execution control as selecting which procedure might be called next. Or actually which clause might be called next.
+A clause is like a command itself. For that you can see execution control as selecting which command might be called next. Or actually which clause might be called next.
 
 -----
 
 First explain that a control statement controls which call is made next. They are responsible for the arbitrariness in execution. Otherwise there might be just one way a program can execute from start to beginning and that’s that, but execution control sees to it that there is variation in the execution of a program.
 
-In one compiler optimization technique it is these execution control statements that are analysed. Execution control statements make execution variable and this compiler technique analyses how variable that actually is. Maybe the execution control might not be reached with too many different values, let’s say, two values. In that case you might consider removing the variation in execution by making two procedures one of which is one situation of the execution control statement and the other one is the other situation of the execution control statement. At calls to the execution control statement or indirect calls to it, you insert the variation that applies right there.  
+In one compiler optimization technique it is these execution control statements that are analysed. Execution control statements make execution variable and this compiler technique analyses how variable that actually is. Maybe the execution control might not be reached with too many different values, let’s say, two values. In that case you might consider removing the variation in execution by making two commands one of which is one situation of the execution control statement and the other one is the other situation of the execution control statement. At calls to the execution control statement or indirect calls to it, you insert the variation that applies right there.  
 \>
 
 ##### Nice Example
@@ -4705,7 +4705,7 @@ Next
 
 ##### Execution control is call control
 
-This means that in Symbol the definition of execution control is selecting what procedure to call next depending on a Boolean state.
+This means that in Symbol the definition of execution control is selecting what command to call next depending on a Boolean state.
 
 You could speak of conditional calls, actually. 
 
@@ -4713,9 +4713,9 @@ Calls can be managed by execution control. Execution control manages the regular
 
 #### => Execution Control
 
-But... if you pass a clause reference to an execution control procedure the execution control CAN call the clause, but only in the context of the procedure instance that called the execution control procedure!
+But... if you pass a clause reference to an execution control command the execution control CAN call the clause, but only in the context of the command instance that called the execution control command!
 
-Execution control procedures might call clauses in the context of a *specific call* to the clause’s procedure definition.
+Execution control commands might call clauses in the context of a *specific call* to the clause’s command definition.
 
 
 Access Ways
@@ -4723,11 +4723,11 @@ Access Ways
 
 < Do neighbor access and child access protect the independence of types? As a substitute for the old, false rule: ‘Can’t call upward in the ancestry’? >
 
-There’s several ways to access a procedure. The most common way is for procedure’s of the same object to call upon each other. The second most common way is for a parent to access a child’s procedures. A global object is accessible from anywhere within the module and there are more ways. I might discuss these different ways of access one by one in this section.
+There’s several ways to access a command. The most common way is for commands of the same object to call upon each other. The second most common way is for a parent to access a child’s commands. A global object is accessible from anywhere within the module and there are more ways. I might discuss these different ways of access one by one in this section.
 
 ### Neighbor Access
 
-< Discuss procedures within the same object accessing each other. >
+< Discuss commands within the same object accessing each other. >
 
 ### Child Access
 
@@ -4735,9 +4735,9 @@ The normal way of accessing an object is *child access*: an object can only acce
 
 ![](images/Symbol%20Language%20(2004).350.png)
 
-< Dang. This is not right, I need to make a call from a procedure. The line above is a reference line. >
+< Dang. This is not right, I need to make a call from a command. The line above is a reference line. >
 
-An access always takes place in a procedure call. In this picture Parent is accessing Child.
+An access always takes place in a command call. In this picture Parent is accessing Child.
 
 You can’t all anything higher in the encapsulation hierarchy, so an object can’t access anything outside the object. If it is to access anything outside the object, it needs to contain a reference to something outside the object.
 
@@ -4832,7 +4832,7 @@ You can’t see in the picture above if the called square is referenced through 
 | ![](images/Symbol%20Language%20(2004).362.png) | ![](images/Symbol%20Language%20(2004).363.png) | ![](images/Symbol%20Language%20(2004).364.png) |
 | *Accessed through the Circle:* |        *Accessed through*         |      *Also accessed through*      |
 |                                |  *the Circle and the Triangle:*   |  *the Circle and the Triangle:*   |
-|     __Circle . Procedure__     | __Circle . Triangle . Procedure__ | __Circle . Triangle . Procedure__ |
+|      __Circle . Command__      |  __Circle . Triangle . Command__  |  __Circle . Triangle . Command__  |
 
 In text code you can see the difference all the more. I’ve put the text code under the diagrams above.
 
@@ -4840,47 +4840,47 @@ So its like the borders of triangles can be ignored in inward access. You might 
 
 < This concept could have a place in Genericity. >
 
-### Nested Procedure Access
+### Nested Command Access
 
-< Nice sentence: A procedure makes all direct children accessible to all blocks. Only is that true? >
+< Nice sentence: A command makes all direct children accessible to all blocks. Only is that true? >
 
-Nested procedures are embedded procedures. In a diagram these are squares contained in other squares that have no lines. Beware that a diagram may not be showing the line, even when it exist.
+Nested commands are embedded commands. In a diagram these are squares contained in other squares that have no lines. Beware that a diagram may not be showing the line, even when it exist.
 
 ![](images/Symbol%20Language%20(2004).365.png)
 
-Nested procedures have access to the contents of all their ancestor nested procedures and the procedure definition they’re in. This means that a nested procedure can directly access its containing definition’s members:
+Nested commands have access to the contents of all their ancestor nested commands and the command definition they’re in. This means that a nested command can directly access its containing definition’s members:
 
 ![](images/Symbol%20Language%20(2004).366.png)
 
-and all its encapsulating nested procedures:
+and all its encapsulating nested commands:
 
 ![](images/Symbol%20Language%20(2004).367.png)
 
-But a nested procedure does not have access to a nested procedure that doesn’t encapsulate it.
+But a nested command does not have access to a nested command that doesn’t encapsulate it.
 
 ![](images/Symbol%20Language%20(2004).368.png)
 
-So its like the borders of nested procedures can be ignored in outward access.
+So its like the borders of nested commands can be ignored in outward access.
 
-### Modules, Interfaces and Nested procedures
+### Modules, Interfaces and Nested commands
 
 So usually only parents can access their ancestor’s things.
 
-Modules, interface implementations and nested procedures make exceptions on those rules.
+Modules, interface implementations and nested commands make exceptions on those rules.
 
-The public ancestors of a module are accessible from anywhere within the module, the borders of triangles can be ignored and a nested procedure can directly access anything in its ancestor nested procedures and its procedure definition.
+The public ancestors of a module are accessible from anywhere within the module, the borders of triangles can be ignored and a nested command can directly access anything in its ancestor nested commands and its command definition.
 
 ### Brainstorm
 
 #### => Access Ways
 
-Nested procedure members can access the members of its ancestor procedure symbols. 
+Nested command members can access the members of its ancestor command symbols. 
 
 
-Procedure Resolution
+Command Resolution
 --------------------
 
-The following methods let a parent mess with the procedures of a child:
+The following methods let a parent mess with the commands of a child:
 
 - Overriding
 - Exclusion
@@ -4888,51 +4888,51 @@ The following methods let a parent mess with the procedures of a child:
 - Shadowing
 - Merging
 
-Overloading, shadowing and merging are about which procedure to call if several procedures have the same name. In text code you couldn’t easily see which procedure of the bunch is called. In diagram code it is always clearly visible which procedure you’re calling, but if they have the same name, then in text code it is less easy to see. Overloading, shadowing and merging work with this phenomenon.
+Overloading, shadowing and merging are about which command to call if several commands have the same name. In text code you couldn’t easily see which command of the bunch is called. In diagram code it is always clearly visible which command you’re calling, but if they have the same name, then in text code it is less easy to see. Overloading, shadowing and merging work with this phenomenon.
 
 Overriding and exclusion are techniques equally useful in both diagram code and text code. The others: overloading, merging and shadowing, are mostly useful in text code.
 
 ### Overriding
 
-Overriding means that a parent can replace a procedure of its child by another. A child decides whether a procedure of his is overridable or not.
+Overriding means that a parent can replace a command of its child by another. A child decides whether a command of his is overridable or not.
 
 ![](images/Symbol%20Language%20(2004).369.png)
 
-This is a type with an overridable procedure B, called by the child. The access symbol on the right means that the Procedure Reference Set is public. Therefore you can make B redirect to a procedure that the parent defines.
+This is a type with an overridable command B, called by the child. The access symbol on the right means that the Command Reference Set is public. Therefore you can make B redirect to a command that the parent defines.
 
 ![](images/Symbol%20Language%20(2004).370a.png)
 
-The parent overrode the overridable procedure B. A call to B might resolve to a call to C instead. You can see that overriding means that the parent gives a child’s procedure a reference line to one of its own procedures.
+The parent overrode the overridable command B. A call to B might resolve to a call to C instead. You can see that overriding means that the parent gives a child’s command a reference line to one of its own commands.
 
-In the replacement procedure, you can still call the base procedure. That way you can both override procedures of the child or extend them.
+In the replacement command, you can still call the base command. That way you can both override commands of the child or extend them.
 
 ![](images/Symbol%20Language%20(2004).370b.png)
 
-Overridden procedures are called by the child and that way they’re a means for a child to call a procedure of the parent.
+Overridden commands are called by the child and that way they’re a means for a child to call a command of the parent.
 
-An overridable procedure that is only for communication to the parent is left empty by the child and is only filled in by the parent. This kind of overridable procedure is therefore also called a virtual procedure of the child.
+An overridable command that is only for communication to the parent is left empty by the child and is only filled in by the parent. This kind of overridable command is therefore also called a virtual command of the child.
 
 ### Exclusion
 
-Exclusion is already covered extensively, but it can also be regarded a procedure resolution technique. A parent can exclude members from a published object or base object.
+Exclusion is already covered extensively, but it can also be regarded a command resolution technique. A parent can exclude members from a published object or base object.
 
 ### Overloading
 
 < Overloaded objects >
 
 <  
-A procedure can also have multiple interfaces by using triangle symbols. This enables the possibility to have multiple parameter configurations for the same procedure.  
+A command can also have multiple interfaces by using triangle symbols. This enables the possibility to have multiple parameter configurations for the same command.  
 \>
 
 <  
 This is an example of how text code can affect the behavior of the diagram. Call line automatically changes when parameters of different types are assigned. Oh, dang, after compilation the text identifiers might not exist anymore. Then it’s gotta become a deep system aspect the overloading, independent of text code. Text code and diagram code might simply be affected by the overloading concept. It should be like this, because of reasons discussed in the language integration chapter.  
 \>
 
-Overloading means that you give several procedures the same name, while they have a different interface. This is handy if you wish to make different variations of similar functionality.
+Overloading means that you give several commands the same name, while they have a different interface. This is handy if you wish to make different variations of similar functionality.
 
-The operator procedure + for instance is richly overloaded. Operator + always has two parameters: the two operands. The two operands can be of many different types and each type configuration requires a separate procedure. Which procedure is called is determined by the types of objects assigned to the parameters.
+The operator command + for instance is richly overloaded. Operator + always has two parameters: the two operands. The two operands can be of many different types and each type configuration requires a separate command. Which command is called is determined by the types of objects assigned to the parameters.
 
-In diagram code you may see the difference between a call to one procedure or the other. In text code, however, as well as in certain abstract views on the diagram the effect is more subtle and you won’t see the difference between a call to one procedure or the other. This is actually a nice, and wanted effect.
+In diagram code you may see the difference between a call to one command or the other. In text code, however, as well as in certain abstract views on the diagram the effect is more subtle and you won’t see the difference between a call to one command or the other. This is actually a nice, and wanted effect.
 
 Given is the text code below:
 
@@ -4941,38 +4941,38 @@ Object Type 1
     Integer X
     Double Y
     Float Z
-    Procedure Procedure 1
+    Command Command 1
         X + Y
         X + Z
-    End Procedure
+    End Command
 End Object
 ```
 
-The following might be the diagram code without mentioning the types of objects nor procedure calls:
+The following might be the diagram code without mentioning the types of objects nor command calls:
 
 ![](images/Symbol%20Language%20(2004).371.png)
 
-The outer circle is Type 1. It declares the three basic object X, Y and Z. It also contains the procedure Procedure 1, in which are performed two plus operations to which references to the basic objects are passed.
+The outer circle is Type 1. It declares the three basic object X, Y and Z. It also contains the command Command 1, in which are performed two plus operations to which references to the basic objects are passed.
 
-However, when you do mention the types of objects and procedure calls, you see that two different procedures are called.
+However, when you do mention the types of objects and command calls, you see that two different commands are called.
 
 ![](images/Symbol%20Language%20(2004).372.png)
 
-When you display the called procedures the subtlety is gone, but in this abstraction of the diagram you’ve simply *chosen* to see the difference:
+When you display the called commands the subtlety is gone, but in this abstraction of the diagram you’ve simply *chosen* to see the difference:
 
 ![](images/Symbol%20Language%20(2004).373.png)
 
 All three diagrams above describe the same code, only in one diagram some parts are left out and some are visible while in another diagram other things are left out or visible. Abstract Symbol is covered in detail in another chapter < >.
 
-The + procedure has a special notation: an operator notation, which is a customized representation of a procedure call and its parameters. This method is discussed in the ‘Text Code’ and ‘Language Integration’ chapters.
+The + command has a special notation: an operator notation, which is a customized representation of a command call and its parameters. This method is discussed in the ‘Text Code’ and ‘Language Integration’ chapters.
 
-The names of procedures that overload each other are always equal. The configuration of a procedure’s public objects determines which procedure is called. This configuration of public object includes: the object count, object types and object names.
+The names of commands that overload each other are always equal. The configuration of a command’s public objects determines which command is called. This configuration of public object includes: the object count, object types and object names.
 
-Usually the count and types of parameters are varied, but if two overloaded procedures only differ in parameter *names*, in text code it is required to *name* the object when you call the procedure.
+Usually the count and types of parameters are varied, but if two overloaded commands only differ in parameter *names*, in text code it is required to *name* the object when you call the command.
 
-< Picture: text code and diagram code with overloaded procedures that only differ in parameter names. >
+< Picture: text code and diagram code with overloaded commands that only differ in parameter names. >
 
-When you change a parameter to an object of a different type, then the call line of the call might automatically point to another procedure.
+When you change a parameter to an object of a different type, then the call line of the call might automatically point to another command.
 
 < I need pictures with that. >
 
@@ -5010,37 +5010,37 @@ __I.A__
 
 I.A is inaccessible outside the parent, for the parent has chosen to shadow it.
 
-A member is automatically shadowed if the parent of a triangle defines a procedure with exactly the same characteristics as the triangle’s procedure. The parent can freely shadow any member of the child.
+A member is automatically shadowed if the parent of a triangle defines a command with exactly the same characteristics as the triangle’s command. The parent can freely shadow any member of the child.
 
 ### Merging
 
-When a procedure has the same name and configuration of public members then in text code there is no way to distinguish calls to either procedure. What happens automatically is that the *‘nearest’* member *shadows* the member *further* away.
+When a command has the same name and configuration of public members then in text code there is no way to distinguish calls to either command. What happens automatically is that the *‘nearest’* member *shadows* the member *further* away.
 
 ![](images/Symbol%20Language%20(2004).379.png)
 
-A second option when you can’t distinct a call to one procedure from a call to the other is simply for *both* procedures to be called. This is called merging the two procedures and in that case the call might resolve in calling *both* procedures. If you want to address a specific procedure, you could qualify the call with the name of the container of the procedure, if that might make a difference. In diagram code you can see the two procedures as separate squares and you *can* see the difference between a call to procedure A and a call to procedure B.
+A second option when you can’t distinct a call to one command from a call to the other is simply for *both* commands to be called. This is called merging the two commands and in that case the call might resolve in calling *both* commands. If you want to address a specific command, you could qualify the call with the name of the container of the command, if that might make a difference. In diagram code you can see the two commands as separate squares and you *can* see the difference between a call to command A and a call to command B.
 
-< Picture 27: of text code call to merged procedure with next to it the diagram code >
+< Picture 27: of text code call to merged command with next to it the diagram code >
 
-< Picture 28: of text code with qualifications that call a specific procedure >
+< Picture 28: of text code with qualifications that call a specific command >
 
 Merging is handy for instance when a symbol contains two interface implementations and each interface implementation contains a member with the same name and public members.
 
 < Picture of that >
 
-When the merging procedures reside in *exactly the same container*, they cannot be separately called. They are always simultaneously called. In diagram code you might be able to express a call to a specific procedure, but it is forbidden to make such a call, because this might be impossible to express in text code.
+When the merging commands reside in *exactly the same container*, they cannot be separately called. They are always simultaneously called. In diagram code you might be able to express a call to a specific command, but it is forbidden to make such a call, because this might be impossible to express in text code.
 
 < Picture of that (29): the legal situation and a picture with a red cross through it showing a forbidden way of calling and showing that the call might look the same in text code >
 
 That ensures that diagram code and text code are exchangeable and can be mutually used.
 
-< Merging should be a technique, not embedded in the language. When it’s about calling both procedures of the triangles, you might shadow those procedures with a procedure that calls both. >
+< Merging should be a technique, not embedded in the language. When it’s about calling both commands of the triangles, you might shadow those commands with a command that calls both. >
 
 
 Data & Math
 -----------
 
-Data and math in Symbol are actually not part of the language. Data and math are modules written in Symbol Language that provide types and procedures to work with data and math. These modules are described in separate books. At present, it might not be convincing if the full description of a programming language should contain nothing about *strings*, *arrays*, *simple data types* and *mathematical operations*.
+Data and math in Symbol are actually not part of the language. Data and math are modules written in Symbol Language that provide types and commands to work with data and math. These modules are described in separate books. At present, it might not be convincing if the full description of a programming language should contain nothing about *strings*, *arrays*, *simple data types* and *mathematical operations*.
 
 Therefore, in this chapter, I give a functional description of basics of the Data and Math modules.
 
@@ -5060,7 +5060,7 @@ System Aspects
 - __Type__
 - __Interface__
 
-And those of a *procedure symbol* are:
+And those of a *command symbol* are:
 
 - __Definition__
 - __Interface__
@@ -5073,7 +5073,7 @@ Another group of aspects is the *target aspects*. The target aspects of an *obje
 - __Target Type__
 - __Target Interface__
 
-And those of a *procedure symbol* are:
+And those of a *command symbol* are:
 
 - __Target Definition__
 - __Target Execution__
@@ -5086,7 +5086,7 @@ Another special system aspect is __State__, which stands for the data stored in 
 - __State__
 - __Created__
 
-These are called the *state aspects*. {} The aspects here apply only to object symbols, but there are also state aspects for procedure symbols. {}
+These are called the *state aspects*. {} The aspects here apply only to object symbols, but there are also state aspects for command symbols. {}
 
 There are even more system aspects:
 
@@ -5097,10 +5097,10 @@ There are even more system aspects:
 
 - __Parent Object__
 - __Child Objects__
-- __Parent Procedure__
-- __Child Procedures__
+- __Parent Command__
+- __Child Commands__
 
-The __Parent__ and __Children__ system aspects can tell you all about the encapsulation structure. Because these aspects again return symbols, you can recursively track down the whole surrounding encapsulation structure. They are called the *encapsulation aspects* or *ancestry aspects* of a symbol. The __Parent Object__ and __Child Objects__ system aspects return the object ancestry, kind of like ignoring procedure capsules. The __Parent Procedure__ and __Child Procedures__ aspects return the encapsulation only looking at procedure capsules.
+The __Parent__ and __Children__ system aspects can tell you all about the encapsulation structure. Because these aspects again return symbols, you can recursively track down the whole surrounding encapsulation structure. They are called the *encapsulation aspects* or *ancestry aspects* of a symbol. The __Parent Object__ and __Child Objects__ system aspects return the object ancestry, kind of like ignoring command capsules. The __Parent Command__ and __Child Commands__ aspects return the encapsulation only looking at command capsules.
 
 The __Shape__ system aspect returns the shape of a symbol.
 
@@ -5108,9 +5108,9 @@ The __Shape__ system aspect returns the shape of a symbol.
 
 There are even more system aspects, because system aspects return all information about the symbol, thus all information about the system. I won’t mention the other aspects yet, for they are about concepts not yet explained. Nevertheless, the ones mentioned here are the most important ones.
 
-### System Procedures
+### System Commands
 
-*System procedures*, or *system aspect procedures*, are procedures with which you get and set aspects of a symbol. Every symbol has system procedures. The line aspects of an object symbol are represented by the following procedures:
+*System commands*, or *system aspect commands*, are commands with which you get and set aspects of a symbol. Every symbol has system commands. The line aspects of an object symbol are represented by the following commands:
 
 - __Object Get__
 - __Object Set__
@@ -5119,26 +5119,26 @@ There are even more system aspects, because system aspects return all informatio
 - __Interface Get__
 - __Interface Set__
 
-And those of a procedure symbol are:
+And those of a command symbol are:
 
 - __Definition Get__
 - __Definition Set__
 - __Interface Get__
 - __Interface Set__
 
-With these system procedures you can get and set the line targets of symbols. These system procedures return or take the __Symbol Id__ of the line target: a number that uniquely identifies a symbol.
+With these system commands you can get and set the line targets of symbols. These system commands return or take the __Symbol Id__ of the line target: a number that uniquely identifies a symbol.
 
-The __Object Get__ and __Object Set__ procedures together can also be called the __Object__ system aspect or the __Object__ aspect. The same goes for the other aspect procedures.
+The __Object Get__ and __Object Set__ commands together can also be called the __Object__ system aspect or the __Object__ aspect. The same goes for the other aspect commands.
 
-All system aspects are represented by procedures. Some aspects can only be obtained, not set.
+All system aspects are represented by commands. Some aspects can only be obtained, not set.
 
-The *target aspects* can only be obtained, because they are derived from the lines of symbols. The line aspects of symbols can be controlled, but the target aspects cannot be directly controlled. So the target aspect procedures of object symbols are:
+The *target aspects* can only be obtained, because they are derived from the lines of symbols. The line aspects of symbols can be controlled, but the target aspects cannot be directly controlled. So the target aspect commands of object symbols are:
 
 - __Target Object__
 - __Target Type__
 - __Target Interface__
 
-And those of procedure symbols are:
+And those of command symbols are:
 
 - __Target Definition__
 - __Target Execution__
@@ -5151,21 +5151,21 @@ The __State__ symbol aspect can be obtained and assigned too.
 
 The state is obtained to be immediately assigned to another object. That way the values and line targets of one object are copied to another object, giving both objects the same state.
 
-The __Created__ symbol aspect is primarily only *obtained*, not set. __Created__ can be controlled though, by calling te __Create__ and __Destroy__ system procedures.
+The __Created__ symbol aspect is primarily only *obtained*, not set. __Created__ can be controlled though, by calling te __Create__ and __Destroy__ system commands.
 
 - __Created Get__
 - __Created Set__
 - __Create__
 - __Destroy__
 
-You *can* set the __Created__ aspect, which is equivalent to calling the __Create__ or __Destroy__ procedures.
+You *can* set the __Created__ aspect, which is equivalent to calling the __Create__ or __Destroy__ commands.
 
 - __Created = True  ≡  Create__
 - __Created = False  ≡  Destroy__
 
 But I prefer using __Create__ and __Destroy__ in most cases.
 
-Ancestry aspects can only be obtained, not set. The ancestry structure *can* change, as type and interface targets change, but the ancestry cannot be directly set, except at design time. So the ancestry procedures are:
+Ancestry aspects can only be obtained, not set. The ancestry structure *can* change, as type and interface targets change, but the ancestry cannot be directly set, except at design time. So the ancestry commands are:
 
 - __Parent__
 - __Children__
@@ -5174,8 +5174,8 @@ Ancestry aspects can only be obtained, not set. The ancestry structure *can* cha
 
 - __Parent Object__
 - __Child Object__
-- __Parent Procedure__
-- __Child Procedures__
+- __Parent Command__
+- __Child Commands__
 
 The __Children__ aspect is actually an array that returns multiple symbols. More on arrays later.
 
@@ -5183,13 +5183,13 @@ The shape of a symbol can only be set at design time, not at run time, so you ca
 
 - __Shape__
 
-The last one I’ll mention for now is the __Symbol__ system procedure. It actually returns the symbol itself. More specifically: its __Symbol Id__. It can be regarded the most primary of all system procedures.
+The last one I’ll mention for now is the __Symbol__ system command. It actually returns the symbol itself. More specifically: its __Symbol Id__. It can be regarded the most primary of all system commands.
 
 - __Symbol__
 
-So the system procedures introduced so far are:
+So the system commands introduced so far are:
 
-Object system procedures:
+Object system commands:
 
 - __Object Get__
 - __Object Set__
@@ -5216,7 +5216,7 @@ Object system procedures:
 - __Create__
 - __Destroy__
 
-Procedure system procedures:
+Command system commands:
 
 - __Definition Get__
 - __Definition Set__
@@ -5229,7 +5229,7 @@ Procedure system procedures:
 - __Target Execution__
 - __Target Interface__
 
-General system procedures:
+General system commands:
 
 - __Symbol__
 
@@ -5239,8 +5239,8 @@ General system procedures:
 - __Children__
 - __Parent Object__
 - __Child Objects__
-- __Parent Procedure__
-- __Child Procedures__
+- __Parent Command__
+- __Child Commands__
 
 -----
 
@@ -5248,15 +5248,15 @@ General system procedures:
 
 #### The System Interface
 
-The system procedures of a symbol together form the *system interface* of a symbol. It is notated as follows:
+The system commands of a symbol together form the *system interface* of a symbol. It is notated as follows:
 
 | ![](images/Symbol%20Language%20(2004).380.jpeg) | ![](images/Symbol%20Language%20(2004).381.jpeg) |
 |:-----------------------------------------------:|:-----------------------------------------------:|
-|           *Object System Interface*             |           *Procedure System Interface*          |
+|           *Object System Interface*             |            *Command System Interface*           |
 
-I’ve left out the system procedures I haven’t yet introduced.
+I’ve left out the system commands I haven’t yet introduced.
 
-In fact, most of the times you’ll only see part of the system interface: only the procedures that are of interest in the view on the diagram, or only the procedures with which something special is going on, while the other ones behave in a standard way. How they can be special and how they can be standard might be discussed later. So a lot of times the system interface might be shown as follows:
+In fact, most of the times you’ll only see part of the system interface: only the commands that are of interest in the view on the diagram, or only the commands with which something special is going on, while the other ones behave in a standard way. How they can be special and how they can be standard might be discussed later. So a lot of times the system interface might be shown as follows:
 
 ![](images/Symbol%20Language%20(2004).382.jpeg)
 
@@ -5270,15 +5270,15 @@ Notation of the system interface can go together with the regular contents of th
 |:----------------------------------------------:|:--------------------------------------------------:|
 |            *Object Notation Only*              | *Simultaneous system interface and object members* |
 
-Calls to system procedures and object members are intermixed, so you might be able to see both the system interface and the object members at the same time.
+Calls to system commands and object members are intermixed, so you might be able to see both the system interface and the object members at the same time.
 
 ![](images/Symbol%20Language%20(2004).385.png)
 
 *(Calls to system interface and to object members)*
 
-The system interface encapsulates many triangular objects and procedures. However, those objects and procedures are not the same as normal objects and procedures. The members of the system interface are very primary. they don’t have a system interface themselves and you can’t redirect them with lines.
+The system interface encapsulates many triangular objects and commands. However, those objects and commands are not the same as normal objects and commands. The members of the system interface are very primary. they don’t have a system interface themselves and you can’t redirect them with lines.
 
-If you see the system interface as an object, though, you can regard the system interface to have the same type for every object symbol. Procedure symbols might have a different system type. All symbols might derive from this system type then.
+If you see the system interface as an object, though, you can regard the system interface to have the same type for every object symbol. Command symbols might have a different system type. All symbols might derive from this system type then.
 
 ### Get and Set are Inseparable
 
@@ -5286,7 +5286,7 @@ __Get__ and __Set__ always accompany each other. That is: there’s no point to 
 
 *Getting* a value is done solely to immediately *assign* it to something else. __Get__ and __Set__ are stuck together with superglue. There is no intermediate state of a value between the __Get__ and the __Set__. There’s no manipulating a *gotten* value before you *set* it to something else.
 
-There are two things you can do with a value: copy it or transform it. If you transform it you always operate on a value directly. Even when you make a temporary copy of the value to operate on, manipulate it and write it back, you’re still directly manipulating the temporary copy. The whole process might be you first __Get__ the original value and immediately __Set__ the temporary copy. Then you manipulate the temporary copy, by calling one of its member or by passing it to a procedure that manipulates it. Then you __Get__ the temporary copy value and immediately __Set__ it to the original object. There *is* no room between __Get__ and __Set__.
+There are two things you can do with a value: copy it or transform it. If you transform it you always operate on a value directly. Even when you make a temporary copy of the value to operate on, manipulate it and write it back, you’re still directly manipulating the temporary copy. The whole process might be you first __Get__ the original value and immediately __Set__ the temporary copy. Then you manipulate the temporary copy, by calling one of its member or by passing it to a command that manipulates it. Then you __Get__ the temporary copy value and immediately __Set__ it to the original object. There *is* no room between __Get__ and __Set__.
 
 The combination of a __Get__ and a __Set__ as such is called an *assignment*.
 
@@ -5296,7 +5296,7 @@ So you always need to combine a call to a __Get__ with a call to a __Set__. The 
 
 You can always combine aspects that both return a __Symbol Id__. __State__ can only be combined with __State__. The __Created__ aspect can be treated like any __Boolean__ object.
 
-__Symbol Ids__ are stored like an __Integer__ number, but they cannot be used as __Integer__ objects. They can only be used among system procedures. You can’t assign an __Integer__ to an aspect returning a symbol and you can’t assign a symbol aspect to an __Integer__ number. So you can’t temporarily store a reference to a symbol inside an __Integer__.  
+__Symbol Ids__ are stored like an __Integer__ number, but they cannot be used as __Integer__ objects. They can only be used among system commands. You can’t assign an __Integer__ to an aspect returning a symbol and you can’t assign a symbol aspect to an __Integer__ number. So you can’t temporarily store a reference to a symbol inside an __Integer__.  
 {Is that true? In that case you can’t investigate the surrounding encapsulation and store it anywhere.}
 
 Note that of the aspects introduced, the only ones that can be __Set__ are: line targets, __State__ and the __Created__ aspect.
@@ -5325,19 +5325,19 @@ The common notation for this is quite easy, but
 
 #### Brainstorm
 
-Ik wil hier eigenlijk heel goed het gebruik van get en set weergeven. Ik geloof dat het nog niet te vroeg is om gedetailleerd in te gaan op het aanroepen van system procedures, voordat je aspect access control en redefinition uitlegt.
+Ik wil hier eigenlijk heel goed het gebruik van get en set weergeven. Ik geloof dat het nog niet te vroeg is om gedetailleerd in te gaan op het aanroepen van system commands, voordat je aspect access control en redefinition uitlegt.
 
 Ik moet hier echt (in de toekomst) heel wat voorbeelden geven, ook in diagrammen. Ik zit in m’n hoofd alleen met. Ik kan in m’n hoofd geen volledige strings met assignments visualiseren, omdat daarbij veel met parameters gewerkt wordt en ik heb nog geen goed beeld van parameters.
 
 -----
 
-But actually all system procedures could be globalized with as parameters the object to operate on. You actually already have such global procedures: the procedures of the system type can be used globally. If you use the system type members like global functions you simply use the type in a non-object oriented way. You pass the object to operate on to the procedure via the *this* argument. Using the system type procedures as a system interface for all the ‘symbol objects’ is the common conversion from procedural to object oriented.
+But actually all system commands could be globalized with as parameters the object to operate on. You actually already have such global commands: the commands of the system type can be used globally. If you use the system type members like global functions you simply use the type in a non-object oriented way. You pass the object to operate on to the command via the *this* argument. Using the system type commands as a system interface for all the ‘symbol objects’ is the common conversion from procedural to object oriented.
 
 ### Get Purposes
 
-< There are also situations in which you want to disallow copying object reference to an argument, but only allow consult of the argument. (that’s access control of system procedures, actually) >
+< There are also situations in which you want to disallow copying object reference to an argument, but only allow consult of the argument. (that’s access control of system commands, actually) >
 
-< This is gonna need many pictures. I just don’t draw those system procedure calls very well, yet. I have fear of drawing them >
+< This is gonna need many pictures. I just don’t draw those system command calls very well, yet. I have fear of drawing them >
 
 There can be multiple purposes to Get a value for. You can for instance get one symbol’s __Symbol Id__, to assign to another symbol’s __Type__.
 
@@ -5356,9 +5356,9 @@ The distinction has to do with access control. For instance: the symbol get migh
 < And how about Parent get? >  
 < Maybe if I ask myself the question here, maybe the reader might too, and I might give a concrete answer to that and to many more things too... >  
 < I think it’s something for the Get Purposes section >  
-< I noticed in my type Sigma . Controls . Button Style, I might like to specify separate *procedures* for copying its Style sub object or accessing the members of its Style sub object, not just separated access modifiers. That’s because if I want to access the Style object’s members, I want to return the Button Style object itself. If I want to copy Style property, I want to clone Me and return the clone. Even worse: if I want to assign a button’s Style and the source is a Style object, I can do a normal object assignment of the aValue argument, but if I want to assign a button’s Style and the source is a Button Style object, then I want .. to do something different. Anyway it’s complex >
+< I noticed in my type Sigma . Controls . Button Style, I might like to specify separate *commands* for copying its Style sub object or accessing the members of its Style sub object, not just separated access modifiers. That’s because if I want to access the Style object’s members, I want to return the Button Style object itself. If I want to copy Style property, I want to clone Me and return the clone. Even worse: if I want to assign a button’s Style and the source is a Style object, I can do a normal object assignment of the aValue argument, but if I want to assign a button’s Style and the source is a Button Style object, then I want .. to do something different. Anyway it’s complex >
 
-### Access Control on System Procedures
+### Access Control on System Commands
 
 ...
 
@@ -5366,7 +5366,7 @@ The distinction has to do with access control. For instance: the symbol get migh
 
 ...
 
-### Redefining System Procedures
+### Redefining System Commands
 
 ....
 
@@ -5398,14 +5398,14 @@ The distinction has to do with access control. For instance: the symbol get migh
 
 That introduction:
 
-- System aspect procedures get system aspects
+- System aspect commands get system aspects
 - They return symbol id's
 - State is special.
-- Other system aspects that might get system aspect procedures.
+- Other system aspects that might get system aspect commands.
 - Some aspects can be Set
     - Setting lines
     - Setting State
-- Automatic system aspect procedures calls
+- Automatic system aspect commands calls
 - Get and Set always accompany each other
 - State assignment
     - Conversion
@@ -5413,15 +5413,15 @@ That introduction:
     - When do they happen?
     - Every aspects its own collection of get purposes
     - They're there for access control.
-- Fill in system aspect procedures yourself
-- System procedures don't have system procedures themselves
+- Fill in system aspect commands yourself
+- System commands don't have system commands themselves
 - Design time and run time access controllers
 
 -----
 
 - The system interface
-- Contents of system procedures
-- Contents of system procedures determine lines
+- Contents of system commands
+- Contents of system commands determine lines
 - System interface and type code simultaneously
 - Showing only part of the system interface
 
@@ -5445,13 +5445,13 @@ That introduction:
 
 - __System Aspects__
     - Are ...
-- __System Procedures__
+- __System Commands__
     - Names
     - Diagram
     - First the main ones: the customizable ones
     - Then the secondary ones: the automatic ones
     - Showing only part of the system interface
-        - System interface members don’t have system procedures themselves and you can’t redirect them with lines
+        - System interface members don’t have system commands themselves and you can’t redirect them with lines
         - Seeing the system interface as having a system type.
 - __Get and Set Always Accompany Each Other__
 - __Get Purposes__
@@ -5462,21 +5462,21 @@ That introduction:
         - Use as Object
         - Use as Type
         - Use as Interface
-    - Use as Procedure
-    - Use as Procedure Interface
-- __Access Control on System Procedure__
+    - Use as Command
+    - Use as Command Interface
+- __Access Control on System Command__
 - __Variable and Constant__
     - (Design Time and Run Time Access Control)
     - (Only at creation or free?)
-- __Redefining System Procedures__
+- __Redefining System Commands__
     - Default implementation
         - Including default access modifiers
-    - System procedures don't have system procedures themselves
+    - System commands don't have system commands themselves
     - (some aspects are redefinable, some automatic, some automatic but extendable)
-    - Mention that you can’t really see the system interface as having a system type, if some of its procedures  can be redefined. 
-        - (However, lateron, in access control, or procedure resolution, a technique to redefine procedures is given that make you able to see the system interface as having a system type again...)
+    - Mention that you can’t really see the system interface as having a system type, if some of its commands can be redefined. 
+        - (However, lateron, in access control, or command resolution, a technique to redefine commands is given that make you able to see the system interface as having a system type again...)
 - __Exclusive Establishment__
-    - Contents of system procedures determine lines
+    - Contents of system commands determine lines
 - __Static, Creation and Destruction__
     - a.o. Design time lines
 - __State__
@@ -5495,12 +5495,12 @@ That introduction:
 #### New Main Subdivision
 
 - System Aspects 
-- System Procedures
+- System Commands
 - Get and Set Always Accompany Each Other
 - Get Purposes
-- Access Control of System Procedures 
+- Access Control of System Commands 
 - Variable and Constant 
-- Redefining System Procedures
+- Redefining System Commands
 - Exclusive Establishment
 - Static, Creation and Destruction
 - State
@@ -5529,7 +5529,7 @@ Are implicit calls mostly an alternative notation for get set actions?
 
 ### Introduction to System Aspects
 
-*System aspect procedures* return the system aspects of a symbol. You can *‘get’* the following aspects of a symbol:
+*System aspect commands* return the system aspects of a symbol. You can *‘get’* the following aspects of a symbol:
 
 - __Symbol__
 - __Object__
@@ -5547,9 +5547,9 @@ __Interface__ returns the target of the interface line.
 __Target Object__, __Target Type__ and __Target Interface__ return respectively the id of the previously discussed *target* object, *target* type and *target* interface.
 
 __State__ is special and returns a copy of the object as it were, which is a copy of all the data the object stores. This state might be immediately assigned to another object, which is usually of the same type.  
-All other system procedures return a symbol id; State returns the data of the object. I might return to __State__ lateron.
+All other system commands return a symbol id; State returns the data of the object. I might return to __State__ lateron.
 
-Similarly even more system procedures could be defined that return more system aspects of a symbol, like:
+Similarly even more system commands could be defined that return more system aspects of a symbol, like:
 
 - Parent
 - Children
@@ -5599,11 +5599,11 @@ Every system aspect supports a different collection of get purposes. For instanc
 
 When the main purpose of a Get is mentioned, the word ‘Get’ is often left out. You can simply speak of for instance Object Copy or Type Redirection. 
 
-The reason that this separation between get purposes is made is not that there are three different get procedures. The get procedure of all three purposes is the same procedure so that they return consistently the same value for all three purposes. What you can control separately for the three purpose is their access controller (not covered yet). Redirection is always public: the Symbol system can always redirect whenever it feels like it, because Symbol knows perfectly when to redirect and when not to. You *can* put restrictions on Access and Copy. If you make Access private then you can’t access the symbol (through its parent). If you make Access public then you *can* access the symbol. If you make Access public, but Copy private it means that you *can* access the symbol, but you *can’t* copy the id of the symbol. To be able to do that, Copy needs to made public. Copy is always equally or less public than Access. One of the main purposes to different access controllers for different Get purposes is to be able to access a symbol, but at the same time not be able to copy the reference to the symbol. The other important purpose is that the Get always has to be public for redirection, even when it’s private for other purposes. You can alter the access controllers of almost every system procedure and purpose, except for Redirection. That one’s always public. Public for the Symbol system that is, because programmers can never call this form of get themselves.
+The reason that this separation between get purposes is made is not that there are three different get commands. The get command of all three purposes is the same command so that they return consistently the same value for all three purposes. What you can control separately for the three purpose is their access controller (not covered yet). Redirection is always public: the Symbol system can always redirect whenever it feels like it, because Symbol knows perfectly when to redirect and when not to. You *can* put restrictions on Access and Copy. If you make Access private then you can’t access the symbol (through its parent). If you make Access public then you *can* access the symbol. If you make Access public, but Copy private it means that you *can* access the symbol, but you *can’t* copy the id of the symbol. To be able to do that, Copy needs to made public. Copy is always equally or less public than Access. One of the main purposes to different access controllers for different Get purposes is to be able to access a symbol, but at the same time not be able to copy the reference to the symbol. The other important purpose is that the Get always has to be public for redirection, even when it’s private for other purposes. You can alter the access controllers of almost every system command and purpose, except for Redirection. That one’s always public. Public for the Symbol system that is, because programmers can never call this form of get themselves.
 
-The Get usually returns system information. The Set usually changes a line target normally. However, as a programmer you can also decide for yourself what’s the effect of a Get or a Set.  You can totally redefine the Get and Set procedures of a symbol. With that you can also add parameters to the Get and Set procedures. So you’re able to decide yourself which symbol to return on a Get and which symbol to assign on a Set. \* You can also for instance see to it that on a Set call, the change is applied to all sorts of things, by starting procedures that apply the new value. When setting an object’s state, for instance, you can automatically apply its new state to other objects, for instance when you need to draw a text on screen every time a value changes. You can’t redefine *all* system procedures. For instance the effect of Target Object Get might stay consistent and cannot be customized. And also Symbol Get always needs to return the symbol itself. You can only redefine the Object, Type, Interface and State Gets and Sets.
+The Get usually returns system information. The Set usually changes a line target normally. However, as a programmer you can also decide for yourself what’s the effect of a Get or a Set.  You can totally redefine the Get and Set commands of a symbol. With that you can also add parameters to the Get and Set commands. So you’re able to decide yourself which symbol to return on a Get and which symbol to assign on a Set. \* You can also for instance see to it that on a Set call, the change is applied to all sorts of things, by starting commands that apply the new value. When setting an object’s state, for instance, you can automatically apply its new state to other objects, for instance when you need to draw a text on screen every time a value changes. You can’t redefine *all* system commands. For instance the effect of Target Object Get might stay consistent and cannot be customized. And also Symbol Get always needs to return the symbol itself. You can only redefine the Object, Type, Interface and State Gets and Sets.
 
-Just now, I’ve only discussed the system procedures of *object symbols*. Procedure symbols have system procedures too:
+Just now, I’ve only discussed the system commands of *object symbols*. Command symbols have system commands too:
 
 - Symbol
     - Get : Copy
@@ -5613,16 +5613,16 @@ Just now, I’ve only discussed the system procedures of *object symbols*. Proce
 - Reference
     - Get : Copy or Redirect
     - Set
-- Target Procedure:
+- Target Command:
     - Get : Copy or Access
 
-*Symbol Get* obtains the id of the symbol itself. *Call Get* obtains the call line target symbol. You can also *Set* the call target. *Reference Get* returns the symbol id of the reference line target. You can also *Set* the reference line target. The *Target Procedure* of a symbol returns the procedure at the end of the redirection: the procedure definition. *Target Procedure Copy* copies the id of this procedure. *Target Procedure Access* is the Get that occurs when you call the target procedure. Access controllers can be applied to all elements, except Symbol Get. Call and Reference Get and Set can be redefined. Mind that the access controller for Target Procedure Access determines *the* access controller for calling the procedure symbol.
+*Symbol Get* obtains the id of the symbol itself. *Call Get* obtains the call line target symbol. You can also *Set* the call target. *Reference Get* returns the symbol id of the reference line target. You can also *Set* the reference line target. The *Target Command* of a symbol returns the command at the end of the redirection: the command definition. *Target Command Copy* copies the id of this command. *Target Command Access* is the Get that occurs when you call the target command. Access controllers can be applied to all elements, except Symbol Get. Call and Reference Get and Set can be redefined. Mind that the access controller for Target Command Access determines *the* access controller for calling the command symbol.
 
-Because procedures have system procedures themselves, you’d think that an system procedure also has an system procedure. That one isn’t true. System procedures don’t have system procedures themselves.
+Because commands have system commands themselves, you’d think that an system command also has an system command. That one isn’t true. System commands don’t have system commands themselves.
 
 Set and Copy are used to set up lines. Lines are set up at design time, but can also be changed at run time. Sometimes you want to set a line at design time without being able to change it at run time. Therefore, Set and Copy might be able to have different access controllers at design time and run time. Just like the Get purposes can have different access controllers, it’s possible to have different access controllers for Design Time Set and Run Time Set and for Design Time Copy and Run Time Copy. Something is a constant if it can be Design Time Set, but not Run Time Set.
 
-Object symbol system procedures and purposes:
+Object symbol system commands and purposes:
 
 - Symbol
     - Get : Copy (Run Time or Design Time)
@@ -5645,7 +5645,7 @@ Object symbol system procedures and purposes:
 - Target Interface
     - Get : Copy (Run Time or Design Time)
 
-Procedure symbol system procedures and purposes:
+Command symbol system commands and purposes:
 
 - Symbol
     - Get : Copy (Run Time or Design Time)
@@ -5655,41 +5655,41 @@ Procedure symbol system procedures and purposes:
 - Reference
     - Get : Copy (Run Time or Design Time) or Redirect
     - Set : Run Time or Design Time
-- Target Procedure:
+- Target Command:
     - Get : Copy (Run Time or Design Time) or Access
 
-That seems a whole lot of Get and Set purposes. In practice, the set up of a symbol’s system procedures is not that complicated. There’s a standard setup: the most usual system procedure setup. Only deviations from the standard are additionally denoted.
+That seems a whole lot of Get and Set purposes. In practice, the set up of a symbol’s system commands is not that complicated. There’s a standard setup: the most usual system command setup. Only deviations from the standard are additionally denoted.
 
-There are a few more system procedures which might be gradually introduced.
+There are a few more system commands which might be gradually introduced.
 
 ### The System Representation
 
 The usual representation of an object symbol is one that shows the members of its type.
 
-An alternate look on the object symbol is as a set of system procedures, each granting a different type of access to the object:
+An alternate look on the object symbol is as a set of system commands, each granting a different type of access to the object:
 
 ![](images/Symbol%20Language%20(2004).386.png)
 
-This representation is called the *system representation* of the symbol. Each procedure in the system representation might what’s discussed in the previous section.
+This representation is called the *system representation* of the symbol. Each command in the system representation might what’s discussed in the previous section.
 
-__Symbol__, __Target Object__, __Target Type__ and __Target Interface__ only have a __Get__ procedure. The word __Get__ is simply left out in naming these procedure from now on. The word __Get__ can also be left out with __Object__, __Type__, __Interface__ and __State__ __Gets__.
+__Symbol__, __Target Object__, __Target Type__ and __Target Interface__ only have a __Get__ command. The word __Get__ is simply left out in naming these command from now on. The word __Get__ can also be left out with __Object__, __Type__, __Interface__ and __State__ __Gets__.
 
-Now you can see that the system procedures are actual Symbol procedures (except that they don’t have system procedures themselves). You can do with them the things discussed above: you can change their access controllers. Some of these procedures can get multiple access controllers for different purposes (System procedures are the only procedures that have this capability.). The Object, Type, Interface and State’s Gets and Sets can be redefined by filling the procedures with code.
+Now you can see that the system commands are actual Symbol commands (except that they don’t have system commands themselves). You can do with them the things discussed above: you can change their access controllers. Some of these commands can get multiple access controllers for different purposes (System commands are the only commands that have this capability.). The Object, Type, Interface and State’s Gets and Sets can be redefined by filling the commands with code.
 
-Notice that what you fill in in the Type Get procedure, determines the contents of the symbol in the ‘normal’ representation, or *type representation*, because the type representation shows the members of the symbol’s type.
+Notice that what you fill in in the Type Get command, determines the contents of the symbol in the ‘normal’ representation, or *type representation*, because the type representation shows the members of the symbol’s type.
 
-The system representation of a symbol has no lines.  The lines of the *type representation* are actually determined by what Get procedures return. Therefore, a symbol is no more than a bunch of system procedures.  
+The system representation of a symbol has no lines.  The lines of the *type representation* are actually determined by what Get commands return. Therefore, a symbol is no more than a bunch of system commands.  
 <  
-Interesting, but not entirely true, because it suggests you can determine thw whole system by filling in system procedures, while you can’t directly change the ancestry or change the shapes of symbols. The contents of system procedures determine the lines. The system representation is like seeing the setup of the symbol machine.  
+Interesting, but not entirely true, because it suggests you can determine thw whole system by filling in system commands, while you can’t directly change the ancestry or change the shapes of symbols. The contents of system commands determine the lines. The system representation is like seeing the setup of the symbol machine.  
 \>
 
-Procedure symbols also have an system representation:
+Command symbols also have an system representation:
 
 ![](images/Symbol%20Language%20(2004).387.png)
 
 #### Simultaneous System Representation and Type Representation
 
-You can also view the system representation along with the normal representation. System procedures are called, just like other procedures are called and their being called is mixed with calls to regular procedures, so you might be able to see both the system procedures and type procedures at the same time.
+You can also view the system representation along with the normal representation. System commands are called, just like other commands are called and their being called is mixed with calls to regular commands, so you might be able to see both the system commands and type commands at the same time.
 
 The following notation is used for this:
 
@@ -5697,7 +5697,7 @@ The following notation is used for this:
 |:----------------------------------------------:|:----------------------------------------------:|
 | ![](images/Symbol%20Language%20(2004).388.png) | ![](images/Symbol%20Language%20(2004).389.png) |
 
-The system representation is displayed sort of like an implementation of an extra interface, but tied to the edge of the symbol, rather than being contained by the symbol, denoting that this interface isn’t inferior to the symbol. The system representation is in this case also called the system interface. In simultaneous display it is very apparent that it’s system procedures that you’re seeing. It may be preferred to always view system procedures in simultaneous view, even when you don’t display the type contents:
+The system representation is displayed sort of like an implementation of an extra interface, but tied to the edge of the symbol, rather than being contained by the symbol, denoting that this interface isn’t inferior to the symbol. The system representation is in this case also called the system interface. In simultaneous display it is very apparent that it’s system commands that you’re seeing. It may be preferred to always view system commands in simultaneous view, even when you don’t display the type contents:
 
 ![](images/Symbol%20Language%20(2004).390.png)
 
@@ -5710,21 +5710,21 @@ Not always the whole system representation is shown. You might only want to show
 ### Call Example
 
 < Not finished, but it takes too much time to write this section for now >  
-< Might need to display how system procedures are called >
+< Might need to display how system commands are called >
 
-I might now discuss the same complex call as before, but now denoting which system procedures are called for which purpose. This call only involves getting values, not setting them.
+I might now discuss the same complex call as before, but now denoting which system commands are called for which purpose. This call only involves getting values, not setting them.
 
 ![](images/Symbol%20Language%20(2004).392.png)
 
-We start at *a*, the procedure which contains a call, located near the center of the diagram. It calls b, but before that it first accesses c and then i.
+We start at *a*, the command which contains a call, located near the center of the diagram. It calls b, but before that it first accesses c and then i.
 
-c . i . b Is the expression that calls b. The period (.) is an operator, which, as might be explained later, is a procedure call.
+c . i . b Is the expression that calls b. The period (.) is an operator, which, as might be explained later, is a command call.
 
-The first period is an alternate notation of a call to c . Object. The second period is a call to i . Object. The b that follows is a call to b . Target Procedure. Symbol starts the procedure returned by b . Target Procedure.
+The first period is an alternate notation of a call to c . Object. The second period is a call to i . Object. The b that follows is a call to b . Target Command. Symbol starts the command returned by b . Target Command.
 
-Each call of the three (c . Object, i . Object and b . Target Procedure) is processed in steps.
+Each call of the three (c . Object, i . Object and b . Target Command) is processed in steps.
 
-c . Object is called (for the purpose of *Access*). The c . Object procedure returns d . Object. d . Object returns e . Object. e . Object returns itself: e . Symbol. This process is contained in the Object Get procedures of c, d and e. They redirect to one another until e returns itself. So c . Object returns e.
+c . Object is called (for the purpose of *Access*). The c . Object command returns d . Object. d . Object returns e . Object. e . Object returns itself: e . Symbol. This process is contained in the Object Get commands of c, d and e. They redirect to one another until e returns itself. So c . Object returns e.
 
 The target object and target type of e are to be found out. Symbol might this by first calling __e . Object Get__ for the purpose of Redirection.  This call is not anywhere in the diagram. It is done on Symbol’s discretion. e . Object Redirection returns Nothing, a special value that in this case indicates that there is no object line. Because there is no object line, the type line may need to be followed. Therefore Symbol calls e . Type for the purpose of Redirection. This call returns symbol f. f . Object Redirection is called, which returns Nothing, so them f . Type Redirection is called, which returns g. g . Object is called, which returns h. h . Object is called, which returns Nothing, so h . Type is called, which also returns nothing. During this redirection loop, Symbol has recorded the target object and target type of e. This concludes the access of c.
 
@@ -5734,16 +5734,16 @@ Now we know c’s object and type we continue the journey of our call line. It a
 
 Next the call line accesses i. i Redirects to j with an object line. j However has both a type line and an object line. A rule discussed earlier told us that in finding target type and object, a type line is ignored if also an object line is present. So we follow the object line to k. k has only a type line, making it a potential candidate for target object. k redirects to l with a type line. l has no lines. k Is the last symbol to be pointed at with an object line, so k is the object of i: Oi, and l is the type of i: Ci. Then we roll back to the call line, that can now enter i.
 
-The call line ends up at b, the called square, but b has a procedure reference line to m. Procedure reference lines are bound just as tightly as object lines and type lines and any symbol exits and entrances are irrelevant in processing a call. m Directs to n, n directs to o. o has to be called.
+The call line ends up at b, the called square, but b has a command reference line to m. Command reference lines are bound just as tightly as object lines and type lines and any symbol exits and entrances are irrelevant in processing a call. m Directs to n, n directs to o. o has to be called.
 
 o Has to be called, but it’s a call to a totally different object. You might know what object you’re calling so you might find out this symbol’s object and type.  
-Because the initially accessed object isn’t called, but another object, it may seem that performing all those previous accesses wasn’t necessary, but it was. In the target object the procedure reference target is stored, so we indeed needed to obtain the target object, and for that the target type too. This object lead us to knowing where the procedure reference leads. To know which procedure is referenced, you might figure out its parent’s type and object. So one more obtaining of a target object and type is performed on the target procedure’s parent. This is not an access, but the same method is used.
+Because the initially accessed object isn’t called, but another object, it may seem that performing all those previous accesses wasn’t necessary, but it was. In the target object the command reference target is stored, so we indeed needed to obtain the target object, and for that the target type too. This object lead us to knowing where the command reference leads. To know which command is referenced, you might figure out its parent’s type and object. So one more obtaining of a target object and type is performed on the target command’s parent. This is not an access, but the same method is used.
 
 ### Setting Lines
 
-The default implementation of a Set procedure stores the target symbol in a *storage variable*. The associated *Get* procedure has a default implementation returning it. Lines are determined by what Get procedures return. Lines are always set by calling Set procedures. 
+The default implementation of a Set command stores the target symbol in a *storage variable*. The associated *Get* command has a default implementation returning it. Lines are determined by what Get commands return. Lines are always set by calling Set commands. 
 
-This means that setting a line even at design time, requires calling the Set procedures. This section discusses where they are called.
+This means that setting a line even at design time, requires calling the Set commands. This section discusses where they are called.
 
 #### Mutual Descendant Sets Lines
 
@@ -5759,7 +5759,7 @@ The consequence of this is that the source symbol’s Set and the target symbol�
 
 In a diagram where you don’t denote publicity, potentially anything is public so lines other than call lines have no limitations to their connections to the outside. When you consider publicity however, restrictions can be laid on these outward lines. 
 
-An descendant of the closest mutual descendant (which is also a mutual descendant) could also have set the line, be it that the source and target symbols are published as far up the encapsulation hierarchy. That is: the Set procedure of the source symbol and the Copy procedure of the target symbol might be public to it. Lines set at design time are set by the closest mutual descendant, though.
+An descendant of the closest mutual descendant (which is also a mutual descendant) could also have set the line, be it that the source and target symbols are published as far up the encapsulation hierarchy. That is: the Set command of the source symbol and the Copy command of the target symbol might be public to it. Lines set at design time are set by the closest mutual descendant, though.
 
 Lines set at design time are set at run time on creation of the mutual descendant. This means that lines of a symbol’s children only exist in created objects, because line targets are data stored in the created object.
 
@@ -5786,15 +5786,15 @@ Destruction is not the opposite of creation. It’s a separate thing, because cr
 Oops. At runtime you can set references to an object, while it isn’t even created... Oops. That’s big. That flaws the destruction methodology.  
 \>
 
-#### The Create and Destroy Procedures
+#### The Create and Destroy Commands
 
-A subject looked at less closely till now is creation and destruction of objects. The Create and Destroy procedures are actually two system procedures that I haven’t mentioned yet. They only apply to object symbols:
+A subject looked at less closely till now is creation and destruction of objects. The Create and Destroy commands are actually two system commands that I haven’t mentioned yet. They only apply to object symbols:
 
 ![](images/Symbol%20Language%20(2004).396.png)
 
-Like the other system procedures, their access controllers can be adapted. There can be separate access controllers for design time and run time, just like Copy Get and Set.
+Like the other system commands, their access controllers can be adapted. There can be separate access controllers for design time and run time, just like Copy Get and Set.
 
-These access controllers are bound to the type, so each symbol of this type gets the same creation access controllers. The access controller of the Create procedure determines which parties might be able to create objects from the type.
+These access controllers are bound to the type, so each symbol of this type gets the same creation access controllers. The access controller of the Create command determines which parties might be able to create objects from the type.
 
 ##### Referring to Uncreated Symbols
 
@@ -5818,7 +5818,7 @@ What if you break the line between the two symbols of a created bidirection? Whi
 
 #### No Lines Inside Uncreated Symbols
 
-Lines are set at run time. Design time lines are actually set in the Create procedure of the mutual descendant. However, in design time nothing is created. So there actually are *no lines at design time* at all.
+Lines are set at run time. Design time lines are actually set in the Create command of the mutual descendant. However, in design time nothing is created. So there actually are *no lines at design time* at all.
 
 Furthermore, *lines only* exist *in created objects*, because line targets are stored in the created object’s data. That doesn’t mean that lines can’t point *to* the insides of an uncreated symbol.
 
@@ -5858,25 +5858,25 @@ Creation is *not* a special State assignment. State assignment fills an existing
 
 ### Set Example
 
-Here I give the diagrams of how system procedures are called to set a line at design time, change it at run time and annul it at run time.
+Here I give the diagrams of how system commands are called to set a line at design time, change it at run time and annul it at run time.
 
-When you set lines at design time, you’re actually putting code into the Create procedure of the mutual descendant.
+When you set lines at design time, you’re actually putting code into the Create command of the mutual descendant.
 
 ![](images/Symbol%20Language%20(2004).402.png)
 
-The Create procedure calls Target (. Symbol Get) and then Parent . Source . Object Set passing the result of Target . Symbol Get to it. The text code line might be:
+The Create command calls Target (. Symbol Get) and then Parent . Source . Object Set passing the result of Target . Symbol Get to it. The text code line might be:
 
 ```
 Parent . Source . Object Set = Target
 ```
 
-This is a design time set line. You don’t need to display the symbols above all the time and more such symbols for every design time set line. You only might display the symbols above if you find it really important to display them or when debugging the Mutual Descendant . Create procedure, which sets the lines.
+This is a design time set line. You don’t need to display the symbols above all the time and more such symbols for every design time set line. You only might display the symbols above if you find it really important to display them or when debugging the Mutual Descendant . Create command, which sets the lines.
 
-After the Create procedure has executed, the diagram can be displayed as:
+After the Create command has executed, the diagram can be displayed as:
 
 ![](images/Symbol%20Language%20(2004).403.png)
 
-The differences are that the access interfaces have collapsed and a line is now between Source and Target. The other diagram showed the procedure of instantiation of the line.
+The differences are that the access interfaces have collapsed and a line is now between Source and Target. The other diagram showed the command of instantiation of the line.
 
 When debugging at any moment a line is changed, you’ll see the source and target symbol’s access interfaces temporarily opening up. When the line is changed, they close again.
 
@@ -5919,23 +5919,23 @@ If the State isn’t assigned to the same type then a conversion might take plac
 
 Conversions can also be cast explicitly rather than being automatically performed on state assignment.
 
-Conversion procedures are considered system procedures as well. One type can define multiple conversion procedure’s. The parameter of the conversion procedure is the source object. A conversion procedure can also have multiple parameters. That way multiple objects can be converted to a single object, sometimes grouping multiple object of the same type, sometimes grouping a combination of types.
+Conversion commands are considered system commands as well. One type can define multiple conversion command’s. The parameter of the conversion command is the source object. A conversion command can also have multiple parameters. That way multiple objects can be converted to a single object, sometimes grouping multiple object of the same type, sometimes grouping a combination of types.
 
-< If you want to convert a number to text then the text object should define the conversion for all this stuff. Hmm... mayve the source object should be able to define the conversion too >
+< If you want to convert a number to text then the text object should define the conversion for all this stuff. Hmm... maybe the source object should be able to define the conversion too >
 
-### Conversions Aren’t Create Procedures
+### Conversions Aren’t Create Commands
 
-This comment is made because in the C++ programming language, conversion procedures *are* alternative create procedures. A conversion might not involve the creation of an object. A conversion is the assignment of new values to an existing object, values that are based on the values of an object from a different type.
+This comment is made because in the C++ programming language, conversion commands *are* alternative create commands. A conversion might not involve the creation of an object. A conversion is the assignment of new values to an existing object, values that are based on the values of an object from a different type.
 
 ### Dimensions (Brainstorm)
 
 < There might be a special notation for a dimensional symbol >  
 < >  
-I might have a substitute for the array in Symbol. It seems that I need the possibility to have a series of multiple object symbols of the same kind. All I might need instead, actually, is the an object symbol with a dimension. I can do that by giving the Object property a dimension. The State property should also get a dimension then. Should I then base the storage of the object symbol on a data structure? To understand this I need to understand the storage of an object’s data. Most of the times, the storage of an object’s data is in the storage of it’s sub objects’ data. Then it goes down the ancestry, usually up until the simple object types such as Integer and Double. Line targets are also stored data, stored Integer objects as sheer identifying numbers. Arrays... are probably symbols of which system procedures have a dimensions, mainly the Object or State property. The system procedure returns something a J Data object returns. I might want to show an alternate notation of a symbol whose system procedures have one or more dimensions.
+I might have a substitute for the array in Symbol. It seems that I need the possibility to have a series of multiple object symbols of the same kind. All I might need instead, actually, is the an object symbol with a dimension. I can do that by giving the Object property a dimension. The State property should also get a dimension then. Should I then base the storage of the object symbol on a data structure? To understand this I need to understand the storage of an object’s data. Most of the times, the storage of an object’s data is in the storage of it’s sub objects’ data. Then it goes down the ancestry, usually up until the simple object types such as Integer and Double. Line targets are also stored data, stored Integer objects as sheer identifying numbers. Arrays... are probably symbols of which system commands have a dimensions, mainly the Object or State property. The system command returns something a J Data object returns. I might want to show an alternate notation of a symbol whose system commands have one or more dimensions.
 
 Maybe I need a small section about object data storage. How it’s delegated to J Data and to Math and that math delegates it to J Data too. I guess J Data is the one to manage the use of space.
 
-I also need a basic explanation about the consequences of giving system procedure dimensions.
+I also need a basic explanation about the consequences of giving system command dimensions.
 
 ### Brainstorm
 
@@ -5943,7 +5943,7 @@ I also need a basic explanation about the consequences of giving system procedur
 I cannot seem to be able to give this sentence a place:  
 The usual way of accessing most objects is by getting a reference to it and then calling a member of it. The usual way of accessing simpler objects such as Integers is by getting the *state* of it.
 
-< Doesn’t the fact that procedures determine lines make the symbol database as I know it invalid? Yeah. Line targets might be far from primary data. What might be primary data then? Object and procedure ancestry and call lines? Yeah. Other lines are data derived from the calls inside system procedures. >
+< Doesn’t the fact that commands determine lines make the symbol database as I know it invalid? Yeah. Line targets might be far from primary data. What might be primary data then? Object and command ancestry and call lines? Yeah. Other lines are data derived from the calls inside system commands. >
 
 ### Immutable at Run Time
 
@@ -5955,15 +5955,15 @@ And what *is* changeable at run time.
 ### Static and Creation
 
 <  
-What I call type members a lot, really aren’t type members. They’re object members. Only static type members are type members. And what I call procedure members aren’t procedure members. They are call members. Only static procedure members are procedure members. So what are Type Static procedure members? They are type members that are only associated with a single procedure. Oh, but they are still procedure members than. And then object members can also be called type members. Hmmm... yes, but I overuse ‘type member’ I think. In a lot of places I can say object member.  
+What I call type members a lot, really aren’t type members. They’re object members. Only static type members are type members. And what I call command members aren’t command members. They are call members. Only static command members are command members. So what are Type Static command members? They are type members that are only associated with a single command. Oh, but they are still command members than. And then object members can also be called type members. Hmmm... yes, but I overuse ‘type member’ I think. In a lot of places I can say object member.  
 \>
 
 <  
-a symbol apart from an object access procedure also has a type access procedure giving you access to the type members in a static form. The object includes its types static members...(I’m explaining static here)  
+a symbol apart from an object access command also has a type access command giving you access to the type members in a static form. The object includes its types static members...(I’m explaining static here)  
 \>
 
 <  
-Uit dit verhaal volgt dat je wel code als deel van de klasse kan zien, maar dat procedures niet deel van de klasse zijn. Als procedures static members hebben dan heeft elk object z’n eigen procedure type object. 
+Uit dit verhaal volgt dat je wel code als deel van de klasse kan zien, maar dat commando's niet deel van de klasse zijn. Als command's static members hebben dan heeft elk object z’n eigen command type object. 
 
 Als types static members hebben dan heeft elke module instance z’n eigen type object  
 \>
@@ -5973,19 +5973,19 @@ Als types static members hebben dan heeft elke module instance z’n eigen type 
 < An object doesn’t define code. You could say that the type defines code and that a object only defines data. Each module instance, though, has its own instance of the types of the modules, even though the code of the types is still only in memory once. So you can’t really say the code resides in a type either. >
 
 - Type static
-- Procedure static
+- Command static
 - Module static
 -----
 - Type static objects
-- Procedure static objects
+- Command static objects
 - Module static objects
 -----
-- Procedure static procedures
-- Type static procedures
-- Module static procedures
+- Command static commands
+- Type static commands
+- Module static commands
 -----
 - Type Create
-- Procedure Create
+- Command Create
 - Module Type Create
 
 #### Memory Reservation
@@ -5994,35 +5994,35 @@ This text is preliminary, because there is no final design on Core object manage
 
 Usually you won’t work with memory management. You’ll simply use for instance Integer or Array objects from the Math and Data modules. Those objects manage memory.
 
-An object that manages its own memory can define what memory spaces it wants. Say it wants 3 memory spaces. You can can then identify these spaces with 0, 1 and 2 in your code. When an object consults a memory space it calls a Sigma Core memory management procedure. It identifies itself and the space it wants to do something with. The Sigma Core stores the real ids of the spaces and knows what space to work with. < > The object doesn’t know its own id, but the caller of the object might. < >
+An object that manages its own memory can define what memory spaces it wants. Say it wants 3 memory spaces. You can can then identify these spaces with 0, 1 and 2 in your code. When an object consults a memory space it calls a Sigma Core memory management command. It identifies itself and the space it wants to do something with. The Sigma Core stores the real ids of the spaces and knows what space to work with. < > The object doesn’t know its own id, but the caller of the object might. < >
 
 Every time an object is created, it gets its own initial memory spaces. Oh! Once it has one memory space it has the ability to store space id’s of other memory spaces, so then it can work with the spaces with the real space ids. So the Code might store what?
 
 #### Static
 
-Members usually belong to an object: every object has its own sub objects and procedures. Members of a type that are Static, however, belong to the type rather to individual objects. These members have the same configuration for every instance of the type. A change made to one object of the type changes all objects of the type. The members are considered *static* to the type.
+Members usually belong to an object: every object has its own sub objects and commands. Members of a type that are Static, however, belong to the type rather to individual objects. These members have the same configuration for every instance of the type. A change made to one object of the type changes all objects of the type. The members are considered *static* to the type.
 
-Procedure instances are made on each call to the procedure. A call is a procedure instance. In order to make objects part of the whole procedure, rather than just the call, procedure members can be made Static to the procedure. On each call to the procedure, the static members retain their configuration.
+Command instances are made on each call to the command. A call is a command instance. In order to make objects part of the whole command, rather than just the call, command members can be made Static to the command. On each call to the command, the static members retain their configuration.
 
-Static members of a procedure are only the same for every call to the procedure. Static members of a procedure are different for every object that holds the procedure. In order to make procedure members static for the whole type of objects you might make a procedure member Type Static. When I talk about static procedure members I’m talking about Procedure Static members.
+Static members of a command are only the same for every call to the command. Static members of a command are different for every object that holds the command. In order to make command members static for the whole type of objects you might make a command member Type Static. When I talk about static command members I’m talking about Command Static members.
 
-Static type members are the same for every object instance. However, each module instance has its own copy of static type members. Static type members are not the same for every module instance. In order to make a type member, or a procedure member static to the any module instance, you make the member Module Static.
+Static type members are the same for every object instance. However, each module instance has its own copy of static type members. Static type members are not the same for every module instance. In order to make a type member, or a command member static to the any module instance, you make the member Module Static.
 
-An effect of making type members static is that you can call the members even when the symbol isn’t created. Non-static members, or *instance members*, can only be called on a created object. Module static members can be called even when the module instance isn’t created, but the module type is loaded into memory. Static members of a procedure can be accessed without running the procedure.
+An effect of making type members static is that you can call the members even when the symbol isn’t created. Non-static members, or *instance members*, can only be called on a created object. Module static members can be called even when the module instance isn’t created, but the module type is loaded into memory. Static members of a command can be accessed without running the command.
 
-Procedure static members are like part of their object. They persist for as long as the object is created. Type static members persist for as long as its module instance is created. Note here that each module instance gets its own set of types with static members. Module static members persist for as long as the module type exist. A module type exists when the Sigma module that contains it is in memory.
+Command static members are like part of their object. They persist for as long as the object is created. Type static members persist for as long as its module instance is created. Note here that each module instance gets its own set of types with static members. Module static members persist for as long as the module type exist. A module type exists when the Sigma module that contains it is in memory.
 
 #### Type Creation
 
-The Object Create procedure initializes the instance. In it you can create sub objects, set up lines and call members. Type members are initialized in another procedure: Type Create. The Type Create procedure of a symbol is called when the type is created. Types are created when a module instance is created so the Type Create procedure of all types in a module instances are called right after the module’s Object Create procedure.
+The Object Create command initializes the instance. In it you can create sub objects, set up lines and call members. Type members are initialized in another command: Type Create. The Type Create command of a symbol is called when the type is created. Types are created when a module instance is created so the Type Create command of all types in a module instances are called right after the module’s Object Create command.
 
-You can only call static type members in the Type Create procedure, because non-static, *object* members cannot be accessed yet, because they can only be accessed through a created object.
+You can only call static type members in the Type Create command, because non-static, *object* members cannot be accessed yet, because they can only be accessed through a created object.
 
-A procedure has a Type Create system procedure as well, to set up the procedure’s static members.
+A command has a Type Create system command as well, to set up the command’s static members.
 
-Members of a procedure that are Type Static are initialized in the type’s Type Create procedure. Any Type Static member, be it of a procedure lives as long as its type. Type Static procedure members are like type static type members, except that they are accessed through the procedure. If the procedure declares them private, they are accessible only to the procedure itself.
+Members of a command that are Type Static are initialized in the type’s Type Create command. Any Type Static member, be it of a command lives as long as its type. Type Static command members are like type static type members, except that they are accessed through the command. If the command declares them private, they are accessible only to the command itself.
 
-A module also have a Type Create procedure. This is called when the module type comes to light. Module types come to light when a Sigma module is loaded. All the Type Creates of module types in a Sigma module are called right after the Sigma module is loaded. The Type Create of the main module of a Sigma module serves as the module initializer. The Object Create of the main module serves as the module instance initializer.
+A module also have a Type Create command. This is called when the module type comes to light. Module types come to light when a Sigma module is loaded. All the Type Creates of module types in a Sigma module are called right after the Sigma module is loaded. The Type Create of the main module of a Sigma module serves as the module initializer. The Object Create of the main module serves as the module instance initializer.
 
 #### Old
 
@@ -6040,15 +6040,15 @@ Sub objects belong to their container object. Static objects, however, are part 
 
 This makes it so that lines can be tied together quite complexly, because static object symbols in object of the type always point to the static object symbol in the target type, which can be lines that travel far. On the other hand: every object of the type with a static object can set the line of the static object, meaning that the static object can point to a wide variety of locations, so it could again be a far away line. The lines of the static object symbol inside objects of the type, that point to the static object symbol of the target type, anyway, these lines don’t really exist. I still might come up with a way to make the notation different so that you can see the static systematics.
 
-###### Procedure Static Objects
+###### Command Static Objects
 
-Procedures are much like types. They can hold objects too. If you want the state of an object to persist for multiple procedure calls, you can make the procedure object a *Procedure Static*.
+Commands are much like types. They can hold objects too. If you want the state of an object to persist for multiple command calls, you can make the command object a *Command Static*.
 
-A procedure static object might give every object of its type its own procedure static object.
+A command static object might give every object of its type its own command static object.
 
-By making a procedure’s object both Procedure Static *and* Type Static, the procedure object is the same for every call to every object of the type.
+By making a command’s object both Command Static *and* Type Static, the command object is the same for every call to every object of the type.
 
-Procedure and Type Static objects inside procedures can also have the long lines going from all objects to the type.
+Command and Type Static objects inside commands can also have the long lines going from all objects to the type.
 
 < P >
 
@@ -6060,33 +6060,33 @@ Note that Type Static Objects that are direct ancestors of the module are static
 
 Note that Module Static objects are automatically also Type Static.
 
-##### Static Procedures
+##### Static Commands
 
-###### Procedure Static Procedures
+###### Command Static Commands
 
-If you not just make a single procedure object Procedure Static, but the whole procedure Procedure Static, then all objects in the procedure are Procedure Static.
+If you not just make a single command object Command Static, but the whole command Command Static, then all objects in the command are Command Static.
 
-###### Type Static Procedures
+###### Type Static Commands
 
-If you make a procedure, not an object, Type Static, then the procedure static objects inside the procedure are also static for the whole type.
+If you make a command, not an object, Type Static, then the command static objects inside the command are also static for the whole type.
 
-Another effect of making a procedure Type Static is that you can call the procedure even through an object that isn’t created.
+Another effect of making a command Type Static is that you can call the command even through an object that isn’t created.
 
-Type Static objects and procedures can be accessed even though an uncreated object symbol, but non Type Static procedures and objects can *not* be accessed unless the object symbol is created.
+Type Static objects and commands can be accessed even though an uncreated object symbol, but non Type Static commands and objects can *not* be accessed unless the object symbol is created.
 
-###### Module Static Procedures
+###### Module Static Commands
 
-The rules of Type Static procedures also apply to Module Static procedures. Only Type Static procedures’ objects are static to *all instances* of the module.
+The rules of Type Static commands also apply to Module Static commands. Only Type Static commands’ objects are static to *all instances* of the module.
 
 ##### Type Create and Destroy
 
 ###### Type Create and Destroy Introduction
 
-In order to initialize and terminate objects and procedures static to the type, object symbols have a Type Create and a Type Destroy system procedure. The Type Create procedure of an object symbol is called long before the object symbol is created and becomes a created object. The Type Create procedure is called when a module object is created. The Type Create procedures of any ancestor object symbol of the module is called, but not of the object symbols in sub modules. Those object symbols’ Type Create procedures are called only when the sub module is created. Many object symbols might not even have a Type Create procedure.
+In order to initialize and terminate objects and commands static to the type, object symbols have a Type Create and a Type Destroy system command. The Type Create command of an object symbol is called long before the object symbol is created and becomes a created object. The Type Create command is called when a module object is created. The Type Create commands of any ancestor object symbol of the module is called, but not of the object symbols in sub modules. Those object symbols’ Type Create commands are called only when the sub module is created. Many object symbols might not even have a Type Create command.
 
-The Type Destroy procedure is called when the module instance is Destroyed. Beware not to uninitialize Module Static members of the type, because those belong to all instances of the module, not just the instance of the module that’s being destroyed.
+The Type Destroy command is called when the module instance is Destroyed. Beware not to uninitialize Module Static members of the type, because those belong to all instances of the module, not just the instance of the module that’s being destroyed.
 
-Note that you can only initialize the members static to the type in the Type Create procedure, not instance members. This is not a restriction that the Type Create procedure imposes. It’s just that the Type Create procedure is called before any object is created and you could only access non static members through a created object, so at the time the Type Create procedure is run, instance objects and procedures are accessible.
+Note that you can only initialize the members static to the type in the Type Create command, not instance members. This is not a restriction that the Type Create command imposes. It’s just that the Type Create command is called before any object is created and you could only access non static members through a created object, so at the time the Type Create command is run, instance objects and commands are accessible.
 
 Type Create is stuck right at the end of the module’s Object Create.
 
@@ -6098,37 +6098,37 @@ Module Type Static members are like part of the Sigma module, rather than the mo
 
 Module symbols also have a Type Create. New module types come to light when a Sigma module is loaded. All the Type Creates of module types in a Sigma module are called right after the Sigma module is loaded. The Type Create of the main module of a Sigma module serves as the module initializer. The Object Create of the main module serves as the module instance initializer.
 
-###### Procedure Create and Destroy
+###### Command Create and Destroy
 
-Procedures are in many aspects the same as types. To initialize the static members of procedures. Procedure Create is called on creation of the procedure’s object. In the Procedure Create you can only call static members of the procedure, because the instance members of procedure only exist during a call to the procedure.
+Commands are in many aspects the same as types. To initialize the static members of commands. Command Create is called on creation of the command’s object. In the Command Create you can only call static members of the command, because the instance members of command only exist during a call to the command.
 
-Procedure Create is stuck right at the end of the object’s Object Create.
+Command Create is stuck right at the end of the object’s Object Create.
 
-Procedure Static members of a procedure are like part of the object instance, rather than the procedure instance.
+Command Static members of a command are like part of the object instance, rather than the command instance.
 
 #### Question
 
-Where are type static procedure members initialized?  
-Type Static procedure members are like part of the module instance. They are module instance *specific*, but this is also called type specific, because a type belongs to a module instance. They should be initialized along with the module instance, so along with the type creation. Type Create can access Type Static procedure members and are initialized there.
+Where are type static command members initialized?  
+Type Static command members are like part of the module instance. They are module instance *specific*, but this is also called type specific, because a type belongs to a module instance. They should be initialized along with the module instance, so along with the type creation. Type Create can access Type Static command members and are initialized there.
 
-Type Static members of both the type and its procedures are initialized in the Type Create procedure and terminated in the Type Destroy procedure.
+Type Static members of both the type and its commands are initialized in the Type Create command and terminated in the Type Destroy command.
 
-Module Static members of both module, its type and procedures are initialized in the module’s Type Create procedure and terminiated in its Type Destroy procedure.
+Module Static members of both module, its type and commands are initialized in the module’s Type Create command and terminiated in its Type Destroy command.
 
 #### Old
 
 <  
 Object data:
-An object has its own data. Data is accessed through the objects’ procedures or through the procedures of its sub objects.  
+An object has its own data. Data is accessed through the objects’ commands or through the commands of its sub objects.  
 \>
 
 ##### Objects and Memory Reservation
 
-Objects reserve memory when created. In this memory their data is stored, data which represents the object. The data is manipulated in the procedures of the object, by calling basic memory management procedures. Objects you program usually don’t reserve this memory themselves. Memory is often only reserved by contained basic data objects, such as Integer or Double. They manage memory reservation and management. When those basic data objects are created, they reserve memory. The descendant can create them in its create procedure, but also at a later time. The descendant can also just *allow* creation of its contained objects.
+Objects reserve memory when created. In this memory their data is stored, data which represents the object. The data is manipulated in the commands of the object, by calling basic memory management commands. Objects you program usually don’t reserve this memory themselves. Memory is often only reserved by contained basic data objects, such as Integer or Double. They manage memory reservation and management. When those basic data objects are created, they reserve memory. The descendant can create them in its create command, but also at a later time. The descendant can also just *allow* creation of its contained objects.
 
 ##### Type Static
 
-The basic things about a static procedure:
+The basic things about a static command:
 
 - Callable even when the object symbol isn’t created
 - Data mutual for every object
@@ -6136,27 +6136,27 @@ The basic things about a static procedure:
 The first point is just a matter of tagging it static.
 
 The second point:  
-The type should contain objects that store data. How do they belong to the type rather than the individual objects? Make all system procedures static? What might that render? That makes the procedures accessible when the descendant isn’t created.
+The type should contain objects that store data. How do they belong to the type rather than the individual objects? Make all system commands static? What might that render? That makes the commands accessible when the descendant isn’t created.
 
 Alleen als de naar hetzelfde geheugen verwijst.
 
 Ik volg het niet. Ik zie het niet.
 
-###### Only Procedures of Created Objects can be Called
+###### Only Commands of Created Objects can be Called
 
-You cannot call procedures of a symbol that isn’t created just like that. Therefore you can’t refer to a sub symbol of an uncreated descendant using any kind of line.
+You cannot call commands of a symbol that isn’t created just like that. Therefore you can’t refer to a sub symbol of an uncreated descendant using any kind of line.
 
 ###### Static Members
 
-There is a way to call procedures of a symbol that isn’t created: you can make procedure’s static. This makes them callable even when the symbol is not created. They are the type’s members rather than the object’s members. An object symbol becomes static by making one or more of its system procedures static, for instance the Symbol Get, which makes you able to link to an object symbol. You can call the type’s static members through any symbol that has that type. Static procedures aren’t passed the hidden object argument.
+There is a way to call commands of a symbol that isn’t created: you can make command’s static. This makes them callable even when the symbol is not created. They are the type’s members rather than the object’s members. An object symbol becomes static by making one or more of its system commands static, for instance the Symbol Get, which makes you able to link to an object symbol. You can call the type’s static members through any symbol that has that type. Static commands aren’t passed the hidden object argument.
 
 ##### Type Create and Type Destroy
 
-You may want static objects to always be created. Remember that static objects are objects some of whose system procedures are static. Those static objects can store static data for the type. Or you may want to reserve ‘static’ memory space for the type yourself. There’s no such thing as static memory space, but you can allocate memory and store a reference to it in a static object. To be able to have sub objects created as soon as the *type* is running, a type, apart from an object, needs a Create procedures. Therefore, object symbols have a Type Create procedure. Object symbols also have a Type Destroy procedure to be able to destroy static objects and deallocate static memory. 
+You may want static objects to always be created. Remember that static objects are objects some of whose system commands are static. Those static objects can store static data for the type. Or you may want to reserve ‘static’ memory space for the type yourself. There’s no such thing as static memory space, but you can allocate memory and store a reference to it in a static object. To be able to have sub objects created as soon as the *type* is running, a type, apart from an object, needs a Create commands. Therefore, object symbols have a Type Create command. Object symbols also have a Type Destroy command to be able to destroy static objects and deallocate static memory. 
 
 ###### Types’ Creation
 
-The Type Create and Type Destroy system procedures can’t be called in your code. They are only called by Symbol automatically, just like Object Redirect is only used by Symbol itself. Type Create procedures are called when the direct module of it is created. So when a module is created, any Type Create procedure of any object symbol inside it is called.
+The Type Create and Type Destroy system commands can’t be called in your code. They are only called by Symbol automatically, just like Object Redirect is only used by Symbol itself. Type Create commands are called when the direct module of it is created. So when a module is created, any Type Create command of any object symbol inside it is called.
 
 ###### Type Create and Type Destroy are Static nor Non Static
 
@@ -6168,37 +6168,37 @@ The Type Create and Type Destroy are considered static nor non static, because b
 
 Modules need to be created too.
 
-Modules can also have static members. Those are members of the module that can be called even when the module is not created. The module type create procedure of all sub modules is called as soon as the module is loaded in Sigma.
+Modules can also have static members. Those are members of the module that can be called even when the module is not created. The module type create command of all sub modules is called as soon as the module is loaded in Sigma.
 
 Types in a non created module can usually not be referred to. 
 
-There can also be static members of a module. Those are mutual to all module instances and can be referred to even when the module isn’t created. Then you can refer to procedures (and objects and types) of a non created module. The procedures might be made Module Static in order to do that. Module Static symbols’ Type Create procedures are called even when the module isn’t created. To have objects run as soon as the module type runs, the module symbol has a Type Create and Type Destroy procedure as well, in which you can create objects to run statically.
+There can also be static members of a module. Those are mutual to all module instances and can be referred to even when the module isn’t created. Then you can refer to commands (and objects and types) of a non-created module. The commands might be made Module Static in order to do that. Module Static symbols’ Type Create commands are called even when the module isn’t created. To have objects run as soon as the module type runs, the module symbol has a Type Create and Type Destroy command as well, in which you can create objects to run statically.
 
 Types of modules can be
 
-Then module static type creates should be called when the sigma module loads. Right. The module only exists when. So modules might also have their own (Module) Type Create and Type Destroy procedures that are runned when the Sigma module is loaded, respectively unloaded. 
+Then module static type creates should be called when the sigma module loads. Right. The module only exists when. So modules might also have their own (Module) Type Create and Type Destroy commands that are runned when the Sigma module is loaded, respectively unloaded. 
 
-So now there’s not only static symbols, but module static symbols, which can be members of ancestors at any depth inside the module. Only module static members (including system procedures) can be called when a module is not created.
+So now there’s not only static symbols, but module static symbols, which can be members of ancestors at any depth inside the module. Only module static members (including system commands) can be called when a module is not created.
 
-Sub module’s type creates are also called on module load. If you don’t define module type create of syb modules, then nothing is called ofc ouse. Only if you choose to have a module with globally static data, their module type create procedure is called.
+Sub module’s type creates are also called on module load. If you don’t define module type create of syb modules, then nothing is called ofc ouse. Only if you choose to have a module with globally static data, their module type create command is called.
 
-Sub module’s type creates are also called on module load. Sub module type creates are called in the super module type create. In a module type, Type Create procedures that are declared Globally Static of object symbols are called when the the module type is created.
+Sub module’s type creates are also called on module load. Sub module type creates are called in the super module type create. In a module type, Type Create commands that are declared Globally Static of object symbols are called when the the module type is created.
 
 The creation of a module might be initiated by code, because a module symbol can also become a module reference, in case of which Create might not be called.
 
-Dus globally static procedures kunnen worden aangeroepen nadat module is geload. Alle globally static procedures van alle.
+Dus globally static commands kunnen worden aangeroepen nadat module is geload. Alle globally static commands van alle.
 
-- Globally static procedures
-- Type Create procedure of modules
-- Static procedures
-- Type Create procedures of object symbols
-- Object Create procedures of modules
-- Object Create procedures of object symbols
-- Static procedures directly in modules
+- Globally static commands
+- Type Create command of modules
+- Static commands
+- Type Create commands of object symbols
+- Object Create commands of modules
+- Object Create commands of object symbols
+- Static commands directly in modules
 
 Symbols always contain some data: their line targets. Those are static data, so when you create a module there’s always memory reserved: for each symbol memory that stores the line targets. (by the way: doesn’t a flag need to be stored to on if the symbol is created?). Or should I store line targets in the Core’s object table? Hmmm...
 
-Static bij procedure members.
+Static bij command members.
 
 < How can you make a type: module static? >
 
@@ -6209,17 +6209,17 @@ Static bij procedure members.
 - base object
 - base interface
 
-### Procedure Symbol Roles
+### Command Symbol Roles
 
-A call line makes the square a call. A reference line makes it a reference. No line at all indicates that it’s a procedure definition or a nested procedure. Lines can also be left out for abstraction reasons.
+A call line makes the square a call. A reference line makes it a reference. No line at all indicates that it’s a command definition or a nested command. Lines can also be left out for abstraction reasons.
 
 | ![](images/Symbol%20Language%20(2004).409a.png) | ![](images/Symbol%20Language%20(2004).409b.png) | ![](images/Symbol%20Language%20(2004).410.png) | ![](images/Symbol%20Language%20(2004).411.png) <br> ![](images/Symbol%20Language%20(2004).412.png) | ![](images/Symbol%20Language%20(2004).413.png) |
-|:----------:|:----------------:|:----:|:---------:|:------------------------------------------------------:|
-| Definition | Nested Procedure | Call | Reference | Illegal: a square can’t be both a call and a reference |
+|:----------:|:--------------:|:----:|:---------:|:------------------------------------------------------:|
+| Definition | Nested Command | Call | Reference | Illegal: a square can’t be both a call and a reference |
 
-< Not true: a call doesn’t might directly exit a square if it calls a procedure reference embedded in the same procedure or a nested procedure of the procedure >
+< Not true: a call might not directly exit a square if it calls a command reference embedded in the same command or a nested command of the command >
 
-Note here that the access symbol of a solid procedure reference line is also drawn solid.
+Note here that the access symbol of a solid command reference line is also drawn solid.
 
 #### Reference and Call Targets
 
@@ -6231,16 +6231,16 @@ Here is a list of possible reference targets and call targets:
 |            Reference to definition             |               Call to definition               |
 |                                                |                                                |
 | ![](images/Symbol%20Language%20(2004).415.png) | ![](images/Symbol%20Language%20(2004).418.png) |
-|         Reference to nested procedure          |            Call to nested procedure            |
+|          Reference to nested command           |             Call to nested command             |
 |                                                |                                                |
 | ![](images/Symbol%20Language%20(2004).416.png) | ![](images/Symbol%20Language%20(2004).419.png) |
 |            Reference to reference              |                Call to reference               |
 |                                                |             (A call to a reference             |
-|                                                |         calls the referenced procedure)        |
+|                                                |          calls the referenced command)         |
 
 ### Accesses
 
-< __This section explains too much on traces that has already been explained in Lines. I also think that which traces are involved in an access is not for now. You might wish know what’s considered an access, so that you might understand aspect procedure call purposes, but that’s all__ >
+< __This section explains too much on traces that has already been explained in Lines. I also think that which traces are involved in an access is not for now. You might wish know what’s considered an access, so that you might understand aspect command call purposes, but that’s all__ >
 
 Before going into detail about system aspects, I might define a basic concept: an *access*.
 
@@ -6248,13 +6248,13 @@ On a call you enter zero or more objects, going deeper into the ancestry or stay
 
 *An access is where a call line enters an object symbol.*
 
-So access only takes place in the line of execution when one procedure calls another.
+So access only takes place in the line of execution when one command calls another.
 
 In my further explanations I’ll take the following form of call as a base:
 
 ![](images/Symbol%20Language%20(2004).420.png)
 
-A call to a child’s procedure.
+A call to a child’s command.
 
 In our basic call, you access one symbol:
 
@@ -6272,24 +6272,24 @@ Any access (*a call line’s entering an object symbol*)  involves such redirect
 
 *Great grandchild access requires three accesses.*
 
-Once we’ve processed each access by following redirections, we’re not even done. When we’ve finally reached the procedure to call, we might have more redirections to follow: procedure reference lines.
+Once we’ve processed each access by following redirections, we’re not even done. When we’ve finally reached the command to call, we might have more redirections to follow: command reference lines.
 
 *< P: Reference line entering object symbols >*
 
-The point at which a reference line enters an object is not regarded an access. A reference line between two procedure symbols is a tighter bond than a call line. The borders of symbols that the reference line enters are simply in the way. The procedure symbols are directly tied together.
+The point at which a reference line enters an object is not regarded an access. A reference line between two command symbols is a tighter bond than a call line. The borders of symbols that the reference line enters are simply in the way. The command symbols are directly tied together.
 
 *< P: Reference target has a reference target itself. >*
 
-When you’ve reached the reference line’s target symbol, this target symbol may have another reference line. In order to find out if it might, the object and type of the object symbol that holds the target square might be tracked down, because the object stores the line targets of its procedure.
+When you’ve reached the reference line’s target symbol, this target symbol may have another reference line. In order to find out if it might, the object and type of the object symbol that holds the target square might be tracked down, because the object stores the line targets of its command.
 
-A reference line’s entering a symbol is not another access, just like any other line entering a symbol is not another access either, even though it involves tracking down of object and type. Tracking down object and type is a more common thing than an access. It’s merely *involved* in an access, rather than being the access itself. It is also *involved* in figuring out a procedure reference line target.  
-Every step in finding the procedure reference target involves tracking down a type and object. The reference lines might be followed until you find the target procedure and then that’s the procedure to call.
+A reference line’s entering a symbol is not another access, just like any other line entering a symbol is not another access either, even though it involves tracking down of object and type. Tracking down object and type is a more common thing than an access. It’s merely *involved* in an access, rather than being the access itself. It is also *involved* in figuring out a command reference line target.  
+Every step in finding the command reference target involves tracking down a type and object. The reference lines might be followed until you find the target command and then that’s the command to call.
 
 ![](images/Symbol%20Language%20(2004).422.png)
 
-This is a call to a child’s procedure. After reaching the child’s procedure, the redirecting isn’t done, because the child’s procedure has reference line (*r*), which is to be followed. Eventually b is called.
+This is a call to a child’s command. After reaching the child’s command, the redirecting isn’t done, because the child’s command has reference line (*r*), which is to be followed. Eventually b is called.
 
-When the target procedure is found, it needs to be called. In order to do so, object and type might again be traced, in order to know which procedure of which object to call. This again isn’t an access, but the same kind of process is involved: the process of finding the target type and target object of a symbol.
+When the target command is found, it needs to be called. In order to do so, object and type might again be traced, in order to know which command of which object to call. This again isn’t an access, but the same kind of process is involved: the process of finding the target type and target object of a symbol.
 
 #### A Complex Call Example
 
@@ -6297,18 +6297,18 @@ Here follows an example of one call with a ridiculously large amount of redirect
 
 ![](images/Symbol%20Language%20(2004).392.png)
 
-We start at *a*, the procedure which contains a call, located near the center of the diagram. It calls b, thereby first accessing c. c Redirects to d with an object line. The entering of another object symbol there, is *not* another access. c And d are tightly bound together and go beyond any exits or entrances. There are restrictions as to how such a tight bind is established, but those issues are covered later. d Redirects to e with an object line. Again, the exit of an object symbol and the entrance of another one is not relevant in the process we’re discussing. Then e is bound to f with a type line, making ‘e’ a potential candidate for target object, but only if no other object lines might present itself in the redirection. f Redirects to g with a type line. g Redirects to h with an object line, upon which e looses its candidateship for target object. h Is the end of the redirection so h is both c’s object as well as its type, we give h the alternative names: Oc (object of c) and Cc (type of c). Now we know c’s object and type, we roll back to the access of c, and we continue the journey of our call line. Only one access has just taken place. The other steps were redirections followed for the access.
+We start at *a*, the command which contains a call, located near the center of the diagram. It calls b, thereby first accessing c. c Redirects to d with an object line. The entering of another object symbol there, is *not* another access. c And d are tightly bound together and go beyond any exits or entrances. There are restrictions as to how such a tight bind is established, but those issues are covered later. d Redirects to e with an object line. Again, the exit of an object symbol and the entrance of another one is not relevant in the process we’re discussing. Then e is bound to f with a type line, making ‘e’ a potential candidate for target object, but only if no other object lines might present itself in the redirection. f Redirects to g with a type line. g Redirects to h with an object line, upon which e looses its candidateship for target object. h Is the end of the redirection so h is both c’s object as well as its type, we give h the alternative names: Oc (object of c) and Cc (type of c). Now we know c’s object and type, we roll back to the access of c, and we continue the journey of our call line. Only one access has just taken place. The other steps were redirections followed for the access.
 
 Next the call line accesses i. i Redirects to j with an object line. j However has both a type line and an object line. A rule discussed earlier told us that in finding target type and object, a type line is ignored if also an object line is present. So we follow the object line to k. k has only a type line, making it a potential candidate for target object. k redirects to l with a type line. l has no lines. k Is the last symbol to be pointed at with an object line, so k is the object of i: Oi, and l is the type of i: Ci. Then we roll back to the call line, that can now enter i.
 
-The call line ends up at b, the called square, but b has a procedure reference line to m. Procedure reference lines are bound just as tightly as object lines and type lines and any symbol exits and entrances are irrelevant in processing a call. m Directs to n, n directs to o. o has to be called.
+The call line ends up at b, the called square, but b has a command reference line to m. Command reference lines are bound just as tightly as object lines and type lines and any symbol exits and entrances are irrelevant in processing a call. m Directs to n, n directs to o. o has to be called.
 
 o Has to be called, but it’s a call to a totally different object. You might know what object you’re calling so you might find out this symbol’s object and type.  
-Because the initially accessed object isn’t called, but another object, it may seem that performing all those previous accesses wasn’t necessary, but it was. In the target object the procedure reference target is stored, so we indeed needed to obtain the target object, and for that the target type too. This object lead us to knowing where the procedure reference leads. To know which procedure is referenced, you might figure out its parent’s type and object. So one more obtaining of a target object and type is performed on the target procedure’s parent. This is not an access, but the same method is used.
+Because the initially accessed object isn’t called, but another object, it may seem that performing all those previous accesses wasn’t necessary, but it was. In the target object the command reference target is stored, so we indeed needed to obtain the target object, and for that the target type too. This object lead us to knowing where the command reference leads. To know which command is referenced, you might figure out its parent’s type and object. So one more obtaining of a target object and type is performed on the target command’s parent. This is not an access, but the same method is used.
 
 ### Brainstorm
 
-A funny thing about state get is that it has a return value that is an object, nor a procedure. It’s so fundamental, there isn’t a symbol representation for it? Other system procedures at least return an integer number?
+A funny thing about state get is that it has a return value that is an object, nor a command. It’s so fundamental, there isn’t a symbol representation for it? Other system commands at least return an integer number?
 
 Ik met echt nog wel meer operator style behandelen.
 
@@ -6316,11 +6316,11 @@ Ik met echt nog wel meer operator style behandelen.
 
 Object stores line targets (except for type members, those are stored in the type). So any object reference has the same line targets. It the object shows that one of its members has a line, that member of other object references  has a line to the same target.
 
-#### System Procedures for Modules
+#### System Commands for Modules
 
-System procedures of modules are the same as for other object symbols. The only restriction is that modules can’t have lines to objects and objects can’t have lines to modules. Modules can have an object line, type line and interface line just like objects.
+System commands of modules are the same as for other object symbols. The only restriction is that modules can’t have lines to objects and objects can’t have lines to modules. Modules can have an object line, type line and interface line just like objects.
 
-#### New Name for System Procedures
+#### New Name for System Commands
 
 - Aspects / System Aspects?
 - Eigenschap. Karakteristic
@@ -6385,8 +6385,8 @@ System procedures of modules are the same as for other object symbols. The only 
 
 I might involve text code in explanations about access.  
 What about interface lines  
-What about calls to nested procedures?  
-Well... maybe if calls to nested procedures doesn’t work too well I may just forbid it...? Might that have major consequences?  
+What about calls to nested commands?  
+Well... maybe if calls to nested commands doesn’t work too well I may just forbid it...? Might that have major consequences?  
 
 Wow, this also involves GETTING information about the diagram at run time too.
 
@@ -6394,7 +6394,7 @@ Wow, this also involves GETTING information about the diagram at run time too.
 
 - Constant parameters is totally missing. I think they’re missing in the C++ summary too!
 - I think I still didn’t cover static yet.
-- *In the C++ programming language constant parameters can be set at run time when you call a procedure. In Symbol constants are really constant: they might not change at run time and are only set at design time*
+- *In the C++ programming language constant parameters can be set at run time when you call a command. In Symbol constants are really constant: they might not change at run time and are only set at design time*
 
 #### Exclusive Establishment
 
@@ -6412,7 +6412,7 @@ Vraag 1:
 
 Dus krijgt elk zichtbaar symbool toch een nummer? Ondanks dat systematiek opgeslagen is in de object klasse van de module klasse?
 
-Elke opslag entiteit krijgt een nummer. Een opslag entiteit wordt gerepresenteerd door een symbool. Een gewoon object is een opslag capaciteit. Ook een call is een opslag capaciteit. Een klasse ook, voor de type static delen. Een module object ook, en een module klasse ook. Binnen deze opslag entiteiten worden line targets opgeslagen. Wat voor nummer krijg je nou terug bij het aanroepen van een aspect procedure? Niet een opslag nummer, want meerdere symbolen kunnen dezelfde opslag representeren. Hmmm... Ik weet het niet.
+Elke opslag entiteit krijgt een nummer. Een opslag entiteit wordt gerepresenteerd door een symbool. Een gewoon object is een opslag capaciteit. Ook een call is een opslag capaciteit. Een klasse ook, voor de type static delen. Een module object ook, en een module klasse ook. Binnen deze opslag entiteiten worden line targets opgeslagen. Wat voor nummer krijg je nou terug bij het aanroepen van een aspect command? Niet een opslag nummer, want meerdere symbolen kunnen dezelfde opslag representeren. Hmmm... Ik weet het niet.
 
 I guess each symbol might get its own id, somehow. Recursion is not a problem in this, because recursion doesn’t create infinity, it only creates ~ possible infinity. Each symbol getting an id may be bad when the system changes at run time.
 
@@ -6420,7 +6420,7 @@ In vele gevallen hoeven er geen symboolnummers te worden gegenereerd in run time
 
 Werkt dat wel? Met symbool nummers? Hoe wordt een symboolnummer gekoppeld met een symbool?
 
-Het probleem is nu: wat krijg je terug als je een system aspect procedure aanroept? Hoe identificeer je een symbool enkel symbool?
+Het probleem is nu: wat krijg je terug als je een system aspect command aanroept? Hoe identificeer je een symbool enkel symbool?
 
 Het identificeren van een symbool wordt bemoeilijkt doordat een symbool makkelijk van klasse en van interface kan veranderen, waardoor een ander set symbolen ontstaat.
 
@@ -6478,7 +6478,7 @@ See to it you mention that an explicit type might not fix the type permanently u
 
 Before going into
 
-< A Target type can also be called a type definition. The target procedure can be called the procedure definition >
+< A Target type can also be called a type definition. The target command can be called the command definition >
 
 <  
 Apart from brainstorm items scattered around the toughest tasks are:
@@ -6486,7 +6486,7 @@ Apart from brainstorm items scattered around the toughest tasks are:
 - Static and Creation  
 \>
 
-< If I’m to make a chapter ‘system procedures’ It should cover ALL system procedures. >
+< If I’m to make a chapter ‘system commands’ It should cover ALL system commands. >
 
 < Ergens deze zinsnede:  
 the Symbol Get, which makes you able to link to an object symbol >
@@ -6510,16 +6510,16 @@ I also wanna cover how lines are set and what happens when ... now I forgot what
 ### => System Aspects
 
 <  
-*Passing a nested procedure by reference*
+*Passing a nested command by reference*
 
 ```
-Procedure ( Parameter . Reference Set ( Value . State = ... ) )
+Command ( Parameter . Reference Set ( Value . State = ... ) )
 ```
 
 Dat is de uitgebreide notatie, in ieder geval. Een wat gebruikelijkere notatie is:
 
 ```
-Procedure ( Parameter . Reference = ... )
+Command ( Parameter . Reference = ... )
 ```
 
 \>
@@ -6530,15 +6530,15 @@ Procedure ( Parameter . Reference = ... )
 
 |     |     |
 |-----|-----|
-| ![](images/Symbol%20Language%20(2004).423.jpeg) | __Reference to sibling inactive nested procedure, in a square__ |
-|     | Only possible for static procedure members or exclusive establishment. |
+| ![](images/Symbol%20Language%20(2004).423.jpeg) | __Reference to sibling inactive nested command, in a square__ |
+|     | Only possible for static command members or exclusive establishment. |
 |     |     |
-| ![](images/Symbol%20Language%20(2004).424.jpeg) | __Reference to sibling active nested procedure, in a square__ |
-|     | Only possible for static procedure members or exclusive establishment. |
+| ![](images/Symbol%20Language%20(2004).424.jpeg) | __Reference to sibling active nested command, in a square__ |
+|     | Only possible for static command members or exclusive establishment. |
 |     |     |
-| ![](images/Symbol%20Language%20(2004).425.jpeg) | __Call to sibling inactive nested procedure, in a square__ |
-|     | This is like a jump to a nested procedure, that might otherwise not execute. |
-|     | Only possible for static procedure members or exclusive establishment. |
+| ![](images/Symbol%20Language%20(2004).425.jpeg) | __Call to sibling inactive nested command, in a square__ |
+|     | This is like a jump to a nested command, that might otherwise not execute. |
+|     | Only possible for static command members or exclusive establishment. |
 |     | A diamond can be executing. Only during the execution of the diamond, lines between its non static children can be real. If the diamond isn’t executing, or it’s not a diamond, but a square, lines between the non static children are suggestive. Only lines between static members in such cases, can be real. |
 
 ### => System Aspects
@@ -6549,7 +6549,7 @@ Or to inside static (or to outside : its static, or its exclusive establishment)
 
 Oh, a reference pointing out of a square is possible only for static symbols, because normal, non-static references to the outside are established on a call. __*A square cannot contain a non-static references to the outside.*__ A diamond can.
 
-If a nested procedure can access anything outside then you should be able to have exclusive establishment of a line going out of a square. But this has the consequence that references to the nested procedure could access things out of the nested procedure’s parent. Well.. this is ok. If it isn’t a nested procedure, but a reference, there is no possibility of this exclusive establishment of a line going out of a square unless the line target is reachable from __*the definition*__.  
+If a nested command can access anything outside then you should be able to have exclusive establishment of a line going out of a square. But this has the consequence that references to the nested command could access things out of the nested command’s parent. Well.. this is ok. If it isn’t a nested command, but a reference, there is no possibility of this exclusive establishment of a line going out of a square unless the line target is reachable from __*the definition*__.  
 <  
 Create the picture in your head as you read that. Anyway, I disagree. It doesn’t matter that it’s reachable by the definition or not. All that matters is that the one setting the line could reach both source and destination. It doesn’t matter if the line source can access the line destination. Funny enough, that might matter. The line talked about is still exclusive establishment, not real, but it can be there as an imaginary line. No problem  
 \>
@@ -6562,7 +6562,7 @@ Diamonds and squares with lines between internals and to internals, real to and 
 
 ### => System Aspects
 
-Referencing static members of a call doesn’t cause procedure execution at all. Static procedure members have the lifetime of the procedure’s object
+Referencing static members of a call doesn’t cause command execution at all. Static command members have the lifetime of the command’s object
 
 ### => System Aspects: Exclusive Establishment
 
@@ -6575,7 +6575,7 @@ What IS true is that you can’t directly access anything outward in the object 
 
 ### => System Aspects
 
-If one diamond’s internal lines change, lines of all procedure symbols pointing to the diamond change too. If a static procedure line is changed, all procedure symbols, also all calls with that definition might change.
+If one diamond’s internal lines change, lines of all command symbols pointing to the diamond change too. If a static command line is changed, all command symbols, also all calls with that definition might change.
 
 ### => System Aspects
 
@@ -6599,11 +6599,11 @@ System aspects is the hardest concept to understand of Symbol Language. Access c
 
 < Access control is niet voor beginnende programmeurs. Het is ongrijpbaar misschien, maar zeker onbruikbaar, omdat ze er niet mee om kunnen gaan. 
 
-Wat wel zo is is dat de standaard access control van system procedures er voor zorgt dat je niet *zo maar* rare dingen kan gaan doen. Erg belangrijk als je effe snel iets programmeert, dat je de echt rare effecten uitsluit zonder extra moeite. >
+Wat wel zo is is dat de standaard access control van system commands er voor zorgt dat je niet *zo maar* rare dingen kan gaan doen. Erg belangrijk als je effe snel iets programmeert, dat je de echt rare effecten uitsluit zonder extra moeite. >
 
 < Give a story about the true meaning of an access symbol that denotes direction. That it is a syntactically correct access symbol. Access symbols can used to denote direction, because access symbols *can* point out direction. >
 
-< A procedure’s primary access controller is only made Inaccessible to ‘outcomment’ code. This is a rather small concept. The rest of the use of Inaccessible and Accessible is in exclusion. Therefore, I need to denote in short that this is the only use of the primary access controller. I can basically always speak of access modifiers when talking about Accessible and Inaccessible. I can use the term exclusion in a lot of places where I now use ‘access control’. I also need to put the first section ‘Accessible and Inaccessible’ in the exclusion section. >
+< A command’s primary access controller is only made Inaccessible to ‘outcomment’ code. This is a rather small concept. The rest of the use of Inaccessible and Accessible is in exclusion. Therefore, I need to denote in short that this is the only use of the primary access controller. I can basically always speak of access modifiers when talking about Accessible and Inaccessible. I can use the term exclusion in a lot of places where I now use ‘access control’. I also need to put the first section ‘Accessible and Inaccessible’ in the exclusion section. >
 
 < Exclusion is restriction set by a container. Level restriction is like exclusion set by a child *for* the container. >
 
@@ -6617,21 +6617,21 @@ Wat wel zo is is dat de standaard access control van system procedures er voor z
     - Access Modifiers in Modules needs to be further thought through. It gets tricky as you put it in diagram code.
     - Level Restriction
 - Friends
-- Access Controllers for System Procedures
+- Access Controllers for System Commands
 
-< Don’t say that procedures can’t be defined as inaccessible. They might be definable as inaccessible or you’re not able to ‘comment out’ code. This also requires you to use the term access controllers more often. >
+< Don’t say that commands can’t be defined as inaccessible. They might be definable as inaccessible or you’re not able to ‘comment out’ code. This also requires you to use the term access controllers more often. >
 
 < The word access modification can actually be replaced by ‘exclusion’ in many places, but not everywhere by far >
 
 ### Introduction
 
-Access to procedures can be limited to certain parties by using access controllers.
+Access to commands can be limited to certain parties by using access controllers.
 
-Access to *procedures* is controlled. But access control usually defines which *objects* get access. In a special case you can control which specific *procedures* get access.
+Access to *commands* is controlled. But access control usually defines which *objects* get access. In a special case you can control which specific *commands* get access.
 
-Usually, access to procedures is controlled in a *type* and each of its objects adopts those same access settings. 
+Usually, access to commands is controlled in a *type* and each of its objects adopts those same access settings. 
 
-Only procedures get access controllers, not objects. Access to an object is controlled by access controllers of the Target Object procedure.
+Only commands get access controllers, not objects. Access to an object is controlled by access controllers of the Target Object command.
 
 ### Exclusion
 
@@ -6651,17 +6651,17 @@ The symbols used here are actually access symbols, which I’ve already introduc
 
 < A way to pronounce access modifiers for deeper depths than 1 so access modifiers other than accessible, inaccessible, public or private >
 
-Exclusion is the primary method for controlling which parties get access to a procedure.
+Exclusion is the primary method for controlling which parties get access to a command.
 
-A type controls which of its procedures are accessible to the outside (*Public* procedures), and which are *not* accessible to the outside (*Private* procedures). Private procedures *are* accessible to the *inside* the type.
+A type controls which of its commands are accessible to the outside (*Public* commands), and which are *not* accessible to the outside (*Private* commands). Private commands *are* accessible to the *inside* the type.
 
-Apart from controlling access to the type’s own procedures, a type can also control publicity of procedures *of its children*. That way you can publish a child, but make some of its public procedures inaccessible outside the parent. This way you can also exclude members of a base type. A parent can’t make a child’s procedure inaccessible to the child itself; it’s the child’s own procedures.
+Apart from controlling access to the type’s own commands, a type can also control publicity of commands *of its children*. That way you can publish a child, but make some of its public commands inaccessible outside the parent. This way you can also exclude members of a base type. A parent can’t make a child’s command inaccessible to the child itself; it’s the child’s own commands.
 
 You can also exclude members of ancestors even further down the hierarchy.
 
 Forms of exclusion other than Private are just called exclusion or privatizing.
 
-You can only make a procedure of a child *less* accessible, never *more* accessible. The parent can’t publish a child’s procedure that the child defines as Private. A child can’t put restrictions on how its members are privatized by the parent, so a parent has full control over the exclusion of the procedures its ancestors.
+You can only make a command of a child *less* accessible, never *more* accessible. The parent can’t publish a child’s command that the child defines as Private. A child can’t put restrictions on how its members are privatized by the parent, so a parent has full control over the exclusion of the commands its ancestors.
 
 Exclusion access controllers are also called *access* *modifiers*, because they modify formerly set access controllers.
 
@@ -6679,7 +6679,7 @@ The reason that the following notation won’t do:
 |:----------------------------------------------:|:----------------------------------------------:|
 |                   Not Public                   |                   Not Private                  |
 
-is that this access modifier is imposed by the procedure itself, not by its parent.
+is that this access modifier is imposed by the command itself, not by its parent.
 
 The reason that the following notation won’t do:
 
@@ -6687,11 +6687,11 @@ The reason that the following notation won’t do:
 |:----------------------------------------------:|:----------------------------------------------:|
 |                   Not Public                   |                   Not Private                  |
 
-is that the access symbols in these diagrams are about access to the object, not access to the procedure of the object.
+is that the access symbols in these diagrams are about access to the object, not access to the command of the object.
 
 -----
 
-Each descendant that has access to the procedure can impose its own access modifier upon it.
+Each descendant that has access to the command can impose its own access modifier upon it.
 
 ![](images/Symbol%20Language%20(2004).434.png)
 
@@ -6712,7 +6712,7 @@ Let’s cover how to interpret the examples I’ve already mentioned.
 | ![](images/Symbol%20Language%20(2004).430.png) | ![](images/Symbol%20Language%20(2004).431.png) |
 |------------------------------------------------|------------------------------------------------|
 
-With *these* access modifiers, the *procedure* is making itself accessible or inaccessible.
+With *these* access modifiers, the *command* is making itself accessible or inaccessible.
 
 | ![](images/Symbol%20Language%20(2004).432.png) | ![](images/Symbol%20Language%20(2004).433.png) |
 |------------------------------------------------|------------------------------------------------|
@@ -6721,17 +6721,17 @@ With these access modifiers, the *object* is making *itself* accessible or inacc
 
 ![](images/Symbol%20Language%20(2004).428.png)
 
-This shows the access symbol for Public. The object is making the procedure accessible to the outside.
+This shows the access symbol for Public. The object is making the command accessible to the outside.
 
 ![](images/Symbol%20Language%20(2004).436.png)
 
-This shows the access symbol for Private. The object is making the procedure inaccessible to the outside. The procedure *is* accessible *in*side the object. You could denote this:
+This shows the access symbol for Private. The object is making the command inaccessible to the outside. The command *is* accessible *in*side the object. You could denote this:
 
 ![](images/Symbol%20Language%20(2004).437.png)
 
-The extra access symbol denotes that the procedure makes itself accessible. The access symbol of the object makes the procedure inaccessible to the outside. Procedures are usually accessible to the object symbol they are directly contained in, so the extra access symbol is not really required.
+The extra access symbol denotes that the command makes itself accessible. The access symbol of the object makes the command inaccessible to the outside. Commands are usually accessible to the object symbol they are directly contained in, so the extra access symbol is not really required.
 
-A parent can’t make a child procedure inaccessible to the parent. The effect of this rejected concept is basically identical to giving the child its own abstract type: a derived type that excludes members of its base:
+A parent can’t make a child command inaccessible to the parent. The effect of this rejected concept is basically identical to giving the child its own abstract type: a derived type that excludes members of its base:
 
 ![](images/Symbol%20Language%20(2004).438.png)
 
@@ -6739,46 +6739,46 @@ The parent contains a child object. The type of the child is defined right insid
 
 ![](images/Symbol%20Language%20(2004).439.png)
 
-#### A Procedure’s Set of Access Controllers
+#### A Command’s Set of Access Controllers
 
-Exclusion adds a whole set of access modifiers to a single procedure.
+Exclusion adds a whole set of access modifiers to a single command.
 
 ![](images/Symbol%20Language%20(2004).440.png)
 
-The access symbols in blue are the procedure’s access controllers. The dark grey access symbols are also the procedure’s access controllers, but these were already defined in type A. You can see that in any other type that uses an object of type A, a new set of access modifiers can be imposed. You see that each access controller of the single procedure is shown at a different symbol. The access modifier for a procedure is shown close to the type that imposes the modifier.
+The access symbols in blue are the command’s access controllers. The dark grey access symbols are also the command’s access controllers, but these were already defined in type A. You can see that in any other type that uses an object of type A, a new set of access modifiers can be imposed. You see that each access controller of the single command is shown at a different symbol. The access modifier for a command is shown close to the type that imposes the modifier.
 
 #### Changing Access Modifiers at Run Time
 
-Being able to change access modifiers at run time may be interesting. That way you can for instance change the interface of an object dependent on its settings. Changing a procedure’s access modifier is done by calling the procedure’s Access Modifier Set system procedure. There’s also an Access Modifier Get procedure to obtain the access modifier. This adds two system procedures to a square:
+Being able to change access modifiers at run time may be interesting. That way you can for instance change the interface of an object dependent on its settings. Changing a command’s access modifier is done by calling the command’s Access Modifier Set system command. There’s also an Access Modifier Get command to obtain the access modifier. This adds two system commands to a square:
 
 - __Access Modifier:__
     - __Get and Set__
 
-The Access Modifier property procedures can be access controlled themselves, so that they can be made inaccessible, for instance when you don’t want to be able to change the access modifier at run time. The access modifiers of the Access Modifier property can’t be changed at run time themselves. In other words: the Access Controller property procedures don’t have an Access Controller property of their own. This complies with the rule: system procedures don’t have system procedures of their own. 
+The Access Modifier property commands can be access controlled themselves, so that they can be made inaccessible, for instance when you don’t want to be able to change the access modifier at run time. The access modifiers of the Access Modifier property can’t be changed at run time themselves. In other words: the Access Controller property commands don’t have an Access Controller property of their own. This complies with the rule: system commands don’t have system commands of their own. 
 
-A single procedure can have several access modifiers so there are multiple access modifiers to get and set. This might suggest that the Access Modifier property has a dimension. However, when you call the Access Modifier property, you return or set the access modifier imposed by the object you’re calling from. The object you’re calling from is a hidden argument to the Access Modifier property. The access modifiers aren’t really stored inside the procedure, but in the object symbol that imposes it.
+A single command can have several access modifiers so there are multiple access modifiers to get and set. This might suggest that the Access Modifier property has a dimension. However, when you call the Access Modifier property, you return or set the access modifier imposed by the object you’re calling from. The object you’re calling from is a hidden argument to the Access Modifier property. The access modifiers aren’t really stored inside the command, but in the object symbol that imposes it.
 
 If the access modifier isn’t variable at run time, then the type defines a fixed access modifier. If the access modifier *is* variable at run time then the access modifier can be different for each instance of the type.
 
 #### Inclusion
 
-Apart from a *decisive* access modifier, you can also give a procedure a *suggested* access modifier. This means that when you put an object in a type, a procedure of the object might get its *suggested* access modifier, for instance Private, but if its *decisive* access controller is Public, then you can still upgrade it to Public. This is called *inclusion*. The suggested access modifier is always set to less accessible than the decisive one. A type can also give suggested access modifiers to procedures of ancestors.
+Apart from a *decisive* access modifier, you can also give a command a *suggested* access modifier. This means that when you put an object in a type, a command of the object might get its *suggested* access modifier, for instance Private, but if its *decisive* access controller is Public, then you can still upgrade it to Public. This is called *inclusion*. The suggested access modifier is always set to less accessible than the decisive one. A type can also give suggested access modifiers to commands of ancestors.
 
-#### Exclusion of System Procedures
+#### Exclusion of System Commands
 
-Exclusion (and inclusion) can also be applied to system procedures. Exclusion is actually very important for system procedures. An object symbol’s Target Object procedure might be accessible to make you able to call its procedures. When you control access to the Target Object procedure, you can for instance set the object to be accessible privately, but not publicly.
+Exclusion (and inclusion) can also be applied to system commands. Exclusion is actually very important for system commands. An object symbol’s Target Object command might be accessible to make you able to call its commands. When you control access to the Target Object command, you can for instance set the object to be accessible privately, but not publicly.
 
-Exclusion of Set procedures controls who can set a symbol’s lines. Exclusion of Get procedures controls who can get information about lines or who can access the object.
+Exclusion of Set commands controls who can set a symbol’s lines. Exclusion of Get commands controls who can get information about lines or who can access the object.
 
-Exclusion of system procedures of procedures also gives parents control over setting call or  reference lines and getting information about the lines.
+Exclusion of system commands of commands also gives parents control over setting call or reference lines and getting information about the lines.
 
 #### Interesting Applications of Exclusion
 
 So examples of interesting applications of exclusion are:
 
-- Making procedures Public or Private
-- Excluding procedures of a public object
-- Excluding procedures of a base object
+- Making commands Public or Private
+- Excluding commands of a public object
+- Excluding commands of a base object
 - A parent’s controlling *access to objects*
 
 #### Protected
@@ -6791,7 +6791,7 @@ There is another basic access controller in addition to Accessible and Inaccessi
 
 *(By the way: it’s not an arrow.)*
 
-When a procedure is *Protected*, it means that it’s inaccessible if contained in a circle, but accessible if contained in a triangle. 
+When a command is *Protected*, it means that it’s inaccessible if contained in a circle, but accessible if contained in a triangle. 
 
 | ![](images/Symbol%20Language%20(2004).442.png) | __≈__ | ![](images/Symbol%20Language%20(2004).443.png) |
 |-----------------------------------------------:|:-----:|:-----------------------------------------------|
@@ -6816,11 +6816,11 @@ Basic access controllers are decisive, but level limitation adds additional rest
 
 Level limitation is paired with the basic access controller.
 
-Pairing object level limitation with the Public access modifier, makes a procedure public only to limited number of levels up the ancestry.
+Pairing object level limitation with the Public access modifier, makes a command public only to limited number of levels up the ancestry.
 
 __Public *Up 2*__
 
-A procedure with this access modifier is accessible but two levels up the ancestry. Outside those levels, the procedure is inaccessible.
+A command with this access modifier is accessible but two levels up the ancestry. Outside those levels, the command is inaccessible.
 
 No object level limitation: Public:
 
@@ -6836,7 +6836,7 @@ Level limitation works the same for the Protected access modifier, but gets the 
 
 __Protected *Up 2*__
 
-A procedure with this access modifier is accessible two levels up the ancestry, but inaccessible outside the first circular descendant.
+A command with this access modifier is accessible two levels up the ancestry, but inaccessible outside the first circular descendant.
 
 Protected Up 2, contained in three triangles:
 
@@ -6853,14 +6853,14 @@ Protected Up 2, contained in three circles:
 | ![](images/Symbol%20Language%20(2004).456.png) | ≈ | ![](images/Symbol%20Language%20(2004).457.png) |
 |------------------------------------------------|---|------------------------------------------------|
 
-Level limitation can also be applied to deeper exclusion than Public and Protected. So a parent can impose level limitation on a child procedure.
+Level limitation can also be applied to deeper exclusion than Public and Protected. So a parent can impose level limitation on a child command.
 
 Level limitation on deeper exclusion:
 
 | ![](images/Symbol%20Language%20(2004).458.png) | ≈ | ![](images/Symbol%20Language%20(2004).459.png) |
 |------------------------------------------------|---|------------------------------------------------|
 
-You can also apply level limitation for on symbols shallower than the target procedure.
+You can also apply level limitation for on symbols shallower than the target command.
 
 Level limitation on deeper exclusion:
 
@@ -6910,27 +6910,27 @@ Access modifiers in Modules:
 - Global Private
 - Global Public
 
-To understand what happens when procedures inside modules are given access controllers you need to view the module as an object, that is referenced from any of its ancestor objects:
+To understand what happens when commands inside modules are given access controllers you need to view the module as an object, that is referenced from any of its ancestor objects:
 
 | ![](images/Symbol%20Language%20(2004).468.png) | ≈ | ![](images/Symbol%20Language%20(2004).469.png) |
 |------------------------------------------------|---|------------------------------------------------|
 
-If a global procedure is Inaccessible, it’s just not accessible at all (*‘outcommented’*), so not really global either. If a global procedure is Private, it’s not really global either, only accessible by the module object itself, just like something private of a circle object. If a global procedure is Public, then it *is* global. It is then accessible from any ancestor within the module. 
+If a global command is Inaccessible, it’s just not accessible at all (*‘outcommented’*), so not really global either. If a global command is Private, it’s not really global either, only accessible by the module object itself, just like something private of a circle object. If a global command is Public, then it *is* global. It is then accessible from any ancestor within the module. 
 
-When a global procedure is Public it is however also accessible *outside* the module, as a public procedure of the module object. For a procedure to be global inside the module, but not accessible outside the module you use module level limitation: __Public Module Up 1__.
+When a global command is Public it is however also accessible *outside* the module, as a public command of the module object. For a command to be global inside the module, but not accessible outside the module you use module level limitation: __Public Module Up 1__.
 
-It is not a permitted to make a global procedure Protected. A pentagon is not exchangeable with a triangle, so Global Protected wouldn’t have much meaning.
+It is not a permitted to make a global command Protected. A pentagon is not exchangeable with a triangle, so Global Protected wouldn’t have much meaning.
 
 ### Friends
 
-In types, module types, procedures and nested procedures you can define *Friends* of the symbol. Friends are other symbols that when defined friend get full access to all members of the befriended.
+In types, module types, commands and nested commands you can define *Friends* of the symbol. Friends are other symbols that when defined friend get full access to all members of the befriended.
 
 It only goes one way: the friend symbol can access private things of the befriended, but the befriended doesn’t get access to the friend’s private members. Its kind of a like a sick friendship where one likes the other, but the other doesn’t like him back. That’s why the symbol that defines his friends is called the *befriended*, not a friend itself.
 
-A type, module type, procedure or nested procedure can define:
+A type, module type, command or nested command can define:
 
 - Friend Types
-- Friend Procedures
+- Friend Commands
 - Friend Modules
 
 Which grants its friends full access to the private and protected members of the befriended.
@@ -6941,29 +6941,29 @@ Which grants its friends full access to the private and protected members of the
 
 <  
 Om er een (nog) makkelijkere uitleg aan te geven:  
-Je hebt *eigenlijk* alleen befriended types. Befriended types geven toegang tot al hun procedures. Als je een friend toegang wilt geven tot maar een selectie van private procedures moet je de friendship bij die specifieke procedures vermelden.  
+Je hebt *eigenlijk* alleen befriended types. Befriended types geven toegang tot al hun commando's. Als je een friend toegang wilt geven tot maar een selectie van private commando's moet je de friendship bij die specifieke commando's vermelden.  
 \>
 
-Onderscheid tussen befriended procedures en befriended types aangeven.
+Onderscheid tussen befriended commands en befriended types aangeven.
 
-Exclusion is the primary method for access control. Friends is the method to make exceptions to the privatization imposed by exclusion. A procedure or type can make any other procedure or type they can reach a Friend, meaning that that procedure or that type has access to all members privately accessible in the befriended.  
+Exclusion is the primary method for access control. Friends is the method to make exceptions to the privatization imposed by exclusion. A command or type can make any other command or type they can reach a Friend, meaning that that command or that type has access to all members privately accessible in the befriended.  
 < ... Copy most from the old stuff >
 
-### System Procedures with Access Modifiers
+### System Commands with Access Modifiers
 
 <  
-I don’t have a special notation for publicity of Set procedures.  
+I don’t have a special notation for publicity of Set commands.  
 Set public or not is kind of like read only or not. Maybe I need a read only notation.
 
-Write only is also common, though. For instance of procedure reference input parameters.  
+Write only is also common, though. For instance of command reference input parameters.  
 \>
 
 < Also cover constants >  
-Access can be controlled for regular procedures this way. You can also control access to system procedures. When you make an object Private, you’re in fact making its Target Object procedure private (which can even get different separate access controllers for Access, Run Time Copy and Design Time Copy).
+Access can be controlled for regular commands this way. You can also control access to system commands. When you make an object Private, you’re in fact making its Target Object command private (which can even get different separate access controllers for Access, Run Time Copy and Design Time Copy).
 
-When you give a system procedure an access controller, access to the procedure or object represented may get a special name and diagram notation.
+When you give a system command an access controller, access to the command or object represented may get a special name and diagram notation.
 
-An object symbol with an accessible State *Read* procedure, but no State *Write*, is called a Read Only Object.
+An object symbol with an accessible State *Read* command, but no State *Write*, is called a Read Only Object.
 
 An object symbol with only a Type Read, can be considered just a Type. Not an object or interface.
 
@@ -6982,17 +6982,17 @@ De klasse kan zelf initial access controllers aannemen die je ook weer kunt vera
 #### Constants (Brainstorm)
 
 < oops the following text cannot be put in the introduction >  
-Design Time Set and Design Time Copy *are* actually called at run time, because nothing is set at design time. Design Time Set, though, can only be called in the Create procedure of the closest mutual descendant. Actually, a set in the create procedure is actually a call to the Design Time Set and Design Time Copy.
+Design Time Set and Design Time Copy *are* actually called at run time, because nothing is set at design time. Design Time Set, though, can only be called in the Create command of the closest mutual descendant. Actually, a set in the create command is actually a call to the Design Time Set and Design Time Copy.
 
-Something is constant if it can be Design Time Set, but not Run Time Set. The initialization of constants happens in the Create procedure of the mutual descendant. < OR THE one that defines that the set is only for design time? > Explaining that might require knowledge of exclusion. >
+Something is constant if it can be Design Time Set, but not Run Time Set. The initialization of constants happens in the Create command of the mutual descendant. < OR THE one that defines that the set is only for design time? > Explaining that might require knowledge of exclusion. >
 
-#### Default System Procedure Configuration
+#### Default System Command Configuration
 
 < By default everything is public. When studying the access configuration of a symbol you might only want to see what differs from the default >
 
 #### Access Symbols of Lines, Other Than Call Lines
 
-A line other than a call line can show access symbols, while there aren't really any access. These access symbols represent accesses made by the mutual descendant when it set the line. Accesses did occur on calls to the Set and Copy procedures of the source and target symbols when the line was set.
+A line other than a call line can show access symbols, while there aren't really any access. These access symbols represent accesses made by the mutual descendant when it set the line. Accesses did occur on calls to the Set and Copy commands of the source and target symbols when the line was set.
 
 Access symbols are also used in a diagram only to indicate the access control. In that case there’s no question of an access either. Only of an access that might or might not occur.
 
@@ -7017,13 +7017,13 @@ I can use this notation:
 ###### Visual Basic Friend Members
 
 <  
-I might note the application of the Visual Basic Friend access modifier. The basic access controller Friend isn’t required (Public Friend and Protected Friend). Friend Basic Access Controller means that you make a procedure’s own module a Friend module.
+I might note the application of the Visual Basic Friend access modifier. The basic access controller Friend isn’t required (Public Friend and Protected Friend). Friend Basic Access Controller means that you make a command’s own module a Friend module.
 
 Yes, but for the effect of the Visual Basic Friend access modifier you also need to deprive global members from being accessed outside the module. And that is done with module level restriction.
 
-So the effect of the Visual Basic Friend access controller is replaced by • making the module a friend of the procedure and level restricting global procedures.
+So the effect of the Visual Basic Friend access controller is replaced by • making the module a friend of the command and level restricting global commands.
 
-NO! It’s just making it Module Up 1! Nothing Else! Do not use a Friend Module for specific procedures!  
+NO! It’s just making it Module Up 1! Nothing Else! Do not use a Friend Module for specific commands!  
 />
 
 ###### C++ Friend Functions
@@ -7040,18 +7040,18 @@ Has put all of the language’s access controllers in one system and added extra
 
 #### Brainstorm
 
-< The standard access modifiers for system procedures of procedures symbols directly inside a procedure symbol are different from procedures directly inside object symbols. For instance, Symbol Get for Reference of a nested procedure is Private by default. Symbol Get for Reference for an object member is Public by default >
+< The standard access modifiers for system commands of commands symbols directly inside a command symbol are different from commands directly inside object symbols. For instance, Symbol Get for Reference of a nested command is Private by default. Symbol Get for Reference for an object member is Public by default >
 
-< There are also situations in which you want to disallow copying object reference to an argument, but only allow consult of the argument. (that’s access control of system procedures, actually) >
+< There are also situations in which you want to disallow copying object reference to an argument, but only allow consult of the argument. (that’s access control of system commands, actually) >
 
 ### Automatic Changes when Editing Code
 
 When you for instance use triangles to group members of an object, then the access modifiers need to change. When first you accessed something one capsule deep, is accessed two capsules deep when you put a triangle or circle around it. Access modifiers change accordingly when you edit code:
 
-< P: Circle with public procedure >  
-< P: Triangle put around public procedure, changed access modifier >  
-< P: Circle with public procedure >  
-< P: Circle put around public procedure, changed access modifier >
+< P: Circle with public command >  
+< P: Triangle put around public command, changed access modifier >  
+< P: Circle with public command >  
+< P: Circle put around public command, changed access modifier >
 
 You can’t *always* just put circles and triangles around everything. You might adjust access controllers, which are explained later. < Is that so? >
 
@@ -7061,9 +7061,9 @@ A call is by default private.
 
 -----
 
-The access controllers of the procedure’s sub objects determine which purpose they serve. Maybe I should write a section about that in Access Control.
+The access controllers of the command’s sub objects determine which purpose they serve. Maybe I should write a section about that in Access Control.
 
-Required and Optional parameters as well as In, Out and Thru need to be rediscussed in Access Control, because it may be so that it is required for you to Object Set a parameter, while the procedure changes the state of the target object. This is like thru too, but a totally different fashion and there are more  ways of throughput.
+Required and Optional parameters as well as In, Out and Thru need to be rediscussed in Access Control, because it may be so that it is required for you to Object Set a parameter, while the command changes the state of the target object. This is like thru too, but a totally different fashion and there are more  ways of throughput.
 
 Oh, optional parameters are initialized and then assigned the caller’s value. Where are those two steps performed.
 
@@ -7072,7 +7072,7 @@ Oh, optional parameters are initialized and then assigned the caller’s value. 
 Maybe it's a good rule to only show access symbols to denote:
 
 - Direction
-- Exclusion of a procedure
+- Exclusion of a command
 - Denote explicitly the publicity
 
 -----
@@ -7081,7 +7081,7 @@ If a configuration of any sort is a common one, it might be nice to make somethi
 
 Maybe access controllers are a step into the direction of security. Maybe security should be a kind of advanced access control.
 
-Procedure primarily Inaccessible: This seems unuseful: why not just leave the procedure out completely? It could be used a means to temporarily deactivate code.
+Command primarily Inaccessible: This seems unuseful: why not just leave the command out completely? It could be used a means to temporarily deactivate code.
 
 #### Access Controller Parts
 
@@ -7103,31 +7103,31 @@ When being a triangle:
 Using triangles to group members with equal access controllers. As with exclusion, the access controller of the triangle limits access again. It won’t make things *more* accessible.
 
 Initialization  
-Sometimes you want to give a specific party access to a private procedure. Such a procedure *befriends* itself with with a specific type or procedure. The friend type or procedure can access anything private or < > otherwise anything marked as friend for that type < > ...   
+Sometimes you want to give a specific party access to a private command. Such a command *befriends* itself with with a specific type or command. The friend type or command can access anything private or < > otherwise anything marked as friend for that type < > ...   
 Friend Function: a function that uses the befriended type in a way. It gets access to private members or access to a selection of private members especially selected for the function. The befriended type might be able to access the friend function in order to make it friend.  
 Friend types might also be accessible to the befriended type.
 
-Only types can be befriended. Friends can be both types *and* separate procedures.
+Only types can be befriended. Friends can be both types *and* separate commands.
 
 < So you can choose to give friends access to all private members or, another method, which requires a different syntax, allows you to make a selection of private things public to friends.
 
-I need to cover the notation of access controllers here for system procedures with multiple access controllers, unless I eventually put the Access Controllers chapter before the System Procedures chapter. In that case I might cover the it in System Procedures.
+I need to cover the notation of access controllers here for system commands with multiple access controllers, unless I eventually put the Access Controllers chapter before the System Commands chapter. In that case I might cover the it in System Commands.
 
 ### Old
 
 < Also look at Access Media  : Interface Access >  
 <  
-Might genericity control what happens on the call of system procedures or if the call to a system procedure is illegal or not?  
+Might genericity control what happens on the call of system commands or if the call to a system command is illegal or not?  
 \>
 
 <  
-Introduce more system procedures here:
+Introduce more system commands here:
 - Type Generic Get
 - Type Generic Set
 - Interface Generic Get
 - Interface Generic Set
-- Procedure Reference Generic Get
-- Procedure Reference Generic Set
+- Command Reference Generic Get
+- Command Reference Generic Set
 
 Here and no earlier  
 \>
@@ -7209,17 +7209,17 @@ If you redirect with an object line then the object reference gets the same type
 
 < Maybe I’ll do special operator symbols in text code that represent the object relations. Actually, that’s what I’d like a little. Except member access. I wanna keep that. >
 
-#### Exchangable Object and Procedure Notation
+#### Exchangeable Object and Command Notation
 
 ##### Access in Object Representation
 
-In the object representation, You don’t see that you’re calling a system procedure when you call an Access or Get procedure. In the diagram that looks just like referencing a symbol using an object line, type line or interface line:
+In the object representation, You don’t see that you’re calling a system command when you call an Access or Get command. In the diagram that looks just like referencing a symbol using an object line, type line or interface line:
 
 < Picture >
 
 ##### Access in System Representation
 
-In the system representation you see all access to an object as a call to one of its system procedures. 
+In the system representation you see all access to an object as a call to one of its system commands. 
 
 < Picture >
 
@@ -7236,26 +7236,26 @@ And here I draw out both representations on top of each other, one representatio
 
 ###### 2
 
-You can view a procedure as the object that it returns.
+You can view a command as the object that it returns.
 
-< Picture: Procedure with some private contents and one public object with some contents >
+< Picture: Command with some private contents and one public object with some contents >
 
 \=
 
 < Picture: Object returned >
 
-Actually, the objects symbols I’ve introduced before *are* the object representation of procedures. They are representations of procedures that return objects.
+Actually, the objects symbols I’ve introduced before *are* the object representation of commands. They are representations of commands that return objects.
 
-Here you see that you have multiple representations of something: you can see the system as a bunch of procedures or you can see it as a bunch of objects, but it’s still the same system.
+Here you see that you have multiple representations of something: you can see the system as a bunch of commands or you can see it as a bunch of objects, but it’s still the same system.
 
-If you regard something a property, which you often might, the primary representation of it is its object representation. If you regard something a method or if the procedure doesn’t return a value, then its primary representation is the procedure representation.
+If you regard something a property, which you often might, the primary representation of it is its object representation. If you regard something a method or if the command doesn’t return a value, then its primary representation is the command representation.
 
 ###### 3
 
-Conversely, a procedure can apart from it’s usual representation, be represented as the object that it returns.
+Conversely, a command can apart from it’s usual representation, be represented as the object that it returns.
 
-Procedures  
-Previous explanations were required before I could go into the more advanced topics about procedures.
+Commands  
+Previous explanations were required before I could go into the more advanced topics about commands.
 
 #### Brainstorm
 
@@ -7274,7 +7274,7 @@ I need changed events to exist automatically
 Perhaps include some appendices that now ended up in Advanced Symbol Language.
 
 <  
-op veel plekken ontbreekt de uitleg van de toepassing. Het lijkt alsof als ik de theorie op papier heb, ik de toepassing maar uitwis. Introduction gaat helemaal over de toepassing. Objects Basics en Procedure Basics daar is de toepassing compleet zoek. Access Control daarbij is de toepassing ook helemaal zoek. Waarom heb je dat soort access controllers? Waarom moet je global access hebben en waarom nested procedure access? In Lines lijk ik nu wel wat meer voorbeelden te behandelen, maar alleen maar omdat ik er aan werk. Als ik dit nu niet op zou hebben gemerkt zou ik straks een theorie hebben geformuleerd in lines en de toepassing compleet weggeveegd. Ik moet meer de theorie en toepassing combineren. Ok, je moet een theorie *vormen*, en uiteindelijk moet je de theorie apart op papier hebben, maar na het vormen van de theorie is uitleggen van de toepassing niet opeen onbelangrijk. Dit gebeurt echt vaak in boeken. Ze komen maar met de theorie en de voorbeelden ervan zijn compleet achterwege gelaten.  
+op veel plekken ontbreekt de uitleg van de toepassing. Het lijkt alsof als ik de theorie op papier heb, ik de toepassing maar uitwis. Introduction gaat helemaal over de toepassing. Objects Basics en Command Basics daar is de toepassing compleet zoek. Access Control daarbij is de toepassing ook helemaal zoek. Waarom heb je dat soort access controllers? Waarom moet je global access hebben en waarom nested command access? In Lines lijk ik nu wel wat meer voorbeelden te behandelen, maar alleen maar omdat ik er aan werk. Als ik dit nu niet op zou hebben gemerkt zou ik straks een theorie hebben geformuleerd in lines en de toepassing compleet weggeveegd. Ik moet meer de theorie en toepassing combineren. Ok, je moet een theorie *vormen*, en uiteindelijk moet je de theorie apart op papier hebben, maar na het vormen van de theorie is uitleggen van de toepassing niet opeen onbelangrijk. Dit gebeurt echt vaak in boeken. Ze komen maar met de theorie en de voorbeelden ervan zijn compleet achterwege gelaten.  
 \>
 
 In C++ bepaal je de redirection diepte vooraf:
@@ -7320,7 +7320,7 @@ Overlapping Hierarchies
 < Rename this section >  
 < I might use sheer triangles for *pure* overlap establishment. >  
 < Circle structure and triangle structure as separate hierarchies. One was originally  called containment hierarchy, while the other was called the inheritance hierarchy. >  
-< Procedure and object hierarchy regarded separately... >
+< Command and object hierarchy regarded separately... >
 
 Members can be grouped by different criteria. Groups can overlap, therefore triangles can overlap. This goes against object oriented programming, because objects can’t overlap.
 
@@ -7406,11 +7406,11 @@ In the programming environment, triangles can be used to group members by criter
 
 < Perhaps I should allows non existent triangles: triangles that aren’t object capsules. I might want the programmer to have control over them. Triangles used for the sheer purpose of creating an overlapping structure can then be made non-object, so that no double capsules need to be displayed in the overlapping parts in the overlapping notation.
 
-### Procedures can Overlap
+### Commands can Overlap
 
-Procedures can overlap all the same, because they are much like objects.
+Commands can overlap all the same, because they are much like objects.
 
-< Might this add two more hierarchies? Call and procedures reference hierarchy? >
+< Might this add two more hierarchies? Call and commands reference hierarchy? >
 
 ### Another Thing
 
@@ -7618,22 +7618,22 @@ The following can be translated to another language, for instance text code:
 
 - Identifiers
 - Structure: Encapsulation structure
-- Declaration: Procedure declaration
-- Operators: Procedure call
+- Declaration: Command declaration
+- Operators: Command call
 - Literals: The state of an object
 
-Symbol text code is established by a set of standard translations for the elements above, and a few special translations for for instance execution control procedures.
+Symbol text code is established by a set of standard translations for the elements above, and a few special translations for for instance execution control commands.
 
 To demonstrate how other languages, including graphical ones, can be integrated into Symbol I might show how text code is established. 
 
-Text code is made out of a symbol by giving a reference to a symbol to a translation procedure. The translation procedure might construct a String object that contains the text code. Thus, a tranlation procedure takes a system and translates it to an object that represents the system. If you don’t translate the system to a String, but another type of object, containing shapes and lines, for instance a Shapes object, then you can establish a graphical language.
+Text code is made out of a symbol by giving a reference to a symbol to a translation command. The translation command might construct a String object that contains the text code. Thus, a translation command takes a system and translates it to an object that represents the system. If you don’t translate the system to a String, but another type of object, containing shapes and lines, for instance a Shapes object, then you can establish a graphical language.
 
-The symbol diagram language is such a translation to a graphical language... yes, unfortunately the diagram language introduced so far is nothing more than a utilization of Symbol. It isn’t symbol itself. A system is retained in a J Data Base. The J Data Base stores the symbols and their relations and also a few standard translation procedures, which are also systems. Some of those standard translation procedures draw out the Symbol diagram language. Another set of those standard translation procedures produce the Symbol text language.
+The symbol diagram language is such a translation to a graphical language... yes, unfortunately the diagram language introduced so far is nothing more than a utilization of Symbol. It isn’t symbol itself. A system is retained in a J Data Base. The J Data Base stores the symbols and their relations and also a few standard translation commands, which are also systems. Some of those standard translation commands draw out the Symbol diagram language. Another set of those standard translation commands produce the Symbol text language.
 
 ### Operators
 
 <
-Operators *are* procedures. They are assigned a special notation.  
+Operators *are* commands. They are assigned a special notation.  
 Evaluation order, 'child-hesis', Precedence  
 Conversion operators  
 \>
@@ -7646,7 +7646,7 @@ An example of operators are arithmetic operators:
 
 An operator is notated like a method. It resembles an operation. The difference in notation is not in the diagram code. An operator’s speciality is that it supports an alternate notation, usually textual, but not necessarily.
 
-`+` and `–` operations can be represented in plain text. Powers in Basic were represented by the ^ character. I wish to change that. I want the real mathematical notation to integrate with the language. For that I define operators as procedures that have any alternate notation. The power is represented by the exponent being notated in superscript: higher and smaller than the: b<sup>e</sup>
+`+` and `–` operations can be represented in plain text. Powers in Basic were represented by the ^ character. I wish to change that. I want the real mathematical notation to integrate with the language. For that I define operators as commands that have any alternate notation. The power is represented by the exponent being notated in superscript: higher and smaller than the: b<sup>e</sup>
 
 #### Parameters
 
@@ -7668,15 +7668,15 @@ Some types have special notation formats, such as Integer Number, Floating Point
 "Hello, I am a text literal"
 ```
 
-The notation as such describes the state of an object and it’s called a literal. The examples above are textual literals. To assign a literal to an Integer object, the literal is put into a Text object and the conversion procedure for Text to Integer is called. So literals are interpreted by using a conversion procedure with Text as the source type.
+The notation as such describes the state of an object and it’s called a literal. The examples above are textual literals. To assign a literal to an Integer object, the literal is put into a Text object and the conversion command for Text to Integer is called. So literals are interpreted by using a conversion command with Text as the source type.
 
-A literal can be a Text, but any other type might do, for instance a Picture. If a Picture serves as a literal, then to interpret the literal, the conversion procedure with. < A literal is always of a type of a type. >
+A literal can be a Text, but any other type might do, for instance a Picture. If a Picture serves as a literal, then to interpret the literal, the conversion command with. < A literal is always of a type of a type. >
 
 There can also be a reverse for a literal interpreter. The Integer to Text conversion produces the textual integer literal.
 
 #### Standard Literal
 
-There’s a standard way to interpret and procedure textual literals of objects. If there is no custom conversion to text and back, you can only control the state of an object by calling its members. Say an object has the following members:
+There’s a standard way to interpret and command textual literals of objects. If there is no custom conversion to text and back, you can only control the state of an object by calling its members. Say an object has the following members:
 
 ```
 Integer 1
@@ -7693,14 +7693,14 @@ Of its data members
 Maybe you should be able to define orders in which
 
 <  
-This concept is much like the operator concept, which can convert *procedures* with arguments to a textual notation and back. 
+This concept is much like the operator concept, which can convert *commands* with arguments to a textual notation and back. 
 
-This conversions isn’t usually?) incorporated into the system procedures of procedure to textually notate, though. There is standard way to produce a textual notation from a procedure call.
+This conversions isn’t usually?) incorporated into the system commands of command to textually notate, though. There is standard way to produce a textual notation from a command call.
 
 -----
 
 The concepts ‘literals’ and ‘operators’ are very very alike, and a single word could be used that encapsulates both...  
-Standard textual literals and standard textual procedure notation.  
+Standard textual literals and standard textual command notation.  
 \>
 
 ### Structure
@@ -7716,7 +7716,7 @@ There can be graphical identifiers.
 There is text code notation that I’ve introduced for which language integration techniques are used.
 
 - Calls and parameter assignment
-- Procedure declaration
+- Command declaration
 - (Standard literals)
 - Access operators
 - Execution control statements
@@ -7725,7 +7725,7 @@ There is text code notation that I’ve introduced for which language integratio
 
 De access operators in text code
 
-In text code you sort of see the calls to system procedures and you also sort of don’t. Each system procedure has its own access operator
+In text code you sort of see the calls to system commands and you also sort of don’t. Each system command has its own access operator
 
 |                 |           |
 |----------------:|:----------|
@@ -7747,10 +7747,10 @@ In text code you sort of see the calls to system procedures and you also sort of
 < Maybe I’ll do special operator symbols in text code that represent the object relations. Actually, that’s what I’d like a little. Except member access. I wanna keep that. >
 
 - Access Operators
-    - One for each system procedure and ones that can do for multiple system procedures, depending on the context
+    - One for each system command and ones that can do for multiple system commands, depending on the context
     - `... :: . , () []`
     - Special operators. Are they operators? If they are then they should be able to be overloaded. Maybe that’s handy too.
-        - System procedure arguments
+        - System command arguments
         - Genitivity
 
 ### Real Language
@@ -7795,12 +7795,12 @@ Might properties have a place here? Somewhere? A bit?
 
 I think a lot of this needs to be put in the other sections.
 
-Operators, literals *is* a special text code issue. It can be parallelized with language integration, actually. And if it can’t be put in one concept as it is now, then I might need to make a single concept that covers language integration altogether. There are two ways to express parameters in text code: as a definition or as a procedure call. The declaration of a procedure can be expressed as freely as an operator or literal notation. The general form of a textual procedure call notation is nothing more than a standard operator notation for a procedure.
+Operators, literals *is* a special text code issue. It can be parallelized with language integration, actually. And if it can’t be put in one concept as it is now, then I might need to make a single concept that covers language integration altogether. There are two ways to express parameters in text code: as a definition or as a command call. The declaration of a command can be expressed as freely as an operator or literal notation. The general form of a textual command call notation is nothing more than a standard operator notation for a command.
 
-- Mention that access operators are operator notations of the system procedures.
+- Mention that access operators are operator notations of the system commands.
 - Explain what execution control text notation is (is it an operator notation?)
 
-Perhaps the standard procedure call notation, standard literal notation and standard procedure declaration can be put in the other sections, to be able to use them well explained.
+Perhaps the standard command call notation, standard literal notation and standard command declaration can be put in the other sections, to be able to use them well explained.
 
 As for the other issues:
 
@@ -7808,12 +7808,12 @@ As for the other issues:
     - Move to the beginning of this book. It’s a basic subject about naming symbols.
 - Object structure:
     - Move to Objects chapter.
-- Procedure structure:
-    - Move to Procedure chapter.
+- Command structure:
+    - Move to Command chapter.
 - Execution control:
     - Move to Execution Control section
 - Access Operators:
-    - Introduce them in the access procedure section. 
+    - Introduce them in the access command section. 
 - Access Controllers:
     - Move to Access Controllers section.
 
@@ -7823,21 +7823,21 @@ As for the other issues:
 In text code parameter assignments before a call are notated something like this:
 
 ```
-Procedure A ( 0 , 4 )
+Command A ( 0 , 4 )
 ```
 
-Procedure A is the procedure name, the two numbers between brackets are the two arguments. Text code is covered in detail lateron.
+Command A is the command name, the two numbers between brackets are the two arguments. Text code is covered in detail lateron.
 
-The parameters of a procedure are listed in a fixed order. Even the optional parameters have a place in this fixed list and when you don’t want to fill it in you might leve the position open:
-
-```
-Procedure A ( 0 , 4 ,  , 1 )
-```
-
-After the fixed parameter list, a procedure can allow a variable amount of parameters to follow. This variable amount of parameters is stored in a single special parameter. This parameter is of type Array, a type defined in the Sigma Data module. To support variable amount of arguments, the procedure might have a public Array object that is assigned to be this special parameter.
+The parameters of a command are listed in a fixed order. Even the optional parameters have a place in this fixed list and when you don’t want to fill it in you might leve the position open:
 
 ```
-Procedure A ( 0 , 4 ,  , 1 , 3 , 7 , ... )
+Command A ( 0 , 4 ,  , 1 )
+```
+
+After the fixed parameter list, a command can allow a variable amount of parameters to follow. This variable amount of parameters is stored in a single special parameter. This parameter is of type Array, a type defined in the Sigma Data module. To support variable amount of arguments, the command might have a public Array object that is assigned to be this special parameter.
+
+```
+Command A ( 0 , 4 ,  , 1 , 3 , 7 , ... )
 ```
 
 Variable amount of arguments is a purely textual notation. The diagram notation shows working with the Array object. However, an Array parameter needs to be tagged and in the diagram code this is simply shown by displaying the words ‘Arguments’ with the Array object. < Maybe it has something to do with Language integration. >
@@ -7848,9 +7848,9 @@ Variable amount of arguments is a purely textual notation. The diagram notation 
 
 ![](images/Symbol%20Language%20(2004).472.png)
 
-Lines are set in the create procedure.
+Lines are set in the create command.
 
-##### Lines Shown in Create Procedure
+##### Lines Shown in Create Command
 
 ```
 Circle System
@@ -7863,7 +7863,7 @@ Circle System
         Triangle
     End Circle
 
-    System Procedures
+    System Commands
     
         Square Create
             Object A . Type = Type B
@@ -7872,7 +7872,7 @@ Circle System
             Object A . Create
         End Square
 
-    End System Procedures
+    End System Commands
 
 End Circle
 ```
@@ -7893,7 +7893,7 @@ Circle System
 End Circle
 ```
 
-The calls added to the declaration are executed in the Create procedure, though.
+The calls added to the declaration are executed in the Create command, though.
 
 ##### No "="
 
@@ -7936,15 +7936,15 @@ Slechte voorbeeld namen, dan lijkt het erop dat Type, Object en Interface keywor
 ```
 Circle System <=> Object System <=> Circular Object System
 Triangle B <=> Triangular Object B
-Square A <=> Procedure A
+Square A <=> Command A
 End Circle <=> End Object
 End Triangle <=> End Object
-End Square <=> End Procedure
+End Square <=> End Command
 ```
 
-#### Procedures
+#### Commands
 
-- Procedure Structure
+- Command Structure
 - Parameter notations
     - Optional
     - Variable
@@ -7952,10 +7952,10 @@ End Square <=> End Procedure
 
 ##### Parameter Text Notation
 
-There are several ways to notate parameters in text code. First of all, the definition of the procedure in text code might contain a parameter list:
+There are several ways to notate parameters in text code. First of all, the definition of the command in text code might contain a parameter list:
 
 ```
-Procedure Do Something ( Parameter 1 : Type A, Parameter 2 : Type B, Interface A )
+Command Do Something ( Parameter 1 : Type A, Parameter 2 : Type B, Interface A )
 ```
 
 Several notations for parameter assignments.  
@@ -7965,7 +7965,7 @@ Textual:
 
 - Enumerated argument list
 - Named arguments
-- Reading and writing arguments like the procedure is an object
+- Reading and writing arguments like the command is an object
 - In, Out denotation
 
 Ik wil dit er toch tussendoor doen. En na de andere hoofdstukken moet ik het er ook weer even over hebben.
@@ -7974,9 +7974,9 @@ Ik wil dit er toch tussendoor doen. En na de andere hoofdstukken moet ik het er 
 
 ...
 
-- Procedure structure
+- Command structure
 - Standard call notation
-- Standard procedure declaration
+- Standard command declaration
 
 ##### Parameter Notations
 
@@ -8072,7 +8072,7 @@ End Object
 | |               | Generic interface     | Interface determined by type line or object line |
 | |               |                       | (type’s whole interface used) |
 | |               |                       | (symbol adopts any interface the type might have) |
-| __Procedure Genericity__                | | | |
+| __Command Genericity__                | | | |
 | | __Definition__ | Original definition  | Definition determined by no line |
 | |                |                      | (no reference line) |
 | |                | Delegated definition | Definition determined by a line |
@@ -8082,14 +8082,14 @@ End Object
 | |                | Delegated interface  | Interface determined by a line |
 | |                |                      | (interface or reference line) |
 | |                | Explicit interface   | Interface determined by interface line |
-| |                |                      | (limits the possible procedures to ones with that interface) |
+| |                |                      | (limits the possible commands to ones with that interface) |
 | |                | Generic interface    | Interface determined by reference line |
-| |                |                      | (symbol adopts any interface the procedure might have) |
+| |                |                      | (symbol adopts any interface the command might have) |
 
-|                                      |                                |     |
-|--------------------------------------|--------------------------------|-----|
-| __Interface Doesn’t Determine Type__ | Interface-type genericity      | The fact that the interface never fixes the type |
-|                                      | Interface-procedure genericity | The fact that the procedure interface never fixes the  procedure. |
+|                                      |                              |     |
+|--------------------------------------|------------------------------|-----|
+| __Interface Doesn’t Determine Type__ | Interface-type genericity    | The fact that the interface never fixes the type |
+|                                      | Interface-command genericity | The fact that the command interface never fixes the  command. |
 
 #### Tree Notation
 
@@ -8165,7 +8165,7 @@ Een triangle is gekozen voor interface implementation, omdat een interface imple
 Eigenlijk is het wel een beetje zo dat: alles wat ik aan mezelf heb moeten uitleggen, moet ik aan de lezer uitleggen.  
 \>
 
-A definition is a lot like a type of procedure, while an execution is an instance of the procedure. As I state this relation, it may seem strange to you that I picked *separate symbols* to denote a procedure symbol’s execution and definition, while for objects I use different *line types* to separate objects from types. Diamond is actually the extra symbol picked to represent an execution. An execution of a definition is like an object of a type. However, an execution has another special characteristic: it executes. 
+A definition is a lot like a type of command, while an execution is an instance of the command. As I state this relation, it may seem strange to you that I picked *separate symbols* to denote a command symbol’s execution and definition, while for objects I use different *line types* to separate objects from types. Diamond is actually the extra symbol picked to represent an execution. An execution of a definition is like an object of a type. However, an execution has another special characteristic: it executes. 
 
 When an object symbol has a type line it’s behavior in the container isn’t as much different as ...
 
@@ -8173,17 +8173,17 @@ However, object symbols aren’t different to their container if they ...
 
 To find the definition you follow the reference line between ...
 
-Just consider: if a diamond doesn’t have a line it is an executing nested procedure, when a square doesn’t have a line, it’s a non executing nested procedure. In both cases it’s a definition. But the two case differ in that in one case it executes and in the other it doesn’t. If an object symbol has no line, it’s an object. Simply stated, it needs an object line for it not to be a type. A procedure symbol shouldn’t need a line to be an execution.
+Just consider: if a diamond doesn’t have a line it is an executing nested command, when a square doesn’t have a line, it’s a non executing nested command. In both cases it’s a definition. But the two case differ in that in one case it executes and in the other it doesn’t. If an object symbol has no line, it’s an object. Simply stated, it needs an object line for it not to be a type. A command symbol shouldn’t need a line to be an execution.
 
 When a characteristic’s presence shouldn’t be dependent of the presence of a line, it needs to be drawn out with a shape type. If a characteristic is dependent of the presence of a line, it’s the line presence that gives it the characteristic. If I’d want object symbols to serve only as a type and not as an object, then I’d need to reserve a special shape to separate types from objects. Now, to make an objet symbol serve as a type only and not as a type, I make the Object Get Inaccessible? NO. That’s not true. Actually I’d might not be able to Symbol Get if it’s for the purpose of assigning an object line. 
 
 A square is never an object.
 
-For a procedure symbol to function as a reference and not as an execution is not up to the possibility to have a symbol as an execution target.
+For a command symbol to function as a reference and not as an execution is not up to the possibility to have a symbol as an execution target.
 
 Ok, if I wanted it so that an object symbol could only function as a type, but not as an object, I should reserve a separate shape for it. But that doesn’t mean that an object shape can’t serve as a type. An execution shape can serve as the definition too.
 
-It’s important for some procedure symbols not to function as an execution. Otherwise the system might behave complete different. It’s not as important for an object symbol not to function as an object, only as a type. The system isn’t really harmed as severely by that. The same goes for triangles: if a triangle is suddenly a circle, the system behaves completely differently.
+It’s important for some command symbols not to function as an execution. Otherwise the system might behave complete different. It’s not as important for an object symbol not to function as an object, only as a type. The system isn’t really harmed as severely by that. The same goes for triangles: if a triangle is suddenly a circle, the system behaves completely differently.
 
 I’m still in doubt. I think it’s good that there’s a diamond symbol and that there aren’t separate object, type and interface shapes. I just can’t define *why* yet.
 
@@ -8191,7 +8191,7 @@ It totally makes sense to use separate type, interface and object shapes, but ..
 
 Sure it is nice to see in a system that one set of object symbols serve as the types... So it might be an idea to make it possible to give them a different shape type... when you can’t use the symbol as an object target.
 
-The total reason of the diamond and triangle symbols is that the effect of it has greater consequences for the behavior of the system. A diamond symbol makes rules easier to understand: it’s easier to get: “you can’t place a diamond in an object symbol”, than it is to remember “a procedure symbol in an object symbol can’t have a call line”
+The total reason of the diamond and triangle symbols is that the effect of it has greater consequences for the behavior of the system. A diamond symbol makes rules easier to understand: it’s easier to get: “you can’t place a diamond in an object symbol”, than it is to remember “a command symbol in an object symbol can’t have a call line”
 
 *“The reason why both call and reference lines need to be followed is because call and reference lines are actually both kind of like reference lines. However, a call line has the side effect that its square might execute if its parent square executes.”*
 
@@ -8211,34 +8211,34 @@ Exclusion, that is, a container’s exclusion of members of its children, doesn�
 
 Etcetera. Symbol might become much easier when you find what’s used most and what things are for incidental use, no matter how complex the topics you’ll use incidentally are.
 
-You can write programs in which you have no notice of any system aspect procedure at all. In programs in which you do work with system aspect procedures, you won’t might not notice the presence of all aspect procedures, just some.  
+You can write programs in which you have no notice of any system aspect command at all. In programs in which you do work with system aspect commands, you won’t might not notice the presence of all aspect commands, just some.  
 />
 
 < remember that I can only explain how to program structurally using the systems I’ve programmed as an example >  
 I’ve called this chapter into existence, because I want to write about programming methodologies.
 
-### Transforming a Procedure to an Object
+### Transforming a Command to an Object
 
-There’s a method for turning a procedure into a type.
+There’s a method for turning a command into a type.
 
-Say a procedure has input objects and output objects. When you call the procedure you set the input objects. After the call you can read the output objects.
+Say a command has input objects and output objects. When you call the command you set the input objects. After the call you can read the output objects.
 
-To create a type out of the procedure you just take over all of the procedure’s objects. The procedure itself, stripped from objects, becomes a member of the type too.
+To create a type out of the command you just take over all of the command’s objects. The command itself, stripped from objects, becomes a member of the type too.
 
-You can freely read and write the objects. However, the procedure might be occasionally run.
+You can freely read and write the objects. However, the command might be occasionally run.
 
-Changing input objects means that the result of the procedure might change.
+Changing input objects means that the result of the command might change.
 
-The method is: when you change an input object, the procedure might be run the next time you read an output object. So the procedure might only be run when output is read after input has changed.
+The method is: when you change an input object, the command might be run the next time you read an output object. So the command might only be run when output is read after input has changed.
 
-This I call apply methodology. The reason I call it that is because When writing an input object a Boolean is set to __False__ called __Input Applied to Output__. Whenever you read an output object and __Input Applied to Output = False__ then the procedure is run: the procedure that converts input to output. After the procedure is run, all input has been applied to output, thus __Input Applied to Output__ is set to __True__.
+This I call apply methodology. The reason I call it that is because When writing an input object a Boolean is set to __False__ called __Input Applied to Output__. Whenever you read an output object and __Input Applied to Output = False__ then the command is run: the command that converts input to output. After the command is run, all input has been applied to output, thus __Input Applied to Output__ is set to __True__.
 
-The benefits from making a type out of a procedure is that you can dynamically write and write input objects and read output objects, without having to run a procedure all the time.
+The benefits from making a type out of a command is that you can dynamically write and write input objects and read output objects, without having to run a command all the time.
 
-Sometimes, though, you always want input immediately applied to output when it changes. Then you can choose for immediate apply when writing input. The previous method only applied when reading output. Applying when writing input still has benefits: you can keep reading output objects without running the procedure and the procedure is only run when an input object is assigned a *different* value. When you assign the same value, the procedure isn’t executed either.
+Sometimes, though, you always want input immediately applied to output when it changes. Then you can choose for immediate apply when writing input. The previous method only applied when reading output. Applying when writing input still has benefits: you can keep reading output objects without running the command and the command is only run when an input object is assigned a *different* value. When you assign the same value, the command isn’t executed either.
 
 < >  
-I am still in contemplation about this. Perhaps apply methodology can be applied to all procedures and I could make it just a tag of a procedure which apply method is used.
+I am still in contemplation about this. Perhaps apply methodology can be applied to all commands and I could make it just a tag of a command which apply method is used.
 
 Another thing interesting in these kinds of objects is Changed events. Perhaps this might become something standard too.
 
@@ -8251,7 +8251,7 @@ Integrating Structure and Symbol
 --------------------------------
 
 < Brainstorm >  
-You might look at basics of Symbol. And the basic thing is encapsulation. The encapsulation of a Structure can be derived from the referential structure using a mutual parent rule. This in real life also determines how we feel something encapsulates another thing. You can apply this mutual parent rule to class relations and object relations. All class and object reference are expressed as splines, except the references from parent to child. Objects and procedures are there in both languages and are exchangeable. Publicity is also present in both systems. The only thing I don’t know how to express in Symbol is plurality.
+You might look at basics of Symbol. And the basic thing is encapsulation. The encapsulation of a Structure can be derived from the referential structure using a mutual parent rule. This in real life also determines how we feel something encapsulates another thing. You can apply this mutual parent rule to class relations and object relations. All class and object reference are expressed as splines, except the references from parent to child. Objects and commands are there in both languages and are exchangeable. Publicity is also present in both systems. The only thing I don’t know how to express in Symbol is plurality.
 
 Symbol always had a lack of expression in plurality. How. You’d almost want a new shape of symbol. But I’ve sort of run out of shapes. I’d go for a hexagon. It looks like a circle, but has a plurality feeling to it. If you might, you could choose for octagons.
 
@@ -8324,7 +8324,7 @@ Access and Scope are the same subject.
 
 - Identifiers
 - Objects
-- Procedures
+- Commands
 - Access
 
 -----
@@ -8334,7 +8334,7 @@ Access and Scope are the same subject.
 #### More Detailed
 
 <  
-Overloading can only be part of procedures if you either cannot overload an object or you call a procedure to return an object...  
+Overloading can only be part of commands if you either cannot overload an object or you call a command to return an object...  
 \>
 
 - Identifiers
@@ -8364,9 +8364,9 @@ Overloading can only be part of procedures if you either cannot overload an obje
     - Blocks...
     - Lifetime
 
-- Procedures
-    - Procedures
-    - Procedure Reference
+- Commands
+    - Commands
+    - Command Reference
         - Pointing
         - Calling
     - Operation Flow
@@ -8380,7 +8380,7 @@ Overloading can only be part of procedures if you either cannot overload an obje
         - Variable Amount
         - Return Type
     - Operators
-        - Operators *are* procedures. They are assigned a special notation.
+        - Operators *are* commands. They are assigned a special notation.
         - Evaluation order, parenthesis, Precedence
         - Conversion operators
     - Object Extension
@@ -8439,7 +8439,7 @@ Overloading can only be part of procedures if you either cannot overload an obje
         - Access object
         - Access interface
         - Access type
-        - System procedure arguments
+        - System command arguments
         - Genitivity
     -----
     - Generic and Explicit
@@ -8914,14 +8914,14 @@ Com concepts: components, interfaces.
 - Interface
 - Implementation
 -----
-- Procedure
-- Procedure reference
+- Command
+- Command reference
 - Call
 - Definition
 
 # Brainstorm
 
-Als je een te supplyen procedure reference (pure virtual function, pure overridable) niet invult, dan heeft hij van zichzelf waarschijnlijk geen inhoud. Als je hem dan aanroept gebeurt er gewoon niks. Eigenlijk zou dan misschien ook bij niet gecreëerde objecten moeten gebeuren: je roept hem wel aan maar er gebeurt gewoon niks. Dat voorkomt foutmeldingen, maar het is eigenlijk niet de bedoeling. Of kan je erop bouwen. Misschien is het een keuze die je maakt als programmeur. Nou moet ik zeggen dat ik in mijn code er altijd voor kies dat als er iets 'verkeerds' wordt aangeroepen, dat er dan gewoon NIKS gebeurt. Er gaan niks fout, nee er gebeurt gewoon niks.
+Als je een te supplyen command reference (pure virtual function, pure overridable) niet invult, dan heeft hij van zichzelf waarschijnlijk geen inhoud. Als je hem dan aanroept gebeurt er gewoon niks. Eigenlijk zou dan misschien ook bij niet gecreëerde objecten moeten gebeuren: je roept hem wel aan maar er gebeurt gewoon niks. Dat voorkomt foutmeldingen, maar het is eigenlijk niet de bedoeling. Of kan je erop bouwen. Misschien is het een keuze die je maakt als programmeur. Nou moet ik zeggen dat ik in mijn code er altijd voor kies dat als er iets 'verkeerds' wordt aangeroepen, dat er dan gewoon NIKS gebeurt. Er gaan niks fout, nee er gebeurt gewoon niks.
 
 -----
 
@@ -8933,11 +8933,11 @@ Delegation, delegation structure.
 
 -----
 
-< What I call type members a lot, really aren’t type members. They’re object members. Only static type members are type members. And what I call procedure members aren’t procedure members. They are call members. Only static procedure members are procedure members. So what are Type Static procedure members? They are type members that are only associated with a single procedure. Oh, but they are still procedure members than. And then object members can also be called type members. Hmmm... yes, but I overuse ‘type member’ I think. In a lot of places I can say object member. >
+< What I call type members a lot, really aren’t type members. They’re object members. Only static type members are type members. And what I call command members aren’t command members. They are call members. Only static command members are command members. So what are Type Static command members? They are type members that are only associated with a single command. Oh, but they are still command members than. And then object members can also be called type members. Hmmm... yes, but I overuse ‘type member’ I think. In a lot of places I can say object member. >
 
 -----
 
-< I need a story about where the code resides and that the code isn’t really part of module instances, types, objects or procedures. Those entities only complete the code with a copy of data. >
+< I need a story about where the code resides and that the code isn’t really part of module instances, types, objects or commands. Those entities only complete the code with a copy of data. >
 
 -----
 
@@ -8945,11 +8945,11 @@ Objects don’t *really* contain data, though, but memory is reserved for every 
 
 -----
 
-Er moet ergens nog in dat een procedure een interface heeft. En misschien moet een procedure daarom ook een interface line krijgen.
+Er moet ergens nog in dat een commando een interface heeft. En misschien moet een commando daarom ook een interface line krijgen.
 
 -----
 
-Trouwens: Een multicast event is niet meer dan een object met een dimensie, die meerdere procedure references registreert. Misschien moet er een speciale notatie zijn zodat je de lines ziet. Je moet van dat object met een dimensie een method aan kunnen roepen, die in een rij alle references aanroept. Daarom moet een dimensionaal object ook niet dimensionale members kunnen hebben, maar ik weet nog niet helemaal hoe dat dan gaat.
+Trouwens: Een multicast event is niet meer dan een object met een dimensie, die meerdere command references registreert. Misschien moet er een speciale notatie zijn zodat je de lines ziet. Je moet van dat object met een dimensie een method aan kunnen roepen, die in een rij alle references aanroept. Daarom moet een dimensionaal object ook niet dimensionale members kunnen hebben, maar ik weet nog niet helemaal hoe dat dan gaat.
 
 -----
 
@@ -8987,7 +8987,7 @@ Other Things
 ------------
 
 - Object structure
-- Procedures and 
+- Commands and 
 - Operators
 - Operation control
 
@@ -9019,7 +9019,7 @@ Don’t forget to expand inheritance possibilities. Exclude, override, pre exten
     - Jumps
         - If
         - Select / Switch
-        - Procedure call and return
+        - Command call and return
 -----
 - Objects and interfaces
 -----
@@ -9057,7 +9057,7 @@ __Programming Concepts’ Diagram Elements__
 |                            | going outward and acces controllers shed light on direction |
 | Object reference           | Circle |
 | Interface                  | Triangle |
-| Procedure                  | Square |
+| Command                    | Square |
 | Access                     | |
 | - Global                   | All inside a pentagon (There are issues) |
 | - Public for reference     | Line to just outside to a tangent line. |
@@ -9067,7 +9067,7 @@ __Programming Concepts’ Diagram Elements__
 | - Private for instancing   | Line to just outside to a dotted cross |
 | - Friend for instancing    | Line to just outside to a dotted < shape pointed inwards |
 | Execution order            | Dependent of positioning. Clockwise. Symbols possibly tied together with lines. |
-| Changing reference or type | Also include creation and destruction. Special procedures that actually alter the diagram. |
+| Changing reference or type | Also include creation and destruction. Special commands that actually alter the diagram. |
 | Array                      | Special type with special methods changing the count of contained object references. |
 | Module                     | A module symbol can be compiled |
 
@@ -9130,7 +9130,7 @@ Symbol Diagram Language
 - Type
 - Object Reference
 - Interface
-- Procedure
+- Command
 - Access
 - Changing reference or type
 - Arrays
@@ -9179,7 +9179,7 @@ __Programming Concepts’ Diagram Elements__
 |                            | going outward and acces controllers shed light on direction |
 | Object reference           | Circle |
 | Interface                  | Triangle |
-| Procedure                  | Square |
+| Command                    | Square |
 | Access                     | |
 | - Global                   | All inside a pentagon (There are issues) |
 | - Public for reference     | Line to just outside to a tangent line. |
@@ -9189,7 +9189,7 @@ __Programming Concepts’ Diagram Elements__
 | - Private for instancing   | Line to just outside to a dotted cross |
 | - Friend for instancing    | Line to just outside to a dotted < shape pointed inwards |
 | Execution order            | Dependent of positioning. Clockwise. Symbols possibly tied together with lines. |
-| Changing reference or type | Also include creation and destruction. Special procedures that actually alter the diagram. |
+| Changing reference or type | Also include creation and destruction. Special commands that actually alter the diagram. |
 | Array                      | Special type with special methods changing the count of contained object references. |
 | Module                     | A module symbol can be compiled |
 
@@ -9199,8 +9199,8 @@ __Programming Concepts’ Diagram Elements__
 |-------------------------|--------------------------------|
 | Circle                  | Object reference               |
 | Triangle                | Interface, inheritance         |
-| Square                  | Procedure, procedure call      |
-| Pentagon                | Module region               |
+| Square                  | Command, command call          |
+| Pentagon                | Module region                  |
 | Contiguous line         | Points to referee              |
 | Dotted line             | Points to type                 |
 | Contiguous dissector \| | Public for reference           |
@@ -9215,7 +9215,7 @@ __Programming Concepts’ Diagram Elements__
 
 ### Derived Concepts
 
-- Procedure call
+- Command call
 - Inheritance
 - Multiple containment
 - Pointer
@@ -9230,7 +9230,7 @@ __Programming Concepts’ Diagram Elements__
 
 |                      |                     |
 |----------------------|---------------------|
-| Procedure call       | Procedure reference |
+| Command call         | Command reference |
 | Inheritance          | Interface with the base as the type |
 |                      | Interface can be created or refer to a shared base object |
 |                      | Interface referencing an object or interface |
@@ -9239,7 +9239,7 @@ __Programming Concepts’ Diagram Elements__
 | Multiple containment | Containment and reference |
 | Pointer              | Reference |
 | Object reference     | Object, reference |
-| Parameters           | A procedure’s object reference public as referee |
+| Parameters           | A command’s object reference public as referee |
 | Arguments            | In: Create parameter and assign or change reference |
 |                      | Out: Change reference |
 |                      | In/Out: change reference |
@@ -9270,7 +9270,7 @@ Maar dan heeft een cirkel dat ook, want die representeert... oh, de gezamenlijke
 ##### Direction
 
 Always first goes outward, but that doesn’t mean that outward is the direction. Line dissectors  
-Reference to a procedure is a call and is represented by a square tied to another.
+Reference to a command is a call and is represented by a square tied to another.
 
 ##### Reference to object
 
@@ -9312,10 +9312,10 @@ Reference can be seen in a way as containment.
 
 #### Changing a Reference or Type
 
-Special procedures that can actually alter the diagram.  
+Special commands that can actually alter the diagram.  
 Objects are always object references or types until the object is created. Create an object for one reference, then the references tied to that reference also point at that object, of course, since the reference tied to the reference are actually references to references.  
-A creation procedure method is called with a fixed reference to another reference to create an object for. The destruction method is the same. The creation method kinda turns the references on, while the destruction method turns it off.  
-The procedure for changing a reference gets the reference as an argument, and another argument that specifies the symbol to reference. The symbol to reference needs to be the same interface ...  
+A creation command method is called with a fixed reference to another reference to create an object for. The destruction method is the same. The creation method kinda turns the references on, while the destruction method turns it off.  
+The command for changing a reference gets the reference as an argument, and another argument that specifies the symbol to reference. The symbol to reference needs to be the same interface ...  
 A reference has a fixed interface, but can be point to or be of any type as long as you reference the same interface.  
 For that, changing the type of a reference is permitted.
 
@@ -9325,7 +9325,7 @@ Changing the type of a symbol is not permitted, be it that the same interface of
 
 -----
 
-These procedures ARE J Core function. Only they have a great impact: they change the diagram.
+These commands ARE J Core function. Only they have a great impact: they change the diagram.
 
 -----
 
@@ -9340,9 +9340,9 @@ Sometimes it doesn’t matter in which order something takes place, in case of w
 
 Type reference
 
-#### Procedures Parameters
+#### Commands Parameters
 
-A procedure can contain variable objects. The public ones are parameters. The friend ones are parameters within the current module
+A command can contain variable objects. The public ones are parameters. The friend ones are parameters within the current module
 
 
 Standard Modules
@@ -9465,14 +9465,14 @@ The properties of Alignment can be reached by the siblings of Alignment. But the
 There are three types of parameters: in, out and thru. In parameters go in, out parameters go out and thru parameters come in and go out.
 
 ```
-Procedure 1 (In: Input, Out: Output 1, Output 2, Thru: Increment Me)
-End Procedure
+Command 1 (In: Input, Out: Output 1, Output 2, Thru: Increment Me)
+End Command
 ```
 
 Parameters can have a reference access controller that can be public or friend:
 
 ```
-Procedure 1
+Command 1
 ```
 
 #### Arguments
@@ -9493,7 +9493,7 @@ A pentagon can be translated to a Sigma module. Only things publicly accessible 
 
 Circles and triangles that are public for instancing, become a type in the Sigma module. There can be a multi-layer subdivision in types. These layers are expressed as sub modules in the Sigma module.
 
-Circles and triangles that are public for reference become public children of the Sigma module’s main type. When a module is instantiated, the creation procedure of the pentagon starts, possibly creating the objects public for reference.
+Circles and triangles that are public for reference become public children of the Sigma module’s main type. When a module is instantiated, the creation command of the pentagon starts, possibly creating the objects public for reference.
 
 All triangles that are public are put in the module’s interface list. < What subdivision exists there? >
 
@@ -9746,8 +9746,8 @@ Glossary
 - Property
 - Event
 - Method
-- Procedure
-- Event Procedure
+- Command
+- Event Command
 - Variable
 - ... blah blah blah some other time
 
@@ -9804,7 +9804,7 @@ A square might then become a module. A pentagon might become an execution point 
 -----
 
 And a 'block' as I described, might actually look like a square.  
-A procedure might probably not get its own symbol anyway. It might just be an object with an execution point.
+A command might probably not get its own symbol anyway. It might just be an object with an execution point.
 
 -----
 
@@ -9825,7 +9825,7 @@ It should cut away the last three characters
 
 -----
 
-Variables declared inside a parent block in a procedure are accessible directly by the child blocks. Variables declared inside a child block are inaccessible to a parent block.
+Variables declared inside a parent block in a command are accessible directly by the child blocks. Variables declared inside a child block are inaccessible to a parent block.
 
 -----
 
@@ -9982,7 +9982,7 @@ Since I’m working with multiple arguments as well as multiple return values, I
 
 Arguments are then `In` parameters. Return values are `Out` parameters. The last type described might be `InOut` parameters, more nicely called `Thru` (Through) parameters.
 
-You could also say `Read`, `Write` and `Read/Write`, but this creates ambiguity about who's reading or writing: the caller or the procedure.
+You could also say `Read`, `Write` and `Read/Write`, but this creates ambiguity about who's reading or writing: the caller or the command.
 
 `In`, `Out` and `Thru`. Now we need a notation for them.
 
@@ -10004,7 +10004,7 @@ I’ll stick to that for now..
 
 -----
 
-`Thru` arguments are not to be confused by reference arguments. The values of Thru arguments are actually put on the stack and read from the stack and written to the stack by the procedure. Reference arguments are usually In parameters and not written. The reference argument is a mere number that points to an object. The object a reference argument points at can be written and read, but this object doesn’t reside on the stack. Reference arguments in other languages were often used as a trick to use multiple return values or to have arguments that are both given to the procedure and then returned to the caller possibly altered: thru arguments.
+`Thru` arguments are not to be confused by reference arguments. The values of Thru arguments are actually put on the stack and read from the stack and written to the stack by the command. Reference arguments are usually In parameters and not written. The reference argument is a mere number that points to an object. The object a reference argument points at can be written and read, but this object doesn’t reside on the stack. Reference arguments in other languages were often used as a trick to use multiple return values or to have arguments that are both given to the command and then returned to the caller possibly altered: thru arguments.
 
 Reference arguments are still of use, but since J Core supports multiple return values (Out arguments) and thru arguments, they ...
 
@@ -10082,11 +10082,11 @@ The scope of a variable defines which parts of your code are aware of its existe
 
 -----
 
-If there are multiple procedures and variables with the same name, Visual Basic takes the value of the more local variable, which in this case, is the Form1 variable.
+If there are multiple commands and variables with the same name, Visual Basic takes the value of the more local variable, which in this case, is the Form1 variable.
 
 -----
 
-References to the name Temp within the procedure might access the local variable; references to Temp outside the procedure might access the public variable. The module-level variable can be accessed from within the procedure by qualifying the variable with the module name
+References to the name Temp within the command might access the local variable; references to Temp outside the command might access the public variable. The module-level variable can be accessed from within the command by qualifying the variable with the module name
 
 -----
 
@@ -10115,7 +10115,7 @@ Const conPi2 = conPi \* 2
 
 -----
 
-Constants can be procedure level
+Constants can be command level
 
 -----
 
@@ -10125,7 +10125,7 @@ Private I As Integer, Amt As Double
 
 -----
 
-Using the ParamArray keyword allows you to specify that a procedure might accept an arbitrary number of arguments. This allows you to write functions like Sum:
+Using the ParamArray keyword allows you to specify that a command might accept an arbitrary number of arguments. This allows you to write functions like Sum:
 
 -----
 
@@ -10148,13 +10148,13 @@ Each expressionlist is a list of one or more values.
 
 -----
 
-There can be multiple return out variables. For that one procedure could also be represented by multiple objects, not? When you could separately read the output, I should manage that you can get the output objects at might, but only when the input changes the procedure is re-executed when you get an output object...
+There can be multiple return out variables. For that one command could also be represented by multiple objects, not? When you could separately read the output, I should manage that you can get the output objects at might, but only when the input changes the command is re-executed when you get an output object...
 
-A procedure often returns a single object. Many procedures simply stand for returning a single object. In that case you can use the procedure AS an object and the procedure is notated as an object... I still need to figure out how to notate it, but it might still contain an execution point and at the time the object is referenced for retrieval or assignment, the execution sets off.
+A command often returns a single object. Many commands simply stand for returning a single object. In that case you can use the command AS an object and the command is notated as an object... I still need to figure out how to notate it, but it might still contain an execution point and at the time the object is referenced for retrieval or assignment, the execution sets off.
 
-A procedure’s representation can alternatively can be its return value or, in case of multiple return values, a group symbol containing the return values.
+A command’s representation can alternatively can be its return value or, in case of multiple return values, a group symbol containing the return values.
 
-Je roept eigenlijk aldoor maar procedures aan als je naar een object refereert om een procedure ervan aan te roepen, dan is dat referen eigenlijk het aanroepen van een procedure die een object referentie terug geeft.
+Je roept eigenlijk aldoor maar commands aan als je naar een object refereert om een command ervan aan te roepen, dan is dat referen eigenlijk het aanroepen van een command die een object referentie terug geeft.
 
 
 Old Overview of Lines
@@ -10178,13 +10178,13 @@ Old Overview of Lines
 - You can leave out access symbols if other rules determine the direction. The precedence of rules is:
     - *Acces Symbols*: *Access symbol determines direction.*
     - *Outwards*: *The direction is outwards by default.*
-    - *You Sooner Exit a Procedure than an Object.*
+    - *You Sooner Exit a Command than an Object.*
     - You sooner reference an interface than redirect an interface
     - *Exit the Most Borders:* If multiple borders are exited and entered then the line exits the most borders and enters the least borders. This rule is mostly not relied on.
 - Without precedence the rules are summarized as:
     - *Access symbol is decisive.*
     - *You sooner to exit than enter.*  
-    - *You sooner to exit a procedure than an object.*
+    - *You sooner to exit a command than an object.*
     - You sooner reference an interface than redirect an interface
 
 #### Overview of Lines, Direction, Bidirection
@@ -10207,7 +10207,7 @@ Old Overview of Lines
 - You can leave out access symbols if other rules determine the direction. The precedence of rules is:
     - *Acces Symbols*: *Access symbol determines direction.*
     - *Outwards*: *The direction is outwards by default.*
-    - *You Sooner Exit a Procedure than an Object*
+    - *You Sooner Exit a Command than an Object*
     - *Exit the Most Borders:* If multiple borders are exited and entered then the line exits the most borders and enters the least borders. This rule is mostly not relied on.
 - Direction both ways:
     - If no rule determines direction then the direction is either not expressed in the diagram or the direction goes both ways.
@@ -10215,26 +10215,26 @@ Old Overview of Lines
 
 #### Overview of Lines, Connection
 
-- Procedures can be tied only to procedures
+- Commands can be tied only to commands
 - Objects can be tied only to objects
 -----
 - An object symbol can have only one line of each type: an object line, a type line and an interface line
-- A procedure symbol can have only one line: a call line *or* a reference line.
+- A command symbol can have only one line: a call line *or* a reference line.
 -----
 - A symbol’s line points *away* from the symbol.
 - The other connected lines point *to* the symbol.
 
-#### Overview of Lines: Procedure Calls and References
+#### Overview of Lines: Command Calls and References
 
 - A square can ony have a call line if it’s directly inside another square.
 - The call line might first exit the containing square.
 -----
-- If a solid procedure line can't be a call line then it is a reference line.
+- If a solid command line can't be a call line then it is a reference line.
 - If it’s a reference line then you use a solid line unless it directly exits a square.
 -----
 - Any square can have a reference line.
 
-A procedure symbol can have one of four roles: - definition, - nested procedure, - call, - reference
+A command symbol can have one of four roles: - definition, - nested command, - call, - reference
 
 #### Overview of Redirection
 
@@ -10244,10 +10244,10 @@ A procedure symbol can have one of four roles: - definition, - nested procedure,
         - By recurrence
         - By bidirection
 
-- Procedure redirection
+- Command redirection
     - A call cannot be called or referenced.
     - So a *call* line can only be at the beginning of the redirection.
-    - So you can only redirect procedures with reference lines.
+    - So you can only redirect commands with reference lines.
 
 #### Overview of Access Symbol Placement
 
@@ -10285,16 +10285,16 @@ A procedure symbol can have one of four roles: - definition, - nested procedure,
     -----
     - Double solid line square:
         - It is a call
-        - It’s a call to a procedure in the parent
+        - It’s a call to a command in the parent
     - Triple solid line square:
-        - It’s a call to a procedure in the grandparent
+        - It’s a call to a command in the grandparent
     - Etcetera
     -----
     - Dashed square:
-        - It’s a procedure reference
-        - It’s a procedure reference to a procedure in the parent
+        - It’s a command reference
+        - It’s a command reference to a command in the parent
     - Double dashed square:
-        - It’s a procedure reference to a procedure in the grandparent
+        - It’s a command reference to a command in the grandparent
     - Etcetera
 - Double lines:
     - In these cases, alternate shape borders are usually not used
@@ -10331,35 +10331,35 @@ You can decide on your own what kind of notation you want to use, but the progra
     - You can leave out access symbols if other rules determine the direction. The precedence of rules is:
         - *Acces Symbols*: Access symbol determines direction
         - *Outwards*: The direction is outwards by default
-        - *You Sooner Exit a Procedure than an Object*
+        - *You Sooner Exit a Command than an Object*
         - *Exit the Most Borders:* If multiple borders are exited and entered then the line exits the most borders and enters the least borders. This rule is mostly not relied on.
     - Without precedence the rules are summarized as:
         - Access symbol is decisive
         - You sooner to exit than enter
-        - You sooner to exit a procedure than an object
+        - You sooner to exit a command than an object
     -----
     - Bidirection:
         - If no rule determines direction then the direction is either not expressed in the diagram or the direction goes both ways.
         - The direction certainly goes both ways if both ends have an access symbol.
 - Connections
-    - Procedures can be tied only to procedures
+    - Commands can be tied only to commands
     - Objects can be tied only to objects
     -----
     - An object symbol can have only one line of each type: an object line, a type line and an interface line
-    - A procedure symbol can have only one line: a call line *or* a reference line.
+    - A command symbol can have only one line: a call line *or* a reference line.
     -----
     - A symbol’s line points *away* from the symbol.
     - The other connected lines point *to* the symbol.
-- Procedure Calls and References
+- Command Calls and References
     - A square can ony have a call line if it’s directly inside another square.
     - The call line might first exit the containing square.
     -----
-    - If a solid procedure line can't be a call line then it is a reference line
+    - If a solid command line can't be a call line then it is a reference line
     - If it’s a reference line then you use a solid line unless it directly exits a square
     -----
     - Any square can have a reference line
     -----
-    - A procedure symbol can have one of four roles: - definition, - nested procedure, - call, - reference
+    - A command symbol can have one of four roles: - definition, - nested command, - call, - reference
 - Redirection
     - Object symbol redirection
         - Target symbols
@@ -10367,10 +10367,10 @@ You can decide on your own what kind of notation you want to use, but the progra
             - By recurrence
             - By bidirection
     -----
-    - Procedure redirection
+    - Command redirection
         - A call cannot be called or referenced.
         - So a *call* line can only be at the beginning of the redirection.
-        - So you can only redirect procedures with reference lines.
+        - So you can only redirect commands with reference lines.
 - Access symbol placement
     - If a line crosses borders it first exits borders and then enters borders. You can't mix exits and entrances.
     - If an access symbol is drawn to denote direction is is by default put in the section between the exits and entrances, so not necessarily with the eventually entered symbol.
@@ -10404,17 +10404,17 @@ You can decide on your own what kind of notation you want to use, but the progra
         -----
         - Double solid line square:
             - It is a call
-            - It’s a call to a procedure in the parent
+            - It’s a call to a command in the parent
         -----
         - Triple solid line square:
-            - It’s a call to a procedure in the grandparent
+            - It’s a call to a command in the grandparent
         - Etcetera
         -----
         - Dashed square:
-            - It’s a procedure reference
-            - It’s a procedure reference to a procedure in the parent
+            - It’s a command reference
+            - It’s a command reference to a command in the parent
         - Double dashed square:
-            - It’s a procedure reference to a procedure in the grandparent
+            - It’s a command reference to a command in the grandparent
         - Etcetera
     -----
     - Double lines:
@@ -10443,7 +10443,7 @@ You can decide on your own what kind of notation you want to use, but the progra
 - Lines have a direction
 - Direction is usually outward
 - If both ends go outward, then there are precedence rules
-    - An object symbol's line is sooner to exit a procedure than to exit an object
+    - An object symbol's line is sooner to exit a command than to exit an object
 - If precedence rules can't determine the direction then 
     - An access symbol determines the direction
 - < If direction is determined with none of the rules then the direction is either insignificant or the direction goes both ways. An access symbol on both ends expresses that the direction REALLY goes both ways. >
@@ -10451,7 +10451,7 @@ You can decide on your own what kind of notation you want to use, but the progra
 - Or
 - Access symbols can be at both ends which makes the line go both ways
 - An object symbol can have only one line of each type
-- A procedure symbol can have only one line. So it can't have a call line AND a reference line
+- A command symbol can have only one line. So it can't have a call line AND a reference line
 - the other connected lines point to the symbol, not away
 -----
 - Redirection
@@ -10460,14 +10460,14 @@ You can decide on your own what kind of notation you want to use, but the progra
     - By ambiguity
 - Target symbols
 -----
-- Procedures can be tied only to procedures
+- Commands can be tied only to commands
 - Objects can be tied only to objects
 -----
 - A square can only have a call line directly exiting another square
-- A solid procedure line that can't be a call line is treated as a reference line
+- A solid command line that can't be a call line is treated as a reference line
 - “If it is a reference line and a solid line can’t be a call line, a solid line is used.”
 - You can't call or reference a call
-- So you can only redirect procedures with reference lines
+- So you can only redirect commands with reference lines
 - So a call line can only be at the beginning of the redirection
 -----
 - If a line crosses borders it first exits borders and then enters borders. You can't mix exits and entrances
@@ -10496,26 +10496,26 @@ Attempt to Organize Lines Chapter
     - Rules:
         - Access Symbols
         - Outward
-        - You Sooner Exit a Procedure than an Object
+        - You Sooner Exit a Command than an Object
         - You Sooner Reference an Interface than Redirect an Interface
         - Exit the Most Borders
     - Bidirection
 - Connection~
-    - Procedures to Procedures, Objects to Objects
+    - Commands to Commands, Objects to Objects
     - Referencing Descendants
     - Line ownership
         - Object symbol can have object, type and interface line
-        - Procedure symbol can have call *or* reference line and an interface line
-- Procedure Lines
+        - Command symbol can have call *or* reference line and an interface line
+- Command Lines
     - Call only from another square
-    - Any solid procedure line that can’t be a call line is a reference line
-        - Procedure Symbol Roles
+    - Any solid command line that can’t be a call line is a reference line
+        - Command Symbol Roles
             - Definition
-            - Nested procedure
+            - Nested command
             - Call
             - Reference
             - Can’t be both a reference and a call
-            - \* Maybe I should add procedure interface roles
+            - \* Maybe I should add command interface roles
             - \* Maybe I should discuss object symbol roles (lateron)
             - Object reference
             - Object
@@ -10524,10 +10524,10 @@ Attempt to Organize Lines Chapter
             - Base
         - Reference and Call targets
             - Reference to definition
-            - Reference to nested procedure
+            - Reference to nested command
             - Reference to reference
             - Call to definition
-            - Call to nested procedure
+            - Call to nested command
             - Call to reference
         - The Object of the Call Target
             - You can’t call upward in the ancestry (is introduced later too)
@@ -10537,7 +10537,7 @@ Attempt to Organize Lines Chapter
         - Target Symbols
         - Circularity
         - Tracing Object and Type
-    - Procedure Redirection
+    - Command Redirection
         - Target Symbols
         - Call cannot be called or referenced
         - \* Any tracing?
@@ -10558,14 +10558,14 @@ Attempt to Organize Lines Chapter
     - Child Access
     - Global Access
     - Interface Access
-    - Nested Procedure Access
-    - Modules, Interface and Nested Procedures
+    - Nested Command Access
+    - Modules, Interface and Nested Commands
 - Implicit Calls
     - Explicit Calls
     - Implicit Calls
     - Implicit Return Value Reference
     - Multiple Out Parameters
-- Procedure Interface
+- Command Interface
 - All Object Symbols that are the same Objects have the Same Line Targets
 - Genericity
     - Type Genericity
@@ -10575,7 +10575,7 @@ Attempt to Organize Lines Chapter
 - Symbols can Overlap
     - Containment for Divergence, Lines for Convergence
     - Triangles For Arbitrary Grouping < Non-Object Triangles >
-    - Procedures can Overlap
+    - Commands can Overlap
 - Events
 - Peels
     - Shape Peels
@@ -10593,26 +10593,26 @@ Attempt to Organize Lines Chapter
     - Rules:
         - Access Symbols
         - Outward
-        - You Sooner Exit a Procedure than an Object
+        - You Sooner Exit a Command than an Object
         - You Sooner Reference an Interface than Redirect an Interface
         - Exit the Most Borders
     - Bidirection
 - Connection~
-    - Procedures to Procedures, Objects to Objects
+    - Commands to Commands, Objects to Objects
     - Referencing Descendants
     - Line ownership
         - Object symbol can have object, type and interface line
-        - Procedure symbol can have call *or* reference line and an interface line
-- Procedure Lines
+        - Command symbol can have call *or* reference line and an interface line
+- Command Lines
     - Call only from another square
-    - Any solid procedure line that can’t be a call line is a reference line
-    - Procedure Symbol Roles
+    - Any solid command line that can’t be a call line is a reference line
+    - Command Symbol Roles
         - Definition
-        - Nested procedure
+        - Nested command
         - Call
         - Reference
         - Can’t be both a reference and a call
-        - \* Maybe I should add procedure interface roles
+        - \* Maybe I should add command interface roles
         - \* Maybe I should discuss object symbol roles (lateron)
         - Object reference
         - Object
@@ -10621,10 +10621,10 @@ Attempt to Organize Lines Chapter
         - Base
     - Reference and Call targets
         - Reference to definition
-        - Reference to nested procedure
+        - Reference to nested command
         - Reference to reference
         - Call to definition
-        - Call to nested procedure
+        - Call to nested command
         - Call to reference
     - The Object of the Call Target
         - You can’t call upward in the ancestry (is introduced later too)
@@ -10634,7 +10634,7 @@ Attempt to Organize Lines Chapter
         - Target Symbols
         - Circularity
         - Tracing Object and Type
-    - Procedure Redirection
+    - Command Redirection
         - Target Symbols
         - Call cannot be called or referenced
         - \* Any tracing?
@@ -10655,14 +10655,14 @@ Attempt to Organize Lines Chapter
     - Child Access
     - Global Access
     - Interface Access
-    - Nested Procedure Access
-    - Modules, Interface and Nested Procedures
+    - Nested Command Access
+    - Modules, Interface and Nested Commands
 - Implicit Calls
     - Explicit calls
     - Implicit Calls
     - Implicit Return Value Reference
     - Multiple Out Parameters
-- Procedure Interface
+- Command Interface
 - All Object Symbols that are the same Objects have the Same Line Targets
 - Genericity
     - Type Genericity
@@ -10672,7 +10672,7 @@ Attempt to Organize Lines Chapter
 - Symbols can Overlap
     - Containment for Divergence, Lines for Convergence
     - Triangles For Arbitrary Grouping < Non-Object Triangles >
-    - Procedures can Overlap
+    - Commands can Overlap
 - Events
 - Peels
     - Shape Peels
@@ -10686,27 +10686,27 @@ Attempt to Organize Lines Chapter
     - Rules:
         - Access Symbols
         - Outward
-        - You Sooner Exit a Procedure than an Object
+        - You Sooner Exit a Command than an Object
         - You Sooner Reference an Interface than Redirect an Interface
         - Exit the Most Borders
     - Bidirection
         - Access Symbol Placement
 -----
 - Connection~
-    - Procedures to Procedures, Objects to Objects
+    - Commands to Commands, Objects to Objects
     - Line ownership
         - Object symbol can have object, type and interface line
-        - Procedure symbol can have call *or* reference line and an interface line
-- Procedure Lines
+        - Command symbol can have call *or* reference line and an interface line
+- Command Lines
     - Call only from another square
-    - Any solid procedure line that can’t be a call line is a reference line
-    - Procedure Symbol Roles
+    - Any solid command line that can’t be a call line is a reference line
+    - Command Symbol Roles
         - Definition
-        - Nested procedure
+        - Nested command
         - Call
         - Reference
         - Can’t be both a reference and a call
-        - \* Maybe I should add procedure interface roles
+        - \* Maybe I should add command interface roles
         - \* Maybe I should discuss object symbol roles (lateron)
         - Object reference
         - Object
@@ -10715,10 +10715,10 @@ Attempt to Organize Lines Chapter
         - Base
     - Reference and Call targets
         - Reference to definition
-        - Reference to nested procedure
+        - Reference to nested command
         - Reference to reference
         - Call to definition
-        - Call to nested procedure
+        - Call to nested command
         - Call to reference
     - The Object of the Call Target
         - You can’t call upward in the ancestry (is introduced later too)
@@ -10731,7 +10731,7 @@ Attempt to Organize Lines Chapter
         - Circularity
         - Tracing Object and Type
         - Tracing Object and Type
-    - Procedure Redirection
+    - Command Redirection
         - Target Symbols
         - Call cannot be called or referenced
         - \* Any tracing?
@@ -10751,8 +10751,8 @@ Attempt to Organize Lines Chapter
     - Child Access
     - Global Access
     - Interface Access
-    - Nested Procedure Access
-    - Modules, Interface and Nested Procedures
+    - Nested Command Access
+    - Modules, Interface and Nested Commands
 -----
 - Implicit Calls
     - Explicit Calls
@@ -10774,10 +10774,10 @@ Attempt to Organize Lines Chapter
 - Symbols can Overlap
     - Containment for Divergence, Lines for Convergence
     - Triangles For Arbitrary Grouping < Non-Object Triangles >
-    - Procedures can Overlap
+    - Commands can Overlap
 -----
 - Move to other chapters:
-- Procedure Interface
+- Command Interface
 - All Object Symbols that are the same Objects have the Same Line Targets
 - Referencing Descendants
 
@@ -10788,7 +10788,7 @@ Attempt to Organize Lines Chapter
     - Rules:
         - Access Symbols
         - Outward
-        - You Sooner Exit a Procedure than an Object
+        - You Sooner Exit a Command than an Object
         - You Sooner Reference an Interface than Redirect an Interface
         - Exit the Most Borders
     - Bidirection
@@ -10804,20 +10804,20 @@ Attempt to Organize Lines Chapter
         - Events (this important subject is in jeopardy of being swallowed by a tree of super sections
     - (Original Word document had some color coding here. The color codings might indicate to which main topic something might belong.)
     - Connection~
-        - Procedures to Procedures, Objects to Objects
+        - Commands to Commands, Objects to Objects
         - Line ownership
             - Object symbol can have object, type and interface line
-            - Procedure symbol can have call *or* reference line and an interface line
-    - Procedure Lines
+            - Command symbol can have call *or* reference line and an interface line
+    - Command Lines
         - Call only from another square
-        - Any solid procedure line that can’t be a call line is a reference line
-            - Procedure Symbol Roles
+        - Any solid command line that can’t be a call line is a reference line
+            - Command Symbol Roles
             - Definition
-            - Nested procedure
+            - Nested command
             - Call
             - Reference
             - Can’t be both a reference and a call
-            - \* Maybe I should add procedure interface roles
+            - \* Maybe I should add command interface roles
             - \* Maybe I should discuss object symbol roles (lateron)
             - Object reference
             - Object
@@ -10826,10 +10826,10 @@ Attempt to Organize Lines Chapter
             - Base
         - Reference and Call targets
             - Reference to definition
-            - Reference to nested procedure
+            - Reference to nested command
             - Reference to reference
             - Call to definition
-            - Call to nested procedure
+            - Call to nested command
             - Call to reference
         - The Object of the Call Target
             - You can’t call upward in the ancestry (is introduced later too)
@@ -10842,7 +10842,7 @@ Attempt to Organize Lines Chapter
         - Circularity
         - Tracing Object and Type
         - Tracing Object and Type
-    - Procedure Redirection
+    - Command Redirection
         - Target Symbols
         - Call cannot be called or referenced
         - \* Any tracing?
@@ -10861,8 +10861,8 @@ Attempt to Organize Lines Chapter
     - Child Access
     - Global Access
     - Interface Access
-    - Nested Procedure Access
-    - Modules, Interface and Nested Procedures
+    - Nested Command Access
+    - Modules, Interface and Nested Commands
 
 - Genericity
     - Implicit Calls
@@ -10885,10 +10885,10 @@ Attempt to Organize Lines Chapter
 - Symbols can Overlap
     - Containment for Divergence, Lines for Convergence
     - Triangles For Arbitrary Grouping < Non-Object Triangles >
-    - Procedures can Overlap
+    - Commands can Overlap
 
 - Move to other chapters:
-    - Procedure Interface
+    - Command Interface
     - All Object Symbols that are the same Objects have the Same Line Targets
     - Referencing Descendants
 
@@ -10902,7 +10902,7 @@ In the next organization I’ve also reorganized Line Rules.
 - Rules:
     - Access Symbols
     - Outward
-    - You Sooner Exit a Procedure than an Object
+    - You Sooner Exit a Command than an Object
     - You Sooner Reference an Interface than Redirect an Interface
     - Exit the Most Borders
 - Bidirection
@@ -10912,7 +10912,7 @@ In the next organization I’ve also reorganized Line Rules.
 
 - Line Ownership (The __*ownership*__ of lines)
     - Object symbol can have object, type and interface line
-    - Procedure symbol can have an interface line and acall *or* reference line
+    - Command symbol can have an interface line and acall *or* reference line
 - Target Symbols (Redirection and __*targets*__ (hmmm... which adds more roles)
     - Redirection
     - Object Symbol Redirection
@@ -10920,26 +10920,26 @@ In the next organization I’ve also reorganized Line Rules.
         - Circularity
         - Tracing Object and Type
         - Tracing Object and Type
-    - Procedure Redirection
+    - Command Redirection
         - Target Symbols
         - Any tracing
 - Line Restrictions (The __*restrictions*__ on line targets (and sources)
-    - Procedures to Procedures, Objects to Objects
-    - You can only call directly from a procedure
+    - Commands to Commands, Objects to Objects
+    - You can only call directly from a command
         - A call cannot be called or referenced
     - You can’t call upward in the ancestry
     - The Object of the Call Target
     - You can’t call upward in the ancestry (is introduced later too)
     - Can’t call upward in the ancestry (Basic call forms)
-    - Any solid procedure line that can’t be a call line is a reference line
+    - Any solid command line that can’t be a call line is a reference line
 - Symbol Roles (The __*roles*__ that symbols get when connecting them with lines)
-    - Procedure Symbol Roles
+    - Command Symbol Roles
     - Definition
-    - Nested procedure
+    - Nested command
     - Call
     - Reference
     - Can’t be both a reference and a call
-    - \* Maybe I should add procedure interface roles
+    - \* Maybe I should add command interface roles
     - \* Maybe I should discuss object symbol roles (lateron)
     - Object reference
     - Object
@@ -10948,10 +10948,10 @@ In the next organization I’ve also reorganized Line Rules.
     - Base
 - Reference and Call targets
     - Reference to definition
-    - Reference to nested procedure
+    - Reference to nested command
     - Reference to reference
     - Call to definition
-    - Call to nested procedure
+    - Call to nested command
     - Call to reference
 - Events
     - Events: Techniques to communicate to the parent (is introduced later too)
@@ -10972,8 +10972,8 @@ In the next organization I’ve also reorganized Line Rules.
 - Child Access
 - Global Access
 - Interface Access
-- Nested Procedure Access
-- Modules, Interface and Nested Procedures
+- Nested Command Access
+- Modules, Interface and Nested Commands
 
 #### Genericity
 
@@ -10986,9 +10986,9 @@ In the next organization I’ve also reorganized Line Rules.
 - Interface Genericity
 - Type Interface Genericity
 - Explicit Isn’t Fixed
-- Procedure Interaface Genericity
+- Command Interaface Genericity
 - Notation Methods versus System Rules
-    - Implicit calls are but notation methods, that don’t affect the behavior of the system. Type genericity, interface genericity, type interface genericity and procedure interface genericity are system rules. They affect the behavior of the system.
+    - Implicit calls are but notation methods, that don’t affect the behavior of the system. Type genericity, interface genericity, type interface genericity and command interface genericity are system rules. They affect the behavior of the system.
 
 #### Peels
 
@@ -11000,11 +11000,11 @@ In the next organization I’ve also reorganized Line Rules.
 
 - Containment for Divergence, Lines for Convergence
 - Triangles For Arbitrary Grouping < Non-Object Triangles >
-- Procedures can Overlap
+- Commands can Overlap
 
 #### Move to other chapters:
 
-- Procedure Interface
+- Command Interface
 - All Object Symbols that are the same Objects have the Same Line Targets
 - Referencing Descendants
 
@@ -11118,7 +11118,7 @@ For Related Types With Edit Values ( aClass )
 End For
 ```
 
-Looking at this, I see that you could do this easily in Symbol, by making your own execution control procedure.
+Looking at this, I see that you could do this easily in Symbol, by making your own execution control command.
 
 
 Notational Choice
@@ -11145,7 +11145,7 @@ Maybe I should abolish the word type completely. It’s just the word that is �
 - Use ‘Line’ where you use ‘Line’
 -----
 - Introduce the word variable in the ‘Introduction’ chapter.
-- Just as in procedures, you could make certain members of a type required, while others are optional. You might fill in the required members on creation of the object. This should be there for the same reason as required parameters are there in a procedure: the function of the object just doesn’t make sense unless you write the required members. The programmer is made extra aware of that by making the members required.
+- Just as in commands, you could make certain members of a type required, while others are optional. You might fill in the required members on creation of the object. This should be there for the same reason as required parameters are there in a command: the function of the object just doesn’t make sense unless you write the required members. The programmer is made extra aware of that by making the members required.
 
 You can also let J Data maintain the containment automatically, based on mutual ancestors. I should be able to do that automatically in Symbol too. Should make a note about that in the Symbol documentation.
 

@@ -174,7 +174,7 @@ A related item might be the result of a relationship. A related item might wrap 
 
 ![](images/1.%20System%20Objects.010.png)
 
-The inner-most object reference is like a raw pointer while the related item that surrounds it likes to decorate it with info like its class and procedures around it, like a retrieval procedure.
+The inner-most object reference is like a raw pointer while the related item that surrounds it likes to decorate it with info like its class and commands around it, like a retrieval command.
 
 #### Symbol
 

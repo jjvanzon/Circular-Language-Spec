@@ -43,7 +43,7 @@ A command has added behavior, compared to a normal object:
 
 - It executes
 - It contains a collection of sub-commands to execute
-- A new command-object is created *on each call* to the procedure and the command-object is destroyed soon after the call.
+- A new command-object is created *on each call* to the command and the command-object is destroyed soon after the call.
 - Public writable objects are written only right before the call.
 - Public readable objects are read only right after the call.
 
@@ -316,7 +316,7 @@ So a reference parameter is a pointer to an object *reference*, not a pointer to
 So the parameter points to another pointer. The target pointer determines the eventual object pointed at.  
 The notation of a parameter as a pointer to a pointer, though, may become an implicit expression of just an object assignment.
 
-In earlier programming languages one use of by reference was used to be able to pass large objects to a procedure. Another use was to be able to let the procedure have multiple return values, because in other programming languages a procedure can really only have one return value. In Circular, multiple return values is accomplished by having multiple __Object Out__ parameters. So you do not need __Reference Out__ parameters for that anymore.
+In earlier programming languages one use of by reference was used to be able to pass large objects to a command. Another use was to be able to let the command have multiple return values, because in other programming languages a command can really only have one return value. In Circular, multiple return values is accomplished by having multiple __Object Out__ parameters. So you do not need __Reference Out__ parameters for that anymore.
 
 ##### Value In
 
@@ -939,7 +939,7 @@ Assignments also require calls to system commands. You might consider that.
 
 ### Remaining Ideas
 
-The implementation of a command is called a procedure.
+The implementation of a command might be called a procedure.
 
 -----
 
@@ -959,7 +959,7 @@ I really want the programming environment, to not so easily accept, that a param
 
 -----
 
-When you pass a property as a ByRef argument, and the procedure reads and writes from the ByRef parameter, you want the property get and set to be called. Might that require a pointer to a pointer to a pointer or what?
+When you pass a property as a ByRef argument, and the command reads and writes from the ByRef parameter, you want the property get and set to be called. Might that require a pointer to a pointer to a pointer or what?
 
 -----
 

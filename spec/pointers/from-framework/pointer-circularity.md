@@ -14,7 +14,7 @@ __Contents__
         - [Circularity in an Object-Type Trace](#circularity-in-an-object-type-trace)
         - [Circularity in a Interface Trace](#circularity-in-a-interface-trace)
         - [Circularity in a Definition Trace](#circularity-in-a-definition-trace)
-        - [Circularity in a Procedure Interface Trace](#circularity-in-a-procedure-interface-trace)
+        - [Circularity in a Command Interface Trace](#circularity-in-a-command-interface-trace)
         - [Circularity in an Execution-Definition Trace](#circularity-in-an-execution-definition-trace)
 
 ### Loose Ideas
@@ -79,9 +79,9 @@ In a definition trace, only one line type is followed, so a circularity there lo
 
 The whole circularity represents the definition.
 
-##### Circularity in a Procedure Interface Trace
+##### Circularity in a Command Interface Trace
 
-Both kinds of procedure symbol lines can close a circularity in a procedure interface trace. If a circularity in encountered when tracing the procedure interface, the whole circularity represents the procedure interface.
+Both kinds of command symbol lines can close a circularity in a command interface trace. If a circularity in encountered when tracing the command interface, the whole circularity represents the command interface.
 
 ![](images/Pointer%20Circularity.009.jpeg)
 

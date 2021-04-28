@@ -23,7 +23,7 @@ __Contents__
 
 *(From the original Symbol documentation)*
 
-Parameters and arguments are the *public* members of a procedure. In a square they’re called parameters. In a diamond they’re called arguments.
+Parameters and arguments are the *public* members of a command. In a square they’re called parameters. In a diamond they’re called arguments.
 
 ![](images/1.%20Relations%20Between%20Commands%20&%20Objects.017.png)
 
@@ -40,7 +40,7 @@ An argument is a public member of a diamond in execution.
 
 ##### Other
 
-Creation and state read and write only apply to object parameters, not to parameters that are procedures.
+Creation and state read and write only apply to object parameters, not to parameters that are commands.
 
 ### Public Inactive Nested Command `=` Command `Out` Parameter
 
@@ -85,11 +85,11 @@ If you set the __Class.HasThis__ property to __True__, then the class might get 
 
 This is particularly handy in __With__ blocks in which you wish to set another variable to the __With__ block object. __Class.HasThis__ is __True__ by default.
 
-- Using class procedures with the THIS argument
+- Using class commands with the THIS argument
 
 Don’t know if I should cover here:
 
-- Using type procedures with the THIS argument (need a good name for the section)
+- Using type commands with the THIS argument (need a good name for the section)
 
 ### Other Ideas
 

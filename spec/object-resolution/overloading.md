@@ -38,7 +38,7 @@ Stop  Button
 is Stop de variable identifier en Button de Class. De button heet dus Stop. Maar je zult meer dingen kunnen hebben die Stop heten. Bijvoorbeeld:
 
 ```
-Stop  Procedure
+Stop  Command
 ```
 
 Als je na de identifier het type benoemt, kun je

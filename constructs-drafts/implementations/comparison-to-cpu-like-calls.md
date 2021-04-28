@@ -55,7 +55,7 @@ The same code, with fixed pointers has to be executed on different data all the 
 
 The CPU is quite straightforward in a way. It executes and executes doing exactly what it is lead to do by its instruction pointer that only goes forward, and it only skips to another spot, when it encounters a jump instruction and the data then determines whether it might jump at all. A CPU is really quite straightforward and just might what we tell it to do. As a normal program runs, you do not *see* debug information. When a program runs normally, you do not see what method it is in and of what object, and even the CPU might not see what method it is in and of what object. When you debug, though, you want to see the exact code line of what exact method and of what object, you can even see (from an alternated call stack) what commands were called before and of what object.
 
-In Circular, when you pause on a running command, you might see the procedure call stack as the hierarchy upward. This call stack was not built up as the command was running. You can zoom in on any piece ‘call stack’, that is not even running, but might be running in the future.
+In Circular, when you pause on a running command, you might see the command call stack as the hierarchy upward. This call stack was not built up as the command was running. You can zoom in on any piece ‘call stack’, that is not even running, but might be running in the future.
 
 Now, the data, assigned to a call’s parameters… where might it come from in CPU-like, procedural and object oriented programming languages? Where might it come from in my own system? 
 
@@ -75,7 +75,7 @@ In a CPU-like programming language, the data is already there as created objects
 
 ### Pointers to this data
 
-Pointers to the data, that was already there, are on the call stack in a CPU-like language. In my own language the pointers to this other data are inside the call object. So from that perspective, the call object constitutes, what is otherwise a chunk of the stack, that belongs to a particular procedure call.
+Pointers to the data, that was already there, are on the call stack in a CPU-like language. In my own language the pointers to this other data are inside the call object. So from that perspective, the call object constitutes, what is otherwise a chunk of the stack, that belongs to a particular command call.
 
 ### Sub-commands
 
@@ -84,7 +84,7 @@ Now, the sub-commands in a CPU-like language are there as CALL instructions. CAL
 I still do not have a clear view on why in CPU-like languages it is CALL instructions in the definition, and in my own language it is sub-command references inside a call object.  
 < ... >
 
-< It’s just that, in CPU-like languages the instructions run and the data to operate are such separated things. The registers and the stack hold the data, and the instructions hold the code. In my own language, the data to operate on is not on *the stack*, but *inside* the procedure to execute. So the procedure call (instruction) *contains* the data to operate on. No. I still don’t get it>
+< It’s just that, in CPU-like languages the instructions run and the data to operate are such separated things. The registers and the stack hold the data, and the instructions hold the code. In my own language, the data to operate on is not on *the stack*, but *inside* the command to execute. So the command call (instruction) *contains* the data to operate on. No. I still don’t get it>
 
 ### Parameters of these sub-commands
 

@@ -365,7 +365,7 @@ The __Stop__ command might cause the current command to be put in __Stop__ state
 
 ### Stop Execution State
 
-The __Stop__ execution state is not as dangerous as the Stop execution command. The __Stop__ execution command might end a procedure right in the middle. But if an executable object has not been run yet, it also has the __Stop__ state. After pressing __Stop__, a command might indeed also end  up in the __Stop__ state, but a command also has this state if it has not been run before.
+The __Stop__ execution state is not as dangerous as the Stop execution command. The __Stop__ execution command might end a command right in the middle. But if an executable object has not been run yet, it also has the __Stop__ state. After pressing __Stop__, a command might indeed also end  up in the __Stop__ state, but a command also has this state if it has not been run before.
 
 
 ### Finished Execution State
@@ -399,4 +399,4 @@ Any object or reference line could also be put in __Warning__ state if something
 
 ### Normal Speed
 
-In a normal situation, normal speed for computation is top speed, and normal speed for a playable medium is the normal speed to play the medium. But you can indicate an alternate normal speed. If you are reviewing a playable medium, that you might be needing to look at in slow motion, you can make slow motion the normal speed. In that case __Play__ means going in slow motion, and __Faster__ means it is going faster than the normal rate of slow motion. If you are debugging, you might also set the normal speed of computation to slower. In that case you can visually follow the execution of the procedures. This normal rate of slow motion might also be the barrier for what the states __Slower__ and __Faster__ might consider the average speed.
+In a normal situation, normal speed for computation is top speed, and normal speed for a playable medium is the normal speed to play the medium. But you can indicate an alternate normal speed. If you are reviewing a playable medium, that you might be needing to look at in slow motion, you can make slow motion the normal speed. In that case __Play__ means going in slow motion, and __Faster__ means it is going faster than the normal rate of slow motion. If you are debugging, you might also set the normal speed of computation to slower. In that case you can visually follow the execution of the commands. This normal rate of slow motion might also be the barrier for what the states __Slower__ and __Faster__ might consider the average speed.

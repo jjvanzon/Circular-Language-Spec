@@ -17,7 +17,7 @@ __Contents__
             - [Same Type, Same Interfaces](#same-type-same-interfaces)
             - [Same Object, Same Type, Same Interfaces](#same-object-same-type-same-interfaces)
             - [Not Shorthand](#not-shorthand)
-        - [Same Procedure, Same Interface](#same-procedure-same-interface)
+        - [Same Command, Same Interface](#same-command-same-interface)
     - [Genericity](#genericity)
         - [Object Symbol Genericity](#object-symbol-genericity)
             - [Original and Delegated Object](#original-and-delegated-object)
@@ -25,15 +25,15 @@ __Contents__
             - [Explicit and Generic Type](#explicit-and-generic-type)
             - [Original and Delegated Interface](#original-and-delegated-interface)
             - [Explicit and Generic Interface](#explicit-and-generic-interface)
-        - [Procedure Symbol Genericity](#procedure-symbol-genericity)
+        - [Command Symbol Genericity](#command-symbol-genericity)
             - [Original and Delegated Definition](#original-and-delegated-definition)
             - [Original and Delegated Execution](#original-and-delegated-execution)
-            - [Original and Delegated Procedure Interface](#original-and-delegated-procedure-interface)
-            - [Explicit and Generic Procedure Interface](#explicit-and-generic-procedure-interface)
+            - [Original and Delegated Command Interface](#original-and-delegated-command-interface)
+            - [Explicit and Generic Command Interface](#explicit-and-generic-command-interface)
         - [Type-Interface Interaction](#type-interface-interaction)
             - [Type Interface Genericity](#type-interface-genericity)
             - [Interface Type Genericity](#interface-type-genericity)
-            - [Interface Procedure Genericity](#interface-procedure-genericity)
+            - [Interface Command Genericity](#interface-command-genericity)
             - [Overview of Genericities of Type-Interface Interaction](#overview-of-genericities-of-type-interface-interaction)
         - [Final Issues](#final-issues)
             - [Explicit Isn’t Fixed](#explicit-isnt-fixed)
@@ -118,11 +118,11 @@ Fixing the classes of objects and their contents results in exactly knowing how 
 
 Fixing the interface of objects results in exactly knowing how an object looks, even though the behavior can be different.
 
-If you pass an object along to a procedure, the procedure can make no assumptions about the contents of the object, unless it has a fixed class or interface.
+If you pass an object along to a command, the command can make no assumptions about the contents of the object, unless it has a fixed class or interface.
 
-Type safety only useful so PROCEDURES can make assumptions about the interface or behavior of an object.
+Type safety only useful so COMMANDS can make assumptions about the interface or behavior of an object.
 
-But when just using an object as a folder, you keep the way the object looks totally variable, so you can put anything in it. You won't be running a procedure over it anyway.
+But when just using an object as a folder, you keep the way the object looks totally variable, so you can put anything in it. You won't be running a command over it anyway.
 
 JJ
 
@@ -187,9 +187,9 @@ However, you can’t call it *shorthand*. The following two are not precisely th
 
 The lack or presence of a type line *might* make a difference, as might be explained in a later chapter.
 
-##### Same Procedure, Same Interface
+##### Same Command, Same Interface
 
-When you make two symbols the same procedure:
+When you make two symbols the same command:
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.002.jpeg)
 
@@ -332,17 +332,17 @@ If a symbol has no interface line, the interface is said to be *generic*. It ado
 
 If the interface is determined by no line at all then it has an *original interface*. You speak of neither explicit nor generic in that case. When the interface is generic or explicit, it’s always delegated. If the interface is explicit, the interface is delegated by the interface line. If the interface is generic, the interface is delegated by either type or object line.
 
-##### Procedure Symbol Genericity
+##### Command Symbol Genericity
 
-This section covers the genericity concepts around procedure symbols.
+This section covers the genericity concepts around command symbols.
 
 ###### Original and Delegated Definition
 
-When a procedure symbol has a reference line, it adopts the procedure definition of its line target. The symbol has a delegated definition. If the symbol has no reference line, it defines the procedure itself. It has its original definition.
+When a command symbol has a reference line, it adopts the command definition of its line target. The symbol has a delegated definition. If the symbol has no reference line, it defines the command itself. It has its original definition.
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.024.jpeg)
 
-The definition of the procedure symbol determines its symbolic contents. As a system runs, the definition can go from original to delegated and back. When you remove a reference line, the symbol regains its original contents. So the original definition of a symbol is not lost once you delegate the definition. You just temporarily can’t see the original definition. When a definition is delegated, usually nothing is defined as the original definition. So not every procedure symbol needs to store its own original systematics. 
+The definition of the command symbol determines its symbolic contents. As a system runs, the definition can go from original to delegated and back. When you remove a reference line, the symbol regains its original contents. So the original definition of a symbol is not lost once you delegate the definition. You just temporarily can’t see the original definition. When a definition is delegated, usually nothing is defined as the original definition. So not every command symbol needs to store its own original systematics. 
 
 |                          |                                  |
 |--------------------------|----------------------------------|
@@ -351,7 +351,7 @@ The definition of the procedure symbol determines its symbolic contents. As a sy
 | __Delegated definition__ | Definition determined by a line  |
 |                          | (a reference line)               |
 
-You can also speak of *original procedure* and *delegated procedure* or *the delegation of a procedure*.
+You can also speak of *original command* and *delegated command* or *the delegation of a command*.
 
 ###### Original and Delegated Execution
 
@@ -376,20 +376,20 @@ You don’t usually talk about *squares* having an *original execution*, however
 
 the square *is* said to have a *delegated execution*.
 
-###### Original and Delegated Procedure Interface
+###### Original and Delegated Command Interface
 
-The interface of a procedure can be delegated to its definition target, but it can also be delegated by an interface line. 
+The interface of a command can be delegated to its definition target, but it can also be delegated by an interface line. 
 
 | ![](images/Type%20Safety,%20Genericity,%20Explicit.028.jpeg) | ![](images/Type%20Safety,%20Genericity,%20Explicit.029.jpeg) |
 |-----|-----|
 
-In both cases the interface is delegated. If a procedure symbol has no line at all, it has an original interface.
+In both cases the interface is delegated. If a command symbol has no line at all, it has an original interface.
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.030.jpeg)
 
-During execution the interface can change from being delegated to original and back. The original interface isn’t lost as soon as you delegate the interface. When you annul the delegation, then the original interface reappears. It was only temporarily hidden. Most procedure symbols don’t define an original interface, so most symbols don’t holds original interface systematics.
+During execution the interface can change from being delegated to original and back. The original interface isn’t lost as soon as you delegate the interface. When you annul the delegation, then the original interface reappears. It was only temporarily hidden. Most command symbols don’t define an original interface, so most symbols don’t holds original interface systematics.
 
-The *use* of delegation of the interface is to fix the interface of a procedure and to use an already defined procedure interface.
+The *use* of delegation of the interface is to fix the interface of a command and to use an already defined command interface.
 
 |                         |                                 |
 |-------------------------|---------------------------------|
@@ -398,24 +398,24 @@ The *use* of delegation of the interface is to fix the interface of a procedure 
 | __Delegated interface__ | Interface determined by a line  |
 |                         | (interface or reference line)   |
 
-###### Explicit and Generic Procedure Interface
+###### Explicit and Generic Command Interface
 
-If a procedure symbol has an interface line then its definition can only be one that has that particular interface. The interface is explicit.
+If a command symbol has an interface line then its definition can only be one that has that particular interface. The interface is explicit.
 
 | ![](images/Type%20Safety,%20Genericity,%20Explicit.031.jpeg) | ![](images/Type%20Safety,%20Genericity,%20Explicit.032.jpeg) | ![](images/Type%20Safety,%20Genericity,%20Explicit.033.jpeg) |
 |-----|-----|-----|
 
-If the interface line of a procedure symbol isn’t set then it adopts the interface of the target definition.
+If the interface line of a command symbol isn’t set then it adopts the interface of the target definition.
 
 | ![](images/Type%20Safety,%20Genericity,%20Explicit.034.jpeg) | ![](images/Type%20Safety,%20Genericity,%20Explicit.035.jpeg) |
 |-----|-----|-----|
 
-|                        |                                                              |
-|------------------------|--------------------------------------------------------------|
-| __Explicit interface__ | Interface determined by interface line                       |
-|                        | (limits the possible procedures to ones with that interface) |
-| __Generic interface__  | Interface determined by reference line                       |
-|                        | (symbol adopts any interface the procedure might have)       |
+|                        |                                                            |
+|------------------------|------------------------------------------------------------|
+| __Explicit interface__ | Interface determined by interface line                     |
+|                        | (limits the possible commands to ones with that interface) |
+| __Generic interface__  | Interface determined by reference line                     |
+|                        | (symbol adopts any interface the command might have)       |
 
 ##### Type-Interface Interaction
 
@@ -482,17 +482,17 @@ Another very important use of the separation between types and interfaces is tha
 
 Conversely, you can let a program that isn’t familiar with your type, use your type anyway, by supporting an interface that the other program *is* familiar with.
 
-###### Interface Procedure Genericity
+###### Interface Command Genericity
 
-Interface procedure genericity is like interface type genericity. It means that if you fix the procedure interface, you can still choose from multiple procedure definitions.
+Interface command genericity is like interface type genericity. It means that if you fix the command interface, you can still choose from multiple command definitions.
 
 ###### Overview of Genericities of Type-Interface Interaction
 
-|                                |                                                          |
-|--------------------------------|----------------------------------------------------------|
-| Interface type genericity      | Fixing the interface doesn’t fix the type                |
-| Type interface genericity      | Fixing the type doesn’t fix the interface                |
-| Interface-procedure genericity | Fixing the procedure interface doesn’t fix the procedure |
+|                              |                                                      |
+|------------------------------|------------------------------------------------------|
+| Interface type genericity    | Fixing the interface doesn’t fix the type            |
+| Type interface genericity    | Fixing the type doesn’t fix the interface            |
+| Interface-command genericity | Fixing the command interface doesn’t fix the command |
 
 ##### Final Issues
 
@@ -552,7 +552,7 @@ If you break one of the lines in the circularity, the one loosing the line comes
 | |               | Generic interface     | Interface determined by type line or object line |
 | |               |                       | (type’s whole interface used) |
 | |               |                       | (symbol adopts any interface the type might have) |
-| __Procedure Symbol Genericity__         | | | |
+| __Command Symbol Genericity__           | | | |
 | | __Definition__ | Original definition  | Definition determined by no line |
 | |                |                      | (no reference line) |
 | |                | Delegated definition | Definition determined by a line |
@@ -564,15 +564,15 @@ If you break one of the lines in the circularity, the one loosing the line comes
 | |                | Delegated interface  | Interface determined by a line |
 | |                |                      | (interface or reference line) |
 | |                | Explicit interface   | Interface determined by interface line |
-| |                |                      | (limits the possible procedures to ones with that interface) |
+| |                |                      | (limits the possible commands to ones with that interface) |
 | |                | Generic interface    | Interface determined by reference line |
-| |                |                      | (symbol adopts any interface the procedure might have) |
+| |                |                      | (symbol adopts any interface the command might have) |
 
-|                                |                                |                                           |
-|--------------------------------|--------------------------------|-------------------------------------------|
-| __One might not fix the other__ | Interface type genericity      | Fixing the interface doesn’t fix the type |
-|                                | Type interface genericity      | Fixing the type doesn’t fix the interface |
-|                                | Interface-procedure genericity | Fixing the procedure interface doesn’t fix the procedure |
+|                                 |                              |                                           |
+|---------------------------------|------------------------------|-------------------------------------------|
+| __One might not fix the other__ | Interface type genericity    | Fixing the interface doesn’t fix the type |
+|                                 | Type interface genericity    | Fixing the type doesn’t fix the interface |
+|                                 | Interface-command genericity | Fixing the command interface doesn’t fix the command |
 
 ### More from the original Symbol documentation
 
@@ -583,19 +583,19 @@ If you break one of the lines in the circularity, the one loosing the line comes
 
 -----
 
-< Might genericity control what happens on the call of system procedures or if the call to a system procedure is illegal or not? >
+< Might genericity control what happens on the call of system commands or if the call to a system command is illegal or not? >
 
 -----
 
 <  
-Introduce more system procedures here:
+Introduce more system commands here:
 
 - Type Generic Get
 - Type Generic Set
 - Interface Generic Get
 - Interface Generic Set
-- Procedure Reference Generic Get
-- Procedure Reference Generic Set
+- Command Reference Generic Get
+- Command Reference Generic Set
  
 Here and no earlier.  
 />

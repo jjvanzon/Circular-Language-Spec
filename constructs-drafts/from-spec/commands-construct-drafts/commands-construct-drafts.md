@@ -53,7 +53,7 @@ But sometimes it may only be the diamonds that are referred to as sub commands. 
 
 `<< terminology >>`
 
-It’s *procedures* that are called. When you speak of calling an *object*, you’re talking about calling a procedure of an object (or a procedure of one of its sub objects).`
+It’s *commands* that are called. When you speak of calling an *object*, you’re talking about calling a command of an object (or a command of one of its sub objects).`
 
 `<< terminology >>`
 

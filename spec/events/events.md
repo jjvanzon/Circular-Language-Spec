@@ -40,7 +40,7 @@ The documentation might also show how events look in the diagram notation of Cir
 
 ### Prime Event Example: Button Clicked
 
-The key example that explains the purpose of events is a button click. A programmer defines the command to run when the user presses a button. The button click is implemented using the __Events__ construct, so that a programmer can easily stick a procedure under a __Button Clicked__ event without having to worry how the procedure really got invoked.
+The key example that explains the purpose of events is a button click. A programmer defines the command to run when the user presses a button. The button click is implemented using the __Events__ construct, so that a programmer can easily stick a command under a __Button Clicked__ event without having to worry how the command really got invoked.
 
 The notation of that is as follows.
 
@@ -58,7 +58,7 @@ It shows an object with an event procedure / event command / event implementatio
 
 #### Event Connector
 
-When an event procedure is not filled in, you might only see the event as a connector:
+When an event command is not filled in, you might only see the event as a connector:
 
 ![](images/1.%20Events.003.png)
 
@@ -80,7 +80,7 @@ This is the reason why events are displayed like this in the diagram: it is like
 
 #### Event Implementation & Connector
 
-When an event procedure is present, the connector to the event procedure is still available so that other procedures can be tied to the event:
+When an event command is present, the connector to the event command is still available so that other commands can be tied to the event:
 
 ![](images/1.%20Events.006.png)
 
@@ -124,7 +124,7 @@ That is the way __Event__ objects are internally implemented.
 
 What you see is the registered event implementation (at the top), the collection of event receivers, the event interface, the __Raise__ command and its implementation that loops through the event receiver commands and calls each of them.
 
-Note that even though the concept is that parents can pick up messages from children, it is not the *parents* that are registered, but the *event procedures* that are registered.
+Note that even though the concept is that parents can pick up messages from children, it is not the *parents* that are registered, but the *event commands* that are registered.
 
 Even though the event concept is just a combination of other constructs, it is such an important concept, that Circular explicitly defines it as a sepate construct with its own notation.
 
@@ -187,11 +187,11 @@ The second black boxing situation to be explicitly mentioned is accessing the __
 
 ![](images/1.%20Events.026.png)
 
-To be able to access the __Private__ members of the event parameter, the event procedure might be declared __Friend__ of the event parameter.
+To be able to access the __Private__ members of the event parameter, the event command might be declared __Friend__ of the event parameter.
 
 ![](images/1.%20Events.027.png)
 
-Then the event procedure can access the __Private__ members of the event parameter:
+Then the event command can access the __Private__ members of the event parameter:
 
 ![](images/1.%20Events.028.png)
 

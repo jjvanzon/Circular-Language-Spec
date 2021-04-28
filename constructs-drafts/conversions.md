@@ -16,15 +16,15 @@ If the State isn’t assigned to the same type then a conversion might take plac
 
 Conversions can also be cast explicitly rather than being automatically performed on state assignment.
 
-Conversion procedures are considered system procedures as well. One type can define multiple conversion procedures. The parameter of the conversion procedure is the source object. A conversion procedure can also have multiple parameters. That way multiple objects can be converted to a single object, sometimes grouping multiple object of the same type, sometimes grouping a combination of types.
+Conversion commands are considered system commands as well. One type can define multiple conversion commands. The parameter of the conversion command is the source object. A conversion command can also have multiple parameters. That way multiple objects can be converted to a single object, sometimes grouping multiple object of the same type, sometimes grouping a combination of types.
 
 -----
 
 < If you want to convert a number to text then the text object should define the conversion for all this stuff. Hmm… maybe the source object should be able to define the conversion too. >
 
-#### Conversions Aren’t Create Procedures
+#### Conversions Aren’t Create Commands
 
-This comment is made because in the C++ programming language, conversion procedures *are* alternative create procedures. A conversion might not involve the creation of an object. A conversion is the assignment of new values to an existing object, values that are based on the values of an object from a different type.
+This comment is made because in the C++ programming language, conversion commands *are* alternative create commands. A conversion might not involve the creation of an object. A conversion is the assignment of new values to an existing object, values that are based on the values of an object from a different type.
 
 #### More Ideas
 

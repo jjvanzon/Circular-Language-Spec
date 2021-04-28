@@ -17,7 +17,7 @@ Ik begin me steeds meer te beseffen dat goede error handling heel belangrijk is.
 
 -----
 
-Organization of structure might generate errors, but the generated code also needs better error handling. You can generate safer code, if all dependencies of the procedure are checked and specific errors are generated if something goes wrong. You might have the option of continuing always on error, breaking on error, stopping execution on error, ask what to do in case of an error or maintain an error log. Or you could choose not to generate any error handling at all.
+Organization of structure might generate errors, but the generated code also needs better error handling. You can generate safer code, if all dependencies of the command are checked and specific errors are generated if something goes wrong. You might have the option of continuing always on error, breaking on error, stopping execution on error, ask what to do in case of an error or maintain an error log. Or you could choose not to generate any error handling at all.
 
 #### Experiment 0.9's Compiler Pitfalls ( Errors )
 

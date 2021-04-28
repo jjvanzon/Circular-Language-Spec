@@ -26,7 +26,7 @@ __Contents__
 
 ### Implied Relationships Between Symbols
 
-Not showing private members or the contents of procedures might be a relevant subject for the display of the diagrams. 
+Not showing private members or the contents of commands might be a relevant subject for the display of the diagrams. 
 
 The definition of something can just as well be shown inside a reference to the definition. It might become a setting whether you’ll show the full definition in a reference or just the public things. It may be a better choice not to be able to *change* the definition from a reference to a definition.  
 The definition might be shown next to the diagram anyway. You can change it there. That might work more intuitive.
@@ -99,7 +99,7 @@ Een triangle is gekozen voor interface implementation, omdat een interface imple
 Eigenlijk is het wel een beetje zo dat: alles wat ik aan mezelf heb moeten uitleggen, moet ik aan de lezer uitleggen.  
 \>
 
-A definition is a lot like a type of procedure, while an execution is an instance of the procedure. As I state this relation, it may seem strange to you that I picked *separate symbols* to denote a procedure symbol’s execution and definition, while for objects I use different *line types* to separate objects from types. Diamond is actually the extra symbol picked to represent an execution. An execution of a definition is like an object of a type. However, an execution has another special characteristic: it executes. 
+A definition is a lot like a type of command, while an execution is an instance of the command. As I state this relation, it may seem strange to you that I picked *separate symbols* to denote a command symbol’s execution and definition, while for objects I use different *line types* to separate objects from types. Diamond is actually the extra symbol picked to represent an execution. An execution of a definition is like an object of a type. However, an execution has another special characteristic: it executes. 
 
 When an object symbol has a type line it’s behavior in the container isn’t as much different as ...
 
@@ -107,17 +107,17 @@ However, object symbols aren’t different to their container if they ...
 
 To find the definition you follow the reference line between ...
 
-Just consider: if a diamond doesn’t have a line it is an executing code block, when a square doesn’t have a line, it’s a local function. In both cases it’s a definition. But the two case differ in that in one case it executes and in the other it doesn’t. If an object symbol has no line, it’s an object. Simply stated, it needs an object line for it not to be a type. A procedure symbol shouldn’t need a line to be an execution.
+Just consider: if a diamond doesn’t have a line it is an executing code block, when a square doesn’t have a line, it’s a local function. In both cases it’s a definition. But the two case differ in that in one case it executes and in the other it doesn’t. If an object symbol has no line, it’s an object. Simply stated, it needs an object line for it not to be a type. A command symbol shouldn’t need a line to be an execution.
 
 When a characteristic’s presence shouldn’t be dependent of the presence of a line, it needs to be drawn out with a shape type. If a characteristic is dependent of the presence of a line, it’s the line presence that gives it the characteristic. If I’d want object symbols to serve only as a type and not as an object, then I’d need to reserve a special shape to separate types from objects. Now, to make an object symbol serve as a type only and not as a type, I make the Object Get Inaccessible? NO. That’s not true. Actually I’d might not be able to Symbol Get if it’s for the purpose of assigning an object line.
 
 A square is never an object.
 
-For a procedure symbol to function as a reference and not as an execution is not up to the possibility to have a symbol as an execution target.
+For a command symbol to function as a reference and not as an execution is not up to the possibility to have a symbol as an execution target.
 
 Ok, if I wanted it so that an object symbol could only function as a type, but not as an object, I should reserve a separate shape for it. But that doesn’t mean that an object shape can’t serve as a type. An execution shape can serve as the definition too.
 
-It’s important for some procedure symbols not to function as an execution. Otherwise the system might behave complete different. It’s not as important for an object symbol not to function as an object, only as a type. The system isn’t really harmed as severely by that. The same goes for triangles: if a triangle is suddenly a circle, the system behaves completely differently.
+It’s important for some command symbols not to function as an execution. Otherwise the system might behave complete different. It’s not as important for an object symbol not to function as an object, only as a type. The system isn’t really harmed as severely by that. The same goes for triangles: if a triangle is suddenly a circle, the system behaves completely differently.
 
 I’m still in doubt. I think it’s good that there’s a diamond symbol and that there aren’t separate object, type and interface shapes. I just can’t define *why* yet.
 
@@ -125,7 +125,7 @@ It totally makes sense to use separate type, interface and object shapes, but ..
 
 Sure it is nice to see in a system that one set of object symbols serve as the types... So it might be an idea to make it possible to give them a different shape type... when you can’t use the symbol as an object target.
 
-The total reason of the diamond and triangle symbols is that the effect of it has greater consequences for the behavior of the system. A diamond symbol makes rules easier to understand: it’s easier to get: “you can’t place a diamond in an object symbol”, than it is to remember “a procedure symbol in an object symbol can’t have a call line”
+The total reason of the diamond and triangle symbols is that the effect of it has greater consequences for the behavior of the system. A diamond symbol makes rules easier to understand: it’s easier to get: “you can’t place a diamond in an object symbol”, than it is to remember “a command symbol in an object symbol can’t have a call line”
 
 *“The reason why both call and reference lines need to be followed is because call and reference lines are actually both kind of like reference lines. However, a call line has the side effect that its square might execute if its parent square executes.”*
 

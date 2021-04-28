@@ -18,11 +18,11 @@ Basic access controllers are decisive, but level limitation adds additional rest
 
 Level limitation is paired with the basic access controller.
 
-Pairing object level limitation with the Public access modifier, makes a procedure public only to limited number of levels up the ancestry.
+Pairing object level limitation with the Public access modifier, makes a command public only to limited number of levels up the ancestry.
 
 > Public *Up 2*
 
-A procedure with this access modifier is accessible but two levels up the ancestry. Outside those levels, the procedure is inaccessible.
+A command with this access modifier is accessible but two levels up the ancestry. Outside those levels, the command is inaccessible.
 
 *No object level limitation: Public:*
 
@@ -38,7 +38,7 @@ Level limitation works the same for the Protected access modifier, but gets the 
 
 - __Protected *Up 2*__
 
-A procedure with this access modifier is accessible two levels up the ancestry, but inaccessible outside the first circular descendant.
+A command with this access modifier is accessible two levels up the ancestry, but inaccessible outside the first circular descendant.
 
 *Protected Up 2, contained in three triangles:*
 
@@ -55,14 +55,14 @@ A procedure with this access modifier is accessible two levels up the ancestry, 
 | ![](images/2.0.%20Black%20Boxes%20Construct%20Drafts%20Ideas.007.png) | ≈ | ![](images/2.0.%20Black%20Boxes%20Construct%20Drafts%20Ideas.009.png) |
 |-----|-----|-----|
 
-Level limitation can also be applied to deeper exclusion than __Public__ and __Protected__. So a parent can impose level limitation on a child procedure.
+Level limitation can also be applied to deeper exclusion than __Public__ and __Protected__. So a parent can impose level limitation on a child command.
 
 *Level limitation on deeper exclusion:*
 
 | ![](images/2.0.%20Black%20Boxes%20Construct%20Drafts%20Ideas.010.png) | ≈ | ![](images/2.0.%20Black%20Boxes%20Construct%20Drafts%20Ideas.011.png) |
 |-----|-----|-----|
 
-You can also apply level limitation for on symbols shallower than the target procedure.
+You can also apply level limitation for on symbols shallower than the target command.
 
 *Level limitation on deeper exclusion:*
 

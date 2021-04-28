@@ -16,7 +16,7 @@ Class's Implementation as an Aspect,
 2008-06-10
 
 A class adds a sub object to the system interface,  
-a procedure on object assignment of this sub object,  
+a command on object assignment of this sub object,  
 which configures the object that gets the class.  
 It might also change the diagram expression module.
 

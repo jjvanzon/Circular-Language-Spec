@@ -93,7 +93,7 @@ The need for IDs and Reference Counts is pretty clear: it changes with:
 - RelationClass.ListType
 - RelationClass.OtherRelationClass Existence
 
-Everywhere these variables change, an Apply procedure is called that either adds or removes the ID or Reference Count. The changes of to the dependencies take place in __RelationClass__, but the Attribute is *added* to __*Class*__. This creates no futher complications.
+Everywhere these variables change, an Apply command is called that either adds or removes the ID or Reference Count. The changes of to the dependencies take place in __RelationClass__, but the Attribute is *added* to __*Class*__. This creates no futher complications.
 
 __JType__ is added inside the class when __BaseClassAwareOfDerivedClasses__ and __DerivedClasses > 0__.
 

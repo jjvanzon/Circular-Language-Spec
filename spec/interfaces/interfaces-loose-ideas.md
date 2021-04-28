@@ -14,8 +14,8 @@ __Contents__
         - [Tracing Object Aspects](#tracing-object-aspects)
             - [Interface Trace](#interface-trace)
             - [Object-Type-Interface Trace](#object-type-interface-trace)
-        - [Tracing Procedure Aspects](#tracing-procedure-aspects)
-            - [Procedure Interface Trace](#procedure-interface-trace)
+        - [Tracing Command Aspects](#tracing-command-aspects)
+            - [Command Interface Trace](#command-interface-trace)
             - [Execution-Definition-Interface Trace](#execution-definition-interface-trace)
             - [Type Line Being called Interface Line](#type-line-being-called-interface-line)
 - [Loose Ideas about Interfaces](#loose-ideas-about-interfaces)
@@ -79,11 +79,11 @@ In other words: follow interface line, otherwise object line, otherwise type lin
 
 It happens frequently that you need a symbol’s target object, type and interface in one blow. That requires two traces: an object-type trace and an interface trace. The full operation is an *object-type-interface trace*. It deserves a separate name for it’s a very common operation.
 
-##### Tracing Procedure Aspects
+##### Tracing Command Aspects
 
-###### Procedure Interface Trace
+###### Command Interface Trace
 
-In the *procedure interface trace* you follow both line types, but you prefer following an interface line over a reference line.
+In the *command interface trace* you follow both line types, but you prefer following an interface line over a reference line.
 
 ![](images/4.%20Interfaces%20Loose%20Ideas.002.jpeg)
 
