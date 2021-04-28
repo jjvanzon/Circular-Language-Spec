@@ -23,8 +23,8 @@ __Contents__
 - [Clauses](#clauses)
 - [Lambda Expression](#lambda-expression)
 - [Nested Commands](#nested-commands)
-- [Parameters and Return Values Not Covered](#parameters-and-return-values-not-covered)
 - [Implementation](#implementation)
+- [Parameters and Return Values Not Covered](#parameters-and-return-values-not-covered)
 - [Conclusion](#conclusion)
 - [Synonyms](#synonyms)
     - [Command Definition Synonyms](#command-definition-synonyms)
@@ -441,13 +441,7 @@ The concept of nested commands may coincide with the terms:
 
 Those may all be examples of *nested commands*. Sometimes however, it might be easier to use a single name for these phenomena.
 
-
-
-A distinction between *active* nested commands and *inactive* nested commands might be relevant sometimes. Code blocks might be *active* nested commands. A local function may be an *inactive* nested command for instance.
-
-### Parameters and Return Values Not Covered
-
-Symbolizations for parameters and return values might be missing in much of these texts. Those are intended to be covered by another chapter: "Parameters".
+A distinction between *active* nested commands and *inactive* nested commands might be relevant. Code blocks might be *active* nested commands. A local function may be an *inactive* nested command for instance.
 
 ### Implementation
 
@@ -455,15 +449,19 @@ The implementation of a command might be defined as the private contents of a co
 
 <img src="images/1.%20Commands%20Main%20Concepts.024.png" width="300" />
 
-The large square might have contents, drawn with thick lines, might represent the command’s *implementation*, because they might be private. The objects inside the large square that are drawn with thinner lines, might be the command’s parameters: its publics. (Notation for *parameters* might be involved in the picture above, but might remain unexplained until the chapter "Parameters".)
+The large square's contents, drawn with thick lines, might represent the command’s *implementation*, because they might be private. The objects inside the large square that are drawn with thinner lines, might be the command’s parameters: its publics.
+
+### Parameters and Return Values Not Covered
+
+Symbolizations for parameters and return values might not be covered much in this text. Those are intended to be covered by another chapter: *Parameters*.
 
 ### Conclusion
 
-Using the constructs for commands from Circular, it may seem circumstantial whether a command symbol could be stereotyped as a block, clause, definition, call, etc. It seems to result from the way basic language elements from Circular relate to each other. Still, it may be relevant to be aware how these symbols from Circular can be combined to represent constructs from other languages.
+Using commands constructs from Circular, it may seem circumstantial whether a command symbol might be stereotyped as a block, clause, definition, call, etc. It seems to result from the way basic language elements from Circular relate to each other. Still, it may be relevant to be aware how these symbols from Circular can be combined to represent constructs from other languages.
 
 ### Synonyms
 
-These terms may possibly be used interchangeably depending on context.
+The following terms may possibly be used interchangeably depending on context.
 
 #### Command Definition Synonyms
 
@@ -472,7 +470,6 @@ These terms may possibly be used interchangeably depending on context.
 - inactive command
 - inactive command symbol
 - square
-- command definition
 - definition
 
 #### Definition Line Synonyms
@@ -481,14 +478,12 @@ These terms may possibly be used interchangeably depending on context.
 - call line
 - prototype line
 - dashed line
-- definition line
 
 #### Executable Command Synonyms
 
 - active command
 - active command symbol
 - diamond
-- executable command
 - executable command symbol
 
 #### Command Call Synonyms
