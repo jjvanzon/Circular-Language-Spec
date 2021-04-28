@@ -1100,7 +1100,7 @@ A View Where Lines point to target objects?
 
 < Brainstorm >
 
-You might look at basics of Symbol. And the basic thing is encapsulation. The encapsulation of a Structure can be derived from the referential structure using a mutual parent rule. This in real life also determines how we feel something encapsulates another thing. You can apply this mutual parent rule to class relations and object relations. All class and object reference are expressed as splines, except the references from parent to child. Objects and commands are there in both languages and are exchangeable. Publicity is also present in both systems. The only thing I don’t know how to express in Symbol is plurality.
+You might look at basics of Symbol. And the basic thing is encapsulation. The encapsulation of a Structure can be derived from the referential structure using a mutual parent rule. This in real life also determines how we feel something encapsulates another thing. You can apply this mutual parent rule to class relations and object relations. All class and object reference are expressed as lines, except the references from parent to child. Objects and commands are there in both languages and are exchangeable. Publicity is also present in both systems. The only thing I don’t know how to express in Symbol is plurality.
 
 Symbol always had a lack of expression in plurality. How. You’d almost want a new shape of symbol. But I’ve sort of run out of shapes. I’d go for a hexagon. It looks like a circle, but has a plurality feeling to it. If you might, you could choose for octagons.
 
@@ -1114,7 +1114,7 @@ In Symbol I better see the relations between objects, while you see none of that
 
 How well are the relation between types shown in symbol. Well, you see the containment relations better than ever.
 
-But how do the relations between classes show? Each circle or octagon expresses a relation class. Its class target is the class. You can recognize the class of the target by the class name of the relation class symbol. Class splines show the Structure Relations.
+But how do the relations between classes show? Each circle or octagon expresses a relation class. Its class target is the class. You can recognize the class of the target by the class name of the relation class symbol. Class lines show the Structure Relations.
 
 Ok, to recap: most things can be mutually exchangeable between Symbol and Structure. There are two tacky points though: giving the Symbol code an encapsulation structure and plurality in symbol. An octagon might express that an object is plural. The encapsulation is derived from the reference structure using the mutual parent method. Some advantage symbol adds to Structure then, are encapsulation and also object relations. In structure code, it’s hard to view object relations.
 
@@ -1133,8 +1133,8 @@ However, you should be able to define static object relations in the structure, 
     - Encapsulation is derived out of the Structure with a Mutual Parent method.
 - Hide Things
     - Things in the generated application are hidden, to keep the focus on the structure (but they can be shown if chosen).
-- Extra Relation Splines
-    - Add special lines to the diagram that expresses the Structure. You won’t see the relations between classes as well in the structure as you do in the generated code, and I do want to see it. The relations between classes should be expressed with relation splines in the Classes collection. And the classes collection’s mutual parent structure should be expressed as the encapsulation structure, right then and there. Diagram elements may be added to better see that.
+- Extra Relation Lines
+    - Add special lines to the diagram that expresses the Structure. You won’t see the relations between classes as well in the structure as you do in the generated code, and I do want to see it. The relations between classes should be expressed with relation lines in the Classes collection. And the classes collection’s mutual parent structure should be expressed as the encapsulation structure, right then and there. Diagram elements may be added to better see that.
     Perhaps I should develop a separate way to notate the structure. Perhaps you should draw out the relations as you see them in the generated code and then Structure might figure out what it means.
     That means you draw classes and you put object in them and that draws out the relation. The object contain the members of the Class class and you can specify it furtherly there.
 
