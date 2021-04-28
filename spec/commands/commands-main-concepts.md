@@ -39,7 +39,7 @@ Commands may be objects, that so happen to be *executable*. Commands could be ac
 
 <img src="images/1.%20Commands%20Main%20Concepts.001.png" width="50" /> <img src="images/1.%20Commands%20Main%20Concepts.002.png" width="50" />
 
-They may represent elements of the command structure. The square may be a general symbol for a command. The diamond may have a special meaning.
+They may represent elements of the command structure. The *square* may be a general symbol for a command. The *diamond* may have a special meaning.
 
 Relations between commands might be expressed by *containment*:
 
@@ -53,7 +53,7 @@ There can be solid, dashed or dotted lines between command symbols. Names might 
 
 ### Diagram Elements
 
-Command concepts may be expressed by a limited set of characteristics.
+Command concepts may involve a specific set of characteristics.
 
 A *diamond* in Circular may express a command that may be __executable__.
 
@@ -65,7 +65,7 @@ A *square* in Circular might symbolize that the command is __not executable__.
 
 <img src="images/1.%20Commands%20Main%20Concepts.001.png" width="50" />
 
-Relations betwen commands may be expressed by *containment*. One symbol might __contain__ another:
+Relations between commands may be expressed by __containment__. One symbol might *contain* another:
 
 <img src="images/1.%20Commands%20Main%20Concepts.003.png" width="100" />
 
@@ -95,7 +95,7 @@ It might also be *nameless.*
 
 <img src="images/1.%20Commands%20Main%20Concepts.001.png" width="50" />
 
-Here is an attempt to summarize these traits that commands might have:
+Here is an attempt to summarize these traits of commands:
 
 - __(not) executable__
 - __containment__
@@ -115,7 +115,7 @@ A square might not execute. Well, they may only execute when called. __A__ may c
 
 ### Derived Constructs
 
-Constructs that might be known from other programming languages, may have a reasonably unique expression using combinations of these more basic elements from Circular. Here follows an attempt to accompany this claim with some examples.
+Constructs that might be known from other programming languages, may have a reasonably unique expression using combinations of these more basic elements from Circular. Here follows an attempt to accompany this claim with examples.
 
 ### Command Definitions
 
@@ -129,17 +129,17 @@ void MyDefinition()
 }
 ```
 
-Command definitions themselves might not necessarily execute. Just copies of it, more likely. Its *not executing* may be expressed with a square: 
+Command definitions themselves might not necessarily execute. Just copies of it, more likely. Its *not executing* may be expressed by means of a square: 
 
 <img src="images/1.%20Commands%20Main%20Concepts.008.png" width="50" />
 
-If a command might used as a definition, it might be drawn with a *dashed border*:
+When a command is used as a definition, it might be drawn with a *dashed border*:
 
 <img src="images/1.%20Commands%20Main%20Concepts.006.png" width="70" />
 
 (Though dashed shape notation is still a bit of an open discussion.)
 
-A definition might also have a *name*:
+A definition might have a *name*:
 
 <img src="images/1.%20Commands%20Main%20Concepts.009.png" width="140" />
 
@@ -252,7 +252,7 @@ A square connected to another command may be a mere *reference* to a command.
 
 ![](images/7.%20Commands%20Ideas.013.png)
 
-A call to any square that represents the same command might be a call to the same command. A reference to either of the command references, is a reference to the same command.
+A call to any square that represents the same command, might be a call to the same command. A reference to either of the command references, is a reference to the same command.
 
 Therefore, when a command reference might be called, it is like the referenced command is called:
 
