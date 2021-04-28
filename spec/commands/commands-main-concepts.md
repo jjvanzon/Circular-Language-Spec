@@ -337,11 +337,11 @@ void MyParentCommand()
 }
 ```
 
-In Circular it might also be a command definition contained within another command definition.
+In Circular it might also be a command definition contained within another command definition:
 
 <img src="images/1.%20Commands%20Main%20Concepts.017.png" width="100" />
 
-When peeking at another programming language, a local function seems to be able to have a name.
+When peeking at another programming language, a local function seems to be able to have a name:
 
 <img src="images/1.%20Commands%20Main%20Concepts.018.png" width="160" />
 
@@ -375,15 +375,13 @@ if { ... }
 
 (This is pseudo code. A full `if` statement may have more parts.)
 
-There might be a bit of an interpretation problem here. A clause in an `if` statement looks a bit like a *code block*. Maybe it could be interpreted as such.
+The following notation might be used for a clause:
 
 <img src="images/1.%20Commands%20Main%20Concepts.020.png" width="100" />
 
-It also may look a bit like a nameless local function that you might pass a reference to, to the `if` statement:
+An alternative might be, making it look like a nameless local function that you might pass a reference to, to the `if` statement:
 
 <img src="images/1.%20Commands%20Main%20Concepts.021.png" width="170" />
-
-The exact interpretation might not matter too much. Clauses seem adequately expressible in Circular.
 
 So a clause might be expressed with:
 
@@ -430,10 +428,7 @@ A nested command is like a command defined within a command.
 
 They may look like this:
 
-<img src="images/7.%20Commands%20Ideas.021.jpeg" width="90" />
-<img src="images/7.%20Commands%20Ideas.019.jpeg" width="80" />
-<img src="images/1.%20Commands%20Main%20Concepts.015a.png" width="60" />
-<img src="images/1.%20Commands%20Main%20Concepts.015b.png" width="60" />
+<img src="images/7.%20Commands%20Ideas.021.jpeg" width="90" /> <img src="images/7.%20Commands%20Ideas.019.jpeg" width="80" /> <img src="images/1.%20Commands%20Main%20Concepts.015a.png" width="60" /> <img src="images/1.%20Commands%20Main%20Concepts.015b.png" width="60" />
 
 A nested command may be a command inside another command with no lines going to or from it.
 
