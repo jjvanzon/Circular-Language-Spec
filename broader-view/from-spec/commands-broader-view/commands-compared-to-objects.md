@@ -18,6 +18,7 @@ __Contents__
 - [Command Call Compared to Objects](#command-call-compared-to-objects)
 - [Command Call Compared to Objects](#command-call-compared-to-objects-1)
 - [Command Reference Compared to Objects](#command-reference-compared-to-objects)
+- [Active Nested Commands Compared to Objects](#active-nested-commands-compared-to-objects)
 - [Command Contents](#command-contents)
 - [Reading & Writing Parameters](#reading--writing-parameters)
 - [Resolution When `Not Allowed` For Commands](#resolution-when-not-allowed-for-commands)
@@ -129,6 +130,12 @@ Because `the` definition `is the` prototype of `the` call, and `not the same` ob
 A command reference might be achieved with *object* redirection.
 
 A command reference `represents the same` object as `the` object `pointed to`. `So the` command reference’s contents `are the exact same` objects as that of `the` command object it `points to`.
+
+### Active Nested Commands Compared to Objects
+
+`<< commands compared to objects >>`
+
+An active nested command `is analogous` to an object that `might not` have a class. A *call* `is more` like an object that *`might`* have a class.
 
 ### Command Contents
 

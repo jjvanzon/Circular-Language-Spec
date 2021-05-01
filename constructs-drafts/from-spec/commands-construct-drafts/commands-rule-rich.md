@@ -11,6 +11,7 @@ __Contents__
 - [Introduction](#introduction)
 - [Parent Controls Its Sub-Executions](#parent-controls-its-sub-executions)
     - [Sub-Commands Are Never Referenced](#sub-commands-are-never-referenced)
+    - [Sub-Commands Private?](#sub-commands-private)
     - [Beware of Active Command References in Commands](#beware-of-active-command-references-in-commands)
     - [Sub-Commands Not Manually Started](#sub-commands-not-manually-started)
 - [Command Assignment Rule Rich](#command-assignment-rule-rich)
@@ -22,6 +23,7 @@ __Contents__
 - [Accessing a Diamond Member During a Call](#accessing-a-diamond-member-during-a-call)
 - [Passing an object reference to a command](#passing-an-object-reference-to-a-command)
 - [Command can set object reference itself too](#command-can-set-object-reference-itself-too)
+- [Nested Commands Rule Rich](#nested-commands-rule-rich)
 - [Loose Ideas](#loose-ideas)
 
 ### Introduction
@@ -54,9 +56,13 @@ For instance: the rule ‘sub-commands are never referenced’, may be changed t
 
 This is a rule for enforcement of control of a parent command over the execution of its sub-commands.
 
-Active nested commandsand command calls inside another command and are never referenced, because a command has to have full control over the execution of its sub-commands.
+Active nested commands and command calls inside another command and are never referenced, because a command has to have full control over the execution of its sub-commands.
 
 ![](images/6.%20Comands%20Misc%20Issues.001.png)
+
+But *inactive* nested commands might still be referenced and might be made public.
+
+![](images/1.%20Commands%20Main%20Concepts.053.png)
 
 If you could reference an active command inside a command, then the sub-command could be prematurely executed through that reference. Therefore sub-commands are never referenced.
 
@@ -72,11 +78,15 @@ Not being able to reference sub-commands might not mean, that you can use it as 
 
 This might also put the sub-command in danger of being prematurely executed, because you could establish an active reference to the class of another command object and execute it.
 
-To not cause any confusion, sub-commands are made __Private__. 
+#### Sub-Commands Private?
+
+To not cause any confusion, sub-commands might be made __Private__. 
 
 ![](images/6.%20Comands%20Misc%20Issues.004.png)
 
-Do not change the rule to *sub-commands are always private*, because this might not fully solve the parent command’s control over its sub-commands’ execution. By just making them private, the parent command could still pass a reference to a sub-command.
+Active nested commands, command calls and active command references in parent commands may be private, because sub-command might not be referenced.
+
+Perhaps do not change the rule *sub-commands are never referenced* to *sub-commands are always private*, because this might not fully solve the parent command’s control over its sub-commands’ execution. By just making them private, the parent command could still pass a reference to a sub-command.
 
 ![](images/6.%20Comands%20Misc%20Issues.005.png)
 
@@ -230,6 +240,14 @@ Commands can’t set line going *into* the square themselves. Those are always s
 It’s important that the command itself sets lines, because the line targets of command members often serve as the output values of the command.
 
 < I don’t know a notation to distinct sets by the caller and sets by the call. Well... in a more explicit notation you might see that the caller calls the set or the called calls the set. >
+
+### Nested Commands Rule Rich
+
+A nested command might not redirect its definition, because then it might be a command call.
+
+A nested command might not redirect its object, because then it might be a command reference.
+
+A nested command `is never` situated inside an object, or it might not be a nested command.
 
 ### Loose Ideas
 
