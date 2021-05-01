@@ -78,7 +78,7 @@ The following execution states and execution commands may be considered:
 
 ### Execution Commands & States
 
-Which execution commands could be invoke, may depend on the execution state a command is in. When a command has *finished*, it might not be possible to *play* it again. When a command would be *not runnable*, it might not be an option to *play* it at all.
+Which execution commands could be invoke, may depend on the execution *state* a command is in. When a command has *finished*, it might not be possible to *play* it again. When a command would be *not runnable*, it might not be an option to *play* it at all.
 
 These *execution states* might not correspond to an *execution command*:
 
@@ -87,7 +87,7 @@ These *execution states* might not correspond to an *execution command*:
 - __Error__
 - __Warning__
 
-The following *execution commands* might not also be *execution states*:
+The following *execution commands* might not be *execution states*:
 
 - __Previous__
 - __Go To End__
@@ -116,7 +116,7 @@ Each of the following commands or states may have a symbol. The symbols may be s
 | ![](images/2.%20Start%20&%20Stop.015.png) | ![](images/2.%20Start%20&%20Stop.016.png) | ![](images/2.%20Start%20&%20Stop.017.png) | ![](images/2.%20Start%20&%20Stop.018.png) | |
 | Finished |  Record  | Error | Warning | |
 
-The commands can be displayed at the bottom of the screen to execute a selected command or on a thread, that you are following. They may also be shown in certain cases near a diamond shape / executable command symbol.
+The commands can be displayed at the bottom of the screen, to be able to execute a selected command or on a *thread*, that you are following. They may also be shown in certain cases near a diamond shape / executable command symbol.
 
 ![](images/2.%20Start%20&%20Stop.019.png)
 
@@ -138,7 +138,7 @@ An execution state might also be displayed at the bottom of a command symbol, to
 
 The executable command above might currently be running at normal speed, since it appears to be in __Play__ state. Here are more examples of executable command object in different states.
 
-The following command might be paused:
+The following command might be in a paused state:
 
 ![](images/2.%20Start%20&%20Stop.024.png)
 

@@ -11,12 +11,14 @@ __Contents__
 - [Introduction](#introduction)
 - [Neighbor Access](#neighbor-access)
 - [Child Access](#child-access)
+- [Access from Nested Commands](#access-from-nested-commands)
+    - [Brainstorm](#brainstorm)
 - [Global Access](#global-access)
 - [Pentagons not Exchangeable with Triangles and Circles](#pentagons-not-exchangeable-with-triangles-and-circles)
 - [Extra Indication](#extra-indication)
 - [Interface Access](#interface-access)
 - [Modules, Interfaces and Nested Commands](#modules-interfaces-and-nested-commands)
-- [Brainstorm](#brainstorm)
+- [Brainstorm](#brainstorm-1)
 
 ### Introduction 
 
@@ -52,6 +54,41 @@ The object is then accessing this *reference*, which is inside the object. The r
 2002 +/-:
 Variables declared inside a parent block in a command are accessible directly by the child blocks. Variables declared inside a child block are inaccessible to a parent block.  
 />
+
+### Access from Nested Commands
+
+< Nice sentence:  
+A command makes all direct children accessible to all blocks.  
+Only is that true? >
+
+In a diagram nested commands might be squares contained in other squares that have no lines. Beware that a diagram may not be showing the line, even when it exist.
+
+![](images/0.%20Special%20Access.016.png)
+
+Nested commands have access to the contents of all their ancestor blocks and the command definition they’re in. This means that a nested command can directly access its containing definition’s members:
+
+![](images/0.%20Special%20Access.017.png)
+
+and all its encapsulating nested commands:
+
+![](images/0.%20Special%20Access.018.png)
+
+But a nested command might not have access to a nested command that doesn’t encapsulate it.
+
+![](images/0.%20Special%20Access.019.png)
+
+So its like the borders of nested commands can be ignored in outward access.
+
+#### Brainstorm
+
+Nested commands may have special access privileges compared to delegated command symbols.
+
+![](images/7.%20Commands%20Ideas.049.jpeg)
+
+< Bad explanation following >  
+Nested commands may freely access anything of its parent block and the parent block’s parent block, etcetera. If going up the command ancestry a command symbol is encountered with a reference line, the nested command can access this ancestor freely, but not any higher in the command ancestry.
+
+In the picture above, the top two lines could have been set by A itself. The first resides in A’s parent nested command. The second resides in the *execution* that parents A, so still accessible to A. The last line, crossed out, can’t be set by A itself, because it resides outside A’s containing call. It can be set only by a symbol higher than A’s containing call, for instance B.
 
 ### Global Access
 

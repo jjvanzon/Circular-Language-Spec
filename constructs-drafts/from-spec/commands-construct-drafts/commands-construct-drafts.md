@@ -11,6 +11,7 @@ __Contents__
 - [Sub-Commands](#sub-commands)
 - [Active and Inactive](#active-and-inactive)
 - [Sub Command](#sub-command)
+- [Nested Commands](#nested-commands)
 - [Loose Ideas](#loose-ideas)
 
 ### Sub-Commands
@@ -48,6 +49,28 @@ A sub command is any command symbol inside another command symbol.
 But sometimes it may only be the diamonds that are referred to as sub commands. That’s because the execution of a command is made up of the execution of it’s contained diamonds combined.
 
 ![](images/7.%20Commands%20Ideas.036.png)
+
+### Nested Commands
+
+`<< nice formulation >>`  
+
+Also executes, when its parent command executes,
+
+`<< details >>`
+
+but it doesn’t execute, unless you call it.
+
+![](images/7.%20Commands%20Ideas.022.jpeg)
+
+`<< terminology >>`
+
+A nested command is usually not called a definition.
+
+`<< details >>`
+
+The nested command might be directly contained by a command. So this is not a nested command:
+
+![](images/7.%20Commands%20Ideas.029.png)
 
 ### Loose Ideas
 

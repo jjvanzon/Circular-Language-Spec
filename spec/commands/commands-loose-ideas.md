@@ -47,7 +47,7 @@ __Contents__
 
 - Simple obvious issues regarding execution.
 - For instance, diamond only inside a command symbol
-- Stuff like that. Simple issues that you can easily understand.
+- Stuff like that. Simple issues that might be understood with relative ease.
 - Diamond pointing to another diamond.
 - Recursive calls... hmmm... advanced issue. You might not break your head over that. 
     - < Maar lijkt een Execution basics. Hmmm... de term Execution Basics is niet goed genoeg dan. De term basics is niet goed. Execution Facts... maybe not.>

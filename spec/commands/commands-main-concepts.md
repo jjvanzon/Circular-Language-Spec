@@ -17,10 +17,13 @@ __Contents__
     - [How Command References May Work](#how-command-references-may-work)
 - [Code Blocks](#code-blocks)
     - [Code Blocks Details](#code-blocks-details)
-- [Local Function](#local-function)
+- [Local Functions](#local-functions)
 - [Clauses](#clauses)
-- [Lambda Expression](#lambda-expression)
+- [Lambda Expressions](#lambda-expressions)
 - [Nested Commands](#nested-commands)
+    - [Active Nested Command](#active-nested-command)
+    - [Inactive Nested Command](#inactive-nested-command)
+    - [Deeper Nested Command](#deeper-nested-command)
 - [Implementation](#implementation)
 - [Parameters and Return Values Not Covered](#parameters-and-return-values-not-covered)
 - [Conclusion](#conclusion)
@@ -320,7 +323,7 @@ Code blocks might freely be used for putting a frame around a piece of code insi
 
 ![](images/1.%20Commands%20Main%20Concepts.034.png)
 
-### Local Function
+### Local Functions
 
 A local function might be known from other programming languages and may mean a command that is defined within another command.
 
@@ -394,7 +397,7 @@ because it is:
 - passed to another command or statement
 - might be a command reference
 
-### Lambda Expression
+### Lambda Expressions
 
 A lambda expression might be found in other programming languages as sort of a short notation for a function, embedded inside other statements.
 
@@ -428,7 +431,7 @@ They may look like this:
 
 <img src="images/7.%20Commands%20Ideas.021.jpeg" width="90" /> <img src="images/7.%20Commands%20Ideas.019.jpeg" width="80" /> <img src="images/1.%20Commands%20Main%20Concepts.015a.png" width="60" /> <img src="images/1.%20Commands%20Main%20Concepts.015b.png" width="60" />
 
-A nested command may be a command inside another command with no lines going to or from it.
+A nested command may be a command inside another command. The nested command can be a diamond or a square. Its container can also be a diamond as well as a square. A nested command might not have lines pointing away from it.
 
 The concept of nested commands may coincide with the terms:
 
@@ -439,7 +442,41 @@ The concept of nested commands may coincide with the terms:
 
 Those may all be examples of *nested commands*. Sometimes however, it might be easier to use a single name for these phenomena.
 
-A distinction between *active* nested commands and *inactive* nested commands might be relevant. Code blocks might be *active* nested commands. A local function may be an *inactive* nested command for instance.
+#### Active Nested Command
+
+A nested command that is a diamond, might be called an *active* nested command:
+
+<img src="images/7.%20Commands%20Ideas.030.png" width="200" />
+<img src="images/7.%20Commands%20Ideas.031.png" width="100" />
+
+It may be called *active*, because it *executes*.
+
+*Active* nested commands might be *code blocks*.
+
+#### Inactive Nested Command
+
+An *inactive* nested command may be a nested command that does not execute. So it may be a nested command that is a square:
+
+<img src="images/7.%20Commands%20Ideas.033.png" width="190" />
+<img src="images/7.%20Commands%20Ideas.032.png" width="120" />
+
+It might not execute unless it is called:
+
+![](images/7.%20Commands%20Ideas.022.jpeg)
+
+*Inactive* nested commands might be:
+
+- Clauses
+- Local functions
+- Lambda expressions
+
+#### Deeper Nested Command
+
+A deeper nested command may be a nested command inside a nested command.
+
+![](images/7.%20Commands%20Ideas.034.png)
+
+(So it might be a command symbol without lines pointing away from it, inside a command symbol without lines pointing away from it, inside a command symbol *with* lines pointing away from it.)
 
 ### Implementation
 
@@ -483,6 +520,8 @@ The following terms may possibly be used interchangeably depending on context.
 - active command symbol
 - diamond
 - executable command symbol
+- execution
+- execution point
 
 #### Command Call Synonyms
 
