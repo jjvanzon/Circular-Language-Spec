@@ -19,10 +19,11 @@ __Contents__
 - [Diamonds Execute When Direct Parent Executes](#diamonds-execute-when-direct-parent-executes)
 - [Diamonds Can only be Directly Inside a Command Symbol, Diamonds Can’t be Directly Inside an Object Symbol](#diamonds-can-only-be-directly-inside-a-command-symbol-diamonds-cant-be-directly-inside-an-object-symbol)
 - [You Can Only Access Members of a Diamond](#you-can-only-access-members-of-a-diamond)
-- [You can Only Access Members of a Diamond, while the Diamond is executing](#you-can-only-access-members-of-a-diamond-while-the-diamond-is-executing)
+- [You Can Only Access Members of a Diamond, while the Diamond is executing](#you-can-only-access-members-of-a-diamond-while-the-diamond-is-executing)
 - [Accessing a Diamond Member During a Call](#accessing-a-diamond-member-during-a-call)
-- [Passing an object reference to a command](#passing-an-object-reference-to-a-command)
-- [Command can set object reference itself too](#command-can-set-object-reference-itself-too)
+- [Passing an Object Reference to a Command](#passing-an-object-reference-to-a-command)
+- [Command Can Set Object Reference itself Too](#command-can-set-object-reference-itself-too)
+- [Diamond Pointing to Another Diamond](#diamond-pointing-to-another-diamond)
 - [Nested Commands Rule Rich](#nested-commands-rule-rich)
 - [Loose Ideas](#loose-ideas)
 
@@ -35,8 +36,6 @@ The answer to these quesions seems to be yes.
 The Circular Language Spec itself might be more about *notation* and *meaning*, rather than rules and constraints. But texts about the struggle to make it work may still be retained here in this article inside *Construct Drafts*.
 
 ### Parent Controls Its Sub-Executions
-
-`<< rule rich >>`
 
 A parent command needs full control over the execution of its sub-commands. The parent command makes the decision about the exact moment, that the sub-command runs.
 
@@ -172,15 +171,11 @@ So in that sense, diamond A might execute. But not the definition executes, only
 
 ### Diamonds Can only be Directly Inside a Command Symbol, Diamonds Can’t be Directly Inside an Object Symbol
 
-`<< rule rich >>`
-
 Because execution can only take place in a command, a diamond can’t be directly inside an object Symbol
 
 ![](images/7.%20Commands%20Ideas.043.jpeg)
 
 ### You Can Only Access Members of a Diamond
-
-`<< rule rich >>`
 
 You can (usually) only access members of a diamond, because a square is never created, just like you can’t access members of a non created object.
 
@@ -188,9 +183,7 @@ You can (usually) only access members of a diamond, because a square is never cr
 
 ![](images/7.%20Commands%20Ideas.045.jpeg)
 
-### You can Only Access Members of a Diamond, while the Diamond is executing
-
-`<< rule rich >>`
+### You Can Only Access Members of a Diamond, while the Diamond is executing
 
 Because a diamond is only created when it’s executing, you can only access members when the diamond is in execution.
 
@@ -199,8 +192,6 @@ However, *static* members of a command can be freely accessed through any square
 (Some members of a command can be static. In that case the member belongs to the command definition. Those member are the same for any reference or call to a command.)
 
 ### Accessing a Diamond Member During a Call
-
-`<< rule rich >>`
 
 So how might you access a diamond member *during* a call? Well, usually only commands called by the executing diamond can access the call parent.
 
@@ -219,18 +210,14 @@ Two sibling commands are executing at the same time, in different threads, which
 
 < Consider the example of diamond reference to diamond in the main argument reference example. >
 
-### Passing an object reference to a command
-
-`<< rule rich >>`
+### Passing an Object Reference to a Command
 
 ![](images/7.%20Commands%20Ideas.048.jpeg)
 
 When you pass an object reference to a command, the command can access the object.  
 In the situation above it seems the command could access the object anyway (because a command can access everything accessible to the object that contains it). It *can*, but in this case the *caller* decides which object to point to, not the called.
 
-### Command can set object reference itself too
-
-`<< rule rich >>`
+### Command Can Set Object Reference itself Too
 
 When the caller (the parent diamond) sets the line, then the caller decides which object the call might refer to.
 
@@ -240,6 +227,14 @@ Commands can’t set line going *into* the square themselves. Those are always s
 It’s important that the command itself sets lines, because the line targets of command members often serve as the output values of the command.
 
 < I don’t know a notation to distinct sets by the caller and sets by the call. Well... in a more explicit notation you might see that the caller calls the set or the called calls the set. >
+
+### Diamond Pointing to Another Diamond
+
+`<< interpretation issues >>`
+
+When is a diamond executed multiple times?
+
+A diamond pointing to another diamond: it may be a call to a call. both diamonds may represent the same call. They might never execute individually.
 
 ### Nested Commands Rule Rich
 

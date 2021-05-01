@@ -43,38 +43,6 @@ __Contents__
 
 `<< rule rich >>`
 
-####### Brainstorm 1
-
-- Simple obvious issues regarding execution.
-- For instance, diamond only inside a command symbol
-- Stuff like that. Simple issues that might be understood with relative ease.
-- Diamond pointing to another diamond.
-- Recursive calls... hmmm... advanced issue. You might not break your head over that. 
-    - < Maar lijkt een Execution basics. Hmmm... de term Execution Basics is niet goed genoeg dan. De term basics is niet goed. Execution Facts... maybe not.>
-- Wanneer wordt een diamond meerdere keren geexecute?
-
-####### Brainstorm 2
-
-`<< rule rich >>`
-
-Diamond represents individual calls to a definition.  
-In a recursive situation, though: < P >, one diamond can represent multiple calls < ? How to get that straight? >  
-< NO IT CAN’T. >
-
-####### Brainstorm 3
-
-`<< interpretation issues >>`
-
-A diamond pointing to another diamond: it’s a call to a call. both diamonds represent the same call. They might never execute individually.
-
-####### Brainstorm 4
-
-`<< circularity >>`
-
-If eventually the original caller is called again, with one of its calls in progress... hmm... can you call upon a call on hold, because it is waiting for one of its calls to finish? Its public objects, maybe, but you can’t execute anything in it. 
-
-![](images/7.%20Commands%20Ideas.052.png)
-
 ####### Brainstorm 5
 
 `<< rule rich >>`

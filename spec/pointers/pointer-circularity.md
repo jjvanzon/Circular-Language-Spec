@@ -16,6 +16,7 @@ __Contents__
         - [Circularity in a Definition Trace](#circularity-in-a-definition-trace)
         - [Circularity in a Command Interface Trace](#circularity-in-a-command-interface-trace)
         - [Circularity in an Execution-Definition Trace](#circularity-in-an-execution-definition-trace)
+        - [Brainstorm 4](#brainstorm-4)
 
 ### Loose Ideas
 
@@ -100,3 +101,9 @@ then the whole circularity represents both execution and definition.
 If the closed circle consists of only squares, the circularity only represents the definition.
 
 ![](images/Pointer%20Circularity.011.jpeg)
+
+##### Brainstorm 4
+
+If eventually the original caller is called again, with one of its calls in progress... hmm... can you call upon a call on hold, because it is waiting for one of its calls to finish? Its public objects, maybe, but you can’t execute anything in it. 
+
+![](images/7.%20Commands%20Ideas.052.png)
