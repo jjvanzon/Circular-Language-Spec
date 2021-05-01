@@ -1,8 +1,8 @@
 ﻿Circular Language Spec | Pointers
 =================================
 
-From Framework | Pointer Circularity
-------------------------------------
+Pointer Circularity
+-------------------
 
 `[ Preliminary documentation ]`
 

@@ -12,6 +12,8 @@ __Contents__
 - [Active and Inactive](#active-and-inactive)
 - [Sub Command](#sub-command)
 - [Nested Commands](#nested-commands)
+- [Diamond Pointing to Another Diamond](#diamond-pointing-to-another-diamond)
+- [Commands Might Only Be Called from Another Command](#commands-might-only-be-called-from-another-command)
 - [Loose Ideas](#loose-ideas)
 
 ### Sub-Commands
@@ -72,6 +74,34 @@ The nested command might be directly contained by a command. So this is not a ne
 
 ![](images/7.%20Commands%20Ideas.029.png)
 
+### Diamond Pointing to Another Diamond
+
+`<< interpretation issues >>`
+
+When is a diamond executed multiple times?
+
+A diamond pointing to another diamond: it may be a call to a call. both diamonds may represent the same call. They might never execute individually.
+
+### Commands Might Only Be Called from Another Command
+
+< 2021-04-20: These issues seem to disappear with introducing the diamond for execution and having distinct call and reference lines: dashed vs. solid line styles. >
+
+*Commands can only be called directly from another command.*
+
+< Because a call executes its target when its container square is executed. Actually, relate all restrictions to the fact that commands execute. >
+
+A command symbol might only have a call line if it’s directly inside another command. Usually the call line first exits the command that contains the call. In other words: a call line usually directly exits a square.
+
+![](images/7.%20Commands%20Ideas.053.png)
+
+Only when you call a nested command or an embedded command reference, the line doesn’t exit the command first:
+
+*Call to nested command:*  
+![](images/7.%20Commands%20Ideas.054.jpeg)
+
+*Call an internal command reference:*  
+![](images/7.%20Commands%20Ideas.055.jpeg)
+
 ### Loose Ideas
 
 `<< terminology >>`
@@ -96,3 +126,4 @@ Here I introduce basic terms in the area of executions and parameters. Here’s 
 - Argument
 - Executor
 - Execution
+

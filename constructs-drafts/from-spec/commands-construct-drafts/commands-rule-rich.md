@@ -23,7 +23,6 @@ __Contents__
 - [Accessing a Diamond Member During a Call](#accessing-a-diamond-member-during-a-call)
 - [Passing an Object Reference to a Command](#passing-an-object-reference-to-a-command)
 - [Command Can Set Object Reference itself Too](#command-can-set-object-reference-itself-too)
-- [Diamond Pointing to Another Diamond](#diamond-pointing-to-another-diamond)
 - [Nested Commands Rule Rich](#nested-commands-rule-rich)
 - [Loose Ideas](#loose-ideas)
 
@@ -228,14 +227,6 @@ It’s important that the command itself sets lines, because the line targets of
 
 < I don’t know a notation to distinct sets by the caller and sets by the call. Well... in a more explicit notation you might see that the caller calls the set or the called calls the set. >
 
-### Diamond Pointing to Another Diamond
-
-`<< interpretation issues >>`
-
-When is a diamond executed multiple times?
-
-A diamond pointing to another diamond: it may be a call to a call. both diamonds may represent the same call. They might never execute individually.
-
 ### Nested Commands Rule Rich
 
 A nested command might not redirect its definition, because then it might be a command call.
@@ -318,3 +309,7 @@ When a command is called, the contained command *references* are *not* called.
 ![](images/7.%20Commands%20Ideas.018.jpeg)
 
 When __A__ is called, __B__ and __D__ are called, but not __C__.
+
+-----
+
+(*Implicit* embedded command reference causes a separate implicit call.)

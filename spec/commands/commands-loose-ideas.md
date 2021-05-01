@@ -13,7 +13,6 @@ __Contents__
         - [Execution Basics](#execution-basics)
             - [Brainstorm](#brainstorm)
         - [Argument Access](#argument-access)
-            - [Prolog and Epilog](#prolog-and-epilog)
             - [Argument Assignment Requires Reading in Prolog!](#argument-assignment-requires-reading-in-prolog)
             - [Writing Arguments](#writing-arguments)
         - [Create Argument and Call Argument’s Members](#create-argument-and-call-arguments-members)
@@ -27,9 +26,9 @@ __Contents__
         - [Other](#other)
         - [Commands to Commands, Objects to Object](#commands-to-commands-objects-to-object)
         - [Brainstorm](#brainstorm-2)
+    - [Command Symbol Roles](#command-symbol-roles)
+    - [Reference and Call Targets](#reference-and-call-targets)
     - [More Ideas](#more-ideas)
-        - [Command Symbol Roles](#command-symbol-roles)
-        - [Reference and Call Targets](#reference-and-call-targets)
 
 ### From the Original Symbol Documentation
 
@@ -41,53 +40,8 @@ __Contents__
 
 ###### Brainstorm
 
-`<< rule rich >>`
-
-####### Brainstorm 5
-
-`<< rule rich >>`
-
-(*Implicit* embedded command reference causes a separate implicit call.)
-
-####### Brainstorm 6
-
-`<< interpretation issues >>`
-
-__*Commands can only be Called from another Command*__
-
-*Commands can only be called directly from another command.*
-
-< Because a call executes its target when its container square is executed. Actually, relate all restrictions to the fact that commands execute. >
-
-< 2021-04-20: These issues seem to disappear with introducing the diamond for execution and having distinct call and reference lines: dashed vs. solid line styles. >
-
-A command symbol might only have a call line if it’s directly inside another command. Usually the call line first exits the command that contains the call. In other words: a call line usually directly exits a square.
-
-![](images/7.%20Commands%20Ideas.053.png)
-
-Only when you call a nested command or an embedded command reference, the line doesn’t exit the command first:
-
-*Call to nested command:*  
-![](images/7.%20Commands%20Ideas.054.jpeg)
-
-*Call an internal command reference:*  
-![](images/7.%20Commands%20Ideas.055.jpeg)
-
-`<< creation behavior of commands >>`
-
-Using arguments always requires assignment.
-
-Just before execution you’ll write arguments. Just after execution, you’ll read arguments. Those are the main two occasions you’ll access arguments.
 
 ##### Argument Access
-
-###### Prolog and Epilog
-
-`<< creation behavior of commands >>`
-
-Writing and reading arguments require things to be done just before and right after the execution. Things that might be done just before execution are called the *prolog* of the execution. Things that might be done just after the execution are called the *epilog*.
-
-Writing arguments takes place in the prolog and reading arguments takes place in the epilog.
 
 ###### Argument Assignment Requires Reading in Prolog!
 
@@ -106,10 +60,6 @@ Assignment of arguments simply *might* take place in the prolog, even though the
 Assignment commands are fundamental commands of the Symbol Language and behave much different from other commands.
 
 ###### Writing Arguments
-
-`<< creation behavior of commands >>`
-
-Writing an argument before execution means to set its state or line target.
 
 `<< system interfaces >>`
 
@@ -190,18 +140,6 @@ Except for passing command reference to a command.
 
 ###### Summary of Old Subdivision
 
-`<< creation behavior of commands >>`
-
-- Writing arguments before the call:
-    - Assignment: lines or state
-    - Creation
-    - Possibly call members of an argument
-- Reading parameters before the call:
-    - Reading line targets (direct, final or intermediate)
-    - Reading state
-- Writing a parameter means setting a line or reading state from an object and writing it to a parameter
-- Reading a parameter means writing it to another object
-
 `<< rule rich >>`
 
 - Execution basics: 
@@ -209,11 +147,6 @@ Except for passing command reference to a command.
     - for instance, diamond only inside a command symbol
     - Stuff like that. Simple issues that you can easily understand.
 
-`<< creation behavior of commands>>`
-
-- Diamond member access:
-    - The caller of a diamond accesses members just before the call and just after
-    - The callees of a diamond can access the caller's members if given references to them
 
 `<< terminology >>`
 
@@ -251,21 +184,6 @@ Except for passing command reference to a command.
 - Line of connected diamonds change simultaneously
 
 ###### New Subdivision
-
-`<< creation behavior of commands >>`
-
-- Parameter Access
-    - Writing parameters before execution
-        - Assignment: lines or state
-        - Creation
-        - Possibly call members of an argument
-    - Reading parameters after execution
-        - Reading line targets (direct, final or intermediate)
-        - Reading state
-    - Access during execution
-        - By owner
-        - By child executions (~ is this the proper place for this?)
-            - The callees of a diamond can access the caller's members if given references to them
 
 `<< terminology >>`
 
@@ -309,16 +227,6 @@ The problems proposed in this text might have to do with:
 - Paradox: Parameter assignments involve consults of parameters in prolog of command call, while consults are usually always in epilog.
 - Diamond may only represent a single execution per definition call (not regarding unconditional jumps (? The latter is questionable.)
 
-####### New
-
-`<< creation behavior of commands >>`
-
-- Prolog and epilog
-- Parameter writes in prolog
-- Parameter reads (/consults) in epilog 
-
-- Paradox: Assignments of parameters suggests reading parameters. However, these assignments do take place in the prolog, even though they suggest reads. Assignments are different that way.
-
 ###### Argument Access Summary
 
 `<< creation behavior of commands >>`
@@ -348,16 +256,6 @@ A command symbol might have one of four roles:
 - call
 - reference
 - nested command
-
------
-
-`<< creation behavior of commands >>`
-
-2004,
-
-Generating the stack operations preceding and concluding function calls is called prolog and epilog code in C
-
-JJ
 
 ##### Commands to Commands, Objects to Object
 
@@ -409,9 +307,7 @@ But if it has a reference line it is regarded no more than a reference or call t
 *A is the command reference, B is the definition:*  
 ![](images/7.%20Commands%20Ideas.066.jpeg)
 
-#### More Ideas
-
-##### Command Symbol Roles
+#### Command Symbol Roles
 
 `<< construct drafts >>`
 
@@ -427,7 +323,7 @@ Note here that the access symbol of a solid command reference line is also drawn
 
 < 2021-04-20: This seems from before the diamond shape was introduced. Other clues may have been hoped to disambiguate the different programming constructs. A newer idea may use diamond shapes along with squares, and may suggest a more specific use of solid lines and dashed lines. >
 
-##### Reference and Call Targets
+#### Reference and Call Targets
 
 `<< construct drafts >>`
 
@@ -452,6 +348,8 @@ Here is a list of possible reference targets and call targets:
 | ![](images/7.%20Commands%20Ideas.077.jpeg) | __Reference to sibling inactive nested command, in a square.__ <br> Only possible for static command members or exclusive establishment. | 
 | ![](images/7.%20Commands%20Ideas.078.jpeg) | __Reference to sibling active nested command, in a square.__ <br> Only possible for static command members or exclusive establishment. | 
 | ![](images/7.%20Commands%20Ideas.079.jpeg) | __Call to sibling inactive nested command, in a square.__ <br> This is like a jump to a nested command, that might otherwise not execute. <br> Only possible for static command members or exclusive establishment. |
+
+#### More Ideas
 
 `<< rule rich >>`
 

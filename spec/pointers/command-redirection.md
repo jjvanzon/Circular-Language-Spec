@@ -1,4 +1,4 @@
-﻿Circular Language Spec | Commands
+﻿Circular Language Spec | Pointers
 =================================
 
 Command Redirection
