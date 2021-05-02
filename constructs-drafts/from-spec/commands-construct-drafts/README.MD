@@ -14,6 +14,10 @@ Commands Construct Drafts Articles
 
     - Texts that might show the struggle to make this diagram notation work for commands.
 
+- [Commands Terminology](commands-terminology.md)
+
+    - Terminology quibbles in the area of commands, might be moved here.
+
 - [Creation Behavior of Commands | Construct Drafts](creation-behavior-of-commands-construct-drafts.md)
 
     - Lesser worked out ideas about this topic.

@@ -2,7 +2,7 @@ Circular Language Construct Drafts | From Spec
 ==============================================
 
 Commands Terminology
--------------------
+--------------------
 
 `[ Deprecated documentation ]`
 
@@ -17,7 +17,7 @@ __Contents__
 
 ### Introduction
 
-The Circular Language Spec itself might be more about *notation* and *meaning*, rather than specific terminology. Therefor, terminology quibbles in the area of commands, were moved here instead.
+The Circular Language Spec itself might be more about *notation* and *meaning*, rather than specific terminology. Therefor, terminology quibbles in the area of commands, might be moved here instead.
 
 ### Sub-Commands Terminology (1)
 
