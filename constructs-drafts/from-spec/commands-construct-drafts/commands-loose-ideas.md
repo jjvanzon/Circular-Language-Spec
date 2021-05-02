@@ -1,8 +1,8 @@
 Circular Language Construct Drafts | From Spec
 ==============================================
 
-Commands Construct Drafts
--------------------------
+Commands Loose Ideas
+--------------------
 
 `[ Deprecated documentation ]`
 
@@ -10,13 +10,13 @@ __Contents__
 
 - [Nested Commands](#nested-commands)
 - [No Dashed Lines for Commands](#no-dashed-lines-for-commands)
-- [Loose Ideas](#loose-ideas)
+- [Misc Ideas](#misc-ideas)
 
 ### Nested Commands
 
 `<< nice formulation >>`  
 
-A nested command also executes, when its parent command executes,
+A nested command also executes, when its parent command executes:
 
 `<< details >>`
 
@@ -44,7 +44,7 @@ But if it has a reference line it is regarded no more than a reference or call t
 *A is the command reference, B is the definition:*  
 ![](images/7.%20Commands%20Ideas.066.jpeg)
 
-### Loose Ideas
+### Misc Ideas
 
 `<< about other technology >>`
 

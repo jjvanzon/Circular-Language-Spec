@@ -6,9 +6,9 @@ Commands Construct Drafts Articles
 
 `[ Preliminary documentation ]`
 
-- [Commands Construct Drafts](commands-construct-drafts.md)
+- [Commands Loose Ideas](commands-loose-ideas.md)
 
-    - Lesser worked out ideas about this topic.
+    - Lesser worked out ideas about commands.
 
 - [Commands Rule Rich](commands-rule-rich.md)
 
