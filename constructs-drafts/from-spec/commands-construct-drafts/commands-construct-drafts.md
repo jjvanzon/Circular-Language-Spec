@@ -9,7 +9,6 @@ Commands Construct Drafts
 __Contents__
 
 - [Nested Commands](#nested-commands)
-- [Diamond Pointing to Another Diamond](#diamond-pointing-to-another-diamond)
 - [No Diamond Shapes](#no-diamond-shapes)
     - [Commands Might Only Be Called from Another Command](#commands-might-only-be-called-from-another-command)
     - [Command Symbol Roles](#command-symbol-roles)
@@ -21,7 +20,7 @@ __Contents__
 
 `<< nice formulation >>`  
 
-Also executes, when its parent command executes,
+A nested command also executes, when its parent command executes,
 
 `<< details >>`
 
@@ -34,14 +33,6 @@ but it doesn’t execute, unless you call it.
 The nested command might be directly contained by a command. So this is not a nested command:
 
 ![](images/7.%20Commands%20Ideas.029.png)
-
-### Diamond Pointing to Another Diamond
-
-`<< interpretation issues >>`
-
-When is a diamond executed multiple times?
-
-A diamond pointing to another diamond: it may be a call to a call. both diamonds may represent the same call. They might never execute individually.
 
 ### No Diamond Shapes
 

@@ -25,6 +25,7 @@ __Contents__
 - [Command Can Set Object Reference itself Too](#command-can-set-object-reference-itself-too)
 - [Argument Assignment Requires Reading in Prolog!](#argument-assignment-requires-reading-in-prolog)
 - [Commands to Commands, Objects to Object](#commands-to-commands-objects-to-object)
+- [Pointing to Diamonds](#pointing-to-diamonds)
 - [Forming New Subdivision](#forming-new-subdivision)
     - [Old Subdivision](#old-subdivision)
     - [New Subdivision](#new-subdivision)
@@ -263,6 +264,14 @@ Formally, there can be no lines connecting objects and commands:
 ![](images/7.%20Commands%20Ideas.062.jpeg)
 
 So then object symbols point only to object symbols and command symbols only to command symbols.
+
+### Pointing to Diamonds
+
+`<< interpretation issues >>`
+
+When is a diamond executed multiple times?
+
+A diamond pointing to another diamond: it may be a call to a call. both diamonds may represent the same call. They might never execute individually.
 
 ### Forming New Subdivision
 
