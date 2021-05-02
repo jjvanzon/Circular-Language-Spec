@@ -16,16 +16,16 @@ Commands Construct Drafts Articles
 
 - [Commands Terminology](commands-terminology.md)
 
-    - Terminology quibbles in the area of commands, might be moved here.
+    - Terminology quibbles in the area of commands.
 
 - [Creation Behavior of Commands | Draft Texts](creation-behavior-of-commands-draft-texts.md)
 
-    - Lesser worked out ideas about this topic.
+    - Lesser worked out ideas about creation behavior of commands.
 
 - [No Diamond Shapes](no-diamond-shapes.md)
 
-    - These ideas seem from before the diamond shape was introduced, to symbolize *execution*.
+    - These ideas seem from before the diamond shape was introduced, that symbolizes *execution*.
 
 - [Start & Stop Construct Drafts](start-and-stop-construct-drafts.md)
 
-    - Some ideas that may be of use once for the Start & Stop article from the spec.
+    - Some ideas that may be of use once for the *Start & Stop* article from the spec.
