@@ -14,6 +14,9 @@ __Contents__
 - [Nested Commands](#nested-commands)
 - [Diamond Pointing to Another Diamond](#diamond-pointing-to-another-diamond)
 - [Commands Might Only Be Called from Another Command](#commands-might-only-be-called-from-another-command)
+- [No Diamond Shapes](#no-diamond-shapes)
+    - [Command Symbol Roles](#command-symbol-roles)
+    - [Reference and Call Targets](#reference-and-call-targets)
 - [Loose Ideas](#loose-ideas)
 
 ### Sub-Commands
@@ -102,6 +105,38 @@ Only when you call a nested command or an embedded command reference, the line d
 *Call an internal command reference:*  
 ![](images/7.%20Commands%20Ideas.055.jpeg)
 
+### No Diamond Shapes
+
+2021-04-20: These idea seem from before the diamond shape was introduced. Other clues may have been hoped to disambiguate the different programming constructs. A newer idea may use diamond shapes along with squares, and may suggest a more specific use of solid lines and dashed lines.
+
+#### Command Symbol Roles
+
+A call line makes the square a call. A reference line makes it a reference. No line at all indicates that it’s a command definition or a nested command. Lines can also be left out for abstraction reasons.
+
+| ![](images/7.%20Commands%20Ideas.067.png) | ![](images/Symbol%20Language%20(2004).409b.png) | ![](images/7.%20Commands%20Ideas.068.png) | ![](images/7.%20Commands%20Ideas.069.png) <br> ![](images/7.%20Commands%20Ideas.070.png) | ![](images/7.%20Commands%20Ideas.071.png) |
+|:----------:|:--------------:|:----:|:---------:|:---:|
+| Definition | Nested command | Call | Reference | Illegal: a square can’t be both a call and a reference |
+
+< Not true: a call might not directly exit a square if it calls a command reference embedded in the same command or a nested command of the command. >
+
+Note here that the access symbol of a solid command reference line is also drawn solid.
+
+#### Reference and Call Targets
+
+Here is a list of possible reference targets and call targets:
+
+|                                           |                                            |
+|:-----------------------------------------:|:------------------------------------------:|
+| ![](images/7.%20Commands%20Ideas.072.png) | ![](images/7.%20Commands%20Ideas.075a.png) |
+|          Reference to definition          |             Call to definition             |
+|                                           |                                            |
+| ![](images/7.%20Commands%20Ideas.073.png) | ![](images/7.%20Commands%20Ideas.075b.png) |
+|        Reference to nested command        |           Call to nested command           |
+|                                           |                                            |
+| ![](images/7.%20Commands%20Ideas.074.png) | ![](images/7.%20Commands%20Ideas.076.png)  |
+|          Reference to reference           |             Call to reference              |
+|                                           | (A call to a reference calls the referenced command) |
+
 ### Loose Ideas
 
 `<< terminology >>`
@@ -127,3 +162,26 @@ Here I introduce basic terms in the area of executions and parameters. Here’s 
 - Executor
 - Execution
 
+`<< terminology >>`
+
+- Basic Terms
+    - reference
+    - call
+    - definition
+    - nested command
+    - active nested command
+    - inactive nested command
+    - deeper nested command
+    - sub command 
+    - Definitions of the terms parameter and argument
+    - < Which precisely? >
+    - ...
+
+`<< terminology >>`
+
+A command symbol might have one of four roles:
+
+- definition
+- call
+- reference
+- nested command

@@ -28,6 +28,8 @@ __Contents__
 - [Line Peels](#line-peels)
 - [Ambiguity In Peels](#ambiguity-in-peels)
 - [Overview of Peals](#overview-of-peals)
+- [Loose Ideas](#loose-ideas)
+    - [Create Argument and Call Argument’s Members](#create-argument-and-call-arguments-members)
 
 ### Introduction
 
@@ -408,3 +410,25 @@ Ambiguity risks might be widely covered in the ‘Diagram Metrics’ in the book
     - Line grouping can make ambiguity of double lines even worse.
 
 You can decide on your own what kind of notation you want to use, but the programming environment adopts standard ways to draw a diagram. It automatically uses different notations in different views on the system.
+
+### Loose Ideas
+
+#### Create Argument and Call Argument’s Members
+
+`<< peels >>`
+
+You can let the separate object seem to be the argument itself, by using a peel notation:
+
+![](images/7.%20Commands%20Ideas.058.jpeg)
+
+The creation might still be visible, but you’ve excluded the line, without loosing the information that it’s really an external object. 
+
+Of course you might not show the implicit creation.
+
+![](images/7.%20Commands%20Ideas.059.jpeg)
+
+Then you just see that the object is created, and you might be satisfied knowing only *that* it is created, not where and when. This is just about exactly the effect of:
+
+```vb
+Command ( New Type )
+```

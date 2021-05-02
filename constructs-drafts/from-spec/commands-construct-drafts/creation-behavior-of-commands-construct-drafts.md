@@ -13,9 +13,12 @@ __Contents__
     - [Brainstorm](#brainstorm)
     - [Prolog and Epilog](#prolog-and-epilog)
     - [Writing Arguments](#writing-arguments)
-    - [Summary of Old Subdivision](#summary-of-old-subdivision)
-    - [New Subdivision](#new-subdivision)
+    - [Forming New Subdivision](#forming-new-subdivision)
+        - [Old Subdivision](#old-subdivision)
+        - [New Subdivision](#new-subdivision)
     - [New](#new)
+    - [Created Arguments](#created-arguments)
+        - [Doing Things with a Command’s Members](#doing-things-with-a-commands-members)
     - [More Ideas](#more-ideas)
 
 ### Loose Ideas
@@ -42,7 +45,11 @@ Writing arguments may take place in the prolog and reading arguments may take pl
 
 Writing an argument before execution means to set its state or line target.
 
-#### Summary of Old Subdivision
+#### Forming New Subdivision
+
+These seem fragments of an attempt to re-subdivide topics formerly inside the original Symbol documentation from 2004.
+
+##### Old Subdivision
 
 - Writing arguments before the call:
     - Assignment: lines or state
@@ -60,7 +67,7 @@ Writing an argument before execution means to set its state or line target.
     - The caller of a diamond accesses members just before the call and just after
     - The callees of a diamond can access the caller's members if given references to them
 
-#### New Subdivision
+##### New Subdivision
 
 - Parameter Access
     - Writing parameters before execution
@@ -83,6 +90,22 @@ Writing an argument before execution means to set its state or line target.
 
 - Paradox: Assignments of parameters suggests reading parameters. However, these assignments do take place in the prolog, even though they suggest reads. Assignments are different that way.
 
+#### Created Arguments
+
+`<< implementations >>`
+
+A command can decide if an argument is a created object or not. If it is a created object, then the object is created in the prolog, even before writing arguments. The argument object is created, then it is written, then the command executes.
+
+Arguments as such are created objects directly contained by the command. They shouldn’t have lines. 
+
+In the epilog, first arguments are read before the created arguments are destroyed. The command only destroys objects it directly contains.
+
+##### Doing Things with a Command’s Members
+
+`<< interpretation >>`
+
+It may be an idea that parameter references might all represent assignment calls. For instance that an object would be *assigned* to yet another variable after the the call executed. In contrast to that another interpretation might be that: a command object might still exist after it is executed, (output) parameters might still be referenced freely. For instance when a command creates a new object and returns it there may still be pointers to the command's returned object.
+
 #### More Ideas
 
 2004,
@@ -90,3 +113,20 @@ Writing an argument before execution means to set its state or line target.
 Generating the stack operations preceding and concluding function calls is called prolog and epilog code in C
 
 JJ
+
+-----
+
+- Writing parameters before execution
+    - Assignment: lines or state
+    - Creation
+    - Possibly call members of an argument
+- Reading parameters after execution
+    - Reading line targets (direct, final or intermediate)
+    - Reading state
+
+-----
+
+`<< terminology >>`
+
+- The terms prolog and epilog.
+- The term executor and execution

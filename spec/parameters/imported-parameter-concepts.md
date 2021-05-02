@@ -20,6 +20,7 @@ __Contents__
 - [Return Values](#return-values)
     - [Concept](#concept-2)
     - [Diagram](#diagram)
+    - [Return Values Loose Ideas](#return-values-loose-ideas)
 - [Parameter Order](#parameter-order)
     - [Concept](#concept-3)
     - [Diagram](#diagram-1)
@@ -161,6 +162,16 @@ As discussed in the article *Return Values*, Circular might not limit the amount
 ![](images/2.%20Imported%20Parameter%20Concepts.026.png)
 
 The correct usage of the term output might be discussed only later, in the *Advanced Command Topics*.
+
+#### Return Values Loose Ideas
+
+![](images/7.%20Commands%20Ideas.062.jpeg)
+
+< Perhaps ignore this talk about implicit notations. >
+
+The above might be a valid notation. It actually denotes the object being a pointer to the *return value* of the command. It’s an *implicit* notation (covered later), that actually standard for something else:
+
+![](images/7.%20Commands%20Ideas.063.jpeg)
 
 ### Parameter Order
 

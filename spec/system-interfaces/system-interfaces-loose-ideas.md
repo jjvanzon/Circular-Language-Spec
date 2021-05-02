@@ -40,9 +40,10 @@ __Contents__
     - [From the original Symbol documentation](#from-the-original-symbol-documentation)
         - [Assignment](#assignment)
         - [Distinguishing Assignment Source and Target](#distinguishing-assignment-source-and-target)
-        - [Executions & Parameters](#executions--parameters)
-            - [Brainstorm](#brainstorm)
+        - [Forming New Subdivision](#forming-new-subdivision)
 - [Enumeration of Attributes](#enumeration-of-attributes)
+- [Writing Arguments](#writing-arguments)
+- [Create Argument and Call Argument’s Members](#create-argument-and-call-arguments-members)
 - [Other Ideas](#other-ideas)
 
 ### More Commands & Aspects
@@ -844,11 +845,11 @@ Direction can be determined by assumption of the most common situation. Therefor
 
 For state assignments it’s advised to always show the access symbol. 
 
-##### Executions & Parameters
+##### Forming New Subdivision
 
-###### Brainstorm
+These seem fragments of an attempt to re-subdivide topics formerly inside the original Symbol documentation from 2004.
 
-####### Summary of Old Subdivision
+#######  Old Subdivision
 
 - Basics of assignment
     - Line assignment
@@ -874,6 +875,42 @@ A symbol might simply become an attribute depending on its characteristics. Attr
 `The*` attributes `could` be returned by `the*` object as a `separate*` list, `instead` of `looking` them up in an object’s collection of related objects.
 
 An object might return a list of `just` its attributes, `instead` of `just all` related objects.
+
+### Writing Arguments
+
+An assignment as such, requires you to get a value from one place and set the argument to it. So writing an argument actually requires both a __Get__ and a __Set__. The fact that it’s the argument that’s __Set__ makes it writing *the argument*.
+
+### Create Argument and Call Argument’s Members
+
+`<< system interfaces >>`
+
+There may be more things you want to do with an argument before passing it to a command. You may want to create a brand new object as an argument and you may want to call some members of the argument first. You *can’t* do these operations directly on the argument. You might create a separate object, manipulate it and then pass it by reference
+
+There’s a shorthand for creating a brand new object and passing it by reference. In text code this might look like this:
+
+```vb
+Command ( New Type )
+```
+
+It’s declared directly inside the command call. That is: unless the object is used elsewhere too. The above can also be notated as follows:
+
+```vb
+Object As Type       'Declaration
+Object = New Type    'Creation
+Command ( Object ) 'Pass to Command
+```
+
+But if __Object__ isn’t used anywhere else, you can just type: 
+
+```vb
+Command ( New Type )
+```
+
+That way, the object seems to be the argument itself, even though you’re actually passing an object by reference.
+
+In diagram code, the declaration of the object, its creation and its being passed to the command, looks like this: 
+
+![](images/7.%20Commands%20Ideas.057.jpeg)
 
 ### Other Ideas
 

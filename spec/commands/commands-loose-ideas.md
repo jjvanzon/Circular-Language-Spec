@@ -10,160 +10,24 @@ __Contents__
 
 - [From the Original Symbol Documentation](#from-the-original-symbol-documentation)
     - [Executions & Parameters](#executions--parameters)
-        - [Execution Basics](#execution-basics)
-            - [Brainstorm](#brainstorm)
-        - [Argument Access](#argument-access)
-            - [Argument Assignment Requires Reading in Prolog!](#argument-assignment-requires-reading-in-prolog)
-            - [Writing Arguments](#writing-arguments)
-        - [Create Argument and Call Argument’s Members](#create-argument-and-call-arguments-members)
-        - [Created Arguments](#created-arguments)
-        - [Do It with a Parameter’s Members](#do-it-with-a-parameters-members)
-        - [Brainstorm](#brainstorm-1)
-            - [Summary of Old Subdivision](#summary-of-old-subdivision)
-            - [New Subdivision](#new-subdivision)
+        - [Forming New Subdivision](#forming-new-subdivision)
+            - [Old Subdivision](#old-subdivision)
+        - [Brainstorm](#brainstorm)
             - [New Brainstorm Texts](#new-brainstorm-texts)
             - [Argument Access Summary](#argument-access-summary)
-        - [Other](#other)
         - [Commands to Commands, Objects to Object](#commands-to-commands-objects-to-object)
-        - [Brainstorm](#brainstorm-2)
-    - [Command Symbol Roles](#command-symbol-roles)
+        - [Brainstorm](#brainstorm-1)
     - [Reference and Call Targets](#reference-and-call-targets)
-    - [More Ideas](#more-ideas)
 
 ### From the Original Symbol Documentation
 
 #### Executions & Parameters
 
-##### Execution Basics
+##### Forming New Subdivision
 
-`< 2021-04-20: Here the struggle might become visible of trying to this notation work for commands. >`
+These seem fragments of an attempt to re-subdivide topics formerly inside the original Symbol documentation from 2004.
 
-###### Brainstorm
-
-
-##### Argument Access
-
-###### Argument Assignment Requires Reading in Prolog!
-
-`<< rule rich >>`
-
-Argument assignment takes place in the *prolog*. But *setting* the argument also requires *getting* the argument. However, getting the argument was said to take place in the *epilog*. For the purpose of *setting* the argument, however, *getting* happens in the *prolog*.
-
-An assignment call:
-
-![](images/7.%20Commands%20Ideas.056.jpeg)
-
-*consults* the argument to *write*: *reads* the argument to *write*.
-
-Assignment of arguments simply *might* take place in the prolog, even though they require reading the arguments.
-
-Assignment commands are fundamental commands of the Symbol Language and behave much different from other commands.
-
-###### Writing Arguments
-
-`<< system interfaces >>`
-
-An assignment as such, requires you to get a value from one place and set the argument to it. So writing an argument actually requires both a __Get__ and a __Set__. The fact that it’s the argument that’s __Set__ makes it writing *the argument*.
-
-##### Create Argument and Call Argument’s Members
-
-`<< system interfaces >>`
-
-There may be more things you want to do with an argument before passing it to a command. You may want to create a brand new object as an argument and you may want to call some members of the argument first. You *can’t* do these operations directly on the argument. You might create a separate object, manipulate it and then pass it by reference
-
-There’s a shorthand for creating a brand new object and passing it by reference. In text code this might look like this:
-
-```vb
-Command ( New Type )
-```
-
-It’s declared directly inside the command call. That is: unless the object is used elsewhere too. The above can also be notated as follows:
-
-```vb
-Object As Type       'Declaration
-Object = New Type    'Creation
-Command ( Object ) 'Pass to Command
-```
-
-But if __Object__ isn’t used anywhere else, you can just type: 
-
-```vb
-Command ( New Type )
-```
-
-That way, the object seems to be the argument itself, even though you’re actually passing an object by reference.
-
-In diagram code, the declaration of the object, its creation and its being passed to the command, looks like this: 
-
-![](images/7.%20Commands%20Ideas.057.jpeg)
-
-`<< peels >>`
-
-You can let the separate object seem to be the argument itself, by using a peel notation:
-
-![](images/7.%20Commands%20Ideas.058.jpeg)
-
-The creation might still be visible, but you’ve excluded the line, without loosing the information that it’s really an external object. 
-
-Of course you might not show the implicit creation.
-
-![](images/7.%20Commands%20Ideas.059.jpeg)
-
-Then you just see that the object is created, and you might be satisfied knowing only *that* it is created, not where and when. This is just about exactly the effect of:
-
-```vb
-Command ( New Type )
-```
-
-##### Created Arguments
-
-`<< implementations >>`
-
-A command can decide if an argument is a created object or not. If it is a created object, then the object is created in the prolog, even before writing arguments. The argument object is created, then it is written, then the command executes.
-
-Arguments as such are created objects directly contained by the command. They shouldn’t have lines. 
-
-In the epilog, first arguments are read before the created arguments are destroyed. The command only destroys objects it directly contains.
-
-##### Do It with a Parameter’s Members
-
-`<< details >>`
-
-<
-*Other things done with parameters*  
-or keeping a reference to a created parameter or __do the same with members of parameters__... Hmmm...
-
-Except for passing command reference to a command.
-\>
-
-##### Brainstorm
-
-###### Summary of Old Subdivision
-
-`<< rule rich >>`
-
-- Execution basics: 
-    - simple issues regarding execution
-    - for instance, diamond only inside a command symbol
-    - Stuff like that. Simple issues that you can easily understand.
-
-
-`<< terminology >>`
-
-- The terms:
-    - reference
-    - call
-    - definition
-    - nested command
-    - active nested command
-    - inactive nested command
-    - deeper nested command 
-    - sub command 
-    - ...
-
-`<< special access >>`
-
-- Nested command access
+###### Old Subdivision
 
 `<< explains other technology >>`
 
@@ -174,53 +38,16 @@ Except for passing command reference to a command.
 - Inside directly accessible, outside only 'indirectly' accessible (if line set FOR you)
 - Seeming randomly referencing diamond members. 
 
-`<< rule rich >>`
-
-- Wanneer wordt een diamond meerdere keren geexecute?
-
 `<< details >>`
 
 - Diamond pointing to another diamond
 - Line of connected diamonds change simultaneously
 
-###### New Subdivision
-
-`<< terminology >>`
-
-- Basic Terms
-    - Reference
-    - call
-    - definition
-    - nested command
-    - active nested command
-    - inactive nested command
-    - deeper nested command / sub command 
-    - Definitions of the terms parameter and argument
-    - < Which precisely? >
-    - ...
-
-`<< rule rich >>`
-
-- Execution Basics
-    - Simple issues regarding execution < Which precisely? >
-    - For instance, diamond only inside a command symbol
-    - Stuff like that. Simple issues that you can easily understand.
-    - Diamond pointing to another diamond
-
-- Wanneer wordt een diamond meerdere keren geexecute?
-
-?:
-
-Line of connected diamonds change simultaneously
+##### Brainstorm
 
 ###### New Brainstorm Texts
 
 The problems proposed in this text might have to do with:
-
-`<< terminology >>`
-
-- The terms prolog and epilog.
-- The term executor and execution
 
 `<< details >>`
 
@@ -229,16 +56,6 @@ The problems proposed in this text might have to do with:
 
 ###### Argument Access Summary
 
-`<< creation behavior of commands >>`
-
-- Writing parameters before execution
-    - Assignment: lines or state
-    - Creation
-    - Possibly call members of an argument
-- Reading parameters after execution
-    - Reading line targets (direct, final or intermediate)
-    - Reading state
-
 `<< details >>`
 
 - Access during execution
@@ -246,42 +63,7 @@ The problems proposed in this text might have to do with:
     - By child executions (~ is this the proper place for this?)
         - The callees of a diamond can access the caller's members if given references to them
 
-##### Other
-
-`<< terminology >>`
-
-A command symbol might have one of four roles:
-
-- definition
-- call
-- reference
-- nested command
-
 ##### Commands to Commands, Objects to Object
-
-`<< rule rich >>`
-
-< 2008-10-12 I am not sure I should impose this rule or not >
-
-Commands can be tied only to commands.
-
-![](images/7.%20Commands%20Ideas.060.png)
-
-Objects can be tied only to objects.
-
-![](images/7.%20Commands%20Ideas.061.png)
-
-Formally, there can be no lines connecting objects and commands:
-
-![](images/7.%20Commands%20Ideas.062.jpeg)
-
-`<< return values >>`
-
-< Ignore this talk about implicit notations. >
-
-However, the above *is* a valid notation. It actually denotes the object being a pointer to the *return value* of the command. It’s an *implicit* notation (covered later), that actually standard for something else:
-
-![](images/7.%20Commands%20Ideas.063.jpeg)
 
 `<< already covered >>`
 
@@ -307,39 +89,9 @@ But if it has a reference line it is regarded no more than a reference or call t
 *A is the command reference, B is the definition:*  
 ![](images/7.%20Commands%20Ideas.066.jpeg)
 
-#### Command Symbol Roles
-
-`<< construct drafts >>`
-
-A call line makes the square a call. A reference line makes it a reference. No line at all indicates that it’s a command definition or a nested command. Lines can also be left out for abstraction reasons.
-
 | ![](images/7.%20Commands%20Ideas.067.png) | ![](images/Symbol%20Language%20(2004).409b.png) | ![](images/7.%20Commands%20Ideas.068.png) | ![](images/7.%20Commands%20Ideas.069.png) <br> ![](images/7.%20Commands%20Ideas.070.png) | ![](images/7.%20Commands%20Ideas.071.png) |
-|:----------:|:------:|:----:|:---------:|:------------------------------------------------------:|
-| Definition | Nested command | Call | Reference | Illegal: a square can’t be both a call and a reference |
-
-< Not true: a call might not directly exit a square if it calls a command reference embedded in the same command or a nested command of the command >
-
-Note here that the access symbol of a solid command reference line is also drawn solid.
-
-< 2021-04-20: This seems from before the diamond shape was introduced. Other clues may have been hoped to disambiguate the different programming constructs. A newer idea may use diamond shapes along with squares, and may suggest a more specific use of solid lines and dashed lines. >
 
 #### Reference and Call Targets
-
-`<< construct drafts >>`
-
-Here is a list of possible reference targets and call targets:
-
-|                                           |                                            |
-|:-----------------------------------------:|:------------------------------------------:|
-| ![](images/7.%20Commands%20Ideas.072.png) | ![](images/7.%20Commands%20Ideas.075a.png) |
-|          Reference to definition          |             Call to definition             |
-|                                           |                                            |
-| ![](images/7.%20Commands%20Ideas.073.png) | ![](images/7.%20Commands%20Ideas.075b.png) |
-|        Reference to nested command        |           Call to nested command           |
-|                                           |                                            |
-| ![](images/7.%20Commands%20Ideas.074.png) | ![](images/7.%20Commands%20Ideas.076.png)  |
-|          Reference to reference           |             Call to reference              |
-|                                           | (A call to a reference calls the referenced command) |
 
 `<< commands example diagrams >>`
 
@@ -348,9 +100,3 @@ Here is a list of possible reference targets and call targets:
 | ![](images/7.%20Commands%20Ideas.077.jpeg) | __Reference to sibling inactive nested command, in a square.__ <br> Only possible for static command members or exclusive establishment. | 
 | ![](images/7.%20Commands%20Ideas.078.jpeg) | __Reference to sibling active nested command, in a square.__ <br> Only possible for static command members or exclusive establishment. | 
 | ![](images/7.%20Commands%20Ideas.079.jpeg) | __Call to sibling inactive nested command, in a square.__ <br> This is like a jump to a nested command, that might otherwise not execute. <br> Only possible for static command members or exclusive establishment. |
-
-#### More Ideas
-
-`<< rule rich >>`
-
-A diamond can be executing. Only during the execution of the diamond, lines between its non static children can be real. If the diamond isn’t executing, or it’s not a diamond, but a square, lines between the non static children are suggestive. Only lines between static members in such cases, can be real.

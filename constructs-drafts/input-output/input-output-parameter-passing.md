@@ -63,10 +63,11 @@ __Contents__
         - [Implicit Notations](#implicit-notations-1)
             - [Previous Texts](#previous-texts-1)
             - [Brainstorm Items](#brainstorm-items)
-        - [Brainstorm](#brainstorm)
-            - [Summary of Old Subdivision](#summary-of-old-subdivision)
+        - [Forming New Subdivision](#forming-new-subdivision)
+            - [Old Subdivision](#old-subdivision)
             - [New Subdivision](#new-subdivision)
             - [New Main Subdivision](#new-main-subdivision)
+        - [Brainstorm](#brainstorm)
             - [New Brainstorm Texts](#new-brainstorm-texts)
             - [Argument Access Summary](#argument-access-summary)
         - [Brainstorm](#brainstorm-1)
@@ -1346,9 +1347,11 @@ A reference to something inside a square causes an implicit call to the square, 
 
 Implicit calls when referencing square contents (and their explicit diagram representations)
 
-##### Brainstorm
+##### Forming New Subdivision
 
-###### Summary of Old Subdivision
+These seem fragments of an attempt to re-subdivide topics formerly inside the original Symbol documentation from 2004.
+
+###### Old Subdivision
 
 - Implicit call and Explicit call
 - Implicit return value reference
@@ -1388,6 +1391,8 @@ Implicit calls when referencing square contents (and their explicit diagram repr
 - Execution Basics
 - Execution Order
 - Implicit Notations
+
+##### Brainstorm
 
 ###### New Brainstorm Texts
 

@@ -23,14 +23,19 @@ __Contents__
 - [Accessing a Diamond Member During a Call](#accessing-a-diamond-member-during-a-call)
 - [Passing an Object Reference to a Command](#passing-an-object-reference-to-a-command)
 - [Command Can Set Object Reference itself Too](#command-can-set-object-reference-itself-too)
+- [Argument Assignment Requires Reading in Prolog!](#argument-assignment-requires-reading-in-prolog)
+- [Commands to Commands, Objects to Object](#commands-to-commands-objects-to-object)
+- [Forming New Subdivision](#forming-new-subdivision)
+    - [Old Subdivision](#old-subdivision)
+    - [New Subdivision](#new-subdivision)
 - [Nested Commands Rule Rich](#nested-commands-rule-rich)
 - [Loose Ideas](#loose-ideas)
 
 ### Introduction
 
-A struggle to make it work seems noticeable here. To make the notation work for commands just like for objects. Checking if commands can retain their integrity when subjected to this diagram notation. What might be expressed with this diagram notation, would it be *valid* for commands? Can this diagram notation be *sufficient* for expressing different command situations that might be imagined?
+A struggle to make it work seems noticeable here. To make the notation work for commands like for objects. Checking if commands can retain their integrity, when subjected to this diagram notation. What might be expressed with this diagram notation, would it be *valid* for commands? Can this diagram notation be *sufficient* for expressing different command situations that might be imagined?
 
-The answer to these quesions seems to be yes.
+The answer to these quesions seems to be 'yes'.
 
 The Circular Language Spec itself might be more about *notation* and *meaning*, rather than rules and constraints. But texts about the struggle to make it work may still be retained here in this article inside *Construct Drafts*.
 
@@ -227,6 +232,69 @@ It’s important that the command itself sets lines, because the line targets of
 
 < I don’t know a notation to distinct sets by the caller and sets by the call. Well... in a more explicit notation you might see that the caller calls the set or the called calls the set. >
 
+### Argument Assignment Requires Reading in Prolog!
+
+Argument assignment takes place in the *prolog*. But *setting* the argument also requires *getting* the argument. However, getting the argument was said to take place in the *epilog*. For the purpose of *setting* the argument, however, *getting* happens in the *prolog*.
+
+An assignment call:
+
+![](images/7.%20Commands%20Ideas.056.jpeg)
+
+*consults* the argument to *write*: *reads* the argument to *write*.
+
+Assignment of arguments simply *might* take place in the prolog, even though they require reading the arguments.
+
+Assignment commands are fundamental commands of the Symbol Language and behave much different from other commands.
+
+### Commands to Commands, Objects to Object
+
+< 2008-10-12 I am not sure I should impose this rule or not >
+
+Commands can be tied only to commands.
+
+![](images/7.%20Commands%20Ideas.060.png)
+
+Objects can be tied only to objects.
+
+![](images/7.%20Commands%20Ideas.061.png)
+
+Formally, there can be no lines connecting objects and commands:
+
+![](images/7.%20Commands%20Ideas.062.jpeg)
+
+### Forming New Subdivision
+
+These seem fragments of an attempt to re-subdivide topics formerly inside the original Symbol documentation from 2004.
+
+#### Old Subdivision
+
+...
+
+- Execution basics: 
+    - simple issues regarding execution
+    - for instance, diamond only inside a command symbol
+    - Stuff like that. Simple issues that you can easily understand.
+
+-----
+
+- Wanneer wordt een diamond meerdere keren geexecute?
+
+#### New Subdivision
+
+...
+
+- Execution Basics
+    - Simple issues regarding execution < Which precisely? >
+    - For instance, diamond only inside a command symbol
+    - Stuff like that. Simple issues that you can easily understand.
+    - Diamond pointing to another diamond
+
+- Wanneer wordt een diamond meerdere keren geexecute?
+
+?:
+
+Line of connected diamonds change simultaneously
+
 ### Nested Commands Rule Rich
 
 A nested command might not redirect its definition, because then it might be a command call.
@@ -313,3 +381,7 @@ When __A__ is called, __B__ and __D__ are called, but not __C__.
 -----
 
 (*Implicit* embedded command reference causes a separate implicit call.)
+
+-----
+
+A diamond can be executing. Only during the execution of the diamond, lines between its non static children can be real. If the diamond isn’t executing, or it’s not a diamond, but a square, lines between the non static children are suggestive. Only lines between static members in such cases, can be real.
