@@ -1,8 +1,8 @@
 Circular Language Construct Drafts | From Spec
 ==============================================
 
-Creation Behavior of Commands | Construct Drafts
-------------------------------------------------
+Creation Behavior of Commands | Draft Texts
+-------------------------------------------
 
 `[ Deprecated documentation ]`
 

@@ -18,7 +18,7 @@ Commands Construct Drafts Articles
 
     - Terminology quibbles in the area of commands, might be moved here.
 
-- [Creation Behavior of Commands | Construct Drafts](creation-behavior-of-commands-construct-drafts.md)
+- [Creation Behavior of Commands | Draft Texts](creation-behavior-of-commands-draft-texts.md)
 
     - Lesser worked out ideas about this topic.
 
