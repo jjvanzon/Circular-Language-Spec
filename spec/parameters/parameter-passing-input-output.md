@@ -1,8 +1,8 @@
 ﻿Circular Language Construct Drafts | Parameters
 ===============================================
 
-Parameter Passing | Input Output
---------------------------------
+Parameter Passing | In / Out / Thru
+-----------------------------------
 
 `[ Preliminary documentation ]`
 
@@ -75,6 +75,8 @@ __Contents__
     - [Other](#other-1)
 
 ### Introduction
+
+`<< obsolete ? >>`
 
 These sections were set aside in the project *Work Out Parameter Articles*.
 
@@ -433,7 +435,7 @@ So the long names of the different parameter passing types are:
 - ~~__Reference Inward, Value In__~~ 
 - ~~__Reference Inward, Value Thru__~~ 
 
-__Reference Inward, Value In__ and __Reference Inward, Value Thru__ are not relevant, because an reference *inward* only is about an *output* object.
+But __Reference Inward, Value In__ and __Reference Inward, Value Thru__ might not be relevant, because a reference *inward* only is about an *output* object.
 
 It is important to keep understanding that there are three elements to parameter passing:
 
@@ -513,6 +515,8 @@ Effectively, it might be the lowest cloning depth that might be transferred to t
 
 ### Strict about parameter passing
 
+`<< implementation >>`
+
 I really want the programming environment, to not so easily accept, that a parameter is typed throughput, when it is only read from. Because otherwise you rely too much on courtesy of the programmer, to make the whole system function correctly.
 
 You could define a parameter as throughput, but actually only read from it. In that case the parameter is implicitly degraded to an input parameter. The implicit parameter type counts. The implicit parameter passing is dependant on the way it is declared and the way it is used. A throughput parameter is not only declared as such, but also always used as such. 
@@ -526,6 +530,8 @@ It is also possible, that a parameter might not have a class. In that case any o
 When the class of a parameter is determined from the outside, then it is special. It is a __Class Reference__ parameter. In that case you may not be able to also use it as a normal __Reference__ parameter. < I don’t know yet. >
 
 ### Sub-commands are never output objects
+
+`<< rule rich >>`
 
 Sub-commands, so active command objects inside another command, are never referenced so sub-commands can never output objects.
 
@@ -557,11 +563,15 @@ When a command disposes objects after it is done, then those objects are called 
 
 ### Incidental parameter passing
 
+`<< rule rich >>`
+
 One time a command runs, something may only be read. Another time it may be read and written to. This changes the implicit position of the object in relation to to the command for each call to the command. You could stereotype it an input parameter as __Not Input__ and an output as __Not Output__ and a thru parameter as __Only Input__ or __Only Output__ or __Not Thruput__. But it might not replace the parameter’s __In, Out__ or __Thru__ properties, because they belong to the command definition.
 
 The object command’s on the other end of the relationship, also get additional typing based on the incidental parameter passing, but the passing names are not even determined yet.
 
 ### Indirect Value Transmission
+
+`<< input output >>`
 
 Used in abstract notations, explained later, a value line might not necessarily mean yielding over the value of one object on one end of the line to the other object on the other end of the line. It may be yielding over values between sub-objects. So it’s not synonym to a value assignment in that case.  
 But usually value direction means assigning the value of one object to another.
@@ -652,6 +662,8 @@ If an aspect is both __In__ and __Out__ and the two access control elements are 
 
 ### Brainstorm 2008-09-27
 
+`<< input output >>`
+
 I think the terms input and output should not be about whether something is written from the outside and whether something is written from the inside. That’s what I did earlier. I think the term input should mean: everything that is read on the inside of a command, and the term output should mean: everything that is written on the inside of a command.  
 So it is about what happens on the inside. Whether something is written or read from the outside is not the issue.
 
@@ -665,6 +677,8 @@ I might clean up the objectives of the current project and create a new plan for
 Then I can work my way up to an end point. And in the next project I can just calmly look at the exact complexity of input and output.
 
 ### Brainstorm 2008-09-26
+
+`<< input output >>`
 
 The problem with defining what is input and what is output, is:
 
@@ -785,7 +799,7 @@ JJ
 
 -----
 
-Parameter passings,  
+Parameter passing,  
 2008-09-05
 
 If a command parameter is typed with in, out, or though,  
@@ -793,6 +807,8 @@ then an object command can also be given a title depending
 on whether it might be input, output, throughput, etcetera.
 
 input is not an object that something is done to. It can be considered an object doing something to another object. So it is clearly an actor.
+
+`<< thruput parameters | affected used and transformed >>`
 
 It matters whether the object is used (read), affected (written), or produced. This alters the object’s position in relation to to the command.
 
@@ -802,6 +818,8 @@ JJ
 
 Parameters,   
 2008-06
+
+`<< construct drafts >>`
 
 Always something is the input and something is the output: at least one thing is used, and at least one thing is affected. But the affected thing can also be a new thing.  
 One thing is executed on another. So its data executed on data.
@@ -813,7 +831,9 @@ JJ
 Access Controling System Aspects,  
 2008-09-21
 
-When you access control the system aspects of a parameter, might this have implications for acces control of the object’s command?
+`<< broader view >>`
+
+When you access control the system aspects of a parameter, might this have implications for access control of the object’s command?
 
 When you show a command inside an object, how might you see, that the command outputs the object or if the command uses the object?
 
@@ -823,8 +843,7 @@ JJ
 
 2008-09-26
 
-Adapt the access control of system aspects
-in the parameter articles to Object Get for access and for copy...
+Adapt the access control of system aspects in the parameter articles to Object Get for access and for copy...
 
 JJ
 
@@ -833,6 +852,8 @@ JJ
 Parameters,  
 2008-09-11
 
+`<< construct drafts >>`
+
 Value In parameter used for selection  
 Value In parameter used for persistance
 
@@ -840,19 +861,25 @@ JJ
 
 -----
 
+`<< details >>`
+
 When a command is called, objects are filled into the parameters of the command. A command might use objects to do its work. The objects filled in as parameters are also called arguments.
 
 As commands call each other, every time different data is passed along to the different commands, that are called.
 
 -----
 
-Actually, the method might only become part of the classes that it directly uses. When the method uses submembers of the classes, the method might not become part of the classes of the submembers.
+`<< broader view >>`
+
+Actually, a command might only become part of the classes that it directly uses. When the method uses submembers of the classes, the method might not become part of the classes of the submembers.
 
 -----
 
 ByRefs have pros and cons in different situations.
 
 -----
+
+`<< usable >>`
 
 The objects inside a command can be regarded:
 
@@ -864,11 +891,13 @@ The objects inside a command can be regarded:
 
 -----
 
+`<< usable >>`
+
 The input parameters of a command are its writable objects. The output values are its readable objects. Objects that are read-write are like in-out or thru parameters.
 
 -----
 
-Return values,
+`<< return values >>`
 
 One readable object can be chosen to be the return value, which promotes it to being the main output parameter. This might not give it extra capabilities, only an extra notation in certain places. The return value might be denoted in a diagram by putting the term __Return__ near one of the parameters.
 
@@ -887,6 +916,10 @@ The child can call the referenced command at will.
 ### From the Original Symbol Documentation from 2004
 
 #### Command Parameters
+
+`<< already covered >>`
+
+`<< perhaps usable >>`
 
 Commands can have *parameters*: instructions passed along with the command that make the command behave differently. The __Button . Set Text__ command, for instance, has a __Text__ parameter, which indicates what the new text of the button might be.
 
@@ -937,6 +970,8 @@ Any line going out of a diamond is set just before the diamond executes.
 ####### Write, Read ≠ Input, Output
 
 As such, *read and write arguments* is not analogous to *input and output arguments*. A write argument can easily serve as an output argument.
+
+< 2021-05-02: It might be about context: reading from the inside, writing on the outside versus writing on the outside, reading on the inside. It seems about reading/writing in the context of containment structure. >
 
 ####### Reference Arguments
 
