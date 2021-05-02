@@ -20,7 +20,7 @@ __Contents__
 - [Return Values](#return-values)
     - [Concept](#concept-2)
     - [Diagram](#diagram)
-    - [Return Values Loose Ideas](#return-values-loose-ideas)
+    - [Return Values Idea](#return-values-idea)
 - [Parameter Order](#parameter-order)
     - [Concept](#concept-3)
     - [Diagram](#diagram-1)
@@ -163,13 +163,11 @@ As discussed in the article *Return Values*, Circular might not limit the amount
 
 The correct usage of the term output might be discussed only later, in the *Advanced Command Topics*.
 
-#### Return Values Loose Ideas
+#### Return Values Idea
 
 ![](images/7.%20Commands%20Ideas.062.jpeg)
 
-< Perhaps ignore this talk about implicit notations. >
-
-The above might be a valid notation. It actually denotes the object being a pointer to the *return value* of the command. It’s an *implicit* notation (covered later), that actually standard for something else:
+The above might be a valid notation. It might denote the object being a pointer to the *return value* of the command. It may be an *implicit* notation, that might  standard for something else:
 
 ![](images/7.%20Commands%20Ideas.063.jpeg)
 

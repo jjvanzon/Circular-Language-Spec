@@ -36,21 +36,23 @@ __Contents__
 - [Local variables in an Active Nested Command](#local-variables-in-an-active-nested-command)
 - [Command References in an Inactive Nested Command](#command-references-in-an-inactive-nested-command)
 - [Command References in an Active Nested Command](#command-references-in-an-active-nested-command)
-- [Older, Integrate...](#older-integrate)
+- [Reference to Sibling Inactive Nested Command](#reference-to-sibling-inactive-nested-command)
+- [Reference to Sibling Active Nested Command](#reference-to-sibling-active-nested-command)
+- [Call to Sibling Inactive Nested Command](#call-to-sibling-inactive-nested-command)
 
 ### Introduction
 
 This article tries to systematically demonstrate different situations of commands.
 
-Relationships between the following concepts may be demonstrated. It is containment relationships between these constructs, that might be explored. It may enrich an impression of commands in Circular.
+Relationships between the following concepts may be demonstrated. It is containment relationships between these constructs, that might be explored. This may enrich an impression of commands in Circular.
 
 | | | |
 |--------------------|-|------------------------------------------------------------------------------|
 | __Command definition__ | <img src="images/command-definition.png" width="100" /> | Does not execute directly but may get called. |
 | __Command call__ | <img src="images/command-call.png" width="100" /> | Executes a command definition it points out. |
 | __Command reference__ | <img src="images/command-reference.png" width="120" /> | Pointer to another command. |
-| __Active nested command__ | <img src="images/active-nested command.png" width="80" /> | Command defined inside another command, that may execute. |
-| __Inactive nested command__ | <img src="images/inactive-nested command.png" width="80" /> | Command defined inside another command, that might not be executed directly. |
+| __Active nested command__ | <img src="images/active-nested-command.png" width="80" /> | Command defined inside another command, that may execute. |
+| __Inactive nested command__ | <img src="images/inactive-nested-command.png" width="80" /> | Command defined inside another command, that might not be executed directly. |
 | __Parameter__ | <img src="images/parameter.png" width="100" /> | Instruction passed to a command, that makes it behave differently. |
 | __Local variable__ | <img src="images/local-variable.png" width="100" /> | Helper variables inside a command, invisible from the outside. |
 
@@ -274,10 +276,16 @@ The large square is a command definition, the inactive nested command is in. The
 
 The large square is the command definition, that the active nested command is in. The diamond is the active nested command. The smaller squares inside the diamond are command references in an active nested command. They are actually *public* command references. This makes the command references parameters of the active nested command. The command references have object lines, solid ones, going outside, ending at the targets of the command references.
 
-### Older, Integrate...
+### Reference to Sibling Inactive Nested Command
 
-|     |    |
-|-----|----|
-| ![](images/7.%20Commands%20Ideas.077.jpeg) | __Reference to sibling inactive nested command, in a square.__ <br> Only possible for static command members or exclusive establishment. | 
-| ![](images/7.%20Commands%20Ideas.078.jpeg) | __Reference to sibling active nested command, in a square.__ <br> Only possible for static command members or exclusive establishment. | 
-| ![](images/7.%20Commands%20Ideas.079.jpeg) | __Call to sibling inactive nested command, in a square.__ <br> This is like a jump to a nested command, that might otherwise not execute. <br> Only possible for static command members or exclusive establishment. |
+![](images/7.%20Commands%20Ideas.077.jpeg)
+
+### Reference to Sibling Active Nested Command
+
+![](images/7.%20Commands%20Ideas.078.jpeg)
+
+### Call to Sibling Inactive Nested Command
+
+![](images/7.%20Commands%20Ideas.079.jpeg)
+
+This might be like a jump to a nested command, that might otherwise not execute.

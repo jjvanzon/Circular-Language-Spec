@@ -262,6 +262,8 @@ Formally, there can be no lines connecting objects and commands:
 
 ![](images/7.%20Commands%20Ideas.062.jpeg)
 
+So then object symbols point only to object symbols and command symbols only to command symbols.
+
 ### Forming New Subdivision
 
 These seem fragments of an attempt to re-subdivide topics formerly inside the original Symbol documentation from 2004.
@@ -385,3 +387,19 @@ When __A__ is called, __B__ and __D__ are called, but not __C__.
 -----
 
 A diamond can be executing. Only during the execution of the diamond, lines between its non static children can be real. If the diamond isn’t executing, or it’s not a diamond, but a square, lines between the non static children are suggestive. Only lines between static members in such cases, can be real.
+
+-----
+
+- Diamond may only represent a single execution per definition call.
+
+-----
+
+What might these imply? More brain teasers.
+
+- Diamond pointing to another diamond.
+- Line inside connected diamonds changing simultaneously.
+- Paradox: Parameter assignments involve consults of parameters in prolog of command call, while consults are usually always in epilog.
+- Access during execution
+    - By owner
+    - By child executions (~ is this the proper place for this?)
+        - The callees of a diamond can access the caller's members if given references to them

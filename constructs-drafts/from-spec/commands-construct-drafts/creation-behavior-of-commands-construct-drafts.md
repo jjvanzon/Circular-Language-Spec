@@ -104,7 +104,9 @@ In the epilog, first arguments are read before the created arguments are destroy
 
 `<< interpretation >>`
 
-It may be an idea that parameter references might all represent assignment calls. For instance that an object would be *assigned* to yet another variable after the the call executed. In contrast to that another interpretation might be that: a command object might still exist after it is executed, (output) parameters might still be referenced freely. For instance when a command creates a new object and returns it there may still be pointers to the command's returned object.
+Seeming randomly referencing diamond members.
+
+It may be an idea that parameter references might all represent assignment calls. In contrast to that another interpretation might be that: a command object might still exist after it is executed. (Output) parameters might still be referenced freely. For instance when a command creates a new object and returns it there may still be pointers to the command's returned object.
 
 #### More Ideas
 

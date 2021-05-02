@@ -13,10 +13,11 @@ __Contents__
 - [Sub Command](#sub-command)
 - [Nested Commands](#nested-commands)
 - [Diamond Pointing to Another Diamond](#diamond-pointing-to-another-diamond)
-- [Commands Might Only Be Called from Another Command](#commands-might-only-be-called-from-another-command)
 - [No Diamond Shapes](#no-diamond-shapes)
+    - [Commands Might Only Be Called from Another Command](#commands-might-only-be-called-from-another-command)
     - [Command Symbol Roles](#command-symbol-roles)
     - [Reference and Call Targets](#reference-and-call-targets)
+- [Without Dashed Lines](#without-dashed-lines)
 - [Loose Ideas](#loose-ideas)
 
 ### Sub-Commands
@@ -85,9 +86,13 @@ When is a diamond executed multiple times?
 
 A diamond pointing to another diamond: it may be a call to a call. both diamonds may represent the same call. They might never execute individually.
 
-### Commands Might Only Be Called from Another Command
+### No Diamond Shapes
 
-< 2021-04-20: These issues seem to disappear with introducing the diamond for execution and having distinct call and reference lines: dashed vs. solid line styles. >
+2021-04-20: These idea seem from before the diamond shape was introduced. Other clues may have been hoped to disambiguate the different programming constructs. A newer idea may use diamond shapes along with squares, and may suggest a more specific use of solid lines and dashed lines.
+
+These issues seem to disappear with introducing the diamond for execution and having distinct call and reference lines: dashed vs. solid line styles.
+
+#### Commands Might Only Be Called from Another Command
 
 *Commands can only be called directly from another command.*
 
@@ -104,10 +109,6 @@ Only when you call a nested command or an embedded command reference, the line d
 
 *Call an internal command reference:*  
 ![](images/7.%20Commands%20Ideas.055.jpeg)
-
-### No Diamond Shapes
-
-2021-04-20: These idea seem from before the diamond shape was introduced. Other clues may have been hoped to disambiguate the different programming constructs. A newer idea may use diamond shapes along with squares, and may suggest a more specific use of solid lines and dashed lines.
 
 #### Command Symbol Roles
 
@@ -137,11 +138,27 @@ Here is a list of possible reference targets and call targets:
 |          Reference to reference           |             Call to reference              |
 |                                           | (A call to a reference calls the referenced command) |
 
+### Without Dashed Lines
+
+A command symbol can define its own command:
+
+![](images/7.%20Commands%20Ideas.064.png)
+
+But if it has a reference line it is regarded no more than a reference or call to a command. The target of the line is considered the command itself or the *definition* of the command.
+
+*A is the reference, B is the definition:*  
+![](images/7.%20Commands%20Ideas.065.jpeg)
+
+*A is the command reference, B is the definition:*  
+![](images/7.%20Commands%20Ideas.066.jpeg)
+
 ### Loose Ideas
 
 `<< terminology >>`
 
 It’s *commands* that are called. When you speak of calling an *object*, you’re talking about calling a command of an object (or a command of one of its sub objects).`
+
+-----
 
 `<< terminology >>`
 
@@ -162,6 +179,8 @@ Here I introduce basic terms in the area of executions and parameters. Here’s 
 - Executor
 - Execution
 
+-----
+
 `<< terminology >>`
 
 - Basic Terms
@@ -177,6 +196,8 @@ Here I introduce basic terms in the area of executions and parameters. Here’s 
     - < Which precisely? >
     - ...
 
+-----
+
 `<< terminology >>`
 
 A command symbol might have one of four roles:
@@ -185,3 +206,22 @@ A command symbol might have one of four roles:
 - call
 - reference
 - nested command
+
+-----
+
+`<< about other technology >>`
+
+Differences with Com with returning object references.
+
+-----
+
+`<< interpretation >>`
+
+- Executions & parameters: Inside directly accessible, outside only 'indirectly' accessible (if line set FOR you)
+
+-----
+
+`<< detail >>`
+
+Alternative to command with return value: an object with a getter:  
+A command might possibly not get its own symbol anyway. It might just be an object with an execution point.
