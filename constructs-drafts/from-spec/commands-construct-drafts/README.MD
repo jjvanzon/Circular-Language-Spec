@@ -18,10 +18,6 @@ Commands Construct Drafts Articles
 
     - Lesser worked out ideas about this topic.
 
-- [Nested Commands Rule Rich](nested-commands-rule-rich.md)
-
-    - Detailed rules about nested commands, not made part of the spec.
-
 - [Start & Stop Construct Drafts](start-and-stop-construct-drafts.md)
 
     - Some ideas that may be of use once for the Start & Stop article from the spec.
