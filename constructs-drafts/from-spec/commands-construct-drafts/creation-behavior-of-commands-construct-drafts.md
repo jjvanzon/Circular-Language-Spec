@@ -131,4 +131,3 @@ JJ
 `<< terminology >>`
 
 - The terms prolog and epilog.
-- The term executor and execution
