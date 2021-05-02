@@ -1,5 +1,5 @@
-﻿Circular Language Construct Drafts | Input Output
-=================================================
+﻿Circular Language Construct Drafts | From Spec
+==============================================
 
 Thruput Parameters | Affected, Used and Transformed
 ---------------------------------------------------

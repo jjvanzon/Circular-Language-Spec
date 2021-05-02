@@ -1,8 +1,8 @@
-﻿Circular Language Spec | Parameters
-===================================
+﻿Circular Language Broader View | From Spec
+==========================================
 
-Relations Between Commands & Objects
-------------------------------------
+Parameters Broader View | Relations Between Commands & Objects
+--------------------------------------------------------------
 
 `[ Preliminary documentation ]`
 

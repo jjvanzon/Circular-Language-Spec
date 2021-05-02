@@ -1,8 +1,8 @@
 ﻿Circular Language Broader View | From Spec
 ==========================================
 
-Commands & Classes Loosely Coupled
-----------------------------------
+Parameters Broader View | Commands & Classes Loosely Coupled
+------------------------------------------------------------
 
 `[ Preliminary documentation ]`
 
@@ -42,7 +42,7 @@ So the control over the commands is not only with a class, as might be classical
 
 ### General Notation
 
-A command might be executed on an object. This might be the suggested notation.:
+A command might be executed on an object. This might be the suggested notation:
 
 ![](images/Commands%20and%20Classes%20Loosely%20Coupled.001.png)
 

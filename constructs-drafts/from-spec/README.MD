@@ -29,3 +29,7 @@ Topics that may be recognizable from the *spec*, but then maybe lesser worked ou
 - [System Command Call Notations Construct Drafts](system-command-call-notations-construct-drafts.md)
 
     - There might be several notations for calling a system command, like __Get__, __Set__ and __Use__ commands. The were the deprecated notation proposals.
+
+- [Thruput Parameters | Affected, Used and Transformed](thruput-parameters-affected-used-and-transformed.md)
+
+    - Explores a slightly more detailed way of specifying variations on __Thruput__ parameters: __Affected__ / __Used__ / __Transformed__. It might not be as usable in practice. That is why the topic was set aside here.

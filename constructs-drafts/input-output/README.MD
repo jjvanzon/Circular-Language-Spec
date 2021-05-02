@@ -6,7 +6,7 @@ Input Output
 
 `[ Preliminary documentation ]`
 
-The concept of input and output may be well-known by computer experts, yet the concept might not seem very present in both object oriented program code or relational database. Something simply seems to ‘become’ input or output, arbitrarily chosen by the programmer, but it might not explicitly *defined* in program code, what is the input and what is the output: it could be a return value returned by a command, a value passed along to another command, but it could also be reads, writes deletes and inserts into a database. Those things might be spread out all over the commands and you might not really see explicitly where something is input and where something is output. Yet, input and output seem a fundamental idea in computer programming. It seems we sometimes do talk in terms of it. In Circular language, input and output may get a more prominent position. It may even offer opportunities for resolution of concurrency and parallelism as well as better security in case of more control over the input and output.
+The concept of input and output may be common to programming, yet the concept might not seem very present in both object oriented program code or relational database. Something simply seems to ‘become’ input or output, arbitrarily chosen by the programmer, but it might not explicitly *defined* in program code, what is the input and what is the output: it could be a return value returned by a command, a value passed along to another command, *but* it could also be reads, writes deletes and inserts into a database. Those things might be spread out all over the commands and you might not really see explicitly where something is input and where something is output. Yet, input and output seem a fundamental idea in computer programming. We sometimes talk in terms of it. In Circular language, input and output may get a more prominent position. It may even offer opportunities for resolution of concurrency and parallelism as well as better security in case of more control over the input and output.
 
 This documentation might not seem finished up yet. It seems to contains quite some unfinished texts but also some ideas that are perhaps nice, but it might not all seem to be worked out yet. The concept of input and output might be taken further in the future.
 
@@ -14,17 +14,9 @@ This documentation might not seem finished up yet. It seems to contains quite so
 
     - What might be worked out, is a definition of what input and output is and what different forms of input and output there might be.
 
-- ### [Input Output Parameter Passing](input-output-parameter-passing.md)
-
-    - This take on *Parameters* might once take preference over the one currently in the *Spec*. The *Spec* may currently speak of parameters as a loosely coupled relationship between commands and classes. That take on it might have made things rather complicated instead of being more helpful. The take here in *Construct Drafts* seemed simpler and perhaps a more usable alternative. It seems to talk about subdividing parameter passings into __By Ref / By Value__ and __Input / Output / Thruput__. The idea seems to have been set aside, because of some difficulty defining what __Input__ and __Output__ mean precisely on a more detailed level as well as in grander scope. But a simplified version of this story it might be more helpful as a way to express parameters in this diagram language, that may once become part of the *Spec* again.
-
-- ### [Thruput Parameters | Affected, Used and Transformed](thruput-parameters-affected-used-and-transformed.md)
-
-    - Explores a slightly more detailed way of specifying variations on __Thruput__ parameters: __Affected__ / __Used__ / __Transformed__. It might not be as usable in practice. That is why the topic was set aside here.
-
 - ### [Auto-Determine In, Out & Thru](auto-determine-in-out-thru.md)
 
-    - Explores an idea where the way a parameter is used, could determine whether it might be considered __Input__, __Output__ or __Thruput__. It may be of help once when making a simpler variation on a *Parameters* section in the *Spec*. But for now the idea is parked here.
+    - Explores an idea where the way a parameter is used, could determine whether it might be considered __Input__, __Output__ or __Thruput__. It may be of help once when making for the *Parameters* section in the *Spec*. But for now the idea is parked here.
 
 - ### [Automatic Execution Order & More](automatic-execution-order-and-more.md)
 

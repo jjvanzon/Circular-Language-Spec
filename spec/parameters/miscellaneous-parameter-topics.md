@@ -1,8 +1,8 @@
 ﻿Circular Language Spec | Parameters
 ===================================
 
-Miscellaneous Topics
---------------------
+Miscellaneous Parameter Topics
+------------------------------
 
 `[ Preliminary documentation ]`
 
