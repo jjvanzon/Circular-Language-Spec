@@ -36,6 +36,7 @@ __Contents__
 - [Local variables in an Active Nested Command](#local-variables-in-an-active-nested-command)
 - [Command References in an Inactive Nested Command](#command-references-in-an-inactive-nested-command)
 - [Command References in an Active Nested Command](#command-references-in-an-active-nested-command)
+- [Older, Integrate...](#older-integrate)
 
 ### Introduction
 
@@ -272,3 +273,11 @@ The large square is a command definition, the inactive nested command is in. The
 ![](images/5.%20Commands%20Example%20Diagrams.035.png)
 
 The large square is the command definition, that the active nested command is in. The diamond is the active nested command. The smaller squares inside the diamond are command references in an active nested command. They are actually *public* command references. This makes the command references parameters of the active nested command. The command references have object lines, solid ones, going outside, ending at the targets of the command references.
+
+### Older, Integrate...
+
+|     |    |
+|-----|----|
+| ![](images/7.%20Commands%20Ideas.077.jpeg) | __Reference to sibling inactive nested command, in a square.__ <br> Only possible for static command members or exclusive establishment. | 
+| ![](images/7.%20Commands%20Ideas.078.jpeg) | __Reference to sibling active nested command, in a square.__ <br> Only possible for static command members or exclusive establishment. | 
+| ![](images/7.%20Commands%20Ideas.079.jpeg) | __Call to sibling inactive nested command, in a square.__ <br> This is like a jump to a nested command, that might otherwise not execute. <br> Only possible for static command members or exclusive establishment. |

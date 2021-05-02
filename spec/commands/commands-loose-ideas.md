@@ -75,7 +75,7 @@ However, the picture above is actually again an implicit notation for something 
 
 `<< details >>`
 
-A command might probably not get its own symbol anyway. It might just be an object with an execution point.
+A command might possibly not get its own symbol anyway. It might just be an object with an execution point.
 
 A command symbol can define its own command:
 
@@ -89,14 +89,4 @@ But if it has a reference line it is regarded no more than a reference or call t
 *A is the command reference, B is the definition:*  
 ![](images/7.%20Commands%20Ideas.066.jpeg)
 
-| ![](images/7.%20Commands%20Ideas.067.png) | ![](images/Symbol%20Language%20(2004).409b.png) | ![](images/7.%20Commands%20Ideas.068.png) | ![](images/7.%20Commands%20Ideas.069.png) <br> ![](images/7.%20Commands%20Ideas.070.png) | ![](images/7.%20Commands%20Ideas.071.png) |
-
 #### Reference and Call Targets
-
-`<< commands example diagrams >>`
-
-|     |    |
-|-----|----|
-| ![](images/7.%20Commands%20Ideas.077.jpeg) | __Reference to sibling inactive nested command, in a square.__ <br> Only possible for static command members or exclusive establishment. | 
-| ![](images/7.%20Commands%20Ideas.078.jpeg) | __Reference to sibling active nested command, in a square.__ <br> Only possible for static command members or exclusive establishment. | 
-| ![](images/7.%20Commands%20Ideas.079.jpeg) | __Call to sibling inactive nested command, in a square.__ <br> This is like a jump to a nested command, that might otherwise not execute. <br> Only possible for static command members or exclusive establishment. |
