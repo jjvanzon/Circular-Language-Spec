@@ -22,6 +22,10 @@ Commands Construct Drafts Articles
 
     - Lesser worked out ideas about this topic.
 
+- [No Diamond Shapes](no-diamond-shapes.md)
+
+    - These ideas seem from before the diamond shape was introduced, to symbolize *execution*.
+
 - [Start & Stop Construct Drafts](start-and-stop-construct-drafts.md)
 
     - Some ideas that may be of use once for the Start & Stop article from the spec.

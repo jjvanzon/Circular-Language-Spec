@@ -15,7 +15,7 @@ __Contents__
 
 ### Introduction
 
-These idea seem from before the diamond shape was introduced. Other clues may have been hoped to disambiguate the different programming constructs. A newer idea may use diamond shapes along with squares, and may suggest a more specific use of solid lines and dashed lines.
+These ideas seem from before the diamond shape was introduced. Other clues may have been hoped to disambiguate the different programming constructs. A newer idea may use diamond shapes along with squares, and may suggest a more specific use of solid lines and dashed lines.
 
 These issues seem to disappear with introducing the diamond for execution and having distinct call and reference lines: dashed vs. solid line styles.
 
