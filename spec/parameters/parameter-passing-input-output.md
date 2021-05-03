@@ -72,7 +72,7 @@ __Contents__
             - [Argument Access Summary](#argument-access-summary)
         - [Brainstorm](#brainstorm-1)
             - [Other](#other)
-    - [Other](#other-1)
+    - [Misc Loose Ideas](#misc-loose-ideas)
 
 ### Introduction
 
@@ -1502,6 +1502,12 @@ __*Different Wording, Not important, though*__
 
 In an explicit call you always see the the call displayed as a separate diamond. If the call is made, the call is like a created object. After the call it is destroyed. When the call is created, you can reference its contents from anywhere without causing another call.
 
-#### Other
+#### Misc Loose Ideas
 
 There are three types of parameters: in, out and thru. In parameters go in, out parameters go out and thru parameters come in and go out.
+
+-----
+
+This take on *Parameters* might take preference over one of parameters as a loosely coupled relationship between commands and classes, which might have made things rather complicated instead of being more helpful. Parameter passing input output seemed simpler and perhaps a more usable alternative.
+
+The parameter passing input output idea seemed to have been set aside, because of some difficulty defining what __Input__ and __Output__ mean precisely on a more detailed level as well as in grander scope. But a simplified version of this story it might be more helpful as a way to express parameters in this diagram language.
