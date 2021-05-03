@@ -1,8 +1,8 @@
 ﻿Circular Language Construct Drafts | Parameters
 ===============================================
 
-Parameter Passing | In / Out / Thru
------------------------------------
+Parameter Passing
+-----------------
 
 `[ Preliminary documentation ]`
 
