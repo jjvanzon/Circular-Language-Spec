@@ -22,7 +22,7 @@ Contents
     - [Creation Behavior Of Commands](commands/creation-behavior-of-commands.md)
     - [Commands Example Diagrams](commands/commands-example-diagrams.md)
 - Parameters
-    - [Parameter Passing | Input Output](parameters/parameter-passing-input-output.md)
+    - [Parameter Passing | In / Out / Thru](parameters/parameter-passing-in-out-thru.md)
     - [Imported Parameter Concepts](parameters/imported-parameter-concepts.md)
     - [Miscellaneous Parameter Topics](parameters/miscellaneous-parameter-topics.md)
     - [Parameters Loose Ideas](parameters/parameters-loose-ideas.md)

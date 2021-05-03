@@ -8,10 +8,11 @@ Parameter Passing | In / Out / Thru
 
 __Contents__
 
-- [Introduction](#introduction)
+- [In & Out](#in--out)
 - [By Value](#by-value)
 - [By Value in a Diagram](#by-value-in-a-diagram)
 - [By Reference](#by-reference)
+    - [Ambiguity of Input / Output for Reference Parameters](#ambiguity-of-input--output-for-reference-parameters)
 - [Value In](#value-in)
 - [Value In in a Diagram](#value-in-in-a-diagram)
 - [Value Out](#value-out)
@@ -74,40 +75,66 @@ __Contents__
             - [Other](#other)
     - [Misc Loose Ideas](#misc-loose-ideas)
 
-### Introduction
+### In & Out
 
-`<< obsolete ? >>`
+These articles may talk about *input* and *output* parameters.
 
-These sections were set aside in the project *Work Out Parameter Articles*.
+Input seems what's *read*. Output seems what's *written*. But perhaps also in the context of the containment structure: input seems *read* on the *inside*. Output seems *written* on the *inside*. But *read* on the *outside*! So the terms *input and output* do not seem to map neatly to *reading and writing*, but seem quite dependent on context in a containment structure: inside or outside.
 
-The sections each cover an obsolete parameter passing type.
-
-The terminology of these parameter passings types are still used elsewhere in the documentation, so I wanted to wrap these terms up into articles.
-
-But these articles talk too much about input and output. The terms input and output are harder to define. The *Advanced Command Topics* are for a big part about input and output. So these sections are yielded over to the *Advanced Command Topics*, so they can be approached in there.
-
-Much of the text may not be true anymore.
+Another thing slightly open to interpretation might be, that reading/writing parameters may involve the direct value or object reference of a parameter, not so much the things deeper in the containment structure.
 
 ### By Value
 
-A parameter is __By Value__, if you can only publicly read or write the value of the object or clone the values of an object up until a certain depth. 
+A parameter is __By Value__, if you can only publicly read or write the value of the object.
+
+`<< clone >>`
+Or clone the values of an object up until a certain depth.
 
 Passing a parameter by value means, that the input or output is *copied* to or from the parameter object.
 
-Parameters passed by value are really only useful for smaller amounts of data. The data might be changed inside the command, but that might not affect the original object.  
-For an object, that only stores one value and that’s it, it is easy to just copy the value. More complex objects passed by value might be cloned up until a certain cloning depth.
+The diagram below may represent a __By Value__ parameter tied to the value source or target:
 
-When pass an input parameter by value, it is guaranteed, that the operations inside the command might not affect the original object.
+![](images/Input%20Output%20Parameter%20Passings.001.png)
+
+The diamond is the command. The circle inside it is the parameter. The circle outside the command is the value source or target. And the wavy line may indicate value transmission between the parameter and the other object.
+
+It may actually be a value assignment, that performs a yield over of value. Here is a diagram showing such a value assignment:
+
+![](images/Input%20Output%20Parameter%20Passings.002.png)
+
+Parameters passed by value might be useful for smaller amounts of data. The data might be changed inside the command, but that might not affect the original object.  
+For an object, that only stores one value and that’s it, it may be ok to just copy the value.
+
+`<< clone ? >>`  
+`<< structs ? >>`
+
+More complex objects passed by value might be cloned up until a certain cloning depth.
+
+`<< rule rich >>`  
+`<< interpretation issues >>`
+
+When pass an input parameter by value, it is guaranteed, that the operations inside the command might not affect the original object. < 2021-05-03: in VB.NET's ByVal parameter passing for reference types, the situation seem slightly more nuanced than that. >
+
+`<< clone >>`  
+`<< interpretation issues >>`
 
 For that reason, when a value parameter is cloned up until a certain depth, no references to original objects might be taken over by the clone. __By Value__ clones never have references to existing objects, but always contain entirely new objects or object references that are __Nothing__.
 
+`<< clone >>`  
+
 A single-value transfer is actually the equivalent of a cloning operation with a depth of __1__.
 
-If you want to pass more complex objects to a command, you do it by reference, but then changes to the parameter might affect the original objects.
+`<< by ref >>`
+
+If you want to pass more complex objects to a command, this might be done by reference instead, but then changes to the parameter might affect the original objects.
+
+`<< details >>`
 
 In parameter passing by value, the parameter object and the object, that is passed the value to or from, are not referring to each other at all.
 
 -----
+
+`<< relations between commands & objects >>`
 
 Relations between objects,  
 Value parameters,  
@@ -119,16 +146,7 @@ JJ
 
 ### By Value in a Diagram
 
-The diagram below represents a __By Value__ parameter tied to the value source or target:
-
-![](images/Input%20Output%20Parameter%20Passings.001.png)
-
-The diamond is the command. The circle inside it is the parameter. The circle outside the command is the value source or target. And the wavy line indicates value transmission between the parameter and the other object.
-
-It is actually a value assignment, that performs a yield over of value.  
-Here is a diagram showing such a value assignment:
-
-![](images/Input%20Output%20Parameter%20Passings.002.png)
+`<< assignment >>`
 
 A value assignment *might* have an invisible reference to the parameter, but you won’t see it in the diagram, because an assignment is something so basic, that the notation of it is kept very basic.
 
@@ -140,6 +158,8 @@ The complicated notation:
 
 But this still might not tie the source and target symbols directly together.
 
+`<< clone >>`
+
 The notation of a __By Value__ cloning operation looks as follows:
 
 ![](images/Input%20Output%20Parameter%20Passings.004.png)
@@ -149,17 +169,33 @@ A single-value transfer might be the same as a cloning depth of __1__, but the n
 
 ### By Reference
 
-Next to passing a parameter by *value*, you can also pass a parameter by reference. For instance: instead of copying a value to an input parameter, you give the command a reference to an object outside the command.
+Next to passing a parameter by *value*, you can also pass a parameter *by reference*. For instance: instead of copying a value to an input parameter, a command might be passed reference to an object outside the command.
 
 __Reference__ parameter:
 
 ![](images/Input%20Output%20Parameter%20Passings.005.png)
 
-Therefore it can also be called __Reference Outward, Value In__ and __Reference Outward, Value Out__ But those names are too long. The distinction between __Reference In__ and __Reference Out__ is about whether values are read or written to the object passed to the sub-command.
+`<< details >>`
 
-In other programming languages one use of by reference was to be able to pass large objects to a command. Another use was to be able to let the command have multiple return values, because in other programming languages a command might only have one return value. In Circular, multiple return values is accomplished by having multiple __Object Out__ parameters. So you do not need __Reference Out__ parameters for that purpose anymore.
+Therefore it can also be called __Reference Outward, Value In__ and __Reference Outward, Value Out__ But those names are too long.
 
-When a command call has an outward reference to an object, this *might* make the object a parameter, but this *might not* determine yet whether it is input, output or throughput. The *in* and *out* in this case refer to whether *values* are written or read to the object reference. A reference parameter is always sort of like input, though: the parent command passes the object to the sub-command, so the parent inputs something into the sub command.
+`<< move >>`
+
+The distinction between __Reference In__ and __Reference Out__ is about whether values are read or written to the object passed to the sub-command.
+
+`<< about other technology >>`
+
+In some programming languages one use of *by reference* was to be able to pass large objects to a command. Another use was to be able to let the command have multiple return values, because in other programming languages a command might only have one return value.
+
+`<< move >>`
+
+In Circular, multiple return values is accomplished by having multiple __Object Out__ parameters. So you do not need __Reference Out__ parameters for that purpose anymore.
+
+#### Ambiguity of Input / Output for Reference Parameters
+
+`<< move ? >>`
+
+When a command call has an outward reference to an object, this might make the object a parameter. It seems an *input* parameter, since the line might be set from the outside. But it seems ambiguous whether it is input, because values might still be read or written. It being an outward reference, *might not* determine yet whether it is input, output or throughput. The *in* and *out* in this case refer to whether *values* are written or read to the object reference. A reference parameter is always sort of like input, though: the parent command passes the object to the sub-command, so the parent inputs something into the sub command.
 
 ### Value In
 

@@ -4,7 +4,7 @@ Circular Language Spec
 Parameters Articles
 -------------------
 
-- [Parameter Passing | Input Output](parameter-passing-input-output.md)
+- [Parameter Passing | In / Out / Thru](parameter-passing-in-out-thru.md)
 
     - Seems to talk about subdividing parameter passings into __By Ref / By Value__ and __Input / Output / Thruput__.
 
