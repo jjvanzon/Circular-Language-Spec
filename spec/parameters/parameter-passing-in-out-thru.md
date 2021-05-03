@@ -20,27 +20,30 @@ __Contents__
 - [Value Thru](#value-thru)
 - [Value Thru in a Diagram](#value-thru-in-a-diagram)
 - [Reference In](#reference-in)
-- [Reference In in a Diagram](#reference-in-in-a-diagram)
 - [Reference Out](#reference-out)
 - [Reference Out in a Diagram](#reference-out-in-a-diagram)
 - [Reference Thru](#reference-thru)
 - [Reference Thru in a Diagram](#reference-thru-in-a-diagram)
 - [Object Out](#object-out)
-    - [New command ( / new object )](#new-command---new-object-)
-    - [Existing command ( / existing object )](#existing-command---existing-object-)
+    - [Command Out](#command-out)
+    - [New Command Out](#new-command-out)
+    - [New Object Out](#new-object-out)
+    - [Existing Command Out](#existing-command-out)
+    - [Existing Object](#existing-object)
 - [Object Out in a Diagram](#object-out-in-a-diagram)
 - [Three Parameter Passing Elements](#three-parameter-passing-elements)
-- [Parameters of calls directly tied together](#parameters-of-calls-directly-tied-together)
-- [Strict about parameter passing](#strict-about-parameter-passing)
-- [The class of a parameter](#the-class-of-a-parameter)
-- [Sub-commands are never output objects](#sub-commands-are-never-output-objects)
+- [Parameters of Calls Directly Tied Together](#parameters-of-calls-directly-tied-together)
+- [Strict About Parameter Passing](#strict-about-parameter-passing)
+- [The Class of a Parameter](#the-class-of-a-parameter)
+- [Type Arguments](#type-arguments)
+- [Sub-Commands Are Never Output Objects](#sub-commands-are-never-output-objects)
 - [In, Out & Thru Parameters](#in-out--thru-parameters)
 - [Downput](#downput)
-- [Incidental parameter passing](#incidental-parameter-passing)
+- [Incidental Parameter Passing](#incidental-parameter-passing)
 - [Indirect Value Transmission](#indirect-value-transmission)
-- [Wrong approach to the terms In, Out and Thru](#wrong-approach-to-the-terms-in-out-and-thru)
+- [Wrong Approach to the Terms In, Out and Thru](#wrong-approach-to-the-terms-in-out-and-thru)
     - [In, Out & Thru](#in-out--thru)
-    - [Terms for reading](#terms-for-reading)
+    - [Terms for Reading](#terms-for-reading)
     - [Consider New In & New Out](#consider-new-in--new-out)
     - [More](#more)
 - [Brainstorm 2008-09-27](#brainstorm-2008-09-27)
@@ -88,6 +91,7 @@ Another thing slightly open to interpretation might be, that reading/writing par
 A parameter is __By Value__, if you can only publicly read or write the value of the object.
 
 `<< clone >>`
+
 Or clone the values of an object up until a certain depth.
 
 Passing a parameter by value means, that the input or output is *copied* to or from the parameter object.
@@ -106,16 +110,19 @@ Parameters passed by value might be useful for smaller amounts of data. The data
 For an object, that only stores one value and that’s it, it may be ok to just copy the value.
 
 `<< clone ? >>`  
+
 `<< structs ? >>`
 
 More complex objects passed by value might be cloned up until a certain cloning depth.
 
 `<< rule rich >>`  
+
 `<< interpretation issues >>`
 
 When pass an input parameter by value, it is guaranteed, that the operations inside the command might not affect the original object. < 2021-05-03: in VB.NET's ByVal parameter passing for reference types, the situation seem slightly more nuanced than that. >
 
 `<< clone >>`  
+
 `<< interpretation issues >>`
 
 For that reason, when a value parameter is cloned up until a certain depth, no references to original objects might be taken over by the clone. __By Value__ clones never have references to existing objects, but always contain entirely new objects or object references that are __Nothing__.
@@ -175,7 +182,7 @@ __Reference__ parameter:
 
 ![](images/Input%20Output%20Parameter%20Passings.005.png)
 
-`<< details >>`
+`<< terminology >>`
 
 Therefore it can also be called __Reference Outward, Value In__ and __Reference Outward, Value Out__ But those names are too long.
 
@@ -203,7 +210,17 @@ A __Value In__ parameter passes a value from an object to the parameter of a com
 
 The command can manipulate the __Value In__ parameter without affecting the original object.
 
-A __Value In__ parameter works best simple objects, that stores a single value, but can also work for more complex objects, that might then be cloned up until a certain depth.
+`<< details >>`
+
+A __Value In__ parameter works best simple objects, that stores a single value,
+
+`<< structs >>`
+
+but can also work for more complex objects,
+
+`<< clone >>`
+
+that might then be cloned up until a certain depth.
 
 ### Value In in a Diagram
 
@@ -215,6 +232,8 @@ Here is a diagram of an unfilled-in __Value In__ parameter of an executable comm
 
 ![](images/Input%20Output%20Parameter%20Passings.007.png)
 
+`<< clone >>`
+
 A __Value In__ parameter can also have an indication of a cloning depth, which is displayed as follows:
 
 ![](images/Input%20Output%20Parameter%20Passings.008.png)
@@ -225,6 +244,8 @@ Or for an unfilled-in __Value In__ parameter:
 
 The pictures above display a cloning depth of __2__, but any cloning depth can be used.
 
+`<< parameter passing >>`
+
 A command definition or other inactive command displays __Value In__ parameters the exact same way. The __Value In__ parameter of a command definition is usually not filled in:
 
 ![](images/Input%20Output%20Parameter%20Passings.010.png)
@@ -233,7 +254,11 @@ But the __Value In__ parameter of an inactive command could be filled in just as
 
 ![](images/Input%20Output%20Parameter%20Passings.011.png)
 
+`<< interpretation >>`
+
 The fact, that it is an inactive command, means that it might not run, but for the rest it is the same as any other command object, so it basically has the same possibilities.
+
+`<< clone >>`
 
 Here is the expression of cloning depth for __Value In__ parameters of inactive commands, which is the same notation as for active commands:
 
@@ -244,6 +269,10 @@ Here is the expression of cloning depth for __Value In__ parameters of inactive 
 ### Value Out
 
 A __Value Out__ parameter is a value produced by a command, that can be yielded over to another object after the command is done. A __Value Out__ parameter is an object inside the command call, that is written to by the command or by one of its sub-commands. After execution of the command the value of the output parameter can be copied, by assigning the value to another object.
+
+`<< structs >>`
+
+`<< clone >>`
 
 As said in the article __By Value__, the parameter is either a copy of a single value, or a clone up to a certain depth.
 
@@ -257,6 +286,8 @@ The following diagram shows the __Value Out__ parameter with an assignment targe
 
 ![](images/Input%20Output%20Parameter%20Passings.015.png)
 
+`<< clone >>`
+
 A __Value Out__ parameter can also have an indication of a cloning depth, which is displayed as follows:
 
 ![](images/Input%20Output%20Parameter%20Passings.016.png)
@@ -267,6 +298,8 @@ Or with the target of the output filled in:
 
 The pictures above display a cloning depth of __2__, but any cloning depth can be used.
 
+`<< parameter passing >>`
+
 A command definition or other inactive command displays __Value Out__ parameters the exact same way. The __Value Out__ parameter of a command definition might look like this:
 
 ![](images/Input%20Output%20Parameter%20Passings.018.png)
@@ -275,7 +308,11 @@ The __Value Out__ parameter of an inactive command can also be read and written 
 
 ![](images/Input%20Output%20Parameter%20Passings.019.png)
 
+`<< interpretation >>`
+
 The fact, that it is an inactive command, means that it might not run, but for the rest it is the same as any other command object, so it basically has the same possibilities, even reading and writing its parameters.
+
+`<< clone >>`
 
 Here is the expression of cloning depth for __Value Out__ parameters of inactive commands, which is the same notation as for active commands:
 
@@ -288,7 +325,13 @@ Here is the expression of cloning depth for __Value Out__ parameters of inactive
 Throughput by value is when a by value parameter is first written to, then changed by the command, and then the value of the parameter is read from again, and assigned to the original object.  
 A __Value Thru__ parameter is an object inside the command call, that can be written before the command is invoked, by assigning to it a value of an object outside the command call. It is used but also written to by the command or one of its sub-commands. After execution of the command the value of the throughput parameter can be copied, by assigning the its to another object.
 
+`<< structs >>`
+
+`<< clone >>`
+
 As said in the article __By Value__, the parameter is either a copy of a single value, or a clone to a certain depth.
+
+`<< details >>`
 
 In theory the value could first come from one object, and after the call be written to another object. But that’s not regularly what a __Value Thru__ parameter is used for. The value might first be copied from one object and assigned to the parameter, and afterwards the value of the parameter is copied to the original object again.
 
@@ -302,6 +345,8 @@ Here is a diagram of an unfilled-in __Value Thru__ parameter of an executable co
 
 ![](images/Input%20Output%20Parameter%20Passings.023.png)
 
+`<< clone >>`
+
 A __Value Thru__ parameter can also have an indication of a cloning depth, which is displayed as follows:
 
 ![](images/Input%20Output%20Parameter%20Passings.024.png)
@@ -312,7 +357,7 @@ Or for an unfilled-in __Value Thru__ parameter:
 
 The pictures above display a cloning depth of __2__, but any cloning depth can be used.
 
-A command definition or other inactive command displays __Value Thru__ parameters the exact same way. The __Value Thru__ parameter of a command definition is usually not filled in:
+A command definition or other inactive command displays __Value Thru__ parameters similarly. The __Value Thru__ parameter of a command definition is usually not filled in:
 
 ![](images/Input%20Output%20Parameter%20Passings.026.png)
 
@@ -320,7 +365,11 @@ But the __Value Thru__ parameter of an inactive command could be filled in just 
 
 ![](images/Input%20Output%20Parameter%20Passings.027.png)
 
+`<< interpretation >>`
+
 The fact, that it is an inactive command, means that it might not run, but for the rest it is the same as any other command object, so it basically has the same possibilities.
+
+`<< clone >>`
 
 Here is the expression of cloning depth for __Value Thru__ parameters of inactive commands, which is the same notation as for active commands:
 
@@ -330,19 +379,25 @@ Here is the expression of cloning depth for __Value Thru__ parameters of inactiv
 
 ### Reference In
 
-A __Reference In__ parameter can be used to assign a reference to a complex object as the input of the command. Because a __Reference In__ parameter is input, the called command can only *read* out of the object, that it was given a reference to.
+A __Reference In__ parameter might be used to assign a reference to a complex object as the input of the command. Because a __Reference In__ parameter is input, the called command can only *read* out of the object, that it was given a reference to.
 
-### Reference In in a Diagram
-
-A diagram of an executable command with a __Reference In__ parameter looks as follows:
+A diagram of an executable command with a __Reference In__ parameter may look as follows:
 
 ![](images/Input%20Output%20Parameter%20Passings.030.png)
 
-When a __Reference In__ parameter might not have a reference target filled in yet, then the diagram looks as follows:
+When a __Reference In__ parameter might not have a reference target filled in yet, then the diagram may look as follows:
 
 ![](images/Input%20Output%20Parameter%20Passings.031.png)
 
-An inactive command displays __Reference In__ parameters the exact same way. The fact, that it is an inactive command, means, that it might not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command. The reference target of a __Reference In__ parameter of an inactive command definition is usually not filled in.
+An inactive command displays __Reference In__ parameters similarly.
+
+`<< interpretation >>`
+
+The fact, that it is an inactive command, means, that it might not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command.
+
+`<< parameter passing >>`
+
+The reference target of a __Reference In__ parameter of an inactive command definition might not be filled in.
 
 ![](images/Input%20Output%20Parameter%20Passings.032.png)
 
@@ -350,28 +405,40 @@ Here is a picture in which a command definition’s __Reference In__ parameter m
 
 ![](images/Input%20Output%20Parameter%20Passings.033.png)
 
-Do note, that the expression of read-write direction is not a connector point, like for __Value__ parameters. It is an abstract expression of value direction. You can not connect anything to it. The reference target connector, however, *is* a connector point.
+`<< interpretation >>`
+
+Do note, that the expression of read-write direction is not a connector, like for __Value__ parameters. It is an abstract expression of value direction. You can not connect anything to it. The reference target connector, however, *is* a connector.
 
 ### Reference Out
 
-When a command is passed a reference to an object, and the command writes to the parameter, it is called a __Reference Out__ parameter. Because a __Reference Out__ parameter is output, the called command can only *write* to the object, that it was given a reference to. A __Reference Out__ parameter can be used to assign a reference to a complex object to which a command writes output.
+When a command is passed a reference to an object, and the command writes to the parameter, it might be called a __Reference Out__ parameter. Because a __Reference Out__ parameter is output, the called command might only *write* to the object, that it was given a reference to. A __Reference Out__ parameter can be used to assign a reference to a complex object to which a command writes output.
+
+`<< ambiguity of input / output for reference parameters >>`
 
 In a sense, a __Reference *Out*__ parameter is actually *through*put.  
 When output is *alteration* of an *existing* object, it could be considered throughput, even though there is only *written* to the object, and nothing is *read* from the object, it is still an object passed *through* the command. In yet another sense, a __Reference Out__ parameter is input, because you are passing an object *into* a command.
 
 ### Reference Out in a Diagram
 
-A diagram of an executable command with a __Reference In__ parameter looks as follows:
+A diagram of an executable command with a __Reference In__ parameter may look as follows:
 
 ![](images/Input%20Output%20Parameter%20Passings.034.png)
 
-The access mark on the left is a connector point, to which the reference target of the __Reference Out__ parameter can be attached. Here is a diagram in which a reference target is attached to the __Reference Out__ parameter.
+The access mark on the left is a connector, to which the reference target of the __Reference Out__ parameter can be attached. Here an attempt to depict a diagram in which a reference target may be attached to the __Reference Out__ parameter.
 
 ![](images/Input%20Output%20Parameter%20Passings.035.png)
 
-The fact that the reference goes outwards, might not make it an Out parameter. That just makes it a __Reference__ parameter. The fact, that the command only *writes* to the parameter makes it an Out parameter, so the term __Out__ is about value direction, not reference direction.
+The fact that the reference goes outwards, might not make it an Out parameter. That just makes it a __Reference__ parameter. The fact, that the command only *writes* to the parameter may make make it an __Out__ parameter, so the term __Out__ is about value direction, not reference direction.
 
-An inactive command displays __Reference Out__ parameters the exact same way. The fact, that it is an inactive command, means, that it might not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command. The reference target of a __Reference Out__ parameter of an inactive command definition is usually not filled in:
+An inactive command may display __Reference Out__ parameters in a similar way.
+
+`<< interpretation >>`
+
+The fact, that it is an inactive command, means, that it might not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command.
+
+`<< parameter passing >>`
+
+The reference target of a __Reference Out__ parameter of an inactive command definition might usually not be filled in:
 
 ![](images/Input%20Output%20Parameter%20Passings.036.png)
 
@@ -379,23 +446,37 @@ Here is a picture in which a command definition’s __Reference Out__ parameter 
 
 ![](images/Input%20Output%20Parameter%20Passings.037.png)
 
+`<< interpretation >>`
+
 Note, that the indication of read-write direction is an abstract expression of the value direction inside the command. You can not connect anything to it.
 
 ### Reference Thru
 
-Next to __Reference In__ and __Reference Out__, there is also __Reference Thru__, which means, that the command both reads and writes to the object passed to it. A __Reference Thru__ parameter is a pointer to something outside the command. The object pointed to both read from and written to. A __Reference Thru__ parameter can be used to assign a reference to a complex object, from which input is read and output is written to. 
+Next to __Reference In__ and __Reference Out__, there might also be __Reference Thru__, which may means, that the command both reads and writes to the object passed to it. A __Reference Thru__ parameter might be a pointer to something outside the command. The object pointed to may be both read from and written to.
+
+`<< interpretation >>`
+
+A __Reference Thru__ parameter can be used to assign a reference to a complex object, from which input is read and output is written to. 
 
 ### Reference Thru in a Diagram
 
-A diagram of an executable command with a __Reference Thru__ parameter looks as follows:
+A diagram of an executable command with a __Reference Thru__ parameter may look as follows:
 
 ![](images/Input%20Output%20Parameter%20Passings.038.png)
 
-When a __Reference Thru__ parameter might not have a reference target filled in yet, then the diagram looks as follows:
+When a __Reference Thru__ parameter might not have a reference target filled in yet, then the diagram might look as follows:
 
 ![](images/Input%20Output%20Parameter%20Passings.039.png)
 
-An inactive command displays __Reference Thru__ parameters the exact same way. The fact, that it is an inactive command, means, that it might not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command. The reference target of a __Reference Thru__ parameter of an inactive command definition is usually not filled in.
+An inactive command may display __Reference Thru__ parameters similarly.
+
+`<< interpretation >>`
+
+The fact, that it is an inactive command, means, that it might not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command.
+
+`<< parameter passing >>`
+
+The reference target of a __Reference Thru__ parameter of an inactive command definition might not be filled in:
 
 ![](images/Input%20Output%20Parameter%20Passings.040.png)
 
@@ -403,13 +484,21 @@ Here is a picture in which a command definition’s __Reference Thru__ parameter
 
 ![](images/Input%20Output%20Parameter%20Passings.041.png)
 
-Do note, that the expression of read-write direction is not a connector point. It is an abstract expression of value direction. You can not connect anything to it. The reference target connector, however, *is* a connector point.
+`<< interpretation >>`
+
+Do note, that the expression of read-write direction is not a connector. It is an abstract expression of value direction. You can not connect anything to it. The reference target connector, however, *is* a connector.
 
 ### Object Out
 
-An __Object Out__ parameter is an object, that resides inside the command. The __Object Out__ parameter may be a new object, or redirect to an existing object. Anyway, the *command* determines which object might be output. The produced object can be referenced from outside the command.
+`<< parameter passing >>`
+
+An __Object Out__ parameter might be an object, that resides inside the command. The __Object Out__ parameter may be a new object, or redirect to an existing object. Anyway, the *command* might determine which object may be output. The produced object can be referenced from outside the command.
+
+`<< rule rich >>`
 
 Unlike parameters passed __By Reference__, an __Object Out__ parameter is *referred to*. This is an exclusive aspect of the __Object Out__ parameter passing.
+
+`<< terminology >>`
 
 The long names of parameters passed __By Reference__ were:
 
@@ -417,29 +506,51 @@ The long names of parameters passed __By Reference__ were:
 - __Reference Outward, Value Outward__
 - __Reference Outward, Value Thru__
 
-The long name of value __Object Out__ is:
+The long name of value __Object Out__ might be:
 
 - __Reference Inward, Value Out__
 
-So this is a __Reference Inward__ parameter, as opposed to a __Reference Outward__ parameter. The reference direction goes the other way around. Instead of a parent passing an object to the command, it is like the *command* passes a reference back to container of the command.
+`<< parameter passing >>`
 
-The command writes to the output object. Unlike __Reference__ and __Value__ parameters, there is no distinction between __In, Out__ and __Thru__ for __Reference Inward__ parameters. The reason __Reference Inward__ parameters do not have three variations, is that the command’s reading and writing values to the object is irrelevant to the *parameter passing*. To the outside, it might not matter whether the parameter is read from or written to or both. All that matters, is that an object is produced. __Reference Inward, Value In__ and __Reference Inward, Value Thru__ are not relevant. The __Reference Inward__ parameter *can* be *read from* by the sub-command, but that it’s just not relevant to *parameter passing* between a command and its container. Because __Reference Inward, Value Out__ is only relevant for reading values from an output object, it is shortened to __Object Out__. 
+So this is a __Reference Inward__ parameter, as opposed to a __Reference Outward__ parameter. The reference direction goes the other way around.
+
+`<< already covered >>`
+
+Instead of a parent passing an object to the command, it is like the *command* passes a reference back to container of the command.
+
+`<< parameter passing >>`
+
+The command writes to the output object.
+
+`<< rule rich >>`
+
+Unlike __Reference__ and __Value__ parameters, there is no distinction between __In, Out__ and __Thru__ for __Reference Inward__ parameters. The reason __Reference Inward__ parameters do not have three variations, is that the command’s reading and writing values to the object is irrelevant to the *parameter passing*. To the outside, it might not matter whether the parameter is read from or written to or both. All that matters, is that an object is produced. __Reference Inward, Value In__ and __Reference Inward, Value Thru__ are not relevant. The __Reference Inward__ parameter *can* be *read from* by the sub-command, but that it’s just not relevant to *parameter passing* between a command and its container. Because __Reference Inward, Value Out__ is only relevant for reading values from an output object, it is shortened to __Object Out__. 
 
 An __Object Out__ should really only be accessed *after* the command has run.
 
-< An __Object Out__ parameter can be a regular object, but it can also be a command object. In that case it is a command *produced* by another command. The parent command can return a new command or the parent command can return a reference to an existing command. >
+#### Command Out
 
-#### New command ( / new object )
+An __Object Out__ parameter can be a regular object, but it can also be a command. In that case it might be a command *produced* by another command. The parent command can return a new command or the parent command can return a reference to an existing command.
+
+#### New Command Out
 
 When an __Object Out__ parameter is actually a new command, then the new command is either a pre-configured instance of another command, or it can be a brand new, generated command, any part of which is constructed by its parent command, based on a set of variables.
 
-#### Existing command ( / existing object )
+#### New Object Out
 
-An __Object Out__ parameter can also be an existing command. In that case the Object Out parameter object-redirects to another command again, so the parent command basically picked out a command for you, instead of actually producing a new one.
+An __Object Out__ parameter might be typed a __New Object Out__ parameter, if it might be a brand new object that might be returned.
+
+#### Existing Command Out
+
+An __Object Out__ parameter can also be an existing command. In that case the __Object Out__ parameter object-redirects to another command again, so the parent command basically picked out a command for you, instead of actually producing a new one.
+
+#### Existing Object
+
+An __Object Out__ can be typed more specifically as __Existing Object Out__ if it might not be a new object that is returned, but one that already existed.
 
 ### Object Out in a Diagram
 
-A diagram of an executable command with an __Object Out__ parameter looks as follows:
+A diagram of an executable command with an __Object Out__ parameter may look as follows:
 
 ![](images/Input%20Output%20Parameter%20Passings.042.png)
 
@@ -447,7 +558,15 @@ The outer end of the line is an connection point to which you can connect an obj
 
 ![](images/Input%20Output%20Parameter%20Passings.043.png)
 
-An inactive command displays __Object Out__ parameters the exact same way. The fact, that it is an inactive command, means, that it might not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command. The object referring to the __Object Out__ parameter of an inactive command definition is usually not filled in.
+An inactive command might display __Object Out__ parameters in a similar way.
+
+`<< interpretation >>`
+
+The fact, that it is an inactive command, means, that it might not run, but for the rest it behaves the same way as any other command object, so it basically has the same possibilities as an active command.
+
+`<< parameter passing >>`
+
+The object referring to the __Object Out__ parameter of an inactive command definition might not be filled in:
 
 ![](images/Input%20Output%20Parameter%20Passings.044.png)
 
@@ -457,9 +576,13 @@ Here is a picture in which a command definition’s __Object Out__ parameter mig
 
 ### Three Parameter Passing Elements
 
-__By Value, Reference Outward__ and __Reference Inward__ are the different reference situations a parameter can have. But this tells us nothing about whether a parameter is input, output or throughput. What determines, whether it is in, out or thru is whether values are written to the parameter or read from the parameter.
+`<< interpretation >>`
 
-So the long names of the different parameter passing types are:
+__By Value__, __Reference Outward__ and __Reference Inward__ might be the different reference situations a parameter can have. But this may not tell us whether a parameter is input, output or throughput. What might determine, whether it is in, out or thru may be whether values are written to the parameter or read from the parameter.
+
+`<< terminology >>`
+
+Long names for the different parameter passing types might be:
 
 - __Value In__
 - __Value Out__
@@ -471,15 +594,24 @@ So the long names of the different parameter passing types are:
 - ~~__Reference Inward, Value In__~~ 
 - ~~__Reference Inward, Value Thru__~~ 
 
-But __Reference Inward, Value In__ and __Reference Inward, Value Thru__ might not be relevant, because a reference *inward* only is about an *output* object.
+But these two might not be relevant:
 
-It is important to keep understanding that there are three elements to parameter passing:
+- __Reference Inward, Value In__
+- __Reference Inward, Value Thru__
+
+`<< rule rich >>`
+
+Perhaps because a reference *inward* only is about an *output* object.
+
+It might be relevant to observe that there might be three elements to parameter passing:
 
 - Values read or written
 - Parameter is a reference outward
 - Parameter is referenced from the outside
 
 To understand how the different parameter passings came about, it is important to keep those three aspects in mind.
+
+`<< parameter passing >>`
 
 Here is a list of the parameter passings, with their short names, and their diagram expression:
 
@@ -511,33 +643,41 @@ Here is a list of the parameter passings, with their short names, and their diag
 
     - ![](images/Input%20Output%20Parameter%20Passings.052.png)
 
+`<< ambiguity of input / output for reference parameters >>`
+
 The reason why it is important to keep understanding the three aspects of parameter passing, is that __Reference__ parameters, even though they can be __In, Out__ or __Thru__, are always *input* in a way, because it is a reference passed from the parent command to the sub-command.
+
+`<< interpretation >>`
 
 __Value In__ and __Value Out__ means reading and writing done by de caller. __Reference In__ and __Reference Out__ means reading and writing done by the called command. In both cases __In__ might mean, that the called command *uses* something, and __Out__ means, that the called command returns something.
 
-### Parameters of calls directly tied together
+### Parameters of Calls Directly Tied Together
 
-In other programming languages, sub-commands do not directly read or write to each other’s parameters. Parameters are only read or written by the parent command.
+In other programming languages, sub-commands might not directly read or write to each other’s parameters. Parameters might only be read or written by the parent command.
 
-However, in Circular, parameters of commands can be tied together directly.
+However, in Circular, parameters of commands might be tied together directly.
 
-One parameter type can only be tied to a parameter with specific other parameter type.
+One type of parameter passing might only be tied to a parameter with a specific other parameter passing.
 
-__Value In__ parameters and __Value Out__ parameters can only be tied together:
+__Value In__ parameters and __Value Out__ parameters may be tied together:
 
 ![](images/Input%20Output%20Parameter%20Passings.053.png)
 
-Only __Object Out__ and __Reference__ parameters can be tied together:
+Only __Object Out__ and __Reference__ parameters might be tied together:
 
 ![](images/Input%20Output%20Parameter%20Passings.054.png)
 
-Tying parameters together directly states a direct dependency. No direct reference to the parameter objects are required inside the parent command.
+Tying parameters may express a dependency. No direct reference to the parameter objects may be required inside the parent command in this notation.
+
+`<< rule rich >>`
 
 A __Value Thru__ parameter can not be tied to another parameter:
 
 ![](images/Input%20Output%20Parameter%20Passings.055.png)
 
 This is because it creates a circularity in which one parameter writes its values to the other, and the other parameter writes its value to the first parameter. It is just an unlogical circular situation.
+
+`<< clone >>`
 
 When directly tying together value parameters, cloning depth can be intermixed:
 
@@ -549,7 +689,7 @@ Effectively, it might be the lowest cloning depth that might be transferred to t
 
 ![](images/Input%20Output%20Parameter%20Passings.058.png)
 
-### Strict about parameter passing
+### Strict About Parameter Passing
 
 `<< implementation >>`
 
@@ -557,15 +697,17 @@ I really want the programming environment, to not so easily accept, that a param
 
 You could define a parameter as throughput, but actually only read from it. In that case the parameter is implicitly degraded to an input parameter. The implicit parameter type counts. The implicit parameter passing is dependant on the way it is declared and the way it is used. A throughput parameter is not only declared as such, but also always used as such. 
 
-### The class of a parameter
+### The Class of a Parameter
 
 The class of a parameter is usually set by the command, that holds the parameter. In that case, you can only assign objects or values of objects to it, that have the same class as the parameter indicates.
 
 It is also possible, that a parameter might not have a class. In that case any object or any object’s value can be passed to the command.
 
-When the class of a parameter is determined from the outside, then it is special. It is a __Class Reference__ parameter. In that case you may not be able to also use it as a normal __Reference__ parameter. < I don’t know yet. >
+### Type Arguments
 
-### Sub-commands are never output objects
+When the class of a parameter might be determined from the outside, then it is special. It may be a __Class Reference__ parameter. In that case you might not use it as a normal __Reference__ parameter. In some other programming languages thes might be called *type arguments*.
+
+### Sub-Commands Are Never Output Objects
 
 `<< rule rich >>`
 
@@ -579,9 +721,13 @@ A parameter, that is a command reference, can be run, but it can never point to 
 
 ### In, Out & Thru Parameters
 
-Parameters can function as input, output and throughput. Input, output and throughput are parameter passing types. They are shortened to __In, Out__ and __Thru__.
+Parameters can function as input, output and throughput. Input, output and throughput may be parameter passing types. They might be shortened to __In, Out__ and __Thru__.
+
+`<< interpretation >>`
 
 When a command’s parameter is __In__, it means that the command reads from the parameter. When a command’s parameter is __Out__, it means that the command writes to the parameter. When a command’s parameter is Thru, it means, that the command reads and writes the parameter. Throughput functions as both input and output at the same time.
+
+`<< creation behavior of commands >>`
 
 Before execution you can read and write. > 2008-09-24 from the outside  
 During execution you can not read or write. > 2008-09-24 from the outside  
@@ -589,21 +735,25 @@ After execution you can only read. > 2008-09-24 from the outside
 
 ### Downput
 
+`<< terminology >>`
+
 Next to the terms input, output and throughput, the term downput might be introduced. Downput is intermediate data as a helper of a process, that might eventually produce output. Temporary variables, local variables. They are all downput. Actually, in the command-call structure, a command in which output data is disposed, this output has become downput.
 
 Downput data is private data of the command.
 
-The term downput is a good term, because it is only passed *down* into sub-commands. And it is dropped after the parent command is done (dropped *down*). It is ‘put down’ / rejected after the execution. Or put down / to put something down, that you had in your hand.
+The term downput might be a good term, because it is only passed *down* into sub-commands. And may be dropped after the parent command is done (dropped *down*). It is ‘put down’ / rejected after the execution. Or put down / to put something down, that you had in your hand.
 
-When a command disposes objects after it is done, then those objects are called *downput*. Downput may have been input for sub-commands, or it could have been output of sub-commands. To the parent command, though, it is *downput*. Downput parameters might not be further considered here, because they do not have anything to do with parameter *passing*.
+When a command disposes objects after it is done, then those objects might be called *downput*. Downput may have been input for sub-commands, or it could have been output of sub-commands. To the parent command, though, it might be *downput*. Downput parameters might not be further considered here, because they might not have anything to do with parameter *passing*.
 
-### Incidental parameter passing
+### Incidental Parameter Passing
 
 `<< rule rich >>`
 
 One time a command runs, something may only be read. Another time it may be read and written to. This changes the implicit position of the object in relation to to the command for each call to the command. You could stereotype it an input parameter as __Not Input__ and an output as __Not Output__ and a thru parameter as __Only Input__ or __Only Output__ or __Not Thruput__. But it might not replace the parameter’s __In, Out__ or __Thru__ properties, because they belong to the command definition.
 
 The object command’s on the other end of the relationship, also get additional typing based on the incidental parameter passing, but the passing names are not even determined yet.
+
+< 2021-05-03: This may be like 'connector' vs 'connection'. >
 
 ### Indirect Value Transmission
 
@@ -620,19 +770,25 @@ It can also be a *sub-object* of the parameter, that is read or written. Even th
 
 Sometimes the command itself might not read or write from a parameter, but the parameter is passed down to a sub-command, that reads or writes from the object. This yields over the in-out-thru properties of the parameter. This might give the parameter an indication of value direction, but this is an abstract notation of what is going on. The assignments are done by a sub-command.
 
-Next to values being read or written, an abstract indication of value direction is also used to indicate addition, removal, creation and annulment of objects. These actions are all considered *writing* or *output*.  
+Next to values being read or written, an abstract indication of value direction is also used to indicate addition, removal, creation and annulment of objects. These actions might all be considered *writing* or *output*.  
 In the definition of the command, you might see the individual additions, removals, creations and annulments as calls to system commands (see the *System Interfaces* documentation section).  
 But the __Reference__ *parameter* might get an *abstract* value direction indication, that says the reference parameter is output.
 
-All in all, non-value transmissions apply to __By Reference__ parameters only.
+All in all, non-value transmissions may apply to __By Reference__ parameters only.
 
-So for reference parameters, the in-out-thru direction might be an abstract indication of what is going on. It can mean a lot of different things. The exact objects and manipulations a command executes on a reference parameter are indicated by its command IO, covered in the article *Command IO* (possibly still part of the article *Automatic Execution Order*).
+So for reference parameters, the in-out-thru direction might be an abstract indication of what is going on. It can mean a lot of different things.
 
-### Wrong approach to the terms In, Out and Thru
+The exact objects and manipulations a command might executes on a reference parameter might be indicated by its command IO, might be covered in a topic *Command IO*.
+
+### Wrong Approach to the Terms In, Out and Thru
 
 *2008-09-29*
 
 #### In, Out & Thru
+
+`<< terminology >>`
+
+`<< in / out vs. read / write confusion >>`
 
 The terms I might like to see back in access control literals are the terms __In, Out__ and __Thru__.
 
@@ -668,15 +824,29 @@ Even though __Value__ is __Thru__, the __Value Get Private__ is put in between t
 
 But I am not sure yet.
 
-#### Terms for reading
+#### Terms for Reading
+
+`<< terminology >>`
+
+`<< in / out vs. read / write confusion >>`
 
 Reading stuff might not seem to have anything to do with the terms __In, Out__ and __Thru__. __In, Out__ and __Thru__ only determine the write-direction.
 
-Reading stuff seems to matter less. Reading might not be seen as parameter passing. It might be only about: who writes it and from which direction. Reading has less impact than writing. But its impact may become important later, when using it in more advanced techniques for for instance concurrency resolution.
+Reading stuff seems to matter less. Reading might not be seen as parameter passing. It might be only about: who writes it and from which direction. Reading has less impact than writing.
+
+`<< input output >>`
+
+But its impact may become important later, when perhaps using it in more advanced techniques for for instance concurrency resolution.
+
+`<< terminology >>`
+
+`<< in / out vs. read / write confusion >>`
 
 What I see now, is that if I find simpler terms for reading, I might probably be totally happy with my parameter access control literals. Since there is such beautiful names for writing from either inside or outside (__In, Out__ and __Thru__) can I come up with beautiful names for reading too? If I can find a replacement for the terms __Get Private__ and __Get Public__, then I might probably be completely satisfied with how the parameter access control literals look.
 
 Next to an easier expression of __Get Private__ and __Get Public__, you may also want to invent keywords to express that something is publicly written and privately read, or the other way around. So when __Value__ is set on the outside and read on the inside, you get an easier expression for it, than saying __Value In, Value Get Private__. Do note, that when you set a value on the outside, it might not imply, that you also *read* the value on the inside.
+
+< 2021-05-03: It may seem to matter less, the precise words. It might be more about the diagram notation and how it might map to perhaps more familiar concepts from programming. Even automatically determining in, out and thru might not be dependent on what names things are given. >
 
 #### Consider New In & New Out
 
