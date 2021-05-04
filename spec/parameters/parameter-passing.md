@@ -1,5 +1,5 @@
-﻿Circular Language Construct Drafts | Parameters
-===============================================
+﻿Circular Language Spec | Parameters
+===================================
 
 Parameter Passing
 -----------------
@@ -52,7 +52,7 @@ __Contents__
 - [From the Original Symbol Documentation from 2004](#from-the-original-symbol-documentation-from-2004)
     - [Command Parameters](#command-parameters)
         - [Input, Output and Throughput Parameters](#input-output-and-throughput-parameters)
-    - [Get and Set are Inseparable](#get-and-set-are-inseparable)
+    - [Value Get and Set are Inseparable](#value-get-and-set-are-inseparable)
     - [Executions & Parameters](#executions--parameters)
         - [Argument Access](#argument-access)
             - [Input, Output and Throughput](#input-output-and-throughput)
@@ -63,7 +63,7 @@ __Contents__
         - [Argument Reference](#argument-reference)
             - [Summary](#summary)
         - [In, Out and Thru Argument Notation](#in-out-and-thru-argument-notation)
-            - [Execution Order In Text Code](#execution-order-in-text-code)
+            - [Execution Order in Text Code](#execution-order-in-text-code)
         - [Implicit Notations](#implicit-notations-1)
             - [Previous Texts](#previous-texts-1)
             - [Brainstorm Items](#brainstorm-items)
@@ -186,7 +186,7 @@ __Reference__ parameter:
 
 Therefore it can also be called __Reference Outward, Value In__ and __Reference Outward, Value Out__ But those names are too long.
 
-`<< move >>`
+`<< different section >>`
 
 The distinction between __Reference In__ and __Reference Out__ is about whether values are read or written to the object passed to the sub-command.
 
@@ -194,7 +194,7 @@ The distinction between __Reference In__ and __Reference Out__ is about whether 
 
 In some programming languages one use of *by reference* was to be able to pass large objects to a command. Another use was to be able to let the command have multiple return values, because in other programming languages a command might only have one return value.
 
-`<< move >>`
+`<< different section >>`
 
 In Circular, multiple return values is accomplished by having multiple __Object Out__ parameters. So you do not need __Reference Out__ parameters for that purpose anymore.
 
@@ -850,6 +850,8 @@ Next to an easier expression of __Get Private__ and __Get Public__, you may also
 
 #### Consider New In & New Out
 
+`<< parameter passing >>`
+
 2008-09-29
 
 However, __New In__ might mean creation from the outside and __New Out__ might mean creation on the inside... so ... it’s not just the inside then... how might that relate to the rest of the ideas about __In, Out__ and __Thru__?
@@ -857,6 +859,8 @@ However, __New In__ might mean creation from the outside and __New Out__ might m
 JJ
 
 #### More
+
+`<< parameter passing >>`
 
 If an aspect is both __In__ and __Out__ and the two access control elements are right next to each other, it can be replaced by a single access control element __Thru__:
 
@@ -871,7 +875,7 @@ If an aspect is both __In__ and __Out__ and the two access control elements are 
 `<< input output >>`
 
 I think the terms input and output should not be about whether something is written from the outside and whether something is written from the inside. That’s what I did earlier. I think the term input should mean: everything that is read on the inside of a command, and the term output should mean: everything that is written on the inside of a command.  
-So it is about what happens on the inside. Whether something is written or read from the outside is not the issue.
+So it is about what happens on the inside. Whether something is written or read from the outside might not be the issue.
 
 Anyway, input and output are too complicated to just wrap up the old parameter passing type stories, which depend on those terms.  
 Advanced Command Topics might also do a lot with input and output. Actually, most of it is about the complexity of input and output. I should really save it for another project. One of the objectives of the project Work Out Advanced Command Topics should be to determine the exact definition of input and output and the exact definition of input and output parameters.  
@@ -880,11 +884,24 @@ I should register in the project description that determining the exact definiti
 
 The current project might wrap up everything else about parameters.  
 I might clean up the objectives of the current project and create a new plan for it.  
-Then I can work my way up to an end point. And in the next project I can just calmly look at the exact complexity of input and output.
+Then I can work my way up to an end point. And in the next project I might just calmly look at the exact complexity of input and output.
 
 ### Brainstorm 2008-09-26
 
 `<< input output >>`
+
+<
+
+2021-05-04:
+
+- The following brainstorm may be about labeling things In and Out. A quest for simpler names might be observed.
+- Perhaps a more relevant issue might be the elements: different ways that objects might be accessed like Public Get Value or Private Set Object. Perhaps not so much what to name it, but rather what elements there are and what the notation might be. 
+- Also edge cases might be given more attention than might be  necessary.
+- Another thing that emerges in the brainstorm might be: wanting a grip on what input and output precisely mean and how to define it precisely. That might be more for the Input / Output chapter in Construct Drafts.
+
+My mistake may once have been to think: "These terms In and Out must be simple to define." and then might have gotten stuck on that for a while.
+
+\>
 
 The problem with defining what is input and what is output, is:
 
@@ -895,7 +912,7 @@ You might think: both; something that is written from the outside is read on the
 
 But one prime example might overthrow that: An object can be written, so passed to a command, and the value of the object might be read. So Object Set Public, Value Get Private. So then you do not set the object, to read it on the inside, but the object is set, to read the value on the inside, so when an aspect, such as Object or Value, is In, it might not mean that it is both written from the outside and read on the inside.
 
-But in the car on my way home from work I realized, that I have been forgetting about half the gets. When an object is written from the outside of the command, of which the __Value__ is read on the inside, the __Object__ is read as well, because you need to read the object, before you can retrieve the value of the object. So the object is read for access. Not for copy / assignment.
+But in the car on my way home from work I realized, that I have been forgetting about half the gets. When an object is written from the outside of the command, of which the __Value__ is read on the inside, the __Object__ is read as well, because might read the object, before you can retrieve the value of the object. So the object is read for access. Not for copy / assignment.
 
 Perhaps you need to consider reading an object for access too. I already wrote something about that in the old Symbol documentation: different forms of getting, that also might be separately access controlled.  
 It makes a difference when something gettable for access compared to gettable for copying. It might make a difference for outcome dependency. For instance: when you can get something for accessing but can’t get something for copying, then the object can be accessed inside the command, but it can not be passed further down into sub-commands.  
@@ -938,7 +955,7 @@ If you don’t read input, then you can not call it input: an error or warning i
 - __Object In For Redirection__
 - __Object In For Copy__
 - __Class In For Access__
-    - \> How can you access a class? Don’t you only access an object? Yeah, I think you do. So the separation between for access and for copy only counts for Object access.
+    - \> How can you access a class? Don’t you only access an object? Yeah, I think you do. So the separation between 'for access' and 'for copy' may only count for Object access.
 
 So:
 
@@ -952,7 +969,7 @@ The last bit of the access control literal specifies, you can only follow redire
 But the access literal above further simplified  
 = Object In For Redirection, Value Get Private.
 
-Now I am confused again: you may set and get the object, but you only GET the value. Were’s I supposed to call something input, when it is set from the outside and read from the inside.
+Now I am confused again: you may set and get the object, but you only GET the value. Weren't I supposed to call something input, when it is set from the outside and read from the inside.
 
 The thing is: I am not reading what’s set on the outside: I am reading from what’s inside what’s set on the outside.
 
@@ -961,7 +978,7 @@ So you are going further down the structure when you read the value of the objec
 So Value In means you write the value from the outside, not the object, and you read the value on the inside. Value Out means the other way around.
 
 Actually, it could be: Value Set Public, Object Get Private For Copy.  
-Value is Set, but not read. Well.. it has to  be read by a sub-command then...
+Value is Set, but not read. Well.. it has to be read by a sub-command then...
 
 I am still confused. I have brainstorming to do.
 
@@ -983,7 +1000,7 @@ The general meaning is understandable, but what it means on an object oriented l
 
 I can talk about Reference In, but when you assign the object to a parameter, and the value is supposed to be accessible, it doesn’t mean, that you might read the value directly in the command. You may very well read it somewhere in a deep sub-command.
 
-This whole theory about how something becomes input or output should just be saved for Advanced command topics. And things like Reference In and all that, are just not as simple as suggested.
+This whole theory about how something becomes input or output might just be saved for Advanced command topics. And things like Reference In and all that, are just not as simple as suggested.
 
 Perhaps a simpler conclusion, for now:  
 the rules I suggested above are still true: when you set input, it is meant to be read somewhere, but WHERE you actually read it is more complicated.  
@@ -996,6 +1013,8 @@ but WHERE it is then read could be somewhere totally else than directly outside 
 
 ### Loose Ideas
 
+`<< parameter passing >>`
+
 Parameters,  
 2008-08
 
@@ -1007,6 +1026,8 @@ JJ
 
 Parameter passing,  
 2008-09-05
+
+`<< terminology >>`
 
 If a command parameter is typed with in, out, or though,  
 then an object command can also be given a title depending  
@@ -1025,7 +1046,7 @@ JJ
 Parameters,   
 2008-06
 
-`<< construct drafts >>`
+`<< input output >>`
 
 Always something is the input and something is the output: at least one thing is used, and at least one thing is affected. But the affected thing can also be a new thing.  
 One thing is executed on another. So its data executed on data.
@@ -1046,6 +1067,8 @@ When you show a command inside an object, how might you see, that the command ou
 JJ
 
 -----
+
+`<< get purposes >>`
 
 2008-09-26
 
@@ -1075,17 +1098,19 @@ As commands call each other, every time different data is passed along to the di
 
 -----
 
-`<< broader view >>`
+`<< commands & classes loosely coupled >>`
 
 Actually, a command might only become part of the classes that it directly uses. When the method uses submembers of the classes, the method might not become part of the classes of the submembers.
 
 -----
 
+`<< details >>`
+
 ByRefs have pros and cons in different situations.
 
 -----
 
-`<< usable >>`
+`<< parameter passing >>`
 
 The objects inside a command can be regarded:
 
@@ -1097,7 +1122,7 @@ The objects inside a command can be regarded:
 
 -----
 
-`<< usable >>`
+`<< parameter passing >>`
 
 The input parameters of a command are its writable objects. The output values are its readable objects. Objects that are read-write are like in-out or thru parameters.
 
@@ -1110,6 +1135,8 @@ One readable object can be chosen to be the return value, which promotes it to b
 < Don’t forget that you don’t need to read or write necessarily, you can also just call a member of the parameter instead of read or write it... explore that >
 
 -----
+
+`<< command in >>`
 
 Passing a command reference,
 
@@ -1145,9 +1172,13 @@ The terms *parameter* and *argument* are often intermixed. For now you can assum
 
 ##### Input, Output and Throughput Parameters
 
+`<< nice formulation >>`
+
 Parameters are commonly input (instructions) for a command. Parameters can also be output (returned results). They make a command return something to the caller. One of the output parameters can be appointed to be *the* return value, which makes it sort of like the main output parameter. Some parameters can be input, and then output again. Then the command uses the parameter, transforms it and gives it back in the transformed state. These parameters are called throughput parameters, or in-out parameters. There are also objects in a command that are only used locally. Those are not usually called parameters, but sooner called *local objects*.
 
-#### Get and Set are Inseparable
+#### Value Get and Set are Inseparable
+
+`<< assignment >>`
 
 A state write is always paired with a state read and a state read is always paired with a state write.
 
@@ -1160,6 +1191,8 @@ When you read a state, the state is meant to be assigned to another object. And 
 ###### Input, Output and Throughput
 
 ####### Output by Reference
+
+`<< in / out vs. read / write confusion >>`
 
 < 2008-10-06 Move to Input Output >
 
@@ -1175,13 +1208,19 @@ Any line going out of a diamond is set just before the diamond executes.
 
 ####### Write, Read ≠ Input, Output
 
+`<< in / out vs. read / write confusion >>`
+
 As such, *read and write arguments* is not analogous to *input and output arguments*. A write argument can easily serve as an output argument.
 
 < 2021-05-02: It might be about context: reading from the inside, writing on the outside versus writing on the outside, reading on the inside. It seems about reading/writing in the context of containment structure. >
 
 ####### Reference Arguments
 
+`<< details >>`
+
 Reference arguments can serve as input, output and throughput. State arguments can serve as input, output and throughput too. 
+
+`<< rule rich >>`
 
 You’ll hardly use a line target as output information. You’ll probably use an argument’s line target only to pass an object by reference.
 
@@ -1189,11 +1228,17 @@ Even though an argument’s line is hardly ever read, an argument’s state *is*
 
 ###### Using Arguments
 
+`<< parameter passing >>`
+
 You’ll mainly use arguments by reading and writing their state or to pass objects by reference.
 
 ###### Accessing Arguments During Execution
 
+`<< creation behavior of commands >>`
+
 Apart from writing in the prolog and reading in the epilog, there’s a third period in which you can access an argument: during execution. You can only access the arguments of a diamond *in execution*. The caller of the diamond is frozen, till the execution completes, so the caller doesn’t have any chance of accessing the arguments during execution. However, everything inside the executor is in motion. The executor itself can freely access its arguments, of course, but also anything it calls, could access its arguments, if given a reference. But, as I said, the *caller* of an execution can’t access the arguments during execution.
+
+`<< details >>`
 
 The diagrammatic effect of this is the following. A member can be accessed by the diamond that contains it, and by all its sub diamonds:
 
@@ -1209,6 +1254,10 @@ More rules on that are covered in the *Execution Basics* section.
 
 ##### Implicit Notations
 
+`<< parameters of calls directly tied together >>`
+
+`<< implicit calls >>`
+
 < you can call an implicit call a parameter reference too. Mention it so you show that there’s a big difference between parameter reference and argument reference >
 
 - Implicit call and Explicit call
@@ -1220,6 +1269,8 @@ More rules on that are covered in the *Execution Basics* section.
 ####### A
 
 ######## Referencing Square Members: Implicit Call
+
+`<< rule rich >>`
 
 It is really only allowed to reference members of diamonds:
 
@@ -1267,7 +1318,9 @@ But as I said: child diamonds can access their parent diamond’s members if the
 
 ![](images/Input%20Output%20Parameter%20Passings.072.jpeg)
 
-######## An object symbol as a pointer to a command symbol: Implicit return value reference.
+######## An Object symbol as a Pointer to a Command Symbol: Implicit Return Value Reference.
+
+`<< return values >>`
 
 You can also let an object symbol point to a command symbol.
 
@@ -1278,6 +1331,8 @@ In that case you’re actually implicitly referencing the return value.
 ![](images/Input%20Output%20Parameter%20Passings.074.jpeg)
 
 ######## Implicit Call and Implicit Return Value Reference
+
+`<< rule rich >>`
 
 If an object symbol is a reference to a square, it’s both an implicit call and an implicit return value reference.
 
@@ -1297,6 +1352,8 @@ in the second picture you see the explicit call. The third picture adds the expl
 
 ######## Reference to Other Out Parameters
 
+`<< return values >>`
+
 An object reference to a command can only be a reference to the command’s return value. If you want to reference other out parameters, you might reference them explicitly.
 
 ![](images/Input%20Output%20Parameter%20Passings.079.jpeg)
@@ -1307,6 +1364,8 @@ __a__ can only be a reference to __r__, the return value. __b__ is a reference t
 
 ##### Argument Reference
 
+`<< interpretation >>`
+
 There are three ways to use arguments: state read, state write and passing by reference:
 
 | ![](images/Input%20Output%20Parameter%20Passings.080.png) | ![](images/Input%20Output%20Parameter%20Passings.081.png) | ![](images/Input%20Output%20Parameter%20Passings.082.png)|
@@ -1315,9 +1374,17 @@ There are three ways to use arguments: state read, state write and passing by re
 
 There seems to be one more: *argument reference*.
 
+*Argument reference:*  
+
 ![](images/Input%20Output%20Parameter%20Passings.083.png)
 
-*Argument reference*
+`<< interpretation >>`
+
+`<< rule rich >>`
+
+<  
+If it is interpreted as an implicit assignment call, things seem to fall in to place. And then the following ideas might not be needed.  
+\>
 
 This is however not possible, because the argument destroys after execution, so you can’t reference it after execution, because then there is nothing left to reference anymore. Argument reference is useless.
 
@@ -1345,7 +1412,7 @@ The explicit notation that solves this is the following:
 
 ![](images/Input%20Output%20Parameter%20Passings.086.png)
 
-The child diamond is inserted as a substitute for the higher diamond it refers to. This offers a solution because the parent of the child diamond might exist when the child exists. {This might be an issue for multiple execution of a diamond. It also raises the question what happens when you consult something of the righter diamond. Is the bigger diamond executed first? What?} That’s rule two for getting to the explicit notation of parameter reference.
+The child diamond is inserted as a substitute for the higher diamond it refers to. This offers a solution because the parent of the child diamond might exist when the child exists. {This might be an issue for multiple execution of a diamond. It also raises the question what happens when you consult something of the diamond on the right. Is the bigger diamond executed first? What?} That’s rule two for getting to the explicit notation of parameter reference.
 
 < I have doubts about this third rule. I think this case might be illegal. I need to find the rule on what makes it illegal and how you see the illegality of it in the implicit notation >
 
@@ -1381,7 +1448,7 @@ If the line both enters and exists a diamond, then the inversion of direction do
 
 Rule 3:
 
-...
+< ... >
 
 You go from implicit to explicit notation in the following steps:
 
@@ -1401,7 +1468,11 @@ Invert the direction of other lines that became faulty
 
 ##### In, Out and Thru Argument Notation
 
-< The out parameter access symbol isn’t required, so the notation of it *suggests* that it’s an in parameter reference >
+`<< interpretation >>`
+
+`<< rule rich >>`
+
+< The out parameter access symbol isn’t required, so the notation of it *suggests* that it’s an in parameter reference. >
 
 Argument reference notation (an implicit one):
 
@@ -1441,9 +1512,11 @@ As such, there are six explicit argument purposes:
 | ![](images/Input%20Output%20Parameter%20Passings.100.png) | ![](images/Input%20Output%20Parameter%20Passings.101.png) | ![](images/Input%20Output%20Parameter%20Passings.102.png) |
 | *Reference in* | *Reference out* | *Reference thru* |
 
-###### Execution Order In Text Code
+###### Execution Order in Text Code
 
-The resulting sequence of code lines corresponds to the execution order required for dependency. As you change the diagram, the order of the text code can change. You can freely more around text lines of sibling symbols.  
+`<< text code >>`
+
+The resulting sequence of code lines corresponds to the execution order required for dependency. As you change the diagram, the order of the text code can change. You can freely move around text lines of sibling symbols.  
 < The resulting sequence of code lines and the execution order within code lines. >
 
 < Don’t cover exact text code here >
@@ -1457,8 +1530,11 @@ The resulting sequence of code lines corresponds to the execution order required
 ######## Implicit Calls
 
 < 2008-10-08 The texts that follow use an old notation for calls: a definition is a square without a reference line, a call is a square with a reference line. >  
+
 < Maybe diagrams can be more basic, expressing solely a concept >  
+
 < reference a command parameter from an object.>  
+
 To explain this concept I use an example where one command, called __Get__, returns an object that is then passed to another command, called __Set__. This requires two calls: first a call to __Get__ and then to __Set__.
 
 ######### Explicit Calls

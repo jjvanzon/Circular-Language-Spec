@@ -137,25 +137,3 @@ Save this idea for Input / Output, because that is where it starts to publicly m
 In the C++ programming language constant parameters can be set at run time when you call a command. In Symbol constants are really constant: they might not change at run time and are only set at design time
 
 JJ
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
