@@ -10,9 +10,7 @@ __Contents__
 
 - [In & Out](#in--out)
 - [By Value](#by-value)
-- [By Value in a Diagram](#by-value-in-a-diagram)
 - [By Reference](#by-reference)
-    - [Ambiguity of Input / Output for Reference Parameters](#ambiguity-of-input--output-for-reference-parameters)
 - [Value In](#value-in)
 - [Value In in a Diagram](#value-in-in-a-diagram)
 - [Value Out](#value-out)
@@ -32,6 +30,8 @@ __Contents__
     - [Existing Object](#existing-object)
 - [Object Out in a Diagram](#object-out-in-a-diagram)
 - [Structs Parameter Passing](#structs-parameter-passing)
+- [Ambiguity of Input / Output for Reference Parameters](#ambiguity-of-input--output-for-reference-parameters)
+- [Longer Names](#longer-names)
 - [Three Parameter Passing Elements](#three-parameter-passing-elements)
 - [Parameters of Calls Directly Tied Together](#parameters-of-calls-directly-tied-together)
 - [Strict About Parameter Passing](#strict-about-parameter-passing)
@@ -53,7 +53,6 @@ __Contents__
 - [From the Original Symbol Documentation from 2004](#from-the-original-symbol-documentation-from-2004)
     - [Command Parameters](#command-parameters)
         - [Input, Output and Throughput Parameters](#input-output-and-throughput-parameters)
-    - [Value Get and Set are Inseparable](#value-get-and-set-are-inseparable)
     - [Executions & Parameters](#executions--parameters)
         - [Argument Access](#argument-access)
             - [Input, Output and Throughput](#input-output-and-throughput)
@@ -106,85 +105,21 @@ It may actually be a value assignment, that performs a yield over of value. Here
 Parameters passed by value might be useful for smaller amounts of data. The data might be changed inside the command, but that might not affect the original object.  
 For an object, that only stores one value and that’s it, it may be ok to just copy the value.
 
-`<< rule rich >>`  
-
-`<< interpretation issues >>`
-
-When pass an input parameter by value, it is guaranteed, that the operations inside the command might not affect the original object. < 2021-05-03: in VB.NET's ByVal parameter passing for reference types, the situation seem slightly more nuanced than that. >
-
-`<< by ref >>`
-
-If you want to pass more complex objects to a command, this might be done by reference instead, but then changes to the parameter might affect the original objects.
-
-`<< details >>`
-
-In parameter passing by value, the parameter object and the object, that is passed the value to or from, are not referring to each other at all.
-
------
-
-`<< relations between commands & objects >>`
-
-Relations between objects,  
-Value parameters,  
-2008-09-09
-
-Value parameters do not have the interchangeability between command parameters and object commands, because they are not a relationship.
-
-JJ
-
-### By Value in a Diagram
-
-`<< assignment >>`
-
-A value assignment *might* have an invisible reference to the parameter, but you won’t see it in the diagram, because an assignment is something so basic, that the notation of it is kept very basic.
-
-The complicated notation:
-
-![](images/Input%20Output%20Parameter%20Passings.003.png)
-
-(the arrows are pointing to the references invisible earlier)
-
-But this still might not tie the source and target symbols directly together.
-
 ### By Reference
 
 Next to passing a parameter by *value*, you can also pass a parameter *by reference*. For instance: instead of copying a value to an input parameter, a command might be passed reference to an object outside the command.
 
+If you want to pass more complex objects to a command, this might be done by reference instead of by value, but then changes to the parameter might affect the original objects.
+
 __Reference__ parameter:
 
 ![](images/Input%20Output%20Parameter%20Passings.005.png)
-
-`<< terminology >>`
-
-Therefore it can also be called __Reference Outward, Value In__ and __Reference Outward, Value Out__ But those names are too long.
-
-`<< different section >>`
-
-The distinction between __Reference In__ and __Reference Out__ is about whether values are read or written to the object passed to the sub-command.
-
-`<< about other technology >>`
-
-In some programming languages one use of *by reference* was to be able to pass large objects to a command. Another use was to be able to let the command have multiple return values, because in other programming languages a command might only have one return value.
-
-`<< different section >>`
-
-In Circular, multiple return values is accomplished by having multiple __Object Out__ parameters. So you do not need __Reference Out__ parameters for that purpose anymore.
-
-#### Ambiguity of Input / Output for Reference Parameters
-
-`<< move ? >>`
-
-When a command call has an outward reference to an object, this might make the object a parameter. It seems an *input* parameter, since the line might be set from the outside. But it seems ambiguous whether it is input, because values might still be read or written. It being an outward reference, *might not* determine yet whether it is input, output or throughput. The *in* and *out* in this case refer to whether *values* are written or read to the object reference. A reference parameter is always sort of like input, though: the parent command passes the object to the sub-command, so the parent inputs something into the sub command.
 
 ### Value In
 
 A __Value In__ parameter passes a value from an object to the parameter of a command. A __Value In__ parameter is an object inside the command call, that can be written before the command is invoked, by assigning to it a value of an object outside the command call.
 
 The command can manipulate the __Value In__ parameter without affecting the original object.
-
-`<< details >>`
-
-A __Value In__ parameter works best simple objects, that stores a single value,
 
 ### Value In in a Diagram
 
@@ -303,12 +238,10 @@ Do note, that the expression of read-write direction is not a connector, like fo
 
 ### Reference Out
 
+The distinction between __Reference In__ and __Reference Out__ might be about whether values are read or written to the object passed to the sub-command.
+
 When a command is passed a reference to an object, and the command writes to the parameter, it might be called a __Reference Out__ parameter. Because a __Reference Out__ parameter is output, the called command might only *write* to the object, that it was given a reference to. A __Reference Out__ parameter can be used to assign a reference to a complex object to which a command writes output.
 
-`<< ambiguity of input / output for reference parameters >>`
-
-In a sense, a __Reference *Out*__ parameter is actually *through*put.  
-When output is *alteration* of an *existing* object, it could be considered throughput, even though there is only *written* to the object, and nothing is *read* from the object, it is still an object passed *through* the command. In yet another sense, a __Reference Out__ parameter is input, because you are passing an object *into* a command.
 
 ### Reference Out in a Diagram
 
@@ -390,18 +323,6 @@ An __Object Out__ parameter might be an object, that resides inside the command.
 
 Unlike parameters passed __By Reference__, an __Object Out__ parameter is *referred to*. This is an exclusive aspect of the __Object Out__ parameter passing.
 
-`<< terminology >>`
-
-The long names of parameters passed __By Reference__ were:
-
-- __Reference Outward, Value Inward__
-- __Reference Outward, Value Outward__
-- __Reference Outward, Value Thru__
-
-The long name of value __Object Out__ might be:
-
-- __Reference Inward, Value Out__
-
 `<< parameter passing >>`
 
 So this is a __Reference Inward__ parameter, as opposed to a __Reference Outward__ parameter. The reference direction goes the other way around.
@@ -435,6 +356,10 @@ An __Object Out__ parameter might be typed a __New Object Out__ parameter, if it
 #### Existing Command Out
 
 An __Object Out__ parameter can also be an existing command. In that case the __Object Out__ parameter object-redirects to another command again, so the parent command basically picked out a command for you, instead of actually producing a new one.
+
+`<< different section ? >>`
+
+In Circular, multiple return values is accomplished by having multiple __Object Out__ parameters. So you do not need __Reference Out__ parameters for that purpose anymore.
 
 #### Existing Object
 
@@ -476,13 +401,40 @@ It may happen automatically for __struct__ types. A clone notation where the clo
 
 No definite choice might be necessary about which notation to pick. It might depend on the particular application that may be developed that perhaps would use this Circular notation.
 
-### Three Parameter Passing Elements
+### Ambiguity of Input / Output for Reference Parameters
 
-`<< interpretation >>`
+`<< move ? >>`
 
-__By Value__, __Reference Outward__ and __Reference Inward__ might be the different reference situations a parameter can have. But this may not tell us whether a parameter is input, output or throughput. What might determine, whether it is in, out or thru may be whether values are written to the parameter or read from the parameter.
+`<< ambiguity of input / output for reference parameters >>`
 
-`<< terminology >>`
+When a command call has an outward reference to an object, this might make the object a parameter. It seems an *input* parameter, since the line might be set from the outside. But it seems ambiguous whether it is input, because values might still be read or written. It being an outward reference, *might not* determine yet whether it is input, output or throughput. The *in* and *out* in this case refer to whether *values* are written or read to the object reference. A reference parameter is always sort of like input, though: the parent command passes the object to the sub-command, so the parent inputs something into the sub command.
+
+-----
+
+`<< ambiguity of input / output for reference parameters >>`
+
+In a sense, a __Reference *Out*__ parameter is actually *through*put.  
+When output is *alteration* of an *existing* object, it could be considered throughput, even though there is only *written* to the object, and nothing is *read* from the object, it is still an object passed *through* the command. In yet another sense, a __Reference Out__ parameter is input, because you are passing an object *into* a command.
+
+-----
+
+`<< ambiguity of input / output for reference parameters >>`
+
+The reason why it is important to keep understanding the three aspects of parameter passing, is that __Reference__ parameters, even though they can be __In, Out__ or __Thru__, are always *input* in a way, because it is a reference passed from the parent command to the sub-command.
+
+### Longer Names
+
+A By Reference parameter can also be called __Reference Outward, Value In__ and __Reference Outward, Value Out__ But those names may be quite long.
+
+The long names of parameters passed __By Reference__ were:
+
+- __Reference Outward, Value Inward__
+- __Reference Outward, Value Outward__
+- __Reference Outward, Value Thru__
+
+The long name of value __Object Out__ might be:
+
+- __Reference Inward, Value Out__
 
 Long names for the different parameter passing types might be:
 
@@ -500,6 +452,12 @@ But these two might not be relevant:
 
 - __Reference Inward, Value In__
 - __Reference Inward, Value Thru__
+
+### Three Parameter Passing Elements
+
+`<< interpretation >>`
+
+__By Value__, __Reference Outward__ and __Reference Inward__ might be the different reference situations a parameter can have. But this may not tell us whether a parameter is input, output or throughput. What might determine, whether it is in, out or thru may be whether values are written to the parameter or read from the parameter.
 
 `<< rule rich >>`
 
@@ -544,10 +502,6 @@ Here is a list of the parameter passings, with their short names, and their diag
 - __Object Out__
 
     - ![](images/Input%20Output%20Parameter%20Passings.052.png)
-
-`<< ambiguity of input / output for reference parameters >>`
-
-The reason why it is important to keep understanding the three aspects of parameter passing, is that __Reference__ parameters, even though they can be __In, Out__ or __Thru__, are always *input* in a way, because it is a reference passed from the parent command to the sub-command.
 
 `<< interpretation >>`
 
@@ -988,12 +942,6 @@ As commands call each other, every time different data is passed along to the di
 
 -----
 
-`<< commands & classes loosely coupled >>`
-
-Actually, a command might only become part of the classes that it directly uses. When the method uses submembers of the classes, the method might not become part of the classes of the submembers.
-
------
-
 `<< details >>`
 
 ByRefs have pros and cons in different situations.
@@ -1065,14 +1013,6 @@ The terms *parameter* and *argument* are often intermixed. For now you can assum
 `<< nice formulation >>`
 
 Parameters are commonly input (instructions) for a command. Parameters can also be output (returned results). They make a command return something to the caller. One of the output parameters can be appointed to be *the* return value, which makes it sort of like the main output parameter. Some parameters can be input, and then output again. Then the command uses the parameter, transforms it and gives it back in the transformed state. These parameters are called throughput parameters, or in-out parameters. There are also objects in a command that are only used locally. Those are not usually called parameters, but sooner called *local objects*.
-
-#### Value Get and Set are Inseparable
-
-`<< assignment >>`
-
-A state write is always paired with a state read and a state read is always paired with a state write.
-
-When you read a state, the state is meant to be assigned to another object. And from the other perspective, there’s no point in reading the state if you’re not going to assign the state to another object.
 
 #### Executions & Parameters
 
@@ -1725,10 +1665,6 @@ Oh jawel! Consult vind gewoonlijk altijd plaats in epiloog, maar bij assignment 
 
 ![](images/Input%20Output%20Parameter%20Passings.118.jpeg)
 
-`<< assignment >>`
-
-The last picture is an acceptable substitute for implicit state assignment. It is actually explicit state assignment, but it looks like a real connection between A and B. A rule though: state assignment takes two arguments: destination = source. In the notation on the left you might follow the direction of the line you’d get between A and B if you ignore the call thing in between to find out which is the first argument and which is the second. In text code it goes from left to right. In the diagram It goes from ... < >. B is destination A is source. I mean B is the one that gets the line. B is source of line, but destination of assignment. 
-
 ###### Argument Access Summary
 
 ####### In, Out and Thru
@@ -1763,3 +1699,27 @@ In an explicit call you always see the the call displayed as a separate diamond.
 `<< parameter passing >>`
 
 There are three types of parameters: in, out and thru. In parameters go in, out parameters go out and thru parameters come in and go out.
+
+-----
+
+`<< rule rich >>`  
+
+`<< interpretation issues >>`
+
+When pass an input parameter by value, it is guaranteed, that the operations inside the command might not affect the original object. < 2021-05-03: in VB.NET's ByVal parameter passing for reference types, the situation seem slightly more nuanced than that. >
+
+-----
+
+`<< details >>`
+
+In parameter passing __By Value__, the parameter object and the object, that is passed the value to or from, are not referring to each other at all.
+
+-----
+
+`<< about other technology >>`
+
+In some programming languages one use of *by reference* was to be able to pass large objects to a command. Another use was to be able to let the command have multiple return values, because in other programming languages a command might only have one return value.
+
+`<< details >>`
+
+A __Value In__ parameter works best simple objects, that stores a single value,

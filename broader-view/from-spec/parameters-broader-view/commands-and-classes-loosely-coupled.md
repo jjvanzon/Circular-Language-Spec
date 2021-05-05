@@ -110,11 +110,23 @@ A quite particular situation. But it might be solved by regarding situation as t
 
 ### Loose Ideas
 
-`<< commands & classes loosely coupled >>`
-
-Commands,
+Commands & Classes Loosely Coupled,
 2009-03-13
 
 "Do you know, I don't even want those commands." I made that remark when I right-clicked on an item in some user interface. Circular might make many commands available on many many objects. But perhaps many times, I don't even want those commands. So I as the user want to be able to hide those. I might not want to see those.
 
 JJ
+
+-----
+
+Relations between objects,  
+Value parameters,  
+2008-09-09
+
+Value parameters do not have the interchangeability between command parameters and object commands, because they are not a relationship.
+
+JJ
+
+-----
+
+Actually, a command might only become part of the classes that it directly uses. When the method uses submembers of the classes, the method might not become part of the classes of the submembers.

@@ -8,6 +8,10 @@ From Spec
 
 Topics that may be recognizable from the *spec*, but then maybe lesser worked out ideas about these topics.
 
+- [Assignment Construct Drafts](assignment-construct-drafts.md)
+
+    - Perhaps deprecated ideas about the topic of assignment (__=__).
+
 - [Black Boxes Construct Drafts](black-boxes-construct-drafts)
 
     - Lesser worked out ideas about this topic.
