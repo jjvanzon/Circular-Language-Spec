@@ -24,7 +24,7 @@ __Contents__
 
 ### Introduction
 
-The __Clone__ aspect might be a system aspect like the __Value__ aspect, or the __Object__ aspect of a symbol.
+The __Clone__ aspect might be a system aspect like the __Value__ aspect, or the __Object__ aspect of a symbol. This might be an alternative notation for it.
 
 __Clone__ notation could perhaps be an implicit notation for something that might not be used very often. It may already be adequately expressed, using other constructs from the spec. The idea might be set aside in this document in *Construct Drafts*, because the language may be able to live without it.
 

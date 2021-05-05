@@ -58,6 +58,10 @@ This documentation may contain drafts of ideas that might not become part of the
   
     - This summary is not made yet, but might be created when the design of the Circular language might be more complete. It may be decided to leave out such a summary, perhaps if the added value might be questioned.
 
+- ### [Clone Notation](clone-notation.md)
+
+    - The __Clone__ aspect might be a system aspect like the __Value__ aspect, or the __Object__ aspect of a symbol. This might be an alternative notation for it.
+
 - ### [Aspects](aspects.md)
 
     - Aspects might be power-enhancements of software, that might be immediately applied to any system without any further programming. The hope might be that aspects for instance make you able to program "copy and paste" functionality once, and then automatically apply it to any system, without any additional code. The hope might be that Circular language could have a variation on *aspects* from other ideas in the world about patterns and programming langages. Aspect may be the result of a transition from code generators to generic modules, that might adapt themselves to a structure description, that you might feed to it. In experiment 0.9, which was a code generator, a certain aspect of the code (such as logging, copy and paste or XML serialization) may be isolated into a single module, so that the aspect for it might not be spread out all over the *generator’s* code. In the genera*ted* code, however, the aspect *could* be spread out all over the code. The idea was, that any aspect you might generate code for, may be replaced by an *aspect* module, that might embed all the generic code. The aspect might be automatically applied to any object or system by just specifying, that the system might support the aspect. The idea may not be fully worked out yet, but the functional requirement might be, simply stated: everything you might do with a concept in the experimental code generator version of Circular, should be (easily) definable as a separate aspect module, that might replace it. The idea might not have been worked out in software yet.
