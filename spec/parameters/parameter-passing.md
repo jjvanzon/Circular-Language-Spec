@@ -1332,6 +1332,8 @@ In that case you’re actually implicitly referencing the return value.
 
 ######## Implicit Call and Implicit Return Value Reference
 
+`<< implicit calls >>`
+
 `<< rule rich >>`
 
 If an object symbol is a reference to a square, it’s both an implicit call and an implicit return value reference.
@@ -1529,15 +1531,19 @@ The resulting sequence of code lines corresponds to the execution order required
 
 ######## Implicit Calls
 
+`<< implicit calls >>`
+
 < 2008-10-08 The texts that follow use an old notation for calls: a definition is a square without a reference line, a call is a square with a reference line. >  
 
 < Maybe diagrams can be more basic, expressing solely a concept >  
 
-< reference a command parameter from an object.>  
+< Reference a command parameter from an object. >  
 
 To explain this concept I use an example where one command, called __Get__, returns an object that is then passed to another command, called __Set__. This requires two calls: first a call to __Get__ and then to __Set__.
 
 ######### Explicit Calls
+
+`<< implicit calls >>`
 
 The steps of this process can be described as follows:
 
@@ -1549,13 +1555,15 @@ Set
 
 The out parameter of __Get__ is called __Out__ and the in parameter of __Set__ is called __In__. In diagram code, that is:
 
-![](images/Input%20Output%20Parameter%20Passings.103.png)
+*Explicit calls:*
 
-*Explicit calls*
+![](images/Input%20Output%20Parameter%20Passings.103.png)
 
 Only the blue parts are shown in the piece of text code. You can see that __Get__ is called and __Set__ is called. Both __Get__ and __Set__ have a parameter. The parameters are shown in the definition, but also in the call. In the call, the parameters are actually created and the parameters in the calls are worked with. The __Out__ of __Get__ and the __In__ of __Set__ are tied together with an object line. You can’t explicitly see the order in which __Get__ and __Set__ are called, but because the __Set__ call references a parameter in the __Get__ call, __Set__ is dependent of __Get__, therefore __Get__ is called first.
 
 ######### Implicit Calls
+
+`<< implicit calls >>`
 
 In text code you can write the two calls in a single code line:
 
@@ -1565,15 +1573,17 @@ Set ( In = Get . Out )
 
 __Get . Out__ is assigned to the parameter of __Set__. You’re referencing a parameter of __Get__ without displaying the call. To read the __Out__ parameter of __Get__ requires a call and this call is implicitly made. In the text code line above you don’t see that __Get__ is called. __Get . Out__ is simply referenced. You can apply the same to diagram code:
 
-![](images/Input%20Output%20Parameter%20Passings.104.png)
+*Implicit call:*
 
-*Implicit call*
+![](images/Input%20Output%20Parameter%20Passings.104.png)
 
 *Note that the Exit Most Borders rule determines the direction.*
 
 You can see that the __Out__ parameter of the __Get__ command *definition* is referenced. This implicitly causes a call to __Get__. In *explicit calls* you reference the parameters of the command *call*, not the command *definition*.
 
 ######### Implicit Return Value Reference
+
+`<< implicit calls >>`
 
 __Out__ is __Get__’s return value. Therefore, the identifier __Get__ symbolizes the return value. __In__ is a parameter of __Set__ and you don’t necessarily need to mention its name in the parameter list. This all makes the text code:
 
@@ -1583,9 +1593,9 @@ Set ( Get )
 
 __Get__’s symbolizing its return value can also be applied to diagram code:
 
-![](images/Input%20Output%20Parameter%20Passings.105.png)
+*Implicit return value reference, implicit call:*
 
-*Implicit return value reference, implicit call*
+![](images/Input%20Output%20Parameter%20Passings.105.png)
 
 The line to __Get__ is not really a line from an object to a command. The return value of __Get__ is implicitly referenced.
 
@@ -1593,27 +1603,33 @@ The diagram above looks far simpler than the first diagram. So might the text co
 
 In the diagram above, the return value is implicitly referenced by pointing to the command definition. You can also implicitly reference the return value by pointing to a command call square. That way, the call is explicit, but the return value reference is implicit.
 
-![](images/Input%20Output%20Parameter%20Passings.106.png)
+*Explicit call, implicit return value reference:*
 
-*Explicit cal, implicit return value reference*
+![](images/Input%20Output%20Parameter%20Passings.106.png)
 
 ######### Multiple Out Parameters
 
 ########## Implicit Return Value Reference
 
+`<< return values >>`
+
+`<< implicit calls >>`
+
 Implicit return value reference is only a way to reference the *return value*, not to the other out parameters. The other out parameters might be explicitly referenced. 
+
+*Implicit return value reference, explicit out parameter reference:*
 
 ![](images/Input%20Output%20Parameter%20Passings.107.png)
 
-*Implicit return value reference, explicit out parameter reference*
-
 ########## Implicit Calls
+
+`<< implicit calls >>`
 
 When you reference output parameters of a command multiple times, each reference causes its own call to be made. 
 
-![](images/Input%20Output%20Parameter%20Passings.108.png)
+*Two references to a parameter of the definition: two implicit calls:*
 
-*Two references to a parameter of the definition: two implicit calls*
+![](images/Input%20Output%20Parameter%20Passings.108.png)
 
 If the diagram above is an abstract view on the system, there might only be made a single call, but officially the diagram above is showing *two* implicit calls. The meaning of the diagram above is:
 
@@ -1629,24 +1645,43 @@ If you want to reference multiple output parameters of a single call, you might 
 
 ######## ? Referencing a Command Member
 
-< 2008-10-08 Most of what is said in this section no longer applies, because a more explicit notation is desired, to make things less ambiguous, and some remarks have already been thought through and work differently. >  
+`<< details >>`
+
+< 2008-10-08 Most of what is said in this section no longer applies, because a more explicit notation is desired, to make things less ambiguous, and some remarks have already been thought through and work differently. >
+
+`<< ? >>`
+
 Referencing a diamond’s members is like reading a command member.
 
 ![](images/Input%20Output%20Parameter%20Passings.110.jpeg)
+
+`<< implicit calls >>`
 
 < 20040418: this is interesting. It has to do with implicit call and I might explore in which situation this is useful. I think that when you call a member of the top circle, then the diamond executes. It’s like calling member of the bottom circle... >
 
 It always happens just after the diamond executes.
 
+`<< creation behavior of commands >>`
+
+`<< interpretation >>`
+
 < The parameter objects destroy right after the call. If you use the top circle like above, every consult of the top circle might result in executing the diamond again. To persist the information contained in the argument, without having to call the command again, you might do a State Copy. Another way of using output parameters is to give the execution a reference to an external symbol. Anyway: if you want return information to persist after the call, it has to be stored in external symbol: store the returned state to an object that the caller contains, or pass a reference to the caller’s object to the called command >
 
+`<< interpretation >>`
+
 < That’s true what I just said, but there’s nothing wrong with linking directly to the parameter and executing the command on each consult. There’s nothing wrong with that. The link might be something like consulting a property command in VB, a Get, which returns a reference to an object. Every time you consult the property, the command is launched again. That’s normal. >
+
+< 2021-05-04: That last interpretation may be different if you might regard each diagram its own execution. Or when you might see the parameter line as a cloaked assignment call.  >
+
+`<< details >>`
 
 < Might denote that the notation above is not an output situation. It’s an implicit call situation >
 
 ###### Brainstorm Items
 
 ####### 1
+
+`<< implicit calls >>`
 
 Oh, die assignments lijken afzonderlijke referenties, waardoor je implicit calls krijgt? Of is dat alleen bij referenties naar inhoud van squares?
 
@@ -1657,10 +1692,14 @@ Dat is verkeerd
 
 ####### 2
 
+`<< implicit calls >>`
+
 *Nice wording:*  
 A reference to something inside a square causes an implicit call to the square, because the command is required to execute in order to reference something inside of it.
 
 ####### 3
+
+`<< implicit calls >>`
 
 Implicit calls when referencing square contents (and their explicit diagram representations)
 
@@ -1670,33 +1709,51 @@ These seem fragments of an attempt to re-subdivide topics formerly inside the or
 
 ###### Old Subdivision
 
+`<< implicit calls >>`
+
 - Implicit call and Explicit call
 - Implicit return value reference
+
+`<< parameter passing >>`
+
 - Out, In and Thru parameter usage
     - Cover command reference too
+    - `<< execution flow >>`
     - If example
+
+`<< implicit calls >>`
+
 - Initiation of execution:
     - Containment in other diamond
     - Consult of a parameter.
 
 ###### New Subdivision
 
+- `<< parameter passing >>`
 - Out, In and Thru
     - Using reference parameters for in, out and thru (hard to control whether it’s in out or thru: you just use the object)
     - Using State as In, Out and Thru
     - Using a parameter’s line targets as Out
+        - `<< about other technology >>`
         - Comparison with Com regarding returning object references.
             - Persisting object reference (harder, is hardly done anyway. Or is it? Consider passing the returned object to another command)
             - Using the command parameter as object reference directly
+    - `<< parameter passing >>`
     - Command reference too
+    - `<< execution flow >>`
     - If example
 
 - Execution Order
+    - `<< interpretation >>`
     - Seeming randomly referencing diamond members.
+    - `<< ? >>`
     - Initiation of execution:
         - Containment in other diamond
         - Consult of a parameter.
+    - `<< sequence order >>`
     - Manual execution order
+
+`<< implicit calls >>`
 
 - Implicit Notations
     - Implicit call and Explicit call
@@ -1704,9 +1761,20 @@ These seem fragments of an attempt to re-subdivide topics formerly inside the or
 
 ###### New Main Subdivision
 
+`<< parameter passing >>`
+
 - Out, In and Thru
+
+`<< ? >>`
+
 - Execution Basics
+
+`<< ? >>`
+
 - Execution Order
+
+`<< implicit calls >>`
+
 - Implicit Notations
 
 ##### Brainstorm
@@ -1715,13 +1783,19 @@ These seem fragments of an attempt to re-subdivide topics formerly inside the or
 
 ####### New
 
+`<< creation behavior of commands >>`
+
 - < > The assignment destination consult is not seen as a consult. < > Consult of a parameter as assignment destination might not require execution of the parameter holder.
 - Executor represents one execution per call on definition.
     - Implicit calls are not made for diamond contents reference < >
 
 ####### Old
 
-< 2008-10-08 This talks about parameter passing, a notation for value assignment and about implicit call. Those three are spread over multiple documentation sections. But do the cross out here. >
+`<< creation behavior of commands >>`
+
+`<< interpretation of parameter connections >>`
+
+< 2008-10-08 This talks about parameter passing, a notation for value assignment and about implicit call. Those three might be spread over multiple documentation sections. But do the cross out here. >
 
 ![](images/Input%20Output%20Parameter%20Passings.111.jpeg)
 
@@ -1731,9 +1805,9 @@ In implicit argument assignment, there is no way to express state assignment.
 
 If it were to become a connection between symbols, like implicit line assignments, it might definitely not behave the same as a line.
 
-![](images/Input%20Output%20Parameter%20Passings.113.jpeg)
+*Implicit assignments:*
 
-(*Implicit assignments*)
+![](images/Input%20Output%20Parameter%20Passings.113.jpeg)
 
 De assignment calls gedragen zich niet normaal, want consult van de argumenten van __A__ veroorzaken geen executie. Een soort passieve parameter consult vind plaats door de assignment calls, in het proloog van __A__. Bedenk wel: het zijn systeem commands: niet normaal.
 
@@ -1761,19 +1835,25 @@ Oh jawel! Consult vind gewoonlijk altijd plaats in epiloog, maar bij assignment 
 
 ![](images/Input%20Output%20Parameter%20Passings.118.jpeg)
 
-The last picture is an acceptable substitute for implicit state assignment. It is actually explicit state assignment, but it looks like a real connection between A and B. A rule though: state assignment takes two arguments: destination = source. In the notation on the left you might follow the direction of the line you’d get between A and B if you ignore the call thing in between to find out which is the first argument and which is the second. In text code it goed from left to right. In the diagram It goes from ... < >. B is destination A is source. I mean B is the one that gets the line. B is source of line, but destination of assignment. 
+`<< assignment >>`
+
+The last picture is an acceptable substitute for implicit state assignment. It is actually explicit state assignment, but it looks like a real connection between A and B. A rule though: state assignment takes two arguments: destination = source. In the notation on the left you might follow the direction of the line you’d get between A and B if you ignore the call thing in between to find out which is the first argument and which is the second. In text code it goes from left to right. In the diagram It goes from ... < >. B is destination A is source. I mean B is the one that gets the line. B is source of line, but destination of assignment. 
 
 ###### Argument Access Summary
 
 ####### In, Out and Thru
 
+- `<< parameter passing >>`
 - Using reference parameters for in, out and thru (hard to control whether it’s in out or thru: you just use the object)
 - Using State as In, Out and Thru
 - Using a parameter’s line targets as Out
+    - `<< other technology >>`
     - Comparison with Com regarding returning object references.
         - Persisting object reference (harder, is hardly done anyway. Or is it? Consider passing the returned object to another command)
         - Using the command parameter as object reference directly
+- `<< parameter passing >>`
 - Command reference too
+- `<< execution flow >>`
 - If example
 
 ##### Brainstorm
@@ -1782,14 +1862,14 @@ The last picture is an acceptable substitute for implicit state assignment. It i
 
 __*Different Wording, Not important, though*__
 
+`<< creation behavior of commands >>`
+
+`<< nice wording >>`
+
 In an explicit call you always see the the call displayed as a separate diamond. If the call is made, the call is like a created object. After the call it is destroyed. When the call is created, you can reference its contents from anywhere without causing another call.
 
 #### Misc Loose Ideas
 
+`<< parameter passing >>`
+
 There are three types of parameters: in, out and thru. In parameters go in, out parameters go out and thru parameters come in and go out.
-
------
-
-This take on *Parameters* might take preference over one of parameters as a loosely coupled relationship between commands and classes, which might have made things rather complicated instead of being more helpful. Parameter passing input output seemed simpler and perhaps a more usable alternative.
-
-The parameter passing input output idea seemed to have been set aside, because of some difficulty defining what __Input__ and __Output__ mean precisely on a more detailed level as well as in grander scope. But a simplified version of this story it might be more helpful as a way to express parameters in this diagram language.
