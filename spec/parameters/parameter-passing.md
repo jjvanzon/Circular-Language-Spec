@@ -31,6 +31,7 @@ __Contents__
     - [Existing Command Out](#existing-command-out)
     - [Existing Object](#existing-object)
 - [Object Out in a Diagram](#object-out-in-a-diagram)
+- [Structs Parameter Passing](#structs-parameter-passing)
 - [Three Parameter Passing Elements](#three-parameter-passing-elements)
 - [Parameters of Calls Directly Tied Together](#parameters-of-calls-directly-tied-together)
 - [Strict About Parameter Passing](#strict-about-parameter-passing)
@@ -82,17 +83,13 @@ __Contents__
 
 These articles may talk about *input* and *output* parameters.
 
-Input seems what's *read*. Output seems what's *written*. But perhaps also in the context of the containment structure: input seems *read* on the *inside*. Output seems *written* on the *inside*. But *read* on the *outside*! So the terms *input and output* do not seem to map neatly to *reading and writing*, but seem quite dependent on context in a containment structure: inside or outside.
+Input seems what's *read*. Output seems what's *written*. But perhaps also in the context of the containment struct`ure: input seems *read* on the *inside*. Output seems *written* on the *inside*. But *read* on the *outside*! So the terms *input and output* do not seem to map neatly to *reading and writing*, but seem quite dependent on context in a containment structure: inside or outside.
 
 Another thing slightly open to interpretation might be, that reading/writing parameters may involve the direct value or object reference of a parameter, not so much the things deeper in the containment structure.
 
 ### By Value
 
 A parameter is __By Value__, if you can only publicly read or write the value of the object.
-
-`<< clone >>`
-
-Or clone the values of an object up until a certain depth.
 
 Passing a parameter by value means, that the input or output is *copied* to or from the parameter object.
 
@@ -109,27 +106,11 @@ It may actually be a value assignment, that performs a yield over of value. Here
 Parameters passed by value might be useful for smaller amounts of data. The data might be changed inside the command, but that might not affect the original object.  
 For an object, that only stores one value and that’s it, it may be ok to just copy the value.
 
-`<< clone ? >>`  
-
-`<< structs ? >>`
-
-More complex objects passed by value might be cloned up until a certain cloning depth.
-
 `<< rule rich >>`  
 
 `<< interpretation issues >>`
 
 When pass an input parameter by value, it is guaranteed, that the operations inside the command might not affect the original object. < 2021-05-03: in VB.NET's ByVal parameter passing for reference types, the situation seem slightly more nuanced than that. >
-
-`<< clone >>`  
-
-`<< interpretation issues >>`
-
-For that reason, when a value parameter is cloned up until a certain depth, no references to original objects might be taken over by the clone. __By Value__ clones never have references to existing objects, but always contain entirely new objects or object references that are __Nothing__.
-
-`<< clone >>`  
-
-A single-value transfer is actually the equivalent of a cloning operation with a depth of __1__.
 
 `<< by ref >>`
 
@@ -164,15 +145,6 @@ The complicated notation:
 (the arrows are pointing to the references invisible earlier)
 
 But this still might not tie the source and target symbols directly together.
-
-`<< clone >>`
-
-The notation of a __By Value__ cloning operation looks as follows:
-
-![](images/Input%20Output%20Parameter%20Passings.004.png)
-
-The number __2__ stands for the cloning depth.
-A single-value transfer might be the same as a cloning depth of __1__, but the number __1__ might not be shown then.
 
 ### By Reference
 
@@ -214,14 +186,6 @@ The command can manipulate the __Value In__ parameter without affecting the orig
 
 A __Value In__ parameter works best simple objects, that stores a single value,
 
-`<< structs >>`
-
-but can also work for more complex objects,
-
-`<< clone >>`
-
-that might then be cloned up until a certain depth.
-
 ### Value In in a Diagram
 
 A diagram of an executable command with a __Value In__ parameter:
@@ -231,18 +195,6 @@ A diagram of an executable command with a __Value In__ parameter:
 Here is a diagram of an unfilled-in __Value In__ parameter of an executable command:
 
 ![](images/Input%20Output%20Parameter%20Passings.007.png)
-
-`<< clone >>`
-
-A __Value In__ parameter can also have an indication of a cloning depth, which is displayed as follows:
-
-![](images/Input%20Output%20Parameter%20Passings.008.png)
-
-Or for an unfilled-in __Value In__ parameter:
-
-![](images/Input%20Output%20Parameter%20Passings.009.png)
-
-The pictures above display a cloning depth of __2__, but any cloning depth can be used.
 
 `<< parameter passing >>`
 
@@ -258,23 +210,9 @@ But the __Value In__ parameter of an inactive command could be filled in just as
 
 The fact, that it is an inactive command, means that it might not run, but for the rest it is the same as any other command object, so it basically has the same possibilities.
 
-`<< clone >>`
-
-Here is the expression of cloning depth for __Value In__ parameters of inactive commands, which is the same notation as for active commands:
-
-![](images/Input%20Output%20Parameter%20Passings.012.png)
-
-![](images/Input%20Output%20Parameter%20Passings.013.png)
-
 ### Value Out
 
 A __Value Out__ parameter is a value produced by a command, that can be yielded over to another object after the command is done. A __Value Out__ parameter is an object inside the command call, that is written to by the command or by one of its sub-commands. After execution of the command the value of the output parameter can be copied, by assigning the value to another object.
-
-`<< structs >>`
-
-`<< clone >>`
-
-As said in the article __By Value__, the parameter is either a copy of a single value, or a clone up to a certain depth.
 
 ### Value Out in a Diagram
 
@@ -285,18 +223,6 @@ A diagram of an executable command with a __Value Out__ parameter looks as follo
 The following diagram shows the __Value Out__ parameter with an assignment target indicated to which the output value might be transferred:
 
 ![](images/Input%20Output%20Parameter%20Passings.015.png)
-
-`<< clone >>`
-
-A __Value Out__ parameter can also have an indication of a cloning depth, which is displayed as follows:
-
-![](images/Input%20Output%20Parameter%20Passings.016.png)
-
-Or with the target of the output filled in:
-
-![](images/Input%20Output%20Parameter%20Passings.017.png)
-
-The pictures above display a cloning depth of __2__, but any cloning depth can be used.
 
 `<< parameter passing >>`
 
@@ -312,24 +238,10 @@ The __Value Out__ parameter of an inactive command can also be read and written 
 
 The fact, that it is an inactive command, means that it might not run, but for the rest it is the same as any other command object, so it basically has the same possibilities, even reading and writing its parameters.
 
-`<< clone >>`
-
-Here is the expression of cloning depth for __Value Out__ parameters of inactive commands, which is the same notation as for active commands:
-
-![](images/Input%20Output%20Parameter%20Passings.020.png)
-
-![](images/Input%20Output%20Parameter%20Passings.021.png)
-
 ### Value Thru
 
 Throughput by value is when a by value parameter is first written to, then changed by the command, and then the value of the parameter is read from again, and assigned to the original object.  
 A __Value Thru__ parameter is an object inside the command call, that can be written before the command is invoked, by assigning to it a value of an object outside the command call. It is used but also written to by the command or one of its sub-commands. After execution of the command the value of the throughput parameter can be copied, by assigning the its to another object.
-
-`<< structs >>`
-
-`<< clone >>`
-
-As said in the article __By Value__, the parameter is either a copy of a single value, or a clone to a certain depth.
 
 `<< details >>`
 
@@ -345,18 +257,6 @@ Here is a diagram of an unfilled-in __Value Thru__ parameter of an executable co
 
 ![](images/Input%20Output%20Parameter%20Passings.023.png)
 
-`<< clone >>`
-
-A __Value Thru__ parameter can also have an indication of a cloning depth, which is displayed as follows:
-
-![](images/Input%20Output%20Parameter%20Passings.024.png)
-
-Or for an unfilled-in __Value Thru__ parameter:
-
-![](images/Input%20Output%20Parameter%20Passings.025.png)
-
-The pictures above display a cloning depth of __2__, but any cloning depth can be used.
-
 A command definition or other inactive command displays __Value Thru__ parameters similarly. The __Value Thru__ parameter of a command definition is usually not filled in:
 
 ![](images/Input%20Output%20Parameter%20Passings.026.png)
@@ -368,14 +268,6 @@ But the __Value Thru__ parameter of an inactive command could be filled in just 
 `<< interpretation >>`
 
 The fact, that it is an inactive command, means that it might not run, but for the rest it is the same as any other command object, so it basically has the same possibilities.
-
-`<< clone >>`
-
-Here is the expression of cloning depth for __Value Thru__ parameters of inactive commands, which is the same notation as for active commands:
-
-![](images/Input%20Output%20Parameter%20Passings.028.png)
-
-![](images/Input%20Output%20Parameter%20Passings.029.png)
 
 ### Reference In
 
@@ -574,6 +466,16 @@ Here is a picture in which a command definition’s __Object Out__ parameter mig
 
 ![](images/Input%20Output%20Parameter%20Passings.045.png)
 
+### Structs Parameter Passing
+
+A construct that other languages might call __structs__, are a value type that might have multiple distict fields / values.
+
+This type of construct's value might be transferred with a cloning depth of 2. The idea that the object itself + its values are transferred as a whole in case of value assignment, and by extension also __By Value__ parameter passing of a __struct__.
+
+It may happen automatically for __struct__ types. A clone notation where the cloning depth of __2__ might be visually expressed, might also be suggested. This clone notation may be found in a separate document.
+
+No definite choice might be necessary about which notation to pick. It might depend on the particular application that may be developed that perhaps would use this Circular notation.
+
 ### Three Parameter Passing Elements
 
 `<< interpretation >>`
@@ -676,18 +578,6 @@ A __Value Thru__ parameter can not be tied to another parameter:
 ![](images/Input%20Output%20Parameter%20Passings.055.png)
 
 This is because it creates a circularity in which one parameter writes its values to the other, and the other parameter writes its value to the first parameter. It is just an unlogical circular situation.
-
-`<< clone >>`
-
-When directly tying together value parameters, cloning depth can be intermixed:
-
-![](images/Input%20Output%20Parameter%20Passings.056.png)
-
-![](images/Input%20Output%20Parameter%20Passings.057.png)
-
-Effectively, it might be the lowest cloning depth that might be transferred to the input parameter on the right. When the __Value In__ and __Value Out__ parameters have the same cloning depth, it is drawn out as follows:
-
-![](images/Input%20Output%20Parameter%20Passings.058.png)
 
 ### Strict About Parameter Passing
 
