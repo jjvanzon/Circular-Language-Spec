@@ -1,7 +1,7 @@
 Circular Language Spec
 ======================
 
-[back](..)
+[back](../..)
 
 Misc Diagram Topics
 -------------------

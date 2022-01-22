@@ -1,7 +1,7 @@
 Circular Language Spec
 ======================
 
-[back](..)
+[back](../..)
 
 System Interfaces Articles
 --------------------------
