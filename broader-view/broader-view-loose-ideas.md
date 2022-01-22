@@ -75,8 +75,9 @@ JJ
 
 J Code
 
-Analyze the features of F# and find a place for it in my system.  
-http://pro.tweakers.net/nieuws/49986/microsoft-stopt-functionele-taal-f-in-visual-studio.html
+Analyzing the features of F# and find a place for it in my system.  
+[http://pro.tweakers.net/nieuws/49986/microsoft-stopt-functionele-taal-f-in-visual-studio.html](
+http://pro.tweakers.net/nieuws/49986/microsoft-stopt-functionele-taal-f-in-visual-studio.html)
 
 JJ
 
@@ -234,7 +235,7 @@ Circular,
 2008-08-15
 
 Other programming languages and diagram expressions:
-http://www.obsolete.com/dug/sorcery/oop.htm
+[http://www.obsolete.com/dug/sorcery/oop.htm](http://www.obsolete.com/dug/sorcery/oop.htm)
 
 JJ
 
@@ -254,7 +255,7 @@ Circular,
 2008-08-15
 
 Other programming languages and diagram expressions:  
-http://jolt-lang.org/
+[http://jolt-lang.org/](http://jolt-lang.org/)
 
 JJ
 

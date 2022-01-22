@@ -330,10 +330,8 @@ Circular,
 2008-12-22
 
 That Aspect construct I want in my programming language seems to have existed forever:  
-*"Extensible Compiler Architecture | Examples from JModelica.org | Uses of the JastAdd systems | Görel Hedin | Computer Science, Lund University"*  
-http://www.lucas.lth.se/lucas-dagar/2002/slides2002/hedin.pdf
-(newer link 2021-03-06)  
-http://www.lccc.lth.se/media/LCCC2012/WorkshopSeptember/slides/Hedin.pdf
+[Extensible Compiler Architecture | Examples from JModelica.org | Uses of the JastAdd systems | Görel Hedin | Computer Science, Lund University](http://www.lucas.lth.se/lucas-dagar/2002/slides2002/hedin.pdf)
+[newer link 2021-03-06](http://www.lccc.lth.se/media/LCCC2012/WorkshopSeptember/slides/Hedin.pdf)
 
 It seems, that the problem with good concepts, such as Aspect Oriented Programming and design patterns, is that they are not used, because they do not become part of the programming language. Those ideas could be made part of the programming language, but instead they are introduced as methodology. If they are made part of the language, then hobbyists might be more likely to use it.
 
@@ -440,7 +438,7 @@ JJ
 Circular,  
 2009-03-31
 
-Who is this guy: http://strlen.com/index.html
+Who is this guy: [http://strlen.com/index.html](http://strlen.com/index.html)
 
 Perhaps that guy built a model around the OpenGL library. He's probably just a darn-good programmer too.
 
@@ -561,11 +559,9 @@ Internet,
 
 "Code is data, and it always has been | Written by Piers on 2008-04-07"
 
-(old link)  
-http://74.125.77.132/search?q=cache:T0M\_SRpZE9gJ:www.bofh.org.uk/2008/04/07/code-is-data-and-it-always-has-been+code+is+data&cd=2&hl=nl&ct=clnk&gl=nl
+[older link](http://74.125.77.132/search?q=cache:T0M\_SRpZE9gJ:www.bofh.org.uk/2008/04/07/code-is-data-and-it-always-has-been+code+is+data&cd=2&hl=nl&ct=clnk&gl=nl)
 
-(new link)  
-https://bofh.org.uk/2008/04/07/code-is-data-and-it-always-has-been/
+[newer link](https://bofh.org.uk/2008/04/07/code-is-data-and-it-always-has-been/)
 
 Possible response:
 
@@ -766,7 +762,7 @@ JJ
 About coupling,  
 2010-04-16
 
-"Reducing Coupling | Martin Fowler": http://martinfowler.com/ieeeSoftware/coupling.pdf
+[Reducing Coupling | Martin Fowler](http://martinfowler.com/ieeeSoftware/coupling.pdf)
 
 JJ
 

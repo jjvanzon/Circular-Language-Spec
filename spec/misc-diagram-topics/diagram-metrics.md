@@ -296,7 +296,7 @@ JJ
 CL,  
 Suggestions Art, Science & Entertainment,
 
-http://www.visualthesaurus.com/
+[http://www.visualthesaurus.com/](http://www.visualthesaurus.com/)
 
 It has diagram metrics / automatic positioning, like I want it in my own system.
 
