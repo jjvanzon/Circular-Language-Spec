@@ -144,7 +144,7 @@ Another issue of objects is that they can have different interfaces. Try to cons
 
 Objects may have the same ability. A type of object can have separate interfaces. Interfaces are groups of an object’s members. (The elements inside an object’s can also be called *members*.)
 
-<img src="images/Circle%20Language%20Spec%20Introduction.018.jpeg" height="500" />
+<img src="images/Circle%20Language%20Spec%20Introduction.018.jpeg" height="400" />
 
 Interfaces are distinguished by triangles here.
 
