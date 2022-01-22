@@ -43,7 +43,7 @@ But to see the general point of the system, you might only need to see the top l
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
-This might make object oriented programming a way to keep overview over a system as it grows. A clear the split up into ideas might help the understandability of the design, perhaps most importantly the general outlines / top layers. Depending on who you ask, a subdivision in objects might be the most important thing in software. So splitting up an idea into sub ideas, something that most people are probably able to do, might be the most important thing about programming.
+This might make object oriented programming a way to keep overview over a system as it grows. A clear split up into ideas might help the understandability of the design, perhaps most importantly the general outlines / top layers. Depending on who you ask, a subdivision in objects might be the most important thing in software. So splitting up an idea into sub ideas, something that most people are probably able to do, might be the most important thing about programming.
 
 Reusing Ideas
 -------------
@@ -56,7 +56,7 @@ Any place you use a button in your system, there could be a separate object:
 
 ![](images/Circle%20Language%20Spec%20Introduction.006.png)
 
-A button object in general can be called a *type* of object. All the button objects can be considered objects of the same *type*. Sometimes the word *object* is used instead of the word *type*. For instance, you might speak of *the* button *object*, while you’re talking about the button *type*. It’s like by saying ‘panda’ you can refer to an individual panda (object), but also to the panda as a kind of animal (type).
+A button object in general can be called a *type* of object. All the button objects can be considered objects of the same *type*. Sometimes the word *object* is used instead of the word *type*. For instance, you might speak of *the* button *object*, while you’re talking about the button *type*.
 
 There could be many types already defined, that you might use one way or another. Such as the __Button__ type for instance, which you can use to build a user interface. Another type, __Integer__, represents one integer number. You might be using those all the time when you program.
 
