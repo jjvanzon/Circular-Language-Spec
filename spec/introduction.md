@@ -60,7 +60,7 @@ A button object in general can be called a *type* of object. All the button obje
 
 There could be many types already defined, that you might use one way or another. Such as the __Button__ type for instance, which you can use to build a user interface. Another type, __Integer__, represents one integer number. You might be using those all the time when you program.
 
-Another word for type is *class*. *Type* and *class* might not precisely mean the same things, but it is pretty close and the word *class* is used in several object oriented programming languages.
+Another word for type is *class*. *Type* and *class* might not precisely mean the same thing, but it is pretty close and the word *class* is used in several object oriented programming languages.
 
 Commands
 --------
