@@ -27,7 +27,7 @@ Here you can see the idea of *the computer*, split up into four sub ideas: the m
 
 In Circular language, the main symbol for an idea might be a *circle*:
 
-![](images/Circle%20Language%20Spec%20Introduction.002.png)
+<img src="images/Circle%20Language%20Spec%20Introduction.002.png" height="100" />
 
 Each sub idea could work more or less independently of the others. __Monitor__ might its bit, __Keyboard__ might its bit. It might be the super idea that might tie the sub ideas together. Meaning: the computer could make the link between monitor, keyboard, mouse and printer. The super idea might combine the sub ideas and might manage the communication between the sub ideas.
 
