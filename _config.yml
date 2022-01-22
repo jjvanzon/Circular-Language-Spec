@@ -1,5 +1,6 @@
 theme: jekyll-theme-midnight
-title: Circular Language Spec
+title: Circular Language
+description: An attempt at a language for visualizing computer code. 🔶↜🔵
 plugins:
   - jekyll-relative-links
   - jekyll-sitemap
