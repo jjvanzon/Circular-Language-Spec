@@ -1,10 +1,10 @@
 ﻿Circular Language | Construct Drafts
 ====================================
 
+`[ Deprecated documentation ]`
+
 Circular Language Summary
 -------------------------
-
-`[ Deprecated documentation ]`
 
 ### Loose Ideas
 

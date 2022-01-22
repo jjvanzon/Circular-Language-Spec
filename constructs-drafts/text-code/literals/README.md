@@ -1,10 +1,10 @@
 Circular Language Construct Drafts | Text Code
 ==============================================
 
+`[ Deprecated documentation ]`
+
 Literals
 --------
-
-`[ Deprecated documentation ]`
 
 The idea here might be that each language element’s textual representation might be considered the language element’s *literal*, that could be read out and assigned. However large the construct, its text code might still just be a literal, be it composed of the literals of its sub-constructs.
 

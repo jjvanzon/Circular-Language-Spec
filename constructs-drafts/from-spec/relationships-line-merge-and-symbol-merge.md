@@ -1,10 +1,10 @@
 Circular Language Construct Drafts | From Spec
 ==============================================
 
+`[ Deprecated documentation ]`
+
 Relationships | Line Merge & Symbol Merge
 -----------------------------------------
-
-`[ Deprecated documentation ]`
 
 __Contents__
 

@@ -1,10 +1,10 @@
 Circular Language Construct Drafts | From Spec
 ==============================================
 
+`[ Deprecated documentation ]`
+
 Commands Loose Ideas
 --------------------
-
-`[ Deprecated documentation ]`
 
 __Contents__
 

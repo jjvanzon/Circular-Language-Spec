@@ -1,10 +1,10 @@
 ﻿Circular Language Construct Drafts | Text Code
 ==============================================
 
+`[ Deprecated documentation ]`
+
 Command Literals
 ----------------
-
-`[ Deprecated documentation ]`
 
 ( Operators )  
 Evaluation Order, Parenthesis, Precedence

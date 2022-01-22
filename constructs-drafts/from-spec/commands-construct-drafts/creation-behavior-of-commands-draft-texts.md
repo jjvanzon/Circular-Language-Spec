@@ -1,10 +1,10 @@
 Circular Language Construct Drafts | From Spec
 ==============================================
 
+`[ Deprecated documentation ]`
+
 Creation Behavior of Commands | Draft Texts
 -------------------------------------------
-
-`[ Deprecated documentation ]`
 
 __Contents__
 

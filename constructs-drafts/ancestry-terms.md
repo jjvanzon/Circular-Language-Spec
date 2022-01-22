@@ -1,10 +1,10 @@
 ﻿Circular Language | Construct Drafts
 ====================================
 
+`[ Deprecated documentation ]`
+
 Ancestry Terms
 --------------
-
-`[ Deprecated documentation ]`
 
 A containment structure is also called an *ancestry*.
 

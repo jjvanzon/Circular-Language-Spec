@@ -1,6 +1,3 @@
-Circular Language Spec | Root
-=============================
-
 *JJ van Zon, 2021*
 
 Circular aims to become a visual programming language made from shapes and lines. It may once become a diagram notation for visualizing computer code.

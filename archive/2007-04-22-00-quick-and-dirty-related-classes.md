@@ -1,12 +1,9 @@
-﻿Circular Language | Archive
-===========================
-
-*JJ van Zon, 2007*
-
-Quick & Dirty Related Classes
------------------------------
+﻿Archive | Quick & Dirty Related Classes
+=======================================
 
 `[ Deprecated documentation ]`
+
+*JJ van Zon, 2007*
 
 *Perhaps reading it slowly might help.*
 

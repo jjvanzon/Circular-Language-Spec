@@ -1,10 +1,10 @@
 Circular Language Construct Drafts | From Spec
 ==============================================
 
+`[ Deprecated documentation ]`
+
 Black Boxes | Level Limitation
 ------------------------------
-
-`[ Deprecated documentation ]`
 
 < Exclusion is restriction set by a container. Level restriction is like exclusion set by a child *for* the container. >
 

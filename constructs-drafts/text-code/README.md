@@ -1,10 +1,10 @@
 ﻿Circular Language | Construct Drafts
 ====================================
 
+`[ Deprecated documentation ]`
+
 Text Code
 ---------
-
-`[ Deprecated documentation ]`
 
 Traditionally systematics of a program might be expressed by means of text code. But in Circular language, systematics might be stored in another way for instance as binary interlinked objects. Text code may be a mere *expression* of those stored objects. A *Text Code* sub-module might translate those systematics to text code. The text code might be adapted, which may result in changes to the stored  objects, rather than the text code’s being literally stored.
 

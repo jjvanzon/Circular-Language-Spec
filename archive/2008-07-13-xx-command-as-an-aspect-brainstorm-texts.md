@@ -1,12 +1,12 @@
 ﻿Circular Language | Archive
 ===========================
 
+`[ Deprecated documentation ]`
+
 *JJ van Zon, 2008*
 
 Command as an Aspect Brainstorm Texts
 -------------------------------------
-
-`[ Deprecated documentation ]`
 
 ### Commands as an aspect
 

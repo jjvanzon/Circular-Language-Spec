@@ -1,10 +1,10 @@
 ﻿Circular Language | Construct Drafts
 ====================================
 
+`[ Deprecated documentation ]`
+
 Peels
 -----
-
-`[ Deprecated documentation ]`
 
 __Contents__
 

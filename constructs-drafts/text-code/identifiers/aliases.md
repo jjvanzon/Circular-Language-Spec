@@ -1,10 +1,10 @@
 ﻿Circular Language Construct Drafts | Text Code
 ==============================================
 
+`[ Deprecated documentation ]`
+
 Aliases
 -------
-
-`[ Deprecated documentation ]`
 
 - Aliases
 - Namespace Alias

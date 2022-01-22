@@ -1,10 +1,10 @@
 Circular Language Construct Drafts | Text Code
 ==============================================
 
+`[ Deprecated documentation ]`
+
 Assignment in Text Code
 -----------------------
-
-`[ Deprecated documentation ]`
 
 __Contents__
 

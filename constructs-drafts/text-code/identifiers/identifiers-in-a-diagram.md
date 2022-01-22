@@ -1,10 +1,10 @@
 ﻿Circular Language Construct Drafts | Text Code
 ==============================================
 
+`[ Deprecated documentation ]`
+
 Identifiers in a Diagram
 ------------------------
-
-`[ Deprecated documentation ]`
 
 Identifiers are names for objects, collections, attributes, sites, programs, modules or any other element of a system. Any element of a system can get an identifier.
 

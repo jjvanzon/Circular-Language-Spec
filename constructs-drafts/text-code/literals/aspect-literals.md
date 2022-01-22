@@ -1,10 +1,10 @@
 ﻿Circular Language Construct Drafts | Text Code
 ==============================================
 
+`[ Deprecated documentation ]`
+
 Aspect Literals
 ---------------
-
-`[ Deprecated documentation ]`
 
 (Text code expression of an aspect.)
 

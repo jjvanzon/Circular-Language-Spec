@@ -1,10 +1,10 @@
 ﻿Circular Language Construct Drafts | Text Code
 ==============================================
 
+`[ Deprecated documentation ]`
+
 Collection Operation Literals
 -----------------------------
-
-`[ Deprecated documentation ]`
 
 Text notation for operations on collections.
 

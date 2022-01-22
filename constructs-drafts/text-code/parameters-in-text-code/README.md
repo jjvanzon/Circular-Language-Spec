@@ -1,10 +1,10 @@
 Circular Language | Construct Drafts
 ====================================
 
+`[ Deprecated documentation ]`
+
 Parameters in Text Code Articles
 --------------------------------
-
-`[ Deprecated documentation ]`
 
 Here might be found several specific topics about parameter notation in text code.
 

@@ -1,10 +1,10 @@
 Circular Language Construct Drafts | From Spec
 ==============================================
 
+`[ Deprecated documentation ]`
+
 No Diamond Shapes
 -----------------
-
-`[ Deprecated documentation ]`
 
 __Contents__
 

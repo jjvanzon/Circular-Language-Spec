@@ -1,10 +1,10 @@
 ﻿Circular Language Construct Drafts | Text Code
 ==============================================
 
+`[ Deprecated documentation ]`
+
 Access Operators
 ----------------
-
-`[ Deprecated documentation ]`
 
 - Access Module Operator
 - Access Object Operator

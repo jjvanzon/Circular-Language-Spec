@@ -1,10 +1,10 @@
 ﻿Circular Language Construct Drafts | From Spec
 ==============================================
 
+`[ Deprecated documentation ]`
+
 System Interfaces | System Command Call Notations Construct Drafts
 ------------------------------------------------------------------
-
-`[ Deprecated documentation ]`
 
 __Contents__
 

@@ -1,10 +1,10 @@
 ﻿Circular Language Construct Drafts | Text Code
 ==============================================
 
+`[ Deprecated documentation ]`
+
 Omitted Identifier in a Diagram
 -------------------------------
-
-`[ Deprecated documentation ]`
 
 It is not mandatory to name an element of the system.
 

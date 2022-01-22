@@ -1,12 +1,12 @@
 ﻿Circular Language | Archive
 ===========================
 
+`[ Deprecated documentation ]`
+
 *JJ van Zon, 2008*
 
 Related Classes
 ---------------
-
-`[ Deprecated documentation ]`
 
 If the class doesn’t fix the class of a related item, then any type of object can be assigned as the related item.
 

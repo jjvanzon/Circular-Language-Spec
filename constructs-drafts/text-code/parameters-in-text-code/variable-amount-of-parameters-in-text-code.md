@@ -1,10 +1,10 @@
 ﻿Circular Language Construct Drafts | Parameters in Text Code
 ============================================================
 
+`[ Deprecated documentation ]`
+
 Variable Amount in Text Code
 ----------------------------
-
-`[ Deprecated documentation ]`
 
 This proposal of textual representation of variable amount of arguments is totally not final yet.
 
