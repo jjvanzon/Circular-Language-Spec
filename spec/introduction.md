@@ -1,12 +1,9 @@
-﻿Circular Language Spec
-======================
+﻿Introduction
+============
 
 *JJ van Zon, 2021*
 
 [back](..)
-
-Introduction
-------------
 
 This article aims to introduce the basics of Circular language. Circular language is an idea for a computer programming language, mostly a diagram notation for visualizing computer code. 
 
@@ -19,7 +16,8 @@ __Contents__
 - [Interfaces](#interfaces)
 - [Conclusion](#conclusion)
 
-### Splitting up Ideas
+Splitting up Ideas
+------------------
 
 Something that can play a role in making software, is splitting up a larger idea into smaller ideas.
 
@@ -47,7 +45,8 @@ But to see the general point of the system, you might only need to see the top l
 
 This might make object oriented programming a way to keep overview over a system as it grows. A clear the split up into ideas might help the understandability of the design, perhaps most importantly the general outlines / top layers. Depending on who you ask, a subdivision in objects might be the most important thing in software. So splitting up an idea into sub ideas, something that most people are probably able to do, might be the most important thing about programming.
 
-### Reusing Ideas
+Reusing Ideas
+-------------
 
 Dividing up into ideas may lead to the *reusability* of ideas. For instance: the idea of a *button* might be reusable. It could be used everywhere. If you might program the perfect button, nobody might ever need to program a button again. You could just reuse the same idea whenever you need a button.
 
@@ -63,7 +62,8 @@ There could be many types already defined, that you might use one way or another
 
 Another word for type is *class*. *Type* and *class* might not precisely mean the same things, but it is pretty close and the word *class* is used in several object oriented programming languages.
 
-### Commands
+Commands
+--------
 
 Apart from a collection of sub objects, objects might contain *commands*.
 
@@ -115,7 +115,8 @@ But you do not necessarily need to see all those details in order to understand 
 
 Other names for commands could be *operations, procedures, functions, methods* or *routines.* Those might be more or less synonyms.
 
-### Command Parameters
+Command Parameters
+------------------
 
 Commands can have *parameters*. Those are like instructions passed along with the command that make the command behave differently. The __Button . Set Text__ command for instance, has a __Text__ parameter, which indicates what the new text of the button might be.
 
@@ -138,7 +139,8 @@ Call a command of the __Text__ parameter:
 
 The terms *parameter* and *argument* are sometimes used interchangeably. They might not be entirely the same thing, but the difference might be too subtle to talk about right now.
 
-### Interfaces
+Interfaces
+----------
 
 Another issue of objects is that they can have different interfaces. Try to consider how a employee looks to a customer and how she looks to one of her coworkers. She can do certain things for her coworker and different things for a customer. She has two interfaces. The party that refers to her might have determined which interface she has, but even though both parties are referring to the same person, she might do different things for them.
 
@@ -158,6 +160,7 @@ Triangles might actually be sub objects too. One of the differences with circles
 
 Objects, be it triangles, are an way to give different types, shared characteristics.
 
-### Conclusion
+Conclusion
+----------
 
 Hopefully this introduced you to the basics of the Circular language.
