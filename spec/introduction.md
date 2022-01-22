@@ -39,7 +39,7 @@ In computer programming, ideas, so both super ideas and sub ideas, might be call
 
 Each sub idea can be split up in sub ideas itself and you might go on and on splitting up ideas.
 
-![](images/Circle%20Language%20Spec%20Introduction.004.png)
+<img src="images/Circle%20Language%20Spec%20Introduction.004.png" height="400" />
 
 But to see the general point of the system, you might only need to see the top layers of the split up.
 
@@ -71,7 +71,7 @@ Apart from a collection of sub objects, objects might contain *commands*.
 
 Sub objects can again contain commands.
 
-![](images/Circle%20Language%20Spec%20Introduction.008.png)
+<img src="images/Circle%20Language%20Spec%20Introduction.008.png" height="300" />
 
 Software could not execute without commands. When you might run a command, an object might *do something*.
 
@@ -87,21 +87,21 @@ __Button . Set Text__
 
 A command itself can consist of sub commands: the separate steps of the command.
 
-![](images/Circle%20Language%20Spec%20Introduction.010.jpeg)
+<img src="images/Circle%20Language%20Spec%20Introduction.010.jpeg" height="300" />
 
 Sub commands are not necessarily embedded inside other commands. They can be defined separately:
 
-![](images/Circle%20Language%20Spec%20Introduction.011.jpeg)
+<img src="images/Circle%20Language%20Spec%20Introduction.011.jpeg" height="300" />
 
 And the sub commands can be *called* from the super command:
 
-![](images/Circle%20Language%20Spec%20Introduction.012.jpeg)
+<img src="images/Circle%20Language%20Spec%20Introduction.012.jpeg" height="300" />
 
 Calling a command has almost the same effect as inserting the called command there where you call it.
 
 The __Redraw Button__ command might be more complex. In this command the lines of the button could be drawn, the text could be drawn and whatever else might make up the display of the button. The steps of this redrawing could be delegated by yet again calling other commands. __Redraw Button__ could for instance call the __Draw Line__ command a number of times. So sub commands of the __Set Text__ command can themselves be composed of sub commands.
 
-![](images/Circle%20Language%20Spec%20Introduction.013.jpeg)
+<img src="images/Circle%20Language%20Spec%20Introduction.013.jpeg" height="350" />
 
 You can also see here that separately defining a command can lead to the *reuse* of commands. The __Draw Line__ command is reused three times in the example above. There may be many commands already defined, that you might use one way or another. Commands like that could also be put inside in a separate type. There could for instance be a __File__ type that contains commands with which to control a single computer file.
 
@@ -111,7 +111,7 @@ That way there can develop big command call tree-outs, which can make a single c
 
 But you do not necessarily need to see all those details in order to understand what the effect __Button . Set Text__ is.
 
-![](images/Circle%20Language%20Spec%20Introduction.014.jpeg)
+<img src="images/Circle%20Language%20Spec%20Introduction.014.jpeg" height="200" />
 
 Other names for commands could be *operations, procedures, functions, methods* or *routines.* Those might be more or less synonyms.
 
@@ -121,7 +121,7 @@ Commands can have *parameters*. Those are like instructions passed along with th
 
 Text can also be seen as an *idea*. It can be thought of as an *object*. That way, it is *objects* that serve as parameters.
 
-![](images/Circle%20Language%20Spec%20Introduction.015.jpeg)
+<img src="images/Circle%20Language%20Spec%20Introduction.015.jpeg" height="300" />
 
 The command can do whatever it wants with the parameters passed to it. Arguably, all it can do with it is:
 
@@ -130,11 +130,11 @@ The command can do whatever it wants with the parameters passed to it. Arguably,
 
 Pass the __Text__ parameter on to the next command (__Format Text__):
 
-![](images/Circle%20Language%20Spec%20Introduction.016.jpeg)
+<img src="images/Circle%20Language%20Spec%20Introduction.016.jpeg" height="300" />
 
 Call a command of the __Text__ parameter:
 
-![](images/Circle%20Language%20Spec%20Introduction.017.jpeg)
+<img src="images/Circle%20Language%20Spec%20Introduction.017.jpeg" height="300" />
 
 The terms *parameter* and *argument* are sometimes used interchangeably. They might not be entirely the same thing, but the difference might be too subtle to talk about right now.
 
@@ -144,7 +144,7 @@ Another issue of objects is that they can have different interfaces. Try to cons
 
 Objects may have the same ability. A type of object can have separate interfaces. Interfaces are groups of an object’s members. (The elements inside an object’s can also be called *members*.)
 
-![](images/Circle%20Language%20Spec%20Introduction.018.jpeg)
+<img src="images/Circle%20Language%20Spec%20Introduction.018.jpeg" height="500" />
 
 Interfaces are distinguished by triangles here.
 
