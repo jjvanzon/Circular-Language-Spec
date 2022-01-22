@@ -1,6 +1,8 @@
 Circular Language Spec 
 ======================
 
+*JJ van Zon, 2021*
+
 Archive
 --------
 

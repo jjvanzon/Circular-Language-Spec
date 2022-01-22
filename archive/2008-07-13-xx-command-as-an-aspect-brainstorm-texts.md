@@ -1,6 +1,8 @@
 ﻿Circular Language | Archive
 ===========================
 
+*JJ van Zon, 2008*
+
 Command as an Aspect Brainstorm Texts
 -------------------------------------
 

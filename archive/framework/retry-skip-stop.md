@@ -1,6 +1,8 @@
 Circular Language Spec | Archive
 ================================
 
+*JJ van Zon, 2009*
+
 Framework | Retry, Skip, Stop
 -----------------------------
 

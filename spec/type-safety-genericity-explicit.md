@@ -1,6 +1,8 @@
 ﻿Encircle Language Spec
 ======================
 
+*JJ van Zon, 2021*
+
 Type Safety, Genericity, Explicit
 ---------------------------------
 
