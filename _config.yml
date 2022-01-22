@@ -1,1 +1,10 @@
 theme: jekyll-theme-midnight
+title: Circular Language Spec
+plugins:
+  - jekyll-relative-links
+  - jekyll-sitemap
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - README.md
