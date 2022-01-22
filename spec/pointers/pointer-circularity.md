@@ -1,6 +1,8 @@
 ﻿Circular Language Spec | Pointers
 =================================
 
+[back](./)
+
 Pointer Circularity
 -------------------
 

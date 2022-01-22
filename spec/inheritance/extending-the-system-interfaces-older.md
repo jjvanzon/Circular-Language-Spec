@@ -1,6 +1,8 @@
 ﻿Circular Language Spec | Inheritance
 ====================================
 
+[back](./)
+
 Extending the System Interfaces
 -------------------------------
 

@@ -1,6 +1,8 @@
 Circular Language Spec | Parameters
 ===================================
 
+[back](./)
+
 Loose Ideas
 -----------
 

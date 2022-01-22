@@ -1,8 +1,10 @@
 ﻿Circular Language Spec | Pointers
 =================================
 
+[back](./)
+
 Redirection
-------------
+-----------
 
 `[ Preliminary documentation ]`
 

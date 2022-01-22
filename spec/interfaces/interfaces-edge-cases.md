@@ -1,6 +1,8 @@
 ﻿Circular Language Spec | Interfaces
 ===================================
 
+[back](./)
+
 Edge Cases
 ----------
 

@@ -1,6 +1,8 @@
 ﻿Circular Language Spec | Inheritance
 ====================================
 
+[back](./)
+
 Main Concepts
 -------------
 

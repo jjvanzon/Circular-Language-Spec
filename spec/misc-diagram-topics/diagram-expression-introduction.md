@@ -1,6 +1,8 @@
 ﻿Circular Language Spec | Misc Diagram Topics
 ============================================
 
+[back](./)
+
 Diagram Expression Introduction
 -------------------------------
 

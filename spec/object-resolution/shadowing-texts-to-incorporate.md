@@ -1,6 +1,8 @@
 Circular Language Spec | Object Resolution
 ==========================================
 
+[back](./)
+
 Shadowing
 ---------
 

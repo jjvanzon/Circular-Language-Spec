@@ -1,6 +1,8 @@
 Circular Language Spec
 ======================
 
+[back](..)
+
 Object Resolution Articles
 --------------------------
 
