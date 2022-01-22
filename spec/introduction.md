@@ -3,7 +3,7 @@
 
 *JJ van Zon, 2021*
 
-[back](././)
+[back](..)
 
 Introduction
 ------------
