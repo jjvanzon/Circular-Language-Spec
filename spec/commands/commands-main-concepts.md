@@ -1,6 +1,8 @@
 ﻿Commands | Main Concepts
 ========================
 
+*JJ van Zon, 2021*
+
 [back](./)
 
 __Contents__
@@ -111,7 +113,7 @@ A square might not execute. Well, they may only execute when called. __A__ may c
 
 ![](images/7.%20Commands%20Ideas.038.jpeg)
 
- But then again: __A__ may be the one that’s executing, not __B__. So diamonds may execute, and squares may not.
+But then again: __A__ may be the one that’s executing, not __B__. So diamonds may execute, and squares may not.
 
 ## Derived Constructs
 

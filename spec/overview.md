@@ -1,6 +1,8 @@
 ﻿Overview
 ========
 
+*JJ van Zon, 2021*
+
 [back](..)
 
 This documentation is an attempt to describe a programming language called Circular. It aims to be a diagram notation for visualizing computer code. 
