@@ -1,9 +1,9 @@
 ﻿Misc Diagram Topics | Coloring
 ==============================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 ## From the Original Symbol Documentation
 

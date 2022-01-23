@@ -1,9 +1,9 @@
 ﻿Commands | Example Diagrams
 ===========================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 __Contents__
 

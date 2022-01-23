@@ -1,9 +1,9 @@
 ﻿Black Boxes | Simplified Access Control Notation
 ================================================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 There are only a couple of ways, in which expression of access control connectors in a diagram might be simplified.
 

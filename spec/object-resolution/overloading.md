@@ -1,9 +1,9 @@
 ﻿Object Resolution | Overloading
 ===============================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 - Overloading names of related classes, disambiguating by class.
 

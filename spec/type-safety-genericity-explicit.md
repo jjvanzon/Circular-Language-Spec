@@ -1,11 +1,11 @@
 ﻿Type Safety, Genericity, Explicit
 =================================
 
+`[ Preliminary documentation ]`
+
 *JJ van Zon, 2021*
 
 [back](..)
-
-`[ Preliminary documentation ]`
 
 __Contents__
 

@@ -1,9 +1,9 @@
 ﻿Object Resolution | With Blocks
 ===============================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 This is an ‘old’ VB concept. I might use something like that in Circular too. But I’m not sure if it might be an object resolution concept, but I had to put it somewhere for now.
 

@@ -1,9 +1,9 @@
 ﻿Object Resolution | Hiding
 ==========================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 - ( not the same as another concept? )
 - Accessing a hidden name

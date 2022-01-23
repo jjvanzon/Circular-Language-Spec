@@ -1,9 +1,9 @@
 ﻿Commands | Creation Behavior of Commands
 ========================================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 __Contents__
 

@@ -1,9 +1,9 @@
 ﻿Start & Stop
 ============
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 __Contents__
 

@@ -1,9 +1,9 @@
 ﻿Object Resolution | Default Member
 ==================================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 - Default Attribute
 - Default Related Item

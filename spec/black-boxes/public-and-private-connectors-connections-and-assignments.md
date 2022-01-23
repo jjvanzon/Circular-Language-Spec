@@ -1,10 +1,9 @@
 ﻿Black Boxes | Public & Private Connectors, Connections & Assignments
 ====================================================================
 
-[back](./)
-
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 __Contents__
 

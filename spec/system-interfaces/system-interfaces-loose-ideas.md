@@ -1,9 +1,9 @@
 ﻿System Interfaces | Loose Ideas
 ===============================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 *The texts below may be rough material, that might once serve as a base for more polished text.*
 

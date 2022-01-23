@@ -1,9 +1,9 @@
 ﻿Basic Diagram Elements
 ======================
 
-[back](..)
-
 `[ Preliminary documentation ]`
+
+[back](..)
 
 __Contents__
 

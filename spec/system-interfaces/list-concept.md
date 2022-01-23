@@ -1,9 +1,9 @@
 ﻿System Interfaces | List Concept
 ================================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 This article explains the list concept. A list is a special type of object, that contains zero, one, or more other objects. This concept collides with the concept of a normal object, because a normal object can also contain zero, one, or more other objects.
 

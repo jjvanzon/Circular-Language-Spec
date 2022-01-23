@@ -1,9 +1,9 @@
 ﻿Object Resolution | Ambiguity
 =============================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 ( Textual ambiguity )
 

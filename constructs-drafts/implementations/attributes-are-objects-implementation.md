@@ -35,7 +35,7 @@ Attributes might be considered are outermost nodes of the relational structure, 
 
 ## Implementing Attributes as Separate Construct
 
-`[Dutch]`
+`[ Dutch ]`
 
 Eerder dacht ik ook aan om misschien meteen Attributes Become Classes toe te passen. Maar laat dat nog maar even. Het inrichten van attributen is heel erg gelijk aan het inrichten van related items. Je zou de item class ook 1 string waarde kunnen geven, 1 integer waarde, etcetera. Daarmee kan de item class ook een enkele string of integer representeren.
 

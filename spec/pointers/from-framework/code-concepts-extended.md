@@ -1,9 +1,9 @@
 ﻿Pointers | From Framework | Code Concepts Extended
 ==================================================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 ## Circularity
 

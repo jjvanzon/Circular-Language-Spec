@@ -1,9 +1,9 @@
 ﻿Misc Diagram Topics | Diagram Expression Introduction
 =====================================================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 *Expression* includes a *diagram notation* for visualizing the program code. The diagrams are a mere expression of binary interlinked objects. Systematics, stored in a binary way as interlinked objects, are translated to a diagram, expressed on screen. The diagram should be fully automatically drawn out. The metrics and positioning of the shapes and lines is automatically determined. The diagram can be edited, resulting in changes to the stored binary objects.
 

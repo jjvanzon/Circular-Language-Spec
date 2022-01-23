@@ -1,9 +1,9 @@
 ﻿Sequence Order
 ==============
 
-[back](..)
-
 `[ Preliminary documentation ]`
+
+[back](..)
 
 *These may be rough texts that might once be used to build more polished text.*
 

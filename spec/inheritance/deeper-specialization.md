@@ -1,9 +1,9 @@
 ﻿Inheritance | Deeper Specialization
 ===================================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 __Contents__
 

@@ -1,9 +1,9 @@
 ﻿Inheritance | Extending the System Interfaces
 =============================================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 __Contents__
 

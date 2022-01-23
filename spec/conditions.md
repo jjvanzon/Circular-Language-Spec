@@ -1,9 +1,9 @@
 ﻿Conditions
 ==========
 
-[back](..)
-
 `[ Preliminary documentation ]`
+
+[back](..)
 
 ## Loose Ideas
 

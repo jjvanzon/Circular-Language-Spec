@@ -1,9 +1,9 @@
 Object Resolution | Shadowing
 =============================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 (Text to incorporate)
 

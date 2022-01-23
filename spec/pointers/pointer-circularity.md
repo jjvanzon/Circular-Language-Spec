@@ -1,9 +1,9 @@
 ﻿Pointers | Pointer Circularity
 ==============================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 __Contents__
 

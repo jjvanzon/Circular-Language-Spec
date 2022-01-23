@@ -1,9 +1,9 @@
 ﻿Inheritance | Enforcing & Preventing Specialization
 ===================================================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 __Contents__
 

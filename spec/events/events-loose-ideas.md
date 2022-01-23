@@ -1,9 +1,9 @@
 ﻿Events | Loose Ideas
 ====================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 *The texts below are loose ideas yet to be turned into good documentation.*
 

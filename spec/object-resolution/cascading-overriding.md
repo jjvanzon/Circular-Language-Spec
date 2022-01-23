@@ -1,9 +1,9 @@
 ﻿Object Resolution | Cascading Overriding
 ========================================
 
-[back](./)
-
 `[ Preliminary documentation ]`
+
+[back](./)
 
 J Graphics was the program that made me write the first functional piece of J Data Generator. The thing that seemed hardest to generate is the cascading overriding of the styles of J Graphics objects. Actually, it never *got* generated.
 
