@@ -11,7 +11,9 @@ Contents
 - [Introduction](introduction.md)
 - [Overview](overview.md)
 - [Basic Diagram Elements](basic-diagram-elements.md)
-- [Objects](objects.md)
+- Objects
+    - [Objects](objects/objects.md)
+    - [Attributes](objects/attributes.md)
 - Classes
     - [Classes](classes/classes.md)
     - [Static](classes/static-unfinished.md)

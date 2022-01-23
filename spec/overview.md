@@ -51,7 +51,7 @@ __Contents__
 
   Tries to make it a bit more formal with an attempt to give a more or less complete overview over the basic elements that might be seen in the diagrams, like circles, triangles, crosses, squares and lines. This documentation describes what they might mean in the diagrams. Details might follow in later text.
 
-## [Objects](objects.md)
+## [Objects](objects)
 
 - ![](images/Circle%20Language%20Spec%20Overview.004.png)
  
