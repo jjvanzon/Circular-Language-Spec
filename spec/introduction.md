@@ -50,7 +50,7 @@ Reusing Ideas
 
 Dividing up into ideas may lead to the *reusability* of ideas. For instance: the idea of a *button* might be reusable. It could be used everywhere. If the perfect button were to be programmed, nobody might need to program a button again. The same idea might be reused whenever a button is needed.
 
-Places where a button is used in a system, there could be a separate object:
+The places where a button is used in a system, there could be a separate object:
 
 ![](images/Circle%20Language%20Spec%20Introduction.005.png)
 
