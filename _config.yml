@@ -2,7 +2,6 @@ theme: jekyll-theme-midnight
 title: Circular Language
 plugins:
   - jekyll-relative-links
-  - jekyll-sitemap
 relative_links:
   enabled: true
   collections: true
