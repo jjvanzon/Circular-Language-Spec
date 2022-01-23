@@ -5,7 +5,7 @@
 
 [back](..)
 
-`this*` article aims `to*` introduce `the*` basics of Circular language. Circular language `is` an idea for a computer programming language, `mostly` a diagram notation for visualizing computer code. 
+Here some basics might be introduced of Circular language. Circular language is an idea for a computer programming language, mostly a diagram notation for visualizing computer code. 
 
 __Contents__
 
@@ -19,48 +19,48 @@ __Contents__
 Splitting up Ideas
 ------------------
 
-Something that `can*` play a role in making software, `is` splitting up a larger idea into `smaller` ideas.
+Something that might play a role in making software, could be splitting up a larger idea into smaller ideas.
 
 ![](images/Circle%20Language%20Spec%20Introduction.001.png)
 
-Here `you*` `can*` see `the*` idea of `the*` computer*, split up into four sub ideas: `the*` monitor, keyboard, mouse and printer.
+The picture might display the idea of *a computer*, split up into four sub ideas: a monitor, keyboard, mouse and printer.
 
-In Circular language, `the*` main symbol for an idea might be a *circle*:
+In Circular language, the main symbol for an idea might be a *circle:*
 
 <img src="images/Circle%20Language%20Spec%20Introduction.002.png" height="100" />
 
-`each*` sub idea `could*` work `more` `or*` less independently of `the*` others. __Monitor__ might its bit, __Keyboard__ might its bit. It might be `the*` super idea that might tie `the*` sub ideas together. `Meaning*`: `the*` computer `could*` make `the*` link between monitor, keyboard, mouse and printer. `the*` super idea might combine `the*` sub ideas and might manage `the*` communication between `the*` sub ideas.
+Each sub idea could work more or less independently of the others. __Monitor__ might its part, __Keyboard__ might its part. It might be the super idea that could tie the sub ideas together. Meaning: the computer might make the link between a monitor, keyboard, mouse and printer. A super idea could combine the sub ideas and might manage communication between the sub ideas.
 
-In computer programming, ideas, `so*` `both*` super ideas and sub ideas, might be called *objects*. `each*` object `can*` be responsible for its own part of `the*` system.
+In computer programming, ideas might be called *objects*. Each object might be responsible for its own part of a system.
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
-`each*` sub idea `can*` be split up in sub ideas itself and `you*` might go `on and on` splitting up ideas.
+A sub idea might be split up into sub ideas itself and it might go on and on being split up into smaller and smaller ideas.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.004.png" height="400" />
 
-`But*` `to*` see `the*` general point of `the*` system, `you*` might `only*` `need` `to*` see `the*` top layers of `the*` split up.
+But to see the general point of a system, only the top layers might be relevant.
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
-`this*` might make object oriented programming a way `to*` keep overview over a system as it grows. A `clear` split up into ideas might help `the*` understandability of `the*` design, perhaps `most` `importantly` `the*` general outlines / top layers. Depending on who `you*` ask, a subdivision in objects might be `the*` `most` `important` thing in software. `So*` splitting up an idea into sub ideas, something that `most` people `are` probably able `to*` do, might be `the*` `most` `important` thing about programming.
+This might make object oriented programming a way to keep overview over a system as it grows. A better split up into ideas might help a design be better understandable, perhaps mainly its general outlines / top layers. Depending on who you ask, a subdivision in objects might quite a prominent thing in software. So splitting up an idea into sub ideas, something that quite a few people might be able to do, might be indeed quite relevant when programming.
 
 Reusing Ideas
 -------------
 
-Dividing up into ideas may lead `to*` `the*` *reusability* of ideas. For instance: `the*` idea of a *button* might be reusable. It `could*` be used `everywhere`. `If*` `the*` perfect button `were` `to be` programmed, nobody might `need` `to*` program a button again. `the*` `same` idea might be reused `whenever` a button `is` `needed`.
+Dividing up into ideas may lead to *reusability* of ideas. For instance: the idea of a *button* might be reusable. It might be used more than once. If quite a good button were to be programmed, other people might not need to program another button again. The same idea might be reused when another button is desired.
 
-`The*` places where a button `is` used in a system, there `could*` be a separate object:
+Places where a button may be used in a system, there might be a separate object:
 
 ![](images/Circle%20Language%20Spec%20Introduction.005.png)
 
 ![](images/Circle%20Language%20Spec%20Introduction.006.png)
 
-A button object in general `can*` be called a *type* of object. `all*` `the*` button objects `can*` be considered objects of `the*` `same` *type*. Sometimes `the*` word *object* `is` used `instead` of `the*` word *type*. For instance, `you*` might speak of *`the*`* button *object*, while *`you’re*`* talking about `the*` button *type*.
+A button object in general might be called a *type* of object. The different button objects might be objects of a similar *type*. Sometimes the word *object* might be used in place of the word *type*. For instance, something might be called the button *object*, while talking about the button *type*.
 
-There `could*` be `many` types `already` `defined`, that `you*` might use one way or another. `Such*` as `the*` __Button__ type for instance, which `you*` `can*` use `to*` build a user interface. Another type, __Integer__, represents one integer number. `you*` might be using those `all*` `the*` time `when*` `you*` program.
+There may be quite a few types available, that someone might use in one way or another. Such as a __Button__ type for instance, which might be used to build a user interface. Another type, __Integer__, may represent one integer number. Those might  be used relatively frequently in programming.
 
-Another word for type `is` *class*. *Type* and *class* might `not*` `precisely` `mean*` `the*` `same` thing, `but*` it `is` pretty close and `the*` word *class* `is` used in several object oriented programming languages.
+Another word for *type* might be *class*. *Type* and *class* might not precisely be the same thing, but perhaps it is pretty close and the word *class* might be used in several object oriented programming languages.
 
 Commands
 --------
@@ -95,7 +95,7 @@ Sub commands `are` `not*` `necessarily` embedded inside other commands. They `ca
 
 And `the*` sub commands `can*` be *called* from `the*` super command:
 
-<img src="images/Circle%20Language%20Spec%20Introduction.012.jpeg" height="300" />
+<img src="images/Circle%20Language%20Spec%20Introduction.012.jpeg" height="350" />
 
 Calling a command has `almost*` `the*` `same` effect as inserting `the*` called command there where `you*` call it.
 
