@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Commands
-=================================
+﻿Commands | Main Concepts
+========================
 
 [back](./)
-
-Main Concepts
--------------
 
 __Contents__
 
@@ -36,7 +33,7 @@ __Contents__
     - [Command Call Synonyms](#command-call-synonyms)
     - [Command Reference Synonyms](#command-reference-synonyms)
 
-### Introduction
+## Introduction
 
 Commands may be objects, that so happen to be *executable*. Commands could be actions, procedures and processes, that a computer might perform. They might be displayed in a diagram as squares and diamond shapes:
 
@@ -54,7 +51,7 @@ And by connecting them with *lines:*
 
 There can be solid, dashed or dotted lines between command symbols. Names might be displayed with commands as well.
 
-### Diagram Elements
+## Diagram Elements
 
 Command concepts may involve a specific set of characteristics.
 
@@ -106,7 +103,7 @@ Here is an attempt to summarize these traits of commands:
 - __prototypes__ (or "definitions")
 - __(not) named__
 
-#### Squares May Not Execute
+### Squares May Not Execute
 
 ![](images/7.%20Commands%20Ideas.037.jpeg)
 
@@ -116,11 +113,11 @@ A square might not execute. Well, they may only execute when called. __A__ may c
 
  But then again: __A__ may be the one that’s executing, not __B__. So diamonds may execute, and squares may not.
 
-### Derived Constructs
+## Derived Constructs
 
 Constructs that might be known from other programming languages, may have a reasonably unique expression using combinations of these more basic elements from Circular. Here follows an attempt to accompany this claim with examples.
 
-### Command Definitions
+## Command Definitions
 
 A command definition might describe the structure and behavior of another command.
 
@@ -165,7 +162,7 @@ because it may be:
 - named
 - used as a prototype
  
-### Command Calls
+## Command Calls
 
 A command definition might be *called* multiple times.
 
@@ -203,7 +200,7 @@ because it may be:
 - contained inside a definition
 - uses another command as a definition
 
-#### How Calls May Work
+### How Calls May Work
 
 To make one command call another command, a diamond might be put in the calling command and it may be connected to the command to call.
 
@@ -219,7 +216,7 @@ When one square is called, its contained squares may be called too.
 
 When __A__ may be called, __B__ may be called. When __B__ would be called, __C__, __D__ and __E__ might be called too.
 
-### Command References
+## Command References
 
 A command could be *pointed to*.
 
@@ -249,7 +246,7 @@ because it is:
 - not executable (directly)
 - a reference
 
-#### How Command References May Work
+### How Command References May Work
 
 A square connected to another command may be a mere *reference* to a command.
 
@@ -265,7 +262,7 @@ When __A__ calls __B__, it’s actually calling __C__.
 
 Command references may be a way to leave the command to call undetermined, variable, to be determined later.
 
-### Code Blocks
+## Code Blocks
 
 Some programming languages might allow code blocks within a command, to group statements together. This might scope variables, so variables inside the block might only be used within that block, for some added safety against programming errors, perhaps.
 
@@ -311,7 +308,7 @@ because it is:
 - not a reference
 - not a definition
 
-#### Code Blocks Details
+### Code Blocks Details
 
 Code blocks might be nested even further:
 
@@ -325,7 +322,7 @@ Code blocks might freely be used for putting a frame around a piece of code insi
 
 ![](images/1.%20Commands%20Main%20Concepts.034.png)
 
-### Local Functions
+## Local Functions
 
 A local function might be known from other programming languages and may mean a command that is defined within another command.
 
@@ -366,7 +363,7 @@ because it is:
 - has a name
 - a prototype / might be called
 
-### Clauses
+## Clauses
 
 Clauses might be found as elements of an `if` statement or for instance a `where` clause from querying languages.
 
@@ -399,7 +396,7 @@ because it is:
 - passed to another command or statement
 - might be a command reference
 
-### Lambda Expressions
+## Lambda Expressions
 
 A lambda expression might be found in other programming languages as sort of a short notation for a function, embedded inside other statements.
 
@@ -425,7 +422,7 @@ Or:
 
 <img src="images/1.%20Commands%20Main%20Concepts.023.png" width="160" />
 
-### Nested Commands
+## Nested Commands
 
 A nested command is like a command defined within a command.
 
@@ -444,7 +441,7 @@ The concept of nested commands may coincide with the terms:
 
 Those may all be examples of *nested commands*. Sometimes however, it might be easier to use a single name for these phenomena.
 
-#### Active Nested Command
+### Active Nested Command
 
 A nested command that is a diamond, might be called an *active* nested command:
 
@@ -455,7 +452,7 @@ It may be called *active*, because it *executes*.
 
 *Active* nested commands might be *code blocks*.
 
-#### Inactive Nested Command
+### Inactive Nested Command
 
 An *inactive* nested command may be a nested command that does not execute. So it may be a nested command that is a square:
 
@@ -472,7 +469,7 @@ It might not execute unless it is called:
 - Local functions
 - Lambda expressions
 
-#### Deeper Nested Command
+### Deeper Nested Command
 
 A deeper nested command may be a nested command inside a nested command.
 
@@ -480,7 +477,7 @@ A deeper nested command may be a nested command inside a nested command.
 
 (So it might be a command symbol without lines pointing away from it, inside a command symbol without lines pointing away from it, inside a command symbol *with* lines pointing away from it.)
 
-### Implementation
+## Implementation
 
 The implementation of a command might be defined as the private contents of a command. Here is an attempt to demonstrate that visually:
 
@@ -488,19 +485,19 @@ The implementation of a command might be defined as the private contents of a co
 
 The large square's contents, drawn with thick lines, might represent the command’s *implementation*, because they might be private. The objects inside the large square that are drawn with thinner lines, might be the command’s parameters: its publics.
 
-### Parameters and Return Values Not Covered
+## Parameters and Return Values Not Covered
 
 Symbolizations for parameters and return values might not be covered much in this text. Those are intended to be covered by another chapter: *Parameters*.
 
-### Conclusion
+## Conclusion
 
 Using commands constructs from Circular, it may seem circumstantial whether a command symbol might be stereotyped as a block, clause, definition, call, etc. It seems to result from the way basic language elements from Circular relate to each other. Still, it may be relevant to be aware how these symbols from Circular can be combined to represent constructs from other languages.
 
-### Synonyms
+## Synonyms
 
 The following terms may possibly be used interchangeably depending on context.
 
-#### Command Definition Synonyms
+### Command Definition Synonyms
 
 - prototype
 - blue-print
@@ -509,14 +506,14 @@ The following terms may possibly be used interchangeably depending on context.
 - square
 - definition
 
-#### Definition Line Synonyms
+### Definition Line Synonyms
 
 - command definition line
 - call line
 - prototype line
 - dashed line
 
-#### Executable Command Synonyms
+### Executable Command Synonyms
 
 - active command
 - active command symbol
@@ -525,11 +522,11 @@ The following terms may possibly be used interchangeably depending on context.
 - execution
 - execution point
 
-#### Command Call Synonyms
+### Command Call Synonyms
 
 - execution
 
-#### Command Reference Synonyms
+### Command Reference Synonyms
 
 - function pointer
 - method reference

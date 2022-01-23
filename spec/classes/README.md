@@ -1,10 +1,7 @@
-Circular Language Spec
-======================
+Classes Articles
+================
 
 [back](../..)
-
-Classes Articles
-----------------
 
 - [Classes](classes.md)
 - [Static](static-unfinished.md)

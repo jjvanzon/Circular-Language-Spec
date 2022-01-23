@@ -1,10 +1,7 @@
-Circular Language Construct Drafts | From Spec
-==============================================
+Construct Drafts | From Spec | No Diamond Shapes
+================================================
 
 `[ Deprecated documentation ]`
-
-No Diamond Shapes
------------------
 
 __Contents__
 
@@ -13,13 +10,13 @@ __Contents__
 - [Command Symbol Roles](#command-symbol-roles)
 - [Reference and Call Targets](#reference-and-call-targets)
 
-### Introduction
+## Introduction
 
 These ideas seem from before the diamond shape was introduced. Other clues may have been hoped to disambiguate the different programming constructs. A newer idea may use diamond shapes along with squares, and may suggest a more specific use of solid lines and dashed lines.
 
 These issues seem to disappear with introducing the diamond for execution and having distinct call and reference lines: dashed vs. solid line styles.
 
-### Commands Might Only Be Called from Another Command
+## Commands Might Only Be Called from Another Command
 
 *Commands can only be called directly from another command.*
 
@@ -37,7 +34,7 @@ Only when you call a nested command or an embedded command reference, the line d
 *Call an internal command reference:*  
 ![](images/7.%20Commands%20Ideas.055.jpeg)
 
-### Command Symbol Roles
+## Command Symbol Roles
 
 A call line makes the square a call. A reference line makes it a reference. No line at all indicates that it’s a command definition or a nested command. Lines can also be left out for abstraction reasons.
 
@@ -49,7 +46,7 @@ A call line makes the square a call. A reference line makes it a reference. No l
 
 Note here that the access symbol of a solid command reference line is also drawn solid.
 
-### Reference and Call Targets
+## Reference and Call Targets
 
 Here is a list of possible reference targets and call targets:
 

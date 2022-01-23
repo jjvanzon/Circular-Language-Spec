@@ -1,8 +1,5 @@
-Circular Language Construct Drafts | Implementations
-====================================================
-
-Start & Stop Implementation
----------------------------
+Construct Drafts | Implementations | Start & Stop Implementation
+================================================================
 
 `[ Out of Scope ]`
 
@@ -29,6 +26,6 @@ Commands going in reverse may the worst in complexity. They may be rollback and 
 
 So the execution commands might not all be available in one blow.
 
-### Detail
+## Detail
 
 You can also invoke an execution command on a thread, which is a string of commands, that automatically follow each other up. A thread, however, can also be considered a single command as well.

@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Inheritance
-====================================
+﻿Inheritance | Main Concepts
+===========================
 
 [back](./)
-
-Main Concepts
--------------
 
 `[ Preliminary documentation ]`
 
@@ -24,13 +21,13 @@ __Contents__
     - [Multiple Objects Sharing One Base Object](#multiple-objects-sharing-one-base-object)
     - [Inheriting Multiply from the Same Class](#inheriting-multiply-from-the-same-class)
 
-### Introduction
+## Introduction
 
 This documentation folder covers the concept of inheritance. This concept has been present inside object oriented programming languages for decades. But Circular takes it a little bit further. In other languages one class can inherit from another class, taking over all its characteristics before the derived class gets extended or altered. Inheritance goes further than that in Circular. Next to class inheritance (the traditional form of inheritance), there is also object inheritance. This means, that one object takes over the characteristics of a specific other object. In fact, the other object melts together with the new object. When you change base members of the new object, the base object’s data also changes. This is callled object inheritance. There are even more forms of inheritance. A collection can be inherited from, so that a whole existing table of items can be extended with new columns. This is called list inheritance. A whole system can also inherit from another system, taking over all of its characteristics, and the derived system can be altered, augmented, specialized and extended. This is called system inheritance. If the original system gets changed, this may also change the derived systems. So basically: everything can be inherited from and this can render specialized versions of any class, object, collection or module.
 
 Such specialization can be also be applied to commands. The inheritance documentation also covers other concepts in the area of specialization and extension. Inheritance is very closely related to the concept of interfaces.
 
-### Main Concepts
+## Main Concepts
 
 Circular supports several forms of inheritance. All these basic forms of inheritance might be laid out in the following articles:
 
@@ -40,7 +37,7 @@ Circular supports several forms of inheritance. All these basic forms of inherit
 - *System Inheritance*
 - *Interface Inheritance*
 
-### Class Inheritance
+## Class Inheritance
 
 Class inheritance is the traditional form of inheritance: one class takes over all characteristics of another class. This is displayed as follows:
 
@@ -48,7 +45,7 @@ Class inheritance is the traditional form of inheritance: one class takes over a
 
 The second class merges with the first class. The first class has an interface that delegates its implementation to the second class.
 
-### Object Inheritance
+## Object Inheritance
 
 An object can merge with another object, delegating its interface, implementation *and* its values to another object:
 
@@ -56,7 +53,7 @@ An object can merge with another object, delegating its interface, implementatio
 
 So this time the interface has an object line. This means that as soon as the other object’s values change, the derived object is automatically also changed. The other way around is also true: when you change the derived object’s inherited members, the base object also changes. Changes are not *applied* from one to the other: both are just references to exactly the same object.
 
-### Interface Inheritance
+## Interface Inheritance
 
 Since any redirection of a triangle is considered inheritance, interface redirection of a triangle may also be called inheritance: *interface inheritance*.
 
@@ -64,7 +61,7 @@ Since any redirection of a triangle is considered inheritance, interface redirec
 
 So the main concept of inheritance is basically the same as that of interfaces.
 
-### List Inheritance
+## List Inheritance
 
 List inheritance is a special form of inheritance where one list inherits from another.
 
@@ -110,7 +107,7 @@ The following might be something you could get confused about. A normal object i
 
 ![](images/1.%20Inheritance%20Main%20Concepts.012.png)
 
-### System Inheritance
+## System Inheritance
 
 System inheritance introduces the concept of having one module with objects defined inside of it, and inheriting from that module, allowing the derived module to redefine any object defined in the base module.
 
@@ -162,15 +159,15 @@ System inheritance is added behavior compared to normal inheritance, because any
 
 You can then add or specialize members from the base system in a normal inheritance situation.
 
-### Alternate Version Through Inheritance
+## Alternate Version Through Inheritance
 
 Once there was the idea, that through inheritance and specialization, you can create a *totally* altered version of a system, while the base system stays in tact. But this idea is let go of, because if something is private, then you can not change it, and when a specialization method is made private, then you can not specialize that. So you might not be able to create completely alternate versions of something through mere inheritance.
 
-### Miscellaneous Inheritance Situations
+## Miscellaneous Inheritance Situations
 
 Now follow a couple of miscellaneous situations that can occur when you work with inheritance.
 
-#### Command Inheritance
+### Command Inheritance
 
 Because commands are just objects, inheritance can also be used between commands. One command can class-inherit from another command:
 
@@ -186,7 +183,7 @@ Since commands are just objects that can be executed, a command could in theory 
 
 ![](images/1.%20Inheritance%20Main%20Concepts.023.png)
 
-#### Backward Relation to Derived Classes
+### Backward Relation to Derived Classes
 
 Due to the duality of relationships, when a derived class refers to its base class, the base class could also point back at the derived class again.
 
@@ -196,13 +193,13 @@ Or for class inheritance:
 
 ![](images/1.%20Inheritance%20Main%20Concepts.025.png)
 
-#### Multiple Objects Sharing One Base Object
+### Multiple Objects Sharing One Base Object
 
 Because multiple objects can inherit from the *same instance* of an object, you can have a set of objects use another object as their base:
 
 ![](images/1.%20Inheritance%20Main%20Concepts.026.png)
 
-#### Inheriting Multiply from the Same Class
+### Inheriting Multiply from the Same Class
 
 Because you can give an object two sub-objects of the same class, you can also let a single object inherit from the class class twice:
 

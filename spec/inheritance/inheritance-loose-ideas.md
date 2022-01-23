@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Inheritance
-====================================
+﻿Inheritance | Loose Ideas
+=========================
 
 [back](./)
-
-Loose Ideas
------------
 
 `[ Preliminary documentation ]`
 

@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Interfaces
-===========================================
-
-Imaginary Backward Relationships
---------------------------------
+﻿Circular Language Broader View | Interfaces | Imaginary Backward Relationships
+==============================================================================
 
 `[ Preliminary documentation ]`
 

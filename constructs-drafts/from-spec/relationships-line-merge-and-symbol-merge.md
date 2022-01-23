@@ -1,10 +1,7 @@
-Circular Language Construct Drafts | From Spec
-==============================================
+Construct Drafts | From Spec | Relationships | Line Merge & Symbol Merge
+========================================================================
 
 `[ Deprecated documentation ]`
-
-Relationships | Line Merge & Symbol Merge
------------------------------------------
 
 __Contents__
 
@@ -17,7 +14,7 @@ __Contents__
     - [Counterpart out of Sight](#counterpart-out-of-sight-1)
     - [`No` Reuse of Merged Imaginary References](#no-reuse-of-merged-imaginary-references-1)
 
-### Bidirectional Relationships
+## Bidirectional Relationships
 
 The notation suggested here was moved away from the Circular Language Spec in favor of another notation.
 
@@ -65,7 +62,7 @@ There is an idea where one related list might contain items from multiple classe
 
 ![](images/1.%20Relationships%20Construct%20Drafts.008.png)
 
-#### Counterpart out of Sight
+### Counterpart out of Sight
 
 If the counterpart of a relationship might be out of sight, a line might point out of the diagram. A catch there might be that you might not see whether the relationship counterpart might have multiplicity of __1__ or __n__. A possible solution for this, might be to express multiplicity at the end of that line that might point out of the diagram.
 
@@ -78,19 +75,19 @@ This might look as follows with the double dashed border notation:
 But then again, if something is out of sight, it might just be out of sight and you cannot see things out of sight. Perhaps there is no problem here.
 
 
-#### `No` Reuse of Merged Imaginary References
+### `No` Reuse of Merged Imaginary References
 
 `If*` two imaginary references `have` merged, `to become` a relationship symbol, `then*` other references to `the*` same classes won’t connect to an imaginary reference that has merged `to become` a relationship symbol. Relationships create their own imaginary references, that aren’t reused. `This is` displayed in `the*` article *Relationships Between Objects in a Diagram*, `but*` may also apply to `the*` notation of relationships between classes.
 
 ![](images/1.%20Relationships%20Construct%20Drafts.016.png)
 
-#### Example
+### Example
 
 ![](images/1.%20Relationships%20Construct%20Drafts.017.png)
 
-### Relations Between Objects
+## Relations Between Objects
 
-#### Diagram Notation
+### Diagram Notation
 
 `The*` relationship symbol `is` a double circle. `The*` reason behind `this` notation, `was already` explained in `the*` article *Relationships in a Diagram*. `The*` notation `is` accomplished by first taking `the*` original picture with one class refering to another and `the*` other refering back to `the*` first class:
 
@@ -108,13 +105,13 @@ Next, `the*` class lines `are` merged, `but*` also `the*` class symbols `are` me
 
 For relationships between classes `the*` relationship symbol `is` a double *dashed* circle. For relationships between objects, `the*` relationship symbol `is` a double circle drawn with *solid* lines.
 
-#### Counterpart out of Sight
+### Counterpart out of Sight
 
 `When* the*` counterpart of `the*` relationship `is` out of sight, a line `should` point out of `the*` diagram. A catch there `is`, that `you* can’t` see `if* the*` relationship counterpart `is` part of a multiplicity of __n__ or `not*`. Therefore, `the*` multiplicity `is` expressed at `the*` end of `the` line pointing out of `the*` diagram as follows:
 
 ![](images/1.%20Relationships%20Construct%20Drafts.021.png)
 
-#### `No` Reuse of Merged Imaginary References
+### `No` Reuse of Merged Imaginary References
 
 `If*` two imaginary references `have` merged, to become a relationship symbol, `then*` other references to `the*` same objects won’t connect to an imaginary reference that has merged to become a relationship symbol. Relationships create their own imaginary references, that aren’t reused.
 

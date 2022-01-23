@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | From Spec
-==========================================
-
-Parameters Broader View | Relations Between Commands & Objects
---------------------------------------------------------------
+﻿Circular Language Broader View | From Spec | Parameters Broader View | Relations Between Commands & Objects
+===========================================================================================================
 
 `[ Preliminary documentation ]`
 
@@ -19,7 +16,7 @@ __Contents__
         - [Inactive Command References](#inactive-command-references)
         - [Local Variables](#local-variables)
 
-### Concept
+## Concept
 
 A command can contain a set of related objects. Those are the parameters of the command. A command might use objects to do its work.
 
@@ -43,15 +40,15 @@ These two perspectives on it are completely interchangeable.
 
 In other programming languages, an executed command is considered part of *one* object, while in Circular the same execution of a command may as well be part of multiple objects. A command might be part of any object, that is an argument of the command. 
 
-#### Object Relations
+### Object Relations
 
 So when you’ve passed an object to a command, the command automatically becomes visible inside the object as a runnable command.
 
-#### Class Relations
+### Class Relations
 
 But in case of a command definition, a parameter is usually not filled in yet, but the class of the parameter *is* filled in. It is a relation between classes, instead of a relation between objects. This automatically makes the command definition available from the parameter’s class. There is complete exchangeability between the class of a parameter and a command of a class.
 
-### Diagram
+## Diagram
 
 A parameter is an object related to a command.
 
@@ -106,11 +103,11 @@ These two perspectives on it are completely interchangeable.
 
 In Circular both points of view, commands being part of objects, and commands being independent entities with parameters, are equally visible in the language. 
 
-#### Object Relations
+### Object Relations
 
 So when you’ve passed an object to a command, the command automatically becomes visible inside the object as a runnable command.
 
-#### Class Relations
+### Class Relations
 
 But in case of a command definition, a parameter is usually not filled in yet.
 
@@ -126,7 +123,7 @@ It is a relation between classes, instead of a relation between objects. This au
 
 There is complete exchangeability between the class of a parameter and a command of a class.
 
-### Use This
+## Use This
 
 When you program a command, that might something, the action is immediately available in the context of any type of object, that has anything to do with that command.
 
@@ -138,9 +135,9 @@ A command can be called on each object, whose class is a parameter of the comman
 
 When you call a command on an object, the call points to the command of an object, but the object is also visible as a parameter of the call.
 
-#### Out of Commands & Classes Loosely Coupled
+### Out of Commands & Classes Loosely Coupled
 
-##### Inactive Command References
+#### Inactive Command References
 
 In the explanations above only command calls were considered, not inactive command references. Inactive command references don’t work the same as calls.
 
@@ -148,7 +145,7 @@ Calls have parameters filled in. Inactive command references don't have paramete
 
 The object of the parameter is not determined yet in an inactive command reference. However, the class of the parameter may be determined after all. Therefore, the parameters in an inactive command references may be tied to a command inside class with a class line.
 
-##### Local Variables
+#### Local Variables
 
 Local variables, as they are called in contemporary programming languages, are a lot like parameters. Unlike parameters, they are private to the command, rather than publicly written or read. Local variables are private contents of a command. Since they can not be publicly set, and you can not determine what object the private variable might hold, the command also can not become part of any arbitrary object of the class of the local variable.  
 So the command might not become part of each object of the class of that local variable, because the object of that local variable can not be freely appointed.

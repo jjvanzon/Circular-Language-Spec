@@ -1,8 +1,5 @@
-﻿Circular Language Construct Drafts | Implementations
-====================================================
-
-Achievability | Loose Ideas
----------------------------
+﻿Construct Drafts | Implementations | Achievability | Loose Ideas
+================================================================
 
 `[ Out of Scope ]`
 

@@ -1,8 +1,5 @@
-﻿Circular Language | Broader View
-================================
-
-Loose Ideas
------------
+﻿Circular Language Broader View | Loose Ideas
+============================================
 
 `[ Preliminary documentation ]`
 
@@ -38,7 +35,7 @@ Many of the coding aspects are just as elementary to computer programming as cod
 
 On top of that: when developing the code base, you might determine how much can be banned out of the code base, and only programmed within Circular itself. As the aspects are described here functionally, it is not as important to determine which ones might be part of the code base and which ones can be left out.
 
-### Loose Ideas
+## Loose Ideas
 
 *The texts below are loose ideas, yet to be turned into good documentation.*
 
@@ -63,7 +60,7 @@ Symbol Roles,
 JJ
 
 
-### Compared to Other Programming Languages
+## Compared to Other Programming Languages
 
 - Looking at the 'Subtext' programming language.
 - "Subtext" implies that this is always possible, but of course underlying procedures could be
@@ -95,7 +92,7 @@ Cache integreert wel al met bestaande grote standaarden, zoals ODBC, XML, SOAP. 
 
 Wat nog steeds wel origineel is, ook ten opzichte van Cache, is de visie om OO ondergeschikt te maken aan het relationele model. In OO - Relational oplossingen wordt in object-relational mapping, OO bovenop relationeel geplaatst. Caché zet de OO benadering ook bovenaan, en de relationele benadering als handig alternatief.
 
-### OO Versus Relational Database
+## OO Versus Relational Database
 
 Ik zie ook beweringen op het internet, dat een OO data benadering geavanceerder is dan relationeel. Maar er zijn voordelen aan relationeel, waar dan niet meer over gesproken wordt.
 
@@ -105,7 +102,7 @@ Anderen vinden OO bijvoorbeeld het beste, en voegen hier relationeel aan toe, en
 
 Je moet dus echt aansporen dingen in de objectstructuur te embedded en daar met recursie op te lossen, in plaats van EEN moeilijke procedure erlangs schrijven
 
-### Other People’s Software
+## Other People’s Software
 
 Windows doesn't allow shortcuts with the same name in a folder even when the short cuts have different target types.
 
@@ -125,7 +122,7 @@ Ik heb het vermoeden, dat als we alle gegevensverwerkingen via webservices zoude
 
 JJ
 
-### Other Ideas
+## Other Ideas
 
 Circular,
 

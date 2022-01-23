@@ -1,4 +1,4 @@
-﻿Archive | Quick & Dirty Related Classes
+﻿Archive | Quick & Dirty Related Classes 
 =======================================
 
 `[ Deprecated documentation ]`

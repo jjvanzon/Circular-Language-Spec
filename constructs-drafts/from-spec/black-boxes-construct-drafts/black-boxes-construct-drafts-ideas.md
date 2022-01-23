@@ -1,8 +1,5 @@
-﻿Circular Language Construct Drafts | From Spec
-==============================================
-
-Black Boxes Construct Drafts Ideas
-----------------------------------
+﻿Construct Drafts | From Spec | Black Boxes Construct Drafts Ideas
+=================================================================
 
 `[ Preliminary documentation ]`
 
@@ -33,7 +30,7 @@ __Contents__
     - [Uses of Access Controlling System Aspects](#uses-of-access-controlling-system-aspects)
     - [Other Details](#other-details-1)
 
-### Misc Issues
+## Misc Issues
 
 In previous projects the main articles about black boxing were finished, but other subjects were left unfinished. This article contains the unfinished material of some of these topics.
 
@@ -45,7 +42,7 @@ This article contains texts and loose ideas about the following topics:
 
 As said, the texts about these subjects are not finished yet.
 
-#### Deeper Exclusion
+### Deeper Exclusion
 
 Apart from controlling access to the type’s own commands, a type can also control publicity of commands *of its children*. That way you can publish a child, but make some of its public commands inaccessible outside the parent. This way you can also exclude members of a base type. A parent can’t make a child’s command inaccessible to the child itself; it’s the child’s own commands.
 
@@ -126,7 +123,7 @@ Exclusion is the primary method for access control. Friends is the method to mak
 
 \> Also cover how a fixed logical residence allows parents to impose a permanent, non-volatile access control. Qualified access to an object without it being a fixed logical residence might not guarantee access control imposed by the qualifiers. But if it is a fixed logical residence, the qualifier is mandatory and you can not go around the access control, that it imposes.
 
-### Side-Issues
+## Side-Issues
 
 In previous projects the main articles about black boxing were finished, but other subjects were left unfinished. This article contains the unfinished material of some of these topics.
 
@@ -137,7 +134,7 @@ This article contains texts and loose ideas about the following topics:
 
 As said, the texts about these subjects are not finished yet.
 
-#### Inclusion
+### Inclusion
 
 Apart from a *decisive* access modifier, you can also give a command a *suggested* access modifier. This means that when you put an object in a type, a command of the object might get its *suggested* access modifier, for instance Private, but if its *decisive* access controller is Public, then you can still upgrade it to Public. This is called *inclusion*. The suggested access modifier is always set to less accessible than the decisive one. A type can also give suggested access modifiers to commands of deeper objects.
 
@@ -145,13 +142,13 @@ Apart from a *decisive* access modifier, you can also give a command a *suggeste
 
 \> 2009-07-06: Inclusion might only be useful for programmers. But programmers get automatic friend access, so real, exclusive access control is already the suggestion and everything can still be included, so it might be an unuseful concept.
 
-### May Cover Last
+## May Cover Last
 
 In previous projects the main articles about black boxing were finished, but other subjects were left unfinished. This article contains some unfinished material. The topics are considered of lesser importance, compared to even other topics, that were not finished.
 
 Some of the topics might be deleted and others might not.
 
-#### Downsides to Black Boxes
+### Downsides to Black Boxes
 
 Data protection might not really have a downside.  
 Complexity hiding, though has a downside.  
@@ -165,7 +162,7 @@ There are methods to overcome this though. It is not concrete yet, but the inner
 
 < ... >
 
-#### Get For Access and Get For Copy
+### Get For Access and Get For Copy
 
 Access can be controlled for regular commands this way. You can also control access to system commands. When you make an object Private, you’re in fact making its Object Get command private (which can even get different separate access controllers for Access and Copy, ~~Run Time~~ Copy ~~and Design Time Copy~~).
 - \> 2009-06-29: The difference between design-time and run-time is gone in Circular. There is only differentiation between program authors and users through user access control.
@@ -176,13 +173,13 @@ There might be a separation between access controlling Get for Access and Get fo
 
 < There are also situations in which you want to disallow copying an object reference to an argument, but only allow consult of the argument. (that’s access control of system commands, actually) >
 
-#### Inaccessible System Aspects
+### Inaccessible System Aspects
 
 What if you want an aspect to be inaccessible to even friend objects. Then the only one able to access those aspects is a programmer... That is strange... giving nothing in the system access to something, but still the programmer can access it. That is weird.
 
 Let’s stick to the plan where either everything is accessible or a selection of thing is accessible.
 
-#### Compared to Traditional Black Boxing
+### Compared to Traditional Black Boxing
 
 I already did compare it too much to other systems, but for a proper explanation it is important to draw that comparison to regular OO. So in that case it is allowed to draw a comparison (it is a rule not to go on and on comparing Circular to other systems...)
 
@@ -301,7 +298,7 @@ Classes giving commands access to their private contents formally is a form of a
 
 JJ
 
-##### Brainstorm
+#### Brainstorm
 
 In traditional black boxing in object oriented programming an object had commands and each private member of that object was accessible inside that command.
 
@@ -339,11 +336,11 @@ In the third situation a command gets access to another command’s private cont
 I am not sure what you are supposed to do with getting access to the private members of a command... but in the simple setting it should be possible.  
 However, to prevent circular creation of command calls on (indirect) recursive calls, in the commands topic it was decided to only create a command’s private contents, just when it is running. So in that setting there is no point to the situation where a command gets befriended.
 
-##### Other Brainstorm Items
+#### Other Brainstorm Items
 
 The complexity hiding aspect is clearly expresses the black boxing concept in the diagram. It is the hiding aspect that makes the black boxing, not the inside-or-outside aspect.
 
-##### Using command symbols
+#### Using command symbols
 
 < Cover ~all (?) the notations when one of them is a command symbol? It is to point out how it might look in the traditional approach where commands are friends with their class... >
 
@@ -382,7 +379,7 @@ So that makes you able to access control being able to call a command, so basica
 
 JJ
 
-#### Other Details
+### Other Details
 
 Friends can always pass a reference to a private object after all. Such 'betrayal' by friends is allowed. The friends are the protectors. If they choose not to protect, than that's THEIR choice. No problem.
 - \> 2009-07-02 It’s a detail.
@@ -415,11 +412,11 @@ Or befriend to a specific reference to a command.
 
 If you can object-protect the data aspect and the parent applies exclusion to the data aspect, then you have it, that data is accessible on the inside, but not on the outside... do you all of a sudden have that literal inside-outside access control back then?
 
-### Might Not Cover
+## Might Not Cover
 
 These topics are considered of such less importance, that they eventually might be deleted. This is because they might introduce discussion where no discussion is required. And that introduces confusion.
 
-#### Access Modifier Get & Set
+### Access Modifier Get & Set
 
 Interesting new system commands:
 
@@ -431,7 +428,7 @@ controlling the access modifier?
 But what modifies the access to the access modifier system commands?  
 \> Details...
 
-##### Changing Access Modifiers at Run Time
+#### Changing Access Modifiers at Run Time
 
 Being able to change access modifiers at run time may be interesting. That way you can for instance change the interface of an object dependent on its settings. Changing a command’s access modifier is done by calling the command’s Access Modifier Set system command. There’s also an Access Modifier Get command to obtain the access modifier. This adds two system commands to a square:
 
@@ -446,15 +443,15 @@ A single commands can have several access modifiers so there are multiple access
 
 If the access modifier isn’t variable at run time, then the type defines a fixed access modifier. If the access modifier *is* variable at run time then the access modifier can be different for each instance of the type.
 
-##### Changing ‘can be’ class, interface or object
+#### Changing ‘can be’ class, interface or object
 
 System commands for changing access control to ‘can be’ class, interface or object.
 
-#### Grouped Access Control
+### Grouped Access Control
 
 Using triangles to group members with equal access controllers. As with exclusion, the access controller of the triangle limits access again. It won’t make things *more* accessible.
 
-#### Conditional Access Control
+### Conditional Access Control
 
 Replace the protected keyword by a concept like ‘when being a triangle’:
 Basically you can optionally totally redefine the access for the case when the type is a used as a triangle.
@@ -467,7 +464,7 @@ Or perhaps I am looking too much for systematics behind it.
 
 Perhaps the base of Use-As access control should (eventually) be based on conditional access control. But for now it can be limited to the conceptual explanation of the most usable things.
 
-#### Delayed Creation of Object’s Private Contents
+### Delayed Creation of Object’s Private Contents
 
 Public & Private,  
 2008-08-16
@@ -478,7 +475,7 @@ But this is such an influential implication, that it needs to be covered elsewhe
 
 JJ
 
-#### Access Symbols And Accesses
+### Access Symbols And Accesses
 
 < Just find an appropriate time to mention that each access symbol represents an access, but that it’s also used to denote direction, simply because direction can be read from it >
 
@@ -506,7 +503,7 @@ Each line that is crossed is a separate access. That is probably why I wanted to
 
 JJ
 
-#### Access Controller Parts
+### Access Controller Parts
 
 In one access controller you can use an __exclusion access controller__, an `object level restriction` and a *module level restriction*:
 
@@ -518,14 +515,14 @@ Access controllers as such are not usual, though and *if* you use them, they’r
 
 \> 2009-06-29: So basically this brainstorm item is about how an access controller can consist of different elements: each aspect is represented only once.
 
-#### Uses of Access Controlling System Aspects
+### Uses of Access Controlling System Aspects
 
 An object symbol’s Object Get command might be accessible to make you able to access its sub-object. 
 
 Exclusion of Set commands controls who can set a symbol’s lines. Exclusion of Get commands controls who can get information about lines or who can access the object.
 - \> 2009-07-06: Or who can use the object as line source.
 
-#### Other Details
+### Other Details
 
 < Give a story about the true meaning of an access symbol that denotes direction. That it is a syntactically correct access symbol. Access symbols can used to denote direction, because access symbols *can* point out direction. >
 

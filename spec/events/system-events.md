@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Events
-===============================
+﻿Events | System Events
+======================
 
 [back](./)
-
-System Events
--------------
 
 `[ Preliminary documentation ]`
 
@@ -23,7 +20,7 @@ __Contents__
 - [System Event Parameters](#system-event-parameters)
 - [System Event Design Choices](#system-event-design-choices)
 
-### Introduction
+## Introduction
 
 Without even defining any objects or class libraries, there are already a lot of standard events you can use. In most situations these might suffice.
 
@@ -37,7 +34,7 @@ Any other event of a call to a system command, such as __Add__, __Remove__ and _
 
 Below is an overview of all events that derive from this concept. This results in a big list of standard events, varying in aspect, read/write direction and the before and after events. Something to denote is that __Changed__ events are the ones most commonly used.
 
-#### Changed Events
+### Changed Events
 
 - __Value Changed__
 - __Object Changed__
@@ -48,7 +45,7 @@ Below is an overview of all events that derive from this concept. This results i
 - __Interface Merged Changed__
 - __Clone Written__
 
-#### Changing Events
+### Changing Events
 
 - __Value Changing__
 - __Object Changing__
@@ -59,7 +56,7 @@ Below is an overview of all events that derive from this concept. This results i
 - __Interface Merged Changing__
 - __Writing Clone__
 
-#### Get Events
+### Get Events
 
 - __Getting Reference__
 - __Reference Gotten__
@@ -84,7 +81,7 @@ Below is an overview of all events that derive from this concept. This results i
 - __Getting Interface Merged__
 - __Interface Merged Gotten__
 
-#### Use Events
+### Use Events
 
 - __Reference Used As Object__
 - __Using Reference As Object__
@@ -97,7 +94,7 @@ Below is an overview of all events that derive from this concept. This results i
 - __Using Reference As Interface__
 - __Reference Used As Interface__
 
-#### List Events
+### List Events
 
 - __Added__ (used more)
 - __Adding__ (used less)
@@ -106,7 +103,7 @@ Below is an overview of all events that derive from this concept. This results i
 - __Storage Count Changed__
 - __Storage Count Changing__
 
-#### Execution & Existence Events
+### Execution & Existence Events
 
 - __Executed__
 - __Executing__
@@ -115,11 +112,11 @@ Below is an overview of all events that derive from this concept. This results i
 - __Annulled__
 - __Annulling__
 
-#### Pointer to Pointer Events
+### Pointer to Pointer Events
 
 Perhaps the different overloads for pointer-to-pointer situations should have separate events as well, but this depends on design choices and this issue might be left open for now.
 
-### System Events in Normal Notation
+## System Events in Normal Notation
 
 System can be displayed with the normal event notation, examples of which you might find below.
 
@@ -127,7 +124,7 @@ System can be displayed with the normal event notation, examples of which you mi
 
 ![](images/2.%20System%20Events.001b.png)
 
-### Simplified System Event Notation
+## Simplified System Event Notation
 
 System events can also be displayed using a simpler notation that uses line types to denote the aspect, and leaves out the aspect out of the displayed event name.
 
@@ -241,7 +238,7 @@ __Existence Aspect__
 
 Some aspects have no associated line type, so they are not shown with a simplified notation, but with the normal notation. The above are the connectors, but the actual event commands look almost the same, but then without the loose end at the top.
 
-### System Event Parameters
+## System Event Parameters
 
 System events have parameters. First of all they have the __This__ parameter, which identifies which object something’s happening to.
 
@@ -283,7 +280,7 @@ Possibly a __Changed__ event might also contain the __Previous Value__ parameter
 
 In the earlier introduced connector notation, parameters are not shown. But the parameters *are* shown in the event *implementations*.
 
-### System Event Design Choices
+## System Event Design Choices
 
 The names used for the events might not be the eventual names. For instance a more simplified design might simply let all system commands have a __Executing__ and __Executed__ event, instead of inventing different names for the different events, so that __Value Changed__ is named __Value Set . Executed__. In another design choice you might not call it the __Executing__ and __Executed__ event, but the __Before__ and __After__ event, or the __Happening__ and __Happened__ events, or the __Pre-Extension__ and __Post-Extension__ events.
 

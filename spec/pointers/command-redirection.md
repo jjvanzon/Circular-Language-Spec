@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Pointers
-=================================
+﻿Pointers | Command Redirection
+==============================
 
 [back](./)
-
-Command Redirection
--------------------
 
 `[ Preliminary documentation ]`
 
@@ -35,7 +32,7 @@ __Contents__
         - [Execution-Definition Trace](#execution-definition-trace)
 - [Loose Ideas about Recursion](#loose-ideas-about-recursion)
 
-### Inactive Command Object Redirection
+## Inactive Command Object Redirection
 
 An inactive command object redirection makes an inactive command symbol a command reference.
 
@@ -51,7 +48,7 @@ Symbol __B__ could also be replaced by a diamond, because inactive pointers to a
 
 ![](images/4.%20Command%20Redirection.002.png)
 
-### Inactive Command Class Redirection
+## Inactive Command Class Redirection
 
 Inactive command class redirection is less common than inactive command object redirection. Inactive command *object* redirection is a reference to a command definition. Inactive command *class* redirection creates a new command definition for which another command is the prototype. 
 
@@ -63,7 +60,7 @@ An inactive command class redirection can also point to an active command, makin
 
 Do remember, that the new prototype can *not* be executed by pointing to it with an active command reference, because the new prototype is a new *inactive* command object, and an inactive command object can not be executed.
 
-#### Diagram
+### Diagram
 
 ![](images/4.%20Command%20Redirection.003.png)
 
@@ -73,9 +70,9 @@ Symbol __B__ could also be replaced by a diamond, making an *executable* command
 
 ![](images/4.%20Command%20Redirection.004.png)
 
-### Executable Command Class Redirection in a Diagram
+## Executable Command Class Redirection in a Diagram
 
-#### Concept
+### Concept
 
 If an executable command redirects its class, then it is a command call. The class redirection points to the command definition of the command call.
 
@@ -83,7 +80,7 @@ If an executable command *might not have* a class redirection, then it defines i
 
 You could let an executable command redirect its definition to another executable command, but this is far less common. But an active command *can* function as the prototype for another executable command.
 
-#### Diagram
+### Diagram
 
 Executable command class redirection is explained in the article *Executable Command Class Redirection*. The current article demonstrates the concept in a diagram.
 
@@ -97,7 +94,7 @@ You could let an executable command redirect its definition to another executabl
 
 ![](images/4.%20Command%20Redirection.006.png)
 
-### Executable Command Object Redirection
+## Executable Command Object Redirection
 
 An executable command, that redirects to another executable command, is a reference to a command that could run, or could be running. Say you run the command on a site and you want to navigate away from the site, but keep a reference to it in your user object, that points to a process running on a site somewhere, and take along the reference anywhere you go on the internet.
 
@@ -105,7 +102,7 @@ Executable command object redirection is less common than inactive command objec
 
 You can also object redirect an executable command to an inactive command. If the final target of the object redirections is an inactive command, then you can not run that inexecutable command object through an active reference to it. It is kind of pointless to point to an inactive command object through an executable command reference, so it is very uncommon.
 
-#### Diagram
+### Diagram
 
 The concept of execution object redirection is explained in the article *Execution Object Redirection*. The current article explains its expression in a diagram.
 
@@ -119,13 +116,13 @@ You can also have an active reference to an inactive command:
 
 But this situation is very uncommon. You can not run command __B__ through symbol __A__, because an inactive command object can never be run.
 
-### Target Command Object
+## Target Command Object
 
 A command reference can point to another command reference, which points to another command reference and so on. The first command found in this redirection, that might not refer to another command again, is called the *target command object*. Even though any of the command *references* can be used like it is the command object itself, the *target command object* is considered the real command object and not just a reference to it.
 
 The term target command is also used to denote the direct reference target, not necessarily the final target. What kind of target is denoted, might be clear from the context.
 
-#### Diagram
+### Diagram
 
 The target command object is the last point in a string of object redirections of command symbols.
 
@@ -133,7 +130,7 @@ The target command object is the last point in a string of object redirections o
 
 Symbol __A__ is an active command reference to symbol __B__. Symbol __B__ is an inactive command reference to symbol __C__. Symbol __C__ is the target command object of both symbols __A__ and __B__. Symbol __C__ represents the command object itself.
 
-### Target Command Definition
+## Target Command Definition
 
 A target command definition is completely analogous to a *target class*.
 
@@ -141,7 +138,7 @@ A target command definition is found by following the redirections, that lead to
 
 When you want to find the definition of a command, and the command is actually a command reference, you first need to follow all object reference redirections, to find the target command object. When you found the target command object, you can find the target command definition, by following one class redirection. Do not follow more than one class redirection, because if a definition points out a definition again, then the second definition is *another* command object, that the first definition is just *based* on. If the definition is a command reference itself, you might follow all object redirections to find the target *definition* object. Then you have found the target command definition. That’s where redirection following ends. If the definition object has a definition itself, you might be tempted to follow the definition object’s class redirections as well, to find the final target definition, but you should not do that. If a definition object has a definition itself, then the definition object is only based on another definition, but it *is* an object of its own. An object redirection is just a much tighter bond like that, than a class redirection.
 
-#### Diagram
+### Diagram
 
 To find the target definition, you first follow *all* the object redirections, then *one* class redirection, then *all* the object redirections and there it ends.
 
@@ -157,9 +154,9 @@ The target definition of the first object reference is the symbol __Command Defi
 
 ![](images/4.%20Command%20Redirection.012.png)
 
-### Recursion
+## Recursion
 
-#### Concept
+### Concept
 
 Recursion in commands happens when a command contains a call to the same command definition again.
 
@@ -179,7 +176,7 @@ Only when the call actually executes, you can see private contents inside the re
 
 So only creating private content just before a command actually executes solves the problem of endless recursion.
 
-#### Diagram
+### Diagram
 
 Recursion in commands happens when a command contains a call to the same command definition again.
 
@@ -231,13 +228,13 @@ The call on the right might be executing, but its call inside the __then__ claus
 
 Yes, there are a lot of class lines, but each separate call has a separate class line to the right definition. If there is a recursive command running, then each execution of the same command has a separate execution symbol, because there might be an execution contained in an execution, contained in an execution, etcetera.
 
-### Loose Ideas about Command Redirection
+## Loose Ideas about Command Redirection
 
-#### Ideas (about Target Command Object)
+### Ideas (about Target Command Object)
 
 (Out of the original Symbol documentation)
 
-##### Execution Trace
+#### Execution Trace
 
 To find the execution you do the following.
 
@@ -247,7 +244,7 @@ What you do is that you follow reference lines until you encounter a symbol with
 
 Tracing the execution target only seems to be relevant when the source symbol is a diamond. It usually is. Usually you’ll only do this trace for a diamond. However, the target execution is also relevant for a square, because if a square’s redirection has a diamond in it, any call to the square is a call to the same execution.
 
-##### Tracing Command Aspects
+#### Tracing Command Aspects
 
 Even though there are only *two* line types for command symbols, there are *three* aspects of a command symbol to trace:
 
@@ -257,7 +254,7 @@ Even though there are only *two* line types for command symbols, there are *thre
 
 A definition is a lot like the type of the command, while an execution is an instance of the command.
 
-###### Redirecting to an Execution
+##### Redirecting to an Execution
 
 A lot of times you might redirect an execution, but you won’t redirect *to* an execution.
 
@@ -269,22 +266,22 @@ By redirecting to an execution, it is possible for multiple symbols to represent
 
 Also note that when redirecting to an execution, the definition is always the same execution.
 
-#### Ideas (about Target Command Definition)
+### Ideas (about Target Command Definition)
 
 (Out of the original Symbol documentation)
 
-##### Definition Trace
+#### Definition Trace
 
 The definition trace is quite easy: follow reference lines until you bump into a symbol without a reference line. That symbol’s the definition
 
 ![](images/4.%20Command%20Redirection.025.jpeg)
 
-##### Execution-Definition Trace
+#### Execution-Definition Trace
 
 Just as with the object-type trace, the execution trace requires you to find the definition anyway, so when you need both, the execution trace might suffice. It’s called a *execution-definition trace* when you use an execution trace to find both execution and definition.
 
 
-### Loose Ideas about Recursion
+## Loose Ideas about Recursion
 
 (Out of the original Symbol documentation)
 

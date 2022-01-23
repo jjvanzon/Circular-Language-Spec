@@ -1,8 +1,5 @@
-Circular Language Construct Drafts | Implementations
-====================================================
-
-Achievability | Brainstorm
----------------------------
+Construct Drafts | Implementations | Achievability | Brainstorm
+===============================================================
 
 `[ Out of Scope ]`
 

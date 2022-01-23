@@ -1,20 +1,17 @@
-﻿Circular Language Spec | Object Resolution
-==========================================
+﻿Object Resolution | Overloading
+===============================
 
 [back](./)
-
-Overloading
------------
 
 `[ Preliminary documentation ]`
 
 - Overloading names of related classes, disambiguating by class.
 
-### Loose Ideas
+## Loose Ideas
 
 *These were moved here from the Projects documentation, to the System documentation, to integrate them with the System documentation. Remaining ideas should be moved back to the Projects documentation after that. The Projects documentation is where Ideas belong.*
 
-#### Overloading
+### Overloading
 
 Als je eindigt met het data type te noemen, krijg je zo'n notatie:
 
@@ -52,6 +49,6 @@ En is de declaratie slechts de identificatie zoals het menselijk ook dat wil zie
 
 JJ
 
-#### Out of the original Symbol documentation
+### Out of the original Symbol documentation
 
 In J Code you could do overloading in which anything of the declaration can differ. If you use named arguments than you can do same parameter types. You can link to any symbol anyway, so it might be just a matter of what you see in text code.

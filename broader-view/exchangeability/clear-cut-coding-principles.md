@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Exchangeability
-================================================
-
-Clear Cut Coding Principles
----------------------------
+﻿Circular Language Broader View | Exchangeability | Clear Cut Coding Principles
+============================================================
 
 `[ Preliminary documentation ]`
 

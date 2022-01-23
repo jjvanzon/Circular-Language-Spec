@@ -1,8 +1,5 @@
-Circular Language | Construct Drafts
-====================================
-
-Commands Construct Drafts Articles
-----------------------------------
+Construct Drafts | Commands Construct Drafts Articles
+=====================================================
 
 `[ Preliminary documentation ]`
 

@@ -1,10 +1,7 @@
-﻿Circular Language Construct Drafts | Text Code
-==============================================
+﻿Construct Drafts | Text Code | Omitted Identifier
+=================================================
 
 `[ Deprecated documentation ]`
-
-Omitted Identifier
-------------------
 
 Text code might not be leading in Circular. The connections between elements of a system are leading, and even the expression in a diagram is more leading than text code.
 

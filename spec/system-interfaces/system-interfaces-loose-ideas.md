@@ -1,10 +1,7 @@
-﻿Circular Language Spec | System Interfaces
-==========================================
+﻿System Interfaces | Loose Ideas
+===============================
 
 [back](./)
-
-Loose Ideas
------------
 
 `[ Preliminary documentation ]`
 
@@ -48,7 +45,7 @@ __Contents__
 - [Create Argument and Call Argument’s Members](#create-argument-and-call-arguments-members)
 - [Other Ideas](#other-ideas)
 
-### More Commands & Aspects
+## More Commands & Aspects
 
 Final targets,  
 2004
@@ -296,7 +293,7 @@ JJ
 
 I forgot that a __Related List__ also has the __Name__ aspect.
 
-### Extension of System Commands
+## Extension of System Commands
 
 The Get usually returns system information. The Set usually changes a line target normally. However, as a programmer you can also decide for yourself what’s the effect of a Get or a Set.  You can totally redefine the Get and Set commands of a symbol. With that you can also add parameters to the Get and Set commands. So you’re able to decide yourself which symbol to return on a Get and which symbol to assign on a Set. You can also for instance see to it that on a Set call, the change is applied to all sorts of things, by starting commands that apply the new value. When setting an object’s state, for instance, you can automatically apply its new state to other objects, for instance when you need to draw a text on screen every time a value changes. You can’t redefine *all* system commands. For instance the effect of Target Object Get might stay consistent and can not be customized. And also Symbol Get always needs to return the symbol itself. You can only redefine the Object, Type, Interface and State Gets and Sets.
 
@@ -335,13 +332,13 @@ The Object, Type, Interface and State’s Gets and Sets can be redefined by fill
 
 JJ
 
-### Extend Connectors and Connections
+## Extend Connectors and Connections
 
 The Connectors and the Connections articles might be extended, because they are supposed to express every system command call as a connector or connection, but they don’t.
 
-### System Objects
+## System Objects
 
-#### Parent Contains References to Sub-Objects
+### Parent Contains References to Sub-Objects
 
 A relation to another object is part of the parent object. A parent object is a real object. Its related item is not a real object, but a *pointer* to an object. The system interface of a related item determines which object the parent might refer to.
 
@@ -353,7 +350,7 @@ The related item system object is bound to the *parent* of the related item, not
 
 A *related item* represents an object in relation to an another object.
 
-#### Pointer-to-Pointer
+### Pointer-to-Pointer
 
 Pointing to another parent’s related item, means that the *other* parent has control over the eventual target pointed at. This is exactly what a pointer to pointer is applied for: giving another parent control over the eventual target pointed at.
 
@@ -363,7 +360,7 @@ Synonyms for pointers to pointers are:
 - Related item pointing to another related item
 - Reference to an object reference
 
-#### Multiple Redirection
+### Multiple Redirection
 
 When a related item points to a related item, that related item can again point to a related item, and so on.
 
@@ -374,13 +371,13 @@ That’s how you create multiple pointer redirections.
 So __Parent 1__ delegates its sub-object to __Parent 2__, granting __Parent 2__ control over the eventual target pointed at, which __Parent 2__ might, by deciding the eventual target is a related item inside __Parent 3__.  
 __Parent 1__ gives __Parent 2__ control the eventual target pointed at.
 
-#### Other Related Item
+### Other Related Item
 
 Because the contents of the target object are probably not visible in the diagram, when the system interface is opened, the target of the related item might be connected to the __Other Related Item  .  ID__ or __Other Related List Item  .  ID__ of the system interface:
 
 ![](images/7.%20System%20Objects%20Ideas.003.png)
 
-#### System Objects
+### System Objects
 
 A *related list item* is a system object. A related list item is contained by a list, that is contained by a parent object.
 
@@ -397,7 +394,7 @@ You can’t always display all items in the list, if there are too many. You mig
 
 JJ
 
-### Qualifiers
+## Qualifiers
 
 Vraag 1:
 Waar en hoe worden line targets opgeslagen?
@@ -411,7 +408,7 @@ Waar en hoe worden line targets opgeslagen?
 Dus krijgt elk zichtbaar symbool toch een nummer?  
 Ondanks dat systematiek opgeslagen is in de object klasse van de module klasse?
 
-### System Interface Notation
+## System Interface Notation
 
 System Interfaces,  
 2009-08-31
@@ -422,7 +419,7 @@ Notation of the system interface *can* go together with the regular contents of 
 
 JJ
 
-### Code Base Objects
+## Code Base Objects
 
 Because commands have system commands themselves, you’d think that an system command also has an system command. That one isn’t true. System commands don’t have system commands themselves.
 
@@ -435,7 +432,7 @@ If you see the system interface as an object, though, you can regard the system 
 
 JJ
 
-### Preliminariness of System Interface Notation
+## Preliminariness of System Interface Notation
 
 aspect as sub-object implementation.
 
@@ -453,7 +450,7 @@ Other possibility:
 
 ![](images/7.%20System%20Objects%20Ideas.008.png)
 
-### Form
+## Form
 
 - A lot of the times it is interesting to introduce the diagram almost immediately. And most of the times the diagram is quite self-explanatory and might not require sentences, such as: "The system member Add is part of the system interface of a related list and is displayed in a diagram as follows:"
 
@@ -477,7 +474,7 @@ Other possibility:
 
 - Move explicit notations further down below
 
-### Phrases
+## Phrases
 
 sometimes there are multiple variations for system commands in order to separately access control them for different situations.
 
@@ -494,7 +491,7 @@ The combination of a Get and a Set as such is called an *assignment*.
 
 JJ
 
-### Naming
+## Naming
 
 Why do I call them Object Get and Object Set? Is that proper English...? Why don't I call then Get Object and Set Object?
 Probably because I want to mention the aspect first?
@@ -512,11 +509,11 @@ Object of class zou aan een gebruiker ook kunnen worden uitgelegd als 'context'.
 
 JJ
 
-### Working methods
+## Working methods
 
 The System Commands articles may be further extended with details and more exact descriptions, possibly coming out of other material.
 
-### Details
+## Details
 
 System Interfaces,  
 2004
@@ -562,7 +559,7 @@ Nice phrase:
 
 JJ
 
-#### Command with Return Value versus Object with Get Command
+### Command with Return Value versus Object with Get Command
 
 < The exchangeability of method and object notation >
 < You CAN display a method as an object. You’d then display it as its return value(s) >
@@ -590,7 +587,7 @@ If you regard something a property, which you often might, the primary represent
 Conversely, a command can apart from it’s usual representation, be represented as the object that it returns.
 - \> 2009-06-28: Then you might just make it an object symbol and implement the object get system command.
 
-#### Object = Collection?
+### Object = Collection?
 
 System Interfaces,  
 2009-04-08
@@ -607,7 +604,7 @@ I might think that over once.
 
 JJ
 
-#### Object Target Reference = Value??
+### Object Target Reference = Value??
 
 System Interfaces,  
 2009-08-31
@@ -616,7 +613,7 @@ Internally, an aspect such as Object is stored as the ID of the object, which is
 
 JJ
 
-#### Design Time = Run Time
+### Design Time = Run Time
 
 System Interfaces / Design Time = Run Time,  
 2009-08-31
@@ -627,7 +624,7 @@ Typical design type aspects:
 
 JJ
 
-### Assignment Ideas
+## Assignment Ideas
 
 Assignment,  
 2008-07-03
@@ -664,9 +661,9 @@ A related item can point to a =>1 related item contained by another parent or to
 
 JJ
 
-#### Integrate these Sections
+### Integrate these Sections
 
-##### Value Direction
+#### Value Direction
 
 Read-write direction is something so basic in Circular, that it has a separate line type. Value direction is indicated by a *wavy line*.
 
@@ -680,7 +677,7 @@ A read of an output parameter is always accompanied by a write to another object
 
 - \> Actually, writing is not the only purpose a read can have. You can also read for access, apart from read for assignment, but this might be thought through later.
 
-##### Clone
+#### Clone
 
 For more complex objects, value direction can mean an object might be cloned up until a certain cloning depth. When the values of an object are cloned up until a certain depth, no references to original objects might be taken over by the clone. Clones like that never have references to existing objects, but always contain entirely new objects or object references that are __Nothing__.
 
@@ -711,7 +708,7 @@ Here are examples of expression of value cloning access connectors:
 
 ![](images/7.%20System%20Objects%20Ideas.015.png)
 
-#### More Ideas
+### More Ideas
 
 Assignment,  
 2008-08
@@ -736,9 +733,9 @@ Command __A__ is called, and its __Reference In__ parameter __O__ is assigned th
 
 JJ
 
-#### From the original Symbol documentation
+### From the original Symbol documentation
 
-##### Assignment
+#### Assignment
 
 Before I explain using arguments, I might introduce another basic concept: *assignment*. I might explain it, because to use input arguments you might *assign* a values to it. Likewise, to retain output arguments, you might *assign* the output values to other objects.
 
@@ -816,7 +813,7 @@ State assignment is the most basic assignment. Line assignment is based on it. A
 
 You can work with the *type* and *interface* lines the same way: there’s also type assignment and interface assignment. Likewise, you can work with line assignments for *command symbols*. However, I’ll mostly talk about state and object assignment.
 
-##### Distinguishing Assignment Source and Target
+#### Distinguishing Assignment Source and Target
 
 There’s one more ambiguity in argument access that I might resolve here. In an assignment call in diagram as follows:
 
@@ -847,7 +844,7 @@ Direction can be determined by assumption of the most common situation. Therefor
 
 For state assignments it’s advised to always show the access symbol. 
 
-##### Forming New Subdivision
+#### Forming New Subdivision
 
 These seem fragments of an attempt to re-subdivide topics formerly inside the original Symbol documentation from 2004.
 
@@ -870,7 +867,7 @@ These seem fragments of an attempt to re-subdivide topics formerly inside the or
     - Use the simple notation
     - ~ State assignment is the basic assignment
 
-### Enumeration of Attributes
+## Enumeration of Attributes
 
 A symbol might simply become an attribute depending on its characteristics. Attributes might be spread around an object’s list of related items. (See Attributes in the Objects chapter.)
 
@@ -878,11 +875,11 @@ A symbol might simply become an attribute depending on its characteristics. Attr
 
 An object might return a list of `just` its attributes, `instead` of `just all` related objects.
 
-### Writing Arguments
+## Writing Arguments
 
 An assignment as such, requires you to get a value from one place and set the argument to it. So writing an argument actually requires both a __Get__ and a __Set__. The fact that it’s the argument that’s __Set__ makes it writing *the argument*.
 
-### Create Argument and Call Argument’s Members
+## Create Argument and Call Argument’s Members
 
 `<< system interfaces >>`
 
@@ -914,7 +911,7 @@ In diagram code, the declaration of the object, its creation and its being passe
 
 ![](images/7.%20Commands%20Ideas.057.jpeg)
 
-### Other Ideas
+## Other Ideas
 
 Alternative Assignments in a Diagram,  
 2008-07-26

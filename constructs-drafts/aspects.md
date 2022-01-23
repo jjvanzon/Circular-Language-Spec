@@ -1,8 +1,5 @@
-﻿Circular Language | Construct Drafts
-====================================
-
-Aspects
---------
+﻿Construct Drafts | Aspects
+==========================
 
 `[ Preliminary documentation ]`
 
@@ -14,11 +11,11 @@ __Contents__
     - [Aspects & Principles](#aspects--principles)
     - [More Ideas](#more-ideas)
 
-### Loose Ideas
+## Loose Ideas
 
 *This is unfinished documentation of possibly lower quality. It only has unfinished descriptions and loose ideas.*
 
-#### Aspects
+### Aspects
 
 The *aspect* construct might become important in Circular, only it might not be implemented yet in future experiment 3.0. However, experiment 3.0 might be implemented in a way that the aspects construct might be added to it later. Aspects might be useful enough to do this. In order to feel comfortable about this, I might like to know more about aspects, so I might work out a preliminary, brainstorm-style design here.
 
@@ -62,7 +59,7 @@ I have an adequate brainstorm here about how things should be and I am confident
 
 P.S.: Aspects can probably also have their own code, that might not really extend other objects, but is called upon by other objects. However that might be implemented, this might not be a problem.
 
-#### Loose Ideas
+### Loose Ideas
 
 An aspect not only can extend an item, but can also extend a class definition.  
 Preferably keep the extension an aspect imposes under a subobject. Don’t merge the aspect into the rest of the item.
@@ -160,7 +157,7 @@ Aspects are about extension.
 
 JJ
 
-#### Aspects & Principles
+### Aspects & Principles
 
 An aspect is a piece of software that can be applied to *any* existing object or system. A clear characteristic of it is that it operates using the reflective data of an object or system. This makes it possible for features of software that might otherwise be intrinsic to the program, to be plugged into any existing system.
 
@@ -179,7 +176,7 @@ and how they should be expressed in diagram code.
 
 But I still need something to make extend the language with aspects that alter access, in the ways required.
 
-#### More Ideas
+### More Ideas
 
 Aspects / aspects,  
 2008-12-24 

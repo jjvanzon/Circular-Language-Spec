@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Object Resolution
-==========================================
+﻿Object Resolution | Default Member
+==================================
 
 [back](./)
-
-Default Member
---------------
 
 `[ Preliminary documentation ]`
 

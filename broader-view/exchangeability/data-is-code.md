@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Exchangeability
-================================================
-
-Data = Code
------------
+﻿Circular Language Broader View | Exchangeability | Data = Code
+============================================
 
 `[ Preliminary documentation ]`
 

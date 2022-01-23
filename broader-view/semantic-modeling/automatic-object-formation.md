@@ -1,8 +1,5 @@
-﻿Circular Language | Broader View
-================================
-
-Automatic Object Formation
---------------------------
+﻿Circular Language Broader View | Automatic Object Formation
+===========================================================
 
 `[ Preliminary documentation ]`
 

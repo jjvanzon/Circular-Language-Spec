@@ -1,12 +1,9 @@
-Circular Language Broader View | Expression
-===========================================
-
-Expression Mixing
------------------
+Circular Language Broader View | Expression | Expression Mixing
+===============================================================
 
 `[ Preliminary documentation ]`
 
-### Loose Ideas
+## Loose Ideas
 
 Next to different expressions being able to replace each other,
 the different media in which to express data and code can also

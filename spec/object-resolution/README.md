@@ -1,10 +1,7 @@
-Circular Language Spec
-======================
+Object Resolution Articles
+==========================
 
 [back](../..)
-
-Object Resolution Articles
---------------------------
 
 Might shed light on a group of topics that may be called *object resolution* (which might include overload resolution).
 

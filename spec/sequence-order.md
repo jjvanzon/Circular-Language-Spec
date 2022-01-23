@@ -1,10 +1,7 @@
-﻿Circular Language Spec
-======================
+﻿Sequence Order
+==============
 
 [back](..)
-
-Sequence Order
-------------
 
 `[ Preliminary documentation ]`
 
@@ -15,12 +12,12 @@ __Contents__
 - [Brainstorm](#brainstorm)
 - [Loose Ideas](#loose-ideas)
 
-### Brainstorm
+## Brainstorm
 
 This section is here to augment the functional design of the sequence order concept. Sequence order is not a difficult concept. If objects have a certain sequence order, there are several basic data structures facilitating putting the objects in a certain order. That is not the problem here. The problem with sequence order is the notation. I recall that several notations were proposed, but no definite one was chosen. Actually sequence order is not a problem. It is not like there is no solution for it, it is just that there are too many solutions / too many possible notations. It might indeed be nice to be able to determine the perfect notation.  
 Ordering is positioning, so the best way of expressing ordering objects might seem, to position them in a certain order. The diagram notation is all about expressing systematics with the their most direct depiction possible, so I think the first candidate for expressing sequence order might be through positioning. This may conflict with automatic positioning of diagram elements. So ... then you might see if it might.
 
-### Loose Ideas
+## Loose Ideas
 
 Sequence Order,  
 2008-09-30

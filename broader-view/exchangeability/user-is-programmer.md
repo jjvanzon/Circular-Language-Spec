@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Exchangeability
-================================================
-
-User = Programmer
------------------
+﻿Circular Language Broader View | Exchangeability | User = Programmer
+====================================================================
 
 `[ Preliminary documentation ]`
 
@@ -18,6 +15,6 @@ Some users may find it difficult to use the functions that alter the behavior of
 
 When you make a program for others to use, you don’t want the users to change the behavior of the program. In theory, users could change any part of the program, while they are using it. That’s where access control comes in. In practice, everything you make, is only accessible to you. Then you start selecting parts to make accessible to others. The parts that define the behavior of the program are not accessible to others. Only the part that makes up the usage of the program might be made accessible to others.
 
-### Loose Ideas
+## Loose Ideas
 
 The contents of an object might be arbitrary. Anything might be put inside an object. This might be handy for users, who just want to group objects together into a parent object, `like*` you might group together files in a folder.

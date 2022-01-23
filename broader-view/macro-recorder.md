@@ -1,8 +1,5 @@
-﻿Circular Language | Broader View
-================================
-
-Macro Recorder
---------------
+﻿Circular Language Broader View | Macro Recorder
+===============================================
 
 `[ Preliminary documentation ]`
 

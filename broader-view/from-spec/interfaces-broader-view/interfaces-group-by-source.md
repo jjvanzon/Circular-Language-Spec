@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Interfaces
-===========================================
-
-Group By Source
----------------
+﻿Circular Language Broader View | Interfaces | Group By Source
+=============================================================
 
 `[ Preliminary documentation ]`
 

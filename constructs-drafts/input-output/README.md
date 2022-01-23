@@ -1,8 +1,5 @@
-Circular Language | Construct Drafts
-====================================
-
-Input Output
-------------
+Construct Drafts | Input Output
+===============================
 
 `[ Preliminary documentation ]`
 
@@ -10,35 +7,35 @@ The concept of input and output may be common to programming, yet the concept mi
 
 This documentation might not seem finished up yet. It seems to contains quite some unfinished texts but also some ideas that are perhaps nice, but it might not all seem to be worked out yet. The concept of input and output might be taken further in the future.
 
-- ### In, Out & Thru
+- ## In, Out & Thru
 
     - What might be worked out, is a definition of what input and output is and what different forms of input and output there might be.
 
-- ### [Auto-Determine In, Out & Thru](auto-determine-in-out-thru.md)
+- ## [Auto-Determine In, Out & Thru](auto-determine-in-out-thru.md)
 
     - Explores an idea where the way a parameter is used, could determine whether it might be considered __Input__, __Output__ or __Thruput__. It may be of help once when making for the *Parameters* section in the *Spec*. But for now the idea is parked here.
 
-- ### [Automatic Execution Order & More](automatic-execution-order-and-more.md)
+- ## [Automatic Execution Order & More](automatic-execution-order-and-more.md)
 
     - This document may combine several of these input/output topics. It may once be split up into separate articles.
 
-- ### [Input Output | Loose Ideas](input-output-loose-ideas.md)
+- ## [Input Output | Loose Ideas](input-output-loose-ideas.md)
 
     - Loose ideas about the topic.
 
-- ### Command IO
+- ## Command IO
 
     - In the end, every command may have an input / output definition, that could consist of for instance reads, writes, additions and removals of data. This might not define *exactly* what the command might do, but might define what data is affected and what data is used. Users might then be directly able to see what the input and output of a program or command might be and this may offer better security, if the user can see the input / output effect of what they may be about to run. You might further secure the system if you could allow a command to only access data, that it says it needs to access, so nothing funky might run inside a program. This definition of input and output of a command might be called the *Command IO*.
 
-- ### Compared IO
+- ## Compared IO
 
     - When two commands seem to affect the same data, they might be in each other’s way. A definition of that overlapping usage and alteration might be called *Compared IO*. The idea might be, that when it is defined what data is mutually used, this might define the input-output dependency of commands.
 
-- ### Outcome Dependency
+- ## Outcome Dependency
 
     - The hope is, that the input-output dependency, or *outcome dependency*, might offer a mechanism for better managing the execution order of commands.
 
-- ### Automatic Execution Order
+- ## Automatic Execution Order
  
     - Perhaps the most practical execution order of commands could be automatically determined without intervention of a programmer: *automatic execution order*. It may not be fully worked out yet, but the hope is, that this can be translated into a method for resolving concurrent access of data *(concurrency resolution)* and automatically determining whether things might run serially or if things can be processed in parallel, perhaps offering an automatic way to resolve *parallelism*.
 

@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Misc Diagram Topics
-============================================
+﻿Misc Diagram Topics | Diagram Metrics
+=====================================
 
 [back](./)
-
-Diagram Metrics
----------------
 
 `[ Preliminary documentation ]`
 
@@ -24,7 +21,7 @@ __Contents__
     - [Line convergence](#line-convergence)
 - [More Ideas](#more-ideas)
 
-### Diagram Metrics
+## Diagram Metrics
 
 The diagrams of Circular are to be drawn out automatically. If they weren’t, this may decrease the usability of the language. These 'diagram metrics', as they are called here, might be functionally described first not being burdened by any mathematical implications, and after that the math to do so might be designed.
 
@@ -96,7 +93,7 @@ The concepts are put more or less in order of priority.
 
     - Zooming navigation
 
-### Brainstorm Text (from original Symbol documentation)
+## Brainstorm Text (from original Symbol documentation)
 
 - Element combining
     - Containment
@@ -105,9 +102,9 @@ The concepts are put more or less in order of priority.
 
 < Those molecular like pullings of line connections >
 
-#### Symbol Placement and Proportion
+### Symbol Placement and Proportion
 
-#### Line Alignment
+### Line Alignment
 
 - 1: Line convergence is...
 - 2: Dimensional convergence with only target convergence
@@ -181,7 +178,7 @@ The symbol sizes should be more proportionate, though, dependant on their encaps
 < P: normal simple convergence picture: proportionate symbols, lines from center to center. >  
 Making symbols proportionate like that causes more convergence.
 
-##### Old
+#### Old
 
 < >  
 De binnenkomende lines worden geordend op waar ze vandaan komen en de uitgaande lines worden geordend op waar ze naar toe gaan. Naar welk object ze toegaan.
@@ -199,7 +196,7 @@ Een ander voordeel van gedwongen convergence is dat tijdens de rit de afstanden 
 Convergence gebeurt alleen goed natuurlijk als de children verder uit elkaar staan dan ze wijd zijn... en dat is zonde van de ruimte! Maar over het algemeen, oh en dit maakt alles uit: lines gaan niet naar een symbool toe, maar naar hun middelpunt... behalve als ze naar een child toegaan, want dan wijkt het ag: het gaat niet meer naar het middelpunt. En bij gedwongen convergence wordt er gedaan alsof de children op een rechte lijn liggen, loodrecht op de line direction, zodat de convergence niet over een hoek van 0° verdeeld is... Verder wordt bij gedwongen divergence nauwelijks varierende afstanden tussen lines gebruikt. Of eigenlijk varierende varierende afstanden. Hoe dichter je bij het target komt, hoe minder het varieert of tussen elke twee crossings gaat het minder varieren?  
 \>
 
-##### Old
+#### Old
 
 < Picture showing line convergence >
 
@@ -235,11 +232,11 @@ You could also group lines by line type so that you separate object lines, type 
 
 < Line convergence is very useful in complicated situations where many things call many other things in a rather disoriented matter. *Spaghetti code* this is called sometimes. In Symbol, the actually spaghetti becomes visible, because the lines look like spaghetti, and the more lines there are and the more they go though < > each other, the more it looks like spaghetti. >
 
-#### Compromise between Symbol Placement and Line Alignment
+### Compromise between Symbol Placement and Line Alignment
 
 < different name >
 
-#### Other Metrics
+### Other Metrics
 
 - Access symbols
 - Shape peels
@@ -250,7 +247,7 @@ You could also group lines by line type so that you separate object lines, type 
 - ‘Specifiers’
 - Custom language
 
-#### Ambiguity Risks In Symbol Metrics
+### Ambiguity Risks In Symbol Metrics
 
 - Multiple shape peel types may suggest the existence of another symbol.
 - Line convergence may suggest line peels
@@ -260,7 +257,7 @@ You could also group lines by line type so that you separate object lines, type 
 
 ...
 
-#### Notation Choice
+### Notation Choice
 
 < - Implicit calls notation >
 
@@ -270,14 +267,14 @@ There may be an automatic choice mechanism in the Symbol programming environment
 Maybe this isn’t an alternative notations subject  
 \>
 
-#### Brainstorm
+### Brainstorm
 
 Do explain that these are standard metrics and that they are not mandatory, obligatory, compulsory, required to obey.
 
 The *start* of an identifier might be closest to the symbol it belongs to. Usually there isn’t enough room for the whole identifier to be closest to the symbol it belongs to.  
 < I also might find a way to place identifiers there where there’s room... >
 
-#### Line convergence
+### Line convergence
 
 - If there are many lines then they can converge. They can be grouped by how many borders they might exit and by what they might enter.
 - The grouping can be multi dimensional < P >. 
@@ -293,7 +290,7 @@ The grouping of lines by caller, callee, etcetera
 
 JJ
 
-### More Ideas
+## More Ideas
 
 CL,  
 Suggestions Art, Science & Entertainment,

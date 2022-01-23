@@ -1,8 +1,5 @@
-﻿Circular Language Construct Drafts | Implementations
-====================================================
-
-Commands Implementation
------------------------
+﻿Construct Drafts | Implementations | Commands Implementation
+============================================================
 
 `[ Out of Scope ]`
 
@@ -13,15 +10,15 @@ __Contents__
 - [Changing Inactive to Executable](#changing-inactive-to-executable)
 - [Loose Ideas](#loose-ideas)
 
-### Implementation as an Aspect
+## Implementation as an Aspect
 
 The behavior, that turns an object into an executable command, is implemented as the __Command__ aspect. When an object supports the __Command__ aspect, it automatically becomes a command. The code base only needs to support an object’s ability to execute in some basic form. But most of the functionality for commands might be programmed within Circular itself. The code base only supplies the very minimum basic need to facilitate it.
 
-### Implementation as Stand-Alone
+## Implementation as Stand-Alone
 
 Anything not allowed for command symbols, is allowed anyway, but generates a warning and generates alternative behavior, that IS allowed, because this allows direct conversion back and forth between a command and an object, so there might not be any loss of structure of you just convert an object symbol into a command and back again.
 
-### Changing Inactive to Executable
+## Changing Inactive to Executable
 
 `<< implementation >>`  
 When `you design` a command definition, `you` might want to do it using an active command object:
@@ -52,6 +49,6 @@ If `you change` an inactive command definition to an executable command definiti
 
 then `you can all of a sudden` run it, which may overwrite `the` executable’s default output values.
 
-### Loose Ideas
+## Loose Ideas
 
 To keep direct conversion between an object and a command possible without any loss of structure, it is allowed to give a call symbol and object redirection anyway. But then, the object redirection might behave as a *definition* redirection and a warning might be generated.

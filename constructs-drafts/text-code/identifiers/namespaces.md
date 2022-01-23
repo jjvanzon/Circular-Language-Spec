@@ -1,12 +1,9 @@
-﻿Circular Language Construct Drafts | Text Code
-==============================================
+﻿Construct Drafts | Text Code | Namespaces
+=========================================
 
 `[ Deprecated documentation ]`
 
-Namespaces
-----------
-
-### Loose Ideas
+## Loose Ideas
 
 *The texts below are loose ideas yet to be turned into good documentation.*
 

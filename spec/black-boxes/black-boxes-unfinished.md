@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Black Boxes
-====================================
+﻿Black Boxes | Unfinished
+========================
 
 [back](./)
-
-Black Boxes Unfinished
-----------------------
 
 `[ Preliminary documentation ]`
 
@@ -18,7 +15,7 @@ __Contents__
 - [May Cover Last](#may-cover-last)
     - [Access Controlling Globals](#access-controlling-globals)
 
-### Misc Issues
+## Misc Issues
 
 In previous projects the main articles about black boxing were finished, but other subjects were left unfinished. This article contains the unfinished material of some of these topics.
 
@@ -34,7 +31,7 @@ This article contains texts and loose ideas about the following topics:
 
 As said, the texts about these subjects are not finished yet.
 
-#### Protected
+### Protected
 
 There is another basic access controller in addition to __Accessible__ and __Inaccessible__: __Protected__.
 
@@ -93,7 +90,7 @@ be used for object access, but also for class access and interface access.
 
 JJ
 
-#### Internal
+### Internal
 
 < Also called __Friend__ in VB6 >  
 < better term: internal >
@@ -128,7 +125,7 @@ A command can contain variable objects. The public ones are parameters. The frie
 
 < What place the VB6 keyword __Friend__ has in black boxing, I do not know. this is a detail even less prominent, than __Protected__, which is also a detail later discussed. VB6 keyword friend has to do with access from within modules. >
 
-### Side-Issues
+## Side-Issues
 
 In previous projects the main articles about black boxing were finished, but other subjects were left unfinished. This article contains the unfinished material of some of these topics.
 
@@ -140,7 +137,7 @@ This article contains texts and loose ideas about the following topics:
 
 As said, the texts about these subjects are not finished yet.
 
-#### Private Names
+### Private Names
 
 Private Names,
 
@@ -159,13 +156,13 @@ The circle inside the loop parameter is not named. It is an unnamed parameter, t
 
 JJ
 
-### May Cover Last
+## May Cover Last
 
 In previous projects the main articles about black boxing were finished, but other subjects were left unfinished. This article contains some unfinished material. The topics are considered of lesser importance, compared to even other topics, that were not finished.
 
 Some of the topics might be deleted and others might not.
 
-#### Access Controlling Globals
+### Access Controlling Globals
 
 \> This issue is more important than level limitation and module level limitation, but those two concepts are used in the implementation as laid out below (the implementation might probably change in the future.
 

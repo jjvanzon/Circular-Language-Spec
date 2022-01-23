@@ -1,8 +1,5 @@
-﻿Circular Language Construct Drafts | From Spec
-==============================================
-
-Basic Diagram Elements Construct Drafts
----------------------------------------
+﻿Construct Drafts | From Spec | Basic Diagram Elements Construct Drafts
+======================================================================
 
 `[ Preliminary documentation ]`
 
@@ -15,7 +12,7 @@ __Contents__
     - [When Shape Types, When Line Types](#when-shape-types-when-line-types)
 - [No Dashed Squares?](#no-dashed-squares)
 
-### Loose Ideas
+## Loose Ideas
 
 - Notation Methods versus System Rules
     - Implicit calls are but notation methods, that don’t affect the behavior of the system. Type genericity, interface genericity and type interface genericity are system rules. They affect the behavior of the system.
@@ -24,7 +21,7 @@ __Contents__
 
 < A diamond might also be drawn more pointy than a square. > 
 
-### Implied Relationships Between Symbols
+## Implied Relationships Between Symbols
 
 Not showing private members or the contents of commands might be a relevant subject for the display of the diagrams. 
 
@@ -65,13 +62,13 @@ The phenomenon may be called 'implicitly connected through parent'. It may have 
 
 JJ
 
-### Brainstorms Shape vs Line Type
+## Brainstorms Shape vs Line Type
 
 This might be (possibly complicated) text for justification of a diamond symbol rather than a call line. It also seems sort of a mystery when something is symbolized with a shape, and when by a line drawn with a certain style.
 
 If there is nothing to point to, while there is an aspect to express visually, that may exclude a line from being used and may 'require' a shape, but then why one time the same shape with a different line type versus a different shape? The choice 'different shape' vs. 'shape drawn with different line style' seems not easy to rationally pinpoint. Maybe it could be used as food for thought when 'abusing diagram expression' might be worked out some day perhaps. Then the idea was a systematic overview all methods of symbolizations used in Circular vs possibility to express aspects of systematics using that symbolization.
 
-#### Executions & Parameters Brainstorm
+### Executions & Parameters Brainstorm
 
 __This IS the text that lead me to wanting a diamond symbol instead of a call line.__
 
@@ -82,7 +79,7 @@ Een call line is eigenlijk een reference line, maar als de parent square execute
 
 Een call een aparte line maken is net zoiets als een triangle een aparte line maken. Hetzelfde mankement. Dan lijkt het logisch, dat een call een apart symbool krijgt, niet een aparte line. O. Welk symbool?
 
-#### When Shape Types, When Line Types
+### When Shape Types, When Line Types
 
 < So, there’s a call trace and a definition trace. >  
 < Target call, target definition >  
@@ -133,7 +130,7 @@ Dat is zo’n beetje waar het kwartje begon te vallen dat het een shape moest zi
 
 Een andere shape wordt in basis Symbol alleen gebruikt als het echt nodig is. Als het niet echt nodig was om andere shapes te gebruiken, dan maakte ik het *allemaal* cirkels.
 
-### No Dashed Squares?
+## No Dashed Squares?
 
 `<< basic diagram elements >>`  
 When an *object* `is` drawn with a dashed line, then it `is only` used as a class:

@@ -1,10 +1,7 @@
-Circular Language | Construct Drafts
-====================================
+Construct Drafts | Parameters in Text Code Articles
+===================================================
 
 `[ Deprecated documentation ]`
-
-Parameters in Text Code Articles
---------------------------------
 
 Here might be found several specific topics about parameter notation in text code.
 

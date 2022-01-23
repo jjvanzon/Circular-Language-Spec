@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Execution Flow
-=======================================
+﻿Execution Flow | Conditional Execution
+======================================
 
 [back](./)
-
-Conditional Execution
----------------------
 
 `[ Preliminary documentation ]`
 
@@ -28,7 +25,7 @@ __Contents__
     - [Concept](#concept-5)
     - [Diagram](#diagram-5)
 
-### Concept
+## Concept
 
 Conditional execution is a form of control over *execution flow*. Execution flow is explained in the article *Execution Flow*.
 
@@ -43,7 +40,7 @@ There are four forms in which to express conditional execution:
 
 Each form is explained in a separate article.
 
-### Diagram
+## Diagram
 
 Conditional execution is a form of execution flow explained in the article *Conditional Execution*. The articles that follow only explain its expression in a diagram.
 
@@ -56,9 +53,9 @@ There are three forms in which to express conditional execution:
 
 Each form is explained in a separate article. See the articles *If in a Diagram, Else If in a Diagram*, *Select Case in a Diagram (exact value)* and *Select Case in a Diagram (split formula)*.
 
-### If
+## If
 
-#### Concept
+### Concept
 
 The __If__ statement is the most common form of *conditional execution*. Conditional execution is a kind of execution flow statement, explained in the *Conditional Execution* article.
 
@@ -72,7 +69,7 @@ There are two versions of __If__. There is the __If Then__ statement, that might
 
 The implementation of the __If__ command is quite simple. It simply calls a few machine instructions to start the right command, based on whether the __Boolean__ is __True__ or __False__.
 
-#### Diagram
+### Diagram
 
 The __If Then__ statement takes a __Boolean__ condition and a reference to the command to run when the __Boolean__ is __True__.
 
@@ -108,9 +105,9 @@ The definition of the __If__ execution flow command is part of a system module o
 
 In the definition, the condition and the clauses are not filled in yet.
 
-### Else If
+## Else If
 
-#### Concept
+### Concept
 
 __Else If__ form of *conditional execution*. Conditional execution is a kind of execution flow statement, explained in the article *Conditional Execution*. The __Else If__ statement is a lot like the __If__ statement, but then the __Else__ has another __If__ associated to it. If the condition of the second __If__ is met, then the associated command is called. If the condition is not met, then the __Else__ of the second __If__ might have another __If__ associated to it, and so on, until no more __Else If__’s are defined. If none of the __Else If__’s conditions are met, then the final __Else__ is executed, if provided.
 
@@ -118,7 +115,7 @@ The __Else If__ command takes an argument, that is the condition for the first _
 
 The implementation of the __Else If__ command is quite simple. It simply calls a few machine instructions to start a command, based on whether a __Boolean__ value is __True__ or __False__.
 
-#### Diagram
+### Diagram
 
 Below is an example of the diagrammatic expression of an __Else If__ statement.
 
@@ -136,9 +133,9 @@ Nothing is filled in yet for the condition, the __Then__ clause or the __Else__ 
 
 There is another, separate definition of the __Else If__ command, that is the same as the other __Else If__ command definition, except that it might not have an __Else__ clause in it.
 
-### Select Case
+## Select Case
 
-#### Concept
+### Concept
 
 The __Select Case__ statement is a form of conditional execution. Conditional execution is a kind of execution flow statement, explained by the article *Conditional Execution*.
 
@@ -155,13 +152,13 @@ The two forms might be explained in separate articles.
 
 The name __Select Case__ is directly taken over from the programming language *Basic*. You can choose between *Basic* naming and *C*  naming for execution flow statements. In the programming language *C*  it is called a __switch__ statement. Both names are available in Circular, as part of the multi-lingual approach of the system.
 
-#### Diagram
+### Diagram
 
 Each type of __Select Case__ has a slight variation in diagram notation. There are three definitions of __Select Case__ commands. They might be covered in the articles *Select Case (exact value) in a Diagram*, *Select Case (split formula) in a Diagram*. (*Split formula* has *two* variations. Hence the three definitions of __Select Case__.)
 
-### Select Case (exact value)
+## Select Case (exact value)
 
-#### Concept
+### Concept
 
 There are two forms of __Select Case__, as mentioned in the article *Select Case*. This article explains the form of __Select Case__ where a variable is compared to different values, to choose the next step to take.
 
@@ -173,7 +170,7 @@ __Select Case__ takes an object, that holds a binary value as the __Variable__ o
 
 The implementation of the __Select Case__ command is not too complicated. It simply calls a few machine instructions to compare a variable to a value and to start the right command when a match is found.
 
-#### Diagram
+### Diagram
 
 Below is an example of the diagrammatic expression of a __Select Case__ statement for comparing exact values.
 
@@ -191,9 +188,9 @@ Nothing is filled in yet as the __Select__ or __Else__, and there are no __Cases
 
 There is another, separate definition of the __Select Case__ command for comparison of exact values, that is the same as the other __Select Case__ command definition, except that it might not have an __Else__ clause in it.
 
-### Select Case (split formula)
+## Select Case (split formula)
 
-#### Concept
+### Concept
 
 There are two forms of __Select Case__, as mentioned in the article *Select Case*. This article explains the form of __Select Case__ where one half of a formula is combined with several other halves of the formula, to choose the next step to take.
 
@@ -207,7 +204,7 @@ It is not limited to just mathematical formulas. You can use any command for whi
 
 The implementation of the __Select Case__ command one by one calculates the __Boolean__ results of the resultant formulas. If the result of formula is __True__, then the command associated with that second half of the formula is called. If multiple resultant formulas return __True__, then all the associated commands are executed. If all resultant formulas were processed and none of the formulas returned __True__, then the alternative command is run.
 
-#### Diagram
+### Diagram
 
 There are two forms of this statement: the first half of the formula is a value or the first half of the formula is an operation with an operand missing. These two forms have a different definition and look different in the diagram
 

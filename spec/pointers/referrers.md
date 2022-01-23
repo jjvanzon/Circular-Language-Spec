@@ -1,10 +1,7 @@
-Circular Language Spec | Pointers
-=================================
+Pointers | Referrers
+====================
 
 [back](./)
-
-Referrers
----------
 
 `[ Preliminary documentation ]`
 
@@ -26,9 +23,9 @@ __Contents__
 - [`The*` Referrers Concept](#the-referrers-concept)
 - [Loose Ideas](#loose-ideas)
 
-### Object Referrers
+## Object Referrers
 
-#### Concept
+### Concept
 
 Objects can have references to other objects. A referenced object may not aware of its referrers, but it might be an option to explore for an object to have all its referrers registered in a list.
 
@@ -40,13 +37,13 @@ Objects can have references to other objects. A referenced object may not aware 
 
 An object `can* have` a referrers list, `but*` an object reference, `so` a related item or related list item (see `the*` *System Interfaces* articles), `can*` also `have` its `own` referrers list for references that `refer` to references.
 
-##### `Not*` Supporting `the*` Referrers Concept
+#### `Not*` Supporting `the*` Referrers Concept
 
 An object `could*` choose `not*` to support `the*` __Referrers__ concept, `if* the*` programmer `knows,` that `this` object `might` be referenced `so many` times, and there `is so little interest` in `knowing all` its referrers, that it `might*` be `ridiculous` maintain a list.
 
 `But* by default, the*` __Referrers__ concept `is always` supported.
 
-#### Diagram Notation
+### Diagram Notation
 
 `The*` referrers of an object `are simply` displayed as a sub-list called __Referrers__, `every` item of which `points` back to `the*` references to `the*` object:
 
@@ -68,9 +65,9 @@ __b__ in __A__ `is` a reference to `the*` reference to __c__ inside __B__. `To d
 
 ![](images/5.%20System%20Objects%20Misc%20Issues.017.png)
 
-### Class Referrers
+## Class Referrers
 
-#### Concept
+### Concept
 
 `The*` *Referrers* article `explained how` an object `can*` be `made aware` of its referrers. A *class* `can* also` be `made aware` of `the*` objects `using` it as a class.
 
@@ -80,7 +77,7 @@ A class `is usually only` *used* as a class, and `not* also used` as an object, 
 
 `But* if*` in `the* future` there `is` a `need` to `also maintain` a `separate` list of class referrers, a `separate` __Class Referrers__ concept `could*` be `implemented. In that case, when*` a related item’s *class* `is` set, `the*` __Related Item  .  Class  .  Set__ `might` update `the* target`’s list of __Class Referrers__.
 
-##### `Not*` Registering Class Referrers
+#### `Not*` Registering Class Referrers
 
 `The*` amount of referrers of a __Number__ *object* may be `small, but* the*` amount of referrers of `the*` __Number__ *class* `is humungous. The*` class `might even have` a __Referrers__ list, `when* the*` class `is not*` a created object, `because*` __Referrers__ `applies` to `both` symbols and objects.
 
@@ -92,7 +89,7 @@ A class `is usually only` *used* as a class, and `not* also used` as an object, 
 
 `Therefore, you* are` going to `might specify` for a symbol or object, that it `is` a non-practitioner of a concept. Derivation of objects `might` take over `the* specified` concept, `but* not* the*` non-practitioner aspect. Or perhaps instead of calling it non-practitioner, `you* could*` call it __Objects Support Concept Referrers__, or something.
 
-#### Diagram Notation
+### Diagram Notation
 
 < `The*` notation of a reference to an object reference’s class `needs to be determined` in `the* future`. >
 
@@ -118,15 +115,15 @@ As `mentioned` in `the*` article *Referrers*, it `is not* clear yet` under which
 
 `Obviously, the*` inactive referrers list `might not* contain any` object references.
 
-### Interface Referrers
+## Interface Referrers
 
 The *Referrers* concept has been explained in the *Relations* chapter. The article *Class Referrers* explains the concept for classes. It works exactly the same for interfaces. It might not be further explained here. Mind that commands can have interface referrers as well.
 
-### Command Referrers
+## Command Referrers
 
 `<< referrers >>`
 
-#### Command Object Referrers
+### Command Object Referrers
 
 The *Referrers* article explained how an object can be made aware of its referrers. The concept of referrers applies direction to command objects as well.
 
@@ -134,7 +131,7 @@ If a command and its references both support the __Referrers__ concept, then eve
 
 Refer to the article *Referrers* for an explanation on how the Referrers concept works.
 
-#### Command Definition Referrers
+### Command Definition Referrers
 
 The *Referrers* article explained how an object can be made aware of its referrers. A command is an object as well and the __Referrers__ concept already provides a command with *command definition referrers* functionality. An inactive command is the only type of command symbol that can be referenced. Am inactive command symbol can implement the __Referrers__ concept to register every call or reference to it.
 
@@ -142,7 +139,7 @@ When a site hosts a command definition, that is widely used all over the world, 
 
 If another site uses this widely used command definition, the using site could add a command reference to the command definition on the other site. A command reference has its own list of referrers. The using site could then redirect calls and references to its own command reference. Then the using site has a registration of anything on its site that uses the external command definition.
 
-### Referrers Versus Related Objects
+## Referrers Versus Related Objects
 
 Referrers `are` handy, `when* so many` classes relate to another class, that `the*` other class might `not*` want to maintain a separate list for `each` class that links to it.
 
@@ -150,13 +147,13 @@ It `is` also handy for `when*` a class `can't*` be aware of its related classes,
 
 To make `the*` remote class or object aware of its referrers anyway, `you* can*` let it support `the*` referrers concept.
 
-### `The*` Referrers Concept
+## `The*` Referrers Concept
 
 A __Number__ class `could*` choose to support `the*` __Referrers__ concept. `This might` give a __Number__ object `only` one list of `all` referrers, instead of a separate list for `every` class that uses __Numbers__. __Numbers__ may be used by `many` classes, `but*` an individual __Number__ object, `is` never used `much`. It `is not*` a `lot` of data to register inside an __Number__ object, which objects refer to that particular __Number__.
 
 `But* then* the*` __Number__ class `might` also register `all` its *class referrers*, which `is` undoable, `because*` a humongous amount of objects refer to `this` class. `But*` a solution for `this was already` proposed by `the*` article *Class Referrers*. `You* can*` choose for a class to `not*` register its class referrers, while objects do register their referrers.
 
-### Loose Ideas
+## Loose Ideas
 
 Taken out of `the*` Referrers article:
 

@@ -1,10 +1,7 @@
-Circular Language Construct Drafts | Text Code
-==============================================
+Construct Drafts | Text Code | Identifiers Articles
+===================================================
 
 `[ Deprecated documentation ]`
-
-Identifiers Articles
---------------------
 
 Identifiers are names for objects, collections, attributes, sites, programs, modules or any other element of a system. 
 

@@ -1,10 +1,7 @@
-Circular Language Spec
-======================
+Events Articles
+===============
 
 [back](../..)
-
-Events Articles
----------------
 
 - [Events](events.md)
 - [System Events](system-events.md)

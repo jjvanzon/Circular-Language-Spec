@@ -1,8 +1,5 @@
-Circular Language Broader View | Integration
-============================================
-
-Loose Ideas
------------
+Circular Language Broader View | Integration | Loose Ideas
+==========================================================
 
 *The texts below are loose ideas, yet to be turned into good documentation.*
 
@@ -26,7 +23,7 @@ It's compatibility that might be bad in my operating system. I should not build 
 I think it's legal to work with Word and Excel files.  
 Maybe others too.
 
-### Commercially Sellable Due to Integration Modules
+## Commercially Sellable Due to Integration Modules
 
 I also strive to integrate with other systems more, just because the internet already provides such a rich set of applications, that I might be happy to have them immediately available under my operating system.
 

@@ -1,10 +1,7 @@
-Circular Language Construct Drafts | From Spec
-==============================================
+Construct Drafts | From Spec | Commands Terminology
+===================================================
 
 `[ Deprecated documentation ]`
-
-Commands Terminology
---------------------
 
 __Contents__
 
@@ -15,11 +12,11 @@ __Contents__
 - [Nested Commands Terminology](#nested-commands-terminology)
 - [Loose Ideas about Terminology](#loose-ideas-about-terminology)
 
-### Introduction
+## Introduction
 
 The Circular Language Spec itself might be more about *notation* and *meaning*, rather than specific terminology. Therefor, terminology quibbles in the area of commands, might be moved here instead.
 
-### Sub-Commands Terminology (1)
+## Sub-Commands Terminology (1)
 
 Sub-commands `are` active commands `contained` inside a parent command. `You can` encounter them inside `any` command symbol: both active and inactive commands symbols `can` contain sub-commands. `The` sub-commands `are` *active* commands: command calls, active nested commands or active command references.
 
@@ -35,7 +32,7 @@ Below `is` a picture of two sub-commands inside an active command:
 
 It `is the same` picture as `the` other diagram, `only now the` __Parent Command__ `is` an executable command symbol, `not` an inactive command.
 
-### Sub Command Terminology (2)
+## Sub Command Terminology (2)
 
 A sub command is any command symbol inside another command symbol.
 
@@ -45,15 +42,15 @@ But sometimes it may only be the diamonds that are referred to as sub commands. 
 
 ![](images/7.%20Commands%20Ideas.036.png)
 
-### Active and Inactive Terminology
+## Active and Inactive Terminology
 
 A diamond executes, a square might not. A diamond is said to be active, while a square is inactive.
 
-### Nested Commands Terminology
+## Nested Commands Terminology
 
 A nested command is usually not called a definition.
 
-### Loose Ideas about Terminology
+## Loose Ideas about Terminology
 
 It’s *commands* that are called. When you speak of calling an *object*, you’re talking about calling a command of an object (or a command of one of its sub objects).`
 

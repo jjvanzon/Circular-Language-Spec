@@ -1,8 +1,5 @@
-Circular Language | Construct Drafts
-====================================
-
-Black Boxes Construct Drafts Articles
--------------------------------------
+Construct Drafts | Black Boxes Construct Drafts Articles
+========================================================
 
 `[ Preliminary documentation ]`
 

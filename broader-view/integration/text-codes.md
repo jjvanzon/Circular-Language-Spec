@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Integration
-============================================
-
-Text Codes
-----------
+﻿Circular Language Broader View | Integration | Text Codes
+=========================================================
 
 `[ Preliminary documentation ]`
 
@@ -12,11 +9,11 @@ The *More Text Codes* documentation folder is genuinely a throw-together of idea
 
 *More Text Codes* might be about the following topics:
 
-- ### Additional Text Codes
+- ## Additional Text Codes
 
     - *Additional Text Codes* covers two more types of text codes, that might be essential in a certain possible application of Circular where it runs as a stand-alone engine. They are considered so important, because without them, the language might not be completely usable: *Math Code* and *Assembly Language*.
 
-- ### Integrating Text Codes
+- ## Integrating Text Codes
 
     - *Integrating Text Codes* covers text codes non-standard to Circular. Circular might have its own text code syntax + math syntax and assembly language syntax. But other types of text code may be supported as well. Each type of text code might become a separate module. Here is a list of text codes, that might be supported. More languages may be added in the future, but there may also be languages in the list, that might never be supported at all:
      

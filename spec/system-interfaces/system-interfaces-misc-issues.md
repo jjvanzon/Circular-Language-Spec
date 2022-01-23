@@ -1,10 +1,7 @@
-﻿Circular Language Spec | System Interfaces
-==========================================
+﻿System Interfaces | Misc Issues
+===============================
 
 [back](./)
-
-Misc Issues
------------
 
 `[ Preliminary documentation ]`
 
@@ -17,11 +14,11 @@ __Contents__
     - [Concept](#concept)
     - [Diagram Notation](#diagram-notation)
 
-### System Command Calls by User
+## System Command Calls by User
 
 A user might often execute __Gets__ and __Sets__ and other system commands when connecting symbols together, but they might only see the connectors and the *result* of a __Get__ and __Set__, but never the explicit __Get__ and __Set__ calls. The system commands are executed as the user builds up a diagram.
 
-### Objects Floating Around
+## Objects Floating Around
 
 Objects are never directly accessed. They are always floating around somewhere you cannot touch. You are always accessing an object through an *object reference*. You are always dealing with *references* to objects, never with the object directly.
 
@@ -51,7 +48,7 @@ Even when you *create* an object, you are not directly in touch with the object.
 
 Each object reference gets its own identifier, even when an object reference is __Nothing__. An object itself, might not have an identifier. An object can be given a __Name__ attribute, though.
 
-### System Command Extension
+## System Command Extension
 
 One thing that makes it important to be aware of system commands at all is *extension* of system commands.
 
@@ -69,9 +66,9 @@ It might look something like this:
 
 But the exact way in which command extension is implemented might be covered by the *Inheritance* articles.
 
-### Parameters For Objects
+## Parameters For Objects
 
-#### Concept
+### Concept
 
 This is a preliminary description of the concept. The details are still to be worked out. It could be that in practice, when Circular is up and running, the details that might be solved, might come to light straight away.
 
@@ -97,7 +94,7 @@ There are no plans yet to make a command, that is a retrieval command, and a rel
 
 A query is also an example of a related object or related list with an extended system interface, that determines the item, list or result set eventually returned. Dependent on the parameters of the related object, the outcome is calculated.
 
-#### Diagram Notation
+### Diagram Notation
 
 Default system commands can be called with an easy notation, that might not show the system command definition:
 

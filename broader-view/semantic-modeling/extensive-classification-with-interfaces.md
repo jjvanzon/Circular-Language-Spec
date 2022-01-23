@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Interfaces
-===========================================
-
-Extensive Classification with Interfaces
-----------------------------------------
+﻿Circular Language Broader View | Interfaces | Extensive Classification with Interfaces
+======================================================================================
 
 `[ Preliminary documentation ]`
 
@@ -26,7 +23,7 @@ Or when multiple objects have a sub-object with the same class, you might refere
     - Etcetera.
     - Semantic classification as such.
 
-### Extensive classification through interfaces
+## Extensive classification through interfaces
 
 You should use interfaces more, to be able to let a new class participate in existing things, such as the ICollection provides.
 
@@ -36,7 +33,7 @@ I never really organized a system as such, but thinking in that way, might lead 
 
 Perhaps several object classes could have physically the same attribute, so that an attribute can belong to multiple classes. Perhaps that should be part of inheritance, though. That might be less uncontrolled. (For instance the BackColor attribute can be part of multiple classes. Perhaps BackColor should be something they all centrally relate to.)
 
-### Mutual Commands, Mutual Interfaces
+## Mutual Commands, Mutual Interfaces
 
 `[ Preliminary documentation ]`
 
@@ -52,7 +49,7 @@ One of the ideas behind this is idea is that objects, that have the same command
 This idea just might not work. It only works if you assume that a command definition is unchangeable and that class references to the same command actually might be the same command, but it hasn’t. You can have a command referenced twice that has elements to it that can still be redefined.  
 When this might not be the case then yes an idea like objects with the same command have a mutual interface could work, but in dynamic circumstances that are possible in Circular I just want to forget about it.
 
-#### A command is an interface
+### A command is an interface
 
 If multiple classes can support the same command, then the classes support the same interface: an interface that has only one command. The interface is represented by the command itself. Each command implicitly creates an interface. That is how it is expressed in a diagram too: a command implicitly creates an interface.
 
@@ -60,7 +57,7 @@ If multiple classes can support the same command, then the classes support the s
 
 You don’t see triangles around the commands inside the circles, that might specify, that it is a separate interface: each command automatically becomes a separate interface. Just like each object also defines an interface; even though there is no triangle directly inside it, it still has an interface.
 
-#### Multiple classes can support the same command
+### Multiple classes can support the same command
 
 As you could see in the previous section: multiple classes, that support the same command, also support the same interface. Multiple classes supporting the same commands logically seems to create overlap in interface, but it doesn’t look like overlap in the diagram.
 

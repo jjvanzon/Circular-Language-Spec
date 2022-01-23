@@ -1,8 +1,5 @@
-﻿Circular Language Construct Drafts | From Spec
-==============================================
-
-Black Boxes | Simplified Access Control Expression in Text Code
----------------------------------------------------------------
+﻿Construct Drafts | From Spec | Black Boxes | Simplified Access Control Expression in Text Code
+==============================================================================================
 
 `[ Preliminary documentation ]`
 
@@ -26,7 +23,7 @@ __Contents__
 - [Replacement that didn’t work out](#replacement-that-didnt-work-out)
 - [Old naming](#old-naming)
 
-### Main Idea
+## Main Idea
 
 To describe the access control of a parameter using the literals, introduced in the article *Access Controlling System Aspects*, you end up with an access control literal, that is quite a mouthful, for instance:
 
@@ -42,11 +39,11 @@ In a diagram each of those access control elements can be represented by a quite
 
 That is why access control literals should be simplified. This article lists out the rules for simplifying access control literals.
 
-### Admission
+## Admission
 
 I have tried to make a good setup of simplification rules, but I have not been able finish it. However, I do find it important to be picked up in the future, to make a clear set of terms, that more easily expresses access control situations. In this article I might lay out the ideas I already have about it, even though it is not finished yet.
 
-### Leave out the inaccessible
+## Leave out the inaccessible
 
 The first rule was already covered: leave out anything that is not accessible at all. You only end up with the ways you *can* access it.
 
@@ -84,7 +81,7 @@ Annul Public
 
 So only the accessible elements might end up in the access control literal.
 
-### Aspects separated
+## Aspects separated
 
 The various system aspects might always produce their own separate piece of access control literal:
 
@@ -100,7 +97,7 @@ Command / Object
 
 These elements, if accessible at all, always each produce a *separate* piece of access control literal, and no rules might be introduced, that converge access control elements of different aspects to a single term.
 
-### Order in a basic literal
+## Order in a basic literal
 
 In the texts above you have already seen the order of the keywords inside a single access control element, for instance:
 
@@ -150,7 +147,7 @@ Those three keywords form a single access control element, for instance:
 Object Get Public
 ```
 
-### Ordered by system aspects
+## Ordered by system aspects
 
 The access control elements themselves are also ordered. First I proposed to always order them by system aspect:
 
@@ -167,7 +164,7 @@ Creation
 
 The order was dependent on a general likeliness for a system aspect to be accessed. But this ordering might not be used anymore. The chronological order described below might be used.
 
-### Chronological order
+## Chronological order
 
 Another option for ordering the access control elements, is to order them by the most likely chronological order, which is:
 
@@ -184,7 +181,7 @@ This order completely replaces the ordering by system aspects. The access contro
 Object Set Public, Value Set Private
 ```
 
-### In, Out and Thru
+## In, Out and Thru
 
 The terms I might like to see back in access control literals are the terms __In__, __Out__ and __Thru__. It might greatly increase the readability if you could for instance say:
 
@@ -196,7 +193,7 @@ Earlier on, this article introduced a way to use the terms __In__, __Out__ and _
 
 Also: it was implied that in __Object Set Public, Value Set Private__, you do not privately *get* the object, that was *set* publicly. But that was a mistake as well: you do first get the object privately in order to set it’s value. This all might be worked out in the *Advanced Command Articles*.
 
-### Object Or Command
+## Object Or Command
 
 Whether a parameter is an object or a command, is not really access control over the parameter, but can be regarded part of the parameter *passing*, so it *is* involved here. 
 
@@ -214,7 +211,7 @@ Or
 Command Object Set Public, Execute Private
 ```
 
-### Creation
+## Creation
 
 By creation I mean the system commands __New__ and __Annul__. An object might be created or annulled from the outside or created and annulled from the inside. You already have a low-level way to express parameter access control for this:
 
@@ -233,13 +230,13 @@ Below are described three options for simplification of __New__ and __Annul__ ac
 - Use of keywords __In__, __Out__ and __Thru__
 - Use of the keyword __Existence__
 
-#### Implied by Object aspect
+### Implied by Object aspect
 
 __New__ and __Annul__ are also sort of like __Object__ aspect writing. So __Object Set Public__ may also mean you can publicly execute __New__ on the parameter, as well as __Annul__. So maybe __Object Set__ implies also that you can execute __New__ and __Annul__. __New__ and __Annul__ under the surface might probably use __Object Set__ anyway, and *above* the surface you may be able to use __Object Set__ as a __New__ and __Annul__ after all (but I am saying nothing final about that yet).
 
 But perhaps you should not go with such implication and insist you always express it when you can use __New__ or __Annul__ on something.
 
-#### In, Out and Thru
+### In, Out and Thru
 
 Since __New__ and __Annul__ are both writing, you may use the terms __In__ and __Out__ for it.
 
@@ -259,7 +256,7 @@ New Thru
 Annul Thru
 ```
 
-#### The Existence keyword
+### The Existence keyword
 
 Perhaps the terms __New__ and __Annul__ could converge into a single term, when they are both accessible the same way, for instance to the keyword __Existence__:
 
@@ -276,11 +273,11 @@ Existence Thru
     = New Public, Annul Public, New Private, Annul Private
 ```
 
-### Leave out the accessible
+## Leave out the accessible
 
 When *everything* is accessible, then the access control literal may become more complicated. Perhaps lateron you should also invent rules to simplify the access control literal, when most of the things are accessible. A sort of subtractive or exclusion kind of access control literal. Now it is an additive or inclusion kind of access control literal.
 
-### All in all
+## All in all
 
 All in all, the access control literals for parameters can get the following names in the following (chronological) order:
 
@@ -333,7 +330,7 @@ Existence Thru
 
 The only thing I need to make me completely satisfied with the simplified access control literals, is that good usage of the terms __In__, __Out__ and __Thru__ might replace the terms __Get Public__ , __Set Public__ , __Get Private__ and __Set Private__.
 
-### Replacement that didn’t work out
+## Replacement that didn’t work out
 
 I thought about replacement of separate access control elements by single ones.
 
@@ -345,7 +342,7 @@ But that naming resulted in overlap in possibilities. The same access control si
 
 When I also tried to apply the terms __In__, __Out__ and __Thru__, then I got really confused. At that point I decided, that I might no longer think about it anymore, and only summarize my existing, unfinished ideas in this article. It did not even turn out that bad and it is a good start anyway.
 
-### Old naming
+## Old naming
 
 __Reference Out__ was a parameter access control literal at one point. It meant writing the object on the outside and reading the value from the inside. This is now expressed with the following literal:
 

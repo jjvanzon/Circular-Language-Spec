@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Execution Flow
-=======================================
+﻿Execution Flow | Loop-Related Jumps
+===================================
 
 [back](./)
-
-Loop-Related Jumps
-------------------
 
 `[ Preliminary documentation ]`
 
@@ -19,7 +16,7 @@ __Contents__
     - [Concept](#concept-2)
     - [Diagram](#diagram-2)
 
-### Concept
+## Concept
 
 Loop-related jumps are jumps used specifically inside a loop. Jumps are a form of control over *execution flow*. Loops are explained in the article *Loops*. Execution flow is explained in the article *Execution Flow*.
 
@@ -30,7 +27,7 @@ The following two forms of jump relate specifically to a loop:
 
 They each might be explained in their own article.
 
-### Diagram
+## Diagram
 
 Loops-related jumps are a form of control over execution flow explained in the article *Loop-Related jumps*. The articles that follow only explain their expression in a diagram.
 
@@ -41,9 +38,9 @@ There are two forms of loop-related jump:
 
 Each form is explained in a separate article. See the articles *Exit Loop in a Diagram*, *Continue in a Diagram.*
 
-### Continue
+## Continue
 
-#### Concept
+### Concept
 
 The __Continue__ statement is a loop-related jump. It is a jump that is only performed inside a loop.
 
@@ -52,7 +49,7 @@ __Continue__ skips the remainder of the loop command and immediately moves on to
 A loop command is implemented as a reference to a command, passed as an argument to an execution flow command. So __Continue__ means no more, than to exit the command that is looped, so it is a synonym for __Exit Command__, but then used inside a loop.  
 It might remove the command that is exited from the call stack, and immediately jumps to the command referred to by the __Command End__, that was passed to it.
 
-#### Diagram
+### Diagram
 
 As explained in the article *Continue*, the __Continue__ command means no more than to exit the command that is looped.
 
@@ -60,9 +57,9 @@ So in the expression in a diagram, you see a loop, that has the command to loop 
 
 ![](images/5.%20Loop-Related%20Jumps.001.png)
 
-### Exit Loop
+## Exit Loop
 
-#### Concept
+### Concept
 
 The __Exit Loop__ statement is a loop-related jump. It is a jump that is only performed inside a loop.
 
@@ -74,7 +71,7 @@ Do not confuse this with exiting the command that is *being* looped, because tha
 
 The implementation of the __Exit Loop__ command is a lot like the implementation of __Exit Command__, only the __Exit Loop__ command might delete the last *two* calls from the call stack, and immediately jumps to the command referred to by the __Command End__, that was passed to it.
 
-#### Diagram
+### Diagram
 
 The __Exit Loop__ command is displayed inside the clause that is looped as a jump to the __Command End__ of the whole loop.
 

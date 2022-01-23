@@ -1,10 +1,7 @@
-Circular Language Spec
-======================
+Execution Flow Articles
+=======================
 
 [back](../..)
-
-Execution Flow Articles
------------------------
 
 - [Introduction](introduction-to-execution-flow.md)
 - [Conditional Execution](conditional-execution.md)

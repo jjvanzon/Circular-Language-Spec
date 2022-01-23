@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | From Spec
-==========================================
-
-Black Boxes Broader View | Loose Ideas
---------------------------------------
+﻿Circular Language Broader View | From Spec | Black Boxes Broader View | Loose Ideas
+===================================================================================
 
 `[ Preliminary documentation ]`
 
@@ -12,7 +9,7 @@ __Contents__
     - [Black Boxing and User Access Control](#black-boxing-and-user-access-control)
     - [Programmers and Users](#programmers-and-users)
 
-### Side-Issues
+## Side-Issues
 
 In previous projects the main articles about black boxing were finished, but other subjects were left unfinished. This article contains the unfinished material of some of these topics.
 
@@ -28,7 +25,7 @@ This article contains texts and loose ideas about the following topics:
 
 As said, the texts about these subjects are not finished yet.
 
-#### Black Boxing and User Access Control
+### Black Boxing and User Access Control
 
 Access control might be fully managed by the access control module, even for access controlling an object's members, making the members only accessible to the direct container of the member in order to hide complexity from the outside, or to to protect the object's data.
 
@@ -62,7 +59,7 @@ Save for user access control, because this is about different roles:
 
 JJ
 
-#### Programmers and Users
+### Programmers and Users
 
 black boxes = user access control?
 

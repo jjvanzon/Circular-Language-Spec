@@ -1,8 +1,5 @@
-Circular Language Construct Drafts | From Spec
-==============================================
-
-Assignment Construct Drafts
----------------------------
+Construct Drafts | From Spec | Assignment Construct Drafts
+==========================================================
 
 `[ Preliminary documentation ]`
 
@@ -12,11 +9,11 @@ __Contents__
 - [By Value Parameters with Assignment Notation](#by-value-parameters-with-assignment-notation)
     - [Value Get and Set are Inseparable](#value-get-and-set-are-inseparable)
 
-### Introduction
+## Introduction
 
 This might be deprecated ideas about the topic of assignment (__=__).
 
-### By Value Parameters with Assignment Notation
+## By Value Parameters with Assignment Notation
 
 A value assignment *might* have an invisible reference to the parameter, but you won’t see it in the diagram, because an assignment is something so basic, that the notation of it is kept very basic.
 
@@ -35,7 +32,7 @@ But this still might not tie the source and target symbols directly together.
 The last picture might be an acceptable substitute for implicit state assignment. It is actually explicit state assignment, but it looks like a real connection between A and B. A rule though: state assignment takes two arguments: destination = source. In the notation on the left you might follow the direction of the line you’d get between A and B if you ignore the call thing in between to find out which is the first argument and which is the second. In text code it goes from left to right. In the diagram It goes from ... < >. B is destination A is source. I mean B is the one that gets the line. B is source of line, but destination of assignment. 
 
 
-#### Value Get and Set are Inseparable
+### Value Get and Set are Inseparable
 
 A state write is always paired with a state read and a state read is always paired with a state write.
 

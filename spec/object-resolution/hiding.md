@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Object Resolution
-==========================================
+﻿Object Resolution | Hiding
+==========================
 
 [back](./)
-
-~ Hiding
---------
 
 `[ Preliminary documentation ]`
 

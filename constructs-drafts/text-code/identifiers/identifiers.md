@@ -1,10 +1,7 @@
-﻿Circular Language Construct Drafts | Text Code
-==============================================
+﻿Construct Drafts | Text Code | Identifiers
+==========================================
 
 `[ Deprecated documentation ]`
-
-Identifiers
------------
 
 Identifiers are names for objects, collections, attributes, sites, programs, modules or any other element of a system. Any element of a system can get an identifier.
 
@@ -48,13 +45,13 @@ When you type in an identifier to identify an element of the system, it needs to
 
 The first versions of Circular might store a large space as two spaces next to each other. This might, however, imposes the restriction on identifiers, that you can’t use several spaces right next to each other.
 
-### Loose Ideas
+## Loose Ideas
 
 Statement:
 - The ‘As’ or ‘In’ notation for relation names is applied when it isn’t the only relation between the two classes
 - \> Find out if that’s true, and if you can find rules about when to use in and when to use As. Perhaps when it has a containment character?
 
-#### Out of the original Symbol documentation
+### Out of the original Symbol documentation
 
 An identifier is a name for a symbol (for instance for a circle). It can be any string of characters. Unlike a lot of other programming languages, identifiers in Symbol can contain spaces and they can begin with numbers. Examples:
 

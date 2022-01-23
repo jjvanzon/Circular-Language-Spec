@@ -1,8 +1,5 @@
-Circular Language | Construct Drafts
-====================================
-
-From Spec
----------
+Construct Drafts | From Spec
+============================
 
 `[ Preliminary documentation ]`
 

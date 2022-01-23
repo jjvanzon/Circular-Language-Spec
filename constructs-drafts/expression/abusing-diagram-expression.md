@@ -1,8 +1,5 @@
-﻿Circular Language Construct Drafts | Expression
-===============================================
-
-Alternative Diagram Expression
-------------------------------
+﻿Construct Drafts | Expression | Alternative Diagram Expression
+==============================================================
 
 `[ Preliminary documentation ]`
 
@@ -12,7 +9,7 @@ Alternative Diagram Expression
     - Overlapping encapsulation
     - Using encapsulation to express the other hierarchies
 
-### Diagram Aspects
+## Diagram Aspects
 
 There are the following aspects to the diagram:
 
@@ -22,7 +19,7 @@ There are the following aspects to the diagram:
 - Shape
 - Names
 
-### Standard Notation
+## Standard Notation
 
 What I have described in the previous sections is the standard notation for Symbol diagrams. 
 
@@ -34,7 +31,7 @@ What I have described in the previous sections is the standard notation for Symb
 
 As I said: this is the standard way that the diagram elements are used to express a system. To keep things clear I only introduced you to the standard notation or it might have been futile to explain the notation at all. 
 
-### Customization
+## Customization
 
 Diagram aspects:
 
@@ -46,7 +43,7 @@ Diagram aspects:
 
 Diagram aspects can be arbitrarily exchanged between system aspects. The following is not entirely true, but it draws out the idea: any diagram aspect could represent any system aspect.
 
-### Hierarchical Diagram Aspects
+## Hierarchical Diagram Aspects
 
 Diagram aspects:
 
@@ -65,7 +62,7 @@ The encapsulation, lines and color aspects of the diagram can be distributed ove
 Red, green and blue could actually express three hierarchies...  
 Or tint, blackness en whiteness.
 
-### Criterial Diagram Aspects
+## Criterial Diagram Aspects
 
 Diagram aspects:
 

@@ -1,8 +1,5 @@
-﻿Circular Language Construct Drafts | Input Output
-=================================================
-
-Automatically Determining What’s In Out or Thru
------------------------------------------------
+﻿Construct Drafts | Input Output | Automatically Determining What’s In Out or Thru
+=================================================================================
 
 `[ Preliminary documentation ]`
 
@@ -29,7 +26,7 @@ Only when programming a new version of a system, you can decide to possibly link
 A question for versioning is: when might a version of a command be created? On every change? Or might there be key moments at which an author publishes the new version of the command. These are issues for Versioning, which falls under the Editing & Authoring concepts.  
 Versioning of commands can prevent huge casts of changes to input, output or throughput configuration, or at least limit it in size. Only when defining a new call, you might look at the called command to see if this changes the in, out, thru configuration of the currently edited parent command definition.
 
-### Giving the issues in this section a place
+## Giving the issues in this section a place
 
 The ideas about versioning need to be moved to the article *Versioning*.  
 The ideas about event casts should be moved to the article *Events*.  
@@ -37,6 +34,6 @@ You should only *refer* to those articles, even when the articles are not not fi
 
 The rest is all part of automatically determining in-out-thru.
 
-### Loose Ideas
+## Loose Ideas
 
 If anything should change about the Basic Command Topics as soon as you might revise Commands & Classes Loosely Coupled, then you might redo the Basic Command Topics during a project about Advanced Command Topics.

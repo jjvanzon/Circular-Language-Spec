@@ -1,8 +1,5 @@
-Circular Language | Broader View
-================================
-
-Commands Broader View Articles
-------------------------------
+Circular Language Broader View | Commands Broader View Articles
+===============================================================
 
 `[ Preliminary documentation ]`
 

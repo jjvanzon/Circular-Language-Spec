@@ -1,10 +1,7 @@
-Circular Language Spec
-======================
+Pointers Articles
+=================
 
 [back](../..)
-
-Pointers Articles
------------------
 
 - [Pointers](pointers.md)
 - [Redirection](redirection.md)

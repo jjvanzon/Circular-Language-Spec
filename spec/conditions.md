@@ -1,14 +1,11 @@
-﻿Circular Language Spec
-======================
+﻿Conditions
+==========
 
 [back](..)
 
-Conditions
-----------
-
 `[ Preliminary documentation ]`
 
-### Loose Ideas
+## Loose Ideas
 
 Conditions,
 2008~

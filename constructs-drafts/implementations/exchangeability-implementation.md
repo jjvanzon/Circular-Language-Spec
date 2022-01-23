@@ -1,8 +1,5 @@
-Circular Language Construct Drafts | Implementations
-====================================================
-
-Exchangeability Implementation
-------------------------------
+Construct Drafts | Implementations | Exchangeability Implementation
+===================================================================
 
 `[ Out of Scope ]`
 

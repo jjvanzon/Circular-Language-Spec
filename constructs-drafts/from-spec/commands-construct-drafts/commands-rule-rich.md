@@ -1,10 +1,7 @@
-Circular Language Construct Drafts | From Spec
-==============================================
+Construct Drafts | From Spec | Commands Rule Rich
+=================================================
 
 `[ Deprecated documentation ]`
-
-Commands Rule Rich
-------------------
 
 __Contents__
 
@@ -32,7 +29,7 @@ __Contents__
 - [Nested Commands Rule Rich](#nested-commands-rule-rich)
 - [Loose Ideas](#loose-ideas)
 
-### Introduction
+## Introduction
 
 A struggle to make it work seems noticeable here. To make the notation work for commands like for objects. Checking if commands can retain their integrity, when subjected to this diagram notation. What might be expressed with this diagram notation, would it be *valid* for commands? Can this diagram notation be *sufficient* for expressing different command situations that might be imagined?
 
@@ -40,7 +37,7 @@ The answer to these quesions seems to be 'yes'.
 
 The Circular Language Spec itself might be more about *notation* and *meaning*, rather than rules and constraints. But texts about the struggle to make it work may still be retained here in this article inside *Construct Drafts*.
 
-### Parent Controls Its Sub-Executions
+## Parent Controls Its Sub-Executions
 
 A parent command needs full control over the execution of its sub-commands. The parent command makes the decision about the exact moment, that the sub-command runs.
 
@@ -56,7 +53,7 @@ Any command object, potentially executed within another command definition, need
 
 For instance: the rule ‘sub-commands are never referenced’, may be changed to being able to reference sub-commands after all, but never to be able to *execute* a sub-command through a reference, even if the reference is active. But this change of rules is just an example. It might prove not to be practical after all.
 
-#### Sub-Commands Are Never Referenced
+### Sub-Commands Are Never Referenced
 
 This is a rule for enforcement of control of a parent command over the execution of its sub-commands.
 
@@ -82,7 +79,7 @@ Not being able to reference sub-commands might not mean, that you can use it as 
 
 This might also put the sub-command in danger of being prematurely executed, because you could establish an active reference to the class of another command object and execute it.
 
-#### Sub-Commands Private?
+### Sub-Commands Private?
 
 To not cause any confusion, sub-commands might be made __Private__. 
 
@@ -98,7 +95,7 @@ That might make the parent *give up control* over the execution of a sub-command
 
 ![](images/6.%20Comands%20Misc%20Issues.006.png)
 
-#### Beware of Active Command References in Commands
+### Beware of Active Command References in Commands
 
 This is a rule for enforcement of control of a parent command over the execution of its sub-commands. It might not impose any restriction, but just advises you to beware of what you are doing, when you are using an active command reference inside a command.
 
@@ -124,13 +121,13 @@ It is *not* the rule, to beware of any active command reference. It is the rule 
 
 ![](images/6.%20Comands%20Misc%20Issues.010.png)
 
-#### Sub-Commands Not Manually Started
+### Sub-Commands Not Manually Started
 
 This is a rule for enforcement of control of a parent command over the execution of its sub-commands.
 
 Sub-commands are never manually started by a user. Then there is no way for a user to run the sub-command at any arbitrary moment, and the parent command might keep control over the execution of its sub-commands.
 
-### Command Assignment Rule Rich
+## Command Assignment Rule Rich
 
 You can only let two command symbols refer to the same object when they are command *definitions*. You can not assign a command object to a command call. This is due to the special object creation behavior of a call. Command calls can never *redirect* their object. They are always *their own* object, and they are only created, when they are running. Command definitions, however, are permanently created objects, and a command definition symbol can redirect its object target.
 
@@ -146,13 +143,13 @@ The target definition of one command reference or call is assigned as the target
 
 You can only let two command symbols refer to the same target object when they are command *definitions*. You can not assign a command object to a command call. This is due to the special object creation behavior of a call. Command calls can never *redirect* their object. They are always *their own* object, and they are only created, when they are running. Command definitions, however, are permanently created objects, and a command definition symbol can redirect its object target.
 
-### Executor & Execution
+## Executor & Execution
 
 Any diamond symbol might be called an executor, since it can execute. A single diamond might execute multiple times. An individual execution of a diamond might be called an *execution*.
 
 It might be ok to call an executor an execution, but perhaps only while it’s executing.
 
-### Diamonds Execute When Direct Parent Executes
+## Diamonds Execute When Direct Parent Executes
 
 A diamond doesn’t execute automatically. It only executes when the parent symbol executes.
 
@@ -174,13 +171,13 @@ Actually, The letters distinguish the different symbols. If you only use letters
 
 So in that sense, diamond A might execute. But not the definition executes, only the call executes.
 
-### Diamonds Can only be Directly Inside a Command Symbol, Diamonds Can’t be Directly Inside an Object Symbol
+## Diamonds Can only be Directly Inside a Command Symbol, Diamonds Can’t be Directly Inside an Object Symbol
 
 Because execution can only take place in a command, a diamond can’t be directly inside an object Symbol
 
 ![](images/7.%20Commands%20Ideas.043.jpeg)
 
-### You Can Only Access Members of a Diamond
+## You Can Only Access Members of a Diamond
 
 You can (usually) only access members of a diamond, because a square is never created, just like you can’t access members of a non created object.
 
@@ -188,7 +185,7 @@ You can (usually) only access members of a diamond, because a square is never cr
 
 ![](images/7.%20Commands%20Ideas.045.jpeg)
 
-### You Can Only Access Members of a Diamond, while the Diamond is executing
+## You Can Only Access Members of a Diamond, while the Diamond is executing
 
 Because a diamond is only created when it’s executing, you can only access members when the diamond is in execution.
 
@@ -196,7 +193,7 @@ However, *static* members of a command can be freely accessed through any square
 
 (Some members of a command can be static. In that case the member belongs to the command definition. Those member are the same for any reference or call to a command.)
 
-### Accessing a Diamond Member During a Call
+## Accessing a Diamond Member During a Call
 
 So how might you access a diamond member *during* a call? Well, usually only commands called by the executing diamond can access the call parent.
 
@@ -215,14 +212,14 @@ Two sibling commands are executing at the same time, in different threads, which
 
 < Consider the example of diamond reference to diamond in the main argument reference example. >
 
-### Passing an Object Reference to a Command
+## Passing an Object Reference to a Command
 
 ![](images/7.%20Commands%20Ideas.048.jpeg)
 
 When you pass an object reference to a command, the command can access the object.  
 In the situation above it seems the command could access the object anyway (because a command can access everything accessible to the object that contains it). It *can*, but in this case the *caller* decides which object to point to, not the called.
 
-### Command Can Set Object Reference itself Too
+## Command Can Set Object Reference itself Too
 
 When the caller (the parent diamond) sets the line, then the caller decides which object the call might refer to.
 
@@ -233,7 +230,7 @@ It’s important that the command itself sets lines, because the line targets of
 
 < I don’t know a notation to distinct sets by the caller and sets by the call. Well... in a more explicit notation you might see that the caller calls the set or the called calls the set. >
 
-### Argument Assignment Requires Reading in Prolog!
+## Argument Assignment Requires Reading in Prolog!
 
 Argument assignment takes place in the *prolog*. But *setting* the argument also requires *getting* the argument. However, getting the argument was said to take place in the *epilog*. For the purpose of *setting* the argument, however, *getting* happens in the *prolog*.
 
@@ -247,7 +244,7 @@ Assignment of arguments simply *might* take place in the prolog, even though the
 
 Assignment commands are fundamental commands of the Symbol Language and behave much different from other commands.
 
-### Commands to Commands, Objects to Object
+## Commands to Commands, Objects to Object
 
 < 2008-10-12 I am not sure I should impose this rule or not >
 
@@ -265,7 +262,7 @@ Formally, there can be no lines connecting objects and commands:
 
 So then object symbols point only to object symbols and command symbols only to command symbols.
 
-### Pointing to Diamonds
+## Pointing to Diamonds
 
 `<< interpretation issues >>`
 
@@ -273,11 +270,11 @@ When is a diamond executed multiple times?
 
 A diamond pointing to another diamond: it may be a call to a call. both diamonds may represent the same call. They might never execute individually.
 
-### Forming New Subdivision
+## Forming New Subdivision
 
 These seem fragments of an attempt to re-subdivide topics formerly inside the original Symbol documentation from 2004.
 
-#### Old Subdivision
+### Old Subdivision
 
 ...
 
@@ -290,7 +287,7 @@ These seem fragments of an attempt to re-subdivide topics formerly inside the or
 
 - Wanneer wordt een diamond meerdere keren geexecute?
 
-#### New Subdivision
+### New Subdivision
 
 ...
 
@@ -306,7 +303,7 @@ These seem fragments of an attempt to re-subdivide topics formerly inside the or
 
 Line of connected diamonds change simultaneously
 
-### Nested Commands Rule Rich
+## Nested Commands Rule Rich
 
 A nested command might not redirect its definition, because then it might be a command call.
 
@@ -314,7 +311,7 @@ A nested command might not redirect its object, because then it might be a comma
 
 A nested command `is never` situated inside an object, or it might not be a nested command.
 
-### Loose Ideas
+## Loose Ideas
 
 Expected behavior might be that a command call might only run once.
 

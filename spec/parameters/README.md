@@ -1,10 +1,7 @@
-Circular Language Spec
-======================
+Parameters Articles
+===================
 
 [back](../..)
-
-Parameters Articles
--------------------
 
 - [Parameter Passing](parameter-passing.md)
 

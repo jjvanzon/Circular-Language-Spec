@@ -1,8 +1,5 @@
-﻿Circular Language | Broader View
-================================
-
-Extensibility
--------------
+﻿Circular Language Broader View | Extensibility
+==============================================
 
 `[ Preliminary documentation ]`
 
@@ -10,7 +7,7 @@ Perhaps a central goal of the Circular programming language could be, to melt to
 
 The *extensibility principles* may cover techniques that might make existing software extensible and make sure, that *Circular language* may integrate with the rest of the world of computer technology. *Circular* resources might be accessible to other systems and existing resources on the internet might be accessible in *Circular*. Not all these articles might be finished yet. More may be added in the future. The *Extensibility* folder may contains the following articles:
 
-- ### [Aspects as External Modules](aspects-as-external-modules.md)
+- ## [Aspects as External Modules](aspects-as-external-modules.md)
 
     - Concepts might be power-enhancements of software, that might be immediately applied to any system without any further programming. A concept may become a special programming construct.
 
@@ -26,22 +23,22 @@ The *extensibility principles* may cover techniques that might make existing sof
 
     - This article may still consist of just loose ideas.
 
-- ### [Extensibility Loose Ideas](extensibility-loose-Ideas.md)
+- ## [Extensibility Loose Ideas](extensibility-loose-Ideas.md)
   
     - Unrefined ideas about the topics.
 
-- ### [Module Integration](module-Integration.md)
+- ## [Module Integration](module-Integration.md)
 
     - In a newer version of Circular there might simply be no distinction between modules anymore. It might be like there is only one module running on the computer. Separate modules might simply sub-objects of one single super-module. An object might have a class out of any of the modules, that run on the computer or even a class out of any module on the internet.
 
     - Modules are not separate programs. They are just objects living inside the computer or on the internet. When a module contains an object with a class from another module, the object simply refers to the class as if there was not even any distinction between modules: everything is running on the same computer or on the same internet, everything is an object, and the modules are simply a benign grouping of things, that might not really create any barrier between programs.
 
-- ### [Reflection](reflection.md)
+- ## [Reflection](reflection.md)
 
     - Reflective data is data that describes the structure of a program. The reflective data of a program for instance contains descriptions of classes. In other programming languages, it might be considered something special to be able to access data that describes a program, listing out all the classes and all of its members. In Circular the program actually *is* a description of the structure of the program. As you make the program, you are creating this data, and it is actually the program itself, that might just be run inside an engine. Any object simply has a reference to its class. You can access the full description of this class at all times.
 
     - Having this reflective data at hand at all times, makes it easy to write software that adapts its behavior to this reflective data, rather than being written for a specific data structure. That may create better extensibility.
 
-- ### [Relational As Carbon Base](relational-as-carbon-base.md)
+- ## [Relational As Carbon Base](relational-as-carbon-base.md)
 
     - The *Relational As Carbon Base* principle means that when making a program, you should primarily think in terms of relations between classes. The relations and classes are used as a base. They are used by *concepts*, for instance to automatically generate a user interface for the system. Also other concepts like *Undo* and *Copy & Paste* can automatically be applied to the relational structure. The concepts are tied to the relational structure. The relational structure forms the carbon base of the program, onto which other atom groups can be attached. It might not look like that exactly in the diagrams, but conceptually there might look like there is a parallel. In the Circular diagrams, things might tend to be placed inside each other, rather than being plugged in on the outside.

@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Exchangeability
-================================================
-
-Attributes Are Objects
-----------------------
+﻿Circular Language Broader View | Exchangeability | Attributes Are Objects
+=======================================================
 
 `[ Preliminary documentation ]`
 

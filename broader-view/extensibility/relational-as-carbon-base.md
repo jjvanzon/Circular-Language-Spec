@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Extensibility
-==============================================
-
-Relational As Carbon Base
--------------------------
+﻿Circular Language Broader View | Extensibility | Relational As Carbon Base
+==========================================================================
 
 `[ Preliminary documentation ]`
 
@@ -11,7 +8,7 @@ They are used by *concepts*, for instance to automatically generate a user inter
 
 Basically, the relational structure is the carbon base... concepts can extend the carbon base with extra code, that isn’t the core of the system.
 
-### Doubts Looking At Diagrams
+## Doubts Looking At Diagrams
 
 I have doubts you’ll be thinking in terms of classes and relations and attaching concepts to them as much as I thought.  
 In diagrams you don’t really see relational as carbon base. In the diagrams you basically see an object oriented approach. First and foremost you see objects connecting to other objects. However, if you highlight the target classes, and the target classes of the related objects they contain, you have the relational structure. But in the symbol diagram that doesn’t look like the carbon base at all.
@@ -22,7 +19,7 @@ Actually, you should see it like this: if you’re defining objects and object l
 
 It’s hard... at all times in the diagram the target classes and the class lines between them should be highlit, because it SHOULD be on the foreground of your software development, and it should count as the bone structure of your program. Therefore the bone-structure might be highlit, because everything is attached to this, and it is the relational structure, which should be the base of what you think about when defining your program.
 
-### Loose Ideas
+## Loose Ideas
 
 Men moet gewoon de klasse-relatie structuur zo veel mogelijk als basis nemen, en niets ernaast bouwen, maar commando's in de structuur INbouwen. de klasse-relatie structuur is zeg maar de koolstof basis en daar kan vanalles aanhangen.
 

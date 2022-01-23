@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Execution Flow
-=======================================
+﻿Execution Flow | Introduction
+=============================
 
 [back](./)
-
-Introduction
-------------
 
 `[ Preliminary documentation ]`
 
@@ -13,7 +10,7 @@ __Contents__
 - [Concept](#concept)
 - [Diagram](#diagram)
 
-### Concept
+## Concept
 
 Execution flow statements are points in a program, that take a decision about: what is the next step to take.
 
@@ -68,7 +65,7 @@ The reference, that is referred to, can perform a calculation before it returns 
 
 Commands basically just call more commands. But a few commands do something other than just call other commands. The most basic ones of those are commands, that execute a machine instruction: an operation that is executed by the CPU, the central processing unit of the computer. But directly on top of the machine commands, there are the *execution flow commands*, that control the flow of a program, making the next command to call dependent on a condition. Any other command basically only calls more commands.
 
-### Diagram
+## Diagram
 
 The concept of execution flow is explained in the article *Execution Flow*. The current article demonstrates its expression in a diagram.
 

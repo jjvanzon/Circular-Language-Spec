@@ -1,12 +1,9 @@
-Circular Language Construct Drafts | Implementation
-===================================================
-
-Errors & Warnings Implementation
---------------------------------
+Construct Drafts | Implementation | Errors & Warnings Implementation
+====================================================================
 
 `[ Out of Scope ]`
 
-### Loose Ideas
+## Loose Ideas
 
 Ik moet Booleans HasErrors en HasWarnings hebben en ik moet de Errors en warnings terug kunnen geven op een bepaalde manier.  
 Ik moet ook opvangen dat een top level menu geen separator kan zijn en een separator geen children kan hebben.
@@ -19,7 +16,7 @@ Ik begin me steeds meer te beseffen dat goede error handling heel belangrijk is.
 
 Organization of structure might generate errors, but the generated code also needs better error handling. You can generate safer code, if all dependencies of the command are checked and specific errors are generated if something goes wrong. You might have the option of continuing always on error, breaking on error, stopping execution on error, ask what to do in case of an error or maintain an error log. Or you could choose not to generate any error handling at all.
 
-#### Experiment 0.9's Compiler Pitfalls ( Errors )
+### Experiment 0.9's Compiler Pitfalls ( Errors )
 
 - In Visual Basic 6 komt een interface als member benaderen door de compiler heen, terwijl Visual Basic 6 crasht als je de reference werkelijk benadert.
 - Pitfall: Selection List Chain Might Be Consecutive

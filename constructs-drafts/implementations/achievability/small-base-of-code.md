@@ -1,8 +1,5 @@
-﻿Circular Language Construct Drafts | Implementations
-====================================================
-
-Achievability | Small Base of Code
-----------------------------------
+﻿Construct Drafts | Implementations | Achievability | Small Base of Code
+=======================================================================
 
 `[ Out of Scope ]`
 

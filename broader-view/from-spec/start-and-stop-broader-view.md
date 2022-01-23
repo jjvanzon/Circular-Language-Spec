@@ -1,8 +1,5 @@
-Circular Language Broader View | From Spec
-==========================================
-
-Start & Stop | Broader View
----------------------------
+Circular Language Broader View | From Spec | Start & Stop | Broader View
+========================================================================
 
 `[ Preliminary documentation ]`
 

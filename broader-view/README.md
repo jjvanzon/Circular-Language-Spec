@@ -1,5 +1,5 @@
-﻿Circular Language | Broader View
-================================
+﻿Circular Language Broader View
+==============================
 
 `[ Preliminary documentation ]`
 

@@ -1,20 +1,17 @@
-﻿Circular Language Spec | Object Resolution
-==========================================
+﻿Object Resolution | Melding
+===========================
 
 [back](./)
-
-Melding
--------
 
 `[ Preliminary documentation ]`
 
 Melding objects means that for instance a relation class or a progressed object have the same item object name, and meld together to a single property command, in which all functionality of both commands is embedded.
 
-### Loose Ideas
+## Loose Ideas
 
 *These were moved here from the Projects documentation, to the System documentation, to integrate them with the System documentation. Remaining ideas should be moved back to the Projects documentation after that. The Projects documentation is where Ideas belong.*
 
-#### Melding
+### Melding
 
 J Code
 
@@ -23,7 +20,7 @@ or let separate applications have their own Find Control, it is a matter of appl
 
 JJ
 
-#### Brainstorm Involving Synchronization
+### Brainstorm Involving Synchronization
 
 Het probleem komt voort uit het feit dat je *één* object referentie hebt, voor *verschillende* relation classes. Dat komt, omdat de Item Object Name van de twee relation class hetzelfde is. Mogelijk moet je het verbieden om dezelfde ItemObjectName te geven  aan meerdere related classes. Dan krijg je bijvoorbeeld een relatie: 
 
@@ -45,6 +42,6 @@ De blauw gekleurde teksten stellen slechts een afvraging voor: Moeten twee relat
 
 Samensmelten moet een apart topic worden.
 
-#### Good Example Where Melding Might Cause Problems
+### Good Example Where Melding Might Cause Problems
 
 Be careful in Synchronization 1=>1. For instance in J Graphics: the relation Application <=> Current Line Style. If Line Style . Application is assigned, Application . Current Line Style should not be synchronized with that Line Style. Therefore you can set Relation Class . Synchronize = False. You set Synchronize = False for the Relation Class that should stay most constant and be the least volatile, so in this case the Current Line Style relation class gets Synchronize = False.

@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Events
-===============================
+﻿Events | Loose Ideas
+====================
 
 [back](./)
-
-Loose Ideas
------------
 
 `[ Preliminary documentation ]`
 

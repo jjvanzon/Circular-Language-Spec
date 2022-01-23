@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | From Spec
-==========================================
-
-System Interfaces | Broader View
---------------------------------
+﻿Circular Language Broader View | From Spec | System Interfaces | Broader View
+=============================================================================
 
 `[ Preliminary documentation ]`
 

@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Inheritance
-====================================
+﻿Inheritance | Deeper Specialization
+===================================
 
 [back](./)
-
-Deeper Specialization
----------------------
 
 `[ Preliminary documentation ]`
 
@@ -24,7 +21,7 @@ __Contents__
 - [Deeper System Command Shadowing](#deeper-system-command-shadowing)
 - [The Deeper Specializations Structure](#the-deeper-specializations-structure)
 
-### Introduction
+## Introduction
 
 The main concept of deeper specialization is that you can not only specialize direct members of an object, but you can also alter and extend members from deeper objects. A simple example is to exclude a member of a sub-object. Here is a normal object with a couple of public sub-objects:
 
@@ -40,7 +37,7 @@ This makes it possible to create a simplified set of members for the sub-objects
 
 It is the higher parent object that imposes restrictions to access to the deeper objects. So the higher parent object might store those restrictions for deeper objects in a tree structure of __Deeper Specializations__. Even though this is something quite special, it still has a quite simple notation.
 
-### Other Specialization Techniques
+## Other Specialization Techniques
 
 Specialization of deeper objects also applies to the other specialization techniques:
 
@@ -64,15 +61,15 @@ Specialization of deeper objects also applies to the other specialization techni
 
 These specialization techniques were already explained in the article *Specialization*. Here follow pictures of those situations in case of deeper specialization.
 
-### Deeper Exclusion
+## Deeper Exclusion
 
 ![](images/4.%20Deeper%20Specialization.004.png)
 
-### Deeper Inclusion
+## Deeper Inclusion
 
 ![](images/4.%20Deeper%20Specialization.005.png)
 
-### Deeper Member Addition
+## Deeper Member Addition
 
 Given the following situation:
 
@@ -86,7 +83,7 @@ Now you can add any additional members to __A . B__:
 
 ![](images/4.%20Deeper%20Specialization.008.png)
 
-### Even Deeper Member Addition
+## Even Deeper Member Addition
 
 However, if the additional member might be added to an even deeper level, each level might be given a specialized version.
 
@@ -114,11 +111,11 @@ There is one more thing we might do. There are now two members __A__ inside obje
 
 ![](images/4.%20Deeper%20Specialization.014.png)
 
-### Deeper Shadowing
+## Deeper Shadowing
 
 ![](images/4.%20Deeper%20Specialization.015.png)
 
-### Deeper Overriding
+## Deeper Overriding
 
 *Object reference notation:*
 
@@ -128,23 +125,23 @@ There is one more thing we might do. There are now two members __A__ inside obje
 
 ![](images/4.%20Deeper%20Specialization.017.png)
 
-### Deeper Command Extension
+## Deeper Command Extension
 
 ![](images/4.%20Deeper%20Specialization.018.png)
 
-### Deeper System Command Extension
+## Deeper System Command Extension
 
 ![](images/4.%20Deeper%20Specialization.019.png)
 
-### Deeper System Command Overriding
+## Deeper System Command Overriding
 
 ![](images/4.%20Deeper%20Specialization.020.png)
 
-### Deeper System Command Shadowing
+## Deeper System Command Shadowing
 
 ![](images/4.%20Deeper%20Specialization.021.png)
 
-### The Deeper Specializations Structure
+## The Deeper Specializations Structure
 
 Some deeper specializations are registered inside the deeper objects themselves, such as command extensions and overriding. Here is overriding as an example:
 

@@ -1,12 +1,9 @@
-﻿Encircle Language Spec
-======================
+﻿Type Safety, Genericity, Explicit
+=================================
 
 *JJ van Zon, 2021*
 
 [back](..)
-
-Type Safety, Genericity, Explicit
----------------------------------
 
 `[ Preliminary documentation ]`
 
@@ -36,6 +33,11 @@ __Contents__
             - [Explicit and Generic Command Interface](#explicit-and-generic-command-interface)
         - [Type-Interface Interaction](#type-interface-interaction)
             - [Type Interface Genericity](#type-interface-genericity)
+                - [Using Interface Extends Type Line](#using-interface-extends-type-line)
+                - [Object Shows Only Used Interface Implementation](#object-shows-only-used-interface-implementation)
+                - [Create Symbol: Create Object of the Whole Type](#create-symbol-create-object-of-the-whole-type)
+                - [Choose From Multiple Types](#choose-from-multiple-types)
+                - [No Interface Line: Follow Object Line](#no-interface-line-follow-object-line)
             - [Interface Type Genericity](#interface-type-genericity)
             - [Interface Command Genericity](#interface-command-genericity)
             - [Overview of Genericities of Type-Interface Interaction](#overview-of-genericities-of-type-interface-interaction)
@@ -51,7 +53,7 @@ __Contents__
         - [Operators](#operators)
 
 
-### Loose Ideas
+## Loose Ideas
 
 Encircle language an item can be quite generic. So the wish for Encircle to work with both concepts of explicit and generic seems granted there.
 
@@ -130,7 +132,7 @@ But when just using an object as a folder, you keep the way the object looks tot
 
 JJ
 
-### More Ideas
+## More Ideas
 
 Type Control,
 2008-10-20
@@ -145,13 +147,13 @@ Enough for now.
 
 JJ
 
-### From Original Symbol Documentation
+## From Original Symbol Documentation
 
-#### Object Basics
+### Object Basics
+
+#### Same Object, Same Type
 
 ##### Same Object, Same Type
-
-###### Same Object, Same Type
 
 If you make two symbols the same object:
 
@@ -161,7 +163,7 @@ They automatically are the same type, sort of like this:
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.001b.png)
 
-###### Same Type, Same Interfaces
+##### Same Type, Same Interfaces
 
 When you make two symbols the same type:
 
@@ -171,7 +173,7 @@ They (by default) automatically get the same interfaces, sort of like this:
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.001d.png)
 
-###### Same Object, Same Type, Same Interfaces
+##### Same Object, Same Type, Same Interfaces
 
 If you make two symbols the same object:
 
@@ -181,7 +183,7 @@ They automatically have the same type with (by default) the same interfaces, sor
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.001f.png)
 
-###### Not Shorthand
+##### Not Shorthand
 
 However, you can’t call it *shorthand*. The following two are not precisely the same thing:
 
@@ -191,7 +193,7 @@ However, you can’t call it *shorthand*. The following two are not precisely th
 
 The lack or presence of a type line *might* make a difference, as might be explained in a later chapter.
 
-##### Same Command, Same Interface
+#### Same Command, Same Interface
 
 When you make two symbols the same command:
 
@@ -203,7 +205,7 @@ They also get the same interface, sort of like this:
 
 However, the lack or presence of an interface line *might* make a difference, as might be explained later.
 
-#### Genericity
+### Genericity
 
 Genericity is about the how loose or rigid a system aspect is.
 
@@ -211,11 +213,11 @@ For instance, if a circle has no type line, the object can be of any type. The t
 
 There are more such phenomena. This section might cover all of them.
 
-##### Object Symbol Genericity
+#### Object Symbol Genericity
 
 This section covers the all forms of genericity for object symbols.
 
-###### Original and Delegated Object
+##### Original and Delegated Object
 
 The first concept I might explain is quite simple.
 
@@ -238,7 +240,7 @@ Synonyms for the terms *delegated* and *original* are allowed. *Delegated* has s
 
 The redirection of the object aspect is the main type of redirection. Therefore you can also speak of *the* delegation.
 
-###### Original and Delegated Type
+##### Original and Delegated Type
 
 It works almost the same for the type aspect. However, the type aspect can be delegated by both a type line as well as an object line. If a symbol has a type line or object line, then it is said to have a *delegated type*.
 
@@ -267,7 +269,7 @@ When you remove a type line, the symbol’s  original contents reappear. So the 
 | __Delegated type__ | Type determined by a line  |
 |                    | (type or object line)      |
 
-###### Explicit and Generic Type
+##### Explicit and Generic Type
 
 This is the genericity already explained in the introduction to genericity. When a type is undetermined by a type line, the symbol adopts the type of its object target, whatever type this object may be of.
 
@@ -291,7 +293,7 @@ The type is *explicit* in that case. You can also say that the type is *set*.
 
 If the type is determined by no line at all then it has an *original type*. You can speak of neither explicit nor generic in that case. When the type is generic or explicit, it’s always delegated. If the type is explicit, the type is delegated by the type line. If the type is generic, the type is delegated by the object line.
 
-###### Original and Delegated Interface
+##### Original and Delegated Interface
 
 The interface can be determined by the target of the interface line, type line or object line, but the interface line is most determinant. If any of those line are set, the interface is diverted to the interface target, object target or type target. It is said to be *delegated*. If an object symbol has no interface line, it has its *original interface*.
 
@@ -308,7 +310,7 @@ During execution the interface can change from being delegated to original and b
 
 The use of delegation of the interface is to fix the interface and to use an already defined interface.
 
-###### Explicit and Generic Interface
+##### Explicit and Generic Interface
 
 As the type can be explicitly set, the interface can also be explicitly set. It’s only about the interface set by an interface line; the other line types don’t explicitly set the interface. If the interface is set, then the type or object can only be a symbol whose type at least supports the interface.
 
@@ -336,11 +338,11 @@ If a symbol has no interface line, the interface is said to be *generic*. It ado
 
 If the interface is determined by no line at all then it has an *original interface*. You speak of neither explicit nor generic in that case. When the interface is generic or explicit, it’s always delegated. If the interface is explicit, the interface is delegated by the interface line. If the interface is generic, the interface is delegated by either type or object line.
 
-##### Command Symbol Genericity
+#### Command Symbol Genericity
 
 This section covers the genericity concepts around command symbols.
 
-###### Original and Delegated Definition
+##### Original and Delegated Definition
 
 When a command symbol has a reference line, it adopts the command definition of its line target. The symbol has a delegated definition. If the symbol has no reference line, it defines the command itself. It has its original definition.
 
@@ -357,7 +359,7 @@ The definition of the command symbol determines its symbolic contents. As a syst
 
 You can also speak of *original command* and *delegated command* or *the delegation of a command*.
 
-###### Original and Delegated Execution
+##### Original and Delegated Execution
 
 When there’s a diamond somewhere the reference line redirection,
 
@@ -380,7 +382,7 @@ You don’t usually talk about *squares* having an *original execution*, however
 
 the square *is* said to have a *delegated execution*.
 
-###### Original and Delegated Command Interface
+##### Original and Delegated Command Interface
 
 The interface of a command can be delegated to its definition target, but it can also be delegated by an interface line. 
 
@@ -402,7 +404,7 @@ The *use* of delegation of the interface is to fix the interface of a command an
 | __Delegated interface__ | Interface determined by a line  |
 |                         | (interface or reference line)   |
 
-###### Explicit and Generic Command Interface
+##### Explicit and Generic Command Interface
 
 If a command symbol has an interface line then its definition can only be one that has that particular interface. The interface is explicit.
 
@@ -421,13 +423,13 @@ If the interface line of a command symbol isn’t set then it adopts the interfa
 | __Generic interface__  | Interface determined by reference line                     |
 |                        | (symbol adopts any interface the command might have)       |
 
-##### Type-Interface Interaction
+#### Type-Interface Interaction
 
-###### Type Interface Genericity
+##### Type Interface Genericity
 
 A special form of genericity is very important and it’s crucial for the use of interfaces at all. I’m talking about: the interface doesn’t determine the type. It’s a genericity always present.
 
-####### Using Interface Extends Type Line
+###### Using Interface Extends Type Line
 
 When you set the interface of a symbol then it can only point to definitions that have the interface or support the interface. I might now describe how using a supported interface works.
 
@@ -441,7 +443,7 @@ One one hand you can a see using the supported interface as a silent extension o
 
 But on the other hand it’s not like that, because that might mean that __Object A__ gets __Type B__. It still has __Type A__ however. When __Object A__ is created, an object of __Type A__ is is created, not __Type B__. But __Object A__ can only call upon the members of __Interface A__.
 
-####### Object Shows Only Used Interface Implementation
+###### Object Shows Only Used Interface Implementation
 
 The source object only shows the implementation of the interface it has:
 
@@ -451,7 +453,7 @@ Not the contents of the whole type:
 
 ![](images/Type%20Safety,%20Genericity,%20Explicit.039.jpeg)
 
-####### Create Symbol: Create Object of the Whole Type
+###### Create Symbol: Create Object of the Whole Type
 
 However, when you *create* the symbol, an object of the *full type* is created. This is useful: other symbols may be pointers to the same object, but may use a different interface.
 
@@ -461,11 +463,11 @@ However, when you *create* the symbol, an object of the *full type* is created. 
 
 So object symbols tied together with object lines might not use the same interface at all. The picture above shows that when you use an object line (__Symbol B__ points to __Symbol A__), the target doesn’t might have the same interface, only the same type.
 
-####### Choose From Multiple Types
+###### Choose From Multiple Types
 
 So one interesting thing about type-interface genericity is that when you’ve set a symbol’s interface line, you can still choose from multiple types.
 
-####### No Interface Line: Follow Object Line
+###### No Interface Line: Follow Object Line
 
 If there is no interface line, the *object* determines *which* interface of the type is used, as the pictures below demonstrate.
 
@@ -476,7 +478,7 @@ __Symbol A__ redirects the type to __Type A__. In the first picture __Symbol A__
 
 This means that the object line determines the interface sooner than the type line. That’s why in the interface trace, the object line is preferred over the type line.
 
-###### Interface Type Genericity
+##### Interface Type Genericity
 
 Another very important use of the separation between types and interfaces is that you can choose any *object* that supports the interface, not worrying about its type.
 
@@ -486,11 +488,11 @@ Another very important use of the separation between types and interfaces is tha
 
 Conversely, you can let a program that isn’t familiar with your type, use your type anyway, by supporting an interface that the other program *is* familiar with.
 
-###### Interface Command Genericity
+##### Interface Command Genericity
 
 Interface command genericity is like interface type genericity. It means that if you fix the command interface, you can still choose from multiple command definitions.
 
-###### Overview of Genericities of Type-Interface Interaction
+##### Overview of Genericities of Type-Interface Interaction
 
 |                              |                                                      |
 |------------------------------|------------------------------------------------------|
@@ -498,13 +500,13 @@ Interface command genericity is like interface type genericity. It means that if
 | Type interface genericity    | Fixing the type doesn’t fix the interface            |
 | Interface-command genericity | Fixing the command interface doesn’t fix the command |
 
-##### Final Issues
+#### Final Issues
 
-###### Explicit Isn’t Fixed
+##### Explicit Isn’t Fixed
 
 When a symbol has an explicit type, it’s object can only be of that type. Having an explicit type, however doesn’t mean that the type of a symbol can’t change. If you change the type line, you’ve changed the type. The only way to make the type immutable at run time is by making it impossible to change the type line at run time. How to do that is explained in a later chapter.
 
-###### Same Object, Same Type
+##### Same Object, Same Type
 
 Earlier on, in the section *Object Basics : Same Object, Same Type* I said that if you make two symbols the same object:
 
@@ -516,7 +518,7 @@ they automatically are the same type, sort of like this:
 
 The topics of genericity show that these two pictures aren’t synonyms. In the second picture the type is explicit, while in the first picture the type is generic. The same goes for the other comparisons in that section.
 
-##### Delegated to Original in a Circularity
+#### Delegated to Original in a Circularity
 
 When you annul a symbol’s type line, it usually regains its original type. All symbols pointing to the reappeared original type, now also have a different type.
 
@@ -530,7 +532,7 @@ When you break one of the lines in the circularity, you might think that the one
 
 If you break one of the lines in the circularity, the one loosing the line comes to represent the type and the other members of the former circularity now delegate their type to it.
 
-##### Overview
+#### Overview
 
 | __Object Symbol Genericity__ | |        |                              |
 |-|---------------|-----------------------|------------------------------|
@@ -578,9 +580,9 @@ If you break one of the lines in the circularity, the one loosing the line comes
 |                                 | Type interface genericity    | Fixing the type doesn’t fix the interface |
 |                                 | Interface-command genericity | Fixing the command interface doesn’t fix the command |
 
-### More from the original Symbol documentation
+## More from the original Symbol documentation
 
-#### Old
+### Old
 
 < Also look at Access Media : Interface Access >
 - \> 2009-06-28 later also called Access Ways and Special Access
@@ -654,7 +656,7 @@ You can change whether or not a type or interface is generic. It is a separate a
 
 If a symbol already has a type line it has to have that type. If it doesn’t have a type line then it gets the type of the object it’s pointing at (not considering the interface problem below) 
 
-##### Interface < >
+#### Interface < >
 
 Something like this should be possible:
 
@@ -673,11 +675,11 @@ Another direction rule can be added I guess, looking at the implicit piece of th
 
 The rule about the type line determines the interface line stays. It’s just that there’s an implicit extension to the type line, which can be generic, pointing at the interface that is the interface of the child…
 
-##### Type
+#### Type
 
 If you redirect with an object line then the object reference gets the same type as the target object (except when you use a different interface, the previous problem I introduced). Not all the symbols might get a line to the type, though.
 
-##### Operators
+#### Operators
 
 |                            |       |
 |---------------------------:|:------|

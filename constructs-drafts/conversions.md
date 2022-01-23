@@ -1,16 +1,13 @@
-﻿Circular Language | Construct Drafts
-====================================
-
-Conversions
------------
+﻿Construct Drafts | Conversions
+==============================
 
 `[ Preliminary documentation ]`
 
-### Loose Ideas
+## Loose Ideas
 
 *The texts below are loose ideas, yet to be turned into good documentation.*
 
-#### Brainstorm
+### Brainstorm
 
 If the State isn’t assigned to the same type then a conversion might take place. The target type for the state assignment might define the conversion and this conversion is bound to the state source type; for each state source type, the state target type might define a conversion. If the conversion isn’t defined then it’s not possible to assign a state of that type.
 
@@ -22,11 +19,11 @@ Conversion commands are considered system commands as well. One type can define 
 
 < If you want to convert a number to text then the text object should define the conversion for all this stuff. Hmm… maybe the source object should be able to define the conversion too. >
 
-#### Conversions Aren’t Create Commands
+### Conversions Aren’t Create Commands
 
 This comment is made because in the C++ programming language, conversion commands *are* alternative create commands. A conversion might not involve the creation of an object. A conversion is the assignment of new values to an existing object, values that are based on the values of an object from a different type.
 
-#### More Ideas
+### More Ideas
 
 Conversion,  
 2009-05-12

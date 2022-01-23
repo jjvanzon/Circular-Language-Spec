@@ -1,8 +1,5 @@
-﻿Circular Language Construct Drafts
-==================================
-
-Input Output | Loose Ideas
---------------------------
+﻿Construct Drafts | Input Output | Loose Ideas
+=============================================
 
 `[ Preliminary documentation ]`
 

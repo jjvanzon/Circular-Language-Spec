@@ -1,10 +1,7 @@
-﻿Circular Language Spec | System Interfaces
-==========================================
+﻿System Interfaces | System Command Call Notations
+=================================================
 
 [back](./)
-
-System Command Call Notations
------------------------------
 
 `[ Preliminary documentation ]`
 
@@ -20,7 +17,7 @@ __Contents__
 - [Explicit Get & Set](#explicit-get--set)
 - [Explicit Display of Assignment](#explicit-display-of-assignment)
 
-### Introduction
+## Introduction
 
 There might be several notations for calling a system command.
 
@@ -28,9 +25,9 @@ Direct calls to __Get__, __Set__ and __Use__ commands might not usually be seen.
 
 But being introduced to using __Get__ and __Set__ commands, instead of a single assignment call, might give a lower-level view on assignment. This lower-level perspective might be of use when wanting to use alternative forms of assignment, that do not seem to fit into an assignment notation.
 
-### Notational Choices
+## Notational Choices
 
-#### Distinguishing Object-Bound and Reference-Bound Aspects
+### Distinguishing Object-Bound and Reference-Bound Aspects
 
 There are system commands that apply to object references and to the object itself. System commands, that apply to an object reference are displayed here with a parent around the targeted reference:
 
@@ -40,7 +37,7 @@ System commands, that apply to the object itself are displayed without a parent 
 
 ![](images/3.%20System%20Command%20Call%20Notations.002.png)
 
-#### System Interface Call Notation
+### System Interface Call Notation
 
 One of the notations for system command calls is calling upon the command definition in the system interface:
 
@@ -50,11 +47,11 @@ This might be a regular way to display a command call in Circular, but now a cal
 
 There could be multiple ways to display the content of the system interface. They might depend on taste, application or needs. This article may go for a system interface that looks relatively simple with often a loose square in it representing a system command.
 
-### System Interface Calls versus Assignment
+## System Interface Calls versus Assignment
 
 System command calls to __Get__, __Set__ or __Use__ might not often be visible, because they might usually be implied by assignment calls. But for alternative types of assignment, that do not have a standard assignment notation, you can explicitly display __Get__, __Set__ and __Use__ calls. When a simpler notation might not suffice, displaying __Get__, __Use__ or __Set__ command explicitly might be needed. This basically only happens in unusual cross-aspect assignments. In abstract diagram expression though, you can always use the explicit notations to simply make a point.
 
-### System Interface Calls
+## System Interface Calls
 
 Here is an attempt to systematically display all the system commands thus far in a system interface command call notation. Where the calls look similar this might be relevant to realize, where the calls look particular this might be relevant to realize as different. Which are similar and which are different might become apparent from this full overview.
 
@@ -82,7 +79,7 @@ Here is an attempt to systematically display all the system commands thus far in
 | ![](images/3.%20System%20Command%20Call%20Notations.018.png) |                                                              |
 |           (also has a basic command call notation)           |                                                              |
 
-### System Interface Calls with Arguments
+## System Interface Calls with Arguments
 
 Above were shown the basic system command call notation, but most system command calls are incomplete without an argument.
 
@@ -148,7 +145,7 @@ Some commands might not be covered by assignment notation, which might make expl
 |               (Get Object `=>`) <br> __Add `<=`__              |                          __Remove__                          |
 |  ![](images/3.%20System%20Command%20Call%20Notations.034.png)  |                      *(no parameters)*                       |
 
-### Explicit Get & Set
+## Explicit Get & Set
 
 Assignment has a special, simplified notation covered in the *Assignment* article. But you can also display the __Get__ and __Set__ of the assignment explicitly. This notation is only required when there is no simplified notation available for what you want. However, explicit notation of __Get__ and __Set__ can always be used in *abstract* diagram expression just to make a point. The overview below aims to express different combinations of two system command calls, mainly __Get__ & __Set__ combinations, but may also mention other combinations such as a __Get Object__ and then __Add__.
 
@@ -178,7 +175,7 @@ The __Annul__ and __Remove__ commands' explicit notations were already covered b
 
 The workings of the __New__ command without a class argument might be internal implementation of an overload of the __New__ command in the system interface.
 
-### Explicit Display of Assignment
+## Explicit Display of Assignment
 
 An assignment has a simple notation:
 

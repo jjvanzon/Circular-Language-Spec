@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Commands
-=================================
+﻿Start & Stop
+============
 
 [back](./)
-
-Start & Stop
-------------
 
 `[ Preliminary documentation ]`
 
@@ -48,7 +45,7 @@ __Contents__
 - [Warning Execution State](#warning-execution-state)
 - [Normal Speed](#normal-speed)
 
-### Introduction
+## Introduction
 
 An executable object might be run, paused, stopped, perhaps recorded or put in reverse, etcetera. Those might be called *execution commands*.
 
@@ -78,7 +75,7 @@ The following execution states and execution commands may be considered:
 - __Error__
 - __Warning__
 
-### Execution Commands & States
+## Execution Commands & States
 
 Which execution commands could be invoke, may depend on the execution *state* a command is in. When a command has *finished*, it might not be possible to *play* it again. When a command would be *not runnable*, it might not be an option to *play* it at all.
 
@@ -97,11 +94,11 @@ The following *execution commands* might not be *execution states*:
 
 But it seems most can be both execution commands and execution states.
 
-### Availability
+## Availability
 
 The availability of execution commands or execution states may also be dependent on the particular application. For instance a media player or debugger or perhaps a different user application. It may also depend on what a diagram tries to express.
 
-### Diagram Notation
+## Diagram Notation
 
 Each of the following commands or states may have a symbol. The symbols may be similar to those of a media player:
 
@@ -159,12 +156,12 @@ The following command may not be executable at all:
 Any execution state might be indicated for a command object like that.
 
 
-### Descriptions
+## Descriptions
 
 Below an attempt to describe each execution command and execution state separately.
 
 
-### Previous Execution Command
+## Previous Execution Command
 
 The __Previous__ execution command may immediately stop the execution of the current command and positions the instruction position to the command previous in line. And if there is no previous sibling command, there might be moved a level up, to the parent command.
 
@@ -173,7 +170,7 @@ The __Previous__ execution command is only available if there is a previous comm
 The __Previous__ command might cause a __Stop__ state on the previous command for computation and might cause a __Play__ state on the previous item for playable media, making it start to run immediately.
 
 
-### Rollback Execution Command
+## Rollback Execution Command
 
 The __Rollback__ execution command might undo all changes of the current command and makes all data return to the state it was before the command had started. If the same data has already been changed by another source it may be overwritten by the original value it had before running the command or the change on that particular data item may not be rolled back at all, or some sort of concurrency resolution might be applied, but concurrency issues might be dealt with later.
 
@@ -184,12 +181,12 @@ The __Rollback__ execution command is only available if the command has started 
 The __Rollback__ command might cause a __Rollback__ state on the current command.
 
 
-### Rollback Execution State
+## Rollback Execution State
 
 After a __Rollback__ has executed, the command might be in Rollback state (rolled back), which is actually a __Stop__ state, but then after a __Rollback__.
 
 
-### Faster Backwards Execution Command
+## Faster Backwards Execution Command
 
 The __Faster Backwards__ execution command might start or continue a rollback in a fast pace or faster pace or faster, but never entirely at top speed.
 
@@ -198,12 +195,12 @@ The __Faster Backwards__ execution command is only available if the command is f
 The __Faster Backwards__ execution command might cause a __Faster Backwards__, __Reverse__ or __Slower Backwards__ execution state (if it is going faster but still slow).
 
 
-### Faster Backwards Execution State
+## Faster Backwards Execution State
 
 A __Faster Backwards__ (going fast backwards) execution state is the system’s ‘subjective’ opinion of whether the current speed of going backwards is faster than average. In that case the command, thread or playable medium might get __Faster Backwards__ execution state.
 
 
-### Slower Backwards Execution Command
+## Slower Backwards Execution Command
 
 The __Slower Backwards__ execution command might start or continue a rollback in a slow pace, slower pace, or as slow ‘as possible’.
 
@@ -212,12 +209,12 @@ The __Slower Backwards__ execution command is only available if the command is f
 The __Slower Backwards__ execution command might cause a __Slower Backwards__, __Reverse__ or __Faster Backwards__ execution state.
 
 
-### Slower Backwards Execution State
+## Slower Backwards Execution State
 
 A __Slower Backwards__ execution state (going slower backwards) is the system’s ‘subjective’ opinion of whether the current speed of going backwards is slower than average. In that case the command, thread or playable medium might get __Slower Backwards__ execution state.
 
 
-### Reverse Execution Command
+## Reverse Execution Command
 
 The __Reverse__ execution command might start a rollback at normal speed. In case of regular computation, normal speed might be top speed. For video, audio or presentation or any other type of running media, normal is not as fast as possible, but the normal speed of presentation but then in reverse.
 
@@ -226,14 +223,14 @@ The __Reverse__ execution command is only available if a command is finished or 
 The __Reverse__ command causes the execution to get the __Reverse__ execution state.
 
 
-### Reverse Execution State
+## Reverse Execution State
 
 A command or other executable object gets the __Reverse__ execution state if it is rolling back at normal speed. For regular computation, normal speed is top speed. For playable media, normal reverse speed is the same speed as normal forward speed, but then in reverse.
 
 If the speed is slower or faster than considered average, the execution state might be set to either __Faster Backwards__ or __Slower Backwards__.
 
 
-### Play Execution Command
+## Play Execution Command
 
 The __Play__ execution command might start or continue execution at normal speed. In case of regular computation, normal speed might be *top* speed. For video, audio or presentation or any other type of running media, normal is not as fast as possible.
 
@@ -242,12 +239,12 @@ The __Play__ execution command is only available if a command is runnable or any
 The __Play__ execution command might cause the __Play__ execution state.
 
 
-### Play Execution State
+## Play Execution State
 
 __Play__ is the execution state a command gets when going at normal speed. In case of regular computation normal speed is *top* speed. In case of playable media normal speed is the normal playing speed of the medium.
 
 
-### Slower Execution Command
+## Slower Execution Command
 
 The __Slower__ execution command might make the current execution speed slow, or slower, but never come to a complete halt. If the command is in a rollback, it might make the command start to go forward again.
 
@@ -256,12 +253,12 @@ The __Slower__ execution command is only available if the command is runnable or
 The __Slower__ execution command might cause a __Slower__, __Play__ or __Faster__ execution state.
 
 
-### Slower Execution State
+## Slower Execution State
 
 A __Slower__ execution state is the system’s ‘subjective’ opinion of whether the current speed of going forward is slower than average. In that case the command, thread or playable medium might get __Slower__ execution state.
 
 
-### Faster Execution Command
+## Faster Execution Command
 
 The __Faster__ execution command might make the current execution speed fast, or faster, but never top speed. If the command is in a rollback, it might make the command start to go forward again.
 
@@ -270,19 +267,19 @@ The __Faster__ execution command is only available if the command is runnable or
 The __Faster__ execution command might cause a __Faster__, __Play__ or __Slower__ execution state.
 
 
-### Faster Execution State
+## Faster Execution State
 
 A __Faster__ execution state is the system’s ‘subjective’ opinion of whether the current speed of going forward is faster than average. In that case the command, thread or playable medium might get __Faster__ execution state.
 
 
-### Go To End Execution Command
+## Go To End Execution Command
 
 The __Go To End__ command might make the command fast-forward to the end at top speed. For normal computation this is the same as __Play__, except when normal speed is set to slower than top speed. For runnable media this is not the same as play, but going to the end of the execution as fast as possible.
 
 The __Go To End__ execution command eventually causes the __Finished__ execution state, once it is done going forward as fast as possible. Until then, the execution state is __Faster__.
 
 
-### Next Execution Command
+## Next Execution Command
 
 The __Next__ execution command immediately stops the execution of the current command and positions the instruction position to the next command in line. And if there is no next sibling command, there might be moved a level up, to the parent command.
 
@@ -291,7 +288,7 @@ The __Next__ execution command is only available if there is a next command to g
 The __Next__ command might cause a __Stop__ state on the next command for computation and might cause a __Play__ state on the next item for playable media.
 
 
-### Pause Execution Command
+## Pause Execution Command
 
 The __Pause__ command pauses execution at the point it is at, until you press __Play__ or another command again.
 
@@ -306,12 +303,12 @@ A __Pause__ can also be set on a sub-command inside a definition. Then, each cal
 The __Pause__ execution command causes a __Pause__ execution state.
 
 
-### Pause Execution State
+## Pause Execution State
 
 See the section above: *Pause Execution Command*. A command might get the __Pause__ state if a __Pause__ was invoked on it.
 
 
-### Wait Execution Command
+## Wait Execution Command
 
 It may be useful for an execution to be able to wait on another execution.
 
@@ -324,12 +321,12 @@ The __Wait__ execution command causes the __Wait__ execution state.
 The implementation may use the fact that a single executable object might have multiple next-command references. The waiting command could register itself as a next command of another command in order to wait on it.
 
 
-### Wait Execution State
+## Wait Execution State
 
 An executable object might get the __Wait__ state if a __Wait__ execution command was invoked on it.
 
 
-### Timer Execution Command
+## Timer Execution Command
 
 The __Timer__ command is not really an execution command. It lets you schedule the execution of a command. You could schedule it at any selected moment in time, seconds, or month from now or repeatedly have the command run at set times.
 
@@ -342,17 +339,17 @@ __Timer__ might be a good excuse to have an inactive command class redirect to a
 You can also put a __Timer__ on a __Record__ command, instead of a __Play__ command, to start recording something at a set time.
 
 
-### Timer Execution State
+## Timer Execution State
 
 An executable object gets the __Timer__ state if the executable object is scheduled to execute in the future at a given time.
 
 
-### Not Runnable Execution State
+## Not Runnable Execution State
 
 A command definition might often have the __Not Runnable__ execution state. Command definitions are mostly inactive command objects. Inactive command object can never be run, because inactive command objects are usually command definitions and running a command definition may cause the command definition’s default values to change, while a command definition is considered to be static and unchanging. That’s why inactive command objects might get the execution state __Not Runnable__. Any inactive reference to a command object is also __Not Runnable__.
 
 
-### Stop Execution Command
+## Stop Execution Command
 
 The __Stop__ command might immediately stop the execution of the command or thread. This can be dangerous, because it is better to either let a command finish completely or roll it back entirely, and not leave it in some intermediate state. But in a lot of other cases it is not much of a problem.
 
@@ -365,40 +362,40 @@ The __Stop__ command can also be used to stop a recording. In that case it might
 The __Stop__ command might cause the current command to be put in __Stop__ state.
 
 
-### Stop Execution State
+## Stop Execution State
 
 The __Stop__ execution state is not as dangerous as the Stop execution command. The __Stop__ execution command might end a command right in the middle. But if an executable object has not been run yet, it also has the __Stop__ state. After pressing __Stop__, a command might indeed also end  up in the __Stop__ state, but a command also has this state if it has not been run before.
 
 
-### Finished Execution State
+## Finished Execution State
 
 The __Finished__ execution state is there, when the command has completed normally in its entirety. In that case the executable command can not be run again. A playable medium, though, *can* be run again after it has finished.
 
 
-### Record Execution Command
+## Record Execution Command
 
 The __Record__ command can replace a command definition, with whatever action a user or a thread might perform, until recording is stopped.
 
 The __Record__ execution command might cause a command to be put in __Record__ state.
 
 
-### Record Execution State*
+## Record Execution State*
 
 An executable object might get the __Record__ state when it is recording, after a __Record__ execution command was invoked on it.
 
 
-### Error Execution State
+## Error Execution State
 
 An error may cause an immediate rollback in the new system, but perhaps a program might also pause. Perhaps only in debugging state. In that case, when an error occurs, the execution stops on the current command and the error puts it in the __Error__ execution state.
 
 
-### Warning Execution State
+## Warning Execution State
 
 When debugging and something uncommon happens, the execution might be put in __Warning__ state, but this actually might not hinder execution, so one could think of a situation in which an execution is in __Warning__ state, but still continues to run.
 
 Any object or reference line could also be put in __Warning__ state if something exceptional, but benign, is going on with it.
 
 
-### Normal Speed
+## Normal Speed
 
 In a normal situation, normal speed for computation is top speed, and normal speed for a playable medium is the normal speed to play the medium. But you can indicate an alternate normal speed. If you are reviewing a playable medium, that you might be needing to look at in slow motion, you can make slow motion the normal speed. In that case __Play__ means going in slow motion, and __Faster__ means it is going faster than the normal rate of slow motion. If you are debugging, you might also set the normal speed of computation to slower. In that case you can visually follow the execution of the commands. This normal rate of slow motion might also be the barrier for what the states __Slower__ and __Faster__ might consider the average speed.

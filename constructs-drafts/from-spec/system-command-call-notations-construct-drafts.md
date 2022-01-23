@@ -1,10 +1,7 @@
-﻿Circular Language Construct Drafts | From Spec
-==============================================
+﻿Construct Drafts | From Spec | System Interfaces | System Command Call Notations Construct Drafts
+=================================================================================================
 
 `[ Deprecated documentation ]`
-
-System Interfaces | System Command Call Notations Construct Drafts
-------------------------------------------------------------------
 
 __Contents__
 
@@ -16,11 +13,11 @@ __Contents__
 - [Explicit Get & Set Arguments](#explicit-get--set-arguments)
 - [Explicit Display of Assignment](#explicit-display-of-assignment)
 
-### System Interface Command Call Notation
+## System Interface Command Call Notation
 
 There might be other options for displaying a call to a system command that are laid out in the articles that follow.
 
-### Simplified System Interface Calls
+## Simplified System Interface Calls
 
 System command calls might be so fundamental, that they may the most basic notation that still fits within the language, even though it can get a more complex notation when fully drawn out.
 
@@ -65,7 +62,7 @@ Here follow the basic notations for all the system commands.
 |        __Add__       |         __Remove__         |
 | ![](images/3.%20System%20Command%20Call%20Notations%20Construct%20Drafts.015.png) | ![](images/3.%20System%20Command%20Call%20Notations%20Construct%20Drafts.016.png) |
 
-### System Interface Calls with Arguments
+## System Interface Calls with Arguments
 
 System commands can use a simplified argument notation.
 
@@ -156,7 +153,7 @@ Yielding over between __Class__ aspect and __Object__ aspect:
 
 Most of the notations above might never be used. Only the notation for the __New__ and __Add__ arguments are common.
 
-#### Class Assignment Extended
+### Class Assignment Extended
 
 This creates the following notations of the different ways to use a class:
 
@@ -184,7 +181,7 @@ This creates the following notations of the different ways to use a class:
 
 The __Class Get__ notation and the __Class Set__ notation both have the same effect, only in one case it is the __Get__ that is explicitly displayed and in the other case it is the __Set__ that is explicitly displayed. It is not yet clear which is the best one.
 
-### Explicit Get & Set
+## Explicit Get & Set
 
 The following are examples of explicit __Get__ and __Set__ notations. It works for any __Get__, __Set__ or __Use__ that you want to combine together.
 
@@ -200,7 +197,7 @@ When you look at the aspects introduced so far, the only time you may need the e
 
 Whenever a simpler notation is available, such as an assignment notation, the simpler notation is used, however, alternative notations can *always* be used to simply express a point in *abstract* diagram notation.
 
-### Explicit Get & Set Arguments
+## Explicit Get & Set Arguments
 
 This article sheds light on *explicit Get & Set argument* notations. Several notations are introduced. It is not clear yet which is the best one.
 
@@ -267,7 +264,7 @@ Explicit display of __Get__ and __Set__ arguments is hardly ever used, because t
 
 You might only use explicit display of __Get__ and __Set__ arguments in abstract diagram expression when you just want to make a point.
 
-### Explicit Display of Assignment
+## Explicit Display of Assignment
 
 The main thing explicitly displayed here is that the *system interface* is opened up, showing explicitly what aspects and system commands are called. The following picture demonstrates this:
 

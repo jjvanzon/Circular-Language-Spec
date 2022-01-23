@@ -1,10 +1,7 @@
-﻿Circular Language Spec | System Interfaces
-==========================================
+﻿System Interfaces | List Concept
+================================
 
 [back](./)
-
-List Concept
-------------
 
 `[ Preliminary documentation ]`
 

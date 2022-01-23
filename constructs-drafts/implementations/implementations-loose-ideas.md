@@ -1,8 +1,5 @@
-Circular Language Construct Drafts | Implementations
-====================================================
-
-Implementations Loose Ideas
----------------------------
+Construct Drafts | Implementations | Implementations Loose Ideas
+================================================================
 
 `[ Preliminary documentation ]`
 

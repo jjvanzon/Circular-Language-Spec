@@ -1,8 +1,5 @@
-﻿Circular Language | Construct Drafts
-====================================
-
-Special Access
---------------
+﻿Construct Drafts | Special Access
+=================================
 
 `[ Preliminary documentation ]`
 
@@ -20,7 +17,7 @@ __Contents__
 - [Modules, Interfaces and Nested Commands](#modules-interfaces-and-nested-commands)
 - [Brainstorm](#brainstorm-1)
 
-### Introduction 
+## Introduction 
 
 (From the original Symbol documentation)
 
@@ -28,11 +25,11 @@ __Contents__
 
 There’s several ways to access a command. The most common way is for commands of the same object to call upon each other. The second most common way is for a parent to access a child’s commands. A global object is accessible from anywhere within the module and there are more ways. I might discuss these different ways of access one by one in this section.
 
-### Neighbor Access
+## Neighbor Access
 
 < Discuss commands within the same object accessing each other. >
 
-### Child Access
+## Child Access
 
 The normal way of accessing an object is *child access*: an object can only access its what’s inside of it: its ancestors.
 
@@ -55,7 +52,7 @@ The object is then accessing this *reference*, which is inside the object. The r
 Variables declared inside a parent block in a command are accessible directly by the child blocks. Variables declared inside a child block are inaccessible to a parent block.  
 />
 
-### Nested Command Access
+## Nested Command Access
 
 Or: 'access from nested commands'.
 
@@ -81,7 +78,7 @@ But a nested command might not have access to a nested command that doesn’t en
 
 So its like the borders of nested commands can be ignored in outward access.
 
-#### Brainstorm
+### Brainstorm
 
 Nested commands may have special access privileges compared to delegated command symbols.
 
@@ -92,7 +89,7 @@ Nested commands may freely access anything of its parent block and the parent bl
 
 In the picture above, the top two lines could have been set by A itself. The first resides in A’s parent nested command. The second resides in the *execution* that parents A, so still accessible to A. The last line, crossed out, can’t be set by A itself, because it resides outside A’s containing call. It can be set only by a symbol higher than A’s containing call, for instance B.
 
-### Global Access
+## Global Access
 
 < Nice sentence:  
 Module makes all direct children accessible to all ancestors >
@@ -141,11 +138,11 @@ This is also an invitation to making a more refined division in software compone
 
 The child module in the picture above can only access things global inside itself. It can not access the global things of its parent module.
 
-### Pentagons not Exchangeable with Triangles and Circles
+## Pentagons not Exchangeable with Triangles and Circles
 
 A pentagon is not exchangeable with triangles and circles as much as triangles and circles are exchangeable. Global has the side effect that things become accessible where otherwise inaccessible. If you suddenly replace the pentagon with a circle or triangle it might mean that things formerly global are no longer global and all sorts of accesses in the module object are suddenly invalid. For that a pentagon stays a pentagon and a reference to it can only be a pentagon itself.
 
-### Extra Indication
+## Extra Indication
 
 There are two common ways to extra denote that you’re referencing something global.
 
@@ -163,7 +160,7 @@ You can also put a multiply peeled pentagon in the direct parent object and refe
 
 This multiply peeled pentagon doesn’t exist either.
 
-### Interface Access
+## Interface Access
 
 The separate interfaces of an object:
 
@@ -188,7 +185,7 @@ So its like the borders of triangles can be ignored in inward access. You might 
 
 < This concept could have a place in Genericity. >
 
-### Modules, Interfaces and Nested Commands
+## Modules, Interfaces and Nested Commands
 
 So usually only parents can access their descendant’s things.
 
@@ -196,7 +193,7 @@ Modules, interface implementations and nested commands make exceptions on those 
 
 The public descendants of a module are accessible from anywhere within the module, the borders of triangles can be ignored and a nested command can directly access anything in its ancestor nested commands its command definition.
 
-### Brainstorm
+## Brainstorm
 
 Nested command members can access the members of its ancestor command symbols. 
 

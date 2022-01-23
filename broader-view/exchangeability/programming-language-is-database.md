@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Exchangeability
-================================================
-
-Programming Language = Database
--------------------------------
+﻿Circular Language Broader View | Exchangeability | Programming Language = Database
+==================================================================================
 
 `[ Preliminary documentation ]`
 

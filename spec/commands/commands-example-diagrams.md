@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Commands
-=================================
+﻿Commands | Example Diagrams
+===========================
 
 [back](./)
-
-Example Diagrams
-----------------
 
 `[ Preliminary documentation ]`
 
@@ -42,7 +39,7 @@ __Contents__
 - [Reference to Sibling Active Nested Command](#reference-to-sibling-active-nested-command)
 - [Call to Sibling Inactive Nested Command](#call-to-sibling-inactive-nested-command)
 
-### Introduction
+## Introduction
 
 This article tries to systematically demonstrate different situations of commands.
 
@@ -58,19 +55,19 @@ Relationships between the following concepts may be demonstrated. It is containm
 | __Parameter__ | <img src="images/parameter.png" width="100" /> | Instruction passed to a command, that makes it behave differently. |
 | __Local variable__ | <img src="images/local-variable.png" width="100" /> | Helper variables inside a command, invisible from the outside. |
 
-### Command Calls in a Command Definition
+## Command Calls in a Command Definition
 
 ![](images/5.%20Commands%20Example%20Diagrams.001.png)
 
 The large square is the parent command definition. The diamonds inside the parent command are two command calls. The diamonds are connected to squares with dashed lines. This makes those squares the command calls’ command definitions.
 
-### Command Calls in a Command Call
+## Command Calls in a Command Call
 
 ![](images/5.%20Commands%20Example%20Diagrams.002.png)
 
 The bigger diamond is a command call, because it is tied to its definition, the larger square, with a dashed line, a class line. The smaller diamonds inside the larger diamonds are command calls inside a command call. The smaller diamonds also point out their definitions, the smaller squares, with a dashed line, a class line.
 
-### Command Calls in a Command Reference
+## Command Calls in a Command Reference
 
 ![](images/5.%20Commands%20Example%20Diagrams.003.png)
 
@@ -78,7 +75,7 @@ The square on the left is a command reference, because it points out its target 
 
 The command reference and its target could also be replaced with a diamond arbitrarily, which make the command reference or target command executable.
 
-### Parameters in a Command Definition
+## Parameters in a Command Definition
 
 The diagram below displays an inactive command definition with parameters:
 
@@ -86,13 +83,13 @@ The diagram below displays an inactive command definition with parameters:
 
 The square is a command definition. The circles inside of it are the parameters. The rest of what’s visible in the diagram are the parameter passings. Parameter passings are explained in the *parameter* articles. The parameter passings are the lines connected to the circles, that are marked with an access mark.
 
-### Parameters in a Command Call
+## Parameters in a Command Call
 
 ![](images/5.%20Commands%20Example%20Diagrams.005.png)
 
 The diamond shape is a command call. What makes it a command call, is that it is tied to its command definition, the square, with a class line, the dashed line. The circles inside the diamond are the parameters. The parameters are tied to objects on the outside with parameter passings. The parameter passings are the lines connecting the smaller circles inside the diamond, the parameters, to the larger circles outside the diamond. Parameter passings are explained later in the *parameter* articles.
 
-### Parameters in a Command Reference
+## Parameters in a Command Reference
 
 ![](images/5.%20Commands%20Example%20Diagrams.006.png)
 
@@ -100,7 +97,7 @@ The larger square on the left is a command reference. It is tied to its referenc
 
 Either of the squares could have been replaced by a diamond, making the command symbol executable, rather than dormant.
 
-### Local variables in a Command Definition
+## Local variables in a Command Definition
 
 ![](images/5.%20Commands%20Example%20Diagrams.007.png)
 
@@ -112,7 +109,7 @@ The following picture is another possible expression of the variables:
 
 Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it might be obvious: if they do not have a parameter passing, then they are private.
 
-### Local Variables in a Command Call
+## Local Variables in a Command Call
 
 ![](images/5.%20Commands%20Example%20Diagrams.009.png)
 
@@ -124,7 +121,7 @@ Another possible expression of the local variables is the following:
 
 Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it might be obvious: if they do not have a parameter passing, then they are private.
 
-### Local variables in a Command Reference
+## Local variables in a Command Reference
 
 ![](images/5.%20Commands%20Example%20Diagrams.011.png)
 
@@ -138,19 +135,19 @@ Because public object, parameters, always come with an indication of the paramet
 
 Either of the square could have been replaced by a diamond, making the command symbol executable, rather than dormant.
 
-### Command References in a Command Definition
+## Command References in a Command Definition
 
 ![](images/5.%20Commands%20Example%20Diagrams.013.png)
 
 The larger square is a command definition. The smaller square inside them are command references in a command definition. They are actually *public* command references. This makes the command references *parameters* of the command definition. The command references have object lines, solid ones, going outside, ending at an access mark. Those object lines are indications of parameter passing, indicating that the command references are so called Reference parameters. Parameter passings are explained in the *parameter* articles.
 
-### Command References in a Command Call
+## Command References in a Command Call
 
 ![](images/5.%20Commands%20Example%20Diagrams.014.png)
 
 The diamond is a command call. The command call’s definition is indicated with the dashed line, pointing to the square on the right, which is the command definition. The smaller squares inside the call are command references in a command call. They are actually *public* command references. This makes the command references *parameters* of the command call. The command references have object lines, solid ones, going outside, ending at the targets of the command references.
 
-### Command References in a Command Reference
+## Command References in a Command Reference
 
 ![](images/5.%20Commands%20Example%20Diagrams.015.png)
 
@@ -158,7 +155,7 @@ The larger square on the left is a command reference. The target of the command 
 
 Most of the squares could have been replaced by diamond shapes, making the command symbol executable, rather than dormant. But the smaller squares inside the larger square can not be replaced by diamonds, because a command can not contain active command references, for reasons explained by the article *Parent Controls Its Sub-Executions*.
 
-### Nested Commands in Nested Commands
+## Nested Commands in Nested Commands
 
 Because nested commands are always part of a parent command, the parent command is displayed in the pictures below as the outer square. Inside the square is a nested command, and inside that symbol are two nested commands in a nested command. Inactive nested commands are squares. Active nested commands are diamonds.
 
@@ -178,19 +175,19 @@ Active nested commands in an active nested command in a command definition:
 
 ![](images/5.%20Commands%20Example%20Diagrams.019.png)
 
-### Inactive Nested Commands in a Command Definition
+## Inactive Nested Commands in a Command Definition
 
 ![](images/5.%20Commands%20Example%20Diagrams.020.png)
 
 The larger square is a command definition. The smaller squares inside the larger square are inactive nested commands inside a command definition. Squares inside a square, that do not redirect, are inactive nested commands.
 
-### Inactive Nested Commands in a Command Call
+## Inactive Nested Commands in a Command Call
 
 ![](images/5.%20Commands%20Example%20Diagrams.021.png)
 
 The diamond shape is a command call. The command definition of the command call is pointed out by the dashed line, pointing at the square on the right, which is the command definition. The diamond contains two squares, that do not redirect. Those are the inactive nested commands inside the command call. They are nested commands, because they are situated inside a command symbol and they do not redirect their target.
 
-### Inactive Nested Commands in a Command Reference
+## Inactive Nested Commands in a Command Reference
 
 ![](images/5.%20Commands%20Example%20Diagrams.022.png)
 
@@ -198,19 +195,19 @@ The large square on the left is a command reference. It is pointing out its targ
 
 Either of the larger squares could have been replaced by a diamond, making the command symbol executable, rather than dormant.
 
-### Active Nested Commands in a Command Definition
+## Active Nested Commands in a Command Definition
 
 ![](images/5.%20Commands%20Example%20Diagrams.023.png)
 
 The square is a command definition. The diamond shapes squares inside the square are active nested commands inside a command definition. Diamonds inside a square, that do not redirect, are active nested commands.
 
-### Active Nested Commands in a Command Call
+## Active Nested Commands in a Command Call
 
 ![](images/5.%20Commands%20Example%20Diagrams.024.png)
 
 The diamond shape is a command call. The command definition of the command call is pointed out by the dashed line, pointing at the square, which is the command definition. The diamond contains two diamond shapes, that do not redirect. Those are the active nested commands inside the command call. They are nested commands, because they are situated inside a command symbol and they do not redirect their target.
 
-### Active Nested Commands in a Command Reference
+## Active Nested Commands in a Command Reference
 
 ![](images/5.%20Commands%20Example%20Diagrams.025.png)
 
@@ -218,31 +215,31 @@ The large square on the left is a command reference. It is pointing out its targ
 
 Either of the squares could have been replaced by a diamond, making the command symbol executable, rather than dormant.
 
-### Command Calls in an Inactive Nested Command
+## Command Calls in an Inactive Nested Command
 
 ![](images/5.%20Commands%20Example%20Diagrams.026.png)
 
 The large square is the command definition the nested command is in. The square inside of it, is the inactive nested command. It contains two diamonds, which are the command calls inside the inactive nested command. The diamonds redirect their command definition with a class line, a dashed line, connected to the squares on the right, which are the command definitions, that are called.
 
-### Command Calls in an Active Nested Command
+## Command Calls in an Active Nested Command
 
 ![](images/5.%20Commands%20Example%20Diagrams.027.png)
 
 The large square is the command definition the nested command is in. The diamond inside of it, is the active nested command. It contains two diamonds, which are the command calls inside the active nested command. The small diamonds redirect their command definition with a class line, a dashed line, connected to the squares on the right, which are the command definitions, that are called.
 
-### Parameters in an Inactive Nested Command
+## Parameters in an Inactive Nested Command
 
 ![](images/5.%20Commands%20Example%20Diagrams.028.png)
 
 The large square is a command definition the inactive nested command is in. The square inside the square is the inactive nested command. The inactive nested command contains three circles, which are the parameters in the nested command. The lines connected to the circles, which are also dissected by an access mark, are the parameter passings. Parameter passings are explained in the *parameter* articles.
 
-### Parameters in an Active Nested Command
+## Parameters in an Active Nested Command
 
 ![](images/5.%20Commands%20Example%20Diagrams.029.png)
 
 The large square is a command definition the inactive nested command is in. The diamond inside the square is the active nested command. The diamond contains three circles, which are the parameters in the nested command. The circles inside the diamond are connected to the circles outside the diamond with parameter passings. Parameter passings are explained in the *Parameters* articles.
 
-### Local Variables in an Inactive Nested Command
+## Local Variables in an Inactive Nested Command
 
 ![](images/5.%20Commands%20Example%20Diagrams.030.png)
 
@@ -254,7 +251,7 @@ Another possible expression of the local variables is the following:
 
 Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it might be obvious: if they do not have a parameter passing, then they are private.
 
-### Local variables in an Active Nested Command
+## Local variables in an Active Nested Command
 
 ![](images/5.%20Commands%20Example%20Diagrams.032.png)
 
@@ -266,27 +263,27 @@ Another possible expression of the local variables is the following:
 
 Because public object, parameters, always come with an indication of the parameter passing, you may not need to express the objects’ being private, because it might be obvious: if they do not have a parameter passing, then they are private.
 
-### Command References in an Inactive Nested Command
+## Command References in an Inactive Nested Command
 
 ![](images/5.%20Commands%20Example%20Diagrams.034.png)
 
 The large square is a command definition, the inactive nested command is in. The square inside the large square is the nested command. The inactive nested command contains two squares, which are the command references. They are actually *public* command references. This makes the command references parameters of the inactive nested command. The command references have object lines, solid ones, going outside, ending at an access mark. Those object lines are indications of parameter passing, indicating that the command references are so called Reference parameters. Parameter passings are explained in the *Parameters* articles. The parameters are not filled in, because an inactive nested command is a dormant command definition. Only in a call to the dormant command definitions, the parameters are filled in.
 
-### Command References in an Active Nested Command
+## Command References in an Active Nested Command
 
 ![](images/5.%20Commands%20Example%20Diagrams.035.png)
 
 The large square is the command definition, that the active nested command is in. The diamond is the active nested command. The smaller squares inside the diamond are command references in an active nested command. They are actually *public* command references. This makes the command references parameters of the active nested command. The command references have object lines, solid ones, going outside, ending at the targets of the command references.
 
-### Reference to Sibling Inactive Nested Command
+## Reference to Sibling Inactive Nested Command
 
 ![](images/7.%20Commands%20Ideas.077.jpeg)
 
-### Reference to Sibling Active Nested Command
+## Reference to Sibling Active Nested Command
 
 ![](images/7.%20Commands%20Ideas.078.jpeg)
 
-### Call to Sibling Inactive Nested Command
+## Call to Sibling Inactive Nested Command
 
 ![](images/7.%20Commands%20Ideas.079.jpeg)
 

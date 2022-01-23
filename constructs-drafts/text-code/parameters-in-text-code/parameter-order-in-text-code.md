@@ -1,10 +1,7 @@
-﻿Circular Language Construct Drafts | Parameters in Text Code
-============================================================
+﻿Construct Drafts | Parameters in Text Code | Parameter Order in Text Code
+=========================================================================
 
 `[ Deprecated documentation ]`
-
-Parameter Order in Text Code
-----------------------------
 
 The article *Parameter Order* introduced the concept of an ordered list of parameters. In text code, you can just list them out in that order then. Textual display is totally preliminary, because text code of Circular is totally not worked out yet.
 

@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Exchangeability
-================================================
-
-Hand Signs
-----------
+﻿Circular Language Broader View | Exchangeability | Hand Signs
+=============================================================
 
 `[ Preliminary documentation ]`
 

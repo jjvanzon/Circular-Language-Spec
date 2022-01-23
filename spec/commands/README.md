@@ -1,10 +1,7 @@
-Circular Language Spec
-======================
+Commands Articles
+=================
 
 [back](../..)
-
-Commands Articles
------------------
 
 - [Commands Main Concepts](commands-main-concepts.md)
 - [Start & Stop](start-and-stop.md)

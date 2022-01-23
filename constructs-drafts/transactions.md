@@ -1,8 +1,5 @@
-﻿Circular Language | Construct Drafts
-====================================
-
-Transactions
-------------
+﻿Construct Drafts | Transactions
+===============================
 
 `[ Preliminary documentation ]`
 

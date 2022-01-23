@@ -1,10 +1,7 @@
-﻿Circular Language | Construct Drafts
-====================================
+﻿Construct Drafts | Ancestry Terms
+=================================
 
 `[ Deprecated documentation ]`
-
-Ancestry Terms
---------------
 
 A containment structure is also called an *ancestry*.
 
@@ -46,7 +43,7 @@ Cousins are objects whose parents are siblings.
 
 ![](images/80.%20Ancestry%20Terms.003.png)
 
-### Terms
+## Terms
 
 This introduces a lot of terms for ancestry. Here are most of them repeated in a list:
 

@@ -1,10 +1,8 @@
-﻿Circular Language Spec | Black Boxes
-====================================
+﻿Black Boxes | Public & Private Connectors, Connections & Assignments
+====================================================================
 
 [back](./)
 
-Public & Private Connectors, Connections & Assignments
-------------------------------------------------------
 
 `[ Preliminary documentation ]`
 
@@ -52,11 +50,11 @@ __Contents__
         - [Only Object and Class Assignments](#only-object-and-class-assignments)
         - [Connectors & Assignments](#connectors--assignments)
 
-### Public & Private Connectors
+## Public & Private Connectors
 
 The following articles display the various access connectors an object can have.
 
-#### Object Connectors
+### Object Connectors
 
 |                       |                        |                       |
 |:---------------------:|:----------------------:|:---------------------:|
@@ -66,7 +64,7 @@ The following articles display the various access connectors an object can have.
 | __Public Object Set__ | __Private Object Set__ | __Friend Object Set__ |
 | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.004.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.005.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.006.png) |
 
-#### Class Connectors
+### Class Connectors
 
 |                                    |                                      |                                     |
 |:----------------------------------:|:------------------------------------:|:-----------------------------------:|
@@ -82,7 +80,7 @@ The following articles display the various access connectors an object can have.
 |  __Public Object <br> Class Get__  |  __Private Object <br> Class Get__   |  __Friend Object <br> Class Get__   |
 | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.016.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.017.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.018.png) |
 
-#### Value Connectors
+### Value Connectors
 
 |                      |                       |                      |
 |:--------------------:|:---------------------:|:--------------------:|
@@ -92,7 +90,7 @@ The following articles display the various access connectors an object can have.
 | __Public Value Set__ | __Private Value Set__ | __Friend Value Set__ |
 | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.022.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.023.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.024.png) |
 
-#### Data Connectors
+### Data Connectors
 
 |                     |                      |                     |
 |:-------------------:|:--------------------:|:-------------------:|
@@ -102,7 +100,7 @@ The following articles display the various access connectors an object can have.
 | __Public Data Set__ | __Private Data Set__ | __Friend Data Set__ |
 | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.028.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.029.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.030.png) |
 
-#### Clone Connectors
+### Clone Connectors
 
 |                          |                           |                          |
 |:------------------------:|:-------------------------:|:------------------------:|
@@ -112,7 +110,7 @@ The following articles display the various access connectors an object can have.
 | __Public Clone (2) Set__ | __Private Clone (2) Set__ | __Friend Clone (2) Set__ |
 | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.034.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.035.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.036.png) |
 
-#### Existence Connectors
+### Existence Connectors
 
 |                  |                   |                  |
 |:----------------:|:-----------------:|:----------------:|
@@ -122,27 +120,27 @@ The following articles display the various access connectors an object can have.
 | __Public Annul__ | __Private Annul__ | __Friend Annul__ |
 | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.040.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.041.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.042.png) |
 
-#### Execute Connectors
+### Execute Connectors
 
 | __Public Execute__ | __Private Execute__ | __Friend Execute__ |
 |:------------------:|:-------------------:|:------------------:|
 | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.043.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.044.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.045.png) |
 
-#### Add And Remove Connectors ...
+### Add And Remove Connectors ...
 
 ...
 
-#### Remarks
+### Remarks
 
-##### Object-Bound & Reference Bound Connectors
+#### Object-Bound & Reference Bound Connectors
 
 > In the overviews, object-bound connectors are displayed with a separate shape without a parent, while reference-bound connectors are displayed with the target inside a parent. 
 
-##### Object Class Connectors
+#### Object Class Connectors
 
 > There is no __Object Class Set__ connector, because the object class can not be freely set; it can only be set on object creation.
 
-##### Class Get and Use As Class Connectors
+#### Class Get and Use As Class Connectors
 
 > For the __Class__ aspect, there is a distinction between __Use As Class__ and __Class Get__. They are different. __Use As Class__ makes you use one symbol as the class for another symbol. That is how classes are most commonly used. That might be the result of an __Object Get__ on the source object, followed by a __Class Set__ on the target object. No __Class Get__ is involved in a __Use As Class__ action, which you might expect if you draw a parallel to the __Object__ aspect.
 >
@@ -152,7 +150,7 @@ The following articles display the various access connectors an object can have.
 >
 > The funny thing about access controlling __Use As Class__, is that you are actually access controlling the __Object Get__ for specific use in a class assignment.
 
-##### Value Connectors
+#### Value Connectors
 
 > Note that for the __Value__ aspect the directions of __Get__ and __Set__ are switched compared to the __Object__ aspect
 > 
@@ -162,7 +160,7 @@ The following articles display the various access connectors an object can have.
 > 
 > This is because for the __Object__ aspect, the access mark indicates the direction of the *resultant line*, while for the __Value__ aspect, the access mark indicates the direction of the *assignment*. You might remember, that each aspect has its own unique behavior.
 
-##### Data Connectors
+#### Data Connectors
 
 > You can access control sub-objects, to apply some sort of write-protection to the sub-object. But that might not write-protect the sub-objects of the sub-objects. To collectively write-protect any sub-object, you can access control the object’s __Data__ aspect.
 >
@@ -170,7 +168,7 @@ The following articles display the various access connectors an object can have.
 >
 > A preliminary notation for __Data__ access is a *triple wavy line* (‘triple’ expressing multitude, ‘wavy’ expressing values or data).
 
-##### Clone Connectors
+#### Clone Connectors
 
 > The __Value__ aspect is about copying the direct value of the object. But you can also copy the values of sub-objects up to a certain cloning depth. The could be any number of levels up to which the values of sub-objects are cloned. The diagrams in the overview show access connectors for cloning at a depth of __2__. That is just an example. Any cloning depth other than two can also be separately access controlled.
 > 
@@ -182,19 +180,19 @@ The following articles display the various access connectors an object can have.
 > 
 > __Clone__ is simply that closely related to the __Value__ aspect.
 
-##### Interface Connectors & Other Connectors
+#### Interface Connectors & Other Connectors
 
 > There are also interface connectors, but *interfaces* as a whole might be caught up with in the *Interfaces* article group. Interface connectors work roughly the same as class connectors. In fact, any other aspect that might be introduced in the future might extend the set of possible connectors.
 
-##### Preliminary System Command Notation
+#### Preliminary System Command Notation
 
 > The access connectors using the system command notation have a preliminary notation. The exact notation system commands might get an update in the future.
 
-### Public & Private Connections
+## Public & Private Connections
 
 This section covers any kind of connection between objects, that are a *result* of accessing system aspects.
 
-#### Object Connections
+### Object Connections
 
 |                                       |                                       |
 |:-------------------------------------:|:-------------------------------------:|
@@ -204,7 +202,7 @@ This section covers any kind of connection between objects, that are a *result* 
 | __Public Object Set <br> Connection__ | __Friend Object Set <br> Connection__ |
 | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.048.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.049.png) |
 
-#### Class Connections
+### Class Connections
 
 |                                         |                                         |
 |:---------------------------------------:|:---------------------------------------:|
@@ -214,7 +212,7 @@ This section covers any kind of connection between objects, that are a *result* 
 |  __Public Class Set <br> Connection__   |  __Friend Class Set <br> Connection__   |
 | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.052.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.053.png) |
 
-#### Value Connections
+### Value Connections
 
 |                                      |                                      |
 |:------------------------------------:|:------------------------------------:|
@@ -224,7 +222,7 @@ This section covers any kind of connection between objects, that are a *result* 
 | __Public Value Set <br> Connection__ | __Friend Value Set <br> Connection__ |
 | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.056.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.057.png) |
 
-#### Clone Connections
+### Clone Connections
 
 |                                          |                                          |
 |:----------------------------------------:|:----------------------------------------:|
@@ -234,7 +232,7 @@ This section covers any kind of connection between objects, that are a *result* 
 | __Public Clone (2) Set <br> Connection__ | __Friend Clone (2) Set <br> Connection__ |
 | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.060.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.061.png) |
 
-#### New & Annul Calls
+### New & Annul Calls
 
 __New__ and __Annul__ connections are *calls* to the __New__ and __Annul__ system commands.
 
@@ -271,7 +269,7 @@ An access connector stands for a potential connection and should look like the p
 
 For now the notation of system command connectors is open to discussion.
 
-#### Execute Connections
+### Execute Connections
 
 < TO DO: You might address the details in *Using Command Symbols* and the preliminariness of the system command notation might eventually be removed. And then you might display just the actual connections (executable references to the command) that are already visible inside the more complex pictures now shown below. >
 
@@ -305,13 +303,13 @@ The notation for access controlling system commands is not final yet. But becaus
 
 With not even the word ‘execute’ in it anymore.
 
-#### < Add And Remove Connections ... >
+### < Add And Remove Connections ... >
 
 ...
 
-#### Remarks
+### Remarks
 
-##### Friend and Private Connections
+#### Friend and Private Connections
 
 > Because there is not distinction between a __Friend__ connection and a __Private__ *connection*, __Friend__ connections:
 > 
@@ -319,7 +317,7 @@ With not even the word ‘execute’ in it anymore.
 > 
 > are called __Private__ connections as well.
 
-##### Object Set Connections
+#### Object Set Connections
 
 > The __Public__ and __Friend Object Set__ connections look the same.
 > 
@@ -329,11 +327,11 @@ With not even the word ‘execute’ in it anymore.
 > 
 > __Public__ and __Friend__ might not matter for outward connections. __Public__ or __Friend__ access only mattered when *establishing* the outward connection. Outward connections are passive connections: direct connections to the target object. *Inward* connections, though, cause a __Get__ command on each consult of the source symbol, so in that case an actual *access* takes place, and the distinction between __Friend__ or __Public__ access might matter.
 
-##### Class Connections
+#### Class Connections
 
 > __Use As Class__ and __Class Set__ are covered here. __Class Get__ is not covered here, because that is only used in an assignment, and > assignments are addressed in other section: *Assignment of System Aspects*. 
 
-##### Value Connections
+#### Value Connections
 
 > Note that the indication of *direction* for __Get__ and __Set__ is switched for the __Value__ aspect, compared to the __Object__ aspect: __Object Get__ is inward, while __Value Get__ is *outward*.
 > 
@@ -341,7 +339,7 @@ With not even the word ‘execute’ in it anymore.
 > 
 > What you can also notice is that outward __Value__ connections do have access marks, while outward connections for the __Object__ and __Class__ aspects do *not* show access marks. This is because *outward* __Object__ and __Class__ connections are passive connections and outward __Value__ connections are *active* connections, because an __Value__ connection always requires an active assignment.
 
-##### Data Connections
+#### Data Connections
 
 > A __Data__ connector such as the following:
 > 
@@ -353,13 +351,13 @@ With not even the word ‘execute’ in it anymore.
 > 
 > Even though there is a __Data__ *connector*, there are no __Data__ *connections*. Any __Get__ connection to a sub-object is be considered a __Data Get__ connection.
 
-##### Clone Connections
+#### Clone Connections
 
 > The diagrams above show access connections for cloning at a depth of __2__. That is just an example. Any cloning depth other than __2__ could be used.
 > 
 > Cloning has the exact same notation as the __Value__ aspect, but then with a number near the access mark. Cloning is that closely related to the __Value__ concept.
 
-##### Existence & Execute Connections
+#### Existence & Execute Connections
 
 > The remaining aspects are __Existence__ and __Execute__.
 > 
@@ -370,11 +368,11 @@ And for __Existence__ and __Execute__ that also means something different.
 > 
 > Here you see again, that all system aspects behave totally differently.
 
-### Public & Private Assignment
+## Public & Private Assignment
 
 This section demonstrates how accessing system aspects looks in assignment notations.
 
-#### Object Assignment
+### Object Assignment
 
 |                                          |                                          |
 |:----------------------------------------:|:----------------------------------------:|
@@ -384,7 +382,7 @@ This section demonstrates how accessing system aspects looks in assignment notat
 | __Public Object Set <br> in Assignment__ | __Friend Object Set <br> in Assignment__ |
 | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.079.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.080.png) |
 
-#### Class Assignment
+### Class Assignment
 
 |                                            |                                            |
 |:------------------------------------------:|:------------------------------------------:|
@@ -394,7 +392,7 @@ This section demonstrates how accessing system aspects looks in assignment notat
 |  __Public Class Set <br> in Assignment__   |   __Friend Class Se <br> in Assignment__   |
 | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.083.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.084.png) |
 
-#### Class Get Connection
+### Class Get Connection
 
 At first glance you might guess, that __Class Get__ in assignment looks something like this:
 
@@ -438,9 +436,9 @@ An alternative: assigning __Class__ object to __Object__ aspect of other symbol:
 | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.092.png) | ![](images/2.%20Public%20&%20Private%20Connectors,%20Connections%20&%20Assignments.093.png) |
 |             *(source is outward)*              |             *(source is outward)*              |
 
-#### Remarks
+### Remarks
 
-##### Only Object and Class Assignments
+#### Only Object and Class Assignments
 
 > Only __Object__ and __Class__ assignments are covered here.  
 > __Value__ and __Clone__ assignments were covered in *__Connections__ to System Aspects*.  
@@ -449,7 +447,7 @@ An alternative: assigning __Class__ object to __Object__ aspect of other symbol:
 > The __Existence__ aspect may involve assignment but that is not covered here.  
 > So it comes down to __Object__ and __Class__ assignments.
 
-##### Connectors & Assignments
+#### Connectors & Assignments
 
 > The following diagram shows __Object Set__ in an assignment, and the __Object Set__ access connector:
 > 

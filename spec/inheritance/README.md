@@ -1,10 +1,7 @@
-Circular Language Spec
-======================
+Inheritance Articles
+====================
 
 [back](../..)
-
-Inheritance Articles
---------------------
 
 - [Main Concepts](inheritance-main-concepts.md)
 - [Specialization](specialization.md)

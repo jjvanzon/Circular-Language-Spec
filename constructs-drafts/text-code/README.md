@@ -1,10 +1,7 @@
-﻿Circular Language | Construct Drafts
-====================================
+﻿Construct Drafts | Text Code
+============================
 
 `[ Deprecated documentation ]`
-
-Text Code
----------
 
 Traditionally systematics of a program might be expressed by means of text code. But in Circular language, systematics might be stored in another way for instance as binary interlinked objects. Text code may be a mere *expression* of those stored objects. A *Text Code* sub-module might translate those systematics to text code. The text code might be adapted, which may result in changes to the stored  objects, rather than the text code’s being literally stored.
 
@@ -14,19 +11,19 @@ The articles might not have been finished. They might be throw-togethers of idea
 
 You might find the following content here:
 
-- ### [Identifiers](identifiers)
+- ## [Identifiers](identifiers)
 
     - Identifiers may be names for objects, collections, attributes, sites, programs, modules or other elements of a system. 
 
-- ### [Literals](literals)
+- ## [Literals](literals)
 
     - The idea here might be that each language element’s textual representation might be considered the language element’s *literal*, that could be read out and assigned. The idea was, that however large the construct, its text code might still just be a literal, be it composed of the literals of its sub-constructs.
 
-- ### [Parameters in Text Code](parameters-in-text-code)
+- ## [Parameters in Text Code](parameters-in-text-code)
 
     - Here might be found several specific topics about parameter notation in text code.
 
-- ### [Access Operators](access-operators.md)
+- ## [Access Operators](access-operators.md)
 
     - This article might just be a throw-together of ideas. Traditional text codes may have access operators to access an object, a class, a command, arrays, pointers or values. Because other languages may have access operators, the documentation about Circular might also have an *Access Operators* article, which may make an attempt to figure out what place access operators might have in the Circular language. In C++ documentation access operators seem to be introduced like they have an analogy to mathematical operators:  
 
@@ -43,11 +40,11 @@ You might find the following content here:
 
     - Access operators seem hard to place inside a mathematical system. It may be difficult to find an analogy between mathematical operators and such access literals. However, a clearer view on what place access operators might have inside Circular language might be welcome. Access operators seem to be abstract character representations of system commands, such as __Object Get, Class Get, Item Get, Value Get__ and __Value Set__. All these system commands seem to be explained in the *System Interfaces* chapter of the *Spec*. Inside Circular language, access operators might just be textual expressions of calls to those system commands. What might not yet be clarified inside this unfinished article is how the access operators might textually look inside Circular.
 
-- ### [Assignment in Text Code](assignment-in-text-code.md)
+- ## [Assignment in Text Code](assignment-in-text-code.md)
 
     - A text notation might be suggested for assignment so that it might distinguish value, object, class and interface assignment and pointer-related assignments, for instance: `c=` or `o=->`.
 
-- ### Declaration on First Use
+- ## Declaration on First Use
 
     - Some programmer’s text books might say you should declare variables of a command at the beginning of a procedure, to keep an overview of all the variables used inside a command. It might be a bit subjective, if that is necessarily the best thing to do. A suggestion here is made, to declare a variable right before you use it. That might be a way to go. This may produce hints in the code about which parts of a command depend on which variable and which parts of a command do not use that variable. Perhaps declaring a variable upon first use requires slightly less CPU-power, than declaring all the variables at the beginning of the procedure, because if a code block is not executed, the variables used exclusively inside that code block might not be allocated or assigned.
 
@@ -55,17 +52,17 @@ You might find the following content here:
 
     - The concept of *‘closest mutual parent’* seems similar as a diagram notation idea that might be called *automatic containment*. There, a variable, reference or object might be displayed inside the *closest mutual parent* of all the objects which might use the variable, reference or object.
 
-- ### Half-Case-Sensitive Identifiers
+- ## Half-Case-Sensitive Identifiers
 
     - When typing an identifier to identify an element of the system, it might need to be *recognized* by the system. Other programming languages may recognize names either *case-sensitive* or *case-insensitive*. For the Circular language the recognition of identifiers might become *half*-case-sensitive: the recognition might only pay attention to upper case or lower case letters, if needed. Only when two identifiers with the same name may be within scope with different case usage, a case *sensitive* match might need to be made. This may combine two concepts into one. It might relieve possible confusion that that may arise from case-sensitive name matching, and may reintroduce it only when required.
 
     - This topic might not have its own article, but the issue may also have been explained in a documentation folder called *Identifiers*.
 
-- ### Macro Keywords
+- ## Macro Keywords
 
     - Macro keywords might be an idea, that may have come from an older design of the diagram notation. Access modifier literals might have been considered macro keywords. Some of the access modifiers, like __Public Read-Only__ could mean: __Get Public__ and __Set Private__. So the literals __Get Public__ and __Set Private__ may be replaced by the ‘macro keyword’ __Public Read-Only__. So there might be one keyword replacing a string of other keywords. That might have been the original concept of macro keywords. What place it may still have in the a newer design of the language might not be that clear. It might become part of the subject of *aspect literals*, with which you might introduce new textual notations.
 
-- ### Pointer Operators
+- ## Pointer Operators
 
     - The language C++ seems to have these pointer operators:
 
@@ -78,10 +75,10 @@ You might find the following content here:
 
     - These pointer operators, like access operators, might turn out to be calls to system commands, such as __Object Get, Class Get, Item Get, Value Get__ and __Value Set__. All these system commands may be explained inside the *System Interfaces* part of the *Spec*, not necessarily here. It might be an idea to try and have full availability of everything you might want to do with pointers inside Circular language. Which system commands might substitute dereference and address-of operators in C++ might be figured out. And whether or not more pointer operations may be welcome in the Circular language.
 
-- ### [Qualified Event Names](qualified-event-names.md)
+- ## [Qualified Event Names](qualified-event-names.md)
 
     - Tries to describe how it might look in text code to pick up an event from an object more than one layer deeper in the containment structure of the objects.
 
-- ### [Text Code Loose Ideas](text-code-loose-ideas.md)
+- ## [Text Code Loose Ideas](text-code-loose-ideas.md)
   
     - Contains older material, that might once be used inside newer documentation.

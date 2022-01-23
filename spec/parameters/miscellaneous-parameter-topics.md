@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Parameters
-===================================
+﻿Parameters | Miscellaneous Topics
+=================================
 
 [back](./)
-
-Miscellaneous Parameter Topics
-------------------------------
 
 `[ Preliminary documentation ]`
 
@@ -18,11 +15,11 @@ __Contents__
     - [Diagram](#diagram)
 - [Parameters For The Add Command](#parameters-for-the-add-command)
 
-### Introduction
+## Introduction
 
 The following articles may explain some miscellaneous parameter topics, that are not part of the main idea of parameters, but seem worth explaining anyway.
 
-### Parameter Passing
+## Parameter Passing
 
 *Object*, *class*, *value* and *execution* are called system aspects of a symbol. The basic ones are covered in the articles *System Interfaces*.
 
@@ -46,7 +43,7 @@ Parameter passing can also be called *parameter access control*.
 
 Examples of practical parameter access control may be covered later.
 
-### Joint Display of Access Connectors and Object Relations
+## Joint Display of Access Connectors and Object Relations
 
 When you see a parameter as a relation between a command and an object, it used to be a paradox, that the parameter can always point to an object on the outside, even though the parameter passing said, that you can only point *to* the parameter.
 
@@ -58,9 +55,9 @@ The relational position of the object and the way you can access it are separate
 
 The open-ended lines of the circles inside the diamond are the parameters’ access connectors, that define how the parameter is or can be used. You can define a new relation to the command by tying an object to an access connector of a parameter. The access connector might not be taken *in use*, because after you’ve used it to define a relation to the command, the access connector is still there, open for usage.
 
-### Parameters & Arguments
+## Parameters & Arguments
 
-#### Concept
+### Concept
 
 A command contains parameters. *Arguments* are what is filled in into the parameters. Basically arguments are the sources or targets of assignments, that have a parameter as a source or target. When the other side of the assignment, that is not the parameter, is outside the command, then that is the argument.
 
@@ -70,13 +67,13 @@ So an argument is what is filled in as the parameter, what is pointing to the pa
 
 Since an argument can be a pointer to a parameter, and a parameter can be pointed to multiple times, a single parameter can have multiple arguments.
 
-#### Diagram
+### Diagram
 
 The article *Parameters & Arguments* conceptually explained the usage of the term argument in relation to parameters. The current article gives examples of the diagrammatic expression of parameters and their arguments.
 
 ![](images/3.%20Miscellaneous%20Parameter%20Topics.002.png)
 
-### Parameters For The Add Command
+## Parameters For The Add Command
 
 The __Add__ command is a system command of a list. It can be called without any parameters. This might add a new item to the list.
 

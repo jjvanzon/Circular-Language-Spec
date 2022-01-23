@@ -1,8 +1,5 @@
-Circular Language Construct Drafts | Implementations
-====================================================
-
-Sequence Order Implementation
------------------------------
+Construct Drafts | Implementations | Sequence Order Implementation
+==================================================================
 
 `[ Out of Scope ]`
 
@@ -12,11 +9,11 @@ __Contents__
 - [Order Matters](#order-matters)
 - [Class . OrderMatters](#class--ordermatters)
 
-### Brainstorm
+## Brainstorm
 
 A strategy you could have is to ignore the expression of sequence order for now for experiment 3.0, and pick one later when the rest is up and running. You can might base up and running and ignore the expression of this concept. So the concept is implemented, but the expression is not. Yet another limitation to impose onto the first version of experiment 3.0.
 
-### Order Matters
+## Order Matters
 
 *This seems documentation about experiment 0.9: an experimental app, a code generator, in which a program might be based on classes and their relations.*
 
@@ -28,6 +25,6 @@ The __OrderMatters__ properties are not used by J Data Generator.
 
 Apart from __RelationClass__, __Class__ also has an __OrderMatters__ property intended to set __OrderMatters__ for all __RelationClasses__ of that __Class__.
 
-### Class . OrderMatters
+## Class . OrderMatters
 
 See the *Order Matters* section.

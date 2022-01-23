@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Extensibility
-==============================================
-
-Reflection
-----------
+﻿Circular Language Broader View | Extensibility | Reflection
+===========================================================
 
 `[ Preliminary documentation ]`
 

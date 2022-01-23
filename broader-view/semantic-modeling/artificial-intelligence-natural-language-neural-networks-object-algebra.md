@@ -1,12 +1,9 @@
-﻿Circular Language | Broader View
-================================
-
-Artificial Intelligence, Natural Language, Neural Networks, Object Algebra
---------------------------------------------------------------------------
+﻿Circular Language Broader View | Artificial Intelligence, Natural Language, Neural Networks, Object Algebra
+===========================================================================================================
 
 `[ Preliminary documentation ]`
 
-### Loose Ideas
+## Loose Ideas
 
 Men spreekt ervan dat computers moeten kunnen worden geïnstrueerd met gewone taal en dat dat dan een verder ontwikkelde vorm van programmeren is. Maar ik ben het daar niet mee eens. Dit is helemaal niet waar. Je kunt helemaal computers niet op die manier instrueren. Dan krijg je allemaal warrige, onbeduidende, 'ongevere' systemen. Je hebt een formele manier nodig om een computer te instrueren. Je kunt een computer niet goed inrichten met platte taal. Je moet een systeem hiërarchisch inrichten. De bewering dat de toekomstige computertaal moet lijken op gewone menselijke taal, is hetzelfde als zeggen, dat we rekensommen en wiskundige formules ook beter in normale taal kunnen opstellen, en dat dat dan de opvolger is van dingen uitdrukken in formules.
 

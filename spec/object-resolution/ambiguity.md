@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Object Resolution
-==========================================
+﻿Object Resolution | Ambiguity
+=============================
 
 [back](./)
-
-Ambiguity
----------
 
 `[ Preliminary documentation ]`
 

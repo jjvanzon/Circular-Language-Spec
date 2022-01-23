@@ -1,18 +1,15 @@
-﻿Circular Language Spec | Misc Diagram Topics
-============================================
+﻿Misc Diagram Topics | Coloring
+==============================
 
 [back](./)
 
-Coloring
---------
-
 `[ Preliminary documentation ]`
 
-### From the Original Symbol Documentation
+## From the Original Symbol Documentation
 
 Coloring is een analyse methode 
 
-#### Hierarchies
+### Hierarchies
 
 < This was the old way to express classes, before it became a special kind of line. But the below might give an idea about that you can use coloring for expressing hierarchy depth. >
 
@@ -25,7 +22,7 @@ Another way to see the type/object structure is by coloring the symbols. It can 
 
 The above shows all smaller circles in blue. That means that all three have the same type. The darker blue circle is the type of the lighter blue ones. Color depth can express the depth of the type/object hierarchy, like the depth of encapsulation is expressed by the size and residence of the circles. There is a standard complex way of doing this coloring. I might elaborate on this later. 
 
-### Other Ideas
+## Other Ideas
 
 2004,
 

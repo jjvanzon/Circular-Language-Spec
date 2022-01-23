@@ -1,8 +1,5 @@
-﻿Circular Language Construct Drafts | Implementations
-====================================================
-
-Achievability | Programming Language Programmed Within Itself
--------------------------------------------------------------
+﻿Construct Drafts | Implementations | Achievability | Programming Language Programmed Within Itself
+==================================================================================================
 
 `[ Out of Scope ]`
 
@@ -29,7 +26,7 @@ __Contents__
 - [Slowing Down On Each Added Layer](#slowing-down-on-each-added-layer)
 - [Loose Ideas](#loose-ideas)
 
-### Introduction
+## Introduction
 
 *(This article also covers subjects about the implementation of the code base.)*
 
@@ -55,11 +52,11 @@ The fact that this works, has already been proven with experiment 2.0.
 
 So in order to describe the computer language using the same computer language, you actually need a set of six engines running on top of each other.
 
-### The Six Layers
+## The Six Layers
 
 In order to program the Computer Language within itself, you may need to redescribe it six times, every time using the previous description as the programming language in which to program the next description.
 
-### Layer 1: The ccc-Layer
+## Layer 1: The ccc-Layer
 
 The 1st layer is programmed in C++. The first piece of its code roughly looks like this:
 
@@ -80,7 +77,7 @@ The first layer is also called the ccc-layer. Each c stands for C++. It means th
 
 The class CItem is not really part of the ccc-layer. CItem objects might still be used in the topmost layer, only the *class description* for a CItem object might be different in each layer. CItem objects are not considered C++ objects, they are considered Circular objects.
 
-### Layer 2: The gcc-Layer
+## Layer 2: The gcc-Layer
 
 The 2nd layer is programmed using the ccc-layer. The 2nd layer is also called the gcc-layer. The first bit of its code looks something like this:
 
@@ -106,7 +103,7 @@ The 1st layer is used here to describe the same system again. The 2nd layer is c
 
 At this point the language is already redescribed within itself, but the descriptions *look* totally different. Redescriptions continue until the next description looks exactly like the previous description.
 
-### Layer 3: The ggc-Layer
+## Layer 3: The ggc-Layer
 
 So then, the 3rd layer is described using the 2nd layer. It is called the ggc-layer. You’d better skip over the first line of code when, when you read it for the first time:
 
@@ -132,7 +129,7 @@ The layer is called the ggc layer. The first g stands for *generic*. When you us
 
 I guess I have made clear, that it is important to understand that CItem objects are *not* considered C++ objects but generic Circular objects.
 
-### About The Layers Up Until Now
+## About The Layers Up Until Now
 
 The first layer is the absolute minimum Circular might contain. In the second layer you build up a generic version of it, but it’s still described in a way, you couldn’t describe it in Circular itself. The third layer is programmed in a way, you could program it in a Circular programming environment. So this layer could be reprogrammed in a Circular programming environment.
 
@@ -142,7 +139,7 @@ In theory, you could directly program the running programming environment. So in
 
 A part of Circular might never be reprogrammed within itself. In experiment 0.9, the generator experiment, the generator itself was also never regenerated, only the part with which you describe a program. The absolute base of Circular might always be ‘hand written’.
 
-### Layer 4: The ggg-Layer
+## Layer 4: The ggg-Layer
 
 The 4th layer is called the ggg-layer and looks almost exactly the same as the 3rd layer, except for the first line of code.
 
@@ -173,23 +170,23 @@ So the three letters always indicate:
 - Its objects
 - Its classes
 
-### Generic & Non-Generic Classes
+## Generic & Non-Generic Classes
 
 So there are two commands in a CItem object that adapt the CItem to its class: one that takes a CClass object, that describes the class using a C++ object, and one that takes a CItem object, that describes the class Computer-Language-style.
 
-### Summary of Layers 1 - 4
+## Summary of Layers 1 - 4
 
 - So layer 1 provides a C++ way to define structures.
 - Layer 2 describes Circular again, using C++ CClass objects.
 - Layer 3 assigns these C++ CClass objects to CItem objects, and describes Circular in CItem objects, instead of CClass objects.
 - Layer 4 also consists of CItem objects, but the assigned classes are CItem objects themselves.
------
+<br/><br/>
 - So in the 1st layer everything is C++.
 - In the 2nd layer things are CClass objects.
 - In both the 3rd and the 4th layer, everything is described using CItem objects.
 - The difference between the 3rd and 4th layer is, that in the 3rd layer the assigned classes are CClasses, and in the 4th layer the assigned classes of are CItems.
 
-### Layer 5: The pgg-Layer
+## Layer 5: The pgg-Layer
 
 The 5th layer consists of custom text code, for which a text code parser is programmed. This layer is called the pgg-layer. The p stands for *parsed*. The text code is translated to a structure that is the same as the previous layer, but this is done with a custom text code as input and the output coming out of the parser. This custom text code looks something like this:
 
@@ -204,15 +201,15 @@ Structure  (  Structure  )    1  -->  n    Relation  (  Relations  )
 The parser might translate it to the same data as in the previous layer. But in this layer more features are added, because it is so much easier to add more features using this custom text code. So here it is, where all the extra features are added, that were left out in the layers before. It is in this layer, that you can really see that the Circular is being programmed within itself. And this is where it gets so much easier to program more features.  
 The two g’s in the term pgg-layer stand for *generic* in the fact that the engine is still built on top of non-parsed Circular objects, with non-parsed Circular objects as reflective data.
 
-### The ggg-Layer Not Required
+## The ggg-Layer Not Required
 
 The parser could (probably) also have used the 3rd layer instead of the 4th layer. The 4th layer might not even be required. It dates back to when there was no custom text code in any of the layers yet, and the 4th layer was the outermost layer in which the description of the system is exactly the same as the previous description. But now the 4th layer isn’t an end-point anymore, so it can be skipped.
 
-### Layer 6: The ppg-Layer
+## Layer 6: The ppg-Layer
 
 There’s also a 6th layer. The code of it, is exactly the same as the 5th layer. The deal is that the extra features, that are in the text code, were added to the *objects*, but the extra features were not present in the *class descriptions* of the objects. So the objects themselves had extra elements, but their reflective data did not. To make the reflective data of the engine as rich as the objects themselves, the parser might build up the structure again using the 5th layer as reflective data, which also has all the rich features  present in it. The 6th layer is also called the ppg-layer. It is the topmost layer.
 
-### Summary Of The Layers
+## Summary Of The Layers
 
 A summary of all the layers:
 
@@ -238,21 +235,21 @@ A summary of all the layers:
 - ppg-layer:
     - The same as the previous layer, but now the reflective data of the objects the engine is built up of, also has all the rich features in it.
 
-### Parsed Layers Not Required
+## Parsed Layers Not Required
 
 Disregarding a few things, you don’t need the parsed layers pgg and ppg, if you agree to describe a richer Circular structure layer in the ggc and ggg layers, then you’d have the same engine. But then you’d be programming the engine in C++. You might have much more C++ code to write, and Circular is just much easier to write. It is the practicality that matters here. It is more practical to program using Circular code, so it’s more practical to program Circular using Circular.
 
-### Indirection On Class Assignment
+## Indirection On Class Assignment
 
 It’s not that each layer adds another layer of indirections to the Circular *objects*. It is the way you describe *classes* that is different in each layer. The *objects* are constructed the same way in most of the layers. Assigning a class to an object goes slower with each engine layer added, because of following more indirections.
 
-### No Indirections On Object Access
+## No Indirections On Object Access
 
 The CItem objects are just CItem objects with each an arbitrary number of attributes, related items and related lists. It is only when assigning a class, that it has anything to do with the class description. After the class is assigned it’s just an Item with an arbitrary set of attributes, related items and related lists, independent of the class. It just looks like it conforms to the class it was assigned, but the Item really has no connection with it anymore.
 
 Not regarding the class assignment, the structure even in the highest layer basically consists of CItem objects with arbitrary sets of attributes, related items, and related lists.
 
-### How Data Is Stored
+## How Data Is Stored
 
 Object access might not have any extra indirections due to the the multiple layers. Data is mostly just stored as Circular objects, that can have an arbitrary set of attributes, related items and related lists.
 
@@ -260,11 +257,11 @@ It’s not the data that is redescribed six times. It is class descriptions, tha
 
 In the 1st layer the *data*, that is the structure description, is *the C++ code*. In the 2nd layer the structure description is C++ objects in memory. In the 3rd and 4th layers the structure description actually consists of Circular objects, that can become memory based or disk based data. The data in both layers is pretty much the same. The difference between the 3rd and 4th layer, is that in the 4th layer, the structure/classes of the Circular data are described by yet again Circular data, and in the 3rd layer, the structure/classes of the Circular data are described by memory based C++ objects. The data in the two parsed creator layers on top of that, is also the same, yet richer, because more features are added to the engine programmed in custom text code.
 
-### Layer 7 Is For Fun
+## Layer 7 Is For Fun
 
 For fun you can add another layer, where you describe Circular as Circular data. But this layer might only be there for fun and not *required* nor more practical in order to accomplish Computer Language Programmed Within Itself.
 
-### Slowing Down On Each Added Layer
+## Slowing Down On Each Added Layer
 
 I used to have a test where I parsed the custom text code of Circular, and then replaced the currently running Circular engine by the one just parsed. It did not give errors, but as I repeatedly parsed and replaced the engine, the system became slower and slower exponentially.
 
@@ -275,7 +272,7 @@ It also speeded up class assignment, because class assignment also looked up ite
 
 If you index items purely by number, then you also might not search for names anymore. That might be very nice.
 
-### Loose Ideas
+## Loose Ideas
 
 Circular, Code Base
 

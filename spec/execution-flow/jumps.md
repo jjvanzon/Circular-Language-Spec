@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Execution Flow
-=======================================
+﻿Execution Flow | Jumps
+======================
 
 [back](./)
-
-Jumps
------
 
 `[ Preliminary documentation ]`
 
@@ -25,7 +22,7 @@ __Contents__
     - [Concept](#concept-4)
     - [Diagram](#diagram-4)
 
-### Concept
+## Concept
 
 Jumps are a form of control over *execution flow*. Execution flow is explained in the article *Execution Flow*.
 
@@ -44,7 +41,7 @@ Each form is explained in a separate article.
 
 The last two jumps are only used inside a loop, and might not be explained in this set of articles, but might be explained by the article *Jump-Related Loops*.
 
-### Diagram
+## Diagram
 
 Jumps are a form of execution flow explained in the article *Jumps*. The articles that follow only explain their expression in a diagram.
 
@@ -61,9 +58,9 @@ Each form is explained in a separate article.
 
 The last two jumps are only used inside a loop, and might not be explained in this set of articles, but might be explained by the article *Jump-Related Loops in a Diagram*.
 
-### Normal Execution Order
+## Normal Execution Order
 
-#### Concept
+### Concept
 
 Normal execution order of a procedure means one command being followed up by the next.
 
@@ -86,7 +83,7 @@ The hope that comes with automatic execution order determined by input / output 
 
 Automatic execution order is not worked out in this article. It is might be worked out in the article *Automatic Execution Order*. Normal execution order is about indicating the order of execution yourself.
 
-#### Diagram
+### Diagram
 
 If you do not indicate an order in which to execute the commands, then they may execute in an arbitrary order. Sometimes this is acceptable from a functional point of view. The diamonds representing the calls are simply placed inside the command definition as follows:
 
@@ -115,9 +112,9 @@ Normal execution order is also indicated for calls to execution flow statements,
 
 Normal execution order only puts command *calls* next to each other, not command *definitions*. The normal-execution-order ‘call’ (stuck to the side of the command) is always the *last* call of a sub-command. It moves execution on to the next step.
 
-### Label & Goto
+## Label & Goto
 
-#### Concept
+### Concept
 
 A __Goto__ statement is an execution flow statement, that immediately jumps to another part of the code.
 
@@ -129,7 +126,7 @@ Just like in normal execution order a __Goto__ statement might not return to the
 
 The implementation of the execution flow command __Goto__ might somehow first roll back part of the call stack, so that the call to the execution flow command might not return to where it was called from. Next the __Goto__ command uses a machine instruction to jump to the jump __Target__.
 
-#### Diagram
+### Diagram
 
 Here is an example of a call to a __Goto__ command:
 
@@ -139,9 +136,9 @@ The public contents of the definition of the __Goto__ command look like this:
 
 ![](images/4.%20Jumps.006.png)
 
-### Call & Return
+## Call & Return
 
-#### Concept
+### Concept
 
 Call and return was allready explained in the article *Command Call*.  
 It is mentioned here for completeness, because it is considered a form of *jump*. All forms of jumps are covered by the article *Jumps*.
@@ -149,7 +146,7 @@ It is mentioned here for completeness, because it is considered a form of *jump*
 In other programming languages __Return__ can also mean to exit a command immediately and sometimes specifying a return value with that. This definition of __Return__ is not covered here. To exit a command immediately is covered in the article *Exit Command*.  
 To specify a return value is covered by the article *Input, Output, Throughput*.
 
-#### Diagram
+### Diagram
 
 Call and return is mentioned here for completeness sake, because it is considered a form of jump. But call and return was already explained in the article *Command Call in a Diagram*.
 
@@ -157,9 +154,9 @@ Here is what a call looks like in a diagram.
 
 ![](images/4.%20Jumps.007.png)
 
-### Exit Command
+## Exit Command
 
-#### Concept
+### Concept
 
 __Exit Command__ is a *jump*. A jump is a type of execution flow statement, explained by the article *Jumps*.
 
@@ -169,7 +166,7 @@ The execution flow command __Exit Command__ takes a reference to the __Command E
 
 The implementation of the execution flow command __Exit Command__ might remove the command that is exited from the call stack, and immediately jumps to the command referred to by the __Command End__, that was passed to it.
 
-#### Diagram
+### Diagram
 
 __Exit Command__ is defined in a command definition. It might transfer control to the command, that immediately follows after it. The __Exit Command__ command is passed the __Command End__ as an argument:
 

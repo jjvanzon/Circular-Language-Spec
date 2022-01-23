@@ -1,8 +1,5 @@
-﻿Circular Language Construct Drafts | From Spec
-==============================================
-
-Relationships Construct Drafts
-------------------------------
+﻿Construct Drafts | From Spec | Relationships Construct Drafts
+=============================================================
 
 `[ Preliminary documentation ]`
 
@@ -12,11 +9,11 @@ __Contents__
 - [Counterpart out of Sight](#counterpart-out-of-sight)
 - [Loose Ideas](#loose-ideas)
 
-### Relationships Between Classes
+## Relationships Between Classes
 
 A class-relationship structure might be a program's bone structure.
 
-### Counterpart out of Sight
+## Counterpart out of Sight
 
 `When* the*` counterpart of `the*` relationship `is` out of sight, a line `should` point out of `the*` diagram. A catch there `is`, that `you* can’t` see `if* the*` relationship counterpart `is` part of a multiplicity of __n__ or `not*`. Therefore, `the*` multiplicity `is` expressed at `the*` end of `the` line pointing out of `the*` diagram as follows:
 
@@ -42,7 +39,7 @@ Here a variation that might also be dubious:
 
 In that image both relationship counterparts' class lines are connected to the same half shape. It might go a bit far in suggesting something it's not.
 
-### Loose Ideas
+## Loose Ideas
 
 Stereotyping relationships
 

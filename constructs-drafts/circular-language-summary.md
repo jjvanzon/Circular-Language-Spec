@@ -1,12 +1,9 @@
-﻿Circular Language | Construct Drafts
-====================================
+﻿Construct Drafts | Circular Language Summary
+============================================
 
 `[ Deprecated documentation ]`
 
-Circular Language Summary
--------------------------
-
-### Loose Ideas
+## Loose Ideas
 
 Circular,  
 2008-08-06
@@ -17,9 +14,9 @@ How about only giving the diagram syntax, if the coding concept actually has its
 
 JJ
 
-### Out of the original Symbol documentation
+## Out of the original Symbol documentation
 
-#### Summary of Concepts
+### Summary of Concepts
 
 < Make this a more extensive topic with a full description of the Symbol language >
 
@@ -35,7 +32,7 @@ This summary, though, doesn’t organize Symbol in the order of explaining it an
 
 < ‘Static’ is part of Object Structure. So lifetime is part of object structure. Access and Scope are the same subject. >
 
-##### Rough
+#### Rough
 
 - Identifiers
 - Objects
@@ -44,7 +41,7 @@ This summary, though, doesn’t organize Symbol in the order of explaining it an
 -----
 - Generic Code
 
-##### More Detailed
+#### More Detailed
 
 < Overloading can only be part of commands if you either cannot overload an object or you call a command to return an object... >
 
@@ -173,7 +170,7 @@ This summary, though, doesn’t organize Symbol in the order of explaining it an
 
 Standard Variable Types and Operators are covered in ‘Math’
 
-##### Brainstorm
+#### Brainstorm
 
 - Dubious:
     - pointer to any member of a type (ClassName`::*`). Genericity like that.

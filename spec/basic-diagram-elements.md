@@ -1,10 +1,7 @@
-﻿Circular Language Spec
+﻿Basic Diagram Elements
 ======================
 
 [back](..)
-
-Basic Diagram Elements
-----------------------
 
 `[ Preliminary documentation ]`
 
@@ -55,7 +52,7 @@ __Contents__
 - [Line Merge](#line-merge)
 - [Symbol Merge](#symbol-merge)
 
-### Introduction
+## Introduction
 
 This article attempts to give a more or less formal overview of elements that might appear in the diagrams.
 
@@ -67,7 +64,7 @@ The diagrams might involve set of basic elements, that may include the following
 
 ![](images/Basic%20Diagram%20Elements.012.png) ![](images/Basic%20Diagram%20Elements.013.png) ![](images/Basic%20Diagram%20Elements.014.png)
 
-### Text
+## Text
 
 Diagrams might also contain text. Shapes might have names that might appear as text. Numbers and dates and other values could also appear as text.
 
@@ -86,7 +83,7 @@ Perhaps some of the code might not be visualized graphically, but just displayed
 
     A  =  B  +  C
 
-### Circles & Triangles
+## Circles & Triangles
 
 ![](images/Basic%20Diagram%20Elements.001.png) ![](images/Basic%20Diagram%20Elements.002.png)
 
@@ -94,38 +91,38 @@ Circles and triangles may represent objects, classes or interfaces. An object mi
 
 A circle might be the usual symbol for an object. A triangle might have a particular function related to interfaces, which may be clarified by other text.
 
-### Squares & Diamonds
+## Squares & Diamonds
 
 ![](images/Basic%20Diagram%20Elements.003.png) ![](images/Basic%20Diagram%20Elements.004.png)
 
 
 Squares and diamonds may stand for *commands*. A square may denote an *inactive* command, that might not run. Such a square might be use as a *definition* for other commands. A diamond might depict *execution*. A diamond might execute, while a square may not.
 
-### Pentagons
+## Pentagons
 
 ![](images/Basic%20Diagram%20Elements.005.png)
 
 A pentagon could represent a *module*. A module is like a little world in which objects and commands live. A module may be a site, a computer program, a library or any other kind of module. A pentagon could be considered an object just like circles and triangles, but a pentagon may have special purposes and behavior.
 
-### Nonagon
+## Nonagon
 
 ![](images/Basic%20Diagram%20Elements.006.png)
 
 A nonagon may stand for a collection or a list of things. Objects might be placed inside the nonagon, to group them together perhaps. Maybe nonagons might not be drawn with precisely nine corners.
 
-### Object Symbols
+## Object Symbols
 
 Circles, triangles, pentagons and nonagons could be called *object symbols*.
 
 ![](images/Basic%20Diagram%20Elements.001.png) ![](images/Basic%20Diagram%20Elements.002.png) ![](images/Basic%20Diagram%20Elements.005.png) ![](images/Basic%20Diagram%20Elements.006.png) 
 
-### Command Symbols
+## Command Symbols
 
 Squares and diamonds could be called *command symbols*, since they appeared to represent commands.
 
 ![](images/Basic%20Diagram%20Elements.003.png) ![](images/Basic%20Diagram%20Elements.004.png) 
 
-### Lines
+## Lines
 
 The idea is that, when symbols might be connected with lines, those symbols might have something in common.
 
@@ -133,61 +130,61 @@ The idea is that, when symbols might be connected with lines, those symbols migh
 
 Now follows an attempt to summarize how that might work.
 
-### Solid Line
+## Solid Line
 
 ![](images/Basic%20Diagram%20Elements.007.png)
 
 A solid line may point out an *object*. Symbols connected by a solid line might symbolize the same object. Other names for this line might be an object line or a reference line.
 
-### Dashed Line
+## Dashed Line
 
 ![](images/Basic%20Diagram%20Elements.008.png)
 
 A dashed line could point out a *class* or *definition*. Symbols connected by dashed lines could be thought of as having the same class. These symbols may share similar behavior, while they might still be living as individual objects. Other names for this line might be a class line or a definition line.
 
-### Dotted Line
+## Dotted Line
 
 ![](images/Basic%20Diagram%20Elements.009.png)
 
 A dotted line might point out an *interface*. Shapes connected by dotted lines might give them the same interface. The idea behind that is that they may look the same from the outside, but might behave differently on the inside. Another name for this line might be an interface line.
 
-### Wavy Line
+## Wavy Line
 
 <img src="images/Basic%20Diagram%20Elements.016.png" width="70" />
 
 A wavy line could represent the concept of *values*. When shapes are connected with a wavy line, it might mean, they have the same value or perhaps soon might get the same value. Another name for this line might be a *value line*.
 
-### Cross
+## Cross
 
 A cross might be placed inside a symbol to indicate, that an symbol is *nothing / null*: it might not reference any object: it is empty.
 
 ![](images/Basic%20Diagram%20Elements.017.png)
 
-### Relations Between Symbols
+## Relations Between Symbols
 
-#### Containment
+### Containment
 
 Relations between symbols might be expressed by *containment:*
 
 ![](images/Basic%20Diagram%20Elements.018a.png)
 
-#### Lines
+### Lines
 
 and then possibly by connecting them with *lines:*
 
 <img src="images/Basic%20Diagram%20Elements.018b.png" width="110" />
 
-#### Object Reference
+### Object Reference
 
 ![](images/Basic%20Diagram%20Elements.019.png)
 
 This object reference notation may be seen as that the bigger object on the left might contain a reference to the bigger object on the right. It is almost as if the left object contains the other object, but instead of containing it directly it might be pointing out to something on the outside.
 
-### Connecting Object Symbols
+## Connecting Object Symbols
 
 Object symbols could be connected by different types of lines.
 
-#### Object Connection
+### Object Connection
 
 When two object symbols might be connected by a solid line, it might mean that both symbols represent the same object.
 
@@ -195,7 +192,7 @@ When two object symbols might be connected by a solid line, it might mean that b
 
 One symbol might be considered to represent the actual object while the other symbol might represent an *object reference*. An object line may point out which object an object symbol might point to. The solid line might be called an *object line* in this case, because it may point out the object.
 
-#### Class Connection
+### Class Connection
 
 When two object symbols might be connected by a dashed line, it might mean that both symbols may share the same class, which could mean they may have the same behavior, while they might not represent the same individual object.
 
@@ -203,7 +200,7 @@ When two object symbols might be connected by a dashed line, it might mean that 
 
 A class line may point out, what class an object might have.
 
-#### Interface Connection
+### Interface Connection
 
 If two object symbols might be connected by a dotted line, this might depict that the symbols might have the same interface, which may mean they could look the same from the outside, but might be different on the inside.
 
@@ -211,7 +208,7 @@ If two object symbols might be connected by a dotted line, this might depict tha
 
 The two symbols might be two separate individual objects, they may also have a different class, so could behave differently, but since they seem to have the same interface, this might mean that from the outside they might look the same.
 
-#### Value Connection
+### Value Connection
 
 When two object symbols might be connected with a wavy line, it might mean the objects might get the same value.
 
@@ -219,11 +216,11 @@ When two object symbols might be connected with a wavy line, it might mean the o
 
 This could express that the values of the two objects are the same. It might also mean transferring a value from one object to the next.
 
-### Connecting Command Symbols
+## Connecting Command Symbols
 
 Connecting command symbols could be something parallel to connections between object symbols. Command symbols might also be connected with different types of lines.
 
-#### Command Reference Connection
+### Command Reference Connection
 
 When two command symbols might be connected by a solid line, it might mean that they might represent the same command object.
 
@@ -231,7 +228,7 @@ When two command symbols might be connected by a solid line, it might mean that 
 
 The object line might point out which command object the other command symbol might represent. A square connected with an object line might depict a *command reference:* a reference to a command definition. A diamond might also get an object line, that may point to another location, where the actual executable object may reside.
 
-#### Command Definition Connection
+### Command Definition Connection
 
 Command symbols might be connected by a dashed line. This may be used to indicate that both commands might have the same class (or *definition*) which may mean that they might get the same behavior, but might not be the same individual object.
 
@@ -239,7 +236,7 @@ Command symbols might be connected by a dashed line. This may be used to indicat
 
 This definition line might point out, what definition a command object might have. The diamond might be a replica of the definition, but it could be that it might be its own individual object: an individual execution of the command. It is not limited to diamonds and squares this way. Dashed lines might be used to connect any two command symbols to each other, to indicate mutuality of definition.
 
-#### Command Interface Connection
+### Command Interface Connection
 
 Two commands could have the same interface, which might mean that a command has parameters similar to the other command. Command symbols that might have the same interface might be connected using dotted lines:
 
@@ -247,7 +244,7 @@ Two commands could have the same interface, which might mean that a command has 
 
 A dotted line could be called an interface line.
 
-### Straight Mark
+## Straight Mark
 
 ![](images/Basic%20Diagram%20Elements.025.png)
 
@@ -261,7 +258,7 @@ The straight mark might be connected to a symbol as follows:
 
 It might be used to indicate direction as well.
 
-### Cross Mark
+## Cross Mark
 
 A cross mark:
 
@@ -275,7 +272,7 @@ Here is how it might look when connected to a symbol:
 
 A cross mark might be left out, if the choice is made that the absence of a straight mark might imply it might be __Private__ already, but there could be different ideas about that.
 
-### Triangular Mark
+## Triangular Mark
 
 A triangular mark:
 
@@ -289,7 +286,7 @@ Here is how that might look if it is connected to a symbol:
 
 A triangular mark might not represent an arrow. It might be confusing that a triangular mark looks like an arrow, but isn't, and a different notation for protected might be appropriate and introduced some time.
 
-### Line Direction, Access Marks, Line Ownership
+## Line Direction, Access Marks, Line Ownership
 
 A line might have direction. The direction of a line could be expressed with an access mark:
 
@@ -303,7 +300,7 @@ Admittedly, there is the idea to just draw it as an arrow shape, but currently t
 
 But access marks might not always be displayed to indicate line direction. Some suggestions are made here for when direction might be implied without using an access mark.
 
-#### Lines Pointing Outwards
+### Lines Pointing Outwards
 
 The first suggestion for line direction is that a line might usually point outwards.
 
@@ -321,7 +318,7 @@ If the direction might not be outwards, it might be denoted with an access mark.
 
 Now symbol __C__ might then be like a pointer to symbol __A__.
 
-#### Diamonds More Likely to Redirect
+### Diamonds More Likely to Redirect
 
 The second suggestion for line direction might be that a diamond might be more likely to redirect to the command definition, than it might be for a command reference to redirect to a diamond.
 
@@ -338,7 +335,7 @@ If the direction might be the other way around, it might be denoted with the use
 `<=`
 
 
-#### Access Mark Placement
+### Access Mark Placement
 
 When a line crosses symbols’ borders, it might first exit borders and then enter borders.
 
@@ -358,7 +355,7 @@ It may be a problem to draw it like this:
 
 This might suggest that the rightmost border might be entered, instead of exited.
 
-#### Line Ownership
+### Line Ownership
 
 Perhaps depending on how these diagrams might be applied, a symbol could only have one object line, one class line and one interface line. A symbol's lines may point *away* from the symbol. They could denote which other symbol may be its object, which other symbol may be its class and which other symbol may be its interface. Other lines connected to symbol could be considered to point *at* the symbol, instead of *away* from the symbol.
 
@@ -366,7 +363,7 @@ Perhaps depending on how these diagrams might be applied, a symbol could only ha
 
 It might work similarly for commands. A command might have just one reference line, one definition line and one interface line.
 
-### Object Symbols Drawn with Different Lines
+## Object Symbols Drawn with Different Lines
 
 There is an idea for drawing the shapes with different line types, for example: dashed or dotted.
 
@@ -392,7 +389,7 @@ That way an object symbol could also have three borders at the same time or mayb
 
 It is not a hard rule to use different line types for symbols. But it might work intuitively.
 
-### Command Symbols Drawn with Different Lines
+## Command Symbols Drawn with Different Lines
 
 The idea for symbols drawn with different line types might also be applied to *command* symbols.
 
@@ -434,9 +431,9 @@ It is suggested here, that a diamond might so often be thought of as an instance
 
 But it may depend on specific notation choices.
 
-### More Suggestions for Dashed Lines
+## More Suggestions for Dashed Lines
 
-#### Commands with Dashed Lines
+### Commands with Dashed Lines
 
 Previous text tried to show that command symbols might scarcely be drawn with dashed lines.
 
@@ -446,15 +443,15 @@ However, in a certain case it might be drawn with a dashed line. When drawing ou
 
 Lines that connect commands to classes might be drawn with a dashed line.
 
-#### Object Structure Solid, Class Structure Dashed
+### Object Structure Solid, Class Structure Dashed
 
 Drawing dashed lines that way might make the structure elements and their relations be drawn out with dashed lines. It might be more intuitive that way: the class structure might be dashed, while an object structure might be drawn with solid lines.
 
-#### Other Ideas
+### Other Ideas
 
 However, there might be different ideas of how to apply dashed lines, for instance one where dashed lines are reserved for the expression of the concept of *static*. Things are open like that.
 
-### Relational Ring
+## Relational Ring
 
 An oval shape or ring might be drawn through two lines:
 
@@ -464,7 +461,7 @@ It might mean, that the symbols have a special relationship to each other. How t
 
 This notation may be a preferred alternative over the *Line Merge* and *Symbol Merge* notations introduced next.
 
-### Line Merge
+## Line Merge
 
 A suggestion is made here that sometimes two lines might be merged together to form one. This might be called a line merge.
 
@@ -480,7 +477,7 @@ Lines might merge together under different circumstances, that may come to light
 
 There may be some reservations about using this notation, because it seem to introduce ambiguity or the suggestion of ambiguity, but the idea may still appear here and there, even though it might be deprecated.
 
-### Symbol Merge
+## Symbol Merge
 
 A symbol merge might be closely related to a line merge. In the following diagram:
 

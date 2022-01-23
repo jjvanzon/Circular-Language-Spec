@@ -1,14 +1,11 @@
-﻿Circular Language Construct Drafts | Text Code
+﻿Construct Drafts | Text Code | Aspect Literals
 ==============================================
 
 `[ Deprecated documentation ]`
 
-Aspect Literals
----------------
-
 (Text code expression of an aspect.)
 
-### Loose Ideas
+## Loose Ideas
 
 Macro keywords kunnen in de toekomst ook gebruikt worden voor access control keywords. Daarbij heb je 1 keyword, dat eigenlijk een aantal access control eigenschappen in zich heeft. (zie Symbol Language documentatie)
 

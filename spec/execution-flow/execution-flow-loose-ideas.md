@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Execution Flow
-=======================================
+﻿Execution Flow | Loose Ideas
+============================
 
 [back](./)
-
-Loose Ideas
------------
 
 `[ Preliminary documentation ]`
 
@@ -21,6 +18,8 @@ __Contents__
     - [Text Code Blabbing < >](#text-code-blabbing--)
         - [Conditional Jumps](#conditional-jumps)
             - [Selection](#selection-1)
+                - [If](#if)
+                - [Select](#select)
             - [Iteration](#iteration)
     - [Brainstorm](#brainstorm)
         - [Execution Flow Controls which call is made next](#execution-flow-controls-which-call-is-made-next)
@@ -29,13 +28,13 @@ __Contents__
         - [=> Execution Flow](#-execution-flow)
 - [Declared Traversions / Constructions](#declared-traversions--constructions)
 
-### Execution Flow (from Original Symbol Documentation from 2004)
+## Execution Flow (from Original Symbol Documentation from 2004)
 
 < A command’s calling one of its own clauses, is an unconditional jump >
 
 < Cover text code entirely, right inside the story. Oh, yeah, should I? Or should I cover it in the Text Code chapter? >
 
-#### Basic Language Execution Flow
+### Basic Language Execution Flow
 
 To explain control over execution flow in Symbol I might first introduce examples of execution flow statements in the Basic programming language.
 
@@ -77,15 +76,15 @@ The blue parts in the code above are called the *clauses* of the control stateme
 
 The start of the control statement and the end and whatever’s in between is considered the control statement.
 
-#### Execution Flow Commands
+### Execution Flow Commands
 
 Execution flow statements are special commands. They are given one or more references to other commands, the execution of which is controlled. These referenced commands are the clauses of the control statement and also the expressions and assignments controlling their execution. The execution flow command decides when or if any of these referenced commands are called and how many times. How the execution flow command might call its referenced commands, is dependent on what the referenced commands might do.
 
-#### Selection and Repetition
+### Selection and Repetition
 
 The execution flow mentioned till now is also called conditional jumping. There are two general forms of conditional jumping: selection and repetition. Selection selects one thing to execute out of several or whether to execute something at all depending on a condition. Repetition repeats a command a number of times until a condition is met. In the repeated command actions can be taken that affect this condition. __Select__ and __If__ statements are selection. __For__ and __Do__ statements are repetition. Symbol defines but two commands: __Selection__ and __Repetition__. Depending on how the command is used it functions as an __If__, __Select__, __For__ or __Do__ and depending on that, appropriate names are notated with calls to the execution flow commands.
 
-#### Selection
+### Selection
 
 < Sub sectioning. >
 
@@ -288,7 +287,7 @@ When you don’t use math language it might look as follows:
 
 The __=__ operator is an operator from text code language, not math language.
 
-#### Repetition
+### Repetition
 
 Now I’ve explained a lot about clauses in __Selection__, I can easily explain __Repetition__.
 
@@ -359,7 +358,7 @@ The algebra you see in the diagrams above (for instance __<= 5__) are actually c
 
 < Examples of simpler loops, in which 
 
-#### Clauses: Nested Commands
+### Clauses: Nested Commands
 
 The clauses discussed above might be seen as nested commands. Nested commands might sometimes be referred to with the word clause. Nested commands may have a special characteristic, that they might access the members of the command they’re embedded in.
 
@@ -387,7 +386,7 @@ Perhaps jumping might change that and the nested commands might get lines, but n
 
 < It’s like when something’s a nested command, it ignores its parent’s borders. Conversely, the contents of a block are by default only accessible within that block. >
 
-#### Unconditional Jumps
+### Unconditional Jumps
 
 __Returns__ and __Jumps__
 
@@ -431,17 +430,17 @@ End If
 
 Breaking, because each __Case__ group is evaluated now.
 
-#### Text Code Blabbing < >
+### Text Code Blabbing < >
 
-##### Conditional Jumps
+#### Conditional Jumps
 
 Two forms of conditional jumping are generally used: selection and iteration. Selections might do either one thing or the other depending on a __Boolean__ state. Iterations might repeat something depending on a __Boolean__ state.
 
-###### Selection
+##### Selection
 
 Selection is performed with __If__ and __Select__ statements.
 
-####### If
+###### If
 
 With an __If__ you can choose wether or not to do something depending on a __Boolean__ state:
 
@@ -515,7 +514,7 @@ Else If C
 End If
 ```
 
-####### Select
+###### Select
 
 Selects let you combine a large __Else If__ construction to an easier notation:
 
@@ -645,7 +644,7 @@ If X
 End If
 ```
 
-###### Iteration
+##### Iteration
 
 ```vb
 For i = 0 To 10
@@ -677,7 +676,7 @@ A comma can be used to separate
 
 Maybe for should be called repeat
 
-#### Brainstorm
+### Brainstorm
 
 Maybe the command references of execution flow commands need to have a certain command interface.
 
@@ -696,7 +695,7 @@ If a command takes a reference to a nested command then you can do this notation
 
 Defining the contents of the command references right within the
 
-##### Execution Flow Controls which call is made next
+#### Execution Flow Controls which call is made next
 
 <  
 Most of what’s done inside a command is calling other commands.
@@ -710,7 +709,7 @@ First explain that a control statement controls which call is made next. They ar
 In one compiler optimization technique it is these execution flow statements that are analysed. Execution flow statements make execution variable and this compiler technique analyses how variable that actually is. Maybe the execution flow might not be reached with too many different values, let’s say, two values. In that case you might consider removing the variation in execution by making two commands one of which is one situation of the execution flow statement and the other one is the other situation of the execution flow statement. At calls to the execution flow statement or indirect calls to it, you insert the variation that applies right there.  
 \>
 
-##### Nice Example
+#### Nice Example
 
 ```vb
 For I = 0 to 4
@@ -724,7 +723,7 @@ For I = 0 to 4
 Next
 ```
 
-##### Execution Flow is Call Control
+#### Execution Flow is Call Control
 
 This means that in Symbol the definition of execution flow is selecting what command to call next depending on a __Boolean__ state.
 
@@ -732,13 +731,13 @@ You could speak of conditional calls, actually.
 
 Calls can be managed by execution flow. Execution flow manages the regular order of the calls *and* can alter the regular traversal of calls depending on a Boolean result (__If__, __Select__, __For__, __Do__). The Boolean result can spring from any combination of forms of algebra that in the end returns a Boolean result. Comparison algebra and Boolean algebra return Boolean results.
 
-##### => Execution Flow
+#### => Execution Flow
 
 But... if you pass a clause reference to an execution flow command the execution flow CAN call the clause, but only in the context of the command instance that called the execution flow command!
 
 Execution flow commands might call clauses in the context of a *specific call* to the clause’s command definition.
 
-### Declared Traversions / Constructions
+## Declared Traversions / Constructions
 
 (From Original Symbol Documentation from 2004)
 

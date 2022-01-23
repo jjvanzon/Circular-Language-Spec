@@ -1,8 +1,5 @@
-﻿Circular Language | Broader View
-================================
-
-Binarals
---------
+﻿Circular Language Broader View | Binarals
+=========================================
 
 `[ Preliminary documentation ]`
 

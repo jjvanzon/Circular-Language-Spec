@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Extensibility
-==============================================
-
-Aspects As External Modules
-----------------------------
+﻿Circular Language Broader View | Extensibility | Aspects As External Modules
+============================================================================
 
 `[ Preliminary documentation ]`
 
@@ -22,7 +19,7 @@ __Contents__
     - [Loose Ideas](#loose-ideas)
         - [Aspects As External Modules](#aspects-as-external-modules)
 
-### Introduction
+## Introduction
 
 Aspects might add something to every class that supports the aspect. The class doesn’t get polluted directly. An aspect might add a sub object operating on the class’s members in a generic way.
 
@@ -33,17 +30,17 @@ Shouldn’t be hard. In the code generator version of Circular, every module dec
 
 < I need to incorporate a story from Software System.doc about aspects about dependencies. >
 
-### Brainstorm
+## Brainstorm
 
 In experiment 0.9 every aspect (for instance Copy-Paste, Default Values and Enums) used to have its own part of the code generator. In a generic version of Circular, this might translate to every aspect being its own generic part of the engine. It is perhaps easier to program the aspects as part of an engine, rather than part of a code generator, but something might make it even more handy. The aspects might no longer be part of the engine either. They might become external modules, written in perhaps custom code, that might be loaded by the engine and run inside of it.
 
-#### Generic, Not Generated
+### Generic, Not Generated
 
 Instead of generating code for each aspect, each basic aspect gets its own module in the Creator ‘engine’ so to say.
 
 Ik bekijk nu de basale aspecten, en kijk hoe die van gegenereerd, naar generiek kunnen gaan.
 
-#### System Structure Elements
+### System Structure Elements
 
 < 2007-10-04 Applies to Extensible Aspects >  
 There are several attributes that J Data adds automatically, that aren’t defined by the one building the Structure. There are also other structure elements added by J Data automatically.
@@ -56,7 +53,7 @@ System attributes are automatically added and removed from the regular attribute
 
 Being able to appoint an existing attribute to be the system attribute might not have to be possible to me.
 
-##### Which Attributes Exist?
+#### Which Attributes Exist?
 
 - Name
 - Selected
@@ -77,15 +74,15 @@ Currently there is one kind of enum:
 - Derived Class Enum
     - One for every inheriting class. It has one element for each derived class.
 
-##### How Many Are There?
+#### How Many Are There?
 
 There are no limits to the amount of IDs and Reference Counts. For every *relation class* that is N or X, a *class* gets an ID attribute and if it’s a reference counted list, also a __Reference Count__. But you can only have one __Name__ and __Selected__ attribute. __Name__ and __Selected__ are either present or not.
 
-##### How Are They Automatically Added and Removed?
+#### How Are They Automatically Added and Removed?
 
 The attributes are automatically added and removed by J Data Structure. A reference to the system attribute is stored in the place the system attribute is created. De attribute stores its position in the attribute list. That way, you can remove the respective attribute from the attribute list again.
 
-##### When Are They Added and Removed
+#### When Are They Added and Removed
 
 The need for IDs and Reference Counts is pretty clear: it changes with:
 
@@ -103,21 +100,21 @@ The Name attribute is important in name linkage. The presence of this property i
 
 Currently __OriginalID__ is added whenever __HasOriginalId__ is changed. HasOriginalId can’t be set to False when the ShouldHaveOriginalId  function returns True. __HasOriginalId__ is changed automatically when __RelationClassesThatRegisterInMe__ or __RelationClassesThatSelectFromMe__ change from __0__ to __1__ or __1__ to __0__. See other sections for more information, such as: *Original ID*, *Registration Lists* or *Selection*.
 
-##### Attribute Roles
+#### Attribute Roles
 
 For every kind of system attribute there is a special attribute role. That gives us a neat Role property for an attribute that identifies what the attribute is for. The role is set to Normal, Name, Selected, Reference Count, Id or OriginalId. That way I can clearly see when something is an ID, even when I’ve changed the name to ‘Pietje’.
 
-###### No Control Over Retaining the System Attribute
+##### No Control Over Retaining the System Attribute
 
 A programmer can’t control retaining the system attribute. They are added and removed from the system without an excuse. When a system attribute is removed, you loose the customization of it (when you’ve for instance changed the name of the system attribute). Whether or not that is unhandy for the programmer, all alternatives I can come up with are unhandy in other areas.
 
-##### N `<=>` N
+#### N `<=>` N
 
 For n`<=>`n, x`<=>`n and n`<=>`x relaties you can’t give the relation classes 1 id. In A 1`<=>`n B, B has an ID in its A. In A n`<=>`n B, B has an ID in every A it exists in.  At the moment I don’t make the IDs system attributes in this case, but I structurelessly generate the dimensional IDs into the code modules.
 
-#### Loose Ideas
+### Loose Ideas
 
-##### Aspects As External Modules
+#### Aspects As External Modules
 
 Moeten er aspecten bibliotheek bestaan?  
 Of: moet een module naast classes en data ook aspecten kunnen definiëren, die vervolgens op gelijk welke gegevensstructuur kan worden toegepast? Moet een aspect een synchrone toepassing kunnen hebben, dus zichzelf opbouwen vanaf dat er nog geen gegevens zijn.

@@ -1,8 +1,5 @@
-Circular Language Construct Drafts | Implementations
-====================================================
-
-Black Boxes Implementation
---------------------------
+Construct Drafts | Implementations | Black Boxes Implementation
+===============================================================
 
 `[ Out of Scope ]`
 

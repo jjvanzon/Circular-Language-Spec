@@ -1,10 +1,7 @@
-Circular Language Construct Drafts | From Spec
-==============================================
+Construct Drafts | From Spec | Commands Loose Ideas
+===================================================
 
 `[ Deprecated documentation ]`
-
-Commands Loose Ideas
---------------------
 
 __Contents__
 
@@ -12,7 +9,7 @@ __Contents__
 - [No Dashed Lines for Commands](#no-dashed-lines-for-commands)
 - [Misc Ideas](#misc-ideas)
 
-### Nested Commands
+## Nested Commands
 
 `<< nice formulation >>`  
 
@@ -30,7 +27,7 @@ The nested command might be directly contained by a command. So this is not a ne
 
 ![](images/7.%20Commands%20Ideas.029.png)
 
-### No Dashed Lines for Commands
+## No Dashed Lines for Commands
 
 A command symbol can define its own command:
 
@@ -44,7 +41,7 @@ But if it has a reference line it is regarded no more than a reference or call t
 *A is the command reference, B is the definition:*  
 ![](images/7.%20Commands%20Ideas.066.jpeg)
 
-### Misc Ideas
+## Misc Ideas
 
 `<< about other technology >>`
 

@@ -1,16 +1,13 @@
-Circular Language Construct Drafts | From Spec
-==============================================
-
-Start & Stop Construct Drafts
------------------------------
+Construct Drafts | From Spec | Start & Stop Construct Drafts
+============================================================
 
 `[ Preliminary documentation ]`
 
-### Introduction
+## Introduction
 
 Some ideas for the Start & Stop article from the Commands section in the spec.
 
-### Loose Ideas
+## Loose Ideas
 
 `<< start & stop >>`
 

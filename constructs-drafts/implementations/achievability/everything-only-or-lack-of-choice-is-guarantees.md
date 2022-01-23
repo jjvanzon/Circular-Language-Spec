@@ -1,8 +1,5 @@
-﻿Circular Language Construct Drafts | Implementations
-====================================================
-
-Achievability | Everything Only (Lack Of Choice = Guarantees)
--------------------------------------------------------------
+﻿Construct Drafts | Implementations | Achievability | Everything Only (Lack Of Choice = Guarantees)
+==================================================================================================
 
 `[ Out of Scope ]`
 
@@ -30,7 +27,7 @@ In future experiment 3.0 it might become easier to turn on extra aspects later, 
 
 In former experiments of Circular, the principle of Everything Only might have caused performance problems, because all aspects might then be turned on at once, but in future experiment 3.0 any aspect might *be* optional, so this performance problem might not apply anymore.
 
-### Loose Ideas
+## Loose Ideas
 
 Bepaalde dingen niet toestaan in Creator.  
 Bijvoorbeeld: een object referentie komt altijd tot stand door een relatie. Je moet vrij strikt conformeren aan een basis van werken met relaties. Het werken met deze relaties moet uiteindelijk werkbaar zijn voor leken, zodat het een nieuwe benadering van computers is, die met een beetje moeite grijpbaar is voor iedereen. Mensen die nu voor het eerst een computer gebruiken, moeten ook vanalles leren. Creator relaties moet ook te leren zijn. Het is weliswaar een hele andere benadering, maar voor nieuwkomers, is de huidige manier van werken met computers ook een heel aparte benadering.

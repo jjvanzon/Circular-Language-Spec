@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Misc Diagram Topics
-============================================
+﻿Misc Diagram Topics | Diagram Expression Introduction
+=====================================================
 
 [back](./)
-
-Diagram Expression Introduction
--------------------------------
 
 `[ Preliminary documentation ]`
 
@@ -16,15 +13,15 @@ The articles in the *Diagrams* documentation folder are not finished. They consi
 
 This folder contains the following articles:
 
-### Diagram Metrics
+## Diagram Metrics
 
 - This article is not finished. However, *diagram metrics* are very important to make Circular a success, because if the diagram is not automatically drawn out, and you might position all the shapes in it yourself, then the language is not that easy to use anymore. The diagrams are automatically drawn out and you get very little say in where the shapes are positioned and how the lines between shapes are drawn out. The interconnection between shapes and the embedding of it, should pull the shapes and lines into the right position like molecules.
 
-### Coloring
+## Coloring
 
 - There is not a lot of text in this documentation folder yet. This documentation folder is to contain explanations on how the shapes inside the diagram can be colored to highlight certain parts of the system. A system can be fully drawn out with diagrams not using any coloring at all, but coloring may highlight certain parts of the system. You could highlight all objects of a certain class, or you could highlight all classes, or highlight all interfaces, or highlight all objects with classes from a certain site. The possibilities for coloring are endless and you could apply coloring with an infinite possibility of conditions. In the future, a few standard colorings may prove to be particularly handy. All this coloring is for analysis purposes, to highlight certain aspects of a system. You could also just let circles be blue, squares be red, triangles be yellow, diamonds be orange, etcetera. You could just draw the outline of shapes or you could fill the shapes up. Each containment level could get its own color. You could switch between two colors on each deeper containment level. These are all sorts of beautiful possibilities for coloring.
 
-### Loose Ideas
+## Loose Ideas
 
 *The texts below are loose ideas, yet to be turned into good documentation.*
 
@@ -100,7 +97,7 @@ in 3D. Maar dat worden natuurlijk symbol diagrams, maar goed.
 If you select an item in one symbol diagram, you can have a second symbol diagram next to it, that shows that single selected item in more detail.  
 You can also have two diagrams that independently show different parts of the system.
 
-#### Don’t Want to Consider
+### Don’t Want to Consider
 
 Ik zie hier duidelijk dat je uit code niet zo makkelijk de structuur van een programma kunt zien. In S kan dat wel. Met UML ook, maar UML is extra werk om te doen, In S niet.
 
@@ -118,7 +115,7 @@ Hmmm...
 
 Refer to the reference target coding concept, saying that that is the way to make a single symbol in the diagram represent the actual object, whereas the others are just seen as references to the object. Or put the other way around: to have the actual object only represented by a single symbol.
 
-#### Invert Means of Display of Containment and Reference
+### Invert Means of Display of Containment and Reference
 
 < (So there is no exchangeability between containment and a line. I used to think that) >
 
@@ -267,7 +264,7 @@ start when reading a diagram.
 
 JJ
 
-#### Out of the Original Symbol Documentation
+### Out of the Original Symbol Documentation
 
 A possible notation: showing things further away as smaller.
 

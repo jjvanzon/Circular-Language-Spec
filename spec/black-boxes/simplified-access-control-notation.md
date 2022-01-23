@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Black Boxes
-====================================
+﻿Black Boxes | Simplified Access Control Notation
+================================================
 
 [back](./)
-
-Simplified Access Control Notation
-----------------------------------
 
 `[ Preliminary documentation ]`
 
@@ -96,9 +93,9 @@ Here are all the possible access connectors for parameters, now with the easier 
 |      __Annul In__       |      __Annul Out__      |
 | ![](images/3.%20Simplified%20Access%20Control%20Notation.033.png) | ![](images/3.%20Simplified%20Access%20Control%20Notation.034.png)|
 
-### Loose Ideas
+## Loose Ideas
 
-#### Simplified Access Connectors
+### Simplified Access Connectors
 
 Could also be called: Access Control Presets.
 

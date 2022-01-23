@@ -1,10 +1,7 @@
-Circular Language Construct Drafts | From Spec
-==============================================
+Construct Drafts | From Spec | Black Boxes | Level Limitation
+=============================================================
 
 `[ Deprecated documentation ]`
-
-Black Boxes | Level Limitation
-------------------------------
 
 < Exclusion is restriction set by a container. Level restriction is like exclusion set by a child *for* the container. >
 
@@ -75,7 +72,7 @@ Level limitation is defined there where it doesn’t have effect yet. It only ha
 
 Maybe call it Level Restriction.
 
-### Module Level Limitation
+## Module Level Limitation
 
 < Pictures >
 

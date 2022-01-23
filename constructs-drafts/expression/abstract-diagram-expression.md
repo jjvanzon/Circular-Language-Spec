@@ -1,16 +1,13 @@
-﻿Circular Language Construct Drafts | Expression
-===============================================
-
-Abstract Diagram Expression
----------------------------
+﻿Construct Drafts | Expression | Abstract Diagram Expression
+===========================================================
 
 `[ Preliminary documentation ]`
 
-### Loose Ideas
+## Loose Ideas
 
 *The texts below are loose ideas yet to be turned into good documentation.*
 
-#### Abstract Symbol
+### Abstract Symbol
 
 < But another odd thing is that even though something is a call, you don’t always notate it, so the square won’t seem to have a line… This may be a subject for Abstract Symbol. >
 
@@ -26,7 +23,7 @@ Assumptions and in the middle latingen
 
 You can also use the color: ‘transparent’. It is almost an insult to call < completely > transparent a color because its usefulness by far exceeds that of color. I call transparency a color, because transparency can be applied in exactly the same manner as color. Transparency as a color makes it possible to abstract the diagram. It is a very powerful tool. Abstraction is a mechanism more important than the object oriented paradigm. By using transparency you can hide for instance deep encapsulation depths so that they don’t obscure the big picture. Another very important use of transparency is hiding members of a symbol that have the Reference Access attribute set to private, which means the same as hiding the private members of an object.
 
-### Abstract Diagram Expression
+## Abstract Diagram Expression
 
 < Abstract symbol is introduced on numerous occasions already. ~~Implicit notations are an example of abstract symbol.~~ Abstract symbol is required. It is impossible to overview a (large) system if you see the exact process all the time, up to machine instructions. >
 
@@ -42,7 +39,7 @@ You can also use the color: ‘transparent’. It is almost an insult to call < 
 
 Abstract Symbol. How to express overview concepts, like: there are methods that delegate to methods in children, but put restrictions on the methods.
 
-### More ideas
+## More ideas
 
 Abstract Diagram Expression,  
 2008-10-16

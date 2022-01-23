@@ -1,10 +1,7 @@
-﻿Circular Language Construct Drafts | Parameters in Text Code
-============================================================
+﻿Construct Drafts | Parameters in Text Code | Parameters For Objects in Text Code
+================================================================================
 
 `[ Deprecated documentation ]`
-
-Parameters For Objects in Text Code
------------------------------------
 
 Parameters for objects in text code actually look like objects, that have a parameter. They look much like command calls then.
 

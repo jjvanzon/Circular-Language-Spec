@@ -1,10 +1,7 @@
-Circular Language Spec
-======================
+System Interfaces Articles
+==========================
 
 [back](../..)
-
-System Interfaces Articles
---------------------------
 
 - [System Objects](system-objects.md)
 - [Assignment](assignment.md)

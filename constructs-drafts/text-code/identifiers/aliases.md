@@ -1,10 +1,7 @@
-﻿Circular Language Construct Drafts | Text Code
-==============================================
+﻿Construct Drafts | Text Code | Aliases
+======================================
 
 `[ Deprecated documentation ]`
-
-Aliases
--------
 
 - Aliases
 - Namespace Alias

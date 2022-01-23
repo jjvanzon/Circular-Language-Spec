@@ -1,10 +1,7 @@
-﻿Circular Language | Construct Drafts
-====================================
+﻿Construct Drafts | Peels
+========================
 
 `[ Deprecated documentation ]`
-
-Peels
------
 
 __Contents__
 
@@ -31,7 +28,7 @@ __Contents__
 - [Loose Ideas](#loose-ideas)
     - [Create Argument and Call Argument’s Members](#create-argument-and-call-arguments-members)
 
-### Introduction
+## Introduction
 
 An additional notation technique exists to express information about lines. It’s called the peel notation.
 
@@ -48,13 +45,13 @@ The notation is invented for the following purposes:
   in which for instance a large group of symbols has the same sort of lines and line destinations.
 - To express similarity in line targets
 
-### Shape Peels
+## Shape Peels
 
 Sometimes a line is not drawn or the destination of a line is out of view. There can be several reasons why you don’t want to draw a line. The lines in the view might distract you from the main point or you might not care much about the line in the view. It can also be the case that the destination of a line is out of view. Anyway, if you can’t see all or part of a line you might still want to show some information about the line.
 
 Alternative borders for shapes can tell something about the lines of the symbol.
 
-#### Extra Borders
+### Extra Borders
 
 The basic method used is to add extra borders to a shape:
 
@@ -94,7 +91,7 @@ just as well as:
 
 You can do more with a symbol’s border, so that you can express more about its lines than just how many borders are crossed.
 
-#### Exits and Entrance Separation
+### Exits and Entrance Separation
 
 The exits and entrances of a line are separated by additional lines:
 
@@ -112,7 +109,7 @@ but no longer:
 | ![](images/98.%20Peels%20(a%20rejected%20concept).010.png) | __`≠`__ | ![](images/98.%20Peels%20(a%20rejected%20concept).012.png) |
 |-----|-----|-----|
 
-#### Line Type
+### Line Type
 
 Solid peels are used to express information about the *object line*. For type lines you use dashed peels and for interface lines you use dotted peels. For instance:
 
@@ -162,7 +159,7 @@ In larger symbols you might see the difference more easily, though:
 
 ![](images/98.%20Peels%20(a%20rejected%20concept).019.png)
 
-#### Type of Crossed Border: Studs
+### Type of Crossed Border: Studs
 
 To express the shapes of the symbols that are crossed, you can draw little shapes through the peel:
 
@@ -172,15 +169,15 @@ You can repeat the shapes multiple times if you want:
 
 ![](images/98.%20Peels%20(a%20rejected%20concept).021.jpeg)
 
-#### Name of Symbol Crossed
+### Name of Symbol Crossed
 
 To express what symbol is entered or exited, you can put names with peels as follows:
 
 ![](images/98.%20Peels%20(a%20rejected%20concept).022.jpeg)
 
-#### Exceptionals
+### Exceptionals
 
-##### Single Solid Border
+#### Single Solid Border
 
 A single solid border:
 
@@ -196,7 +193,7 @@ To denote explicitly that the line crosses one border, you might include an exit
 
 So in that case you are forced to draw out if it’s an exit or entrance. If you draw peels different from borders, thinner for instance, you may ignore this rule.
 
-##### No Crossings
+#### No Crossings
 
 To express that an object symbol has a line that enters nor exits any border you use the following notation:
 
@@ -208,11 +205,11 @@ Which can represent any of the symbols of:
 
 Which is, by the way, not used a lot.
 
-#### Peels for Other Symbols.
+### Peels for Other Symbols.
 
 The peel notation above works the same for triangle symbols. It also works for command symbols, except that command symbols have a different set of line types, so a different set of peel types: reference peels and interface peels.
 
-#### Abstract Meaning
+### Abstract Meaning
 
 A border with peels can also express more abstract facts. Here are some of such meanings:
 
@@ -230,7 +227,7 @@ A border with peels can also express more abstract facts. Here are some of such 
 - Line enters an interface
 - Etcetera
 
-##### Symbol Has A Line
+#### Symbol Has A Line
 
 With a simple alternative shape border you can express that a symbol has a line of a certain type.
 
@@ -252,7 +249,7 @@ The solid border needs to be doubled, because otherwise you don’t see that inf
 
 When denoting the mere existence of a line, the destination of the line is undetermined, but it’s is usually just outside the parent. This assumption is analogous to the first line direction rule: the outwards rule. A line simply most commonly points outwards and most commonly only crosses a single border.
 
-##### Symbol’s Line Crosses Many Borders
+#### Symbol’s Line Crosses Many Borders
 
 To denote that many borders are crossed, usually three peels are used. So three peels come in the place of where otherwise an exact amount of peels is put. A line that crosses many borders is also said to have a far away line target.
 
@@ -270,7 +267,7 @@ To denote that many borders are crossed, usually three peels are used. So three 
 |     command symbol with a      |      command symbol with a     |
 | far away reference line target | far away interface line target |
 
-##### Other Abstract Meanings
+#### Other Abstract Meanings
 
 I might simply give a sum up of the other abstract meanings I’ve mentioned and give the peel notation for them.
 
@@ -293,7 +290,7 @@ I might simply give a sum up of the other abstract meanings I’ve mentioned and
 
 You can come up with other abstract meanings for peel notations using your imagination.
 
-#### Expressible in the Symbol Border
+### Expressible in the Symbol Border
 
 So the following about a line can be expressed in a symbol’s peels:
 
@@ -308,7 +305,7 @@ Unless you name the peels, the only thing you can’t express in a symbol’s pe
 
 That means that you can express a whole lot in a symbol’s peels. If you count names with peels, you can express everything about a line in a shape peel notation.
 
-#### Only Use Peel Notation Where It’s Useful
+### Only Use Peel Notation Where It’s Useful
 
 Only use peels where they’re useful. Again: peels are only used in special situations, in which they provide more clarity. This can be the case:
 
@@ -328,7 +325,7 @@ or
 
 So don’t use shape peels… unless the reasons above weigh out. < zwaarder wegen? >
 
-### Line Peels
+## Line Peels
 
 Peel notation can be applied to lines just as well. For example: a double line suggests that the line crosses two borders.
 
@@ -348,7 +345,7 @@ In the peels of a *line* you can’t express exit-enter separation or the type o
 
 The little blue mark with the type line denotes that the line expresses the amount of borders crossed: one. If the line has more than one peel then this *crossing mark* is not required anymore. The crossing mark is analogous to the exit-enter mark you are required to add to a symbol with a single peel in order to say that the line crosses one border. If you draw line peels different from normal lines, thinner for instance, you can leave out the crossing mark.
 
-### Ambiguity In Peels
+## Ambiguity In Peels
 
 Here is a list of a few ambiguity risks when using peels:
 
@@ -357,7 +354,7 @@ Here is a list of a few ambiguity risks when using peels:
 
 Ambiguity risks might be widely covered in the ‘Diagram Metrics’ in the book ‘Symbol Language Advanced’.
 
-### Overview of Peals
+## Overview of Peals
 
 - Double lined shapes:
     - The line can be left out in these cases, but doesn’t might.
@@ -411,9 +408,9 @@ Ambiguity risks might be widely covered in the ‘Diagram Metrics’ in the book
 
 You can decide on your own what kind of notation you want to use, but the programming environment adopts standard ways to draw a diagram. It automatically uses different notations in different views on the system.
 
-### Loose Ideas
+## Loose Ideas
 
-#### Create Argument and Call Argument’s Members
+### Create Argument and Call Argument’s Members
 
 `<< peels >>`
 

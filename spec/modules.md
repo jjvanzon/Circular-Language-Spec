@@ -1,10 +1,7 @@
-﻿Circular Language Spec
-======================
+﻿Modules
+=======
 
 [back](..)
-
-Modules
--------
 
 `[ Preliminary documentation ]`
 
@@ -17,7 +14,7 @@ __Contents__
         - [Multiple Module Levels](#multiple-module-levels)
         - [System Commands for Modules](#system-commands-for-modules)
 
-### Concept
+## Concept
 
 A module is like a little world in which objects and commands live. A module can be a site, a computer program, a library or other kind of module. A module groups together functionality or data.
 
@@ -29,7 +26,7 @@ You can also reference a module directly from within another module. In that cas
 
 You don’t need to let modules refer to each other, to actually let one module use something from another module: one module can always access anything inside another module, whether it has a reference to it or not. A reference however, makes global things from one module, globally accessible inside another module.
 
-### Diagram
+## Diagram
 
 The principle of module is explained in the article *Module*. This article demonstrates its expression in a diagram.
 
@@ -61,13 +58,13 @@ Here is a module with a reference to another module:
 
 This makes all the global members of module __A__, globally accessible from inside module __B__.
 
-### Loose Ideas
+## Loose Ideas
 
 *The texts below are ideas yet to be turned into good documentation.*
 
-#### Out of the original Symbol documentation
+### Out of the original Symbol documentation
 
-##### Multiple Module Levels
+#### Multiple Module Levels
 
 A module B inside a module A is accessible by A. A module C inside module B is not accessible by A unless declared public.
 
@@ -95,6 +92,6 @@ A pentagon's direct children can all reference each other and can be referenced 
 
 JJ
 
-##### System Commands for Modules
+#### System Commands for Modules
 
 System commands of modules are the same as for other object symbols. The only restriction is that modules can’t have lines to objects and objects can’t have lines to modules. Modules can have an object line, type line and interface line just like objects.

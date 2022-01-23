@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Exchangeability
-================================================
-
-Hyperlinks = Referential Structure
-----------------------------------
+﻿Circular Language Broader View | Exchangeability | Hyperlinks = Referential Structure
+=====================================================================================
 
 `[ Preliminary documentation ]`
 

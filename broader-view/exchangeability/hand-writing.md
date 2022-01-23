@@ -1,14 +1,11 @@
-﻿Circular Language Broader View | Exchangeability
-================================================
-
-Hand Writing
-------------
+﻿Circular Language Broader View | Exchangeability | Hand Writing
+===============================================================
 
 `[ Preliminary documentation ]`
 
 Drawing On Paper
 
-### Symbol Drawing Equipment
+## Symbol Drawing Equipment
 
 It might be very nice to have a little drawing thing that makes it easy for you to draw on paper:
 

@@ -1,10 +1,7 @@
-Circular Language Construct Drafts | Text Code
-==============================================
+Construct Drafts | Text Code | Assignment in Text Code
+======================================================
 
 `[ Deprecated documentation ]`
-
-Assignment in Text Code
------------------------
 
 __Contents__
 
@@ -19,11 +16,11 @@ __Contents__
 - [Class Pointer Assignment in Text Code](#class-pointer-assignment-in-text-code)
 - [Interface Pointer Assignment in Text Code](#interface-pointer-assignment-in-text-code)
 
-### Introduction to Assignment in Text Code
+## Introduction to Assignment in Text Code
 
 The articles in this folder came out of the discontinued article group *Assignment*. It partly covered a textual assignment notation. Working out text code notations currently has a very low priority. But the unfinished text is preserved here anyway.
 
-### Assignment in Text Code
+## Assignment in Text Code
 
 An assignment is actually a combination of a __Get__ and a __Set__ call. Instead of using a call to an assignment command, you could also use a call to the __Get__ and __Set__ system commands. 
 
@@ -57,7 +54,7 @@ So that is the actual notation of an assignment.
 
 Knowing how to use __Get__ and __Set__ commands, instead of a single assignment call, gives you a low-level understanding of assignment. This low-level understanding is important in order to create alternative forms of assignment, as explained in *Alternative Assignments*.
 
-### Value Assignment in Text Code
+## Value Assignment in Text Code
 
 If you might have a character symbol for a value assignment, that distinguishes it from the other assignment types, it is the following symbol:
 
@@ -67,7 +64,7 @@ v=
 
 This symbol is the identifier for value assignment. The letter __v__ stands for value.
 
-### Object Assignment in Text Code
+## Object Assignment in Text Code
 
 If you might have a character symbol for an object assignment, that distinguishes it from the other assignment types, it is the following symbol:
 
@@ -77,7 +74,7 @@ o=
 
 This symbol is the identifier for object assignment. The letter __o__ stands for *object*.
 
-### Class Assignment in Text Code
+## Class Assignment in Text Code
 
 In text code, the symbol for class assignment is the following:
 
@@ -87,7 +84,7 @@ c=
 
 The letter __c__ stands for class.
 
-### Interface Assignment in Text Code
+## Interface Assignment in Text Code
 
 If you might have a character symbol for a class assignment, that distinguishes it from the other assignment types, it is the following symbol:
 
@@ -95,7 +92,7 @@ If you might have a character symbol for a class assignment, that distinguishes 
 
 This symbol is the identifier for interface assignment. The letter __i__ stands for *interface*.
 
-### Pointer Assignment in Text Code
+## Pointer Assignment in Text Code
 
 An assignment is actually a combination of a __Get__ and a __Set__ call. Instead of using a call to an assignment command, you could also use a call to the __Get__ and __Set__ system commands. In object reference assignment, though, no __Get__ is executed because an object reference is the direct source of the assignment, not its object.
 
@@ -129,7 +126,7 @@ So that is the actual notation of an object reference assignment.
 
 Knowing how to use __Get__ and __Set__ commands, instead of a single assignment call, gives you a low-level understanding of assignment. This low-level understanding is important in order to create alternative forms of assignment, as explained in the article *Alternative Assignments*.
 
-### Object Pointer Assignment in Text Code
+## Object Pointer Assignment in Text Code
 
 The textual symbol for an object reference object assignment is:
 
@@ -146,7 +143,7 @@ A  o=->  B
 
 It can be pronounced ‘A object is pointer to B’.
 
-### Class Pointer Assignment in Text Code
+## Class Pointer Assignment in Text Code
 
 The textual symbol for an object reference class assignment is:
 
@@ -164,7 +161,7 @@ A  c=->  B
 
 It can be pronounced ‘A class is pointer to B’.
 
-### Interface Pointer Assignment in Text Code
+## Interface Pointer Assignment in Text Code
 
 The textual symbol for an interface pointer assignment is:
 

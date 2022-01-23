@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Exchangeability
-================================================
-
-User Interface Not Command Oriented
--------------------------------------
+﻿Circular Language Broader View | Exchangeability | User Interface Not Command Oriented
+======================================================================================
 
 `[ Preliminary documentation]`
 

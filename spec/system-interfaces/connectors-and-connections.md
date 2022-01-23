@@ -1,10 +1,7 @@
-﻿Circular Language Spec | System Interfaces
-==========================================
+﻿System Interfaces | Connectors & Connections
+============================================
 
 [back](./)
-
-Connectors & Connections
-------------------------
 
 `[ Preliminary documentation ]`
 
@@ -21,7 +18,7 @@ __Contents__
         - [Clone Connections](#clone-connections)
         - [Existence, Execute & List](#existence-execute--list)
 
-### Connectors
+## Connectors
 
 System command definitions are displayed in the system interface:
 
@@ -86,7 +83,7 @@ Each system command has a connector, so every system aspect has its own set of c
 |                        __Add__                        |                      __Remove__                       |
 | ![](images/4.%20Connectors%20&%20Connections.021.png) | ![](images/4.%20Connectors%20&%20Connections.022.png) |
 
-#### Loose Ideas about Connectors
+### Loose Ideas about Connectors
 
 System Interfaces,  
 2009-09-27
@@ -96,7 +93,7 @@ Also: the connectors involved in pointer-to-pointer situations are not present h
 
 JJ
 
-### Connections
+## Connections
 
 This section covers any kind of connection between objects, that is a result of accessing system aspects. First the graphical overview of all possible system aspect connections is displayed. After that the details are covered.
 
@@ -126,7 +123,7 @@ This section covers any kind of connection between objects, that is a result of 
 |                        __Add__                        |                      __Remove__                       |
 | ![](images/4.%20Connectors%20&%20Connections.035.png) | ![](images/4.%20Connectors%20&%20Connections.036.png) |
 
-#### Outward and Inward Connections
+### Outward and Inward Connections
 
 An __Set Object__ connection is an outward connection.
 
@@ -154,13 +151,13 @@ Passing through to the inside of another object requires the __Get__ command of 
 
 This also conforms to the idea of automatic containment. In automatic containment, outward directed connections are automatically established: automatically drawn out in the diagram without an intervention of a programmer. Inward directed connects were actively established by the programmer. They follow a qualification before getting to the final object. They are more active and display an access symbol and result in active __Get__’s taking place all the time.
 
-#### Remarks
+### Remarks
 
-##### Class Connections
+#### Class Connections
 
 > __Use As Class__ and Set __Class__ are mentioned here. __Class Get__ is not covered here, because that is only used in active assignments, not in connections.
 
-##### Value Connections
+#### Value Connections
 
 > Note that the indication of *direction* for __Get__ and __Set__ is switched for the __Value__ aspect, compared to the __Object__ aspect: __Get Object__ is inward, while __Get Value__ is outward.
 > 
@@ -168,7 +165,7 @@ This also conforms to the idea of automatic containment. In automatic containmen
 > 
 > __Value__ connections are assignments, even though they do not have an ‘assignment notation’.
 
-##### Data Connections
+#### Data Connections
 
 > A __Data__ connector such as the following:
 > 
@@ -178,12 +175,12 @@ This also conforms to the idea of automatic containment. In automatic containmen
 > 
 > is an abstract connector: it represents any possible __Get__ connection to any sub-sub-object. Even though there is a __Data__ *connector*, there are no __Data__ *connections*. Any __Get__ connection to a sub-object is be considered a __Get Data__ connection.
 
-##### Clone Connections
+#### Clone Connections
 
 > The diagrams above show access connections for cloning at a depth of __2__. That is just an example. Any cloning depth other than __2__ could be used.
 > 
 > Cloning has the exact same notation as the __Value__ aspect, but then with a number near the access mark. Cloning is *that* closely related to the Value aspect.
 
-##### Existence, Execute & List
+#### Existence, Execute & List
 
 > This part of the documentation displays connections that are a result of accessing system aspects. For the __Object__ aspect that means an actual connection. But for the __Existence__, __Execute__ and __List__ aspects it means something different: more like a *call* or sometimes more like a *state*.

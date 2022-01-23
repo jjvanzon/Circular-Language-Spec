@@ -1,16 +1,13 @@
-Circular Language Construct Drafts | Implementations
-====================================================
-
-Applications
-------------
+Construct Drafts | Implementations | Applications
+=================================================
 
 `[ Out of Scope ]`
 
-### Introduction
+## Introduction
 
 Misc ideas about applications using Circular language.
 
-### Loose Ideas
+## Loose Ideas
 
 `<< applications >>`
 

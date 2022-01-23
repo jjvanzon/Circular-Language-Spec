@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Inheritance
-====================================
+﻿Inheritance | Enforcing & Preventing Specialization
+===================================================
 
 [back](./)
-
-Enforcing & Preventing Specialization
--------------------------------------
 
 `[ Preliminary documentation ]`
 
@@ -34,7 +31,7 @@ __Contents__
 - [Preventing Pre-Extension with Cancellation](#preventing-pre-extension-with-cancellation)
 - [Preventing & Enforcing Data Replacement](#preventing--enforcing-data-replacement)
 
-### Introduction
+## Introduction
 
 The world of programming languages offers several ways to prevent *or* *enforce* specialization. This article might give this a place inside Circular.
 
@@ -45,7 +42,7 @@ The concepts from other languages can be boiled down to a simpler model that has
 - Required / Optional
 - Requirements for other side of connection
 
-### Protected
+## Protected
 
 The protected access connector makes sure that a member is not publicly available, is privately available, but also available to all references (triangles) that merge with their container.
 
@@ -63,7 +60,7 @@ Note that __Protected__ members are still privately accessible, which means that
 
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.004.png)
 
-### Overriding
+## Overriding
 
 The overriding concept is already explained in the specialization article. There are two possible notations:
 
@@ -73,7 +70,7 @@ The overriding concept is already explained in the specialization article. There
 *Event notation:*  
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.006.png)
 
-### Optional / Required
+## Optional / Required
 
 The concepts from other languages for preventing or enforcing specialization require imposing that something *might* be filled in. The concept of *required* is already worked out in the article *Optional & Required*. The notation looks as follows:
 
@@ -85,7 +82,7 @@ __Required__
 
 *Required* is expressed by putting half of the expected symbol at the end of the connector. *Optional* might not get such a symbol, because it is the default behavior that things are optional to fill in. Required is an extra rule imposed.
 
-### Requirements for Other Side of Connection
+## Requirements for Other Side of Connection
 
 The concepts from other languages for preventing or enforcing specialization require being able to specify that the other end of the connection needs to be a triangle. For now this is expressed as follows:
 
@@ -95,7 +92,7 @@ So it is a notation where the requirements for the other end of the connection a
 
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.010.png)
 
-### Gut Feeling
+## Gut Feeling
 
 A gut feeling of mine is that __Protected__ and requirements for other side of connection could be made more alike, because both are about how the other end might be a triangle, but in one case that the direct reference might be a triangle, and in the other case the parent might be a triangle. So these requirements for it being a triangle might be merged into one concept one day.
 
@@ -103,7 +100,7 @@ The notation come up with for requirements for the other side of the connection 
 
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.009.png)
 
-### Applied to Concepts from Other Languages
+## Applied to Concepts from Other Languages
 
 The following keywords from other languages that prevent or enforce specialization are covered along with how they translate to Circular:
 
@@ -116,14 +113,14 @@ The following keywords from other languages that prevent or enforce specializati
 - __Interface__ member
 - __Non-Overridable__ (the default in other languages)
 
-### Protected
+## Protected
 
 For now __Protected__ is an intrinsic part of Circular. It has its own type of access mark: 
 
 __Protected__  
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.011.png)
 
-### Virtual
+## Virtual
 
 The keyword __virtual__ from other languages means that you *can override* the member. It is also called __Overridable__. In Circular this means that overriding should be __Public__. In the two notations for overriding this might look as follows:
 
@@ -139,7 +136,7 @@ The keyword __virtual__ from other languages means that you *can override* the m
 
 In some languages overriding is private by default, protecting a base class from specialization.
 
-### Abstract Member
+## Abstract Member
 
 When the keyword __abstract__ from other languages is applied to a member, it means that you *might* override the member. It is also called __MustOverride__. In Circular is a combination of making overriding __Public__ *and* __Required__. In the two notations for overriding this might look as follows:
 
@@ -153,7 +150,7 @@ When the keyword __abstract__ from other languages is applied to a member, it me
 |                 __Public Required Object Override__                  |
 | ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.015.png) |
 
-### Abstract Class
+## Abstract Class
 
 When the keyword __abstract__ from other languages is applied to a class, it means that you *might* inherit from the class, or better said: you cannot just reference the class, the reference might merge with its container. It is also called __MustInherit__.
 
@@ -172,7 +169,7 @@ __Public Triangle Use As Class__
 
 Do not get confused: abstract applied to a class might not mean that its commands are __abstract__, so might be overridden, it just means that the class might be inherited from. An __abstract__ class *can* have method *implementations* in it. 
 
-### Sealed / Final Class
+## Sealed / Final Class
 
 The keywords __sealed__ and __final__ mean the same thing. A sealed class, or final class, is the opposite of an abstract class: instead of only being able to inherit from the class, you are explicitly not able to inherit from the class. It is also called __NotInheritable__.
 
@@ -195,7 +192,7 @@ Here it becomes apparent that the notation should not be just an open half trian
 
 The use of this enforcement is questionable to me, because with a little effort you could wrap a non-inheritable class into an inheritable class again. I can imagine that a __final__ class could not have __virtual__ or __abstract__ members, so such a trick might not make it possible to override members, but it might make it possible to do any other inheritance trick in the book.
 
-### Interface / Interface Member
+## Interface / Interface Member
 
 Interfaces are an intrinsic concept inside Circular. In Circular any object can serve as another object’s interface by using the __Use As Interface__ connector.
 
@@ -211,7 +208,7 @@ The differences are pointed out here, but it is questionable whether it is impor
 
 Normally you do not see these restrictions. They only come to light as soon as you break a rule. That is why the interface constructs seems like a simpler construct: you can do less with it, but you could also see it as a more complex one, because compared to the class construct, *more restrictions* are imposed and these restrictions are also define somewhere. You just do not see this in other languages.
 
-#### Rule 1: Interfaces are Abstract
+### Rule 1: Interfaces are Abstract
 
 The first rule for interfaces in other languages is: interfaces are abstract and might be inherited from. This rule is questionable though, since some languages allow you to declare an *explicit* interface, which basically replaces the inheritance characteristic of the interface with aggregation characteristics. In Circular you can also choose whether to implement an interface in an implicit or explicit mannar / choose between inheritance and aggregation.  
 However if you want to enforce that you can only use the interface in an inheritance way, you could express that by imposing a rule for the other side of the connection:
@@ -220,7 +217,7 @@ However if you want to enforce that you can only use the interface in an inherit
 
 This expresses that the other end of the connection should be a triangle.
 
-#### Rule 2: Interface Members are Abstract
+### Rule 2: Interface Members are Abstract
 
 The second rule of interfaces is: members might be overridden / members are abstract. In Circular all interface members are always present inside an implementation of an interface. This is not considered overriding: you have no say in whether to override something or not, the members are just automatically there as soon as you implement an interface.
 
@@ -240,7 +237,7 @@ If you want to set this rule for all members at the same time, there is no other
 
 But all in all, you should not worry about this, because if you use an interface, automatically all members of the interface are implemented.
 
-#### Rule 3: Interfaces can not Have an Implementation
+### Rule 3: Interfaces can not Have an Implementation
 
 Circular offers no way to enforce that the interface object has no implementations. Period. You can put implementations in interfaces, only they might never be used.
 
@@ -249,7 +246,7 @@ Something might be considered here compared to other programming languages. In o
 So how this translated to implementations inside interface objects: if you make something inside an interface object private, it might never be used.  
 You can make the private content usable again by either making it public again or by making the object usable as a class or plainly as a object.
 
-#### Gruesome
+### Gruesome
 
 In the picture below both interface members being abstract and the interface being abstract are expressed:
 
@@ -263,7 +260,7 @@ The access connector is not even required, so you can also notate:
 
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.028.png)
 
-### Non-Overridable
+## Non-Overridable
 
 Not being able to override is the default in other languages, but in Circular it is an imposed restriction, making overriding __Private__, which looks as follows in the two notations for overriding:
 
@@ -279,7 +276,7 @@ __Private Object Override__
 
 ![](images/3.%20Enforcing%20&%20Preventing%20Specialization.030.png)
 
-### More Combinations
+## More Combinations
 
 With the concepts explained so far you can form other combinations of protection against specialization. For instance the following:
 
@@ -289,7 +286,7 @@ __Protected Required Object Set__
 
 But this is also possible in other languages by making a member __protected abstract__.
 
-### Courtesy
+## Courtesy
 
 All of this is just courtesy to support all these concepts in Circular. My gut feeling is that something simpler might be come up with in the future.
 
@@ -297,7 +294,7 @@ For instance the __Protected__ connector notation was come up with at a very ear
 
 This article is just put here to make sure that at least all of this stuff is possible in Circular, but my gut feeling is that a replacement for all of this might be found.
 
-### Enforcing & Preventing Other Specialization Methods
+## Enforcing & Preventing Other Specialization Methods
 
 The ideas above might provide other language’s capabilities to enforce or prevent specialization. But what about the other specialization methods? How are they enforced or prevented? The following specialization methods were not covered:
 
@@ -326,10 +323,10 @@ To get it in line with the rest of the system, the following methods for protect
 
 However, these other specialization methods do not really disturb the class’s original implementation. Anything that alters the base’s behavior should be preventable. The rest is not that important to prevent. The only specialization methods proposed now that change the actual base object is overriding and cancelling on pre-extension. The rest just augments an object. The work required to work out how all specialization methods are preventable is not done right now, because it is not considered very important or worth the hassle.
 
-### Preventing Pre-Extension with Cancellation
+## Preventing Pre-Extension with Cancellation
 
 Pre-extension with cancellation is an alternative to overriding. It should also be preventable, because it alters the base’s behavior. Clearly when something is not overridable, you should also not be able to cancel it. The exact implementation of this is not important. The only thing that is important is that it prevention of pre-extension with cancellation *might* be implemented.
 
-### Preventing & Enforcing Data Replacement
+## Preventing & Enforcing Data Replacement
 
 Data replacement is not regarded a specialization technique. However, anything inside an object is data, even the code, command names and command parameters. By default any of this data can be replaced. The way to prevent data replacement is by either making something __Private__, so that only __Friend__ objects can access it, or by making the data Static inside the class, so that the data cannot be changed through instances of the class.

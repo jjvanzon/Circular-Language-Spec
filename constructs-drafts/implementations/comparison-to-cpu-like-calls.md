@@ -1,8 +1,5 @@
-Circular Language Construct Drafts | Implementations
-====================================================
-
-Comparison to CPU-Like Calls
-----------------------------
+Construct Drafts | Implementations | Comparison to CPU-Like Calls
+=================================================================
 
 __Contents__
 
@@ -19,7 +16,7 @@ __Contents__
 - [More Brainstorming](#more-brainstorming)
 - [Former Text](#former-text)
 
-### Introduction
+## Introduction
 
 There was a lot of brainstorming about how Circular’s call instantiation relates to the way it goes in other programming languages, which have a command call creation scheme totally compliant to the CPU’s way of handling command calls, but is not in the spirit of *commands as an object*. But that brainstorming was postponed, because it did not have anything to do with a goal of a workable type of call instantiation, but more with optimization of Circular. The contemplations are still here in this article, as an unfinished brainstorm, that may be later worked out, to better take advantage of CPU power.
 
@@ -28,7 +25,7 @@ Perhaps creation behavior is just the most important issue of Command is an Obje
 There was a brainstorm about the problems, that come with creating a sub-call object just before it executes. This brainstorm in further down below in the section *Former Text*.  
 But the idea might now be further worked out by making a comparison between other programming languages and how it might be solved in the new programming language.
 
-### What happens in other programming languages?
+## What happens in other programming languages?
 
 In other programming languages, when a call is executed, calls to sub-commands are not copied to the call instance.
 
@@ -51,7 +48,7 @@ What the CPU might, is get new instructions from the spot pointed out by the ins
 
 The same code, with fixed pointers has to be executed on different data all the time, so that might mean a data switch. Each object has its own data segment. To operate on that data, the DS register needs to be set. That means, that on each call to an object’s method, the original DS register is put onto the stack to remember it, and the DS register is replaced to point to the object from which to call a method. Inside the method of the object called, other objects may be created. This changes nothing about the DS register. The object pointers are put onto the stack, instructions can operate on a fixed spot in the stack, instead of a fixed spot in the data segment. But inside the method of the object called, objects are created, but also objects are called. As soon as another object’s method is called, the original value in the DS register is put on the stack, and the DS register is set to point to the object to call. After the object call is done, the DS register is restored to its original value, by popping the original value off the stack again. That’s probably the way it works in object oriented systems.
 
-### Why might that not work for my own system?
+## Why might that not work for my own system?
 
 The CPU is quite straightforward in a way. It executes and executes doing exactly what it is lead to do by its instruction pointer that only goes forward, and it only skips to another spot, when it encounters a jump instruction and the data then determines whether it might jump at all. A CPU is really quite straightforward and just might what we tell it to do. As a normal program runs, you do not *see* debug information. When a program runs normally, you do not see what method it is in and of what object, and even the CPU might not see what method it is in and of what object. When you debug, though, you want to see the exact code line of what exact method and of what object, you can even see (from an alternated call stack) what commands were called before and of what object.
 
@@ -69,15 +66,15 @@ There is:
 
 funny enough, that is all a command call consists of. Do remember that machine instructions, arithmetic operators, comparative and boolean algebra and execution flow statements such as If and For, are all just command calls.
 
-### Data
+## Data
 
 In a CPU-like programming language, the data is already there as created objects somewhere in memory. That’s the same in my own language.
 
-### Pointers to this data
+## Pointers to this data
 
 Pointers to the data, that was already there, are on the call stack in a CPU-like language. In my own language the pointers to this other data are inside the call object. So from that perspective, the call object constitutes, what is otherwise a chunk of the stack, that belongs to a particular command call.
 
-### Sub-commands
+## Sub-commands
 
 Now, the sub-commands in a CPU-like language are there as CALL instructions. CALL instructions are in the command definition. In my own language sub-commands are there as sub-command references, with a *definition* assigned to them, but no object  yet. The sub-command *object* is only created just before a sub-command might be run.
 
@@ -86,18 +83,18 @@ I still do not have a clear view on why in CPU-like languages it is CALL instruc
 
 < It’s just that, in CPU-like languages the instructions run and the data to operate are such separated things. The registers and the stack hold the data, and the instructions hold the code. In my own language, the data to operate on is not on *the stack*, but *inside* the command to execute. So the command call (instruction) *contains* the data to operate on. No. I still don’t get it>
 
-### Parameters of these sub-commands
+## Parameters of these sub-commands
 
 In CPU-like languages this means, that space is created on the stack for these parameters just before the sub-command is executed. Actually this happens in one blow with assigning data to the parameters.  
 In my own language, the pointer parameters are created as pointers, the value parameters are created as pointers and simple created objects (data). This all done, just before the sub-command is executed.
 
-### Assignment of data to the sub-commands’ parameters
+## Assignment of data to the sub-commands’ parameters
 
 In CPU-like languages this means, that parameter space on the stack is assigned values. Actually, this happens in one blow ith creating the space on the stack. This all just before the sub-command executes. In my own language, this means, that the pointer parameters are set to point to objects and the value parameters, that are created simple objects, are now assigned values. This also happens, just before the sub-command executes.
 
 < There is a difference between when the assignment is executed, and where the assignment call is. The assignment call in CPU-like languages are PUSH instructions in the command definition. Only when executing the parameter assignment / push instruction, the parameters are actually created. The assignment call in my own language is a special assignment command call, displayed as a parameter passing. The assignment command call might already link to parameter references of sub-commands, therefore the sub-commands might already be created, but not yet initialized. Only when the sub-command is about to be run, the parameter assignment is actually executed. >
 
-### Reason to always create and assign sub-commands…
+## Reason to always create and assign sub-commands…
 
 For visibility...
 
@@ -115,11 +112,11 @@ You have:
 
 The sub-commands might be created and their parameter sub-objects need to be in there, but can be Nothing. The parameter assignments are (really) special sub-commands, that are displayed with a parameter passing notation, but that might not require the parameters to be created.
 
-### How can a parameter passing assignment be stored
+## How can a parameter passing assignment be stored
 
 A parameter passing assignment could only be stored by the parent command-call if the sub-commands are created (but not initialized; parameter references are there, but not filled in yet).
 
-### More Brainstorming
+## More Brainstorming
 
 < A problem is, that in Circular, the command definition is not assembly code. It is objects of Circular. >
 
@@ -147,7 +144,7 @@ Just confess in that article, that it is just a brainstorm,
 the goal of the brainstorm and that it is still not solved,  
 and then leave it unfinished indefinitely.
 
-### Former Text
+## Former Text
 
 *{ Most of this is brainstorming. The more true conclusions are there under ‘What happens in current programming languages?’. }*
 

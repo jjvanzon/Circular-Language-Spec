@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Interfaces
-===================================
+﻿Interfaces | Loose Ideas
+========================
 
 [back](./)
-
-Loose Ideas
------------
 
 `[ Preliminary documentation ]`
 
@@ -22,7 +19,7 @@ __Contents__
             - [Type Line Being called Interface Line](#type-line-being-called-interface-line)
 - [Loose Ideas about Interfaces](#loose-ideas-about-interfaces)
 
-### Loose Ideas about Relations Through Interfaces
+## Loose Ideas about Relations Through Interfaces
 
 Relations Through Interfaces,  
 2010-05-07
@@ -40,7 +37,7 @@ Wait, no, that is not the solution, they may be just two objects, but they do ha
 
 JJ
 
-### Loose Ideas about Target Interfaces
+## Loose Ideas about Target Interfaces
 
 *The texts below are loose ideas yet to be turned into good documentation.*
 
@@ -53,15 +50,15 @@ Targets,
 
 JJ
 
-#### Out of the original Symbol documentation
+### Out of the original Symbol documentation
 
-##### Tracing Object Aspects
+#### Tracing Object Aspects
 
 ...
 
 The same way, type lines can redirect the interface. Object lines can redirect the type and the type can redirect the interface, so an object line can also direct the interface.
 
-###### Interface Trace
+##### Interface Trace
 
 You’ll use all three line types to trace the interface. Follow the interface line if it exists, else follow the object line, else the type line. When you run into a symbol with no lines, then that’s the interface.
 
@@ -77,13 +74,13 @@ The reason that the object line is preferred over the type line is that if there
 
 In other words: follow interface line, otherwise object line, otherwise type line. The final symbol altogether is the interface.
 
-###### Object-Type-Interface Trace
+##### Object-Type-Interface Trace
 
 It happens frequently that you need a symbol’s target object, type and interface in one blow. That requires two traces: an object-type trace and an interface trace. The full operation is an *object-type-interface trace*. It deserves a separate name for it’s a very common operation.
 
-##### Tracing Command Aspects
+#### Tracing Command Aspects
 
-###### Command Interface Trace
+##### Command Interface Trace
 
 In the *command interface trace* you follow both line types, but you prefer following an interface line over a reference line.
 
@@ -93,11 +90,11 @@ The last symbol of the trace is the interface.
 
 Following any of the two line types might eventually lead to the same symbol. In that sense it doesn’t matter what line type you prefer to follow. The interface line is preferred, though, both because it’s more logical to follow, and because following them you’ll probably hit the interface sooner: probably there might be less interface redirections than reference redirections.
 
-###### Execution-Definition-Interface Trace
+##### Execution-Definition-Interface Trace
 
 It happens frequently that you need target execution, definition and interface in one blow. That requires two traces: an execution-definition trace and an interface trace. The full operation is called an *execution-definition-interface trace*. It deserves a separate name for it’s a very common operation.
 
-###### Type Line Being called Interface Line 
+##### Type Line Being called Interface Line 
 
 The term *interface target* can mean the target of the *interface line*, but there’s also a second meaning. When the interface line is missing, the interface can also be redirected by an object line or type line. The term *interface target* can also denote the symbol to which the interface is redirected, *be it* with an object line or type line. Sometimes the word *interface line* is even used where I really talk about the line that *redirects* the interface.
 
@@ -105,7 +102,7 @@ The same thing applies to the term *type target*. *Type target* can mean the tar
 
 It’s the same thing with the redirection of other system aspects.
 
-### Loose Ideas about Interfaces
+## Loose Ideas about Interfaces
 
 The interfaces an object supports are interesting. It’s also interesting to know if an interface is supported by an object. Of course you could derive that from the first data, but that’s not the fastest.
 

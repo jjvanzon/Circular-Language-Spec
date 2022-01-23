@@ -1,15 +1,12 @@
-﻿Circular Language Construct Drafts | Text Code
-==============================================
+﻿Construct Drafts | Text Code | Collection Operation Literals
+============================================================
 
 `[ Deprecated documentation ]`
 
-Collection Operation Literals
------------------------------
-
 Text notation for operations on collections.
 
-### Loose Ideas
+## Loose Ideas
 
-#### Collection Operation Literals
+### Collection Operation Literals
 
 Perhaps there might be a general text notation for filling (collection) data, that might easily work for specifying structures.

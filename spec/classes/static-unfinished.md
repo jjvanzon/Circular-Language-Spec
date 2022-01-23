@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Classes
-================================
+﻿Static
+======
 
 [back](./)
-
-Static
-------
 
 `[ Preliminary documentation ]`
 
@@ -41,11 +38,11 @@ __Contents__
     - [Misc Brainstorm Items](#misc-brainstorm-items)
 - [Loose ideas](#loose-ideas)
 
-### Introduction
+## Introduction
 
 This is unfinished documentation of lower quality. It only has an unfinished description of the general idea.
 
-### Preliminary Design
+## Preliminary Design
 
 The distinction between objects, classes and interfaces is so loose in Circular and the distinction really leans on the concepts of public / private and the concept of static. These determine the difference between objects, classes and interfaces.
 
@@ -69,11 +66,11 @@ The idea for now is that each system command might be separately made static or 
 
 Class objects have full control over any piece of data. But when you use an object as a class, the object might only be able to control what the class object defines an object can control.
 
-### Interface-Like Static
+## Interface-Like Static
 
 Is anything defined inside an interface static? I don’t know.
 
-### Important Brainstorm
+## Important Brainstorm
 
 2010-05-07
 
@@ -89,7 +86,7 @@ I am mixing up the concepts of Static and Private here: both might have to do wi
 
 \> One assumption specifically is wrong: that the class always defines certain constructs, that an object can not change. This also counts for interfaces, which are basically the same as classes but only for the public part of an object.
 
-### Static and Creation (Out of the Original Symbol Documentation from 2004)
+## Static and Creation (Out of the Original Symbol Documentation from 2004)
 
 < An object doesn’t define code. You could say that the type defines code and that a object only defines data. Each module instance, though, has its own instance of the types of the modules, even though the code of the types is still only in memory once. So you can’t really say the code resides in a type either. >
 
@@ -109,7 +106,7 @@ I am mixing up the concepts of Static and Private here: both might have to do wi
 - Command Create
 - Module Type Create
 
-#### Static
+### Static
 
 Members usually belong to an object: every object has its own sub objects and commands. Members of a type that are Static, however, belong to the type rather to individual objects. These members have the same configuration for every instance of the type. A change made to one object of the type changes all objects of the type. The members are considered *static* to the type.
 
@@ -123,7 +120,7 @@ An effect of making type members static is that you can call the members even wh
 
 Command static members are like part of their object. They persist for as long as the object is created. Type static members persist for as long as its module instance is created. Note here that each module instance gets its own set of types with static members. Module static members persist for as long as the module type exist. A module type exists when the Sigma module that contains it is in memory.
 
-#### Type Creation
+### Type Creation
 
 The Object Create command initializes the instance. In it you can create sub objects, set up lines and call members. Type members are initialized in another command: Type Create. The Type Create command of a symbol is called when the type is created. Types are created when a module instance is created so the Type Create command of all types in a module instances are called right after the module’s Object Create command.
 
@@ -135,17 +132,17 @@ Members of a command that are Type Static are initialized in the type’s Type C
 
 A module also have a Type Create command. This is called when the module type comes to light. Module types come to light when a Sigma module is loaded. All the Type Creates of module types in a Sigma module are called right after the Sigma module is loaded. The Type Create of the main module of a Sigma module serves as the module initializer. The Object Create of the main module serves as the module instance initializer.
 
-#### Old
+### Old
 
-##### Static Objects
+#### Static Objects
 
-###### Type Static Objects
+##### Type Static Objects
 
 Sub objects belong to their container object. Static objects, however, are part of the type rather than part of individual objects. Each object then contains a sub object that is the same for each object of the type. The static object symbols are shown to all point to the object in the target type. The static object in the target type can be created while the type symbol isn’t shown as created. The target type holds the line targets and data of the static object. When an object of the type tries to change the object line of the static object, it doesn’t change the line of its own object symbol, because that line might always point to the static object of the target type. Instead, the line of the static object of the type changes.
 
 This makes it so that lines can be tied together quite complexly, because static object symbols in object of the type always point to the static object symbol in the target type, which can be lines that travel far. On the other hand: every object of the type with a static object can set the line of the static object, meaning that the static object can point to a wide variety of locations, so it could again be a far away line. The lines of the static object symbol inside objects of the type, that point to the static object symbol of the target type, anyway, these lines don’t really exist. I still might come up with a way to make the notation different so that you can see the static systematics.
 
-###### Command Static Objects
+##### Command Static Objects
 
 Commands are much like types. They can hold objects too. If you want the state of an object to persist for multiple command calls, you can make the command object a *Command Static*.
 
@@ -157,7 +154,7 @@ Command and Type Static objects inside commands can also have the long lines goi
 
 < P >
 
-###### Module Static Objects
+##### Module Static Objects
 
 A Type Static sub object is the same instance for each object of the type. But each module instance gets its own Type Static object. If you want the object to be the same for every instance of the module, then you might make the object Module Static.
 
@@ -165,13 +162,13 @@ Note that Type Static Objects that are direct ancestors of the module are static
 
 Note that Module Static objects are automatically also Type Static.
 
-##### Static Commands
+#### Static Commands
 
-###### Command Static Commands
+##### Command Static Commands
 
 If you not just make a single command object Command Static, but the whole command Command Static, then all objects in the command are Command Static.
 
-###### Type Static Commands
+##### Type Static Commands
 
 If you make a command, not an object, Type Static, then the command static objects inside the command are also static for the whole type.
 
@@ -179,13 +176,13 @@ Another effect of making a command Type Static is that you can call the command 
 
 Type Static objects and commands can be accessed even though an uncreated object symbol, but non Type Static commands and objects can *not* be accessed unless the object symbol is created.
 
-###### Module Static Commands
+##### Module Static Commands
 
 The rules of Type Static commands also apply to Module Static commands. Only Type Static commands’ objects are static to *all instances* of the module.
 
-##### Type Create and Destroy
+#### Type Create and Destroy
 
-###### Type Create and Destroy
+##### Type Create and Destroy
 
 In order to initialize and terminate objects and commands static to the type, object symbols have a Type Create and a Type Destroy system command. The Type Create command of an object symbol is called long before the object symbol is created and becomes a created object. The Type Create command is called when a module object is created. The Type Create commands of any ancestor object symbol of the module is called, but not of the object symbols in sub modules. Those object symbols’ Type Create commands are called only when the sub module is created. Many object symbols might not even have a Type Create command.
 
@@ -199,11 +196,11 @@ Type Static members are like part of the module instance, rather than the object
 
 Module Type Static members are like part of the Sigma module, rather than the module instance.
 
-###### Module Type Create and Destroy
+##### Module Type Create and Destroy
 
 Module symbols also have a Type Create. New module types come to light when a Sigma module is loaded. All the Type Creates of module types in a Sigma module are called right after the Sigma module is loaded. The Type Create of the main module of a Sigma module serves as the module initializer. The Object Create of the main module serves as the module instance initializer.
 
-###### Command Create and Destroy
+##### Command Create and Destroy
 
 Commands are in many aspects the same as types. To initialize the static members of commands. Command Create is called on creation of the command’s object. In the Command Create you can only call static members of the command, because the instance members of command only exist during a call to the command.
 
@@ -211,7 +208,7 @@ Command Create is stuck right at the end of the object’s Object Create.
 
 Command Static members of a command are like part of the object instance, rather than the command instance.
 
-#### Question
+### Question
 
 Where are type static command members initialized?  
 Type Static command members are like part of the module instance. They are module instance *specific*, but this is also called type specific, because a type belongs to a module instance. They should be initialized along with the module instance, so along with the type creation. Type Create can access Type Static command members and are initialized there.
@@ -220,9 +217,9 @@ Type Static members of both the type and its commands are initialized in the Typ
 
 Module Static members of both module, its type and commands are initialized in the module’s Type Create command and terminiated in its Type Destroy command.
 
-#### Old
+### Old
 
-##### Type Static
+#### Type Static
 
 The basic things about a static command:
 
@@ -238,21 +235,21 @@ Alleen als de naar hetzelfde geheugen verwijst.
 
 Ik volg het niet. Ik zie het niet.
 
-###### Static Members
+##### Static Members
 
 There is a way to call commands of a symbol that isn’t created: you can make commands static. This makes them callable even when the symbol is not created. They are the type’s members rather than the object’s members. An object symbol becomes static by making one or more of its system commands static, for instance the Symbol Get, which makes you able to link to an object symbol. You can call the type’s static members through any symbol that has that type. Static commands aren’t passed the hidden object argument.
 
-###### Type Create and Type Destroy
+##### Type Create and Type Destroy
 
 You may want static objects to always be created. Remember that static objects are objects some of whose system commands are static. Those static objects can store static data for the type. Or you may want to reserve ‘static’ memory space for the type yourself. There’s no such thing as static memory space, but you can allocate memory and store a reference to it in a static object. To be able to have sub objects created as soon as the *type* is running, a type, apart from an object, needs a Create commands. Therefore, object symbols have a Type Create command. Object symbols also have a Type Destroy command to be able to destroy static objects and deallocate static memory. 
 
-###### Type Create and Type Destroy are Static nor Non Static
+##### Type Create and Type Destroy are Static nor Non Static
 
 The Type Create and Type Destroy are considered static nor non static, because because Type Create is called before the type is created, so before static members can be called.
 
-##### Module Static
+#### Module Static
 
-###### Other Issues
+##### Other Issues
 
 Modules need to be created too.
 
@@ -290,14 +287,14 @@ Static bij command members.
 
 < How can you make a type: module static? >
 
-#### Misc Brainstorm Items
+### Misc Brainstorm Items
 
 < I need a story about where the code resides and that the code isn’t really part of module instances, types, objects or commands. Those entities only complete the code with a copy of data. >
 
 his formulation may not be entirely true, but maybe wording like that could be used in the 'Static' explanation? For instance the idea that types could be changed live, and the contents of objects might simultaneously change:  
 Every symbol of the same type has the same contents. The type can be edited by editing either symbol and their contents might change simultaneously.
 
-### Loose ideas
+## Loose ideas
 
 < Static read-write to the objects. How do you type-control this? I do not think this can be solved with just friend-public-private modifiers. >  
 

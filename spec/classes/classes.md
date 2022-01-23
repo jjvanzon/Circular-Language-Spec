@@ -1,10 +1,7 @@
-﻿Circular Language Spec
-======================
+﻿Classes
+=======
 
 [back](./)
-
-Classes
--------
 
 __Contents__
 
@@ -20,7 +17,7 @@ __Contents__
 - [Shape Both Dashed and Solid](#shape-both-dashed-and-solid)
 - [Conclusion](#conclusion)
 
-### Introduction
+## Introduction
 
 The contents of an object might be arbitrary. Anything may be put inside an object:
 
@@ -50,7 +47,7 @@ An object may have a similar *structure* as its class, but may have *data* that 
 
 While the structure of the larger circle at the left might be similar to the contents of the class on the right, the data appears to have changed.
 
-### Class Redirection
+## Class Redirection
 
 In these diagrams an object might be used as a class or prototype for another object. That may be expressed in a diagram by connecting an object symbol to its class with a dashed line:
 
@@ -58,7 +55,7 @@ In these diagrams an object might be used as a class or prototype for another ob
 
 The object on the left might have the class on the right. An object’s pointing out its class, could be called *class redirection*. The usage of the dashed line might have a meaning here. *Dashed lines* might symbolize *classes*.
 
-### Using Dashed Shapes
+## Using Dashed Shapes
 
 *Dashed shapes* might be used to denote classes:
 
@@ -82,7 +79,7 @@ Other parts of the static (or 'class') structure might be drawn with dashed line
 
 The rules do not seem to be that precise when it comes to shapes drawn with different line styles. The rules for pointing lines might be a bit stricter: dashed might point out a class.
 
-### Using an Object as a Class
+## Using an Object as a Class
 
 Perhaps it might be familiar that an object might be stable in its role as a prototype or class. Dashed shape notation might be helpful as more specific in meaning: to indicate that it might just be a class.
 
@@ -98,7 +95,7 @@ But the Circular notation itself might include objects to serve as a class or pr
 
 ![](images/Classes.011.png)
 
-### Using a Class Like an Object
+## Using a Class Like an Object
 
 With object references to a class, a type might be referenced like an object.
 
@@ -110,7 +107,7 @@ Or possibly this expresses it neatly:
 
 ![](images/Classes.013.png)
 
-### Object Reference with a Class
+## Object Reference with a Class
 
 Similar to an *object* might have a class, an *object reference* might also have a class. Then merely objects of that class might be referenced.
 
@@ -118,7 +115,7 @@ Similar to an *object* might have a class, an *object reference* might also have
 
 The object reference on the left might point out its class on the right. The object at the bottom might also point out its class on the right. The solid line might be ok for the object reference to point to the object, since they seem to have the same class.
 
-### Object Reference without a Class
+## Object Reference without a Class
 
 When an object reference might not have a class, this might suggest the possibility to point to *any* object.
 
@@ -128,13 +125,13 @@ The 'untyped' object reference at the top-left might point to an object of any c
 
 An interpretation might be that an 'untyped' object reference could take on the class of an object it may point to. So indirectly it might have a class.
 
-### No Class != Defines its own Class?
+## No Class != Defines its own Class?
 
 Something might have been unclear at one point. Objects might be usable as classes. It may be tempting to think that an object *without* a class might define *its* *own* class. It might be handy to not think of it that way, but think of it as object without a class simply not having a class. Having no class might suggest something might be arbitrary.
 
 There may be examples where this might be a helpful concept.
 
-### Object Reference might define its Own Class?
+## Object Reference might define its Own Class?
 
 There may be other examples, but it might be unfortunate to think of an *object reference* as defining its own class. Because then the object reference may only point to … itself?
 
@@ -144,7 +141,7 @@ Instead of a 'stuck on itself' situation, it may be seen as an indication that s
 
 ![](images/Classes.015.png)
 
-### Shape Both Dashed and Solid
+## Shape Both Dashed and Solid
 
 It may be an idea that if a symbol serves as another object’s class, but also might be referenced like an object, the symbol might get a double border to maybe indicate its dual role as both an object and a class.
 
@@ -162,6 +159,6 @@ Then it looks like it might make sense to draw the double-bordered shape with ju
 
 The optional nature of the dashed shapes seems to leave things open to discussion.
 
-### Conclusion
+## Conclusion
 
 Hopefully this might give an impression of how class notation might be used in the Circular language.

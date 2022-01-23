@@ -1,8 +1,5 @@
-﻿Circular Language Construct Drafts | From Spec
-==============================================
-
-Thruput Parameters | Affected, Used and Transformed
----------------------------------------------------
+﻿Construct Drafts | From Spec | Thruput Parameters | Affected, Used and Transformed
+==================================================================================
 
 `[ Preliminary documentation ]`
 
@@ -59,7 +56,7 @@ This gives us the following number of parameter passing situations:
 
 < When throughput it is affected and used, values are read and written from it to manipulate or coming out of other objects. When throughput is transformed, the values written to the throughput object were derived from values first read from the throughput object. >
 
-### Brainstorm
+## Brainstorm
 
 Do I really need to stereotype this many subtile variations? Isn’t the fact that it is thru enough to tie everything together?  
 This whole section in, out, thru is getting out of hand.  
@@ -67,11 +64,11 @@ It was supposed to be simple. It wasn’t even there at first.
 I might simplify the story, keeping the split up in affected, used, transformed and ‘same value’ a detail.  
 Then I need to work out the subjects under the assumption, that you only need to be concerned with in, out and thru.
 
-### Same Value
+## Same Value
 
 < Perhaps when it is the exact same variable that’s read and written, this should be stereotyped in a different way as well. It is transformed, but then specific values are both used and affected. Transformed where one part of the object is used, to affect another part of the object, is also transformation, but less rigorous, so perhaps you do need some sort of stereotyping for that. >
 
-### Throughput variations
+## Throughput variations
 
 <
 combinations:
@@ -105,7 +102,7 @@ The combinations, that are left, then:
 - affected & transformed
 - affected & used & transformed
 
-### Value Thru, affected
+## Value Thru, affected
 
 Might not make sense. You’d give a parameter an initial value, that might not get used, but might be overwritten.
 

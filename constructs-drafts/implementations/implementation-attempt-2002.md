@@ -1,8 +1,5 @@
-﻿Circular Language | Construct Drafts
-====================================
-
-Implementation Attempt 2002
----------------------------
+﻿Construct Drafts | Implementation Attempt 2002
+==============================================
 
 `[ Out of Scope ]`
 
@@ -49,7 +46,7 @@ __Contents__
         - [J Code and Code Style](#j-code-and-code-style)
         - [Other](#other)
 
-### Introduction
+## Introduction
 
 J Code is the compiler of the Sigma operating system. It converts one type of code to another.
 
@@ -84,23 +81,23 @@ This project involves the following:
 
 Each subject has its own document. This document only describes the subjects in general.
 
-### Symbol Database
+## Symbol Database
 
 Symbol language is stored in a J Database.
 
-#### Old
+### Old
 
-#### System Specification
+### System Specification
 
 The symbol language includes a system specification document class. This class might be used to contain the source code. The document is read to be able to produce the Sigma module.
 
-#### Document
+### Document
 
 The document is encapsulated by a single class that represents the part of the software through which the Symbol code data is managed and in which it is stored and guarded. Calling the members of its interface might not harm the integrity of the Symbol diagram.
 
 The document returns the diagram data, provides edit methods, manages selections, allows undo, etc. Almost all possibilities for the user of the Symbol Environment have a place in the symbol document.
 
-##### Copy and Paste
+#### Copy and Paste
 
 (and Cut, Save Selected and Merge)
 
@@ -114,13 +111,13 @@ Only the outer parent might not be dummied. There might be –1 parents in the f
 
 Just about the only difference between Copy/Paste and SaveSelected/Merge is that SaveSelected/Merge has to use a whole SymDoc as a 'clipboard', while Copy/Paste can do with only a SymDocTable which excludes indexes, selections and many other things.
 
-###### Paste
+##### Paste
 
 Usually paste comes after copy, but it's easier to understand in this case. The clipboard contains a valid diagram. When pasting you first add to the main diagram all the symbols in the clipboard with all their properties except parent, reference and class. Mind that adding a symbol doesn't mean that the new symbol is at the end of the line.  the new symbol could be anywhere in the table. While adding all those symbols from the clipboard to the main diagram you build an array that contains the positions of all the newly added symbols. This same array serves as a conversion from the clipboard diagram symbol positions to the new main diagram symbol positions.  
 ( all the classes, referees and parents are there now safe to be referred to if you convert the clipboard positions to main diagram positions )  
 You know *which* of the diagram symbols were just added because we built up an array saying which ones were added. Then you change the parent, reference and class properties of the added symbols not to what's in the clipboard, but to what's in the clipboard converted to positions in the main diagram.
 
-###### Copy
+##### Copy
 
 In every SymDocTable there is an extra field 'Vector' that serves as a vector table.  
 A secondary SymDoc or a SymDocMain might function as a clipboard. You add as many symbols to the clipboard as should be copied and set all properties except Parent, Reference and Class. As you do that you fill in the vector table in the main diagram: diagram position -> clipboard position which means that you don't change ALL the entries in the vector table.  
@@ -129,13 +126,13 @@ We kept an array of positions of vectors to dummy classes these vectors should b
 
 The residence of the vector table is best in the main symbol table for it might be costly to create an array with 60,000 records every time you copy any small bit of a 60,000 symbol diagram.
 
-##### The below information about Document is obsolete
+#### The below information about Document is obsolete
 
 In this section I might describe abstractly three things about the document: what is explicitly stored (“Stored”), what is read only and what is random access (“Properties”) and the methods of the document class (“Methods”).
 
 Keywords regarding the document are: integrity, indexes and abundance.
 
-##### Stored
+#### Stored
 
 The document __*explicitly stores*__:
 
@@ -148,7 +145,7 @@ Main data:
 - In()
 - To()
 - Of()
------
+<br/><br/>
 - Symbols is the number of symbols.
 - Name contains the names of these symbols.
 - Public contains whether a symbol is public or not.
@@ -161,14 +158,14 @@ Indexes:
 
 - ValidSymbols
 - ValidSymbol() 
------
+<br/><br/>
 - SymbolsInMe()
 - InMe(,)
 - SymbolsToMe()
 - ToMe(,)
 - SymbolsOfMe()
 - OfMe(,) 
------
+<br/><br/>
 - ValidSymbols is the number of valid symbols.
 - ValidSymbol is an enumeration of pointers to all valid symbols.
 - SymbolsInMe is the number of contained symbols for each symbol.
@@ -184,29 +181,29 @@ Cursors:
 - SymbolInMeCursor()
 - SymbolToMeCursor()
 - SymbolOfMeCursor()
------
+<br/><br/>
 - SymbolCursor returns the symbol currently worked with. That means which symbol in the main data we are taking actions upon.
 - SymbolInMeCursor returns the position we’re currently at in the enumeration of contained symbols of the symbol at SymbolCursor.
 - SymbolToMeCursor returns the position we’re currently at in the enumeration of symbols that refer to the symbol at SymbolCursor.
 - SymbolOfMeCursor returns the position we’re currently at in the enumeration of the ancestors of the symbol at SymbolCursor.
 
-##### Properties
+#### Properties
 
 All of the members mentioned in “Stored” are properties. Some of the properties though are read only outside current scope, others are random access and others need to be altered using methods. That is what is explained in this section.
 
-##### Methods
+#### Methods
 
 There are methods that can return to you object relational information and there are the main methods with which to manipulate the diagram. The object relation information simply derive their return values from the stored data. The main data manipulation methods are the guards of the diagram data. They put restrictions on data manipulation that guard the data’s integrity.
 
-#### Brainstorm
+### Brainstorm
 
-##### System Specification
+#### System Specification
 
 The symbol language includes a system specification document class. This class might be used to contain the source code. The document is read to be able to produce the Sigma module.
 
-### Optimizations
+## Optimizations
 
-#### Boolean Algebraic
+### Boolean Algebraic
 
 Everything should eventually lead to storage.  
 What is storage?  
@@ -220,11 +217,11 @@ It just worries me that If is a boolean operator
 If x = 43 then 3
 ```
 
-### Symbol to Symbol: Collapse Object Structure, Reduce to Commands
+## Symbol to Symbol: Collapse Object Structure, Reduce to Commands
 
 This translation can be explained without knowing the Sigma module structure. This translation is a step in translating Symbol to Sigma, but the rest of Symbol to Sigma translation can only be explained if Sigma module structure is explained.
 
-#### Symbol to Sigma
+### Symbol to Sigma
 
 A Sigma module contains the organization of a module as well as the machine instructions of the module. The organization is a tree like groupage. To get the tree like structure you tie together tables by referring to another table inside one table. To create consecutive memory out of the table structure you simply string up all the tables including their references to each other. References are the memory addresses starting at the address of the beginning of the module. The tables include the eventual machine code which is right inside the organization data.
 
@@ -246,19 +243,19 @@ J Code executes the rules by creating correct J Core modules.
 
 So J Core’s task is to work correctly with a code organization. J Code’s task is to create the code organization according to the rules.
 
-##### Symbol Tables
+#### Symbol Tables
 
 Outline compiled modules can be programmed with. However, there are no names for the module itself, its classes, interfaces, members and arguments. Those entities only have numbers, because numbers are faster to work with. To be able to program with the modules you might have the names. As a human being you simply can’t work with the numbers. Symbol tables can be generated during compilation that tie names to the module, all its classes and interfaces and members and arguments. These symbol tables are only used when programming with the modules. When your program runs then the symbol tables aren’t used, but the numbers.
 
-### Controls
+## Controls
 
-#### View
+### View
 
 The Symbol view might simply be the drawn diagram. Complex calculation is involved with placing the symbols on screen, because the user might not use the mouse to place the symbols on screen. The symbols are automatically positioned. The complex calculation is the most complicated about the view, but for calculations there is referred to another section “Calculation” so that won’t be in this chapter. What I’ll describe is the other features that the view supports.
 
 The view supports Zoom and Offset by mouse movement. It supports a map for an overview of the symbols. It can display grids and rulers. It can use color indicators to let jump symbols matching certain criteria. Coloring is also commonly used to display inheritance relations. 
 
-##### Building the Mesh
+#### Building the Mesh
 
 The mesh is built up from the outside inwards. There is always the first single circle: 0. The inner circles need to be laid out over a circle with a radius half the size of the parent.
 
@@ -287,15 +284,15 @@ So the the radius for a child is:
 1/3l = (2 / 3) * (Rchild / 2) * Cos ½ (Pi – (2Pi / Children)))
 ```
 
-#### Interaction
+### Interaction
 
 The interaction isn’t much more than two text boxes and something that interprets typed single word or two word commands and then calling the appropriate function of the document. Restrictions are managed by the document so the interaction might not concern itself with protecting the data.
 
-#### Calculation
+### Calculation
 
-##### Pythagoras
+#### Pythagoras
 
-##### N-Gon
+#### N-Gon
 
 This section covers the calculation of equal sided n-gons’ coordinates, sides and radii. This calculation is part of the JMath library and is encapsulated by the class NGon.
 
@@ -310,7 +307,7 @@ y = r * sin((2PI / n + b) * I)
 
 Fortunately I made pictures. Get ready for adult sesame street.
 
-###### Radius to Side Length
+##### Radius to Side Length
 
 I need the length
 
@@ -338,26 +335,26 @@ I need the length of the sides of any equal sided n-gon that describes a circle 
 l = 2r  * Cos ½ (PI – 2PI / n)
 ```
 
-###### Side Length to Radius
+##### Side Length to Radius
 
 ```
 r = l / (2 * Cos ½ (PI – 2PI / n)
 ```
 
-###### N and StartAngle To Coordinates
+##### N and StartAngle To Coordinates
 
 ```
 x = r * cos((2PI / n + b) * I)
 y = r * sin((2PI / n + b) * I)
 ```
 
-##### Vibration
+#### Vibration
 
 ...
 
-### Brainstorm
+## Brainstorm
 
-#### ‘Normal’ Variables
+### ‘Normal’ Variables
 
 Variables are objects. A data type is a class. Its members operate on some data.  
 Constants (can be assigned only once where declared (initialization))
@@ -366,18 +363,18 @@ Copy is like variable assignment
 
 I might translate each common variable action for you to symbol object structure methods.
 
-#### Brainstorm
+### Brainstorm
 
 - Event interfaces
 - Multiple sink events
 
-#### Darn
+### Darn
 
-##### Symbol Tables
+#### Symbol Tables
 
 Outline compiled modules can be programmed with. However, there are no names for the module itself, its classes, interfaces, members and arguments. Those entities only have numbers, because numbers are faster to work with. To be able to program with the modules you might have the names. As a human being you simply can’t work with the numbers. Symbol tables can be generated during compilation that tie names to the module, all its classes and interfaces and members and arguments. These symbol tables are only used when programming with the modules. When your program runs then the symbol tables aren’t used, but the numbers.
 
-###### New
+##### New
 
 The lowest advisable level to program J Core modules in is a Symbol document. This specifies the system structure. The commands are also specified in symbol. The symbols in a command can refer to the Symbol Assembly library or can refer to other commands inside the module or to commands outside the module. The commands can be displayed as a diagram, but also as a language much like Assembly language and OO Basic intermixed.
 
@@ -391,7 +388,7 @@ Keep believing in Symbol.
 
 Again I am analyzing something I wrote for a complex problem (a problem that others made complex for me), and again I wish to know what calls what, how many times something is called and where. When I'd have a symbol view of the code then I'd instantly see everything.
 
-#### Usage of J Data
+### Usage of J Data
 
 Storage lists in Symbol should be able to be standard arrays.
 
@@ -408,7 +405,7 @@ Array1(3)
 
 Operation is actually a nice synonym for a function, procedure, subroutine, routine, etcetera.
 
-#### J Code
+### J Code
 
 I might think about and write something about the fact that most properties that can be written are hardly ever read.
 
@@ -418,7 +415,7 @@ If the values of the parameters are different all the time, it's best to keep th
 
 This is the contemplation for clarity, which is something different from the contemplation for efficiency. I wonder if the stack (with random access) is really faster than regular memory access. That's the criterium for efficiency contemplations.
 
-##### J Code and Code Style
+#### J Code and Code Style
 
 Je moet om properties te groeperen in Vb een hele set klassen maken.
 
@@ -483,7 +480,7 @@ A much better representation of actuality, and readable, unlike the original str
 
 Member access isn't only useful in, also to group things. To get member access to the grouped things you actually require another class, which is unfortunately not a child class in visual basic, but another entry in the richly occupied class list in Visual Basic. Might you have a thing as child classes, this ugliness could be omitted, because it might then be a tree structure. Another thing with grouping properties is that when you put them in a child class, the child class doesn't have access to the main class's members just like that. You might want the grouped properties to interact with the other properties. In that case you should might use another phenomena than just a child class. Something solely made for grouping. In VB you don't have this. For that, for interaction with the properties outside a class that groups a few can only be accessed if you give the group a reference to the parent class. This adds a method or property to the group that we don't want to see outside the main class. We can't verhelp this inside the module. But outside the module we don't need to see this member that sets the parent class. We can hide them from outside the module, by declaring them Friend, instead of Public. But inside the module we might still see it as part of the member of an object property.
 
-##### Other
+#### Other
 
 In the Windows API documentation somewhere it is told that delegating specific windows message handling to other functions in the window procedure might prevent the stack from overflowing when using many local variables.
 

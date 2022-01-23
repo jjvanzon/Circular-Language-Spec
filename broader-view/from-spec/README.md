@@ -1,8 +1,5 @@
-Circular Language | Broader View
-================================
-
-From Spec
----------
+Circular Language Broader View | From Spec
+==========================================
 
 `[ Preliminary documentation ]`
 

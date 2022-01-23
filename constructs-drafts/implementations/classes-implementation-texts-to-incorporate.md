@@ -1,12 +1,8 @@
-Circular Language Construct Drafts | Implementations
-====================================================
-
-Classes Implementation
-----------------------
+Construct Drafts | Implementations | Classes Implementation
+===========================================================
 
 `[ Out of Scope ]`
 
-### Texts to Incorporate
 
 The Class concept adds more New and Annul system commands, than just the New and Annul of a related item.
 

@@ -1,8 +1,5 @@
-﻿Circular Language Construct Drafts | Implementations
-====================================================
-
-Clear Cut Coding Principles Implementation
-------------------------------------------
+﻿Construct Drafts | Implementations | Clear Cut Coding Principles Implementation
+===============================================================================
 
 `[ Out of Scope ]`
 

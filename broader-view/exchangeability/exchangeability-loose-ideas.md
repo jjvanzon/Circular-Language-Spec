@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Exchangeability
-================================================
-
-Loose Ideas
------------
+﻿Circular Language Broader View | Exchangeability | Loose Ideas
+==============================================================
 
 `[ Preliminary documentation ]`
 

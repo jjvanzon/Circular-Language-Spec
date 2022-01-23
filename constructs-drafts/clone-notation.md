@@ -1,8 +1,5 @@
-Circular Language | Construct Drafts
-====================================
-
-Clone Notation
---------------
+Construct Drafts | Clone Notation
+=================================
 
 `[ Preliminary documentation ]`
 
@@ -22,21 +19,21 @@ __Contents__
     - [Parameters of Calls Directly Tied Together with the Clone Notation](#parameters-of-calls-directly-tied-together-with-the-clone-notation)
     - [Loose Ideas about Parameter Passing and the Clone Notation](#loose-ideas-about-parameter-passing-and-the-clone-notation)
 
-### Introduction
+## Introduction
 
 The __Clone__ aspect might be a system aspect like the __Value__ aspect, or the __Object__ aspect of a symbol. This might be an alternative notation for it.
 
 __Clone__ notation could perhaps be an implicit notation for something that might not be used very often. It may already be adequately expressed, using other constructs from the spec. The idea might be set aside in this document in *Construct Drafts*, because the language may be able to live without it.
 
-### Structs
+## Structs
 
 One construct in particular where a cloning depth of 2 might be common, could be the __struct__ construct that might be found in other languages.
 
 A __struct__ might be a value type that might have multiple distict fields / values. The idea that the object itself + its values might be transferred as a whole in case of value assignment for instance.
 
-### Parameter Passing and the Clone Notation
+## Parameter Passing and the Clone Notation
 
-#### By Value Parameter Passing and the Clone Notation
+### By Value Parameter Passing and the Clone Notation
 
 By Value parameters might mean to clone the values of an object up until a certain depth.
 
@@ -44,7 +41,7 @@ More complex objects passed by value might be cloned up until a certain cloning 
 
 A single-value transfer might be the equivalent of a cloning operation with a depth of __1__.
 
-#### By Value Parameter Passing in a Diagram with the Clone Notation
+### By Value Parameter Passing in a Diagram with the Clone Notation
 
 The notation of a __By Value__ cloning operation may look as follows:
 
@@ -54,11 +51,11 @@ The number __2__ may stand for the cloning depth.
 
 A single-value transfer might be the same as a cloning depth of __1__, but the number __1__ might not be shown then.
 
-#### Value In Parameters and the Clone Notation
+### Value In Parameters and the Clone Notation
 
 __Value In__ parameters might also work for more complex objects. Those might then be cloned up until a certain depth.
 
-#### Value In Parameters in a Diagram with the Clone Notation
+### Value In Parameters in a Diagram with the Clone Notation
 
 A __Value In__ parameter can also have an indication of a cloning depth, which may be displayed as follows:
 
@@ -76,11 +73,11 @@ Here might be the expression of cloning depth for __Value In__ parameters of *in
 
 ![](images/Input%20Output%20Parameter%20Passings.013.png)
 
-#### Value Out Parameters and the Clone Notation
+### Value Out Parameters and the Clone Notation
 
 A parameter might be either a copy of a single value, or a clone up to a certain depth.
 
-#### Value Out Parameters in a Diagram with the Clone Notation
+### Value Out Parameters in a Diagram with the Clone Notation
 
 A __Value Out__ parameter may also have an indication of a cloning depth, which might be displayed as follows:
 
@@ -98,11 +95,11 @@ This may be the expression of cloning depth for __Value Out__ parameters of *ina
 
 ![](images/Input%20Output%20Parameter%20Passings.021.png)
 
-#### Value Thru Parameters and the Clone Notation
+### Value Thru Parameters and the Clone Notation
 
 A __By Value__ parameter might be either a copy of a single value, but also a clone to a certain depth.
 
-#### Value Thru Parameters in a Diagram with the Clone Notation
+### Value Thru Parameters in a Diagram with the Clone Notation
 
 A __Value Thru__ parameter might also have an indication of a cloning depth, which may be displayed as follows:
 
@@ -120,7 +117,7 @@ Here might be the expression of cloning depth for __Value Thru__ parameters of *
 
 ![](images/Input%20Output%20Parameter%20Passings.029.png)
 
-#### Parameters of Calls Directly Tied Together with the Clone Notation
+### Parameters of Calls Directly Tied Together with the Clone Notation
 
 When directly tying together value parameters, cloning depth might be intermixed:
 
@@ -132,7 +129,7 @@ Effectively, it might be the lowest cloning depth that would be transferred to t
 
 ![](images/Input%20Output%20Parameter%20Passings.058.png)
 
-#### Loose Ideas about Parameter Passing and the Clone Notation
+### Loose Ideas about Parameter Passing and the Clone Notation
 
 Passing input parameter by value might guarantee, that the operations inside a command might not affect the original object. 
 

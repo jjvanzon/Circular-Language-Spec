@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Inheritance
-====================================
+﻿Inheritance | Specialization
+============================
 
 [back](./)
-
-Specialization
---------------
 
 `[ Preliminary documentation ]`
 
@@ -33,7 +30,7 @@ __Contents__
     - [System Command Overriding By Extension](#system-command-overriding-by-extension)
 - [Destructive & Non-Destructive Specialization Methods](#destructive--non-destructive-specialization-methods)
 
-### Introduction
+## Introduction
 
 There are four groups of specialization techniques that can be identified. Each might be separately explained:
 
@@ -42,7 +39,7 @@ There are four groups of specialization techniques that can be identified. Each 
 - *Detouring Members*
 - *Altering Command Implementations*
 
-### Specialization & Data Replacement
+## Specialization & Data Replacement
 
 You do not need any specialization techniques to alter the behavior of a base object.
 
@@ -58,7 +55,7 @@ However, data replacement is not what we usually call specialization. What we ca
 
 Some specialization techniques actually replace data, rather than just add it, but they are generally considered less destructive than sheer data replacement. *Data replacement* and *specialization* are two different concepts.
 
-### Altering the Member Set
+## Altering the Member Set
 
 The easiest group of specialization techniques is *altering the members set*. Three techniques can be identified:
 
@@ -68,7 +65,7 @@ The easiest group of specialization techniques is *altering the members set*. Th
 
 Each technique is explained in a separate article
 
-#### Member Addition
+### Member Addition
 
 The easiest technique for specialization by altering the member set is *member addition*. Here the concept of class inheritance is displayed:
 
@@ -78,7 +75,7 @@ Member addition means adding a member, that was not there in the base, but might
 
 ![](images/2.%20Specialization.004.png)
 
-#### Member Exclusion
+### Member Exclusion
 
 Another technique for specialization by altering the member set is *member exclusion*. This is not possible in most other object oriented languages. What happens is that members from deeper objects that were formerly __Public__, are __Private__ through the derived class.
 
@@ -98,13 +95,13 @@ You can prevent this by making the __Object Get Private__ while __Object Get For
 
 (there is no notation yet for the distinction between __Object Get__, __Object Get For Access__ and __Object Get For Copy__)
 
-#### Member Inclusion
+### Member Inclusion
 
 Another technique for specialization by altering the member set is *member inclusion*. This is the opposite of member exclusion. Instead of making a formerly __Public__ member __Private__, you make a formerly __Private__ member __Public__. This seems to go against the rules for encapsulation, but in fact it is valid, since only __Friend__ objects can do it.
 
 ![](images/2.%20Specialization.009.png)
 
-### Detouring Members
+## Detouring Members
 
 Detouring members is a group of specialization techniques. These techniques allows a derived class to redefine a member from the base class. This can happen in two ways:
 
@@ -113,11 +110,11 @@ Detouring members is a group of specialization techniques. These techniques allo
 
 Each of them is covered in a separate article
 
-#### Disclaimer
+### Disclaimer
 
 Inheritance makes extensive use of the concepts of overriding and shadowing. However, the notations and implementations of overriding and shadowing are not worked out to perfection yet. Preliminary notations are proposed. They might be reconsidered when working out the chapter *Object Resolution*.
 
-#### Shadowing
+### Shadowing
 
 A derived class can *shadow* a command of the base class. This means that when you call a base command through the derived object, the derived command is run instead.
 
@@ -157,7 +154,7 @@ What should be mentioned is that you can also shadow objects, just like you can 
 
 ![](images/2.%20Specialization.017.png)
 
-#### Overriding
+### Overriding
 
 Base classes normally call their own commands:
 
@@ -179,7 +176,7 @@ What should also be mentioned is that overriding is not specific to inheritance.
 
 ![](images/2.%20Specialization.021.png)
 
-##### Calling Base Class’s Version of Overridden Member
+#### Calling Base Class’s Version of Overridden Member
 
 Some programming languages offer a way to call the member defined by the base class, even when the base member was overridden. In Circular this is not possible by default, because any call to the overridden member might redirect to the overriding member.
 
@@ -193,7 +190,7 @@ You can replace the overridable command, but you can still call the base command
 
 ![](images/2.%20Specialization.024.png)
 
-##### Overriding Alternative: Event Notation
+#### Overriding Alternative: Event Notation
 
 An alternative notation to overriding is the override event.
 
@@ -207,7 +204,7 @@ The notation might not seem to work for object overriding.
 
 This is because object overriding redirects to an object, and since events are commands, it looks strange.
 
-##### Discarded Intrinsic Overriding Notation
+#### Discarded Intrinsic Overriding Notation
 
 There used to be an intrinsic overriding notation which looked a lot like shadowing:
 
@@ -221,7 +218,7 @@ There used to be an intrinsic overriding notation which looked a lot like shadow
 
 However, the intrinsic overriding notation was discarded, because it is undefendable to have it when the same is possible with simple object redirection.
 
-### Altering Command Implementations
+## Altering Command Implementations
 
 Another way to specialize a derived object is to *alter* the command implementations of the base object (as opposed to replacing a command entirely).
 
@@ -238,7 +235,7 @@ Furthermore there are a some of variations on these techniques which also have a
 - *System Command Extension By Overriding (Questionable)*
 - *System Command Overriding By Extension*
 
-#### Command Extension
+### Command Extension
 
 When a base class defines a command, the derived class can add extra functionality to the existing command. The derived class can pre- or post-extend a command from the base class:
 
@@ -248,7 +245,7 @@ This pre- and post-extension happens by means of the already available system ev
 
 ![](images/2.%20Specialization.030.png)
 
-#### System Command Extension
+### System Command Extension
 
 Another way to specialize a derived object is to let it define extra functionality around a *system* command. The previous section was actually a demonstration of how to extend the implementation of the __Execute__ system command. But *other* system commands can be extended as well, such as the __Value Set__ command. Here is an example where the __Value Set__ command is post-extended by implementing the __Value Changed__ event.
 
@@ -256,7 +253,7 @@ Another way to specialize a derived object is to let it define extra functionali
 
 So then the derived class defines something that might be run every time the object’s value changes.
 
-#### System Command Overriding
+### System Command Overriding
 
 Overriding was already introduced before, but what is separately mentioned here is that you can override any of the system commands. You can for instance override the __Value Set__ command.
 
@@ -272,13 +269,13 @@ Here are the two alternatives to a notation for overriding system commands:
 
 ![](images/2.%20Specialization.033.png)
 
-#### System Command Shadowing
+### System Command Shadowing
 
 Shadowing a system command can only be displayed by opening up the system interface:
 
 ![](images/2.%20Specialization.034.png)
 
-#### System Command Extension By Shadowing
+### System Command Extension By Shadowing
 
 You can accomplish command extension by employing the shadowing concept. The idea is that you shadow the base command, executing your own command and call the base command from your own command.
 
@@ -290,7 +287,7 @@ When anyone tries to call __Value Set__, the shadowing command is run instead, u
 
 A benefit of system command extension by shadowing compared to normal system command extension is that these extensions only count inside the derived class.
 
-#### System Commands Extension By Overriding (Questionable)
+### System Commands Extension By Overriding (Questionable)
 
 This is a technique that might not work. The idea is that you accomplish command extension by employing the overriding concept. The idea is that you override the base command, executing your own command and call the base command from your own command.
 
@@ -300,7 +297,7 @@ The problem with this technique however, is that the call to the base command im
 
 However, extending system commands by *shadowing* might work.
 
-#### System Command Overriding By Extension
+### System Command Overriding By Extension
 
 There is an alternative to overriding: you can implement the pre-extension event of a command and cancel the event.
 
@@ -308,7 +305,7 @@ There is an alternative to overriding: you can implement the pre-extension event
 
 This cancels the execution of the base command.
 
-### Destructive & Non-Destructive Specialization Methods
+## Destructive & Non-Destructive Specialization Methods
 
 Most of the specialization methods are extensions. The extensions are commonly *data* that is *added* to the base system. There are two specialization techniques that do not only extend, but also *change* the behavior of the base:
 

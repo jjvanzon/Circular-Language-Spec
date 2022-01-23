@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Parameters
-===================================
+﻿Parameters | Imported Parameter Concepts
+========================================
 
 [back](./)
-
-Imported Parameter Concepts
----------------------------
 
 `[ Preliminary documentation ]`
 
@@ -27,7 +24,7 @@ __Contents__
     - [Concept](#concept-3)
     - [Diagram](#diagram-1)
 
-### Introduction
+## Introduction
 
 The following articles might explain some concepts from other programming languages and the how they are implemented in Circular.
 
@@ -36,9 +33,9 @@ The following articles might explain some concepts from other programming langua
 - *Return Values*
 - *Parameter Order*
 
-### Required & Optional
+## Required & Optional
 
-#### Concept
+### Concept
 
 Some programming languages have a thing called required and optional parameters. In other programming languages basically all parameters are required, unless they are typed optional. In Circular it is the other way around: any parameter is optional unless it is typed required. This is because in Circular commands are the same as objects, that just happen to be executable, and the parameters inside a command are analogous to sub-objects inside another object, whose filling-in is also totally arbitrary.
 
@@ -46,7 +43,7 @@ Some parameters can be made required, so you *might* fill them in as input. In C
 
 Basically each system command can be made required or optional. Usually you make access from the *outside* required. When you make access from the *inside* required, this can give the user of the command guarantees about the parameter’s usage.
 
-#### Required & Optional in a Diagram
+### Required & Optional in a Diagram
 
 *Optional* is the default behavior. *Required* is an extra rule imposed. Required is expressed by drawing half a shape at the end of a connector. It should be half of what has to be connected to it. Most of the times it might be half a circle:
 
@@ -97,7 +94,7 @@ Below you might find examples of *required* connectors. Not every possible conne
 | __Public Required <br> Use As Class__  |                                        |                                       |
 | (might be a better notation,<br>since it is more likely to be <br>used for plain command calls) | | |
 
-#### Ideas about Required and Optional
+### Ideas about Required and Optional
 
 (Out of the original Symbol documentation)
 
@@ -111,9 +108,9 @@ As a command is like a type it may seem that you have full freedom regarding whi
 
 In diagram code, optional parameters are denoted by displaying the word __Optional__ near the optional parameter. The other parameters are required.
 
-### Variable Amount of Arguments
+## Variable Amount of Arguments
 
-#### Concept
+### Concept
 
 Other programming languages have a concept called variable amount of arguments. This means, that a command’s parameter list might not have a fixed amount of parameters. The last parameters can be any amount of parameters. This is specified as the last parameter’s being an *array* of parameters.
 
@@ -125,13 +122,13 @@ Perhaps in the future, it can be applied, that multiple array parameters are con
 
 Important to remember, is that parameters are not always single items, but a parameter can also be an array.
 
-#### Variable amount of Parameters in a Diagram
+### Variable amount of Parameters in a Diagram
 
 The array parameter, that represents the variable amount of arguments, might not have a special display in the diagram (yet). What is important to remember about the concept of variable amount of arguments is that: parameters can be arrays.
 
 ![](images/2.%20Imported%20Parameter%20Concepts.025.png)
 
-#### Ideas about Variable Amount of Parameters
+### Ideas about Variable Amount of Parameters
 
 (Out of the original Symbol documentation)
 
@@ -151,13 +148,13 @@ After the fixed parameter list, a command can allow a variable amount of paramet
 
 Variable amount of arguments is a purely textual notation. The diagram notation shows working with the Array object. However, an Array parameter needs to be tagged and in the diagram code this is simply shown by displaying the words ‘Arguments’ with the Array object.
 
-### Return Values
+## Return Values
 
-#### Concept
+### Concept
 
 Other programming language used to have only *one* return value. Circular can have *any* amount of output values or output objects, and no single parameter is selected to be *the* return value. I guess the concept of one return value dates from when a command was meant to be like a mathematical formula. I do not think, that limiting the amount of return values of a command to one, has a place in a more modern programming language anymore, because we might realize, that programming is not mathematics.
 
-#### Diagram
+### Diagram
 
 As discussed in the article *Return Values*, Circular might not limit the amount of output objects. Any object readable from the outside, may be an output object.
 
@@ -165,7 +162,7 @@ As discussed in the article *Return Values*, Circular might not limit the amount
 
 The correct usage of the term output might be discussed only later, in the *Advanced Command Topics*.
 
-#### Return Values Idea
+### Return Values Idea
 
 ![](images/7.%20Commands%20Ideas.062.jpeg)
 
@@ -173,15 +170,15 @@ The above might be a valid notation. It might denote the object being a pointer 
 
 ![](images/7.%20Commands%20Ideas.063.jpeg)
 
-### Parameter Order
+## Parameter Order
 
-#### Concept
+### Concept
 
 Other programming languages were textual. The parameters were put in a certain order. In Circular parameters are more free in order, just like sub-objects inside another object usually have no particular order. The parameters are not really a list of objects anymore. A command call is an object, that has a set of object references in it, that are individually set, and do not have a particular order.
 
 Even though all parameters can be individually accessed by pointing to its symbol or by using its name, you *can* still give the parameters an order of display. The articles, that follow, might elaborate on the diagrammatic and textual expression of parameter order.
 
-#### Diagram
+### Diagram
 
 The article *Parameter Order* introduced the concept of an ordered list of parameters. The diagramatic display of parameter order is still not final.
 

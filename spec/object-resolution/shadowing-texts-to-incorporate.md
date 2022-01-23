@@ -1,10 +1,7 @@
-Circular Language Spec | Object Resolution
-==========================================
+Object Resolution | Shadowing
+=============================
 
 [back](./)
-
-Shadowing
----------
 
 `[ Preliminary documentation ]`
 

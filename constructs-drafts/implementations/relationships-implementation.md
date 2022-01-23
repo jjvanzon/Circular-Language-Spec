@@ -1,8 +1,5 @@
-Circular Language Construct Drafts | Implementations
-====================================================
-
-Relationships Implementation
-----------------------------
+Construct Drafts | Implementations | Relationships Implementation
+=================================================================
 
 `[ Out of Scope ]`
 
@@ -24,7 +21,7 @@ __Contents__
         - [Confusion 2](#confusion-2)
 - [Implementation around 2004](#implementation-around-2004)
 
-### Bidirectional Relationship Synchronization Implementation Details
+## Bidirectional Relationship Synchronization Implementation Details
 
 `When* you*` let one of `the*` object references link to another object, `then* the*` link from `the*` old counterpart to `the*` object `should` be broken and a link from `the*` new counterpart to `the*` object `should` be established. `The*` object synchronizes `the* old` counterpart *out*, and it synchronizes `the*` new counterpart *in*.
 
@@ -49,7 +46,7 @@ There `are` three relationship types:
 - __n => 1 synchronization__
 - __n => n synchronization__
 
-#### Synchronization Types
+### Synchronization Types
 
 There `are` four synchronization types:
 
@@ -60,16 +57,16 @@ There `are` four synchronization types:
 
 `Every` synchronization type follows a slightly different procedure, to make `sure` that on assignment of one relationship counterpart, `the*` other relationship counterpart goes along with it.
 
-#### 1 => 1 Synchronization
+### 1 => 1 Synchronization
 
 __1 => 1__ synchronization `is quite` easy. In a __Jar =>__ __Lid__ relationship, `when*` assigning __Lid . Jar__, `The* old` __Jar . Lid__ `is` set to __Nothing__, while `the*` new __Jar . Lid__ `is` set to __This__.
 
-#### Risk of infinite loop 1 => 1
+### Risk of infinite loop 1 => 1
 
 `When*` a relationship `is` synchronized, `you*` may `have` a risk to an infinite loop.
 `When* you*` assign __Jar__ to __Lid__, `then*` __Lid__ `is` assigned to __Jar__, upon which __Jar__ `is` assigned to __Lid__ again, and `so` on. Fortunately, `when*` a __Jar__ `is` assigned a __Lid__ it `already` has, `the*` whole assignment `is not*` executed. `So` it `only` goes as far as: __Jar__ `is` assigned to __Lid__, upon which __Lid__ `is` assigned to __Jar__ again, upon which __Jar__ `is` assigned to __Lid__ again, `but*` __Jar__ `already` had that __Lid__, `so` that assignment `is` never executed.
 
-#### 1 => n Synchronization
+### 1 => n Synchronization
 
 In a __1 => n__ relationship between __Parents__ and __Children__, `every` time `you*` assign a __Child__ to a __Parent__, __Child . Parent__ `is` overwritten. `The* old` __Child__ `is` assigned __Nothing__ as `the*` __Parent__, and `the*` new __Child__ `is` assigned its new __Parent__.
 
@@ -77,17 +74,17 @@ Also, `the*` original __Child__’s __ID In Parent__ `is` yielded over to `the*`
 
 There used `to be` a misunderstanding, that one __Parent__ `could*` reference `the*` same __Child__ multiple times. `But*` that idea `was` abolished, `because* when*` a __Parent__ relates to a __Child__ twice, `the*` __Child__ `has to` relate back to `the*` __Parent__ twice. A __Child__ `can* only have` one __Parent__, `so` it `can*` never relate back to `the*` same __Parent__ twice. Something `like` that `might* require` an __n => n__ relationship, for `the*` __Child__ `to be` able to hold multiple references to `the*` same __Parent__.
 
-#### Risk of infinite loop 1 => n
+### Risk of infinite loop 1 => n
 
 Infinite loops for __n => 1__ synchronization `are` prevented `the*` same way as for __1 => 1__ synchronization. `When* you*` assign a __Parent__ to a __Child__, `The*` __Child__ `is` added to `the*` __Parent__, upon which `the*` __Parent__ `is` again assigned to `the*` __Child__. `But* the*` __Child__ `already` had that __Parent__, `so the*` assignment `is` never executed. `So` that prevents an infinite loop there.
 
-#### n => 1 Synchronization
+### n => 1 Synchronization
 
 In a __Child  n => 1  Parent__ relationship, `when* you*` change __Child . Parent__, `the*` __Child__ `is` removed from its original __Parent__ and added to `the*` new __Parent__. `So you* can never have the*` same __Child__ in several __Parents__.
 
 A __Child__ `can* not*` appear multiple times in `the*` same __Parent__, `because*` that, in turn, `should` give a __Child__ multiple references back to `the*` __Parent__, `but*` a __Child__ holds `only` one reference to a __Parent__.
 
-#### Risk of infinite loop n => 1
+### Risk of infinite loop n => 1
 
 `When*` a __1 => n__ relationship `is` synchronized, `you*` may `have` a risk to an infinite loop. `When* you*` add a __Child__ to a __Parent__, `then* the*` __Parent__ `is` assigned to `the*` __Child__, upon which `the*` __Child__ `is` added to `the*` __Parent__ *again*.
 
@@ -96,7 +93,7 @@ An earlier solution proposed for `this, is` that in synchronizing `the*` relatio
 `When* you*` assign an item to a list for synchronization purposes, `no` synchronization `is to be` executed on `the*` other side again.  
 `You’d* might` call a `special` __List Item Set__ command, accessible `only` to `the*` related class, that simply won’t synchonize back again.
 
-#### n => n Synchronization
+### n => n Synchronization
 
 One *related item* in one object always creates *one related item* inside `the*` other object.
 
@@ -106,7 +103,7 @@ In __n => n__ synchronization, __Object A__’s reference to __Object B__ `might
 
 An item in one list `is` aware of its position in `the*` other list. That makes it easy for an item in one list, to remove itself from `the*` other list.
 
-#### Risk of infinite loop n => n
+### Risk of infinite loop n => n
 
 `But* when* you*` add __Object A__ to __Object C__’s list of related items, `then*` __Object C__ `might` try to add itself to __Object A__’s list of related items, upon which __Object A__ `might` add itself to `the*` list of __Object C__ again. An infinite loop `should` be prevented here.
 
@@ -119,15 +116,15 @@ Another solution opted at first, `was` to execute a __Find Or Add__ for synchron
 
 `So the*` new option `is` better: `you* have` a `special` __List Item Set__ command, possibly called by a `special` __Add__ command, used solely for relationship synchronization, that won’t synchronize *back* again.
 
-#### `The*` abolished multiplicity of x
+### `The*` abolished multiplicity of x
 
 Earlier `I` had invented a multiplicity of __x__, which `is` plural, `but* then*` a fixed set of items, for instance three items. `But*` __x__ `can*` be replaced by three separate __=> 1__ relationships. __X__ `was` abolished in particular, `because*` it `might*` cause a `lot` of unpredictable behavior `when*` trying to synchronize `the*` two relationship counterparts, especially in __n/x => n/x__ synchronization.
 
-#### Confusions about relationship synchronization
+### Confusions about relationship synchronization
 
 There used `to be` two points at which there `was` confusion about `the*` workings of relationship synchronization.
 
-##### Confusion 1
+#### Confusion 1
 
 What `can*` be confusing `is` that, `when*` a __1 => n__ relationship `is` synchronized, it `can*` never be used as an __n => n__ relationship. In `the*` relationship __Parent  1 => n  Child__, `every` time `you*` add a __Child__ to a __Parent__, __Child  .  Parent__ `is` overwritten. `When* you*` change __Child  .  Parent__, `the*` __Child__ `is` removed from its original __Parent__ and added to `the*` new __Parent__. `So you* can*` never `have the*` same __Child__ in several __Parents__. `If* you*` want to use multiple __Parents__, `you* can’t.`
 
@@ -141,11 +138,11 @@ It `is` often easier to `define` something in __1 => n__ relationships, `without
 
 A system in which `all` relationships `are` bidirectional and given `the*` correct relationship type, functions in perfect harmony and everything `is` logical, correct and solid.
 
-##### Confusion 2
+#### Confusion 2
 
 Synchronization `could*` cause confusion in `older` versions of Circular, where `you* have` two bidirectional relationships to `the*` same class, that `are` given `the*` same __Item Object Name__. In that case, one relationship’s counterpart synchronizing back to `the*` related object `could*` affect `the*` other relationship. By default it `is not*` allowed to `have` one class __A__ being __1 =>__ related to multiple classes, in which __A__ has `the*` same __Item Object Name__. That `is only` allowed `if* the*` other relationships `are` made unidirectional, and `not*` bidirectional, or `if*` *melding* `is` enabled. *Melding* `is` a topic, which makes it possible for multiple relationship classes or for instance *progressed objects* (article *Progression)*, `to be` referenced as a single related item, `but*` it `has to be` stated explicitly that `this is the*` intention. See `the*` article *Melding*.
 
-### Implementation around 2004
+## Implementation around 2004
 
 (Specific implementation in experiment 0.9)
 

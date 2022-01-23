@@ -1,10 +1,7 @@
-﻿Circular Language Construct Drafts | Text Code
-==============================================
+﻿Construct Drafts | Text Code | Access Operators
+===============================================
 
 `[ Deprecated documentation ]`
-
-Access Operators
-----------------
 
 - Access Module Operator
 - Access Object Operator
@@ -14,7 +11,7 @@ Access Operators
 - Access Genitivity Operator
 - Access Module Operator
 
-### Brainstorm
+## Brainstorm
 
 Different types of operator:
 

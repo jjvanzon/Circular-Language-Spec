@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Object Resolution
-==========================================
+﻿Object Resolution | Cascading Overriding
+========================================
 
 [back](./)
-
-Cascading Overriding
---------------------
 
 `[ Preliminary documentation ]`
 

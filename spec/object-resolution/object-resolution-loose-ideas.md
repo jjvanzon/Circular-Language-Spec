@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Object Resolution
-==========================================
+﻿Object Resolution | Loose Ideas
+===============================
 
 [back](./)
-
-Loose Ideas
------------
 
 `[ Preliminary documentation ]`
 
@@ -20,7 +17,7 @@ __Contents__
         - [Merging](#merging)
 - [Other Ideas](#other-ideas)
 
-### Inheritance en Overloading (overloaded default properties)
+## Inheritance en Overloading (overloaded default properties)
 
 2008-06-11
 
@@ -54,9 +51,9 @@ Disambiguaten moet dus toch in zowel het diagram als in text code. Als je verwij
 
 JJ
 
-### From the Original Symbol Documentation
+## From the Original Symbol Documentation
 
-#### Command Resolution
+### Command Resolution
 
 The following methods let a parent mess with the commands of a child:
 
@@ -70,7 +67,7 @@ Overloading, shadowing and merging are about which command to call if several co
 
 Overriding and exclusion are techniques equally useful in both diagram code and text code. The others: overloading, merging and shadowing, are mostly useful in text code.
 
-##### Overriding
+#### Overriding
 
 Overriding means that a parent can replace a command of its child by another. A child decides whether a command of his is overridable or not.
 
@@ -90,11 +87,11 @@ Overridden commands are called by the child and that way they’re a means for a
 
 An overridable command that is only for communication to the parent is left empty by the child and is only filled in by the parent. This kind of overridable command is therefore also called a virtual command of the child.
 
-##### Exclusion
+#### Exclusion
 
 Exclusion is already covered extensively, but it can also be regarded a command resolution technique. A parent can exclude members from a published object or base object.
 
-##### Overloading
+#### Overloading
 
 < Overloaded objects>
 
@@ -150,7 +147,7 @@ When you change a parameter to an object of a different type, then the call line
 
 < I need pictures with that. >
 
-##### Shadowing
+#### Shadowing
 
 < Can shadowing change so that the target of a line  is changed at run time automatically because of shadowing? If that’s so then shadowing is a way in which text code affects the behavior of the diagram. Same darn problem after compilation no text identifiers anymore >
 
@@ -184,7 +181,7 @@ I.A is inaccessible outside the parent, for the parent has chosen to shadow it.
 
 A member is automatically shadowed if the parent of a triangle defines a command with exactly the same characteristics as the triangle’s command. The parent can freely shadow any member of the child.
 
-##### Merging
+#### Merging
 
 When a command has the same name and configuration of public members then in text code there is no way to distinguish calls to either command. What happens automatically is that the *‘nearest’* member *shadows* the member *further* away.
 
@@ -208,7 +205,7 @@ That ensures that diagram code and text code are exchangeable and can be mutuall
 
 < Merging should be a technique, not embedded in the language. When it’s about calling both commands of the triangles, you might shadow those commands with a command that calls both. >
 
-### Other Ideas
+## Other Ideas
 
 Conversion / Object Resolution,  
 2009-05-12

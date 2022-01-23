@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Exchangeability
-================================================
-
-Flat & Structured Interchange Loose Ideas
------------------------------------------
+﻿Circular Language Broader View | Exchangeability | Flat & Structured Interchange Loose Ideas
+============================================================================================
 
 `[ Preliminary documentation ]`
 
@@ -13,21 +10,21 @@ __Contents__
 - [Methods & Classes Loosely Coupled](#methods--classes-loosely-coupled)
 - [Loose Ideas](#loose-ideas)
 
-### Introduction
+## Introduction
 
 Flat & Structured Interchange consists of a set of principles, that turn something flat and unstructured into something structured automatically. It also can approach anything structured as something entirely flat.
 
 Some aspects of the system you do not structure yourself anymore. The system gets structured automatically following fixed rules. 
 
-### Automatic Containment
+## Automatic Containment
 
 For instance: you can’t determine the containment structure of objects yourself. The containment structure is automatically derived from the referential structure of objects.
 
-### Methods & Classes Loosely Coupled
+## Methods & Classes Loosely Coupled
 
 ...
 
-### Loose Ideas
+## Loose Ideas
 
 Ik denk dat uiteindelijk die flat & structured interchange verweefd wordt met alle andere onderwerpen, en een samenvatting daarvan als fundamental principle wordt gegeven, want flat & structured interchange topics hebben een te brede invloed op allerlei concepten.
 

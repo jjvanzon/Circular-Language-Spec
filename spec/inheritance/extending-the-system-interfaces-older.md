@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Inheritance
-====================================
+﻿Inheritance | Extending the System Interfaces
+=============================================
 
 [back](./)
-
-Extending the System Interfaces
--------------------------------
 
 `[ Preliminary documentation ]`
 
@@ -21,11 +18,11 @@ __Contents__
 - [Loose Ideas](#loose-ideas)
     - [Extension (Cross-Out Leftovers from System Interfaces)](#extension-cross-out-leftovers-from-system-interfaces)
 
-### Introduction
+## Introduction
 
 In the *System Interfaces* articles it has been repeatedly mentioned, that all the system commands can be extended with extra commands. First, to demonstrate the concept, this article gives you the main examples of system command extension. After that, all the possible system command extensions might be listed out.
 
-### Main Examples of System Command Extension
+## Main Examples of System Command Extension
 
 By default the __Object  .  Get__ and __Object  .  Set__ commands just return and set the object. But calls to __Object  .  Get__ and __Object  .  Set__ can also be extended with commands around the assignment and retrieval of the object.
 
@@ -39,7 +36,7 @@ Even though a value is stored inside the object *itself*, the system commands of
 
 By default the __Value  .  Get__ and __Value  .  Set__ commands just return and set the value. But calls to __Value  .  Get__ and __Value  .  Set__ can be extended with commands around the assignment and retrieval of the value.
 
-### Command Extension Possibilities
+## Command Extension Possibilities
 
 Only the system *commands* of the system interface are extensible with commands.
 
@@ -197,13 +194,13 @@ You are most likely to only use the __Add  .  Post-Extend__ to extend the additi
 
 Extension of the system interface’s members allows you to control the inner workings of a sub-object.
 
-### Extend System Interface with More Members
+## Extend System Interface with More Members
 
 Other features of Circular can add more items to the system interface, to define the behavior of a related item. The system interface is *extensible*. For instance the concept of *the class* might add more items to the configuration of a related item. So apart from extending a system interface’s existing commands, new commands and objects can be added to the system interface.
 
 The system interface members added by other features might automatically get all the extension possibilities as well.
 
-### Extension Regardless of Value Change
+## Extension Regardless of Value Change
 
 The various __Get__ commands only really execute their procedure when a value is actually *changed*. That is the default behavior of Circular. It prevents a lot of unnecessary system activity. By default, pre- and post-extension commands are only executed for getters, when a *different* value is actually assigned. However, a feature, that may be added to Circular could be:
 
@@ -212,7 +209,7 @@ The various __Get__ commands only really execute their procedure when a value is
 
 That feature adds two more extension possibilities to every __Get__ command, to execute a command extension even when the value might not change.
 
-### Extension Commands are Events
+## Extension Commands are Events
 
 The implementation of an extension command looks the same as the implementation of an event command. The concept of *events* has not been covered yet, but it looks the same as the notation used for system command extensions.
 
@@ -222,14 +219,14 @@ A system command extension event is a multi-cast event, even though you may only
 
 The parent object is the only one that can implement the system command extension event. This also counts for concepts too. Concepts just extend the parent object, so it is still only the parent object extending a system command. This is has to be access controlled. Access control is worked out later in the *Access Control* articles.
 
-### Extension Commands Part of Parent
+## Extension Commands Part of Parent
 
 Although the system objects define the extension events, the *parent object* defines the implementation of the extension commands. The extension commands are defined by the parent object. This counts for related item, related lists and related list items. Extension commands need to be normal commands, not system commands.  
 It is just more practical to make the extension commands part of the parent object. Only a normal Circular object can define commands, that have all the possibilities of Circular. You cannot really change objects like related items or related lists, because they are system objects. Those system objects can only be extended, not changed.
 
 Theoretically it might not matter whether extension commands are defined by for instance inside a related item or inside the parent object of a related item. A related item is part of the parent object anyway.
 
-### Extension of System Interfaces in a Diagram
+## Extension of System Interfaces in a Diagram
 
 The concept of extending the system objects is already explained in the article *Extending the System Interfaces*. The current article demonstrates its expression in a diagram.
 
@@ -245,11 +242,11 @@ Extension of system commands of a related list item works a bit differently, bec
 
 The examples shows the system interface of a related list, but not all its members. The following system objects are shown: __Item New__, __Item Annul__ and __Item Object__. The rest of the system objects are left out. The system object __Item Object__ contains the __Get__ and __Set__ objects. Objects like __Item Object  .  Get__, that have the same name as a system command of a related list item, define the extension commands. In the example above, the system object __Item Object  .  Get__ has a pre- extension defined. The extension is displayed as a line going out of __Item Object  .  Get__ to a command named __Pre-Extend__, defined inside the parent object. The extension command is passed a parameter, namely: the __Related List Item__ for which the extension command was called.
 
-### Loose Ideas
+## Loose Ideas
 
 *The texts below are loose ideas yet to be turned into good documentation.*
 
-#### Extension (Cross-Out Leftovers from System Interfaces)
+### Extension (Cross-Out Leftovers from System Interfaces)
 
 Assignment and retrieval of the related item can be decorated with extra commands.
 

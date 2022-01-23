@@ -1,25 +1,27 @@
-﻿Circular Language | Archive
-===========================
+﻿Archive | Related Classes
+=========================
 
 `[ Deprecated documentation ]`
 
 *JJ van Zon, 2008*
 
-Related Classes
----------------
+Introduction
+------------
 
 If the class doesn’t fix the class of a related item, then any type of object can be assigned as the related item.
 
 Also for later:  
 Funny enough, in this setting, a collection can be set to have multiple classes, which allows items of all those classes to be added to the collection.
 
-### Class . RelatedClasses
+Class . RelatedClasses
+----------------------
 
 This collection of __RelationClasses__ contains all the classes related to it. If a __Relation__ is not __Dual__, then the class unaware of its relation counterpart might not have its counterpart registered in its __RelationClasses__.
 
 You can’t add __RelatedClasses__ to this collection. You might define relations in the __Structure.Relations__ collection and they might be *reflected* in the __Class.RelatedClasses__ collection.
 
-### Reflecting Relations in Class.RelatedClasses (not Synchronizing)
+Reflecting Relations in Class.RelatedClasses (not Synchronizing)
+----------------------------------------------------------------
 
 After a long think and sleeping on it, I’ve decided the following.
 
@@ -44,7 +46,8 @@ __RelationClass__ has two methods, __RegisterRelationInClass__ and __DeregisterR
 Add or remove of RelatedClasses are Friend, so a programmer can’t do that.  
 If you call RelationClass.Class through Class.RelatedClasses, then that should have the same effect as setting it through relations. I can’t really see the effect it might have, but I think it’s not harmful. Dang, my brain isn’t capable of doing complicated things at the moment.
 
-### Brainstorm
+Brainstorm
+----------
 
 Toch wil ik relaties kunnen specificeren binnen een klasse. Zie het instellen van de relaties van Code . Visual Basic . Module met zijn sub objecten.  
 Misschien kan ik een eenvoudige oplossing bedenken om het voor een geval als dat makkelijker te maken.

@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Commands
-=================================
+﻿Commands | Creation Behavior of Commands
+========================================
 
 [back](./)
-
-Creation Behavior of Commands
------------------------------
 
 `[ Preliminary documentation ]`
 
@@ -25,13 +22,13 @@ __Contents__
 - [A Call in a Call Shows Private Contents When Running](#a-call-in-a-call-shows-private-contents-when-running)
 - [Active Command in Inactive Command](#active-command-in-inactive-command)
 
-### Introduction
+## Introduction
 
 Notation for commands may differ from that of objects, mainly by usage of different shapes. The similarity in notations may lead to questions like: "Are commands just like objects? In what way might they be different?"
 
 This article tries to explore one way commands may be different from objects, suggesting they might have special *creation behavior*, that normal objects might not.
 
-### Creation Behavior of Calls
+## Creation Behavior of Calls
 
 A call can be present inside an object or inside another command. When a call is created, at first it might be sort of asleep. That might be when there is a chance to set its parameters. Before a command call is run, the command call’s public contents are there: its parameters. Those parameters are copied out of the call’s definition. The private contents are not there yet. A command’s private contents include private objects, nested commands and command calls. The private contents might be shown as a copy out of the command definition, only just before the command call runs. The public contents of a command call are added when the command object is created. The private contents of a command call are only added when its about to run. So the general rule seems to be: creation of private contents of a command call is delayed until just before a command call is run.
 
@@ -114,11 +111,11 @@ The reasons for the delay of creation of private contents are explained later. F
 
       <img src="images/3.%20Creation%20Behavior%20Of%20Commands.015.png" width="300" />
 
-#### Calls In A Parent Command
+### Calls In A Parent Command
 
 A parent command, that executes, automatically executes its sub-command-calls one by one. This means, that when a parent command is about to run, the sub-command-calls are created with *public* contents only. A sub-command-call’s *private* contents are created just before a sub-command-call is run. After a sub-command-call has run, the private contents are released, but its public contents remain. Sub-command-calls are the parent command’s private contents, so after the parent command is done, the sub-command-calls with their public contents are released. Because the parent command has a sole reference to its sub-command-call, releasing the sub-command-call means, that the sub-command-call is destroyed. But the parameter objects of the sub-command could still keep existing if they are still referenced in other places.
 
-#### Original Problem & Solution
+### Original Problem & Solution
 
 This was the original problem:  
 When a sub-command might only be created just before it is run, there is a problem: if a sub-command is created only just before it is run, when can a parent command fill in the parameters of the *not yet created* sub-command? Parameter passings could not reference the sub-command’s parameters. That’s why before running the parent command, the sub-commands need to be created.  
@@ -126,7 +123,7 @@ But when creating the sub-command even before it is  run, there is another probl
 
 The solution was, to create a call before it is run, but only the public contents, so that a parent can set the parameters. But the private contents are only created just before the command is run, which creates its sub-commands, but again only its parameters. This prevents recursive creation of the call structure, and gives command creation a neat and steady pulse. So this all makes it doable. Otherwise there could have been an endless recursive creation procedure, before any command could ever run.
 
-#### Problems Solved By Delayed Creation
+### Problems Solved By Delayed Creation
 
 The creation behavior of command calls also solves *when* and *when not* to display a command’s private contents.
 
@@ -137,17 +134,17 @@ The problems solved by delayed creation of a command’s private contents are co
 - *No Private Contents in Calls in Definitions*
 - *Calls in Calls Show Private Contents When Running*
 
-#### Delayed Creation Of Private Contents Only Counts For Command Calls
+### Delayed Creation Of Private Contents Only Counts For Command Calls
 
 Delayed creation of private contents only counts for command calls. Command calls redirect their definition.
 
 But if a command object might not have a definition, then it defines its own definition. For command objects that define their own definition, private contents might be created all the time, because nothing else defines its private contents but the object itself. This counts for command definitions. This also counts for *active* command definitions, which are executable object that define their own definition. But it also counts for nested commands. See the section *Creation Behavior of Nested commands*.
 
-#### Are Parameter Connections Actually Assignments?
+### Are Parameter Connections Actually Assignments?
 
 It may be a bit of an open end whether the lines connected to parameters are connections, or that they are cloaked assignment calls. Or perhaps that connections for parameters might simply behave a bit like assignment calls. It might also be that value connections with direction might be interpreted as assignment calls altogether. Perhaps at some point in the creation process they show as assignments and other times as connections. There might not be any right answers, it is just a set of options that might be chosen or not.
 
-### Creation Behavior of Nested Commands
+## Creation Behavior of Nested Commands
 
 The section *Creation Behavior of Calls* talked about delaying the creation of a call’s private contents, until the command is about to be run, while the public contents of a command call are there straight away, as soon as the command call is created.
 
@@ -179,7 +176,7 @@ Even when the nested command structure inside a command is very deep, the *whole
 
 The sub-call inside the big call and inside the big definition only have the public parameter created, not their private contents as neither of them is running. But the nested command, with all its contents, are created inside the big call all anyway.
 
-### Creation Behavior of ‘Inactive Calls’
+## Creation Behavior of ‘Inactive Calls’
 
 Command calls inside a parent command have special creation behavior:
 
@@ -223,11 +220,11 @@ Creating its private contents, might not create a recursive creation or anything
 
 <img src="images/3.%20Creation%20Behavior%20Of%20Commands.026.png" width="300" />
 
-### No Overhead of Command Creation
+## No Overhead of Command Creation
 
 One of the reasons why private contents of a call are only created just before the call is run, is because this prevents overhead of creation. If you might create the whole call structure when the great grandparent of commands is created, then this is not only a lot of work in one blow, but also, a lot of command call objects are created, that never get to run in the first place, because it only runs under certain conditions. Delayed creation of the private contents of a command call prevents this overhead of command creation and creates a neat and steady rate of command creation.
 
-### No Circular Command Creation
+## No Circular Command Creation
 
 Another reason why private contents of a call are only created just before the call is run, is because this prevents circular creation of commands. Some command may call another command and that command may call the first one again. Command calls are usually private, so if you might create all possible command calls, you end up creating an endless recurrence of command creations
 
@@ -235,7 +232,7 @@ Another reason why private contents of a call are only created just before the c
 
 while in reality, the recurrence might be broken by some conditional execution of one of the command calls. Creating private contents of command calls prevents this circular creation and only creates a command object when it might actually run.
 
-### No Private Contents in a Call in a Definition
+## No Private Contents in a Call in a Definition
 
 A definition is always dormant, and never runs. So also the *calls* inside a definition might never run.
 
@@ -265,7 +262,7 @@ But *calls inside* such a definition, only have their *public* contents are crea
 
 <img src="images/3.%20Creation%20Behavior%20Of%20Commands.033.png" width="360" />
 
-### A Call in a Call Shows Private Contents When Running
+## A Call in a Call Shows Private Contents When Running
 
 A call inside another call only contains its private content when it is actually running.
 
@@ -281,7 +278,7 @@ When a call is running, you do see its private contents:
 
 Not creating a call’s private contents before it even runs, takes away discussion about when to display and when not to display a command’s private contents.
 
-### Active Command in Inactive Command
+## Active Command in Inactive Command
 
 A nested command in a nested command only ever runs when its top parent command is an active command object. If the top parent command is an inactive command object, for instance a command definition, then even an *active* nested command in it is dormant.
 

@@ -1,8 +1,5 @@
-﻿Circular Language Construct Drafts | Implementations
-====================================================
-
-Optimization
-------------
+﻿Construct Drafts | Implementations | Optimization
+=================================================
 
 `[ Out of Scope ]`
 
@@ -26,7 +23,7 @@ __Contents__
 - [Logic optimization](#logic-optimization)
 - [End State Optimization](#end-state-optimization)
 
-### Loose Ideas
+## Loose Ideas
 
 Automatic optimization, by using temporary variables for the same expression, that can't change as the command runs. That last element is hard to determine. For that it may also be advised to make it just a suggestion. Perhaps the temporary variable may still not be put in the source code, after the suggestion has been went along with, but the temporary storage suggestions may be declared at the beginning of the command.
 
@@ -110,19 +107,19 @@ Instruction caching. If machine instructions other than calling methods are exec
 
 JJ
 
-### Procedural
+## Procedural
 
-#### Inline
+### Inline
 
 Private commands can be compiled inline except when infinite recursion is possible.
 
 You can also choose to compile all commands inline. This means that when you have compiled the module you don’t have separate commands anymore, so you can’t have separate interface members, so no interfaces and no classes. That way the whole object oriented organization collapses and you have one pile of spaghetti code. Spaghetti code that is *way* faster than the organized code. However, you can’t use the classes of the module anymore. You’d might have the module’s source code to be able to program with it again.
 
-#### Inline Module
+### Inline Module
 
 A module can work faster if it doesn’t supply any commands. The only call to the module then is to simply run it. All commands inside the module are compiled inline then. However, it might be possible for the module to create its own memory objects, even though there aren’t any separate classes anymore. The inline module doesn’t have vector tables. It might have a table with the addresses of memory object specifications. On top of that it doesn’t have commands, but instead one pile of spaghetti code.
 
-##### Inline Module Usage
+#### Inline Module Usage
 
 If you choose to compile a module inline then you have a faster module. This code cannot be called by other modules though. The only way to use the module in another module is to have the source code and compile it into it inline.
 
@@ -253,7 +250,7 @@ Another idea: an 'overhoring' program is still useful.
 
 The only thing you might do to really optimize your code might be to specify with each line or group of lines what storages matter to you or maybe even this can be exactly derived from the rest of the code. Consider for instance always overwriting data previously set by an operation before you ever used that data. Then that data is unimportant and the synonyms you can choose from are allowed to produce different results for this particular data.
 
-##### Inlining Modules
+#### Inlining Modules
 
 Inline modules run faster because there aren’t any command calls. Command calls require things to be put on the stack, a round trip through vector tables and a return. Command data needs to be dynamically allocated.
 
@@ -261,7 +258,7 @@ Inline modules have their command data in a fixed spot in memory, though seperat
 
 Not making jump statements makes the fastest code. This has to do with the CPU’s architecture. The CPU fetches opcodes from memory while it processes the current opcode so that it has the next opcode ready straight away after processing the current instruction. Also, the CPU decodes the next instruction while it is executing the current instruction. The CPU fetches the opcodes following the current operation. The prefetches operations are called the prefetch queue. A jump invalidates the prefetch queue and the decoding of the next instruction delaying the processors execution.
 
-#### Inline
+### Inline
 
 As long as you’re going to program with the module you need the system structure retained. The commands need to be separate, because they can be arbitrarily called. Commands that are called through public interfaces that is, because commands that are private can be entirely inlined.
 
@@ -277,19 +274,19 @@ J Core supports both of these methodologies at the same time. An inline compiled
 
 An inline compiled module can create objects from its own classes, because the memory layout of a classes *are* compiled with it.
 
-#### Inline
+### Inline
 
 Private commands can be compiled inline except when infinite recursion is possible.
 
 You can also choose to compile all commands inline. This means that when you have compiled the module you don’t have separate commands anymore, so you can’t have separate interface members, so no interfaces and no classes. That way the whole object oriented organization collapses and you have one pile of spaghetti code. Spaghetti code that is *way* faster than the organized code. However, you can’t use the classes of the module anymore. You’d might have the module’s source code to be able to program with it again.
 
 
-##### Inline Module
+#### Inline Module
 
 A module can work faster if it doesn’t supply any commands. The only call to the module then is to simply run it. All commands inside the module are compiled inline then. However, it might be possible for the module to create its own memory objects, even though there aren’t any separate classes anymore. The inline module doesn’t have vector tables. It might have a table with the  addresses of memory object specifications. On top of that it doesn’t have commands, but instead one pile of spaghetti code.
 
 
-##### Inline Module Usage
+#### Inline Module Usage
 
 If you choose to compile a module inline then you have a faster module. This code cannot be called by other modules though. The only way to use the module in another module is to have the source code and compile it into it inline.
 
@@ -315,7 +312,7 @@ For J Data you can write the commands in a higher level language, which nonethel
 
 I need to make a higher level language that might not perform tasks of the modules, but provides just the neccesary to specify automation between the modules.
 
-### Machine Code
+## Machine Code
 
 Also: data should not be inline of the code. Jumping over data takes time, because it invalidates the prefetch queue and the decoding of the next instruction.
 
@@ -339,7 +336,7 @@ The only reason I’m reading ‘The Art of Assembly’ is to learn how you mana
 
 Art of Assembly says that segment addresses don’t resolve to a memory location arithmetically. A segment address is a location in a table specifying the memory location of the address. Art of Assembly also says that it is not up to the programmer, but up to the operating system to handle this table.
 
-#### Machine Oriented Optimization of Code for Speed
+### Machine Oriented Optimization of Code for Speed
 
 I see that knowledge of the computer adds a lot of rules to how to optimize assembly code. I was worried that this meant that J Core could not become simple and could not set simple rules, because it should embed all these optimization rules.
 
@@ -357,27 +354,27 @@ Note: when the code is clear, everything is faster. Weird time consuming mistake
 
 In regular programming languages all parameter values are put on the stack. Sigma, however, decides on its own when or when not to use the stack and optimizes the use of resources.
 
-### Possibility Optimization
+## Possibility Optimization
 
 (Lines that could happen: something for another section discussing possibilities, something that also has to do with a kind of code optimization.)
 
-### Access Optimization
+## Access Optimization
 
 The object oriented structure of the system is retained in the compiled code. This is done *only* to be able to __program__ orderly with them. 
 
 However you don’t have the names of modules, classes and other elements. You need a symbol tables to tie names to the numbers that elements of the system have. This symbol table is only used for software development.
 
-#### Leave Out Access
+### Leave Out Access
 
 To make a system perform faster you can take away the object oriented structure. With that you gain that you might not put directions on the stack and make jump statements to get to the command.
 
 Another way to optimize code for speed is to inline commands. Preferably all commands if there isn’t a potentially infinite recurrence. (You could inline a maximum of recurrences.)
 
-### Logic optimization
+## Logic optimization
 
 Sometimes code is executed that can be done simpler. You can recognize constructions that can be made simpler for the computer and replace them by the simpler constructions.
 
-### End State Optimization
+## End State Optimization
 
 If a stretch of code results in nothing other than a configuration of objects and data, then you can store the end result of it in an end state. When that code is normally called, instead, the end state is loaded immediately. That saves a lot of time. This can only be done in cases where the end result of a chunk of code isn’t variable. If it is only a little variable, you could play with this optimization a little and store end states of the invariable things and calculate the variable part *or* store multiple partial end states, one for each variation.
 

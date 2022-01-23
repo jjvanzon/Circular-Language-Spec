@@ -1,8 +1,5 @@
-Circular Language | Broader View
-================================
-
-Parameters Broader View Articles
---------------------------------
+Circular Language Broader View | Parameters Broader View Articles
+=================================================================
 
 `[ Preliminary documentation ]`
 

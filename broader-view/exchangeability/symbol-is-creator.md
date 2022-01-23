@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Exchangeability
-================================================
-
-Symbol = Creator
-----------------
+﻿Circular Language Broader View | Exchangeability | Symbol = Creator
+===================================================================
 
 `[ Preliminary documentation ]`
 

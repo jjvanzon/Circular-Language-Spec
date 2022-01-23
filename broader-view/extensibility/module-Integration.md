@@ -1,8 +1,5 @@
-﻿Circular Language Broader View | Extensibility
-==============================================
-
-Module Integration
-------------------
+﻿Circular Language Broader View | Extensibility | Module Integration
+===================================================================
 
 `[ Preliminary documentation ]`
 

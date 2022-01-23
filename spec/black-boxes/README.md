@@ -1,10 +1,7 @@
-Circular Language Spec
-======================
+Black Boxes Articles
+====================
 
 [back](..)
-
-Black Boxes Articles
---------------------
 
 - [Black Boxes](black-boxes.md)
 - [Public & Private Connectors, Connections & Assignments](public-and-private-connectors-connections-and-assignments.md)

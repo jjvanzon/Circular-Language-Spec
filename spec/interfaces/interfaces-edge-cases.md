@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Interfaces
-===================================
+﻿Interfaces | Edge Cases
+=======================
 
 [back](./)
-
-Edge Cases
-----------
 
 `[ Preliminary documentation ]`
 
@@ -20,7 +17,7 @@ __Contents__
     - [Conditional Backward Relations](#conditional-backward-relations)
     - [Preliminary Backward Relation](#preliminary-backward-relation)
 
-### Member Grouping
+## Member Grouping
 
 Triangles could be used to indicate a benign member grouping:
 
@@ -36,7 +33,7 @@ At first glance the grouping might not seem to affect how the objects are used. 
 
 Below these two problems are explained and possible solutions are given. Solutions for these problems are still very much open to discussion.
 
-#### Explicit Interface Dependency
+### Explicit Interface Dependency
 
 > *Existing* functionality may not be affected by member groupings. However, you could make *new* connections directly to the new interface objects.
 > 
@@ -48,7 +45,7 @@ Below these two problems are explained and possible solutions are given. Solutio
 > 
 > Ideas about the separation between __Get For Access__ and __Get For Copy__ can also be found in the *Black Box* and *System Interfaces* chapters.
 
-#### Call Overhead
+### Call Overhead
 
 > Member grouping may seem benign, but when you approach a member of a group, an __Object Get__ command on the group might be executed before accessing the member, which causes (a small) processing overhead on the call.
 > 
@@ -60,7 +57,7 @@ Below these two problems are explained and possible solutions are given. Solutio
 > 
 > A better solution may lie in optimization. Programmers often add structure to their programs even though it is not absolutely necessary, but just makes things more tangible and orderly. Taking such structurings out of a program before it is run, is more of an optimization issue than anything else.
 
-### Reliability of Interfaces
+## Reliability of Interfaces
 
 An interface is a contract. A welcome fact about a contract is that once agreed upon, it might not change. So an interface should be reliable.
 
@@ -84,15 +81,15 @@ Backward relation options:
 - Conditional 
 - Preliminary
 
-#### Private Backward Relation
+### Private Backward Relation
 
 > Allowing backward relations but making them __Private__ means the backward relations are maintained, but they do not become part of the interface.
 
-#### Public Backward Relation
+### Public Backward Relation
 
 > Allowing __Public__ backward relations means the interface might not be stable, because extra members are created when things start pointing to an object. However, this might not be a problem in all cases.
 
-#### Manual Backward Relations
+### Manual Backward Relations
 
 > In this case backward relations are not created automatically at all. Logically this keeps the interface stable. You can program the backward relation later, but only if you know where the foreword relation is. To find all foreword relations you may need to scan the entire earth, so it is not easy.  
 When you are able to program the relation back, you also need permission from the foreword relation, because this could have great implications on the way the other object functions.
@@ -101,11 +98,11 @@ Maintaining a backward relation should be strongly stimulated because it solves 
 
 Now follow some other solutions, that are sort of arbitrary and miscellaneous, but possibly handy in practice.
 
-#### Conditional Backward Relations
+### Conditional Backward Relations
 
 > Perhaps you should automatically accept backward relations based on a condition, for instance that the relation counterpart is within the same module. This may be a neat editing feature. That way you can program a module and let backward relations build up, but outside sources can not influence this process. This limits control to interface extensions to the module itself. In a broader sense you are defining a condition for automatically accepting a backward relation: namely that the relation counterpart might be inside the same module.
 
-#### Preliminary Backward Relation
+### Preliminary Backward Relation
 
 > Preliminary backward relation means that the forward end of the relation might maintain the backward relation until the relation counterpart either accepts or refuses it. This politely keeps the other related object’s interface and storage in tact while still offering the ability to adopt the index. You may also solve a quota overrun security problem this way.
 >

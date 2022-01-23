@@ -1,12 +1,9 @@
-﻿Circular Language Construct Drafts | Implementations
-====================================================
-
-System Interfaces Implementation
---------------------------------
+﻿Construct Drafts | Implementations | System Interfaces Implementation
+=====================================================================
 
 `[ Out of Scope ]`
 
-### System Commands Implementation
+## System Commands Implementation
 
 There is a paradox.
 
@@ -22,6 +19,6 @@ It is not so much about system commands, that are added by aspects, but about th
 
 It is really not that much of a problem. Just *some* commands need to be present in the code base, just like *some* objects need to be present in the code base.
 
-### Obsolete Members: Initialize Item & Terminate Item
+## Obsolete Members: Initialize Item & Terminate Item
 
 In experiment 2.0, a related list also had the extension commands __Initialize Item__ and __Terminate Item__. In experiment 3.0, __Initialize Item__ might be replaced by __Add  .  Post-Extend__ and __Terminate Item__ is replaced by __Remove  .  Pre-Extend__.

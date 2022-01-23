@@ -1,10 +1,7 @@
-﻿Circular Language Spec | System Interfaces
-==========================================
+﻿System Interfaces | Assignment
+==============================
 
 [back](./)
-
-Assignment
-----------
 
 __Contents__
 
@@ -18,11 +15,11 @@ __Contents__
     - [Opposite Direction Indicators?](#opposite-direction-indicators)
     - [Leaving Out Diamonds for Value Assignment?](#leaving-out-diamonds-for-value-assignment)
 
-### Introduction
+## Introduction
 
 Calls to system commands (like __Get Object__, __Set Value__ or __Use As Class__) might not be commonly seen. They might be more likely to be called indirectly. An assignment command might indirectly carry out a __Get__ on one object and a __Set__ on another object, trying to yield over something from one symbol to another.
 
-### Distinguishing Object-Bound and Reference-Bound Aspects
+## Distinguishing Object-Bound and Reference-Bound Aspects
 
 To demonstrate the difference between object-bound aspects and reference-bound aspects this article tries to employ the following notation. When a reference-bound aspect might be __Get__ or __Set__ then a reference might be displayed with a parent around it:
 
@@ -32,7 +29,7 @@ When an object-bound aspect might be __Get__ or __Set__ then a targeted object m
 
 ![](images/2.%20Assignment.002.png)
 
-### Basic Assignment Types
+## Basic Assignment Types
 
 Different system aspects (such as a value, object or class) might correspond with different types of assignment. Below an attempt to list some of the more common types of assignment.
 
@@ -76,7 +73,7 @@ The diamond shape in the middle might symbolize a call to an assignment command.
 
 ![](images/2.%20Assignment.011.png)
 
-### Command Assignment
+## Command Assignment
 
 An *object* assignment might also be used for *commands*. In that case it might be called a *command object assignment*.
 
@@ -88,7 +85,7 @@ An *object* assignment might also be used for *commands*. In that case it might 
 
 In the example above, symbol __A__ is a non-executing (square) command symbol, and symbol __B__ is a diamond, which stands for a call, but both symbol __A__ and __B__ could have been either squares or diamonds.
 
-### Cross-Aspect Assignments
+## Cross-Aspect Assignments
 
 Perhaps a more common way to use the __Class__ aspect in an assignment might be to __Get__ the __Object__ aspect from one reference and assign it to the __Class__ aspect of another reference. But it might also be done the other way around: attempting to get the __Class__ aspect from one reference and assign it as the __Object__ of another reference. That might be called *Class-to-Object* assignment or a *Class-Get assignment* perhaps. Less conventional ways of yielding over aspects like that, might be called *cross-aspect* assignment and they might be used with the notation below.
 
@@ -112,7 +109,7 @@ Also noteworthy might be, that there could be two ways to get a __Class__ aspect
 |    *The object reference on the right may now point*    |
 |        *to the class of the object on the left.*        |
 
-### Assignment using Explicit Get & Set
+## Assignment using Explicit Get & Set
 
 There might be special cases of assignment that do not have an assignment notation. Explicit calls to each system command might be of use then:
 
@@ -124,11 +121,11 @@ There might be special cases of assignment that do not have an assignment notati
 |          ![](images/2.%20Assignment.017.png)           |
 |  __Get Object-Bound Class `<=` <br> Set Class `=>`__   |
 
-### Ideas about Assignment
+## Ideas about Assignment
 
 There were some ideas let go of in the main description. An attempt is made here to describe them, in case they are still used somewhere or may be reconsidered later.
 
-#### Opposite Direction Indicators?
+### Opposite Direction Indicators?
 
 There used to be an idea to flip the indication of direction in assignment notation.
 
@@ -167,7 +164,7 @@ In the main idea the access mark sort of points in the direction of what the val
 
 That said, there is a little bit of doubt. That is why this alternative idea is still described here.
 
-#### Leaving Out Diamonds for Value Assignment?
+### Leaving Out Diamonds for Value Assignment?
 
 Currently the idea might be to express value *assignment* and value *correspondence differently:*
 

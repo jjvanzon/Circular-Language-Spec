@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Interfaces
-===================================
+﻿Interfaces | Main Concepts
+==========================
 
 [back](./)
-
-Main Concepts
--------------
 
 `[ Preliminary documentation ]`
 
@@ -36,7 +33,7 @@ __Contents__
     - [Inactive Nested Command Interface Redirection](#inactive-nested-command-interface-redirection)
 - [Relations Through Interfaces](#relations-through-interfaces)
 
-### Introduction
+## Introduction
 
 Up till now the idea of interfaces was fully left out of the stories. This chapter makes the concept of interfaces catch up with the rest of the documentation. The basic concept of interfaces is covered along with its diagram notation. Also covered are: interface assignment, interface reference and relations that form through the use of interfaces. Another concept, yet to be worked out, is how commands of an object are grouped by site: an object can have commands, defined on different sites, and the commands should be grouped by site in order to judge how reliable the commands are *(grouped by source)*. As interfaces can be applied to objects, but interfaces can also be applied to *commands*.
 
@@ -44,13 +41,13 @@ At some point the idea was, to also cover all the different *uses* of interfaces
 
 The main concepts of interfaces are explained here along with their diagram notations.
 
-### Interface = Publics
+## Interface = Publics
 
 An object’s interface consists of all of its public members.
 
 ![](images/1.%20Interfaces%20Main%20Concepts.001.png)
 
-### Interface & Implementation
+## Interface & Implementation
 
 An interface defines an object’s public members. The *private* contents of an object are called the object’s *implementation*. So the concept of interfaces offers the ability to separate publics from private contents, in other words separate interface from implementation.
 
@@ -66,7 +63,7 @@ An interface defines an object’s public members. The *private* contents of an 
 
 ![](images/1.%20Interfaces%20Main%20Concepts.003.png)
 
-### Interface = Objects Melting Together
+## Interface = Objects Melting Together
 
 Another concept which employs the word *interfaces*, is an object (an interface) melting together with its container.
 
@@ -76,7 +73,7 @@ This is displayed in the diagram by a triangle that represents an interface obje
 
 The members of the triangle are accessible as if they are members of the large circle.
 
-### Interface = Contract
+## Interface = Contract
 
 Interfaces also offer the functionality of being a contract.  
 You can establish this by defining the interface externally.
@@ -85,13 +82,13 @@ You can establish this by defining the interface externally.
 
 If an object has its interface defined externally, the public contents of the object can not be freely changed. If the interface of the object needs to change, the externally defined interface needs to be changed.
 
-### Multiple Interfaces
+## Multiple Interfaces
 
 If you want an object to support multiple contracts you can use several triangles inside the object and define their interfaces externally.
 
 ![](images/1.%20Interfaces%20Main%20Concepts.006.png)
 
-### Interface Type Control
+## Interface Type Control
 
 Interface type control should for instance occur when you reference an object and the reference has the wrong interface. Restrictions might then be enforced.
 
@@ -99,7 +96,7 @@ Interface type control should for instance occur when you reference an object an
 
 The situation above is not valid, because the reference might not have the same interface as the object it points to.
 
-### Explicit Interfaces
+## Explicit Interfaces
 
 You can speak of an explicit interface when you externally define a sub-object’s interface, you but do not let the sub-object melt together with the container.
 
@@ -107,7 +104,7 @@ You can speak of an explicit interface when you externally define a sub-object�
 
 A reference to the parent can not automatically resolve to a reference to the interface. It requires you to refer to the interface directly in order to access it.
 
-### Implicit Interfaces
+## Implicit Interfaces
 
 You can speak of an implicit interface when you externally define a sub-object’s interface, but you do let the sub-object melt together with the container.
 
@@ -115,7 +112,7 @@ You can speak of an implicit interface when you externally define a sub-object�
 
 You can reference members of the interface directly through the circle, without explicitly mentioning which interface you are accessing (see *Interface Object Resolution*).
 
-### Polymorphism
+## Polymorphism
 
 A triangle’s difference with a circle is that triangles basically melt together with their container.
 
@@ -123,7 +120,7 @@ A triangle’s difference with a circle is that triangles basically melt togethe
 
 Next to all members of the triangle being accessible as if they were members of the parent circle, the container can also be referred to as if it has the type of the triangle. That is another effect of melting the objects together.
 
-### Interface Object Resolution
+## Interface Object Resolution
 
 Interface object resolution happens when you reference an object and the reference has an interface defined, that the object supports. It automatically redirects the reference to the specific interface of the object.
 
@@ -142,7 +139,7 @@ Below is another example of interface object resolution, but now in case of refe
 
 Again it is about the dotted piece of line in between, which expresses the automatic object resolution. Next to the picture is a bit of pseudo-code that expresses how reference __A__ points to __D__ without qualifying it with interface __C__.
 
-### Inheritance
+## Inheritance
 
 Traditional inheritance is related to the concept of interfaces. What happens is that an object melts together with its container and next to its interface being defined externally, the implementation is also defined externally. The result is classic inheritance: one object takes over all characteristics of another object.
 
@@ -154,7 +151,7 @@ So because the triangle has an externally defined class (dashed line) instead of
 
 Classic inheritance is not the only form of inheritance in Circular. Different forms of inheritance are covered separately in the chapter *Inheritance*, but it is important to point out here, that classic inheritance and interfaces are closely related.
 
-### Main Usages of Contracts
+## Main Usages of Contracts
 
 When you externally define an interface, it becomes a contract. You can creatively use this concept for any purposes, but some of those purposes deserve to be pointed out explicitly.
 
@@ -164,7 +161,7 @@ An interface can also serve as a contract of *usage*. This means, that an object
 
 A powerful application of such a contract, is the interface as a contract of *participation*. You can give a type an already defined interface. That allows objects that can work with a certain interface, to link to objects of the new type, even when the system was not originally aware of that type. This concept makes it possible to introduce new types of objects into a system, that was not originally aware of them.
 
-### Command Interfaces
+## Command Interfaces
 
 This article is here to point out that commands can have interfaces just like objects. A command having an interface approximates the same functionality as C++ function prototypes or delegates in .NET. Only in Circular much more is possible. Because a command is an object, any interface concept is applicable to commands as well.
 
@@ -192,7 +189,7 @@ Multiple command interfaces:
 
 So basically anything regarding interfaces that can be done with objects, can also be done with commands.
 
-### Target Interfaces
+## Target Interfaces
 
 The *target interface* is found by following a number of redirections to find the actual interface object that the publics of an object are based on.
 
@@ -224,45 +221,45 @@ The last symbol may eventually *define* the interface, but it is still __Interfa
 
 (Elsewhere you may find 'Loose Ideas about Target Interfaces' that may or may not be used as inspiration of extension/replacements of some of the content here.)
 
-### Interface Referencing and Redirecting
+## Interface Referencing and Redirecting
 
 This article contains examples of what different interface referencing and redirecting situations might look like in a diagram and what name we could give to this situation.
 
-#### Interface Reference
+### Interface Reference
 
 An object’s specification of which interface it has, is also called an *interface reference*.
 
 ![](images/1.%20Interfaces%20Main%20Concepts.024.png)
 
-#### Command Class Interface
+### Command Class Interface
 
 ![](images/1.%20Interfaces%20Main%20Concepts.025.png)
 
-#### Class Command Interface
+### Class Command Interface
 
 ![](images/1.%20Interfaces%20Main%20Concepts.026.png)
 
-#### Command Definition Interface Redirection
+### Command Definition Interface Redirection
 
 ![](images/1.%20Interfaces%20Main%20Concepts.027.png)
 
-#### Command Reference Interface Redirection
+### Command Reference Interface Redirection
 
 ![](images/1.%20Interfaces%20Main%20Concepts.028.png)
 
-#### Command Call Interface Redirection
+### Command Call Interface Redirection
 
 ![](images/1.%20Interfaces%20Main%20Concepts.029.png)
 
-#### Active Nested Command Interface Redirection
+### Active Nested Command Interface Redirection
 
 ![](images/1.%20Interfaces%20Main%20Concepts.030.png)
 
-#### Inactive Nested Command Interface Redirection
+### Inactive Nested Command Interface Redirection
 
 ![](images/1.%20Interfaces%20Main%20Concepts.031.png)
 
-### Relations Through Interfaces
+## Relations Through Interfaces
 
 The most fundamental relation is a relation between two objects: one object contains a reference to another object, and the other object contains a reference back to the first object.
 

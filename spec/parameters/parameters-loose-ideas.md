@@ -1,10 +1,7 @@
-Circular Language Spec | Parameters
-===================================
+Parameters | Loose Ideas
+========================
 
 [back](./)
-
-Loose Ideas
------------
 
 `[ Preliminary documentation ]`
 
@@ -21,7 +18,7 @@ __Contents__
     - [This](#this-1)
 - [Other Ideas](#other-ideas)
 
-### Parameter and Argument
+## Parameter and Argument
 
 *(From the original Symbol documentation)*
 
@@ -38,18 +35,18 @@ An argument is a public member of a diamond in execution.
 
 - Definitions of the terms parameter and argument
 
-#### Brainstorm
+### Brainstorm
 
-##### Other
+#### Other
 
 Creation and state read and write only apply to object parameters, not to parameters that are commands.
 
-### Public Inactive Nested Command `=` Command `Out` Parameter
+## Public Inactive Nested Command `=` Command `Out` Parameter
 
 `<< parameters >>`
 But *inactive* nested commands might be referenced and made public. If `you make` an inactive nested command public, `you might` make it an __Object Out__ parameter: an object `produced or determined` by `the` command. A public inactive nested command `might` be a command definition `produced` by another command.
 
-### Reading & Writing Parameters
+## Reading & Writing Parameters
 
 Before a command `is` run `you can mess about` with `the` parameters `all you want`.
 
@@ -61,23 +58,23 @@ After a command `has` executed, `you can not` change `the` parameters, `just out
 - During execution `you can not` read or write.
 - After execution `you can` only read.
 
-### This
+## This
 
 `<< parameters >>` ?
 
-#### Class . HasThis
+### Class . HasThis
 
 `<< implementation >>`
 
 This __Boolean__ expresses if the __Item Class__ might have a __This__ property. For more information see the *This* section. 
 
-#### Class . This
+### Class . This
 
 `<< implementation >>`
 
 The __This__ member returns the object itself.
 
-#### This
+### This
 
 `<< implementation >>`
 
@@ -93,7 +90,7 @@ Don’t know if I should cover here:
 
 - Using type commands with the THIS argument (need a good name for the section)
 
-### Other Ideas
+## Other Ideas
 
 Commands,  
 ± 2008

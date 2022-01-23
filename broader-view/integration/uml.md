@@ -1,12 +1,9 @@
-﻿Circular Language Broader View | Integration
-============================================
-
-UML
----
+﻿Circular Language Broader View | Integration | UML
+==================================================
 
 `[ Preliminary documentation ]`
 
-### Loose Ideas
+## Loose Ideas
 
 It is worth reconsidering UML for Symbol?  
 You should consider the practical value of each of the diagram types. Symbol might provide a way to express any system.  

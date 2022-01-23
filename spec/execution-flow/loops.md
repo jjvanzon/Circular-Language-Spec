@@ -1,10 +1,7 @@
-﻿Circular Language Spec | Execution Flow
-=======================================
+﻿Execution Flow | Loops
+======================
 
 [back](./)
-
-Loops
------
 
 `[ Preliminary documentation ]`
 
@@ -31,7 +28,7 @@ __Contents__
     - [Concept](#concept-6)
     - [Diagram](#diagram-6)
 
-### Concept
+## Concept
 
 A loop is a form of control over *execution flow*. Execution flow is explained in the article *Execution Flow*.
 
@@ -49,7 +46,7 @@ The following forms of repetition are supported:
 
 Each form is explained in a separate article.
 
-### Diagram
+## Diagram
 
 Loops are a form of execution flow explained in the article *Loops*. The articles that follow only explain their expression in a diagram.
 
@@ -62,9 +59,9 @@ There are four forms of repetition:
 
 Each form is explained in a separate article. See the articles *For (range) in a Diagram*, *For (conditional) in a Diagram* and *For Each in a Diagram* and While in a Diagram.
 
-### For
+## For
 
-#### Concept
+### Concept
 
 The __For__ statement is a form of repetition. Repetition, more commonly known as *loops*, is a kind of execution flow statement, explained by the article *Loops*.
 
@@ -81,13 +78,13 @@ There are three kinds of __For__ loop:
 
 The three forms might be explained in separate articles.
 
-#### Diagram
+### Diagram
 
 Each type of __For__ loop has a slight variation in diagram notation. There are three definitions of __For__ commands. They might be covered in the articles *For (range) in a Diagram*, *For (conditional) in a Diagram* and *For Each in a Diagram*.
 
-### For (range)
+## For (range)
 
-#### Concept
+### Concept
 
 There are three forms of __For__ loop, as mentioned in the article *For*. This article explains the form of __For__ loop where a contiguous range of values is gone through.
 
@@ -103,7 +100,7 @@ There is also a local object, called the __Variable__. The variable might hold t
 
 The implementation of this kind of __For__ command uses machine instructions to increment the __Variable__ and a conditional jump command to jump back to start another loop and call and return instructions to call the command to loop (or whatever other appropriate instructions forgotten about).
 
-#### Diagram
+### Diagram
 
 Below is an example of the diagrammatic expression of a __For__ statement, that goes through a contiguous range of numbers.
 
@@ -121,9 +118,9 @@ The *definition* of the __For__ execution flow command is part of a system modul
 
 Nothing is filled in yet as the __From__ , __Till__ , __Step__ or __Loop__. The __Variable__ might be controlled by the __For__ command. It is referenced from the __Loop__ command.
 
-### For (conditional)
+## For (conditional)
 
-#### Concept
+### Concept
 
 There are three forms of __For__ loop, as mentioned in the article *For*.  
 This article explains the form of __For__ loop originally intended for going through a range of values, but more flexible than that. Unlike the *range* For this kind of __For__ is a *conditional* loop.
@@ -142,7 +139,7 @@ The reference, that is referred to, can perform a calculation before it returns 
 
 The implementation of this kind of __For__ command uses a machine instruction to jump back in code to call the __Loop__ again. For the rest it just calls the __Loop__ and the __Action__ command references and evaluates the __Condition__ to determine whether to run the loop again.
 
-#### Diagram
+### Diagram
 
 Below is an example of the diagrammatic expression of a conditional __For__ statement.
 
@@ -160,9 +157,9 @@ The *definition* of the __For__ execution flow command is part of a system modul
 
 Nothing is filled in yet as the __Initialization__ , __Action__ , __Condition__ or __Loop__ .
 
-### For Each
+## For Each
 
-#### Concept
+### Concept
 
 There are three forms of __For__ loop, as mentioned in the article *For*. This article explains the __For Each__ loop, which goes through the items of a collection. the __For Each__ statement is considered a *range* loop (see *Loops*).
 
@@ -170,7 +167,7 @@ The collection is passed as an argument to the __For__ command. The __For__ comm
 
 The implementation of the __For Each__ loop might not only use plain machine instructions, because it it might be accessing a collection with a more object oriented approach. The looping itself can be controlled with machine instructions, though jumping back to the same call to the __Loop__ command for each of the items of the collection.
 
-#### Diagram
+### Diagram
 
 Below is an example of the diagrammatic expression of a __For Each__ statement.
 
@@ -191,9 +188,9 @@ The *definition* of the __For Each__ execution flow command is part of a system 
 
 Nothing is filled in yet as the __In__ collection or the __Loop__ command reference. The __Item__ parameter might be controlled by the __For__ command. It is referenced from the __Loop__ command.
 
-### While
+## While
 
-#### Concept
+### Concept
 
 The __While__ loop is a form of execution flow. Loops are briefly explained in the article *Loops*. This article explains the While loop.
 
@@ -211,7 +208,7 @@ Next to the __Condition__, the __While__ loop is passed a reference to a command
 
 The implementation of the __While__ loop incorporates an object oriented call to the reference to the reference to the __Boolean Condition__, and a call to a machine instruction to jump back to the call to the __Loop__ command when the __Condition__ returns __True__.
 
-#### Diagram
+### Diagram
 
 Below is an example of the diagrammatic expression of a __While__ loop.
 
@@ -229,15 +226,15 @@ The *definition* of the __While__ execution flow command is part of a system mod
 
 Nothing is filled in yet as the __Condition__ or the __Loop__ command reference.
 
-### Until
+## Until
 
-#### Concept
+### Concept
 
 The __Until__ loop is closely related to the __While__ loop. It works exactly the same as the __While__ loop, except that the while loop keeps repeating the same code as long as a condition equals __True__, and an __Until__ loop keeps repeating the same code as long as a condition equals __False__. As soon as the condition becomes __True__ the loop might stop.
 
 For the rest of the inner workings of the __Until__ loop, refer to the article __While__.
 
-#### Diagram
+### Diagram
 
 Below is an example of the diagrammatic expression of a __Until__ loop.
 
