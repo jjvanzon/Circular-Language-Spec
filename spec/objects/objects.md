@@ -12,7 +12,6 @@ __Contents__
 - [Object Reference](#object-reference)
 - [Nothing](#nothing)
 - [Multiplicity](#multiplicity)
-- [Values](#values)
 
 ## Introduction
 
@@ -65,9 +64,3 @@ List items might be placed inside the nonagon again:
 ![](images/Objects.007.png)
 
 It could be that the list is given a name, while its individual items might remain nameless.
-
-## Values
-
-Some objects might be composed of just sub-objects. On the other hand, there can be objects that represent a simple value, like a number. Simple types might commonly store a piece of binary data. But one idea is that any object might be free to reserve some binary storage to use. An object might store some binary data, next to references to other objects. It also might be able to store both.
-
-A value of an object might not be directly displayed in a diagram. A binary value might first be converted to text, that could be displayed on screen. This text might be called a *literal*. This literal might be a textual representation of the binary value of an object. A literal might be able to be displayed in a diagram, the binary value itself might not.

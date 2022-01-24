@@ -7,13 +7,20 @@
 
 __Contents__
 
-- [Attributes might be Objects](#attributes-might-be-objects)
 - [Values](#values)
+- [Attributes might be Objects](#attributes-might-be-objects)
+- [Values](#values-1)
 - [Fixed Logical Residence](#fixed-logical-residence)
 - [Life Time](#life-time)
 - [Part of the Object](#part-of-the-object)
 - [Not a Pointer](#not-a-pointer)
 - [Summary of Attributes](#summary-of-attributes)
+
+## Values
+
+Some objects might be composed of just sub-objects. On the other hand, there can be objects that represent a simple value, like a number. Simple types might commonly store a piece of binary data. But one idea is that any object might be free to reserve some binary storage to use. An object might store some binary data, next to references to other objects. It also might be able to store both.
+
+A value of an object might not be directly displayed in a diagram. A binary value might first be converted to text, that could be displayed on screen. This text might be called a *literal*. This literal might be a textual representation of the binary value of an object. A literal might be able to be displayed in a diagram, the binary value itself might not.
 
 ## Attributes might be Objects
 
