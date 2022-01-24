@@ -1,4 +1,4 @@
-<img src="spec/images/circular-language-preview.jpeg" height="350" />
+<img src="images/circular-language-preview.jpeg" height="200" />
 
 *JJ van Zon, 2022*
 
