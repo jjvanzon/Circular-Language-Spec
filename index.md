@@ -10,7 +10,7 @@ This is an attempt at a specification of this language.
 - [Basic Diagram Elements](spec/basic-diagram-elements.md)
 - [Objects](spec/objects/objects.md)
 - [Attributes](spec/objects/attributes.md)
-- [Classes](spec/classes/classes.md)
+- [Classes](spec/classes.md)
 - [Relationships](spec/relationships.md)
 - [Commands Main Concepts](spec/commands/commands-main-concepts.md)
 
