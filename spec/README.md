@@ -14,9 +14,7 @@ Contents
 - Objects
     - [Objects](objects/objects.md)
     - [Attributes](objects/attributes.md)
-- Classes
-    - [Classes](classes/classes.md)
-    - [Static](classes/static-unfinished.md)
+- [Classes](classes.md)
 - [Relationships](relationships.md)
 - Commands
     - [Main Concepts](commands/commands-main-concepts.md)
@@ -81,6 +79,7 @@ Contents
     - [With Blocks](object-resolution/with-blocks.md)
 - [Conditions](conditions.md)
 - [Sequence Order](sequence-order.md)
+- [Static](static-unfinished.md) `[Draft]`
 - Pointers
     - [Pointers](pointers/pointers.md)
     - [Redirection](pointers/redirection.md)

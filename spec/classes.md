@@ -3,7 +3,7 @@
 
 *JJ van Zon, 2021*
 
-[back](../../)
+[back](..)
 
 __Contents__
 
@@ -165,4 +165,4 @@ The optional nature of the dashed shapes seems to leave things open to discussio
 
 Hopefully this might give an impression of how class notation might be used in the Circular language.
 
-[back](../../)
+[back](..)
