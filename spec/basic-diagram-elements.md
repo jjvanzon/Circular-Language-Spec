@@ -488,3 +488,5 @@ Some lines and circles might merge together:
 ![](images/Basic%20Diagram%20Elements.059.png)
 
 The idea of circles merging together might be called a symbol merge. How this might be applied might come to light in other articles. It could be applied to the concept of *automatically synchronized bidirectional relationships*. But the *relational ring* notation described earlier above might become the preferred alternative. The symbol merge notation may still be used here and there even though it might be deprecated.
+
+[back](..)

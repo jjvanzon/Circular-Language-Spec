@@ -7,6 +7,7 @@ Circular aims to become a visual programming language made from shapes and lines
 This is an attempt at a specification of this language.
 
 - [Introduction](spec/introduction.md)
+- [Basic Diagram Elements](spec/basic-diagram-elements.md)
 - [Objects](spec/objects/objects.md)
 - [Attributes](spec/objects/attributes.md)
 - [Classes](spec/classes/classes.md)

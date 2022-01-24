@@ -71,3 +71,5 @@ Here follows an attempt to summarize what might be the aspects of an attribute:
 - Sort of more part of what the object *is.*
 - May have a fixed logical residence inside an object.
 - Might be always created, never destroyed, never recreated, never a pointer.
+
+[back](../../)

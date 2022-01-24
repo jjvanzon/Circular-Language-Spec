@@ -533,3 +533,5 @@ The following terms may possibly be used interchangeably depending on context.
 - function pointer
 - method reference
 - delegate
+
+[back](../../)
