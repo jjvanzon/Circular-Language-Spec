@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Exchangeability | Hand Writing
 ===============================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 Drawing On Paper
 

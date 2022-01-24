@@ -1,7 +1,7 @@
 ﻿Misc Diagram Topics | Diagram Expression Introduction
 =====================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

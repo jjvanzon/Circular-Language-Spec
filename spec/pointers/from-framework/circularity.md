@@ -1,7 +1,7 @@
 ﻿Pointers | From Framework | Circularity
 =======================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

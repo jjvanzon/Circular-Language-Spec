@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Exchangeability | The Internet as a Single Computer
 ====================================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 __Contents__
 

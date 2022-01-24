@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Integration | UML
 ==================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 ## Loose Ideas
 

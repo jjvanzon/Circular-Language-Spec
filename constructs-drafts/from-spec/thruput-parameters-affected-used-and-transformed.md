@@ -1,7 +1,7 @@
 ﻿Construct Drafts | From Spec | Thruput Parameters | Affected, Used and Transformed
 ==================================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 Further parameter passing stereotyping.
 

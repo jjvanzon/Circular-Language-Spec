@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Fundamental Principles | Loose Ideas
 =====================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 ## General
 

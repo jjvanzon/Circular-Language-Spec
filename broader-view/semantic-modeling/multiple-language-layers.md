@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Multiple Language Layers
 =========================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 - Arithmetic Algebra
 - Comparative Algebra

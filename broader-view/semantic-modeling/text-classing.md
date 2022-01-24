@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Text Classing
 ==============================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 Classification of items in a (Word) document.
 

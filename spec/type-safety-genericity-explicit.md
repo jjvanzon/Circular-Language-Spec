@@ -1,7 +1,7 @@
 ﻿Type Safety, Genericity, Explicit
 =================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 *JJ van Zon, 2021*
 

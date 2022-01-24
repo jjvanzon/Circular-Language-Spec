@@ -1,7 +1,7 @@
 Construct Drafts | Commands Construct Drafts Articles
 =====================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 - [Commands Loose Ideas](commands-loose-ideas.md)
 

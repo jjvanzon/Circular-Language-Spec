@@ -1,7 +1,7 @@
 ﻿Inheritance | Extending the System Interfaces
 =============================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

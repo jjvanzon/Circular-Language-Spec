@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Exchangeability | Hyperlinks = Referential Structure
 =====================================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 Hyperlinks are usually spread around a document. Currently, you can only view hyperlinks for one page at a time, and even for one document they are not neatly listed out, but spread all around the document.
 

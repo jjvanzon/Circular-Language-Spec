@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Expression | Specialized Expression
 ====================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 ## Loose Ideas
 

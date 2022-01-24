@@ -1,7 +1,7 @@
 Construct Drafts | From Spec
 ============================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 Topics that may be recognizable from the *spec*, but then maybe lesser worked out ideas about these topics.
 

@@ -1,7 +1,7 @@
 ﻿Pointers
 ========
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

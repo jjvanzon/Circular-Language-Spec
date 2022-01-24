@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Exchangeability | Loose Ideas
 ==============================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 *The texts below are loose ideas yet to be turned into good documentation.*
 

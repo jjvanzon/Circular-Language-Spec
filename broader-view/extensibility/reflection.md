@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Extensibility | Reflection
 ===========================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 Reflective data is data that describes the structure of a program. The reflective data of a program for instance contains descriptions of classes.
 

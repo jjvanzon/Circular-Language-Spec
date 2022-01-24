@@ -1,7 +1,7 @@
 ﻿Construct Drafts | Locking
 ==========================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 ## Loose Ideas
 

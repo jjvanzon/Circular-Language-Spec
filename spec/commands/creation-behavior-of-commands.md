@@ -1,7 +1,7 @@
 ﻿Commands | Creation Behavior of Commands
 ========================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

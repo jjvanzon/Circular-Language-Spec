@@ -1,7 +1,7 @@
 ﻿Basic Diagram Elements
 ======================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](..)
 

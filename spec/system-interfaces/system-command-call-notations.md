@@ -3,7 +3,7 @@
 
 [back](./)
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 __Contents__
 

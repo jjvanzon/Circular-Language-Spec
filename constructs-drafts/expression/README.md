@@ -1,7 +1,7 @@
 ﻿Construct Drafts | Expression
 =============================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 *Expression* might be about a *diagram notation* for visualizing the program code. The diagrams may be mere expressions of binary interlinked objects. Systematics, stored in a binary way as interlinked objects, might be translated to a diagram, expressed on screen. The diagram might once be fully automatically drawn out. The metrics and positioning of the shapes and lines may automatically determined. The diagram might be edited, resulting in changes to the stored binary objects.
 

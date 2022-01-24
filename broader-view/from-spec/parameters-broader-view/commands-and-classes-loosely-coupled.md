@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | From Spec | Parameters Broader View | Commands & Classes Loosely Coupled
 =========================================================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 __Contents__
 

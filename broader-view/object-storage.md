@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Object Storage
 ===============================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 *Object Storage* is the binding force between basic data structures on storage devices and the object logic inside Circular. It is about how basic data structures are used to store objects. Not all of these principles are original, because many other systems use them, but they were isolated here in a single folder as a single group of concepts required to turn storage into objects.
 

@@ -1,7 +1,7 @@
 ﻿System Interfaces | Loose Ideas
 ===============================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

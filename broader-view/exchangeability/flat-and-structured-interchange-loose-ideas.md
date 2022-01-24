@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Exchangeability | Flat & Structured Interchange Loose Ideas
 ============================================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 __Contents__
 

@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Exchangeability | Design Time = Run Time
 =========================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 In some programming languages there is a distinction between design time and run time. This may mean, that the software is programmed first, and then run. You might only run it, after you programmed it. If the program it is not error free, the program might crash. The idea of *Design Time = Run Time* is to take away this distinction between design time and run time. This article tries to demonstrate what might happen if you could create a program and use it at the same time.
 

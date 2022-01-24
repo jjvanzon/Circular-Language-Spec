@@ -1,7 +1,7 @@
 Circular Language Broader View | From Spec
 ==========================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 Topics that may be recognizable from the *spec*, but then ideas perhaps more philosophical and lesser to the point.
 

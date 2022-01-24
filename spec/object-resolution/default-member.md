@@ -1,7 +1,7 @@
 ﻿Object Resolution | Default Member
 ==================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

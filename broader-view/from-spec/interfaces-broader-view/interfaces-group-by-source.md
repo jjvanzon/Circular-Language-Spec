@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Interfaces | Group By Source
 =============================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 Your class can automatically be extended with extra commands from other sites, if you allow other sites to form bidirectional relations with your class.
 

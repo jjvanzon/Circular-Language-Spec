@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Exchangeability
 ================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 The *Exchangeability Principles* describes things in the area of computer technology, that are traditionally separate, that might be combined to form one thing.
 

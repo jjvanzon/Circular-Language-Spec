@@ -1,7 +1,7 @@
 ﻿Sequence Order
 ==============
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](..)
 

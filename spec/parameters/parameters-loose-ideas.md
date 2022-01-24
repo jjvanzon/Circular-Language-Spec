@@ -1,7 +1,7 @@
 Parameters | Loose Ideas
 ========================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

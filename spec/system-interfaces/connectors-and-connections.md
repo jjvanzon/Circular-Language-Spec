@@ -1,7 +1,7 @@
 ﻿System Interfaces | Connectors & Connections
 ============================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

@@ -1,7 +1,7 @@
 ﻿Events | Loose Ideas
 ====================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

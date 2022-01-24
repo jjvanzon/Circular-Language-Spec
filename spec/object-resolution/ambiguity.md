@@ -1,7 +1,7 @@
 ﻿Object Resolution | Ambiguity
 =============================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

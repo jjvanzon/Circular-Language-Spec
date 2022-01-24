@@ -1,7 +1,7 @@
 ﻿Events
 ======
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

@@ -1,7 +1,7 @@
 ﻿Events | System Events
 ======================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

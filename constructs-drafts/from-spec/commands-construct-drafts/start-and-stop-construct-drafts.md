@@ -1,7 +1,7 @@
 Construct Drafts | From Spec | Start & Stop Construct Drafts
 ============================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 ## Introduction
 

@@ -1,7 +1,7 @@
 ﻿System Interfaces | List Concept
 ================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

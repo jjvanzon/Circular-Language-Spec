@@ -1,7 +1,7 @@
 ﻿Construct Drafts | Expression | Alternative Diagram Expression
 ==============================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 (From the original Symbol documentation)
 

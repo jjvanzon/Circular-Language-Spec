@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Integration
 ============================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 This folder may contain documentation about integration modules, that might work with *Circular* in order to integrate with the rest of the world of computer technology. *Circular* may not be meant to live on its own, but existing resources on the internet might be made accessible, when working with the Circular language. Each integration module might facilitate two goals: accessing other systems using *Circular* and the ability to access *Circular* resources from inside another system. As such you might access a file systems using *Circular*, and you might also access *Circular* resources as if it was a file system. That example might be called *File System Integration*. As such there might be systems such as *Database Integration*, *SOAP Integration*, *ODBC Integration*, *File Types* and *Module System Integration*. It might be a relevant aim that *Circular* in the future may give access to all those resources as well as be accessible by other systems through all these kinds of different protocols.
 

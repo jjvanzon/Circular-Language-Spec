@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Automatic Object Formation
 ===========================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 If you program something purely procedural,  
 but you use the data as parameters,  

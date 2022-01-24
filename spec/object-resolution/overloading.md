@@ -1,7 +1,7 @@
 ﻿Object Resolution | Overloading
 ===============================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

@@ -1,7 +1,7 @@
 ﻿Black Boxes
 ===========
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 *JJ van Zon, 2021*
 

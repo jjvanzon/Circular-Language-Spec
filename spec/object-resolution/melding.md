@@ -1,7 +1,7 @@
 ﻿Object Resolution | Melding
 ===========================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

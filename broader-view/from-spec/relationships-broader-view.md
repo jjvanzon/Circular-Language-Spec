@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | From Spec | Relationships | Broader View
 =========================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 __Contents__
 

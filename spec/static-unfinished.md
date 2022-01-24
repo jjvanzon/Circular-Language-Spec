@@ -1,7 +1,7 @@
 ﻿Static
 ======
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

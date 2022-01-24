@@ -1,7 +1,7 @@
 Construct Drafts | From Spec | Assignment Construct Drafts
 ==========================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 __Contents__
 

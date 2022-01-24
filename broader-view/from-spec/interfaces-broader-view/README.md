@@ -1,7 +1,7 @@
 Circular Language Broader View | From Spec | Interfaces | Broader View
 ======================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 Ideas about this topic, perhaps less to the point but more philosophical, might be moved from the spec to here.
 

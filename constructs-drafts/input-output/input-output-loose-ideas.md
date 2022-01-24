@@ -1,7 +1,7 @@
 ﻿Construct Drafts | Input Output | Loose Ideas
 =============================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 Advanced Command Articles,  
 2008-08

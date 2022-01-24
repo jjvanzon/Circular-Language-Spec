@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Artificial Intelligence, Natural Language, Neural Networks, Object Algebra
 ===========================================================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 ## Loose Ideas
 

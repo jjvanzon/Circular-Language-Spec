@@ -1,7 +1,7 @@
 ﻿Object Resolution | Cascading Overriding
 ========================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

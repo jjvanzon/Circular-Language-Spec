@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View
 ==============================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 These are various draft texts that may once describe a story, ideas about how this Circular language might be used in practice.
 

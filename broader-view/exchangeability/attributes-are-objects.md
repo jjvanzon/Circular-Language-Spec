@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Exchangeability | Attributes Are Objects
 =======================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 __Attributes__ may very well become __Classes__ in the future. __Classes__ might eventually be capable of being configured to behave just like simple variables.
 

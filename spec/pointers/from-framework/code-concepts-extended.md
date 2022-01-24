@@ -1,7 +1,7 @@
 ﻿Pointers | From Framework | Code Concepts Extended
 ==================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Binarals
 =========================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 *Binarals* might be analogous to *literals*. A literal may be a textual representation of an object's state (for instance a literal number `3` or literal string `"Hi!"`). A *binaral* might be the translation of an object’s state to a single stretch of consecutive binary. The binaral may for instance be compiled computer code, or an object's data in a specific binary layout.
 

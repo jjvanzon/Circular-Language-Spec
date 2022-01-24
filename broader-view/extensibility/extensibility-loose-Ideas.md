@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Extensibility | Loose Ideas
 ============================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 The Extensibility Principles should also cover the idea behind legacy modules.
 

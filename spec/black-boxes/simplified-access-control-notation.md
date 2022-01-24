@@ -1,7 +1,7 @@
 ﻿Black Boxes | Simplified Access Control Notation
 ================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Interfaces | Extensive Classification with Interfaces
 ======================================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 Extensive classification with interfaces might encompass some ideas about how to use interface more where otherwise you might not, so that a more detailed classification of things might emerge. This might be interesting to form some sort of semantic model.
 
@@ -35,7 +35,7 @@ Perhaps several object classes could have physically the same attribute, so that
 
 ## Mutual Commands, Mutual Interfaces
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 Brainstorm 2010-05-06:
 

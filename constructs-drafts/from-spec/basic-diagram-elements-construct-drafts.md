@@ -1,7 +1,7 @@
 ﻿Construct Drafts | From Spec | Basic Diagram Elements Construct Drafts
 ======================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 __Contents__
 

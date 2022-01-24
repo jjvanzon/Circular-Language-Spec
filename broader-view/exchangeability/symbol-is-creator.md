@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Exchangeability | Symbol = Creator
 ===================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 *Symbol* refers to an object oriented programming language I began to construct around the year 2001. It is a programming language, that fully expresses a program in a diagram.
 

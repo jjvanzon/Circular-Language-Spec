@@ -1,7 +1,7 @@
 ﻿Pointers | Pointer Circularity
 ==============================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

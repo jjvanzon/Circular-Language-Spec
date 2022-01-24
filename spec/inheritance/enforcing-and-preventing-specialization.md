@@ -1,7 +1,7 @@
 ﻿Inheritance | Enforcing & Preventing Specialization
 ===================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

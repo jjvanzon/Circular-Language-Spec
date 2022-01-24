@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Exchangeability | User = Programmer
 ====================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 There is no distinction between design time and run time anymore. This makes programming software and using software blend together. 
 

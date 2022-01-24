@@ -1,7 +1,7 @@
 ﻿Inheritance | Specialization
 ============================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

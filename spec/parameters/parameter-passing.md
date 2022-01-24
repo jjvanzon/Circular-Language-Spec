@@ -1,7 +1,7 @@
 ﻿Parameters | Parameter Passing
 ==============================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

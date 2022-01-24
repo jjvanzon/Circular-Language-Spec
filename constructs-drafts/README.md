@@ -1,7 +1,7 @@
 ﻿Construct Drafts | Overview
 ===========================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 This documentation may contain drafts of ideas that might not become part of the spec. Or language constructs that are just not as clearly worked out.
 

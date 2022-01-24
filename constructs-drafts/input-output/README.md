@@ -1,7 +1,7 @@
 Construct Drafts | Input Output
 ===============================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 The concept of input and output may be common to programming, yet the concept might not seem very present in both object oriented program code or relational database. Something simply seems to ‘become’ input or output, arbitrarily chosen by the programmer, but it might not explicitly *defined* in program code, what is the input and what is the output: it could be a return value returned by a command, a value passed along to another command, *but* it could also be reads, writes deletes and inserts into a database. Those things might be spread out all over the commands and you might not really see explicitly where something is input and where something is output. Yet, input and output seem a fundamental idea in computer programming. We sometimes talk in terms of it. In Circular language, input and output may get a more prominent position. It may even offer opportunities for resolution of concurrency and parallelism as well as better security in case of more control over the input and output.
 

@@ -1,7 +1,7 @@
 Object Resolution | Shadowing
 =============================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

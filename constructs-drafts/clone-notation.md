@@ -1,7 +1,7 @@
 Construct Drafts | Clone Notation
 =================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 __Contents__
 

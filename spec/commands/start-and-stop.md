@@ -1,7 +1,7 @@
 ﻿Start & Stop
 ============
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

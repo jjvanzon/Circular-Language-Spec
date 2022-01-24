@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Extensibility | Module Integration
 ===================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 In an earlier version of Circular it was a problem to load multiple modules, and have one module use objects of a class of another module.
 

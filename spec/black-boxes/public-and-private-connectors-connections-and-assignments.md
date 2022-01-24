@@ -1,7 +1,7 @@
 ﻿Black Boxes | Public & Private Connectors, Connections & Assignments
 ====================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

@@ -1,7 +1,7 @@
 Circular Language Broader View | Commands Broader View Articles
 ===============================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 Command-related topics that may be recognizable from the *spec*, but then ideas perhaps more philosophical and lesser to the point.
 

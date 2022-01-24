@@ -1,7 +1,7 @@
 ﻿Misc Diagram Topics | Diagram Metrics
 =====================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

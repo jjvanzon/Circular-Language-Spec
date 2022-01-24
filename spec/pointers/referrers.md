@@ -1,7 +1,7 @@
 Pointers | Referrers
 ====================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

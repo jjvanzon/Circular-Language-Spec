@@ -1,7 +1,7 @@
 ﻿Black Boxes | Unfinished
 ========================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

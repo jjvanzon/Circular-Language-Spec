@@ -1,7 +1,7 @@
 ﻿Commands | Example Diagrams
 ===========================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

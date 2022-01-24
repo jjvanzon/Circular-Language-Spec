@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Interfaces | Imaginary Backward Relationships
 ==============================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 Sometimes when a backward relation is not stored, you want to see it anyway, because it might be useful information. Particularly you always want to see all available commands inside an object, even though an object might not physically have a reference to all the commands.
 

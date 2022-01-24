@@ -1,7 +1,7 @@
 ﻿Interfaces | Interface Aspect
 =============================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

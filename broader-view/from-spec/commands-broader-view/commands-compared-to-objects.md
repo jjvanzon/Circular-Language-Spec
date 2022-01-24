@@ -1,7 +1,7 @@
 Circular Language Broader View | From Spec | Commands Compared to Objects
 =========================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 __Contents__
 

@@ -1,7 +1,7 @@
 ﻿Inheritance | Main Concepts
 ===========================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

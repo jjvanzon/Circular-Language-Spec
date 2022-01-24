@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Expression
 ===========================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 This part of the documentation may cover remaining topics about diagram expression.  
 

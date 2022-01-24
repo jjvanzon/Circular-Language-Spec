@@ -1,7 +1,7 @@
 ﻿Interfaces | Edge Cases
 =======================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

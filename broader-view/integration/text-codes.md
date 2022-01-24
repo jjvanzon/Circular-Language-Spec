@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Integration | Text Codes
 =========================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 *More Text Codes* might encapsulates a large number of sub-modules. It might be about many other text codes.
 

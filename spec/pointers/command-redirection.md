@@ -1,7 +1,7 @@
 ﻿Pointers | Command Redirection
 ==============================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

@@ -1,7 +1,7 @@
 ﻿Object Resolution | Loose Ideas
 ===============================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

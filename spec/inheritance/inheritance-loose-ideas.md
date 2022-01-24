@@ -1,7 +1,7 @@
 ﻿Inheritance | Loose Ideas
 =========================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

@@ -1,7 +1,7 @@
 ﻿Misc Diagram Topics | Coloring
 ==============================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

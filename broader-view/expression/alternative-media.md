@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Expression | Alternative Media Ideas
 =====================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 __Contents__
 

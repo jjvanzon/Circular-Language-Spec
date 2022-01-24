@@ -1,7 +1,7 @@
 ﻿Construct Drafts | Input Output | Automatically Determining What’s In Out or Thru
 =================================================================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 The terms input, output, throughput and downput were discussed earlier. Here it is discussed how to automatically determine whether a parameter is in, out, through or downput.
 

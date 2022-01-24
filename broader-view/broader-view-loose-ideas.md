@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Loose Ideas
 ============================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 *The texts below are loose ideas, yet to be turned into more polished documentation.*
 

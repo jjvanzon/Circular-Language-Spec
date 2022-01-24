@@ -1,7 +1,7 @@
 ﻿Construct Drafts | Automatic Containment
 ========================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 __Contents__
 

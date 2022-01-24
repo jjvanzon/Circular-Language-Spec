@@ -1,7 +1,7 @@
 ﻿Object Resolution | Hiding
 ==========================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

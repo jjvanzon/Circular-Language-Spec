@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Extensibility
 ==============================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 Perhaps a central goal of the Circular programming language could be, to melt together computer technology disciplines, aiming to provide one clear language, that might express anything, and that everybody might understand. The *Extensibility Principles* may shape these hopes for the language.
 

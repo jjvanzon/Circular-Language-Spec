@@ -1,7 +1,7 @@
 ﻿Object Resolution | With Blocks
 ===============================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 [back](./)
 

@@ -1,7 +1,7 @@
 ﻿Circular Language Broader View | Debugging
 ==========================================
 
-`[ Preliminary documentation ]`
+`[ Draft ]`
 
 ## Loose Ideas
 
