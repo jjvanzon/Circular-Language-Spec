@@ -377,7 +377,7 @@ If an object symbol might only used as a class, it might be drawn out with a *da
 
 An idea is also that if an object symbol may only be used as an interface, it could be traced out with a *dotted* line.
 
-![](images/Basic%20Diagram%20Elements.011.png) ![](images/Basic%20Diagram%20Elements.042.png) ![](images/Basic%20Diagram%20Elements.043.png) ![](images/Basic%20Diagram%20Elements.044.png) 
+<img src="images/dotted-circle.png" width="35" /> ![](images/Basic%20Diagram%20Elements.042.png) ![](images/Basic%20Diagram%20Elements.043.png) ![](images/Basic%20Diagram%20Elements.044.png) 
 
 There may be different ideas, for when it could be appropriate to draw shapes with different types of lines.
 
