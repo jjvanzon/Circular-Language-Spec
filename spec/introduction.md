@@ -65,41 +65,41 @@ Another word for *type* might be *class*. *Type* and *class* might not precisely
 Commands
 --------
 
-Apart from a collection of sub objects, objects might `contain*` *commands*.
+Apart from a collection of sub objects, objects might contain *commands*.
 
 ![](images/Circle%20Language%20Spec%20Introduction.007.png)
 
-Sub objects `can*` again `contain*` commands.
+Sub objects may again contain commands.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.008.png" height="300" />
 
-Software `could*` `not*` execute `without*` commands. `When*` `you*` might run a command, an object might *do something*.
+Software might not execute without commands. Upon running a command, an object may *do something*.
 
-A button `could*` have a __Set Text__ command for instance, which might set `the*` text displayed on `the*` button.
+A button might have a __Set Text__ command for instance, which may set the text displayed on a button.
 
 ![](images/Circle%20Language%20Spec%20Introduction.009.png)
 
-Commands `are` denoted here by *squares*.
+Commands may be denoted here by *squares*.
 
-Other objects `could*` `also*` have a __Set Text__ command. `to*` distinguish `the*` __Set Text__ commands of different objects, `you*` might expres `this*` something like:
+Other objects may also have a __Set Text__ command. Distinguishing __Set Text__ commands of different objects, the following text notation might be used:
 
 __Button . Set Text__
 
-A command itself `can*` consist of sub commands: `the*` separate steps of `the*` command.
+A command itself might consist of sub commands: separate steps of the command.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.010.jpeg" height="300" />
 
-Sub commands `are` `not*` `necessarily` embedded inside other commands. They `can*` be `defined` separately:
+Sub commands are not necessarily embedded inside other commands. They could exist separately:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.011.jpeg" height="300" />
 
-And `the*` sub commands `can*` be *called* from `the*` super command:
+And these sub commands might be *called* from a super command:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.012.jpeg" height="350" />
 
-Calling a command has `almost*` `the*` `same` effect as inserting `the*` called command there where `you*` call it.
+Calling a command may have a similar effect as inserting the called command there where it was called.
 
-`the*` __Redraw Button__ command might be `more` complex. In `this*` command `the*` lines of `the*` button `could*` be drawn, `the*` text `could*` be drawn and `whatever` `else*` might make up `the*` display of `the*` button. `the*` steps of `this*` redrawing `could*` be delegated by `yet again` calling other commands. __Redraw Button__ `could*` for instance call `the*` __Draw Line__ command a number of times. `So*` sub commands of `the*` __Set Text__ command `can*` themselves be composed of sub commands.
+The __Redraw Button__ command might be more complex. In this command, lines of a button might be drawn, a text might be drawn and other things that might make up the display of a button. Steps of this redrawing may be delegated by yet again calling other commands. __Redraw Button__ may for instance call the __Draw Line__ command a number of times. So sub commands of this __Set Text__ command may themselves be composed of sub commands.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.013.jpeg" height="350" />
 
