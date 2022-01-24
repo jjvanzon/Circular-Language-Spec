@@ -11,6 +11,6 @@ This is an attempt at a specification of this language.
 - [Relationships](spec/relationships.md)
 - [Commands Main Concepts](spec/commands/commands-main-concepts.md)
 
-The more finished up articles might on these web pages.  
+The more finished up articles might be found on these web pages.  
 Drafts might be found in the [GitHub repository](https://github.com/jjvanzon/Circular-Language-Spec).  
 Articles may gradually be published on this web site.
