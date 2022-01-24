@@ -7,20 +7,14 @@
 
 __Contents__
 
-- [Values](#values)
 - [Attributes might be Objects](#attributes-might-be-objects)
-- [Values](#values-1)
+- [Values](#values)
+- [Values vs Composites](#values-vs-composites)
 - [Fixed Logical Residence](#fixed-logical-residence)
 - [Life Time](#life-time)
 - [Part of the Object](#part-of-the-object)
 - [Not a Pointer](#not-a-pointer)
 - [Summary of Attributes](#summary-of-attributes)
-
-## Values
-
-Some objects might be composed of just sub-objects. On the other hand, there can be objects that represent a simple value, like a number. Simple types might commonly store a piece of binary data. But one idea is that any object might be free to reserve some binary storage to use. An object might store some binary data, next to references to other objects. It also might be able to store both.
-
-A value of an object might not be directly displayed in a diagram. A binary value might first be converted to text, that could be displayed on screen. This text might be called a *literal*. This literal might be a textual representation of the binary value of an object. A literal might be able to be displayed in a diagram, the binary value itself might not.
 
 ## Attributes might be Objects
 
@@ -36,7 +30,7 @@ What might an attribute be compared to other objects?
 
 An attribute might be an object of a simple nature, for instance a number, a Boolean, a date or text. An attribute might be a value that could be stored inside an object.
 
-The value might be textually expressed. An object’s literal value might be shown inside a circle, possibly in the center of it:
+A value of an object might not be directly displayed in a diagram. A binary value might first be converted to text, that could be displayed on screen. This text might be called a *literal*. This literal might be a textual representation of the binary value of an object. A literal might be able to be displayed in a diagram, the binary value itself might not. An object’s literal value might be shown inside a circle, possibly in the center of it:
 
 ![](images/Objects.009.png)
 
@@ -45,6 +39,10 @@ Or perhaps closer to the top if other symbols might be shown inside the attribut
 ![](images/Objects.010.png)
 
 An attribute might be an object that has binary data stored inside it. Storage of binary data alone might not turn an object into an attribute.
+
+## Values vs Composites
+
+Some objects might be composed of just sub-objects. On the other hand, there can be objects that represent a simple value, like a number. One idea is that any object might be free to reserve some binary storage to use. An object might store some binary data, next to references to other objects. It also might be able to store both.
 
 ## Fixed Logical Residence
 
