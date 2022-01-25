@@ -118,26 +118,24 @@ Other names for commands might be: *operations, procedures, functions, methods* 
 Command Parameters
 ------------------
 
-Commands `can*` have *parameters*. Those `are` like instructions passed along with `the*` command that make `the*` command behave differently. `the*` __Button . Set Text__ command for instance, has a __Text__ parameter, which indicates what `the*` new text of `the*` button might be.
+Commands might have *parameters*. Those are like instructions passed along with a command that make a command behave differently. A __Button . Set Text__ command for instance, may have a __Text__ parameter, which might indicate what the new text of a button might become.
 
-Text `can*` `also*` be seen as an *idea*. It `can*` be thought of as an *object*. That way, it `is` *objects* that serve as parameters.
+Text might also be seen as an *idea*. It may be thought of as an *object*. That way, it could be *objects* that would serve as parameters.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.015.jpeg" height="300" />
 
-`the*` command `can*` do `whatever` it wants with `the*` parameters passed `to*` it. Arguably, `all*` it `can*` do with it `is`:
+A command might do things with a parameters passed to it. It might do the following things:
 
-- pass `the*` parameter `to*` another command *`or*`* 
-- call commands of `the*` parameter.
+- passing the parameter to another command or 
+- calling commands of the parameter.
 
-Pass `the*` __Text__ parameter on `to*` `the*` next command (__Format Text__):
+Passing a __Text__ parameter on to the next command (__Format Text__):
 
 <img src="images/Circle%20Language%20Spec%20Introduction.016.jpeg" height="300" />
 
-Call a command of `the*` __Text__ parameter:
+Calling a command of the __Text__ parameter:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.017.jpeg" height="300" />
-
-`the*` terms *parameter* and *argument* `are` sometimes used interchangeably. They might `not*` be entirely `the*` `same` thing, `but*` `the*` difference might be `too*` subtle `to*` talk about right now.
 
 Interfaces
 ----------
