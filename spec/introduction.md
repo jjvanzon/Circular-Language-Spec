@@ -5,7 +5,7 @@
 
 [back](..)
 
-This article aims to introduce the basics of Circular language. Circular language is an idea for a computer programming language, mostly a diagram notation for visualizing computer code. 
+Here some basics might be introduced of Circular language. Circular language is an idea for a computer programming language, mostly a diagram notation for visualizing computer code. 
 
 __Contents__
 
@@ -19,150 +19,150 @@ __Contents__
 Splitting up Ideas
 ------------------
 
-Something that can play a role in making software, is splitting up a larger idea into smaller ideas.
+Something that might play a role in making software, could be splitting up a larger idea into smaller ideas.
 
 ![](images/Circle%20Language%20Spec%20Introduction.001.png)
 
-Here you can see the idea of *the computer*, split up into four sub ideas: the monitor, keyboard, mouse and printer.
+The picture might display the idea of *a computer*, split up into four sub ideas: a monitor, keyboard, mouse and printer.
 
-In Circular language, the main symbol for an idea might be a *circle*:
+In Circular language, the main symbol for an idea might be a *circle:*
 
 <img src="images/Circle%20Language%20Spec%20Introduction.002.png" height="100" />
 
-Each sub idea could work more or less independently of the others. __Monitor__ might its bit, __Keyboard__ might its bit. It might be the super idea that might tie the sub ideas together. Meaning: the computer could make the link between monitor, keyboard, mouse and printer. The super idea might combine the sub ideas and might manage the communication between the sub ideas.
+Each sub idea could work more or less independently of the others. __Monitor__ might its part, __Keyboard__ might its part. It might be the super idea that could tie the sub ideas together. Meaning: the computer may make the link between a monitor, keyboard, mouse and printer. A super idea could combine the sub ideas and might manage communication between the sub ideas.
 
-In computer programming, ideas, so both super ideas and sub ideas, might be called *objects*. Each object can be responsible for its own part of the system.
+In computer programming, ideas may be called *objects*. Each object might be responsible for its own part of a system.
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
-Each sub idea can be split up in sub ideas itself and you might go on and on splitting up ideas.
+A sub idea may be split up into sub ideas itself and it might go on and on being split up into smaller and smaller ideas.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.004.png" height="400" />
 
-But to see the general point of the system, you might only need to see the top layers of the split up.
+But to see the general point of a system, only the top layers may be relevant.
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
-This might make object oriented programming a way to keep overview over a system as it grows. A clear split up into ideas might help the understandability of the design, perhaps most importantly the general outlines / top layers. Depending on who you ask, a subdivision in objects might be the most important thing in software. So splitting up an idea into sub ideas, something that most people are probably able to do, might be the most important thing about programming.
+This might make object oriented programming a way to keep overview over a system as it grows. A better split up into ideas may help make a design become better understandable, perhaps mainly its general outlines / top layers. Depending on who you ask, a subdivision in objects might quite a prominent thing in software. So splitting up an idea into sub ideas, something that quite a few people may be able to do, might be quite relevant when programming.
 
 Reusing Ideas
 -------------
 
-Dividing up into ideas may lead to the *reusability* of ideas. For instance: the idea of a *button* might be reusable. It could be used everywhere. If the perfect button were to be programmed, nobody might need to program a button again. The same idea might be reused whenever a button is needed.
+Dividing up into ideas may lead to *reusability* of ideas. For instance: the idea of a *button* might be reusable. It might be used more than once. If quite a good button were to be programmed, other people may not need to program another button again. The same idea might be reused when another button is desired.
 
-The places where a button is used in a system, there could be a separate object:
+Places where a button may be used in a system, there might be a separate object:
 
 ![](images/Circle%20Language%20Spec%20Introduction.005.png)
 
 ![](images/Circle%20Language%20Spec%20Introduction.006.png)
 
-A button object in general can be called a *type* of object. All the button objects can be considered objects of the same *type*. Sometimes the word *object* is used instead of the word *type*. For instance, you might speak of *the* button *object*, while you’re talking about the button *type*.
+A button object in general might be called a *type* of object. The different button objects may be objects of a similar *type*. Sometimes the word *object* might be used in place of the word *type*. For instance, something could be called the button *object*, while talking about the button *type*.
 
-There could be many types already defined, that you might use one way or another. Such as the __Button__ type for instance, which you can use to build a user interface. Another type, __Integer__, represents one integer number. You might be using those all the time when you program.
+There may be quite a few types available, that someone might use in one way or another. Such as a __Button__ type for instance, which may be used to build a user interface. Another type, __Integer__, may represent one integer number. Those might be used relatively frequently in programming.
 
-Another word for type is *class*. *Type* and *class* might not precisely mean the same thing, but it is pretty close and the word *class* is used in several object oriented programming languages.
+Another word for *type* might be *class*. *Type* and *class* may not precisely be the same thing, but perhaps it is pretty close and the word *class* might be used in several object oriented programming languages.
 
 Commands
 --------
 
-Apart from a collection of sub objects, objects might contain *commands*.
+Apart from a collection of sub objects, objects may contain *commands*.
 
 ![](images/Circle%20Language%20Spec%20Introduction.007.png)
 
-Sub objects can again contain commands.
+Sub objects may again contain commands.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.008.png" height="300" />
 
-Software could not execute without commands. When you might run a command, an object might *do something*.
+Software might not execute without commands. Upon running a command, an object may *do something*.
 
-A button could have a __Set Text__ command for instance, which might set the text displayed on the button.
+A button might have a __Set Text__ command for instance, which may set the text displayed on a button.
 
 ![](images/Circle%20Language%20Spec%20Introduction.009.png)
 
-Commands are denoted here by *squares*.
+Commands might be denoted here by *squares*.
 
-Other objects could also have a __Set Text__ command. To distinguish the __Set Text__ commands of different objects, you might expres this something like:
+Other objects may also have a __Set Text__ command. Distinguishing __Set Text__ commands of different objects, the following text notation might be used:
 
 __Button . Set Text__
 
-A command itself can consist of sub commands: the separate steps of the command.
+A command itself may consist of sub commands: separate steps of the command.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.010.jpeg" height="300" />
 
-Sub commands are not necessarily embedded inside other commands. They can be defined separately:
+Sub commands are not necessarily embedded inside other commands. They could exist separately:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.011.jpeg" height="300" />
 
-And the sub commands can be *called* from the super command:
+And these sub commands might be *called* from a super command:
 
-<img src="images/Circle%20Language%20Spec%20Introduction.012.jpeg" height="300" />
+<img src="images/Circle%20Language%20Spec%20Introduction.012.jpeg" height="350" />
 
-Calling a command has almost the same effect as inserting the called command there where you call it.
+Calling a command may have a similar effect as inserting the called command there where it was called.
 
-The __Redraw Button__ command might be more complex. In this command the lines of the button could be drawn, the text could be drawn and whatever else might make up the display of the button. The steps of this redrawing could be delegated by yet again calling other commands. __Redraw Button__ could for instance call the __Draw Line__ command a number of times. So sub commands of the __Set Text__ command can themselves be composed of sub commands.
+The __Redraw Button__ command may be more complex. In this command, lines of a button might be drawn, a text might be drawn and other things that might make up the display of a button. Steps of this redrawing may be delegated by yet again calling other commands. __Redraw Button__ may for instance call the __Draw Line__ command a number of times. So sub commands of this __Set Text__ command might themselves be composed of sub commands.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.013.jpeg" height="350" />
 
-You can also see here that separately defining a command can lead to the *reuse* of commands. The __Draw Line__ command is reused three times in the example above. There may be many commands already defined, that you might use one way or another. Commands like that could also be put inside in a separate type. There could for instance be a __File__ type that contains commands with which to control a single computer file.
+Here may also become apparent, that separately defining a command might lead to *reuse* of a command. The __Draw Line__ command appears to be reused three times in the example above. There may be quite a few commands available, ready to use one way or another. Commands like that might also be put inside in a separate type. There might for instance be a __File__ type that may contain commands that might allow dealing with a single computer file.
 
-So where might it end? Might commands continue to delegate to one another and might nothing really actually happen? Well, it seems to end at a special group of commands, that do not call other commands anymore. Each of those command may execute a so called machine instruction: a basic instruction that is sent to the computer’s central processing unit (CPU) and make the *computer* *do* something. The CPU might perform a hardware defined *machine* command.
+So where might it end? If commands continue to delegate to each other, when will actual things start happening? Well, it seems to end at a special group of commands, that might not call other commands anymore. A command like that may execute a machine instruction: a basic instruction that make a *computer* *do* something. A computer's central processing unit might perform a hardware defined *machine* command.
 
-That way there can develop big command call tree-outs, which can make a single command consist of many, machine instructions, ranging from tens to thousands of machine instructions or even more.
+That way there may develop big command call tree-outs, which might make a single command consist of multiple machine instructions, that may range from tens to thousands of machine instructions or more.
 
-But you do not necessarily need to see all those details in order to understand what the effect __Button . Set Text__ is.
+But seeing those details might not be necessary to understand what the effect of __Button . Set Text__ might be.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.014.jpeg" height="200" />
 
-Other names for commands could be *operations, procedures, functions, methods* or *routines.* Those might be more or less synonyms.
+Other names for commands might be: *operations, procedures, functions, methods* and *routines.* Those might mean more or less the same.
 
 Command Parameters
 ------------------
 
-Commands can have *parameters*. Those are like instructions passed along with the command that make the command behave differently. The __Button . Set Text__ command for instance, has a __Text__ parameter, which indicates what the new text of the button might be.
+Commands might have *parameters*. Those are like instructions passed along with a command that make a command behave differently. A __Button . Set Text__ command for instance, may have a __Text__ parameter, which might indicate what the new text of a button might become.
 
-Text can also be seen as an *idea*. It can be thought of as an *object*. That way, it is *objects* that serve as parameters.
+Text might also be seen as an *idea*. It may be thought of as an *object*. That way, it could be *objects* that would serve as parameters.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.015.jpeg" height="300" />
 
-The command can do whatever it wants with the parameters passed to it. Arguably, all it can do with it is:
+A command might do things with a parameters passed to it. It might do the following things:
 
-- pass the parameter to another command *or* 
-- call commands of the parameter.
+- passing the parameter to another command or 
+- calling commands of the parameter.
 
-Pass the __Text__ parameter on to the next command (__Format Text__):
+Passing a __Text__ parameter on to the next command (__Format Text__):
 
 <img src="images/Circle%20Language%20Spec%20Introduction.016.jpeg" height="300" />
 
-Call a command of the __Text__ parameter:
+Calling a command of the __Text__ parameter:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.017.jpeg" height="300" />
-
-The terms *parameter* and *argument* are sometimes used interchangeably. They might not be entirely the same thing, but the difference might be too subtle to talk about right now.
 
 Interfaces
 ----------
 
-Another issue of objects is that they can have different interfaces. Try to consider how a employee looks to a customer and how she looks to one of her coworkers. She can do certain things for her coworker and different things for a customer. She has two interfaces. The party that refers to her might have determined which interface she has, but even though both parties are referring to the same person, she might do different things for them.
+Another capability objects might have, is that they may have different interfaces.
 
-Objects may have the same ability. A type of object can have separate interfaces. Interfaces are groups of an object’s members. (The elements inside an object’s can also be called *members*.)
+Try to consider how a employee may look to a customer and how to a coworker. The employee might do certain things for a coworker and different things for a customer. The employee seems to have two 'interfaces'. It may depend on the party referring to the employee, which interface the employee might exhibit. Even though both parties may refer to the same person, this person might do different things for them.
 
-<img src="images/Circle%20Language%20Spec%20Introduction.018.jpeg" height="400" />
+Objects may have a similar ability. An object may have separate interfaces. Interfaces seem to be groups of an object's members. (Elements inside an object might also be called *members*.)
 
-Interfaces are distinguished by triangles here.
+<img src="images/Circle%20Language%20Spec%20Introduction.018.jpeg" width="400" />
 
-The employee here is an advisor to the customer and to another employee a coworker. Another object that refers to the object can decide which interface to use, or may even only be *able* to use a certain one of its interfaces. An object can also have just one interface, the same one for everybody.
+Interfaces may be distinguished by triangles here.
 
-Where might you start, when you read a diagram like this? You could first read the containment structure. You start at the largest container, then the smaller ones. After that you might look at the relations made by the connecting lines.
+The employee here might be an advisor to a customer and to another employee a coworker. Another object that refers to the object might decide which interface may be used, or sometimes might only be able to use a specific one of its interfaces. An object might also just have one interface, the same one for everybody.
 
-You might not always start with the largest container. Maybe one symbol is highlighted. Then this symbol might be what the diagram is about and the focus might be mostly the aspects of the highlighted symbol. Then you might start at the highlighted symbol and look around. There is probably no one way of doing it.
+Where to start, when reading a diagram like this? It might be an idea to first read its containment structure, by starting at the largest container, and then looking at the smaller ones. After that perhaps look at relationships made by the connecting lines.
 
-Triangles might actually be sub objects too. One of the differences with circles is that triangles basically melt together with their container.
+Perhaps starting with the largest container is not always preferred. Maybe one symbol is highlighted. Then this symbol might be what the diagram is about and the focus might first be the aspects of the highlighted symbol. Then perhaps start at the highlighted symbol and look around. There is probably no one way of doing it.
 
-Objects, be it triangles, are an way to give different types, shared characteristics.
+Triangles might be considered sub objects too. One of the differences with circles seems to be that triangles sort of melt together with their container.
+
+Objects, be it triangles, may be a way to give different types, shared characteristics.
 
 Conclusion
 ----------
 
-Hopefully this introduced you to the basics of the Circular language.
+Hopefully this introduced some basics of the Circular language.
 
 [back](..)
