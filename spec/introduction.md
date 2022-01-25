@@ -43,7 +43,7 @@ But to see the general point of a system, only the top layers may be relevant:
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
-This might make object oriented programming a way to keep overview over a system as it grows. A better split up into ideas may help make a design better understandable, perhaps mainly its general outlines or top layers. A subdivision in objects might quite a prominent thing in software. So splitting up an idea into sub ideas, something that quite a few people may be able to do, might be quite relevant when programming.
+This might make object oriented programming a way to keep overview over a system as it grows. A better split up into ideas may help make a design better understandable, perhaps mainly its general outlines or top layers. A subdivision in objects might be quite a prominent thing in software. So splitting up an idea into sub ideas, something that quite a few people may be able to do, might be quite relevant when programming.
 
 Reusing Ideas
 -------------
@@ -154,7 +154,7 @@ The employee here might be an advisor to a customer and to another employee a co
 
 Where to start, when reading a diagram like this? It might be an idea to first read its containment structure, by starting at the largest container, and then looking at the smaller ones. After that perhaps look at relationships made by the connecting lines.
 
-Perhaps starting with the largest container is not always preferred. Maybe one symbol is highlighted. Then this symbol might be what the diagram is about and the focus might be the aspects of the highlighted symbol. Then perhaps start at the highlighted symbol and look around. There is probably no one way of doing it.
+Perhaps starting with the largest container is not always preferred. Maybe one symbol is highlighted. Then this symbol might be what the diagram is about and the focus might be the aspects of the highlighted symbol. Then perhaps start there and look around. There is probably no one way of doing it.
 
 Triangles might be considered sub objects too. One of the differences with circles seems to be that triangles sort of melt together with their container.
 
