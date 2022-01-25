@@ -140,25 +140,25 @@ Calling a command of the __Text__ parameter:
 Interfaces
 ----------
 
-Another issue of objects `is` that they `can*` have different interfaces. Try `to*` consider how a employee looks `to*` a customer and how she looks `to*` one of her coworkers. She `can*` do certain things for her coworker and different things for a customer. She has two interfaces. `the*` party that refers `to*` her might have `determined` which interface she has, `but*` `even` though `both*` parties `are` referring `to*` `the*` `same` person, she might do different things for them.
+Another capability objects might have, is that they may have different interfaces. Try to consider how a employee may look to a customer and how to a coworker. The employee might do certain things for a coworker and different things for a customer. The employee seems to have two 'interfaces'. It may depend on the party referring to the employee, which interface the employee might exhibit. Even though both parties may refer to the same person, this person might do different things for them.
 
-Objects may have `the*` `same` ability. A type of object `can*` have separate interfaces. Interfaces `are` groups of an object’s members. (`the*` elements inside an object’s `can*` `also*` be called *members*.)
+Objects may have a similar ability. An object may have separate interfaces. Interfaces seem to be groups of an object's members. (Elements inside an object might also be called *members*.)
 
-<img src="images/Circle%20Language%20Spec%20Introduction.018.jpeg" height="400" />
+<img src="images/Circle%20Language%20Spec%20Introduction.018.jpeg" width="400" />
 
-Interfaces `are` distinguished by triangles here.
+Interfaces may be distinguished by triangles here.
 
-`the*` employee here `is` an advisor `to*` `the*` customer and `to*` another employee a coworker. Another object that refers `to*` `the*` object `can*` decide which interface `to*` use, `or*` may `even` `only*` be *able* `to*` use a certain one of its interfaces. An object `can*` `also*` have `just one` interface, `the*` `same` one for `everybody`.
+The employee here might be an advisor to a customer and to another employee a coworker. Another object that refers to the object might decide which interface may be used, or sometimes might only be able to use a specific one of its interfaces. An object might also just have one interface, the same one for everybody.
 
-Where might `you*` start, `when`* `you*` read a diagram like `this*`? `you*` `could*` first read `the*` containment structure. `you*` start at `the*` largest container, then `the*` `smaller` ones. After that `you*` might look at `the*` relations made by `the*` connecting lines.
+Where to start, when reading a diagram like this? It might be an idea to first read its containment structure, by starting at the largest container, and then looking at the smaller ones. After that perhaps look at relationships made by the connecting lines.
 
-`you*` might `not*` `always` start with `the*` largest container. Maybe one symbol `is` highlighted. Then `this*` symbol might be what `the*` diagram `is` about and `the*` focus might be `mostly` `the*` aspects of `the*` highlighted symbol. Then `you*` might start at `the*` highlighted symbol and look around. There `is` probably `no` one way of doing it.
+Perhaps starting with the largest container is not always preferred. Maybe one symbol is highlighted. Then this symbol might be what the diagram is about and the focus might first be the aspects of the highlighted symbol. Then perhaps start at the highlighted symbol and look around. There is probably no one way of doing it.
 
-Triangles might `actually` be sub objects `too*`. One of `the*` differences with circles `is` that triangles basically melt together with their container.
+Triangles might be considered sub objects too. One of the differences with circles seems to be that triangles sort of melt together with their container.
 
-Objects, be it triangles, `are` an way `to*` give different types, shared characteristics.
+Objects, be it triangles, may be a way to give different types, shared characteristics.
 
 Conclusion
 ----------
 
-Hopefully `this*` introduced `you*` `to*` `the*` basics of `the*` Circular language.
+Hopefully this introduced some basics of the Circular language.
