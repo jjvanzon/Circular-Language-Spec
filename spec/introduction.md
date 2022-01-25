@@ -103,17 +103,17 @@ The __Redraw Button__ command might be more complex. In this command, lines of a
 
 <img src="images/Circle%20Language%20Spec%20Introduction.013.jpeg" height="350" />
 
-`you*` `can*` `also*` see here that separately `defining` a command `can*` lead `to*` `the*` *reuse* of commands. `the*` __Draw Line__ command `is` reused three times in `the*` example above. There may be `many` commands `already` `defined`, that `you*` might use one way `or*` another. Commands like that `could*` `also*` be put inside in a separate type. There `could*` for instance be a __File__ type that `contains*` commands with which `to*` control a single computer file.
+Here may also become apparent, that separately defining a command might lead to *reuse* of a command. The __Draw Line__ command appears to be reused three times in the example above. There may be quite a few commands available, ready to use one way or another. Commands like that might also be put inside in a separate type. There might  for instance be a __File__ type that may contain commands that might allow dealing with a single computer file.
 
-`So*` where might it end? Might commands continue `to*` delegate `to*` one another and might nothing `really` `actually` happen? Well, it seems `to*` end at a special group of commands, that do `not*` call other commands `anymore`. `each*` of those command may execute a `so*` called machine instruction: a basic instruction that `is` sent `to*` `the*` computer’s central processing unit (CPU) and make `the*` *computer* *do* something. `the*` CPU might perform a hardware `defined` *machine* command.
+So where might it end? If commands continue to delegate to each other, when will actual things start happening? Well, it seems to end at a special group of commands, that might not call other commands anymore. A command like that may execute a machine instruction: a basic instruction that make a *computer* *do* something. A computer's central processing unit might perform a hardware defined *machine* command.
 
-That way there `can*` develop big command call tree-outs, which `can*` make a single command consist of `many`, machine instructions, ranging from tens `to*` thousands of machine instructions `or*` `even` `more`.
+That way there may develop big command call tree-outs, which might make a single command consist of multiple machine instructions, that may range from tens to thousands of machine instructions or more.
 
-`But*` `you*` do `not*` `necessarily` `need` `to*` see `all*` those details in order `to*` understand what `the*` effect __Button . Set Text__ `is`.
+But seeing those details might not be necessary to understand what the effect of __Button . Set Text__ might be.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.014.jpeg" height="200" />
 
-Other names for commands `could*` be *operations, procedures, functions, methods* `or*` *routines.* Those might be `more` `or*` less synonyms.
+Other names for commands might be: *operations, procedures, functions, methods* and *routines.* Those might mean more or less the same.
 
 Command Parameters
 ------------------
