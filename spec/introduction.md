@@ -141,7 +141,7 @@ Interfaces
 
 Another capability of objects might be, that they may have different interfaces.
 
-Try to consider how a employee may look to a customer and how to a coworker. The employee might do certain things for a coworker and other things for a customer. The employee seems to have two *interfaces*. It may depend on the party referring to the employee, which interface the employee might show. Even though both parties may refer to the same person, this person might do different things for them.
+Try to consider how an employee may look to a customer and how to a coworker. The employee might do certain things for a coworker and other things for a customer. The employee seems to have two *interfaces*. It may depend on the party referring to the employee, which interface the employee might show. Even though both parties may refer to the same person, this person might do different things for them.
 
 Objects may have a similar ability. An object may have separate interfaces. Interfaces seem to be groups of an object's members. (Elements inside an object might also be called *members*.)
 
