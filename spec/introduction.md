@@ -20,7 +20,7 @@ __Contents__
 Splitting up Ideas
 ------------------
 
-Something that might play a role in software development, could be splitting up a larger idea into smaller ideas.
+Something that might play a role in software development, is splitting up a larger idea into smaller ideas.
 
 ![](images/Circle%20Language%20Spec%20Introduction.001.png)
 
