@@ -57,7 +57,7 @@ Where a button may be used in a system, there might be a separate object:
 
 ![](images/Circle%20Language%20Spec%20Introduction.006.png)
 
-A button object in general might be called a *type* of object. The different button objects may be objects of a similar *type*. Sometimes the word *object* might be used in place of the word *type*. For instance, something might be called the button *object*, while talking about the button *type*.
+A button object in general might be called a *type* of object. The different button objects may be objects of a similar *type*.
 
 There may be quite a few types available, that might be used in one way or another. A __Button__ type for instance might be used to build a user interface. Another type, __Integer__, may represent one integer number. Those might be used relatively frequently when programming.
 
@@ -112,8 +112,6 @@ But it might not be necessary, to see all those details, to understand what the 
 
 <img src="images/Circle%20Language%20Spec%20Introduction.014.jpeg" height="200" />
 
-Other names for commands may be: *operations, procedures, functions, methods* and *routines.* Those might mean more or less the same.
-
 Command Parameters
 ------------------
 
@@ -143,7 +141,7 @@ Another capability of objects might be, that they may have different interfaces.
 
 Try to consider how an employee may look to a customer and how to a coworker. The employee might do certain things for a coworker and other things for a customer. The employee seems to have two *interfaces*. It may depend on the party referring to the employee, which interface the employee might show. Even though both parties may refer to the same person, this person might do different things for them.
 
-Objects may have a similar ability. An object may have separate interfaces. Interfaces seem to be groups of an object's members. (Elements inside an object might also be called *members*.)
+Objects may have a similar ability. An object may have separate interfaces. Interfaces seem to be groups of an object's members.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.018.jpeg" width="400" />
 
