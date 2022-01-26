@@ -24,7 +24,7 @@ Something that might play a role in software development, is splitting up a larg
 
 ![](images/Circle%20Language%20Spec%20Introduction.001.png)
 
-The picture might display the idea of *a computer*, split up into four sub ideas: a monitor, keyboard, mouse and printer.
+This picture might display the idea of *a computer*, split up into four sub ideas: a monitor, keyboard, mouse and printer.
 
 In Circular language, the main symbol for an idea might be a *circle:*
 
