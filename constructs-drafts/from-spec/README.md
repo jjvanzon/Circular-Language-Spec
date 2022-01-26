@@ -5,6 +5,10 @@ Construct Drafts | From Spec
 
 Topics that may be recognizable from the *spec*, but then maybe lesser worked out ideas about these topics.
 
+- [Introduction Construct Drafts](introduction-construct-drafts.md)
+
+    - Perhaps deprecated ideas that originally came from the spec's Introduction article.
+
 - [Assignment Construct Drafts](assignment-construct-drafts.md)
 
     - Perhaps deprecated ideas about the topic of assignment (__=__).
