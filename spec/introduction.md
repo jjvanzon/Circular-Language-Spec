@@ -158,7 +158,7 @@ Triangles may be a way to give different types shared characteristics. Though 'n
 Reading a Diagram
 -----------------
 
-Where to start, when reading a diagram like the last one?
+Where to start, when reading a diagram like that?
 
 <img src="images/Circle%20Language%20Spec%20Introduction.018.jpeg" width="400" />
 
