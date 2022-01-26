@@ -158,7 +158,11 @@ Triangles may be a way to give different types shared characteristics. Though 'n
 Reading a Diagram
 -----------------
 
-Where to start, when reading a diagram like the last one? It might be an idea to first read its containment structure, by starting at the largest container, and then looking at the smaller ones. After that perhaps look at relationships made by the connecting lines.
+Where to start, when reading a diagram like the last one?
+
+<img src="images/Circle%20Language%20Spec%20Introduction.018.jpeg" width="400" />
+
+It might be an idea to first read its containment structure, by starting at the largest container, and then looking at the smaller ones. After that perhaps look at relationships made by the connecting lines.
 
 Perhaps starting with the largest container is not always preferred. Maybe one symbol is highlighted. Then this symbol might be what the diagram is about. Then the focus might be on aspects of the highlighted symbol. Then perhaps start there and look around. There is probably no one way of doing it.
 
