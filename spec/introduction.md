@@ -32,7 +32,7 @@ In Circular language the main symbol for an idea is a *circle:*
 
 Each sub idea works more or less independently of the others. __Monitor__ does its part, __Keyboard__ does its part.  It's the super idea that ties the sub ideas together. That means that the computer makes the link between monitor, keyboard, mouse and printer. The super idea combines the sub ideas and manages communication between the sub ideas.
 
-In computer programming, ideas can be called *objects*. Each object is responsible for its own part of the system.
+In computer programming, ideas might be called *objects*. Each object is responsible for its own part of the system.
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
