@@ -105,7 +105,7 @@ The __Redraw Button__ command is rather complex. In this command, lines of a but
 
 Here it becomes apparent, that separately defining a command can lead to *reuse* of a command. The __Draw Line__ command is reused three times in the example above. There are quite a few commands available, ready to use one way or another. Commands like that can also reside inside in a separate object. There can for instance be a __File__ object that contains commands that make it possible to deal with a computer file.
 
-So where will it end? If commands continue to delegate to each other, when do things actually start happening? Well, it ends at a special group of commands, that do not call other commands anymore. A command like that can execute a machine instruction: a basic instruction that make a *computer do* something. A computer's central processing unit performs a hardware defined *machine* command.
+So where will this end? If commands continue to delegate to each other, when do things actually start happening? Well, it seems to end at a special group of commands, that do not call other commands anymore. A command like that can execute a machine instruction: a basic instruction that make a computer *do* something. A computer's central processing unit performs a hardware defined *machine* command.
 
 That way there can develop big command call tree-outs, which makes a single command consist of multiple machine instructions, ranging from tens to thousands of machine instructions or more.
 
