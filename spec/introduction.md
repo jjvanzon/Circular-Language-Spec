@@ -116,7 +116,7 @@ But it does not seem to be necessary to see all those details, to understand wha
 Command Parameters
 ------------------
 
-Commands can have *parameters*. Those are like instructions passed along with a command that make a command behave differently. The __Button . Set Text__ command for instance, has a __Text__ parameter, which indicates what the new text of a button is.
+Commands can have *parameters*. Those are like instructions passed along with a command that make a command behave differently. The __Button . Set Text__ command for instance, has a __Text__ parameter, which indicates what the new text of a button will become.
 
 __Text__ is an *idea*. It is an *object*. It is usually *objects* that serve as parameters.
 
@@ -152,7 +152,7 @@ The employee here is an advisor to a customer and to another employee a coworker
 
 Triangles can be considered sub objects too. One of the differences with circles is that triangles sort of melt together with their container.
 
-Triangles are a way to give different types shared characteristics. Though 'normal' sub-objects do that too.
+Triangles are a way to give different types shared characteristics. Though 'normal' sub-objects can do that too.
 
 Reading a Diagram
 -----------------
@@ -161,7 +161,7 @@ Where to start, when reading a diagram like that?
 
 <img src="images/Circle%20Language%20Spec%20Introduction.018.jpeg" width="400" />
 
-One option is to first read its containment structure, by starting at the largest container, and then looking at the smaller ones. After that relationships made by the connecting lines is something to look at.
+One option is to first read its containment structure, by starting at the largest container, and then looking at the smaller ones. After that relationships made by the connecting lines is something that might be looked at.
 
 Starting with the largest container is not always preferred. One symbol might be highlighted. Then this symbol is what the diagram is about. The focus would be on aspects of the highlighted symbol. Then start there and look around.
 
