@@ -93,7 +93,7 @@ Sub commands are not necessarily embedded inside other commands. They can exist 
 
 <img src="images/Circle%20Language%20Spec%20Introduction.011.jpeg" height="300" />
 
-And these sub commands can then be *called* from the super command:
+And these sub commands are then *called* from the super command:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.012.jpeg" height="350" />
 
