@@ -85,7 +85,7 @@ Other objects than a button might also have a __Set Text__ command. __Set Text__
 __Button . Set Text__  
 __Text Box . Set Text__
 
-A command can consist of sub commands again: separate steps of the command.
+A command can again consist of sub commands: separate steps of the command.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.010.jpeg" height="300" />
 
