@@ -68,6 +68,8 @@ Apart from a collection of sub objects, objects can contain *commands*.
 
 ![](images/Circle%20Language%20Spec%20Introduction.007.png)
 
+Commands are denoted here by *squares*.
+
 Sub objects can again contain commands:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.008.png" height="300" />
@@ -77,8 +79,6 @@ Software cannot execute without commands. Upon running a command, an object *doe
 A button can have a __Set Text__ command for instance, which sets the text displayed on a button.
 
 ![](images/Circle%20Language%20Spec%20Introduction.009.png)
-
-Commands are denoted here by *squares*.
 
 Other objects can also have a __Set Text__ command. __Set Text__ commands of different objects can be distinguished with the following text notation:
 
