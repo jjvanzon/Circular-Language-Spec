@@ -659,7 +659,7 @@ In Symbol, the main symbol for an idea is a *circle*:
 
 ![](images/Symbol%20Language%20(2004).002.png)
 
-Each sub idea works independently of the other ideas. __Monitor__ might its bit, __Keyboard__ might its bit, etcetera. It’s the *super* idea that ties the sub ideas together. That means that the computer makes the links between monitor, keyboard, mouse and printer. The super idea combines the sub ideas and manages the communication between the sub ideas.
+Each sub idea works independently of the other ideas. __Monitor__ might do its bit, __Keyboard__ might do its bit, etcetera. It’s the *super* idea that ties the sub ideas together. That means that the computer makes the links between monitor, keyboard, mouse and printer. The super idea combines the sub ideas and manages the communication between the sub ideas.
 
 Ideas, so both super ideas and sub ideas, are called objects. Each object is responsible for its own bit of the system.
 
@@ -694,7 +694,7 @@ The more experience you gain in splitting up large ideas into smaller parts, the
 
 ### Programming is Never Easy
 
-Some texts explaining programming environments try to sell it to you that software programming is easy. That is never true. Those texts are written to *sell* the programming environment, not to tell the truth. Those texts claim that the programming environment might do most of the work *for* you, while in real life, what the programming environment might *for* you, is just run existing programs, not program new software. The text might say you’ve programmed something, while you’ve really just run something that was already programmed. Only if you want to take *no* decisions on how the software is going to work, programming is easy. But then it’s not really programming. If you want to make decisions about how you want your software to be, software programming is *not* easy. In programming, you might give everything a place *yourself*. If you reuse someone else’s object, you might be aware of what the object might do for you. Worse, many times you encounter problems with someone else’s object that you can’t fix, because you can’t change the inner workings of the object. This can lead to wanting to program everything yourself and if you’re stubborn enough, or fed up enough, you become *me,* and actually try to start to program everything yourself. Learn to work with other people’s objects. I’m working on that too. *And* I’m trying to make *the* __Button__ for which no one wants a replacement. Or if they do want a replacement, they’ll still want to use the base of my button as a foundation.
+Some texts explaining programming environments try to sell it to you that software programming is easy. That is never true. Those texts are written to *sell* the programming environment, not to tell the truth. Those texts claim that the programming environment might do most of the work *for* you, while in real life, what the programming environment might do *for* you, is just run existing programs, not program new software. The text might say you’ve programmed something, while you’ve really just run something that was already programmed. Only if you want to take *no* decisions on how the software is going to work, programming is easy. But then it’s not really programming. If you want to make decisions about how you want your software to be, software programming is *not* easy. In programming, you might give everything a place *yourself*. If you reuse someone else’s object, you might be aware of what the object might do for you. Worse, many times you encounter problems with someone else’s object that you can’t fix, because you can’t change the inner workings of the object. This can lead to wanting to program everything yourself and if you’re stubborn enough, or fed up enough, you become *me,* and actually try to start to program everything yourself. Learn to work with other people’s objects. I’m working on that too. *And* I’m trying to make *the* __Button__ for which no one wants a replacement. Or if they do want a replacement, they’ll still want to use the base of my button as a foundation.
 
 ![](images/Symbol%20Language%20(2004).007.png)
 
@@ -792,7 +792,7 @@ Sub objects again contain commands.
 
 ![](images/Symbol%20Language%20(2004).011.png)
 
-Software can’t execute without commands. When you run a command, an object *might something*.
+Software can’t execute without commands. When you run a command, an object *might do something*.
 
 A button could have a __Set Text__ command for instance, which sets the text displayed on the button.
 
@@ -842,7 +842,7 @@ Many think it’s not important to have a good subdivision in sub ideas and to c
 
 Sometimes I spend most time thinking about a subdivision of code and about names, not testing if something is doing what I want it to do. I can spend ten minutes figuring out a name. If I don’t give it a good name, the code is not going to make sense.
 
-An identifier is the only thing that can tell something about the contents of a symbol when its contained symbols aren’t shown. A kitchen consists of hundreds of things, but if you say ‘kitchen’ you really know enough. If it’s given a bad name, then you don’t know what it might. Then the only way you can know what it might is by looking at its contents and hope that good names are used there. If the names inside are no good either, there is still no way of telling what it might do. You can’t tell what it might do from just command structure and object structure. Eventually there has to be names. If all names suck, then you rely on interpreting machine instructions. If Intel(\* might have given indistinguishable names to machine instructions then you might be lost. You can’t see anything in the code then. All you could rely on is documentation saying what’s what, if such documentation even exists. In some cases where you use proper naming, you hardly need to supply any documentation.
+An identifier is the only thing that can tell something about the contents of a symbol when its contained symbols aren’t shown. A kitchen consists of hundreds of things, but if you say ‘kitchen’ you really know enough. If it’s given a bad name, then you don’t know what it might. Then the only way you can know what it might be by looking at its contents and hope that good names are used there. If the names inside are no good either, there is still no way of telling what it might do. You can’t tell what it might do from just command structure and object structure. Eventually there has to be names. If all names suck, then you rely on interpreting machine instructions. If Intel(\* might have given indistinguishable names to machine instructions then you might be lost. You can’t see anything in the code then. All you could rely on is documentation saying what’s what, if such documentation even exists. In some cases where you use proper naming, you hardly need to supply any documentation.
 
 Even when you don’t think a lot, when giving something a name, even then naming is important. The names, however quickly and poorly chosen, are distinguishable or the consequence is that you can’t see what your code might, unless you look into what’s under the name, hoping you’ll recognize something there.
 
@@ -896,7 +896,7 @@ Objects, be it triangles, are an excellent way to give different types mutual ch
 
 ### Inheritance
 
-Even though you could speak of *inheritance* concerning the whole of the ancestry, originally, in other programming languages, only what the triangle might is called inheritance: a sub object’s characteristics merge with its container.
+Even though you could speak of *inheritance* concerning the whole of the ancestry, originally, in other programming languages, only what the triangle might do is called inheritance: a sub object’s characteristics merge with its container.
 
 I still employ the term inheritance when I mean an object’s merging with a container. I can also use the term inheritance in normal containment if I see it fit. Respectively, the word *base* is also used as a term for a triangular sub object, but if I see it fit I might use it for a *circular* object too.
 
@@ -1058,7 +1058,7 @@ __A__ and __B__ are the base types of __C__, but __C__ defines these base types 
 
 Because a triangle basically merges with its container, it’s like you aren’t bothered by the borders of a triangle. That makes the triangle an easy way of grouping members, without harming the way you access the members.
 
-You can also put a circle around members to group them. That changes the way you access the members, though. You’d might qualify the access with the name of the grouping circle.
+You can also put a circle around members to group them. That changes the way you access the members, though. You might qualify the access with the name of the grouping circle.
 
 #### A Circle Contains But Interface Implementations
 
@@ -1134,7 +1134,7 @@ Or by drawing it with an alternate color:
 
 ![](images/Symbol%20Language%20(2004).028g.png)
 
-When objects are tied together with object lines, they represent the same object, but this object might not necessarily might be created. But when it *is* created, the connected symbols might represent the same object. In the C++(\* programming language, this is not possible.
+When objects are tied together with object lines, they represent the same object, but this object might not necessarily be created. But when it *is* created, the connected symbols might represent the same object. In the C++(\* programming language, this is not possible.
 
 When you create a symbol the ‘normal’ way, you create it having its own type.
 
@@ -1259,7 +1259,7 @@ Also executes, when its parent command executes, but it doesn’t delegate to an
 
 It is an undelegated part of a command, called a *nested command*.
 
-Because a diamond doesn’t might be a call, it is also called an *execution* or an *execution point*.
+Because a diamond doesn’t need to be a call, it is also called an *execution* or an *execution point*.
 
 An undelegated square inside a command is also considered a nested command.
 
@@ -1342,7 +1342,7 @@ Lines tie symbols together, saying that they share a certain aspect.
 *A, B, C and D share an aspect: they represent the same object. E represents another object:*  
 ![](images/Symbol%20Language%20(2004).061.png)
 
-In that sense the lines have no particular direction. However, the direction of lines might matter as might become apparent in later subjects. It is of the essence to see that one symbol is pointing to the other. There are rules that determine the direction of lines.
+In that sense the lines have no particular direction. However, the direction of lines might matter as may become apparent in later subjects. It is of the essence to see that one symbol is pointing to the other. There are rules that determine the direction of lines.
 
 #### Access Symbols
 
@@ -2213,7 +2213,7 @@ However, when you *create* the symbol, an object of the *full type* is created. 
 
 *Symbol A is of Type A, but only uses Interface A. Symbol A only shows the systematics of that one interface: a circle. However, it’s an object of the __whole type__. This is important. The importance is pointed out by Symbol B. Symbol B is a pointer to Symbol A, only it uses a different interface. So it shows different systematics.*
 
-So object symbols tied together with object lines might not use the same interface at all. The picture above shows that when you use an object line (__Symbol B__ points to __Symbol A__), the target doesn’t might have the same interface, only the same type.
+So object symbols tied together with object lines might not use the same interface at all. The picture above shows that when you use an object line (__Symbol B__ points to __Symbol A__), the target doesn’t have the same interface, only the same type.
 
 ###### Choose From Multiple Types
 
@@ -3137,7 +3137,7 @@ In fact the diamond executor might only write members just before the call and m
 
 #### Accessing a Diamond Member During a Call
 
-So how might you access a diamond member *during* a call? Well, usually only commands called by the executing diamond can access the call parent.
+So how you might access a diamond member *during* a call? Well, usually only commands called by the executing diamond can access the call parent.
 
 ![](images/Symbol%20Language%20(2004).267.jpeg)
 
@@ -3980,7 +3980,7 @@ The situation above can only exist right after a call. If you want to
 
 < A problem: you get returned an object reference. You lead a line to it. Then the command returns. Line target gone. If you want to link to its object, you might want to link to its __Target Object__. But, dang, in Com, if you link to an object, it stays in memory wether the original reference holder releases or not. In Symbol, when the target object is destroyed (released) then the object is destroyed. That’s because one symbol represents the object for real. If you want a object to destroy when reference count is 0, then you might emulate it in Symbol by creating an object symbol that represents the object. References represent references to it. The object might destroy itself if all references to it are released. It’s just a different deal in Symbol. It just is. It’s not like it’s any worse. Line methodology has too many advantages in relation to Com, to hate it for not being like Com. >
 
-So... To do the com way, you DO might copy the final object target.
+So... To do the com way, you might indeed copy the final object target.
 
 But this still doesn’t cover the situation above
 
@@ -5747,7 +5747,7 @@ An alternate look on the object symbol is as a set of system commands, each gran
 
 ![](images/Symbol%20Language%20(2004).386.png)
 
-This representation is called the *system representation* of the symbol. Each command in the system representation might what’s discussed in the previous section.
+This representation is called the *system representation* of the symbol. Each command in the system representation might be what’s discussed in the previous section.
 
 __Symbol__, __Target Object__, __Target Type__ and __Target Interface__ only have a __Get__ command. The word __Get__ is simply left out in naming these command from now on. The word __Get__ can also be left out with __Object__, __Type__, __Interface__ and __State__ __Gets__.
 
@@ -5803,7 +5803,7 @@ Each call of the three (c . Object, i . Object and b . Target Command) is proces
 
 c . Object is called (for the purpose of *Access*). The c . Object command returns d . Object. d . Object returns e . Object. e . Object returns itself: e . Symbol. This process is contained in the Object Get commands of c, d and e. They redirect to one another until e returns itself. So c . Object returns e.
 
-The target object and target type of e are to be found out. Symbol might this by first calling __e . Object Get__ for the purpose of Redirection.  This call is not anywhere in the diagram. It is done on Symbol’s discretion. e . Object Redirection returns Nothing, a special value that in this case indicates that there is no object line. Because there is no object line, the type line may need to be followed. Therefore Symbol calls e . Type for the purpose of Redirection. This call returns symbol f. f . Object Redirection is called, which returns Nothing, so them f . Type Redirection is called, which returns g. g . Object is called, which returns h. h . Object is called, which returns Nothing, so h . Type is called, which also returns nothing. During this redirection loop, Symbol has recorded the target object and target type of e. This concludes the access of c.
+The target object and target type of e are to be found out. Symbol might do this by first calling __e . Object Get__ for the purpose of Redirection.  This call is not anywhere in the diagram. It is done on Symbol’s discretion. e . Object Redirection returns Nothing, a special value that in this case indicates that there is no object line. Because there is no object line, the type line may need to be followed. Therefore Symbol calls e . Type for the purpose of Redirection. This call returns symbol f. f . Object Redirection is called, which returns Nothing, so them f . Type Redirection is called, which returns g. g . Object is called, which returns h. h . Object is called, which returns Nothing, so h . Type is called, which also returns nothing. During this redirection loop, Symbol has recorded the target object and target type of e. This concludes the access of c.
 
 Now we know c’s object and type we continue the journey of our call line. It appears in the diagram that we have now entered c. Symbol internally is working with another symbol now, though: h, because it is the target object and type of c. 
 
@@ -7905,7 +7905,7 @@ Command A ( 0 , 4 )
 
 Command A is the command name, the two numbers between brackets are the two arguments. Text code is covered in detail lateron.
 
-The parameters of a command are listed in a fixed order. Even the optional parameters have a place in this fixed list and when you don’t want to fill it in you might leve the position open:
+The parameters of a command are listed in a fixed order. Even the optional parameters have a place in this fixed list and when you don’t want to fill it in you might leave the position open:
 
 ```
 Command A ( 0 , 4 ,  , 1 )
@@ -8288,7 +8288,7 @@ Exclusion, that is, a container’s exclusion of members of its children, doesn�
 
 Etcetera. Symbol might become much easier when you find what’s used most and what things are for incidental use, no matter how complex the topics you’ll use incidentally are.
 
-You can write programs in which you have no notice of any system aspect command at all. In programs in which you do work with system aspect commands, you won’t might not notice the presence of all aspect commands, just some.  
+You can write programs in which you have no notice of any system aspect command at all. In programs in which you do work with system aspect commands, you might not notice the presence of all aspect commands, just some.  
 />
 
 < remember that I can only explain how to program structurally using the systems I’ve programmed as an example >  
@@ -8332,7 +8332,7 @@ You might look at basics of Symbol. And the basic thing is encapsulation. The en
 
 Symbol always had a lack of expression in plurality. How. You’d almost want a new shape of symbol. But I’ve sort of run out of shapes. I’d go for a hexagon. It looks like a circle, but has a plurality feeling to it. If you might, you could choose for octagons.
 
-Of course, one of those, might contain a variable amount of objects, that don’t even might be of the same type, but might always have the same interface I guess.
+Of course, one of those, might contain a variable amount of objects, that might not even be of the same type, but might always have the same interface I guess.
 
 That might conclude seem to conclude the parallelization of Symbol and Structure.
 
@@ -8368,7 +8368,7 @@ However, you should be able to define static object relations in the structure, 
 
 Nee, forget all that.
 
-Als je Structure in Symbol gaat toepassen, zal je een deel van ‘de gegenereerde code’ zelf programmeren. Dat lijkt in ieder geval zo. Als je een class in de structure might aanmaken, maak je een symbol aan. Als je een relatie tussen twee klassen wilt maken, dan maak je een object reference aan in een klasse die een relatie met de ander heeft. De relatie wordt wel automatisch dual. Als je een attribuut wilt toevoegen aan een class, dan stop je een objectje er gewoon in. Attributen worden trouwens objecten. Veel dingen worden wel op een gewone Structure achtige wijze ingevoerd. Daarvoor heeft een object symbol een Class interface gekregen, waar de structure information in wordt bewerkt. Daarin kun je ook bijvoorbeeld, customizen voor deeper objects. Je ziet ook nog globaal de classes en de relations collecties. Je ziet dus gewoon alle structuur informatie. Je kunt ook alles van de gegenereerde applicatie zien. Zo kun je in het aangemaakte object symbol (dat een Structure class is) de symboliek van de gegenereerde user interface zien. Die symboliek wordt automatisch bijgewerkt als je de Class informatie aanpast. Wijzigingen in de gegenereerde user interface symboliek worden als customization gezien en blijven staan, tenzij ze weer gedefault worden, waardoor de generator weer bepaalt wat het wordt. Je kunt ook een symbol meteen runnen, dus je kunt een control meteen laten zien.
+Als je Structure in Symbol gaat toepassen, zal je een deel van ‘de gegenereerde code’ zelf programmeren. Dat lijkt in ieder geval zo. Als je een class in de structure doet aanmaken, maak je een symbol aan. Als je een relatie tussen twee klassen wilt maken, dan maak je een object reference aan in een klasse die een relatie met de ander heeft. De relatie wordt wel automatisch dual. Als je een attribuut wilt toevoegen aan een class, dan stop je een objectje er gewoon in. Attributen worden trouwens objecten. Veel dingen worden wel op een gewone Structure achtige wijze ingevoerd. Daarvoor heeft een object symbol een Class interface gekregen, waar de structure information in wordt bewerkt. Daarin kun je ook bijvoorbeeld, customizen voor deeper objects. Je ziet ook nog globaal de classes en de relations collecties. Je ziet dus gewoon alle structuur informatie. Je kunt ook alles van de gegenereerde applicatie zien. Zo kun je in het aangemaakte object symbol (dat een Structure class is) de symboliek van de gegenereerde user interface zien. Die symboliek wordt automatisch bijgewerkt als je de Class informatie aanpast. Wijzigingen in de gegenereerde user interface symboliek worden als customization gezien en blijven staan, tenzij ze weer gedefault worden, waardoor de generator weer bepaalt wat het wordt. Je kunt ook een symbol meteen runnen, dus je kunt een control meteen laten zien.
 
 Je ziet gewoon de structuur informatie en de gegenereerde applicatie in één symbol diagram. Dus voor een deel programmeer je in Symbol de Structure alsof je zelf de gegenereerde code aan het programmeren bent en de structure informatie is nog steeds wel beschikbaar. Alles wat je ziet komt ook in de gegenereerde applicatie terecht. Structuur informatie wordt namelijk ook zichtbaar in de gegenereerde applicatie. De uitzondering daarop is dat er kan gekozen worden om structuur informatie achterwege te laten in de generated application, alsmede andere dingen achterwege gelaten, maar die dingen zie je dan wel in de design code.
 
@@ -9584,7 +9584,7 @@ Perhaps I should start at basic programming concepts and then move to more and m
 
 That might make me pass things whose implementation in Symbol I haven’t thought through though.
 
-I’d might present the concept in both diagram language and text language, because there are parts that don’t look better in diagram. You should be able to embed short text language in the diagram.
+I might present the concept in both diagram language and text language, because there are parts that don’t look better in diagram. You should be able to embed short text language in the diagram.
 
 Perhaps I should explain on any concept, even when it has no presence in the system because its not necessary.
 
