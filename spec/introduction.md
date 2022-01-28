@@ -59,7 +59,7 @@ Any place a button is used in a system, there is a separate object:
 
 A button object in general is called a *type* of object.
 
-There are quite a few types already available, that may be used in one way or another. A __Button__ type for instance can be used to build a user interface. Another type, __Integer__, represents one integer number. Those are used relatively frequently when programming.
+There are quite a few types already available, used in one way or another. A __Button__ type for instance can be used to build a user interface. Another type, __Integer__, represents one integer number. Those are used relatively frequently when programming.
 
 Commands
 --------
