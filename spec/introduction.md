@@ -36,7 +36,7 @@ In computer programming, ideas might be called *objects*. Each object is respons
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
-A sub idea can be split up into sub ideas itself. It can go on and on being split up into smaller and smaller ideas:
+A sub idea can be split up into sub ideas itself. It can go on and splitting up into smaller and smaller ideas:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.004.png" height="400" />
 
