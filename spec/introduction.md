@@ -20,7 +20,7 @@ __Contents__
 Splitting up Ideas
 ------------------
 
-Something that could play a role in software development, is splitting up a larger idea into smaller ideas:
+Something that can play a role in software development, is splitting up a larger idea into smaller ideas:
 
 ![](images/Circle%20Language%20Spec%20Introduction.001.png)
 
@@ -32,7 +32,7 @@ In Circular language the main symbol for an idea is a *circle:*
 
 Each sub idea works more or less independently of the others. __Monitor__ does its part, __Keyboard__ does its part.  It's the super idea that ties the sub ideas together. That means that the computer makes the link between monitor, keyboard, mouse and printer. The super idea combines the sub ideas and manages communication between the sub ideas.
 
-In computer programming, ideas could be called *objects*. Each object is responsible for its own part of the system.
+In computer programming, ideas can be called *objects*. Each object is responsible for its own part of the system.
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
@@ -44,7 +44,7 @@ But to see the general point of a system, only the top layers are relevant:
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
-This makes object oriented programming a nice way to keep overview over a system as it grows. A better split up into ideas makes a design easier to understand, especially its general outlines. A subdivision in objects can be quite a prominent thing in software. So splitting up an idea into sub ideas, something that quite a few people are able to do, could be quite relevant when programming.
+This makes object oriented programming a nice way to keep overview over a system as it grows. A better split up into ideas makes a design easier to understand, especially its general outlines. A subdivision in objects can be quite a prominent thing in software. So splitting up an idea into sub ideas, something that quite a few people are able to do, can be quite relevant when programming.
 
 Reusing Ideas
 -------------
@@ -80,7 +80,7 @@ A button can have a __Set Text__ command for instance, which sets the text displ
 
 Commands are denoted here by *squares*.
 
-Other objects could also have a __Set Text__ command. __Set Text__ commands of different objects can be distinguished with the following text notation:
+Other objects can also have a __Set Text__ command. __Set Text__ commands of different objects can be distinguished with the following text notation:
 
 __Button . Set Text__
 
@@ -88,7 +88,7 @@ A command can consist of sub commands again: separate steps of the command.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.010.jpeg" height="300" />
 
-Sub commands are not necessarily embedded inside other commands. They could exist separately:
+Sub commands are not necessarily embedded inside other commands. They can exist separately:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.011.jpeg" height="300" />
 
@@ -98,13 +98,13 @@ And these sub commands can then be *called* from the super command:
 
 Calling a command has a similar effect as inserting the called command there where it was called.
 
-The __Redraw Button__ command is rather complex. In this command, lines of a button are drawn, a text is drawn and other things that make up the display of a button. It can be built up of steps. __Redraw Button__ could call a __Draw Line__ command a number of times. So sub commands of this __Set Text__ command can themselves be composed of sub commands.
+The __Redraw Button__ command is rather complex. In this command, lines of a button are drawn, a text is drawn and other things that make up the display of a button. It can be built up of steps. __Redraw Button__ can call a __Draw Line__ command a number of times. So sub commands of this __Set Text__ command can themselves be composed of sub commands.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.013.jpeg" height="350" />
 
 Here it becomes apparent, that separately defining a command can lead to *reuse* of a command. The __Draw Line__ command is reused three times in the example above. There are quite a few commands available, ready to use one way or another. Commands like that can also reside inside in a separate object. There can for instance be a __File__ object that contains commands that make it possible to deal with a computer file.
 
-So where will it end? If commands continue to delegate to each other, when do things actually start happening? Well, it ends at a special group of commands, that do not call other commands anymore. A command like that could execute a machine instruction: a basic instruction that make a *computer do* something. A computer's central processing unit performs a hardware defined *machine* command.
+So where will it end? If commands continue to delegate to each other, when do things actually start happening? Well, it ends at a special group of commands, that do not call other commands anymore. A command like that can execute a machine instruction: a basic instruction that make a *computer do* something. A computer's central processing unit performs a hardware defined *machine* command.
 
 That way there can develop big command call tree-outs, which makes a single command consist of multiple machine instructions, ranging from tens to thousands of machine instructions or more.
 
