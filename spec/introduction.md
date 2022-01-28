@@ -5,7 +5,7 @@
 
 [back](..)
 
-Here some basics might be introduced of the Circular language. Circular language is an idea for a computer programming language, mostly a diagram notation for visualizing computer code. 
+This articles aims to introduce the basics of the Circular language. Circular language is an idea for a computer programming language, mostly a diagram notation for visualizing computer code. 
 
 __Contents__
 
@@ -20,23 +20,23 @@ __Contents__
 Splitting up Ideas
 ------------------
 
-Something that may play a role in software development, is splitting up a larger idea into smaller ideas.
+Something that could play a role in software development, is splitting up a larger idea into smaller ideas:
 
 ![](images/Circle%20Language%20Spec%20Introduction.001.png)
 
-This picture might display the idea of *a computer*, split up into four sub ideas: a monitor, keyboard, mouse and printer.
+This picture tries to demonstrate the idea of *a computer*, being split up into four sub ideas: a monitor, keyboard, mouse and printer.
 
-In Circular language, the main symbol for an idea may be a *circle:*
+In Circular language the main symbol for an idea may be a *circle:*
 
 <img src="images/Circle%20Language%20Spec%20Introduction.002.png" height="100" />
 
-Each sub idea might work more or less independently of the others. __Monitor__ may do its part, __Keyboard__ might do its part. It may be the super idea that could tie the sub ideas together. Meaning: the computer might make the link between a monitor, keyboard, mouse and printer. A super idea may combine the sub ideas and might manage communication between sub ideas.
+Each sub idea could work more or less independently of the others. __Monitor__ does its part, __Keyboard__ does its part. The *super* idea might tie the sub ideas together. Meaning: the computer may make the link between a monitor, keyboard, mouse and printer. A super idea could combine the sub ideas and manage communication between the sub ideas.
 
 In computer programming, ideas may be called *objects*. Each object might be responsible for its own part of a system.
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
-A sub idea may be split up into sub ideas itself. Things might go on and on splitting up into smaller and smaller ideas.
+A sub idea could be split up into sub ideas itself. Things might go on and on splitting up into smaller and smaller ideas:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.004.png" height="400" />
 
@@ -44,14 +44,14 @@ But to see the general point of a system, only the top layers may be relevant:
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
-This might make object oriented programming a way to keep overview over a system as it grows. A better split up into ideas may help a design become better understandable, perhaps mainly its general outlines or top layers. A subdivision in objects might be quite a prominent thing in software. So splitting up an idea into sub ideas, something that quite a few people may be able to do, might be quite relevant when programming.
+Like that object oriented programming tends to be a way to keep overview over a system as it grows. A better split up into ideas may make a design easier to understand, perhaps mainly its general outlines or top layers. A subdivision in objects might be quite a prominent thing in software. So splitting up an idea into sub ideas, something that quite a few people may be able to do, might be quite relevant when programming.
 
 Reusing Ideas
 -------------
 
 Dividing up into ideas may lead to *reusability* of ideas. For instance: the idea of a *button* might be reusable. It may be used more than once. If a quite good button were to be programmed, other people might not need to program a button themselves. The same idea may be reused where another button is needed.
 
-Where a button might be used in a system, there may be a separate object:
+Where a button might be used in a system, there could be a separate object:
 
 ![](images/Circle%20Language%20Spec%20Introduction.005.png)
 
