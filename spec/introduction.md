@@ -80,9 +80,10 @@ A button can have a __Set Text__ command for instance, which sets the text to di
 
 ![](images/Circle%20Language%20Spec%20Introduction.009.png)
 
-Other objects can also have a __Set Text__ command. __Set Text__ commands of different objects can be distinguished with the following text notation:
+Other objects than a button might also have a __Set Text__ command. __Set Text__ commands of different objects can be distinguished with the following text notation:
 
-__Button . Set Text__
+__Button . Set Text__  
+__Text Box . Set Text__
 
 A command can consist of sub commands again: separate steps of the command.
 
