@@ -76,7 +76,7 @@ Sub objects can again contain commands:
 
 Software cannot execute without commands. Upon running a command, an object *does something*.
 
-A button can have a __Set Text__ command for instance, which sets the text displayed on a button.
+A button can have a __Set Text__ command for instance, which sets the text displayed.
 
 ![](images/Circle%20Language%20Spec%20Introduction.009.png)
 
