@@ -99,7 +99,7 @@ And these sub commands are then *called* from the super command:
 
 Calling a command has a similar effect as inserting the called command there where it was called.
 
-The __Redraw Button__ command is rather complex. In this command, lines of a button are drawn, a text is drawn and other things that make up the display of a button. It can be built up of steps. __Redraw Button__ can call a __Draw Line__ command a number of times. So sub commands of this __Set Text__ command can themselves be composed of sub commands.
+The __Redraw Button__ command is rather complex. In this command, lines of a button are drawn, a text is drawn and other things that make up the button. It is built up of steps. __Redraw Button__ could call a __Draw Line__ command a number of times. So sub commands of this __Set Text__ command can themselves be composed of sub commands.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.013.jpeg" height="350" />
 
