@@ -29,9 +29,9 @@ One thing might be composed of other things. For that, an object may contain a n
 
 ## Object Reference
 
-Another possibility is that a sub-object may point to another object, that might resides elsewhere in the system. That way an existing object may serve as another object’s sub-object. In that case that sub-object might be considered a link or reference, that could redirect to another object. Such an object reference may also be called a *pointer*.
+Another possibility is a sub-object pointing to another object, that resides elsewhere in the system. That way an existing object may serve as another object’s sub-object. In that case that sub-object might be considered a link or reference, that could redirect to another object. Such an object reference may also be called a *pointer*.
 
-The following picture might show a sub-object that may depict an object reference. It might be pointing to an object elsewhere.
+The following picture tries to show a sub-object that may depict an object reference. It might be pointing to an object elsewhere.
 
 ![](images/Objects.003.png)
 
@@ -43,11 +43,11 @@ Sometimes nothing may yet be filled in for a related object. To display that in 
 
 ![](images/Objects.004.png)
 
-An object reference may then be *Nothing* or *null*. Shapes other than circles might also be given a cross drawn inside it, to indicate it is empty.
+An object reference may then be *Nothing* or *null*. Shapes *other* than circles might also be given a cross drawn inside it, to indicate it is empty.
 
 ## Multiplicity
 
-A simplified description of multiplicity may be that it is the distinction between single and multiple. A related object might be a single object, but objects may also be part of a list.
+A simplified description of multiplicity may be that it is the distinction between *single* and *multiple*. A related object might be a *single* object, but objects may also be part of a *list*.
 
 A single related object might hold a reference to one object. But the reference may not be filled in yet. Then it might point to no object at all. Therefore, it may be said that it might have a multiplicity of between 0 and 1. But for short it could be called multiplicity 1. A list may contain zero or more objects. In that case the multiplicity might be between 0 and n. For short it may be called just n.
 
@@ -55,7 +55,7 @@ In case of a single item this might be displayed in a diagram as a circle:
 
 ![](images/Objects.005.png)
 
-In case of a *list* this may be displayed in a diagram as a nonagon:
+In case of a *list* this may be displayed in a diagram as a 'nonagon':
 
 ![](images/Objects.006.png)
 
@@ -63,6 +63,6 @@ List items might be placed inside the nonagon again:
 
 ![](images/Objects.007.png)
 
-It could be that the list is given a name, while its individual items may remain nameless.
+It may be an option to give the list a name, while its individual items may remain nameless.
 
 [back](../../)
