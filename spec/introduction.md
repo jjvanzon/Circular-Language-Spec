@@ -49,7 +49,7 @@ This makes object oriented programming a nice way to keep overview over a system
 Reusing Ideas
 -------------
 
-Dividing up into ideas can lead to *reusability* of ideas. For instance: the idea of a *button* is reusable. It can be used more than once. If a good button were programmed, other people may not need to program another button again. The same idea can be reused everywhere a button is needed.
+Dividing up into ideas can lead to *reusability* of ideas. For instance: the idea of a *button* is reusable. If a good button were programmed, other people may not need to program another button again. The same idea can be reused everywhere a button is needed.
 
 Any place a button is used in a system, there is a separate object:
 
