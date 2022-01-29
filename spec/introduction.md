@@ -116,7 +116,7 @@ But it does not seem to be necessary to see all those details, to understand wha
 Command Parameters
 ------------------
 
-Commands can have *parameters*. Those are like instructions passed along with a command that make a command behave differently. The __Button . Set Text__ command for instance, has a __Text__ parameter, which indicates what the new text of a button will become.
+Commands can have *parameters*. Those are like instructions passed along with a command that make a command behave differently. The __Button . Set Text__ command for instance, has a __Text__ parameter, which indicates what the text of a button will become.
 
 __Text__ is an *idea*. It is an *object*. It is usually *objects* that serve as parameters.
 
