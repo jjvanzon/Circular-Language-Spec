@@ -163,7 +163,7 @@ Where to start, when reading a diagram like that?
 
 One option is to first read its containment structure, by starting at the largest container, and then looking at the smaller ones. After that, relationships made by the connecting lines is something that might be looked at.
 
-Starting with the largest container might not always be preferred. One symbol might be highlighted. Then this symbol is what the diagram is about. The focus would be on aspects of the highlighted symbol. Then start there and look around.
+Starting with the largest container may not always be preferred. One symbol might be highlighted. Then this symbol is what the diagram is about. The focus would be on aspects of the highlighted symbol. Then start there and look around.
 
 There is probably no one way of doing it.
 
