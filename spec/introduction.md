@@ -103,7 +103,7 @@ The __Redraw Button__ command is rather complex. In this command, lines of a but
 
 <img src="images/Circle%20Language%20Spec%20Introduction.013.jpeg" height="350" />
 
-Here it becomes apparent, that separately defining a command can lead to *reuse* of a command. The __Draw Line__ command is reused three times in the example above. There are quite a few commands available, ready to use one way or another. Commands like that can also reside inside in a separate object. There can for instance be a __File__ object that contains commands that make it possible to deal with a computer file.
+Here it becomes apparent, that separately defining a command can lead to *reuse* of a command. The __Draw Line__ command is reused three times in the example above. There are quite a few commands available, ready to use one way or another. Commands like that can also reside inside in a separate object. A __File__ object for instance can contain commands that make it possible to deal with a computer file.
 
 So where will this end? If commands continue to delegate to each other, when do things actually start happening? Well, it seems to end at a special group of commands, that do not call other commands anymore. A command like that executes a machine instruction: a basic instruction that make a computer *do* something. A computer's central processing unit performs a hardware defined *machine* command.
 
