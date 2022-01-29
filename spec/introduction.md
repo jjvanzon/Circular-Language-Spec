@@ -161,7 +161,7 @@ Where to start, when reading a diagram like that?
 
 <img src="images/Circle%20Language%20Spec%20Introduction.018.jpeg" width="400" />
 
-One option is to first read its containment structure, by starting at the largest container, and then looking at the smaller ones. After that relationships made by the connecting lines is something that might be looked at.
+One option is to first read its containment structure, by starting at the largest container, and then looking at the smaller ones. After that, relationships made by the connecting lines is something that might be looked at.
 
 Starting with the largest container is not always preferred. One symbol might be highlighted. Then this symbol is what the diagram is about. The focus would be on aspects of the highlighted symbol. Then start there and look around.
 
