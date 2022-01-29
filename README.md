@@ -12,7 +12,7 @@ You may find the following sections here:
 
     - Draft texts, that might once describe a story: ideas about how this Circular language might be used in practice.
 
-- [Construct Drafts](constructs-drafts)
+- [Construct Drafts](construct-drafts)
 
     - It may contain drafts of ideas that might not become part of the spec. Or language constructs that are just not as clearly worked out yet. Best not to expect too much from this content.
 
