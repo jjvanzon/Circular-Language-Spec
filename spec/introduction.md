@@ -146,11 +146,11 @@ Objects have a similar ability. An object can have separate interfaces. Interfac
 
 <img src="images/Circle%20Language%20Spec%20Introduction.018.jpeg" width="400" />
 
-Interfaces are distinguished here by triangles.
+Interfaces are distinguished here by *triangles*.
 
-The employee here is an advisor to a customer and to another employee a coworker. Another object that refers to the employee can decide which interface is used, or sometimes only one specific interface is available within a certain context. An object can also just have one interface, the same one for everybody.
+The employee here is an advisor to a customer and to another employee a coworker. Another object that refers to the employee can decide which interface is used. Or sometimes only one specific interface is available within a certain context. An object can also just have one interface, the same one for everybody.
 
-Triangles can be considered sub objects too. One of the differences with circles is that triangles sort of melt together with their container.
+Triangles can be seen as sub objects too. One of the differences with circles is that triangles sort of melt together with their container.
 
 Triangles are a way to give different types shared characteristics. Though 'normal' sub-objects can do that too.
 
