@@ -137,7 +137,7 @@ Calling a command of the __Text__ parameter:
 
 Interfaces
 ----------
-
+ 
 Another capability of objects is that they can have different interfaces.
 
 Try to consider how an employee looks to a customer and how to a coworker. The employee will do certain things for a coworker and other things for a customer. The employee has two *interfaces*. It depends on the party referring to the employee, which interface the employee has. Even though both parties are referring to the same person, this person does different things for them.
