@@ -12,7 +12,7 @@ __Contents__
 - [Object Reference](#object-reference)
 - [Nothing](#nothing)
 - [Multiplicity](#multiplicity)
-    - [Reference to Parent](#reference-to-parent)
+- [Reference to Parent](#reference-to-parent)
 
 ## Introduction
 
@@ -66,7 +66,7 @@ List items might be placed inside the nonagon again:
 
 It may be an option to give the list a name, while its individual items may remain nameless.
 
-### Reference to Parent
+## Reference to Parent
 
 This may be an edge-case in object relationships: a *child* referencing a *parent*:
 
