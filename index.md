@@ -19,4 +19,4 @@ This is an attempt at a specification of this language.
 
 The more finished up articles might be found on these web pages.  
 Drafts might be found in the [GitHub repository](https://github.com/jjvanzon/Circular-Language-Spec).  
-Articles may gradually be published on this web site.
+Articles may gradually be published to this web site.
