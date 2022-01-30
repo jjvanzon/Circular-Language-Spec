@@ -14,7 +14,8 @@ __Contents__
 - [Multiplicity](#multiplicity)
 - [Reference to Parent](#reference-to-parent)
 
-## Introduction
+Introduction
+------------
 
 In object oriented programming, an *object* might be considered the most basic element of a computer program. An object may represent a thing, an idea or a place, a number or a collection of other things or possibly anything else. All those things might be called objects.
 
@@ -22,13 +23,15 @@ An object in a diagram may be represented by a circle:
 
 ![](images/Objects.001.png)
 
-## Sub-Objects
+Sub-Objects
+-----------
 
 One thing might be composed of other things. For that, an object may contain a number of *sub-objects*. This might be drawn out in a diagram as circles inside another circle.
 
 ![](images/Objects.002.png)
 
-## Object Reference
+Object Reference
+----------------
 
 Another possibility is a sub-object pointing to another object, that resides elsewhere in the system. That way an existing object may serve as another object’s sub-object. In that case that sub-object might be considered a link or reference, that could redirect to another object. Such an object reference may also be called a *pointer*.
 
@@ -38,7 +41,8 @@ The following picture tries to show a sub-object that may depict an object refer
 
 That sub-object's symbol may be given a line here, connected to the symbol that might represent the actual object, which may reside outside the parent object. Sub-object __A__ might be a reference to object __B__. It may be a notational choice, that the direction might point outwards.
 
-## Nothing
+Nothing
+-------
 
 Sometimes nothing may yet be filled in for a related object. To display that in the diagram a cross might be placed inside the shape:
 
@@ -46,7 +50,8 @@ Sometimes nothing may yet be filled in for a related object. To display that in 
 
 An object reference may then be *Nothing* or *null*. Shapes *other* than circles might also be given a cross drawn inside it, to indicate it is empty.
 
-## Multiplicity
+Multiplicity
+------------
 
 A simplified description of multiplicity may be that it is the distinction between *single* and *multiple*. A related object might be a *single* object, but objects may also be part of a *list*.
 
@@ -66,7 +71,8 @@ List items might be placed inside the nonagon again:
 
 It may be an option to give the list a name, while its individual items may remain nameless.
 
-## Reference to Parent
+Reference to Parent
+-------------------
 
 This may be an edge-case in object relationships: a *child* referencing a *parent*:
 
