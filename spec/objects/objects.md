@@ -66,7 +66,7 @@ Multiplicity can be thought of as the distinction between *single* and *multiple
 
 ![](images/Objects.005.png)
 
-But in case of a *list* a *nonagon* can be used:
+But for a *list* a *nonagon* can be used:
 
 ![](images/Objects.006.png)
 
