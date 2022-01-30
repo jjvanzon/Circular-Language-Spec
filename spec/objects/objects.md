@@ -17,7 +17,7 @@ __Contents__
 Introduction
 ------------
 
-In object oriented programming, an *object* might be considered the most basic element of a computer program. An object can represent a thing, an idea or a place, a number or a collection of other things or anything else. All those things may be called objects.
+In object oriented programming, the *object* might be considered the most basic element of a computer program. An object can represent a thing, an idea or a place, a number or a collection of other things or anything else. All those things could be called objects.
 
 An *object* in Circular is represented by a *circle:*
 
@@ -26,22 +26,20 @@ An *object* in Circular is represented by a *circle:*
 Sub-Objects
 -----------
 
-One thing can be composed of other things. For that, an object may contain a number of *sub-objects*. This would drawn out in Circular as circles inside another circle:
+One thing can be composed of other things. For that, an object may contain a number of *sub-objects*. This would drawn out in Circular as *circles* inside another *circle*:
 
 ![](images/Objects.002.png)
 
 Object Reference
 ----------------
 
-A sub-object can point to another object, residing elsewhere in the system. That way an existing object serves as another object’s sub-object. That sub-object is considered a link or reference, redirecting to another object.
-
-The following picture shows a sub-object that has an object reference. It points to an object elsewhere:
+A sub-object can point to another object, residing elsewhere in the system. That sub-object is considered a link, redirecting to another object.
 
 ![](images/Objects.003.png)
 
-Sub-object __A__ is a reference to object __B__. Sub-object's symbol __A__ has a line, connecting to the object __B__, that resides outside the __Parent__ object.
+The sub-object __A__ has a *line*, making it a reference, connecting to the object __B__, residing outside the __Parent__ object.
 
-The direction of a line tends to point outwards, as a notational choice in Circular.
+The direction of a line tends to point *outwards*, as a notational choice in Circular.
 
 Reference to Parent
 -------------------
