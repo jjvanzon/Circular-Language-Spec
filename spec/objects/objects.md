@@ -60,7 +60,7 @@ Sometimes nothing is filled in for a related object. To display that in the diag
 Multiplicity
 ------------
 
-Multiplicity can be thought of as the distinction between *single* and *multiple*. A related object can be a *single* object, but objects may also be part of a *list*.
+Multiplicity can be thought of as the distinction between *single* and *multiple*. A related object can be a *single* object, but sometimes may be part of a *list*.
 
 *Single* is primarily displayed in a diagram as a *circle:*
 
