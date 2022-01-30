@@ -26,7 +26,7 @@ An *object* in Circular is represented by a *circle:*
 Sub-Objects
 -----------
 
-One thing can be composed of other things. For that, an object may contain a number of *sub-objects*. This is drawn out in Circular as *circles* inside another *circle*:
+One thing can be composed of other things. For that, an object may contain a number of *sub-objects*. This is drawn out in Circular as *circles* inside another *circle:*
 
 ![](images/Objects.002.png)
 
