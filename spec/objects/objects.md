@@ -44,7 +44,7 @@ The direction of a line tends to point *outwards*.
 Reference to Parent
 -------------------
 
-This may be an edge-case in object relationships: a *child* referencing a *parent*:
+This may be an edge-case in object relationships: a *child* referencing a *parent:*
 
 ![](images/reference-to-parent.png)
 
