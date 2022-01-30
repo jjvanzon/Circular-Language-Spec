@@ -33,7 +33,7 @@ One thing can be composed of other things. For that, an object may contain a num
 Object Reference
 ----------------
 
-A sub-object can point to another object, residing elsewhere in the system. That sub-object is considered a link, redirecting to another object.
+A sub-object can point to another object, residing elsewhere in the system. That sub-object is considered a link, redirecting to another object:
 
 ![](images/Objects.003.png)
 
