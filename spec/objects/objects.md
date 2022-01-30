@@ -53,7 +53,7 @@ The picture shows a child __B__, having an object reference in it, pointing to i
 Nothing
 -------
 
-Sometimes nothing is filled in for a related object. To display that in the diagram a cross is placed inside a shape:
+Sometimes nothing is filled in for a related object. To display that in the diagram a *cross* is placed inside a shape:
 
 ![](images/Objects.004.png)
 
@@ -62,19 +62,19 @@ Multiplicity
 
 Multiplicity can be thought of as the distinction between *single* and *multiple*. A related object can be a *single* object, but objects may also be part of a *list*.
 
-*Single* is primarily displayed in a diagram as a *circle*:
+*Single* is primarily displayed in a diagram as a *circle:*
 
 ![](images/Objects.005.png)
 
-But in case of a *list* a *'nonagon'* is used:
+But in case of a *list* a *'nonagon'* might be used:
 
 ![](images/Objects.006.png)
 
-List items would be placed inside the nonagon again, as circles:
+List items would be placed inside the nonagon again:
 
 ![](images/Objects.007.png)
 
-A list can be given a name, while its individual items may remain nameless:
+A list can be given a *name*, while its individual items may remain nameless:
 
 ![](images/list-named-with-3-items.png)
 
