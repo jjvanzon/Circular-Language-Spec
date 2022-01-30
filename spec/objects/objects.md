@@ -62,11 +62,11 @@ Multiplicity
 
 Multiplicity can be thought of as the distinction between *single* and *multiple*. A related object can be a *single* object, but sometimes may be part of a *list*.
 
-*Single* is primarily displayed in a diagram as a *circle:*
+*Single* is primarily displayed as a *circle:*
 
 ![](images/Objects.005.png)
 
-But in case of a *list* a *nonagon* might be used:
+But in case of a *list* a *nonagon* can be used:
 
 ![](images/Objects.006.png)
 
