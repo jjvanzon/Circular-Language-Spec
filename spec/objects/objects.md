@@ -39,7 +39,7 @@ A sub-object can point to another object, residing elsewhere in the system. That
 
 The sub-object __A__ has a *line*, making it a reference, connecting to the object __B__, residing outside the __Parent__ object.
 
-The direction of a line tends to point *outwards*, as a notational choice in Circular.
+The direction of a line tends to point *outwards*.
 
 Reference to Parent
 -------------------
