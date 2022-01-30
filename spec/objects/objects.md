@@ -13,6 +13,7 @@ __Contents__
 - [Reference to Parent](#reference-to-parent)
 - [Nothing](#nothing)
 - [Multiplicity](#multiplicity)
+- [Conclusion](#conclusion)
 
 Introduction
 ------------
@@ -79,3 +80,8 @@ A list can be given a *name*, while its individual items may remain nameless:
 ![](images/list-named-with-3-items.png)
 
 [back](../../)
+
+Conclusion
+----------
+
+This concludes a summary the basics of objects in the Circular language.
