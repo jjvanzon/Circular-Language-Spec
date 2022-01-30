@@ -48,7 +48,7 @@ This may be an edge-case in object relationships: a *child* referencing a *paren
 
 ![](images/reference-to-parent.png)
 
-The picture shows a child __B__, having an object reference in it, pointing to its parent __A__. It might look a bit unusual compared to the object reference notation introduced earlier, so it seemed to deserve some separate attention.
+The picture shows a child __B__, having an *object reference* in it, pointing to its parent __A__. It might look a bit unusual compared to the object reference notation introduced earlier, so it seemed to deserve some separate attention.
 
 Nothing
 -------
