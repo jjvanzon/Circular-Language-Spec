@@ -74,6 +74,8 @@ List items might be placed inside the nonagon again, as circles:
 
 ![](images/Objects.007.png)
 
-It may be an option to give the list a name, while its individual items may remain nameless.
+It may be an option to give the list a name, while its individual items may remain nameless:
+
+![](images/list-named-with-3-items.png)
 
 [back](../../)
