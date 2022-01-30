@@ -82,6 +82,6 @@ A list can be given a *name*, while its individual items may remain nameless:
 Conclusion
 ----------
 
-This concludes a summary the basics of *objects* in the Circular language.
+This concludes the main ideas behind *objects* in the Circular programming language.
 
 [back](../../)
