@@ -12,6 +12,7 @@ __Contents__
 - [Object Reference](#object-reference)
 - [Nothing](#nothing)
 - [Multiplicity](#multiplicity)
+    - [Reference to Parent](#reference-to-parent)
 
 ## Introduction
 
@@ -64,5 +65,13 @@ List items might be placed inside the nonagon again:
 ![](images/Objects.007.png)
 
 It may be an option to give the list a name, while its individual items may remain nameless.
+
+### Reference to Parent
+
+This may be an edge-case in object relationships: a *child* referencing a *parent*:
+
+![](images/reference-to-parent.png)
+
+The picture shows a child __B__ having an object reference in it, pointing to its parent __A__. It may look a bit unusual compared to the object reference notation introduced earlier, so it seems to deserve some separate attention.
 
 [back](../../)
