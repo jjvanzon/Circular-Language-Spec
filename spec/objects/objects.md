@@ -48,7 +48,7 @@ This may be an edge-case in object relationships: a *child* referencing a *paren
 
 ![](images/reference-to-parent.png)
 
-The picture shows a child __B__ having an object reference in it, pointing to its parent __A__. It may look a bit unusual compared to the object reference notation introduced earlier, so it seems to deserve some separate attention.
+The picture shows a child __B__, having an object reference in it, pointing to its parent __A__. It may look a bit unusual compared to the object reference notation introduced earlier, so it seemed to deserve some separate attention.
 
 Nothing
 -------
@@ -57,22 +57,20 @@ Sometimes nothing may yet be filled in for a related object. To display that in 
 
 ![](images/Objects.004.png)
 
-An object reference may then be *Nothing* or *null*.
-
 Multiplicity
 ------------
 
-A simplified description of multiplicity may be that it is the distinction between *single* and *multiple*. A related object might be a *single* object, but objects may also be part of a *list*.
+Multiplicity may be the distinction between *single* and *multiple*. A related object might be a *single* object, but objects may also be part of a *list*.
 
-*Single* may be displayed in a diagram as a circle:
+*Single* may be displayed in a diagram as a *circle*:
 
 ![](images/Objects.005.png)
 
-In case of a *list* this may be displayed in a diagram as a 'nonagon':
+In case of a *list* this may be displayed in a diagram as a *'nonagon'*:
 
 ![](images/Objects.006.png)
 
-List items might be placed inside the nonagon again:
+List items might be placed inside the nonagon again, as circles:
 
 ![](images/Objects.007.png)
 

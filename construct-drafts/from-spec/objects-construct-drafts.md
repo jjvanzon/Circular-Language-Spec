@@ -12,6 +12,9 @@ Such an object reference may also be called a *pointer*.
 Nothing
 -------
 
+`<< terminology>>`  
+An object reference may then be *Nothing* or *null*.
+
 `<< detail >>`  
 Shapes *other* than circles might also be given a cross drawn inside it, to indicate it is empty.
 
