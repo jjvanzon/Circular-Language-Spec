@@ -70,7 +70,7 @@ But for a *list* a *nonagon* can be used:
 
 ![](images/Objects.006.png)
 
-List items would be placed inside the nonagon again:
+List items could be placed inside the nonagon again:
 
 ![](images/Objects.007.png)
 
