@@ -1,7 +1,7 @@
 Construct Drafts | From Spec | Introduction Construct Drafts
 ============================================================
 
-`[ Draft ]`
+`[ Deprecated ]`
 
 Introduction
 ------------
