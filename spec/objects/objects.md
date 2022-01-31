@@ -61,9 +61,9 @@ Sometimes nothing is filled in for a related object. To display that in the diag
 Multiplicity
 ------------
 
-Multiplicity can be thought of as the distinction between *single* and *multiple*. A related object can be a *single* object, but sometimes may be part of a *list*.
+Multiplicity can be thought of as the distinction between *single* and *multiple*. A related object can be a *single* object, but sometimes it may be part of a *list*.
 
-*Single* is primarily displayed as a *circle:*
+The concept of *single* is primarily displayed as a *circle:*
 
 ![](images/Objects.005.png)
 
@@ -82,6 +82,6 @@ A list can be given a *name*, while its individual items may remain nameless:
 Conclusion
 ----------
 
-So far the introduction on different situations that may occur when programming with *objects* and how they might be expressed inside the Circular language.
+So far, the introduction on different situations, that may occur when programming with *objects* and how they are expressed inside the Circular language.
 
 [back](../../)
