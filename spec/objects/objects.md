@@ -18,7 +18,7 @@ __Contents__
 Introduction
 ------------
 
-In object oriented programming, the *object* might be considered the most basic element of a computer program. An object can represent a thing, an idea or a place, a number or a collection of other things or anything else. All those things could be called *objects*.
+In object oriented programming, the *object* might be considered the most basic element of a computer program. An object can represent a thing, an idea or a place, a number or a collection of other things or anything else.
 
 An *object* in Circular is represented by a *circle:*
 
