@@ -1,4 +1,6 @@
-﻿Objects
+﻿<img src="images/Objects.002.png" width="180" />
+
+Objects
 =======
 
 *JJ van Zon, 2021*
