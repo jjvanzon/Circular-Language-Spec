@@ -56,7 +56,7 @@ The picture shows a child __B__, having an *object reference* in it, pointing to
 Nothing
 -------
 
-Sometimes nothing is filled in for a related object. To display that in the diagram a *cross* can be placed inside a shape:
+Sometimes nothing is filled in for a related object. To display that in a diagram a *cross* can be placed inside a shape:
 
 ![](images/Objects.004.png)
 
