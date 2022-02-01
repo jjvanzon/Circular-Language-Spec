@@ -1,4 +1,4 @@
-﻿<img src="images/objects-banner.png" width="600" />
+﻿<img src="images/objects-banner.png" width="700" />
 
 Objects
 =======
