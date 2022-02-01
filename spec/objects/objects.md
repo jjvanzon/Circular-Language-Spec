@@ -20,7 +20,7 @@ __Contents__
 Introduction
 ------------
 
-In object oriented programming, the *object* might be considered the most basic element of a computer program. An object can represent a thing, an idea or a place, a number or a collection of other things or anything else.
+In object oriented programming, the *object* is one of the basic elements of a computer program. An object can represent a thing, an idea or a place, a number or a collection of other things or anything else.
 
 An *object* in Circular is represented by a *circle:*
 
@@ -56,7 +56,7 @@ The picture shows a child __B__, having an *object reference* in it, pointing to
 Nothing
 -------
 
-Sometimes nothing is filled in for a related object. To display that in the diagram a *cross* may be placed inside a shape:
+Sometimes nothing is filled in for a related object. To display that in the diagram a *cross* can be placed inside a shape:
 
 ![](images/Objects.004.png)
 
