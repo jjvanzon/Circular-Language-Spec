@@ -1,7 +1,7 @@
-﻿Objects
-=======
+﻿<img src="images/objects-banner.png" width="700" />
 
-<img src="images/objects-banner.png" width="700" />
+Objects
+=======
 
 *JJ van Zon, 2021*
 
