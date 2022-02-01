@@ -20,7 +20,7 @@ __Contents__
 Introduction
 ------------
 
-In object oriented programming, an *object* may be one of the most basic elements of a computer program. An object can represent a thing, an idea or a place, a number or a collection of other things or anything else.
+In object oriented programming, the *object* may be one of the most basic elements of a computer program. An object can represent a thing, an idea or a place, a number or a collection of other things or anything else.
 
 An *object* in Circular is represented by a *circle:*
 
@@ -42,7 +42,7 @@ A sub-object can point to another object, residing elsewhere in the system. That
 
 The sub-object __A__ has a *line*, making it a reference, connecting to the object __B__, residing outside the __Parent__ object.
 
-The direction of a line tends to point *outwards*.
+A line like that tends to point *outwards*.
 
 Reference to Parent
 -------------------
