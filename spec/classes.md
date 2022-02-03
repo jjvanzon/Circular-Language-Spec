@@ -16,7 +16,7 @@ __Contents__
 - [Object Reference without a Class](#object-reference-without-a-class)
 - [No Class != Defines its own Class?](#no-class--defines-its-own-class)
 - [Object Reference might define its Own Class?](#object-reference-might-define-its-own-class)
-- [Shape Both Dashed and Solid](#shape-both-dashed-and-solid)
+- [Dashed Shape](#dashed-shape)
 - [Conclusion](#conclusion)
 
 ## Introduction
@@ -29,7 +29,10 @@ But an object might also select another object to serve as its *class* or *proto
 
 <img src="images/Classes.002.png" width="200" />
 
-What a *class* means may be explained later. The object on the left might point at its class on the right. The dashed line between the circles might express pointing out a *class*. The one circle's being dashed might be optional.
+`<< vague >>`  
+What a *class* means may be explained later.
+
+The object on the left might point at its class on the right. The dashed line between the circles might express pointing out a *class*. The one circle's being dashed might be optional.
 
 When an object might have a class, the contents of that object may not be arbitrary:
 
@@ -50,6 +53,8 @@ An object may have a similar *structure* as its class, but may have *data* that 
 While the structure of the larger circle at the left might be similar to the contents of the class on the right, the data appears to have changed.
 
 ## Class Redirection
+
+`<< repetition >>`
 
 In these diagrams an object might be used as a class or prototype for another object. That may be expressed in a diagram by connecting an object symbol to its class with a dashed line:
 
@@ -143,23 +148,14 @@ Instead of a 'stuck on itself' situation, it may be seen as an indication that s
 
 <img src="images/Classes.015.png" width="200" />
 
-## Shape Both Dashed and Solid
+## Dashed Shape
 
-It may be an idea that if a symbol serves as another object’s class, but also might be referenced like an object, the symbol might get a double border to maybe indicate its dual role as both an object and a class.
-
-<img src="images/Classes.017.png" width="200" />
-
-But there might be different ideas about this. The top reference in the previous picture seems to be a reference to a class, so it might be replaced by a dashed circle:
-
-<img src="images/Classes.018.png" width="200" />
-
-But perhaps the doubly bordered shape on the right might appropriately be be drawn with a dashed border after all, since its role seems to be a class.
+When a shape is used as a *class*, it might be drawn with a *dashed* border.
+In *Circular* a class may also be referenced as an *object*.
 
 <img src="images/Classes.019.png" width="200" />
 
-Then it looks like it might make sense to draw the double-bordered shape with just a dashed border.
-
-The optional nature of the dashed shapes seems to leave things open to discussion.
+Drawing a shape with a dashed border, might be optional though.
 
 ## Conclusion
 
