@@ -10,7 +10,6 @@ __Contents__
 - [Introduction](#introduction)
 - [Optional Dashed Shape](#optional-dashed-shape)
 - [More Dashed Shapes](#more-dashed-shapes)
-- [Using an Object as a Class](#using-an-object-as-a-class)
 - [Using a Class Like an Object](#using-a-class-like-an-object)
 - [Object Reference with a Class](#object-reference-with-a-class)
 - [Object Reference without a Class](#object-reference-without-a-class)
@@ -63,7 +62,7 @@ A *class circle*'s being *dashed* might be *optional*. Here is an alternative wh
 
 <img src="images/Classes.006.png" width="200" />
 
-This means that the notation is open to any object's being used as another object's class or prototype.
+This means that the Circular notation might be open for objects to serve as a class or prototype for another object.
 
 ## More Dashed Shapes
 
@@ -72,22 +71,6 @@ Other parts of the static (or 'class') structure might be drawn with dashed line
 <img src="images/Classes.009.png" width="200" />
 
 The rules do not seem to be that precise when it comes to shapes drawn with different line styles. The rules for pointing lines might be a bit stricter: dashed might point out a class.
-
-## Using an Object as a Class
-
-Perhaps it might be familiar that an object might be stable in its role as a prototype or class. Dashed shape notation might be helpful as more specific in meaning: to indicate that it might just be a class.
-
-To express an object's stable role as a class, a dashed line might be used to draw its symbol:
-
-<img src="images/Classes.010.png" width="100" />
-
-Here is a picture that might include an object circle with a class redirection:
-
-<img src="images/Classes.008.png" width="200" />
-
-But the Circular notation itself might include objects to serve as a class or prototype for another object:
-
-<img src="images/Classes.011.png" width="200" />
 
 ## Using a Class Like an Object
 
