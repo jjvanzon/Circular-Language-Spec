@@ -43,9 +43,9 @@ When an object has a class, the contents of that object may not be so arbitrary:
 
 The object on the left has similar contents as the class on the right. At first an object seems to contain related items and related lists that roughly correspond with the class. The object might also have a similar set of commands as the class.
 
-An object's behavior during its lifetime might be guided by rules set by this class. A class might be like a special object, that aims to describe characteristics and behavior of other objects.
+An object's behavior during its lifetime might be guided by rules set by its class. A class might be like a special object, that aims to describe characteristics and behavior of other objects.
 
-Initially an object may look the same as its class. Changeable parts of an object might initially be set to what is drawn out in the class:
+Initially an object may look the same as its class. Changeable parts of an object might initially be set to what is found in the class:
 
 <img src="images/Classes.004.png" width="200" />
 
@@ -57,7 +57,7 @@ While the structure of the larger circle at the left might be similar to the con
 
 ## Optional Dashed Shape
 
-A *class circle*'s being *dashed* might be *optional*. Here is an alternative where the class symbol on the right is drawn with a solid line:
+A *class circle's* being *dashed* might be *optional*. Here is an alternative where the class symbol on the right is drawn with a solid line:
 
 <img src="images/Classes.006.png" width="200" />
 
@@ -69,7 +69,7 @@ Other parts of the static (or 'class') structure might be drawn with dashed line
 
 <img src="images/Classes.009.png" width="200" />
 
-The rules do not seem to be that precise when it comes to shapes drawn with different line styles. The rules for pointing lines might be a bit stricter: dashed might point out a class.
+The rules do not seem to be that precise when it comes to shapes drawn with different line styles. The rules for connecting lines might be a bit stricter: a dashed line points out a class.
 
 ## Using a Class Like an Object
 
@@ -79,19 +79,17 @@ With object references to a class, a type might be referenced like an object.
 
 That *solid* line in the middle means it is an *object reference*.
 
-Or maybe an object reference to a class should be expressed with a dashed shape too:
+Perhaps it will look neater if the *object reference to a class* is expressed with a *dashed shape* too:
 
 <img src="images/Classes.013.png" width="200" />
 
-Perhaps that will look neater.
-
 ## Object Reference with a Class
 
-Similar to an *object* having a class, an *object reference* might also have a class. Then merely objects of that class may be referenced.
+Similar to an *object* having a class, an *object reference* might have a class. Then merely objects of that class may be referenced.
 
 <img src="images/Classes.014.png" width="200" />
 
-The object reference on the left points out its class on the right. The object at the bottom also points out its class on the right. The solid line of the object reference is valid, since it the object it points out, has the same class.
+The object reference on the left points out its class on the right. The object at the bottom also points out its class on the right. The solid line of the object reference is valid, because the object and the object reference have the same class.
 
 ## Object Reference without a Class
 
@@ -99,7 +97,7 @@ When an object reference does not have a class, this suggests the possibility to
 
 <img src="images/Classes.015.png" width="200" />
 
-The 'untyped' object reference at the top-left might point to an object of any class. It points to an object at the bottom, which has a class, that the'untyped' object reference did not specifically refer to.
+The 'untyped' object reference at the top-left might point to an object of any class. It points to an object at the bottom, which has a class, that the 'untyped' object reference did not specifically points out.
 
 An interpretation might be that an 'untyped' object reference could take on the class of an object it may point to. So indirectly it might have a class.
 
@@ -107,7 +105,7 @@ An interpretation might be that an 'untyped' object reference could take on the 
 
 Something might have been unclear at one point. The notation seems to allow objects to be usable as classes. It may be tempting to think that an object *without* a class defines *its* *own* class. It might be handy to not think of it that way, but think of it as object without a class simply not having a class. Having no class might suggest some things are arbitrary.
 
-There may be examples where this may look like a helpful concept.
+There may be examples where this could be a helpful concept.
 
 ### Object Reference Defining its Own Class?
 
