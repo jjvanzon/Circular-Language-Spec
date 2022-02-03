@@ -20,3 +20,14 @@ But perhaps the doubly bordered shape on the right might appropriately be be dra
 Then it looks like it might make sense to draw the double-bordered shape with just a dashed border.
 
 The optional nature of the dashed shapes seems to leave things open to discussion.
+
+## Dashed Shape
+
+`<< repeated >>`
+
+When a shape is used as a *class*, it might be drawn with a *dashed* border.
+In *Circular* a class may also be referenced as an *object*.
+
+<img src="images/Classes.019.png" width="200" />
+
+Drawing a shape with a dashed border, might be optional though.

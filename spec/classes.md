@@ -15,7 +15,6 @@ __Contents__
 - [Object Reference without a Class](#object-reference-without-a-class)
 - [No Class != Defines its own Class](#no-class--defines-its-own-class)
 - [Object Reference might define its Own Class?](#object-reference-might-define-its-own-class)
-- [Dashed Shape](#dashed-shape)
 - [Conclusion](#conclusion)
 
 ## Introduction
@@ -117,15 +116,6 @@ There may be other examples, but it might be unfortunate to think of an *object 
 Instead of a 'stuck on itself' situation, it may be seen as an indication that something might be *arbitrary*.
 
 <img src="images/Classes.015.png" width="200" />
-
-## Dashed Shape
-
-When a shape is used as a *class*, it might be drawn with a *dashed* border.
-In *Circular* a class may also be referenced as an *object*.
-
-<img src="images/Classes.019.png" width="200" />
-
-Drawing a shape with a dashed border, might be optional though.
 
 ## Conclusion
 
