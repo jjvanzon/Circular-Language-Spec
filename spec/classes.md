@@ -8,6 +8,7 @@
 __Contents__
 
 - [Introduction](#introduction)
+- [Optional Dashed Shape](#optional-dashed-shape)
 - [Class Redirection](#class-redirection)
 - [Using Dashed Shapes](#using-dashed-shapes)
 - [Using an Object as a Class](#using-an-object-as-a-class)
@@ -29,13 +30,15 @@ But an object might also select another object to serve as its *class* or *proto
 
 <img src="images/Classes.002.png" width="200" />
 
-Then the contents of an object might not be so arbitrary.
+The *object* on the left points at its *class* on the right.
 
-The *object* on the left points at its *class* on the right. The *dashed line* between the circles expresses pointing out a *class*.
+The *dashed line* between the circles expresses pointing out a *class:*
 
-The one circle's being *dashed* might be *optional*. Here is an alternative where the class on the right is drawn with a solid line:
+<img src="images/dashed-line.png" width="130" />
 
-<img src="images/Classes.006.png" width="200" />
+*Classes* may be drawn as *circles* with a *dashed border:*
+
+<img src="images/dashed-circle.png" width="70" />
 
 When an object has a class, the contents of that object may not be so arbitrary:
 
@@ -54,6 +57,12 @@ An object may have a similar *structure* as its class, but may have *data* that 
 <img src="images/Classes.005.png" width="200" />
 
 While the structure of the larger circle at the left might be similar to the contents of the class on the right, the data appears to have changed.
+
+## Optional Dashed Shape
+
+A *class circle*'s being *dashed* might be *optional*. Here is an alternative where the class symbol on the right is drawn with a solid line:
+
+<img src="images/Classes.006.png" width="200" />
 
 ## Class Redirection
 
