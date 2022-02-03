@@ -9,8 +9,7 @@ __Contents__
 
 - [Introduction](#introduction)
 - [Optional Dashed Shape](#optional-dashed-shape)
-- [Class Redirection](#class-redirection)
-- [Using Dashed Shapes](#using-dashed-shapes)
+- [More Dashed Shapes](#more-dashed-shapes)
 - [Using an Object as a Class](#using-an-object-as-a-class)
 - [Using a Class Like an Object](#using-a-class-like-an-object)
 - [Object Reference with a Class](#object-reference-with-a-class)
@@ -64,33 +63,9 @@ A *class circle*'s being *dashed* might be *optional*. Here is an alternative wh
 
 <img src="images/Classes.006.png" width="200" />
 
-## Class Redirection
+This means that the notation is open to any object's being used as another object's class or prototype.
 
-`<< repetition >>`
-
-In these diagrams an object might be used as a class or prototype for another object. That may be expressed in a diagram by connecting an object symbol to its class with a dashed line:
-
-<img src="images/Classes.006.png" width="200" />
-
-The object on the left might have the class on the right. An object’s pointing out its class, could be called *class redirection*. The usage of the dashed line might have a meaning here. *Dashed lines* might symbolize *classes*.
-
-## Using Dashed Shapes
-
-*Dashed shapes* might be used to denote classes:
-
-<img src="images/Classes.007.png" width="100" />
-
-But using dashed *shapes* might be optional. 
-
-Here an object might be used as another object’s class:
-
-<img src="images/Classes.006.png" width="200" />
-
-The class on the right might be drawn out with a dashed line:
-
-<img src="images/Classes.008.png" width="200" />
-
-But it might be optional. 
+## More Dashed Shapes
 
 Other parts of the static (or 'class') structure might be drawn with dashed lines too, to try and make a visual distinction between static structure and object structure.
 
