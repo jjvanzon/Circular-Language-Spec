@@ -14,7 +14,7 @@ __Contents__
 - [Using a Class Like an Object](#using-a-class-like-an-object)
 - [Object Reference with a Class](#object-reference-with-a-class)
 - [Object Reference without a Class](#object-reference-without-a-class)
-- [No Class != Defines its own Class?](#no-class--defines-its-own-class)
+- [No Class != Defines its own Class](#no-class--defines-its-own-class)
 - [Object Reference might define its Own Class?](#object-reference-might-define-its-own-class)
 - [Dashed Shape](#dashed-shape)
 - [Conclusion](#conclusion)
@@ -29,20 +29,23 @@ But an object might also select another object to serve as its *class* or *proto
 
 <img src="images/Classes.002.png" width="200" />
 
-`<< vague >>`  
-What a *class* means may be explained later.
+Then the contents of an object might not be so arbitrary.
 
-The object on the left might point at its class on the right. The dashed line between the circles might express pointing out a *class*. The one circle's being dashed might be optional.
+The *object* on the left points at its *class* on the right. The *dashed line* between the circles expresses pointing out a *class*.
 
-When an object might have a class, the contents of that object may not be arbitrary:
+The one circle's being *dashed* might be *optional*. Here is an alternative where the class on the right is drawn with a solid line:
+
+<img src="images/Classes.006.png" width="200" />
+
+When an object has a class, the contents of that object may not be so arbitrary:
 
 <img src="images/Classes.003.png" width="200" />
 
-The object on the left may have similar contents as the class on the right. At first an object may contain related items and related lists that roughly correspond with the class. The object might also have a similar set of commands as the class.
+The object on the left has similar contents as the class on the right. At first an object seems to contain related items and related lists that roughly correspond with the class. The object might also have a similar set of commands as the class.
 
-An idea might be that an object's behavior during its lifetime might be guided by rules set by this class. A class might be like a special object, that aims to describe characteristics and behavior of other objects.
+An object's behavior during its lifetime might be guided by rules set by this class. A class might be like a special object, that aims to describe characteristics and behavior of other objects.
 
-Initially an object may look the same as its class. Changeable parts of an object might initially be set to what might be drawn out in the class:
+Initially an object may look the same as its class. Changeable parts of an object might initially be set to what is drawn out in the class:
 
 <img src="images/Classes.004.png" width="200" />
 
@@ -132,7 +135,7 @@ The 'untyped' object reference at the top-left might point to an object of any c
 
 An interpretation might be that an 'untyped' object reference could take on the class of an object it may point to. So indirectly it might have a class.
 
-## No Class != Defines its own Class?
+## No Class != Defines its own Class
 
 Something might have been unclear at one point. Objects might be usable as classes. It may be tempting to think that an object *without* a class might define *its* *own* class. It might be handy to not think of it that way, but think of it as object without a class simply not having a class. Having no class might suggest something might be arbitrary.
 
