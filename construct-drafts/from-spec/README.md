@@ -13,6 +13,10 @@ Topics that may be recognizable from the *spec*, but then maybe lesser worked ou
 
     - Perhaps deprecated ideas that originally came from the spec's Objects article.
 
+- [Classes Construct Drafts](classes-construct-drafts.md)
+
+    - Deprecated ideas that originally came from the spec's Classes article.
+
 - [Assignment Construct Drafts](assignment-construct-drafts.md)
 
     - Perhaps deprecated ideas about the topic of assignment (__=__).

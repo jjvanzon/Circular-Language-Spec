@@ -13,8 +13,6 @@ __Contents__
 - [Using a Class Like an Object](#using-a-class-like-an-object)
 - [Object Reference with a Class](#object-reference-with-a-class)
 - [Object Reference without a Class](#object-reference-without-a-class)
-- [No Class != Defines its own Class](#no-class--defines-its-own-class)
-    - [Object Reference Defining its Own Class?](#object-reference-defining-its-own-class)
 - [Conclusion](#conclusion)
 
 ## Introduction
@@ -100,22 +98,6 @@ When an object reference does not have a class, this suggests the possibility to
 The 'untyped' object reference at the top-left might point to an object of any class. It points to an object at the bottom, which has a class, that the 'untyped' object reference did not specifically points out.
 
 An interpretation might be that an 'untyped' object reference could take on the class of an object it may point to. So indirectly it might have a class.
-
-## No Class != Defines its own Class
-
-Something might have been unclear at one point. The notation seems to allow objects to be usable as classes. It may be tempting to think that an object *without* a class defines *its* *own* class. It might be handy to not think of it that way, but think of it as object without a class simply not having a class. Having no class might suggest some things are arbitrary.
-
-There may be examples where this could be a helpful concept.
-
-### Object Reference Defining its Own Class?
-
-There may be other examples, but here is attempted to be demonstrated, that it might be unfortunate to think of an *object reference* as defining its own class, in case it does not point one out explicitly. Because then the object reference may only point to ... itself?
-
-<img src="images/Classes.016.png" width="200" />
-
-Instead of a 'stuck on itself' situation, it may be seen as an indication that something is *arbitrary*.
-
-<img src="images/Classes.015.png" width="200" />
 
 ## Conclusion
 
