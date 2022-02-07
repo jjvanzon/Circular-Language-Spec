@@ -77,7 +77,7 @@ Perhaps it will look neater if the *object reference to a class* is expressed wi
 
 ## Object Reference with a Class
 
-Similar to an *object*, an *object reference* can also have a class. Then merely objects of that class can be referenced.
+Similar to an *object*, an *object reference* can also have a class. In that case merely objects of that class can be referenced.
 
 <img src="images/object-reference-with-class-1.png" width="325" />
 
