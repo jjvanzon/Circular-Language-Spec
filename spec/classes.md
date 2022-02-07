@@ -45,7 +45,7 @@ A *dashed line* between the circles may point out a *class:*
 
 ## Structure vs Data
 
-When an object has a class, the contents of that object may not be so arbitrary:
+When an object has a class, the contents of that object may not be so arbitrary anymore:
 
 <img src="images/Classes.004.png" width="250" />
 
