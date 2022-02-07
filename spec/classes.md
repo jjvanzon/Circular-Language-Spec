@@ -35,13 +35,13 @@ The *dashed line* between the circles expresses pointing out a *class:*
 
 <img src="images/dashed-circle-with-class-label.png" width="70" />
 
+An object's behavior during its lifetime might be guided by rules set by its class. A class might be like a special object, that aims to describe characteristics and behavior of other objects.
+
 When an object has a class, the contents of that object may not be so arbitrary:
 
 <img src="images/Classes.003.png" width="200" />
 
 The object on the left has similar contents as the class on the right. At first an object seems to contain related items and related lists that roughly correspond with the class. The object might also have a similar set of commands as the class.
-
-An object's behavior during its lifetime might be guided by rules set by its class. A class might be like a special object, that aims to describe characteristics and behavior of other objects.
 
 Initially an object may look the same as its class. Changeable parts of an object might initially be set to what is found in the class:
 
