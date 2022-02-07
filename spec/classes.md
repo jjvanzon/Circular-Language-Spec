@@ -105,7 +105,7 @@ The object reference *does not* point out a class. Therefor it can point at an o
 
 <img src="images/object-reference-without-class-2.png" width="325" />
 
-Here the *Object* points out *Class B* instead of Class A. But since the *object reference* does not have a class, it can points to objects of *Class B* too.
+Here the *Object* points out *Class B* instead of Class A. But since the *object reference* does not have a class, it can point to objects of *Class B* too.
 
 ## Conclusion
 
