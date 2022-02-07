@@ -81,11 +81,11 @@ Similar to an *object*, an *object reference* can also have a class. Then merely
 
 <img src="images/object-reference-with-class-1.png" width="325" />
 
-The *object reference* points out its *Class A*. The *object* also points out *Class A*. The *solid line* between object and object reference is *valid*, because the object and the object reference have the same class.
+The __object reference__ points out __Class A__. The __object__ also points out __Class A__. The *solid line* between object and object reference is *valid*, because the object and the object reference have the same class.
 
 <img src="images/object-reference-with-class-2.png" width="325" />
 
-Now the *object reference* still points out *Class A*. But the *object* points out *Class B* instead. The *solid line* is *not valid* anymore, because the object and the object reference have *different* classes.
+Now the __object reference__ still points out __Class A__. But the __object__ points out __Class B__ instead. The *solid line* is *not valid* anymore, because the object and the object reference have *different* classes.
 
 ## Object Reference without a Class
 
@@ -93,7 +93,7 @@ When an object reference does not have a class, this suggests the possibility to
 
 <img src="images/object-reference-without-class-1.png" width="325" />
 
-The *'untyped' object reference* can point to an object of any class. It points to an object, which has *Class A*, that the 'untyped' object reference did not specifically point out.
+The 'untyped' object reference can point to an object of any class. It points to an object, which has *Class A*, that the 'untyped' object reference did not specifically point out.
 
 <img src="images/object-reference-without-class-2.png" width="325" />
 
