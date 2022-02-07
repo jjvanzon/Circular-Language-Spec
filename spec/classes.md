@@ -19,13 +19,13 @@ __Contents__
 
 ## Introduction
 
-The contents of an object can be *arbitrary*. Anything may be put inside an object:
+The contents of an object might be *arbitrary*. Anything may be put inside an object:
 
 <img src="images/Classes.001.png" width="200" />
 
-But an object might also select another object to serve as its *class* or *prototype*.
+But an object can also select another object to serve as its *class* or *prototype*.
 
-An object's behavior may be guided by rules set by its class. A class might be like a special object, that aims to describe characteristics and behavior of other objects.
+An object's behavior may be guided by rules set by its class. A class might be like a *special object*, that aims to describe characteristics and behavior of *other* objects.
 
 ## Basic Notation
 
@@ -39,7 +39,7 @@ A *dashed line* between the circles may point out a *class:*
 
 <img src="images/dashed-line.png" width="130" />
 
-*Classes* may be drawn as *circles* with a *dashed border:*
+A *dashed circle* might be used as a shape for *classes*:
 
 <img src="images/dashed-circle.png" width="70" />
 
@@ -49,27 +49,27 @@ When an object has a class, the contents of that object may not be so arbitrary 
 
 <img src="images/Classes.004.png" width="250" />
 
-An object may initially show similar contents as the class. An object may have a similar *structure* as its class, but may have *data* that can change freely. Values of an object's attributes and might change as well as related objects:
+An object may initially show similar contents as the class. An object may have a similar *structure* as its class, but may have *data* that can change freely:
 
 <img src="images/Classes.005.png" width="250" />
 
-While the structure of the object might be similar to the contents of the class, the data appears to have changed.
+While the structure of the object might be similar to the contents of the class, the data appears to have changed. Values of an object's attributes and might change as well as related objects.
 
 ## Prototypes
 
-Here is an alternative where the class symbol on the right is drawn with a *solid line*:
+Here is an alternative where the class symbol is drawn with a *solid line*:
 
 <img src="images/Classes.006.png" width="200" />
 
-A *class circle's* being *dashed* might be *optional*. This means that the Circular notation might be open for *objects* to serve as a class or *prototype* for another object.
+The shape's being *dashed* might be *optional*. This might also point out a distinction between classes and *prototypes*.
 
 ## Static Structure
 
-Other parts of the static (or 'class') structure might be drawn with dashed lines too, to try and make a visual distinction between static structure and object structure:
+Other parts of the static (or 'class') structure might be drawn with dashed lines too, to try and make a visual distinction between *static* structure and *object* structure:
 
 <img src="images/Classes.009.png" width="200" />
 
-The rules do not seem to be that precise when it comes to *shapes* drawn with different line styles. The rules for connecting *lines* might be a bit stricter: a dashed line points out a class.
+The rules do not seem to be that precise when it comes to *shapes* drawn with different line styles. The rules for connecting *lines* might be a bit stricter.
 
 ## Using a Class Like an Object
 
