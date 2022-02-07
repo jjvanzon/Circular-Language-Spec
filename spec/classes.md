@@ -17,7 +17,7 @@ __Contents__
 
 ## Introduction
 
-The contents of an object might be arbitrary. Anything may be put inside an object:
+The contents of an object can be arbitrary. Anything may be put inside an object:
 
 <img src="images/Classes.001.png" width="200" />
 
