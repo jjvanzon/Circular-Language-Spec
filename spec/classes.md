@@ -65,7 +65,7 @@ The rules do not seem to be that precise when it comes to *shapes* drawn with di
 
 ## Using a Class Like an Object
 
-A class might be referenced like an *object*, using an *object* line / object references to the class:
+A class might be referenced like an *object*, using an *object line*. That establishes an *object reference to a class*:
 
 <img src="images/Classes.012.png" width="200" />
 
