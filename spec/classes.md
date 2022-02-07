@@ -7,27 +7,35 @@
 
 __Contents__
 
-- [Objects with Classes](#objects-with-classes)
-- [Prototypes / Optional Dashed Shape](#prototypes--optional-dashed-shape)
+- [Introduction](#introduction)
+- [Basic Notation](#basic-notation)
+- [Structure vs Data](#structure-vs-data)
+- [Object Serving  as Class](#object-serving--as-class)
 - [More Dashed Shapes](#more-dashed-shapes)
 - [Using a Class Like an Object](#using-a-class-like-an-object)
 - [Object Reference with a Class](#object-reference-with-a-class)
 - [Object Reference without a Class](#object-reference-without-a-class)
 - [Conclusion](#conclusion)
 
-## Objects with Classes
+## Introduction
 
 The contents of an object can be *arbitrary*. Anything may be put inside an object:
 
 <img src="images/Classes.001.png" width="200" />
 
-But an object might also select another object to serve as its *class* or *prototype:*
+But an object might also select another object to serve as its *class* or *prototype*.
+
+An object's behavior may be guided by rules set by its class. A class might be like a special object, that aims to describe characteristics and behavior of other objects.
+
+## Basic Notation
+
+The basic notation for pointing out a class might be like this:
 
 <img src="images/Classes.002.png" width="200" />
 
 The *object* on the left points at its *class* on the right.
 
-The *dashed line* between the circles points out a *class:*
+A *dashed line* between the circles mayb point out a *class:*
 
 <img src="images/dashed-line.png" width="130" />
 
@@ -35,7 +43,7 @@ The *dashed line* between the circles points out a *class:*
 
 <img src="images/dashed-circle.png" width="70" />
 
-An object's behavior during its lifetime may be guided by rules set by its class. A class might be like a special object, that aims to describe characteristics and behavior of other objects.
+## Structure vs Data
 
 When an object has a class, the contents of that object may not be so arbitrary:
 
@@ -47,7 +55,7 @@ An object may initially show similar contents as the class. An object may have a
 
 While the structure of the larger circle at the left might be similar to the contents of the class on the right, the data appears to have changed.
 
-## Prototypes / Optional Dashed Shape
+## Object Serving  as Class
 
 A *class circle's* being *dashed* might be *optional*. Here is an alternative where the class symbol on the right is drawn with a solid line:
 
