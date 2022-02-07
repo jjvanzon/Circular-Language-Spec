@@ -15,6 +15,9 @@ __Contents__
 
 Deprecated ideas that originally came from the spec's Classes article.
 
+<img src="images/Classes.003.png" width="200" />
+
+
 ## Shape Both Dashed and Solid
 
 It may be an idea that if a symbol serves as another object’s class, but also might be referenced like an object, the symbol might get a double border to maybe indicate its dual role as both an object and a class.
