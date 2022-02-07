@@ -33,7 +33,7 @@ The *dashed line* between the circles expresses pointing out a *class:*
 
 *Classes* may be drawn as *circles* with a *dashed border:*
 
-<img src="images/dashed-circle.png" width="70" />
+<img src="images/dashed-circle-with-class-label.png" width="70" />
 
 When an object has a class, the contents of that object may not be so arbitrary:
 
