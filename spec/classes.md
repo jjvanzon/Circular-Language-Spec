@@ -41,7 +41,7 @@ When an object has a class, the contents of that object may not be so arbitrary:
 
 <img src="images/Classes.003.png" width="200" />
 
-The object on the left has similar contents as the class on the right. At first an object seems to contain related items and related lists that roughly correspond with the class. The object might also have a similar set of commands as the class.
+The object on the left has *similar contents* as the class on the right. At first an object seems to contain related items and related lists that roughly correspond with the class. The object might also have a similar set of *commands* as the class.
 
 Initially an object may look the same as its class. Changeable parts of an object might initially be set to what is found in the class:
 
@@ -59,7 +59,7 @@ A *class circle's* being *dashed* might be *optional*. Here is an alternative wh
 
 <img src="images/Classes.006.png" width="200" />
 
-This means that the Circular notation might be open for objects to serve as a class or prototype for another object.
+This means that the Circular notation might be open for objects to serve as a class or *prototype* for another object.
 
 ## More Dashed Shapes
 
