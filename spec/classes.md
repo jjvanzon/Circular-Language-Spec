@@ -79,19 +79,27 @@ Perhaps it will look neater if the *object reference to a class* is expressed wi
 
 Similar to an *object*, an *object reference* might also have a class. Then merely objects of that class can be referenced.
 
-<img src="images/Classes.014.png" width="200" />
+<img src="images/object-reference-with-class-1.png" width="325" />
 
-The object reference on the left points out its class on the right. The object at the bottom also points out its class on the right. The solid line of the object reference is valid, because the object and the object reference have the same class.
+The *object reference* on the left points out its *Class A* at the top. The *object* at the bottom also points out *Class A*. The *solid line* between object and object reference is *valid*, because the object and the object reference have the same class.
+
+<img src="images/object-reference-with-class-2.png" width="325" />
+
+The *object reference* on the left points out its *Class A* at the top. The *object* at the bottom points out *Class B* as its class. Now the *solid line* is *not valid*, because the object and the object reference have different classes.
 
 ## Object Reference without a Class
 
 When an object reference does not have a class, this suggests the possibility to point to *any* object.
 
-<img src="images/Classes.015.png" width="200" />
+<img src="images/object-reference-without-class-1.png" width="325" />
 
-The 'untyped' object reference at the top-left can point to an object of any class. It points to an object at the bottom, which has a class, that the 'untyped' object reference did not specifically point out.
+The 'untyped' object reference in the top-left corner can point to an object of any class. It points to an object at the bottom, which has *Class A*, that the 'untyped' object reference did not specifically point out.
 
 An interpretation might be that an 'untyped' object reference could take on the class of an object it may point to. So indirectly it might have a class.
+
+<img src="images/object-reference-without-class-2.png" width="325" />
+
+Here the *Object* points out *Class B* instead of Class A. But since the *object reference* does not have a class, it is ok that it points to objects of Class B.
 
 ## Conclusion
 
