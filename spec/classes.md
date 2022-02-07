@@ -101,7 +101,7 @@ When an object reference does not have a class, this suggests the possibility to
 
 <img src="images/object-reference-without-class-1.png" width="325" />
 
-The 'untyped' object reference can point to an object of any class. It points to an object, which has *Class A*. The 'untyped' object reference did not specifically point that out.
+The object reference *does not* point out a class. Therefor it can point at an object of *any* class. It points at an object, which so happens to be of *Class A*.
 
 <img src="images/object-reference-without-class-2.png" width="325" />
 
