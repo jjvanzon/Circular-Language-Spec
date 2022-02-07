@@ -83,7 +83,7 @@ Perhaps it will look neater if the *object reference to a class* is expressed wi
 
 ## Object Reference with a Class
 
-Similar to an *object* having a class, an *object reference* might have a class. Then merely objects of that class may be referenced.
+Similar to an *object*, an *object reference* might also have a class. Then merely objects of that class can be referenced.
 
 <img src="images/Classes.014.png" width="200" />
 
@@ -95,7 +95,7 @@ When an object reference does not have a class, this suggests the possibility to
 
 <img src="images/Classes.015.png" width="200" />
 
-The 'untyped' object reference at the top-left might point to an object of any class. It points to an object at the bottom, which has a class, that the 'untyped' object reference did not specifically points out.
+The 'untyped' object reference at the top-left can point to an object of any class. It points to an object at the bottom, which has a class, that the 'untyped' object reference did not specifically point out.
 
 An interpretation might be that an 'untyped' object reference could take on the class of an object it may point to. So indirectly it might have a class.
 
