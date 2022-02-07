@@ -81,7 +81,7 @@ Similar to an *object*, an *object reference* can also have a class. In that cas
 
 <img src="images/object-reference-with-class-1.png" width="325" />
 
-The __object reference__ points out __Class A__. The __object__ also points out __Class A__. The *solid line* between object and object reference is *valid*, because the object and the object reference have the same class.
+The __object reference__ points out __Class A__. The __object__ also points out __Class A__. The *solid line* between object and object reference is *valid*, because the object and the object reference have *the same* class.
 
 <img src="images/object-reference-with-class-2.png" width="325" />
 
