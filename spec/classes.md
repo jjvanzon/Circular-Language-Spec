@@ -35,7 +35,7 @@ The basic notation for pointing out a class might be like this:
 
 The *object* on the left points at its *class* on the right.
 
-A *dashed line* between the circles mayb point out a *class:*
+A *dashed line* between the circles may point out a *class:*
 
 <img src="images/dashed-line.png" width="130" />
 
