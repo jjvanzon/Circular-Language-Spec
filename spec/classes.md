@@ -33,7 +33,7 @@ The *dashed line* between the circles expresses pointing out a *class:*
 
 *Classes* may be drawn as *circles* with a *dashed border:*
 
-<img src="images/dashed-circle-with-class-label.png" width="70" />
+<img src="images/dashed-circle.png" width="70" />
 
 An object's behavior during its lifetime might be guided by rules set by its class. A class might be like a special object, that aims to describe characteristics and behavior of other objects.
 
