@@ -17,7 +17,7 @@ __Contents__
 
 ## Introduction
 
-The contents of an object can be arbitrary. Anything may be put inside an object:
+The contents of an object can be *arbitrary*. Anything may be put inside an object:
 
 <img src="images/Classes.001.png" width="200" />
 
@@ -27,7 +27,7 @@ But an object might also select another object to serve as its *class* or *proto
 
 The *object* on the left points at its *class* on the right.
 
-The *dashed line* between the circles expresses pointing out a *class:*
+The *dashed line* between the circles points out a *class:*
 
 <img src="images/dashed-line.png" width="130" />
 
@@ -35,7 +35,7 @@ The *dashed line* between the circles expresses pointing out a *class:*
 
 <img src="images/dashed-circle.png" width="70" />
 
-An object's behavior during its lifetime might be guided by rules set by its class. A class might be like a special object, that aims to describe characteristics and behavior of other objects.
+An object's behavior during its lifetime may be guided by rules set by its class. A class might be like a special object, that aims to describe characteristics and behavior of other objects.
 
 When an object has a class, the contents of that object may not be so arbitrary:
 
@@ -53,25 +53,25 @@ A *class circle's* being *dashed* might be *optional*. Here is an alternative wh
 
 <img src="images/Classes.006.png" width="200" />
 
-This means that the Circular notation might be open for objects to serve as a class or *prototype* for another object.
+This means that the Circular notation might be open for *objects* to serve as a class or *prototype* for another object.
 
 ## More Dashed Shapes
 
-Other parts of the static (or 'class') structure might be drawn with dashed lines too, to try and make a visual distinction between static structure and object structure.
+Other parts of the static (or 'class') structure might be drawn with dashed lines too, to try and make a visual distinction between static structure and object structure:
 
 <img src="images/Classes.009.png" width="200" />
 
-The rules do not seem to be that precise when it comes to shapes drawn with different line styles. The rules for connecting lines might be a bit stricter: a dashed line points out a class.
+The rules do not seem to be that precise when it comes to *shapes* drawn with different line styles. The rules for connecting *lines* might be a bit stricter: a dashed line points out a class.
 
 ## Using a Class Like an Object
 
-With object references to a class, a type might be referenced like an object.
+A class might be referenced like an *object*, using an *object* line / object references to the class:
 
 <img src="images/Classes.012.png" width="200" />
 
 That *solid* line in the middle means it is an *object reference*.
 
-Perhaps it will look neater if the *object reference to a class* is expressed with a *dashed shape* too:
+Perhaps it will look neater if the *object reference to a class* is expressed with a *dashed shape*:
 
 <img src="images/Classes.013.png" width="200" />
 
