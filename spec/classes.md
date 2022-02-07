@@ -10,7 +10,7 @@ __Contents__
 - [Introduction](#introduction)
 - [Basic Notation](#basic-notation)
 - [Structure vs Data](#structure-vs-data)
-- [Object Serving  as Class](#object-serving--as-class)
+- [Object Serving as a Class](#object-serving-as-a-class)
 - [More Dashed Shapes](#more-dashed-shapes)
 - [Using a Class Like an Object](#using-a-class-like-an-object)
 - [Object Reference with a Class](#object-reference-with-a-class)
@@ -55,13 +55,13 @@ An object may initially show similar contents as the class. An object may have a
 
 While the structure of the larger circle at the left might be similar to the contents of the class on the right, the data appears to have changed.
 
-## Object Serving  as Class
+## Object Serving as a Class
 
-A *class circle's* being *dashed* might be *optional*. Here is an alternative where the class symbol on the right is drawn with a solid line:
+Here is an alternative where the class symbol on the right is drawn with a *solid line*:
 
 <img src="images/Classes.006.png" width="200" />
 
-This means that the Circular notation might be open for *objects* to serve as a class or *prototype* for another object.
+A *class circle's* being *dashed* might be *optional*. This means that the Circular notation might be open for *objects* to serve as a class or *prototype* for another object.
 
 ## More Dashed Shapes
 
@@ -79,7 +79,7 @@ A class might be referenced like an *object*, using an *object line*. That estab
 
 That *solid* line in the middle means it is an *object reference*.
 
-Perhaps it will look neater if the *object reference to a class* is expressed with a *dashed shape*:
+Perhaps it will look neater if the *object reference to a class* is expressed with a *dashed shape* too:
 
 <img src="images/Classes.013.png" width="200" />
 
@@ -101,7 +101,7 @@ When an object reference does not have a class, this suggests the possibility to
 
 <img src="images/object-reference-without-class-1.png" width="325" />
 
-The 'untyped' object reference can point to an object of any class. It points to an object, which has *Class A*, that the 'untyped' object reference did not specifically point out.
+The 'untyped' object reference can point to an object of any class. It points to an object, which has *Class A*. The 'untyped' object reference did not specifically point that out.
 
 <img src="images/object-reference-without-class-2.png" width="325" />
 
