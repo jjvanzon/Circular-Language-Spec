@@ -41,13 +41,19 @@ When an object has a class, the contents of that object may not be so arbitrary:
 
 <img src="images/Classes.003.png" width="200" />
 
-The object on the left has *similar contents* as the class on the right. At first an object seems to contain related items and related lists that roughly correspond with the class. The object might also have a similar set of *commands* as the class.
+The object on the left has *similar contents* as the class on the right.
 
-Initially an object may look the same as its class. Changeable parts of an object might initially be set to what is found in the class:
+Initially an object may look *the same* as its class. At first an object seems to contain related items and related lists that roughly correspond with the class. The object might also have a similar set of *commands* as the class.
+
+`<< detail >>`  
+Changeable parts of an object might initially be set to what is found in the class:
 
 <img src="images/Classes.004.png" width="200" />
 
-An object may have a similar *structure* as its class, but may have *data* that can change freely. Values of an object's attributes and might change as well as related objects:
+`<< terminology >>`  
+An object may have a similar *structure* as its class, but may have *data* that can change freely.
+
+Values of an object's attributes and might change as well as related objects:
 
 <img src="images/Classes.005.png" width="200" />
 
