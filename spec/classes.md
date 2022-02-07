@@ -39,11 +39,11 @@ An object's behavior during its lifetime may be guided by rules set by its class
 
 When an object has a class, the contents of that object may not be so arbitrary:
 
-<img src="images/Classes.004.png" width="200" />
+<img src="images/Classes.004.png" width="250" />
 
 An object may *initially* show similar contents as the class. An object may have a similar *structure* as its class, but may have *data* that can change freely. Values of an object's attributes and might change as well as related objects:
 
-<img src="images/Classes.005.png" width="200" />
+<img src="images/Classes.005.png" width="250" />
 
 While the structure of the larger circle at the left might be similar to the contents of the class on the right, the data appears to have changed.
 
