@@ -7,15 +7,15 @@
 
 __Contents__
 
-- [Introduction](#introduction)
-- [Optional Dashed Shape](#optional-dashed-shape)
+- [Objects with Classes](#objects-with-classes)
+- [Prototypes / Optional Dashed Shape](#prototypes--optional-dashed-shape)
 - [More Dashed Shapes](#more-dashed-shapes)
 - [Using a Class Like an Object](#using-a-class-like-an-object)
 - [Object Reference with a Class](#object-reference-with-a-class)
 - [Object Reference without a Class](#object-reference-without-a-class)
 - [Conclusion](#conclusion)
 
-## Introduction
+## Objects with Classes
 
 The contents of an object can be *arbitrary*. Anything may be put inside an object:
 
@@ -47,7 +47,7 @@ An object may *initially* show similar contents as the class. An object may have
 
 While the structure of the larger circle at the left might be similar to the contents of the class on the right, the data appears to have changed.
 
-## Optional Dashed Shape
+## Prototypes / Optional Dashed Shape
 
 A *class circle's* being *dashed* might be *optional*. Here is an alternative where the class symbol on the right is drawn with a solid line:
 
