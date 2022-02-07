@@ -10,8 +10,8 @@ __Contents__
 - [Introduction](#introduction)
 - [Basic Notation](#basic-notation)
 - [Structure vs Data](#structure-vs-data)
-- [Object Serving as a Class](#object-serving-as-a-class)
-- [More Dashed Shapes](#more-dashed-shapes)
+- [Prototypes](#prototypes)
+- [Static Structure](#static-structure)
 - [Using a Class Like an Object](#using-a-class-like-an-object)
 - [Object Reference with a Class](#object-reference-with-a-class)
 - [Object Reference without a Class](#object-reference-without-a-class)
@@ -55,7 +55,7 @@ An object may initially show similar contents as the class. An object may have a
 
 While the structure of the larger circle at the left might be similar to the contents of the class on the right, the data appears to have changed.
 
-## Object Serving as a Class
+## Prototypes
 
 Here is an alternative where the class symbol on the right is drawn with a *solid line*:
 
@@ -63,7 +63,7 @@ Here is an alternative where the class symbol on the right is drawn with a *soli
 
 A *class circle's* being *dashed* might be *optional*. This means that the Circular notation might be open for *objects* to serve as a class or *prototype* for another object.
 
-## More Dashed Shapes
+## Static Structure
 
 Other parts of the static (or 'class') structure might be drawn with dashed lines too, to try and make a visual distinction between static structure and object structure:
 
