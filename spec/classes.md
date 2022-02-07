@@ -41,7 +41,7 @@ When an object has a class, the contents of that object may not be so arbitrary:
 
 <img src="images/Classes.004.png" width="250" />
 
-An object may *initially* show similar contents as the class. An object may have a similar *structure* as its class, but may have *data* that can change freely. Values of an object's attributes and might change as well as related objects:
+An object may initially show similar contents as the class. An object may have a similar *structure* as its class, but may have *data* that can change freely. Values of an object's attributes and might change as well as related objects:
 
 <img src="images/Classes.005.png" width="250" />
 
