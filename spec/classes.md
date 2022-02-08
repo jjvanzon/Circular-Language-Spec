@@ -85,13 +85,13 @@ The rules do not seem to be that precise when it comes to *shapes* drawn with di
 
 A class could be referenced like an *object*, using an *object line*. That establishes an *pointer to a class*:
 
-<img src="images/Classes.012.png" width="200" />
+<img src="images/pointer-to-class-solid-border.png" width="200" />
 
 That *solid* line in the middle means it is a *pointer*.
 
 Perhaps it will look neater if the *pointer to a class* is drawn with a *dashed shape* too:
 
-<img src="images/Classes.013.png" width="225" />
+<img src="images/pointer-to-class-dashed-border.png" width="225" />
 
 (In .NET and C# these pointers to classes could for instance represent *type arguments* and *Type objects*.)
 
