@@ -25,15 +25,15 @@ The contents of an object might be *arbitrary*. Anything could be put inside an 
 
 But an object can also select another object to serve as its *class* or *prototype*.
 
-A class might be considered a *special object*, a sort of *blue-print*, that aims to describe characteristics and behavior for *other* objects.
+A class might be considered a *special object*, a sort of *blue-print*, that aims to describe characteristics and behavior for other objects.
 
 ## Basic Notation
 
-The basic notation for pointing out a class might be the following:
+The basic notation for pointing out a class might be as follows:
 
 <img src="images/object-and-class.png" width="200" />
 
-The *object* on the left points at its *class* on the right.
+The *object* on the left points out s *class* on the right.
 
 A *dashed line* between the circles may point out a *class:*
 
@@ -61,7 +61,7 @@ An object may initially show *similar contents* as the class. An object may have
 
 <img src="images/Classes.005.png" width="300" />
 
-While the *structure* of the object might be similar to the contents of the class, the *data* appears to have changed. *Values* of an object's attributes might change as well as *related objects*.
+While the *structure* of the object might be similar to the class, the *data* appears to have changed. *Values* of an object's *attributes* might change as well as *related objects*.
 
 ## Prototypes
 
@@ -69,7 +69,7 @@ Here is an alternative where a class is drawn with *solid lined* shape:
 
 <img src="images/object-and-class-with-solid-lined-shape.png" width="200" />
 
-Shapes being *dashed* might be *optional*.
+Shapes with *dashed lines* might be *optional*.
 
 This might also allow a distinction between classes and *prototypes*: where an object is initially a copy of another object, but anything may be changed about it, even its structure.
 
@@ -77,7 +77,7 @@ This might also allow a distinction between classes and *prototypes*: where an o
 
 Other parts of the static (or 'class') structure might be drawn with dashed lines too, to try and make a visual distinction between *static* structure and *object* structure:
 
-<img src="images/Classes.009.png" width="250" />
+<img src="images/Classes.009.png" width="325" />
 
 The rules do not seem to be that precise when it comes to *shapes* drawn with different line styles. The rules for connecting *lines* might be a bit stricter.
 
