@@ -59,7 +59,7 @@ When an object has a class, the contents of that object may not be so arbitrary 
 
 An object may initially show *similar contents* as the class. An object may have a similar *structure* as its class, but may have *data* that can change freely:
 
-<img src="images/Classes.005.png" width="250" />
+<img src="images/Classes.005.png" width="300" />
 
 While the *structure* of the object might be similar to the contents of the class, the *data* appears to have changed. *Values* of an object's attributes might change as well as *related objects*.
 
@@ -77,7 +77,7 @@ This might also allow a distinction between classes and *prototypes*: where an o
 
 Other parts of the static (or 'class') structure might be drawn with dashed lines too, to try and make a visual distinction between *static* structure and *object* structure:
 
-<img src="images/Classes.009.png" width="200" />
+<img src="images/Classes.009.png" width="250" />
 
 The rules do not seem to be that precise when it comes to *shapes* drawn with different line styles. The rules for connecting *lines* might be a bit stricter.
 
@@ -91,7 +91,7 @@ That *solid* line in the middle means it is an *object reference*.
 
 Perhaps it will look neater if the *pointer to a class* is expressed with a *dashed shape* too:
 
-<img src="images/Classes.013.png" width="200" />
+<img src="images/Classes.013.png" width="225" />
 
 In .NET and C# these pointers to classes may represent *type arguments* and __Type__ objects.
 
