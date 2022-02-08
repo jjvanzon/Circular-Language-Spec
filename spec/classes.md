@@ -53,7 +53,7 @@ An object may initially show similar contents as the class. An object may have a
 
 <img src="images/Classes.005.png" width="250" />
 
-While the *structure* of the object might be similar to the contents of the class, the *data* appears to have changed. *Values* of an object's attributes and might change as well as *related objects*.
+While the *structure* of the object might be similar to the contents of the class, the *data* appears to have changed. *Values* of an object's attributes might change as well as *related objects*.
 
 ## Prototypes
 
