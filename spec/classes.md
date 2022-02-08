@@ -19,17 +19,17 @@ __Contents__
 
 ## Introduction
 
-The contents of an object might be *arbitrary*. Anything may be put inside an object:
+The contents of an object might be *arbitrary*. Anything could be put inside an object:
 
 <img src="images/Classes.001.png" width="200" />
 
 But an object can also select another object to serve as its *class* or *prototype*.
 
-An object's behavior may be guided by rules set by its class. A class might be like a *special object*, that aims to describe characteristics and behavior of *other* objects.
+A class might be considered a *special object*, that describes characteristics and behavior of *other* objects.
 
 ## Basic Notation
 
-The basic notation for pointing out a class might be like this:
+The basic notation for pointing out a class might be the following:
 
 <img src="images/Classes.002.png" width="200" />
 
@@ -38,6 +38,10 @@ The *object* on the left points at its *class* on the right.
 A *dashed line* between the circles may point out a *class:*
 
 <img src="images/dashed-line.png" width="130" />
+
+A *line dissector* may indicate rightward direction, sort of like an *arrow head*:
+
+<img src="images/class-line-dissector.png" width="90" />
 
 A *dashed circle* might represent a *class*:
 
