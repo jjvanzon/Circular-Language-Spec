@@ -1,4 +1,6 @@
-﻿Classes
+﻿<img src="images/classes-collage.png" width="700s" />
+
+Classes
 =======
 
 *JJ van Zon, 2022*
