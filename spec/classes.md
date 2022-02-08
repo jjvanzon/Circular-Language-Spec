@@ -87,19 +87,19 @@ A class might be referenced like an *object*, using an *object line*. That estab
 
 <img src="images/Classes.012.png" width="200" />
 
-That *solid* line in the middle means it is an *object reference*.
+That *solid* line in the middle means it is a *pointer* or *object reference*.
 
 Perhaps it will look neater if the *pointer to a class* is expressed with a *dashed shape* too:
 
 <img src="images/Classes.013.png" width="225" />
 
-In .NET and C# these pointers to classes may represent *type arguments* and __Type__ objects.
+(In .NET and C# these pointers to classes may represent *type arguments* and *Type objects*.)
 
 ## Object Reference with a Class
 
 Similar to an *object*, an *object reference* can also have a class. In that case merely objects of that class can be referenced.
 
-<img src="images/object-reference-with-class-1.png" width="325" />
+<img src="images/object-reference-with-class-1.png" width="250" />
 
 The __object reference__ points out __Class A__. The __object__ also points out __Class A__. The *solid line* between object and object reference is *valid*, because they have *the same* class.
 
