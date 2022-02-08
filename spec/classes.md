@@ -33,7 +33,7 @@ The basic notation in Circular for pointing out a class is as follows:
 
 <img src="images/object-and-class.png" width="200" />
 
-The *object* on the left points out a *class* on the right.
+The *object* on the left points out the *class* on the right.
 
 A *dashed line* between the circles points out a *class:*
 
@@ -43,7 +43,7 @@ A *line dissector* can indicate direction, sort of like an *arrow head:*
 
 <img src="images/class-line-dissector.png" width="90" />
 
-A *dashed circle* can represent a *class:*
+A *dashed circle* may represent a *class:*
 
 <img src="images/dashed-circle.png" width="70" />
 
@@ -57,7 +57,7 @@ When an object has a class, the contents of that object might not be so arbitrar
 
 <img src="images/Classes.004.png" width="250" />
 
-An object initially shows contents *identical* as the class. An object might have the same *structure* as its class, but can have *data* that may be changed freely:
+An object initially shows contents *identical* to the class. An object might have the same *structure* as its class, but can have *data* that may be changed freely:
 
 <img src="images/Classes.005.png" width="300" />
 
@@ -89,7 +89,7 @@ A class could be referenced like an *object*, using an *object line*. That estab
 
 That *solid* line in the middle means it is a *pointer*.
 
-Perhaps it will look neater if the *pointer to a class* is expressed with a *dashed shape* too:
+Perhaps it will look neater if the *pointer to a class* is drawn with a *dashed shape* too:
 
 <img src="images/Classes.013.png" width="225" />
 
@@ -121,6 +121,6 @@ Here the *Object* points out *Class B* instead of Class A. But since the *object
 
 ## Conclusion
 
-Hopefully this gave an impression of how *class* notation could look in the Circular language.
+Hopefully this gave an impression of how *class* notation could look in the *Circular language*.
 
 [back](..)
