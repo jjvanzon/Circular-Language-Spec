@@ -121,6 +121,6 @@ Here the *Object* points out *Class B* instead of Class A. But since the *object
 
 ## Conclusion
 
-This article aimed to give an impression of how *class* notation could look in the Circular language.
+Hopefully this gave an impression of how *class* notation could look in the Circular language.
 
 [back](..)
