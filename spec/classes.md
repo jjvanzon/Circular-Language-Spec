@@ -31,7 +31,7 @@ A class might be considered a *special object*, a sort of *blue-print*, that aim
 
 ## Basic Notation
 
-The basic notation in Circular for pointing out a class is as follows:
+The *basic notation* in Circular for pointing out a *class* is as follows:
 
 <img src="images/object-and-class.png" width="200" />
 
@@ -91,11 +91,11 @@ A class could be referenced like an *object*, using an *object line*. That estab
 
 That *solid* line in the middle means it is a *pointer*.
 
-Perhaps it will look neater if the *pointer to a class* is drawn with a *dashed shape* too:
+Perhaps it will look neater if the pointer is drawn with a *dashed shape* too:
 
 <img src="images/pointer-to-class-dashed-border.png" width="225" />
 
-(In .NET and C# these pointers to classes could for instance represent *type arguments* and *Type objects*.)
+(In .NET and C# these pointers to classes could represent *type arguments* and *Type objects*.)
 
 ## Object Reference with a Class
 
