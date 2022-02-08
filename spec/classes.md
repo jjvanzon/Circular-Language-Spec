@@ -53,7 +53,7 @@ An object may initially show similar contents as the class. An object may have a
 
 <img src="images/Classes.005.png" width="250" />
 
-While the structure of the object might be similar to the contents of the class, the data appears to have changed. Values of an object's attributes and might change as well as related objects.
+While the *structure* of the object might be similar to the contents of the class, the *data* appears to have changed. *Values* of an object's attributes and might change as well as *related objects*.
 
 ## Prototypes
 
@@ -61,7 +61,9 @@ Here is an alternative where the class symbol is drawn with a *solid line*:
 
 <img src="images/Classes.006.png" width="200" />
 
-The shape's being *dashed* might be *optional*. This might also point out a distinction between classes and *prototypes*.
+Shapes being *dashed* might be *optional*.
+
+This might also allow a distinction between classes and *prototypes*: where an object is initially a copy of another object, but anything may be changed about it, even its structure.
 
 ## Static Structure
 
