@@ -71,7 +71,7 @@ Here is an alternative where a class is drawn with *solid lined* shape:
 
 Shapes with *dashed lines* might be *optional*.
 
-But this notation could also be used for a distinction between classes and *prototypes*: where an object is initially a copy of another object, but anything may be changed about it, even its structure.
+But this notation could also be used for a distinction between classes and *prototypes:* where an object is initially a copy of another object, but anything may be changed about it, even its structure.
 
 ## Static Structure
 
