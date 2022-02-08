@@ -57,7 +57,7 @@ When an object has a class, the contents of that object may not be so arbitrary 
 
 <img src="images/Classes.004.png" width="250" />
 
-An object may initially show similar contents as the class. An object may have a similar *structure* as its class, but may have *data* that can change freely:
+An object may initially show *similar contents* as the class. An object may have a similar *structure* as its class, but may have *data* that can change freely:
 
 <img src="images/Classes.005.png" width="250" />
 
@@ -65,9 +65,9 @@ While the *structure* of the object might be similar to the contents of the clas
 
 ## Prototypes
 
-Here is an alternative where the class symbol is drawn with a *solid line*:
+Here is an alternative where a class is drawn with *solid lined* shape:
 
-<img src="images/Classes.006.png" width="200" />
+<img src="images/object-and-class-with-solid-lined-shape.png" width="200" />
 
 Shapes being *dashed* might be *optional*.
 
