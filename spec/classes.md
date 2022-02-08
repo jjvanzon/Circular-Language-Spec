@@ -12,7 +12,7 @@ __Contents__
 - [Structure vs Data](#structure-vs-data)
 - [Prototypes](#prototypes)
 - [Static Structure](#static-structure)
-- [Using a Class Like an Object](#using-a-class-like-an-object)
+- [Pointer to a Class](#pointer-to-a-class)
 - [Object Reference with a Class](#object-reference-with-a-class)
 - [Object Reference without a Class](#object-reference-without-a-class)
 - [Conclusion](#conclusion)
@@ -39,7 +39,7 @@ A *dashed line* between the circles may point out a *class:*
 
 <img src="images/dashed-line.png" width="130" />
 
-A *dashed circle* might be used as a shape for *classes*:
+A *dashed circle* might represent a *class*:
 
 <img src="images/dashed-circle.png" width="70" />
 
@@ -73,17 +73,19 @@ Other parts of the static (or 'class') structure might be drawn with dashed line
 
 The rules do not seem to be that precise when it comes to *shapes* drawn with different line styles. The rules for connecting *lines* might be a bit stricter.
 
-## Using a Class Like an Object
+## Pointer to a Class
 
-A class might be referenced like an *object*, using an *object line*. That establishes an *object reference to a class*:
+A class might be referenced like an *object*, using an *object line*. That establishes an *pointer to a class*:
 
 <img src="images/Classes.012.png" width="200" />
 
 That *solid* line in the middle means it is an *object reference*.
 
-Perhaps it will look neater if the *object reference to a class* is expressed with a *dashed shape* too:
+Perhaps it will look neater if the *pointer to a class* is expressed with a *dashed shape* too:
 
 <img src="images/Classes.013.png" width="200" />
+
+In .NET and C# these pointers to classes may represent *type arguments* and __Type__ objects.
 
 ## Object Reference with a Class
 
@@ -91,7 +93,7 @@ Similar to an *object*, an *object reference* can also have a class. In that cas
 
 <img src="images/object-reference-with-class-1.png" width="325" />
 
-The __object reference__ points out __Class A__. The __object__ also points out __Class A__. The *solid line* between object and object reference is *valid*, because the object and the object reference have *the same* class.
+The __object reference__ points out __Class A__. The __object__ also points out __Class A__. The *solid line* between object and object reference is *valid*, because they have *the same* class.
 
 <img src="images/object-reference-with-class-2.png" width="325" />
 
