@@ -23,7 +23,7 @@ __Contents__
 
 The contents of an object may be *arbitrary*. Anything could be put inside an object:
 
-<img src="images/Classes.001.png" width="200" />
+<img src="images/object-arbitrary-contents.png" width="200" />
 
 But an object can also select another object to serve as its *class* or *prototype*.
 
