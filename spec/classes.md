@@ -25,13 +25,13 @@ The contents of an object might be *arbitrary*. Anything could be put inside an 
 
 But an object can also select another object to serve as its *class* or *prototype*.
 
-A class might be considered a *special object*, that describes characteristics and behavior of *other* objects.
+A class might be considered a *special object*, a sort of *blue-print*, that aims to describe characteristics and behavior for *other* objects.
 
 ## Basic Notation
 
 The basic notation for pointing out a class might be the following:
 
-<img src="images/Classes.002.png" width="200" />
+<img src="images/object-and-class.png" width="200" />
 
 The *object* on the left points at its *class* on the right.
 
@@ -39,13 +39,17 @@ A *dashed line* between the circles may point out a *class:*
 
 <img src="images/dashed-line.png" width="130" />
 
-A *line dissector* may indicate rightward direction, sort of like an *arrow head*:
+A *line dissector* may indicate direction, sort of like an *arrow head:*
 
 <img src="images/class-line-dissector.png" width="90" />
 
-A *dashed circle* might represent a *class*:
+A *dashed circle* might represent a *class:*
 
 <img src="images/dashed-circle.png" width="70" />
+
+Classes can have *names:*
+
+<img src="images/dashed-circle-with-label-my-class.png" width="70" />
 
 ## Structure vs Data
 
