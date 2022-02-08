@@ -27,7 +27,7 @@ The contents of an object may be *arbitrary*. Anything could be put inside an ob
 
 But an object can also select another object to serve as its *class* or *prototype*.
 
-A class might be considered a *special object*, a sort of *blue-print*, that aims to describe characteristics and behavior for other objects.
+A class might be a *special object*, a sort of *blue-print*, that aims to describe characteristics and behavior for other objects.
 
 ## Basic Notation
 
@@ -48,10 +48,6 @@ A *line dissector* can indicate direction, sort of like an *arrow head:*
 A *dashed circle* may represent a *class:*
 
 <img src="images/dashed-circle.png" width="70" />
-
-Classes can have *names:*
-
-<img src="images/dashed-circle-with-label-my-class.png" width="70" />
 
 ## Structure vs Data
 
@@ -79,13 +75,13 @@ But this notation could also be used for a distinction between classes and *prot
 
 Other parts of the static (or 'class') structure could be drawn with dashed lines too, to try and make a visual distinction between *static* structure and *object* structure:
 
-<img src="images/Classes.009.png" width="325" />
+<img src="images/object-structure-and-class-or-static-structure.png" width="300" />
 
 The rules do not seem to be that precise when it comes to *shapes* drawn with different line styles. The rules for connecting *lines* are a bit stricter.
 
 ## Pointer to a Class
 
-A class could be referenced like an *object*, using an *object line*. That establishes an *pointer to a class*:
+A class could be referenced like an *object*, using an *object line*. That establishes an *pointer to a class:*
 
 <img src="images/pointer-to-class-solid-border.png" width="200" />
 
@@ -95,7 +91,7 @@ Perhaps it will look neater if the pointer is drawn with a *dashed shape* too:
 
 <img src="images/pointer-to-class-dashed-border.png" width="225" />
 
-(In .NET and C# these pointers to classes could represent *type arguments* and *Type objects*.)
+(In .NET and C# these pointers to classes might represent *type arguments* and *Type objects*.)
 
 ## Object Reference with a Class
 
@@ -107,15 +103,15 @@ The __object reference__ points out __Class A__. The __object__ also points out 
 
 <img src="images/object-reference-with-class-2.png" width="325" />
 
-Now the __object reference__ still points out __Class A__. But the __object__ points out __Class B__ instead. The *solid line* is *not valid* anymore, because the object and the object reference have *different* classes.
+Now the __object reference__ still points out __Class A__. But the __object__ points out __Class B__ instead. The *solid line* between shapes is *not valid* anymore, because they have *different* classes.
 
 ## Object Reference without a Class
 
-When an object reference does not have a class, this suggests the possibility to point to *any* object.
+When an object reference does not have a class, this suggests the possibility at point to *any* object.
 
 <img src="images/object-reference-without-class-1.png" width="325" />
 
-The object reference *does not* point out a class. Therefor it can point at an object of *any* class. It points at an object, which so happens to be of *Class A*.
+The object reference *does not* point out a class. Therefore it can point at an object of *any* class. It points at an object, which so happens to be of *Class A*.
 
 <img src="images/object-reference-without-class-2.png" width="325" />
 
