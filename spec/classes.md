@@ -1,4 +1,4 @@
-﻿<img src="images/classes-collage.png" width="700s" />
+﻿<img src="images/classes-collage.png" width="700" />
 
 Classes
 =======
