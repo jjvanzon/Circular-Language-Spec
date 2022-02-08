@@ -19,7 +19,7 @@ __Contents__
 
 ## Introduction
 
-The contents of an object might be *arbitrary*. Anything could be put inside an object:
+The contents of an object may be *arbitrary*. Anything could be put inside an object:
 
 <img src="images/Classes.001.png" width="200" />
 
@@ -29,21 +29,21 @@ A class might be considered a *special object*, a sort of *blue-print*, that aim
 
 ## Basic Notation
 
-The basic notation for pointing out a class might be as follows:
+The basic notation in Circular for pointing out a class is as follows:
 
 <img src="images/object-and-class.png" width="200" />
 
-The *object* on the left points out s *class* on the right.
+The *object* on the left points out a *class* on the right.
 
-A *dashed line* between the circles may point out a *class:*
+A *dashed line* between the circles points out a *class:*
 
 <img src="images/dashed-line.png" width="130" />
 
-A *line dissector* may indicate direction, sort of like an *arrow head:*
+A *line dissector* can indicate direction, sort of like an *arrow head:*
 
 <img src="images/class-line-dissector.png" width="90" />
 
-A *dashed circle* might represent a *class:*
+A *dashed circle* can represent a *class:*
 
 <img src="images/dashed-circle.png" width="70" />
 
@@ -53,15 +53,15 @@ Classes can have *names:*
 
 ## Structure vs Data
 
-When an object has a class, the contents of that object may not be so arbitrary anymore:
+When an object has a class, the contents of that object might not be so arbitrary anymore:
 
 <img src="images/Classes.004.png" width="250" />
 
-An object may initially show *similar contents* as the class. An object may have a similar *structure* as its class, but may have *data* that can change freely:
+An object initially shows *similar contents* as the class. An object has a similar *structure* as its class, but can have *data* that may be changed freely:
 
 <img src="images/Classes.005.png" width="300" />
 
-While the *structure* of the object might be similar to the class, the *data* appears to have changed. *Values* of an object's *attributes* might change as well as *related objects*.
+While the *structure* of the object is similar to the class, the *data* appears to have changed. *Values* of an object's *attributes* can change as well as *related objects*.
 
 ## Prototypes
 
@@ -71,19 +71,19 @@ Here is an alternative where a class is drawn with *solid lined* shape:
 
 Shapes with *dashed lines* might be *optional*.
 
-This might also allow a distinction between classes and *prototypes*: where an object is initially a copy of another object, but anything may be changed about it, even its structure.
+But this notation could also be used for a distinction between classes and *prototypes*: where an object is initially a copy of another object, but anything may be changed about it, even its structure.
 
 ## Static Structure
 
-Other parts of the static (or 'class') structure might be drawn with dashed lines too, to try and make a visual distinction between *static* structure and *object* structure:
+Other parts of the static (or 'class') structure could be drawn with dashed lines too, to try and make a visual distinction between *static* structure and *object* structure:
 
 <img src="images/Classes.009.png" width="325" />
 
-The rules do not seem to be that precise when it comes to *shapes* drawn with different line styles. The rules for connecting *lines* might be a bit stricter.
+The rules do not seem to be that precise when it comes to *shapes* drawn with different line styles. The rules for connecting *lines* are a bit stricter.
 
 ## Pointer to a Class
 
-A class might be referenced like an *object*, using an *object line*. That establishes an *pointer to a class*:
+A class could be referenced like an *object*, using an *object line*. That establishes an *pointer to a class*:
 
 <img src="images/Classes.012.png" width="200" />
 
@@ -121,6 +121,6 @@ Here the *Object* points out *Class B* instead of Class A. But since the *object
 
 ## Conclusion
 
-Hopefully this gave an impression of how *class* notation might look in the Circular language.
+This article aimed to give an impression of how *class* notation could look in the Circular language.
 
 [back](..)
