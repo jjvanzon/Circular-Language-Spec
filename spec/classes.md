@@ -27,7 +27,7 @@ The contents of an object may be *arbitrary*. Anything could be put inside an ob
 
 But an object can also select another object to serve as its *class* or *prototype*.
 
-That class might be a *special object*, a sort of *blue-print*, that aims to describe characteristics and behavior for other objects.
+That *class* determines what *type* of object it is. A class might be a *special object*, a sort of *blue-print*, that aims to describe characteristics and behavior for other objects.
 
 ## Basic Notation
 
