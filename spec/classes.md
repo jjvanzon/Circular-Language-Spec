@@ -41,7 +41,7 @@ A *dashed line* between the circles points out a *class:*
 
 <img src="images/dashed-line.png" width="130" />
 
-A *line dissector* can indicate direction, sort of like an *arrow head:*
+A *line dissector* can indicate *direction*, sort of like an *arrow head:*
 
 <img src="images/class-line-dissector.png" width="90" />
 
@@ -55,29 +55,29 @@ When an object has a class, the contents of that object might not be so arbitrar
 
 <img src="images/Classes.004.png" width="250" />
 
-An object initially shows contents *identical* to the class. An object might have the same *structure* as its class, but can have *data* that may be changed freely:
+An object initially shows contents *identical* to the class. An object might have the same *structure* as its class, but can have *data* that may freely change:
 
 <img src="images/Classes.005.png" width="300" />
 
-While the *structure* of the object is similar to the class, the *data* appears to have changed. *Values* of an object's *attributes* can change as well as *related objects*.
+While the *structure* of the object is still the same, the *data* appears to have changed. *Values* of an object's *attributes* can change as well as *related objects*.
 
 ## Prototypes
 
-Here is an alternative where a class is drawn with *solid lined* shape:
+Here is an alternative where a class is drawn with *solid line* circle:
 
 <img src="images/object-and-class-with-solid-lined-shape.png" width="200" />
 
-Shapes with *dashed lines* might be *optional*.
+Shapes with *dashed lines* seem to be *optional*.
 
-But this notation could also be used for a distinction between classes and *prototypes:* where an object is initially a copy of another object, but anything may be changed about it, even its structure.
+The solid line shape could also be used for a distinction between classes and *prototypes:* where an object is initially a copy of another object, but anything may be changed about it, even its structure.
 
 ## Static Structure
 
-Other parts of the static (or 'class') structure could be drawn with dashed lines too, to try and make a visual distinction between *static* structure and *object* structure:
+To try and make a visual distinction between *static* structure and *object* structure, other parts of the static (or 'class') structure could be drawn with dashed lines too:
 
 <img src="images/object-structure-and-class-or-static-structure.png" width="300" />
 
-The rules do not seem to be that precise when it comes to *shapes* drawn with different line styles. The rules for connecting *lines* are a bit stricter.
+The rules do not seem to be that precise when it comes to *shapes* drawn with different line styles. The rules for *connection lines* are a bit stricter.
 
 ## Pointer to a Class
 
@@ -87,15 +87,15 @@ A class could be referenced like an *object*, using an *object line*. That estab
 
 That *solid* line in the middle means it is a *pointer*.
 
+In .NET and C# these pointers to classes might represent *type arguments* and *Type objects*.
+
 Perhaps it will look neater if the pointer is drawn with a *dashed shape* too:
 
 <img src="images/pointer-to-class-dashed-border.png" width="225" />
 
-(In .NET and C# these pointers to classes might represent *type arguments* and *Type objects*.)
-
 ## Object Reference with a Class
 
-Similar to an *object*, an *object reference* can also have a class. In that case merely objects of that class can be referenced.
+Just like an *object*, an *object reference* can have a class as well. In that case merely objects of *that class* can be referenced.
 
 <img src="images/object-reference-with-class-1.png" width="250" />
 
