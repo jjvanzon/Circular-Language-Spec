@@ -27,7 +27,7 @@ The contents of an object may be *arbitrary*. Anything could be put inside an ob
 
 But an object can also select another object to serve as its *class* or *prototype*.
 
-A class might be a *special object*, a sort of *blue-print*, that aims to describe characteristics and behavior for other objects.
+That class might be a *special object*, a sort of *blue-print*, that aims to describe characteristics and behavior for other objects.
 
 ## Basic Notation
 
@@ -77,7 +77,7 @@ To try and make a visual distinction between *static* structure and *object* str
 
 <img src="images/object-structure-and-class-or-static-structure.png" width="300" />
 
-The rules do not seem to be that precise when it comes to *shapes* drawn with different line styles. The rules for *connection lines* are a bit stricter.
+The rules do not seem to be that precise when it comes to *shapes* drawn with different line styles. The rules for *connection lines* are a bit stricter though.
 
 ## Pointer to a Class
 
