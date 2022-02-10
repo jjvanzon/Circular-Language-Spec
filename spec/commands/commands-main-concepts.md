@@ -13,7 +13,7 @@ __Contents__
 - [Derived Constructs](#derived-constructs)
 - [Command Definitions](#command-definitions)
 - [Command Calls](#command-calls)
-- [How Calls May Work](#how-calls-may-work)
+- [How Calls Work](#how-calls-work)
 - [Command References](#command-references)
 - [How Command References May Work](#how-command-references-may-work)
 - [Code Blocks](#code-blocks)
@@ -49,7 +49,7 @@ There can be solid, dashed or dotted lines between command symbols. Names can be
 
 ## Diagram Elements
 
-Commands can have certain characteristics, that can be symbolized in Circular.
+Commands can have certain characteristics, symbolized in Circular.
 
 A *diamond* may express that a command is __executable__:
 
@@ -59,11 +59,11 @@ A *square* can symbolize that the command is __not executable__:
 
 <img src="images/1.%20Commands%20Main%20Concepts.001.png" width="50" />
 
-Relations between commands may be expressed by __containment__. One symbol can *contain* another:
+Relations between commands can be expressed by __containment__. One symbol can *contain* another:
 
 <img src="images/1.%20Commands%20Main%20Concepts.003.png" width="100" />
 
-A *solid line* between symbols indicates that one command is a __reference__ to another:
+A *solid line* indicates that one command is a __reference__ to another:
 
 <img src="images/1.%20Commands%20Main%20Concepts.004.png" width="100" />
 
@@ -73,7 +73,7 @@ A *dashed line* between command symbols might make one command a kind of copy of
 
 <img src="images/1.%20Commands%20Main%20Concepts.005.png" width="80" />
 
-That way, a command might be used as a __definition__ for another command.
+That way, one command might be used as a __definition__ for another command.
 
 If a command is used as a definition, a *dashed border* may be used:
 
@@ -81,11 +81,11 @@ If a command is used as a definition, a *dashed border* may be used:
 
 (Using dashed shapes is still a bit of an open discussion.)
 
-A command can have a *name*:
+A command can have a *name:*
 
 <img src="images/1.%20Commands%20Main%20Concepts.007.png" width="140" />
 
-It can also be *nameless.*
+It can also be *nameless:*
 
 <img src="images/1.%20Commands%20Main%20Concepts.001.png" width="50" />
 
@@ -113,7 +113,7 @@ Constructs that might be known from other programming languages, may have a reas
 
 ## Command Definitions
 
-A command definition can describe the structure and behavior of another command.
+A command *definition* can describe the structure and behavior of another command.
 
 It may look as follows in another programming language:
 
@@ -123,7 +123,7 @@ void MyDefinition()
 }
 ```
 
-Command definitions themselves might not necessarily execute. Just copies of it, more likely. Its *not executing* may be expressed with a square: 
+Command definitions themselves might not necessarily execute. Just copies of it, more likely. *Not executing* may be expressed with a square: 
 
 <img src="images/1.%20Commands%20Main%20Concepts.008.png" width="50" />
 
@@ -158,7 +158,7 @@ because it is:
  
 ## Command Calls
 
-A command definition might be *called* multiple times.
+A command definition can be *called* multiple times.
 
 In a different programming language a command call may look as follows:
 
@@ -166,11 +166,11 @@ In a different programming language a command call may look as follows:
 MyCommand();
 ```
 
-A command call may *execute*, so it might be symbolized with a diamond shape:
+A call may *execute*, so it is symbolized with a diamond shape:
 
 <img src="images/1.%20Commands%20Main%20Concepts.002.png" width="50" />
 
-A call may point out a definition, which might give it a *dashed line* pointing away from it:
+A call may point out a definition, giving it a *dashed line* pointing away from it:
 
 <img src="images/1.%20Commands%20Main%20Concepts.011.png" width="120" />
 
@@ -178,7 +178,7 @@ A call might be placed *inside* a parent command.
 
 <img src="images/1.%20Commands%20Main%20Concepts.012.png" width="140" />
 
-The call itself might remain *nameless*.
+The call itself could remain *nameless*.
 
 So a command call might be symbolized by:
 
@@ -194,21 +194,21 @@ because it may be:
 - contained inside a definition
 - uses another command as a definition
 
-## How Calls May Work
+## How Calls Work
 
-To make one command call another command, a diamond might be put in the calling command and it may be connected to the command to call.
+To make one command call another, a diamond is put in the calling command connected to the command to call.
 
 ![](images/7.%20Commands%20Ideas.014.jpeg)
 
-It could be said that __A__ calls __B__, or __B__ is called from __A__.
+It could be said that __A__ calls __B__.
 
-__C__ is now sort of part of command __A__ and it might execute when __A__ executes. It’s like the code of __B__ is inserted right into command __A__.
+__C__ is now sort of part of command __A__. It executes when __A__ executes. It’s like the code of __B__ is inserted right into command __A__.
 
-When one square is called, its contained squares may be called too.
+When one square is called, its contained squares will be called too.
 
 ![](images/7.%20Commands%20Ideas.015.jpeg)
 
-When __A__ may be called, __B__ may be called. When __B__ would be called, __C__, __D__ and __E__ might be called too.
+When __A__ is called, __B__ is called. When __B__ would be called, __C__, __D__ and __E__ are called too.
 
 ## Command References
 
