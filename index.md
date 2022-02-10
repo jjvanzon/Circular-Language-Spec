@@ -9,12 +9,12 @@ This is an attempt at a specification of this language.
 - [Introduction](spec/introduction.md)
 - [Objects](spec/objects/objects.md)
 - [Classes](spec/classes.md)
+- [Commands (Main Concepts)](spec/commands/commands-main-concepts.md)
 
 <!--
 - [Basic Diagram Elements](spec/basic-diagram-elements.md)
 - [Attributes](spec/objects/attributes.md)
 - [Relationships](spec/relationships.md)
-- [Commands Main Concepts](spec/commands/commands-main-concepts.md)
 -->
 
 The more finished up articles might be found on these web pages.  
