@@ -242,7 +242,7 @@ because it is:
 
 ## How Command References Work
 
-A square connected to another command may be a mere *reference* to a command.
+A square connected to another command may establish a *reference* to a command.
 
 ![](images/7.%20Commands%20Ideas.013.png)
 
@@ -254,7 +254,7 @@ Therefore, when a command reference is called, the referenced command is called:
 
 When __A__ calls __B__, it’s actually calling __C__.
 
-Command references may be a way to leave the command to call undetermined, variable, to be determined later.
+Command references can be a way to leave the command to call undetermined, variable, to be determined later.
 
 ## Code Blocks
 
@@ -287,7 +287,7 @@ A code block can also look like this:
 
 The previous diagram showed a code block within a definition (a square). This diagram shows the code block in an execution (a diamond).
 
-So a code block ois symbolized by:
+So a code block is symbolized by:
 
 - a diamond
 - inside another command
