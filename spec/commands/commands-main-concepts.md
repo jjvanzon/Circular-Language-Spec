@@ -28,12 +28,6 @@ __Contents__
 - [Implementation](#implementation)
 - [Parameters and Return Values Not Covered](#parameters-and-return-values-not-covered)
 - [Conclusion](#conclusion)
-- [Synonyms](#synonyms)
-    - [Command Definition Synonyms](#command-definition-synonyms)
-    - [Definition Line Synonyms](#definition-line-synonyms)
-    - [Executable Command Synonyms](#executable-command-synonyms)
-    - [Command Call Synonyms](#command-call-synonyms)
-    - [Command Reference Synonyms](#command-reference-synonyms)
 
 ## Introduction
 
@@ -494,44 +488,3 @@ Symbolizations for parameters and return values might not be covered much in thi
 ## Conclusion
 
 Using commands constructs from Circular, it may seem circumstantial whether a command symbol might be stereotyped as a block, clause, definition, call, etc. It seems to result from the way basic language elements from Circular relate to each other. Still, it may be relevant to be aware how these symbols from Circular can be combined to represent constructs from other languages.
-
-## Synonyms
-
-The following terms may possibly be used interchangeably depending on context.
-
-### Command Definition Synonyms
-
-- prototype
-- blue-print
-- inactive command
-- inactive command symbol
-- square
-- definition
-
-### Definition Line Synonyms
-
-- command definition line
-- call line
-- prototype line
-- dashed line
-
-### Executable Command Synonyms
-
-- active command
-- active command symbol
-- diamond
-- executable command symbol
-- execution
-- execution point
-
-### Command Call Synonyms
-
-- execution
-
-### Command Reference Synonyms
-
-- function pointer
-- method reference
-- delegate
-
-[back](../../)

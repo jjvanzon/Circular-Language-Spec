@@ -11,6 +11,12 @@ __Contents__
 - [Active and Inactive Terminology](#active-and-inactive-terminology)
 - [Nested Commands Terminology](#nested-commands-terminology)
 - [Loose Ideas about Terminology](#loose-ideas-about-terminology)
+- [Synonyms](#synonyms)
+    - [Command Definition Synonyms](#command-definition-synonyms)
+    - [Definition Line Synonyms](#definition-line-synonyms)
+    - [Executable Command Synonyms](#executable-command-synonyms)
+    - [Command Call Synonyms](#command-call-synonyms)
+    - [Command Reference Synonyms](#command-reference-synonyms)
 
 ## Introduction
 
@@ -100,3 +106,45 @@ A command symbol might have one of four roles:
 -----
 
 The terms executor and execution.
+
+
+## Synonyms
+
+The following terms may possibly be used interchangeably depending on context.
+
+### Command Definition Synonyms
+
+- prototype
+- blue-print
+- inactive command
+- inactive command symbol
+- square
+- definition
+
+### Definition Line Synonyms
+
+- command definition line
+- call line
+- prototype line
+- dashed line
+
+### Executable Command Synonyms
+
+- active command
+- active command symbol
+- diamond
+- executable command symbol
+- execution
+- execution point
+
+### Command Call Synonyms
+
+- execution
+
+### Command Reference Synonyms
+
+- function pointer
+- method reference
+- delegate
+
+[back](../../)
