@@ -246,9 +246,9 @@ A square connected to another command may be a mere *reference* to a command.
 
 ![](images/7.%20Commands%20Ideas.013.png)
 
-A call to any square that represents the same command, might be a call to the same command. A reference to either of the command references, is a reference to the same command.
+Both squares now represent the same command. A call to either square, is a call to the same command.
 
-Therefore, when a command reference might be called, it is like the referenced command is called:
+Therefore, when a command reference is called, the referenced command is called:
 
 ![](images/7.%20Commands%20Ideas.017.jpeg)
 
