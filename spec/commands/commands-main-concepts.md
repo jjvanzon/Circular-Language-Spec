@@ -9,22 +9,22 @@ __Contents__
 
 - [Introduction](#introduction)
 - [Diagram Elements](#diagram-elements)
-    - [Squares May Not Execute](#squares-may-not-execute)
+- [Squares May Not Execute](#squares-may-not-execute)
 - [Derived Constructs](#derived-constructs)
 - [Command Definitions](#command-definitions)
 - [Command Calls](#command-calls)
-    - [How Calls May Work](#how-calls-may-work)
+- [How Calls May Work](#how-calls-may-work)
 - [Command References](#command-references)
-    - [How Command References May Work](#how-command-references-may-work)
+- [How Command References May Work](#how-command-references-may-work)
 - [Code Blocks](#code-blocks)
-    - [Code Blocks Details](#code-blocks-details)
+- [Code Blocks Details](#code-blocks-details)
 - [Local Functions](#local-functions)
 - [Clauses](#clauses)
 - [Lambda Expressions](#lambda-expressions)
 - [Nested Commands](#nested-commands)
-    - [Active Nested Command](#active-nested-command)
-    - [Inactive Nested Command](#inactive-nested-command)
-    - [Deeper Nested Command](#deeper-nested-command)
+- [Active Nested Command](#active-nested-command)
+- [Inactive Nested Command](#inactive-nested-command)
+- [Deeper Nested Command](#deeper-nested-command)
 - [Implementation](#implementation)
 - [Parameters and Return Values Not Covered](#parameters-and-return-values-not-covered)
 - [Conclusion](#conclusion)
@@ -99,7 +99,7 @@ Here is an attempt to summarize these traits of commands:
 - __prototypes__ (or "definitions")
 - __(not) named__
 
-### Squares May Not Execute
+## Squares May Not Execute
 
 ![](images/7.%20Commands%20Ideas.037.jpeg)
 
@@ -196,7 +196,7 @@ because it may be:
 - contained inside a definition
 - uses another command as a definition
 
-### How Calls May Work
+## How Calls May Work
 
 To make one command call another command, a diamond might be put in the calling command and it may be connected to the command to call.
 
@@ -242,7 +242,7 @@ because it is:
 - not executable (directly)
 - a reference
 
-### How Command References May Work
+## How Command References May Work
 
 A square connected to another command may be a mere *reference* to a command.
 
@@ -304,7 +304,7 @@ because it is:
 - not a reference
 - not a definition
 
-### Code Blocks Details
+## Code Blocks Details
 
 Code blocks might be nested even further:
 
@@ -437,7 +437,7 @@ The concept of nested commands may coincide with the terms:
 
 Those may all be examples of *nested commands*. Sometimes however, it might be easier to use a single name for these phenomena.
 
-### Active Nested Command
+## Active Nested Command
 
 A nested command that is a diamond, might be called an *active* nested command:
 
@@ -448,7 +448,7 @@ It may be called *active*, because it *executes*.
 
 *Active* nested commands might be *code blocks*.
 
-### Inactive Nested Command
+## Inactive Nested Command
 
 An *inactive* nested command may be a nested command that does not execute. So it may be a nested command that is a square:
 
@@ -465,7 +465,7 @@ It might not execute unless it is called:
 - Local functions
 - Lambda expressions
 
-### Deeper Nested Command
+## Deeper Nested Command
 
 A deeper nested command may be a nested command inside a nested command.
 
