@@ -9,7 +9,7 @@ This is an attempt at a specification of this language.
 - [Introduction](spec/introduction.md)
 - [Objects](spec/objects/objects.md)
 - [Classes](spec/classes.md)
-- [Commands (Main Concepts)](spec/commands/commands-main-concepts.md)
+- [Commands](spec/commands/commands-main-concepts.md)
 
 <!--
 - [Basic Diagram Elements](spec/basic-diagram-elements.md)

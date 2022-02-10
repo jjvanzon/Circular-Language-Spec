@@ -1,5 +1,5 @@
-﻿Commands | Main Concepts
-========================
+﻿Commands
+========
 
 *JJ van Zon, 2022*
 
@@ -15,7 +15,7 @@ __Contents__
 - [Command Calls](#command-calls)
 - [How Calls Work](#how-calls-work)
 - [Command References](#command-references)
-- [How Command References May Work](#how-command-references-may-work)
+- [How Command References Work](#how-command-references-work)
 - [Code Blocks](#code-blocks)
 - [Code Blocks Details](#code-blocks-details)
 - [Local Functions](#local-functions)
@@ -31,7 +31,7 @@ __Contents__
 
 ## Introduction
 
-Commands are *executable* objects: actions, procedures, processes, that a computer can perform. In Circular they are displayed as squares and diamond shapes:
+Commands are *executable* objects: actions, procedures, processes, that a computer can perform. In *Circular* they are displayed as squares and diamond shapes:
 
 <img src="images/1.%20Commands%20Main%20Concepts.001.png" width="50" /> <img src="images/1.%20Commands%20Main%20Concepts.002.png" width="50" />
 
@@ -208,11 +208,11 @@ When one square is called, its contained squares will be called too.
 
 ![](images/7.%20Commands%20Ideas.015.jpeg)
 
-When __A__ is called, __B__ is called. When __B__ would be called, __C__, __D__ and __E__ are called too.
+When __A__ is called, __B__ is called. When __B__ is called, __C__, __D__ and __E__ are called too.
 
 ## Command References
 
-A command could be *pointed to*.
+A command can be *pointed to*.
 
 This may look as follows in another programming language:
 
@@ -220,9 +220,9 @@ This may look as follows in another programming language:
 MyCommand
 ```
 
-So without decoration with brackets or what have you, it may represent a reference to a command.
+So without decoration with brackets or what have you, it may represent a *reference* to a command.
 
-A command reference may be a square, to indicate it might not *execute* directly.
+A command reference may be a square, to indicate does not *execute* directly.
 
 <img src="images/1.%20Commands%20Main%20Concepts.008.png" width="50" />
 
@@ -230,7 +230,7 @@ A *solid line* can be used to point out a different command:
 
 <img src="images/1.%20Commands%20Main%20Concepts.013.png" width="400" />
 
-So a command reference might be symbolized by:
+So a command reference is symbolized by:
 
 - square 
 - solid line pointing to another command
@@ -240,7 +240,7 @@ because it is:
 - not executable (directly)
 - a reference
 
-## How Command References May Work
+## How Command References Work
 
 A square connected to another command may be a mere *reference* to a command.
 
@@ -258,9 +258,9 @@ Command references may be a way to leave the command to call undetermined, varia
 
 ## Code Blocks
 
-Some programming languages might allow code blocks within a command, to group statements together. This might scope variables, so variables inside the block might only be used within that block, for some added safety against programming errors, perhaps.
+Some programming languages allow code blocks within a command, to group statements together. This might scope variables, so variables inside the block may only be used within that block, for some added safety against programming errors, perhaps.
 
-In another programming language, this might look as follows:
+In another programming language, this can look as follows:
 
 ```c#
 void MyDefinition()
@@ -271,23 +271,23 @@ void MyDefinition()
 }
 ```
 
-The inner braces and its contents might be the code block.
+The inner braces and its contents are the code block.
 
-In Circular, a code block may be *embedded* inside another command:
+In Circular, a code block is *embedded* inside another command:
 
 <img src="images/1.%20Commands%20Main%20Concepts.014.png" width="100" />
 
-The inner command (the code block) might be drawn as a *diamond*: it *executes* if the parent command executes.
+The inner command (the code block) is drawn as a *diamond*: it *executes* if the parent command executes.
 
-A code block might be *nameless*. It might not have any *lines* going towards it or away from it.
+A code block is *nameless*. It would not have any *lines* going towards it or away from it.
 
-A code block might also look like this:
+A code block can also look like this:
 
 <img src="images/1.%20Commands%20Main%20Concepts.015a.png" width="100" />
 
-The previous diagram might show a code block within a definition (a square). This diagram shows the code block while that command is executed.
+The previous diagram showed a code block within a definition (a square). This diagram shows the code block in an execution (a diamond).
 
-So a code block might be symbolized by:
+So a code block ois symbolized by:
 
 - a diamond
 - inside another command
@@ -300,7 +300,7 @@ because it is:
 - contained by another command
 - nameless
 - not a reference
-- not a definition
+- not a definition for another command
 
 ## Code Blocks Details
 
