@@ -9,7 +9,7 @@ __Contents__
 
 - [Introduction](#introduction)
 - [Diagram Elements](#diagram-elements)
-- [Squares May Not Execute](#squares-may-not-execute)
+- [Squares Do Not Execute](#squares-do-not-execute)
 - [Derived Constructs](#derived-constructs)
 - [Command Definitions](#command-definitions)
 - [Command Calls](#command-calls)
@@ -31,13 +31,13 @@ __Contents__
 
 ## Introduction
 
-Commands may be objects, that so happen to be *executable*. Commands could be actions, procedures and processes, that a computer might perform. They might be displayed in a diagram as squares and diamond shapes:
+Commands are *executable* objects: actions, procedures, processes, that a computer can perform. In Circular they are displayed as squares and diamond shapes:
 
 <img src="images/1.%20Commands%20Main%20Concepts.001.png" width="50" /> <img src="images/1.%20Commands%20Main%20Concepts.002.png" width="50" />
 
-They may represent elements of the command structure. The *square* may be a general symbol for a command. The *diamond* may have a special meaning.
+The *square* may be the general symbol for a command. The *diamond* has special meaning with regards to execution.
 
-Relations between commands might be expressed by *containment*:
+Relations between commands can be expressed by *containment*:
 
 ![](images/7.%20Commands%20Ideas.010.jpeg)
 
@@ -45,77 +45,75 @@ And by connecting them with *lines:*
 
 ![](images/7.%20Commands%20Ideas.011.jpeg)
 
-There can be solid, dashed or dotted lines between command symbols. Names might be displayed with commands as well.
+There can be solid, dashed or dotted lines between command symbols. Names can be displayed with commands as well.
 
 ## Diagram Elements
 
-Command concepts may involve a specific set of characteristics.
+Commands can have certain characteristics, that can be symbolized in Circular.
 
-A *diamond* in Circular may express a command that may be __executable__.
+A *diamond* may express that a command is __executable__:
 
 <img src="images/1.%20Commands%20Main%20Concepts.002.png" width="50" />
 
-The side effect of a diamond might be that it *executes*. An *executable* command might be carried out, while one that is *not executable*, might stay asleep.
-
-A *square* in Circular might symbolize that the command is __not executable__.
+A *square* can symbolize that the command is __not executable__:
 
 <img src="images/1.%20Commands%20Main%20Concepts.001.png" width="50" />
 
-Relations between commands may be expressed by __containment__. One symbol might *contain* another:
+Relations between commands may be expressed by __containment__. One symbol can *contain* another:
 
 <img src="images/1.%20Commands%20Main%20Concepts.003.png" width="100" />
 
-A *solid line* between symbols might mean that one command is a __reference__ to another:
+A *solid line* between symbols indicates that one command is a __reference__ to another:
 
 <img src="images/1.%20Commands%20Main%20Concepts.004.png" width="100" />
 
-Two symbols connected with a line, might be considered the same command.
+Two symbols connected with a solid line, may be *the same* command.
 
 A *dashed line* between command symbols might make one command a kind of copy of another:
 
 <img src="images/1.%20Commands%20Main%20Concepts.005.png" width="80" />
 
-It might also be said, that a command might be used as a __prototype__ for another command.
+That way, a command might be used as a __definition__ for another command.
 
-If a command might be used as a prototype, it might be drawn with a *dashed border*:
+If a command is used as a definition, a *dashed border* may be used:
 
 <img src="images/1.%20Commands%20Main%20Concepts.006.png" width="80" />
 
 (Using dashed shapes is still a bit of an open discussion.)
 
-A command may have a *name*:
+A command can have a *name*:
 
 <img src="images/1.%20Commands%20Main%20Concepts.007.png" width="140" />
 
-It might also be *nameless.*
+It can also be *nameless.*
 
 <img src="images/1.%20Commands%20Main%20Concepts.001.png" width="50" />
 
-Here is an attempt to summarize these traits of commands:
+To summarize, here is a list traits a command might have:
 
 - __(not) executable__
 - __containment__
 - __references__
-- __prototypes__ (or "definitions")
+- __definitions__ (or "prototypes")
 - __(not) named__
 
-## Squares May Not Execute
+## Squares Do Not Execute
 
 ![](images/7.%20Commands%20Ideas.037.jpeg)
 
-A square might not execute. Well, they may only execute when called. __A__ may call __B__:
+A square does not execute. Well, it may only execute when *called*. __A__ may call __B__:
 
 ![](images/7.%20Commands%20Ideas.038.jpeg)
 
-But then again: __A__ may be the one that’s executing, not __B__. So diamonds may execute, and squares may not.
+But then again: __A__ may be the one that’s executing, not __B__. So diamonds execute, and squares do not.
 
 ## Derived Constructs
 
-Constructs that might be known from other programming languages, may have a reasonably unique expression using combinations of these more basic elements from Circular. Here follows an attempt to accompany this claim with examples.
+Constructs that might be known from other programming languages, may have a reasonably unique expression using combinations of these basic elements from Circular. Here follows an attempt to accompany this claim with examples.
 
 ## Command Definitions
 
-A command definition might describe the structure and behavior of another command.
+A command definition can describe the structure and behavior of another command.
 
 It may look as follows in another programming language:
 
@@ -125,7 +123,7 @@ void MyDefinition()
 }
 ```
 
-Command definitions themselves might not necessarily execute. Just copies of it, more likely. Its *not executing* may be expressed by means of a square: 
+Command definitions themselves might not necessarily execute. Just copies of it, more likely. Its *not executing* may be expressed with a square: 
 
 <img src="images/1.%20Commands%20Main%20Concepts.008.png" width="50" />
 
@@ -135,7 +133,7 @@ When a command is used as a definition, it might be drawn with a *dashed border*
 
 (Though dashed shape notation is still a bit of an open discussion.)
 
-A definition might have a *name*:
+A definition can have a *name*:
 
 <img src="images/1.%20Commands%20Main%20Concepts.009.png" width="140" />
 
@@ -143,16 +141,16 @@ When used, a command definition may be pointed to by a *dashed line*:
 
 <img src="images/1.%20Commands%20Main%20Concepts.010.png" width="210" />
 
-That way another symbol might use `MyDefinition` as a *prototype*.
+That way another symbol can use `MyDefinition` as a *prototype*.
 
-So a command definition might be symbolized by:
+So a command definition is symbolized by:
 
 - square
 - named
 - dashed
 - pointed to with dashed lines
 
-because it may be:
+because it is:
 
 - not executable (directly)
 - named
@@ -488,3 +486,5 @@ Symbolizations for parameters and return values might not be covered much in thi
 ## Conclusion
 
 Using commands constructs from Circular, it may seem circumstantial whether a command symbol might be stereotyped as a block, clause, definition, call, etc. It seems to result from the way basic language elements from Circular relate to each other. Still, it may be relevant to be aware how these symbols from Circular can be combined to represent constructs from other languages.
+
+It deserves to be said, that these symbolizations are just *ideas*. Depending on how this language might be used by a tool, different choices might be made.
