@@ -366,7 +366,7 @@ The following notation can be used for a clause:
 
 <img src="images/1.%20Commands%20Main%20Concepts.020.png" width="100" />
 
-In another alternative, it looks like a nameless *local function* passed as a *reference* to the `if` statement:
+In another alternative, it looks like a nameless *local function* passed as a *reference*:
 
 <img src="images/1.%20Commands%20Main%20Concepts.021.png" width="170" />
 
