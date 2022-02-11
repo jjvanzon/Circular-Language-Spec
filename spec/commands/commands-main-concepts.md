@@ -253,7 +253,7 @@ Therefore, when a command reference is called, the referenced command is called:
 
 When __A__ calls __B__, it’s actually calling __C__.
 
-Command references can be a way to leave the command to call undetermined, variable, to be determined later.
+Command references can be a way to leave the command to call *undetermined*, *variable*, to be determined later.
 
 ## Code Blocks
 
