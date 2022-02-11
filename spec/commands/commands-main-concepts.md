@@ -280,7 +280,7 @@ In Circular, a code block is *embedded* inside another command:
 
 <img src="images/1.%20Commands%20Main%20Concepts.014.png" width="100" />
 
-The inner command (the code block) is drawn as a *diamond:* it *executes* (if the parent command executes).
+The inner command (the code block) is drawn as a *diamond:* it *executes* (when the parent command executes).
 
 A code block is *nameless*. It does not have any *lines* going towards it or away from it.
 
@@ -311,7 +311,7 @@ because it is:
 
 ## Local Functions
 
-A local function might be known from other programming languages and may mean a command that is defined within another command.
+A local function might be known from other programming languages and would mean a command that is defined within another command.
 
 In a different programming language this might look as follows:
 
@@ -324,19 +324,19 @@ void MyParentCommand()
 }
 ```
 
-In Circular it might also be a command definition contained within another command definition:
+In Circular it is also a command definition, contained within another command definition:
 
 <img src="images/1.%20Commands%20Main%20Concepts.017.png" width="100" />
 
-When peeking at another programming language, a local function seems to be able to have a name:
+A local function can have a *name*:
 
 <img src="images/1.%20Commands%20Main%20Concepts.018.png" width="160" />
 
-It may also be *called* from within its parent command:
+It can be *called* from within its parent command:
 
 <img src="images/1.%20Commands%20Main%20Concepts.019.png" width="200" />
 
-So a local function might be symbolized by:
+So a local function is symbolized by:
 
 - a square
 - within a square
