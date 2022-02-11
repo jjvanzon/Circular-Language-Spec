@@ -36,7 +36,7 @@ Commands are *executable* objects: actions, procedures, processes, that a comput
 
 The *square* may be the general symbol for a command. The *diamond* has special meaning with regards to execution.
 
-Relations between commands can be expressed by *containment*:
+Relations between commands can be expressed by *containment:*
 
 ![](images/7.%20Commands%20Ideas.010.jpeg)
 
@@ -130,17 +130,17 @@ Command definitions themselves might not necessarily execute. Just copies of it,
 
 <img src="images/1.%20Commands%20Main%20Concepts.008.png" width="50" />
 
-When a command is used as a definition, it might be drawn with a *dashed border*:
+When a command is used as a definition, it might be drawn with a *dashed border:*
 
 <img src="images/1.%20Commands%20Main%20Concepts.006.png" width="70" />
 
 (Though dashed shape notation is still a bit of an open discussion.)
 
-A definition can have a *name*:
+A definition can have a *name:*
 
 <img src="images/1.%20Commands%20Main%20Concepts.009.png" width="140" />
 
-When used, it may be pointed to by a *dashed line*:
+When used, it may be pointed to by a *dashed line:*
 
 <img src="images/1.%20Commands%20Main%20Concepts.010.png" width="210" />
 
@@ -328,7 +328,7 @@ In Circular it is also: a *command definition*, contained within another *comman
 
 <img src="images/1.%20Commands%20Main%20Concepts.017.png" width="100" />
 
-A local function has a *name*:
+A local function has a *name:*
 
 <img src="images/1.%20Commands%20Main%20Concepts.018.png" width="160" />
 
@@ -411,9 +411,9 @@ Or:
 
 ## Nested Commands
 
-A nested command is a command defined within a command.
+Nested commands are commands defined within a command.
 
-They can look like this:
+They look like this:
 
 <img src="images/7.%20Commands%20Ideas.021.jpeg" width="90" /> <img src="images/7.%20Commands%20Ideas.019.jpeg" width="80" /> <img src="images/1.%20Commands%20Main%20Concepts.015a.png" width="60" /> <img src="images/1.%20Commands%20Main%20Concepts.015b.png" width="60" />
 
@@ -430,7 +430,7 @@ Those can all be considered *nested commands*. Sometimes however, it is easier t
 
 ## Active Nested Command
 
-A nested command that is a diamond, can be called an *active* nested command:
+A nested command that is a *diamond*, can be called an *active* nested command:
 
 <img src="images/7.%20Commands%20Ideas.030.png" width="200" />
 <img src="images/7.%20Commands%20Ideas.031.png" width="100" />
@@ -441,14 +441,14 @@ It is called *active*, because it *executes*.
 
 ## Inactive Nested Command
 
-An *inactive* nested command is one that *does not execute*. So it is a *square*:
+An *inactive* nested command is one that *does not execute*. Therefor it is displayed as *square:*
 
-<img src="images/7.%20Commands%20Ideas.033.png" width="190" />
+<img src="images/inactive-nested-command-with-label.png" width="190" />
 <img src="images/7.%20Commands%20Ideas.032.png" width="120" />
 
-It might not execute unless it is *called*:
+It does not execute unless it is *called:*
 
-![](images/7.%20Commands%20Ideas.022.jpeg)
+<img src="images/7.%20Commands%20Ideas.022.jpeg" width="300" />
 
 *Inactive* nested commands can be:
 
