@@ -44,7 +44,11 @@ And by connecting them with *lines:*
 
 ![](images/7.%20Commands%20Ideas.011.jpeg)
 
-There can be solid, dashed or dotted lines between command symbols. Names can be displayed with commands as well.
+There can be solid, dashed or dotted lines between command symbols:
+
+![](images/solid-line.png) ![](images/dashed-line-diagonal.png) ![](images/dotted-line.png) 
+
+Names can be displayed with commands as well.
 
 ## Diagram Elements
 

@@ -60,7 +60,7 @@ The diagrams might involve set of basic elements, that may include the following
 
 ![](images/Basic%20Diagram%20Elements.001.png) ![](images/Basic%20Diagram%20Elements.002.png) ![](images/Basic%20Diagram%20Elements.003.png) ![](images/Basic%20Diagram%20Elements.004.png) ![](images/Basic%20Diagram%20Elements.005.png) ![](images/Basic%20Diagram%20Elements.006.png)
 
-![](images/Basic%20Diagram%20Elements.007.png) ![](images/Basic%20Diagram%20Elements.008.png) ![](images/Basic%20Diagram%20Elements.009.png) <img src="images/Basic%20Diagram%20Elements.010.png" width="60" /> ![](images/Basic%20Diagram%20Elements.011.png)
+![](images/solid-line.png) ![](images/dashed-line-diagonal.png) ![](images/dotted-line.png) <img src="images/Basic%20Diagram%20Elements.010.png" width="60" /> ![](images/Basic%20Diagram%20Elements.011.png)
 
 ![](images/Basic%20Diagram%20Elements.012.png) ![](images/Basic%20Diagram%20Elements.013.png) ![](images/Basic%20Diagram%20Elements.014.png)
 
@@ -132,19 +132,19 @@ Now follows an attempt to summarize how that might work.
 
 ## Solid Line
 
-![](images/Basic%20Diagram%20Elements.007.png)
+![](images/solid-line.png)
 
 A solid line may point out an *object*. Symbols connected by a solid line might symbolize the same object. Other names for this line might be an object line or a reference line.
 
 ## Dashed Line
 
-![](images/Basic%20Diagram%20Elements.008.png)
+![](images/dashed-line-diagonal.png)
 
 A dashed line could point out a *class* or *definition*. Symbols connected by dashed lines could be thought of as having the same class. These symbols may share similar behavior, while they might still be living as individual objects. Other names for this line might be a class line or a definition line.
 
 ## Dotted Line
 
-![](images/Basic%20Diagram%20Elements.009.png)
+![](images/dotted-line.png)
 
 A dotted line might point out an *interface*. Shapes connected by dotted lines might give them the same interface. The idea behind that is that they may look the same from the outside, but might behave differently on the inside. Another name for this line might be an interface line.
 

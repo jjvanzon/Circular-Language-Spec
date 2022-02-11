@@ -39,7 +39,7 @@ The *object* on the left points out the *class* on the right.
 
 A *dashed line* between the circles points out a *class:*
 
-<img src="images/dashed-line.png" width="130" />
+<img src="images/dashed-line-horizontal.png" width="130" />
 
 A *line dissector* can indicate *direction*, sort of like an *arrow head:*
 
