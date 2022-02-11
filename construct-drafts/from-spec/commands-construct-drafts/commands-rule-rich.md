@@ -27,6 +27,7 @@ __Contents__
     - [Old Subdivision](#old-subdivision)
     - [New Subdivision](#new-subdivision)
 - [Nested Commands Rule Rich](#nested-commands-rule-rich)
+- [Code Blocks Details](#code-blocks-details)
 - [Loose Ideas](#loose-ideas)
 
 ## Introduction
@@ -310,6 +311,19 @@ A nested command might not redirect its definition, because then it might be a c
 A nested command might not redirect its object, because then it might be a command reference.
 
 A nested command `is never` situated inside an object, or it might not be a nested command.
+
+## Code Blocks Details
+
+`<< rule rich >>`  
+Because a code block does not point out a definition, its contents might be arbitrary / decided by its parent command, unlike calls, whose contents might comply with a definition, that they may call.
+
+Code blocks might freely be used for putting a frame around a piece of code inside a command. In that case that command might still do the same thing:
+
+![](images/1.%20Commands%20Main%20Concepts.033.png)
+
+![](images/1.%20Commands%20Main%20Concepts.034.png)
+
+This may work except for the variable scoping part. Some variables might need to be elevated a level upward, to be available everywhere it might be used.
 
 ## Loose Ideas
 

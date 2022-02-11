@@ -17,7 +17,6 @@ __Contents__
 - [Command References](#command-references)
 - [How Command References Work](#how-command-references-work)
 - [Code Blocks](#code-blocks)
-- [Code Blocks Details](#code-blocks-details)
 - [Local Functions](#local-functions)
 - [Clauses](#clauses)
 - [Lambda Expressions](#lambda-expressions)
@@ -287,6 +286,10 @@ A code block might also look like this:
 
 The previous diagram showed a code block within a definition (a square). This diagram shows the code block in an execution (a diamond).
 
+Code blocks might be nested even further:
+
+<img src="images/1.%20Commands%20Main%20Concepts.016.png" width="180" />
+
 So a code block is symbolized by:
 
 - a diamond
@@ -301,22 +304,6 @@ because it is:
 - nameless
 - not a reference
 - not a definition for another command
-
-## Code Blocks Details
-
-Code blocks might be nested even further:
-
-<img src="images/1.%20Commands%20Main%20Concepts.016.png" width="180" />
-
-Because a code block does not point out a definition, its contents might be arbitrary / decided by its parent command, unlike calls, whose contents might comply with a  definition, that they may call.
-
-Code blocks might freely be used for putting a frame around a piece of code inside a command. In that case that command might still do the same thing:
-
-![](images/1.%20Commands%20Main%20Concepts.033.png)
-
-![](images/1.%20Commands%20Main%20Concepts.034.png)
-
-This may work except for the variable scoping part. Some variables might need to be elevated a level upward, to be available everywhere it might be used.
 
 ## Local Functions
 
