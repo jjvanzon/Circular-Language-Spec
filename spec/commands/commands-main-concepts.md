@@ -352,7 +352,7 @@ because it is:
 
 ## Clauses
 
-Clauses might be found as elements of an `if` statement or for instance a `where` clause from querying languages.
+Clauses can be found in an `if` statement or in a `where` clause from querying languages, for instance.
 
 This might look as follows in another language:
 
@@ -360,17 +360,17 @@ This might look as follows in another language:
 if { ... }
 ```
 
-(This is pseudo code. A full `if` statement may have more parts.)
+(This is pseudo code. A full `if` statement has more parts.)
 
-The following notation might be used for a clause:
+The following notation can be used for a clause:
 
 <img src="images/1.%20Commands%20Main%20Concepts.020.png" width="100" />
 
-An alternative might be, making it look like a nameless local function that you might pass a reference to, to the `if` statement:
+Another alternative looks like a nameless *local function* that you might pass a *reference* to, to the `if` statement:
 
 <img src="images/1.%20Commands%20Main%20Concepts.021.png" width="170" />
 
-So a clause might be expressed with:
+So a clause is expressed as:
 
 - a square
 - inside a diamond
@@ -381,7 +381,7 @@ because it is:
 
 - not executable (directly)
 - passed to another command or statement
-- might be a command reference
+- can be a command reference
 
 ## Lambda Expressions
 
