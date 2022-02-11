@@ -258,9 +258,9 @@ Command references can be a way to leave the command to call undetermined, varia
 
 ## Code Blocks
 
-Some programming languages allow code blocks within a command, to group statements together. This might scope variables, so variables inside the block may only be used within that block, for some added safety against programming errors, perhaps.
+Some programming languages allow code blocks within a command, to group statements together. This can also *scope* variables, so variables inside the block may only be used within that block, perhaps for some added safety against programming errors.
 
-In another programming language, this can look as follows:
+In another programming language, this may look as follows:
 
 ```c#
 void MyDefinition()
@@ -277,11 +277,11 @@ In Circular, a code block is *embedded* inside another command:
 
 <img src="images/1.%20Commands%20Main%20Concepts.014.png" width="100" />
 
-The inner command (the code block) is drawn as a *diamond*: it *executes* if the parent command executes.
+The inner command (the code block) is drawn as a *diamond:* it *executes* (if the parent command executes).
 
-A code block is *nameless*. It would not have any *lines* going towards it or away from it.
+A code block is *nameless*. It does not have any *lines* going towards it or away from it.
 
-A code block can also look like this:
+A code block might also look like this:
 
 <img src="images/1.%20Commands%20Main%20Concepts.015a.png" width="100" />
 
@@ -315,6 +315,8 @@ Code blocks might freely be used for putting a frame around a piece of code insi
 ![](images/1.%20Commands%20Main%20Concepts.033.png)
 
 ![](images/1.%20Commands%20Main%20Concepts.034.png)
+
+This may work except for the variable scoping part. Some variables might need to be elevated a level upward, to be available everywhere it might be used.
 
 ## Local Functions
 
