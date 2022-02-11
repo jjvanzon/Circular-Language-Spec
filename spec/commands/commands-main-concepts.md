@@ -311,7 +311,7 @@ because it is:
 
 ## Local Functions
 
-A local function might be known from other programming languages and would mean a command that is defined within another command.
+A local function might be known from other programming languages and means a command that is defined within another command.
 
 In a different programming language this might look as follows:
 
@@ -324,7 +324,7 @@ void MyParentCommand()
 }
 ```
 
-In Circular it is also a command definition, contained within another command definition:
+In Circular it is also: a command definition, contained within another command definition:
 
 <img src="images/1.%20Commands%20Main%20Concepts.017.png" width="100" />
 
@@ -341,14 +341,14 @@ So a local function is symbolized by:
 - a square
 - within a square
 - with a name
-- pointed to by dashed lines (possibly)
+- pointed to by dashed lines
 
 because it is:
 
 - not executed directly
 - contained in a definition
 - has a name
-- might be called / like a definition
+- called / like a definition
 
 ## Clauses
 
