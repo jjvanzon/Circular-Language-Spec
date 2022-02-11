@@ -366,7 +366,7 @@ The following notation can be used for a clause:
 
 <img src="images/1.%20Commands%20Main%20Concepts.020.png" width="100" />
 
-In another alternative, it looks like a nameless *local function* passed as a *reference*:
+In another alternative, it looks like a nameless *local function* passed as a *reference:*
 
 <img src="images/1.%20Commands%20Main%20Concepts.021.png" width="170" />
 
@@ -381,13 +381,13 @@ because it is:
 
 - not executable (directly)
 - passed to another command or statement
-- can be a command reference
+- might be a command reference
 
 ## Lambda Expressions
 
 A lambda expression might be found in other programming languages as sort of a short notation for a function, embedded inside other statements.
 
-In another programming language this might look as follows:
+In another programming language it might look like this:
 
 ```c#
 Where(x => x.IsChecked)
@@ -399,7 +399,7 @@ Minus the details:
 Where(...)
 ```
 
-So the `...` might be the lambda expression.
+So the `...` is the lambda expression here.
 
 Honestly said, in Circular there might not be a way to distinguish it from *clauses*.
 
@@ -411,46 +411,46 @@ Or:
 
 ## Nested Commands
 
-A nested command is like a command defined within a command.
+A nested command is a command defined within a command.
 
-They may look like this:
+They can look like this:
 
 <img src="images/7.%20Commands%20Ideas.021.jpeg" width="90" /> <img src="images/7.%20Commands%20Ideas.019.jpeg" width="80" /> <img src="images/1.%20Commands%20Main%20Concepts.015a.png" width="60" /> <img src="images/1.%20Commands%20Main%20Concepts.015b.png" width="60" />
 
-A nested command may be a command inside another command. The nested command can be a diamond or a square. Its container can also be a diamond as well as a square. A nested command might not have lines pointing away from it.
+The nested command can be a *diamond* or a *square*. Its *container* can also be a *diamond* or *square*. A nested command might *not have lines* pointing away from it.
 
 The concept of nested commands may coincide with the terms:
 
-- Code blocks
-- Clauses
-- Local functions
-- Lambda expressions
+- Code block
+- Clause
+- Local function
+- Lambda expression
 
-Those may all be examples of *nested commands*. Sometimes however, it might be easier to use a single name for these phenomena.
+Those can all be considered *nested commands*. Sometimes however, it is easier to use a single name for these phenomena.
 
 ## Active Nested Command
 
-A nested command that is a diamond, might be called an *active* nested command:
+A nested command that is a diamond, can be called an *active* nested command:
 
 <img src="images/7.%20Commands%20Ideas.030.png" width="200" />
 <img src="images/7.%20Commands%20Ideas.031.png" width="100" />
 
-It may be called *active*, because it *executes*.
+It is called *active*, because it *executes*.
 
-*Active* nested commands might be *code blocks*.
+*Active* nested commands are *code blocks*.
 
 ## Inactive Nested Command
 
-An *inactive* nested command may be a nested command that does not execute. So it may be a nested command that is a square:
+An *inactive* nested command is one that *does not execute*. So it is a *square*:
 
 <img src="images/7.%20Commands%20Ideas.033.png" width="190" />
 <img src="images/7.%20Commands%20Ideas.032.png" width="120" />
 
-It might not execute unless it is called:
+It might not execute unless it is *called*:
 
 ![](images/7.%20Commands%20Ideas.022.jpeg)
 
-*Inactive* nested commands might be:
+*Inactive* nested commands can be:
 
 - Clauses
 - Local functions
