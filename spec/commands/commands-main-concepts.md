@@ -324,11 +324,11 @@ void MyParentCommand()
 }
 ```
 
-In Circular it is also: a command definition, contained within another command definition:
+In Circular it is also: a *command definition*, contained within another *command definition:*
 
 <img src="images/1.%20Commands%20Main%20Concepts.017.png" width="100" />
 
-A local function can have a *name*:
+A local function has a *name*:
 
 <img src="images/1.%20Commands%20Main%20Concepts.018.png" width="160" />
 
@@ -345,7 +345,7 @@ So a local function is symbolized by:
 
 because it is:
 
-- not executed directly
+- not executed (directly)
 - contained in a definition
 - has a name
 - called / like a definition
