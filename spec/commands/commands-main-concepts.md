@@ -93,7 +93,7 @@ To summarize, here is a list traits a command might have:
 - __(not) executable__
 - __containment__
 - __references__
-- __definitions__ (or "prototypes")
+- __definitions__
 - __(not) named__
 
 ## Squares Do Not Execute
@@ -136,11 +136,11 @@ A definition can have a *name*:
 
 <img src="images/1.%20Commands%20Main%20Concepts.009.png" width="140" />
 
-When used, a command definition may be pointed to by a *dashed line*:
+When used, it may be pointed to by a *dashed line*:
 
 <img src="images/1.%20Commands%20Main%20Concepts.010.png" width="210" />
 
-That way another symbol can use `MyDefinition` as a *prototype*.
+That way another symbol can use `MyDefinition` as a *command definition*.
 
 So a command definition is symbolized by:
 
@@ -153,7 +153,7 @@ because it is:
 
 - not executable (directly)
 - named
-- used as a prototype
+- used as a definition
  
 ## Command Calls
 
@@ -183,7 +183,7 @@ So a command call might be symbolized by:
 
 - diamond
 - nameless
-- contained in a square
+- contained in another command symbol
 - dashed line pointing away from it
 
 because it may be:
@@ -344,7 +344,7 @@ because it is:
 - not executed directly
 - contained in a definition
 - has a name
-- a prototype / might be called
+- might be called / like a definition
 
 ## Clauses
 
