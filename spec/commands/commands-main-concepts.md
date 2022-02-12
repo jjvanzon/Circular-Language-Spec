@@ -481,3 +481,5 @@ Symbolizations for parameters and return values might not be covered much in thi
 Using commands constructs from Circular, it may seem circumstantial whether a command symbol might be stereotyped as a block, clause, definition, call, etc. It seems to result from the way basic language elements from Circular relate to each other. Still, it may be relevant to be aware how these symbols from Circular can be combined to represent constructs from other languages.
 
 It deserves to be said, that these symbolizations are just *ideas*. Depending on how this language might be used by a tool, different choices might be made.
+
+[back](../../)
