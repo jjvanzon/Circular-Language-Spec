@@ -1,11 +1,12 @@
-﻿<img src="images/objects-banner.png" width="700" />
-
-Objects
+﻿Objects
 =======
+
+[back](../../)
 
 *JJ van Zon, 2022*
 
-[back](../../)
+<img src="images/objects-banner.png" width="700" />
+
 
 __Contents__
 
