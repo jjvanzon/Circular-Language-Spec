@@ -1,9 +1,9 @@
 ﻿Objects
 =======
 
-[back](../../)
-
 *JJ van Zon, 2022*
+
+[back](../../)
 
 <img src="images/objects-banner.png" width="700" />
 
