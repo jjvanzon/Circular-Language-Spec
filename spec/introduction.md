@@ -109,7 +109,7 @@ So where will this end? If commands continue to delegate to each other, when do 
 
 That way there can develop big command call tree-outs, which makes a single command consist of multiple machine instructions, ranging from tens to thousands of machine instructions or more.
 
-But it does not seem to be necessary to see all those details, to understand what the effect of __Button . Set Text__ is. A simpler overview should be good enough for that:
+But it does not seem necessary to see all those details, to understand what the effect of __Button . Set Text__ is. A simpler overview should be good enough for that:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.014.jpeg" height="200" />
 

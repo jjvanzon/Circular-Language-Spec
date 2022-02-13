@@ -67,7 +67,7 @@ Here is an alternative where a class is drawn with *solid line* circle:
 
 <img src="images/object-and-class-with-solid-lined-shape.png" width="200" />
 
-Shapes with *dashed lines* seem to be *optional*.
+Shapes with *dashed lines* seem *optional*.
 
 The solid line shape could also be used for a distinction between classes and *prototypes:* where an object is initially a copy of another object, but anything may be changed about it, even its structure.
 
