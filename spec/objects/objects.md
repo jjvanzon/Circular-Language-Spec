@@ -7,7 +7,6 @@
 
 <img src="images/objects-banner.png" width="700" />
 
-
 __Contents__
 
 - [Introduction](#introduction)

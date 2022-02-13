@@ -1,11 +1,11 @@
-﻿<img src="images/classes-collage.png" width="700" />
-
-Classes
+﻿Classes
 =======
 
 *JJ van Zon, 2022*
 
 [back](..)
+
+<img src="images/classes-collage.png" width="700" />
 
 __Contents__
 
