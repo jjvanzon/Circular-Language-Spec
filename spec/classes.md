@@ -99,7 +99,7 @@ Just like an *object*, an *object reference* can have a class as well. In that c
 
 <img src="images/object-reference-with-class-1.png" width="250" />
 
-The __object reference__ points out __Class A__. The __object__ also points out __Class A__. The *solid line* between object and object reference is *valid*, because they have *the same* class.
+The __object reference__ points out __Class A__. The __object__ also points out __Class A__. The *solid line* between object and object reference is *valid*, because they both have *the same* class.
 
 <img src="images/object-reference-with-class-2.png" width="325" />
 
@@ -119,6 +119,6 @@ Here the *Object* points out *Class B* instead of Class A. But since the *object
 
 ## Conclusion
 
-Hopefully this gave an impression of how *class* notation could look in the *Circular language*.
+Hopefully this gave an impression of how *class* notation could look in the *Circular language*. Dashes seem key in its notation.
 
 [back](..)
