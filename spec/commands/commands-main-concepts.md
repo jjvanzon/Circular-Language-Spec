@@ -92,7 +92,7 @@ It can also be *nameless:*
 
 <img src="images/1.%20Commands%20Main%20Concepts.001.png" width="50" />
 
-To summarize, here is a list traits a command might have:
+To summarize, here is a list of traits a command might have:
 
 - __(not) executable__
 - __containment__
