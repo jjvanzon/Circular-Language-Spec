@@ -1,5 +1,7 @@
 *JJ van Zon, 2021*
 
+[back](https://jjvanzon.github.io/)
+
 Circular aims to become a visual programming language made from shapes and lines. It may once become a diagram notation for visualizing computer code.
 
 You may find the following sections here:
@@ -23,3 +25,5 @@ You may find the following sections here:
 The material may still be a bit rough. Both in tone and in content. It might be improved step by step.
 
 Would anyone be interested: Another repository might describe the plans, notes and TODO's around this project. Here it is: [Circular-Language-Spec-Plans](https://github.com/jjvanzon/Circular-Language-Spec-Plans)
+
+[back](https://jjvanzon.github.io/)
