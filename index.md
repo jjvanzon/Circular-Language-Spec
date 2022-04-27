@@ -1,3 +1,5 @@
+[back](https://jjvanzon.github.io/)
+
 <img src="images/circular-language-preview.png" width="700" />
 
 *JJ van Zon, 2022*
@@ -20,3 +22,5 @@ This is an attempt at a specification of this language.
 The more finished up articles might be found on these web pages.  
 Drafts might be found in the [GitHub repository](https://github.com/jjvanzon/Circular-Language-Spec).  
 Articles may gradually be published to this web site.
+
+[back](https://jjvanzon.github.io/)
