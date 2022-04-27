@@ -1,6 +1,8 @@
 Circular Language Spec
 ======================
 
+[back](https://jjvanzon.github.io/)
+
 Circular aims to become a visual programming language made from shapes and lines. It may once become a diagram notation for visualizing computer code.
 
 This is an attempt at a specification of this language. 
@@ -93,3 +95,5 @@ Contents
     - [Diagram Expression Introduction](misc-diagram-topics/diagram-expression-introduction.md)
     - [Diagram Metrics](misc-diagram-topics/diagram-metrics.md)
     - [Coloring](misc-diagram-topics/coloring.md)
+
+[back](https://jjvanzon.github.io/)
