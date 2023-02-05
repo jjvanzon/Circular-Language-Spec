@@ -3,6 +3,9 @@ title: 🔵 Circular Language 🔶
 description: Visualizing computer code
 plugins:
   - jekyll-relative-links
+  - jekyll-default-layout
+  - jekyll-seo
+  - jekyll-seo-tag
 relative_links:
   enabled: true
   collections: true
