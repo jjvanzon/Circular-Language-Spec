@@ -1,11 +1,9 @@
 ﻿Introduction
 ============
 
-*JJ van Zon, 2022*
-
 [back](..)
 
-This articles introduces the basics of the Circular language. Circular language is an idea for a computer programming language, mostly a diagram notation for visualizing computer code. 
+This articles introduces the basics of the Circular language. Circular is an idea for a computer programming language, mostly about a diagram notation for visualizing computer code. 
 
 __Contents__
 
@@ -32,7 +30,7 @@ In Circular the main symbol for an idea is a *circle:*
 
 Each sub idea works more or less independently of the others. __Monitor__ does its bit, __Keyboard__ does its bit. It's the super idea that ties the sub ideas together. That means that the __Computer__ makes the link between monitor, keyboard, mouse and printer. The super idea combines the sub ideas and manages communication between them.
 
-In computer programming, ideas can be called *objects*. Each object is responsible for its own part of the system.
+In computer programming, ideas are sometimes called *objects*. Each object is responsible for its own part of the system.
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
@@ -44,14 +42,14 @@ But to see the general point of a system, only the top layers are relevant:
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
-This makes object oriented programming a great way to keep overview over a system as it grows. A better split up into ideas makes a design easier to understand, especially the general outlines. A subdivision in objects can be quite a prominent thing in software. So splitting up an idea into sub ideas, something that most people are able to do, can be quite relevant when programming software.
+This makes object oriented programming a great way to keep overview over a system as it grows. A better split up into ideas makes a design easier to understand, especially the general outlines. A subdivision in objects can be quite a prominent thing in software. So splitting up an idea into sub ideas, something that most people are probably able to do, can be quite relevant when programming software.
 
 Reusing Ideas
 -------------
 
-A division up into ideas can lead to the *reusability* of ideas. For instance: the idea of a *button* might be reusable. If a good button were programmed, other people may not need to program another button again. The same idea can be reused everywhere a button is needed.
+A division into ideas can lead to the *reusability* of ideas. For instance: the idea of a *button* might be reusable. If a good button were programmed, other people may not need to program another button again. The same idea can be *reused* everywhere a button is needed.
 
-Any place a button is used in a system, there is a separate object:
+Any place where there's a button in a system, there is a separate object:
 
 ![](images/Circle%20Language%20Spec%20Introduction.005.png)
 
@@ -59,12 +57,12 @@ Any place a button is used in a system, there is a separate object:
 
 A button object in general is called a *type* of object.
 
-There are quite a few objects ready and available, that you may use one way or another. __Button__ objects for instance can be used to build a user interface. Another type, __Integer__, represents an integer number. Those may be used relatively frequently.
+There are quite a few objects all ready and available, that you can use in your program. __Button__ objects for instance are quite common and can be used to build a user interface. Another type, __Integer__, represents an integer number. Those may be used relatively frequently as well.
 
 Commands
 --------
 
-Apart from a collection of sub objects, objects can contain *commands*.
+Apart from a collection of sub objects, objects can contain *commands:*
 
 ![](images/Circle%20Language%20Spec%20Introduction.007.png)
 
@@ -76,16 +74,16 @@ Sub objects can again contain commands:
 
 Software cannot execute without commands. Upon running a command, an object *does something*.
 
-A button can have a __Set Text__ command for instance, which sets the text to display.
+A button can have a __Set Text__ command for instance, which sets the text to display:
 
 ![](images/Circle%20Language%20Spec%20Introduction.009.png)
 
-Other objects than a button might also have a __Set Text__ command. __Set Text__ commands of different objects can be distinguished with the following text notation:
+Other types of object might also have a __Set Text__ command. __Set Text__ commands of different objects can be distinguished with the following text notation:
 
 __Button . Set Text__  
 __Text Box . Set Text__
 
-A command can again consist of sub commands: the separate steps of the command.
+A command can again consist of sub commands: the separate steps of the command:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.010.jpeg" height="300" />
 
