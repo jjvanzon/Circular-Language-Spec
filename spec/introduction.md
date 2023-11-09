@@ -20,19 +20,19 @@ __Contents__
 Splitting up Ideas
 ------------------
 
-Something that can play a role in software development, is splitting up a larger idea into smaller ideas:
+One thing that can play a role in software development, is splitting up a larger idea into smaller ideas:
 
 ![](images/Circle%20Language%20Spec%20Introduction.001.png)
 
 This picture shows the idea of *a computer*, split up into four sub ideas: a monitor, keyboard, mouse and printer.
 
-In Circular language the main symbol for an idea is a *circle:*
+In Circular the main symbol for an idea is a *circle:*
 
 <img src="images/Circle%20Language%20Spec%20Introduction.002.png" height="100" />
 
-Each sub idea works more or less independently of the others. __Monitor__ does its part, __Keyboard__ does its part.  It's the super idea that ties the sub ideas together. That means that the computer makes the link between monitor, keyboard, mouse and printer. The super idea combines the sub ideas and manages communication between the sub ideas.
+Each sub idea works more or less independently of the others. __Monitor__ does its bit, __Keyboard__ does its bit. It's the super idea that ties the sub ideas together. That means that the __Computer__ makes the link between monitor, keyboard, mouse and printer. The super idea combines the sub ideas and manages communication between them.
 
-In computer programming, ideas might be called *objects*. Each object is responsible for its own part of the system.
+In computer programming, ideas can be called *objects*. Each object is responsible for its own part of the system.
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
@@ -44,12 +44,12 @@ But to see the general point of a system, only the top layers are relevant:
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
-This makes object oriented programming a nice way to keep overview over a system as it grows. A better split up into ideas makes a design easier to understand, especially its general outlines. A subdivision in objects can be quite a prominent thing in software. So splitting up an idea into sub ideas, something that quite a few people are able to do, can be quite relevant when programming.
+This makes object oriented programming a great way to keep overview over a system as it grows. A better split up into ideas makes a design easier to understand, especially the general outlines. A subdivision in objects can be quite a prominent thing in software. So splitting up an idea into sub ideas, something that most people are able to do, can be quite relevant when programming software.
 
 Reusing Ideas
 -------------
 
-Dividing up into ideas can lead to *reusability* of ideas. For instance: the idea of a *button* is reusable. If a good button were programmed, other people may not need to program another button again. The same idea can be reused everywhere a button is needed.
+A division up into ideas can lead to the *reusability* of ideas. For instance: the idea of a *button* might be reusable. If a good button were programmed, other people may not need to program another button again. The same idea can be reused everywhere a button is needed.
 
 Any place a button is used in a system, there is a separate object:
 
@@ -59,7 +59,7 @@ Any place a button is used in a system, there is a separate object:
 
 A button object in general is called a *type* of object.
 
-There are quite a few types already available, used in one way or another. A __Button__ type for instance can be used to build a user interface. Another type, __Integer__, represents one integer number. Those are used relatively frequently.
+There are quite a few objects ready and available, that you may use one way or another. __Button__ objects for instance can be used to build a user interface. Another type, __Integer__, represents an integer number. Those may be used relatively frequently.
 
 Commands
 --------
@@ -68,7 +68,7 @@ Apart from a collection of sub objects, objects can contain *commands*.
 
 ![](images/Circle%20Language%20Spec%20Introduction.007.png)
 
-Commands are denoted here by *squares*.
+Commands are denoted by *squares* here.
 
 Sub objects can again contain commands:
 
@@ -85,7 +85,7 @@ Other objects than a button might also have a __Set Text__ command. __Set Text__
 __Button . Set Text__  
 __Text Box . Set Text__
 
-A command can again consist of sub commands: separate steps of the command.
+A command can again consist of sub commands: the separate steps of the command.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.010.jpeg" height="300" />
 
@@ -103,26 +103,26 @@ The __Redraw Button__ command is rather complex. In this command, lines of a but
 
 <img src="images/Circle%20Language%20Spec%20Introduction.013.jpeg" height="350" />
 
-Here it becomes apparent, that separately defining a command can lead to *reuse* of a command. The __Draw Line__ command is reused three times in the example above. There are quite a few commands available, ready to use one way or another. Commands like that can also reside inside in a separate object. A __File__ object for instance can contain commands that make it possible to deal with a computer file.
+Here it becomes apparent, that separately defining a command can lead to *reuse* of a command. The __Draw Line__ command is reused three times in the example above. There are quite a few commands ready to use already available. Reusable commands like that can also reside inside in separate objects. A __File__ object for instance can contain commands that make it possible to deal with a single computer file.
 
-So where will this end? If commands continue to delegate to each other, when do things actually start happening? Well, it seems to end at a special group of commands, that do not call other commands anymore. A command like that executes a machine instruction: a basic instruction that make a computer *do* something. A computer's central processing unit performs a hardware defined *machine* command.
+So where does this all end? If commands just continue to delegate to each other, when do things actually start happening? Well, it seems to end at a special group of commands, that do not call other commands anymore. A command like that executes a machine instruction: a basic instruction that make a computer *do* something. A computer's central processing unit performs a hardware defined *machine* command.
 
-That way there can develop big command call tree-outs, which makes a single command consist of multiple machine instructions, ranging from tens to thousands of machine instructions or more.
+That way there can develop big command call tree-outs, which makes a single command consist of multiple machine instructions, ranging from tens to ten-thousands of machine instructions.
 
-But it does not seem necessary to see all those details, to understand what the effect of __Button . Set Text__ is. A simpler overview should be good enough for that:
+But it is not necessary to see all those details, to understand what the effect of __Button . Set Text__ is. A simpler overview should be good enough for that:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.014.jpeg" height="200" />
 
 Command Parameters
 ------------------
 
-Commands can have *parameters*. Those are like instructions passed along with a command that make a command behave differently. The __Button . Set Text__ command for instance, has a __Text__ parameter, which indicates what the text of a button will become.
+Commands can have *parameters*. These are like instructions passed along with a command that make a command behave differently. The __Button . Set Text__ command for instance, has a __Text__ parameter, which indicates what the text of a button will become.
 
 __Text__ is an *idea*. It is an *object*. It is usually *objects* that serve as parameters.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.015.jpeg" height="300" />
 
-A command can do things with a parameters passed to it. It can do either one of the following:
+A command can do things with the parameters passed to it. It can do one of the following:
 
 - Passing the parameter to another command or 
 - Calling commands of the parameter.
@@ -140,9 +140,9 @@ Interfaces
  
 Another capability of objects is that they can have different interfaces.
 
-Try to consider how an employee looks to a customer and how to a coworker. The employee will do certain things for a coworker and other things for a customer. The employee has two *interfaces*. It depends on the party referring to the employee, which interface the employee has. Even though both parties are referring to the same person, this person does different things for them.
+Consider how an employee looks to a customer and how to a coworker. The employee will do certain things for a coworker and other things for a customer. The employee has two *interfaces*. It depends on the party referring to the employee, which interface the employee shows. Even though both parties are referring to the same person, this person does different things for them.
 
-Objects have a similar ability. An object can have separate interfaces. Interfaces are groups of an object's members.
+Objects have a similar cabability. An object can have separate interfaces. Interfaces are groups of an object's members.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.018.jpeg" width="400" />
 
@@ -165,7 +165,7 @@ One option is to first read its containment structure, by starting at the larges
 
 Starting with the largest container may not always be preferred. One symbol might be highlighted. Then this symbol is what the diagram is about. The focus would be on aspects of the highlighted symbol. Then start there and look around.
 
-There is probably no one way of doing it.
+There is really no one way of doing it.
 
 Conclusion
 ----------
