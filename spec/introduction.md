@@ -28,13 +28,13 @@ In Circular the main symbol for an idea is a *circle:*
 
 <img src="images/Circle%20Language%20Spec%20Introduction.002.png" height="100" />
 
-Each sub idea works more or less independently of the others. __Monitor__ does its bit, __Keyboard__ does its bit. It's the super idea that ties the sub ideas together. That means that the __Computer__ makes the link between monitor, keyboard, mouse and printer. The super idea combines the sub ideas and manages communication between them.
+Each sub idea works more or less independently of the others. __Monitor__ does its bit, __Keyboard__ does its bit. It's the super idea that ties all the sub ideas together. That means that the __Computer__ makes the link between monitor, keyboard, mouse and printer. The super idea combines the sub ideas and manages communication between them.
 
-In computer programming, ideas are sometimes called *objects*. Each object is responsible for its own part of the system.
+In computer programming, ideas are sometimes called *objects*. Each object is responsible for its own part of the system. Here is another example:
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
-A sub idea can be split up into sub ideas itself. It can go on and splitting up into smaller and smaller ideas:
+A sub idea can be split up into sub ideas itself. This way we can go on and on, splitting up into smaller and smaller ideas:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.004.png" height="400" />
 
@@ -57,16 +57,16 @@ Any place where there's a button in a system, there is a separate object:
 
 A button object in general is called a *type* of object.
 
-There are quite a few objects all ready and available, that you can use in your program. __Button__ objects for instance are quite common and can be used to build a user interface. Another type, __Integer__, represents an integer number. Those may be used relatively frequently as well.
+There are quite a few object types available out of the box, that can be used in your program. __Button__ objects for instance are quite common and can be used to build a user interface. Another type, __Integer__, represents an integer number. Those are used all the time.
 
 Commands
 --------
 
-Apart from a collection of sub objects, objects can contain *commands:*
+Objects not only have sub objects. They can also contain *commands:*
 
 ![](images/Circle%20Language%20Spec%20Introduction.007.png)
 
-Commands are denoted by *squares* here.
+Commands are denoted here by *squares.*
 
 Sub objects can again contain commands:
 
@@ -78,12 +78,12 @@ A button can have a __Set Text__ command for instance, which sets the text to di
 
 ![](images/Circle%20Language%20Spec%20Introduction.009.png)
 
-Other types of object might also have a __Set Text__ command. __Set Text__ commands of different objects can be distinguished with the following text notation:
+Other types of object might also have a __Set Text__ command. Those can be distinguished with the following text notation:
 
 __Button . Set Text__  
 __Text Box . Set Text__
 
-A command can again consist of sub commands: the separate steps of the command:
+A command can again consist of sub commands: the separate steps of the command, denoted here by *diamond* shapes:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.010.jpeg" height="300" />
 
@@ -101,7 +101,7 @@ The __Redraw Button__ command is rather complex. In this command, lines of a but
 
 <img src="images/Circle%20Language%20Spec%20Introduction.013.jpeg" height="350" />
 
-Here it becomes apparent, that separately defining a command can lead to *reuse* of a command. The __Draw Line__ command is reused three times in the example above. There are quite a few commands ready to use. Reusable commands like that can also reside inside in separate objects. A __File__ object for instance can contain commands that make it possible to deal with a computer file.
+Here it becomes apparent, that separately defining a command can lead to *reuse* of a command. The __Draw Line__ command is reused three times in the example above. There are quite a few commands already available. Reusable commands like that can also reside inside in separate objects. A __File__ object for instance can contain commands that make it possible to deal with a computer file.
 
 So where does this all end? If commands just continue to delegate to each other, when do things actually start happening? Well, it seems to end at a special group of commands, that do not call other commands anymore. A command like that executes a machine instruction: a basic instruction that make a computer *do* something. A computer's central processing unit performs a hardware defined *machine* command.
 
@@ -114,7 +114,7 @@ But it is not necessary to see all that detail, to understand what the purpose o
 Command Parameters
 ------------------
 
-Commands can have *parameters*. These are instructions passed along with a command that modify its behavior. The __Button . Set Text__ command for instance, has a __Text__ parameter, which indicates what the text of a button will become.
+Commands can also have *parameters*. These are instructions passed along with a command that modify its behavior. The __Button . Set Text__ command for instance, has a __Text__ parameter, which indicates what the text of a button would become.
 
 __Text__ is an *idea*. It is an *object*. It is usually *objects* that serve as parameters:
 
@@ -125,11 +125,11 @@ A command can do things with the parameters passed to it, in particular one of t
 - Pass the parameter to another command or 
 - Call commands of the parameter.
 
-An example of passing a __Text__ parameter on to the next command, in this case to __Format Text__:
+Here is an example of passing a __Text__ parameter on to the next command, in this case to __Format Text__:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.016.jpeg" height="300" />
 
-Calling a command of the __Text__ parameter:
+Here is an example calling a command of the __Text__ parameter:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.017.jpeg" height="300" />
 
@@ -138,15 +138,15 @@ Interfaces
  
 Another capability of objects is that they can have different interfaces.
 
-Consider how an employee looks to a customer and how to a coworker. The employee will do certain things for a coworker and other things for a customer. The employee has two *interfaces*. It depends on the party referring to the employee, which interface of the employee they get to see. Even though both parties are referring to the same person, this person will do different things for them.
+Consider how an employee looks to a customer and how to a coworker. The employee will do certain things for a coworker and other things for a customer. The employee has two *interfaces*. It depends on the party referring to the employee, which interface they get to see. Even though both parties are referring to the same person, this person will do different things for them.
 
-Objects have a similar cabability: they can also have separate interfaces. Interfaces are groups of an object's members.
+Objects have a similar cabability: they can also have separate interfaces. Interfaces group object members together.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.018.jpeg" width="400" />
 
 Interfaces are distinguished here by *triangles*.
 
-The employee here is an *advisor* to a customer and to another employee a *coworker*. Sometimes only one specific interface is available within a certain context. In other cases you can choose. An object can also just have one interface, the same one for everybody.
+The employee here is an advisor to a customer and to another employee a coworker. Sometimes only one specific interface is available within a certain context. In other cases you can choose. An object can also just have one interface, the same one for everybody.
 
 Triangles can be seen as sub objects. The difference with circles is that triangles sort of melt together with their container. Triangles are a way to give different types shared characteristics. 
 
@@ -159,7 +159,7 @@ Where to start, when reading a diagram like this?
 
 One option is to first read its containment structure, by starting at the largest container, and then looking at the smaller ones. After that, relationships made by the connecting lines is something to look at.
 
-Starting with the largest container may not always be preferred. One symbol might be highlighted. Then this symbol is what the diagram is about. The focus would be on aspects of the highlighted symbol. Then start there and look around.
+Starting with the largest container may not always be preferred. One symbol might be highlighted. Then this symbol is what the diagram is about. The focus would be on aspects of the highlighted symbol. Then start looking around from there.
 
 There is really no one way of doing it.
 
