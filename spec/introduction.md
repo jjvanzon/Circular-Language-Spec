@@ -101,31 +101,31 @@ The __Redraw Button__ command is rather complex. In this command, lines of a but
 
 <img src="images/Circle%20Language%20Spec%20Introduction.013.jpeg" height="350" />
 
-Here it becomes apparent, that separately defining a command can lead to *reuse* of a command. The __Draw Line__ command is reused three times in the example above. There are quite a few commands ready to use already available. Reusable commands like that can also reside inside in separate objects. A __File__ object for instance can contain commands that make it possible to deal with a single computer file.
+Here it becomes apparent, that separately defining a command can lead to *reuse* of a command. The __Draw Line__ command is reused three times in the example above. There are quite a few commands ready to use. Reusable commands like that can also reside inside in separate objects. A __File__ object for instance can contain commands that make it possible to deal with a computer file.
 
 So where does this all end? If commands just continue to delegate to each other, when do things actually start happening? Well, it seems to end at a special group of commands, that do not call other commands anymore. A command like that executes a machine instruction: a basic instruction that make a computer *do* something. A computer's central processing unit performs a hardware defined *machine* command.
 
-That way there can develop big command call tree-outs, which makes a single command consist of multiple machine instructions, ranging from tens to ten-thousands of machine instructions.
+That way it is possible to develop big command call tree-outs, which makes a single command consist of multiple machine instructions, ranging from tens to ten-thousands of them.
 
-But it is not necessary to see all those details, to understand what the effect of __Button . Set Text__ is. A simpler overview should be good enough for that:
+But it is not necessary to see all that detail, to understand what the purpose of __Button . Set Text__ is. A simpler overview should be good enough for that:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.014.jpeg" height="200" />
 
 Command Parameters
 ------------------
 
-Commands can have *parameters*. These are like instructions passed along with a command that make a command behave differently. The __Button . Set Text__ command for instance, has a __Text__ parameter, which indicates what the text of a button will become.
+Commands can have *parameters*. These are instructions passed along with a command that modify its behavior. The __Button . Set Text__ command for instance, has a __Text__ parameter, which indicates what the text of a button will become.
 
-__Text__ is an *idea*. It is an *object*. It is usually *objects* that serve as parameters.
+__Text__ is an *idea*. It is an *object*. It is usually *objects* that serve as parameters:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.015.jpeg" height="300" />
 
-A command can do things with the parameters passed to it. It can do one of the following:
+A command can do things with the parameters passed to it, in particular one of the following:
 
-- Passing the parameter to another command or 
-- Calling commands of the parameter.
+- Pass the parameter to another command or 
+- Call commands of the parameter.
 
-Passing a __Text__ parameter on to the next command (__Format Text__):
+An example of passing a __Text__ parameter on to the next command, in this case to __Format Text__:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.016.jpeg" height="300" />
 
@@ -138,24 +138,22 @@ Interfaces
  
 Another capability of objects is that they can have different interfaces.
 
-Consider how an employee looks to a customer and how to a coworker. The employee will do certain things for a coworker and other things for a customer. The employee has two *interfaces*. It depends on the party referring to the employee, which interface the employee shows. Even though both parties are referring to the same person, this person does different things for them.
+Consider how an employee looks to a customer and how to a coworker. The employee will do certain things for a coworker and other things for a customer. The employee has two *interfaces*. It depends on the party referring to the employee, which interface of the employee they get to see. Even though both parties are referring to the same person, this person will do different things for them.
 
-Objects have a similar cabability. An object can have separate interfaces. Interfaces are groups of an object's members.
+Objects have a similar cabability: they can also have separate interfaces. Interfaces are groups of an object's members.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.018.jpeg" width="400" />
 
 Interfaces are distinguished here by *triangles*.
 
-The employee here is an advisor to a customer and to another employee a coworker. Another object that refers to the employee can decide which interface is used. Or sometimes only one specific interface is available within a certain context. An object can also just have one interface, the same one for everybody.
+The employee here is an *advisor* to a customer and to another employee a *coworker*. Sometimes only one specific interface is available within a certain context. In other cases you can choose. An object can also just have one interface, the same one for everybody.
 
-Triangles can be seen as sub objects too. One of the differences with circles is that triangles sort of melt together with their container.
-
-Triangles are a way to give different types shared characteristics. Though 'normal' sub-objects can do that too.
+Triangles can be seen as sub objects. The difference with circles is that triangles sort of melt together with their container. Triangles are a way to give different types shared characteristics. 
 
 Reading a Diagram
 -----------------
 
-Where to start, when reading a diagram like that?
+Where to start, when reading a diagram like this?
 
 <img src="images/Circle%20Language%20Spec%20Introduction.018.jpeg" width="400" />
 
@@ -168,6 +166,6 @@ There is really no one way of doing it.
 Conclusion
 ----------
 
-Hopefully this introduced some of the basics of the Circular language.
+Hopefully this adequately introduced some of the basics of the Circular language.
 
 [back](..)
