@@ -1,7 +1,7 @@
 ﻿---
 title: "Objects"
 image: "images/objects-page.png"
-description: "In object oriented programming, the object is one of the most basic elements of a computer program. An object can represent a thing, an idea or a place, a number or a collection of other things or anything else."
+description: "In object oriented programming, the object is one of the most basic elements of a computer program. It can represent a thing, an idea or a place, a number or a collection of other things or anything else."
 keywords:
   - objects
   - object oriented programming
