@@ -1,4 +1,25 @@
-﻿Introduction
+﻿---
+title: "📢 Circular Language Introduction"
+image: "images/introduction-page.png"
+description: "Circular is an idea for a computer programming language, mostly a diagram notation for visualizing computer code."
+keywords:
+  - circular
+  - circular language
+  - code visualization
+  - visualization
+  - programming
+  - coding
+  - computer programming
+  - software engineering
+  - software development
+  - software design
+  - software architecture
+  - layered architecture
+  - software
+  - computers
+---
+
+Introduction
 ============
 
 [back](..)
