@@ -63,7 +63,7 @@ But to see the general point of a system, only the top layers are relevant:
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
-This makes object oriented programming a great way to keep overview over a system as it grows. A better split up into ideas makes a design easier to understand, especially the general outlines. A subdivision in objects can be quite a prominent thing in software. So splitting up an idea into sub ideas, something that most people are probably able to do, can be quite relevant when programming software.
+This makes object oriented programming a great way to keep overview of a system as it grows. A better split up into ideas makes a design easier to understand, especially the general outlines. A subdivision in objects can be quite a prominent thing in software. So splitting up an idea into sub ideas, something that most people are probably able to do, can be quite useful when programming software.
 
 Reusing Ideas
 -------------
