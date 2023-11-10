@@ -77,7 +77,7 @@ The picture shows a child __B__, having an *object reference* in it. It points t
 Nothing
 -------
 
-Sometimes nothing is filled in yet for a related object. To display that in a diagram: a *cross* is placed inside a shape:
+Sometimes nothing is filled in yet for a related object. To display that in a diagram, a *cross* is placed inside a shape:
 
 ![](images/Objects.004.png)
 
@@ -90,11 +90,11 @@ The concept of *single* is primarily displayed as a *circle:*
 
 ![](images/Objects.005.png)
 
-But for a *list:* a spikey *nonagon* can be used:
+But for a *list* a spikey *nonagon* can be used:
 
 ![](images/Objects.006.png)
 
-List items can then be placed inside the nonagon:
+List items are then placed inside the nonagon:
 
 ![](images/Objects.007.png)
 
