@@ -1,5 +1,5 @@
 ﻿---
-title: "📢 Circular Language Introduction"
+title: "📢 Introduction"
 image: "images/introduction-page.png"
 description: "Circular is an idea for a computer programming language, mostly a diagram notation for visualizing computer code."
 keywords:
