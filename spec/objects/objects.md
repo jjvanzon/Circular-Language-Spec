@@ -57,11 +57,11 @@ One thing can be composed of other things. For that, an object may contain a num
 Object Reference
 ----------------
 
-A sub-object can point to another object, residing elsewhere in the system. That sub-object is considered a link, redirecting to another object:
+A sub-object can point to another object, residing elsewhere in the system. That is considered a link, redirecting to another object:
 
 ![](images/Objects.003.png)
 
-The sub-object __A__ has a *line*, making it a reference, connecting to the object __B__, residing outside the __Parent__ object.
+The sub-object __A__ has a *line*, making it a reference. It connects to the object __B__, residing outside the __Parent__ object.
 
 A line like that tends to point *outwards*.
 
@@ -72,29 +72,29 @@ This may be an edge-case in object relationships: a *child* referencing a *paren
 
 ![](images/reference-to-parent.png)
 
-The picture shows a child __B__, having an *object reference* in it, pointing to its parent __A__. It might look a bit unusual compared to the object reference notation introduced earlier, so it seemed to deserve some separate attention.
+The picture shows a child __B__, having an *object reference* in it. It points to its parent __A__. It might look a bit unusual compared to the object reference notation introduced earlier, so it seemed to deserve some separate attention here.
 
 Nothing
 -------
 
-Sometimes nothing is filled in for a related object. To display that in a diagram a *cross* can be placed inside a shape:
+Sometimes nothing is filled in yet for a related object. To display that in a diagram: a *cross* is placed inside a shape:
 
 ![](images/Objects.004.png)
 
 Multiplicity
 ------------
 
-Multiplicity can be thought of as the distinction between *single* and *multiple*. A related object can be a *single* object, but sometimes it may be part of a *list*.
+Multiplicity means the distinction between *single* and *multiple*. A related object can be a *single* object, but sometimes it is part of a *list*.
 
 The concept of *single* is primarily displayed as a *circle:*
 
 ![](images/Objects.005.png)
 
-But for a *list* a *nonagon* can be used:
+But for a *list:* a spikey *nonagon* can be used:
 
 ![](images/Objects.006.png)
 
-List items could be placed inside the nonagon again:
+List items can then be placed inside the nonagon:
 
 ![](images/Objects.007.png)
 
