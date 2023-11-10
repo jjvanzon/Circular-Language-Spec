@@ -63,7 +63,7 @@ But to see the general point of a system, only the top layers are relevant:
 
 ![](images/Circle%20Language%20Spec%20Introduction.003.png)
 
-This makes object oriented programming a great way to keep overview of a system as it grows. A better split up into ideas makes a design easier to understand, especially the general outlines. A subdivision in objects can be quite a prominent thing in software. So splitting up an idea into sub ideas, something that most people are probably able to do, can be quite useful when programming software.
+This makes object oriented programming a great way to keep overview of a system as it grows. A better split up into ideas makes a design easier to understand, especially the general outlines. A subdivision in objects can be quite a prominent thing in software. So splitting up an idea into sub ideas, something that most people are probably able to do, would be quite useful when programming software.
 
 Reusing Ideas
 -------------
@@ -78,7 +78,7 @@ Any place where there's a button in a system, there is a separate object:
 
 A button object in general is called a *type* of object.
 
-There are quite a few object types available out of the box, that can be used in your program. __Button__ objects for instance are quite common and can be used to build a user interface. Another type, __Integer__, represents an integer number. Those are used all the time.
+There are quite a few object types available out of the box, that can be used in your program. __Button__ objects for instance are quite common and can be used to build a user interface. Another type, __Integer__, represents an integer number. You're going to use those all the time.
 
 Commands
 --------
@@ -99,12 +99,12 @@ A button can have a __Set Text__ command for instance, which sets the text to di
 
 ![](images/Circle%20Language%20Spec%20Introduction.009.png)
 
-Other types of object might also have a __Set Text__ command. Those can be distinguished with the following text notation:
+Other types of object might also have a __Set Text__ command. Those might be distinguished with the following text notation:
 
 __Button . Set Text__  
 __Text Box . Set Text__
 
-A command can again consist of sub commands: the separate steps of the command, denoted here by *diamond* shapes:
+A command can again consist of sub commands: the separate steps of the command, denoted here by *diamonds:*
 
 <img src="images/Circle%20Language%20Spec%20Introduction.010.jpeg" height="300" />
 
@@ -122,7 +122,7 @@ The __Redraw Button__ command is rather complex. In this command, lines of a but
 
 <img src="images/Circle%20Language%20Spec%20Introduction.013.jpeg" height="350" />
 
-Here it becomes apparent, that separately defining a command can lead to *reuse* of a command. The __Draw Line__ command is reused three times in the example above. There are quite a few commands already available. Reusable commands like that can also reside inside in separate objects. A __File__ object for instance can contain commands that make it possible to deal with a computer file.
+Here it becomes apparent, that separately defining a command can lead to *reuse* of a command. The __Draw Line__ command is reused three times in the example above. There are quite a few commands already available. Reusable commands like that can also reside inside separate objects. A __File__ object for instance can contain commands that make it possible to deal with a computer file.
 
 So where does this all end? If commands just continue to delegate to each other, when do things actually start happening? Well, it seems to end at a special group of commands, that do not call other commands anymore. A command like that executes a machine instruction: a basic instruction that make a computer *do* something. A computer's central processing unit performs a hardware defined *machine* command.
 
@@ -135,13 +135,13 @@ But it is not necessary to see all that detail, to understand what the purpose o
 Command Parameters
 ------------------
 
-Commands can also have *parameters*. These are instructions passed along with a command that modify its behavior. The __Button . Set Text__ command for instance, has a __Text__ parameter, which indicates what the text of a button would become.
+Commands can also have *parameters*. These are instructions passed along with a command, that slightly modify its behavior. The __Button . Set Text__ command for instance, has a __Text__ parameter, which indicates what the text of a button would become.
 
 __Text__ is an *idea*. It is an *object*. It is usually *objects* that serve as parameters:
 
 <img src="images/Circle%20Language%20Spec%20Introduction.015.jpeg" height="300" />
 
-A command can do things with the parameters passed to it, in particular one of the following:
+A command can do things with the parameters passed to it:
 
 - Pass the parameter to another command or 
 - Call commands of the parameter.
@@ -161,7 +161,7 @@ Another capability of objects is that they can have different interfaces.
 
 Consider how an employee looks to a customer and how to a coworker. The employee will do certain things for a coworker and other things for a customer. The employee has two *interfaces*. It depends on the party referring to the employee, which interface they get to see. Even though both parties are referring to the same person, this person will do different things for them.
 
-Objects have a similar cabability: they can also have separate interfaces. Interfaces group object members together.
+Objects have a similar cabability: they can also have separate interfaces.
 
 <img src="images/Circle%20Language%20Spec%20Introduction.018.jpeg" width="400" />
 
@@ -169,7 +169,7 @@ Interfaces are distinguished here by *triangles*.
 
 The employee here is an advisor to a customer and to another employee a coworker. Sometimes only one specific interface is available within a certain context. In other cases you can choose. An object can also just have one interface, the same one for everybody.
 
-Triangles can be seen as sub objects. The difference with circles is that triangles sort of melt together with their container. Triangles are a way to give different types shared characteristics. 
+Triangles can be seen as sub objects just like circles. The difference with circles is that triangles sort of melt together with their container. Interfaces are a way to give different types shared characteristics. Interfaces can also group object members together.
 
 Reading a Diagram
 -----------------
@@ -180,7 +180,7 @@ Where to start, when reading a diagram like this?
 
 One option is to first read its containment structure, by starting at the largest container, and then looking at the smaller ones. After that, relationships made by the connecting lines is something to look at.
 
-Starting with the largest container may not always be preferred. One symbol might be highlighted. Then this symbol is what the diagram is about. The focus would be on aspects of the highlighted symbol. Then start looking around from there.
+Starting with the largest container may not always be preferred. One symbol might be highlighted. Then this symbol is what the diagram is about. The focus would then be on aspects of the highlighted symbol. Then start looking around from there.
 
 There is really no one way of doing it.
 
