@@ -5,6 +5,10 @@ description: "In object oriented programming, the object is one of the most basi
 keywords:
   - objects
   - object oriented programming
+  - object reference
+  - nothing
+  - null
+  - multiplicity
   - circular
   - circular language
   - code visualization
@@ -41,38 +45,38 @@ __Contents__
 Introduction
 ------------
 
-In object oriented programming, the *object* may be one of the most basic elements of a computer program. An object can represent a thing, an idea or a place, a number or a collection of other things or anything else.
+In object oriented programming, the *object* is one of the most basic elements of a computer program. An object can represent a thing, an idea or a place, a number or a collection of other things or anything else.
 
-An *object* in Circular is represented by a *circle:*
+In *Circular* an object is represented by a circle:
 
 ![](images/Objects.001.png)
 
 Sub-Objects
 -----------
 
-One thing can be composed of other things. For that, an object may contain a number of *sub-objects*. This is drawn out in Circular as *circles* inside another *circle:*
+One thing can be composed of other things. For that, an object may contain a number of *sub-objects*. This is drawn out as *circles* inside other *circles:*
 
 ![](images/Objects.002.png)
 
 Object Reference
 ----------------
 
-A sub-object can point to another object, residing elsewhere in the system. That is considered a link, redirecting to another object:
+A sub-object can point to another object, residing elsewhere in the system. It is considered a link, redirecting to another object:
 
 ![](images/Objects.003.png)
 
-The sub-object __A__ has a *line*, making it a reference. It connects to the object __B__, residing outside the __Parent__ object.
-
-A line like that tends to point *outwards*.
+The sub-object __A__ has a *line*, making it a reference. It connects *outward* of the __Parent__ toward object __B__.
 
 Reference to Parent
 -------------------
 
-This may be an edge-case in object relationships: a *child* referencing a *parent:*
+This is an edge-case in object relationships: a *child* referencing a *parent:*
 
 ![](images/reference-to-parent.png)
 
-The picture shows a child __B__, having an *object reference* in it. It points to its parent __A__. It might look a bit unusual compared to the object reference notation introduced earlier, so it seemed to deserve some separate attention here.
+The picture shows a child __B__, having an *object reference* in it. It points to its parent __A__.
+
+It might look a bit unusual compared to the object reference notation introduced earlier, so it seemed to deserve some separate attention here.
 
 Nothing
 -------
@@ -90,7 +94,7 @@ The concept of *single* is primarily displayed as a *circle:*
 
 ![](images/Objects.005.png)
 
-But for a *list* a spikey *nonagon* can be used:
+But for a list, a spikey *nonagon* can be used:
 
 ![](images/Objects.006.png)
 
