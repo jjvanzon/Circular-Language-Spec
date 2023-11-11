@@ -47,7 +47,7 @@ Introduction
 
 In object oriented programming, the *object* is one of the most basic elements of a computer program. An object can represent a thing, an idea or a place, a number or a collection of other things or anything else.
 
-In *Circular* an object is represented by a circle:
+In *Circular* an object is represented by a *circle:*
 
 ![](images/Objects.001.png)
 
@@ -65,7 +65,7 @@ A sub-object can point to another object, residing elsewhere in the system. It i
 
 ![](images/Objects.003.png)
 
-The sub-object __A__ has a *line*, making it a reference. It connects *outward* of the __Parent__ toward object __B__.
+The sub-object __A__ has a *line*, making it a reference. It connects *outward* of toward object __B__.
 
 Reference to Parent
 -------------------
@@ -74,7 +74,7 @@ This is an edge-case in object relationships: a *child* referencing a *parent:*
 
 ![](images/reference-to-parent.png)
 
-The picture shows a child __B__, having an *object reference* in it. It points to its parent __A__.
+The picture shows a child __B__. It has an *object reference* in it. It points to the parent __A__.
 
 It might look a bit unusual compared to the object reference notation introduced earlier, so it seemed to deserve some separate attention here.
 
@@ -109,6 +109,6 @@ A list can be given a *name*, while its individual items may remain nameless:
 Conclusion
 ----------
 
-So far this description, of different situations of programming with *objects*, and how they might look in the *Circular language*.
+So far this description, of different situations of programming with *objects*, and how they might look in a *Circular* diagram.
 
 [back](../../)
