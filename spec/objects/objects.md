@@ -8,16 +8,24 @@ keywords:
   - nothing
   - null
   - multiplicity
+  - circles
   - circular
   - circular language
   - code visualization
   - visualization
+  - visual programming
+  - visual programming language
+  - VPL
+  - diagrammatic programming language
+  - diagram notation
+  - code map
   - object oriented programming
   - OO
   - OOP
   - programming
   - coding
   - computer programming
+  - programming language
   - software engineering
   - software development
   - software design

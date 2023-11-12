@@ -13,16 +13,24 @@ keywords:
   - type safety
   - strongly typed
   - dynamic types
+  - dashes
   - circular
   - circular language
   - code visualization
   - visualization
+  - visual programming
+  - visual programming language
+  - VPL
+  - diagrammatic programming language
+  - diagram notation
+  - code map
   - object oriented programming
   - OO
   - OOP
   - programming
   - coding
   - computer programming
+  - programming language
   - software engineering
   - software development
   - software design
@@ -53,7 +61,7 @@ __Contents__
 
 ## Introduction
 
-The contents of an object can be *arbitrary*. Anything might be put inside an object:
+The contents of an object can be *arbitrary*. Anything can be put inside an object:
 
 <img src="images/object-arbitrary-contents.png" width="200" />
 
