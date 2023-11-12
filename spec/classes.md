@@ -1,7 +1,7 @@
 ﻿---
 title: "Classes"
 image: "images/classes-page.png"
-description: "In object oriented programming a class determines what type an object is. A class is a special object, a blue-print, describing behavior of other objects."
+description: "In software programming a class determines what type an object is. A class is a special object, a blue-print, describing behavior of other objects."
 keywords:
   - classes
   - prototypes
