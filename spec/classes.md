@@ -1,4 +1,38 @@
-﻿Classes
+﻿---
+title: "Classes"
+image: "images/classes-page.png"
+description: "In object oriented programming a class determines what type an object is. A class is a special object, a blue-print, describing behavior of other objects."
+keywords:
+  - classes
+  - prototypes
+  - static structure
+  - class structure
+  - structure
+  - type arguments
+  - type system
+  - type safety
+  - strongly typed
+  - dynamic types
+  - circular
+  - circular language
+  - code visualization
+  - visualization
+  - object oriented programming
+  - OO
+  - OOP
+  - programming
+  - coding
+  - computer programming
+  - software engineering
+  - software development
+  - software design
+  - software architecture
+  - layered architecture
+  - software
+  - computers
+---
+
+Classes
 =======
 
 [back](..)
