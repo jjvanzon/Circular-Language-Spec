@@ -4,7 +4,6 @@ image: "images/objects-page.png"
 description: "In object oriented programming, the object is one of the most basic elements of a computer program. It can represent a thing, an idea or a place, a number or a collection of other things or anything else."
 keywords:
   - objects
-  - object oriented programming
   - object reference
   - nothing
   - null
@@ -13,6 +12,9 @@ keywords:
   - circular language
   - code visualization
   - visualization
+  - object oriented programming
+  - OO
+  - OOP
   - programming
   - coding
   - computer programming

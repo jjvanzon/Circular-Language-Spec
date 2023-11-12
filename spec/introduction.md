@@ -3,10 +3,14 @@ title: "📢 Introduction"
 image: "images/introduction-page.png"
 description: "Circular is an idea for a computer programming language, mostly a diagram notation for visualizing computer code."
 keywords:
+  - introduction
   - circular
   - circular language
   - code visualization
   - visualization
+  - object oriented programming
+  - OO
+  - OOP
   - programming
   - coding
   - computer programming
