@@ -1,8 +1,6 @@
 ﻿Classes
 =======
 
-*JJ van Zon, 2022*
-
 [back](..)
 
 <img src="images/classes-collage.png" width="700" />
@@ -27,7 +25,7 @@ The contents of an object may be *arbitrary*. Anything could be put inside an ob
 
 But an object can also select another object to serve as its *class* or *prototype*.
 
-That *class* determines what *type* of object it is. A class might be a *special object*, a sort of *blue-print*, that aims to describe characteristics and behavior for other objects.
+That *class* determines what *type* of object it is. A class can be thought of as a *special object*, a sort of *blue-print*, that aims to describe characteristics and behavior for other objects.
 
 ## Basic Notation
 
@@ -35,9 +33,9 @@ The *basic notation* in Circular for pointing out a *class* is as follows:
 
 <img src="images/object-and-class.png" width="200" />
 
-The *object* on the left points out the *class* on the right.
+The *object* on the left points at the *class* on the right.
 
-A *dashed line* between the circles points out a *class:*
+A *dashed line* between the circles means that it points out a *class:*
 
 <img src="images/dashed-line-horizontal.png" width="130" />
 
@@ -45,7 +43,7 @@ A *line dissector* can indicate *direction*, sort of like an *arrow head:*
 
 <img src="images/class-line-dissector.png" width="90" />
 
-A *dashed circle* may represent a *class:*
+The class can be drawn out as a *dashed circle* to make it extra clear it functions as a *class:*
 
 <img src="images/dashed-circle.png" width="70" />
 
@@ -59,29 +57,29 @@ An object initially shows contents *identical* to the class. An object might hav
 
 <img src="images/Classes.005.png" width="300" />
 
-While the *structure* of the object is still the same, the *data* appears to have changed. *Values* of an object's *attributes* can change as well as *related objects*.
+While the *structure* of the object is still the same, the *data* appears to have changed. *Values* may freely change as well as which *related objects* it points to.
 
 ## Prototypes
 
-Here is an alternative where a class is drawn with *solid line* circle:
+An alternative notation is that a class is drawn with *solid line* circle instead:
 
 <img src="images/object-and-class-with-solid-lined-shape.png" width="200" />
 
-Shapes with *dashed lines* seem *optional*.
+Using shapes with *dashed lines* can be seen as *optional*.
 
-The solid line shape could also be used for a distinction between classes and *prototypes:* where an object is initially a copy of another object, but anything may be changed about it, even its structure.
+This solid line shape notation, might also be used for a distinction between classes and *prototypes:* where an object is initially a copy of another object, but anything may be changed about it, even its structure.
 
 ## Static Structure
 
-To try and make a visual distinction between *static* structure and *object* structure, other parts of the static (or 'class') structure could be drawn with dashed lines too:
+To visually distinguish *static* structure from *object* structure, other parts of the static (or class) structure could be drawn with dashed lines too:
 
 <img src="images/object-structure-and-class-or-static-structure.png" width="300" />
 
-The rules do not seem to be that precise when it comes to *shapes* drawn with different line styles. The rules for *connection lines* are a bit stricter though.
+The rules are not that precise when it comes to *shapes* drawn with different line styles. Note that the rules for *connection lines* are a bit stricter though.
 
 ## Pointer to a Class
 
-A class could be referenced like an *object*, using an *object line*. That establishes an *pointer to a class:*
+A class can be referenced like an *object*, using an *object line*. This establishes an *pointer to a class:*
 
 <img src="images/pointer-to-class-solid-border.png" width="200" />
 
@@ -89,7 +87,7 @@ That *solid* line in the middle means it is a *pointer*.
 
 In .NET and C# these pointers to classes might represent *type arguments* and *Type objects*.
 
-Perhaps it will look neater if the pointer is drawn with a *dashed shape* too:
+Perhaps it would look neater if the pointer is drawn with a *dashed shape* too:
 
 <img src="images/pointer-to-class-dashed-border.png" width="225" />
 
@@ -107,7 +105,7 @@ Now the __object reference__ still points out __Class A__. But the __object__ po
 
 ## Object Reference without a Class
 
-When an object reference does not have a class, this suggests the possibility at point to *any* object.
+*Any* object can be pointed to using an object reference, that *does not* have a class.
 
 <img src="images/object-reference-without-class-1.png" width="325" />
 
@@ -119,6 +117,6 @@ Here the *Object* points out *Class B* instead of Class A. But since the *object
 
 ## Conclusion
 
-Hopefully this gave an impression of how *class* notation could look in the *Circular language*. Dashes seem key in its notation.
+So far an impression of how *class* notation looks in the *Circular language*. Dashes seem to be key in its notation.
 
 [back](..)
