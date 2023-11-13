@@ -1,8 +1,8 @@
 *JJ van Zon, 2021*
 
-Circular aims to become a visual programming language made from shapes and lines. It may once become a diagram notation for visualizing computer code.
+Circular is a diagram notation for code visualization. It is still in development. It aims to become a visual programming language made from shapes and lines.
 
-You may find the following sections here:
+You can find the following sections here:
 
 - [Spec](spec/README.md)
 
