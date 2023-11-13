@@ -151,11 +151,11 @@ For an object reference that *does not* have a class, *any* object can be pointe
 
 <img src="images/object-reference-without-class-1.png" width="325" />
 
-The __Object Reference__ *does not* point out a class. Therefore it can point at an object of *any* class. It points at an object, which so happens to be of __Class A__.
+The __object reference__ *does not* point out a class. Therefore it can point at an object of *any* class. It points at an object, which so happens to be of __Class A__.
 
 <img src="images/object-reference-without-class-2.png" width="325" />
 
-Here the __Object__ points out __Class B__ instead of __Class A__. But since the __Object Reference__ does not have a class, it can point to objects of __Class B__ too.
+Here the __object__ points out __Class B__ instead of __Class A__. But since the __object reference__ does not have a class, it can point to objects of __Class B__ too.
 
 ## Conclusion
 
