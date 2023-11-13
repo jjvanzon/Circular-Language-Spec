@@ -117,7 +117,7 @@ To visually distinguish *static* structure from *object* structure, other parts 
 
 <img src="images/object-structure-and-class-or-static-structure.png" width="300" />
 
-The rules are not that precise when it comes to *shapes* drawn with different line styles. Note that the rules for *connection lines* are a bit stricter.
+The rules are not that precise when it comes to *shapes* drawn with different line styles.
 
 ## Pointer to a Class
 
