@@ -28,7 +28,7 @@ __Contents__
 
 ## Introduction
 
-Commands are *executable* objects: actions, procedures, processes, that a computer can perform. In *Circular* they are displayed as squares and diamond shapes:
+Commands are *executable* objects: actions, procedures, processes, that a computer can perform. In *Circular* they are displayed as *squares* and *diamond* shapes:
 
 <img src="images/1.%20Commands%20Main%20Concepts.001.png" width="50" /> <img src="images/1.%20Commands%20Main%20Concepts.002.png" width="50" />
 
@@ -50,7 +50,7 @@ Names can be displayed with commands as well.
 
 ## Diagram Elements
 
-Commands have certain characteristics, that can be symbolized in Circular.
+Commands can have certain characteristics symbolized in Circular.
 
 A *diamond* expresses that a command is __executable__:
 
@@ -68,7 +68,7 @@ A *solid line* indicates that one command is a __reference__ to another:
 
 <img src="images/1.%20Commands%20Main%20Concepts.004.png" width="100" />
 
-Two symbols connected with a solid line, are considered *the same* command.
+Two symbols connected with a solid line, represent *the same* command.
 
 A *dashed line* between command symbols makes one command sort of a copy of another:
 
@@ -80,7 +80,7 @@ If a command is used as a definition, *dashed borders* may be used:
 
 <img src="images/1.%20Commands%20Main%20Concepts.006.png" width="80" />
 
-(Using dashed shapes is still a bit of an open discussion.)
+(However, using dashed shapes is still a bit of an open discussion.)
 
 A commands can have a *name:*
 
@@ -102,7 +102,7 @@ To summarize, here is a list of traits a command can have:
 
 ![](images/7.%20Commands%20Ideas.037.jpeg)
 
-A square does not execute. That is, it only executes when *called*. __A__ may call __B__:
+A square does not execute. That is, it only executes when *called*. __A__ can call __B__:
 
 ![](images/7.%20Commands%20Ideas.038.jpeg)
 
@@ -110,7 +110,7 @@ But then again: __A__ may be the one that’s executing, not __B__. So diamonds 
 
 ## Derived Constructs
 
-Constructs known from other programming languages, have a reasonably unique expression using combinations of these basic elements from Circular. Here follows an attempt to accompany this claim with examples.
+Constructs known from other programming languages have a reasonably unique expression using combinations of the basic elements from Circular. Here follows an attempt to accompany this claim with examples.
 
 ## Command Definitions
 
@@ -124,7 +124,7 @@ void MyDefinition()
 }
 ```
 
-Command definitions themselves might not necessarily execute. Just copies of it, more likely. *Not executing* is expressed with a square: 
+Command definitions themselves might not necessarily execute. Just copies of it, more likely. *Not executing* is expressed by a *square:*
 
 <img src="images/1.%20Commands%20Main%20Concepts.008.png" width="50" />
 
@@ -142,18 +142,16 @@ Where a definition used, it is pointed out by a *dashed line:*
 
 <img src="images/1.%20Commands%20Main%20Concepts.010.png" width="210" />
 
-That way another symbol can use `MyDefinition` as a *command definition*.
-
-So a command definition is symbolized by:
+So a command definition is symbolized by a:
 
 - square
-- named
+- name
 - dashed
 - pointed to with dashed lines
 
 because it is:
 
-- not executable (directly)
+- not executable
 - named
 - used as a definition
  
@@ -161,13 +159,13 @@ because it is:
 
 A command definition can be *called* multiple times.
 
-In a different programming language a command call might look as follows:
+In other programming languages a command call might look as follows:
 
 ```c#
 MyCommand();
 ```
 
-A call *executes,* so that is symbolized with a diamond shape:
+A call *executes,* therefor it is symbolized with a *diamond* shape:
 
 <img src="images/1.%20Commands%20Main%20Concepts.002.png" width="50" />
 
@@ -175,11 +173,11 @@ A call points out a definition, giving it a *dashed line* pointing away from it:
 
 <img src="images/1.%20Commands%20Main%20Concepts.011.png" width="120" />
 
-A is usually placed *inside* a parent command.
+A call is usually placed *inside* a parent command:
 
 <img src="images/1.%20Commands%20Main%20Concepts.012.png" width="140" />
 
-The call itself usually remains *nameless*.
+The call itself tends to remain *nameless*.
 
 So a command call is symbolized by:
 
@@ -197,15 +195,15 @@ because it is:
 
 ## How Calls Work
 
-To make one command, call another, a diamond is put in the *calling command* connected to the *command to call*.
+To make one command call another a diamond is put in the *calling command* connected to the *command to call:*
 
 ![](images/7.%20Commands%20Ideas.014.jpeg)
 
-It is said that __A__ calls __B__.
+Then __A__ calls __B__.
 
 __C__ now is in a way part of command __A__. It executes when __A__ executes. It’s like the code of __B__ is inserted right into command __A__.
 
-When one square is called, its containing diamonds will be called too.
+When one square is called, its containing diamonds will be called too:
 
 ![](images/7.%20Commands%20Ideas.015.jpeg)
 
@@ -213,23 +211,21 @@ When __A__ is called, __B__ is called. When __B__ is called, __C__, __D__ and __
 
 ## Command References
 
-`[ WAS HERE ]`
-
 A command can be *pointed to*.
 
-This may look as follows in another programming language:
+This can look as follows in another programming language:
 
 ```c#
 MyCommand
 ```
 
-So without decoration with brackets or what have you, it may represent a *reference* to a command.
+So without decoration with brackets or what have you, it represents a *reference* to a command.
 
-A command reference may be a square, to indicate does not *execute* directly.
+A command reference is a square, to indicate does not *execute* directly.
 
 <img src="images/1.%20Commands%20Main%20Concepts.008.png" width="50" />
 
-A *solid line* can be used to point out a different command:
+A *solid line* is used to point out a different command:
 
 <img src="images/1.%20Commands%20Main%20Concepts.013.png" width="400" />
 
@@ -240,12 +236,12 @@ So a command reference is symbolized by:
 
 because it is:
 
-- not executable (directly)
+- not executed
 - a reference
 
 ## How Command References Work
 
-A square connected to another command may establish a *reference* to a command.
+A square connected to another command establishes a *reference* to a command.
 
 ![](images/7.%20Commands%20Ideas.013.png)
 
@@ -257,7 +253,9 @@ Therefore, when a command reference is called, the referenced command is called:
 
 When __A__ calls __B__, it’s actually calling __C__.
 
-Command references can be a way to leave the command to call *undetermined*, *variable*, to be determined later.
+Command references offer a clever means of leaving the command open-ended or variable, to be determined at a later time.
+
+`[ WAS HERE ]`
 
 ## Code Blocks
 
