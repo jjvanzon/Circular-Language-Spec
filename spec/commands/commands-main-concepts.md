@@ -475,8 +475,6 @@ The implementation of a command is defined as the *private contents* of a comman
 
 The contents drawn with thicker lines, are the larger square's *implementation*. They are the private contents. The thinner lines denote the command's *parameters*. Those are *public*.
 
-`[ WAS HERE ]`
-
 ## Parameters and Return Values Not Covered
 
 Symbolizations for parameters and return values are not further covered in detail here. Those would be covered by another article: *Parameters*.
