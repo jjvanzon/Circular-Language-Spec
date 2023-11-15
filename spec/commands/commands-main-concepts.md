@@ -356,32 +356,24 @@ This might look as follows in another language:
 if { ... }
 ```
 
-(This is pseudo code. A full `if` statement has more parts.)
-
-The following notation can be to represent a clause:
+The following notation represents a clause:
 
 <img src="images/1.%20Commands%20Main%20Concepts.020.png" width="100" />
 
-`[ WAS HERE ]`
 
-Another possible notation looks like a nameless *local function* passed as a *reference:*
-
-<img src="images/1.%20Commands%20Main%20Concepts.021.png" width="170" />
-
-So a clause is expressed as:
+So a clause can be expressed as:
 
 - a square
 - inside a diamond
-- that might connect to another square
-- with a solid line
 
 because it is:
 
 - not executed directly
-- passed to another command or statement
-- can be a command reference
+- but embedded in a statement
 
 ## Lambda Expressions
+
+The notation for clauses and lambda expressions might actually be interchangeable.
 
 A lambda expression might be found in other programming languages as sort of a short notation for a function, embedded inside other statements.
 
@@ -399,13 +391,32 @@ Where(...)
 
 So the `...` is the lambda expression here.
 
-Honestly said, in Circular there might not be a way to distinguish it from *clauses*.
+Its notation looks like a nameless *local function* passed as a *reference:*
+
+<img src="images/1.%20Commands%20Main%20Concepts.023.png" width="160" />
+
+So a lambda expression can be expressed as:
+
+- square
+- inside a diamond
+- with a solid line
+- pointing to the outside
+
+Because it is:
+
+- not executed directly
+- passed to another command
+- as a command reference
+
+Honestly said, in Circular there might not be a clear distiction between *lambdas* and *clauses*. So the notations may as well be the exchanged:
 
 <img src="images/1.%20Commands%20Main%20Concepts.022.png" width="100" />
 
-Or:
+<br/>
 
-<img src="images/1.%20Commands%20Main%20Concepts.023.png" width="160" />
+<img src="images/1.%20Commands%20Main%20Concepts.021.png" width="170" />
+
+`[ WAS HERE ]`
 
 ## Nested Commands
 
