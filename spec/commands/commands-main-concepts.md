@@ -346,37 +346,35 @@ because it is:
 - has a name
 - called / like a definition
 
+`[ WAS HERE reading ]`
+
 ## Clauses
 
 Clauses can be found in an `if` statement or in a `where` clause from querying languages.
 
-This might look as follows in a textual language:
+This can look as follows in a textual language:
 
 ```c#
 if { ... }
 ```
 
-It is represented graphically in Circular like this:
+And is represented graphically in Circular:
 
 <img src="images/1.%20Commands%20Main%20Concepts.020.png" width="100" />
 
 So a clause can be expressed as:
 
-- inside a diamond
 - a square
+- inside a diamond
 
-because it is:
+because it:
 
-- embedded in a statement
 - may or may not execute
+- is embedded in a statement
 
 ## Lambda Expressions
 
-The notation for clauses and lambda expressions are pretty much interchangeable.
-
-A lambda might be found in other programming languages as sort of a short notation for a function, embedded right inside a code line.
-
-In another programming language it might look like this:
+A lambda might be found in other programming languages as sort of a short notation for a function, embedded right inside a code line, that may look like this:
 
 ```c#
 Where(x => x.IsChecked)
@@ -407,7 +405,7 @@ Because it is:
 - passed to another command
 - as a command reference
 
-Honestly said, in *Circular* there may not be much distiction between *lambdas* and *clauses*. So the notations may as well be switched around:
+Honestly said, in Circular there may not be much distiction between *lambdas* and *clauses*. So the notations may as well be switched:
 
 <img src="images/1.%20Commands%20Main%20Concepts.021.png" width="170" />
 
@@ -415,13 +413,13 @@ Honestly said, in *Circular* there may not be much distiction between *lambdas* 
 
 ## Nested Commands
 
-Nested commands are commands defined within a command.
+Nested commands are commands defined within a command. Some o those have been introduced earlier, but the concept may deserve a little more attentio here.
 
-They look like this:
+They can look like this:
 
 <img src="images/7.%20Commands%20Ideas.021.jpeg" width="90" /> <img src="images/7.%20Commands%20Ideas.019.jpeg" width="80" /> <img src="images/1.%20Commands%20Main%20Concepts.015a.png" width="60" /> <img src="images/1.%20Commands%20Main%20Concepts.015b.png" width="60" />
 
-The nested command can be a *diamond* or a *square*. Its *container* can also be a *diamond* or *square*. A nested command might *not have lines* pointing away from it.
+The nested command can be a *diamond* or a *square*. Its *container* can also be a *diamond* or *square*. The nested commands in this case *have no lines* pointing away from it.
 
 The concept of nested commands may coincide with the terms:
 
@@ -462,11 +460,9 @@ It does not execute unless it is *called:*
 
 ## Deeper Nested Command
 
-A deeper nested command may be a nested command inside a nested command.
+A deeper nested command is a nested command inside a nested command:
 
 ![](images/7.%20Commands%20Ideas.034.png)
-
-(So it might be a command symbol without lines pointing away from it, inside a command symbol without lines pointing away from it, inside a command symbol *with* lines pointing away from it.)
 
 ## Implementation
 
@@ -474,7 +470,9 @@ The implementation of a command might be defined as the private contents of a co
 
 <img src="images/1.%20Commands%20Main%20Concepts.024.png" width="300" />
 
-The large square's contents, drawn with thick lines, might represent the command’s *implementation*, because they might be private. The objects inside the large square that are drawn with thinner lines, might be the command’s parameters: its publics.
+The large square's contents, drawn with thick lines are the command’s *implementation*. They are the private contents. The objects inside the large square that are drawn with thinner lines, are the command's parameters: its publics.
+
+`[ WAS HERE writing ]`
 
 ## Parameters and Return Values Not Covered
 
