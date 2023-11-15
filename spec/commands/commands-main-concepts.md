@@ -348,34 +348,33 @@ because it is:
 
 ## Clauses
 
-Clauses can be found for instance in an `if` statement or in a `where` clause from querying languages.
+Clauses can be found in an `if` statement or in a `where` clause from querying languages.
 
-This might look as follows in another language:
+This might look as follows in a textual language:
 
 ```c#
 if { ... }
 ```
 
-The following notation represents a clause:
+It is represented graphically in Circular like this:
 
 <img src="images/1.%20Commands%20Main%20Concepts.020.png" width="100" />
 
-
 So a clause can be expressed as:
 
-- a square
 - inside a diamond
+- a square
 
 because it is:
 
-- not executed directly
-- but embedded in a statement
+- embedded in a statement
+- may or may not execute
 
 ## Lambda Expressions
 
-The notation for clauses and lambda expressions might actually be interchangeable.
+The notation for clauses and lambda expressions are pretty much interchangeable.
 
-A lambda expression might be found in other programming languages as sort of a short notation for a function, embedded inside other statements.
+A lambda might be found in other programming languages as sort of a short notation for a function, embedded right inside a code line.
 
 In another programming language it might look like this:
 
@@ -389,9 +388,9 @@ Minus the details:
 Where(...)
 ```
 
-So the `...` is the lambda expression here.
+So the `...` represents the lambda expression here.
 
-Its notation looks like a nameless *local function* passed as a *reference:*
+In Circular, the notation looks like a nameless *local function* passed by *reference:*
 
 <img src="images/1.%20Commands%20Main%20Concepts.023.png" width="160" />
 
@@ -404,19 +403,15 @@ So a lambda expression can be expressed as:
 
 Because it is:
 
-- not executed directly
+- not directly executed
 - passed to another command
 - as a command reference
 
-Honestly said, in Circular there might not be a clear distiction between *lambdas* and *clauses*. So the notations may as well be the exchanged:
-
-<img src="images/1.%20Commands%20Main%20Concepts.022.png" width="100" />
-
-<br/>
+Honestly said, in *Circular* there may not be much distiction between *lambdas* and *clauses*. So the notations may as well be switched around:
 
 <img src="images/1.%20Commands%20Main%20Concepts.021.png" width="170" />
 
-`[ WAS HERE ]`
+<img src="images/1.%20Commands%20Main%20Concepts.022.png" width="100" />
 
 ## Nested Commands
 
