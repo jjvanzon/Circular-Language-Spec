@@ -10,6 +10,7 @@ This is an attempt at a specification of this language.
 - [Objects](spec/objects/objects.md)
 - [Classes](spec/classes.md)
 - [Commands](spec/commands/commands-main-concepts.md)
+- [Execution Flow](spec/execution-flow.md) `[ Draft ]`
 
 <!--
 - [Basic Diagram Elements](spec/basic-diagram-elements.md)
