@@ -84,7 +84,6 @@ __Contents__
 - [Inactive Nested Command](#inactive-nested-command)
 - [Deeper Nested Command](#deeper-nested-command)
 - [Implementation](#implementation)
-- [Parameters and Return Values Not Covered](#parameters-and-return-values-not-covered)
 - [Conclusion](#conclusion)
 
 ## Introduction
@@ -143,7 +142,7 @@ If a command is used as a definition, *dashed borders* may be used:
 
 (However, using dashed shapes is still a bit of an open discussion.)
 
-A commands can have a *name:*
+A command can have a *name:*
 
 <img src="images/1.%20Commands%20Main%20Concepts.007.png" width="140" />
 
@@ -220,13 +219,13 @@ because it is:
 
 A command definition can be *called* multiple times.
 
-In other programming languages a command call might look as follows:
+In other programming languages a command call may look as follows:
 
 ```c#
 MyCommand();
 ```
 
-A call *executes,* therefor it is symbolized with a *diamond* shape:
+A call *executes,* therefore it is symbolized with a *diamond* shape:
 
 <img src="images/1.%20Commands%20Main%20Concepts.002.png" width="50" />
 
@@ -256,7 +255,7 @@ because it is:
 
 ## How Calls Work
 
-To make one command call another a diamond is put in the *calling command* connected to the *command to call:*
+To make one command, call another a diamond is put in the *calling command* connected to the *command to call:*
 
 ![](images/7.%20Commands%20Ideas.014.jpeg)
 
@@ -264,7 +263,7 @@ Then __A__ calls __B__.
 
 __C__ now is in a way part of command __A__. It executes when __A__ executes. It’s like the code of __B__ is inserted right into command __A__.
 
-When one square is called, its containing diamonds will be called too:
+When one square is called, its containing diamonds will also be called:
 
 ![](images/7.%20Commands%20Ideas.015.jpeg)
 
@@ -282,7 +281,7 @@ MyCommand
 
 So without decoration with brackets or what have you, it represents a *reference* to a command.
 
-A command reference is a square, to indicate does not *execute* directly.
+A command reference is a square, to indicate that it doesn't *execute:*
 
 <img src="images/1.%20Commands%20Main%20Concepts.008.png" width="50" />
 
@@ -290,15 +289,15 @@ A *solid line* is used to point out a different command:
 
 <img src="images/1.%20Commands%20Main%20Concepts.013.png" width="400" />
 
-So a command reference is symbolized by:
+So a command reference is symbolized by a:
 
 - square 
 - solid line pointing to another command
 
-because it is:
+because it does:
 
-- not executed
-- a reference
+- not execute
+- is a reference
 
 ## How Command References Work
 
@@ -345,7 +344,7 @@ A code can might also look like this:
 
 <img src="images/1.%20Commands%20Main%20Concepts.015a.png" width="100" />
 
-The previous diagram showed a code block within a definition (a square). Right here the diagram shows the code block in an execution.
+Instead of a code block in a definition, this is a code block inside an execution.
 
 Code blocks can be nested even further:
 
@@ -360,7 +359,7 @@ In summary, a code block is symbolized by:
 
 because it is:
 
-- executable
+- executed
 - contained by another command
 - nameless
 - not a reference
@@ -368,7 +367,7 @@ because it is:
 
 ## Local Functions
 
-Other programming languages may mention local functions. It means that a command is defined within another command.
+Other programming languages may have a thing called local functions. This means: a command is defined within another command.
 
 In a different programming language this can look as follows:
 
@@ -405,11 +404,11 @@ because it is:
 - not directly executed
 - contained inside a definition
 - has a name
-- called / like a definition
+- called
 
 ## Clauses
 
-Clauses can be found in an `if` statement or as a `where` clause.
+Clauses can be found as part of an `if` statement or as a `where` clause.
 
 This can look as follows in a textual language:
 
@@ -470,7 +469,7 @@ Honestly, in Circular there may not be much of a distiction between *lambdas* an
 
 <img src="images/1.%20Commands%20Main%20Concepts.021.png" width="170" /> <img src="images/1.%20Commands%20Main%20Concepts.022.png" width="100" />
 
-It's open to interpretation, but hopefully the meaning of the symbols are getting clearer and you can choose to use them as you see fit.
+It's open to interpretation, but hopefully the meaning of the symbols are getting clearer so you can choose to use them as you see fit.
 
 ## Nested Commands
 
@@ -480,7 +479,7 @@ They can look like this:
 
 <img src="images/7.%20Commands%20Ideas.021.jpeg" width="90" /> <img src="images/7.%20Commands%20Ideas.019.jpeg" width="80" /> <img src="images/1.%20Commands%20Main%20Concepts.015a.png" width="60" /> <img src="images/1.%20Commands%20Main%20Concepts.015b.png" width="60" />
 
-The nested command can be a *diamond* or a *square*. Its *container* is also be a *diamond* or *square*. They often have no lines attachted to it.
+The nested command can either be a *diamond* or a *square*. Its *container* is also a *diamond* or *square*. They often have no lines attachted to it.
 
 The concept of nested commands may coincide with the terms:
 
@@ -504,12 +503,12 @@ It is called *active*, because it *executes*.
 
 ## Inactive Nested Command
 
-An *inactive* nested command is one that *does not execute*. Therefor it is displayed as *square:*
+An *inactive* nested command is one that *does not execute*. Therefore it is displayed as *square:*
 
 <img src="images/inactive-nested-command-with-label.png" width="190" />
 <img src="images/7.%20Commands%20Ideas.032.png" width="120" />
 
-It can only be executed by *calling* it:
+It can only execute by *calling* it:
 
 <img src="images/7.%20Commands%20Ideas.022.jpeg" width="300" />
 
@@ -523,6 +522,8 @@ It can only be executed by *calling* it:
 
 Commands can be nested even further, creating a deeper nested command structure like this:
 
+`[ TODO: Remove reference line and its target. ]`
+
 ![](images/7.%20Commands%20Ideas.034.png)
 
 ## Implementation
@@ -533,14 +534,10 @@ The implementation of a command is defined as the *private contents* of a comman
 
 The contents drawn with thicker lines, are the larger square's *implementation*. They are the private contents. The thinner lines denote the command's *parameters*. Those are *public*.
 
-## Parameters and Return Values Not Covered
-
-Symbolizations for parameters and return values are not further covered in detail here. Those would be covered by another article: *Parameters*.
-
 ## Conclusion
 
 Using constructs from Circular, it may seem circumstantial whether a command is a code block, clause, definition, call, etc. It seems to result from the way basic language elements from Circular relate to each other. These symbols from Circular can be combined to represent constructs from other languages.
 
-It deserves to be said, that these symbolizations are just *ideas*. Depending on how notation is used by a tool, different choices could be made.
+It deserves to be said, that these symbolizations are just *ideas*. Depending on how notation is used by an application, different choices could be made.
 
 [back](../../)
