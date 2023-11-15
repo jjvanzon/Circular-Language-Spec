@@ -16,6 +16,8 @@ keywords:
   - dashes
   - circular
   - circular language
+  - shapes
+  - boxes and arrows
   - code visualization
   - visualization
   - visual programming
@@ -23,6 +25,7 @@ keywords:
   - VPL
   - diagrammatic programming language
   - diagram notation
+  - diagrams
   - code map
   - object oriented programming
   - OO
