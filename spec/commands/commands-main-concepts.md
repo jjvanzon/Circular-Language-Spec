@@ -18,6 +18,7 @@ __Contents__
 - [Local Functions](#local-functions)
 - [Clauses](#clauses)
 - [Lambda Expressions](#lambda-expressions)
+- [Open Ended](#open-ended)
 - [Nested Commands](#nested-commands)
 - [Active Nested Command](#active-nested-command)
 - [Inactive Nested Command](#inactive-nested-command)
@@ -346,8 +347,6 @@ because it is:
 - has a name
 - called / like a definition
 
-`[ WAS HERE reading ]`
-
 ## Clauses
 
 Clauses can be found in an `if` statement or a `where` clause.
@@ -392,7 +391,7 @@ In Circular, the notation looks like a nameless *local function* passed by *refe
 
 <img src="images/1.%20Commands%20Main%20Concepts.023.png" width="160" />
 
-So a lambda expression can be expressed as a:
+So a lambda can be expressed as a:
 
 - square
 - inside a diamond
@@ -405,17 +404,21 @@ Because it is:
 - passed to another command
 - as a command reference
 
+## Open Ended
+
 Honestly, in Circular there may not be much of a distiction between *lambdas* and *clauses*. So the notations may as well be switched around:
 
 <img src="images/1.%20Commands%20Main%20Concepts.021.png" width="170" />
 
 <img src="images/1.%20Commands%20Main%20Concepts.022.png" width="100" />
 
+It's all a little bit open to interpretation, but hopefully by now the meaning of the symbols are getting clearer and you can choose to use them appropriately as you see fit.
+
 ## Nested Commands
 
 Nested commands are commands defined within a command. They were demonstrated earlier, but the concept may deserve a little more attention.
 
-They look like this:
+They can look like this:
 
 <img src="images/7.%20Commands%20Ideas.021.jpeg" width="90" /> <img src="images/7.%20Commands%20Ideas.019.jpeg" width="80" /> <img src="images/1.%20Commands%20Main%20Concepts.015a.png" width="60" /> <img src="images/1.%20Commands%20Main%20Concepts.015b.png" width="60" />
 
@@ -448,7 +451,7 @@ An *inactive* nested command is one that *does not execute*. Therefor it is disp
 <img src="images/inactive-nested-command-with-label.png" width="190" />
 <img src="images/7.%20Commands%20Ideas.032.png" width="120" />
 
-It can only be executed by *calling* it:*
+It can only be executed by *calling* it:
 
 <img src="images/7.%20Commands%20Ideas.022.jpeg" width="300" />
 
@@ -460,7 +463,7 @@ It can only be executed by *calling* it:*
 
 ## Deeper Nested Command
 
-A deeper nested command is a nested command inside a nested command:
+Commands can be nested even further, creating a deeper nested command structure like this:
 
 ![](images/7.%20Commands%20Ideas.034.png)
 
@@ -470,9 +473,9 @@ The implementation of a command is defined as the *private contents* of a comman
 
 <img src="images/1.%20Commands%20Main%20Concepts.024.png" width="300" />
 
-The contents drawn with thicker lines, are the larger square's *implementation*. They are the private contents. The objects inside the large square that are drawn with thinner lines, are the command's *parameters*. those are *public*.
+The contents drawn with thicker lines here, are the larger square's *implementation*. They are the private contents. The objects drawn with thinner lines, are the command's *parameters*. those are *public*.
 
-`[ WAS HERE writing ]`
+`[ WAS HERE ]`
 
 ## Parameters and Return Values Not Covered
 
