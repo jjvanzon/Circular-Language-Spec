@@ -254,7 +254,7 @@ Therefore, when a command reference is called, the referenced command is called:
 
 When __A__ calls __B__, it’s actually calling __C__.
 
-Command references offer a clever means of leaving the command open-ended or variable, to be determined at a later time.
+Command references are a clever way of leaving the command open-ended or variable, to be determined at a later time.
 
 ## Code Blocks
 
@@ -277,7 +277,7 @@ In Circular, a code block is a command *embedded* inside another command:
 
 <img src="images/1.%20Commands%20Main%20Concepts.014.png" width="100" />
 
-The inner command has a *diamond* shape, meaning it *executes* automatically if the parent command executes.
+The inner command has a *diamond* shape, meaning it *executes* automatically when the parent command executes.
 
 Furthermore, a code block is *nameless*. It also does not have any *lines* going towards or away from it.
 
@@ -308,7 +308,7 @@ because it is:
 
 ## Local Functions
 
-Local function might exist in other programming languages. It means that a command is defined within another command.
+Other programming languages may mention local functions. It means that a command is defined within another command.
 
 In a different programming language this can look as follows:
 
@@ -321,7 +321,7 @@ void MyParentCommand()
 }
 ```
 
-In Circular it is also a *command definition*, contained within another *command definition*:
+In Circular it is a *command definition* in another *command definition*:
 
 <img src="images/1.%20Commands%20Main%20Concepts.017.png" width="100" />
 
@@ -349,7 +349,7 @@ because it is:
 
 ## Clauses
 
-Clauses can be found in an `if` statement or a `where` clause.
+Clauses can be found in an `if` statement or as a `where` clause.
 
 This can look as follows in a textual language:
 
@@ -412,11 +412,11 @@ Honestly, in Circular there may not be much of a distiction between *lambdas* an
 
 <img src="images/1.%20Commands%20Main%20Concepts.022.png" width="100" />
 
-It's all a little bit open to interpretation, but hopefully by now the meaning of the symbols are getting clearer and you can choose to use them appropriately as you see fit.
+It's open to interpretation, but hopefully the meaning of the symbols are getting clearer and you can choose to use them as you see fit.
 
 ## Nested Commands
 
-Nested commands are commands defined within a command. They were demonstrated earlier, but the concept may deserve a little more attention.
+Nested commands are commands defined within a command. They were demonstrated earlier, but this concept may deserve a little more attention.
 
 They can look like this:
 
@@ -428,7 +428,7 @@ The concept of nested commands may coincide with the terms:
 
 - Code block
 - Clause
-- Local function
+- Local function or
 - Lambda expression
 
 Those can all be considered *nested commands*. Sometimes however, it is easier to use a single umbrella term for these phenomena.
@@ -473,18 +473,18 @@ The implementation of a command is defined as the *private contents* of a comman
 
 <img src="images/1.%20Commands%20Main%20Concepts.024.png" width="300" />
 
-The contents drawn with thicker lines here, are the larger square's *implementation*. They are the private contents. The objects drawn with thinner lines, are the command's *parameters*. those are *public*.
+The contents drawn with thicker lines, are the larger square's *implementation*. They are the private contents. The thinner lines denote the command's *parameters*. Those are *public*.
 
 `[ WAS HERE ]`
 
 ## Parameters and Return Values Not Covered
 
-Symbolizations for parameters and return values might not be covered much in this text. Those are intended to be covered by another chapter: *Parameters*.
+Symbolizations for parameters and return values are not further covered in detail here. Those would be covered by another article: *Parameters*.
 
 ## Conclusion
 
-Using commands constructs from Circular, it may seem circumstantial whether a command symbol might be stereotyped as a block, clause, definition, call, etc. It seems to result from the way basic language elements from Circular relate to each other. Still, it may be relevant to be aware how these symbols from Circular can be combined to represent constructs from other languages.
+Using constructs from Circular, it may seem circumstantial whether a command is a code block, clause, definition, call, etc. It seems to result from the way basic language elements from Circular relate to each other. Still, it may be relevant to be aware how these symbols from Circular can be combined to represent constructs from other languages.
 
-It deserves to be said, that these symbolizations are just *ideas*. Depending on how this language might be used by a tool, different choices might be made.
+It deserves to be said, that these symbolizations are just *ideas*. Depending on how this language might be used by a tool, different choices could be made.
 
 [back](../../)
