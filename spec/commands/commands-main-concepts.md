@@ -350,7 +350,7 @@ because it is:
 
 ## Clauses
 
-Clauses can be found in an `if` statement or in a `where` clause from querying languages.
+Clauses can be found in an `if` statement or a `where` clause.
 
 This can look as follows in a textual language:
 
@@ -362,19 +362,19 @@ And is represented graphically in Circular:
 
 <img src="images/1.%20Commands%20Main%20Concepts.020.png" width="100" />
 
-So a clause can be expressed as:
+A clause is expressed as:
 
 - a square
 - inside a diamond
 
 because it:
 
-- may or may not execute
+- might not execute
 - is embedded in a statement
 
 ## Lambda Expressions
 
-A lambda might be found in other programming languages as sort of a short notation for a function, embedded right inside a code line, that may look like this:
+A lambda might be found in other programming languages as sort of a short notation for a function, embedded right inside a code line:
 
 ```c#
 Where(x => x.IsChecked)
@@ -392,12 +392,12 @@ In Circular, the notation looks like a nameless *local function* passed by *refe
 
 <img src="images/1.%20Commands%20Main%20Concepts.023.png" width="160" />
 
-So a lambda expression can be expressed as:
+So a lambda expression can be expressed as a:
 
 - square
 - inside a diamond
 - with a solid line
-- pointing to the outside
+- pointing outward
 
 Because it is:
 
@@ -405,7 +405,7 @@ Because it is:
 - passed to another command
 - as a command reference
 
-Honestly said, in Circular there may not be much distiction between *lambdas* and *clauses*. So the notations may as well be switched:
+Honestly, in Circular there may not be much of a distiction between *lambdas* and *clauses*. So the notations may as well be switched around:
 
 <img src="images/1.%20Commands%20Main%20Concepts.021.png" width="170" />
 
@@ -413,13 +413,13 @@ Honestly said, in Circular there may not be much distiction between *lambdas* an
 
 ## Nested Commands
 
-Nested commands are commands defined within a command. Some o those have been introduced earlier, but the concept may deserve a little more attentio here.
+Nested commands are commands defined within a command. They were demonstrated earlier, but the concept may deserve a little more attention.
 
-They can look like this:
+They look like this:
 
 <img src="images/7.%20Commands%20Ideas.021.jpeg" width="90" /> <img src="images/7.%20Commands%20Ideas.019.jpeg" width="80" /> <img src="images/1.%20Commands%20Main%20Concepts.015a.png" width="60" /> <img src="images/1.%20Commands%20Main%20Concepts.015b.png" width="60" />
 
-The nested command can be a *diamond* or a *square*. Its *container* can also be a *diamond* or *square*. The nested commands in this case *have no lines* pointing away from it.
+The nested command can be a *diamond* or a *square*. Its *container* is also be a *diamond* or *square*. They often have no lines attachted to it.
 
 The concept of nested commands may coincide with the terms:
 
@@ -428,11 +428,11 @@ The concept of nested commands may coincide with the terms:
 - Local function
 - Lambda expression
 
-Those can all be considered *nested commands*. Sometimes however, it is easier to use a single name for these phenomena.
+Those can all be considered *nested commands*. Sometimes however, it is easier to use a single umbrella term for these phenomena.
 
 ## Active Nested Command
 
-A nested command that is a *diamond*, can be called an *active* nested command:
+A nested command that is a *diamond* is an *active* nested command:
 
 <img src="images/7.%20Commands%20Ideas.030.png" width="200" />
 <img src="images/7.%20Commands%20Ideas.031.png" width="100" />
@@ -448,7 +448,7 @@ An *inactive* nested command is one that *does not execute*. Therefor it is disp
 <img src="images/inactive-nested-command-with-label.png" width="190" />
 <img src="images/7.%20Commands%20Ideas.032.png" width="120" />
 
-It does not execute unless it is *called:*
+It can only be executed by *calling* it:*
 
 <img src="images/7.%20Commands%20Ideas.022.jpeg" width="300" />
 
@@ -466,11 +466,11 @@ A deeper nested command is a nested command inside a nested command:
 
 ## Implementation
 
-The implementation of a command might be defined as the private contents of a command. Here is an attempt to demonstrate that visually:
+The implementation of a command is defined as the *private contents* of a command. Here is an attempt to demonstrate that visually:
 
 <img src="images/1.%20Commands%20Main%20Concepts.024.png" width="300" />
 
-The large square's contents, drawn with thick lines are the command’s *implementation*. They are the private contents. The objects inside the large square that are drawn with thinner lines, are the command's parameters: its publics.
+The contents drawn with thicker lines, are the larger square's *implementation*. They are the private contents. The objects inside the large square that are drawn with thinner lines, are the command's *parameters*. those are *public*.
 
 `[ WAS HERE writing ]`
 
