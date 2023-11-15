@@ -61,6 +61,8 @@ Commands
 
 [back](../../)
 
+<img src="images/commands-banner.png" width="700" />
+
 __Contents__
 
 - [Introduction](#introduction)
@@ -466,9 +468,7 @@ Because it is:
 
 Honestly, in Circular there may not be much of a distiction between *lambdas* and *clauses*. So the notations may as well be switched around:
 
-<img src="images/1.%20Commands%20Main%20Concepts.021.png" width="170" />
-
-<img src="images/1.%20Commands%20Main%20Concepts.022.png" width="100" />
+<img src="images/1.%20Commands%20Main%20Concepts.021.png" width="170" /> <img src="images/1.%20Commands%20Main%20Concepts.022.png" width="100" />
 
 It's open to interpretation, but hopefully the meaning of the symbols are getting clearer and you can choose to use them as you see fit.
 
@@ -539,8 +539,8 @@ Symbolizations for parameters and return values are not further covered in detai
 
 ## Conclusion
 
-Using constructs from Circular, it may seem circumstantial whether a command is a code block, clause, definition, call, etc. It seems to result from the way basic language elements from Circular relate to each other. Still, it may be relevant to be aware how these symbols from Circular can be combined to represent constructs from other languages.
+Using constructs from Circular, it may seem circumstantial whether a command is a code block, clause, definition, call, etc. It seems to result from the way basic language elements from Circular relate to each other. These symbols from Circular can be combined to represent constructs from other languages.
 
-It deserves to be said, that these symbolizations are just *ideas*. Depending on how this language might be used by a tool, different choices could be made.
+It deserves to be said, that these symbolizations are just *ideas*. Depending on how notation is used by a tool, different choices could be made.
 
 [back](../../)
