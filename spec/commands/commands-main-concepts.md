@@ -1,4 +1,62 @@
-﻿Commands
+﻿---
+title: "🟥 Commands"
+image: "images/commands-page.png"
+description: "Commands are executable objects: actions, procedures and processes that a computer can perform. In Circular they are displayed as squares and diamond shapes."
+keywords:
+  - commands
+  - functions
+  - procedures
+  - methods
+  - actions
+  - processes
+  - subs
+  - subroutines
+  - routines
+  - operations
+  - tasks
+  - definitions
+  - calls
+  - command references
+  - code blocks
+  - blocks
+  - local functions
+  - clauses
+  - lambdas
+  - lambda expressions
+  - function pointers
+  - delegates
+  - squares
+  - diamonds
+  - circular
+  - circular language
+  - shapes
+  - boxes and arrows
+  - code visualization
+  - visualization
+  - visual programming
+  - visual programming language
+  - VPL
+  - diagrammatic programming language
+  - diagram notation
+  - diagrams
+  - code map
+  - object oriented programming
+  - OO
+  - OOP
+  - programming
+  - coding
+  - computer programming
+  - programming language
+  - software engineering
+  - software development
+  - software design
+  - software architecture
+  - layered architecture
+  - software
+  - computers
+---
+
+Commands
 ========
 
 [back](../../)
@@ -29,7 +87,7 @@ __Contents__
 
 ## Introduction
 
-Commands are *executable* objects: actions, procedures, processes, that a computer can perform. In *Circular* they are displayed as *squares* and *diamond* shapes:
+Commands are *executable* objects: actions, procedures and processes that a computer can perform. In *Circular* they are displayed as *squares* and *diamond* shapes:
 
 <img src="images/1.%20Commands%20Main%20Concepts.001.png" width="50" /> <img src="images/1.%20Commands%20Main%20Concepts.002.png" width="50" />
 
