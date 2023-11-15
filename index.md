@@ -2,8 +2,6 @@
 
 <img src="images/circular-language-preview.png" width="700" />
 
-*JJ van Zon, 2022*
-
 Circular is a diagram notation for code visualization. It is still in development. It aims to become a visual programming language made from shapes and lines.
 
 This is an attempt at a specification of this language.
