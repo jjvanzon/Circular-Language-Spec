@@ -255,13 +255,11 @@ When __A__ calls __B__, it’s actually calling __C__.
 
 Command references offer a clever means of leaving the command open-ended or variable, to be determined at a later time.
 
-`[ WAS HERE ]`
-
 ## Code Blocks
 
-Some programming languages allow code blocks within a command, to group statements together. This can also *scope* variables, so variables inside the block may only be used within that block, perhaps for some added safety against programming errors.
+Some programming languages use code blocks to group statements together. This can also *scope* variables, so variables inside the block may only be used within that block.
 
-In another programming language, this may look as follows:
+In another programming language, this might look as follows:
 
 ```c#
 void MyDefinition()
@@ -272,32 +270,32 @@ void MyDefinition()
 }
 ```
 
-The inner braces and its contents are the code block.
+The inner braces and its contents (`...`) represent the code block.
 
-In Circular, a code block is *embedded* inside another command:
+In Circular, a code block is a command *embedded* inside another command:
 
 <img src="images/1.%20Commands%20Main%20Concepts.014.png" width="100" />
 
-The inner command (the code block) is drawn as a *diamond:* it *executes* (when the parent command executes).
+The inner command has a *diamond* shape, meaning it *executes* automatically if the parent command executes.
 
-A code block is *nameless*. It does not have any *lines* going towards it or away from it.
+Furthermore, a code block is *nameless*. It also does not have any *lines* going towards or away from it.
 
-A code block might also look like this:
+A code can might also look like this:
 
 <img src="images/1.%20Commands%20Main%20Concepts.015a.png" width="100" />
 
-The previous diagram showed a code block within a definition (a square). This diagram shows the code block in an execution (a diamond).
+The previous diagram showed a code block within a definition (a square). Right here the diagram shows the code block in an execution.
 
-Code blocks might be nested even further:
+Code blocks can be nested even further:
 
 <img src="images/1.%20Commands%20Main%20Concepts.016.png" width="180" />
 
-So a code block is symbolized by:
+In summary, a code block is symbolized by:
 
 - a diamond
 - inside another command
 - nameless
-- no lines pointing to or from it
+- no lines connected to it
 
 because it is:
 
@@ -305,13 +303,13 @@ because it is:
 - contained by another command
 - nameless
 - not a reference
-- not a definition for another command
+- not a definition
 
 ## Local Functions
 
-A local function might be known from other programming languages and means a command that is defined within another command.
+Local function might exist in other programming languages. It means that a command is defined within another command.
 
-In a different programming language this might look as follows:
+In a different programming language this can look as follows:
 
 ```c#
 void MyParentCommand()
@@ -322,7 +320,7 @@ void MyParentCommand()
 }
 ```
 
-In Circular it is also: a *command definition*, contained within another *command definition:*
+In Circular it is also a *command definition*, contained within another *command definition*:
 
 <img src="images/1.%20Commands%20Main%20Concepts.017.png" width="100" />
 
@@ -334,7 +332,7 @@ It can be *called* from within its parent command:
 
 <img src="images/1.%20Commands%20Main%20Concepts.019.png" width="200" />
 
-So a local function is symbolized by:
+To sum it up, a local function is symbolized by:
 
 - a square
 - within a square
@@ -343,14 +341,14 @@ So a local function is symbolized by:
 
 because it is:
 
-- not executed (directly)
-- contained in a definition
+- not directly executed
+- contained inside a definition
 - has a name
 - called / like a definition
 
 ## Clauses
 
-Clauses can be found in an `if` statement or in a `where` clause from querying languages, for instance.
+Clauses can be found for instance in an `if` statement or in a `where` clause from querying languages.
 
 This might look as follows in another language:
 
@@ -360,11 +358,13 @@ if { ... }
 
 (This is pseudo code. A full `if` statement has more parts.)
 
-The following notation can be used for a clause:
+The following notation can be to represent a clause:
 
 <img src="images/1.%20Commands%20Main%20Concepts.020.png" width="100" />
 
-In another alternative, it looks like a nameless *local function* passed as a *reference:*
+`[ WAS HERE ]`
+
+Another possible notation looks like a nameless *local function* passed as a *reference:*
 
 <img src="images/1.%20Commands%20Main%20Concepts.021.png" width="170" />
 
@@ -377,9 +377,9 @@ So a clause is expressed as:
 
 because it is:
 
-- not executable (directly)
+- not executed directly
 - passed to another command or statement
-- might be a command reference
+- can be a command reference
 
 ## Lambda Expressions
 
