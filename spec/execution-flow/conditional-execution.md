@@ -7,69 +7,38 @@
 
 __Contents__
 
-- [Concept](#concept)
-- [Diagram](#diagram)
+- [Introduction](#introduction)
 - [If](#if)
+- [Then](#then)
+- [Else](#else)
+- [Else If](#else-if)
+- [Select Case](#select-case)
+    - [Concept](#concept)
+    - [Diagram](#diagram)
+- [Select Case (exact value)](#select-case-exact-value)
     - [Concept](#concept-1)
     - [Diagram](#diagram-1)
-- [Else If](#else-if)
+- [Select Case (split formula)](#select-case-split-formula)
     - [Concept](#concept-2)
     - [Diagram](#diagram-2)
-- [Select Case](#select-case)
-    - [Concept](#concept-3)
-    - [Diagram](#diagram-3)
-- [Select Case (exact value)](#select-case-exact-value)
-    - [Concept](#concept-4)
-    - [Diagram](#diagram-4)
-- [Select Case (split formula)](#select-case-split-formula)
-    - [Concept](#concept-5)
-    - [Diagram](#diagram-5)
+- [Outtakes](#outtakes)
 
-## Concept
+Introduction
+------------
 
-Conditional execution is a form of control over *execution flow*. Execution flow is explained in the article *Execution Flow*.
+Conditional execution is a common form of execution flow control, where the next step of a program is based on a decision. The __If__ statement is the most common example of this.
 
-Conditional execution is a main form of execution flow, where the next step of a program is based on a decision. The __If__ statement is the most common form of conditional execution.
+The notations introduced here are just suggestions. They aim to demonstrate how Circular notation can be used for conditional execution statements, as if they were regular commands. The suggestions here might not be perfect, but it shows the principles, as a base for any variation of notation.
 
-There are four forms in which to express conditional execution:
 
-- __If__
-- __Else If__
-- __Select Case__ (exact value)
-- __Select Case__ (split formula)
+If
+---
 
-Each form is explained in a separate article.
+The __If__ statement is argueably the most common form of *conditional execution*.
 
-## Diagram
 
-Conditional execution is a form of execution flow explained in the article *Conditional Execution*. The articles that follow only explain its expression in a diagram.
-
-There are three forms in which to express conditional execution:
-
-- __If__
-- __Else If__
-- __Select Case__ (exact value)
-- __Select Case__ (split formula)
-
-Each form is explained in a separate article. See the articles *If in a Diagram, Else If in a Diagram*, *Select Case in a Diagram (exact value)* and *Select Case in a Diagram (split formula)*.
-
-## If
-
-### Concept
-
-The __If__ statement is the most common form of *conditional execution*. Conditional execution is a kind of execution flow statement, explained in the *Conditional Execution* article.
-
-The __If__ statement runs a command if a certain condition is met. On top of that, the __If__ statement can run an alternate command when the condition is *not* met.
-
-The __If__ command takes one or two command references as a parameter. That is the command run, when a condition is met and the command run, when a condition is not met. The condition is also passed along to the __If__ command as an argument. The condition is a reference to a __Boolean__.
-
-The command to run when a condition is met is called the __Then__ clause. The command to run when a condition is *not* met is called the __Else__ clause.
-
-There are two versions of __If__. There is the __If Then__ statement, that might not have an __Else__ clause. And there is __If Else__ statement, which might have an __Else__ clause.
-
-The implementation of the __If__ command is quite simple. It simply calls a few machine instructions to start the right command, based on whether the __Boolean__ is __True__ or __False__.
-
-### Diagram
+Then
+----
 
 The __If Then__ statement takes a __Boolean__ condition and a reference to the command to run when the __Boolean__ is __True__.
 
@@ -79,19 +48,23 @@ In a diagram this looks as follows.
 
 The circle is the __Boolean__ condition. The square is the command to execute when the __Boolean__ condition is __True__.
 
-The __Then__ command can be defined right inside the call to the __If__ statement, but you can also define the __Then__ *outside* the __If__ with the aid of an esthetic reference:
+The __Then__ command can be defined right inside the call to the __If__ statement, but you can also define the __Then__ *outside* the __If__ with the aid of a reference line:
 
 ![](images/2.%20Conditional%20Execution.002.png)
 
-The __Boolean__ condition is usually defined elsewhere as well, which might make the condition a pointer to another symbol.
+The __Boolean__ condition is usually defined elsewhere as well, making the condition point to another symbol.
 
 ![](images/2.%20Conditional%20Execution.003.png)
 
-The __If Else__ statement takes a __Boolean__ condition, a command reference to the command to run when the __Boolean__ is __True__ and a command reference to the command to run when the __Boolean__ is __False__.
+
+Else
+----
+
+The __If Else__ statement takes a __Boolean__ condition, a command reference to the command to run when the __Boolean__ is __True__ and one when it is __False__.
 
 ![](images/2.%20Conditional%20Execution.004.png)
 
-The circle is the __Boolean__ condition. The square named __Then__ is the command to execute when the __Boolean__ condition is __True__. The square named __Else__ is the command to execute when the __Boolean__ condition is __False__. For the __If Else__ statement, the __Then__ and __Else__ are also usually defined *outside* the __If__ with the aid of an esthetic reference:
+The circle is the __Boolean__ condition. The square named __Then__ is the command to execute when the __Boolean__ condition is __True__. The square named __Else__ is the command to execute when the __Boolean__ condition is __False__. For the __If Else__ statement, the __Then__ and __Else__ are also usually defined *outside* the __If__ with the aid of a reference line reference:
 
 ![](images/2.%20Conditional%20Execution.005.png)
 
@@ -107,39 +80,31 @@ In the definition, the condition and the clauses are not filled in yet.
 
 ## Else If
 
-### Concept
-
-__Else If__ form of *conditional execution*. Conditional execution is a kind of execution flow statement, explained in the article *Conditional Execution*. The __Else If__ statement is a lot like the __If__ statement, but then the __Else__ has another __If__ associated to it. If the condition of the second __If__ is met, then the associated command is called. If the condition is not met, then the __Else__ of the second __If__ might have another __If__ associated to it, and so on, until no more __Else If__’s are defined. If none of the __Else If__’s conditions are met, then the final __Else__ is executed, if provided.
-
-The __Else If__ command takes an argument, that is the condition for the first __If__. It also takes a command reference __Then__ as a parameter. The command is executed if the __If__ condition is __True__. Furthermore, the __Else If__ command takes a variable amount of __Else If__’s. Each __Else-If__-object contains a condition and a reference to the command to execute when the __Else If__’s condition returns __True__. The __Else If__ command also take a reference to a command, that might be executed, if none of the __Else If__’s conditions are __True__. This alternative command is called the __Else__ clause of the __Else If__ statement. The __Else__ clause of the statement can be left out, if it is not required.
-
-The implementation of the __Else If__ command is quite simple. It simply calls a few machine instructions to start a command, based on whether a __Boolean__ value is __True__ or __False__.
-
-### Diagram
+The __Else If__ statement is a lot like the __If__ statement, but then the __Else__ has another __If__ associated to it. 
 
 Below is an example of the diagrammatic expression of an __Else If__ statement.
 
 ![](images/2.%20Conditional%20Execution.008.png)
 
-The diamond is the __Else If__ command. the top circle inside the diamond is the condition of the first __If__. If the condition returns __True__, then the __Then__ clause is executed. In the middle of the diamond there is a nonagon. Inside the nonagon any number of __Else If__’s can be specified. An __Else If__ object also has a condition and a __Then__ clause. If the condition returns __True__ then the __Then__ clause is executed. If the condition is __False__, then the next __Else If__’s condition is evaluated. If none of the __Else If__’s conditions return __True__, then the __Else__ clause is executed, which is visible at the bottom of the diamond. The __Else__ clause is optional. If the __Else__ clause is not used, it can be left out of the diagram.
+The diamond is the __Else If__ command. It is an overload of the __If__ command. The top circle inside the diamond is the condition of the first __If__. If the condition returns __True__, then the __Then__ clause is executed. In the middle of the diamond there is a nonagon. Inside the nonagon any number of __Else If__'s can be specified. An __Else If__ object also has a condition and a __Then__ clause. If the condition returns __True__ then the __Then__ clause is executed. If the condition is __False__, then the next __Else If__’s condition is evaluated. If none of the __Else If__’s conditions return __True__, then the __Else__ clause is executed, which is visible at the bottom of the diamond. The __Else__ clause is optional. If the __Else__ clause is not used, it can be left out of the diagram.
 
 The conditions and the clauses can all be references to something defined outside the diamond. The conditions and the clauses can also be filled in right inside the diamond.
 
-The *definition* of the __Else If__ command is part of a system module of execution flow commands. The public elements of the definition look like this:
+The *definition* of the __Else If__ command could become part of a system module of execution flow commands. The public elements of the definition would look like this:
 
 ![](images/2.%20Conditional%20Execution.009.png)
 
 Nothing is filled in yet for the condition, the __Then__ clause or the __Else__ clause, and there are no __Cases__ defined yet. But a *class* for a __Case__ *is* defined. The __Case__ class defines a condition and a __Then__ clause.
 
-There is another, separate definition of the __Else If__ command, that is the same as the other __Else If__ command definition, except that it might not have an __Else__ clause in it.
+There is another, separate definition of the __Else If__ command, that is the same as the other __Else If__ command definition, except without an __Else__ clause in it.
+
+That way the notation for conditional execution statements could be implemented as a library just like other commands.
 
 ## Select Case
 
 ### Concept
 
-The __Select Case__ statement is a form of conditional execution. Conditional execution is a kind of execution flow statement, explained by the article *Conditional Execution*.
-
-In a __Select Case__ statement the next step to take is one out of several options.
+The __Select Case__ statement is a form of conditional execution. It is also sometimes called a __switch__ statement. In this kind of statement the next step to take is selected out of a list of several options.
 
 There are two forms of __Select Case__:
 
@@ -148,27 +113,24 @@ There are two forms of __Select Case__:
 - __Select Case__ (split formula)
     - combines one half of a formula with several other halves of the formula, to choose the next step
 
-The two forms might be explained in separate articles.
 
 The name __Select Case__ is directly taken over from the programming language *Basic*. You can choose between *Basic* naming and *C*  naming for execution flow statements. In the programming language *C*  it is called a __switch__ statement. Both names are available in Circular, as part of the multi-lingual approach of the system.
 
 ### Diagram
 
-Each type of __Select Case__ has a slight variation in diagram notation. There are three definitions of __Select Case__ commands. They might be covered in the articles *Select Case (exact value) in a Diagram*, *Select Case (split formula) in a Diagram*. (*Split formula* has *two* variations. Hence the three definitions of __Select Case__.)
+There are several types of __Select Case__ statements discussed here and each has a slight variation in diagram notation.
 
 ## Select Case (exact value)
 
 ### Concept
 
-There are two forms of __Select Case__, as mentioned in the article *Select Case*. This article explains the form of __Select Case__ where a variable is compared to different values, to choose the next step to take.
+This article explains the form of __Select Case__ where a variable is compared to different values, to choose the next step to take.
 
 This form of __Select Case__ compares a given variable with several different values. If the variable equals one of the values, the step associated with that value is executed. If the variable equals none of the values, an alternative command can be executed.
 
 This type of __Select Case__ only works with objects, that hold a binary value.
 
 __Select Case__ takes an object, that holds a binary value as the __Variable__ of the comparison. Furthermore, __Select Case__ defines a variable amount of __Cases__. Each __Case__-object contains a value to compare the variable to and a reference to the command to execute when the variable equals the value. __Select Case__ can also take a reference to a command, that might be executed, when the variable matches *none* of the values. This alternative command is called the __Else__ clause of the __Select Case__ statement. The __Else__ clause of the statement can be left out, if it is not required.
-
-The implementation of the __Select Case__ command is not too complicated. It simply calls a few machine instructions to compare a variable to a value and to start the right command when a match is found.
 
 ### Diagram
 
@@ -238,3 +200,15 @@ The public elements of the definition for half a formula as the first part of th
 Nothing is filled in yet as the __Select__ or __Else__, and there are no __Cases__ defined, but a *class* for a __Case__ *is* defined.
 
 There is another, separate definition of the __Select Case__ command for formulas, that is the same as the other __Select Case__ command definition, except that it might not have an __Else__ clause in it.
+
+
+Outtakes
+--------
+
+`<< implementation >>`
+
+The implementation of the __If__ command is quite simple. It simply calls a few machine instructions to start the right command, based on whether the __Boolean__ is __True__ or __False__.
+
+The implementation of the __Else If__ command is quite simple. It simply calls a few machine instructions to start a command, based on whether a __Boolean__ value is __True__ or __False__.
+
+The implementation of the __Select Case__ command is not too complicated. It simply calls a few machine instructions to compare a variable to a value and to start the right command when a match is found.
