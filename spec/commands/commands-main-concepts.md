@@ -522,8 +522,6 @@ It can only execute by *calling* it:
 
 Commands can be nested even further, creating a deeper nested command structure like this:
 
-`[ TODO: Remove reference line and its target. ]`
-
 ![](images/7.%20Commands%20Ideas.034.png)
 
 ## Implementation
