@@ -13,14 +13,12 @@ __Contents__
 - [Else](#else)
 - [Else If](#else-if)
 - [Select Case](#select-case)
+- [Select Case (exact value)](#select-case-exact-value)
     - [Concept](#concept)
     - [Diagram](#diagram)
-- [Select Case (exact value)](#select-case-exact-value)
+- [Select Case (split formula)](#select-case-split-formula)
     - [Concept](#concept-1)
     - [Diagram](#diagram-1)
-- [Select Case (split formula)](#select-case-split-formula)
-    - [Concept](#concept-2)
-    - [Diagram](#diagram-2)
 - [Outtakes](#outtakes)
 
 Introduction
@@ -98,27 +96,11 @@ Nothing is filled in yet for the condition, the __Then__ clause or the __Else__ 
 
 There is another, separate definition of the __Else If__ command, that is the same as the other __Else If__ command definition, except without an __Else__ clause in it.
 
-That way the notation for conditional execution statements could be implemented as a library just like other commands.
+That way the notation for conditional execution statements could be implemented as a library just like any other command.
 
 ## Select Case
 
-### Concept
-
-The __Select Case__ statement is a form of conditional execution. It is also sometimes called a __switch__ statement. In this kind of statement the next step to take is selected out of a list of several options.
-
-There are two forms of __Select Case__:
-
-- __Select Case__ (exact value)
-    - a variable to different values, to choose the next step
-- __Select Case__ (split formula)
-    - combines one half of a formula with several other halves of the formula, to choose the next step
-
-
-The name __Select Case__ is directly taken over from the programming language *Basic*. You can choose between *Basic* naming and *C*  naming for execution flow statements. In the programming language *C*  it is called a __switch__ statement. Both names are available in Circular, as part of the multi-lingual approach of the system.
-
-### Diagram
-
-There are several types of __Select Case__ statements discussed here and each has a slight variation in diagram notation.
+The __Select Case__ statement is a form of conditional execution. It is also sometimes called a __switch__ statement. In this kind of statement the next step to take is selected out of a list of several options. A few different variations of notation will be discussed.
 
 ## Select Case (exact value)
 
